@@ -32,7 +32,7 @@ tools/
   build.mjs            bundles content + app into dist/ (node tools/build.mjs [--strict])
   icons.mjs            generates the PNG/SVG icons with no dependencies
   serve.mjs            local static server for dist/ (node tools/serve.mjs 9230)
-.github/workflows/     builds and deploys dist/ to GitHub Pages on every push to main
+  deploy.mjs           builds and force-pushes dist/ to the gh-pages branch
 ```
 
 ## Working on it
@@ -47,4 +47,10 @@ Content is plain JSON in a documented markdown subset. To add a module: write `c
 
 ## Deploy
 
-Push to `main`. The workflow builds `dist/` and publishes it to GitHub Pages. Nothing else to configure.
+GitHub Pages serves the `gh-pages` branch. Deploying is one command with a token that can push to the repo:
+
+```
+GH_TOKEN=... node tools/deploy.mjs
+```
+
+It builds, commits `dist/` as a single snapshot, and force-pushes it to `gh-pages`. Source stays on `main`; the built branch is disposable. The site is live at https://jose0213.github.io/rounds/ within about a minute.

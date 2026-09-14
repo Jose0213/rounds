@@ -1,0 +1,1288 @@
+{
+  "schema": 1,
+  "id": "emt-pharm",
+  "track": "emt",
+  "title": "EMT Pharmacology",
+  "short": "Pharm",
+  "summary": "Every drug an EMT gives or assists with, with the real doses, the contraindications that matter, and how to read a patient's medication bottles as a medical history.",
+  "lessons": [
+    {
+      "id": "emt-pharm-l01",
+      "title": "What a drug is and how it gets in",
+      "minutes": 6,
+      "body": "A drug is a chemical that changes how the body works. That is the whole definition. Everything else is names, packaging and speed.\n\n## Names\n\nEvery drug has two names you care about. The **generic name** is the chemical's real name and never changes: `acetaminophen`, `albuterol`, `naloxone`. The **trade name** is the brand a company sells it under: Tylenol, Ventolin, Narcan. One generic can have half a dozen trade names, which is why you chart the generic name and why the patient will say the trade name.\n\nThere is also a **chemical name** (long, unusable) and an **official name** from the U.S. Pharmacopeia. Neither shows up in the field.\n\n> **Trap:** A patient who says 'I don't take aspirin, I take Ecotrin' is taking aspirin. Read the bottle, not the answer.\n\n## Forms\n\nThe form is chosen to control how fast the drug arrives and where it lands.\n\n| Form | Example | Notes |\n|---|---|---|\n| Compressed tablet | Aspirin `81 mg` chewable, nitroglycerin `0.4 mg` | Chewed or dissolved under the tongue |\n| Gel | Oral glucose `15 g` tube | Buccal, between cheek and gum |\n| Fine powder for inhalation or solution for nebulizing | Albuterol `2.5 mg` in `3 mL` | Goes straight to the target organ |\n| Metered-dose inhaler | Albuterol `90 mcg` per puff | A measured puff, best with a spacer |\n| Liquid spray | Nitroglycerin spray `0.4 mg` per spray | Under the tongue, do not shake |\n| Suspension | Activated charcoal | Must be shaken before use |\n| Injectable | Epinephrine auto-injector `0.3 mg` | Prefilled and pressure-activated |\n\n## Routes and how fast they work\n\nThe route is the single biggest factor in onset. Fastest to slowest for what EMTs touch:\n\n1. **IV / IO** (ALS only) — seconds. Straight into circulation.\n2. **Inhaled or nebulized** — seconds to minutes for airway drugs, because the target is right there.\n3. **Intranasal (IN)** — `2 to 5 minutes`. The nasal lining is thin and full of blood vessels.\n4. **Intramuscular (IM)** — `5 to 10 minutes`. Muscle has good blood flow, so an epinephrine auto-injector into the thigh works fast.\n5. **Sublingual (SL)** — `1 to 3 minutes`. Under the tongue, absorbed straight into veins, bypassing the stomach and liver.\n6. **Buccal** — between cheek and gum, similar idea but slower.\n7. **Oral (PO)** — `30 to 60 minutes`. Slowest, and useless in a patient who is vomiting, unresponsive, or badly perfused.\n8. **Subcutaneous, topical and transdermal** — slow and steady, like a nitroglycerin patch.\n\n> **Key:** Shock slows every route that depends on blood flow. A hypotensive patient absorbs almost nothing from the gut or from fat, which is why the emergency routes are IV, IM, IN and inhaled.\n\n## How drugs actually work\n\nMost drugs fit a **receptor** — think of a lock on a cell. A drug that fits and turns the lock is an **agonist**: albuterol is a beta-2 agonist, so it turns on the receptors that relax airway muscle. A drug that fits but does not turn, and blocks anyone else from turning it, is an **antagonist**: naloxone is an opioid antagonist that shoves heroin off the receptor and sits there doing nothing.\n\nFour words describe any drug in a patient report. The **indication** is the reason to give it. The **contraindication** is a reason not to. A **side effect** is an expected extra effect, like the headache nitroglycerin causes. An **untoward effect** is a harmful unexpected one.\n\n**Half-life** is the time it takes for half the drug to leave the body, and it explains duration. Naloxone has a half-life around `30 to 90 minutes`, while many opioids last far longer. That mismatch is why a patient can wake up, refuse transport, and stop breathing an hour later.",
+      "keyPoints": [
+        "Generic names are permanent; trade names are branding. Chart the generic, expect the patient to say the trade name.",
+        "Route drives onset: IV fastest, then inhaled, IN, IM, SL, then oral at 30 to 60 minutes.",
+        "Agonists turn a receptor on, antagonists block it — albuterol agonist, naloxone antagonist.",
+        "Indication, contraindication, side effect and untoward effect describe every drug you touch.",
+        "Half-life explains why naloxone can wear off before the opioid does."
+      ],
+      "checks": [
+        {
+          "q": "Why is nitroglycerin given under the tongue instead of swallowed?",
+          "choices": [
+            "It tastes better that way",
+            "It absorbs directly into veins in 1 to 3 minutes and bypasses the stomach and liver",
+            "Swallowing it causes a fatal reaction",
+            "It cannot dissolve in stomach acid"
+          ],
+          "answer": 1,
+          "why": "The sublingual route absorbs through the thin tissue under the tongue straight into the bloodstream, giving onset in 1 to 3 minutes instead of the 30 to 60 minutes an oral route takes."
+        },
+        {
+          "q": "A patient in profound shock is given a medication by mouth. Why is this a poor choice?",
+          "choices": [
+            "Oral drugs are always expired",
+            "Gut blood flow is shunted away in shock, so absorption is unreliable and slow",
+            "Oral drugs cannot be documented",
+            "Shock destroys all oral medications chemically"
+          ],
+          "answer": 1,
+          "why": "Shock diverts blood from the gut and skin to the brain and heart, so anything given orally or subcutaneously sits there unabsorbed. Emergency routes are IV, IM, IN and inhaled."
+        },
+        {
+          "q": "Naloxone blocks the opioid receptor without activating it. What is that called?",
+          "choices": [
+            "An agonist",
+            "A catalyst",
+            "An antagonist",
+            "A suspension"
+          ],
+          "answer": 2,
+          "why": "An antagonist occupies the receptor and prevents the agonist from acting. An agonist, like albuterol at the beta-2 receptor, actually activates it."
+        }
+      ]
+    },
+    {
+      "id": "emt-pharm-l02",
+      "title": "The six rights, and who is allowed to give it",
+      "minutes": 6,
+      "body": "Nearly every medication error in EMS is a failure of one of six checks, done in a hurry, in the dark, with somebody screaming. Slowing down for ten seconds is the whole skill.\n\n## The six rights\n\n1. **Right patient.** Is this drug for this person? Confirm the complaint matches the indication and that the medication, if it is the patient's own, is actually prescribed to them and not to a spouse.\n2. **Right medication.** Read the label out loud. Boxes look alike in a dark ambulance.\n3. **Right dose.** Say the number. `324 mg` of aspirin is four `81 mg` chewables, not one. `0.15 mg` is the pediatric epinephrine device, not `0.3 mg`.\n4. **Right route.** Chewed, under the tongue, between cheek and gum, into the thigh muscle, up the nose. Wrong route means wrong onset or no effect.\n5. **Right time.** Nitroglycerin is every `5 minutes` to a maximum of `3 doses`, and the blood pressure gets rechecked before each one.\n6. **Right documentation.** Drug, dose, route, time, who authorized it, and the patient's response. If it is not written, it did not happen.\n\nSome systems teach seven or eight rights, adding right to refuse and right reassessment. The reassessment is the one that catches your mistakes, so build it in either way.\n\n## The three checks\n\nCheck the label three separate times: when you take it out of the bag, when you prepare or open it, and one more time immediately before it goes into the patient. Every check includes:\n\n- **Expiration date.** Expired means discard, not 'probably fine.'\n- **Clarity and color.** Liquids should be clear and colorless unless the label says otherwise. Cloudiness, discoloration or floating particles means do not use it.\n- **Packaging integrity.** Cracked, leaking or previously opened is contaminated.\n\n> **Key:** Right patient, medication, dose, route, time, documentation. Three label checks. Expiration, clarity, integrity. That sequence is the answer to a surprising number of exam questions.\n\n## Administer, assist, or neither\n\nThe difference matters legally and on the test.\n\n**Administer** means you give a medication your service carries under your own scope: oxygen, oral glucose, aspirin, activated charcoal, epinephrine and naloxone in most systems.\n\n**Assist** means the medication belongs to the patient, was prescribed to that patient by a physician, and you help them take it. Classic examples are nitroglycerin, a metered-dose inhaler and an epinephrine auto-injector. You confirm the prescription is in the patient's name, that the medication is not expired, and that it is indicated — then you help.\n\n**Peer-assisted** means another EMT or the patient's family member administers under your direction. **Patient-assisted** means the patient takes it themselves with your coaching.\n\n## Online and offline medical direction\n\n**Offline (indirect) medical direction** is your written standing orders and protocols, signed by a physician in advance. If oxygen for hypoxia is in your protocol, you do not call anyone.\n\n**Online (direct) medical direction** is a live physician on the radio or phone, right now. Some medications always require it — activated charcoal is the usual example — and any time you are outside protocol, you call.\n\nWhen you get an order, **repeat it back word for word** before you act: drug, dose, route. That echo has caught more errors than any policy.\n\n> **On shift:** If something about an order feels wrong, say so on the recorded line. 'Confirming 0.3 milligrams epinephrine intramuscular — patient is 14 kilograms, please advise' is a professional question, not insubordination.\n\nFinally: an alert, oriented adult can refuse any medication. Document the refusal, the explanation you gave, and the risks you described.",
+      "keyPoints": [
+        "The six rights: patient, medication, dose, route, time, documentation.",
+        "Check the label three times and inspect expiration, clarity and packaging integrity every time.",
+        "Administer means your drug under your scope; assist means the patient's own prescribed drug.",
+        "Offline direction is your standing protocol; online direction is a live physician order you repeat back verbatim.",
+        "Reassess after every medication — that is how you find your own errors."
+      ],
+      "checks": [
+        {
+          "q": "A patient with chest pain hands you her husband's nitroglycerin bottle. What should you do?",
+          "choices": [
+            "Assist her with one 0.4 mg dose since the drug is indicated",
+            "Give two doses since it is not her prescription and tolerance is unknown",
+            "Do not assist with a medication prescribed to someone else, and contact medical direction",
+            "Have the husband administer it to her"
+          ],
+          "answer": 2,
+          "why": "Assisting requires that the medication be prescribed to that patient. Using someone else's prescription violates the right-patient rule regardless of whether the drug is otherwise indicated."
+        },
+        {
+          "q": "You draw up a medication and notice the solution is slightly cloudy, though it is not expired. What do you do?",
+          "choices": [
+            "Give it, since the expiration date is what matters",
+            "Shake it until it clears and then give it",
+            "Dilute it with saline",
+            "Discard it and use another supply"
+          ],
+          "answer": 3,
+          "why": "Clarity and color are part of every check. Cloudiness or particles mean contamination or degradation, and a valid expiration date does not override what you can see."
+        },
+        {
+          "q": "Which is an example of offline medical direction?",
+          "choices": [
+            "A written protocol allowing oxygen for a hypoxic patient without calling anyone",
+            "Calling the emergency physician on the radio for an activated charcoal order",
+            "A family member telling you what the patient usually takes",
+            "Reading the dose off the medication box"
+          ],
+          "answer": 0,
+          "why": "Offline or indirect medical direction is the physician-approved standing protocol you carry. Calling a live physician for an order is online or direct medical direction."
+        }
+      ]
+    },
+    {
+      "id": "emt-pharm-l03",
+      "title": "Oxygen and oral glucose",
+      "minutes": 7,
+      "body": "## Oxygen is a drug with a dose\n\nOxygen fixes exactly one problem: not enough oxygen reaching tissue (hypoxia). It does nothing for pain, anxiety, or a normal saturation, and too much of it is harmful in several conditions.\n\n**Indications:** suspected or measured hypoxia, respiratory distress, shock, chest pain with hypoxia, altered mental status, carbon monoxide poisoning, and any patient you are ventilating.\n\n**The target numbers.** Titrate to a pulse oximetry reading of `94 to 98%` for most patients. For patients with COPD, the target is `88 to 92%` — their drive to breathe partly depends on a low oxygen level, and flooding them with oxygen can blunt it, although the more important reason is that high oxygen worsens the mismatch between air and blood flow in damaged lungs. For suspected carbon monoxide poisoning, ignore the pulse oximeter entirely and give `15 L/min` by nonrebreather, because the device cannot tell oxygen from carbon monoxide on the hemoglobin.\n\n| Device | Flow | Delivered oxygen |\n|---|---|---|\n| Nasal cannula | `1 to 6 L/min` | `24 to 44%` |\n| Simple face mask | `6 to 10 L/min` | `35 to 60%` |\n| Nonrebreather mask | `10 to 15 L/min` | `80 to 90%`+ |\n| Bag-valve mask with reservoir | `15 L/min` | near `100%` |\n| Nebulizer | `6 to 8 L/min` | drives the medication mist |\n\n**Cautions:** oxygen supports combustion, so no smoking and no open flame. Dry gas irritates airways over long transports. Secure cylinders — a broken valve turns a tank into a missile.\n\n> **Trap:** 'All patients get high-flow oxygen' has not been the standard for years. An alert chest-pain patient with a saturation of `97%` on room air needs no oxygen at all, and the exam will offer it as a tempting wrong answer.\n\n## Oral glucose\n\nThe brain runs on glucose and stores almost none, so when blood sugar falls the patient becomes confused, combative, sweaty and eventually unresponsive within minutes. Oral glucose is sugar in a form the mouth can absorb.\n\n- **Generic and trade:** oral glucose gel; Glutose, Insta-Glucose.\n- **Indication:** suspected hypoglycemia with an altered mental status in a patient who is awake enough to swallow and protect the airway. Usually paired with a glucometer reading under `60 to 70 mg/dL`, per protocol.\n- **Dose:** one tube, `15 g`. Repeat per protocol if there is no improvement.\n- **Route:** buccal — squeezed between the cheek and gum, or onto a tongue depressor placed there. Not swallowed like a drink.\n- **Contraindications:** unresponsiveness, no gag reflex, inability to swallow, and known allergy. A patient who cannot protect the airway will aspirate the gel.\n- **Side effects:** essentially none beyond aspiration risk if given wrong; some nausea.\n- **Reassessment:** recheck mental status and glucose in about `15 minutes`.\n\n> **Key:** The gate for oral glucose is not the number on the glucometer. It is whether the patient can swallow and protect their own airway. If they cannot, the answer is airway management, ventilation and ALS for IV dextrose or glucagon.\n\n**On the diabetic who improves:** a patient who wakes up fully and wants to refuse transport is a real decision point. Sulfonylureas such as glipizide and glyburide cause hypoglycemia that returns hours later, and long-acting insulin does the same. Strongly encourage transport, involve medical direction, and document thoroughly.",
+      "keyPoints": [
+        "Oxygen is dosed to a target: 94 to 98% for most patients, 88 to 92% in COPD, 15 L/min regardless of the pulse ox in carbon monoxide poisoning.",
+        "Nasal cannula 1 to 6 L/min gives 24 to 44%; nonrebreather 10 to 15 L/min gives 80 to 90% or more.",
+        "Oral glucose is 15 g of gel placed buccally between cheek and gum.",
+        "The gate for oral glucose is the ability to swallow and protect the airway, not the glucose number.",
+        "Recheck mental status and glucose about 15 minutes after giving it."
+      ],
+      "checks": [
+        {
+          "q": "A 68-year-old with COPD is short of breath with a saturation of 84% on room air. What is the appropriate oxygen target?",
+          "choices": [
+            "No oxygen until saturation falls below 80%",
+            "88 to 92%",
+            "94 to 98%",
+            "100% at all times"
+          ],
+          "answer": 1,
+          "why": "COPD patients are titrated to 88 to 92% because excessive oxygen worsens ventilation-perfusion matching and can blunt their respiratory drive. Withholding oxygen from an 84% patient is also wrong — treat the hypoxia, just to the right target."
+        },
+        {
+          "q": "A diabetic patient is confused and combative but follows simple commands and can hold a cup. Glucose reads 44 mg/dL. What is the correct action?",
+          "choices": [
+            "Withhold everything until ALS arrives with IV dextrose",
+            "Give 15 g of oral glucose buccally and recheck in 15 minutes",
+            "Give 15 g of glucose gel down the throat quickly",
+            "Have him drink a full bottle of juice rapidly"
+          ],
+          "answer": 1,
+          "why": "He is awake and able to protect his airway, so buccal oral glucose is indicated. Placing gel deep in the throat or forcing rapid fluids risks aspiration, and waiting for ALS wastes brain time when a safe option is available."
+        },
+        {
+          "q": "Which patient should NOT receive oral glucose?",
+          "choices": [
+            "An alert diabetic with a glucose of 52 mg/dL",
+            "A confused but swallowing patient with a glucose of 48 mg/dL",
+            "An unresponsive patient with no gag reflex and a glucose of 38 mg/dL",
+            "A drowsy diabetic who can sit up and follow commands with a glucose of 55 mg/dL"
+          ],
+          "answer": 2,
+          "why": "No gag reflex and unresponsiveness means the gel will be aspirated. That patient needs airway management, ventilation as needed, and ALS for IV dextrose or glucagon."
+        }
+      ]
+    },
+    {
+      "id": "emt-pharm-l04",
+      "title": "Aspirin and nitroglycerin: the cardiac two",
+      "minutes": 8,
+      "body": "A heart attack is a clot growing in a coronary artery. Aspirin attacks the clot; nitroglycerin reduces how hard the starved heart has to work. They are given together, and their contraindications are completely different.\n\n## Aspirin\n\nPlatelets are the first responders of clotting, and they clump together onto a cracked plaque in a coronary artery. Aspirin permanently blocks the enzyme platelets use to signal each other, so the clump stops growing. It does not dissolve a clot; it stops the clot from getting worse. Given early, it is one of the few prehospital drugs proven to save lives in a heart attack.\n\n- **Generic and trade:** acetylsalicylic acid; Bayer, Ecotrin, St. Joseph.\n- **Indication:** suspected acute coronary syndrome — chest pain or pressure, or an anginal equivalent such as sudden dyspnea, nausea, or jaw, arm or back discomfort.\n- **Dose:** `324 mg`, which is four `81 mg` chewable tablets. Some systems use one `325 mg` adult tablet. **Chewed, not swallowed whole** — chewing speeds absorption dramatically.\n- **Route:** oral, chewed. Must be **non-enteric-coated**; the coating exists to delay absorption, which is exactly wrong here.\n- **Contraindications:** known allergy, active gastrointestinal bleeding or ulcer, recent bleeding (hemorrhagic) stroke, known bleeding disorder, and children or teenagers with fever or a viral illness because of Reye syndrome.\n- **Side effects:** stomach upset, heartburn, increased bleeding, wheezing in aspirin-sensitive asthmatics.\n\n> **Trap:** 'He already takes a baby aspirin every morning' is not a contraindication. Daily low-dose aspirin does not provide the platelet blockade needed acutely. Give the full `324 mg` unless a real contraindication exists.\n\n## Nitroglycerin\n\nNitroglycerin relaxes smooth muscle in blood vessels, dilating veins most of all. Dilated veins hold blood in the periphery, so less blood returns to the heart (reduced preload), so the heart does less work and needs less oxygen. It also dilates coronary arteries somewhat. Pain relief follows the reduced workload.\n\n- **Generic and trade:** nitroglycerin; Nitrostat, Nitrolingual spray, Nitro-Bid, NitroQuick.\n- **Indication:** chest pain of suspected cardiac origin, and pulmonary edema in some protocols.\n- **Dose:** `0.4 mg` — one sublingual tablet or one metered spray. Repeat every `5 minutes` up to a maximum of `3 doses`, recheck blood pressure before each.\n- **Route:** sublingual. Do not shake the spray. Have the patient sit or lie down first, because the blood pressure will drop.\n- **Blood pressure rule:** systolic must be above `100 mmHg` before each dose in most protocols. Some systems use `90` or `110` — know yours and say 'per protocol.'\n- **Absolute contraindications:** hypotension, a **PDE-5 inhibitor** within `24 hours` (sildenafil, Viagra, Revatio; vardenafil, Levitra) or within `48 hours` (tadalafil, Cialis), head injury or suspected increased intracranial pressure, maximum dose already taken, and known allergy.\n- **Caution:** an inferior wall or right ventricular myocardial infarction depends on preload to fill a stiff, damaged right ventricle. Nitroglycerin drops preload and can cause profound hypotension in those patients. If the pressure crashes after a dose, lay the patient flat and elevate the legs.\n- **Side effects:** a pounding headache (expected and a sign it is working), burning under the tongue, flushing, dizziness, and a blood pressure drop.\n- **Handling:** wear gloves. Nitroglycerin absorbs through your skin and will give you the headache.\n\n> **Key:** The two questions before every nitroglycerin dose: what is the systolic pressure right now, and has he taken an erectile-dysfunction or pulmonary-hypertension drug? Both together cause an unrecoverable drop in pressure.\n\n**Reassess after every dose:** pain score, blood pressure, heart rate, and mental status. Pain that does not improve after three doses, or that returns, is an emergency transport with early hospital notification.",
+      "keyPoints": [
+        "Aspirin 324 mg chewed, non-enteric-coated, for suspected ACS — it stops the clot from growing.",
+        "Daily low-dose aspirin is not a contraindication to the acute 324 mg dose.",
+        "Aspirin contraindications: allergy, active GI bleed, recent hemorrhagic stroke, bleeding disorder, pediatric fever (Reye syndrome).",
+        "Nitroglycerin 0.4 mg sublingual, every 5 minutes, maximum 3 doses, systolic above 100 before each dose per protocol.",
+        "No nitroglycerin within 24 hours of sildenafil or vardenafil, 48 hours of tadalafil, or with a head injury."
+      ],
+      "checks": [
+        {
+          "q": "A 58-year-old with crushing chest pain says he takes 81 mg of aspirin every day. What dose should you give?",
+          "choices": [
+            "None, because he is already taking aspirin",
+            "81 mg, to top off his daily dose",
+            "324 mg chewed",
+            "650 mg swallowed whole"
+          ],
+          "answer": 2,
+          "why": "Daily low-dose aspirin does not produce the acute platelet blockade needed in an infarct. The prehospital dose is 324 mg chewed regardless of daily use, and swallowing whole or using enteric-coated tablets delays the effect."
+        },
+        {
+          "q": "A 61-year-old with chest pain has a BP of 138/84 and took tadalafil 30 hours ago. What is the correct decision about nitroglycerin?",
+          "choices": [
+            "Give it — the blood pressure is adequate",
+            "Withhold it; tadalafil requires 48 hours",
+            "Give half a tablet",
+            "Give it, but only with the patient standing"
+          ],
+          "answer": 1,
+          "why": "Tadalafil is long-acting and the window is 48 hours; sildenafil and vardenafil use 24 hours. Combining them causes severe, refractory hypotension no matter how good the starting pressure looks."
+        },
+        {
+          "q": "After one nitroglycerin dose the patient's BP falls from 122/70 to 84/50 and he feels faint. What should you do?",
+          "choices": [
+            "Give a second dose to complete the treatment",
+            "Sit him fully upright and reassure him",
+            "Lay him flat, elevate the legs, withhold further doses, and reassess",
+            "Give oral glucose to raise the pressure"
+          ],
+          "answer": 2,
+          "why": "Nitroglycerin drops preload, which can cause hypotension, especially in inferior or right ventricular infarcts. Supine with legs elevated restores venous return; another dose would deepen the problem."
+        }
+      ]
+    },
+    {
+      "id": "emt-pharm-l05",
+      "title": "Epinephrine for anaphylaxis",
+      "minutes": 7,
+      "body": "Anaphylaxis is the immune system attacking the whole body at once. Mast cells dump histamine everywhere, which does three lethal things: blood vessels dilate and leak so the blood pressure collapses, airway smooth muscle clamps down so air cannot move, and the tissue of the tongue, lips and throat swells shut.\n\nEpinephrine reverses all three at once, and it is the only drug that does. Antihistamines and steroids are slow and secondary; nothing substitutes for epinephrine.\n\n## What it does, receptor by receptor\n\n- **Alpha-1:** constricts blood vessels. Raises blood pressure and shrinks the swelling in the airway and skin.\n- **Beta-1:** increases heart rate and force of contraction. Moves more blood.\n- **Beta-2:** relaxes bronchial smooth muscle. Opens the airway.\n\nThat is why the expected side effects are exactly what you would predict: a racing heart, palpitations, tremor, anxiety, pallor, headache and nausea. Those are not an allergic reaction to the drug — they are the drug working.\n\n## Indications and contraindications\n\n**Indication:** anaphylaxis, meaning an allergic reaction with **respiratory compromise or hypotension**, or involving two or more body systems. Hives alone with no breathing or circulatory involvement is not anaphylaxis.\n\n**Contraindications:** in true anaphylaxis there are no absolute contraindications — a dying patient gets epinephrine. Relative cautions include known cardiac disease, advanced age, and hypertension, which matter for the decision but do not override anaphylaxis.\n\n## Dose and technique\n\n| Patient | Device | Dose |\n|---|---|---|\n| Adult and child `30 kg` and over (about 66 lb) | Adult auto-injector | `0.3 mg` |\n| Child `15 to 30 kg` (about 33 to 66 lb) | Pediatric auto-injector | `0.15 mg` |\n\n**Technique:**\n\n1. Confirm the drug, dose, expiration and that the liquid is clear, not brown or cloudy.\n2. Remove the safety cap. Never put your thumb over either end — needles fire from the tip.\n3. Push firmly into the **anterolateral thigh** — the outer middle third — at `90 degrees`. **Through clothing is fine**; do not waste time undressing a patient.\n4. Hold in place for `10 seconds` with older devices, or `3 seconds` with most current designs. Follow the device's own instructions.\n5. Massage the site for `10 seconds` to speed absorption.\n6. Dispose of the device in a sharps container, and bring it with you.\n\n**Why the thigh:** the vastus lateralis is a big muscle with heavy blood flow and no major vessels or nerves to hit. The deltoid is smaller and absorbs more slowly, and the buttock is slower still.\n\n**Repeat dose:** if there is no improvement, or symptoms return, repeat in `5 to 15 minutes` per protocol. Anaphylaxis often needs more than one dose.\n\n**Syringe and vial:** many states, including New Jersey, allow EMTs to draw epinephrine from a vial under an approved program. The concentration is `1 mg/mL` (the old `1:1,000` label), so an adult dose of `0.3 mg` is `0.3 mL` drawn into a `1 mL` syringe and given IM in the thigh. This is cheaper than auto-injectors but demands the math be right — check your protocol before assuming you are authorized.\n\n> **Trap:** The `0.1 mg/mL` concentration — the old `1:10,000`, used for cardiac arrest — is ten times more dilute. Giving `0.3 mL` of that delivers only `0.03 mg` and will not treat anaphylaxis. Read the concentration on the vial every single time.\n\n## After the dose\n\nReassess breathing, blood pressure, skin and mental status every few minutes. Give high-flow oxygen, position for shock if hypotensive, and request ALS. **Every anaphylaxis patient is transported**, even if they look perfect, because a **biphasic reaction** can return `4 to 12 hours` later after the epinephrine wears off.",
+      "keyPoints": [
+        "Epinephrine works on alpha-1 for vasoconstriction, beta-1 for heart rate, beta-2 for bronchodilation — all three problems at once.",
+        "Adult dose 0.3 mg for 30 kg and above; pediatric 0.15 mg for 15 to 30 kg.",
+        "IM into the anterolateral thigh through clothing, held 10 seconds (3 seconds on newer devices), then massage.",
+        "Tachycardia, tremor and anxiety are expected effects, not a reaction to stop for.",
+        "Repeat in 5 to 15 minutes if no improvement, and transport everyone because of biphasic reactions."
+      ],
+      "checks": [
+        {
+          "q": "A 22 kg child has hives, wheezing and a BP of 78/40 after eating peanuts. What dose and site?",
+          "choices": [
+            "0.3 mg IM in the deltoid",
+            "0.15 mg IM in the anterolateral thigh",
+            "0.15 mg subcutaneously in the abdomen",
+            "0.3 mg IM in the anterolateral thigh"
+          ],
+          "answer": 1,
+          "why": "At 22 kg the child falls in the 15 to 30 kg band, so the pediatric 0.15 mg device is correct, given IM in the outer thigh. The deltoid absorbs more slowly and subcutaneous is far slower in a hypotensive patient."
+        },
+        {
+          "q": "Five minutes after epinephrine, the patient's heart rate rises from 96 to 128 and she is shaking and anxious. What does this mean?",
+          "choices": [
+            "She is having an allergic reaction to the epinephrine",
+            "These are expected beta effects of the drug; continue care and reassess",
+            "The dose was too high and must be reversed",
+            "She is going into cardiac arrest"
+          ],
+          "answer": 1,
+          "why": "Tachycardia, tremor and anxiety are the predictable beta-1 and beta-2 effects of epinephrine. They confirm the drug was absorbed, and there is no field reversal agent."
+        },
+        {
+          "q": "Your protocol allows drawing epinephrine from a vial. Which concentration and volume give an adult anaphylaxis dose?",
+          "choices": [
+            "0.1 mg/mL, give 0.3 mL",
+            "1 mg/mL, give 3 mL",
+            "1 mg/mL, give 0.3 mL",
+            "0.1 mg/mL, give 3 mL"
+          ],
+          "answer": 2,
+          "why": "The 1 mg/mL concentration, formerly labeled 1:1,000, delivers 0.3 mg in 0.3 mL. The 0.1 mg/mL cardiac-arrest concentration is ten times weaker and 0.3 mL of it would deliver only 0.03 mg."
+        }
+      ]
+    },
+    {
+      "id": "emt-pharm-l06",
+      "title": "Naloxone and activated charcoal",
+      "minutes": 7,
+      "body": "## Naloxone\n\nOpioids — heroin, fentanyl, oxycodone, morphine, methadone — bind receptors in the brainstem and switch off the drive to breathe. The patient does not die of being unconscious; they die of not breathing. Naloxone is a pure opioid antagonist: it has a stronger grip on the same receptor, shoves the opioid off, and the drive to breathe returns.\n\n- **Generic and trade:** naloxone; Narcan, Kloxxado, Zimhi.\n- **Indication:** suspected opioid overdose with respiratory depression or arrest. The triad is **pinpoint pupils, slow or absent breathing, and depressed mental status**.\n- **Contraindications:** known hypersensitivity. That is essentially the list.\n\n**Doses and routes:**\n\n| Route | Dose |\n|---|---|\n| Intranasal, prefilled device | `4 mg` in one nostril (some devices `2 mg` or `8 mg`) |\n| Intranasal, atomizer with syringe | `2 mg` total, `1 mg` per nostril |\n| Intramuscular | `0.4 to 2 mg` |\n\nIntranasal onset is `2 to 5 minutes`, IM slightly faster. Repeat every `2 to 3 minutes` if breathing does not improve — fentanyl and its analogs often need multiple doses.\n\n> **Key:** Ventilate first. Open the airway and bag the patient with a BVM before and during naloxone administration. Oxygen fixes the thing that is killing them; naloxone just removes the cause. An exam question that offers naloxone before airway management is offering the wrong answer.\n\n**Titrate to breathing, not to consciousness.** The goal is adequate respirations — roughly `12 or more` per minute with good tidal volume — not a patient sitting up and talking. Waking someone fully rips them into **acute withdrawal**: vomiting, agitation, combativeness, sweating, muscle cramps, diarrhea. Vomiting in a patient with a marginal airway is how naloxone hurts people.\n\n**Duration is the trap.** Naloxone lasts `30 to 90 minutes`. Fentanyl, methadone and extended-release oxycodone last longer. The patient can wake up, feel fine, refuse transport, and stop breathing in the parking lot. Monitor continuously, be ready to repeat, and push hard for transport.\n\n> **On shift:** In New Jersey, naloxone is available to all levels of EMS, law enforcement and the public under the Overdose Prevention Act. Expect patients who have already received doses before you arrived — ask how many, and add that to your report.\n\n## Activated charcoal\n\nActivated charcoal is carbon processed into an enormous porous surface area. Poison molecules stick to it (adsorption) in the gut and pass through instead of being absorbed into the blood.\n\n- **Generic and trade:** activated charcoal; InstaChar, Actidose-Aqua, Liqui-Char.\n- **Indication:** certain oral poisonings and overdoses, generally within about `1 hour` of ingestion, **on the order of medical direction or poison control**.\n- **Dose:** `1 g/kg`. Practically, `25 to 50 g` for an adult and `12.5 to 25 g` for a child.\n- **Route:** oral suspension. **Shake the container vigorously** — it settles into a solid plug. Serve in an opaque cup with a straw; it is black and gritty and patients refuse it on sight.\n- **Contraindications:** altered mental status or inability to protect the airway, absent gag reflex, ingestion of a **caustic** (acid or alkali, like drain cleaner), a **hydrocarbon** (gasoline, kerosene), an **alcohol**, or a **metal** (iron, lithium), and any patient who is vomiting.\n- **Side effects:** black stools, nausea, vomiting. Vomiting charcoal into the lungs causes severe pneumonitis.\n\n> **Trap:** Charcoal does not bind alcohols, metals, caustics or hydrocarbons, and giving it after a caustic makes the hospital's job harder by coating the burned tissue. It is used far less than textbooks suggest — many systems have removed it entirely. Always call.\n\nFor any poisoning: identify the substance, the amount and the time, bring the container or the pill bottles, and contact poison control and medical direction early.",
+      "keyPoints": [
+        "Naloxone is an opioid antagonist: intranasal 4 mg per device or 2 mg split, IM 0.4 to 2 mg, repeat every 2 to 3 minutes.",
+        "Ventilate first — hypoxia is what kills in an opioid overdose.",
+        "Titrate to adequate breathing, not to full wakefulness, to avoid withdrawal vomiting and combativeness.",
+        "Naloxone lasts 30 to 90 minutes, less than many opioids, so re-sedation is expected — monitor and transport.",
+        "Activated charcoal is 1 g/kg (25 to 50 g adult), only if alert with a gag reflex, within about an hour, and never for caustics, alcohols, metals or hydrocarbons."
+      ],
+      "checks": [
+        {
+          "q": "You find a 24-year-old unresponsive with pinpoint pupils and a respiratory rate of 4. What is your first action?",
+          "choices": [
+            "Administer 4 mg intranasal naloxone",
+            "Open the airway and begin ventilating with a bag-valve mask",
+            "Perform a sternal rub to wake him",
+            "Check a blood glucose level"
+          ],
+          "answer": 1,
+          "why": "Hypoxia kills opioid patients, so ventilation comes first and continues while naloxone is prepared and given. Naloxone without ventilation leaves the patient hypoxic for the several minutes it takes to work."
+        },
+        {
+          "q": "After naloxone, a patient is breathing 16 times per minute with good chest rise but remains sleepy. What should you do?",
+          "choices": [
+            "Give another dose until he is fully awake and alert",
+            "Stop dosing; the goal of adequate ventilation has been met",
+            "Give a dose of oral glucose to help him wake up",
+            "Let him sign a refusal since he is breathing"
+          ],
+          "answer": 1,
+          "why": "Naloxone is titrated to adequate breathing, not to consciousness. Chasing full alertness causes withdrawal, vomiting and combativeness, and a sleepy but well-ventilating patient still needs transport because naloxone wears off first."
+        },
+        {
+          "q": "A 3-year-old drank a household drain cleaner 20 minutes ago and is alert and crying. Should you give activated charcoal?",
+          "choices": [
+            "Yes, 12.5 g since he is alert and within one hour",
+            "Yes, 1 g/kg by mouth",
+            "No, charcoal is contraindicated for caustic ingestions",
+            "Yes, but only half the usual dose"
+          ],
+          "answer": 2,
+          "why": "Caustics are one of the classic exclusions along with alcohols, metals and hydrocarbons. Charcoal does not bind them and it coats the injured tissue, making the hospital's evaluation harder."
+        }
+      ]
+    },
+    {
+      "id": "emt-pharm-l07",
+      "title": "Albuterol, CPAP, glucometry and expanded scope",
+      "minutes": 7,
+      "body": "## Albuterol\n\nIn asthma and COPD exacerbation, the muscle rings around the small airways tighten and the lining swells and fills with mucus. Albuterol is a **beta-2 agonist**: it turns on the receptors that relax that muscle, and the airways open in minutes.\n\n- **Generic and trade:** albuterol (salbutamol outside the U.S.); ProAir, Ventolin, Proventil. Levalbuterol is Xopenex.\n- **Indication:** wheezing or bronchospasm from asthma, COPD, bronchiolitis in some protocols, or an allergic reaction.\n- **Contraindications:** allergy, and in most systems a medication not prescribed to the patient if you are only assisting.\n- **Nebulizer dose:** `2.5 mg` in `3 mL` of saline, driven by oxygen at `6 to 8 L/min`, delivered over `5 to 15 minutes` until the mist stops. Repeat per protocol.\n- **Metered-dose inhaler dose:** `90 mcg` per puff, typically `2 puffs`, with a spacer whenever one is available.\n- **Side effects:** tremor, tachycardia, palpitations, anxiety, headache, dry mouth. Tell the patient the shakiness is expected.\n\n**MDI technique — the part that gets graded:**\n\n1. Shake the canister for `5 seconds` and attach the spacer.\n2. Have the patient exhale fully.\n3. Seal the lips around the mouthpiece.\n4. Press the canister and inhale slowly and deeply at the same time.\n5. Hold the breath for about `10 seconds`, then exhale slowly.\n6. Wait about `1 minute` between puffs.\n\n> **Trap:** Wheezing that fades in a patient who is still working hard is not improvement — it means too little air is moving to make noise. A silent chest with severe distress is a ventilation emergency.\n\n## CPAP: a device that acts like a drug\n\nContinuous positive airway pressure holds a constant pressure in the airway, which splints small airways open, pushes fluid out of the air sacs back into the circulation, and reduces the work of breathing.\n\n- **Indications:** moderate to severe respiratory distress from pulmonary edema from congestive heart failure, COPD, or sometimes asthma or pneumonia, in a patient who is **awake, able to follow commands, and able to protect the airway**.\n- **Typical settings:** `5 to 10 cm H2O`, per protocol.\n- **Contraindications:** respiratory or cardiac arrest, apnea, inability to follow commands, hypotension with a systolic under about `90 mmHg`, active vomiting, upper gastrointestinal bleeding, suspected pneumothorax, facial trauma or facial anatomy that prevents a seal, and a tracheostomy.\n- **Coaching is the skill.** The mask feels like sticking your head out a car window. Hold it on gently at first, explain what it does, and never strap it onto a panicking patient.\n\n## Blood glucose measurement\n\nA glucometer reading is a vital sign, not a treatment. Clean the finger, use the side of the fingertip, discard the first drop if the protocol says to, and record the number and the time. Normal fasting is roughly `70 to 99 mg/dL` and a normal random value stays under about `140 mg/dL`. Most protocols treat symptomatic hypoglycemia below `60 to 70 mg/dL`.\n\n## Expanded EMT scope and New Jersey\n\nEMT scope is set by each state, so the honest answer to 'can an EMT give that' is usually 'depends on the state and the protocol.' In **New Jersey**, the Office of Emergency Medical Services authorizes BLS providers to administer or assist with:\n\n- **Oxygen**, in all forms including nonrebreather, BVM and CPAP.\n- **Oral glucose** and **blood glucose measurement**.\n- **Aspirin** for suspected cardiac chest pain.\n- **Epinephrine** for anaphylaxis, by auto-injector and, under the state's EMT epinephrine program, by syringe from a vial.\n- **Naloxone**, intranasal, authorized for all levels of EMS and for the public under the Overdose Prevention Act.\n- **Assisting** a patient with their own prescribed nitroglycerin and metered-dose inhaler.\n- **Hemorrhage control** with tourniquets and hemostatic dressings.\n\n> **Key:** Write and speak the limits precisely: 'per NJ OEMS protocol' or 'per local medical direction.' On the NREMT, answer from the national standard of care, and in the field answer from the protocol you actually operate under.",
+      "keyPoints": [
+        "Albuterol is a beta-2 agonist: 2.5 mg in 3 mL nebulized at 6 to 8 L/min, or 90 mcg per puff by MDI, usually 2 puffs with a spacer.",
+        "MDI technique: shake, exhale fully, seal, press and inhale slowly, hold 10 seconds, wait a minute between puffs.",
+        "Tremor and tachycardia after albuterol are expected; a silent chest in a struggling patient is an emergency.",
+        "CPAP at 5 to 10 cm H2O needs an awake, cooperative patient with a systolic above about 90 and no vomiting or facial trauma.",
+        "New Jersey BLS scope includes oxygen, glucometry, oral glucose, aspirin, epinephrine by auto-injector or syringe, intranasal naloxone, CPAP and hemorrhage control — say 'per NJ OEMS protocol.'"
+      ],
+      "checks": [
+        {
+          "q": "What is the standard nebulized albuterol dose and driving flow?",
+          "choices": [
+            "0.5 mg in 3 mL at 15 L/min",
+            "2.5 mg in 3 mL at 6 to 8 L/min",
+            "5 mg in 1 mL at 2 L/min",
+            "90 mcg in 3 mL at 10 L/min"
+          ],
+          "answer": 1,
+          "why": "The standard unit dose is 2.5 mg of albuterol in 3 mL of saline, driven at 6 to 8 L/min so the mist is produced at a usable rate. The 90 mcg figure is a single MDI puff, not a nebulizer dose."
+        },
+        {
+          "q": "Which patient is the best candidate for CPAP?",
+          "choices": [
+            "An apneic patient being bagged after an overdose",
+            "A hypotensive patient with a systolic of 78 and rales",
+            "An alert CHF patient with rales, a systolic of 156, working hard to breathe and following commands",
+            "A confused patient with facial fractures and active vomiting"
+          ],
+          "answer": 2,
+          "why": "CPAP requires an awake, cooperative patient who can protect the airway and maintain blood pressure, since the positive pressure reduces venous return. Apnea, hypotension, vomiting and facial trauma are all contraindications."
+        },
+        {
+          "q": "A New Jersey EMT wants to administer epinephrine for anaphylaxis from a vial and syringe. What is true?",
+          "choices": [
+            "This is never within EMT scope anywhere",
+            "New Jersey authorizes it under an approved EMT epinephrine program, per NJ OEMS protocol",
+            "Only auto-injectors are authorized in every state",
+            "It requires an online physician order in all cases nationwide"
+          ],
+          "answer": 1,
+          "why": "Scope is state-specific, and New Jersey allows EMTs to administer epinephrine by syringe under an approved program in addition to auto-injectors. Stating the protocol source is the professional habit."
+        }
+      ]
+    },
+    {
+      "id": "emt-pharm-l08",
+      "title": "Reading a medication list as a history",
+      "minutes": 7,
+      "body": "A patient who cannot tell you their medical history can still hand you a bag of pill bottles. Every bottle is a diagnosis someone already made, and a few of them change your assessment outright.\n\n## Take the bag\n\nCollect the bottles or photograph the list. Note the drug, the strength, the prescriber and the fill date — a bottle filled for `30` pills two weeks ago that is still full tells you nobody is taking it.\n\n## The classes that change your thinking\n\n**Beta blockers** — names ending in **-olol**: metoprolol (Lopressor, Toprol), atenolol (Tenormin), carvedilol (Coreg), propranolol (Inderal). They block the beta-1 receptor, so the heart cannot speed up. A bleeding or septic patient on a beta blocker will not develop the tachycardia you expect. Judge perfusion by skin, mental status and capillary refill instead.\n\n> **Key:** A normal heart rate in a patient on a beta blocker proves nothing. It is the most important single thing a medication list can tell you.\n\n**Anticoagulants and antiplatelets** — warfarin (Coumadin), apixaban (Eliquis), rivaroxaban (Xarelto), dabigatran (Pradaxa), clopidogrel (Plavix), aspirin. These prevent clot formation. Any head strike, even a minor one, becomes a possible slow brain bleed that may not show symptoms for hours. Any bleeding is harder to stop. Transport and tell the hospital early.\n\n**Diabetes drugs** — insulin (Lantus, Humalog, Novolog), metformin (Glucophage), glipizide, glyburide. Insulin and the sulfonylureas cause hypoglycemia. Metformin alone rarely does. Long-acting agents cause hypoglycemia that returns hours after you fix it.\n\n**Inhalers and respiratory drugs** — albuterol (ProAir, Ventolin), ipratropium (Atrovent), fluticasone-salmeterol (Advair), tiotropium (Spiriva), montelukast (Singulair). Their presence means asthma or COPD. How often the rescue inhaler is refilled tells you how bad the disease is.\n\n**Nitrates and antianginals** — nitroglycerin (Nitrostat), isosorbide (Imdur, Isordil). Coronary artery disease, confirmed. A patient with nitro on the shelf who is having chest pain is a high-risk patient.\n\n**PDE-5 inhibitors** — sildenafil (Viagra, Revatio), tadalafil (Cialis, Adcirca), vardenafil (Levitra). Ask directly and privately. These contraindicate nitroglycerin for `24 hours` (sildenafil, vardenafil) or `48 hours` (tadalafil). Revatio and Adcirca are prescribed for pulmonary hypertension, not erectile dysfunction, so do not assume by the diagnosis.\n\n**Diuretics** — furosemide (Lasix), hydrochlorothiazide, spironolactone. Usually heart failure or hypertension. They cause dehydration and low potassium, so expect weakness, cramps and arrhythmias.\n\n**Digoxin** (Lanoxin) — heart failure and atrial fibrillation. Its safe range is narrow. Toxicity looks like nausea, vomiting, visual halos or yellow-green vision, confusion and slow or irregular rhythms.\n\n**Antiepileptics** — levetiracetam (Keppra), phenytoin (Dilantin), valproate (Depakote), lamotrigine (Lamictal), carbamazepine (Tegretol). Seizure disorder. Missed doses are a common seizure trigger, so ask when they last took it.\n\n**Psychiatric medications** — sertraline (Zoloft), fluoxetine (Prozac), quetiapine (Seroquel), risperidone (Risperdal), aripiprazole (Abilify), lithium, alprazolam (Xanax), lorazepam (Ativan). These tell you about the psychiatric history and about overdose risk. Lithium has a narrow safe range and toxicity causes tremor, confusion and vomiting.\n\n**Opioids** — oxycodone (Percocet, OxyContin), hydrocodone (Vicodin, Norco), morphine, methadone, fentanyl patches. Chronic pain, and an overdose risk in the house. A fentanyl patch on the skin of an unresponsive patient is a finding — look for it, and look for extras.\n\n**Steroids** — prednisone, methylprednisolone. Inflammatory disease, and a patient who may not mount a normal stress response.\n\n> **On shift:** Ask three questions about every bottle: what is it for, when did you last take it, and has anything changed recently. A dose change in the last two weeks explains an enormous number of calls.",
+      "keyPoints": [
+        "The medication bag is a history, an allergy list and a problem list at once — bring it or photograph it.",
+        "Beta blockers (names ending in -olol) prevent the tachycardia of shock, so a normal heart rate is meaningless.",
+        "Anticoagulants plus any head strike equals a potential delayed brain bleed and a transport.",
+        "Insulin and sulfonylureas cause recurring hypoglycemia; metformin alone rarely does.",
+        "PDE-5 inhibitors contraindicate nitroglycerin for 24 hours, or 48 hours for tadalafil."
+      ],
+      "checks": [
+        {
+          "q": "A patient with a GI bleed takes carvedilol. His heart rate is 78 and BP is 94/58. How should you interpret this?",
+          "choices": [
+            "He is not in shock because his heart rate is normal",
+            "The beta blocker prevents compensatory tachycardia, so judge perfusion by skin, mental status and capillary refill",
+            "Carvedilol causes low blood pressure and explains everything",
+            "He should be given a second dose of his medication"
+          ],
+          "answer": 1,
+          "why": "Beta blockers block the beta-1 receptor so the heart cannot speed up in response to blood loss. A normal rate in a bleeding patient on a beta blocker is a trap, not reassurance."
+        },
+        {
+          "q": "You find Eliquis on a patient's medication list after a minor fall with a head strike. Why does this matter?",
+          "choices": [
+            "It is a blood pressure medication that must be held",
+            "It is an anticoagulant, so an intracranial bleed can develop and may be delayed by hours",
+            "It contraindicates oxygen administration",
+            "It means the patient cannot receive aspirin ever"
+          ],
+          "answer": 1,
+          "why": "Apixaban is an anticoagulant, so bleeding inside the skull is poorly controlled and can become symptomatic hours later. A normal exam on scene does not rule it out, and the patient needs evaluation."
+        },
+        {
+          "q": "A chest-pain patient takes Revatio. What should you conclude?",
+          "choices": [
+            "It is a PDE-5 inhibitor for pulmonary hypertension, so nitroglycerin is contraindicated for 24 hours",
+            "It is a nitrate, so nitroglycerin is safe to add",
+            "It is a beta blocker",
+            "It has no interaction with any prehospital medication"
+          ],
+          "answer": 0,
+          "why": "Revatio is sildenafil prescribed for pulmonary hypertension rather than erectile dysfunction, and it carries the same nitroglycerin interaction and 24-hour window. Never judge the interaction by the assumed diagnosis."
+        }
+      ]
+    },
+    {
+      "id": "emt-pharm-l09",
+      "title": "Medication math, calling for orders, and charting",
+      "minutes": 6,
+      "body": "The math an EMT needs is small, but getting it wrong is one of the few ways to hurt a patient with a correct decision.\n\n## Pounds to kilograms\n\nDivide pounds by `2.2`. A `154 lb` adult is `70 kg`. A `44 lb` child is `20 kg`. A fast field estimate is to halve the pounds and subtract `10%`: `154` halved is `77`, minus `10%` is about `69`. Close enough to check a dose against.\n\nWeight-based dosing is a pediatric issue, because adult doses are fixed. When a child's weight is unknown, use a **length-based resuscitation tape** (Broselow) — measure heel to head and read the color band, which gives weight, drug doses and equipment sizes.\n\n## Milligrams versus milliliters\n\nA milligram is an amount of drug. A milliliter is an amount of liquid. They are only connected by the **concentration** printed on the label.\n\nThe formula: **volume to give = dose you want divided by the concentration.**\n\n- Epinephrine `1 mg/mL`, want `0.3 mg`: `0.3` divided by `1` equals `0.3 mL`.\n- Epinephrine `0.1 mg/mL`, want `0.3 mg`: `0.3` divided by `0.1` equals `3 mL`. Same dose, ten times the volume, because the solution is ten times weaker.\n- Naloxone `1 mg/mL`, want `2 mg`: `2` divided by `1` equals `2 mL`, split as `1 mL` per nostril intranasally.\n\n> **Trap:** The two epinephrine concentrations are the classic killer. `1 mg/mL` was labeled `1:1,000` and is the anaphylaxis IM concentration. `0.1 mg/mL` was `1:10,000` and is the cardiac-arrest IV concentration. Read the number, not the habit.\n\n## Percent solutions\n\nA percent solution means grams per `100 mL`. So `D50` is `50 g` per `100 mL`, or `0.5 g/mL`, which is why a `50 mL` prefilled syringe contains `25 g` of dextrose. A `0.9%` saline bag is `0.9 g` of salt per `100 mL`.\n\n## Reading a syringe\n\nOn a `1 mL` syringe each long mark is usually `0.1 mL` and each short mark `0.02 mL`. On a `3 mL` syringe each long mark is `0.5 mL` and each short mark `0.1 mL`. Read at the **flat front edge of the plunger**, at eye level, with the needle up and the air expelled. Say the volume out loud to your partner before you give it.\n\n## Calling for orders\n\nBe short, ordered and predictable. Physicians are listening for the same five things every time.\n\n1. Who you are: unit, certification level, and that you are requesting an order.\n2. The patient: age, sex, chief complaint.\n3. The findings: vital signs, relevant history, allergies, current medications.\n4. What you have already done and the response.\n5. The specific request: drug, dose, route.\n\n'Medical Command, Medic 4, EMT requesting an order. Sixty-two-year-old male, chest pain radiating to the left jaw for `40 minutes`. Vitals `148/88`, pulse `92`, respirations `20`, oxygen saturation `96%` on room air. History of coronary artery disease, takes his own nitroglycerin, no erectile dysfunction medications, no allergies. He has had `324 mg` aspirin chewed. Requesting an order to assist with `0.4 mg` sublingual nitroglycerin.'\n\nThen **repeat the order back verbatim**: 'Confirming, assist with `0.4 milligrams` nitroglycerin sublingual, may repeat every `5 minutes` to a maximum of three doses, systolic above `100`.' Write the physician's name and the time.\n\n> **Key:** If the order does not match what you expect, question it on the recorded line before you give it. A read-back that surfaces an error is the point of the read-back.\n\n## Documenting a medication\n\nSix items, every time, for every dose:\n\n1. **Drug** (generic name)\n2. **Dose**\n3. **Route**\n4. **Time** given, to the minute\n5. **Who authorized it** — protocol number, or the physician's name\n6. **Response** — reassessed vital signs and symptom change, with a time\n\nExample: `1412` — aspirin `324 mg` PO chewed per standing order 4-2. `1417` — pain unchanged at 8/10, BP `144/86`, pulse `90`. `1418` — nitroglycerin `0.4 mg` SL, patient's own, per Dr. Ruiz. `1423` — pain 5/10, BP `126/78`, mild headache.\n\nAlso document any medication you **considered and withheld**, and why. 'Nitroglycerin withheld: patient reports sildenafil this morning' protects the patient and protects you.",
+      "keyPoints": [
+        "Pounds divided by 2.2 equals kilograms; use a length-based tape when a child's weight is unknown.",
+        "Volume to give equals the desired dose divided by the concentration on the label.",
+        "Epinephrine 1 mg/mL is the IM anaphylaxis concentration; 0.1 mg/mL is ten times weaker.",
+        "A percent solution is grams per 100 mL, so D50 is 0.5 g/mL and a 50 mL syringe holds 25 g.",
+        "Every medication is charted as drug, dose, route, time, authorization and response — plus anything withheld and why."
+      ],
+      "checks": [
+        {
+          "q": "A child weighs 66 pounds. What is the weight in kilograms?",
+          "choices": [
+            "22 kg",
+            "30 kg",
+            "33 kg",
+            "145 kg"
+          ],
+          "answer": 1,
+          "why": "Divide pounds by 2.2: 66 divided by 2.2 equals 30 kg. That matters here because 30 kg is the cutoff where an adult 0.3 mg epinephrine auto-injector becomes appropriate."
+        },
+        {
+          "q": "You need to give 2 mg of naloxone from a vial labeled 1 mg/mL. What volume do you draw?",
+          "choices": [
+            "0.5 mL",
+            "1 mL",
+            "2 mL",
+            "4 mL"
+          ],
+          "answer": 2,
+          "why": "Volume equals dose divided by concentration: 2 mg divided by 1 mg/mL equals 2 mL. Intranasally that is split as 1 mL per nostril so each side can absorb it."
+        },
+        {
+          "q": "Which set of items must be charted for every medication given?",
+          "choices": [
+            "Drug, dose, route, time, who authorized it, and the patient's response",
+            "Drug and dose only",
+            "Drug, the patient's weight, and the hospital name",
+            "The trade name and the manufacturer"
+          ],
+          "answer": 0,
+          "why": "Those six items are the standard record, and the reassessment that produces the response entry is also how you detect your own errors. Medications you withheld and why belong in the narrative too."
+        }
+      ]
+    }
+  ],
+  "cards": [
+    { "id": "emt-pharm-c001", "front": "What is the difference between a generic name and a trade name?", "back": "The generic name is the drug's permanent chemical name, like albuterol. The trade name is a manufacturer's brand, like Ventolin or ProAir. Chart the generic; patients say the trade name.", "lesson": "emt-pharm-l01" },
+    { "id": "emt-pharm-c002", "front": "Rank the routes an EMT touches from fastest to slowest onset.", "back": "IV or IO, then inhaled or nebulized, then intranasal at 2 to 5 minutes, intramuscular at 5 to 10, sublingual at 1 to 3, then oral at 30 to 60 minutes.", "lesson": "emt-pharm-l01" },
+    { "id": "emt-pharm-c003", "front": "What is the difference between an agonist and an antagonist?", "back": "An agonist binds a receptor and activates it — albuterol at beta-2. An antagonist binds and blocks it without activating — naloxone at the opioid receptor.", "lesson": "emt-pharm-l01" },
+    { "id": "emt-pharm-c004", "front": "Define indication, contraindication, side effect and untoward effect.", "back": "Indication is the reason to give a drug. Contraindication is a reason not to. A side effect is an expected extra effect. An untoward effect is a harmful, unexpected one.", "lesson": "emt-pharm-l01" },
+    { "id": "emt-pharm-c005", "front": "What does half-life mean and why does it matter with naloxone?", "back": "The time for half the drug to leave the body. Naloxone lasts 30 to 90 minutes, shorter than many opioids, so the patient can re-sedate after appearing fully recovered.", "lesson": "emt-pharm-l01" },
+    { "id": "emt-pharm-c006", "front": "Why are oral and subcutaneous routes unreliable in shock?", "back": "Shock shunts blood away from the gut, skin and fat to protect the brain and heart, so drugs given there are barely absorbed. Use IV, IM, intranasal or inhaled routes instead.", "lesson": "emt-pharm-l01" },
+    { "id": "emt-pharm-c007", "front": "List the six rights of medication administration.", "back": "Right patient, right medication, right dose, right route, right time, right documentation. Some systems add right to refuse and right reassessment.", "lesson": "emt-pharm-l02" },
+    { "id": "emt-pharm-c008", "front": "When do you perform the three medication label checks?", "back": "When you take it out of the bag, when you prepare or open it, and immediately before it goes into the patient. Each check covers expiration, clarity and color, and packaging integrity.", "lesson": "emt-pharm-l02" },
+    { "id": "emt-pharm-c009", "front": "What is the difference between administering and assisting with a medication?", "back": "Administering means giving a drug your service carries under your own scope. Assisting means helping the patient take their own physician-prescribed medication, such as nitroglycerin or an inhaler.", "lesson": "emt-pharm-l02" },
+    { "id": "emt-pharm-c010", "front": "What is the difference between online and offline medical direction?", "back": "Offline or indirect direction is your written, physician-approved standing protocol. Online or direct direction is a live physician order by radio or phone, which you repeat back verbatim.", "lesson": "emt-pharm-l02" },
+    { "id": "emt-pharm-c011", "front": "Can you assist a patient with a family member's prescribed nitroglycerin?", "back": "No. Assisting requires the medication be prescribed to that patient. Using someone else's prescription violates the right-patient rule even when the drug would otherwise be indicated.", "lesson": "emt-pharm-l02" },
+    { "id": "emt-pharm-c012", "front": "Why repeat back a physician's verbal order word for word?", "back": "Because it catches errors in drug, dose or route before the medication is given, and it creates a record of exactly what was ordered on a recorded line.", "lesson": "emt-pharm-l02" },
+    { "id": "emt-pharm-c013", "front": "What are the oxygen saturation targets for most patients and for COPD?", "back": "94 to 98 percent for most patients, and 88 to 92 percent for COPD. In suspected carbon monoxide poisoning, ignore the pulse oximeter and give 15 L/min by nonrebreather.", "lesson": "emt-pharm-l03" },
+    { "id": "emt-pharm-c014", "front": "What flow rate and oxygen percentage does a nasal cannula deliver?", "back": "1 to 6 L/min, delivering roughly 24 to 44 percent oxygen. Above 6 L/min it dries and irritates the nose without meaningfully increasing delivery.", "lesson": "emt-pharm-l03" },
+    { "id": "emt-pharm-c015", "front": "What flow rate and oxygen percentage does a nonrebreather mask deliver?", "back": "10 to 15 L/min, delivering roughly 80 to 90 percent or more. Inflate the reservoir bag before applying and keep it from collapsing on inhalation.", "lesson": "emt-pharm-l03" },
+    { "id": "emt-pharm-c016", "front": "What is the dose, route and form of oral glucose?", "back": "15 g of gel from one tube, placed buccally between the cheek and gum or on a tongue depressor placed there. Recheck mental status and glucose in about 15 minutes.", "lesson": "emt-pharm-l03" },
+    { "id": "emt-pharm-c017", "front": "What is the real gate for giving oral glucose?", "back": "Whether the patient is awake enough to swallow and protect their own airway. The glucose number alone does not decide it; an unresponsive patient will aspirate the gel.", "lesson": "emt-pharm-l03" },
+    { "id": "emt-pharm-c018", "front": "Why is a diabetic on glipizide who wakes up after glucose still a transport?", "back": "Sulfonylureas such as glipizide and glyburide, and long-acting insulins, cause hypoglycemia that returns hours later. Encourage transport, involve medical direction, and document carefully if refused.", "lesson": "emt-pharm-l03" },
+    { "id": "emt-pharm-c019", "front": "Why is 'everyone gets high-flow oxygen' wrong?", "back": "Oxygen is dosed to a target saturation. Excess oxygen is harmful in COPD, stroke and post-arrest care, and an alert patient at 97 percent on room air needs none.", "lesson": "emt-pharm-l03" },
+    { "id": "emt-pharm-c020", "front": "What is the prehospital aspirin dose and how is it given?", "back": "324 mg, which is four 81 mg chewable tablets, chewed rather than swallowed, and non-enteric-coated. Some systems use one 325 mg adult tablet.", "lesson": "emt-pharm-l04" },
+    { "id": "emt-pharm-c021", "front": "How does aspirin help in a heart attack?", "back": "It permanently blocks the enzyme platelets use to clump together, so the clot forming on the cracked coronary plaque stops growing. It does not dissolve an existing clot.", "lesson": "emt-pharm-l04" },
+    { "id": "emt-pharm-c022", "front": "List the contraindications to prehospital aspirin.", "back": "Known allergy, active GI bleeding or ulcer, recent hemorrhagic stroke, known bleeding disorder, and children or teens with fever or viral illness because of Reye syndrome.", "lesson": "emt-pharm-l04" },
+    { "id": "emt-pharm-c023", "front": "Is daily low-dose aspirin a reason to withhold the acute dose?", "back": "No. A daily 81 mg dose does not produce the platelet blockade needed acutely. Give the full 324 mg unless a true contraindication is present.", "lesson": "emt-pharm-l04" },
+    { "id": "emt-pharm-c024", "front": "How does nitroglycerin relieve cardiac chest pain?", "back": "It relaxes vascular smooth muscle, dilating veins so less blood returns to the heart. Lower preload means less cardiac work and less oxygen demand. It also dilates coronary arteries somewhat.", "lesson": "emt-pharm-l04" },
+    { "id": "emt-pharm-c025", "front": "What is the nitroglycerin dose, interval and maximum?", "back": "0.4 mg sublingual tablet or one metered spray, repeated every 5 minutes to a maximum of 3 doses, with a blood pressure check before each dose.", "lesson": "emt-pharm-l04" },
+    { "id": "emt-pharm-c026", "front": "What systolic blood pressure is generally required before a nitroglycerin dose?", "back": "Above 100 mmHg in most protocols, though some systems use 90 or 110. Check the pressure before every dose and state the threshold as 'per protocol.'", "lesson": "emt-pharm-l04" },
+    { "id": "emt-pharm-c027", "front": "Which erectile-dysfunction drugs block nitroglycerin, and for how long?", "back": "Sildenafil (Viagra, Revatio) and vardenafil (Levitra) for 24 hours; tadalafil (Cialis, Adcirca) for 48 hours. The combination causes profound, refractory hypotension.", "lesson": "emt-pharm-l04" },
+    { "id": "emt-pharm-c028", "front": "Why is nitroglycerin risky in an inferior or right ventricular MI?", "back": "The damaged right ventricle depends on preload to fill. Nitroglycerin lowers preload, which can cause a sudden severe drop in blood pressure. Treat with supine position and leg elevation.", "lesson": "emt-pharm-l04" },
+    { "id": "emt-pharm-c029", "front": "Why must you wear gloves when handling nitroglycerin?", "back": "It absorbs through skin, so you can dose yourself and get the drug's characteristic pounding headache and a drop in your own blood pressure.", "lesson": "emt-pharm-l04" },
+    { "id": "emt-pharm-c030", "front": "What three problems of anaphylaxis does epinephrine reverse?", "back": "Vasodilation and leaking vessels via alpha-1 constriction, low cardiac output via beta-1 rate and force, and bronchospasm via beta-2 relaxation of airway muscle.", "lesson": "emt-pharm-l05" },
+    { "id": "emt-pharm-c031", "front": "What defines anaphylaxis as opposed to a simple allergic reaction?", "back": "Respiratory compromise or hypotension, or involvement of two or more body systems. Hives alone with normal breathing and pressure is not anaphylaxis.", "lesson": "emt-pharm-l05" },
+    { "id": "emt-pharm-c032", "front": "What are the adult and pediatric epinephrine auto-injector doses and weight cutoffs?", "back": "Adult 0.3 mg for patients 30 kg (about 66 lb) and above. Pediatric 0.15 mg for children 15 to 30 kg (about 33 to 66 lb).", "lesson": "emt-pharm-l05" },
+    { "id": "emt-pharm-c033", "front": "Where and how is an epinephrine auto-injector given?", "back": "Intramuscularly into the anterolateral thigh, the outer middle third, at 90 degrees, through clothing if needed. Hold 10 seconds, or 3 seconds on newer devices, then massage the site.", "lesson": "emt-pharm-l05" },
+    { "id": "emt-pharm-c034", "front": "Why the thigh instead of the arm for epinephrine?", "back": "The vastus lateralis is a large muscle with heavy blood flow and no major vessels or nerves in the target area, so absorption is faster and safer than the deltoid or buttock.", "lesson": "emt-pharm-l05" },
+    { "id": "emt-pharm-c035", "front": "What side effects should you expect after epinephrine?", "back": "Tachycardia, palpitations, tremor, anxiety, pallor, headache and nausea. These are the drug working, not an adverse reaction, and there is no field reversal agent.", "lesson": "emt-pharm-l05" },
+    { "id": "emt-pharm-c036", "front": "When can epinephrine be repeated in anaphylaxis?", "back": "In 5 to 15 minutes if there is no improvement or symptoms return, per protocol. Anaphylaxis frequently requires more than one dose.", "lesson": "emt-pharm-l05" },
+    { "id": "emt-pharm-c037", "front": "Why is every anaphylaxis patient transported even if they look well?", "back": "A biphasic reaction can return 4 to 12 hours later as the epinephrine wears off, sometimes worse than the first. There is no safe way to predict who will have one.", "lesson": "emt-pharm-l05" },
+    { "id": "emt-pharm-c038", "front": "Which epinephrine concentration is used for IM anaphylaxis, and what volume equals 0.3 mg?", "back": "1 mg/mL, formerly labeled 1:1,000. A 0.3 mg dose is 0.3 mL. The 0.1 mg/mL (1:10,000) cardiac-arrest concentration is ten times weaker.", "lesson": "emt-pharm-l05" },
+    { "id": "emt-pharm-c039", "front": "What is the classic triad of opioid overdose?", "back": "Pinpoint pupils, slow or absent breathing, and depressed mental status. The patient dies from not breathing, not from unconsciousness.", "lesson": "emt-pharm-l06" },
+    { "id": "emt-pharm-c040", "front": "What are the naloxone doses by route?", "back": "Intranasal prefilled device 4 mg in one nostril; intranasal atomizer 2 mg total, 1 mg per nostril; intramuscular 0.4 to 2 mg. Repeat every 2 to 3 minutes as needed.", "lesson": "emt-pharm-l06" },
+    { "id": "emt-pharm-c041", "front": "What comes before naloxone in an opioid overdose?", "back": "Airway and ventilation. Open the airway and bag with a BVM first and continue during administration — hypoxia is what is killing the patient, and naloxone takes minutes.", "lesson": "emt-pharm-l06" },
+    { "id": "emt-pharm-c042", "front": "What is the endpoint when titrating naloxone?", "back": "Adequate breathing — roughly 12 or more breaths per minute with good tidal volume — not full consciousness. Overshooting causes withdrawal, vomiting and combativeness.", "lesson": "emt-pharm-l06" },
+    { "id": "emt-pharm-c043", "front": "How long does naloxone last and why does that matter?", "back": "30 to 90 minutes, shorter than fentanyl, methadone and extended-release opioids. The patient can wake up, refuse transport, and stop breathing later, so monitor and push for transport.", "lesson": "emt-pharm-l06" },
+    { "id": "emt-pharm-c044", "front": "What is the activated charcoal dose for an adult and a child?", "back": "1 g/kg — practically 25 to 50 g for an adult and 12.5 to 25 g for a child. Shake vigorously before giving and serve in an opaque cup with a straw.", "lesson": "emt-pharm-l06" },
+    { "id": "emt-pharm-c045", "front": "When is activated charcoal contraindicated?", "back": "Altered mental status or no gag reflex, vomiting, and ingestion of caustics, hydrocarbons, alcohols or metals. It also requires an order from medical direction or poison control.", "lesson": "emt-pharm-l06" },
+    { "id": "emt-pharm-c046", "front": "Within what time window is activated charcoal usually useful?", "back": "About 1 hour of ingestion, because after that most of the poison has already left the stomach. Many systems have removed it from the ambulance entirely.", "lesson": "emt-pharm-l06" },
+    { "id": "emt-pharm-c047", "front": "What is the nebulized albuterol dose and driving flow?", "back": "2.5 mg in 3 mL of saline, driven by oxygen at 6 to 8 L/min, delivered over 5 to 15 minutes until the mist stops. Repeat per protocol.", "lesson": "emt-pharm-l07" },
+    { "id": "emt-pharm-c048", "front": "What is the metered-dose inhaler dose of albuterol and the correct technique?", "back": "90 mcg per puff, usually 2 puffs with a spacer. Shake 5 seconds, exhale fully, seal the lips, press and inhale slowly, hold 10 seconds, wait 1 minute between puffs.", "lesson": "emt-pharm-l07" },
+    { "id": "emt-pharm-c049", "front": "What does a silent chest mean in a wheezing patient?", "back": "Too little air is moving to create sound. It is worsening, not improvement, and signals impending respiratory failure requiring assisted ventilation and ALS.", "lesson": "emt-pharm-l07" },
+    { "id": "emt-pharm-c050", "front": "What are the indications and typical settings for CPAP?", "back": "Moderate to severe distress from pulmonary edema, COPD or pneumonia in an awake, cooperative patient who can protect the airway, typically 5 to 10 cm H2O per protocol.", "lesson": "emt-pharm-l07" },
+    { "id": "emt-pharm-c051", "front": "List the contraindications to CPAP.", "back": "Apnea or arrest, inability to follow commands or protect the airway, systolic under about 90, active vomiting, upper GI bleeding, suspected pneumothorax, facial trauma, and tracheostomy.", "lesson": "emt-pharm-l07" },
+    { "id": "emt-pharm-c052", "front": "What glucose values are considered normal and when is hypoglycemia treated?", "back": "Fasting roughly 70 to 99 mg/dL, random under about 140. Most protocols treat symptomatic hypoglycemia below 60 to 70 mg/dL.", "lesson": "emt-pharm-l07" },
+    { "id": "emt-pharm-c053", "front": "What medications and interventions are in the New Jersey BLS scope?", "back": "Oxygen and CPAP, glucometry, oral glucose, aspirin, epinephrine by auto-injector or syringe under the state program, intranasal naloxone, assisting with the patient's own nitroglycerin and inhaler, tourniquets and hemostatic dressings.", "lesson": "emt-pharm-l07" },
+    { "id": "emt-pharm-c054", "front": "Why is a normal heart rate meaningless in a patient on metoprolol?", "back": "Beta blockers block the beta-1 receptor, so the heart cannot mount the compensatory tachycardia of blood loss or sepsis. Judge perfusion by skin, mental status and capillary refill.", "lesson": "emt-pharm-l08" },
+    { "id": "emt-pharm-c055", "front": "Name four common anticoagulants or antiplatelets and why they matter.", "back": "Warfarin, apixaban, rivaroxaban and clopidogrel. Any head strike can become a delayed intracranial bleed and any bleeding is harder to control, so transport and notify early.", "lesson": "emt-pharm-l08" },
+    { "id": "emt-pharm-c056", "front": "Which diabetes medications cause hypoglycemia and which rarely do?", "back": "Insulin and the sulfonylureas, glipizide and glyburide, cause it and can cause it to return hours later. Metformin alone rarely causes hypoglycemia.", "lesson": "emt-pharm-l08" },
+    { "id": "emt-pharm-c057", "front": "What does digoxin toxicity look like?", "back": "Nausea and vomiting, visual halos or yellow-green vision, confusion, and slow or irregular heart rhythms. Digoxin has a narrow margin between therapeutic and toxic.", "lesson": "emt-pharm-l08" },
+    { "id": "emt-pharm-c058", "front": "What does a bottle of furosemide tell you about a patient?", "back": "It signals heart failure or hypertension, and it predicts dehydration and low potassium, which produce weakness, cramps and arrhythmias.", "lesson": "emt-pharm-l08" },
+    { "id": "emt-pharm-c059", "front": "Why should you ask when a patient last took their antiepileptic?", "back": "Missed doses of levetiracetam, phenytoin, valproate or lamotrigine are one of the most common seizure triggers, and the answer often explains the call.", "lesson": "emt-pharm-l08" },
+    { "id": "emt-pharm-c060", "front": "What three questions should you ask about every medication bottle?", "back": "What is it for, when did you last take it, and has anything changed recently. A dose change in the last two weeks explains a large share of calls.", "lesson": "emt-pharm-l08" },
+    { "id": "emt-pharm-c061", "front": "How do you convert pounds to kilograms, and estimate it in your head?", "back": "Divide pounds by 2.2. To estimate, halve the pounds and subtract 10 percent: 154 lb halved is 77, minus 10 percent is about 69 kg, close to the true 70 kg.", "lesson": "emt-pharm-l09" },
+    { "id": "emt-pharm-c062", "front": "What is the formula for converting a dose in milligrams to a volume in milliliters?", "back": "Volume to give equals the desired dose divided by the concentration on the label. For 0.3 mg from a 1 mg/mL vial, that is 0.3 mL.", "lesson": "emt-pharm-l09" },
+    { "id": "emt-pharm-c063", "front": "What does a percent solution mean, and what is in a 50 mL syringe of D50?", "back": "Percent means grams per 100 mL. D50 is 50 g per 100 mL, or 0.5 g/mL, so a 50 mL prefilled syringe contains 25 g of dextrose.", "lesson": "emt-pharm-l09" },
+    { "id": "emt-pharm-c064", "front": "How do you read a 1 mL syringe accurately?", "back": "Long marks are 0.1 mL and short marks 0.02 mL. Read at the flat front edge of the plunger, at eye level, with air expelled, and say the volume aloud to your partner.", "lesson": "emt-pharm-l09" },
+    { "id": "emt-pharm-c065", "front": "What five things belong in a request for a physician order?", "back": "Who you are and your level, the patient's age, sex and complaint, the vitals, history, allergies and medications, what you have already done, and the specific drug, dose and route requested.", "lesson": "emt-pharm-l09" },
+    { "id": "emt-pharm-c066", "front": "What six items document a medication administration?", "back": "Drug generic name, dose, route, time to the minute, who authorized it (protocol or physician name), and the patient's response with a reassessment time.", "lesson": "emt-pharm-l09" },
+    { "id": "emt-pharm-c067", "front": "Why document a medication you decided NOT to give?", "back": "It shows you considered it and names the reason, such as 'nitroglycerin withheld: sildenafil this morning.' That protects the patient's continuity of care and protects you.", "lesson": "emt-pharm-l09" },
+    { "id": "emt-pharm-c068", "front": "How do you determine a pediatric dose when the child's weight is unknown?", "back": "Use a length-based resuscitation tape such as the Broselow tape: measure heel to head and read the color band, which gives estimated weight, drug doses and equipment sizes.", "lesson": "emt-pharm-l09" }
+  ],
+  "quiz": [
+    {
+      "id": "emt-pharm-q001",
+      "q": "A patient tells you she takes Coumadin. Which generic name should you document?",
+      "choices": [
+        "Warfarin",
+        "Clopidogrel",
+        "Carvedilol",
+        "Furosemide"
+      ],
+      "answer": 0,
+      "why": "Coumadin is the trade name for warfarin, an anticoagulant. Clopidogrel is Plavix, carvedilol is Coreg, and furosemide is Lasix — knowing these pairs is how you convert a pill bottle into a history.",
+      "lesson": "emt-pharm-l01",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-pharm-q002",
+      "q": "Which route provides the fastest onset available to an EMT for a patient in anaphylaxis with poor perfusion?",
+      "choices": [
+        "Intramuscular into the thigh",
+        "Oral",
+        "Subcutaneous into the abdomen",
+        "Transdermal patch"
+      ],
+      "answer": 0,
+      "why": "IM into the well-perfused vastus lateralis works in 5 to 10 minutes. Oral, subcutaneous and transdermal routes all depend on blood flow to tissue that is shunted away during shock, so absorption is slow and unreliable.",
+      "lesson": "emt-pharm-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-pharm-q003",
+      "q": "Albuterol activates beta-2 receptors to relax airway smooth muscle. What is the correct term for this kind of drug?",
+      "choices": [
+        "Antagonist",
+        "Suspension",
+        "Agonist",
+        "Catalyst"
+      ],
+      "answer": 2,
+      "why": "An agonist binds and activates the receptor. An antagonist, such as naloxone at the opioid receptor, binds and blocks it without producing an effect.",
+      "lesson": "emt-pharm-l01",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-pharm-q004",
+      "q": "You are about to give a medication and notice the packaging has already been opened and the expiration date is next month. What do you do?",
+      "choices": [
+        "Give it, since it is not expired",
+        "Give half the dose to be safe",
+        "Give it and document the packaging concern",
+        "Discard it and obtain an intact supply"
+      ],
+      "answer": 3,
+      "why": "Packaging integrity is part of every one of the three checks, alongside expiration and clarity. A previously opened package may be contaminated or tampered with, and a valid date does not make it safe.",
+      "lesson": "emt-pharm-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-pharm-q005",
+      "q": "Your protocol authorizes oxygen for a hypoxic patient without contacting anyone. What type of medical direction is this?",
+      "choices": [
+        "Offline direction",
+        "Online direction",
+        "Peer-assisted direction",
+        "Implied consent"
+      ],
+      "answer": 0,
+      "why": "Offline or indirect medical direction is the written, physician-approved standing order you carry. Online or direct direction requires speaking with a physician in real time.",
+      "lesson": "emt-pharm-l02",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-pharm-q006",
+      "q": "Medical control orders '0.3 milligrams of epinephrine intramuscular' for a patient who weighs 18 kilograms. What should you do?",
+      "choices": [
+        "Give the dose exactly as ordered without comment",
+        "Give 0.15 mg instead without telling anyone",
+        "Repeat the order back and question it, noting the patient's weight, before administering",
+        "Refuse to give any epinephrine"
+      ],
+      "answer": 2,
+      "why": "An 18 kg child falls in the 15 to 30 kg pediatric band, where 0.15 mg is appropriate. The read-back exists precisely to surface this, and silently substituting a different dose is as unsafe as silently following a wrong one.",
+      "lesson": "emt-pharm-l02",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-pharm-q007",
+      "q": "A 24-year-old with an asthma attack has a room-air saturation of 89% and is speaking in short phrases. What oxygen target should you titrate to?",
+      "choices": [
+        "88 to 92%",
+        "No oxygen unless she loses consciousness",
+        "94 to 98%",
+        "Exactly 100%"
+      ],
+      "answer": 2,
+      "why": "94 to 98% is the target for most patients; the 88 to 92% range applies specifically to patients with COPD. Chasing 100% offers no benefit and withholding oxygen at 89% leaves real hypoxia untreated.",
+      "lesson": "emt-pharm-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-pharm-q008",
+      "q": "A patient rescued from a house fire is confused with a pulse oximetry reading of 99%. What is the correct oxygen therapy?",
+      "choices": [
+        "No oxygen, since the saturation is normal",
+        "Nasal cannula at 2 L/min",
+        "Titrate down to 94%",
+        "Nonrebreather at 15 L/min regardless of the reading"
+      ],
+      "answer": 3,
+      "why": "A standard pulse oximeter cannot distinguish oxygen from carbon monoxide bound to hemoglobin, so it reads falsely high. High-flow oxygen speeds carbon monoxide removal and the reading must be ignored.",
+      "lesson": "emt-pharm-l03",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-pharm-q009",
+      "q": "A diabetic patient is unresponsive with a glucose of 32 mg/dL and no gag reflex. What should you do?",
+      "choices": [
+        "Place 15 g of oral glucose gel between the cheek and gum",
+        "Manage the airway, ventilate as needed, and request ALS for IV dextrose",
+        "Place glucose gel under the tongue",
+        "Pour juice slowly into the mouth"
+      ],
+      "answer": 1,
+      "why": "Any oral sugar in a patient without a gag reflex will be aspirated. The correct treatment is airway management and ALS for IV dextrose or glucagon, no matter how low the glucose reads.",
+      "lesson": "emt-pharm-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-pharm-q010",
+      "q": "Which statement about the prehospital aspirin dose is correct?",
+      "choices": [
+        "Enteric-coated tablets are preferred because they protect the stomach",
+        "324 mg chewed, using non-enteric-coated tablets",
+        "81 mg swallowed whole is sufficient",
+        "650 mg chewed is the standard"
+      ],
+      "answer": 1,
+      "why": "Chewing four 81 mg non-enteric tablets gives rapid platelet inhibition. Enteric coating exists to delay absorption, which defeats the purpose, and 81 mg alone does not provide acute blockade.",
+      "lesson": "emt-pharm-l04",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-pharm-q011",
+      "q": "Which patient with chest pain should NOT receive aspirin?",
+      "choices": [
+        "A 60-year-old who takes 81 mg daily",
+        "A 55-year-old with a history of hypertension",
+        "A 48-year-old vomiting bright red blood",
+        "A 70-year-old who had a heart attack two years ago"
+      ],
+      "answer": 2,
+      "why": "Vomiting bright red blood is active gastrointestinal bleeding, an absolute contraindication. Daily low-dose use, hypertension and prior infarction are not contraindications and in fact mark higher-risk patients.",
+      "lesson": "emt-pharm-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-pharm-q012",
+      "q": "A 64-year-old with chest pain has a BP of 104/62. You assist with 0.4 mg nitroglycerin. Five minutes later his pain is unchanged and his BP is 96/58. What is the correct action?",
+      "choices": [
+        "Give a second dose since the maximum is three",
+        "Give two doses at once to catch up",
+        "Withhold further nitroglycerin, position supine, and reassess",
+        "Give a nitroglycerin patch instead"
+      ],
+      "answer": 2,
+      "why": "The systolic has fallen below the usual 100 mmHg threshold, so no further doses are given. Lowering preload further in a patient already dropping pressure risks a profound crash, especially in an inferior or right ventricular infarct.",
+      "lesson": "emt-pharm-l04",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-pharm-q013",
+      "q": "A chest-pain patient reports taking sildenafil 6 hours ago. His BP is 146/90. What should you do about nitroglycerin?",
+      "choices": [
+        "Withhold nitroglycerin; the interaction window is 24 hours",
+        "Give it since his blood pressure is high",
+        "Give half a tablet",
+        "Give it only if he remains standing"
+      ],
+      "answer": 0,
+      "why": "Sildenafil and vardenafil contraindicate nitroglycerin for 24 hours and tadalafil for 48. The resulting hypotension is severe and not reversible with position or fluids at the BLS level, and a high starting pressure does not protect him.",
+      "lesson": "emt-pharm-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-pharm-q014",
+      "q": "A patient who took nitroglycerin develops a throbbing headache. What does this indicate?",
+      "choices": [
+        "An allergic reaction requiring epinephrine",
+        "A stroke in progress",
+        "An expected side effect of vasodilation",
+        "That the tablet was expired"
+      ],
+      "answer": 2,
+      "why": "Nitroglycerin dilates blood vessels including those in the head, so headache is a predictable side effect and often a sign the tablet was potent. Absence of a headache can suggest the tablets have lost potency.",
+      "lesson": "emt-pharm-l04",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-pharm-q015",
+      "q": "A 40 kg 11-year-old has hives, stridor and a BP of 84/50 after eating shrimp. What epinephrine dose is appropriate?",
+      "choices": [
+        "0.15 mg IM in the thigh",
+        "0.3 mg IM in the thigh",
+        "0.15 mg subcutaneously in the arm",
+        "0.3 mg IM in the deltoid"
+      ],
+      "answer": 1,
+      "why": "At 40 kg the patient exceeds the 30 kg threshold, so the adult 0.3 mg device is correct, given IM in the anterolateral thigh. The deltoid absorbs more slowly and subcutaneous absorption is unreliable in a hypotensive patient.",
+      "lesson": "emt-pharm-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-pharm-q016",
+      "q": "Ten minutes after an epinephrine auto-injector, a patient's stridor has returned and her BP is 82/46. What should you do?",
+      "choices": [
+        "Give diphenhydramine instead",
+        "Withhold further epinephrine because of the tachycardia",
+        "Wait 30 minutes before reassessing",
+        "Repeat the epinephrine dose per protocol and continue high-flow oxygen"
+      ],
+      "answer": 3,
+      "why": "Epinephrine may be repeated in 5 to 15 minutes when symptoms persist or return, and anaphylaxis often requires more than one dose. Tachycardia is an expected effect, not a reason to withhold a life-saving drug.",
+      "lesson": "emt-pharm-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-pharm-q017",
+      "q": "A patient with a peanut allergy has hives on her arms only, a clear chest, and a BP of 126/78. What is the appropriate care?",
+      "choices": [
+        "Give 0.3 mg epinephrine immediately",
+        "Monitor closely, transport, and be prepared to give epinephrine if breathing or circulation is involved",
+        "Have her take her inhaler",
+        "Release her with instructions to take an antihistamine"
+      ],
+      "answer": 1,
+      "why": "Anaphylaxis requires respiratory compromise, hypotension, or two-system involvement. Isolated hives with normal vitals does not meet the threshold, but it can progress fast, so transport with the auto-injector ready.",
+      "lesson": "emt-pharm-l05",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-pharm-q018",
+      "q": "Which technique for an epinephrine auto-injector is correct?",
+      "choices": [
+        "Place your thumb over the tip while removing the cap",
+        "Give it in the buttock for deeper absorption",
+        "Remove clothing completely before injecting",
+        "Press firmly into the outer thigh at 90 degrees, hold per device instructions, then massage the site"
+      ],
+      "answer": 3,
+      "why": "The anterolateral thigh at 90 degrees, through clothing if necessary, with a hold of 10 seconds (3 on newer devices) and then massage, is the standard. Covering the tip risks injecting your own thumb, and the buttock absorbs too slowly.",
+      "lesson": "emt-pharm-l05",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-pharm-q019",
+      "q": "You arrive to find a 30-year-old with pinpoint pupils, a respiratory rate of 5, and a saturation of 78%. Naloxone is in your bag. What is the correct order of care?",
+      "choices": [
+        "Give intranasal naloxone, then check the airway if he does not wake",
+        "Wait for ALS before doing anything",
+        "Perform chest compressions, then give naloxone",
+        "Open the airway and ventilate with a BVM, then give naloxone while continuing to ventilate"
+      ],
+      "answer": 3,
+      "why": "Hypoxia is the lethal problem and naloxone takes 2 to 5 minutes to work, so ventilation comes first and continues throughout. He has a pulse and is breathing, so compressions are not indicated.",
+      "lesson": "emt-pharm-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-pharm-q020",
+      "q": "After naloxone, an opioid patient becomes agitated, vomits, and demands to be left alone. What is the best explanation and response?",
+      "choices": [
+        "He is having an allergic reaction; give epinephrine",
+        "He is in acute opioid withdrawal; protect the airway, suction, keep him calm, and encourage transport",
+        "The naloxone was expired",
+        "He is fully recovered and can safely refuse"
+      ],
+      "answer": 1,
+      "why": "Sudden receptor blockade precipitates withdrawal with vomiting and agitation, which is why naloxone is titrated to breathing rather than wakefulness. He is not safe to refuse because naloxone wears off in 30 to 90 minutes.",
+      "lesson": "emt-pharm-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-pharm-q021",
+      "q": "A conscious 80 kg adult ingested a bottle of an unknown medication 30 minutes ago. Medical direction orders activated charcoal at 1 g/kg. What dose does that work out to, and what limits apply?",
+      "choices": [
+        "8 g, given only if the patient is vomiting",
+        "800 g, given regardless of substance",
+        "Roughly 50 g as an adult dose, only with an intact gag reflex and not for caustics, alcohols, metals or hydrocarbons",
+        "25 g, only for hydrocarbon ingestion"
+      ],
+      "answer": 2,
+      "why": "The calculated 80 g is capped in practice at the usual 25 to 50 g adult range, and the substance class must be checked because charcoal does not bind alcohols, metals, caustics or hydrocarbons. An intact gag reflex is mandatory.",
+      "lesson": "emt-pharm-l06",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-pharm-q022",
+      "q": "Why must a patient who woke up after naloxone still be transported?",
+      "choices": [
+        "Because naloxone causes permanent lung damage",
+        "Because naloxone lasts 30 to 90 minutes and many opioids last longer, so re-sedation is likely",
+        "Because naloxone must be reversed at the hospital",
+        "Because state law forbids any refusal"
+      ],
+      "answer": 1,
+      "why": "Naloxone's duration is shorter than fentanyl, methadone and extended-release formulations, so respiratory depression can return after the crew leaves. Document the refusal carefully and involve medical direction if the patient still declines.",
+      "lesson": "emt-pharm-l06",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-pharm-q023",
+      "q": "An asthmatic who was wheezing loudly now has a quiet chest, is sitting forward, and can no longer speak. What does this mean?",
+      "choices": [
+        "She is moving too little air to wheeze and is heading toward respiratory failure",
+        "The albuterol worked and she is improving",
+        "She has developed pneumonia",
+        "She is faking to get transported faster"
+      ],
+      "answer": 0,
+      "why": "Wheezing requires airflow, so a silent chest in a patient working this hard means severe obstruction. This patient needs assisted ventilation, continued bronchodilator per protocol, and immediate ALS.",
+      "lesson": "emt-pharm-l07",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-pharm-q024",
+      "q": "You are assisting a patient with a metered-dose inhaler. Which step sequence is correct?",
+      "choices": [
+        "Inhale first, then press the canister, then exhale rapidly",
+        "Press the canister twice quickly, then breathe normally",
+        "Hold the inhaler two inches from the mouth and spray while exhaling",
+        "Shake the canister, exhale fully, seal the lips, press and inhale slowly, then hold for 10 seconds"
+      ],
+      "answer": 3,
+      "why": "The inhaled drug must travel deep into the airways on a slow, full inhalation and then be held there to deposit. Spraying during exhalation or firing two puffs at once deposits most of the dose in the mouth.",
+      "lesson": "emt-pharm-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-pharm-q025",
+      "q": "Which finding makes CPAP inappropriate for a patient in respiratory distress?",
+      "choices": [
+        "A systolic blood pressure of 76 mmHg",
+        "Rales in both lung bases",
+        "A respiratory rate of 32",
+        "A history of congestive heart failure"
+      ],
+      "answer": 0,
+      "why": "CPAP raises intrathoracic pressure and reduces venous return, so hypotension is a contraindication. Rales, tachypnea and a heart failure history are exactly the picture CPAP is designed to treat.",
+      "lesson": "emt-pharm-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-pharm-q026",
+      "q": "Which statement about New Jersey BLS medication scope is most accurate?",
+      "choices": [
+        "New Jersey EMTs may not administer naloxone",
+        "New Jersey EMTs may administer oxygen, oral glucose, aspirin, epinephrine and intranasal naloxone per NJ OEMS protocol",
+        "New Jersey EMTs may administer any medication the patient has at home",
+        "New Jersey EMTs may start IV lines for medication delivery"
+      ],
+      "answer": 1,
+      "why": "That list reflects the state's BLS scope, with epinephrine available by auto-injector or by syringe under an approved program and naloxone available to all levels of EMS. IV access is an ALS skill everywhere.",
+      "lesson": "emt-pharm-l07",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-pharm-q027",
+      "q": "A 71-year-old on atenolol has been vomiting blood for two hours. His skin is cool and pale, capillary refill is 4 seconds, HR 76, BP 98/60. What is your interpretation?",
+      "choices": [
+        "He is stable because his heart rate is normal",
+        "The beta blocker is masking compensatory tachycardia; treat him as being in shock",
+        "The atenolol dose should be repeated",
+        "Cool skin is expected in older adults and means nothing"
+      ],
+      "answer": 1,
+      "why": "Beta blockade prevents the heart-rate response to blood loss, so skin signs, capillary refill and mental status become the reliable indicators. A normal rate in a bleeding patient on a beta blocker is one of the most dangerous false reassurances in EMS.",
+      "lesson": "emt-pharm-l08",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-pharm-q028",
+      "q": "Which medication on a patient's list should prompt you to ask about erectile dysfunction or pulmonary hypertension drugs before assisting with nitroglycerin?",
+      "choices": [
+        "Metformin",
+        "Levetiracetam",
+        "Furosemide",
+        "Tadalafil"
+      ],
+      "answer": 3,
+      "why": "Tadalafil is a PDE-5 inhibitor sold as Cialis and Adcirca, and it contraindicates nitroglycerin for 48 hours. Metformin, levetiracetam and furosemide have no such interaction, though each tells you something about the patient's history.",
+      "lesson": "emt-pharm-l08",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-pharm-q029",
+      "q": "A 33 lb child needs a weight-based dose. What is the weight in kilograms?",
+      "choices": [
+        "15 kg",
+        "22 kg",
+        "30 kg",
+        "73 kg"
+      ],
+      "answer": 0,
+      "why": "Divide pounds by 2.2: 33 divided by 2.2 equals 15 kg. That figure matters because 15 kg is the lower edge of the band where a 0.15 mg pediatric epinephrine auto-injector is used.",
+      "lesson": "emt-pharm-l09",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-pharm-q030",
+      "q": "You must give 0.3 mg of epinephrine IM and pick up a vial labeled 0.1 mg/mL. What volume delivers the correct dose, and what should you check?",
+      "choices": [
+        "0.3 mL, and no further check is needed",
+        "3 mL, and you should verify whether your protocol intends the 1 mg/mL concentration for IM use",
+        "0.03 mL, drawn in a 1 mL syringe",
+        "1 mL, since concentration does not change the dose"
+      ],
+      "answer": 1,
+      "why": "Volume equals dose divided by concentration, so 0.3 divided by 0.1 is 3 mL. The 0.1 mg/mL concentration is the cardiac-arrest solution, so finding it in your hand for an anaphylaxis dose should stop you and make you verify the vial.",
+      "lesson": "emt-pharm-l09",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-pharm-q031",
+      "q": "Medical control gives you a verbal medication order. What should you do before administering it?",
+      "choices": [
+        "Administer immediately to save time and confirm afterward",
+        "Write it down and give it without speaking",
+        "Repeat the order back verbatim, including drug, dose and route",
+        "Ask your partner whether it sounds right"
+      ],
+      "answer": 2,
+      "why": "The verbatim read-back is the standard safety step and the moment errors in drug, dose or route are caught. It also creates a record on a recorded line of exactly what was ordered.",
+      "lesson": "emt-pharm-l09",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-pharm-q032",
+      "q": "You withheld nitroglycerin because the patient took sildenafil that morning. How should this appear in your documentation?",
+      "choices": [
+        "It should not be documented, since nothing was given",
+        "Record only that the patient refused",
+        "Note it in the vitals section as a blood pressure comment",
+        "Document that nitroglycerin was considered and withheld, and state the reason"
+      ],
+      "answer": 3,
+      "why": "Documenting what you considered and why you withheld it shows sound clinical reasoning, informs the receiving team, and protects you. Calling it a refusal misstates what happened.",
+      "lesson": "emt-pharm-l09",
+      "difficulty": 2
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "emt-pharm-s01",
+      "title": "Dispatched: 54M, 'acting drunk' at a bus stop",
+      "setting": "field",
+      "intro": "1340 hours, clear and cold. Dispatch: 54-year-old male, confused, possibly intoxicated, reported by a passerby at a covered bus shelter. Police are on scene and report no violence and no weapons. You are staffed BLS with a glucometer, oral glucose, naloxone and oxygen. ALS is available with a 12-minute response.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "He is sitting on the bench, slumped to one side, eyes open, mumbling and not answering questions clearly. His shirt is soaked with sweat even though it is 38 degrees out. An officer says he smells no alcohol. There is a medical alert bracelet on his left wrist.",
+          "vitals": { "hr": 112, "bp": "138/84", "rr": 20, "spo2": 97 },
+          "choices": [
+            {
+              "text": "Read the medical alert bracelet and check a blood glucose",
+              "next": "s2",
+              "feedback": "Correct. Diaphoresis with confusion and no alcohol smell screams hypoglycemia, and the bracelet is free history. Glucose is a vital sign in any altered mental status.",
+              "score": 1
+            },
+            {
+              "text": "Give 4 mg intranasal naloxone since he is altered",
+              "next": "s2",
+              "feedback": "No indication. His pupils, respiratory rate of 20 and saturation of 97 percent do not fit opioid overdose. Naloxone is for respiratory depression from opioids, not for altered mental status generally.",
+              "score": -1
+            },
+            {
+              "text": "Assume alcohol intoxication and offer a ride to the shelter",
+              "next": "s2",
+              "feedback": "Dangerous assumption, and the officer already told you there is no alcohol smell. Every altered patient gets a glucose check before any conclusion.",
+              "score": -1
+            },
+            {
+              "text": "Apply oxygen by nonrebreather at 15 L/min and transport immediately",
+              "next": "s2",
+              "feedback": "Oxygen is not indicated at a saturation of 97 percent, and leaving without checking glucose skips the one test that could fix him on scene. Oxygen is dosed to a target, not given reflexively.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "The bracelet reads 'Type 1 diabetic — insulin pump.' The glucometer reads `38 mg/dL`. He is now mumbling more and pushing your hand away, but he tracks you with his eyes, follows a simple command to open his mouth, and swallows his own saliva.",
+          "vitals": { "hr": 118, "bp": "134/80", "rr": 20, "spo2": 97 },
+          "choices": [
+            {
+              "text": "Administer 15 g of oral glucose gel buccally, between the cheek and gum",
+              "next": "s3",
+              "feedback": "Correct. He is awake, follows a command and is swallowing, so he can protect his airway. Buccal placement is the right route, and 15 g is one full tube.",
+              "score": 1
+            },
+            {
+              "text": "Squirt the gel toward the back of his throat so it goes down faster",
+              "next": "s3",
+              "feedback": "That is how you cause aspiration. Oral glucose is placed between the cheek and gum where it absorbs through the mucosa, not deposited in the pharynx.",
+              "score": -1
+            },
+            {
+              "text": "Wait for ALS to arrive with IV dextrose rather than giving anything",
+              "next": "s3",
+              "feedback": "Twelve minutes of a glucose of 38 costs brain function, and he meets every criterion for the safe BLS option you already carry. Request ALS, but treat now.",
+              "score": 0
+            },
+            {
+              "text": "Give him a full can of soda to drink quickly",
+              "next": "s3",
+              "feedback": "A confused patient gulping liquid is an aspiration event waiting to happen, and the volume and sugar content are uncontrolled. Use the measured 15 g gel.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "Consider the alternative branch. Suppose instead that when you opened his mouth he was completely unresponsive to voice and pain, made no swallowing motion, and had no gag when you tested the airway with a suction tip.",
+          "choices": [
+            {
+              "text": "Manage the airway, position him laterally with suction ready, assist ventilation if needed, and request ALS for IV dextrose or glucagon",
+              "next": "s4",
+              "feedback": "Correct. No gag and no swallow means anything placed in the mouth ends up in the lungs. Airway first, then get the drug that does not need a functioning swallow.",
+              "score": 1
+            },
+            {
+              "text": "Place the glucose gel between the cheek and gum anyway, since it absorbs through the mucosa",
+              "next": "s4",
+              "feedback": "A common misconception. Buccal absorption is real but slow, and a patient with no airway protection will pool and aspirate the gel. Unresponsiveness is an absolute contraindication.",
+              "score": -1
+            },
+            {
+              "text": "Rub the gel on his gums with a gloved finger",
+              "next": "s4",
+              "feedback": "Same contraindication, plus you have put your fingers in the mouth of a patient who could seize or clamp down. Do not do it.",
+              "score": -1
+            },
+            {
+              "text": "Begin transport with the airway managed and meet ALS en route",
+              "next": "s4",
+              "feedback": "Reasonable if the intercept is closer than the hospital, though naming the airway plan explicitly is what makes it safe. Either way, no oral glucose.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "Back to the real patient, who did get the gel. Fourteen minutes later he is alert and oriented, apologetic, asking for a sandwich. Repeat glucose reads `96 mg/dL`. He says he feels fine and does not want to go to the hospital. He mentions his insulin pump 'has been acting up' since yesterday.",
+          "vitals": { "hr": 88, "bp": "130/78", "rr": 16, "spo2": 98 },
+          "choices": [
+            {
+              "text": "Strongly encourage transport, explain that a malfunctioning pump can drop his sugar again, and contact medical direction about the refusal",
+              "next": "s5",
+              "feedback": "Correct. A continuing insulin source is an ongoing cause, so recurrence is likely. He has the capacity to refuse, but this refusal needs a real conversation and medical direction involvement.",
+              "score": 1
+            },
+            {
+              "text": "Accept the refusal, have him sign, and clear the call",
+              "next": "s5",
+              "feedback": "Too fast. He has a device still delivering insulin and an unexplained malfunction. Signing a form is not the same as informed refusal after a real risk discussion.",
+              "score": -1
+            },
+            {
+              "text": "Tell him he has no choice and must be transported",
+              "next": "s5",
+              "feedback": "An alert, oriented adult with capacity can refuse. Coercion is not a legal option, and it destroys the trust that persuasion depends on.",
+              "score": -1
+            },
+            {
+              "text": "Give a second tube of oral glucose so his sugar goes higher before you leave",
+              "next": "s5",
+              "feedback": "Not indicated at 96 mg/dL, and it treats your anxiety rather than his problem. The issue is the ongoing insulin delivery, not the current number.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "He agrees to go. You are writing the chart on the way in. Which entry is complete?",
+          "choices": [
+            {
+              "text": "'1348 — glucose 38 mg/dL. 1351 — oral glucose 15 g buccal per standing order. 1405 — alert and oriented, glucose 96 mg/dL, HR 88.'",
+              "next": "end",
+              "feedback": "Correct and complete: the finding, the drug, dose, route, time and authorization, and a timed reassessment with the response. That is the six-item standard.",
+              "score": 1
+            },
+            {
+              "text": "'Patient was hypoglycemic. Gave glucose. Improved.'",
+              "next": "end",
+              "feedback": "Missing dose, route, times, authorization and objective reassessment. A narrative like this cannot support what you did if the call is ever reviewed.",
+              "score": 0
+            },
+            {
+              "text": "'Gave one tube Glutose.'",
+              "next": "end",
+              "feedback": "Trade name with no dose, route, time, authorization or response. Chart the generic name and all six items.",
+              "score": -1
+            },
+            {
+              "text": "'Patient refused care, then accepted.'",
+              "next": "end",
+              "feedback": "This records the disposition drama and none of the medicine. The glucose values and the medication record are the clinically important content.",
+              "score": -1
+            }
+          ]
+        }
+      ],
+      "debrief": "The pattern to carry: every altered mental status gets a glucose check, and the decision to give oral glucose turns entirely on airway protection — can he swallow and does he have a gag — not on how low the number is. When the answer is no, the drug changes to IV dextrose or glucagon and the intervention changes to airway management and ALS. Then there is the part people forget: fixing a number is not fixing a cause. An insulin pump still delivering insulin, or a long-acting sulfonylurea like glipizide, will drop him again after you leave, which is why that refusal deserved a real conversation and a call to medical direction. Finally, the chart: drug, dose, route, time, who authorized it, and a timed response. Six items, every time."
+    },
+    {
+      "id": "emt-pharm-s02",
+      "title": "Dispatched: 7-year-old stung by a bee at a soccer field",
+      "setting": "field",
+      "intro": "1620 hours, youth soccer practice at a town field. Dispatch: 7-year-old male stung by a bee, 'face is swelling up.' A coach says the boy's mother is on her way and that he has an EpiPen in his backpack. Your ambulance carries both adult 0.3 mg and pediatric 0.15 mg epinephrine auto-injectors, oxygen, a BVM, and albuterol per protocol. ALS is 9 minutes out.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "He is sitting on the grass surrounded by teammates, scratching at his neck. His lips and eyelids are visibly swollen, hives are spreading across his chest, and his voice sounds thick. He is breathing fast and you hear wheezing without a stethoscope. The coach says he weighs 'around 50 pounds.'",
+          "vitals": { "hr": 142, "bp": "82/48", "rr": 32, "spo2": 91 },
+          "choices": [
+            {
+              "text": "Recognize anaphylaxis and prepare epinephrine immediately while your partner sets up oxygen",
+              "next": "s2",
+              "feedback": "Correct. Airway swelling plus wheezing plus hypotension is anaphylaxis by definition, and epinephrine is the only drug that treats all three. Every second of delay costs airway.",
+              "score": 1
+            },
+            {
+              "text": "Assist with albuterol first since he is wheezing",
+              "next": "s2",
+              "feedback": "Albuterol only opens the lower airways. It does nothing for the swelling closing his throat or for a systolic of 48 diastolic. Epinephrine first, albuterol after if wheezing persists.",
+              "score": -1
+            },
+            {
+              "text": "Apply a cold pack to the sting site and monitor for 5 minutes",
+              "next": "s2",
+              "feedback": "This is a systemic reaction, not a local one. Watching a hypotensive child with a swelling airway for five minutes is how these calls end badly.",
+              "score": -1
+            },
+            {
+              "text": "Get a full history and allergy list from the coach before treating",
+              "next": "s2",
+              "feedback": "History can be gathered while you treat. With this presentation the indication is already met, and delaying epinephrine for paperwork is the wrong priority.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "Fifty pounds. You need to pick a device. Your bag has a `0.3 mg` adult auto-injector and a `0.15 mg` pediatric auto-injector. His own EpiPen Jr is in the backpack, expired last month.",
+          "choices": [
+            {
+              "text": "Convert: 50 divided by 2.2 is about 23 kg, which falls in the 15 to 30 kg band, so use the 0.15 mg pediatric device from your own supply",
+              "next": "s3",
+              "feedback": "Correct on both counts. The weight conversion puts him in the pediatric band, and you use your own in-date drug rather than his expired one.",
+              "score": 1
+            },
+            {
+              "text": "Use the 0.3 mg adult auto-injector since anaphylaxis is life-threatening",
+              "next": "s3",
+              "feedback": "The dose is weight-based for a reason. At about 23 kg the correct device is 0.15 mg; doubling it adds cardiac side effects without added benefit.",
+              "score": -1
+            },
+            {
+              "text": "Use his own EpiPen Jr because it was prescribed to him",
+              "next": "s3",
+              "feedback": "It is expired, which fails the three-check standard. Prescription ownership does not override an expiration date when you carry an in-date equivalent.",
+              "score": -1
+            },
+            {
+              "text": "Call medical direction to decide which device to use",
+              "next": "s3",
+              "feedback": "Calling costs time you do not have, and the weight-based choice is standing protocol. Give the pediatric dose now and notify while you work.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "You have the pediatric auto-injector out of the carrier. His shorts cover his thigh and he is squirming. A teammate is filming on a phone.",
+          "choices": [
+            {
+              "text": "Have the coach hold his leg still, press the device firmly into the outer thigh at 90 degrees through the shorts, hold per the device instructions, then massage the site",
+              "next": "s4",
+              "feedback": "Correct. Through clothing is explicitly acceptable, immobilizing the leg prevents a laceration from a moving needle, and massaging speeds absorption.",
+              "score": 1
+            },
+            {
+              "text": "Take time to remove his shorts and clean the skin with alcohol first",
+              "next": "s4",
+              "feedback": "Unnecessary delay. Auto-injectors are designed to fire through clothing, and in anaphylaxis the time cost is the risk, not the skin prep.",
+              "score": -1
+            },
+            {
+              "text": "Inject into the deltoid because the arm is easier to reach",
+              "next": "s4",
+              "feedback": "The vastus lateralis in the outer thigh has better blood flow and faster absorption. The deltoid is a slower site and a smaller target in a child.",
+              "score": -1
+            },
+            {
+              "text": "Hold the device against the thigh with your thumb over the tip for a firm grip",
+              "next": "s4",
+              "feedback": "Never. The needle fires from the tip, and thumbs have been injected this way. Grip the barrel in a fist with the tip facing the thigh.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "Six minutes after the injection: his hives are fading and the wheezing is quieter, but his voice is still thick, his lips remain swollen, and he says his throat 'feels tight.' He is shaking and says his heart is pounding.",
+          "vitals": { "hr": 158, "bp": "94/56", "rr": 28, "spo2": 94 },
+          "choices": [
+            {
+              "text": "Give a second 0.15 mg dose per protocol for persistent airway symptoms, continue high-flow oxygen, and notify the hospital",
+              "next": "s5",
+              "feedback": "Correct. Repeat dosing at 5 to 15 minutes is indicated when symptoms persist, and continued throat tightness is an airway that has not been secured. Tremor and tachycardia are expected drug effects.",
+              "score": 1
+            },
+            {
+              "text": "Withhold further epinephrine because his heart rate is 158 and he is shaking",
+              "next": "s5",
+              "feedback": "Those are the drug working, not toxicity. Withholding epinephrine from a child with ongoing airway swelling because of expected beta effects is the classic fatal hesitation.",
+              "score": -1
+            },
+            {
+              "text": "Give the adult 0.3 mg device this time since the first dose was not enough",
+              "next": "s5",
+              "feedback": "Repeat the same weight-appropriate dose. Escalating to an adult device is not how repeat dosing works, and his weight has not changed.",
+              "score": -1
+            },
+            {
+              "text": "Start nebulized albuterol 2.5 mg for the residual wheezing and reassess",
+              "next": "s5",
+              "feedback": "Albuterol is reasonable as an adjunct for lower-airway wheeze per protocol, but it does not treat the throat tightness, which is the more dangerous finding. Epinephrine comes first.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "En route, he improves steadily. The throat tightness resolves, saturation reaches 98 percent, and he is chatting about the game. His mother meets you at the hospital and asks whether he really needed to be brought in, since he seems fine now.",
+          "vitals": { "hr": 124, "bp": "104/64", "rr": 22, "spo2": 98 },
+          "choices": [
+            {
+              "text": "Explain that a biphasic reaction can return 4 to 12 hours later as the epinephrine wears off, so observation is required, and hand off both used devices with the times",
+              "next": "end",
+              "feedback": "Correct. The biphasic risk is the reason every anaphylaxis patient is transported and observed, and the used devices with administration times are part of the handoff.",
+              "score": 1
+            },
+            {
+              "text": "Agree that he looks fine and support a decision to go home from triage",
+              "next": "end",
+              "feedback": "Unsafe advice. Symptoms can return hours later, sometimes worse, and the family has no epinephrine now because his own device was expired.",
+              "score": -1
+            },
+            {
+              "text": "Tell her he needed it because it is required by law",
+              "next": "end",
+              "feedback": "Deflection, and it does not help her understand the actual risk. Explain the biphasic reaction in plain words; families follow reasons better than rules.",
+              "score": 0
+            },
+            {
+              "text": "Say nothing and let the nurse explain it",
+              "next": "end",
+              "feedback": "You were there for the reaction and you gave both doses. The handoff and the explanation of what you saw and gave are yours to deliver.",
+              "score": 0
+            }
+          ]
+        }
+      ],
+      "debrief": "Three decisions decided this call. First, recognition: airway swelling plus wheezing plus hypotension is anaphylaxis, and epinephrine is the only drug that reverses vasodilation, bronchospasm and swelling at once — albuterol, cold packs and antihistamines are adjuncts at best. Second, the dose: 50 pounds divided by 2.2 is about 23 kg, which lands in the 15 to 30 kg band, so 0.15 mg, and you used your own in-date device rather than his expired one. Third, the repeat: persistent throat tightness at six minutes meets the criteria for a second dose in 5 to 15 minutes, and a heart rate of 158 with tremor is the epinephrine working, not a reason to stop. The last piece is the biphasic reaction at 4 to 12 hours, which is why nobody with anaphylaxis stays home, however good they look in the driveway."
+    }
+  ]
+}
