@@ -298,7 +298,7 @@ textarea { min-height: 120px; resize: vertical; font-family: var(--mono); font-s
 .why { margin-top: 12px; padding: 12px 14px; border-radius: 10px; background: var(--surface-2); font-size: .95rem; }
 .why.ok { background: var(--good-soft); } .why.no { background: var(--bad-soft); }
 .lesson-foot { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between; align-items: center; }
-.ink-layer { position: absolute; inset: 0; z-index: 5; touch-action: none; }
+.ink-layer { position: absolute; inset: 0; z-index: 5; }
 .ink-layer canvas { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
 .lesson.inking .ink-layer { pointer-events: auto; }
 .lesson:not(.inking) .ink-layer { pointer-events: none; }
@@ -320,7 +320,7 @@ textarea { min-height: 120px; resize: vertical; font-family: var(--mono); font-s
 .flashcard .front { font-size: 1.35rem; font-weight: 600; line-height: 1.4; }
 .flashcard .back { border-top: 1px dashed var(--line-strong); font-size: 1.12rem; line-height: 1.5; }
 .flashcard .src { color: var(--ink-3); font-size: .8rem; margin-top: 14px; font-family: var(--mono); }
-.scratch { position: relative; flex: 1; min-height: 160px; background: repeating-linear-gradient(0deg, transparent 0 31px, var(--line) 31px 32px); background-color: var(--surface); border-top: 1px solid var(--line); touch-action: none; }
+.scratch { position: relative; flex: 1; min-height: 160px; background: repeating-linear-gradient(0deg, transparent 0 31px, var(--line) 31px 32px); background-color: var(--surface); border-top: 1px solid var(--line); }
 .scratch canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
 .scratch .hint { position: absolute; left: 14px; top: 8px; font: 500 11px/1 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); pointer-events: none; }
 .grades { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 16px; }

@@ -50,7 +50,15 @@
     }
     _bind() {
       const c = this.canvas;
-      c.style.touchAction = 'none';
+      // Pen-only mode: let the browser scroll with fingers (momentum and all) and only claim stylus touches.
+      // Safari exposes Touch.touchType ('stylus' | 'direct'); other engines fall back to pointerType checks.
+      c.style.touchAction = this.penOnly ? 'pan-y pinch-zoom' : 'none';
+      const claim = (e) => {
+        const t = e.touches && e.touches[0];
+        if (!this.penOnly || (t && t.touchType === 'stylus')) e.preventDefault();
+      };
+      c.addEventListener('touchstart', claim, { passive: false });
+      c.addEventListener('touchmove', claim, { passive: false });
       c.addEventListener('pointerdown', (e) => {
         if (!this._accept(e)) return;
         e.preventDefault();
