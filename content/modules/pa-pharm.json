@@ -1,0 +1,609 @@
+{
+  "schema": 1,
+  "id": "pa-pharm",
+  "track": "prepa",
+  "title": "Pharmacology Core",
+  "short": "Pharmacology",
+  "summary": "How drugs get in, act, and leave the body, how to read an order and do the math, and the drug classes you will hand to a nurse or watch go in during an emergency department shift.",
+  "lessons": [
+    {
+      "id": "pa-pharm-l01",
+      "title": "Getting in: absorption, routes, and where the drug goes",
+      "minutes": 7,
+      "body": "## Pharmacokinetics is what the body does to the drug\n\nFour things happen to every drug: it gets in (absorption), it travels (distribution), it gets chemically changed (metabolism), and it leaves (elimination). Memorize them as ADME. Together they predict how fast a drug works, how long it lasts, and who it will hurt.\n\n## Absorption and bioavailability\n\nAbsorption is the drug crossing from where you put it into the bloodstream. Bioavailability is the fraction that actually arrives intact and able to work. An IV drug skips absorption entirely, so IV bioavailability is `100%` by definition. A swallowed pill may deliver anywhere from `5%` to `90%`.\n\nMorphine is the clean example. Only about `25%` to `30%` of a swallowed dose survives the trip, which is why `10 mg` IV morphine and `30 mg` oral morphine relieve roughly the same amount of pain.\n\n## Routes ranked by how fast they work\n\n| Route | Typical onset | Why |\n|---|---|---|\n| IV | seconds to 1 min | straight into the circulation |\n| IO (intraosseous) | seconds to 1 min | marrow is a vein that cannot collapse |\n| Inhaled or nebulized | 1-5 min | enormous alveolar surface area |\n| Sublingual (SL) | 1-3 min | rich mucosal veins, skips the liver |\n| Intranasal (IN) | 3-5 min | mucosa drains straight to blood |\n| IM | 5-20 min | muscle is well perfused |\n| SubQ | 15-30 min | fat is poorly perfused |\n| Rectal (PR) | 5-30 min | partial liver bypass |\n| Oral (PO) | 30-90 min | must dissolve, absorb, survive the liver |\n| Transdermal | hours | designed to be slow and steady |\n\n> **Key:** In shock the body shuts down perfusion to skin, fat, and muscle, so IM and SubQ drugs sit in the tissue unabsorbed. That is why anaphylaxis gets `0.3 mg` of `1 mg/mL` epinephrine IM into the outer thigh rather than SubQ, and why SubQ insulin is unreliable in diabetic ketoacidosis.\n\n## The first-pass effect\n\nBlood leaving the stomach and intestine does not go to the body first. It goes to the liver through the portal vein. The liver can destroy a large share of the dose on that single trip before the drug ever reaches the heart. That is the first-pass effect.\n\nSublingual nitroglycerin exists because of it. Swallowed nitroglycerin is almost completely destroyed on the first pass and does nothing. Placed under the tongue, it absorbs into mucosal veins that drain to the superior vena cava, bypasses the liver, and relieves chest pain in `1` to `3` minutes. Rectal and transdermal routes bypass the portal system partially for the same reason.\n\n## Distribution\n\nOnce in the blood, a drug spreads. Well-perfused organs (brain, heart, kidneys, liver) see it within a minute; fat, skin, and bone see it last. Volume of distribution is the shorthand for how widely it spreads. A drug that stays in the bloodstream has a small volume of distribution. Digoxin buries itself in muscle and tissue, so its volume of distribution is huge, which is exactly why it needs a loading dose.\n\n## Protein binding\n\nMany drugs ride through the blood stuck to albumin. Only the free, unbound portion can reach a receptor and act. Warfarin is about `99%` bound, so only `1%` is working. If albumin falls (cirrhosis, malnutrition, critical illness) or another drug competes for the same binding sites, the free fraction can double with no change in the dose, and the patient bleeds.\n\n## The blood-brain barrier\n\nBrain capillaries are sealed with tight junctions, so only small, fat-loving (lipophilic) molecules cross easily. Fentanyl is extremely lipophilic and reaches the brain in under a minute. Diphenhydramine crosses and sedates; loratadine barely crosses and does not. Glycopyrrolate does not cross, while atropine does, which is why atropine can leave an older patient confused and agitated.",
+      "keyPoints": [
+        "ADME: absorption, distribution, metabolism, elimination — the four questions every drug faces.",
+        "IV bioavailability is 100%; oral morphine is only about 25-30%, so 10 mg IV equals roughly 30 mg PO.",
+        "First-pass metabolism destroys swallowed nitroglycerin, so it is given sublingually and works in 1-3 minutes.",
+        "In shock, IM and SubQ absorption fails because perfusion to muscle and fat collapses.",
+        "Only unbound drug works: warfarin is 99% albumin-bound, so small binding shifts cause big effects."
+      ],
+      "checks": [
+        {
+          "q": "A patient in anaphylaxis gets epinephrine IM in the lateral thigh rather than SubQ. The main reason is:",
+          "choices": [
+            "Muscle is far better perfused than fat, so absorption is faster and more reliable",
+            "The IM dose is smaller and therefore safer",
+            "Subcutaneous fat chemically destroys epinephrine",
+            "IM injections hurt less than SubQ injections"
+          ],
+          "answer": 0,
+          "why": "Absorption depends on blood flow. Muscle has much richer perfusion than subcutaneous fat, and in shock the fat is shut down first. The IM dose (0.3 mg of 1 mg/mL) is not smaller, epinephrine is not destroyed in fat, and comfort is irrelevant."
+        },
+        {
+          "q": "Nitroglycerin for chest pain is placed under the tongue instead of swallowed because sublingual delivery:",
+          "choices": [
+            "Increases the total dose absorbed over 24 hours",
+            "Bypasses the liver, avoiding near-total destruction on the first pass",
+            "Avoids stomach acid, which is what destroys nitroglycerin",
+            "Allows a slower, steadier release"
+          ],
+          "answer": 1,
+          "why": "Swallowed nitroglycerin drains to the liver through the portal vein and is almost entirely metabolized before reaching the circulation. Sublingual veins drain to the superior vena cava instead. The problem is hepatic first-pass metabolism, not acid, and the point is speed (1-3 minutes), not slow release."
+        },
+        {
+          "q": "A cirrhotic patient on a stable warfarin dose develops a very low albumin. What happens to the drug effect?",
+          "choices": [
+            "Nothing, because the prescribed dose has not changed",
+            "Effect falls, because less drug is carried to the tissues",
+            "Effect rises, because a larger fraction of the drug is free and active",
+            "Effect rises, because albumin is the receptor for warfarin"
+          ],
+          "answer": 2,
+          "why": "Only unbound drug is active. Warfarin is roughly 99% albumin-bound, so less albumin means more free warfarin and more anticoagulation at the same dose. Albumin is a carrier, not a receptor, and low albumin does not reduce delivery of a highly bound drug."
+        }
+      ]
+    },
+    {
+      "id": "pa-pharm-l02",
+      "title": "Getting out: the liver, the kidneys, and half-life",
+      "minutes": 8,
+      "body": "## Metabolism: the liver makes drugs excretable\n\nMost drugs are fat-soluble, and the kidney can only flush out water-soluble things. The liver's job is to convert one into the other. Phase I reactions (mostly oxidation by the cytochrome P450 enzyme family, written CYP) add or uncover a chemical handle. Phase II reactions (conjugation) bolt a water-loving group onto that handle, and the kidney dumps it.\n\nSome drugs arrive inactive and the liver switches them on. These are prodrugs. Codeine does nothing until CYP2D6 converts about `10%` of it into morphine, so people missing the enzyme get no relief and ultra-fast metabolizers can get a dangerous amount. Clopidogrel is also a prodrug, activated by CYP2C19.\n\n## Inhibitors and inducers, the whole idea in two lines\n\nPicture the CYP enzymes as a workforce clearing drugs off a loading dock.\n\n- An **inhibitor** fires the workers. The other drug piles up. Levels rise, often within a day. Risk: toxicity.\n- An **inducer** hires more workers. Over days to weeks the other drug is cleared faster. Levels fall. Risk: treatment failure.\n\nCommon inhibitors: amiodarone, azole antifungals (fluconazole, ketoconazole), clarithromycin and erythromycin (azithromycin is the safe one), ciprofloxacin, metronidazole, trimethoprim-sulfamethoxazole, cimetidine, ritonavir, and grapefruit juice.\n\nCommon inducers: rifampin, phenytoin, carbamazepine, phenobarbital, St. John's wort, and chronic alcohol use.\n\n> **Key:** Inhibitors push the other drug up toward toxicity. Inducers push it down toward failure — including failure of oral contraceptives in a patient started on rifampin.\n\nGrapefruit juice blocks CYP3A4 in the intestinal wall, so less of the dose is destroyed during absorption and more reaches the blood. With simvastatin that can multiply exposure several-fold and trigger muscle breakdown (rhabdomyolysis).\n\nWarfarin is the classic victim because it is cleared by CYP2C9 and has almost no margin for error. Add fluconazole, metronidazole, trimethoprim-sulfamethoxazole, or amiodarone and the INR climbs toward bleeding. Add rifampin and the INR falls toward clotting.\n\n## Elimination and half-life\n\nHalf-life is the time it takes for the blood concentration to fall by half. Two rules do almost all the work:\n\n1. After the last dose, a drug is essentially gone in `4` to `5` half-lives (about `94%` to `97%` cleared).\n2. On a fixed repeating dose, the level plateaus (steady state) after `4` to `5` half-lives.\n\nSo a drug with a `12`-hour half-life needs `2` to `2.5` days to reach a stable level, and the same `2` to `2.5` days before a dose change shows its full effect. Drawing a level sooner tells you very little.\n\n## Loading dose versus maintenance dose\n\nWhen you cannot wait four half-lives, give a **loading dose**: one large dose that fills the volume of distribution right away. After that a **maintenance dose** simply replaces what is eliminated.\n\n- Loading dose is set by volume of distribution.\n- Maintenance dose is set by clearance, meaning kidney and liver function.\n\nReal examples: fosphenytoin `15-20 mg/kg` load then maintenance, vancomycin `25-30 mg/kg` load in severe sepsis, heparin `80 units/kg` bolus then `18 units/kg/h`, amiodarone `150 mg` over 10 minutes then a drip.\n\n## Who needs a different dose\n\nFailing kidneys let renally cleared drugs stack up: vancomycin, gentamicin, enoxaparin, metformin, digoxin, gabapentin, and most beta-lactams. The dose is cut or the interval stretched based on creatinine clearance.\n\nFailing liver does the same for hepatically cleared drugs. The acetaminophen ceiling drops from `4 g` to `2-3 g` per day, and benzodiazepines and opioids last far longer than expected.\n\nOlder adults have lower glomerular filtration, less albumin, and more body fat, so the rule is start low and go slow; the Beers criteria list drugs to avoid after `65` (diphenhydramine, benzodiazepines, chronic NSAIDs). Children dose by weight in kilograms, and newborns have immature enzymes. In pregnancy the absolute avoid list is ACE inhibitors and ARBs, warfarin, isotretinoin, tetracyclines, and fluoroquinolones.",
+      "keyPoints": [
+        "Phase I (CYP450 oxidation) then Phase II (conjugation) turn fat-soluble drugs into water-soluble waste.",
+        "CYP inhibitors raise the other drug's level toward toxicity; inducers lower it toward treatment failure.",
+        "Grapefruit blocks intestinal CYP3A4 and raises bioavailability — the statin and rhabdomyolysis problem.",
+        "4 to 5 half-lives to be gone, and 4 to 5 half-lives to reach steady state on a fixed dose.",
+        "Loading dose fills the volume of distribution; maintenance dose matches clearance (kidney and liver)."
+      ],
+      "checks": [
+        {
+          "q": "A patient stable on warfarin with an INR of 2.4 is started on fluconazole for a yeast infection. What should you expect?",
+          "choices": [
+            "INR falls, because fluconazole induces CYP2C9",
+            "INR rises, because fluconazole inhibits CYP2C9 and warfarin accumulates",
+            "No change, because fluconazole is not metabolized by the liver",
+            "INR rises, because fluconazole itself thins the blood"
+          ],
+          "answer": 1,
+          "why": "Fluconazole is a CYP inhibitor, so warfarin clearance falls and the free drug accumulates, pushing the INR up and the patient toward bleeding. Rifampin is the inducer that does the opposite. Fluconazole has no direct anticoagulant activity of its own."
+        },
+        {
+          "q": "A drug has a half-life of 8 hours and is dosed every 8 hours. About how long until the blood level reaches steady state?",
+          "choices": [
+            "8 hours",
+            "16 hours",
+            "32 to 40 hours",
+            "8 days"
+          ],
+          "answer": 2,
+          "why": "Steady state arrives after 4 to 5 half-lives regardless of dosing interval, so 4 to 5 times 8 hours is 32 to 40 hours. One or two half-lives is only 50% to 75% of the way there, and 8 days would be 24 half-lives."
+        },
+        {
+          "q": "Why does a patient in severe sepsis get vancomycin 25-30 mg/kg as a first dose and a smaller dose after?",
+          "choices": [
+            "The loading dose fills the volume of distribution immediately instead of waiting 4-5 half-lives",
+            "The first dose is larger because bacteria are most resistant early",
+            "Larger first doses reduce kidney injury",
+            "The loading dose is calculated from creatinine clearance and the maintenance dose is not"
+          ],
+          "answer": 0,
+          "why": "A loading dose is sized to the volume of distribution so therapeutic levels arrive now rather than after four half-lives. Maintenance dosing is the part adjusted for clearance and kidney function, and larger vancomycin exposure increases, not decreases, nephrotoxicity risk."
+        }
+      ]
+    },
+    {
+      "id": "pa-pharm-l03",
+      "title": "Receptors: how a drug actually does something",
+      "minutes": 8,
+      "body": "## Pharmacodynamics is what the drug does to the body\n\nAlmost every drug works by grabbing a protein called a receptor, the way a key fits a lock. What happens next divides drugs into a few types you will use every day.\n\n- **Agonist**: binds and turns the receptor on. Albuterol on beta-2, morphine on mu.\n- **Antagonist**: binds and blocks, producing no effect itself. Naloxone on mu, metoprolol on beta-1.\n- **Partial agonist**: binds and turns the receptor partly on, with a ceiling it cannot exceed. Buprenorphine on mu.\n\nNaloxone is a pure competitive antagonist with a high affinity for the mu receptor, so it shoves opioids off. Dose `0.4 mg` to `2 mg` IV, onset `1` to `2` minutes, but its duration is only `30` to `90` minutes, shorter than most opioids. That mismatch is why a patient can wake up, then go back to sleep and stop breathing an hour later.\n\nBuprenorphine shows the partial agonist idea. Its ceiling on respiratory depression makes it comparatively safe, but its receptor grip is so strong that giving it to someone with a full agonist on board can rip that opioid off and precipitate withdrawal.\n\n## Potency is not efficacy\n\n**Potency** is how much drug you need. **Efficacy** is the biggest effect the drug can produce no matter how much you give.\n\nFentanyl `100 mcg` gives about the same analgesia as morphine `10 mg`, so fentanyl is roughly `100` times more potent. It is not more effective; both are full mu agonists that can relieve severe pain. Ketorolac is quite potent for an anti-inflammatory but its ceiling is genuinely lower, so no amount of it equals morphine in a femur fracture.\n\n> **Trap:** Exam questions love to call the more potent drug the stronger drug. Potency only sets the number on the syringe. Efficacy sets how much pain can actually be taken away.\n\n## Dose-response and therapeutic index\n\nPlot effect against dose and you get an S-shaped curve. ED50 is the dose that produces the desired effect in half of patients; TD50 is the dose that produces toxicity in half. Therapeutic index is TD50 divided by ED50 — the size of the safety gap.\n\nA wide index means a sloppy dose is still safe. A narrow index means small changes in level cause toxicity, so these drugs get blood levels drawn:\n\n| Drug | Therapeutic range |\n|---|---|\n| Digoxin | `0.5-2.0 ng/mL` |\n| Lithium | `0.6-1.2 mEq/L` |\n| Phenytoin | `10-20 mcg/mL` total |\n| Warfarin | INR `2-3` for most indications |\n| Theophylline | `5-15 mcg/mL` |\n| Vancomycin | trough `15-20 mcg/mL` for serious infection |\n\n## Tolerance and dependence\n\n**Tolerance** is needing more drug for the same effect, usually because receptors downregulate. **Tachyphylaxis** is tolerance that develops in hours, which is why a nitroglycerin drip loses effect and needs a nitrate-free interval. **Physical dependence** means withdrawal symptoms on stopping, which is a predictable body response and not the same thing as addiction, a behavioral disease of compulsive use despite harm.\n\n## The receptor families that organize everything\n\n| Receptor | Turning it on does | Drugs |\n|---|---|---|\n| Alpha-1 | vasoconstriction, raises blood pressure | phenylephrine, norepinephrine |\n| Alpha-2 | dampens sympathetic outflow, sedation | clonidine, dexmedetomidine |\n| Beta-1 | faster, harder heartbeat | dobutamine; blocked by metoprolol |\n| Beta-2 | bronchodilation, vessel dilation | albuterol, terbutaline |\n| Muscarinic | rest and digest: slow heart, secretions | blocked by atropine, glycopyrrolate |\n| Nicotinic | skeletal muscle contraction | blocked by rocuronium |\n| Opioid mu | analgesia, euphoria, respiratory depression | morphine, fentanyl; blocked by naloxone |\n| Opioid kappa | analgesia with dysphoria | butorphanol |\n| GABA-A | chloride in, neuron quiet, sedation | benzodiazepines, propofol, alcohol |\n| Histamine H1 | itch, hives, wheeze, wakefulness | blocked by diphenhydramine, cetirizine |\n| Histamine H2 | stomach acid secretion | blocked by famotidine |\n| Dopamine D2 | movement, reward, vomiting trigger | blocked by haloperidol, metoclopramide |\n| Serotonin 5-HT3 | vomiting reflex | blocked by ondansetron |\n| NMDA (glutamate) | excitation, pain wind-up | blocked by ketamine |",
+      "keyPoints": [
+        "Agonist turns a receptor on, antagonist blocks it, partial agonist turns it partly on with a ceiling.",
+        "Naloxone lasts 30-90 minutes, shorter than most opioids, so re-sedation is the danger.",
+        "Potency is the dose needed; efficacy is the maximum achievable effect — fentanyl is 100x more potent than morphine, not stronger.",
+        "Narrow therapeutic index drugs get levels drawn: digoxin, lithium, phenytoin, warfarin, theophylline, vancomycin.",
+        "Alpha-1 constricts, beta-1 drives the heart, beta-2 opens airways, mu gives analgesia and apnea, GABA-A sedates."
+      ],
+      "checks": [
+        {
+          "q": "An opioid overdose patient wakes after naloxone 0.4 mg IV. Forty minutes later he is unresponsive and breathing 6 times a minute again. The best explanation is:",
+          "choices": [
+            "Naloxone caused rebound respiratory depression",
+            "He developed sudden tolerance to naloxone",
+            "Naloxone's duration of 30-90 minutes is shorter than the opioid's, so the opioid re-occupied the receptors",
+            "The original dose of naloxone was too high and saturated the receptors"
+          ],
+          "answer": 2,
+          "why": "Naloxone is a short-acting competitive antagonist. When it washes out, the longer-acting opioid still circulating re-binds mu receptors and apnea returns, which is why these patients need observation or a drip. Naloxone itself causes no respiratory depression and tolerance does not develop in minutes."
+        },
+        {
+          "q": "Which pairing correctly matches a receptor to its effect?",
+          "choices": [
+            "Beta-2 stimulation constricts the bronchi",
+            "Alpha-1 stimulation constricts blood vessels and raises blood pressure",
+            "Muscarinic blockade slows the heart rate",
+            "Mu agonism increases respiratory drive"
+          ],
+          "answer": 1,
+          "why": "Alpha-1 receptors on vascular smooth muscle constrict vessels, which is how phenylephrine and norepinephrine raise pressure. Beta-2 dilates bronchi, muscarinic blockade with atropine speeds the heart, and mu agonists depress respiratory drive."
+        },
+        {
+          "q": "A nitroglycerin drip that controlled a patient's chest pain at 20 mcg/min stops working after 18 hours at the same rate. This is:",
+          "choices": [
+            "Tachyphylaxis, rapid tolerance that requires a nitrate-free interval",
+            "A narrow therapeutic index effect",
+            "Physical dependence",
+            "Loss of potency with no loss of efficacy"
+          ],
+          "answer": 0,
+          "why": "Nitrate tolerance develops within hours of continuous infusion, the textbook example of tachyphylaxis, and is managed with a nitrate-free interval. Dependence refers to withdrawal on stopping, and therapeutic index describes the gap between effective and toxic doses, not fading response."
+        }
+      ]
+    },
+    {
+      "id": "pa-pharm-l04",
+      "title": "Reading the order and doing the math",
+      "minutes": 9,
+      "body": "## An order has five parts\n\nEvery complete medication order names the **drug**, the **dose**, the **route**, the **frequency**, and the **indication**. If one is missing, the order is not safe to carry out.\n\n| Abbreviation | Meaning |\n|---|---|\n| PO | by mouth |\n| IV / IM / SubQ / IO | into vein / muscle / fat / bone |\n| SL / PR / IN | under tongue / rectal / intranasal |\n| PRN | as needed |\n| STAT | immediately |\n| q6h | every 6 hours |\n| BID / TID / QID | 2, 3, 4 times a day |\n| gtt | drop (gtt/min is drops per minute) |\n| mcg | microgram, one thousandth of a milligram |\n| mEq | milliequivalent (electrolytes) |\n\nDangerous abbreviations are banned in most hospitals: U for units (looks like a zero), QD for daily (looks like QID), and a trailing zero such as `1.0 mg` (reads as `10 mg`). Always write `0.5 mg`, never `.5 mg`.\n\n## The four pieces of math\n\n**1. Weight-based dosing.** Doses are per kilogram, never pounds. Pounds divided by `2.2` gives kilograms. A `176 lb` patient is `80 kg`.\n\n**2. Milligrams to milliliters.** Volume equals dose divided by concentration.\n\n**3. Percent solutions and ratios.** A `1%` solution is `1 g` per `100 mL`, which is `10 mg/mL`. So lidocaine `2%` is `20 mg/mL` and D50 is `50 g/100 mL`, meaning `25 g` of dextrose in the `50 mL` syringe. Epinephrine `1 mg/mL` is the old `1:1,000` (anaphylaxis, IM); epinephrine `0.1 mg/mL` is the old `1:10,000` (cardiac arrest, IV).\n\n**4. Infusion rates.** Rate in `mL/h` equals the ordered amount per hour divided by the bag concentration. With a gravity set, drops per minute equals `mL/h` times the set's drip factor divided by `60`.\n\n## Three worked examples\n\n**Example 1 — weight-based push.** Order: fentanyl `1 mcg/kg` IV once for a `176 lb` patient. Vial is `100 mcg/2 mL`.\n\n1. Weight: `176 / 2.2 = 80 kg`.\n2. Dose: `80 kg x 1 mcg/kg = 80 mcg`.\n3. Concentration: `100 mcg / 2 mL = 50 mcg/mL`.\n4. Volume: `80 / 50 = 1.6 mL`.\n\n**Example 2 — infusion rate.** Order: heparin `18 units/kg/h` for the same `80 kg` patient. Bag is `25,000 units in 250 mL`.\n\n1. Dose per hour: `80 x 18 = 1,440 units/h`.\n2. Concentration: `25,000 / 250 = 100 units/mL`.\n3. Rate: `1,440 / 100 = 14.4 mL/h`.\n\n**Example 3 — pediatric fluids and drip factor.** A `30 kg` child needs maintenance fluid on a `15 gtt/mL` set. Use the 4-2-1 rule: `4 mL/kg/h` for the first `10 kg`, `2 mL/kg/h` for the next `10 kg`, `1 mL/kg/h` for every kilogram after that.\n\n1. `(10 x 4) + (10 x 2) + (10 x 1) = 40 + 20 + 10 = 70 mL/h`.\n2. Drops: `70 x 15 / 60 = 17.5`, so `18 gtt/min`.\n3. If that child were in shock instead, the bolus is `20 mL/kg = 600 mL` of isotonic crystalloid, rapidly. Adults get `20-30 mL/kg`.\n\n## High-alert medications\n\nA short list of drugs causes most of the deaths from medication error, so they get an independent double check by a second licensed person before they go in: insulin, IV heparin and other anticoagulants, opioids, concentrated electrolytes, chemotherapy, and neuromuscular blockers.\n\n> **Key:** Concentrated potassium chloride is never given IV push. Ever. It stops the heart. It goes in a bag, diluted, at no more than `10 mEq/h` peripherally or `20 mEq/h` through a central line with cardiac monitoring.\n\n> **On shift:** A paralytic drawn up and left unlabeled next to a sedative has killed patients. Label every syringe, and never hand off an unlabeled one.",
+      "keyPoints": [
+        "A complete order has drug, dose, route, frequency, and indication — five parts, no exceptions.",
+        "1% solution is 10 mg/mL; lidocaine 2% is 20 mg/mL; epinephrine 1 mg/mL is IM, 0.1 mg/mL is IV.",
+        "Volume equals dose divided by concentration; mL/h equals hourly dose divided by bag concentration.",
+        "4-2-1 rule for maintenance fluid: 4 mL/kg/h first 10 kg, 2 for the next 10, 1 for each kg beyond.",
+        "Concentrated potassium chloride is never IV push; high-alert drugs get an independent double check."
+      ],
+      "checks": [
+        {
+          "q": "Order: morphine 0.1 mg/kg IV for a 110 lb patient. The vial reads 10 mg/mL. What volume do you draw?",
+          "choices": [
+            "0.5 mL",
+            "1.1 mL",
+            "5 mL",
+            "0.05 mL"
+          ],
+          "answer": 0,
+          "why": "110 lb divided by 2.2 is 50 kg, times 0.1 mg/kg is 5 mg. At 10 mg/mL, 5 mg is 0.5 mL. Answer 1.1 mL comes from using pounds, and 5 mL comes from confusing the dose in mg with a volume in mL."
+        },
+        {
+          "q": "A 20 kg child in septic shock needs a fluid bolus. The correct volume is:",
+          "choices": [
+            "60 mL, which is the 4-2-1 maintenance rate",
+            "400 to 600 mL, which is 20 to 30 mL/kg of isotonic crystalloid",
+            "1,000 mL, the standard adult bolus",
+            "200 mL, which is 10 mL/kg"
+          ],
+          "answer": 1,
+          "why": "Pediatric shock boluses are weight-based at 20 mL/kg, so 20 kg gets 400 mL, repeated as needed. The 4-2-1 rule gives an hourly maintenance rate of 60 mL/h, not a bolus, and a fixed adult liter would be a large overdose in a 20 kg child."
+        },
+        {
+          "q": "Which statement about concentrated potassium chloride is correct?",
+          "choices": [
+            "It may be pushed IV slowly over 2 minutes if the patient is on a monitor",
+            "It is never given IV push; it must be diluted and infused, no faster than about 10 mEq/h peripherally",
+            "It is safe to push if the potassium is below 2.5 mEq/L",
+            "It is a high-alert drug only in pediatric patients"
+          ],
+          "answer": 1,
+          "why": "Undiluted potassium chloride given by push causes immediate cardiac arrest, so the rule is absolute regardless of monitoring, the potassium level, or patient age. It is infused diluted, roughly 10 mEq/h peripherally and up to 20 mEq/h centrally with monitoring."
+        }
+      ]
+    },
+    {
+      "id": "pa-pharm-l05",
+      "title": "Pain drugs: acetaminophen, NSAIDs, opioids, and locals",
+      "minutes": 8,
+      "body": "## Acetaminophen\n\nAcetaminophen blocks prostaglandin production mostly inside the central nervous system, so it treats pain and fever but not inflammation. Adult dose is `650-1000 mg` every `6` hours, ceiling `4 g` in 24 hours and `2-3 g` if there is liver disease, heavy alcohol use, or malnutrition. Children get `15 mg/kg` per dose.\n\nOverdose is the danger. Normally a small fraction becomes a toxic metabolite called NAPQI, which glutathione neutralizes. In overdose glutathione runs out, NAPQI attacks liver cells, and the patient looks well for `24` hours before liver failure appears on day `3` or `4`. The antidote, N-acetylcysteine, restores glutathione and is near-perfect if started within `8` hours. A `4`-hour level plotted on the Rumack-Matthew nomogram decides treatment.\n\n> **Trap:** Hundreds of combination products hide acetaminophen (oxycodone-acetaminophen, cold remedies). Accidental overdose usually comes from stacking products, not from one big swallow.\n\n## NSAIDs\n\nNSAIDs block cyclooxygenase, so less prostaglandin means less inflammation, pain, and fever. The same blockade removes the prostaglandins that protect the stomach lining and keep the kidney's afferent arteriole open. That gives the three classic harms: GI ulcer and bleeding, acute kidney injury, and bronchospasm in aspirin-sensitive asthma.\n\nIbuprofen `400-600 mg` PO. Ketorolac `15-30 mg` IV, using `15 mg` if the patient is over `65`, under `50 kg`, or has any kidney impairment, and never longer than `5` days. Kidney risk multiplies when an NSAID meets a diuretic and an ACE inhibitor in a dehydrated patient. Avoid in the third trimester of pregnancy and after coronary bypass surgery.\n\n## Opioids\n\nOpioids are mu receptor agonists. They dull pain perception, produce euphoria, and — the part that kills — reduce the brainstem's drive to breathe. Constipation, itching, nausea, and miosis (pinpoint pupils) round out the picture, and tolerance develops to everything except constipation.\n\n| Drug | Typical adult IV dose | Notes |\n|---|---|---|\n| Morphine | `0.1 mg/kg` or `2-4 mg` | histamine release causes itch and hypotension; metabolites build up in kidney failure |\n| Hydromorphone | `0.5-1 mg` | roughly `5-7` times morphine's potency, a common error source |\n| Fentanyl | `50-100 mcg` | onset `1-2` min, lasts `30-60` min, no histamine, safest in hypotension and kidney failure |\n| Oxycodone | `5-10 mg` PO | oral only |\n\nRough equivalence: morphine `10 mg` IV equals hydromorphone `1.5 mg` IV equals fentanyl `100 mcg` IV equals morphine `30 mg` PO. Fentanyl is about `100` times as potent as morphine by weight, which is why illicit fentanyl kills at doses invisible to the eye.\n\nNaloxone `0.4-2 mg` IV, IM, or IN reverses it. Start low in a chronic opioid user to avoid dumping them into withdrawal, and watch for re-sedation once naloxone wears off in `30-90` minutes.\n\n## Ketamine for pain\n\nAt low analgesic doses, `0.1-0.3 mg/kg` IV given over `10-15` minutes, ketamine blocks NMDA receptors and relieves severe pain without dropping blood pressure or respiratory drive. Pushed fast it causes an unpleasant dissociative feeling, so it is infused, not slammed.\n\n## Local anesthetics\n\nLidocaine blocks sodium channels in nerves so the signal never leaves the wound. `1%` is `10 mg/mL`; maximum is `4.5 mg/kg` plain or `7 mg/kg` with epinephrine, because the epinephrine constricts vessels and slows absorption while extending the block. Bupivacaine lasts `4-8` hours but is the most cardiotoxic. Systemic toxicity starts with tingling lips, metallic taste, and ringing ears, then seizures and arrhythmia; the rescue is IV lipid emulsion.\n\n> **On shift:** Buffering lidocaine with sodium bicarbonate and injecting slowly with a small needle hurts far less, and that is usually the tech's job to set up.",
+      "keyPoints": [
+        "Acetaminophen ceiling is 4 g/day, 2-3 g with liver disease; overdose is treated with N-acetylcysteine, best within 8 hours.",
+        "NSAIDs cause GI bleeding, acute kidney injury, and bronchospasm; ketorolac is 15 mg IV if over 65, under 50 kg, or renally impaired.",
+        "Hydromorphone is 5-7 times as potent as morphine and fentanyl about 100 times — the classic dosing error.",
+        "Fentanyl is the opioid of choice in hypotension and kidney failure; morphine releases histamine and accumulates.",
+        "Lidocaine max is 4.5 mg/kg plain, 7 mg/kg with epinephrine; local anesthetic toxicity is rescued with lipid emulsion."
+      ],
+      "checks": [
+        {
+          "q": "A patient took 25 acetaminophen tablets 3 hours ago and feels completely fine. The correct interpretation is:",
+          "choices": [
+            "He is fine because he is asymptomatic and had a small ingestion",
+            "Feeling well early is expected; liver failure appears on day 3-4, so he needs a 4-hour level and likely N-acetylcysteine",
+            "He needs naloxone",
+            "Symptoms would already be obvious if this were a toxic dose"
+          ],
+          "answer": 1,
+          "why": "The acetaminophen-poisoned patient looks well for about 24 hours while NAPQI destroys hepatocytes silently. A 4-hour level on the Rumack-Matthew nomogram guides N-acetylcysteine, which is nearly fully protective within 8 hours. Naloxone treats opioids, not acetaminophen."
+        },
+        {
+          "q": "A 70-year-old on lisinopril and furosemide with mild chronic kidney disease has renal colic. Which analgesic choice is the most dangerous?",
+          "choices": [
+            "Fentanyl 50 mcg IV",
+            "Acetaminophen 1000 mg PO",
+            "Ketorolac 30 mg IV",
+            "Lidocaine infiltration"
+          ],
+          "answer": 2,
+          "why": "An NSAID plus an ACE inhibitor plus a diuretic in a dehydrated older patient with existing kidney disease is the classic combination for acute kidney injury, and 30 mg is twice the appropriate dose for someone over 65. Fentanyl and acetaminophen are far safer here."
+        },
+        {
+          "q": "Which opioid is generally preferred for a hypotensive patient in kidney failure?",
+          "choices": [
+            "Fentanyl, because it causes no histamine release and has no active renal metabolites",
+            "Morphine, because it is the standard reference opioid",
+            "Hydromorphone, because it is more potent",
+            "Oxycodone, because the oral route avoids the kidney"
+          ],
+          "answer": 0,
+          "why": "Morphine releases histamine, which drops blood pressure further, and its active metabolites accumulate when the kidneys fail, causing prolonged sedation. Fentanyl avoids both problems. Potency and route do not address the underlying issue."
+        }
+      ]
+    },
+    {
+      "id": "pa-pharm-l06",
+      "title": "Sedatives, paralytics, and the brain drugs",
+      "minutes": 9,
+      "body": "## Benzodiazepines\n\nBenzodiazepines make the GABA-A receptor open more often, letting chloride into the neuron and quieting it. That single mechanism explains every use: stopping seizures, calming agitation, treating alcohol withdrawal, and sedating for procedures.\n\nLorazepam `2-4 mg` IV is the standard seizure dose (`0.1 mg/kg`, up to `4 mg` per dose). Midazolam `10 mg` IM is the choice when there is no IV, because it absorbs well from muscle. Diazepam works fast but redistributes into fat and has a very long tail.\n\n> **Key:** Benzodiazepines and opioids together depress breathing far more than either alone. Most fatal overdoses involve both. Flumazenil, the reversal agent, is rarely used because it can strip GABA inhibition from a chronic user or a tricyclic co-ingestion and cause seizures nobody can stop.\n\n## Drugs that stop seizures for longer\n\nAfter benzodiazepines, a longer-acting antiepileptic is loaded: levetiracetam `60 mg/kg` up to `4,500 mg`, fosphenytoin `20 mg PE/kg`, or valproate `40 mg/kg`. Levetiracetam is favored because it has few interactions and does not drop blood pressure. Phenytoin must run slowly, no faster than `50 mg/min`, or it causes hypotension and arrhythmia, and it injures tissue if it leaks out of the vein.\n\n## Antipsychotics and the agitated patient\n\nHaloperidol and droperidol block dopamine D2 receptors; olanzapine blocks several receptors at once. Haloperidol `5 mg` IM or olanzapine `10 mg` IM calms severe agitation in `15-30` minutes.\n\nThe side effects come from the same D2 blockade. Dystonia is a sudden muscle spasm of the neck, jaw, or eyes, treated with diphenhydramine `25-50 mg` IV or benztropine `1-2 mg`. Akathisia is an unbearable inner restlessness. All of these drugs prolong the QT interval, and droperidol carries a boxed warning for it. Neuroleptic malignant syndrome is the rare, deadly version: rigidity, fever, and confusion over days.\n\nThe old combination nicknamed the B52 is haloperidol `5 mg`, lorazepam `2 mg`, and diphenhydramine `50 mg` IM. Do not stack IM olanzapine with an IM benzodiazepine; the pair causes dangerous respiratory depression.\n\nKetamine `4-5 mg/kg` IM or `1-2 mg/kg` IV is the fastest option for extreme agitation, dissociating the patient in `2-5` minutes. Watch for laryngospasm and vomiting, and expect emergence reactions on the way out.\n\n## Psychiatric drugs you must recognize\n\nSSRIs (sertraline, fluoxetine, escitalopram) are safe alone but combine badly. Adding tramadol, linezolid, triptans, or an MAO inhibitor can cause serotonin syndrome: agitation, hyperreflexia, clonus that is worst in the legs, sweating, and fever, coming on within hours. Neuroleptic malignant syndrome looks similar but develops over days with lead-pipe rigidity and no clonus.\n\nTricyclic antidepressants (amitriptyline, nortriptyline) block sodium channels in overdose. The QRS widens past `100 ms`, seizures and hypotension follow, and the antidote is sodium bicarbonate `1-2 mEq/kg` IV push. Lithium has a narrow range of `0.6-1.2 mEq/L`, and NSAIDs, thiazides, and ACE inhibitors all push the level up toward tremor, confusion, and dialysis.\n\nDexmedetomidine is an alpha-2 agonist that sedates without depressing respiration, which makes it useful in an intubated or withdrawing patient, at the cost of bradycardia and hypotension.\n\n## Rapid sequence intubation\n\nRSI is a sedative and a paralytic given back to back so the tube goes in on the first attempt.\n\n| Drug | Dose | The one thing |\n|---|---|---|\n| Etomidate | `0.3 mg/kg` | barely touches blood pressure; brief adrenal suppression |\n| Ketamine | `1-2 mg/kg` | supports blood pressure; good in shock and asthma |\n| Propofol | `1.5-2.5 mg/kg` | drops blood pressure hard |\n| Succinylcholine | `1.5 mg/kg` | works in `45-60` s, wears off in `6-10` min; forbidden in hyperkalemia, burns or crush over `48` hours old, spinal cord injury, or malignant hyperthermia history |\n| Rocuronium | `1.2 mg/kg` | works in `60` s, lasts `45-60` min; reversed by sugammadex `16 mg/kg` |\n\n> **On shift:** Before the drugs are pushed, the tech has suction on and tested, a bag-valve-mask ready, the monitor and waveform capnography on, two working IVs, the tube and a backup size open, and a push-dose pressor drawn.",
+      "keyPoints": [
+        "Benzodiazepines open GABA-A chloride channels; lorazepam 2-4 mg IV or midazolam 10 mg IM stops seizures.",
+        "Benzodiazepine plus opioid is the lethal combination; flumazenil can cause unstoppable seizures and is rarely used.",
+        "D2 blockade calms agitation but causes dystonia, akathisia, and QT prolongation; dystonia is treated with diphenhydramine.",
+        "Serotonin syndrome comes on in hours with clonus; tricyclic overdose widens the QRS and needs sodium bicarbonate.",
+        "Succinylcholine is banned in hyperkalemia, burns or crush injury over 48 hours old, and malignant hyperthermia history."
+      ],
+      "checks": [
+        {
+          "q": "A patient on sertraline is given tramadol and hours later has agitation, sweating, hyperreflexia, ankle clonus, and a temperature of 39.4 C. The most likely diagnosis is:",
+          "choices": [
+            "Neuroleptic malignant syndrome",
+            "Serotonin syndrome",
+            "Anticholinergic toxicity",
+            "Alcohol withdrawal"
+          ],
+          "answer": 1,
+          "why": "Serotonin syndrome develops within hours of adding a serotonergic drug such as tramadol and is defined by neuromuscular excitation: clonus and hyperreflexia, worst in the legs. Neuroleptic malignant syndrome develops over days with lead-pipe rigidity and no clonus, and anticholinergic toxicity gives dry skin with normal reflexes."
+        },
+        {
+          "q": "A patient with a crush injury from three days ago needs intubation. Which paralytic is contraindicated and why?",
+          "choices": [
+            "Rocuronium, because it lasts too long",
+            "Succinylcholine, because it can trigger a lethal potassium rise in crush injury older than about 48 hours",
+            "Succinylcholine, because it causes prolonged paralysis in muscle injury",
+            "Rocuronium, because there is no reversal agent"
+          ],
+          "answer": 1,
+          "why": "Succinylcholine depolarizes muscle and releases potassium, and upregulated receptors after burns, crush injury, or denervation beyond roughly 48 hours can produce hyperkalemic arrest. Rocuronium is the safe alternative here and is reversible with sugammadex."
+        },
+        {
+          "q": "An overdose patient has a QRS of 140 ms, hypotension, and a bottle of amitriptyline in the bag. The key treatment is:",
+          "choices": [
+            "Sodium bicarbonate 1-2 mEq/kg IV",
+            "Flumazenil 0.2 mg IV",
+            "Naloxone 2 mg IV",
+            "Calcium gluconate 1 g IV"
+          ],
+          "answer": 0,
+          "why": "Tricyclics block cardiac sodium channels, widening the QRS; sodium bicarbonate provides a sodium load and alkalinizes, which reverses the blockade. Flumazenil is specifically dangerous with tricyclics because it can provoke seizures, and naloxone and calcium do not address sodium channel blockade."
+        }
+      ]
+    },
+    {
+      "id": "pa-pharm-l07",
+      "title": "Antibiotics: what each class covers and what it costs",
+      "minutes": 8,
+      "body": "## Two questions for every antibiotic\n\nWhat does it cover, and what is its signature harm? Bacteria sort roughly into gram-positive (staph, strep, enterococcus), gram-negative (E. coli, Klebsiella, Pseudomonas), atypical (Mycoplasma, Legionella, Chlamydia), and anaerobes (the gut and mouth organisms that live without oxygen). Antibiotics either kill the cell wall, jam the ribosome, or break DNA.\n\n## The cell wall drugs\n\n**Penicillins** block cell wall building. Amoxicillin covers strep throat, ear infections, and Lyme disease; ampicillin adds Listeria coverage, which is why it appears in meningitis orders for the very young and very old. Piperacillin-tazobactam is the broad IV version that covers Pseudomonas and anaerobes. Signature harm: allergy, from rash to anaphylaxis.\n\n**Cephalosporins** are penicillin's cousins, sorted by generation. First generation (cefazolin, cephalexin) is skin and soft tissue. Third generation (ceftriaxone) crosses into the brain and is the emergency department workhorse for pneumonia, pyelonephritis, and meningitis at `2 g` IV. Fourth generation (cefepime) picks up Pseudomonas. Signature harm: allergy, plus confusion at high doses in kidney failure with cefepime.\n\n**Carbapenems** (meropenem, ertapenem) are the big guns held in reserve for resistant gram-negatives. Overuse breeds resistance, so they are not started casually.\n\n**Vancomycin** kills gram-positives including MRSA and is given IV for bloodstream and skin infections, or orally for C. difficile only, since oral vancomycin stays in the gut. Signature harms: kidney injury, so trough levels are followed, and an infusion-rate histamine reaction with flushing of the face and chest that is not an allergy and resolves by slowing the infusion.\n\n## The ribosome and DNA drugs\n\n| Class | Example | Covers | Signature harm |\n|---|---|---|---|\n| Fluoroquinolones | ciprofloxacin, levofloxacin | gram-negatives, urinary, atypicals | tendon rupture, QT prolongation, aortic aneurysm, C. difficile |\n| Macrolides | azithromycin | atypicals, respiratory | QT prolongation, GI upset |\n| Aminoglycosides | gentamicin, tobramycin | serious gram-negatives | kidney injury and permanent hearing loss |\n| Tetracyclines | doxycycline | tick-borne illness, atypicals, MRSA skin | photosensitivity, avoid in pregnancy and under `8` years |\n| Nitroimidazoles | metronidazole | anaerobes, C. difficile, trichomonas | severe reaction with alcohol, metallic taste |\n| Sulfonamides | trimethoprim-sulfamethoxazole | urinary, MRSA skin | raises potassium and creatinine, sulfa allergy, Stevens-Johnson |\n| Lincosamides | clindamycin | anaerobes above the diaphragm, MRSA | the highest C. difficile risk |\n\n## The allergy conversation\n\nMost people who say penicillin allergy do not have one. Nausea, diarrhea, or a headache is an intolerance, not an allergy. A family history is not an allergy. A childhood rash decades ago is almost never a true IgE allergy, and even confirmed penicillin allergy carries only about a `1%` to `2%` cross-reaction risk with modern cephalosporins.\n\n> **Key:** The question that matters is what happened and when: hives, swelling, wheeze, or a drop in blood pressure means a real allergy, and the patient needs a different class. Vomiting after amoxicillin in third grade does not.\n\n> **On shift:** Document the reaction, not just the word allergy. Writing down hives within 20 minutes versus upset stomach changes what the patient can safely receive for the rest of their life.\n\n## C. difficile\n\nAny antibiotic can wipe out the normal colon flora and let Clostridioides difficile overgrow, producing watery diarrhea, abdominal pain, and a high white count. Clindamycin, fluoroquinolones, and broad cephalosporins are the worst offenders. Treatment is oral vancomycin or fidaxomicin, and hands must be washed with soap and water because alcohol gel does not kill the spores.",
+      "keyPoints": [
+        "Ceftriaxone 2 g IV is the emergency department workhorse; ampicillin is added when Listeria is a concern.",
+        "Vancomycin covers MRSA, needs trough levels, and its flushing reaction is infusion-rate related, not an allergy.",
+        "Fluoroquinolones rupture tendons and prolong QT; aminoglycosides damage kidneys and hearing; metronidazole reacts with alcohol.",
+        "Clindamycin, fluoroquinolones, and cephalosporins carry the highest C. difficile risk; alcohol gel does not kill the spores.",
+        "True penicillin allergy is uncommon and cross-reacts with modern cephalosporins only about 1-2% of the time."
+      ],
+      "checks": [
+        {
+          "q": "A patient receiving vancomycin develops flushing and itching of the face, neck, and upper chest 20 minutes into the infusion, with normal blood pressure and no wheeze. The correct action is:",
+          "choices": [
+            "Stop vancomycin permanently and label the chart as an allergy",
+            "Give epinephrine 0.3 mg IM immediately",
+            "Slow the infusion and pretreat with an antihistamine; this is a rate-related histamine reaction, not an allergy",
+            "Switch to a carbapenem"
+          ],
+          "answer": 2,
+          "why": "Vancomycin infusion reaction is direct histamine release driven by infusion speed, and it resolves when the rate is slowed. Labeling it an allergy wrongly removes a needed drug. Epinephrine is for true anaphylaxis with airway or circulatory compromise, which is absent here."
+        },
+        {
+          "q": "Which antibiotic carries the highest risk of causing Clostridioides difficile colitis?",
+          "choices": [
+            "Clindamycin",
+            "Doxycycline",
+            "Nitrofurantoin",
+            "Azithromycin"
+          ],
+          "answer": 0,
+          "why": "Clindamycin is the classic and highest-risk C. difficile offender, with fluoroquinolones and broad cephalosporins close behind. Doxycycline, nitrofurantoin, and azithromycin disturb colonic flora far less."
+        },
+        {
+          "q": "A patient says he is allergic to penicillin. Which reported reaction most strongly suggests a true IgE-mediated allergy?",
+          "choices": [
+            "Nausea and diarrhea for two days after starting amoxicillin",
+            "Hives and lip swelling within 30 minutes of the first dose",
+            "His mother is allergic to penicillin",
+            "A headache after each dose"
+          ],
+          "answer": 1,
+          "why": "Hives, swelling, wheeze, or hypotension beginning within an hour is the pattern of true IgE-mediated allergy. Nausea, diarrhea, and headache are intolerances, and a family history is not an allergy at all."
+        }
+      ]
+    },
+    {
+      "id": "pa-pharm-l08",
+      "title": "Blood thinners, clot busters, and their antidotes",
+      "minutes": 8,
+      "body": "## Two kinds of clot, two kinds of drug\n\nIn a fast-flowing artery a clot is mostly platelets stuck together, a white clot. In a slow vein it is mostly fibrin and trapped red cells, a red clot. That is why arterial disease (heart attack, most strokes) is treated with **antiplatelets**, and venous disease (deep vein thrombosis, pulmonary embolism, clots thrown from a fibrillating atrium) is treated with **anticoagulants**.\n\n## Anticoagulants\n\n**Unfractionated heparin** supercharges antithrombin, which then shuts down thrombin and factor Xa. It is given IV, works instantly, and is out of the body in `1-2` hours, which makes it the choice when a procedure may be needed. Typical order: `80 units/kg` bolus, then `18 units/kg/h`, adjusted by aPTT or anti-Xa level. Two harms matter: bleeding, and heparin-induced thrombocytopenia, in which platelets fall by more than half around day `5-10` and the patient paradoxically clots. Reversal is protamine sulfate.\n\n**Enoxaparin** is a low molecular weight heparin that inhibits mostly factor Xa. Its effect is predictable, so no routine monitoring: `1 mg/kg` SubQ every `12` hours to treat, `40 mg` daily to prevent. It is cleared by the kidney, so the dose is cut when creatinine clearance falls below `30 mL/min`, and protamine reverses it only partially.\n\n**Warfarin** blocks the recycling of vitamin K, so the liver cannot finish factors II, VII, IX, and X. It takes `3-5` days to work and is measured by INR, target `2-3` for atrial fibrillation and venous clots, `2.5-3.5` for a mechanical mitral valve. Reversal for serious bleeding is vitamin K `10 mg` IV plus four-factor prothrombin complex concentrate.\n\n**Direct oral anticoagulants** need no monitoring and have far fewer food and drug interactions. Apixaban and rivaroxaban block factor Xa; dabigatran blocks thrombin directly. Reversal is andexanet alfa for the Xa inhibitors and idarucizumab for dabigatran.\n\n## Antiplatelets\n\nAspirin permanently disables cyclooxygenase inside the platelet, so no thromboxane A2 is made for that platelet's entire `7-10` day life. In suspected heart attack the dose is `324 mg` chewed, because chewing speeds absorption.\n\nClopidogrel blocks the platelet P2Y12 receptor. It is a prodrug needing CYP2C19, so some people never activate it. Ticagrelor is reversible, works faster, and causes a strange transient shortness of breath. Prasugrel is the most potent and the most bleeding-prone.\n\n## Thrombolytics\n\nAlteplase and tenecteplase convert plasminogen to plasmin, which dissolves fibrin that has already formed. They do not prevent clot; they destroy it. Uses are ischemic stroke within `4.5` hours (alteplase `0.9 mg/kg`, maximum `90 mg`), massive pulmonary embolism, and ST-elevation heart attack where catheterization is not available within `120` minutes.\n\n> **Key:** The contraindication list all points one direction: anywhere a clot is currently holding back bleeding, dissolving it is fatal. Prior intracranial hemorrhage ever, ischemic stroke in the last `3` months, known aneurysm or vascular malformation, active internal bleeding, suspected aortic dissection, significant head trauma or major surgery within `3` months, blood pressure above `185/110`, and platelets below `100,000`.\n\n## The reversal table\n\n| Drug | Reversal |\n|---|---|\n| Unfractionated heparin | protamine sulfate |\n| Enoxaparin | protamine (partial only) |\n| Warfarin | vitamin K `10 mg` IV plus 4-factor PCC |\n| Apixaban, rivaroxaban | andexanet alfa (or PCC if unavailable) |\n| Dabigatran | idarucizumab |\n| Aspirin, clopidogrel | platelet transfusion, desmopressin in uremia |\n| Alteplase | cryoprecipitate, tranexamic acid, stop the drug |\n\n> **On shift:** Ask every bleeding or head-injured patient which blood thinner they take and when the last dose was. A head CT in an anticoagulated patient with even minor head trauma is a different level of urgency, and the reversal agent is chosen from that one answer.",
+      "keyPoints": [
+        "Antiplatelets treat arterial platelet-rich clots; anticoagulants treat venous fibrin-rich clots.",
+        "Heparin 80 units/kg bolus then 18 units/kg/h, reversed by protamine; watch for heparin-induced thrombocytopenia at day 5-10.",
+        "Warfarin targets INR 2-3, takes 3-5 days, and is reversed with vitamin K plus 4-factor PCC.",
+        "Aspirin 324 mg chewed in suspected heart attack disables platelets for their full 7-10 day life.",
+        "Thrombolytic contraindications all share one logic: never dissolve a clot that is holding back bleeding."
+      ],
+      "checks": [
+        {
+          "q": "A patient on heparin for 6 days has a platelet count that fell from 240,000 to 90,000 and a new leg clot. The most likely problem is:",
+          "choices": [
+            "Heparin-induced thrombocytopenia, which requires stopping all heparin",
+            "Heparin overdose causing bleeding into the leg",
+            "Dilution from IV fluids",
+            "Immune thrombocytopenic purpura unrelated to heparin"
+          ],
+          "answer": 0,
+          "why": "A platelet drop of more than 50% at day 5-10 of heparin plus new thrombosis is the classic picture of heparin-induced thrombocytopenia, an antibody reaction that paradoxically causes clotting. All heparin, including flushes, must stop and a non-heparin anticoagulant substituted. Overdose would cause bleeding, not clotting."
+        },
+        {
+          "q": "Which finding absolutely rules out thrombolytics for an acute ischemic stroke?",
+          "choices": [
+            "Blood pressure 168/96 after treatment",
+            "Age 79",
+            "Ischemic stroke 6 weeks ago",
+            "A blood glucose of 180 mg/dL"
+          ],
+          "answer": 2,
+          "why": "An ischemic stroke within the last 3 months is an absolute contraindication because the recently infarcted brain bleeds readily. Blood pressure only disqualifies above 185/110, advanced age alone is not a contraindication, and a glucose of 180 is not a barrier."
+        },
+        {
+          "q": "A patient on apixaban arrives with a large intracranial hemorrhage. The specific reversal agent is:",
+          "choices": [
+            "Protamine sulfate",
+            "Idarucizumab",
+            "Vitamin K and fresh frozen plasma",
+            "Andexanet alfa"
+          ],
+          "answer": 3,
+          "why": "Apixaban is a factor Xa inhibitor, reversed by andexanet alfa, with prothrombin complex concentrate as the fallback. Protamine reverses heparins, idarucizumab reverses dabigatran, and vitamin K only works on warfarin because it acts through vitamin K dependent factor synthesis."
+        }
+      ]
+    },
+    {
+      "id": "pa-pharm-l09",
+      "title": "Cardiovascular drugs, pressors, and IV fluids",
+      "minutes": 9,
+      "body": "## Blood pressure is flow times resistance\n\nPressure comes from how much blood the heart pumps out (cardiac output) and how tight the vessels are (systemic vascular resistance). Every cardiovascular drug moves one of those two numbers, and the receptor it hits tells you which.\n\n## Slowing and relaxing the heart\n\n**Beta blockers** block beta-1 on the heart: slower rate, weaker squeeze, lower oxygen demand. Metoprolol `5 mg` IV every `5` minutes up to three doses controls rate; labetalol blocks alpha and beta together, which makes it a hypertensive emergency drug at `10-20 mg` IV; esmolol lasts only `9` minutes, so it is the drip to use when you may want to undo it. Cautions: bradycardia and heart block, non-selective agents worsen asthma, and they blunt the shakiness that warns a diabetic of low sugar. Overdose is treated with glucagon.\n\n**Calcium channel blockers** stop calcium from entering cells. Diltiazem and verapamil act on the heart and the AV node, so diltiazem `0.25 mg/kg` IV is standard for atrial fibrillation with a fast rate. Amlodipine acts only on vessels and is a daily blood pressure pill. Avoid diltiazem and verapamil in a weak heart and in atrial fibrillation with Wolff-Parkinson-White.\n\n**ACE inhibitors** (lisinopril) stop angiotensin I becoming angiotensin II, so vessels relax and the kidney stops retaining salt. Three signatures: a dry cough in about `10%` from bradykinin buildup, angioedema of the lips and tongue that can arrive after years on the drug, and a rising potassium. ARBs (losartan) do the same job at the receptor without the cough. Neither is ever used in pregnancy.\n\n**Nitrates** dilate veins, so less blood returns to the heart and the workload falls. Nitroglycerin `0.4 mg` sublingual every `5` minutes up to three doses, then a drip.\n\n> **Trap:** Nitroglycerin plus a PDE-5 inhibitor causes catastrophic hypotension. Ask about sildenafil or vardenafil in the last `24` hours and tadalafil in the last `48` hours. Be equally careful in an inferior heart attack with right ventricular involvement, where the patient needs preload.\n\n**Diuretics**: furosemide `40 mg` IV pulls fluid off and drops potassium; hydrochlorothiazide drops sodium; spironolactone spares potassium and can raise it dangerously.\n\n**Digoxin** slows the AV node and strengthens contraction. Its range is tiny (`0.5-2.0 ng/mL`), toxicity brings nausea, confusion, and yellow-green halos around lights, low potassium makes it worse, and the antidote is digoxin immune Fab.\n\n**Statins** block cholesterol synthesis; the harm to know is muscle breakdown, multiplied by CYP3A4 inhibitors and grapefruit.\n\n## Antiarrhythmics\n\n- **Amiodarone**: `150 mg` over `10` minutes for stable ventricular tachycardia, `300 mg` IV push in cardiac arrest. Blocks nearly every channel; long-term it poisons thyroid, lung, and liver.\n- **Adenosine**: `6 mg` rapid IV push into a proximal vein with an immediate `20 mL` flush, then `12 mg`. It stops the heart for about `6` seconds to reset an SVT. Warn the patient about a moment of chest pressure and a feeling of doom.\n- **Lidocaine**: `1-1.5 mg/kg` IV, the alternative to amiodarone in ventricular arrhythmia.\n- **Procainamide**: the preferred drug for stable wide-complex tachycardia and for atrial fibrillation with pre-excitation.\n\n## Pressors and inotropes, chosen by receptor\n\n| Drug | Receptors | Use |\n|---|---|---|\n| Norepinephrine | alpha-1 over beta-1 | first-line in septic shock and most undifferentiated shock |\n| Epinephrine | alpha and beta equally | anaphylaxis `0.3 mg` IM, arrest `1 mg` IV every `3-5` min |\n| Vasopressin | V1, no adrenergic receptor | fixed `0.03 units/min` added to norepinephrine |\n| Phenylephrine | pure alpha-1 | when tachycardia is the problem; causes reflex bradycardia |\n| Dopamine | dose-dependent | mostly replaced; more arrhythmia than norepinephrine |\n| Dobutamine | beta-1 | pure inotrope for cardiogenic shock; can drop blood pressure |\n\nPush-dose pressors are tiny syringe doses for a short gap, such as phenylephrine `100 mcg` or epinephrine `10-20 mcg` after intubation drops the pressure. For hypertensive emergencies the drips are nicardipine or clevidipine, with labetalol and hydralazine as pushes; the goal is lowering mean arterial pressure by about `25%` in the first hour, not normalizing it.\n\n## Fluids are drugs too\n\n| Fluid | What it is | Use |\n|---|---|---|\n| Normal saline `0.9%` | `154 mEq/L` each of sodium and chloride | resuscitation; large volumes cause a chloride-driven acidosis |\n| Lactated Ringer's | balanced, closer to plasma | preferred for large-volume resuscitation |\n| D5W | free water once the sugar burns off | a diluent, not a resuscitation fluid |\n| `3%` saline | hypertonic | seizing patient with severe low sodium, `100 mL` bolus |\n| Blood products | oxygen carrying and clotting | hemorrhage; fluids alone do not carry oxygen |",
+      "keyPoints": [
+        "Norepinephrine is first-line in septic shock; epinephrine is 0.3 mg IM for anaphylaxis and 1 mg IV in arrest.",
+        "Adenosine 6 mg must be pushed fast with a 20 mL flush and causes about 6 seconds of asystole.",
+        "Nitroglycerin with sildenafil or vardenafil in 24 hours (tadalafil 48) causes catastrophic hypotension.",
+        "ACE inhibitors give cough, angioedema, and hyperkalemia; diltiazem 0.25 mg/kg controls atrial fibrillation rate.",
+        "Lactated Ringer's is preferred over large volumes of normal saline, which causes hyperchloremic acidosis."
+      ],
+      "checks": [
+        {
+          "q": "A 58-year-old with chest pain took tadalafil last night. The physician asks for nitroglycerin. The correct response is:",
+          "choices": [
+            "Give it; the interaction only applies to sildenafil",
+            "Flag the tadalafil, because the interaction lasts about 48 hours and can cause profound hypotension",
+            "Give half the usual dose to be safe",
+            "Give it only if the blood pressure is above 160 systolic"
+          ],
+          "answer": 1,
+          "why": "PDE-5 inhibitors and nitrates both raise cyclic GMP, and the combination can drop blood pressure catastrophically. Tadalafil's window is about 48 hours, longer than the 24 hours for sildenafil and vardenafil. Halving the dose or using a pressure threshold does not make the combination safe."
+        },
+        {
+          "q": "Which vasopressor is first-line for septic shock that remains hypotensive after adequate fluid resuscitation?",
+          "choices": [
+            "Dopamine",
+            "Dobutamine",
+            "Norepinephrine",
+            "Phenylephrine"
+          ],
+          "answer": 2,
+          "why": "Norepinephrine is the guideline first-line agent: strong alpha-1 vasoconstriction with some beta-1 support, and fewer arrhythmias than dopamine. Dobutamine is an inotrope that lowers blood pressure, and phenylephrine is a narrow-use pure vasoconstrictor."
+        },
+        {
+          "q": "Adenosine 6 mg is ordered for stable SVT. The most important administration detail is:",
+          "choices": [
+            "Push it rapidly into a proximal IV followed immediately by a 20 mL flush",
+            "Infuse it over 10 minutes to avoid asystole",
+            "Dilute it in 100 mL and run it over an hour",
+            "Give it IM if IV access is difficult"
+          ],
+          "answer": 0,
+          "why": "Adenosine has a half-life of under 10 seconds, so a slow push is metabolized before it reaches the AV node and does nothing. It must be pushed fast into a proximal vein with an immediate flush, and the expected brief asystole is the mechanism, not a complication."
+        }
+      ]
+    },
+    {
+      "id": "pa-pharm-l10",
+      "title": "Lungs, sugar, gut, and the drugs you will see every shift",
+      "minutes": 9,
+      "body": "## Respiratory\n\n**Albuterol** is a beta-2 agonist that relaxes bronchial smooth muscle within minutes: `2.5 mg` nebulized, repeated or given continuously in severe asthma. Expect tremor, a fast heart rate, and a small drop in potassium, which is why albuterol is also part of hyperkalemia treatment. **Ipratropium** `0.5 mg` blocks muscarinic receptors and dries secretions, adding benefit in the first hours of a severe attack.\n\n**Steroids** do not open the airway; they switch off the inflammation underneath, and they take `4-6` hours to do anything. That is precisely why they are given early. Prednisone `40-60 mg` PO, methylprednisolone `125 mg` IV, or dexamethasone `10 mg`.\n\n**Magnesium sulfate** `2 g` IV over `20` minutes relaxes smooth muscle in severe asthma that is not responding. **Epinephrine** `0.3 mg` IM is for anaphylaxis or an asthmatic too tight to move air. For croup, **dexamethasone** `0.6 mg/kg` plus nebulized racemic epinephrine shrinks the swollen subglottic airway, and that child must be watched for rebound.\n\n## Endocrine\n\n| Insulin | Onset | Peak | Duration |\n|---|---|---|---|\n| Lispro, aspart (rapid) | `15` min | `1` h | `3-5` h |\n| Regular | `30-60` min | `2-4` h | `6-8` h |\n| NPH (intermediate) | `1-2` h | `4-8` h | `12-18` h |\n| Glargine, detemir (long) | `1-2` h | no real peak | `20-24` h |\n\nOnly regular insulin goes in a drip, at `0.1 units/kg/h` for diabetic ketoacidosis, and never before potassium is known, because insulin drives potassium into cells.\n\nLow blood sugar is reversed with `25 g` of dextrose (one `50 mL` D50 syringe), or `250 mL` of D10, which is gentler on veins. With no IV, glucagon `1 mg` IM works in `10-15` minutes by releasing stored liver glycogen, so it fails in a starved or alcoholic patient with no glycogen left. An awake patient gets `15 g` of oral glucose.\n\nMetformin does not cause low sugar but can cause lactic acidosis if it accumulates, so it is held around contrast studies and in kidney injury. Sulfonylureas (glipizide, glyburide) do cause low sugar, for many hours, so those patients are admitted rather than fed and released. Levothyroxine replaces thyroid hormone. Hydrocortisone `100 mg` IV is the drug for adrenal crisis.\n\n## Gastrointestinal\n\nPantoprazole `40 mg` IV shuts the stomach's acid pump, and famotidine `20 mg` blocks the H2 receptor more gently. Ondansetron `4 mg` blocks serotonin 5-HT3 receptors in the vomiting center and prolongs the QT interval. Metoclopramide `10 mg` also pushes the stomach forward but blocks dopamine, so it can cause dystonia and restlessness. Promethazine is a real danger by IV: leakage causes tissue necrosis and limb loss, so it is avoided or heavily diluted into a large running line. Octreotide `50 mcg` IV then `50 mcg/h` constricts splanchnic vessels in variceal bleeding.\n\n> **On shift:** The so-called GI cocktail of antacid with viscous lidocaine relieves some upper abdominal pain, but relief never proves the pain is not cardiac.\n\n## The drugs you will see on nearly every shift\n\n| Generic | Brand | Class | Remember |\n|---|---|---|---|\n| Acetaminophen | Tylenol | analgesic, antipyretic | `4 g/day` ceiling |\n| Ibuprofen | Motrin | NSAID | kidneys, stomach, asthma |\n| Ketorolac | Toradol | NSAID | `15 mg` IV if over `65` |\n| Morphine | none common | opioid | histamine, renal metabolites |\n| Fentanyl | none common | opioid | `100x` morphine potency |\n| Hydromorphone | Dilaudid | opioid | `5-7x` morphine potency |\n| Naloxone | Narcan | opioid antagonist | re-sedation at `30-90` min |\n| Ondansetron | Zofran | antiemetic | QT |\n| Ceftriaxone | Rocephin | cephalosporin | `2 g` for meningitis |\n| Vancomycin | none common | glycopeptide | MRSA, trough levels |\n| Azithromycin | Zithromax | macrolide | atypicals, QT |\n| Metronidazole | Flagyl | nitroimidazole | no alcohol |\n| Piperacillin-tazobactam | Zosyn | penicillin | broad, covers Pseudomonas |\n| Heparin | none common | anticoagulant | protamine reverses |\n| Enoxaparin | Lovenox | LMWH | renal dosing |\n| Apixaban | Eliquis | DOAC | andexanet alfa |\n| Warfarin | Coumadin | vitamin K antagonist | INR `2-3` |\n| Aspirin | none common | antiplatelet | `324 mg` chewed |\n| Alteplase | Activase | thrombolytic | `4.5` h stroke window |\n| Metoprolol | Lopressor | beta blocker | asthma, bradycardia |\n| Diltiazem | Cardizem | calcium channel blocker | rate control |\n| Lisinopril | Zestril | ACE inhibitor | cough, angioedema |\n| Furosemide | Lasix | loop diuretic | potassium falls |\n| Nitroglycerin | Nitrostat | nitrate | PDE-5 rule |\n| Norepinephrine | Levophed | vasopressor | first-line in sepsis |\n| Epinephrine | Adrenalin | catecholamine | `0.3 mg` IM, `1 mg` IV |\n| Amiodarone | Cordarone | antiarrhythmic | `150 mg` over `10` min |\n| Adenosine | Adenocard | antiarrhythmic | fast push, brief asystole |\n| Albuterol | Ventolin | beta-2 agonist | tremor, low potassium |\n| Methylprednisolone | Solu-Medrol | steroid | `4-6` h to work |\n| Lorazepam | Ativan | benzodiazepine | seizures, withdrawal |\n| Haloperidol | Haldol | antipsychotic | dystonia, QT |\n| Ketamine | Ketalar | dissociative | keeps blood pressure up |\n| Etomidate | Amidate | induction agent | hemodynamically neutral |\n| Insulin regular | Humulin R | hormone | only insulin for drips |\n| Pantoprazole | Protonix | PPI | GI bleeding |",
+      "keyPoints": [
+        "Albuterol opens airways in minutes; steroids take 4-6 hours, which is why they go in early.",
+        "Only regular insulin is used in drips, at 0.1 units/kg/h, and potassium is checked before it starts.",
+        "D50 delivers 25 g of dextrose; glucagon 1 mg IM fails when liver glycogen is already depleted.",
+        "Promethazine IV can cause tissue necrosis and limb loss; ondansetron and metoclopramide are safer choices.",
+        "Dexamethasone 0.6 mg/kg plus racemic epinephrine treats croup, and the child is watched for rebound."
+      ],
+      "checks": [
+        {
+          "q": "A severe asthmatic is given albuterol, ipratropium, and methylprednisolone at triage. Twenty minutes later he is still wheezing badly. Which statement is correct?",
+          "choices": [
+            "The steroid has failed and should be repeated",
+            "Steroids need 4-6 hours to act, so the next escalation is magnesium 2 g IV over 20 minutes",
+            "Ipratropium should be stopped because it dries secretions",
+            "Albuterol should be stopped because of tremor and tachycardia"
+          ],
+          "answer": 1,
+          "why": "Systemic steroids reduce airway inflammation over 4-6 hours and cannot be judged at 20 minutes. Continuous albuterol plus magnesium sulfate is the standard escalation. Tremor and tachycardia are expected beta-2 effects, not reasons to stop treatment."
+        },
+        {
+          "q": "A patient in diabetic ketoacidosis has a potassium of 3.1 mEq/L. Regarding the insulin drip:",
+          "choices": [
+            "Start it immediately, because insulin is the definitive treatment",
+            "Hold insulin and replace potassium first, because insulin drives potassium into cells and can cause lethal hypokalemia",
+            "Start it at double the usual rate to clear ketones faster",
+            "Use glargine instead of regular insulin"
+          ],
+          "answer": 1,
+          "why": "Insulin shifts potassium intracellularly, so starting it with a potassium already below about 3.3 mEq/L can cause arrhythmia and arrest. Potassium is replaced first while fluids run. Only regular insulin is used in a drip, and doubling the rate adds risk without benefit."
+        },
+        {
+          "q": "An alcoholic patient with a glucose of 32 mg/dL has no IV access. Glucagon 1 mg IM is given but glucose barely rises. The best explanation is:",
+          "choices": [
+            "Glucagon does not work intramuscularly",
+            "The dose should have been 0.1 mg",
+            "Glucagon works by mobilizing liver glycogen, and chronic alcohol use and malnutrition leave little glycogen to mobilize",
+            "Glucagon lowers glucose in alcoholics"
+          ],
+          "answer": 2,
+          "why": "Glucagon raises glucose only by releasing stored hepatic glycogen. In starvation, chronic alcohol use, or prolonged hypoglycemia those stores are gone, so the drug fails and IV or IO dextrose is required. The IM route and 1 mg dose are both correct."
+        }
+      ]
+    }
+  ],
+  "cards": [
+    { "id": "pa-pharm-c001", "front": "What do the four letters of ADME stand for?", "back": "Absorption (getting in), Distribution (traveling), Metabolism (being chemically changed), Elimination (leaving). Together they predict onset, duration, and who a drug will hurt.", "lesson": "pa-pharm-l01" },
+    { "id": "pa-pharm-c002", "front": "What is bioavailability, and what is it for an IV drug?", "back": "The fraction of a dose that reaches the bloodstream intact and able to act. IV bioavailability is 100% by definition because absorption is skipped entirely.", "lesson": "pa-pharm-l01" },
+    { "id": "pa-pharm-c003", "front": "Why is oral morphine dosed around 30 mg when the IV dose is 10 mg?", "back": "Only about 25-30% of swallowed morphine survives first-pass liver metabolism, so roughly three times the dose is needed by mouth for the same effect.", "lesson": "pa-pharm-l01" },
+    { "id": "pa-pharm-c004", "front": "Rank these by speed of onset: IM, IV, PO, SubQ, sublingual.", "back": "IV (seconds), sublingual (1-3 min), IM (5-20 min), SubQ (15-30 min), PO (30-90 min). Perfusion of the site and liver bypass decide the order.", "lesson": "pa-pharm-l01" },
+    { "id": "pa-pharm-c005", "front": "Why do IM and SubQ drugs fail in a patient in shock?", "back": "Shock shunts blood away from skin, fat, and muscle, so the drug sits in tissue unabsorbed. IV or IO is required; SubQ insulin is unreliable in DKA for this reason.", "lesson": "pa-pharm-l01" },
+    { "id": "pa-pharm-c006", "front": "What is the first-pass effect, and which route was invented to dodge it?", "back": "Blood from the gut reaches the liver through the portal vein first, where much of the dose is destroyed. Sublingual drains to the superior vena cava instead, which is why SL nitroglycerin works in 1-3 minutes.", "lesson": "pa-pharm-l01" },
+    { "id": "pa-pharm-c007", "front": "Warfarin is 99% protein bound. Why does that matter clinically?", "back": "Only free drug is active. Low albumin or a competing drug can double the free fraction with no change in dose, raising bleeding risk sharply.", "lesson": "pa-pharm-l01" },
+    { "id": "pa-pharm-c008", "front": "Which drug property decides whether it crosses the blood-brain barrier?", "back": "Small, lipophilic (fat-loving) molecules cross; large, hydrophilic, or charged ones do not. Fentanyl and diphenhydramine cross; loratadine and glycopyrrolate barely do.", "lesson": "pa-pharm-l01" },
+    { "id": "pa-pharm-c009", "front": "What do Phase I and Phase II liver reactions each do?", "back": "Phase I (CYP450 oxidation) adds or exposes a chemical handle. Phase II (conjugation) attaches a water-loving group so the kidney can excrete the drug.", "lesson": "pa-pharm-l02" },
+    { "id": "pa-pharm-c010", "front": "What is a prodrug, and name two.", "back": "A drug given inactive that the liver switches on. Codeine becomes morphine via CYP2D6; clopidogrel is activated by CYP2C19. Missing the enzyme means no effect.", "lesson": "pa-pharm-l02" },
+    { "id": "pa-pharm-c011", "front": "CYP inhibitor versus inducer: what happens to the other drug's level?", "back": "Inhibitor blocks clearance, so the level rises toward toxicity, often within a day. Inducer speeds clearance over days to weeks, so the level falls toward treatment failure.", "lesson": "pa-pharm-l02" },
+    { "id": "pa-pharm-c012", "front": "Name four common CYP inhibitors and four common inducers.", "back": "Inhibitors: amiodarone, fluconazole, clarithromycin, ciprofloxacin (also metronidazole, grapefruit). Inducers: rifampin, phenytoin, carbamazepine, phenobarbital (also St. John's wort, chronic alcohol).", "lesson": "pa-pharm-l02" },
+    { "id": "pa-pharm-c013", "front": "How does grapefruit juice raise drug levels?", "back": "It blocks CYP3A4 in the intestinal wall, so less drug is destroyed during absorption and bioavailability rises. With simvastatin this can trigger rhabdomyolysis.", "lesson": "pa-pharm-l02" },
+    { "id": "pa-pharm-c014", "front": "How many half-lives to clear a drug, and how many to reach steady state?", "back": "Both are 4 to 5 half-lives. After stopping, 4-5 half-lives removes about 94-97%; on a fixed repeated dose, the level plateaus after the same 4-5.", "lesson": "pa-pharm-l02" },
+    { "id": "pa-pharm-c015", "front": "What determines a loading dose versus a maintenance dose?", "back": "The loading dose is sized to the volume of distribution to fill the body now. The maintenance dose is sized to clearance, meaning kidney and liver function.", "lesson": "pa-pharm-l02" },
+    { "id": "pa-pharm-c016", "front": "Which five drugs are absolutely avoided in pregnancy?", "back": "ACE inhibitors and ARBs, warfarin, isotretinoin, tetracyclines, and fluoroquinolones. Each causes recognized fetal harm rather than theoretical risk.", "lesson": "pa-pharm-l02" },
+    { "id": "pa-pharm-c017", "front": "Define agonist, antagonist, and partial agonist with one drug each.", "back": "Agonist turns the receptor on (albuterol at beta-2). Antagonist blocks with no effect of its own (naloxone at mu). Partial agonist turns it partly on with a ceiling (buprenorphine at mu).", "lesson": "pa-pharm-l03" },
+    { "id": "pa-pharm-c018", "front": "What is the naloxone dose, onset, and duration, and why does duration matter?", "back": "0.4-2 mg IV, IM, or IN, onset 1-2 minutes, duration 30-90 minutes. That is shorter than most opioids, so re-sedation and apnea can return.", "lesson": "pa-pharm-l03" },
+    { "id": "pa-pharm-c019", "front": "Why can buprenorphine precipitate withdrawal?", "back": "It is a high-affinity partial agonist. It displaces full agonists like heroin or fentanyl from mu receptors but only partly activates them, so effect drops abruptly.", "lesson": "pa-pharm-l03" },
+    { "id": "pa-pharm-c020", "front": "Potency versus efficacy, using fentanyl and morphine.", "back": "Potency is the dose needed: fentanyl is about 100 times more potent. Efficacy is the maximum achievable effect: both are full mu agonists, so efficacy is similar.", "lesson": "pa-pharm-l03" },
+    { "id": "pa-pharm-c021", "front": "What is therapeutic index, and which drugs have a narrow one?", "back": "TD50 divided by ED50, the safety gap. Narrow: digoxin, lithium, phenytoin, warfarin, theophylline, vancomycin, aminoglycosides. These get blood levels drawn.", "lesson": "pa-pharm-l03" },
+    { "id": "pa-pharm-c022", "front": "Give the therapeutic range for digoxin, lithium, and phenytoin.", "back": "Digoxin 0.5-2.0 ng/mL. Lithium 0.6-1.2 mEq/L. Phenytoin 10-20 mcg/mL total. Warfarin is measured by INR, target 2-3 for most uses.", "lesson": "pa-pharm-l03" },
+    { "id": "pa-pharm-c023", "front": "What is tachyphylaxis, and which drip shows it?", "back": "Tolerance that develops within hours. A nitroglycerin infusion loses effect after roughly 18-24 hours, requiring a nitrate-free interval to restore response.", "lesson": "pa-pharm-l03" },
+    { "id": "pa-pharm-c024", "front": "What does stimulating alpha-1, beta-1, and beta-2 each do?", "back": "Alpha-1 constricts vessels and raises blood pressure. Beta-1 speeds and strengthens the heart. Beta-2 dilates bronchi and vessels.", "lesson": "pa-pharm-l03" },
+    { "id": "pa-pharm-c025", "front": "What five parts must a complete medication order contain?", "back": "Drug, dose, route, frequency, and indication. Missing any one makes the order unsafe to carry out and it must be clarified before administration.", "lesson": "pa-pharm-l04" },
+    { "id": "pa-pharm-c026", "front": "Convert 198 lb to kilograms and explain why it matters.", "back": "198 divided by 2.2 equals 90 kg. Weight-based doses are always per kilogram; using pounds would give more than double the intended dose.", "lesson": "pa-pharm-l04" },
+    { "id": "pa-pharm-c027", "front": "How many mg/mL is a 1% solution, and what is lidocaine 2%?", "back": "1% means 1 g per 100 mL, which is 10 mg/mL. Lidocaine 2% is therefore 20 mg/mL, and D50 holds 25 g of dextrose in its 50 mL syringe.", "lesson": "pa-pharm-l04" },
+    { "id": "pa-pharm-c028", "front": "Which epinephrine concentration is IM for anaphylaxis and which is IV for arrest?", "back": "1 mg/mL (old 1:1,000) is 0.3 mg IM for anaphylaxis. 0.1 mg/mL (old 1:10,000) is 1 mg IV for cardiac arrest. Mixing them up is lethal.", "lesson": "pa-pharm-l04" },
+    { "id": "pa-pharm-c029", "front": "Heparin 18 units/kg/h for an 80 kg patient, bag 25,000 units in 250 mL. What rate?", "back": "80 x 18 = 1,440 units/h. Concentration is 25,000 / 250 = 100 units/mL. Rate is 1,440 / 100 = 14.4 mL/h.", "lesson": "pa-pharm-l04" },
+    { "id": "pa-pharm-c030", "front": "State the 4-2-1 maintenance fluid rule and apply it to a 30 kg child.", "back": "4 mL/kg/h for the first 10 kg, 2 for the next 10 kg, 1 for each kg beyond. For 30 kg: 40 + 20 + 10 = 70 mL/h.", "lesson": "pa-pharm-l04" },
+    { "id": "pa-pharm-c031", "front": "How do you convert mL/h to gtt/min?", "back": "Multiply mL/h by the set's drip factor (gtt/mL) and divide by 60. Example: 70 mL/h on a 15 gtt/mL set is 70 x 15 / 60, about 18 gtt/min.", "lesson": "pa-pharm-l04" },
+    { "id": "pa-pharm-c032", "front": "Name the high-alert medication classes and the one absolute rule about potassium.", "back": "Insulin, anticoagulants, opioids, concentrated electrolytes, chemotherapy, neuromuscular blockers. Concentrated potassium chloride is never given IV push; it is diluted and infused, about 10 mEq/h peripherally.", "lesson": "pa-pharm-l04" },
+    { "id": "pa-pharm-c033", "front": "What is the acetaminophen ceiling in a healthy adult and in liver disease?", "back": "4 g per 24 hours normally, lowered to 2-3 g with liver disease, heavy alcohol use, or malnutrition. Pediatric dosing is 15 mg/kg per dose.", "lesson": "pa-pharm-l05" },
+    { "id": "pa-pharm-c034", "front": "Why does an acetaminophen overdose patient look well at first, and what is the antidote?", "back": "The toxic metabolite NAPQI destroys liver cells silently; failure appears on day 3-4. N-acetylcysteine restores glutathione and is nearly fully protective within 8 hours.", "lesson": "pa-pharm-l05" },
+    { "id": "pa-pharm-c035", "front": "What are the three signature harms of NSAIDs and the mechanism behind them?", "back": "Blocking prostaglandins removes stomach protection (GI bleeding), afferent arteriole dilation (acute kidney injury), and shifts arachidonic acid toward leukotrienes (bronchospasm in aspirin-sensitive asthma).", "lesson": "pa-pharm-l05" },
+    { "id": "pa-pharm-c036", "front": "When is the ketorolac IV dose 15 mg instead of 30 mg?", "back": "Age over 65, weight under 50 kg, or any degree of kidney impairment. Maximum duration is 5 days regardless of dose.", "lesson": "pa-pharm-l05" },
+    { "id": "pa-pharm-c037", "front": "Give the rough IV equianalgesic doses of morphine, hydromorphone, and fentanyl.", "back": "Morphine 10 mg equals hydromorphone about 1.5 mg equals fentanyl about 100 mcg. Oral morphine 30 mg is the same again.", "lesson": "pa-pharm-l05" },
+    { "id": "pa-pharm-c038", "front": "Why is fentanyl preferred over morphine in hypotension or kidney failure?", "back": "Fentanyl causes no histamine release, so blood pressure holds, and it has no active renal metabolites to accumulate and cause prolonged sedation.", "lesson": "pa-pharm-l05" },
+    { "id": "pa-pharm-c039", "front": "What is the analgesic dose of ketamine and how is it given?", "back": "0.1-0.3 mg/kg IV infused over 10-15 minutes. Given as a fast push it produces an unpleasant dissociative sensation; at this dose it spares blood pressure and respiratory drive.", "lesson": "pa-pharm-l05" },
+    { "id": "pa-pharm-c040", "front": "What are the maximum lidocaine doses, and what treats local anesthetic toxicity?", "back": "4.5 mg/kg plain, 7 mg/kg with epinephrine. Toxicity starts with perioral tingling, metallic taste, and tinnitus, then seizures; treatment is IV lipid emulsion.", "lesson": "pa-pharm-l05" },
+    { "id": "pa-pharm-c041", "front": "How do benzodiazepines work, and what is the IV seizure dose of lorazepam?", "back": "They make the GABA-A receptor open more often, letting chloride in and quieting the neuron. Lorazepam 2-4 mg IV (0.1 mg/kg), or midazolam 10 mg IM with no IV.", "lesson": "pa-pharm-l06" },
+    { "id": "pa-pharm-c042", "front": "Why is flumazenil rarely used?", "back": "Removing GABA inhibition can cause seizures that no longer respond to benzodiazepines, especially in chronic users or a tricyclic co-ingestion.", "lesson": "pa-pharm-l06" },
+    { "id": "pa-pharm-c043", "front": "Name the three second-line anticonvulsant loads after benzodiazepines.", "back": "Levetiracetam 60 mg/kg (max 4,500 mg), fosphenytoin 20 mg PE/kg, or valproate 40 mg/kg. Phenytoin must not exceed 50 mg/min because of hypotension and arrhythmia.", "lesson": "pa-pharm-l06" },
+    { "id": "pa-pharm-c044", "front": "What is an acute dystonic reaction and how is it treated?", "back": "Sudden spasm of the neck, jaw, or eyes after a dopamine blocker such as haloperidol or metoclopramide. Treat with diphenhydramine 25-50 mg IV or benztropine 1-2 mg.", "lesson": "pa-pharm-l06" },
+    { "id": "pa-pharm-c045", "front": "What is the B52, and which IM combination should be avoided?", "back": "Haloperidol 5 mg, lorazepam 2 mg, diphenhydramine 50 mg IM for severe agitation. Avoid IM olanzapine with an IM benzodiazepine because of respiratory depression.", "lesson": "pa-pharm-l06" },
+    { "id": "pa-pharm-c046", "front": "How do you tell serotonin syndrome from neuroleptic malignant syndrome?", "back": "Serotonin syndrome develops in hours with clonus and hyperreflexia worst in the legs. NMS develops over days with lead-pipe rigidity and no clonus.", "lesson": "pa-pharm-l06" },
+    { "id": "pa-pharm-c047", "front": "What ECG finding defines serious tricyclic overdose and what is the antidote?", "back": "QRS widening beyond 100 ms from sodium channel blockade, with seizures and hypotension. Treat with sodium bicarbonate 1-2 mEq/kg IV push.", "lesson": "pa-pharm-l06" },
+    { "id": "pa-pharm-c048", "front": "Compare succinylcholine and rocuronium: dose, onset, duration, contraindications.", "back": "Succinylcholine 1.5 mg/kg, onset 45-60 s, lasts 6-10 min; avoid in hyperkalemia, burns or crush over 48 h old, denervation, or malignant hyperthermia history. Rocuronium 1.2 mg/kg, onset 60 s, lasts 45-60 min, reversed by sugammadex.", "lesson": "pa-pharm-l06" },
+    { "id": "pa-pharm-c049", "front": "Which antibiotic is the emergency department workhorse, and what is the meningitis dose?", "back": "Ceftriaxone, a third-generation cephalosporin that penetrates the central nervous system. 2 g IV for meningitis, commonly 1 g for pneumonia or pyelonephritis.", "lesson": "pa-pharm-l07" },
+    { "id": "pa-pharm-c050", "front": "When is ampicillin added to a meningitis regimen and why?", "back": "In patients under about 1 month and over 50, or immunocompromised, because ampicillin is the drug that covers Listeria monocytogenes and cephalosporins do not.", "lesson": "pa-pharm-l07" },
+    { "id": "pa-pharm-c051", "front": "What is vancomycin flushing, and how is it managed?", "back": "Rate-related direct histamine release causing flushing and itching of the face, neck, and chest. It is not an allergy: slow the infusion and pretreat with an antihistamine.", "lesson": "pa-pharm-l07" },
+    { "id": "pa-pharm-c052", "front": "Name the signature harm of fluoroquinolones, aminoglycosides, and metronidazole.", "back": "Fluoroquinolones: tendon rupture, QT prolongation, aortic aneurysm. Aminoglycosides: kidney injury and permanent hearing loss. Metronidazole: a severe reaction with alcohol.", "lesson": "pa-pharm-l07" },
+    { "id": "pa-pharm-c053", "front": "Which antibiotics carry the highest C. difficile risk, and why does hand gel not work?", "back": "Clindamycin, fluoroquinolones, and broad cephalosporins. C. difficile forms spores that alcohol gel cannot kill, so soap and water is required.", "lesson": "pa-pharm-l07" },
+    { "id": "pa-pharm-c054", "front": "What reaction history indicates a true penicillin allergy rather than an intolerance?", "back": "Hives, lip or tongue swelling, wheeze, or hypotension starting within an hour of a dose. Nausea, diarrhea, or headache is intolerance, and family history is not an allergy.", "lesson": "pa-pharm-l07" },
+    { "id": "pa-pharm-c055", "front": "How much does a documented penicillin allergy cross-react with modern cephalosporins?", "back": "Only about 1-2%. Most patients labeled penicillin allergic can safely receive cephalosporins, which matters because the alternatives are often broader and more toxic.", "lesson": "pa-pharm-l07" },
+    { "id": "pa-pharm-c056", "front": "Why do arterial clots get antiplatelets and venous clots get anticoagulants?", "back": "Fast arterial flow builds platelet-rich white clots; slow venous flow builds fibrin-rich red clots. The drug must match the material the clot is made of.", "lesson": "pa-pharm-l08" },
+    { "id": "pa-pharm-c057", "front": "State the standard heparin dosing and its reversal agent.", "back": "80 units/kg bolus then 18 units/kg/h, titrated by aPTT or anti-Xa. Protamine sulfate reverses it; heparin clears in 1-2 hours on its own.", "lesson": "pa-pharm-l08" },
+    { "id": "pa-pharm-c058", "front": "What is heparin-induced thrombocytopenia and when does it appear?", "back": "An antibody reaction around day 5-10 in which platelets fall more than 50% and the patient paradoxically clots. All heparin must stop, including flushes.", "lesson": "pa-pharm-l08" },
+    { "id": "pa-pharm-c059", "front": "How does warfarin work, what is the INR target, and how is it reversed?", "back": "It blocks vitamin K recycling so factors II, VII, IX, and X cannot be finished. INR target 2-3 (2.5-3.5 for a mechanical mitral valve). Reverse with vitamin K 10 mg IV plus 4-factor PCC.", "lesson": "pa-pharm-l08" },
+    { "id": "pa-pharm-c060", "front": "Match each DOAC to its reversal agent.", "back": "Apixaban and rivaroxaban are factor Xa inhibitors reversed by andexanet alfa. Dabigatran is a direct thrombin inhibitor reversed by idarucizumab.", "lesson": "pa-pharm-l08" },
+    { "id": "pa-pharm-c061", "front": "What is the aspirin dose in suspected heart attack and how long does one dose last?", "back": "324 mg chewed, because chewing speeds absorption. It irreversibly blocks COX-1, so the affected platelets stay disabled for their full 7-10 day lifespan.", "lesson": "pa-pharm-l08" },
+    { "id": "pa-pharm-c062", "front": "List the absolute contraindications to thrombolytics.", "back": "Any prior intracranial hemorrhage, ischemic stroke within 3 months, known aneurysm or vascular malformation, active internal bleeding, suspected aortic dissection, major head trauma or surgery within 3 months, BP above 185/110, platelets below 100,000.", "lesson": "pa-pharm-l08" },
+    { "id": "pa-pharm-c063", "front": "What is the IV metoprolol dose for rate control, and who should not get a beta blocker?", "back": "5 mg IV every 5 minutes up to three doses. Avoid in bradycardia or heart block, in cocaine toxicity, and use caution in asthma; beta blockade also masks hypoglycemia.", "lesson": "pa-pharm-l09" },
+    { "id": "pa-pharm-c064", "front": "What is the diltiazem dose for atrial fibrillation with rapid rate, and when is it dangerous?", "back": "0.25 mg/kg IV over 2 minutes. Dangerous in a weak heart (reduced ejection fraction) and in atrial fibrillation with Wolff-Parkinson-White pre-excitation.", "lesson": "pa-pharm-l09" },
+    { "id": "pa-pharm-c065", "front": "Name the three signature effects of ACE inhibitors.", "back": "A dry cough in about 10% from bradykinin buildup, angioedema of lips and tongue that can begin after years of use, and rising potassium. Never used in pregnancy.", "lesson": "pa-pharm-l09" },
+    { "id": "pa-pharm-c066", "front": "What is the PDE-5 rule with nitroglycerin?", "back": "No nitrates within 24 hours of sildenafil or vardenafil, or 48 hours of tadalafil. The combination causes catastrophic hypotension. Also avoid in right ventricular infarction.", "lesson": "pa-pharm-l09" },
+    { "id": "pa-pharm-c067", "front": "What are the signs of digoxin toxicity and its antidote?", "back": "Nausea, confusion, and yellow-green halos around lights, plus arrhythmias. Low potassium worsens it. The antidote is digoxin immune Fab.", "lesson": "pa-pharm-l09" },
+    { "id": "pa-pharm-c068", "front": "How is adenosine given and what should the patient be warned about?", "back": "6 mg rapid IV push into a proximal vein with an immediate 20 mL flush, then 12 mg if needed. Warn of about 6 seconds of asystole, chest pressure, and a feeling of doom.", "lesson": "pa-pharm-l09" },
+    { "id": "pa-pharm-c069", "front": "Match each pressor to its receptor logic: norepinephrine, phenylephrine, dobutamine, vasopressin.", "back": "Norepinephrine is alpha-1 over beta-1, first line in septic shock. Phenylephrine is pure alpha-1 with reflex bradycardia. Dobutamine is beta-1 inotropy. Vasopressin acts on V1, fixed at 0.03 units/min.", "lesson": "pa-pharm-l09" },
+    { "id": "pa-pharm-c070", "front": "Why is lactated Ringer's often preferred over large volumes of normal saline?", "back": "Normal saline carries 154 mEq/L of chloride, and large volumes cause hyperchloremic metabolic acidosis. Lactated Ringer's is closer to plasma composition.", "lesson": "pa-pharm-l09" },
+    { "id": "pa-pharm-c071", "front": "Why are steroids given early in asthma even though the patient is wheezing now?", "back": "They reduce airway inflammation rather than relaxing muscle, and take 4-6 hours to act. Prednisone 40-60 mg PO, methylprednisolone 125 mg IV, or dexamethasone 10 mg.", "lesson": "pa-pharm-l10" },
+    { "id": "pa-pharm-c072", "front": "What is the magnesium dose in severe asthma, and why does albuterol lower potassium?", "back": "Magnesium sulfate 2 g IV over 20 minutes relaxes bronchial smooth muscle. Beta-2 stimulation drives potassium into cells, which is also why albuterol helps in hyperkalemia.", "lesson": "pa-pharm-l10" },
+    { "id": "pa-pharm-c073", "front": "Give the onset, peak, and duration of rapid, regular, NPH, and glargine insulin.", "back": "Rapid (lispro, aspart): 15 min, 1 h, 3-5 h. Regular: 30-60 min, 2-4 h, 6-8 h. NPH: 1-2 h, 4-8 h, 12-18 h. Glargine: 1-2 h, no peak, 20-24 h.", "lesson": "pa-pharm-l10" },
+    { "id": "pa-pharm-c074", "front": "Which insulin is used in a drip, at what rate, and what must be checked first?", "back": "Only regular insulin, at 0.1 units/kg/h in diabetic ketoacidosis. Check potassium first: insulin drives potassium into cells and can cause lethal hypokalemia.", "lesson": "pa-pharm-l10" },
+    { "id": "pa-pharm-c075", "front": "How much dextrose is in a D50 syringe, and when does glucagon fail?", "back": "25 g in 50 mL. Glucagon 1 mg IM works by releasing hepatic glycogen, so it fails in starvation, malnutrition, or chronic alcohol use when glycogen stores are empty.", "lesson": "pa-pharm-l10" },
+    { "id": "pa-pharm-c076", "front": "Why is IV promethazine avoided, and what are safer antiemetics?", "back": "Extravasation causes tissue necrosis and limb loss. Ondansetron 4 mg (watch the QT) and metoclopramide 10 mg (watch for dystonia) are the usual alternatives.", "lesson": "pa-pharm-l10" },
+    { "id": "pa-pharm-c077", "front": "What two drugs treat croup and what is the dose of the steroid?", "back": "Dexamethasone 0.6 mg/kg plus nebulized racemic epinephrine for the swollen subglottic airway. The child is observed afterward because stridor can rebound.", "lesson": "pa-pharm-l10" }
+  ],
+  "quiz": [
+    { "id": "pa-pharm-q001", "q": "Which route has a bioavailability of 100% by definition?", "choices": ["Sublingual", "Intramuscular", "Intravenous", "Rectal"], "answer": 2, "why": "Bioavailability measures how much of a dose reaches the systemic circulation intact. IV delivery places the drug directly in the blood, so nothing is lost. Sublingual, IM, and rectal all require absorption across a membrane and lose some fraction of the dose.", "lesson": "pa-pharm-l01", "difficulty": 1 },
+    { "id": "pa-pharm-q002", "q": "A patient with crushing chest pain is given nitroglycerin sublingually rather than by mouth. The pharmacologic reason is that sublingual administration:", "choices": ["Produces a longer duration of action", "Avoids hepatic first-pass metabolism that would destroy most of the dose", "Is absorbed more slowly and therefore more safely", "Prevents gastric acid from inactivating the drug"], "answer": 1, "why": "Swallowed nitroglycerin drains through the portal vein to the liver, which metabolizes nearly all of it before it reaches the heart. Sublingual veins empty into the superior vena cava, bypassing that first pass. The goal is speed, not longer duration, and acid is not the limiting factor.", "lesson": "pa-pharm-l01", "difficulty": 2 },
+    { "id": "pa-pharm-q003", "q": "A patient in profound hypovolemic shock received an IM medication 25 minutes ago with no apparent effect. The most likely explanation is:", "choices": ["The drug was expired", "IM medications never work in adults", "The dose was too low for the patient's weight", "Shock diverts blood away from muscle, so the drug has not been absorbed"], "answer": 3, "why": "Absorption from muscle depends entirely on muscle blood flow, and in shock that flow is shunted to the brain and heart. The drug pools in the tissue until perfusion is restored, which is why resuscitation drugs go IV or IO. Nothing about the dose or the route itself is inherently wrong.", "lesson": "pa-pharm-l01", "difficulty": 2 },
+    { "id": "pa-pharm-q004", "q": "Diphenhydramine causes drowsiness but loratadine generally does not. The difference is explained by:", "choices": ["Diphenhydramine is lipophilic and crosses the blood-brain barrier, while loratadine largely does not", "Loratadine is not an antihistamine", "Diphenhydramine has a longer half-life", "Loratadine is more protein bound and therefore more active"], "answer": 0, "why": "Only small lipophilic molecules cross the tight junctions of brain capillaries. Diphenhydramine crosses easily and blocks central H1 receptors, producing sedation; loratadine was designed not to. Both are antihistamines, and higher protein binding means less free drug, not more effect.", "lesson": "pa-pharm-l01", "difficulty": 2 },
+    { "id": "pa-pharm-q005", "q": "A patient stable on warfarin is prescribed metronidazole for a dental infection. What is the expected effect and why?", "choices": ["The INR falls because metronidazole induces CYP enzymes", "The INR rises because metronidazole inhibits warfarin metabolism", "No change, because warfarin is eliminated unchanged by the kidney", "The INR falls because metronidazole binds warfarin in the gut"], "answer": 1, "why": "Metronidazole inhibits the CYP enzymes that clear warfarin, so warfarin accumulates and the INR climbs toward bleeding. Inducers such as rifampin do the opposite. Warfarin is hepatically metabolized, not renally excreted unchanged, and there is no gut-binding interaction.", "lesson": "pa-pharm-l02", "difficulty": 2 },
+    { "id": "pa-pharm-q006", "q": "A 24-year-old on combined oral contraceptives is started on rifampin for tuberculosis exposure. What counseling is required?", "choices": ["Her contraceptive level will rise, so the dose should be reduced", "Rifampin has no interaction with hormonal contraception", "Rifampin induces CYP enzymes, lowering contraceptive levels, so a backup method is needed", "She should stop rifampin during the contraceptive cycle"], "answer": 2, "why": "Rifampin is a powerful CYP inducer. It speeds the metabolism of estrogen and progestin, lowering levels enough to cause contraceptive failure, so backup contraception is required. Inducers lower, not raise, the affected drug, and stopping tuberculosis therapy is never the answer.", "lesson": "pa-pharm-l02", "difficulty": 2 },
+    { "id": "pa-pharm-q007", "q": "A drug has a half-life of 6 hours. Approximately how long after the last dose is it considered essentially eliminated?", "choices": ["6 hours", "12 hours", "18 hours", "24 to 30 hours"], "answer": 3, "why": "Four to five half-lives remove roughly 94% to 97% of a drug, so 4 to 5 times 6 hours is 24 to 30 hours. One half-life removes only 50%, two removes 75%, and three removes about 87.5%, none of which counts as cleared.", "lesson": "pa-pharm-l02", "difficulty": 1 },
+    { "id": "pa-pharm-q008", "q": "A patient in status epilepticus receives fosphenytoin 20 mg PE/kg followed by a much smaller twice-daily dose. Which principle explains the two different doses?", "choices": ["The loading dose fills the volume of distribution at once; the maintenance dose replaces what clearance removes", "The loading dose is larger because seizures increase drug metabolism tenfold", "The maintenance dose is smaller to avoid allergic sensitization", "The loading dose compensates for poor absorption of the first dose"], "answer": 0, "why": "Without a load, therapeutic levels would take four to five half-lives to arrive, which a seizing brain cannot wait for. The load is sized to volume of distribution and the maintenance dose to clearance. Seizures do not multiply metabolism, and allergy and absorption are not the issue with an IV drug.", "lesson": "pa-pharm-l02", "difficulty": 3 },
+    { "id": "pa-pharm-q009", "q": "After naloxone 0.4 mg IV, a heroin overdose patient becomes alert. Forty-five minutes later he is again unresponsive with a respiratory rate of 5. The best explanation is:", "choices": ["Naloxone produced a paradoxical opioid effect", "He took a second dose of opioid while in the department", "Naloxone's 30-90 minute duration is shorter than the opioid's, so the opioid re-bound the receptors", "Naloxone caused acute tolerance at the mu receptor"], "answer": 2, "why": "Naloxone is a short competitive antagonist. As it clears, opioid still circulating re-occupies mu receptors and apnea returns, which is why these patients need prolonged observation or an infusion. Naloxone has no agonist activity and does not induce tolerance in under an hour.", "lesson": "pa-pharm-l03", "difficulty": 2 },
+    { "id": "pa-pharm-q010", "q": "Fentanyl 100 mcg and morphine 10 mg produce comparable analgesia. Which statement is pharmacologically correct?", "choices": ["Fentanyl has greater efficacy than morphine", "Fentanyl is roughly 100 times more potent, but both are full agonists with similar efficacy", "Morphine is more potent because the dose is larger", "Potency and efficacy mean the same thing for opioids"], "answer": 1, "why": "Potency describes the dose required for a given effect, so fentanyl is about 100-fold more potent by weight. Efficacy describes the maximum achievable effect, and both are full mu agonists capable of relieving severe pain. A larger required dose means lower, not higher, potency.", "lesson": "pa-pharm-l03", "difficulty": 3 },
+    { "id": "pa-pharm-q011", "q": "Which group of drugs is best described as having a narrow therapeutic index?", "choices": ["Digoxin, lithium, phenytoin, warfarin", "Amoxicillin, acetaminophen, loratadine, famotidine", "Albuterol, ipratropium, prednisone, montelukast", "Ondansetron, pantoprazole, docusate, simethicone"], "answer": 0, "why": "Narrow therapeutic index means the toxic level sits close to the effective level, so digoxin, lithium, phenytoin, and warfarin all require monitoring of levels or INR. The other listed drugs have wide margins and are not routinely level-monitored.", "lesson": "pa-pharm-l03", "difficulty": 1 },
+    { "id": "pa-pharm-q012", "q": "Stimulation of which receptor produces vasoconstriction and a rise in blood pressure?", "choices": ["Beta-2", "Muscarinic", "GABA-A", "Alpha-1"], "answer": 3, "why": "Alpha-1 receptors on vascular smooth muscle cause constriction, which is how phenylephrine and norepinephrine raise pressure. Beta-2 dilates vessels and bronchi, muscarinic activation slows the heart and increases secretions, and GABA-A activation sedates.", "lesson": "pa-pharm-l03", "difficulty": 1 },
+    { "id": "pa-pharm-q013", "q": "Order: hydromorphone 0.5 mg IV. The vial is labeled 2 mg/mL. What volume is correct?", "choices": ["0.25 mL", "0.5 mL", "1 mL", "4 mL"], "answer": 0, "why": "Volume equals dose divided by concentration: 0.5 mg divided by 2 mg/mL is 0.25 mL. Drawing 0.5 mL would deliver 1 mg, twice the order, and 1 mL would deliver 2 mg, a fourfold overdose of a drug five to seven times more potent than morphine.", "lesson": "pa-pharm-l04", "difficulty": 2 },
+    { "id": "pa-pharm-q014", "q": "A norepinephrine bag contains 4 mg in 250 mL. The physician wants 8 mcg/min. What is the pump rate?", "choices": ["8 mL/h", "15 mL/h", "30 mL/h", "60 mL/h"], "answer": 2, "why": "4 mg in 250 mL is 4,000 mcg per 250 mL, or 16 mcg/mL. At 8 mcg/min the patient needs 480 mcg/h, and 480 divided by 16 is 30 mL/h. The other options come from forgetting to convert minutes to hours or milligrams to micrograms.", "lesson": "pa-pharm-l04", "difficulty": 2 },
+    { "id": "pa-pharm-q015", "q": "What is the maintenance fluid rate for a 22 kg child using the 4-2-1 rule?", "choices": ["44 mL/h", "62 mL/h", "88 mL/h", "22 mL/h"], "answer": 1, "why": "4 mL/kg/h for the first 10 kg is 40, 2 mL/kg/h for the next 10 kg is 20, and 1 mL/kg/h for the remaining 2 kg is 2, totaling 62 mL/h. Multiplying weight by 2 or by 4 throughout ignores the tiered structure of the rule.", "lesson": "pa-pharm-l04", "difficulty": 2 },
+    { "id": "pa-pharm-q016", "q": "Which statement about concentrated potassium chloride is true?", "choices": ["It may be pushed if the patient has a central line", "It may be pushed over 5 minutes with continuous monitoring", "It may be pushed in cardiac arrest from hypokalemia", "It is never given by IV push and must be diluted and infused"], "answer": 3, "why": "Undiluted potassium chloride given by push causes immediate cardiac arrest, so the prohibition is absolute regardless of access, monitoring, or clinical urgency. It is infused diluted at roughly 10 mEq/h peripherally or up to 20 mEq/h centrally with cardiac monitoring.", "lesson": "pa-pharm-l04", "difficulty": 1 },
+    { "id": "pa-pharm-q017", "q": "A 19-year-old took an unknown number of acetaminophen tablets 5 hours ago and feels well with normal vital signs. The next step is:", "choices": ["Discharge with follow-up since she is asymptomatic", "Draw a 4-hour or later level, plot it on the nomogram, and start N-acetylcysteine if indicated", "Give activated charcoal only and observe for 1 hour", "Give naloxone and reassess"], "answer": 1, "why": "Acetaminophen poisoning is silent for about 24 hours while NAPQI destroys hepatocytes, and liver failure declares itself on day 3 or 4. A level drawn at 4 hours or later guides N-acetylcysteine, which is nearly fully protective within 8 hours. Charcoal alone is inadequate this late and naloxone is irrelevant.", "lesson": "pa-pharm-l05", "difficulty": 2 },
+    { "id": "pa-pharm-q018", "q": "A 72-year-old woman weighing 48 kg with a creatinine of 1.4 mg/dL needs an NSAID for musculoskeletal pain. If ketorolac is used, the appropriate IV dose is:", "choices": ["15 mg", "30 mg", "60 mg", "90 mg"], "answer": 0, "why": "Ketorolac is reduced to 15 mg IV when the patient is over 65, weighs less than 50 kg, or has renal impairment, and this patient meets all three criteria. Thirty milligrams is the standard adult dose, and 60 or 90 mg would be well outside any recommended range.", "lesson": "pa-pharm-l05", "difficulty": 2 },
+    { "id": "pa-pharm-q019", "q": "An order reads hydromorphone 2 mg IV for moderate pain in an opioid-naive 60 kg adult. The safest action is:", "choices": ["Administer it as written since it is a small number of milligrams", "Administer half and reassess in 5 minutes", "Clarify the order, because 2 mg of hydromorphone is roughly equivalent to 13 mg of morphine in an opioid-naive patient", "Substitute morphine 2 mg IV instead"], "answer": 2, "why": "Hydromorphone is five to seven times as potent as morphine, so 2 mg approximates 10 to 14 mg of morphine, a large dose for an opioid-naive patient and a well documented source of respiratory arrest. The milligram number looks small, which is exactly the trap. Substituting a drug independently is outside scope; the order must be clarified.", "lesson": "pa-pharm-l05", "difficulty": 3 },
+    { "id": "pa-pharm-q020", "q": "A 70 kg patient needs a laceration repaired with plain 1% lidocaine. What is the maximum volume that may be infiltrated?", "choices": ["10 mL", "15 mL", "22 mL", "31 mL"], "answer": 3, "why": "The plain lidocaine maximum is 4.5 mg/kg, so 70 kg allows 315 mg. A 1% solution is 10 mg/mL, so 315 mg is about 31 mL. Using the with-epinephrine limit of 7 mg/kg would allow more, and the smaller volumes reflect miscalculating the concentration.", "lesson": "pa-pharm-l05", "difficulty": 3 },
+    { "id": "pa-pharm-q021", "q": "A patient received hydromorphone 1 mg IV 10 minutes ago. An order now arrives for midazolam 2 mg IV for anxiety. The most important concern is:", "choices": ["Combined opioid and benzodiazepine effect markedly increases the risk of respiratory depression", "Midazolam will reverse the analgesic effect of the opioid", "The two drugs are physically incompatible in the same line", "Midazolam will prolong the QT interval"], "answer": 0, "why": "Opioids blunt the brainstem's response to carbon dioxide and benzodiazepines add central nervous system depression, so the combination depresses breathing far more than either alone and accounts for most fatal overdoses. Midazolam does not reverse analgesia or notably affect the QT interval.", "lesson": "pa-pharm-l06", "difficulty": 2 },
+    { "id": "pa-pharm-q022", "q": "Which patient should not receive succinylcholine?", "choices": ["A 30-year-old with a broken ankle", "A 45-year-old with a potassium of 6.2 mEq/L from missed dialysis", "A 25-year-old with acute asthma", "A 60-year-old on warfarin"], "answer": 1, "why": "Succinylcholine depolarizes muscle and releases potassium, raising it further and risking hyperkalemic cardiac arrest in a dialysis patient who is already at 6.2 mEq/L. Rocuronium is the alternative. Orthopedic injury, asthma, and anticoagulation are not contraindications to succinylcholine.", "lesson": "pa-pharm-l06", "difficulty": 2 },
+    { "id": "pa-pharm-q023", "q": "An unresponsive overdose patient has a heart rate of 130, hypotension, seizures, and a QRS of 145 ms. The most appropriate treatment is:", "choices": ["Flumazenil 0.2 mg IV", "Calcium chloride 1 g IV", "Sodium bicarbonate 1-2 mEq/kg IV", "Magnesium sulfate 2 g IV"], "answer": 2, "why": "This is tricyclic antidepressant toxicity: sodium channel blockade widens the QRS and causes seizures, tachycardia, and hypotension. A sodium load with alkalinization overcomes the blockade. Flumazenil can precipitate uncontrollable seizures in this setting, and calcium and magnesium do not reverse sodium channel blockade.", "lesson": "pa-pharm-l06", "difficulty": 2 },
+    { "id": "pa-pharm-q024", "q": "Thirty minutes after haloperidol 5 mg IM, a patient develops a painful spasm with the neck twisted to one side. The appropriate treatment is:", "choices": ["Another dose of haloperidol", "Naloxone 0.4 mg IV", "Flumazenil 0.2 mg IV", "Diphenhydramine 25-50 mg IV"], "answer": 3, "why": "This is an acute dystonic reaction from dopamine D2 blockade, treated with diphenhydramine or benztropine, both anticholinergics that restore the dopamine-acetylcholine balance. More haloperidol worsens it, and naloxone and flumazenil reverse opioids and benzodiazepines, neither of which is involved.", "lesson": "pa-pharm-l06", "difficulty": 1 },
+    { "id": "pa-pharm-q025", "q": "A 68-year-old with suspected bacterial meningitis is ordered ceftriaxone 2 g IV, vancomycin, and ampicillin. What does the ampicillin add?", "choices": ["Coverage for Listeria monocytogenes, which cephalosporins do not cover", "Coverage for MRSA", "Coverage for anaerobes", "Coverage for Pseudomonas"], "answer": 0, "why": "Listeria is a real cause of meningitis at the extremes of age and in immunocompromise, and no cephalosporin covers it, so ampicillin is added over 50 and under 1 month. Vancomycin is what covers resistant gram-positives including MRSA, and neither anaerobes nor Pseudomonas is the concern here.", "lesson": "pa-pharm-l07", "difficulty": 3 },
+    { "id": "pa-pharm-q026", "q": "Fifteen minutes into a vancomycin infusion a patient develops flushing and itching across the face and upper chest, with a blood pressure of 128/76 and clear lungs. The correct action is:", "choices": ["Give epinephrine 0.3 mg IM and stop vancomycin permanently", "Slow the infusion and give an antihistamine; this is a rate-related histamine reaction", "Switch immediately to a carbapenem", "Continue at the same rate and document a penicillin allergy"], "answer": 1, "why": "Vancomycin infusion reaction is direct, non-immune histamine release driven by infusion rate, and it resolves when the rate is slowed. It is not an allergy, so the drug is not permanently lost. Epinephrine is reserved for true anaphylaxis with airway or hemodynamic compromise, which is absent here.", "lesson": "pa-pharm-l07", "difficulty": 2 },
+    { "id": "pa-pharm-q027", "q": "Which antibiotic is most strongly associated with Clostridioides difficile colitis?", "choices": ["Nitrofurantoin", "Doxycycline", "Clindamycin", "Azithromycin"], "answer": 2, "why": "Clindamycin is the classic highest-risk agent, with fluoroquinolones and broad-spectrum cephalosporins close behind, because it devastates protective colonic anaerobes. Nitrofurantoin, doxycycline, and azithromycin disturb colonic flora considerably less.", "lesson": "pa-pharm-l07", "difficulty": 1 },
+    { "id": "pa-pharm-q028", "q": "A patient reports a penicillin allergy. Which detail most strongly supports a true IgE-mediated reaction?", "choices": ["Nausea with every dose as a child", "A cousin who cannot take penicillin", "A headache lasting a day after the first dose", "Hives and tongue swelling 20 minutes after a dose"], "answer": 3, "why": "Hives, angioedema, wheeze, or hypotension within an hour is the hallmark of IgE-mediated allergy. Nausea and headache are intolerances, and family history confers no allergy at all. The distinction matters because mislabeling pushes patients to broader, more toxic antibiotics.", "lesson": "pa-pharm-l07", "difficulty": 2 },
+    { "id": "pa-pharm-q029", "q": "On day 7 of IV heparin, a patient's platelets fall from 280,000 to 95,000 and she develops a new deep vein thrombosis. The correct action is:", "choices": ["Stop all heparin, including flushes, and start a non-heparin anticoagulant", "Increase the heparin rate because she is still clotting", "Transfuse platelets and continue heparin", "Stop heparin and start warfarin alone immediately"], "answer": 0, "why": "This is heparin-induced thrombocytopenia, an antibody reaction that activates platelets and causes thrombosis despite a falling count. Every heparin exposure must stop and an alternative anticoagulant such as argatroban is started. Platelet transfusion can fuel thrombosis, and starting warfarin alone during acute HIT risks limb gangrene.", "lesson": "pa-pharm-l08", "difficulty": 3 },
+    { "id": "pa-pharm-q030", "q": "A 62-year-old presents 2 hours after stroke symptom onset. Which history absolutely excludes thrombolysis?", "choices": ["Atrial fibrillation on apixaban held for 5 days", "Intracerebral hemorrhage 4 years ago", "Blood pressure 172/98 on arrival", "Diabetes with a glucose of 210 mg/dL"], "answer": 1, "why": "Any prior intracranial hemorrhage is an absolute, permanent contraindication because the vessel that bled once will bleed again with a lytic. Blood pressure only excludes above 185/110 and can be treated down, hyperglycemia is not a barrier, and a DOAC held long enough is not an absolute exclusion.", "lesson": "pa-pharm-l08", "difficulty": 2 },
+    { "id": "pa-pharm-q031", "q": "Which reversal agent matches its anticoagulant correctly?", "choices": ["Idarucizumab reverses rivaroxaban", "Protamine reverses warfarin", "Andexanet alfa reverses apixaban", "Vitamin K reverses dabigatran"], "answer": 2, "why": "Andexanet alfa is the specific antidote for factor Xa inhibitors such as apixaban and rivaroxaban. Idarucizumab reverses the thrombin inhibitor dabigatran, protamine reverses heparins, and vitamin K works only on warfarin by restoring vitamin K dependent factor synthesis.", "lesson": "pa-pharm-l08", "difficulty": 1 },
+    { "id": "pa-pharm-q032", "q": "A 54-year-old man with chest pain has a blood pressure of 138/82. He mentions taking sildenafil 6 hours ago. Nitroglycerin is ordered. The correct action is:", "choices": ["Give it, because his blood pressure is adequate", "Give half the dose sublingually", "Give it only if the pain score is above 7", "Hold it and alert the physician, because nitrates within 24 hours of sildenafil can cause profound hypotension"], "answer": 3, "why": "PDE-5 inhibitors and nitrates both elevate cyclic GMP, and together they can drop blood pressure catastrophically even from a normal starting point. The window is 24 hours for sildenafil and vardenafil and 48 hours for tadalafil. A starting pressure, a halved dose, or the pain score does not make it safe.", "lesson": "pa-pharm-l09", "difficulty": 2 },
+    { "id": "pa-pharm-q033", "q": "Which vasopressor is the recommended first-line agent in septic shock?", "choices": ["Norepinephrine", "Dopamine", "Dobutamine", "Phenylephrine"], "answer": 0, "why": "Norepinephrine provides strong alpha-1 vasoconstriction with modest beta-1 support and causes fewer arrhythmias than dopamine, making it the guideline first choice after fluid resuscitation. Dobutamine is an inotrope that can lower blood pressure, and phenylephrine is a narrow-indication pure vasoconstrictor.", "lesson": "pa-pharm-l09", "difficulty": 1 },
+    { "id": "pa-pharm-q034", "q": "Adenosine 6 mg is pushed slowly over 30 seconds through a hand IV for SVT with no effect. The most likely reason is:", "choices": ["The dose should have been 3 mg", "Its half-life is under 10 seconds, so a slow push through a distal vein is metabolized before it reaches the AV node", "Adenosine does not work on SVT", "The patient needed synchronized cardioversion first"], "answer": 1, "why": "Adenosine is destroyed by red cells and endothelium within seconds, so it must be pushed rapidly into a proximal vein with an immediate 20 mL flush to arrive as a bolus. The standard first dose is 6 mg, adenosine is the drug of choice for stable SVT, and cardioversion is reserved for instability.", "lesson": "pa-pharm-l09", "difficulty": 2 },
+    { "id": "pa-pharm-q035", "q": "A patient in diabetic ketoacidosis has a glucose of 620 mg/dL and a potassium of 3.0 mEq/L. Regarding the insulin drip:", "choices": ["Start it now, because the glucose is dangerously high", "Start it at double rate to clear ketones faster", "Hold insulin, give potassium and fluids first, because insulin will drive potassium even lower", "Give subcutaneous glargine instead of the drip"], "answer": 2, "why": "Insulin shifts potassium into cells, so starting it below about 3.3 mEq/L can precipitate lethal arrhythmia. Fluids and potassium replacement come first while insulin waits. Doubling the rate compounds the risk, and long-acting subcutaneous insulin is neither absorbed reliably nor titratable in DKA.", "lesson": "pa-pharm-l10", "difficulty": 3 },
+    { "id": "pa-pharm-q036", "q": "A child with a barking cough and stridor at rest is diagnosed with croup. Which treatment pair is correct?", "choices": ["Albuterol and ipratropium", "Ceftriaxone and dexamethasone", "Magnesium and racemic epinephrine", "Dexamethasone 0.6 mg/kg and nebulized racemic epinephrine"], "answer": 3, "why": "Croup is subglottic swelling from a viral infection, so treatment is a steroid to reduce edema plus nebulized racemic epinephrine to constrict mucosal vessels for immediate relief, followed by observation for rebound stridor. Bronchodilators treat lower airway constriction, and antibiotics do not treat a viral process.", "lesson": "pa-pharm-l10", "difficulty": 2 },
+    { "id": "pa-pharm-q037", "q": "A nurse asks you to help her find a large vein before giving IV promethazine. The reason large-vein administration matters is:", "choices": ["Extravasation of promethazine causes severe tissue necrosis that can lead to amputation", "Promethazine crystallizes in small veins and clogs the catheter", "Small veins absorb promethazine too quickly", "Promethazine is only effective when given centrally"], "answer": 0, "why": "Promethazine is intensely caustic; leakage into tissue produces necrosis and gangrene, so it is diluted and given into a large, freely running line, or avoided in favor of ondansetron or metoclopramide. Vein size does not change absorption speed or efficacy for an IV drug.", "lesson": "pa-pharm-l10", "difficulty": 2 }
+  ],
+  "scenarios": []
+}

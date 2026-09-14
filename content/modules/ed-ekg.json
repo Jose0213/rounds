@@ -1,0 +1,518 @@
+{
+  "schema": 1,
+  "id": "ed-ekg",
+  "track": "edtech",
+  "title": "ECG Acquisition & Rhythms",
+  "short": "ECG",
+  "summary": "How to get a clean, correctly placed 12-lead in under ten minutes, how to spot your own mistakes on the paper, and which rhythms on the monitor mean you stop what you are doing and get help.",
+  "lessons": [
+    {
+      "id": "ed-ekg-l01",
+      "title": "What an ECG actually measures",
+      "minutes": 6,
+      "body": "## A picture of voltage, not of pumping\n\nHeart muscle cells sit at rest with a negative charge inside and a positive charge outside. When a cell fires, the charge flips across its membrane (depolarization), and the flip spreads cell to cell like a wave through a stadium crowd. The electrocardiogram (ECG) is a voltmeter taped to the skin, drawing that wave as it travels.\n\nElectricity moving toward a positive electrode draws an upward bump. Electricity moving away draws a downward one. That is the entire rule behind every squiggle you will ever read.\n\nThe wave is the *signal to squeeze*, not the squeeze itself. Contraction (mechanical activity) follows a fraction of a second later, and only if the muscle is healthy, full of blood, and getting oxygen.\n\n## Why that gap matters more than anything else\n\nA heart can fire a perfect-looking electrical pattern and pump nothing at all. That is pulseless electrical activity (PEA) — an organized rhythm on the monitor with no pulse at the wrist or the neck. It is a cardiac arrest, and the monitor will not tell you. Only your fingers will.\n\n> **Key:** The monitor shows electricity. The pulse shows blood flow. Never treat a number on a screen as proof the patient is alive.\n\nIt runs the other way too. A patient can be talking to you while the monitor screams ventricular tachycardia because a lead wire is flapping against the rail. Every monitor finding gets matched against the actual human before anyone acts.\n\n## The two jobs the machine does\n\nA 12-lead ECG is a snapshot, about `10 seconds` long, printed on paper. It looks at the heart from 12 electrical angles, which is what lets it localize damage: this wall, not that wall. It is the test for chest pain.\n\nContinuous monitoring (telemetry) is a movie from 1, 3, or 5 angles, running for hours. It is good at rhythm and poor at detail. You cannot diagnose a heart attack from the monitor screen.\n\n> **On shift:** When a nurse says get a 12-lead, she wants printed paper in her hand, not a look at the monitor.\n\n## What the ECG cannot tell you\n\nIt cannot tell you the blood pressure. It cannot tell you whether the heart is contracting. It cannot rule out a heart attack — roughly a third of heart attacks show nothing on the first tracing, which is exactly why serial ECGs and repeat troponin exist.\n\nAnd it will confidently print an interpretation across the top of the page. That line is software guessing from voltages. It misses things and it invents things. It is a hint for the provider, never a diagnosis, and it never replaces putting the tracing in front of a human being.\n\n> **Trap:** The machine said normal sinus rhythm is not a reason to put a chest-pain ECG in a pile. A person with a license reads every one.",
+      "keyPoints": [
+        "The ECG records electrical activity only; contraction is a separate event that may or may not follow.",
+        "An organized rhythm with no pulse is PEA — a cardiac arrest you can only find by touching the patient.",
+        "A 12-lead is a 10-second snapshot from 12 angles; the monitor is a rhythm movie from 1 to 5 angles.",
+        "About one third of heart attacks look normal on the first ECG, so serial tracings matter.",
+        "The machine's printed interpretation is a hint, not a diagnosis."
+      ],
+      "checks": [
+        {
+          "q": "The monitor shows an organized rhythm at 68. The patient is unresponsive and you feel no carotid pulse. What is happening?",
+          "choices": ["The monitor is malfunctioning", "Pulseless electrical activity — a cardiac arrest", "Normal sinus rhythm; recheck in two minutes", "Ventricular fibrillation"],
+          "answer": 1,
+          "why": "Electrical activity does not prove contraction. An organized rhythm with no pulse is PEA and needs immediate CPR."
+        },
+        {
+          "q": "How many electrical views does a standard 12-lead give, and how long is the recording?",
+          "choices": ["3 views over 6 seconds", "5 views, continuous", "12 views over about 10 seconds", "12 views over 60 seconds"],
+          "answer": 2,
+          "why": "A 12-lead is a roughly 10-second snapshot from 12 angles, which is what lets it localize injury to a specific wall."
+        },
+        {
+          "q": "The machine prints normal ECG on a diaphoretic chest-pain patient. What does that mean?",
+          "choices": ["The patient can go to the waiting room", "A provider still reads it; software misses real infarcts", "The troponin can be cancelled", "Repeat tracings are unnecessary"],
+          "answer": 1,
+          "why": "The printed interpretation is software guessing from voltages. It misses infarcts and invents them, so a provider reads every chest-pain tracing."
+        }
+      ]
+    },
+    {
+      "id": "ed-ekg-l02",
+      "title": "Skin prep: where the signal is won or lost",
+      "minutes": 5,
+      "body": "## The signal has to cross your skin\n\nThe voltage your heart makes is tiny — about one one-thousandth of a volt (`1 mV`) by the time it reaches the skin. Between that signal and the machine sits dead skin, oil, sweat, lotion and hair. Each one adds electrical resistance (impedance), and resistance turns a clean waveform into a fuzzy one.\n\nEvery prep step exists to lower impedance. That is the whole theory.\n\n## The prep, in order\n\n1. Expose the area and look at it. You cannot place what you cannot see.\n2. Dry the skin. Sweat is the single most common reason electrodes will not stick and baselines will not sit still.\n3. Clip hair — clip, do not shave. A razor makes micro-cuts and infection risk in a patient who may get blood thinners within the hour. Clippers just remove the standoff between gel and skin.\n4. Wipe with alcohol to strip skin oil, then **let it dry completely**. Wet alcohol under an electrode conducts across the skin surface and shorts the signal, giving you a noisy, drifting tracing.\n5. Lightly abrade the dry skin: a few passes with the rough patch on the electrode wrapper, gauze, or a prep pad. You are removing dead cells, not making the patient bleed.\n6. Open a sealed pack of fresh electrodes and look at the gel. The gel is a conductive sponge. If it is dry, hard, or the pack has been open in a drawer for a week, throw it out.\n7. Place gel-side down and press the **edges** first, working around the rim. Pressing the center squeezes gel out from under the sensor and leaves a dry spot right where the signal is read.\n\n> **Key:** Dry skin, clean skin, fresh gel, press the edges. Four habits fix most of the bad tracings in an emergency department.\n\n## What bad prep looks like on paper\n\nA baseline that drifts up and down in time with breathing usually means a loose electrode or damp skin under it. A tracing that is fuzzy and thick in one lead only points at the one electrode that lead uses. Signal that vanishes and alarms lead off means no contact at all.\n\n> **Trap:** Re-sticking the same electrode after it falls off almost never works. The gel has picked up skin oil and lint and the adhesive is spent. Use a new one.\n\n## Special situations\n\nDiaphoretic patients — the exact patients you are getting an ECG on — need the skin dried and sometimes a tincture-of-benzoin type skin prep, per department stock. Many departments keep a towel on the machine for this.\n\nFor a burn, rash, wound or dressing, move the electrode a short distance onto intact skin rather than onto damaged tissue, and tell the provider you moved it. On a hairy chest, clip a patch just large enough for the electrode; do not clip the whole chest.\n\n> **On shift:** Restock the machine at the start of every shift — electrodes, paper, untangled cables. The ten minutes you have for a STEMI tracing disappears fast when you are hunting for a fresh pack.",
+      "keyPoints": [
+        "Prep exists to lower skin impedance so a roughly 1 mV signal reaches the machine cleanly.",
+        "Dry the skin first: sweat is the number one cause of failed electrodes and wandering baselines.",
+        "Clip hair, never shave; let alcohol dry completely before placing the electrode.",
+        "Press the edges of the electrode, not the center, so gel stays under the sensor.",
+        "A fallen electrode gets replaced from a sealed pack, never re-stuck."
+      ],
+      "checks": [
+        {
+          "q": "Why does skin prep matter electrically?",
+          "choices": ["It makes the electrode stick longer", "It lowers skin impedance so the heart's roughly 1 mV signal reaches the machine cleanly", "It increases the voltage the heart produces", "It sets the machine's calibration"],
+          "answer": 1,
+          "why": "Dead skin, oil, sweat and hair all add resistance between the heart's tiny signal and the electrode. Prep removes that resistance; it does not change the heart or the machine."
+        },
+        {
+          "q": "Where should you press when applying an electrode?",
+          "choices": ["The center, firmly", "The edges, working around the rim", "Nowhere — let it adhere on its own", "Press, then peel back to check the gel"],
+          "answer": 1,
+          "why": "Pressing the center pushes gel out from under the sensor and leaves a dry spot exactly where the signal is read."
+        },
+        {
+          "q": "An electrode falls off a sweaty chest. What do you do?",
+          "choices": ["Re-stick the same one", "Tape it back down", "Dry the skin and use a fresh electrode from a sealed pack", "Move it to the opposite side of the chest"],
+          "answer": 2,
+          "why": "Used gel picks up oil and lint and the adhesive is spent. Dry the skin first, because sweat caused the failure, then place a new electrode at the correct landmark."
+        }
+      ]
+    },
+    {
+      "id": "ed-ekg-l03",
+      "title": "Limb leads and Einthoven's triangle",
+      "minutes": 6,
+      "body": "## Ten electrodes, twelve views\n\nA 12-lead ECG uses only 10 electrodes: four on the limbs and six on the chest. A lead is not a wire — it is a *view*, a comparison between electrodes. The machine does the math and produces 12 views from 10 stickers.\n\nThree of those views come from Einthoven's triangle. Picture a triangle with corners at the right arm, the left arm and the left leg, with the heart in the middle.\n\n- Lead I looks from right arm to left arm, across the chest.\n- Lead II looks from right arm to left leg, down and to the left.\n- Lead III looks from left arm to left leg.\n\nLead II runs almost exactly along the normal path of the heart's electrical wave, which starts at the sinus node in the upper right and travels down and left. That is why lead II gives the tallest, clearest P waves and is the default rhythm strip everywhere.\n\nThe augmented leads — aVR, aVL and aVF — are calculated from those same three electrodes, giving views toward the right shoulder, the left shoulder and the feet.\n\n## Placing them\n\n| Electrode | Color (AHA) | Position |\n|---|---|---|\n| RA | White | Right arm, wrist or forearm |\n| LA | Black | Left arm, wrist or forearm |\n| LL | Red | Left leg, ankle or lower leg |\n| RL | Green | Right leg, ankle or lower leg |\n\nStandard diagnostic placement is **distal**: on the wrists and ankles, or at minimum the forearm and lower leg, on flat non-bony tissue. The colors run clockwise from the right arm: white, black, red, green.\n\nThe right leg electrode records nothing you will ever read. It is the **ground reference** — it gives the machine a baseline to subtract noise against. Skip it or let it fall off and the whole tracing turns to hash.\n\n> **Key:** Limb electrodes belong on limbs for a diagnostic 12-lead. Green is the ground, not a view.\n\n## Torso placement and why it changes the tracing\n\nIf the patient is shivering, tremoring, has an amputation, or is being moved constantly, limb electrodes can be moved onto the torso — shoulders and lower abdomen or hips. This is Mason-Likar placement, and it is what nearly every continuous monitor uses.\n\nIt works for rhythm. It is **not** interchangeable with a diagnostic 12-lead: torso placement shifts the electrical axis, can create or erase small Q waves, and can produce ST changes that were not there. A cardiologist comparing today's torso tracing to last year's limb tracing may see a change that is pure geometry.\n\n> **Trap:** Never mix placements — arms on the wrists with legs on the abdomen gives you a tracing that matches nothing. Pick one scheme and use it for all four.\n\n> **On shift:** If you must use torso placement for a diagnostic ECG, write it on the paper. Limb leads on torso, patient tremoring saves someone an unnecessary repeat or an unnecessary cath lab activation.\n\n## Amputations, casts and dressings\n\nPlace on the remaining stump or as distally as the limb allows, then mirror that position on the opposite side so left and right are symmetric. For a cast or a dressing, go above it on the same limb and match the other side. Symmetry preserves the triangle; a lopsided placement distorts every calculated lead.",
+      "keyPoints": [
+        "Ten electrodes produce twelve views; a lead is a comparison, not a wire.",
+        "Einthoven's triangle: I is RA to LA, II is RA to LL, III is LA to LL.",
+        "Lead II parallels normal depolarization, so it is the default rhythm lead.",
+        "Green (right leg) is the ground reference and contributes no readable view.",
+        "Mason-Likar torso placement is fine for monitoring but alters a diagnostic tracing and must be labeled."
+      ],
+      "checks": [
+        {
+          "q": "Which electrode is the ground reference?",
+          "choices": ["Right arm (white)", "Left leg (red)", "Left arm (black)", "Right leg (green)"],
+          "answer": 3,
+          "why": "The right leg electrode contributes no readable view. It gives the machine a reference to subtract interference against, which is why a missing green lead ruins the whole tracing."
+        },
+        {
+          "q": "A diagnostic 12-lead was taken with limb electrodes on the shoulders and hips. What must you do?",
+          "choices": ["Nothing, it is equivalent", "Label the tracing as torso placement", "Discard the tracing", "Move the chest leads to the right side"],
+          "answer": 1,
+          "why": "Mason-Likar placement shifts the axis and can create or erase Q waves and ST changes. Labeling prevents someone from comparing it to a standard tracing as if the two were identical."
+        },
+        {
+          "q": "Which pair of electrodes forms lead II?",
+          "choices": ["Right arm and left arm", "Right arm and left leg", "Left arm and left leg", "Left leg and right leg"],
+          "answer": 1,
+          "why": "Lead II runs from the right arm to the left leg, which is almost exactly the direction the heart's wave travels — hence the tall P waves."
+        }
+      ]
+    },
+    {
+      "id": "ed-ekg-l04",
+      "title": "The chest leads: counting ribs",
+      "minutes": 7,
+      "body": "## Why placement is the whole test\n\nThe six chest leads (precordial leads, V1 through V6) sit directly over the heart, and each one reports on a different piece of it. Move one by a single rib space and you have changed which piece of muscle it is describing. This is the most common way a technically successful ECG lies.\n\n## Find the landmark first\n\nDo not guess from the nipple line or the collarbone. Find bone.\n\n1. Run your fingers down from the notch at the top of the sternum until you feel a ridge across it. That is the sternal angle (angle of Louis).\n2. The **second rib** attaches right there. Slide your finger just off the sternum and down over that rib into the space below it — the second intercostal space (ICS).\n3. Walk down: third ICS, fourth ICS. Keep your finger there.\n\n## The six positions\n\n| Lead | Position |\n|---|---|\n| V1 | 4th ICS, right sternal border |\n| V2 | 4th ICS, left sternal border |\n| V3 | Midway between V2 and V4 |\n| V4 | 5th ICS, midclavicular line |\n| V5 | Anterior axillary line, level with V4 |\n| V6 | Midaxillary line, level with V4 |\n\nPlace V1 and V2 first, then V4, then drop V3 in between. V5 and V6 are placed at V4's horizontal level, not by counting ribs again — ribs slope downward and around, so counting will put V5 and V6 too low.\n\n> **Key:** V5 and V6 follow V4's level, not another rib count.\n\n## Breasts, large chests, small chests\n\nPlace V3 through V6 **under** breast tissue, against the chest wall, not on top of the breast. Tissue between the electrode and the heart weakens the signal and can mimic poor R wave progression. Lift the breast, place the electrode, let it rest. Tell the patient what you are doing and why, keep them covered everywhere you are not working, and offer a chaperone per department policy.\n\nOn a very large chest the landmarks still exist, they are just deeper. Take the extra fifteen seconds to find bone. On a child the same landmarks apply; the spacing is simply smaller, and pediatric tracings often add `V4R` or substitute `V3R` for V3, per department protocol.\n\n## When the standard six are not enough\n\n**Right-sided ECG.** If the inferior leads (II, III, aVF) show ST elevation, the provider may want a right-sided tracing to look for right ventricular involvement. The key position is **V4R** — the mirror of V4 on the right chest, 5th ICS, right midclavicular line. A full right-sided study mirrors all six positions across. Label the tracing clearly as right-sided or the next reader will think the patient has dextrocardia.\n\n**Posterior leads.** V7, V8 and V9 wrap around the left side at the V6 horizontal level: V7 at the posterior axillary line, V8 at the tip of the left scapula, V9 just left of the spine. They look at the back wall of the heart, which the standard twelve views cover poorly.\n\n> **On shift:** Serial ECGs are compared against each other. Mark the V positions on the skin with a marker so the next tracing comes from the exact same spots. A new ST change that is really a moved electrode wastes a cath lab activation.",
+      "keyPoints": [
+        "Find the sternal angle, step onto the 2nd rib, then count down to the 4th intercostal space.",
+        "V1 and V2 sit at the 4th ICS at the right and left sternal borders; V4 at the 5th ICS midclavicular line; V3 between V2 and V4.",
+        "V5 (anterior axillary) and V6 (midaxillary) sit at V4's horizontal level, not a new rib count.",
+        "Chest electrodes go under breast tissue, against the chest wall.",
+        "V4R is the 5th ICS right midclavicular line for suspected right ventricular infarct; V7 to V9 look at the posterior wall."
+      ],
+      "checks": [
+        {
+          "q": "You have placed V1, V2 and V4. Where does V3 go?",
+          "choices": ["5th ICS anterior axillary line", "Midway between V2 and V4", "3rd ICS left sternal border", "Midway between V4 and V5"],
+          "answer": 1,
+          "why": "V3 is defined as the midpoint between V2 and V4, which is exactly why those two go on first."
+        },
+        {
+          "q": "V5 and V6 are placed at what vertical level?",
+          "choices": ["The 6th intercostal space", "The 5th intercostal space, counted again", "The same horizontal level as V4", "Wherever the ribs allow"],
+          "answer": 2,
+          "why": "Ribs slope downward as they wrap around the chest, so counting them laterally drops V5 and V6 too low. They follow V4's horizontal line."
+        },
+        {
+          "q": "Where does V4R go?",
+          "choices": ["5th ICS, right midclavicular line", "4th ICS, right sternal border", "5th ICS, left midclavicular line", "Below the right scapula"],
+          "answer": 0,
+          "why": "V4R is the mirror image of V4 on the right chest. The 4th ICS right sternal border is ordinary V1, and the left midclavicular position is ordinary V4."
+        }
+      ]
+    },
+    {
+      "id": "ed-ekg-l05",
+      "title": "Artifact and reading your own mistakes",
+      "minutes": 7,
+      "body": "## The tracing tells on you\n\nEvery bad ECG has a signature. Learn four of them and you will fix most problems in under a minute instead of reprinting five tracings and hoping.\n\n## Limb lead reversal\n\nSwapping the right arm and left arm electrodes is the classic. The machine is now looking backwards, and the paper shows it:\n\n- Lead I is upside down — P wave and QRS both point down.\n- aVR, which should always be negative, becomes upright.\n- Leads I and aVL look like leads II and III traded places.\n\n> **Key:** A globally upright aVR means a reversed lead until proven otherwise. aVR looks toward the right shoulder, away from the direction the heart depolarizes, so a normal aVR points down.\n\nRight arm and right leg reversal produces a nearly flat lead II. A left leg swap gives odd, small complexes in the inferior leads. When something looks anatomically impossible, check the wires before you believe the paper.\n\n## V1 and V2 placed too high\n\nThis is the quiet one, because the tracing looks clean. Electrodes placed in the 2nd or 3rd intercostal space instead of the 4th produce:\n\n- an rSr' shape in V1 and V2 that mimics incomplete right bundle branch block or a Brugada pattern,\n- inverted P waves in V1 and V2,\n- fake loss of R wave progression and pseudo-anterior ST changes.\n\nPeople have been taken to the cath lab for an electrode placed two inches too high. Count the ribs.\n\n## Baseline wander\n\nA slow drift of the whole tracing up and down, usually in time with breathing. Causes: a loose or dry electrode, damp or oily skin, tension on a cable, or a patient who is talking and moving. Fix the electrode, dry the skin, and drape the cables so they lie slack across the bed instead of pulling.\n\n## Sixty-cycle interference\n\nA perfectly regular, high-frequency fuzz thickening the baseline — 60 identical oscillations per second, from the building's alternating-current power. The line looks like a hairy caterpillar.\n\nCauses: an IV pump, warming blanket, bed motor or phone charger too close, a frayed cable, or leads twisted around a power cord. Fix: unplug non-essential devices near the patient, separate the ECG cable from power cords, untangle the lead wires, and confirm the machine's ground is intact.\n\n## Muscle tremor\n\nFine, fast, irregular spikes, from shivering, a movement disorder, pain, or a patient tensing to hold their arms up. Warm the patient with a blanket, rest the arms on the bed or a pillow so they are not held against gravity, ask them to relax and not talk, and if tremor persists move the limb electrodes proximally toward the shoulders and hips — then label the tracing.\n\n## Filters and the artifact-or-real question\n\nMost machines offer a low-pass filter at `40 Hz` or `150 Hz`. `150 Hz` is the diagnostic standard and preserves fine ST and QRS detail. `40 Hz` cleans the picture, but it also shaves real detail and can attenuate or distort ST findings. Use it only when noise makes a tracing unreadable, and write on the tracing that you did.\n\n> **Trap:** Artifact never has a pulse. Chaos in one lead while the others stay clean, in a patient who is talking to you, is artifact. The same chaos in every lead, in a patient who is unresponsive, is real. Look at the patient, feel a pulse, then decide.\n\n## Positioning\n\nSupine is standard. If the patient cannot lie flat, use semi-Fowler's and write the position on the tracing, because posture changes the heart's position in the chest and therefore the tracing. Arms relaxed at the sides, legs uncrossed, no talking for the ten seconds of recording.",
+      "keyPoints": [
+        "Upright aVR with an inverted lead I means right arm and left arm electrodes are reversed.",
+        "V1 and V2 placed too high fake an rSr' pattern, invert P waves, and mimic anterior ST changes.",
+        "Wandering baseline means loose or damp electrodes; 60-cycle fuzz means nearby AC equipment or tangled cables.",
+        "150 Hz is the diagnostic filter; 40 Hz is a labeled last resort that can hide ST findings.",
+        "Artifact has a pulse and usually lives in one lead. Look at the patient before believing a lethal rhythm."
+      ],
+      "checks": [
+        {
+          "q": "Lead I is inverted and aVR is upright on an otherwise well patient. What is the most likely cause?",
+          "choices": ["Acute lateral infarction", "Right arm and left arm electrode reversal", "Dextrocardia", "60-cycle interference"],
+          "answer": 1,
+          "why": "An upright aVR is the fingerprint of a limb lead reversal. Infarction does not flip aVR, dextrocardia is far rarer and also changes the chest lead progression, and interference thickens the baseline without inverting complexes."
+        },
+        {
+          "q": "A perfectly regular fuzzy thickening of the baseline indicates:",
+          "choices": ["Muscle tremor", "A loose electrode", "60-cycle AC interference", "The wrong paper speed"],
+          "answer": 2,
+          "why": "Perfect regularity at high frequency is building power at 60 cycles per second. Tremor is irregular, a loose electrode causes drift or lead-off, and paper speed changes complex width."
+        },
+        {
+          "q": "Chaotic deflections appear in one lead only while the patient talks to you with a strong radial pulse. What is it?",
+          "choices": ["Ventricular fibrillation", "Ventricular tachycardia", "Artifact", "Asystole"],
+          "answer": 2,
+          "why": "A perfusing, talking patient cannot be in VF or pulseless VT, and single-lead chaos with clean neighboring leads is the classic artifact pattern. Fix the electrode and tell the nurse."
+        }
+      ]
+    },
+    {
+      "id": "ed-ekg-l06",
+      "title": "Continuous monitoring: 3-lead and 5-lead",
+      "minutes": 5,
+      "body": "## What continuous monitoring is for\n\nTelemetry answers one question well: what is the rhythm doing right now, minute to minute. It is not a diagnostic study. There are few wires, the placement is on the torso, and the filters are set to keep the picture stable rather than precise.\n\n## The 3-lead setup\n\nThree wires, colored white, black and red in the American (AHA) scheme:\n\n- **White** — right upper chest, below the right clavicle.\n- **Black** — left upper chest, below the left clavicle.\n- **Red** — left lower chest or abdomen, below the ribs on the left.\n\nTwo mnemonics carry the whole thing: **white on the right**, and **smoke over fire** — black (smoke) sits above red (fire) on the left side.\n\nWith those three you can display lead I, II or III. Choose **lead II** for routine rhythm monitoring: its axis matches the heart's normal electrical direction, so P waves are tallest and easiest to count.\n\n## The 5-lead setup\n\nFive wires: the same four corners plus one chest lead.\n\n| Wire | Position |\n|---|---|\n| White | Right upper chest |\n| Black | Left upper chest |\n| Green | Right lower chest or abdomen |\n| Red | Left lower chest or abdomen |\n| Brown | Chest electrode, usually the V1 position |\n\nMnemonic for the corners: **snow over grass** on the right (white over green), **smoke over fire** on the left (black over red). Brown goes in the middle, on the chest, most often at the V1 position — 4th ICS, right sternal border.\n\nFive-lead lets you watch two leads at once: commonly II for rhythm and the brown V lead for ST changes and for telling wide rhythms apart.\n\n> **Key:** Monitor electrodes go on flat chest wall and bone, never on breast tissue or over a big muscle belly. Muscle makes artifact; bone stays still.\n\n## Keeping it working\n\nChange monitoring electrodes at least every `24 hours`, and any time the gel is dry, an edge is curling, or the alarm says lead off. Gel dries and adhesive lifts; both show up as false alarms at three in the morning.\n\nRotate the site slightly when you change them to spare the skin, and document skin checks on long stays. Drape the cable over the patient's shoulder or clip the lead wires to the gown so a roll in bed does not rip electrodes off.\n\n> **On shift:** Every false alarm trains the staff to trust the monitor a little less. Replacing a curling electrode is patient safety work, not housekeeping.\n\n## What you cannot do from the monitor\n\nYou cannot call a heart attack, measure a QT interval for a drug decision, or diagnose a bundle branch block from a 3-lead strip. Every one of those needs a 12-lead from standard placement.\n\nIf something on the monitor looks new — wide complexes, a run of fast beats, ST elevation on the display — the correct sequence never changes: look at the patient, feel a pulse, tell the nurse, get a 12-lead.",
+      "keyPoints": [
+        "3-lead: white right upper, black left upper, red left lower. White on the right, smoke over fire.",
+        "5-lead adds green (right lower) and brown, the chest lead, usually at the V1 position.",
+        "Lead II is the default rhythm lead because its axis gives the clearest P waves.",
+        "Change monitoring electrodes at least every 24 hours, sooner if gel dries or edges curl.",
+        "The monitor prompts; it never diagnoses. New findings get a 12-lead."
+      ],
+      "checks": [
+        {
+          "q": "In a 3-lead setup, where does the black electrode go?",
+          "choices": ["Right upper chest", "Left upper chest", "Left lower abdomen", "The V1 position"],
+          "answer": 1,
+          "why": "Smoke over fire: black sits above red on the left side, so black is the left upper chest and red is the left lower chest or abdomen."
+        },
+        {
+          "q": "Why is lead II the default monitoring lead?",
+          "choices": ["It uses the fewest electrodes", "Its axis matches normal depolarization, so P waves are tallest", "It shows ST elevation best", "It is least affected by motion"],
+          "answer": 1,
+          "why": "Lead II runs right arm to left leg, nearly parallel to the heart's normal wave, which produces the clearest P waves — the key to naming a rhythm."
+        },
+        {
+          "q": "Which of these can a 3-lead monitor NOT do?",
+          "choices": ["Count a heart rate", "Identify atrial fibrillation", "Diagnose a STEMI", "Show a pacemaker spike"],
+          "answer": 2,
+          "why": "Localizing ST elevation to a wall requires all twelve views from standard placement. A 3-lead strip handles rate, rhythm and pacer spikes fine."
+        }
+      ]
+    },
+    {
+      "id": "ed-ekg-l07",
+      "title": "Paper, boxes, rate, and the waveform",
+      "minutes": 7,
+      "body": "## The paper is a ruler\n\nECG paper runs at a standard speed of `25 mm/s`. That turns horizontal distance into time:\n\n- one small box = `1 mm` = `0.04 s`\n- one big box = 5 small boxes = `5 mm` = `0.20 s`\n- five big boxes = `1 s`\n- thirty big boxes = `6 s`\n\nVertically the paper measures voltage at a standard calibration of `10 mm/mV`: ten small boxes tall equals one millivolt. The machine prints a small rectangular calibration pulse at the start of each tracing to prove it. If that pulse is half height, the machine is running at half standard and every amplitude on the page — including ST elevation — is half of what it truly is.\n\n> **Trap:** Check the calibration pulse and the printed paper speed before comparing two tracings. A tracing run at `50 mm/s` looks like a bradycardia that is not there.\n\n## Counting the rate\n\n**The 300 method** works on regular rhythms only. Find a QRS that lands on a heavy line, then count big boxes to the next QRS using the sequence **300, 150, 100, 75, 60, 50**. One big box apart is 300 beats per minute, two is 150, three is 100, four is 75, five is 60, six is 50. Land between two and estimate between them.\n\n**The 6-second method** works on anything and is required for irregular rhythms. Count the QRS complexes in a 6-second strip — 30 big boxes, and most machines print `3 s` tick marks along the top — and multiply by 10.\n\nUse the 6-second method any time the rhythm is irregular. Atrial fibrillation has no consistent R-to-R interval, so the 300 method gives a different answer depending on which two beats you pick.\n\n## The waveform, part by part\n\n**P wave** — the atria depolarizing. Small, rounded, upright in lead II, one per QRS in a normal rhythm.\n\n**PR interval** — start of P to start of QRS. Normal `0.12-0.20 s`, 3 to 5 small boxes. It measures the deliberate delay at the AV node, the pause that lets the atria finish topping off the ventricles. Long means a conduction block; short can mean a bypass tract.\n\n**QRS complex** — the ventricles depolarizing. Normal is under `0.12 s`, under 3 small boxes. Narrow means the impulse came down the normal wiring from above. Wide means it started in the ventricle or took an abnormal path.\n\n**ST segment** — the flat stretch from the end of the QRS to the start of the T wave, while the ventricles are contracting. It should sit level with the baseline. Elevation or depression here is the injury signal.\n\n**T wave** — the ventricles repolarizing, resetting electrically for the next beat. Usually upright and slightly asymmetric.\n\n**QT interval** — start of QRS to end of T: the whole ventricular cycle. Roughly `0.36-0.44 s` at normal rates, and it shortens as the heart rate rises. Drugs and electrolyte problems stretch it, and a very long QT can collapse into a lethal rhythm.\n\n> **Key:** Narrow QRS means the beat came from above the ventricles. Wide QRS means ventricular origin or abnormal conduction — and wide plus fast plus a sick-looking patient is the emergency.",
+      "keyPoints": [
+        "25 mm/s: one small box is 0.04 s, one big box is 0.20 s, 30 big boxes are 6 seconds.",
+        "Standard calibration is 10 mm/mV; a half-height calibration pulse halves every amplitude on the page.",
+        "300-150-100-75-60-50 for regular rhythms; count QRS in 6 seconds and multiply by 10 for irregular ones.",
+        "Normal PR is 0.12-0.20 s and normal QRS is under 0.12 s.",
+        "The ST segment should sit level with the baseline; the QT is roughly 0.36-0.44 s at normal rates."
+      ],
+      "checks": [
+        {
+          "q": "One small box on standard ECG paper equals:",
+          "choices": ["`0.04 s`", "`0.02 s`", "`0.10 s`", "`0.20 s`"],
+          "answer": 0,
+          "why": "At 25 mm/s a 1 mm small box is 0.04 seconds. The 0.20 s figure is one big box of five small boxes."
+        },
+        {
+          "q": "Three big boxes between R waves on a regular rhythm means a rate of:",
+          "choices": ["150", "100", "75", "60"],
+          "answer": 1,
+          "why": "The sequence is 300, 150, 100, 75, 60, 50 for one through six big boxes, so three big boxes is 100."
+        },
+        {
+          "q": "A normal QRS duration is:",
+          "choices": ["`0.12-0.20 s`", "under `0.20 s`", "under `0.12 s`", "under `0.08 s`"],
+          "answer": 2,
+          "why": "Normal QRS is under 0.12 seconds, fewer than three small boxes. 0.12-0.20 s is the PR interval range, and a QRS over 0.12 s is wide."
+        }
+      ]
+    },
+    {
+      "id": "ed-ekg-l08",
+      "title": "The rhythms you must recognize",
+      "minutes": 8,
+      "body": "## How to look at any strip\n\nAsk four questions in the same order every time and the rhythm nearly names itself.\n\n1. **Rate** — fast, slow, or normal?\n2. **Regular?** — march the R-to-R intervals. Regular, regularly irregular, or irregularly irregular?\n3. **P waves?** — is there one, is it upright, is there exactly one per QRS?\n4. **QRS narrow or wide?** — under `0.12 s` or over?\n\nThen, before anything else: **look at the patient and feel a pulse.**\n\n## Normal and near-normal\n\n**Normal sinus rhythm** — rate `60-100`, regular, one upright P before every QRS, narrow QRS.\n\n**Sinus tachycardia** — the same picture at `100-150`. It is almost always a symptom, not a disease: fever, pain, fear, blood loss, dehydration, hypoxia, drugs. The cause gets treated, not the number.\n\n**Sinus bradycardia** — the same picture under `60`. Normal in an athlete or a sleeping patient. Dangerous when it arrives with low blood pressure, confusion or chest pain, or after an overdose of a rate-slowing drug.\n\n## Atrial rhythms\n\n**Atrial fibrillation** — **irregularly irregular** with **no identifiable P waves**, just a wavy baseline. The atria are quivering, not beating. New atrial fibrillation with a rapid ventricular response is a common emergency department presentation and belongs in front of the nurse now.\n\n**Atrial flutter** — a **sawtooth** baseline, classically at an atrial rate near `300`, with the ventricles conducting only a fraction of those beats. A stubbornly regular ventricular rate near `150` should always make you look hard for buried flutter waves.\n\n**Supraventricular tachycardia (SVT)** — narrow, regular and fast, usually `150-250`, with P waves hidden inside the preceding T waves. Report it.\n\n## The ones that kill\n\n**Ventricular tachycardia (VT)** — wide, regular, fast, usually `120-250`, with no visible P waves. **Check a pulse immediately.** Pulseless VT is a cardiac arrest treated with CPR and defibrillation. VT with a pulse is still a true emergency: stay in the room, get the nurse and provider, put defibrillator pads on the patient and the crash cart at the door.\n\n**Ventricular fibrillation (VF)** — chaotic, no organized complexes, coarse or fine. There is never a pulse in VF. Confirm unresponsive and pulseless, start compressions, call the code, get the defibrillator.\n\n**Asystole** — a flat or nearly flat line. Before you believe it: **check the patient, check the lead connections, check the gain**, and confirm the flat line in a second lead. A disconnected wire and a monitor turned down both look like death. If the patient is truly pulseless it is an arrest — CPR, and no shock.\n\n**Pulseless electrical activity (PEA)** — any organized rhythm with no pulse. The screen may look nearly normal. Treatment is CPR while the team hunts the cause.\n\n## Two more you should name\n\n**Heart block** — the giveaway is a **P wave with no QRS after it**. In complete (third-degree) block, P waves and QRS complexes march at their own separate rates with no relationship. Any new dropped beat belongs in front of a provider.\n\n**Paced rhythm** — narrow vertical spikes immediately before the P wave, the QRS, or both, from an implanted pacemaker. Know the pattern so you do not dismiss the spikes as artifact, and mention the pacemaker at handoff.\n\n> **Key:** For every fast or wide rhythm on the screen, your first action is identical: put your fingers on a pulse and look at the patient.\n\n> **On shift:** You are not expected to interpret. You are expected to recognize the handful of patterns that mean get help now, and to say what you saw in plain words: wide, fast, about 190, she has a pulse.",
+      "keyPoints": [
+        "Rate, regularity, P waves, QRS width — then look at the patient and feel a pulse.",
+        "Atrial fibrillation is irregularly irregular with no P waves; flutter is sawtooth, often conducting at about 150.",
+        "Wide and fast is VT until proven otherwise; check a pulse, because pulseless VT is an arrest.",
+        "VF is never perfusing; asystole must be confirmed in a second lead after checking leads and gain.",
+        "A P wave with no QRS after it means heart block; pacer spikes are not artifact."
+      ],
+      "checks": [
+        {
+          "q": "Irregularly irregular with no identifiable P waves is:",
+          "choices": ["Atrial flutter", "Atrial fibrillation", "SVT", "Sinus arrhythmia"],
+          "answer": 1,
+          "why": "Absent P waves plus an irregularly irregular ventricular response is atrial fibrillation. Flutter shows sawtooth waves and is usually regular, and SVT is regular and narrow at 150-250."
+        },
+        {
+          "q": "What is the first action for any wide, fast rhythm on the monitor?",
+          "choices": ["Print a rhythm strip", "Get a 12-lead", "Check a pulse and look at the patient", "Increase the gain"],
+          "answer": 2,
+          "why": "Everything downstream depends on whether there is a pulse: pulseless VT is CPR and defibrillation, VT with a pulse is an in-room emergency. Printing and acquiring only delay that question."
+        },
+        {
+          "q": "Before accepting asystole on the monitor you must:",
+          "choices": ["Increase the paper speed", "Check the patient, the lead connections and the gain, and confirm in a second lead", "Defibrillate once", "Switch to a different machine"],
+          "answer": 1,
+          "why": "A disconnected wire and a low gain setting both mimic a flat line, and asystole is never shocked. Confirming in a second lead separates equipment failure from a real arrest."
+        }
+      ]
+    },
+    {
+      "id": "ed-ekg-l09",
+      "title": "STEMI, the 10-minute clock, and the handoff",
+      "minutes": 8,
+      "body": "## What a STEMI is\n\nWhen a coronary artery blocks completely, the muscle downstream starts dying within minutes. Injured muscle holds an abnormal charge during the ST segment, and the leads pointed at that wall record the segment lifted off the baseline. That is ST-elevation myocardial infarction (STEMI), and it is an open-the-artery-now emergency.\n\nThe department's target is typically `90 minutes` from arrival to balloon in the cath lab. Your piece of that clock is the first ten minutes.\n\n## The numbers that define elevation\n\nMeasured at the J point — the corner where the QRS ends and the ST segment begins — compared to the baseline:\n\n- `1 mm` (one small box) or more in **two contiguous leads**, meaning leads that look at the same wall.\n- In V2 and V3 the bar is higher: `2 mm` in men aged 40 and over, `2.5 mm` in men under 40, `1.5 mm` in women.\n\n**Reciprocal changes** — ST depression in leads on the opposite side of the heart — strongly support a real infarct rather than a lookalike. Inferior elevation with depression in I and aVL is the classic pair.\n\n## The lead groups\n\n| Leads | Wall |\n|---|---|\n| II, III, aVF | Inferior |\n| V1, V2 | Septal |\n| V3, V4 | Anterior |\n| I, aVL, V5, V6 | Lateral |\n\nContiguous means neighbors within a group: II and III, or V3 and V4. Elevation in V2 and aVF is not contiguous.\n\nInferior STEMI deserves a second thought. Up to roughly 40% involve the right ventricle, which is why a right-sided tracing with `V4R` is often ordered, and why those patients can drop their blood pressure hard if given nitroglycerin.\n\n> **Key:** You are not diagnosing. You are recognizing a pattern that means this paper does not go in a pile — it goes into a provider's hand, immediately, with the words: this looks like a STEMI, can you look now?\n\n## The machine's opinion\n\nMany machines print `ACUTE MI SUSPECTED` across the top. Take that seriously and walk it over. But the software also misses real infarcts and flags artifact as infarct, and both errors are common. The rule is the same in either direction: a provider lays eyes on every chest-pain tracing within minutes.\n\n## When to get an ECG without being asked\n\nTypical standing orders across emergency departments include an ECG for chest pain or pressure, shortness of breath, syncope or near-syncope, palpitations, weakness or dizziness in an older or diabetic patient, upper abdominal or epigastric pain, overdose or poisoning, known or suspected electrolyte problems (especially potassium), new stroke symptoms, and any patient who simply does not look right. Confirm with the nurse, but move first — the tracing costs three minutes and nothing else.\n\n> **On shift:** A walk-in who says chest pressure at the triage window gets the ECG in triage: before the bed, before registration. Door-to-ECG under `10 minutes` is only achievable that way.\n\n## Hitting the ten minutes\n\nMachine plugged in and charged, cables untangled, electrode packs stocked, paper loaded — checked at the start of every shift. Know where the machine lives. Bring the machine to the patient rather than moving the patient to the machine.\n\n## Serial ECGs and handoff\n\nOne normal tracing does not close the question. Repeat the ECG every `15-30 minutes` during ongoing chest pain, and any time the pain changes. Troponin is typically drawn at `0` and again at `1-3 hours`, depending on the assay your lab runs.\n\nLabel every tracing with the patient's name, the date, the exact time and your initials. If anything was non-standard, write that too: right-sided, posterior, limb leads on torso, 40 Hz filter. Then hand it to a provider or nurse directly and say what you saw.\n\n> **Trap:** Never leave a chest-pain ECG on a counter, in a printer tray, or in a chart rack. Handed to a person, or it did not happen.",
+      "keyPoints": [
+        "STEMI threshold: 1 mm in two contiguous leads; V2-V3 needs 2 mm in men 40+, 2.5 mm in men under 40, 1.5 mm in women.",
+        "Lead groups: II/III/aVF inferior, V1-V2 septal, V3-V4 anterior, I/aVL/V5-V6 lateral.",
+        "Reciprocal ST depression opposite the elevated wall supports a true infarct.",
+        "Door-to-ECG target is 10 minutes, achieved by doing chest-pain tracings in triage.",
+        "Repeat ECGs every 15-30 minutes with ongoing pain; troponin at 0 and 1-3 hours."
+      ],
+      "checks": [
+        {
+          "q": "ST elevation of 1 mm in which pair of leads would count as contiguous?",
+          "choices": ["V2 and aVF", "II and III", "I and V2", "aVR and V4"],
+          "answer": 1,
+          "why": "Contiguous means neighbors within the same wall group. II and III are both inferior leads. V2 is septal, aVF inferior, I lateral, so the other pairs span different walls."
+        },
+        {
+          "q": "The V2 and V3 ST elevation threshold for a 35-year-old man is:",
+          "choices": ["`1 mm`", "`1.5 mm`", "`2 mm`", "`2.5 mm`"],
+          "answer": 3,
+          "why": "Men under 40 need 2.5 mm in V2-V3. Men 40 and over need 2 mm, women need 1.5 mm, and 1 mm is the threshold for all other leads."
+        },
+        {
+          "q": "The door-to-ECG target for a chest-pain patient is:",
+          "choices": ["`5 minutes`", "`10 minutes`", "`30 minutes`", "`60 minutes`"],
+          "answer": 1,
+          "why": "Ten minutes from arrival is the standard benchmark, which is why chest-pain walk-ins get their tracing in triage rather than after rooming and registration."
+        }
+      ]
+    }
+  ],
+  "cards": [
+    { "id": "ed-ekg-c001", "front": "What does an ECG actually record?", "back": "Electrical activity — the voltage of depolarization spreading through heart muscle. Contraction is a separate mechanical event that follows only if the muscle is healthy and perfused.", "lesson": "ed-ekg-l01" },
+    { "id": "ed-ekg-c002", "front": "Organized rhythm on the monitor, no pulse in the patient. What is it and what do you do?", "back": "Pulseless electrical activity (PEA). It is cardiac arrest: start compressions and call the code. The monitor cannot show blood flow.", "lesson": "ed-ekg-l01" },
+    { "id": "ed-ekg-c003", "front": "Which way does the tracing deflect when current travels toward a positive electrode?", "back": "Upward. Current moving away from a positive electrode deflects downward. That one rule explains every waveform shape on the page.", "lesson": "ed-ekg-l01" },
+    { "id": "ed-ekg-c004", "front": "Roughly what fraction of heart attacks look normal on the first ECG?", "back": "About one third. That is why serial ECGs every 15-30 minutes and repeat troponin exist; one normal tracing never rules out a heart attack.", "lesson": "ed-ekg-l01" },
+    { "id": "ed-ekg-c005", "front": "How much weight does the machine's printed interpretation carry?", "back": "It is a hint, not a diagnosis. The software both misses real infarcts and flags artifact as infarct, so a provider reads every chest-pain tracing.", "lesson": "ed-ekg-l01" },
+    { "id": "ed-ekg-c006", "front": "Roughly how large is the heart's electrical signal at the skin?", "back": "About `1 mV`. Skin oil, sweat, hair and dead cells add resistance (impedance) that degrades that very small signal before it reaches the machine.", "lesson": "ed-ekg-l02" },
+    { "id": "ed-ekg-c007", "front": "Why clip chest hair instead of shaving it?", "back": "Clipping removes the gap between gel and skin without cutting. A razor makes micro-cuts and infection risk in a patient who may receive blood thinners within the hour.", "lesson": "ed-ekg-l02" },
+    { "id": "ed-ekg-c008", "front": "Why must alcohol dry completely before you place an electrode?", "back": "Wet alcohol under the gel conducts across the skin surface and shorts the signal, producing a noisy, drifting tracing. Let it air dry.", "lesson": "ed-ekg-l02" },
+    { "id": "ed-ekg-c009", "front": "Where do you press when applying an electrode, and why?", "back": "The edges, working around the rim. Pressing the center squeezes gel away from the sensor and leaves a dry spot exactly where the signal is read.", "lesson": "ed-ekg-l02" },
+    { "id": "ed-ekg-c010", "front": "An electrode falls off. Can you re-stick it?", "back": "No. The gel has picked up skin oil and lint and the adhesive is spent. Dry the skin and use a fresh electrode from a sealed pack.", "lesson": "ed-ekg-l02" },
+    { "id": "ed-ekg-c011", "front": "List the skin prep sequence for ECG electrodes.", "back": "Expose, dry the skin, clip hair, wipe with alcohol and let it dry, lightly abrade with the wrapper's rough patch, apply a fresh gel electrode, press the edges.", "lesson": "ed-ekg-l02" },
+    { "id": "ed-ekg-c012", "front": "How many electrodes produce a 12-lead ECG, and why is that not twelve?", "back": "Ten: four limb and six chest. A lead is a view — a comparison between electrodes — so the machine computes 12 views from 10 stickers.", "lesson": "ed-ekg-l03" },
+    { "id": "ed-ekg-c013", "front": "Name the three sides of Einthoven's triangle.", "back": "Lead I is right arm to left arm. Lead II is right arm to left leg. Lead III is left arm to left leg.", "lesson": "ed-ekg-l03" },
+    { "id": "ed-ekg-c014", "front": "Which lead is the default rhythm strip, and why?", "back": "Lead II. Its axis runs nearly parallel to the heart's normal depolarization path — from the sinus node down and to the left — so P waves are tallest and clearest.", "lesson": "ed-ekg-l03" },
+    { "id": "ed-ekg-c015", "front": "What are the four limb electrode colors and positions in the AHA scheme?", "back": "White right arm, black left arm, red left leg, green right leg. Clockwise from the right arm: white, black, red, green.", "lesson": "ed-ekg-l03" },
+    { "id": "ed-ekg-c016", "front": "What does the green (right leg) electrode contribute to the tracing?", "back": "Nothing readable. It is the ground reference the machine uses to subtract noise. Lose it and the entire tracing degrades.", "lesson": "ed-ekg-l03" },
+    { "id": "ed-ekg-c017", "front": "When is Mason-Likar (torso) limb placement appropriate, and what must you do?", "back": "For continuous monitoring, and for diagnostic tracings only when tremor, movement or amputation forces it. Label the tracing: torso placement shifts axis and can create or erase Q waves and ST changes.", "lesson": "ed-ekg-l03" },
+    { "id": "ed-ekg-c018", "front": "Where do limb electrodes go on a patient with a below-elbow amputation?", "back": "As distally as the remaining limb allows, then mirrored on the opposite side so left and right stay symmetric. Same rule for casts and dressings.", "lesson": "ed-ekg-l03" },
+    { "id": "ed-ekg-c019", "front": "How do you find the 4th intercostal space?", "back": "Feel the sternal angle (angle of Louis), the ridge below the sternal notch. The 2nd rib attaches there; slide off the sternum into the 2nd space and count down two more.", "lesson": "ed-ekg-l04" },
+    { "id": "ed-ekg-c020", "front": "Where do V1 and V2 go?", "back": "V1 at the 4th intercostal space, right sternal border. V2 at the 4th intercostal space, left sternal border.", "lesson": "ed-ekg-l04" },
+    { "id": "ed-ekg-c021", "front": "Where do V3 and V4 go?", "back": "V4 at the 5th intercostal space, midclavicular line. V3 midway between V2 and V4 — which is why V2 and V4 are placed first.", "lesson": "ed-ekg-l04" },
+    { "id": "ed-ekg-c022", "front": "Where do V5 and V6 go?", "back": "V5 at the anterior axillary line and V6 at the midaxillary line, both at the same horizontal level as V4 — never counted down by ribs, which slope.", "lesson": "ed-ekg-l04" },
+    { "id": "ed-ekg-c023", "front": "Do chest electrodes go on or under breast tissue?", "back": "Under. Lift the breast and place V3 through V6 against the chest wall. Tissue between electrode and heart weakens the signal and can mimic poor R wave progression.", "lesson": "ed-ekg-l04" },
+    { "id": "ed-ekg-c024", "front": "Where is V4R and when is it used?", "back": "5th intercostal space, right midclavicular line — the mirror of V4. Used for suspected right ventricular involvement with an inferior STEMI. Label the tracing right-sided.", "lesson": "ed-ekg-l04" },
+    { "id": "ed-ekg-c025", "front": "Where do posterior leads V7, V8 and V9 go?", "back": "At V6's horizontal level: V7 posterior axillary line, V8 tip of the left scapula, V9 just left of the spine. They view the back wall.", "lesson": "ed-ekg-l04" },
+    { "id": "ed-ekg-c026", "front": "Why mark the V positions on the skin with a marker?", "back": "Serial ECGs are compared to each other. Identical placement means a new ST change is real rather than an electrode that moved a rib space.", "lesson": "ed-ekg-l04" },
+    { "id": "ed-ekg-c027", "front": "The tracing shows an inverted P and QRS in lead I with an upright aVR. What happened?", "back": "Right arm and left arm electrodes are reversed. aVR looks toward the right shoulder and should always be negative, so an upright aVR means a reversal until proven otherwise.", "lesson": "ed-ekg-l05" },
+    { "id": "ed-ekg-c028", "front": "What does placing V1 and V2 too high do to the tracing?", "back": "Creates an rSr' pattern mimicking incomplete right bundle branch block or Brugada, inverts P waves in V1 and V2, and fakes poor R wave progression and anterior ST changes.", "lesson": "ed-ekg-l05" },
+    { "id": "ed-ekg-c029", "front": "What does 60-cycle interference look like, and what causes it?", "back": "A perfectly regular fuzzy thickening of the baseline, like a hairy caterpillar. Caused by nearby alternating-current equipment, frayed cables, or leads tangled with power cords.", "lesson": "ed-ekg-l05" },
+    { "id": "ed-ekg-c030", "front": "How do you fix 60-cycle interference?", "back": "Unplug non-essential devices near the patient, separate the ECG cable from power cords, untangle the lead wires, and confirm the machine's ground is intact.", "lesson": "ed-ekg-l05" },
+    { "id": "ed-ekg-c031", "front": "How do you reduce muscle tremor artifact?", "back": "Warm the patient with a blanket, rest the arms on the bed or pillows so they are not held against gravity, ask them to relax and not talk, then move limb electrodes proximally if needed.", "lesson": "ed-ekg-l05" },
+    { "id": "ed-ekg-c032", "front": "What is the difference between the 40 Hz and 150 Hz filter settings?", "back": "`150 Hz` is the diagnostic standard and preserves fine ST and QRS detail. `40 Hz` cleans noise but shaves real detail and can distort ST findings — a labeled last resort only.", "lesson": "ed-ekg-l05" },
+    { "id": "ed-ekg-c033", "front": "How do you tell artifact from a real lethal rhythm?", "back": "Artifact has a pulse. Chaos in one lead with the others clean is artifact; the same chaos in every lead in an unresponsive patient is real. Look at the patient and feel a pulse first.", "lesson": "ed-ekg-l05" },
+    { "id": "ed-ekg-c034", "front": "How should a patient be positioned for a 12-lead, and what do you tell them?", "back": "Supine if tolerated, semi-Fowler's if not, and note the position. Arms relaxed at the sides, legs uncrossed, no talking or moving during the 10 seconds of recording.", "lesson": "ed-ekg-l05" },
+    { "id": "ed-ekg-c035", "front": "Where do the three electrodes go in a 3-lead monitor setup?", "back": "White below the right clavicle, black below the left clavicle, red on the left lower chest or abdomen. White on the right, smoke over fire.", "lesson": "ed-ekg-l06" },
+    { "id": "ed-ekg-c036", "front": "What does the mnemonic snow over grass, smoke over fire describe?", "back": "The 5-lead corners: white over green on the right side, black over red on the left side. Brown is the separate chest lead.", "lesson": "ed-ekg-l06" },
+    { "id": "ed-ekg-c037", "front": "Where does the brown electrode go in a 5-lead setup?", "back": "Usually the V1 position — 4th intercostal space, right sternal border — so you can watch a chest lead alongside lead II.", "lesson": "ed-ekg-l06" },
+    { "id": "ed-ekg-c038", "front": "How often should continuous monitoring electrodes be changed?", "back": "At least every `24 hours`, and sooner if the gel dries, an edge curls, or lead-off alarms begin. Rotate the site slightly to spare the skin.", "lesson": "ed-ekg-l06" },
+    { "id": "ed-ekg-c039", "front": "You see new wide complexes on the monitor. What is the sequence?", "back": "Look at the patient, feel a pulse, tell the nurse, get a 12-lead. The monitor prompts; it cannot diagnose.", "lesson": "ed-ekg-l06" },
+    { "id": "ed-ekg-c040", "front": "What is standard ECG paper speed, and what is one small box worth?", "back": "`25 mm/s`. One small box is `1 mm` wide, equal to `0.04 s`. One big box is `5 mm`, equal to `0.20 s`.", "lesson": "ed-ekg-l07" },
+    { "id": "ed-ekg-c041", "front": "How many big boxes make 6 seconds of tracing?", "back": "Thirty. Five big boxes make `1 s`, so 30 big boxes make `6 s` — the strip used for the 6-second rate method.", "lesson": "ed-ekg-l07" },
+    { "id": "ed-ekg-c042", "front": "What is standard ECG calibration, and why check the calibration pulse?", "back": "`10 mm/mV`. If the printed pulse is half height the machine is running at half standard, so every amplitude — including ST elevation — is understated by half.", "lesson": "ed-ekg-l07" },
+    { "id": "ed-ekg-c043", "front": "State the 300 method sequence.", "back": "300, 150, 100, 75, 60, 50 — the rate when the next QRS falls 1, 2, 3, 4, 5 or 6 big boxes later. Regular rhythms only.", "lesson": "ed-ekg-l07" },
+    { "id": "ed-ekg-c044", "front": "How do you calculate rate on an irregular rhythm?", "back": "Count the QRS complexes in a 6-second strip (30 big boxes) and multiply by 10. Interval-based methods fail when R-to-R varies.", "lesson": "ed-ekg-l07" },
+    { "id": "ed-ekg-c045", "front": "What is a normal PR interval, and what does it measure?", "back": "`0.12-0.20 s`, or 3 to 5 small boxes. It is the deliberate delay at the AV node that lets the atria finish filling the ventricles.", "lesson": "ed-ekg-l07" },
+    { "id": "ed-ekg-c046", "front": "What is a normal QRS duration, and what does a wide QRS mean?", "back": "Under `0.12 s`, fewer than 3 small boxes. Wide means the beat started in the ventricle or travelled an abnormal conduction path.", "lesson": "ed-ekg-l07" },
+    { "id": "ed-ekg-c047", "front": "What does the ST segment represent, and where should it sit?", "back": "The stretch after ventricular depolarization while the ventricles contract. It should lie level with the baseline; elevation or depression is the injury signal.", "lesson": "ed-ekg-l07" },
+    { "id": "ed-ekg-c048", "front": "What is a normal QT interval, and why does it matter?", "back": "Roughly `0.36-0.44 s` at normal rates, shortening as rate rises. Drugs and electrolyte problems prolong it, and a very long QT can collapse into a lethal rhythm.", "lesson": "ed-ekg-l07" },
+    { "id": "ed-ekg-c049", "front": "What four questions do you ask of every rhythm strip?", "back": "Rate? Regular? P waves — one upright P per QRS? QRS narrow or wide? Then look at the patient and feel a pulse.", "lesson": "ed-ekg-l08" },
+    { "id": "ed-ekg-c050", "front": "Define normal sinus rhythm.", "back": "Rate `60-100`, regular, one upright P wave before every QRS, QRS under `0.12 s`.", "lesson": "ed-ekg-l08" },
+    { "id": "ed-ekg-c051", "front": "What identifies atrial fibrillation?", "back": "Irregularly irregular R-to-R intervals with no identifiable P waves, just a wavy baseline. The atria quiver instead of beating.", "lesson": "ed-ekg-l08" },
+    { "id": "ed-ekg-c052", "front": "What identifies atrial flutter?", "back": "A sawtooth baseline at an atrial rate near `300`, with the ventricles conducting a fraction of it. A regular ventricular rate near `150` should prompt a hunt for flutter waves.", "lesson": "ed-ekg-l08" },
+    { "id": "ed-ekg-c053", "front": "What identifies SVT, and at what rate?", "back": "Narrow, regular and fast — usually `150-250` — with P waves buried inside the preceding T waves.", "lesson": "ed-ekg-l08" },
+    { "id": "ed-ekg-c054", "front": "You see a wide, regular rhythm at 190. What is your first action?", "back": "Feel for a pulse and look at the patient. Wide and fast is ventricular tachycardia until proven otherwise: pulseless means CPR and defibrillation; with a pulse it is still an in-room emergency.", "lesson": "ed-ekg-l08" },
+    { "id": "ed-ekg-c055", "front": "What must you confirm before believing asystole on the monitor?", "back": "Check the patient, the lead connections and the gain, then confirm the flat line in a second lead. A disconnected wire and low gain both mimic asystole.", "lesson": "ed-ekg-l08" },
+    { "id": "ed-ekg-c056", "front": "What is the giveaway for heart block on a strip?", "back": "A P wave with no QRS after it. In complete (third-degree) block the P waves and QRS complexes march at separate rates with no relationship.", "lesson": "ed-ekg-l08" },
+    { "id": "ed-ekg-c057", "front": "How do you recognize a paced rhythm?", "back": "Narrow vertical spikes immediately before the P wave, the QRS, or both. Do not dismiss them as artifact; mention the pacemaker at handoff.", "lesson": "ed-ekg-l08" },
+    { "id": "ed-ekg-c058", "front": "What ST elevation threshold defines a STEMI in most leads?", "back": "At least `1 mm` at the J point in two contiguous leads — leads that view the same wall.", "lesson": "ed-ekg-l09" },
+    { "id": "ed-ekg-c059", "front": "What are the special ST elevation thresholds for V2 and V3?", "back": "`2 mm` in men aged 40 and over, `2.5 mm` in men under 40, and `1.5 mm` in women.", "lesson": "ed-ekg-l09" },
+    { "id": "ed-ekg-c060", "front": "Name the four ECG lead groups and their walls.", "back": "II, III, aVF inferior. V1 and V2 septal. V3 and V4 anterior. I, aVL, V5 and V6 lateral. Contiguous means neighbors within one group.", "lesson": "ed-ekg-l09" },
+    { "id": "ed-ekg-c061", "front": "What are reciprocal changes, and why do they matter?", "back": "ST depression in leads opposite the elevated wall, such as depression in I and aVL with inferior elevation. They strongly support a true infarct over a lookalike.", "lesson": "ed-ekg-l09" },
+    { "id": "ed-ekg-c062", "front": "What is the door-to-ECG target, and how do you hit it?", "back": "`10 minutes` from arrival. Machine stocked, charged and untangled at shift start, and chest-pain walk-ins get the tracing in triage before the bed and before registration.", "lesson": "ed-ekg-l09" },
+    { "id": "ed-ekg-c063", "front": "Which presentations trigger an ECG without being asked?", "back": "Chest pain or pressure, shortness of breath, syncope, palpitations, weakness or dizziness in the elderly or diabetic, epigastric pain, overdose, electrolyte concerns, new stroke symptoms, and anyone who does not look right.", "lesson": "ed-ekg-l09" },
+    { "id": "ed-ekg-c064", "front": "How often are serial ECGs repeated, and when is troponin drawn?", "back": "Repeat the ECG every `15-30 minutes` during ongoing chest pain or whenever the pain changes. Troponin is typically drawn at `0` and again at `1-3 hours`, depending on the assay.", "lesson": "ed-ekg-l09" },
+    { "id": "ed-ekg-c065", "front": "How do you hand off a tracing with a STEMI pattern?", "back": "Directly into a provider's hand within seconds, saying what you saw. Label name, date, exact time, your initials, and any non-standard placement. Never leave it on a counter.", "lesson": "ed-ekg-l09" }
+  ],
+  "quiz": [
+    { "id": "ed-ekg-q001", "q": "An ECG shows a regular rhythm at 70, but the patient is unresponsive with no carotid pulse. What does this represent?", "choices": ["Artifact from a loose electrode", "Normal sinus rhythm — recheck the pulse in five minutes", "Pulseless electrical activity, a form of cardiac arrest", "Ventricular fibrillation"], "answer": 2, "why": "The ECG records electrical activity only; contraction is separate. An organized rhythm with no pulse is PEA and needs CPR now. Artifact does not produce organized regular complexes, VF is chaotic with no organized complexes, and rechecking later delays compressions.", "lesson": "ed-ekg-l01", "difficulty": 2 },
+    { "id": "ed-ekg-q002", "q": "You are placing chest leads on a 58-year-old woman with chest pain. Where does V4 belong?", "choices": ["5th intercostal space, midclavicular line", "4th intercostal space, midclavicular line", "5th intercostal space, anterior axillary line", "4th intercostal space, left sternal border"], "answer": 0, "why": "V4 sits at the 5th intercostal space in the midclavicular line. The 4th ICS left sternal border is V2, the anterior axillary line at V4's level is V5, and there is no standard 4th-ICS midclavicular position.", "lesson": "ed-ekg-l04", "difficulty": 1 },
+    { "id": "ed-ekg-q003", "q": "A 12-lead shows an inverted P wave and inverted QRS in lead I with a fully upright aVR. The patient is alert with no complaints. What is the most likely explanation?", "choices": ["Acute lateral myocardial infarction", "Right arm and left arm electrodes are reversed", "Confirmed dextrocardia", "60-cycle interference"], "answer": 1, "why": "aVR points toward the right shoulder and is normally negative, so an upright aVR with an inverted lead I is the signature of RA/LA reversal. Infarction does not invert the QRS in lead I and flip aVR. Dextrocardia is far rarer and also alters chest lead progression — check wires first. Interference thickens the baseline without inverting complexes.", "lesson": "ed-ekg-l05", "difficulty": 3 },
+    { "id": "ed-ekg-q004", "q": "A regular rhythm has 4 big boxes between consecutive QRS complexes. What is the rate?", "choices": ["100", "60", "50", "75"], "answer": 3, "why": "The sequence is 300, 150, 100, 75, 60, 50 for one through six big boxes, so four big boxes is 75. A rate of 100 would be three boxes, 60 would be five, and 50 would be six.", "lesson": "ed-ekg-l07", "difficulty": 2 },
+    { "id": "ed-ekg-q005", "q": "The monitor shows an irregularly irregular rhythm at 140 with no identifiable P waves. What is it?", "choices": ["Atrial flutter", "Atrial fibrillation with rapid ventricular response", "Sinus tachycardia", "Supraventricular tachycardia"], "answer": 1, "why": "Irregularly irregular with absent P waves is atrial fibrillation, and at 140 it has a rapid ventricular response. Flutter shows sawtooth waves and is usually regular, sinus tachycardia has an upright P before every QRS, and SVT is regular and narrow at 150-250.", "lesson": "ed-ekg-l08", "difficulty": 2 },
+    { "id": "ed-ekg-q006", "q": "A monitored patient develops a wide, regular rhythm at 190. What is your immediate first action?", "choices": ["Check for a pulse and look at the patient", "Print a rhythm strip for the chart", "Reposition the electrodes to clean up the tracing", "Obtain a 12-lead before telling anyone"], "answer": 0, "why": "Wide and fast is ventricular tachycardia until proven otherwise, and everything downstream depends on whether there is a pulse: pulseless VT is CPR and defibrillation. Printing, repositioning and acquiring a 12-lead all delay that single question.", "lesson": "ed-ekg-l08", "difficulty": 2 },
+    { "id": "ed-ekg-q007", "q": "Why must alcohol be allowed to dry before an electrode is applied?", "choices": ["Alcohol dissolves the adhesive on modern electrodes", "Wet skin lowers impedance too far and saturates the amplifier", "Wet alcohol conducts across the skin surface and degrades the signal", "It prevents the machine from calibrating at 10 mm/mV"], "answer": 2, "why": "Liquid alcohol forms a conductive film that shorts the signal across the skin, producing noise and drift. It is not an adhesive chemistry problem, impedance cannot be too low in that sense, and calibration is a machine setting unrelated to skin prep.", "lesson": "ed-ekg-l02", "difficulty": 1 },
+    { "id": "ed-ekg-q008", "q": "What is the role of the right leg (green) electrode on a 12-lead ECG?", "choices": ["It forms lead III with the left arm", "It records the inferior wall", "It is the positive pole for aVF", "It is the ground reference used to cancel noise"], "answer": 3, "why": "The right leg electrode contributes no readable view; it gives the machine a reference to subtract interference against. Lead III is left arm to left leg, the inferior wall is viewed by II, III and aVF, and aVF is a calculated augmented lead.", "lesson": "ed-ekg-l03", "difficulty": 1 },
+    { "id": "ed-ekg-q009", "q": "A chest-pain tracing shows an rSr' pattern in V1 and V2 with inverted P waves in those leads. What is the most likely problem?", "choices": ["The filter was set to 40 Hz", "V1 and V2 were placed in the 2nd or 3rd intercostal space", "The limb leads were placed on the torso", "The paper ran at 50 mm/s"], "answer": 1, "why": "V1 and V2 placed one or two spaces too high produce an rSr' mimicking incomplete right bundle branch block or Brugada, plus inverted P waves in those leads. A 40 Hz filter smooths noise without inverting P waves, torso limb placement alters limb leads rather than V1-V2 shape, and 50 mm/s simply stretches the tracing.", "lesson": "ed-ekg-l04", "difficulty": 3 },
+    { "id": "ed-ekg-q010", "q": "Which lead group corresponds to the inferior wall of the heart?", "choices": ["V1 and V2", "I, aVL, V5 and V6", "II, III and aVF", "V3 and V4"], "answer": 2, "why": "II, III and aVF look at the inferior wall. V1-V2 are septal, V3-V4 anterior, and I, aVL, V5-V6 lateral. Contiguous leads must come from the same group.", "lesson": "ed-ekg-l09", "difficulty": 1 },
+    { "id": "ed-ekg-q011", "q": "A 62-year-old man has 2.5 mm of ST elevation in II, III and aVF with ST depression in I and aVL. What is the significance of the depression?", "choices": ["Reciprocal change supporting a true inferior infarct", "A separate lateral infarction", "Evidence the tracing is artifact", "Normal early repolarization"], "answer": 0, "why": "ST depression in leads opposite the elevated wall is a reciprocal change and strongly supports a genuine infarct. It is not a second infarct, artifact does not create a coherent reciprocal pattern, and early repolarization is diffuse and concave without reciprocal depression.", "lesson": "ed-ekg-l09", "difficulty": 3 },
+    { "id": "ed-ekg-q012", "q": "In a 3-lead monitor setup using the American color scheme, where does the red electrode go?", "choices": ["Right upper chest below the clavicle", "Left lower chest or abdomen below the ribs", "Left upper chest below the clavicle", "4th intercostal space, right sternal border"], "answer": 1, "why": "Smoke over fire: black sits above red on the left side, so red goes low on the left chest or abdomen. White is right upper, black is left upper, and the V1 position belongs to the brown lead in a 5-lead setup.", "lesson": "ed-ekg-l06", "difficulty": 1 },
+    { "id": "ed-ekg-q013", "q": "Which method should be used to calculate heart rate in atrial fibrillation?", "choices": ["The 300-150-100 big box sequence", "Dividing 1500 by the small boxes between two R waves", "Counting P waves in 6 seconds", "Counting QRS complexes in a 6-second strip and multiplying by 10"], "answer": 3, "why": "Atrial fibrillation has no consistent R-to-R interval, so any single-interval method gives a different answer for every pair of beats. The 6-second count averages across the irregularity, and there are no countable P waves in atrial fibrillation.", "lesson": "ed-ekg-l07", "difficulty": 2 },
+    { "id": "ed-ekg-q014", "q": "A nurse asks you to get a 12-lead on a patient already on the cardiac monitor. Why is the monitor not enough?", "choices": ["The monitor uses different electrode gel", "Monitors do not display a heart rate", "The monitor shows only 1 to 5 filtered views, so it cannot localize injury to a wall", "Monitors are calibrated at 5 mm/mV"], "answer": 2, "why": "Continuous monitoring answers rhythm questions from a few torso-based views with stabilizing filters. Localizing ST changes to a specific wall needs all twelve views from standard placement. The gel is the same, monitors do show rate, and calibration is not the limiting factor.", "lesson": "ed-ekg-l01", "difficulty": 2 },
+    { "id": "ed-ekg-q015", "q": "An electrode falls off a diaphoretic patient's chest during a 12-lead. What is the correct action?", "choices": ["Dry the skin and apply a fresh electrode from a sealed pack", "Press the same electrode back on firmly at the center", "Tape the same electrode down over the gel", "Switch to a 3-lead monitor instead"], "answer": 0, "why": "Used gel picks up oil and lint and the adhesive is spent, so re-sticking fails. Drying comes first because sweat caused the failure. Pressing the center squeezes gel from under the sensor, and switching to 3-lead abandons the study rather than fixing it.", "lesson": "ed-ekg-l02", "difficulty": 2 },
+    { "id": "ed-ekg-q016", "q": "The baseline of a tracing shows a perfectly regular fuzzy thickening. The patient is lying still. What is the most likely cause and fix?", "choices": ["Muscle tremor; warm the patient with a blanket", "60-cycle AC interference; move cables from power cords and unplug nearby devices", "A loose electrode; replace it", "Wrong paper speed; set it to 25 mm/s"], "answer": 1, "why": "Perfectly regular high-frequency fuzz is 60 Hz interference from building power. Muscle tremor is irregular and varies with the patient, a loose electrode causes drift or lead-off rather than uniform fuzz, and paper speed changes complex width rather than adding noise.", "lesson": "ed-ekg-l05", "difficulty": 2 },
+    { "id": "ed-ekg-q017", "q": "An alarm reads VTACH. The patient is sitting up eating, talking normally, with a strong radial pulse at 78. One lead shows chaotic deflections; the other two are clean. What do you do?", "choices": ["Call a code blue and start compressions", "Silence the alarm and leave the room", "Reapply the electrode for that lead, confirm a clean tracing, and tell the nurse", "Defibrillate at 200 J"], "answer": 2, "why": "Artifact confined to one lead in a talking, perfusing patient is a lead problem, not a rhythm. Compressions and defibrillation on a perfusing patient cause harm. Silencing and leaving fixes nothing and leaves a broken lead that will alarm again.", "lesson": "ed-ekg-l08", "difficulty": 3 },
+    { "id": "ed-ekg-q018", "q": "A walk-in at the triage window reports chest pressure that started an hour ago. What is the correct timing for his ECG?", "choices": ["After registration and rooming", "After the nurse completes triage vitals", "Within 30 minutes of arrival", "Within 10 minutes of arrival, obtained in triage"], "answer": 3, "why": "The standard door-to-ECG target is 10 minutes, which is only achievable by acquiring the tracing in triage before rooming and registration. Every other option pushes past the target and delays cath lab activation.", "lesson": "ed-ekg-l09", "difficulty": 2 },
+    { "id": "ed-ekg-q019", "q": "A patient with Parkinson's disease has a constant tremor that makes the limb leads unreadable despite warming and arm support. What is the appropriate step?", "choices": ["Move the limb electrodes proximally onto the torso and label the tracing", "Shave the wrists and ankles", "Increase the paper speed to 50 mm/s", "Place all four limb electrodes on the left side"], "answer": 0, "why": "Proximal Mason-Likar placement reduces tremor artifact, but it alters the tracing, so it must be labeled to prevent false comparison with a standard ECG. Shaving does not stop tremor, paper speed does not reduce noise, and asymmetric placement destroys the lead geometry.", "lesson": "ed-ekg-l03", "difficulty": 2 },
+    { "id": "ed-ekg-q020", "q": "What is the normal PR interval on an adult ECG?", "choices": ["`0.04-0.10 s`", "`0.12-0.20 s`", "`0.20-0.36 s`", "`0.36-0.44 s`"], "answer": 1, "why": "The PR interval is normally 0.12 to 0.20 seconds, 3 to 5 small boxes, representing AV nodal delay. 0.04 s is one small box, over 0.20 s is first-degree block, and 0.36-0.44 s is the QT range.", "lesson": "ed-ekg-l07", "difficulty": 1 },
+    { "id": "ed-ekg-q021", "q": "How should V3 through V6 be placed on a patient with large breasts?", "choices": ["On top of the breast at the standard landmarks", "Shifted upward to the 3rd intercostal space", "Under the breast, against the chest wall at the standard landmarks", "Omitted, replaced by a right-sided tracing"], "answer": 2, "why": "Tissue between electrode and heart weakens the signal and can mimic poor R wave progression, so the breast is lifted and electrodes placed on the chest wall at the true landmarks. Shifting upward changes which muscle each lead reports on, and omitting leads discards the study.", "lesson": "ed-ekg-l04", "difficulty": 2 },
+    { "id": "ed-ekg-q022", "q": "The monitor shows a flat line in lead II on a patient you cannot see from the desk. What do you do first?", "choices": ["Begin chest compressions immediately", "Go to the patient and check responsiveness and pulse while checking the leads and the gain", "Increase the paper speed", "Document asystole and notify the nurse at the next round"], "answer": 1, "why": "A disconnected wire and a low gain setting both mimic asystole, so the patient and the equipment are checked together and true asystole is confirmed in a second lead. Compressions on a perfusing patient cause injury, paper speed is irrelevant, and delaying notification of a real arrest is fatal.", "lesson": "ed-ekg-l08", "difficulty": 2 },
+    { "id": "ed-ekg-q023", "q": "How often should continuous monitoring electrodes be replaced?", "choices": ["At least every 24 hours, or sooner if gel dries or edges curl", "Every 8 hours without exception", "Only when the tracing becomes unreadable", "Once per admission"], "answer": 0, "why": "Gel dries and adhesive lifts within about a day, producing false lead-off alarms that train staff to distrust the monitor. Waiting for an unreadable tracing or an entire admission guarantees false alarms, and a rigid 8-hour rule wastes supplies and skin.", "lesson": "ed-ekg-l06", "difficulty": 1 },
+    { "id": "ed-ekg-q024", "q": "A chest-pain patient's first ECG is machine-read as normal sinus rhythm with no acute changes, but he still has 8/10 pressure and is diaphoretic. What does the tracing rule out?", "choices": ["Myocardial infarction", "Unstable angina", "Aortic dissection", "Nothing — a normal ECG does not exclude infarction"], "answer": 3, "why": "About a third of infarctions show nothing on the first tracing, which is why serial ECGs and repeat troponin exist. A normal ECG excludes none of these; the persistent symptoms are the finding that matters and must be reported.", "lesson": "ed-ekg-l01", "difficulty": 3 },
+    { "id": "ed-ekg-q025", "q": "When is the 40 Hz filter the appropriate choice on a diagnostic ECG?", "choices": ["Only when noise makes the tracing unreadable, and the tracing is labeled", "Routinely, because it produces cleaner tracings", "Whenever a STEMI is suspected, to sharpen the ST segments", "Never, under any circumstance"], "answer": 0, "why": "150 Hz is the diagnostic standard because it preserves fine ST and QRS detail; 40 Hz smooths the tracing but can attenuate or distort real ST findings. Routine use risks hiding findings and it is the worst choice in suspected STEMI, but it remains a legitimate labeled last resort.", "lesson": "ed-ekg-l05", "difficulty": 2 },
+    { "id": "ed-ekg-q026", "q": "An inferior STEMI is identified and the provider asks for a right-sided ECG. Where do you place V4R?", "choices": ["4th intercostal space, right sternal border", "5th intercostal space, right midclavicular line", "5th intercostal space, right anterior axillary line", "Posterior axillary line at the V6 level"], "answer": 1, "why": "V4R is the mirror image of V4 on the right chest: 5th intercostal space, right midclavicular line. The 4th ICS right sternal border is ordinary V1, the right anterior axillary position would be V5R, and the posterior axillary line at V6 level is V7.", "lesson": "ed-ekg-l04", "difficulty": 2 },
+    { "id": "ed-ekg-q027", "q": "Which pair of electrodes forms lead II on a standard 12-lead ECG?", "choices": ["Right arm and left arm", "Left arm and left leg", "Right arm and left leg", "Left leg and right leg"], "answer": 2, "why": "Einthoven's triangle: lead I is right arm to left arm, lead II is right arm to left leg, lead III is left arm to left leg. The right leg is the ground and forms no lead.", "lesson": "ed-ekg-l03", "difficulty": 1 },
+    { "id": "ed-ekg-q028", "q": "The machine prints ACUTE MI SUSPECTED on a tracing you just obtained in triage. What do you do?", "choices": ["Place it in the chart rack for the provider's next round", "Repeat the ECG first to confirm the finding", "Ask registration to expedite the patient", "Carry the tracing directly to a provider and say what you see"], "answer": 3, "why": "The software interpretation is a prompt, not a diagnosis, and both false positives and missed infarcts are common — which is why a provider must see the paper within seconds. A chart rack, a repeat first, or a registration message all burn minutes of a 90-minute door-to-balloon clock.", "lesson": "ed-ekg-l09", "difficulty": 2 }
+  ],
+  "scenarios": [
+    {
+      "id": "ed-ekg-s01",
+      "title": "Triage window: 58M, chest pressure 45 minutes",
+      "setting": "ed",
+      "intro": "14:10 on a Tuesday. A 58-year-old man walks up to the triage window with his wife. He says his chest has felt like a belt tightening for about 45 minutes. He is pale and there is sweat on his upper lip. The triage nurse is finishing another patient and nods at you: get him on the machine.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "He is standing at the window, one hand flat on his sternum. The ECG machine is in the alcove ten feet away. Registration is asking for his insurance card.",
+          "choices": [
+            { "text": "Bring him straight back, get him supine on the stretcher, and start prepping for a 12-lead now", "next": "s2", "feedback": "Right. Chest pressure with diaphoresis is a door-to-ECG-in-10-minutes patient. The tracing happens before the bed and before registration.", "score": 1 },
+            { "text": "Send him to registration first so the tracing prints with a chart number", "next": "s2", "feedback": "This is how a STEMI loses its first ten minutes. The machine can record under a temporary identifier and registration catches up afterward.", "score": -1 },
+            { "text": "Ask him to have a seat in the waiting room and tell the nurse when she is free", "next": "s2", "feedback": "Chest pressure with diaphoresis does not wait in a lobby. The patient who dies in the waiting room is the exact failure the 10-minute rule was written for.", "score": -1 },
+            { "text": "Take a full set of vital signs first, then decide what to do", "next": "s2", "feedback": "Vitals are useful and fast, but they are not the time-critical item. Get them while the machine warms up, not instead of the tracing.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "14:12. He is supine, shirt off. His chest is hairy and there is a film of sweat across it. The machine is plugged in; the cables are in a tangle in the drawer.",
+          "vitals": { "hr": 88, "bp": "148/92", "rr": 20, "spo2": 96 },
+          "choices": [
+            { "text": "Dry the chest with a towel, clip hair at the six V positions, wipe with alcohol and let it dry, then place fresh electrodes pressing the edges", "next": "s3", "feedback": "Exactly the sequence. Drying comes first because sweat is the main reason electrodes fail, and pressing the edges keeps gel under the sensor.", "score": 1 },
+            { "text": "Place electrodes over the sweat and press hard in the center so they stick", "next": "s3", "feedback": "Pressing the center squeezes gel away from the sensor, and sweat defeats the adhesive. You get a drifting, unreadable tracing and have to start over, losing the minutes that matter.", "score": -1 },
+            { "text": "Shave the chest with a razor from the supply cart", "next": "s3", "feedback": "The hair does need to go, but clip it. A razor makes micro-cuts in a patient who may receive anticoagulants and clot-busting drugs within the hour.", "score": 0 },
+            { "text": "Skip the chest leads and run a 3-lead rhythm strip, which is faster", "next": "s3", "feedback": "A rhythm strip cannot localize ST elevation. The entire point of this tracing is to find out which wall is dying.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "Skin is dry and prepped. Limb electrodes are on the wrists and ankles. Now the six chest positions.",
+          "choices": [
+            { "text": "Find the sternal angle, step onto the 2nd rib, count to the 4th ICS for V1 and V2, place V4 at the 5th ICS midclavicular, drop V3 between, then V5 and V6 at V4's level", "next": "s4", "feedback": "Correct order and correct method. Placing V1, V2 and V4 first makes V3 a simple midpoint, and V5 and V6 follow V4's horizontal level rather than another rib count.", "score": 1 },
+            { "text": "Estimate from the nipple line and put V4 just below the left nipple", "next": "s4", "feedback": "The nipple is not a fixed landmark. It moves with body habitus, age and position. Counting from the sternal angle is the only reliable method.", "score": -1 },
+            { "text": "Place V1 and V2 in the 2nd intercostal space so they clear the sternum", "next": "s4", "feedback": "Too high. That placement fakes an rSr' pattern and pseudo-anterior ST changes, and it has sent people to the cath lab for nothing.", "score": -1 },
+            { "text": "Place all six quickly by eye and mark the skin so the repeat tracing matches", "next": "s4", "feedback": "Marking the skin is a genuinely good habit for serial tracings, but marking the wrong spots only makes the error reproducible. Find the landmarks, then mark.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "14:17. The tracing prints clean, calibration pulse full height, `25 mm/s`. In leads II, III and aVF the ST segments sit about `3 mm` above the baseline. In leads I and aVL the ST segments sit clearly below it. Across the top the machine has printed only: NORMAL SINUS RHYTHM.",
+          "vitals": { "hr": 92, "bp": "142/88", "rr": 20, "spo2": 95 },
+          "choices": [
+            { "text": "Carry the tracing straight to the nearest provider and say you see ST elevation in II, III and aVF with depression in I and aVL", "next": "s5", "feedback": "Correct. The machine missed it, which happens. You are not diagnosing; you are naming a pattern and putting the paper in a licensed hand within seconds.", "score": 1 },
+            { "text": "Trust the NORMAL SINUS RHYTHM line and put the tracing in the chart rack", "next": "s5", "feedback": "That line describes the rhythm, not the ST segments, and software misses infarcts routinely. This is the single most common way a STEMI is delayed in an emergency department.", "score": -1 },
+            { "text": "Repeat the ECG first so you are sure before bothering anyone", "next": "s5", "feedback": "Serial tracings matter, but not before the first one is seen. Show it now; the repeat can happen while the provider reads it.", "score": 0 },
+            { "text": "Tell the registration clerk this patient needs to be expedited", "next": "s5", "feedback": "Registration does not activate a cath lab. Providers do, and only after they see the paper.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "The physician looks at it for four seconds, says inferior STEMI, and activates the cath lab. The room fills. She asks you to help get him ready.",
+          "choices": [
+            { "text": "Stay with him: continuous monitor and pulse oximetry, defibrillator pads on, and a right-sided tracing with V4R if she asks for it", "next": "end", "feedback": "Inferior STEMI carries a real risk of ventricular tachycardia and fibrillation, and up to roughly 40% involve the right ventricle. Monitored, padded and not left alone is exactly right.", "score": 1 },
+            { "text": "Label the tracing with name, date, exact time and your initials, and put a copy in the chart", "next": "end", "feedback": "Also correct, and it happens alongside monitoring. The exact time on the paper is what proves the door-to-ECG interval later.", "score": 1 },
+            { "text": "Hand off and go back to triage, since the nurses have it from here", "next": "end", "feedback": "Understandable in a busy department, but a fresh inferior STEMI is a patient you do not leave unmonitored. Ask before you step away.", "score": 0 },
+            { "text": "Peel the electrodes off now that the tracing has printed", "next": "end", "feedback": "Leave them on. Serial tracings and a possible right-sided ECG need identical placement, and the monitor needs contact points.", "score": -1 }
+          ]
+        }
+      ],
+      "debrief": "The pattern: **chest pressure plus diaphoresis equals a tracing in ten minutes, in triage, before anything administrative.** Prep decides whether the tracing is readable; landmarks decide whether it is true. This case carried ST elevation in II, III and aVF with reciprocal depression in I and aVL — an inferior wall injury pattern with the reciprocal changes that make it convincing — while the machine printed only a rhythm statement. The interpretation line is a hint, never a clearance. Paper that shows a STEMI pattern goes into a human hand within seconds, and the patient stays monitored with pads on, because an inferior infarct is the one that throws ventricular tachycardia while everyone is looking at the printout."
+    },
+    {
+      "id": "ed-ekg-s02",
+      "title": "Bed 12 alarms VTACH",
+      "setting": "ed",
+      "intro": "16:40. You are restocking the supply cart when the central monitor alarms VTACH in red on bed 12. Bed 12 is a 71-year-old woman brought in for flank pain, waiting on a CT. The last set of vitals from 20 minutes ago was unremarkable.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "The alarm banner is red. The strip on the central station shows about twelve seconds of wide, chaotic deflections at what the monitor calls 210. No one else is at the desk.",
+          "choices": [
+            { "text": "Go to the room immediately and look at the patient", "next": "s2", "feedback": "Always. The monitor reports voltage, not life. The patient answers the question in two seconds, and nothing you can do at the desk is worth more than that.", "score": 1 },
+            { "text": "Silence the alarm from the central station and keep watching the strip", "next": "s2", "feedback": "Silencing without laying eyes on the patient is how real ventricular tachycardia gets missed. Alarms are silenced at the bedside, after you know what is happening.", "score": -1 },
+            { "text": "Call a code blue from the hallway based on the strip alone", "next": "s2", "feedback": "Erring toward calling help is far safer than ignoring an alarm, but a code called on a talking patient pulls staff off other patients and spends the team's trust. Two seconds in the doorway costs nothing.", "score": 0 },
+            { "text": "Print the strip and take it to the nurse", "next": "s2", "feedback": "Paper is not the priority when a lethal rhythm is on the screen. Go to the patient first; the strip will still be there.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "You are in the doorway within fifteen seconds. She is sitting up brushing her hair with her right hand and asks what the noise is. Her color is normal and she is speaking in full sentences. The bedside monitor still shows the chaotic tracing, but the pulse oximeter waveform beside it is a clean, regular pleth at 82.",
+          "vitals": { "hr": 82, "bp": "136/78", "rr": 16, "spo2": 98 },
+          "choices": [
+            { "text": "Feel a radial pulse, confirm it is strong and regular at about 82, and compare the two displayed leads", "next": "s3", "feedback": "Correct. A strong regular pulse and a clean pleth waveform mean she is perfusing. Comparing leads is the next move, because artifact usually lives in one lead while the others stay clean.", "score": 1 },
+            { "text": "Start chest compressions", "next": "s3", "feedback": "She is awake, talking and perfusing. Compressions on a conscious patient cause rib fractures and organ injury and are never indicated when there is a pulse.", "score": -1 },
+            { "text": "Silence the alarm and step out, since she is obviously fine", "next": "s3", "feedback": "The alarm will fire again within a minute and the next person will trust it less. You have not fixed the cause and you have not ruled out a real intermittent rhythm.", "score": -1 },
+            { "text": "Ask her to hold still and stop brushing her hair, then watch the tracing", "next": "s3", "feedback": "A reasonable instinct that will help identify motion artifact, but check the pulse first. Perfusion is the question that decides everything else.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "Lead II is chaotic. The second displayed lead is clean: narrow complexes at 82 with a P wave before each one. Looking at her chest, the white electrode below the right clavicle has a curled edge, the gel looks dry, and its lead wire is stretched taut to the bed rail.",
+          "choices": [
+            { "text": "Replace the white electrode on dried, prepped skin, give the cable slack, confirm both leads are clean, and tell the nurse what happened", "next": "s4", "feedback": "Exactly. One chaotic lead with a clean second lead in a perfusing patient is artifact. Replacing the electrode is patient safety work: every false alarm makes the next real one less believable.", "score": 1 },
+            { "text": "Turn down the alarm volume so it stops disturbing the patient", "next": "s4", "feedback": "That leaves a broken lead and a monitor nobody will believe. Alarm volume is never the fix for a mechanical problem.", "score": -1 },
+            { "text": "Switch the displayed lead to the clean one and move on", "next": "s4", "feedback": "It quiets the alarm and the clean lead does work, but the bad electrode is still on her chest and it feeds the other leads too. Replace it.", "score": 0 },
+            { "text": "Widen the heart rate alarm limits to 40 and 220 so the alarm stops firing", "next": "s4", "feedback": "Widening limits to silence a mechanical problem removes the protection for a genuine event later. Fix the electrode, not the threshold.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "Both leads are clean now. Two minutes later, while you are documenting, the monitor alarms again. This time both leads show the same thing: six wide complexes in a row at about 160, then back to her narrow rhythm at 84. She says she felt a flutter in her chest and she now looks slightly pale.",
+          "vitals": { "hr": 84, "bp": "104/62", "rr": 20, "spo2": 96 },
+          "choices": [
+            { "text": "Tell the nurse immediately, describe exactly what you saw, stay with the patient, and get a 12-lead", "next": "end", "feedback": "Correct. The same finding in every lead, in a patient who felt it, is real. A short run of wide complexes is non-sustained ventricular tachycardia and it belongs in front of a nurse and a provider now.", "score": 1 },
+            { "text": "Recheck a pulse and blood pressure while calling out to the nurse from the doorway", "next": "end", "feedback": "Also correct. Perfusion status is the first thing the nurse will ask, and calling out gets help moving while you stay in the room with the patient.", "score": 1 },
+            { "text": "Assume it is the same artifact as before and keep documenting", "next": "end", "feedback": "The distinguishing feature has changed: it is now in both leads, the blood pressure dropped, and the patient felt it. Anchoring on your first explanation is exactly how a real rhythm gets missed.", "score": -1 },
+            { "text": "Print the strip and put it in the chart for the provider's next round", "next": "end", "feedback": "A symptomatic run of ventricular tachycardia is not a chart-rack finding. The delay itself is the harm.", "score": -1 }
+          ]
+        }
+      ],
+      "debrief": "Two lessons live in the same room. First, **artifact has a pulse.** Chaos in one lead, a clean second lead, a clean pleth waveform, and a patient brushing her hair add up to a bad electrode, not a rhythm — and the fix is a new electrode on dry skin with slack in the cable, never a silenced alarm or a widened limit. Second, **the reason false alarms are dangerous is that they teach you to expect artifact.** When the same pattern showed in both leads, with symptoms and a falling blood pressure, the answer flipped: that is non-sustained ventricular tachycardia and it needs a nurse, a provider, a 12-lead, and someone staying in the room. Re-ask the question every time rather than reusing the last answer."
+    }
+  ]
+}

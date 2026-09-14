@@ -1,0 +1,1052 @@
+{
+  "schema": 1,
+  "id": "ed-triage",
+  "track": "edtech",
+  "title": "Triage & Acuity",
+  "short": "Triage",
+  "summary": "How an emergency department decides who gets seen first, using the Emergency Severity Index, danger-zone vitals, and the complaints and alerts that jump the line, and exactly what the tech contributes to that decision.",
+  "lessons": [
+    {
+      "id": "ed-triage-l01",
+      "title": "What triage actually is",
+      "minutes": 6,
+      "body": "## Sorting, not serving\n\nThe word comes from the French *trier*, to sort. Triage is the decision about **who can wait and who cannot**, made with very little information, very fast, by a nurse standing between a lobby and a finite number of beds.\n\nIt is not first-come-first-served, and it is not a judgment about who deserves care. It is a prediction: how likely is this person to deteriorate in the next hour, and what will they need.\n\n> **Key:** Triage answers one question. Not \"what is wrong with this person,\" but \"how long can this person safely wait.\"\n\n## Who does what\n\nIn a US emergency department the **registered nurse assigns the acuity level**. That is a licensed assessment and it is not delegable. The tech makes the assessment possible and makes it fast.\n\nWhat the tech contributes is not small. The nurse's decision often turns on a number you obtained: a blood pressure, a respiratory rate, a pulse oximetry reading, a glucose. If your number is wrong, the sorting is wrong.\n\n## The shape of a triage encounter\n\nA good triage takes two to five minutes and follows a fixed shape.\n\n1. **Across-the-room assessment.** Before a single question, look. Color, breathing effort, posture, whether they are talking, whether they walked in or were carried, whether someone is supporting them. Sick people look sick, and experienced staff pick it up in three seconds.\n2. **Chief complaint in their words.** \"Chest pain since this morning,\" not \"rule out MI.\" Quote the patient.\n3. **Vital signs.** A complete set: heart rate, respiratory rate, blood pressure, temperature, pulse oximetry, and pain. Weight in kilograms for any child.\n4. **The focused questions.** Onset, severity, associated symptoms, allergies, medications, relevant history, last menstrual period where relevant, and for anything neurologic, the last known well time.\n5. **Level assignment and placement.** Straight back, waiting room with a recheck interval, or a rapid triage bed.\n\n## Undertriage and overtriage\n\nEvery triage system trades two errors against each other.\n\n**Undertriage** means calling someone less sick than they are. A patient waits, deteriorates, and is found down in a lobby chair. It is the error that kills people.\n\n**Overtriage** means calling someone sicker than they are. It costs a bed, a monitor, and a nurse's attention that another patient needed. It is the error that clogs a department.\n\nEvery system deliberately accepts some overtriage to minimize undertriage. That is why the older man with indigestion gets an EKG, and why a triage nurse who is unsure rounds up. When in doubt, up.\n\n> **On shift:** Triage does not end at the triage desk. A level assigned at 1400 describes a person at 1400. The waiting room is a monitored space, and the tech is usually the one monitoring it.\n\n## Why a formal system exists\n\nBefore standardized scales, triage was expertise and instinct, which meant it varied by who was working. A formal scale, applied the same way by every nurse on every shift, makes sorting reproducible, auditable, and teachable. The dominant system in the United States is the Emergency Severity Index, and nearly every ED you work in will use it.",
+      "keyPoints": [
+        "Triage sorts by how long a person can safely wait, not by arrival order or severity of complaint alone.",
+        "The registered nurse assigns the acuity level; the tech supplies the vitals and speed that make it accurate.",
+        "The across-the-room look comes before any question and catches most critically ill patients in seconds.",
+        "Undertriage kills, overtriage clogs; systems deliberately accept overtriage, so when in doubt round up.",
+        "A triage level describes a moment in time and must be revisited while the patient waits."
+      ],
+      "checks": [
+        {
+          "q": "Who assigns the triage acuity level in a US emergency department?",
+          "choices": [
+            "The registered nurse",
+            "The tech who takes the vital signs",
+            "The unit clerk at registration",
+            "Whichever provider is free"
+          ],
+          "answer": 0,
+          "why": "Acuity assignment is a licensed nursing assessment and cannot be delegated. The tech provides the vitals and speed that make that assessment accurate, which is a real and different contribution."
+        },
+        {
+          "q": "Why do triage systems deliberately accept some overtriage?",
+          "choices": [
+            "It increases hospital revenue",
+            "Because undertriage can cause a death in the waiting room while overtriage only costs resources",
+            "Because overtriage is easier to document",
+            "Because most patients are sicker than they appear"
+          ],
+          "answer": 1,
+          "why": "The two errors are not symmetric. Overtriage wastes a bed and a nurse's attention; undertriage leaves a deteriorating patient unmonitored. Systems tolerate the cheaper error."
+        },
+        {
+          "q": "What is the very first step of a triage encounter?",
+          "choices": [
+            "Take a blood pressure",
+            "Ask for the chief complaint",
+            "The across-the-room assessment: look at color, effort, posture, and speech",
+            "Check the patient's insurance"
+          ],
+          "answer": 2,
+          "why": "Looking takes three seconds and identifies most critically ill patients before any question or measurement. Vitals and history follow; insurance never comes first."
+        }
+      ]
+    },
+    {
+      "id": "ed-triage-l02",
+      "title": "ESI levels 1 and 2: the life threats",
+      "minutes": 8,
+      "body": "## The algorithm in four questions\n\nThe **Emergency Severity Index (ESI)** sorts patients into five levels, 1 being sickest. It runs as four sequential decision points, and you stop at the first yes.\n\n- **A. Is this patient dying?** Yes, then ESI 1.\n- **B. Is this a patient who should not wait?** Yes, then ESI 2.\n- **C. How many resources will this patient need?** None, one, or two or more.\n- **D. Are the vital signs in the danger zone?** If a level 3 has danger-zone vitals, consider upgrading to 2.\n\nVersion 4 and the 2023 version 5 use the same four decision points; version 5 mainly clarified wording and the pediatric fever guidance.\n\n## ESI 1: needs a life-saving intervention now\n\nThe test is concrete: does this patient require an immediate life-saving intervention? Not might, does.\n\nExamples: cardiac arrest, respiratory arrest or agonal breathing, severe respiratory distress needing immediate airway support, unresponsiveness, a patient requiring immediate intubation, severe hypotension with signs of shock, an unstable arrhythmia needing cardioversion, a major trauma with shock, an overdose with a respiratory rate of `6`, a neonate who is limp and gray, anaphylaxis with airway involvement.\n\nESI 1 means the physician is at the bedside immediately and a resuscitation room is used.\n\n## ESI 2: high risk, or should not wait\n\nThis is the hardest level and the one that matters most, because ESI 2 patients look stable enough to sit in a lobby and are not. Three separate gates lead to ESI 2, and any one is enough.\n\n**1. High-risk situation.** The presentation carries a serious threat even if the patient currently looks fine. Chest pain consistent with acute coronary syndrome, stroke symptoms inside the treatment window, a suicidal or homicidal patient, an immunocompromised patient with a fever, an ectopic pregnancy possibility, testicular torsion, a chemical eye splash, a sickle cell patient in a pain crisis, an overdose that is currently awake, a severe asthma or COPD exacerbation.\n\n**2. Confused, lethargic, or disoriented.** Any new alteration in mental status. New confusion in an elderly patient is not old age; it is an emergency until proven otherwise.\n\n**3. Severe pain or distress.** A pain score of `7/10` or more, or obvious severe distress, prompts consideration of ESI 2, with two caveats. A pain score alone does not force the level; the nurse asks whether this patient needs an intervention that cannot wait. A `10/10` ankle sprain in a walking, comfortable-appearing twenty-year-old is not ESI 2. A `7/10` tearing back pain in a 68-year-old with hypertension is. Severe distress also includes emotional distress: the assault victim, the parent of a dying child.\n\n> **Trap:** The classic missed ESI 2 is the patient who is polite, quiet, and does not complain. Stoicism is not a vital sign.\n\n## Danger-zone vital signs\n\nDecision point D exists because some level 3 patients have vitals that predict deterioration. If any of these are present, consider upgrading to ESI 2.\n\n| Age | Heart rate | Respiratory rate | SpO2 |\n|---|---|---|---|\n| 1 to 28 days | over 180 | over 50 | under 92 percent |\n| 1 to 3 months | over 180 | over 40 | under 92 percent |\n| 3 months to 3 years | over 180 | over 35 | under 92 percent |\n| 3 to 8 years | over 140 | over 30 | under 92 percent |\n| Over 8 years and adults | over 100 | over 20 | under 92 percent |\n\n> **Key:** The gut-check question for ESI 2 is: **if I had one open bed, would I give it to this patient?** If yes, they are a 2.",
+      "keyPoints": [
+        "ESI runs four sequential decision points: dying, should not wait, resource count, danger-zone vitals.",
+        "ESI 1 requires an immediate life-saving intervention right now, not potentially.",
+        "ESI 2 has three gates: high-risk presentation, new confusion or lethargy or disorientation, or severe pain or distress.",
+        "A pain score of 7 out of 10 or higher prompts consideration of ESI 2 but does not by itself force it.",
+        "Adult danger-zone vitals are heart rate over 100, respiratory rate over 20, or SpO2 under 92 percent."
+      ],
+      "checks": [
+        {
+          "q": "A 71-year-old woman is brought in by her son, who says she has been 'confused since this morning' but is otherwise well. She is calm and vitals are unremarkable. What ESI level should be considered?",
+          "choices": [
+            "ESI 4, since she needs few resources",
+            "ESI 3, since she will need labs and a CT",
+            "ESI 2, because new confusion or altered mental status is its own gate",
+            "ESI 5, since she has no complaint of her own"
+          ],
+          "answer": 2,
+          "why": "New confusion, lethargy, or disorientation is an independent ESI 2 criterion regardless of vitals or resource count. It can represent stroke, sepsis, hypoglycemia, or bleeding, all of which are time-critical."
+        },
+        {
+          "q": "Which patient is ESI 1 rather than ESI 2?",
+          "choices": [
+            "A 55-year-old with chest pain and a normal blood pressure",
+            "A 30-year-old with an overdose, respiratory rate of 6, and agonal breathing",
+            "A 40-year-old with a fever who is on chemotherapy",
+            "A 22-year-old with suicidal thoughts"
+          ],
+          "answer": 1,
+          "why": "ESI 1 requires an immediate life-saving intervention, and agonal breathing at a rate of 6 needs airway support now. The other three are genuine ESI 2 high-risk presentations, but none requires an intervention this second."
+        },
+        {
+          "q": "A 3-month-old has a heart rate of 190, a respiratory rate of 44, and SpO2 of 96 percent. How do the danger-zone vitals apply?",
+          "choices": [
+            "All values are normal for this age",
+            "Only the SpO2 matters at this age",
+            "Danger-zone vitals apply only to adults",
+            "Heart rate over 180 and respiratory rate over 40 are both in the danger zone, so consider upgrading to ESI 2"
+          ],
+          "answer": 3,
+          "why": "At 1 to 3 months the thresholds are heart rate over 180 and respiratory rate over 40, so two of three are abnormal. Normal SpO2 does not cancel abnormal rate and effort."
+        }
+      ]
+    },
+    {
+      "id": "ed-triage-l03",
+      "title": "ESI 3, 4, and 5: counting resources",
+      "minutes": 7,
+      "body": "## The prediction that separates the bottom three\n\nOnce a patient is not dying and is not high risk, the ESI asks a forecasting question: **how many different kinds of resources will it take to reach a disposition?**\n\n- **Two or more resources: ESI 3.** The largest group in most departments.\n- **Exactly one resource: ESI 4.**\n- **No resources: ESI 5.**\n\nYou are not predicting the diagnosis. You are predicting the workup, and you count **types**, not items. A complete blood count, a metabolic panel, and a troponin drawn at once count as one resource, because they are all labs from one stick.\n\n## What counts as a resource\n\n| Counts as a resource | Does not count |\n|---|---|\n| Labs, of any number, as one | History and physical exam |\n| EKG | Point-of-care testing such as glucose |\n| X-ray, CT, MRI, ultrasound, angiography | Saline lock without fluids |\n| IV fluids for hydration | Oral medications |\n| Medications given IV, IM, or by nebulizer | Tetanus shot |\n| Specialty consultation | Prescription refill |\n| Simple procedure, counts as 1, such as a laceration repair or a Foley catheter | Phone call to a primary care doctor |\n| Complex procedure, counts as 2, such as procedural sedation | Simple wound care, dressing change, recheck |\n| | Crutches, splints, slings |\n\n> **Key:** The dividing line is roughly whether the intervention requires ED-specific staff time and equipment. A prescription and a pair of crutches do not. An IV and a CT do.\n\n## Worked examples\n\n**A 24-year-old with a sore throat for three days, no trouble breathing, temperature `37.8`.** A rapid strep swab is point-of-care and does not count. A prescription does not count. This is **ESI 5**.\n\n**A 30-year-old who twisted an ankle, can bear a little weight, no deformity.** One X-ray. Crutches and a splint do not count. This is **ESI 4**.\n\n**A 45-year-old with two days of abdominal pain and vomiting.** Labs, a CT, IV fluids, and IV antiemetics. That is four resources and easily **ESI 3**.\n\n**A 5 cm forearm laceration needing sutures, no other issue.** Simple procedure equals one resource. This is **ESI 4**, assuming no imaging is needed for a foreign body.\n\n## Where people get it wrong\n\n> **Trap:** The most common error is counting individual tests instead of categories, which pushes everyone into ESI 3 and makes the whole scale useless for staffing and flow.\n\nThe second most common error is forgetting decision point D. A patient who counts out to ESI 3 but whose heart rate is `118` and SpO2 is `90 percent` should be reconsidered as an ESI 2. The resource count never overrides abnormal vital signs.\n\nThe third is treating ESI 4 and 5 as \"not really sick.\" A level 4 is a prediction about resources, not a promise about outcome. People roomed in fast track still deteriorate, and they are usually the least watched patients in the department.\n\n## Why this matters to a tech\n\nThe acuity level sets your rounding interval, tells you which patients will need an IV and labs before the provider even asks, and tells you which lobby patients need a recheck first. Reading an ESI 3 on the board is a prediction you can act on: that patient is getting stuck and scanned, so bring the tubes.",
+      "keyPoints": [
+        "ESI 3 is two or more resource types, ESI 4 is one, ESI 5 is none.",
+        "Resources are counted as types, not items: any number of labs from one draw counts as one.",
+        "Point-of-care tests, oral medications, tetanus shots, prescriptions, crutches, splints, and simple dressings are not resources.",
+        "Danger-zone vitals can upgrade a resource-counted ESI 3 to ESI 2; the count never overrides abnormal vitals.",
+        "ESI 4 and 5 predict resource use, not safety, and those patients are the least monitored in the department."
+      ],
+      "checks": [
+        {
+          "q": "A patient will need a CBC, a metabolic panel, a troponin, and an EKG. How many resources is that?",
+          "choices": [
+            "Two: labs count as one, the EKG counts as one",
+            "Four, one for each test",
+            "One, since it is all one workup",
+            "Three, since the troponin is separate"
+          ],
+          "answer": 0,
+          "why": "Resources are counted by type. All labs drawn together count once; the EKG is a separate type. Counting individual tests inflates everyone to ESI 3 and destroys the scale's usefulness."
+        },
+        {
+          "q": "A healthy 28-year-old needs a single wrist X-ray for a fall, then a splint and a prescription for ibuprofen. What ESI level?",
+          "choices": [
+            "ESI 2",
+            "ESI 3",
+            "ESI 4",
+            "ESI 5"
+          ],
+          "answer": 2,
+          "why": "The X-ray is one resource; splints and prescriptions do not count as resources. One resource equals ESI 4. ESI 5 would require no resources at all."
+        },
+        {
+          "q": "A patient counts out to two resources, but the heart rate is 122 and SpO2 is 89 percent on room air. What should happen?",
+          "choices": [
+            "Assign ESI 3, since the resource count decides",
+            "Assign ESI 4, since fewer resources may be needed",
+            "Assign ESI 5 and recheck later",
+            "Consider upgrading to ESI 2, because danger-zone vitals override the resource count"
+          ],
+          "answer": 3,
+          "why": "Decision point D exists precisely for this. An adult heart rate over 100 and SpO2 under 92 percent are danger-zone values that predict deterioration, and they take precedence over a resource tally."
+        }
+      ]
+    },
+    {
+      "id": "ed-triage-l04",
+      "title": "The complaints that jump the line",
+      "minutes": 8,
+      "body": "## A list you memorize\n\nSome complaints carry a time-critical threat often enough that they bypass the lobby on the words alone, before anyone knows whether this particular patient is sick. Learn these and you will catch things early.\n\n## Cardiac and vascular\n\n**Chest pain**, especially with cardiac risk factors, radiation to jaw or arm, sweating, nausea, or shortness of breath. Gets an EKG within `10 minutes`. Atypical presentations are common in women, diabetics, and the elderly, and can be epigastric pain, fatigue, or breathlessness alone.\n\n**Tearing chest or back pain** with unequal arm pressures suggests aortic dissection.\n\n## Neurologic\n\n**Stroke symptoms**: face droop, arm weakness, speech difficulty, sudden numbness, vision loss, sudden severe imbalance. The critical datum is the **last known well time**, meaning the last moment the patient was seen at their baseline, not the time symptoms were noticed. Get it from whoever last saw them, in a clock time, and get a callback number for that person.\n\n**New severe headache**, especially maximal at onset, the classic \"worst headache of my life,\" which raises subarachnoid hemorrhage.\n\n## Respiratory\n\n**Shortness of breath with hypoxia**, meaning SpO2 under `92 percent`, or with an inability to speak full sentences, tripod posture, or accessory muscle use.\n\n**Anaphylaxis**: hives plus any of throat tightness, swelling of lips or tongue, wheeze, vomiting, or hypotension after an exposure. This is ESI 1 or 2 and needs epinephrine, not an antihistamine and a chair.\n\n## Bleeding and shock\n\n**Active heavy bleeding** anywhere, including gastrointestinal bleeding with vomiting blood or black stools, and any bleeding in a patient on a blood thinner.\n\n**Positive sepsis screen**: infection suspected plus abnormal vitals such as temperature over `38.0 C` or under `36.0 C`, heart rate over `90`, respiratory rate over `20`, or an altered mental state.\n\n## Obstetric and genitourinary\n\n**Pregnancy beyond 20 weeks** with bleeding, abdominal pain, or any trauma. These patients go to labor and delivery in most hospitals, and that routing decision happens at triage.\n\n**Any pregnancy possibility with abdominal pain** raises ectopic pregnancy, which bleeds internally and kills young healthy women.\n\n**Testicular pain of sudden onset** is torsion until proven otherwise. The testicle is salvageable within roughly `6 hours`, so this is an ultrasound and a urologist, immediately, not a urine sample and a wait.\n\n## Fever by age and by immune status\n\n- **Infant under 28 days with a temperature of `38.0 C` (100.4 F) or higher**: minimum ESI 2, full sepsis workup. A newborn cannot localize infection and can look well while bacteremic.\n- **Infant 28 to 90 days with fever**: high risk, usually ESI 2, and workup varies by protocol.\n- **Fever in a patient on chemotherapy, with a transplant, on immunosuppressants, or without a spleen**: ESI 2, and antibiotics are time-critical. Febrile neutropenia has a target of antibiotics within `60 minutes`.\n\n## Behavioral and exposure\n\n**Suicidal or homicidal ideation** is ESI 2. Safety intervention is the immediate life-saving intervention here.\n\n**Chemical splash to the eye** goes straight to irrigation before anything else, including before registration. Minutes of contact time determine whether the eye survives, particularly with alkalis such as lye, drain cleaner, and cement.\n\n> **On shift:** Three sentences from a patient should move your feet before you finish hearing the rest: \"my chest hurts,\" \"I got something in my eye,\" and \"my baby feels hot.\"",
+      "keyPoints": [
+        "Chest pain gets a 12-lead EKG within 10 minutes; atypical presentations dominate in women, diabetics, and the elderly.",
+        "For stroke symptoms, last known well time is the number that decides treatment eligibility.",
+        "Testicular torsion is salvageable within roughly 6 hours and needs immediate ultrasound and urology.",
+        "Fever of 38.0 C or higher in an infant under 28 days is a minimum ESI 2 with a full workup.",
+        "Chemical eye splash goes to irrigation before registration, since contact time determines the outcome."
+      ],
+      "checks": [
+        {
+          "q": "A family says their father 'was fine when he went to bed at 10 p.m.' and was found with slurred speech and a facial droop at 6 a.m. What is the last known well time?",
+          "choices": [
+            "6 a.m., when symptoms were found",
+            "10 p.m., the last moment he was seen at his baseline",
+            "Midnight, as a midpoint estimate",
+            "Unknown, so it cannot be recorded"
+          ],
+          "answer": 1,
+          "why": "Last known well is the last moment the patient was verifiably at baseline, not when symptoms were discovered. Using 6 a.m. would wrongly suggest he is inside the thrombolysis window; midpoints are not used."
+        },
+        {
+          "q": "A 16-year-old reports sudden severe left testicular pain starting two hours ago with nausea. What is the correct triage response?",
+          "choices": [
+            "Collect a urine sample and place him in the waiting room",
+            "ESI 4, since it is a single complaint",
+            "Immediate evaluation for possible testicular torsion, which is time-critical to salvage",
+            "Route him to fast track for a urinalysis"
+          ],
+          "answer": 2,
+          "why": "Sudden testicular pain is torsion until proven otherwise, and the salvage window is roughly 6 hours. A urinalysis in the lobby wastes the window, and no version of this belongs in fast track."
+        },
+        {
+          "q": "A 19-day-old infant is brought in with a rectal temperature of 38.3 C and is feeding normally. What is the correct acuity?",
+          "choices": [
+            "ESI 5, since he is feeding well",
+            "ESI 4, one resource for a urinalysis",
+            "ESI 3, two or more resources",
+            "At minimum ESI 2, because fever under 28 days of age is high risk regardless of appearance"
+          ],
+          "answer": 3,
+          "why": "Neonates cannot localize infection and can appear well while bacteremic, so a temperature of 38.0 C or higher under 28 days is a minimum ESI 2 with a full sepsis workup. Normal feeding does not lower the risk."
+        }
+      ]
+    },
+    {
+      "id": "ed-triage-l05",
+      "title": "The alerts and their clocks",
+      "minutes": 8,
+      "body": "## Why alerts exist\n\nFor four conditions, outcome is a function of minutes, and no single person can assemble the needed team fast enough by making phone calls. So the hospital built a page: one call, and a pre-assigned team drops what it is doing and converges.\n\n## Code STEMI\n\nA **ST-elevation myocardial infarction** means a coronary artery is completely blocked and heart muscle is dying at a measurable rate. The fix is mechanical: a catheter opens the artery.\n\n- EKG within **`10 minutes`** of arrival for any chest pain or anginal equivalent.\n- **Door-to-balloon `90 minutes`** at a hospital with a cath lab.\n- `120 minutes` from first medical contact if the patient must be transferred to a PCI-capable hospital, with a door-in-door-out target of `30 minutes`.\n- If no catheterization is available in time, thrombolytics within `30 minutes` of arrival.\n\n**What the tech does when STEMI is called:** get or repeat the 12-lead, place defibrillator pads, put on the monitor, ensure two IVs are in progress with the nurse, draw labs, help move the patient and the bed toward the cath lab, and clear the hallway. Speed here is measurable in muscle.\n\n## Code Stroke\n\nAn artery in the brain is blocked, and roughly `1.9 million` neurons die per minute.\n\n- **Door-to-CT started: `25 minutes`.**\n- Door-to-CT interpreted: `45 minutes`.\n- **Door-to-needle for thrombolytics: `60 minutes`**, and many centers now target `45` or `30`.\n- IV thrombolytic window: `4.5 hours` from last known well.\n- Thrombectomy for a large vessel occlusion: up to `24 hours` from last known well in carefully selected patients.\n\n**What the tech does:** get the patient onto a transportable bed, obtain a point-of-care glucose immediately because hypoglycemia mimics stroke exactly, get vitals with blood pressures in both arms, remove metal and jewelry for the scanner, find the last known well time and a family callback number, and be ready to move to CT the second the team says go. Nothing goes in the mouth, not even water.\n\n## Code Sepsis\n\nInfection has triggered a body-wide response that is dropping perfusion. The evidence-based bundle is time-boxed.\n\nThe **1-hour bundle**:\n\n1. Measure **lactate**, and repeat it if the first is over `2 mmol/L`.\n2. Obtain **blood cultures before antibiotics**.\n3. Give **broad-spectrum antibiotics**.\n4. Begin **`30 mL/kg` crystalloid** for hypotension or a lactate of `4 mmol/L` or higher.\n5. Add **vasopressors** if the patient remains hypotensive, targeting a mean arterial pressure of at least `65 mmHg`.\n\n**What the tech does:** draw the lactate and the blood cultures fast and correctly, before antibiotics hang. Two sets of cultures from two separate sites with sterile technique. Get an accurate temperature and a full set of vitals, and get a urine specimen.\n\n> **Key:** Blood cultures before antibiotics is the one step in the sepsis bundle that a tech can personally ruin. Once antibiotics are in, the cultures may never identify the organism.\n\n## Trauma activation\n\nMost centers use two or three tiers. Criteria vary by hospital and state trauma system; these are typical.\n\n**Full activation, the highest tier:** systolic blood pressure under `90` at any point in an adult, airway compromise or intubation, Glasgow Coma Scale under `9` with trauma, gunshot wounds to the head, neck, chest, abdomen, or proximal to the elbow or knee, a transferred patient receiving blood, or physician judgment.\n\n**Partial activation:** falls over `20 feet` for an adult, ejection from a vehicle, death of another occupant in the same compartment, intrusion over `12 inches` at the occupant site, auto versus pedestrian thrown or run over, motorcycle crash over `20 mph`, amputation proximal to the wrist or ankle, crushed or mangled extremity, pelvic fracture, or paralysis.\n\n**What the tech does:** get the trauma bay ready, cut off clothing, place the monitor and pulse oximeter, assist with the log roll, run blood to the lab, and get the patient to CT. Trauma is choreography, so learn your position and stay in it.",
+      "keyPoints": [
+        "STEMI: EKG in 10 minutes, door-to-balloon 90 minutes, 120 minutes if transfer is needed.",
+        "Stroke: door-to-CT started in 25 minutes, door-to-needle in 60 minutes, thrombolytics within 4.5 hours of last known well, thrombectomy up to 24 hours in selected patients.",
+        "Point-of-care glucose is mandatory in any suspected stroke because hypoglycemia mimics it exactly.",
+        "Sepsis 1-hour bundle: lactate, blood cultures before antibiotics, broad-spectrum antibiotics, 30 mL/kg crystalloid for hypotension or lactate of 4 or more, vasopressors to a MAP of 65.",
+        "Trauma full activation typically includes systolic pressure under 90, airway compromise, GCS under 9, or penetrating truncal injury."
+      ],
+      "checks": [
+        {
+          "q": "A code sepsis is called. The nurse is preparing antibiotics while you are setting up to draw labs. What is the correct sequence?",
+          "choices": [
+            "Draw blood cultures before the antibiotics are given",
+            "Give antibiotics first, then draw cultures within the hour",
+            "Draw cultures only if the lactate is elevated",
+            "Skip cultures if the source of infection is obvious"
+          ],
+          "answer": 0,
+          "why": "Antibiotics can sterilize the sample within minutes, so cultures drawn afterward often fail to identify the organism and therapy cannot be narrowed. The bundle requires cultures first, regardless of lactate or apparent source."
+        },
+        {
+          "q": "A code stroke is activated. Which tech task is most likely to change the diagnosis itself?",
+          "choices": [
+            "Removing jewelry before the scan",
+            "Obtaining a point-of-care glucose immediately",
+            "Getting blood pressures in both arms",
+            "Moving the patient to a transportable bed"
+          ],
+          "answer": 1,
+          "why": "Hypoglycemia can produce focal deficits identical to stroke and is corrected in minutes. All the other tasks matter for speed and safety, but only the glucose can reveal that this is not a stroke at all."
+        },
+        {
+          "q": "A chest pain patient's EKG shows ST elevation and a code STEMI is called at a hospital with a cath lab. What is the door-to-balloon target?",
+          "choices": [
+            "30 minutes",
+            "60 minutes",
+            "90 minutes",
+            "120 minutes"
+          ],
+          "answer": 2,
+          "why": "Ninety minutes from arrival to balloon inflation is the standard for a PCI-capable hospital. The 120-minute figure applies when a transfer is required, and 30 minutes is the thrombolytic target when catheterization is not available."
+        }
+      ]
+    },
+    {
+      "id": "ed-triage-l06",
+      "title": "Getting the triage numbers right",
+      "minutes": 7,
+      "body": "## Your numbers drive the decision\n\nA triage level is assigned partly from numbers you produce in two minutes under pressure. A bad number causes a bad level, and a bad level causes a wait.\n\n## Blood pressure\n\nThe automatic cuff is fast and it lies under specific, predictable conditions: atrial fibrillation and other irregular rhythms, shivering or tremor, a moving arm, a cuff that is the wrong size, an arm that is not supported at heart level, and severe hypotension.\n\n**Repeat manually when the machine gives you something surprising.** A cuff reading of `70/40` in a comfortable, chatting patient is usually artifact. A reading of `180/110` in a quiet patient may be a wrong cuff size.\n\nCuff size rule: the bladder should cover about `80 percent` of the arm circumference and about `40 percent` of the arm width. A cuff that is too small reads falsely high; too large reads falsely low. The arm is supported at heart level, the patient is seated with feet on the floor, and neither of you is talking.\n\nAvoid arms with a dialysis fistula, a mastectomy on that side, a PICC line, injury, or an IV running.\n\n## Respiratory rate\n\nThe most falsified vital sign in medicine. \"16\" charted without looking is worthless, and respiratory rate is one of the best early predictors of deterioration there is. Count for `30 seconds` and double it, or a full `60 seconds` if irregular, while appearing to do something else so the patient does not alter their breathing.\n\n## Pulse oximetry\n\nA number without a waveform or a matching pulse rate is not trustworthy. Cold fingers, nail polish, poor perfusion, and motion all corrupt it. If the displayed pulse does not match the pulse you feel, the saturation is unreliable. Try a different finger, an earlobe, or warm the hand. Document room air versus oxygen, and if on oxygen, the device and the flow rate.\n\n## Temperature\n\nRoute matters and gets documented. Oral requires no hot or cold drinks for `15 minutes` and a closed mouth, which a mouth-breather cannot do. Temporal and tympanic are fast and less accurate. **Rectal is the standard for infants** and for any patient where an accurate core temperature changes the decision, such as a suspected sepsis or a hypothermic patient.\n\n## Pain\n\nAsk `0 to 10`, record the number the patient says, and never argue with it. Also record what you observe, since both matter: \"states 9 out of 10, sitting still, guarding right lower abdomen, will not let me touch it.\" For children use a faces scale; for nonverbal or demented patients use a behavioral scale such as grimacing, guarding, restlessness, and vocalization.\n\n## Weight\n\n**Every child is weighed in kilograms, actual weight, not a parent's estimate.** Every pediatric drug dose, fluid bolus, and defibrillation energy is per kilogram, and a pounds-for-kilograms error is a `2.2`-fold overdose. If a child cannot be weighed, a length-based tape such as a Broselow gives an estimate.\n\n## The standing orders you can act on\n\nMost EDs have triage standing orders, called protocols or nurse-initiated orders, that let you act before a provider sees the patient. Typically:\n\n- **12-lead EKG** for chest pain, shortness of breath, syncope, palpitations, or epigastric pain over about age `40`.\n- **Point-of-care glucose** for any altered mental status, weakness, or possible stroke.\n- **Urine pregnancy test** for abdominal pain in a person of childbearing potential.\n- **Ice, elevation, and a splint** for an obvious extremity injury.\n- **Eye irrigation** for a chemical splash.\n\n> **On shift:** Know your department's triage standing orders by heart. They are the only situations where you may act before anyone tells you to, and using them well is the fastest way to be trusted.",
+      "keyPoints": [
+        "Repeat a surprising automatic blood pressure manually; irregular rhythms, motion, wrong cuff size, and hypotension all fool the machine.",
+        "Cuff bladder should cover about 80 percent of arm circumference; too small reads high, too large reads low.",
+        "Count respirations for a full 30 to 60 seconds; it is the best early predictor of deterioration and the most commonly falsified.",
+        "Pulse oximetry is trustworthy only with a good waveform and a displayed pulse matching the palpated pulse.",
+        "Weigh every child in kilograms; all pediatric dosing is weight based and a pounds error is a 2.2-fold overdose."
+      ],
+      "checks": [
+        {
+          "q": "The automatic cuff reads 76/44 on a 60-year-old who is sitting up, talking comfortably, with warm dry skin. What do you do?",
+          "choices": [
+            "Chart it and move on",
+            "Call for a rapid response immediately",
+            "Repeat it manually with a correctly sized cuff, then report the verified number",
+            "Change the cuff to the other arm and use the machine again only"
+          ],
+          "answer": 2,
+          "why": "A reading that does not match the patient in front of you needs manual verification before anyone acts on it. Charting it blindly may mislabel him, and calling a rapid response on an artifact wastes the team. Machine-only rechecks can repeat the same error."
+        },
+        {
+          "q": "Why must every pediatric patient be weighed in kilograms?",
+          "choices": [
+            "For billing accuracy",
+            "Because every pediatric dose, fluid bolus, and defibrillation energy is calculated per kilogram, and a pounds error is a 2.2-fold overdose",
+            "Because parents usually do not know the weight",
+            "Because metric units are required for charting"
+          ],
+          "answer": 1,
+          "why": "Weight-based dosing means the weight is a drug calculation input. Entering pounds where kilograms are expected multiplies the dose by about 2.2. Charting conventions and parental recall are secondary concerns."
+        },
+        {
+          "q": "A pulse oximeter reads 88 percent, but the displayed pulse is 52 while you palpate a radial pulse of 88. What is the correct interpretation?",
+          "choices": [
+            "The patient is hypoxic and needs oxygen immediately",
+            "The heart rate is 52 and the patient is bradycardic",
+            "The reading is unreliable; try another site or warm the hand, and reassess",
+            "Both numbers are accurate and should be charted as they are"
+          ],
+          "answer": 2,
+          "why": "When the oximeter's pulse does not match the palpated pulse, the device is not tracking the true pulsatile signal and the saturation cannot be trusted. Acting on an unverified number, in either direction, is the error."
+        }
+      ]
+    },
+    {
+      "id": "ed-triage-l07",
+      "title": "The waiting room is a monitored space",
+      "minutes": 7,
+      "body": "## A level is a snapshot\n\nAn ESI level describes a patient at the minute it was assigned. Illness moves. The appendix that was tender at 1400 perforates at 1700, the pneumonia that had a saturation of `94 percent` drifts to `88 percent`, and the gastrointestinal bleeder who felt fine keeps bleeding.\n\nEvery serious waiting room event has the same structure: a patient was correctly triaged, then changed, and nobody looked again.\n\n> **Key:** Reassessment is not a courtesy. It is the safety net under every triage decision, and the tech is usually the one holding it.\n\n## Who gets rechecked and how often\n\nIntervals vary by hospital, but a common pattern:\n\n| Level | Recheck interval in the waiting room |\n|---|---|\n| ESI 2 | Should not be waiting at all; if unavoidable, continuous or every 15 minutes with escalation |\n| ESI 3 | Every 30 to 60 minutes, full vitals |\n| ESI 4 and 5 | Every 60 to 120 minutes, or on any change |\n\nPriority for rechecks: anyone with abnormal initial vitals, anyone in pain, anyone over 65, any child under 2, anyone who came by ambulance and got routed to the lobby, anyone on blood thinners, anyone pregnant, and anyone whose family keeps approaching the desk.\n\n## The signs a waiting patient is going bad\n\nThese are the things that precede a lobby collapse, and most are visible without touching anyone.\n\n- **New confusion.** Answering differently than they did an hour ago, or a family member saying \"he wasn't like this before.\"\n- **Sweating.** Cool, clammy, damp forehead in an air-conditioned room is a shock sign until proven otherwise.\n- **Cannot complete a sentence.** Counting the words between breaths is a real measurement. Three-word sentences are bad.\n- **Skin change.** Gray, mottled, pale, or blue lips and fingertips.\n- **Posture change.** Someone who was sitting upright is now slumped, or lying across chairs, or leaning forward with hands on their knees.\n- **\"He's not himself.\"** Families are comparing against a baseline you have never seen. Believe them.\n- **The patient who stops complaining.** This one gets people killed. The loud, demanding patient who goes quiet has not improved. Deterioration is quiet.\n- **A child who stops crying or stops playing.** A crying child is using energy. A limp, silent, uninterested child is a different situation entirely.\n\n## How to escalate\n\nGo to the triage nurse, or if they are mid-assessment, to the charge nurse. Do not put it in the chart and wait.\n\nUse the same structure every time: who, what changed, what you did, what you need.\n\n\"Triage, the 58-year-old with abdominal pain in chair 4, he was awake and talking at 1500, now he is diaphoretic and slumped over, heart rate went from 96 to 128 and his pressure is 88 over 50, I rechecked it manually, he needs to come back now.\"\n\nIf you cannot find a nurse and the patient looks bad, say it loudly to the department. Nobody has ever been disciplined for pulling a nurse to a patient who turned out to be fine.\n\n> **Trap:** \"I'll tell the nurse when she's done\" is how waiting room deaths happen. If the change is significant, interrupt.\n\n## Say something to the patient, too\n\nEvery recheck is also a chance to reset expectations. Give an honest status and a next step. Never promise a specific time you do not control, and never say \"you're next\" unless you have been told so by the charge nurse. A patient who understands the sorting rule tolerates the wait; a patient who feels forgotten leaves without being seen, and LWBS patients are the ones who come back sicker.",
+      "keyPoints": [
+        "A triage level is a snapshot; waiting room reassessment is the safety net under it.",
+        "Typical intervals are 30 to 60 minutes for ESI 3 and 60 to 120 minutes for ESI 4 and 5, more often for abnormal vitals.",
+        "Deterioration signs include new confusion, diaphoresis, inability to complete a sentence, mottled skin, and slumping posture.",
+        "The patient who stops complaining and the child who stops crying are both deteriorating until proven otherwise.",
+        "Escalate verbally and immediately with who, what changed, what you did, what you need; do not chart and wait."
+      ],
+      "checks": [
+        {
+          "q": "A patient in the lobby has been loudly demanding to be seen for an hour. He is now sitting quietly with his eyes closed. What is your interpretation?",
+          "choices": [
+            "He has calmed down and can be rechecked on schedule",
+            "He may be deteriorating; assess him now and escalate if abnormal",
+            "He fell asleep, which is reassuring",
+            "He is being manipulative and should be ignored"
+          ],
+          "answer": 1,
+          "why": "A patient who was loud and becomes quiet has often decompensated, not improved. Complaining takes energy. Assume deterioration and verify rather than waiting for the next scheduled check."
+        },
+        {
+          "q": "A daughter tells you her mother 'is just not herself today,' but the mother's vital signs are all within normal limits. What do you do?",
+          "choices": [
+            "Reassure her that the vitals are normal",
+            "Document the family's concern and continue the normal interval",
+            "Tell the nurse about the reported mental status change, because the family is comparing to a baseline you have never seen",
+            "Ask the daughter to wait until the provider comes"
+          ],
+          "answer": 2,
+          "why": "Family observations of altered mental status are a recognized high-risk signal and an independent ESI 2 gate. Normal vitals do not exclude stroke, sepsis, or hypoglycemia, and documentation without verbal escalation buries the finding."
+        },
+        {
+          "q": "What is a typical waiting room reassessment interval for an ESI 3 patient?",
+          "choices": [
+            "Every 5 minutes",
+            "Every 30 to 60 minutes with a full set of vitals",
+            "Every 4 hours",
+            "Only when the patient reports a change"
+          ],
+          "answer": 1,
+          "why": "ESI 3 patients are resource-heavy and may have borderline vitals, so 30 to 60 minutes is standard. Five minutes is not sustainable for a lobby, and 4 hours or patient-initiated checks both leave deterioration undetected."
+        }
+      ]
+    },
+    {
+      "id": "ed-triage-l08",
+      "title": "Children and psychiatric patients at triage",
+      "minutes": 8,
+      "body": "## Children compensate, then crash\n\nA child's cardiovascular system defends blood pressure ferociously by raising heart rate and clamping down peripheral vessels. The consequence is brutal: **a child's blood pressure stays normal until they are nearly out of reserve, and then it falls suddenly.** Hypotension in a child is a late, ominous finding, not an early warning.\n\nSo pediatric triage watches the things that change early: appearance, work of breathing, and skin.\n\n## The pediatric assessment triangle\n\nA structured version of the across-the-room look, done in under `30 seconds` without touching the child.\n\n- **Appearance.** Tone, interactiveness, consolability, gaze, speech or cry. A floppy, uninterested, inconsolable, or staring child is abnormal.\n- **Work of breathing.** Nasal flaring, grunting, retractions between and below the ribs, head bobbing, tripod posture, abnormal sounds.\n- **Circulation to skin.** Pallor, mottling, blue lips or fingers.\n\nAny one side abnormal means the child is not well. Two sides abnormal is a sick child now.\n\n## Fever rules by age\n\n- **Under 28 days, temperature `38.0 C` (100.4 F) or higher:** minimum ESI 2, full sepsis workup regardless of appearance.\n- **28 to 90 days with fever:** high risk, commonly ESI 2, workup by protocol.\n- **3 months to 3 years with a temperature at or above `39.0 C` (102.2 F):** consider ESI 3 when immunizations are incomplete or there is no obvious source.\n- Rectal temperature is the standard under 3 months.\n\n## Hydration and weight\n\nAsk about wet diapers, which should be at least three to four in `24 hours` for an infant, tears when crying, and oral intake. Look for a sunken fontanelle in an infant, dry lips and mouth, and delayed capillary refill over `2 seconds`.\n\nEverything is weight based, in kilograms, from a real scale. A Broselow length-based tape estimates weight when a scale is not possible.\n\n> **Trap:** A normal blood pressure never reassures you about a child. Look at the triangle.\n\n## Psychiatric triage\n\nA psychiatric complaint is a medical triage, not a lesser one. Suicidal or homicidal ideation is ESI 2, and these patients also have medical problems at high rates: overdose, head injury, infection, hypoglycemia, withdrawal.\n\n**Screening.** Most EDs screen with the Columbia Suicide Severity Rating Scale (C-SSRS). The screener asks, in escalating order: have you wished you were dead or could go to sleep and not wake up; have you had thoughts of killing yourself; have you thought about how you might do it; have you had some intention of acting on those thoughts; have you worked out details and do you intend to carry the plan out; and have you ever done anything, started to do anything, or prepared to do anything to end your life. **Intent and plan raise the risk sharply, and any preparatory behavior is high risk.** The tech may collect the screen depending on hospital policy; the interpretation belongs to a licensed clinician.\n\n**Safety.** Change the patient into paper scrubs and search and secure belongings and clothing. What comes out is routine and startling: pills, lighters, blades, shoelaces, belts, cords, phone chargers, drawstrings, and glass. Remove **ligature risks**, which are anything that can form a loop: IV tubing, oxygen tubing, call bell cords, blood pressure cuff hoses, gowns with ties, plastic bags.\n\nPlace them in a **safe room** with line of sight and a camera, and assign a sitter or security per policy. Do not leave a psychiatric patient in a standard room with equipment.\n\n**Medical clearance** means the ED has evaluated for a medical cause or complication of the presentation, and that the patient is medically stable to be accepted for psychiatric care. It does not mean nothing is wrong; it means nothing medical is driving this that the ED must treat first. Requirements vary widely by hospital and by receiving facility.\n\n> **On shift:** Talk to psychiatric patients exactly the way you talk to everyone else. Use their name, explain what you are doing before you do it, and ask before you touch. The paper scrubs and the searched bag are humiliating enough without a change in your tone.",
+      "keyPoints": [
+        "Children keep blood pressure normal until they are nearly decompensated; hypotension in a child is late and ominous.",
+        "The pediatric assessment triangle is appearance, work of breathing, and circulation to skin, done without touching the child.",
+        "Fever of 38.0 C or higher under 28 days is a minimum ESI 2 with a full sepsis workup regardless of how well the infant looks.",
+        "Suicidal or homicidal ideation is ESI 2; the C-SSRS screens for ideation, plan, intent, and preparatory behavior.",
+        "Psychiatric safety means paper scrubs, searched and secured belongings, removal of all ligature risks, a safe room, and a sitter."
+      ],
+      "checks": [
+        {
+          "q": "An 18-month-old has a heart rate of 178, capillary refill of 3 seconds, mottled skin, and a blood pressure of 92/58. How should this be read?",
+          "choices": [
+            "Reassuring, because the blood pressure is normal for age",
+            "Concerning: tachycardia, delayed capillary refill, and mottling indicate compensated shock despite a normal pressure",
+            "Concerning only if the child also has a fever",
+            "Normal findings for a crying toddler"
+          ],
+          "answer": 1,
+          "why": "Children maintain blood pressure by increasing heart rate and vasoconstricting, so a normal pressure with tachycardia, mottling, and delayed refill is compensated shock. Waiting for hypotension in a child means waiting until they are nearly out of reserve."
+        },
+        {
+          "q": "Which C-SSRS response indicates the highest risk?",
+          "choices": [
+            "Wishing to be dead",
+            "Thoughts of killing oneself with no method considered",
+            "Having recently begun preparatory behavior, such as buying pills or writing a note",
+            "A method considered but no intention to act"
+          ],
+          "answer": 2,
+          "why": "The scale escalates from passive wish, to ideation, to method, to intent, to plan with intent, to preparatory or actual behavior. Any preparatory act is the highest-risk category on the screener."
+        },
+        {
+          "q": "A patient is placed in a safe room on a psychiatric hold. Which item must be removed?",
+          "choices": [
+            "The bed",
+            "The overhead light",
+            "The oxygen tubing, call bell cord, and blood pressure cuff hose",
+            "Nothing, as long as a sitter is present"
+          ],
+          "answer": 2,
+          "why": "Anything that can form a loop is a ligature risk and must be removed, including tubing, cords, and hoses. A sitter reduces but does not eliminate risk, and safe rooms are designed to remove the means as well as observe."
+        }
+      ]
+    },
+    {
+      "id": "ed-triage-l09",
+      "title": "Mass casualty triage, and the patients we get wrong",
+      "minutes": 7,
+      "body": "## When the rules invert\n\nDaily triage gives the most resources to the sickest patient. Mass casualty triage does the opposite: when demand overwhelms supply, the goal becomes **the greatest good for the greatest number**, and patients whose survival would require enormous resources are categorized as *expectant*.\n\nThat inversion is ethically hard and it is the point of practicing it in advance.\n\n## START\n\n**Simple Triage and Rapid Treatment**, for adults, about `30 seconds` per patient, four color categories: green (minor), yellow (delayed), red (immediate), black (deceased or expectant).\n\n1. **Ask everyone who can walk to move to a designated area.** They are green, and this single step often removes half the patients from the problem.\n2. **Respirations.** No breathing after one airway opening maneuver means black. Breathing over `30` per minute means red.\n3. **Perfusion.** Absent radial pulse, or capillary refill over `2 seconds`, means red. Control major bleeding.\n4. **Mental status.** Cannot follow a simple command means red.\n5. Anything else is yellow.\n\nOnly two interventions happen during START: open the airway and stop major bleeding. Nothing else, because stopping to treat one patient means twenty go unsorted.\n\n**JumpSTART** is the pediatric version, which adds five rescue breaths for an apneic child with a pulse, because children arrest from respiratory causes.\n\n## SALT\n\n**Sort, Assess, Lifesaving interventions, Treatment and transport.** A newer national model. It sorts globally by movement first, does individual assessment, allows a short list of lifesaving interventions including airway opening, chest decompression, hemorrhage control, and antidotes, then assigns immediate, delayed, minimal, expectant, or dead.\n\n## Surge, and what a tech does\n\nAn incident notification means the department empties itself: discharge-ready patients go out, admitted patients go upstairs, the hallway fills with stretchers, and staff get assigned to a role rather than a zone.\n\nYour likely jobs: move beds and equipment, strip and turn over rooms fast, stage supplies such as trauma trays and IV setups and blood tubes, escort discharged patients out, transport, and runner duty. **Reverse triage** is the term for discharging or moving out the least sick inpatients to create capacity.\n\n**Lockdown** restricts entry to controlled points. Wear your badge visibly, expect to be stopped, and do not prop doors open for anyone, including staff you recognize.\n\n## Who gets undertriaged, and why\n\nTriage is a human judgment under time pressure, which means it carries human bias. The patterns are well documented.\n\n- **Older adults.** They present atypically. Sepsis without a fever, a heart attack without chest pain, a hip fracture that still walks. A slightly abnormal vital sign in an 80-year-old means more, not less.\n- **Sickle cell patients in pain crisis.** Repeatedly documented to wait longer and receive less analgesia than other severe pain. Their pain is real, their tolerance is high from experience, and their crisis can be accompanied by acute chest syndrome, which kills.\n- **Patients who do not speak English.** Use a real interpreter, by phone, video, or in person. Never a family member for clinical information and never a child. Interpretation errors cause undertriage directly.\n- **Patients with a psychiatric history.** A documented diagnosis makes new physical complaints get attributed to it. This is called diagnostic overshadowing, and psychiatric patients have higher rates of serious medical illness, not lower.\n- **Frequent visitors.** The person who comes in weekly will eventually come in with something that kills them, and the whole risk is that everyone assumes it is the usual visit.\n- **Women with cardiac symptoms** and **patients with substance use disorders** show the same pattern of delayed workup.\n\n> **Key:** Bias is not fixed by intending to be fair. It is fixed by process. Take the vitals the same way on every patient, believe the reported pain, use the interpreter, and treat the frequent visitor's visit as a new visit.",
+      "keyPoints": [
+        "Mass casualty triage inverts daily priorities toward the greatest good for the greatest number, including an expectant category.",
+        "START sorts adults in about 30 seconds using walking ability, respirations over 30, absent radial pulse or capillary refill over 2 seconds, and ability to follow commands.",
+        "The only interventions during START are opening the airway and controlling major bleeding; JumpSTART adds five rescue breaths for apneic children with a pulse.",
+        "Reverse triage moves out the least sick patients to create capacity during a surge.",
+        "Undertriage concentrates in older adults, sickle cell pain crises, non-English speakers, psychiatric patients, and frequent visitors, and is countered with consistent process rather than good intentions."
+      ],
+      "checks": [
+        {
+          "q": "During a START triage, a patient is breathing at 34 per minute. What category?",
+          "choices": [
+            "Green, since he is breathing",
+            "Red, immediate, because a respiratory rate over 30 meets the criterion",
+            "Yellow, delayed, pending a pulse check",
+            "Black, expectant"
+          ],
+          "answer": 1,
+          "why": "A respiratory rate over 30 is an immediate, red category in START without needing further assessment. You stop at the first positive criterion; perfusion and mental status are checked only if respirations are adequate."
+        },
+        {
+          "q": "A 29-year-old with sickle cell disease reports 9 out of 10 pain and is calmly scrolling his phone while waiting. How should this be triaged?",
+          "choices": [
+            "Lower acuity, since his behavior does not match his reported pain",
+            "As reported severe pain, with attention to acute chest syndrome, because behavioral tolerance is learned and this group is documented to be undertriaged",
+            "As a drug-seeking presentation requiring provider review before any acuity is assigned",
+            "ESI 5, since a pain crisis is a chronic condition"
+          ],
+          "answer": 1,
+          "why": "Patients with a lifetime of severe recurrent pain often display far less distress than the pain warrants. Sickle cell patients are documented to wait longer and receive less analgesia, and a crisis can be complicated by acute chest syndrome, which is lethal."
+        },
+        {
+          "q": "A patient who speaks only Haitian Creole arrives with abdominal pain. Her adult son offers to interpret. What is correct?",
+          "choices": [
+            "Use the son, since he knows her history best",
+            "Use gestures and the vital signs to triage",
+            "Use a professional interpreter by phone, video, or in person",
+            "Wait for a bilingual staff member to become free"
+          ],
+          "answer": 2,
+          "why": "Professional interpretation is required for clinical information; family members omit, editorialize, and may be part of the problem in cases of abuse. Gesturing produces undertriage, and waiting delays the assessment."
+        }
+      ]
+    }
+  ],
+  "cards": [
+    { "id": "ed-triage-c001", "front": "What single question does triage answer?", "back": "Not what is wrong with this person, but how long can this person safely wait before deteriorating. It is a prediction about time and resources, not a diagnosis.", "lesson": "ed-triage-l01" },
+    { "id": "ed-triage-c002", "front": "Who assigns acuity, and what does the tech contribute?", "back": "The registered nurse assigns the level; it is a licensed assessment and not delegable. The tech supplies accurate vitals and speed, and the nurse's decision often turns on a number the tech obtained.", "lesson": "ed-triage-l01" },
+    { "id": "ed-triage-c003", "front": "What are the five steps of a triage encounter?", "back": "Across-the-room assessment, chief complaint in the patient's words, full vital signs, focused questions including last known well where relevant, then level assignment and placement.", "lesson": "ed-triage-l01" },
+    { "id": "ed-triage-c004", "front": "Undertriage versus overtriage: which error do systems accept and why?", "back": "Overtriage. It costs a bed and staff attention. Undertriage leaves a deteriorating patient unwatched and can kill. When unsure, round up.", "lesson": "ed-triage-l01" },
+    { "id": "ed-triage-c005", "front": "What are the four ESI decision points?", "back": "A: is the patient dying, ESI 1. B: should this patient not wait, ESI 2. C: how many resource types, giving 3, 4, or 5. D: are vital signs in the danger zone, which can upgrade a 3 to a 2.", "lesson": "ed-triage-l02" },
+    { "id": "ed-triage-c006", "front": "What defines ESI 1?", "back": "The patient requires an immediate life-saving intervention right now. Arrest, agonal breathing, unresponsiveness, need for immediate intubation, severe shock, unstable arrhythmia needing cardioversion.", "lesson": "ed-triage-l02" },
+    { "id": "ed-triage-c007", "front": "What are the three gates into ESI 2?", "back": "A high-risk situation, new confusion or lethargy or disorientation, or severe pain or distress. Any one alone is enough.", "lesson": "ed-triage-l02" },
+    { "id": "ed-triage-c008", "front": "Name six high-risk presentations that make a patient ESI 2.", "back": "Chest pain suggesting acute coronary syndrome, stroke symptoms in window, suicidal or homicidal ideation, fever in an immunocompromised patient, possible ectopic pregnancy, testicular torsion, chemical eye splash, severe asthma.", "lesson": "ed-triage-l02" },
+    { "id": "ed-triage-c009", "front": "How does a pain score factor into ESI 2?", "back": "A score of 7 out of 10 or higher prompts consideration of ESI 2, but does not force it. The nurse asks whether the patient needs an intervention that cannot wait. A 10 out of 10 ankle sprain is not ESI 2.", "lesson": "ed-triage-l02" },
+    { "id": "ed-triage-c010", "front": "What are adult danger-zone vital signs?", "back": "Heart rate over 100, respiratory rate over 20, or SpO2 under 92 percent. Any of these should prompt considering an upgrade from ESI 3 to ESI 2.", "lesson": "ed-triage-l02" },
+    { "id": "ed-triage-c011", "front": "Danger-zone heart rate and respiratory rate for an infant 1 to 3 months old?", "back": "Heart rate over 180 and respiratory rate over 40, with SpO2 under 92 percent. Under 28 days the respiratory rate threshold is over 50.", "lesson": "ed-triage-l02" },
+    { "id": "ed-triage-c012", "front": "Danger-zone vitals for a 5-year-old?", "back": "Heart rate over 140, respiratory rate over 30, SpO2 under 92 percent. For 3 months to 3 years it is heart rate over 180 and respiratory rate over 35.", "lesson": "ed-triage-l02" },
+    { "id": "ed-triage-c013", "front": "What is the gut-check question for ESI 2?", "back": "If I had one open bed left, would I give it to this patient? If yes, they are an ESI 2.", "lesson": "ed-triage-l02" },
+    { "id": "ed-triage-c014", "front": "How do resource counts map to ESI 3, 4, and 5?", "back": "Two or more resource types is ESI 3, exactly one is ESI 4, none is ESI 5.", "lesson": "ed-triage-l03" },
+    { "id": "ed-triage-c015", "front": "List six things that count as ESI resources.", "back": "Labs as a single unit, EKG, any imaging, IV fluids for hydration, IV IM or nebulized medications, specialty consultation, simple procedure as 1, complex procedure such as sedation as 2.", "lesson": "ed-triage-l03" },
+    { "id": "ed-triage-c016", "front": "List six things that do NOT count as ESI resources.", "back": "History and physical, point-of-care tests, a saline lock without fluids, oral medications, tetanus shots, prescriptions, phone calls to a primary doctor, simple wound care, crutches, splints, slings.", "lesson": "ed-triage-l03" },
+    { "id": "ed-triage-c017", "front": "A patient needs a CBC, chemistry, troponin, and an EKG. How many resources?", "back": "Two. All the labs together count as one resource type; the EKG is a second. Resources are counted as types, not individual tests.", "lesson": "ed-triage-l03" },
+    { "id": "ed-triage-c018", "front": "Sore throat for 3 days, temperature 37.8, rapid strep and a prescription expected. ESI level?", "back": "ESI 5. Point-of-care testing and prescriptions are not resources, so the count is zero.", "lesson": "ed-triage-l03" },
+    { "id": "ed-triage-c019", "front": "Simple laceration needing sutures, nothing else. ESI level?", "back": "ESI 4. A simple procedure such as a laceration repair counts as one resource.", "lesson": "ed-triage-l03" },
+    { "id": "ed-triage-c020", "front": "What is the most common error in ESI resource counting?", "back": "Counting individual tests instead of categories, which pushes nearly everyone to ESI 3 and makes the scale useless for staffing and flow prediction.", "lesson": "ed-triage-l03" },
+    { "id": "ed-triage-c021", "front": "Why is 'last known well' the number that matters in a stroke?", "back": "It defines treatment eligibility: thrombolytics within 4.5 hours and thrombectomy up to 24 hours in selected patients. It is the last moment the patient was at baseline, not when symptoms were noticed.", "lesson": "ed-triage-l04" },
+    { "id": "ed-triage-c022", "front": "Which chest pain presentations are atypical and most often missed?", "back": "Women, diabetics, and the elderly, who may present with epigastric pain, nausea, fatigue, breathlessness, or weakness alone rather than crushing chest pressure.", "lesson": "ed-triage-l04" },
+    { "id": "ed-triage-c023", "front": "What makes a reaction anaphylaxis rather than a simple allergic reaction?", "back": "Hives or skin findings plus involvement of another system after exposure: throat tightness, lip or tongue swelling, wheeze, vomiting, or hypotension. It needs epinephrine, not an antihistamine and a chair.", "lesson": "ed-triage-l04" },
+    { "id": "ed-triage-c024", "front": "How is a pregnancy beyond 20 weeks triaged with bleeding, pain, or trauma?", "back": "High acuity, and in most hospitals routed directly to labor and delivery rather than kept in the ED. That routing decision is made at triage.", "lesson": "ed-triage-l04" },
+    { "id": "ed-triage-c025", "front": "Why is sudden testicular pain time-critical?", "back": "Testicular torsion cuts off blood supply and the testicle is salvageable within roughly 6 hours. It needs immediate ultrasound and urology, not a urine sample and a lobby chair.", "lesson": "ed-triage-l04" },
+    { "id": "ed-triage-c026", "front": "Fever thresholds by infant age at triage?", "back": "Under 28 days at 38.0 C or higher is a minimum ESI 2 with a full sepsis workup. 28 to 90 days with fever is high risk, usually ESI 2. 3 months to 3 years at 39.0 C or higher may be ESI 3 if immunizations are incomplete or there is no source.", "lesson": "ed-triage-l04" },
+    { "id": "ed-triage-c027", "front": "How fast do antibiotics need to reach a febrile neutropenic patient?", "back": "Within 60 minutes. Fever in a chemotherapy, transplant, immunosuppressed, or asplenic patient is ESI 2 regardless of how well they look.", "lesson": "ed-triage-l04" },
+    { "id": "ed-triage-c028", "front": "What happens first for a chemical splash to the eye?", "back": "Irrigation, immediately, before registration and before triage paperwork. Contact time determines whether the eye survives, especially with alkalis such as lye, drain cleaner, and cement.", "lesson": "ed-triage-l04" },
+    { "id": "ed-triage-c029", "front": "What are the STEMI time targets?", "back": "EKG within 10 minutes of arrival, door-to-balloon 90 minutes at a PCI-capable hospital, 120 minutes from first medical contact if transfer is required with a 30-minute door-in-door-out, or thrombolytics within 30 minutes if no cath lab.", "lesson": "ed-triage-l05" },
+    { "id": "ed-triage-c030", "front": "What does a tech do the moment a code STEMI is called?", "back": "Repeat or obtain the 12-lead, place defibrillator pads, apply the monitor, support two IV starts and lab draws, help move the bed toward the cath lab, and clear the hallway.", "lesson": "ed-triage-l05" },
+    { "id": "ed-triage-c031", "front": "What are the stroke time targets?", "back": "Door-to-CT started 25 minutes, CT interpreted 45 minutes, door-to-needle 60 minutes with many centers targeting 45 or 30. Thrombolytic window 4.5 hours, thrombectomy up to 24 hours in selected patients.", "lesson": "ed-triage-l05" },
+    { "id": "ed-triage-c032", "front": "Why is a point-of-care glucose mandatory in a suspected stroke?", "back": "Hypoglycemia produces focal neurologic deficits identical to stroke and is reversible in minutes. Missing it means treating a sugar problem as a clot.", "lesson": "ed-triage-l05" },
+    { "id": "ed-triage-c033", "front": "What are the five elements of the sepsis 1-hour bundle?", "back": "Measure lactate, obtain blood cultures before antibiotics, give broad-spectrum antibiotics, start 30 mL/kg crystalloid for hypotension or lactate of 4 or more, add vasopressors to keep MAP at least 65.", "lesson": "ed-triage-l05" },
+    { "id": "ed-triage-c034", "front": "When is the lactate repeated in sepsis?", "back": "If the initial lactate is over 2 mmol/L, it is repeated to see whether resuscitation is clearing it. A lactate of 4 or higher also triggers the 30 mL/kg fluid bolus even without hypotension.", "lesson": "ed-triage-l05" },
+    { "id": "ed-triage-c035", "front": "Which sepsis bundle step can a tech personally ruin, and how?", "back": "Blood cultures. If they are drawn after antibiotics hang, the organism may never grow and therapy cannot be narrowed. Draw two sets from two sites with sterile technique, before antibiotics.", "lesson": "ed-triage-l05" },
+    { "id": "ed-triage-c036", "front": "Name four typical full trauma activation criteria.", "back": "Systolic blood pressure under 90 at any point in an adult, airway compromise or intubation, GCS under 9 with trauma, penetrating injury to head, neck, chest, abdomen, or proximal to elbow or knee, or a transferred patient receiving blood.", "lesson": "ed-triage-l05" },
+    { "id": "ed-triage-c037", "front": "Name four typical partial trauma activation criteria.", "back": "Adult fall over 20 feet, ejection from a vehicle, death of another occupant in the same compartment, intrusion over 12 inches at the occupant site, auto versus pedestrian thrown or run over, amputation proximal to wrist or ankle, pelvic fracture.", "lesson": "ed-triage-l05" },
+    { "id": "ed-triage-c038", "front": "When does an automatic blood pressure cuff lie?", "back": "Irregular rhythms such as atrial fibrillation, shivering or tremor, a moving or unsupported arm, wrong cuff size, and severe hypotension. Verify surprising readings manually.", "lesson": "ed-triage-l06" },
+    { "id": "ed-triage-c039", "front": "How do you choose a blood pressure cuff size and what happens if you get it wrong?", "back": "The bladder should cover about 80 percent of arm circumference and 40 percent of its width. Too small reads falsely high; too large reads falsely low.", "lesson": "ed-triage-l06" },
+    { "id": "ed-triage-c040", "front": "Which arms do you avoid for a blood pressure?", "back": "An arm with a dialysis fistula, a mastectomy on that side, a PICC line, an injury, or a running IV.", "lesson": "ed-triage-l06" },
+    { "id": "ed-triage-c041", "front": "How should a respiratory rate be counted, and why does it matter?", "back": "Count 30 seconds and double, or a full 60 seconds if irregular, without the patient realizing. It is the best early predictor of deterioration and the most commonly falsified vital sign.", "lesson": "ed-triage-l06" },
+    { "id": "ed-triage-c042", "front": "When should you distrust a pulse oximetry reading?", "back": "When there is no good waveform, when the displayed pulse does not match the pulse you palpate, or with cold hands, nail polish, poor perfusion, or motion. Try another finger, an earlobe, or warm the hand.", "lesson": "ed-triage-l06" },
+    { "id": "ed-triage-c043", "front": "When is a rectal temperature the standard?", "back": "In infants, particularly under 3 months, and in any patient where an accurate core temperature changes the decision, such as suspected sepsis or hypothermia. Document the route every time.", "lesson": "ed-triage-l06" },
+    { "id": "ed-triage-c044", "front": "How do you document pain in a patient who cannot self-report?", "back": "Use a behavioral scale: grimacing, guarding, restlessness, vocalization, and changes from baseline. For children use a faces scale. Record the observed behavior, not your own guess at a number.", "lesson": "ed-triage-l06" },
+    { "id": "ed-triage-c045", "front": "What are typical ED triage standing orders a tech can act on?", "back": "12-lead EKG for chest pain, shortness of breath, syncope, palpitations, or epigastric pain over about age 40; glucose for altered mental status; urine pregnancy test for abdominal pain; ice, elevation, and splinting for obvious extremity injury; eye irrigation for chemical splash.", "lesson": "ed-triage-l06" },
+    { "id": "ed-triage-c046", "front": "Typical waiting room reassessment intervals by ESI level?", "back": "ESI 2 should not be waiting at all, and if unavoidable is continuous or every 15 minutes. ESI 3 every 30 to 60 minutes with full vitals. ESI 4 and 5 every 60 to 120 minutes or on any change.", "lesson": "ed-triage-l07" },
+    { "id": "ed-triage-c047", "front": "Which waiting room patients get priority for rechecks?", "back": "Abnormal initial vitals, anyone in pain, over 65, children under 2, ambulance arrivals routed to the lobby, anyone on blood thinners, pregnant patients, and anyone whose family keeps coming to the desk.", "lesson": "ed-triage-l07" },
+    { "id": "ed-triage-c048", "front": "Name seven signs a waiting patient is deteriorating.", "back": "New confusion, diaphoresis, inability to complete a sentence, gray or mottled skin, slumping or changed posture, family saying he is not himself, and the loud patient who goes quiet.", "lesson": "ed-triage-l07" },
+    { "id": "ed-triage-c049", "front": "Why is the patient who stops complaining dangerous?", "back": "Complaining takes energy. A loud, demanding patient who becomes quiet has usually decompensated rather than improved. The same applies to a child who stops crying or stops playing.", "lesson": "ed-triage-l07" },
+    { "id": "ed-triage-c050", "front": "How do you escalate a deteriorating waiting room patient?", "back": "Verbally and immediately to the triage or charge nurse: who, what changed, what you did, what you need. Do not chart it and wait for the nurse to finish what she is doing.", "lesson": "ed-triage-l07" },
+    { "id": "ed-triage-c051", "front": "What are the three sides of the pediatric assessment triangle?", "back": "Appearance including tone, interactiveness, consolability and gaze; work of breathing including flaring, grunting and retractions; and circulation to skin including pallor, mottling and cyanosis. Done in 30 seconds without touching.", "lesson": "ed-triage-l08" },
+    { "id": "ed-triage-c052", "front": "Why is a normal blood pressure not reassuring in a sick child?", "back": "Children defend blood pressure by raising heart rate and vasoconstricting, so pressure stays normal until they are nearly out of reserve. Hypotension in a child is a late, ominous finding.", "lesson": "ed-triage-l08" },
+    { "id": "ed-triage-c053", "front": "What hydration signs do you assess in an infant?", "back": "Wet diapers, which should be at least 3 to 4 in 24 hours, tears when crying, oral intake, sunken fontanelle, dry lips and mouth, and capillary refill over 2 seconds.", "lesson": "ed-triage-l08" },
+    { "id": "ed-triage-c054", "front": "What does the C-SSRS screen for, in escalating order?", "back": "Wish to be dead, active thoughts of suicide, thoughts about a method, some intent to act, a worked-out plan with intent, and any preparatory or actual behavior. Intent, plan, and preparation mark the highest risk.", "lesson": "ed-triage-l08" },
+    { "id": "ed-triage-c055", "front": "What counts as a ligature risk to remove from a psychiatric patient's room?", "back": "Anything that can form a loop: IV and oxygen tubing, call bell cords, blood pressure cuff hoses, gown ties, shoelaces, belts, drawstrings, phone chargers, plastic bags.", "lesson": "ed-triage-l08" },
+    { "id": "ed-triage-c056", "front": "What does 'medically cleared' actually mean?", "back": "The ED has evaluated for a medical cause or complication of the presentation and the patient is stable to be accepted for psychiatric care. It does not mean nothing is wrong. Requirements vary widely by hospital and receiving facility.", "lesson": "ed-triage-l08" },
+    { "id": "ed-triage-c057", "front": "What are the four START categories and the three assessments?", "back": "Green minor, yellow delayed, red immediate, black deceased or expectant. Assessed by respirations, perfusion, and mental status, after first asking everyone who can walk to move to a designated area.", "lesson": "ed-triage-l09" },
+    { "id": "ed-triage-c058", "front": "What are the START numeric cutoffs?", "back": "Respiratory rate over 30 is red. Absent radial pulse or capillary refill over 2 seconds is red. Unable to follow a simple command is red. No breathing after one airway maneuver is black.", "lesson": "ed-triage-l09" },
+    { "id": "ed-triage-c059", "front": "Which interventions are allowed during START triage, and why only those?", "back": "Opening the airway and controlling major bleeding. Anything more means stopping to treat one patient while twenty go unsorted, which costs more lives than it saves.", "lesson": "ed-triage-l09" },
+    { "id": "ed-triage-c060", "front": "What does SALT stand for and how does it differ from START?", "back": "Sort, Assess, Lifesaving interventions, Treatment and transport. It sorts globally by movement, allows a short list of interventions including chest decompression and antidotes, and categorizes immediate, delayed, minimal, expectant, or dead.", "lesson": "ed-triage-l09" },
+    { "id": "ed-triage-c061", "front": "What is reverse triage?", "back": "During a surge, identifying and discharging or moving out the least sick patients, including inpatients, to create capacity for incoming casualties.", "lesson": "ed-triage-l09" },
+    { "id": "ed-triage-c062", "front": "Which patient groups are most often undertriaged?", "back": "Older adults with atypical presentations, sickle cell patients in crisis, non-English speakers, patients with a psychiatric history through diagnostic overshadowing, frequent visitors, women with cardiac symptoms, and patients with substance use disorders.", "lesson": "ed-triage-l09" },
+    { "id": "ed-triage-c063", "front": "What is diagnostic overshadowing?", "back": "Attributing a new physical complaint to a patient's existing psychiatric diagnosis. Psychiatric patients have higher rates of serious medical illness, not lower, so this pattern causes real harm.", "lesson": "ed-triage-l09" },
+    { "id": "ed-triage-c064", "front": "Who may interpret clinical information for a patient with limited English?", "back": "A professional interpreter by phone, video, or in person. Never a family member and never a child, because omission, editorializing, and abuse situations all corrupt the information.", "lesson": "ed-triage-l09" }
+  ],
+  "quiz": [
+    {
+      "id": "ed-triage-q001",
+      "q": "A 46-year-old man arrives with crushing chest pain, diaphoresis, and a blood pressure of 150/90. He is awake and talking. What ESI level and why?",
+      "choices": [
+        "ESI 2, because chest pain consistent with acute coronary syndrome is a high-risk situation",
+        "ESI 1, because chest pain is always immediately life-threatening",
+        "ESI 3, because he will need labs, an EKG, and imaging",
+        "ESI 4, because he is awake and stable"
+      ],
+      "answer": 0,
+      "why": "High-risk presentation is an ESI 2 gate on its own. ESI 1 requires an immediate life-saving intervention, which he does not yet need. Counting resources to ESI 3 skips decision point B entirely, which is exactly the error that leaves heart attacks in lobbies.",
+      "lesson": "ed-triage-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-triage-q002",
+      "q": "Which of these patients requires an immediate life-saving intervention and is therefore ESI 1?",
+      "choices": [
+        "A 70-year-old with new-onset confusion",
+        "A 24-year-old with an unresponsive overdose and agonal respirations",
+        "A 35-year-old with 9 out of 10 flank pain",
+        "A 50-year-old with a fever on chemotherapy"
+      ],
+      "answer": 1,
+      "why": "Agonal breathing with unresponsiveness requires airway intervention now, meeting the ESI 1 definition. The other three are all genuine ESI 2 presentations because of high risk, altered mental status, or severe pain, but none needs an intervention this second.",
+      "lesson": "ed-triage-l02",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-triage-q003",
+      "q": "A 6-month-old has a heart rate of 194 and a respiratory rate of 48. Otherwise the resource count suggests ESI 3. What should happen?",
+      "choices": [
+        "Keep ESI 3, since resource count governs",
+        "Downgrade to ESI 4, since infants normally have fast rates",
+        "Consider upgrading to ESI 2, because both values are in the pediatric danger zone",
+        "Assign ESI 5 and recheck in an hour"
+      ],
+      "answer": 2,
+      "why": "At 3 months to 3 years, heart rate over 180 and respiratory rate over 35 are danger-zone values. Decision point D exists to upgrade exactly this patient. Fast rates are normal in infants only within the age-specific ranges.",
+      "lesson": "ed-triage-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-triage-q004",
+      "q": "A 68-year-old woman says her pain is 8 out of 10. She is sitting quietly, answering questions politely, and does not appear distressed. How should the pain score be handled?",
+      "choices": [
+        "Document a lower score that matches her appearance",
+        "Ignore the score since behavior contradicts it",
+        "Ask her to rate it again until the number matches",
+        "Record the number she reports and assess whether she needs an intervention that cannot wait"
+      ],
+      "answer": 3,
+      "why": "The reported score is the patient's data and is charted as reported. The ESI 2 decision then asks whether severe pain requires immediate intervention, judged from the whole picture. Altering or arguing with a self-reported score is both wrong and a documented source of undertriage.",
+      "lesson": "ed-triage-l02",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-triage-q005",
+      "q": "A patient will need a urinalysis, a CBC, a chemistry panel, IV fluids, and IV pain medication. How many ESI resources?",
+      "choices": [
+        "Three: labs as one, IV fluids as one, IV medication as one",
+        "Five, one per order",
+        "Two, since fluids and medication go through the same IV",
+        "One, since it is a single workup"
+      ],
+      "answer": 0,
+      "why": "All labs together count once. IV fluids for hydration and an IV medication are separate resource types. Counting individual orders inflates to ESI 3 for everyone, and merging fluids with medications undercounts the staff time involved.",
+      "lesson": "ed-triage-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-triage-q006",
+      "q": "A well-appearing 22-year-old needs only a prescription refill for her inhaler, no testing. What ESI level?",
+      "choices": [
+        "ESI 2",
+        "ESI 3",
+        "ESI 4",
+        "ESI 5"
+      ],
+      "answer": 3,
+      "why": "Prescription refills are not counted as resources, so the tally is zero, which is ESI 5. ESI 4 requires exactly one resource, and nothing here suggests high risk or danger-zone vitals.",
+      "lesson": "ed-triage-l03",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-triage-q007",
+      "q": "Which of the following counts as an ESI resource?",
+      "choices": [
+        "A tetanus shot",
+        "A point-of-care glucose",
+        "A splint and crutches",
+        "A specialty consultation"
+      ],
+      "answer": 3,
+      "why": "Specialty consultation consumes ED time and coordination and counts as one resource. Tetanus immunization, point-of-care testing, splints, and crutches are explicitly excluded from the ESI resource list.",
+      "lesson": "ed-triage-l03",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-triage-q008",
+      "q": "A 60-year-old with vomiting is assigned ESI 3 after counting resources. His heart rate is 116 and SpO2 is 90 percent on room air. What is the correct action?",
+      "choices": [
+        "Leave him at ESI 3 and place him in the waiting room",
+        "Reconsider as ESI 2 and get him a monitored bed",
+        "Downgrade to ESI 4 since vomiting is common",
+        "Recheck in 60 minutes and decide then"
+      ],
+      "answer": 1,
+      "why": "Adult heart rate over 100 and SpO2 under 92 percent are both danger-zone values, and decision point D upgrades him. Leaving him in a lobby or deferring a decision for an hour is precisely the undertriage the danger-zone rule prevents.",
+      "lesson": "ed-triage-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-triage-q009",
+      "q": "A 73-year-old man is brought in for weakness. His daughter says he 'went to bed normal at 11 p.m.' and she found him with right-sided weakness at 7 a.m. What is the last known well time and what does it determine?",
+      "choices": [
+        "7 a.m.; it determines the length of stay",
+        "11 p.m.; it determines eligibility for thrombolytics and thrombectomy",
+        "3 a.m. as a midpoint; it determines CT timing",
+        "Unknown; last known well cannot be estimated for wake-up symptoms"
+      ],
+      "answer": 1,
+      "why": "Last known well is the last verified moment at baseline, which here is 11 p.m. It sets the 4.5-hour thrombolytic window and the up-to-24-hour thrombectomy window. Using the discovery time falsely places him in the treatment window.",
+      "lesson": "ed-triage-l04",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-triage-q010",
+      "q": "A 26-year-old woman reports lower abdominal pain and a missed period. Which concern drives the acuity?",
+      "choices": [
+        "Ovarian cyst",
+        "Urinary tract infection",
+        "Possible ectopic pregnancy, which bleeds internally",
+        "Constipation"
+      ],
+      "answer": 2,
+      "why": "Abdominal pain with any possibility of pregnancy is treated as ectopic pregnancy until excluded, because it ruptures and causes fatal internal bleeding in otherwise healthy young women. The other diagnoses are common but not immediately lethal.",
+      "lesson": "ed-triage-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-triage-q011",
+      "q": "A construction worker arrives with wet cement in his right eye and severe pain. Registration wants his insurance card. What happens first?",
+      "choices": [
+        "Registration, then triage, then irrigation",
+        "Triage vitals, then registration, then irrigation",
+        "A visual acuity test before anything else",
+        "Immediate irrigation, before registration and before the rest of triage"
+      ],
+      "answer": 3,
+      "why": "Cement is alkaline and continues destroying the cornea every second it remains. Contact time determines whether the eye survives, so irrigation starts first and paperwork follows. Visual acuity is measured after the eye is being irrigated.",
+      "lesson": "ed-triage-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-triage-q012",
+      "q": "A 34-year-old on chemotherapy presents with a temperature of 38.4 C and otherwise normal vitals. She looks well. What is the correct triage?",
+      "choices": [
+        "ESI 2, because fever in an immunocompromised patient is high risk with a 60-minute antibiotic target",
+        "ESI 3, based on expected resource use",
+        "ESI 4, since she looks well",
+        "ESI 5, since fever alone needs no resources"
+      ],
+      "answer": 0,
+      "why": "Febrile neutropenia can progress to septic shock within hours and looking well does not exclude it. It is a high-risk ESI 2 with antibiotics targeted within 60 minutes. Counting resources here skips the high-risk gate.",
+      "lesson": "ed-triage-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-triage-q013",
+      "q": "A sepsis alert is called. Which action by the tech most directly protects the quality of the workup?",
+      "choices": [
+        "Getting an accurate rectal temperature",
+        "Obtaining a clean-catch urine specimen",
+        "Drawing two sets of blood cultures with sterile technique before antibiotics are administered",
+        "Applying the cardiac monitor"
+      ],
+      "answer": 2,
+      "why": "Cultures drawn after antibiotics may never identify the organism, which prevents narrowing therapy for the whole admission. Temperature, urine, and monitoring all matter, but none of them is destroyed by a few minutes of delay the way cultures are.",
+      "lesson": "ed-triage-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-triage-q014",
+      "q": "In the sepsis 1-hour bundle, what triggers the 30 mL/kg crystalloid bolus?",
+      "choices": [
+        "Any documented fever",
+        "Hypotension, or a lactate of 4 mmol/L or higher",
+        "A positive blood culture",
+        "A heart rate above 90"
+      ],
+      "answer": 1,
+      "why": "The bolus is indicated for hypotension or a lactate of 4 or more, which mark tissue hypoperfusion. Fever and tachycardia are screening criteria, not fluid triggers, and cultures take days to result so they cannot drive a 1-hour action.",
+      "lesson": "ed-triage-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-triage-q015",
+      "q": "What is the door-to-CT target for a code stroke, and why is it so short?",
+      "choices": [
+        "45 minutes, to allow time for registration",
+        "25 minutes, because roughly 1.9 million neurons die per minute and treatment cannot begin until bleeding is excluded",
+        "60 minutes, matching the door-to-needle target",
+        "90 minutes, matching the STEMI standard"
+      ],
+      "answer": 1,
+      "why": "CT must be started within 25 minutes because thrombolytics cannot be given until intracranial hemorrhage is excluded, and the door-to-needle target is 60 minutes. The 45-minute figure is CT interpretation, and 90 minutes is the STEMI door-to-balloon target.",
+      "lesson": "ed-triage-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-triage-q016",
+      "q": "A patient arrives after a motor vehicle crash with a systolic blood pressure of 84 and a GCS of 13. Which activation applies at most centers?",
+      "choices": [
+        "No activation; a GCS of 13 is near normal",
+        "Partial activation based on mechanism only",
+        "Full trauma activation, because an adult systolic pressure under 90 meets the highest tier",
+        "Full activation only if the GCS falls under 9"
+      ],
+      "answer": 2,
+      "why": "A documented systolic pressure under 90 in an adult trauma patient is a full activation criterion on its own. GCS under 9 is a separate full-activation criterion, but its absence does not cancel the hypotension criterion.",
+      "lesson": "ed-triage-l05",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-triage-q017",
+      "q": "An automatic cuff reads 88/52 on a patient with known atrial fibrillation who looks comfortable. What is the best next step?",
+      "choices": [
+        "Repeat manually with a correctly sized cuff and report the verified value",
+        "Chart it and notify the nurse of hypotension",
+        "Repeat with the same machine on the other arm and chart whichever is higher",
+        "Elevate the legs and recheck in 15 minutes"
+      ],
+      "answer": 0,
+      "why": "Oscillometric cuffs are unreliable in irregular rhythms, so manual verification comes first. Charting an artifact mislabels the patient, picking the higher of two machine readings is not a method, and delaying 15 minutes risks missing real hypotension.",
+      "lesson": "ed-triage-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-triage-q018",
+      "q": "A blood pressure cuff that is too small for a patient's arm will produce what error?",
+      "choices": [
+        "A falsely low reading",
+        "A falsely high reading",
+        "No reading at all",
+        "An accurate reading with a wider pulse pressure"
+      ],
+      "answer": 1,
+      "why": "An undersized bladder requires more pressure to compress the artery, so the measured value reads falsely high. An oversized cuff has the opposite effect and reads falsely low, which is how real hypertension gets missed.",
+      "lesson": "ed-triage-l06",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-triage-q019",
+      "q": "A 4-year-old needs medication dosing. His mother says he weighs 'about 40 pounds.' What should you do?",
+      "choices": [
+        "Enter 40 in the weight field and note it is an estimate",
+        "Convert 40 pounds to kilograms mentally and enter that",
+        "Weigh the child on a scale in kilograms, or use a length-based tape if he cannot be weighed",
+        "Use the average weight for a 4-year-old"
+      ],
+      "answer": 2,
+      "why": "Every pediatric dose, bolus, and energy setting is per kilogram, so the weight is a calculation input and must be measured, not recalled. Parental estimates and age averages both introduce dosing error, and mental conversions invite unit mistakes.",
+      "lesson": "ed-triage-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-triage-q020",
+      "q": "Why is the respiratory rate considered a high-value vital sign in triage?",
+      "choices": [
+        "It is the easiest to measure accurately",
+        "It correlates directly with blood pressure",
+        "It is required for billing",
+        "It is one of the earliest measurable signs of deterioration, and it is also the most frequently falsified"
+      ],
+      "answer": 3,
+      "why": "Respiratory rate rises early in sepsis, shock, and respiratory failure, often before blood pressure changes. It is also the vital sign most often charted without being counted, which destroys its predictive value.",
+      "lesson": "ed-triage-l06",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-triage-q021",
+      "q": "An ESI 3 patient has been in the waiting room for 50 minutes. His initial heart rate was 104. What should have happened by now?",
+      "choices": [
+        "A full set of repeat vitals, since ESI 3 patients are rechecked every 30 to 60 minutes and his initial rate was abnormal",
+        "Nothing; the level was already assigned",
+        "A recheck only if he approaches the desk",
+        "Automatic upgrade to ESI 2 based on wait time"
+      ],
+      "answer": 0,
+      "why": "Reassessment is the safety net under a triage level, and an initially abnormal heart rate makes him a priority for rechecks. Wait time alone does not change acuity, and relying on the patient to report a change misses silent deterioration.",
+      "lesson": "ed-triage-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-triage-q022",
+      "q": "You recheck a 58-year-old in the lobby. He is slumped, damp with sweat, heart rate 128 up from 96, and manual pressure 86/50. The triage nurse is mid-assessment with another patient. What do you do?",
+      "choices": [
+        "Chart the numbers and wait until she finishes",
+        "Interrupt her or the charge nurse immediately with a structured report",
+        "Recheck in 10 minutes to confirm the trend",
+        "Move him to a quieter chair and monitor him yourself"
+      ],
+      "answer": 1,
+      "why": "Diaphoresis, rising heart rate, and hypotension together mean shock, which is minutes-critical. Interrupting is correct and expected. Charting, waiting for a confirming trend, or self-monitoring all delay the only action that helps.",
+      "lesson": "ed-triage-l07",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-triage-q023",
+      "q": "Which waiting room observation is most concerning?",
+      "choices": [
+        "A patient asking loudly how much longer the wait will be",
+        "A patient pacing near the door",
+        "A previously loud, demanding patient who is now silent with his eyes closed",
+        "A patient texting on his phone"
+      ],
+      "answer": 2,
+      "why": "Complaining requires energy, so a loud patient who becomes quiet has usually decompensated rather than settled. Demanding, pacing, and texting patients are, by themselves, signs of preserved effort and awareness.",
+      "lesson": "ed-triage-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-triage-q024",
+      "q": "A 2-year-old is pale and mottled, will not make eye contact, and has retractions. Heart rate 172, blood pressure 96/60, SpO2 93 percent. How should this be triaged?",
+      "choices": [
+        "Low acuity, since the blood pressure is normal for age",
+        "High acuity: two sides of the pediatric assessment triangle are abnormal despite a normal blood pressure",
+        "Moderate acuity pending a fever check",
+        "Low acuity, since SpO2 is above 92 percent"
+      ],
+      "answer": 1,
+      "why": "Abnormal appearance and abnormal work of breathing plus abnormal skin circulation describe a sick child. Children maintain blood pressure until they are nearly decompensated, so a normal pressure is the least reassuring number on the list.",
+      "lesson": "ed-triage-l08",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-triage-q025",
+      "q": "A 22-day-old infant has a rectal temperature of 38.1 C, is feeding well, and looks comfortable. What is the correct minimum acuity?",
+      "choices": [
+        "ESI 5",
+        "ESI 4",
+        "ESI 3",
+        "ESI 2"
+      ],
+      "answer": 3,
+      "why": "Under 28 days of age, a temperature of 38.0 C or higher is a minimum ESI 2 requiring a full sepsis workup, because neonates cannot localize infection and may look well while bacteremic. Appearance and feeding do not lower this threshold.",
+      "lesson": "ed-triage-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-triage-q026",
+      "q": "A patient on a psychiatric hold is placed in a safe room and a sitter is assigned. Which additional step is required?",
+      "choices": [
+        "Search and secure belongings and clothing, change into paper scrubs, and remove all ligature risks",
+        "Nothing further, since a sitter is present",
+        "Leave one personal item for comfort",
+        "Keep her phone charger so she can contact family"
+      ],
+      "answer": 0,
+      "why": "Safe rooms work by removing means as well as providing observation. Belongings routinely contain pills, blades, lighters, and cords, and a charger is a ligature risk. A sitter reduces but does not replace environmental control.",
+      "lesson": "ed-triage-l08",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-triage-q027",
+      "q": "During a mass casualty incident using START, a patient is not breathing. You open the airway and he begins breathing at 12 per minute. What category?",
+      "choices": [
+        "Black, expectant, since he required an intervention",
+        "Red, immediate, because he only breathes with a positioned airway",
+        "Yellow, delayed, since he is now breathing adequately",
+        "Green, minor, since his rate is normal"
+      ],
+      "answer": 1,
+      "why": "A patient who breathes only after an airway maneuver is immediate, red. Black is reserved for those who do not breathe after that maneuver. A normal rate obtained only through intervention does not make him delayed, and green is for the walking wounded.",
+      "lesson": "ed-triage-l09",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-triage-q028",
+      "q": "A patient well known to the department for weekly visits arrives again with abdominal pain. What is the safest approach?",
+      "choices": [
+        "Assume it is the usual complaint and assign a low acuity",
+        "Wait for the provider who knows him to assign the level",
+        "Triage this visit as a new visit, with a full set of vitals and no assumptions from prior visits",
+        "Assign a higher acuity automatically because of his visit frequency"
+      ],
+      "answer": 2,
+      "why": "Frequent visitors are a documented undertriage group precisely because familiarity replaces assessment. The correction is process: the same vitals and the same questions every visit. Automatic upgrades are equally unprincipled and waste resources.",
+      "lesson": "ed-triage-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-triage-q029",
+      "q": "Which statement about mass casualty triage is correct?",
+      "choices": [
+        "It gives the most resources to the single sickest patient, as in daily practice",
+        "It aims for the greatest good for the greatest number, which can mean categorizing some patients as expectant",
+        "It eliminates the use of colored categories",
+        "It applies only to injuries, never to illness"
+      ],
+      "answer": 1,
+      "why": "When demand overwhelms supply, priorities invert toward survivable patients and an expectant category exists. Daily triage does the opposite. Color categories are central to START, and surge triage applies to any overwhelming event.",
+      "lesson": "ed-triage-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-triage-q030",
+      "q": "A 45-year-old with schizophrenia reports abdominal pain and appears internally preoccupied. What error should you guard against?",
+      "choices": [
+        "Overtriage from an unnecessary workup",
+        "Diagnostic overshadowing, attributing a physical complaint to the psychiatric diagnosis",
+        "Assuming he is uninsured",
+        "Assuming he cannot give a history at all"
+      ],
+      "answer": 1,
+      "why": "Diagnostic overshadowing is the documented tendency to attribute new physical symptoms to an existing psychiatric diagnosis. Patients with serious mental illness have higher rates of serious medical disease and shorter life expectancy, not lower risk.",
+      "lesson": "ed-triage-l09",
+      "difficulty": 2
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "ed-triage-s01",
+      "title": "Six in the lobby",
+      "setting": "ed",
+      "intro": "It is 1830 on a Tuesday. You are working triage with an experienced nurse. The department is full, with four boarders, and the charge nurse has two open beds. Six people arrive within about ten minutes and are sitting in the triage area.\n\n1. A 46-year-old man, sweating, hand on his chest, says the pressure started forty minutes ago while he was eating.\n2. A 19-year-old woman with a sore throat for two days, drinking a soda, no trouble breathing, temperature `37.9 C`.\n3. A 71-year-old woman brought by her son, who says she has been 'not making sense' since about noon.\n4. A 33-year-old man who twisted his ankle playing basketball, hopping, no deformity.\n5. A 3-week-old infant whose mother reports a rectal temperature of `38.2 C` at home. The baby is feeding and looks comfortable.\n6. A 58-year-old woman with two days of vomiting, heart rate `118`, SpO2 `91 percent` on room air.\n\nThe nurse is going to assign levels. You are going to make it possible.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "Before any levels are assigned, what is your single highest-value action?",
+          "choices": [
+            { "text": "Get a 12-lead EKG on the 46-year-old with chest pressure, immediately", "next": "s2", "feedback": "Correct. The 10-minute door-to-EKG clock is already running and a STEMI is the only thing here that gets worse by the minute in a way you can change right now.", "score": 1 },
+            { "text": "Take full vitals on all six in arrival order", "next": "s2", "feedback": "Thorough, but arrival order is the one thing triage explicitly does not use. The chest pain needs the EKG before anyone gets a complete set.", "score": 0 },
+            { "text": "Get the infant's weight and temperature first", "next": "s2", "feedback": "The infant is genuinely high acuity and will need an accurate rectal temperature and a weight in kilograms. But the EKG has a hard 10-minute clock and takes four minutes. Do it first, then the baby.", "score": 0 },
+            { "text": "Start with the vomiting patient because her SpO2 is 91 percent", "next": "s2", "feedback": "Her danger-zone vitals are real and she will be upgraded. But she is not on a 10-minute clock, and an undiagnosed STEMI is.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "The EKG is done at minute 6 and handed to the physician, who takes the patient straight back. Five left, two open beds. Which two patients should occupy the nurse's attention next?",
+          "choices": [
+            { "text": "The 71-year-old with new confusion and the 3-week-old with fever", "next": "s3", "feedback": "Right. New confusion is an independent ESI 2 gate, and fever under 28 days is a minimum ESI 2 with a full sepsis workup regardless of appearance. Both are quiet, well-looking, high-risk patients.", "score": 1 },
+            { "text": "The sore throat and the ankle, because they can be dispositioned fast and free up flow", "next": "s3", "feedback": "This is 'quick wins' thinking, and it is how ESI 2 patients end up in lobbies. Flow never outranks danger.", "score": -1 },
+            { "text": "The 58-year-old with vomiting and the ankle injury", "next": "s3", "feedback": "The vomiting patient belongs in the top group, but the ankle does not. You are pairing a correct choice with a low-acuity one.", "score": 0 },
+            { "text": "The 71-year-old with confusion and the 33-year-old with the ankle", "next": "s3", "feedback": "Half right. The confused patient is correct. A well-looking febrile neonate outranks an ankle by an enormous margin.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "The nurse asks you for the numbers she needs to finish the levels. Walk through what you obtain for the 58-year-old with vomiting, heart rate 118 and SpO2 91 percent.",
+          "vitals": { "hr": 118, "bp": "104/62", "rr": 24, "spo2": 91, "temp": 37.4 },
+          "choices": [
+            { "text": "Recheck the SpO2 with a good waveform on a warm finger, recount respirations for a full 30 seconds, and verify the blood pressure manually", "next": "s4", "feedback": "Exactly. Two of her three danger-zone values sit right at the threshold, so the level depends on whether your numbers are real. Verify before the nurse upgrades or does not.", "score": 1 },
+            { "text": "Report the machine numbers as they are so the nurse can decide quickly", "next": "s4", "feedback": "Speed matters, but an unverified SpO2 of 91 percent could be a cold finger or could be real hypoxia. The whole level turns on this number.", "score": 0 },
+            { "text": "Put her on oxygen since her saturation is under 92 percent", "next": "s4", "feedback": "Out of scope. Oxygen is a medication and the rate is a dose. Report the number, get the nurse, and let them order it.", "score": -1 },
+            { "text": "Document the vitals and move on to the sore throat to keep the line moving", "next": "s4", "feedback": "Three abnormal values in one patient is not a line-moving moment. She meets danger-zone criteria in two categories.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "Verified: SpO2 `90 percent` on a good waveform, respiratory rate `26` counted, manual pressure `98/58`. The nurse upgrades her to ESI 2. That leaves the sore throat and the ankle. Assign them.",
+          "choices": [
+            { "text": "Sore throat ESI 5, ankle ESI 4", "next": "s5", "feedback": "Correct. A rapid strep is point-of-care and a prescription is not a resource, so the sore throat counts zero. The ankle needs one X-ray; splints and crutches do not count.", "score": 1 },
+            { "text": "Both ESI 4", "next": "s5", "feedback": "The ankle is right. The sore throat counts zero resources because point-of-care swabs and prescriptions do not count, making it a 5.", "score": 0 },
+            { "text": "Both ESI 3, since both will need testing", "next": "s5", "feedback": "This is the classic inflation error. Counting point-of-care tests, splints, and prescriptions as resources pushes everyone to 3 and makes the scale meaningless.", "score": -1 },
+            { "text": "Sore throat ESI 4, ankle ESI 5", "next": "s5", "feedback": "Reversed. The X-ray is the resource; the throat swab is not.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "Final levels: chest pain went back, ESI 2. Confusion ESI 2. Neonate ESI 2. Vomiting ESI 2. Sore throat ESI 5, ankle ESI 4. Two beds, four ESI 2 patients. The sore throat and ankle will be waiting a while. What do you do for the lobby?",
+          "choices": [
+            { "text": "Set recheck intervals: the ESI 2 patients get continuous or 15-minute checks until they are roomed, and the 4 and 5 get vitals every 60 to 120 minutes, and tell each patient honestly where they stand", "next": "end", "feedback": "This is the whole job. Levels are snapshots; the recheck schedule is the safety net, and honest expectation setting prevents patients from leaving without being seen.", "score": 1 },
+            { "text": "Tell the sore throat and ankle they are next so they do not leave", "next": "end", "feedback": "Never promise a position you do not control. With four ESI 2 patients ahead, they are not next, and being caught in it destroys trust.", "score": -1 },
+            { "text": "Focus on the ESI 2 patients only; the 4 and 5 are stable by definition", "next": "end", "feedback": "ESI 4 and 5 predict resource use, not safety, and they are the least watched patients in the department. They still need scheduled rechecks.", "score": 0 },
+            { "text": "Ask the charge nurse whether a hallway bed or a boarder can be moved to make space for the ESI 2 patients", "next": "end", "feedback": "Good flow thinking and worth saying. Just do not let it replace the reassessment schedule, which is the part you personally own.", "score": 0 }
+          ]
+        }
+      ],
+      "debrief": "Six patients, and only two of them looked sick. That is the lesson.\n\nThe chest pain announced itself, but the three quietest patients in the room, a confused elderly woman, a comfortable febrile newborn, and a woman who had been vomiting for two days, were all ESI 2. Each reached that level by a different route: new altered mental status as its own gate, a high-risk age-and-fever rule, and danger-zone vital signs upgrading a resource count.\n\nThe tech's contribution was not the level assignment. It was the 10-minute EKG, the verified SpO2 and manual blood pressure that decided whether the vomiting patient was a 3 or a 2, the accurate rectal temperature and kilogram weight on the infant, and the reassessment schedule for the people left in the chairs.\n\nAnd notice the two errors you avoided: counting point-of-care tests and crutches as resources, which inflates everyone to ESI 3, and optimizing for quick discharges to improve flow, which is how a high-risk patient ends up waiting."
+    },
+    {
+      "id": "ed-triage-s02",
+      "title": "She was a 3 an hour ago",
+      "setting": "ed",
+      "intro": "1640. Mrs. Adeyemi, 67, arrived at 1530 with two days of lower abdominal pain and decreased appetite. Triage assigned her ESI 3: labs and a CT expected, vitals unremarkable at heart rate `92`, blood pressure `138/78`, respiratory rate `18`, temperature `37.6 C`, SpO2 `97 percent`, pain `6/10`.\n\nThe department has no open beds. She has been in the waiting room for seventy minutes. You are doing the round of scheduled rechecks.\n\nWhen you call her name, her daughter answers for her and says, \"She's been kind of out of it the last twenty minutes.\"",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "The daughter's sentence is the first piece of new information. What do you do with it?",
+          "choices": [
+            { "text": "Treat it as a reported change in mental status and assess her right now, in the chair if needed", "next": "s2", "feedback": "Correct. Family are comparing against a baseline you have never seen, and new altered mental status is an independent ESI 2 gate. Their report is data.", "score": 1 },
+            { "text": "Note it and take the vitals in your normal order of rooms", "next": "s2", "feedback": "You will get there, but 'out of it' in a 67-year-old with abdominal pain is a sepsis and shock signal. This one jumps the queue of your rechecks.", "score": 0 },
+            { "text": "Reassure the daughter that waiting is tiring and people often get drowsy", "next": "s2", "feedback": "Plausible-sounding and dangerous. Explaining away a reported mental status change is a documented path to a lobby death.", "score": -1 },
+            { "text": "Ask the daughter to let you know if it gets worse", "next": "s2", "feedback": "You handed the monitoring job to a family member. The reassessment is yours.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "You bring her to the triage bay. She opens her eyes when you say her name but answers slowly and gets the month wrong. Her forehead is damp. Her skin is warm at the chest and cool at the fingertips.",
+          "vitals": { "hr": 118, "bp": "96/52", "rr": 26, "spo2": 93, "temp": 38.6 },
+          "choices": [
+            { "text": "Verify the blood pressure manually, recount the respirations, and confirm the temperature route, then escalate", "next": "s3", "feedback": "Right instinct, and the verification takes ninety seconds. Just make sure escalation happens immediately after, not after a third recheck.", "score": 1 },
+            { "text": "Escalate immediately to the triage or charge nurse, and verify the manual pressure while you wait for them", "next": "s3", "feedback": "Best answer. This picture is sepsis with hypoperfusion, and verification and escalation should happen in parallel rather than in sequence.", "score": 1 },
+            { "text": "Recheck everything in 15 minutes to establish a trend before bothering anyone", "next": "s3", "feedback": "You already have the trend: heart rate 92 to 118, pressure 138 to 96, respirations 18 to 26, temperature 37.6 to 38.6, plus new confusion. That is the deterioration, not a hint of one.", "score": -1 },
+            { "text": "Give her water and a blanket, then recheck", "next": "s3", "feedback": "Nothing by mouth without a nurse's okay, especially in a patient who may go to surgery or who has an altered mental status and aspiration risk.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "You have the nurse's attention for about fifteen seconds. Say it.",
+          "choices": [
+            { "text": "'Mrs. Adeyemi in chair 6 doesn't look good, can you come see her?'", "next": "s4", "feedback": "It will get the nurse moving, which is better than nothing. But she arrives with no information and has to start from zero.", "score": 0 },
+            { "text": "'Chair 6, Mrs. Adeyemi, ESI 3 abdominal pain since 1530. She's newly confused per her daughter, diaphoretic, cool fingers. Heart rate 92 to 118, pressure 138 over 78 down to 96 over 52 verified manually, respirations 26, temp 38.6, sat 93. I think she needs to come back now.'", "next": "s4", "feedback": "This is the report. Who, what changed with the before and after numbers, what you did, and what you need. The nurse can act on this without asking you anything.", "score": 1 },
+            { "text": "'Her pressure is 96 over 52.'", "next": "s4", "feedback": "One number out of context. A pressure of 96 over 52 in isolation could be someone's baseline. The change from 138 over 78 is the whole story.", "score": 0 },
+            { "text": "'I think she's septic, she needs a lactate and blood cultures.'", "next": "s4", "feedback": "Your pattern recognition may well be right, and that instinct is worth having. But stating a diagnosis and ordering the workup is outside your role. Report the findings; the diagnosis is theirs.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "The nurse upgrades her to ESI 2, the charge nurse pulls a boarder into the hallway to free a monitored bed, and a code sepsis is called. The team is converging. What do you do in the next five minutes?",
+          "choices": [
+            { "text": "Draw the lactate and two sets of blood cultures with sterile technique before antibiotics, apply the monitor, and get a full repeat set of vitals", "next": "s5", "feedback": "This is precisely the tech's contribution to the 1-hour bundle. Cultures before antibiotics is the step only you can protect.", "score": 1 },
+            { "text": "Start the 30 mL/kg fluid bolus", "next": "s5", "feedback": "Out of scope. Hanging and titrating fluids is a nursing task. You can set up the line, get the pump, and have the bag ready.", "score": -1 },
+            { "text": "Wait for specific instructions so you do not get in the way", "next": "s5", "feedback": "In a called alert, the tasks are known. Standing by during a sepsis alert wastes the minutes the bundle is measured in.", "score": 0 },
+            { "text": "Get her to CT right away since an abdominal source is likely", "next": "s5", "feedback": "The CT is coming, but not before cultures, antibiotics, and fluids are underway, and not before she is stable enough to leave the department.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "Antibiotics are in at 1704, twenty-four minutes after you first spoke to her daughter. She is on fluids and being admitted. Her daughter finds you in the hallway and asks, 'Is my mother going to be okay? What is happening to her?'",
+          "choices": [
+            { "text": "'She has sepsis from an abdominal infection, but we caught it in time.'", "next": "end", "feedback": "You do not deliver a diagnosis or a prognosis, and 'caught it in time' is a promise nobody can make. Both are out of scope.", "score": -1 },
+            { "text": "'I can't speak to her diagnosis, but I can tell you exactly what we're doing: she's on antibiotics and fluids and continuous monitoring, and she's being admitted. Let me get her nurse to talk with you.'", "next": "end", "feedback": "Right balance. Concrete facts about actions, no diagnosis, no prognosis, and a real path to the person who can answer. This is what families actually need.", "score": 1 },
+            { "text": "'I'm not allowed to discuss that.'", "next": "end", "feedback": "Accurate and cold. She is frightened and she was the person whose observation started all of this. Give her something true and a route to more.", "score": 0 },
+            { "text": "'You did the right thing telling me she seemed off. Her nurse will come talk to you about what's going on, and I'll go get her now.'", "next": "end", "feedback": "Also good, and worth saying. Families who are told their observations mattered report more, and reporting families catch deterioration.", "score": 1 }
+          ]
+        }
+      ],
+      "debrief": "An ESI level is a photograph, and this patient moved.\n\nThe change was announced by a family member, not a monitor. 'She's been kind of out of it' in a 67-year-old with abdominal pain is a sepsis presentation until proven otherwise, and new altered mental status is an independent ESI 2 gate on its own.\n\nThe pattern to keep: it was the delta, not the absolute values, that told the story. A pressure of `96/52` alone means little. A drop from `138/78` to `96/52` with a heart rate climbing from `92` to `118`, respirations from `18` to `26`, a temperature rising to `38.6 C`, cool fingertips with a warm chest, and new confusion is compensated shock heading toward decompensated. Any two of those together should move your feet.\n\nYour actual contributions were narrow and decisive: you believed the family, you assessed instead of explaining the change away, you verified the abnormal numbers manually, you escalated with before-and-after values in one structured sentence, and you drew cultures before antibiotics. You never named a diagnosis, never ordered a test, never hung a fluid, and never made a promise about the outcome."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "rounds",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Crash course in patient care and medicine: EMT, ED tech, pre-PA. Installable web app for iPad.",
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "check": "node tools/build.mjs --strict",
+    "validate": "node tools/validate.mjs --all",
+    "serve": "node tools/serve.mjs 9230",
+    "start": "node tools/build.mjs && node tools/serve.mjs 9230"
+  },
+  "engines": { "node": ">=20" }
+}

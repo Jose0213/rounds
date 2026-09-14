@@ -1,0 +1,1015 @@
+{
+  "schema": 1,
+  "id": "ed-role",
+  "track": "edtech",
+  "title": "The Emergency Department",
+  "short": "The ED",
+  "summary": "What an emergency department is, how a patient moves from the front door to a disposition, who everyone is, and exactly what the tech does inside that machine.",
+  "lessons": [
+    {
+      "id": "ed-role-l01",
+      "title": "The one door that never closes",
+      "minutes": 6,
+      "body": "## Why the ED exists\n\nEvery other part of a hospital can say no. A clinic books you in three weeks. A surgeon takes referrals. A specialist wants prior authorization. The emergency department (ED) takes whoever arrives, at any hour, in any condition, with or without money.\n\nThat is not culture, it is federal law. **EMTALA** (the Emergency Medical Treatment and Labor Act, 1986) requires any hospital with an ED that accepts Medicare to give every person who presents a medical screening exam, and to stabilize an emergency medical condition, before anyone asks about insurance or moves them anywhere. One rule explains most of what the room looks like.\n\n> **Key:** The ED is the only department in American medicine with no admission criteria. Everyone gets screened. That is why it is crowded, and why sorting people by danger matters so much.\n\n## Undifferentiated is the word\n\nOn an inpatient floor the patient already has a diagnosis. In the ED nobody does yet. A 55-year-old with chest pain is a heart attack, a pulled chest muscle, a pneumonia, a panic attack, or a tearing aorta, and the department's job is to figure out which one fast enough that the lethal version does not win.\n\nSo the ED thinks *worst-first*. Not \"what is most likely\" but \"what could kill this person in the next hour, and have I excluded it.\" Every order you see makes more sense once you read it that way. The EKG on the man with indigestion is not paranoia. It is the worst-first habit.\n\n## The mix on a real shift\n\nA community ED in New Jersey might see 100 to 250 patients a day. Roughly:\n\n- 2 to 5 percent are critically ill or injured on arrival\n- 15 to 20 percent get admitted to the hospital\n- the rest go home, most within 2 to 4 hours\n- a large share of visits are things a clinic could have handled, arriving at 11 p.m. because nothing else is open\n\nYou will hear people complain about that last group. Do not join in. The person deciding whether their symptom is an emergency is the one who is least qualified to know.\n\n## The numbers leadership watches\n\nYou will hear these words in huddle. They are not abstractions; the tech moves most of them.\n\n| Metric | What it counts | Typical goal |\n|---|---|---|\n| Door-to-doc | Arrival to provider evaluation | under 30 minutes |\n| Door-to-EKG | Arrival to 12-lead for chest pain | 10 minutes |\n| LWBS | Left without being seen, as percent of arrivals | under 2 percent |\n| Length of stay | Arrival to physically leaving | 2 to 3 hours discharged, 4 to 6 admitted |\n| Boarding hours | Admitted patient still holding an ED bed | under 4 hours after the admit decision |\n| Throughput | Patients completed per hour | varies by department size |\n\n> **On shift:** When the charge nurse says \"we are getting killed on door-to-EKG,\" that is a direct instruction to you. The tech does the EKG. A 10-minute target is a tech metric wearing a hospital's name.\n\nBoarding is the one that ruins shifts. When the hospital upstairs is full, admitted patients stay in ED beds for hours or days. Those beds cannot take new patients, the waiting room grows, and LWBS climbs. Boarding is not a failure of the ED; it is the hospital's capacity problem parked in your hallway.",
+      "keyPoints": [
+        "EMTALA requires a medical screening exam and stabilization for anyone who presents, before any question of payment.",
+        "ED patients are undifferentiated, so the department reasons worst-first: exclude the lethal cause, then work down.",
+        "Door-to-EKG of 10 minutes for chest pain is a target the tech personally controls.",
+        "Boarding admitted patients in ED beds is the main driver of crowding, waiting room growth, and LWBS."
+      ],
+      "checks": [
+        {
+          "q": "A man with no insurance walks in with abdominal pain. Registration cannot verify coverage. What does EMTALA require?",
+          "choices": [
+            "He must be screened and stabilized before payment is discussed",
+            "He can be referred to a clinic since he cannot pay",
+            "He must sign a payment agreement before triage",
+            "He may be screened only if the ED is not busy"
+          ],
+          "answer": 0,
+          "why": "EMTALA requires a medical screening exam and stabilization of an emergency condition for anyone who presents, independent of ability to pay. Insurance questions come after."
+        },
+        {
+          "q": "What does 'boarding' mean in the ED?",
+          "choices": [
+            "A patient waiting in the lobby before triage",
+            "An admitted patient still occupying an ED bed because no inpatient bed is open",
+            "A patient held for a psychiatric consult",
+            "Transferring a patient to another hospital"
+          ],
+          "answer": 1,
+          "why": "Boarding is an admitted patient held in an ED bed waiting for an upstairs bed. It consumes ED capacity and drives crowding. A lobby wait is a different problem, and psychiatric holds are only one subtype of boarding."
+        },
+        {
+          "q": "Why does a 60-year-old with 'indigestion' get an EKG?",
+          "choices": [
+            "It is required for billing",
+            "Because worst-first reasoning must exclude a heart attack presenting as indigestion",
+            "Because all ED patients get an EKG",
+            "Because the nurse cannot assess abdominal pain"
+          ],
+          "answer": 1,
+          "why": "Epigastric discomfort is a classic atypical presentation of myocardial infarction, especially in older adults, women, and diabetics. The ED excludes the lethal cause first. Not all patients get EKGs, and billing does not drive the order."
+        }
+      ]
+    },
+    {
+      "id": "ed-role-l02",
+      "title": "The path a patient takes",
+      "minutes": 7,
+      "body": "## Two front doors\n\nPatients arrive one of two ways. **Walk-ins** come through the lobby, stop at a window or a greeter, and state a complaint. **EMS arrivals** roll through the ambulance bay on a stretcher, and a paramedic or EMT gives a verbal report to the charge nurse at a dedicated spot.\n\nEMS arrival does not automatically mean sicker. Plenty of people call 911 for a sprained ankle, and plenty of heart attacks drive themselves. But EMS arrivals bypass the lobby and get eyes on them immediately, which is why the charge nurse stands up when the bay doors open.\n\n## The nine stations\n\n1. **Arrival.** Time-stamped. This starts every clock the hospital measures.\n2. **Triage.** A nurse sorts by urgency, not by arrival order, and assigns an acuity level. Vitals, complaint, allergies, medications, and a quick look.\n3. **Registration.** Name, date of birth, insurance, armband. In most EDs this happens at the bedside after triage, so it never delays care. That is deliberate and EMTALA-driven.\n4. **Waiting room or rooming.** High acuity goes straight back to a bed. Everyone else waits, and gets reassessed while waiting.\n5. **Provider evaluation.** A physician, physician assistant (PA), or nurse practitioner (NP) takes a history, examines, and forms a differential.\n6. **Orders.** Labs, imaging, medications, EKG, consults. Many of these land on your task list.\n7. **Results.** Labs come back over 45 to 90 minutes; a CT read may take 30 to 60 minutes; a plain film is faster.\n8. **Reassessment.** The provider and nurse recheck after treatment. Did the pain medication work? Did the wheezing clear? Is the blood pressure holding?\n9. **Disposition.** The decision about where this person goes next.\n\n> **Key:** Triage sorts by danger, not by who got there first. Explaining that calmly to an angry lobby is part of the job.\n\n## The five dispositions\n\n- **Discharge.** Home with instructions and follow-up. Most patients.\n- **Admit.** To a medical floor, a step-down unit, or the ICU depending on how much monitoring they need.\n- **Observation.** A middle path, roughly 24 hours, for people who need serial troponins or a stress test but probably do not need a full admission.\n- **Transfer.** Out to another hospital for a service yours lacks: a burn center, a pediatric trauma center, a cath lab, psychiatric inpatient placement.\n- **AMA or elopement.** Against medical advice means the patient formally refuses and signs out with the provider explaining the risks. **Elopement** means they left without telling anyone. Those are different events with different paperwork, and both matter. If you notice an empty room that should not be empty, say so out loud immediately.\n\n## Where time actually goes\n\nPatients believe the delay is the doctor. Usually it is results and beds. A CT that has to be read, a lab that has to spin, a consultant who is in the operating room, an inpatient bed that has to be cleaned.\n\n> **On shift:** \"They forgot about me\" is the single most common complaint you will hear, and you can fix most of it for free. Walk in, use their name, say what is pending and roughly how long, and say you will check back. Never promise a time you do not control.",
+      "keyPoints": [
+        "Arrival, triage, registration, rooming, provider, orders, results, reassessment, disposition is the fixed skeleton of every ED visit.",
+        "Bedside registration exists so that insurance questions never delay the medical screening exam.",
+        "Dispositions are discharge, admit, observation, transfer, or AMA and elopement.",
+        "AMA is a documented refusal with the provider; elopement is leaving unannounced, and you report an unexpectedly empty room immediately.",
+        "Most perceived delay is results and bed availability, and a status update costs nothing."
+      ],
+      "checks": [
+        {
+          "q": "A patient room you passed 10 minutes ago is now empty, with the IV line on the floor and belongings gone. What is this and what do you do?",
+          "choices": [
+            "AMA; file the signed form",
+            "Elopement; tell the nurse and charge nurse immediately",
+            "Discharge; strip the bed for the next patient",
+            "Transfer; call the receiving facility"
+          ],
+          "answer": 1,
+          "why": "Leaving without notifying staff is elopement, not AMA. AMA requires a conversation and documentation with the provider. Report it at once so the patient can be searched for and the event documented; do not clean the room and erase the evidence."
+        },
+        {
+          "q": "Why does registration usually happen at the bedside rather than at the front door?",
+          "choices": [
+            "It is faster for the registrar",
+            "So insurance and payment questions never delay the medical screening exam",
+            "Because the waiting room has no computers",
+            "To reduce the number of armbands printed"
+          ],
+          "answer": 1,
+          "why": "EMTALA prohibits delaying screening or stabilization for financial questioning. Bedside registration keeps the clinical clock running while the paperwork catches up."
+        },
+        {
+          "q": "A patient needs serial troponins and a stress test but is stable and low risk. Which disposition fits best?",
+          "choices": [
+            "Discharge with a cardiology phone number",
+            "Observation status for about 24 hours",
+            "ICU admission",
+            "Transfer to another hospital"
+          ],
+          "answer": 1,
+          "why": "Observation is the middle path for patients needing a short defined workup without full inpatient admission. Discharge skips the needed testing, ICU is far too much monitoring, and transfer is for services the hospital does not have."
+        }
+      ]
+    },
+    {
+      "id": "ed-role-l03",
+      "title": "Reading the map of the department",
+      "minutes": 6,
+      "body": "## The department is zoned by danger\n\nAn ED is not a hallway of identical rooms. It is sorted so that the sickest people are nearest the equipment and the staff, and the layout tells you where you are expected to be.\n\n## Triage\n\nUsually two to four small rooms or bays near the lobby, with a blood pressure machine, a pulse oximeter, a thermometer, a scale, and an EKG machine. This is where danger gets measured in three to five minutes. Techs work triage in most departments, doing vitals and immediate EKGs while the nurse asks the questions.\n\n## Resuscitation or trauma bays\n\nOne to four large rooms, glass-walled or curtained, doubled in size and stocked for the worst day of someone's life: a ventilator, a defibrillator, a difficult airway cart, a rapid infuser, warming equipment, overhead lights, a procedure table, chest tube trays, and an ultrasound.\n\n> **Key:** The resus bay is always ready. If you use anything in it, you restock it before you leave the room, even if the department is on fire. A missing laryngoscope blade at 3 a.m. is a life.\n\n## Main ED\n\nThe bulk of the beds, where most patients are worked up: chest pain, abdominal pain, weakness, infection, injuries that need imaging. Usually divided into lettered or numbered pods with a nurse assigned to three to five beds and a tech covering a larger zone.\n\n## Fast track or urgent care area\n\nA separate flow for low-acuity visits: lacerations, sprains, sore throats, urinary complaints, rashes, medication refills. Typically staffed by PAs and NPs, and it moves fast. A tech here does wound setups, splints, point-of-care urine testing, and a great deal of room turnover.\n\n## Psychiatric or safe rooms\n\nRooms stripped of ligature points and anything throwable: no cords, no free equipment, a door that swings out, a camera, and a window to the nursing station. Patients change into paper scrubs and their belongings are searched and secured. A sitter or security officer often stays. These rooms exist because a psychiatric patient in a standard room with an oxygen tubing loop is a preventable death.\n\n## Isolation rooms\n\nRegular rooms used for contact or droplet precautions, plus at least one **negative-pressure** room with an air handler that pulls air out rather than letting it drift into the hallway. That is where suspected tuberculosis, measles, or chickenpox goes, with the door closed and an N95 on everyone entering.\n\n## Decontamination\n\nUsually just outside the ambulance bay: a tiled shower room with its own drain, outside access, and chemical suits. For chemical spills, industrial exposures, and hazmat. The rule is that contaminated patients get washed **before** entering the department, because one unwashed patient can close an entire ED.\n\n> **On shift:** In your first week, walk the department with a purpose. Find the crash cart, the difficult airway cart, the EKG machines, the linen, the splinting supplies, the blood tube stock, the specimen drop, the pediatric equipment, the AED, the fire extinguishers and pull stations, the oxygen tanks, and the eyewash station. Knowing where things are is half of what makes a tech fast.",
+      "keyPoints": [
+        "Departments are zoned by acuity: triage up front, resus nearest the equipment, main ED in the middle, fast track separate.",
+        "The resus bay must be restocked and ready at all times, without exception.",
+        "Safe rooms remove ligature points and loose objects; belongings are searched and secured.",
+        "Airborne isolation requires a negative-pressure room with the door closed and an N95.",
+        "Contaminated patients are decontaminated outside before entering the department."
+      ],
+      "checks": [
+        {
+          "q": "Which room does a patient with suspected active tuberculosis belong in?",
+          "choices": [
+            "Any private room with the curtain drawn",
+            "A negative-pressure room with the door closed",
+            "The trauma bay because it is largest",
+            "A positive-pressure room to keep germs out"
+          ],
+          "answer": 1,
+          "why": "TB is airborne, so it requires a negative-pressure room that exhausts air outward, door closed, and N95 respirators. A curtain does nothing for airborne spread, and positive pressure would push contaminated air into the hallway."
+        },
+        {
+          "q": "You used the last 7.5 endotracheal tube and a suction canister during a resuscitation. The department is slammed. What comes first?",
+          "choices": [
+            "Restock the resus bay before leaving it",
+            "Finish your other tasks and restock at end of shift",
+            "Tell the unit clerk to order more tomorrow",
+            "Leave a note on the cart"
+          ],
+          "answer": 0,
+          "why": "The resus room must be ready for the next patient, who may arrive in one minute. Deferred restocking is how a missing item becomes a death. Notes and next-day orders do not make the room usable now."
+        },
+        {
+          "q": "What is the defining feature of a psychiatric safe room?",
+          "choices": [
+            "It is soundproofed",
+            "It has removed ligature points and loose or throwable equipment",
+            "It is the largest room in the department",
+            "It has its own oxygen supply"
+          ],
+          "answer": 1,
+          "why": "Safe rooms exist to remove the means of self-harm: cords, tubing, hooks, and moveable equipment. Size and soundproofing are irrelevant, and extra oxygen tubing is exactly the hazard being removed."
+        }
+      ]
+    },
+    {
+      "id": "ed-role-l04",
+      "title": "Who everyone is and who to ask",
+      "minutes": 7,
+      "body": "## The clinical team\n\n**Attending physician.** The board-certified emergency physician who carries final responsibility for every patient in the department. Address them by name; in most community EDs first names are normal, and in teaching hospitals \"Doctor\" is safer until told otherwise.\n\n**Residents.** In a teaching hospital, physicians in training, usually labeled PGY-1 through PGY-3 or PGY-4. They carry patients and are supervised by the attending.\n\n**PAs and NPs.** Physician assistants and nurse practitioners, together called **advanced practice providers (APPs)**. They see and treat patients, order tests, write prescriptions, and do procedures. In most EDs they staff fast track and carry main-ED patients as well. This is the job you are working toward, so watch how they move.\n\n**Registered nurses (RNs).** Assigned to a group of beds. Give medications, assess and reassess, manage IV therapy, run the bedside. **Your patients' RN is your most important person on shift.** Everything clinical you find goes to them.\n\n**Charge nurse.** Runs the floor: bed assignments, staffing, EMS arrivals, alerts, escalation. If you cannot find your nurse and something is wrong, go to charge.\n\n**Techs, PCTs, ED techs, ER techs.** You. Titles vary by hospital and so does scope.\n\n**Unit clerk or secretary.** Runs the phone, pages consultants, prints labels and armbands, tracks imaging, arranges transport. Learn this person's name in week one; they can save you forty minutes a shift.\n\n## The specialists who pass through\n\n- **Respiratory therapist (RT).** Nebulizers, BiPAP, ventilators, ABGs, airway support at codes.\n- **Pharmacist.** In many EDs physically present. Verifies doses, mixes drips, guides antibiotic choice, and stands at codes doing the math.\n- **Radiology techs.** X-ray, CT, ultrasound. They come to you for portables; you bring the patient to them for everything else.\n- **Social work and case management.** Placement, substance use resources, domestic violence, homelessness, insurance, home oxygen, follow-up. They fix the problems medicine cannot.\n- **Security.** Escalating patients, weapons, missing persons, and standing by with restraints or psychiatric holds.\n- **Scribes.** Document for the provider so the provider can keep their eyes on patients. Not clinical staff, but they know where every patient is in the workup.\n- **Environmental services (EVS).** Terminal cleaning and room turnover. Treat them as staff, because they are, and because a department where EVS likes you turns beds faster.\n- **Transport.** Moves patients to inpatient units and imaging in larger hospitals. In smaller EDs that is you.\n\n> **Key:** Route by function, not by rank. Clinical change goes to the nurse. Bed and flow goes to charge. Phones and consults go to the clerk. Placement and resources go to social work. Behavior and safety go to security.\n\n> **On shift:** When you tell a nurse something, use a structure: who, what changed, what you did, what you need. \"Room 12, Mr. Ruiz, his repeat pressure is 84 over 50 down from 118 over 70, I rechecked it manually, I need you to look at him.\" That is a sentence a busy nurse can act on without asking you three questions.",
+      "keyPoints": [
+        "PAs and NPs are advanced practice providers who evaluate, order, prescribe, and do procedures.",
+        "The patient's RN is the default destination for anything clinical you find.",
+        "Charge nurse owns flow, beds, staffing, and escalation when your nurse is unreachable.",
+        "Route problems by function: nurse, charge, clerk, social work, security, RT, pharmacy.",
+        "Report changes as who, what changed, what you did, what you need."
+      ],
+      "checks": [
+        {
+          "q": "A discharged patient has no way home, no money for a prescription, and is sleeping in his car. Who do you involve?",
+          "choices": [
+            "Security",
+            "Social work or case management",
+            "The unit clerk",
+            "The attending physician"
+          ],
+          "answer": 1,
+          "why": "Housing, transportation, and medication access are social work and case management territory. Security handles safety, the clerk handles calls and paperwork, and the attending handles medical decisions."
+        },
+        {
+          "q": "You recheck a blood pressure and it has dropped substantially. Your assigned nurse is in another room with the door closed. What is the best action?",
+          "choices": [
+            "Chart the number and wait for the nurse to come out",
+            "Tell the charge nurse now",
+            "Recheck in 15 minutes to confirm the trend",
+            "Tell the unit clerk to page someone"
+          ],
+          "answer": 1,
+          "why": "A significant vital sign change needs a licensed clinician now. When your nurse is unavailable, charge is the escalation path. Charting alone, waiting, or routing through a clerk all add delay to a possible deterioration."
+        },
+        {
+          "q": "Who are 'APPs' in an emergency department?",
+          "choices": [
+            "Physician assistants and nurse practitioners",
+            "Attending physicians and residents",
+            "Any staff with prescriptive authority including pharmacists",
+            "Paramedics working in-hospital"
+          ],
+          "answer": 0,
+          "why": "Advanced practice provider is the umbrella term for PAs and NPs. Attendings and residents are physicians, pharmacists do not independently evaluate patients, and in-hospital paramedics have a separate role."
+        }
+      ]
+    },
+    {
+      "id": "ed-role-l05",
+      "title": "What the tech actually does",
+      "minutes": 8,
+      "body": "## The core list\n\nTitles and scope vary by hospital, but the work is remarkably consistent. In New Jersey many ED techs are certified EMTs, and some hospitals train and credential techs for skills beyond the EMT scope inside the hospital under delegation.\n\n**Vital signs and reassessment.** The backbone of the job. Full sets on arrival and rooming, then repeats on a schedule set by acuity, typically every 1 to 2 hours for stable patients and every 15 minutes to continuously for the sick. You are the department's early warning system.\n\n**12-lead EKGs.** For chest pain, shortness of breath, syncope, palpitations, weakness, and epigastric pain over roughly age 40. Target is **within 10 minutes of arrival** for chest pain, and the tracing goes to a provider's hands immediately. You never interpret it to the patient, but you learn to recognize a tracing that should make you walk faster.\n\n**Phlebotomy and IVs.** Drawing blood, labeling at the bedside, and in many hospitals starting peripheral IVs after a credentialing process. Blood cultures require sterile technique and get drawn before antibiotics.\n\n**Point-of-care testing.** Glucose, urine dipstick and pregnancy tests, sometimes hemoglobin, occult blood, or rapid strep and flu swabs. Every device requires documented quality controls.\n\n**Splinting and wound prep.** Volar splints, ulnar gutters, sugar tongs, posterior ankle splints, sling and swathe. Irrigating and cleaning wounds, setting up suture trays, and assisting the provider.\n\n**Transport.** Patients to CT, X-ray, ultrasound, and up to the floor. What you bring matters: monitor if ordered, enough oxygen, IV pump, chart and labels.\n\n**Stocking and turnover.** Rooms, carts, the resus bay, blood draw trays, the EKG machine. Unglamorous, and it decides whether the department functions at 2 a.m.\n\n**Codes.** You do compressions. That is the single highest-value thing a tech does in a cardiac arrest, and you will do it in 2-minute cycles at a rate of `100-120` per minute and a depth of at least `2 inches` for an adult. You also run for the backboard, place the pads, and switch out.\n\n**Sitting and 1:1 observation.** Continuous watch on a patient at risk of self-harm, elopement, or falls. It is boring and it is a safety job. Eyes on, not a phone.\n\n**Hygiene, toileting, ambulation.** Bedpans, urinals, changing a soiled patient, helping someone to the bathroom, walking a patient to test whether they are safe to go home. Do this well and without visible reluctance; it is where dignity lives.\n\n**Restraints.** Applying them at a provider's order and performing the monitoring checks that follow.\n\n**Discharge escorts.** Wheelchair to the door, belongings accounted for, and a last look at whether this person actually seems okay to leave.\n\n**Specimen runs, crutch training, monitor application.** Blood and urine to the lab, teaching a proper crutch gait and height, and placing cardiac monitor leads and pulse oximetry.\n\n> **On shift:** A good tech does about twenty small things an hour and makes almost no announcements about it. The measure is whether the nurses relax when they see your name on the assignment sheet.",
+      "keyPoints": [
+        "Vitals and reassessment are the backbone: every 1 to 2 hours for stable patients, more often for the sick.",
+        "Chest pain gets a 12-lead within 10 minutes of arrival, straight into a provider's hands.",
+        "CPR compressions at 100 to 120 per minute, at least 2 inches deep, switching every 2 minutes.",
+        "Blood cultures are drawn with sterile technique before antibiotics are given.",
+        "Sitter duty is a safety assignment: continuous eyes on the patient, never a phone."
+      ],
+      "checks": [
+        {
+          "q": "A 58-year-old woman arrives at the window reporting pressure in her chest for one hour. What is your first action as the tech?",
+          "choices": [
+            "Take her to the waiting room and get vitals when a chair opens",
+            "Get a 12-lead EKG immediately and hand it to a provider",
+            "Start an IV and draw a troponin first",
+            "Ask her to rate the pain and document it"
+          ],
+          "answer": 1,
+          "why": "Chest pain carries a 10-minute door-to-EKG target because a STEMI must be identified before anything else happens. Labs, IVs, and pain scores all follow. Waiting for a chair wastes the only minutes that change outcome."
+        },
+        {
+          "q": "Correct adult compression rate and depth during CPR?",
+          "choices": [
+            "80 to 100 per minute, 1 inch",
+            "100 to 120 per minute, at least 2 inches",
+            "120 to 140 per minute, 3 inches",
+            "60 per minute, as deep as possible"
+          ],
+          "answer": 1,
+          "why": "AHA guidance is 100 to 120 per minute at a depth of at least 2 inches but not beyond about 2.4 inches for adults. Slower or shallower compressions fail to generate perfusion; faster ones prevent adequate chest recoil."
+        },
+        {
+          "q": "You are assigned as a 1:1 sitter for a patient with suicidal ideation. The patient falls asleep and the department gets busy. What do you do?",
+          "choices": [
+            "Step out to help with a room turnover since the patient is asleep",
+            "Stay in continuous visual contact until formally relieved",
+            "Watch from the hallway camera monitor",
+            "Close the door so the patient can rest"
+          ],
+          "answer": 1,
+          "why": "A 1:1 means uninterrupted direct observation until another staff member formally takes over. Sleep is not safety, cameras are not a substitute, and closing the door removes the observation entirely."
+        }
+      ]
+    },
+    {
+      "id": "ed-role-l06",
+      "title": "The line you do not cross",
+      "minutes": 6,
+      "body": "## Where your authority comes from\n\nYou are unlicensed assistive personnel. That is not an insult, it is a legal category. A nurse holds a license issued under a state **nurse practice act**, and that act allows the nurse to **delegate** specific tasks to you while keeping responsibility for the outcome. In New Jersey the Board of Nursing governs that delegation.\n\nThat means two things. Your scope is whatever your hospital has trained, credentialed, and policy-approved you to do, and it can differ from the tech at the hospital ten miles away. And the nurse remains accountable, which is why the nurse gets told everything.\n\n> **Key:** You never accept a task, and you never keep information, that the nurse does not know about.\n\n## The four hard rules\n\n**1. Never give a medication.** Not a Tylenol, not an antacid, not a home pill the patient brought, not the ordered dose that is sitting in the room. Not even handing them the cup. Medication administration requires a license. This is the rule most likely to end a career, because it feels harmless every single time.\n\n**2. Never interpret a result to a patient.** \"Your EKG looks fine\" is wrong twice: you are not qualified, and you might be wrong. Even when the number is obviously normal, the correct sentence is \"the provider will go over your results with you.\" A troponin, a CT, an EKG, a pregnancy test, a positive drug screen. All of it.\n\n**3. Never take a verbal order.** If a physician says \"go get him 4 of morphine,\" your answer is \"I will get the nurse for you.\" Orders go from a provider to a nurse or into the chart. You are not a link in that chain, and a verbal order routed through an unlicensed person is how a wrong drug reaches a patient.\n\n**4. Always tell the nurse.** Vital signs outside parameters, a patient who looks worse, a new complaint, a refusal, pain unrelieved, a family concern, anything a patient discloses about self-harm or abuse, a fall, a wet floor, an IV that is infiltrated. You are not deciding whether it matters. You are reporting.\n\n## The gray areas\n\n- **Oxygen** is a drug. Adjusting a flow rate is a medication change; get the nurse.\n- **Oral fluids and food** need a nurse's okay, because some patients are NPO for a procedure or a swallow evaluation.\n- **Ambulating a patient** needs an okay if the patient is on a monitor, dizzy, or a fall risk.\n- **Removing an IV** is usually a nursing task; hospitals vary.\n- **Answering \"am I having a heart attack\"** is a question for the provider, every time.\n\n> **Trap:** The most common scope violation by new techs is not a dramatic act. It is handing a patient their own home medication bottle from the belongings bag because they asked nicely. That is administration by a different name.\n\n## Saying no without friction\n\nYou will be asked to overstep, usually by someone senior and busy and not maliciously. Have a sentence ready. \"I am not signed off on that, let me grab the nurse.\" \"That is outside my scope here, but I can set everything up for you.\" Offer the part you can do, hand off the part you cannot, and never make it a debate in front of a patient.",
+      "keyPoints": [
+        "Your scope comes from nurse delegation under the state nurse practice act plus your hospital's credentialing.",
+        "Never administer or hand over a medication, including the patient's own home pills and oxygen changes.",
+        "Never interpret results to a patient; route the question to the provider.",
+        "Never accept a verbal order; redirect it to the nurse.",
+        "Report everything abnormal to the nurse and do not filter it yourself."
+      ],
+      "checks": [
+        {
+          "q": "A resident in a hurry says 'give him 650 of Tylenol, I will put the order in later.' What do you say?",
+          "choices": [
+            "Give it, since the order is coming",
+            "Give it only if the nurse is unavailable",
+            "Decline politely and get the nurse for the resident",
+            "Hand the patient the pills and let him take them himself"
+          ],
+          "answer": 2,
+          "why": "Techs cannot accept verbal orders or administer medications, and handing pills over is administration. The correct move is to bring the nurse, who can legally receive the order and give the drug."
+        },
+        {
+          "q": "A patient asks, 'my EKG was normal, right?' You looked at it and it appeared unremarkable. Best response?",
+          "choices": [
+            "'It looked normal to me'",
+            "'I cannot read those'",
+            "'The provider will go over your results with you, and I will let them know you are asking'",
+            "'You would know by now if it was bad'"
+          ],
+          "answer": 2,
+          "why": "You do not interpret results, but the patient still deserves a path to an answer. Deflecting without action leaves them anxious, and a casual reassurance can be both wrong and legally damaging."
+        },
+        {
+          "q": "Which is the clearest example of a scope violation?",
+          "choices": [
+            "Retaking a blood pressure manually",
+            "Handing a patient their home blood pressure pill from their belongings bag",
+            "Telling the nurse about a new complaint",
+            "Applying a cardiac monitor"
+          ],
+          "answer": 1,
+          "why": "Providing a patient a medication, even their own, is administration and requires a license. Repeat vitals, reporting, and monitor application are all standard delegated tech tasks."
+        }
+      ]
+    },
+    {
+      "id": "ed-role-l07",
+      "title": "The shape of a shift",
+      "minutes": 6,
+      "body": "## Before the shift starts\n\nArrive early enough to put your bag away, find the assignment sheet, and be standing in the right place when huddle starts. Techs who arrive at the exact minute are always behind for the first hour.\n\n## Huddle\n\nA short stand-up, usually 5 minutes, at shift change. Expect: current census and bed status, boarders, any patients on alert protocols, staffing gaps, equipment that is broken, safety events from the prior shift, and any patient with a behavioral flag. Listen for names and room numbers. Write down the flagged patients.\n\n## Your assignment\n\nYou will get a **zone**: a group of rooms, a section of the department, triage, or fast track. Zones mean your name is attached to specific beds, but the department does not actually work that way when things go wrong.\n\n> **Key:** \"Not my patient\" is the fastest way to be disliked in an ED. Answer the call bell, take the vitals, help the lift. Reciprocity is the entire social contract of the department.\n\n## The rounding loop\n\nThe rhythm that makes a shift work is a loop, not a queue. Every 1 to 2 hours you walk your zone and, in each room, do the same four things:\n\n1. Take and document the vitals that are due.\n2. Ask about pain, bathroom, water status per the nurse, and warmth.\n3. Look at the room: is the call bell in reach, the bed low, the rails up as ordered, the floor dry, the IV site visible.\n4. Say what is next and when you will be back.\n\nMost falls, most angry families, and most missed deterioration happen in the gap between rounds. Proactive rounding shrinks the gap.\n\n## Breaks\n\nYou get them, and you must take them. Hand off explicitly: tell your nurse and another tech what is pending, who needs a recheck at what time, and who is a fall risk or a 1:1. Coming back to find nobody knew a patient was due for a repeat pressure is a preventable harm.\n\n## Handoff at shift change\n\nA verbal handoff is a safety event, not a formality. Give the incoming tech, room by room:\n\n- who is in the bed and why they are here\n- what is pending: labs drawn, imaging waiting, EKG done or due\n- what is due: next vitals, next restraint check, a repeat orthostatic set\n- who is a fall risk, a 1:1, a behavioral flag, or on precautions\n- anything you promised a patient or family\n\n> **On shift:** End the handoff with \"anything you want me to do before I go?\" Ninety percent of the time the answer is no, and the other ten percent is the time you saved someone.\n\n## The tempo changes\n\nMornings bring a wave of clinic overflow and EMS from home calls. Afternoons and evenings are the peak; most EDs are busiest between about 11 a.m. and 11 p.m. Nights are fewer patients, sicker on average, with a skeleton crew where every person matters more. Weekends and holidays spike. So does the first warm weekend of spring, and so does bad weather.",
+      "keyPoints": [
+        "Huddle gives you census, boarders, alerts, safety flags, and staffing; write down flagged patients.",
+        "Round your zone every 1 to 2 hours checking vitals, pain, bathroom, room safety, and expectations.",
+        "'Not my patient' is not acceptable; answer the bell regardless of assignment.",
+        "Hand off explicitly before a break and at shift change: who, what is pending, what is due, who is at risk.",
+        "Most ED volume falls between roughly 11 a.m. and 11 p.m.; nights are fewer but sicker."
+      ],
+      "checks": [
+        {
+          "q": "You are leaving for a 30-minute meal break. What is the minimum you owe the team?",
+          "choices": [
+            "Nothing; the nurses know the patients",
+            "A handoff naming pending tasks, due rechecks, and at-risk patients",
+            "A note left at the desk",
+            "Telling only the charge nurse you are going"
+          ],
+          "answer": 1,
+          "why": "A break is a handoff. Somebody must know what is pending and who needs watching. A note nobody reads and a bare 'I am going' both leave tasks orphaned."
+        },
+        {
+          "q": "A call bell rings in a room outside your assigned zone while you are walking past. What do you do?",
+          "choices": [
+            "Find the tech assigned to that zone",
+            "Answer it yourself",
+            "Ignore it; the nurse will get it",
+            "Turn it off and keep going"
+          ],
+          "answer": 1,
+          "why": "Answering bells regardless of assignment is the basic reciprocity that keeps an ED functioning, and the bell may be a fall about to happen. Hunting for the assigned tech adds minutes; silencing it is dangerous."
+        },
+        {
+          "q": "How often should a stable patient in the main ED typically be rounded on by the tech?",
+          "choices": [
+            "Every 15 minutes",
+            "Every 1 to 2 hours",
+            "Every 4 hours",
+            "Only when the nurse asks"
+          ],
+          "answer": 1,
+          "why": "Stable patients are typically reassessed every 1 to 2 hours, with higher acuity getting far more frequent checks. Every 15 minutes is a monitoring or restraint interval, and 4 hours leaves too wide a gap for deterioration and falls."
+        }
+      ]
+    },
+    {
+      "id": "ed-role-l08",
+      "title": "The board, the chart, and your documentation",
+      "minutes": 7,
+      "body": "## The tracking board is the department's brain\n\nEvery ED runs an electronic tracking board on wall monitors and on every workstation. Epic's ED module, called **ASAP**, is the most common example in the United States, but Cerner FirstNet, Meditech, and others show the same information in a different skin.\n\nRead it left to right. Typical columns:\n\n| Column | What it tells you |\n|---|---|\n| Room or bed | Where the patient physically is, including hallway beds |\n| Acuity | The triage level, usually color-coded, red or 1 being sickest |\n| Name and age | Identity, plus a flag if there is a same-name patient |\n| Chief complaint | Why they came, in a few words |\n| Time | Arrival time or elapsed length of stay, often turning red past a threshold |\n| Provider and nurse | Initials of who is assigned |\n| Orders | What is pending, often as small icons for labs, imaging, meds, EKG |\n| Results | What has resulted, with abnormal values highlighted |\n| Disposition | Pending, admit requested, discharge ordered, bed assigned |\n| Icons | Isolation, fall risk, allergy, 1:1, restraints, interpreter needed |\n\n> **Key:** Your task list lives in the orders column. Learn which icon is an EKG, which is a blood draw, and which is a urine specimen, and you can pull your own work without being told.\n\n## Finding your work\n\nMost systems let you filter the board to your zone and to unfulfilled tasks. The two habits that separate fast techs from slow ones:\n\n1. Check the board every time you pass a workstation, not only when someone calls you.\n2. Claim the task in the system when you start it, so two techs do not draw the same patient twice.\n\n## Documenting, and why it is not busywork\n\nIf it is not documented, it did not happen. That is a legal statement, not a saying. The chart is what a court, a quality review, and the next shift all read.\n\n**Vitals.** Enter the full set with the time actually taken, not the time you charted it. Note the method and site when it matters: manual versus automatic cuff, cuff size, which arm, oral versus temporal versus rectal temperature, room air versus oxygen and how much.\n\n**EKG.** Document the time the tracing was acquired and, critically, the time and name of the provider who reviewed it. That review timestamp is the one the STEMI review committee reads.\n\n**Tasks.** Blood drawn and the time, specimen sent, patient transported to CT and back, splint applied, monitor applied, catheter specimen obtained, restraint check performed.\n\n**A tech note.** Short and factual. Objective observations only, no conclusions.\n\nGood: \"Patient found sitting on floor next to bed at 1442. States he was reaching for phone. No obvious injury. RN notified at 1443. Vitals obtained.\"\n\nBad: \"Patient fell because he was confused and tried to get up by himself again.\"\n\nThe first describes; the second diagnoses, assigns blame, and invents a motive.\n\n> **Trap:** Never chart in advance and never chart a vital sign you did not personally obtain. Charting a set of numbers for a patient you have not touched is falsification, and the cases where it gets caught are always the cases where the patient deteriorated.\n\n## Two identifiers, every time\n\nBefore any task on any patient, confirm two identifiers, normally full name and date of birth, and match them to the armband and the label. You will do this hundreds of times a shift and it will feel silly right up until the day it catches a wrong patient.",
+      "keyPoints": [
+        "The tracking board shows room, acuity, complaint, provider, pending orders, results, disposition, and safety icons.",
+        "Pending orders on the board are your self-service task list; claim tasks in the system to avoid duplication.",
+        "Document the time care actually happened, not the time you charted it; for EKGs the provider review time is what quality review examines.",
+        "Tech notes are objective and factual, never conclusions about cause or blame.",
+        "Two identifiers, name and date of birth, matched to the armband before every task."
+      ],
+      "checks": [
+        {
+          "q": "You obtained vitals at 1410 and chart them at 1435. What time goes in the chart?",
+          "choices": [
+            "1435, when it was entered",
+            "1410, when the vitals were taken",
+            "Either, as long as it is within 30 minutes",
+            "The time the nurse asks for"
+          ],
+          "answer": 1,
+          "why": "The chart must reflect when the care actually happened, because trends and response times are reconstructed from those timestamps. Entering the charting time distorts the clinical picture and the department's metrics."
+        },
+        {
+          "q": "Which tech note is written correctly?",
+          "choices": [
+            "'Patient is drug seeking and keeps asking for pain medication'",
+            "'Patient appears anxious about results, probably a panic attack'",
+            "'Patient states pain is 8 out of 10 in right lower abdomen at 0930. RN notified at 0931.'",
+            "'Family is being difficult and unreasonable'"
+          ],
+          "answer": 2,
+          "why": "A tech note records observations, quotes, times, and notifications. The other three assign motives, offer diagnoses, or record judgments, all of which are outside scope and damaging in a legal record."
+        },
+        {
+          "q": "After acquiring a 12-lead EKG on a chest pain patient, which timestamp matters most for STEMI quality review?",
+          "choices": [
+            "The time the machine was plugged in",
+            "The time the provider reviewed the tracing",
+            "The time the patient was registered",
+            "The time the leads were removed"
+          ],
+          "answer": 1,
+          "why": "The measure is how fast a qualified provider saw the tracing, because that is when a STEMI can be identified and the cath lab activated. Acquisition without review is a tracing nobody has acted on."
+        }
+      ]
+    },
+    {
+      "id": "ed-role-l09",
+      "title": "Being the tech everyone wants on shift",
+      "minutes": 7,
+      "body": "## Anticipate the next need\n\nThe difference between an adequate tech and one nurses request by name is a half step of prediction. Chest pain rolls in, and the monitor and EKG are already going. A laceration goes to a room, and the suture setup and irrigation supplies are there. An ankle injury comes back from X-ray, and the splinting cart is at the bedside. An elderly patient is being discharged, and the wheelchair is already outside the door.\n\nYou get this by learning the pattern for each complaint. Within a month you will know what follows what.\n\n## Close the loop, out loud\n\nWhen someone asks you for something, say a version of \"I am on it\" and then come back and say it is done. An unclosed loop makes a nurse check on you, which costs them more time than doing it themselves.\n\nThree phrases worth having ready:\n\n- \"I am on it.\"\n- \"That is done, room 8's blood is in the tube system.\"\n- \"I could not get it, I tried twice, I need help.\" Say this early, not at minute twenty.\n\n## Own the room\n\nWhen you walk into a room, leave it better. Bed low, rails per order, call bell in reach, trash off the floor, warm blanket if they are cold, sharps off the bedside table, curtain closed when you leave. Restock what you use. Know where everything is. Nobody will thank you for any of it, and everyone notices.\n\n## Stay off your phone\n\nOne behavior does more reputational damage than any clinical mistake. On the floor, in the hallway, at the desk, in a patient's sightline. Families photograph it. Keep it in your pocket.\n\n## Ask why, once per shift\n\nYou are going to PA school. Every shift contains a free lesson that costs a provider fifteen seconds.\n\nPick a moment when the department breathes and ask one specific question. \"Why did that one get a CT angio instead of a regular CT?\" \"What made you activate the stroke team on that patient?\" \"Why lactate on a patient with no fever?\" Specific questions get answered. \"Can you teach me about sepsis\" does not.\n\nWatch procedures whenever you are not needed elsewhere. Offer to hold, position, retract, or set up. A tech who reliably positions patients well gets invited into rooms.\n\n> **Key:** Keep a de-identified case log. No names, no dates of birth, no record numbers. Just: age range, chief complaint, the vitals that mattered, the workup, the diagnosis, the disposition, and one sentence on what you learned. Twenty entries makes you better at the job; two hundred makes you interviewable.\n\nThat log is also your patient care experience evidence. PA programs ask for hours and for what you actually did. Answering \"I ran EKGs and did compressions\" is fine. Answering with a specific case you can reason through is what gets remembered.\n\n## The unwritten rules\n\n- The resus bay is always ready. Restock it before anything else.\n- Do not sit at a physician's workstation. They will come back mid-thought and need it.\n- Answer the phone the same way every time: department, your name, your title. Then write down the callback number before anything else.\n- Food and drink stay in the break room. Never at the desk, never in a patient area, and never in a room with precautions.\n- When a family member corners you in the hallway, do not guess. \"Let me get the nurse for you\" and then actually get the nurse.\n- Complaints go up the chain: your nurse, then charge, then the ED educator or manager. Do not litigate them in the hallway.\n\n## The part nobody warns you about\n\nYou will see a child die. You will do compressions on someone's grandmother and lose. You will hold the hand of a person whose family cannot get there in time. That accumulates, and the term for it is secondary traumatic stress.\n\nIt is normal to feel it and abnormal to feel nothing. Go to the debrief when one is offered, even if you were peripheral. Use the employee assistance program. Talk to the people who were in the room, because they are the only ones who fully understand. Watch for the signs that matter: not sleeping, dreading shifts, going numb, drinking more, snapping at people you love.\n\n> **On shift:** Burnout is not weakness and it is not inevitable. It is what happens when you absorb hard things and never put them down.",
+      "keyPoints": [
+        "Anticipate the predictable next step for each complaint and have the equipment there before it is asked for.",
+        "Close every loop verbally: acknowledge, complete, report back, and ask for help early when stuck.",
+        "Ask one specific question per shift and keep a de-identified case log as PCE evidence and interview material.",
+        "Unwritten rules: resus bay stocked, stay off your phone, do not take a physician's workstation, redirect family questions to the nurse.",
+        "Secondary traumatic stress is expected; use debriefs and the employee assistance program before it compounds."
+      ],
+      "checks": [
+        {
+          "q": "What makes a case log usable for a PA school application?",
+          "choices": [
+            "Including names and dates so cases can be verified",
+            "De-identified entries with complaint, workup, disposition, and what you learned",
+            "Screenshots of the tracking board",
+            "Copies of discharge paperwork"
+          ],
+          "answer": 1,
+          "why": "A log must be fully de-identified to be lawful and useful. Names, dates of birth, record numbers, or screenshots of the chart are privacy violations regardless of intent."
+        },
+        {
+          "q": "A patient's daughter stops you in the hallway and asks whether her mother's CT showed a stroke. Best response?",
+          "choices": [
+            "Tell her what you saw on the board",
+            "Tell her nothing and walk on",
+            "Say you cannot discuss results and that you will get the nurse right now",
+            "Say the results looked fine so she stops worrying"
+          ],
+          "answer": 2,
+          "why": "Results go to the patient from a provider. But refusing without action leaves a frightened family in the hallway, and reassuring falsely is both out of scope and potentially untrue. Redirect and follow through."
+        },
+        {
+          "q": "After a pediatric resuscitation that did not succeed, a debrief is offered. You were only running for supplies. Should you attend?",
+          "choices": [
+            "No, debriefs are for the code team",
+            "Yes; peripheral involvement still carries weight and debriefs are for everyone present",
+            "Only if the manager requires it",
+            "No, discussing it will make it worse"
+          ],
+          "answer": 1,
+          "why": "Secondary traumatic stress does not track with how central your role was. Debriefs are for everyone in the room and skipping them is how cases follow people home."
+        }
+      ]
+    }
+  ],
+  "cards": [
+    { "id": "ed-role-c001", "front": "What does EMTALA require of an ED?", "back": "A medical screening exam for anyone who presents, and stabilization of an emergency condition, before any question of insurance or payment, and before transferring them.", "lesson": "ed-role-l01" },
+    { "id": "ed-role-c002", "front": "What does 'undifferentiated' mean about ED patients, and how does it change the reasoning?", "back": "They arrive without a diagnosis. So the ED reasons worst-first: exclude the cause that could kill in the next hour, then work down to likelier, less dangerous causes.", "lesson": "ed-role-l01" },
+    { "id": "ed-role-c003", "front": "What is LWBS and what is a typical target?", "back": "Left without being seen: the percent of arrivals who leave before a provider evaluation. Most departments target under 2 percent. It rises when the waiting room grows.", "lesson": "ed-role-l01" },
+    { "id": "ed-role-c004", "front": "What is boarding and why does it matter so much?", "back": "An admitted patient still occupying an ED bed because no inpatient bed is available. It consumes ED capacity, grows the waiting room, and drives LWBS up.", "lesson": "ed-role-l01" },
+    { "id": "ed-role-c005", "front": "What is the door-to-doc target in a typical ED?", "back": "Under 30 minutes from arrival to provider evaluation. Length of stay targets are roughly 2 to 3 hours for discharged patients and 4 to 6 hours for admitted patients.", "lesson": "ed-role-l01" },
+    { "id": "ed-role-c006", "front": "Name the nine stations of an ED visit in order.", "back": "Arrival, triage, registration, waiting or rooming, provider evaluation, orders, results, reassessment, disposition.", "lesson": "ed-role-l02" },
+    { "id": "ed-role-c007", "front": "Why is registration usually done at the bedside?", "back": "So insurance and payment questions never delay the medical screening exam, which EMTALA prohibits. The clinical clock keeps running while paperwork catches up.", "lesson": "ed-role-l02" },
+    { "id": "ed-role-c008", "front": "What are the five possible ED dispositions?", "back": "Discharge, admit, observation, transfer to another facility, and AMA or elopement.", "lesson": "ed-role-l02" },
+    { "id": "ed-role-c009", "front": "What is observation status and roughly how long does it last?", "back": "A middle path between discharge and admission, about 24 hours, for patients needing a short defined workup such as serial troponins or a stress test.", "lesson": "ed-role-l02" },
+    { "id": "ed-role-c010", "front": "What is the difference between AMA and elopement?", "back": "AMA is a documented refusal after the provider explains the risks and the patient signs out. Elopement is leaving without telling anyone. Both are reportable events, with different paperwork.", "lesson": "ed-role-l02" },
+    { "id": "ed-role-c011", "front": "You find a patient's room unexpectedly empty with belongings gone. What do you do?", "back": "Tell the nurse and charge nurse immediately so a search and documentation can start. Do not clean the room first.", "lesson": "ed-role-l02" },
+    { "id": "ed-role-c012", "front": "Why does an EMS arrival bypass the waiting room?", "back": "Not because EMS patients are automatically sicker, but because a stretcher arrival gets immediate eyes and a verbal report to the charge nurse, who assigns a bed on the spot.", "lesson": "ed-role-l02" },
+    { "id": "ed-role-c013", "front": "What is stocked in a resuscitation bay that a regular room does not have?", "back": "Ventilator, defibrillator, difficult airway cart, rapid infuser, warming equipment, overhead lights, procedure trays such as chest tubes, and an ultrasound.", "lesson": "ed-role-l03" },
+    { "id": "ed-role-c014", "front": "What is the standing rule about the resus bay after you use it?", "back": "Restock it before you leave, every time, no matter how busy the department is. It must be ready for the next patient, who may arrive in one minute.", "lesson": "ed-role-l03" },
+    { "id": "ed-role-c015", "front": "What kind of patients go to fast track, and who staffs it?", "back": "Low-acuity visits: lacerations, sprains, sore throats, urinary complaints, rashes. Usually staffed by PAs and NPs, with heavy tech involvement in wound setups, splints, and turnover.", "lesson": "ed-role-l03" },
+    { "id": "ed-role-c016", "front": "What defines a psychiatric safe room?", "back": "No ligature points, no cords or tubing, no loose or throwable equipment, a door that swings outward, camera and line of sight from the station, paper scrubs, belongings searched and secured.", "lesson": "ed-role-l03" },
+    { "id": "ed-role-c017", "front": "What makes a room suitable for airborne isolation?", "back": "Negative pressure, meaning air is exhausted out rather than drifting into the hallway, with the door kept closed and an N95 respirator on everyone entering.", "lesson": "ed-role-l03" },
+    { "id": "ed-role-c018", "front": "Where does decontamination happen and why there?", "back": "In a shower room with its own drain and outside access, usually by the ambulance bay. Contaminated patients are washed before entering, because one unwashed patient can close an entire ED.", "lesson": "ed-role-l03" },
+    { "id": "ed-role-c019", "front": "Which things should you locate in your first week in a new department?", "back": "Crash cart, difficult airway cart, EKG machines, linen, splinting supplies, blood tubes, specimen drop, pediatric equipment, AED, fire pulls and extinguishers, oxygen tanks, eyewash station.", "lesson": "ed-role-l03" },
+    { "id": "ed-role-c020", "front": "Who are APPs and what can they do in the ED?", "back": "Advanced practice providers: physician assistants and nurse practitioners. They evaluate patients, order tests, prescribe, and perform procedures, often staffing fast track and carrying main-ED patients.", "lesson": "ed-role-l04" },
+    { "id": "ed-role-c021", "front": "Who is the single most important person for a tech to report to?", "back": "The patient's assigned registered nurse. Everything clinical you find goes to them. If they are unreachable and something is wrong, go to the charge nurse.", "lesson": "ed-role-l04" },
+    { "id": "ed-role-c022", "front": "What does the charge nurse own?", "back": "Flow: bed assignments, staffing, EMS arrivals, alert activations, and escalation. Go to charge for anything about beds, or when your nurse is unavailable.", "lesson": "ed-role-l04" },
+    { "id": "ed-role-c023", "front": "What does the unit clerk do for you?", "back": "Runs phones, pages consultants, prints labels and armbands, tracks imaging, arranges transport. Learning their name in week one saves you forty minutes a shift.", "lesson": "ed-role-l04" },
+    { "id": "ed-role-c024", "front": "When do you call respiratory therapy?", "back": "Nebulizer treatments, BiPAP and ventilator setup and management, arterial blood gases, and airway support at codes. The request itself goes through the nurse or provider.", "lesson": "ed-role-l04" },
+    { "id": "ed-role-c025", "front": "What problems belong to social work and case management?", "back": "Placement, substance use resources, domestic violence, homelessness, insurance, home oxygen, transportation, and follow-up. The problems medicine alone cannot fix.", "lesson": "ed-role-l04" },
+    { "id": "ed-role-c026", "front": "What is the four-part structure for reporting a change to a nurse?", "back": "Who and where, what changed, what you did, what you need. Example: room 12, pressure is 84 over 50 down from 118 over 70, I rechecked manually, I need you to look at him.", "lesson": "ed-role-l04" },
+    { "id": "ed-role-c027", "front": "How often do you reassess vitals on a stable versus an unstable ED patient?", "back": "Stable patients roughly every 1 to 2 hours. Unstable or high-acuity patients every 15 minutes to continuously, per nursing direction and acuity.", "lesson": "ed-role-l05" },
+    { "id": "ed-role-c028", "front": "Which complaints should make you get an immediate 12-lead EKG?", "back": "Chest pain, shortness of breath, syncope, palpitations, unexplained weakness, and epigastric pain over roughly age 40. Target is 10 minutes from arrival for chest pain.", "lesson": "ed-role-l05" },
+    { "id": "ed-role-c029", "front": "What are the adult CPR compression rate and depth?", "back": "`100-120` compressions per minute at a depth of at least `2 inches`, not exceeding about `2.4 inches`, with full recoil and compressor changes every 2 minutes.", "lesson": "ed-role-l05" },
+    { "id": "ed-role-c030", "front": "When are blood cultures drawn relative to antibiotics?", "back": "Before antibiotics, using sterile technique. Once antibiotics are in, the cultures may not grow the organism and the result becomes far less useful.", "lesson": "ed-role-l05" },
+    { "id": "ed-role-c031", "front": "What does 1:1 or sitter duty actually require?", "back": "Continuous direct visual observation of the patient until another staff member formally relieves you. Not from the hallway, not by camera, not while the patient sleeps, not with a phone out.", "lesson": "ed-role-l05" },
+    { "id": "ed-role-c032", "front": "What tech tasks support a patient going home safely?", "back": "Ambulating them to test stability, crutch fitting and gait training, wheelchair escort to the door, accounting for belongings, and a last look at whether they seem safe to leave.", "lesson": "ed-role-l05" },
+    { "id": "ed-role-c033", "front": "Name five point-of-care tests a tech commonly performs.", "back": "Blood glucose, urine dipstick, urine pregnancy, and depending on hospital, hemoglobin, occult blood, rapid strep or influenza swabs. All require documented quality controls.", "lesson": "ed-role-l05" },
+    { "id": "ed-role-c034", "front": "Where does a tech's legal authority to perform tasks come from?", "back": "Delegation from a licensed nurse under the state nurse practice act, plus the hospital's own training, credentialing, and policy. Scope therefore differs between hospitals.", "lesson": "ed-role-l06" },
+    { "id": "ed-role-c035", "front": "What are the four hard rules of tech scope?", "back": "Never give a medication, never interpret a result to a patient, never take a verbal order, always tell the nurse.", "lesson": "ed-role-l06" },
+    { "id": "ed-role-c036", "front": "A patient asks you to hand them their own home pill from their belongings bag. What is that?", "back": "Medication administration, which requires a license. It is the most common scope violation by new techs because it feels harmless. Get the nurse.", "lesson": "ed-role-l06" },
+    { "id": "ed-role-c037", "front": "A physician tells you directly to give a dose of morphine. What do you say?", "back": "Decline politely and get the nurse. Techs cannot receive verbal orders; orders go from provider to nurse or into the chart.", "lesson": "ed-role-l06" },
+    { "id": "ed-role-c038", "front": "Why is changing an oxygen flow rate outside tech scope?", "back": "Oxygen is a drug. Adjusting the dose is a medication change requiring a license. Report the need and let the nurse or respiratory therapist adjust it.", "lesson": "ed-role-l06" },
+    { "id": "ed-role-c039", "front": "How do you decline an out-of-scope request without friction?", "back": "Offer what you can do and hand off what you cannot: 'I am not signed off on that, let me grab the nurse, but I can set everything up for you.' Never debate it in front of the patient.", "lesson": "ed-role-l06" },
+    { "id": "ed-role-c040", "front": "Why must a patient get a nurse's okay before food or water?", "back": "Some patients are NPO, meaning nothing by mouth, for surgery, sedation, imaging, or a swallow evaluation. A cup of water can cancel a procedure or cause aspiration.", "lesson": "ed-role-l06" },
+    { "id": "ed-role-c041", "front": "What information should you capture from huddle?", "back": "Census and bed status, boarders, patients on alert protocols, staffing gaps, broken equipment, prior-shift safety events, and behavioral flags. Write down flagged names and rooms.", "lesson": "ed-role-l07" },
+    { "id": "ed-role-c042", "front": "What four things do you do in every room on a rounding loop?", "back": "Vitals that are due, ask about pain and bathroom and warmth, check room safety such as call bell and bed height and rails, and tell them what is next and when you return.", "lesson": "ed-role-l07" },
+    { "id": "ed-role-c043", "front": "What must a shift-change handoff cover, room by room?", "back": "Who and why, what is pending, what is due and when, who is a fall risk or 1:1 or on precautions, and anything you promised a patient or family.", "lesson": "ed-role-l07" },
+    { "id": "ed-role-c044", "front": "When is an ED typically busiest?", "back": "Roughly 11 a.m. to 11 p.m., with spikes on weekends, holidays, the first warm weekend of spring, and bad weather. Nights have fewer patients but a sicker average and thinner staffing.", "lesson": "ed-role-l07" },
+    { "id": "ed-role-c045", "front": "Why is 'not my patient' unacceptable in an ED?", "back": "Zones assign accountability, not exclusivity. The call bell may be a fall in progress, and reciprocity between techs is the social contract that keeps the department working.", "lesson": "ed-role-l07" },
+    { "id": "ed-role-c046", "front": "What does the ED tracking board show you?", "back": "Room, acuity color, name and age, chief complaint, elapsed time, provider and nurse, pending orders, resulted labs, disposition status, and safety icons for isolation, fall risk, allergy, and 1:1.", "lesson": "ed-role-l08" },
+    { "id": "ed-role-c047", "front": "How do you find your own work on the board without being told?", "back": "Filter to your zone and to unfulfilled tasks, read the pending orders column, and claim the task in the system when you start so two techs do not duplicate a draw.", "lesson": "ed-role-l08" },
+    { "id": "ed-role-c048", "front": "Which time do you enter for a set of vitals?", "back": "The time you actually obtained them, not the time you charted. Trends and response metrics are reconstructed from those timestamps.", "lesson": "ed-role-l08" },
+    { "id": "ed-role-c049", "front": "What details accompany a charted vital sign set?", "back": "Method and site where relevant: manual versus automatic cuff, cuff size, which arm, temperature route, and room air versus oxygen with the flow rate and device.", "lesson": "ed-role-l08" },
+    { "id": "ed-role-c050", "front": "What makes a tech note correct?", "back": "Objective observations, direct quotes, times, and who was notified. No diagnoses, no causes, no judgments about motive or behavior.", "lesson": "ed-role-l08" },
+    { "id": "ed-role-c051", "front": "What are the two patient identifiers and when do you use them?", "back": "Full name and date of birth, matched against the armband and the specimen label, confirmed before every single task on every patient.", "lesson": "ed-role-l08" },
+    { "id": "ed-role-c052", "front": "What makes a case log usable as PA school evidence?", "back": "Complete de-identification: no names, dates of birth, or record numbers. Record age range, chief complaint, key vitals, workup, diagnosis, disposition, and one lesson learned.", "lesson": "ed-role-l09" },
+    { "id": "ed-role-c053", "front": "How do you ask a provider a teaching question that actually gets answered?", "back": "Make it specific and tied to a patient in front of you: 'why a CT angiogram instead of a plain CT here?' Open-ended requests like 'teach me about sepsis' get deferred.", "lesson": "ed-role-l09" },
+    { "id": "ed-role-c054", "front": "What does closing the loop sound like?", "back": "Acknowledge ('I am on it'), complete, and report back ('room 8's blood is in the tube system'). If stuck, escalate early: 'I tried twice, I need help.'", "lesson": "ed-role-l09" },
+    { "id": "ed-role-c055", "front": "List four unwritten ED rules.", "back": "Resus bay always restocked; never sit at a physician's workstation; phone stays in your pocket; food and drink stay in the break room, never in patient areas.", "lesson": "ed-role-l09" },
+    { "id": "ed-role-c056", "front": "What is secondary traumatic stress and what are its warning signs?", "back": "The accumulated weight of witnessing others' trauma. Watch for poor sleep, dreading shifts, emotional numbness, increased drinking, and irritability with people you love.", "lesson": "ed-role-l09" }
+  ],
+  "quiz": [
+    {
+      "id": "ed-role-q001",
+      "q": "A man arrives at the ED window, states he has no insurance and cannot pay, and reports severe abdominal pain. Under EMTALA, what must happen?",
+      "choices": [
+        "He must be given a medical screening exam and stabilized before payment is addressed",
+        "He may be redirected to a federally qualified health center",
+        "He must be registered and financially cleared before triage",
+        "He is screened only after insured patients are seen"
+      ],
+      "answer": 0,
+      "why": "EMTALA requires a screening exam and stabilization for anyone who presents, regardless of ability to pay, and prohibits delaying that care for financial questioning. Redirection, financial clearance, and deprioritizing the uninsured are all violations.",
+      "lesson": "ed-role-l01",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-role-q002",
+      "q": "The charge nurse reports in huddle that the department has 11 boarders. What does this mean for the shift?",
+      "choices": [
+        "Eleven patients are waiting to be triaged",
+        "Eleven admitted patients are occupying ED beds awaiting inpatient beds, so fewer beds are available for new arrivals",
+        "Eleven patients have refused care",
+        "Eleven patients are being transferred out"
+      ],
+      "answer": 1,
+      "why": "Boarding is admitted patients held in ED beds. Those beds cannot receive new patients, so the waiting room grows and LWBS rises. Triage backlog, refusals, and transfers are separate categories that do not consume beds the same way.",
+      "lesson": "ed-role-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-role-q003",
+      "q": "Why do emergency clinicians reason 'worst-first' rather than starting with the most likely diagnosis?",
+      "choices": [
+        "Because ED patients are undifferentiated and the immediately lethal cause must be excluded first",
+        "It reduces hospital liability costs",
+        "Because insurance requires the most expensive test first",
+        "Because the most likely diagnosis is usually wrong"
+      ],
+      "answer": 0,
+      "why": "ED patients arrive without a diagnosis, and time-critical conditions must be excluded before the workup narrows. The most likely diagnosis is usually right; it just is not what kills people in the next hour.",
+      "lesson": "ed-role-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-role-q004",
+      "q": "A patient roomed two hours ago is now gone. His IV tubing is on the floor, his coat is missing, and no one signed anything. How is this classified?",
+      "choices": [
+        "Against medical advice",
+        "Discharge",
+        "Elopement",
+        "Transfer"
+      ],
+      "answer": 2,
+      "why": "Elopement is leaving without notifying staff. AMA requires a documented conversation in which the provider explains the risks and the patient signs. Discharge and transfer are ordered dispositions with paperwork.",
+      "lesson": "ed-role-l02",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-role-q005",
+      "q": "A 62-year-old with chest pain has a normal initial troponin and a normal EKG but significant cardiac risk factors. The provider wants serial troponins and a stress test in the morning. Which disposition is most appropriate?",
+      "choices": [
+        "Discharge with outpatient cardiology follow-up",
+        "Transfer to a tertiary center",
+        "ICU admission",
+        "Observation status"
+      ],
+      "answer": 3,
+      "why": "Observation is designed for exactly this: a short, defined workup of about 24 hours that does not need full inpatient resources. Discharge skips the required testing, ICU is disproportionate for a stable patient, and transfer is for unavailable services.",
+      "lesson": "ed-role-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-role-q006",
+      "q": "A patient in the waiting room says loudly that people who came in after him have already been taken back. What is the accurate and professional explanation?",
+      "choices": [
+        "'The computer decides the order, not us'",
+        "'We take people in the order they arrive, so you are next'",
+        "'Patients are seen by how urgent their condition is, not by arrival order. Let me get you a recheck of your vitals and an update.'",
+        "'Those patients had insurance verified faster'"
+      ],
+      "answer": 2,
+      "why": "Triage sorts by danger, and saying so plainly while offering a concrete action, a reassessment and an update, defuses most waiting room anger. The other answers are false, deflecting, or imply a payment-based order that would violate EMTALA.",
+      "lesson": "ed-role-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-role-q007",
+      "q": "A patient with suspected measles arrives. Which placement is correct?",
+      "choices": [
+        "Standard room, curtain drawn, surgical mask on the patient only",
+        "Negative-pressure room, door closed, N95 for everyone entering",
+        "Trauma bay for space and equipment",
+        "Fast track since the patient is otherwise well"
+      ],
+      "answer": 1,
+      "why": "Measles is airborne and requires an airborne infection isolation room with negative pressure and N95 respirators. Curtains do not contain airborne particles, and putting a measles patient in an open trauma bay or fast track exposes the whole department.",
+      "lesson": "ed-role-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-role-q008",
+      "q": "Which statement about the resuscitation bay is correct?",
+      "choices": [
+        "It is restocked immediately after every use, before other tasks",
+        "It is restocked at the end of each shift",
+        "Central supply restocks it weekly",
+        "It is restocked only after a cardiac arrest, not a trauma"
+      ],
+      "answer": 0,
+      "why": "The next critical patient can arrive at any moment, so the resus bay is returned to a ready state immediately after any use. Scheduled or event-limited restocking leaves predictable gaps at exactly the wrong time.",
+      "lesson": "ed-role-l03",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-role-q009",
+      "q": "A worker arrives covered in an unidentified industrial chemical, alert and walking. What is the correct first step?",
+      "choices": [
+        "Bring him to a main ED room and remove his clothing there",
+        "Have him wait in the lobby until a provider is free",
+        "Place him in the trauma bay for monitoring",
+        "Decontaminate him outside the department before entry"
+      ],
+      "answer": 3,
+      "why": "A contaminated patient brought inside can close the department and injure staff. Decontamination happens in the dedicated area before entry. Lobby waiting exposes the public; trauma bay or a main room contaminates critical space.",
+      "lesson": "ed-role-l03",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-role-q010",
+      "q": "A 79-year-old is being discharged at 0200 with no ride, no working phone, and no money for her prescription. Who is the right resource?",
+      "choices": [
+        "Security, to escort her out",
+        "The unit clerk, to call a cab",
+        "Social work or case management",
+        "The attending, to change the discharge"
+      ],
+      "answer": 2,
+      "why": "Transportation, medication access, and safe discharge planning are social work and case management functions and they cover night shifts or have an on-call process. Security escorts do not solve the problem, and the clerk's cab does not address the prescription or safety at home.",
+      "lesson": "ed-role-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-role-q011",
+      "q": "Which report to a nurse is structured most usefully?",
+      "choices": [
+        "'Room 6 doesn't look good'",
+        "'Room 6, Ms. Patel, respiratory rate is 28 up from 18, she cannot finish a sentence, I put the pulse ox back on and it reads 89 percent on room air, I need you now'",
+        "'Someone should check on room 6, her breathing seems off'",
+        "'Room 6's numbers are in the chart when you get a chance'"
+      ],
+      "answer": 1,
+      "why": "Who, what changed, what you did, what you need gives the nurse everything needed to act without follow-up questions. Vague concern wastes time, and charting without verbal escalation buries a deteriorating patient in the record.",
+      "lesson": "ed-role-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-role-q012",
+      "q": "Which of these is an advanced practice provider?",
+      "choices": [
+        "A physician assistant",
+        "A registered nurse",
+        "A respiratory therapist",
+        "A paramedic"
+      ],
+      "answer": 0,
+      "why": "APP covers physician assistants and nurse practitioners, who evaluate, diagnose, order, and prescribe. RNs, RTs, and paramedics all have defined and important roles but are not advanced practice providers.",
+      "lesson": "ed-role-l04",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-role-q013",
+      "q": "A 55-year-old man presents to triage with epigastric burning and nausea for 90 minutes. He attributes it to dinner. What should the tech do first?",
+      "choices": [
+        "Offer him an antacid from the supply room",
+        "Obtain a 12-lead EKG immediately and get it to a provider",
+        "Get a urine sample",
+        "Place him in the waiting room and reassess in an hour"
+      ],
+      "answer": 1,
+      "why": "Epigastric pain over about age 40 is a recognized atypical presentation of myocardial infarction, so it falls under the 10-minute EKG standing order. Offering any medication is out of scope, and delaying loses the only window that matters.",
+      "lesson": "ed-role-l05",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-role-q014",
+      "q": "During a cardiac arrest you are doing compressions. How often should compressors switch and why?",
+      "choices": [
+        "Every 2 minutes, because compression quality falls off measurably with fatigue",
+        "Every 5 minutes, to limit interruptions",
+        "Only when the compressor asks to stop",
+        "Every 30 seconds, to keep everyone fresh"
+      ],
+      "answer": 0,
+      "why": "Quality degrades within about two minutes even when the compressor does not feel tired, so changes align with the two-minute rhythm check. Waiting for fatigue guarantees shallow compressions, and switching every 30 seconds adds needless interruptions.",
+      "lesson": "ed-role-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-role-q015",
+      "q": "Sepsis is suspected. Blood cultures and antibiotics are both ordered. What is the correct sequence?",
+      "choices": [
+        "Antibiotics first, cultures when convenient",
+        "Either order, it makes no difference",
+        "Cultures only if the first antibiotic dose fails",
+        "Cultures drawn before antibiotics are administered"
+      ],
+      "answer": 3,
+      "why": "Antibiotics can sterilize the sample within minutes, so drawing cultures first preserves the ability to identify the organism and narrow therapy. Order absolutely matters, and cultures are not a second-line test.",
+      "lesson": "ed-role-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-role-q016",
+      "q": "You are the 1:1 sitter for a patient on a psychiatric hold. A nurse asks you to help lift a patient in the next room; it will take 90 seconds. What do you do?",
+      "choices": [
+        "Help quickly since the patient is calm",
+        "Watch from the doorway of the other room",
+        "Decline and explain you cannot leave until formally relieved",
+        "Ask the patient to stay put and go help"
+      ],
+      "answer": 2,
+      "why": "A 1:1 is unbroken direct observation, and self-harm attempts take seconds. Only a formal relief by another staff member ends the assignment. Doorway coverage and a patient's promise are not observation.",
+      "lesson": "ed-role-l05",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-role-q017",
+      "q": "An attending asks you to push 2 mg of lorazepam that is already drawn up in the room. What is the correct response?",
+      "choices": [
+        "Push it since the physician ordered it directly",
+        "Push it and tell the nurse afterward",
+        "Refuse and get the nurse to receive the order and give the medication",
+        "Hand the syringe to the attending without comment and walk out"
+      ],
+      "answer": 2,
+      "why": "Techs may neither accept verbal orders nor administer medications. Bringing the nurse satisfies both rules and gets the patient treated. Silently walking away leaves the request unresolved and the patient waiting.",
+      "lesson": "ed-role-l06",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-role-q018",
+      "q": "A patient on 2 liters per minute of oxygen by nasal cannula says she feels short of breath and asks you to 'turn it up.' What do you do?",
+      "choices": [
+        "Increase it to 4 liters since it is a small change",
+        "Tell her oxygen is not adjustable",
+        "Leave the rate alone, check her pulse oximetry and respiratory rate, and get the nurse immediately",
+        "Switch her to a non-rebreather mask"
+      ],
+      "answer": 2,
+      "why": "Oxygen is a medication and the rate is a dose, so adjusting it is out of scope. But new shortness of breath is a clinical change that needs data and a licensed clinician now. Refusing without assessing or escalating abandons the problem.",
+      "lesson": "ed-role-l06",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-role-q019",
+      "q": "What is the legal basis for the tasks an ED tech is permitted to perform?",
+      "choices": [
+        "Federal law sets a uniform national tech scope",
+        "Whatever the attending physician approves verbally",
+        "The tech's own EMT certification governs all in-hospital practice",
+        "Delegation by a licensed nurse under the state nurse practice act plus hospital credentialing"
+      ],
+      "answer": 3,
+      "why": "Unlicensed assistive personnel work under nurse delegation and hospital policy, which is why scope differs between hospitals. There is no federal tech scope, an EMT card does not by itself authorize in-hospital tasks, and verbal physician approval does not expand scope.",
+      "lesson": "ed-role-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-role-q020",
+      "q": "A patient's wife asks you in the hallway whether her husband's troponin was elevated. You saw the result flagged on the board. What is the correct response?",
+      "choices": [
+        "Tell her what the board showed so she is not left in the dark",
+        "Tell her the results are not back yet",
+        "Say results are discussed by the provider, and go get the nurse or provider now",
+        "Tell her it is probably nothing to worry about"
+      ],
+      "answer": 2,
+      "why": "Interpreting or relaying results is outside scope and can be wrong or incomplete. Lying about availability destroys trust, and false reassurance is both out of scope and potentially untrue. Redirect and actually follow through.",
+      "lesson": "ed-role-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-role-q021",
+      "q": "Which is the best use of the first ten minutes of a shift?",
+      "choices": [
+        "Starting vitals immediately without attending huddle",
+        "Attending huddle, noting flagged patients and rooms, then walking the zone",
+        "Checking supplies in the break room",
+        "Waiting to be assigned tasks by the charge nurse"
+      ],
+      "answer": 1,
+      "why": "Huddle carries boarders, alerts, safety flags, and broken equipment you cannot learn any other way, and the zone walk turns that information into a plan. Starting tasks blind and waiting passively both leave you behind for the whole shift.",
+      "lesson": "ed-role-l07",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-role-q022",
+      "q": "During a rounding loop in a stable patient's room, which set of actions is complete?",
+      "choices": [
+        "Take vitals, ask about pain and bathroom, check call bell, bed height and rails, and state what happens next",
+        "Take vitals and leave",
+        "Ask if they need anything and check the board",
+        "Adjust the IV rate and reposition the patient"
+      ],
+      "answer": 0,
+      "why": "Rounding covers measurement, comfort, environmental safety, and expectation setting, which is what prevents falls, complaints, and missed deterioration. Adjusting an IV rate is out of scope entirely.",
+      "lesson": "ed-role-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-role-q023",
+      "q": "You charted a set of vitals at 1435 that you obtained at 1410. Later the patient deteriorates and the chart is reviewed. Why does the timestamp matter?",
+      "choices": [
+        "It does not, as long as the numbers are accurate",
+        "Because the nurse signs off on charting time",
+        "Because billing is based on charting time",
+        "Because the deterioration timeline is reconstructed from documented times, and a 25-minute error distorts when the change began"
+      ],
+      "answer": 3,
+      "why": "Reviewers rebuild the clinical course from timestamps, so charting the wrong time can make a decline look faster or slower than it was. Accuracy of the numbers alone is not enough when their position in time is wrong.",
+      "lesson": "ed-role-l08",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-role-q024",
+      "q": "A patient is found sitting on the floor beside the bed. Which documentation is appropriate for a tech?",
+      "choices": [
+        "'Patient fell trying to get up alone again despite instructions'",
+        "'Patient found sitting on floor beside bed at 1442, states he reached for his phone, no visible injury, RN notified 1443, vitals obtained'",
+        "'Unwitnessed fall, likely due to weakness from dehydration'",
+        "'Patient fell; no harm done'"
+      ],
+      "answer": 1,
+      "why": "The correct note records what was observed, the patient's own words, exact times, and notification. The others assign cause, diagnose, assign blame, or conclude 'no harm,' all of which exceed a tech's role and are damaging in a legal record.",
+      "lesson": "ed-role-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-role-q025",
+      "q": "You are about to draw blood. The armband says Maria Gonzalez, DOB 04/12/1961. The label says Maria Gonzales, DOB 04/12/1961. What do you do?",
+      "choices": [
+        "Draw the blood; the date of birth matches",
+        "Draw it and correct the spelling afterward",
+        "Stop, do not draw, and resolve the mismatch with the nurse and registration",
+        "Ask the patient how to spell her name and proceed"
+      ],
+      "answer": 2,
+      "why": "Both identifiers must match exactly. A one-letter difference can mean two different patients in the system, and a mislabeled specimen can produce a wrong transfusion or a wrong result acted on. Resolve it before any sample is collected.",
+      "lesson": "ed-role-l08",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-role-q026",
+      "q": "Which behavior most reliably makes nurses want a specific tech on their shift?",
+      "choices": [
+        "Working quickly and reporting completed tasks only at handoff",
+        "Anticipating the predictable next step for each complaint and closing loops verbally",
+        "Taking on extra patients outside the assigned zone but leaving tasks incomplete",
+        "Charting thoroughly but rarely speaking to the team"
+      ],
+      "answer": 1,
+      "why": "Prediction removes requests before they are made, and verbal loop closure removes the need to check up on you. Speed without communication, volume without completion, and silent charting all leave the team uncertain.",
+      "lesson": "ed-role-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-role-q027",
+      "q": "Which case log entry is both lawful and useful for a future PA application?",
+      "choices": [
+        "'60s male, chest pressure 2 hours, EKG with inferior ST elevation, cath lab activated, door-to-balloon 62 minutes. Learned why the 10-minute EKG rule exists.'",
+        "'John M., MRN 88231, 3/14, chest pain, STEMI'",
+        "A photo of the tracking board with the room list",
+        "A copy of the discharge summary with the name removed"
+      ],
+      "answer": 0,
+      "why": "De-identified means no name, no initials tied to a date, no record number, and no chart documents or screenshots. An age range plus the clinical reasoning is both compliant and far more useful in an interview.",
+      "lesson": "ed-role-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-role-q028",
+      "q": "Three weeks after a pediatric death you assisted with, you are sleeping poorly, dreading shifts, and snapping at your family. What is the best response?",
+      "choices": [
+        "Push through; it will pass on its own",
+        "Avoid discussing it so it does not get worse",
+        "Request a transfer out of the ED immediately",
+        "Recognize secondary traumatic stress and use the debrief process and employee assistance program"
+      ],
+      "answer": 3,
+      "why": "Those are recognized signs of secondary traumatic stress, and they respond to structured support. Waiting and avoidance allow accumulation, and a reflexive transfer treats a normal reaction as a career problem rather than getting help first.",
+      "lesson": "ed-role-l09",
+      "difficulty": 2
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "ed-role-s01",
+      "title": "First shift: five things at once",
+      "setting": "ed",
+      "intro": "It is 1420 on your fourth shift, in the main ED. You are covering rooms 8 through 16. In the space of about forty seconds, five things land on you.\n\nA nurse calls out that room 11, a 64-year-old with new chest pressure, needs a stat EKG. Environmental services is asking whether room 9 is ready to be turned over for an incoming patient. Room 14's call bell is going off; the patient needs the bathroom and says it is urgent. Room 12 has an order for a blood draw, a CBC and a basic metabolic panel, that has been pending about ten minutes. And room 8's patient steps into the doorway and asks you whether her CT results are back.\n\nNothing here is optional. The question is the order.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "Five tasks, one of you. What do you do first?",
+          "choices": [
+            { "text": "Get the 12-lead EKG on room 11", "next": "s2", "feedback": "Correct. New chest pressure is a possible STEMI with a 10-minute clock running from arrival. Nothing else on this list can kill someone in ten minutes.", "score": 1 },
+            { "text": "Take room 14 to the bathroom, because an unassisted attempt is a fall risk", "next": "s2", "feedback": "Reasonable instinct, and falls are real. But this is delegable in seconds and a possible heart attack is not. Ask another tech or the nurse to cover the bathroom while you get the EKG.", "score": 0 },
+            { "text": "Answer room 8's question first since she is standing right in front of you", "next": "s2", "feedback": "The path of least social resistance is almost never the clinical priority. Give her one sentence and a promise, then move.", "score": -1 },
+            { "text": "Turn over room 9 so the incoming patient has a bed", "next": "s2", "feedback": "Flow matters, but a room turnover is minutes of tolerance. An undiagnosed STEMI is not. This goes near the end.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "You are heading for the EKG machine. Room 8 is still in her doorway waiting for an answer about her CT, and room 14 still needs the bathroom. You have about five seconds of speech available.",
+          "choices": [
+            { "text": "'Ms. Brooks, I can't read results, but I'll have your nurse come talk to you. Give me ten minutes.' Then call out to the nearest tech to take room 14 to the bathroom.", "next": "s3", "feedback": "Exactly right. You stayed in scope, gave her a real timeline, and delegated the fall risk instead of dropping it. Now actually tell the nurse.", "score": 1 },
+            { "text": "'Your CT looked okay from what I saw on the board.'", "next": "s3", "feedback": "Out of scope and possibly wrong. Even a correct guess relayed by a tech is a serious problem. Never interpret results.", "score": -1 },
+            { "text": "Say nothing and keep walking; you will come back to both.", "next": "s3", "feedback": "The EKG gets done but you have created an angry patient and left an urgent bathroom request unassigned. Five seconds of speech would have covered both.", "score": 0 },
+            { "text": "'Sorry, I'm busy right now.'", "next": "s3", "feedback": "True and useless. It gives her no path to an answer, which is exactly what turns a reasonable person into a complaint.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "You are in room 11. The patient is a 64-year-old man, diaphoretic, holding his fist against his sternum. The EKG is acquired at 1424.",
+          "vitals": { "hr": 96, "bp": "148/88", "rr": 20, "spo2": 96, "temp": 36.8 },
+          "choices": [
+            { "text": "Carry the tracing directly to the nearest attending or APP and hand it to them", "next": "s4", "feedback": "Correct. The metric is not acquisition, it is provider review. Put it in a hand and get the review time documented.", "score": 1 },
+            { "text": "Leave the tracing on the EKG machine and tell the nurse it is done", "next": "s4", "feedback": "An unreviewed tracing is a tracing nobody has acted on. The clock keeps running while it sits on the cart.", "score": -1 },
+            { "text": "Place the tracing in the chart rack outside the room and document that the EKG is complete", "next": "s4", "feedback": "Documentation is right, placement is wrong. For a possible STEMI the tracing goes into a provider's hands, not a rack.", "score": 0 },
+            { "text": "Look at it yourself first to see whether it seems urgent enough to interrupt anyone", "next": "s4", "feedback": "You are not the filter. Techs should learn to recognize an alarming tracing so they walk faster, never to decide whether a provider needs to see one.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "The attending reads it at 1425, says 'that's not a STEMI, but keep him on the monitor,' and moves on. You now have three tasks left: room 12's blood draw, room 9's turnover, and confirming room 14 got to the bathroom.",
+          "choices": [
+            { "text": "Confirm room 14 was taken, then draw room 12, then turn over room 9", "next": "s5", "feedback": "Good ordering. The delegated task is verified rather than assumed, the pending lab order restarts a results clock, and the turnover, which affects flow but not a patient in the building, comes last.", "score": 1 },
+            { "text": "Turn over room 9 first since EVS is waiting on you", "next": "s5", "feedback": "You optimized for the person who asked loudest. The turnover is genuinely the least time-critical item on the list.", "score": 0 },
+            { "text": "Draw room 12 first, then room 9, and assume room 14 was handled", "next": "s5", "feedback": "Never assume a delegated safety task was completed. A patient with an urgent bathroom need and no help is a fall waiting to happen.", "score": -1 },
+            { "text": "Take a minute at the desk to chart the EKG before anything else", "next": "s5", "feedback": "Charting the EKG with the correct acquisition and review times does matter, but it is a two-minute task you can batch. Verify the patient safety item first.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "It is 1448. Everything on the original list is done. The nurse for room 8 is at the desk. What is the last thing you owe from this sequence?",
+          "choices": [
+            { "text": "Tell her that room 8 is asking about her CT, and that you told her the nurse would come speak with her", "next": "end", "feedback": "This is loop closure. A promise you made on the department's behalf is not complete until the person who can keep it knows about it.", "score": 1 },
+            { "text": "Nothing; room 8 will ask again if she still wants to know", "next": "end", "feedback": "You made a commitment. Making the patient chase it undoes the goodwill you bought with the original sentence.", "score": -1 },
+            { "text": "Go back to room 8 and tell her the nurse is busy but will come eventually", "next": "end", "feedback": "Better than nothing, but you are still the only person carrying the request. It needs to reach someone who can actually answer it.", "score": 0 },
+            { "text": "Document your EKG times and task completions, and tell the nurse about room 8", "next": "end", "feedback": "Best of both. Accurate timestamps and a closed loop. This is what a complete sequence looks like.", "score": 1 }
+          ]
+        }
+      ],
+      "debrief": "The pattern here is triage applied to your own task list. Sort by how fast each task can hurt someone: a possible STEMI in minutes, a fall risk in minutes but delegable, a pending lab order in tens of minutes, a room turnover in flow terms only, and an out-of-scope question in seconds of speech.\n\nThree habits carried this scenario. First, the highest-acuity task goes first even when it is not the loudest request. Second, five seconds of honest speech buys enormous patience from patients and prevents complaints, as long as you stay in scope and never interpret a result. Third, delegated tasks are verified, not assumed, and promises you make are closed with the person who can actually keep them.\n\nNotice what you did not do: you did not interpret a CT, you did not decide whether an EKG was urgent enough to show someone, and you did not let the person physically closest to you set your priorities."
+    },
+    {
+      "id": "ed-role-s02",
+      "title": "Four minutes out",
+      "setting": "ed",
+      "intro": "0247 on a night shift. The department has eight patients and two boarders. You are mid-task in room 6, replacing a saturated dressing setup for a provider who is coming back to look at a laceration in a few minutes.\n\nThe EMS radio crackles at the charge desk. The charge nurse turns and calls across the department: 'Full arrest, four minutes out. Sixties, male, witnessed, bystander CPR, they've got a King airway and two rounds of epi in. Resus one.'\n\nYou are the only tech in the department right now. The other tech is on a mandated break off the floor.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "Four minutes. You are holding a half-finished dressing setup in room 6. What do you do first?",
+          "choices": [
+            { "text": "Finish the dressing setup properly; it will only take two more minutes", "next": "s2", "feedback": "Wrong trade. A laceration setup can wait fifteen minutes; a cardiac arrest cannot wait fifteen seconds. Set it down and go.", "score": -1 },
+            { "text": "Set the supplies down, tell the provider the setup is paused for an incoming arrest, and go to resus one", "next": "s2", "feedback": "Correct. You abandoned a low-acuity task and, importantly, you told someone you were abandoning it so it does not silently disappear.", "score": 1 },
+            { "text": "Walk to resus one without saying anything to anyone", "next": "s2", "feedback": "Right destination, incomplete communication. The provider returns to a half-built setup and no explanation. One sentence prevents that.", "score": 0 },
+            { "text": "Ask the charge nurse whether you are needed for the arrest", "next": "s2", "feedback": "You are the only tech in the department during a cardiac arrest. You are needed. Asking burns part of your four minutes.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "You are in resus one. About three minutes remain. The bay was restocked at the start of the shift. What do you set up?",
+          "choices": [
+            { "text": "Defibrillator on and pads out of the package, backboard ready, suction on and tested, IV or IO setup out, and the mechanical compression device if your department has one", "next": "s3", "feedback": "This is the list. Everything that costs seconds during the code gets those seconds spent now, before the patient arrives.", "score": 1 },
+            { "text": "Pull the crash cart to the bedside and wait for instructions", "next": "s3", "feedback": "The cart is necessary but insufficient. Waiting for instructions in the three minutes you own is three minutes wasted.", "score": 0 },
+            { "text": "Set up a full suture tray and warm blankets", "next": "s3", "feedback": "Warming matters after return of circulation, but a suture tray is the wrong equipment for an arrest and takes up the bedside surface you need.", "score": -1 },
+            { "text": "Draw up epinephrine so it is ready when they arrive", "next": "s3", "feedback": "Absolutely not. Drawing up a medication is outside your scope in every hospital. Pharmacy or nursing prepares drugs.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "The stretcher comes through the bay doors. A paramedic is on the rails doing compressions. The count of one, two, three moves the patient onto the ED bed, and compressions pause for the transfer.",
+          "vitals": { "hr": 0, "bp": "0/0", "rr": 0, "spo2": 0 },
+          "choices": [
+            { "text": "Take over compressions immediately as soon as the patient is on the bed", "next": "s4", "feedback": "Correct, and it is the single highest-value thing you do in a code. Every second without compressions is coronary and cerebral perfusion lost.", "score": 1 },
+            { "text": "Attach the monitor leads first, then start compressions", "next": "s4", "feedback": "Leads matter, but never at the cost of compression time. Someone else places leads while compressions continue. Compressions come first.", "score": 0 },
+            { "text": "Stand back and wait for the physician to assign roles", "next": "s4", "feedback": "In a well-run code roles get called, but nobody should ever have to ask for compressions to be started. Step in.", "score": -1 },
+            { "text": "Ask the paramedic for the full report before anyone touches the patient", "next": "s4", "feedback": "The report is given while the work continues, not instead of it. Pausing care for a handoff narrative is a real and dangerous habit.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "You are compressing. About two minutes in, your shoulders are burning and you notice your depth slipping. The team is focused on the airway and the rhythm check is coming up.",
+          "choices": [
+            { "text": "Say out loud 'I need a switch at the next rhythm check' and keep full-depth compressions until then", "next": "s5", "feedback": "Exactly right. Announced, planned switches at the rhythm check keep interruptions to a few seconds and keep quality high.", "score": 1 },
+            { "text": "Push through the next four minutes; asking to switch looks weak", "next": "s5", "feedback": "Compression quality measurably declines after about two minutes regardless of fitness. Silent fatigue is a shallow-compression problem, not a toughness test.", "score": -1 },
+            { "text": "Stop compressions now and step away to find a replacement", "next": "s5", "feedback": "Right need, wrong execution. Never stop until someone has hands ready to take over. Announce and hand off at the rhythm check.", "score": -1 },
+            { "text": "Slow the rate slightly to conserve energy until the rhythm check", "next": "s5", "feedback": "Rate and depth both matter and trading one away undoes the perfusion you are generating. Ask for the switch instead.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "At 0312 the physician calls it. The room falls quiet. The family is in the consultation room and social work is on the way. There are still eight other patients in the department, and a half-finished dressing setup in room 6.",
+          "choices": [
+            { "text": "Restock and clean resus one before doing anything else, then return to room 6 and tell the provider you are ready", "next": "end", "feedback": "The bay must be ready for the next arrival regardless of how this one ended. Then close the loop on the task you abandoned.", "score": 1 },
+            { "text": "Go straight back to room 6; the resus bay can be restocked later in the shift", "next": "end", "feedback": "This is the exact reasoning that leaves a missing blade or an empty suction canister for the next arrest. Resus is restocked before anything else.", "score": -1 },
+            { "text": "Take five minutes outside first, then restock the bay", "next": "end", "feedback": "The instinct is human and a real need, but the bay comes first because it is a patient safety state. Take the five minutes, and the debrief, after the room is ready.", "score": 0 },
+            { "text": "Ask whether a debrief is happening, then restock the bay", "next": "end", "feedback": "Both matter and the order here is acceptable, since asking takes seconds. Just make sure the restocking actually happens.", "score": 0 }
+          ]
+        }
+      ],
+      "debrief": "A code coming in reorders the department instantly, and the tech's part is almost entirely preparation and compressions.\n\nThe preparation window is the three minutes before arrival, and it is the most useful three minutes you will spend: defibrillator on with pads out, suction on and tested, backboard ready, IV and IO supplies out, compression device staged. Everything you open now is a second you do not lose later. What you never do, in any hospital, is draw up a medication.\n\nOn arrival, compressions are the job, and the quality rules are not negotiable: `100-120` per minute, at least `2 inches` deep, full recoil, and an announced switch every 2 minutes at the rhythm check so interruptions stay under about 10 seconds. Announcing fatigue is a quality behavior, not a weakness.\n\nAfterward, two things happen in order. The resuscitation bay is returned to a ready state before anything else, because the next arrest does not care about this one. Then the tasks you abandoned get closed, out loud, with the people who were waiting on them."
+    }
+  ]
+}

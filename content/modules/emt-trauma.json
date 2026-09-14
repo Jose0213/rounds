@@ -1,0 +1,812 @@
+{
+  "schema": 1,
+  "id": "emt-trauma",
+  "track": "emt",
+  "title": "Trauma",
+  "short": "Trauma",
+  "summary": "How energy breaks bodies and what you do about it: reading mechanism, stopping bleeding, catching shock before the blood pressure drops, and handling head, spine, chest, belly, bone, and burn injuries.",
+  "lessons": [
+    {
+      "id": "emt-trauma-l01",
+      "title": "Kinematics: reading the mechanism of injury",
+      "minutes": 7,
+      "body": "## Energy has to go somewhere\n\nTrauma is a physics problem wearing a patient. A moving body carries kinetic energy, and that energy does not vanish when the motion stops — it transfers into tissue. Kinetic energy climbs with the *square* of speed, so going from `30 mph` to `60 mph` does not double the damage, it roughly quadruples it. Speed is the first number you ask about.\n\nYour job at the scene is to guess what is broken before you can see it. That guess is called an **index of suspicion**, and it comes almost entirely from the mechanism of injury (MOI) — what hit what, how fast, and how the body stopped.\n\n## Blunt versus penetrating\n\n**Blunt** trauma spreads energy over a wide area and leaves the skin intact. The dangerous part is that the outside can look fine while the liver is torn. Cars, falls, bats, fists.\n\n**Penetrating** trauma concentrates energy into a narrow path. Low-velocity (knife, ice pick) injures only what the blade touched, so the track matters. High-velocity (rifle) drags a pressure wave along with it and damages tissue several inches off the path, an effect called cavitation. A handgun sits in between.\n\n> **Trap:** Never judge a gunshot wound by the size of the hole. Entrance wounds are often tiny and an exit wound may not exist at all. Count holes, expose the whole patient, and look at the back.\n\n## The three collisions\n\nEvery vehicle crash is really three crashes stacked on top of each other:\n\n1. The **vehicle** hits the object. Bumper crushes, frame deforms.\n2. The **body** hits the inside of the vehicle. Chest into steering wheel, knees into dash, head into windshield.\n3. The **organs** hit the inside of the body. Brain slams into skull, the aorta shears where it is tethered, the liver tears on its ligament.\n\nThe third collision is the one that kills, and it is the one you cannot see. A fourth is sometimes counted: unsecured objects, or an unrestrained second occupant, becoming missiles.\n\n## The significant MOI list\n\nThese are the findings that should make you upgrade a patient even when they look well. Memorize the numbers.\n\n- Falls: adult more than `20 ft`; child more than `10 ft` or `2–3 times` the child's height\n- Ejection, partial or complete, from a vehicle\n- Death of another occupant in the same vehicle\n- Intrusion more than `12 in` at the occupant's seating position, or more than `18 in` anywhere in the vehicle\n- Motorcycle crash over `20 mph`, or rider separated from the bike\n- Pedestrian or cyclist struck, thrown, or run over\n- Rollover with an unrestrained occupant\n\n> **Key:** Significant MOI changes what you do even when the exam is normal: rapid full-body assessment, high index of suspicion, early transport decision, and a trauma center destination.\n\n## Restraints and airbags\n\nA lap belt worn alone folds the body at the waist and can rupture bowel or fracture the lumbar spine. Look for the **seat-belt sign**, a bruise across the abdomen or chest.\n\nAirbags deploy and deflate in about `0.05 seconds`, so by the time you arrive the bag is limp. **Lift it and look at the steering wheel.** A deformed wheel tells you the chest hit hard even if the patient says the bag caught him.\n\n> **On the exam:** Questions describe the scene in detail for a reason. If the stem spends a sentence on a bent steering wheel, a starred windshield, or a `15 in` door intrusion, the answer usually involves suspicion of an injury the patient is not complaining about yet.",
+      "keyPoints": [
+        "Kinetic energy rises with the square of speed, so speed is the first question you ask about a crash.",
+        "Three collisions: vehicle into object, body into interior, organs into the inside of the body. The third one kills.",
+        "Significant MOI: adult fall over 20 ft, child over 10 ft or 2-3x height, ejection, death in the same vehicle, over 12 in occupant intrusion, motorcycle over 20 mph, pedestrian struck.",
+        "Significant MOI earns a rapid full-body exam and a trauma center even when the patient looks fine.",
+        "Judge penetrating trauma by the path and the number of holes, not by the size of the wound."
+      ],
+      "checks": [
+        {
+          "q": "A 34-year-old restrained driver was in a crash with 14 inches of intrusion into his door. He is walking around, says he feels fine, and has normal vitals. What does the mechanism change?",
+          "choices": [
+            "Nothing; a normal exam with normal vitals rules out serious injury",
+            "Raise the index of suspicion, do a rapid full-body assessment, and transport to a trauma center",
+            "Have him sign a refusal since he is ambulatory at the scene",
+            "Stay on scene 20 minutes to watch whether symptoms appear"
+          ],
+          "answer": 1,
+          "why": "Intrusion greater than 12 inches at the occupant site is a significant mechanism. A compensating patient looks normal right up until he does not, and a normal exam does not rule out a torn spleen. A refusal and a long on-scene wait both spend the time that actually matters."
+        },
+        {
+          "q": "Doubling a vehicle's speed from 30 mph to 60 mph changes the kinetic energy delivered by roughly how much?",
+          "choices": [
+            "No change",
+            "It doubles",
+            "It quadruples",
+            "It is cut in half"
+          ],
+          "answer": 2,
+          "why": "Kinetic energy equals one half mass times velocity squared, so energy scales with the square of speed. Mass matters too, but far less than speed does."
+        },
+        {
+          "q": "Which of the three collisions in a motor vehicle crash produces the injuries most likely to kill the patient?",
+          "choices": [
+            "The vehicle striking the object",
+            "The body striking the vehicle interior",
+            "The organs striking the inside of the body",
+            "The airbag striking the face"
+          ],
+          "answer": 2,
+          "why": "The organ collision tears the aorta, shears the liver, and bruises the brain, and none of it shows on the outside. The first two collisions produce the damage you can see, which is why they are less dangerous to miss."
+        }
+      ]
+    },
+    {
+      "id": "emt-trauma-l02",
+      "title": "Stopping the bleeding: the hemorrhage ladder",
+      "minutes": 8,
+      "body": "## Why bleeding kills so fast\n\nAn adult holds about `5–6 L` of blood. Losing `1 L` puts most adults into obvious shock, and about `2 L` is frequently fatal. A torn femoral artery can move that much in **two to three minutes**. Nothing else you do matters if the patient is emptying out, which is why the modern order of business is often written **X-A-B-C**: exsanguinating hemorrhage first, then airway, breathing, circulation.\n\n## Recognize the type\n\n- **Arterial**: bright red, spurts with each heartbeat, hardest to stop.\n- **Venous**: darker red, steady flow.\n- **Capillary**: oozing, usually clots on its own.\n\n## The ladder, in order\n\n**1. Direct pressure.** Fingertip or palm, hard, straight into the wound, for a full `3 minutes` without peeking. Most bleeding stops here. If the dressing soaks through, add more on top — never remove the first one, because you would pull the forming clot off with it.\n\n**2. Tourniquet** for life-threatening limb bleeding that direct pressure is not controlling, and immediately for an amputation, a spurting arterial wound, or a patient whose airway you also have to manage. Apply it `2–3 in` above the wound and **never over a joint** — if the wound is at the knee or elbow, go above that joint. Tighten the windlass until the bleeding **stops** and the distal pulse is gone. It will hurt; that is expected. Write the **time of application** on the tourniquet and on your report. If bleeding continues, place a **second tourniquet directly above the first**. Do not loosen or remove it in the field.\n\n**3. Wound packing with hemostatic gauze** for junctional wounds you cannot tourniquet: neck, armpit (axilla), groin. Stuff gauze aggressively into the wound, down to the bleeding vessel, then hold firm pressure for `3 minutes`. Pack it in; do not lay it on top.\n\n**4. Pressure dressing.** Once bleeding is controlled by hand, wrap snugly to hold that pressure and free your hands. Then check the distal pulse — a pressure dressing should not become an accidental tourniquet.\n\n> **Trap:** Elevation and pressure points are no longer part of bleeding control. They cost time and were never shown to work. Direct pressure, then tourniquet, then packing.\n\n## Internal bleeding\n\nYou cannot see it, so you infer it: pain, tenderness, a rigid or distended abdomen, bruising including a seat-belt sign, vomiting blood or coffee-ground material, black tarry stool, a swollen deformed thigh, or shock you cannot explain. The treatment is oxygen, warmth, position, and **rapid transport**. Bleeding inside the body gets fixed in an operating room, not on your stretcher.\n\n## Nosebleeds (epistaxis)\n\nSit the patient up and lean them **forward**, then pinch the soft part of the nose for `10–15 minutes` without releasing to check. Leaning back sends blood down the throat, which causes vomiting and threatens the airway. A nosebleed after head trauma that will not stop, or one mixed with clear fluid, raises the question of a skull fracture — **do not pack it**.\n\n> **Key:** Hard direct pressure for 3 minutes, a tourniquet high and tight with the time written down, and packing for junctions you cannot tourniquet. Everything else is decoration.\n\n> **On shift:** The first two questions asked at handoff about any tourniquet are where it is and what time it went on. If nobody wrote the time, the clock starts over at the hospital.",
+      "keyPoints": [
+        "An adult has 5 to 6 liters of blood; 1 liter lost produces obvious shock and 2 liters is often fatal.",
+        "Ladder: direct pressure 3 minutes, tourniquet, wound packing with hemostatic gauze, pressure dressing.",
+        "Tourniquet goes 2 to 3 inches above the wound, never over a joint, tightened until bleeding stops and the distal pulse is gone, with the time written down.",
+        "A second tourniquet goes directly above the first; never loosen a tourniquet in the field.",
+        "Junctional wounds (neck, axilla, groin) get packed and held for 3 minutes because you cannot tourniquet them."
+      ],
+      "checks": [
+        {
+          "q": "You apply a tourniquet to a mid-thigh arterial bleed and the bleeding slows but does not stop. What is the next step?",
+          "choices": [
+            "Loosen the tourniquet and reapply it lower on the limb",
+            "Place a second tourniquet directly above the first and tighten it",
+            "Release the tourniquet every 10 minutes to preserve the limb",
+            "Elevate the leg above the level of the heart"
+          ],
+          "answer": 1,
+          "why": "A thigh often needs two tourniquets because the muscle mass keeps the artery from being fully compressed. Loosening or periodically releasing a tourniquet restarts the bleeding and washes out clot. Elevation is no longer a bleeding-control step."
+        },
+        {
+          "q": "A stab wound to the left armpit is bleeding heavily. Direct pressure is not controlling it. What do you do?",
+          "choices": [
+            "Apply a tourniquet as high on the arm as possible",
+            "Pack the wound with hemostatic gauze and hold firm pressure for 3 minutes",
+            "Apply a pressure dressing and transport",
+            "Use a pressure point over the brachial artery"
+          ],
+          "answer": 1,
+          "why": "The axilla is a junctional site, so there is no place above the wound to put a tourniquet. Packing plus 3 minutes of firm pressure is the tool for junctions. A pressure dressing alone will not reach the vessel, and pressure points are no longer taught."
+        },
+        {
+          "q": "A dressing over a forearm laceration soaks through after 90 seconds. What should you do?",
+          "choices": [
+            "Remove the soaked dressing and replace it with a clean one",
+            "Add dressings on top and keep holding pressure",
+            "Immediately apply a tourniquet",
+            "Lift the dressing to confirm where the bleeding is coming from"
+          ],
+          "answer": 1,
+          "why": "Removing or lifting the dressing tears off the clot that is forming. You add on top and keep the pressure uninterrupted for the full 3 minutes. A tourniquet is the answer only when direct pressure is failing to control life-threatening bleeding, which you have not yet established at 90 seconds."
+        }
+      ]
+    },
+    {
+      "id": "emt-trauma-l03",
+      "title": "Hemorrhagic shock and the cliff",
+      "minutes": 7,
+      "body": "## Shock is a perfusion problem, not a blood pressure problem\n\nShock means cells are not getting enough oxygen-carrying blood to keep working. In trauma that is almost always because blood volume has left the container. The body notices the drop, dumps adrenaline, and does three things: squeezes the vessels (vasoconstriction), speeds up the heart, and speeds up breathing. Those compensations are the earliest signs you will see — not a low blood pressure.\n\n## Reading the compensation\n\nSqueezed vessels shunt blood away from the skin and gut toward the heart and brain. That is why the early picture is **pale, cool, clammy skin** with a **fast, weak (thready) pulse**, anxiety or restlessness, thirst, and a **capillary refill longer than `2 seconds`**. The blood pressure is still normal. That is compensated shock.\n\n### The four classes\n\n| Class | Blood lost | Pulse | Blood pressure | Mental status |\n|---|---|---|---|---|\n| I | up to `15%` (`750 mL`) | under `100` | normal | slightly anxious |\n| II | `15–30%` (`750–1500 mL`) | `100–120` | normal, narrow pulse pressure | anxious |\n| III | `30–40%` (`1500–2000 mL`) | `120–140` | **falling** | confused |\n| IV | over `40%` (over `2000 mL`) | over `140`, weak | very low | lethargic to unresponsive |\n\n> **Key:** Blood pressure does not drop until roughly `30%` of blood volume is gone. By the time the systolic number is low, about a liter and a half is already on the ground or in the belly. BP is a late sign.\n\n## The cliff\n\nCompensation is not free. It is being paid for with adrenaline, and adrenaline runs out. When it does, the patient does not slide, they **fall off a cliff**: vessels dilate, pressure crashes, and mental status goes with it. Decompensated shock in a trauma patient carries a poor outcome even with a surgeon waiting. The whole point of recognizing compensated shock is to be moving before the cliff.\n\n### Children compensate harder\n\nA child's vessels clamp down ferociously and can hold a normal blood pressure until they are nearly exsanguinated, then crash without warning. Judge children on heart rate, skin, and mental status, and treat a hypotensive child as a near-arrest.\n\n## What an EMT actually does\n\n1. **Stop the bleeding you can reach.** This is the treatment, not a step toward it.\n2. **Oxygen** to keep `SpO2` at `94%` or better; bag-valve-mask if ventilation is inadequate.\n3. **Keep them warm.** Cut away wet clothing, blanket them, heat the patient compartment. Cold blood does not clot. Hypothermia, acidosis, and coagulopathy together are the **lethal triad**, and hypothermia is the one you control.\n4. **Position supine.** Shock position with the legs raised is no longer recommended in trauma; it has no proven benefit.\n5. **Rapid transport** to a trauma center, aiming for under `10 minutes` on scene.\n6. Fluids are not an EMT-Basic intervention in most systems, and even where IV fluid is given, over-resuscitation dilutes clotting factors and pops clots. What the patient needs is blood and an operating room.\n\n> **On shift:** You will hear \"he is compensating\" said as reassurance. It is not. It means the tank is draining and the patient is buying those normal numbers with the last of his reserve.\n\n> **Trap:** A patient who was agitated and suddenly goes quiet and cooperative is usually not improving. Mental status is a perfusion sign, and calm can mean the brain is running out of fuel.",
+      "keyPoints": [
+        "Compensated shock shows as pale cool clammy skin, thready tachycardia, anxiety, and cap refill over 2 seconds, all with a normal blood pressure.",
+        "Blood pressure falls only after about 30 percent of blood volume is lost, so it is a late sign.",
+        "Class I up to 750 mL, class II 750 to 1500 mL, class III 1500 to 2000 mL, class IV over 2000 mL.",
+        "Treatment is stop the bleeding, oxygen to 94 percent, keep warm, supine, rapid transport under 10 minutes on scene.",
+        "Hypothermia is the leg of the lethal triad an EMT directly controls."
+      ],
+      "checks": [
+        {
+          "q": "A 28-year-old with a femur fracture has a heart rate of 124, blood pressure 118/96, pale clammy skin, and is anxious. What class of hemorrhage does this best fit?",
+          "choices": [
+            "Class I",
+            "Class II",
+            "Class III",
+            "Class IV"
+          ],
+          "answer": 1,
+          "why": "Heart rate of 100 to 120 with a normal systolic but a narrowed pulse pressure and anxiety is class II, roughly 750 to 1500 mL lost. Class I would not have that heart rate or skin, and class III requires a falling systolic and confusion."
+        },
+        {
+          "q": "Why is keeping a bleeding trauma patient warm considered a treatment rather than a comfort measure?",
+          "choices": [
+            "Warmth raises blood pressure directly",
+            "Cold blood does not clot, so hypothermia worsens bleeding",
+            "Shivering increases cardiac output in a useful way",
+            "Warm patients absorb oxygen more efficiently"
+          ],
+          "answer": 1,
+          "why": "The clotting cascade is a set of enzymes that slow sharply as temperature drops, which is why hypothermia sits in the lethal triad with acidosis and coagulopathy. Warmth does not raise blood pressure by itself, and shivering burns oxygen the patient cannot spare."
+        },
+        {
+          "q": "Which position is currently recommended for an adult trauma patient in hemorrhagic shock with no spinal concern?",
+          "choices": [
+            "Supine and flat",
+            "Legs elevated 12 inches in shock position",
+            "Sitting upright to help breathing",
+            "Left lateral recumbent"
+          ],
+          "answer": 0,
+          "why": "Shock position was dropped because studies found no outcome benefit and it wastes time. Supine is the default. Upright makes brain perfusion worse, and left lateral recumbent is for the pregnant patient or the vomiting airway, not for shock itself."
+        }
+      ]
+    },
+    {
+      "id": "emt-trauma-l04",
+      "title": "Head injury and the Glasgow Coma Scale",
+      "minutes": 8,
+      "body": "## A box that will not stretch\n\nThe skull is a sealed rigid box holding brain, blood, and cerebrospinal fluid. If any one of those grows — a bleed, swelling — something else has to be squeezed out, and eventually the brain itself is pushed down through the hole at the base of the skull. That is **herniation**. It is why a head injury that looks stable at minute five can be dying at minute forty.\n\n**Primary injury** is what the impact did, and you cannot undo it. **Secondary injury** is what happens afterward from low oxygen, low blood pressure, and swelling, and that is entirely yours to prevent. A single episode of hypoxia (`SpO2` under `90%`) or hypotension (systolic under `90`) roughly doubles mortality in a head-injured patient.\n\n> **Key:** For a brain injury your two treatments are oxygen and blood pressure. Keep `SpO2` at `94%` or better and the systolic above `110`.\n\n## Scoring the Glasgow Coma Scale\n\nThree parts, scored separately, total `3` to `15`.\n\n**Eye opening, out of 4:** `4` spontaneous, `3` to speech, `2` to pain, `1` none.\n\n**Verbal, out of 5:** `5` oriented, `4` confused conversation, `3` inappropriate words, `2` incomprehensible sounds, `1` none.\n\n**Motor, out of 6:** `6` obeys commands, `5` localizes pain, `4` withdraws from pain, `3` abnormal flexion (decorticate), `2` extension (decerebrate), `1` none.\n\n*Worked example 1.* A man in a crash opens his eyes when you say his name (`E3`), answers your questions but thinks the year is 2019 (`V4`), and squeezes your hand on request (`M6`). Total `13`.\n\n*Worked example 2.* A woman found at the bottom of a staircase does not open her eyes at all (`E1`), groans when you pinch her trapezius (`V2`), and pulls her arm away from the pinch (`M4`). Total `7`. Under `8`, so the airway is now the emergency.\n\n## Concussion, epidural, subdural\n\n**Concussion** is a functional injury with nothing to see on imaging: dazed, headache, amnesia around the event, sometimes a brief loss of consciousness. It gets better.\n\n**Epidural hematoma** is arterial, classically a temporal bone fracture tearing the middle meningeal artery. The pattern is knocked out, then a **lucid interval** where they seem fine and refuse transport, then rapid deterioration. Fast and surgical.\n\n**Subdural hematoma** is venous and slower, from bridging veins tearing. Common in the elderly and in heavy drinkers whose brains have shrunk, which stretches those veins. Symptoms can take days to weeks, and the mechanism can be trivial.\n\n## Pressure signs\n\n**Cushing's triad** means pressure inside the skull is winning: **rising blood pressure with a widening pulse pressure, falling heart rate, and irregular respirations**. Herniation adds a **blown pupil** — dilated and non-reactive, usually on the injured side — plus posturing and a dropping GCS.\n\n- Ventilate at the normal rate, `10–12/min` for an adult, as the default.\n- Ventilate at `20/min` **only** while active herniation signs are present, and stop when they resolve. Routine hyperventilation constricts cerebral vessels and starves the brain of the blood it is already short on.\n\n## Rules that show up constantly\n\nVomiting even **once** after a head injury is a red flag and earns transport, especially in a child. Never pack a nose or ear that is leaking clear or blood-tinged fluid — let it drain, because plugging it raises intracranial pressure and traps infection. **Raccoon eyes** (bruising around both eyes) and **Battle's sign** (bruising behind the ear) point to a basilar skull fracture, but both take hours to appear, so their absence at the scene proves nothing.\n\n> **On the exam:** A dropping GCS, one dilated pupil, and a slowing pulse is the herniation stem. The answer is ventilate at 20 per minute, oxygenate, and move to a trauma center.",
+      "keyPoints": [
+        "Primary injury is done at impact; your job is preventing secondary injury from hypoxia and hypotension.",
+        "GCS is eye out of 4, verbal out of 5, motor out of 6, total 3 to 15; under 8 means the airway is the emergency.",
+        "Cushing's triad is rising BP with widening pulse pressure, bradycardia, and irregular respirations.",
+        "Ventilate a head injury at 10 to 12 per minute unless active herniation signs are present, then 20 per minute.",
+        "Never pack a leaking ear or nose; raccoon eyes and Battle's sign take hours to appear."
+      ],
+      "checks": [
+        {
+          "q": "A patient opens his eyes only when you pinch his shoulder, says nothing at all, and bends his arms inward toward his chest in response to the pinch. What is his GCS?",
+          "choices": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ],
+          "answer": 1,
+          "why": "Eyes to pain is E2, no verbal response is V1, and abnormal flexion or decorticate posturing is M3. That totals 6. Withdrawal, which is M4, would be pulling the arm away rather than curling it inward."
+        },
+        {
+          "q": "A head-injured patient's blood pressure climbs from 130/80 to 190/80, his pulse falls from 88 to 48, and his breathing becomes irregular. What are you seeing?",
+          "choices": [
+            "Hemorrhagic shock",
+            "Cushing's triad from rising intracranial pressure",
+            "Neurogenic shock",
+            "A normal response to pain"
+          ],
+          "answer": 1,
+          "why": "Rising pressure with a widening pulse pressure, bradycardia, and irregular respirations is Cushing's triad. Hemorrhagic and neurogenic shock both give you hypotension, and neurogenic shock has warm dry skin with a slow heart rate but a low, not high, blood pressure."
+        },
+        {
+          "q": "That same patient now has a dilated right pupil and is extending both arms. What ventilation rate is appropriate?",
+          "choices": [
+            "6 to 8 per minute",
+            "10 to 12 per minute",
+            "20 per minute",
+            "30 per minute"
+          ],
+          "answer": 2,
+          "why": "A blown pupil with posturing is active herniation, the one situation where controlled hyperventilation at 20 per minute is indicated, and it stops when the signs resolve. 10 to 12 is the default for a head injury without herniation, and 30 per minute drops carbon dioxide so far that cerebral vessels clamp shut."
+        }
+      ]
+    },
+    {
+      "id": "emt-trauma-l05",
+      "title": "Spine injury and selective motion restriction",
+      "minutes": 8,
+      "body": "## What you are actually protecting\n\nThe spinal cord runs inside a stack of bones. Break one of those bones and the cord is usually still intact — the fear is that an unstable fracture shifts during movement and cuts the cord on the way to the hospital. Spinal motion restriction (SMR) exists to prevent that second event. It does nothing for a cord that is already injured.\n\nMechanisms that threaten the spine: axial loading (diving, landing on the head or the feet), hyperflexion and hyperextension, rotation, distraction such as hanging, and any penetrating wound near the neck or back.\n\n## Signs of cord injury\n\nNumbness, tingling, or weakness in the arms or legs; inability to feel or move below a level; loss of bladder or bowel control; priapism; and pain or point tenderness along the **midline** of the spine.\n\n**Neurogenic shock** is unlike every other shock. The injury knocks out sympathetic tone, so vessels dilate and the heart cannot speed up to compensate. The patient is hypotensive with **warm, dry, pink skin below the injury** and a **normal or slow heart rate**. Every other shock gives you cold clammy skin and tachycardia.\n\n> **Trap:** A trauma patient in shock is bleeding until proven otherwise. Do not label it neurogenic shock and stop hunting for hemorrhage.\n\n## Deciding who gets restricted\n\nBoarding everybody is out. Long boards cause pressure sores within `30 minutes`, increase pain, restrict breathing, and have never been shown to improve outcomes. Current practice is **selective SMR**. A patient can generally skip restriction when **all** of these are true:\n\n- Alert and oriented, `GCS 15`\n- No midline spinal pain or tenderness\n- No neurologic deficit or complaint — no numbness, tingling, or weakness\n- Not intoxicated by drugs or alcohol\n- No distracting injury; an obvious femur fracture will drown out neck pain\n- Able to communicate and cooperate — no language barrier, not too young\n\nAny one of those missing means restrict. Penetrating trauma to the neck or torso **without** a neurologic deficit is an exception in most protocols: boarding delays surgery and does not help.\n\n## Doing it\n\n- **Manual in-line stabilization** goes on first, by hand, and stays until the patient is fully secured.\n- **Cervical collar**: size it, do not force it. Too tall extends the neck and raises intracranial pressure; too short does nothing at all. Measure from the top of the shoulder to the bottom of the chin.\n- **Log roll** with three or four providers, with the person at the head calling the count so the whole spine turns as one piece.\n- Prefer a **vacuum mattress** or a **scoop stretcher** to a rigid long board. Where a board is used at all, treat it as a transfer device: move the patient, then secure them to the stretcher.\n- Secure the **torso first, head last**, and strap so the entire device can be tipped as a unit if the patient vomits.\n\n### Helmets\n\nLeave the helmet on if it fits snugly, the airway is fine, and you can reach the face. Take it off if it blocks airway management or ventilation, if the head moves inside it, or if the patient is in cardiac arrest. Removal takes two providers: one holds the jaw and occiput from below while the other spreads and lifts the shell. **Football helmet and shoulder pads come off together, or neither** — removing one alone puts the neck in a bad angle.\n\n### Seated patients\n\nAn unstable patient still in a car gets **rapid extrication** with manual stabilization, not a vest device. A stable, alert, cooperative patient with time available is usually best served by a collar and **self-extrication** — turning, standing, and pivoting to the stretcher produces less spinal movement than any provider-performed technique. A vest-type device (KED) remains an option where protocol calls for it.\n\n> **On the exam:** If the stem gives you an alert, sober patient with no midline tenderness, no deficit, and no distracting injury, the answer is not the long board.",
+      "keyPoints": [
+        "SMR prevents a new cord injury during movement; it does nothing for a cord already damaged.",
+        "Neurogenic shock is hypotension with warm dry skin and bradycardia, the opposite of hemorrhagic shock, but assume bleeding first.",
+        "Skip SMR only when all are true: GCS 15, no midline tenderness, no neuro deficit, not intoxicated, no distracting injury, able to cooperate.",
+        "Vacuum mattress and scoop stretcher beat the long board; secure torso first, head last.",
+        "Helmet stays on unless it blocks the airway, the head moves inside it, or the patient is in arrest; football helmet and pads come off together."
+      ],
+      "checks": [
+        {
+          "q": "A 22-year-old rear-ended at low speed is alert and oriented, has no midline neck tenderness, moves all four extremities normally, denies numbness, has no other injuries, and has not been drinking. What is the appropriate spinal care?",
+          "choices": [
+            "Collar and long board because of the mechanism",
+            "No spinal motion restriction; transport in a position of comfort",
+            "Collar only, plus a KED for the extrication",
+            "Vacuum mattress with full head blocks"
+          ],
+          "answer": 1,
+          "why": "He clears every selective SMR criterion, so restriction adds pain and pressure injury with no benefit. Mechanism alone does not mandate a board under current guidelines, and the collar-plus-device options all restrict a spine that the assessment says is fine."
+        },
+        {
+          "q": "A patient with a suspected cervical injury is hypotensive at 84/60 with a heart rate of 52 and warm, dry, pink skin. What should you do?",
+          "choices": [
+            "Assume neurogenic shock and stop the trauma survey",
+            "Treat for shock and continue searching aggressively for hemorrhage",
+            "Give nothing because the slow heart rate is protective",
+            "Sit the patient upright to raise the blood pressure"
+          ],
+          "answer": 1,
+          "why": "The picture fits neurogenic shock, but a trauma patient in shock is bleeding until proven otherwise, and the two can coexist. Stopping the survey is how a splenic bleed gets missed. Sitting a hypotensive patient up lowers brain perfusion."
+        },
+        {
+          "q": "A football player is unresponsive on the field with his helmet and shoulder pads on. What is correct?",
+          "choices": [
+            "Remove the helmet immediately and leave the pads in place",
+            "Remove the pads and leave the helmet on",
+            "Remove both together or neither, based on airway need",
+            "Never remove either in the field"
+          ],
+          "answer": 2,
+          "why": "Helmet and shoulder pads together hold the head in neutral alignment. Taking one off tips the neck into flexion or extension. If the airway demands access, both come off with enough hands to keep the head in line."
+        }
+      ]
+    },
+    {
+      "id": "emt-trauma-l06",
+      "title": "Chest trauma",
+      "minutes": 8,
+      "body": "## The negative pressure machine\n\nBreathing works because the chest is sealed. The diaphragm drops, the chest expands, pressure inside falls below the outside air, and air rushes in through the trachea. Every serious chest injury is some version of breaking that seal or crowding the space the lungs need.\n\n## Open pneumothorax\n\nA hole through the chest wall — the \"sucking chest wound\" — lets air enter the pleural space through the hole instead of the airway, and the lung on that side collapses. Seal it with a **vented chest seal**, or with an occlusive dressing taped on **three sides** so trapped air can escape on exhalation. If the patient gets worse after you seal it, **burp the seal** by lifting a corner. You have probably converted an open pneumothorax into a tension.\n\n## Tension pneumothorax\n\nAir keeps entering the pleural space and cannot get out. Pressure builds, the lung collapses, and then the mediastinum is pushed toward the other side, kinking the great veins that return blood to the heart. It kills by dropping cardiac output, not by ruining oxygenation.\n\nSigns, roughly in the order they appear:\n\n1. Worsening shortness of breath and agitation\n2. **Absent or diminished breath sounds on the affected side**\n3. Hyperresonance to percussion on that side\n4. **Distended neck veins** and hypotension\n5. **Tracheal deviation away from the affected side** — very late, and often never seen\n\n> **Trap:** Waiting for tracheal deviation is waiting too long. Sudden hypotension with one-sided absent breath sounds in a chest-trauma patient is a tension until proven otherwise.\n\nNeedle decompression fixes it and is an ALS skill in most systems — second intercostal space at the midclavicular line, or the fourth to fifth intercostal space at the anterior axillary line. The EMT's job is high-flow oxygen, assisted ventilation, burping any seal you applied, and getting ALS or the hospital fast.\n\n## Flail chest\n\nThree or more ribs broken in two or more places each creates a floating segment that moves **paradoxically** — pulling inward when the chest expands and pushing outward when it contracts. The flail hurts, but the **pulmonary contusion** underneath is what drops the oxygen over the following hours. Treatment is **positive-pressure ventilation** with a bag-valve-mask or CPAP per protocol, which splints the segment from the inside. Do not tape, sandbag, or strap the segment.\n\n## Cardiac tamponade\n\nBlood fills the tough sac around the heart, and because that sac will not stretch acutely, the heart cannot fill between beats. **Beck's triad** is hypotension, distended neck veins, and **muffled heart sounds**, usually with a narrow pulse pressure. Most often from a penetrating chest wound. It is a surgical problem: oxygen and rapid transport.\n\n## Hemothorax\n\nBlood rather than air fills the pleural space, and a chest can hold `1500 mL` or more, which makes it both a breathing problem and a shock problem. Breath sounds are absent on that side, but percussion is **dull** instead of hyperresonant, and the neck veins are **flat** because the patient is empty.\n\n## Commotio cordis\n\nA blunt blow directly over the heart landing in a `10–30 millisecond` window of the cardiac cycle throws a structurally normal heart into ventricular fibrillation. It happens to healthy young athletes hit by a baseball, hockey puck, or lacrosse ball. Because the heart is normal, **immediate CPR and early defibrillation work well**. Get the AED on without delay.\n\n## Rib fractures\n\nPainful, and pain makes people breathe shallowly, which leads to pneumonia. Encourage deep breaths and let the patient splint with a pillow. Fractures of ribs `1–2` mean enormous force was applied. Ribs `9–12` on the left suggest splenic injury; on the right, liver.\n\n> **On the exam:** Distended neck veins plus hypotension narrows the field to tension pneumothorax and tamponade. Breath sounds separate them: absent on one side is tension; present but with muffled heart tones is tamponade.",
+      "keyPoints": [
+        "Open chest wound gets a vented seal or a dressing taped on three sides; burp it if the patient worsens.",
+        "Tension pneumothorax: absent breath sounds on one side, JVD, hypotension; tracheal deviation is late and often absent.",
+        "Flail chest is treated with positive-pressure ventilation, never taping or sandbagging.",
+        "Beck's triad for tamponade is hypotension, distended neck veins, and muffled heart sounds.",
+        "Hemothorax gives absent breath sounds with dull percussion and flat neck veins, because the patient is hypovolemic."
+      ],
+      "checks": [
+        {
+          "q": "After you seal a sucking chest wound with an occlusive dressing, the patient becomes more short of breath and his blood pressure drops. What do you do first?",
+          "choices": [
+            "Remove the dressing entirely and leave the wound open",
+            "Lift a corner of the dressing to burp the seal",
+            "Tape the dressing down on all four sides",
+            "Begin chest compressions"
+          ],
+          "answer": 1,
+          "why": "A fully occlusive seal can trap air and create a tension pneumothorax. Burping the seal releases it and is immediately reversible. Removing the dressing entirely reopens the original problem, and taping all four sides makes the tension worse."
+        },
+        {
+          "q": "A stabbing victim has hypotension, distended neck veins, and clear but equal breath sounds bilaterally. Heart tones are hard to hear. What is most likely?",
+          "choices": [
+            "Tension pneumothorax",
+            "Hemothorax",
+            "Cardiac tamponade",
+            "Hemorrhagic shock from an abdominal injury"
+          ],
+          "answer": 2,
+          "why": "Beck's triad of hypotension, JVD, and muffled heart sounds with equal breath sounds points to tamponade. Tension would take away breath sounds on one side, hemothorax would give dull percussion and flat neck veins, and hemorrhagic shock gives flat neck veins too."
+        },
+        {
+          "q": "A 15-year-old collapses after being hit in the chest by a line drive and is pulseless. What is the priority?",
+          "choices": [
+            "Immediate CPR and apply the AED",
+            "Assess for a flail segment and begin positive-pressure ventilation",
+            "Rapid transport without interventions on scene",
+            "Needle decompression of the left chest"
+          ],
+          "answer": 0,
+          "why": "This is commotio cordis, ventricular fibrillation in an otherwise normal heart, and it responds to prompt compressions and defibrillation. Ventilation alone will not convert VF, transport without CPR wastes the only window, and needle decompression treats a problem this patient does not have."
+        }
+      ]
+    },
+    {
+      "id": "emt-trauma-l07",
+      "title": "Abdominal trauma, evisceration, and impaled objects",
+      "minutes": 7,
+      "body": "## Two kinds of organs, two kinds of trouble\n\nThe abdomen holds organs that bleed and organs that leak.\n\n**Solid organs** — liver, spleen, kidneys, pancreas — are dense and full of blood. Injured, they **hemorrhage**, often silently, into a cavity that can hold several liters before it looks distended. The patient shows you shock long before they show you a big belly.\n\n**Hollow organs** — stomach, small and large bowel, gallbladder, bladder — are bags. Injured, they **spill**, and acid, bile, and stool in the peritoneum cause chemical and then bacterial inflammation (peritonitis). That pain builds over hours, which is why a hollow-organ injury can look mild at the scene and be catastrophic by morning.\n\n> **Key:** Serious abdominal bleeding is invisible. Unexplained shock in a trauma patient with a clear chest and no external bleeding means the belly, the pelvis, or the femurs until proven otherwise.\n\n## What to look for\n\n- **Guarding**, the muscles tightening over a tender area, and **rigidity**, a board-like abdomen, which is late and bad\n- **Seat-belt sign**, a bruise across the lower abdomen, which strongly raises the odds of bowel or mesenteric injury\n- **Cullen's sign** (bruising around the navel) and **Grey Turner's sign** (bruising in the flanks), both late findings\n- **Kehr's sign**, pain referred to the **left shoulder** when blood irritates the diaphragm — classically a ruptured spleen\n- Distention, nausea, vomiting blood, blood at the urethra, pain out of proportion to the exam\n\nAssess by looking first, then palpating all four quadrants gently, **saving the painful quadrant for last**. Do not palpate deeply and do not keep re-palpating. You are confirming tenderness, not making a diagnosis.\n\n## Evisceration\n\nOrgans pushed out through an open abdominal wound. The rules are short and absolute.\n\n1. **Do not push them back in.** That drags contamination into the peritoneum and can injure the bowel further.\n2. Cover with a **moist sterile dressing** — saline-soaked gauze — so the exposed bowel does not dry out and die.\n3. Cover that with an **occlusive dressing** or clean plastic to hold in heat and moisture.\n4. Position **supine with the knees flexed** to take tension off the abdominal wall.\n5. Nothing by mouth, oxygen, keep warm, rapid transport.\n\n## Impaled objects\n\n**Stabilize in place** with bulky dressings and tape. The object may be tamponading a vessel, and pulling it out lets that vessel bleed freely and can slice more tissue on the way out. Shorten a long object only if it is genuinely unsafe for transport and you can cut it without transmitting motion.\n\nTwo exceptions: an object through the **cheek** that you cannot control bleeding around and that threatens the airway, and any object physically blocking CPR or airway management. Those come out.\n\n## The other soft-tissue wounds\n\n- **Abrasion**: skin scraped away. Bleeds little, hurts a lot, contaminates easily.\n- **Laceration**: a cut, straight or jagged. Control bleeding, irrigate gross dirt, dress.\n- **Avulsion**: a flap of skin torn loose. Clean off gross debris, lay the flap back into its anatomic position, then dress. Tissue torn completely free travels with the patient.\n- **Amputation**: control the stump, with a tourniquet early if needed. Wrap the amputated part in **moist sterile gauze**, seal it in a plastic bag, and put the bag **on ice or in cool water — never directly on ice and never frozen**. Freezing destroys the tissue and ends any chance of reattachment. The part goes with the patient.\n\n> **Trap:** Packing an amputated finger directly in ice, or dropping it loose into ice water, is a classic wrong answer. Moist gauze, sealed bag, then cooled.",
+      "keyPoints": [
+        "Solid organs bleed, hollow organs spill; the belly can hide several liters before it looks distended.",
+        "Kehr's sign is left shoulder pain from a ruptured spleen irritating the diaphragm.",
+        "Evisceration: never replace organs, cover with moist sterile then occlusive dressing, knees flexed, nothing by mouth.",
+        "Impaled objects stay put unless they are through the cheek and threatening the airway or block CPR.",
+        "Amputated parts go in moist sterile gauze, into a sealed bag, then on ice or in cool water, never frozen."
+      ],
+      "checks": [
+        {
+          "q": "A stabbing victim has loops of bowel protruding from a wound in the left lower abdomen. What is correct care?",
+          "choices": [
+            "Gently replace the bowel and cover with a dry bulky dressing",
+            "Cover with moist sterile dressing, then an occlusive layer, knees flexed, nothing by mouth",
+            "Apply dry sterile gauze directly and tape it tightly to hold the organs in",
+            "Pack the wound with hemostatic gauze around the bowel"
+          ],
+          "answer": 1,
+          "why": "Exposed bowel dries out and dies, so it gets moist sterile covering with an occlusive layer to trap heat and moisture. Replacing organs contaminates the peritoneum, dry gauze adheres and injures the serosa, and packing a wound that contains bowel damages it."
+        },
+        {
+          "q": "A patient kicked in the left flank complains of left shoulder pain but has no shoulder injury. What does that suggest?",
+          "choices": [
+            "A clavicle fracture from the fall",
+            "Referred pain from diaphragmatic irritation, classically a ruptured spleen",
+            "A pneumothorax on the left",
+            "Malingering, since the shoulder is not injured"
+          ],
+          "answer": 1,
+          "why": "That is Kehr's sign: blood under the left diaphragm irritates it and the pain refers to the shoulder through the phrenic nerve. A clavicle fracture would be tender to palpation, and a pneumothorax would change breath sounds rather than refer pain to the shoulder."
+        },
+        {
+          "q": "A construction worker has a piece of rebar impaled through his thigh. Bleeding around it is moderate and controlled with pressure. What do you do?",
+          "choices": [
+            "Remove it and pack the wound",
+            "Stabilize it in place with bulky dressings and transport",
+            "Push it further in so it does not catch on the doorway",
+            "Apply a tourniquet above it and then remove the rebar"
+          ],
+          "answer": 1,
+          "why": "The object may be compressing a vessel, and removing it can start uncontrollable bleeding and cut tissue on the way out. Stabilize and transport. The only removal exceptions are a cheek wound threatening the airway or an object blocking CPR."
+        }
+      ]
+    },
+    {
+      "id": "emt-trauma-l08",
+      "title": "Musculoskeletal injury and splinting",
+      "minutes": 8,
+      "body": "## Splinting is a circulation skill\n\nA broken bone end is a knife on the inside. Every time it moves it saws at muscle, nerve, and artery, adds bleeding, and drives pain. Splinting is not about comfort — it is about stopping that motion so the injury stops getting worse. A closed femur fracture can hide `1–1.5 L` of blood in the thigh; a pelvic fracture can hide `2 L` or more.\n\n**Closed** means the skin is intact. **Open** means bone communicates with the outside — cover it with a sterile dressing, control bleeding, and do not push protruding bone back in. **Angulated** means bent where it should be straight.\n\n## Check CMS before and after, every time\n\n**C**irculation: distal pulse, skin color, temperature. **M**otor: wiggle the fingers or toes. **S**ensation: can you feel me touching this. Document it before you splint and again after. If a splint makes CMS worse, loosen it and reassess immediately.\n\n## Principles\n\n1. Expose the injury and control bleeding first.\n2. Pad the splint, especially over bony prominences.\n3. Immobilize the **joint above and the joint below** the fracture. For a joint injury, immobilize the bones above and below it.\n4. **Splint it as it lies.** Do not straighten an angulated extremity — unless there is no distal pulse, in which case make **one gentle attempt** at realignment with traction along the long axis of the limb. If you meet resistance or the pain spikes sharply, stop and splint it where it is.\n5. Splint before moving the patient, unless the patient is unstable. Then the whole patient goes on the stretcher and splinting happens en route, or not at all.\n\n## Types\n\n| Splint | Use |\n|---|---|\n| Rigid: board, padded, SAM | Most long bone fractures |\n| Soft: pillow, sling and swathe | Shoulder, clavicle, ankle |\n| Traction | Isolated closed **midshaft femur** only |\n| Vacuum | Conforms to angulated limbs, good for deformity |\n| Pneumatic (air) | Lower leg and forearm; pressure shifts with temperature and altitude |\n| Buddy taping | Fingers and toes |\n\n**Traction splint contraindications** are exam favorites: pelvic fracture, hip or knee injury on the same leg, a fracture near the knee, a lower-leg or ankle fracture, and any partial amputation or avulsion where traction could separate the limb.\n\n**Sling and swathe** is the answer for clavicle, shoulder, and most humerus injuries. The sling carries the weight; the swathe binds the arm to the chest so it cannot swing.\n\n## Pelvis\n\nSuspect a pelvic fracture with lateral hip pain after a significant fall or a side-impact crash. **Do not rock or repeatedly compress the pelvis** — one gentle assessment at most, because re-testing breaks the clot. Apply a **pelvic binder**, or a folded sheet, centered over the **greater trochanters** and not over the iliac crests, tighten it to close the pelvic ring, and bind the legs together. Then treat it as internal bleeding and move.\n\n## Dislocations and compartment syndrome\n\nA **dislocation** is a joint out of place: obvious deformity, fixed position, severe pain, and sometimes a lost distal pulse. Splint as found and check CMS. Do not attempt reduction in the field unless protocol allows it and the limb is pulseless.\n\n**Compartment syndrome** is swelling inside a closed muscle compartment choking off its own blood supply, usually `6–8 hours` after a crush or a tibia fracture. The hallmark is **pain out of proportion** to the injury, worse with passive stretch of the muscles, plus tightness, numbness, and pallor. The pulse stays present until very late, so a pulse does not rule it out. Loosen anything constricting, keep the limb **at heart level rather than elevated**, since elevation lowers perfusion pressure, and transport.\n\n## RICE\n\nRest, Ice, Compression, Elevation for sprains and strains. Ice `20 minutes` at a time with a barrier between the pack and skin.\n\n> **On shift:** The two questions asked about every splint are whether you checked pulses before and after, and what time the tourniquet went on. Write both down before you forget.",
+      "keyPoints": [
+        "Check circulation, motor, and sensation before and after every splint and document both.",
+        "Splint the joint above and below; splint as found unless the limb is pulseless, then one gentle realignment attempt.",
+        "Traction splints are only for isolated closed midshaft femur fractures.",
+        "A closed femur can hide 1 to 1.5 liters of blood and a pelvis 2 liters or more.",
+        "Pelvic binder goes over the greater trochanters, not the iliac crests, and the pelvis gets assessed once, not repeatedly."
+      ],
+      "checks": [
+        {
+          "q": "A patient has an angulated mid-forearm fracture with no radial pulse and a cool, dusty hand. What is the correct action?",
+          "choices": [
+            "Splint it exactly as found and transport",
+            "Make one gentle attempt to realign with traction along the long axis, then splint",
+            "Apply a traction splint to the forearm",
+            "Manipulate the arm repeatedly until the pulse returns"
+          ],
+          "answer": 1,
+          "why": "Absent distal circulation is the one indication to realign, and you get one gentle attempt with axial traction. Splinting as found leaves the hand without blood flow, traction splints are for femurs only, and repeated manipulation causes more damage."
+        },
+        {
+          "q": "Which injury pattern makes a traction splint contraindicated?",
+          "choices": [
+            "An isolated closed fracture of the mid-shaft of the femur",
+            "A femur fracture with an ipsilateral knee injury",
+            "A closed femur fracture in a 30-year-old with normal vitals",
+            "A deformed thigh with a strong pedal pulse"
+          ],
+          "answer": 1,
+          "why": "Traction pulls across the knee, so a knee injury on the same leg rules the device out, as do pelvic fracture, lower-leg and ankle fractures, and partial amputations. The other three choices describe exactly the isolated closed midshaft femur that a traction splint is designed for."
+        },
+        {
+          "q": "Six hours after a crush injury to the leg, a patient reports pain far worse than the injury looks, especially when you passively extend his toes. His pedal pulse is present. What is the concern?",
+          "choices": [
+            "He is drug-seeking since the pulse is normal",
+            "Compartment syndrome",
+            "Deep vein thrombosis",
+            "A simple muscle strain"
+          ],
+          "answer": 1,
+          "why": "Pain out of proportion, worse with passive stretch, is the earliest and most reliable sign of compartment syndrome, and the pulse remains present until very late. Do not elevate the limb; keep it at heart level and transport."
+        }
+      ]
+    },
+    {
+      "id": "emt-trauma-l09",
+      "title": "Burns: depth, size, and the critical list",
+      "minutes": 8,
+      "body": "## What a burn actually is\n\nHeat denatures protein and kills cells, but the dead layer is only half the problem. Damaged capillaries leak plasma into the surrounding tissue, so a large burn drains fluid out of the bloodstream for hours. Burn shock is a slow leak, not a bleed. Burned skin also stops holding heat in and germs out, which is why burn patients get **cold** and get **infected**.\n\n## Depth\n\n- **Superficial** (first degree): red, painful, dry, no blisters. Epidermis only, like a sunburn. **Not counted** in burn surface area.\n- **Partial thickness** (second degree): blisters, moist, red, intensely painful. Into the dermis.\n- **Full thickness** (third degree): white, leathery, charred, or waxy; dry; **painless in the center** because the nerve endings are destroyed. Painless is bad news, not good news.\n\n## Size\n\n### Rule of nines\n\n**Adult**: head `9%`, each arm `9%`, front of torso `18%`, back of torso `18%`, each leg `18%`, genitals `1%`.\n\n**Infant and small child**: the head is proportionally huge — head `18%`, each leg `13.5%`, arms and torso as in the adult. Roughly `1%` shifts from head to legs for each year of age.\n\n**Palm method**: the **patient's** palm including the fingers is about `1%` of their body surface. Use it for scattered or irregular burns.\n\n## Critical burn criteria\n\nAny one of these makes it a critical burn and a burn-center question:\n\n- Full thickness over `10%` of body surface area\n- Partial thickness over `30%` of body surface area\n- Any burn to the **face, hands, feet, genitals, or across a major joint**\n- Suspected **airway or inhalation** injury\n- **Circumferential** burns around a limb or the chest, because swelling turns them into a tourniquet\n- **Electrical** burns or significant **chemical** burns\n- Burns with other trauma, or in the very young, the elderly, or the chronically ill\n\n## Treatment\n\n1. **Stop the burning.** Remove smoldering clothing and jewelry, flush chemicals. Do not peel away fabric that is stuck to the skin.\n2. **Remove rings, watches, and belts now**, before swelling makes it impossible.\n3. Cool a **small** burn, under about `10%` of body surface, with room-temperature water for `1–2 minutes`, then stop. Never cool a large burn — you will drop the core temperature and make everything worse.\n4. Cover with **dry sterile dressings**. Separate burned fingers and toes with gauze.\n5. **No ice, no ointments, no butter, no sprays.** Ice causes further tissue injury; ointments trap heat and have to be scraped off later.\n6. Keep the patient **warm**, give oxygen, look for other injuries, transport.\n\n> **Trap:** Do not intentionally break blisters. Intact blisters are a sterile biologic dressing.\n\n## Special types\n\n**Chemical**: protect yourself first. **Brush dry powder off before flushing**, because water activates dry lime and similar agents. Then flush with copious water for at least `20 minutes`, continuing during transport. Remove contaminated clothing. Never try to neutralize an acid with a base — the reaction makes heat.\n\n**Electrical**: the visible **entry and exit wounds** are the ends of a path of cooked tissue you cannot see. Expect cardiac dysrhythmias, so the patient needs cardiac monitoring and an AED available. Expect fractures, dislocations, and spinal injury from tetanic muscle contraction. Do not touch the patient until the source is confirmed off.\n\n**Inhalation injury**: suspect it with fire in a closed space, **soot around the mouth or nose, singed nasal or facial hair, hoarseness, stridor, or carbonaceous (sooty) sputum**. The airway can swell shut over `30–60 minutes`, so this patient is a transport emergency even while looking comfortable. High-flow oxygen.\n\n**Carbon monoxide**: binds hemoglobin roughly `200–250 times` more tightly than oxygen. The pulse oximeter cannot tell the two apart and **reads falsely normal**. Headache, nausea, dizziness, confusion; cherry-red skin is rare and late. Give high-flow oxygen by non-rebreather no matter what the number says.\n\n> **On the exam:** \"SpO2 is 99 percent on room air\" in a house-fire stem is a trap, not reassurance.",
+      "keyPoints": [
+        "Adult rule of nines: head 9, each arm 9, front torso 18, back 18, each leg 18, genitals 1. Superficial burns are not counted.",
+        "Child head is 18 percent and each leg 13.5 percent; the patient's palm is about 1 percent.",
+        "Critical burns include over 10 percent full thickness, face, hands, feet, genitals, major joints, airway, circumferential, electrical, and chemical.",
+        "Dry sterile dressings, no ice, no ointments, keep the patient warm; cool only small burns for 1 to 2 minutes.",
+        "Pulse oximetry reads falsely normal in carbon monoxide poisoning, so treat on the story with high-flow oxygen."
+      ],
+      "checks": [
+        {
+          "q": "An adult has partial and full thickness burns to the entire front of the torso and the entire right arm. What is the approximate burn surface area?",
+          "choices": [
+            "18 percent",
+            "22 percent",
+            "27 percent",
+            "36 percent"
+          ],
+          "answer": 2,
+          "why": "Front of the torso is 18 percent and a whole arm is 9 percent, so 27 percent. 18 forgets the arm, 36 counts the whole torso front and back, and 22 does not correspond to any rule of nines segment."
+        },
+        {
+          "q": "A 4-year-old pulled a pot of boiling water onto herself. Which statement about estimating her burn is correct?",
+          "choices": [
+            "Her head counts as 9 percent, the same as an adult",
+            "Her head counts as roughly 18 percent because it is proportionally larger",
+            "Each of her legs counts as 18 percent, the same as an adult",
+            "The rule of nines does not apply to children at all"
+          ],
+          "answer": 1,
+          "why": "An infant's head is about 18 percent and each leg about 13.5 percent, with roughly 1 percent shifting from head to legs per year of age. Using adult percentages underestimates head burns and overestimates leg burns in a small child."
+        },
+        {
+          "q": "A man pulled from a house fire has soot around his nostrils, a hoarse voice, and an SpO2 of 99 percent on room air. What is the correct interpretation?",
+          "choices": [
+            "He is well oxygenated and can be transported without oxygen",
+            "He needs high-flow oxygen; the reading may be falsely normal and his airway may swell shut",
+            "He needs only cooling of his external burns",
+            "He should be held on scene for 20 minutes of observation"
+          ],
+          "answer": 1,
+          "why": "Carbon monoxide binds hemoglobin and the pulse oximeter cannot distinguish it from oxygen, so the number lies. Soot and hoarseness also predict airway swelling over the next 30 to 60 minutes, which makes this a time-critical transport, not an observation case."
+        }
+      ]
+    },
+    {
+      "id": "emt-trauma-l10",
+      "title": "Crush, blast, eyes, and the trauma system",
+      "minutes": 7,
+      "body": "## Crush injury and crush syndrome\n\nProlonged compression kills muscle — a car, a collapsed wall, or an unresponsive patient who lay on his own arm for eight hours. Dead muscle cells spill potassium, myoglobin, and acid, and as long as the weight is on, all of that stays trapped locally. The dangerous moment is **release**, when the toxic load washes into the circulation and can cause sudden cardiac arrest and kidney failure. That is **crush syndrome**, and after roughly `1 hour` of entrapment it is a real reason to have ALS and the receiving hospital ready *before* the object comes off.\n\n## Blast injuries\n\nFour mechanisms, and one patient often has several:\n\n1. **Primary**: the pressure wave itself, which damages air-filled organs — eardrums, lungs (blast lung), bowel. It can be invisible from outside.\n2. **Secondary**: flying debris causing penetrating trauma. The most common source of injury.\n3. **Tertiary**: the body thrown into something. Blunt trauma and fractures.\n4. **Quaternary**: everything else — burns, crush from collapse, inhaled toxins, and worsening of existing illness such as asthma.\n\n> **Key:** A blast patient who is walking and talking can still have blast lung. Ask about hearing loss and shortness of breath, and reassess the lungs on the way in.\n\n## Eyes\n\nCover **both eyes** for a serious eye injury, because the uninjured eye tracks and the injured one follows it. A chemical splash gets `20 minutes` of continuous flushing from the inner corner outward, and you do not stop to transport — you flush during transport. An **impaled object in the eye** is stabilized and covered with a rigid cup, a paper cup works, taped over it, with the other eye covered as well. Never press on a globe you suspect is ruptured. Contact lenses come out only for chemical burns.\n\n## Bites\n\nHuman bites are the dirtiest and infect at the highest rate. Dog bites crush, cat bites puncture deep. Control bleeding, irrigate, dress, and transport for wound care plus rabies and tetanus decisions. Note the animal's location and vaccination status in your report.\n\n## Trauma centers\n\nTrauma care is regionalized because outcomes depend on a surgeon being in the building.\n\n| Level | Capability |\n|---|---|\n| I | Full surgical subspecialty coverage `24/7`, research and residency; highest capability |\n| II | `24/7` surgery and most subspecialties, no research requirement |\n| III | Emergency surgery and stabilization, transfers complex cases out |\n| IV | Stabilization and transfer, often rural, may have no surgeon |\n\n## Field triage\n\nThe national field triage guideline works down a list. **Physiologic** criteria come first: `GCS` of `13` or less, systolic under `90`, respiratory rate under `10` or over `29`. Then **anatomic** criteria: penetrating injury to head, neck, torso, or proximal extremities; two or more proximal long bone fractures; flail chest; a crushed, degloved, or pulseless extremity; amputation proximal to the wrist or ankle; pelvic fracture; open or depressed skull fracture; paralysis. Meeting either group means the **highest level of trauma care available**.\n\nMechanism criteria and special-patient criteria come next — age over `55`, anticoagulant use, pregnancy past `20 weeks`, burns — and generally mean a trauma center, not necessarily a level I.\n\n## Time\n\nThe golden hour is a slogan, not data. What does hold up is that bleeding patients do worse with delay, and the delay you control is **scene time**. Aim to be rolling in `10 minutes` — the platinum ten. Load and go, and do the rest en route.\n\nAir medical earns its place when it saves real time or brings a capability you lack: long ground transport, prolonged entrapment, an inaccessible scene. In a dense area a helicopter rarely beats the ground unit door to door.\n\n## Two patients who fool you\n\n**Pregnancy**: blood volume rises `40–50%`, so a pregnant patient can lose a great deal before her vital signs move, and the placenta is sacrificed first. Past `20 weeks`, transport her **tilted `15–30 degrees` to the left** or with the board wedged, to keep the uterus off the vena cava. The best care for the fetus is resuscitating the mother.\n\n**The elderly**: beta blockers prevent the tachycardia, stiff vessels hold the pressure up, and a \"normal\" `120/80` may be profound hypotension for someone who lives at `170/90`. Add anticoagulants, and a ground-level fall becomes a significant mechanism.",
+      "keyPoints": [
+        "Crush syndrome strikes on release, not during entrapment; after about an hour of compression, coordinate before lifting the object.",
+        "Blast injuries: primary pressure wave, secondary debris, tertiary body thrown, quaternary everything else.",
+        "Cover both eyes for serious eye injury; flush chemical splashes 20 minutes, continuing en route.",
+        "Field triage runs physiologic criteria first, then anatomic, then mechanism and special patient criteria.",
+        "Pregnant patients past 20 weeks transport tilted 15 to 30 degrees left, and elderly patients hide shock behind beta blockers and stiff vessels."
+      ],
+      "checks": [
+        {
+          "q": "A worker has been pinned under a concrete beam for two hours. Heavy rescue is ready to lift it. What is the main concern at the moment of release?",
+          "choices": [
+            "Bleeding will start once pressure is removed",
+            "Potassium and acid from dead muscle wash into the circulation and can cause cardiac arrest",
+            "The limb will need immediate amputation",
+            "Compartment syndrome will resolve on its own"
+          ],
+          "answer": 1,
+          "why": "Crush syndrome is a reperfusion event: the toxic products of dead muscle are released all at once, which can cause lethal dysrhythmias and kidney failure. Bleeding may occur, but it is not what kills at the moment of release, and compartment syndrome develops rather than resolves."
+        },
+        {
+          "q": "A patient standing 30 feet from an explosion has no visible injuries but says his ears are ringing and he is a little short of breath. What should you do?",
+          "choices": [
+            "Release him at the scene since he has no visible wounds",
+            "Transport and reassess the lungs, since primary blast injury can be invisible",
+            "Treat only the hearing loss as an ear injury",
+            "Assume the symptoms are anxiety from the event"
+          ],
+          "answer": 1,
+          "why": "The pressure wave damages air-filled organs, and ruptured eardrums are a marker that the wave was strong enough to injure lungs and bowel. Blast lung can declare itself over hours, so this patient is transported and reassessed rather than released."
+        },
+        {
+          "q": "Which finding by itself sends a trauma patient to the highest level of trauma care available under field triage?",
+          "choices": [
+            "A fall of 12 feet in an adult",
+            "Age over 55 with a wrist fracture",
+            "A gunshot wound to the thigh above the knee",
+            "A starred windshield with no injuries"
+          ],
+          "answer": 2,
+          "why": "Penetrating injury to the head, neck, torso, or proximal extremities is an anatomic criterion, and proximal extremity includes the thigh above the knee. A 12-foot fall is below the 20-foot adult threshold, age over 55 is a special-patient criterion rather than a top-tier one, and vehicle damage without injury is mechanism only."
+        }
+      ]
+    }
+  ],
+  "cards": [
+    { "id": "emt-trauma-c001", "front": "A crash speed doubles from 30 to 60 mph. What happens to the kinetic energy delivered?", "back": "It roughly quadruples. Kinetic energy is one half mass times velocity squared, so energy scales with the square of speed. Speed matters far more than vehicle weight.", "lesson": "emt-trauma-l01" },
+    { "id": "emt-trauma-c002", "front": "Name the three collisions in a motor vehicle crash.", "back": "Vehicle into object, body into vehicle interior, organs into the inside of the body. The third one causes the injuries you cannot see and is usually what kills.", "lesson": "emt-trauma-l01" },
+    { "id": "emt-trauma-c003", "front": "What fall height counts as significant mechanism for an adult, and for a child?", "back": "Adult: more than 20 feet. Child: more than 10 feet, or 2 to 3 times the child's own height.", "lesson": "emt-trauma-l01" },
+    { "id": "emt-trauma-c004", "front": "How much vehicle intrusion counts as a significant mechanism?", "back": "More than 12 inches at the occupant's seating position, or more than 18 inches anywhere in the vehicle.", "lesson": "emt-trauma-l01" },
+    { "id": "emt-trauma-c005", "front": "Besides falls and intrusion, list the significant crash mechanisms.", "back": "Ejection partial or complete, death of another occupant in the same vehicle, rollover with an unrestrained occupant, motorcycle crash over 20 mph or rider separated from the bike, and any pedestrian or cyclist struck.", "lesson": "emt-trauma-l01" },
+    { "id": "emt-trauma-c006", "front": "Why can you not judge a gunshot wound by the size of the hole?", "back": "Entrance wounds are often tiny and an exit wound may not exist. High-velocity rounds injure tissue inches off the path through cavitation. Count holes and expose the whole patient, including the back.", "lesson": "emt-trauma-l01" },
+    { "id": "emt-trauma-c007", "front": "What does a deformed steering wheel under a deflated airbag tell you?", "back": "That the chest struck it with force. Airbags deflate in about 0.05 seconds, so lift the bag and inspect the wheel for the real mechanism.", "lesson": "emt-trauma-l01" },
+    { "id": "emt-trauma-c008", "front": "How much blood does an adult have, and how much loss produces obvious shock?", "back": "About 5 to 6 liters. Roughly 1 liter lost produces obvious shock in most adults, and about 2 liters is frequently fatal.", "lesson": "emt-trauma-l02" },
+    { "id": "emt-trauma-c009", "front": "List the bleeding control ladder in order.", "back": "Direct pressure, tourniquet for life-threatening limb bleeding, wound packing with hemostatic gauze for junctional wounds, then a pressure dressing to hold control. Elevation and pressure points are no longer used.", "lesson": "emt-trauma-l02" },
+    { "id": "emt-trauma-c010", "front": "How long do you hold direct pressure before checking the wound?", "back": "A full 3 minutes without lifting the dressing. Peeking early strips off the clot that is forming. If it soaks through, add dressings on top.", "lesson": "emt-trauma-l02" },
+    { "id": "emt-trauma-c011", "front": "Where exactly does a tourniquet go, and how tight?", "back": "Two to three inches above the wound, never over a joint. Tighten until the bleeding stops and the distal pulse is gone. Write the time of application on the tourniquet.", "lesson": "emt-trauma-l02" },
+    { "id": "emt-trauma-c012", "front": "One tourniquet has not stopped the bleeding. Now what?", "back": "Place a second tourniquet directly above the first and tighten it. Never loosen or remove a tourniquet in the field.", "lesson": "emt-trauma-l02" },
+    { "id": "emt-trauma-c013", "front": "Which wounds get packed rather than tourniqueted, and for how long?", "back": "Junctional wounds you cannot tourniquet: neck, armpit, and groin. Pack hemostatic gauze aggressively down to the bleeding vessel, then hold firm pressure for 3 minutes.", "lesson": "emt-trauma-l02" },
+    { "id": "emt-trauma-c014", "front": "How do you manage a nosebleed, and what is the head-trauma caveat?", "back": "Sit the patient up, lean forward, pinch the soft part of the nose for 10 to 15 minutes without releasing. Leaning back risks vomiting. After head trauma, never pack a leaking nose.", "lesson": "emt-trauma-l02" },
+    { "id": "emt-trauma-c015", "front": "Why is blood pressure a late sign in hemorrhagic shock?", "back": "Vasoconstriction and tachycardia hold the pressure up until roughly 30 percent of blood volume, about 1.5 liters, is gone. A falling systolic already means class III.", "lesson": "emt-trauma-l03" },
+    { "id": "emt-trauma-c016", "front": "What does compensated shock look like on skin, pulse, and mental status?", "back": "Pale, cool, clammy skin; rapid weak thready pulse; anxiety or restlessness; thirst; capillary refill longer than 2 seconds. Blood pressure still normal.", "lesson": "emt-trauma-l03" },
+    { "id": "emt-trauma-c017", "front": "Give the blood loss volumes for hemorrhage classes I through IV.", "back": "Class I up to 15 percent or 750 mL; class II 15 to 30 percent or 750 to 1500 mL; class III 30 to 40 percent or 1500 to 2000 mL; class IV over 40 percent or over 2000 mL.", "lesson": "emt-trauma-l03" },
+    { "id": "emt-trauma-c018", "front": "What is the lethal triad, and which part can an EMT control?", "back": "Hypothermia, acidosis, and coagulopathy. Hypothermia is yours: cut away wet clothing, blanket the patient, heat the patient compartment. Cold blood does not clot.", "lesson": "emt-trauma-l03" },
+    { "id": "emt-trauma-c019", "front": "Should you raise the legs of a trauma patient in shock?", "back": "No. Shock position has no proven benefit in trauma and is no longer recommended. Keep the patient supine, warm, on oxygen, and moving.", "lesson": "emt-trauma-l03" },
+    { "id": "emt-trauma-c020", "front": "Why is a hypotensive child a near-arrest patient?", "back": "Children compensate with intense vasoconstriction and tachycardia and can hold a normal blood pressure until nearly exsanguinated, then crash abruptly. Judge them on heart rate, skin, and mental status.", "lesson": "emt-trauma-l03" },
+    { "id": "emt-trauma-c021", "front": "What are the EMT-level treatments for hemorrhagic shock?", "back": "Stop reachable bleeding, oxygen to keep SpO2 at 94 percent or better, keep warm, supine position, and rapid transport with under 10 minutes on scene. Definitive care is blood and a surgeon.", "lesson": "emt-trauma-l03" },
+    { "id": "emt-trauma-c022", "front": "What is the difference between primary and secondary brain injury?", "back": "Primary injury is the damage done at impact and cannot be undone. Secondary injury comes from hypoxia, hypotension, and swelling afterward, and preventing it is the EMT's actual treatment.", "lesson": "emt-trauma-l04" },
+    { "id": "emt-trauma-c023", "front": "What oxygen and blood pressure targets protect an injured brain?", "back": "Keep SpO2 at 94 percent or higher and systolic blood pressure above 110. A single episode of SpO2 under 90 or systolic under 90 roughly doubles mortality.", "lesson": "emt-trauma-l04" },
+    { "id": "emt-trauma-c024", "front": "What are the three GCS components and their maximum scores?", "back": "Eye opening out of 4, verbal response out of 5, motor response out of 6. Total ranges from 3 to 15, and under 8 means the airway is the emergency.", "lesson": "emt-trauma-l04" },
+    { "id": "emt-trauma-c025", "front": "Score it: eyes open to voice, confused conversation, obeys commands.", "back": "E3 plus V4 plus M6 equals GCS 13.", "lesson": "emt-trauma-l04" },
+    { "id": "emt-trauma-c026", "front": "Score it: no eye opening, groaning sounds to pain, withdraws from pain.", "back": "E1 plus V2 plus M4 equals GCS 7. Under 8, so airway management is now the priority.", "lesson": "emt-trauma-l04" },
+    { "id": "emt-trauma-c027", "front": "What is Cushing's triad and what does it mean?", "back": "Rising blood pressure with a widening pulse pressure, falling heart rate, and irregular respirations. It means intracranial pressure is winning and herniation is near.", "lesson": "emt-trauma-l04" },
+    { "id": "emt-trauma-c028", "front": "When do you ventilate a head-injured patient at 20 breaths per minute?", "back": "Only during active herniation signs: a blown pupil, posturing, dropping GCS. Otherwise use the normal 10 to 12 per minute, since routine hyperventilation constricts cerebral vessels and starves the brain.", "lesson": "emt-trauma-l04" },
+    { "id": "emt-trauma-c029", "front": "Epidural versus subdural hematoma in one line each.", "back": "Epidural: arterial, middle meningeal artery, knocked out then a lucid interval then rapid decline. Subdural: venous bridging veins, slow, common in elderly and heavy drinkers, symptoms over days to weeks.", "lesson": "emt-trauma-l04" },
+    { "id": "emt-trauma-c030", "front": "What does spinal motion restriction actually accomplish?", "back": "It prevents an unstable fracture from shifting and cutting the cord during movement. It does nothing for a cord that is already injured.", "lesson": "emt-trauma-l05" },
+    { "id": "emt-trauma-c031", "front": "How does neurogenic shock differ from every other shock?", "back": "Hypotension with warm, dry, pink skin below the injury and a normal or slow heart rate. Every other shock gives cold clammy skin and tachycardia. Still assume hemorrhage first.", "lesson": "emt-trauma-l05" },
+    { "id": "emt-trauma-c032", "front": "List the selective SMR criteria that let you skip restriction.", "back": "All must be true: GCS 15, no midline spinal tenderness, no neurologic deficit or complaint, not intoxicated, no distracting injury, and able to communicate and cooperate.", "lesson": "emt-trauma-l05" },
+    { "id": "emt-trauma-c033", "front": "How do you size a cervical collar?", "back": "Measure from the top of the shoulder to the bottom of the chin. Too tall extends the neck and raises intracranial pressure; too short does nothing. Never force a collar to fit.", "lesson": "emt-trauma-l05" },
+    { "id": "emt-trauma-c034", "front": "Which devices are preferred over a long backboard, and in what order do you strap?", "back": "Vacuum mattress or scoop stretcher. A long board is only a transfer device. Secure the torso first and the head last, so the whole unit can be tipped if the patient vomits.", "lesson": "emt-trauma-l05" },
+    { "id": "emt-trauma-c035", "front": "When does a helmet come off?", "back": "When it blocks airway management or ventilation, when the head moves inside it, or when the patient is in cardiac arrest. Football helmet and shoulder pads come off together or neither.", "lesson": "emt-trauma-l05" },
+    { "id": "emt-trauma-c036", "front": "How do you get a stable, alert patient out of a car with the least spinal movement?", "back": "Apply a collar and let the patient self-extricate, turning, standing, and pivoting to the stretcher. That produces less motion than any provider-performed technique. Rapid extrication is for unstable patients.", "lesson": "emt-trauma-l05" },
+    { "id": "emt-trauma-c037", "front": "How do you dress an open chest wound, and what if the patient gets worse?", "back": "Vented chest seal, or occlusive dressing taped on three sides so air escapes on exhalation. If he worsens, burp the seal by lifting a corner; you may have created a tension.", "lesson": "emt-trauma-l06" },
+    { "id": "emt-trauma-c038", "front": "List the signs of tension pneumothorax in the order they appear.", "back": "Worsening dyspnea and agitation, then absent breath sounds on one side, hyperresonance, then distended neck veins with hypotension, and finally tracheal deviation away from the side, which is late and often absent.", "lesson": "emt-trauma-l06" },
+    { "id": "emt-trauma-c039", "front": "How does a tension pneumothorax actually kill?", "back": "Pressure pushes the mediastinum across and kinks the great veins returning blood to the heart, so cardiac output collapses. It is a circulation death more than an oxygenation death.", "lesson": "emt-trauma-l06" },
+    { "id": "emt-trauma-c040", "front": "What defines a flail chest and how is it treated?", "back": "Three or more ribs broken in two or more places each, producing a paradoxically moving segment. Treat with positive-pressure ventilation to splint it internally. Never tape or sandbag the segment.", "lesson": "emt-trauma-l06" },
+    { "id": "emt-trauma-c041", "front": "What is Beck's triad?", "back": "Hypotension, distended neck veins, and muffled heart sounds. It indicates cardiac tamponade, most often from a penetrating chest wound, and it is a surgical problem.", "lesson": "emt-trauma-l06" },
+    { "id": "emt-trauma-c042", "front": "How do you tell hemothorax from tension pneumothorax at the bedside?", "back": "Both lose breath sounds on one side. Hemothorax percusses dull with flat neck veins because the patient is hypovolemic. Tension percusses hyperresonant with distended neck veins.", "lesson": "emt-trauma-l06" },
+    { "id": "emt-trauma-c043", "front": "What is commotio cordis and what does it need?", "back": "A blunt blow over the heart in a 10 to 30 millisecond window of the cardiac cycle throws a normal heart into ventricular fibrillation. It needs immediate CPR and early defibrillation.", "lesson": "emt-trauma-l06" },
+    { "id": "emt-trauma-c044", "front": "What do fractures of ribs 1 and 2, and of ribs 9 through 12, suggest?", "back": "Ribs 1 and 2 mean enormous force was applied. Ribs 9 through 12 on the left suggest splenic injury, and on the right suggest liver injury.", "lesson": "emt-trauma-l06" },
+    { "id": "emt-trauma-c045", "front": "Solid versus hollow abdominal organs: what does each do when injured?", "back": "Solid organs like liver, spleen, kidneys, and pancreas hemorrhage, often silently. Hollow organs like stomach, bowel, gallbladder, and bladder spill contents and cause peritonitis over hours.", "lesson": "emt-trauma-l07" },
+    { "id": "emt-trauma-c046", "front": "What is Kehr's sign?", "back": "Pain referred to the left shoulder when blood irritates the diaphragm, transmitted by the phrenic nerve. It classically means a ruptured spleen.", "lesson": "emt-trauma-l07" },
+    { "id": "emt-trauma-c047", "front": "How do you palpate an injured abdomen?", "back": "Look first, then palpate all four quadrants gently, saving the painful quadrant for last. Do not palpate deeply and do not keep re-palpating; you are confirming tenderness, not diagnosing.", "lesson": "emt-trauma-l07" },
+    { "id": "emt-trauma-c048", "front": "Give the five steps for managing an evisceration.", "back": "Do not replace the organs; cover with moist sterile dressing; cover that with an occlusive layer; position supine with knees flexed; nothing by mouth, oxygen, warmth, rapid transport.", "lesson": "emt-trauma-l07" },
+    { "id": "emt-trauma-c049", "front": "When does an impaled object come out in the field?", "back": "Only two situations: through the cheek where bleeding threatens the airway, and when it physically blocks CPR or airway management. Otherwise stabilize in place with bulky dressings.", "lesson": "emt-trauma-l07" },
+    { "id": "emt-trauma-c050", "front": "How do you package an amputated part?", "back": "Wrap it in moist sterile gauze, seal it in a plastic bag, and place the bag on ice or in cool water. Never directly on ice and never frozen. It travels with the patient.", "lesson": "emt-trauma-l07" },
+    { "id": "emt-trauma-c051", "front": "How do you handle an avulsed flap of skin?", "back": "Clean off gross debris, lay the flap back into its anatomic position, then dress it. Tissue torn completely free is wrapped and transported with the patient.", "lesson": "emt-trauma-l07" },
+    { "id": "emt-trauma-c052", "front": "What does CMS stand for and when do you check it?", "back": "Circulation, motor, sensation. Check and document it before splinting and again after. If a splint worsens CMS, loosen it and reassess immediately.", "lesson": "emt-trauma-l08" },
+    { "id": "emt-trauma-c053", "front": "How much blood can a closed femur fracture and a pelvic fracture hide?", "back": "A closed femur can hold 1 to 1.5 liters in the thigh. A pelvic fracture can hold 2 liters or more. Both are internal bleeding, not just orthopedics.", "lesson": "emt-trauma-l08" },
+    { "id": "emt-trauma-c054", "front": "What is the rule for splinting an angulated extremity?", "back": "Splint it as it lies, unless the distal pulse is absent. Then make one gentle attempt at realignment with traction along the long axis, and stop if you meet resistance.", "lesson": "emt-trauma-l08" },
+    { "id": "emt-trauma-c055", "front": "What is the only indication for a traction splint?", "back": "An isolated closed mid-shaft femur fracture.", "lesson": "emt-trauma-l08" },
+    { "id": "emt-trauma-c056", "front": "List the traction splint contraindications.", "back": "Pelvic fracture, hip or knee injury on the same leg, fracture near the knee, lower-leg or ankle fracture, and any partial amputation or avulsion where traction could separate the limb.", "lesson": "emt-trauma-l08" },
+    { "id": "emt-trauma-c057", "front": "Where does a pelvic binder sit, and what must you avoid?", "back": "Centered over the greater trochanters, not the iliac crests, tightened to close the pelvic ring, with the legs bound together. Avoid repeatedly rocking or compressing the pelvis, which breaks the clot.", "lesson": "emt-trauma-l08" },
+    { "id": "emt-trauma-c058", "front": "What is the earliest reliable sign of compartment syndrome?", "back": "Pain out of proportion to the injury, worse with passive stretch of the muscles. The distal pulse stays present until very late, so a pulse does not rule it out.", "lesson": "emt-trauma-l08" },
+    { "id": "emt-trauma-c059", "front": "Should a limb with suspected compartment syndrome be elevated?", "back": "No. Keep it at heart level. Elevation lowers the perfusion pressure across an already compressed compartment. Loosen anything constricting and transport.", "lesson": "emt-trauma-l08" },
+    { "id": "emt-trauma-c060", "front": "Describe the three burn depths.", "back": "Superficial: red, dry, painful, no blisters, not counted in surface area. Partial thickness: blisters, moist, intensely painful. Full thickness: white or leathery or charred, dry, painless in the center.", "lesson": "emt-trauma-l09" },
+    { "id": "emt-trauma-c061", "front": "Give the adult rule of nines.", "back": "Head 9 percent, each arm 9 percent, front torso 18 percent, back torso 18 percent, each leg 18 percent, genitals 1 percent.", "lesson": "emt-trauma-l09" },
+    { "id": "emt-trauma-c062", "front": "How does the rule of nines change for an infant?", "back": "Head becomes 18 percent and each leg 13.5 percent; arms and torso stay the same. About 1 percent shifts from head to legs for each year of age.", "lesson": "emt-trauma-l09" },
+    { "id": "emt-trauma-c063", "front": "What is the palm method?", "back": "The patient's own palm including the fingers is about 1 percent of their body surface area. Use it for scattered or irregular burns.", "lesson": "emt-trauma-l09" },
+    { "id": "emt-trauma-c064", "front": "List the critical burn criteria.", "back": "Full thickness over 10 percent, partial thickness over 30 percent, burns to face, hands, feet, genitals or major joints, airway or inhalation injury, circumferential burns, electrical or chemical burns, burns with other trauma, and extremes of age.", "lesson": "emt-trauma-l09" },
+    { "id": "emt-trauma-c065", "front": "What do you put on a burn, and what do you never put on one?", "back": "Dry sterile dressings, with gauze separating burned fingers and toes. Never ice, ointment, butter, or sprays. Cool only small burns, under about 10 percent, for 1 to 2 minutes.", "lesson": "emt-trauma-l09" },
+    { "id": "emt-trauma-c066", "front": "How do you manage a dry chemical burn?", "back": "Protect yourself, brush the dry powder off before flushing because water activates agents like dry lime, then flush with copious water for at least 20 minutes, continuing en route. Never neutralize acid with base.", "lesson": "emt-trauma-l09" },
+    { "id": "emt-trauma-c067", "front": "Why does pulse oximetry lie in carbon monoxide poisoning?", "back": "Carbon monoxide binds hemoglobin 200 to 250 times more tightly than oxygen, and the oximeter cannot tell the two apart, so it reads falsely normal. Give high-flow oxygen regardless of the number.", "lesson": "emt-trauma-l09" },
+    { "id": "emt-trauma-c068", "front": "What are the signs of inhalation injury, and how fast does it move?", "back": "Fire in a closed space, soot around the mouth or nose, singed nasal or facial hair, hoarseness, stridor, sooty sputum. The airway can swell shut in 30 to 60 minutes, so transport is time-critical.", "lesson": "emt-trauma-l09" },
+    { "id": "emt-trauma-c069", "front": "Why is the moment of release dangerous in a crush injury?", "back": "Potassium, myoglobin, and acid from dead muscle are trapped locally while compressed and wash into the circulation on release, causing dysrhythmias, cardiac arrest, and kidney failure. That is crush syndrome.", "lesson": "emt-trauma-l10" },
+    { "id": "emt-trauma-c070", "front": "Name the four blast injury mechanisms.", "back": "Primary: the pressure wave damaging air-filled organs. Secondary: flying debris, the most common. Tertiary: the body thrown into something. Quaternary: burns, crush, inhaled toxins, and worsened existing illness.", "lesson": "emt-trauma-l10" },
+    { "id": "emt-trauma-c071", "front": "Why do you cover both eyes for a serious eye injury?", "back": "Because the eyes move together. The uninjured eye tracks and the injured one follows, which drives further damage. Cover both, and stabilize an impaled object with a rigid cup.", "lesson": "emt-trauma-l10" },
+    { "id": "emt-trauma-c072", "front": "What do the four trauma center levels mean?", "back": "Level I: full subspecialty coverage 24/7 with research and residency. Level II: 24/7 surgery, most subspecialties, no research requirement. Level III: emergency surgery and stabilization, transfers out. Level IV: stabilization and transfer.", "lesson": "emt-trauma-l10" },
+    { "id": "emt-trauma-c073", "front": "What are the physiologic field triage criteria?", "back": "GCS of 13 or less, systolic blood pressure under 90, or respiratory rate under 10 or over 29. Any one sends the patient to the highest level of trauma care available.", "lesson": "emt-trauma-l10" },
+    { "id": "emt-trauma-c074", "front": "How do you transport a pregnant trauma patient past 20 weeks, and why?", "back": "Tilted 15 to 30 degrees to the left, or with the board wedged, to keep the uterus off the vena cava. Blood volume rises 40 to 50 percent, so she hides blood loss well.", "lesson": "emt-trauma-l10" }
+  ],
+  "quiz": [
+    { "id": "emt-trauma-q001", "q": "Which fall height is considered a significant mechanism of injury in an adult?", "choices": ["Greater than 6 feet", "Greater than 10 feet", "Greater than 20 feet", "Greater than 30 feet"], "answer": 2, "why": "The adult threshold is greater than 20 feet, roughly two stories. Ten feet is the pediatric threshold, along with 2 to 3 times the child's height. Six feet is a standing fall and 30 feet is higher than the guideline requires.", "lesson": "emt-trauma-l01", "difficulty": 1 },
+    { "id": "emt-trauma-q002", "q": "A driver struck a tree at highway speed. The windshield is starred, the steering wheel is bent, and he says only that his neck is sore. What does the scene tell you?", "choices": ["The chest and head absorbed major energy, so suspect injuries he is not reporting", "The airbag protected him because it deployed", "A sore neck with no other complaint rules out serious injury", "The windshield damage came from debris, not the patient"], "answer": 0, "why": "A starred windshield and a deformed steering wheel are second-collision evidence of head and chest impact. Airbags deflate in about 0.05 seconds and do not prevent all injury, and a single complaint never rules out the silent third collision inside the organs.", "lesson": "emt-trauma-l01", "difficulty": 2 },
+    { "id": "emt-trauma-q003", "q": "A patient was shot once in the abdomen with a handgun. He has one small wound and no exit wound. What is the correct interpretation?", "choices": ["A single small wound means minimal internal damage", "Absence of an exit wound means the bullet lost most of its energy harmlessly", "Only the organs directly under the wound can be injured", "The bullet's path is unknown and internal injury may be extensive"], "answer": 3, "why": "A bullet tumbles, ricochets off bone, and delivers energy off its visible path, so a small hole tells you nothing about the track. No exit wound actually means all of the projectile's energy stayed inside the patient.", "lesson": "emt-trauma-l01", "difficulty": 2 },
+    { "id": "emt-trauma-q004", "q": "How far above a wound should a tourniquet be placed?", "choices": ["Directly over the wound", "2 to 3 inches above the wound, never over a joint", "At the most distal point of the limb", "As close to the armpit or groin as physically possible in every case"], "answer": 1, "why": "Two to three inches proximal captures the artery without crushing the wound itself, and joints have no compressible soft tissue so a tourniquet over one will not occlude flow. High-and-tight placement is a combat variation, not the default civilian teaching.", "lesson": "emt-trauma-l02", "difficulty": 1 },
+    { "id": "emt-trauma-q005", "q": "A patient has a partial amputation of the left forearm with pulsatile bright red bleeding soaking the carpet. What is your first action?", "choices": ["Apply a pressure dressing and elevate the arm", "Hold direct pressure for 3 minutes and reassess", "Apply a tourniquet to the upper arm and note the time", "Pack the wound with hemostatic gauze"], "answer": 2, "why": "Amputations and spurting arterial bleeds go straight to a tourniquet rather than climbing the ladder. Elevation is no longer used, direct pressure wastes time on an arterial amputation, and packing is for junctional wounds you cannot tourniquet.", "lesson": "emt-trauma-l02", "difficulty": 2 },
+    { "id": "emt-trauma-q006", "q": "Twenty minutes after you apply a tourniquet, the patient begs you to loosen it because of the pain. What should you do?", "choices": ["Leave it in place, explain that the pain is expected, and transport", "Loosen it briefly to let blood return, then retighten", "Remove it and switch to a pressure dressing", "Loosen it just until a faint distal pulse returns"], "answer": 0, "why": "A tourniquet is never loosened in the field. Releasing it restarts the bleeding, washes out the clot, and can send acid and potassium from the ischemic limb into circulation. Pain is expected and is not a reason to release.", "lesson": "emt-trauma-l02", "difficulty": 2 },
+    { "id": "emt-trauma-q007", "q": "A patient has a deep laceration high in the right groin with heavy dark and bright bleeding. Direct pressure with a bulky dressing has not controlled it. What is the best next step?", "choices": ["Apply a tourniquet as high on the thigh as possible", "Add more dressings and continue direct pressure for another 5 minutes", "Elevate the leg and apply pressure at the femoral pressure point", "Pack the wound with hemostatic gauze and hold firm pressure for 3 minutes"], "answer": 3, "why": "The groin is a junctional site where a tourniquet has nothing to compress against, so packing is the tool. Piling on dressings without reaching the vessel does nothing, and elevation and pressure points have been removed from bleeding control.", "lesson": "emt-trauma-l02", "difficulty": 3 },
+    { "id": "emt-trauma-q008", "q": "Approximately how much blood volume must an adult lose before the systolic blood pressure begins to fall?", "choices": ["About 10 percent", "About 30 percent", "About 50 percent", "About 5 percent"], "answer": 1, "why": "Vasoconstriction and tachycardia defend the pressure until roughly 30 percent, about 1500 mL, is gone, which is the class II to class III boundary. That is exactly why a normal blood pressure is not reassurance in trauma.", "lesson": "emt-trauma-l03", "difficulty": 1 },
+    { "id": "emt-trauma-q009", "q": "A 40-year-old man from a motorcycle crash is anxious, pale, and cool with a heart rate of 132, blood pressure 104/88, and capillary refill of 4 seconds. What best describes his condition?", "choices": ["He is stable because his blood pressure is normal", "He has neurogenic shock from a spinal injury", "He is in compensated hemorrhagic shock and needs rapid transport", "He is having an anxiety reaction to the crash"], "answer": 2, "why": "Tachycardia, cool pale skin, a narrowed pulse pressure, and delayed capillary refill with a maintained systolic is textbook compensated shock. Neurogenic shock gives warm dry skin with bradycardia, and calling it anxiety ignores every perfusion finding.", "lesson": "emt-trauma-l03", "difficulty": 2 },
+    { "id": "emt-trauma-q010", "q": "That same patient becomes calm and stops complaining, and his blood pressure is now 78/50 with a heart rate of 146. What has happened?", "choices": ["He is improving because his anxiety has resolved", "His pain has been controlled by endorphins", "He is entering decompensated shock as compensation fails", "The first blood pressure reading was inaccurate"], "answer": 2, "why": "A quiet patient with a falling pressure and rising heart rate is failing, not improving. Compensation is adrenaline-funded and runs out abruptly, and deteriorating mental status is a perfusion sign. Assuming a bad first reading ignores the trend in every other vital.", "lesson": "emt-trauma-l03", "difficulty": 3 },
+    { "id": "emt-trauma-q011", "q": "Which intervention most directly addresses the coagulopathy of a bleeding trauma patient at the EMT level?", "choices": ["Administering high-flow oxygen", "Raising the patient's legs", "Giving oral fluids for volume", "Removing wet clothing and keeping the patient warm"], "answer": 3, "why": "Clotting enzymes slow sharply as core temperature falls, so preventing hypothermia directly protects clot formation. Oxygen treats hypoxia rather than clotting, leg elevation has no proven benefit in trauma, and nothing by mouth is the rule for a likely surgical patient.", "lesson": "emt-trauma-l03", "difficulty": 2 },
+    { "id": "emt-trauma-q012", "q": "Which Glasgow Coma Scale motor score corresponds to a patient who purposefully reaches toward the site where you apply a painful stimulus?", "choices": ["6", "5", "4", "3"], "answer": 1, "why": "Reaching toward the stimulus is localizing, which scores 5. Six requires following a verbal command, 4 is simply pulling the limb away, and 3 is abnormal flexion or decorticate posturing.", "lesson": "emt-trauma-l04", "difficulty": 1 },
+    { "id": "emt-trauma-q013", "q": "A boxer is knocked out for 30 seconds, wakes up and chats normally for 20 minutes, then becomes rapidly unresponsive with a dilated left pupil. Which injury does this pattern describe?", "choices": ["Concussion", "Subdural hematoma", "Epidural hematoma", "Diffuse axonal injury"], "answer": 2, "why": "A lucid interval followed by rapid decline is the classic epidural hematoma from a torn middle meningeal artery. A subdural bleeds slowly from veins over days, a concussion does not produce a blown pupil, and diffuse axonal injury does not have a lucid interval.", "lesson": "emt-trauma-l04", "difficulty": 2 },
+    { "id": "emt-trauma-q014", "q": "A head-injured patient has clear fluid draining from his right ear. What should you do?", "choices": ["Cover it loosely with a sterile dressing and allow it to drain", "Pack the ear canal with sterile gauze to stop the flow", "Irrigate the canal with saline", "Insert an occlusive dressing to prevent infection"], "answer": 0, "why": "Clear drainage suggests cerebrospinal fluid from a basilar skull fracture. Packing or occluding the canal raises intracranial pressure and traps infection inside, and irrigation pushes contamination toward the brain.", "lesson": "emt-trauma-l04", "difficulty": 2 },
+    { "id": "emt-trauma-q015", "q": "An intubated head-injury patient being bagged at 12 per minute develops a blood pressure of 200/90, pulse 44, a fixed dilated right pupil, and extensor posturing. What is the appropriate change?", "choices": ["Slow ventilations to 8 per minute to reduce airway pressure", "Continue at 12 per minute and transport", "Lower the head of the bed below the level of the heart", "Increase ventilations to 20 per minute while the herniation signs persist"], "answer": 3, "why": "These are active herniation signs, the only indication for controlled hyperventilation at 20 per minute, which briefly reduces intracranial pressure. Slowing ventilation raises carbon dioxide and worsens swelling, and head-down positioning increases intracranial pressure further.", "lesson": "emt-trauma-l04", "difficulty": 3 },
+    { "id": "emt-trauma-q016", "q": "Which finding is characteristic of neurogenic shock rather than hemorrhagic shock?", "choices": ["Cool, pale, diaphoretic skin", "Warm, dry skin with bradycardia", "Rapid thready pulse with delayed capillary refill", "Narrowed pulse pressure with intense thirst"], "answer": 1, "why": "Loss of sympathetic tone dilates vessels and blocks the compensatory tachycardia, so the patient is hypotensive with warm dry skin and a slow or normal heart rate. Every other choice describes the adrenaline-driven picture of hemorrhagic shock.", "lesson": "emt-trauma-l05", "difficulty": 1 },
+    { "id": "emt-trauma-q017", "q": "A 19-year-old rolled his car. He is alert and oriented, denies neck or back pain, has no midline tenderness, moves everything, is not intoxicated, and has an obviously deformed and painful right femur. What spinal care applies?", "choices": ["No restriction, since he denies spinal pain", "Collar only and let him walk to the stretcher", "Apply spinal motion restriction because the femur is a distracting injury", "Full long board with head blocks and straps for transport"], "answer": 2, "why": "A painful femur is a distracting injury, so he fails selective clearance no matter how his neck feels, and restriction is indicated. Modern restriction means a collar with a scoop or vacuum device onto the stretcher, not a rigid long board for the whole transport.", "lesson": "emt-trauma-l05", "difficulty": 2 },
+    { "id": "emt-trauma-q018", "q": "Which statement about long backboards reflects current practice?", "choices": ["The board is an extrication and transfer device, not a transport device", "Every patient with a significant mechanism must be boarded", "Boards reduce pressure injuries compared with a padded stretcher", "Boarding improves neurologic outcomes in penetrating neck trauma"], "answer": 0, "why": "Long boards cause pressure injury and restrict breathing with no demonstrated outcome benefit, so they are used to move a patient and then removed. Boarding penetrating trauma actively harms by delaying surgery, and mechanism alone no longer mandates restriction.", "lesson": "emt-trauma-l05", "difficulty": 2 },
+    { "id": "emt-trauma-q019", "q": "An unresponsive motorcyclist is breathing 6 times per minute with a full-face helmet in place. What is correct?", "choices": ["Leave the helmet on and ventilate through the face shield", "Leave the helmet on and transport immediately", "Remove the helmet after arrival at the hospital", "Remove the helmet with two providers maintaining in-line stabilization so you can ventilate"], "answer": 3, "why": "Inadequate ventilation is an absolute indication for helmet removal, done by two providers with one stabilizing the jaw and occiput from below. You cannot deliver an effective mask seal through a face shield, and delaying until the hospital leaves the patient hypoxic.", "lesson": "emt-trauma-l05", "difficulty": 3 },
+    { "id": "emt-trauma-q020", "q": "How many sides of an occlusive dressing over an open chest wound should be taped down if a commercial vented seal is unavailable?", "choices": ["All four", "Three", "Two", "None; leave the dressing loose"], "answer": 1, "why": "Taping three sides creates a one-way flutter valve: air cannot enter through the hole but can escape on exhalation. Four sides can trap air and cause a tension pneumothorax, while a loose or two-sided dressing does not seal the wound during inhalation.", "lesson": "emt-trauma-l06", "difficulty": 1 },
+    { "id": "emt-trauma-q021", "q": "A stabbing victim suddenly becomes severely short of breath with a blood pressure of 76/40, distended neck veins, and absent breath sounds on the right. What is the most likely problem?", "choices": ["Cardiac tamponade", "Hemothorax on the right", "Tension pneumothorax on the right", "Simple pneumothorax"], "answer": 2, "why": "Absent unilateral breath sounds with JVD and hypotension is a tension pneumothorax; tracheal deviation is late and may never appear. Tamponade leaves breath sounds equal, hemothorax gives flat neck veins and dull percussion, and a simple pneumothorax does not drop the pressure.", "lesson": "emt-trauma-l06", "difficulty": 2 },
+    { "id": "emt-trauma-q022", "q": "An elderly man struck the steering wheel and has a segment of the left chest that pulls inward when he inhales. What is the most appropriate management?", "choices": ["Positive-pressure ventilation with a bag-valve-mask", "Tape a bulky dressing over the segment to stop the motion", "Place a sandbag on the segment and secure it", "Have him lie on the uninjured side to splint the chest"], "answer": 0, "why": "Positive-pressure ventilation splints the flail segment from the inside and treats the pulmonary contusion underneath, which is the real killer. Taping or sandbagging restricts chest expansion and worsens ventilation, and positioning alone does not address the contusion.", "lesson": "emt-trauma-l06", "difficulty": 2 },
+    { "id": "emt-trauma-q023", "q": "A patient with a sealed chest wound deteriorates in the ambulance: rising anxiety, pressure falling from 118 to 84 systolic, and breath sounds now absent on the injured side. ALS is 10 minutes away. What do you do first?", "choices": ["Begin chest compressions", "Replace the seal with a tighter fully occlusive dressing", "Increase the oxygen flow rate and continue to the hospital", "Lift a corner of the seal to release trapped air, then reassess"], "answer": 3, "why": "You have most likely converted the open pneumothorax into a tension, and burping the seal is the immediate, reversible fix available to an EMT. Making the seal tighter worsens it, oxygen alone does not relieve trapped pressure, and the patient still has a pulse.", "lesson": "emt-trauma-l06", "difficulty": 3 },
+    { "id": "emt-trauma-q024", "q": "Which organ group bleeds heavily when injured rather than spilling its contents?", "choices": ["Stomach and small bowel", "Liver, spleen, and kidneys", "Gallbladder and bladder", "Large intestine and appendix"], "answer": 1, "why": "Liver, spleen, kidneys, and pancreas are solid, vascular organs that hemorrhage. Stomach, bowel, gallbladder, and bladder are hollow and spill contents, producing peritonitis over hours rather than immediate blood loss.", "lesson": "emt-trauma-l07", "difficulty": 1 },
+    { "id": "emt-trauma-q025", "q": "A restrained driver has a bruise across the lower abdomen, mild tenderness, and normal vital signs. What is the correct disposition?", "choices": ["Refusal is reasonable because the vitals are normal", "Transport only if the pain worsens over the next hour", "Transport for evaluation because a seat-belt sign predicts internal injury", "Apply ice and advise follow-up with a primary care provider"], "answer": 2, "why": "A seat-belt sign markedly raises the probability of bowel, mesenteric, and lumbar spine injury, and hollow-organ injuries declare themselves over hours. Normal vitals early mean nothing, and waiting on scene or at home wastes the window before peritonitis sets in.", "lesson": "emt-trauma-l07", "difficulty": 2 },
+    { "id": "emt-trauma-q026", "q": "A worker has a screwdriver impaled in the left cheek with bleeding into the mouth that he is choking on. What should you do?", "choices": ["Remove the object and control bleeding from both sides of the cheek", "Stabilize it in place with bulky dressings and suction around it", "Push the object through to the outside of the cheek", "Place the patient supine and stabilize the object"], "answer": 0, "why": "The cheek is the one anatomic exception where an impaled object is removed, because it cannot be stabilized without threatening the airway and bleeding drains into the mouth. Leaving it in place with an airway already compromised risks aspiration, and supine positioning makes that worse.", "lesson": "emt-trauma-l07", "difficulty": 2 },
+    { "id": "emt-trauma-q027", "q": "Before and after applying any splint, what must be assessed and documented?", "choices": ["Blood pressure in both arms", "Pupil size and reactivity", "Lung sounds in all fields", "Distal circulation, motor function, and sensation"], "answer": 3, "why": "CMS confirms that the splint did not compromise the limb and documents a baseline if the limb worsens later. Blood pressure, pupils, and lung sounds are part of the overall assessment but say nothing about whether the splint is choking the extremity.", "lesson": "emt-trauma-l08", "difficulty": 1 },
+    { "id": "emt-trauma-q028", "q": "A patient fell from a roof and has pelvic pain, a heart rate of 128, and a blood pressure of 88/60. What is the most appropriate immediate action?", "choices": ["Apply a traction splint to both legs", "Apply a pelvic binder over the greater trochanters and transport rapidly", "Rock the pelvis to confirm instability before binding", "Log roll the patient repeatedly to inspect the back and buttocks"], "answer": 1, "why": "An unstable pelvis can hold 2 liters of blood, and closing the ring with a binder over the greater trochanters reduces that space. Rocking the pelvis and repeated rolling break clot, and traction splints are contraindicated when the pelvis is fractured.", "lesson": "emt-trauma-l08", "difficulty": 2 },
+    { "id": "emt-trauma-q029", "q": "A cyclist has an isolated closed deformity of the mid-thigh with a strong pedal pulse, no pelvic tenderness, and no knee injury. Which device is indicated?", "choices": ["Long board with the legs strapped together", "Vacuum splint only", "Traction splint", "Sling and swathe"], "answer": 2, "why": "An isolated closed mid-shaft femur fracture is the sole indication for a traction splint, which reduces the thigh compartment volume and pain. A long board does not realign the femur, a vacuum splint alone provides no traction, and sling and swathe is for the upper extremity.", "lesson": "emt-trauma-l08", "difficulty": 2 },
+    { "id": "emt-trauma-q030", "q": "A patient whose forearm was splinted 15 minutes ago now reports severe burning and numbness in the fingers, which are pale and cool. What is the best action?", "choices": ["Loosen the splint, recheck circulation, motor, and sensation, and reassess", "Leave the splint alone since removing it may displace the fracture", "Elevate the arm above the head to reduce swelling", "Apply an ice pack over the splint to control swelling"], "answer": 0, "why": "New pallor, coolness, and numbness distal to a splint means the splint or swelling is compressing circulation, and loosening it is both the diagnosis and the treatment. Leaving it risks limb loss, and elevation above heart level lowers perfusion pressure further.", "lesson": "emt-trauma-l08", "difficulty": 3 },
+    { "id": "emt-trauma-q031", "q": "Using the adult rule of nines, what percentage of body surface area does one entire leg represent?", "choices": ["9 percent", "13.5 percent", "14 percent", "18 percent"], "answer": 3, "why": "Each adult leg is 18 percent, front and back combined. Nine percent is an arm or the head, and 13.5 percent is the pediatric value for a leg in an infant, where the head takes a larger share.", "lesson": "emt-trauma-l09", "difficulty": 1 },
+    { "id": "emt-trauma-q032", "q": "A man spilled a dry industrial powder on his forearm and it is burning. What is the correct first step?", "choices": ["Flush immediately with copious water for 20 minutes", "Brush the dry powder off, then flush with copious water for 20 minutes", "Neutralize the chemical with a weak base before flushing", "Apply a dry sterile dressing and transport without flushing"], "answer": 1, "why": "Water activates dry agents such as lime, so the powder is brushed off first and then the site is flushed for at least 20 minutes. Neutralizing generates heat and a second burn, and a dressing over active chemical leaves it burning.", "lesson": "emt-trauma-l09", "difficulty": 2 },
+    { "id": "emt-trauma-q033", "q": "A 30-year-old has circumferential partial thickness burns around the entire right forearm from a grease fire. Why is this considered a critical burn?", "choices": ["Circumferential burns always involve full thickness tissue", "Grease burns are chemical rather than thermal", "Swelling within a circumferential burn can cut off circulation like a tourniquet", "Circumferential burns count double in the rule of nines"], "answer": 2, "why": "Burned tissue swells and a rigid circumferential eschar cannot expand, so pressure rises until it occludes blood flow distally. Circumferential burns are critical regardless of depth, grease is a thermal agent, and surface area is counted normally.", "lesson": "emt-trauma-l09", "difficulty": 2 },
+    { "id": "emt-trauma-q034", "q": "Firefighters hand you a man from a basement fire who is confused, with a headache, nausea, soot around his mouth, and an SpO2 of 100 percent. Your partner says his oxygenation is fine. What is the correct response?", "choices": ["Apply a non-rebreather at 15 lpm because the oximeter cannot detect carbon monoxide", "Withhold oxygen since the saturation is 100 percent", "Apply a nasal cannula at 2 lpm for comfort", "Treat the confusion as a head injury and restrict spinal motion"], "answer": 0, "why": "Carboxyhemoglobin is read by the pulse oximeter as though it were oxyhemoglobin, so a perfect reading in a fire victim is meaningless. High-flow oxygen shortens carbon monoxide's half-life dramatically, and a low-flow cannula will not do it.", "lesson": "emt-trauma-l09", "difficulty": 3 },
+    { "id": "emt-trauma-q035", "q": "Which patient meets an anatomic field triage criterion for the highest level of trauma care available?", "choices": ["A 62-year-old who fell from standing and has hip pain", "A driver whose airbag deployed with no complaints", "A patient with an isolated closed forearm fracture", "A patient with a flail chest after a side impact crash"], "answer": 3, "why": "Flail chest is on the anatomic criteria list along with penetrating torso injury, two proximal long bone fractures, pelvic fracture, and amputation proximal to the wrist or ankle. Age and a ground-level fall are special-patient criteria, and an isolated forearm fracture meets nothing.", "lesson": "emt-trauma-l10", "difficulty": 1 },
+    { "id": "emt-trauma-q036", "q": "A 32-week pregnant woman was in a crash and is supine on the stretcher with a blood pressure of 86/50. What should you do first?", "choices": ["Sit her fully upright to relieve pressure on the diaphragm", "Tilt her 15 to 30 degrees to the left or wedge the board", "Deliver oxygen by nasal cannula and recheck in 10 minutes", "Place her prone to protect the abdomen"], "answer": 1, "why": "After about 20 weeks the uterus compresses the vena cava when the patient is flat, cutting venous return and dropping the pressure. Left tilt relieves it immediately. Sitting up worsens brain perfusion, prone is unusable in trauma, and a cannula does not fix a mechanical obstruction.", "lesson": "emt-trauma-l10", "difficulty": 2 }
+  ],
+  "scenarios": [
+    {
+      "id": "emt-trauma-s01",
+      "title": "Dispatched: single vehicle into a guardrail, arterial bleeding",
+      "setting": "field",
+      "intro": "It is 2140 on a two-lane road. Dispatch reports a single car into a guardrail with one occupant and \"a lot of blood.\" State police are on scene with the roadway blocked and traffic stopped in both directions. Your ALS chase unit is 12 minutes out. The nearest hospital is a community ED 6 minutes away; the level I trauma center is 18 minutes away.\n\nThe car is upright, front end crushed inward, driver's door open. A trooper is holding a jacket against the driver's left thigh and the jacket is soaked through.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "The driver is a man in his thirties, awake, gripping the steering wheel and repeating that he is fine. There is a starred windshield and about `10 in` of intrusion at the driver's door. Bright red blood is pulsing out around the trooper's jacket every second or so. What do you do first?",
+          "vitals": { "hr": 118, "rr": 24, "spo2": 96 },
+          "choices": [
+            { "text": "Take over the bleeding control immediately and expose the thigh", "next": "s2", "feedback": "Correct. Exsanguinating hemorrhage comes before airway in a patient who is talking to you. X-A-B-C. You cannot manage what you cannot see, so the pant leg comes off or gets cut away.", "score": 1 },
+            { "text": "Apply a cervical collar and begin manual in-line stabilization", "next": "s2", "feedback": "The mechanism justifies spinal concern, but a pulsing arterial bleed empties the patient in minutes. The collar can wait ninety seconds; the femoral artery cannot.", "score": -1 },
+            { "text": "Get a full set of vitals and a SAMPLE history before touching the wound", "next": "s2", "feedback": "Numbers do not stop bleeding. Gather history while your hands are already on the wound, not instead of it.", "score": -1 },
+            { "text": "Ask the trooper to keep holding pressure while you bring the stretcher over", "next": "s2", "feedback": "Acceptable only if a second provider is simultaneously taking over the wound. A jacket already soaked through is not controlling anything, so someone has to look at it now.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "You cut the pant leg away. There is a `4 in` gash on the medial thigh with bright red blood spurting in time with his pulse. The trooper's jacket is saturated and there is a wide pool on the floorboard. What is your action?",
+          "choices": [
+            { "text": "Apply a tourniquet 2 to 3 inches above the wound, tighten until bleeding stops, and note the time", "next": "s3", "feedback": "Correct. A spurting arterial bleed in a limb is a tourniquet from the start; you do not climb the ladder step by step when the patient is visibly emptying. Tighten until the bleeding stops and the distal pulse is gone, and write the time.", "score": 1 },
+            { "text": "Hold firm direct pressure for 3 minutes and reassess", "next": "s3", "feedback": "Reasonable for most bleeding, and it is never wrong to have a hand on the wound. But an arterial thigh wound with an established pool has already declared itself, and three minutes of watching is three minutes of loss.", "score": 0 },
+            { "text": "Elevate the leg and apply pressure over the femoral artery in the groin", "next": "s3", "feedback": "Elevation and pressure points were removed from bleeding control because they delay the interventions that work and have never been shown to help.", "score": -1 },
+            { "text": "Apply a pressure dressing and load for transport", "next": "s3", "feedback": "A pressure dressing holds control that already exists; it does not create it. Wrapping an uncontrolled arterial bleed just hides it under gauze while it continues.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "The tourniquet is on at `2145` and the spurting has slowed to a steady ooze, but it has not stopped. The thigh is thick and muscular. He is now quieter and looks gray.",
+          "vitals": { "hr": 136, "bp": "92/78", "rr": 28, "spo2": 93 },
+          "choices": [
+            { "text": "Place a second tourniquet directly above the first and tighten it", "next": "s4", "feedback": "Correct. A heavy thigh often needs two tourniquets to compress the femoral artery against the femur. Tighten the second until the ooze stops, and note that time too.", "score": 1 },
+            { "text": "Loosen the first tourniquet and reposition it higher", "next": "s4", "feedback": "Never loosen a tourniquet in the field. Releasing it restarts the bleeding and washes out the clot you just bought. Add, do not move.", "score": -1 },
+            { "text": "Pack the wound with hemostatic gauze under the tourniquet", "next": "s4", "feedback": "Packing is the answer for junctional wounds you cannot tourniquet. Here you have a working tool that is simply not tight enough, so tighten or add before switching techniques.", "score": 0 },
+            { "text": "Assume the ooze is venous and move on to the rest of the assessment", "next": "s4", "feedback": "Continued bleeding through a tourniquet means it is not occluding arterial inflow, and blood is still leaving. This is how patients arrive with a tourniquet on and no pressure.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "The second tourniquet stops the bleeding. He is on the stretcher, pale, cool, and clammy, answering questions slowly. The patient compartment is cold and his shirt is soaked with blood. What is your package?",
+          "vitals": { "hr": 140, "bp": "86/64", "rr": 30, "spo2": 92, "gcs": 14 },
+          "choices": [
+            { "text": "Oxygen to keep SpO2 at 94 percent or better, cut away wet clothing, blankets on, heat the compartment, supine", "next": "s5", "feedback": "Correct. You have done the treatment that matters, which was stopping the bleeding. Now protect the clot: cold blood does not clot, and hypothermia is the one leg of the lethal triad you control.", "score": 1 },
+            { "text": "Raise his legs 12 inches in shock position and cover with a sheet", "next": "s5", "feedback": "Shock position has no proven benefit in trauma and is no longer recommended. A single sheet over wet bloody clothing will not keep a shocky patient warm.", "score": -1 },
+            { "text": "Give him water since he is asking for a drink", "next": "s5", "feedback": "He is thirsty because he is in shock, and he is very likely headed for an operating room. Nothing by mouth.", "score": -1 },
+            { "text": "Oxygen and blankets, but leave the bloody clothing in place to avoid moving him", "next": "s5", "feedback": "Partly right. Oxygen and blankets are correct, but wet clothing wicks heat away faster than blankets replace it, so it has to come off.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "You are ready to move. Total scene time so far is `9 minutes`. The community ED is `6 minutes` away; the level I trauma center is `18 minutes` away. ALS is still `5 minutes` out. Where do you go?",
+          "choices": [
+            { "text": "Level I trauma center, meeting ALS en route if the rendezvous does not delay you", "next": "end", "feedback": "Correct. He meets physiologic criteria with a systolic under 90, so he goes to the highest level of trauma care available. He needs blood and a surgeon, and the extra 12 minutes buys both.", "score": 1 },
+            { "text": "Community ED because it is closest and he is unstable", "next": "end", "feedback": "Understandable instinct, but a community ED will stabilize briefly and then transfer, and the transfer costs far more than 12 minutes. Field triage criteria exist precisely to prevent this detour.", "score": 0 },
+            { "text": "Wait on scene for ALS so he can get an IV before moving", "next": "end", "feedback": "Nothing ALS carries fixes this. He needs blood products and an operating room, and waiting adds to a scene time already past the platinum ten.", "score": -1 },
+            { "text": "Request a helicopter to the scene", "next": "end", "feedback": "With an 18-minute ground transport, the helicopter cannot be dispatched, land, package, and fly faster than you can drive. Air medical earns its place with long transports or inaccessible scenes.", "score": -1 }
+          ]
+        }
+      ],
+      "debrief": "The pattern: **bleeding first, everything else second**. A spurting limb wound goes straight to a tourniquet rather than up the ladder one rung at a time, and a thick thigh commonly needs two. Once the tourniquet is on, it does not come off in the field and the time is written down.\n\nNotice what the vitals did. His pressure was `92/78` while he was still compensating — a narrow pulse pressure with a heart rate of 136 is the tank draining, not a normal blood pressure. By the time the systolic read `86`, roughly a third of his volume was gone.\n\nAfter the bleeding stops, the treatment is warmth, oxygen, supine, and a trauma center. Hypothermia is the leg of the lethal triad you own."
+    },
+    {
+      "id": "emt-trauma-s02",
+      "title": "Dispatched: fall from a ladder, head injury",
+      "setting": "field",
+      "intro": "You are called to a home at 1510 for a man who fell while cleaning a gutter. His wife says the ladder slid out and he landed on the concrete driveway. She thinks the ladder was at the second-story gutter line, around `18 ft`. She heard him hit and came out to find him on his side.\n\nScene is safe, the ladder is down, and there is no blood pooling. The level II trauma center is `14 minutes` away; the local community hospital is `5 minutes`.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "He is a `58`-year-old man lying on his right side. His eyes are closed. When you say his name loudly, he opens his eyes and says \"what... what happened... what happened\" and repeats it. He squeezes your hand when asked. There is a lump over his left temple. His wife says he takes apixaban for atrial fibrillation.",
+          "vitals": { "hr": 92, "bp": "148/86", "rr": 18, "spo2": 96 },
+          "choices": [
+            { "text": "Score his GCS, protect the airway, and begin manual in-line stabilization", "next": "s2", "feedback": "Correct. GCS is your trend line, the airway is the treatment, and an 18-foot fall onto concrete plus repetitive questioning makes this a spine and brain patient from the first minute.", "score": 1 },
+            { "text": "Sit him up to help his breathing and get a history from him", "next": "s2", "feedback": "Sitting him up moves an unprotected spine after an 18-foot fall, and a man who cannot stop asking what happened cannot give you a history.", "score": -1 },
+            { "text": "Note that he is awake and talking, and focus on the lump over his temple", "next": "s2", "feedback": "Awake and talking is not the same as intact. Repetitive questioning is a real neurologic finding, and a temporal lump over an anticoagulated patient is the setup for an epidural bleed.", "score": 0 },
+            { "text": "Have the wife help you walk him to the stretcher since he can follow commands", "next": "s2", "feedback": "He meets none of the selective clearance criteria. He is not oriented, the mechanism is significant, and walking him risks moving an unstable spine.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "Score him. He opens his eyes when you call his name. He speaks in full sentences but cannot tell you the year or where he is, and keeps repeating the same question. He squeezes both of your hands on command. What is his GCS?",
+          "choices": [
+            { "text": "E3, V4, M6 for a total of 13", "next": "s3", "feedback": "Correct. Eyes to speech is 3, confused conversation is 4, and obeying commands is 6. Thirteen is your baseline number, and the number that matters is whether it moves.", "score": 1 },
+            { "text": "E4, V4, M6 for a total of 14", "next": "s3", "feedback": "Close, but he did not open his eyes until you spoke. Spontaneous eye opening is 4; opening to speech is 3.", "score": 0 },
+            { "text": "E3, V3, M6 for a total of 12", "next": "s3", "feedback": "Inappropriate words, V3, means isolated words that do not form conversation. He speaks in full sentences that are simply wrong, which is confused conversation, V4.", "score": 0 },
+            { "text": "E3, V5, M6 for a total of 14", "next": "s3", "feedback": "V5 requires being oriented. He does not know the year or where he is, so he cannot score 5.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "You need to move him. He has no midline spinal tenderness that you can elicit, but he is not oriented, cannot reliably answer, and has an obviously deforming left wrist injury that he winces at. What is the spinal plan?",
+          "choices": [
+            { "text": "Skip restriction, since he has no midline tenderness", "next": "s4", "feedback": "Selective clearance requires every criterion to be met. He fails on mental status, fails on reliability, and fails on a distracting injury, so the absence of tenderness proves nothing.", "score": -1 },
+            { "text": "Properly sized collar, log roll onto a scoop stretcher, then secure to the cot with torso first and head last", "next": "s4", "feedback": "Correct. He fails selective clearance three ways. A scoop or vacuum mattress restricts motion without the pressure injury and breathing restriction of a rigid board, and torso-first strapping keeps the head from levering.", "score": 1 },
+            { "text": "Collar plus full rigid long board with head blocks for the entire transport", "next": "s4", "feedback": "Restriction is right, but a rigid board for a 14-minute transport adds pain and pressure injury with no benefit. Use the board to move him, then get him onto padding.", "score": 0 },
+            { "text": "Collar only, and let him find a position of comfort on the cot", "next": "s4", "feedback": "A collar alone does not restrict the thoracic or lumbar spine, and a confused patient will move. He needs a device that moves him as one unit.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "Five minutes into transport he vomits without warning. He is secured to a scoop on the cot. What is your immediate action?",
+          "vitals": { "hr": 78, "bp": "168/84", "rr": 16, "spo2": 94, "gcs": 12 },
+          "choices": [
+            { "text": "Turn the entire secured device on its side as a unit and suction", "next": "s5", "feedback": "Correct. This is exactly why you strap so the whole assembly can be tipped. Vomiting even once after a head injury is a red flag, and his blood pressure is climbing while his pulse falls.", "score": 1 },
+            { "text": "Loosen the straps and roll him onto his side by hand", "next": "s5", "feedback": "Unstrapping mid-emesis costs you seconds you do not have and moves his spine in an uncontrolled way. The device turns as one piece for this exact reason.", "score": -1 },
+            { "text": "Suction the mouth while leaving him flat", "next": "s5", "feedback": "Suction is right and you should be doing it, but leaving a vomiting patient flat lets the rest run down the trachea. Tip the device first, then suction.", "score": 0 },
+            { "text": "Note the vomiting as a minor finding and continue to the community hospital", "next": "s5", "feedback": "A single episode of vomiting after head trauma is a rising-pressure sign, not a minor finding, and his vitals are trending toward Cushing's triad.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "Two minutes later his right pupil is `6 mm` and non-reactive, the left is `3 mm` and reactive, and his arms extend stiffly when you pinch his shoulder. He is no longer opening his eyes.",
+          "vitals": { "hr": 46, "bp": "212/92", "rr": 8, "spo2": 91, "gcs": 5 },
+          "choices": [
+            { "text": "Begin bag-valve-mask ventilation at 20 breaths per minute with high-flow oxygen", "next": "s6", "feedback": "Correct. A blown pupil, extensor posturing, a falling GCS, and Cushing's triad are active herniation. This is the one indication for controlled hyperventilation at 20 per minute, and you stop when the signs resolve.", "score": 1 },
+            { "text": "Ventilate at 10 to 12 per minute with high-flow oxygen", "next": "s6", "feedback": "That is the correct default for a head injury, and it is far better than nothing, but active herniation is the exception where 20 per minute is indicated.", "score": 0 },
+            { "text": "Apply a non-rebreather at 15 lpm and monitor", "next": "s6", "feedback": "He is breathing 8 times a minute. A mask cannot move air for a patient who is not moving enough himself, and his carbon dioxide is climbing, which swells the brain further.", "score": -1 },
+            { "text": "Hyperventilate at 30 breaths per minute to drop the pressure as fast as possible", "next": "s6", "feedback": "Too far. Driving carbon dioxide that low clamps cerebral vessels shut and starves the brain of the blood it is already short on. Twenty is the number.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s6",
+          "prompt": "You are `9 minutes` from the level II trauma center and `3 minutes` from the community hospital, which has a CT scanner but no neurosurgery. He is anticoagulated on apixaban. Where do you go and what do you call in?",
+          "choices": [
+            { "text": "Community hospital, because 3 minutes beats 9 minutes with a herniating patient", "next": "end", "feedback": "A scan without a neurosurgeon only documents the bleed. He needs an operating room, and the transfer out will cost far more than the 6 minutes you saved.", "score": -1 },
+            { "text": "Level II trauma center with an early alert naming herniation signs and the anticoagulant", "next": "end", "feedback": "Correct. He needs neurosurgery and reversal of his apixaban, and naming both on the radio gets the team and the reversal agent moving before you arrive.", "score": 1 },
+            { "text": "Level II trauma center, with a standard report given on arrival", "next": "end", "feedback": "Right destination, wasted notice. An early alert is the whole reason a trauma team is standing in the bay when the doors open.", "score": 0 },
+            { "text": "Divert to a landing zone and request a helicopter to a level I center", "next": "end", "feedback": "Setting up a landing zone for a patient who is 9 minutes from definitive care adds time he does not have. Air medical is for distance and inaccessibility, not for upgrading a nearby destination.", "score": -1 }
+          ]
+        }
+      ],
+      "debrief": "The pattern: **the head injury that kills declares itself over minutes, and the number that matters is the trend**. He started at `GCS 13` with repetitive questioning, moved to `12` with a single episode of vomiting, then to `5` with a blown pupil and posturing. No single snapshot was the finding; the slope was.\n\nCushing's triad appeared right on schedule — pressure climbing from `148` to `212`, pulse falling from `92` to `46`, and respirations becoming slow and irregular. That combination plus a dilated pupil is the only time you ventilate at `20/min`, and you stop when it resolves.\n\nTwo details do heavy work here. He failed selective spinal clearance three separate ways, so the absence of midline tenderness meant nothing. And apixaban turns a modest bleed into a large one, which is why the anticoagulant belongs in your radio report, not just your chart."
+    },
+    {
+      "id": "emt-trauma-s03",
+      "title": "Dispatched: house fire, one patient out",
+      "setting": "field",
+      "intro": "A working structure fire at 0340. Fire crews pulled an adult man out of a first-floor bedroom and walked him to you. The house is still burning and the scene is loud. Command says he was in the room roughly `6 minutes` before they reached him, and that the room was filled with smoke floor to ceiling.\n\nHe is standing next to your rig in what is left of a t-shirt and shorts. The nearest ED is `8 minutes` away. The regional burn center is `34 minutes` by ground.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "He is about `40`, coughing, and says \"I'm okay, just get me some water.\" His shirt is partly melted onto his chest. His right arm is red and blistered from shoulder to fingertips. The front of his chest and abdomen are blistered and weeping. His face is sooty and there is black material around both nostrils. He is still wearing a wedding band and a watch. What do you do first?",
+          "vitals": { "hr": 112, "rr": 24, "spo2": 99 },
+          "choices": [
+            { "text": "Stop the burning process, remove the watch and ring, and get him into the ambulance away from the heat", "next": "s2", "feedback": "Correct. Stopping the burn and removing constricting jewelry before swelling starts are both time-limited actions. In ten minutes that ring will not come off and the finger underneath will be at risk.", "score": 1 },
+            { "text": "Give him the water he is asking for while you assess", "next": "s2", "feedback": "Nothing by mouth. A burn this size is likely to need procedures and possibly an airway, and burn patients vomit readily.", "score": -1 },
+            { "text": "Peel the melted shirt fabric off his chest so you can see the burn", "next": "s2", "feedback": "Fabric stuck to skin is left alone and cut around. Pulling it off takes viable tissue with it and starts new bleeding.", "score": -1 },
+            { "text": "Apply cool wet sheets to the entire burned area to stop the pain", "next": "s2", "feedback": "Cooling is appropriate only for small burns, under about 10 percent, and only for 1 to 2 minutes. Wet sheets over a large burn drop the core temperature and worsen shock.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "In the ambulance you finish exposing him. The blistering covers the entire front of his chest and abdomen and the entire right arm circumferentially. His back, legs, and left arm are unburned. His face is sooty but the skin is only pink, without blisters. Using the rule of nines, what is his burn surface area?",
+          "choices": [
+            { "text": "About 18 percent", "next": "s3", "feedback": "That counts only the front torso. The entire right arm adds another 9 percent.", "score": 0 },
+            { "text": "About 27 percent", "next": "s3", "feedback": "Correct. Front of torso is 18 percent and a whole arm is 9 percent, for 27 percent. The reddened face is superficial, and superficial burns are not counted in surface area.", "score": 1 },
+            { "text": "About 36 percent", "next": "s3", "feedback": "That counts the entire torso front and back. His back is unburned, so only the anterior 18 percent counts.", "score": 0 },
+            { "text": "About 31 percent, including the reddened face", "next": "s3", "feedback": "Superficial burns, the red painful ones with no blisters, are excluded from the surface area estimate. Only partial and full thickness count.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "Name what makes this a critical burn. He now has a hoarse voice, is coughing up gray-black sputum, and his `SpO2` reads `99%` on room air. Your partner says his oxygenation looks fine.",
+          "vitals": { "hr": 124, "rr": 28, "spo2": 99 },
+          "choices": [
+            { "text": "It is not yet critical since the burns are partial thickness and under 30 percent", "next": "s4", "feedback": "Several criteria are already met independent of depth or size: a circumferential arm, suspected inhalation injury, and a fire in an enclosed space.", "score": -1 },
+            { "text": "Critical: suspected inhalation injury, circumferential arm burn, and 27 percent partial thickness in an enclosed-space fire", "next": "s4", "feedback": "Correct. Any one of those alone makes it critical. Soot at the nostrils, hoarseness, and carbonaceous sputum are the inhalation triad, and a circumferential burn will act as a tourniquet as it swells.", "score": 1 },
+            { "text": "Critical only because of the total surface area", "next": "s4", "feedback": "Partially right, but surface area is the least urgent of the three criteria he meets. The airway is what will kill him in the next hour.", "score": 0 },
+            { "text": "The 99 percent saturation is reassuring, so treat the burns and reassess", "next": "s4", "feedback": "Carbon monoxide binds hemoglobin 200 to 250 times more tightly than oxygen, and the pulse oximeter reads it as though it were oxygen. In a house fire, a perfect saturation is a trap.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "What oxygen and airway plan do you commit to for the ride?",
+          "choices": [
+            { "text": "Non-rebreather at 15 lpm, sit him up, keep suction and a BVM at hand, and monitor his voice", "next": "s5", "feedback": "Correct. High-flow oxygen shortens carbon monoxide's half-life from hours to well under an hour. Sitting up slows swelling, and a changing voice is your earliest warning that the airway is closing.", "score": 1 },
+            { "text": "Nasal cannula at 4 lpm since his saturation is already 99 percent", "next": "s5", "feedback": "The saturation is meaningless here, and low-flow oxygen does almost nothing for carbon monoxide. He needs the highest concentration you can deliver.", "score": -1 },
+            { "text": "No oxygen, but reassess the airway every 5 minutes", "next": "s5", "feedback": "Withholding oxygen from a fire victim on the strength of a pulse oximeter reading is the single most common error in this call.", "score": -1 },
+            { "text": "Non-rebreather at 15 lpm with the patient lying flat", "next": "s5", "feedback": "Oxygen is right. Lying flat worsens facial and airway swelling, so keep him upright unless something else forces him down.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "The burns need to be covered. The patient is shivering and the compartment is cold. He asks for something on his chest because it is burning.",
+          "vitals": { "hr": 126, "bp": "104/70", "rr": 28, "spo2": 100, "temp": 35.8 },
+          "choices": [
+            { "text": "Dry sterile dressings, gauze between the burned fingers, blankets over the top, and heat the compartment", "next": "s6", "feedback": "Correct. Burned skin has lost its ability to hold heat in, and his temperature is already `35.8 C`. Dry sterile covering plus aggressive warming is the whole plan.", "score": 1 },
+            { "text": "Burn gel dressings over the chest and arm to cool and soothe", "next": "s6", "feedback": "Gel dressings on 27 percent of a body will drive the core temperature down further in a patient who is already at 35.8 degrees. They are for small burns.", "score": -1 },
+            { "text": "Ice packs wrapped in towels over the worst blistering", "next": "s6", "feedback": "Never ice. It causes additional tissue injury at the burn margin and accelerates the hypothermia that is already developing.", "score": -1 },
+            { "text": "Dry sterile dressings and a single blanket, with the compartment left as is", "next": "s6", "feedback": "The dressings are right. One blanket in a cold compartment will not reverse a falling core temperature in a patient who has lost a quarter of his skin.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s6",
+          "prompt": "Time to choose a destination. The nearest ED is `8 minutes` away and has no burn unit. The regional burn center is `34 minutes` by ground and has a helipad; a helicopter could reach you in `12 minutes` and fly him in `10`. His voice is getting hoarser.",
+          "choices": [
+            { "text": "Ground to the nearest ED for immediate airway management, with an early burn alert and transfer arrangements", "next": "end", "feedback": "Correct for this patient. A threatened airway beats burn-specific care in priority, and 8 minutes to a team that can secure an airway is the safest path. Burn transfer happens after the airway is protected.", "score": 1 },
+            { "text": "Ground directly to the burn center, 34 minutes away", "next": "end", "feedback": "Correct destination for the burns, wrong call for this airway. A hoarsening voice means 34 minutes is a long time to gamble without the ability to intubate.", "score": 0 },
+            { "text": "Stage on scene and wait 12 minutes for the helicopter", "next": "end", "feedback": "Twenty-two minutes of waiting and loading, with a closing airway, in exchange for a destination you could reach by ground. Air medical does not fix an airway on the ground.", "score": -1 },
+            { "text": "Nearest ED, with report given on arrival", "next": "end", "feedback": "Right destination, no warning. Call ahead naming inhalation injury and 27 percent burns so the airway equipment and the burn transfer are being arranged while you drive.", "score": -1 }
+          ]
+        }
+      ],
+      "debrief": "The pattern: **in a fire victim, the airway outranks the burn**. The skin injury is what you can see and it is not what kills him tonight. Soot at the nostrils, a hoarse voice, and carbonaceous sputum after six minutes in a smoke-filled room predict an airway that swells shut over `30–60 minutes`.\n\nThe `SpO2` of `99%` was the deliberate trap. Carbon monoxide occupies hemoglobin and the pulse oximeter counts it as oxygen, so the number is meaningless in exactly the patients who need oxygen most. High-flow oxygen by non-rebreather, every time, on the story rather than the number.\n\nOn the arithmetic: anterior torso `18%` plus a whole arm `9%` equals `27%`, and the reddened face was superficial and therefore not counted. He met critical burn criteria three different ways — inhalation injury, a circumferential extremity burn, and surface area — and any single one of them would have been enough.\n\nLast, the two time-limited actions you can only do early: get the ring and watch off before the swelling, and start fighting hypothermia before the core temperature falls. Burned skin cannot hold heat, and a cold burn patient bleeds, clots, and heals worse."
+    }
+  ]
+}
