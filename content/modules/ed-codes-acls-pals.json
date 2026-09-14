@@ -1,0 +1,923 @@
+{
+  "schema": 1,
+  "id": "ed-codes-acls-pals",
+  "track": "edtech",
+  "title": "Codes: BLS, ACLS & PALS",
+  "short": "Codes",
+  "summary": "How a code actually runs in an emergency department: the BLS foundation, every ACLS and PALS algorithm with real doses and energies, the equipment, the roles, and exactly what the tech does at each moment.",
+  "lessons": [
+    {
+      "id": "ed-codes-acls-pals-l01",
+      "title": "BLS: the foundation every algorithm sits on",
+      "minutes": 7,
+      "body": "Everything in ACLS is decoration on top of two things: **compressions that generate blood flow** and **a shock delivered early**. Drugs have never been shown to improve survival to discharge with good neurologic function. Compression quality and defibrillation time have.\n\nThe mechanism is simple and worth holding onto. A compressed chest squeezes blood out of the heart and thorax. A fully recoiled chest lets blood return. Lean on the chest between compressions and you have built a pump with no filling phase, so depth and recoil matter as much as rate.\n\n## The numbers, by age\n\n| | Adult | Child (1 year to puberty) | Infant (under 1 year) |\n|---|---|---|---|\n| Depth | at least `2 in` / `5 cm`, not over `2.4 in` | about `2 in` / `5 cm`, or one third of chest depth | about `1.5 in` / `4 cm`, or one third |\n| Rate | `100-120/min` | `100-120/min` | `100-120/min` |\n| Hands | two hands, lower half of sternum | one or two hands | two fingers, or two thumbs encircling |\n| Ratio, one rescuer | `30:2` | `30:2` | `30:2` |\n| Ratio, two rescuers | `30:2` | `15:2` | `15:2` |\n| Pulse check | carotid | carotid or femoral | brachial |\n\nChildren and infants get the `15:2` ratio with two rescuers because pediatric arrest is usually a breathing problem that ended in a cardiac one, so ventilation matters more.\n\n## Rules that get graded\n\n- Pulse check takes **no more than `10 seconds`**. If you are not certain, start compressions.\n- Swap compressors every **`2 minutes`**, during the rhythm check, and do it in under `5 seconds`.\n- **Chest compression fraction** — the share of the code spent actually compressing — should be at least `60%`, and good teams hit `80%`.\n- Let the chest fully recoil. Leaning is the most common invisible error.\n- Rescue breathing with a pulse present: adults `1 breath every 6 seconds` (`10/min`), children and infants `1 breath every 2 to 3 seconds` (`20-30/min`).\n\n> **Key:** Every interruption costs pressure that takes several compressions to rebuild. Plan the pause before you take it — charge the defibrillator while compressions continue, know who is taking over, and have the pads already on.\n\n## Defibrillation in BLS\n\nAn AED analyzes and shocks; a manual defibrillator lets a trained provider choose. For a child under `8 years` or under about `25 kg`, use pediatric attenuator pads if the machine has them. If it does not, **use adult pads rather than no shock** — an imperfect shock beats an unshocked ventricular fibrillation.\n\n> **On shift:** In the department the first two minutes are almost entirely mechanical. Someone gets the backboard under the patient, someone puts pads on bare dry skin, someone starts compressions, and someone gets the monitor connected. Those four jobs are usually done by techs, and they set the ceiling on everything the physician can do next.",
+      "keyPoints": [
+        "Compression depth, rate 100-120/min, full recoil and minimal interruption drive survival more than any drug.",
+        "Adult depth is at least 2 inches; child about 2 inches or one third of chest depth; infant about 1.5 inches.",
+        "Two-rescuer ratio is 30:2 in adults but 15:2 in children and infants, because pediatric arrest is usually respiratory.",
+        "Pulse check no longer than 10 seconds; swap compressors every 2 minutes in under 5 seconds.",
+        "If pediatric attenuator pads are unavailable, use adult pads rather than withholding a shock."
+      ],
+      "checks": [
+        {
+          "q": "Two rescuers are performing CPR on a 4-year-old. What compression-to-ventilation ratio should they use?",
+          "choices": ["30:2", "15:2", "5:1", "Continuous compressions with no pause"],
+          "answer": 1,
+          "why": "Two-rescuer pediatric CPR uses 15:2 because pediatric arrest is usually hypoxic in origin and needs more ventilation. 30:2 is correct for a single rescuer or for adults, and continuous compressions apply only once an advanced airway is in place."
+        },
+        {
+          "q": "How long may a pulse check take before you commit to compressions?",
+          "choices": ["No more than 10 seconds", "Up to 30 seconds", "Until a definite pulse is felt", "No more than 3 seconds"],
+          "answer": 0,
+          "why": "Ten seconds is the ceiling, and uncertainty means start compressions. Waiting for certainty delays perfusion, and compressions on a patient who does have a pulse cause far less harm than the reverse."
+        },
+        {
+          "q": "Why does full chest recoil matter as much as compression depth?",
+          "choices": [
+            "It reduces rib fractures",
+            "It allows the defibrillator to read the rhythm",
+            "Recoil is the filling phase — without it blood cannot return to the heart to be pumped out",
+            "It keeps the compression rate within 100 to 120"
+          ],
+          "answer": 2,
+          "why": "Compression is the ejection phase and recoil is the filling phase; leaning eliminates venous return and the next compression pumps an empty chamber. Rib fractures and rhythm analysis are unrelated to recoil."
+        }
+      ]
+    },
+    {
+      "id": "ed-codes-acls-pals-l02",
+      "title": "The adult cardiac arrest algorithm",
+      "minutes": 9,
+      "body": "Every adult arrest splits at the first rhythm check into two paths. **Shockable** means ventricular fibrillation or pulseless ventricular tachycardia — a heart with electrical chaos that a shock can reset. **Non-shockable** means asystole or pulseless electrical activity, where there is nothing for a shock to reorganize and the only real treatment is finding the cause.\n\n## Shockable: VF and pulseless VT\n\n1. **CPR** while pads go on and IV or IO access is obtained.\n2. **Shock.** Biphasic `120 to 200 J`, whatever the manufacturer prints on the device; if unknown, use the maximum. Monophasic is `360 J`.\n3. **CPR for 2 minutes** immediately after the shock. Do not check a pulse — a heart that just converted is not yet ejecting.\n4. **Rhythm check.** Still shockable, shock again.\n5. **Epinephrine `1 mg` IV or IO**, repeated **every 3 to 5 minutes** for the rest of the code. In a shockable rhythm it is given after the second shock, so the early shocks are not delayed.\n6. CPR 2 minutes, consider an advanced airway and waveform capnography.\n7. **Shock**, then the antiarrhythmic: **amiodarone `300 mg` IV push**, with a second dose of **`150 mg`** if needed. Alternatively **lidocaine `1 to 1.5 mg/kg`**, then `0.5 to 0.75 mg/kg`.\n8. Keep cycling: shock, 2 minutes of CPR, rhythm check, drug on schedule.\n\nEnergy escalation is reasonable for a rhythm that refuses to convert — if the first shock was `150 J`, the next can be `200 J`.\n\n## Non-shockable: asystole and PEA\n\n1. **CPR.**\n2. **Epinephrine `1 mg` as early as possible**, then every 3 to 5 minutes. This is the one timing difference that matters: in a non-shockable rhythm earlier epinephrine is associated with better outcomes, so it goes in as soon as access exists.\n3. Rhythm check every 2 minutes.\n4. **Find and treat the cause.** In asystole and PEA the algorithm itself will not save the patient. The H's and T's will.\n\n> **Trap:** Asystole is never shocked. A flat line is not a rhythm a shock can organize, and the pause to deliver one costs compressions. If you see a near-flat line, confirm leads, gain and a second lead first — fine VF can hide as asystole.\n\n## What does not appear\n\nAtropine was removed from the arrest algorithm years ago — it has no role in asystole or PEA. Routine sodium bicarbonate and routine calcium are not given either; both are reserved for specific causes such as hyperkalemia or a tricyclic overdose.\n\n> **Key:** The rhythm check, the compressor swap and the shock all happen in the same brief pause. Plan them as one event: charge during compressions, stop, check rhythm, shock or not, resume with a fresh compressor. Target under `5 seconds` off the chest.\n\n> **On shift:** The tech usually owns the compression clock and the pads. Call the two-minute mark out loud before the leader asks for it, and be already charged when the rhythm check happens.",
+      "keyPoints": [
+        "Shockable means VF or pulseless VT; non-shockable means asystole or PEA.",
+        "Biphasic defibrillation is 120 to 200 J per the manufacturer; monophasic is 360 J.",
+        "Epinephrine 1 mg IV/IO every 3 to 5 minutes — as early as possible in asystole and PEA, after the second shock in shockable rhythms.",
+        "Amiodarone 300 mg then 150 mg, or lidocaine 1 to 1.5 mg/kg then 0.5 to 0.75 mg/kg, after a shock-refractory rhythm.",
+        "Resume compressions immediately after a shock; do not pause to check a pulse."
+      ],
+      "checks": [
+        {
+          "q": "Immediately after a shock is delivered for VF, what happens next?",
+          "choices": [
+            "Check a carotid pulse for up to 10 seconds",
+            "Resume compressions immediately for 2 minutes",
+            "Reanalyze the rhythm",
+            "Give epinephrine before touching the chest"
+          ],
+          "answer": 1,
+          "why": "A heart that has just converted is stunned and not yet ejecting, so a pulse check wastes perfusion time and usually finds nothing. Rhythm analysis waits until the end of the 2-minute cycle."
+        },
+        {
+          "q": "A patient is in asystole. What is the correct first drug and its timing?",
+          "choices": [
+            "Amiodarone 300 mg after the first rhythm check",
+            "Atropine 1 mg, repeated up to 3 mg",
+            "Epinephrine 1 mg as soon as access is available, repeated every 3 to 5 minutes",
+            "Sodium bicarbonate 1 mEq/kg"
+          ],
+          "answer": 2,
+          "why": "Early epinephrine is the priority in non-shockable arrest. Atropine was removed from the arrest algorithm, amiodarone treats shock-refractory VF or pulseless VT only, and bicarbonate is reserved for specific causes such as hyperkalemia or tricyclic overdose."
+        },
+        {
+          "q": "The monitor shows a nearly flat line. Before calling it asystole, what should be confirmed?",
+          "choices": [
+            "The lead connections, the gain setting, and the rhythm in a second lead",
+            "That two full cycles of epinephrine have been given",
+            "That the patient has been down more than 20 minutes",
+            "The end-tidal CO2 is above 40"
+          ],
+          "answer": 0,
+          "why": "Fine ventricular fibrillation can look flat with a loose lead or low gain, and it is shockable. Down time, drug cycles and capnography inform prognosis, not the identification of the rhythm on the screen."
+        }
+      ]
+    },
+    {
+      "id": "ed-codes-acls-pals-l03",
+      "title": "The H's and T's, and the arrests that are different",
+      "minutes": 9,
+      "body": "Pulseless electrical activity means the electrical system is firing normally and nothing is coming out. Something mechanical or metabolic is in the way. The H's and T's are the list of what that something can be, and each has a bedside clue and a specific fix.\n\n## The H's\n\n| Cause | Clue at the bedside | Fix |\n|---|---|---|\n| **Hypovolemia** | Bleeding, vomiting, diarrhea; flat neck veins; fast narrow-complex PEA | Fluids, and blood if it is hemorrhage |\n| **Hypoxia** | Airway problem, cyanosis, low saturation before arrest | Oxygenate, confirm tube placement, check both lungs are ventilating |\n| **Hydrogen ion** (acidosis) | Renal failure, diabetic ketoacidosis, long down time | Effective ventilation first; bicarbonate only in selected cases |\n| **Hypo- or hyperkalemia** | Dialysis patient; peaked T waves and a widening QRS | Calcium, bicarbonate, insulin with dextrose for high potassium |\n| **Hypothermia** | Cold exposure, cold skin, `J` (Osborn) waves | Active rewarming, prolonged resuscitation |\n\nMany teaching lists add **hypoglycemia**; check a glucose on every arrest regardless.\n\n## The T's\n\n| Cause | Clue at the bedside | Fix |\n|---|---|---|\n| **Tension pneumothorax** | One-sided absent breath sounds, very hard to bag, distended neck veins | Needle or finger decompression |\n| **Tamponade, cardiac** | Penetrating chest wound, distended neck veins, narrow-complex PEA, ultrasound effusion | Pericardiocentesis |\n| **Toxins** | Pill bottles, track marks, a bradycardic prearrest, known overdose | Antidote: naloxone, calcium or glucagon, bicarbonate, lipid emulsion |\n| **Thrombosis, pulmonary** | Sudden collapse, recent surgery or immobility, right-heart strain on ultrasound | Thrombolytics, ECMO |\n| **Thrombosis, coronary** | Chest pain before arrest, known coronary disease | Catheterization laboratory after ROSC |\n\n> **Key:** Fast narrow-complex PEA points to a volume or mechanical problem — hypovolemia, tamponade, tension pneumothorax, pulmonary embolism. Slow wide-complex PEA points to a metabolic or toxic one — hyperkalemia, acidosis, sodium-channel blocking drugs. The width and rate of the complex narrow the list before ultrasound touches the chest.\n\n## Arrests that break the pattern\n\n**Drowning** is a hypoxic arrest. Ventilation is the priority, so give rescue breaths early rather than starting compression-only.\n\n**Hypothermia** buys time. Resuscitate longer, handle the patient gently because a cold heart fibrillates easily, and below a core temperature of about `30 C` limit shocks and hold repeat drugs until rewarming begins. The saying is literal: not dead until warm and dead.\n\n**Pregnancy** past about `20 weeks` — a uterus at or above the navel — compresses the vena cava. Someone performs **continuous manual left uterine displacement**, pulling the uterus to the patient's left, for the entire resuscitation. If there is no ROSC, **resuscitative hysterotomy** is considered at `4 minutes` with delivery targeted by `5 minutes`.\n\n**Opioid arrest** still gets compressions and epinephrine first. Naloxone `0.4 to 2 mg` treats the breathing, not the arrest, and never replaces CPR.\n\n**Anaphylaxis** needs epinephrine `0.3 to 0.5 mg` intramuscular into the thigh, repeated every `5 to 15 minutes`, aggressive fluids, and an early airway before swelling closes it.\n\n**Traumatic arrest** is treated by fixing the cause: stop the bleeding, decompress both sides of the chest, give blood. Compressions on an empty heart accomplish little.\n\n> **On shift:** When the leader starts saying the H's and T's out loud, that is your cue to have the ultrasound, the chest tube tray, the glucometer and the blood cooler moving before anyone asks.",
+      "keyPoints": [
+        "PEA means normal electricity with no output — something mechanical or metabolic is blocking it.",
+        "Fast narrow-complex PEA suggests volume or obstruction; slow wide-complex PEA suggests toxic or metabolic causes.",
+        "The five H's are hypovolemia, hypoxia, hydrogen ion, hypo/hyperkalemia and hypothermia; add hypoglycemia by checking a sugar on everyone.",
+        "The five T's are tension pneumothorax, tamponade, toxins, pulmonary thrombosis and coronary thrombosis.",
+        "In pregnancy past 20 weeks, continuous manual left uterine displacement runs for the whole code; hysterotomy is considered at 4 minutes."
+      ],
+      "checks": [
+        {
+          "q": "A dialysis patient arrests. The monitor shows a slow, very wide complex with no pulse. Which cause moves to the top of the list?",
+          "choices": ["Hypovolemia", "Cardiac tamponade", "Hyperkalemia", "Pulmonary embolism"],
+          "answer": 2,
+          "why": "A missed dialysis session plus a slow wide complex is hyperkalemia until proven otherwise, treated with calcium, bicarbonate and insulin with dextrose. Hypovolemia, tamponade and embolism typically produce a fast narrow complex instead."
+        },
+        {
+          "q": "A 32-week pregnant patient is in cardiac arrest. What must be done throughout the resuscitation?",
+          "choices": [
+            "Tilt the entire backboard 30 degrees to the left",
+            "Continuous manual left uterine displacement by a dedicated team member",
+            "Place the hands higher on the sternum than usual",
+            "Withhold defibrillation until after delivery"
+          ],
+          "answer": 1,
+          "why": "Manual displacement relieves vena cava compression while keeping the chest flat for effective compressions. Tilting degrades compression quality, the hand-position change was removed from the guidelines, and defibrillation is safe and necessary in pregnancy."
+        },
+        {
+          "q": "A patient in opioid overdose is found pulseless. What comes first?",
+          "choices": [
+            "Naloxone 2 mg IN before anything else",
+            "Chest compressions and epinephrine per the arrest algorithm",
+            "Intubation before compressions",
+            "Waiting for the naloxone to take effect before starting CPR"
+          ],
+          "answer": 1,
+          "why": "Once there is no pulse, this is a cardiac arrest and the arrest algorithm governs. Naloxone reverses respiratory depression and can be given alongside, but it neither circulates blood nor substitutes for compressions."
+        }
+      ]
+    },
+    {
+      "id": "ed-codes-acls-pals-l04",
+      "title": "Airway, ventilation and capnography in a code",
+      "minutes": 8,
+      "body": "Ventilation during arrest is the easiest thing in the room to do badly, because doing it badly looks exactly like doing it well.\n\n## Before an advanced airway\n\nWith a bag-valve mask only, ventilation is interleaved with compressions at **`30:2`**. Two people run the bag: one holds the seal with both hands, one squeezes. A one-person seal leaks, and a leaking mask delivers nothing while looking busy.\n\nSqueeze over about **one second**, just until the chest visibly rises — roughly `500 to 600 mL` in an adult. An oral airway sized from the corner of the mouth to the angle of the jaw, or a nasal airway sized from nostril to earlobe, keeps the tongue off the back of the throat and makes the seal work.\n\n> **Trap:** Fast, hard bagging raises pressure inside the chest, which reduces venous return and drops the blood flow your compressions just generated. Hyperventilation during a code lowers survival. Slow down.\n\n## After an advanced airway\n\nOnce a tube or supraglottic airway is in, compressions no longer pause. **Compress continuously** and deliver **one breath every `6 seconds`**, which is `10 breaths per minute`. One person counts it; nobody bags to feel.\n\n## Waveform capnography\n\nEnd-tidal carbon dioxide (`ETCO2`) measures the CO2 in exhaled gas. For it to appear at the tube, blood has to carry CO2 from the tissues to the lungs, so in an arrest it is a **blood-flow monitor**, not just a tube check. It answers three questions at once.\n\n**Is the tube in the trachea?** A persistent waveform over several breaths confirms placement. Esophageal placement produces no sustained waveform. This is the single most reliable confirmation available.\n\n**Are the compressions any good?** A value **under `10 mmHg`** during CPR means blood flow is inadequate. That is an instruction: push harder, push faster, allow full recoil, or change the compressor. It is a quality meter you can read from across the room.\n\n**Has circulation returned?** A sudden jump to **above `35 to 40 mmHg`** means the heart started ejecting and dumped accumulated CO2 into the lungs. It usually appears before anyone can palpate a pulse, so it should be called out immediately and the rhythm checked.\n\n> **Key:** Persistently under `10 mmHg` after `20 minutes` of good CPR in an intubated patient predicts a very poor outcome — but it is one input to the leader's decision, never the sole reason to stop.\n\n## Oxygen\n\nDuring the arrest itself, oxygen is delivered at the highest available concentration. The moment there is a pulse, that changes: target a saturation of **`92 to 98%`** and titrate down, because too much oxygen after arrest causes its own injury.\n\n> **On shift:** Bagging is a common tech assignment. Get a metronome or a count going out loud — \"one one-thousand, two one-thousand\" — because adrenaline makes everyone bag twice as fast as they think they are.",
+      "keyPoints": [
+        "Before an advanced airway: 30:2, two-person bag-valve mask, squeeze over one second to visible chest rise.",
+        "After an advanced airway: continuous compressions with one breath every 6 seconds, 10 per minute.",
+        "Hyperventilation raises intrathoracic pressure, reduces venous return, and lowers survival.",
+        "Waveform capnography confirms tube placement, grades compression quality, and detects ROSC.",
+        "ETCO2 under 10 mmHg means fix the compressions; a sudden rise above 35 to 40 means check for a pulse."
+      ],
+      "checks": [
+        {
+          "q": "An endotracheal tube is placed during a code. What is the correct ventilation pattern?",
+          "choices": [
+            "Continue 30:2 with pauses for breaths",
+            "Continuous compressions with 1 breath every 6 seconds",
+            "Continuous compressions with 1 breath every 3 seconds",
+            "20 breaths per minute with paused compressions"
+          ],
+          "answer": 1,
+          "why": "An advanced airway removes the need to pause, so compressions run continuously at 10 breaths per minute. Faster rates hyperventilate the patient and reduce venous return; returning to 30:2 discards the benefit of the airway."
+        },
+        {
+          "q": "During CPR the end-tidal CO2 reads 7 mmHg. What does this tell the team?",
+          "choices": [
+            "The tube is in the esophagus and must be pulled",
+            "Circulation has returned",
+            "Compressions are not generating enough blood flow — improve depth, rate and recoil or swap the compressor",
+            "The patient is being hyperventilated"
+          ],
+          "answer": 2,
+          "why": "A low but present waveform reflects poor perfusion, not a misplaced tube — esophageal placement gives no sustained waveform at all. ROSC produces a sudden rise above 35 to 40, the opposite finding."
+        },
+        {
+          "q": "Why is hyperventilation harmful during cardiac arrest?",
+          "choices": [
+            "It washes out too much carbon dioxide and makes capnography unreadable",
+            "It raises pressure inside the chest, reducing venous return and the blood flow compressions generate",
+            "It causes gastric distension only",
+            "It has no measurable effect and is simply wasted effort"
+          ],
+          "answer": 1,
+          "why": "Each breath raises intrathoracic pressure; delivered too often, the chest never empties and blood cannot return to fill the heart. Gastric distension is a real but secondary problem, and the hemodynamic effect is well documented in survival data."
+        }
+      ]
+    },
+    {
+      "id": "ed-codes-acls-pals-l05",
+      "title": "Bradycardia with a pulse",
+      "minutes": 7,
+      "body": "A slow heart rate only matters if it is failing to deliver blood. Cardiac output is heart rate times stroke volume, so a rate of `42` in a conditioned athlete with a normal pressure is a finding, while the same rate in a patient who is grey and confused is an emergency.\n\n## The question that drives everything\n\nIs the bradycardia causing **symptoms**? The list is specific:\n\n- Hypotension\n- Acutely altered mental status\n- Signs of shock\n- Ischemic chest discomfort\n- Acute heart failure\n\nIf none of those is present, the answer is monitor, oxygen only if hypoxemic, IV access, a `12-lead` ECG, and look for the cause. If any is present, you move.\n\n## The sequence\n\n1. **Atropine `1 mg` IV bolus**, repeated every `3 to 5 minutes` to a **maximum total of `3 mg`**. Atropine blocks the vagus nerve's brake on the sinus node, so it works only when the vagus is the problem.\n2. If atropine fails or is inappropriate, go to either:\n   - **Transcutaneous pacing**, or\n   - **Dopamine `5 to 20 mcg/kg/min`**, or **epinephrine `2 to 10 mcg/min`** infusion.\n3. Consider expert consultation and **transvenous pacing** for anything durable.\n\n> **Trap:** Atropine is unlikely to help in a high-grade block — second degree type II or third degree — because the failure is below the AV node, where the vagus has no influence. It is also ineffective in a transplanted heart, which has no vagal supply. In these, go to pacing or an infusion rather than burning three minutes on repeat doses.\n\n## Transcutaneous pacing, step by step\n\nPacing delivers an electrical impulse through the chest wall to force the ventricle to contract. It hurts, a great deal, in anyone awake.\n\n1. Place pads, usually **anterior-posterior** for pacing. Skin dry, hair clipped if needed.\n2. Select **pacer** mode and set a rate, typically `60 to 80`.\n3. Increase the output in milliamps until you see **electrical capture** — a pacer spike followed by a wide QRS on every beat.\n4. Confirm **mechanical capture** by feeling a **femoral pulse** that matches the set rate. This is the step that gets skipped, and it is the only one that proves the patient is perfusing.\n5. Set the final output about `10%` above the capture threshold.\n6. **Sedate and treat pain.** Nobody tolerates pacing awake without it.\n\n> **Key:** Electrical capture on the screen without a matching pulse is not capture. Check the femoral pulse, not the carotid — chest wall muscle twitching from the pacer is easily mistaken for a carotid pulse.\n\n## Causes worth naming\n\nHypoxia is the first one to exclude, especially in children. Then drugs — beta blockers, calcium channel blockers, digoxin. Then an inferior wall myocardial infarction, which often produces bradycardia and heart block because the same artery supplies the AV node. Then hyperkalemia, hypothermia and raised intracranial pressure.\n\n> **On shift:** The tech's job in symptomatic bradycardia is usually pads on, monitor connected, `12-lead` obtained before the rate changes, and a hand on the femoral pulse once pacing starts.",
+      "keyPoints": [
+        "Treat bradycardia only when it causes hypotension, altered mental status, shock, ischemic chest pain or acute heart failure.",
+        "Atropine 1 mg IV every 3 to 5 minutes, maximum total 3 mg.",
+        "Atropine is unlikely to work in Mobitz II or third-degree block or a transplanted heart — go to pacing or an infusion.",
+        "Second-line is transcutaneous pacing, dopamine 5 to 20 mcg/kg/min, or epinephrine 2 to 10 mcg/min.",
+        "Confirm mechanical capture with a femoral pulse matching the set rate, and sedate the awake patient."
+      ],
+      "checks": [
+        {
+          "q": "A patient has a third-degree AV block at 34 with a systolic of 74 and confusion. Atropine 1 mg has no effect. What is the next step?",
+          "choices": [
+            "Repeat atropine every 3 minutes to the full 3 mg before anything else",
+            "Begin transcutaneous pacing or start an epinephrine or dopamine infusion",
+            "Give amiodarone 150 mg over 10 minutes",
+            "Defibrillate at 200 J"
+          ],
+          "answer": 1,
+          "why": "In complete heart block the conduction failure is below the AV node where atropine has no effect, so repeating it wastes minutes. Amiodarone would slow conduction further, and defibrillation treats VF or pulseless VT, not a perfusing bradycardia."
+        },
+        {
+          "q": "The pacer shows a spike and a wide QRS after each spike, but you cannot feel a femoral pulse. What has happened?",
+          "choices": [
+            "Electrical capture without mechanical capture — increase output and reassess",
+            "Full capture; the pulse is simply hard to feel",
+            "The pacer rate is set too high",
+            "The pads are reversed"
+          ],
+          "answer": 0,
+          "why": "A QRS after each spike proves the electricity captured, but only a matching pulse proves the muscle followed. Assuming the pulse is present risks leaving a patient unperfused while the monitor looks perfect."
+        },
+        {
+          "q": "Which finding means a bradycardia of 46 requires treatment rather than observation?",
+          "choices": [
+            "The patient is 78 years old",
+            "The rhythm is sinus bradycardia",
+            "The patient is newly confused with a systolic of 78",
+            "The patient takes metoprolol"
+          ],
+          "answer": 2,
+          "why": "The trigger is symptoms: hypotension, altered mental status, shock, ischemic chest pain or heart failure. Age, rhythm label and a beta blocker on the medication list explain a slow rate but do not by themselves require intervention."
+        }
+      ]
+    },
+    {
+      "id": "ed-codes-acls-pals-l06",
+      "title": "Tachycardia with a pulse",
+      "minutes": 8,
+      "body": "A fast heart has two problems. It pumps less per beat because the ventricle has no time to fill, and it consumes far more oxygen. Above about `150`, that combination starts to cause real harm.\n\n## First question: stable or unstable?\n\nThe same list as bradycardia decides it — hypotension, acutely altered mental status, signs of shock, ischemic chest discomfort, acute heart failure. **Unstable means electricity. Stable means time, a `12-lead`, and drugs.**\n\n## Unstable: synchronized cardioversion\n\nSynchronized means the shock is timed to land on the R wave, avoiding the vulnerable part of the T wave where an unsynchronized shock can induce ventricular fibrillation. You press **sync**, confirm markers are sitting on each R wave, then charge and shock.\n\n| Rhythm | Initial biphasic energy |\n|---|---|\n| Narrow and regular (SVT, atrial flutter) | `50 to 100 J` |\n| Narrow and irregular (atrial fibrillation) | `120 to 200 J` |\n| Wide and regular (monomorphic VT) | `100 J` |\n| Wide and irregular (polymorphic VT) | Treat as VF — **unsynchronized** defibrillation dose |\n\n> **Trap:** Polymorphic ventricular tachycardia is never synchronized. The machine cannot find consistent R waves, so it will simply not discharge while the patient deteriorates. Switch to unsynchronized and defibrillate.\n\nSedate the conscious patient before cardioverting whenever time allows.\n\n## Stable and narrow\n\n1. **Vagal maneuvers.** Bearing down, or a modified Valsalva where the patient blows into a syringe and is then laid flat with legs raised. Vagal stimulation slows AV node conduction and can break a reentry circuit.\n2. **Adenosine `6 mg` rapid IV push** into a proximal vein, immediately followed by a `20 mL` saline flush with the arm elevated. Its half-life is under `10 seconds`, so slow administration simply does not work.\n3. **Adenosine `12 mg`** if the first dose fails.\n4. Then a beta blocker or a calcium channel blocker, with expert consultation.\n\nAdenosine produces a few seconds of asystole followed by resumption. Warn the patient; it feels awful. Run a rhythm strip through it, because even when it does not convert the rhythm, the pause often reveals the underlying atrial activity.\n\n## Stable and wide\n\nA wide complex tachycardia is ventricular tachycardia until proven otherwise. Adenosine may be considered only if the rhythm is **regular and monomorphic**. Otherwise give an antiarrhythmic infusion and consult:\n\n- **Procainamide** `20 to 50 mg/min` until the rhythm converts, hypotension develops, the QRS widens by more than `50%`, or `17 mg/kg` is given\n- **Amiodarone** `150 mg` over `10 minutes`, repeatable\n- **Sotalol** `100 mg` (`1.5 mg/kg`) over `5 minutes`\n\n**Torsades de pointes** gets **magnesium sulfate `1 to 2 g` IV**.\n\n> **Key:** Never treat a wide complex tachycardia as SVT with aberrancy just because the patient looks well. Calcium channel blockers given to a patient in ventricular tachycardia can cause cardiovascular collapse.\n\n> **On shift:** Have the defibrillator at the bedside in sync mode, pads on, suction ready and the code cart outside the room before the first dose of adenosine goes in. About one patient in a hundred converts into something worse.",
+      "keyPoints": [
+        "Unstable tachycardia means synchronized cardioversion; stable means a 12-lead and drugs.",
+        "Energies: narrow regular 50 to 100 J, narrow irregular 120 to 200 J, wide regular 100 J.",
+        "Polymorphic wide tachycardia is defibrillated unsynchronized — the machine cannot sync to it.",
+        "Stable narrow: vagal maneuvers, then adenosine 6 mg then 12 mg, pushed fast with a 20 mL flush.",
+        "Stable wide: procainamide, amiodarone 150 mg over 10 minutes or sotalol; torsades gets magnesium 1 to 2 g."
+      ],
+      "checks": [
+        {
+          "q": "A patient in atrial fibrillation at 168 is hypotensive and confused. What is the correct initial energy?",
+          "choices": [
+            "50 J synchronized",
+            "120 to 200 J synchronized",
+            "200 J unsynchronized",
+            "360 J unsynchronized"
+          ],
+          "answer": 1,
+          "why": "Atrial fibrillation is narrow and irregular, which takes 120 to 200 J synchronized. 50 J is the narrow regular dose and is likely to fail here, and unsynchronized energy risks inducing ventricular fibrillation in a perfusing rhythm."
+        },
+        {
+          "q": "Why must adenosine be given as a rapid push with an immediate 20 mL flush?",
+          "choices": [
+            "To reduce the burning sensation at the IV site",
+            "Because its half-life is under 10 seconds, so a slow push is metabolized before it reaches the heart",
+            "To prevent extravasation",
+            "Because it must be diluted before entering the circulation"
+          ],
+          "answer": 1,
+          "why": "Adenosine is cleared almost instantly by red cells and endothelium, so only a bolus that arrives as a bolus will block the AV node. Comfort, extravasation and dilution are not the reason the technique is prescribed this way."
+        },
+        {
+          "q": "A stable patient has a wide complex tachycardia at 170 and a normal blood pressure. Which action is dangerous?",
+          "choices": [
+            "Obtaining a 12-lead ECG",
+            "Giving a calcium channel blocker on the assumption it is SVT with aberrancy",
+            "Starting an amiodarone 150 mg infusion over 10 minutes",
+            "Consulting cardiology"
+          ],
+          "answer": 1,
+          "why": "A calcium channel blocker given to true ventricular tachycardia can cause collapse, and wide complex tachycardia is VT until proven otherwise. A 12-lead, an antiarrhythmic infusion and consultation are all appropriate."
+        }
+      ]
+    },
+    {
+      "id": "ed-codes-acls-pals-l07",
+      "title": "After ROSC: post-cardiac-arrest care",
+      "minutes": 7,
+      "body": "Getting a pulse back is the halfway point. The brain and heart have just been starved and then suddenly reperfused, and the next hour determines whether the patient leaves the hospital able to think.\n\n## Breathing and oxygen\n\nThe instinct is to keep the oxygen at maximum. That is wrong once there is a pulse: excess oxygen generates free radicals that injure the already-damaged brain.\n\n- Target **`SpO2 92 to 98%`** and titrate the oxygen down to reach it.\n- Target a carbon dioxide level in the normal range, roughly **`PaCO2 35 to 45 mmHg`**. Do not hyperventilate to drive it lower.\n- Keep waveform capnography on continuously; a fall signals re-arrest before the pulse disappears.\n\n## Blood pressure\n\nA re-perfusing brain has lost its ability to regulate its own blood flow, so it takes whatever pressure the body provides.\n\n- Avoid and immediately correct **hypotension**: keep the systolic at or above **`90 mmHg`** and the mean arterial pressure at or above **`65 mmHg`**.\n- Give `1 to 2 L` of isotonic crystalloid if volume is needed.\n- Start a vasopressor if it is not: **epinephrine `2 to 10 mcg/min`**, **norepinephrine `0.1 to 0.5 mcg/kg/min`**, or **dopamine `5 to 20 mcg/kg/min`**.\n\n> **Key:** A single episode of hypotension after arrest is independently associated with worse survival and worse neurologic outcome. The pressure is not something to watch; it is something to fix within minutes.\n\n## The 12-lead\n\nGet a **`12-lead` ECG as soon as possible after ROSC**. A large share of adult arrests are caused by a coronary occlusion, and the ECG is what routes the patient to the catheterization laboratory. A STEMI after arrest goes to the cath lab regardless of whether the patient is awake; so does a strong clinical suspicion of coronary cause even with a non-diagnostic ECG.\n\n## Does the patient follow commands?\n\nThis single question splits the pathway.\n\n**Yes** — continue monitoring, treat the cause, admit to critical care.\n\n**No** — the patient is a candidate for **targeted temperature management**. The team selects and maintains a constant target temperature somewhere between **`32 C` and `37.5 C`** for at least **`24 hours`**, then prevents fever afterwards. What matters is avoiding fever and controlling the temperature deliberately, not the specific number chosen.\n\n## Everything else\n\nCheck a glucose and treat hypoglycemia. Obtain a head CT if the cause is unclear or a neurologic event is suspected. Arrange continuous EEG if the patient is comatose, because seizures after arrest are common and often invisible. Treat the underlying cause — the H or T that started this.\n\n> **Trap:** Neurologic prognosis cannot be determined in the first hours. Sedation, paralytics and hypothermia all suppress the exam. Prognostication is deferred, usually to at least `72 hours` after normothermia.\n\n> **On shift:** ROSC is the busiest ten minutes of the whole event for a tech. `12-lead`, repeat vital signs every few minutes, blood work, a Foley if temperature management is coming, cooling equipment, and the transport monitor for the cath lab or the ICU.",
+      "keyPoints": [
+        "After ROSC, titrate oxygen to SpO2 92 to 98% and keep PaCO2 around 35 to 45 — avoid hyperoxia and hyperventilation.",
+        "Keep systolic at or above 90 and MAP at or above 65; a single hypotensive episode worsens outcome.",
+        "Obtain a 12-lead immediately; STEMI or strong coronary suspicion routes the patient to the cath lab.",
+        "A patient who does not follow commands is a candidate for targeted temperature management, 32 to 37.5 C for at least 24 hours.",
+        "Do not prognosticate early; sedation, paralysis and cooling all suppress the neurologic exam."
+      ],
+      "checks": [
+        {
+          "q": "Immediately after ROSC the saturation reads 100% on 15 L/min by bag. What should happen?",
+          "choices": [
+            "Maintain 100% oxygen for at least an hour",
+            "Titrate the oxygen down to hold SpO2 between 92 and 98%",
+            "Switch to room air immediately",
+            "Increase ventilation rate to lower the carbon dioxide"
+          ],
+          "answer": 1,
+          "why": "Hyperoxia produces free radical injury in reperfused tissue, so oxygen is titrated rather than maximized. Abruptly removing it risks hypoxia, and deliberate hyperventilation reduces cerebral blood flow."
+        },
+        {
+          "q": "A post-arrest patient has a blood pressure of 78/44. What is the priority?",
+          "choices": [
+            "Restore perfusion now with fluid and a vasopressor targeting SBP 90 or above and MAP 65 or above",
+            "Observe; some hypotension is expected after arrest",
+            "Begin cooling first, then address the pressure",
+            "Repeat the blood pressure in 15 minutes"
+          ],
+          "answer": 0,
+          "why": "Post-arrest hypotension independently worsens survival and neurologic outcome and is corrected within minutes. Cooling and repeat measurement both delay the one intervention that changes outcome."
+        },
+        {
+          "q": "Which patient is a candidate for targeted temperature management after ROSC?",
+          "choices": [
+            "Any patient who required more than one shock",
+            "A patient who is awake and answering questions",
+            "A comatose patient who does not follow commands",
+            "Only patients with a STEMI on the 12-lead"
+          ],
+          "answer": 2,
+          "why": "The gate is failure to follow commands, which identifies ongoing brain injury. An awake patient has already demonstrated cortical function, and shock count and ECG findings define other pathways, not this one."
+        }
+      ]
+    },
+    {
+      "id": "ed-codes-acls-pals-l08",
+      "title": "The code team: roles, communication and how it ends",
+      "minutes": 8,
+      "body": "A resuscitation with eight people and no structure is worse than one with four and a plan. Codes fail on communication far more often than on knowledge.\n\n## The roles\n\n| Role | Owns | What a tech usually does here |\n|---|---|---|\n| **Team leader** | The algorithm, the decisions, the clock | Report findings to the leader by name, never to the room |\n| **Compressor** | Depth, rate, recoil, fraction | Very often the tech; rotate every `2 minutes` |\n| **Airway** | Bag-mask, suction, tube assist, capnography | Second set of hands on the mask seal |\n| **IV / IO and drugs** | Access, drawing and pushing, flushes | Open the IO kit, hold the limb, hang the bag |\n| **Monitor / defibrillator** | Pads, rhythm display, charging, shocking | Often the tech: pads on, charge on request |\n| **Recorder / timer** | The written record, the `2-minute` and drug intervals | Call time out loud even when not assigned |\n| **Runner** | Blood bank, pharmacy, lab, extra equipment | Frequently the tech |\n| **Family liaison** | Staying with the family, explaining, escorting | Know where the family is and who has them |\n\nSmall departments collapse several roles into one person. That is fine, as long as everyone knows which ones they hold.\n\n## Closed-loop communication\n\nAn order is not given until it has completed a loop of three parts.\n\n1. The leader directs it **to a named person**: \"Maria, one milligram of epinephrine IV.\"\n2. That person **repeats it back**: \"One milligram epinephrine IV.\"\n3. That person **reports completion with a time**: \"Epi is in, one milligram, at 10:42.\"\n\nOrders released into the air — \"can we get some epi?\" — are the reason drugs get given twice or not at all. If you receive an order, say it back. If you hear an order with no name attached and nobody moves, claim it out loud.\n\n> **Key:** Speak up about anything you see, in a short factual sentence directed at the leader. \"Leader, we are at two minutes.\" \"Leader, capnography is eight.\" \"Leader, I have no femoral pulse with pacing.\" You do not need a diagnosis to report a fact.\n\n## When it stops\n\nThe decision belongs to the team leader, informed by: total down time and whether the arrest was witnessed, whether bystander CPR was given, the initial rhythm, the presence of a reversible cause still being treated, persistent **`ETCO2` under `10 mmHg`** after `20 minutes` of good CPR in an intubated patient, and cardiac standstill on ultrasound.\n\nHypothermia, drowning, poisoning, and pregnancy all justify pushing much longer than usual. A cold patient is not dead until warm and dead.\n\nBefore stopping, most leaders will ask the room whether anyone has another idea. Answer if you have one.\n\n## Family presence\n\nOffering family the option to be present during resuscitation is supported by the guidelines, and families who witness a resuscitation generally report less anxiety and a better bereavement course. It requires one thing: a dedicated staff member whose only job is to stay with them, explain what is happening in plain language, and take them out if needed.\n\n> **On shift:** After the code ends, expect a short debrief — what went well, what to improve, one or two concrete changes. Say what you saw. The delayed drawer, the pads that would not stick, the missing backboard are real findings, and the tech is usually the only person who noticed them.",
+      "keyPoints": [
+        "Named roles prevent duplicated and dropped tasks; small teams combine roles but must still name them.",
+        "Closed-loop communication is order to a named person, repeat-back, and completion reported with a time.",
+        "Report facts to the leader by name — you do not need a diagnosis to call out what you see.",
+        "Termination weighs down time, witnessed status, initial rhythm, reversible causes, persistent low ETCO2 and ultrasound findings.",
+        "Family presence is supported when one staff member is assigned solely to stay with them."
+      ],
+      "checks": [
+        {
+          "q": "Which statement is an example of closed-loop communication?",
+          "choices": [
+            "\"Can somebody get the epi ready?\"",
+            "\"Epinephrine, please.\"",
+            "\"Sam, one milligram epinephrine IV.\" — \"One milligram epinephrine IV.\" — \"Epi is in at 10:42.\"",
+            "\"I think it's about time for another round of drugs.\""
+          ],
+          "answer": 2,
+          "why": "The loop needs a named recipient, a repeat-back and a completion report with a time. Unaddressed requests are the classic cause of a drug given twice or not at all."
+        },
+        {
+          "q": "You notice the compressor has been going for nearly three minutes and looks exhausted. What should you do?",
+          "choices": [
+            "Wait until the leader calls for a change",
+            "State it to the leader directly: \"Leader, we are past two minutes, I'll take over at the next rhythm check\"",
+            "Tap the compressor out immediately mid-cycle",
+            "Note it for the debrief afterward"
+          ],
+          "answer": 1,
+          "why": "Compression quality falls measurably after about two minutes, and any team member is expected to raise it. Swapping mid-cycle adds an unplanned interruption, and saving it for the debrief does not help this patient."
+        },
+        {
+          "q": "What is required before family are offered the option to be present during a resuscitation?",
+          "choices": [
+            "Written consent from the family",
+            "A staff member assigned solely to stay with them, explain events, and escort them out if needed",
+            "Permission from hospital administration",
+            "That the patient already has a pulse"
+          ],
+          "answer": 1,
+          "why": "The evidence supporting family presence depends on a dedicated support person; without one, the family is unsupported and the team is distracted. Consent and administrative approval are not prerequisites."
+        }
+      ]
+    },
+    {
+      "id": "ed-codes-acls-pals-l09",
+      "title": "The crash cart, the defibrillator and IO access",
+      "minutes": 8,
+      "body": "Codes are lost to equipment more often than anyone admits. Pads on wet skin, a cart nobody restocked, a defibrillator still in sync mode from the last patient.\n\n## Pad placement\n\n**Anterolateral** is standard: one pad on the right upper chest just below the collarbone, the other on the left side at about the fifth intercostal space in the mid-axillary line — under the armpit, not on the breast. The current has to cross the heart, so a pad placed too high and medial on the left wastes the shock.\n\n**Anterior-posterior** — one on the chest, one between the shoulder blades — is preferred for pacing, for cardioversion of atrial fibrillation, and for infants.\n\nThe rules that make them work:\n\n- Skin **dry**. Wipe sweat and water off, and move the patient off a wet surface.\n- Clip thick hair rather than shaving; trapped air means arcing and a burn.\n- **Remove medication patches** and wipe the skin — a nitroglycerin patch can arc.\n- Stay at least **`8 cm`** (about `3 inches`) away from a pacemaker or implanted defibrillator.\n\n## Charging, clearing and shocking\n\nCharge the defibrillator **while compressions continue**. Then pause, check the rhythm, and shock. The gap between stopping compressions and delivering the shock — the perishock pause — should be **under `5 seconds`**, and every second of it costs survival.\n\nThe clear sequence is said out loud and checked visually: \"**I'm clear, you're clear, oxygen clear, everybody clear**,\" with a look down the length of the patient and the bed. Oxygen flowing across the chest is a fire risk; the bag stays attached to the tube but flowing oxygen is directed away.\n\n## Sync versus unsync\n\n**Unsynchronized** delivers the shock the instant you press it — for VF and pulseless VT.\n\n**Synchronized** waits for an R wave — for unstable tachycardias with a pulse. Two things trip people up. You must see **sync markers on each R wave** before charging, or the device will not fire. And on most machines sync **turns itself off after each discharge**, so a second cardioversion requires pressing sync again.\n\n## Pacing setup\n\nSelect pacer mode, set the rate at `60 to 80`, and raise the milliamps until every spike is followed by a wide QRS. Then confirm a **femoral pulse** at the set rate, and set the output about `10%` above threshold. Sedate the awake patient.\n\n## The cart\n\nDrawer layout varies by hospital, but the pattern is consistent: airway equipment near the top, IV and fluids next, medications in a locked or sealed drawer, procedure trays lower, the defibrillator on top with pads and a backboard on the side. The cart is sealed with a numbered breakaway lock, and it is checked on a schedule — the defibrillator self-test daily.\n\n> **Trap:** The most common crash cart failure is a broken seal from a previous partial use. If the lock number does not match the log, treat the cart as unverified and check the contents.\n\n## Intraosseous access\n\nWhen a vein cannot be found fast, a needle driven into the marrow gives a non-collapsible route that accepts **anything that can go IV**.\n\n- **Sites:** proximal tibia, proximal humerus, distal tibia. Distal femur is used in small children. The humerus gives the fastest flow and the quickest drug delivery but dislodges more easily with arm movement.\n- **Needles:** `15 mm` pink for `3 to 39 kg`, `25 mm` blue for `40 kg` and up, `45 mm` yellow for the humerus or heavy tissue.\n- After insertion, **flush** — `10 mL` of saline in an adult, `2 to 5 mL` in a child — to open the marrow space. Fluids will not run without a pressure bag.\n- **Do not use** a bone that is fractured, has had an IO in the last `48 hours`, has infection over the site, or carries a prosthesis.\n\n> **On shift:** Learn your department's cart by opening it during a quiet shift. Knowing which drawer holds the `10 mL` flushes is worth more at 3 a.m. than remembering an algorithm.",
+      "keyPoints": [
+        "Anterolateral pads: right upper chest and left mid-axillary line at the fifth intercostal space; AP for pacing, AF cardioversion and infants.",
+        "Dry the skin, clip hair, remove medication patches, stay 8 cm from an implanted device.",
+        "Charge during compressions; keep the perishock pause under 5 seconds; call the clear sequence including oxygen.",
+        "Sync mode needs visible markers on each R wave and usually switches itself off after every discharge.",
+        "IO sites are proximal tibia, proximal humerus and distal tibia; flush 10 mL in adults and use a pressure bag for fluids."
+      ],
+      "checks": [
+        {
+          "q": "Where do anterolateral defibrillation pads belong?",
+          "choices": [
+            "Both pads on the front of the chest, side by side over the sternum",
+            "Right upper chest below the clavicle, and left mid-axillary line at about the fifth intercostal space",
+            "One over the sternum and one over the left shoulder",
+            "Both below the costal margin"
+          ],
+          "answer": 1,
+          "why": "The current must cross the heart, which requires the pads to bracket it. Side-by-side placement on the sternum or high on the shoulder sends current across the chest wall rather than through the myocardium."
+        },
+        {
+          "q": "You cardiovert a patient once and prepare for a second attempt. What must you check?",
+          "choices": [
+            "That sync is still engaged — most machines turn it off after each discharge",
+            "That the pads have been replaced",
+            "That the energy is doubled automatically",
+            "Nothing; the settings persist"
+          ],
+          "answer": 0,
+          "why": "Most defibrillators revert to unsynchronized after a synchronized discharge, so a second shock could land on a T wave and induce VF. Pads are reusable for consecutive shocks, and energy escalation is a manual decision."
+        },
+        {
+          "q": "An IO needle is placed in the proximal tibia and blood returns, but fluid will not run. What is the most likely reason?",
+          "choices": [
+            "The needle is in the wrong bone",
+            "The marrow space was not flushed and no pressure bag is being used",
+            "IO access cannot accept fluids, only medications",
+            "The needle is too long"
+          ],
+          "answer": 1,
+          "why": "Marrow resists gravity flow, so a flush opens the space and a pressure bag is required to run fluid. IO access accepts anything that can be given IV, and blood return already confirms the needle is seated correctly."
+        }
+      ]
+    },
+    {
+      "id": "ed-codes-acls-pals-l10",
+      "title": "PALS: the pediatric code and the newborn",
+      "minutes": 9,
+      "body": "Adults arrest because their hearts fail. Children arrest because their **breathing** fails and their heart follows it down. That single difference reorders everything: the pediatric emergency is recognized and fixed before it becomes an arrest, because by the time a child is pulseless the outcome is already poor.\n\n## Recognition first\n\nThe **pediatric assessment triangle** is a from-the-doorway impression with three sides: **appearance** (tone, interactiveness, consolability, gaze, cry), **work of breathing** (retractions, flaring, noises, position), and **circulation to skin** (pale, mottled, blue).\n\n**Respiratory distress** is a child working hard and succeeding: fast rate, retractions, flaring, but alert and maintaining saturation. **Respiratory failure** is a child who is no longer succeeding: decreasing responsiveness, a slowing respiratory rate, poor tone, falling saturation, and — the ominous one — **bradycardia**. A slow heart rate in a sick child means hypoxia until proven otherwise.\n\n**Compensated shock** shows tachycardia, delayed capillary refill and cool extremities with a **normal blood pressure**. **Hypotensive shock** is the same child after the compensation fails, and it is late.\n\n## The pediatric arrest algorithm\n\nSame structure as the adult, different numbers.\n\n- **Defibrillation:** first shock **`2 J/kg`**, second **`4 J/kg`**, subsequent shocks `4 J/kg` or more, up to `10 J/kg` or the adult dose.\n- **Epinephrine `0.01 mg/kg`** IV or IO — that is `0.1 mL/kg` of the `0.1 mg/mL` concentration — every `3 to 5 minutes`, maximum single dose `1 mg`.\n- **Amiodarone `5 mg/kg`** for shock-refractory VF or pulseless VT, repeatable up to two more times, or **lidocaine `1 mg/kg`**.\n- CPR ratio `15:2` with two rescuers; continuous compressions with a breath every `2 to 3 seconds` once an advanced airway is in.\n\n## Bradycardia with poor perfusion\n\nThis is the rule with no adult equivalent. If the heart rate is **under `60`** with poor perfusion **despite adequate oxygenation and ventilation**, **start CPR**. A child's cardiac output depends heavily on rate, so a rate of `50` is functionally an arrest.\n\nGive **epinephrine `0.01 mg/kg`**. **Atropine `0.02 mg/kg`** (minimum `0.1 mg`, maximum `0.5 mg`) is used only when increased vagal tone or primary AV block is the cause. Oxygen and ventilation come first, always.\n\n## SVT\n\nSuspect it above roughly **`220`** in an infant and **`180`** in a child, with a rate that does not vary with activity and no P waves visible.\n\n- Stable: vagal maneuvers — ice to the face in an infant — then **adenosine `0.1 mg/kg`** (maximum `6 mg`), then **`0.2 mg/kg`** (maximum `12 mg`).\n- Unstable: **synchronized cardioversion `0.5 to 1 J/kg`**, then `2 J/kg`.\n\n## Fluids and the tape\n\nBoluses are **`20 mL/kg`** of isotonic crystalloid, reassessed between each. Use `10 mL/kg` in neonates and when cardiac dysfunction or diabetic ketoacidosis is suspected. A **length-based resuscitation tape** gives weight, drug doses, tube sizes and joules from a color band — lay it alongside the child heel to head at the start, not after the doses are needed.\n\n## The newborn\n\nNeonatal resuscitation is its own algorithm. Warm, dry, stimulate and position the airway. If the newborn is apneic, gasping, or has a heart rate **under `100`**, begin positive-pressure ventilation within the **first `60 seconds`** at `40 to 60` breaths per minute. If the heart rate stays **under `60`** after `30 seconds` of effective ventilation, add compressions at a **`3:1`** ratio — `90` compressions and `30` breaths per minute. Start term newborns on room air and titrate to preductal saturation targets measured on the **right hand**.\n\n> **Key:** In pediatrics, ventilation is the treatment. Oxygenate and ventilate before you reach for a drug, a shock, or a pacer.\n\n> **On shift:** Pull the tape and the pediatric cart at the first notification, not at the door. Everything downstream is weight-based, and the weight is the slowest thing to obtain.",
+      "keyPoints": [
+        "Pediatric arrest is usually the end of respiratory failure, so recognition and ventilation come before everything else.",
+        "Defibrillation is 2 J/kg then 4 J/kg; epinephrine is 0.01 mg/kg every 3 to 5 minutes; amiodarone is 5 mg/kg.",
+        "Heart rate under 60 with poor perfusion despite oxygenation and ventilation means start CPR.",
+        "SVT: adenosine 0.1 mg/kg then 0.2 mg/kg; unstable gets synchronized cardioversion at 0.5 to 1 J/kg then 2 J/kg.",
+        "Newborn: PPV within the first 60 seconds for HR under 100; add 3:1 compressions if HR stays under 60 after 30 seconds of effective ventilation."
+      ],
+      "checks": [
+        {
+          "q": "An 8 kg infant is in VF. What energy is used for the first shock?",
+          "choices": ["8 J", "16 J", "32 J", "50 J"],
+          "answer": 1,
+          "why": "The first pediatric shock is 2 J/kg, so 2 x 8 = 16 J. 32 J is 4 J/kg, which is the second shock, and 50 J is an adult cardioversion energy."
+        },
+        {
+          "q": "A 3-year-old has a heart rate of 48 with mottled skin and a delayed capillary refill despite effective bag-mask ventilation with oxygen. What now?",
+          "choices": [
+            "Continue ventilation only and reassess in 2 minutes",
+            "Give atropine 0.02 mg/kg first",
+            "Start chest compressions and give epinephrine 0.01 mg/kg",
+            "Apply transcutaneous pacing"
+          ],
+          "answer": 2,
+          "why": "A rate under 60 with poor perfusion that persists after oxygenation and ventilation is treated as an arrest: start CPR and give epinephrine. Atropine is reserved for vagal or primary AV block causes, and pacing has little role in hypoxic pediatric bradycardia."
+        },
+        {
+          "q": "A newborn is apneic with a heart rate of 80 forty seconds after birth. What is the correct action?",
+          "choices": [
+            "Begin positive-pressure ventilation at 40 to 60 breaths per minute",
+            "Begin chest compressions at 3:1",
+            "Give epinephrine 0.01 mg/kg",
+            "Continue drying and stimulating for another minute"
+          ],
+          "answer": 0,
+          "why": "Apnea or a heart rate under 100 calls for positive-pressure ventilation within the first minute. Compressions are added only if the rate remains under 60 after 30 seconds of effective ventilation, and further stimulation wastes the golden minute."
+        }
+      ]
+    }
+  ],
+  "cards": [
+    { "id": "ed-codes-acls-pals-c001", "front": "What compression rate and adult depth does BLS require?", "back": "100 to 120 compressions per minute, at least 2 inches (5 cm) deep and not more than 2.4 inches, with full recoil between compressions.", "lesson": "ed-codes-acls-pals-l01" },
+    { "id": "ed-codes-acls-pals-c002", "front": "What compression depth applies to a child and to an infant?", "back": "Child about 2 inches (5 cm) or one third of chest depth; infant about 1.5 inches (4 cm) or one third of chest depth.", "lesson": "ed-codes-acls-pals-l01" },
+    { "id": "ed-codes-acls-pals-c003", "front": "Why is the two-rescuer ratio 15:2 in children and infants but 30:2 in adults?", "back": "Pediatric arrest is usually the end result of respiratory failure, so ventilation carries more weight. Adult arrest is usually primary cardiac, where compressions dominate.", "lesson": "ed-codes-acls-pals-l01" },
+    { "id": "ed-codes-acls-pals-c004", "front": "Where do you check a pulse in an adult, a child and an infant?", "back": "Carotid in an adult, carotid or femoral in a child, brachial in an infant. No longer than 10 seconds, and if uncertain start compressions.", "lesson": "ed-codes-acls-pals-l01" },
+    { "id": "ed-codes-acls-pals-c005", "front": "What is chest compression fraction and what should it be?", "back": "The share of the resuscitation actually spent compressing. At least 60%, with good teams reaching 80%.", "lesson": "ed-codes-acls-pals-l01" },
+    { "id": "ed-codes-acls-pals-c006", "front": "What are the rescue-breathing rates when a pulse is present?", "back": "Adults 1 breath every 6 seconds, which is 10 per minute. Children and infants 1 breath every 2 to 3 seconds, which is 20 to 30 per minute.", "lesson": "ed-codes-acls-pals-l01" },
+    { "id": "ed-codes-acls-pals-c007", "front": "A child under 8 needs defibrillation but no attenuator pads are available. What do you do?", "back": "Use adult pads. An imperfect shock is far better than no shock for a child in ventricular fibrillation.", "lesson": "ed-codes-acls-pals-l01" },
+    { "id": "ed-codes-acls-pals-c008", "front": "Which rhythms are shockable and which are not?", "back": "Shockable: ventricular fibrillation and pulseless ventricular tachycardia. Non-shockable: asystole and pulseless electrical activity.", "lesson": "ed-codes-acls-pals-l02" },
+    { "id": "ed-codes-acls-pals-c009", "front": "What energy is used for adult defibrillation?", "back": "Biphasic 120 to 200 J per the device manufacturer, using the maximum if unknown. Monophasic is 360 J. Escalating energy is reasonable for a refractory rhythm.", "lesson": "ed-codes-acls-pals-l02" },
+    { "id": "ed-codes-acls-pals-c010", "front": "What is the epinephrine dose and interval in adult cardiac arrest?", "back": "1 mg IV or IO every 3 to 5 minutes. Given as early as possible in asystole and PEA, and after the second shock in a shockable rhythm.", "lesson": "ed-codes-acls-pals-l02" },
+    { "id": "ed-codes-acls-pals-c011", "front": "What is the amiodarone dosing for shock-refractory VF or pulseless VT?", "back": "300 mg IV push, then a second dose of 150 mg if needed. The lidocaine alternative is 1 to 1.5 mg/kg, then 0.5 to 0.75 mg/kg.", "lesson": "ed-codes-acls-pals-l02" },
+    { "id": "ed-codes-acls-pals-c012", "front": "What happens immediately after a shock is delivered?", "back": "Compressions resume at once for 2 minutes. No pulse check — a heart that has just converted is stunned and is not yet ejecting.", "lesson": "ed-codes-acls-pals-l02" },
+    { "id": "ed-codes-acls-pals-c013", "front": "Why is asystole never shocked, and what should you check instead?", "back": "There is no organized electrical activity for a shock to reorganize. Confirm lead connections, gain, and a second lead, because fine VF can masquerade as a flat line.", "lesson": "ed-codes-acls-pals-l02" },
+    { "id": "ed-codes-acls-pals-c014", "front": "Which drugs were removed from or are not routine in the adult arrest algorithm?", "back": "Atropine has no role in asystole or PEA. Sodium bicarbonate and calcium are not routine; they are reserved for specific causes such as hyperkalemia or tricyclic overdose.", "lesson": "ed-codes-acls-pals-l02" },
+    { "id": "ed-codes-acls-pals-c015", "front": "List the five H's of reversible arrest causes.", "back": "Hypovolemia, hypoxia, hydrogen ion (acidosis), hypo- or hyperkalemia, and hypothermia. Many lists add hypoglycemia — check a sugar on everyone.", "lesson": "ed-codes-acls-pals-l03" },
+    { "id": "ed-codes-acls-pals-c016", "front": "List the five T's of reversible arrest causes.", "back": "Tension pneumothorax, tamponade, toxins, thrombosis of the pulmonary artery, and thrombosis of a coronary artery.", "lesson": "ed-codes-acls-pals-l03" },
+    { "id": "ed-codes-acls-pals-c017", "front": "What does fast narrow-complex PEA suggest versus slow wide-complex PEA?", "back": "Fast and narrow points to volume or mechanical obstruction: hypovolemia, tamponade, tension pneumothorax, pulmonary embolism. Slow and wide points to metabolic or toxic causes: hyperkalemia, acidosis, sodium-channel blockers.", "lesson": "ed-codes-acls-pals-l03" },
+    { "id": "ed-codes-acls-pals-c018", "front": "What bedside clues suggest tension pneumothorax during an arrest?", "back": "Absent breath sounds on one side, unusually high resistance when bagging, and distended neck veins. The fix is immediate needle or finger decompression.", "lesson": "ed-codes-acls-pals-l03" },
+    { "id": "ed-codes-acls-pals-c019", "front": "How does hypothermia change the resuscitation?", "back": "Resuscitate far longer, handle gently because a cold heart fibrillates easily, and below about 30 C limit shocks and hold repeat drugs until rewarming. Not dead until warm and dead.", "lesson": "ed-codes-acls-pals-l03" },
+    { "id": "ed-codes-acls-pals-c020", "front": "What is required during cardiac arrest in a patient past about 20 weeks of pregnancy?", "back": "Continuous manual left uterine displacement by a dedicated person to relieve vena cava compression, with resuscitative hysterotomy considered at 4 minutes and delivery targeted by 5 minutes.", "lesson": "ed-codes-acls-pals-l03" },
+    { "id": "ed-codes-acls-pals-c021", "front": "Where does naloxone fit in an opioid-associated cardiac arrest?", "back": "Behind compressions and epinephrine. Naloxone at 0.4 to 2 mg treats respiratory depression, not pulselessness, and never substitutes for CPR.", "lesson": "ed-codes-acls-pals-l03" },
+    { "id": "ed-codes-acls-pals-c022", "front": "What drives management of a traumatic cardiac arrest?", "back": "Fixing the cause: control hemorrhage, decompress both sides of the chest, give blood products. Compressions on an empty heart accomplish very little.", "lesson": "ed-codes-acls-pals-l03" },
+    { "id": "ed-codes-acls-pals-c023", "front": "What is the epinephrine dose for anaphylaxis and how often may it repeat?", "back": "0.3 to 0.5 mg intramuscular into the anterolateral thigh, repeated every 5 to 15 minutes, alongside aggressive fluids and an early airway.", "lesson": "ed-codes-acls-pals-l03" },
+    { "id": "ed-codes-acls-pals-c024", "front": "How is ventilation delivered before and after an advanced airway is placed?", "back": "Before: 30:2 with paused compressions. After: continuous compressions with one breath every 6 seconds, which is 10 per minute.", "lesson": "ed-codes-acls-pals-l04" },
+    { "id": "ed-codes-acls-pals-c025", "front": "How much volume and how long a squeeze for an adult bag-valve-mask breath?", "back": "About 500 to 600 mL delivered over roughly one second, just until the chest visibly rises. Two people, one holding the seal and one squeezing.", "lesson": "ed-codes-acls-pals-l04" },
+    { "id": "ed-codes-acls-pals-c026", "front": "Why does hyperventilation reduce survival in cardiac arrest?", "back": "Each breath raises pressure inside the chest. Too many breaths keep that pressure elevated, blocking venous return so the heart cannot refill between compressions.", "lesson": "ed-codes-acls-pals-l04" },
+    { "id": "ed-codes-acls-pals-c027", "front": "How are an oral and a nasal airway sized?", "back": "Oral airway: corner of the mouth to the angle of the jaw or earlobe. Nasal airway: nostril to earlobe.", "lesson": "ed-codes-acls-pals-l04" },
+    { "id": "ed-codes-acls-pals-c028", "front": "What three questions does waveform capnography answer during a code?", "back": "Is the tube in the trachea (sustained waveform), are compressions generating flow (value under 10 means no), and has circulation returned (sudden rise above 35 to 40).", "lesson": "ed-codes-acls-pals-l04" },
+    { "id": "ed-codes-acls-pals-c029", "front": "What should the team do when ETCO2 reads under 10 mmHg during CPR?", "back": "Improve compressions: more depth, correct rate, full recoil, or change the compressor. It is a perfusion meter, not a tube problem.", "lesson": "ed-codes-acls-pals-l04" },
+    { "id": "ed-codes-acls-pals-c030", "front": "What does a sudden ETCO2 rise above 35 to 40 mmHg mean?", "back": "Return of spontaneous circulation. The ejecting heart delivers accumulated CO2 to the lungs, usually before a pulse can be palpated. Call it out and check the rhythm.", "lesson": "ed-codes-acls-pals-l04" },
+    { "id": "ed-codes-acls-pals-c031", "front": "Which five findings make a bradycardia symptomatic and require treatment?", "back": "Hypotension, acutely altered mental status, signs of shock, ischemic chest discomfort, and acute heart failure.", "lesson": "ed-codes-acls-pals-l05" },
+    { "id": "ed-codes-acls-pals-c032", "front": "What is the atropine dose and maximum in symptomatic bradycardia?", "back": "1 mg IV bolus, repeated every 3 to 5 minutes, to a maximum total of 3 mg.", "lesson": "ed-codes-acls-pals-l05" },
+    { "id": "ed-codes-acls-pals-c033", "front": "When is atropine unlikely to work, and what do you do instead?", "back": "In Mobitz type II or third-degree block, where the failure is below the AV node, and in a transplanted heart with no vagal supply. Go to pacing or an infusion.", "lesson": "ed-codes-acls-pals-l05" },
+    { "id": "ed-codes-acls-pals-c034", "front": "What are the second-line infusions for symptomatic bradycardia?", "back": "Dopamine 5 to 20 mcg/kg/min, or epinephrine 2 to 10 mcg/min, either as an alternative or an addition to transcutaneous pacing.", "lesson": "ed-codes-acls-pals-l05" },
+    { "id": "ed-codes-acls-pals-c035", "front": "How do you confirm true capture during transcutaneous pacing?", "back": "Electrical capture is a pacer spike followed by a wide QRS on every beat. Mechanical capture is a femoral pulse at the set rate. Only the pulse proves perfusion.", "lesson": "ed-codes-acls-pals-l05" },
+    { "id": "ed-codes-acls-pals-c036", "front": "Why check the femoral rather than the carotid pulse during pacing?", "back": "Pacer current makes chest and neck muscles twitch, which is easily mistaken for a carotid pulse. The femoral site is far enough away to be trusted.", "lesson": "ed-codes-acls-pals-l05" },
+    { "id": "ed-codes-acls-pals-c037", "front": "What rate and output settings start transcutaneous pacing?", "back": "Rate 60 to 80, then raise milliamps until every spike captures, then set the output about 10% above that threshold. Sedate and treat pain in an awake patient.", "lesson": "ed-codes-acls-pals-l05" },
+    { "id": "ed-codes-acls-pals-c038", "front": "What are the synchronized cardioversion energies by rhythm?", "back": "Narrow regular 50 to 100 J, narrow irregular 120 to 200 J, wide regular 100 J. Wide irregular is defibrillated unsynchronized at a VF dose.", "lesson": "ed-codes-acls-pals-l06" },
+    { "id": "ed-codes-acls-pals-c039", "front": "Why is polymorphic ventricular tachycardia never synchronized?", "back": "There are no consistent R waves for the machine to track, so it will refuse to discharge. Switch to unsynchronized and defibrillate at a VF energy.", "lesson": "ed-codes-acls-pals-l06" },
+    { "id": "ed-codes-acls-pals-c040", "front": "What does synchronization actually do and why does it matter?", "back": "It times the shock to land on the R wave, avoiding the vulnerable period of the T wave where an unsynchronized shock can induce ventricular fibrillation in a perfusing patient.", "lesson": "ed-codes-acls-pals-l06" },
+    { "id": "ed-codes-acls-pals-c041", "front": "What is the adenosine dosing and technique for stable narrow regular tachycardia?", "back": "6 mg rapid IV push into a proximal vein with an immediate 20 mL flush and the arm raised, then 12 mg if the first dose fails.", "lesson": "ed-codes-acls-pals-l06" },
+    { "id": "ed-codes-acls-pals-c042", "front": "Why must adenosine be pushed fast?", "back": "Its half-life is under 10 seconds. Anything slower is metabolized before enough drug reaches the AV node to interrupt the reentry circuit.", "lesson": "ed-codes-acls-pals-l06" },
+    { "id": "ed-codes-acls-pals-c043", "front": "What are the antiarrhythmic options for a stable wide complex tachycardia?", "back": "Procainamide 20 to 50 mg/min, amiodarone 150 mg over 10 minutes, or sotalol 100 mg (1.5 mg/kg) over 5 minutes, with expert consultation.", "lesson": "ed-codes-acls-pals-l06" },
+    { "id": "ed-codes-acls-pals-c044", "front": "What treats torsades de pointes?", "back": "Magnesium sulfate 1 to 2 g IV. If the patient is pulseless, it is defibrillated unsynchronized like ventricular fibrillation.", "lesson": "ed-codes-acls-pals-l06" },
+    { "id": "ed-codes-acls-pals-c045", "front": "Why is it dangerous to assume a wide complex tachycardia is SVT with aberrancy?", "back": "It is ventricular tachycardia until proven otherwise, and calcium channel blockers given in true VT can cause cardiovascular collapse. A well-appearing patient does not rule it out.", "lesson": "ed-codes-acls-pals-l06" },
+    { "id": "ed-codes-acls-pals-c046", "front": "What oxygen and carbon dioxide targets apply after ROSC?", "back": "Titrate oxygen to an SpO2 of 92 to 98%, and keep PaCO2 in the normal range of about 35 to 45 mmHg. Avoid both hyperoxia and hyperventilation.", "lesson": "ed-codes-acls-pals-l07" },
+    { "id": "ed-codes-acls-pals-c047", "front": "What blood pressure targets apply after ROSC and why?", "back": "Systolic at or above 90 and MAP at or above 65. The reperfusing brain has lost autoregulation, so a single hypotensive episode independently worsens survival and neurologic outcome.", "lesson": "ed-codes-acls-pals-l07" },
+    { "id": "ed-codes-acls-pals-c048", "front": "Which vasopressors are used post-arrest and at what doses?", "back": "Epinephrine 2 to 10 mcg/min, norepinephrine 0.1 to 0.5 mcg/kg/min, or dopamine 5 to 20 mcg/kg/min, after 1 to 2 L of crystalloid if volume is needed.", "lesson": "ed-codes-acls-pals-l07" },
+    { "id": "ed-codes-acls-pals-c049", "front": "Why is a 12-lead obtained immediately after ROSC?", "back": "A large share of adult arrests are caused by coronary occlusion, and the ECG routes the patient to the catheterization laboratory — whether or not the patient is awake.", "lesson": "ed-codes-acls-pals-l07" },
+    { "id": "ed-codes-acls-pals-c050", "front": "Which post-arrest patients get targeted temperature management, and what is the target?", "back": "Those who do not follow commands. A constant temperature between 32 and 37.5 C maintained for at least 24 hours, followed by active fever prevention.", "lesson": "ed-codes-acls-pals-l07" },
+    { "id": "ed-codes-acls-pals-c051", "front": "Why is neurologic prognosis not determined in the first hours after arrest?", "back": "Sedation, paralytics and controlled hypothermia all suppress the neurologic exam. Prognostication is usually deferred to at least 72 hours after normothermia.", "lesson": "ed-codes-acls-pals-l07" },
+    { "id": "ed-codes-acls-pals-c052", "front": "Name the standard roles on a code team.", "back": "Team leader, compressor, airway, IV/IO and medications, monitor and defibrillator, recorder and timer, runner, and family liaison. Small teams combine them but still name them.", "lesson": "ed-codes-acls-pals-l08" },
+    { "id": "ed-codes-acls-pals-c053", "front": "What are the three parts of closed-loop communication?", "back": "The order is directed to a named person, that person repeats it back, and that person reports completion with a time.", "lesson": "ed-codes-acls-pals-l08" },
+    { "id": "ed-codes-acls-pals-c054", "front": "What should a tech say when the compression cycle reaches two minutes?", "back": "State it to the leader as a fact: \"Leader, we are at two minutes, I will take over at the rhythm check.\" Report observations without waiting to be asked.", "lesson": "ed-codes-acls-pals-l08" },
+    { "id": "ed-codes-acls-pals-c055", "front": "What factors inform the decision to terminate a resuscitation?", "back": "Down time and whether the arrest was witnessed, bystander CPR, initial rhythm, reversible causes still being treated, ETCO2 persistently under 10 after 20 minutes, and cardiac standstill on ultrasound.", "lesson": "ed-codes-acls-pals-l08" },
+    { "id": "ed-codes-acls-pals-c056", "front": "Which arrest circumstances justify resuscitating far longer than usual?", "back": "Hypothermia, drowning, poisoning and pregnancy. Each has a plausible path to recovery well beyond normal time limits.", "lesson": "ed-codes-acls-pals-l08" },
+    { "id": "ed-codes-acls-pals-c057", "front": "What single resource makes family presence during resuscitation work?", "back": "A staff member assigned solely to stay with the family, explain events in plain language, and escort them out if needed. Without that person it should not be offered.", "lesson": "ed-codes-acls-pals-l08" },
+    { "id": "ed-codes-acls-pals-c058", "front": "Where do anterolateral defibrillation pads go, and when do you use anterior-posterior instead?", "back": "Right upper chest below the clavicle and left mid-axillary line at about the fifth intercostal space. Use anterior-posterior for pacing, atrial fibrillation cardioversion and infants.", "lesson": "ed-codes-acls-pals-l09" },
+    { "id": "ed-codes-acls-pals-c059", "front": "What skin preparation does pad placement require?", "back": "Dry skin, clipped rather than shaved thick hair, medication patches removed and the skin wiped, and at least 8 cm of clearance from a pacemaker or implanted defibrillator.", "lesson": "ed-codes-acls-pals-l09" },
+    { "id": "ed-codes-acls-pals-c060", "front": "What is the perishock pause and what is the target?", "back": "The time between stopping compressions and delivering the shock. Under 5 seconds, achieved by charging the defibrillator while compressions continue.", "lesson": "ed-codes-acls-pals-l09" },
+    { "id": "ed-codes-acls-pals-c061", "front": "What is the clear sequence before delivering a shock?", "back": "Say and visually verify: I am clear, you are clear, oxygen clear, everybody clear. Flowing oxygen across the chest is a fire risk and is directed away.", "lesson": "ed-codes-acls-pals-l09" },
+    { "id": "ed-codes-acls-pals-c062", "front": "What two things about sync mode catch people out?", "back": "Sync markers must be visible on each R wave or the machine will not discharge, and most units turn sync off after every shock, so it must be reselected for a second attempt.", "lesson": "ed-codes-acls-pals-l09" },
+    { "id": "ed-codes-acls-pals-c063", "front": "What are the three standard IO insertion sites, and which flows fastest?", "back": "Proximal tibia, proximal humerus and distal tibia, with distal femur used in small children. The humerus flows fastest but dislodges more easily with arm movement.", "lesson": "ed-codes-acls-pals-l09" },
+    { "id": "ed-codes-acls-pals-c064", "front": "What flush does a newly placed IO need, and what do fluids require?", "back": "10 mL of saline in an adult, 2 to 5 mL in a child, to open the marrow space. Fluids will not run by gravity and need a pressure bag.", "lesson": "ed-codes-acls-pals-l09" },
+    { "id": "ed-codes-acls-pals-c065", "front": "When should an IO site not be used?", "back": "A fractured bone, a bone with an IO placed in the last 48 hours, infection over the site, a prosthesis in that bone, or landmarks that cannot be identified.", "lesson": "ed-codes-acls-pals-l09" },
+    { "id": "ed-codes-acls-pals-c066", "front": "What are the three sides of the pediatric assessment triangle?", "back": "Appearance (tone, interactiveness, consolability, gaze, cry), work of breathing (retractions, flaring, noises, position), and circulation to skin (pale, mottled, blue).", "lesson": "ed-codes-acls-pals-l10" },
+    { "id": "ed-codes-acls-pals-c067", "front": "What separates pediatric respiratory distress from respiratory failure?", "back": "Distress is working hard and succeeding. Failure is falling responsiveness, a slowing respiratory rate, poor tone, falling saturation and bradycardia — a slow rate means hypoxia until proven otherwise.", "lesson": "ed-codes-acls-pals-l10" },
+    { "id": "ed-codes-acls-pals-c068", "front": "What are the pediatric defibrillation energies?", "back": "First shock 2 J/kg, second 4 J/kg, subsequent shocks 4 J/kg or higher, up to 10 J/kg or the adult dose.", "lesson": "ed-codes-acls-pals-l10" },
+    { "id": "ed-codes-acls-pals-c069", "front": "What are the pediatric arrest doses of epinephrine and amiodarone?", "back": "Epinephrine 0.01 mg/kg IV or IO, which is 0.1 mL/kg of 0.1 mg/mL, every 3 to 5 minutes with a 1 mg maximum. Amiodarone 5 mg/kg, repeatable twice.", "lesson": "ed-codes-acls-pals-l10" },
+    { "id": "ed-codes-acls-pals-c070", "front": "When do you start CPR on a child who still has a pulse?", "back": "When the heart rate is under 60 with poor perfusion despite adequate oxygenation and ventilation. Pediatric cardiac output depends heavily on rate.", "lesson": "ed-codes-acls-pals-l10" },
+    { "id": "ed-codes-acls-pals-c071", "front": "What are the pediatric SVT doses and cardioversion energies?", "back": "Adenosine 0.1 mg/kg (max 6 mg), then 0.2 mg/kg (max 12 mg). Unstable: synchronized cardioversion at 0.5 to 1 J/kg, then 2 J/kg.", "lesson": "ed-codes-acls-pals-l10" },
+    { "id": "ed-codes-acls-pals-c072", "front": "What heart rates suggest SVT rather than sinus tachycardia in children?", "back": "Above roughly 220 in an infant and 180 in a child, with a rate that does not vary with activity and no visible P waves.", "lesson": "ed-codes-acls-pals-l10" },
+    { "id": "ed-codes-acls-pals-c073", "front": "What triggers positive-pressure ventilation in a newborn, and how fast?", "back": "Apnea, gasping, or a heart rate under 100, with ventilation started within the first 60 seconds at 40 to 60 breaths per minute.", "lesson": "ed-codes-acls-pals-l10" },
+    { "id": "ed-codes-acls-pals-c074", "front": "When do compressions start in a newborn, and at what ratio?", "back": "When the heart rate stays under 60 after 30 seconds of effective ventilation. The ratio is 3:1 — 90 compressions and 30 breaths per minute.", "lesson": "ed-codes-acls-pals-l10" },
+    { "id": "ed-codes-acls-pals-c075", "front": "What is the pediatric fluid bolus, and when is a smaller one used?", "back": "20 mL/kg of isotonic crystalloid with reassessment between boluses. Use 10 mL/kg in neonates and when cardiac dysfunction or diabetic ketoacidosis is suspected.", "lesson": "ed-codes-acls-pals-l10" }
+  ],
+  "quiz": [
+    { "id": "ed-codes-acls-pals-q001", "q": "Two rescuers are performing CPR on a 6-month-old infant. Which technique and ratio are correct?", "choices": ["Two-thumb encircling hands at 15:2", "Two fingers at 30:2", "Heel of one hand at 15:2", "Two thumbs at 30:2"], "answer": 0, "why": "Two-rescuer infant CPR uses the two-thumb encircling technique at 15:2. Two fingers is the single-rescuer technique, and 30:2 applies to single rescuers or to adults.", "lesson": "ed-codes-acls-pals-l01", "difficulty": 1 },
+    { "id": "ed-codes-acls-pals-q002", "q": "A team is running a code and the compression fraction is measured at 52%. What does this mean?", "choices": [
+      "The compressions are too deep",
+      "Nearly half the code is being spent off the chest, which is below the 60% minimum",
+      "Ventilations are being delivered too fast",
+      "It is within the expected range for a well-run code"
+    ], "answer": 1, "why": "Compression fraction is the share of time actually compressing; 52% is under the 60% floor and well below the 80% good teams achieve. It measures interruption time, not depth or ventilation rate.", "lesson": "ed-codes-acls-pals-l01", "difficulty": 2 },
+    { "id": "ed-codes-acls-pals-q003", "q": "A patient has a pulse but is not breathing adequately. What rescue-breathing rate applies to an adult?", "choices": ["1 breath every 3 seconds", "1 breath every 10 seconds", "1 breath every 6 seconds", "2 breaths every 15 compressions"], "answer": 2, "why": "Adults with a pulse receive 1 breath every 6 seconds, or 10 per minute. Every 2 to 3 seconds is the pediatric rate, and compression ratios do not apply when a pulse is present.", "lesson": "ed-codes-acls-pals-l01", "difficulty": 1 },
+    { "id": "ed-codes-acls-pals-q004", "q": "A patient is in VF. Two shocks have been delivered and IV access is now established. What drug is given next and at what dose?", "choices": ["Amiodarone 300 mg", "Epinephrine 1 mg", "Lidocaine 1.5 mg/kg", "Sodium bicarbonate 1 mEq/kg"], "answer": 1, "why": "In a shockable rhythm epinephrine 1 mg follows the second shock and repeats every 3 to 5 minutes. Amiodarone 300 mg comes after the third shock for a rhythm that remains refractory, and bicarbonate is not routine.", "lesson": "ed-codes-acls-pals-l02", "difficulty": 2 },
+    { "id": "ed-codes-acls-pals-q005", "q": "A patient arrests with an initial rhythm of PEA. When should epinephrine be given?", "choices": [
+      "After the second rhythm check",
+      "Only if the rhythm converts to a shockable one",
+      "After 10 minutes of CPR",
+      "As soon as IV or IO access is available"
+    ], "answer": 3, "why": "In non-shockable rhythms earlier epinephrine is associated with better outcomes, so it goes in immediately. Waiting for cycles or for a rhythm change gives up the timing advantage that distinguishes this pathway from the shockable one.", "lesson": "ed-codes-acls-pals-l02", "difficulty": 2 },
+    { "id": "ed-codes-acls-pals-q006", "q": "Which is the correct biphasic defibrillation energy for an adult in ventricular fibrillation?", "choices": ["360 J", "50 J", "120 to 200 J per the manufacturer", "20 J"], "answer": 2, "why": "Biphasic devices use 120 to 200 J as printed by the manufacturer, or the maximum if unknown. 360 J is the monophasic dose, 50 J is a narrow regular cardioversion energy, and 20 J is a pediatric figure.", "lesson": "ed-codes-acls-pals-l02", "difficulty": 1 },
+    { "id": "ed-codes-acls-pals-q007", "q": "A dialysis patient who missed two sessions arrests with a slow, very wide complex and no pulse. Which treatments address the likely cause?", "choices": [
+      "Calcium, sodium bicarbonate, and insulin with dextrose",
+      "Amiodarone 300 mg and a second shock",
+      "Needle decompression of the left chest",
+      "Two litres of crystalloid and blood products"
+    ], "answer": 0, "why": "A slow wide complex in a missed-dialysis patient is hyperkalemia, treated with calcium to stabilize the myocardium plus bicarbonate and insulin-dextrose to shift potassium. The others treat refractory VF, tension pneumothorax and hypovolemia.", "lesson": "ed-codes-acls-pals-l03", "difficulty": 3 },
+    { "id": "ed-codes-acls-pals-q008", "q": "A hiker found in the snow is pulseless with a core temperature of 26 C. What is the correct approach?", "choices": [
+      "Confirm death since resuscitation is futile below 28 C",
+      "Deliver shocks every 2 minutes as normal",
+      "Handle gently, limit shocks, hold repeat drugs until rewarming, and continue a prolonged resuscitation",
+      "Give three rounds of epinephrine and then terminate"
+    ], "answer": 2, "why": "A cold heart fibrillates with movement and responds poorly to shocks and drugs until rewarmed above about 30 C, but cold also protects the brain, so resuscitation continues far longer than usual. Terminating early or dosing normally both ignore that physiology.", "lesson": "ed-codes-acls-pals-l03", "difficulty": 3 },
+    { "id": "ed-codes-acls-pals-q009", "q": "A 34-week pregnant patient is in cardiac arrest. At what point is resuscitative hysterotomy considered?", "choices": ["At 4 minutes of arrest, with delivery targeted by 5 minutes", "Only after 20 minutes of ACLS", "Immediately on arrival regardless of down time", "Never in the emergency department"], "answer": 0, "why": "The 4-minute decision with delivery by 5 minutes maximizes survival for both patients, partly by relieving aortocaval compression. Waiting 20 minutes forfeits both, and the procedure is performed in the department rather than moved to an operating room.", "lesson": "ed-codes-acls-pals-l03", "difficulty": 2 },
+    { "id": "ed-codes-acls-pals-q010", "q": "A supraglottic airway is placed during an adult code. How should ventilation now be delivered?", "choices": [
+      "Stay at 30:2 until an endotracheal tube replaces it",
+      "Continuous compressions with 1 breath every 6 seconds",
+      "Continuous compressions with 1 breath every 3 seconds",
+      "Pause compressions for each breath to confirm chest rise"
+    ], "answer": 1, "why": "Any advanced airway, supraglottic or endotracheal, allows continuous compressions with 10 breaths per minute. Returning to 30:2 or pausing discards the benefit, and every 3 seconds hyperventilates the patient.", "lesson": "ed-codes-acls-pals-l04", "difficulty": 2 },
+    { "id": "ed-codes-acls-pals-q011", "q": "Midway through a code the ETCO2 jumps from 14 to 46 mmHg. What should happen?", "choices": [
+      "Increase the ventilation rate to bring it down",
+      "Suspect a displaced tube and prepare to reintubate",
+      "Announce it and check the rhythm and pulse — this suggests ROSC",
+      "Nothing; capnography fluctuates normally during CPR"
+    ], "answer": 2, "why": "A sudden rise above 35 to 40 means the heart is ejecting and clearing accumulated CO2, usually before a pulse is palpable. A displaced tube causes the waveform to disappear, and ventilating harder would only mask a critical finding.", "lesson": "ed-codes-acls-pals-l04", "difficulty": 2 },
+    { "id": "ed-codes-acls-pals-q012", "q": "A single rescuer is bagging an adult and the chest is not rising. What is the most likely problem?", "choices": [
+      "The bag is defective",
+      "The mask seal is leaking because one person cannot maintain it and squeeze effectively",
+      "The oxygen flow is too low",
+      "The patient needs a higher ventilation rate"
+    ], "answer": 1, "why": "One-handed seals leak, which is why two-person bagging is standard. Equipment failure is uncommon, oxygen flow affects concentration rather than volume, and ventilating faster through a leaking mask delivers nothing faster.", "lesson": "ed-codes-acls-pals-l04", "difficulty": 2 },
+    { "id": "ed-codes-acls-pals-q013", "q": "A patient has sinus bradycardia at 44, a blood pressure of 128/76, and is fully alert with no chest pain. What is the correct management?", "choices": [
+      "Atropine 1 mg IV",
+      "Begin transcutaneous pacing",
+      "Start an epinephrine infusion at 2 mcg/min",
+      "Monitor, obtain a 12-lead and IV access, and look for a cause"
+    ], "answer": 3, "why": "Bradycardia is treated only when it causes hypotension, altered mental status, shock, ischemic chest pain or heart failure. None is present, so drugs and pacing carry risk without benefit.", "lesson": "ed-codes-acls-pals-l05", "difficulty": 2 },
+    { "id": "ed-codes-acls-pals-q014", "q": "What is the maximum total dose of atropine in the adult bradycardia algorithm?", "choices": ["3 mg", "1 mg", "6 mg", "0.5 mg"], "answer": 0, "why": "Atropine is 1 mg every 3 to 5 minutes to a 3 mg total. One milligram is a single dose, and 0.5 mg is the older dosing that the current algorithm replaced.", "lesson": "ed-codes-acls-pals-l05", "difficulty": 1 },
+    { "id": "ed-codes-acls-pals-q015", "q": "Transcutaneous pacing is running at 70 with a spike and wide QRS after each spike, but the femoral pulse is 44. What is the interpretation?", "choices": [
+      "Full capture achieved; document and continue",
+      "The pacer rate should be reduced",
+      "Electrical capture without mechanical capture — increase the output",
+      "The patient no longer needs pacing"
+    ], "answer": 2, "why": "The patient's own intrinsic rate of 44 is what you are feeling, so the paced beats are not producing contractions. Documenting success here leaves a patient unperfused while the monitor looks correct.", "lesson": "ed-codes-acls-pals-l05", "difficulty": 3 },
+    { "id": "ed-codes-acls-pals-q016", "q": "A patient with narrow regular SVT at 190 is alert with a blood pressure of 118/70. What is the first intervention?", "choices": ["Synchronized cardioversion at 50 J", "Adenosine 12 mg", "Vagal maneuvers", "Amiodarone 150 mg over 10 minutes"], "answer": 2, "why": "A stable patient gets the least invasive effective step first, and vagal maneuvers convert a meaningful share of reentrant SVT. Cardioversion is for instability, adenosine starts at 6 mg, and amiodarone is not the drug for narrow regular SVT.", "lesson": "ed-codes-acls-pals-l06", "difficulty": 2 },
+    { "id": "ed-codes-acls-pals-q017", "q": "A patient in monomorphic VT at 180 has a systolic of 72 and is confused. What is the correct treatment?", "choices": [
+      "Synchronized cardioversion at 100 J",
+      "Unsynchronized defibrillation at 200 J",
+      "Adenosine 6 mg rapid push",
+      "Amiodarone 150 mg over 10 minutes"
+    ], "answer": 0, "why": "Unstable wide and regular VT with a pulse is synchronized at 100 J. Unsynchronized shock risks landing on a T wave in a perfusing rhythm, and adenosine or an infusion delays definitive treatment in an unstable patient.", "lesson": "ed-codes-acls-pals-l06", "difficulty": 2 },
+    { "id": "ed-codes-acls-pals-q018", "q": "You press sync and charge, but the defibrillator will not discharge on a wide irregular tachycardia. What is happening and what should you do?", "choices": [
+      "The pads are faulty; replace them",
+      "The machine cannot find consistent R waves in a polymorphic rhythm — switch to unsynchronized and defibrillate",
+      "The energy is set too low; increase it and retry in sync",
+      "The patient has converted already"
+    ], "answer": 1, "why": "Synchronization requires identifiable R waves, which polymorphic VT does not provide, so the device withholds the shock. Replacing pads or raising the energy does not create the R waves the sync circuit needs.", "lesson": "ed-codes-acls-pals-l06", "difficulty": 3 },
+    { "id": "ed-codes-acls-pals-q019", "q": "Torsades de pointes with a pulse is identified. What is the specific drug treatment?", "choices": ["Amiodarone 300 mg", "Adenosine 12 mg", "Magnesium sulfate 1 to 2 g IV", "Procainamide 17 mg/kg"], "answer": 2, "why": "Magnesium is the specific therapy for torsades. Amiodarone and procainamide prolong the QT interval and can worsen it, and adenosine has no role in a polymorphic ventricular rhythm.", "lesson": "ed-codes-acls-pals-l06", "difficulty": 2 },
+    { "id": "ed-codes-acls-pals-q020", "q": "Three minutes after ROSC the patient's saturation is 100% on maximal oxygen and the blood pressure is 88/52. Which two actions are correct?", "choices": [
+      "Increase the ventilation rate and give a fluid bolus",
+      "Titrate the oxygen down toward 92 to 98% and treat the hypotension with fluid or a vasopressor",
+      "Maintain 100% oxygen and observe the pressure",
+      "Begin cooling and recheck both in 20 minutes"
+    ], "answer": 1, "why": "Hyperoxia injures reperfused brain tissue and post-arrest hypotension independently worsens outcome, so both are corrected immediately. Hyperventilation reduces cerebral blood flow, and cooling never precedes hemodynamic stabilization.", "lesson": "ed-codes-acls-pals-l07", "difficulty": 3 },
+    { "id": "ed-codes-acls-pals-q021", "q": "A patient achieves ROSC after a witnessed arrest. The 12-lead shows an inferior STEMI but the patient is comatose. What is the disposition?", "choices": [
+      "The catheterization laboratory, regardless of mental status",
+      "ICU only, because the patient cannot consent",
+      "Repeat the ECG in an hour before deciding",
+      "CT head first, then reassess"
+    ], "answer": 0, "why": "A STEMI after arrest goes to the cath lab whether or not the patient is awake, because opening the artery addresses the cause. Delay for repeat ECG or imaging forfeits myocardium, and coma is not a contraindication.", "lesson": "ed-codes-acls-pals-l07", "difficulty": 2 },
+    { "id": "ed-codes-acls-pals-q022", "q": "What temperature range and duration define targeted temperature management after arrest?", "choices": ["30 to 32 C for 12 hours", "36 to 38 C for 6 hours", "32 to 37.5 C held constant for at least 24 hours", "Cooling to 28 C until the patient wakes"], "answer": 2, "why": "A constant selected temperature between 32 and 37.5 C for at least 24 hours, followed by fever prevention, is current practice; the specific number matters less than controlling it. Deeper cooling has not shown benefit and carries harm.", "lesson": "ed-codes-acls-pals-l07", "difficulty": 1 },
+    { "id": "ed-codes-acls-pals-q023", "q": "The physician says \"let's get some epi going.\" Nobody moves. What is the best response from a tech?", "choices": [
+      "Wait for the physician to name someone",
+      "Draw it up quietly without saying anything",
+      "Say aloud: \"I'll get epinephrine 1 mg IV,\" then report when it is in with the time",
+      "Ask the recorder to note the order"
+    ], "answer": 2, "why": "An unassigned order is the classic cause of a drug given twice or not at all. Claiming it aloud and reporting completion closes the loop; silent action leaves the leader unsure whether it happened.", "lesson": "ed-codes-acls-pals-l08", "difficulty": 2 },
+    { "id": "ed-codes-acls-pals-q024", "q": "How often should the compressor be rotated, and when?", "choices": [
+      "Every 2 minutes, during the rhythm check, in under 5 seconds",
+      "Every 5 minutes, whenever convenient",
+      "Only when the compressor says they are tired",
+      "Every 30 seconds to keep everyone fresh"
+    ], "answer": 0, "why": "Quality measurably falls after about two minutes, and the rhythm check is a pause that already exists, so the swap costs nothing. Waiting for fatigue means the fall has already happened, and 30-second swaps add needless interruptions.", "lesson": "ed-codes-acls-pals-l08", "difficulty": 1 },
+    { "id": "ed-codes-acls-pals-q025", "q": "Which combination of findings most supports a decision to terminate resuscitation in an adult?", "choices": [
+      "Witnessed arrest with bystander CPR and an initial rhythm of VF",
+      "Unwitnessed arrest, asystole throughout, ETCO2 persistently under 10 after 20 minutes, no reversible cause identified",
+      "A single dose of epinephrine given and no ROSC after 6 minutes",
+      "Core temperature of 27 C after 30 minutes of CPR"
+    ], "answer": 1, "why": "Unwitnessed asystole with persistently low ETCO2 and no treatable cause carries a near-zero chance of meaningful survival. A shockable initial rhythm and bystander CPR argue for continuing, six minutes is far too early, and hypothermia mandates a much longer effort.", "lesson": "ed-codes-acls-pals-l08", "difficulty": 3 },
+    { "id": "ed-codes-acls-pals-q026", "q": "A patient with an implanted defibrillator needs external pads. What is required?", "choices": [
+      "Place a pad directly over the device to shorten the path",
+      "Withhold defibrillation entirely",
+      "Position the pads at least 8 cm away from the device",
+      "Deactivate the device with a magnet first"
+    ], "answer": 2, "why": "Pads over the device can damage it and shunt current away from the heart, so at least 8 cm of clearance is maintained. External defibrillation is not withheld, and magnet placement is not required before an emergency shock.", "lesson": "ed-codes-acls-pals-l09", "difficulty": 2 },
+    { "id": "ed-codes-acls-pals-q027", "q": "How should the defibrillator be charged to minimize the perishock pause?", "choices": [
+      "Stop compressions, check rhythm, charge, then shock",
+      "Charge while compressions continue, then pause briefly to check rhythm and shock",
+      "Charge after the shock decision is documented",
+      "Charge only after everyone has stepped back"
+    ], "answer": 1, "why": "Charging during compressions collapses the pause to a few seconds. Charging after stopping adds five to ten seconds of no flow, and no step requires the team to be clear before the device charges.", "lesson": "ed-codes-acls-pals-l09", "difficulty": 2 },
+    { "id": "ed-codes-acls-pals-q028", "q": "An IO needle is placed in a patient's proximal humerus. Which statement is correct?", "choices": [
+      "Only crystalloid may be infused through an IO",
+      "Anything that can be given IV can be given IO, and fluids need a pressure bag",
+      "The IO must be removed within 15 minutes",
+      "Blood products cannot be given through an IO"
+    ], "answer": 1, "why": "The marrow drains into the central circulation, so drugs, fluids and blood all run through it, but marrow resistance means gravity alone will not deliver fluid. IO catheters remain usable for roughly 24 hours.", "lesson": "ed-codes-acls-pals-l09", "difficulty": 2 },
+    { "id": "ed-codes-acls-pals-q029", "q": "Which site should be avoided for an IO?", "choices": [
+      "A proximal tibia in a leg with a mid-shaft femur fracture",
+      "A proximal humerus in a patient with a tibial fracture",
+      "A tibia in which an IO was placed 36 hours ago",
+      "A distal tibia in a 70 kg adult"
+    ], "answer": 2, "why": "A bone used for an IO within 48 hours leaks infusate through the prior hole. The other three are acceptable — a femur fracture does not exclude the tibia of that leg from consideration in the way a fracture of the target bone itself would.", "lesson": "ed-codes-acls-pals-l09", "difficulty": 3 },
+    { "id": "ed-codes-acls-pals-q030", "q": "An 18 kg child in pulseless VT has already received one shock. What is the energy for the second?", "choices": ["36 J", "18 J", "72 J", "200 J"], "answer": 0, "why": "The second pediatric shock is 4 J/kg: 4 x 18 = 36 J. 18 J would be 1 J/kg, 72 J is 4 J/kg doubled, and 200 J is an adult energy.", "lesson": "ed-codes-acls-pals-l10", "difficulty": 2 },
+    { "id": "ed-codes-acls-pals-q031", "q": "A 2-month-old has a narrow complex tachycardia at 280 with no visible P waves and is mottled and poorly perfused. What is the correct intervention?", "choices": [
+      "Adenosine 0.1 mg/kg",
+      "Ice to the face and reassess in 5 minutes",
+      "Synchronized cardioversion at 0.5 to 1 J/kg",
+      "Fluid bolus of 20 mL/kg only"
+    ], "answer": 2, "why": "A poorly perfused infant in SVT is unstable and gets synchronized cardioversion at 0.5 to 1 J/kg, escalating to 2 J/kg. Adenosine and vagal maneuvers are for the stable patient, and fluid alone does not break a reentry circuit.", "lesson": "ed-codes-acls-pals-l10", "difficulty": 3 },
+    { "id": "ed-codes-acls-pals-q032", "q": "A 12 kg toddler in cardiac arrest needs epinephrine. What dose and volume from a 0.1 mg/mL syringe?", "choices": ["1.2 mg, 12 mL", "0.12 mg, 1.2 mL", "0.012 mg, 0.12 mL", "1 mg, 10 mL"], "answer": 1, "why": "0.01 mg/kg x 12 kg = 0.12 mg, and at 0.1 mg/mL that is 1.2 mL. The 1 mg adult dose is roughly eight times too much for this child, and 0.012 mg is a tenfold underdose.", "lesson": "ed-codes-acls-pals-l10", "difficulty": 2 },
+    { "id": "ed-codes-acls-pals-q033", "q": "A 5-year-old with severe asthma is now drowsy with a respiratory rate falling from 44 to 16 and a heart rate of 58. What does this represent?", "choices": [
+      "Improvement as the bronchospasm resolves",
+      "Compensated shock",
+      "Respiratory failure progressing toward arrest",
+      "A vagal response to the nebulizer"
+    ], "answer": 2, "why": "A falling respiratory rate with decreasing responsiveness and bradycardia is exhaustion and hypoxia, not improvement. In children bradycardia means hypoxia until proven otherwise and demands immediate assisted ventilation.", "lesson": "ed-codes-acls-pals-l10", "difficulty": 3 },
+    { "id": "ed-codes-acls-pals-q034", "q": "A newborn has been dried and stimulated. At 45 seconds the heart rate is 72 and breathing is gasping. What is the next step?", "choices": [
+      "Start chest compressions at 3:1",
+      "Give epinephrine via umbilical vein",
+      "Continue stimulation and reassess at 2 minutes",
+      "Begin positive-pressure ventilation at 40 to 60 per minute"
+    ], "answer": 3, "why": "Gasping or a heart rate under 100 triggers positive-pressure ventilation within the first minute. Compressions wait for a rate under 60 after 30 seconds of effective ventilation, and epinephrine comes later still.", "lesson": "ed-codes-acls-pals-l10", "difficulty": 2 },
+    { "id": "ed-codes-acls-pals-q035", "q": "Which statement about the pediatric assessment triangle is correct?", "choices": [
+      "It requires vital signs and a full set of numbers",
+      "It is a from-the-doorway impression of appearance, work of breathing and circulation to skin",
+      "It replaces the primary survey",
+      "It applies only to children under 1 year"
+    ], "answer": 1, "why": "The triangle is a rapid visual impression that decides how sick a child is before anything is touched. It precedes rather than replaces the hands-on survey, needs no equipment, and applies across pediatric ages.", "lesson": "ed-codes-acls-pals-l10", "difficulty": 1 },
+    { "id": "ed-codes-acls-pals-q036", "q": "During a code the leader asks for the H's and T's to be considered. The patient has distended neck veins, absent breath sounds on the right, and very high resistance when bagged. What should be prepared?", "choices": [
+      "Needle or finger decompression equipment",
+      "A pericardiocentesis tray",
+      "Calcium chloride and bicarbonate",
+      "Two units of blood"
+    ], "answer": 0, "why": "Unilateral absent breath sounds with high bagging resistance and distended neck veins is tension pneumothorax. Tamponade would give distended veins with bilateral breath sounds, and the metabolic and hemorrhage causes produce neither finding.", "lesson": "ed-codes-acls-pals-l03", "difficulty": 3 },
+    { "id": "ed-codes-acls-pals-q037", "q": "Which action most directly improves survival in a witnessed VF arrest?", "choices": [
+      "Early advanced airway placement",
+      "Earlier and more frequent epinephrine",
+      "Minimizing interruptions and shocking as early as possible",
+      "Obtaining central venous access"
+    ], "answer": 2, "why": "Compression continuity and time to defibrillation are the two interventions with the strongest survival evidence in shockable arrest. Airway, drugs and central access have never been shown to improve neurologically intact survival to the same degree.", "lesson": "ed-codes-acls-pals-l02", "difficulty": 2 },
+    { "id": "ed-codes-acls-pals-q038", "q": "A family member asks to stay in the room during a resuscitation. What is the appropriate response?", "choices": [
+      "Refuse; family presence is not permitted during resuscitation",
+      "Allow it only if the patient regains a pulse",
+      "Allow it if a staff member can be assigned solely to stay with them and explain what is happening",
+      "Allow it and let them stand wherever there is room"
+    ], "answer": 2, "why": "Family presence is supported by the guidelines and improves bereavement outcomes, but only when a dedicated support person is available. Unsupported presence distracts the team and harms the family.", "lesson": "ed-codes-acls-pals-l08", "difficulty": 2 }
+  ],
+  "scenarios": [
+    {
+      "id": "ed-codes-acls-pals-s01",
+      "title": "Adult VF arrest: two cycles to ROSC",
+      "setting": "ed",
+      "intro": "`14:07`. A `58-year-old` man collapses in the waiting room and is brought into Resus 1 on a stretcher. He is unresponsive, not breathing normally, and has no palpable pulse. You are the first tech in the room. The physician arrives ten seconds behind you and takes the leader role. A second tech is at the door.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "The patient is on the stretcher, still clothed, monitor not connected. The leader says, \"Start compressions.\"\n\n**What do you do first, and in what order?**",
+          "choices": [
+            { "text": "Start compressions immediately, and direct the second tech to get the backboard under him and place pads on bare, dry skin", "next": "s2", "feedback": "Correct. Compressions start now; everything else happens around them. Naming the second tech's task out loud means the backboard and pads happen in parallel rather than waiting for the leader to assign them.", "score": 1 },
+            { "text": "Place the backboard and pads first so the rhythm can be seen, then start compressions", "next": "s2", "feedback": "This delays perfusion for 20 to 30 seconds at the moment it matters most. The board and pads can be placed during compressions with a brief lift; the rhythm will still be there in two minutes.", "score": -1 },
+            { "text": "Start compressions and wait for the leader to assign the pads", "next": "s2", "feedback": "Compressions are right, but the pads are the clock on this patient's survival. Anticipating and delegating them is exactly what an experienced tech adds to the room.", "score": 0 },
+            { "text": "Check for a pulse again to be certain before starting", "next": "s2", "feedback": "The pulse check is already done and the ceiling is 10 seconds. Repeating it because you want certainty costs perfusion — uncertainty is itself the instruction to compress.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "Pads are on. The monitor shows a coarse, chaotic waveform with no organized complexes. Compressions have been running about `90 seconds`. The defibrillator is a biphasic unit; the manufacturer's label reads `120 to 200 J`.\n\n**What is the plan for the next 30 seconds?**",
+          "vitals": { "hr": 0, "bp": "0/0", "spo2": null },
+          "choices": [
+            { "text": "Charge to 200 J while compressions continue, then pause at the two-minute mark, confirm the rhythm, clear and shock", "next": "s3", "feedback": "Correct. Charging during compressions collapses the perishock pause to a few seconds. Confirm the rhythm in the pause, run the clear sequence including oxygen, shock, and hands straight back on.", "score": 1 },
+            { "text": "Stop compressions now, confirm VF, charge, then shock", "next": "s3", "feedback": "Same shock, worse pause. Charging takes several seconds, and doing it with hands off the chest is the most common avoidable interruption in a code. Charge first, then pause.", "score": 0 },
+            { "text": "Continue compressions for the full 2 minutes and shock at the next rhythm check without pre-charging", "next": "s3", "feedback": "The two-minute discipline is right, but not pre-charging adds five to ten seconds of no flow at the worst moment. The whole point is to have the energy ready when the pause starts.", "score": 0 },
+            { "text": "Deliver a precordial thump first, then charge", "next": "s3", "feedback": "A precordial thump has essentially no role in a monitored VF arrest with a defibrillator at the bedside, and it delays the one intervention that works. Charge and shock.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "Shock delivered at `14:09`. You called \"I'm clear, you're clear, oxygen clear, everybody clear,\" looked, and pressed. The monitor shows a brief flat period then chaotic activity again.\n\n**What happens immediately after the shock?**",
+          "choices": [
+            { "text": "Hands back on the chest for 2 minutes of compressions, no pulse check", "next": "s4", "feedback": "Correct. A just-converted heart is stunned and not ejecting, so a pulse check finds nothing and costs perfusion. Two minutes of compressions, then the rhythm check.", "score": 1 },
+            { "text": "Check a carotid pulse to see whether the shock worked", "next": "s4", "feedback": "This is the single most common post-shock error. Even a successful shock produces no palpable pulse for a while, so the check almost always reads as failure and always costs compressions.", "score": -1 },
+            { "text": "Reanalyze the rhythm first, then resume compressions", "next": "s4", "feedback": "You already know the rhythm; you just shocked it. Reanalysis belongs at the end of the two-minute cycle, not five seconds after the shock.", "score": -1 },
+            { "text": "Resume compressions and call out the time of the shock for the recorder", "next": "s4", "feedback": "Correct, and the time stamp helps the epinephrine and shock intervals stay honest. The essential half is that hands go straight back on the chest.", "score": 1 }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "`14:11`. Second rhythm check: still VF. Second shock delivered. IV access is in. An i-gel is placed and waveform capnography connected; `ETCO2` reads `9 mmHg`. You have been compressing for four minutes.\n\n**Two things need to happen. What are they?**",
+          "vitals": { "hr": 0, "bp": "0/0", "spo2": null },
+          "choices": [
+            { "text": "Epinephrine 1 mg IV now, and switch to continuous compressions with a breath every 6 seconds", "next": "s5", "feedback": "Both correct, but incomplete. The ETCO2 of 9 is telling you the compressions are not generating flow — that number is an instruction, and it needs to be said out loud.", "score": 0 },
+            { "text": "Epinephrine 1 mg IV, continuous compressions with a breath every 6 seconds, and call out the low ETCO2 while swapping in a fresh compressor", "next": "s5", "feedback": "Correct on all counts. Epinephrine follows the second shock in a shockable rhythm. The advanced airway means continuous compressions at 10 breaths per minute. And ETCO2 under 10 means the compressions need to improve — after four minutes, that is you.", "score": 1 },
+            { "text": "Amiodarone 300 mg now, and keep bagging 30:2", "next": "s5", "feedback": "Wrong drug for this point and wrong ventilation. Amiodarone comes after the third shock for a refractory rhythm; epinephrine is due now. And with an airway in place, 30:2 discards the benefit of having placed it.", "score": -1 },
+            { "text": "Pull the i-gel — an ETCO2 of 9 means it is misplaced", "next": "s5", "feedback": "A sustained waveform at any value confirms the airway is ventilating. A misplaced airway gives no waveform at all. A low number means poor blood flow, and pulling a working airway makes everything worse.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "`14:13`. Fresh compressor on. `ETCO2` has come up to `17`. Third rhythm check: still VF. Third shock delivered.\n\n**What is the next drug?**",
+          "choices": [
+            { "text": "A second epinephrine 1 mg now, since it has been 2 minutes", "next": "s6", "feedback": "The interval is 3 to 5 minutes, not 2, and the first dose went in at 14:11. More importantly, a rhythm that has survived three shocks is the indication for an antiarrhythmic.", "score": 0 },
+            { "text": "Amiodarone 300 mg IV push, with a second dose of 150 mg available if needed", "next": "s6", "feedback": "Correct. Shock-refractory VF after the third shock gets amiodarone 300 mg, followed by 150 mg if it persists. Lidocaine 1 to 1.5 mg/kg is the alternative if amiodarone is unavailable.", "score": 1 },
+            { "text": "Sodium bicarbonate 1 mEq/kg for the accumulating acidosis", "next": "s6", "feedback": "Bicarbonate is not routine in arrest. It is reserved for specific causes such as hyperkalemia or a tricyclic overdose, and giving it here treats a number nobody has measured.", "score": -1 },
+            { "text": "Atropine 1 mg", "next": "s6", "feedback": "Atropine has no role anywhere in the cardiac arrest algorithm. It belongs to symptomatic bradycardia with a pulse.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s6",
+          "prompt": "`14:15`. Mid-cycle, the `ETCO2` jumps from `18` to `44` and stays there. The compressor says the chest feels different.\n\n**What do you do?**",
+          "vitals": { "rr": 10, "spo2": null },
+          "choices": [
+            { "text": "Say it out loud, stop at the end of the cycle for a rhythm and pulse check, and if there is a pulse start post-arrest care", "next": "end", "feedback": "Correct. A sustained jump above 35 to 40 is ROSC until proven otherwise. Announce it, finish the cycle or check now per your leader, and confirm. Then oxygen down toward 92 to 98%, a 12-lead, a blood pressure, and pressors ready.", "score": 1 },
+            { "text": "Keep compressing and say nothing until the two-minute mark", "next": "end", "feedback": "The number belongs to the whole team the moment it changes. Compressing on a perfusing heart for another 90 seconds risks inducing a new arrhythmia, and the leader needs this to decide.", "score": -1 },
+            { "text": "Stop compressions immediately and check a pulse", "next": "end", "feedback": "Defensible, and many leaders will do exactly this. Say the number out loud first so the pause is a team decision rather than a compressor's unilateral stop.", "score": 0 },
+            { "text": "Assume it is a capnography artifact and continue", "next": "end", "feedback": "A sustained rise of that size is not artifact. Dismissing it means continuing compressions on a beating heart and missing the window to start post-arrest care.", "score": -1 }
+          ]
+        }
+      ],
+      "debrief": "Eight minutes, three shocks, one round of epinephrine, one antiarrhythmic, ROSC. Almost none of the decisions that mattered were drug decisions.\n\nThe pattern is **protect the chest**. Compressions started before the monitor was connected, the defibrillator was charged while hands were still on, and the post-shock pulse check was refused. Every one of those choices bought seconds of flow, and flow is what defibrillation needs to have something to convert.\n\nThe second pattern is **capnography is a number you act on**. `9 mmHg` meant the compressions had degraded — which after four minutes was the compressor, not the patient. `44 mmHg` meant the heart had restarted, before anyone could feel it. Both were calls a tech makes out loud.\n\nThe third is **say things to a person**. \"Get the pads\" reaches nobody. \"Leader, we are at two minutes\" reaches the one person who needs it.",
+      "extra": null
+    },
+    {
+      "id": "ed-codes-acls-pals-s02",
+      "title": "Symptomatic bradycardia that needs pacing",
+      "setting": "ed",
+      "intro": "`03:40`. A `74-year-old` woman is brought in by her son for two days of dizziness and one episode of passing out at the bathroom door. She is awake but slow to answer and says she feels \"far away.\" Her son hands you a bag of medications. You are putting her on the monitor.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "She is pale and diaphoretic. The monitor shows a regular rhythm at `34` with P waves that have no consistent relationship to the QRS complexes. Blood pressure cuff is cycling.\n\n**What do you do in the first minute?**",
+          "vitals": { "hr": 34, "bp": "76/40", "rr": 18, "spo2": 93, "gcs": 14 },
+          "choices": [
+            { "text": "Get a 12-lead now, place pads pre-emptively, tell the physician the rate, pressure and that she is confused, and confirm IV access", "next": "s2", "feedback": "Correct. All four in the first minute. The 12-lead before anything changes the rhythm, pads on before they are needed, a factual report to the physician, and access because everything next needs it.", "score": 1 },
+            { "text": "Get the 12-lead and wait for the physician to ask for anything else", "next": "s2", "feedback": "The 12-lead is right and valuable. But a systolic of 76 with confusion is symptomatic bradycardia, and the pads, the access and the verbal report all save minutes you are about to need.", "score": 0 },
+            { "text": "Give oxygen at 15 L/min by non-rebreather and recheck in five minutes", "next": "s2", "feedback": "Oxygen is indicated only for hypoxemia, and 93% does not need a non-rebreather. Five minutes of watching a confused, hypotensive patient at a rate of 34 is five minutes lost.", "score": -1 },
+            { "text": "Ask the son for the full medication history before anything else", "next": "s2", "feedback": "The medication list matters enormously here and someone should get it — but not before pads, access and a report. Delegate it to the son or another staff member while you work.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "The `12-lead` confirms complete heart block: P waves marching independently of a slow wide escape rhythm. The son's bag contains metoprolol and diltiazem. The physician orders atropine `1 mg` IV.\n\n**What do you expect, and what do you set up while it is given?**",
+          "vitals": { "hr": 34, "bp": "74/38", "rr": 18, "spo2": 94, "gcs": 14 },
+          "choices": [
+            { "text": "Expect it to work and hold off on further setup until you see the response", "next": "s3", "feedback": "Atropine works by lifting the vagal brake on the sinus node. In complete heart block the failure is below the AV node, where the vagus has no influence, so a response is unlikely. Waiting to see costs three to five minutes.", "score": -1 },
+            { "text": "Expect little or no response in third-degree block; set up the pacer, draw up sedation, and make sure the pressor options are at hand", "next": "s3", "feedback": "Correct. Atropine is reasonable to try because it is fast and harmless, but it rarely works below the AV node. Setting up pacing and sedation in parallel is what makes the next step immediate instead of another five-minute delay.", "score": 1 },
+            { "text": "Question the order, since atropine is contraindicated in heart block", "next": "s3", "feedback": "It is not contraindicated — it is simply unlikely to work, and a single dose costs nothing while the pacer is being prepared. Raise unlikely-to-help as a preparation cue, not as a refusal.", "score": 0 },
+            { "text": "Prepare a second and third dose of atropine to reach 3 mg quickly", "next": "s3", "feedback": "The maximum is 3 mg, but grinding through it in a patient with high-grade block and a systolic of 74 spends the time that pacing needs. Escalate to pacing rather than repeat a drug that has no target here.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "Atropine produced no change. Rate `32`, systolic `70`, and she is now harder to rouse. The physician says, \"Pace her.\"\n\n**How do you set it up?**",
+          "vitals": { "hr": 32, "bp": "70/36", "rr": 16, "spo2": 94, "gcs": 12 },
+          "choices": [
+            { "text": "Move to anterior-posterior pads, select pacer mode, set the rate at 70, and increase milliamps from low until every spike captures", "next": "s4", "feedback": "Correct. AP placement is preferred for pacing. A rate of 60 to 80 is the usual window, and current is increased from below until capture rather than started at maximum, which is needlessly painful.", "score": 1 },
+            { "text": "Leave the anterolateral defibrillation pads in place, select pacer mode, and start at maximum output to guarantee capture", "next": "s4", "feedback": "Anterolateral pads can pace, so that half is workable. Starting at maximum output is not — it is far more painful than necessary and tells you nothing about the threshold you will need to set output against.", "score": 0 },
+            { "text": "Select defibrillation mode and deliver 50 J synchronized", "next": "s4", "feedback": "Cardioversion treats a fast rhythm. This patient's problem is that the ventricle is not being told to beat often enough, which needs a pacer, not a shock.", "score": -1 },
+            { "text": "Set the pacer rate at 100 to maximize cardiac output", "next": "s4", "feedback": "Pacing at 100 shortens filling time and increases myocardial oxygen demand in a patient who is already poorly perfused. The window is 60 to 80.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "At `70 mA` you see a pacer spike followed by a wide QRS on every beat. The monitor rate reads `70`. She groans and pulls at the pads.\n\n**What are the two things that must happen now?**",
+          "vitals": { "hr": 70, "bp": "84/50", "rr": 16, "spo2": 96, "gcs": 12 },
+          "choices": [
+            { "text": "Confirm a femoral pulse at 70, and tell the physician she needs sedation and analgesia", "next": "s5", "feedback": "Correct. The QRS proves electrical capture; only a matching femoral pulse proves the muscle followed. And pacing is genuinely painful — her pulling at the pads is the reason, not a nuisance to be talked down.", "score": 1 },
+            { "text": "Confirm a carotid pulse at 70 and document capture", "next": "s5", "feedback": "Use the femoral. Pacer current makes chest and neck muscles twitch at exactly the paced rate, which feels convincingly like a carotid pulse and is not one.", "score": 0 },
+            { "text": "Increase the output further until she stops moving", "next": "s5", "feedback": "More current means more pain, not less movement for the right reason. The answer to a patient who is uncomfortable from pacing is sedation and analgesia, never turning it up until she tolerates it.", "score": -1 },
+            { "text": "Reduce the output to the minimum she tolerates", "next": "s5", "feedback": "Dropping below the capture threshold loses the only thing keeping her perfused. Set the output about 10% above threshold and treat the pain instead.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "Femoral pulse confirmed at `70`. Output set to `78 mA`, about `10%` above threshold. She has received sedation and is settled. Systolic is now `96`.\n\n**What happens next, and what is your job in it?**",
+          "choices": [
+            { "text": "Cardiology consult for transvenous pacing, continuous monitoring, repeat vitals, and keep the pacer pads and settings untouched during transport", "next": "end", "feedback": "Correct. Transcutaneous pacing is a bridge, not a destination. Your job is that nothing interrupts it: pads stay on, settings stay locked, the femoral pulse is rechecked after every move, and the transport monitor is ready.", "score": 1 },
+            { "text": "Turn off the pacer now that her pressure has improved and see whether she holds", "next": "end", "feedback": "Her pressure improved because of the pacer. Turning it off returns her to a rate of 32 and a systolic in the 70s, and the underlying block has not been treated.", "score": -1 },
+            { "text": "Start an epinephrine infusion at 2 to 10 mcg/min and wean the pacing", "next": "end", "feedback": "An infusion is a legitimate alternative or addition in symptomatic bradycardia, but weaning effective pacing in favour of a drug in complete heart block gives up a reliable mechanism for an unreliable one.", "score": 0 },
+            { "text": "Move her to a hallway bed to free the resuscitation room", "next": "end", "feedback": "A patient dependent on transcutaneous pacing requires continuous monitoring and immediate access to the team. A hallway bed is not a place where a lost capture gets noticed in time.", "score": -1 }
+          ]
+        }
+      ],
+      "debrief": "The whole case turned on one piece of pattern recognition: **atropine treats the vagus, and the vagus does not reach below the AV node**. In complete heart block a dose is worth trying because it is fast and harmless, but the team that sets up the pacer during that dose saves five minutes over the team that waits to see.\n\nThe second pattern is **capture is a pulse, not a picture**. A spike-and-QRS on the screen looks like success and can accompany a patient who is not perfusing at all. Check the femoral, not the carotid, because the pacer makes the neck twitch at exactly the rate you want to believe you are feeling.\n\nThe third is that **pacing hurts**. A patient pulling at the pads is giving you information, not causing trouble. Sedation and analgesia are part of the procedure, not an afterthought.\n\nAnd the medication bag mattered: metoprolol and diltiazem together explain a great deal about why an elderly heart slid into complete block. Always ask for the bag."
+    },
+    {
+      "id": "ed-codes-acls-pals-s03",
+      "title": "Pediatric respiratory arrest",
+      "setting": "ed",
+      "intro": "`19:20`. A father carries in a `3-year-old` boy, limp in his arms, shouting that the child stopped breathing in the car. He has been sick for three days with a cough and fever and stopped drinking today. You take the child straight to the pediatric resuscitation bay. Estimated weight from the tape has not been taken yet; he looks about `14 kg`.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "From the doorway: he is limp, eyes half open and not tracking, with occasional gasping and blue lips. Nobody has touched him yet.\n\n**What is your read, and what do you do first?**",
+          "choices": [
+            { "text": "Respiratory failure. Open the airway and start bag-mask ventilation with oxygen immediately while someone attaches the monitor", "next": "s2", "feedback": "Correct. All three sides of the pediatric assessment triangle are abnormal: appearance, work of breathing, circulation to skin. Gasping is not breathing. Ventilation is the treatment and it starts now, not after the monitor.", "score": 1 },
+            { "text": "Get a full set of vital signs and a temperature first so the picture is clear", "next": "s2", "feedback": "The doorway impression already told you he is in failure. A blue, limp, gasping child does not need numbers before he needs air; the numbers can be obtained while someone ventilates.", "score": -1 },
+            { "text": "Start chest compressions immediately", "next": "s2", "feedback": "Compressions come after you establish there is no pulse or a rate under 60 with poor perfusion despite ventilation. In a child the fix is almost always oxygen and ventilation first — jumping to compressions skips the treatment.", "score": -1 },
+            { "text": "Apply a non-rebreather at 15 L/min and lay the tape alongside him", "next": "s2", "feedback": "A gasping child moves almost no air, so a mask delivers oxygen to a face rather than to lungs. The tape is important but secondary. He needs positive-pressure ventilation.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "You are bagging with a pediatric bag and an appropriately sized mask, two-person technique. The chest is rising. The monitor is on: heart rate `52`, and the pulse oximeter now reads `84%` and climbing.\n\n**What does the heart rate of 52 mean?**",
+          "vitals": { "hr": 52, "rr": 0, "spo2": 84 },
+          "choices": [
+            { "text": "A normal resting rate for a 3-year-old at night", "next": "s3", "feedback": "Not remotely. A 3-year-old's normal resting rate is roughly 80 to 120. A rate of 52 in a sick child is bradycardia, and in a child bradycardia means hypoxia until proven otherwise.", "score": -1 },
+            { "text": "Hypoxic bradycardia. Continue effective ventilation and reassess the rate and perfusion in about 30 seconds — if it stays under 60 with poor perfusion, start CPR", "next": "s3", "feedback": "Correct. This is the rule with no adult equivalent. Oxygenation and ventilation come first; if the rate is still under 60 with poor perfusion after that, compressions start even though there is a pulse.", "score": 1 },
+            { "text": "Atropine 0.02 mg/kg now for the bradycardia", "next": "s3", "feedback": "Atropine is for bradycardia caused by increased vagal tone or primary AV block, not for hypoxia. Giving it here treats the number and ignores the cause that is still killing him.", "score": -1 },
+            { "text": "Start CPR immediately since the rate is under 60", "next": "s3", "feedback": "Close, and defensible if perfusion is clearly terrible. But the rule is under 60 with poor perfusion despite adequate oxygenation and ventilation — you have only just started ventilating. Give it 30 seconds of effective breaths first.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "Thirty seconds of effective ventilation later: heart rate `108`, saturation `96%`, and he has started making weak respiratory efforts of his own. Capillary refill is `3 seconds`, extremities cool.\n\n**What has happened, and what comes next?**",
+          "vitals": { "hr": 108, "rr": 8, "spo2": 96, "temp": 39.1 },
+          "choices": [
+            { "text": "The bradycardia was hypoxic and ventilation fixed it. Keep supporting ventilation, get the tape weight, establish access, and check a glucose", "next": "s4", "feedback": "Correct, and it is the whole lesson of pediatric resuscitation: the rate followed the oxygen. He is not out of trouble — weak efforts still need support — but the trajectory reversed without a single drug.", "score": 1 },
+            { "text": "He is fixed. Stop ventilating and place him on a non-rebreather", "next": "s4", "feedback": "Weak respiratory efforts at a rate of 8 will not sustain him. Withdrawing support because the numbers improved is how a child slides back into failure while everyone watches the monitor.", "score": -1 },
+            { "text": "Give epinephrine 0.01 mg/kg since he was bradycardic a minute ago", "next": "s4", "feedback": "Epinephrine is for a rate under 60 with poor perfusion that persists after oxygenation and ventilation. His rate is 108. Treating the previous minute's number is a real and dangerous habit.", "score": -1 },
+            { "text": "Keep ventilating and get the tape, but defer access and glucose until he is more stable", "next": "s4", "feedback": "Ventilation and the tape are right. Deferring access and glucose is not — hypoglycemia is common in a child who has not eaten or drunk for a day, and it is quick to check and quick to fix.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "The tape gives a weight of `14 kg`. Glucose is `58 mg/dL`. He remains cool peripherally with a refill of `3 seconds` and a rate of `132`. The physician wants a fluid bolus and dextrose.\n\n**What volumes?**",
+          "vitals": { "hr": 132, "bp": "88/54", "rr": 10, "spo2": 98, "temp": 39.1 },
+          "choices": [
+            { "text": "280 mL of isotonic crystalloid as a bolus, and dextrose per protocol, then reassess perfusion", "next": "s5", "feedback": "Correct. 20 mL/kg x 14 kg = 280 mL. Reassessment between boluses is part of the order. The dextrose concentration and volume vary by protocol, but the hypoglycemia gets treated now, not later.", "score": 1 },
+            { "text": "140 mL, a conservative 10 mL/kg, since he has a normal blood pressure", "next": "s5", "feedback": "A normal blood pressure in a child with cool extremities and a 3-second refill is compensated shock, not the absence of shock. The standard bolus is 20 mL/kg; 10 mL/kg is reserved for neonates and suspected cardiac dysfunction or DKA.", "score": 0 },
+            { "text": "560 mL, front-loading two boluses so you do not fall behind", "next": "s5", "feedback": "Boluses are given one at a time with reassessment between, because a child with myocarditis or an overloading heart declares herself after the first. Front-loading removes the checkpoint that protects him.", "score": -1 },
+            { "text": "Hold fluids because his blood pressure is normal, and give dextrose only", "next": "s5", "feedback": "This is the classic pediatric trap. Children hold their blood pressure until they collapse, so a normal number with poor perfusion is the moment to give fluid, not the reason to withhold it.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "After the bolus and dextrose he is pinker, refill is `2 seconds`, rate `118`, and he is breathing at `24` with mild retractions and a saturation of `98%` on a low-flow nasal cannula. He is starting to cry when touched.\n\n**What is your job now?**",
+          "vitals": { "hr": 118, "bp": "94/58", "rr": 24, "spo2": 98, "temp": 39.1 },
+          "choices": [
+            { "text": "Keep the bag-valve mask and airway equipment at the bedside, continuous monitoring, frequent reassessment of the triangle, and a warm blanket — he can deteriorate again", "next": "end", "feedback": "Correct. A child who was in respiratory failure twenty minutes ago is not a stable child. The equipment stays, the monitor stays, and someone reassesses appearance, work of breathing and skin colour every few minutes.", "score": 1 },
+            { "text": "Break down the airway setup and return the pediatric cart", "next": "end", "feedback": "Far too early. Children compensate and then fail abruptly, and rebuilding a setup mid-deterioration costs the minutes you saved the first time. Leave it until he leaves the department.", "score": -1 },
+            { "text": "Move him to a regular room to free the resuscitation bay", "next": "end", "feedback": "He needs continuous monitoring and immediate access to the team until the admitting service takes him. Bay pressure is real, but this patient has not earned a lower level of observation yet.", "score": -1 },
+            { "text": "Document and let the father back in, then continue monitoring", "next": "end", "feedback": "Reuniting him with his father is genuinely valuable — a calm child works less to breathe — and documenting matters. Make sure the airway equipment and continuous monitoring stay in place alongside it.", "score": 0 }
+          ]
+        }
+      ],
+      "debrief": "No shock, no epinephrine, no compressions, and the child recovered. That is what a pediatric resuscitation usually looks like when it goes well, because **children arrest from breathing, not from hearts**.\n\nThe number to carry out of this case is the one that did the work: a heart rate of **`52` in a hypoxic child**. In an adult that is a rhythm problem. In a child it is a symptom of hypoxia, and the treatment is air. The rate rose from `52` to `108` on ventilation alone, with no drug given.\n\nThe second pattern is **compensated shock hides behind a normal blood pressure**. Cool extremities and a three-second refill with a systolic of `88` is a child in shock who has not yet run out of compensation. Waiting for the pressure to fall means waiting for the last thing to go.\n\nThe third is that the doorway impression — the pediatric assessment triangle — was correct before anyone touched him, and every action that followed was set in motion by it. Appearance, work of breathing, circulation to skin, in about five seconds."
+    }
+  ]
+}

@@ -4,9 +4,12 @@ A crash course in patient care and medicine, built as an installable web app for
 
 ## What it does
 
-- **Learn** — 31 modules of short lessons (5–9 minutes each). Every lesson ends in a gated check; passing it unlocks the lesson's flashcards.
+- **Learn** — 40 modules of short lessons (4–9 minutes each), most deepened by a second pass of harder material. Every lesson ends in a gated check; passing it unlocks the lesson's flashcards.
 - **Review** — spaced repetition (SM-2 style, four grades). A scratch area on each card takes Apple Pencil ink so you can write the answer before flipping.
-- **Practice** — NREMT-style quizzes in practice or timed exam mode (domain-weighted 70-question mock), branching clinical scenarios with monitor-style vitals, and hands-on drills (12-lead placement, read the monitor).
+- **Practice** — NREMT-style quizzes in practice or timed exam mode (domain-weighted 70-question mock), branching clinical scenarios with monitor-style vitals, and 19 hands-on drills: ECG rhythm strips synthesized fresh each round, 12-lead placement, read the monitor, generated med-math problems, an abdominal map, and sequence and matching drills.
+- **Tools** — 13 bedside calculators (dose and volume, drip rate, oxygen cylinder duration, MAP and shock index, GCS, APGAR, burns and Parkland, pediatric estimates, QTc, anion gap, BMI, ECG rate) with the formula shown.
+- **Today's rounds** — a daily plan of one lesson, one review, one drill, and one scenario or quiz, tracked per day.
+- **Tutor** — an Ask button on every lesson, card, question, scenario and reference sheet opens a chat grounded in what is on screen. Answers stream from Claude through a small service on the homelab, using the owner's own subscription.
 - **Reference** — 18 pocket cards: vitals by age, GCS/APGAR, drug lists, order of draw, lab normals, ESI, isolation precautions, rhythm cheat sheet and more.
 - **Path** — the checklist from EMT course to PA matriculation.
 - **Pencil notes** — an ink layer over any lesson (pen draws, fingers scroll, palm rejection, pressure width). Notes persist per lesson on the device.
@@ -21,12 +24,19 @@ Open the site in Safari, tap Share, then **Add to Home Screen**. It launches ful
 
 ```
 content/
-  manifest.json        track order and module ids
-  SCHEMA.md            the content contract (validated)
-  BRIEF.md             writing brief for content authors
-  modules/<id>.json    one file per module: lessons, cards, quiz, scenarios
-  reference/<id>.json  pocket cards
-src/                   the app (no framework, no build-time dependencies)
+  manifest.json          track order and module ids
+  SCHEMA.md              the content contract (validated)
+  BRIEF.md               writing brief for content authors
+  modules/<id>.json      one file per module: lessons, cards, quiz, scenarios
+  modules/<id>.ext.json  optional second pass merged into the module at build
+  reference/<id>.json    pocket cards
+src/                     the app (no framework, no build-time dependencies)
+  app.js                 router and views; loads content/<id>.js on demand
+  rhythm.js              ECG strip synthesizer for the rhythm drill
+  drills.js, tools.js    practice engines and bedside calculators
+  tutor.js               the tutor panel (streams from the tutor service)
+  ink.js                 Apple Pencil ink layer
+tutor/server.mjs         the tutor service (Claude Agent SDK, runs on the homelab)
 tools/
   validate.mjs         schema validator  (node tools/validate.mjs --all)
   build.mjs            bundles content + app into dist/ (node tools/build.mjs [--strict])

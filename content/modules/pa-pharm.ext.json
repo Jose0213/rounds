@@ -1,0 +1,2036 @@
+{
+  "schema": 1,
+  "extends": "pa-pharm",
+  "lessons": [
+    {
+      "id": "pa-pharm-l11",
+      "title": "Bug-drug by infection: choosing the empiric antibiotic",
+      "minutes": 9,
+      "body": "## Empiric means guessing on purpose\n\nCultures take `24` to `72` hours. Antibiotics start now. Empiric therapy is the educated guess that covers the organisms most likely to be present, and it is built from three questions: what organ is infected, where did the patient acquire it (community, hospital, or recent healthcare exposure), and how sick are they right now. When the culture returns you narrow to the cheapest, narrowest drug that kills the organism. That narrowing is called de-escalation.\n\n## Lungs\n\n| Setting | Likely organisms | First line | Days |\n|---|---|---|---|\n| Community pneumonia, healthy outpatient | S. pneumoniae, Mycoplasma, H. influenzae | amoxicillin `1 g` TID or doxycycline `100 mg` BID | `5` |\n| Community pneumonia, comorbid outpatient | above plus resistant pneumococcus | amoxicillin-clavulanate plus azithromycin, or levofloxacin `750 mg` | `5` |\n| Community pneumonia, admitted to the floor | same | ceftriaxone `1-2 g` IV plus azithromycin `500 mg` | `5-7` |\n| Hospital-acquired or ventilator pneumonia | Pseudomonas, MRSA, resistant gram-negatives | cefepime or piperacillin-tazobactam plus vancomycin | `7` |\n| Aspiration | mouth anaerobes | ampicillin-sulbactam | `5-7` |\n\nFive days treats most community pneumonia, provided the patient has been afebrile `48` hours and is off supplemental oxygen. Longer courses do not help and do breed resistance.\n\n## Urine\n\nUncomplicated cystitis in a non-pregnant woman: nitrofurantoin `100 mg` BID for `5` days, trimethoprim-sulfamethoxazole DS BID for `3` days, or fosfomycin `3 g` once.\n\nPyelonephritis: ceftriaxone `1 g` IV in the department, then ciprofloxacin `500 mg` BID for `7` days or an oral beta-lactam for `10-14` days. Admit for vomiting, hypotension, pregnancy, or obstruction.\n\n> **Trap:** Nitrofurantoin concentrates in urine but not in kidney tissue, so it treats cystitis and never treats pyelonephritis. Asymptomatic bacteriuria is treated only in pregnancy or before a urologic procedure.\n\n## Skin\n\nNon-purulent cellulitis is streptococcal: cephalexin `500 mg` QID or cefazolin IV for `5` days. Purulent cellulitis and abscess are staphylococcal and often MRSA, and the treatment is incision and drainage; add trimethoprim-sulfamethoxazole or doxycycline for `5-7` days if there is surrounding cellulitis, fever, or immune compromise. Pain out of proportion to the exam, skin anesthesia, crepitus, or spread you can watch means necrotizing fasciitis: the operating room, plus vancomycin, piperacillin-tazobactam, and clindamycin for its toxin-suppressing effect.\n\n## Meninges\n\nAdult under age `50`: ceftriaxone `2 g` IV every `12` hours plus vancomycin. Age `50` and older, pregnant, or immunocompromised: add ampicillin `2 g` every `4` hours for Listeria. Dexamethasone `0.15 mg/kg` goes in before or with the first antibiotic dose, never after.\n\n> **Key:** Nothing delays antibiotics in suspected meningitis. Draw blood cultures, give the drugs, then get the CT and the lumbar puncture. Cell counts, protein, and glucose stay diagnostic for hours after the first dose.\n\n## Blood and belly\n\nSepsis with no obvious source: blood cultures, then broad coverage within `1` hour of recognition, usually vancomycin plus piperacillin-tazobactam or cefepime, with `30 mL/kg` of balanced crystalloid if the patient is hypotensive or the lactate is `4 mmol/L` or higher. Community intra-abdominal infection: ceftriaxone plus metronidazole, or piperacillin-tazobactam alone, continued only `4` days after the source is controlled.\n\n## Sexually transmitted\n\n| Infection | Treatment |\n|---|---|\n| Gonorrhea | ceftriaxone `500 mg` IM once (`1 g` if `150 kg` or heavier) |\n| Chlamydia | doxycycline `100 mg` BID for `7` days |\n| Pelvic inflammatory disease | ceftriaxone `500 mg` IM plus doxycycline and metronidazole for `14` days |\n| Early syphilis | benzathine penicillin G `2.4 million units` IM once |\n| Trichomoniasis | metronidazole `500 mg` BID for `7` days |\n\n> **On shift:** No antibiotic reaches an undrained abscess, an obstructed kidney, or infected hardware. Source control is the treatment and the drug is support, which is why the ultrasound and the urology call matter as much as the order.",
+      "keyPoints": [
+        "Empiric choice is organ plus place of acquisition plus severity; de-escalate the moment cultures return.",
+        "Five days treats most community pneumonia; ceftriaxone plus azithromycin is the admitted-patient regimen.",
+        "Nitrofurantoin treats cystitis only — it never reaches kidney tissue, so it never treats pyelonephritis.",
+        "Meningitis gets ceftriaxone 2 g every 12 h plus vancomycin, ampicillin if over 50, dexamethasone before the first dose.",
+        "Source control beats antibiotics: an undrained abscess or obstructed kidney will not respond to any drug."
+      ],
+      "checks": [
+        {
+          "q": "A healthy 28-year-old woman has 2 days of burning urination and frequency, no fever, no flank pain, and a normal blood pressure. Which regimen fits?",
+          "choices": [
+            "Nitrofurantoin `100 mg` BID for `5` days",
+            "Ceftriaxone `1 g` IV then ciprofloxacin for `14` days",
+            "Vancomycin plus piperacillin-tazobactam",
+            "No antibiotic; treat only if the culture is positive"
+          ],
+          "answer": 0,
+          "why": "This is uncomplicated cystitis. Nitrofurantoin for 5 days, TMP-SMX for 3 days, or fosfomycin once are all first line. The IV and broad regimens are for pyelonephritis or sepsis, and waiting for a culture leaves a symptomatic patient untreated."
+        },
+        {
+          "q": "A 63-year-old with fever, neck stiffness, and new confusion is in the department. The CT scanner is 40 minutes behind. What happens first?",
+          "choices": [
+            "Wait for the CT, then lumbar puncture, then antibiotics",
+            "Dexamethasone plus ceftriaxone, vancomycin, and ampicillin now",
+            "Ceftriaxone alone after the lumbar puncture",
+            "Blood cultures only, with antibiotics held so the culture is not sterilized"
+          ],
+          "answer": 1,
+          "why": "Antibiotics and dexamethasone go in immediately after blood cultures. At age 63 ampicillin is added for Listeria. Delaying for imaging increases mortality, and cerebrospinal fluid cell counts, protein, and glucose remain diagnostic for hours after the first dose."
+        },
+        {
+          "q": "A patient has a 4 cm fluctuant, tender abscess on the thigh with 2 cm of surrounding redness. What is the definitive treatment?",
+          "choices": [
+            "Oral cephalexin for `10` days",
+            "IV vancomycin and admission",
+            "Incision and drainage, with trimethoprim-sulfamethoxazole added for the surrounding cellulitis",
+            "Warm compresses and recheck in `48` hours"
+          ],
+          "answer": 2,
+          "why": "Drainage is the treatment for an abscess; antibiotics alone cannot penetrate pus. TMP-SMX or doxycycline is added because there is surrounding cellulitis and MRSA is likely. Cephalexin does not cover MRSA, and IV vancomycin is reserved for systemic illness."
+        }
+      ]
+    },
+    {
+      "id": "pa-pharm-l12",
+      "title": "Cardiovascular second pass: heart failure, rhythm decisions, and choosing an anticoagulant",
+      "minutes": 9,
+      "body": "## Heart failure with a weak pump has four pillars\n\nIn heart failure with reduced ejection fraction the body compensates by flooding itself with adrenaline, angiotensin, and aldosterone. Those hormones buy pressure today and destroy the heart over years. Every mortality-lowering drug blocks one of them.\n\n1. An ARNI (sacubitril-valsartan), or an ACE inhibitor or ARB if the ARNI is unaffordable.\n2. A beta blocker, but only carvedilol, metoprolol succinate, or bisoprolol — the three with trial evidence.\n3. A mineralocorticoid receptor antagonist (spironolactone or eplerenone).\n4. An SGLT2 inhibitor (dapagliflozin or empagliflozin), which helps whether or not the patient has diabetes.\n\nEach pillar independently lowers death. Furosemide relieves congestion and makes people feel better but has never been shown to extend life. Digoxin reduces hospitalizations, not mortality.\n\n## The acute decompensation fork\n\nSort the patient by perfusion and congestion. **Warm and wet** is the common one: congested but perfusing. Treat with IV furosemide at `1` to `2.5` times the home oral dose, nitroglycerin if hypertensive, and non-invasive positive pressure ventilation for flash pulmonary edema.\n\n**Cold and wet** is cardiogenic shock: narrow pulse pressure, cool skin, rising lactate. More diuretic makes this worse. These patients need an inotrope such as dobutamine `2-20 mcg/kg/min`.\n\n> **Trap:** Beta blockers are continued through a mild decompensation but are not started during one. Starting a beta blocker in a patient who is already cold and wet can be the push into shock.\n\n## Rhythm decisions in three questions\n\n1. **Stable or unstable?** Hypotension, altered mental status, ischemic chest pain, or acute heart failure caused by the rhythm means electricity, not drugs: synchronized cardioversion if there is a pulse, defibrillation for ventricular fibrillation and pulseless ventricular tachycardia.\n2. **Narrow or wide?** Narrow means the impulse used the normal conduction system.\n3. **Regular or irregular?**\n\n| Pattern | Likely rhythm | Drug |\n|---|---|---|\n| Narrow, regular | SVT | vagal, then adenosine `6 mg` then `12 mg` |\n| Narrow, irregular | atrial fibrillation or flutter | diltiazem `0.25 mg/kg` or metoprolol `5 mg` |\n| Wide, regular | ventricular tachycardia until proven otherwise | amiodarone `150 mg` over `10` min, or procainamide |\n| Wide, irregular | polymorphic VT, or AF with pre-excitation | magnesium `2 g`; procainamide for pre-excitation |\n\nIn atrial fibrillation with Wolff-Parkinson-White, AV nodal blockers (diltiazem, verapamil, adenosine, digoxin, beta blockers) push conduction down the accessory pathway and can produce ventricular fibrillation. Procainamide is the answer.\n\nRate versus rhythm control: overall survival was equal in older trials, but rhythm control started within the first year of diagnosis improves outcomes. Cardioversion is safe within `48` hours of onset, or after `3` weeks of anticoagulation, or after a negative transesophageal echocardiogram.\n\n## Choosing the anticoagulant by indication\n\n| Indication | Drug |\n|---|---|\n| Non-valvular atrial fibrillation | a DOAC, preferred over warfarin |\n| Mechanical heart valve | warfarin only, INR `2.5-3.5` for mitral |\n| Moderate to severe mitral stenosis | warfarin only |\n| Provoked first venous clot | DOAC for `3` months |\n| Unprovoked venous clot | DOAC for at least `3` months, often indefinite |\n| Cancer-associated clot | apixaban, or low molecular weight heparin |\n| Triple-positive antiphospholipid syndrome | warfarin, not a DOAC |\n| Pregnancy | low molecular weight heparin |\n\n> **Key:** There are exactly two places a DOAC is the wrong answer on an exam and in life: a mechanical valve and moderate-to-severe mitral stenosis. Both need warfarin, because the DOAC trial in mechanical valves was stopped early for excess clot and bleeding.\n\nCHA2DS2-VASc scores the stroke risk that justifies anticoagulation: heart failure `1`, hypertension `1`, age `75` or older `2`, diabetes `1`, prior stroke or TIA `2`, vascular disease `1`, age `65-74` `1`, female sex `1`. Anticoagulate at `2` or more in men and `3` or more in women.",
+      "keyPoints": [
+        "Four pillars lower mortality in HFrEF: ARNI or ACE inhibitor, one of three beta blockers, an MRA, and an SGLT2 inhibitor.",
+        "Warm and wet gets diuresis and nitrates; cold and wet is cardiogenic shock and needs an inotrope, not more furosemide.",
+        "Stable or unstable, narrow or wide, regular or irregular — three questions choose the rhythm drug.",
+        "Atrial fibrillation with Wolff-Parkinson-White gets procainamide; AV nodal blockers can cause ventricular fibrillation.",
+        "Mechanical valves and moderate-to-severe mitral stenosis require warfarin; DOACs are contraindicated."
+      ],
+      "checks": [
+        {
+          "q": "A 58-year-old with a mechanical mitral valve asks to switch from warfarin to apixaban so he can stop the blood draws. What is correct?",
+          "choices": [
+            "Switch, using the standard apixaban dose",
+            "Switch, but check anti-Xa levels monthly",
+            "Stay on warfarin; DOACs are contraindicated with mechanical valves",
+            "Switch to enoxaparin indefinitely instead"
+          ],
+          "answer": 2,
+          "why": "The trial of dabigatran in mechanical valves was stopped early for both excess thromboembolism and excess bleeding, and the finding is extended to all DOACs. Anti-Xa monitoring does not fix the mechanism, and indefinite enoxaparin is impractical and not the standard."
+        },
+        {
+          "q": "A patient with known Wolff-Parkinson-White arrives in atrial fibrillation at 220 beats per minute with wide, irregular complexes and a blood pressure of 104/68. Which drug is dangerous here?",
+          "choices": [
+            "Procainamide",
+            "Diltiazem",
+            "Magnesium sulfate",
+            "Amiodarone given slowly"
+          ],
+          "answer": 1,
+          "why": "Blocking the AV node with diltiazem shunts conduction down the accessory pathway and can degenerate into ventricular fibrillation. The same applies to adenosine, verapamil, digoxin, and beta blockers. Procainamide slows the accessory pathway itself and is the preferred drug."
+        },
+        {
+          "q": "A patient in acute heart failure is cool, has a narrow pulse pressure, a lactate of 4.2 mmol/L, and crackles. What is the priority?",
+          "choices": [
+            "Double the furosemide dose",
+            "Start metoprolol for rate control",
+            "Give a 1 L normal saline bolus",
+            "Start an inotrope such as dobutamine"
+          ],
+          "answer": 3,
+          "why": "Cool skin, narrow pulse pressure, and rising lactate define cold and wet — cardiogenic shock. Perfusion must be restored before congestion can be cleared. More diuretic worsens hypoperfusion, a new beta blocker removes the remaining inotropy, and a fluid bolus worsens congestion."
+        }
+      ]
+    },
+    {
+      "id": "pa-pharm-l13",
+      "title": "Pain second pass: multimodal analgesia and opioid conversion",
+      "minutes": 8,
+      "body": "## Attack pain at several points at once\n\nPain is generated at the injured tissue, carried up the nerve, and amplified in the spinal cord and brain. One drug blocks one of those points. Multimodal analgesia blocks several, so each drug can be given at a lower, safer dose while the total relief is greater.\n\nA reasonable adult backbone is acetaminophen `1000 mg` scheduled every `6` hours plus an NSAID such as ibuprofen `400-600 mg` or ketorolac `15 mg` IV, with an opioid reserved for what those do not cover. Scheduled dosing beats as-needed dosing, because chasing pain that has already peaked always takes more drug.\n\n| Target | Agent |\n|---|---|\n| Tissue prostaglandins | NSAID, ketorolac |\n| Central pain processing | acetaminophen |\n| Nerve conduction | lidocaine infiltration, nerve block, lidocaine patch |\n| NMDA wind-up | ketamine |\n| Opioid mu receptor | morphine, hydromorphone, fentanyl |\n| Neuropathic firing | gabapentin, duloxetine, nortriptyline |\n| Smooth muscle spasm | IV lidocaine `1.5 mg/kg` for renal colic |\n\n## The conversion table\n\nAll conversions are anchored to `30 mg` of oral morphine, which is `1` oral morphine milligram equivalent set of `30`.\n\n| Drug and route | Equal to `30 mg` oral morphine |\n|---|---|\n| Morphine IV | `10 mg` |\n| Hydromorphone PO | `7.5 mg` |\n| Hydromorphone IV | `1.5 mg` |\n| Oxycodone PO | `20 mg` |\n| Hydrocodone PO | `30 mg` |\n| Tramadol PO | `300 mg` |\n| Fentanyl IV | `100 mcg` |\n| Codeine PO | `200 mg` |\n\nWhen switching from one opioid to another, calculate the equivalent dose and then **cut it by `25%` to `50%`**. Tolerance to one mu agonist does not transfer completely to another (incomplete cross-tolerance), so the full calculated dose of the new drug is often an overdose.\n\n> **Trap:** Fentanyl patches are never started in an opioid-naive patient, take `12-24` hours to reach effect, and keep releasing drug for `12-24` hours after removal. A patch on a febrile patient absorbs faster and can overdose them.\n\n## The naive patient and the tolerant patient\n\nOpioid-naive means no regular opioid for the past week. Start small: fentanyl `25-50 mcg` IV, morphine `2-4 mg` IV, hydromorphone `0.2-0.5 mg` IV, then reassess in `10-15` minutes and repeat.\n\nA tolerant patient on `120` oral morphine equivalents a day may need two to three times a naive dose simply to reach their baseline, and undertreating them is both cruel and ineffective. Calculate from their home regimen rather than from a standard order set.\n\nPatients on buprenorphine for opioid use disorder keep taking it. Its tight receptor grip does not block analgesia, it just means a full agonist must be titrated up against it. Stopping buprenorphine to make room for morphine causes withdrawal and worse pain.\n\nIn a tolerant patient who stops breathing, naloxone is diluted and given in `0.04 mg` increments so respiration returns without stripping every receptor and triggering violent withdrawal.\n\n## Ketamine and blocks\n\nKetamine at `0.1-0.3 mg/kg` IV infused over `10-15` minutes gives real analgesia without dropping blood pressure or respiratory drive, and it reduces opioid requirement for hours. A subdissociative infusion runs `0.1-0.3 mg/kg/h`. Dissociative doses are `1-2 mg/kg` IV or `4 mg/kg` IM.\n\nRegional blocks are worth recognizing even when someone else places them. A fascia iliaca block for a hip fracture reduces opioid use and delirium in older adults. Serratus anterior blocks help rib fractures keep breathing deeply, which prevents pneumonia. Digital blocks with lidocaine containing epinephrine are safe; the old warning about fingers and epinephrine has not survived the evidence.\n\n> **On shift:** The ultrasound machine, a block tray, and a set of vitals with the monitor on are what the clinician needs before any block. Local anesthetic systemic toxicity is the risk, and lipid emulsion should be findable in under a minute.",
+      "keyPoints": [
+        "Multimodal means blocking several points at once: acetaminophen 1000 mg plus an NSAID, with opioid as the add-on.",
+        "30 mg oral morphine equals 10 mg IV morphine, 1.5 mg IV hydromorphone, 20 mg oxycodone, or 100 mcg IV fentanyl.",
+        "After converting opioids, reduce the calculated dose by 25-50% for incomplete cross-tolerance.",
+        "Continue buprenorphine and titrate a full agonist on top; stopping it causes withdrawal and worse pain.",
+        "Ketamine 0.1-0.3 mg/kg IV over 10-15 minutes relieves severe pain without hypotension or apnea."
+      ],
+      "checks": [
+        {
+          "q": "A patient takes oxycodone 10 mg PO four times daily at home. Converted to IV hydromorphone, what is the safe starting approach?",
+          "choices": [
+            "Calculate the equivalent and give the full calculated dose",
+            "Calculate the equivalent, then reduce it by 25-50% for incomplete cross-tolerance",
+            "Use the standard opioid-naive dose of 0.2 mg",
+            "Hold all opioids until a pain service consult"
+          ],
+          "answer": 1,
+          "why": "40 mg of oxycodone is 60 mg oral morphine equivalents, which is about 3 mg IV hydromorphone per day; tolerance does not transfer fully between mu agonists, so the calculated dose is reduced 25-50%. A naive dose undertreats a tolerant patient, and holding opioids is not analgesia."
+        },
+        {
+          "q": "Why is a fentanyl patch inappropriate for acute pain in an opioid-naive patient?",
+          "choices": [
+            "It is a partial agonist with a ceiling effect",
+            "It causes more nausea than other opioids",
+            "It takes 12-24 hours to work and keeps releasing for 12-24 hours after removal",
+            "It cannot be combined with acetaminophen"
+          ],
+          "answer": 2,
+          "why": "The patch is a slow depot: it is useless for pain now and dangerous later, because removing it does not stop absorption. It is a full agonist, not a partial one, and it combines freely with acetaminophen."
+        }
+      ]
+    },
+    {
+      "id": "pa-pharm-l14",
+      "title": "Psychiatric drugs second pass: antidepressants, antipsychotics, and the agitation ladder",
+      "minutes": 9,
+      "body": "## Antidepressants sorted by what they break\n\nAll of them raise serotonin, norepinephrine, or both in the synapse. They separate by side effect, not by how well they work.\n\n| Class | Examples | The thing to know |\n|---|---|---|\n| SSRI | sertraline, fluoxetine, escitalopram | first line; fluoxetine has a `4-6` day half-life so it self-tapers; citalopram and escitalopram prolong QT |\n| SNRI | venlafaxine, duloxetine | venlafaxine raises blood pressure at higher doses; duloxetine also treats neuropathic pain |\n| Atypical | bupropion | no sexual side effects, but it lowers the seizure threshold — avoid in eating disorders and alcohol withdrawal |\n| Atypical | mirtazapine | sedating and increases appetite, which is why it is chosen for the thin insomniac |\n| Tricyclic | amitriptyline, nortriptyline | lethal in overdose through sodium channel blockade |\n| MAOI | phenelzine, tranylcypromine | hypertensive crisis with aged cheese and cured meat; needs a `2`-week washout, `5` weeks after fluoxetine |\n\nThe mood lift takes `4` to `6` weeks; sleep and appetite improve first. Stopping paroxetine or venlafaxine abruptly causes a flu-like discontinuation syndrome with electric shock sensations. All antidepressants carry a boxed warning for increased suicidal thinking under age `25`, which is a reason to follow closely, not a reason to withhold treatment.\n\n## Antipsychotics and the movements they cause\n\nBlocking dopamine D2 receptors in the limbic system treats psychosis; blocking the same receptor in the motor pathway causes movement disorders. High-potency typicals (haloperidol, fluphenazine) block hard and cause the most movement problems. Low-potency typicals (chlorpromazine) cause sedation, hypotension, and dry mouth instead.\n\nAmong the atypicals: risperidone causes the most movement side effects and raises prolactin; olanzapine causes weight gain and diabetes; quetiapine is sedating and is the safest in Parkinson disease; ziprasidone prolongs QT; aripiprazole causes akathisia; clozapine is the only drug proven in treatment-resistant schizophrenia and requires absolute neutrophil count monitoring for agranulocytosis, plus watching for myocarditis and seizures.\n\n| Movement problem | When it appears | Treatment |\n|---|---|---|\n| Acute dystonia | hours to days | benztropine `1-2 mg` or diphenhydramine `25-50 mg` |\n| Akathisia | days to weeks | lower the dose, propranolol `10-20 mg` TID |\n| Drug-induced parkinsonism | weeks to months | reduce dose or switch agent |\n| Tardive dyskinesia | months to years | often permanent; valbenazine or deutetrabenazine |\n| Neuroleptic malignant syndrome | any time | stop the drug, cool, dantrolene, bromocriptine |\n\n> **Trap:** Akathisia is routinely mistaken for worsening agitation, and the reflex is to give more antipsychotic, which makes it worse. A patient who says the feeling is in their legs and cannot stop moving them has akathisia.\n\n## Mood stabilizers\n\nLithium works in a narrow window of `0.6-1.2 mEq/L`. Thiazides, NSAIDs, and ACE inhibitors all reduce its clearance and push levels toward tremor, confusion, and seizures. Chronic use causes nephrogenic diabetes insipidus and hypothyroidism, so kidney and thyroid function are checked regularly.\n\nValproate causes liver injury, pancreatitis, and hyperammonemic encephalopathy, and it is one of the worst teratogens in medicine (neural tube defects, reduced IQ). Carbamazepine causes hyponatremia, autoinduces its own metabolism, and carries a Stevens-Johnson risk tied to the HLA-B*1502 allele in patients of Asian ancestry, who are screened first. Lamotrigine is well tolerated but must be titrated slowly over weeks, because fast titration causes serious rash.\n\n## The agitation ladder\n\n1. Verbal de-escalation, space, and a quiet room. Check a glucose and a pulse oximetry — hypoglycemia and hypoxia look exactly like agitation.\n2. Oral, if the patient will take it: lorazepam `1-2 mg`, olanzapine `5-10 mg` dissolvable, or risperidone `2 mg`.\n3. Intramuscular: haloperidol `5 mg` with or without lorazepam `2 mg`, olanzapine `10 mg` IM, or midazolam `5 mg` IM, which is the fastest benzodiazepine by that route.\n4. Ketamine `4 mg/kg` IM for extreme, dangerous agitation, with airway equipment at the bedside.\n\n> **Key:** Do not combine intramuscular olanzapine with an intramuscular benzodiazepine; the pair causes serious respiratory depression and hypotension. Physical restraint without chemical calming leaves a fighting patient at risk of rhabdomyolysis and sudden death.",
+      "keyPoints": [
+        "SSRIs are first line, take 4-6 weeks, and carry a boxed suicidality warning under age 25.",
+        "Bupropion lowers the seizure threshold; mirtazapine sedates and raises appetite; MAOIs cause tyramine crisis.",
+        "Dystonia appears in hours, akathisia in days, parkinsonism in weeks, tardive dyskinesia in months to years.",
+        "Lithium 0.6-1.2 mEq/L rises with thiazides, NSAIDs, and ACE inhibitors; valproate is a severe teratogen.",
+        "Agitation ladder: de-escalate, then oral, then IM — and never combine IM olanzapine with an IM benzodiazepine."
+      ],
+      "checks": [
+        {
+          "q": "Two days after starting risperidone, a patient paces constantly and says he feels a crawling restlessness in his legs that he cannot stop. What is happening?",
+          "choices": [
+            "Akathisia, which improves with a lower dose or propranolol",
+            "Tardive dyskinesia, which is permanent",
+            "Worsening psychosis needing a higher antipsychotic dose",
+            "Neuroleptic malignant syndrome"
+          ],
+          "answer": 0,
+          "why": "Restlessness localized to the legs within days of starting a D2 blocker is akathisia. Tardive dyskinesia takes months to years and involves involuntary orofacial movements. Increasing the dose worsens akathisia, and NMS involves rigidity, fever, and autonomic instability."
+        },
+        {
+          "q": "A patient on lithium 0.8 mEq/L is started on hydrochlorothiazide for hypertension. What should be anticipated?",
+          "choices": [
+            "The lithium level will fall and the mood may destabilize",
+            "The lithium level will rise toward toxicity",
+            "No interaction; lithium is not renally cleared",
+            "The thiazide will cause serotonin syndrome"
+          ],
+          "answer": 1,
+          "why": "Lithium is cleared entirely by the kidney and is handled like sodium. Thiazides, NSAIDs, and ACE inhibitors all reduce clearance and raise the level toward tremor, confusion, and seizures. Serotonin syndrome involves serotonergic drugs, not lithium plus a diuretic."
+        },
+        {
+          "q": "A combative patient needs rapid intramuscular sedation. Which combination should be avoided?",
+          "choices": [
+            "Haloperidol 5 mg IM plus lorazepam 2 mg IM",
+            "Midazolam 5 mg IM alone",
+            "Olanzapine 10 mg IM plus lorazepam 2 mg IM",
+            "Ketamine 4 mg/kg IM with airway equipment ready"
+          ],
+          "answer": 2,
+          "why": "IM olanzapine combined with an IM benzodiazepine causes excessive respiratory depression and hypotension, and the manufacturer warns against it. Haloperidol with lorazepam is the traditional pairing, midazolam alone is acceptable, and ketamine is appropriate for extreme agitation with monitoring."
+        }
+      ]
+    },
+    {
+      "id": "pa-pharm-l15",
+      "title": "Pediatric dosing: the principles and fifteen worked examples",
+      "minutes": 9,
+      "body": "## Four principles before any number\n\n1. **Everything is per kilogram, and the kilogram is real.** Weigh the child or use a length-based tape. Parent estimates are wrong often enough to matter.\n2. **The adult dose is a ceiling.** A `60 kg` teenager on acetaminophen `15 mg/kg` would calculate to `900 mg`, but the single adult dose stops at `1000 mg`, and the daily maximum still applies.\n3. **Concentration is a separate question from dose.** Pediatric liquids come in several strengths; acetaminophen is `160 mg/5 mL`, ibuprofen `100 mg/5 mL`. Calculating milligrams and then handing over the wrong bottle is a common and dangerous error.\n4. **Newborns are not small children.** Immature liver enzymes and immature kidneys mean longer intervals, and drugs like ceftriaxone are avoided in jaundiced neonates.\n\n> **Key:** Say the dose out loud as milligrams per kilogram, the total milligrams, and the volume in milliliters. Three numbers spoken back is the check that catches tenfold errors.\n\n## Fifteen worked examples\n\n| Order | Weight | Work | Give |\n|---|---|---|---|\n| Acetaminophen `15 mg/kg` PO, `160 mg/5 mL` | `18 kg` | `270 mg`; `270 / 32 mg per mL` | `8.4 mL` |\n| Ibuprofen `10 mg/kg` PO, `100 mg/5 mL` | `22 kg` | `220 mg`; `220 / 20 mg per mL` | `11 mL` |\n| Amoxicillin `90 mg/kg/day` divided BID | `16 kg` | `1,440 mg/day` | `720 mg` per dose |\n| Epinephrine anaphylaxis `0.01 mg/kg` IM, `1 mg/mL` | `12 kg` | `0.12 mg` | `0.12 mL` |\n| Epinephrine arrest `0.01 mg/kg` IV, `0.1 mg/mL` | `10 kg` | `0.1 mg` | `1 mL` |\n| Isotonic fluid bolus `20 mL/kg` | `14 kg` | | `280 mL` |\n| Maintenance fluid by 4-2-1 | `26 kg` | `40 + 20 + 6` | `66 mL/h` |\n| Dextrose `0.5 g/kg` as D10 (`5 mL/kg`) | `8 kg` | `4 g` | `40 mL` |\n| Naloxone `0.1 mg/kg` IV, max `2 mg` | `15 kg` | `1.5 mg` | `1.5 mg` |\n| Midazolam intranasal `0.2 mg/kg`, `5 mg/mL` | `20 kg` | `4 mg` | `0.8 mL` |\n| Lorazepam `0.1 mg/kg` IV, max `4 mg` | `25 kg` | `2.5 mg` | `2.5 mg` |\n| Dexamethasone croup `0.6 mg/kg`, max `16 mg` | `12 kg` | `7.2 mg` | `7.2 mg` |\n| Ondansetron `0.15 mg/kg` IV | `20 kg` | `3 mg` | `3 mg` |\n| Ceftriaxone meningitis `100 mg/kg/day` | `9 kg` | `900 mg/day` | `450 mg` every `12` h |\n| Morphine `0.1 mg/kg` IV | `18 kg` | `1.8 mg` | `1.8 mg` |\n\n## Numbers that are not weight-based\n\nEnergy doses scale with weight but equipment scales with age. Defibrillation is `2 J/kg` for the first shock and `4 J/kg` after that. Synchronized cardioversion is `0.5-1 J/kg`, then `2 J/kg`. Endotracheal tube size is age in years divided by `4` plus `4` for uncuffed, or plus `3.5` for cuffed.\n\nNormal vital signs move with age, and a number that is reassuring in an adult can be a warning in an infant. A heart rate of `100` is normal in a `2`-year-old and alarming in a `15`-year-old. Hypotension arrives late in children, so tachycardia and a delayed capillary refill are the early signs of shock.\n\n> **Trap:** Children compensate until they collapse. A child with a normal blood pressure, a heart rate of `180`, cool mottled skin, and a capillary refill of `4` seconds is in compensated shock and needs `20 mL/kg` now, not observation.\n\n## The near-miss list\n\nThe tenfold error is the one that kills: a decimal point in the wrong place turns `0.12 mL` of epinephrine into `1.2 mL`. The second is using pounds as kilograms, which more than doubles every dose. The third is giving the adult concentration of a drug because it is the vial on the shelf; `0.1 mg/mL` epinephrine and `1 mg/mL` epinephrine sit next to each other and are not interchangeable.",
+      "keyPoints": [
+        "Every pediatric dose is mg/kg, capped at the adult dose, and checked against the bottle's concentration.",
+        "Say mg/kg, total mg, and mL out loud — three numbers spoken back catches the tenfold error.",
+        "Anaphylaxis epinephrine is 0.01 mg/kg IM of the 1 mg/mL concentration; arrest uses 0.01 mg/kg IV of 0.1 mg/mL.",
+        "Bolus is 20 mL/kg; maintenance is 4-2-1; defibrillation 2 J/kg then 4 J/kg; cardioversion 0.5-1 J/kg.",
+        "Children hold blood pressure until they crash, so tachycardia and slow capillary refill are the early shock signs."
+      ],
+      "checks": [
+        {
+          "q": "A 12 kg child needs intramuscular epinephrine for anaphylaxis. Which is correct?",
+          "choices": [
+            "`0.12 mL` of the `1 mg/mL` concentration",
+            "`1.2 mL` of the `1 mg/mL` concentration",
+            "`0.12 mL` of the `0.1 mg/mL` concentration",
+            "`1.2 mL` of the `0.1 mg/mL` concentration"
+          ],
+          "answer": 0,
+          "why": "0.01 mg/kg times 12 kg is 0.12 mg. At 1 mg/mL that is 0.12 mL. The 0.1 mg/mL concentration is the cardiac arrest IV strength and would require ten times the volume, and 1.2 mL of 1 mg/mL is a tenfold overdose."
+        },
+        {
+          "q": "What is the maintenance fluid rate for a 26 kg child using the 4-2-1 rule?",
+          "choices": [
+            "`52 mL/h`",
+            "`66 mL/h`",
+            "`104 mL/h`",
+            "`26 mL/h`"
+          ],
+          "answer": 1,
+          "why": "4 mL/kg/h for the first 10 kg is 40, 2 mL/kg/h for the next 10 kg is 20, and 1 mL/kg/h for the remaining 6 kg is 6, totaling 66 mL/h. 52 is 2 mL/kg, 104 is 4 mL/kg across the whole weight, and 26 is 1 mL/kg."
+        },
+        {
+          "q": "A 3-year-old has a heart rate of 178, a blood pressure of 92/58, mottled skin, and a capillary refill of 4 seconds. What does the normal blood pressure mean?",
+          "choices": [
+            "The child is not in shock and can be observed",
+            "The child is in compensated shock and needs a 20 mL/kg bolus",
+            "The blood pressure cuff is the wrong size",
+            "The child needs a vasopressor before any fluid"
+          ],
+          "answer": 1,
+          "why": "Children maintain blood pressure by raising heart rate and clamping peripheral vessels until they suddenly decompensate. Tachycardia with poor perfusion is compensated shock and is treated with 20 mL/kg of isotonic crystalloid; pressors come after fluid, not before."
+        }
+      ]
+    },
+    {
+      "id": "pa-pharm-l16",
+      "title": "Interactions that stack: QT, serotonin, CYP, and potassium",
+      "minutes": 8,
+      "body": "## Most dangerous interactions are additions, not surprises\n\nA single QT-prolonging drug rarely hurts anyone. Three of them, in a patient whose potassium is `3.1 mEq/L`, can produce torsades de pointes. The mental model for the interactions that actually send people to the intensive care unit is a stack: several ordinary drugs each pushing the same physiologic dial in the same direction.\n\n## The QT stack\n\nQT prolongation means the ventricle takes too long to repolarize, which leaves a window for a beat to land on the T wave and start polymorphic ventricular tachycardia (torsades de pointes). A corrected QT above `500 ms`, or an increase of more than `60 ms` from baseline, is the danger line.\n\nCommon contributors: ondansetron, haloperidol, droperidol, methadone, azithromycin, erythromycin, clarithromycin, levofloxacin and ciprofloxacin, citalopram and escitalopram, fluconazole, amiodarone, sotalol, and most antipsychotics. Now add the non-drug amplifiers: low potassium, low magnesium, bradycardia, female sex, and starvation.\n\nTreatment of torsades is magnesium sulfate `2 g` IV push, correcting potassium to about `4.0 mEq/L`, stopping the offending drugs, and overdrive pacing or isoproterenol if it keeps recurring.\n\n> **On shift:** A patient on methadone who gets ondansetron and levofloxacin has three QT drugs on board. Getting a `12`-lead before the second dose, and asking whether potassium and magnesium were replaced, is a genuinely useful thing to raise.\n\n## The serotonin stack\n\nSerotonin syndrome takes two serotonergic drugs far more often than one. The usual pairs are an SSRI or SNRI plus tramadol, linezolid, a triptan, methylene blue, dextromethorphan, St. John's wort, or an MAO inhibitor. Cocaine, MDMA, and lithium add to the load.\n\nSymptoms begin within `6` to `24` hours of the new drug: agitation, dilated pupils, sweating, diarrhea, hyperreflexia, and clonus that is strongest in the ankles. Fever above `41` degrees Celsius is the lethal form.\n\n## The CYP stack\n\n| Pair | What happens |\n|---|---|\n| simvastatin plus clarithromycin, an azole, or grapefruit | statin level multiplies; rhabdomyolysis |\n| warfarin plus trimethoprim-sulfamethoxazole, metronidazole, or fluconazole | INR climbs into bleeding range within days |\n| clopidogrel plus omeprazole | CYP2C19 blocked, less active drug, more stent thrombosis; pantoprazole is preferred |\n| rifampin plus almost anything | induces clearance; oral contraceptive failure, transplant rejection, lost seizure control |\n| any azole plus tacrolimus or cyclosporine | levels rise sharply, kidney injury |\n\nPravastatin and rosuvastatin are not CYP3A4 substrates and are the safer statins when an interacting drug is needed.\n\n## The potassium stack\n\nHyperkalemia is usually built, not caught. Each of these raises potassium a little: ACE inhibitors and ARBs, spironolactone and eplerenone, trimethoprim-sulfamethoxazole (which blocks the distal tubule the way amiloride does), NSAIDs, heparin, beta blockers, potassium supplements, and salt substitutes. Put three of them in a patient with chronic kidney disease and the potassium reaches `6.8 mEq/L` quietly.\n\n> **Key:** Trimethoprim-sulfamethoxazole in a patient already on lisinopril and spironolactone is one of the most reliable ways to produce dangerous hyperkalemia in outpatient medicine. It also raises creatinine without injuring the kidney, which confuses the picture further.\n\n## Three more stacks worth naming\n\n**Sedation**: opioid plus benzodiazepine plus gabapentin plus alcohol plus a muscle relaxant. Each is legal, each is prescribed, and together they stop breathing.\n\n**Bleeding**: anticoagulant plus antiplatelet plus NSAID plus an SSRI, which impairs platelet serotonin release. Four drugs, four independent hits on hemostasis.\n\n**Anticholinergic burden**: diphenhydramine plus oxybutynin plus a tricyclic plus an antipsychotic in an older adult produces delirium, urinary retention, and falls, and the cause is almost never looked for because each drug alone seems harmless.",
+      "keyPoints": [
+        "Dangerous interactions are usually additive stacks, not exotic single pairings.",
+        "QTc above 500 ms or a rise over 60 ms is the danger line; torsades is treated with magnesium 2 g IV.",
+        "SSRI plus tramadol, linezolid, or an MAOI is the classic serotonin stack, with clonus worst in the ankles.",
+        "Trimethoprim-sulfamethoxazole added to an ACE inhibitor and spironolactone reliably causes hyperkalemia.",
+        "Simvastatin with an azole, clarithromycin, or grapefruit causes rhabdomyolysis; pravastatin and rosuvastatin are safer."
+      ],
+      "checks": [
+        {
+          "q": "A patient on methadone and citalopram is ordered ondansetron and levofloxacin. Which laboratory value most changes the risk?",
+          "choices": [
+            "Serum albumin",
+            "Serum potassium and magnesium",
+            "Serum bicarbonate",
+            "White blood cell count"
+          ],
+          "answer": 1,
+          "why": "Low potassium and low magnesium amplify QT prolongation and are the correctable half of torsades risk. Albumin affects protein binding but not repolarization, and bicarbonate and white count are unrelated to the QT interval."
+        },
+        {
+          "q": "A 78-year-old on lisinopril and spironolactone is treated for a urinary infection and returns 5 days later with weakness and a potassium of 6.6 mEq/L. Which antibiotic was most likely given?",
+          "choices": [
+            "Nitrofurantoin",
+            "Cephalexin",
+            "Trimethoprim-sulfamethoxazole",
+            "Fosfomycin"
+          ],
+          "answer": 2,
+          "why": "Trimethoprim blocks the distal tubule sodium channel much as amiloride does, which retains potassium. Added to an ACE inhibitor and an aldosterone blocker it is a well-documented cause of severe hyperkalemia. The other three do not affect potassium handling."
+        },
+        {
+          "q": "A patient on simvastatin 40 mg daily is started on clarithromycin. What is the concern?",
+          "choices": [
+            "The statin will lose effect and cholesterol will rise",
+            "The statin level will rise sharply, risking rhabdomyolysis",
+            "Clarithromycin will be cleared too quickly to work",
+            "The combination causes serotonin syndrome"
+          ],
+          "answer": 1,
+          "why": "Clarithromycin is a strong CYP3A4 inhibitor and simvastatin is a CYP3A4 substrate, so simvastatin exposure multiplies and muscle breakdown follows. Rifampin would be the inducer that lowers levels; serotonin syndrome involves serotonergic drugs, not statins."
+        }
+      ]
+    },
+    {
+      "id": "pa-pharm-l17",
+      "title": "Adverse drug reactions and how they present",
+      "minutes": 9,
+      "body": "## Allergy, pseudo-allergy, and everything else\n\nA true allergy is immune-mediated. Type I is IgE and immediate: hives, wheeze, swelling, hypotension within minutes. Type IV is T-cell and delayed: a rash days to weeks later, which is the mechanism behind the serious skin reactions. A pseudo-allergic (anaphylactoid) reaction looks similar but releases histamine directly, without antibodies, so it is rate-dependent and often survivable by slowing the infusion — vancomycin flushing, radiocontrast reactions, and the histamine flush from morphine.\n\n## The reactions that must be recognized on sight\n\n**Anaphylaxis.** Minutes after exposure, two or more body systems: skin plus airway, breathing, circulation, or gut. Epinephrine `0.3-0.5 mg` IM in the outer thigh immediately, repeated every `5-15` minutes. Antihistamines and steroids treat the itch and the late phase, never the airway.\n\n**ACE-inhibitor angioedema.** Swelling of the lips, tongue, or larynx with **no hives and no itch**, because it is bradykinin, not histamine. It can appear after years on the drug, and it is more common in Black patients. Epinephrine, antihistamines, and steroids do not reliably work; the airway is the treatment, and the drug is stopped for life. ARBs are usually tolerated afterward but are introduced cautiously.\n\n**Stevens-Johnson syndrome and toxic epidermal necrolysis.** One to three weeks after a new drug: fever, a painful rather than itchy rash, sheets of skin separating with gentle pressure, and erosions of at least two mucous membranes (eyes, mouth, genitals). Under `10%` of body surface is Stevens-Johnson, over `30%` is toxic epidermal necrolysis. Usual culprits are sulfonamides, lamotrigine, carbamazepine, allopurinol, nevirapine, and NSAIDs. Treatment is stopping the drug and a burn center.\n\n**DRESS.** Two to eight weeks after the drug: fever, a widespread rash, facial swelling, eosinophilia, and hepatitis. Allopurinol, anticonvulsants, sulfonamides, and vancomycin are the classic causes. It relapses for weeks after the drug is stopped.\n\n## The four hyperthermic syndromes, side by side\n\n| Syndrome | Onset | Muscles | Pupils | Skin | Give |\n|---|---|---|---|---|---|\n| Serotonin syndrome | hours | clonus, hyperreflexia, worse in legs | dilated | sweaty | benzodiazepines, cooling, cyproheptadine `12 mg` |\n| Neuroleptic malignant syndrome | days to weeks | lead-pipe rigidity, hyporeflexia | normal | sweaty | stop the drug, dantrolene, bromocriptine |\n| Malignant hyperthermia | minutes after anesthetic | masseter spasm, rigidity | normal | mottled | dantrolene `2.5 mg/kg` IV |\n| Anticholinergic toxicity | hours | normal tone | dilated | hot, **dry**, flushed | benzodiazepines, physostigmine if isolated |\n\n> **Key:** Clonus separates serotonin syndrome from neuroleptic malignant syndrome; dry skin separates anticholinergic toxicity from both. In malignant hyperthermia the first sign is a rising end-tidal carbon dioxide that will not come down with more ventilation, not the temperature.\n\n## Organ-specific reactions worth knowing\n\n- **Agranulocytosis**: clozapine, methimazole, ticlopidine. A sore throat and fever in a patient on clozapine is a neutrophil count, not a strep swab.\n- **Rhabdomyolysis**: statins, especially stacked with a CYP3A4 inhibitor; presents as aching weakness with dark urine and a high creatine kinase.\n- **Lactic acidosis**: metformin accumulating in kidney injury.\n- **Acute kidney injury**: NSAIDs, contrast, aminoglycosides, vancomycin (worse with piperacillin-tazobactam).\n- **Hepatitis**: isoniazid, acetaminophen, amiodarone, valproate.\n- **Drug fever**: a well-looking patient with a fever, sometimes a rash and eosinophils, and no source. Beta-lactams and anticonvulsants are common causes, and the fever resolves `72` hours after stopping.\n\n> **Trap:** Documenting the word allergy without the reaction permanently narrows what a patient can receive. Nausea after codeine is an intolerance. Hives within `20` minutes of amoxicillin is an allergy. Write down which one happened and how long after the dose.",
+      "keyPoints": [
+        "ACE-inhibitor angioedema is bradykinin-mediated: no hives, no itch, and antihistamines and steroids do not fix it.",
+        "Stevens-Johnson and toxic epidermal necrolysis appear 1-3 weeks in, with a painful rash and two or more mucous membranes eroded.",
+        "Clonus means serotonin syndrome; lead-pipe rigidity means neuroleptic malignant syndrome; dry skin means anticholinergic.",
+        "Malignant hyperthermia announces itself first as a rising end-tidal carbon dioxide, not a rising temperature.",
+        "Document the reaction and its timing, not just the word allergy — it follows the patient for life."
+      ],
+      "checks": [
+        {
+          "q": "A 60-year-old on lisinopril for 4 years wakes with a swollen tongue and lip, no hives, and no itching. What is true?",
+          "choices": [
+            "Years of tolerance rule out the ACE inhibitor as the cause",
+            "It is bradykinin-mediated angioedema; secure the airway and stop the drug permanently",
+            "Diphenhydramine and methylprednisolone will reliably reverse it",
+            "The absence of hives means this is not an airway threat"
+          ],
+          "answer": 1,
+          "why": "ACE-inhibitor angioedema can begin after years of use and is bradykinin-mediated, which is exactly why there are no hives and why antihistamines and steroids do not reliably work. The tongue and larynx can obstruct, so airway management comes first and the drug is stopped for life."
+        },
+        {
+          "q": "Ten minutes after succinylcholine and a volatile anesthetic, the end-tidal carbon dioxide climbs from 38 to 72 mmHg despite increased ventilation, and the jaw is rigid. What is the treatment?",
+          "choices": [
+            "Cyproheptadine 12 mg",
+            "Bromocriptine and cooling alone",
+            "Dantrolene 2.5 mg/kg IV, repeated as needed",
+            "Physostigmine 2 mg IV"
+          ],
+          "answer": 2,
+          "why": "Rising end-tidal carbon dioxide that does not respond to ventilation, with masseter rigidity after succinylcholine, is malignant hyperthermia. Dantrolene blocks calcium release from the sarcoplasmic reticulum. Cyproheptadine treats serotonin syndrome and physostigmine treats anticholinergic toxicity."
+        },
+        {
+          "q": "Which finding most distinguishes anticholinergic toxicity from serotonin syndrome?",
+          "choices": [
+            "Dilated pupils",
+            "Agitation and confusion",
+            "Tachycardia",
+            "Hot, dry, flushed skin with absent bowel sounds"
+          ],
+          "answer": 3,
+          "why": "Both cause dilated pupils, agitation, and tachycardia. Anticholinergic toxicity blocks sweating and gut motility, so the skin is dry and bowel sounds are absent, whereas serotonin syndrome causes sweating, hyperactive bowel sounds, and clonus."
+        }
+      ]
+    },
+    {
+      "id": "pa-pharm-l18",
+      "title": "The antidote table",
+      "minutes": 9,
+      "body": "## Most poisonings have no antidote\n\nThe backbone of poisoning care is airway, breathing, circulation, glucose, and time. Only a short list of exposures has a specific reversal agent, and knowing that list cold is worth more than knowing a hundred toxins. The table below is the list.\n\n| Poison or drug | Antidote | Adult dose | How it works |\n|---|---|---|---|\n| Opioids | naloxone | `0.4-2 mg` IV, IM, or IN; `0.04 mg` steps if tolerant | competitive mu antagonist |\n| Benzodiazepines | flumazenil | `0.2 mg` IV | GABA-A antagonist; rarely used, causes seizures |\n| Acetaminophen | N-acetylcysteine | `150 mg/kg` load, then `50`, then `100 mg/kg` | restores glutathione so NAPQI is neutralized |\n| Organophosphates, nerve agents | atropine plus pralidoxime | atropine `2-6 mg` IV doubled every `5` min until secretions dry; pralidoxime `1-2 g` | atropine blocks muscarinic effects; pralidoxime reactivates the enzyme |\n| Cyanide, smoke inhalation | hydroxocobalamin | `5 g` IV over `15` min | binds cyanide to form cyanocobalamin; turns skin and urine red |\n| Methanol, ethylene glycol | fomepizole | `15 mg/kg` load | blocks alcohol dehydrogenase so no toxic acid is formed |\n| Digoxin | digoxin immune Fab | `10-20` vials in arrest, `3-6` vials chronic | antibody fragments bind digoxin |\n| Beta blockers | glucagon | `3-5 mg` IV then infusion | raises cyclic AMP through its own receptor, bypassing the blocked beta receptor |\n| Calcium channel blockers | calcium, then high-dose insulin | calcium chloride `1 g` or gluconate `3 g`; insulin `1 unit/kg` bolus then `1 unit/kg/h` with dextrose | restores calcium influx; insulin is an inotrope in this setting |\n| Tricyclics, sodium channel blockade | sodium bicarbonate | `1-2 mEq/kg` IV push for QRS over `100 ms` | sodium load and alkalinization unblock the channel |\n| Local anesthetic systemic toxicity | `20%` lipid emulsion | `1.5 mL/kg` bolus, then `0.25 mL/kg/min` | a lipid sink that pulls the drug off cardiac tissue |\n| Malignant hyperthermia, NMS | dantrolene | `2.5 mg/kg` IV, repeat to `10 mg/kg` | stops calcium release inside muscle |\n| Anticholinergic toxicity | physostigmine | `1-2 mg` IV slowly | raises acetylcholine and crosses into the brain |\n| Sulfonylurea hypoglycemia | octreotide | `50 mcg` SubQ every `6` h, with dextrose | suppresses the insulin release that dextrose keeps provoking |\n\n## Four more that round out the list\n\nIron poisoning is chelated with deferoxamine. Methemoglobinemia, suspected when the pulse oximeter is stuck near `85%` and the blood is chocolate brown, is reversed with methylene blue `1-2 mg/kg`. Isoniazid overdose causes seizures that only pyridoxine `5 g` IV stops. Warfarin is reversed with vitamin K and four-factor prothrombin complex concentrate, and heparin with protamine.\n\n## The two antidotes that can kill\n\n> **Trap:** Flumazenil in a patient who takes benzodiazepines chronically, or who co-ingested a tricyclic, removes the only thing holding back seizures — and those seizures cannot then be treated with a benzodiazepine. Physostigmine given when the QRS is wide, meaning a tricyclic is on board, has caused asystole. Both drugs are reserved for narrow, known situations.\n\n## Dosing logic worth remembering\n\nNaloxone is titrated to breathing, not to consciousness. The goal is a respiratory rate of `10` or more, not an awake patient, because full reversal in a tolerant person produces vomiting, agitation, and sometimes pulmonary edema.\n\nAtropine in organophosphate poisoning has no maximum dose. The endpoint is dry secretions and clear lungs, and it is common to need tens of milligrams, far beyond any cardiac dose.\n\nN-acetylcysteine works best within `8` hours of ingestion and is still worth giving after `24` hours in established liver injury. Do not wait for the level if the history is convincing and the clock is running out.\n\n> **On shift:** Poison Control at `1-800-222-1222` is a clinical service, not a formality. They will give the exact protocol, and they track the case, which is genuinely useful when a rare antidote has to be found in the building.",
+      "keyPoints": [
+        "Naloxone is titrated to a respiratory rate of 10 or more, not to consciousness, and in tolerance it goes in 0.04 mg steps.",
+        "Atropine in organophosphate poisoning has no ceiling: the endpoint is dry secretions, often tens of milligrams.",
+        "Glucagon for beta blockers, calcium plus high-dose insulin for calcium channel blockers, bicarbonate for a wide QRS.",
+        "Hydroxocobalamin 5 g for cyanide, fomepizole for toxic alcohols, lipid emulsion for local anesthetic toxicity.",
+        "Flumazenil and physostigmine are the two antidotes that can kill: seizures and asystole respectively."
+      ],
+      "checks": [
+        {
+          "q": "An unresponsive patient with a heart rate of 38 and a blood pressure of 70/40 took an unknown quantity of metoprolol. Atropine and fluid have not helped. What is next?",
+          "choices": [
+            "Glucagon 3-5 mg IV followed by an infusion",
+            "Flumazenil 0.2 mg IV",
+            "Sodium bicarbonate 2 mEq/kg",
+            "Physostigmine 2 mg IV"
+          ],
+          "answer": 0,
+          "why": "Glucagon raises cyclic AMP through a receptor the beta blocker does not occupy, restoring rate and contractility. Flumazenil is for benzodiazepines, bicarbonate for sodium channel blockade with a wide QRS, and physostigmine for anticholinergic toxicity."
+        },
+        {
+          "q": "A patient rescued from a house fire is hypotensive with a lactate of 12 mmol/L and a normal carboxyhemoglobin trend after oxygen. Which antidote is indicated?",
+          "choices": [
+            "Methylene blue",
+            "Deferoxamine",
+            "Hydroxocobalamin 5 g IV",
+            "Pralidoxime 2 g IV"
+          ],
+          "answer": 2,
+          "why": "Smoke from burning synthetics releases cyanide, which poisons the mitochondria and produces profound lactic acidosis with hypotension. Hydroxocobalamin binds it safely even if cyanide is not confirmed. Methylene blue treats methemoglobinemia, deferoxamine treats iron, and pralidoxime treats organophosphates."
+        },
+        {
+          "q": "Why is physostigmine avoided when the QRS is 130 ms in a suspected anticholinergic overdose?",
+          "choices": [
+            "It has no effect once the QRS widens",
+            "A wide QRS suggests tricyclic sodium channel blockade, where physostigmine has caused asystole",
+            "It cannot be given with sodium bicarbonate",
+            "It only works if given within 1 hour of ingestion"
+          ],
+          "answer": 1,
+          "why": "A wide QRS points to a tricyclic, which produces anticholinergic features plus sodium channel blockade. Physostigmine in that setting has precipitated asystole and seizures, so sodium bicarbonate is given instead. The other statements are not the reason for the restriction."
+        }
+      ]
+    },
+    {
+      "id": "pa-pharm-l19",
+      "title": "Fluids, electrolyte replacement, and pressor titration",
+      "minutes": 9,
+      "body": "## Where a litre of fluid actually goes\n\nAbout `60%` of body weight is water, and two thirds of that sits inside cells. Isotonic crystalloid stays outside cells but spreads across the whole extracellular space, so of `1 L` of normal saline only about `250 mL` remains in the blood vessels an hour later. That single fact explains why fluid resuscitation takes litres and why it eventually causes swelling.\n\n| Fluid | Composition | Use |\n|---|---|---|\n| Lactated Ringer's | Na `130`, Cl `109`, K `4`, lactate `28` | preferred for most resuscitation |\n| Normal saline `0.9%` | Na `154`, Cl `154` | hyponatremia, hypochloremic alkalosis, drug compatibility |\n| Plasma-Lyte | balanced, acetate buffered | equivalent to Lactated Ringer's |\n| D5W | free water once glucose is used | a diluent, never resuscitation |\n| `3%` saline | Na `513` | symptomatic hyponatremia, `100-150 mL` bolus |\n| `5%` albumin | colloid | large-volume paracentesis, spontaneous bacterial peritonitis |\n\nLarge volumes of normal saline produce a hyperchloremic metabolic acidosis and are associated with more kidney injury than balanced fluids. The potassium of `4 mEq/L` in Lactated Ringer's frightens people but is lower than the patient's own serum potassium in hyperkalemia, so it is still the safer choice. Albumin has no general mortality benefit and is harmful in traumatic brain injury.\n\n> **Key:** After the initial `30 mL/kg` in septic shock, stop giving fluid by habit. Decide further boluses with a dynamic measure — a passive leg raise that raises blood pressure, pulse pressure variation, or a bedside ultrasound — plus lactate clearance and capillary refill.\n\n## Electrolyte replacement, with the real numbers\n\n**Potassium.** Roughly `10 mEq` raises the serum by about `0.1 mEq/L`, and the deficit is always larger than it looks because most potassium is inside cells. Peripheral IV replacement runs at no more than `10 mEq/h` because it burns; central line replacement can reach `20 mEq/h` with cardiac monitoring. Oral `40 mEq` is faster and safer when the patient can swallow.\n\n**Magnesium.** Replace it before or alongside potassium: a magnesium-depleted kidney dumps potassium no matter how much you give. `2 g` IV over `20` minutes usually, or `2 g` pushed in torsades.\n\n**Calcium.** Calcium gluconate `1 g` contains about `4.65 mEq` of elemental calcium; calcium chloride `1 g` contains about `13.6 mEq`, three times as much, and it sclerose veins so it prefers a central line. In hyperkalemia with ECG changes, calcium goes first — it stabilizes the myocardium within minutes without lowering the potassium at all.\n\n**Sodium.** Correct chronic hyponatremia by no more than `8 mEq/L` in `24` hours, or the brain shrinks away from its adapted state and osmotic demyelination follows. A seizing patient is the exception: `100-150 mL` of `3%` saline, repeated up to three times, aiming for a `4-6 mEq/L` rise, which stops seizures without exceeding the daily limit.\n\n## Pressors: what to start and how to move it\n\nThe target in most shock is a mean arterial pressure of `65 mmHg`. Chronic hypertensives may need `80-85 mmHg` to make urine, but higher targets cost more arrhythmia.\n\n1. **Norepinephrine** first, typically `0.05` to `0.5 mcg/kg/min`, adjusted every `2-5` minutes. It is mostly alpha-1 with enough beta-1 to keep the heart from slowing.\n2. **Vasopressin** `0.03 units/min` added, not titrated, once norepinephrine is climbing. It works on a different receptor, so it is catecholamine sparing.\n3. **Epinephrine** third, or first if the problem is anaphylaxis or the heart itself.\n4. **Phenylephrine** when the rhythm cannot tolerate more beta stimulation; it causes reflex bradycardia.\n5. **Dobutamine** `2-20 mcg/kg/min` or milrinone when the failure is pump failure rather than vasodilation.\n\nPush-dose pressors bridge a short gap: epinephrine `10-20 mcg` or phenylephrine `50-200 mcg` every `2-5` minutes.\n\n> **Trap:** If the pressor requirement keeps climbing, the answer is usually not more pressor. Check ionized calcium, correct severe acidosis, look for an undrained source, rule out tamponade and pneumothorax, and consider hydrocortisone `200 mg` per day. Norepinephrine extravasation is treated by infiltrating phentolamine `5-10 mg` around the site.",
+      "keyPoints": [
+        "Only about 250 mL of a 1 L isotonic bolus stays intravascular, which is why resuscitation takes litres.",
+        "Balanced fluid is preferred over large-volume normal saline, which causes hyperchloremic acidosis.",
+        "10 mEq of potassium raises serum about 0.1 mEq/L; peripheral limit 10 mEq/h, central 20 mEq/h with monitoring.",
+        "Fix magnesium or potassium will not stay; correct chronic hyponatremia by no more than 8 mEq/L per day.",
+        "Norepinephrine first to a MAP of 65, add fixed vasopressin 0.03 units/min, and treat rising requirements as a search for a cause."
+      ],
+      "checks": [
+        {
+          "q": "A patient with a potassium of 6.9 mEq/L has peaked T waves and a widening QRS. What goes in first?",
+          "choices": [
+            "Calcium gluconate 1 g IV",
+            "Insulin 10 units with dextrose",
+            "Sodium polystyrene sulfonate orally",
+            "Furosemide 40 mg IV"
+          ],
+          "answer": 0,
+          "why": "Calcium stabilizes the myocardial membrane within minutes and buys time; it does not lower potassium at all. Insulin with dextrose shifts potassium into cells over 15-30 minutes and comes next, and binders and diuretics remove potassium far more slowly."
+        },
+        {
+          "q": "A patient with chronic hyponatremia at 112 mEq/L is alert and not seizing. What is the correction limit?",
+          "choices": [
+            "Raise to 135 mEq/L within 6 hours",
+            "No more than 8 mEq/L in 24 hours",
+            "No more than 20 mEq/L in 24 hours",
+            "Correction rate does not matter if the patient is asymptomatic"
+          ],
+          "answer": 1,
+          "why": "The brain adapts to chronic hyponatremia by extruding osmoles; rapid correction shrinks it and causes osmotic demyelination, which is irreversible. Eight mEq/L in 24 hours is the safe ceiling. A seizing patient gets 3% saline for a 4-6 mEq/L rise but the daily limit still applies."
+        },
+        {
+          "q": "A septic patient is on norepinephrine at 0.6 mcg/kg/min and the pressure is still falling. What is the most useful next step?",
+          "choices": [
+            "Increase norepinephrine to 2 mcg/kg/min and continue",
+            "Switch to phenylephrine as a single agent",
+            "Add vasopressin 0.03 units/min and look for an undrained source, low calcium, acidosis, or tamponade",
+            "Give another 3 L of normal saline"
+          ],
+          "answer": 2,
+          "why": "Escalating catecholamines alone ignores correctable causes. Vasopressin adds a non-adrenergic mechanism and is catecholamine sparing, while the search for source control, ionized calcium, acidosis, and obstructive causes is what actually changes the trajectory. Phenylephrine alone is weaker here, and unguided large-volume saline worsens acidosis and edema."
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "pa-pharm-c078",
+      "front": "What three questions build an empiric antibiotic choice?",
+      "back": "What organ is infected, where was it acquired (community, hospital, healthcare exposure), and how sick is the patient. Cultures then allow de-escalation to the narrowest effective drug.",
+      "lesson": "pa-pharm-l11"
+    },
+    {
+      "id": "pa-pharm-c079",
+      "front": "What is the first-line regimen for a healthy adult outpatient with community pneumonia, and for how long?",
+      "back": "Amoxicillin `1 g` three times daily or doxycycline `100 mg` twice daily, for `5` days, provided the patient is afebrile `48` hours and off oxygen.",
+      "lesson": "pa-pharm-l11"
+    },
+    {
+      "id": "pa-pharm-c080",
+      "front": "What is the standard regimen for community pneumonia admitted to a general medical floor?",
+      "back": "Ceftriaxone `1-2 g` IV plus azithromycin `500 mg`, for `5-7` days. The macrolide covers atypicals such as Mycoplasma and Legionella.",
+      "lesson": "pa-pharm-l11"
+    },
+    {
+      "id": "pa-pharm-c081",
+      "front": "How does hospital-acquired pneumonia coverage differ from community pneumonia coverage?",
+      "back": "It must cover Pseudomonas and MRSA: cefepime or piperacillin-tazobactam plus vancomycin, usually `7` days. Community regimens cover neither organism.",
+      "lesson": "pa-pharm-l11"
+    },
+    {
+      "id": "pa-pharm-c082",
+      "front": "Name three acceptable regimens for uncomplicated cystitis in a non-pregnant woman.",
+      "back": "Nitrofurantoin `100 mg` BID for `5` days, trimethoprim-sulfamethoxazole DS BID for `3` days, or fosfomycin `3 g` once.",
+      "lesson": "pa-pharm-l11"
+    },
+    {
+      "id": "pa-pharm-c083",
+      "front": "Why can nitrofurantoin never be used for pyelonephritis?",
+      "back": "It concentrates in urine but reaches almost no concentration in kidney tissue or blood, so it cannot treat infection inside the kidney or a bloodstream infection.",
+      "lesson": "pa-pharm-l11"
+    },
+    {
+      "id": "pa-pharm-c084",
+      "front": "What is the treatment and duration for pyelonephritis discharged from the emergency department?",
+      "back": "Ceftriaxone `1 g` IV once, then ciprofloxacin `500 mg` BID for `7` days or an oral beta-lactam for `10-14` days. Admit for vomiting, hypotension, pregnancy, or obstruction.",
+      "lesson": "pa-pharm-l11"
+    },
+    {
+      "id": "pa-pharm-c085",
+      "front": "How does treatment differ between non-purulent cellulitis and a purulent abscess?",
+      "back": "Non-purulent cellulitis is streptococcal: cephalexin or cefazolin for `5` days. Purulent disease is staphylococcal and often MRSA: drainage is the treatment, adding TMP-SMX or doxycycline if cellulitis, fever, or immunosuppression is present.",
+      "lesson": "pa-pharm-l11"
+    },
+    {
+      "id": "pa-pharm-c086",
+      "front": "What findings suggest necrotizing fasciitis, and what is the treatment?",
+      "back": "Pain out of proportion to exam, skin anesthesia, crepitus, and visible hourly spread. Treatment is surgical debridement plus vancomycin, piperacillin-tazobactam, and clindamycin for toxin suppression.",
+      "lesson": "pa-pharm-l11"
+    },
+    {
+      "id": "pa-pharm-c087",
+      "front": "Give the full empiric regimen for suspected bacterial meningitis in a 68-year-old.",
+      "back": "Dexamethasone `0.15 mg/kg` with or before the first dose, ceftriaxone `2 g` IV every `12` hours, vancomycin, and ampicillin `2 g` every `4` hours for Listeria because of age over `50`.",
+      "lesson": "pa-pharm-l11"
+    },
+    {
+      "id": "pa-pharm-c088",
+      "front": "What are the first-hour targets in septic shock with an unknown source?",
+      "back": "Blood cultures then broad antibiotics within `1` hour (commonly vancomycin plus piperacillin-tazobactam or cefepime), and `30 mL/kg` of balanced crystalloid if hypotensive or lactate is `4 mmol/L` or higher.",
+      "lesson": "pa-pharm-l11"
+    },
+    {
+      "id": "pa-pharm-c089",
+      "front": "Name the treatments for gonorrhea, chlamydia, pelvic inflammatory disease, and early syphilis.",
+      "back": "Ceftriaxone `500 mg` IM once; doxycycline `100 mg` BID for `7` days; ceftriaxone plus doxycycline and metronidazole for `14` days; benzathine penicillin G `2.4 million units` IM once.",
+      "lesson": "pa-pharm-l11"
+    },
+    {
+      "id": "pa-pharm-c090",
+      "front": "Name the four mortality-lowering pillars of heart failure with reduced ejection fraction.",
+      "back": "An ARNI or ACE inhibitor/ARB, a proven beta blocker (carvedilol, metoprolol succinate, bisoprolol), a mineralocorticoid antagonist, and an SGLT2 inhibitor.",
+      "lesson": "pa-pharm-l12"
+    },
+    {
+      "id": "pa-pharm-c091",
+      "front": "Which heart failure drugs relieve symptoms but do not extend life?",
+      "back": "Furosemide and other loop diuretics relieve congestion without a mortality benefit. Digoxin reduces hospitalizations only. Both are still used, just not as survival drugs.",
+      "lesson": "pa-pharm-l12"
+    },
+    {
+      "id": "pa-pharm-c092",
+      "front": "How do you treat warm-and-wet versus cold-and-wet acute heart failure?",
+      "back": "Warm and wet: IV furosemide at `1-2.5` times the home oral dose, nitroglycerin if hypertensive, non-invasive ventilation. Cold and wet is cardiogenic shock and needs an inotrope such as dobutamine, not more diuretic.",
+      "lesson": "pa-pharm-l12"
+    },
+    {
+      "id": "pa-pharm-c093",
+      "front": "When are beta blockers continued and when are they withheld in heart failure?",
+      "back": "Continued through mild decompensation in a patient already established on them; never started during acute decompensation, and reduced or stopped if the patient is hypoperfused.",
+      "lesson": "pa-pharm-l12"
+    },
+    {
+      "id": "pa-pharm-c094",
+      "front": "What three questions choose the drug for a tachyarrhythmia?",
+      "back": "Stable or unstable (unstable means electricity), narrow or wide, and regular or irregular. Those three answers point to adenosine, diltiazem, amiodarone, or magnesium.",
+      "lesson": "pa-pharm-l12"
+    },
+    {
+      "id": "pa-pharm-c095",
+      "front": "Which drugs are dangerous in atrial fibrillation with Wolff-Parkinson-White, and what is used instead?",
+      "back": "Avoid AV nodal blockers: adenosine, diltiazem, verapamil, digoxin, and beta blockers, which push conduction down the accessory pathway toward ventricular fibrillation. Use procainamide, or cardiovert if unstable.",
+      "lesson": "pa-pharm-l12"
+    },
+    {
+      "id": "pa-pharm-c096",
+      "front": "When is electrical cardioversion of atrial fibrillation safe without prior anticoagulation?",
+      "back": "Within `48` hours of a clear onset, or after `3` weeks of therapeutic anticoagulation, or after a transesophageal echocardiogram shows no atrial clot.",
+      "lesson": "pa-pharm-l12"
+    },
+    {
+      "id": "pa-pharm-c097",
+      "front": "Which two cardiac indications require warfarin rather than a DOAC?",
+      "back": "A mechanical heart valve (INR `2.5-3.5` for mitral) and moderate-to-severe mitral stenosis. The dabigatran trial in mechanical valves was stopped early for excess clotting and bleeding.",
+      "lesson": "pa-pharm-l12"
+    },
+    {
+      "id": "pa-pharm-c098",
+      "front": "List the CHA2DS2-VASc components and the treatment threshold.",
+      "back": "Heart failure `1`, hypertension `1`, age `75` or older `2`, diabetes `1`, prior stroke or TIA `2`, vascular disease `1`, age `65-74` `1`, female sex `1`. Anticoagulate at `2` or more in men, `3` or more in women.",
+      "lesson": "pa-pharm-l12"
+    },
+    {
+      "id": "pa-pharm-c099",
+      "front": "What does multimodal analgesia mean, and what is a typical adult backbone?",
+      "back": "Blocking pain at several points at once so each drug can be lower and safer. Acetaminophen `1000 mg` every `6` hours plus an NSAID, scheduled rather than as-needed, with opioids added for the remainder.",
+      "lesson": "pa-pharm-l13"
+    },
+    {
+      "id": "pa-pharm-c100",
+      "front": "Give the oral morphine equivalents for IV morphine, IV hydromorphone, oral oxycodone, and IV fentanyl.",
+      "back": "`30 mg` oral morphine equals `10 mg` IV morphine, `1.5 mg` IV hydromorphone, `20 mg` oral oxycodone, or `100 mcg` IV fentanyl.",
+      "lesson": "pa-pharm-l13"
+    },
+    {
+      "id": "pa-pharm-c101",
+      "front": "Why is the calculated dose reduced when switching between opioids?",
+      "back": "Tolerance to one mu agonist does not transfer completely to another (incomplete cross-tolerance), so the full equivalent dose of the new drug is often an overdose. Reduce by `25%` to `50%`.",
+      "lesson": "pa-pharm-l13"
+    },
+    {
+      "id": "pa-pharm-c102",
+      "front": "Why are fentanyl patches never used for acute pain in an opioid-naive patient?",
+      "back": "They take `12-24` hours to reach effect and keep releasing drug for `12-24` hours after removal. Fever speeds absorption and can cause overdose from a patch already in place.",
+      "lesson": "pa-pharm-l13"
+    },
+    {
+      "id": "pa-pharm-c103",
+      "front": "What are reasonable opioid-naive starting IV doses for morphine, hydromorphone, and fentanyl?",
+      "back": "Morphine `2-4 mg`, hydromorphone `0.2-0.5 mg`, fentanyl `25-50 mcg`, each reassessed in `10-15` minutes and repeated rather than given as one large dose.",
+      "lesson": "pa-pharm-l13"
+    },
+    {
+      "id": "pa-pharm-c104",
+      "front": "How is acute pain managed in a patient taking buprenorphine for opioid use disorder?",
+      "back": "Continue the buprenorphine and titrate a full agonist on top, often needing higher doses. Stopping buprenorphine causes withdrawal and worse pain without improving analgesia.",
+      "lesson": "pa-pharm-l13"
+    },
+    {
+      "id": "pa-pharm-c105",
+      "front": "How is naloxone dosed in an opioid-tolerant patient with respiratory depression?",
+      "back": "Dilute and give `0.04 mg` increments, titrating to a respiratory rate of `10` or more rather than to consciousness, to avoid violent withdrawal, vomiting, and pulmonary edema.",
+      "lesson": "pa-pharm-l13"
+    },
+    {
+      "id": "pa-pharm-c106",
+      "front": "Name two regional blocks worth recognizing and what each prevents.",
+      "back": "Fascia iliaca block for hip fracture reduces opioid use and delirium; serratus anterior block for rib fractures allows deep breathing and prevents pneumonia. Lipid emulsion must be available for local anesthetic toxicity.",
+      "lesson": "pa-pharm-l13"
+    },
+    {
+      "id": "pa-pharm-c107",
+      "front": "Which antidepressant lowers the seizure threshold, and in whom is it avoided?",
+      "back": "Bupropion. Avoid in eating disorders, alcohol or benzodiazepine withdrawal, and known seizure disorders. Its advantage is the absence of sexual side effects and weight gain.",
+      "lesson": "pa-pharm-l14"
+    },
+    {
+      "id": "pa-pharm-c108",
+      "front": "Which antidepressant self-tapers, and which cause the worst discontinuation syndrome?",
+      "back": "Fluoxetine self-tapers because of its `4-6` day half-life. Paroxetine and venlafaxine cause the worst discontinuation syndrome: flu-like symptoms, dizziness, and electric shock sensations.",
+      "lesson": "pa-pharm-l14"
+    },
+    {
+      "id": "pa-pharm-c109",
+      "front": "What is the MAOI dietary crisis, and what washout is needed?",
+      "back": "Tyramine in aged cheese, cured meat, and some wines is not broken down, causing a hypertensive crisis. Two weeks of washout between an MAOI and most serotonergic drugs, and `5` weeks after fluoxetine.",
+      "lesson": "pa-pharm-l14"
+    },
+    {
+      "id": "pa-pharm-c110",
+      "front": "Give the timeline for dystonia, akathisia, parkinsonism, and tardive dyskinesia.",
+      "back": "Dystonia in hours to days, akathisia in days to weeks, drug-induced parkinsonism in weeks to months, tardive dyskinesia in months to years and often permanent.",
+      "lesson": "pa-pharm-l14"
+    },
+    {
+      "id": "pa-pharm-c111",
+      "front": "How is akathisia recognized and treated, and what is the common error?",
+      "back": "Inner restlessness felt mostly in the legs with constant movement. Treat by lowering the dose or adding propranolol `10-20 mg` three times daily. The error is mistaking it for worsening agitation and giving more antipsychotic.",
+      "lesson": "pa-pharm-l14"
+    },
+    {
+      "id": "pa-pharm-c112",
+      "front": "Which antipsychotic is used for treatment-resistant schizophrenia, and what monitoring does it require?",
+      "back": "Clozapine, the only agent proven in treatment-resistant disease. It requires absolute neutrophil count monitoring for agranulocytosis, plus vigilance for myocarditis, seizures, and severe constipation.",
+      "lesson": "pa-pharm-l14"
+    },
+    {
+      "id": "pa-pharm-c113",
+      "front": "Which three drugs raise lithium levels toward toxicity?",
+      "back": "Thiazide diuretics, NSAIDs, and ACE inhibitors or ARBs, all by reducing renal clearance. The therapeutic window is `0.6-1.2 mEq/L`, and toxicity brings tremor, confusion, and seizures.",
+      "lesson": "pa-pharm-l14"
+    },
+    {
+      "id": "pa-pharm-c114",
+      "front": "Describe the agitation ladder from least to most invasive.",
+      "back": "Verbal de-escalation with glucose and oxygen checked, then oral lorazepam `1-2 mg` or olanzapine `5-10 mg`, then IM haloperidol `5 mg` with lorazepam or midazolam `5 mg`, then ketamine `4 mg/kg` IM with airway equipment ready.",
+      "lesson": "pa-pharm-l14"
+    },
+    {
+      "id": "pa-pharm-c115",
+      "front": "What are the four principles before calculating any pediatric dose?",
+      "back": "Dose per real measured kilogram, never exceed the adult dose, confirm the product concentration separately from the milligram dose, and treat neonates as a different group with immature enzymes.",
+      "lesson": "pa-pharm-l15"
+    },
+    {
+      "id": "pa-pharm-c116",
+      "front": "An 18 kg child needs acetaminophen 15 mg/kg. The bottle is 160 mg/5 mL. How much?",
+      "back": "`15 x 18 = 270 mg`. The concentration is `32 mg/mL`, so `270 / 32 = 8.4 mL`.",
+      "lesson": "pa-pharm-l15"
+    },
+    {
+      "id": "pa-pharm-c117",
+      "front": "A 12 kg child needs IM epinephrine for anaphylaxis. Dose and volume?",
+      "back": "`0.01 mg/kg = 0.12 mg`. Using the `1 mg/mL` concentration that is `0.12 mL` into the outer thigh. The `0.1 mg/mL` concentration is the IV arrest strength, not this one.",
+      "lesson": "pa-pharm-l15"
+    },
+    {
+      "id": "pa-pharm-c118",
+      "front": "State the pediatric fluid bolus and maintenance rules, applied to a 26 kg child.",
+      "back": "Bolus `20 mL/kg` of isotonic crystalloid. Maintenance by 4-2-1: `40 + 20 + 6 = 66 mL/h`. Bolus for that child would be `520 mL`.",
+      "lesson": "pa-pharm-l15"
+    },
+    {
+      "id": "pa-pharm-c119",
+      "front": "Give the pediatric doses of naloxone, lorazepam, and dexamethasone for croup, with their ceilings.",
+      "back": "Naloxone `0.1 mg/kg` to a maximum of `2 mg`; lorazepam `0.1 mg/kg` to a maximum of `4 mg`; dexamethasone `0.6 mg/kg` to a maximum of `16 mg`.",
+      "lesson": "pa-pharm-l15"
+    },
+    {
+      "id": "pa-pharm-c120",
+      "front": "What are the pediatric energy doses for defibrillation and synchronized cardioversion?",
+      "back": "Defibrillation `2 J/kg` for the first shock, then `4 J/kg` and above. Synchronized cardioversion `0.5-1 J/kg` first, then `2 J/kg`.",
+      "lesson": "pa-pharm-l15"
+    },
+    {
+      "id": "pa-pharm-c121",
+      "front": "How is pediatric endotracheal tube size estimated?",
+      "back": "Age in years divided by `4`, plus `4` for an uncuffed tube or plus `3.5` for a cuffed tube. A length-based tape gives the same answer faster in an emergency.",
+      "lesson": "pa-pharm-l15"
+    },
+    {
+      "id": "pa-pharm-c122",
+      "front": "Why is a normal blood pressure reassuring in an adult but not in a sick child?",
+      "back": "Children compensate with tachycardia and peripheral vasoconstriction until they suddenly decompensate. Tachycardia with mottling and a capillary refill over `3` seconds is compensated shock needing `20 mL/kg` now.",
+      "lesson": "pa-pharm-l15"
+    },
+    {
+      "id": "pa-pharm-c123",
+      "front": "What QTc values define danger, and what treats torsades de pointes?",
+      "back": "A QTc above `500 ms` or a rise of more than `60 ms` from baseline. Treat torsades with magnesium sulfate `2 g` IV, potassium repleted to about `4.0 mEq/L`, stopping culprit drugs, and overdrive pacing if recurrent.",
+      "lesson": "pa-pharm-l16"
+    },
+    {
+      "id": "pa-pharm-c124",
+      "front": "Name six commonly ordered drugs that prolong the QT interval.",
+      "back": "Ondansetron, haloperidol, methadone, azithromycin, levofloxacin, and citalopram. Amiodarone, sotalol, fluconazole, and most antipsychotics belong on the same list.",
+      "lesson": "pa-pharm-l16"
+    },
+    {
+      "id": "pa-pharm-c125",
+      "front": "Which drug pairs most commonly cause serotonin syndrome?",
+      "back": "An SSRI or SNRI plus tramadol, linezolid, a triptan, methylene blue, dextromethorphan, or an MAO inhibitor. Onset is within `6-24` hours of the added drug.",
+      "lesson": "pa-pharm-l16"
+    },
+    {
+      "id": "pa-pharm-c126",
+      "front": "Which statins are safest when a CYP3A4 inhibitor is required, and why?",
+      "back": "Pravastatin and rosuvastatin, because they are not CYP3A4 substrates. Simvastatin and lovastatin levels multiply with azoles, clarithromycin, diltiazem, or grapefruit, causing rhabdomyolysis.",
+      "lesson": "pa-pharm-l16"
+    },
+    {
+      "id": "pa-pharm-c127",
+      "front": "Why is pantoprazole preferred over omeprazole in a patient on clopidogrel?",
+      "back": "Omeprazole inhibits CYP2C19, the enzyme that converts the prodrug clopidogrel into its active form, reducing platelet inhibition and raising stent thrombosis risk. Pantoprazole has minimal CYP2C19 effect.",
+      "lesson": "pa-pharm-l16"
+    },
+    {
+      "id": "pa-pharm-c128",
+      "front": "List the drugs that stack to cause hyperkalemia.",
+      "back": "ACE inhibitors and ARBs, spironolactone and eplerenone, trimethoprim-sulfamethoxazole, NSAIDs, heparin, beta blockers, potassium supplements, and salt substitutes. Three together in chronic kidney disease is the classic recipe.",
+      "lesson": "pa-pharm-l16"
+    },
+    {
+      "id": "pa-pharm-c129",
+      "front": "What is the bleeding stack, and which non-anticoagulant contributes?",
+      "back": "An anticoagulant plus an antiplatelet plus an NSAID plus an SSRI. SSRIs deplete platelet serotonin, impairing aggregation, which is the contribution most often forgotten.",
+      "lesson": "pa-pharm-l16"
+    },
+    {
+      "id": "pa-pharm-c130",
+      "front": "How do a true IgE allergy, a delayed T-cell reaction, and a pseudo-allergic reaction differ?",
+      "back": "IgE is immediate with hives, wheeze, and hypotension. T-cell reactions are delayed days to weeks and cause rashes including Stevens-Johnson. Pseudo-allergy releases histamine directly, is infusion-rate dependent, and improves by slowing the rate.",
+      "lesson": "pa-pharm-l17"
+    },
+    {
+      "id": "pa-pharm-c131",
+      "front": "How is ACE-inhibitor angioedema recognized and treated?",
+      "back": "Lip, tongue, or laryngeal swelling with no hives and no itch, because it is bradykinin-mediated. It can start after years of use. Secure the airway, stop the drug permanently, and expect antihistamines and steroids to be unreliable.",
+      "lesson": "pa-pharm-l17"
+    },
+    {
+      "id": "pa-pharm-c132",
+      "front": "What defines Stevens-Johnson syndrome versus toxic epidermal necrolysis, and which drugs cause them?",
+      "back": "A painful rash with erosions of two or more mucous membranes, `1-3` weeks after a new drug. Under `10%` body surface is Stevens-Johnson, over `30%` is toxic epidermal necrolysis. Sulfonamides, lamotrigine, carbamazepine, allopurinol, NSAIDs.",
+      "lesson": "pa-pharm-l17"
+    },
+    {
+      "id": "pa-pharm-c133",
+      "front": "What is DRESS and when does it appear?",
+      "back": "Drug reaction with eosinophilia and systemic symptoms: fever, widespread rash, facial swelling, eosinophilia, and hepatitis, `2-8` weeks after starting allopurinol, an anticonvulsant, a sulfonamide, or vancomycin.",
+      "lesson": "pa-pharm-l17"
+    },
+    {
+      "id": "pa-pharm-c134",
+      "front": "How do you distinguish serotonin syndrome from neuroleptic malignant syndrome at the bedside?",
+      "back": "Serotonin syndrome comes on in hours with clonus and hyperreflexia worst in the legs and dilated pupils. Neuroleptic malignant syndrome builds over days with lead-pipe rigidity, hyporeflexia, and a high creatine kinase.",
+      "lesson": "pa-pharm-l17"
+    },
+    {
+      "id": "pa-pharm-c135",
+      "front": "What is the earliest sign of malignant hyperthermia?",
+      "back": "A rising end-tidal carbon dioxide that does not fall with increased ventilation, often with masseter spasm after succinylcholine. Rigidity and fever come later. Treat with dantrolene `2.5 mg/kg` IV.",
+      "lesson": "pa-pharm-l17"
+    },
+    {
+      "id": "pa-pharm-c136",
+      "front": "Which physical finding separates anticholinergic toxicity from the other hyperthermic syndromes?",
+      "back": "Hot, dry, flushed skin with absent bowel sounds and urinary retention. Serotonin syndrome and neuroleptic malignant syndrome both cause sweating, and serotonin syndrome adds hyperactive bowel sounds.",
+      "lesson": "pa-pharm-l17"
+    },
+    {
+      "id": "pa-pharm-c137",
+      "front": "Match these harms to their drugs: agranulocytosis, lactic acidosis, rhabdomyolysis, hepatitis.",
+      "back": "Agranulocytosis with clozapine and methimazole; lactic acidosis with metformin in kidney injury; rhabdomyolysis with statins, worse with CYP3A4 inhibitors; hepatitis with isoniazid, acetaminophen, amiodarone, and valproate.",
+      "lesson": "pa-pharm-l17"
+    },
+    {
+      "id": "pa-pharm-c138",
+      "front": "What is the antidote and mechanism for acetaminophen overdose?",
+      "back": "N-acetylcysteine, `150 mg/kg` load then `50` then `100 mg/kg`. It restores glutathione so the toxic metabolite NAPQI is neutralized. Near-perfect if started within `8` hours of ingestion.",
+      "lesson": "pa-pharm-l18"
+    },
+    {
+      "id": "pa-pharm-c139",
+      "front": "How are organophosphate and nerve agent poisonings treated?",
+      "back": "Atropine `2-6 mg` IV doubled every `5` minutes with no ceiling, titrated to dry secretions and clear lungs, plus pralidoxime `1-2 g` to reactivate acetylcholinesterase before the enzyme ages.",
+      "lesson": "pa-pharm-l18"
+    },
+    {
+      "id": "pa-pharm-c140",
+      "front": "Which antidote is given for cyanide from smoke inhalation, and what visible change follows?",
+      "back": "Hydroxocobalamin `5 g` IV over `15` minutes. It binds cyanide to form cyanocobalamin, and it turns skin, urine, and plasma deep red, which also interferes with some lab colorimetric assays.",
+      "lesson": "pa-pharm-l18"
+    },
+    {
+      "id": "pa-pharm-c141",
+      "front": "What blocks the toxicity of methanol and ethylene glycol, and how?",
+      "back": "Fomepizole `15 mg/kg` load blocks alcohol dehydrogenase so the parent alcohol is never converted into formic or oxalic acid. Dialysis removes the parent compound in severe poisoning.",
+      "lesson": "pa-pharm-l18"
+    },
+    {
+      "id": "pa-pharm-c142",
+      "front": "Give the antidotes for beta blocker and calcium channel blocker overdose.",
+      "back": "Beta blocker: glucagon `3-5 mg` IV then infusion, raising cyclic AMP past the blocked receptor. Calcium channel blocker: calcium chloride `1 g` or gluconate `3 g`, then high-dose insulin `1 unit/kg` bolus and `1 unit/kg/h` with dextrose.",
+      "lesson": "pa-pharm-l18"
+    },
+    {
+      "id": "pa-pharm-c143",
+      "front": "When is sodium bicarbonate the antidote, and at what dose?",
+      "back": "When sodium channel blockade widens the QRS past `100 ms`, classically tricyclic overdose. Give `1-2 mEq/kg` IV push and repeat until the QRS narrows; the sodium load and alkalinization unblock the channel.",
+      "lesson": "pa-pharm-l18"
+    },
+    {
+      "id": "pa-pharm-c144",
+      "front": "How is local anesthetic systemic toxicity treated?",
+      "back": "`20%` lipid emulsion `1.5 mL/kg` bolus then `0.25 mL/kg/min`, acting as a lipid sink that pulls the drug off cardiac tissue, plus airway support and seizure control. Bupivacaine is the most cardiotoxic agent.",
+      "lesson": "pa-pharm-l18"
+    },
+    {
+      "id": "pa-pharm-c145",
+      "front": "Why are flumazenil and physostigmine the two antidotes that can kill?",
+      "back": "Flumazenil removes GABA inhibition in a chronic benzodiazepine user or tricyclic co-ingestion and causes seizures that benzodiazepines can no longer treat. Physostigmine given with a wide QRS from a tricyclic has caused asystole.",
+      "lesson": "pa-pharm-l18"
+    },
+    {
+      "id": "pa-pharm-c146",
+      "front": "What is the antidote for refractory sulfonylurea hypoglycemia, and why does dextrose alone fail?",
+      "back": "Octreotide `50 mcg` SubQ every `6` hours. Dextrose raises glucose, which provokes more insulin release from the still-stimulated beta cell; octreotide suppresses that release.",
+      "lesson": "pa-pharm-l18"
+    },
+    {
+      "id": "pa-pharm-c147",
+      "front": "Of 1 L of isotonic crystalloid given IV, roughly how much stays in the vessels?",
+      "back": "About `250 mL` an hour later, because isotonic fluid distributes across the whole extracellular space. That is why resuscitation requires litres and why it eventually causes tissue edema.",
+      "lesson": "pa-pharm-l19"
+    },
+    {
+      "id": "pa-pharm-c148",
+      "front": "Why is Lactated Ringer's preferred over normal saline, and is its potassium a problem in hyperkalemia?",
+      "back": "Large-volume saline causes hyperchloremic metabolic acidosis and more kidney injury. The `4 mEq/L` of potassium in Lactated Ringer's is lower than a hyperkalemic patient's serum, so it remains the safer fluid.",
+      "lesson": "pa-pharm-l19"
+    },
+    {
+      "id": "pa-pharm-c149",
+      "front": "How much does 10 mEq of potassium raise the serum level, and what are the infusion limits?",
+      "back": "About `0.1 mEq/L`. Peripheral infusion is limited to `10 mEq/h` because it burns; central infusion can reach `20 mEq/h` with cardiac monitoring. Oral `40 mEq` is faster when the patient can swallow.",
+      "lesson": "pa-pharm-l19"
+    },
+    {
+      "id": "pa-pharm-c150",
+      "front": "Why must magnesium be replaced before potassium?",
+      "back": "A magnesium-depleted kidney keeps wasting potassium regardless of how much is given, so the level will not correct. Replace `2 g` IV over `20` minutes, or push `2 g` in torsades.",
+      "lesson": "pa-pharm-l19"
+    },
+    {
+      "id": "pa-pharm-c151",
+      "front": "Compare calcium gluconate and calcium chloride, and state when calcium goes first.",
+      "back": "Gluconate `1 g` gives about `4.65 mEq` elemental calcium; chloride `1 g` gives about `13.6 mEq`, three times more but sclerosing, so it prefers a central line. In hyperkalemia with ECG changes, calcium goes first to stabilize the myocardium.",
+      "lesson": "pa-pharm-l19"
+    },
+    {
+      "id": "pa-pharm-c152",
+      "front": "What is the safe correction rate for chronic hyponatremia, and what happens if it is exceeded?",
+      "back": "No more than `8 mEq/L` in `24` hours. Faster correction shrinks a brain that has adapted, causing osmotic demyelination, which is permanent. A seizing patient gets `100-150 mL` of `3%` saline for a `4-6 mEq/L` rise.",
+      "lesson": "pa-pharm-l19"
+    },
+    {
+      "id": "pa-pharm-c153",
+      "front": "What is the usual mean arterial pressure target in shock, and when is it raised?",
+      "back": "`65 mmHg` for most patients. Chronic hypertensives may be targeted to `80-85 mmHg` to preserve urine output, at the cost of more arrhythmia. Higher targets are not routinely better.",
+      "lesson": "pa-pharm-l19"
+    },
+    {
+      "id": "pa-pharm-c154",
+      "front": "Describe the order of pressors in septic shock and how vasopressin is used.",
+      "back": "Norepinephrine first, titrated every `2-5` minutes. Vasopressin `0.03 units/min` is added at a fixed rate, not titrated, once norepinephrine is climbing. Epinephrine is third, and dobutamine is added for pump failure.",
+      "lesson": "pa-pharm-l19"
+    },
+    {
+      "id": "pa-pharm-c155",
+      "front": "A patient's pressor requirement keeps rising. What should be checked before escalating further?",
+      "back": "Ionized calcium, severe acidosis, an undrained infectious source, tamponade and pneumothorax, and adrenal insufficiency (hydrocortisone `200 mg` per day). Extravasation is treated with phentolamine `5-10 mg` infiltrated locally.",
+      "lesson": "pa-pharm-l19"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "pa-pharm-q038",
+      "q": "A 34-year-old healthy man has 3 days of cough, fever to 38.6 C, and a right lower lobe infiltrate. He is well appearing with a room-air saturation of 96%. Which outpatient regimen and duration are appropriate?",
+      "choices": [
+        "Levofloxacin `750 mg` daily for `14` days",
+        "Amoxicillin `1 g` three times daily for `5` days",
+        "Vancomycin plus cefepime for `7` days",
+        "Nitrofurantoin `100 mg` twice daily for `5` days"
+      ],
+      "answer": 1,
+      "why": "A healthy outpatient with community pneumonia is treated with amoxicillin or doxycycline for 5 days. A fluoroquinolone is reserved for comorbid patients and 14 days is far longer than needed. Vancomycin and cefepime cover hospital organisms this patient has not met, and nitrofurantoin is a urinary agent.",
+      "lesson": "pa-pharm-l11",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-pharm-q039",
+      "q": "A 71-year-old ventilated patient develops a new infiltrate and fever on hospital day 6. Which empiric regimen is correct?",
+      "choices": [
+        "Ceftriaxone plus azithromycin",
+        "Amoxicillin-clavulanate",
+        "Cefepime plus vancomycin",
+        "Doxycycline alone"
+      ],
+      "answer": 2,
+      "why": "Ventilator-associated pneumonia after day 5 must cover Pseudomonas and MRSA, which cefepime plus vancomycin does. Ceftriaxone with azithromycin is a community regimen covering neither. Amoxicillin-clavulanate and doxycycline are outpatient oral agents.",
+      "lesson": "pa-pharm-l11",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-pharm-q040",
+      "q": "A 26-year-old woman has 1 day of dysuria and frequency. She is afebrile with no flank tenderness. The resident writes for nitrofurantoin. Two days later she returns with a temperature of 39 C, vomiting, and right flank pain. What is the pharmacologic problem?",
+      "choices": [
+        "Nitrofurantoin does not reach therapeutic levels in kidney tissue or blood",
+        "Nitrofurantoin has no gram-negative coverage",
+        "Nitrofurantoin requires 14 days to work",
+        "Nitrofurantoin is inactivated by an acidic urine"
+      ],
+      "answer": 0,
+      "why": "Nitrofurantoin concentrates in urine but achieves negligible tissue and serum levels, so it cannot treat pyelonephritis. It does cover E. coli well, works within days for cystitis, and is actually more active in acidic urine.",
+      "lesson": "pa-pharm-l11",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-pharm-q041",
+      "q": "A 58-year-old is found to have fever, headache, and neck stiffness. Blood cultures are drawn. The CT scanner will be free in 45 minutes. What is the correct sequence?",
+      "choices": [
+        "CT, lumbar puncture, then antibiotics",
+        "Lumbar puncture, then antibiotics, then CT",
+        "Dexamethasone and antibiotics now, then CT and lumbar puncture",
+        "Antibiotics only after the Gram stain result"
+      ],
+      "answer": 2,
+      "why": "Every hour of antibiotic delay in bacterial meningitis increases mortality, and dexamethasone must go in with or before the first dose to reduce hearing loss and death. Cerebrospinal fluid cell counts, protein, and glucose stay diagnostic for hours, so the tap can follow.",
+      "lesson": "pa-pharm-l11",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-pharm-q042",
+      "q": "Which addition to ceftriaxone and vancomycin is required for a 74-year-old with suspected meningitis?",
+      "choices": [
+        "Azithromycin",
+        "Ampicillin",
+        "Metronidazole",
+        "Doxycycline"
+      ],
+      "answer": 1,
+      "why": "Listeria monocytogenes is a real cause of meningitis over age 50, in pregnancy, and in immunosuppression, and cephalosporins do not cover it. Ampicillin does. Azithromycin, metronidazole, and doxycycline do not treat Listeria meningitis.",
+      "lesson": "pa-pharm-l11",
+      "difficulty": 1
+    },
+    {
+      "id": "pa-pharm-q043",
+      "q": "A 44-year-old man has a temperature of 39.2 C, a heart rate of 128, a blood pressure of 84/50, and a lactate of 5.1 mmol/L with no obvious source. Which bundle element has the strongest time dependence?",
+      "choices": [
+        "Obtaining a chest radiograph",
+        "Broad-spectrum antibiotics within 1 hour of recognition",
+        "Starting norepinephrine before any fluid",
+        "Sending a procalcitonin level"
+      ],
+      "answer": 1,
+      "why": "Antibiotics within the first hour after cultures, with 30 mL/kg of crystalloid, are the interventions tied to survival. Imaging helps find the source but does not itself change mortality on the clock, pressors follow fluid unless the patient is periarrest, and procalcitonin does not guide initial therapy.",
+      "lesson": "pa-pharm-l11",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-pharm-q044",
+      "q": "A 61-year-old with an ejection fraction of 25% is on lisinopril and furosemide. Which addition would be expected to reduce mortality?",
+      "choices": [
+        "Increasing the furosemide dose",
+        "Adding digoxin",
+        "Adding carvedilol and spironolactone",
+        "Adding amlodipine"
+      ],
+      "answer": 2,
+      "why": "Beta blockade with one of the three proven agents and an aldosterone antagonist each independently lower mortality in HFrEF, and an SGLT2 inhibitor would be the next addition. Furosemide relieves congestion without a survival benefit, digoxin reduces only hospitalizations, and amlodipine is neutral.",
+      "lesson": "pa-pharm-l12",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-pharm-q045",
+      "q": "A patient in acute heart failure has cool extremities, a blood pressure of 86/64, a lactate of 4.6 mmol/L, and diffuse crackles. Which order is most likely to harm?",
+      "choices": [
+        "Dobutamine infusion",
+        "Non-invasive positive pressure ventilation",
+        "A doubled dose of IV furosemide with a new metoprolol order",
+        "An arterial line and an echocardiogram"
+      ],
+      "answer": 2,
+      "why": "Cool skin with a narrow pulse pressure and a rising lactate is cardiogenic shock. More diuresis worsens hypoperfusion and starting a beta blocker removes the remaining inotropy. Dobutamine addresses the pump, ventilation supports oxygenation, and monitoring guides therapy.",
+      "lesson": "pa-pharm-l12",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-pharm-q046",
+      "q": "A 40-year-old with known pre-excitation presents in atrial fibrillation at 230 beats per minute with wide, irregular QRS complexes and a blood pressure of 96/60. Which order should be refused?",
+      "choices": [
+        "Procainamide `20 mg/min` infusion",
+        "Diltiazem `20 mg` IV push",
+        "Preparation for synchronized cardioversion",
+        "Applying defibrillator pads"
+      ],
+      "answer": 1,
+      "why": "AV nodal blockade in pre-excited atrial fibrillation drives conduction down the accessory pathway and can produce ventricular fibrillation; this applies to diltiazem, verapamil, adenosine, digoxin, and beta blockers. Procainamide slows the accessory pathway, and cardioversion readiness is always appropriate.",
+      "lesson": "pa-pharm-l12",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-pharm-q047",
+      "q": "A 68-year-old woman with a bioprosthetic aortic valve and new atrial fibrillation needs anticoagulation. Which is appropriate?",
+      "choices": [
+        "Apixaban, since the valve is bioprosthetic and not mechanical",
+        "Warfarin only, because any valve replacement excludes DOACs",
+        "Aspirin alone is sufficient",
+        "No anticoagulation is needed with a bioprosthetic valve"
+      ],
+      "answer": 0,
+      "why": "DOACs are contraindicated only with mechanical valves and moderate-to-severe mitral stenosis. A bioprosthetic valve with atrial fibrillation is treated like non-valvular atrial fibrillation, where DOACs are preferred. Aspirin does not prevent cardioembolic stroke, and untreated atrial fibrillation at this age carries substantial risk.",
+      "lesson": "pa-pharm-l12",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-pharm-q048",
+      "q": "Which CHA2DS2-VASc component is worth 2 points?",
+      "choices": [
+        "Diabetes mellitus",
+        "Hypertension",
+        "Prior stroke or transient ischemic attack",
+        "Female sex"
+      ],
+      "answer": 2,
+      "why": "Prior stroke or TIA and age 75 or older are each worth 2 points because they predict recurrence most strongly. Diabetes, hypertension, vascular disease, age 65 to 74, and female sex are worth 1 point each.",
+      "lesson": "pa-pharm-l12",
+      "difficulty": 1
+    },
+    {
+      "id": "pa-pharm-q049",
+      "q": "A patient takes morphine 15 mg extended release twice daily at home and is admitted needing IV opioids. Which statement guides safe conversion?",
+      "choices": [
+        "Give the full calculated IV equivalent to avoid undertreating",
+        "Calculate the equivalent, then reduce it by 25-50% for incomplete cross-tolerance",
+        "Start at the opioid-naive dose regardless of home use",
+        "Convert using milligram-for-milligram equivalence between routes"
+      ],
+      "answer": 1,
+      "why": "30 mg of oral morphine daily equals about 10 mg IV, but cross-tolerance between opioids is incomplete, so the calculated dose is reduced 25-50% and then titrated. Naive dosing undertreats a tolerant patient badly, and oral and IV morphine are not milligram-equivalent.",
+      "lesson": "pa-pharm-l13",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-pharm-q050",
+      "q": "An 80-year-old with a hip fracture is repeatedly receiving hydromorphone and is becoming delirious. Which intervention most reduces both pain and delirium?",
+      "choices": [
+        "Adding scheduled diphenhydramine for sleep",
+        "A fascia iliaca nerve block with scheduled acetaminophen",
+        "Switching to a fentanyl patch",
+        "Adding lorazepam for agitation"
+      ],
+      "answer": 1,
+      "why": "Regional block plus scheduled acetaminophen reduces opioid requirement, which is the main modifiable driver of delirium in hip fracture. Diphenhydramine and lorazepam both worsen delirium in older adults, and a fentanyl patch is inappropriate for acute pain and takes 12-24 hours to act.",
+      "lesson": "pa-pharm-l13",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-pharm-q051",
+      "q": "A patient maintained on buprenorphine 16 mg daily presents with an open tibia fracture and severe pain. What is the best approach?",
+      "choices": [
+        "Stop the buprenorphine so full agonists can work",
+        "Continue buprenorphine and titrate a full agonist on top, expecting higher doses",
+        "Give only non-opioid analgesia because opioids are contraindicated",
+        "Give naloxone first to clear the receptors"
+      ],
+      "answer": 1,
+      "why": "Buprenorphine does not prevent full-agonist analgesia; it raises the dose required. Stopping it precipitates withdrawal and worsens pain, denying opioids for an open fracture is inhumane, and naloxone would cause severe withdrawal without improving analgesia.",
+      "lesson": "pa-pharm-l13",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-pharm-q052",
+      "q": "Which analgesic dose of ketamine and route of delivery is correct for severe pain in a normotensive adult?",
+      "choices": [
+        "`1-2 mg/kg` IV push over `10` seconds",
+        "`4 mg/kg` IM",
+        "`0.1-0.3 mg/kg` IV infused over `10-15` minutes",
+        "`0.5 mg/kg` IV push over `30` seconds"
+      ],
+      "answer": 2,
+      "why": "The subdissociative analgesic dose is 0.1 to 0.3 mg/kg infused over 10 to 15 minutes; pushing it quickly causes an unpleasant dissociative reaction. 1-2 mg/kg IV and 4 mg/kg IM are dissociative doses used for induction or extreme agitation.",
+      "lesson": "pa-pharm-l13",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-pharm-q053",
+      "q": "A 30-year-old with renal colic has a creatinine of 0.8 mg/dL and no comorbidities. Which first-line agent is best supported?",
+      "choices": [
+        "Ketorolac `15 mg` IV",
+        "Morphine `4 mg` IV",
+        "Oral oxycodone `10 mg`",
+        "Meperidine `50 mg` IV"
+      ],
+      "answer": 0,
+      "why": "NSAIDs reduce ureteral wall inflammation and renal pelvic pressure, and ketorolac outperforms opioids in renal colic with less nausea and sedation. Opioids are second line, and meperidine is avoided because its metabolite normeperidine accumulates and causes seizures.",
+      "lesson": "pa-pharm-l13",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-pharm-q054",
+      "q": "A 22-year-old with bulimia nervosa and depression asks about an antidepressant that will not cause weight gain or sexual side effects. Which drug is contraindicated in her specifically?",
+      "choices": [
+        "Sertraline",
+        "Escitalopram",
+        "Bupropion",
+        "Mirtazapine"
+      ],
+      "answer": 2,
+      "why": "Bupropion fits her stated preferences but is contraindicated in eating disorders because electrolyte disturbance plus a lowered seizure threshold produces seizures. Sertraline and escitalopram are safe and fluoxetine is actually first line in bulimia, and mirtazapine causes the weight gain she wants to avoid.",
+      "lesson": "pa-pharm-l14",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-pharm-q055",
+      "q": "Three days after starting haloperidol, a 19-year-old develops a forced upward deviation of the eyes and a painfully twisted neck. Which treatment and timeline are correct?",
+      "choices": [
+        "Benztropine `1-2 mg` IV, with relief expected in minutes",
+        "Dantrolene `2.5 mg/kg` IV for the rigidity",
+        "Propranolol `20 mg` orally over the next week",
+        "Valbenazine, because this is likely permanent"
+      ],
+      "answer": 0,
+      "why": "Acute dystonia appears within hours to days and reverses within minutes of an anticholinergic such as benztropine or diphenhydramine. Dantrolene treats malignant hyperthermia, propranolol treats akathisia, and valbenazine treats tardive dyskinesia which develops over months to years.",
+      "lesson": "pa-pharm-l14",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-pharm-q056",
+      "q": "A patient on clozapine calls with a fever and sore throat. What is the priority?",
+      "choices": [
+        "Prescribe penicillin for presumed streptococcal pharyngitis",
+        "Reassure and advise fluids and rest",
+        "Obtain an absolute neutrophil count urgently",
+        "Increase the clozapine dose to cover stress"
+      ],
+      "answer": 2,
+      "why": "Fever and sore throat in a clozapine patient means agranulocytosis until proven otherwise, and the neutrophil count decides whether the drug stops immediately. Treating it as pharyngitis or reassuring the patient misses a fatal complication, and raising the dose worsens the risk.",
+      "lesson": "pa-pharm-l14",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-pharm-q057",
+      "q": "Which mood stabilizer requires screening for the HLA-B*1502 allele in patients of Asian ancestry, and why?",
+      "choices": [
+        "Lithium, because of nephrogenic diabetes insipidus",
+        "Carbamazepine, because of Stevens-Johnson syndrome risk",
+        "Valproate, because of hyperammonemia",
+        "Lamotrigine, because of aseptic meningitis"
+      ],
+      "answer": 1,
+      "why": "The HLA-B*1502 allele, more common in some Asian populations, markedly raises the risk of Stevens-Johnson syndrome and toxic epidermal necrolysis with carbamazepine. Lithium causes renal and thyroid effects, valproate causes hyperammonemia and teratogenicity, and lamotrigine rash is managed by slow titration rather than genotyping.",
+      "lesson": "pa-pharm-l14",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-pharm-q058",
+      "q": "A severely agitated patient has already received olanzapine 10 mg IM. The physician now considers lorazepam 2 mg IM. What is the concern?",
+      "choices": [
+        "The pair causes excessive respiratory depression and hypotension",
+        "Lorazepam blocks olanzapine at the D2 receptor",
+        "The combination precipitates acute dystonia",
+        "Lorazepam cannot be given intramuscularly"
+      ],
+      "answer": 0,
+      "why": "Intramuscular olanzapine combined with a parenteral benzodiazepine has caused serious respiratory depression, hypotension, and deaths, so the manufacturer warns against it. The drugs act on different receptors, dystonia is a D2 effect of the antipsychotic alone, and lorazepam is absorbed well intramuscularly.",
+      "lesson": "pa-pharm-l14",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-pharm-q059",
+      "q": "A 22 kg child needs ibuprofen 10 mg/kg. The bottle is labeled 100 mg per 5 mL. What volume is correct?",
+      "choices": [
+        "`5.5 mL`",
+        "`22 mL`",
+        "`11 mL`",
+        "`2.2 mL`"
+      ],
+      "answer": 2,
+      "why": "10 mg/kg times 22 kg is 220 mg. The concentration is 20 mg/mL, so 220 divided by 20 is 11 mL. 5.5 mL would deliver half the dose, 22 mL is double, and 2.2 mL is a tenfold underdose.",
+      "lesson": "pa-pharm-l15",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-pharm-q060",
+      "q": "A 10 kg child in cardiac arrest needs epinephrine. Which order is correct?",
+      "choices": [
+        "`0.1 mg` IV using the `0.1 mg/mL` concentration, which is `1 mL`",
+        "`1 mg` IV using the `1 mg/mL` concentration, which is `1 mL`",
+        "`0.1 mg` IM using the `1 mg/mL` concentration, which is `0.1 mL`",
+        "`0.01 mg` IV using the `0.1 mg/mL` concentration, which is `0.1 mL`"
+      ],
+      "answer": 0,
+      "why": "The arrest dose is 0.01 mg/kg IV, which is 0.1 mg for a 10 kg child, drawn from the 0.1 mg/mL concentration as 1 mL. The 1 mg adult dose would be a tenfold overdose, the IM route is for anaphylaxis, and 0.01 mg is a tenfold underdose.",
+      "lesson": "pa-pharm-l15",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-pharm-q061",
+      "q": "A 15 kg child in shock needs an isotonic fluid bolus. What volume is given?",
+      "choices": [
+        "`150 mL`",
+        "`300 mL`",
+        "`600 mL`",
+        "`75 mL`"
+      ],
+      "answer": 1,
+      "why": "The pediatric bolus is 20 mL/kg, so 20 times 15 equals 300 mL, repeated as needed while reassessing. 150 mL is 10 mL/kg, 600 mL is 40 mL/kg given at once, and 75 mL is 5 mL/kg, closer to a dextrose dose than a resuscitation bolus.",
+      "lesson": "pa-pharm-l15",
+      "difficulty": 1
+    },
+    {
+      "id": "pa-pharm-q062",
+      "q": "A 4-year-old with croup weighing 16 kg is ordered dexamethasone 0.6 mg/kg. What dose is correct?",
+      "choices": [
+        "`16 mg`",
+        "`4.8 mg`",
+        "`9.6 mg`",
+        "`0.6 mg`"
+      ],
+      "answer": 2,
+      "why": "0.6 mg/kg times 16 kg is 9.6 mg, below the usual 16 mg ceiling. 16 mg would be the maximum rather than this child's dose, 4.8 mg is half the calculated dose, and 0.6 mg ignores the weight entirely.",
+      "lesson": "pa-pharm-l15",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-pharm-q063",
+      "q": "A 2-year-old has a heart rate of 185, mottled skin, a capillary refill of 4 seconds, and a blood pressure of 88/56. How should the blood pressure be interpreted?",
+      "choices": [
+        "It rules out shock and supports observation",
+        "It is expected in compensated shock, which still needs immediate fluid",
+        "It indicates the cuff is too large",
+        "It means vasopressors should precede fluid"
+      ],
+      "answer": 1,
+      "why": "Children maintain blood pressure by raising heart rate and clamping the periphery, so hypotension is a late and ominous sign. Tachycardia with delayed capillary refill is compensated shock and is treated with 20 mL/kg immediately; pressors follow fluid rather than preceding it.",
+      "lesson": "pa-pharm-l15",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-pharm-q064",
+      "q": "A patient on methadone 80 mg daily is admitted with nausea and pneumonia. Orders include ondansetron 4 mg IV and levofloxacin 750 mg IV. The potassium is 3.1 mEq/L. What is the greatest risk?",
+      "choices": [
+        "Serotonin syndrome",
+        "Torsades de pointes",
+        "Neuroleptic malignant syndrome",
+        "Hyperkalemia"
+      ],
+      "answer": 1,
+      "why": "Methadone, ondansetron, and levofloxacin all prolong the QT interval, and hypokalemia amplifies it, creating a stack that produces polymorphic ventricular tachycardia. None of these is a strong serotonergic or dopamine-blocking combination, and nothing here raises potassium.",
+      "lesson": "pa-pharm-l16",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-pharm-q065",
+      "q": "A patient with recurrent torsades de pointes has a potassium of 3.2 mEq/L and a magnesium of 1.4 mg/dL. What is the immediate treatment?",
+      "choices": [
+        "Amiodarone `150 mg` over 10 minutes",
+        "Magnesium sulfate `2 g` IV with potassium repletion",
+        "Metoprolol `5 mg` IV",
+        "Adenosine `6 mg` rapid push"
+      ],
+      "answer": 1,
+      "why": "Magnesium terminates torsades even when the level is normal, and potassium is repleted to about 4.0 mEq/L to shorten repolarization. Amiodarone prolongs the QT further and would worsen it, metoprolol does not address the mechanism, and adenosine treats narrow-complex SVT.",
+      "lesson": "pa-pharm-l16",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-pharm-q066",
+      "q": "A patient on sertraline is given tramadol for back pain. Twelve hours later he is agitated, sweating, and has sustained ankle clonus with a temperature of 38.9 C. Which is the best initial management?",
+      "choices": [
+        "Haloperidol for agitation and cooling measures",
+        "Benzodiazepines, active cooling, stopping both drugs, and cyproheptadine if severe",
+        "Dantrolene `2.5 mg/kg` IV",
+        "Physostigmine `2 mg` IV"
+      ],
+      "answer": 1,
+      "why": "This is serotonin syndrome from an SSRI plus tramadol; benzodiazepines, cooling, and removal of serotonergic agents are first line, with cyproheptadine for severe cases. Haloperidol adds a dopamine blocker and worsens hyperthermia, dantrolene is for malignant hyperthermia, and physostigmine is for anticholinergic toxicity.",
+      "lesson": "pa-pharm-l16",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-pharm-q067",
+      "q": "A patient on warfarin with a stable INR of 2.4 is treated for a skin infection and returns 6 days later with an INR of 7.8 and gum bleeding. Which antibiotic is the likely culprit?",
+      "choices": [
+        "Cephalexin",
+        "Trimethoprim-sulfamethoxazole",
+        "Nitrofurantoin",
+        "Azithromycin"
+      ],
+      "answer": 1,
+      "why": "Trimethoprim-sulfamethoxazole inhibits CYP2C9, the enzyme clearing the active warfarin isomer, and also displaces it from albumin, producing large INR rises. Cephalexin and nitrofurantoin have minimal interaction, and azithromycin is the macrolide chosen precisely because it avoids this problem.",
+      "lesson": "pa-pharm-l16",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-pharm-q068",
+      "q": "Which combination is the classic outpatient recipe for severe hyperkalemia?",
+      "choices": [
+        "Metoprolol plus amlodipine plus atorvastatin",
+        "Furosemide plus hydrochlorothiazide plus albuterol",
+        "Lisinopril plus spironolactone plus trimethoprim-sulfamethoxazole",
+        "Warfarin plus aspirin plus ibuprofen"
+      ],
+      "answer": 2,
+      "why": "An ACE inhibitor, an aldosterone antagonist, and trimethoprim, which blocks the distal tubule sodium channel much as amiloride does, all retain potassium and stack. Loop and thiazide diuretics with albuterol lower potassium, and the warfarin combination is a bleeding stack rather than a potassium one.",
+      "lesson": "pa-pharm-l16",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-pharm-q069",
+      "q": "A 55-year-old on lisinopril for 3 years wakes with tongue and lip swelling, no rash, and no itching. Which statement is correct?",
+      "choices": [
+        "Duration of prior use excludes the ACE inhibitor as the cause",
+        "This is bradykinin-mediated; antihistamines and steroids are unreliable and the airway is the priority",
+        "Epinephrine will reliably reverse the swelling within minutes",
+        "An ARB is absolutely contraindicated for life"
+      ],
+      "answer": 1,
+      "why": "ACE-inhibitor angioedema is bradykinin-mediated, which explains the absence of hives and itch and the poor response to histamine-directed therapy. It can begin after years of use, so duration excludes nothing. ARBs are usually tolerated afterward, though they are introduced cautiously.",
+      "lesson": "pa-pharm-l17",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-pharm-q070",
+      "q": "Two weeks after starting lamotrigine, a patient has fever, a painful spreading rash, and erosions of the mouth and conjunctivae. What is the correct action?",
+      "choices": [
+        "Continue the drug and add prednisone",
+        "Stop the drug immediately and arrange burn-center level care",
+        "Reduce the dose by half and monitor",
+        "Treat as a viral exanthem with supportive care only"
+      ],
+      "answer": 1,
+      "why": "Painful rash with erosion of two or more mucous membranes 1 to 3 weeks after a new drug is Stevens-Johnson syndrome, and lamotrigine is a classic cause. The drug is stopped permanently and the patient needs burn-center wound and fluid management. Continuing or reducing the dose allows progression to toxic epidermal necrolysis.",
+      "lesson": "pa-pharm-l17",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-pharm-q071",
+      "q": "A patient on haloperidol for 10 days develops a temperature of 40.1 C, lead-pipe rigidity, confusion, labile blood pressure, and a creatine kinase of 8,400 units/L. Reflexes are diminished and there is no clonus. What is the diagnosis?",
+      "choices": [
+        "Serotonin syndrome",
+        "Neuroleptic malignant syndrome",
+        "Malignant hyperthermia",
+        "Anticholinergic toxicity"
+      ],
+      "answer": 1,
+      "why": "Lead-pipe rigidity with hyporeflexia, high creatine kinase, and a subacute onset over days on a dopamine blocker is neuroleptic malignant syndrome. Serotonin syndrome comes on in hours with clonus and hyperreflexia, malignant hyperthermia follows an anesthetic within minutes, and anticholinergic toxicity gives dry skin with normal muscle tone.",
+      "lesson": "pa-pharm-l17",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-pharm-q072",
+      "q": "During induction with succinylcholine and sevoflurane the end-tidal carbon dioxide rises from 36 to 78 mmHg despite doubled minute ventilation, and the jaw is rigid. What is the first drug to give?",
+      "choices": [
+        "Dantrolene `2.5 mg/kg` IV",
+        "Sodium bicarbonate `2 mEq/kg`",
+        "Cyproheptadine `12 mg` by mouth",
+        "Rocuronium `1.2 mg/kg` IV"
+      ],
+      "answer": 0,
+      "why": "Unrelenting hypercarbia with masseter rigidity after succinylcholine and a volatile agent is malignant hyperthermia, and dantrolene blocks pathologic calcium release from the sarcoplasmic reticulum. Bicarbonate treats the acidosis but not the cause, cyproheptadine treats serotonin syndrome, and another paralytic does not stop the muscle metabolism.",
+      "lesson": "pa-pharm-l17",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-pharm-q073",
+      "q": "A confused, tachycardic patient has dilated pupils, a temperature of 38.7 C, flushed dry skin, absent bowel sounds, and urinary retention. Which finding most specifically identifies the syndrome?",
+      "choices": [
+        "Dilated pupils",
+        "Tachycardia",
+        "Dry skin with absent bowel sounds",
+        "Fever above 38 C"
+      ],
+      "answer": 2,
+      "why": "Dilated pupils, tachycardia, and fever occur in serotonin syndrome, sympathomimetic toxicity, and anticholinergic toxicity alike. Blocked sweating and blocked gut motility, producing dry skin and a silent abdomen, are specific to anticholinergic poisoning; sympathomimetics and serotonin syndrome both cause sweating.",
+      "lesson": "pa-pharm-l17",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-pharm-q074",
+      "q": "A patient with a bradycardia of 34, a blood pressure of 68/38, and a normal glucose has taken a large quantity of atenolol. Atropine and fluids have failed. Which is the next specific therapy?",
+      "choices": [
+        "Glucagon `3-5 mg` IV followed by an infusion",
+        "Naloxone `2 mg` IV",
+        "Flumazenil `0.2 mg` IV",
+        "Fomepizole `15 mg/kg` IV"
+      ],
+      "answer": 0,
+      "why": "Glucagon raises intracellular cyclic AMP through its own receptor, bypassing the blocked beta receptor and restoring rate and contractility. Naloxone reverses opioids, flumazenil reverses benzodiazepines and risks seizures, and fomepizole treats toxic alcohols.",
+      "lesson": "pa-pharm-l18",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-pharm-q075",
+      "q": "A farmworker arrives with pinpoint pupils, drenching secretions, wheezing, vomiting, and muscle fasciculations. He has received atropine 2 mg twice without effect. What is correct?",
+      "choices": [
+        "Atropine has a maximum of 3 mg and should be stopped",
+        "Double the atropine every 5 minutes until secretions dry, and give pralidoxime",
+        "Give naloxone for the pinpoint pupils",
+        "Give physostigmine to reverse the toxidrome"
+      ],
+      "answer": 1,
+      "why": "Organophosphate poisoning often requires tens of milligrams of atropine; the endpoint is dry secretions and clear lungs, not a fixed dose. Pralidoxime reactivates acetylcholinesterase before it ages. Naloxone does nothing here, and physostigmine would add to the cholinergic excess and worsen the poisoning.",
+      "lesson": "pa-pharm-l18",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-pharm-q076",
+      "q": "A patient pulled from a structure fire is comatose with a blood pressure of 72/40 and a lactate of 14 mmol/L despite 100% oxygen. Which antidote should be given?",
+      "choices": [
+        "Methylene blue `1-2 mg/kg`",
+        "Hydroxocobalamin `5 g` IV",
+        "Deferoxamine infusion",
+        "N-acetylcysteine `150 mg/kg`"
+      ],
+      "answer": 1,
+      "why": "Burning synthetic materials release cyanide, which poisons cytochrome oxidase and produces profound lactic acidosis with hypotension. Hydroxocobalamin binds cyanide safely and is given empirically. Methylene blue treats methemoglobinemia, deferoxamine treats iron, and N-acetylcysteine treats acetaminophen.",
+      "lesson": "pa-pharm-l18",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-pharm-q077",
+      "q": "A patient who took an unknown overdose is seizing, hypotensive, and has a QRS of 152 ms. Which is the correct treatment?",
+      "choices": [
+        "Flumazenil `0.2 mg` IV",
+        "Physostigmine `2 mg` IV",
+        "Sodium bicarbonate `1-2 mEq/kg` IV push",
+        "Procainamide infusion"
+      ],
+      "answer": 2,
+      "why": "A wide QRS in overdose means sodium channel blockade, classically from a tricyclic, and bicarbonate provides a sodium load with alkalinization to unblock the channel. Flumazenil and physostigmine can both cause seizures or asystole in this setting, and procainamide is itself a sodium channel blocker and would worsen the toxicity.",
+      "lesson": "pa-pharm-l18",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-pharm-q078",
+      "q": "A patient on glipizide keeps dropping her glucose to 40 mg/dL despite repeated dextrose ampules. Which addition is indicated?",
+      "choices": [
+        "Glucagon `1 mg` IM every 4 hours",
+        "Octreotide `50 mcg` SubQ every 6 hours",
+        "Hydrocortisone `100 mg` IV",
+        "Insulin with dextrose to stabilize the level"
+      ],
+      "answer": 1,
+      "why": "Each dextrose bolus stimulates the sulfonylurea-primed beta cell to release more insulin, creating a cycle. Octreotide suppresses that insulin release. Glucagon depends on liver glycogen that is already depleted, hydrocortisone treats adrenal crisis, and insulin would deepen the hypoglycemia.",
+      "lesson": "pa-pharm-l18",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-pharm-q079",
+      "q": "Which statement about resuscitation fluid choice is best supported?",
+      "choices": [
+        "Balanced crystalloid is preferred; large-volume normal saline causes hyperchloremic acidosis",
+        "Normal saline is preferred because Lactated Ringer's contains potassium",
+        "D5W is an acceptable resuscitation fluid when saline is unavailable",
+        "Albumin improves survival in traumatic brain injury"
+      ],
+      "answer": 0,
+      "why": "Balanced fluids cause less hyperchloremic acidosis and kidney injury. The 4 mEq/L of potassium in Lactated Ringer's is below a hyperkalemic patient's own level, so it remains safer. D5W provides free water and no volume expansion, and albumin was harmful in traumatic brain injury.",
+      "lesson": "pa-pharm-l19",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-pharm-q080",
+      "q": "A patient's potassium is 2.9 mEq/L and magnesium is 1.3 mg/dL. Forty mEq of potassium has already been given with no change. What explains the failure?",
+      "choices": [
+        "Potassium was given too slowly to register",
+        "Hypomagnesemia causes continued renal potassium wasting until magnesium is replaced",
+        "Serum potassium cannot be corrected without insulin",
+        "The laboratory value is falsely low from hemolysis"
+      ],
+      "answer": 1,
+      "why": "Magnesium deficiency opens renal potassium channels, so the kidney dumps potassium as fast as it is given. Replacing 2 g of magnesium allows the potassium to correct. Rate does not prevent a level from rising, insulin would lower potassium, and hemolysis falsely raises rather than lowers it.",
+      "lesson": "pa-pharm-l19",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-pharm-q081",
+      "q": "A patient with a sodium of 110 mEq/L is actively seizing. What is the correct treatment and target?",
+      "choices": [
+        "Normal saline at `250 mL/h` until sodium is `135 mEq/L`",
+        "Fluid restriction alone",
+        "`3%` saline `100-150 mL` bolus aiming for a `4-6 mEq/L` rise, staying under `8 mEq/L` in 24 hours",
+        "Rapid correction to `130 mEq/L` within 4 hours"
+      ],
+      "answer": 2,
+      "why": "Seizures from hyponatremia are treated with small hypertonic saline boluses that raise sodium 4 to 6 mEq/L, which stops seizures without exceeding the 8 mEq/L daily ceiling that prevents osmotic demyelination. Isotonic saline is too slow for a seizing patient, restriction is far too slow, and rapid full correction causes permanent injury.",
+      "lesson": "pa-pharm-l19",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-pharm-q082",
+      "q": "Norepinephrine has been titrated to a high rate in a septic patient whose mean arterial pressure remains 52 mmHg. Which is the most appropriate next step?",
+      "choices": [
+        "Increase norepinephrine indefinitely and take no other action",
+        "Add vasopressin `0.03 units/min` and search for source control, low ionized calcium, acidosis, or an obstructive cause",
+        "Switch to phenylephrine monotherapy",
+        "Give 4 L of normal saline rapidly"
+      ],
+      "answer": 1,
+      "why": "Vasopressin adds a non-adrenergic mechanism and is catecholamine sparing, while a rising requirement should trigger a search for an undrained source, hypocalcemia, severe acidosis, tamponade, or adrenal insufficiency. Phenylephrine alone is weaker in distributive shock, and unguided large-volume saline worsens acidosis and edema.",
+      "lesson": "pa-pharm-l19",
+      "difficulty": 2
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "pa-pharm-s03",
+      "title": "The first hour of septic shock",
+      "setting": "ed",
+      "intro": "A `78`-year-old woman is brought in from home by her daughter for two days of confusion and shaking chills. She has hypertension, type 2 diabetes, and chronic kidney disease with a baseline creatinine of `1.6 mg/dL`. Her home medications include lisinopril, spironolactone, metformin, and atorvastatin. She is warm, flushed, and mumbling. You are helping the resuscitation team.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "She is placed on the monitor. She answers her name but not the year. Her skin is hot, and there is left flank tenderness. The team is deciding what happens in the next five minutes.",
+          "vitals": {
+            "hr": 124,
+            "bp": "84/46",
+            "rr": 26,
+            "spo2": 94,
+            "temp": 39.1,
+            "gcs": 14
+          },
+          "choices": [
+            {
+              "text": "Draw two sets of blood cultures and a lactate, then give broad antibiotics and start `30 mL/kg` of balanced crystalloid",
+              "next": "s2",
+              "feedback": "Correct. Cultures first because they take seconds, then antibiotics within the hour, then volume. That order preserves the diagnosis without delaying treatment.",
+              "score": 1
+            },
+            {
+              "text": "Hold antibiotics until the urine culture and CT result return so the drug can be chosen precisely",
+              "next": "s2",
+              "feedback": "Harmful. Every hour of delay in septic shock raises mortality measurably. Empiric therapy is started now and narrowed later when the culture names the organism.",
+              "score": -1
+            },
+            {
+              "text": "Start norepinephrine immediately before any fluid",
+              "next": "s2",
+              "feedback": "Acceptable only if she were peri-arrest. In a patient who has had no fluid yet, volume comes first, with pressors started if she stays hypotensive during or after the bolus.",
+              "score": 0
+            },
+            {
+              "text": "Give a `500 mL` bolus and reassess in an hour before committing to more",
+              "next": "s2",
+              "feedback": "Too slow. The initial target is `30 mL/kg`, roughly `2 L` for this patient, given quickly, with reassessment during rather than an hour later.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "The team wants antibiotics now. The likely source is the urinary tract but she was hospitalized six weeks ago for a foot ulcer. Her chart lists a penicillin allergy recorded as `rash as a child`.",
+          "choices": [
+            {
+              "text": "Vancomycin plus cefepime, after clarifying that the childhood rash was not hives, swelling, or wheeze",
+              "next": "s3",
+              "feedback": "Correct. Recent hospitalization raises the risk of resistant gram-negatives and MRSA. A remote childhood rash is not an IgE allergy, and cephalosporin cross-reactivity with a true penicillin allergy is only about `1%` to `2%`.",
+              "score": 1
+            },
+            {
+              "text": "Nitrofurantoin `100 mg` orally, since the source is urinary",
+              "next": "s3",
+              "feedback": "Harmful. Nitrofurantoin reaches no meaningful tissue or blood level, so it cannot treat pyelonephritis or bacteremia. It also cannot be given to a confused, hypotensive patient by mouth.",
+              "score": -1
+            },
+            {
+              "text": "Ceftriaxone `1 g` alone",
+              "next": "s3",
+              "feedback": "Reasonable for community pyelonephritis in a well patient, but it misses Pseudomonas and MRSA in someone recently hospitalized and now in shock. Broader coverage is chosen first, then narrowed.",
+              "score": 0
+            },
+            {
+              "text": "Avoid all beta-lactams entirely and use aztreonam plus vancomycin",
+              "next": "s3",
+              "feedback": "Defensible if she had documented anaphylaxis, but a childhood rash does not justify abandoning the better drug. Ask what actually happened and how quickly before narrowing your own options.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "Two litres are in. Her pressure has come up briefly and fallen again. The lactate came back at `4.8 mmol/L` and the potassium at `6.1 mEq/L`. The ECG shows peaked T waves.",
+          "vitals": {
+            "hr": 118,
+            "bp": "80/44",
+            "rr": 24,
+            "spo2": 95,
+            "temp": 38.8
+          },
+          "choices": [
+            {
+              "text": "Calcium gluconate `1 g` IV now, then insulin with dextrose, and start norepinephrine",
+              "next": "s4",
+              "feedback": "Correct. Calcium stabilizes the myocardium within minutes without lowering potassium at all; insulin with dextrose shifts it over `15-30` minutes. Meanwhile the persistent hypotension after adequate volume is an indication for norepinephrine.",
+              "score": 1
+            },
+            {
+              "text": "Give sodium polystyrene sulfonate and recheck the potassium in four hours",
+              "next": "s4",
+              "feedback": "Far too slow for ECG changes. Binders remove potassium over hours; a widening QRS can become a cardiac arrest in minutes.",
+              "score": -1
+            },
+            {
+              "text": "Give insulin and dextrose alone and hold calcium since the QRS is still narrow",
+              "next": "s4",
+              "feedback": "Peaked T waves are already an ECG change. Waiting for a wide QRS before giving calcium removes the margin you are trying to preserve.",
+              "score": 0
+            },
+            {
+              "text": "Continue fluid boluses only, assuming the pressure will follow",
+              "next": "s4",
+              "feedback": "She has had `30 mL/kg`. Further fluid without a dynamic assessment mostly produces edema; this is the point where a vasopressor is started.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "Norepinephrine is running through a good antecubital IV while central access is prepared. The rate keeps climbing and the mean arterial pressure sits at `58 mmHg`. Her ionized calcium is low and her pH is `7.18`.",
+          "choices": [
+            {
+              "text": "Add vasopressin `0.03 units/min` at a fixed rate, replace calcium, and look for an undrained source with a CT of the abdomen and pelvis",
+              "next": "s5",
+              "feedback": "Correct. Vasopressin works through a non-adrenergic receptor and is catecholamine sparing. A climbing requirement is a prompt to look for a cause: low ionized calcium, acidosis, and above all an obstructed, infected kidney that needs drainage.",
+              "score": 1
+            },
+            {
+              "text": "Keep increasing norepinephrine and change nothing else",
+              "next": "s5",
+              "feedback": "Escalating a single catecholamine while ignoring hypocalcemia, acidosis, and a possible undrained source is how a shock patient is lost slowly.",
+              "score": -1
+            },
+            {
+              "text": "Switch from norepinephrine to phenylephrine to reduce the heart rate",
+              "next": "s5",
+              "feedback": "Phenylephrine is pure alpha with no inotropy and is a weaker choice in distributive shock. It is used when tachyarrhythmia is the limiting problem, not as a routine substitution.",
+              "score": 0
+            },
+            {
+              "text": "Add hydrocortisone `200 mg` per day and continue norepinephrine",
+              "next": "s5",
+              "feedback": "Reasonable and often done in vasopressor-dependent septic shock, but it is an adjunct. It does not replace searching for the source or correcting calcium and acidosis.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "CT shows an obstructing `8 mm` stone with a dilated, infected left kidney. Urology is called for emergent stent placement. As the team hands off, the daughter asks whether her mother's home medications should be restarted.",
+          "choices": [
+            {
+              "text": "Hold lisinopril, spironolactone, and metformin, and explain that they contributed to the potassium and the acidosis",
+              "next": "end",
+              "feedback": "Correct. Lisinopril and spironolactone stack on potassium, and metformin accumulates in kidney injury and worsens lactic acidosis. All three are held until perfusion and renal function recover.",
+              "score": 1
+            },
+            {
+              "text": "Restart everything tonight so her chronic conditions stay controlled",
+              "next": "end",
+              "feedback": "Harmful. Restarting two potassium retainers and metformin in acute kidney injury is how the same emergency returns.",
+              "score": -1
+            },
+            {
+              "text": "Hold only the metformin and continue the rest",
+              "next": "end",
+              "feedback": "Half right. Metformin must be held, but leaving lisinopril and spironolactone running keeps the potassium problem alive in a patient with acute kidney injury.",
+              "score": 0
+            },
+            {
+              "text": "Tell the daughter medication decisions are not something you can discuss",
+              "next": "end",
+              "feedback": "A missed opportunity. You can explain what is being held and why in plain language and direct specific questions to the physician; families understand the plan better when someone says it clearly.",
+              "score": 0
+            }
+          ]
+        }
+      ],
+      "debrief": "The pattern: in the first hour of septic shock the order is cultures, antibiotics, and `30 mL/kg` of balanced fluid, with the antibiotic chosen from where the patient has been, not just where the infection is. Hyperkalemia with ECG changes gets calcium first, then insulin with dextrose. When a pressor requirement climbs, stop turning the dial and go looking: ionized calcium, acidosis, adrenal insufficiency, and above all an undrained source. No antibiotic cures an obstructed, infected kidney; the stent does. Finally, the home medication list that helped cause the crisis (an ACE inhibitor, an aldosterone blocker, and metformin) is part of the treatment plan, not background noise."
+    },
+    {
+      "id": "pa-pharm-s04",
+      "title": "Converting the opioid dose without hurting anyone",
+      "setting": "classroom",
+      "intro": "Work through a conversion the way it happens on a real shift. A `54`-year-old man with metastatic prostate cancer is admitted with a pathologic femur fracture. At home he takes `morphine sulfate extended release 30 mg by mouth twice daily`, plus `oxycodone 5 mg` up to four times daily for breakthrough, which he has been using every dose for a week. He can no longer swallow reliably and needs intravenous analgesia. Anchor everything to oral morphine milligram equivalents, where `30 mg` oral morphine is the reference unit.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "First, total his daily oral morphine equivalents. Extended-release morphine `30 mg` twice daily is `60 mg`. Oxycodone `5 mg` four times daily is `20 mg` of oxycodone. What is his total?",
+          "choices": [
+            {
+              "text": "`60` plus `30` equals `90` oral morphine equivalents, because `20 mg` oxycodone equals `30 mg` oral morphine",
+              "next": "s2",
+              "feedback": "Correct. Oxycodone is roughly `1.5` times as potent as oral morphine, so `20 mg` of oxycodone is `30 mg` of oral morphine. His total is `90` oral morphine equivalents per day.",
+              "score": 1
+            },
+            {
+              "text": "`60` plus `20` equals `80`, treating oxycodone as equal to morphine",
+              "next": "s2",
+              "feedback": "This undercounts. Oxycodone is more potent per milligram than oral morphine, and treating them as equal will leave him underdosed on the new regimen.",
+              "score": 0
+            },
+            {
+              "text": "`60` only, because breakthrough doses are not counted",
+              "next": "s2",
+              "feedback": "Incorrect and a common error. He is taking every breakthrough dose, so it is part of his daily requirement and must be counted.",
+              "score": -1
+            },
+            {
+              "text": "`60` plus `60` equals `120`, treating oxycodone as twice morphine",
+              "next": "s2",
+              "feedback": "Overcounts. The conversion is `20 mg` oxycodone to `30 mg` oral morphine, a factor of `1.5`, not `2`.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "Now convert `90` oral morphine equivalents per day to intravenous morphine. Recall that `30 mg` of oral morphine equals `10 mg` of IV morphine.",
+          "choices": [
+            {
+              "text": "`30 mg` of IV morphine per day",
+              "next": "s3",
+              "feedback": "Correct. Dividing by three gives `30 mg` IV morphine per `24` hours, which is the raw calculated equivalent before any safety adjustment.",
+              "score": 1
+            },
+            {
+              "text": "`90 mg` of IV morphine per day, since the routes are equivalent",
+              "next": "s3",
+              "feedback": "Dangerous. Oral morphine has only `25%` to `30%` bioavailability, so the IV dose is about one third of the oral dose. This error is a threefold overdose.",
+              "score": -1
+            },
+            {
+              "text": "`10 mg` of IV morphine per day",
+              "next": "s3",
+              "feedback": "Too low. That is the equivalent of `30 mg` of oral morphine, which is one third of what he is actually taking.",
+              "score": 0
+            },
+            {
+              "text": "`45 mg` of IV morphine per day",
+              "next": "s3",
+              "feedback": "This uses a 2:1 oral to IV ratio. The accepted ratio is 3:1, so the correct figure is `30 mg`.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "The team wants hydromorphone instead, because morphine metabolites accumulate and his creatinine is `2.1 mg/dL`. Recall that `1.5 mg` of IV hydromorphone equals `10 mg` of IV morphine. What is the next step after calculating?",
+          "choices": [
+            {
+              "text": "Calculate `4.5 mg` of IV hydromorphone per day, then reduce it by `25%` to `50%` for incomplete cross-tolerance",
+              "next": "s4",
+              "feedback": "Correct. `30 mg` IV morphine divided by the 10:1.5 ratio is `4.5 mg` of IV hydromorphone. Tolerance does not transfer completely between mu agonists, so the starting dose becomes roughly `2.5` to `3.5 mg` per day, divided and titrated.",
+              "score": 1
+            },
+            {
+              "text": "Give the full calculated `4.5 mg` per day without reduction",
+              "next": "s4",
+              "feedback": "Risky. The full calculated dose of a new opioid in a tolerant patient is a recognized cause of oversedation, because cross-tolerance is incomplete.",
+              "score": 0
+            },
+            {
+              "text": "Start the standard opioid-naive dose of `0.2 mg` as needed",
+              "next": "s4",
+              "feedback": "Harmful in a different direction. He has been taking `90` oral morphine equivalents daily. A naive dose leaves a man with a pathologic fracture in agony and is not safer.",
+              "score": -1
+            },
+            {
+              "text": "Keep morphine rather than converting, since the math is simpler",
+              "next": "s4",
+              "feedback": "Understandable, but morphine-6-glucuronide accumulates in kidney failure and causes delayed sedation. Hydromorphone or fentanyl is the better choice at this creatinine.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "The plan is hydromorphone `0.5 mg` IV every `4` hours scheduled, with `0.5 mg` as needed for breakthrough. The attending asks what else should be on the order set to reduce the opioid requirement.",
+          "choices": [
+            {
+              "text": "Scheduled acetaminophen `1000 mg` every `6` hours, a bowel regimen, and consideration of a nerve block",
+              "next": "s5",
+              "feedback": "Correct multimodal thinking. Acetaminophen lowers the opioid requirement, a block can substantially reduce it, and constipation is the one opioid effect that never develops tolerance, so the bowel regimen starts with the opioid, not after the problem.",
+              "score": 1
+            },
+            {
+              "text": "Add ketorolac `30 mg` IV every `6` hours",
+              "next": "s5",
+              "feedback": "Tempting, and NSAIDs are excellent in bone pain, but his creatinine is `2.1 mg/dL`. If an NSAID were used at all it would be `15 mg` and briefly; here the kidney argues against it.",
+              "score": 0
+            },
+            {
+              "text": "Add diphenhydramine `25 mg` every `6` hours for itching",
+              "next": "s5",
+              "feedback": "Scheduled antihistamines add sedation and delirium risk without treating pain. Treat itching if it appears, and remember hydromorphone releases less histamine than morphine.",
+              "score": 0
+            },
+            {
+              "text": "Nothing else; a single opioid keeps the regimen clean",
+              "next": "s5",
+              "feedback": "Single-agent opioid therapy needs higher doses for the same relief and produces more sedation, nausea, and constipation than a multimodal plan.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "Six hours later he is comfortable but sleepy, with a respiratory rate of `8` and a pulse oximetry of `91%` on room air. He rouses to voice.",
+          "choices": [
+            {
+              "text": "Hold the next dose, apply oxygen and stimulate him, and prepare diluted naloxone in `0.04 mg` increments if he deteriorates",
+              "next": "end",
+              "feedback": "Correct. He is rousable, so the first moves are holding the dose, oxygen, and stimulation. If naloxone becomes necessary, small increments titrated to a respiratory rate of `10` avoid dumping a tolerant cancer patient into withdrawal and severe pain.",
+              "score": 1
+            },
+            {
+              "text": "Give naloxone `2 mg` IV push immediately",
+              "next": "end",
+              "feedback": "Harmful here. A full dose in a tolerant patient causes violent withdrawal, uncontrolled pain, vomiting, and occasionally pulmonary edema, in a patient who is still rousable and protecting his airway.",
+              "score": -1
+            },
+            {
+              "text": "Continue the schedule unchanged because the pain is finally controlled",
+              "next": "end",
+              "feedback": "A respiratory rate of `8` with falling saturation is the warning that precedes apnea. Comfort does not justify ignoring it.",
+              "score": -1
+            },
+            {
+              "text": "Hold the dose and simply recheck in an hour without oxygen or stimulation",
+              "next": "end",
+              "feedback": "Holding is right, but passive observation wastes the interval. Oxygen, stimulation, and continuous monitoring are what make the hold safe.",
+              "score": 0
+            }
+          ]
+        }
+      ],
+      "debrief": "The pattern to carry: every opioid conversion is three steps. Total the daily oral morphine equivalents including breakthrough doses actually taken, convert to the new drug and route using the table anchored at `30 mg` oral morphine, then cut the result by `25%` to `50%` because cross-tolerance between mu agonists is incomplete. Route matters as much as drug — oral morphine is only about one third as available as IV. Kidney function picks the agent: morphine metabolites accumulate, so hydromorphone or fentanyl is safer. Multimodal therapy lowers the opioid dose needed, and a bowel regimen starts on day one. When sedation appears, the response is graded: hold, oxygen, stimulate, and only then dilute naloxone into `0.04 mg` steps titrated to breathing rather than to wakefulness."
+    },
+    {
+      "id": "pa-pharm-s05",
+      "title": "The slow heart with no story",
+      "setting": "ed",
+      "intro": "Rescue brings in a `63`-year-old man found unresponsive at home by his son. No witnesses, no note, no empty bottles found. He has hypertension and atrial fibrillation. His son says he has been depressed since his wife died and lists his medications from memory: `metoprolol`, `amlodipine`, `apixaban`, and `amitriptyline` for sleep. Blood glucose on arrival is `88 mg/dL`.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "He is unresponsive to voice, breathing shallowly at `8` per minute. Pupils are mid-sized. The monitor shows a wide-complex bradycardia. What happens first?",
+          "vitals": {
+            "hr": 38,
+            "bp": "70/40",
+            "rr": 8,
+            "spo2": 90,
+            "gcs": 6
+          },
+          "choices": [
+            {
+              "text": "Open the airway, assist ventilation with a bag-valve-mask, get a `12`-lead ECG, and establish two large IVs",
+              "next": "s2",
+              "feedback": "Correct. Airway, breathing, and circulation come before any antidote, and the `12`-lead ECG is the single most informative test in an undifferentiated overdose because QRS width decides the next drug.",
+              "score": 1
+            },
+            {
+              "text": "Give naloxone `2 mg` IV immediately for the low respiratory rate",
+              "next": "s2",
+              "feedback": "Reasonable reflex and unlikely to hurt, but his pupils are mid-sized and no opioid is on the list. Naloxone is worth trying, yet it cannot come before airway support and the ECG.",
+              "score": 0
+            },
+            {
+              "text": "Give flumazenil `0.5 mg` IV to reverse presumed sedative overdose",
+              "next": "s2",
+              "feedback": "Harmful. With a tricyclic on the medication list, flumazenil can strip GABA inhibition and precipitate seizures that benzodiazepines can no longer treat.",
+              "score": -1
+            },
+            {
+              "text": "Start transcutaneous pacing before anything else",
+              "next": "s2",
+              "feedback": "Premature. Pacing may be needed, but ventilation and an ECG come first, and pacing frequently fails to capture in drug-induced bradycardia until the toxin is addressed.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "The `12`-lead shows a rate of `36`, a QRS of `148 ms`, and a tall terminal R wave in lead aVR. He then has a `45`-second generalized seizure.",
+          "choices": [
+            {
+              "text": "Sodium bicarbonate `1-2 mEq/kg` IV push, repeated until the QRS narrows, plus a benzodiazepine for the seizure",
+              "next": "s3",
+              "feedback": "Correct. A wide QRS with a terminal R in aVR is the signature of sodium channel blockade from the amitriptyline. Bicarbonate provides a sodium load and alkalinization that unblocks the channel; benzodiazepines are the correct anticonvulsant here.",
+              "score": 1
+            },
+            {
+              "text": "Phenytoin `20 mg/kg` for the seizure",
+              "next": "s3",
+              "feedback": "Harmful. Phenytoin is itself a sodium channel blocker and worsens tricyclic cardiotoxicity. Benzodiazepines are first line for toxin-induced seizures.",
+              "score": -1
+            },
+            {
+              "text": "Physostigmine `2 mg` IV for the anticholinergic features",
+              "next": "s3",
+              "feedback": "Dangerous with a QRS of `148 ms`. Physostigmine given in tricyclic overdose has caused asystole. The wide QRS is the contraindication.",
+              "score": -1
+            },
+            {
+              "text": "Amiodarone `150 mg` for the wide-complex rhythm",
+              "next": "s3",
+              "feedback": "Wrong mechanism. This is not a primary ventricular arrhythmia, and amiodarone blocks sodium and potassium channels, which worsens the conduction delay.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "After `150 mEq` of bicarbonate the QRS narrows to `112 ms` and the seizure has stopped. The heart rate is still `40` and the blood pressure `74/42` despite `2 L` of crystalloid. Atropine `1 mg` produced no change.",
+          "vitals": {
+            "hr": 40,
+            "bp": "74/42",
+            "rr": 14,
+            "spo2": 98
+          },
+          "choices": [
+            {
+              "text": "Give glucagon `5 mg` IV followed by an infusion, and start high-dose insulin euglycemia therapy",
+              "next": "s4",
+              "feedback": "Correct. With metoprolol and amlodipine both on the list and atropine failing, glucagon bypasses the blocked beta receptor and high-dose insulin acts as an inotrope in beta blocker and calcium channel blocker poisoning.",
+              "score": 1
+            },
+            {
+              "text": "Give calcium chloride `1 g` through a central line and continue insulin therapy",
+              "next": "s4",
+              "feedback": "Also reasonable, and calcium is specifically useful for the amlodipine component. Glucagon and high-dose insulin remain the broader answer when both drug classes are possible.",
+              "score": 0
+            },
+            {
+              "text": "Repeat atropine every `3` minutes up to `3 mg` and wait",
+              "next": "s4",
+              "feedback": "Atropine rarely works in drug-induced bradycardia because the block is at the receptor, not in vagal tone. Repeating it wastes minutes.",
+              "score": 0
+            },
+            {
+              "text": "Give more bicarbonate until the pH exceeds `7.6`",
+              "next": "s4",
+              "feedback": "Harmful. Bicarbonate is titrated to QRS narrowing with a pH goal of about `7.45` to `7.55`. Pushing beyond that causes hypokalemia, hypocalcemia, and arrhythmia without further benefit.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "Glucagon and a high-dose insulin infusion are running with dextrose. The rate is `62` and the pressure `96/58`. The pharmacist asks what monitoring the insulin therapy requires and what other antidote should be available.",
+          "choices": [
+            {
+              "text": "Hourly glucose and frequent potassium, with lipid emulsion available if the circulation collapses",
+              "next": "s5",
+              "feedback": "Correct. High-dose insulin drives both glucose and potassium into cells, so both are followed closely, and dextrose is infused continuously. Lipid emulsion is the rescue for lipophilic drug cardiotoxicity that does not respond to everything else.",
+              "score": 1
+            },
+            {
+              "text": "No specific monitoring is needed once the pressure improves",
+              "next": "s5",
+              "feedback": "Unsafe. High-dose insulin therapy causes profound hypoglycemia and hypokalemia; these are the complications that harm patients during an otherwise successful rescue.",
+              "score": -1
+            },
+            {
+              "text": "Check glucose once at the end of the infusion",
+              "next": "s5",
+              "feedback": "Far too infrequent. Glucose is checked at least hourly, and often every `30` minutes early in the infusion.",
+              "score": 0
+            },
+            {
+              "text": "Monitor glucose closely but stop replacing potassium, since insulin lowers it safely",
+              "next": "s5",
+              "feedback": "Half right. Glucose monitoring is essential, but insulin-driven hypokalemia still needs cautious replacement; the intracellular shift does not mean the level can be ignored.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "He stabilizes and is admitted to the intensive care unit. The son asks whether the apixaban matters and whether his father can simply be woken up with a reversal drug.",
+          "choices": [
+            {
+              "text": "Explain that apixaban matters if he bled or fell, that andexanet alfa exists for serious bleeding, and that there is no drug that reverses this overdose as a whole",
+              "next": "end",
+              "feedback": "Correct and honest. Anticoagulation changes the threshold for head imaging in an unwitnessed collapse, its specific reversal agent is used only for serious bleeding, and most poisonings are treated with supportive care plus targeted antidotes rather than a single reversal.",
+              "score": 1
+            },
+            {
+              "text": "Tell him flumazenil will wake his father shortly",
+              "next": "end",
+              "feedback": "Wrong and dangerous. Flumazenil reverses benzodiazepines only, and in the presence of a tricyclic it can cause seizures that are then untreatable with benzodiazepines.",
+              "score": -1
+            },
+            {
+              "text": "Say the anticoagulant is irrelevant because there is no visible bleeding",
+              "next": "end",
+              "feedback": "Incomplete. An unwitnessed collapse in an anticoagulated patient raises the threshold for head imaging precisely because intracranial bleeding can be occult.",
+              "score": 0
+            },
+            {
+              "text": "Defer entirely and say only that the physician will speak with him",
+              "next": "end",
+              "feedback": "Acceptable for prognosis, but a plain explanation of which drugs have antidotes and which do not is within scope and helps a frightened family understand what is happening.",
+              "score": 0
+            }
+          ]
+        }
+      ],
+      "debrief": "The pattern: in an undifferentiated overdose the `12`-lead ECG does more diagnostic work than any laboratory test, because QRS width sorts the sodium channel blockers out of everything else. A QRS over `100 ms` with a terminal R wave in aVR means bicarbonate, titrated to a narrowing QRS rather than to a target pH, and benzodiazepines rather than phenytoin for the seizures. Bradycardia that ignores atropine and fluid points to receptor blockade: glucagon for beta blockers, calcium and high-dose insulin for calcium channel blockers, and both when the bottle is unknown. High-dose insulin therapy is effective and demanding, requiring hourly glucose and close potassium monitoring. And two antidotes stay in the drawer: flumazenil and physostigmine, both of which can kill the patient in front of you when a tricyclic is on board."
+    }
+  ]
+}
