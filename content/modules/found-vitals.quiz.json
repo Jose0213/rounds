@@ -1,0 +1,1186 @@
+{
+  "schema": 1,
+  "extends": "found-vitals",
+  "checks": {
+    "found-vitals-l01": [
+      {
+        "q": "You count 19 beats in 15 seconds on a patient with a regular pulse. What is the rate, and what is the built-in weakness of this method?",
+        "choices": [
+          "76, and a one-beat miscount shifts the reported rate by 4",
+          "76, and the method has no error at all",
+          "19, since the count is already per minute",
+          "38, because you double a 15-second count"
+        ],
+        "answer": 0,
+        "why": "A 15-second count is multiplied by 4, so 19 x 4 = 76, and that same multiplier magnifies any single-beat error into 4 beats per minute. Doubling is for a 30-second count, and the raw count is never the rate."
+      },
+      {
+        "q": "An adult in a car crash has a strong carotid pulse but you cannot feel a radial pulse on either wrist. What does that tell you first?",
+        "choices": [
+          "Both wrists are probably fractured",
+          "Peripheral perfusion is failing, which is a shock finding",
+          "The systolic pressure is exactly 80 mmHg",
+          "Nothing, since radial pulses are often absent in healthy adults"
+        ],
+        "answer": 1,
+        "why": "Pulses are lost from the outside in as perfusion falls, so a central pulse without a peripheral one means peripheral flow has already dropped. The old teaching that assigns an exact systolic to each site is not reliable enough to quote as a number, and bilateral wrist fractures would be a coincidence, not an explanation."
+      }
+    ],
+    "found-vitals-l02": [
+      {
+        "q": "A 30-year-old with a rib injury breathes 22 times a minute with barely visible chest rise. A second patient breathes 24 times a minute with full, easy chest rise. Which patient worries you more?",
+        "choices": [
+          "The second patient, because the rate is higher",
+          "Neither, both rates are near normal",
+          "The first patient, because shallow breaths move less air despite a similar rate",
+          "Impossible to say without a pulse oximeter"
+        ],
+        "answer": 2,
+        "why": "The air actually reaching gas exchange is rate multiplied by depth, so a shallow 22 moves far less than a full 24. Rate alone is the weakest of the four axes, and an SpO2 can still read normal early in a patient who is under-ventilating."
+      },
+      {
+        "q": "You hear coarse gurgling from an unresponsive patient's mouth on every breath. What is your first action?",
+        "choices": [
+          "Apply a non-rebreather at 15 L",
+          "Listen to the lungs with a stethoscope",
+          "Start a bronchodilator treatment",
+          "Suction the airway"
+        ],
+        "answer": 3,
+        "why": "Gurgling means fluid sitting in the upper airway, and oxygen delivered on top of fluid just pushes it further in. Suction first, then oxygenate; a stethoscope and a bronchodilator address lower-airway problems this patient does not yet have."
+      }
+    ],
+    "found-vitals-l03": [
+      {
+        "q": "You palpate the radial pulse and it disappears at 130 mmHg. To what pressure should you inflate for the auscultated reading?",
+        "choices": [
+          "150 to 160 mmHg",
+          "130 mmHg exactly",
+          "180 to 200 mmHg",
+          "110 to 120 mmHg"
+        ],
+        "answer": 0,
+        "why": "The rule is 20 to 30 mmHg above the palpated estimate, so 150 to 160. Stopping at the estimate puts you at or below the true systolic, and grossly over-inflating is painful and can cause venous congestion that distorts the diastolic."
+      },
+      {
+        "q": "The only available arm has a running intravenous line, and the other arm has a dialysis fistula. What is the correct move?",
+        "choices": [
+          "Take the pressure over the intravenous line anyway",
+          "Use the fistula arm, since a fistula does not affect the reading",
+          "Use an appropriately sized cuff on the thigh or forearm and document the site",
+          "Skip the blood pressure entirely and chart it as refused"
+        ],
+        "answer": 2,
+        "why": "Both listed arms are excluded, so an alternative site with a correctly sized cuff and a documented location is the answer. Cuffing a fistula can damage it, cuffing over a running line ruins both the line and the number, and omitting a pressure without an attempt or a reason leaves the chart unreadable."
+      }
+    ],
+    "found-vitals-l04": [
+      {
+        "q": "A patient reads 150/60. What is the pulse pressure and what is the MAP?",
+        "choices": [
+          "Pulse pressure 60, MAP 105",
+          "Pulse pressure 90, MAP 90",
+          "Pulse pressure 90, MAP 105",
+          "Pulse pressure 60, MAP 90"
+        ],
+        "answer": 1,
+        "why": "Pulse pressure is 150 minus 60 = 90, which is wide. MAP is (150 + 120) / 3 = 90 mmHg. Using the systolic average instead of the diastolic-weighted formula is the usual error and overestimates the mean."
+      },
+      {
+        "q": "An automatic cuff on a cool, mottled patient reports 104/62 while the patient looks poorly perfused. What should you do with that number?",
+        "choices": [
+          "Accept it, since the machine is more objective than a person",
+          "Repeat it on the same arm with the same machine until it agrees",
+          "Chart it and re-check in 15 minutes",
+          "Confirm it manually, because oscillometric devices tend to over-read genuinely low pressures"
+        ],
+        "answer": 3,
+        "why": "Oscillometric machines calculate from oscillation amplitude, and at low pressures the signal compresses so the device reads higher than the truth, which is the most dangerous direction of error. Repeating on the same machine reproduces the same bias, and waiting 15 minutes on a poorly perfused patient wastes the time you have."
+      }
+    ],
+    "found-vitals-l05": [
+      {
+        "q": "A patient with hemoglobin of 5 g/dL after a slow gastrointestinal bleed reads SpO2 99% on room air. What is wrong with treating that as reassurance?",
+        "choices": [
+          "Nothing, 99% means oxygen delivery is adequate",
+          "Saturation is the percentage of hemoglobin that is loaded, and there is very little hemoglobin to load",
+          "The probe overestimates in anemia by exactly 10%",
+          "The reading proves the bleed has stopped"
+        ],
+        "answer": 1,
+        "why": "The device reports the fraction of hemoglobin seats that are filled, not how many seats exist, so a severely anemic patient can be fully saturated and still oxygen-starved. There is no fixed percentage correction, and saturation says nothing about ongoing blood loss."
+      },
+      {
+        "q": "A patient with acrylic nails and dark polish gives an erratic SpO2 in the low 80s while looking comfortable and speaking full sentences. What is the best next step?",
+        "choices": [
+          "Intubate for a saturation under 85%",
+          "Chart the value and move on",
+          "Remove the polish or turn the probe sideways across the finger, or move to an earlobe",
+          "Increase oxygen to 15 L by non-rebreather and re-check in an hour"
+        ],
+        "answer": 2,
+        "why": "Dark polish and artificial nails block the light path and produce falsely low or erratic readings, and the fix is to clear the path or change the site. Treating an artifact as a true saturation escalates care the patient does not need, and charting an unreliable number without a note misleads the next reader."
+      }
+    ],
+    "found-vitals-l06": [
+      {
+        "q": "A patient has a temperature of 101.8 F. What is that in Celsius, and is it a fever?",
+        "choices": [
+          "38.8 C, yes",
+          "37.7 C, no",
+          "39.6 C, yes",
+          "38.0 C, exactly at the threshold"
+        ],
+        "answer": 0,
+        "why": "(101.8 - 32) x 5/9 = 38.8 C, which is above the 38.0 C (100.4 F) fever threshold. Converting in the wrong direction or subtracting after the multiplication produces the other values here."
+      },
+      {
+        "q": "A patient with a kidney stone rates the pain 9 out of 10, and after medication rates it 5. Which part of that is the clinically useful information?",
+        "choices": [
+          "Only the 9, since it shows the pain was real",
+          "The 4-point change, because response to treatment is what the number is for",
+          "Only the 5, since it is the current state",
+          "Neither, because a self-reported number cannot be trusted"
+        ],
+        "answer": 1,
+        "why": "Pain scores are subjective, so their value is in the trend and the treatment response rather than in the absolute figure. Self-report remains the reference standard for pain, so dismissing the number outright is wrong."
+      }
+    ],
+    "found-vitals-l07": [
+      {
+        "q": "A head-injured patient does not open his eyes at all, makes incomprehensible groaning sounds, and his arms bend inward across his chest when you apply pressure. What is his GCS?",
+        "choices": [
+          "GCS 7 (E1 V3 M3)",
+          "GCS 5 (E1 V2 M2)",
+          "GCS 6 (E1 V2 M3)",
+          "GCS 8 (E2 V2 M4)"
+        ],
+        "answer": 2,
+        "why": "No eye opening is E1, incomprehensible sounds are V2, and abnormal flexion with the arms bending inward is decorticate posturing at M3, totaling 6. Extension outward would be M2 and withdrawal away from the stimulus would be M4."
+      },
+      {
+        "q": "A patient is found unconscious and smelling of alcohol. Which action comes first?",
+        "choices": [
+          "Let him sleep it off and re-check in an hour",
+          "Check a blood glucose",
+          "Document intoxication and restrain him",
+          "Obtain an orthostatic blood pressure"
+        ],
+        "answer": 1,
+        "why": "Hypoglycemia imitates intoxication exactly and reverses within minutes, so a fingerstick is the reversible cause you rule out first. Assuming alcohol and waiting lets a treatable brain continue to starve, and orthostatics are meaningless in an unconscious patient."
+      }
+    ],
+    "found-vitals-l08": [
+      {
+        "q": "What is the expected systolic pressure for a 6-year-old, and what is the floor?",
+        "choices": [
+          "Expected 82, floor 62",
+          "Expected 96, floor 76",
+          "Expected 102, floor 82",
+          "Expected 100, floor 80"
+        ],
+        "answer": 2,
+        "why": "Expected is 90 + (2 x 6) = 102 and the floor is 70 + (2 x 6) = 82. The gap between those two numbers is the child's whole reserve, and swapping the constants or the multiplier produces the other options."
+      },
+      {
+        "q": "An 82-year-old on metoprolol is bleeding internally. Why might her heart rate stay near 70?",
+        "choices": [
+          "Beta blockade plus age-related blunting prevents the compensatory tachycardia",
+          "Older adults do not lose blood as quickly",
+          "Metoprolol increases blood volume",
+          "A heart rate near 70 proves the bleeding is minor"
+        ],
+        "answer": 0,
+        "why": "Beta blockers block the sympathetic signal that would normally raise the rate, and the aging heart responds less to that signal anyway, so the usual early warning simply does not appear. The drug does nothing to blood volume, and a normal-looking pulse in this patient is the opposite of reassuring."
+      }
+    ],
+    "found-vitals-l09": [
+      {
+        "q": "A patient reads HR 96 and BP 112/68. What is the shock index and how is it read?",
+        "choices": [
+          "1.17, treat as shock",
+          "0.86, borderline, look harder",
+          "0.61, normal",
+          "1.41, emergency"
+        ],
+        "answer": 1,
+        "why": "Shock index is heart rate divided by systolic pressure, so 96 / 112 = 0.86, which lands in the 0.7 to 0.9 borderline band. Dividing systolic by heart rate or using the diastolic produces the other values here."
+      },
+      {
+        "q": "You give a dose of medication that affects blood pressure. When should vitals be taken?",
+        "choices": [
+          "Only once afterward, at the end of the shift",
+          "Only before, so you have a baseline on file",
+          "Before the dose and again after it",
+          "Whenever the patient asks"
+        ],
+        "answer": 2,
+        "why": "A post-dose number without a pre-dose number cannot show whether the drug worked or harmed, and a pre-dose number alone shows nothing about the effect. Pairing them is what makes the intervention interpretable."
+      }
+    ],
+    "found-vitals-l10": [
+      {
+        "q": "A 7-month-old has a respiratory rate of 68 that has been sustained for twenty minutes. How do you read that?",
+        "choices": [
+          "Normal, since infants breathe 25 to 50 and short bursts are expected",
+          "Normal only if the infant is crying",
+          "Abnormal at any infant age band and needs explanation",
+          "Impossible, since infants cannot sustain that rate"
+        ],
+        "answer": 2,
+        "why": "A sustained rate over 60 in an infant is abnormal in every age band, and 68 is well past that line. Crying can briefly raise a rate, but it does not make a sustained 68 normal."
+      },
+      {
+        "q": "A newborn has repeated breathing pauses of about 8 seconds with no color change and no heart rate drop. What is this and what do you do?",
+        "choices": [
+          "Apnea; begin bag-mask ventilation",
+          "Periodic breathing, which is normal in a newborn; continue monitoring",
+          "Agonal breathing; begin compressions",
+          "Cheyne-Stokes breathing; suspect a head injury"
+        ],
+        "answer": 1,
+        "why": "Pauses under 20 seconds with no cyanosis and no bradycardia are periodic breathing, a normal newborn pattern. A pause of 20 seconds or more, or any pause with a color or rate change, is apnea and would require intervention."
+      }
+    ],
+    "found-vitals-l11": [
+      {
+        "q": "A patient with a respiratory rate of 16 has an EtCO2 of 62 mmHg and a plateau that is present but tall. What does this combination mean?",
+        "choices": [
+          "Normal ventilation, since the rate is 12 to 20",
+          "Hyperventilation, because the plateau is intact",
+          "Equipment failure, since a rate of 16 cannot produce that number",
+          "The rate is normal but carbon dioxide is not being cleared, so ventilation is inadequate"
+        ],
+        "answer": 3,
+        "why": "A rate counts events and says nothing about the air moved, so a normal-looking 16 with an EtCO2 of 62 means retained carbon dioxide from shallow or obstructed breaths. Hyperventilation drives EtCO2 below 35, in the opposite direction."
+      },
+      {
+        "q": "Immediately after an intubation attempt the capnogram is a flat line at zero with compressions in progress. What is the most likely explanation?",
+        "choices": [
+          "The tube is not in the trachea, or there is no circulation delivering carbon dioxide",
+          "The patient is hyperventilating",
+          "The waveform is normal for a tubed patient",
+          "The sensor needs 5 minutes to warm up"
+        ],
+        "answer": 0,
+        "why": "No exhaled carbon dioxide at all points to an esophageal tube, a disconnection, or no blood reaching the lungs. A correctly placed tube with ongoing compressions should show a waveform, usually with an EtCO2 above 10 mmHg."
+      }
+    ],
+    "found-vitals-l12": [
+      {
+        "q": "You take a pressure, get a surprising result, and immediately re-inflate the same arm. What error does that introduce?",
+        "choices": [
+          "None, immediate repeats are preferred",
+          "Venous congestion raises the diastolic reading",
+          "The systolic is lost entirely",
+          "The cuff loses calibration"
+        ],
+        "answer": 1,
+        "why": "Blood pooled from the first inflation has not drained, and that congestion pushes the diastolic up. Waiting 1 to 2 minutes, or alternating arms, prevents it; cuff calibration is unaffected by how soon you repeat."
+      },
+      {
+        "q": "Your first assessment of a new patient gives 152/88 in the right arm. What should you do about the left arm?",
+        "choices": [
+          "Nothing, one arm is sufficient at a first assessment",
+          "Measure it only if the patient reports arm pain",
+          "Measure it too, and investigate a consistent difference over 10 to 15 mmHg",
+          "Measure it and average the two values"
+        ],
+        "answer": 2,
+        "why": "Both arms are measured at a first assessment because a consistent systolic difference over 10 to 15 mmHg can indicate subclavian stenosis or, in the right setting, aortic dissection. Averaging hides the finding, and the higher arm is the one used from then on."
+      }
+    ],
+    "found-vitals-l13": [
+      {
+        "q": "A patient who speaks only Haitian Creole is in pain and her adult son offers to translate. What is the correct approach?",
+        "choices": [
+          "Use the son, since he knows her best",
+          "Use a trained interpreter, because family members summarize and soften",
+          "Use gestures and skip the pain score",
+          "Score her with FLACC instead"
+        ],
+        "answer": 1,
+        "why": "Family translators condense, soften and sometimes answer on the patient's behalf, so a trained interpreter is required for an accurate self-report. Self-report is still available here, which means an observational tool like FLACC is not the right substitute."
+      },
+      {
+        "q": "A nursing home patient with dementia scores PAINAD 8. After acetaminophen she scores PAINAD 3. What does that document?",
+        "choices": [
+          "That she was never in real pain",
+          "That she is now sedated",
+          "That the observed behaviors improved after treatment, which supports pain as the cause",
+          "Nothing, because PAINAD cannot be repeated"
+        ],
+        "answer": 2,
+        "why": "PAINAD is scored 0 to 10 precisely so it can be trended, and a drop after an analgesic trial is evidence the behavior was driven by pain. Acetaminophen is not a sedative, and a falling score is the intended use of the tool, not a misuse."
+      }
+    ],
+    "found-vitals-l14": [
+      {
+        "q": "Which route and threshold are required to apply the infant fever rule in a 5-week-old?",
+        "choices": [
+          "Axillary, 37.5 C",
+          "Temporal, 38.5 C",
+          "Tympanic, 38.0 C",
+          "Rectal, 38.0 C (100.4 F)"
+        ],
+        "answer": 3,
+        "why": "The rule is written for a rectal temperature of 38.0 C (100.4 F) or higher, and only that route supports the decision. Axillary, temporal and tympanic readings are screens whose offsets are too variable to trigger an emergency infant evaluation."
+      },
+      {
+        "q": "Convert 39.4 C to Fahrenheit.",
+        "choices": [
+          "102.9 F",
+          "104.6 F",
+          "100.9 F",
+          "98.6 F"
+        ],
+        "answer": 0,
+        "why": "(39.4 x 9/5) + 32 = 70.9 + 32 = 102.9 F. Remembering that 40 C is 104 F makes 39.4 C land just under it, which rules out the higher and much lower options at a glance."
+      }
+    ],
+    "found-vitals-l15": [
+      {
+        "q": "A head-injured patient goes HR 92 to 74 to 56, BP 138/82 to 168/84 to 196/80, with breathing that has become irregular. What pattern is this?",
+        "choices": [
+          "Hypovolemic shock",
+          "Cushing's triad from rising intracranial pressure",
+          "An expected response to pain medication",
+          "Improving perfusion after fluid"
+        ],
+        "answer": 1,
+        "why": "Rising systolic with widening pulse pressure, falling heart rate and irregular respirations is Cushing's triad, a late sign of rising pressure inside the skull. Hypovolemic shock moves the opposite way, with a rising rate and a falling pressure."
+      },
+      {
+        "q": "A dehydrated toddler goes from HR 168 to 132 with capillary refill improving from 4 seconds to 2 and is now alert and drinking. Why is this falling heart rate real improvement, unlike a falling rate in a shocked child?",
+        "choices": [
+          "Because any heart rate moving toward normal is improvement",
+          "Because toddlers do not develop bradycardia",
+          "Because the perfusion and appearance findings moved in the same good direction",
+          "Because capillary refill is the only finding that matters"
+        ],
+        "answer": 2,
+        "why": "A number only means something inside the story, and here refill and interactiveness improved alongside the rate, which confirms recovery. In the dangerous version the rate falls while the child goes limp and mottled, which is the descent toward arrest."
+      }
+    ],
+    "found-vitals-l16": [
+      {
+        "q": "A patient at 28 weeks gestation becomes lightheaded and pale within a minute of being laid flat on a backboard. What is the first action?",
+        "choices": [
+          "Give a fluid bolus and re-check in 10 minutes",
+          "Sit her fully upright",
+          "Roll her left or apply manual left uterine displacement",
+          "Apply oxygen and continue flat positioning"
+        ],
+        "answer": 2,
+        "why": "After about 20 weeks the uterus compresses the inferior vena cava when the patient lies flat, cutting venous return, and left lateral tilt or manual left uterine displacement relieves it within seconds. Fluids and oxygen do not address the mechanical obstruction, and sitting fully upright is unnecessary and often unsafe on a board."
+      },
+      {
+        "q": "A runner collapses roughly 30 seconds after crossing a finish line and is alert with a normal temperature. A second runner collapses mid-race while still running. Which one worries you more, and why?",
+        "choices": [
+          "The first, because post-race collapse is always cardiac",
+          "The second, because collapse during exertion is cardiac until proven otherwise",
+          "Neither, both are benign exercise-associated collapse",
+          "Both equally, since collapse timing carries no information"
+        ],
+        "answer": 1,
+        "why": "Collapse after the finish line is usually benign exercise-associated collapse from blood pooling once the leg muscle pump stops. Collapse during exertion is the pattern associated with cardiac causes and is treated as such until ruled out."
+      }
+    ],
+    "found-vitals-l17": [
+      {
+        "q": "A patient's saturation is 95% on 6 L by nasal cannula. Why does NEWS2 still assign points?",
+        "choices": [
+          "Because nasal cannula readings are inaccurate",
+          "Because oxygen use always indicates an infection",
+          "Because the score penalizes any device attached to a patient",
+          "Because achieving 95% only with support is a sicker patient than 95% on room air"
+        ],
+        "answer": 3,
+        "why": "The score awards points for supplemental oxygen independently so that a saturation propped up by support cannot look identical to an unsupported one. It has nothing to do with device accuracy or the cause of the oxygen requirement."
+      },
+      {
+        "q": "You hand off a patient. Which statement carries the most information?",
+        "choices": [
+          "Her heart rate is 122.",
+          "Her vitals are a bit off.",
+          "Her rate has gone 88, 104 then 122 over the last forty minutes, with her pressure falling from 128/72 to 104/58.",
+          "She looks unwell but the numbers are fine."
+        ],
+        "answer": 2,
+        "why": "Timed sets with a stated direction let the next clinician see the trajectory, which is what decisions are made on. A single value gives position without direction, and vague impressions give neither."
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "id": "found-vitals-q059",
+      "q": "You count 21 beats in 15 seconds on a patient with a regular rhythm. What rate do you report?",
+      "choices": [
+        "21",
+        "42",
+        "84",
+        "126"
+      ],
+      "answer": 2,
+      "why": "A 15-second count is multiplied by 4, so 21 x 4 = 84. Doubling gives the 30-second answer, reporting the raw count ignores the interval, and multiplying by 6 is the conversion for a 10-second count.",
+      "lesson": "found-vitals-l01",
+      "difficulty": 1
+    },
+    {
+      "id": "found-vitals-q060",
+      "q": "While checking an unresponsive adult's carotid pulse, a partner reaches for the opposite carotid to compare. What should you tell them?",
+      "choices": [
+        "Check one side only, because compressing both reduces blood flow to the brain",
+        "Compare both sides, since a difference is diagnostic of stroke",
+        "Use both sides but press only lightly",
+        "Compare both sides but only for 5 seconds"
+      ],
+      "answer": 0,
+      "why": "Compressing both carotids at once can cut cerebral perfusion, so only one side is checked at a time regardless of pressure or duration. Heavy pressure also risks a vagal response that slows the heart, which is a second reason to be gentle.",
+      "lesson": "found-vitals-l01",
+      "difficulty": 1
+    },
+    {
+      "id": "found-vitals-q061",
+      "q": "A 68-year-old with atrial fibrillation has a pulse you cannot find a pattern in. Your partner counts 15 seconds and reports 96. What is the problem?",
+      "choices": [
+        "Nothing, 15-second counts are accurate in any rhythm",
+        "The multiplier should have been 2 rather than 4",
+        "The radial site is invalid in atrial fibrillation",
+        "A short count assumes evenly spaced beats, which an irregular rhythm breaks"
+      ],
+      "answer": 3,
+      "why": "Sampling 15 seconds and multiplying assumes the beats are spread evenly across the minute, and an irregular rhythm violates that, so the number can be far off. The radial site is fine; it is the interval that must be a full 60 seconds.",
+      "lesson": "found-vitals-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "found-vitals-q062",
+      "q": "A 3-year-old with a barking cough has a high-pitched noise you can hear across the room when she breathes in. What does this describe and where does it come from?",
+      "choices": [
+        "Wheezing, from narrowed lower airways",
+        "Stridor, from narrowing at or above the larynx",
+        "Crackles, from fluid in the alveoli",
+        "Grunting, from exhaling against a closed throat"
+      ],
+      "answer": 1,
+      "why": "A high-pitched noise on inhalation is stridor, which comes from upper airway narrowing such as croup, swelling, or a foreign body. Wheezing is heard mostly on exhalation from lower airways, crackles are fine popping on inhalation, and grunting occurs on exhalation.",
+      "lesson": "found-vitals-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "found-vitals-q063",
+      "q": "A patient with new diabetes is breathing deeply, rapidly and with a sighing quality, and his breath smells faintly fruity. What pattern is this and why is it happening?",
+      "choices": [
+        "Cheyne-Stokes breathing, from a brain injury",
+        "Kussmaul respirations, blowing off carbon dioxide to offset metabolic acid",
+        "Agonal breathing, from early cardiac arrest",
+        "Periodic breathing, a normal variant"
+      ],
+      "answer": 1,
+      "why": "Deep, fast, sighing breaths in diabetic ketoacidosis are Kussmaul respirations, the body clearing carbon dioxide to compensate for acid buildup. Cheyne-Stokes cycles deeper and shallower with pauses, agonal breathing is slow gasping in arrest, and periodic breathing is a newborn finding.",
+      "lesson": "found-vitals-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "found-vitals-q064",
+      "q": "A patient with heart failure can say only two or three words before pausing for a breath. How should you record this?",
+      "choices": [
+        "Respirations normal, patient talking",
+        "Anxiety-related shortness of breath",
+        "Mild dyspnea",
+        "Speaking in two-to-three-word phrases, which is a severity finding to re-check later"
+      ],
+      "answer": 3,
+      "why": "How many words a patient can say in one breath is a free, repeatable severity scale, and writing it down creates a trend anyone can interpret. Calling it mild or anxiety-related substitutes an impression for an observation, and the patient is clearly not breathing normally.",
+      "lesson": "found-vitals-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "found-vitals-q065",
+      "q": "You palpate the radial pulse, and it vanishes as the cuff reaches 150 mmHg. To what pressure should you inflate for the auscultated reading?",
+      "choices": [
+        "170 to 180 mmHg",
+        "150 mmHg",
+        "200 mmHg",
+        "130 mmHg"
+      ],
+      "answer": 0,
+      "why": "Standard practice is 20 to 30 mmHg above the palpated estimate, so 170 to 180. Inflating only to the estimate starts you at or below the true systolic, and inflating far higher is painful and causes venous congestion that distorts the diastolic.",
+      "lesson": "found-vitals-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "found-vitals-q066",
+      "q": "Why do Korotkoff sounds exist only between full occlusion and no cuff pressure?",
+      "choices": [
+        "The cuff bladder vibrates at intermediate pressures",
+        "The stethoscope only transmits sound in that range",
+        "Sound requires turbulent flow, which occurs only when the artery is partly narrowed",
+        "The artery spasms when partly compressed"
+      ],
+      "answer": 2,
+      "why": "A fully open artery has smooth, silent flow and a fully closed one has no flow at all, so audible turbulence exists only in the partly narrowed middle. That is precisely why the beginning and end of the sound define the systolic and diastolic values.",
+      "lesson": "found-vitals-l03",
+      "difficulty": 3
+    },
+    {
+      "id": "found-vitals-q067",
+      "q": "A very thin, frail 91-year-old is measured with a standard adult cuff and reads 88/50. What error should you consider first?",
+      "choices": [
+        "Too-small cuff, reading falsely low",
+        "Too-small cuff, reading falsely high",
+        "Too-large cuff, reading falsely high",
+        "Too-large cuff, reading falsely low"
+      ],
+      "answer": 3,
+      "why": "On a thin arm a standard cuff is effectively oversized, and an oversized bladder compresses the artery with less pressure, so the gauge understates the truth. That direction of error can invent a hypotension that is not there; an undersized cuff produces the opposite mistake.",
+      "lesson": "found-vitals-l03",
+      "difficulty": 3
+    },
+    {
+      "id": "found-vitals-q068",
+      "q": "In the back of a moving ambulance the siren makes auscultation impossible on a critical patient. What is the appropriate action?",
+      "choices": [
+        "Estimate the pressure from the strength of the radial pulse",
+        "Obtain a palpated systolic and chart it as a number over P",
+        "Skip the blood pressure until arrival",
+        "Chart the last reading from the scene as current"
+      ],
+      "answer": 1,
+      "why": "Palpation gives a real systolic, charted as for example 92/P, which tells the next reader both the value and the method. Guessing from pulse strength is not reliable, omitting the pressure on a critical patient loses the trend, and copying a prior set forward is falsification.",
+      "lesson": "found-vitals-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "found-vitals-q069",
+      "q": "A septic patient reads 96/44. What is the MAP, and how does it compare with the usual resuscitation target?",
+      "choices": [
+        "70 mmHg, comfortably above target",
+        "61 mmHg, above target",
+        "61 mmHg, below the 65 mmHg target",
+        "70 mmHg, below target"
+      ],
+      "answer": 2,
+      "why": "MAP is (96 + 88) / 3 = 184 / 3 = 61 mmHg, which sits under the 65 mmHg floor used as the standard target in shock and sepsis care. The systolic of 96 looks tolerable, which is exactly the trap the formula exists to catch.",
+      "lesson": "found-vitals-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "found-vitals-q070",
+      "q": "A patient with a stab wound to the chest becomes progressively worse with a blood pressure moving from 118/74 to 96/78. What does the narrowing pulse pressure suggest?",
+      "choices": [
+        "Falling stroke volume with clamped vessels, as in tamponade or hypovolemia",
+        "Vasodilation from a spinal injury",
+        "Rising pressure inside the skull",
+        "A measurement error from a too-large cuff"
+      ],
+      "answer": 0,
+      "why": "Pulse pressure falls from 44 to 18 as the diastolic climbs toward the systolic, which is arteriolar clamping around a shrinking stroke volume, classic for tamponade or blood loss. Vasodilation and rising intracranial pressure widen rather than narrow the pulse pressure.",
+      "lesson": "found-vitals-l04",
+      "difficulty": 3
+    },
+    {
+      "id": "found-vitals-q071",
+      "q": "A patient with three days of diarrhea has supine vitals of HR 84 and BP 122/74. At one minute standing he is HR 98 and BP 116/70 but becomes gray and nearly faints. How do you score the test?",
+      "choices": [
+        "Positive, because symptoms on standing count regardless of the numbers",
+        "Negative, because no threshold was crossed",
+        "Invalid, because the test must be repeated at 3 minutes",
+        "Negative, because the heart rate rose less than 20"
+      ],
+      "answer": 0,
+      "why": "Near-syncope on standing is itself a positive result and outranks the numeric criteria, which are the 20 mmHg systolic drop, 10 mmHg diastolic drop and 20 bpm rate rise. Waiting for a 3-minute repeat on a patient who is about to faint adds nothing but risk.",
+      "lesson": "found-vitals-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "found-vitals-q072",
+      "q": "A patient in rapid atrial fibrillation has an automatic cuff that re-inflates three times before displaying 118/62. How should the number be treated?",
+      "choices": [
+        "Accurate, because the machine repeated until confident",
+        "Accurate for the systolic only",
+        "Unreliable, because irregular rhythms confuse oscillometric analysis",
+        "Unreliable only if the patient was moving"
+      ],
+      "answer": 2,
+      "why": "Oscillometric devices identify the peak oscillation and calculate from it, and beat-to-beat variability in atrial fibrillation corrupts that analysis. Repeated re-inflation signals failed attempts rather than added confidence, so a manual reading is needed before acting.",
+      "lesson": "found-vitals-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "found-vitals-q073",
+      "q": "A patient with a hemoglobin of 4.8 g/dL after a long gastrointestinal bleed reads SpO2 100% on room air. What is the correct interpretation?",
+      "choices": [
+        "Oxygen delivery is adequate and no oxygen is needed",
+        "Saturation is normal but the oxygen-carrying capacity is severely reduced",
+        "The oximeter is broken and should be replaced",
+        "The reading proves carbon monoxide poisoning"
+      ],
+      "answer": 1,
+      "why": "Pulse oximetry reports the percentage of hemoglobin that is loaded, not how much hemoglobin exists, so nearly empty blood can be fully saturated. Carbon monoxide also produces a falsely high reading, but nothing in this history points to it.",
+      "lesson": "found-vitals-l05",
+      "difficulty": 3
+    },
+    {
+      "id": "found-vitals-q074",
+      "q": "A COPD patient at his chronic baseline reads SpO2 90%. What is the usual target range for this population?",
+      "choices": [
+        "Above 96%",
+        "Above 94% like any other adult",
+        "94% to 98%",
+        "88% to 92% in many protocols"
+      ],
+      "answer": 3,
+      "why": "Many chronic COPD protocols target 88% to 92% rather than the general adult threshold of 94%, so 90% sits inside the intended range. Driving these patients to the high 90s is not the goal, and protocols vary, so the local one governs.",
+      "lesson": "found-vitals-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "found-vitals-q075",
+      "q": "A patient is tripoding, speaking one word at a time, and visibly straining, with an SpO2 of 97% on room air. What is the correct response?",
+      "choices": [
+        "Reassure the patient, since the saturation is normal",
+        "Repeat the saturation on the other hand and then reassess",
+        "Treat the breathing emergency the patient is showing you, regardless of the number",
+        "Withhold oxygen until the saturation falls below 94%"
+      ],
+      "answer": 2,
+      "why": "Saturation is a late-moving number and a patient can be in severe respiratory failure with a normal SpO2 for some time. The clinical picture outranks the display, and delaying care until the number catches up wastes the compensated window.",
+      "lesson": "found-vitals-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "found-vitals-q076",
+      "q": "A patient's temperature is 35.6 C. How is that classified?",
+      "choices": [
+        "Normal",
+        "Fever",
+        "Severe hypothermia",
+        "Below the normal range but above the 35.0 C hypothermia threshold"
+      ],
+      "answer": 3,
+      "why": "Hypothermia begins below 35.0 C, so 35.6 C is low but not yet hypothermic, and normal runs about 36.5 to 37.5 C. Severe hypothermia is below 28 C, and fever begins at 38.0 C in the opposite direction.",
+      "lesson": "found-vitals-l06",
+      "difficulty": 1
+    },
+    {
+      "id": "found-vitals-q077",
+      "q": "A patient with influenza has a temperature of 39.2 C and is shivering under blankets saying she feels freezing. Why does she feel cold while running hot?",
+      "choices": [
+        "Her skin temperature is genuinely low while her core is high",
+        "Her hypothalamic set point has been raised, so her actual temperature feels too cold to her body",
+        "Shivering always means hypothermia",
+        "The thermometer is reading the wrong route"
+      ],
+      "answer": 1,
+      "why": "In fever the thermostat itself is reset upward, so the body treats its current temperature as too low and shivers to reach the new set point. That raised set point is also why antipyretics work in fever and do nothing in environmental hyperthermia.",
+      "lesson": "found-vitals-l06",
+      "difficulty": 3
+    },
+    {
+      "id": "found-vitals-q078",
+      "q": "A patient describes chest discomfort that worsens when you press on the sternum. What can you conclude?",
+      "choices": [
+        "It is definitely musculoskeletal and cardiac causes are excluded",
+        "It is definitely cardiac, since palpation should not change chest pain",
+        "Reproducible chest wall pain leans musculoskeletal but never rules out a heart attack",
+        "Palpation findings carry no information at all"
+      ],
+      "answer": 2,
+      "why": "Pain reproduced by chest wall pressure makes a musculoskeletal cause more likely, but that finding alone has never been reliable enough to exclude an acute coronary event. The PQRST elements shift probability rather than deliver a diagnosis.",
+      "lesson": "found-vitals-l06",
+      "difficulty": 3
+    },
+    {
+      "id": "found-vitals-q079",
+      "q": "A patient does not open her eyes, makes no sound at all, and her arms straighten and rotate outward when pressure is applied. What is her GCS?",
+      "choices": [
+        "GCS 3 (E1 V1 M1)",
+        "GCS 4 (E1 V1 M2)",
+        "GCS 5 (E1 V1 M3)",
+        "GCS 6 (E2 V1 M3)"
+      ],
+      "answer": 1,
+      "why": "No eye opening is E1, no verbal response is V1, and extension with outward rotation is decerebrate posturing scored M2, totaling 4. Abnormal inward flexion would be M3, and a total of 3 requires no motor response at all.",
+      "lesson": "found-vitals-l07",
+      "difficulty": 3
+    },
+    {
+      "id": "found-vitals-q080",
+      "q": "A patient knows his own name but cannot say where he is, what month it is, or what happened. How is his orientation documented?",
+      "choices": [
+        "Alert and oriented x1",
+        "Alert and oriented x4",
+        "Responsive to verbal stimulus only",
+        "Unresponsive"
+      ],
+      "answer": 0,
+      "why": "Orientation is graded to person, place, time and event, and this patient retains only person, so he is A and O x1. He is alert because his eyes are open and he is interacting, which rules out the verbal and unresponsive levels of AVPU.",
+      "lesson": "found-vitals-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "found-vitals-q081",
+      "q": "A patient with a fingerstick glucose of 46 mg/dL is confused, sweating and combative. How is this best described?",
+      "choices": [
+        "Normal glucose with a psychiatric cause",
+        "Mild hyperglycemia",
+        "Diabetic ketoacidosis",
+        "Clinically significant hypoglycemia, which reverses within minutes of treatment"
+      ],
+      "answer": 3,
+      "why": "A glucose under 54 mg/dL is clinically significant hypoglycemia, and confusion, sweating and combativeness are its classic presentation. Diabetic ketoacidosis runs high, often over 250 mg/dL, and attributing this to psychiatric causes delays a treatment that works in minutes.",
+      "lesson": "found-vitals-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "found-vitals-q082",
+      "q": "A colleague wipes the finger with alcohol and lances it immediately, then squeezes the fingertip hard to produce a drop. What is the expected effect on the result?",
+      "choices": [
+        "The reading will be falsely high from tissue fluid",
+        "No effect, since the meter corrects for dilution",
+        "The reading may be falsely low from alcohol and interstitial fluid diluting the sample",
+        "The meter will refuse to read the sample"
+      ],
+      "answer": 2,
+      "why": "Wet alcohol and milked interstitial fluid both dilute the blood, which shifts the value downward. Letting the alcohol dry, wiping away the first drop, and testing the second without hard squeezing avoids it; meters do not correct for contamination.",
+      "lesson": "found-vitals-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "found-vitals-q083",
+      "q": "What is the expected systolic blood pressure for a 4-year-old?",
+      "choices": [
+        "78 mmHg",
+        "84 mmHg",
+        "90 mmHg",
+        "98 mmHg"
+      ],
+      "answer": 3,
+      "why": "The expected value for ages 1 to 10 is 90 + (2 x age), so 90 + 8 = 98 mmHg. The minimum acceptable systolic uses 70 as the constant, giving 78, which is the floor rather than the expected value.",
+      "lesson": "found-vitals-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "found-vitals-q084",
+      "q": "A 9-year-old struck by a bicycle has a systolic of 92, a heart rate of 148 and capillary refill of 4 seconds. How should this be read?",
+      "choices": [
+        "Normal, because the pressure is above the floor of 88",
+        "Abnormal only because of the heart rate",
+        "Compensated shock, because the pressure holds while rate and perfusion are abnormal",
+        "Decompensated shock, because the pressure is below the floor"
+      ],
+      "answer": 2,
+      "why": "The floor is 70 + (2 x 9) = 88 mmHg, so a systolic of 92 is still above it, but a rate of 148 and refill of 4 seconds show hard compensation. A normal pediatric pressure is never reassurance on its own; hypotension would mean the reserve is already gone.",
+      "lesson": "found-vitals-l08",
+      "difficulty": 3
+    },
+    {
+      "id": "found-vitals-q085",
+      "q": "An 80-year-old with a long history of untreated hypertension arrives with a systolic of 112 and new confusion. Why should this concern you?",
+      "choices": [
+        "A systolic of 112 may be a substantial drop from this person's own baseline",
+        "112 is below the adult hypotension threshold of 120",
+        "Confusion is a normal finding at age 80",
+        "Older adults should always run above 160 systolic"
+      ],
+      "answer": 0,
+      "why": "Vitals are judged against the individual's baseline, and a chronically hypertensive patient can be significantly hypotensive at a number that looks normal on a population range. The adult hypotension marker is a systolic under 90, and new confusion is never a normal aging finding.",
+      "lesson": "found-vitals-l08",
+      "difficulty": 3
+    },
+    {
+      "id": "found-vitals-q086",
+      "q": "How often should vital signs be repeated on a patient you have judged unstable?",
+      "choices": [
+        "Every 30 minutes",
+        "Every 5 minutes",
+        "Every 15 minutes",
+        "Once per hour"
+      ],
+      "answer": 1,
+      "why": "Unstable patients and patients who have just received a significant intervention are reassessed every 5 minutes, which is often enough to catch a change while you can still act on it. Every 15 minutes is the stable-patient interval, and longer intervals lose the trend.",
+      "lesson": "found-vitals-l09",
+      "difficulty": 1
+    },
+    {
+      "id": "found-vitals-q087",
+      "q": "A patient reads HR 132 and BP 88/54. What is the shock index and what does it mean?",
+      "choices": [
+        "1.5, well over 1.0, so treat as shock",
+        "0.67, normal",
+        "0.85, borderline",
+        "2.4, meaningless because the value exceeds the scale"
+      ],
+      "answer": 0,
+      "why": "Shock index is heart rate divided by systolic pressure, so 132 / 88 = 1.5, meaning the rate has far exceeded the systolic. Values over 0.9 already carry increased mortality and transfusion risk, and there is no upper cutoff that makes the index invalid.",
+      "lesson": "found-vitals-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "found-vitals-q088",
+      "q": "A patient is too combative for a blood pressure to be obtained. What should the chart show?",
+      "choices": [
+        "A blank field",
+        "Unable to obtain BP, patient combative, with the time",
+        "An estimate based on the pulse quality",
+        "The previous reading carried forward"
+      ],
+      "answer": 1,
+      "why": "A stated reason is clinical information in itself and tells the next reader that an attempt was made and why it failed. A blank is unreadable, an estimate is invented data, and copying a previous set forward falsifies the record.",
+      "lesson": "found-vitals-l09",
+      "difficulty": 1
+    },
+    {
+      "id": "found-vitals-q089",
+      "q": "Which three observations make up the Pediatric Assessment Triangle?",
+      "choices": [
+        "Heart rate, respiratory rate, blood pressure",
+        "Airway, breathing, circulation",
+        "Appearance, work of breathing, circulation to skin",
+        "Temperature, capillary refill, mental status"
+      ],
+      "answer": 2,
+      "why": "The triangle is appearance, work of breathing and circulation to skin, all assessed from across the room before touching the child. It is deliberately not a set of measured numbers, which is what makes it faster and more sensitive than a vitals set.",
+      "lesson": "found-vitals-l10",
+      "difficulty": 1
+    },
+    {
+      "id": "found-vitals-q090",
+      "q": "An 8-month-old with sepsis has a heart rate of 54 and mottled, cool skin. What does current practice call for?",
+      "choices": [
+        "Observation, since the rate is within an acceptable range for sleep",
+        "Fluids only, since the rate will rise with volume",
+        "Warm the infant and re-check in 10 minutes",
+        "Chest compressions, because a rate under 60 with poor perfusion in an infant is a compression indication"
+      ],
+      "answer": 3,
+      "why": "A heart rate under 60 with signs of poor perfusion in an infant or child means compressions, because a slowing pediatric heart has run out of oxygen. Waiting, warming or relying on fluids alone all spend the minutes that decide the outcome.",
+      "lesson": "found-vitals-l10",
+      "difficulty": 3
+    },
+    {
+      "id": "found-vitals-q091",
+      "q": "A prehospital protocol does not require a blood pressure in children under 3. What is the reasoning?",
+      "choices": [
+        "Children under 3 do not have measurable blood pressure",
+        "Cuffs small enough do not exist",
+        "It is slow and unreliable, and the decision has already been made by rate, effort, skin and appearance",
+        "Blood pressure in small children is always normal"
+      ],
+      "answer": 2,
+      "why": "In small children a pressure is difficult to obtain, frequently inaccurate, and arrives after the findings that actually decide care. Cuffs do exist and pressures are measurable; the point is that the measurement rarely changes the plan in that age group.",
+      "lesson": "found-vitals-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "found-vitals-q092",
+      "q": "What is the normal range for end-tidal carbon dioxide, and what question does it answer?",
+      "choices": [
+        "35 to 45 mmHg, and it answers whether air is actually moving",
+        "35 to 45 mmHg, and it answers whether hemoglobin is loaded",
+        "90 to 100 mmHg, and it answers whether the patient is perfusing",
+        "12 to 20 mmHg, and it answers the respiratory rate"
+      ],
+      "answer": 0,
+      "why": "EtCO2 runs 35 to 45 mmHg and reflects ventilation, meaning whether air is moving in and out. Whether hemoglobin is loaded is the question SpO2 answers, which is why both monitors exist and fail at different moments.",
+      "lesson": "found-vitals-l11",
+      "difficulty": 1
+    },
+    {
+      "id": "found-vitals-q093",
+      "q": "During a resuscitation the EtCO2 has been 16 mmHg and suddenly climbs to 39 mmHg with no change in compression technique. What does this most likely mean?",
+      "choices": [
+        "The capnography sensor has failed",
+        "Return of spontaneous circulation",
+        "The tube has moved into the esophagus",
+        "Compressions have become too shallow"
+      ],
+      "answer": 1,
+      "why": "A sudden rise into the normal range means far more blood is reaching the lungs, which usually signals return of circulation and often appears before a pulse can be felt. An esophageal tube or failing compressions would drive the value down, not up.",
+      "lesson": "found-vitals-l11",
+      "difficulty": 3
+    },
+    {
+      "id": "found-vitals-q094",
+      "q": "A shocked patient's monitor shows SpO2 88% with a damped, irregular pleth waveform. How should you act?",
+      "choices": [
+        "Accept 88% and titrate oxygen to that value",
+        "Ignore oxygen entirely until a waveform appears",
+        "Assume the true saturation is exactly 98%",
+        "Treat the number as unreliable, improve the signal or change the site, and manage the patient clinically"
+      ],
+      "answer": 3,
+      "why": "A poor waveform means the device is not tracking a clean arterial pulse, so the number above it cannot be trusted in either direction. The right response is to fix the signal, by warming the hand or moving to an earlobe or forehead, while treating what the patient shows you.",
+      "lesson": "found-vitals-l11",
+      "difficulty": 2
+    },
+    {
+      "id": "found-vitals-q095",
+      "q": "An 82-year-old's Korotkoff sounds begin at 186, disappear at 158, return at 122, and finally vanish at 78. What has occurred and what is the true pressure?",
+      "choices": [
+        "Pulsus paradoxus, and the pressure is 122/78",
+        "Equipment failure, and the reading should be discarded",
+        "Venous congestion, and the pressure is 186/158",
+        "An auscultatory gap, and the true pressure is 186/78"
+      ],
+      "answer": 3,
+      "why": "A silent stretch between phases is the auscultatory gap, and the true systolic is the first sound at 186 with the diastolic at the final disappearance of 78. Reading 122/78 is the classic falsely low systolic that happens when you inflate inside the gap; pulsus paradoxus is an inspiratory drop, not a silent window.",
+      "lesson": "found-vitals-l12",
+      "difficulty": 3
+    },
+    {
+      "id": "found-vitals-q096",
+      "q": "A seated patient has an unsupported back, crossed legs, and is chatting while you measure. What is the rough combined effect?",
+      "choices": [
+        "About 20 mmHg too low",
+        "About 20 mmHg or more too high",
+        "No net effect, since the errors cancel",
+        "Unpredictable and impossible to estimate"
+      ],
+      "answer": 1,
+      "why": "An unsupported back adds roughly 5 to 8 mmHg, crossed legs another 5 to 8, and talking 10 or more, all in the same upward direction. They stack rather than cancel, which is how a normotensive patient gets labelled hypertensive.",
+      "lesson": "found-vitals-l12",
+      "difficulty": 2
+    },
+    {
+      "id": "found-vitals-q097",
+      "q": "An 88-year-old reads 218/94 with no headache, no visual change and no chest pain, and the radial pulse is still palpable with the cuff inflated to 235. What should you consider?",
+      "choices": [
+        "Pseudohypertension from heavily calcified arteries",
+        "An auscultatory gap producing a falsely high systolic",
+        "A cuff that is too large for the arm",
+        "Pulsus paradoxus"
+      ],
+      "answer": 0,
+      "why": "A radial pulse persisting above the recorded systolic suggests arteries too calcified for the cuff to compress, so the gauge reads far above the true intra-arterial pressure. An auscultatory gap produces a falsely low systolic, an oversized cuff reads low, and pulsus paradoxus is an inspiratory variation.",
+      "lesson": "found-vitals-l12",
+      "difficulty": 3
+    },
+    {
+      "id": "found-vitals-q098",
+      "q": "A 4-year-old with a forearm fracture lies very still, does not cry, and avoids eye contact. What is the most likely explanation?",
+      "choices": [
+        "He is comfortable and the fracture is not painful",
+        "He is asleep",
+        "Children in severe pain often withdraw and go still rather than cry",
+        "Pain scales do not apply under age 5"
+      ],
+      "answer": 2,
+      "why": "A quiet child is systematically misread as a comfortable one, and withdrawal is a recognised severe-pain behavior in children. FACES is usable from about age 3 and FLACC covers observation, so a tool clearly applies here.",
+      "lesson": "found-vitals-l13",
+      "difficulty": 2
+    },
+    {
+      "id": "found-vitals-q099",
+      "q": "Which tool is designed to score pain by observation in an intubated, critically ill adult?",
+      "choices": [
+        "FLACC",
+        "CPOT",
+        "Wong-Baker FACES",
+        "Numeric 0 to 10"
+      ],
+      "answer": 1,
+      "why": "CPOT scores facial expression, movement, muscle tension and ventilator compliance, which is why it fits an intubated adult. FLACC is built for young children and nonverbal patients, and both FACES and the numeric scale require self-report.",
+      "lesson": "found-vitals-l13",
+      "difficulty": 2
+    },
+    {
+      "id": "found-vitals-q100",
+      "q": "A patient with a known sickle cell crisis rates his pain 10 out of 10 while his vitals are entirely normal. What is the correct response?",
+      "choices": [
+        "Document normal vitals and defer treatment",
+        "Reduce the score to match the vital signs",
+        "Treat the reported score, since vitals adapt and this population is documented as undertreated",
+        "Score him with PAINAD instead"
+      ],
+      "answer": 2,
+      "why": "Vital signs adapt within hours, so normal numbers never rule out severe pain, and patients with sickle cell disease have a well-documented history of being disbelieved and undertreated. Self-report is the reference standard, so an observational tool like PAINAD is neither needed nor appropriate here.",
+      "lesson": "found-vitals-l13",
+      "difficulty": 3
+    },
+    {
+      "id": "found-vitals-q101",
+      "q": "In which direction do you pull the ear before inserting a tympanic thermometer in a 2-year-old?",
+      "choices": [
+        "Up and back, as in adults",
+        "Straight out",
+        "Straight forward",
+        "Down and back"
+      ],
+      "answer": 3,
+      "why": "In children under about 3 the canal is straightened by pulling down and back, while adults require up and back. Using the adult maneuver on a toddler misaims the probe and produces a falsely low reading.",
+      "lesson": "found-vitals-l14",
+      "difficulty": 2
+    },
+    {
+      "id": "found-vitals-q102",
+      "q": "A patient found in a snowbank has a thermometer that displays LO. What does this tell you?",
+      "choices": [
+        "The temperature is below the device's range, so a low-reading thermometer and a core route are needed",
+        "The temperature is exactly 34.0 C",
+        "The battery has failed",
+        "The patient is normothermic"
+      ],
+      "answer": 0,
+      "why": "Many standard clinical thermometers floor near 34 C, so LO means only below my range and gives no usable value. Suspected hypothermia requires a low-reading device and a rectal or esophageal route before any number drives a decision.",
+      "lesson": "found-vitals-l14",
+      "difficulty": 2
+    },
+    {
+      "id": "found-vitals-q103",
+      "q": "A patient with a suspected serious infection took ibuprofen four hours ago and now has a temperature of 37.1 C. What should you do?",
+      "choices": [
+        "Chart the antipyretic and its timing alongside the temperature",
+        "Record the temperature as fever regardless",
+        "Ignore the medication, since it wears off in an hour",
+        "Repeat the temperature by the axillary route for confirmation"
+      ],
+      "answer": 0,
+      "why": "Acetaminophen or ibuprofen taken hours earlier can mask a fever completely, so the drug and its timing must sit next to the value for it to be interpretable. Recording a fever that was not measured is falsification, and an axillary repeat only adds a less accurate route.",
+      "lesson": "found-vitals-l14",
+      "difficulty": 2
+    },
+    {
+      "id": "found-vitals-q104",
+      "q": "A hypothermic patient being rewarmed moves from 31.2 C to 33.0 C to 34.4 C while the heart rate goes 44 to 52 to 60. How is this read?",
+      "choices": [
+        "Deterioration, because the heart rate is rising",
+        "An unrelated arrhythmia developing",
+        "A drug effect requiring reversal",
+        "Appropriate response to rewarming, with rate rising alongside temperature"
+      ],
+      "answer": 3,
+      "why": "A cold heart beats slowly, so a rate climbing in step with the core temperature is the expected physiologic response to rewarming. These patients are still handled gently throughout, because a cold myocardium is irritable, but the trend itself is reassuring.",
+      "lesson": "found-vitals-l15",
+      "difficulty": 2
+    },
+    {
+      "id": "found-vitals-q105",
+      "q": "Which pair of measures typically turns abnormal before either of their component numbers does?",
+      "choices": [
+        "Temperature and respiratory rate",
+        "SpO2 and EtCO2",
+        "Pulse pressure and shock index",
+        "Heart rate and systolic blood pressure"
+      ],
+      "answer": 2,
+      "why": "Pulse pressure and shock index each combine two values, so they capture a change in the relationship between them before either one crosses its own threshold. Heart rate and systolic pressure are the components, which is exactly why they move later.",
+      "lesson": "found-vitals-l15",
+      "difficulty": 3
+    },
+    {
+      "id": "found-vitals-q106",
+      "q": "A postoperative patient on 2 L moves from RR 18 to 12 to 8 while SpO2 goes 98%, 96%, 93%. Why did the saturation move so little?",
+      "choices": [
+        "The oximeter probe was faulty",
+        "Supplemental oxygen keeps the saturation propped up, so it moves late",
+        "Opioids do not affect oxygenation",
+        "A respiratory rate of 8 is adequate ventilation"
+      ],
+      "answer": 1,
+      "why": "Supplemental oxygen fills the reservoir and masks hypoventilation, so the saturation drifts down slowly while carbon dioxide climbs unseen. The respiratory rate is the number carrying the signal here, and a rate of 8 is frank hypoventilation.",
+      "lesson": "found-vitals-l15",
+      "difficulty": 3
+    },
+    {
+      "id": "found-vitals-q107",
+      "q": "A patient at 30 weeks gestation has an EtCO2 of 30 mmHg and is not in distress. How do you interpret that?",
+      "choices": [
+        "Hyperventilation from anxiety requiring coaching",
+        "Evidence of pulmonary embolism",
+        "A normal pregnancy value, from the physiologic rise in tidal volume",
+        "Equipment error, since EtCO2 cannot be below 35"
+      ],
+      "answer": 2,
+      "why": "Tidal volume rises 30% to 40% in pregnancy, producing a mild chronic respiratory alkalosis with an arterial carbon dioxide near 30 mmHg. Treating a normal pregnancy value as hyperventilation or embolism sends you after a problem that is not there.",
+      "lesson": "found-vitals-l16",
+      "difficulty": 3
+    },
+    {
+      "id": "found-vitals-q108",
+      "q": "A patient at 34 weeks involved in a rollover crash has BP 116/72 and HR 106. Why is a normal blood pressure not reassuring?",
+      "choices": [
+        "Blood pressure is never useful in trauma",
+        "She can lose 1,500 to 2,000 mL before her pressure falls, because uterine circulation is sacrificed first",
+        "Pregnancy raises blood pressure, so 116/72 is already low",
+        "The heart rate of 106 rules out bleeding"
+      ],
+      "answer": 1,
+      "why": "The extra 1 to 1.5 L of blood volume in pregnancy is a reserve shunted away from the uterus first, so fetal distress can precede any maternal vital sign change. Pregnancy lowers rather than raises blood pressure, and a rate of 106 is itself within the expected pregnancy elevation, not a reassurance.",
+      "lesson": "found-vitals-l16",
+      "difficulty": 3
+    },
+    {
+      "id": "found-vitals-q109",
+      "q": "A conditioned cyclist whose usual resting pulse is 42 now has a heart rate of 96 after a fall. How should that be read?",
+      "choices": [
+        "A large relative tachycardia that may be the only early sign of a problem",
+        "Normal, since 96 is within 60 to 100",
+        "Evidence of an underlying arrhythmia requiring cardioversion",
+        "A benign training-related finding"
+      ],
+      "answer": 0,
+      "why": "Judged against his own baseline of 42, a rate of 96 has more than doubled, which is a substantial physiologic response hidden inside a normal-looking population range. Benign training findings are things like sinus bradycardia and first-degree block at rest, not a doubling after an injury.",
+      "lesson": "found-vitals-l16",
+      "difficulty": 2
+    },
+    {
+      "id": "found-vitals-q110",
+      "q": "Reviews of in-hospital deterioration consistently show which failure in the hours before an arrest?",
+      "choices": [
+        "Vital signs were never measured",
+        "Monitors malfunctioned undetected",
+        "Staffing levels made measurement impossible",
+        "Abnormal vital signs were recorded but nobody escalated"
+      ],
+      "answer": 3,
+      "why": "The repeated finding is that abnormal numbers existed in the chart for 6 to 8 hours and were not communicated to someone who could act. That makes escalation, not measurement or equipment, the skill that changes outcomes.",
+      "lesson": "found-vitals-l17",
+      "difficulty": 2
+    },
+    {
+      "id": "found-vitals-q111",
+      "q": "A NEWS2 total is 4, but the respiratory rate alone scores 3. What response does the tool call for?",
+      "choices": [
+        "Routine monitoring, since the total is under 5",
+        "Urgent review, because any single parameter scoring 3 triggers it",
+        "Emergency response with critical care, since a 3 equals a total of 7",
+        "Repeat the score in four hours"
+      ],
+      "answer": 1,
+      "why": "The system triggers urgent review on a total of 5 to 6 or on any single parameter scoring 3, precisely so one extreme derangement is not diluted by normal values elsewhere. A total of 7 or more is what escalates to an emergency response.",
+      "lesson": "found-vitals-l17",
+      "difficulty": 3
+    },
+    {
+      "id": "found-vitals-q112",
+      "q": "You have raised a concern about a systolic of 84 twice and the response has not addressed it. What is the expected behavior?",
+      "choices": [
+        "Accept the answer and document that you reported it",
+        "Wait for the next scheduled vitals check",
+        "Escalate up the chain, because the two-challenge rule expects it",
+        "Repeat the same concern a third time to the same person"
+      ],
+      "answer": 2,
+      "why": "The two-challenge rule says that after two unaddressed concerns you go up the chain, and most policies treat that as expected behavior rather than insubordination. Waiting or repeating to the same person leaves the patient in the same position that reviews identify as the failure point.",
+      "lesson": "found-vitals-l17",
+      "difficulty": 2
+    },
+    {
+      "id": "found-vitals-q113",
+      "q": "Which entry best documents an escalation?",
+      "choices": [
+        "14:32 BP 84/52, HR 122, skin cool and pale. Notified RN Grant. 14:34 RN at bedside.",
+        "BP low, nurse told.",
+        "14:32 BP 84/52, HR 122.",
+        "Patient appeared unwell this afternoon."
+      ],
+      "answer": 0,
+      "why": "The full entry records what was found, the time, who was notified, and what happened next, which is the part of the story a bare vital sign leaves out. A timed vitals line alone documents the finding but not the communication, and vague notes document neither.",
+      "lesson": "found-vitals-l17",
+      "difficulty": 1
+    }
+  ]
+}

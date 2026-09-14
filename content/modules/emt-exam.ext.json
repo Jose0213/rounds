@@ -1,0 +1,1082 @@
+{
+  "schema": 1,
+  "extends": "emt-exam",
+  "lessons": [
+    {
+      "id": "emt-exam-l10",
+      "title": "Domain review 1: Airway, Respiration and Ventilation",
+      "minutes": 8,
+      "body": "## Eighteen to twenty-two percent of the exam, and almost all of it is numbers\n\nThis is a checklist for the last pass, not an explanation. If a line here is unfamiliar, that line is your study list.\n\n## Rates, volumes and targets\n\n| Value | Number |\n|---|---|\n| Adult respiratory rate | 12-20 |\n| Child, 1-12 years | 15-30 |\n| Infant, under 1 year | 25-50 |\n| Adult tidal volume | about 500 mL, 5-7 mL/kg |\n| Adult dead space | about 150 mL per breath |\n| Normal ETCO2 | 35-45 mmHg |\n| SpO2 target, most patients | 94-99% |\n| SpO2 target, known COPD | 88-92% |\n| SpO2 target, after ROSC | 92-98% |\n| Chest pain | withhold oxygen if SpO2 is 90% or above |\n\n## Devices\n\n| Device | Flow | Delivered |\n|---|---|---|\n| Nasal cannula | 1-6 L/min | 24-44% |\n| Simple mask | 6-10 L/min | 35-60% |\n| Nonrebreather | 10-15 L/min | up to 90% |\n| Bag-valve mask with reservoir | 15 L/min | near 100% |\n| Pocket mask with oxygen | 15 L/min | 50-55% |\n| Blow-by for a fighting child | about 6 L/min | varies |\n\nCylinder duration: `(psi - 200) x constant / flow`. Constants: `D = 0.16`, `E = 0.28`, `M = 1.56`. Full is about `2,000 psi`; safe residual is `200 psi`.\n\n## Adjuncts, suction and ventilation\n\n- OPA: no gag reflex only. Size corner of mouth to earlobe. Adults rotate `180` degrees; children go in right side up with a tongue blade.\n- NPA: tolerated with a gag. Size nostril to earlobe. Bevel toward the septum, straight back. Avoid with basilar skull fracture or midface trauma.\n- Suction: rigid for the mouth, soft for nose and tubes. Suction on the way out. `15 seconds` adult, `10` child, `5` infant.\n- Ventilate: adult with a pulse `1 breath every 6 seconds`; child or infant with a pulse `1 every 2-3 seconds`; with an advanced airway during CPR `1 every 6 seconds` with continuous compressions.\n- CPAP: awake, breathing, follows commands, systolic above `90`. Settings `5-10 cmH2O`. Off for drowsiness, vomiting or a falling pressure.\n\n## Sounds and diseases, sorted\n\n| Finding | Points to |\n|---|---|\n| Snoring | Tongue; reposition and place an adjunct |\n| Gurgling | Fluid; suction |\n| Stridor | Above the cords: croup, epiglottitis, anaphylaxis, foreign body |\n| Wheezes | Bronchioles: asthma, COPD, bronchiolitis |\n| Crackles | Alveolar fluid: heart failure, pneumonia |\n| Barking cough, worse at night, age 6 months to 3 years | Croup, viral, humidified air |\n| Drooling, tripod, no cough, high fever | Epiglottitis. Do not look in the throat |\n| Silent chest in a known asthmatic | Near-arrest, ventilate |\n\n> **Trap:** Fast is not the same as adequate. A rate of `30` with shallow chest movement is inadequate breathing, and the answer is assisted ventilation, not a mask.\n\n> **On the exam:** Pulse oximetry reads falsely high in carbon monoxide poisoning and unreliably low in shock, cold fingers and nail polish. Treat the patient.",
+      "keyPoints": [
+        "Targets: 94-99% for most, 88-92% for COPD, 92-98% post-ROSC, and no oxygen for chest pain at 90% or above.",
+        "Suction 15 seconds adult, 10 child, 5 infant, applying suction only on withdrawal.",
+        "Ventilate 1 every 6 seconds for an adult with a pulse, 1 every 2-3 seconds for a child or infant.",
+        "Cylinder duration is (psi minus 200) times the constant divided by flow: D 0.16, E 0.28, M 1.56.",
+        "Inadequate breathing means bag-valve mask, no matter how fast the rate looks."
+      ],
+      "checks": [
+        {
+          "q": "An adult is breathing 30 times a minute with barely visible chest movement and an SpO2 of 88% on a nonrebreather. The correct action is:",
+          "choices": [
+            "Continue the nonrebreather and transport",
+            "Assist ventilations with a bag-valve mask at 15 L/min",
+            "Apply CPAP at 10 cmH2O",
+            "Switch to a nasal cannula at 6 L/min"
+          ],
+          "answer": 1,
+          "why": "Shallow movement makes this inadequate breathing regardless of rate, and only positive pressure fixes a ventilation problem. CPAP requires a patient who can do the work themselves."
+        },
+        {
+          "q": "An E cylinder reads 1,600 psi and you are running 10 L/min. About how many minutes remain?",
+          "choices": [
+            "About 22 minutes",
+            "About 45 minutes",
+            "About 39 minutes",
+            "About 14 minutes"
+          ],
+          "answer": 2,
+          "why": "(1600 - 200) x 0.28 = 392, and 392 / 10 is about 39 minutes. Forgetting to subtract the 200 psi safe residual gives 45 and is the intended error."
+        },
+        {
+          "q": "A 3-year-old is sitting upright, drooling, with stridor, a high fever and no cough. Your management includes:",
+          "choices": [
+            "Examining the throat with a tongue blade to look for a foreign body",
+            "Laying the child flat for a full assessment",
+            "Placing an oropharyngeal airway",
+            "Keeping the child calm and upright with blow-by oxygen and rapid transport"
+          ],
+          "answer": 3,
+          "why": "This is epiglottitis, where agitation or anything in the mouth can close the airway completely. Calm, upright, oxygen and transport is the whole field treatment."
+        }
+      ]
+    },
+    {
+      "id": "emt-exam-l11",
+      "title": "Domain review 2: Cardiology and Resuscitation",
+      "minutes": 8,
+      "body": "## Twenty to twenty-four percent, and the numbers are non-negotiable\n\n## CPR, every value\n\n| Element | Adult | Child | Infant |\n|---|---|---|---|\n| Rate | 100-120 | 100-120 | 100-120 |\n| Depth | 2 to 2.4 in | about 2 in, one third | about 1.5 in, one third |\n| Ratio, one rescuer | 30:2 | 30:2 | 30:2 |\n| Ratio, two rescuers | 30:2 | 15:2 | 15:2 |\n| Hands | Two hands, lower half of sternum | One or two hands | Two fingers, or two thumbs encircling |\n\n- Full recoil, interruptions under `10 seconds`, compression fraction above `60%`, switch compressors every `2 minutes`.\n- With an advanced airway: continuous compressions, `1 breath every 6 seconds`.\n- Newborn: `3:1` at `120 events per minute`. Ventilate at `40-60` if apneic or the heart rate is under `100`; compressions if under `60` after `30 seconds` of effective ventilation.\n- Survival falls roughly `7-10%` per minute without CPR and defibrillation.\n\n## The AED\n\nShockable: ventricular fibrillation and pulseless ventricular tachycardia. Not shockable: asystole and pulseless electrical activity.\n\nResume compressions immediately after a shock without a pulse check. Dry the chest, remove medication patches, stay `1 inch` from an implanted device, use pediatric pads under about `8 years` or `25 kg` but use adult pads rather than none.\n\n## Acute coronary syndrome\n\n- `12-lead` within `10 minutes` of contact; target `90 minutes` from first medical contact to balloon.\n- Aspirin `324 mg` chewed, as four `81 mg` tablets.\n- Nitroglycerin `0.4 mg` sublingual, every `5 minutes`, maximum `3 doses`, systolic above `100`, prescribed to this patient, no PDE-5 inhibitor within `24 hours` for sildenafil or vardenafil or `48 hours` for tadalafil.\n- STEMI localization: II, III, aVF inferior; V1-V4 anterior and septal; I, aVL, V5, V6 lateral.\n- Inferior pattern plus hypotension plus clear lungs means a possible right ventricular infarct: no nitroglycerin.\n- Atypical presentations dominate in women, diabetics and older adults.\n\n## Failure and shock\n\n| Picture | Diagnosis |\n|---|---|\n| Crackles, orthopnea, pink frothy sputum | Left-sided failure and pulmonary edema |\n| Pedal edema, distended neck veins, large liver | Right-sided failure |\n| Cold, systolic under `90`, crackles, distended neck veins | Cardiogenic shock. No fluid bolus |\n| Muffled tones, distended neck veins, narrowing pulse pressure | Tamponade |\n| Absent breath sounds one side, distended neck veins, late tracheal shift | Tension pneumothorax |\n| Sudden dyspnea, clear lungs, hypoxia that resists oxygen | Massive pulmonary embolism |\n\n> **Key:** Hypotension with distended neck veins means the pump or an obstruction. Hypotension with flat neck veins means volume loss.\n\n## After the pulse returns\n\nTen breaths a minute to an `ETCO2` of `35-45`, oxygen titrated to `92-98%`, systolic at least `90`, a `12-lead`, pads left on, and a catheterization-capable destination. Roughly a third of these patients re-arrest.\n\n> **On the exam:** Hyperventilation after ROSC is the single most commonly tested error. Any choice offering `20` or more breaths a minute to a patient with a pulse is wrong.",
+      "keyPoints": [
+        "One rescuer is 30:2 at every age; two rescuers make it 15:2 for a child or infant. Newborns are 3:1 at 120 events per minute.",
+        "Shock ventricular fibrillation and pulseless ventricular tachycardia only, and resume compressions immediately without a pulse check.",
+        "Aspirin 324 mg chewed; nitroglycerin 0.4 mg every 5 minutes to a maximum of 3, systolic above 100, no PDE-5 inhibitor within 24-48 hours.",
+        "Inferior infarct with hypotension and clear lungs means no nitroglycerin.",
+        "Post-ROSC: 10 breaths per minute, SpO2 92-98%, systolic at least 90, pads on, 12-lead, cath-capable destination."
+      ],
+      "checks": [
+        {
+          "q": "A newborn has a heart rate of 52 after 30 seconds of effective ventilation. You should:",
+          "choices": [
+            "Continue ventilation alone and reassess in 60 seconds",
+            "Begin compressions at 3:1 with 120 events per minute",
+            "Apply the AED",
+            "Begin compressions at 15:2"
+          ],
+          "answer": 1,
+          "why": "A newborn rate under 60 after 30 seconds of effective ventilation is the compression threshold, and the newborn ratio is 3:1 at 120 events per minute. The 15:2 ratio belongs to older infants and children."
+        },
+        {
+          "q": "Which finding makes nitroglycerin the wrong choice in a chest pain patient?",
+          "choices": [
+            "A heart rate of 104",
+            "An SpO2 of 95% on room air",
+            "An inferior ST elevation pattern with a systolic of 88 and clear lungs",
+            "A history of two previous stents"
+          ],
+          "answer": 2,
+          "why": "That combination suggests right ventricular involvement, and the right ventricle depends on preload that nitroglycerin removes. Tachycardia, a normal saturation and prior stents are not contraindications."
+        }
+      ]
+    },
+    {
+      "id": "emt-exam-l12",
+      "title": "Domain review 3: Trauma",
+      "minutes": 8,
+      "body": "## Fourteen to eighteen percent, and it is mostly sequence and thresholds\n\n## Mechanism thresholds worth memorizing\n\n- Adult fall greater than `20 feet`; child fall greater than `10 feet` or three times the child's height.\n- Intrusion over `12 inches` at the occupant site or `18 inches` anywhere.\n- Ejection, a death in the same compartment, rollover, pedestrian struck, motorcycle crash over `20 mph`.\n- Penetrating trauma to head, neck, torso or proximal extremities.\n\n## Bleeding and shock numbers\n\nAdult blood volume is roughly `5 liters`, about `70 mL/kg`; a child is about `80 mL/kg`. Losing `15-30%` produces tachycardia with a normal pressure; over `30%` the pressure falls; over `40%` is immediately life-threatening.\n\nOrder: direct pressure, then a tourniquet `2-3 inches` above an extremity wound, never over a joint, tightened until bleeding stops, with the time written down and never loosened. Junctional wounds get wound packing with a hemostatic dressing and sustained pressure.\n\nCompensated shock is a normal pressure with tachycardia, anxiety and delayed capillary refill. Decompensated shock is a falling pressure with altered mental status. Treat with oxygen, bleeding control, supine positioning, warmth, and rapid transport.\n\n## Injury patterns and their one-line answers\n\n| Injury | Field answer |\n|---|---|\n| Open chest wound | Occlusive dressing; if the patient worsens, lift a corner to release pressure |\n| Tension pneumothorax | Absent sounds one side, distended neck veins, hypotension; ALS needle decompression |\n| Flail chest | Two or more ribs broken in two or more places; support ventilation, no weights or straps |\n| Evisceration | Moist sterile dressing covered with an occlusive layer; never push organs back |\n| Impaled object | Stabilize in place; remove only if it blocks the airway or prevents CPR |\n| Amputation | Control bleeding; wrap the part in moist sterile gauze, seal in a bag, keep cool but never on ice directly |\n| Pelvic fracture with instability | Binder or sheet at the greater trochanters; expect massive internal loss |\n| Crush injury | Expect potassium release on release of pressure; ALS early |\n| Cushing's triad | Rising pressure, falling heart rate, irregular breathing: rising intracranial pressure |\n\n## Head, spine and burns\n\nThe Glasgow Coma Scale runs `3` to `15`: eye opening `4`, verbal `5`, motor `6`. Any score of `8` or less is a patient who cannot protect an airway.\n\nSelective spinal motion restriction: immobilize for midline tenderness, neurologic deficit, altered mental status, intoxication, or a distracting injury. A collar with manual stabilization and a padded stretcher has replaced routine long-board use in most systems.\n\nRule of nines, adult: head `9%`, each arm `9%`, each leg `18%`, front torso `18%`, back `18%`, genitals `1%`. Child: head `18%`, each leg `13.5%`. Stop the burning, remove jewelry and non-adherent clothing, cover dry and sterile, and keep the patient warm.\n\n> **Trap:** The trauma triad of death is hypothermia, acidosis and coagulopathy. Cutting clothes off and leaving a trauma patient uncovered in a cold ambulance is an active harm, not a neutral act.\n\n> **On the exam:** Spurting external bleeding is treated before the airway. That is the X in XABC, and it is the only thing that outranks an airway in a breathing patient.",
+      "keyPoints": [
+        "Significant mechanism: adult falls over 20 feet, child falls over 10 feet or three times their height, ejection, rollover, intrusion over 12 inches.",
+        "Tourniquet 2-3 inches above the wound, never over a joint, note the time, never loosen it.",
+        "GCS runs 3 to 15 with eye 4, verbal 5 and motor 6; a score of 8 or less cannot protect an airway.",
+        "Evisceration gets moist sterile dressing plus an occlusive cover; impaled objects are stabilized in place.",
+        "Trauma triad of death: hypothermia, acidosis, coagulopathy. Keep trauma patients warm."
+      ],
+      "checks": [
+        {
+          "q": "An adult has burns to the entire front of the torso and the entire left arm. Using the rule of nines, what percentage is burned?",
+          "choices": [
+            "18%",
+            "36%",
+            "27%",
+            "45%"
+          ],
+          "answer": 2,
+          "why": "Front torso is 18% and a whole arm is 9%, for 27%. Counting the back of the torso as well gives 36, which is the intended error."
+        },
+        {
+          "q": "A patient with an occlusive dressing over a chest wound becomes more dyspneic with distended neck veins and falling pressure. You should:",
+          "choices": [
+            "Add a second occlusive dressing",
+            "Lift a corner of the dressing to release trapped air",
+            "Place the patient supine and elevate the legs",
+            "Begin CPAP"
+          ],
+          "answer": 1,
+          "why": "These findings suggest a developing tension pneumothorax, and releasing the seal lets the trapped air escape. Adding dressings or CPAP raises intrathoracic pressure further."
+        },
+        {
+          "q": "A trauma patient has spurting bleeding from the upper arm and noisy, gurgling breathing. Your first action is:",
+          "choices": [
+            "Suction the airway",
+            "Apply a cervical collar",
+            "Apply a tourniquet to the arm",
+            "Obtain a full set of vitals"
+          ],
+          "answer": 2,
+          "why": "Massive external hemorrhage outranks the airway in the XABC sequence, because arterial bleeding at that rate empties the tank in minutes. Suction comes immediately afterward."
+        }
+      ]
+    },
+    {
+      "id": "emt-exam-l13",
+      "title": "Domain review 4: Medical, Obstetrics and Gynecology",
+      "minutes": 9,
+      "body": "## The largest domain, twenty-seven to thirty-one percent\n\nThis is the one people under-study. Everything below is high-frequency.\n\n## Altered mental status\n\nCauses run `AEIOU-TIPS`: Alcohol, Epilepsy, Insulin, Overdose, Uremia, Trauma, Infection, Psychiatric, Stroke. Check a glucose on every altered patient.\n\n## Neurologic\n\n- Stroke: identify the deficit with a stroke scale (facial droop, arm drift, abnormal speech), establish **last known well**, transport to a stroke center with early notification. Never give aspirin.\n- Clot-dissolving drugs are generally considered within `3-4.5 hours` of last known well, and clot retrieval in selected patients up to `24 hours`. That is why the time matters more than the scale.\n- Seizure: protect, do not restrain, nothing in the mouth, left side after it stops, oxygen, glucose. `5 minutes` of continuous seizing or repeated seizures without waking is status epilepticus, an ALS emergency.\n\n## Endocrine\n\n| Finding | Interpretation |\n|---|---|\n| Glucose below `70 mg/dL` | Hypoglycemia: rapid onset, pale, sweaty, confused, combative |\n| Glucose above `250 mg/dL` with Kussmaul breathing and acetone breath | Diabetic ketoacidosis: slow onset over days, dry, thirsty, vomiting |\n| Alert enough to swallow with an intact gag | Oral glucose `15-25 g` |\n| Unresponsive or no gag | Nothing by mouth. Airway, ventilation, ALS for dextrose |\n\n## Allergy, poisoning and overdose\n\n- Anaphylaxis: epinephrine `0.3 mg` intramuscular in the lateral thigh for an adult, `0.15 mg` for `15-30 kg`, repeat in `5-15 minutes`. No absolute contraindication in true anaphylaxis.\n- Naloxone: ventilate first, then titrate to breathing rather than to wakefulness; expect re-sedation in `30-90 minutes`.\n- Activated charcoal, where protocols still carry it: `1 g/kg`, never for caustics, alcohols, metals or hydrocarbons, and never without an intact gag reflex.\n- Organophosphates: `SLUDGEM` findings, decontaminate before treating.\n\n## Infection, renal and abdominal\n\n- Sepsis: infection plus a temperature above `38 C` or below `36 C`, heart rate over `90`, respiratory rate over `20`, altered mental status. Oxygen, position, warmth, rapid transport, and say the word sepsis on the radio.\n- Missed dialysis produces fluid overload and high potassium: shortness of breath, weakness, and arrest risk. Never take a blood pressure in an arm with a shunt or fistula.\n- Abdominal pain: tearing pain to the back with unequal arm pressures suggests dissection; right lower quadrant pain after periumbilical pain suggests appendicitis; any woman of childbearing age with abdominal pain and syncope is an ectopic pregnancy until proven otherwise.\n\n## Obstetrics\n\n- Imminent delivery: crowning, the urge to push, contractions `2-3 minutes` apart lasting `60-90 seconds`. Crowning means deliver on scene.\n- Left lateral tilt for any supine pregnant patient past `20 weeks`.\n- Previa is painless bright red bleeding; abruption is painful dark bleeding with a rigid uterus.\n- Preeclampsia: `140/90` or higher after `20 weeks` with headache, vision changes and edema. A seizure makes it eclampsia.\n- Prolapsed cord: knee-chest or Trendelenburg, gloved hand holding the presenting part off the cord, moist dressing, immediate transport.\n- Newborn: warm, dry, stimulate, position. `APGAR` at `1` and `5` minutes, `7-10` normal.\n\n## Behavioral\n\nRestraint requires enough people, never prone or hobbled, continuous monitoring of airway and breathing, and documentation of why. A patient who suddenly goes quiet after a violent struggle is a respiratory emergency, not a calm patient.\n\n> **Key:** Check contraindications before indications. This domain builds items around a patient whose symptoms fit a drug perfectly and who must not receive it.",
+      "keyPoints": [
+        "Check a glucose on every altered patient; AEIOU-TIPS covers the causes.",
+        "Stroke items want a scale, a last-known-well time and a stroke center, never aspirin; treatment windows are 3-4.5 hours and up to 24 hours for selected clot retrieval.",
+        "Hypoglycemia is below 70 mg/dL with rapid onset; oral glucose only with an intact gag and the ability to swallow.",
+        "Anaphylaxis: epinephrine 0.3 mg IM adult, 0.15 mg for 15-30 kg, repeat in 5-15 minutes.",
+        "Never restrain a patient prone, and never take a blood pressure in a dialysis shunt arm."
+      ],
+      "checks": [
+        {
+          "q": "An unresponsive diabetic has a glucose of 38 mg/dL and no gag reflex. The correct EMT action is:",
+          "choices": [
+            "Place oral glucose gel between the cheek and gum",
+            "Give nothing by mouth, manage the airway and ventilation, and request ALS for intravenous dextrose",
+            "Give a sip of juice",
+            "Withhold all treatment until the patient wakes"
+          ],
+          "answer": 1,
+          "why": "Anything placed in the mouth of a patient without a gag reflex is aspirated. The definitive fix is intravenous dextrose or glucagon, which is above EMT scope."
+        },
+        {
+          "q": "A 31-year-old woman has severe left lower abdominal pain and syncope. Her last period was seven weeks ago. The most important consideration is:",
+          "choices": [
+            "Ovarian cyst requiring outpatient follow-up",
+            "Urinary tract infection",
+            "Ruptured ectopic pregnancy with internal bleeding",
+            "Gastroenteritis"
+          ],
+          "answer": 2,
+          "why": "Abdominal pain plus syncope in a woman of childbearing age is a ruptured ectopic until proven otherwise, and it is a surgical emergency. Nothing in the field fixes it, so rapid transport is the treatment."
+        },
+        {
+          "q": "Which restraint practice is correct?",
+          "choices": [
+            "Place the patient prone with wrists and ankles secured behind the back",
+            "Restrain with the fewest possible personnel to reduce the appearance of force",
+            "Restrain supine or on the side, with continuous monitoring of airway and breathing and documentation of the reason",
+            "Remove restraints once the patient promises to cooperate"
+          ],
+          "answer": 2,
+          "why": "Prone and hobbled positions have caused deaths from positional asphyxia. Restraint needs adequate personnel, continuous monitoring, and restraints that are not removed mid-transport on a promise."
+        }
+      ]
+    },
+    {
+      "id": "emt-exam-l14",
+      "title": "Domain review 5: EMS Operations",
+      "minutes": 7,
+      "body": "## Ten to fourteen percent, and it is the cheapest domain to fix\n\nOperations is pure recall with almost no clinical reasoning. Candidates lose points here because they never studied it, not because it is hard.\n\n## Driving and the ambulance\n\n- Lights and sirens **request** the right of way; they never grant it. You owe **due regard** to everyone at all times.\n- Most ambulance collisions happen at intersections. Come to a full stop, clear each lane separately, and expect that nobody heard you.\n- Do not use police escorts or drive in convoy; drivers pull out behind the first vehicle.\n- Check the vehicle and equipment at the start of every shift, including oxygen levels, batteries, and the drug and airway bags.\n\n## Scene control and hazards\n\n- Park upwind, uphill and upstream of any hazardous material, and at least `100 feet` from a known hazard; `2,000 feet` isolation for a suspected large spill until the Emergency Response Guidebook says otherwise.\n- Read placards and the NFPA `704` diamond from a distance with binoculars: blue health, red flammability, yellow reactivity, white special, `0` to `4` severity.\n- Do not enter a hazardous atmosphere, a confined space, a structure fire or an unsecured violent scene. Stage until it is made safe.\n- At a crime scene, take the shortest path in and out, touch what you must and say what you touched, and do not cut through bullet or knife holes in clothing.\n- Helicopter landing zone: about `100 by 100 feet`, firm and level, free of wires and loose debris. Approach only when signaled, from the front, in the pilot's view, never from the rear.\n\n## Incident command and triage\n\n- One incident commander. Command staff and the four sections: operations, planning, logistics, finance and administration.\n- At a multiple-casualty incident, EMS roles include triage, treatment and transport officers. Span of control is `3` to `7` people, ideally `5`.\n- START: walking wounded are green; no breathing after opening the airway is black; respirations over `30`, absent radial pulse or capillary refill over `2 seconds`, or an inability to follow commands make it red; everyone else is yellow.\n- JumpSTART for children under about `8`: an apneic child with a pulse gets `5` rescue breaths before being tagged black; respiratory cutoffs are under `15` or over `45`.\n\n## Lifting, moving and communications\n\n- Power lift: back straight, weight close to the body, lift with the legs, never twist. Know your limits and ask for help before you need it.\n- Emergency moves are for immediate danger, fire, or the need to reach another patient. Urgent moves are for altered mental status or unstable vitals. Everything else is non-urgent.\n- Radio format: unit, location, patient age and sex, chief complaint, level of consciousness, vitals, treatment, estimated time of arrival. Repeat back every order you receive word for word.\n\n## Documentation and law\n\n- Correct an error with a single line through it, your initials and the date. Never erase, never scribble out, never backdate.\n- Late entries are labeled as late entries with the time written.\n- Negligence requires all four of duty, breach, causation and damages.\n- Abandonment is ending care without transferring to equal or higher training. Consent is expressed, implied, or given by a parent or guardian.\n- A valid refusal requires an alert, oriented adult with capacity who has been told the risks in plain words, documented and witnessed.\n\n> **On the exam:** When an operations item offers a fast answer and a safe, documented, by-the-book answer, the by-the-book answer wins every time.",
+      "keyPoints": [
+        "Lights and sirens request the right of way; due regard applies always, and intersections are where ambulances crash.",
+        "Park upwind, uphill and upstream, at least 100 feet from a hazard, and read placards from a distance.",
+        "Landing zones are about 100 by 100 feet, and you approach only when signaled, from the front, in the pilot's view.",
+        "START: green walking, black apneic after airway opened, red for RR over 30, no radial pulse or not following commands, yellow for the rest.",
+        "Correct documentation errors with a single line, initials and date; negligence needs all four of duty, breach, causation and damages."
+      ],
+      "checks": [
+        {
+          "q": "You approach an intersection against a red light with lights and siren operating. You must:",
+          "choices": [
+            "Proceed at reduced speed, since emergency vehicles have the right of way",
+            "Sound the air horn and continue through",
+            "Follow the police escort through the intersection",
+            "Come to a full stop and clear each lane separately before proceeding"
+          ],
+          "answer": 3,
+          "why": "Warning devices request the right of way rather than granting it, and due regard applies at all times. Escorts are discouraged because other drivers pull out after the first vehicle passes."
+        },
+        {
+          "q": "At a multiple-casualty incident you find an adult breathing 34 times a minute with a radial pulse, following commands. The correct START category is:",
+          "choices": [
+            "Immediate, red",
+            "Delayed, yellow",
+            "Minor, green",
+            "Expectant, black"
+          ],
+          "answer": 0,
+          "why": "A respiratory rate over 30 alone tags the patient immediate, regardless of the intact pulse and mental status. START stops at the first criterion met."
+        }
+      ]
+    },
+    {
+      "id": "emt-exam-l15",
+      "title": "The thirty hardest question patterns",
+      "minutes": 8,
+      "body": "## The exam recycles shapes, not facts\n\nThirty item shapes account for most of the questions that beat well-prepared candidates. Learn the shape and the decode, and the medicine becomes the easy part.\n\n| Pattern | Decode |\n|---|---|\n| 1. Asks FIRST, offers a correct treatment | Assessment beats treatment when findings are missing |\n| 2. Asks NEXT after findings given | Everything before is done; move one step down the priority list |\n| 3. Asks BEST or MOST APPROPRIATE | Several work; pick the highest standard of care |\n| 4. Asks PRIORITY | Rank by threat to life, not by order of discovery |\n| 5. Contains EXCEPT or LEAST LIKELY | Three are true; find the one that is not |\n| 6. Perfect drug indication, hidden contraindication | Screen contraindications before indications |\n| 7. Medication belongs to a spouse | Not prescribed to this patient: never assist |\n| 8. Normal vital signs in a sick-looking patient | Normal numbers never rule out anything |\n| 9. Fast respiratory rate, shallow chest | Inadequate breathing: bag, do not mask |\n| 10. High SpO2 in a garage or fire | Carbon monoxide; the number is false |\n| 11. Silent chest in an asthmatic | Near-arrest, not improvement |\n| 12. Child with a falling heart rate | Hypoxia: oxygenate and ventilate |\n| 13. Hypotension with distended neck veins | Pump or obstruction, never give fluid reflexively |\n| 14. Hypotension with warm dry skin and bradycardia | Neurogenic shock |\n| 15. Scene hazard buried mid-stem | Scene safety outranks everything |\n| 16. Bystander or family pressure to act | Protocol and scope do not bend to pressure |\n| 17. A skill just above your level offered | Eliminate scope violations first |\n| 18. Long transport time mentioned | The detail exists to change the destination or ALS decision |\n| 19. Two correct actions, one sequence | The cue word decides which comes first |\n| 20. Patient refuses and is altered | Altered means no capacity: implied consent |\n| 21. Trauma plus an airway problem | Jaw thrust, and open the airway regardless |\n| 22. Spurting extremity bleeding plus airway noise | Hemorrhage first, then airway |\n| 23. Pediatric weight or age given | A dose, a rate or a ratio is about to change |\n| 24. A time of onset is given | Stroke, STEMI or overdose window is being tested |\n| 25. Vitals trend across the stem | The trend, not the last set, is the answer |\n| 26. Improvement after treatment | Reassess, do not escalate |\n| 27. Deterioration after an intervention | Undo or reverse the intervention |\n| 28. Two patients, limited resources | Triage rules replace individual care |\n| 29. Documentation or legal wording | Choose the conservative, documented option |\n| 30. Everything sounds right | Pick the one that is first, safest and in scope |\n\n> **Trap:** Patterns `26` and `27` are the ones people reverse. If a patient got better, your answer is reassess and continue. If a patient got worse right after you did something, your answer usually involves that something.\n\n## Using the list\n\nRead the stem, name the pattern out loud in your head, then apply the decode before you look at the choices. On an adaptive exam you cannot go back, so the pattern name is what stops you from rereading the same stem four times.\n\n> **On the exam:** If you cannot name the pattern within `15 seconds`, fall back to the priority order: scene, precautions, impression, airway, breathing, circulation. That fallback answers a surprising share of items correctly on its own.",
+      "keyPoints": [
+        "Cue words decide the answer: first, next, best, priority, except.",
+        "Screen medication contraindications before indications, and check whether the drug is prescribed to this patient.",
+        "Trends across a stem matter more than the final set of vitals.",
+        "Improvement means reassess; deterioration right after an intervention usually means undo that intervention.",
+        "When nothing is obvious, fall back to the priority order and pick the first, safest, in-scope action."
+      ],
+      "checks": [
+        {
+          "q": "A stem describes an intervention, then says the patient got worse immediately afterward, and asks what you should do. The pattern suggests:",
+          "choices": [
+            "Escalate to a more aggressive version of the same treatment",
+            "Address or reverse the intervention you just performed",
+            "Continue and reassess in 5 minutes",
+            "Request ALS and take no further action"
+          ],
+          "answer": 1,
+          "why": "Deterioration immediately after an action points at the action: lift the occlusive dressing, remove the CPAP mask, stop the nitroglycerin. Escalating the same treatment usually compounds the harm."
+        },
+        {
+          "q": "An item ends with \"Which of the following is LEAST likely to...\" How should you handle it?",
+          "choices": [
+            "Answer quickly, since negatives are usually easy",
+            "Pick the first choice that seems wrong",
+            "Slow down and verify that three of the four are true, then choose the remaining one",
+            "Skip it, since you can return to it later"
+          ],
+          "answer": 2,
+          "why": "Negative stems invert the task, and the errors come from answering as if it were a normal item. There is also no skipping on an adaptive exam; every item must be answered when it appears."
+        }
+      ]
+    },
+    {
+      "id": "emt-exam-l16",
+      "title": "Minute-by-minute scripts for the two assessment stations",
+      "minutes": 8,
+      "body": "## Say everything\n\nAn evaluator scores what they hear and see. The most common reason a competent candidate loses points is silence. Narrate in short declarative sentences, and never ask permission to be safe.\n\n## Trauma assessment and management, about 10 minutes\n\n**0:00-0:30, scene.** \"I am taking standard precautions: gloves, eye protection.\" \"Is the scene safe? How many patients? Do I need additional resources? What is the mechanism of injury?\" Request manual in-line spinal stabilization out loud.\n\n**0:30-1:30, primary survey.** General impression, then level of consciousness by `AVPU`. Airway: open, patent, adjunct if needed. Breathing: rate, depth, effort, breath sounds, and oxygen or ventilation depending on adequacy. Circulation: pulse, skin, major bleeding, control it. State the transport decision out loud: \"This is a load-and-go patient based on mechanism and my findings.\"\n\n**1:30-6:00, rapid trauma exam, head to toe.** Say `DCAP-BTLS` as you go: deformities, contusions, abrasions, punctures, burns, tenderness, lacerations, swelling.\n\n1. Head and face, including the mouth\n2. Neck: tenderness, distended veins, tracheal position, then apply the collar\n3. Chest: inspect, palpate, auscultate, and say \"paradoxical motion\" or \"no paradoxical motion\"\n4. Abdomen: four quadrants, rigidity, distention\n5. Pelvis: press once, gently, and stop if unstable\n6. All four extremities: pulse, motor, sensation in each\n7. Log-roll and inspect the back, then move the patient\n\n**6:00-8:00, baseline vitals and history.** Full vitals, `SAMPLE` history from the patient, family or bystanders, and a repeated primary survey.\n\n**8:00-10:00, ongoing.** Reassess every `5 minutes` for a stable patient and every `5 minutes` or sooner for an unstable one, verbalize the interventions, and give a transport report.\n\n## Medical assessment and management, about 10 minutes\n\nSame opening `30 seconds`. Then the shape changes: this station is driven by history, not by a head-to-toe sweep.\n\n**1:00-4:00, history first.** `OPQRST` for the complaint: onset, provocation and palliation, quality, region and radiation, severity on a scale, time. Then `SAMPLE`: signs and symptoms, allergies, medications, past history, last oral intake, events leading up.\n\n**4:00-6:00, focused exam.** Examine the system the history points at. Respiratory complaint means breath sounds in all fields and work of breathing. Cardiac means pulses, skin, lungs, neck veins, edema. Neurologic means a stroke scale, pupils and motor function. Say why you are examining what you are examining.\n\n**6:00-8:00, vitals and impression.** Full vitals including a glucose when altered. State a field impression and a treatment plan out loud, including any medication you would assist with and the contraindications you checked.\n\n**8:00-10:00, reassess and report.**\n\n> **Key:** In the trauma station you find the injuries. In the medical station you build a story and then confirm it. Mixing the two, doing a head-to-toe on a chest pain patient or skipping the history on a trauma patient, costs points in both.\n\n> **Trap:** Two instant failures live in the first `30 seconds` of both stations: not verbalizing precautions and not establishing scene safety. Two more live in the middle: failing to manage an airway, breathing or circulation threat when you find it, and securing the head before the torso if you immobilize.",
+      "keyPoints": [
+        "Narrate everything; evaluators score what they hear, and silence is the most common avoidable loss.",
+        "Trauma station: precautions and scene, primary survey with a stated transport decision, rapid head-to-toe with DCAP-BTLS, then vitals and SAMPLE.",
+        "Medical station: precautions and scene, primary survey, then OPQRST and SAMPLE before a focused exam of the system the history points at.",
+        "State a field impression and treatment plan out loud, including the contraindications you screened.",
+        "Instant failures cluster in the first 30 seconds: missing precautions or scene safety, and unmanaged ABC threats."
+      ],
+      "checks": [
+        {
+          "q": "In the medical assessment station, what follows the primary survey?",
+          "choices": [
+            "A rapid head-to-toe trauma exam",
+            "Immediate transport without further assessment",
+            "Baseline vitals only",
+            "OPQRST and SAMPLE history, then a focused exam of the relevant system"
+          ],
+          "answer": 3,
+          "why": "The medical station is history-driven: the story tells you which system to examine. A full head-to-toe belongs to the trauma station and wastes the time this station scores."
+        },
+        {
+          "q": "Which two verbalizations must happen in the first 30 seconds of either assessment station?",
+          "choices": [
+            "Standard precautions and scene safety",
+            "The patient's allergies and medications",
+            "A request for ALS and a transport decision",
+            "The time of onset and the last oral intake"
+          ],
+          "answer": 0,
+          "why": "Failing to take or verbalize precautions and failing to establish scene safety are both listed critical criteria that end a station regardless of everything that follows."
+        }
+      ]
+    },
+    {
+      "id": "emt-exam-l17",
+      "title": "Test anxiety, pacing and what to do when you blank",
+      "minutes": 6,
+      "body": "## The feeling is built into the design\n\nAn adaptive exam keeps handing you questions at the edge of your ability. A candidate who is passing gets roughly half of them wrong by design, so the experience of passing feels like drowning. That is not a metaphor for encouragement; it is how the item selection works.\n\n> **Key:** If the questions feel hard, the machine thinks you are doing well enough to keep raising the difficulty. The only thing that turns that feeling into a failure is letting it change how you answer.\n\n## Pacing, with actual numbers\n\nYou have `2 hours` for `70` to `120` questions. At `120` items that is `60 seconds` each, and breaks come out of that clock.\n\n- Target `45-60 seconds` per item. Most candidates finish with time left.\n- If you are consistently past `90 seconds`, you are rereading rather than deciding.\n- Check the clock at question `35` and again at `70`, not constantly. Two checks, not twenty.\n- You cannot flag items, skip them or return to them. Commit and move.\n\n## The blank: a 20-second protocol\n\nWhen your mind goes empty, do these four things in order rather than staring.\n\n1. Reread **only the last line** of the stem. The cue word is there.\n2. Name the patient in one phrase: sick or not sick, and which system.\n3. Eliminate anything out of scope, anything harmful, and anything treating the wrong problem.\n4. Of what is left, choose the one that comes earliest in the priority order: scene, precautions, airway, breathing, circulation.\n\nThat sequence takes about `20 seconds` and answers a large share of items correctly without recalling a single memorized fact.\n\n## Physical control\n\nAnxiety is a breathing pattern before it is a thought. A deliberate slow exhale that is longer than the inhale, done four or five times, measurably lowers heart rate. Do it before you start and any time you notice your jaw clenched.\n\nOther things that are boring and work:\n\n- Sleep matters more than a final cram. A tired brain retrieves badly, and retrieval is the entire task.\n- Eat something with protein beforehand. Do not test the effect of an unusual amount of caffeine on the day it counts.\n- Arrive `30 minutes` early. Rushing raises baseline arousal for the whole first section.\n- Two forms of identification, one a government photo ID with your signature, names matching your registry account exactly.\n\n## What actually reduces anxiety in advance\n\nSimulation, not reassurance. Sit two or three full-length `120`-question sessions under real conditions: timed, no phone, no notes, no pausing, no looking anything up mid-set. The point is not the score. The point is that the unfamiliar becomes familiar, and familiarity is what lowers arousal on the day.\n\nReview every question you missed **and** every one you guessed correctly, and write one line in the error log: the topic, why you missed it, and the rule.\n\n> **On the exam:** Do not change an answer unless you can name the rule that makes the new one right. On this exam you cannot change it anyway, which is one of the few mercies in the design: your first disciplined read is the one that counts.\n\nFinally, if the screen shuts off at `70` questions, it means the computer became confident, in one direction or the other. It is not a verdict you can read. Go home, and check your account in `1` to `2` business days.",
+      "keyPoints": [
+        "Feeling like you are failing is the normal experience of a passing candidate on an adaptive exam.",
+        "Target 45-60 seconds per item; past 90 seconds means you are rereading instead of deciding.",
+        "When you blank: reread the last line, name the patient, eliminate scope violations and harm, then pick the earliest priority action.",
+        "Simulation under real conditions reduces anxiety more than any reassurance; review missed items and lucky guesses alike.",
+        "The exam shutting off at 70 questions means the computer got confident, not that you failed or passed."
+      ],
+      "checks": [
+        {
+          "q": "Halfway through the exam you feel you have guessed on most items. The correct interpretation is:",
+          "choices": [
+            "You are failing and should slow down dramatically",
+            "This is the normal experience on an adaptive exam, which feeds questions at the edge of your ability",
+            "The exam has malfunctioned",
+            "You should change your earlier answers"
+          ],
+          "answer": 1,
+          "why": "Adaptive selection keeps items near your ability level, so roughly half feel uncertain even for a passing candidate. Earlier answers cannot be changed on this format in any case."
+        },
+        {
+          "q": "You blank completely on an item. Which step comes first?",
+          "choices": [
+            "Reread the entire stem twice",
+            "Pick the longest answer choice",
+            "Reread only the last line of the stem to find the cue word",
+            "Guess immediately and move on"
+          ],
+          "answer": 2,
+          "why": "The cue word lives in the last line and decides which of several reasonable actions is correct. Rereading the whole stem burns the time that pacing depends on."
+        },
+        {
+          "q": "What is the most effective way to reduce exam anxiety in the two weeks before the test?",
+          "choices": [
+            "Rereading the textbook chapters you find hardest",
+            "Taking two or three full-length timed sessions under real conditions",
+            "Avoiding practice questions to prevent discouragement",
+            "Memorizing additional drug names"
+          ],
+          "answer": 1,
+          "why": "Simulation makes the format familiar, and familiarity is what lowers arousal on the day. Rereading builds recognition rather than recall and does not rehearse the conditions."
+        }
+      ]
+    }
+  ],
+  "cards": [
+    { "id": "emt-exam-c069", "front": "What SpO2 targets does the exam expect for a normal patient, a COPD patient, a post-ROSC patient and chest pain?", "back": "94-99% for most, 88-92% for COPD, 92-98% after ROSC, and no oxygen for chest pain when the saturation is 90% or above.", "lesson": "emt-exam-l10" },
+    { "id": "emt-exam-c070", "front": "State the oxygen cylinder duration formula and the three constants.", "back": "(gauge psi minus 200) times the constant divided by flow in L/min equals minutes. D = 0.16, E = 0.28, M = 1.56.", "lesson": "emt-exam-l10" },
+    { "id": "emt-exam-c071", "front": "What is normal ETCO2, and what does a shark-fin waveform mean?", "back": "35-45 mmHg. A slurred upstroke with no plateau means bronchospasm, as in asthma, COPD or anaphylaxis.", "lesson": "emt-exam-l10" },
+    { "id": "emt-exam-c072", "front": "Croup versus epiglottitis: how do you tell them apart in one line each?", "back": "Croup is a barking cough with stridor, worse at night, usually 6 months to 3 years, viral. Epiglottitis is drooling, tripod posture, high fever and no cough; never look in the throat.", "lesson": "emt-exam-l10" },
+    { "id": "emt-exam-c073", "front": "What delivered oxygen percentage comes from a pocket mask with oxygen at 15 L/min?", "back": "About 50-55%, and it often achieves better tidal volumes than one-rescuer bagging because both hands hold the seal.", "lesson": "emt-exam-l10" },
+    { "id": "emt-exam-c074", "front": "What are the four CPAP patient requirements and the usual pressure range?", "back": "Awake, breathing on their own, able to follow commands, and a systolic above 90 mmHg. Pressures are 5-10 cmH2O.", "lesson": "emt-exam-l10" },
+    { "id": "emt-exam-c075", "front": "How much of an adult breath is dead space, and why does it matter for a fast shallow breather?", "back": "About 150 mL of every breath. At a small tidal volume most of each breath is wasted, so a rate of 30 with shallow chest movement moves far less useful air than a rate of 12 with full breaths.", "lesson": "emt-exam-l10" },
+    { "id": "emt-exam-c076", "front": "In which three situations does pulse oximetry mislead you?", "back": "Carbon monoxide poisoning reads falsely high; shock, cold extremities and nail polish read falsely low or not at all; and a preoxygenated apneic patient reads 100% for 30-60 seconds.", "lesson": "emt-exam-l10" },
+    { "id": "emt-exam-c077", "front": "State every CPR ratio by age and rescuer count, including newborns.", "back": "One rescuer is 30:2 at every age. Two rescuers make it 15:2 for a child or infant. Newborn resuscitation is 3:1 at 120 events per minute.", "lesson": "emt-exam-l11" },
+    { "id": "emt-exam-c078", "front": "What are the newborn heart rate thresholds?", "back": "Ventilate at 40-60 per minute if apneic or the rate is below 100. Start compressions at 3:1 if the rate stays below 60 after 30 seconds of effective ventilation.", "lesson": "emt-exam-l11" },
+    { "id": "emt-exam-c079", "front": "Which rhythms does an AED shock, and what do you do immediately after a shock?", "back": "Ventricular fibrillation and pulseless ventricular tachycardia. Resume compressions immediately without checking a pulse, for a full 2 minutes before the next analysis.", "lesson": "emt-exam-l11" },
+    { "id": "emt-exam-c080", "front": "Which leads correspond to the inferior, anterior and lateral walls?", "back": "Inferior: II, III, aVF. Anterior and septal: V1-V4. Lateral: I, aVL, V5, V6.", "lesson": "emt-exam-l11" },
+    { "id": "emt-exam-c081", "front": "Give the full nitroglycerin checklist in one card.", "back": "Prescribed to this patient, not expired, systolic above 100, no PDE-5 inhibitor within 24 hours for sildenafil or vardenafil or 48 for tadalafil, authorized by protocol. Dose 0.4 mg sublingual every 5 minutes, maximum 3.", "lesson": "emt-exam-l11" },
+    { "id": "emt-exam-c082", "front": "What does hypotension with distended neck veins tell you, and what does hypotension with flat neck veins tell you?", "back": "Distended means the pump or an obstruction: cardiogenic shock, tamponade, tension pneumothorax, massive pulmonary embolism. Flat means volume loss.", "lesson": "emt-exam-l11" },
+    { "id": "emt-exam-c083", "front": "What is compression fraction and what is the target?", "back": "The proportion of arrest time your hands are actually on the chest. Above 60%, and higher is better. Interruptions stay under 10 seconds and compressors switch every 2 minutes.", "lesson": "emt-exam-l11" },
+    { "id": "emt-exam-c084", "front": "List the post-ROSC bundle in one card.", "back": "Ventilate at 10 per minute to an ETCO2 of 35-45, titrate oxygen to 92-98%, defend a systolic of at least 90, obtain a 12-lead, leave pads on, avoid fever, and transport to a cath-capable center.", "lesson": "emt-exam-l11" },
+    { "id": "emt-exam-c085", "front": "Which mechanisms of injury count as significant for an adult and for a child?", "back": "Ejection, death in the same compartment, rollover, intrusion over 12 inches, pedestrian struck, penetrating trauma to head, neck or torso, adult falls over 20 feet, child falls over 10 feet or three times their height.", "lesson": "emt-exam-l12" },
+    { "id": "emt-exam-c086", "front": "What are the blood loss thresholds that change the vital signs?", "back": "Adult volume is about 5 liters, roughly 70 mL/kg. Losing 15-30% gives tachycardia with a normal pressure; over 30% the pressure falls; over 40% is immediately life-threatening.", "lesson": "emt-exam-l12" },
+    { "id": "emt-exam-c087", "front": "How is the Glasgow Coma Scale built, and what score matters most?", "back": "Eye opening out of 4, verbal out of 5, motor out of 6, total 3 to 15. A score of 8 or less means the patient cannot protect their own airway.", "lesson": "emt-exam-l12" },
+    { "id": "emt-exam-c088", "front": "How do you manage an evisceration and an impaled object?", "back": "Evisceration: moist sterile dressing covered with an occlusive layer, never push organs back in. Impaled object: stabilize in place, remove only if it blocks the airway or prevents CPR.", "lesson": "emt-exam-l12" },
+    { "id": "emt-exam-c089", "front": "How do you care for an amputated part?", "back": "Control the bleeding first. Wrap the part in moist sterile gauze, seal it in a plastic bag, and keep it cool, never directly on ice, and transport it with the patient.", "lesson": "emt-exam-l12" },
+    { "id": "emt-exam-c090", "front": "What is the trauma triad of death?", "back": "Hypothermia, acidosis and coagulopathy, each making the others worse. It is why keeping an exposed trauma patient warm is treatment, not comfort.", "lesson": "emt-exam-l12" },
+    { "id": "emt-exam-c091", "front": "Which findings require spinal motion restriction under selective criteria?", "back": "Midline spinal tenderness, a neurologic deficit, altered mental status, intoxication, or a distracting injury. Otherwise a collar and a padded stretcher without a long board.", "lesson": "emt-exam-l12" },
+    { "id": "emt-exam-c092", "front": "State the rule of nines for an adult and the two child differences.", "back": "Adult: head 9%, each arm 9%, each leg 18%, front torso 18%, back 18%, genitals 1%. Child: head 18% and each leg 13.5%.", "lesson": "emt-exam-l12" },
+    { "id": "emt-exam-c093", "front": "What does AEIOU-TIPS stand for?", "back": "Alcohol, Epilepsy, Insulin, Overdose, Uremia, Trauma, Infection, Psychiatric, Stroke. The checklist for any altered mental status, and every one of them gets a glucose check.", "lesson": "emt-exam-l13" },
+    { "id": "emt-exam-c094", "front": "What three things does every stroke question want?", "back": "A stroke scale finding, a last-known-well time, and transport to a stroke center with early notification. Never aspirin.", "lesson": "emt-exam-l13" },
+    { "id": "emt-exam-c095", "front": "What are the stroke treatment time windows?", "back": "Clot-dissolving drugs are generally considered within 3-4.5 hours of last known well, and clot retrieval in selected patients up to 24 hours. That is why the time matters more than the scale.", "lesson": "emt-exam-l13" },
+    { "id": "emt-exam-c096", "front": "Hypoglycemia versus diabetic ketoacidosis: how do they differ?", "back": "Hypoglycemia is below 70 mg/dL with rapid onset, pale sweaty skin and confusion. DKA is above 250 mg/dL, develops over days, with Kussmaul breathing, acetone breath, dry skin, thirst and vomiting.", "lesson": "emt-exam-l13" },
+    { "id": "emt-exam-c097", "front": "When can you give oral glucose, and when can you not?", "back": "Only when the patient is alert enough to swallow with an intact gag reflex, at 15-25 g. Never for an unresponsive patient or one without a gag; that patient needs airway support and ALS dextrose.", "lesson": "emt-exam-l13" },
+    { "id": "emt-exam-c098", "front": "What defines status epilepticus and why does it matter?", "back": "Continuous seizing for 5 minutes, or repeated seizures without regaining consciousness between them. It is an ALS emergency with a rising risk of hypoxia and brain injury.", "lesson": "emt-exam-l13" },
+    { "id": "emt-exam-c099", "front": "What are the sepsis screening criteria an EMT can use?", "back": "Suspected infection plus a temperature above 38 C or below 36 C, a heart rate over 90, a respiratory rate over 20, or altered mental status. Say the word sepsis in your radio report.", "lesson": "emt-exam-l13" },
+    { "id": "emt-exam-c100", "front": "What goes wrong when a dialysis patient misses treatment?", "back": "Fluid overload with pulmonary edema and high potassium, which causes weakness and cardiac arrest. Never take a blood pressure in the arm with the shunt or fistula.", "lesson": "emt-exam-l13" },
+    { "id": "emt-exam-c101", "front": "What must you assume about a woman of childbearing age with abdominal pain and syncope?", "back": "A ruptured ectopic pregnancy with internal bleeding until proven otherwise. Nothing in the field fixes it; rapid transport is the treatment.", "lesson": "emt-exam-l13" },
+    { "id": "emt-exam-c102", "front": "How do you restrain a patient safely?", "back": "Enough personnel, never prone and never hobbled, supine or on the side, continuous monitoring of airway and breathing, restraints not removed mid-transport, and documentation of the reason and the method.", "lesson": "emt-exam-l13" },
+    { "id": "emt-exam-c103", "front": "What do lights and sirens actually do, and where do ambulances crash?", "back": "They request the right of way and never grant it; due regard applies at all times. Most collisions happen at intersections, so stop and clear each lane separately.", "lesson": "emt-exam-l14" },
+    { "id": "emt-exam-c104", "front": "How do you position yourself at a hazardous materials scene?", "back": "Upwind, uphill and upstream, at least 100 feet from a known hazard, reading placards and the NFPA 704 diamond from a distance. Do not enter; stage until it is made safe.", "lesson": "emt-exam-l14" },
+    { "id": "emt-exam-c105", "front": "What does the NFPA 704 diamond tell you?", "back": "Blue is health, red is flammability, yellow is reactivity, white is special hazards, each rated 0 to 4 for severity.", "lesson": "emt-exam-l14" },
+    { "id": "emt-exam-c106", "front": "What are the landing zone requirements and the approach rule for a helicopter?", "back": "About 100 by 100 feet, firm, level, free of wires and loose debris. Approach only when signaled by the crew, from the front, in the pilot's view, never from the rear.", "lesson": "emt-exam-l14" },
+    { "id": "emt-exam-c107", "front": "Walk through START triage in order.", "back": "Walking wounded are green. No breathing after opening the airway is black. Respirations over 30, no radial pulse or capillary refill over 2 seconds, or unable to follow commands is red. Everyone else is yellow.", "lesson": "emt-exam-l14" },
+    { "id": "emt-exam-c108", "front": "How does JumpSTART differ from START?", "back": "For children under about 8: an apneic child with a pulse gets 5 rescue breaths before being tagged black, and the respiratory cutoffs are below 15 or above 45 per minute.", "lesson": "emt-exam-l14" },
+    { "id": "emt-exam-c109", "front": "What is span of control, and what are the four ICS sections?", "back": "Span of control is 3 to 7 people per supervisor, ideally 5. The sections are operations, planning, logistics, and finance and administration, under one incident commander.", "lesson": "emt-exam-l14" },
+    { "id": "emt-exam-c110", "front": "How do you correct an error on a patient care report?", "back": "A single line through it, your initials and the date. Never erase, never scribble out, never backdate. Late entries are labeled as late entries with the time.", "lesson": "emt-exam-l14" },
+    { "id": "emt-exam-c111", "front": "When is an emergency move justified versus an urgent move?", "back": "Emergency move: immediate danger such as fire or hazard, or the need to reach another patient. Urgent move: altered mental status or unstable vital signs. Everything else is non-urgent.", "lesson": "emt-exam-l14" },
+    { "id": "emt-exam-c112", "front": "What do the cue words first, next, best and priority each ask for?", "back": "First means earliest in the sequence right now. Next assumes everything before it is done. Best means several work, pick the highest standard. Priority means ranked by threat to life.", "lesson": "emt-exam-l15" },
+    { "id": "emt-exam-c113", "front": "A stem shows a patient deteriorating immediately after an intervention. What does the pattern usually want?", "back": "Address or reverse the intervention: lift the occlusive dressing, remove the CPAP mask, stop the drug. Escalating the same treatment compounds the harm.", "lesson": "emt-exam-l15" },
+    { "id": "emt-exam-c114", "front": "What is the 20-second protocol when you blank on a question?", "back": "Reread only the last line for the cue word, name the patient as sick or not sick and which system, eliminate out-of-scope and harmful choices, then pick the earliest action in the priority order.", "lesson": "emt-exam-l17" },
+    { "id": "emt-exam-c115", "front": "What pacing target should you hold on exam day?", "back": "45-60 seconds per item, with 2 hours for 70 to 120 questions. Past 90 seconds consistently means you are rereading instead of deciding. Check the clock twice, not constantly.", "lesson": "emt-exam-l17" },
+    { "id": "emt-exam-c116", "front": "What does it mean if the exam shuts off at 70 questions?", "back": "The computer reached 95% confidence about your ability, in one direction or the other. It is not readable as good or bad news.", "lesson": "emt-exam-l17" },
+    { "id": "emt-exam-c117", "front": "What is the sequence of the trauma assessment station?", "back": "Precautions and scene size-up, primary survey with a stated transport decision, rapid head-to-toe using DCAP-BTLS with the collar applied at the neck, then baseline vitals, SAMPLE history and reassessment.", "lesson": "emt-exam-l16" },
+    { "id": "emt-exam-c118", "front": "How does the medical assessment station differ in shape from the trauma station?", "back": "It is history-driven: OPQRST and SAMPLE come before the exam, and the exam is focused on the system the history points at rather than a full head-to-toe sweep.", "lesson": "emt-exam-l16" }
+  ],
+  "quiz": [
+    {
+      "id": "emt-exam-q034",
+      "q": "A 34-year-old is unresponsive after a suspected opioid overdose. He is snoring with a respiratory rate of 6 and shallow chest movement. He gags when you attempt an oral airway. Which is the most appropriate airway management?",
+      "choices": [
+        "Insert a nasopharyngeal airway and begin bag-valve mask ventilation at 1 breath every 6 seconds",
+        "Insert the oral airway anyway and ventilate",
+        "Apply a nonrebreather at 15 L/min and monitor",
+        "Place him in the recovery position and await ALS"
+      ],
+      "answer": 0,
+      "why": "An intact gag rules out an oral airway but not a nasal one, and a rate of 6 with shallow movement is inadequate breathing requiring positive pressure. A nonrebreather does not ventilate, and the recovery position does not fix hypoventilation.",
+      "lesson": "emt-exam-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-exam-q035",
+      "q": "A 27-year-old known asthmatic was wheezing loudly 10 minutes ago. His chest is now nearly silent, he is diaphoretic and can barely stay awake, and his SpO2 is 84% on a nonrebreather. The most appropriate action is:",
+      "choices": [
+        "Continue the nonrebreather and transport",
+        "Begin assisted ventilation with a bag-valve mask at 15 L/min",
+        "Apply CPAP at 10 cmH2O",
+        "Encourage him to use his own inhaler again"
+      ],
+      "answer": 1,
+      "why": "A silent chest with exhaustion and altered mental status is near-arrest, and only positive pressure moves air. CPAP requires a patient who can follow commands and do the work, and another inhaler dose does not fix a patient who is no longer moving air.",
+      "lesson": "emt-exam-l10",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-exam-q036",
+      "q": "A 72-year-old with severe COPD has an SpO2 of 85% on room air, is using accessory muscles, and is alert. The correct oxygen management is:",
+      "choices": [
+        "Withhold oxygen to preserve his hypoxic drive",
+        "Nasal cannula at 2 L/min only, regardless of response",
+        "High-concentration oxygen titrated down to a saturation of 88-92%",
+        "Nonrebreather at 15 L/min maintained at 100% saturation"
+      ],
+      "answer": 2,
+      "why": "Hypoxia kills faster than carbon dioxide retention, so oxygen is given and titrated to the 88-92% window. Withholding it is the classic fatal error, and driving a COPD patient to 100% invites CO2 retention.",
+      "lesson": "emt-exam-l10",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-exam-q037",
+      "q": "A 4-year-old sits upright drooling, with stridor, a fever of 39.4 C and no cough. She looks frightened. Which action is correct?",
+      "choices": [
+        "Inspect the throat with a tongue blade",
+        "Lay her supine for a complete assessment",
+        "Insert a nasopharyngeal airway",
+        "Keep her upright and calm with blow-by oxygen and transport without agitating her"
+      ],
+      "answer": 3,
+      "why": "This is epiglottitis, and agitation or anything entering the mouth can produce complete obstruction. Calm, upright, oxygen and transport is the entire field treatment.",
+      "lesson": "emt-exam-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-exam-q038",
+      "q": "You are suctioning a 5-year-old with copious vomit in the airway. What is the maximum duration of a single suction attempt?",
+      "choices": [
+        "5 seconds",
+        "10 seconds",
+        "15 seconds",
+        "20 seconds"
+      ],
+      "answer": 1,
+      "why": "Children get 10 seconds, adults 15 and infants 5. Suctioning removes oxygen along with the fluid and can stimulate the vagus nerve, producing bradycardia.",
+      "lesson": "emt-exam-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-exam-q039",
+      "q": "Which finding makes CPAP inappropriate for a patient in respiratory distress?",
+      "choices": [
+        "A respiratory rate of 30",
+        "A history of congestive heart failure",
+        "A systolic blood pressure of 84 mmHg",
+        "An SpO2 of 89% on a nonrebreather"
+      ],
+      "answer": 2,
+      "why": "Positive pressure reduces venous return and worsens hypotension, so a systolic below about 90 is a contraindication. The other three findings are exactly the indications for applying it.",
+      "lesson": "emt-exam-l10",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-exam-q040",
+      "q": "Two EMTs are performing CPR on a 6-month-old with no advanced airway. The correct ratio and hand technique are:",
+      "choices": [
+        "30:2 with two fingers below the nipple line",
+        "30:2 with the heel of one hand",
+        "15:2 with two fingers below the nipple line",
+        "15:2 with the two-thumb encircling technique"
+      ],
+      "answer": 3,
+      "why": "Two-rescuer infant CPR is 15:2, and the two-thumb encircling technique produces better depth and blood pressure whenever a second rescuer is available. Two fingers is the single-rescuer method.",
+      "lesson": "emt-exam-l11",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-exam-q041",
+      "q": "Your AED delivers a shock to an adult in ventricular fibrillation. The patient does not move. Your next action is:",
+      "choices": [
+        "Immediately resume chest compressions",
+        "Check for a carotid pulse for 10 seconds",
+        "Reanalyze the rhythm at once",
+        "Deliver two rescue breaths"
+      ],
+      "answer": 0,
+      "why": "Compressions resume immediately after a shock and continue for two minutes before the next analysis. Pausing to check a pulse or reanalyze wastes the perfusion the shock depends on.",
+      "lesson": "emt-exam-l11",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-exam-q042",
+      "q": "A 63-year-old has chest pressure, an inferior ST elevation pattern on the transmitted 12-lead, clear lung sounds and a blood pressure of 86/54. Regarding nitroglycerin, you should:",
+      "choices": [
+        "Give 0.4 mg and repeat in 5 minutes",
+        "Give 0.4 mg only if the pain is severe",
+        "Withhold it because a right ventricular infarct is likely and it is preload dependent",
+        "Withhold it only until the systolic falls below 80"
+      ],
+      "answer": 2,
+      "why": "An inferior pattern with hypotension and clear lungs is the right ventricular picture, and nitroglycerin removes the preload that ventricle needs. Aspirin is still appropriate if there is no contraindication.",
+      "lesson": "emt-exam-l11",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-exam-q043",
+      "q": "An 80-year-old with heart failure is upright, gasping, with crackles throughout, an SpO2 of 84% on a nonrebreather, a rate of 32 and a blood pressure of 192/104. He follows commands. The best next intervention is:",
+      "choices": [
+        "Lay him supine and elevate the legs",
+        "Assist with a bronchodilator for the wheezing",
+        "Give a 500 mL fluid bolus",
+        "Apply CPAP at 5-10 cmH2O and continue to monitor the blood pressure"
+      ],
+      "answer": 3,
+      "why": "He meets every CPAP requirement and has flash pulmonary edema, which CPAP treats by driving fluid back out of the alveoli and unloading the ventricle. Fluids and supine positioning worsen it, and a bronchodilator alone misses the diagnosis.",
+      "lesson": "emt-exam-l11",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-exam-q044",
+      "q": "A 56-year-old with crushing chest pain has no aspirin allergy, no bleeding history and an intact airway. The correct aspirin administration is:",
+      "choices": [
+        "324 mg chewed, as four 81 mg chewable tablets",
+        "325 mg swallowed whole with water",
+        "81 mg chewed, repeated every 5 minutes up to three doses",
+        "650 mg chewed once"
+      ],
+      "answer": 0,
+      "why": "The field dose is 324 mg chewed for faster absorption. Swallowing whole delays the effect, and aspirin is a single dose, not a repeated one like nitroglycerin.",
+      "lesson": "emt-exam-l11",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-exam-q045",
+      "q": "An apneic, pulseless patient shows an organized rhythm at 70 on the monitor. The correct interpretation and action are:",
+      "choices": [
+        "Ventricular fibrillation; deliver a shock",
+        "Pulseless electrical activity; continue high-quality compressions and look for a correctable cause",
+        "Return of spontaneous circulation; stop compressions",
+        "Asystole; withhold resuscitation"
+      ],
+      "answer": 1,
+      "why": "An organized rhythm with no pulse is PEA, where the electrical system is working and the pump or the plumbing is not. An AED will not advise a shock, and compressions plus a cause search are the treatment.",
+      "lesson": "emt-exam-l11",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-exam-q046",
+      "q": "A 28-year-old has arterial bleeding from a mid-forearm laceration that continues through two dressings and firm direct pressure. You should apply a tourniquet:",
+      "choices": [
+        "Directly over the wound",
+        "Over the elbow joint to compress both bones",
+        "As low on the forearm as possible to spare tissue",
+        "2-3 inches above the wound, not over a joint, tightened until bleeding stops, with the time noted"
+      ],
+      "answer": 3,
+      "why": "Placement is proximal to the wound and off any joint, tightened until bleeding stops, with the application time documented and the device never loosened. Placing it over the wound or a joint fails to occlude arterial flow.",
+      "lesson": "emt-exam-l12",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-exam-q047",
+      "q": "You sealed an open chest wound with an occlusive dressing. Ten minutes later the patient is more dyspneic, the neck veins are distended and the systolic has fallen from 118 to 82. You should:",
+      "choices": [
+        "Lift a corner of the dressing to release trapped air, then reassess",
+        "Apply a second occlusive dressing over the first",
+        "Begin CPAP at 10 cmH2O",
+        "Place the patient supine with the legs elevated"
+      ],
+      "answer": 0,
+      "why": "Deterioration after sealing the wound suggests a developing tension pneumothorax, and releasing the seal lets the trapped air out. Adding dressings or positive pressure raises intrathoracic pressure further.",
+      "lesson": "emt-exam-l12",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-exam-q048",
+      "q": "A head-injured patient's vitals move from 130/80 with a heart rate of 90 to 190/74 with a heart rate of 46 and irregular respirations. This pattern indicates:",
+      "choices": [
+        "Compensated hypovolemic shock",
+        "Rising intracranial pressure, known as Cushing's triad",
+        "Neurogenic shock from a cervical injury",
+        "A normal response to pain"
+      ],
+      "answer": 1,
+      "why": "Rising blood pressure with a falling heart rate and irregular breathing is Cushing's triad, a late sign of rising pressure inside the skull. Hypovolemia and neurogenic shock both produce hypotension instead.",
+      "lesson": "emt-exam-l12",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-exam-q049",
+      "q": "An adult has partial-thickness burns covering the entire front of the torso and the entire left arm. Using the rule of nines, the burned surface area is:",
+      "choices": [
+        "18%",
+        "22.5%",
+        "27%",
+        "36%"
+      ],
+      "answer": 2,
+      "why": "The anterior torso is 18% and a full arm is 9%, totaling 27%. Counting the posterior torso as well produces 36 and is the intended trap.",
+      "lesson": "emt-exam-l12",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-exam-q050",
+      "q": "A stabbing victim has loops of bowel protruding from an abdominal wound. Correct management is to:",
+      "choices": [
+        "Cover the organs with a moist sterile dressing and then an occlusive layer, and keep the patient warm",
+        "Gently replace the organs and cover with a dry dressing",
+        "Apply direct pressure to the exposed organs to control bleeding",
+        "Leave the wound open to air and transport"
+      ],
+      "answer": 0,
+      "why": "Exposed organs are covered moist to prevent drying, then occluded to retain moisture and heat. Replacing them causes contamination and injury, and pressure on bowel damages it further.",
+      "lesson": "emt-exam-l12",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-exam-q051",
+      "q": "A worker's index finger is amputated by a saw. After bleeding is controlled, the amputated part should be:",
+      "choices": [
+        "Placed directly on ice in a cup of water",
+        "Wrapped in moist sterile gauze, sealed in a bag, and kept cool without direct ice contact",
+        "Wrapped in dry gauze and taped to the patient's hand",
+        "Left at the scene for police documentation"
+      ],
+      "answer": 1,
+      "why": "Moist wrapping prevents drying and a sealed bag kept cool slows tissue death, but direct ice contact freezes and destroys the tissue. The part always travels with the patient.",
+      "lesson": "emt-exam-l12",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-exam-q052",
+      "q": "A 68-year-old has sudden right arm weakness and slurred speech. Her husband says she was normal when he went to bed at 2300 and he found her this way at 0600. The single most important item for your report is:",
+      "choices": [
+        "Her current blood pressure",
+        "Whether she has taken aspirin today",
+        "The last known well time of 2300, not 0600",
+        "Her pain score"
+      ],
+      "answer": 2,
+      "why": "Treatment windows run from when the patient was last known normal, so 2300 is the number the stroke team needs. The time she was found overstates eligibility and can lead to a harmful decision.",
+      "lesson": "emt-exam-l13",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-exam-q053",
+      "q": "An unresponsive 50-year-old diabetic has a glucose of 36 mg/dL, snoring respirations and no gag reflex. Family is urging you to give him juice. You should:",
+      "choices": [
+        "Give small sips of juice with the head elevated",
+        "Place glucose gel between the cheek and gum",
+        "Give oral glucose only after suctioning",
+        "Give nothing by mouth, manage the airway and ventilation, and request ALS for intravenous dextrose"
+      ],
+      "answer": 3,
+      "why": "Anything placed in the mouth of a patient with no gag reflex is aspirated, regardless of position or suction. Family pressure does not change scope, and definitive treatment is intravenous dextrose.",
+      "lesson": "emt-exam-l13",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-exam-q054",
+      "q": "A 19-year-old has three days of increasing thirst, frequent urination and vomiting. He is breathing deeply at 28 per minute, his breath smells fruity and his skin is dry. This presentation is:",
+      "choices": [
+        "Hypoglycemia requiring oral glucose",
+        "Diabetic ketoacidosis requiring oxygen, positioning and rapid transport",
+        "An anxiety attack requiring coached breathing",
+        "An opioid overdose requiring naloxone"
+      ],
+      "answer": 1,
+      "why": "Slow onset over days with Kussmaul breathing, acetone breath and dehydration is DKA. Hypoglycemia comes on in minutes with sweaty pale skin, and neither anxiety nor opioids produce this combination.",
+      "lesson": "emt-exam-l13",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-exam-q055",
+      "q": "A 35-year-old has hives, wheezing, a swollen tongue and a blood pressure of 76/42 minutes after eating shellfish. The priority intervention is:",
+      "choices": [
+        "Albuterol by nebulizer",
+        "Diphenhydramine by mouth",
+        "Epinephrine 0.3 mg intramuscularly in the lateral thigh",
+        "A 500 mL fluid bolus before any medication"
+      ],
+      "answer": 2,
+      "why": "Epinephrine is the only treatment that reverses both the airway swelling and the vasodilation causing the shock. Albuterol works below the cords only, and antihistamines are far too slow for a closing airway.",
+      "lesson": "emt-exam-l13",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-exam-q056",
+      "q": "A 32-week pregnant patient with a blood pressure of 168/104 has a generalized seizure in your ambulance. Your management includes:",
+      "choices": [
+        "Restraining her limbs and inserting a bite block",
+        "Sitting her fully upright",
+        "Placing her supine and flat",
+        "Protecting her from injury, positioning her on her left side, giving oxygen, and transporting emergently"
+      ],
+      "answer": 3,
+      "why": "This is eclampsia: protect, never restrain or put anything in the mouth, and use left lateral positioning to keep the uterus off the vena cava. Supine positioning reduces cardiac output in late pregnancy.",
+      "lesson": "emt-exam-l13",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-exam-q057",
+      "q": "During delivery you see a loop of umbilical cord protruding from the vagina ahead of the baby. You should:",
+      "choices": [
+        "Place the mother in knee-chest position, insert a gloved hand to lift the presenting part off the cord, cover the cord with a moist dressing, and transport immediately",
+        "Attempt to push the cord back into the vagina",
+        "Have the mother push with each contraction to deliver faster",
+        "Clamp and cut the cord to relieve the compression"
+      ],
+      "answer": 0,
+      "why": "The baby's head compresses the cord and cuts off its oxygen, so you physically hold the presenting part off it the entire way to the hospital. Pushing the cord back, clamping it, or accelerating delivery all kill the fetus.",
+      "lesson": "emt-exam-l13",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-exam-q058",
+      "q": "A newborn is apneic with a heart rate of 54 after 30 seconds of effective bag-valve mask ventilation. Your next action is:",
+      "choices": [
+        "Continue ventilation alone for another 60 seconds",
+        "Apply an AED",
+        "Begin compressions at a 3:1 ratio with 120 events per minute",
+        "Begin compressions at a 15:2 ratio"
+      ],
+      "answer": 2,
+      "why": "A newborn heart rate below 60 after 30 seconds of effective ventilation is the compression threshold, and newborn CPR is 3:1 at 120 events per minute. The 15:2 ratio belongs to older infants and children.",
+      "lesson": "emt-exam-l13",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-exam-q059",
+      "q": "A dialysis patient who missed his last two treatments is weak, short of breath, and has crackles at both bases. Which action is contraindicated?",
+      "choices": [
+        "Sitting him upright",
+        "Applying oxygen titrated to his saturation",
+        "Requesting ALS",
+        "Taking a blood pressure in the arm containing his fistula"
+      ],
+      "answer": 3,
+      "why": "A cuff on a fistula or shunt arm can damage the access the patient's life depends on; use the other arm. Missed dialysis produces fluid overload and high potassium, so upright positioning, oxygen and ALS are all correct.",
+      "lesson": "emt-exam-l13",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-exam-q060",
+      "q": "An 82-year-old nursing home resident has a temperature of 38.9 C, a heart rate of 112, a respiratory rate of 24, warm flushed skin, a blood pressure of 88/50, and new confusion. The most likely diagnosis is:",
+      "choices": [
+        "Septic shock",
+        "Cardiogenic shock",
+        "Hypovolemic shock from dehydration alone",
+        "Neurogenic shock"
+      ],
+      "answer": 0,
+      "why": "Fever with tachycardia, tachypnea, altered mental status and warm skin is distributive shock from sepsis. Cardiogenic shock gives cold skin and crackles, and neurogenic shock gives bradycardia with a spinal injury history.",
+      "lesson": "emt-exam-l13",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-exam-q061",
+      "q": "A combative patient is restrained by four providers. Which practice is correct?",
+      "choices": [
+        "Secure him face down with wrists and ankles tied behind him",
+        "Restrain him supine or on his side, monitor airway and breathing continuously, and document the reason and method",
+        "Remove the restraints once he stops struggling",
+        "Place a surgical mask on him and cover it with a towel to protect against spitting"
+      ],
+      "answer": 1,
+      "why": "Prone and hobbled restraint causes positional asphyxia deaths. Restraints are not removed on scene because a patient calmed, and covering a mask with a towel obstructs breathing.",
+      "lesson": "emt-exam-l13",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-exam-q062",
+      "q": "You arrive at a tanker truck rollover with an unknown liquid pooling on the road and a visible placard. Your first action is:",
+      "choices": [
+        "Approach to read the placard up close and check for patients",
+        "Begin gross decontamination of anyone who walks toward you",
+        "Drive through the spill to reach the driver quickly",
+        "Stop and position uphill and upwind at a safe distance, identify the placard from afar, and request hazardous materials resources"
+      ],
+      "answer": 3,
+      "why": "Scene safety outranks everything, and the position of the ambulance is the decision that protects the crew and every later patient. Approaching, driving through the product, or starting care inside the hazard zone creates more patients.",
+      "lesson": "emt-exam-l14",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-exam-q063",
+      "q": "At a multiple-casualty incident you are assigned as triage officer. To whom do you report?",
+      "choices": [
+        "The incident commander or the EMS branch or medical group supervisor in the command structure",
+        "The senior physician at the receiving hospital",
+        "Each transporting crew individually",
+        "Whoever arrives with the most seniority"
+      ],
+      "answer": 0,
+      "why": "Incident command uses a single chain with a defined span of control of 3 to 7. Reporting to hospitals, individual crews or the most senior person present bypasses the structure and duplicates or loses information.",
+      "lesson": "emt-exam-l14",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-exam-q064",
+      "q": "During START triage you find an adult who is not walking, breathing 36 times per minute, with a present radial pulse, who follows commands. The correct tag is:",
+      "choices": [
+        "Delayed, yellow",
+        "Immediate, red",
+        "Minor, green",
+        "Expectant, black"
+      ],
+      "answer": 1,
+      "why": "A respiratory rate over 30 tags the patient immediate on its own; START stops at the first criterion met and does not weigh the other normal findings.",
+      "lesson": "emt-exam-l14",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-exam-q065",
+      "q": "Using JumpSTART at a school bus crash, you find a 6-year-old who is apneic but has a palpable pulse. You should:",
+      "choices": [
+        "Tag the child expectant and move on",
+        "Begin full CPR at this patient's side",
+        "Open the airway and, if still apneic, give 5 rescue breaths before deciding the tag",
+        "Tag the child delayed and reassess in 10 minutes"
+      ],
+      "answer": 2,
+      "why": "JumpSTART recognizes that pediatric arrest is usually respiratory, so an apneic child with a pulse gets 5 rescue breaths before being tagged expectant. Full CPR on one patient during triage abandons everyone else.",
+      "lesson": "emt-exam-l14",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-exam-q066",
+      "q": "A helicopter is landing at your scene. Which action is correct?",
+      "choices": [
+        "Approach from the front, in the pilot's view, only after the crew signals you",
+        "Approach from the rear to stay clear of the main rotor",
+        "Secure the landing zone with loose tarps to mark the corners",
+        "Approach immediately as the skids touch down to save time"
+      ],
+      "answer": 0,
+      "why": "The tail rotor is invisible in operation and the rear is the most dangerous approach. Loose material becomes a projectile in rotor wash, and no one approaches until the crew signals.",
+      "lesson": "emt-exam-l14",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-exam-q067",
+      "q": "You realize you wrote the wrong blood pressure on a completed patient care report. The correct action is:",
+      "choices": [
+        "Erase it and write the correct value",
+        "Draw a single line through the entry, write the correction, and add your initials and the date",
+        "Black it out completely so it cannot be misread",
+        "Leave it and note the correct value verbally at the hospital"
+      ],
+      "answer": 1,
+      "why": "A single line, initials and date preserves the original entry and shows the correction honestly. Erasing or obliterating an entry looks like concealment and destroys the record's credibility.",
+      "lesson": "emt-exam-l14",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-exam-q068",
+      "q": "A 47-year-old struck his head, is confused about the date, and insists on refusing transport. Which principle applies?",
+      "choices": [
+        "He may refuse because he is an adult",
+        "He may refuse if a family member signs as a witness",
+        "Confusion means he lacks decision-making capacity, so implied consent applies and he should be transported",
+        "He may refuse only after a physician speaks to him by phone"
+      ],
+      "answer": 2,
+      "why": "A valid refusal requires an alert, oriented adult with capacity, and altered mental status removes that. A family signature does not create capacity, and involving medical control is good practice but does not change the legal basis.",
+      "lesson": "emt-exam-l14",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-exam-q069",
+      "q": "A stem describes a patient, states that you have opened the airway and confirmed adequate breathing, and asks what you should do NEXT. This word tells you to:",
+      "choices": [
+        "Return to the beginning of the primary survey",
+        "Choose the action with the highest overall standard of care regardless of order",
+        "Choose whichever choice is most thorough",
+        "Assume everything described is complete and choose the following step in the priority sequence"
+      ],
+      "answer": 3,
+      "why": "Next means the earlier steps are done, so repeating them is wrong. Best and most appropriate are the cue words that ask about standard of care rather than sequence.",
+      "lesson": "emt-exam-l15",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-exam-q070",
+      "q": "An item reads \"All of the following are signs of inadequate breathing EXCEPT.\" The most reliable approach is to:",
+      "choices": [
+        "Choose the answer that looks least clinical",
+        "Verify that three of the four choices are genuinely signs of inadequate breathing, then select the remaining one",
+        "Choose the shortest choice",
+        "Answer quickly, because negative items are usually simple"
+      ],
+      "answer": 1,
+      "why": "Negative stems invert the task, and most errors come from answering as though the stem were positive. Length and style of a choice carry no information on this exam.",
+      "lesson": "emt-exam-l15",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-exam-q071",
+      "q": "During a spinal immobilization station, a candidate secures the head to the board before the torso. The result is:",
+      "choices": [
+        "No penalty if the patient is secured correctly at the end",
+        "A minor point deduction",
+        "A critical failure of the station",
+        "A warning and an opportunity to repeat the step"
+      ],
+      "answer": 2,
+      "why": "Securing the head first allows the body to shift against a fixed head, which can move the spine. It is a listed critical criterion, so the station ends regardless of how well the rest is performed.",
+      "lesson": "emt-exam-l16",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-exam-q072",
+      "q": "In the medical patient assessment station, you have completed scene size-up and the primary survey on a patient with shortness of breath. The next scored component is:",
+      "choices": [
+        "A full head-to-toe rapid trauma exam",
+        "Immediate packaging and transport",
+        "Baseline vital signs before any history",
+        "OPQRST and SAMPLE history, then a focused respiratory exam"
+      ],
+      "answer": 3,
+      "why": "The medical station is history-driven: the story determines which system you examine. A head-to-toe sweep belongs to the trauma station, and taking vitals before the history reverses the scored sequence.",
+      "lesson": "emt-exam-l16",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-exam-q073",
+      "q": "You are 40 questions into the cognitive exam, have spent an average of about 100 seconds per item, and feel you are guessing on most of them. The best response is:",
+      "choices": [
+        "Speed up toward 45-60 seconds per item by deciding rather than rereading, and continue answering normally",
+        "Slow down further to be certain of each answer",
+        "Go back and change earlier answers you are unsure about",
+        "Take a long break to reset, since breaks do not count against your time"
+      ],
+      "answer": 0,
+      "why": "At 100 seconds per item you risk running out of time, and feeling uncertain is the normal experience on an adaptive exam. You cannot return to earlier items, and breaks do come out of the two hours.",
+      "lesson": "emt-exam-l17",
+      "difficulty": 2
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "emt-exam-s03",
+      "title": "Skill station: trauma assessment, minute by minute",
+      "setting": "classroom",
+      "intro": "You are at the patient assessment and management trauma station. The evaluator reads: a 24-year-old was the unrestrained driver of a vehicle that struck a pole at about 40 mph. He is sitting on the ground beside the car, awake. You have a partner and a full BLS ambulance. The evaluator will answer questions with findings and expects you to narrate everything. Each step below is a decision point in the scored sequence.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "The evaluator says \"begin.\" Your equipment is at your feet. The patient is talking to a bystander.",
+          "choices": [
+            { "text": "State standard precautions out loud, ask whether the scene is safe, ask the number of patients and the mechanism, and request additional resources as needed", "next": "s2", "feedback": "Correct. Precautions and scene safety are the two critical criteria that live in the first 30 seconds, and both must be verbalized, not just intended.", "score": 1 },
+            { "text": "Kneel beside the patient and begin the primary survey immediately", "next": "s2", "feedback": "Two critical failures in one move. Nothing scores if precautions and scene safety were never stated.", "score": -1 },
+            { "text": "Ask the patient what happened and take a SAMPLE history", "next": "s2", "feedback": "Out of sequence. History comes after the primary survey in a trauma patient, and precautions still have not been verbalized.", "score": -1 },
+            { "text": "Put on gloves and eye protection silently, then check the scene", "next": "s2", "feedback": "You did the right things, but the evaluator scores what is said and seen. Say it out loud.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "The scene is safe, there is one patient, and the mechanism is significant. The patient is awake and says his chest hurts. He is pale.",
+          "vitals": { "hr": 118, "rr": 24, "spo2": 94 },
+          "choices": [
+            { "text": "Direct your partner to take manual in-line spinal stabilization, form a general impression, establish level of consciousness, then assess airway, breathing and circulation", "next": "s3", "feedback": "Correct. Manual stabilization begins at first contact given the mechanism and is held until the patient is fully secured. The primary survey follows in order.", "score": 1 },
+            { "text": "Apply a cervical collar first, then assess the airway", "next": "s3", "feedback": "The collar comes during the neck portion of the exam, and manual stabilization is what protects the spine before then. Assessment order still runs airway, breathing, circulation.", "score": 0 },
+            { "text": "Obtain a full set of vital signs before anything else", "next": "s3", "feedback": "Out of sequence. Baseline vitals come after the primary survey and rapid exam. Life threats are found and fixed first.", "score": -1 },
+            { "text": "Begin the head-to-toe exam at the scalp", "next": "s3", "feedback": "Skipping the primary survey is a critical failure. Unfound airway, breathing or circulation problems end the station.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "Airway is patent. Breathing is 24 and slightly shallow with decreased sounds on the right. Radial pulses are present but weak and fast. Skin is cool and pale. There is no major external bleeding.",
+          "choices": [
+            { "text": "Apply oxygen appropriate to the findings, state that this is a high-priority load-and-go patient, and continue the rapid trauma exam", "next": "s4", "feedback": "Correct. Stating the transport decision out loud is a scored element, and treating the breathing finding as you discover it is exactly the expected behavior.", "score": 1 },
+            { "text": "Note the findings and continue to the head-to-toe without intervening", "next": "s4", "feedback": "Critical failure territory. You fix life threats when you find them; deferring an airway, breathing or circulation problem ends stations.", "score": -1 },
+            { "text": "Stop and take a blood pressure to confirm shock before acting", "next": "s4", "feedback": "The findings you already have are enough. Waiting for a number before treating poor perfusion wastes scored time and, in the field, the patient.", "score": 0 },
+            { "text": "Begin CPR because the pulse is weak and fast", "next": "s4", "feedback": "He has a pulse and is talking. Compressions on a perfusing patient is a dangerous, unnecessary intervention and is itself a critical failure.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "You are performing the rapid trauma exam. You have completed the head and face. The evaluator is watching your sequence and listening to your narration.",
+          "choices": [
+            { "text": "Neck for tenderness, distended veins and tracheal position, then apply the correctly sized collar, then chest, abdomen, pelvis, all four extremities with pulse, motor and sensation, then log-roll to inspect the back", "next": "s5", "feedback": "Correct, and in the scored order. Say DCAP-BTLS as you palpate each region and call out what you find and what you do not find.", "score": 1 },
+            { "text": "Chest, abdomen, pelvis, extremities, back, then return to the neck and apply the collar", "next": "s5", "feedback": "Wrong order. The neck is assessed and the collar applied before you move down, because that is when you have the information the collar decision depends on.", "score": -1 },
+            { "text": "Press the pelvis firmly several times to confirm instability", "next": "s5", "feedback": "Harmful. One gentle assessment only, and stop immediately if it is unstable. Repeated pressure can restart bleeding from a pelvic fracture.", "score": -1 },
+            { "text": "Assess only the areas the patient reports hurting to save time", "next": "s5", "feedback": "The rapid trauma exam is a full sweep for a significant mechanism. A distracting injury hides others, which is exactly why the sweep exists.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "The exam is complete and the patient is packaged. You have about two minutes of station time remaining. The evaluator asks what you are doing now.",
+          "choices": [
+            { "text": "Obtain baseline vitals, take a SAMPLE history, repeat the primary survey, and state that you reassess every 5 minutes on an unstable patient", "next": "end", "feedback": "Correct. These are scored elements, and stating the reassessment interval out loud is what demonstrates it.", "score": 1 },
+            { "text": "Announce that the assessment is finished and wait", "next": "end", "feedback": "Leaves scored points on the table. Vitals, history and reassessment are components of this station.", "score": -1 },
+            { "text": "Begin splinting the extremities you found tender", "next": "end", "feedback": "Wrong priority for a load-and-go patient. Splinting happens en route, if at all, and never delays transport of an unstable trauma patient.", "score": -1 },
+            { "text": "Take vitals only, then hand off", "next": "end", "feedback": "Partial credit at best. History and a repeated primary survey are both part of the sequence.", "score": 0 }
+          ]
+        }
+      ],
+      "debrief": "The trauma station scores a sequence, not a diagnosis. The shape is fixed: precautions and scene size-up out loud, manual spinal stabilization when the mechanism calls for it, a primary survey that fixes each life threat as it is found, a stated transport decision, a full head-to-toe sweep using DCAP-BTLS with the collar applied at the neck, then baseline vitals, SAMPLE history and reassessment every 5 minutes. Notice where the critical failures sit. Two are in the first 30 seconds and consist entirely of things you say. One sits in the middle, where an airway, breathing or circulation finding goes unmanaged. One more is created by you, when an unnecessary or dangerous intervention gets added. The single habit that protects all of them is narration. If the evaluator cannot hear it, you did not do it."
+    },
+    {
+      "id": "emt-exam-s04",
+      "title": "Skill station: medical assessment, minute by minute",
+      "setting": "classroom",
+      "intro": "You are at the patient assessment and management medical station. The evaluator reads: you are called for a 64-year-old woman with difficulty breathing. She is sitting on the edge of her bed, awake and speaking in short phrases. You have a partner and a full BLS ambulance. This station is driven by history rather than a head-to-toe sweep, and the evaluator will provide findings only when you ask for them specifically.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "The evaluator says \"begin.\"",
+          "choices": [
+            { "text": "Verbalize standard precautions, confirm scene safety, note the number of patients and the nature of the illness, and consider additional resources", "next": "s2", "feedback": "Correct. The opening 30 seconds is identical in both assessment stations, and both items are listed critical criteria.", "score": 1 },
+            { "text": "Ask the patient to describe her breathing problem", "next": "s2", "feedback": "You skipped the scored opening. Precautions and scene safety come before patient contact in every station.", "score": -1 },
+            { "text": "Apply oxygen immediately because she is short of breath", "next": "s2", "feedback": "Premature and out of sequence. You have not assessed adequacy of breathing or her saturation, and you have not stated precautions.", "score": -1 },
+            { "text": "Ask the evaluator whether the scene is safe and put on gloves", "next": "s2", "feedback": "Half right. Add eye protection and state the nature of illness, patient count and resource needs to complete the size-up.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "The scene is safe. She is alert and oriented, speaking in three-word phrases, sitting upright and leaning forward.",
+          "vitals": { "hr": 108, "rr": 28, "spo2": 89 },
+          "choices": [
+            { "text": "Complete the primary survey: general impression, level of consciousness, airway, breathing with an intervention for the low saturation, and circulation, then state a transport priority", "next": "s3", "feedback": "Correct. The primary survey comes before the history in both stations, and low saturation with increased work of breathing is treated as you find it.", "score": 1 },
+            { "text": "Begin OPQRST immediately since this is a medical patient", "next": "s3", "feedback": "History is the core of this station but it does not replace the primary survey. Life threats first, story second.", "score": -1 },
+            { "text": "Perform a rapid head-to-toe exam", "next": "s3", "feedback": "That belongs to the trauma station. In a medical patient, the history tells you which system to examine.", "score": -1 },
+            { "text": "Assist ventilations with a bag-valve mask", "next": "s3", "feedback": "Too aggressive for these findings. She is alert, speaking and moving air, so oxygen and further assessment come first; she may need CPAP, not a bag.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "Oxygen is applied. The evaluator waits for you to build the story.",
+          "choices": [
+            { "text": "Take OPQRST on the dyspnea, then a full SAMPLE history including medications and the events leading up to today", "next": "s4", "feedback": "Correct and in the scored order. Ask about onset, what makes it better or worse, what it feels like, whether anything else hurts, severity, and how long, then work SAMPLE.", "score": 1 },
+            { "text": "Ask only whether she has a history of asthma", "next": "s4", "feedback": "Far too narrow. A single closed question cannot separate heart failure, COPD, pneumonia and pulmonary embolism, and the station scores the full history.", "score": -1 },
+            { "text": "Skip the history and take vitals, since she is short of breath", "next": "s4", "feedback": "Reverses the station. The history drives the focused exam and the field impression, both of which are scored.", "score": -1 },
+            { "text": "Ask the family for the history instead of the patient", "next": "s4", "feedback": "Useful supplementation, not a substitute. She is alert and oriented, so she is the primary source.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "She has had worsening breathlessness over three days, cannot lie flat, sleeps on three pillows instead of one, and takes furosemide and lisinopril. Her ankles are swollen.",
+          "choices": [
+            { "text": "Perform a focused exam of the respiratory and cardiovascular systems: breath sounds in all fields, work of breathing, neck veins, peripheral edema, and pulses", "next": "s5", "feedback": "Correct. The history pointed at the heart and lungs, so that is what you examine, and you say why you are examining it.", "score": 1 },
+            { "text": "Perform a complete head-to-toe examination for thoroughness", "next": "s5", "feedback": "Thorough is not the same as scored. A focused exam driven by the history is what this station is testing.", "score": -1 },
+            { "text": "Auscultate the anterior chest only and move on", "next": "s5", "feedback": "Incomplete. Crackles begin at the bases, and posterior and lateral fields are where you hear them first.", "score": 0 },
+            { "text": "Assist her with a bronchodilator because she is wheezing slightly", "next": "s5", "feedback": "Premature and possibly wrong. Wheezing with orthopnea, edema and diuretic use points at heart failure, and reaching for a drug before the exam is finished skips the reasoning being scored.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "You find crackles to the mid-fields bilaterally, distended neck veins, and pitting edema to both ankles. The evaluator asks for your field impression and plan.",
+          "choices": [
+            { "text": "State acute decompensated heart failure with pulmonary edema, describe upright positioning, oxygen titrated to target, CPAP if she meets the criteria and protocol allows, blood pressure every 5 minutes, and rapid transport with reassessment", "next": "end", "feedback": "Correct. A named impression with a plan, including the criteria you checked before choosing CPAP, is exactly what the station wants to hear.", "score": 1 },
+            { "text": "State that she is short of breath and needs transport", "next": "end", "feedback": "Not an impression. The station scores your ability to name what you think is happening and justify the treatment that follows from it.", "score": -1 },
+            { "text": "State asthma exacerbation and plan a bronchodilator", "next": "end", "feedback": "Misreads the story. A first asthma attack at 64 with orthopnea, edema, distended neck veins and diuretics is heart failure until proven otherwise.", "score": -1 },
+            { "text": "State possible heart failure and plan oxygen and transport without mentioning positioning or reassessment", "next": "end", "feedback": "Right impression, incomplete plan. Upright positioning is treatment in pulmonary edema, and reassessment intervals are a scored element.", "score": 0 }
+          ]
+        }
+      ],
+      "debrief": "The two assessment stations share an opening and then diverge. Both begin with precautions, scene safety and a primary survey that treats what it finds. From there the trauma station sweeps the body to find injuries, and the medical station builds a story and then confirms it with a focused exam. Running the wrong shape, a head-to-toe on a dyspneic patient or a single closed question instead of a real history, costs points even when the medicine is right. Three habits carry this station. Ask OPQRST and SAMPLE completely, because the evaluator only gives you findings you ask for specifically. Examine the system the history points at and say why you are examining it. Finish with a named field impression and a plan that includes positioning, the oxygen target, any medication with the contraindications you screened, and how often you will reassess."
+    }
+  ]
+}

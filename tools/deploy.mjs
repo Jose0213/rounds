@@ -29,7 +29,7 @@ const remote = [
   `[ -d ~/${remoteDir}/dist ] && mv ~/${remoteDir}/dist ~/${remoteDir}/dist.old || true`,
   `mv ~/${remoteDir}/dist.new ~/${remoteDir}/dist`,
   `rm -rf ~/${remoteDir}/dist.old`,
-  `ls ~/${remoteDir}/dist/content.js >/dev/null`,
+  `ls ~/${remoteDir}/dist/content/index.js >/dev/null`,
 ].join(' && ');
 fs.copyFileSync(path.join(ROOT, 'tools', 'serve.mjs'), path.join(DIST, 'serve.mjs'));
 try {

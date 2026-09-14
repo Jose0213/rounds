@@ -156,6 +156,71 @@ function validateExtension(x, file) {
   return { errs, warns };
 }
 
+function validateBank(x, file) {
+  const errs = [], warns = [];
+  const modId = path.basename(file, '.quiz.json');
+  if (x.schema !== 1) errs.push('schema must be 1');
+  if (x.extends !== modId) errs.push(`extends '${x.extends}' must match filename '${modId}.quiz.json'`);
+  const dir = path.dirname(file);
+  let base = null, ext = null;
+  try { base = JSON.parse(fs.readFileSync(path.join(dir, modId + '.json'), 'utf8')); } catch (e) { errs.push(`base module ${modId}.json is missing or invalid JSON`); return { errs, warns }; }
+  try { if (fs.existsSync(path.join(dir, modId + '.ext.json'))) ext = JSON.parse(fs.readFileSync(path.join(dir, modId + '.ext.json'), 'utf8')); } catch (e) { warns.push('extension file is invalid JSON; validated against base only'); }
+  const lessons = [...(base.lessons || []), ...((ext && ext.lessons) || [])];
+  const lessonIds = new Set(lessons.map((l) => l.id));
+  const qIds = new Set([...(base.quiz || []), ...((ext && ext.quiz) || [])].map((q) => q.id));
+  const checks = x.checks && typeof x.checks === 'object' ? x.checks : {};
+  const covered = Object.keys(checks).filter((k) => lessonIds.has(k));
+  Object.keys(checks).forEach((k) => { if (!lessonIds.has(k)) errs.push(`checks: lesson '${k}' not in module`); });
+  if (covered.length < lessons.length) warns.push(`checks: ${lessons.length - covered.length} lesson(s) have no extra checks`);
+  for (const [lid, arr] of Object.entries(checks)) {
+    if (!Array.isArray(arr) || arr.length < 1 || arr.length > 4) { errs.push(`checks[${lid}]: need 1–4 checks`); continue; }
+    arr.forEach((c, j) => {
+      const cw = `checks[${lid}][${j}]`;
+      if (!isStr(c?.q)) errs.push(`${cw}: q missing`);
+      if (!Array.isArray(c?.choices) || c.choices.length !== 4 || !c.choices.every((v) => isStr(v))) errs.push(`${cw}: need exactly 4 string choices`);
+      else if (!isIdx(c?.answer, 4)) errs.push(`${cw}: answer must be 0–3`);
+      if (!isStr(c?.why, 10)) errs.push(`${cw}: why missing/too short`);
+    });
+  }
+  const quiz = Array.isArray(x.quiz) ? x.quiz : [];
+  if (quiz.length < 20 || quiz.length > 120) errs.push(`quiz: need 20–120, have ${quiz.length}`);
+  quiz.forEach((q, i) => checkQuestion(q, i, modId, lessonIds, qIds, errs));
+  checkAnswerSpread(quiz, warns);
+  return { errs, warns };
+}
+
+function validateExam(x, file) {
+  const errs = [], warns = [];
+  const base = path.basename(file, '.json');
+  if (x.schema !== 1) errs.push('schema must be 1');
+  if (x.id !== base) errs.push(`id '${x.id}' must match filename '${base}'`);
+  if (!isStr(x.title)) errs.push('title missing');
+  if (!isStr(x.blurb, 30)) errs.push('blurb missing/too short');
+  if (!Number.isInteger(x.minutes) || x.minutes < 10) errs.push('minutes must be an integer >= 10');
+  if (!Number.isInteger(x.count) || x.count < 10) errs.push('count must be an integer >= 10');
+  const secs = Array.isArray(x.sections) ? x.sections : [];
+  if (!secs.length) errs.push('sections missing');
+  const secIds = new Set(); let wsum = 0;
+  secs.forEach((sc, i) => { if (!isStr(sc?.id)) errs.push(`section[${i}]: id missing`); if (secIds.has(sc?.id)) errs.push(`section[${i}]: duplicate id`); secIds.add(sc?.id); if (!isStr(sc?.title)) errs.push(`section[${i}]: title missing`); if (typeof sc?.weight !== 'number' || sc.weight <= 0) errs.push(`section[${i}]: weight must be > 0`); else wsum += sc.weight; });
+  if (secs.length && Math.abs(wsum - 1) > 0.05) warns.push(`section weights sum to ${wsum.toFixed(2)}, expected ~1`);
+  const qs = Array.isArray(x.questions) ? x.questions : [];
+  const seen = new Set(); const perSec = {};
+  qs.forEach((q, i) => {
+    const w = `question[${i}] ${q?.id || ''}`;
+    if (!isStr(q?.id) || !q.id.startsWith(x.id + '-q')) errs.push(`${w}: id must start with '${x.id}-q'`);
+    if (seen.has(q?.id)) errs.push(`${w}: duplicate id`); seen.add(q?.id);
+    if (!secIds.has(q?.section)) errs.push(`${w}: section '${q?.section}' not defined`); else perSec[q.section] = (perSec[q.section] || 0) + 1;
+    if (!isStr(q?.q, 15)) errs.push(`${w}: q missing/too short`);
+    if (!Array.isArray(q?.choices) || q.choices.length !== 4 || !q.choices.every((v) => isStr(v))) errs.push(`${w}: need exactly 4 string choices`);
+    else if (!isIdx(q?.answer, 4)) errs.push(`${w}: answer must be 0–3`);
+    if (!isStr(q?.why, 20)) errs.push(`${w}: why missing/too short`);
+    if (![1, 2, 3].includes(q?.difficulty)) errs.push(`${w}: difficulty must be 1|2|3`);
+  });
+  secs.forEach((sc) => { const need = Math.ceil((x.count || 0) * (sc.weight || 0) * 1.5); if ((perSec[sc.id] || 0) < need) warns.push(`section '${sc.id}': ${perSec[sc.id] || 0} questions, want at least ${need} for a ${x.count}-item attempt`); });
+  checkAnswerSpread(qs, warns);
+  return { errs, warns };
+}
+
 function validateReference(r, file) {
   const errs = [], warns = [];
   const base = path.basename(file, '.json');
@@ -175,7 +240,9 @@ function validateFile(file) {
   catch (e) { return { errs: [`invalid JSON: ${e.message}`], warns: [] }; }
   const norm = file.replace(/\\/g, '/');
   if (norm.includes('/reference/')) return validateReference(data, file);
+  if (norm.includes('/exams/')) return validateExam(data, file);
   if (norm.endsWith('.ext.json')) return validateExtension(data, file);
+  if (norm.endsWith('.quiz.json')) return validateBank(data, file);
   return validateModule(data, file);
 }
 
@@ -202,21 +269,21 @@ function validateManifest() {
   }
   const dir = path.join(ROOT, 'content', 'modules');
   if (fs.existsSync(dir)) for (const f of fs.readdirSync(dir)) {
-    if (!f.endsWith('.json') || f.endsWith('.ext.json')) continue;
+    if (!f.endsWith('.json') || f.endsWith('.ext.json') || f.endsWith('.quiz.json')) continue;
     const id = f.replace(/\.json$/, '');
     if (!seen.has(id)) errs.push(`manifest: module file '${id}' is not listed`);
   }
   return { errs, warns };
 }
 
-export { validateFile, validateManifest, validateModule, validateExtension, validateReference, LIMITS };
+export { validateFile, validateManifest, validateModule, validateExtension, validateBank, validateExam, validateReference, LIMITS };
 
 const isCli = process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
 if (isCli) {
   const args = process.argv.slice(2);
   let files = args.filter((a) => !a.startsWith('--'));
   if (args.includes('--all')) {
-    for (const sub of ['modules', 'reference']) {
+    for (const sub of ['modules', 'reference', 'exams']) {
       const dir = path.join(ROOT, 'content', sub);
       if (fs.existsSync(dir)) files.push(...fs.readdirSync(dir).filter((f) => f.endsWith('.json')).map((f) => path.join(dir, f)));
     }

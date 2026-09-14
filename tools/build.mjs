@@ -5,7 +5,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
-import { validateFile, validateManifest } from './validate.mjs';
+import { validateFile, validateManifest, validateExam } from './validate.mjs';
 import { writeIcons } from './icons.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -37,6 +37,17 @@ for (const t of manifest.tracks) for (const id of t.modules) {
       extNote = ` +ext(${(x.lessons || []).length}l/${(x.cards || []).length}c/${(x.quiz || []).length}q/${(x.scenarios || []).length}s)`;
     }
   }
+  const qf = path.join(CONTENT, 'modules', id + '.quiz.json');
+  if (fs.existsSync(qf)) {
+    const qv = validateFile(qf);
+    if (qv.errs.length) { problems++; log(`  x ${id}.quiz: ${qv.errs.length} error(s)${strict ? '' : ' — bank skipped'}`); qv.errs.slice(0, 4).forEach((e) => log('      ' + e)); if (strict) continue; }
+    else {
+      const b = JSON.parse(fs.readFileSync(qf, 'utf8'));
+      let nc = 0; for (const l of m.lessons) if (b.checks && b.checks[l.id]) { l.checks.push(...b.checks[l.id]); nc += b.checks[l.id].length; }
+      m.quiz.push(...(b.quiz || []));
+      extNote += ` +bank(${nc}chk/${(b.quiz || []).length}q)`;
+    }
+  }
   modules.push(m);
   log(`  ok ${id}: ${m.lessons.length} lessons, ${m.cards.length} cards, ${m.quiz.length} q, ${m.scenarios.length} scen${extNote}${warns.length ? ' (' + warns.length + ' warn)' : ''}`);
 }
@@ -48,6 +59,21 @@ if (fs.existsSync(refDir)) for (const f of fs.readdirSync(refDir).filter((x) => 
   if (errs.length) { problems++; log(`  x ref ${f}: ${errs.length} error(s)${strict ? '' : ' — skipped'}`); errs.slice(0, 3).forEach((e) => log('      ' + e)); if (!strict) continue; }
   reference.push(JSON.parse(fs.readFileSync(fp, 'utf8')));
 }
+const exams = [];
+const examDir = path.join(CONTENT, 'exams');
+if (fs.existsSync(examDir)) for (const f of fs.readdirSync(examDir).filter((x) => x.endsWith('.json')).sort()) {
+  const fp = path.join(examDir, f);
+  let x; try { x = JSON.parse(fs.readFileSync(fp, 'utf8')); } catch (e) { problems++; log(`  x exam ${f}: invalid JSON`); if (strict) continue; else continue; }
+  const partsDir = path.join(examDir, 'parts');
+  if (fs.existsSync(partsDir)) for (const pf of fs.readdirSync(partsDir).filter((n) => n.startsWith(x.id + '.part') && n.endsWith('.json')).sort()) {
+    try { const part = JSON.parse(fs.readFileSync(path.join(partsDir, pf), 'utf8')); x.questions = [...(x.questions || []), ...(part.questions || [])]; } catch (e) { log(`  ! exam part ${pf} is not valid JSON yet — skipped`); }
+  }
+  const { errs } = validateExam(x, fp);
+  if (errs.length) { problems++; log(`  x exam ${f}: ${errs.length} error(s)${strict ? '' : ' — skipped'}`); errs.slice(0, 3).forEach((e) => log('      ' + e)); if (!strict) continue; }
+  if (!x.questions.length) { log(`  - exam ${x.id}: no questions yet`); continue; }
+  exams.push(x);
+  log(`  ok exam ${x.id}: ${x.questions.length} questions in ${x.sections.length} sections`);
+}
 if (strict && problems) { log(`\nBuild failed: ${problems} content problem(s).`); process.exit(1); }
 
 // ---- content: a light index for navigation + one file per module, loaded on demand ----
@@ -58,6 +84,8 @@ const indexModules = modules.map((m) => ({
   counts: { cards: m.cards.length, quiz: m.quiz.length, scenarios: m.scenarios.length, minutes: m.lessons.reduce((a, l) => a + l.minutes, 0) },
 }));
 const moduleFiles = new Map(modules.map((m) => [m.id, 'window.ROUNDS_MODULES=window.ROUNDS_MODULES||{};window.ROUNDS_MODULES[' + JSON.stringify(m.id) + ']=' + JSON.stringify(m) + ';\n']));
+const indexExams = exams.map((x) => ({ id: x.id, title: x.title, blurb: x.blurb, minutes: x.minutes, count: x.count, sections: x.sections, pool: x.questions.length }));
+for (const x of exams) moduleFiles.set('exam-' + x.id, 'window.ROUNDS_MODULES=window.ROUNDS_MODULES||{};window.ROUNDS_MODULES[' + JSON.stringify('exam-' + x.id) + ']=' + JSON.stringify(x) + ';\n');
 
 // ---- build id from everything that ships ----
 const hash = crypto.createHash('sha1');
@@ -65,7 +93,7 @@ for (const [, js] of moduleFiles) hash.update(js);
 hash.update(JSON.stringify(reference));
 for (const f of fs.readdirSync(SRC).sort()) hash.update(fs.readFileSync(path.join(SRC, f)));
 const BUILD = hash.digest('hex').slice(0, 10);
-const indexObj = { version: new Date().toISOString().slice(0, 10) + '.' + BUILD.slice(0, 4), build: BUILD, tracks: manifest.tracks, modules: indexModules, reference };
+const indexObj = { version: new Date().toISOString().slice(0, 10) + '.' + BUILD.slice(0, 4), build: BUILD, tracks: manifest.tracks, modules: indexModules, reference, exams: indexExams };
 const indexJS = 'window.ROUNDS_INDEX=' + JSON.stringify(indexObj) + ';\n';
 
 // ---- dist ----

@@ -1,0 +1,2043 @@
+{
+  "schema": 1,
+  "extends": "pa-patho",
+  "lessons": [
+    {
+      "id": "pa-patho-l11",
+      "title": "Cancer biology and the cancers you will actually meet",
+      "minutes": 9,
+      "body": "## Two kinds of broken gene\n\nCancer is a disease of accumulated mutations in two opposite kinds of gene.\n\nAn **oncogene** is an accelerator stuck on. One damaged copy is enough, because gaining function needs only one hit. Examples: `RAS` in colon and pancreatic cancer, `HER2` in breast cancer, `BCR-ABL` in chronic myeloid leukemia, `EGFR` in lung adenocarcinoma.\n\nA **tumor suppressor** is a brake that has failed. Both copies must be lost, which is why these cancers run in families: an inherited first hit means only one more is needed. Examples: `p53`, the most commonly mutated gene in human cancer, `RB` in retinoblastoma, `BRCA1` and `BRCA2` in breast and ovarian cancer, `APC` in colon cancer.\n\n## The capabilities a cell must acquire\n\nA malignant cell has to solve several problems, and each solution is a drug target.\n\n1. Grow without being told to, and ignore signals to stop.\n2. Resist apoptosis, usually by disabling `p53`.\n3. Divide without limit by reactivating telomerase.\n4. Build its own blood supply through angiogenesis, which bevacizumab attacks.\n5. Hide from immune cells, often by displaying PD-L1, which checkpoint inhibitors block.\n6. Invade through the basement membrane and metastasize.\n\n> **Key:** Progression is stepwise and takes years: normal tissue, then hyperplasia, then dysplasia, then carcinoma in place, then invasion. Screening exists because every step before invasion is either reversible or curable, and the colon is the model — an adenomatous polyp removed at colonoscopy is a cancer that never happens.\n\n## Where each cancer goes\n\nMetastasis is not random. Blood from the colon drains through the portal vein, so colon cancer seeds the liver. Prostate cancer spreads through vertebral veins to bone and makes dense, bone-building lesions. Lung cancer goes to brain, bone, adrenal, and liver. Breast cancer goes to bone, lung, liver, and brain.\n\n| Cancer | Who | Presentation that matters |\n|---|---|---|\n| Lung | smokers; small cell and non-small cell | cough, weight loss, hemoptysis; small cell causes SIADH and squamous cell causes hypercalcemia through PTH-related peptide |\n| Breast | women, `BRCA` carriers | painless firm mass, skin dimpling, nipple change; typed by estrogen, progesterone, and HER2 receptors |\n| Colorectal | age over `45`, family history, inflammatory bowel disease | right-sided bleeds silently and causes iron deficiency anemia, left-sided obstructs |\n| Prostate | older men | often silent; bone pain and back pain from vertebral metastases |\n| Pancreatic | smokers, chronic pancreatitis | painless jaundice with a palpable non-tender gallbladder, weight loss, new diabetes |\n| Cervical | HPV types `16` and `18` | abnormal bleeding; almost entirely preventable by vaccination and screening |\n\n> **Trap:** Iron deficiency anemia in a man or a postmenopausal woman is colon cancer until a colonoscopy says otherwise. The tumor bleeds a teaspoon a day, which is invisible in the toilet and obvious in the ferritin.\n\n## Paraneoplastic syndromes\n\nSome tumors secrete hormones, which is why the first sign of cancer can be a chemistry panel. Small cell lung cancer makes antidiuretic hormone (hyponatremia) or ACTH (Cushing syndrome). Squamous cell cancers make PTH-related peptide (hypercalcemia). Myeloma causes hypercalcemia by eating bone directly. Lambert-Eaton syndrome, weakness that improves with repeated effort, is an antibody attack triggered by small cell lung cancer.\n\n## Stage and grade are different questions\n\n**Grade** describes how abnormal the cells look under the microscope. **Stage** describes how far the disease has travelled, using TNM: tumor size, nodes involved, metastasis present. Stage drives prognosis and treatment far more than grade does, which is why a small, ugly tumor may be curable and a large, bland one with liver metastases is not.",
+      "keyPoints": [
+        "Oncogenes are accelerators needing one hit; tumor suppressors are brakes needing both copies lost, which is why they run in families.",
+        "Progression is normal, hyperplasia, dysplasia, carcinoma in place, invasion — screening works because every earlier step is treatable.",
+        "Metastasis follows drainage: colon to liver by the portal vein, prostate to bone, lung to brain, bone, adrenal, and liver.",
+        "Iron deficiency anemia in a man or postmenopausal woman is colon cancer until colonoscopy proves otherwise.",
+        "Paraneoplastic syndromes mean a chemistry panel can be the first sign: SIADH and ectopic ACTH from small cell, hypercalcemia from squamous cell."
+      ],
+      "checks": [
+        {
+          "q": "A 64-year-old man has a hemoglobin of 9.1 g/dL, a ferritin of 8 ng/mL, and no visible bleeding. What is the required next step?",
+          "choices": [
+            "Start oral iron and recheck in 3 months",
+            "Colonoscopy to exclude colorectal cancer",
+            "Reassure; this is common at his age",
+            "Check a vitamin B12 level"
+          ],
+          "answer": 1,
+          "why": "Iron deficiency in a man means chronic occult blood loss, and the colon is the source until proven otherwise. Right-sided colon cancers bleed slowly and silently. Iron alone treats the number and ignores the cause, and B12 deficiency causes a macrocytic, not microcytic, anemia."
+        },
+        {
+          "q": "A patient with small cell lung cancer has a sodium of 118 mEq/L with concentrated urine and normal volume status. What is the mechanism?",
+          "choices": [
+            "Tumor secretion of antidiuretic hormone causing water retention",
+            "Tumor secretion of PTH-related peptide",
+            "Bone destruction releasing calcium",
+            "Loss of sodium through the kidney from tumor invasion"
+          ],
+          "answer": 0,
+          "why": "Small cell lung cancer classically secretes antidiuretic hormone, producing SIADH: euvolemic hyponatremia with inappropriately concentrated urine. PTH-related peptide comes from squamous cell cancers and causes hypercalcemia, not hyponatremia."
+        },
+        {
+          "q": "Why do tumor suppressor gene syndromes such as BRCA cluster in families while most oncogene mutations do not?",
+          "choices": [
+            "Tumor suppressors are only found in reproductive tissue",
+            "An inherited first hit means only one further mutation is needed to lose both copies",
+            "Oncogenes cannot be inherited at all",
+            "Tumor suppressor mutations are always present at birth in every cell of every person"
+          ],
+          "answer": 1,
+          "why": "Tumor suppressors require loss of both copies. Inheriting one damaged copy means every cell already has the first hit, so cancer risk is dramatically higher and appears earlier. Oncogenes need only one hit but that hit is usually acquired somatically."
+        }
+      ]
+    },
+    {
+      "id": "pa-patho-l12",
+      "title": "Autoimmune disease: when the immune system reads self as foreign",
+      "minutes": 9,
+      "body": "## Tolerance and how it breaks\n\nThe immune system learns not to attack the body twice. **Central tolerance** deletes self-reactive lymphocytes as they mature in the thymus and bone marrow. **Peripheral tolerance** catches the escapees with regulatory T cells and by shutting down cells that see an antigen without a danger signal.\n\nAutoimmunity begins when both filters fail. Three mechanisms explain most of it.\n\n- **Molecular mimicry**: a microbe wears a protein that resembles a human one. Streptococcal M protein resembles cardiac myosin, so antibodies made against a sore throat attack the heart valves two weeks later. That is rheumatic fever. Campylobacter surface sugars resemble peripheral nerve myelin, which is how Guillain-Barre syndrome follows gastroenteritis.\n- **Cryptic antigen release**: tissue that was never shown to the immune system is exposed by injury or infection.\n- **Loss of regulation**: regulatory T cells fail, or a viral infection provides the danger signal that wakes up a self-reactive cell that had been ignored.\n\nGenetics loads the gun, usually through HLA type, and an environmental trigger fires it. Most autoimmune disease is far more common in women.\n\n## The four hypersensitivity types\n\n| Type | Mediator | Timing | Examples |\n|---|---|---|---|\n| I | IgE on mast cells | minutes | anaphylaxis, allergic asthma, hay fever |\n| II | antibody against a cell surface | hours to days | immune thrombocytopenia, autoimmune hemolytic anemia, Graves disease, myasthenia gravis, Goodpasture |\n| III | antigen-antibody complexes deposited in tissue | days | lupus, serum sickness, post-streptococcal glomerulonephritis |\n| IV | T cells, no antibody | `48-72` hours | contact dermatitis, tuberculin skin test, Stevens-Johnson syndrome, transplant rejection |\n\n> **Key:** Type II attacks a specific cell. Type III makes complexes that float and lodge wherever filtration happens, which is why lupus hits kidney, skin, and joints at once. Type IV is the only one with no antibody at all, and it is why a rash appears days after a drug rather than minutes.\n\n## The diseases to recognize\n\n**Lupus** is the model immune complex disease. Antinuclear antibody is sensitive but not specific; anti-double-stranded DNA and anti-Smith are specific. Lupus nephritis drives most of the mortality, and antiphospholipid antibodies paradoxically cause clotting with a prolonged PTT.\n\n**Rheumatoid arthritis** is synovial inflammation that grows an invasive tissue (pannus) which erodes cartilage and bone. Symmetric small joints of hands and feet, morning stiffness lasting more than an hour that improves with use, and anti-CCP antibodies. Osteoarthritis is the opposite pattern: asymmetric, worse with use, brief stiffness, no systemic features.\n\n**Graves disease** is a type II antibody that stimulates rather than destroys the TSH receptor. **Hashimoto thyroiditis** is the destructive version with anti-thyroid peroxidase antibodies. **Type 1 diabetes** is T-cell destruction of pancreatic beta cells.\n\n**Myasthenia gravis** is antibodies against the acetylcholine receptor, so the signal fades with repetition: ptosis and double vision that worsen through the day and with sustained upward gaze. In a crisis the danger is respiratory muscle failure, and oxygen saturation stays normal until the patient is nearly apneic, so bedside vital capacity and negative inspiratory force are what get measured.\n\n**Giant cell arteritis** is a vasculitis of medium and large arteries in patients over `50`: new headache, scalp tenderness, jaw pain while chewing, and a markedly raised ESR. Vision loss can be permanent within hours, so steroids are started before the temporal artery biopsy, not after.\n\n> **On shift:** Any patient on chronic steroids, methotrexate, or a biologic has a blunted fever and a muted examination. Infection in these patients looks milder than it is, and that is exactly why it kills them.",
+      "keyPoints": [
+        "Autoimmunity is failed central and peripheral tolerance, usually triggered by molecular mimicry in a genetically primed person.",
+        "Type I is IgE in minutes, type II is antibody against a cell, type III is immune complexes, type IV is T cells at 48-72 hours.",
+        "Anti-double-stranded DNA and anti-Smith are specific for lupus; anti-CCP is specific for rheumatoid arthritis.",
+        "Myasthenic crisis is measured with vital capacity and negative inspiratory force, because saturation stays normal until near-apnea.",
+        "Giant cell arteritis gets steroids before the biopsy, because vision loss becomes permanent within hours."
+      ],
+      "checks": [
+        {
+          "q": "Two weeks after untreated streptococcal pharyngitis, a child develops a new murmur, migratory arthritis, and fever. What is the mechanism?",
+          "choices": [
+            "Direct bacterial invasion of the heart valve",
+            "Molecular mimicry between streptococcal M protein and cardiac myosin",
+            "IgE-mediated mast cell degranulation",
+            "Toxin-mediated tissue destruction"
+          ],
+          "answer": 1,
+          "why": "Rheumatic fever is antibody cross-reaction: M protein resembles cardiac myosin, so antibodies raised against the streptococcus attack the heart. Direct invasion would be endocarditis with positive blood cultures, and IgE and toxins act within minutes to hours, not two weeks."
+        },
+        {
+          "q": "A 34-year-old with myasthenia gravis has worsening weakness and a normal oxygen saturation on room air. What determines the need for intubation?",
+          "choices": [
+            "Pulse oximetry below 90%",
+            "Forced vital capacity and negative inspiratory force trends",
+            "Peak expiratory flow rate",
+            "Arterial oxygen tension alone"
+          ],
+          "answer": 1,
+          "why": "Neuromuscular respiratory failure is a pump problem; saturation and oxygen tension stay normal until the patient is nearly apneic, so waiting for desaturation means waiting too long. Serial vital capacity and negative inspiratory force detect the decline early. Peak flow measures airway obstruction, not muscle strength."
+        },
+        {
+          "q": "Which hypersensitivity type explains a rash that appears three days after starting an antibiotic?",
+          "choices": [
+            "Type I, IgE-mediated",
+            "Type II, antibody against a cell surface",
+            "Type III, immune complex",
+            "Type IV, T-cell mediated"
+          ],
+          "answer": 3,
+          "why": "A delay of days points to T-cell recruitment, which is type IV; this is the mechanism behind most drug rashes including Stevens-Johnson syndrome. Type I reactions occur within minutes, type II targets specific cells such as platelets, and type III produces serum sickness with fever, arthralgia, and rash on a different timeline."
+        }
+      ]
+    },
+    {
+      "id": "pa-patho-l13",
+      "title": "Inherited disease you will meet in the emergency department",
+      "minutes": 9,
+      "body": "## Four inheritance patterns, recognized by shape\n\n**Autosomal dominant** disease appears in every generation and each child of an affected parent has a `50%` chance. Dominant conditions usually involve structural proteins: Marfan syndrome, hypertrophic cardiomyopathy, polycystic kidney disease, Huntington disease, familial hypercholesterolemia, and most congenital long QT syndromes.\n\n**Autosomal recessive** disease skips generations and appears in siblings of unaffected carriers. Recessive conditions usually involve enzymes: cystic fibrosis, sickle cell disease, thalassemia, phenylketonuria.\n\n**X-linked recessive** disease affects males, is passed through unaffected carrier mothers, and never goes father to son: hemophilia A and B, G6PD deficiency, Duchenne muscular dystrophy.\n\n**Mitochondrial** disease passes only from the mother, because sperm contribute no mitochondria.\n\nTwo words explain why families do not look identical. **Penetrance** is the fraction of people with the gene who show the disease. **Expressivity** is how severely it shows.\n\n## Sickle cell disease\n\nA single amino acid swap at position `6` of the beta-globin chain produces hemoglobin S. When deoxygenated, hemoglobin S polymerizes into rigid rods that deform the red cell into a crescent. Those cells are stiff, sticky, and short-lived, so the patient has both **vaso-occlusion** and **chronic hemolysis**.\n\nRepeated splenic infarction leaves the patient functionally asplenic by early childhood, so encapsulated organisms become lethal: pneumococcus, Haemophilus influenzae, meningococcus, and Salmonella in bone.\n\n| Crisis | What is happening |\n|---|---|\n| Vaso-occlusive | microvascular obstruction causing bone and chest pain |\n| Acute chest syndrome | new infiltrate plus fever or hypoxia; the leading cause of death |\n| Splenic sequestration | blood trapped in the spleen; sudden anemia with a big spleen, in young children |\n| Aplastic | parvovirus B19 shuts off red cell production; reticulocyte count falls to zero |\n| Stroke | large-vessel occlusion, most common between ages `2` and `10` |\n\n> **Key:** Fever in sickle cell disease is a medical emergency, not a viral illness. A functionally asplenic patient can go from a temperature to overwhelming sepsis in hours, and blood cultures plus ceftriaxone come before anything else.\n\n## Hemophilia\n\nHemophilia A is missing factor VIII, hemophilia B is missing factor IX. Both are X-linked, both prolong the PTT while leaving the PT and the platelet count normal, and both cause deep bleeding into joints and muscle rather than the petechiae of a platelet problem.\n\n> **Trap:** In a hemophilia patient with a head injury, factor replacement goes in before the CT scan, not after. The imaging does not change the treatment and the delay does.\n\n## Marfan syndrome\n\nA mutation in the fibrillin-1 gene weakens the connective tissue scaffolding of the aorta, the eye, and the lung. Tall stature, long fingers, an arm span greater than height, a lens that dislocates upward, and joint laxity. The aortic root dilates over years and then tears: Marfan patients present with type A aortic dissection at an age when nobody expects it, and with spontaneous pneumothorax.\n\n## The channelopathies\n\nCongenital long QT syndrome is a potassium or sodium channel mutation that delays repolarization. The story is syncope or sudden death during exertion, emotion, or a startling noise such as an alarm clock, plus a family history of young sudden death or of drowning in a strong swimmer. Torsades de pointes is the arrhythmia. Management is avoiding every QT-prolonging drug, beta blockade, and often an implanted defibrillator. Brugada syndrome and hypertrophic cardiomyopathy are the other inherited causes of sudden death in the young.\n\n## Two more worth recognizing\n\n**G6PD deficiency** leaves red cells unable to handle oxidative stress, so sulfonamides, nitrofurantoin, primaquine, or fava beans trigger sudden hemolysis with bite cells on the smear.\n\n**Hereditary angioedema** is C1 esterase inhibitor deficiency. Swelling of face, airway, or bowel with no hives and no itch, unresponsive to epinephrine, steroids, and antihistamines, because the mediator is bradykinin rather than histamine.",
+      "keyPoints": [
+        "Dominant conditions damage structural proteins and appear every generation; recessive conditions damage enzymes and skip generations.",
+        "Sickle hemoglobin polymerizes when deoxygenated, causing both vaso-occlusion and hemolysis, with functional asplenia by childhood.",
+        "Fever in sickle cell disease is an emergency: cultures and ceftriaxone before anything else.",
+        "Hemophilia prolongs the PTT with a normal PT and platelet count, and head injury gets factor before imaging.",
+        "Marfan syndrome causes type A aortic dissection in young patients; congenital long QT causes syncope with exertion or startle."
+      ],
+      "checks": [
+        {
+          "q": "A 9-year-old with sickle cell disease has a temperature of 38.9 C and looks well. What is the correct approach?",
+          "choices": [
+            "Treat as a viral illness with antipyretics and discharge",
+            "Blood cultures and ceftriaxone promptly, because functional asplenia allows rapid overwhelming sepsis",
+            "Wait for the white count before deciding",
+            "Give a fluid bolus and reassess in 6 hours"
+          ],
+          "answer": 1,
+          "why": "Repeated splenic infarction leaves these children functionally asplenic, so encapsulated organisms can produce fulminant sepsis within hours. Cultures and an immediate third-generation cephalosporin are standard. A well appearance and a normal white count do not exclude early bacteremia."
+        },
+        {
+          "q": "A 16-year-old boy with hemophilia A falls and strikes his head. He is alert with a normal examination. What happens first?",
+          "choices": [
+            "CT head, then factor VIII if bleeding is seen",
+            "Factor VIII replacement immediately, then CT head",
+            "Observation for 6 hours",
+            "Platelet transfusion"
+          ],
+          "answer": 1,
+          "why": "Intracranial bleeding in hemophilia can be catastrophic and the CT result does not change the need for factor. Replacement goes first and imaging follows. Platelets are normal in hemophilia, so transfusing them does nothing."
+        },
+        {
+          "q": "A tall 24-year-old with long fingers and an upward-dislocated lens has sudden tearing chest pain radiating to the back. What is the most likely diagnosis?",
+          "choices": [
+            "Spontaneous pneumothorax",
+            "Type A aortic dissection from Marfan syndrome",
+            "Acute coronary syndrome",
+            "Costochondritis"
+          ],
+          "answer": 1,
+          "why": "Fibrillin-1 mutation weakens the aortic media, so Marfan patients dissect decades earlier than the general population. Tearing pain radiating to the back in a young Marfan patient is dissection until excluded. Pneumothorax also occurs in Marfan but causes pleuritic pain and breathlessness rather than tearing pain."
+        }
+      ]
+    },
+    {
+      "id": "pa-patho-l14",
+      "title": "How each common infection actually damages tissue",
+      "minutes": 9,
+      "body": "## Pneumonia: an alveolus full of the wrong thing\n\nOrganisms reach the alveoli by inhalation or micro-aspiration. Neutrophils flood in, capillaries leak, and the air sac fills with exudate. That lung segment is still perfused but no longer ventilated, which is a shunt, and shunt is why a lobar pneumonia makes a patient hypoxemic in a way that extra oxygen only partly fixes.\n\n**Typical** pneumonia (Streptococcus pneumoniae) fills a whole lobe with pus: abrupt fever, rigors, rusty sputum, dense consolidation. **Atypical** pneumonia (Mycoplasma, Legionella, Chlamydia, viruses) inflames the interstitium between alveoli instead, producing a dry cough, a patient who looks better than the film, and no response to beta-lactams because Mycoplasma has no cell wall to attack.\n\nAspiration follows gravity into dependent segments: the right lower lobe when upright, the right upper lobe posterior segment when supine. Complications escalate in order: parapneumonic effusion, then infected effusion (empyema) which must be drained, then lung abscess.\n\n## Urinary tract: an ascending problem\n\nUropathogenic E. coli carries P fimbriae that grip the urothelium against the flow of urine. Cystitis is surface inflammation of the bladder: burning, frequency, no fever. Once organisms ascend the ureter and invade kidney tissue, it becomes pyelonephritis: fever, flank pain, vomiting, and white blood cell casts in the urine, which prove the infection is in the kidney rather than the bladder.\n\nObstruction turns infection into an emergency. A stone above an infected kidney creates a closed, pressurized abscess that antibiotics cannot sterilize, and bacteria are forced into the bloodstream. Catheters add a biofilm the immune system cannot reach.\n\n## Meningitis: the damage is the response\n\nOrganisms cross into cerebrospinal fluid, a space with almost no resident immune defense, and multiply freely. The immune response that follows is what injures the brain: cytokines break down the blood-brain barrier, fluid leaks into brain tissue (vasogenic edema), intracranial pressure rises, and cerebral perfusion falls.\n\n| Finding | Bacterial | Viral |\n|---|---|---|\n| Opening pressure | high | normal or slightly high |\n| White cells | thousands, neutrophils | tens to hundreds, lymphocytes |\n| Glucose | low, under two thirds of serum | normal |\n| Protein | high | normal or mildly high |\n\n> **Key:** Dexamethasone is given before or with the first antibiotic because killing bacteria releases a burst of cell wall fragments that intensifies inflammation. Blunting that burst reduces hearing loss and death. Given afterward it is too late to matter.\n\n## Endocarditis: a clot that got infected\n\nTurbulent flow across an abnormal valve strips endothelium, and platelets and fibrin form a sterile clot on the damaged spot. When bacteria pass through the blood they stick to that clot and grow inside it, shielded from neutrophils by layers of fibrin. That is why endocarditis needs weeks of intravenous antibiotics rather than days.\n\nStaphylococcus aureus is aggressive and attacks normal valves; viridans streptococci from the mouth colonize already-damaged ones slowly. Injection drug use seeds the tricuspid valve, sending septic emboli to the lungs. The peripheral signs split into two mechanisms: Janeway lesions are painless and embolic, Osler nodes are painful and immune-complex driven.\n\n## From cellulitis to necrotizing fasciitis\n\nCellulitis is streptococcal infection spreading through the dermis and superficial lymphatics, which is why the border is indistinct and the limb is uniformly red and warm.\n\nNecrotizing infection travels along the fascial plane instead, thrombosing the small vessels that perforate up to the skin. That single fact explains the whole presentation: the deep tissue is dying while the skin still looks nearly normal, the cutaneous nerves die so the skin becomes numb, and the pain is far worse than the appearance justifies. Gas appears when anaerobes are involved. Antibiotics cannot reach dead, avascular tissue, so surgery is the treatment.\n\n## Sepsis, second pass\n\nBeyond the cytokine storm, three mechanisms explain why septic patients fail to improve with pressure alone. The **glycocalyx**, a sugar layer lining the endothelium, is shed, which makes capillaries leak and platelets stick. The **microcirculation** becomes heterogeneous, so some capillaries are plugged while others shunt blood past tissue, which is why central venous oxygen saturation can be high while cells suffocate. And **mitochondria** themselves stop using oxygen efficiently. Late in sepsis the pendulum swings to immune suppression, and the patient who survived the first week dies of a second infection in the third.",
+      "keyPoints": [
+        "Consolidated lung is perfused but unventilated, which is a shunt, so pneumonia hypoxemia responds poorly to oxygen alone.",
+        "White blood cell casts prove the infection is in kidney tissue; obstruction above infection is a drainage emergency.",
+        "In meningitis the cytokine response causes the brain injury, which is why dexamethasone precedes the first antibiotic.",
+        "Endocarditis begins as a sterile platelet-fibrin clot that bacteria colonize and fibrin then shields from neutrophils.",
+        "Necrotizing infection thromboses perforating vessels, producing numb skin and pain out of proportion over dying fascia."
+      ],
+      "checks": [
+        {
+          "q": "A patient with dense right lower lobe consolidation has a saturation of 86% that improves only to 90% on a non-rebreather. What explains this?",
+          "choices": [
+            "Hypoventilation from pain",
+            "Shunt: blood perfuses alveoli that are filled and cannot be ventilated",
+            "Carbon monoxide poisoning",
+            "Anemia limiting oxygen content"
+          ],
+          "answer": 1,
+          "why": "Filled alveoli cannot exchange gas, so blood flowing past them never meets the supplemental oxygen. This is shunt physiology, the form of V/Q mismatch that responds poorly to increasing FiO2. Hypoventilation would raise carbon dioxide and correct readily with oxygen."
+        },
+        {
+          "q": "Why must dexamethasone be given before or with the first antibiotic dose in bacterial meningitis?",
+          "choices": [
+            "It prevents antibiotic allergy",
+            "It improves antibiotic penetration into cerebrospinal fluid",
+            "Bacterial killing releases cell wall fragments that worsen inflammation, and blunting that burst reduces hearing loss and death",
+            "It treats the fever, allowing the antibiotic to work"
+          ],
+          "answer": 2,
+          "why": "Lysing bacteria dump inflammatory fragments into the cerebrospinal fluid, intensifying the cytokine response that damages the brain. Steroids given first blunt that surge. Steroids actually reduce cerebrospinal fluid penetration of vancomycin slightly, and they have nothing to do with allergy."
+        },
+        {
+          "q": "A diabetic patient has a red leg with pain far out of proportion to the appearance, a patch of skin that feels numb, and a rising lactate. What is the diagnosis and the treatment?",
+          "choices": [
+            "Cellulitis; oral cephalexin",
+            "Necrotizing fasciitis; emergency surgical debridement with broad antibiotics",
+            "Deep vein thrombosis; anticoagulation",
+            "Contact dermatitis; topical steroid"
+          ],
+          "answer": 1,
+          "why": "Pain out of proportion with cutaneous anesthesia reflects thrombosed perforating vessels and dying nerves over infected fascia. Antibiotics cannot penetrate avascular necrotic tissue, so surgery is the definitive treatment. Cellulitis is tender but not anesthetic, and deep vein thrombosis does not cause skin numbness or lactate elevation."
+        }
+      ]
+    },
+    {
+      "id": "pa-patho-l15",
+      "title": "Neurologic pathophysiology: degeneration, demyelination, and pressure",
+      "minutes": 9,
+      "body": "## The dementias are not one disease\n\n| Type | Mechanism | Recognizable pattern |\n|---|---|---|\n| Alzheimer | amyloid plaques outside cells and tau tangles inside them, starting in the hippocampus | gradual memory loss first, then language and orientation |\n| Vascular | accumulated small infarcts | stepwise decline with focal deficits and vascular risk factors |\n| Lewy body | alpha-synuclein deposits | fluctuating attention, detailed visual hallucinations, parkinsonism, severe sensitivity to antipsychotics |\n| Frontotemporal | frontal and temporal lobe degeneration | personality and behavior change first, often before age `65`, memory relatively spared |\n\n> **Trap:** Never give haloperidol to a patient with Lewy body dementia. The sensitivity is not a mild side effect; it can produce severe rigidity, autonomic instability, and death. Quetiapine is the usual alternative.\n\nDelirium is the one that must not be missed: acute onset, fluctuating course, and inattention, almost always caused by something outside the brain. Dementia is slow and stable from hour to hour; delirium changes within a shift.\n\n## Parkinson disease\n\nDopamine-producing neurons in the substantia nigra die, taking away the signal that smooths and initiates movement. Symptoms do not appear until roughly `60%` to `80%` of those neurons are gone, which is why the disease is always older than the diagnosis. The retained cells contain alpha-synuclein clumps called Lewy bodies.\n\nThe four signs are a resting tremor that disappears with movement, cogwheel rigidity, slowness and poverty of movement, and late postural instability with falls.\n\nTwo practical consequences. Levodopa-carbidopa must not be interrupted; abrupt withdrawal can produce a syndrome of rigidity and fever resembling neuroleptic malignant syndrome. And dopamine-blocking drugs make Parkinson disease acutely worse, so metoclopramide, prochlorperazine, and haloperidol are avoided in favor of ondansetron and quetiapine.\n\n## Multiple sclerosis\n\nT cells cross into the central nervous system and attack myelin made by oligodendrocytes. Conduction slows or fails along the stripped axon, producing deficits that are separated in space and in time, which is the diagnostic idea.\n\nCharacteristic findings: optic neuritis with painful vision loss and a relative afferent pupillary defect; internuclear ophthalmoplegia from a lesion between the eye movement nuclei; an electric shock down the spine on neck flexion; and worsening of old symptoms whenever the patient is hot, from a fever, exercise, or a bath, because warm axons conduct even worse. MRI shows plaques and the cerebrospinal fluid shows oligoclonal bands. An acute relapse is treated with high-dose steroids.\n\n## Migraine\n\nMigraine is a brain excitability disorder, not a vascular spasm. A slow wave of neuronal depolarization followed by suppression creeps across the cortex at about `3 mm` per minute, which is exactly the speed of a visual aura spreading across the field. That wave activates the trigeminal nerve endings around the meningeal vessels, which release calcitonin gene-related peptide (CGRP) and other peptides, producing neurogenic inflammation, vasodilation, and pain.\n\nRepeated activation sensitizes the system centrally, which is why the scalp hurts to touch and why treatment given late works poorly. Triptans act on serotonin receptors to shut off peptide release; CGRP blockers target the peptide directly. In the emergency department the effective agents are dopamine antagonists such as metoclopramide or prochlorperazine, often with diphenhydramine to prevent akathisia, plus ketorolac and fluids. Opioids work badly and make the next migraine harder to treat.\n\n## Pressure in a closed box\n\nThe skull holds brain, blood, and cerebrospinal fluid in a fixed volume, so adding anything means displacing something else. Cerebrospinal fluid and venous blood buffer the first additions, which is why intracranial pressure stays nearly flat as a bleed grows, and then rises steeply once the buffers are spent. Small additional volume then produces enormous pressure change.\n\nWhat the brain needs is perfusion pressure, which is mean arterial pressure minus intracranial pressure. The targets are intracranial pressure under about `22 mmHg` and cerebral perfusion pressure between `60` and `70 mmHg`. That equation explains why a single episode of hypotension is so damaging in head injury.\n\nThe Cushing reflex is the late warning: rising blood pressure, falling heart rate, and irregular breathing, as the body raises pressure to keep perfusing a squeezed brain. Uncal herniation pushes the temporal lobe against the third cranial nerve, giving a dilated pupil on the same side and weakness on the opposite side; tonsillar herniation compresses the brainstem and stops breathing.\n\n> **Key:** The immediate measures are head of bed to `30` degrees with the neck straight, normal carbon dioxide rather than aggressive hyperventilation, avoiding hypotension and hypoxia at all costs, and hypertonic saline or mannitol to pull water out of brain tissue.",
+      "keyPoints": [
+        "Alzheimer starts with memory, vascular declines in steps, Lewy body brings hallucinations and antipsychotic sensitivity, frontotemporal changes behavior first.",
+        "Parkinson symptoms appear only after 60-80% of substantia nigra neurons are lost; never interrupt levodopa or give dopamine blockers.",
+        "Multiple sclerosis is demyelination separated in space and time, worsened by heat, with oligoclonal bands in the spinal fluid.",
+        "Migraine is cortical spreading depression activating the trigeminovascular system and releasing CGRP, not a vascular spasm.",
+        "Cerebral perfusion pressure equals mean arterial pressure minus intracranial pressure; hypotension in head injury is as harmful as the pressure itself."
+      ],
+      "checks": [
+        {
+          "q": "An 80-year-old with fluctuating confusion and vivid visual hallucinations becomes agitated. Which medication is dangerous?",
+          "choices": [
+            "Quetiapine",
+            "Haloperidol",
+            "Lorazepam",
+            "Ondansetron"
+          ],
+          "answer": 1,
+          "why": "Fluctuating cognition with detailed visual hallucinations suggests Lewy body dementia, where dopamine blockade can cause severe rigidity, autonomic instability, and death. Quetiapine is the usual alternative. Lorazepam has its own risks in the elderly but not this specific catastrophic sensitivity."
+        },
+        {
+          "q": "A patient with a large intracranial hemorrhage has an intracranial pressure of 30 mmHg and a mean arterial pressure of 80 mmHg. What is the cerebral perfusion pressure and why does it matter?",
+          "choices": [
+            "`110 mmHg`, which is dangerously high",
+            "`50 mmHg`, which is below the target of 60-70 and risks ischemia",
+            "`30 mmHg`, equal to the intracranial pressure",
+            "It cannot be calculated without the intracranial volume"
+          ],
+          "answer": 1,
+          "why": "Cerebral perfusion pressure is mean arterial pressure minus intracranial pressure, so 80 minus 30 is 50 mmHg. That is below the 60 to 70 mmHg target, meaning the brain is underperfused. This equation is also why hypotension is so damaging in head injury."
+        },
+        {
+          "q": "A patient with multiple sclerosis reports that her old right leg weakness returns every time she takes a hot bath or runs a fever. What explains this?",
+          "choices": [
+            "A new demyelinating lesion forms with each temperature rise",
+            "Heat further impairs conduction along already demyelinated axons",
+            "Fever causes cerebral edema",
+            "Hot water lowers serum sodium"
+          ],
+          "answer": 1,
+          "why": "Demyelinated axons conduct marginally, and raising temperature reduces conduction further, so old deficits reappear without new damage. This is why a febrile multiple sclerosis patient may look like a relapse but is not, and cooling plus treating the fever restores the baseline."
+        }
+      ]
+    },
+    {
+      "id": "pa-patho-l16",
+      "title": "Renal and endocrine second pass: the glomerulus, the diabetic, and the thyroid",
+      "minutes": 9,
+      "body": "## Two ways a glomerulus fails\n\nThe glomerulus is a filter with a charged, porous membrane. It can fail by becoming too leaky to protein, or by becoming inflamed and leaking blood. Those are the nephrotic and nephritic syndromes, and telling them apart is a single urine dipstick away.\n\n| | Nephrotic | Nephritic |\n|---|---|---|\n| Core lesion | podocyte injury, filter leaks protein | glomerular inflammation, filter leaks blood |\n| Urine | protein over `3.5 g/day`, frothy, bland sediment | red blood cells and **red cell casts**, mild protein |\n| Blood pressure | normal or low | high |\n| Volume | heavy edema, periorbital in the morning | oliguria and fluid retention |\n| Classic causes | minimal change in children, focal segmental sclerosis, membranous, diabetic nephropathy, amyloid | post-streptococcal, IgA nephropathy, anti-GBM disease, ANCA vasculitis, lupus nephritis |\n\nNephrotic syndrome has three consequences that follow from losing protein in the urine: low albumin causes edema, the liver compensates by making lipoproteins so cholesterol rises, and antithrombin III is lost in the urine so the patient clots, classically in the renal vein.\n\n> **Key:** Red cell casts are made in the tubule and can only come from the glomerulus. Their presence means the bleeding is renal, not from a stone or the bladder, and it turns a hematuria workup into a nephrology emergency.\n\nIgA nephropathy and post-streptococcal glomerulonephritis are separated by timing. IgA nephropathy produces visible blood in the urine `1` to `2` days after a sore throat begins; post-streptococcal disease appears `1` to `3` weeks after the infection has resolved.\n\n## What chronic glucose does to vessels\n\nHigh glucose damages tissue through three linked pathways: glucose sticks irreversibly to proteins to form advanced glycation end products, excess glucose is shunted into sorbitol which draws water into nerve and lens, and protein kinase C activation thickens basement membranes.\n\n**Microvascular** damage hits places with no autoregulation. Retinopathy progresses from microaneurysms to new fragile vessels that bleed. Nephropathy begins with hyperfiltration, then microalbuminuria, then overt proteinuria and falling filtration. Neuropathy starts in the longest nerves, giving a stocking-glove loss that lets a patient walk on a foreign body for days.\n\n**Macrovascular** damage is accelerated atherosclerosis: heart attack, stroke, and peripheral arterial disease. Autonomic neuropathy means the heart attack can be silent, presenting as breathlessness, fatigue, or vomiting with no chest pain at all.\n\nA diabetic foot ulcer is three failures at once: neuropathy removes the warning, arterial disease removes the healing, and impaired white cell function removes the defense.\n\n## The thyroid at both ends\n\nThyroid hormone sets the metabolic rate of every cell. The pituitary releases TSH, the thyroid releases mostly T4, and tissues convert it to the active T3. Feedback means a **low TSH with high T4** is primary hyperthyroidism and a **high TSH with low T4** is primary hypothyroidism.\n\nGraves disease is an antibody that stimulates the TSH receptor, adding a diffuse goiter and eye protrusion. A toxic nodule or thyroiditis produces the same hormone excess without the eye findings.\n\n**Thyroid storm** is decompensated hyperthyroidism, almost always triggered by infection, surgery, trauma, or an iodine load. Fever above `38.5 C`, tachycardia or atrial fibrillation out of proportion to the fever, agitation or delirium, vomiting and diarrhea, and heart failure. Treatment blocks the pathway at four points: a beta blocker for the adrenergic storm, a thionamide to stop hormone synthesis, iodine given at least an hour after the thionamide to stop release, and steroids to block peripheral conversion.\n\n> **Trap:** Iodine given before the thionamide feeds the gland fresh substrate and makes the storm worse. The order matters.\n\n**Myxedema coma** is the opposite emergency: hypothermia, bradycardia, hypoventilation with carbon dioxide retention, hyponatremia, and depressed consciousness in an older patient in winter. Treatment is intravenous levothyroxine plus hydrocortisone, because unrecognized adrenal insufficiency alongside it is common and thyroid hormone alone can precipitate crisis.\n\n## Adrenal failure\n\nPrimary adrenal insufficiency destroys the whole gland, so both cortisol and aldosterone are lost: hyponatremia, hyperkalemia, hypotension, and skin darkening from the ACTH precursor. Secondary insufficiency, usually from abruptly stopping chronic steroids, spares aldosterone, so potassium stays normal and there is no hyperpigmentation. Either can decompensate into adrenal crisis under stress, and the treatment is hydrocortisone `100 mg` IV plus fluid and glucose.",
+      "keyPoints": [
+        "Nephrotic leaks protein over 3.5 g/day with bland sediment; nephritic leaks blood with red cell casts and hypertension.",
+        "Nephrotic syndrome clots because antithrombin III is lost in the urine, classically causing renal vein thrombosis.",
+        "IgA nephropathy appears 1-2 days after a sore throat starts; post-streptococcal disease appears 1-3 weeks after it ends.",
+        "Diabetic autonomic neuropathy makes myocardial infarction silent, presenting as breathlessness, fatigue, or vomiting.",
+        "In thyroid storm the thionamide must precede iodine by at least an hour, or the iodine fuels more hormone synthesis."
+      ],
+      "checks": [
+        {
+          "q": "A 30-year-old has cola-colored urine, a blood pressure of 168/96, and red blood cell casts on microscopy. Which category is this?",
+          "choices": [
+            "Nephrotic syndrome",
+            "Nephritic syndrome",
+            "Post-renal obstruction",
+            "Pre-renal azotemia"
+          ],
+          "answer": 1,
+          "why": "Red cell casts, hematuria, and hypertension define a nephritic picture from glomerular inflammation. Nephrotic syndrome leaks protein with a bland sediment and normal or low pressure. Obstruction and pre-renal failure do not produce casts made of red cells."
+        },
+        {
+          "q": "A patient in thyroid storm is ordered propranolol, methimazole, hydrocortisone, and potassium iodide. What sequencing rule applies?",
+          "choices": [
+            "Iodide first to shrink the gland",
+            "Iodide at least 1 hour after the methimazole",
+            "Hydrocortisone must be held until the thyroid function tests return",
+            "The beta blocker is given last"
+          ],
+          "answer": 1,
+          "why": "Iodine blocks hormone release but also supplies substrate for synthesis. Given before the thionamide it can worsen the storm, so it follows methimazole by at least an hour. Steroids are given early to block peripheral T4 to T3 conversion, and the beta blocker controls the adrenergic surge immediately."
+        },
+        {
+          "q": "A patient has hypotension, sodium 126 mEq/L, potassium 5.8 mEq/L, and darkened skin creases. Which diagnosis fits?",
+          "choices": [
+            "Primary adrenal insufficiency",
+            "Secondary adrenal insufficiency from steroid withdrawal",
+            "SIADH",
+            "Thyroid storm"
+          ],
+          "answer": 0,
+          "why": "Loss of aldosterone as well as cortisol produces hyperkalemia with hyponatremia, and excess ACTH precursor causes hyperpigmentation, both pointing to primary disease. Secondary insufficiency spares aldosterone, so potassium is normal and the skin is not pigmented. SIADH causes hyponatremia with normal potassium and no hypotension."
+        }
+      ]
+    },
+    {
+      "id": "pa-patho-l17",
+      "title": "Hematologic pathophysiology: anemia, marrow malignancy, and the coagulopathy of trauma",
+      "minutes": 9,
+      "body": "## Anemia has exactly three mechanisms\n\nEither the marrow is not making red cells, something is destroying them, or they are being lost. The reticulocyte count separates the first from the other two: a marrow that is trying hard sends out young cells, so a high reticulocyte count means destruction or bleeding, and a low one means a production problem.\n\nCell size then narrows it further.\n\n| Size | Causes |\n|---|---|\n| Microcytic, MCV under `80` | iron deficiency, thalassemia, anemia of chronic disease, lead, sideroblastic |\n| Normocytic | acute blood loss, hemolysis, chronic disease, chronic kidney disease from lost erythropoietin |\n| Macrocytic, MCV over `100` | B12 and folate deficiency (megaloblastic), alcohol, liver disease, hypothyroidism, myelodysplasia |\n\nIron studies separate the two common microcytic causes. Iron deficiency shows a low ferritin, a high total iron binding capacity, and a low saturation, because the body is hunting for iron. Anemia of chronic disease shows a low serum iron with a low binding capacity and a normal or high ferritin, because inflammation is hiding iron away rather than lacking it.\n\nHemolysis has its own fingerprint: high LDH from spilled cell contents, high indirect bilirubin from broken-down heme, a **low haptoglobin** because that protein is consumed mopping up free hemoglobin, and a high reticulocyte count. A positive direct antiglobulin test means antibodies are coating the cells; a negative one points to mechanical destruction such as a heart valve or the microangiopathies.\n\n> **Trap:** B12 and folate deficiency look identical on the blood count, with large cells and hypersegmented neutrophils. Only B12 deficiency damages the spinal cord, causing loss of vibration and position sense and an unsteady gait. Giving folate alone corrects the blood picture while the neurologic damage continues and becomes permanent.\n\n## Leukemia and lymphoma\n\nLeukemia is malignancy of blood-forming cells circulating in blood and marrow; lymphoma is malignancy of lymphocytes forming masses in nodes. Marrow packed with malignant cells fails at all three of its jobs at once, so patients present with anemia, infection from neutropenia, and bleeding from thrombocytopenia.\n\n- **Acute lymphoblastic leukemia**: the most common childhood cancer, with bone pain, bruising, and adenopathy.\n- **Acute myeloid leukemia**: adults; the promyelocytic subtype presents with disseminated intravascular coagulation.\n- **Chronic lymphocytic leukemia**: older adults, frequently found incidentally as a high lymphocyte count with smudge cells.\n- **Chronic myeloid leukemia**: the Philadelphia chromosome fuses `BCR` to `ABL`, and the drug imatinib was built to block exactly that fusion protein.\n- **Hodgkin lymphoma**: Reed-Sternberg cells, spread to contiguous node groups, night sweats, weight loss, and fever.\n\nA white count above `100,000` thickens blood enough to obstruct capillaries, producing headache, visual change, confusion, and breathlessness. That is leukostasis and it is an emergency.\n\n## The coagulopathy of trauma\n\nA bleeding trauma patient does not simply run out of clotting factors; the bleeding itself changes the clotting system.\n\n1. **Tissue hypoperfusion** activates protein C, which switches off thrombin generation and releases the brake on fibrinolysis. Clots that do form are dissolved. This begins within minutes, before a single bag of fluid is given.\n2. **Hypothermia** slows enzyme activity; every clotting factor works poorly below `35 C`, and a coagulation panel run at `37 C` hides this completely.\n3. **Acidosis** further inhibits the clotting enzyme complexes. Hypothermia, acidosis, and coagulopathy reinforce each other, which is the lethal triad.\n4. **Dilution**: crystalloid replaces volume with fluid that carries no oxygen and no clotting factors, worsening everything above.\n\n> **Key:** The treatment follows the mechanism. Give blood products in balanced ratios rather than crystalloid, give tranexamic acid within `3` hours to block the fibrinolysis, actively warm the patient, and replace calcium, because the citrate in stored blood binds it and calcium is required by the cascade at several steps.\n\nTwo microangiopathies round out the picture. Thrombotic thrombocytopenic purpura is missing the enzyme that trims von Willebrand factor, so platelets clump across small vessels, shearing red cells. Hemolytic uremic syndrome follows Shiga toxin, usually in a child after bloody diarrhea, and hits the kidney hardest. In both, platelet transfusion adds fuel to the fire and is avoided unless there is life-threatening bleeding.",
+      "keyPoints": [
+        "Reticulocyte count separates a production problem from destruction or loss; MCV then narrows the cause.",
+        "Iron deficiency has low ferritin and high binding capacity; chronic disease has normal or high ferritin with low binding capacity.",
+        "Hemolysis shows high LDH, high indirect bilirubin, low haptoglobin, and reticulocytosis.",
+        "Folate alone corrects the blood count in B12 deficiency while spinal cord damage progresses and becomes permanent.",
+        "Trauma coagulopathy starts with hypoperfusion-driven fibrinolysis; treat with balanced blood products, tranexamic acid within 3 hours, warming, and calcium."
+      ],
+      "checks": [
+        {
+          "q": "A patient has an MCV of 112 fL, hypersegmented neutrophils, an unsteady gait, and reduced vibration sense. Which treatment is unsafe alone?",
+          "choices": [
+            "Vitamin B12 replacement",
+            "Folate replacement",
+            "Iron replacement",
+            "Blood transfusion"
+          ],
+          "answer": 1,
+          "why": "Folate corrects the megaloblastic blood picture but does nothing for the spinal cord damage of B12 deficiency, which then progresses silently and becomes permanent. B12 is the correct treatment here. Iron would not address a macrocytic anemia at all."
+        },
+        {
+          "q": "A hypothermic trauma patient at 33.5 C has a normal coagulation panel drawn at the laboratory. Why can this be misleading?",
+          "choices": [
+            "The panel is run at 37 C, so it does not reflect enzyme performance at the patient's actual temperature",
+            "Hypothermia falsely prolongs the values",
+            "The panel measures platelets, not factors",
+            "Coagulation is unaffected by temperature"
+          ],
+          "answer": 0,
+          "why": "Coagulation assays are warmed to 37 C, so they report how the factors would perform at normal temperature, not how they are performing in a cold patient. Clotting enzyme activity falls markedly below 35 C, which is why active rewarming is a hemostatic intervention."
+        },
+        {
+          "q": "A patient with thrombotic thrombocytopenic purpura has a platelet count of 18,000 and scattered petechiae without major bleeding. What should be avoided?",
+          "choices": [
+            "Plasma exchange",
+            "Platelet transfusion",
+            "Corticosteroids",
+            "Red cell transfusion for symptomatic anemia"
+          ],
+          "answer": 1,
+          "why": "In TTP the platelets are being consumed by microvascular clotting driven by uncleaved von Willebrand factor, so transfused platelets add substrate and can worsen thrombosis. Plasma exchange is the definitive treatment, steroids are adjunctive, and red cells may be given for anemia."
+        }
+      ]
+    },
+    {
+      "id": "pa-patho-l18",
+      "title": "Ten illness scripts: chest, abdomen, and the great vessels",
+      "minutes": 9,
+      "body": "## How to use these\n\nEach script fills the same five slots: who gets it, the mechanism, the presentation with its discriminating feature, the confirming test, and the first move. Read them as patterns rather than facts, and the next time a real patient matches the shape, the whole script will come back at once.\n\n### ST-elevation myocardial infarction\n\nOlder smoker or diabetic. A vulnerable plaque ruptures and thrombus occludes a coronary artery completely, killing full-thickness muscle within hours. Pressure-like chest pain at rest with sweating, nausea, and radiation to jaw or arm; diabetics and women may have no chest pain at all. ECG shows ST elevation in contiguous leads. Aspirin `324 mg` chewed, then catheterization within `90` minutes.\n\n### Aortic dissection\n\nHypertensive man in his sixties, or a young Marfan patient. A tear in the intima lets blood split the aortic wall along its length. Sudden tearing pain that is maximal at onset and moves to the back, sometimes with a pulse or blood pressure difference between arms, or a stroke, or new aortic regurgitation. CT angiography confirms. Control heart rate with esmolol first, then blood pressure; surgery for type A.\n\n### Cardiac tamponade\n\nAfter chest trauma, a dissection, cancer, or uremia. Fluid in the pericardium raises the pressure around the heart until the ventricles cannot fill. Hypotension, distended neck veins, muffled heart sounds, and a pulse that weakens on inspiration. Bedside ultrasound shows the effusion and a collapsing right atrium. Pericardiocentesis.\n\n### Tension pneumothorax\n\nTrauma, a ventilated patient, or a tall thin young man. Air enters the pleural space through a one-way valve, pressure builds, and the vena cava kinks so blood cannot return. Severe breathlessness, absent breath sounds on one side, distended neck veins, hypotension, late tracheal shift. It is a clinical diagnosis. Needle decompression then a chest tube, before any x-ray.\n\n### Community-acquired pneumonia\n\nAny age; worse in the old, the smoker, and the immunosuppressed. Organisms fill alveoli with neutrophil exudate, creating a shunt. Fever, productive cough, pleuritic pain, focal crackles, hypoxemia. Chest radiograph shows an infiltrate. Antibiotics matched to setting and severity, plus oxygen.\n\n### Appendicitis\n\nTeens to thirties. The lumen obstructs, pressure rises, the wall becomes ischemic and infected, and inflammation finally reaches the parietal peritoneum. Vague periumbilical pain that migrates to the right lower quadrant, anorexia, low fever, and tenderness at McBurney point. CT or ultrasound confirms. Antibiotics and appendectomy.\n\n### Acute cholecystitis\n\nMiddle-aged, often female and overweight. A stone lodges in the cystic duct, the gallbladder distends, and the wall becomes inflamed and infected. Constant right upper quadrant pain after a fatty meal, fever, and arrest of inspiration when the examiner presses under the right ribs. Ultrasound shows stones, a thick wall, and fluid. Antibiotics, fluids, cholecystectomy.\n\n### Acute pancreatitis\n\nGallstones or alcohol account for most cases. Digestive enzymes activate inside the gland and it begins to digest itself, leaking fluid into the retroperitoneum. Severe epigastric pain boring to the back, better sitting forward, with vomiting. Lipase three times the upper limit confirms. Aggressive fluid, analgesia, and treating the cause.\n\n### Ruptured abdominal aortic aneurysm\n\nSmoker over `65`. A dilated aorta tears, bleeding into the retroperitoneum. Sudden abdominal or flank pain, hypotension, and a pulsatile mass; frequently mistaken for renal colic in someone who has never had a stone. Bedside ultrasound or CT if stable. Immediate vascular surgery and blood, not crystalloid.\n\n### Variceal upper gastrointestinal bleed\n\nCirrhotic patient. Portal hypertension forces blood through fragile submucosal veins that rupture. Large-volume vomiting of blood, black tarry stool, tachycardia and hypotension, with a hemoglobin that is normal at first because whole blood is lost. Endoscopy is diagnostic and therapeutic. Blood products, octreotide, antibiotics, and urgent endoscopy.\n\n> **Key:** Four of these ten are conditions where the classic error is treating the wrong organ: dissection mistaken for infarction, ruptured aneurysm mistaken for renal colic, tamponade mistaken for heart failure, and tension pneumothorax mistaken for asthma. The discriminating feature in each is in the script.",
+      "keyPoints": [
+        "Every script has the same five slots: who, mechanism, presentation with a discriminator, confirming test, first move.",
+        "Tearing pain maximal at onset with a limb pulse difference is dissection; pressure building over minutes is infarction.",
+        "Tamponade and tension pneumothorax both give hypotension with distended neck veins, separated by breath sounds.",
+        "A ruptured abdominal aortic aneurysm in a smoker over 65 is regularly mislabeled as first-time renal colic.",
+        "In acute hemorrhage the initial hemoglobin is normal, because whole blood is lost in proportion."
+      ],
+      "checks": [
+        {
+          "q": "A 62-year-old man has sudden tearing chest pain radiating to the back, with a systolic blood pressure of 178 in the right arm and 140 in the left. What is the first drug goal?",
+          "choices": [
+            "Thrombolysis for presumed infarction",
+            "Heart rate control with esmolol before blood pressure reduction",
+            "Aspirin and heparin",
+            "Immediate nitroglycerin infusion alone"
+          ],
+          "answer": 1,
+          "why": "This is aortic dissection, and the aim is to reduce the shearing force on the wall, which depends on the rate of pressure rise as well as the pressure. Rate control comes first so that a vasodilator does not cause a reflex tachycardia. Thrombolysis and anticoagulation are catastrophic in dissection."
+        },
+        {
+          "q": "A 68-year-old smoker has sudden left flank pain, a blood pressure of 88/54, and a pulsatile abdominal mass. The triage note says renal colic. What is the concern?",
+          "choices": [
+            "Pyelonephritis",
+            "Ruptured abdominal aortic aneurysm",
+            "Musculoskeletal strain",
+            "Bowel obstruction"
+          ],
+          "answer": 1,
+          "why": "First-time flank pain in an older smoker with hypotension and a pulsatile mass is a ruptured aneurysm until proven otherwise. Stones usually begin decades earlier and do not cause hypotension. The mislabel is common and the delay is fatal."
+        },
+        {
+          "q": "Which finding separates tension pneumothorax from cardiac tamponade at the bedside?",
+          "choices": [
+            "Distended neck veins",
+            "Hypotension",
+            "Unilaterally absent breath sounds with hyperresonance",
+            "Tachycardia"
+          ],
+          "answer": 2,
+          "why": "Both cause obstructive shock with hypotension, distended neck veins, and tachycardia. Only tension pneumothorax removes breath sounds on one side and makes that side hyperresonant; tamponade muffles heart sounds while the lungs stay clear."
+        }
+      ]
+    },
+    {
+      "id": "pa-patho-l19",
+      "title": "Ten illness scripts: brain, hormones, and overwhelming infection",
+      "minutes": 9,
+      "body": "## Ten more, same five slots\n\n### Large-vessel ischemic stroke\n\nOlder patient with atrial fibrillation, hypertension, or diabetes. A clot occludes a cerebral artery, killing a core of tissue surrounded by a salvageable penumbra kept alive by collaterals. Sudden focal deficit maximal at onset when embolic: face droop, arm weakness, speech change, gaze deviation. Non-contrast CT excludes bleeding, then CT angiography finds the vessel. Thrombolysis within `4.5` hours and thrombectomy for a large-vessel occlusion.\n\n### Subarachnoid hemorrhage\n\nAdults `40` to `60`, more often women, sometimes with polycystic kidney disease. A berry aneurysm at a branch point ruptures into the space around the brain. Thunderclap headache reaching maximum intensity within seconds, the worst of the patient's life, with neck stiffness and vomiting. Non-contrast CT within `6` hours is highly sensitive; lumbar puncture if later and still suspected. Blood pressure control, neurosurgery, and nimodipine for vasospasm.\n\n### Bacterial meningitis\n\nAny age; extremes of age and immunosuppression are at highest risk. Organisms multiply in cerebrospinal fluid and the cytokine response breaks the blood-brain barrier, swelling the brain. Fever, headache, neck stiffness, and altered mental status; a purpuric rash suggests meningococcus. Lumbar puncture shows thousands of neutrophils, low glucose, and high protein. Dexamethasone with the first dose, then ceftriaxone and vancomycin immediately.\n\n### Diabetic ketoacidosis\n\nType 1 diabetes, often after infection or missed insulin. Without insulin, fat is burned to ketoacids while glucose spills into urine and drags out litres of water. Vomiting, abdominal pain, deep rapid breathing, fruity breath, dehydration. Glucose above `250 mg/dL`, anion gap acidosis, ketones present. Fluids, potassium before insulin if it is under `3.3 mEq/L`, then an insulin infusion.\n\n### Thyroid storm\n\nKnown or unrecognized hyperthyroidism plus a stressor such as infection or surgery. Massive thyroid hormone excess drives every tissue at once. Fever, tachycardia or atrial fibrillation out of proportion to the fever, agitation, vomiting, heart failure. Very low TSH with high free T4; the diagnosis is clinical and treatment precedes the result. Beta blocker, thionamide, iodine an hour later, steroids.\n\n### Adrenal crisis\n\nA patient on chronic steroids who stopped them, or known adrenal disease under stress. Cortisol is absent when demand is highest, so vascular tone and glucose collapse. Hypotension unresponsive to fluid, weakness, vomiting, abdominal pain, low sodium, low glucose, and high potassium if the disease is primary. Random cortisol is low. Hydrocortisone `100 mg` IV without waiting for confirmation.\n\n### Pyelonephritis and urosepsis\n\nWomen, pregnancy, diabetes, obstruction, catheters. Bacteria ascend from the bladder and invade kidney tissue, and an obstructed infected kidney seeds the bloodstream. Fever, rigors, flank pain, vomiting, with white blood cell casts. Urinalysis and culture, and imaging when obstruction is possible. Ceftriaxone, fluids, and urgent drainage if obstructed.\n\n### Necrotizing fasciitis\n\nDiabetic, immunosuppressed, or after a minor wound or injection. Infection spreads along fascia and thromboses perforating vessels, killing tissue from the inside out. Pain far beyond the appearance, skin that has become numb, rapid spread, crepitus, and systemic toxicity. Diagnosis is surgical exploration, not imaging. Operating room plus broad antibiotics with clindamycin.\n\n### Sickle cell acute chest syndrome\n\nKnown sickle cell disease, often a few days into a pain crisis. Sickled cells occlude pulmonary vessels; infection, infarction, and fat embolism from marrow all contribute. Fever, chest pain, cough, hypoxia, and a **new** infiltrate on the chest radiograph. Oxygen, analgesia, antibiotics covering atypicals, and exchange transfusion when severe.\n\n### Anaphylaxis\n\nAny age, with a known or unknown trigger. IgE-crosslinked mast cells degranulate, dumping histamine and tryptase: vessels dilate and leak, airways constrict. Onset within minutes with two or more systems involved, most often hives plus airway swelling, wheeze, or hypotension. It is a clinical diagnosis. Epinephrine `0.3-0.5 mg` intramuscularly into the outer thigh, repeated every `5-15` minutes.\n\n> **Trap:** Three of these are diagnosed and treated before any confirming test exists: adrenal crisis, thyroid storm, and anaphylaxis. Waiting for the laboratory in any of them is the error that kills the patient.",
+      "keyPoints": [
+        "Thunderclap headache maximal within seconds is subarachnoid hemorrhage; CT within 6 hours is highly sensitive.",
+        "Adrenal crisis, thyroid storm, and anaphylaxis are all treated before any confirmatory test returns.",
+        "Acute chest syndrome requires a new infiltrate plus fever or hypoxia and is the leading cause of death in sickle cell disease.",
+        "Necrotizing fasciitis is diagnosed in the operating room; imaging that looks reassuring does not exclude it.",
+        "In DKA, potassium under 3.3 mEq/L is replaced before insulin is started, or the level will crash further."
+      ],
+      "checks": [
+        {
+          "q": "A 46-year-old describes a headache that reached maximum intensity within seconds two hours ago, with vomiting and neck stiffness. The neurologic exam is normal. What is the next step?",
+          "choices": [
+            "Discharge with migraine treatment since the exam is normal",
+            "Non-contrast CT head now, with lumbar puncture if the CT is negative and suspicion remains",
+            "MRI in the morning",
+            "Start ceftriaxone for meningitis"
+          ],
+          "answer": 1,
+          "why": "Thunderclap onset is subarachnoid hemorrhage until excluded, and a normal neurologic examination is common early. CT within 6 hours is highly sensitive; beyond that or when negative with high suspicion, lumbar puncture looks for xanthochromia. Neck stiffness here comes from blood irritating the meninges."
+        },
+        {
+          "q": "A patient on prednisone for 2 years stopped it abruptly a week ago and now has hypotension that does not respond to 2 L of fluid, vomiting, and a glucose of 54 mg/dL. What is the immediate treatment?",
+          "choices": [
+            "Hydrocortisone 100 mg IV now",
+            "Wait for a cortisol and ACTH stimulation test",
+            "Norepinephrine alone",
+            "Broad-spectrum antibiotics only"
+          ],
+          "answer": 0,
+          "why": "Fluid-unresponsive hypotension with hypoglycemia after steroid withdrawal is adrenal crisis, and hydrocortisone is given immediately; a cortisol level can be drawn first but never delays treatment. Vasopressors work poorly without cortisol, and antibiotics treat a possible trigger but not the crisis."
+        },
+        {
+          "q": "A 21-year-old with sickle cell disease admitted for a pain crisis now has a fever of 38.8 C, chest pain, a saturation of 89%, and a new left lower lobe infiltrate. What is the diagnosis?",
+          "choices": [
+            "Simple vaso-occlusive crisis",
+            "Acute chest syndrome",
+            "Pulmonary embolism only",
+            "Aplastic crisis"
+          ],
+          "answer": 1,
+          "why": "A new pulmonary infiltrate with fever or hypoxia during a sickle cell admission defines acute chest syndrome, the leading cause of death in this disease. It requires oxygen, antibiotics covering atypicals, analgesia, and often exchange transfusion. Aplastic crisis is a fall in reticulocytes without an infiltrate."
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "pa-patho-c079",
+      "front": "How do oncogenes and tumor suppressor genes differ in how many hits they need?",
+      "back": "An oncogene is a gain of function, so one damaged copy is enough. A tumor suppressor is a loss of function, so both copies must be lost — which is why inherited tumor suppressor mutations run in families.",
+      "lesson": "pa-patho-l11"
+    },
+    {
+      "id": "pa-patho-c080",
+      "front": "Name three oncogenes and three tumor suppressor genes with their cancers.",
+      "back": "Oncogenes: `RAS` in colon and pancreas, `HER2` in breast, `BCR-ABL` in chronic myeloid leukemia. Tumor suppressors: `p53` broadly, `BRCA1` and `BRCA2` in breast and ovary, `APC` in colon.",
+      "lesson": "pa-patho-l11"
+    },
+    {
+      "id": "pa-patho-c081",
+      "front": "List the capabilities a cell must acquire to become malignant.",
+      "back": "Grow unprompted, ignore stop signals, resist apoptosis (usually by losing `p53`), reactivate telomerase, build blood supply through angiogenesis, evade immune detection, and invade through the basement membrane.",
+      "lesson": "pa-patho-l11"
+    },
+    {
+      "id": "pa-patho-c082",
+      "front": "What is the stepwise progression from normal tissue to invasive cancer?",
+      "back": "Normal, hyperplasia, dysplasia, carcinoma in place, then invasion. Screening works because every step before invasion is reversible or curable — a polyp removed at colonoscopy is a cancer that never happens.",
+      "lesson": "pa-patho-l11"
+    },
+    {
+      "id": "pa-patho-c083",
+      "front": "Why does colon cancer spread to the liver and prostate cancer to bone?",
+      "back": "Metastasis follows drainage. The colon drains through the portal vein straight into the liver. Prostate drains through vertebral venous plexuses into the spine, producing dense bone-building lesions.",
+      "lesson": "pa-patho-l11"
+    },
+    {
+      "id": "pa-patho-c084",
+      "front": "What must iron deficiency anemia in a man or postmenopausal woman prompt?",
+      "back": "Colonoscopy. A right-sided colon cancer bleeds a small volume daily, which is invisible in the toilet but obvious in the ferritin. Treating with iron alone treats the number and misses the cause.",
+      "lesson": "pa-patho-l11"
+    },
+    {
+      "id": "pa-patho-c085",
+      "front": "Which paraneoplastic syndromes come from small cell versus squamous cell lung cancer?",
+      "back": "Small cell secretes antidiuretic hormone causing SIADH and hyponatremia, or ACTH causing Cushing syndrome, and triggers Lambert-Eaton syndrome. Squamous cell secretes PTH-related peptide causing hypercalcemia.",
+      "lesson": "pa-patho-l11"
+    },
+    {
+      "id": "pa-patho-c086",
+      "front": "How does pancreatic cancer classically present?",
+      "back": "Painless jaundice with a palpable, non-tender gallbladder, weight loss, and sometimes new-onset diabetes. Risk factors are smoking and chronic pancreatitis, and it is usually advanced when found.",
+      "lesson": "pa-patho-l11"
+    },
+    {
+      "id": "pa-patho-c087",
+      "front": "What is the difference between tumor grade and tumor stage?",
+      "back": "Grade is how abnormal the cells look microscopically. Stage is how far the disease has travelled, using TNM: tumor size, nodes, metastasis. Stage drives prognosis and treatment far more than grade does.",
+      "lesson": "pa-patho-l11"
+    },
+    {
+      "id": "pa-patho-c088",
+      "front": "What are central and peripheral tolerance?",
+      "back": "Central tolerance deletes self-reactive lymphocytes as they mature in the thymus and bone marrow. Peripheral tolerance catches escapees using regulatory T cells and by shutting down cells that see antigen without a danger signal.",
+      "lesson": "pa-patho-l12"
+    },
+    {
+      "id": "pa-patho-c089",
+      "front": "What is molecular mimicry, with two examples?",
+      "back": "A microbe carries a protein resembling a human one, so antibodies against the infection attack the body. Streptococcal M protein resembles cardiac myosin (rheumatic fever); Campylobacter sugars resemble nerve myelin (Guillain-Barre).",
+      "lesson": "pa-patho-l12"
+    },
+    {
+      "id": "pa-patho-c090",
+      "front": "Name the four hypersensitivity types with their mediator and timing.",
+      "back": "Type I, IgE on mast cells, minutes. Type II, antibody against a cell surface, hours to days. Type III, immune complexes deposited in tissue, days. Type IV, T cells with no antibody, `48-72` hours.",
+      "lesson": "pa-patho-l12"
+    },
+    {
+      "id": "pa-patho-c091",
+      "front": "Give two diseases for each hypersensitivity type.",
+      "back": "I: anaphylaxis, allergic asthma. II: immune thrombocytopenia, Graves disease. III: lupus, post-streptococcal glomerulonephritis. IV: contact dermatitis, tuberculin skin test and most drug rashes.",
+      "lesson": "pa-patho-l12"
+    },
+    {
+      "id": "pa-patho-c092",
+      "front": "Which antibodies are sensitive and which are specific in lupus?",
+      "back": "Antinuclear antibody is sensitive but not specific — many healthy people have it. Anti-double-stranded DNA and anti-Smith are specific. Lupus nephritis drives most of the mortality.",
+      "lesson": "pa-patho-l12"
+    },
+    {
+      "id": "pa-patho-c093",
+      "front": "How do rheumatoid arthritis and osteoarthritis differ in pattern?",
+      "back": "Rheumatoid: symmetric small joints, morning stiffness over an hour that improves with use, systemic features, anti-CCP antibodies, erosive pannus. Osteoarthritis: asymmetric, worse with use, brief stiffness, no systemic features.",
+      "lesson": "pa-patho-l12"
+    },
+    {
+      "id": "pa-patho-c094",
+      "front": "Why is Graves disease a type II hypersensitivity even though it causes overactivity?",
+      "back": "The antibody binds the TSH receptor and stimulates it instead of destroying the cell. Type II simply means an antibody directed at a cell surface; the consequence can be activation, blockade, or destruction.",
+      "lesson": "pa-patho-l12"
+    },
+    {
+      "id": "pa-patho-c095",
+      "front": "What is measured to decide intubation in myasthenic crisis, and why not pulse oximetry?",
+      "back": "Forced vital capacity and negative inspiratory force. Neuromuscular failure is a pump problem: oxygen saturation stays normal until the patient is nearly apneic, so waiting for desaturation means waiting too long.",
+      "lesson": "pa-patho-l12"
+    },
+    {
+      "id": "pa-patho-c096",
+      "front": "Why are steroids started before the biopsy in giant cell arteritis?",
+      "back": "Vision loss from ischemic optic neuropathy can become permanent within hours, and the temporal artery biopsy stays informative for one to two weeks after steroids begin. Treating first costs nothing diagnostically.",
+      "lesson": "pa-patho-l12"
+    },
+    {
+      "id": "pa-patho-c097",
+      "front": "How do you recognize autosomal dominant versus autosomal recessive inheritance in a family?",
+      "back": "Dominant appears in every generation, affects half of offspring, and usually involves structural proteins. Recessive skips generations, appears among siblings of unaffected carriers, and usually involves enzymes.",
+      "lesson": "pa-patho-l13"
+    },
+    {
+      "id": "pa-patho-c098",
+      "front": "Which rule makes X-linked recessive inheritance recognizable?",
+      "back": "Males are affected, transmission is through unaffected carrier mothers, and it never passes father to son. Hemophilia A and B, G6PD deficiency, and Duchenne muscular dystrophy follow this pattern.",
+      "lesson": "pa-patho-l13"
+    },
+    {
+      "id": "pa-patho-c099",
+      "front": "What is the molecular defect in sickle cell disease and when does it cause trouble?",
+      "back": "A single amino acid swap at position `6` of beta-globin produces hemoglobin S, which polymerizes into rigid rods when deoxygenated. The cells become stiff and sticky, causing vaso-occlusion and chronic hemolysis.",
+      "lesson": "pa-patho-l13"
+    },
+    {
+      "id": "pa-patho-c100",
+      "front": "Why are sickle cell patients vulnerable to encapsulated organisms?",
+      "back": "Repeated splenic infarction leaves them functionally asplenic by early childhood, so pneumococcus, Haemophilus influenzae, meningococcus, and Salmonella can cause overwhelming infection rapidly.",
+      "lesson": "pa-patho-l13"
+    },
+    {
+      "id": "pa-patho-c101",
+      "front": "Name the five sickle cell crises and what defines each.",
+      "back": "Vaso-occlusive (bone and chest pain), acute chest syndrome (new infiltrate plus fever or hypoxia), splenic sequestration (sudden anemia with a large spleen), aplastic (parvovirus B19, reticulocytes fall to zero), and stroke.",
+      "lesson": "pa-patho-l13"
+    },
+    {
+      "id": "pa-patho-c102",
+      "front": "Why is fever in sickle cell disease treated as an emergency?",
+      "back": "Functional asplenia allows overwhelming sepsis within hours from encapsulated organisms. Blood cultures and a third-generation cephalosporin come first; a well appearance and normal white count do not exclude early bacteremia.",
+      "lesson": "pa-patho-l13"
+    },
+    {
+      "id": "pa-patho-c103",
+      "front": "What is the coagulation profile of hemophilia, and what is the head-injury rule?",
+      "back": "Prolonged PTT with a normal PT and normal platelet count, causing deep joint and muscle bleeds. With a head injury, factor replacement goes in before the CT, because imaging does not change the treatment and delay does.",
+      "lesson": "pa-patho-l13"
+    },
+    {
+      "id": "pa-patho-c104",
+      "front": "What are the emergency consequences of Marfan syndrome?",
+      "back": "Fibrillin-1 mutation weakens connective tissue, so the aortic root dilates and tears — type A dissection decades earlier than expected — and the lung blebs rupture, causing spontaneous pneumothorax.",
+      "lesson": "pa-patho-l13"
+    },
+    {
+      "id": "pa-patho-c105",
+      "front": "What story suggests congenital long QT syndrome?",
+      "back": "Syncope or sudden death during exertion, strong emotion, or a startling noise such as an alarm, plus a family history of young sudden death or drowning. Torsades is the arrhythmia; treatment is avoiding QT drugs, beta blockade, and often a defibrillator.",
+      "lesson": "pa-patho-l13"
+    },
+    {
+      "id": "pa-patho-c106",
+      "front": "How do G6PD deficiency and hereditary angioedema each present?",
+      "back": "G6PD: sudden hemolysis with bite cells after sulfonamides, nitrofurantoin, primaquine, or fava beans. Hereditary angioedema: bradykinin-driven swelling of face, airway, or bowel with no hives and no response to epinephrine or steroids.",
+      "lesson": "pa-patho-l13"
+    },
+    {
+      "id": "pa-patho-c107",
+      "front": "Why does lobar pneumonia cause hypoxemia that oxygen only partly fixes?",
+      "back": "Alveoli fill with neutrophil exudate, so that lung is perfused but not ventilated. That is a shunt, and blood passing through it never meets the supplemental oxygen being delivered.",
+      "lesson": "pa-patho-l14"
+    },
+    {
+      "id": "pa-patho-c108",
+      "front": "How do typical and atypical pneumonia differ mechanically?",
+      "back": "Typical pneumonia (pneumococcus) fills alveoli with pus, giving lobar consolidation and rusty sputum. Atypical pneumonia inflames the interstitium, giving a dry cough, a patient who looks better than the film, and no cell wall for beta-lactams to attack.",
+      "lesson": "pa-patho-l14"
+    },
+    {
+      "id": "pa-patho-c109",
+      "front": "What proves a urinary infection is in the kidney rather than the bladder?",
+      "back": "White blood cell casts, which are formed in the renal tubule and can only come from kidney tissue, alongside fever, flank pain, and vomiting.",
+      "lesson": "pa-patho-l14"
+    },
+    {
+      "id": "pa-patho-c110",
+      "front": "Why is an obstructed, infected kidney an emergency?",
+      "back": "The obstruction creates a closed, pressurized abscess that antibiotics cannot sterilize, and pressure forces bacteria into the bloodstream. Drainage by stent or nephrostomy is the treatment; the antibiotic is support.",
+      "lesson": "pa-patho-l14"
+    },
+    {
+      "id": "pa-patho-c111",
+      "front": "Give the cerebrospinal fluid pattern for bacterial versus viral meningitis.",
+      "back": "Bacterial: high opening pressure, thousands of neutrophils, glucose under two thirds of serum, high protein. Viral: normal pressure, tens to hundreds of lymphocytes, normal glucose, normal or mildly high protein.",
+      "lesson": "pa-patho-l14"
+    },
+    {
+      "id": "pa-patho-c112",
+      "front": "Explain why dexamethasone must precede the first antibiotic in meningitis.",
+      "back": "Killing bacteria releases cell wall fragments that intensify the cytokine response injuring the brain. Blunting that burst reduces hearing loss and death. Given afterward, the surge has already happened.",
+      "lesson": "pa-patho-l14"
+    },
+    {
+      "id": "pa-patho-c113",
+      "front": "How does infective endocarditis actually begin?",
+      "back": "Turbulent flow strips valve endothelium, so platelets and fibrin form a sterile clot there. Passing bacteria stick to and grow inside that clot, shielded from neutrophils by fibrin — which is why treatment takes weeks of IV antibiotics.",
+      "lesson": "pa-patho-l14"
+    },
+    {
+      "id": "pa-patho-c114",
+      "front": "Distinguish Janeway lesions from Osler nodes.",
+      "back": "Janeway lesions are painless flat spots on palms and soles caused by septic emboli. Osler nodes are painful raised lesions on fingers and toes caused by immune complex deposition. Painless is embolic, painful is immune.",
+      "lesson": "pa-patho-l14"
+    },
+    {
+      "id": "pa-patho-c115",
+      "front": "Why does necrotizing fasciitis cause numb skin and pain out of proportion?",
+      "back": "Infection spreads along the fascial plane and thromboses the small vessels perforating up to the skin. The deep tissue and cutaneous nerves die while the skin still looks nearly normal, producing anesthesia over intense pain.",
+      "lesson": "pa-patho-l14"
+    },
+    {
+      "id": "pa-patho-c116",
+      "front": "Match each dementia to its recognizable pattern: Alzheimer, vascular, Lewy body, frontotemporal.",
+      "back": "Alzheimer: gradual memory loss first. Vascular: stepwise decline with focal deficits. Lewy body: fluctuating attention, visual hallucinations, parkinsonism, antipsychotic sensitivity. Frontotemporal: personality and behavior change first, often before `65`.",
+      "lesson": "pa-patho-l15"
+    },
+    {
+      "id": "pa-patho-c117",
+      "front": "Why is haloperidol dangerous in Lewy body dementia?",
+      "back": "These patients have severe neuroleptic sensitivity: dopamine blockade can cause profound rigidity, autonomic instability, and death. Quetiapine is the usual alternative when an antipsychotic is unavoidable.",
+      "lesson": "pa-patho-l15"
+    },
+    {
+      "id": "pa-patho-c118",
+      "front": "How do you distinguish delirium from dementia at the bedside?",
+      "back": "Delirium is acute in onset, fluctuates within hours, and features inattention; it is almost always caused by something outside the brain. Dementia is slow and stable from hour to hour.",
+      "lesson": "pa-patho-l15"
+    },
+    {
+      "id": "pa-patho-c119",
+      "front": "What is lost in Parkinson disease, and how much before symptoms appear?",
+      "back": "Dopamine-producing neurons in the substantia nigra, containing alpha-synuclein clumps called Lewy bodies. Symptoms begin only after roughly `60%` to `80%` of those neurons are gone.",
+      "lesson": "pa-patho-l15"
+    },
+    {
+      "id": "pa-patho-c120",
+      "front": "Name two medication rules in Parkinson disease.",
+      "back": "Never interrupt levodopa-carbidopa — abrupt withdrawal causes a rigidity and fever syndrome resembling neuroleptic malignant syndrome. And avoid dopamine blockers such as metoclopramide, prochlorperazine, and haloperidol; use ondansetron and quetiapine instead.",
+      "lesson": "pa-patho-l15"
+    },
+    {
+      "id": "pa-patho-c121",
+      "front": "Name four characteristic findings in multiple sclerosis.",
+      "back": "Optic neuritis with painful vision loss, internuclear ophthalmoplegia, an electric shock down the spine on neck flexion, and worsening of old deficits with heat. MRI shows plaques and spinal fluid shows oligoclonal bands.",
+      "lesson": "pa-patho-l15"
+    },
+    {
+      "id": "pa-patho-c122",
+      "front": "What is the current mechanism of migraine?",
+      "back": "A slow wave of cortical depolarization then suppression spreads at about `3 mm` per minute, matching the speed of visual aura, and activates trigeminal endings that release CGRP, causing neurogenic inflammation and vasodilation.",
+      "lesson": "pa-patho-l15"
+    },
+    {
+      "id": "pa-patho-c123",
+      "front": "Why does intracranial pressure stay flat and then rise suddenly as a bleed grows?",
+      "back": "The skull holds a fixed volume, and cerebrospinal fluid and venous blood are displaced first. Once those buffers are spent the compliance curve turns vertical, so a small additional volume produces an enormous pressure rise.",
+      "lesson": "pa-patho-l15"
+    },
+    {
+      "id": "pa-patho-c124",
+      "front": "Give the cerebral perfusion pressure equation, its targets, and the immediate measures for high intracranial pressure.",
+      "back": "Perfusion pressure equals mean arterial pressure minus intracranial pressure; targets are ICP under about `22 mmHg` and CPP `60-70 mmHg`. Head up `30` degrees, neck straight, normal carbon dioxide, no hypotension or hypoxia, hypertonic saline or mannitol.",
+      "lesson": "pa-patho-l15"
+    },
+    {
+      "id": "pa-patho-c125",
+      "front": "Contrast nephrotic and nephritic syndrome in one line each.",
+      "back": "Nephrotic is podocyte injury leaking protein over `3.5 g/day` with heavy edema and bland sediment. Nephritic is glomerular inflammation leaking blood, with red cell casts, hypertension, and oliguria.",
+      "lesson": "pa-patho-l16"
+    },
+    {
+      "id": "pa-patho-c126",
+      "front": "Why do nephrotic patients clot?",
+      "back": "Antithrombin III is small enough to be lost through the leaking glomerulus, so a natural anticoagulant is excreted in the urine. Renal vein thrombosis is the classic result.",
+      "lesson": "pa-patho-l16"
+    },
+    {
+      "id": "pa-patho-c127",
+      "front": "What does a red blood cell cast tell you, and why?",
+      "back": "That the bleeding is glomerular. Casts are moulded in the renal tubule, so red cells inside one must have entered upstream in the glomerulus rather than from a stone, tumor, or the bladder.",
+      "lesson": "pa-patho-l16"
+    },
+    {
+      "id": "pa-patho-c128",
+      "front": "How does timing separate IgA nephropathy from post-streptococcal glomerulonephritis?",
+      "back": "IgA nephropathy produces visible blood in the urine `1-2` days after a sore throat starts. Post-streptococcal disease appears `1-3` weeks after the infection has resolved.",
+      "lesson": "pa-patho-l16"
+    },
+    {
+      "id": "pa-patho-c129",
+      "front": "Name the three biochemical pathways by which high glucose damages tissue.",
+      "back": "Advanced glycation end products form when glucose sticks irreversibly to proteins; excess glucose is shunted into sorbitol, drawing water into nerve and lens; and protein kinase C activation thickens basement membranes.",
+      "lesson": "pa-patho-l16"
+    },
+    {
+      "id": "pa-patho-c130",
+      "front": "Why can a diabetic have a heart attack with no chest pain?",
+      "back": "Autonomic neuropathy damages the visceral afferent nerves that carry cardiac pain, so infarction presents instead as breathlessness, fatigue, sweating, confusion, or vomiting.",
+      "lesson": "pa-patho-l16"
+    },
+    {
+      "id": "pa-patho-c131",
+      "front": "Which three failures combine to produce a diabetic foot ulcer?",
+      "back": "Neuropathy removes the warning of injury, peripheral arterial disease removes the blood supply needed to heal, and impaired white cell function removes the defense against infection.",
+      "lesson": "pa-patho-l16"
+    },
+    {
+      "id": "pa-patho-c132",
+      "front": "Name the four treatment targets in thyroid storm and the sequencing rule.",
+      "back": "Beta blocker for the adrenergic storm, thionamide to stop synthesis, iodine at least an hour later to stop release, and steroids to block peripheral conversion. Iodine before the thionamide supplies substrate and worsens the storm.",
+      "lesson": "pa-patho-l16"
+    },
+    {
+      "id": "pa-patho-c133",
+      "front": "How do primary and secondary adrenal insufficiency differ, and what is the emergency treatment?",
+      "back": "Primary loses cortisol and aldosterone: hyponatremia, hyperkalemia, hyperpigmentation. Secondary spares aldosterone, so potassium is normal and there is no pigmentation. Crisis is treated with hydrocortisone `100 mg` IV plus fluid and glucose.",
+      "lesson": "pa-patho-l16"
+    },
+    {
+      "id": "pa-patho-c134",
+      "front": "What are the three mechanisms of anemia, and which test separates them?",
+      "back": "Underproduction, destruction, and loss. The reticulocyte count separates them: a high count means the marrow is responding to destruction or bleeding, a low count means a production problem.",
+      "lesson": "pa-patho-l17"
+    },
+    {
+      "id": "pa-patho-c135",
+      "front": "Sort anemia causes by cell size.",
+      "back": "Microcytic: iron deficiency, thalassemia, chronic disease, lead, sideroblastic. Normocytic: acute blood loss, hemolysis, chronic disease, chronic kidney disease. Macrocytic: B12 and folate deficiency, alcohol, liver disease, hypothyroidism, myelodysplasia.",
+      "lesson": "pa-patho-l17"
+    },
+    {
+      "id": "pa-patho-c136",
+      "front": "How do iron studies separate iron deficiency from anemia of chronic disease?",
+      "back": "Iron deficiency: low ferritin, high total iron binding capacity, low saturation — the body is hunting for iron. Chronic disease: low serum iron, low binding capacity, normal or high ferritin — iron is being hidden, not missing.",
+      "lesson": "pa-patho-l17"
+    },
+    {
+      "id": "pa-patho-c137",
+      "front": "What is the laboratory fingerprint of hemolysis?",
+      "back": "High LDH from spilled cell contents, high indirect bilirubin from broken-down heme, low haptoglobin because it is consumed mopping up free hemoglobin, and a high reticulocyte count.",
+      "lesson": "pa-patho-l17"
+    },
+    {
+      "id": "pa-patho-c138",
+      "front": "Why is giving folate alone dangerous in an untyped megaloblastic anemia?",
+      "back": "B12 and folate deficiency look identical on the blood count. Folate corrects the cells while B12-related spinal cord degeneration continues, causing permanent loss of vibration sense, position sense, and gait.",
+      "lesson": "pa-patho-l17"
+    },
+    {
+      "id": "pa-patho-c139",
+      "front": "Distinguish leukemia from lymphoma, and name the four main leukemias.",
+      "back": "Leukemia is malignancy of blood-forming cells in blood and marrow; lymphoma forms masses in nodes. ALL in children, AML in adults, CLL in older adults with smudge cells, CML with the Philadelphia chromosome treated by imatinib.",
+      "lesson": "pa-patho-l17"
+    },
+    {
+      "id": "pa-patho-c140",
+      "front": "Why do marrow malignancies present with three problems at once?",
+      "back": "Malignant cells crowd out normal production, so the patient becomes anemic, neutropenic (infection), and thrombocytopenic (bruising and bleeding) simultaneously. A white count above `100,000` adds leukostasis.",
+      "lesson": "pa-patho-l17"
+    },
+    {
+      "id": "pa-patho-c141",
+      "front": "Describe the four contributors to trauma coagulopathy.",
+      "back": "Hypoperfusion activates protein C, switching off thrombin and unleashing fibrinolysis within minutes; hypothermia slows every clotting enzyme; acidosis inhibits the cascade; and crystalloid dilutes what remains.",
+      "lesson": "pa-patho-l17"
+    },
+    {
+      "id": "pa-patho-c142",
+      "front": "What treats trauma coagulopathy, and why is calcium included?",
+      "back": "Balanced blood products instead of crystalloid, tranexamic acid within `3` hours, active warming, and calcium replacement — because the citrate preservative in stored blood binds calcium, which the cascade requires at several steps.",
+      "lesson": "pa-patho-l17"
+    },
+    {
+      "id": "pa-patho-c143",
+      "front": "What five slots does every illness script fill?",
+      "back": "Who gets it, the mechanism, the presentation including the discriminating feature, the confirming test and what it shows, and the first move plus the definitive treatment.",
+      "lesson": "pa-patho-l18"
+    },
+    {
+      "id": "pa-patho-c144",
+      "front": "Give the illness script discriminators for aortic dissection.",
+      "back": "Hypertensive man in his sixties or a young Marfan patient; intimal tear splits the aortic wall; tearing pain maximal at onset moving to the back, with a blood pressure difference between arms; CT angiography; rate control with esmolol first, then pressure.",
+      "lesson": "pa-patho-l18"
+    },
+    {
+      "id": "pa-patho-c145",
+      "front": "How do tamponade and tension pneumothorax differ on examination?",
+      "back": "Both give hypotension with distended neck veins. Tamponade muffles heart sounds with clear lungs and a pulse that weakens on inspiration. Tension pneumothorax gives unilaterally absent breath sounds with hyperresonance and late tracheal shift.",
+      "lesson": "pa-patho-l18"
+    },
+    {
+      "id": "pa-patho-c146",
+      "front": "Why is a ruptured abdominal aortic aneurysm so often misdiagnosed?",
+      "back": "It presents as sudden flank or abdominal pain and is labelled renal colic. The clues are age over `65`, smoking, hypotension, a pulsatile mass, and the fact that a first stone at that age is uncommon.",
+      "lesson": "pa-patho-l18"
+    },
+    {
+      "id": "pa-patho-c147",
+      "front": "Give the illness script for acute pancreatitis.",
+      "back": "Gallstones or alcohol; enzymes activate inside the gland and it digests itself, leaking fluid into the retroperitoneum; severe epigastric pain boring to the back, better leaning forward, with vomiting; lipase over three times normal; aggressive fluid and analgesia.",
+      "lesson": "pa-patho-l18"
+    },
+    {
+      "id": "pa-patho-c148",
+      "front": "Give the illness script for a variceal upper gastrointestinal bleed.",
+      "back": "Cirrhotic patient; portal hypertension ruptures fragile submucosal veins; large-volume hematemesis and melena with an initially normal hemoglobin; endoscopy diagnoses and treats; blood products, octreotide, antibiotics, urgent endoscopy.",
+      "lesson": "pa-patho-l18"
+    },
+    {
+      "id": "pa-patho-c149",
+      "front": "Give the illness script for subarachnoid hemorrhage.",
+      "back": "Adults `40-60`, more often women; a berry aneurysm ruptures into the subarachnoid space; thunderclap headache maximal within seconds with neck stiffness and vomiting; CT within `6` hours, lumbar puncture if later; blood pressure control, neurosurgery, nimodipine.",
+      "lesson": "pa-patho-l19"
+    },
+    {
+      "id": "pa-patho-c150",
+      "front": "Which three emergencies are treated before any confirming test returns?",
+      "back": "Adrenal crisis (hydrocortisone `100 mg` IV), thyroid storm (beta blocker, thionamide, then iodine, steroids), and anaphylaxis (epinephrine `0.3-0.5 mg` IM). Waiting for the laboratory in any of them is the fatal error.",
+      "lesson": "pa-patho-l19"
+    },
+    {
+      "id": "pa-patho-c151",
+      "front": "What defines acute chest syndrome and why does it matter?",
+      "back": "A new pulmonary infiltrate plus fever or hypoxia in sickle cell disease. It is the leading cause of death in these patients and needs oxygen, analgesia, antibiotics covering atypicals, and exchange transfusion when severe.",
+      "lesson": "pa-patho-l19"
+    },
+    {
+      "id": "pa-patho-c152",
+      "front": "Give the illness script for large-vessel ischemic stroke.",
+      "back": "Older patient with atrial fibrillation or vascular risk; a clot occludes a cerebral artery leaving a salvageable penumbra; sudden focal deficit maximal at onset; non-contrast CT then CT angiography; thrombolysis within `4.5` hours, thrombectomy for large-vessel occlusion.",
+      "lesson": "pa-patho-l19"
+    },
+    {
+      "id": "pa-patho-c153",
+      "front": "How is necrotizing fasciitis diagnosed?",
+      "back": "By surgical exploration. Imaging that looks reassuring does not exclude it, and the clinical picture of pain out of proportion, cutaneous anesthesia, rapid spread, and systemic toxicity is what takes the patient to the operating room.",
+      "lesson": "pa-patho-l19"
+    },
+    {
+      "id": "pa-patho-c154",
+      "front": "Give the illness script for adrenal crisis.",
+      "back": "A patient on chronic steroids who stopped, or known adrenal disease under stress; cortisol absent when demand peaks; fluid-unresponsive hypotension, vomiting, low sodium, low glucose, high potassium if primary; low random cortisol; hydrocortisone `100 mg` IV immediately.",
+      "lesson": "pa-patho-l19"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "pa-patho-q037",
+      "q": "A 58-year-old man has fatigue, a hemoglobin of 8.7 g/dL, an MCV of 72 fL, and a ferritin of 6 ng/mL. He denies visible blood loss. What is the required investigation?",
+      "choices": [
+        "Colonoscopy",
+        "Hemoglobin electrophoresis",
+        "Serum B12 and folate",
+        "Bone marrow biopsy"
+      ],
+      "answer": 0,
+      "why": "Iron deficiency in a man means chronic occult gastrointestinal blood loss, and right-sided colon cancer bleeds slowly enough to be invisible. Electrophoresis would be for thalassemia, which has a normal or high ferritin, and B12 deficiency causes macrocytosis rather than microcytosis.",
+      "lesson": "pa-patho-l11",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-patho-q038",
+      "q": "Which statement about tumor suppressor genes is correct?",
+      "choices": [
+        "They are found only in hematologic malignancies",
+        "One mutated copy is sufficient to cause loss of function",
+        "Both copies must be inactivated, which is why inherited mutations cause familial cancer syndromes",
+        "They act as accelerators of cell division"
+      ],
+      "answer": 2,
+      "why": "Tumor suppressors are brakes, and both copies must fail. An inherited damaged copy means every cell already carries the first hit, explaining early and familial cancers such as BRCA-related breast cancer. Oncogenes are the accelerators needing only one hit.",
+      "lesson": "pa-patho-l11",
+      "difficulty": 1
+    },
+    {
+      "id": "pa-patho-q039",
+      "q": "A patient with a squamous cell lung cancer has a calcium of 13.8 mg/dL with a suppressed parathyroid hormone level. What is the mechanism?",
+      "choices": [
+        "Bone metastases eroding bone directly",
+        "Tumor secretion of PTH-related peptide",
+        "Tumor secretion of antidiuretic hormone",
+        "Primary hyperparathyroidism"
+      ],
+      "answer": 1,
+      "why": "Squamous cell cancers secrete PTH-related peptide, which acts on the PTH receptor and therefore suppresses native parathyroid hormone by feedback. Primary hyperparathyroidism would show a high PTH, and antidiuretic hormone excess causes hyponatremia rather than hypercalcemia.",
+      "lesson": "pa-patho-l11",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-patho-q040",
+      "q": "Why does removing an adenomatous colon polyp at colonoscopy prevent cancer?",
+      "choices": [
+        "Polyps secrete carcinogens into the colon",
+        "Removing a polyp changes the patient's inherited risk",
+        "Polyps are always malignant at discovery",
+        "Cancer develops stepwise through dysplasia, and every step before invasion is curable"
+      ],
+      "answer": 3,
+      "why": "Colorectal carcinogenesis moves through hyperplasia, adenoma with dysplasia, carcinoma in place, then invasion, over years. Interrupting that sequence before invasion removes the cancer that would have formed. Polyps are not malignant at discovery and do not alter germline risk.",
+      "lesson": "pa-patho-l11",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-patho-q041",
+      "q": "A patient with colorectal cancer develops liver metastases while a patient with prostate cancer develops dense spinal lesions. What explains the difference?",
+      "choices": [
+        "Both patterns are random",
+        "Tumor grade determines the site of spread",
+        "Venous drainage determines seeding: the colon drains to the liver, the prostate to vertebral veins",
+        "Lymphatic spread is the only route for both"
+      ],
+      "answer": 2,
+      "why": "Metastasis follows anatomy. Portal venous drainage carries colon cells to the liver; the vertebral venous plexus carries prostate cells to the spine, producing bone-forming lesions. Grade describes cell appearance and does not determine destination.",
+      "lesson": "pa-patho-l11",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-patho-q042",
+      "q": "A 9-year-old develops fever, migratory joint pain, and a new murmur 2 weeks after untreated streptococcal pharyngitis. Which mechanism applies?",
+      "choices": [
+        "Molecular mimicry between M protein and cardiac myosin",
+        "Immune complex deposition in the glomerulus",
+        "IgE-mediated mast cell degranulation",
+        "Direct bacterial seeding of the valve"
+      ],
+      "answer": 0,
+      "why": "Rheumatic fever is cross-reactive antibody: streptococcal M protein resembles cardiac myosin. Direct seeding would be endocarditis with positive cultures. Immune complex deposition explains post-streptococcal glomerulonephritis, a different sequel with hematuria rather than a murmur.",
+      "lesson": "pa-patho-l12",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-patho-q043",
+      "q": "A patient develops a widespread maculopapular rash on day 8 of an antibiotic course, with no wheeze and no hypotension. Which hypersensitivity type is this?",
+      "choices": [
+        "Type I",
+        "Type II",
+        "Type III",
+        "Type IV"
+      ],
+      "answer": 3,
+      "why": "A rash appearing days into therapy without airway or circulatory features is T-cell mediated, type IV. Type I reactions occur within minutes and involve IgE. Type II targets specific cells such as platelets or red cells, and type III produces serum sickness with fever and arthralgia.",
+      "lesson": "pa-patho-l12",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-patho-q044",
+      "q": "A 28-year-old with myasthenia gravis has increasing dyspnea, a saturation of 97%, and difficulty counting to 15 in one breath. What should guide management?",
+      "choices": [
+        "Continuous pulse oximetry alone",
+        "Serial forced vital capacity and negative inspiratory force",
+        "Arterial oxygen tension",
+        "Chest radiograph findings"
+      ],
+      "answer": 1,
+      "why": "In neuromuscular respiratory failure, oxygenation is preserved until the patient is nearly apneic, so saturation and oxygen tension are falsely reassuring. Serial vital capacity and negative inspiratory force detect the fall in muscle strength before collapse.",
+      "lesson": "pa-patho-l12",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-patho-q045",
+      "q": "A 73-year-old has a new temporal headache, scalp tenderness, jaw pain while chewing, and an ESR of 92 mm/h. Vision is normal. What is the correct sequence?",
+      "choices": [
+        "High-dose steroids immediately, then arrange temporal artery biopsy",
+        "Observation with repeat ESR in a week",
+        "NSAIDs and follow-up with rheumatology",
+        "Biopsy first, then steroids if positive"
+      ],
+      "answer": 0,
+      "why": "Giant cell arteritis can cause irreversible vision loss within hours, and the biopsy remains informative for one to two weeks after steroids start. Treating first costs nothing diagnostically and preserves sight. Observation or NSAIDs risk permanent blindness.",
+      "lesson": "pa-patho-l12",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-patho-q046",
+      "q": "Which laboratory result is specific rather than merely sensitive for systemic lupus erythematosus?",
+      "choices": [
+        "Low white blood cell count",
+        "Antinuclear antibody",
+        "Anti-double-stranded DNA antibody",
+        "Elevated ESR"
+      ],
+      "answer": 2,
+      "why": "Antinuclear antibody is highly sensitive but appears in many healthy people and other autoimmune diseases. Anti-double-stranded DNA and anti-Smith are specific for lupus. ESR and leukopenia are nonspecific findings seen in many conditions.",
+      "lesson": "pa-patho-l12",
+      "difficulty": 1
+    },
+    {
+      "id": "pa-patho-q047",
+      "q": "A condition appears in every generation of a family, affects men and women roughly equally, and half the children of each affected parent are affected. Which pattern is this?",
+      "choices": [
+        "Mitochondrial",
+        "Autosomal dominant",
+        "Autosomal recessive",
+        "X-linked recessive"
+      ],
+      "answer": 1,
+      "why": "Every generation affected with a 50% transmission rate and no sex preference is autosomal dominant. Recessive conditions skip generations, X-linked recessive conditions affect mainly males and never pass father to son, and mitochondrial inheritance comes only from the mother.",
+      "lesson": "pa-patho-l13",
+      "difficulty": 1
+    },
+    {
+      "id": "pa-patho-q048",
+      "q": "A 7-year-old with sickle cell disease has a temperature of 39.0 C, looks well, and has a normal white count. What is the correct management?",
+      "choices": [
+        "Await the blood culture result before treating",
+        "Oral amoxicillin and recheck in 24 hours",
+        "Discharge with antipyretics and follow-up",
+        "Blood cultures and immediate ceftriaxone"
+      ],
+      "answer": 3,
+      "why": "Functional asplenia from repeated splenic infarction allows encapsulated organisms to cause overwhelming sepsis within hours. A well appearance and a normal white count do not exclude early bacteremia, so cultures and a parenteral third-generation cephalosporin are given immediately.",
+      "lesson": "pa-patho-l13",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-patho-q049",
+      "q": "A 6-year-old with sickle cell disease has a hemoglobin that has fallen from 8.4 to 4.1 g/dL with a reticulocyte count of 0.2%. What is the most likely cause?",
+      "choices": [
+        "Vaso-occlusive crisis",
+        "Splenic sequestration",
+        "Aplastic crisis from parvovirus B19",
+        "Acute chest syndrome"
+      ],
+      "answer": 2,
+      "why": "A reticulocyte count near zero means the marrow has stopped producing, which is the signature of parvovirus B19 infection shutting down erythropoiesis. Sequestration causes anemia with a high reticulocyte count and a large spleen, and acute chest syndrome requires a new pulmonary infiltrate.",
+      "lesson": "pa-patho-l13",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-patho-q050",
+      "q": "A 14-year-old with hemophilia B falls from a bicycle and strikes his head. He is alert and neurologically intact. What is the first action?",
+      "choices": [
+        "Factor IX replacement immediately, then CT head",
+        "Fresh frozen plasma and observation",
+        "Platelet transfusion",
+        "CT head, then factor IX if bleeding is identified"
+      ],
+      "answer": 0,
+      "why": "Intracranial hemorrhage in hemophilia is catastrophic and the CT result does not change the need for factor, so replacement precedes imaging. Plasma contains too little factor to correct the deficiency quickly, and platelets are already normal in hemophilia.",
+      "lesson": "pa-patho-l13",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-patho-q051",
+      "q": "A 17-year-old collapses while swimming competitively. Her brother drowned at 15 and an uncle died suddenly in his twenties. Her resting ECG shows a corrected QT of 490 ms. What should be avoided for life?",
+      "choices": [
+        "All physical activity of any kind",
+        "Potassium-containing intravenous fluids",
+        "Beta blockers",
+        "Ondansetron, azithromycin, and other QT-prolonging drugs"
+      ],
+      "answer": 3,
+      "why": "Congenital long QT syndrome with a family history of young sudden death and drowning requires strict avoidance of QT-prolonging medications. Beta blockers are the treatment, not a hazard, and potassium is actually kept toward the upper normal range to shorten repolarization.",
+      "lesson": "pa-patho-l13",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-patho-q052",
+      "q": "A patient develops lip and tongue swelling with no urticaria that does not respond to epinephrine, antihistamines, or steroids. There is a family history of similar episodes. What is the mechanism?",
+      "choices": [
+        "IgE-mediated mast cell degranulation",
+        "Bradykinin excess from C1 esterase inhibitor deficiency",
+        "Direct histamine release from a drug",
+        "Type IV T-cell reaction"
+      ],
+      "answer": 1,
+      "why": "Hereditary angioedema is C1 esterase inhibitor deficiency, so the mediator is bradykinin rather than histamine. That explains the absent hives, the absent itching, and the failure of every histamine-directed treatment. The family history supports the autosomal dominant inheritance.",
+      "lesson": "pa-patho-l13",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-patho-q053",
+      "q": "A patient with right lower lobe consolidation has a saturation of 85% that rises only to 89% on a non-rebreather mask. Which mechanism explains the poor response?",
+      "choices": [
+        "Shunt through unventilated but perfused alveoli",
+        "Diffusion limitation",
+        "Low inspired oxygen concentration",
+        "Hypoventilation"
+      ],
+      "answer": 0,
+      "why": "Alveoli filled with exudate cannot exchange gas, so the blood flowing past them never meets the delivered oxygen. That is shunt, the form of V/Q mismatch least responsive to supplemental oxygen. Hypoventilation raises carbon dioxide and corrects readily with oxygen.",
+      "lesson": "pa-patho-l14",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-patho-q054",
+      "q": "A urinalysis in a febrile patient with flank pain shows white blood cell casts. What does this finding establish?",
+      "choices": [
+        "Obstruction of the ureter",
+        "Contamination of the specimen",
+        "Infection involving kidney tissue rather than the bladder",
+        "Glomerular bleeding"
+      ],
+      "answer": 2,
+      "why": "Casts are moulded inside renal tubules, so white cell casts mean inflammation within the kidney, distinguishing pyelonephritis from cystitis. Red cell casts indicate glomerular bleeding, and obstruction is demonstrated by imaging rather than by casts.",
+      "lesson": "pa-patho-l14",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-patho-q055",
+      "q": "In suspected bacterial meningitis, why is dexamethasone given with or before the first antibiotic dose?",
+      "choices": [
+        "It prevents antibiotic-induced nephrotoxicity",
+        "Antibiotic-induced bacterial lysis releases fragments that intensify inflammation and brain injury",
+        "It lowers the fever, improving antibiotic activity",
+        "It increases antibiotic penetration into the cerebrospinal fluid"
+      ],
+      "answer": 1,
+      "why": "Killing bacteria releases cell wall components that amplify the cytokine response damaging the brain and the auditory nerve. Blunting that burst with steroids before or with the first dose reduces hearing loss and mortality; given later, the surge has already occurred.",
+      "lesson": "pa-patho-l14",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-patho-q056",
+      "q": "A patient who injects drugs has fever, a new tricuspid murmur, and multiple peripheral nodular lung opacities. What is the mechanism of the lung findings?",
+      "choices": [
+        "Pulmonary edema from valve failure",
+        "Drug-induced pulmonary fibrosis",
+        "Aspiration pneumonia",
+        "Septic emboli from right-sided endocarditis"
+      ],
+      "answer": 3,
+      "why": "Injection drug use seeds the tricuspid valve, and vegetations from the right side embolize directly into the pulmonary arteries, producing multiple peripheral nodules that may cavitate. Left-sided vegetations embolize systemically instead, to brain, spleen, and kidney.",
+      "lesson": "pa-patho-l14",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-patho-q057",
+      "q": "A septic patient has a central venous oxygen saturation of 82% while the lactate continues to rise. What does this combination suggest?",
+      "choices": [
+        "Severe anemia limiting oxygen delivery",
+        "The measurement is erroneous",
+        "Microcirculatory shunting and mitochondrial dysfunction, so tissue cannot extract or use delivered oxygen",
+        "Excellent tissue perfusion and imminent recovery"
+      ],
+      "answer": 2,
+      "why": "A high venous saturation with a rising lactate means oxygen is being delivered but not extracted or used. Sepsis plugs some capillaries while shunting blood past others, and damages mitochondria directly, so blood returns still oxygenated while cells suffocate.",
+      "lesson": "pa-patho-l14",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-patho-q058",
+      "q": "An 82-year-old with fluctuating cognition, recurrent detailed visual hallucinations, and mild rigidity becomes agitated overnight. Which order is potentially lethal?",
+      "choices": [
+        "Haloperidol 5 mg",
+        "Melatonin 3 mg",
+        "Environmental measures and reorientation",
+        "Quetiapine 12.5 mg"
+      ],
+      "answer": 0,
+      "why": "This picture suggests Lewy body dementia, in which dopamine blockade can cause severe rigidity, autonomic instability, and death. Quetiapine is the usual alternative. Non-pharmacologic measures are always appropriate first.",
+      "lesson": "pa-patho-l15",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-patho-q059",
+      "q": "A patient with Parkinson disease is admitted and kept nil by mouth for 2 days, during which levodopa is held. He develops rigidity, fever, and confusion. What is the explanation?",
+      "choices": [
+        "Levodopa toxicity from accumulation",
+        "Serotonin syndrome",
+        "New-onset sepsis unrelated to medication",
+        "Abrupt dopaminergic withdrawal producing a syndrome resembling neuroleptic malignant syndrome"
+      ],
+      "answer": 3,
+      "why": "Interrupting levodopa can produce parkinsonism-hyperpyrexia, which closely resembles neuroleptic malignant syndrome and is treated by restoring dopaminergic therapy. Infection must be excluded but the timing points to the drug hold. Serotonin syndrome requires serotonergic agents and produces clonus.",
+      "lesson": "pa-patho-l15",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-patho-q060",
+      "q": "A patient with known multiple sclerosis develops recurrence of an old right leg weakness during a febrile urinary infection. MRI shows no new lesion. What is happening?",
+      "choices": [
+        "A true relapse requiring high-dose steroids",
+        "Heat-related conduction failure in previously demyelinated axons",
+        "Conversion disorder",
+        "A new stroke"
+      ],
+      "answer": 1,
+      "why": "Demyelinated axons conduct marginally, and raised body temperature degrades conduction further, so old deficits reappear without new demyelination. Treating the fever and infection restores the baseline. A true relapse would show a new lesion and evolve over days.",
+      "lesson": "pa-patho-l15",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-patho-q061",
+      "q": "A head-injured patient has an intracranial pressure of 28 mmHg and a mean arterial pressure of 75 mmHg. Which statement is correct?",
+      "choices": [
+        "Cerebral perfusion pressure is 47 mmHg, below target, so hypotension must be avoided aggressively",
+        "Perfusion pressure cannot be estimated without a CT",
+        "Lowering blood pressure would improve perfusion",
+        "Cerebral perfusion pressure is 103 mmHg and is adequate"
+      ],
+      "answer": 0,
+      "why": "Cerebral perfusion pressure is mean arterial pressure minus intracranial pressure, so 75 minus 28 gives 47 mmHg, below the 60 to 70 target. Lowering the blood pressure would reduce perfusion further, which is why hypotension is so damaging in head injury.",
+      "lesson": "pa-patho-l15",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-patho-q062",
+      "q": "A patient with a large intracranial mass develops a dilated left pupil with right-sided weakness and a falling level of consciousness. What is occurring?",
+      "choices": [
+        "Seizure with Todd paralysis",
+        "Tonsillar herniation compressing the medulla",
+        "Uncal herniation compressing the left third cranial nerve",
+        "Anterior cerebral artery infarction"
+      ],
+      "answer": 2,
+      "why": "The uncus of the temporal lobe pushes across and compresses the third cranial nerve on the same side, giving an ipsilateral dilated pupil, while pressure on the cerebral peduncle produces contralateral weakness. Tonsillar herniation compresses the brainstem and stops respiration without this pupil pattern.",
+      "lesson": "pa-patho-l15",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-patho-q063",
+      "q": "A 24-year-old has frothy urine, periorbital swelling worse in the morning, a serum albumin of 2.1 g/dL, and 6 g of protein in 24 hours. Which complication should be anticipated?",
+      "choices": [
+        "Hyperkalemia from aldosterone excess",
+        "Venous thrombosis from urinary loss of antithrombin III",
+        "Rapidly progressive hypertension with red cell casts",
+        "Hemolytic anemia"
+      ],
+      "answer": 1,
+      "why": "This is nephrotic syndrome. Losing antithrombin III through the leaking glomerulus removes a natural anticoagulant, so these patients clot, classically in the renal vein. Red cell casts and hypertension belong to the nephritic pattern instead.",
+      "lesson": "pa-patho-l16",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-patho-q064",
+      "q": "A 22-year-old develops visible blood in the urine 1 day after the onset of a sore throat. What is the most likely diagnosis?",
+      "choices": [
+        "Minimal change disease",
+        "Urinary tract infection",
+        "Post-streptococcal glomerulonephritis",
+        "IgA nephropathy"
+      ],
+      "answer": 3,
+      "why": "IgA nephropathy produces hematuria within one to two days of a mucosal infection beginning, because pre-existing IgA complexes deposit immediately. Post-streptococcal glomerulonephritis appears one to three weeks after the infection has resolved, once immune complexes have formed.",
+      "lesson": "pa-patho-l16",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-patho-q065",
+      "q": "A 68-year-old diabetic presents with 2 days of breathlessness, sweating, and vomiting but no chest pain. The troponin is markedly elevated with a rising pattern. What explains the absent pain?",
+      "choices": [
+        "Pain occurs only in ST-elevation infarction",
+        "The infarct is too small to cause pain",
+        "Autonomic neuropathy has damaged the visceral afferent nerves carrying cardiac pain",
+        "Diabetes raises the pain threshold centrally"
+      ],
+      "answer": 2,
+      "why": "Diabetic autonomic neuropathy damages the afferent fibres that transmit cardiac ischemic pain, so infarction presents as breathlessness, fatigue, sweating, confusion, or vomiting. Silent infarcts are frequently large, and pain is not limited to ST-elevation events.",
+      "lesson": "pa-patho-l16",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-patho-q066",
+      "q": "A patient in thyroid storm has orders for propranolol, methimazole, hydrocortisone, and potassium iodide. What sequencing error must be avoided?",
+      "choices": [
+        "Giving potassium iodide before methimazole",
+        "Giving propranolol before hydrocortisone",
+        "Giving methimazole before propranolol",
+        "Giving hydrocortisone before the beta blocker"
+      ],
+      "answer": 0,
+      "why": "Iodine blocks hormone release but also supplies raw material for synthesis, so given before a thionamide it can worsen the storm. It follows methimazole by at least an hour. The other sequences are harmless; steroids block peripheral conversion and the beta blocker addresses the adrenergic surge.",
+      "lesson": "pa-patho-l16",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-patho-q067",
+      "q": "An elderly woman in January is found with a temperature of 33.8 C, a heart rate of 44, a sodium of 122 mEq/L, and depressed consciousness with carbon dioxide retention. What is the diagnosis and treatment?",
+      "choices": [
+        "Adrenal crisis; hydrocortisone alone",
+        "Sepsis; antibiotics alone",
+        "Thyroid storm; propranolol and methimazole",
+        "Myxedema coma; intravenous levothyroxine plus hydrocortisone"
+      ],
+      "answer": 3,
+      "why": "Hypothermia, bradycardia, hypoventilation, hyponatremia, and obtundation define myxedema coma. Hydrocortisone accompanies thyroid hormone because unrecognized adrenal insufficiency is common and thyroid hormone alone can precipitate adrenal crisis. Infection is often the trigger and is treated alongside.",
+      "lesson": "pa-patho-l16",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-patho-q068",
+      "q": "A patient has a hemoglobin of 7.9 g/dL with a reticulocyte count of 9%, an LDH of 680 units/L, an indirect bilirubin of 3.1 mg/dL, and an undetectable haptoglobin. What is the mechanism?",
+      "choices": [
+        "Impaired production from iron deficiency",
+        "Hemolysis",
+        "Acute blood loss from the gut",
+        "Anemia of chronic disease"
+      ],
+      "answer": 1,
+      "why": "High LDH, high indirect bilirubin, absent haptoglobin, and reticulocytosis together are the fingerprint of red cell destruction. Iron deficiency and chronic disease produce a low reticulocyte count, and acute blood loss raises reticulocytes but does not consume haptoglobin or raise indirect bilirubin this way.",
+      "lesson": "pa-patho-l17",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-patho-q069",
+      "q": "Which iron study pattern indicates anemia of chronic disease rather than iron deficiency?",
+      "choices": [
+        "Low serum iron, low total iron binding capacity, normal or high ferritin",
+        "High serum iron, high ferritin, high saturation",
+        "Normal iron studies with a low MCV",
+        "Low ferritin, high total iron binding capacity, low saturation"
+      ],
+      "answer": 0,
+      "why": "Inflammation sequesters iron rather than depleting it, so ferritin, an acute phase protein, is normal or high while binding capacity falls. Iron deficiency shows the opposite: a low ferritin with a high binding capacity as the body hunts for iron.",
+      "lesson": "pa-patho-l17",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-patho-q070",
+      "q": "A patient with an MCV of 118 fL, hypersegmented neutrophils, and impaired vibration sense is given folate alone. What is the consequence?",
+      "choices": [
+        "Nothing changes; folate is inactive in this setting",
+        "Complete correction of both the anemia and the neurologic findings",
+        "The blood count improves while spinal cord degeneration progresses and becomes permanent",
+        "The anemia worsens immediately"
+      ],
+      "answer": 2,
+      "why": "Folate corrects megaloblastic hematopoiesis regardless of which vitamin is deficient, so the blood count normalizes and masks the diagnosis. Only B12 replacement halts subacute combined degeneration of the posterior and lateral columns, which becomes irreversible if untreated.",
+      "lesson": "pa-patho-l17",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-patho-q071",
+      "q": "A bleeding trauma patient at 33 C has received 4 L of crystalloid. Which statement about his coagulation is most accurate?",
+      "choices": [
+        "Coagulopathy begins only after several units of blood are transfused",
+        "Hypoperfusion-driven fibrinolysis begins within minutes, and hypothermia, acidosis, and dilution compound it",
+        "A coagulation panel drawn now accurately reflects clotting at his body temperature",
+        "Crystalloid improves clotting by increasing flow"
+      ],
+      "answer": 1,
+      "why": "Tissue hypoperfusion activates protein C and unleashes fibrinolysis before any resuscitation is given. Hypothermia slows every enzyme, acidosis inhibits the cascade, and crystalloid dilutes what remains. Coagulation assays run at 37 C hide the hypothermic effect entirely.",
+      "lesson": "pa-patho-l17",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-patho-q072",
+      "q": "A patient with thrombotic thrombocytopenic purpura has a platelet count of 14,000, schistocytes on the smear, and confusion. Which intervention is contraindicated in the absence of life-threatening bleeding?",
+      "choices": [
+        "Corticosteroids",
+        "Red cell transfusion",
+        "Plasma exchange",
+        "Platelet transfusion"
+      ],
+      "answer": 3,
+      "why": "Platelets are being consumed by uncleaved von Willebrand factor driving microvascular thrombosis, so transfused platelets fuel further clotting and can worsen organ ischemia. Plasma exchange is the definitive treatment, with steroids as an adjunct and red cells given for anemia.",
+      "lesson": "pa-patho-l17",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-patho-q073",
+      "q": "A 64-year-old hypertensive man has sudden tearing chest pain radiating between the shoulder blades, a right arm pressure of 186/98, and a left arm pressure of 142/84. Which treatment would be catastrophic?",
+      "choices": [
+        "Arterial line placement",
+        "Esmolol infusion",
+        "Thrombolysis",
+        "CT angiography of the chest"
+      ],
+      "answer": 2,
+      "why": "This is aortic dissection, and dissolving clot in a torn aorta causes fatal hemorrhage. Rate control with esmolol reduces shearing force and is first line. CT angiography confirms the diagnosis and invasive monitoring guides pressure control.",
+      "lesson": "pa-patho-l18",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-patho-q074",
+      "q": "A hypotensive patient has distended neck veins, clear lungs, muffled heart sounds, and a systolic pressure that drops 18 mmHg on inspiration. What is the diagnosis?",
+      "choices": [
+        "Cardiac tamponade",
+        "Acute left heart failure",
+        "Massive hemothorax",
+        "Tension pneumothorax"
+      ],
+      "answer": 0,
+      "why": "Distended neck veins with clear lungs, muffled sounds, and an exaggerated inspiratory fall in systolic pressure point to tamponade. Tension pneumothorax removes breath sounds on one side, left heart failure produces crackles, and hemothorax produces dullness with reduced breath sounds.",
+      "lesson": "pa-patho-l18",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-patho-q075",
+      "q": "A 71-year-old smoker with no prior stone history has sudden left flank pain, a blood pressure of 86/52, and a tender pulsatile abdominal mass. What should be assumed?",
+      "choices": [
+        "Pyelonephritis",
+        "Musculoskeletal back strain",
+        "First presentation of nephrolithiasis",
+        "Ruptured abdominal aortic aneurysm"
+      ],
+      "answer": 3,
+      "why": "A first episode of flank pain in an older smoker with hypotension and a pulsatile mass is a ruptured aneurysm until excluded. Stones typically begin decades earlier and do not cause hypotension. This mislabel is the classic fatal delay.",
+      "lesson": "pa-patho-l18",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-patho-q076",
+      "q": "A patient vomits a large volume of bright red blood. The initial hemoglobin is 13.1 g/dL. How should this be interpreted?",
+      "choices": [
+        "The bleeding is minor and can be observed",
+        "Whole blood loss does not change concentration until fluid shifts in, so the value is falsely reassuring",
+        "The hemoglobin proves the blood is swallowed rather than gastrointestinal",
+        "The specimen must be hemolyzed"
+      ],
+      "answer": 1,
+      "why": "In acute hemorrhage red cells and plasma are lost in proportion, so the concentration stays the same until interstitial fluid or crystalloid dilutes what remains, typically over hours. Resuscitation decisions are made on vital signs and clinical picture, not the initial hemoglobin.",
+      "lesson": "pa-patho-l18",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-patho-q077",
+      "q": "Which script element most reliably distinguishes appendicitis from gastroenteritis early in the course?",
+      "choices": [
+        "Migration of pain from periumbilical to right lower quadrant",
+        "Presence of low-grade fever",
+        "Loss of appetite",
+        "Presence of vomiting"
+      ],
+      "answer": 0,
+      "why": "Migration reflects a real mechanism: visceral stretch is felt centrally until the inflamed surface touches the precisely mapped parietal peritoneum. Vomiting, fever, and anorexia occur in both conditions and do not discriminate.",
+      "lesson": "pa-patho-l18",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-patho-q078",
+      "q": "A 44-year-old describes a headache that reached maximum severity within seconds 3 hours ago, with vomiting and photophobia. Neurologic examination is normal. What is the next step?",
+      "choices": [
+        "MRI brain in the morning",
+        "Lumbar puncture before any imaging",
+        "Non-contrast CT head immediately",
+        "Treat as migraine and reassess in 2 hours"
+      ],
+      "answer": 2,
+      "why": "Thunderclap onset means subarachnoid hemorrhage until excluded, and non-contrast CT within 6 hours of onset is highly sensitive. A normal examination is common early. Lumbar puncture follows a negative CT when suspicion remains, never precedes imaging.",
+      "lesson": "pa-patho-l19",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-patho-q079",
+      "q": "A patient on chronic prednisone stopped it 5 days ago and now has hypotension unresponsive to 2 L of fluid, vomiting, and a glucose of 48 mg/dL. What is the immediate action?",
+      "choices": [
+        "Norepinephrine infusion alone",
+        "Hydrocortisone 100 mg IV immediately",
+        "Wait for an ACTH stimulation test",
+        "Broad-spectrum antibiotics alone"
+      ],
+      "answer": 1,
+      "why": "Fluid-unresponsive hypotension with hypoglycemia after steroid withdrawal is adrenal crisis. Hydrocortisone is given at once; a cortisol level may be drawn first but never delays treatment. Vasopressors work poorly without cortisol, and antibiotics address a possible trigger rather than the crisis.",
+      "lesson": "pa-patho-l19",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-patho-q080",
+      "q": "A 23-year-old admitted with a sickle cell pain crisis develops a fever of 38.7 C, chest pain, a saturation of 88%, and a new right middle lobe infiltrate on day 3. What is the diagnosis and its significance?",
+      "choices": [
+        "Aplastic crisis; check a reticulocyte count",
+        "Splenic sequestration; check the spleen size",
+        "Hospital-acquired pneumonia; add antibiotics and continue",
+        "Acute chest syndrome; the leading cause of death in sickle cell disease"
+      ],
+      "answer": 3,
+      "why": "A new pulmonary infiltrate with fever or hypoxia during a sickle cell admission defines acute chest syndrome, which combines infection, infarction, and fat embolism. It requires oxygen, analgesia, antibiotics covering atypicals, and exchange transfusion when severe. Aplastic crisis lowers reticulocytes without an infiltrate.",
+      "lesson": "pa-patho-l19",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-patho-q081",
+      "q": "Which group of conditions is treated before any confirmatory laboratory result returns?",
+      "choices": [
+        "Osteoarthritis, gout, and rheumatoid arthritis",
+        "Nephrotic syndrome, IgA nephropathy, and membranous nephropathy",
+        "Adrenal crisis, thyroid storm, and anaphylaxis",
+        "Chronic lymphocytic leukemia, Hodgkin lymphoma, and myelodysplasia"
+      ],
+      "answer": 2,
+      "why": "All three are clinical diagnoses where the confirming test returns far too late to be useful: cortisol, thyroid function, and tryptase all lag the emergency. The other groups are chronic or subacute conditions diagnosed with testing before treatment begins.",
+      "lesson": "pa-patho-l19",
+      "difficulty": 1
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "pa-patho-s03",
+      "title": "Fever, headache, and a brain running out of room",
+      "setting": "ed",
+      "intro": "A `61`-year-old man is brought in by his wife for a headache that began yesterday and confusion since this morning. He had a cold last week. He is on no immunosuppressants and has no history of head injury. He is warm to the touch and keeps his eyes closed against the overhead light.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "He answers his name but not the date and pulls away when you flex his neck. There is no rash. The team is assembling the plan.",
+          "vitals": {
+            "hr": 112,
+            "bp": "148/88",
+            "rr": 22,
+            "spo2": 96,
+            "temp": 39.4,
+            "gcs": 13
+          },
+          "choices": [
+            {
+              "text": "Blood cultures, then dexamethasone with ceftriaxone, vancomycin, and ampicillin immediately, then arrange CT and lumbar puncture",
+              "next": "s2",
+              "feedback": "Correct. Antibiotic delay costs lives, and dexamethasone must precede or accompany the first dose because killing bacteria releases fragments that intensify the inflammation injuring the brain. At `61` he also needs ampicillin for Listeria.",
+              "score": 1
+            },
+            {
+              "text": "Lumbar puncture first so the fluid is not sterilized, then antibiotics",
+              "next": "s2",
+              "feedback": "Harmful sequencing. Cerebrospinal fluid cell counts, protein, and glucose remain diagnostic for hours after the first dose, and blood cultures are often still positive. Nothing justifies the delay.",
+              "score": -1
+            },
+            {
+              "text": "Antibiotics now but hold the steroid until the organism is known",
+              "next": "s2",
+              "feedback": "Half right. The antibiotic timing is correct, but dexamethasone only works if it precedes the antibiotic-induced lysis burst. Given later it has missed its moment.",
+              "score": 0
+            },
+            {
+              "text": "Start acyclovir alone for presumed viral encephalitis",
+              "next": "s2",
+              "feedback": "Acyclovir is reasonable to add when encephalitis is possible, but starting it instead of antibacterial coverage in a patient who may have bacterial meningitis is a fatal narrowing.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "Drugs are in. The resident asks whether this patient needs a CT before the lumbar puncture, and why the question is being asked at all.",
+          "choices": [
+            {
+              "text": "Yes: altered mental status is an indication, because removing fluid below a pressure gradient risks herniation",
+              "next": "s3",
+              "feedback": "Correct. The indications for CT first are immunocompromise, prior central nervous system disease, new seizure, papilledema, focal deficit, and altered consciousness. The concern is a pressure difference across the foramen magnum.",
+              "score": 1
+            },
+            {
+              "text": "No: CT is never needed before a lumbar puncture in a febrile patient",
+              "next": "s3",
+              "feedback": "Incorrect. Most patients do not need imaging first, but this one meets a specific indication. The rule exists precisely for patients like him.",
+              "score": -1
+            },
+            {
+              "text": "Yes, because CT rules out meningitis",
+              "next": "s3",
+              "feedback": "Right action, wrong reason. CT cannot diagnose or exclude meningitis. It is looking for a mass, hydrocephalus, or midline shift that would make the tap dangerous.",
+              "score": 0
+            },
+            {
+              "text": "It does not matter now that antibiotics are running",
+              "next": "s3",
+              "feedback": "The antibiotics are given, but the tap still matters for the organism and the sensitivity, and the safety question is unchanged.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "CT shows no mass and no shift. The lumbar puncture returns an opening pressure of `34 cm H2O`, `4,200` white cells that are `92%` neutrophils, a glucose of `22 mg/dL` with a serum glucose of `140 mg/dL`, and a protein of `310 mg/dL`.",
+          "choices": [
+            {
+              "text": "This is bacterial meningitis: neutrophil predominance with a cerebrospinal fluid glucose far below two thirds of serum and a very high protein",
+              "next": "s4",
+              "feedback": "Correct. Bacteria consume glucose and the inflammatory exudate raises protein. Viral meningitis shows lymphocytes, a normal glucose, and a mildly raised protein.",
+              "score": 1
+            },
+            {
+              "text": "This is viral meningitis; the antibiotics can be stopped",
+              "next": "s4",
+              "feedback": "Dangerously wrong. Thousands of neutrophils with a low glucose is bacterial until cultures say otherwise, and stopping coverage now would be fatal.",
+              "score": -1
+            },
+            {
+              "text": "The high opening pressure is the only abnormal finding and reflects obesity",
+              "next": "s4",
+              "feedback": "The opening pressure is abnormal, but so are the cell count, glucose, and protein. Attributing the whole picture to body habitus ignores three diagnostic values.",
+              "score": 0
+            },
+            {
+              "text": "Bacterial meningitis, and the raised opening pressure predicts a higher risk of neurologic complications",
+              "next": "s4",
+              "feedback": "Also correct and a useful addition. High opening pressure reflects cerebral edema and correlates with worse outcomes, which is why these patients are watched closely for deterioration.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "Two hours later he is harder to rouse. His blood pressure has climbed and his heart rate has fallen. His breathing pattern has become irregular.",
+          "vitals": {
+            "hr": 48,
+            "bp": "196/104",
+            "rr": 10,
+            "spo2": 94,
+            "gcs": 8
+          },
+          "choices": [
+            {
+              "text": "Recognize the Cushing reflex, elevate the head to `30` degrees with the neck straight, intubate protecting against hypotension, and give hypertonic saline",
+              "next": "s5",
+              "feedback": "Correct. Hypertension with bradycardia and irregular respiration is the body raising pressure to perfuse a squeezed brain. Head positioning, airway control without a pressure drop, and an osmotic agent buy time.",
+              "score": 1
+            },
+            {
+              "text": "Treat the hypertension aggressively with a labetalol infusion to a normal blood pressure",
+              "next": "s5",
+              "feedback": "Harmful. That blood pressure is maintaining cerebral perfusion against a high intracranial pressure. Normalizing it drops perfusion pressure and worsens the ischemia.",
+              "score": -1
+            },
+            {
+              "text": "Hyperventilate him to a carbon dioxide of `25 mmHg` and keep him there",
+              "next": "s5",
+              "feedback": "Prolonged aggressive hyperventilation constricts cerebral vessels and causes ischemia. Brief hyperventilation is a bridge to definitive therapy only, with a normal carbon dioxide as the target otherwise.",
+              "score": 0
+            },
+            {
+              "text": "Repeat the lumbar puncture to relieve pressure",
+              "next": "s5",
+              "feedback": "No. In a deteriorating patient with a high opening pressure, removing more fluid risks completing a herniation rather than relieving it.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "He stabilizes after hypertonic saline and is intubated for airway protection. Cultures later grow Streptococcus pneumoniae. His wife asks why the drugs were started before anyone knew what he had.",
+          "choices": [
+            {
+              "text": "Explain that mortality rises with every hour of delay, that the steroid only works before the antibiotic, and that the spinal fluid stays diagnostic for hours afterward",
+              "next": "end",
+              "feedback": "Correct and clear. This is the entire logic of the sequence stated in plain language, and it is exactly what families ask.",
+              "score": 1
+            },
+            {
+              "text": "Say the team was simply following a protocol",
+              "next": "end",
+              "feedback": "True but hollow. The protocol exists for reasons that are easy to say, and saying them helps a frightened family trust what happened.",
+              "score": 0
+            },
+            {
+              "text": "Tell her the antibiotics were started because the cultures were already positive",
+              "next": "end",
+              "feedback": "Factually wrong. Cultures took most of a day; the drugs were empiric. Do not invent a reassuring but false explanation.",
+              "score": -1
+            },
+            {
+              "text": "Explain the timing and add that his age is why a fourth drug was included",
+              "next": "end",
+              "feedback": "Accurate and useful. Ampicillin was added for Listeria because he is over `50`, and saying so shows the choice was specific to him rather than routine.",
+              "score": 0
+            }
+          ]
+        }
+      ],
+      "debrief": "The pattern: bacterial meningitis is a race between the drug and the inflammatory response. Cultures, then dexamethasone with the first antibiotic, then imaging and the tap — and the tap stays diagnostic for hours, so nothing is lost by treating first. Imaging comes before the lumbar puncture only for specific reasons: altered consciousness, focal deficit, seizure, papilledema, immunocompromise, or prior central nervous system disease, and the concern is a pressure gradient, not the diagnosis itself. The spinal fluid pattern is mechanistic: bacteria eat glucose and exudate raises protein, so neutrophils with a low glucose and high protein is bacterial. And when hypertension appears with bradycardia and irregular breathing, that blood pressure is a compensation, not a problem to be treated away."
+    },
+    {
+      "id": "pa-patho-s04",
+      "title": "Reasoning out an anemia from its mechanism",
+      "setting": "classroom",
+      "intro": "Work an anemia the way a clinician does: not by memorizing which disease has which number, but by asking three questions in order. Is the marrow making red cells, are they being destroyed, or are they being lost? The patient is a `67`-year-old woman referred for fatigue and a hemoglobin of `8.1 g/dL`. She takes omeprazole and has type 2 diabetes. No visible bleeding.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "You have the hemoglobin and nothing else. Which single additional value best divides the possibilities?",
+          "choices": [
+            {
+              "text": "The reticulocyte count, because it separates a production problem from destruction or loss",
+              "next": "s2",
+              "feedback": "Correct. A high reticulocyte count means the marrow is responding, so the cells are being destroyed or bled out. A low count means production has failed.",
+              "score": 1
+            },
+            {
+              "text": "The serum iron alone",
+              "next": "s2",
+              "feedback": "Iron studies matter, but a single serum iron swings with meals and inflammation and cannot categorize the anemia by mechanism.",
+              "score": 0
+            },
+            {
+              "text": "The white blood cell count",
+              "next": "s2",
+              "feedback": "Useful if the marrow is failing globally, but it does not separate the three mechanisms of anemia.",
+              "score": 0
+            },
+            {
+              "text": "A bone marrow biopsy immediately",
+              "next": "s2",
+              "feedback": "Far too invasive as a first step. The biopsy is for when non-invasive testing has failed to explain a production failure.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "Her reticulocyte count is `0.6%`, which is low for that degree of anemia. The MCV is `113 fL`. Which group of causes does that combination point to?",
+          "choices": [
+            {
+              "text": "Macrocytic underproduction: B12 or folate deficiency, alcohol, liver disease, hypothyroidism, or myelodysplasia",
+              "next": "s3",
+              "feedback": "Correct. A large cell with a marrow that is not responding narrows the field sharply, and her long-term proton pump inhibitor use is a real risk factor for B12 malabsorption.",
+              "score": 1
+            },
+            {
+              "text": "Iron deficiency",
+              "next": "s3",
+              "feedback": "Iron deficiency makes cells small, not large. An MCV of `113` argues strongly against it, though a mixed deficiency can produce a deceptively normal MCV.",
+              "score": 0
+            },
+            {
+              "text": "Acute blood loss",
+              "next": "s3",
+              "feedback": "Acute loss raises the reticulocyte count and does not change cell size. The low reticulocyte count points away from it.",
+              "score": 0
+            },
+            {
+              "text": "Hemolysis",
+              "next": "s3",
+              "feedback": "Hemolysis drives reticulocytes up, often above `5%`. A count of `0.6%` makes destruction very unlikely as the main mechanism.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "The smear shows hypersegmented neutrophils. On examination she has reduced vibration sense at both ankles and an unsteady gait she blames on her diabetes. What matters most now?",
+          "choices": [
+            {
+              "text": "Send both B12 and folate, and treat with B12 while waiting, because folate alone would correct the blood and let the neurologic damage progress",
+              "next": "s4",
+              "feedback": "Correct. The two deficiencies look identical in the blood, but only B12 deficiency degenerates the posterior and lateral columns, and that damage becomes permanent.",
+              "score": 1
+            },
+            {
+              "text": "Start folate now since it is cheap and safe, and sort out B12 later",
+              "next": "s4",
+              "feedback": "This is the specific trap. Folate normalizes the count and removes the clue while subacute combined degeneration continues unopposed.",
+              "score": -1
+            },
+            {
+              "text": "Attribute the neuropathy to diabetes and treat the anemia with transfusion",
+              "next": "s4",
+              "feedback": "Diabetic neuropathy is a stocking-glove sensory loss; loss of vibration and position sense with gait unsteadiness points to the posterior columns instead. Transfusion treats a number, not a cause.",
+              "score": -1
+            },
+            {
+              "text": "Send B12, folate, and also a methylmalonic acid level",
+              "next": "s4",
+              "feedback": "A good addition. Methylmalonic acid rises in B12 deficiency but not folate deficiency, which resolves borderline B12 values.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "Her B12 returns at `98 pg/mL` and the folate is normal. Treatment begins. Three months later her hemoglobin is `11.4 g/dL` but the MCV is now `76 fL` and the ferritin is `9 ng/mL`.",
+          "choices": [
+            {
+              "text": "A second, previously masked iron deficiency has emerged, and it requires investigation for a source of blood loss",
+              "next": "s5",
+              "feedback": "Correct. Two deficiencies can offset each other's effect on cell size. Once the macrocytosis is corrected, the microcytosis appears — and iron deficiency at her age still demands a search for gastrointestinal blood loss.",
+              "score": 1
+            },
+            {
+              "text": "The B12 treatment caused iron deficiency and should be stopped",
+              "next": "s5",
+              "feedback": "Treatment did not cause it; a rapidly regenerating marrow consumed the remaining iron stores and unmasked what was already there. Stopping B12 would restart the neurologic damage.",
+              "score": -1
+            },
+            {
+              "text": "This is expected and needs no further action",
+              "next": "s5",
+              "feedback": "The blood count is better, but a ferritin of `9` in a `67`-year-old is a finding that has to be explained, not accepted.",
+              "score": 0
+            },
+            {
+              "text": "Start oral iron and arrange endoscopy and colonoscopy",
+              "next": "s5",
+              "feedback": "Correct in substance. Replace the iron and look for the source, because iron deficiency in a postmenopausal woman means occult loss until proven otherwise.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "Colonoscopy finds a bleeding right-sided adenocarcinoma. The team reviews what the case taught. Which summary is the most accurate?",
+          "choices": [
+            {
+              "text": "The reticulocyte count and MCV sorted the mechanism, hypersegmentation plus neurologic signs named the vitamin, and the unmasked iron deficiency named the tumor",
+              "next": "end",
+              "feedback": "Correct. Each step narrowed the field using mechanism rather than pattern recognition, and each answer generated the next question.",
+              "score": 1
+            },
+            {
+              "text": "The case shows that all anemias should be worked up with endoscopy first",
+              "next": "end",
+              "feedback": "Overgeneralized. Endoscopy was indicated once iron deficiency appeared, not at the outset when the picture was macrocytic.",
+              "score": 0
+            },
+            {
+              "text": "The lesson is that hemoglobin alone is enough to guide treatment",
+              "next": "end",
+              "feedback": "The opposite. Hemoglobin told you there was anemia and nothing about why, and treating it alone would have missed both the vitamin and the cancer.",
+              "score": -1
+            },
+            {
+              "text": "The neurologic findings were incidental and unrelated to the anemia",
+              "next": "end",
+              "feedback": "They were the most important finding in the case, because they changed the urgency and ruled out treating with folate alone.",
+              "score": -1
+            }
+          ]
+        }
+      ],
+      "debrief": "The pattern to keep: anemia has exactly three mechanisms, and the reticulocyte count decides which one you are in before any other test matters. Cell size then narrows the list. Hypersegmented neutrophils mean megaloblastic, and the neurologic examination — vibration, position sense, gait — is what separates B12 from folate, because only B12 protects the spinal cord. Folate given alone in an untyped megaloblastic anemia fixes the blood and lets the cord degenerate. Finally, deficiencies hide each other: a macrocytic and a microcytic process together can produce a normal MCV, and correcting one reveals the other. A ferritin that falls after treatment is not a complication, it is a second diagnosis appearing."
+    },
+    {
+      "id": "pa-patho-s05",
+      "title": "A sickle cell crisis that changes shape overnight",
+      "setting": "ed",
+      "intro": "A `22`-year-old man with homozygous sickle cell disease comes in with two days of pain in both femurs and his lower back, the same pain he has had a dozen times. He rates it `9` out of `10`. He takes hydroxyurea and folic acid. He has been to this department often and there is a note in his chart about frequent visits.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "He is in obvious distress, sitting rigid, breathing shallowly. Room air saturation is `95%`. The nurse asks how quickly analgesia should be given.",
+          "vitals": {
+            "hr": 104,
+            "bp": "128/74",
+            "rr": 20,
+            "spo2": 95,
+            "temp": 37.4
+          },
+          "choices": [
+            {
+              "text": "Treat within `30` minutes with a weight-based opioid on his individualized plan, plus fluids and reassessment every `15-30` minutes",
+              "next": "s2",
+              "feedback": "Correct. Vaso-occlusive pain is real tissue ischemia, and delays in analgesia are both a quality failure and a clinical one. An individualized plan avoids starting from zero every visit.",
+              "score": 1
+            },
+            {
+              "text": "Delay opioids until laboratory results return to avoid masking a diagnosis",
+              "next": "s2",
+              "feedback": "Harmful. Analgesia does not obscure sickle cell crisis, and the delay is exactly the pattern these patients report. Treat the pain and work the problem in parallel.",
+              "score": -1
+            },
+            {
+              "text": "Give oral ibuprofen alone and reassess in an hour",
+              "next": "s2",
+              "feedback": "NSAIDs are a useful adjunct but are not sufficient for severe crisis pain, and chronic NSAID use in sickle nephropathy carries its own risk.",
+              "score": 0
+            },
+            {
+              "text": "Give intravenous fluids at twice maintenance and hold analgesia until they are running",
+              "next": "s2",
+              "feedback": "Fluids help, but aggressive overhydration can worsen pulmonary complications, and there is no reason to sequence them ahead of pain control.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "Pain is partly controlled. His temperature is now `38.6 C`. He says he feels a little short of breath but the chest hurts mostly when he breathes in, which he attributes to the crisis.",
+          "vitals": {
+            "hr": 118,
+            "bp": "116/68",
+            "rr": 26,
+            "spo2": 91,
+            "temp": 38.6
+          },
+          "choices": [
+            {
+              "text": "Treat the fever as an emergency: blood cultures, chest radiograph, and prompt ceftriaxone, given functional asplenia",
+              "next": "s3",
+              "feedback": "Correct. Repeated splenic infarction leaves these patients functionally asplenic, so encapsulated organisms can produce overwhelming sepsis within hours. Fever here is never a routine finding.",
+              "score": 1
+            },
+            {
+              "text": "Attribute the fever to the crisis itself and continue analgesia only",
+              "next": "s3",
+              "feedback": "Dangerous. Crisis can produce a low-grade temperature, but `38.6 C` with hypoxia in an asplenic patient demands cultures, imaging, and antibiotics.",
+              "score": -1
+            },
+            {
+              "text": "Obtain a chest radiograph but hold antibiotics until it is read",
+              "next": "s3",
+              "feedback": "The film matters, but waiting on it before antibiotics in a febrile asplenic patient wastes the window that decides the outcome.",
+              "score": 0
+            },
+            {
+              "text": "Blood cultures and antibiotics, and also increase supplemental oxygen and recheck the saturation",
+              "next": "s3",
+              "feedback": "Correct and complete. A falling saturation in a sickle cell patient with chest pain is the beginning of a specific complication, not a nuisance number.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "The chest radiograph shows a new left lower lobe infiltrate that was not present on a film from six weeks ago. His saturation is `89%` on `4 L` by nasal cannula.",
+          "choices": [
+            {
+              "text": "Name it as acute chest syndrome and escalate: oxygen, antibiotics covering atypicals, analgesia sufficient to allow deep breathing, incentive spirometry, and hematology involvement",
+              "next": "s4",
+              "feedback": "Correct. A new infiltrate plus fever or hypoxia in sickle cell disease is acute chest syndrome, the leading cause of death in this population. Infection, infarction, and marrow fat embolism all contribute.",
+              "score": 1
+            },
+            {
+              "text": "Call it community-acquired pneumonia and treat with ceftriaxone alone",
+              "next": "s4",
+              "feedback": "Under-recognition. The label matters because acute chest syndrome can progress to respiratory failure in hours and may require exchange transfusion, which pneumonia does not.",
+              "score": 0
+            },
+            {
+              "text": "Reduce the opioid dose because the respiratory rate is high and opioids are risky",
+              "next": "s4",
+              "feedback": "Backwards. Undertreated chest pain causes splinting and shallow breathing, which worsens atelectasis and the syndrome itself. The aim is enough analgesia to breathe deeply, with monitoring.",
+              "score": -1
+            },
+            {
+              "text": "Acute chest syndrome, and start incentive spirometry every hour while awake",
+              "next": "s4",
+              "feedback": "Correct and specifically useful. Incentive spirometry during a crisis measurably reduces the development and severity of acute chest syndrome.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "Over four hours he needs `10 L` by mask to hold `90%`, his work of breathing is rising, and his hemoglobin has fallen from `8.9` to `7.2 g/dL`. Hematology is at the bedside.",
+          "vitals": {
+            "hr": 132,
+            "bp": "104/62",
+            "rr": 34,
+            "spo2": 90,
+            "temp": 38.9
+          },
+          "choices": [
+            {
+              "text": "Prepare for exchange transfusion and for possible non-invasive or invasive ventilatory support",
+              "next": "s5",
+              "feedback": "Correct. Severe or progressive acute chest syndrome is treated with exchange transfusion, which lowers the proportion of sickle hemoglobin without raising viscosity the way simple transfusion to a high hematocrit would.",
+              "score": 1
+            },
+            {
+              "text": "Give a large simple transfusion to a hemoglobin of `12 g/dL`",
+              "next": "s5",
+              "feedback": "Harmful. Raising the hematocrit without removing sickled cells increases viscosity and can worsen vaso-occlusion. Exchange is the procedure for severe disease.",
+              "score": -1
+            },
+            {
+              "text": "Increase intravenous fluids to `3` times maintenance to dilute the blood",
+              "next": "s5",
+              "feedback": "Overhydration in acute chest syndrome causes pulmonary edema on top of an already failing lung. Euvolemia is the target, not dilution.",
+              "score": -1
+            },
+            {
+              "text": "Continue current therapy and reassess in another four hours",
+              "next": "s5",
+              "feedback": "The trajectory is the finding. Rising oxygen requirement with rising work of breathing is deterioration, and waiting converts a treatable syndrome into an intubation.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "He improves after exchange transfusion and is transferred to the intensive care unit. A colleague remarks that the chart note about frequent visits made everyone slower at the start.",
+          "choices": [
+            {
+              "text": "Say plainly that the note biased the initial response, that his pain was genuine tissue ischemia, and that the delay is a documented and correctable pattern in sickle cell care",
+              "next": "end",
+              "feedback": "Correct. Naming the bias is how it stops. Patients with sickle cell disease wait longer for analgesia than patients with comparable pain from other causes, and the consequences are measurable.",
+              "score": 1
+            },
+            {
+              "text": "Agree that frequent attendance justifies extra caution with opioids",
+              "next": "end",
+              "feedback": "This is the reasoning that produced the delay. Frequent visits in sickle cell disease reflect a severe illness, not drug seeking, and an individualized analgesia plan is the answer.",
+              "score": -1
+            },
+            {
+              "text": "Say nothing; the patient did well in the end",
+              "next": "end",
+              "feedback": "He did well because the team escalated later, not because the start was sound. A near miss that goes unnamed gets repeated.",
+              "score": 0
+            },
+            {
+              "text": "Point out that the fever and falling saturation were the objective findings that redirected the case",
+              "next": "end",
+              "feedback": "True and useful. Objective deterioration corrected the trajectory, but relying on it means waiting for the patient to get worse before being believed.",
+              "score": 0
+            }
+          ]
+        }
+      ],
+      "debrief": "The pattern: sickle cell disease is several emergencies wearing one label. Vaso-occlusive pain is genuine ischemia and is treated fast, with weight-based analgesia and an individualized plan. Fever in a functionally asplenic patient is a sepsis pathway, not a symptom. And a new pulmonary infiltrate with fever or hypoxia is acute chest syndrome, the leading cause of death in this disease, driven by infection, pulmonary infarction, and fat embolism together. Analgesia adequate for deep breathing and hourly incentive spirometry are preventive, not comfort measures. When it progresses, exchange transfusion lowers the fraction of sickle hemoglobin without the viscosity penalty of a simple transfusion to a high hematocrit. Finally, the chart note that slows a team down is part of the pathophysiology of the outcome, and naming that is part of the treatment."
+    }
+  ]
+}

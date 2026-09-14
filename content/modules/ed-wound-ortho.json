@@ -1,0 +1,1807 @@
+{
+  "schema": 1,
+  "id": "ed-wound-ortho",
+  "track": "edtech",
+  "title": "Wounds, Fractures & Ortho Injuries",
+  "short": "Wound & Ortho",
+  "summary": "The injuries themselves and how the department treats them: wound types and bites, closure decisions, abscess and burn care, fractures region by region, the ortho emergencies, reductions, splints and what the patient is told on the way out.",
+  "lessons": [
+    {
+      "id": "ed-wound-ortho-l01",
+      "title": "Wound types and what each one risks",
+      "minutes": 8,
+      "body": "A wound is named for how the tissue was broken, and the name predicts the complication. Knowing the type tells you the infection risk and whether it will be closed before anyone examines it.\n\n## Contamination classes\n\nSurgeons grade wounds by how dirty they are, and the infection rates are worth knowing because they drive the antibiotic decision.\n\n| Class | What it is | Infection risk |\n|---|---|---|\n| Clean | Made under sterile conditions, no inflammation | about `1 to 2%` |\n| Clean-contaminated | Controlled entry into the gut, airway or urinary tract | about `5 to 10%` |\n| Contaminated | Fresh traumatic wounds, gross spillage | about `10 to 20%` |\n| Dirty or infected | Old wounds with dead tissue, existing pus, fecal contamination | over `25%` |\n\nEvery wound that walks through the ambulance bay doors is at least contaminated.\n\n## The types\n\n**Abrasion** — the skin scraped off down to the dermis. Painful out of proportion to how it looks because nerve endings are exposed. The tech job is scrubbing: gravel and asphalt left in an abrasion heal in as permanent tattooing, which is why road rash gets scrubbed even though the patient hates it.\n\n**Laceration** — a tear. Linear ones close easily; stellate and flap-shaped ones have edges with poor blood supply.\n\n**Incision** — a clean-edged cut from a sharp object. The best-healing wound type, but sharp objects go deep, so tendons and nerves are the concern.\n\n**Avulsion** — tissue torn partly or fully away. A flap based distally has worse blood supply than one based proximally. Degloving is the severe version.\n\n**Puncture** — small hole, deep track, impossible to irrigate properly, so infection rates run high. A nail through a sneaker into the foot carries a specific risk of `Pseudomonas` osteomyelitis from the foam in the shoe.\n\n**Crush** — the dangerous one. The skin may barely be broken while the tissue underneath is dead. Crush wounds carry high infection rates, poor healing, and a real risk of compartment syndrome.\n\n**Amputation** — wrap the part in saline-moistened gauze, seal it in a plastic bag, and place the bag on ice water. Never put the part directly on ice or in water.\n\n## Bites\n\n| Bite | Infection rate | Organism | The problem |\n|---|---|---|---|\n| Dog | `5 to 10%` | `Pasteurella canis`, `Capnocytophaga` | Crushing and tearing, not infection |\n| Cat | `30 to 50%` | `Pasteurella multocida` | Needle teeth inject bacteria deep and the hole seals |\n| Human | `10 to 25%` | `Eikenella corrodens`, oral anaerobes | Joint and tendon sheath inoculation |\n\n**Amoxicillin-clavulanate** is the antibiotic for all three, because it is the common agent that covers `Pasteurella`, `Eikenella` and anaerobes. Cephalexin alone does not, which is a frequent and consequential error.\n\n> **Trap:** A small cut over a knuckle from \"hitting a wall\" is a clenched-fist injury — a fight bite. The tooth enters the joint with the fist closed, then the skin slides back over the contaminated joint when the hand opens. It goes to hand surgery, gets an x-ray for a tooth fragment, and is never closed.\n\n## High-pressure injection\n\nA grease gun, paint sprayer or hydraulic line fires material through a pinhole in a fingertip at thousands of psi. The entry wound looks trivial and barely hurts for the first hour. The material has already tracked along tendon sheaths up the whole finger, and organic solvents are chemically destroying the tissue.\n\n> **Key:** High-pressure injection to the hand is a surgical emergency with an amputation rate approaching `30 to 48%`. Hand surgery is called immediately, the finger is splinted and elevated, tetanus and antibiotics are given, and a digital block is avoided because it raises pressure inside an already-swelling finger. Nobody waits and watches.",
+      "keyPoints": [
+        "Contamination class predicts infection: clean 1 to 2%, contaminated 10 to 20%, dirty over 25%.",
+        "Crush wounds look minor and carry dead tissue, high infection risk and compartment syndrome risk.",
+        "Cat bites infect in 30 to 50% of cases because needle teeth inject deep and the puncture seals.",
+        "Amoxicillin-clavulanate covers Pasteurella, Eikenella and anaerobes; cephalexin alone does not.",
+        "A knuckle wound from a punch is a fight bite, goes to hand surgery, and is never closed."
+      ],
+      "checks": [
+        {
+          "q": "Which bite carries the highest infection rate and why?",
+          "choices": [
+            "Dog, because of crushing tissue damage",
+            "Cat, because narrow deep punctures inoculate bacteria and then seal over",
+            "Human, because of the volume of saliva",
+            "All three are equivalent at about 10%"
+          ],
+          "answer": 1,
+          "why": "Cat bites infect in 30 to 50% of cases; the puncture cannot be irrigated and closes over the inoculum. Dog bites cause more tissue destruction but infect less often, and human bites sit in between."
+        },
+        {
+          "q": "A worker says a paint sprayer caught his index fingertip 30 minutes ago. There is a pinhole and mild soreness. What is the correct response?",
+          "choices": [
+            "Immediate hand surgery consultation, splint, elevate, tetanus and antibiotics",
+            "Clean, dress it, and arrange a recheck in 48 hours",
+            "Digital block, explore the pinhole and close it",
+            "Reassure him, since the injury is superficial"
+          ],
+          "answer": 0,
+          "why": "High-pressure injection destroys tissue along tendon sheaths while looking trivial, with amputation rates near 30 to 48%. A digital block raises pressure in the finger, and any plan involving waiting loses the limb."
+        },
+        {
+          "q": "How should an amputated fingertip be preserved for transport?",
+          "choices": [
+            "Directly on ice in a cup",
+            "Submerged in sterile saline in a jar",
+            "Wrapped in saline-moistened gauze, sealed in a bag, and placed on ice water",
+            "Dry in a sterile towel at room temperature"
+          ],
+          "answer": 2,
+          "why": "Moist gauze in a sealed bag on ice water cools without freezing or macerating. Direct ice contact causes frostbite injury, submersion waterlogs the tissue, and room temperature accelerates ischemic damage."
+        }
+      ]
+    },
+    {
+      "id": "ed-wound-ortho-l02",
+      "title": "Assessing the wound and deciding whether to close it",
+      "minutes": 8,
+      "body": "Before anyone reaches for suture, three questions get answered: what is still in the wound, what underneath it is torn, and whether closing it will help or trap an infection.\n\n## What is still in there\n\nA patient who says it feels like something is in the wound is right often enough that the sensation itself is a reason to image.\n\n- **Glass is radiopaque.** Fragments larger than about `2 mm` are visible on plain film most of the time, so any wound caused by glass gets an x-ray, including the ones that look clean.\n- **Wood, plastic and thorns are usually invisible** on plain film. Ultrasound or CT finds them.\n- Explore in a **bloodless field** with good light, after anesthesia, and look through the **full range of motion** of the part. A tendon cut with the finger flexed retracts out of the visible wound when the finger straightens.\n\n## What is torn underneath\n\nTendon and nerve testing is specific, quick and gets documented before anything is touched.\n\n**Tendons in the hand.** To test the deep flexor (`FDP`), hold the middle joint straight and ask the patient to bend the fingertip. To test the superficial flexor (`FDS`), hold the other fingers straight and ask them to bend the middle joint. Extensors are tested against resistance, because a partially cut tendon still moves — it just moves weakly. Any loss of strength is a tendon injury until a hand surgeon says otherwise.\n\n**Nerves in the hand.**\n\n| Nerve | Sensation | Motor test |\n|---|---|---|\n| Median | Palm side of the index fingertip | Thumb up against resistance, the `OK` sign |\n| Ulnar | Little fingertip | Spread the fingers, hold paper between them |\n| Radial | Web space between thumb and index, back of hand | Extend the wrist and fingers |\n\nNormal two-point discrimination at a fingertip is under `6 mm`. Test the uninjured side for comparison.\n\n> **Key:** Never clamp a bleeding vessel in the hand. Digital nerves run alongside digital arteries, and a blind clamp takes both. Direct pressure and elevation control every bleed a hand can produce.\n\n## Timing\n\nThe old teaching was a `6 to 8 hour` golden period. Practice is more nuanced: time is one factor alongside contamination, mechanism, blood supply and the patient.\n\n- **Face and scalp** are richly vascular and are commonly closed up to `24 hours`.\n- **Extremities**, clean and uncontaminated, are often closed up to `12 to 18 hours`.\n- A contaminated wound from a crush at hour three may be left open while a clean facial cut at hour ten is closed.\n\n## Wounds that are not closed primarily\n\nSome wounds heal better left open, either to close later (delayed primary closure at `3 to 5 days`) or to granulate in on their own.\n\n- Puncture wounds\n- Most bites, particularly hand, cat and human bites\n- Heavily contaminated or crush wounds with dead tissue\n- Wounds already showing infection\n- Wounds with a foreign body that could not be removed\n- Wounds in patients with poor healing: uncontrolled diabetes, immunosuppression, peripheral vascular disease\n\n> **Trap:** Closing an infected or contaminated wound converts an open problem into a closed abscess. If there is doubt, packing it open and rechecking in `48 hours` is the safe path — and it is the physician's call, so the tech's contribution is an accurate description of what the wound actually contains.\n\n> **On shift:** Document the neurovascular and tendon exam before any anesthetic goes in. Once the area is numb, nobody can prove what was working beforehand.",
+      "keyPoints": [
+        "Glass shows on x-ray; wood and plastic usually do not and need ultrasound or CT.",
+        "Explore through full range of motion — a cut tendon retracts out of sight when the part is repositioned.",
+        "Test FDP by isolating the DIP and FDS by isolating the PIP; test extensors against resistance.",
+        "Never clamp a bleeder in the hand; digital nerves run with the arteries. Use pressure and elevation.",
+        "Punctures, bites, crush wounds, infected wounds and wounds with retained foreign bodies are not closed primarily."
+      ],
+      "checks": [
+        {
+          "q": "A patient cut his palm on a drinking glass. The wound looks superficial and he feels nothing inside. What should be done?",
+          "choices": [
+            "Irrigate and close; imaging is unnecessary without a foreign body sensation",
+            "Obtain an x-ray, because glass is radiopaque and fragments are frequently retained",
+            "Order an ultrasound only, since glass does not appear on plain film",
+            "Refer to hand surgery without imaging"
+          ],
+          "answer": 1,
+          "why": "Glass is radiopaque and retained fragments are common even when the patient feels nothing, so plain film is standard. Ultrasound is reserved for radiolucent materials like wood and plastic."
+        },
+        {
+          "q": "A laceration over the volar forearm shows full finger movement but the patient's grip is weak. How should this be interpreted?",
+          "choices": [
+            "Normal, because full range of motion rules out tendon injury",
+            "Likely a nerve injury only",
+            "A partial tendon laceration until proven otherwise — partial cuts move but move weakly",
+            "Pain inhibition; recheck after analgesia"
+          ],
+          "answer": 2,
+          "why": "A partially cut tendon retains motion but loses strength, which is why extensors and flexors are tested against resistance. Attributing weakness to pain risks sending home a tendon that will rupture completely days later."
+        },
+        {
+          "q": "Which wound should be left open rather than closed primarily?",
+          "choices": [
+            "A clean 3 cm linear forehead laceration at hour 8",
+            "A cat bite puncture to the dorsum of the hand at hour 2",
+            "A clean knife incision to the forearm at hour 4",
+            "A scalp laceration at hour 12"
+          ],
+          "answer": 1,
+          "why": "Cat bites to the hand carry a 30 to 50% infection rate and closing them seals the inoculum inside. Face, scalp and clean incisions are all reasonable primary closures within their windows."
+        }
+      ]
+    },
+    {
+      "id": "ed-wound-ortho-l03",
+      "title": "Anesthesia and closure: the options and the numbers",
+      "minutes": 8,
+      "body": "Two decisions follow the assessment: how to make it not hurt, and what to hold it together with.\n\n## Local anesthetics\n\n| Drug | Concentration | Onset | Duration | Maximum dose |\n|---|---|---|---|---|\n| Lidocaine, plain | `1%` is `10 mg/mL` | `2 to 5 min` | `30 to 120 min` | `4.5 mg/kg`, up to `300 mg` |\n| Lidocaine with epinephrine | `1%` | `2 to 5 min` | `2 to 6 h` | `7 mg/kg`, up to `500 mg` |\n| Bupivacaine, plain | `0.25%` is `2.5 mg/mL` | `5 to 10 min` | `4 to 8 h` | `2.5 mg/kg`, up to `175 mg` |\n\nEpinephrine constricts vessels, which slows absorption, extends the duration and reduces bleeding — that is why the maximum dose is higher with it. The old rule against epinephrine in fingers, ears, nose and toes has been largely disproven for commercial lidocaine-with-epinephrine, but many departments still avoid it. Varies by protocol.\n\nMaking the injection tolerable is technique, not luck: **buffer** with `1 mL` of `8.4%` sodium bicarbonate per `9 to 10 mL` of lidocaine, warm the solution, use a `27` or `30 gauge` needle, inject **through the wound edges** rather than through intact skin, and go slowly.\n\n**Topical LET** — lidocaine `4%`, epinephrine `0.1%`, tetracaine `0.5%` — is soaked onto the wound for `20 to 30 minutes` and often makes injection unnecessary. It is the standard opening move for children and for face and scalp wounds.\n\n## Irrigation\n\nThis is the single most effective infection-prevention step, and it is usually the tech's job.\n\n- **Volume:** roughly `50 to 100 mL` per centimeter of wound length.\n- **Pressure:** `5 to 8 psi`, produced by a `19 gauge` needle or splash shield on a `30 to 60 mL` syringe. Pouring saline from a bottle does not clean a wound.\n- **Solution:** normal saline and clean tap water perform equivalently.\n- **Never** put povidone-iodine, hydrogen peroxide or alcohol into the wound itself — all are toxic to the fibroblasts doing the healing. They belong on intact skin around it.\n\n## Closure methods\n\n**Sutures** give the most precise edge control. Non-absorbable nylon or polypropylene for skin, absorbable for deep layers.\n\n| Site | Suture size | Removal |\n|---|---|---|\n| Face | `6-0` | `3 to 5 days` |\n| Scalp | `3-0` or `4-0` | `7 to 10 days` |\n| Arm, trunk | `4-0` | `7 to 12 days` |\n| Leg | `4-0` | `10 to 14 days` |\n| Hand, over joints | `4-0` or `5-0` | `10 to 14 days` |\n\n**Staples** are fast and cheap for scalp, trunk and extremities. Not for the face or hands.\n\n**Tissue adhesive** (`2-octyl cyanoacrylate`) suits short, clean, linear, low-tension wounds whose edges already sit together. It is painted across the closed edges, never dripped into the wound, and sloughs off in `5 to 10 days`. Avoid it over joints, in hair, on mucosa and on anything wet.\n\n**Adhesive strips** work for superficial, tension-free wounds and as reinforcement after sutures come out.\n\n> **Key:** Tension is what decides the method. If the edges will not meet with gentle approximation, adhesive and strips will fail, and the wound needs deep absorbable sutures to take the load off the skin.\n\n> **On shift:** Set the tray up before anesthesia so the wait is productive: irrigation, light, the right suture, sterile gloves, a drape, and a specimen container if anything is coming out of the wound.",
+      "keyPoints": [
+        "Lidocaine 1% is 10 mg/mL; maximum 4.5 mg/kg plain and 7 mg/kg with epinephrine.",
+        "Buffer, warm, use a small needle and inject through the wound edges to reduce pain.",
+        "Irrigate with 50 to 100 mL per cm of wound at 5 to 8 psi; saline and tap water are equivalent.",
+        "Never put povidone-iodine, peroxide or alcohol inside a wound — they kill fibroblasts.",
+        "Removal times: face 3 to 5 days, scalp and arm 7 to 10, leg and hand 10 to 14."
+      ],
+      "checks": [
+        {
+          "q": "A 70 kg adult needs a laceration repaired with plain 1% lidocaine. What is the maximum volume?",
+          "choices": [
+            "10 mL",
+            "31.5 mL",
+            "50 mL",
+            "7 mL"
+          ],
+          "answer": 1,
+          "why": "4.5 mg/kg x 70 kg = 315 mg, capped at 300 mg, and 1% is 10 mg/mL, so about 30 to 31.5 mL. Choosing 10 mL is needlessly restrictive and 50 mL exceeds the ceiling."
+        },
+        {
+          "q": "Which solution should never be poured into an open wound?",
+          "choices": [
+            "Normal saline",
+            "Clean tap water",
+            "Hydrogen peroxide",
+            "Buffered lidocaine"
+          ],
+          "answer": 2,
+          "why": "Hydrogen peroxide, like povidone-iodine and alcohol, is toxic to fibroblasts and delays healing. Saline and tap water are equivalent irrigants, and lidocaine is an anesthetic placed deliberately in the tissue."
+        },
+        {
+          "q": "Which wound is a good candidate for tissue adhesive?",
+          "choices": [
+            "A gaping 6 cm laceration over the knee",
+            "A short linear cut on the cheek whose edges lie together on their own",
+            "A puncture wound on the sole of the foot",
+            "A scalp laceration in thick hair"
+          ],
+          "answer": 1,
+          "why": "Adhesive works on short, clean, low-tension wounds with naturally apposed edges. Joints move and break the bond, punctures are not closed at all, and hair prevents adhesion."
+        }
+      ]
+    },
+    {
+      "id": "ed-wound-ortho-l04",
+      "title": "Infection, abscess, cellulitis, tetanus and rabies",
+      "minutes": 8,
+      "body": "Wound infection announces itself on a schedule. Pain that is improving and then **gets worse after 48 hours** is the earliest useful signal, and it usually arrives before anything looks dramatic.\n\n## Recognizing it\n\nLook for spreading redness, warmth, swelling, pus, tenderness, fever, and red streaks tracking up the limb toward the nodes (lymphangitis). Most wound infections declare themselves at **`2 to 5 days`**. High-risk wounds get a scheduled recheck at `48 hours` for exactly this reason.\n\n> **On shift:** Draw the border of the redness with a skin marker and write the time next to it. Whether the line has been crossed in four hours is the most useful single piece of information the next clinician will have.\n\n## Cellulitis\n\nInfection spreading through the skin and the tissue just under it, with no drainable collection.\n\n- **Non-purulent** cellulitis is usually streptococcal, treated with cephalexin or a penicillin.\n- **Purulent** cellulitis means think `MRSA`: trimethoprim-sulfamethoxazole, doxycycline or clindamycin.\n- A patient who describes a **\"spider bite\"** that they never saw bite them almost always has a `MRSA` abscess.\n\nAdmission is considered for systemic signs, rapid progression, failed outpatient therapy, hand or face involvement, immunosuppression, or an inability to take oral medication.\n\n## Abscess\n\nA walled-off collection of pus. Antibiotics do not penetrate it, so the treatment is **incision and drainage** — a cut, breaking up the loculations, and letting it out. Antibiotics are added when there is surrounding cellulitis, systemic illness, immunosuppression, involvement of the face, hand or genitals, multiple sites, or failure after drainage.\n\n**Packing** a simple abscess is no longer automatic. For cavities under about `5 cm`, packing increases pain without clear benefit, and loop drainage is a common alternative. Varies by protocol. When packing is used, it is loose, not stuffed, and the follow-up date for repacking goes on the discharge paper.\n\n## Tetanus\n\nTetanus is a toxin, not an infection you can see. Prevention is a table.\n\n| Doses on record | Clean minor wound | All other wounds |\n|---|---|---|\n| Fewer than 3, or unknown | Give vaccine | Give vaccine **and** tetanus immune globulin `250 units` IM |\n| 3 or more | Vaccine if over `10 years` since the last | Vaccine if over `5 years` since the last |\n\n> **Trap:** \"I had a tetanus shot\" without a year is an unknown history. The five-year line for dirty wounds is the one most often missed, because patients who had a shot seven years ago believe they are covered.\n\n## Rabies\n\nThe single most effective intervention happens in the first minutes: **wash the wound with soap and running water for `15 minutes`**.\n\n- **Assume rabid:** bats, raccoons, skunks, foxes, coyotes. A bat in the room of a sleeping or very young person counts as an exposure even without a visible bite.\n- **Observe `10 days`:** a healthy, available dog, cat or ferret. If it stays well, no treatment is needed.\n- **Essentially never:** squirrels, rats, mice, rabbits.\n\nFor an unvaccinated patient, post-exposure prophylaxis is **rabies immune globulin `20 IU/kg`**, infiltrated around the wound as far as possible, plus **vaccine on days `0, 3, 7 and 14`**. A previously vaccinated patient gets vaccine on days `0 and 3` only, and no immune globulin.\n\n> **Key:** Rabies is essentially always fatal once symptoms appear and essentially always preventable before they do. The decision is made on the animal and the exposure, not on how bad the wound looks.",
+      "keyPoints": [
+        "Wound infections declare at 2 to 5 days; worsening pain after 48 hours is the earliest reliable signal.",
+        "Non-purulent cellulitis is strep and gets cephalexin; purulent means MRSA and gets TMP-SMX, doxycycline or clindamycin.",
+        "An abscess is drained, not treated with antibiotics alone; routine packing of small cavities is no longer standard.",
+        "Tetanus vaccine at over 10 years for clean minor wounds and over 5 years for all others; immune globulin 250 units for dirty wounds with fewer than 3 doses.",
+        "Rabies: wash 15 minutes, then RIG 20 IU/kg plus vaccine on days 0, 3, 7 and 14 if never vaccinated."
+      ],
+      "checks": [
+        {
+          "q": "A patient's last tetanus vaccine was 7 years ago. He has a deep puncture wound from a rusty nail. What does he need?",
+          "choices": [
+            "Nothing; 7 years is within the 10-year window",
+            "Tetanus vaccine, because dirty wounds use a 5-year interval",
+            "Tetanus immune globulin only",
+            "Vaccine and immune globulin"
+          ],
+          "answer": 1,
+          "why": "Contaminated wounds use a 5-year interval, so a 7-year gap requires a booster. Immune globulin is added only when the patient has had fewer than three lifetime doses or the history is unknown."
+        },
+        {
+          "q": "A patient has a fluctuant 3 cm abscess on the forearm with 1 cm of surrounding redness and no fever. What is the correct management?",
+          "choices": [
+            "Oral antibiotics alone and recheck in 48 hours",
+            "Incision and drainage, with antibiotics added for the surrounding cellulitis",
+            "Warm compresses and follow-up in a week",
+            "Immediate surgical consultation"
+          ],
+          "answer": 1,
+          "why": "Antibiotics do not penetrate a walled-off collection, so drainage is the treatment; the surrounding cellulitis is what justifies adding antibiotics. Compresses alone allow the abscess to enlarge, and a simple forearm abscess does not need surgery."
+        },
+        {
+          "q": "A woman wakes to find a bat in her bedroom. She has no visible bite. What is the correct approach?",
+          "choices": [
+            "No treatment, since there is no wound",
+            "Observe her for 10 days",
+            "Capture and observe the bat for 10 days",
+            "Treat this as an exposure and give rabies prophylaxis"
+          ],
+          "answer": 3,
+          "why": "Bat bites can be too small to see, so an unwitnessed bat exposure in a sleeping person is treated as a real exposure. The 10-day observation rule applies to healthy dogs, cats and ferrets, never to bats."
+        }
+      ]
+    },
+    {
+      "id": "ed-wound-ortho-l05",
+      "title": "Burns in the department",
+      "minutes": 8,
+      "body": "Burn care in the emergency department is four decisions: how deep, how big, does it need a burn center, and what goes on it.\n\n## Depth\n\n| Depth | What it looks like | Sensation | Healing |\n|---|---|---|---|\n| Superficial | Red, dry, no blisters, like sunburn | Painful | `3 to 6 days`, no scar |\n| Superficial partial thickness | Blisters, moist, pink, blanches | Very painful | `7 to 21 days`, no scar |\n| Deep partial thickness | Blisters, drier, mottled red and white, poor blanching | Reduced | Over `3 weeks`, scars, may need grafting |\n| Full thickness | Leathery, white, waxy or charred, dry | Insensate | Requires grafting |\n\nOnly **partial and full thickness** burn counts toward the total body surface area used for fluid calculations. Superficial burn is excluded.\n\n> **Trap:** An insensate burn is not a comfortable burn. Full-thickness areas are numb because the nerve endings are destroyed, and they are almost always surrounded by extremely painful partial-thickness skin. Absence of pain in one patch is a depth finding, not reassurance.\n\n## First care\n\n**Cool running water for `20 minutes`**, effective up to `3 hours` after the burn. Never ice — it causes further injury and drops core temperature in large burns. Remove jewelry and constricting clothing early, before swelling.\n\nClean with mild soap and water and remove loose dead skin. On blisters, practice varies: small intact blisters under about `6 mm` are usually left alone, while large, tense blisters, those over joints, and those certain to rupture are commonly debrided. Varies by protocol.\n\nDress with a silver-impregnated dressing or a bland petrolatum gauze. Silver sulfadiazine is the traditional agent but is avoided on the face, in sulfa allergy, in pregnancy, and in infants under `2 months`.\n\nTreat the pain properly — burns hurt more than almost anything else, and IV opioids are appropriate.\n\n## Airway and carbon monoxide\n\nAn enclosed-space fire changes the priority. Singed nasal hair, soot in the mouth, a hoarse voice, facial burns or stridor mean the airway is swelling, and intubation happens early, while it is still possible.\n\n> **Key:** In carbon monoxide poisoning the pulse oximeter reads falsely normal because it cannot tell carboxyhemoglobin from oxyhemoglobin. A `99%` saturation in a fire victim means nothing. Give `100%` oxygen and get a co-oximetry level.\n\n## Referral to a burn center\n\nThe American Burn Association criteria, in plain terms:\n\n- Partial-thickness burns over `10%` of body surface\n- Any burn of the face, hands, feet, genitals, perineum, or over a major joint\n- Any full-thickness burn, at any age\n- Electrical burns including lightning, and chemical burns\n- Inhalation injury\n- Burns in patients with medical conditions that complicate recovery\n- Burns with concurrent trauma, and children in hospitals without pediatric burn capability\n\n## Escharotomy\n\nA circumferential full-thickness burn produces a rigid, non-stretching shell of dead skin. As the limb swells beneath it, the eschar acts as a tourniquet; around the chest it prevents the ribs from expanding.\n\nSigns are rising pain, loss of Doppler signals in the digits, falling sensation, and — on the chest — rising ventilator pressures. The treatment is an **escharotomy**, an incision through the full thickness of the dead skin only. It is not a fasciotomy, which cuts deeper and treats compartment syndrome.\n\n> **On shift:** Document what the burn looked like, its exact location, and the estimated size, because the appearance changes over the first day and the burn center will ask what it looked like on arrival.",
+      "keyPoints": [
+        "Only partial-thickness and full-thickness burn counts toward TBSA; superficial burn does not.",
+        "Cool with running water for 20 minutes, effective up to 3 hours after the burn. Never ice.",
+        "Full-thickness burn is insensate because nerve endings are destroyed — numbness is a depth finding, not comfort.",
+        "Pulse oximetry reads falsely normal in carbon monoxide poisoning; give 100% oxygen and check co-oximetry.",
+        "Burn center referral includes face, hands, feet, genitals, joints, all full-thickness, electrical, chemical and inhalation injury."
+      ],
+      "checks": [
+        {
+          "q": "A burn is mottled red and white, blisters are present, it blanches poorly and sensation is reduced. What depth is this?",
+          "choices": [
+            "Superficial",
+            "Superficial partial thickness",
+            "Deep partial thickness",
+            "Full thickness"
+          ],
+          "answer": 2,
+          "why": "Mottled colour, poor blanching and reduced sensation with blisters describe a deep partial-thickness burn, which takes over three weeks and may need grafting. Superficial partial-thickness burns blanch briskly and are exquisitely painful; full-thickness burns are dry, leathery and insensate."
+        },
+        {
+          "q": "A man rescued from a house fire has a saturation of 99% on room air, soot around his mouth and a hoarse voice. What is the priority?",
+          "choices": [
+            "Reassurance, since the saturation is normal",
+            "100% oxygen, co-oximetry, and preparation for early airway management",
+            "Cool the facial burns with ice",
+            "Start Parkland fluids and reassess in an hour"
+          ],
+          "answer": 1,
+          "why": "Pulse oximetry cannot distinguish carboxyhemoglobin from oxyhemoglobin, so 99% is meaningless here, and soot with hoarseness signals an airway that is about to swell shut. Ice is never used on burns, and fluids do not address an imminent airway loss."
+        },
+        {
+          "q": "Which burn requires referral to a burn center?",
+          "choices": [
+            "A 3% superficial sunburn across the shoulders",
+            "A 2% partial-thickness burn of the palm",
+            "A 4% superficial burn of the forearm",
+            "A 1% superficial burn of the thigh"
+          ],
+          "answer": 1,
+          "why": "Hands are on the referral list at any size because of the functional consequences of scarring. Superficial burns anywhere, regardless of percentage, do not meet criteria."
+        }
+      ]
+    },
+    {
+      "id": "ed-wound-ortho-l06",
+      "title": "Fracture language, imaging and the upper limb",
+      "minutes": 9,
+      "body": "A fracture report is a sentence with a fixed grammar, and using it correctly is most of what makes a tech sound competent on a handoff.\n\n## The grammar\n\n**Open or closed.** Then **where** — proximal, middle or distal third, and whether it enters a joint. Then the **pattern**: transverse, oblique, spiral, comminuted (more than two pieces), segmental, avulsion, impacted. Then **displacement** as a percentage, **angulation** by the direction the apex points, and any **rotation** or **shortening**. Displacement and angulation are always described by what the **distal** fragment is doing.\n\n## Imaging rules\n\n- **Two views at right angles**, minimum. A fracture invisible on the front view is often obvious from the side.\n- **Joint above and below** for any long bone, because the force that broke one end often dislocated the other.\n- Special views exist for a reason: the scaphoid view, the ankle mortise, the axillary and scapular-Y for the shoulder, the sunrise for the patella.\n- Some fractures are **invisible early** — scaphoid, hip and stress fractures. A negative x-ray does not overrule a convincing exam; the patient is immobilized and re-imaged in `10 to 14 days` or gets CT or MRI.\n\nExamine by look, feel, move, then **neurovascular distal to the injury**, then the compartments, then the joint above and below.\n\n## The upper limb\n\n**Clavicle.** Fall onto the shoulder. The **middle third** breaks about `80%` of the time. Sling and early motion for most. Ortho now if it is open, if the skin is tented and about to break through, if there is neurovascular compromise, or if it is shortened more than about `2 cm`.\n\n**Shoulder dislocation.** Anterior in `95 to 97%`, from abduction with external rotation. The shoulder looks squared off, the arm is held slightly away from the body, and the patient will not let you move it. **Check the axillary nerve before and after reduction**: sensation over the outer deltoid — the regimental badge patch — and the ability to contract the deltoid. Posterior dislocations follow seizures and electrocution; the arm is held tight against the body, internally rotated, and cannot be rotated outward.\n\n**Proximal humerus.** Elderly patient, fall on an outstretched hand. Most are minimally displaced and go into a sling. Axillary nerve again.\n\n**Humeral shaft.** The **radial nerve** runs in a groove along the back of the bone and is injured in roughly `10 to 18%`. Wrist drop and numb first web space. Document it before the splint goes on.\n\n**Elbow.** In children, the **supracondylar fracture** peaks at ages `5 to 7` from a hyperextension fall. Two radiographic facts matter: a **posterior fat pad sign is always abnormal**, and the anterior humeral line should cross the middle third of the capitellum. The brachial artery and the median nerve sit right in front of the fracture, so this injury is watched closely for compartment syndrome. In adults the same fall produces a **radial head fracture** — tenderness over the radial head, pain on turning the forearm, and a sail sign on the lateral film.\n\n**Forearm.** Both-bone fractures are high energy and usually operative in adults; check compartments. Two named combinations are easy marks: **Monteggia** is a proximal ulna fracture with a dislocated radial head, and **Galeazzi** is a distal radius fracture with a disrupted distal radioulnar joint.\n\n**Distal radius.** **Colles** is the common one — extra-articular, dorsally displaced, a dinner-fork deformity after a fall on an outstretched hand, classically in an older woman with osteoporosis. **Smith** is the reverse, displaced toward the palm from a fall on a flexed wrist. Sugar-tong splint, and check the median nerve for acute carpal tunnel symptoms.\n\n**Scaphoid.** Tenderness in the anatomical snuffbox after a fall on an outstretched hand. Its blood supply enters from the far end and runs backward, so a fracture at the near end can starve the bone.\n\n> **Key:** A snuffbox-tender wrist with a normal x-ray is treated as a scaphoid fracture: thumb spica splint and repeat imaging. Missing it leads to avascular necrosis and a permanently arthritic wrist.\n\n**Metacarpals.** The boxer's fracture is the neck of the fifth metacarpal from punching. Angulation up to about `40 degrees` is tolerated in the fifth, far less in the index and middle. **Check rotation** by asking the patient to half-close the hand: all fingertips should point toward the scaphoid, and any finger that crosses over another needs fixing. Ulnar gutter splint.\n\n**Fingers.** **Mallet finger** is an extensor tendon avulsion at the fingertip joint from a forced bend — the tip droops and cannot be straightened actively. It is splinted in **continuous extension for `6 to 8 weeks`**, and the joint must never be allowed to bend, even during splint changes.",
+      "keyPoints": [
+        "Describe fractures as open or closed, location, pattern, displacement, angulation and rotation — always by the distal fragment.",
+        "Two views at right angles minimum, plus the joint above and below for long bones.",
+        "Radial nerve injury complicates 10 to 18% of humeral shaft fractures — document wrist extension before splinting.",
+        "A posterior fat pad sign at the elbow is always abnormal; supracondylar fractures threaten the brachial artery and median nerve.",
+        "Snuffbox tenderness with a normal film is a scaphoid fracture until proven otherwise: thumb spica and repeat imaging."
+      ],
+      "checks": [
+        {
+          "q": "A 62-year-old falls on an outstretched hand and has a dorsally displaced distal radius fracture with a dinner-fork deformity. What is this called?",
+          "choices": [
+            "Smith fracture",
+            "Colles fracture",
+            "Galeazzi fracture",
+            "Barton fracture"
+          ],
+          "answer": 1,
+          "why": "Dorsal displacement after a fall on an outstretched hand is a Colles fracture. A Smith fracture displaces toward the palm, a Galeazzi pairs a radius fracture with distal radioulnar disruption, and a Barton is intra-articular with carpal subluxation."
+        },
+        {
+          "q": "Why must a wrist with snuffbox tenderness be splinted even when the x-ray is normal?",
+          "choices": [
+            "Because scaphoid fractures are frequently invisible early and can lose their blood supply if missed",
+            "Because all wrist injuries are splinted by protocol",
+            "Because the x-ray technique is unreliable at the wrist",
+            "Because splinting prevents the fracture from occurring"
+          ],
+          "answer": 0,
+          "why": "The scaphoid's blood supply enters distally and runs backward, so a missed proximal fracture can cause avascular necrosis. The films are genuinely negative early in many true fractures, which is a biology problem rather than a technique problem."
+        },
+        {
+          "q": "A patient with a fifth metacarpal neck fracture makes a partial fist and the little finger crosses over the ring finger. What does this mean?",
+          "choices": [
+            "A normal variant of hand anatomy",
+            "Rotational deformity, which is not acceptable and requires correction",
+            "The angulation exceeds 40 degrees",
+            "The patient is not cooperating with the exam"
+          ],
+          "answer": 1,
+          "why": "All fingertips should point toward the scaphoid in flexion; crossover is malrotation, which permanently impairs grip and is not tolerated regardless of the angle. Angulation and rotation are separate measurements."
+        }
+      ]
+    },
+    {
+      "id": "ed-wound-ortho-l07",
+      "title": "The lower limb, the Ottawa rules and sprains",
+      "minutes": 9,
+      "body": "Lower limb injuries carry weight — literally — so the question after every one is whether the patient can bear weight, and whether they should.\n\n## Hip and femur\n\n**Hip fracture** in an older adult follows a low-energy fall. The leg is **shortened and externally rotated**, the patient cannot lift the heel off the bed, and axial load on the heel hurts the groin. Femoral neck fractures threaten the blood supply, which runs backward up the neck, so displaced ones risk avascular necrosis. An occult hip fracture with a normal x-ray in a patient who cannot walk needs CT or MRI.\n\n**Femoral shaft** fractures are high energy and can hold `1 to 1.5 L` of blood in the thigh. A traction splint is used for an isolated mid-shaft fracture, and is **contraindicated** with a pelvic fracture, an injury to the hip or knee on that side, an ankle or foot injury, or a partial amputation.\n\n## Knee\n\n**Patella.** Test the extensor mechanism: can the patient lift the straight leg off the bed? If yes and the fracture is not displaced, a knee immobilizer and weight bearing as tolerated. If no, it is surgical. A bipartite patella is a harmless normal variant at the upper outer corner.\n\n**Tibial plateau.** An axial load with the knee pushed inward — a bumper strike or a fall from height. A large bloody effusion with a fat-fluid level on a cross-table lateral film means an intra-articular fracture. Check the compartments and the pulses; the popliteal artery is close.\n\n**Knee dislocation** is rare and limb-threatening because of popliteal artery injury. Many reduce before arrival, so the diagnosis rests on gross instability; an ankle-brachial index under `0.9` means CT angiography.\n\n## Ankle and foot\n\nThe **Ottawa ankle rules** exist to avoid imaging every twisted ankle, and they are close to `98 to 100%` sensitive for clinically significant fracture.\n\nGet **ankle films** if there is pain in the malleolar zone **and** any one of:\n\n- Bone tenderness along the back edge or tip of the **lateral malleolus**, over the distal `6 cm`\n- Bone tenderness along the back edge or tip of the **medial malleolus**\n- Inability to bear weight for four steps both at the scene and in the department\n\nGet **foot films** if there is pain in the midfoot **and** any one of:\n\n- Bone tenderness at the **base of the fifth metatarsal**\n- Bone tenderness over the **navicular**\n- Inability to bear weight for four steps\n\n> **Trap:** The rules are not validated in young children, in intoxicated or distracted patients, or where sensation is impaired. Use them on the alert adult with an isolated injury and nowhere else.\n\n**Ankle fracture stability** is described by the Weber system: a fibular fracture **below** the joint line is usually stable, **at** the line is variable, and **above** the line disrupts the syndesmosis and is unstable. A **Maisonneuve** injury is a fracture high on the fibula paired with a medial ankle injury, which is why the whole length of the fibula gets squeezed. Two or three malleoli broken means unstable and surgical.\n\n**Calcaneus.** A fall from height onto the heels. Because the force travels up the skeleton, look for a **lumbar burst fracture** in about `10%` and check the other heel. Massive swelling follows: bulky compressive dressing, elevated, non-weight-bearing.\n\n**Lisfranc.** An injury to the joints across the midfoot, commonly missed. Midfoot pain out of proportion, **bruising on the sole**, and widening over `2 mm` between the first and second metatarsal bases. Weight-bearing views make it visible; most need surgery.\n\n**Fifth metatarsal.** An avulsion at the base heals well in a hard-soled shoe. A **Jones fracture**, slightly further along at the junction of the base and shaft, sits in a poor blood supply zone, is prone to non-union, and is kept non-weight-bearing.\n\n**Toes** get buddy taping and a hard-soled shoe.\n\n## Sprains and strains\n\nA **sprain** is a ligament; a **strain** is a muscle or tendon.\n\n- **Grade I** — stretched, minimal tearing, no instability\n- **Grade II** — partially torn, some laxity but a firm endpoint\n- **Grade III** — completely torn, grossly unstable, and often **less painful** than a grade II\n\nThe first `24 to 72 hours` use rest, ice `15 to 20 minutes` every `2 to 3 hours`, compression and elevation. After that, **early protected movement beats immobilization** for grade I and II sprains.\n\n> **Key:** Pain is a poor guide to severity in ligament injury. A completely torn ligament has no intact fibres left to hurt, so the calmest-looking sprain can be the worst one. Test stability, do not infer it.",
+      "keyPoints": [
+        "A shortened, externally rotated leg after a fall in an older adult is a hip fracture until imaging says otherwise.",
+        "Ottawa ankle rules: malleolar pain plus posterior-edge or tip tenderness, or inability to bear weight four steps.",
+        "Ottawa foot rules: midfoot pain plus fifth metatarsal base or navicular tenderness, or inability to bear weight.",
+        "Calcaneus fractures come from axial load — look for a lumbar burst fracture and check the other heel.",
+        "Grade III sprains are completely torn and often hurt less than grade II; test stability rather than judging by pain."
+      ],
+      "checks": [
+        {
+          "q": "A 28-year-old twisted her ankle. She has tenderness over the lateral ligaments but none over either malleolus, and she walked four steps in triage. What do the Ottawa rules indicate?",
+          "choices": [
+            "X-ray the ankle because of the mechanism",
+            "No ankle x-ray is required",
+            "X-ray the foot instead",
+            "The rules do not apply to adults"
+          ],
+          "answer": 1,
+          "why": "Bone tenderness at a malleolus or inability to bear weight four steps is required to trigger imaging, and neither is present. Soft-tissue tenderness over the ligaments is exactly what the rules are designed to let you skip imaging for."
+        },
+        {
+          "q": "A roofer falls 12 feet and lands on his heels. Both heels are swollen and painful. What else must be evaluated?",
+          "choices": [
+            "The lumbar spine, because axial load transmits up the skeleton",
+            "The cervical spine only",
+            "The shoulders, for associated dislocation",
+            "Nothing else if the heels are the only complaint"
+          ],
+          "answer": 0,
+          "why": "About 10% of calcaneal fractures from axial load have an associated lumbar burst fracture, and the opposite heel is commonly injured too. A patient focused on heel pain will not volunteer back pain until asked."
+        },
+        {
+          "q": "Which statement about ankle sprain severity is correct?",
+          "choices": [
+            "Pain intensity correlates directly with the grade",
+            "A grade III complete tear may hurt less than a grade II partial tear",
+            "Grade III sprains always have the most swelling",
+            "Grade I sprains require immobilization for 6 weeks"
+          ],
+          "answer": 1,
+          "why": "A completely torn ligament has no remaining intact fibres to generate pain, so instability rather than pain defines severity. Grade I and II sprains do better with early protected movement than with prolonged immobilization."
+        }
+      ]
+    },
+    {
+      "id": "ed-wound-ortho-l08",
+      "title": "The ortho emergencies: open fractures and compartment syndrome",
+      "minutes": 8,
+      "body": "Most fractures can wait. Three things cannot: an open fracture, a compartment that is strangling itself, and a limb with no blood supply.\n\n## Open fractures\n\nAn open fracture is any break in the skin that communicates with the fracture, even a puncture the size of a pencil tip. The bone has been exposed to the outside world, and the clock on infection started at the moment of injury.\n\nThe Gustilo-Anderson grading describes the soft tissue, which is what determines the outcome:\n\n| Grade | Wound |\n|---|---|\n| I | Under `1 cm`, clean |\n| II | `1 to 10 cm`, moderate soft tissue damage |\n| IIIA | Over `10 cm` but bone can still be covered |\n| IIIB | Extensive soft tissue loss, needs a flap |\n| IIIC | Arterial injury requiring repair |\n\nThe department's job is a short, fixed list.\n\n1. **Antibiotics within one hour** of arrival — cefazolin for grades I and II, with added gram-negative coverage for grade III and penicillin for farm or soil contamination.\n2. **Tetanus** per the table.\n3. Remove **gross** debris only. No deep probing or irrigation in the department.\n4. **Photograph the wound once**, then cover it with saline-moistened sterile gauze and a dry dressing.\n5. **Splint** in position, and document the neurovascular exam.\n6. Orthopedics now; operative washout usually within `24 hours`, sooner for severe grades.\n\n> **Trap:** Uncovering the wound repeatedly so that each new person can look at it is how open fractures get contaminated in the department. Take the photograph, cover it, and show the photograph.\n\n## Compartment syndrome\n\nMuscle sits inside compartments wrapped in fascia that does not stretch. Bleeding or swelling inside one raises the pressure until it exceeds the pressure perfusing the muscle, and the muscle begins to die. It is commonest after a **tibial shaft fracture**, and also after forearm fractures, crush injuries, restored blood flow to an ischemic limb, circumferential burns and tight casts.\n\n**Muscle necrosis begins at `4 to 6 hours`.** That is the entire reason this is an emergency.\n\nThe findings, in the order they actually appear:\n\n1. **Pain out of proportion** to the injury, escalating, not relieved by opioids\n2. **Pain on passive stretch** of the muscles in that compartment — the most reliable physical sign\n3. **Paresthesia**, numbness and tingling\n4. Then, late: pallor, paralysis, pulselessness, a cold limb\n\n> **Key:** Pulses are usually **present** in compartment syndrome. Compartment pressure rises above the pressure in small vessels long before it reaches arterial pressure, so a strong pulse and a pink foot do not exclude it. Waiting for pulselessness means waiting until the muscle is dead.\n\nWhen pressures are measured, the number that matters is the **delta pressure**: diastolic blood pressure minus compartment pressure. Under `30 mmHg` means fasciotomy.\n\nWhat happens first is mechanical and can be done immediately: **split the cast and all the padding down to skin**, and keep the limb **at heart level** rather than elevated, because elevating it lowers the arterial pressure driving blood into the compartment. Then fasciotomy.\n\n## Vascular injury\n\nHigh-risk injuries are knee dislocation, supracondylar fracture in a child, and elbow dislocation. **Hard signs** — pulsatile bleeding, an expanding hematoma, a bruit or thrill, an absent pulse, or a cold ischemic limb — go straight to the operating room or angiography. A softer presentation gets an ankle-brachial index; under `0.9` means imaging.\n\n> **On shift:** Document distal pulses, capillary refill, sensation and movement before and after every splint, every reduction and every transport. A deficit that appeared somewhere in between is a different conversation than one that was there all along.",
+      "keyPoints": [
+        "Open fracture means any skin break communicating with the bone; antibiotics go in within one hour.",
+        "Photograph once, cover with moist sterile gauze, splint, and stop uncovering it.",
+        "Compartment syndrome's earliest signs are pain out of proportion and pain on passive stretch; muscle dies at 4 to 6 hours.",
+        "Pulses are usually present in compartment syndrome — pulselessness is a late and unreliable sign.",
+        "Split the cast to skin and keep the limb at heart level, not elevated; delta pressure under 30 mmHg means fasciotomy."
+      ],
+      "checks": [
+        {
+          "q": "A patient with a tibial shaft fracture in a cast has escalating pain not relieved by morphine and screams when you passively extend his toes. Pulses are strong. What is happening?",
+          "choices": [
+            "Normal fracture pain requiring more analgesia",
+            "Compartment syndrome — strong pulses do not exclude it",
+            "Arterial injury, excluded by the strong pulses",
+            "Deep vein thrombosis"
+          ],
+          "answer": 1,
+          "why": "Pain out of proportion plus pain on passive stretch is compartment syndrome, and compartment pressure exceeds capillary pressure long before it reaches arterial pressure, so pulses remain. Treating this as ordinary pain loses the limb within hours."
+        },
+        {
+          "q": "What is the immediate action when compartment syndrome is suspected in a casted limb?",
+          "choices": [
+            "Elevate the limb well above the heart",
+            "Split the cast and all padding down to skin and keep the limb at heart level",
+            "Apply ice packs over the cast",
+            "Give additional opioids and reassess in an hour"
+          ],
+          "answer": 1,
+          "why": "Bivalving relieves the external constriction immediately, and heart level preserves the arterial pressure gradient driving perfusion. Elevation lowers that gradient, ice worsens vasoconstriction, and more opioid only masks the diagnostic sign."
+        },
+        {
+          "q": "A patient arrives with a 5 mm puncture over an obviously deformed tibia. What must happen within the first hour?",
+          "choices": [
+            "Bedside irrigation of the wound with 2 L of saline",
+            "Antibiotics given, tetanus addressed, wound covered with moist sterile gauze and the limb splinted",
+            "Reduction of the fracture before imaging",
+            "Repeated inspection of the wound by each consulting team"
+          ],
+          "answer": 1,
+          "why": "Antibiotics within the hour is the single intervention most associated with reduced infection in open fractures. Deep irrigation belongs in the operating room, and repeated uncovering introduces new contamination."
+        }
+      ]
+    },
+    {
+      "id": "ed-wound-ortho-l09",
+      "title": "Dislocations, reductions, splints and discharge",
+      "minutes": 9,
+      "body": "A dislocation is a joint out of place, and the treatment is putting it back. Techs are involved in almost every step.\n\n## The common ones\n\n**Shoulder.** Anterior in almost all cases. Reduction techniques include scapular manipulation, external rotation, Stimson with the patient prone and a weight on the arm, and traction-countertraction. Afterward: an x-ray, a sling or immobilizer, and a repeat axillary nerve check.\n\n**Elbow.** Posterior is commonest, from a fall on an outstretched hand. Check the brachial artery and the median and ulnar nerves before and after. It is splinted at `90 degrees` posteriorly. Look for associated radial head and coronoid fractures.\n\n**Finger.** Usually the middle joint dislocating backward. Longitudinal traction with gentle flexion reduces it. Post-reduction films, then buddy taping or a dorsal block splint.\n\n**Patella.** Displaces laterally with the knee bent. Straightening the knee while gently pushing the kneecap inward usually reduces it, often before the patient has even been fully undressed. Knee immobilizer and a post-reduction film for a chip of cartilage knocked off in the process.\n\n**Hip.** The emergency. Posterior in about `90%`, with the hip flexed, turned in and drawn toward the midline. The blood supply to the femoral head is compromised while it is out, so **reduction within `6 hours`** substantially lowers the risk of avascular necrosis. It needs deep sedation, and the sciatic nerve is checked — foot dorsiflexion and sensation over the top of the foot — before and after.\n\n**Ankle fracture-dislocation** with a dusky foot or skin stretched white over bone is reduced **before** the x-ray. Skin under that pressure dies within an hour.\n\n## The tech's role in a reduction\n\n1. Document the **neurovascular exam before** anything happens. This is the step most often skipped and most often needed later.\n2. Set up procedural sedation: monitor, pulse oximetry, waveform capnography, oxygen, suction, a bag-valve mask, airway equipment and reversal agents at the bedside.\n3. Provide **countertraction** — usually a sheet around the torso — and hold the position exactly as asked, without pulling on your own schedule.\n4. Obtain the **post-reduction film** before the splint goes on, or per your department's sequence.\n5. **Recheck the neurovascular exam** and document it again.\n6. Apply the splint, and keep watching the patient until they are fully awake.\n\n## Splints, not casts\n\nAn acute injury swells. A splint is open on one side and accommodates that; a circumferential cast does not, which is why the department applies splints.\n\nThe hand is splinted in the **position of safety**: wrist extended `20 to 30 degrees`, knuckles bent `70 to 90 degrees`, and the finger joints nearly straight. Splinting a hand flat stiffens it permanently.\n\nComplications to prevent while applying one:\n\n- **Pressure sores** from fingertip indentations — mould with the flat of your palms, never fingertips\n- **Thermal burn** — plaster gives off heat as it sets, so use cool water and avoid excessive layers\n- **Nerve compression** — the peroneal nerve at the outer knee is the classic casualty\n- **Skin breakdown** from a wet or wrinkled layer against skin\n\n## What the patient takes home\n\nThis conversation is very often the tech's, and it is one of the highest-value things said all shift.\n\n**Elevate above the heart for `48 to 72 hours`.** Ice over the splint, `15 to 20 minutes` at a time. Keep it dry — a plastic bag for showering. **Never** push anything down inside to scratch.\n\n**Come back immediately** for pain that keeps increasing despite medication, numbness or tingling, fingers or toes that turn pale, blue, cold or grossly swollen, inability to move the fingers or toes, a burning feeling under the splint, drainage or a bad smell, or a splint that becomes loose, cracked or soaked.\n\n> **Key:** Those return precautions are a compartment syndrome screening tool handed to the patient. Say them out loud, and write them down, because the patient is going home before the swelling peaks.\n\n**Crutches.** Elbows bent `15 to 30 degrees`, and `2 to 3 finger widths` — about `5 cm` — between the top pad and the armpit. Weight goes on the hands, never the armpits, because leaning on them compresses the radial nerve. On stairs: **up with the good leg, down with the bad leg and the crutches.**\n\n**Walker.** Handgrips at the wrist creases with the arms hanging at the sides, elbows bent `15 to 20 degrees`.",
+      "keyPoints": [
+        "Hip dislocation is reduced within 6 hours to protect the blood supply to the femoral head.",
+        "An ankle fracture-dislocation with white, tented skin or a dusky foot is reduced before imaging.",
+        "Document the neurovascular exam before and after every reduction, splint and transport.",
+        "Acute injuries get splints, not casts, because splints accommodate swelling; mould with palms, use cool water.",
+        "Teach return precautions as the patient's compartment syndrome screen; crutch weight goes on the hands, not the armpits."
+      ],
+      "checks": [
+        {
+          "q": "A patient arrives with a posterior hip dislocation. Why is this treated as an emergency?",
+          "choices": [
+            "Because of the risk of sciatic nerve transection",
+            "Because reduction after 6 hours sharply increases the risk of avascular necrosis of the femoral head",
+            "Because the hip cannot be reduced after a few hours",
+            "Because of associated bleeding into the pelvis"
+          ],
+          "answer": 1,
+          "why": "The femoral head's blood supply is compromised while the hip is dislocated, and delay past about 6 hours markedly raises the necrosis rate. The sciatic nerve is at risk of stretch rather than transection, and reduction remains technically possible later."
+        },
+        {
+          "q": "How should a plaster splint be moulded as it sets?",
+          "choices": [
+            "With the fingertips for precision around bony points",
+            "With the flat of the palms, avoiding fingertip pressure",
+            "With a bandage wrapped tightly over the wet plaster",
+            "It should not be moulded at all"
+          ],
+          "answer": 1,
+          "why": "Fingertips leave indentations that become pressure sores under a hardened splint. Palms distribute the force, and moulding is necessary for the splint to hold position."
+        },
+        {
+          "q": "A patient with a new short leg splint is being discharged. Which instruction is wrong?",
+          "choices": [
+            "Elevate the leg above the heart for the next 48 to 72 hours",
+            "Return immediately for numbness, increasing pain, or cold or blue toes",
+            "Use a coat hanger to scratch under the splint if it itches",
+            "Keep the splint dry and cover it with a bag to shower"
+          ],
+          "answer": 2,
+          "why": "Anything pushed inside a splint abrades skin that cannot be inspected and seeds infection under the padding. Elevation, return precautions and keeping it dry are all standard."
+        }
+      ]
+    },
+    {
+      "id": "ed-wound-ortho-l10",
+      "title": "Pediatric ortho and back injuries",
+      "minutes": 8,
+      "body": "Children's bones behave differently, and the difference is the growth plate. The physis is the softest structure at the end of a growing bone — weaker than the ligaments beside it — so **the force that sprains an adult fractures a child**.\n\n## Salter-Harris\n\nFractures involving the growth plate are classified by where the line runs, which predicts the risk of arrested growth. The mnemonic is `SALTR`.\n\n| Type | Line runs | Note |\n|---|---|---|\n| I — **S**lipped | Straight through the physis | X-ray may look normal; diagnosed on tenderness over the physis |\n| II — **A**bove | Through the physis and up into the metaphysis | Most common, about `75%` |\n| III — **L**ower | Through the physis and down into the epiphysis | Enters the joint |\n| IV — **T**hrough | Across metaphysis, physis and epiphysis | Enters the joint, needs precise alignment |\n| V — c**R**ush | Crush of the physis itself | Worst prognosis, often recognized only in hindsight |\n\n## The other childhood patterns\n\n**Buckle (torus) fracture** — the soft metaphysis of the distal radius compresses and bulges rather than breaking through. Stable, and a removable wrist splint for about `3 weeks` is now standard.\n\n**Greenstick** — one side of the bone breaks while the other bends.\n\n**Nursemaid's elbow** — the radial head slips under its ligament when a `1 to 4 year old` is pulled up by the hand. The child holds the arm at their side, slightly bent and turned palm-down, and refuses to use it. There is **no swelling and no deformity**, and with a classic story no x-ray is needed. Reduction is a quick hyperpronation or a supination-and-flex; a small click is felt and the child is using the arm again within `5 to 30 minutes`.\n\n**Toddler's fracture** — a non-displaced spiral crack of the lower tibia in a child roughly `9 months to 3 years` who has recently started walking. They limp or will not bear weight. The x-ray is frequently negative at first and the child is immobilized anyway.\n\n## When the injury does not fit\n\nSome patterns carry a high probability of inflicted injury, and recognizing them is a legal duty, not a judgment call.\n\n- **Any fracture in an infant who is not yet walking**\n- Classic **metaphyseal corner or bucket-handle** lesions\n- **Posterior rib** fractures, and scapular, sternal or spinous process fractures\n- **Multiple fractures at different stages of healing**\n- A history that does not explain the injury, changes between tellings, or blames a sibling\n- A significant delay in seeking care\n\nA skeletal survey is standard under age `2`.\n\n> **Key:** In New Jersey, any person with reasonable cause to believe a child has been abused must report it to the State Central Registry. You do not need proof and you do not need permission. Deciding whether abuse occurred is not the reporter's job — reporting the concern is.\n\n## Back injuries\n\nMost back pain in the department is mechanical and gets better. The work is excluding the small number that do not.\n\n**Red flags:** fever, intravenous drug use, immunosuppression, a history of cancer, unexplained weight loss, significant trauma, pain that is worse at night or at rest, new pain in someone under `18` or over `50`, and any progressing neurologic deficit.\n\n**Cauda equina syndrome** is the emergency. The most sensitive early finding is **urinary retention**, followed by overflow incontinence. Add saddle anesthesia — numbness where you would sit on a saddle — bilateral leg symptoms, and reduced rectal tone. It needs urgent MRI and surgery; delay causes permanent incontinence.\n\nQuick nerve root checks: **L4** is the knee reflex and the inner shin, **L5** is toe and foot dorsiflexion and the first web space, **S1** is plantarflexion, the ankle reflex and the outer foot.\n\n> **Trap:** \"I can't pee\" is easy to hear as a minor complaint from a patient in pain. In someone with back pain, it is the cauda equina question, and it goes to the physician immediately.\n\nFor ordinary mechanical back pain, **early movement beats bed rest**, and imaging is not indicated in the first six weeks without red flags.",
+      "keyPoints": [
+        "The growth plate is weaker than ligament, so children fracture where adults sprain.",
+        "Salter-Harris: I through the physis, II up into the metaphysis and most common, III into the epiphysis, IV across all three, V a crush with the worst prognosis.",
+        "Nursemaid's elbow has no swelling or deformity; a classic story needs no x-ray, and the child uses the arm within 5 to 30 minutes of reduction.",
+        "Any fracture in a non-ambulatory infant, posterior rib fractures and metaphyseal corner lesions are abuse red flags; reporting is mandatory in New Jersey.",
+        "Cauda equina: urinary retention is the most sensitive early sign, with saddle anesthesia and bilateral leg symptoms — urgent MRI."
+      ],
+      "checks": [
+        {
+          "q": "A 4-month-old is brought in with a spiral fracture of the femur, reportedly from rolling off a couch. What is the appropriate concern?",
+          "choices": [
+            "None; spiral femur fractures are common in infants",
+            "A fracture in a non-ambulatory infant is a major red flag for inflicted injury and must be reported",
+            "Only the fracture needs treatment; social concerns are for the pediatrician",
+            "Vitamin D deficiency is the most likely explanation"
+          ],
+          "answer": 1,
+          "why": "A four-month-old cannot generate the torsional force that causes a spiral femur fracture, and any fracture in a non-walking infant is a red flag. Reporting a reasonable concern is legally mandated and does not require proof."
+        },
+        {
+          "q": "A 3-year-old will not use her left arm after her father pulled her up by the hand. The arm hangs slightly bent and palm-down; there is no swelling, no bruising and no deformity. What is the most likely diagnosis?",
+          "choices": [
+            "Supracondylar fracture",
+            "Clavicle fracture",
+            "Nursemaid's elbow (radial head subluxation)",
+            "Salter-Harris type II fracture of the distal humerus"
+          ],
+          "answer": 2,
+          "why": "Axial traction on an extended, pronated arm in a toddler with no swelling or deformity is the classic nursemaid's picture. Fractures produce swelling, tenderness and often deformity, none of which is present."
+        },
+        {
+          "q": "A 46-year-old with three days of back pain says he has not been able to urinate since yesterday. What does this suggest?",
+          "choices": [
+            "Simple urinary retention from analgesics",
+            "Possible cauda equina syndrome requiring urgent evaluation and MRI",
+            "A urinary tract infection",
+            "Dehydration"
+          ],
+          "answer": 1,
+          "why": "Urinary retention is the most sensitive early feature of cauda equina syndrome, and delay causes permanent incontinence. The other explanations are only acceptable after the emergency has been excluded, not instead of excluding it."
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "ed-wound-ortho-c001",
+      "front": "What infection rates go with clean, contaminated and dirty wounds?",
+      "back": "Clean about 1 to 2%, clean-contaminated 5 to 10%, contaminated 10 to 20%, dirty or infected over 25%. Every traumatic wound arriving in the department is at least contaminated.",
+      "lesson": "ed-wound-ortho-l01"
+    },
+    {
+      "id": "ed-wound-ortho-c002",
+      "front": "Why must an abrasion be scrubbed even though it is painful?",
+      "back": "Gravel and asphalt left in the dermis heal in permanently as traumatic tattooing. Scrubbing is the only way to prevent it.",
+      "lesson": "ed-wound-ortho-l01"
+    },
+    {
+      "id": "ed-wound-ortho-c003",
+      "front": "Why are crush wounds more dangerous than they look?",
+      "back": "The skin may be barely broken while the tissue underneath is dead. They carry high infection rates, poor healing and a real risk of compartment syndrome.",
+      "lesson": "ed-wound-ortho-l01"
+    },
+    {
+      "id": "ed-wound-ortho-c004",
+      "front": "What specific infection risk follows a nail puncture through a sneaker into the foot?",
+      "back": "Pseudomonas osteomyelitis, seeded from the foam in the shoe. Puncture wounds also cannot be irrigated properly, which raises infection rates generally.",
+      "lesson": "ed-wound-ortho-l01"
+    },
+    {
+      "id": "ed-wound-ortho-c005",
+      "front": "How is an amputated part preserved?",
+      "back": "Wrap in saline-moistened gauze, seal in a plastic bag, and place the bag on ice water. Never directly on ice and never submerged.",
+      "lesson": "ed-wound-ortho-l01"
+    },
+    {
+      "id": "ed-wound-ortho-c006",
+      "front": "Compare the infection rates of dog, cat and human bites.",
+      "back": "Dog 5 to 10%, cat 30 to 50%, human 10 to 25%. Dogs cause more tissue destruction; cats inject deep and seal the puncture over the bacteria.",
+      "lesson": "ed-wound-ortho-l01"
+    },
+    {
+      "id": "ed-wound-ortho-c007",
+      "front": "Which antibiotic covers bite wounds, and which common choice fails?",
+      "back": "Amoxicillin-clavulanate covers Pasteurella, Eikenella and anaerobes. Cephalexin alone does not cover Pasteurella or Eikenella.",
+      "lesson": "ed-wound-ortho-l01"
+    },
+    {
+      "id": "ed-wound-ortho-c008",
+      "front": "Why is a small cut over a knuckle from punching someone a surgical problem?",
+      "back": "It is a fight bite: the tooth penetrated the joint with the fist closed, then the skin slid back over the contaminated joint. X-ray for a tooth fragment, hand surgery, never closed.",
+      "lesson": "ed-wound-ortho-l01"
+    },
+    {
+      "id": "ed-wound-ortho-c009",
+      "front": "Why is a high-pressure injection injury to the hand an emergency?",
+      "back": "Material tracks along tendon sheaths at high pressure and solvents chemically destroy tissue, with amputation rates near 30 to 48%, all behind a painless pinhole. Emergent hand surgery.",
+      "lesson": "ed-wound-ortho-l01"
+    },
+    {
+      "id": "ed-wound-ortho-c011",
+      "front": "Which foreign bodies show on plain film and which do not?",
+      "back": "Glass is radiopaque and fragments over about 2 mm are usually visible, so all glass wounds get an x-ray. Wood, plastic and thorns are usually invisible and need ultrasound or CT.",
+      "lesson": "ed-wound-ortho-l02"
+    },
+    {
+      "id": "ed-wound-ortho-c012",
+      "front": "Why must a wound be explored through the full range of motion?",
+      "back": "A tendon cut with the joint flexed retracts out of the visible wound when the part is straightened, so the injury disappears from view in the position you examine in.",
+      "lesson": "ed-wound-ortho-l02"
+    },
+    {
+      "id": "ed-wound-ortho-c013",
+      "front": "How do you test FDP and FDS separately in a finger?",
+      "back": "FDP: hold the middle joint straight and ask the patient to bend the fingertip. FDS: hold the other fingers straight and ask them to bend the middle joint.",
+      "lesson": "ed-wound-ortho-l02"
+    },
+    {
+      "id": "ed-wound-ortho-c014",
+      "front": "Why must extensor tendons be tested against resistance?",
+      "back": "A partially cut tendon still produces full motion but loses strength. Testing motion alone misses partial lacerations that later rupture completely.",
+      "lesson": "ed-wound-ortho-l02"
+    },
+    {
+      "id": "ed-wound-ortho-c015",
+      "front": "How do you test median, ulnar and radial nerve motor function in the hand?",
+      "back": "Median: thumb up against resistance, the OK sign. Ulnar: spread the fingers and hold paper between them. Radial: extend the wrist and fingers.",
+      "lesson": "ed-wound-ortho-l02"
+    },
+    {
+      "id": "ed-wound-ortho-c017",
+      "front": "Why should you never clamp a bleeding vessel in the hand?",
+      "back": "Digital nerves run alongside digital arteries, so a blind clamp takes the nerve too. Direct pressure and elevation control any bleeding the hand can produce.",
+      "lesson": "ed-wound-ortho-l02"
+    },
+    {
+      "id": "ed-wound-ortho-c018",
+      "front": "What are the practical time windows for primary closure?",
+      "back": "Face and scalp commonly up to 24 hours because they are richly vascular; clean extremity wounds often up to 12 to 18 hours. Time is one factor alongside contamination and mechanism.",
+      "lesson": "ed-wound-ortho-l02"
+    },
+    {
+      "id": "ed-wound-ortho-c019",
+      "front": "Which wounds are not closed primarily?",
+      "back": "Punctures, most bites (especially hand, cat and human), heavily contaminated or crush wounds, already-infected wounds, wounds with a retained foreign body, and wounds in poorly healing patients.",
+      "lesson": "ed-wound-ortho-l02"
+    },
+    {
+      "id": "ed-wound-ortho-c021",
+      "front": "What is the maximum dose of lidocaine with and without epinephrine?",
+      "back": "Plain: 4.5 mg/kg, up to 300 mg. With epinephrine: 7 mg/kg, up to 500 mg, because vasoconstriction slows absorption.",
+      "lesson": "ed-wound-ortho-l03"
+    },
+    {
+      "id": "ed-wound-ortho-c023",
+      "front": "Name four techniques that make a local anesthetic injection hurt less.",
+      "back": "Buffer with 1 mL of 8.4% bicarbonate per 9 to 10 mL, warm the solution, use a 27 or 30 gauge needle, and inject slowly through the wound edges rather than intact skin.",
+      "lesson": "ed-wound-ortho-l03"
+    },
+    {
+      "id": "ed-wound-ortho-c024",
+      "front": "What is LET and when is it used?",
+      "back": "Lidocaine 4%, epinephrine 0.1% and tetracaine 0.5%, soaked on a wound for 20 to 30 minutes. It often avoids injection entirely and is the standard first move in children and for face and scalp.",
+      "lesson": "ed-wound-ortho-l03"
+    },
+    {
+      "id": "ed-wound-ortho-c025",
+      "front": "What volume and pressure are used for wound irrigation?",
+      "back": "About 50 to 100 mL per centimeter of wound length, at 5 to 8 psi, produced by a 19 gauge needle or splash shield on a 30 to 60 mL syringe.",
+      "lesson": "ed-wound-ortho-l03"
+    },
+    {
+      "id": "ed-wound-ortho-c026",
+      "front": "Which solutions must never go into a wound, and why?",
+      "back": "Povidone-iodine, hydrogen peroxide and alcohol. All are toxic to the fibroblasts doing the healing. They belong on the intact skin around the wound only.",
+      "lesson": "ed-wound-ortho-l03"
+    },
+    {
+      "id": "ed-wound-ortho-c027",
+      "front": "What suture sizes and removal times apply by body region?",
+      "back": "Face 6-0 out at 3 to 5 days; scalp and arm 3-0 to 4-0 out at 7 to 10; leg 4-0 out at 10 to 14; hand and over joints 4-0 to 5-0 out at 10 to 14.",
+      "lesson": "ed-wound-ortho-l03"
+    },
+    {
+      "id": "ed-wound-ortho-c028",
+      "front": "When is tissue adhesive appropriate and when is it not?",
+      "back": "Good for short, clean, linear, low-tension wounds whose edges already meet. Avoid over joints, in hair, on mucosa and on wet surfaces. Paint it over the closed edges, never into the wound.",
+      "lesson": "ed-wound-ortho-l03"
+    },
+    {
+      "id": "ed-wound-ortho-c030",
+      "front": "When do wound infections typically appear, and what is the earliest signal?",
+      "back": "Most declare at 2 to 5 days. The earliest reliable signal is pain that was improving and then worsens after about 48 hours.",
+      "lesson": "ed-wound-ortho-l04"
+    },
+    {
+      "id": "ed-wound-ortho-c032",
+      "front": "How does purulent cellulitis change the antibiotic choice?",
+      "back": "Non-purulent is usually streptococcal and gets cephalexin or penicillin. Purulent suggests MRSA and gets trimethoprim-sulfamethoxazole, doxycycline or clindamycin.",
+      "lesson": "ed-wound-ortho-l04"
+    },
+    {
+      "id": "ed-wound-ortho-c033",
+      "front": "Why do antibiotics alone not treat an abscess?",
+      "back": "An abscess is a walled-off collection that antibiotics cannot penetrate. Incision and drainage is the treatment; antibiotics are added for cellulitis, systemic signs or high-risk sites.",
+      "lesson": "ed-wound-ortho-l04"
+    },
+    {
+      "id": "ed-wound-ortho-c035",
+      "front": "What are the tetanus vaccine intervals for clean versus dirty wounds?",
+      "back": "With three or more prior doses: vaccine if over 10 years for a clean minor wound, over 5 years for any other wound. The 5-year line for dirty wounds is the one most often missed.",
+      "lesson": "ed-wound-ortho-l04"
+    },
+    {
+      "id": "ed-wound-ortho-c036",
+      "front": "When is tetanus immune globulin given, and at what dose?",
+      "back": "250 units IM, for any wound that is not clean and minor in a patient with fewer than three lifetime doses or an unknown history. It is given alongside the vaccine, not instead of it.",
+      "lesson": "ed-wound-ortho-l04"
+    },
+    {
+      "id": "ed-wound-ortho-c037",
+      "front": "Which animals are assumed rabid and which can be observed?",
+      "back": "Assume rabid: bats, raccoons, skunks, foxes, coyotes. Observe 10 days: a healthy, available dog, cat or ferret. Essentially never: squirrels, rats, mice, rabbits.",
+      "lesson": "ed-wound-ortho-l04"
+    },
+    {
+      "id": "ed-wound-ortho-c038",
+      "front": "What is rabies post-exposure prophylaxis in an unvaccinated patient?",
+      "back": "Wash the wound with soap and water for 15 minutes, then rabies immune globulin 20 IU/kg infiltrated around the wound, plus vaccine on days 0, 3, 7 and 14.",
+      "lesson": "ed-wound-ortho-l04"
+    },
+    {
+      "id": "ed-wound-ortho-c040",
+      "front": "How do you tell superficial partial-thickness from deep partial-thickness burn?",
+      "back": "Superficial partial is moist, pink, blanches briskly and is very painful. Deep partial is drier, mottled red and white, blanches poorly and has reduced sensation.",
+      "lesson": "ed-wound-ortho-l05"
+    },
+    {
+      "id": "ed-wound-ortho-c041",
+      "front": "Why is an insensate burn not a reassuring finding?",
+      "back": "Full-thickness burn is numb because the nerve endings have been destroyed. Absence of pain in a patch is a depth finding, and it is usually ringed by extremely painful partial-thickness skin.",
+      "lesson": "ed-wound-ortho-l05"
+    },
+    {
+      "id": "ed-wound-ortho-c042",
+      "front": "How is a fresh burn cooled, and what must never be used?",
+      "back": "Cool running water for 20 minutes, effective up to 3 hours after the burn. Never ice — it causes further injury and drops core temperature in large burns.",
+      "lesson": "ed-wound-ortho-l05"
+    },
+    {
+      "id": "ed-wound-ortho-c044",
+      "front": "Why is pulse oximetry useless in a fire victim?",
+      "back": "It cannot distinguish carboxyhemoglobin from oxyhemoglobin, so it reads falsely normal in carbon monoxide poisoning. Give 100% oxygen and obtain a co-oximetry level.",
+      "lesson": "ed-wound-ortho-l05"
+    },
+    {
+      "id": "ed-wound-ortho-c045",
+      "front": "Which findings mean a burn patient's airway should be secured early?",
+      "back": "Singed nasal hair, soot in the mouth, hoarseness, stridor, facial burns, or an enclosed-space fire. Intubation happens while it is still anatomically possible.",
+      "lesson": "ed-wound-ortho-l05"
+    },
+    {
+      "id": "ed-wound-ortho-c046",
+      "front": "List the main burn center referral criteria.",
+      "back": "Partial thickness over 10% TBSA; face, hands, feet, genitals, perineum or major joints; any full-thickness burn; electrical or chemical burns; inhalation injury; complicating illness; burns with trauma.",
+      "lesson": "ed-wound-ortho-l05"
+    },
+    {
+      "id": "ed-wound-ortho-c048",
+      "front": "How is a fracture's displacement and angulation described?",
+      "back": "Always by what the distal fragment is doing — displacement as a percentage, angulation by the direction the apex points — plus any rotation or shortening.",
+      "lesson": "ed-wound-ortho-l06"
+    },
+    {
+      "id": "ed-wound-ortho-c049",
+      "front": "What are the minimum imaging requirements for a suspected long bone fracture?",
+      "back": "Two views at right angles to each other, plus the joint above and below, because the force that broke one end often injured the other.",
+      "lesson": "ed-wound-ortho-l06"
+    },
+    {
+      "id": "ed-wound-ortho-c051",
+      "front": "Which nerve is checked before and after a shoulder reduction, and how?",
+      "back": "The axillary nerve: sensation over the outer deltoid, the regimental badge patch, and the ability to contract the deltoid.",
+      "lesson": "ed-wound-ortho-l06"
+    },
+    {
+      "id": "ed-wound-ortho-c054",
+      "front": "What does a posterior fat pad sign at the elbow mean?",
+      "back": "It is always abnormal and indicates a joint effusion, which in the right setting means an occult fracture — in children usually supracondylar, in adults usually radial head.",
+      "lesson": "ed-wound-ortho-l06"
+    },
+    {
+      "id": "ed-wound-ortho-c055",
+      "front": "Why is a supracondylar fracture in a child watched so closely?",
+      "back": "The brachial artery and median nerve sit directly in front of the fracture, so vascular compromise and compartment syndrome of the forearm are real risks. Peak age is 5 to 7.",
+      "lesson": "ed-wound-ortho-l06"
+    },
+    {
+      "id": "ed-wound-ortho-c057",
+      "front": "Distinguish a Colles from a Smith fracture.",
+      "back": "Colles is a distal radius fracture displaced dorsally, giving a dinner-fork deformity after a fall on an outstretched hand. Smith is displaced toward the palm from a fall on a flexed wrist.",
+      "lesson": "ed-wound-ortho-l06"
+    },
+    {
+      "id": "ed-wound-ortho-c058",
+      "front": "Why does a missed scaphoid fracture matter so much?",
+      "back": "Its blood supply enters at the far end and runs backward, so a proximal fracture starves that fragment. Missing it leads to avascular necrosis, non-union and a permanently arthritic wrist.",
+      "lesson": "ed-wound-ortho-l06"
+    },
+    {
+      "id": "ed-wound-ortho-c059",
+      "front": "How do you check a metacarpal fracture for rotation?",
+      "back": "Ask the patient to half-close the hand. All fingertips should point toward the scaphoid; any finger that crosses over another is malrotated and needs correction regardless of the angle.",
+      "lesson": "ed-wound-ortho-l06"
+    },
+    {
+      "id": "ed-wound-ortho-c060",
+      "front": "What is mallet finger and how is it treated?",
+      "back": "An extensor tendon avulsion at the fingertip joint from a forced bend. The tip droops and cannot be straightened actively. Continuous extension splinting for 6 to 8 weeks, never letting the joint bend.",
+      "lesson": "ed-wound-ortho-l06"
+    },
+    {
+      "id": "ed-wound-ortho-c061",
+      "front": "How does a hip fracture present on exam?",
+      "back": "The leg is shortened and externally rotated, the patient cannot lift the heel off the bed, and axial load on the heel produces groin pain.",
+      "lesson": "ed-wound-ortho-l07"
+    },
+    {
+      "id": "ed-wound-ortho-c064",
+      "front": "State the Ottawa ankle rules.",
+      "back": "X-ray the ankle for malleolar-zone pain plus any of: bone tenderness at the back edge or tip of the lateral malleolus over the distal 6 cm, the same at the medial malleolus, or inability to bear weight four steps.",
+      "lesson": "ed-wound-ortho-l07"
+    },
+    {
+      "id": "ed-wound-ortho-c065",
+      "front": "State the Ottawa foot rules.",
+      "back": "X-ray the foot for midfoot pain plus any of: bone tenderness at the base of the fifth metatarsal, tenderness over the navicular, or inability to bear weight for four steps.",
+      "lesson": "ed-wound-ortho-l07"
+    },
+    {
+      "id": "ed-wound-ortho-c067",
+      "front": "What does the Weber classification describe, and what is a Maisonneuve injury?",
+      "back": "Where a fibular fracture sits relative to the joint line: below is usually stable, at the line variable, above unstable. Maisonneuve is a high fibular fracture with a medial ankle injury — squeeze the whole fibula.",
+      "lesson": "ed-wound-ortho-l07"
+    },
+    {
+      "id": "ed-wound-ortho-c068",
+      "front": "What must be looked for alongside a calcaneal fracture?",
+      "back": "A lumbar burst fracture in about 10%, and a fracture of the other heel, because the axial load travels up the skeleton. Also expect massive swelling and foot compartment syndrome risk.",
+      "lesson": "ed-wound-ortho-l07"
+    },
+    {
+      "id": "ed-wound-ortho-c069",
+      "front": "What findings suggest a Lisfranc injury?",
+      "back": "Midfoot pain out of proportion, bruising on the sole of the foot, and more than 2 mm of widening between the bases of the first and second metatarsals on weight-bearing views.",
+      "lesson": "ed-wound-ortho-l07"
+    },
+    {
+      "id": "ed-wound-ortho-c071",
+      "front": "What are the three grades of sprain?",
+      "back": "Grade I stretched with no instability; grade II partially torn with some laxity and a firm endpoint; grade III completely torn and grossly unstable, often less painful than grade II.",
+      "lesson": "ed-wound-ortho-l07"
+    },
+    {
+      "id": "ed-wound-ortho-c073",
+      "front": "What defines an open fracture, and what is the one-hour priority?",
+      "back": "Any skin break communicating with the fracture, even a pinhole. Antibiotics within one hour of arrival: cefazolin for grades I and II, with gram-negative cover added for grade III.",
+      "lesson": "ed-wound-ortho-l08"
+    },
+    {
+      "id": "ed-wound-ortho-c074",
+      "front": "What does the Gustilo-Anderson grading actually measure?",
+      "back": "The soft tissue injury, which drives the outcome. Grade I under 1 cm and clean, II 1 to 10 cm, IIIA over 10 cm with coverage possible, IIIB needing a flap, IIIC with arterial injury.",
+      "lesson": "ed-wound-ortho-l08"
+    },
+    {
+      "id": "ed-wound-ortho-c076",
+      "front": "What are the two earliest signs of compartment syndrome?",
+      "back": "Pain out of proportion to the injury that escalates and is not relieved by opioids, and pain on passive stretch of the muscles in that compartment — the most reliable physical sign.",
+      "lesson": "ed-wound-ortho-l08"
+    },
+    {
+      "id": "ed-wound-ortho-c077",
+      "front": "Why does a strong distal pulse fail to exclude compartment syndrome?",
+      "back": "Compartment pressure exceeds capillary perfusion pressure long before it reaches arterial pressure, so pulses stay present. Waiting for pulselessness means waiting until the muscle is dead.",
+      "lesson": "ed-wound-ortho-l08"
+    },
+    {
+      "id": "ed-wound-ortho-c078",
+      "front": "What is delta pressure and what value triggers fasciotomy?",
+      "back": "Diastolic blood pressure minus compartment pressure. A delta under 30 mmHg means fasciotomy. Muscle necrosis begins at 4 to 6 hours.",
+      "lesson": "ed-wound-ortho-l08"
+    },
+    {
+      "id": "ed-wound-ortho-c079",
+      "front": "What two mechanical steps come first in suspected compartment syndrome?",
+      "back": "Split the cast and all padding down to skin, and keep the limb at heart level rather than elevated — elevation lowers the pressure gradient driving blood into the compartment.",
+      "lesson": "ed-wound-ortho-l08"
+    },
+    {
+      "id": "ed-wound-ortho-c081",
+      "front": "Why is a hip dislocation reduced within 6 hours?",
+      "back": "The blood supply to the femoral head is compromised while the hip is out, and delay past about 6 hours sharply raises the risk of avascular necrosis.",
+      "lesson": "ed-wound-ortho-l09"
+    },
+    {
+      "id": "ed-wound-ortho-c082",
+      "front": "Which nerve is checked in a posterior hip dislocation, and how?",
+      "back": "The sciatic nerve: foot dorsiflexion and sensation over the top of the foot, documented before and after reduction.",
+      "lesson": "ed-wound-ortho-l09"
+    },
+    {
+      "id": "ed-wound-ortho-c085",
+      "front": "Why do acute injuries get splints rather than circumferential casts?",
+      "back": "Acute injuries swell. A splint is open on one side and accommodates swelling; a cast does not and can cause compartment syndrome.",
+      "lesson": "ed-wound-ortho-l09"
+    },
+    {
+      "id": "ed-wound-ortho-c086",
+      "front": "What is the position of safety for splinting a hand?",
+      "back": "Wrist extended 20 to 30 degrees, knuckles bent 70 to 90 degrees, finger joints nearly straight. Splinting a hand flat stiffens it permanently.",
+      "lesson": "ed-wound-ortho-l09"
+    },
+    {
+      "id": "ed-wound-ortho-c088",
+      "front": "What return precautions does every splinted patient need?",
+      "back": "Increasing pain despite medication, numbness or tingling, pale, blue, cold or grossly swollen digits, inability to move them, burning under the splint, drainage or odour, or a loose, cracked or soaked splint.",
+      "lesson": "ed-wound-ortho-l09"
+    },
+    {
+      "id": "ed-wound-ortho-c089",
+      "front": "How are crutches fitted, and where should the weight go?",
+      "back": "Elbows bent 15 to 30 degrees, with 2 to 3 finger widths (about 5 cm) between the top pad and the armpit. Weight rests on the hands; leaning on the armpits compresses the radial nerve.",
+      "lesson": "ed-wound-ortho-l09"
+    },
+    {
+      "id": "ed-wound-ortho-c091",
+      "front": "Why do children fracture where adults sprain?",
+      "back": "The growth plate is the softest structure at the end of a growing bone — weaker than the ligaments beside it — so force transmitted to a joint fails through bone rather than ligament.",
+      "lesson": "ed-wound-ortho-l10"
+    },
+    {
+      "id": "ed-wound-ortho-c092",
+      "front": "What does the Salter-Harris SALTR mnemonic stand for?",
+      "back": "I Slipped through the physis, II Above into the metaphysis (most common, about 75%), III Lower into the epiphysis, IV Through all three, V cRush of the physis with the worst prognosis.",
+      "lesson": "ed-wound-ortho-l10"
+    },
+    {
+      "id": "ed-wound-ortho-c094",
+      "front": "How does nursemaid's elbow present, and how is it managed?",
+      "back": "A 1 to 4 year old pulled by the hand holds the arm at their side, slightly bent and palm-down, with no swelling or deformity. A classic story needs no x-ray; hyperpronation or supination-flexion reduces it.",
+      "lesson": "ed-wound-ortho-l10"
+    },
+    {
+      "id": "ed-wound-ortho-c096",
+      "front": "Which fracture patterns raise suspicion of child abuse?",
+      "back": "Any fracture in a non-ambulatory infant, metaphyseal corner or bucket-handle lesions, posterior rib fractures, scapular or sternal fractures, and multiple fractures at different healing stages.",
+      "lesson": "ed-wound-ortho-l10"
+    },
+    {
+      "id": "ed-wound-ortho-c097",
+      "front": "What is the reporting duty in New Jersey when abuse is suspected?",
+      "back": "Any person with reasonable cause to believe a child has been abused must report to the State Central Registry. No proof and no permission are required; deciding whether abuse occurred is not the reporter's job.",
+      "lesson": "ed-wound-ortho-l10"
+    },
+    {
+      "id": "ed-wound-ortho-c098",
+      "front": "What are the red flags in a patient presenting with back pain?",
+      "back": "Fever, IV drug use, immunosuppression, cancer history, unexplained weight loss, significant trauma, night or rest pain, new pain under 18 or over 50, and any progressing neurologic deficit.",
+      "lesson": "ed-wound-ortho-l10"
+    },
+    {
+      "id": "ed-wound-ortho-c099",
+      "front": "What is the most sensitive early sign of cauda equina syndrome?",
+      "back": "Urinary retention, followed by overflow incontinence. Add saddle anesthesia, bilateral leg symptoms and reduced rectal tone. It needs urgent MRI and surgery.",
+      "lesson": "ed-wound-ortho-l10"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "ed-wound-ortho-q001",
+      "q": "A man is bitten on the hand by his cat two hours ago. There are two small punctures over the back of the hand with minimal bleeding. What is the correct management?",
+      "choices": [
+        "Irrigate and close the punctures with 5-0 nylon",
+        "Irrigate, leave open, start amoxicillin-clavulanate, address tetanus, and arrange a 48-hour recheck",
+        "Irrigate and discharge with cephalexin",
+        "Reassure; puncture wounds this small do not become infected"
+      ],
+      "answer": 1,
+      "why": "Cat bites infect in 30 to 50% of cases and hand bites are higher risk still, so they are left open with prophylactic amoxicillin-clavulanate. Cephalexin does not cover Pasteurella, and closing the puncture seals the inoculum inside.",
+      "lesson": "ed-wound-ortho-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-wound-ortho-q002",
+      "q": "A 24-year-old has a 6 mm laceration over his fourth knuckle. He says he punched a wall. What is the correct interpretation?",
+      "choices": [
+        "A simple laceration suitable for adhesive closure",
+        "A boxer's fracture wound that can be closed after x-ray",
+        "A clenched-fist injury — assume joint penetration, x-ray for a tooth fragment, hand surgery, do not close",
+        "A contusion requiring only ice and elevation"
+      ],
+      "answer": 2,
+      "why": "A wound over a knuckle from a punch is a fight bite until proven otherwise, and the tooth enters the joint with the fist closed. Closing it traps oral anaerobes and Eikenella inside a joint, which destroys it.",
+      "lesson": "ed-wound-ortho-l01",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-wound-ortho-q004",
+      "q": "A patient lacerated his forearm on a window. He insists something is still in there, but the wound looks clean. What should be done?",
+      "choices": [
+        "Obtain a plain radiograph, since glass is radiopaque and the sensation predicts a retained fragment",
+        "Close the wound; a clean-appearing wound excludes foreign body",
+        "Obtain an ultrasound instead, since glass does not appear on plain film",
+        "Explore blindly with forceps"
+      ],
+      "answer": 0,
+      "why": "Glass fragments over about 2 mm are usually visible on plain film, and a patient's sensation of a foreign body is a genuinely predictive symptom. Blind probing pushes fragments deeper, and ultrasound is reserved for radiolucent material.",
+      "lesson": "ed-wound-ortho-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-wound-ortho-q005",
+      "q": "A patient has a laceration at the base of the little finger. She can move the finger fully but cannot spread her fingers apart. Which structure is injured?",
+      "choices": [
+        "Median nerve",
+        "Radial nerve",
+        "Ulnar nerve",
+        "Flexor digitorum profundus"
+      ],
+      "answer": 2,
+      "why": "Finger abduction and adduction are ulnar motor functions. The median nerve controls thumb opposition, the radial nerve controls wrist and finger extension, and an FDP injury would prevent fingertip flexion rather than spreading.",
+      "lesson": "ed-wound-ortho-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-wound-ortho-q006",
+      "q": "A finger laceration is bleeding steadily from one edge. What is the correct control measure?",
+      "choices": [
+        "Clamp the vessel with a hemostat",
+        "Apply a tourniquet at the wrist for 30 minutes",
+        "Direct pressure and elevation",
+        "Inject lidocaine with epinephrine into the bleeding point"
+      ],
+      "answer": 2,
+      "why": "Digital nerves run alongside digital arteries, so clamping takes the nerve with the vessel. Pressure and elevation control any bleeding a hand can produce, and a wrist tourniquet is neither necessary nor benign.",
+      "lesson": "ed-wound-ortho-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-wound-ortho-q007",
+      "q": "Which wound should be left open for delayed closure?",
+      "choices": [
+        "A clean 4 cm facial laceration presenting at hour 9",
+        "A puncture wound of the sole from a nail presenting at hour 1",
+        "A scalp laceration presenting at hour 6",
+        "A clean forearm incision presenting at hour 3"
+      ],
+      "answer": 1,
+      "why": "Punctures cannot be irrigated effectively and are never closed primarily. Face and scalp are richly vascular and are closed well beyond the classic window, and a clean fresh incision is an ideal primary closure.",
+      "lesson": "ed-wound-ortho-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-wound-ortho-q008",
+      "q": "A 60 kg patient requires local anesthesia with 1% lidocaine with epinephrine. What is the maximum volume?",
+      "choices": [
+        "27 mL",
+        "42 mL",
+        "50 mL",
+        "14 mL"
+      ],
+      "answer": 1,
+      "why": "7 mg/kg x 60 kg = 420 mg, and 1% is 10 mg/mL, so 42 mL. 27 mL corresponds to the plain lidocaine limit of 4.5 mg/kg, and 50 mL exceeds the ceiling.",
+      "lesson": "ed-wound-ortho-l03",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-wound-ortho-q009",
+      "q": "A 4 cm laceration needs irrigation. What volume and pressure are appropriate?",
+      "choices": [
+        "About 200 to 400 mL at 5 to 8 psi using a splash shield on a 30 to 60 mL syringe",
+        "About 50 mL poured from a saline bottle",
+        "About 1 L of povidone-iodine solution",
+        "About 100 mL of hydrogen peroxide"
+      ],
+      "answer": 0,
+      "why": "Roughly 50 to 100 mL per centimeter at 5 to 8 psi is the standard. Pouring produces no mechanical cleaning, and iodine and peroxide are toxic to fibroblasts and never go inside a wound.",
+      "lesson": "ed-wound-ortho-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-wound-ortho-q010",
+      "q": "A child has a 2 cm linear forehead laceration with edges that meet on their own. Which approach is best?",
+      "choices": [
+        "Staples after LET application",
+        "Adhesive strips without any anesthesia",
+        "Injected lidocaine and 4-0 nylon",
+        "Topical LET followed by tissue adhesive"
+      ],
+      "answer": 3,
+      "why": "A short, clean, low-tension facial wound with apposed edges is the ideal adhesive candidate, and LET avoids a needle in a child. Staples are not used on the face, and 4-0 nylon is far too heavy for facial skin.",
+      "lesson": "ed-wound-ortho-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-wound-ortho-q012",
+      "q": "A patient returns 3 days after a repair with worsening pain, spreading redness and a streak tracking toward the elbow. What does the streak represent?",
+      "choices": [
+        "Lymphangitis, indicating spreading infection",
+        "A normal healing response",
+        "Venous thrombosis",
+        "An allergic reaction to the suture material"
+      ],
+      "answer": 0,
+      "why": "A red streak tracking proximally toward the nodes is lymphangitis and signals a spreading infection needing systemic treatment. Normal healing does not track, and a suture allergy produces local itching rather than a linear streak.",
+      "lesson": "ed-wound-ortho-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-wound-ortho-q013",
+      "q": "A patient describes a painful, swollen \"spider bite\" on the thigh that he never saw bite him. It is fluctuant. What is most likely and what is the treatment?",
+      "choices": [
+        "A true arachnid envenomation requiring antivenom",
+        "A sebaceous cyst requiring elective excision",
+        "Cellulitis requiring cephalexin alone",
+        "A MRSA abscess requiring incision and drainage"
+      ],
+      "answer": 3,
+      "why": "An unwitnessed \"spider bite\" that is fluctuant is a MRSA abscess in the overwhelming majority of cases, and drainage is the treatment. Antibiotics alone cannot penetrate a walled-off collection.",
+      "lesson": "ed-wound-ortho-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-wound-ortho-q014",
+      "q": "A patient with a heavily soiled farm injury has never been vaccinated against tetanus. What is required?",
+      "choices": [
+        "Tetanus vaccine alone",
+        "Tetanus immune globulin alone",
+        "Tetanus vaccine plus tetanus immune globulin 250 units IM",
+        "Neither, if the wound is thoroughly irrigated"
+      ],
+      "answer": 2,
+      "why": "Fewer than three lifetime doses plus a non-clean wound requires both active vaccine and passive immune globulin, because the vaccine takes weeks to protect. Irrigation reduces bacterial load but does not neutralize toxin.",
+      "lesson": "ed-wound-ortho-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-wound-ortho-q015",
+      "q": "A child is bitten by a neighbour's healthy, vaccinated dog that is available for observation. What is the rabies management?",
+      "choices": [
+        "Begin immune globulin and the full vaccine series now",
+        "Observe the dog for 10 days; no prophylaxis unless it becomes ill",
+        "Give vaccine on days 0 and 3 only",
+        "Euthanize and test the dog immediately"
+      ],
+      "answer": 1,
+      "why": "A healthy, available dog, cat or ferret is observed for 10 days, and prophylaxis begins only if it develops signs. Immediate full prophylaxis is reserved for bats and wild carnivores or an unavailable animal.",
+      "lesson": "ed-wound-ortho-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-wound-ortho-q016",
+      "q": "Which burn depth counts toward the TBSA used for fluid calculations?",
+      "choices": [
+        "All burns including superficial",
+        "Partial-thickness and full-thickness only",
+        "Full-thickness only",
+        "Only burns over a major joint"
+      ],
+      "answer": 1,
+      "why": "Superficial burns do not leak the plasma that drives resuscitation volume, so they are excluded. Counting them inflates the calculated volume substantially and over-resuscitates the patient.",
+      "lesson": "ed-wound-ortho-l05",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-wound-ortho-q017",
+      "q": "A patient arrives 20 minutes after scalding her forearm. What is the correct immediate care?",
+      "choices": [
+        "Apply ice packs for 20 minutes",
+        "Cool running water for 20 minutes, then clean and dress",
+        "Apply silver sulfadiazine immediately without cooling",
+        "Rupture all blisters before dressing"
+      ],
+      "answer": 1,
+      "why": "Cool running water for 20 minutes is effective up to 3 hours after the burn. Ice causes further tissue injury, and small intact blisters are generally left alone rather than routinely ruptured.",
+      "lesson": "ed-wound-ortho-l05",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-wound-ortho-q018",
+      "q": "A patient has a circumferential full-thickness burn of the forearm. Doppler signals in the fingers are fading. What is needed?",
+      "choices": [
+        "Fasciotomy",
+        "Additional fluid resuscitation only",
+        "Elevation and observation",
+        "Escharotomy through the burned skin"
+      ],
+      "answer": 3,
+      "why": "Rigid eschar acts as a tourniquet as the limb swells beneath it, and the fix is an incision through the dead skin. A fasciotomy cuts deeper and treats compartment syndrome, and observation loses the hand.",
+      "lesson": "ed-wound-ortho-l05",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-wound-ortho-q019",
+      "q": "Which burn does NOT by itself meet burn center referral criteria?",
+      "choices": [
+        "A partial-thickness burn of the palm",
+        "An electrical burn from a 240 V source",
+        "A 4% superficial sunburn of the back",
+        "A 2% full-thickness burn of the forearm"
+      ],
+      "answer": 2,
+      "why": "Superficial burns are not referral criteria regardless of area. Hands, all electrical burns and any full-thickness burn all qualify on their own.",
+      "lesson": "ed-wound-ortho-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-wound-ortho-q020",
+      "q": "A 7-year-old fell on an outstretched hand. The elbow x-ray shows no fracture line but there is a posterior fat pad. How is this interpreted?",
+      "choices": [
+        "A normal finding in children",
+        "Always abnormal — it indicates an effusion and an occult fracture, likely supracondylar",
+        "Evidence of a chronic elbow problem",
+        "An artifact of positioning"
+      ],
+      "answer": 1,
+      "why": "A posterior fat pad is never normal; it is displaced by a joint effusion, which in this setting means an occult supracondylar fracture. Treating it as normal sends home a fracture that threatens the brachial artery.",
+      "lesson": "ed-wound-ortho-l06",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-wound-ortho-q021",
+      "q": "A patient with a humeral shaft fracture cannot extend the wrist and has numbness in the first dorsal web space. Which nerve is injured?",
+      "choices": [
+        "Median",
+        "Ulnar",
+        "Axillary",
+        "Radial"
+      ],
+      "answer": 3,
+      "why": "The radial nerve runs in a groove along the back of the humerus and is injured in 10 to 18% of shaft fractures, producing wrist drop and first web space numbness. The median and ulnar nerves supply the hand differently, and the axillary nerve supplies the deltoid.",
+      "lesson": "ed-wound-ortho-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-wound-ortho-q022",
+      "q": "A patient with anatomical snuffbox tenderness after a fall has a normal wrist series. What should happen?",
+      "choices": [
+        "Discharge with an elastic wrap and analgesia",
+        "Thumb spica splint and repeat imaging or MRI in 10 to 14 days",
+        "Repeat the x-ray in 24 hours",
+        "Immediate CT of the wrist for every case"
+      ],
+      "answer": 1,
+      "why": "Scaphoid fractures are frequently invisible initially, and a missed one risks avascular necrosis from the retrograde blood supply. A wrap provides no protection, and 24 hours is too early for a fracture line to appear.",
+      "lesson": "ed-wound-ortho-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-wound-ortho-q023",
+      "q": "Which injury pairs a fracture with a dislocation at the other end of the forearm?",
+      "choices": [
+        "Colles fracture",
+        "Boxer's fracture",
+        "Monteggia fracture-dislocation",
+        "Barton fracture"
+      ],
+      "answer": 2,
+      "why": "Monteggia is a proximal ulna fracture with a dislocated radial head, which is why the joint above and below is always imaged. A Colles and a Barton are both distal radius patterns, and a boxer's fracture involves the fifth metacarpal.",
+      "lesson": "ed-wound-ortho-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-wound-ortho-q024",
+      "q": "A patient has a mallet finger. What is the correct treatment?",
+      "choices": [
+        "Buddy taping for 2 weeks",
+        "Continuous extension splinting of the distal joint for 6 to 8 weeks, never allowing it to bend",
+        "Immediate surgical repair in all cases",
+        "Range of motion exercises beginning at 48 hours"
+      ],
+      "answer": 1,
+      "why": "The avulsed extensor must be held in continuous extension while it heals, and a single episode of flexion during a splint change undoes weeks of healing. Buddy taping does not control the fingertip joint, and early motion guarantees failure.",
+      "lesson": "ed-wound-ortho-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-wound-ortho-q025",
+      "q": "An 82-year-old fell at home. Her right leg is shortened and externally rotated and she cannot lift her heel off the bed. The hip x-ray is read as normal. What is the next step?",
+      "choices": [
+        "Discharge with analgesia and a walker",
+        "Repeat plain films in one week",
+        "CT or MRI of the hip, because occult hip fractures are common with this exam",
+        "Physical therapy referral"
+      ],
+      "answer": 2,
+      "why": "The exam is classic for a hip fracture, and occult fractures with normal plain films are well described in this population. Discharging a patient who cannot bear weight is how a non-displaced fracture becomes a displaced one.",
+      "lesson": "ed-wound-ortho-l07",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-wound-ortho-q026",
+      "q": "A patient with an isolated mid-shaft femur fracture also has an ipsilateral ankle fracture. Should a traction splint be used?",
+      "choices": [
+        "Yes, traction splints are indicated for all femur fractures",
+        "No, because traction splints are contraindicated in all adults",
+        "Yes, but only at reduced tension",
+        "No — an ankle or foot injury on the same side is a contraindication"
+      ],
+      "answer": 3,
+      "why": "Traction splints pull against the ankle and foot, so an injury there is a contraindication, along with pelvic fractures and hip or knee injury on that side. They remain standard for genuinely isolated mid-shaft fractures.",
+      "lesson": "ed-wound-ortho-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-wound-ortho-q027",
+      "q": "A 30-year-old inverted his ankle. He has tenderness only over the anterior talofibular ligament, none over either malleolus, and he limped four steps in the department. What do the Ottawa rules recommend?",
+      "choices": [
+        "Ankle and foot radiographs",
+        "Ankle radiograph only",
+        "No radiograph is required",
+        "Radiograph only if the pain persists past 48 hours"
+      ],
+      "answer": 2,
+      "why": "Neither malleolar bone tenderness nor an inability to bear weight four steps is present, so no imaging is indicated. Tenderness over a ligament is exactly the finding the rules are designed to let you skip imaging for.",
+      "lesson": "ed-wound-ortho-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-wound-ortho-q028",
+      "q": "A patient jumped from a second-storey window and has bilateral heel pain. What additional injury must be excluded?",
+      "choices": [
+        "A lumbar spine fracture",
+        "A clavicle fracture",
+        "A distal radius fracture",
+        "A femoral neck fracture only"
+      ],
+      "answer": 0,
+      "why": "Axial load from landing on the heels transmits up the skeleton, and about 10% of calcaneal fractures have an associated lumbar burst fracture. Heel pain dominates the patient's attention, so the back must be asked about deliberately.",
+      "lesson": "ed-wound-ortho-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-wound-ortho-q029",
+      "q": "A footballer has severe midfoot pain, bruising across the sole of the foot, and cannot bear weight. Standard films are read as normal. What should be suspected?",
+      "choices": [
+        "A simple midfoot sprain",
+        "A stress fracture of the second metatarsal only",
+        "Plantar fasciitis",
+        "A Lisfranc injury requiring weight-bearing views and orthopedic referral"
+      ],
+      "answer": 3,
+      "why": "Plantar bruising with disproportionate midfoot pain is the classic Lisfranc presentation, and non-weight-bearing films frequently look normal because the displacement only appears under load. Missing it leads to permanent midfoot arthritis.",
+      "lesson": "ed-wound-ortho-l07",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-wound-ortho-q030",
+      "q": "Which statement about ankle sprain grading is correct?",
+      "choices": [
+        "Grade III sprains are always the most painful",
+        "Grade II sprains show gross instability",
+        "Grade III sprains are complete tears and may be less painful than grade II",
+        "Grade I sprains require six weeks of casting"
+      ],
+      "answer": 2,
+      "why": "A completely torn ligament has no intact fibres left to hurt, so pain is a poor guide to severity and stability must be tested. Grade II has laxity with a firm endpoint, and grade I is treated with early protected movement.",
+      "lesson": "ed-wound-ortho-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-wound-ortho-q031",
+      "q": "A patient arrives with a deformed tibia and a 4 mm puncture wound over it. What is the most time-critical intervention?",
+      "choices": [
+        "Reduction of the deformity",
+        "Antibiotics within one hour of arrival",
+        "Bedside irrigation with 3 L of saline",
+        "A CT scan of the tibia"
+      ],
+      "answer": 1,
+      "why": "Antibiotics within the hour is the intervention most strongly associated with reduced infection in open fractures. Deep irrigation belongs in the operating room, and imaging and reduction can follow the antibiotic.",
+      "lesson": "ed-wound-ortho-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-wound-ortho-q032",
+      "q": "Four hours after a tibial fracture, a casted patient has escalating pain, screams on passive toe extension, and has a strong dorsalis pedis pulse with pink toes. What is the correct action?",
+      "choices": [
+        "Reassure and increase analgesia; the pulse excludes compartment syndrome",
+        "Elevate the limb above the heart and recheck in an hour",
+        "Split the cast and padding to skin, keep the limb at heart level, and escalate immediately for possible fasciotomy",
+        "Apply ice over the cast and reassess"
+      ],
+      "answer": 2,
+      "why": "Pain out of proportion plus pain on passive stretch is compartment syndrome; pulses persist because compartment pressure exceeds capillary rather than arterial pressure. Elevation reduces the perfusion gradient and analgesia only masks the sign.",
+      "lesson": "ed-wound-ortho-l08",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-wound-ortho-q033",
+      "q": "How long after the onset of compartment syndrome does irreversible muscle necrosis begin?",
+      "choices": [
+        "4 to 6 hours",
+        "12 to 24 hours",
+        "30 minutes",
+        "48 hours"
+      ],
+      "answer": 0,
+      "why": "Muscle death begins at 4 to 6 hours, which is the entire reason this is a surgical emergency rather than a next-morning problem. Waiting 12 hours guarantees permanent contracture or amputation.",
+      "lesson": "ed-wound-ortho-l08",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-wound-ortho-q034",
+      "q": "A patient arrives with an ankle fracture-dislocation. The skin over the medial malleolus is stretched white and the foot is dusky. What comes first?",
+      "choices": [
+        "X-ray before any manipulation",
+        "Immediate reduction, before imaging",
+        "Ice and elevation while awaiting the radiology technician",
+        "Orthopedic consultation before touching the limb"
+      ],
+      "answer": 1,
+      "why": "Skin under that tension becomes necrotic within about an hour and the foot is ischemic, so reduction precedes imaging. Waiting for films or consultation costs the skin and possibly the foot.",
+      "lesson": "ed-wound-ortho-l09",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-wound-ortho-q035",
+      "q": "You are assisting with a shoulder reduction. What is the most commonly skipped step that later matters most?",
+      "choices": [
+        "Applying the sling correctly",
+        "Documenting the axillary nerve exam before the reduction",
+        "Obtaining consent for sedation",
+        "Recording the time of the reduction"
+      ],
+      "answer": 1,
+      "why": "Without a pre-reduction nerve exam nobody can tell whether a post-reduction deficit came from the injury or the procedure. The other steps matter but none of them becomes unanswerable afterwards.",
+      "lesson": "ed-wound-ortho-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-wound-ortho-q036",
+      "q": "Which crutch instruction is correct?",
+      "choices": [
+        "Rest your weight on the underarm pads",
+        "Keep the pads snug against the armpits",
+        "Keep 2 to 3 finger widths between the pad and the armpit and bear weight through the hands",
+        "Lead with the injured leg going up stairs"
+      ],
+      "answer": 2,
+      "why": "Weight through the axilla compresses the radial nerve and causes crutch palsy, so the gap and hand weight-bearing are essential. On stairs the rule is up with the good leg and down with the bad.",
+      "lesson": "ed-wound-ortho-l09",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-wound-ortho-q037",
+      "q": "A 3-month-old has a transverse femur fracture attributed to a fall from a bouncer seat. What is the appropriate response?",
+      "choices": [
+        "Treat the fracture and discharge with pediatric follow-up",
+        "Report only if a second injury is found on the skeletal survey",
+        "Order vitamin D levels and defer any reporting",
+        "Recognize a fracture in a non-ambulatory infant as an abuse red flag, obtain a skeletal survey, and report the concern"
+      ],
+      "answer": 3,
+      "why": "Any fracture in an infant who cannot yet walk is a major red flag, and mandated reporting requires only reasonable cause, not proof. Deferring the report until more evidence appears defeats the purpose of mandatory reporting.",
+      "lesson": "ed-wound-ortho-l10",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-wound-ortho-q038",
+      "q": "Which Salter-Harris type has the worst prognosis for future growth?",
+      "choices": [
+        "Type I",
+        "Type II",
+        "Type III",
+        "Type V"
+      ],
+      "answer": 3,
+      "why": "Type V is a crush of the growth plate itself, frequently recognized only in hindsight once growth has already arrested. Type II is the most common and generally does well, and types I and III have better outcomes than a crush.",
+      "lesson": "ed-wound-ortho-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-wound-ortho-q039",
+      "q": "A 2-year-old will not use her arm after being swung by the hands. She holds it at her side, slightly flexed and pronated, with no swelling. What is the best next step?",
+      "choices": [
+        "Reduce by hyperpronation or supination and flexion; no x-ray is needed with this history",
+        "Obtain a full x-ray series of the arm before touching it",
+        "Apply a sling and refer to orthopedics in a week",
+        "Obtain a skeletal survey"
+      ],
+      "answer": 0,
+      "why": "This is a classic nursemaid's elbow, and with a typical mechanism and no swelling or deformity imaging is unnecessary before a reduction attempt. The child uses the arm within 5 to 30 minutes if the reduction succeeds.",
+      "lesson": "ed-wound-ortho-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-wound-ortho-q040",
+      "q": "A 52-year-old with four days of low back pain reports numbness between his legs and says he has not urinated since yesterday. What is the priority?",
+      "choices": [
+        "NSAIDs and early mobilization advice",
+        "Urgent evaluation for cauda equina syndrome with emergent MRI",
+        "Bladder scan, then outpatient urology referral",
+        "Lumbar radiographs and discharge"
+      ],
+      "answer": 1,
+      "why": "Saddle anesthesia with urinary retention is cauda equina syndrome until proven otherwise, and delay causes permanent incontinence. Plain films will not show it and outpatient referral loses the window for surgery.",
+      "lesson": "ed-wound-ortho-l10",
+      "difficulty": 3
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "ed-wound-ortho-s01",
+      "title": "Dog bite to the hand with a tendon concern",
+      "setting": "ed",
+      "intro": "`21:15`. A `34-year-old` mail carrier is triaged with a dog bite to the right hand, sustained about `90 minutes` ago while delivering to a house with a loose German shepherd. He is right-handed. There is a ragged tear across the back of the hand near the base of the index finger and two puncture marks on the palm side. He is holding the hand wrapped in a towel and has not looked at it since it happened.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "You are getting him into a room. Bleeding has stopped. He wants to know how many stitches he needs.\n\n**What do you do before anything is cleaned or numbed?**",
+          "vitals": {
+            "hr": 92,
+            "bp": "134/82",
+            "rr": 16,
+            "spo2": 99,
+            "temp": 37
+          },
+          "choices": [
+            {
+              "text": "Document tendon function, nerve function and perfusion in the hand, and ask about the dog, the tetanus history and his occupation",
+              "next": "s2",
+              "feedback": "Correct. Once the hand is anesthetized nobody can demonstrate what was working beforehand. The dog's status drives the rabies decision, tetanus drives the vaccine decision, and being a right-handed mail carrier changes what a missed tendon costs him.",
+              "score": 1
+            },
+            {
+              "text": "Irrigate immediately, since early irrigation lowers infection rates",
+              "next": "s2",
+              "feedback": "Irrigation matters enormously and is coming. But a functional exam recorded before the anesthetic is the one thing that cannot be recovered afterward, and it takes ninety seconds.",
+              "score": 0
+            },
+            {
+              "text": "Get an x-ray first to look for a retained tooth",
+              "next": "s2",
+              "feedback": "Reasonable for a bite over a joint and it will likely happen. It is not the first step, and it does not substitute for a documented tendon and nerve exam.",
+              "score": 0
+            },
+            {
+              "text": "Tell him it looks like about six stitches and take him for registration",
+              "next": "s2",
+              "feedback": "Most hand bites are not closed at all, so the answer is probably zero. More importantly, nothing has been examined yet, and a promise about closure sets an expectation the physician will have to undo.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "You examine the hand. He can make a fist, but when you hold the middle joint of the index finger straight and ask him to bend the fingertip, it moves — weakly, and it hurts. Extension of the index finger against your resistance is clearly weaker than the left. Sensation is intact everywhere and capillary refill is brisk.\n\n**How do you interpret and report this?**",
+          "choices": [
+            {
+              "text": "Full range of motion means the tendons are intact; report it as a soft tissue injury",
+              "next": "s3",
+              "feedback": "This is the most common and most consequential error in hand wounds. A partially cut tendon still moves — it just moves weakly. Full motion never excludes a tendon injury.",
+              "score": -1
+            },
+            {
+              "text": "Report a possible partial tendon injury: weak but present FDP flexion and weak extension against resistance, with intact sensation and perfusion",
+              "next": "s3",
+              "feedback": "Correct, and the phrasing matters. Naming which tendon, which test and what you compared it to gives the physician something to act on and gives hand surgery something to triage.",
+              "score": 1
+            },
+            {
+              "text": "Report that the weakness is probably from pain and recheck after analgesia",
+              "next": "s3",
+              "feedback": "Pain does reduce effort, which is why the finding is reported rather than dismissed. Attributing weakness to pain is how a partial tendon laceration goes home and ruptures completely four days later.",
+              "score": -1
+            },
+            {
+              "text": "Report weakness in the index finger and ask the physician to examine the hand before anything is numbed",
+              "next": "s3",
+              "feedback": "Correct and appropriately humble. Escalating an abnormal finding before the anesthetic goes in is exactly right, even without naming the specific tendon.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "The physician confirms your findings and orders an x-ray of the hand, irrigation, tetanus, and antibiotics. His last tetanus shot was \"maybe eight years ago, when I stepped on something.\" The dog is the homeowner's, currently confined, up to date on vaccines, and animal control has it.\n\n**What does he need for tetanus and rabies?**",
+          "choices": [
+            {
+              "text": "Tetanus vaccine now; observe the dog for 10 days with no rabies prophylaxis",
+              "next": "s4",
+              "feedback": "Correct on both. A bite wound is not clean and minor, so the interval is 5 years, and eight exceeds it. A healthy, available, confined dog is observed for 10 days, and prophylaxis begins only if it develops signs.",
+              "score": 1
+            },
+            {
+              "text": "No tetanus needed at 8 years; observe the dog 10 days",
+              "next": "s4",
+              "feedback": "The rabies half is right. The tetanus half uses the wrong interval — 10 years applies only to clean minor wounds, and any other wound uses 5 years. This is the single most commonly missed number in wound care.",
+              "score": -1
+            },
+            {
+              "text": "Tetanus vaccine plus immune globulin, and start the full rabies series now",
+              "next": "s4",
+              "feedback": "Both are over-treatment. Immune globulin is added only for fewer than three lifetime doses or an unknown history, and rabies prophylaxis is not started when a healthy dog is available for the 10-day observation.",
+              "score": 0
+            },
+            {
+              "text": "Tetanus vaccine now, and start rabies vaccine on days 0 and 3",
+              "next": "s4",
+              "feedback": "Tetanus is right. The days 0 and 3 schedule is the abbreviated course for someone already vaccinated against rabies, and none of it is indicated while the dog is under observation.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "The x-ray shows no fracture and no radiopaque fragment. You irrigate copiously with saline. The physician says the wounds are to be left open, dressed, splinted, and the patient is going to hand surgery in the morning.\n\n**The patient asks why you are not sewing it up. What is the honest answer?**",
+          "vitals": {
+            "hr": 84,
+            "bp": "128/78"
+          },
+          "choices": [
+            {
+              "text": "\"We're short-staffed tonight, so hand surgery will close it tomorrow.\"",
+              "next": "s5",
+              "feedback": "Untrue and it undermines the plan. He will interpret an open wound as neglect and may not come back tomorrow. The reason is medical, and it is easy to explain.",
+              "score": -1
+            },
+            {
+              "text": "\"Closing a bite traps bacteria inside. Hand bites infect badly, so we clean them, leave them open, and cover you with antibiotics while the tendon gets checked properly.\"",
+              "next": "s5",
+              "feedback": "Correct, plain, and true. Patients accept an open wound readily once they understand that closing it would seal the infection in. Naming the tendon concern also explains why hand surgery is involved at all.",
+              "score": 1
+            },
+            {
+              "text": "\"Bites are never closed, ever.\"",
+              "next": "s5",
+              "feedback": "Close, but overstated. Facial bites are often closed after thorough irrigation for cosmetic reasons. Hand, cat, human and late-presenting bites are the ones left open, and this is a hand bite.",
+              "score": 0
+            },
+            {
+              "text": "\"It's too small to need stitches.\"",
+              "next": "s5",
+              "feedback": "Wrong reason, and it minimizes an injury that may involve a tendon. He will conclude the whole thing is trivial and skip the morning appointment.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "You are applying a splint and giving discharge instructions for the overnight period. He is on amoxicillin-clavulanate and has an `08:00` hand surgery appointment.\n\n**What must the instructions include?**",
+          "choices": [
+            {
+              "text": "Keep it dry and elevated, take the antibiotic, and come back for the appointment",
+              "next": "end",
+              "feedback": "The basics are there but the safety net is not. A hand bite can develop a spreading infection overnight, and he needs to know which specific changes mean coming back before `08:00`.",
+              "score": 0
+            },
+            {
+              "text": "Elevate above the heart, keep the splint dry, complete the antibiotic, keep the 08:00 appointment, and return immediately for increasing pain, spreading redness, red streaks, fever, drainage, numbness or inability to move the fingers",
+              "next": "end",
+              "feedback": "Correct. The return precautions are the point: a hand infection or a compartment problem declares itself in hours, and he is going home before the swelling peaks. Write them down as well as saying them.",
+              "score": 1
+            },
+            {
+              "text": "Elevate, keep dry, and soak the hand in warm water three times overnight to draw out infection",
+              "next": "end",
+              "feedback": "Soaking macerates the wound edges, wets the splint, and does not draw anything out. Elevation and antibiotics are the treatment.",
+              "score": -1
+            },
+            {
+              "text": "Splint the hand flat so it stays comfortable overnight",
+              "next": "end",
+              "feedback": "A hand splinted flat stiffens. The position of safety is the wrist extended 20 to 30 degrees, knuckles bent 70 to 90, and the finger joints nearly straight.",
+              "score": -1
+            }
+          ]
+        }
+      ],
+      "debrief": "Three things nearly went wrong in this case, and all three are tech-level catches.\n\n**Full motion is not an intact tendon.** He made a fist. He also had measurably weak flexion and extension on the injured side, which is exactly what a partial laceration produces. Strength against resistance, compared with the other hand, is the test — and it has to be done and written down **before** the anesthetic.\n\n**Bites are not closed.** The instinct to fix what is torn is strong, and closing a hand bite converts an open contaminated wound into a sealed abscess over a tendon sheath. Cephalexin would have been the other version of the same error, because it does not cover `Pasteurella`.\n\n**The five-year tetanus interval.** Eight years sounded fine to him and would have sounded fine to most people. Any wound that is not clean and minor uses `5 years`, not `10`.\n\nAnd the rabies decision was made on the **animal**, not the wound: a healthy, confined, available dog gets observed for `10 days` while nothing is given.",
+      "note": null
+    },
+    {
+      "id": "ed-wound-ortho-s02",
+      "title": "Fall onto an outstretched hand",
+      "setting": "ed",
+      "intro": "`10:40`. A `68-year-old` woman slipped on wet leaves on her front steps and landed on her right hand with the wrist bent back. She is in triage holding her forearm against her body. There is an obvious bump on the back of the wrist. She takes a bisphosphonate for osteoporosis and lives alone in a two-storey house.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "You bring her to a room. The wrist has a visible step-off on the back, with swelling from the knuckles to mid-forearm.\n\n**What is the exam you perform and record?**",
+          "vitals": {
+            "hr": 96,
+            "bp": "152/84",
+            "rr": 18,
+            "spo2": 98
+          },
+          "choices": [
+            {
+              "text": "Look, feel and check motion, plus radial pulse, capillary refill, and median, ulnar and radial sensation and motor function — then check the elbow and shoulder too",
+              "next": "s2",
+              "feedback": "Correct. Distal neurovascular status before anything is splinted or moved, and the joint above and below because the force that broke the wrist travelled up the arm. The median nerve is the one at risk here.",
+              "score": 1
+            },
+            {
+              "text": "Check the radial pulse and get her to x-ray quickly, since the deformity is obvious",
+              "next": "s2",
+              "feedback": "A pulse is not a neurovascular exam. Median nerve compression from a displaced distal radius fracture is common, and a deficit found after the splint with no baseline is an unanswerable question.",
+              "score": 0
+            },
+            {
+              "text": "Splint it in a position of comfort first, then examine once the pain settles",
+              "next": "s2",
+              "feedback": "Splinting before the exam is backwards. Once the splint is on, the exam has to be repeated anyway, and any deficit discovered afterward cannot be separated from the splinting.",
+              "score": -1
+            },
+            {
+              "text": "Examine the wrist thoroughly; the elbow and shoulder are not involved in a wrist injury",
+              "next": "s2",
+              "feedback": "The wrist exam is right, but the rule for any limb injury is the joint above and below. A fall on an outstretched hand transmits force through the forearm, elbow and shoulder, and elderly patients localize poorly.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "Pulse and refill are normal. Sensation is intact but she reports \"pins and needles\" in the thumb, index and middle fingers that started in the ambulance. She can still make an `OK` sign, weakly. Elbow and shoulder are non-tender.\n\n**What does the tingling mean, and what do you do with it?**",
+          "choices": [
+            {
+              "text": "Normal after a fall; note it and continue",
+              "next": "s3",
+              "feedback": "The thumb, index and middle finger distribution is the median nerve, and new symptoms there after a displaced distal radius fracture suggest acute carpal tunnel compression. It is escalated, not noted in passing.",
+              "score": -1
+            },
+            {
+              "text": "Median nerve symptoms from the displaced fracture — report it to the physician now and record the exact time it started",
+              "next": "s3",
+              "feedback": "Correct. Acute median nerve compression can change this from a next-week reduction to a same-hour one. The onset time matters because it defines how long the nerve has been compressed.",
+              "score": 1
+            },
+            {
+              "text": "Ulnar nerve compression; pad the inner elbow",
+              "next": "s3",
+              "feedback": "Wrong nerve. The ulnar nerve serves the little finger and half the ring finger. Thumb, index and middle is median territory, which runs through the carpal tunnel right at the fracture.",
+              "score": -1
+            },
+            {
+              "text": "Anxiety-related hyperventilation causing tingling",
+              "next": "s3",
+              "feedback": "Hyperventilation tingling is bilateral and involves the lips and both hands. A single-limb, single-nerve distribution next to a fracture is a nerve, not a breathing pattern.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "The physician evaluates her and orders wrist films. The x-ray shows a distal radius fracture, extra-articular, dorsally displaced and angulated, with an associated ulnar styloid fracture. No scaphoid fracture is seen.\n\n**What is this pattern called, and is anything still unresolved on the imaging?**",
+          "choices": [
+            {
+              "text": "A Smith fracture; nothing further is needed",
+              "next": "s4",
+              "feedback": "A Smith fracture is displaced toward the palm, from a fall on a flexed wrist. Dorsal displacement after a fall on an extended wrist is a Colles fracture.",
+              "score": -1
+            },
+            {
+              "text": "A Colles fracture — and her snuffbox should be palpated, because scaphoid fractures are often invisible on the first films",
+              "next": "s4",
+              "feedback": "Correct on both. Dorsal displacement with a dinner-fork deformity after a fall on an outstretched hand is a Colles fracture. The same mechanism causes scaphoid fractures, and a negative first x-ray does not exclude one.",
+              "score": 1
+            },
+            {
+              "text": "A Colles fracture; the negative scaphoid view rules out any carpal injury",
+              "next": "s4",
+              "feedback": "The name is right but the conclusion is not. Scaphoid fractures are frequently invisible for 10 to 14 days, so the exam — snuffbox tenderness — overrides the film.",
+              "score": 0
+            },
+            {
+              "text": "A Galeazzi fracture, because the ulna is involved",
+              "next": "s4",
+              "feedback": "Galeazzi is a distal radius fracture with disruption of the distal radioulnar joint, not simply an ulnar styloid chip. This is a Colles fracture with an ulnar styloid avulsion, which is a common companion.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "A reduction under procedural sedation is planned in the room. You are setting up and assisting.\n\n**What is your sequence?**",
+          "vitals": {
+            "hr": 88,
+            "bp": "146/80",
+            "rr": 16,
+            "spo2": 99
+          },
+          "choices": [
+            {
+              "text": "Monitor, pulse oximetry, capnography, oxygen, suction, bag-valve mask, airway equipment and reversal agents at the bedside; neurovascular exam documented again immediately before; then countertraction as directed; then post-reduction film; then recheck the nerve exam; then splint",
+              "next": "s5",
+              "feedback": "Correct and in the right order. Sedation setup first because that is what can kill her, documentation immediately before because the reduction itself can injure the nerve, and the recheck afterward because that is the comparison that matters.",
+              "score": 1
+            },
+            {
+              "text": "Apply the splint first so it is ready, then sedate and reduce through it",
+              "next": "s5",
+              "feedback": "The splint is moulded to hold the reduced position, so it goes on after. Reducing through a splint is neither possible nor safe.",
+              "score": -1
+            },
+            {
+              "text": "Set up monitoring and oxygen, assist with the reduction, then splint and discharge her once she is awake",
+              "next": "s5",
+              "feedback": "The monitoring half is right, but capnography, suction, airway equipment and reversal agents belong at the bedside for any procedural sedation, and the post-reduction film and nerve recheck cannot be skipped.",
+              "score": 0
+            },
+            {
+              "text": "Get the post-reduction film after the splint is applied and dried, for a cleaner picture",
+              "next": "s5",
+              "feedback": "Films are obtained before the splint hardens in most departments precisely so an inadequate reduction can be corrected immediately rather than re-done an hour later. Sequence varies by protocol, but waiting for plaster to dry is not the reason.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "The reduction is good on the post-reduction film. A sugar-tong splint is on. Her tingling has already improved. She is awake, alert and asking when she can drive. She lives alone, upstairs bedroom, no family in the state.\n\n**What does her discharge need to cover?**",
+          "vitals": {
+            "hr": 78,
+            "bp": "138/76",
+            "spo2": 98
+          },
+          "choices": [
+            {
+              "text": "Orthopedic follow-up in a week, pain medication, and instructions to keep the splint dry",
+              "next": "end",
+              "feedback": "The essentials of the fracture are covered, but nothing here addresses the swelling window, the return precautions, or the fact that she is going back to an empty two-storey house with one usable arm.",
+              "score": 0
+            },
+            {
+              "text": "Elevate above the heart for 48 to 72 hours, ice over the splint, keep it dry, nothing pushed inside it, orthopedic follow-up within a week, and explicit return precautions for increasing pain, numbness, or pale, blue, cold or immobile fingers — plus a plan for how she manages at home alone",
+              "next": "end",
+              "feedback": "Correct. The return precautions are a compartment syndrome screen handed to the patient, because she goes home before the swelling peaks. And a 68-year-old alone in a two-storey house with one arm is a fall risk and a social-work or case-management conversation, not just an ortho one.",
+              "score": 1
+            },
+            {
+              "text": "Tell her to remove the splint if it feels too tight and reapply it loosely",
+              "next": "end",
+              "feedback": "She must never adjust the splint herself — it is holding a reduction. A splint that feels too tight is a reason to come back, and that distinction has to be said clearly.",
+              "score": -1
+            },
+            {
+              "text": "Advise her to keep the arm dependent at her side so blood flow to the fingers is maintained",
+              "next": "end",
+              "feedback": "This is backwards for the first few days. Elevation above the heart reduces the swelling that causes the complications. Keeping a limb at heart level rather than elevated applies specifically to suspected compartment syndrome, not to routine post-splint care.",
+              "score": -1
+            }
+          ]
+        }
+      ],
+      "debrief": "A fall onto an outstretched hand is the most common mechanism in the department, and it produces four injuries worth knowing by name: **Colles** at the distal radius, **scaphoid** in the carpus, **radial head** at the elbow, and **proximal humerus** at the shoulder. The reason you examine the joint above and below is that the same fall produces all of them, and an older patient will only tell you about the one that hurts most.\n\nThe finding that changed the tempo was **new tingling in the thumb, index and middle fingers**. That distribution is the median nerve, running through the carpal tunnel directly under a dorsally displaced fracture, and reporting it with a start time is what turns a routine reduction into a prompt one.\n\nThe negative scaphoid view proved nothing. **Snuffbox tenderness with a normal film is a scaphoid fracture until repeat imaging says otherwise**, because the blood supply runs backward up the bone and a missed proximal fracture dies.\n\nAnd the last step was not orthopedic at all. She is `68`, alone, upstairs, with one working arm. That is a return visit waiting to happen, and naming it is part of the discharge."
+    }
+  ]
+}

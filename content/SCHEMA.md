@@ -148,3 +148,41 @@ Deepens an existing module without touching its base file. The build merges it i
 Rules: read the base module first and do not repeat a lesson it already teaches (duplicate titles are rejected). New lessons cover gaps, edge cases, harder applications, exam traps, and "second-pass" depth. Merged totals may reach 20 lessons, 170 cards, 90 questions, 6 scenarios.
 
 Validate with `node tools/validate.mjs content/modules/<id>.ext.json`.
+
+## Question bank file (`content/modules/<id>.quiz.json`)
+
+Adds assessment to an existing module without touching its base or extension file: extra lesson checks and extra quiz questions. Merged at build; no upper cap on questions.
+
+```jsonc
+{
+  "schema": 1,
+  "extends": "emt-airway",
+  "checks": {                         // extra gated checks per lesson id; 2–3 per lesson, every lesson covered
+    "emt-airway-l01": [ { "q": "…", "choices": ["…","…","…","…"], "answer": 1, "why": "…" } ]
+  },
+  "quiz": [ Question, ... ]           // 40–80 more questions; ids continue after base+ext (e.g. q061…); difficulty mostly 2–3
+}
+```
+
+Validate with `node tools/validate.mjs content/modules/<id>.quiz.json`.
+
+## Exam file (`content/exams/<id>.json`)
+
+A standalone full-length practice test, not tied to lessons. The app draws a timed attempt from the pool by section weight.
+
+```jsonc
+{
+  "schema": 1,
+  "id": "pa-cat",
+  "title": "PA-CAT",
+  "blurb": "One or two sentences on what the real exam is and how this mirrors it.",
+  "minutes": 270,                   // time limit for a full attempt
+  "count": 240,                     // questions per attempt (drawn from the pool by section weight)
+  "sections": [ { "id": "anat", "title": "Anatomy", "weight": 0.12 }, ... ],   // weights sum to ~1
+  "questions": [
+    { "id": "pa-cat-q0001", "section": "anat", "q": "…", "choices": ["…","…","…","…"], "answer": 2, "why": "…", "difficulty": 2 }
+  ]
+}
+```
+
+Rules: question ids `<exam-id>-q<NNNN>`; every section referenced exists; pool per section at least 1.5× what an attempt draws; rationales explain the wrong choices; correct index spread evenly. Validate with `node tools/validate.mjs content/exams/<id>.json`.

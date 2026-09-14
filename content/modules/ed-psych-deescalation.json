@@ -1,0 +1,1334 @@
+{
+  "schema": 1,
+  "id": "ed-psych-deescalation",
+  "track": "edtech",
+  "title": "Psychiatric Emergencies & De-escalation",
+  "short": "Psych",
+  "summary": "The psychiatric patient in the emergency department from the technician's side: what medical clearance rules out, how to talk someone down, how a safe room is built, and how restraint is done without killing anyone.",
+  "lessons": [
+    {
+      "id": "ed-psych-deescalation-l01",
+      "title": "Medical clearance and the mimics",
+      "minutes": 8,
+      "body": "## What the phrase actually means\n\n\"Medically cleared\" does not mean healthy. It means the emergency department has looked for a medical condition that is causing or complicating the psychiatric presentation, has not found one requiring further emergency treatment, and considers the patient stable enough for psychiatric evaluation or transfer to a psychiatric facility.\n\nThe work is a focused history, a real physical exam, and vital signs, plus whatever targeted testing that exam suggests. Emergency medicine guidance is clear that a blanket panel of laboratory tests is not required for an alert, cooperative patient with a known psychiatric history and a normal exam. In practice, receiving psychiatric facilities often insist on a panel anyway before they accept a transfer, so you will see them ordered regardless.\n\nCommon testing when it is ordered: glucose, a basic metabolic panel, a complete blood count, ethanol level, urine drug screen, a pregnancy test in women of childbearing age, acetaminophen and salicylate levels when overdose is possible, and an EKG, especially before medications that prolong the QT interval.\n\n> **Trap:** A urine drug screen almost never changes what the emergency department does. It detects drug classes for days after use, misses most synthetic drugs entirely, and tells you nothing about whether the patient is intoxicated right now. Do not let a positive or negative result change how carefully you watch someone.\n\n## The mimics\n\nA psychiatric presentation is a symptom, not a diagnosis, and a long list of medical problems produce it.\n\n| Cause | What it can look like | The catch |\n|---|---|---|\n| Hypoglycemia | Agitation, confusion, combativeness, bizarre behavior | Fixed in two minutes with glucose, so it is checked first |\n| Hypoxia or hypercarbia | Restlessness, anxiety, confusion, belligerence | Agitation is an early sign of low oxygen, not a personality |\n| Head injury | Confusion, agitation, personality change | A subdural bleed can be days old, especially in older adults and heavy drinkers |\n| Infection | Confusion, hallucinations, agitation | A urinary infection or pneumonia is a classic cause of acute confusion in the elderly |\n| Thyroid disease | Overactive imitates anxiety and mania; underactive imitates depression | Slow and easy to miss |\n| Electrolyte problems | Confusion, lethargy, seizures | Low sodium in particular |\n| Intoxication or withdrawal | Nearly anything | Withdrawal from alcohol or sedatives can kill |\n| Medications | Steroids, anticholinergics, many others | Ask what is new |\n\n## Delirium, dementia, and psychosis\n\nThree different things that look similar from the doorway. Knowing the difference is what makes you useful, because the tech is often the person who notices the change first.\n\n**Delirium** comes on over hours to days, waves in and out, and its core feature is inattention: the patient cannot hold a thread of conversation. Consciousness is clouded. Hallucinations, when present, are often visual. It has a physical cause and it is reversible if that cause is found. It also carries real mortality, which is why it is a medical emergency rather than a behavior problem.\n\n**Dementia** develops over months to years, is relatively stable day to day, and consciousness is clear. The person is oriented poorly but attentive.\n\n**Primary psychosis** usually begins in the late teens through the thirties, and the patient has a clear sensorium. Hallucinations are most often auditory.\n\n> **Key:** Two findings should make everyone slow down. A first psychiatric presentation in someone over `40`, and any abnormal vital sign. Both mean medical until proven otherwise, no matter how psychiatric the behavior looks.\n\n> **On shift:** You are the person who takes the vitals and the glucose. A heart rate of `126`, a temperature of `38.6`, or a glucose of `44` in a patient labeled \"psych\" is not a footnote; it is the whole case, and you are the one holding it. Say the number out loud to the nurse.",
+      "keyPoints": [
+        "Medical clearance means no acute medical cause or complication requiring emergency treatment, not that the patient is healthy.",
+        "A focused exam and vital signs drive testing; blanket lab panels are not required by guidelines but are often demanded by receiving facilities.",
+        "Urine drug screens rarely change ED management and never establish current intoxication.",
+        "Delirium is acute, fluctuating, and defined by inattention with clouded consciousness; it is a medical emergency.",
+        "A first psychiatric presentation after age 40 or any abnormal vital sign is medical until proven otherwise."
+      ],
+      "checks": [
+        {
+          "q": "A 58-year-old with no psychiatric history is brought in by family for two days of agitation and seeing bugs on the wall. He drifts in and out of attention. Vital signs show a temperature of 38.4 C and a heart rate of 118. What does this pattern suggest?",
+          "choices": [
+            "New-onset schizophrenia",
+            "Delirium from a medical cause, which is a medical emergency",
+            "Dementia with behavioral symptoms",
+            "Malingering"
+          ],
+          "answer": 1,
+          "why": "Acute onset, fluctuating attention, visual hallucinations, fever and tachycardia describe delirium, which has a physical cause and real mortality. Schizophrenia rarely begins at 58 and does not cause fever, and dementia develops over months with clear consciousness."
+        },
+        {
+          "q": "Which test is checked first on nearly every agitated or altered patient, and why?",
+          "choices": [
+            "Urine drug screen, to identify the substance",
+            "Complete blood count, to find infection",
+            "Point-of-care glucose, because hypoglycemia causes agitation and is corrected in minutes",
+            "Ethanol level, to establish intoxication"
+          ],
+          "answer": 2,
+          "why": "Hypoglycemia is common, imitates almost any psychiatric presentation, and is reversed immediately. Drug screens do not establish current intoxication, and a blood count and ethanol level take far longer and change nothing in the first minutes."
+        },
+        {
+          "q": "A patient's urine drug screen is negative. He is agitated, paranoid, and diaphoretic. What does the negative result tell you?",
+          "choices": [
+            "Very little; drug screens miss many substances including most synthetic drugs and do not reflect current intoxication",
+            "He is not intoxicated, so the cause is psychiatric",
+            "He is in withdrawal rather than intoxicated",
+            "The sample was collected incorrectly"
+          ],
+          "answer": 0,
+          "why": "Routine screens detect a limited set of drug classes, miss synthetic cannabinoids and many designer stimulants entirely, and report past exposure rather than present effect. A negative result never rules out a toxic cause or reduces how closely you watch someone."
+        }
+      ]
+    },
+    {
+      "id": "ed-psych-deescalation-l02",
+      "title": "What you are looking at: the presentations",
+      "minutes": 8,
+      "body": "## Recognition, not diagnosis\n\nYou will not diagnose anyone. You will be in the room more than anyone else, so you need to recognize patterns well enough to know what to watch and what to report.\n\n## Depression and suicidality\n\n**Major depression** is at least two weeks of depressed mood or loss of interest in everything, plus changes in sleep, appetite, energy, concentration, and self-worth. Look for the flatness: slow speech, no eye contact, long pauses, a person who does not ask for anything.\n\nThe quiet patient is the one who gets missed. A person actively planning suicide often looks calm, cooperative, and easy to care for, which is exactly why they end up unwatched in a corner of the department.\n\n## Mania\n\nIn **bipolar disorder**, a manic episode is a week or more of elevated or irritable mood with increased energy. The cardinal sign is a **decreased need for sleep**, meaning three hours and feeling fine, which is different from insomnia. Also rapid pressured speech, racing thoughts, grandiosity, distractibility, and impulsive spending, driving, or sexual behavior.\n\nMania is frequently irritable rather than cheerful, and irritable mania escalates fast when limits are set.\n\n## Psychosis and schizophrenia\n\n**Psychosis** means loss of contact with reality: hallucinations, delusions, disorganized speech or behavior. **Schizophrenia** typically begins in the late teens to mid-twenties in men and slightly later in women.\n\nThe positive symptoms are added experiences: hallucinations, usually auditory voices, and delusions, often paranoid. The negative symptoms are subtractions: flat affect, no motivation, little speech, social withdrawal. Negative symptoms look like rudeness or laziness and are neither.\n\n> **Trap:** Never argue with a delusion and never pretend to share it. Both fail. Respond to the feeling instead: \"That sounds frightening. You're safe here, and I'm going to stay nearby.\"\n\n## Anxiety and panic\n\nA **panic attack** peaks within about `10` minutes and usually resolves within `20` to `30`. Chest pain, palpitations, shortness of breath, tingling in the hands and around the mouth, and a genuine conviction of dying. In the emergency department it is a diagnosis made after the dangerous causes are excluded, which is why the patient still gets an EKG and troponin.\n\n## Post-traumatic stress disorder\n\nRe-experiencing (flashbacks, nightmares), avoidance, negative changes in thinking and mood, and hyperarousal, persisting more than a month after a traumatic event. It matters to you directly: being held down, searched, or crowded reproduces the original experience. Announce before touching.\n\n## Personality disorders\n\nLong-standing patterns of relating that cause distress and conflict. Borderline personality disorder appears often in emergency departments, with intense fear of abandonment, unstable relationships, impulsivity, and self-harm.\n\nThe important part for you is language. Describe the behavior, never the motive. \"Manipulative\" and \"attention-seeking\" are judgments that change how the entire team treats a person, and they are not observations.\n\n## Eating disorders\n\nThe emergency concern is medical instability: a heart rate under `50`, low blood pressure, orthostatic changes, low potassium, and a prolonged QT interval. Refeeding carries its own dangers. Weigh the patient facing away from the display when the chart calls for a blind weight, and do not comment on body or food.\n\n## Substance use disorders\n\nCompulsive use despite harm, with tolerance and withdrawal. Most patients with a substance use disorder in the department are there for something else entirely, and they notice how they are spoken about.\n\n> **Key:** The one recognition that changes your minute-to-minute behavior is the quiet, calm, cooperative patient with a suicide risk flag. Calm is not safe. Calm is the presentation of someone who has already decided.",
+      "keyPoints": [
+        "Decreased need for sleep is the cardinal sign of mania, and irritable mania escalates quickly when limits are set.",
+        "Psychotic hallucinations are usually auditory; negative symptoms such as flat affect and low motivation are illness, not rudeness.",
+        "Never argue with or pretend to share a delusion; respond to the underlying feeling.",
+        "Panic attacks peak within about 10 minutes but are a diagnosis of exclusion in the ED.",
+        "Document behavior, never motive; 'manipulative' and 'attention-seeking' are judgments that change how the whole team treats a person."
+      ],
+      "checks": [
+        {
+          "q": "A patient tells you people are transmitting instructions through the ceiling vents. What is the best response?",
+          "choices": [
+            "\"There's nothing in the vents, that's not real.\"",
+            "\"I hear them too sometimes.\"",
+            "\"That sounds frightening. You're safe here and I'm going to stay nearby.\"",
+            "\"Why do you think they picked you?\""
+          ],
+          "answer": 2,
+          "why": "Responding to the emotion neither challenges the delusion, which provokes, nor endorses it, which reinforces it and destroys trust when discovered. Probing the content invites elaboration without helping."
+        },
+        {
+          "q": "Which patient should raise your concern the most on a busy shift?",
+          "choices": [
+            "A loud, pacing patient demanding to leave",
+            "A quiet, cooperative patient with a suicide risk flag who is asking for nothing",
+            "A patient crying loudly in the hallway",
+            "A patient repeatedly pressing the call bell"
+          ],
+          "answer": 1,
+          "why": "Calm cooperation in a patient at suicide risk often reflects a decision already made, and quiet patients are the ones who get left unwatched. The loud patients are being watched precisely because they are loud."
+        },
+        {
+          "q": "What distinguishes the decreased need for sleep in mania from ordinary insomnia?",
+          "choices": [
+            "It lasts longer than two weeks",
+            "The patient sleeps very little and feels energetic rather than tired",
+            "It occurs only at night",
+            "It responds to sleep medication"
+          ],
+          "answer": 1,
+          "why": "In mania the patient sleeps three hours and functions with high energy, which is the cardinal feature. Insomnia leaves people exhausted and seeking sleep, and duration and timing do not separate the two."
+        }
+      ]
+    },
+    {
+      "id": "ed-psych-deescalation-l03",
+      "title": "Suicide risk: asking, and what the answers mean",
+      "minutes": 7,
+      "body": "## Asking does not plant the idea\n\nThis is the belief that stops people from asking, and it is wrong. Research has repeatedly shown that asking directly about suicide does not increase suicidal thinking or behavior, and that for many people being asked reduces distress, because someone finally said the word out loud.\n\nMany emergency departments now screen every adult patient, not just psychiatric ones, because a large share of people who die by suicide were seen in a medical setting in the weeks before.\n\n## The questions\n\nThe most common tool is the **Columbia Suicide Severity Rating Scale**, usually shortened to the Columbia or C-SSRS. Its screening version is six questions, asked plainly and in order:\n\n1. Have you wished you were dead or wished you could go to sleep and not wake up?\n2. Have you actually had any thoughts of killing yourself?\n3. Have you been thinking about how you might do this?\n4. Have you had these thoughts and had some intention of acting on them?\n5. Have you started to work out or worked out the details of how to kill yourself, and do you intend to carry out this plan?\n6. Have you ever done anything, started to do anything, or prepared to do anything to end your life?\n\nQuestions 1 and 2 cover thoughts. Questions 3 through 5 escalate through method, intent, and plan. Question 6 asks about behavior, and it is asked for lifetime and for the past three months, because a past attempt is the strongest single predictor of a future one.\n\nWhether a technician administers this depends entirely on your department. What is not optional is knowing what it means when you hear an answer.\n\n> **Key:** If a patient tells you anything in the yes column, you do not finish the vitals first. You tell the nurse immediately, and you do not leave that patient alone in the meantime.\n\n## Risk and protective factors\n\n| Raises risk | Protects |\n|---|---|\n| A previous attempt, the strongest single predictor | Children at home, dependents |\n| Access to a firearm | Strong social support, someone expecting them |\n| Active substance use, especially alcohol | Engagement in ongoing treatment |\n| Hopelessness, feeling like a burden | Religious or cultural commitment |\n| Recent loss: job, relationship, housing, health | Stated reasons for living |\n| Chronic pain or a new serious diagnosis | Fear of death or of the act itself |\n| Social isolation | |\n| Recent discharge from psychiatric hospitalization | |\n\nProtective factors reduce risk; they do not cancel it. A patient with three protective factors and a plan is a patient with a plan.\n\n## Means restriction\n\nThe single most effective suicide prevention measure is putting distance between a person and a lethal method. Firearms are the most lethal method by a wide margin, and most attempts are impulsive, with the interval between decision and act often measured in minutes.\n\nInside the department, means restriction is your job. It is the belongings search, the gown, the removal of cords and sharps, and the fact that someone is watching. That sounds mundane compared with therapy. It saves more lives.\n\n> **On shift:** The patient who says \"I'm fine now, I just want to go home\" one hour after arriving may be telling the truth or may have decided to stop talking. Nothing about that sentence changes your observation level. Only the provider's order does.\n\n## The safety plan\n\nBefore discharge, many patients get a **safety plan**: their own warning signs, things they can do alone to cope, people and places that distract, people they can ask for help, professionals and crisis numbers including the `988` Suicide and Crisis Lifeline, and specific steps to make their home environment safer.\n\nThe plan is written by a clinician with the patient, not by you. Your contribution is upstream: the observation that keeps them alive to reach that conversation, and the tone that makes them willing to have it.",
+      "keyPoints": [
+        "Asking directly about suicide does not increase risk and often reduces distress.",
+        "The Columbia screener moves from wish to be dead, to thoughts, to method, to intent, to plan, to past behavior.",
+        "A previous attempt is the strongest single predictor of a future attempt.",
+        "Means restriction, including the belongings search and constant observation, is the most effective prevention available in the ED.",
+        "Only a provider's order changes an observation level, never the patient's reassurance that they feel better."
+      ],
+      "checks": [
+        {
+          "q": "A tech worries that asking a patient about suicidal thoughts could give them the idea. What is accurate?",
+          "choices": [
+            "Asking should be left to psychiatry to avoid suggestion",
+            "Asking does not increase suicidal thinking or behavior and often reduces distress",
+            "Asking is only safe if the patient raises the topic first",
+            "Asking increases risk in adolescents specifically"
+          ],
+          "answer": 1,
+          "why": "Repeated research has found no increase in ideation or behavior from direct questioning in adults or adolescents, and many people feel relief at being asked. Waiting for the patient to raise it misses most of them."
+        },
+        {
+          "q": "Which finding most strongly predicts a future suicide attempt?",
+          "choices": [
+            "Current alcohol intoxication",
+            "A diagnosis of major depression",
+            "A previous suicide attempt",
+            "Living alone"
+          ],
+          "answer": 2,
+          "why": "A prior attempt is the strongest single predictor identified in the literature, which is why the Columbia screener asks about past behavior for both lifetime and the last three months. The others raise risk but less powerfully."
+        },
+        {
+          "q": "Ninety minutes after arrival a patient on constant observation for suicidal ideation says he feels much better and asks you to let him use the bathroom alone. What do you do?",
+          "choices": [
+            "Allow it, since he has calmed considerably",
+            "Allow it if he leaves the door unlocked",
+            "Ask a family member to accompany him instead",
+            "Maintain the ordered observation level, accompany him per policy, and report his statement to the nurse"
+          ],
+          "answer": 3,
+          "why": "Only a provider order changes an observation level, and sudden calm can mean a decision has been made rather than a crisis resolved. Bathrooms are the highest-risk location in a department, and family members are not trained observers."
+        }
+      ]
+    },
+    {
+      "id": "ed-psych-deescalation-l04",
+      "title": "The legal framework in plain words",
+      "minutes": 7,
+      "body": "## Voluntary and involuntary\n\nMost psychiatric patients in an emergency department are there voluntarily, and a voluntary patient can generally leave. Some are there involuntarily, meaning a legal process is holding them because of danger to themselves or others arising from mental illness.\n\nNew Jersey runs this through designated **screening centers**, county-designated psychiatric emergency screening services. A **certified screener** evaluates the person. If the criteria are met, an authorized psychiatrist or physician completes a **screening certificate**, which is generally valid for `72` hours and supports holding the patient while a court process begins. A judge may then issue a **temporary court order**, and a full hearing follows within a statutory period.\n\nThe details of certificates, second certificates, and hearing deadlines are set by statute and by hospital policy, and they change. A technician completes none of them. What you need is the vocabulary, so that you understand what is happening and why a patient's status may change at 3 a.m.\n\n> **Key:** You never tell a patient they cannot leave, and you never physically stop someone on your own judgment. Those are decisions and statements that belong to the nurse, the provider, and security. Your job when someone moves toward the door is to notify loudly and immediately, and to position yourself without blocking or grabbing.\n\n## EMTALA still applies\n\nA psychiatric emergency is an emergency medical condition. The hospital owes a medical screening examination and stabilization regardless of insurance or ability to pay, and a transfer to a psychiatric facility requires that the patient be stabilized, that the receiving facility accept them, and that appropriate personnel and equipment accompany the transfer.\n\nThis is why patients wait. A bed must be found and accepted, which is why psychiatric patients frequently board in emergency departments for `24` hours or far longer.\n\n## Capacity is not competency\n\n**Capacity** is a clinical judgment about one decision at one moment: can this person understand the information, appreciate how it applies to them, reason through the options, and express a choice? A clinician determines it, and it can change hour to hour with intoxication, delirium, or pain.\n\n**Competency** is a legal determination made by a court, and it is global rather than decision-specific.\n\nTwo things follow that surprise people. A patient can be held involuntarily and still have capacity to refuse a particular medical treatment. And a patient who disagrees with the team is not thereby lacking capacity; a bad decision made with understanding is still the patient's to make.\n\n## What rights the patient keeps\n\nInvoluntary status removes the freedom to leave. It does not remove personhood. Patients retain the right to be informed of their status and rights, to counsel and to a hearing, to refuse specific treatments except in a genuine emergency, to be treated in the least restrictive setting that is safe, to communicate with the outside world subject to documented safety limits, and to be treated with dignity.\n\n> **On shift:** When a patient asks you \"am I being committed?\" or \"how long do I have to stay?\", the honest answer is a version of: \"I don't know the answer and I don't want to guess at something that important. Let me get your nurse so you get the real answer.\" Then actually go get them. Guessing here creates rage that lands on the next person who walks in.\n\n## Restraint has its own law\n\nRestraint and seclusion are federally regulated. They require a provider's order, are never written as an as-needed order, are time-limited, and require a face-to-face evaluation within `1` hour for violent or self-destructive restraint. Those rules exist because people have died in restraints, and they are covered in detail later in this module.",
+      "keyPoints": [
+        "New Jersey uses designated screening centers and certified screeners; a screening certificate is generally valid for 72 hours pending a court order.",
+        "Techs never tell a patient they cannot leave and never physically stop someone on their own judgment; notify and position instead.",
+        "EMTALA applies to psychiatric emergencies, and transfer requires stabilization plus an accepting facility, which is why boarding happens.",
+        "Capacity is a clinical, decision-specific judgment; competency is a court determination, and disagreement is not incapacity.",
+        "Involuntary patients keep the rights to information, counsel, a hearing, the least restrictive setting, and dignity."
+      ],
+      "checks": [
+        {
+          "q": "A patient on an involuntary hold refuses an oral medication he has taken before. What is true?",
+          "choices": [
+            "Involuntary status removes the right to refuse any treatment",
+            "He may still have capacity to refuse that specific treatment; involuntary status removes the freedom to leave, not all decision rights",
+            "The tech may give it since the hold authorizes treatment",
+            "Refusal automatically means he lacks capacity"
+          ],
+          "answer": 1,
+          "why": "A commitment addresses dangerousness and confinement, not blanket consent, and capacity is judged per decision. Disagreeing with the team is not evidence of incapacity, and techs never administer medications in any circumstance."
+        },
+        {
+          "q": "A voluntary patient waiting for psychiatric evaluation stands up and walks toward the ambulance bay doors. You are the only staff member nearby. What do you do?",
+          "choices": [
+            "Physically block the doorway until help arrives",
+            "Take his arm and guide him back to the room",
+            "Call out immediately for the nurse and security, stay with him, keep talking, and do not block or grab",
+            "Let him go and document it afterward"
+          ],
+          "answer": 2,
+          "why": "Techs do not make detention decisions or use force on their own judgment, and blocking or grabbing frequently triggers the assault it is meant to prevent. Loud immediate notification plus staying in verbal contact is the correct and safest role."
+        },
+        {
+          "q": "Why do psychiatric patients board in emergency departments for many hours or days?",
+          "choices": [
+            "Because psychiatric evaluation takes that long",
+            "Because a psychiatric bed must be found and accepted before a legal, stable transfer can occur",
+            "Because the law requires a 72-hour observation period in the ED",
+            "Because insurance approval is required before evaluation"
+          ],
+          "answer": 1,
+          "why": "Transfer under EMTALA requires stabilization and an accepting facility, and inpatient psychiatric beds are scarce. The 72-hour figure refers to certificate validity, not a required observation stay, and evaluation itself usually takes hours at most."
+        }
+      ]
+    },
+    {
+      "id": "ed-psych-deescalation-l05",
+      "title": "The safe room, the search, and the watch",
+      "minutes": 8,
+      "body": "## Why the room looks empty\n\nA psychiatric safe room is stripped because almost everything in a normal emergency department room is a method. The design term is **ligature-resistant**: no anchor point strong enough to hang from and nothing long enough to tie.\n\nWhat gets removed or never enters: oxygen tubing, IV tubing, call bell cords, blood pressure cuff tubing, electrical cords, curtains with hooks, plastic bags, glass, sharps, and loose furniture. Fixtures are breakaway or sloped, hinges are concealed, and ceilings are solid rather than drop tiles.\n\nPatients also arrive wearing ligatures: shoelaces, belts, drawstrings, hooded sweatshirts, bras with underwire, lanyards, phone charging cables, and headphone cords.\n\n> **Key:** The three highest-risk places in a department are the bathroom, the shower, and any room where the door can be closed. If your patient is in one of them and you cannot see them, you have lost the watch.\n\n## The belongings search\n\nDone per your department's policy, which usually means two staff members, same-gender where possible, with the patient told what is happening and why before it begins.\n\nWhat you are looking for: weapons of any kind, lighters and matches, razors, medications including a handful of loose pills in a pocket, illicit drugs, cords and cables, and anything sharp or breakable.\n\nEverything removed is **inventoried in writing**, signed, and secured. That list protects the patient's property and protects you from an accusation later. Valuables go to the hospital's secured storage, not a drawer.\n\nThen the patient changes into a hospital gown or paper scrubs. This is not about humiliation. Street clothes hide items, and a person in a gown is far less likely to walk out through a waiting room.\n\nDo it with dignity: explain, offer a second gown for cover, give privacy for changing where safety allows, warn before touching, and let them keep what is genuinely safe.\n\n## Observation levels\n\n| Level | What it means |\n|---|---|\n| Routine | Standard rounding, no special observation |\n| Every `15` minutes | Documented check of behavior and location four times an hour |\n| Line of sight | The observer can see the patient at all times |\n| One-to-one, constant | A dedicated staff member within arm's reach, continuously, including in the bathroom per policy |\n\nOne-to-one means exactly that. You do not leave to get supplies, answer a phone, help lift a patient in the next room, or step out while the family visits. If you must be relieved, you hand off in person to the person replacing you, face to face, and you say what you have observed.\n\nA 15-minute check is not a glance through a window. It is a look at the patient, at their hands, at what is in the room, and a note of what you saw.\n\n## What you are actually watching for\n\n- Hands out of sight, or something held in a closed hand\n- Tying, knotting, or tearing anything, including the gown or a sheet\n- Repeatedly looking at the door, the exits, or the staff positions\n- Hoarding a plastic utensil, a food wrapper, or a medication cup\n- Escalating tension: faster pacing, louder speech, clenched jaw\n- A sudden change to calm after agitation\n- Talking to someone who is not there, or responding to something you cannot hear\n- Any attempt to get into a bathroom alone\n\n## Visitors\n\nVisitors are a comfort and a delivery system. Policies vary, but the constants are that visitors are screened, that nothing is handed to the patient without staff seeing it first, and that a visit can be limited or ended for safety.\n\nDo not take a bag, a jacket, a phone charger, or food from a visitor and hand it over without checking it.\n\n> **On shift:** Meal trays get counted back. Plastic utensils, the wrapper, the cup, and the tray all leave the room with you. This is one of the checks people skip when they are busy, and it is one of the ways items stay behind.",
+      "keyPoints": [
+        "Ligature-resistant means no anchor point and nothing long enough to tie; tubing, cords, drawstrings and lanyards are all ligatures.",
+        "The bathroom, the shower, and any closable room are the highest-risk locations in the department.",
+        "Belongings are searched per policy with a second staff member, inventoried in writing, and secured.",
+        "One-to-one observation means within arm's reach continuously, with in-person handoff when relieved.",
+        "Count meal trays and utensils back out of the room, and never pass a visitor's item without checking it."
+      ],
+      "checks": [
+        {
+          "q": "You are assigned one-to-one observation. The charge nurse calls from down the hall asking you to help lift a patient for two minutes. What do you do?",
+          "choices": [
+            "Go help, since the patient is currently calm",
+            "Go, but leave the door open so others can see the patient",
+            "Stay, and tell her you are on one-to-one and need a relief person before you can leave",
+            "Ask the patient's family member to watch for two minutes"
+          ],
+          "answer": 2,
+          "why": "One-to-one means continuous presence within arm's reach, and most in-department suicide attempts occur during brief unobserved intervals. Open doors, calm behavior, and untrained family members are not substitutes for an assigned observer."
+        },
+        {
+          "q": "Which item is a ligature risk that new staff commonly overlook?",
+          "choices": [
+            "A blood pressure cuff left connected in the room",
+            "A paper gown",
+            "A foam pillow",
+            "A plastic water pitcher"
+          ],
+          "answer": 0,
+          "why": "Blood pressure cuff tubing, along with IV and oxygen tubing and call bell cords, is a long flexible cord that is routinely left in rooms. Paper gowns tear, and pillows and pitchers pose other risks but are not ligatures."
+        },
+        {
+          "q": "What must happen to the items removed during a belongings search?",
+          "choices": [
+            "Placed in a bag in the room so the patient can see them",
+            "Given to the accompanying family member",
+            "Inventoried in writing, signed, and secured, with valuables in hospital storage",
+            "Returned once the patient has calmed"
+          ],
+          "answer": 2,
+          "why": "A signed inventory protects the patient's property and protects staff from accusations of loss or theft. Leaving items in the room defeats the search, and returning items is a clinical decision made by the team, not a reward for calm."
+        }
+      ]
+    },
+    {
+      "id": "ed-psych-deescalation-l06",
+      "title": "Verbal de-escalation as a skill",
+      "minutes": 8,
+      "body": "## It is technique, not temperament\n\nDe-escalation is trainable and it has a published structure. The most widely taught version comes from the Project BETA consensus work on agitation, which lists ten domains. Learn them in order; under stress you will fall back on whatever you rehearsed.\n\n## The ten\n\n**1. Respect personal space.** Stay about two arm's lengths away, further if they are escalating. Leave a clear exit for both of you. Never corner someone, and never let yourself be cornered.\n\n**2. Do not be provocative.** Hands visible and open, arms uncrossed, shoulders loose, body angled slightly rather than squared off. Do not stare; steady intermittent eye contact, not a fixed one. No pointing, no sudden movements, no hands on hips, no standing over a seated person for long.\n\n**3. Establish verbal contact.** One person talks. If three people are talking, nobody is being heard and the patient is being cornered by voices. Introduce yourself by name and role, say you are here to keep them safe, and ask their name and how they want to be addressed.\n\n**4. Be concise.** Short sentences, simple words, one idea at a time. Then stop and wait. An agitated brain processes slowly, and you may need to repeat the same sentence several times before it lands. Repetition is the technique, not a sign it failed.\n\n**5. Identify wants and feelings.** \"What are you hoping for right now?\" Most agitation is a want that nobody has named: to leave, to smoke, to eat, to call someone, to know what is happening, to not be in pain.\n\n**6. Listen closely.** Active listening, then reflect it back. \"Let me make sure I've got this right. Nobody has told you anything for three hours, your head hurts, and you want to call your sister.\" Being accurately understood lowers arousal more than any reassurance does.\n\n**7. Agree, or agree to disagree.** Agree with whatever is true: \"You're right, that wait is too long.\" Agree in principle: \"I'd want to leave too.\" Agree with the odds: \"There are probably other people who feel that way.\" When you cannot agree at all, say so respectfully and move on rather than arguing.\n\n**8. Set clear limits.** State what is acceptable, plainly and without threat. \"I want to keep talking with you. I can't do that if you're yelling or moving toward me.\" Consequences are stated as facts, not punishments, and only ones you can actually deliver.\n\n**9. Offer choices and optimism.** Choices restore control to a person who has lost all of it. A blanket, water, food, a phone call, the lights down, a different chair, medication offered as relief rather than as a sanction. Two real options beat one demand every time.\n\n**10. Debrief the patient and the staff.** Afterward, if the situation went to restraint or force, someone explains to the patient why it happened and listens to their experience. Staff debrief separately. Both halves matter.\n\n> **Key:** Most agitation resolves at domains five and six, wants and listening, before you ever get to limits. New staff skip straight to limits, which is why their attempts escalate.\n\n## The things that reliably make it worse\n\n- \"Calm down\" and \"relax\"\n- \"I understand, but...\", which erases everything before the word but\n- Multiple staff talking at once\n- Laughing, or two staff members exchanging a look\n- Standing with arms crossed in the doorway\n- Promising something you cannot deliver, particularly a provider's arrival time\n- Matching their volume\n- Winning the argument\n\n> **On shift:** Lower your voice as theirs rises. It is counterintuitive and it works, because people unconsciously match tone, and because they have to quiet down to hear you.\n\nThe environment is a domain of its own in practice. Turn the television off, bring the lights down, clear the audience from the doorway, and offer a chair. A great deal of hallway agitation is simply a person who is overstimulated, unfed, in pain, and being watched by six strangers.",
+      "keyPoints": [
+        "De-escalation is a trained technique with ten domains, not a personality trait.",
+        "Two arm's lengths, open hands, angled stance, one person speaking, short repeated sentences.",
+        "Most agitation resolves at identifying wants and listening, long before limits are needed.",
+        "Limits are stated as facts you can deliver, paired immediately with real choices.",
+        "Lower your voice as theirs rises, and never say 'calm down' or 'I understand, but'."
+      ],
+      "checks": [
+        {
+          "q": "Three staff members are in the doorway and all are speaking to an escalating patient. What is the problem?",
+          "choices": [
+            "Nothing; a show of numbers is reassuring",
+            "Multiple voices overwhelm an agitated patient and feel like being cornered; one designated person should speak",
+            "The patient will not be able to hear any of them",
+            "It violates patient privacy"
+          ],
+          "answer": 1,
+          "why": "Agitated patients process slowly, and competing voices raise arousal while making it impossible to establish verbal contact. The standard is one speaker with the rest present but silent, positioned so the patient does not feel trapped."
+        },
+        {
+          "q": "A patient shouts that the wait is ridiculous and nobody has told him anything. Which response follows the technique?",
+          "choices": [
+            "\"Sir, you need to calm down.\"",
+            "\"I understand, but everyone here is waiting.\"",
+            "\"You're right, that wait is too long and nobody has updated you. What would help most right now, an update from your nurse or something to eat?\"",
+            "\"If you keep yelling I'll have to call security.\""
+          ],
+          "answer": 2,
+          "why": "It agrees with what is true, names the real grievance, and offers two deliverable choices. 'Calm down' is an order without relief, 'I understand, but' cancels the acknowledgement, and an opening threat skips seven domains."
+        },
+        {
+          "q": "Which body position is correct when speaking with an agitated patient?",
+          "choices": [
+            "About two arm's lengths away, angled rather than squared off, hands open and visible, with an exit available to both of you",
+            "Directly in front at conversational distance with steady eye contact",
+            "Between the patient and the door so they cannot leave",
+            "Seated beside them with a hand on their shoulder"
+          ],
+          "answer": 0,
+          "why": "Distance gives reaction time, the angled stance is less confrontational, and open hands signal no threat. Blocking the door creates the trapped feeling that triggers assaults, and unannounced touch is provocative and re-traumatizing."
+        }
+      ]
+    },
+    {
+      "id": "ed-psych-deescalation-l07",
+      "title": "The agitation continuum and the team response",
+      "minutes": 7,
+      "body": "## Four rungs, and a matching response for each\n\nAgitation is not a switch. It is a ladder, and the intervention that works at one rung fails at the next.\n\n| Rung | What it looks like | What works |\n|---|---|---|\n| Anxious | Restless, tearful, asking repeatedly, tense | Environment and needs: quiet, food, blanket, information, a chair |\n| Verbally agitated | Loud, demanding, swearing, pacing, refusing | Verbal de-escalation: one speaker, wants, listening, choices |\n| Physically agitated | Slamming, throwing, pounding walls, invading space, standing over people | Team present, clear limits, offered medication, exit secured |\n| Violent | Striking, spitting, weapon, active assault | Trained team response, security, restraint or medication as ordered |\n\n> **Key:** Climb the ladder one rung at a time and step back down as soon as you can. Skipping to force is what escalates most incidents that end badly, and the staff response is usually what decided it.\n\n## Warning signs of imminent violence\n\nThese are the minutes before, and they are visible.\n\n- Speech that gets louder and faster, then stops entirely\n- Clenched fists, tight jaw, flared nostrils, rigid posture\n- Prolonged staring, or refusing to look at anyone at all\n- Pacing that shortens and speeds up\n- Moving into your space, standing when told to sit\n- Scanning: checking the door, the staff positions, the equipment\n- Throwing or striking objects rather than people, which is the last warning\n- Sudden calm after escalation, which is frequently the moment before an assault\n\nThe single strongest predictor of violence is a history of violence. Intoxication, youth, male sex, psychosis with paranoia, and a prior restraint episode all add to it.\n\n## Show of support, not show of force\n\nWhen a team assembles it can go either way. Five people standing in a doorway with crossed arms is a threat, and a threatened person fights. The same five standing calmly, spaced out, with one person talking and the rest quiet and non-confrontational, communicates something different: this is under control, nobody is going to be hurt, and there are enough of us that violence is not going to work.\n\nThe practical rules: one speaker, everyone else quiet and still; spread out rather than clustering in the doorway; nobody between the patient and their perceived exit; nobody with their back to the patient; and everyone knows the plan before entering, including who takes which limb if it goes that way.\n\n## Calling for help\n\nEvery hospital has an overhead code for a combative person, commonly **Code Gray**, with a separate code for a weapon or hostage situation. The names vary by hospital, so learn yours in the first week, along with where the phones are and what number to dial.\n\nCall early. The most common error is waiting until it has already happened, when the team you needed five minutes ago is now responding to an assault.\n\n## Protecting yourself in the room\n\n- Never alone in a closed room with a potentially violent patient. Tell someone where you are\n- Door open, and know two ways out\n- Stand at an angle, one arm's length outside their reach, never between the patient and the door and never letting them get between you and the door\n- Remove what can be grabbed: stethoscope around the neck, lanyard, dangling earrings, long hair down, pens in a chest pocket, trauma shears at the waist\n- Badges on breakaway clips\n- Keep your hands free and in front of you\n- If you are struck, your job is to get out, not to control the patient. Disengage, create distance, call it\n\n> **On shift:** The moment you notice you feel afraid, act on it. That feeling is a trained perceptual system telling you something before you can articulate it, and techs who talk themselves out of it are the ones who get hurt. Step out, get help, and be wrong sometimes.",
+      "keyPoints": [
+        "Agitation is a ladder: anxious, verbally agitated, physically agitated, violent, and each rung has a different effective response.",
+        "Climb one rung at a time and step back down as soon as possible; skipping to force escalates.",
+        "A history of violence is the strongest predictor; sudden calm after escalation often precedes an assault.",
+        "A team is a show of support when one person speaks, the rest are quiet and spread out, and nobody blocks the exit.",
+        "Never be alone in a closed room, keep the door open, remove grabbable items, and act on fear immediately."
+      ],
+      "checks": [
+        {
+          "q": "A patient has been shouting and pacing for several minutes. He suddenly stops, goes quiet, and stares at the wall. What should you conclude?",
+          "choices": [
+            "The de-escalation worked and you can relax",
+            "He is becoming sedated from a previously given medication",
+            "Sudden calm after escalation frequently precedes an assault; increase distance and get help before approaching",
+            "He is no longer a risk to staff"
+          ],
+          "answer": 2,
+          "why": "An abrupt shift from loud escalation to stillness is a recognized pre-assault indicator, not resolution. Genuine de-escalation is gradual, with engagement and softening rather than a sharp silence."
+        },
+        {
+          "q": "Which team configuration is most likely to prevent a physical confrontation?",
+          "choices": [
+            "Five staff clustered in the doorway with arms crossed",
+            "Five staff spread out and quiet, one designated speaker, nobody blocking the patient's exit, everyone knowing the plan in advance",
+            "Two staff, one on each side of the patient, holding his arms preemptively",
+            "One staff member alone in the room with the door closed for privacy"
+          ],
+          "answer": 1,
+          "why": "Visible numbers with calm posture communicate control rather than threat, while a blocked doorway creates the trapped feeling that triggers assaults. Preemptive holding is an unordered restraint, and being alone behind a closed door is the highest-risk configuration for a staff assault."
+        },
+        {
+          "q": "A tech is struck by a patient during an escalation. What is the correct immediate action?",
+          "choices": [
+            "Restrain the patient's arms to prevent another strike",
+            "Continue de-escalating from the same position",
+            "Disengage, create distance, and call for the team",
+            "Leave the department and report to the manager"
+          ],
+          "answer": 2,
+          "why": "Controlling a violent patient is a trained team function requiring an order, not something a struck individual improvises. Staying put invites a second strike, and leaving the department abandons a patient and the responding team."
+        }
+      ]
+    },
+    {
+      "id": "ed-psych-deescalation-l08",
+      "title": "Restraint, done so that nobody dies",
+      "minutes": 9,
+      "body": "## The last resort, and why the rules are so strict\n\nPatients have died in restraints: from **positional asphyxia** held face down with weight on the back, from aspirating vomit while held flat, from an undetected medical cause such as hypoglycemia or a head bleed that everyone assumed was behavior, and from the heat and acidosis of a long struggle. Every rule below traces back to a death.\n\nRestraint is used only after less restrictive measures have failed, only for imminent danger, and never for punishment, convenience, or short staffing.\n\n## The order\n\nA physician or licensed independent practitioner must order it, before application or immediately after in an emergency. **There is no such thing as an as-needed restraint order.** For violent or self-destructive restraint, a face-to-face evaluation is required within `1` hour.\n\nOrders are time-limited and must be renewed: commonly every `4` hours for adults 18 and over, every `2` hours for ages 9 through 17, and every `1` hour for children under 9.\n\n## Applying them\n\nThe standard is a team of **five**: one person per limb and one at the head, who controls the head, protects the airway, and is the only person talking. Everyone knows their limb before anyone enters. One person counts.\n\nPosition: **supine**, face up, with the head of the bed elevated to reduce the risk of aspiration.\n\n**Prone restraint is prohibited by most hospital policies.** Never face down. Never weight on the chest, back, abdomen or neck. Nothing covering the face. If the patient is spitting, an approved spit hood goes on, never a towel or a mask.\n\nLimbs are secured to the **bed frame**, never the side rails, because rails move and can dislocate a shoulder or crush a hand. Ties are quick-release, every team member knows how to release them, and restraints are snug enough to hold and loose enough not to affect circulation.\n\n> **Key:** Face up, head elevated, no weight on the torso, tied to the frame, quick-release. If any of those five is wrong, stop and fix it before anything else.\n\n## Monitoring, which is usually your job\n\nCommonly every `15` minutes, and documented every time:\n\n- Circulation in each restrained limb: color, warmth, pulse, capillary refill\n- Skin integrity under each device\n- Correct application and position\n- Range of motion, one limb released at a time, per policy\n- Fluids offered\n- Toileting offered\n- Vital signs per policy\n- Mental status and level of sedation\n- Whether the behavioral criteria for release are now met\n\nRelease happens as soon as the patient meets the criteria, not at the end of the order. Restraint is not a sentence to be served.\n\n> **Trap:** \"He's quiet now, he's fine.\" A quiet restrained patient may be asleep, sedated, aspirating, or dying. Quiet is the reason to look more closely, not less.\n\n## Chemical restraint, at recognition level\n\nMedication given to control agitation is the nurse's task and the provider's decision. Yours is to know what is going in and what it does, because you are frequently the person at the bedside afterward.\n\n| Drug | Typical adult use | What you watch |\n|---|---|---|\n| Haloperidol | `5 mg` intramuscular, an older antipsychotic | QT prolongation, muscle stiffness or spasm, inner restlessness |\n| Lorazepam | `1` to `2 mg`, a benzodiazepine | Respiratory depression, more so with alcohol on board |\n| Olanzapine | `5` to `10 mg` intramuscular | Sedation; not given within about an hour of intramuscular benzodiazepine because of cardiorespiratory depression |\n| Droperidol | `2.5` to `5 mg`, fast and effective | Carries a QT warning; many departments obtain an EKG and use the monitor |\n| Ketamine | Roughly `4` to `5 mg/kg` intramuscular for severe agitation | Rapid and deep sedation, vomiting, airway compromise, occasionally intubation |\n\nWhat the tech monitors after any of them: continuous pulse oximetry and usually the cardiac monitor, the airway position, level of sedation, vital signs at the ordered interval, and vomiting. A sedated supine patient who vomits needs suction and the team in seconds.\n\n> **On shift:** Sedation is the point of the medication and it is also the danger. A patient who was fighting ten minutes ago and is now snoring with their chin on their chest needs your eyes on their chest rising, not a chart entry and a walk away.\n\n## Documentation\n\nThe type and location of each device, the time applied, who was present, the order authorizing it, the less restrictive measures tried first, every monitoring check, everything offered, and the time and criteria for release. Restraint documentation is the most heavily audited record a technician produces, and a missing 15-minute check is a regulatory finding on its own.",
+      "keyPoints": [
+        "Restraint follows failed less restrictive measures, requires a provider order, is never as-needed, and requires a face-to-face evaluation within 1 hour.",
+        "Orders are time-limited: commonly 4 hours for adults, 2 hours for ages 9 to 17, 1 hour under age 9.",
+        "Team of five, one per limb plus one at the head controlling the airway; supine with head elevated, never prone.",
+        "No weight on chest, back, abdomen or neck, nothing over the face, tied to the bed frame with quick-release ties.",
+        "Monitor and document every 15 minutes: circulation, skin, position, range of motion, fluids, toileting, vitals, sedation, and release criteria."
+      ],
+      "checks": [
+        {
+          "q": "A patient is being restrained and a staff member kneels across his upper back to hold him face down until ties are applied. What is wrong?",
+          "choices": [
+            "Nothing, as long as it is brief",
+            "Prone positioning with weight on the torso causes positional asphyxia and is prohibited; the patient must be supine with the head elevated",
+            "Only the number of staff is the problem",
+            "It is acceptable if the patient is spitting"
+          ],
+          "answer": 1,
+          "why": "Face-down restraint with weight on the back prevents chest expansion and has killed patients, which is why nearly every hospital policy forbids it regardless of duration. Spitting is managed with an approved spit hood, never with prone positioning or anything over the face."
+        },
+        {
+          "q": "Restraints are ordered for an agitated 30-year-old at 2200. At 2330 the patient is calm, oriented, and contracting for safety. What should happen?",
+          "choices": [
+            "Keep the restraints until the 4-hour order expires at 0200",
+            "Remove them without notifying anyone, since he is calm",
+            "Report that release criteria appear met so restraints can be removed, and document the assessment",
+            "Remove two limbs and leave two in place indefinitely"
+          ],
+          "answer": 2,
+          "why": "Restraint ends when behavioral criteria are met, not when the order expires; an order sets a maximum, not a duration to serve. Release is a team decision that must be communicated and documented, and indefinite partial restraint has no basis."
+        },
+        {
+          "q": "Ten minutes after intramuscular sedation, a restrained patient is quiet with his chin on his chest and shallow breathing. What is the priority?",
+          "choices": [
+            "Document that the medication was effective",
+            "Let him sleep, since sedation is the goal",
+            "Assess breathing and airway position immediately and get the nurse",
+            "Loosen the restraints so he can move"
+          ],
+          "answer": 2,
+          "why": "Quiet after sedation can be therapeutic effect or the beginning of airway compromise, and a flexed neck in a sedated patient obstructs the airway. Assessment and immediate notification come first; documentation and restraint adjustment follow."
+        }
+      ]
+    },
+    {
+      "id": "ed-psych-deescalation-l09",
+      "title": "Intoxication, withdrawal, and the sobering reassessment",
+      "minutes": 8,
+      "body": "## Alcohol withdrawal on a clock\n\nWithdrawal from alcohol is one of the few withdrawal syndromes that kills, and it runs on a predictable timeline from the last drink.\n\n| Time since last drink | What appears |\n|---|---|\n| `6` to `12` hours | Tremor, anxiety, nausea, sweating, fast heart rate, insomnia |\n| `12` to `24` hours | Alcoholic hallucinosis: usually visual hallucinations with an otherwise clear mind |\n| `24` to `48` hours | Withdrawal seizures, generalized and often without warning |\n| `48` to `96` hours | Delirium tremens |\n\n**Delirium tremens** is confusion plus autonomic storm: fever, a heart rate often above `120`, high blood pressure, heavy sweating, and hallucinations. It is a medical emergency with meaningful mortality even when treated, and far higher when it is not.\n\nMost departments score withdrawal with the **CIWA-Ar**, a ten-item scale covering tremor, sweating, anxiety, agitation, nausea, headache, orientation, and disturbances of hearing, vision and touch. Treatment thresholds vary but a score around `8` to `10` typically triggers medication and a score above `15` signals significant withdrawal. The scale is usually scored by the nurse; you support it with accurate, on-time vital signs, because half the score's supporting data is your work.\n\n> **Key:** An alcohol-dependent patient admitted for anything else starts a withdrawal clock at their last drink, not at arrival. The patient who was fine in the waiting room can be seizing eighteen hours later on an inpatient floor.\n\n## The other withdrawals\n\n**Benzodiazepine withdrawal** looks like alcohol withdrawal, can cause seizures, and lasts longer. Longer-acting agents delay the onset by days, which hides the diagnosis.\n\n**Opioid withdrawal** is intensely unpleasant and not usually life-threatening in adults: yawning, runny nose, tearing, gooseflesh, dilated pupils, cramping, vomiting, diarrhea, and deep muscle aches. It is scored with the COWS scale. The real danger is dehydration from persistent vomiting and diarrhea, and the real failure is dismissiveness. Many emergency departments now start buprenorphine in the department and refer directly to treatment.\n\n## Stimulants\n\nCocaine and methamphetamine produce fast heart rate, high blood pressure, dilated pupils, agitation, paranoia, chest pain, and seizures. **Hyperthermia is what kills**, and a prolonged physical struggle makes it worse by adding muscle breakdown and acidosis to an already overheated patient.\n\nThis is the clinical reason the team reaches for sedation early rather than a long wrestling match. Benzodiazepines are usually first-line, and cooling matters.\n\n## Phencyclidine and the synthetics\n\n**Phencyclidine (PCP)** produces unpredictable violence, a blank stare, and nystagmus, an involuntary jerking of the eyes that can be horizontal, vertical, or rotary. It also produces profound analgesia, so patients injure themselves and others without feeling it. Minimize stimulation: low light, low noise, few people, few words.\n\n**Synthetic cannabinoids**, sold as K2 or spice, produce agitation, psychosis, and seizures unpredictably and do not show up on a routine drug screen.\n\n## The sobering reassessment\n\nHere is the error that hurts people. An intoxicated patient is parked to sleep it off, and everyone assumes improvement is coming.\n\nAn intoxicated patient must be reassessed on a schedule, and the finding that matters is the trajectory. Alcohol intoxication should steadily improve. A patient who is not improving, or who is getting worse, has something else: a head bleed from the fall nobody witnessed, hypoglycemia, hypothermia, an infection, a co-ingestion, or withdrawal beginning underneath the intoxication.\n\n> **Trap:** \"He's just drunk\" is the sentence that precedes the missed subdural hematoma. Intoxication and a serious head injury look identical from the doorway, and intoxicated people fall.\n\nDischarge is based on clinical reassessment, not on a blood alcohol number and not on the clock. Your contribution is repeated vital signs, repeated observation, and saying out loud when a patient is not waking up the way they should be.",
+      "keyPoints": [
+        "Alcohol withdrawal runs on a clock from the last drink: tremor at 6 to 12 hours, hallucinosis at 12 to 24, seizures at 24 to 48, delirium tremens at 48 to 96.",
+        "Delirium tremens is confusion plus autonomic storm and carries real mortality even when treated.",
+        "Opioid withdrawal is miserable but rarely lethal in adults; dehydration is the danger and dismissiveness is the failure.",
+        "In stimulant intoxication hyperthermia is the killer, and a long physical struggle makes it worse.",
+        "An intoxicated patient is reassessed on trajectory; one who is not improving has something else, classically a head bleed."
+      ],
+      "checks": [
+        {
+          "q": "A patient admitted for a leg cellulitis reports his last drink was yesterday morning. It is now 30 hours later and he has a witnessed generalized seizure. What is the likely cause?",
+          "choices": [
+            "Alcohol intoxication",
+            "Alcohol withdrawal seizure, which typically occurs 24 to 48 hours after the last drink",
+            "Delirium tremens",
+            "Opioid withdrawal"
+          ],
+          "answer": 1,
+          "why": "Withdrawal seizures cluster at 24 to 48 hours after the last drink and often occur without preceding warning. Delirium tremens begins later, at 48 to 96 hours, intoxication does not fit a 30-hour abstinence, and opioid withdrawal does not cause seizures in adults."
+        },
+        {
+          "q": "A patient brought in for intoxication at 2100 was rousable and speaking. At 0100 he is harder to wake and his speech is worse than it was. What does this mean?",
+          "choices": [
+            "Normal progression as the alcohol level peaks",
+            "He is sleeping normally and should be left alone",
+            "A patient who is getting worse rather than better has another cause, such as a head bleed or hypoglycemia, and needs immediate reassessment",
+            "He has developed delirium tremens"
+          ],
+          "answer": 2,
+          "why": "Alcohol intoxication should improve steadily over hours, so deterioration signals something else, classically a subdural hematoma from an unwitnessed fall, hypoglycemia, or a co-ingestion. Delirium tremens is a withdrawal state that occurs days after the last drink, not during intoxication."
+        },
+        {
+          "q": "Why does the team move toward sedation rather than a prolonged physical struggle with a patient in severe stimulant intoxication?",
+          "choices": [
+            "Because physical restraint is never allowed in intoxication",
+            "Because a long struggle worsens hyperthermia, muscle breakdown and acidosis, which are what kill these patients",
+            "Because sedation is faster to document",
+            "Because stimulant patients cannot be legally restrained"
+          ],
+          "answer": 1,
+          "why": "Stimulant intoxication already produces dangerous hyperthermia, and sustained exertion against restraint adds heat, rhabdomyolysis and acidosis. Restraint is permitted when indicated; the issue is the physiologic cost of a prolonged fight."
+        }
+      ]
+    },
+    {
+      "id": "ed-psych-deescalation-l10",
+      "title": "Different patients, careful language, and your own survival",
+      "minutes": 8,
+      "body": "## Autism and intellectual disability\n\nAn emergency department is close to the worst possible sensory environment: fluorescent light, constant alarms, strangers touching you, no predictability. Distress in an autistic patient is usually the environment or pain, not psychiatric illness.\n\nWhat works: the quietest room available, lights down, alarms silenced where safe, as few staff in the room as possible. Ask the caregiver first, always. They know how this person communicates, what calms them, and what a behavior means, and they are frequently ignored.\n\nUse concrete language and no idioms. \"I'm going to put this band on your arm and it will squeeze for ten seconds\" works; \"let's get you fixed up\" does not. Announce before every touch, allow long processing time, and let them keep a familiar object.\n\n> **Key:** Behavior is communication. A nonverbal patient who begins hitting himself is usually saying pain, fear, or too much noise. Look for the cause instead of treating the behavior.\n\n## Dementia and sundowning\n\nConfusion and agitation that worsen in the late afternoon and evening. It gets worse in a windowless room with no clock and no familiar face.\n\nWhat helps: short simple reorientation without arguing, lights on before dusk, family at the bedside, familiar objects, a warm blanket, and a check for the physical causes that drive it, which are usually pain, a full bladder, constipation, or an infection.\n\nWhat hurts: physical restraint, which reliably worsens delirium, and a urinary catheter placed for convenience. Prefer a low bed, a bed alarm, and a person.\n\n## Children and adolescents\n\nPediatric behavioral emergencies have risen sharply and children board for days waiting for a scarce psychiatric bed. A child in an adult emergency department for 48 hours with no school, no routine, and nothing to do will deteriorate no matter how kind everyone is.\n\nThe tech's contribution is the humanizing part: a consistent face, something to do, meals on a schedule, a parent present where policy allows, and a room made as safe and as non-frightening as possible. Pediatric safe rooms are stripped the same way adult ones are, and ligature risk does not decrease with age.\n\n## Trauma-informed care\n\nAssume any patient may have a history of assault, abuse, or coercive treatment, because a large share do. Then behave accordingly: explain before you touch, ask permission when you can, offer choices, avoid being between the patient and the exit, and prefer same-gender staff for searches and gown changes.\n\nRestraints and searches reproduce the original experience precisely. That is not a reason never to restrain when it is genuinely necessary. It is a reason to exhaust everything else first and to explain, afterward, what happened and why.\n\n## Language, and what not to write\n\nPerson-first language is not decoration; it changes how the next clinician treats the patient.\n\n| Do not say or write | Say and write |\n|---|---|\n| A schizophrenic, a bipolar | A person with schizophrenia, a person with bipolar disorder |\n| Committed suicide | Died by suicide |\n| Successful or failed attempt | Attempt, with the details |\n| Drug seeker, addict, junkie | Person with a substance use disorder |\n| Frequent flyer | Patient with frequent visits |\n| Manipulative, attention-seeking | The specific behavior you observed |\n| Noncompliant | Did not take, declined |\n| Denies suicidal ideation | States he has no thoughts of harming himself |\n\n\"Denies\" carries a whiff of disbelief that a stranger reading the chart will absorb. Quote the patient instead.\n\n## Your own safety and your own head\n\nMost assaults on health care workers are never reported. New Jersey law treats assault on a health care worker in a health care setting more seriously than a simple assault. Report every one: to the charge nurse, to security, in the safety report, to employee health if you were injured, and to police when you choose to.\n\nAn unreported assault changes nothing about staffing, room design, or policy. Reported ones do.\n\nThen the part nobody schedules. After a serious incident there should be a **debrief**, for the patient where appropriate and for the staff always. Go, even when it feels unnecessary.\n\nSecondary traumatic stress is real and cumulative: intrusive images, dreading certain rooms, numbness, drinking to sleep, snapping at people at home. The employee assistance program is free, confidential, and separate from your personnel file.\n\n> **On shift:** You will meet the same patients repeatedly, on their worst days, and some of them will be rude to you for reasons that have nothing to do with you. Treating the twelfth visit exactly like the first is the hardest skill in this module and the one that defines the people worth working beside.",
+      "keyPoints": [
+        "For autism and intellectual disability, reduce sensory load, use concrete language, announce touch, and treat the caregiver as the expert, because behavior is communication and self-injury usually means pain, fear or overstimulation.",
+        "Sundowning is worsened by restraint and catheters; use light, family, reorientation, and a check for pain, bladder, bowel and infection.",
+        "Trauma-informed care means explaining before touching, offering choices, and exhausting alternatives before restraint.",
+        "Use person-first language and 'died by suicide'; never write manipulative, drug seeker, frequent flyer, or noncompliant.",
+        "Report every assault, attend the debrief, and use the confidential employee assistance program."
+      ],
+      "checks": [
+        {
+          "q": "A nonverbal autistic adult begins hitting his own head after 40 minutes in a bright hallway bed. What is the best first response?",
+          "choices": [
+            "Request restraints before he injures himself further",
+            "Reduce the sensory load and ask the caregiver what this behavior usually means and what helps",
+            "Speak loudly and clearly to get his attention",
+            "Move him to the psychiatric safe room immediately"
+          ],
+          "answer": 1,
+          "why": "Self-injury here is communication, most often about overstimulation or pain, and the caregiver knows the person's specific signals and remedies. Restraint and a louder voice both increase the stimulation that caused it."
+        },
+        {
+          "q": "Which chart entry is written acceptably?",
+          "choices": [
+            "Patient is a frequent flyer, appears manipulative, denies SI.",
+            "Known schizophrenic, noncompliant with meds.",
+            "Patient states, 'I have no thoughts of hurting myself.' Observed sitting on the edge of the bed, speaking in full sentences. Nurse notified at 0240.",
+            "Patient is drug seeking, refused to cooperate with the exam."
+          ],
+          "answer": 2,
+          "why": "It quotes the patient, records observable behavior, and documents notification with a time. The others use stigmatizing labels and judgments about motive that follow the patient through the record and change how the next clinician treats them."
+        },
+        {
+          "q": "A tech is punched by a patient during a restraint. He is not injured. What should he do?",
+          "choices": [
+            "Nothing formal, since there was no injury and the patient was agitated",
+            "Report it to the charge nurse and security, file the safety report, and attend the debrief",
+            "Report it only if the patient was not psychiatric",
+            "Document it in the patient's chart and consider the matter closed"
+          ],
+          "answer": 1,
+          "why": "Unreported assaults are the reason staffing, room design and policy do not change, and New Jersey treats assault on a health care worker seriously. Injury is not the threshold for reporting, and a chart entry does not reach security, employee health, or leadership."
+        }
+      ]
+    }
+  ],
+  "cards": [
+    { "id": "ed-psych-deescalation-c001", "front": "What does 'medically cleared' actually mean?", "back": "The ED has looked for a medical cause or complication of the psychiatric presentation, found none needing emergency treatment, and considers the patient stable for psychiatric evaluation or transfer. It does not mean healthy.", "lesson": "ed-psych-deescalation-l01" },
+    { "id": "ed-psych-deescalation-c002", "front": "Why does a urine drug screen rarely change ED management?", "back": "It detects a limited set of drug classes for days after use, misses most synthetics entirely, and reports past exposure rather than current intoxication. A negative result never reduces how closely you watch someone.", "lesson": "ed-psych-deescalation-l01" },
+    { "id": "ed-psych-deescalation-c003", "front": "Name six medical conditions that mimic a psychiatric presentation.", "back": "Hypoglycemia, hypoxia or hypercarbia, head injury including an old subdural, infection such as urinary infection or pneumonia, thyroid disease, low sodium, intoxication or withdrawal, and medications like steroids or anticholinergics.", "lesson": "ed-psych-deescalation-l01" },
+    { "id": "ed-psych-deescalation-c004", "front": "How do you distinguish delirium from dementia and from primary psychosis?", "back": "Delirium: hours to days, fluctuating, inattention, clouded consciousness, often visual hallucinations, reversible cause. Dementia: months to years, stable, clear consciousness. Primary psychosis: onset teens to thirties, clear sensorium, usually auditory hallucinations.", "lesson": "ed-psych-deescalation-l01" },
+    { "id": "ed-psych-deescalation-c005", "front": "Which two findings mean 'medical until proven otherwise' in a psychiatric presentation?", "back": "A first psychiatric presentation in someone over about 40, and any abnormal vital sign. Either one outweighs how psychiatric the behavior looks.", "lesson": "ed-psych-deescalation-l01" },
+    { "id": "ed-psych-deescalation-c006", "front": "What tests are commonly ordered for medical clearance when a panel is required?", "back": "Glucose, basic metabolic panel, complete blood count, ethanol level, urine drug screen, pregnancy test where applicable, acetaminophen and salicylate levels if overdose is possible, and an EKG before QT-prolonging medications.", "lesson": "ed-psych-deescalation-l01" },
+    { "id": "ed-psych-deescalation-c007", "front": "What is the cardinal sign of a manic episode, and how does it differ from insomnia?", "back": "Decreased need for sleep: three hours of sleep and high energy, rather than exhaustion and seeking sleep. Also pressured speech, racing thoughts, grandiosity, distractibility, and impulsivity.", "lesson": "ed-psych-deescalation-l02" },
+    { "id": "ed-psych-deescalation-c008", "front": "What are positive and negative symptoms of schizophrenia?", "back": "Positive are added experiences: hallucinations, usually auditory, and delusions, often paranoid. Negative are subtractions: flat affect, no motivation, little speech, withdrawal. Negative symptoms look like rudeness and are not.", "lesson": "ed-psych-deescalation-l02" },
+    { "id": "ed-psych-deescalation-c009", "front": "A patient describes a clear delusion. How do you respond?", "back": "Neither argue with it nor pretend to share it. Respond to the feeling: 'That sounds frightening. You're safe here and I'm going to stay nearby.' Arguing provokes; agreeing destroys trust when discovered.", "lesson": "ed-psych-deescalation-l02" },
+    { "id": "ed-psych-deescalation-c010", "front": "What is the time course of a panic attack, and why does the patient still get an EKG?", "back": "Peaks within about 10 minutes and usually resolves in 20 to 30. In the ED it is a diagnosis of exclusion, so chest pain, palpitations and dyspnea are worked up before it is called panic.", "lesson": "ed-psych-deescalation-l02" },
+    { "id": "ed-psych-deescalation-c011", "front": "What are the emergency concerns in a patient with an eating disorder?", "back": "Medical instability: heart rate under 50, hypotension, orthostatic changes, low potassium, prolonged QT interval, and refeeding risk. Weigh facing away from the display when a blind weight is ordered, and do not comment on body or food.", "lesson": "ed-psych-deescalation-l02" },
+    { "id": "ed-psych-deescalation-c012", "front": "Why does the quiet, cooperative psychiatric patient deserve more attention, not less?", "back": "Calm is not safe. A person who has decided on suicide often looks calm and undemanding, and quiet patients are the ones left unwatched in a corner of a busy department.", "lesson": "ed-psych-deescalation-l02" },
+    { "id": "ed-psych-deescalation-c013", "front": "Does asking about suicide plant the idea?", "back": "No. Research consistently shows direct questioning does not increase suicidal thinking or behavior, and for many people being asked reduces distress because someone finally said it out loud.", "lesson": "ed-psych-deescalation-l03" },
+    { "id": "ed-psych-deescalation-c014", "front": "What does the Columbia screener ask, in order?", "back": "Wish to be dead; thoughts of killing yourself; thoughts about how; thoughts with some intent; a worked-out plan with intent to carry it out; and whether you have ever done, started, or prepared to do anything to end your life.", "lesson": "ed-psych-deescalation-l03" },
+    { "id": "ed-psych-deescalation-c015", "front": "What is the strongest single predictor of a future suicide attempt?", "back": "A previous attempt. That is why the Columbia screener asks about past behavior for both lifetime and the past three months.", "lesson": "ed-psych-deescalation-l03" },
+    { "id": "ed-psych-deescalation-c016", "front": "List four risk factors and four protective factors for suicide.", "back": "Risk: prior attempt, firearm access, active substance use, hopelessness, recent loss, chronic pain, isolation, recent psychiatric discharge. Protective: dependents at home, strong support, engagement in treatment, religious commitment, stated reasons for living.", "lesson": "ed-psych-deescalation-l03" },
+    { "id": "ed-psych-deescalation-c017", "front": "What is means restriction, and what is the tech's version of it?", "back": "Putting distance between a person and a lethal method, the single most effective prevention measure. In the ED it is the belongings search, the gown, removing cords and sharps, and the fact that someone is watching.", "lesson": "ed-psych-deescalation-l03" },
+    { "id": "ed-psych-deescalation-c018", "front": "A patient on suicide precautions says he feels fine now and wants his observation stopped. What changes?", "back": "Nothing. Only a provider's order changes an observation level. Sudden improvement can mean a decision has been made, and you report the statement to the nurse rather than acting on it.", "lesson": "ed-psych-deescalation-l03" },
+    { "id": "ed-psych-deescalation-c019", "front": "What is in a safety plan, and who writes it?", "back": "Personal warning signs, solo coping strategies, distracting people and places, people to ask for help, professionals and crisis numbers including 988, and steps to make the home safer. A clinician writes it with the patient, not a tech.", "lesson": "ed-psych-deescalation-l03" },
+    { "id": "ed-psych-deescalation-c020", "front": "How does an involuntary psychiatric hold begin in New Jersey?", "back": "Through a designated county screening center: a certified screener evaluates, an authorized psychiatrist or physician completes a screening certificate generally valid for 72 hours, and a judge may issue a temporary court order with a hearing to follow.", "lesson": "ed-psych-deescalation-l04" },
+    { "id": "ed-psych-deescalation-c021", "front": "A patient walks toward the exit and you are the only staff nearby. What is your role?", "back": "Call out immediately for the nurse and security, stay with him and keep talking, and do not block the doorway or grab him. Techs never make detention decisions or use force on their own judgment.", "lesson": "ed-psych-deescalation-l04" },
+    { "id": "ed-psych-deescalation-c022", "front": "What is the difference between capacity and competency?", "back": "Capacity is a clinical judgment about one decision at one moment: understand, appreciate, reason, express a choice. Competency is a global legal determination made by a court. Disagreeing with the team is not incapacity.", "lesson": "ed-psych-deescalation-l04" },
+    { "id": "ed-psych-deescalation-c023", "front": "Does an involuntary hold let the team treat a patient over his objection?", "back": "Not generally. The hold addresses dangerousness and confinement. A held patient may still have capacity to refuse a specific treatment, with exceptions in a genuine emergency.", "lesson": "ed-psych-deescalation-l04" },
+    { "id": "ed-psych-deescalation-c024", "front": "Why do psychiatric patients board in the ED for many hours or days?", "back": "EMTALA transfer requires stabilization plus an accepting facility, and inpatient psychiatric beds are scarce. The wait is a bed search, not a required observation period.", "lesson": "ed-psych-deescalation-l04" },
+    { "id": "ed-psych-deescalation-c025", "front": "What rights does an involuntarily held patient keep?", "back": "To be informed of status and rights, to counsel and a hearing, to refuse specific treatments outside a true emergency, to the least restrictive safe setting, to communicate subject to documented safety limits, and to be treated with dignity.", "lesson": "ed-psych-deescalation-l04" },
+    { "id": "ed-psych-deescalation-c026", "front": "What does 'ligature-resistant' mean, and name six ligatures patients bring in themselves.", "back": "No anchor point strong enough to hang from and nothing long enough to tie. Patients arrive with shoelaces, belts, drawstrings, hoodies, underwire bras, lanyards, and phone and headphone cords.", "lesson": "ed-psych-deescalation-l05" },
+    { "id": "ed-psych-deescalation-c027", "front": "Which cords are commonly left in a room and are overlooked ligature risks?", "back": "Blood pressure cuff tubing, IV tubing, oxygen tubing, call bell cords, and electrical cords. Strip the room before a patient at risk goes into it.", "lesson": "ed-psych-deescalation-l05" },
+    { "id": "ed-psych-deescalation-c028", "front": "What are the three highest-risk locations in the department for a patient at suicide risk?", "back": "The bathroom, the shower, and any room where the door can be closed. If you cannot see your patient in one of them, you have lost the watch.", "lesson": "ed-psych-deescalation-l05" },
+    { "id": "ed-psych-deescalation-c029", "front": "How is a belongings search conducted and documented?", "back": "Per policy, usually two staff and same gender where possible, explained to the patient first. Everything removed is inventoried in writing and signed, with valuables to secured hospital storage, not a drawer.", "lesson": "ed-psych-deescalation-l05" },
+    { "id": "ed-psych-deescalation-c030", "front": "Why does a psychiatric patient change into a gown?", "back": "Street clothes conceal items and make walking out through a waiting room easy. Do it with dignity: explain, offer a second gown for cover, give privacy where safety allows, and warn before touching.", "lesson": "ed-psych-deescalation-l05" },
+    { "id": "ed-psych-deescalation-c031", "front": "Name the four observation levels and what one-to-one actually requires.", "back": "Routine, every 15 minutes, line of sight, and one-to-one constant. One-to-one means within arm's reach continuously, including the bathroom per policy, with in-person handoff to whoever relieves you.", "lesson": "ed-psych-deescalation-l05" },
+    { "id": "ed-psych-deescalation-c032", "front": "What are you watching for during a 15-minute check?", "back": "Hands out of sight or closed, anything being tied or torn, scanning the exits, hoarding utensils or cups, rising tension, sudden calm after agitation, responding to unseen voices, and attempts to get into a bathroom alone.", "lesson": "ed-psych-deescalation-l05" },
+    { "id": "ed-psych-deescalation-c033", "front": "What are the rules about visitors and meal trays on a psychiatric patient?", "back": "Visitors are screened and nothing is handed over without staff checking it first; visits can be limited for safety. Count the tray, utensils, wrappers and cup back out of the room every time.", "lesson": "ed-psych-deescalation-l05" },
+    { "id": "ed-psych-deescalation-c034", "front": "Name the ten domains of verbal de-escalation.", "back": "Respect personal space, do not be provocative, establish verbal contact, be concise, identify wants and feelings, listen closely, agree or agree to disagree, set clear limits, offer choices and optimism, debrief patient and staff.", "lesson": "ed-psych-deescalation-l06" },
+    { "id": "ed-psych-deescalation-c035", "front": "Why must only one person speak to an agitated patient?", "back": "Competing voices overwhelm a brain that is already processing slowly and feel like being cornered. One designated speaker, everyone else present but quiet and spread out.", "lesson": "ed-psych-deescalation-l06" },
+    { "id": "ed-psych-deescalation-c036", "front": "At which de-escalation domains does most agitation actually resolve, and which do new staff jump to?", "back": "It resolves at identifying wants and feelings and at listening closely. New staff jump straight to setting limits, which is why their attempts escalate.", "lesson": "ed-psych-deescalation-l06" },
+    { "id": "ed-psych-deescalation-c037", "front": "What are the three ways to 'agree' with an agitated patient?", "back": "Agree with the truth ('that wait is too long'), agree in principle ('I'd want to leave too'), and agree with the odds ('other people probably feel that way'). When you cannot agree, say so respectfully and move on.", "lesson": "ed-psych-deescalation-l06" },
+    { "id": "ed-psych-deescalation-c038", "front": "How is a limit set correctly?", "back": "Plainly, without threat, paired with what you want to keep doing: 'I want to keep talking with you. I can't do that if you're yelling or moving toward me.' State only consequences you can actually deliver.", "lesson": "ed-psych-deescalation-l06" },
+    { "id": "ed-psych-deescalation-c039", "front": "List six things that reliably escalate an agitated patient.", "back": "'Calm down', 'I understand, but', several staff talking at once, laughing or exchanging looks, arms crossed in the doorway, promising a provider's arrival time, matching their volume, and winning the argument.", "lesson": "ed-psych-deescalation-l06" },
+    { "id": "ed-psych-deescalation-c040", "front": "What should happen to your voice as a patient's voice rises?", "back": "Lower it. People unconsciously match tone, and a quieter voice forces them to quiet down to hear you. Also drop the lights, kill the television, and clear the audience from the doorway.", "lesson": "ed-psych-deescalation-l06" },
+    { "id": "ed-psych-deescalation-c041", "front": "Name the four rungs of the agitation continuum and the response to each.", "back": "Anxious: environment and needs. Verbally agitated: verbal de-escalation. Physically agitated: team present, clear limits, offered medication. Violent: trained team response, security, restraint or medication as ordered.", "lesson": "ed-psych-deescalation-l07" },
+    { "id": "ed-psych-deescalation-c042", "front": "List eight warning signs of imminent violence.", "back": "Speech getting louder and faster then stopping, clenched fists and jaw, prolonged staring or refusing to look, faster shorter pacing, invading your space, scanning exits and staff, throwing objects, and sudden calm after escalation.", "lesson": "ed-psych-deescalation-l07" },
+    { "id": "ed-psych-deescalation-c043", "front": "What is the strongest predictor that a patient will become violent?", "back": "A history of violence. Intoxication, youth, male sex, paranoid psychosis, and a prior restraint episode add to it.", "lesson": "ed-psych-deescalation-l07" },
+    { "id": "ed-psych-deescalation-c044", "front": "What turns a gathered team into a show of support rather than a show of force?", "back": "One speaker and everyone else quiet and still, spread out rather than clustered in the doorway, nobody between the patient and their exit, nobody with their back turned, and everyone knowing the plan before entering.", "lesson": "ed-psych-deescalation-l07" },
+    { "id": "ed-psych-deescalation-c045", "front": "How should you position and prepare yourself in a room with a potentially violent patient?", "back": "Door open, two exits known, angled stance one arm's length outside their reach, never between them and the door or letting them get between you and it, hands free, and no stethoscope, lanyard, earrings or pens to grab.", "lesson": "ed-psych-deescalation-l07" },
+    { "id": "ed-psych-deescalation-c046", "front": "You are struck by a patient. What is your job in that moment?", "back": "Get out, not control the patient. Disengage, create distance, call the code. Controlling a violent patient is a trained team function requiring an order, not an improvised response by the person who was hit.", "lesson": "ed-psych-deescalation-l07" },
+    { "id": "ed-psych-deescalation-c047", "front": "What are the order requirements for violent or self-destructive restraint?", "back": "A provider order before application or immediately after, never as-needed, a face-to-face evaluation within 1 hour, and time limits of commonly 4 hours for adults 18 and over, 2 hours for ages 9 to 17, and 1 hour under 9.", "lesson": "ed-psych-deescalation-l08" },
+    { "id": "ed-psych-deescalation-c048", "front": "How is a restraint team structured and who does what?", "back": "Five people: one per limb and one at the head who controls the head, protects the airway, and is the only person talking. Everyone knows their limb before entering, and one person counts.", "lesson": "ed-psych-deescalation-l08" },
+    { "id": "ed-psych-deescalation-c049", "front": "What position are restrained patients placed in, and what is prohibited?", "back": "Supine, face up, head of bed elevated to reduce aspiration. Prone is prohibited by most policies. No weight on chest, back, abdomen or neck, and nothing over the face; use an approved spit hood for spitting.", "lesson": "ed-psych-deescalation-l08" },
+    { "id": "ed-psych-deescalation-c050", "front": "Why are restraints tied to the bed frame rather than the side rails?", "back": "Rails move. A rail lowered or raised with a limb tied to it can dislocate a shoulder or crush a hand. Ties are quick-release and every team member knows how to release them.", "lesson": "ed-psych-deescalation-l08" },
+    { "id": "ed-psych-deescalation-c051", "front": "What has actually killed patients in restraints?", "back": "Positional asphyxia from prone restraint with weight on the back, aspiration of vomit while held flat, an undetected medical cause such as hypoglycemia or a head bleed, and hyperthermia with acidosis from a long violent struggle.", "lesson": "ed-psych-deescalation-l08" },
+    { "id": "ed-psych-deescalation-c052", "front": "What does each 15-minute restraint check include?", "back": "Circulation in each limb (color, warmth, pulse, capillary refill), skin integrity, correct application and position, range of motion one limb at a time, fluids offered, toileting offered, vital signs, sedation level, and whether release criteria are met.", "lesson": "ed-psych-deescalation-l08" },
+    { "id": "ed-psych-deescalation-c053", "front": "When are restraints removed?", "back": "As soon as the patient meets the behavioral release criteria, not when the order expires. An order sets a maximum duration; restraint is not a sentence to be served.", "lesson": "ed-psych-deescalation-l08" },
+    { "id": "ed-psych-deescalation-c054", "front": "What do haloperidol, lorazepam, olanzapine, droperidol and ketamine each require you to watch?", "back": "Haloperidol: QT and muscle stiffness or restlessness. Lorazepam: respiratory depression, worse with alcohol. Olanzapine: sedation, not within about an hour of IM benzodiazepine. Droperidol: QT, often with EKG and monitor. Ketamine: deep sedation, vomiting, airway.", "lesson": "ed-psych-deescalation-l08" },
+    { "id": "ed-psych-deescalation-c055", "front": "What does the tech monitor after any chemical restraint is given?", "back": "Continuous pulse oximetry and usually the cardiac monitor, airway position, level of sedation, vital signs at the ordered interval, and vomiting. A sedated supine patient who vomits needs suction and the team in seconds.", "lesson": "ed-psych-deescalation-l08" },
+    { "id": "ed-psych-deescalation-c056", "front": "Give the alcohol withdrawal timeline from the last drink.", "back": "6 to 12 hours tremor, anxiety, nausea, sweating, tachycardia. 12 to 24 hours alcoholic hallucinosis, usually visual with a clear mind. 24 to 48 hours withdrawal seizures. 48 to 96 hours delirium tremens.", "lesson": "ed-psych-deescalation-l09" },
+    { "id": "ed-psych-deescalation-c057", "front": "What is delirium tremens and why does it matter?", "back": "Confusion plus autonomic storm: fever, heart rate often over 120, hypertension, heavy sweating, hallucinations, 48 to 96 hours after the last drink. It is a medical emergency with real mortality even when treated.", "lesson": "ed-psych-deescalation-l09" },
+    { "id": "ed-psych-deescalation-c058", "front": "What is CIWA-Ar and what is the tech's part in it?", "back": "A ten-item alcohol withdrawal scale covering tremor, sweating, anxiety, agitation, nausea, headache, orientation and sensory disturbances. Usually scored by the nurse; you supply the accurate, on-time vital signs half the score depends on.", "lesson": "ed-psych-deescalation-l09" },
+    { "id": "ed-psych-deescalation-c059", "front": "How does opioid withdrawal present, and what is the actual danger?", "back": "Yawning, runny nose, tearing, gooseflesh, dilated pupils, cramping, vomiting, diarrhea, deep muscle aches, scored with COWS. Rarely lethal in adults; dehydration is the danger and dismissiveness is the failure.", "lesson": "ed-psych-deescalation-l09" },
+    { "id": "ed-psych-deescalation-c060", "front": "In stimulant intoxication, what kills the patient and how does that change management?", "back": "Hyperthermia, worsened by muscle breakdown and acidosis from a long struggle. That is why the team sedates early rather than wrestling, usually with benzodiazepines first-line, and why cooling matters.", "lesson": "ed-psych-deescalation-l09" },
+    { "id": "ed-psych-deescalation-c061", "front": "What distinguishes phencyclidine intoxication, and how do you manage the room?", "back": "Unpredictable violence, a blank stare, nystagmus that can be horizontal, vertical or rotary, and profound analgesia so patients injure themselves without feeling it. Minimize stimulation: low light, low noise, few people, few words.", "lesson": "ed-psych-deescalation-l09" },
+    { "id": "ed-psych-deescalation-c062", "front": "What is the sobering reassessment and what is the classic miss?", "back": "Serial reassessment of an intoxicated patient, judged on trajectory. Alcohol intoxication should steadily improve; a patient getting worse has a head bleed, hypoglycemia, infection, co-ingestion or withdrawal. 'He's just drunk' precedes the missed subdural.", "lesson": "ed-psych-deescalation-l09" },
+    { "id": "ed-psych-deescalation-c063", "front": "How do you approach an autistic or intellectually disabled patient in distress?", "back": "Cut the sensory load: quiet room, lights down, alarms silenced where safe, fewest staff possible. Ask the caregiver, who knows the communication and the warning signs. Concrete language, no idioms, announce every touch, allow processing time.", "lesson": "ed-psych-deescalation-l10" },
+    { "id": "ed-psych-deescalation-c064", "front": "What helps and what hurts in dementia with sundowning?", "back": "Helps: simple reorientation without arguing, lights on before dusk, family present, familiar objects, and a check for pain, full bladder, constipation and infection. Hurts: physical restraint, which worsens delirium, and a catheter for convenience.", "lesson": "ed-psych-deescalation-l10" },
+    { "id": "ed-psych-deescalation-c065", "front": "What does trauma-informed care look like in practice for a tech?", "back": "Assume a trauma history. Explain before touching, ask permission where possible, offer choices, avoid standing between patient and exit, prefer same-gender staff for searches and gown changes, and explain afterward if force was used.", "lesson": "ed-psych-deescalation-l10" },
+    { "id": "ed-psych-deescalation-c066", "front": "Rewrite these: 'a schizophrenic', 'committed suicide', 'drug seeker', 'noncompliant', 'denies SI'.", "back": "A person with schizophrenia; died by suicide; a person with a substance use disorder; declined or did not take; states he has no thoughts of harming himself. Avoid manipulative, attention-seeking and frequent flyer entirely.", "lesson": "ed-psych-deescalation-l10" },
+    { "id": "ed-psych-deescalation-c067", "front": "You are assaulted by a patient but not injured. What do you do?", "back": "Report it: charge nurse, security, safety report, employee health if injured, and police if you choose. New Jersey treats assault on a health care worker seriously, and unreported assaults never change staffing, design or policy.", "lesson": "ed-psych-deescalation-l10" },
+    { "id": "ed-psych-deescalation-c068", "front": "What are the signs that secondary traumatic stress is accumulating?", "back": "Intrusive images, dreading particular rooms, numbness, drinking to sleep, and snapping at people at home. Attend post-incident debriefs and use the employee assistance program, which is free, confidential, and outside your personnel file.", "lesson": "ed-psych-deescalation-l10" }
+  ],
+  "quiz": [
+    {
+      "id": "ed-psych-deescalation-q001",
+      "q": "A 62-year-old with no psychiatric history is brought in after two days of agitation and seeing people who are not there. He cannot hold a thread of conversation. Temperature 38.5 C, heart rate 120. What is the most likely explanation?",
+      "choices": [
+        "New-onset bipolar disorder",
+        "Delirium from a medical cause, which is a medical emergency",
+        "Primary psychotic disorder",
+        "Intentional behavior for secondary gain"
+      ],
+      "answer": 1,
+      "why": "Acute onset, fluctuating inattention, visual hallucinations, fever and tachycardia define delirium, which has a physical cause and real mortality. Primary psychiatric illness rarely begins in the sixties, does not produce fever, and presents with a clear sensorium.",
+      "lesson": "ed-psych-deescalation-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-psych-deescalation-q002",
+      "q": "A patient labeled 'psych eval' has a point-of-care glucose of 41 mg/dL and is agitated and combative. What is the correct interpretation?",
+      "choices": [
+        "The agitation is psychiatric and the glucose is incidental",
+        "The glucose should be rechecked before anyone is told",
+        "Hypoglycemia is a common and immediately reversible cause of agitation; tell the nurse right now",
+        "Glucose only matters if the patient is unresponsive"
+      ],
+      "answer": 2,
+      "why": "Hypoglycemia imitates nearly any psychiatric presentation and is corrected in minutes, which is why it is checked first on every altered or agitated patient. Rechecking first delays treatment, and combativeness is a classic presentation well before unresponsiveness.",
+      "lesson": "ed-psych-deescalation-l01",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-psych-deescalation-q003",
+      "q": "A nurse says a patient's urine drug screen came back negative, so the agitation must be psychiatric. What is the accurate response?",
+      "choices": [
+        "Correct; a negative screen excludes a toxic cause",
+        "A negative screen means the patient used more than three days ago",
+        "The screen is only valid if collected within two hours of arrival",
+        "A negative screen excludes very little: screens detect a limited set of classes, miss synthetics entirely, and do not reflect current intoxication"
+      ],
+      "answer": 3,
+      "why": "Routine panels test for a few drug classes and miss synthetic cannabinoids and most designer stimulants, while detecting older exposures that are no longer causing symptoms. The result neither confirms nor excludes a toxic cause of present agitation.",
+      "lesson": "ed-psych-deescalation-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-psych-deescalation-q004",
+      "q": "During a busy shift, which of these patients most warrants your continuous attention?",
+      "choices": [
+        "A man shouting at the triage window about his wait",
+        "A woman crying loudly in a hallway bed",
+        "A quiet, polite patient with a suicide risk flag who asks for nothing and lies facing the wall",
+        "A patient repeatedly pressing the call bell for water"
+      ],
+      "answer": 2,
+      "why": "Calm cooperation in a patient at suicide risk can reflect a decision already made, and quiet patients are precisely the ones who get left unobserved. Loud patients are, by definition, being watched.",
+      "lesson": "ed-psych-deescalation-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-psych-deescalation-q005",
+      "q": "A patient with paranoid delusions tells you the staff are poisoning his food. Which reply is best?",
+      "choices": [
+        "\"Nobody is poisoning anything, that's not real.\"",
+        "\"That must be terrifying. I'm going to stay nearby, and I can bring you a sealed bottle of water if that feels better.\"",
+        "\"You're right to be careful, I'd check too.\"",
+        "\"Who do you think is doing it?\""
+      ],
+      "answer": 1,
+      "why": "It validates the emotion, offers presence, and provides a concrete choice without confirming or challenging the delusion. Direct contradiction provokes, endorsement destroys trust when discovered, and probing the content elaborates the delusion without helping.",
+      "lesson": "ed-psych-deescalation-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-psych-deescalation-q006",
+      "q": "A patient with an eating disorder is being evaluated. Which finding is the most urgent?",
+      "choices": [
+        "Heart rate of 42 with a prolonged QT interval on the EKG",
+        "Refusal to eat the meal tray",
+        "Stated weight 15 pounds below last year",
+        "Expressed distress about being weighed"
+      ],
+      "answer": 0,
+      "why": "Bradycardia with QT prolongation signals cardiac instability and risk of a lethal rhythm, which is the emergency department's concern in an eating disorder. The behavioral findings are clinically important but are not immediate physiologic threats.",
+      "lesson": "ed-psych-deescalation-l02",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-psych-deescalation-q007",
+      "q": "A tech hesitates to ask a patient about suicidal thoughts, worried it may suggest the idea. What is correct?",
+      "choices": [
+        "The concern is valid and the question should be left to psychiatry",
+        "Direct questioning does not increase suicidal thinking or behavior and frequently reduces distress",
+        "The question is only safe in patients with a known psychiatric history",
+        "It increases risk in adolescents, who should not be asked"
+      ],
+      "answer": 1,
+      "why": "Repeated studies in adults and adolescents show no increase in ideation or behavior from being asked, and many patients report relief. Restricting the question to psychiatry or to known patients misses most people at risk.",
+      "lesson": "ed-psych-deescalation-l03",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-psych-deescalation-q008",
+      "q": "While taking vital signs, a patient tells you he has been thinking about how he would kill himself and has looked at the bridge near his house. What do you do?",
+      "choices": [
+        "Finish the vital signs, then document it in the flowsheet",
+        "Reassure him things will get better and continue your rounds",
+        "Ask more detailed questions to establish how serious he is",
+        "Stop, stay with him, and get the nurse immediately without leaving him alone"
+      ],
+      "answer": 3,
+      "why": "Method plus a specific identified site is high-risk disclosure requiring immediate escalation and continuous observation. Finishing tasks delays it, reassurance closes the conversation, and detailed probing is the clinician's assessment, not the tech's.",
+      "lesson": "ed-psych-deescalation-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-psych-deescalation-q009",
+      "q": "Which patient carries the highest suicide risk based on the factor with the strongest predictive value?",
+      "choices": [
+        "A 24-year-old with major depression and no prior attempt",
+        "A 45-year-old who overdosed six weeks ago and is now here for chest pain",
+        "A 30-year-old with a new cancer diagnosis",
+        "A 60-year-old living alone after a divorce"
+      ],
+      "answer": 1,
+      "why": "A previous attempt is the strongest single predictor of a future attempt, and a recent one within three months weighs especially heavily. Depression, a serious diagnosis, isolation and loss all raise risk but less powerfully than prior behavior.",
+      "lesson": "ed-psych-deescalation-l03",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-psych-deescalation-q010",
+      "q": "A voluntary patient waiting for psychiatric screening stands up and heads for the ambulance bay. You are closest. What is the correct action?",
+      "choices": [
+        "Step into the doorway to block him until help arrives",
+        "Take hold of his arm and walk him back",
+        "Call out immediately for the nurse and security, stay with him, keep talking, and neither block nor grab",
+        "Let him leave and report it afterward"
+      ],
+      "answer": 2,
+      "why": "Detention decisions and the use of force belong to the nurse, provider and security, and blocking or grabbing commonly triggers the assault it is meant to prevent. Loud immediate notification with continued verbal contact is the tech's role.",
+      "lesson": "ed-psych-deescalation-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-psych-deescalation-q011",
+      "q": "A patient on an involuntary hold asks you how long he has to stay and whether he is being committed. What should you say?",
+      "choices": [
+        "\"Usually it's 72 hours, so probably until Thursday.\"",
+        "\"That's not something I can discuss.\"",
+        "\"You'd have to ask the judge.\"",
+        "\"I don't want to guess at something that important. Let me get your nurse so you get the real answer.\" Then go get them."
+      ],
+      "answer": 3,
+      "why": "Guessing at legal status creates expectations that, when broken, produce rage directed at the next staff member. A flat refusal reads as stonewalling and a deflection to the court abandons the question; the correct move is honest non-guessing plus actually fetching the nurse.",
+      "lesson": "ed-psych-deescalation-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-psych-deescalation-q012",
+      "q": "A patient held involuntarily for suicidal ideation refuses a chest x-ray ordered for a cough. What is accurate?",
+      "choices": [
+        "The hold authorizes all medical care, so the x-ray proceeds",
+        "Refusal proves he lacks capacity",
+        "He may retain capacity to refuse that specific test; the hold restricts leaving, not every treatment decision",
+        "Only a court can permit him to refuse"
+      ],
+      "answer": 2,
+      "why": "Commitment addresses dangerousness and confinement rather than granting blanket consent, and capacity is assessed per decision. Disagreement with the team is not itself evidence of incapacity, and no court order is required for a patient to decline a test.",
+      "lesson": "ed-psych-deescalation-l04",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-psych-deescalation-q013",
+      "q": "You are placing a patient at suicide risk into a room. Which item is the most commonly overlooked ligature hazard?",
+      "choices": [
+        "Blood pressure cuff tubing left connected on the wall unit",
+        "A paper gown",
+        "A foam pillow",
+        "A plastic water pitcher"
+      ],
+      "answer": 0,
+      "why": "Cuff tubing, along with IV tubing, oxygen tubing and call bell cords, is a long flexible cord routinely left in rooms and forgotten during a strip. Paper gowns tear, and pillows and pitchers present different, lesser risks.",
+      "lesson": "ed-psych-deescalation-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-psych-deescalation-q014",
+      "q": "You are assigned one-to-one observation. The patient has been asleep for an hour and the charge nurse asks you to step out for two minutes to help turn a patient next door. What do you do?",
+      "choices": [
+        "Go, because the patient is asleep",
+        "Go, leaving the door wide open so the desk can see in",
+        "Ask a visiting family member to sit in for two minutes",
+        "Stay, and say you need a relief person before you can leave a one-to-one"
+      ],
+      "answer": 3,
+      "why": "One-to-one means continuous presence within arm's reach with in-person handoff, and in-department attempts cluster in brief unobserved gaps. Sleep can be feigned, a doorway sightline from a busy desk is not observation, and family are not trained observers.",
+      "lesson": "ed-psych-deescalation-l05",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-psych-deescalation-q015",
+      "q": "A visitor arrives with a bag of clothes and a phone charger for a patient on suicide precautions. What is correct?",
+      "choices": [
+        "Hand them over; personal items reduce agitation",
+        "Nothing is passed to the patient without staff checking it first, and a charging cable is a ligature that does not go in",
+        "Allow the clothes but not the bag",
+        "Refuse all visitors for patients on precautions"
+      ],
+      "answer": 1,
+      "why": "Visitors are a common route for contraband, intentionally or innocently, and a charging cable is exactly the kind of cord the room was stripped of. Blanket visitor bans are neither policy nor necessary; screening every item is.",
+      "lesson": "ed-psych-deescalation-l05",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-psych-deescalation-q016",
+      "q": "A patient is shouting that he has waited four hours and nobody has told him anything. Which response follows de-escalation technique?",
+      "choices": [
+        "\"Sir, I need you to lower your voice.\"",
+        "\"I understand, but everybody here is waiting just like you.\"",
+        "\"You're right, four hours with no update is too long. What would help most right now, an update from your nurse or something to eat?\"",
+        "\"If you keep this up I'm going to have to call security.\""
+      ],
+      "answer": 2,
+      "why": "It agrees with what is true, names the real grievance as information rather than time, and offers two deliverable choices. A command offers no relief, 'I understand, but' erases the acknowledgement, and an opening threat skips most of the technique.",
+      "lesson": "ed-psych-deescalation-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-psych-deescalation-q017",
+      "q": "Four staff members are standing in the doorway of an escalating patient's room and three of them are speaking to him. What is the problem?",
+      "choices": [
+        "Nothing; visible numbers deter violence",
+        "Competing voices overwhelm an agitated patient and a blocked doorway creates a trapped feeling; one speaker, spread out, exit clear",
+        "It breaches patient privacy",
+        "Four is too few for a restraint team"
+      ],
+      "answer": 1,
+      "why": "Agitated patients process slowly, so multiple voices raise arousal and prevent verbal contact, while a clustered doorway is read as containment. The standard is one designated speaker with the rest present, quiet, spaced, and not blocking the exit.",
+      "lesson": "ed-psych-deescalation-l06",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-psych-deescalation-q018",
+      "q": "Which stance and distance are correct when speaking with an agitated patient?",
+      "choices": [
+        "Two arm's lengths, angled rather than squared off, hands open and visible, exit available to both",
+        "Arm's length, squared to him, steady unbroken eye contact",
+        "Between him and the door so he cannot leave",
+        "Seated close beside him with a reassuring hand on his arm"
+      ],
+      "answer": 0,
+      "why": "Distance buys reaction time, the angled stance reads as non-confrontational, and open hands signal no threat while leaving an exit for both parties. Unbroken eye contact is a challenge, blocking the door provokes assaults, and unannounced touch is provocative and re-traumatizing.",
+      "lesson": "ed-psych-deescalation-l06",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-psych-deescalation-q019",
+      "q": "A patient who has been shouting and pacing for ten minutes abruptly falls silent and stands completely still, staring past you. What should you do?",
+      "choices": [
+        "Move closer to take advantage of the calm and continue the conversation",
+        "Step back, increase distance, and get help before approaching further, because sudden calm after escalation often precedes an assault",
+        "Document that de-escalation was successful",
+        "Turn your back and leave the room quickly"
+      ],
+      "answer": 1,
+      "why": "An abrupt shift from loud escalation to stillness is a recognized pre-assault indicator; genuine de-escalation is gradual, with engagement and softening. Moving closer removes your reaction time and turning your back removes your ability to see what is coming.",
+      "lesson": "ed-psych-deescalation-l07",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-psych-deescalation-q020",
+      "q": "Which factor most strongly predicts that a given patient will become violent in the department?",
+      "choices": [
+        "A diagnosis of schizophrenia",
+        "Current homelessness",
+        "A documented history of violence",
+        "Refusal to answer questions"
+      ],
+      "answer": 2,
+      "why": "Past violence is the strongest available predictor of future violence, with intoxication, youth, paranoid psychosis and prior restraint adding to it. A diagnosis alone is a poor predictor, and housing status and silence are not predictive.",
+      "lesson": "ed-psych-deescalation-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-psych-deescalation-q021",
+      "q": "During a restraint application, a staff member positions the patient face down and kneels on his upper back while ties are secured. What is the correct assessment?",
+      "choices": [
+        "Acceptable if it lasts under a minute",
+        "Acceptable only in patients who are spitting",
+        "Acceptable if a spit hood is not available",
+        "Prohibited: prone positioning with weight on the torso causes positional asphyxia and has killed patients; restraint is supine with the head elevated"
+      ],
+      "answer": 3,
+      "why": "Face-down restraint with weight on the back prevents chest expansion and is forbidden by nearly every hospital policy regardless of duration. Spitting is managed with an approved spit hood, never with prone positioning or anything covering the face.",
+      "lesson": "ed-psych-deescalation-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-psych-deescalation-q022",
+      "q": "An order for violent restraint was written for a 35-year-old at 1400. At 1530 he is calm, oriented, cooperative, and meets the documented release criteria. What should happen?",
+      "choices": [
+        "Restraints continue until the 4-hour order expires at 1800",
+        "Report that release criteria are met so restraints can be removed, and document the assessment",
+        "The tech removes them independently since the criteria are met",
+        "Two limbs are released and two remain until the order expires"
+      ],
+      "answer": 1,
+      "why": "An order sets a maximum duration, not a period to be served, and restraint ends as soon as behavioral criteria are met. Removal is a team decision that must be communicated and documented, and indefinite partial restraint has no clinical or regulatory basis.",
+      "lesson": "ed-psych-deescalation-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-psych-deescalation-q023",
+      "q": "Fifteen minutes after intramuscular sedation for severe agitation, a restrained patient is silent with his chin resting on his chest and shallow, irregular breathing. What is the priority?",
+      "choices": [
+        "Assess the airway and breathing immediately, reposition the head, and get the nurse now",
+        "Chart that the medication achieved the desired effect",
+        "Allow him to sleep, since sedation was the goal",
+        "Loosen all four restraints so he can move freely"
+      ],
+      "answer": 0,
+      "why": "Quiet after sedation can be therapeutic effect or the start of airway obstruction, and a flexed neck in a sedated supine patient obstructs the airway directly. Assessment and immediate escalation come before documentation, and releasing restraints does not address breathing.",
+      "lesson": "ed-psych-deescalation-l08",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-psych-deescalation-q024",
+      "q": "Restraint monitoring on a patient shows documented checks at 0200, 0215, 0300, and 0315. What will an auditor conclude?",
+      "choices": [
+        "Documentation is complete",
+        "The gap is acceptable because the patient was asleep",
+        "The 0230 and 0245 checks are missing, which is a documented monitoring gap and a regulatory finding",
+        "Only the one-hour face-to-face evaluation is required"
+      ],
+      "answer": 2,
+      "why": "Continuous monitoring of violent restraint is operationalized in most policies as a documented check every 15 minutes, so a 45-minute interval is a gap regardless of the patient's state. The face-to-face evaluation is an additional requirement, not a substitute for monitoring.",
+      "lesson": "ed-psych-deescalation-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-psych-deescalation-q025",
+      "q": "A patient admitted for cellulitis reports his last drink was 28 hours ago. He has a witnessed generalized seizure. What is the most likely cause?",
+      "choices": [
+        "Delirium tremens",
+        "Alcohol withdrawal seizure, which typically occurs 24 to 48 hours after the last drink",
+        "Acute alcohol intoxication",
+        "Opioid withdrawal"
+      ],
+      "answer": 1,
+      "why": "Withdrawal seizures cluster between 24 and 48 hours after the last drink and often occur without warning. Delirium tremens begins later at 48 to 96 hours, intoxication does not fit 28 hours of abstinence, and opioid withdrawal does not cause seizures in adults.",
+      "lesson": "ed-psych-deescalation-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-psych-deescalation-q026",
+      "q": "A patient brought in intoxicated at 2200 was rousable and conversant. At 0200 he responds only to pain and his speech is worse. What is the correct interpretation?",
+      "choices": [
+        "Expected deepening as the alcohol level peaks; continue to observe",
+        "Normal sleep; do not disturb him",
+        "Deterioration rather than improvement means another cause such as a head bleed, hypoglycemia or a co-ingestion, and requires immediate reassessment",
+        "He has entered delirium tremens"
+      ],
+      "answer": 2,
+      "why": "Alcohol intoxication should improve steadily over hours, so worsening signals something else, classically a subdural hematoma from an unwitnessed fall. Delirium tremens is a withdrawal state days after the last drink, not a feature of active intoxication.",
+      "lesson": "ed-psych-deescalation-l09",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-psych-deescalation-q027",
+      "q": "A patient with severe methamphetamine intoxication is fighting restraints continuously. His temperature is 39.8 C. Why is a prolonged struggle especially dangerous here?",
+      "choices": [
+        "Because it increases the risk of ligature injury",
+        "Because sustained exertion worsens hyperthermia, muscle breakdown and acidosis, which are what kill stimulant patients",
+        "Because stimulant patients cannot legally be restrained",
+        "Because it prolongs the duration of the drug's effect"
+      ],
+      "answer": 1,
+      "why": "Stimulant intoxication already produces dangerous hyperthermia, and fighting against restraint adds heat, rhabdomyolysis and metabolic acidosis on top of it. That is why teams sedate early and cool rather than prolonging a physical fight.",
+      "lesson": "ed-psych-deescalation-l09",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-psych-deescalation-q028",
+      "q": "A nonverbal autistic adult in a bright hallway bed begins hitting his own head after 30 minutes. What is the best first response?",
+      "choices": [
+        "Reduce the sensory load and ask his caregiver what this behavior usually means and what helps",
+        "Request restraints before he injures himself",
+        "Speak louder and more firmly to get his attention",
+        "Administer nothing and wait for him to settle"
+      ],
+      "answer": 0,
+      "why": "Self-injury here is communication, usually about overstimulation or pain, and the caregiver knows this person's specific signals and remedies. Restraint and a raised voice both increase the stimulation that produced the behavior.",
+      "lesson": "ed-psych-deescalation-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-psych-deescalation-q029",
+      "q": "An 84-year-old with dementia becomes confused and agitated every evening around 1800. Which combination is most appropriate?",
+      "choices": [
+        "Physical restraints and a urinary catheter to prevent falls and wandering",
+        "A dark quiet room and minimal interaction",
+        "Lights on before dusk, family at the bedside, simple reorientation, a check for pain, full bladder, constipation and infection, plus a low bed and bed alarm",
+        "Sedating medication as the first intervention"
+      ],
+      "answer": 2,
+      "why": "Sundowning responds to light, familiarity and treating the physical drivers, which are usually pain, urinary retention, constipation or infection. Restraints and catheters reliably worsen delirium, darkness increases disorientation, and sedation is not a first-line intervention.",
+      "lesson": "ed-psych-deescalation-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-psych-deescalation-q030",
+      "q": "Which entry belongs in a medical record?",
+      "choices": [
+        "Frequent flyer, appears manipulative, denies SI.",
+        "Patient states, 'I have no thoughts of hurting myself.' Observed sitting upright, answering in full sentences. Nurse notified 0240.",
+        "Known schizophrenic, noncompliant with medications.",
+        "Drug seeking behavior, refused to cooperate."
+      ],
+      "answer": 1,
+      "why": "It quotes the patient, records observable behavior and documents notification with a time. The others use stigmatizing labels and conclusions about motive that follow the patient through the record and measurably change how the next clinician treats them.",
+      "lesson": "ed-psych-deescalation-l10",
+      "difficulty": 1
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "ed-psych-deescalation-s01",
+      "title": "Rung by rung, room 7",
+      "setting": "ed",
+      "intro": "2250. Room 7 holds a man in his early thirties brought in by police after a fight outside a bar. He has a laceration over the left eyebrow, smells strongly of alcohol, and has been waiting about ninety minutes for the provider. No psychiatric history on file. Glucose at triage was 104.\n\nYou are the tech for this zone. Passing the door, you see him pacing the length of the room, six steps each way, muttering. His hands open and close. The television is loud, the overhead lights are at full, and two staff members are standing in the doorway watching him.\n\nHe is on the second rung of the ladder: loud and moving, but not throwing anything and not threatening anyone yet. Nobody has intervened.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "First intervention. What do you do?",
+          "choices": [
+            {
+              "text": "Cut the sensory load: television off, lights down, and clear the audience from the doorway. Then approach alone from an angle with open hands.",
+              "next": "s2",
+              "feedback": "Correct and it costs nothing. An audience of staff watching an agitated man is fuel, and sensory overload drives agitation, especially in intoxication and head injury.",
+              "score": 1
+            },
+            {
+              "text": "Call security to post at the door now, before it gets worse.",
+              "next": "s2",
+              "feedback": "Security has a place, three rungs up. Bringing uniforms to a verbally agitated patient who has not threatened anyone is a show of force, and it is much harder to climb back down the ladder than up it.",
+              "score": 0
+            },
+            {
+              "text": "Go in and tell him firmly to sit down and stop pacing.",
+              "next": "s2",
+              "feedback": "A command with no relationship behind it and nothing offered. This escalates reliably, and it hands a man who is already looking for a confrontation exactly the one he wants.",
+              "score": -1
+            },
+            {
+              "text": "Close the door and leave him alone until the provider is free.",
+              "next": "s2",
+              "feedback": "Two failures at once. You have stopped observing an intoxicated patient with a head laceration who may be developing a bleed, and isolation escalates rather than settles.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "Television off, lights down, doorway clear. He glances at you and keeps pacing. You are two arm's lengths inside the door, angled, hands visible, door behind you open. What do you say first?",
+          "choices": [
+            {
+              "text": "\"My name's Jay, I'm the tech taking care of this side tonight. Is it all right if I ask you something? What do you need most right now?\"",
+              "next": "s3",
+              "feedback": "Establish verbal contact, then identify wants. Name, role, permission, one short question. This is where most agitation actually resolves, and it is the step new staff skip.",
+              "score": 1
+            },
+            {
+              "text": "\"Sir, you need to calm down so we can help you.\"",
+              "next": "s3",
+              "feedback": "'Calm down' has never calmed anyone. It tells a person their state is the problem, offers nothing, and makes the next sentence harder to say.",
+              "score": -1
+            },
+            {
+              "text": "\"How much have you had to drink tonight?\"",
+              "next": "s3",
+              "feedback": "Clinically relevant, badly timed. Right now it reads as an accusation and it is not what this rung is for. The nurse and provider will ask it during the assessment.",
+              "score": 0
+            },
+            {
+              "text": "\"I need to get your vital signs, can you sit on the bed?\"",
+              "next": "s3",
+              "feedback": "The vitals genuinely matter on an intoxicated head injury, and leading with a task before any contact makes you one more person making demands. Contact first, then the task, usually thirty seconds later.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "He stops pacing and turns toward you. \"Nobody has told me anything in two hours, my head is killing me, and I want to go outside and smoke. You people are useless.\" He is loud, but he is talking to you.",
+          "vitals": { "hr": 108, "bp": "146/88", "rr": 18, "spo2": 98, "temp": 36.9 },
+          "choices": [
+            {
+              "text": "\"Let me make sure I've got this. Two hours, nobody's updated you, your head hurts, and you want a cigarette. The waiting part is fair, that's too long. I can't get you outside and I can't give you anything for pain, that's your nurse. What I can do right now is get her in here and get you ice for your head. Which first?\"",
+              "next": "s4",
+              "feedback": "Listen and reflect, agree with what is true, state honestly what you cannot do, then two real choices. Every element of that is a named de-escalation domain, and it is far more effective than any reassurance.",
+              "score": 1
+            },
+            {
+              "text": "\"I understand you're frustrated, but everyone here is waiting and we're doing our best.\"",
+              "next": "s4",
+              "feedback": "'I understand, but' deletes everything before the but, and comparing him to everyone else tells him his complaint does not count. This is the most common escalating sentence in emergency medicine.",
+              "score": -1
+            },
+            {
+              "text": "\"You can't smoke here and the doctor will be in shortly, okay?\"",
+              "next": "s4",
+              "feedback": "A limit with no acknowledgement in front of it, plus a promise you cannot keep. When the provider does not arrive shortly, everything you say afterward is worthless to him.",
+              "score": -1
+            },
+            {
+              "text": "\"I hear you. Let me go get your nurse right now.\" Then leave to find her.",
+              "next": "s4",
+              "feedback": "Getting the nurse is right and leaving mid-conversation is not. He came to you and walking out reads as dismissal. Acknowledge, offer, then get her, or call her from the doorway without breaking contact.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "You get the nurse, ice, and an update. It holds for twenty minutes. Then he stands, kicks the chair into the wall, and shouts, \"I'm done, I'm leaving, get out of my way.\" He is at the third rung: physically agitated, not yet assaultive. You are alone in the room with him.",
+          "choices": [
+            {
+              "text": "Move so you are not blocking his exit or cornered yourself, call out loudly for help and the nurse, keep your voice low, and keep talking to him.",
+              "next": "s5",
+              "feedback": "Exactly right in sequence: your position first, help second, voice third. Never block a doorway to stop a person at this rung, and never get between an agitated man and the exit he is looking at.",
+              "score": 1
+            },
+            {
+              "text": "Step into the doorway to keep him from leaving until help arrives.",
+              "next": "s5",
+              "feedback": "This is how techs get assaulted. Blocking an exit converts a leaving patient into a trapped one, and you have no authority to detain anyone on your own judgment regardless.",
+              "score": -1
+            },
+            {
+              "text": "Match his energy and tell him firmly to sit down, that he is not going anywhere.",
+              "next": "s5",
+              "feedback": "Volume for volume, plus a detention statement you cannot make. The rule is the opposite: as his voice goes up, yours goes down, and legal status comes from the nurse and provider, not you.",
+              "score": -1
+            },
+            {
+              "text": "Back out of the room and pull the door closed behind you to contain him.",
+              "next": "s5",
+              "feedback": "Getting yourself out of reach is sound, and shutting him in alone is not. You lose observation of an intoxicated head injury, and a closed door with an agitated man behind it is a worse problem in four minutes.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "The nurse, two more techs and security arrive. The charge nurse has called the provider. The team stands in the room. What is the correct configuration while the provider is en route?",
+          "choices": [
+            {
+              "text": "Everyone spread out along the walls, quiet and still, one designated speaker continuing to talk to him, his path to the door not blocked, nobody with their back to him.",
+              "next": "s6",
+              "feedback": "Show of support rather than show of force. Enough people that violence obviously will not work, arranged so he does not feel hunted. This configuration alone settles a substantial share of these situations.",
+              "score": 1
+            },
+            {
+              "text": "Everyone clustered shoulder to shoulder in the doorway with arms crossed, so he understands the situation.",
+              "next": "s6",
+              "feedback": "That is a threat display and it is read as one. A blocked doorway plus crossed arms is the single most reliable way to convert physical agitation into an assault.",
+              "score": -1
+            },
+            {
+              "text": "Two staff take his arms preemptively while the rest wait for the order.",
+              "next": "s6",
+              "feedback": "Laying hands on a patient before an order exists is an unordered restraint. It is also tactically the worst moment to do it, with no team assignments and nobody at the head controlling the airway.",
+              "score": -1
+            },
+            {
+              "text": "Everyone waits in the hallway out of sight so he does not feel crowded, with one person in the doorway.",
+              "next": "s6",
+              "feedback": "Reducing the crowd is sound thinking and hiding the team entirely is not. Visible calm numbers are part of what de-escalates, and a hidden team cannot move fast if it has to.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "prompt": "He swings at a security officer. The provider orders restraints and intramuscular medication. You are assigned the left leg. Two minutes later he is in four-point restraints and the medication is given.",
+          "choices": [
+            {
+              "text": "Confirm he is supine with the head of the bed elevated, no weight on his chest or back, ties on the bed frame not the rails, then start the 15-minute checks and watch his breathing and airway after the sedation.",
+              "next": "end",
+              "feedback": "Every one of those exists because a patient died without it. Supine with head elevated prevents aspiration, no torso weight prevents positional asphyxia, frame ties prevent a crush injury when a rail moves, and the checks are the audited record.",
+              "score": 1
+            },
+            {
+              "text": "Hold him prone until the medication takes effect, since he is still fighting.",
+              "next": "end",
+              "feedback": "Prone restraint with weight on the torso is prohibited and it is what has killed people. If he is still fighting in supine restraints, that is a reason to reassess and monitor, never a reason to turn him over.",
+              "score": -1
+            },
+            {
+              "text": "Document the restraint application and step out, since he is now sedated and quiet.",
+              "next": "end",
+              "feedback": "Quiet after sedation is the moment to look more closely, not less. A sedated supine patient can obstruct his airway or vomit within minutes, and the 15-minute monitoring begins at application, not later.",
+              "score": -1
+            },
+            {
+              "text": "Start the 15-minute checks but leave the restraints tied to the side rails, which is how the bed was already set up.",
+              "next": "end",
+              "feedback": "The checks are right and the anchor point is wrong. When someone lowers that rail to reach the patient, the tied limb goes with it, which has produced dislocated shoulders and crushed hands. Move them to the frame now.",
+              "score": 0
+            }
+          ]
+        }
+      ],
+      "debrief": "The whole case is one idea: climb the ladder one rung at a time, and step back down the moment you can.\n\nRung one was the environment, and it was free. Television, lights, and the audience in the doorway accounted for a large share of the agitation before anyone said a word. Rung two was contact and wants, which is where most of these end. Rung three was reflect, agree with what is true, state honestly what you cannot do, and offer two real choices.\n\nWhen it went physical, the order of your actions was position, help, voice. Never block an exit, never match volume, never state a legal status you do not control. A team assembled well is a show of support: spread out, quiet, one speaker, exit clear.\n\nAnd when restraint finally happened, five things had to be true: supine, head elevated, no weight on the torso, tied to the frame, quick-release, followed by 15-minute checks and eyes on the airway after sedation. Each one is on that list because someone died when it was not.\n\nOne more thing worth carrying: his heart rate was 108 and his blood pressure 146 over 88 on an intoxicated man with a head laceration. Agitation in that patient is a vital sign, not a personality, and the medical causes get excluded no matter how much the behavior looks like anger."
+    },
+    {
+      "id": "ed-psych-deescalation-s02",
+      "title": "The quiet one in the waiting room",
+      "setting": "ed",
+      "intro": "1540. A slow-ish Tuesday. You are covering the triage side, taking repeat vitals on waiting room patients per the department's reassessment policy.\n\nChair 12: a woman in her late twenties, registered at 1420 for 'left wrist pain' after what she told triage was a fall. ESI 4. She has a sweatshirt sleeve pulled down over her left hand, is sitting very still, and has not looked up or checked the time once in the twenty minutes you have been in the room.\n\nHer mother is in the chair beside her, on her phone. Nobody has said anything about anything except the wrist.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "You sit down to take her repeat vitals. What do you notice and what do you do with it?",
+          "choices": [
+            {
+              "text": "Take the vitals, and while you do, ask to see the wrist so you can position the cuff on the other arm. Note whether the injury matches 'a fall,' and stay unhurried.",
+              "next": "s2",
+              "feedback": "A legitimate clinical reason to see the arm, no confrontation, no accusation. Wrist injuries with a vague mechanism in a very still, withdrawn patient are worth a careful look.",
+              "score": 1
+            },
+            {
+              "text": "Take the vitals on the right arm without comment and move to the next patient; she is an ESI 4 with a wrist complaint.",
+              "next": "s2",
+              "feedback": "This is exactly how the quiet ones get missed. The stillness, the covered hand and the absent clock-watching are all data, and the acuity level assigned at 1420 was based on what she chose to say.",
+              "score": -1
+            },
+            {
+              "text": "Ask her directly in front of her mother whether she hurt herself on purpose.",
+              "next": "s2",
+              "feedback": "The instinct to ask is right and the setting is wrong. In front of a family member, in a waiting room, with no privacy, almost guarantees a no and closes the door for everyone after you.",
+              "score": -1
+            },
+            {
+              "text": "Pull the nurse aside first and report that something feels off before you interact with her.",
+              "next": "s2",
+              "feedback": "Telling the nurse is never wrong and it is premature here; you have an impression and no information. Gather the vitals and look at the arm first, then you have something to report.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "She lets you move the sleeve. There are four parallel superficial cuts on the volar forearm, not bleeding, and older scars in the same place. She says quietly, \"I fell.\" Her mother has not looked up.",
+          "vitals": { "hr": 92, "bp": "118/74", "rr": 16, "spo2": 99 },
+          "choices": [
+            {
+              "text": "Say nothing about the mechanism, finish gently, and find a way to speak with her alone: \"I'm going to walk you back to get a quick weight, it's just down the hall.\"",
+              "next": "s3",
+              "feedback": "You have created privacy with an ordinary, true reason and no confrontation. Nothing useful is going to be said in front of a family member she has not told.",
+              "score": 1
+            },
+            {
+              "text": "Say, \"These don't look like a fall,\" so she knows you know.",
+              "next": "s3",
+              "feedback": "You are right and it lands as a challenge in front of her mother. She now has to defend the story publicly, and defending it makes it harder to abandon later.",
+              "score": -1
+            },
+            {
+              "text": "Tell the mother privately what you saw so she can watch her daughter.",
+              "next": "s3",
+              "feedback": "Well-meant and out of order. Disclosure to family is a clinical decision, the patient is an adult, and it can be unsafe if the family is part of why she is here. Report to the nurse, not the family.",
+              "score": -1
+            },
+            {
+              "text": "Finish the vitals and report what you saw to the nurse immediately, without trying to get her alone.",
+              "next": "s3",
+              "feedback": "Reporting is essential and this scores well. Creating two minutes of privacy first costs nothing and often produces the information the whole team needs, which is why the better option adds it.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "In the hallway by the scale, alone, she is quiet. You have maybe ninety seconds.",
+          "choices": [
+            {
+              "text": "\"I'm not going to make a thing of this in front of your mom. I have to ask you directly, because we ask everyone: are you having any thoughts of killing yourself?\"",
+              "next": "s4",
+              "feedback": "Direct, plain, normalized, and private. Asking does not plant the idea; it is frequently the first time anyone has said the word out loud, and the plain version gets a truer answer than a softened one.",
+              "score": 1
+            },
+            {
+              "text": "\"You know you can talk to me, right? Is everything okay at home?\"",
+              "next": "s4",
+              "feedback": "Kind and too vague to be useful. 'Is everything okay' is answered yes by almost everyone, and your ninety seconds are gone. Ask the actual question.",
+              "score": 0
+            },
+            {
+              "text": "\"You're not trying to hurt yourself, are you?\"",
+              "next": "s4",
+              "feedback": "A leading question phrased for the answer you want to hear. It signals what you would prefer her to say, and patients oblige. Ask it neutrally and directly.",
+              "score": -1
+            },
+            {
+              "text": "Say nothing and let the nurse ask; it is not your question to ask.",
+              "next": "s4",
+              "feedback": "Whether you administer a formal screening tool depends on your department, but the plain question is not restricted, and you are the person standing there with privacy right now. Silence forfeits the moment.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "She looks at the floor and says, \"Sometimes. I took a bunch of my mom's pills on Sunday but I threw up. I didn't tell anyone.\" She starts to cry.",
+          "choices": [
+            {
+              "text": "Stay with her, do not leave her alone, and get the nurse to you now, by calling out or using the nearest phone. Tell her that you are glad she said it and that you are going to get her the right person.",
+              "next": "s5",
+              "feedback": "An attempt three days ago and current ideation is a high-risk disclosure. The two things that matter this minute are that she is not left alone and that a nurse hears it immediately, in person.",
+              "score": 1
+            },
+            {
+              "text": "Walk her back to the waiting room and go find the nurse to report it.",
+              "next": "s5",
+              "feedback": "You have just returned a patient who has disclosed a recent attempt to an unmonitored waiting room and then left her there. Report is right; the order is wrong. Do not separate from her.",
+              "score": -1
+            },
+            {
+              "text": "Ask her more about the pills: what they were, how many, and whether she still wants to die.",
+              "next": "s5",
+              "feedback": "The information matters and the clinician gathers it. Prolonging the interview delays escalation, and it risks her having to tell the story twice, which many patients will not do.",
+              "score": 0
+            },
+            {
+              "text": "Promise her you will not tell her mother, so she keeps talking.",
+              "next": "s5",
+              "feedback": "Never promise confidentiality you cannot control. This has to go to the team immediately, and a broken promise at this moment costs her trust in everyone who follows you.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "The nurse comes. The patient is moved to a safe room, re-triaged, and placed on constant observation. You are asked to do the search and stay with her until the sitter arrives. Her mother is asking what is happening.",
+          "choices": [
+            {
+              "text": "Explain the search to the patient before starting, do it per policy with a second staff member, inventory everything in writing, and tell the mother that her nurse will be out to talk with her.",
+              "next": "end",
+              "feedback": "Trauma-informed and correct. Explaining first, a second staff member, and a signed inventory protect the patient and you, and family questions route to the nurse rather than to you.",
+              "score": 1
+            },
+            {
+              "text": "Do the search quickly and alone so it is less humiliating for her, and tell the mother what her daughter disclosed.",
+              "next": "end",
+              "feedback": "Two errors. A search alone leaves you with no witness to the inventory, and disclosing to family is a clinical decision that is not yours and may not be safe.",
+              "score": -1
+            },
+            {
+              "text": "Skip the search since you already know how she hurt herself and she seems cooperative, and just stay with her.",
+              "next": "end",
+              "feedback": "Cooperation is not safety, and means restriction is the single most effective thing available to you. A handful of pills or a razor in a pocket is exactly what the search is for.",
+              "score": -1
+            },
+            {
+              "text": "Explain and perform the search with a second staff member, but leave her briefly to walk the inventory bag to the locked storage.",
+              "next": "end",
+              "feedback": "The search is right and the trip is not. She is on constant observation from the moment it is ordered, and you hand off in person to the sitter before you go anywhere.",
+              "score": 0
+            }
+          ]
+        }
+      ],
+      "debrief": "Everything in this case turned on noticing. A still, withdrawn ESI 4 with a covered hand and a vague mechanism does not register as an emergency, which is precisely why these patients die in waiting rooms.\n\nThe sequence that worked: find an ordinary reason to look, find an ordinary reason to create privacy, ask the plain question, and then do two things at once, stay with her and get the nurse.\n\nAsk it directly. 'Are you having any thoughts of killing yourself' gets a truer answer than 'you're not trying to hurt yourself, are you,' which tells the patient what you want to hear. Asking does not plant the idea, and for many people it is the first time anyone has said it out loud.\n\nA recent attempt is the strongest predictor there is, and hers was three days ago and unreported. From the moment she said it, she is not left alone, not returned to a waiting room, and not promised confidentiality that nobody can keep.\n\nThen the unglamorous part that actually saves lives: a room stripped of ligatures, a search done with dignity and a second staff member, a signed inventory, and a person in the room. Means restriction is not a formality. It is the intervention."
+    }
+  ]
+}

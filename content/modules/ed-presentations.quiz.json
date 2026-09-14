@@ -1,0 +1,1018 @@
+{
+  "schema": 1,
+  "extends": "ed-presentations",
+  "checks": {
+    "ed-presentations-l01": [
+      {
+        "q": "A chest pain patient arrives at 14:02. You get leads on skin at 14:06 and the tracing prints at 14:08. What still has to happen, and by when?",
+        "choices": [
+          "Nothing; the ECG is done and the time target is met",
+          "The tracing has to be physically handed to a provider, and the whole sequence is supposed to be finished by 14:12",
+          "The tracing goes in the chart and a provider will find it during their next round",
+          "Wait for the troponin to result, then bring both to the provider together"
+        ],
+        "answer": 1,
+        "why": "The `10 minute` target is arrival to a tracing in a provider's hands, not arrival to a tracing printed. An ECG sitting on the machine or scanned into the chart has not been interpreted, and waiting for troponin adds hours to a decision the ECG can make in seconds."
+      },
+      {
+        "q": "A 67-year-old with chest pain has an ECG that shows no ST elevation. His pain is unchanged twenty minutes later. What is the correct action?",
+        "choices": [
+          "Repeat the ECG and tell the provider the pain is ongoing",
+          "Reassure him that his heart looks fine on the tracing",
+          "Wait for the 3-hour troponin before doing anything else",
+          "Remove the monitor since the tracing was non-diagnostic"
+        ],
+        "answer": 0,
+        "why": "About a third of confirmed infarcts have a non-diagnostic first tracing, so serial ECGs exist exactly for this patient. Reassurance is not yours to give, waiting three hours wastes the window, and taking the monitor off a patient with active chest pain removes the thing that would catch an arrhythmia."
+      }
+    ],
+    "ed-presentations-l02": [
+      {
+        "q": "A provider orders a nebulized albuterol treatment. You set it up at `2 L/min` and it mists weakly. What went wrong?",
+        "choices": [
+          "Nothing; the flow rate does not affect a nebulizer",
+          "The mask is the wrong size for the flow selected",
+          "Nebulizers need `6-8 L/min` to aerosolize the drug; at `2 L/min` much of the dose never reaches the lungs",
+          "The drug needs to be diluted further before it will nebulize"
+        ],
+        "answer": 2,
+        "why": "A nebulizer needs `6-8 L/min` of driving gas to break the liquid into a breathable mist, and a full treatment runs `10-15 minutes`. Mask size and dilution do not fix an underpowered flow rate, and the idea that flow does not matter is exactly the error that under-doses an asthmatic."
+      },
+      {
+        "q": "Which of these breathless patients should worry you most right now?",
+        "choices": [
+          "Saturation `91%`, speaking in full sentences, respiratory rate `24`",
+          "Saturation `88%` on `2 L`, sitting upright, answering in short phrases",
+          "Saturation `94%`, quiet, head nodding, too tired to answer you",
+          "Saturation `90%`, tripoding, loudly complaining he wants to go home"
+        ],
+        "answer": 2,
+        "why": "A quiet, exhausted patient with a normal-looking saturation is the one closest to respiratory arrest; work of breathing has stopped because the muscles have failed, not because the problem resolved. The talkative tripoding patient and the ones speaking in phrases are still moving air, and a saturation number alone never outranks the ability to speak."
+      }
+    ],
+    "ed-presentations-l03": [
+      {
+        "q": "A patient with abdominal pain is ordered oral contrast for CT at 13:00. The scan is booked for 13:30. What do you tell the provider?",
+        "choices": [
+          "Nothing; oral contrast works immediately once swallowed",
+          "Oral contrast needs `1-2 hours` to drink and travel, so the 13:30 slot is not realistic",
+          "The contrast can be given rectally instead to save time",
+          "Skip the contrast and scan without it"
+        ],
+        "answer": 1,
+        "why": "Oral contrast takes `1-2 hours` to drink and move through the bowel, so starting it late is the single most common cause of a delayed abdominal CT. Changing the route or dropping the contrast is a provider decision, not a workaround for a scheduling problem you should simply flag."
+      },
+      {
+        "q": "A 19-year-old man reports one hour of severe left testicular pain and vomiting. He is in the waiting room. What do you do?",
+        "choices": [
+          "Add him to the queue for a urinalysis and continue your current task",
+          "Reassure him and recheck in an hour",
+          "Get him a warm pack and a chair in a quiet corner",
+          "Tell the charge nurse now; torsion has roughly a `6 hour` window and needs ultrasound with flow"
+        ],
+        "answer": 3,
+        "why": "Torsion is a clock: the testicle is usually salvageable inside about `6 hours`, and the test that answers it is an ultrasound showing blood flow. A urinalysis, a warm pack and a recheck in an hour all spend the window that decides whether the organ survives."
+      }
+    ],
+    "ed-presentations-l04": [
+      {
+        "q": "A stroke alert patient's point-of-care glucose is `38 mg/dL`. What does that change?",
+        "choices": [
+          "Nothing; the CT still goes first because time is brain",
+          "Hypoglycemia mimics stroke exactly and gets treated now; the deficit may resolve",
+          "It confirms the stroke, because strokes lower blood sugar",
+          "It means thrombolytics can be given without the CT"
+        ],
+        "answer": 1,
+        "why": "Low blood sugar reproduces focal deficits perfectly and is fixed in minutes, which is why glucose is checked before anything else. Strokes do not cause hypoglycemia, and no finding ever lets thrombolytics be given before a CT has ruled out blood."
+      },
+      {
+        "q": "Forty minutes after thrombolytics, a stroke patient vomits and complains of a new severe headache. Her blood pressure has risen from `152/88` to `196/104`. What is the concern and the action?",
+        "choices": [
+          "A migraine from the medication; dim the lights and recheck in an hour",
+          "Expected post-thrombolytic nausea; give the ordered antiemetic and continue",
+          "Bleeding into the brain; tell the provider immediately and keep the 15-minute neuro checks going",
+          "Dehydration; bolus fluids and recheck the pressure"
+        ],
+        "answer": 2,
+        "why": "New headache, vomiting, a falling level of consciousness or a rising blood pressure after thrombolytics are the classic signs of intracranial hemorrhage, which is why neuro checks run every `15 minutes` for the first two hours. Treating it as a migraine, routine nausea or dehydration delays the one thing that matters, which is a repeat CT and a provider at the bedside."
+      }
+    ],
+    "ed-presentations-l05": [
+      {
+        "q": "A septic patient's first lactate is `4.8`. The team resuscitates. When is the lactate rechecked and why?",
+        "choices": [
+          "In `2-4 hours`; a falling lactate says the resuscitation is working",
+          "In `12 hours`, with the morning labs",
+          "Only if the blood pressure drops again",
+          "Immediately after the fluid bolus finishes, to confirm clearance"
+        ],
+        "answer": 0,
+        "why": "An elevated lactate is repeated at `2-4 hours` because the trend, not the single value, tells you whether tissue is getting oxygen again. Waiting for morning or for another drop in pressure wastes the window, and a lactate drawn the instant a bolus ends has not had time to change."
+      },
+      {
+        "q": "You are told to hunt for the source of infection in a confused, hypotensive `78-year-old` with a dialysis catheter. Which is the site most likely to be overlooked?",
+        "choices": [
+          "The lungs",
+          "The urine",
+          "The dialysis catheter itself",
+          "The abdomen"
+        ],
+        "answer": 2,
+        "why": "Lines and hardware are the fifth source on the list and the one people forget, yet a tunneled dialysis catheter is a direct highway into the bloodstream. Lungs, urine and abdomen are searched almost reflexively; the catheter gets missed because it looks like equipment rather than a wound."
+      }
+    ],
+    "ed-presentations-l06": [
+      {
+        "q": "During a log roll, who calls the count?",
+        "choices": [
+          "The team leader standing at the foot of the bed",
+          "The person controlling the head",
+          "The person examining the back",
+          "Whoever is closest to the monitor"
+        ],
+        "answer": 1,
+        "why": "The person holding the head controls the cervical spine and therefore sets the timing, so the whole body moves as one unit with the neck. If anyone else counts, the torso can move before or after the head, which is exactly the motion a log roll exists to prevent."
+      },
+      {
+        "q": "A trauma patient received tranexamic acid `2 hours` after his crash. Why does the timing get documented?",
+        "choices": [
+          "Because TXA has to be repeated exactly every two hours",
+          "Because TXA cannot be given with blood products",
+          "Because TXA is only useful early, generally within `3 hours` of injury",
+          "Because TXA doses are calculated from time since injury"
+        ],
+        "answer": 2,
+        "why": "TXA stabilizes clots that have already formed and reduces death from bleeding when given early, generally inside `3 hours`; given later it does not help and may harm. It is given alongside blood products, it is not dosed off the clock, and its repeat schedule is not a fixed two-hour rule."
+      }
+    ],
+    "ed-presentations-l07": [
+      {
+        "q": "An overdose patient given naloxone wakes fully, then two hours later is sleepy again with a respiratory rate of `8`. What happened?",
+        "choices": [
+          "Naloxone wore off before the opioid did; she needs to be reassessed and redosed",
+          "She took more drug while in the department",
+          "Naloxone causes rebound sedation as a side effect",
+          "This is normal recovery sleep and can be left alone"
+        ],
+        "answer": 0,
+        "why": "Naloxone's duration is shorter than most opioids, so re-sedation is expected and is the reason these patients are monitored rather than discharged when they wake. Naloxone does not cause rebound sedation, and a respiratory rate of `8` is never dismissed as normal sleep."
+      },
+      {
+        "q": "You are about to enter the room of an agitated patient. Which setup is correct?",
+        "choices": [
+          "Go in alone first so the patient is not overwhelmed by numbers",
+          "Stand between the patient and the door so they cannot leave",
+          "Keep an exit behind you, remove your stethoscope and lanyard, and bring a second person",
+          "Wait outside until security has the patient in restraints"
+        ],
+        "answer": 2,
+        "why": "The safe position keeps your own exit clear, removes anything around your neck that can be grabbed, and never involves going in alone. Blocking the patient's exit escalates them, and waiting for restraints skips the verbal de-escalation that settles most agitation."
+      }
+    ],
+    "ed-presentations-l08": [
+      {
+        "q": "A patient's orthostatic readings are supine `128/78` with a heart rate of `72`, then at 3 minutes standing `118/70` with a heart rate of `106`. Is this positive?",
+        "choices": [
+          "No; the systolic dropped only `10 mmHg`",
+          "No; orthostatics are only positive on the 1-minute reading",
+          "Yes; the heart rate rose `34`, which exceeds the `30` threshold",
+          "Cannot say without a diastolic drop of `10`"
+        ],
+        "answer": 2,
+        "why": "Any one of the three criteria makes the test positive: a `20 mmHg` systolic drop, a `10 mmHg` diastolic drop, or a heart rate rise of `30`. Here the rate rose `34`, so the small pressure change does not matter, and the 3-minute reading counts just as much as the 1-minute one."
+      },
+      {
+        "q": "A `68-year-old` woman reports a new one-sided headache, scalp soreness when she brushes her hair, and jaw aching when she chews. What is the concern and what lab goes with it?",
+        "choices": [
+          "Temporal arteritis, which can blind her; an ESR or CRP is drawn",
+          "Migraine; no lab is needed",
+          "Meningitis; blood cultures are drawn",
+          "Carbon monoxide; a carboxyhemoglobin level is drawn"
+        ],
+        "answer": 0,
+        "why": "Age over `50` with scalp tenderness, jaw claudication and visual change is temporal arteritis, and the inflammatory markers ESR and CRP are the screening labs. Migraine does not cause jaw pain with chewing, meningitis brings fever and neck stiffness, and carbon monoxide typically sickens several people in one household at once."
+      }
+    ],
+    "ed-presentations-l09": [
+      {
+        "q": "An infant's axillary temperature reads `37.8°C`. The baby is `19 days old`. What do you do?",
+        "choices": [
+          "Chart it as afebrile and move on",
+          "Repeat rectally, because axillary readings are not accurate enough for this decision",
+          "Add `1°C` to the axillary reading and chart the result",
+          "Repeat tympanically for a more reliable number"
+        ],
+        "answer": 1,
+        "why": "In this age group rectal is the only route accurate enough to drive a workup that includes a lumbar puncture, so a borderline axillary reading gets repeated rectally. Adding a correction factor invents a number, and tympanic readings are also unreliable in young infants."
+      },
+      {
+        "q": "A `61-year-old` with two days of back pain has a temperature of `38.6°C` and a history of injection drug use. Why does this combination change the plan?",
+        "choices": [
+          "It suggests a muscle strain with a coincidental viral illness",
+          "It means the pain is chronic and needs outpatient follow-up",
+          "Fever and injection drug use raise concern for spinal epidural abscess or vertebral infection",
+          "It rules out cauda equina syndrome"
+        ],
+        "answer": 2,
+        "why": "Fever plus injection drug use is the classic red flag pair for epidural abscess or discitis, which needs imaging and antibiotics rather than a muscle-strain pathway. Nothing about infection rules out cauda equina, and this is the opposite of an outpatient problem."
+      }
+    ],
+    "ed-presentations-l10": [
+      {
+        "q": "A DKA patient's hourly fingerstick comes back at `238 mg/dL`, down from `410`. What do you report and why?",
+        "choices": [
+          "Nothing; the number is improving as expected",
+          "Report it now; under `250` the fluids typically get dextrose added so the insulin drip can continue safely",
+          "Report it now so the insulin drip can be stopped",
+          "Recheck in an hour to confirm the trend before reporting"
+        ],
+        "answer": 1,
+        "why": "The insulin drip has to keep running to close the acid gap, so when glucose falls under about `250` dextrose is added to the fluids rather than stopping the insulin. Sitting on the value or waiting another hour lets the patient slide into hypoglycemia while the drip keeps going."
+      },
+      {
+        "q": "A patient given IM epinephrine for anaphylaxis improves and wants to leave after `45 minutes`. What is the issue?",
+        "choices": [
+          "He needs a prescription first, which takes about an hour",
+          "Epinephrine has to fully wear off before discharge",
+          "Symptoms can return hours later as a biphasic reaction, so observation runs `4-6 hours` or longer",
+          "He needs a repeat epinephrine dose before he can go"
+        ],
+        "answer": 2,
+        "why": "A biphasic reaction brings the whole syndrome back after the first episode resolves, which is why observation typically runs `4-6 hours` or longer by severity. Repeat epinephrine is given only for returning symptoms, and neither the prescription nor the drug wearing off is the reason to stay."
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "id": "ed-presentations-q035",
+      "q": "A 54-year-old man walks up to the triage window at 19:14 and says his chest feels like someone is sitting on it. The waiting room has eleven people in it and no rooms are open. What do you do first?",
+      "choices": [
+        "Bring the ECG machine to him and obtain a 12-lead where he stands",
+        "Register him, then place him in the next available room",
+        "Take a full set of vitals and pass the numbers to triage",
+        "Give him aspirin from the triage stock and seat him in the front row"
+      ],
+      "answer": 0,
+      "why": "The `10 minute` arrival-to-ECG clock starts the moment he says chest pain, and it does not pause for registration or room availability, so the machine comes to him. Vitals are useful but do not diagnose an infarct, a room may be twenty minutes away, and aspirin is given after a provider has seen the tracing and cleared contraindications.",
+      "lesson": "ed-presentations-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q036",
+      "q": "A 60-year-old with chest pain has a room-air saturation of 96%. A new technician applies a non-rebreather at 15 L/min. What is the problem with this?",
+      "choices": [
+        "The flow rate is too high for a non-rebreather",
+        "Nothing; all chest pain patients receive high-flow oxygen",
+        "Routine oxygen in a patient who is not hypoxic does not help and may worsen the infarct",
+        "A nasal cannula would deliver more oxygen at that saturation"
+      ],
+      "answer": 2,
+      "why": "Oxygen in suspected ACS is given only for a saturation under `90%`; supplemental oxygen in a non-hypoxic patient has been shown not to help and may increase infarct size through vasoconstriction. `15 L/min` is the correct flow for a non-rebreather when one is indicated, a cannula delivers less, and the old routine of oxygen for everyone has been retired.",
+      "lesson": "ed-presentations-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q037",
+      "q": "A patient with chest pain has a first high-sensitivity troponin of 14 ng/L. The provider orders a repeat. Why is the second value the one that decides?",
+      "choices": [
+        "The first draw is often hemolyzed and unreliable",
+        "The change between the two draws distinguishes acute injury from a chronically elevated baseline",
+        "Troponin only becomes detectable after 6 hours",
+        "The second draw is run on a more sensitive analyzer"
+      ],
+      "answer": 1,
+      "why": "High-sensitivity troponin is repeated at `1-3 hours` because a rising or falling delta separates acute myocardial injury from patients who simply live at a slightly elevated level, such as those with kidney disease. Modern assays detect troponin well before six hours, both draws use the same analyzer, and hemolysis is a sample problem rather than the reason for serial testing.",
+      "lesson": "ed-presentations-l01",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-presentations-q038",
+      "q": "A 49-year-old with severe chest pain has a blood pressure of 176/98 in the right arm. Which additional measurement is most important to obtain?",
+      "choices": [
+        "A standing blood pressure",
+        "A thigh blood pressure",
+        "A repeat right-arm pressure with a larger cuff",
+        "A left-arm blood pressure"
+      ],
+      "answer": 3,
+      "why": "A difference between the arms is a clue to aortic dissection, so bilateral arm pressures are standard when dissection is on the differential. Standing pressures test volume status rather than the aorta, a thigh pressure is not the routine comparison, and re-cuffing the same arm gives you a second number about the same vessel.",
+      "lesson": "ed-presentations-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q039",
+      "q": "A 38-year-old woman has sudden sharp chest pain that is worse when she takes a deep breath, a heart rate of 112, and a saturation of 93%. She returned from a long flight yesterday. Which can't-miss diagnosis fits best?",
+      "choices": [
+        "Pulmonary embolism",
+        "Esophageal rupture",
+        "Cardiac tamponade",
+        "Acute coronary syndrome"
+      ],
+      "answer": 0,
+      "why": "Sudden pleuritic pain with tachycardia, mild hypoxia and recent immobility is the classic PE story, and the workup turns on D-dimer or CT pulmonary angiogram. Esophageal rupture follows violent vomiting, tamponade presents with hypotension and muffled heart sounds rather than pleuritic pain, and ACS pain is usually pressure that does not change with breathing.",
+      "lesson": "ed-presentations-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q040",
+      "q": "A breathless patient is brought in by wheelchair. Before anything else, what position do you put him in?",
+      "choices": [
+        "Supine for an accurate blood pressure",
+        "Upright, because lying flat worsens the work of breathing",
+        "Left lateral recovery position",
+        "Trendelenburg to improve venous return"
+      ],
+      "answer": 1,
+      "why": "Sitting a breathless patient upright unloads the diaphragm and lets accessory muscles work, and it is the single fastest intervention you control. Supine positioning for a blood pressure trades the patient's breathing for your convenience, recovery position is for the unresponsive, and Trendelenburg pushes abdominal contents against the diaphragm.",
+      "lesson": "ed-presentations-l02",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-presentations-q041",
+      "q": "A patient with pulmonary edema from heart failure is tiring on a non-rebreather. Respiratory therapy is at the bedside. What is the intervention most likely to keep her off a ventilator?",
+      "choices": [
+        "Increasing the non-rebreather flow to 20 L/min",
+        "A nebulized albuterol treatment",
+        "Non-invasive ventilation with CPAP or BiPAP",
+        "Placing her supine to reduce oxygen demand"
+      ],
+      "answer": 2,
+      "why": "Non-invasive ventilation pushes fluid out of the alveoli and does much of the work of breathing, and it keeps a large fraction of CHF and COPD patients off a ventilator. A non-rebreather cannot exceed its own delivery ceiling regardless of flow, albuterol treats bronchospasm rather than alveolar fluid, and lying her flat makes the edema worse.",
+      "lesson": "ed-presentations-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q042",
+      "q": "You are asked for the respiratory rate on a breathless patient. What is the correct method?",
+      "choices": [
+        "Count for 30 seconds and double it",
+        "Read the number from the cardiac monitor",
+        "Count for 10 seconds and multiply by six",
+        "Estimate from how quickly the patient is speaking"
+      ],
+      "answer": 0,
+      "why": "A real rate is counted for `30 seconds` and doubled, which is accurate enough without taking a full minute. The monitor's impedance-derived rate is easily fooled by motion and by shallow breaths, a 10-second count multiplies every error by six, and estimating from speech is not a measurement.",
+      "lesson": "ed-presentations-l02",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-presentations-q043",
+      "q": "A 71-year-old with COPD is on 4 L nasal cannula with a saturation of 96%. He is becoming drowsy and harder to rouse. What is the most likely explanation?",
+      "choices": [
+        "He is finally comfortable and falling asleep",
+        "The pulse oximeter is reading an artifact",
+        "He needs more oxygen, not less",
+        "Too much oxygen has worsened his carbon dioxide retention"
+      ],
+      "answer": 3,
+      "why": "A known retainer targets `88-92%`, and pushing the saturation to `96%` can blunt his drive to breathe and raise carbon dioxide, which shows up as drowsiness. A sat of `96%` is not an artifact pattern, more oxygen deepens the problem, and new somnolence in a COPD patient is never simply comfort.",
+      "lesson": "ed-presentations-l02",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-presentations-q044",
+      "q": "Which handoff about a breathless patient gives the provider the most useful information?",
+      "choices": [
+        "\"Room 6 is short of breath, sat is 91 percent.\"",
+        "\"Room 6 is tripoding, can say three words at a time, sat 91 percent on room air, rate 32.\"",
+        "\"Room 6 looks bad, you should see her.\"",
+        "\"Room 6 has a history of COPD and asthma and smokes a pack a day.\""
+      ],
+      "answer": 1,
+      "why": "Work of breathing plus a real rate plus the saturation with its delivery device is the combination that tells a provider how close this patient is to failing. A bare saturation omits effort, a vague impression cannot be acted on, and past history does not describe the patient in front of you right now.",
+      "lesson": "ed-presentations-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q045",
+      "q": "An 81-year-old with atrial fibrillation has severe diffuse abdominal pain for two hours. His abdomen is soft and barely tender to your touch. What does this pattern suggest?",
+      "choices": [
+        "Constipation, given the soft abdomen",
+        "Mesenteric ischemia, where pain is out of proportion to the exam",
+        "Musculoskeletal strain",
+        "Early appendicitis"
+      ],
+      "answer": 1,
+      "why": "Pain out of proportion to a benign abdomen in an older patient with atrial fibrillation is the textbook mesenteric ischemia presentation, and the rhythm is the likely clot source. Constipation and strain do not produce severe sudden pain in this setting, and appendicitis migrates to the right lower quadrant with focal tenderness.",
+      "lesson": "ed-presentations-l03",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-presentations-q046",
+      "q": "A 77-year-old man has sudden back and flank pain and a blood pressure of 88/52. CT is ordered. What is the most important consideration about transport?",
+      "choices": [
+        "He does not go to the scanner alone; this is a possible AAA and can decompensate in minutes",
+        "He can be wheeled down by a transporter once the IV is in",
+        "He should walk to the scanner to maintain mobility",
+        "The scan should be delayed until the pressure normalizes"
+      ],
+      "answer": 0,
+      "why": "An older patient with back or flank pain and hypotension is a leaking abdominal aortic aneurysm until imaging says otherwise, and that patient travels monitored with staff who can act. Sending him with a transporter or on foot puts a potential rupture in a hallway, and waiting for the pressure to improve wastes the only minutes he has.",
+      "lesson": "ed-presentations-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q047",
+      "q": "A patient with epigastric pain radiating to the back after a weekend of heavy drinking is being worked up. Which lab is most specific for the likely diagnosis?",
+      "choices": [
+        "Amylase",
+        "Alkaline phosphatase",
+        "Lipase",
+        "Lactate dehydrogenase"
+      ],
+      "answer": 2,
+      "why": "Lipase is the test for pancreatitis and has largely replaced amylase, which rises in many other conditions and is far less specific. Alkaline phosphatase points at the biliary tree, and lactate dehydrogenase is a nonspecific marker of tissue injury.",
+      "lesson": "ed-presentations-l03",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-presentations-q048",
+      "q": "Two patients with abdominal pain are in adjacent rooms. One lies completely still and asks you not to bump the bed. The other cannot get comfortable and keeps shifting. What does the difference suggest?",
+      "choices": [
+        "The one lying still is comfortable; the one moving is in more pain",
+        "Both patterns are equivalent and carry no diagnostic meaning",
+        "The one lying still is likely peritoneal; the writhing one suggests a stone or obstruction",
+        "The one moving is likely peritoneal; the still one is likely anxious"
+      ],
+      "answer": 2,
+      "why": "Peritoneal irritation makes any movement hurt, so those patients hold perfectly still, while colicky pain from a stone or obstruction drives constant repositioning. Stillness here is not comfort, the patterns are genuinely diagnostic, and the assignment is the reverse of the fourth option.",
+      "lesson": "ed-presentations-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q049",
+      "q": "A patient with abdominal pain has been NPO for four hours and asks for ice chips because her mouth is dry. What is the correct response?",
+      "choices": [
+        "Give a small cup of ice chips; they are not fluid",
+        "Offer oral swabs and check with the nurse or provider before anything goes in her mouth",
+        "Give water since the CT is already finished",
+        "Tell her she cannot have anything and leave the room"
+      ],
+      "answer": 1,
+      "why": "Ice chips are fluid once they melt, and a patient who may go to the operating room needs an empty stomach, so the answer is comfort measures plus confirmation from the clinician who owns the order. Giving ice or water on your own can delay surgery or risk aspiration, and refusing without offering an alternative treats a real symptom as a nuisance.",
+      "lesson": "ed-presentations-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q050",
+      "q": "A stroke alert patient's family is about to leave for the parking garage. What must you get from them first?",
+      "choices": [
+        "Consent for the CT scan",
+        "The insurance card and pharmacy information",
+        "The exact last known well time, who witnessed it, and a phone number",
+        "A list of the patient's allergies"
+      ],
+      "answer": 2,
+      "why": "Last known well decides whether thrombolytics or thrombectomy are even options, and once the family leaves that time may be unrecoverable, so it is captured with the witness and a callback number. Allergies and insurance matter but can be obtained later or from the chart, and CT does not wait on family consent.",
+      "lesson": "ed-presentations-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q051",
+      "q": "A patient with a large-vessel occlusion is 9 hours from last known well. The family is told he is outside the thrombolytic window. What treatment may still be available?",
+      "choices": [
+        "Thrombectomy, which extends to 24 hours in selected large-vessel occlusions",
+        "Nothing further; supportive care only",
+        "A double-dose thrombolytic",
+        "Thrombolytics given directly into the artery up to 12 hours"
+      ],
+      "answer": 0,
+      "why": "Mechanical thrombectomy physically removes the clot and can be offered out to `24 hours` in carefully selected large-vessel occlusions, which is why CT angiography is part of the workup. The thrombolytic window is `4.5 hours` and is not extended by doubling the dose or changing the route, and calling it supportive care only writes off a treatable patient.",
+      "lesson": "ed-presentations-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q052",
+      "q": "A stroke patient who has not had thrombolytics has a blood pressure of 198/104. A colleague says it should be brought down immediately. What is the reasoning against that?",
+      "choices": [
+        "Blood pressure in stroke is never treated",
+        "In a patient not receiving thrombolytics the pressure is often deliberately left high, because it perfuses the threatened brain",
+        "The cuff is probably wrong at that pressure",
+        "Lowering it would invalidate the CT"
+      ],
+      "answer": 1,
+      "why": "Permissive hypertension keeps blood moving through collateral vessels into the at-risk tissue, so pressure is not routinely lowered when no thrombolytic is given. Pressure is absolutely treated when thrombolytics are planned, where the target is under `185/110` before and under `180/105` after, and imaging is unaffected by blood pressure.",
+      "lesson": "ed-presentations-l04",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-presentations-q053",
+      "q": "During a stroke alert the nurse asks you to draw labs while the provider prepares to move the patient to CT. Which result is the only one that must return before treatment decisions proceed?",
+      "choices": [
+        "The coagulation studies",
+        "The complete blood count",
+        "The troponin",
+        "The glucose"
+      ],
+      "answer": 3,
+      "why": "Only the glucose holds anything up, because hypoglycemia mimics stroke and is fixed in minutes; the rest are drawn on the way and chased afterward. Coagulation studies, CBC and troponin all matter to the overall picture but waiting on them would burn the treatment window.",
+      "lesson": "ed-presentations-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q054",
+      "q": "A patient two hours post-thrombolytic asks for her morning pills with a sip of water. She has not had a swallow screen. What do you do?",
+      "choices": [
+        "Keep her NPO and tell the nurse the swallow screen has not been done",
+        "Give the pills with a small sip since it is only water",
+        "Crush the pills and give them in applesauce",
+        "Let her try a sip and watch for coughing"
+      ],
+      "answer": 0,
+      "why": "Stroke patients aspirate silently, without coughing, which is exactly why a formal swallow screen is required before anything by mouth. A small sip, a food vehicle, or watching for a cough all assume a protective reflex that this patient may not have.",
+      "lesson": "ed-presentations-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q055",
+      "q": "In a suspected sepsis room, the antibiotic arrives from pharmacy before you have finished the blood cultures. What is the correct action?",
+      "choices": [
+        "Give the antibiotic; the one-hour clock outranks the cultures",
+        "Draw one culture set, give the antibiotic, and draw the second set afterward",
+        "Finish both culture sets immediately, then give the antibiotic",
+        "Hold the antibiotic until the lactate results"
+      ],
+      "answer": 2,
+      "why": "Cultures come before antibiotics because a single dose can sterilize the sample and leave the patient on the wrong drug for days, so the correct move is to finish drawing fast rather than to skip or split the sets. The one-hour target and the culture rule are not in conflict when the draw is done quickly, and nothing waits on a lactate.",
+      "lesson": "ed-presentations-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q056",
+      "q": "A 92 kg patient meets criteria for the sepsis fluid bolus. How much crystalloid does 30 mL/kg represent?",
+      "choices": [
+        "About 1.8 L",
+        "About 2.8 L",
+        "About 4.6 L",
+        "About 920 mL"
+      ],
+      "answer": 1,
+      "why": "`30 mL/kg` times `92 kg` is `2760 mL`, roughly `2.8 L`. `1.8 L` would be the dose for a `60 kg` patient, `920 mL` is `10 mL/kg`, and `4.6 L` is `50 mL/kg`.",
+      "lesson": "ed-presentations-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q057",
+      "q": "A septic patient's fluids are running on a pump at 125 mL/hr. What is wrong?",
+      "choices": [
+        "The rate is too fast for a septic patient",
+        "Nothing; a controlled rate is safer",
+        "The line should be capped between boluses",
+        "The bolus is meant to run wide open, not on a maintenance rate"
+      ],
+      "answer": 3,
+      "why": "A resuscitation bolus is delivered rapidly, wide open or by pressure bag, because the point is to refill an empty vascular space within the first hour. At `125 mL/hr` a `2 L` bolus would take sixteen hours, which is a maintenance rate wearing a bolus label.",
+      "lesson": "ed-presentations-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q058",
+      "q": "Which vital sign pattern in an 84-year-old nursing home resident should trigger a sepsis screen even though she has no fever?",
+      "choices": [
+        "Temperature 35.6°C, heart rate 114, respiratory rate 24, new confusion",
+        "Temperature 37.0°C, heart rate 78, respiratory rate 16, baseline mentation",
+        "Temperature 37.4°C, heart rate 88, blood pressure 148/86, complaining of knee pain",
+        "Temperature 36.8°C, heart rate 62, respiratory rate 14, mild cough"
+      ],
+      "answer": 0,
+      "why": "A temperature under `36°C` counts as abnormal just as a fever does, and hypothermia with tachycardia, tachypnea and new confusion is a classic older-adult sepsis presentation. The other three sets are within normal ranges or explained by a localized complaint, without the mental status change that carries so much weight in this age group.",
+      "lesson": "ed-presentations-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q059",
+      "q": "Blood cultures are ordered as two sets. Why must they come from two separate sites?",
+      "choices": [
+        "To collect twice the volume from a single vein",
+        "To separate true bacteremia from skin contamination and to increase the yield",
+        "Because one set goes to chemistry and one to microbiology",
+        "Because the anaerobic bottle cannot be filled from the same stick as the aerobic bottle"
+      ],
+      "answer": 1,
+      "why": "Two sites let the lab tell a real bloodstream infection, which grows in both, from a skin organism that contaminated one draw, and more sampled volume across sites raises the detection rate. Both sets go to microbiology, and aerobic and anaerobic bottles are routinely filled from the same stick within a set.",
+      "lesson": "ed-presentations-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q060",
+      "q": "You are assigned exposure for an incoming trauma activation. What do you have ready before the doors open?",
+      "choices": [
+        "Trauma shears plus warm blankets and the forced-air warmer",
+        "Trauma shears only; warming is handled after imaging",
+        "A gown and a hospital blanket to preserve dignity during the survey",
+        "A pelvic binder and a cervical collar"
+      ],
+      "answer": 0,
+      "why": "Exposure and warming are a single task: everything comes off so injuries are found, then heat goes back on immediately because a cold trauma patient stops clotting. Delaying warming until after imaging feeds the lethal triad of hypothermia, acidosis and coagulopathy, a gown blocks the survey, and the binder and collar belong to different roles.",
+      "lesson": "ed-presentations-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q061",
+      "q": "A pelvic binder is being placed on a trauma patient. Where is it centered?",
+      "choices": [
+        "Over the iliac crests",
+        "Over the umbilicus",
+        "Over the greater trochanters",
+        "Over the lower ribs"
+      ],
+      "answer": 2,
+      "why": "The binder is centered over the greater trochanters, which is where compression actually closes an open-book pelvic fracture. Placed over the iliac crests it sits too high to reduce the fracture, and over the umbilicus or the ribs it compresses abdomen or chest instead of bone.",
+      "lesson": "ed-presentations-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q062",
+      "q": "The massive transfusion protocol is activated. What does the 1:1:1 ratio refer to?",
+      "choices": [
+        "Crystalloid, colloid and red cells",
+        "Red cells, plasma and platelets",
+        "Red cells, crystalloid and tranexamic acid",
+        "Whole blood, plasma and calcium"
+      ],
+      "answer": 1,
+      "why": "Balanced resuscitation gives red cells, plasma and platelets in roughly equal units because a bleeding patient loses whole blood and needs whole-blood-like replacement, not red cells alone. Crystalloid dilutes clotting factors rather than replacing them, and TXA and calcium are given alongside the protocol rather than being part of the ratio.",
+      "lesson": "ed-presentations-l06",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-presentations-q063",
+      "q": "A 24-year-old ejected from a vehicle has a heart rate of 128 and a blood pressure of 116/78. A colleague says the pressure is reassuring. Why is that wrong?",
+      "choices": [
+        "Ejection always causes hypertension, so the reading is falsely low",
+        "The blood pressure cuff is unreliable in trauma patients",
+        "Young patients compensate and hold their pressure until a large volume is lost, then drop suddenly",
+        "A single blood pressure is never interpretable"
+      ],
+      "answer": 2,
+      "why": "Young trauma patients maintain pressure through vasoconstriction and tachycardia until compensation fails, so a normal number with a rate of `128` is a warning, not reassurance. Ejection does not raise blood pressure, cuffs work in trauma, and single readings are interpretable when read alongside the heart rate and the mechanism.",
+      "lesson": "ed-presentations-l06",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-presentations-q064",
+      "q": "A trauma patient is admitted and the team mentions a tertiary survey. What is it and when does it happen?",
+      "choices": [
+        "A repeat FAST exam performed before the patient leaves the resuscitation bay",
+        "A complete head-to-toe re-examination, usually within 24 hours, to find injuries the primary survey skipped",
+        "The third attempt at a definitive airway",
+        "A family interview to gather the history that could not be obtained on arrival"
+      ],
+      "answer": 1,
+      "why": "The primary survey deliberately ignores everything that is not immediately lethal, so the tertiary survey re-examines the whole patient within about `24 hours` and is where the missed finger fracture or back laceration is found. The other options describe an ultrasound, an airway attempt and a history, none of which is a head-to-toe re-examination.",
+      "lesson": "ed-presentations-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q065",
+      "q": "An awake patient arrives 30 minutes after swallowing a handful of pills and can follow commands. Activated charcoal is being considered. What makes this patient a candidate?",
+      "choices": [
+        "Any overdose patient within 6 hours can receive charcoal",
+        "Charcoal works regardless of airway status as long as the patient is on a monitor",
+        "The window is within about 1 hour of ingestion and the patient can protect the airway",
+        "Charcoal is given only after the acetaminophen level returns"
+      ],
+      "answer": 2,
+      "why": "Charcoal binds drug that is still in the stomach, so the window is roughly the first hour, and it requires an awake patient who can protect the airway because aspirated charcoal is devastating. Six hours is far outside the useful window, monitoring does not substitute for airway protection, and charcoal decisions are made before levels return.",
+      "lesson": "ed-presentations-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q066",
+      "q": "A patient who took an unknown number of amitriptyline tablets has an ECG showing a QRS of 168 ms. What does this predict?",
+      "choices": [
+        "Risk of a life-threatening arrhythmia",
+        "Nothing; only the QTc matters in this overdose",
+        "Impending hypoglycemia",
+        "That the ingestion was more than 24 hours ago"
+      ],
+      "answer": 0,
+      "why": "In tricyclic overdose a QRS over `100 ms` predicts seizures and over `160 ms` predicts arrhythmia, so `168 ms` is the high-risk band. The QRS matters at least as much as the QTc here, the ECG says nothing about glucose, and widening reflects sodium channel blockade rather than elapsed time.",
+      "lesson": "ed-presentations-l07",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-presentations-q067",
+      "q": "A patient swallowed an unknown amount of aspirin. Which cluster of findings fits salicylate toxicity?",
+      "choices": [
+        "Pinpoint pupils, slow breathing, deep sedation",
+        "Ringing in the ears, fast deep breathing, vomiting, confusion",
+        "Dry skin, dilated pupils, urinary retention, absent bowel sounds",
+        "Bradycardia, hypothermia, and a widened QRS"
+      ],
+      "answer": 1,
+      "why": "Tinnitus with hyperventilation, vomiting and confusion is the salicylate pattern. Pinpoint pupils with hypoventilation is opioid, the dry flushed anticholinergic picture belongs to antihistamines and similar drugs, and bradycardia with a widened QRS points toward sodium channel blockers.",
+      "lesson": "ed-presentations-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q068",
+      "q": "A psychiatric patient in the department is being placed in physical restraints. Which set of requirements applies?",
+      "choices": [
+        "A verbal agreement from the patient and hourly checks",
+        "Security's authorization, with documentation completed at shift change",
+        "A provider order, continuous observation, documented circulation checks, and release at the earliest opportunity",
+        "A provider order only; monitoring is handled by the sitter's judgment"
+      ],
+      "answer": 2,
+      "why": "Physical restraint requires a provider order, continuous observation, documented circulation checks and the earliest possible release, and chemical restraint is generally preferred when medication is needed. Security cannot authorize restraint, a restrained patient is by definition not consenting, and monitoring is a documented requirement rather than a judgment call.",
+      "lesson": "ed-presentations-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q069",
+      "q": "An intoxicated patient has been in the department for three hours and asks to leave. What determines readiness for discharge?",
+      "choices": [
+        "A serial clinical reassessment showing the patient has actually sobered",
+        "A blood alcohol level below the legal driving limit",
+        "A fixed observation period defined by policy",
+        "The patient's own statement that he feels sober"
+      ],
+      "answer": 0,
+      "why": "Sobering is judged by serial exams, not by a number or a clock, because tolerance varies enormously and a level tells you nothing about this patient's function. A legal driving threshold is not a medical discharge criterion, a fixed clock ignores the patient in front of you, and self-report from an intoxicated patient is unreliable.",
+      "lesson": "ed-presentations-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q070",
+      "q": "Which syncope history is the most reassuring?",
+      "choices": [
+        "Collapsed while running the last lap of a race, no warning",
+        "Collapsed while lying in bed watching television",
+        "Felt palpitations for ten seconds, then collapsed",
+        "Felt warm, nauseated and saw tunnel vision after standing in line for twenty minutes, then collapsed"
+      ],
+      "answer": 3,
+      "why": "A prodrome of warmth, nausea and tunnel vision after prolonged standing is the vasovagal pattern, the most benign of the three common causes. Exertional syncope, syncope while supine and syncope preceded by palpitations are all cardiac red flags that push toward monitoring and admission.",
+      "lesson": "ed-presentations-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q071",
+      "q": "A 33-year-old fainted at work. Which test does she get regardless of how well she now looks?",
+      "choices": [
+        "A CT of the head",
+        "A 12-lead ECG",
+        "An echocardiogram",
+        "A carotid ultrasound"
+      ],
+      "answer": 1,
+      "why": "Every syncope patient gets a 12-lead ECG, because it is the single test that can turn a benign-looking faint into an admission by revealing a conduction abnormality. Head CT is reserved for head injury or focal findings, and echocardiography and carotid studies are follow-up tests rather than routine emergency screening.",
+      "lesson": "ed-presentations-l08",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-presentations-q072",
+      "q": "A patient says she is dizzy. What do you report to the provider?",
+      "choices": [
+        "Her exact words describing the sensation, plus any double vision, slurred speech, weakness, numbness or trouble walking",
+        "\"Patient reports vertigo\"",
+        "The blood pressure and heart rate only, since dizziness is usually orthostatic",
+        "That she is dizzy and you have placed her on fall precautions"
+      ],
+      "answer": 0,
+      "why": "Vertigo, presyncope and unsteadiness point at completely different diagnoses, so the patient's own words plus the associated neurologic symptoms are what let a provider separate an inner-ear problem from a stroke in the back of the brain. Translating her words into \"vertigo\" invents a diagnosis, vitals alone skip the neurologic screen, and fall precautions are an action, not a report.",
+      "lesson": "ed-presentations-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q073",
+      "q": "A 41-year-old with a thunderclap headache has a non-contrast head CT that is read as negative. The provider still suspects subarachnoid hemorrhage. What do you set up?",
+      "choices": [
+        "A repeat CT in six hours",
+        "A CT angiogram of the neck",
+        "A lumbar puncture tray, lidocaine, a numbered tube rack, and a plan to hold positioning",
+        "An MRI of the brain"
+      ],
+      "answer": 2,
+      "why": "A negative CT does not exclude subarachnoid hemorrhage, so lumbar puncture follows to look for blood or xanthochromia in the spinal fluid, and your job is the tray, the anesthetic, the numbered tubes and holding the patient curled in position. Repeating the CT, adding neck angiography or ordering an MRI all delay the test that answers the question.",
+      "lesson": "ed-presentations-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q074",
+      "q": "A migraine patient is about to receive the usual cocktail. Which combination should you anticipate?",
+      "choices": [
+        "IV fluids, an antiemetic such as metoclopramide or prochlorperazine, often with diphenhydramine, plus ketorolac or magnesium",
+        "IV morphine and an antiemetic",
+        "Oral acetaminophen and a dark room only",
+        "IV fluids with high-dose steroids"
+      ],
+      "answer": 0,
+      "why": "The standard emergency migraine regimen is fluids plus a dopamine-blocking antiemetic, frequently with diphenhydramine to prevent restlessness from that drug, and ketorolac or magnesium depending on the provider. Opioids are generally avoided in migraine, oral acetaminophen alone rarely touches an emergency presentation, and high-dose steroids are not the first-line combination.",
+      "lesson": "ed-presentations-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q075",
+      "q": "A 40-day-old infant arrives with a rectal temperature of 38.6°C. What best describes the expected approach?",
+      "choices": [
+        "Automatic full septic workup with lumbar puncture and admission, as for a newborn",
+        "Risk stratification using inflammatory markers, urine and blood work, with lumbar puncture depending on protocol and results",
+        "Discharge with acetaminophen if the baby is feeding well",
+        "Observation for six hours with no laboratory testing"
+      ],
+      "answer": 1,
+      "why": "From `28-60 days` the standard approach is risk stratification with inflammatory markers, urine and blood work, and lumbar puncture is decided by the protocol and those results. The automatic full workup belongs to infants under `28 days`, and discharge or observation without testing is not an option at this age with this temperature.",
+      "lesson": "ed-presentations-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q076",
+      "q": "You are asked to obtain a urine sample from a febrile 5-week-old. A bag specimen has already been applied by a family member. What do you do?",
+      "choices": [
+        "Send the bag specimen and note the collection method",
+        "Send the bag specimen for urinalysis but not for culture",
+        "Wait for a clean-catch sample as the infant voids",
+        "Tell the nurse a catheterized specimen is needed, because bag samples are contaminated too often to be trusted"
+      ],
+      "answer": 3,
+      "why": "Bag specimens are contaminated by skin flora often enough that a positive result cannot be trusted, and a wrongly diagnosed or missed urinary infection changes everything downstream, so catheterization or suprapubic aspiration is the standard. Sending it with a note, splitting the testing, or waiting for a clean catch in an infant all leave the team with a sample they cannot act on.",
+      "lesson": "ed-presentations-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q077",
+      "q": "An infant is being weighed for a weight-based medication. What is the correct technique?",
+      "choices": [
+        "Undressed, in kilograms, on the infant scale",
+        "In a diaper and blanket, in pounds, then converted",
+        "Using the weight the parent reports from the last pediatric visit",
+        "Estimated from a length-based tape"
+      ],
+      "answer": 0,
+      "why": "Every pediatric drug and fluid dose is calculated in `mg/kg` or `mL/kg`, so the weight must be a measured, undressed, kilogram weight. Clothing and blankets add grams that become dosing errors, a remembered weight from a prior visit is stale, and a length-based tape is an emergency estimate used when the child cannot be weighed.",
+      "lesson": "ed-presentations-l09",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-presentations-q078",
+      "q": "A 62-year-old with back pain is bladder scanned after voiding and the residual is 420 mL. What does this support?",
+      "choices": [
+        "Normal post-void emptying",
+        "Dehydration",
+        "Urinary retention, which supports cauda equina syndrome in this setting",
+        "A urinary tract infection"
+      ],
+      "answer": 2,
+      "why": "A post-void residual over `300 mL` is strongly abnormal, and retention is the most consistent finding in cauda equina syndrome. Normal emptying leaves a small residual, dehydration produces less urine rather than retained urine, and a residual volume does not diagnose infection.",
+      "lesson": "ed-presentations-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q079",
+      "q": "Which back pain patient carries the highest concern for a serious underlying cause?",
+      "choices": [
+        "A 29-year-old with pain after lifting boxes, worse with movement, better with rest",
+        "A 34-year-old with pain after a long drive and no other symptoms",
+        "A 45-year-old with recurrent pain relieved by ibuprofen",
+        "A 58-year-old with a history of breast cancer and night pain that wakes her"
+      ],
+      "answer": 3,
+      "why": "A cancer history plus night pain that wakes the patient is a red flag pair pointing at metastatic disease, and age over `50` with new pain adds to it. Mechanical pain after lifting or driving that changes with position and responds to anti-inflammatories is the ordinary presentation that improves on its own.",
+      "lesson": "ed-presentations-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q080",
+      "q": "A DKA patient arrives with a glucose of 640 mg/dL, a potassium of 3.1 mmol/L, and a blood pressure of 94/58. The insulin drip is ready. What is the concern?",
+      "choices": [
+        "Insulin will drive potassium further down; the low potassium usually has to be addressed first",
+        "The glucose is too high for insulin to be effective",
+        "The blood pressure is too low for any treatment to begin",
+        "Insulin should be given as a bolus rather than a drip at this glucose"
+      ],
+      "answer": 0,
+      "why": "Insulin drives potassium into cells, so starting a drip in a patient who is already at `3.1` can push them into a dangerous arrhythmia, and potassium is typically replaced first. A high glucose does not blunt insulin, hypotension is treated with the fluids that come first anyway, and bolus versus drip is not what makes this dangerous.",
+      "lesson": "ed-presentations-l10",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-presentations-q081",
+      "q": "In DKA, what is your most important recurring task at the bedside?",
+      "choices": [
+        "Hourly urine output measurement only",
+        "Hourly fingerstick glucose, on time and charted",
+        "Hourly blood pressure by manual cuff",
+        "Hourly repositioning of the patient"
+      ],
+      "answer": 1,
+      "why": "The insulin drip rate is titrated directly off the hourly fingerstick, so a late or guessed value changes the treatment the patient receives. Intake and output is also tracked strictly, but it is the glucose that drives the drip, and pressures and repositioning are not the backbone of this protocol.",
+      "lesson": "ed-presentations-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q082",
+      "q": "A patient vomits into a basin. Which description belongs in your report?",
+      "choices": [
+        "\"Vomited blood\"",
+        "\"Large amount of bloody emesis\"",
+        "\"Approximately half a cup of coffee-ground emesis\"",
+        "\"Hematemesis noted\""
+      ],
+      "answer": 2,
+      "why": "A measured volume with a described appearance is data a provider can act on, and coffee-ground material specifically suggests an upper source with blood that has sat in the stomach. The other phrasings give no volume and no character, and \"large\" means different things to different people.",
+      "lesson": "ed-presentations-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q083",
+      "q": "A patient with a suspected upper GI bleed needs labs. Which one is sent first and why?",
+      "choices": [
+        "Type and cross, because it takes the longest and blood may be needed",
+        "Coagulation studies, because they determine reversal agents",
+        "Lactate, because it grades severity",
+        "Complete blood count, because the hemoglobin decides transfusion"
+      ],
+      "answer": 0,
+      "why": "The type and cross has the longest turnaround of the set, so sending it first shortens the wait if the patient needs blood. Coagulation studies and lactate matter but do not gate transfusion timing, and the initial hemoglobin in an acute bleed is often normal because the patient has not yet diluted.",
+      "lesson": "ed-presentations-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q084",
+      "q": "A patient with anaphylaxis is hypotensive at 80/44 and wants to sit up to use the bathroom. What is the correct response?",
+      "choices": [
+        "Assist him to the bathroom with a gait belt",
+        "Keep him lying flat with the legs elevated and bring a urinal to the bedside",
+        "Let him sit on the edge of the bed for a minute first",
+        "Have him stand slowly while you hold his arm"
+      ],
+      "answer": 1,
+      "why": "Sudden upright posture in a hypotensive anaphylaxis patient can drop cardiac output abruptly and has been associated with deaths, so the patient stays flat with legs elevated and the bathroom comes to him. Every other option moves him upright, which is the exact maneuver being avoided.",
+      "lesson": "ed-presentations-l10",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-presentations-q085",
+      "q": "Anaphylaxis is suspected. Where is the intramuscular epinephrine given, and why there?",
+      "choices": [
+        "The deltoid, because it is easy to access",
+        "The gluteal muscle, because it holds the largest volume",
+        "The outer thigh, because absorption from the vastus lateralis is fastest",
+        "Subcutaneously in the abdomen, because absorption is most predictable"
+      ],
+      "answer": 2,
+      "why": "The vastus lateralis in the outer thigh has the richest blood supply of the practical IM sites, so epinephrine reaches the circulation fastest there, at `0.3-0.5 mg` of the `1 mg/mL` concentration repeated every `5-15 minutes` as needed. The deltoid and gluteal routes absorb more slowly, and subcutaneous administration is slower still and is not the anaphylaxis route.",
+      "lesson": "ed-presentations-l10",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-presentations-q086",
+      "q": "A patient with severe abdominal pain has waited 40 minutes for analgesia because a nurse said the surgeon wants to examine him first. What is the correct understanding?",
+      "choices": [
+        "Analgesia is withheld until the surgical exam so the diagnosis is not masked",
+        "Only intravenous acetaminophen may be given before a surgical exam",
+        "Pain medication is withheld only if the patient may go to the operating room",
+        "Treating pain does not hide the diagnosis, and untreated pain is its own harm"
+      ],
+      "answer": 3,
+      "why": "The teaching that analgesia masks the surgical abdomen has been disproven; pain control does not reduce diagnostic accuracy and untreated severe pain is a harm in itself. Restricting to one agent, or withholding based on a possible operation, are both versions of the same retired rule.",
+      "lesson": "ed-presentations-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q087",
+      "q": "During a code-level sepsis room, three staff are present. Which division of labor is most efficient?",
+      "choices": [
+        "One draws blood cultures, one spikes and hangs the fluid, one takes vitals, each announcing what they have taken",
+        "All three take turns at the IV until access is obtained",
+        "One person performs every task in bundle order while the others document",
+        "Two obtain imaging while one waits for pharmacy"
+      ],
+      "answer": 0,
+      "why": "The bundle tasks are parallel, not sequential, and announcing what you have taken prevents two people drawing the same tube or hanging a second bag. Serializing the work through one person adds minutes to a one-hour target, crowding the IV wastes two staff, and imaging is not the rate-limiting step when cultures are holding up antibiotics.",
+      "lesson": "ed-presentations-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q088",
+      "q": "A patient with shortness of breath, a saturation of 97%, and clear lungs has an ECG obtained. Why?",
+      "choices": [
+        "Because all patients on a cardiac monitor require a 12-lead",
+        "Because a heart attack can present as shortness of breath alone",
+        "Because the ECG measures oxygen delivery",
+        "Because pulse oximetry is unreliable above 95%"
+      ],
+      "answer": 1,
+      "why": "Anginal equivalents are real, and breathlessness without chest pain is a common presentation of infarct in women, older adults and people with diabetes, so the ECG is part of the dyspnea workup. Monitoring does not by itself mandate a 12-lead, the ECG says nothing about oxygen delivery, and pulse oximetry is at its most accurate in the high ranges.",
+      "lesson": "ed-presentations-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-presentations-q089",
+      "q": "A stroke alert is considered but the patient's deficit seems mild and the nurse is unsure. What is the correct threshold for calling it?",
+      "choices": [
+        "Alerts are called on suspicion, not certainty; say \"possible stroke\" out loud now",
+        "Wait for the NIH Stroke Scale score to exceed 4",
+        "Wait for the CT result to confirm before alerting the team",
+        "Call it only if the last known well time is within 4.5 hours"
+      ],
+      "answer": 0,
+      "why": "Stroke alerts exist to mobilize imaging and the team quickly and are called on suspicion, because the cost of an unnecessary alert is far lower than the cost of a lost window. Waiting on a score, on the CT, or on a confirmed time all delay the process that produces those very things.",
+      "lesson": "ed-presentations-l04",
+      "difficulty": 2
+    }
+  ]
+}
