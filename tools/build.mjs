@@ -25,8 +25,20 @@ for (const t of manifest.tracks) for (const id of t.modules) {
   const { errs, warns } = validateFile(f);
   if (errs.length) { problems++; log(`  x ${id}: ${errs.length} error(s)${strict ? '' : ' — skipped'}`); errs.slice(0, 5).forEach((e) => log('      ' + e)); if (!strict) continue; }
   const m = JSON.parse(fs.readFileSync(f, 'utf8'));
+  m.scenarios = m.scenarios || [];
+  let extNote = '';
+  const xf = path.join(CONTENT, 'modules', id + '.ext.json');
+  if (fs.existsSync(xf)) {
+    const xv = validateFile(xf);
+    if (xv.errs.length) { problems++; log(`  x ${id}.ext: ${xv.errs.length} error(s)${strict ? '' : ' — extension skipped'}`); xv.errs.slice(0, 4).forEach((e) => log('      ' + e)); if (strict) continue; }
+    else {
+      const x = JSON.parse(fs.readFileSync(xf, 'utf8'));
+      m.lessons.push(...(x.lessons || [])); m.cards.push(...(x.cards || [])); m.quiz.push(...(x.quiz || [])); m.scenarios.push(...(x.scenarios || []));
+      extNote = ` +ext(${(x.lessons || []).length}l/${(x.cards || []).length}c/${(x.quiz || []).length}q/${(x.scenarios || []).length}s)`;
+    }
+  }
   modules.push(m);
-  log(`  ok ${id}: ${m.lessons.length} lessons, ${m.cards.length} cards, ${m.quiz.length} q, ${(m.scenarios || []).length} scen${warns.length ? ' (' + warns.length + ' warn)' : ''}`);
+  log(`  ok ${id}: ${m.lessons.length} lessons, ${m.cards.length} cards, ${m.quiz.length} q, ${m.scenarios.length} scen${extNote}${warns.length ? ' (' + warns.length + ' warn)' : ''}`);
 }
 const reference = [];
 const refDir = path.join(CONTENT, 'reference');
@@ -38,21 +50,27 @@ if (fs.existsSync(refDir)) for (const f of fs.readdirSync(refDir).filter((x) => 
 }
 if (strict && problems) { log(`\nBuild failed: ${problems} content problem(s).`); process.exit(1); }
 
-const bundleObj = { version: new Date().toISOString().slice(0, 10), tracks: manifest.tracks, modules, reference };
-const bundleJSON = JSON.stringify(bundleObj);
-const contentJS = 'window.ROUNDS_CONTENT=' + bundleJSON + ';\n';
+// ---- content: a light index for navigation + one file per module, loaded on demand ----
+const indexModules = modules.map((m) => ({
+  id: m.id, track: m.track, title: m.title, short: m.short, summary: m.summary,
+  lessons: m.lessons.map((l) => ({ id: l.id, title: l.title, minutes: l.minutes, checks: l.checks.length, cards: m.cards.filter((c) => c.lesson === l.id).length })),
+  scenarios: m.scenarios.map((s) => ({ id: s.id, title: s.title, setting: s.setting, steps: s.steps.length })),
+  counts: { cards: m.cards.length, quiz: m.quiz.length, scenarios: m.scenarios.length, minutes: m.lessons.reduce((a, l) => a + l.minutes, 0) },
+}));
+const moduleFiles = new Map(modules.map((m) => [m.id, 'window.ROUNDS_MODULES=window.ROUNDS_MODULES||{};window.ROUNDS_MODULES[' + JSON.stringify(m.id) + ']=' + JSON.stringify(m) + ';\n']));
 
 // ---- build id from everything that ships ----
 const hash = crypto.createHash('sha1');
-hash.update(contentJS);
+for (const [, js] of moduleFiles) hash.update(js);
+hash.update(JSON.stringify(reference));
 for (const f of fs.readdirSync(SRC).sort()) hash.update(fs.readFileSync(path.join(SRC, f)));
 const BUILD = hash.digest('hex').slice(0, 10);
-bundleObj.version += '.' + BUILD.slice(0, 4);
-const finalContentJS = 'window.ROUNDS_CONTENT=' + JSON.stringify(bundleObj) + ';\n';
+const indexObj = { version: new Date().toISOString().slice(0, 10) + '.' + BUILD.slice(0, 4), build: BUILD, tracks: manifest.tracks, modules: indexModules, reference };
+const indexJS = 'window.ROUNDS_INDEX=' + JSON.stringify(indexObj) + ';\n';
 
 // ---- dist ----
 fs.rmSync(DIST, { recursive: true, force: true });
-fs.mkdirSync(DIST, { recursive: true });
+fs.mkdirSync(path.join(DIST, 'content'), { recursive: true });
 const shipped = [];
 for (const f of fs.readdirSync(SRC)) {
   let data = fs.readFileSync(path.join(SRC, f));
@@ -60,8 +78,11 @@ for (const f of fs.readdirSync(SRC)) {
   fs.writeFileSync(path.join(DIST, f), data);
   shipped.push('./' + f);
 }
-fs.writeFileSync(path.join(DIST, 'content.js'), finalContentJS);
-shipped.push('./content.js');
+fs.writeFileSync(path.join(DIST, 'content', 'index.js'), indexJS);
+shipped.push('./content/index.js');
+let contentBytes = indexJS.length;
+for (const [id, js] of moduleFiles) { fs.writeFileSync(path.join(DIST, 'content', id + '.js'), js); shipped.push('./content/' + id + '.js'); contentBytes += js.length; }
+const finalContentJS = { length: contentBytes };
 writeIcons(path.join(DIST, 'icons'));
 for (const f of fs.readdirSync(path.join(DIST, 'icons'))) shipped.push('./icons/' + f);
 const precache = ['./', ...shipped.filter((s) => s !== './sw.js')];

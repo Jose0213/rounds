@@ -129,3 +129,22 @@ The app renders only this. Anything else shows as literal text.
 - Short paragraphs (2–4 sentences). A lesson that reads like a wall of text is wrong.
 - Guidelines: AHA 2020/2025 CPR & ECC, current NREMT cognitive exam content, NJ state EMT cert where state specifics matter.
 - Do not mention this app, software, or the reader's job history. No motivational filler.
+
+## Extension file (`content/modules/<id>.ext.json`)
+
+Deepens an existing module without touching its base file. The build merges it in; the validator checks it against the merged module.
+
+```jsonc
+{
+  "schema": 1,
+  "extends": "emt-airway",         // the base module id, matches filename <id>.ext.json
+  "lessons": [ Lesson, ... ],      // 3–10 NEW lessons; ids continue the numbering (base has l01–l10 → start at l11)
+  "cards": [ Card, ... ],          // 20–80; may reference base lessons or new ones
+  "quiz": [ Question, ... ],       // 15–50; skew harder: mostly difficulty 2–3
+  "scenarios": [ Scenario, ... ]   // 0–3; ids continue (base s01–s02 → s03)
+}
+```
+
+Rules: read the base module first and do not repeat a lesson it already teaches (duplicate titles are rejected). New lessons cover gaps, edge cases, harder applications, exam traps, and "second-pass" depth. Merged totals may reach 20 lessons, 170 cards, 90 questions, 6 scenarios.
+
+Validate with `node tools/validate.mjs content/modules/<id>.ext.json`.

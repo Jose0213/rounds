@@ -1,0 +1,666 @@
+{
+  "schema": 1,
+  "id": "emt-med-math",
+  "track": "emt",
+  "title": "Medication & Clinical Math",
+  "short": "Med Math",
+  "summary": "Every calculation an EMT or ED tech actually does at the bedside — conversions, drug labels, doses, drips, oxygen duration, vitals math and scoring — taught as a skill with worked examples and practice in every lesson.",
+  "lessons": [
+    {
+      "id": "emt-med-math-l01",
+      "title": "Units, conversions and the decimal ladder",
+      "minutes": 7,
+      "body": "Medicine measures in metric. America lives in pounds and Fahrenheit. Every conversion between them is one multiplication or one division, and the entire skill is knowing which one.\n\n## Weight\n\nDoses are per kilogram, always. Scales and patients speak pounds.\n\n- Pounds to kilograms: **divide by 2.2**\n- Kilograms to pounds: **multiply by 2.2**\n\nThe exact factor is `2.2046`, but `2.2` is what every protocol and every exam uses. A kilogram is heavier than a pound, so the kilogram number is always the smaller one. If your converted number came out bigger, you multiplied when you should have divided.\n\n## Length and temperature\n\n- Inches to centimeters: **multiply by 2.54**. Centimeters to inches: divide by `2.54`.\n- Fahrenheit to Celsius: `(F - 32) x 5/9`\n- Celsius to Fahrenheit: `(C x 9/5) + 32`\n\nTwo anchors catch mistakes instantly: `98.6 F` is `37 C`, and `100.4 F` is `38 C`, the number that defines a fever.\n\n## The metric ladder\n\nMetric units step by a factor of `1,000`, and each step is a three-place decimal move.\n\n| Bigger unit | | Smaller unit |\n|---|---|---|\n| `1 kg` | equals | `1,000 g` |\n| `1 g` | equals | `1,000 mg` |\n| `1 mg` | equals | `1,000 mcg` |\n| `1 L` | equals | `1,000 mL` |\n\nGoing from a bigger unit to a smaller one the number gets bigger, so move the decimal **three places right**. Going smaller to bigger, move it **three places left**. And `1 mL` is exactly `1 cc` — same volume, two names, used interchangeably on labels.\n\n> **Trap:** `mg` and `mcg` are one keystroke and one thousand-fold apart. Fentanyl is dosed in micrograms, morphine in milligrams. Reading `100 mcg` as `100 mg` is a thousand times the dose.\n\n## Worked problems\n\n**Problem 1 — a patient tells you he weighs 198 pounds. What is his weight in kilograms?**\n\n1. Pounds to kilograms means divide: `198 / 2.2`.\n2. `2.2 x 90 = 198`, so the answer is `90 kg`.\n3. Sanity check: the kilogram number is smaller than the pound number. Correct.\n\n**Problem 2 — triage temperature reads `101.3 F`. Convert to Celsius.**\n\n1. Subtract 32: `101.3 - 32 = 69.3`.\n2. Multiply by 5: `69.3 x 5 = 346.5`.\n3. Divide by 9: `346.5 / 9 = 38.5 C`.\n4. Sanity check: it is above `37 C` and above the `38 C` fever line. Correct.\n\n**Problem 3 — the order reads `0.5 g` and the only vial on the shelf is labeled in milligrams.**\n\n1. Grams to milligrams is one step down the ladder, so move the decimal three places right.\n2. `0.5` becomes `500`.\n3. The order is `500 mg`. Pull the `500 mg` vial, not the `50 mg` one.\n\n> **On shift:** Weigh the patient in kilograms if the bed or scale will do it. Every weight-based dose, every fluid bolus and every defibrillation energy in pediatrics runs off that one number, so an entered weight in pounds poisons the whole chart.",
+      "keyPoints": [
+        "Pounds to kilograms: divide by 2.2. The kilogram number is always smaller.",
+        "Metric steps by 1,000: kg to g to mg to mcg, and L to mL. Each step moves the decimal three places.",
+        "F to C is (F minus 32) times 5/9. Anchor on 98.6 F equals 37 C and 100.4 F equals 38 C.",
+        "1 mL equals 1 cc. Same volume, two labels.",
+        "mcg and mg differ by a factor of 1,000 — the single most common tenfold-class error in drug math."
+      ],
+      "checks": [
+        {
+          "q": "A patient weighs 165 lb. What is that in kilograms?",
+          "choices": ["75 kg", "363 kg", "82.5 kg", "66 kg"],
+          "answer": 0,
+          "why": "165 divided by 2.2 equals 75 kg. 363 is the result of multiplying instead of dividing, and 82.5 comes from dividing by 2 instead of 2.2."
+        },
+        {
+          "q": "How many micrograms are in 0.4 mg?",
+          "choices": ["40 mcg", "400 mcg", "4,000 mcg", "0.0004 mcg"],
+          "answer": 1,
+          "why": "Milligrams to micrograms moves the decimal three places right: 0.4 becomes 400 mcg. Moving only two places gives 40; moving four gives 4,000."
+        },
+        {
+          "q": "A temperature of 39.4 C converts to approximately what in Fahrenheit?",
+          "choices": ["96.9 F", "100.2 F", "102.9 F", "106.4 F"],
+          "answer": 2,
+          "why": "39.4 x 9/5 = 70.9, plus 32 = 102.9 F. Since 37 C is 98.6 F, anything near 39 C must land in the low 100s, which rules out 96.9 and 106.4."
+        }
+      ]
+    },
+    {
+      "id": "emt-med-math-l02",
+      "title": "Reading the label: concentration, ratio and percent",
+      "minutes": 7,
+      "body": "A vial never tells you a dose. It tells you a **concentration** — how much drug is dissolved in how much liquid. Every calculation begins by turning whatever the label says into one number: milligrams per milliliter.\n\n## Straight concentration\n\nMost labels give it directly: `50 mg/mL`. Others give a total over a volume, like `100 mcg/2 mL`. When it is a total, divide.\n\n`100 mcg in 2 mL` becomes `100 / 2 = 50 mcg/mL`.\n\n> **Key:** Never calculate from the big number on the front of the vial. A `10 mg/mL` label on a `10 mL` vial means `100 mg` of drug is in your hand. Reading only the `10` is how whole vials get pushed.\n\n## Ratio strengths\n\nOlder epinephrine labeling used a ratio. A ratio strength is **grams of drug per that many milliliters of solution**.\n\n- `1:1,000` is `1 g in 1,000 mL`, which is `1,000 mg in 1,000 mL`, which is **`1 mg/mL`**\n- `1:10,000` is `1 g in 10,000 mL`, which is `1,000 mg in 10,000 mL`, which is **`0.1 mg/mL`**\n\nCurrent labels print `1 mg/mL` and `0.1 mg/mL` precisely because the ratios got mixed up. `1 mg/mL` is the concentrated IM anaphylaxis form, in an ampule or auto-injector. `0.1 mg/mL` is the dilute IV and IO cardiac arrest form, in a `10 mL` prefilled syringe. Ten times the concentration, ten times the harm if you grab the wrong one.\n\n## Percent solutions\n\nA percent solution is **grams per 100 mL**.\n\n- `1%` is `1 g/100 mL`, which is `1,000 mg/100 mL`, which is **`10 mg/mL`**\n- So `2%` lidocaine is `20 mg/mL`, and `0.9%` sodium chloride is `9 mg/mL`\n- `50%` dextrose (D50) is `50 g/100 mL`, supplied as a `50 mL` syringe — **`25 g in 50 mL`**, or `0.5 g/mL`\n- `10%` dextrose (D10) is `100 mg/mL`, so delivering `25 g` takes `250 mL`\n\nShortcut worth memorizing: **percent times 10 equals mg/mL.**\n\n## Worked problems\n\n**Problem 1 — how many milligrams of lidocaine are in `5 mL` of a `2%` solution?**\n\n1. Convert percent to concentration: `2 x 10 = 20 mg/mL`.\n2. Multiply by the volume: `20 mg/mL x 5 mL = 100 mg`.\n3. Sanity check against the adult local-anesthetic ceiling, roughly `4.5 mg/kg` plain lidocaine. For a `70 kg` adult that is about `315 mg`, so `100 mg` is well inside it.\n\n**Problem 2 — anaphylaxis, the order is `0.3 mg` epinephrine IM. The box says `1 mg/mL`.**\n\n1. Desired `0.3 mg`, have `1 mg` per `1 mL`.\n2. `0.3 / 1 = 0.3`, times `1 mL` equals **`0.3 mL`**.\n3. Now check the wrong vial: from the `0.1 mg/mL` arrest syringe the same `0.3 mg` would be `3 mL`. If you are drawing up `3 mL` for an IM epinephrine dose, you have the arrest concentration in your hand.\n\n**Problem 3 — a hypoglycemic patient gets half a D50 syringe. How many grams is that?**\n\n1. D50 is `50%`, so `50 g per 100 mL`, supplied as `25 g in 50 mL`.\n2. That is `0.5 g/mL`.\n3. Half the syringe is `25 mL`, so `25 mL x 0.5 g/mL = 12.5 g` of dextrose.",
+      "keyPoints": [
+        "Turn every label into mg/mL before you do anything else. Total over volume means divide.",
+        "1:1,000 equals 1 mg/mL (IM epinephrine). 1:10,000 equals 0.1 mg/mL (IV/IO arrest epinephrine).",
+        "Percent times 10 equals mg/mL: 1% is 10 mg/mL, 2% lidocaine is 20 mg/mL.",
+        "D50 is 25 g in 50 mL, which is 0.5 g/mL. D10 is 100 mg/mL, so 25 g takes 250 mL.",
+        "The number on the front of a vial is a concentration, not the amount in the vial."
+      ],
+      "checks": [
+        {
+          "q": "A vial is labeled 1:10,000 epinephrine. What is the concentration in mg/mL?",
+          "choices": ["1 mg/mL", "10 mg/mL", "0.1 mg/mL", "0.01 mg/mL"],
+          "answer": 2,
+          "why": "1:10,000 is 1 g in 10,000 mL, which is 1,000 mg in 10,000 mL, or 0.1 mg/mL. 1 mg/mL is the 1:1,000 IM concentration — ten times stronger."
+        },
+        {
+          "q": "How many milligrams of drug are in 10 mL of a 2% solution?",
+          "choices": ["20 mg", "200 mg", "2 mg", "2,000 mg"],
+          "answer": 1,
+          "why": "2% is 20 mg/mL, and 20 mg/mL times 10 mL is 200 mg. Answering 20 mg is the classic error of stopping at the concentration and forgetting to multiply by volume."
+        },
+        {
+          "q": "A 50 mL prefilled syringe of 50% dextrose contains how many grams?",
+          "choices": ["50 g", "5 g", "12.5 g", "25 g"],
+          "answer": 3,
+          "why": "50% is 50 g per 100 mL, so a 50 mL syringe holds half that: 25 g. Answering 50 g assumes the percent number equals the grams in the syringe, which is only true for a full 100 mL."
+        }
+      ]
+    },
+    {
+      "id": "emt-med-math-l03",
+      "title": "The dose formula and dimensional analysis",
+      "minutes": 7,
+      "body": "You are handed an order in milligrams and a vial in milliliters. Bridging those two is one formula, and there is a second method that catches your errors for you.\n\n## The formula\n\n**Volume to give = (Desired / Have) x Volume on hand**\n\n- **Desired** is what the order says.\n- **Have** is the strength on the label.\n- **Volume on hand** is the volume that strength lives in.\n\nIf the label already reads `mg/mL`, the volume on hand is `1 mL` and the formula collapses to desired divided by have. That is the version you will use nine times out of ten.\n\n> **Key:** Desired and have must be in the same unit before you divide. An order in micrograms against a label in milligrams has to be converted first, or the formula returns a thousandfold error and looks perfectly reasonable doing it.\n\n## Dimensional analysis\n\nThe second method writes the units out and cancels them, like algebra. Start with what you want on the left, multiply by fractions arranged so the unwanted units cancel diagonally.\n\nWant milliliters, given an order of `80 mcg` and a vial of `50 mcg/mL`:\n\n`80 mcg x (1 mL / 50 mcg) = 80/50 mL = 1.6 mL`\n\nThe `mcg` on top cancels the `mcg` on the bottom and leaves `mL`. If your units do not cancel to the unit you want, the setup is wrong — which is exactly why this method is worth the extra ten seconds on anything weight-based or multi-step.\n\n## Worked problems\n\n**Problem 1 — ondansetron `4 mg` IV ordered. Vial reads `4 mg/2 mL`.**\n\n1. Desired `4 mg`, have `4 mg`, volume on hand `2 mL`.\n2. `4 / 4 = 1`.\n3. `1 x 2 mL = 2 mL`. Give the whole vial.\n\n**Problem 2 — diphenhydramine `25 mg` ordered. Vial reads `50 mg/mL`.**\n\n1. Same units already, so no conversion.\n2. `25 / 50 = 0.5`.\n3. `0.5 x 1 mL = 0.5 mL`. Half of what the vial holds, which matches the fact that the order is half the labeled strength.\n\n**Problem 3 — acetaminophen `650 mg` PO. The bottle is a suspension, `160 mg/5 mL`.**\n\n1. Desired `650 mg`, have `160 mg`, volume on hand `5 mL`.\n2. `650 / 160 = 4.06`.\n3. `4.06 x 5 mL = 20.3 mL`.\n4. Sanity check: `650` is about four times `160`, and four times `5 mL` is `20 mL`. The answer fits.\n\n**Problem 4 — naloxone `0.4 mg` ordered. Vial reads `2 mg/2 mL`.**\n\n1. Reduce the label first: `2 mg / 2 mL = 1 mg/mL`.\n2. `0.4 / 1 = 0.4`.\n3. `0.4 x 1 mL = 0.4 mL`.\n\n> **On the exam:** Test writers love an answer that is exactly ten times the right one. Before you pick, ask whether the volume is physically sensible — more than `2 mL` for an IM injection, or more than one full vial for a routine dose, both deserve a second look.",
+      "keyPoints": [
+        "Volume to give equals desired divided by have, times the volume the have sits in.",
+        "Convert desired and have to the same unit before dividing — this is where thousandfold errors are born.",
+        "Dimensional analysis cancels units diagonally; if the leftover unit is not what you wanted, the setup is wrong.",
+        "Sanity-check every answer: routine IM volumes over 2 mL and doses over one full vial are red flags.",
+        "When the label is already mg/mL, the formula is simply desired divided by have."
+      ],
+      "checks": [
+        {
+          "q": "An order reads morphine 4 mg IV. The vial is labeled 10 mg/mL. How many mL do you draw?",
+          "choices": ["0.4 mL", "2.5 mL", "4 mL", "0.25 mL"],
+          "answer": 0,
+          "why": "4 divided by 10 equals 0.4 mL. 2.5 mL is the inverted calculation (have divided by desired), and 4 mL confuses the milligram number for a volume."
+        },
+        {
+          "q": "The order is fentanyl 75 mcg. The vial reads 0.1 mg/mL. What must you do first?",
+          "choices": [
+            "Divide 75 by 0.1 immediately",
+            "Convert 0.1 mg to 100 mcg so both are in micrograms",
+            "Convert 75 mcg to 0.75 mg",
+            "Multiply 75 by 0.1"
+          ],
+          "answer": 1,
+          "why": "Desired and have must share a unit. 0.1 mg is 100 mcg, so the answer is 75/100 = 0.75 mL. Dividing 75 by 0.1 gives 750 — a thousandfold error. 75 mcg is 0.075 mg, not 0.75 mg."
+        },
+        {
+          "q": "In dimensional analysis, how do you know your setup is correct before doing the arithmetic?",
+          "choices": [
+            "The numbers come out whole",
+            "The answer is less than one vial",
+            "Every unit cancels except the unit you are solving for",
+            "The first fraction contains the ordered dose"
+          ],
+          "answer": 2,
+          "why": "The point of the method is unit cancellation: if anything but mL survives, the fractions are arranged wrong. Whole numbers and sub-vial volumes are common but prove nothing."
+        }
+      ]
+    },
+    {
+      "id": "emt-med-math-l04",
+      "title": "Weight-based and pediatric dosing",
+      "minutes": 8,
+      "body": "Adults get a fixed dose because adults are roughly the same size. Children are not, so nearly every pediatric number is per kilogram. The chain is always the same three steps: get kilograms, multiply by the per-kilogram dose to get milligrams, then convert milligrams to milliliters with the label.\n\n**kg, then mg, then mL.** Skip a step and you have guessed.\n\n## Getting the kilograms\n\nBest is a real scale. Second best is a **length-based tape** (Broselow is the common brand): you lay the tape alongside the child, and the color band at the heel gives an estimated weight plus pre-calculated doses, tube sizes and defibrillation energies for that band. Length predicts weight better than a parent's guess.\n\nWhen there is no tape, for ages `1` to `10` years:\n\n- **Weight in kg is roughly `(age x 2) + 8`**\n\nTwo more estimates from the same age number, worth knowing because they let you recognize an abnormal number rather than calculate a dose:\n\n- **Minimum acceptable systolic BP = `70 + (2 x age)`** for ages `1` to `10`. Below that is hypotension, and in a child hypotension is a late, ominous sign.\n- **Uncuffed ETT size = `(age / 4) + 4`**, cuffed is `(age / 4) + 3.5`. The tech does not size the tube, but knowing the number means handing over the right one.\n\n> **Trap:** A child compensates by raising heart rate and clamping down peripherally. Blood pressure stays normal until it collapses. Do not read a normal systolic as a stable child.\n\n## Worked problems\n\n**Problem 1 — a `176 lb` man, order fentanyl `1 mcg/kg` IV. Vial reads `100 mcg/2 mL`.**\n\n1. Kilograms: `176 / 2.2 = 80 kg`.\n2. Milligrams (micrograms here): `1 mcg/kg x 80 kg = 80 mcg`.\n3. Reduce the label: `100 mcg / 2 mL = 50 mcg/mL`.\n4. Milliliters: `80 / 50 = 1.6 mL`.\n\n**Problem 2 — a `22 lb` toddler, acetaminophen `15 mg/kg` PO. Suspension is `160 mg/5 mL`.**\n\n1. Kilograms: `22 / 2.2 = 10 kg`.\n2. Milligrams: `15 mg/kg x 10 kg = 150 mg`.\n3. Milliliters: `(150 / 160) x 5 mL = 0.94 x 5 = 4.7 mL`.\n4. Sanity check: the dose is slightly under one full `5 mL` measure, which matches `150 mg` being slightly under `160 mg`.\n\n**Problem 3 — a 4-year-old, no scale and no tape. Estimate weight and minimum acceptable systolic.**\n\n1. Weight: `(4 x 2) + 8 = 16 kg`.\n2. Minimum systolic: `70 + (2 x 4) = 78 mmHg`.\n3. So a systolic of `74` in this child is hypotension, not a small child's normal.\n\n**Problem 4 — same 16 kg child, cardiac arrest. Epinephrine `0.01 mg/kg` IO from the `0.1 mg/mL` syringe.**\n\n1. Milligrams: `0.01 x 16 = 0.16 mg`.\n2. Milliliters: `0.16 / 0.1 = 1.6 mL`.\n3. Cross-check against the tape band if one is in use — the two should agree within rounding.\n\n> **On shift:** Say the weight out loud in kilograms when you hand off a pediatric patient, and say where it came from: scale, tape, or estimate. Everyone downstream is multiplying by it.",
+      "keyPoints": [
+        "The chain is kg, then mg, then mL. Never jump from an order straight to a volume.",
+        "Pediatric weight estimate for ages 1 to 10: (age x 2) + 8 kg.",
+        "Minimum acceptable systolic for ages 1 to 10: 70 + (2 x age) mmHg.",
+        "A length-based tape beats any guess and carries pre-calculated doses, tube sizes and joules.",
+        "Pediatric arrest epinephrine is 0.01 mg/kg, drawn from the 0.1 mg/mL concentration."
+      ],
+      "checks": [
+        {
+          "q": "A 6-year-old arrives with no scale available. What is the estimated weight?",
+          "choices": ["12 kg", "20 kg", "24 kg", "16 kg"],
+          "answer": 1,
+          "why": "(6 x 2) + 8 equals 20 kg. 12 kg comes from doubling the age alone, and 24 kg from adding 12 instead of 8."
+        },
+        {
+          "q": "That same 6-year-old has a systolic of 76 mmHg. How should you read it?",
+          "choices": [
+            "Normal for age",
+            "Hypotensive — below the 82 mmHg floor for a 6-year-old",
+            "Hypertensive",
+            "Cannot be assessed without a weight"
+          ],
+          "answer": 1,
+          "why": "Minimum systolic is 70 + (2 x 6) = 82 mmHg, so 76 is frank hypotension and a late sign of shock. A weight is not needed for this estimate — only age."
+        },
+        {
+          "q": "A 25 kg child needs a drug at 0.5 mg/kg. The vial reads 5 mg/mL. What volume do you draw?",
+          "choices": ["2.5 mL", "12.5 mL", "0.5 mL", "5 mL"],
+          "answer": 0,
+          "why": "0.5 x 25 = 12.5 mg, then 12.5 / 5 = 2.5 mL. Picking 12.5 mL stops at the milligram step and calls it a volume — the most common weight-based error."
+        }
+      ]
+    },
+    {
+      "id": "emt-med-math-l05",
+      "title": "Drip rates, pump rates and time to infuse",
+      "minutes": 8,
+      "body": "Fluids and infusions are measured two different ways depending on what is running them. A pump takes **milliliters per hour**. A gravity bag with a drip chamber takes **drops per minute**.\n\n## Pump rate\n\n**mL/h = total volume / hours**\n\nA pump also wants a **VTBI**, the volume to be infused, so it stops when the bag is done. Rate and VTBI together are the whole order.\n\n## Drops per minute\n\nEvery administration set prints a **drop factor** on the package: how many drops make one milliliter.\n\n| Set | Drop factor | Typical use |\n|---|---|---|\n| Macrodrip | `10 gtt/mL` | Trauma, volume resuscitation |\n| Macrodrip | `15 gtt/mL` | General adult fluids |\n| Macrodrip | `20 gtt/mL` | General adult fluids |\n| Microdrip | `60 gtt/mL` | Pediatrics, medication drips, keep-open rates |\n\n**gtt/min = (volume in mL x drop factor) / time in minutes**\n\n> **Key:** With a `60 gtt/mL` microdrip set, drops per minute equals milliliters per hour. `80 mL/h` is `80 gtt/min`. That single fact removes most of the arithmetic from pediatric and drip work.\n\n## Time to infuse\n\n**Hours = total volume / mL per hour.** Running backwards from a hanging bag tells you when to be back in the room.\n\n## Reading the hardware\n\nSyringe barrels are graduated differently and the graduation sets your precision. A `1 mL` tuberculin syringe marks every `0.01 mL`, a `3 mL` syringe every `0.1 mL`, and a `10 mL` syringe every `0.2 mL`. Drawing `0.35 mL` in a `10 mL` syringe is guessing. An insulin syringe is marked in **units**, not milliliters, on a U-100 scale where `100 units` equals `1 mL` — never use it for anything but insulin.\n\n## Worked problems\n\n**Problem 1 — `1,000 mL` of normal saline over `8 hours` on a `15 gtt/mL` set.**\n\n1. Pump rate first as a check: `1,000 / 8 = 125 mL/h`.\n2. Minutes: `8 x 60 = 480`.\n3. Drops: `(1,000 x 15) / 480 = 15,000 / 480 = 31.25`.\n4. Round to whole drops: **`31 gtt/min`**, about one drop every two seconds.\n\n**Problem 2 — `500 mL` over `4 hours` on a `10 gtt/mL` set.**\n\n1. Minutes: `4 x 60 = 240`.\n2. `(500 x 10) / 240 = 5,000 / 240 = 20.8`.\n3. **`21 gtt/min`**, and the pump equivalent is `500 / 4 = 125 mL/h`.\n\n**Problem 3 — a bag shows `250 mL` remaining, running at `100 mL/h`. When does it finish?**\n\n1. `250 / 100 = 2.5 hours`.\n2. `0.5 h` is `30 minutes`, so **2 hours 30 minutes**.\n\n**Problem 4 — dopamine `5 mcg/kg/min` for an `80 kg` patient. Bag is `400 mg in 250 mL`.**\n\n1. Bag concentration: `400 mg = 400,000 mcg`; `400,000 / 250 = 1,600 mcg/mL`.\n2. Dose per minute: `5 x 80 = 400 mcg/min`.\n3. Dose per hour: `400 x 60 = 24,000 mcg/h`.\n4. Pump rate: `24,000 / 1,600 = 15 mL/h`.",
+      "keyPoints": [
+        "Pumps run on mL/h; gravity sets run on gtt/min. The drop factor is printed on the set.",
+        "gtt/min = (volume x drop factor) / minutes. mL/h = volume / hours.",
+        "On a 60 gtt/mL microdrip, gtt/min equals mL/h exactly.",
+        "Time remaining equals volume remaining divided by the hourly rate.",
+        "Syringe graduation sets precision: 1 mL marks every 0.01 mL, 10 mL only every 0.2 mL."
+      ],
+      "checks": [
+        {
+          "q": "You must run 1,000 mL over 6 hours using a 10 gtt/mL set. What is the drip rate?",
+          "choices": ["17 gtt/min", "28 gtt/min", "42 gtt/min", "167 gtt/min"],
+          "answer": 1,
+          "why": "6 hours is 360 minutes. (1,000 x 10) / 360 = 27.8, rounded to 28 gtt/min. 167 is the mL/h rate, and 42 would be correct only for a 4-hour infusion."
+        },
+        {
+          "q": "A microdrip (60 gtt/mL) set is ordered to deliver 50 mL/h. What is the drip rate?",
+          "choices": ["50 gtt/min", "12 gtt/min", "100 gtt/min", "30 gtt/min"],
+          "answer": 0,
+          "why": "With a 60 gtt/mL set the two numbers are identical, so 50 mL/h is 50 gtt/min. The other choices come from applying a macrodrip formula unnecessarily."
+        },
+        {
+          "q": "A 500 mL bag is running at 125 mL/h. How long until it is empty?",
+          "choices": ["2 hours", "4 hours", "6 hours", "45 minutes"],
+          "answer": 1,
+          "why": "500 divided by 125 equals 4 hours. Two hours would require 250 mL/h, and 45 minutes is not physically possible at this rate."
+        }
+      ]
+    },
+    {
+      "id": "emt-med-math-l06",
+      "title": "Fluid volumes: maintenance, boluses and burns",
+      "minutes": 8,
+      "body": "Three different fluid questions get asked, and they use three different numbers. **Maintenance** replaces what a body loses just by existing. A **bolus** replaces what has been lost acutely. **Burn resuscitation** replaces what is leaking out of damaged capillaries for a day.\n\n## Maintenance: the 4-2-1 rule\n\nHourly maintenance fluid, by body weight, added in layers:\n\n- `4 mL/kg/h` for the **first 10 kg**\n- `2 mL/kg/h` for the **next 10 kg**\n- `1 mL/kg/h` for **every kilogram above 20**\n\nThe layers exist because small bodies burn more energy per kilogram, and fluid need tracks energy use. For adults the shortcut is `weight in kg + 40` above `20 kg`, which is the same arithmetic.\n\n## Bolus\n\nA pediatric bolus is **`20 mL/kg`** of isotonic crystalloid, pushed fast and reassessed after each one. In adults, `500` to `1,000 mL` is typical, and sepsis protocols commonly use `30 mL/kg`. Reassess lungs and perfusion between boluses rather than running a fixed total.\n\n## Burns: how much surface is burned\n\nThe **rule of nines** divides an adult into `9%` blocks: head and neck `9`, each arm `9`, front of the trunk `18`, back of the trunk `18`, each leg `18`, genitals `1`. A child's head is proportionally huge — roughly `18%` — and each leg is closer to `14%`.\n\nFor scattered or irregular burns use the **palm method**: the patient's own palm including the fingers is about `1%` of their body surface.\n\nCount only **partial-thickness and full-thickness** burn. Superficial (old first-degree, red and dry like sunburn) does not count toward TBSA.\n\n## Parkland\n\n**Total fluid in the first 24 hours = `4 mL x kg x %TBSA`.** Half goes in the **first 8 hours measured from the time of the burn**, not from arrival. The rest runs over the following 16 hours.\n\n> **Trap:** The clock starts at the burn. A patient who arrives two hours later still gets the first half by hour eight, so the remaining volume is squeezed into six hours at a higher rate.\n\nThe classic `4 mL` figure is what exams test. Many burn centers now start closer to `2 mL/kg` per `%TBSA` for thermal burns and titrate to urine output — varies by protocol.\n\n## Worked problems\n\n**Problem 1 — maintenance for a `26 kg` child.**\n\n1. First 10 kg: `10 x 4 = 40 mL/h`.\n2. Next 10 kg: `10 x 2 = 20 mL/h`.\n3. Remaining 6 kg: `6 x 1 = 6 mL/h`.\n4. Total: `40 + 20 + 6 = 66 mL/h`.\n\n**Problem 2 — bolus for the same child at `20 mL/kg`.**\n\n1. `20 x 26 = 520 mL`.\n2. Round to a practical bag volume and reassess before a second bolus.\n\n**Problem 3 — an `80 kg` adult with burns to one whole arm and the entire front of the trunk.**\n\n1. TBSA: arm `9` plus anterior trunk `18` equals `27%`.\n2. Parkland total: `4 x 80 x 27 = 8,640 mL` over 24 hours.\n3. First half: `8,640 / 2 = 4,320 mL` in the first 8 hours.\n4. Rate: `4,320 / 8 = 540 mL/h`.\n5. If two hours already passed before arrival, the same `4,320 mL` now has 6 hours left: `4,320 / 6 = 720 mL/h`.",
+      "keyPoints": [
+        "Maintenance 4-2-1: 4 mL/kg/h for the first 10 kg, 2 for the next 10, 1 for every kg over 20.",
+        "Pediatric bolus is 20 mL/kg isotonic crystalloid, reassessed between boluses.",
+        "Rule of nines: arm 9, leg 18, front of trunk 18, back 18, head 9 in adults and about 18 in small children.",
+        "The patient's palm including fingers is about 1% TBSA — use it for scattered burns.",
+        "Parkland is 4 mL x kg x %TBSA, half in the first 8 hours timed from the burn, not from arrival."
+      ],
+      "checks": [
+        {
+          "q": "What is the hourly maintenance rate for a 30 kg child using the 4-2-1 rule?",
+          "choices": ["60 mL/h", "70 mL/h", "120 mL/h", "90 mL/h"],
+          "answer": 1,
+          "why": "40 for the first 10 kg, plus 20 for the next 10, plus 10 for the remaining 10 kg, equals 70 mL/h. 120 mL/h comes from applying 4 mL/kg to the whole weight."
+        },
+        {
+          "q": "A 70 kg adult has burns to both entire legs. Using Parkland, what is the total 24-hour volume?",
+          "choices": ["5,040 mL", "10,080 mL", "2,520 mL", "20,160 mL"],
+          "answer": 1,
+          "why": "Both legs are 18% each, so 36% TBSA. 4 x 70 x 36 = 10,080 mL. Answering 5,040 counts only one leg; 20,160 doubles the whole formula."
+        },
+        {
+          "q": "A burn happened at 14:00 and the patient reaches you at 16:00. When must the first half of the Parkland volume be completed?",
+          "choices": ["By 00:00", "By 22:00", "By 20:00", "By 18:00"],
+          "answer": 1,
+          "why": "The 8-hour clock starts at the burn, 14:00, so the first half is due by 22:00 — leaving only 6 hours to deliver it. Counting 8 hours from arrival gives 00:00 and under-resuscitates the patient."
+        }
+      ]
+    },
+    {
+      "id": "emt-med-math-l07",
+      "title": "Oxygen cylinder duration",
+      "minutes": 6,
+      "body": "A portable oxygen cylinder holds a fixed number of liters, compressed. The gauge reads pressure, not volume, but the two are proportional: at half the pressure, half the gas is left. That proportion is what the cylinder constant captures.\n\n## The formula\n\n**Duration in minutes = ((gauge pressure - 200) x cylinder constant) / flow rate in L/min**\n\n- **Gauge pressure** is what the regulator reads right now, in psi. A full cylinder is about `2,000` to `2,200 psi`.\n- **200 psi** is the **safe residual**. Below roughly that, delivery becomes unreliable and the tank must be swapped. Subtracting it means the number you calculate is usable oxygen, not total oxygen.\n- **Cylinder constant** converts psi to liters for that tank size.\n\n| Cylinder | Constant | Where you see it |\n|---|---|---|\n| D | `0.16` | Small portable, stair chair bags |\n| E | `0.28` | Standard portable on the stretcher |\n| M | `1.56` | Large in-ambulance or in-room tank |\n| G | `2.41` | Facility floor tank |\n| H or K | `3.14` | Largest facility tank |\n\n> **Key:** Flow rate sits in the denominator, so duration and flow move in opposite directions. Doubling from `6 L/min` to `12 L/min` halves your time. A non-rebreather at `15 L/min` empties a portable tank fast.\n\n## Worked problems\n\n**Problem 1 — an E cylinder reads `2,000 psi`. Patient is on a non-rebreather at `15 L/min`. How long?**\n\n1. Usable pressure: `2,000 - 200 = 1,800 psi`.\n2. Liters: `1,800 x 0.28 = 504 L`.\n3. Duration: `504 / 15 = 33.6`, so about **33 minutes**.\n4. Sanity check: a 20-minute transport works, a 45-minute one does not. Bring a spare.\n\n**Problem 2 — a D cylinder reads `1,500 psi`, nasal cannula at `6 L/min`.**\n\n1. Usable: `1,500 - 200 = 1,300 psi`.\n2. Liters: `1,300 x 0.16 = 208 L`.\n3. Duration: `208 / 6 = 34.7`, about **34 minutes**.\n\n**Problem 3 — the ambulance M cylinder reads `2,200 psi`, patient at `10 L/min`.**\n\n1. Usable: `2,200 - 200 = 2,000 psi`.\n2. Liters: `2,000 x 1.56 = 3,120 L`.\n3. Duration: `3,120 / 10 = 312 minutes`, which is **5 hours 12 minutes**.\n\n**Problem 4 — the same E cylinder from problem 1, but now down to `1,000 psi` and the patient is on a cannula at `2 L/min`.**\n\n1. Usable: `1,000 - 200 = 800 psi`.\n2. Liters: `800 x 0.28 = 224 L`.\n3. Duration: `224 / 2 = 112 minutes`, nearly **2 hours** — from a tank half as full as problem 1, because the flow dropped by a factor of seven and a half.\n\n> **On shift:** Check the gauge before you leave the rig, not when the patient starts desaturating. Write the psi on your run sheet at contact and at arrival; the difference tells you whether the tank actually flowed.",
+      "keyPoints": [
+        "Duration equals (gauge psi minus 200) times the cylinder constant, divided by flow in L/min.",
+        "Cylinder constants: D is 0.16, E is 0.28, M is 1.56.",
+        "The 200 psi safe residual is subtracted first — below it, delivery is unreliable and the tank gets swapped.",
+        "Flow is the denominator: doubling the flow halves the time.",
+        "A full E cylinder at 15 L/min lasts roughly half an hour, which is shorter than many transports."
+      ],
+      "checks": [
+        {
+          "q": "An E cylinder reads 1,600 psi and the patient is on 10 L/min. Approximately how long will it last?",
+          "choices": ["16 minutes", "45 minutes", "39 minutes", "56 minutes"],
+          "answer": 2,
+          "why": "(1,600 - 200) x 0.28 = 392 L; 392 / 10 = 39 minutes. Forgetting the 200 psi residual gives 45 minutes and overestimates your margin."
+        },
+        {
+          "q": "Why is 200 psi subtracted before calculating duration?",
+          "choices": [
+            "It corrects for temperature in the cylinder",
+            "It is the safe residual below which delivery is unreliable and the tank must be changed",
+            "It accounts for the regulator's own consumption",
+            "It converts psi into liters"
+          ],
+          "answer": 1,
+          "why": "The residual is a safety floor, not a physics correction. The cylinder constant is what converts psi to liters, and regulators do not consume a meaningful volume."
+        },
+        {
+          "q": "A D cylinder holds a patient for 40 minutes at 5 L/min. If flow is increased to 10 L/min, roughly how long will the same remaining gas last?",
+          "choices": ["20 minutes", "40 minutes", "80 minutes", "10 minutes"],
+          "answer": 0,
+          "why": "Flow is in the denominator, so doubling it halves the duration: 20 minutes. Duration never increases with a higher flow, and quartering to 10 minutes would require four times the flow."
+        }
+      ]
+    },
+    {
+      "id": "emt-med-math-l08",
+      "title": "Vital-sign math: MAP, pulse pressure and shock index",
+      "minutes": 7,
+      "body": "A blood pressure is two numbers, but the useful information is in what you calculate from them. Perfusion depends on average pressure over the whole cardiac cycle, not on the peak.\n\n## Pulse pressure\n\n**Pulse pressure = systolic - diastolic.** Normal is about `30` to `40 mmHg`, and it reflects stroke volume — how much blood the left ventricle ejects per beat.\n\n- **Narrowing** (below roughly a quarter of the systolic) means the ventricle is ejecting less or the vessels are clamped down: hemorrhage, cardiac tamponade, tension pneumothorax.\n- **Widening** means a large stroke volume or stiff arteries: sepsis early on, aortic regurgitation, and importantly **rising intracranial pressure**.\n\n## Mean arterial pressure\n\nThe heart spends about twice as long in diastole as in systole, so the average is weighted toward the diastolic number.\n\n**MAP = diastolic + (pulse pressure / 3)**, which is the same as **`(systolic + 2 x diastolic) / 3`**.\n\nA MAP of at least **`65 mmHg`** is the usual floor for perfusing kidneys and brain. Vasopressor orders are written against MAP, not systolic, which is why you will hear it called out during resuscitations.\n\n## Shock index\n\n**Shock index = heart rate / systolic BP.** Normal is `0.5` to `0.7`. Above **`0.9`** predicts occult shock and transfusion need before the blood pressure ever falls, because a compensating patient raises heart rate first.\n\n## Cerebral perfusion pressure\n\nThe brain sits inside a rigid skull, so the pressure pushing blood in must exceed the pressure inside.\n\n**CPP = MAP - ICP.** Normal ICP is `5` to `15 mmHg`, and the usual adult target is a CPP of at least `60 mmHg`. You will not measure ICP in the field, but the relationship explains why hypotension is catastrophic in head injury: drop the MAP and the brain's perfusion drops with it.\n\n> **Key:** Cushing's triad is rising systolic with a widening pulse pressure, falling heart rate, and irregular respirations. It is the body raising MAP to force blood past a rising ICP. It is late, and it means herniation is close.\n\n## Worked problems\n\n**Problem 1 — BP `88/50`. Calculate pulse pressure and MAP.**\n\n1. Pulse pressure: `88 - 50 = 38 mmHg`.\n2. One third of that: `38 / 3 = 12.7`.\n3. MAP: `50 + 12.7 = 62.7`, so about **`63 mmHg`** — under the `65` floor.\n\n**Problem 2 — HR `124`, BP `86/60`. Calculate shock index.**\n\n1. `124 / 86 = 1.44`.\n2. Normal is `0.5` to `0.7`, so `1.44` is roughly double the top of normal — profound occult or overt shock.\n\n**Problem 3 — head injury, BP `108/54`, measured ICP `18 mmHg`. Calculate CPP.**\n\n1. Pulse pressure: `108 - 54 = 54`.\n2. MAP: `54 + (54 / 3) = 54 + 18 = 72 mmHg`.\n3. CPP: `72 - 18 = 54 mmHg`, below the `60` target. The brain is under-perfused even though the systolic looks acceptable.",
+      "keyPoints": [
+        "Pulse pressure is systolic minus diastolic; normal 30 to 40 mmHg. Narrowing suggests falling stroke volume.",
+        "MAP equals diastolic plus one third of the pulse pressure; the perfusion floor is 65 mmHg.",
+        "Shock index is HR divided by systolic; above 0.9 flags shock before the pressure drops.",
+        "CPP equals MAP minus ICP, target at least 60 mmHg — which is why hypotension kills head-injured patients.",
+        "Cushing's triad is rising systolic with widening pulse pressure, bradycardia and irregular respirations."
+      ],
+      "checks": [
+        {
+          "q": "A patient's BP is 120/60. What is the MAP?",
+          "choices": ["90 mmHg", "80 mmHg", "60 mmHg", "100 mmHg"],
+          "answer": 1,
+          "why": "Pulse pressure is 60; one third is 20; 60 + 20 = 80 mmHg. Answering 90 is the simple average of the two numbers, which ignores that diastole lasts twice as long."
+        },
+        {
+          "q": "HR is 110 and systolic is 100. What does the shock index suggest?",
+          "choices": [
+            "Normal, index 0.9 is within the usual range",
+            "Index of 1.1 — elevated, suspect occult shock despite a normal-looking pressure",
+            "Index of 0.9 — reassuring because the pressure is 100",
+            "Cannot calculate without the diastolic"
+          ],
+          "answer": 1,
+          "why": "110 / 100 = 1.1, well above the 0.5 to 0.7 normal and above the 0.9 warning line. Shock index uses systolic only, so no diastolic is needed."
+        },
+        {
+          "q": "A head-injured patient's pressure is climbing while the heart rate falls to 48 and breathing becomes irregular. What is this?",
+          "choices": [
+            "Cushing's triad from rising intracranial pressure",
+            "Compensated hypovolemic shock",
+            "Normal vagal response to pain",
+            "Neurogenic shock"
+          ],
+          "answer": 0,
+          "why": "Rising systolic with widening pulse pressure, bradycardia and irregular respirations is Cushing's triad. Hypovolemic shock produces tachycardia with a falling pressure, and neurogenic shock produces hypotension with a normal or slow rate but no rising pressure."
+        }
+      ]
+    },
+    {
+      "id": "emt-med-math-l09",
+      "title": "Scoring as arithmetic: GCS, APGAR and rate from a strip",
+      "minutes": 7,
+      "body": "Three scores get added up at the bedside constantly. All three are pure arithmetic once you know what each point means, and getting them wrong changes what happens to the patient.\n\n## Glasgow Coma Scale\n\nThree columns, added. Minimum is `3` (never zero — a dead patient still scores 3), maximum `15`.\n\n| Eye opening | Verbal | Motor |\n|---|---|---|\n| `4` spontaneous | `5` oriented | `6` obeys commands |\n| `3` to voice | `4` confused | `5` localizes pain |\n| `2` to pressure | `3` inappropriate words | `4` withdraws from pain |\n| `1` none | `2` incomprehensible sounds | `3` abnormal flexion |\n| | `1` none | `2` abnormal extension |\n| | | `1` none |\n\nA GCS of `8 or less` is the classic threshold for an airway that cannot protect itself. Always report the breakdown, not just the total: `E3 V4 M5` says far more than `12`.\n\n## APGAR\n\nScored on a newborn at **1 minute and 5 minutes**. Five items, `0` to `2` each, maximum `10`.\n\n- **Appearance**: blue or pale `0`, body pink with blue extremities `1`, all pink `2`\n- **Pulse**: absent `0`, under `100` is `1`, `100` or more is `2`\n- **Grimace**: no response `0`, grimace `1`, cough or cry `2`\n- **Activity** (tone): limp `0`, some flexion `1`, active motion `2`\n- **Respirations**: absent `0`, slow or weak cry `1`, strong cry `2`\n\n> **Trap:** APGAR is a report card, not a trigger. You do not wait for a 1-minute score to start drying, warming and stimulating a newborn, and you never delay ventilation for it.\n\n## Heart rate from an ECG strip\n\nECG paper runs at `25 mm/s`. A small box is `0.04 s`, a large box (five small) is `0.20 s`.\n\n1. **300 method** — `300 / number of large boxes between R waves`. The memorized sequence is `300, 150, 100, 75, 60, 50`. Fast, regular rhythms only.\n2. **1500 method** — `1500 / number of small boxes between R waves`. More precise.\n3. **6-second method** — count QRS complexes in 6 seconds (30 large boxes, usually marked at the top) and multiply by `10`. The only valid method for an irregular rhythm.\n\n## Worked problems\n\n**Problem 1 — a patient opens his eyes when you speak, answers questions but is confused about the date, and reaches toward your hand during a trapezius pinch. GCS?**\n\n1. Eyes to voice: `E3`.\n2. Confused conversation: `V4`.\n3. Localizes the painful stimulus: `M5`.\n4. Total: `3 + 4 + 5 = 12`. Report `E3 V4 M5 = 12`.\n\n**Problem 2 — a newborn at 1 minute: heart rate `90`, slow irregular breathing, some flexion, grimaces to suction, pink trunk with blue hands and feet.**\n\n1. Pulse `90`, under 100: `1`.\n2. Slow irregular respirations: `1`.\n3. Some flexion: `1`.\n4. Grimace only: `1`.\n5. Trunk pink, extremities blue: `1`.\n6. Total: `1 + 1 + 1 + 1 + 1 = 5`. Begin positive-pressure ventilation for the rate under 100 rather than rescoring.\n\n**Problem 3 — three strips.**\n\n1. R waves exactly `4` large boxes apart: `300 / 4 = 75 bpm`.\n2. R waves `18` small boxes apart: `1500 / 18 = 83 bpm`.\n3. An irregular strip with `7` QRS complexes in a 6-second window: `7 x 10 = 70 bpm`.",
+      "keyPoints": [
+        "GCS is eye (4) plus verbal (5) plus motor (6); range 3 to 15, and 8 or less flags a threatened airway.",
+        "Always report GCS as its three components, not just the total.",
+        "APGAR is five items scored 0 to 2 at 1 and 5 minutes; it documents, it does not direct care.",
+        "A newborn heart rate under 100 scores 1 and demands ventilation, not another score.",
+        "Rate from a strip: 300 / large boxes, 1500 / small boxes, or QRS in 6 seconds times 10 for irregular rhythms."
+      ],
+      "checks": [
+        {
+          "q": "A patient opens his eyes only to a sternal rub, makes incomprehensible sounds, and withdraws from pain. What is his GCS?",
+          "choices": ["6", "8", "9", "7"],
+          "answer": 1,
+          "why": "Eyes to pressure is 2, incomprehensible sounds is 2, withdrawal from pain is 4. 2 + 2 + 4 = 8 — right at the threshold for a threatened airway."
+        },
+        {
+          "q": "An irregularly irregular rhythm shows 9 QRS complexes in a 6-second strip. What is the rate?",
+          "choices": ["54", "90", "75", "150"],
+          "answer": 1,
+          "why": "9 complexes x 10 = 90 bpm. The 300 and 1500 methods both assume regular R-R intervals and are invalid here, which is why they produce the other numbers."
+        },
+        {
+          "q": "At 1 minute a newborn has a heart rate of 140, a strong cry, active motion, cries on suction, and is pink with blue hands. What is the APGAR?",
+          "choices": ["9", "10", "8", "7"],
+          "answer": 0,
+          "why": "Pulse 2, respirations 2, activity 2, grimace 2, appearance 1 for acrocyanosis, total 9. Blue hands and feet alone cost exactly one point and are normal in the first minutes."
+        }
+      ]
+    },
+    {
+      "id": "emt-med-math-l10",
+      "title": "Decimal disasters, the double-check, and mixed practice",
+      "minutes": 9,
+      "body": "Almost no serious medication error is a hard calculation done wrong. It is an easy calculation done to the wrong number.\n\n## The four ways it goes wrong\n\n**Decimal placement.** A dose ten times too large usually looks like a plausible number. Two writing rules exist entirely to prevent it: **always use a leading zero** (`0.5 mg`, never `.5 mg`, because a missed decimal point reads as `5 mg`) and **never use a trailing zero** (`5 mg`, never `5.0 mg`, because a missed decimal point reads as `50 mg`).\n\n**Unit mismatch.** Dividing micrograms by milligrams without converting produces a thousandfold error that the arithmetic will not flag. Write the unit next to every number you put on paper.\n\n**Concentration confusion.** Epinephrine is the standing example: `1 mg/mL` for IM anaphylaxis, `0.1 mg/mL` for IV and IO arrest. Same drug, same milligram order, ten times the concentration. Read the concentration aloud, not the drug name.\n\n**Abbreviations.** `U` for units is read as a zero. Write `units`. `mcg` is written out rather than the Greek symbol for the same reason.\n\n> **Key:** The independent double-check means a second person calculates from the original order and the actual vial, without being told your answer. Being asked to confirm a number is not a double-check — it is agreement.\n\n> **On shift:** Say it out loud as drug, dose, concentration, volume and route: \"ondansetron four milligrams, four per two mils, giving two mils IV.\" Every element that can be wrong gets spoken by somebody.\n\n## Mixed practice\n\nWork these against a clock. Each line shows the arithmetic.\n\n1. `154 lb` in kilograms: `154 / 2.2 = 70 kg`.\n2. `0.25 mg` in micrograms: three places right, `250 mcg`.\n3. Ondansetron `4 mg` from a `4 mg/2 mL` vial: `(4 / 4) x 2 = 2 mL`.\n4. Epinephrine `0.3 mg` IM from `1 mg/mL`: `(0.3 / 1) x 1 = 0.3 mL`.\n5. Epinephrine `1 mg` IV from `0.1 mg/mL`: `1 / 0.1 = 10 mL`.\n6. Milligrams in `3 mL` of `2%` lidocaine: `2 x 10 = 20 mg/mL`, then `20 x 3 = 60 mg`.\n7. `1,000 mL` over `4 h` on a `10 gtt/mL` set: `(1,000 x 10) / 240 = 42 gtt/min`.\n8. Same bag on a pump: `1,000 / 4 = 250 mL/h`.\n9. A `30 kg` child, bolus at `20 mL/kg`: `20 x 30 = 600 mL`.\n10. Maintenance for that `30 kg` child: `40 + 20 + 10 = 70 mL/h`.\n11. E cylinder at `1,800 psi`, flow `10 L/min`: `(1,800 - 200) x 0.28 = 448`, then `448 / 10 = 44 minutes`.\n12. BP `96/60`: pulse pressure `36`, MAP `60 + 12 = 72 mmHg`.\n13. HR `132`, systolic `88`: shock index `132 / 88 = 1.5`.\n14. A 6-year-old: weight `(6 x 2) + 8 = 20 kg`, minimum systolic `70 + 12 = 82 mmHg`.\n15. A `70 kg` adult with `22%` TBSA burns: `4 x 70 x 22 = 6,160 mL`, half is `3,080 mL`, over 8 hours that is `385 mL/h`.\n\n> **Trap:** Problem 5 is the one people get wrong under pressure. `10 mL` feels enormous for a drug dose, and it is correct — because the arrest concentration is deliberately dilute. Volume alone is not a safety signal until you know the concentration.",
+      "keyPoints": [
+        "Leading zeros always (0.5 mg), trailing zeros never (5 mg) — both rules exist to stop tenfold errors.",
+        "Write the unit beside every number; unit mismatch is invisible to arithmetic.",
+        "Epinephrine 1 mg/mL is IM anaphylaxis; 0.1 mg/mL is IV/IO arrest. Read the concentration, not the name.",
+        "Write 'units' in full — the letter U reads as a zero.",
+        "An independent double-check means recalculating from the order and vial, not confirming someone's answer."
+      ],
+      "checks": [
+        {
+          "q": "Which way of writing a dose is correct?",
+          "choices": ["1.0 mg", ".5 mg", "0.5 mg", "5.0 U"],
+          "answer": 2,
+          "why": "Leading zero required, trailing zero forbidden. '1.0 mg' can be misread as 10 mg, '.5 mg' as 5 mg, and 'U' as a zero — all tenfold errors."
+        },
+        {
+          "q": "What makes a double-check independent?",
+          "choices": [
+            "A second person recalculates from the original order and the actual vial without seeing your answer",
+            "A second person confirms the number you state",
+            "You recalculate it yourself a second time",
+            "The pump confirms the rate"
+          ],
+          "answer": 0,
+          "why": "Being given an answer biases the checker toward agreeing with it. Repeating your own work reproduces your own error, and a pump verifies only what was entered into it."
+        },
+        {
+          "q": "An order reads epinephrine 1 mg IV for cardiac arrest and you draw 10 mL. Is this correct?",
+          "choices": [
+            "No — 10 mL is never a single drug dose",
+            "Yes, if the syringe is the 0.1 mg/mL arrest concentration",
+            "No — it should be 0.1 mL",
+            "Yes, if the vial is 1 mg/mL"
+          ],
+          "answer": 1,
+          "why": "At 0.1 mg/mL, 1 mg occupies 10 mL, which is exactly what the prefilled arrest syringe contains. From a 1 mg/mL vial the same dose would be 1 mL, so the volume is only correct once the concentration is confirmed."
+        }
+      ]
+    }
+  ],
+  "cards": [
+    { "id": "emt-med-math-c001", "front": "How do you convert pounds to kilograms, and how do you check the answer?", "back": "Divide by 2.2. The kilogram number must come out smaller than the pound number; if it is bigger, you multiplied by mistake.", "lesson": "emt-med-math-l01" },
+    { "id": "emt-med-math-c002", "front": "A patient weighs 198 lb. What is that in kilograms?", "back": "198 divided by 2.2 equals 90 kg.", "lesson": "emt-med-math-l01" },
+    { "id": "emt-med-math-c003", "front": "What is the formula for Fahrenheit to Celsius, and what two anchor values check it?", "back": "(F minus 32) times 5/9. Anchors: 98.6 F equals 37 C, and 100.4 F equals 38 C, the fever threshold.", "lesson": "emt-med-math-l01" },
+    { "id": "emt-med-math-c004", "front": "How many micrograms are in one milligram, and how many milligrams in one gram?", "back": "1 mg equals 1,000 mcg. 1 g equals 1,000 mg. Each metric step is a factor of 1,000, or a three-place decimal move.", "lesson": "emt-med-math-l01" },
+    { "id": "emt-med-math-c005", "front": "Converting 0.5 g to milligrams — which way does the decimal move and to what?", "back": "Bigger unit to smaller unit means the number grows: move three places right. 0.5 g becomes 500 mg.", "lesson": "emt-med-math-l01" },
+    { "id": "emt-med-math-c006", "front": "Is 1 mL the same as 1 cc?", "back": "Yes. A milliliter and a cubic centimeter are the same volume. Labels and orders use both terms interchangeably.", "lesson": "emt-med-math-l01" },
+    { "id": "emt-med-math-c007", "front": "How do you convert inches to centimeters?", "back": "Multiply by 2.54. Centimeters to inches divides by 2.54.", "lesson": "emt-med-math-l01" },
+    { "id": "emt-med-math-c008", "front": "What does a ratio strength of 1:1,000 mean in mg/mL?", "back": "1 g in 1,000 mL, which is 1,000 mg in 1,000 mL, so 1 mg/mL. This is the IM anaphylaxis concentration of epinephrine.", "lesson": "emt-med-math-l02" },
+    { "id": "emt-med-math-c009", "front": "What does 1:10,000 mean in mg/mL, and where is it used?", "back": "0.1 mg/mL. It is the dilute IV and IO cardiac arrest epinephrine, supplied as a 10 mL prefilled syringe containing 1 mg.", "lesson": "emt-med-math-l02" },
+    { "id": "emt-med-math-c010", "front": "What is the shortcut for converting a percent solution to mg/mL?", "back": "Multiply the percent by 10. A percent is grams per 100 mL, so 1% equals 10 mg/mL and 2% equals 20 mg/mL.", "lesson": "emt-med-math-l02" },
+    { "id": "emt-med-math-c011", "front": "How much dextrose is in a standard D50 prefilled syringe?", "back": "25 g in 50 mL. Fifty percent means 50 g per 100 mL, so a 50 mL syringe holds half of that, a concentration of 0.5 g/mL.", "lesson": "emt-med-math-l02" },
+    { "id": "emt-med-math-c012", "front": "What is the concentration of D10, and what volume delivers 25 g?", "back": "D10 is 10 g per 100 mL, which is 100 mg/mL. Delivering 25 g takes 250 mL.", "lesson": "emt-med-math-l02" },
+    { "id": "emt-med-math-c013", "front": "A vial reads 100 mcg/2 mL. What is the concentration per mL?", "back": "Divide the total by the volume: 100 divided by 2 equals 50 mcg/mL.", "lesson": "emt-med-math-l02" },
+    { "id": "emt-med-math-c014", "front": "Why is reading only the front number of a vial dangerous?", "back": "The front number is a concentration, not the contents. A 10 mg/mL label on a 10 mL vial means 100 mg is in your hand.", "lesson": "emt-med-math-l02" },
+    { "id": "emt-med-math-c015", "front": "How many milligrams of lidocaine are in 5 mL of a 2% solution?", "back": "2% is 20 mg/mL; 20 times 5 equals 100 mg.", "lesson": "emt-med-math-l02" },
+    { "id": "emt-med-math-c016", "front": "What is the standard dose formula for converting an order into a volume?", "back": "Volume to give equals desired divided by have, multiplied by the volume the have sits in. When the label is already mg/mL, it collapses to desired divided by have.", "lesson": "emt-med-math-l03" },
+    { "id": "emt-med-math-c017", "front": "What must be true about desired and have before you divide them?", "back": "They must be in the same unit. Micrograms against milligrams without conversion produces a thousandfold error that looks reasonable.", "lesson": "emt-med-math-l03" },
+    { "id": "emt-med-math-c018", "front": "In dimensional analysis, how do you know the setup is right before calculating?", "back": "Every unit cancels except the one you are solving for. If anything but mL survives, the fractions are arranged wrong.", "lesson": "emt-med-math-l03" },
+    { "id": "emt-med-math-c019", "front": "Order: diphenhydramine 25 mg. Vial: 50 mg/mL. How many mL?", "back": "25 divided by 50 equals 0.5 mL.", "lesson": "emt-med-math-l03" },
+    { "id": "emt-med-math-c020", "front": "Order: acetaminophen 650 mg. Suspension: 160 mg/5 mL. How many mL?", "back": "650 divided by 160 equals 4.06; times 5 mL equals about 20.3 mL.", "lesson": "emt-med-math-l03" },
+    { "id": "emt-med-math-c021", "front": "Order: naloxone 0.4 mg. Vial: 2 mg/2 mL. How many mL?", "back": "Reduce the label to 1 mg/mL first, then 0.4 divided by 1 equals 0.4 mL.", "lesson": "emt-med-math-l03" },
+    { "id": "emt-med-math-c022", "front": "What two sanity checks should flag a calculated volume as suspicious?", "back": "A routine intramuscular volume over 2 mL, and a routine dose that needs more than one full vial. Both deserve recalculation before administration.", "lesson": "emt-med-math-l03" },
+    { "id": "emt-med-math-c023", "front": "What are the three steps of every weight-based dose calculation?", "back": "Kilograms first, then milligrams by multiplying the per-kilogram dose, then milliliters using the label concentration. kg, mg, mL.", "lesson": "emt-med-math-l04" },
+    { "id": "emt-med-math-c024", "front": "How do you estimate a child's weight from age, for ages 1 to 10?", "back": "Weight in kg is roughly (age x 2) + 8. A 4-year-old is about 16 kg.", "lesson": "emt-med-math-l04" },
+    { "id": "emt-med-math-c025", "front": "What is the minimum acceptable systolic blood pressure for a child aged 1 to 10?", "back": "70 + (2 x age in years). A 6-year-old's floor is 82 mmHg; anything lower is hypotension and a late sign of shock.", "lesson": "emt-med-math-l04" },
+    { "id": "emt-med-math-c026", "front": "What does a length-based resuscitation tape give you beyond an estimated weight?", "back": "A color band with pre-calculated drug doses, airway and tube sizes, and defibrillation energies for that band. Length predicts weight better than a guess.", "lesson": "emt-med-math-l04" },
+    { "id": "emt-med-math-c027", "front": "What is the formula for uncuffed endotracheal tube size in a child?", "back": "(age in years divided by 4) + 4. Cuffed tubes use (age / 4) + 3.5.", "lesson": "emt-med-math-l04" },
+    { "id": "emt-med-math-c028", "front": "A 16 kg child in arrest needs epinephrine 0.01 mg/kg from a 0.1 mg/mL syringe. What volume?", "back": "0.01 x 16 equals 0.16 mg; 0.16 divided by 0.1 equals 1.6 mL.", "lesson": "emt-med-math-l04" },
+    { "id": "emt-med-math-c029", "front": "A 22 lb toddler needs acetaminophen 15 mg/kg from a 160 mg/5 mL suspension. What volume?", "back": "22 divided by 2.2 equals 10 kg; 15 x 10 equals 150 mg; (150/160) x 5 equals about 4.7 mL.", "lesson": "emt-med-math-l04" },
+    { "id": "emt-med-math-c030", "front": "What is the formula for drops per minute on a gravity set?", "back": "gtt/min equals volume in mL times the drop factor, divided by time in minutes. The drop factor is printed on the administration set.", "lesson": "emt-med-math-l05" },
+    { "id": "emt-med-math-c031", "front": "What are the four common drop factors and what is each used for?", "back": "10, 15 and 20 gtt/mL macrodrip sets for adult fluids and resuscitation; 60 gtt/mL microdrip for pediatrics, medication drips and keep-open rates.", "lesson": "emt-med-math-l05" },
+    { "id": "emt-med-math-c032", "front": "What shortcut applies to a 60 gtt/mL microdrip set?", "back": "Drops per minute equals milliliters per hour exactly. An order for 80 mL/h is 80 gtt/min.", "lesson": "emt-med-math-l05" },
+    { "id": "emt-med-math-c033", "front": "How do you calculate 1,000 mL over 8 hours on a 15 gtt/mL set?", "back": "8 hours is 480 minutes. (1,000 x 15) divided by 480 equals 31.25, so 31 gtt/min. The pump equivalent is 125 mL/h.", "lesson": "emt-med-math-l05" },
+    { "id": "emt-med-math-c034", "front": "How do you find the time remaining on a hanging bag?", "back": "Divide the volume remaining by the hourly rate. 250 mL at 100 mL/h equals 2.5 hours, or 2 hours 30 minutes.", "lesson": "emt-med-math-l05" },
+    { "id": "emt-med-math-c035", "front": "What two values does an infusion pump need to run a bag?", "back": "A rate in mL/h and a VTBI, the volume to be infused, so the pump stops when the bag is finished.", "lesson": "emt-med-math-l05" },
+    { "id": "emt-med-math-c036", "front": "How fine are the graduations on 1 mL, 3 mL and 10 mL syringes?", "back": "1 mL tuberculin marks every 0.01 mL, 3 mL every 0.1 mL, 10 mL only every 0.2 mL. Drawing 0.35 mL in a 10 mL syringe is guesswork.", "lesson": "emt-med-math-l05" },
+    { "id": "emt-med-math-c037", "front": "What is the 4-2-1 rule for hourly maintenance fluid?", "back": "4 mL/kg/h for the first 10 kg, 2 mL/kg/h for the next 10 kg, 1 mL/kg/h for every kilogram above 20.", "lesson": "emt-med-math-l06" },
+    { "id": "emt-med-math-c038", "front": "What is the maintenance rate for a 26 kg child?", "back": "40 for the first 10 kg, plus 20 for the next 10, plus 6 for the remaining 6 kg, equals 66 mL/h.", "lesson": "emt-med-math-l06" },
+    { "id": "emt-med-math-c039", "front": "What is the standard pediatric fluid bolus, and what do you do between boluses?", "back": "20 mL/kg of isotonic crystalloid. Reassess perfusion and lung sounds after each bolus rather than running a fixed total.", "lesson": "emt-med-math-l06" },
+    { "id": "emt-med-math-c040", "front": "What percentages does the adult rule of nines assign to each region?", "back": "Head and neck 9, each arm 9, front of trunk 18, back of trunk 18, each leg 18, genitals 1.", "lesson": "emt-med-math-l06" },
+    { "id": "emt-med-math-c041", "front": "How does the rule of nines change for a small child?", "back": "The head is proportionally much larger, roughly 18%, and each leg drops to about 14%. Arms and trunk stay the same.", "lesson": "emt-med-math-l06" },
+    { "id": "emt-med-math-c042", "front": "What is the palm method for estimating burn size?", "back": "The patient's own palm including the fingers is about 1% of their body surface area. Use it for scattered or irregular burns.", "lesson": "emt-med-math-l06" },
+    { "id": "emt-med-math-c043", "front": "What is the Parkland formula and how is the volume split?", "back": "4 mL x weight in kg x %TBSA over 24 hours. Half in the first 8 hours timed from the burn, the rest over the following 16 hours.", "lesson": "emt-med-math-l06" },
+    { "id": "emt-med-math-c044", "front": "Which burn depths count toward the TBSA used in Parkland?", "back": "Partial-thickness and full-thickness only. Superficial burns, red and dry like sunburn, do not count.", "lesson": "emt-med-math-l06" },
+    { "id": "emt-med-math-c045", "front": "What is the formula for oxygen cylinder duration?", "back": "Duration in minutes equals (gauge pressure minus 200 psi) times the cylinder constant, divided by the flow rate in L/min.", "lesson": "emt-med-math-l07" },
+    { "id": "emt-med-math-c046", "front": "What are the cylinder constants for D, E and M tanks?", "back": "D is 0.16, E is 0.28, M is 1.56. G is 2.41 and H or K is 3.14.", "lesson": "emt-med-math-l07" },
+    { "id": "emt-med-math-c047", "front": "Why is 200 psi subtracted before calculating oxygen duration?", "back": "It is the safe residual. Below roughly 200 psi delivery becomes unreliable, so subtracting it means you calculate usable oxygen, not total oxygen.", "lesson": "emt-med-math-l07" },
+    { "id": "emt-med-math-c048", "front": "How long does a full E cylinder at 2,000 psi last on a non-rebreather at 15 L/min?", "back": "(2,000 minus 200) times 0.28 equals 504 L; divided by 15 equals about 33 minutes.", "lesson": "emt-med-math-l07" },
+    { "id": "emt-med-math-c049", "front": "If you double the oxygen flow rate, what happens to cylinder duration?", "back": "It halves. Flow sits in the denominator, so duration and flow move in opposite directions.", "lesson": "emt-med-math-l07" },
+    { "id": "emt-med-math-c050", "front": "An M cylinder reads 2,200 psi with a patient at 10 L/min. How long?", "back": "(2,200 minus 200) times 1.56 equals 3,120 L; divided by 10 equals 312 minutes, or 5 hours 12 minutes.", "lesson": "emt-med-math-l07" },
+    { "id": "emt-med-math-c051", "front": "What is pulse pressure, what is normal, and what does narrowing mean?", "back": "Systolic minus diastolic, normally 30 to 40 mmHg. Narrowing means falling stroke volume or clamped vessels: hemorrhage, tamponade, tension pneumothorax.", "lesson": "emt-med-math-l08" },
+    { "id": "emt-med-math-c052", "front": "How do you calculate mean arterial pressure, and why is it weighted toward diastolic?", "back": "Diastolic plus one third of the pulse pressure. The heart spends about twice as long in diastole as systole, so the average leans that way.", "lesson": "emt-med-math-l08" },
+    { "id": "emt-med-math-c053", "front": "What MAP is the usual floor for adequate perfusion?", "back": "65 mmHg. Vasopressor orders are written against MAP rather than systolic because MAP is what perfuses kidneys and brain.", "lesson": "emt-med-math-l08" },
+    { "id": "emt-med-math-c054", "front": "Calculate the MAP for a blood pressure of 88/50.", "back": "Pulse pressure is 38; one third is 12.7; 50 plus 12.7 equals about 63 mmHg, below the 65 floor.", "lesson": "emt-med-math-l08" },
+    { "id": "emt-med-math-c055", "front": "What is shock index, what is normal, and what value is concerning?", "back": "Heart rate divided by systolic. Normal 0.5 to 0.7. Above 0.9 predicts occult shock and transfusion need before the blood pressure falls.", "lesson": "emt-med-math-l08" },
+    { "id": "emt-med-math-c056", "front": "What is cerebral perfusion pressure and what is the adult target?", "back": "CPP equals MAP minus ICP. Normal ICP is 5 to 15 mmHg and the usual adult target CPP is at least 60 mmHg.", "lesson": "emt-med-math-l08" },
+    { "id": "emt-med-math-c057", "front": "What three findings make up Cushing's triad, and what do they mean?", "back": "Rising systolic with widening pulse pressure, bradycardia, and irregular respirations. It is a late sign of rising intracranial pressure and impending herniation.", "lesson": "emt-med-math-l08" },
+    { "id": "emt-med-math-c058", "front": "What are the three components of the Glasgow Coma Scale and their maximum scores?", "back": "Eye opening up to 4, verbal up to 5, motor up to 6. Range is 3 to 15; there is no score of zero.", "lesson": "emt-med-math-l09" },
+    { "id": "emt-med-math-c059", "front": "What GCS motor scores separate localizing, withdrawal, flexion and extension?", "back": "Localizes pain 5, withdraws from pain 4, abnormal flexion 3, abnormal extension 2, no response 1.", "lesson": "emt-med-math-l09" },
+    { "id": "emt-med-math-c060", "front": "Why report GCS as components rather than a total?", "back": "The breakdown carries the information. E3 V4 M5 and E1 V5 M6 both total 12 but describe completely different patients.", "lesson": "emt-med-math-l09" },
+    { "id": "emt-med-math-c061", "front": "What are the five APGAR items and when is it scored?", "back": "Appearance, Pulse, Grimace, Activity, Respirations — each 0 to 2 for a maximum of 10, scored at 1 minute and 5 minutes after birth.", "lesson": "emt-med-math-l09" },
+    { "id": "emt-med-math-c062", "front": "How is the pulse component of APGAR scored?", "back": "Absent is 0, under 100 is 1, and 100 or more is 2. A rate under 100 also means start positive-pressure ventilation.", "lesson": "emt-med-math-l09" },
+    { "id": "emt-med-math-c063", "front": "What are the three ways to calculate heart rate from an ECG strip?", "back": "300 divided by large boxes between R waves; 1500 divided by small boxes; or QRS complexes in 6 seconds times 10 for irregular rhythms.", "lesson": "emt-med-math-l09" },
+    { "id": "emt-med-math-c064", "front": "Which rate method must you use for an irregular rhythm, and why?", "back": "The 6-second method. The 300 and 1500 methods both assume a constant R-R interval, which an irregular rhythm does not have.", "lesson": "emt-med-math-l09" },
+    { "id": "emt-med-math-c065", "front": "What are the leading-zero and trailing-zero rules, and why do they exist?", "back": "Always write 0.5 mg, never .5 mg. Never write 5.0 mg, write 5 mg. A missed decimal point turns either error into a tenfold overdose.", "lesson": "emt-med-math-l10" },
+    { "id": "emt-med-math-c066", "front": "Why must 'units' be written out rather than abbreviated?", "back": "A handwritten U is easily read as a zero, turning 4 units into 40. The same reasoning is why mcg is spelled out.", "lesson": "emt-med-math-l10" },
+    { "id": "emt-med-math-c067", "front": "What makes a medication double-check independent?", "back": "The second person recalculates from the original order and the actual vial without being told your answer. Confirming a stated number is agreement, not a check.", "lesson": "emt-med-math-l10" },
+    { "id": "emt-med-math-c068", "front": "Why is drawing 10 mL of epinephrine sometimes correct?", "back": "The IV and IO arrest concentration is 0.1 mg/mL, so a 1 mg dose occupies 10 mL. Volume alone is not a safety signal until you know the concentration.", "lesson": "emt-med-math-l10" },
+    { "id": "emt-med-math-c069", "front": "What five elements should you say aloud before giving any medication?", "back": "Drug, dose, concentration, volume and route. Speaking all five gives every element that can be wrong a chance to be caught.", "lesson": "emt-med-math-l10" },
+    { "id": "emt-med-math-c070", "front": "How do you convert a mcg/kg/min order into a pump rate in mL/h?", "back": "Multiply dose by weight and by 60 to get mcg/h, then divide by the bag concentration in mcg/mL. Dopamine 5 mcg/kg/min in an 80 kg patient from 400 mg/250 mL is 15 mL/h.", "lesson": "emt-med-math-l05" }
+  ],
+  "quiz": [
+    { "id": "emt-med-math-q001", "q": "A patient states she weighs 143 lb. What weight should be entered in the chart in kilograms?", "choices": ["65 kg", "71.5 kg", "314.6 kg", "57.2 kg"], "answer": 0, "why": "143 divided by 2.2 equals 65 kg. 71.5 comes from dividing by 2, 314.6 from multiplying by 2.2, and 57.2 from dividing by 2.5. The kilogram figure must always be smaller than the pound figure.", "lesson": "emt-med-math-l01", "difficulty": 1 },
+    { "id": "emt-med-math-q002", "q": "An order reads 0.125 mg. How many micrograms is that?", "choices": ["1.25 mcg", "12.5 mcg", "125 mcg", "1,250 mcg"], "answer": 2, "why": "Milligrams to micrograms moves the decimal three places right, so 0.125 becomes 125 mcg. Moving one or two places gives 1.25 and 12.5; moving four gives 1,250.", "lesson": "emt-med-math-l01", "difficulty": 1 },
+    { "id": "emt-med-math-q003", "q": "A febrile child's temperature is 103.1 F. What is it in Celsius?", "choices": ["37.8 C", "41.2 C", "36.2 C", "39.5 C"], "answer": 3, "why": "103.1 minus 32 is 71.1; times 5 is 355.5; divided by 9 is 39.5 C. Since 100.4 F is 38 C, a temperature three degrees Fahrenheit higher must sit near 39.5 C, which rules out 37.8 and 36.2.", "lesson": "emt-med-math-l01", "difficulty": 2 },
+    { "id": "emt-med-math-q004", "q": "A vial is labeled epinephrine 1 mg/mL. Which older ratio label describes the same concentration?", "choices": ["1:10,000", "1:1,000", "1:100", "1:100,000"], "answer": 1, "why": "1:1,000 is 1 g in 1,000 mL, which reduces to 1 mg/mL. 1:10,000 is ten times more dilute at 0.1 mg/mL, and 1:100 would be ten times more concentrated at 10 mg/mL.", "lesson": "emt-med-math-l02", "difficulty": 1 },
+    { "id": "emt-med-math-q005", "q": "A patient in cardiac arrest needs 1 mg of epinephrine IV. You are handed a 10 mL prefilled syringe labeled 0.1 mg/mL. How much do you give?", "choices": ["1 mL", "0.1 mL", "The entire 10 mL syringe", "5 mL"], "answer": 2, "why": "At 0.1 mg/mL, 1 mg occupies 10 mL, so the whole syringe is one dose. Giving 1 mL would deliver only 0.1 mg, a tenth of the dose — the mirror image of the IM concentration error.", "lesson": "emt-med-math-l02", "difficulty": 2 },
+    { "id": "emt-med-math-q006", "q": "How many milligrams of lidocaine are in a 10 mL vial of 1% lidocaine?", "choices": ["10 mg", "1,000 mg", "100 mg", "1 mg"], "answer": 2, "why": "1% is 10 mg/mL, and 10 mg/mL times 10 mL equals 100 mg. Answering 10 mg stops at the concentration and forgets the volume; 1,000 mg would require a 10% solution.", "lesson": "emt-med-math-l02", "difficulty": 2 },
+    { "id": "emt-med-math-q007", "q": "A hypoglycemic patient receives one full 50 mL prefilled syringe of D50. How many grams of dextrose did he get?", "choices": ["50 g", "25 g", "12.5 g", "5 g"], "answer": 1, "why": "50% means 50 g per 100 mL, so 50 mL carries 25 g. Answering 50 g reads the percent as the syringe contents, and 12.5 g would be half a syringe.", "lesson": "emt-med-math-l02", "difficulty": 2 },
+    { "id": "emt-med-math-q008", "q": "The order is ketorolac 15 mg IV. The vial reads 30 mg/mL. What volume do you draw?", "choices": ["0.5 mL", "2 mL", "1.5 mL", "0.15 mL"], "answer": 0, "why": "15 divided by 30 equals 0.5 mL. Answering 2 mL inverts the formula (have divided by desired), and 1.5 mL treats the milligram number as a volume.", "lesson": "emt-med-math-l03", "difficulty": 1 },
+    { "id": "emt-med-math-q009", "q": "An order reads fentanyl 50 mcg IV. The vial is labeled 0.05 mg/mL. What is the correct volume?", "choices": ["0.5 mL", "1 mL", "5 mL", "10 mL"], "answer": 1, "why": "Convert first: 0.05 mg equals 50 mcg, so the vial is 50 mcg/mL and the dose is 1 mL. Dividing 50 by 0.05 without converting gives 1,000 and is the classic unit-mismatch error.", "lesson": "emt-med-math-l03", "difficulty": 3 },
+    { "id": "emt-med-math-q010", "q": "You calculate that an ordered IM injection requires 6 mL from a single vial. What should you do?", "choices": [
+      "Give it in two sites to reduce discomfort",
+      "Stop and recalculate from the original order and the vial, then get an independent double-check",
+      "Round it down to 3 mL to stay within a safe intramuscular volume",
+      "Give it as ordered since the math was done correctly"
+    ], "answer": 1, "why": "A routine IM volume over about 2 mL is a red flag for a calculation or concentration error. Splitting sites or arbitrarily halving the dose both administer an unverified number; the fix is recalculating, not adjusting.", "lesson": "emt-med-math-l03", "difficulty": 3 },
+    { "id": "emt-med-math-q011", "q": "A 3-year-old arrives with no scale and no length-based tape. What is the estimated weight?", "choices": ["6 kg", "11 kg", "14 kg", "18 kg"], "answer": 2, "why": "(3 x 2) + 8 equals 14 kg. Answering 6 kg uses age times two alone, and 11 kg adds 5 instead of 8.", "lesson": "emt-med-math-l04", "difficulty": 1 },
+    { "id": "emt-med-math-q012", "q": "An 8-year-old has a blood pressure of 78/44. How should this systolic be interpreted?", "choices": [
+      "Normal for a school-age child",
+      "Slightly low but acceptable given the age",
+      "Hypotensive — below the 86 mmHg floor for an 8-year-old",
+      "Unreliable; pediatric cuffs read falsely low"
+    ], "answer": 2, "why": "Minimum systolic is 70 + (2 x 8) = 86 mmHg, so 78 is frank hypotension and a late sign of decompensated shock. Children hold pressure until they crash, so a low number is never dismissed as age-appropriate.", "lesson": "emt-med-math-l04", "difficulty": 2 },
+    { "id": "emt-med-math-q013", "q": "A 15 kg child needs a medication dosed at 0.1 mg/kg. The vial reads 1 mg/mL. What volume do you draw?", "choices": ["1.5 mL", "15 mL", "0.15 mL", "0.1 mL"], "answer": 0, "why": "0.1 x 15 = 1.5 mg, then 1.5 / 1 = 1.5 mL. Choosing 15 mL skips the per-kilogram multiplication, and 0.15 mL misplaces the decimal by a factor of ten.", "lesson": "emt-med-math-l04", "difficulty": 2 },
+    { "id": "emt-med-math-q014", "q": "What advantage does a length-based resuscitation tape have over asking a parent for the child's weight?", "choices": [
+      "It is faster to use than any other method",
+      "Length correlates with weight more reliably than recall, and the tape carries pre-calculated doses, tube sizes and joules",
+      "It measures the child's actual mass directly",
+      "It removes the need to know the child's age"
+    ], "answer": 1, "why": "The tape estimates from a measured physical parameter and bundles the downstream numbers. It does not weigh the child, and speed is a side benefit rather than the reason it is preferred.", "lesson": "emt-med-math-l04", "difficulty": 2 },
+    { "id": "emt-med-math-q015", "q": "You must infuse 750 mL over 5 hours using a 20 gtt/mL set. What is the drip rate?", "choices": ["25 gtt/min", "50 gtt/min", "150 gtt/min", "75 gtt/min"], "answer": 1, "why": "5 hours is 300 minutes. (750 x 20) / 300 = 15,000 / 300 = 50 gtt/min. 150 is the mL/h rate, and 25 would be correct only on a 10 gtt/mL set.", "lesson": "emt-med-math-l05", "difficulty": 2 },
+    { "id": "emt-med-math-q016", "q": "An order reads 75 mL/h on a 60 gtt/mL microdrip set. What drip rate do you set?", "choices": ["75 gtt/min", "19 gtt/min", "25 gtt/min", "150 gtt/min"], "answer": 0, "why": "On a 60 gtt/mL set, mL/h and gtt/min are numerically identical, so 75 mL/h is 75 gtt/min. The other answers apply macrodrip arithmetic that does not belong here.", "lesson": "emt-med-math-l05", "difficulty": 1 },
+    { "id": "emt-med-math-q017", "q": "A 1,000 mL bag has 400 mL left and is running at 80 mL/h. How much time remains?", "choices": ["8 hours", "2 hours", "5 hours", "3 hours 20 minutes"], "answer": 2, "why": "400 divided by 80 equals 5 hours. Eight hours would be the time for the full 1,000 mL bag at 125 mL/h, and the other options do not follow from the rate given.", "lesson": "emt-med-math-l05", "difficulty": 2 },
+    { "id": "emt-med-math-q018", "q": "An order reads dopamine 10 mcg/kg/min for a 70 kg patient. The bag is 400 mg in 250 mL. What pump rate in mL/h?", "choices": ["13 mL/h", "42 mL/h", "26 mL/h", "70 mL/h"], "answer": 2, "why": "Bag concentration is 400,000 mcg / 250 mL = 1,600 mcg/mL. Dose per hour is 10 x 70 x 60 = 42,000 mcg/h. 42,000 / 1,600 = 26 mL/h. Answering 42 mL/h stops at the mcg/h step and drops the concentration division.", "lesson": "emt-med-math-l05", "difficulty": 3 },
+    { "id": "emt-med-math-q019", "q": "Using the 4-2-1 rule, what is the hourly maintenance rate for a 45 kg adolescent?", "choices": ["85 mL/h", "180 mL/h", "45 mL/h", "110 mL/h"], "answer": 0, "why": "40 for the first 10 kg, 20 for the next 10, and 25 for the remaining 25 kg equals 85 mL/h. 180 mL/h applies 4 mL/kg across the whole weight, which vastly overshoots.", "lesson": "emt-med-math-l06", "difficulty": 2 },
+    { "id": "emt-med-math-q020", "q": "A 24 kg child in compensated shock needs a fluid bolus. What volume do you prepare?", "choices": ["240 mL", "480 mL", "720 mL", "120 mL"], "answer": 1, "why": "20 mL/kg times 24 kg equals 480 mL. 240 mL would be 10 mL/kg and under-resuscitates; 720 mL is 30 mL/kg, an adult sepsis figure rather than a standard pediatric bolus.", "lesson": "emt-med-math-l06", "difficulty": 1 },
+    { "id": "emt-med-math-q021", "q": "An adult has partial-thickness burns to the entire front of the trunk and the whole left arm. What is the TBSA?", "choices": ["18%", "36%", "27%", "45%"], "answer": 2, "why": "Anterior trunk is 18% and a whole arm is 9%, totaling 27%. Answering 36% counts the full trunk front and back, and 18% omits the arm entirely.", "lesson": "emt-med-math-l06", "difficulty": 2 },
+    { "id": "emt-med-math-q022", "q": "A 60 kg patient has 25% TBSA burns. Using Parkland, how much fluid should be given in the first 8 hours?", "choices": ["6,000 mL", "1,500 mL", "3,000 mL", "750 mL"], "answer": 2, "why": "4 x 60 x 25 = 6,000 mL over 24 hours, and half of that, 3,000 mL, goes in the first 8 hours. Answering 6,000 mL gives the whole day's volume in one third of the time.", "lesson": "emt-med-math-l06", "difficulty": 2 },
+    { "id": "emt-med-math-q023", "q": "A burn occurred at 08:00; the patient reaches the ED at 11:00. The first-half Parkland volume is 4,000 mL. What hourly rate is needed?", "choices": ["500 mL/h", "800 mL/h", "250 mL/h", "1,000 mL/h"], "answer": 1, "why": "The 8-hour window runs from the burn, so it closes at 16:00, leaving 5 hours: 4,000 / 5 = 800 mL/h. Using 500 mL/h counts 8 hours from arrival and delivers the volume three hours late.", "lesson": "emt-med-math-l06", "difficulty": 3 },
+    { "id": "emt-med-math-q024", "q": "An E cylinder reads 1,200 psi and the patient is on 6 L/min. Approximately how long will the oxygen last?", "choices": ["47 minutes", "56 minutes", "27 minutes", "33 minutes"], "answer": 0, "why": "(1,200 - 200) x 0.28 = 280 L; 280 / 6 = 46.7, about 47 minutes. Skipping the 200 psi residual gives 56 minutes and leaves you short at the worst moment.", "lesson": "emt-med-math-l07", "difficulty": 2 },
+    { "id": "emt-med-math-q025", "q": "Which cylinder constant applies to a D cylinder?", "choices": ["0.28", "1.56", "0.16", "2.41"], "answer": 2, "why": "D is 0.16. 0.28 is the E cylinder, 1.56 is the M, and 2.41 is the G. Using the E constant on a D tank overestimates the remaining time by about 75%.", "lesson": "emt-med-math-l07", "difficulty": 1 },
+    { "id": "emt-med-math-q026", "q": "A transport will take 50 minutes. Your E cylinder reads 1,000 psi and the patient needs 15 L/min. What is the correct action?", "choices": [
+      "Proceed; the tank holds roughly 60 minutes at this flow",
+      "Reduce the flow to 6 L/min to stretch the supply",
+      "Bring a second cylinder or use the onboard M tank, because this one lasts about 15 minutes",
+      "Proceed and reassess the gauge at the halfway point"
+    ], "answer": 2, "why": "(1,000 - 200) x 0.28 = 224 L; 224 / 15 = about 15 minutes, far short of the transport. Reducing flow to fit the tank sacrifices the patient's oxygenation, and reassessing later does not create gas that is not there.", "lesson": "emt-med-math-l07", "difficulty": 3 },
+    { "id": "emt-med-math-q027", "q": "A trauma patient's blood pressure is 102/78. What does the pulse pressure suggest?", "choices": [
+      "It is normal at 24 mmHg",
+      "It is widened, suggesting rising intracranial pressure",
+      "It is narrowed at 24 mmHg, suggesting falling stroke volume from hemorrhage or obstructive shock",
+      "Pulse pressure cannot be interpreted without the heart rate"
+    ], "answer": 2, "why": "102 minus 78 equals 24 mmHg, below the 30 to 40 normal and well under a quarter of the systolic. Narrowing points to reduced stroke volume or clamped vasculature. Widening is the opposite finding and is what accompanies rising ICP.", "lesson": "emt-med-math-l08", "difficulty": 3 },
+    { "id": "emt-med-math-q028", "q": "A patient's blood pressure is 96/66. What is the MAP?", "choices": ["81 mmHg", "76 mmHg", "66 mmHg", "88 mmHg"], "answer": 1, "why": "Pulse pressure is 30; one third is 10; 66 + 10 = 76 mmHg. Answering 81 averages the two numbers evenly and ignores that diastole occupies about two thirds of the cycle.", "lesson": "emt-med-math-l08", "difficulty": 2 },
+    { "id": "emt-med-math-q029", "q": "A trauma patient has a heart rate of 118 and a systolic of 118. What does the shock index indicate?", "choices": [
+      "Normal, because the pressure is normal",
+      "An index of 1.0 — elevated, flagging likely occult hemorrhage despite a normal blood pressure",
+      "An index of 0.5, which is reassuring",
+      "Shock index cannot be used in trauma"
+    ], "answer": 1, "why": "118 / 118 = 1.0, above the 0.9 warning line and well above the 0.5 to 0.7 normal. The whole point of the index is that it flags compensated shock while the blood pressure still reads normal.", "lesson": "emt-med-math-l08", "difficulty": 3 },
+    { "id": "emt-med-math-q030", "q": "A head-injured patient has a MAP of 70 mmHg and an ICP of 22 mmHg. What is the cerebral perfusion pressure?", "choices": ["92 mmHg", "48 mmHg", "70 mmHg", "22 mmHg"], "answer": 1, "why": "CPP equals MAP minus ICP: 70 - 22 = 48 mmHg, well below the 60 mmHg target. Adding the two values instead of subtracting gives 92 and would suggest the brain is perfusing well when it is not.", "lesson": "emt-med-math-l08", "difficulty": 2 },
+    { "id": "emt-med-math-q031", "q": "A patient does not open his eyes, makes no sounds, and extends his arms to a painful stimulus. What is his GCS?", "choices": ["3", "4", "5", "6"], "answer": 1, "why": "Eyes 1, verbal 1, abnormal extension 2, totaling 4. A GCS of 3 requires no motor response at all, and extension scores 2 rather than the 3 given for abnormal flexion.", "lesson": "emt-med-math-l09", "difficulty": 2 },
+    { "id": "emt-med-math-q032", "q": "A newborn at 1 minute has a heart rate of 110, a weak irregular cry, active motion, cries on stimulation, and is pink with blue hands and feet. What is the APGAR?", "choices": ["10", "7", "8", "9"], "answer": 2, "why": "Pulse 2, respirations 1 for the weak irregular cry, activity 2, grimace 2, appearance 1 for acrocyanosis — total 8. A score of 10 requires a strong cry and fully pink skin, which this newborn does not have.", "lesson": "emt-med-math-l09", "difficulty": 2 },
+    { "id": "emt-med-math-q033", "q": "On a regular rhythm the R waves are exactly 3 large boxes apart. What is the heart rate?", "choices": ["150", "75", "60", "100"], "answer": 3, "why": "300 divided by 3 equals 100 bpm, which is also the third number in the 300-150-100-75-60-50 sequence. 150 corresponds to 2 large boxes and 75 to 4.", "lesson": "emt-med-math-l09", "difficulty": 1 },
+    { "id": "emt-med-math-q034", "q": "Which of the following is written correctly on a medication order?", "choices": ["Digoxin .25 mg", "Insulin 6 U subcutaneous", "Morphine 2.0 mg IV", "Lorazepam 0.5 mg IV"], "answer": 3, "why": "A leading zero is required and a trailing zero is forbidden. '.25 mg' can be read as 25 mg, '2.0 mg' as 20 mg, and 'U' as a zero making 6 units look like 60 — each a tenfold error.", "lesson": "emt-med-math-l10", "difficulty": 1 },
+    { "id": "emt-med-math-q035", "q": "A colleague asks you to verify a dose by saying: 'This is 2 mL of ondansetron, that's 4 mg, right?' Why is this not an independent double-check?", "choices": [
+      "It is valid as long as you looked at the vial",
+      "Stating the answer first biases you toward agreeing; a true check means recalculating from the order and the vial",
+      "Verbal checks are never acceptable for any medication",
+      "Only a pharmacist may perform a double-check"
+    ], "answer": 1, "why": "Anchoring on a given answer is exactly the failure mode the second check exists to prevent. Verbal checks are standard when done independently, and the checker does not have to be a pharmacist.", "lesson": "emt-med-math-l10", "difficulty": 2 },
+    { "id": "emt-med-math-q036", "q": "A 70 kg patient with 30% TBSA burns arrives 1 hour after the injury. What is the correct infusion rate for the remainder of the first 8-hour period?", "choices": ["600 mL/h", "525 mL/h", "1,050 mL/h", "300 mL/h"], "answer": 0, "why": "4 x 70 x 30 = 8,400 mL total; half is 4,200 mL due by 8 hours after the burn, leaving 7 hours: 4,200 / 7 = 600 mL/h. Using 525 mL/h counts a full 8 hours from arrival and finishes an hour late.", "lesson": "emt-med-math-l06", "difficulty": 3 },
+    { "id": "emt-med-math-q037", "q": "You must give 0.35 mL of a medication. Which syringe should you select?", "choices": [
+      "A 10 mL syringe, graduated every 0.2 mL",
+      "A 1 mL tuberculin syringe, graduated every 0.01 mL",
+      "An insulin syringe on a U-100 scale",
+      "A 5 mL syringe, graduated every 0.5 mL"
+    ], "answer": 1, "why": "The graduation must be finer than the precision you need, so 0.01 mL marks make 0.35 mL measurable. A 10 mL or 5 mL barrel forces a guess between marks, and insulin syringes are reserved for insulin and read in units, not millilitres.", "lesson": "emt-med-math-l05", "difficulty": 2 },
+    { "id": "emt-med-math-q038", "q": "A patient's medication list shows a drug ordered at 1 mcg/kg and she weighs 132 lb. The vial reads 50 mcg/mL. What volume is correct?", "choices": ["2.64 mL", "1.2 mL", "0.6 mL", "3 mL"], "answer": 1, "why": "132 / 2.2 = 60 kg; 1 mcg/kg x 60 = 60 mcg; 60 / 50 = 1.2 mL. Answering 2.64 mL divides the pound weight by the concentration without converting, and 3 mL assumes a 20 mcg/mL vial.", "lesson": "emt-med-math-l04", "difficulty": 3 }
+  ],
+  "scenarios": [
+    {
+      "id": "emt-med-math-s01",
+      "title": "Drill: the math behind one adult resuscitation",
+      "setting": "classroom",
+      "intro": "You are working through a timed drill built from one patient: a `198 lb` man found unresponsive and pulseless. Each step gives you a piece of the resuscitation and asks for the number. Pick the answer, then read the working before moving on. No partial credit and no calculator — the point is to make the arithmetic automatic under pressure.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "First, the weight. He tells the triage nurse before he collapsed that he weighs `198 lb`. Every weight-based number today runs off this conversion.\n\n**What is his weight in kilograms?**",
+          "choices": [
+            { "text": "90 kg", "next": "s2", "feedback": "Correct. 198 divided by 2.2 equals 90 kg. Check: 2.2 x 90 = 198. The kilogram number is smaller than the pound number, as it must be.", "score": 1 },
+            { "text": "99 kg", "next": "s2", "feedback": "This is 198 divided by 2, not 2.2. It is close enough to look plausible and wrong enough to matter once you multiply it by a per-kilogram dose. Divide by 2.2: 90 kg.", "score": 0 },
+            { "text": "435.6 kg", "next": "s2", "feedback": "You multiplied instead of dividing. A kilogram is heavier than a pound, so the kilogram figure is always the smaller one. 198 / 2.2 = 90 kg.", "score": -1 },
+            { "text": "89.1 kg", "next": "s2", "feedback": "Close, but this used 2.2222 rather than 2.2. Protocols and exams use a flat 2.2, giving exactly 90 kg — and round numbers are easier to defend at handoff.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "He is in ventricular fibrillation. Compressions are running. The code cart drawer holds two epinephrine products: a `1 mL` ampule labeled `1 mg/mL`, and a `10 mL` prefilled syringe labeled `0.1 mg/mL`.\n\n**The order is `1 mg` epinephrine IV. Which do you hand over and how much?**",
+          "vitals": { "hr": 0, "bp": "0/0", "rr": 0, "spo2": null },
+          "choices": [
+            { "text": "The whole 10 mL prefilled syringe at 0.1 mg/mL", "next": "s3", "feedback": "Correct. 1 mg divided by 0.1 mg/mL equals 10 mL, which is exactly what the prefilled arrest syringe holds. It looks like a large volume because the arrest concentration is deliberately dilute.", "score": 1 },
+            { "text": "1 mL of the 1 mg/mL ampule", "next": "s3", "feedback": "Mathematically this is also 1 mg, so the dose is right. But the 1 mg/mL ampule is the IM anaphylaxis product; the prefilled 10 mL syringe is what the arrest algorithm and the cart are built around, and grabbing ampules mid-code invites the reverse error later.", "score": 0 },
+            { "text": "10 mL of the 1 mg/mL ampule", "next": "s3", "feedback": "That is 10 mg — ten times the dose. This is the exact tenfold epinephrine error the two concentrations were relabeled to prevent. Read the concentration aloud, never the drug name alone.", "score": -1 },
+            { "text": "1 mL of the 0.1 mg/mL syringe", "next": "s3", "feedback": "That delivers 0.1 mg, one tenth of the order. The volume felt safer, which is exactly why volume alone is not a safety signal until you know the concentration.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "After the third shock the order is amiodarone `300 mg` IV push. The vial on the cart reads `150 mg/3 mL`.\n\n**How many milliliters, and how many vials?**",
+          "choices": [
+            { "text": "6 mL, which is two vials", "next": "s4", "feedback": "Correct. The label reduces to 50 mg/mL. (300 / 150) x 3 = 2 x 3 = 6 mL. Two full vials — and needing exactly two whole vials is itself a clean confirmation of the math.", "score": 1 },
+            { "text": "3 mL, one vial", "next": "s4", "feedback": "One vial is only 150 mg, half the ordered dose. The formula catches it: desired 300 over have 150 is 2, so you need twice the vial volume.", "score": -1 },
+            { "text": "2 mL", "next": "s4", "feedback": "This divided 300 by 150 and stopped at 2, forgetting to multiply by the 3 mL the 150 mg lives in. Always finish the formula: (desired / have) x volume on hand.", "score": -1 },
+            { "text": "9 mL, three vials", "next": "s4", "feedback": "Three vials is 450 mg, half again too much. A quick check: each vial is 150 mg, and 300 is exactly two of them.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "He has return of circulation. The monitor shows a regular rhythm with R waves exactly `4` large boxes apart, and the blood pressure is `88/50`.\n\n**What are the heart rate and the mean arterial pressure?**",
+          "vitals": { "bp": "88/50", "rr": 12, "spo2": 94 },
+          "choices": [
+            { "text": "Rate 75, MAP about 63", "next": "s5", "feedback": "Correct. 300 / 4 = 75 bpm. Pulse pressure is 88 - 50 = 38; one third is 12.7; 50 + 12.7 is about 63 mmHg — below the 65 floor, so this pressure needs attention now.", "score": 1 },
+            { "text": "Rate 75, MAP about 69", "next": "s5", "feedback": "The rate is right. The MAP is not: 69 is the simple average of 88 and 50. Diastole lasts roughly twice as long as systole, so MAP is diastolic plus one third of the pulse pressure, or about 63.", "score": 0 },
+            { "text": "Rate 60, MAP about 63", "next": "s5", "feedback": "The MAP is right. The rate is not: 60 corresponds to 5 large boxes. Four large boxes gives 300 / 4 = 75. Memorize the sequence 300, 150, 100, 75, 60, 50.", "score": 0 },
+            { "text": "Rate 100, MAP about 46", "next": "s5", "feedback": "Both are off. 100 bpm would be 3 large boxes, and 46 is below the diastolic itself, which is impossible — MAP always falls between diastolic and systolic.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "Post-arrest care. The team wants a dopamine infusion at `5 mcg/kg/min`. Pharmacy sends a premixed bag: `400 mg in 250 mL`.\n\n**What rate do you dial into the pump?**",
+          "choices": [
+            { "text": "17 mL/h", "next": "s6", "feedback": "Close but this used 100 kg rather than the actual 90 kg. The weight you converted in step one is the number that drives this; the correct rate is 17 mL/h only if he weighed 90.6 kg. Recalculate with 90 kg.", "score": 0 },
+            { "text": "About 17 mL/h, from 27,000 mcg/h divided by 1,600 mcg/mL", "next": "s6", "feedback": "Correct. Bag concentration: 400,000 mcg / 250 mL = 1,600 mcg/mL. Dose: 5 x 90 = 450 mcg/min, times 60 = 27,000 mcg/h. Rate: 27,000 / 1,600 = 16.9, so 17 mL/h.", "score": 1 },
+            { "text": "450 mL/h", "next": "s6", "feedback": "That is the dose in mcg per minute mistaken for a pump rate. 450 mL/h of any pressor would empty the bag in half an hour and deliver a catastrophic dose. Always finish by dividing by the bag concentration.", "score": -1 },
+            { "text": "27 mL/h", "next": "s6", "feedback": "This dropped a zero in the bag concentration, using 1,000 instead of 1,600 mcg/mL. Convert milligrams to micrograms carefully: 400 mg is 400,000 mcg, over 250 mL is 1,600 mcg/mL.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s6",
+          "prompt": "He is going to a facility 40 minutes away on `10 L/min` by mask. The portable E cylinder gauge reads `1,400 psi`.\n\n**Will it last the transport?**",
+          "choices": [
+            { "text": "Yes — about 33 minutes, which covers most of it", "next": "end", "feedback": "The number is roughly right but the conclusion is not. 33 minutes is less than 40, so the tank runs dry before arrival. 'Most of it' is not a plan for an oxygen-dependent post-arrest patient.", "score": 0 },
+            { "text": "No — about 33 minutes of usable gas, so bring a second cylinder or run off the onboard M tank", "next": "end", "feedback": "Correct. (1,400 - 200) x 0.28 = 336 L; 336 / 10 = 33.6 minutes. Seven minutes short of the transport, and that assumes no delays. Switch to the onboard tank and carry a spare portable.", "score": 1 },
+            { "text": "Yes — 39 minutes, just enough", "next": "end", "feedback": "This skipped the 200 psi safe residual. Using the full 1,400 psi gives 39 minutes of paper oxygen you cannot actually deliver, because flow becomes unreliable near the bottom of the tank.", "score": -1 },
+            { "text": "No — cut the flow to 4 L/min so the tank lasts the whole trip", "next": "end", "feedback": "Making the patient fit the tank is backwards. Post-arrest patients are titrated to a target saturation of 92 to 98%, not to your remaining gas. Change the tank, not the therapy.", "score": -1 }
+          ]
+        }
+      ],
+      "debrief": "One patient, six calculations, and every one of them hung off the first number you produced: `90 kg`. That is the pattern. In a real resuscitation the weight is entered once and then silently multiplied into the epinephrine, the pressor, the fluids and the joules, so an error there is invisible and everywhere at the same time.\n\nThe second pattern is that **volume is not a safety signal**. `10 mL` of epinephrine was correct and `1 mL` of the same drug was a tenth of the dose, because the concentrations differ tenfold. Read the concentration aloud before the volume, every time.\n\nThe third is that a number you calculate has to be turned into a decision. `33 minutes` of oxygen for a `40 minute` transport is not a math answer, it is an instruction to get another cylinder.",
+      "vitalsNote": null
+    },
+    {
+      "id": "emt-med-math-s02",
+      "title": "Drill: the pediatric numbers, start to finish",
+      "setting": "classroom",
+      "intro": "A drill built around one child: a 4-year-old brought in febrile, tachycardic and poorly perfused after two days of vomiting. There is no scale reading and no parent who knows the weight. Every step asks for a number you would have to produce at the bedside. Answer, then read the working.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "No scale, no tape available yet, and the mother is not sure of the weight. She is `4 years old`.\n\n**What weight do you estimate, and what is the lowest acceptable systolic pressure for her age?**",
+          "choices": [
+            { "text": "16 kg, floor 78 mmHg", "next": "s2", "feedback": "Correct. Weight is (4 x 2) + 8 = 16 kg. Minimum systolic is 70 + (2 x 4) = 78 mmHg. Both come from the age alone, which is why the age is the first thing you ask for.", "score": 1 },
+            { "text": "12 kg, floor 78 mmHg", "next": "s2", "feedback": "The pressure floor is right but the weight is not. 12 kg comes from doubling the age and adding 4. The formula adds 8: (4 x 2) + 8 = 16 kg.", "score": 0 },
+            { "text": "16 kg, floor 90 mmHg", "next": "s2", "feedback": "The weight is right. The pressure floor is not — 90 mmHg is the adult figure. For ages 1 to 10 use 70 + (2 x age), giving 78 mmHg here. Applying an adult floor would label a normal child hypotensive.", "score": 0 },
+            { "text": "20 kg, floor 74 mmHg", "next": "s2", "feedback": "Both are off. 20 kg is the estimate for a 6-year-old, and 74 does not follow from either formula. Weight (age x 2) + 8; systolic floor 70 + (2 x age).", "score": -1 }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "Vitals come back. She is mottled with a capillary refill of `4 seconds`. The team wants a fluid bolus.\n\n**How much fluid, and what do you do after it runs in?**",
+          "vitals": { "hr": 168, "bp": "80/48", "rr": 34, "spo2": 97, "temp": 39.4 },
+          "choices": [
+            { "text": "320 mL of isotonic crystalloid, then reassess perfusion and lung sounds before a second bolus", "next": "s3", "feedback": "Correct. 20 mL/kg x 16 kg = 320 mL. Reassessment between boluses is part of the order, not an optional extra — the second bolus is a decision, not a schedule.", "score": 1 },
+            { "text": "160 mL, then reassess", "next": "s3", "feedback": "That is 10 mL/kg, half a standard bolus. It under-resuscitates a child who is already mottled with a 4-second refill. The standard is 20 mL/kg: 320 mL.", "score": -1 },
+            { "text": "320 mL, then immediately run a second 320 mL to complete 40 mL/kg", "next": "s3", "feedback": "The first volume is right but the plan is wrong. Boluses are given one at a time with reassessment between, because a child with myocarditis or a fluid-overload picture declares herself after the first one.", "score": 0 },
+            { "text": "480 mL, using the 30 mL/kg sepsis figure", "next": "s3", "feedback": "30 mL/kg is an adult sepsis number. Pediatric boluses are 20 mL/kg, reassessed each time. Applying an adult volume to a 16 kg child overshoots by 160 mL in one push.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "She is febrile at `39.4 C`. The order is acetaminophen `15 mg/kg` PO. The bottle on the counter reads `160 mg/5 mL`.\n\n**What volume do you give?**",
+          "choices": [
+            { "text": "7.5 mL", "next": "s4", "feedback": "Correct. 15 mg/kg x 16 kg = 240 mg. (240 / 160) x 5 = 1.5 x 5 = 7.5 mL. Sanity check: the dose is one and a half times the labeled 160 mg, so the volume is one and a half times 5 mL.", "score": 1 },
+            { "text": "240 mL", "next": "s4", "feedback": "That is the dose in milligrams treated as a volume — the single most common weight-based error. Finish the chain: kg, then mg, then mL. 240 mg becomes 7.5 mL.", "score": -1 },
+            { "text": "5 mL", "next": "s4", "feedback": "5 mL delivers only 160 mg, about 10 mg/kg. Close enough to look reasonable and low enough to under-treat. The formula gives 7.5 mL.", "score": 0 },
+            { "text": "4.7 mL", "next": "s4", "feedback": "This used a 10 kg weight rather than 16 kg. The estimate from step one drives everything downstream — carry it forward deliberately rather than re-guessing.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "She improves, but the team wants maintenance fluid started after the bolus while labs are pending.\n\n**What hourly rate does the 4-2-1 rule give for a 16 kg child?**",
+          "choices": [
+            { "text": "52 mL/h", "next": "s5", "feedback": "Correct. First 10 kg: 10 x 4 = 40. Remaining 6 kg fall in the second tier: 6 x 2 = 12. Total 40 + 12 = 52 mL/h. She never reaches the third tier because she is under 20 kg.", "score": 1 },
+            { "text": "64 mL/h", "next": "s5", "feedback": "This applied 4 mL/kg to all 16 kg. The tiers exist because fluid need per kilogram falls as size rises. Only the first 10 kg get 4 mL/kg; the next 6 kg get 2.", "score": 0 },
+            { "text": "46 mL/h", "next": "s5", "feedback": "This dropped the remaining 6 kg into the third tier at 1 mL/kg. The third tier only begins above 20 kg, and she is 16. Her last 6 kg are billed at 2 mL/kg: 40 + 12 = 52.", "score": 0 },
+            { "text": "16 mL/h", "next": "s5", "feedback": "This applied 1 mL/kg across the whole weight, which is roughly a keep-open rate rather than maintenance. A dehydrated 16 kg child on 16 mL/h falls further behind every hour.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "Change the case. A different child, `10 kg`, arrives in cardiac arrest. The team calls for defibrillation energy and the first epinephrine dose from the `0.1 mg/mL` syringe.\n\n**What are the two numbers?**",
+          "choices": [
+            { "text": "Shock at 20 J, epinephrine 0.1 mg which is 1 mL", "next": "end", "feedback": "Correct. First shock is 2 J/kg: 2 x 10 = 20 J. Epinephrine is 0.01 mg/kg: 0.01 x 10 = 0.1 mg, and at 0.1 mg/mL that is exactly 1 mL. A second shock would be 4 J/kg, or 40 J.", "score": 1 },
+            { "text": "Shock at 40 J, epinephrine 0.1 mg which is 1 mL", "next": "end", "feedback": "The drug is right. 40 J is the second-shock energy at 4 J/kg; the first is 2 J/kg, or 20 J. Escalation is part of the algorithm, not the starting point.", "score": 0 },
+            { "text": "Shock at 20 J, epinephrine 1 mg which is 10 mL", "next": "end", "feedback": "The energy is right but the drug is an adult dose in a 10 kg child — ten times too much. Pediatric arrest epinephrine is 0.01 mg/kg, giving 0.1 mg here.", "score": -1 },
+            { "text": "Shock at 200 J, epinephrine 0.1 mg which is 1 mL", "next": "end", "feedback": "The drug is right; 200 J is an adult biphasic energy. Pediatric defibrillation is weight-based at 2 J/kg then 4 J/kg, so this child starts at 20 J.", "score": -1 }
+          ]
+        }
+      ],
+      "debrief": "Every pediatric number in this case came from two inputs: **age** and **weight in kilograms**. Age gave the weight estimate and the blood-pressure floor. Weight gave the bolus, the antipyretic dose, the maintenance rate, the joules and the epinephrine. Get the weight wrong once and every downstream number is wrong in the same direction, invisibly.\n\nThe recurring error to watch for is **stopping at milligrams and calling it milliliters**. `240 mg` of acetaminophen is `7.5 mL`; the two numbers look nothing alike, and the one that gets given is whichever one you wrote down last. Finish the chain out loud: kilograms, then milligrams, then millilitres.\n\nLast, notice what the vitals did. Heart rate `168` with a systolic of `80` gives a shock index far above anything normal, and `80` sits just above her `78 mmHg` floor — meaning she was one small step from decompensating while her blood pressure still read 'almost normal'. In children the pressure is the last thing to go."
+    }
+  ]
+}

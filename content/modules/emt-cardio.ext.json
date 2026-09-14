@@ -1,0 +1,969 @@
+{
+  "schema": 1,
+  "extends": "emt-cardio",
+  "lessons": [
+    {
+      "id": "emt-cardio-l11",
+      "title": "Acquiring a 12-lead and recognizing STEMI at the BLS level",
+      "minutes": 8,
+      "body": "## Ten electrodes, twelve views\n\nA `12-lead ECG` uses ten stickers to produce twelve different camera angles on the same electrical event. That is why it can say *where* the damage is, while the three-lead monitor can only say how fast and how regular.\n\nPlacement is the whole game. A misplaced chest electrode changes the picture enough to create or hide an infarct.\n\n| Lead | Where it goes |\n|---|---|\n| V1 | 4th intercostal space, right sternal border |\n| V2 | 4th intercostal space, left sternal border |\n| V3 | Midway between V2 and V4 |\n| V4 | 5th intercostal space, midclavicular line |\n| V5 | Anterior axillary line, level with V4 |\n| V6 | Midaxillary line, level with V4 |\n\nPlace V4 before V3, because V3 is defined by where V4 lands. Count down from the sternal angle to find the second rib and work down to the fourth space rather than guessing. On a woman, chest electrodes go **under** the breast tissue, not on top of it.\n\nLimb electrodes go on the limbs: wrists and ankles, or at least the fleshy part of the upper arm and thigh. Keep them off bone and off large muscles.\n\n> **On shift:** Most bad tracings are mechanical. Dry the skin, shave a small patch if needed, brace the arms, ask the patient to stop talking, and take it while the vehicle is stopped. \"Artifact\" is almost always a loose sticker or a shivering patient.\n\n## What you are looking for\n\nThe injury pattern is **ST-segment elevation** in two or more anatomically neighboring leads, with the machine usually printing something like acute MI suspected across the top. At the EMT level you do not diagnose from the tracing; you recognize the pattern and act on it.\n\nThe thresholds the interpretation uses: `1 mm` of elevation in two contiguous limb leads, and `2 mm` in `V2` and `V3` for men or `1.5 mm` for women.\n\nGrouping by neighbor tells you the wall:\n\n| Leads | Wall | Usual artery |\n|---|---|---|\n| II, III, aVF | Inferior | Right coronary |\n| V1-V4 | Anterior and septal | Left anterior descending |\n| I, aVL, V5, V6 | Lateral | Circumflex |\n\n**Reciprocal changes**, meaning depression in the leads on the opposite side, make the finding far more convincing. Inferior elevation with depression in `I` and `aVL` is the classic pair.\n\n> **Trap:** Several things mimic elevation: left bundle branch block, a paced rhythm, pericarditis with diffuse concave elevation and PR depression, and benign early repolarization in young men. This is precisely why the machine's reading is screened by a physician and why you never treat the paper instead of the patient.\n\nWhen an inferior pattern appears, expect a **right-sided** tracing with `V4R` to be requested, because a right ventricular infarct changes everything about nitroglycerin.\n\n## Transmission is the point\n\nA tracing that stays in your monitor saves nobody. Transmit it, then call, and say the words that start the process: a short age and sex, the complaint, the time symptoms began, and that the machine reads acute MI suspected.\n\nThe target is `90 minutes` from first medical contact to the balloon opening the artery when the patient goes straight to a catheterization-capable hospital, and `120 minutes` when a transfer is needed. Your `12-lead` inside `10 minutes` of contact is the first of those minutes and the only one you control.",
+      "keyPoints": [
+        "V1 and V2 sit at the 4th intercostal space beside the sternum, V4 at the 5th midclavicular, V3 between V2 and V4, V5 anterior axillary and V6 midaxillary level with V4.",
+        "STEMI means ST elevation in two contiguous leads: 1 mm in limb leads, 2 mm in V2-V3 for men and 1.5 mm for women.",
+        "II, III and aVF are inferior; V1-V4 anterior and septal; I, aVL, V5 and V6 lateral. Reciprocal depression strengthens the finding.",
+        "Left bundle branch block, paced rhythms, pericarditis and early repolarization all mimic ST elevation.",
+        "Obtain the 12-lead within 10 minutes of contact and transmit it; the goal is 90 minutes from first medical contact to balloon."
+      ],
+      "checks": [
+        {
+          "q": "Where does the V4 electrode belong?",
+          "choices": [
+            "4th intercostal space, left sternal border",
+            "5th intercostal space, midclavicular line",
+            "Midaxillary line level with V5",
+            "Anterior axillary line, 4th intercostal space"
+          ],
+          "answer": 1,
+          "why": "V4 sits at the 5th intercostal space in the midclavicular line and is placed before V3, since V3 is defined as midway between V2 and V4."
+        },
+        {
+          "q": "A tracing shows ST elevation in II, III and aVF with ST depression in I and aVL. This pattern indicates:",
+          "choices": [
+            "An anterior infarct with artifact",
+            "Pericarditis",
+            "An inferior infarct with reciprocal changes",
+            "A lateral infarct"
+          ],
+          "answer": 2,
+          "why": "II, III and aVF view the inferior wall, and depression in the opposite lateral leads is the classic reciprocal pattern that makes the finding convincing rather than incidental."
+        },
+        {
+          "q": "Your monitor prints acute MI suspected on a 55-year-old with chest pain. The most time-critical action is to:",
+          "choices": [
+            "Transmit the tracing and notify the receiving hospital early",
+            "Repeat the tracing three times to confirm",
+            "Wait for a paramedic to interpret it before calling",
+            "Drive to the nearest emergency department without notification"
+          ],
+          "answer": 0,
+          "why": "Transmission and early notification let the hospital mobilize the catheterization team before arrival, which is what protects the 90-minute window. Repeating tracings or waiting for interpretation only burns minutes of dying muscle."
+        }
+      ]
+    },
+    {
+      "id": "emt-cardio-l12",
+      "title": "The heart attacks that do not look like heart attacks",
+      "minutes": 7,
+      "body": "## Why the script gets broken\n\nPain from the heart travels on nerves that also carry sensation from the jaw, neck, shoulders, arms and upper abdomen, so the brain guesses badly about where it is coming from. Three groups break the script often enough that missing them is one of the most common serious errors in prehospital care.\n\n## Women\n\nWomen do get crushing chest pressure. They also present, far more often than men, with symptoms that never include the word pain: profound fatigue for days before the event, breathlessness on ordinary activity, nausea, sleep disturbance, and discomfort in the upper back, jaw or between the shoulder blades.\n\nWomen also arrive later, are less likely to be given aspirin early, and have higher death rates in the first year after an infarct. Part of that gap is built at the curb, by the provider deciding this does not look cardiac.\n\nWomen also have higher rates of infarcts without a classic blockage: spontaneous coronary artery dissection, which strikes younger women including around pregnancy, and stress cardiomyopathy after an intense emotional event.\n\n> **Key:** Fatigue plus breathlessness plus nausea in a woman over `45` is a cardiac presentation until an emergency department says otherwise. Get the `12-lead` on her.\n\n## Diabetics\n\nLong-standing diabetes damages small nerves, including the ones carrying cardiac pain. The result is the silent infarct: the muscle dies and the alarm never sounds.\n\nWhat shows up instead is an **anginal equivalent**: sudden shortness of breath with no chest complaint, unexplained sweating, new nausea or vomiting, sudden weakness, or a blood sugar that has gone out of control for no reason the patient can name.\n\nA diabetic who says \"I just feel wrong\" and is sweating deserves the same workup as a man clutching his chest.\n\n## Older adults\n\nBy the eighties, shortness of breath is a more common presenting complaint for an infarct than chest pain. Confusion, a new fall, sudden weakness, syncope or simply not getting out of the chair today are all documented presentations.\n\nOlder patients also blunt the autonomic package: less sweating, less tachycardia, sometimes a heart rate held down by a beta blocker so the compensating pulse you expect never appears.\n\n> **Trap:** A normal heart rate does not reassure you in a patient on a beta blocker. The drug removes the sign, not the problem.\n\n## The rule that catches them\n\nThree habits catch most atypical infarcts.\n\n1. Get a `12-lead` on every adult with unexplained shortness of breath, syncope, new weakness, epigastric pain, or unexplained sweating, not only on chest pain.\n2. Believe diaphoresis. Skin that is wet without a reason is the most trusted single sign in the field.\n3. Ask what is different today, then ask when it started. Two days of fatigue that got sharply worse this morning is a timeline, and timelines are what the hospital uses.\n\nAnd hold one more group in mind: young adults with stimulant use. Cocaine and methamphetamine cause coronary spasm and infarcts in people in their twenties and thirties, and the history is often not volunteered until you ask plainly.",
+      "keyPoints": [
+        "Women more often present with fatigue, breathlessness, nausea and back or jaw discomfort, and they are treated later than men.",
+        "Diabetic neuropathy produces silent infarcts; the anginal equivalent is dyspnea, sweating, vomiting or sudden weakness.",
+        "In patients over 80, shortness of breath is a more common presenting complaint than chest pain, along with confusion, falls and syncope.",
+        "A beta blocker removes the compensating tachycardia, so a normal heart rate is not reassuring.",
+        "Get a 12-lead for unexplained dyspnea, syncope, weakness, epigastric pain or diaphoresis, not just for chest pain."
+      ],
+      "checks": [
+        {
+          "q": "A 79-year-old woman with diabetes is brought in for two days of fatigue and new shortness of breath. She denies chest pain and is diaphoretic. Vitals are normal. You should:",
+          "choices": [
+            "Treat as a respiratory complaint and transport without a 12-lead",
+            "Obtain a 12-lead ECG and treat her as a possible acute coronary syndrome",
+            "Reassure her and advise follow-up with her physician",
+            "Withhold assessment until she reports chest pain"
+          ],
+          "answer": 1,
+          "why": "She sits in all three high-risk groups at once, and diaphoresis with dyspnea is a classic anginal equivalent. Normal vital signs never rule out an infarct."
+        },
+        {
+          "q": "Why do diabetics often have silent myocardial infarctions?",
+          "choices": [
+            "Their coronary arteries are larger",
+            "High blood sugar blocks the ECG changes",
+            "Neuropathy damages the nerves that carry cardiac pain signals",
+            "They metabolize aspirin differently"
+          ],
+          "answer": 2,
+          "why": "Long-standing diabetes damages small sensory nerves, so the warning pain never arrives. The muscle still dies, which is why the presenting complaint is often dyspnea, vomiting or weakness."
+        }
+      ]
+    },
+    {
+      "id": "emt-cardio-l13",
+      "title": "Pacemakers, ICDs and the magnet",
+      "minutes": 6,
+      "body": "## Two devices, two jobs\n\nA hard lump under the skin below a collarbone, usually the left, with a scar over it, is one of two things.\n\nA **pacemaker** watches for a heart rate that is too slow and delivers a tiny painless impulse to make the heart beat. Patients get one for a failing sinus node or a heart block.\n\nAn **implantable cardioverter defibrillator**, an `ICD`, does everything a pacemaker does and adds one thing: if it detects ventricular fibrillation or fast ventricular tachycardia it charges and delivers an internal shock, usually `25-40 joules`, roughly `10-15 seconds` after it recognizes the rhythm. Patients get one because they have already survived a lethal rhythm or are at high risk of one.\n\n> **Key:** A patient who tells you their defibrillator fired has had a life-threatening rhythm, even if they feel fine now. That is a transport, a `12-lead`, and pads on the chest, not a refusal.\n\n## When it fires more than once\n\nOne shock with the patient now alert and comfortable is the device doing its job. Repeated shocks are different.\n\nThree or more shocks in `24 hours` is called an electrical storm. It means either a heart that keeps going into a lethal rhythm or a device firing at a rhythm that is not lethal, such as rapid atrial fibrillation. Either way it is an emergency: high-priority transport, advanced life support, and a patient who is often terrified and in pain.\n\nIf you are touching the patient when the device discharges, you may feel a sharp tingle. It is startling and it is not dangerous. Do not let it stop compressions.\n\n## Magnets, and what they actually do\n\nA doughnut magnet placed over the device does different things depending on which device it is.\n\n- Over an **ICD**, a magnet suspends shock therapy. Pacing continues untouched. This is what stops an electrical storm from shocking a conscious patient while advanced providers treat the underlying rhythm.\n- Over a **pacemaker**, a magnet forces asynchronous pacing at a fixed manufacturer rate, usually around `85-100`, ignoring the patient's own beats.\n\nMagnet use is a medical direction and protocol decision. Most EMT scopes do not include applying one. Knowing what it does, and telling the incoming paramedic that the device is firing repeatedly, is the part that belongs to you.\n\n## CPR, AEDs and pads\n\nNothing about an implanted device changes the arrest algorithm. Compress, ventilate, attach the AED, follow the prompts.\n\nPlace the pad at least `1 inch` away from the visible device bulge, or use anterior-posterior placement instead. A pad directly over the generator wastes energy and can damage it.\n\n> **Trap:** Twitching of the chest muscles or a pacing spike on a monitor does not mean the patient has a pulse. If there is no pulse, there is CPR. A pacemaker that is firing into a dead heart is still a dead heart.\n\nPatients carry a device identification card; bring it. Ask when the device was placed, what it is for, whether it has fired, how many times, and whether the patient passed out with it.",
+      "keyPoints": [
+        "A pacemaker treats rates that are too slow; an ICD adds internal defibrillation at roughly 25-40 joules for lethal ventricular rhythms.",
+        "Any patient whose ICD fired needs transport, a 12-lead and pads, even if they feel well.",
+        "Three or more shocks in 24 hours is electrical storm: high priority, ALS, and a frightened patient in pain.",
+        "A magnet suspends shocks on an ICD and forces asynchronous pacing on a pacemaker; its use is a protocol and medical direction decision.",
+        "Keep AED pads at least an inch from the device bulge, and never let pacing spikes substitute for a pulse check."
+      ],
+      "checks": [
+        {
+          "q": "A 60-year-old says his implanted defibrillator shocked him once an hour ago. He feels fine now, with normal vitals, and wants to stay home. The best action is:",
+          "choices": [
+            "Document a refusal since he is asymptomatic",
+            "Advise him to call his cardiologist in the morning",
+            "Strongly encourage transport, obtain a 12-lead, and place pads on the chest",
+            "Place a magnet over the device and observe"
+          ],
+          "answer": 2,
+          "why": "A discharge means the device detected a lethal rhythm. He is at risk of another one right now, so transport with monitoring is the answer. Applying a magnet would disable the very protection he needs."
+        },
+        {
+          "q": "You are performing compressions on a patient with an ICD and feel a sharp tingle in your hands. You should:",
+          "choices": [
+            "Stop compressions and stand clear for 30 seconds",
+            "Continue compressions; the internal discharge is startling but harmless to you",
+            "Remove your gloves and restart",
+            "Disconnect the AED pads"
+          ],
+          "answer": 1,
+          "why": "Internal discharge energy reaching a rescuer is far too small to cause harm. Interrupting compressions costs perfusion, which is the actual danger in this situation."
+        },
+        {
+          "q": "Where do AED pads go on a patient with a visible pacemaker bulge below the left collarbone?",
+          "choices": [
+            "Directly over the device for best contact",
+            "At least one inch away from the device, or anterior-posterior",
+            "Both pads on the right side of the chest",
+            "Defibrillation is contraindicated with an implanted device"
+          ],
+          "answer": 1,
+          "why": "A pad over the generator shunts energy and can damage the device. Moving an inch away or switching to front-and-back placement solves it, and defibrillation is never withheld because of an implant."
+        }
+      ]
+    },
+    {
+      "id": "emt-cardio-l14",
+      "title": "The LVAD patient: no pulse is normal",
+      "minutes": 7,
+      "body": "## A pump that never pulses\n\nA left ventricular assist device (`LVAD`) is a mechanical pump sewn into the left ventricle with an outflow graft to the aorta. It is used while a patient waits for a transplant, or permanently for a heart too damaged to recover.\n\nModern devices are **continuous flow**. They move blood in a steady stream rather than in beats. That single fact rewrites your assessment:\n\n- There is usually **no palpable pulse**, and that is normal.\n- A blood pressure cuff with a stethoscope often gives you nothing. A `MAP` obtained with a doppler as the cuff deflates is the measurement these patients use, with a usual target around `70-90 mmHg`.\n- Pulse oximetry frequently fails to read, because it needs a pulsation to detect.\n- The monitor still shows the patient's own underlying rhythm, which can be anything, including ventricular fibrillation in a conscious patient.\n\n> **Key:** Assess perfusion instead of pulses. Mental status, skin color and temperature, and capillary refill tell you whether the pump is working. An awake, talking patient with no pulse is a working `LVAD`.\n\n## The first thing you do is listen\n\nPut your stethoscope over the left chest. A working device makes a continuous mechanical hum. Hum present means the pump is running. Silence means it is not, and that is the emergency.\n\nThen look at the controller on the patient's belt and the battery pack. Check that the driveline, the cable exiting the abdomen, is connected at both ends, that the batteries are seated, and that the alarm display is readable. Every patient travels with spare batteries and a backup controller, and every patient or caregiver has been trained to change both.\n\nTwo more resources ride with the patient: the caregiver, who is genuinely expert, and a `24`-hour `VAD` coordinator phone number printed on the equipment bag. Call it early. These are among the few calls where the right move includes a phone call to a specialist before you leave the house.\n\n## Compressions, and the fear about them\n\nThe historic teaching was never to compress an `LVAD` patient because the inflow cannula can be torn loose from the ventricle.\n\nCurrent guidance is narrower. If the pump is not running, the patient is unresponsive with no signs of perfusion, and troubleshooting the controller, batteries and connections has failed, then chest compressions are performed. A patient with a stopped pump dies without them. Follow your protocol and contact medical direction, because services differ.\n\nDefibrillation is not restricted. Shock a shockable rhythm normally with pads in standard placement.\n\n> **Trap:** The trap runs both ways. Compressing a conscious patient whose pump is humming is harmful, and refusing to compress a pulseless patient whose pump has stopped is fatal. Listen first, then troubleshoot, then decide.\n\n## What else goes wrong\n\nThese patients take anticoagulants, so bleeding is common and strokes happen in both directions, from clot and from hemorrhage. Sudden confusion or one-sided weakness in an `LVAD` patient is a stroke alert. The driveline exit site is a frequent source of infection and sepsis.\n\nTransport to the implanting center when protocol and distance allow, and bring every piece of equipment, including the backup controller and all batteries.",
+      "keyPoints": [
+        "Continuous-flow LVAD patients normally have no palpable pulse, unreadable pulse oximetry and no cuff blood pressure; assess mental status, skin and capillary refill.",
+        "Auscultate the left chest for a continuous hum: hum present means the pump runs, silence is the emergency.",
+        "Troubleshoot the controller, batteries and driveline connections, and call the 24-hour VAD coordinator number on the equipment bag.",
+        "Compressions only if the pump is stopped and the patient is unresponsive with no perfusion after troubleshooting, per protocol; defibrillation is unrestricted.",
+        "These patients are anticoagulated: expect bleeding, clot and hemorrhagic strokes, and driveline infections."
+      ],
+      "checks": [
+        {
+          "q": "You find an alert LVAD patient with a complaint of dizziness. You cannot palpate a pulse or obtain a cuff blood pressure. This means:",
+          "choices": [
+            "He is in cardiac arrest and needs compressions",
+            "The absence of a pulse is expected with a continuous-flow device; assess mental status, skin and capillary refill",
+            "The device has failed and you should disconnect it",
+            "You should apply the AED and analyze"
+          ],
+          "answer": 1,
+          "why": "Continuous flow produces no pulsation, so a pulseless awake patient is normal. Compressing or disconnecting a functioning device would be harmful; perfusion is judged clinically instead."
+        },
+        {
+          "q": "What is the first assessment step specific to an LVAD patient?",
+          "choices": [
+            "Auscultate the left chest for the continuous pump hum",
+            "Obtain a 12-lead ECG",
+            "Palpate a radial pulse for 60 seconds",
+            "Apply a pulse oximeter to the ear"
+          ],
+          "answer": 0,
+          "why": "The hum tells you in two seconds whether the pump is running, which decides everything after it. Pulses and oximetry are unreliable by design in these patients."
+        },
+        {
+          "q": "An LVAD patient is unresponsive, has no hum, and troubleshooting the controller, batteries and driveline has not restored the pump. You should:",
+          "choices": [
+            "Withhold compressions because they can dislodge the cannula",
+            "Transport rapidly without compressions",
+            "Begin chest compressions per protocol and contact medical direction",
+            "Apply a magnet over the device"
+          ],
+          "answer": 2,
+          "why": "Once the pump is confirmed stopped and the patient has no perfusion, compressions are the only circulation available. The old blanket prohibition applies to patients whose pump is still running."
+        }
+      ]
+    },
+    {
+      "id": "emt-cardio-l15",
+      "title": "Pediatric arrest and drowning: a breathing problem first",
+      "minutes": 7,
+      "body": "## Children arrest for a different reason\n\nAdults arrest because a coronary artery closed and the rhythm went chaotic. Children almost never do that. A child's heart is usually healthy; what fails first is breathing, or circulation from fluid loss or sepsis. The heart slows, then stops, because it ran out of oxygen.\n\nThat changes the whole approach. Ventilation is not a secondary task in a pediatric arrest, it is the treatment for the cause.\n\nIt also means the arrest is usually preventable if you act at the bradycardia stage. In a child with poor perfusion whose heart rate is below `60` despite an open airway, oxygen and effective ventilation, you start compressions. You do not wait for the pulse to disappear.\n\n> **Key:** A heart rate under `60` in a poorly perfusing infant or child is treated like an arrest. Oxygenate, ventilate, and if it does not come up, start compressions.\n\n## The pediatric numbers\n\n| Element | Child, 1 year to puberty | Infant, under 1 year |\n|---|---|---|\n| Rate | 100-120 per minute | 100-120 per minute |\n| Depth | About 2 in, one third of chest depth | About 1.5 in, one third |\n| Ratio, one rescuer | 30:2 | 30:2 |\n| Ratio, two rescuers | 15:2 | 15:2 |\n| Ventilation with advanced airway | 1 breath every 2-3 seconds | 1 breath every 2-3 seconds |\n\nThe two-rescuer ratio of `15:2` exists for exactly the reason above: children need more breaths because breathing is what failed.\n\nWhen you are alone with an unwitnessed pediatric collapse, give about `2 minutes` of CPR before leaving to call for help, because oxygen delivery is the thing most likely to help. For a witnessed sudden collapse in an older child, which looks more like adult sudden cardiac arrest, call and get the AED first.\n\n## Drowning\n\nDrowning kills by hypoxia. Water in the airway triggers laryngospasm and the patient stops exchanging gas long before the heart stops.\n\nThe practical consequences:\n\n1. Start with **ventilation**. Deliver rescue breaths as soon as it is safe, even before the patient is fully out of the water if trained and equipped to do so. This is one of the few arrests where breaths genuinely come first.\n2. **Do not** perform abdominal thrusts to expel water. There is no meaningful water to remove from the lungs, and thrusts cause vomiting and aspiration.\n3. Expect vomiting anyway. Have suction ready and be ready to roll the patient.\n4. **Spinal precautions only if the mechanism suggests injury**: diving, a fall, a boat strike, surfing, or an unknown mechanism with signs of trauma. Routine immobilization of every drowning victim delays resuscitation.\n5. Remove wet clothes and dry the chest before the AED pads go on. Move the patient out of standing water.\n6. Every rescued patient transports, even one who looks fine. Lung injury from aspirated water can declare itself hours later.\n\n> **Trap:** \"He coughed a lot but he is fine now\" is how delayed drowning deaths begin. A patient who required rescue, who coughed persistently, or who had any loss of consciousness needs an emergency department.\n\nCold water changes the arithmetic further, and that is the subject of the next lesson: submersion in cold water has produced neurologically intact survival after remarkably long downtimes, particularly in children.",
+      "keyPoints": [
+        "Pediatric arrest is usually hypoxic, so ventilation treats the cause; two-rescuer CPR uses 15:2 for children and infants.",
+        "Start compressions on a child with poor perfusion and a heart rate below 60 despite adequate oxygenation and ventilation.",
+        "In drowning, give rescue breaths first; never use abdominal thrusts to expel water.",
+        "Spinal precautions in drowning only when the mechanism suggests injury, such as diving or a fall.",
+        "Every rescued drowning patient is transported, because aspiration injury can appear hours later."
+      ],
+      "checks": [
+        {
+          "q": "A 2-year-old pulled from a pool is apneic with a heart rate of 48 and poor perfusion despite one minute of effective bag-valve mask ventilation with oxygen. You should:",
+          "choices": [
+            "Continue ventilating only and reassess in 2 minutes",
+            "Begin chest compressions at a 15:2 ratio with two rescuers",
+            "Apply the AED and analyze the rhythm",
+            "Perform abdominal thrusts to clear water"
+          ],
+          "answer": 1,
+          "why": "A rate under 60 with poor perfusion after adequate oxygenation is treated as arrest in a child. Abdominal thrusts cause vomiting, and analysis delays compressions in a hypoxic arrest."
+        },
+        {
+          "q": "Which drowning patient requires spinal motion restriction?",
+          "choices": [
+            "Every drowning patient, without exception",
+            "A swimmer who dove head-first into shallow water",
+            "A toddler found floating in a backyard pool with no witnessed fall",
+            "An adult who had a seizure while swimming laps"
+          ],
+          "answer": 1,
+          "why": "Precautions are driven by mechanism, and diving into shallow water is the classic cervical injury. Routinely immobilizing every drowning victim delays the ventilation that actually saves them."
+        }
+      ]
+    },
+    {
+      "id": "emt-cardio-l16",
+      "title": "Hypothermic arrest: not dead until warm and dead",
+      "minutes": 6,
+      "body": "## Why cold buys time\n\nCold slows metabolism. At a core temperature near `28 C`, roughly `82 F`, the brain needs a fraction of the oxygen it demands at normal temperature. That is why patients have walked out of hospitals neurologically intact after cold-water submersions and avalanche burials that would be unsurvivable warm, and why the rule exists: a hypothermic patient is not dead until they are warm and dead.\n\nThe same cold makes them look dead. Pupils can be fixed and dilated, the skin is rigid, and the heart may be beating `6` times a minute with a pulse you cannot feel.\n\n> **Key:** Assess breathing and pulse for a full `30-60 seconds` in a severely hypothermic patient before declaring them pulseless. A normal `10`-second check finds nothing on a patient who still has a rhythm.\n\n## Handle them like glass\n\nA cold ventricle is electrically irritable. Rough handling, a hard lift, jostling on stairs, even sitting the patient up has been associated with triggering ventricular fibrillation.\n\nSo: move them horizontally and gently, cut wet clothes off rather than pulling them off, insulate above and below with blankets, and stop the ongoing heat loss before anything else.\n\n**Afterdrop** is the reason you do not rub or actively rewarm the arms and legs. Warming the limbs sends cold, acidic blood from the periphery back to the core, dropping the core temperature further and sometimes precipitating arrest. Warm the trunk: chest, neck, armpits, groin, with heat packs wrapped so they never touch skin directly.\n\n## If there is no pulse\n\nStart CPR. The compressions and ventilations are the same as any arrest, and the chest may feel stiff.\n\nDefibrillation: attach the AED and follow its prompts. A cold heart often does not convert until it is warmer. Older protocols limited you to three shocks until the core rose above `30 C`, `86 F`. Current AHA guidance is to attempt defibrillation using the standard sequence while rewarming continues. Follow your protocol, and do not stop CPR because a shock failed.\n\nField termination rules generally do **not** apply to hypothermic arrest, drowning, or overdose. These patients are transported with CPR in progress, ideally to a center capable of extracorporeal rewarming, because that is the only thing that actually warms them fast.\n\n> **Trap:** Do not use a ROSC-or-nothing mindset here. Downtime numbers that would justify stopping in a warm arrest mean very little in a cold one, and the cases that make textbooks are exactly the ones that looked hopeless at the scene.\n\n## Hypothermia that has not arrested yet\n\nSevere hypothermia below about `30 C` produces confusion or unresponsiveness, absent shivering, a slow pulse and slow breathing. Shivering stops below roughly `32 C`, so a patient who was shivering and now is not may be getting worse, not better.\n\nHandle gently, remove wet clothing, insulate, warm the trunk, give warm humidified oxygen if available, give nothing by mouth, and do not allow the patient to walk or exert. Alcohol makes it all worse by dilating vessels and dulling judgment.",
+      "keyPoints": [
+        "Check breathing and pulse for 30-60 seconds in severe hypothermia before calling a patient pulseless.",
+        "A cold ventricle fibrillates easily: move the patient horizontally and gently, and cut wet clothing off.",
+        "Warm the trunk and avoid rubbing or warming the limbs, because afterdrop returns cold blood to the core.",
+        "Follow the standard AED sequence while rewarming; a cold heart may not convert until warmer, and CPR continues regardless.",
+        "Field termination rules generally do not apply to hypothermic arrest, drowning or overdose; transport with CPR in progress."
+      ],
+      "checks": [
+        {
+          "q": "A man is found in a snowbank, unresponsive, rigid, with no pulse detected during a 10-second check. Your next step is:",
+          "choices": [
+            "Declare him dead based on rigidity and fixed pupils",
+            "Reassess breathing and pulse for 30-60 seconds before concluding he is pulseless",
+            "Rub his arms and legs vigorously to restore circulation",
+            "Sit him upright to assess his airway"
+          ],
+          "answer": 1,
+          "why": "Severe hypothermia slows everything, so a pulse can be too faint for a 10-second check to find. Rigidity and fixed pupils are unreliable when cold, and rubbing limbs risks afterdrop."
+        },
+        {
+          "q": "Why do you avoid warming a severely hypothermic patient's arms and legs?",
+          "choices": [
+            "It causes frostbite injury",
+            "It wastes heat packs needed elsewhere",
+            "It returns cold acidic blood from the periphery to the core, dropping the core temperature further",
+            "It has no effect on temperature at all"
+          ],
+          "answer": 2,
+          "why": "This is afterdrop, and it can precipitate arrest. Heat is applied to the trunk, neck, axillae and groin, with packs wrapped so they never touch skin directly."
+        },
+        {
+          "q": "A hypothermic patient in arrest receives one shock without conversion. You should:",
+          "choices": [
+            "Stop resuscitation, since a cold heart cannot be converted",
+            "Continue CPR and rewarming, follow the AED prompts, and transport with resuscitation in progress",
+            "Apply a second AED for double sequential shocks",
+            "Wait 10 minutes before the next analysis"
+          ],
+          "answer": 1,
+          "why": "Cold hearts often do not convert until rewarmed, so CPR and rewarming continue while the AED follows its standard sequence. Termination rules generally do not apply to hypothermic arrest."
+        }
+      ]
+    },
+    {
+      "id": "emt-cardio-l17",
+      "title": "Stopping: termination of resuscitation and the family",
+      "minutes": 7,
+      "body": "## Why a field termination is often the right call\n\nTransporting an ongoing arrest with compressions bouncing off a moving stretcher produces worse compressions, risks the crew in a speeding vehicle, and almost never changes the outcome. If a resuscitation is not going to work, working it well on a living-room floor and then stopping is better medicine than a code run at highway speed.\n\n## The rules, and the variation\n\nThe widely validated **BLS termination rule** says resuscitation may be stopped when all three are true:\n\n1. The arrest was **not witnessed by EMS**.\n2. **No shock was delivered** by the AED.\n3. There is **no return of spontaneous circulation** after the defined period of resuscitation, often three full cycles of analysis and CPR.\n\nThe `ALS` version adds no bystander CPR and no ROSC after full advanced care. Nearly everywhere, termination requires contact with medical control and a documented order, and practice varies substantially by state and by system, including within New Jersey.\n\nTermination rules are generally **not** applied to hypothermia, drowning, overdose, pregnancy in the later stages, or pediatric arrest. Those patients are transported.\n\n## Mechanical CPR belongs to this conversation\n\nA piston or band device delivers consistent compressions on stairs, in an elevator, in a moving truck, and in the catheterization lab. It does not outperform good manual CPR in survival, and it earns its place by keeping quality constant where humans cannot.\n\nThe rule for applying one is the same rule as everything else in a code: the pause to place it stays under `10 seconds`. Compressions continue while the board goes under and the arms come around.\n\n## Saying it\n\nWhen the decision is made, the hardest part of the call starts.\n\nMove to where the family is, or bring them to you. Sit or crouch so you are not standing over them. Use names, yours and the patient's.\n\nUse the words **died** or **dead**. Not passed, not lost, not gone, not \"we were unable to obtain a pulse.\" Softened language leaves people genuinely unsure what happened, and some will ask whether their relative is still being treated.\n\nA usable shape for it: a warning sentence, then the fact, then silence.\n\n\"Mrs. Alvarez, I have difficult news. We did everything we could for Robert, and his heart did not restart. He died. I am sorry.\"\n\nThen stop talking. The silence will feel much longer to you than to them. Let them react however they react.\n\n> **On shift:** People remember two things about the worst day of their life: that someone told them plainly, and that someone stayed for a minute afterward. Both are free.\n\nAnswer what is asked, simply and honestly, including \"did he suffer\" and \"could I have done something.\" If bystander CPR was performed, say it mattered. Do not speculate about cause.\n\nThen handle the practical part: tell them what happens next with the body, who to call, that police or the medical examiner may come and that it is routine, and that the family can usually be with the patient. Ask whether anyone should be called, and let someone touch or hold their person if the scene allows it.\n\n> **Key:** Leave the equipment attached if the death may be investigated, document downtime, rhythms, interventions and the exact time of termination, and note who gave the order.\n\nAfter the call, the crew debrief is not optional filler. Pediatric arrests, arrests of people you know, and any code you argue about afterward are exactly the ones that accumulate.",
+      "keyPoints": [
+        "BLS termination requires an arrest not witnessed by EMS, no shock delivered, and no ROSC after the defined period, with medical control contact.",
+        "Termination rules generally do not apply to hypothermia, drowning, overdose, late pregnancy or pediatric arrest.",
+        "Mechanical CPR keeps quality constant during transport and stairs but must not create a pause longer than 10 seconds.",
+        "Say died or dead: a warning sentence, the fact, then silence. Softened words leave families genuinely confused.",
+        "Document downtime, rhythms, interventions, the termination time and the ordering physician, and leave equipment in place if the death may be investigated."
+      ],
+      "checks": [
+        {
+          "q": "Which set of findings best fits the BLS termination of resuscitation rule?",
+          "choices": [
+            "Arrest witnessed by EMS, one shock delivered, no ROSC",
+            "Arrest not witnessed by EMS, no shock delivered, no ROSC after the defined period",
+            "Arrest witnessed by a family member, bystander CPR performed, no ROSC",
+            "Any arrest lasting longer than 10 minutes"
+          ],
+          "answer": 1,
+          "why": "All three conditions must be present: unwitnessed by EMS, no shock delivered, and no ROSC. A delivered shock or an EMS-witnessed arrest both mean you keep going, and a simple time limit is not a rule anywhere."
+        },
+        {
+          "q": "Which phrase should you use when telling a family a patient has died?",
+          "choices": [
+            "He has passed on",
+            "We lost him",
+            "He died",
+            "We were unable to obtain a pulse"
+          ],
+          "answer": 2,
+          "why": "Plain words prevent the confusion that softened language creates; families have asked whether treatment was continuing after hearing all three of the other phrasings."
+        },
+        {
+          "q": "A drowning victim in arrest meets all three BLS termination criteria on paper. You should:",
+          "choices": [
+            "Terminate resuscitation at the scene",
+            "Continue resuscitation and transport, since termination rules generally exclude drowning",
+            "Terminate only if the patient is an adult",
+            "Continue for 10 more minutes then terminate regardless"
+          ],
+          "answer": 1,
+          "why": "Drowning, hypothermia, overdose, late pregnancy and pediatric arrest are the standard exclusions, because survival after prolonged downtime is documented in exactly those groups."
+        }
+      ]
+    },
+    {
+      "id": "emt-cardio-l18",
+      "title": "The post-ROSC bundle, second pass",
+      "minutes": 7,
+      "body": "## The patient is now a different patient\n\nA heart that just restarted is stunned, the brain has been without oxygen, and inflammation from the whole-body ischemia is beginning. Roughly a third of patients re-arrest, most of them early. The next twenty minutes are treated as their own resuscitation.\n\nRun four systems in order, and reassess all four every five minutes.\n\n## Oxygenation and ventilation\n\nTarget an `SpO2` of `92-98%`. Titrate down off `100%` once you can; sustained hyperoxia worsens brain injury.\n\nVentilate at `10 breaths per minute`, one every `6 seconds`, aiming for an `ETCO2` of `35-45 mmHg`. Do not chase a number by bagging faster. Low carbon dioxide constricts cerebral vessels and reduces the blood reaching the brain you just saved, and the raised pressure in the chest lowers cardiac output at the same time.\n\n> **Trap:** The most common post-ROSC error in every quality review is hyperventilation. The second is a saturation left at `100%` for the whole transport.\n\n## Circulation\n\nHypotension after arrest independently predicts death and poor neurologic outcome. Target a systolic of at least `90 mmHg`, a `MAP` of at least `65 mmHg`.\n\nAn EMT's contribution is to measure it often, position the patient supine, keep them warm, and say the number out loud early enough that advanced providers can give fluids or start a pressor. Re-arrest frequently announces itself as a falling pressure first.\n\nLeave the defibrillator pads on the chest, connected, for the entire transport.\n\n## The tracing and the destination\n\nGet a `12-lead` as soon as the patient is stable enough to hold still. A large share of adult arrests are caused by an occluded coronary artery, and the finding changes where the patient goes.\n\nWhere protocol allows, that destination is a hospital that can perform emergency cardiac catheterization and organized post-arrest care, even if it is not the closest. Say the words cardiac arrest with ROSC on the radio, because it activates a different team than chest pain does.\n\n## Temperature and the brain\n\nHospitals manage these patients with targeted temperature control, typically holding them between `32` and `36 C` for `24 hours`. Your field contribution is simpler than it sounds: **do not actively warm them and do not let them get hot.** Fever after arrest is associated with worse neurologic outcomes.\n\nDo not pack a patient in ice unless your protocol specifically directs it. Remove wet clothing, avoid piling on blankets, and report the temperature you found.\n\nExpect seizure activity and posturing; they are common after arrest and are not a reason to stop supporting the patient.\n\n## The move itself\n\nMore re-arrests happen during movement than at any other point. Plan the carry before you start it: who holds the airway, who watches the monitor, where the pads cable runs, and where you will stop if the pressure drops.\n\n> **Key:** Ten breaths a minute, oxygen titrated to `92-98%`, systolic above `90`, pads left on, a `12-lead`, and a cath-capable destination. That list is the whole bundle, and every item on it is something an EMT can influence.\n\nFinally, tell the family what happened in plain language before you leave. A restored pulse is not a recovery, and they should hear the difference from you rather than infer it.",
+      "keyPoints": [
+        "About a third of ROSC patients re-arrest, most of them early; reassess airway, ventilation, circulation and rhythm every 5 minutes.",
+        "Ventilate at 10 per minute to an ETCO2 of 35-45 and titrate oxygen to an SpO2 of 92-98%.",
+        "Target a systolic of at least 90 mmHg or a MAP of at least 65; post-arrest hypotension independently predicts death.",
+        "Get a 12-lead, leave the pads on, and transport to a catheterization-capable center where protocol allows.",
+        "Do not actively warm and do not allow fever; hospitals hold these patients between 32 and 36 C for 24 hours."
+      ],
+      "checks": [
+        {
+          "q": "Which set of post-ROSC targets is correct?",
+          "choices": [
+            "SpO2 100%, 20 breaths per minute, systolic above 70",
+            "SpO2 92-98%, 10 breaths per minute, systolic at least 90",
+            "SpO2 88-92%, 12 breaths per minute, systolic at least 120",
+            "SpO2 94-99%, 24 breaths per minute, systolic at least 80"
+          ],
+          "answer": 1,
+          "why": "Post-arrest care titrates oxygen down to 92-98%, ventilates at 10 per minute to an ETCO2 of 35-45, and defends a systolic of at least 90. The 88-92% window belongs to COPD, and every rate above 10 here is hyperventilation."
+        },
+        {
+          "q": "Why should you avoid actively warming a patient after ROSC?",
+          "choices": [
+            "Warming causes immediate re-arrest",
+            "Fever after arrest is associated with worse neurologic outcomes, and hospitals control temperature between 32 and 36 C",
+            "Warm patients cannot be defibrillated",
+            "It interferes with pulse oximetry"
+          ],
+          "answer": 1,
+          "why": "Hyperthermia worsens brain injury after arrest, which is why temperature is controlled rather than raised. Field icing is only done where protocol specifically directs it."
+        },
+        {
+          "q": "Ten minutes after ROSC the systolic falls from 104 to 78 while you prepare to move the patient. The most useful immediate action is:",
+          "choices": [
+            "Increase the ventilation rate to 20 per minute",
+            "Sit the patient upright to improve breathing",
+            "Report the falling pressure immediately, keep the patient supine and warm, and prepare for re-arrest with pads still attached",
+            "Remove the pads to reduce skin irritation before moving"
+          ],
+          "answer": 2,
+          "why": "A falling pressure is often the first sign of impending re-arrest, so it is communicated at once and the patient stays flat with pads connected. Hyperventilating lowers output further, and sitting them up worsens perfusion."
+        }
+      ]
+    }
+  ],
+  "cards": [
+    { "id": "emt-cardio-c073", "front": "Where do the V1 through V6 electrodes go on a 12-lead?", "back": "V1 4th intercostal space right sternal border, V2 4th space left sternal border, V4 5th space midclavicular, V3 midway between V2 and V4, V5 anterior axillary line level with V4, V6 midaxillary line level with V4.", "lesson": "emt-cardio-l11" },
+    { "id": "emt-cardio-c074", "front": "Why do you place V4 before V3?", "back": "V3 is defined as midway between V2 and V4, so V4 has to exist first. Placing V3 by eye first shifts every later lead and can create or hide changes.", "lesson": "emt-cardio-l11" },
+    { "id": "emt-cardio-c075", "front": "How much ST elevation counts as a STEMI, and in how many leads?", "back": "Two contiguous leads: 1 mm in the limb leads, 2 mm in V2-V3 for men and 1.5 mm for women.", "lesson": "emt-cardio-l11" },
+    { "id": "emt-cardio-c076", "front": "Which leads look at the inferior, anterior and lateral walls?", "back": "Inferior: II, III, aVF, usually right coronary. Anterior and septal: V1-V4, left anterior descending. Lateral: I, aVL, V5, V6, circumflex.", "lesson": "emt-cardio-l11" },
+    { "id": "emt-cardio-c077", "front": "What are reciprocal changes and why do they matter?", "back": "ST depression in leads opposite the injured wall, classically I and aVL when II, III and aVF are elevated. Their presence makes an infarct far more convincing than elevation alone.", "lesson": "emt-cardio-l11" },
+    { "id": "emt-cardio-c078", "front": "Name four common mimics of ST elevation.", "back": "Left bundle branch block, a ventricular paced rhythm, pericarditis with diffuse concave elevation and PR depression, and benign early repolarization in young men.", "lesson": "emt-cardio-l11" },
+    { "id": "emt-cardio-c079", "front": "What time targets apply from first medical contact in a STEMI?", "back": "12-lead within 10 minutes of contact, and 90 minutes from first medical contact to balloon when going direct to a cath-capable hospital, 120 minutes when a transfer is required.", "lesson": "emt-cardio-l11" },
+    { "id": "emt-cardio-c080", "front": "Your 12-lead is full of wandering baseline and muscle noise. What are the fixes?", "back": "Dry and prep the skin, shave a small patch if needed, reseat loose electrodes, brace the arms and ask the patient to stop talking, and acquire the tracing with the vehicle stopped.", "lesson": "emt-cardio-l11" },
+    { "id": "emt-cardio-c081", "front": "Which additional tracing is requested when an inferior pattern appears, and why?", "back": "A right-sided tracing with V4R, to detect a right ventricular infarct. That ventricle depends on preload, so nitroglycerin can cause profound hypotension.", "lesson": "emt-cardio-l11" },
+    { "id": "emt-cardio-c082", "front": "How do women most often present with acute coronary syndrome?", "back": "Fatigue for days, breathlessness on ordinary activity, nausea, sleep disturbance, and discomfort in the upper back, jaw or between the shoulder blades, often without the word pain.", "lesson": "emt-cardio-l12" },
+    { "id": "emt-cardio-c083", "front": "What is an anginal equivalent, and who has one?", "back": "A cardiac event presenting without chest pain: sudden dyspnea, unexplained sweating, nausea or vomiting, or sudden weakness. Most common in diabetics, older adults and women.", "lesson": "emt-cardio-l12" },
+    { "id": "emt-cardio-c084", "front": "Why is a normal heart rate not reassuring in an older cardiac patient?", "back": "Beta blockers prevent the compensating tachycardia you would expect, so the sign disappears while the problem continues. Older patients also sweat less and mount weaker autonomic responses.", "lesson": "emt-cardio-l12" },
+    { "id": "emt-cardio-c085", "front": "Which cardiac diagnoses are more common in younger women?", "back": "Spontaneous coronary artery dissection, including around pregnancy, and stress cardiomyopathy after an intense emotional event. Both cause infarcts without classic plaque blockage.", "lesson": "emt-cardio-l12" },
+    { "id": "emt-cardio-c086", "front": "Which complaints should prompt a 12-lead even without chest pain?", "back": "Unexplained shortness of breath, syncope, new weakness, epigastric pain, unexplained nausea or vomiting, confusion in an older adult, and any unexplained diaphoresis.", "lesson": "emt-cardio-l12" },
+    { "id": "emt-cardio-c087", "front": "Why ask a young chest pain patient about cocaine or methamphetamine?", "back": "Stimulants cause coronary spasm and infarcts in people in their twenties and thirties, and it changes treatment decisions. Patients rarely volunteer it unless you ask plainly.", "lesson": "emt-cardio-l12" },
+    { "id": "emt-cardio-c088", "front": "What is the difference between a pacemaker and an ICD?", "back": "A pacemaker treats rates that are too slow with painless impulses. An ICD does that and also delivers an internal shock of about 25-40 joules for ventricular fibrillation or fast ventricular tachycardia.", "lesson": "emt-cardio-l13" },
+    { "id": "emt-cardio-c089", "front": "A patient says his ICD fired once and he feels fine. What is the disposition?", "back": "Transport. A discharge means the device detected a lethal rhythm, so he gets a 12-lead, pads on the chest and monitoring, not a refusal.", "lesson": "emt-cardio-l13" },
+    { "id": "emt-cardio-c090", "front": "What is electrical storm and why does it matter?", "back": "Three or more ICD shocks in 24 hours. It means recurring lethal rhythms or a device firing on a non-lethal one. High-priority transport with ALS, and the patient is in pain and frightened.", "lesson": "emt-cardio-l13" },
+    { "id": "emt-cardio-c091", "front": "What does a magnet do over an ICD versus over a pacemaker?", "back": "Over an ICD it suspends shock therapy while pacing continues. Over a pacemaker it forces asynchronous pacing at a fixed rate, usually about 85-100. Its use is a protocol and medical direction decision.", "lesson": "emt-cardio-l13" },
+    { "id": "emt-cardio-c092", "front": "Where do AED pads go on a patient with an implanted device?", "back": "At least 1 inch away from the visible bulge, or use anterior-posterior placement. Never withhold defibrillation because of an implant.", "lesson": "emt-cardio-l13" },
+    { "id": "emt-cardio-c093", "front": "You feel a tingle during compressions on a patient with an ICD. What do you do?", "back": "Keep compressing. The internal discharge energy reaching a rescuer is harmless, and stopping compressions costs perfusion.", "lesson": "emt-cardio-l13" },
+    { "id": "emt-cardio-c094", "front": "Do pacing spikes on a monitor mean the patient has a pulse?", "back": "No. Spikes and even chest muscle twitching show electrical activity only. If there is no pulse, there is CPR.", "lesson": "emt-cardio-l13" },
+    { "id": "emt-cardio-c095", "front": "Why does an LVAD patient usually have no palpable pulse?", "back": "Modern devices are continuous flow; they move blood in a steady stream rather than in beats. Pulse oximetry often fails and a cuff with a stethoscope usually gives nothing.", "lesson": "emt-cardio-l14" },
+    { "id": "emt-cardio-c096", "front": "How do you assess perfusion in an LVAD patient?", "back": "Mental status, skin color and temperature, and capillary refill. Blood pressure, if obtainable, is a doppler MAP with a usual target of about 70-90 mmHg.", "lesson": "emt-cardio-l14" },
+    { "id": "emt-cardio-c097", "front": "What is the first device-specific assessment step for an LVAD patient?", "back": "Auscultate the left chest for a continuous mechanical hum. Hum present means the pump is running; silence is the emergency.", "lesson": "emt-cardio-l14" },
+    { "id": "emt-cardio-c098", "front": "What do you troubleshoot when an LVAD alarms?", "back": "The controller display, the batteries and their seating, and the driveline connections at both ends. Patients carry spare batteries and a backup controller, and the caregiver is trained to change both.", "lesson": "emt-cardio-l14" },
+    { "id": "emt-cardio-c099", "front": "When are chest compressions performed on an LVAD patient?", "back": "Only when the pump is confirmed stopped, the patient is unresponsive with no signs of perfusion, and troubleshooting has failed. Follow protocol and contact medical direction; defibrillation itself is unrestricted.", "lesson": "emt-cardio-l14" },
+    { "id": "emt-cardio-c100", "front": "What two resources should you use early on an LVAD call?", "back": "The trained caregiver at the bedside and the 24-hour VAD coordinator phone number printed on the patient's equipment bag. Bring all equipment, including the backup controller.", "lesson": "emt-cardio-l14" },
+    { "id": "emt-cardio-c101", "front": "What complications are LVAD patients prone to?", "back": "Bleeding and both clot and hemorrhagic strokes from anticoagulation, and driveline exit-site infection leading to sepsis. New confusion or one-sided weakness is a stroke alert.", "lesson": "emt-cardio-l14" },
+    { "id": "emt-cardio-c102", "front": "Why is pediatric arrest managed differently from adult arrest?", "back": "Children arrest from hypoxia or shock rather than a primary cardiac cause, so ventilation treats the actual problem. Two-rescuer CPR uses 15:2 for exactly that reason.", "lesson": "emt-cardio-l15" },
+    { "id": "emt-cardio-c103", "front": "When do you start compressions on a child who still has a pulse?", "back": "When the heart rate is below 60 with poor perfusion despite an open airway, oxygen and effective ventilation. You do not wait for the pulse to disappear.", "lesson": "emt-cardio-l15" },
+    { "id": "emt-cardio-c104", "front": "Alone with an unwitnessed pediatric collapse, do you call first or do CPR first?", "back": "About 2 minutes of CPR first, because the cause is usually hypoxia. For a witnessed sudden collapse in an older child, call and get the AED first.", "lesson": "emt-cardio-l15" },
+    { "id": "emt-cardio-c105", "front": "What is the first priority in a drowning resuscitation, and what must you not do?", "back": "Ventilation first, as soon as it is safe. Never perform abdominal thrusts to expel water; there is no meaningful water to remove and thrusts cause vomiting and aspiration.", "lesson": "emt-cardio-l15" },
+    { "id": "emt-cardio-c106", "front": "When do drowning patients get spinal motion restriction?", "back": "Only when the mechanism suggests injury: diving, a fall, a boat strike, surfing, or an unknown mechanism with signs of trauma. Routine immobilization delays resuscitation.", "lesson": "emt-cardio-l15" },
+    { "id": "emt-cardio-c107", "front": "Why does a drowning patient who looks fine still get transported?", "back": "Aspiration injury can declare itself hours later. Any patient who needed rescue, coughed persistently, or lost consciousness needs an emergency department.", "lesson": "emt-cardio-l15" },
+    { "id": "emt-cardio-c108", "front": "How long do you check breathing and pulse in a severely hypothermic patient?", "back": "30-60 seconds. Cold slows everything, so a rate of 6 with a faint pulse can be missed entirely by a standard 10-second check.", "lesson": "emt-cardio-l16" },
+    { "id": "emt-cardio-c109", "front": "Why do you handle a severely hypothermic patient gently?", "back": "A cold ventricle is electrically irritable, and rough handling, a hard lift or sitting the patient up has been associated with triggering ventricular fibrillation.", "lesson": "emt-cardio-l16" },
+    { "id": "emt-cardio-c110", "front": "What is afterdrop and how do you avoid it?", "back": "Warming the limbs sends cold acidic blood back to the core and lowers the core temperature further. Avoid it by warming the trunk, neck, axillae and groin instead, with packs never touching skin directly.", "lesson": "emt-cardio-l16" },
+    { "id": "emt-cardio-c111", "front": "How do you defibrillate a hypothermic arrest?", "back": "Attach the AED and follow its standard prompts while rewarming continues. A cold heart often will not convert until warmer, and CPR continues regardless of a failed shock.", "lesson": "emt-cardio-l16" },
+    { "id": "emt-cardio-c112", "front": "Which arrests are excluded from field termination rules?", "back": "Hypothermia, drowning, overdose, late pregnancy and pediatric arrest. These patients are transported with resuscitation in progress.", "lesson": "emt-cardio-l16" },
+    { "id": "emt-cardio-c113", "front": "Why is a patient who stops shivering not necessarily improving?", "back": "Shivering stops below roughly 32 C, so its disappearance in a cold patient with altered mental status usually means the hypothermia is getting worse, not better.", "lesson": "emt-cardio-l16" },
+    { "id": "emt-cardio-c114", "front": "State the three conditions of the BLS termination of resuscitation rule.", "back": "The arrest was not witnessed by EMS, no shock was delivered by the AED, and there is no ROSC after the defined period of resuscitation. Medical control contact is nearly always required.", "lesson": "emt-cardio-l17" },
+    { "id": "emt-cardio-c115", "front": "Why is terminating in the field often better than transporting an ongoing arrest?", "back": "Compressions in a moving vehicle are measurably worse, the crew is at risk at speed, and transport almost never changes the outcome of a resuscitation that has already failed.", "lesson": "emt-cardio-l17" },
+    { "id": "emt-cardio-c116", "front": "What words do you use to tell a family, and what shape does it take?", "back": "Died or dead, never passed or lost. A warning sentence, then the fact, then silence. Let them react before you say anything else.", "lesson": "emt-cardio-l17" },
+    { "id": "emt-cardio-c117", "front": "What do you document at a field termination?", "back": "Downtime, rhythms and any shocks, interventions performed, the exact time of termination, the physician who gave the order, and who was notified. Leave equipment attached if the death may be investigated.", "lesson": "emt-cardio-l17" },
+    { "id": "emt-cardio-c118", "front": "What is the rule for applying a mechanical CPR device?", "back": "The pause to place it stays under 10 seconds and compressions continue while it is positioned. It keeps quality constant on stairs and in transport but does not outperform good manual CPR.", "lesson": "emt-cardio-l17" },
+    { "id": "emt-cardio-c119", "front": "State the post-ROSC ventilation and oxygen targets.", "back": "10 breaths per minute, one every 6 seconds, to an ETCO2 of 35-45 mmHg, with oxygen titrated to an SpO2 of 92-98%.", "lesson": "emt-cardio-l18" },
+    { "id": "emt-cardio-c120", "front": "What blood pressure do you defend after ROSC, and why?", "back": "A systolic of at least 90 mmHg or a MAP of at least 65. Post-arrest hypotension independently predicts death and poor neurologic outcome, and a falling pressure often precedes re-arrest.", "lesson": "emt-cardio-l18" },
+    { "id": "emt-cardio-c121", "front": "How common is re-arrest after ROSC, and what do you do about it?", "back": "Roughly one third of patients re-arrest, most of them early. Leave the pads connected, reassess every 5 minutes, and plan every move before you make it.", "lesson": "emt-cardio-l18" },
+    { "id": "emt-cardio-c122", "front": "What is the EMT's role in temperature management after arrest?", "back": "Do not actively warm and do not allow fever, since hyperthermia worsens brain injury. Hospitals hold these patients between 32 and 36 C for 24 hours. Do not ice unless protocol directs it.", "lesson": "emt-cardio-l18" },
+    { "id": "emt-cardio-c123", "front": "What separates hypertensive urgency from hypertensive emergency?", "back": "Evidence of active organ injury: severe headache, vision change, confusion, seizure, chest pain, crackles, or one-sided weakness. The numbers alone, often above 180 systolic or 120 diastolic, are urgency.", "lesson": "emt-cardio-l10" },
+    { "id": "emt-cardio-c124", "front": "Hypotension with distended neck veins and clear lungs after blunt chest trauma suggests what two diagnoses?", "back": "Cardiac tamponade, with muffled heart sounds and a narrowing pulse pressure, and tension pneumothorax, with absent breath sounds on one side and late tracheal deviation away from the injury.", "lesson": "emt-cardio-l09" }
+  ],
+  "quiz": [
+    {
+      "id": "emt-cardio-q031",
+      "q": "You are placing chest electrodes on a 58-year-old man. V1 and V2 are at the 4th intercostal space beside the sternum. Where does V4 go?",
+      "choices": [
+        "5th intercostal space, midclavicular line",
+        "5th intercostal space, anterior axillary line",
+        "Midway between V2 and V6",
+        "4th intercostal space, midclavicular line"
+      ],
+      "answer": 0,
+      "why": "V4 sits at the 5th intercostal space in the midclavicular line and is placed before V3, which is defined as the midpoint between V2 and V4. The anterior axillary position is V5.",
+      "lesson": "emt-cardio-l11",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-cardio-q032",
+      "q": "A 12-lead shows 2 mm of ST elevation in II, III and aVF with 1 mm of depression in I and aVL. This most likely represents:",
+      "choices": [
+        "An anterior wall infarct",
+        "Pericarditis",
+        "An inferior wall infarct with reciprocal changes",
+        "Benign early repolarization"
+      ],
+      "answer": 2,
+      "why": "II, III and aVF are the inferior leads, usually supplied by the right coronary artery, and depression in the opposite lateral leads is the classic reciprocal pattern. Pericarditis gives diffuse elevation without reciprocal depression.",
+      "lesson": "emt-cardio-l11",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-cardio-q033",
+      "q": "An inferior STEMI pattern appears on your tracing and the patient's systolic is 96 with clear lungs. The most important consequence for your treatment is:",
+      "choices": [
+        "Aspirin should be withheld",
+        "Nitroglycerin may cause profound hypotension because of possible right ventricular involvement",
+        "Oxygen should be given at 15 L/min regardless of saturation",
+        "The patient should walk to the stretcher to test exertional tolerance"
+      ],
+      "answer": 1,
+      "why": "An inferior infarct frequently involves the right ventricle, which depends entirely on preload; nitroglycerin removes it and can crash the pressure. Aspirin is still indicated and exertion is always avoided.",
+      "lesson": "emt-cardio-l11",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-cardio-q034",
+      "q": "Your monitor prints acute MI suspected for a 61-year-old with 40 minutes of chest pressure. Which action most directly protects the 90-minute first-medical-contact-to-balloon target?",
+      "choices": [
+        "Repeating the tracing at 5-minute intervals throughout transport",
+        "Transmitting the tracing and notifying the receiving hospital before arrival",
+        "Requesting a paramedic intercept to confirm the reading",
+        "Transporting to the closest emergency department without notification"
+      ],
+      "answer": 1,
+      "why": "Transmission and early notification mobilize the catheterization team before the patient arrives, which is where the minutes are saved. Confirmation and repeat tracings are useful but do not start the team.",
+      "lesson": "emt-cardio-l11",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-cardio-q035",
+      "q": "Which of these is a well-recognized mimic of ST elevation on a 12-lead?",
+      "choices": [
+        "Sinus tachycardia",
+        "Left bundle branch block",
+        "First-degree AV block",
+        "Atrial fibrillation"
+      ],
+      "answer": 1,
+      "why": "Left bundle branch block, paced rhythms, pericarditis and early repolarization all produce elevation that is not acute occlusion. Rate and rhythm abnormalities alone do not create the ST pattern.",
+      "lesson": "emt-cardio-l11",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-cardio-q036",
+      "q": "A 68-year-old woman with type 2 diabetes reports three days of fatigue and today cannot walk to her mailbox without stopping. She is diaphoretic and denies chest pain. Vitals are within normal limits. Your best action is:",
+      "choices": [
+        "Treat as generalized weakness and transport without further cardiac assessment",
+        "Obtain a 12-lead, treat as possible ACS, and consider aspirin per protocol",
+        "Check a blood sugar and release her to family if it is normal",
+        "Advise a same-day appointment with her physician"
+      ],
+      "answer": 1,
+      "why": "She is female, diabetic and elderly, the three groups that most often present without chest pain, and unexplained diaphoresis is the sign most trusted in the field. Normal vitals never exclude an infarct.",
+      "lesson": "emt-cardio-l12",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-cardio-q037",
+      "q": "A 26-year-old man has sudden crushing chest pain, a heart rate of 128 and a blood pressure of 176/98. Which history question most changes your management?",
+      "choices": [
+        "Whether he has had a recent cold",
+        "Whether he has used cocaine or methamphetamine",
+        "Whether he ate spicy food today",
+        "Whether he has a family history of diabetes"
+      ],
+      "answer": 1,
+      "why": "Stimulants cause coronary spasm and infarcts in young adults and change both hospital treatment and drug choices. Patients rarely volunteer this unless asked plainly.",
+      "lesson": "emt-cardio-l12",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-cardio-q038",
+      "q": "An 84-year-old on metoprolol is having an infarct. His heart rate is 72. The correct interpretation of that rate is:",
+      "choices": [
+        "It rules out significant cardiac compromise",
+        "The beta blocker prevents the compensating tachycardia, so the normal rate is not reassuring",
+        "It indicates the infarct is resolving",
+        "It means the patient is not in pain"
+      ],
+      "answer": 1,
+      "why": "Beta blockers remove the tachycardia you would otherwise use as a warning sign. Older patients also sweat less and mount weaker autonomic responses, which is why they are missed.",
+      "lesson": "emt-cardio-l12",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-cardio-q039",
+      "q": "Which complaint least requires a 12-lead ECG in an adult patient?",
+      "choices": [
+        "New unexplained shortness of breath",
+        "Syncope while sitting",
+        "Epigastric pain with diaphoresis",
+        "An isolated laceration to the forearm with no other symptoms"
+      ],
+      "answer": 3,
+      "why": "Dyspnea, syncope and epigastric pain with sweating are all documented anginal equivalents and deserve a tracing. An isolated extremity wound with no systemic symptoms is not a cardiac presentation.",
+      "lesson": "emt-cardio-l12",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-cardio-q040",
+      "q": "A 57-year-old reports that his implanted defibrillator has shocked him four times in the past three hours. He is awake, pale and frightened. This presentation:",
+      "choices": [
+        "Is an electrical storm and requires high-priority transport with ALS",
+        "Is normal device behavior and needs no transport",
+        "Requires immediate CPR",
+        "Should be managed by turning off the device with a magnet by the EMT"
+      ],
+      "answer": 0,
+      "why": "Three or more shocks in 24 hours means either recurring lethal rhythms or inappropriate firing, and both are emergencies. He has a pulse, so CPR is wrong, and magnet application is a medical direction decision outside most EMT scopes.",
+      "lesson": "emt-cardio-l13",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-cardio-q041",
+      "q": "A magnet placed over an implantable cardioverter defibrillator will:",
+      "choices": [
+        "Stop all pacing output",
+        "Suspend shock therapy while pacing continues",
+        "Deliver a synchronized cardioversion",
+        "Reset the device to factory settings"
+      ],
+      "answer": 1,
+      "why": "On an ICD a magnet suspends anti-tachycardia shocks and leaves pacing alone. On a pacemaker it does something different: forces asynchronous pacing at a fixed rate around 85-100.",
+      "lesson": "emt-cardio-l13",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-cardio-q042",
+      "q": "You are about to place AED pads on a pulseless patient and see a firm bulge with a scar below the left collarbone. You should:",
+      "choices": [
+        "Withhold defibrillation because of the implant",
+        "Place a pad directly over the bulge for better contact",
+        "Place the pad at least one inch away from the device, or use anterior-posterior placement",
+        "Remove the device before applying pads"
+      ],
+      "answer": 2,
+      "why": "Energy delivered over the generator is wasted and can damage the device, but defibrillation is never withheld for an implant. Moving an inch away or switching to front and back solves it.",
+      "lesson": "emt-cardio-l13",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-cardio-q043",
+      "q": "A patient's monitor shows regular pacemaker spikes followed by wide complexes at 70 per minute, but you cannot feel a carotid pulse. You should:",
+      "choices": [
+        "Withhold CPR because the pacemaker is capturing",
+        "Begin high-quality chest compressions",
+        "Apply a magnet over the pacemaker",
+        "Wait 60 seconds and recheck the pulse"
+      ],
+      "answer": 1,
+      "why": "This is pulseless electrical activity with a paced rhythm. Electrical activity on a screen never proves mechanical output, and the only treatment is compressions plus a search for the cause.",
+      "lesson": "emt-cardio-l13",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-cardio-q044",
+      "q": "You are called for a 62-year-old with an LVAD who is alert and complaining of weakness. You cannot palpate a pulse, the pulse oximeter will not read, and you hear a continuous hum over the left chest. You should:",
+      "choices": [
+        "Begin chest compressions",
+        "Assess mental status, skin and capillary refill and continue your normal assessment, since the absent pulse is expected",
+        "Disconnect the controller to reset the device",
+        "Apply the AED and analyze the rhythm"
+      ],
+      "answer": 1,
+      "why": "Continuous-flow devices produce no pulse and often defeat pulse oximetry, and the hum proves the pump is running. Compressing or disconnecting a working device is harmful.",
+      "lesson": "emt-cardio-l14",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-cardio-q045",
+      "q": "An LVAD patient is unresponsive with no hum over the chest. The controller alarms, and changing batteries and reseating the driveline do not restore the pump. You should:",
+      "choices": [
+        "Withhold compressions because they may dislodge the inflow cannula",
+        "Transport rapidly without compressions and notify the hospital",
+        "Begin chest compressions per protocol while contacting medical direction",
+        "Place a magnet over the pump"
+      ],
+      "answer": 2,
+      "why": "The blanket prohibition applies to patients whose pump still runs. Once the pump is confirmed stopped and there is no perfusion after troubleshooting, compressions are the only circulation available.",
+      "lesson": "emt-cardio-l14",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-cardio-q046",
+      "q": "Which measurement is most appropriate for assessing blood pressure in a continuous-flow LVAD patient?",
+      "choices": [
+        "Palpated systolic at the radial artery",
+        "Standard auscultated cuff pressure",
+        "A doppler mean arterial pressure, usually targeted around 70-90 mmHg",
+        "Automated oscillometric cuff readings"
+      ],
+      "answer": 2,
+      "why": "Without pulsation, palpation, auscultation and automatic cuffs all fail. A doppler MAP is the standard measurement for these patients.",
+      "lesson": "emt-cardio-l14",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-cardio-q047",
+      "q": "Two rescuers are performing CPR on a 4-year-old in cardiac arrest with no advanced airway. The correct ratio is:",
+      "choices": [
+        "30:2",
+        "15:2",
+        "5:1",
+        "Continuous compressions with 1 breath every 6 seconds"
+      ],
+      "answer": 1,
+      "why": "Two-rescuer pediatric CPR uses 15:2 because pediatric arrest is usually hypoxic and needs more ventilation. The 30:2 ratio applies to a single rescuer, and the continuous option requires an advanced airway.",
+      "lesson": "emt-cardio-l15",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-cardio-q048",
+      "q": "An 11-month-old has a heart rate of 46 with mottled skin and delayed capillary refill after two minutes of effective bag-valve mask ventilation with oxygen. You should:",
+      "choices": [
+        "Continue ventilations only and reassess in another two minutes",
+        "Begin chest compressions",
+        "Apply the AED and analyze",
+        "Transport immediately without further intervention"
+      ],
+      "answer": 1,
+      "why": "A rate under 60 with poor perfusion despite adequate oxygenation and ventilation is treated as arrest in an infant or child. Waiting for the pulse to disappear wastes the window.",
+      "lesson": "emt-cardio-l15",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-cardio-q049",
+      "q": "A teenager is pulled unresponsive and apneic from a lake after a fall from a dock. Which action is incorrect?",
+      "choices": [
+        "Delivering rescue breaths as soon as it is safe to do so",
+        "Performing abdominal thrusts to expel water from the lungs",
+        "Applying spinal motion restriction because of the fall mechanism",
+        "Drying the chest before applying AED pads"
+      ],
+      "answer": 1,
+      "why": "There is no meaningful volume of water to remove and thrusts cause vomiting and aspiration. Ventilation first, mechanism-based spinal precautions and a dry chest for pads are all correct.",
+      "lesson": "emt-cardio-l15",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-cardio-q050",
+      "q": "A 6-year-old was pulled from a pool, coughed hard for several minutes, and now appears well with normal vitals. The parents want to keep her home. You should:",
+      "choices": [
+        "Agree, since she is asymptomatic",
+        "Recommend a follow-up appointment next week",
+        "Strongly encourage transport, because aspiration injury can appear hours later",
+        "Have her rest for an hour and reassess before deciding"
+      ],
+      "answer": 2,
+      "why": "Any patient who needed rescue, coughed persistently, or lost consciousness can deteriorate hours later from aspiration injury. Waiting on scene to reassess does not shorten that window.",
+      "lesson": "emt-cardio-l15",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-cardio-q051",
+      "q": "A hiker is found unresponsive and rigid in freezing conditions. Your partner checks for a pulse for 10 seconds and finds none. The best next step is:",
+      "choices": [
+        "Recheck breathing and pulse for 30-60 seconds before concluding he is pulseless",
+        "Declare death based on rigidity and fixed pupils",
+        "Rub the extremities to stimulate circulation",
+        "Sit him upright to assess his airway"
+      ],
+      "answer": 0,
+      "why": "Severe hypothermia can slow the heart to a rate a 10-second check will miss. Rigidity and fixed pupils are unreliable in the cold, rubbing limbs risks afterdrop, and sitting a cold patient up can trigger fibrillation.",
+      "lesson": "emt-cardio-l16",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-cardio-q052",
+      "q": "Which statement about resuscitating a severely hypothermic patient is correct?",
+      "choices": [
+        "Rough handling is unimportant once CPR has begun",
+        "The patient should be actively rewarmed at the arms and legs first",
+        "CPR and rewarming continue even if an initial shock fails to convert the rhythm",
+        "Field termination rules apply the same way as in a normothermic arrest"
+      ],
+      "answer": 2,
+      "why": "A cold heart often will not convert until it is warmer, so resuscitation continues during rewarming. Handling must stay gentle, warming targets the trunk to avoid afterdrop, and termination rules generally exclude hypothermia.",
+      "lesson": "emt-cardio-l16",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-cardio-q053",
+      "q": "An elderly woman found in an unheated apartment is confused, no longer shivering, with a heart rate of 44. The absence of shivering indicates:",
+      "choices": [
+        "She is warming up and improving",
+        "Her hypothermia is likely more severe, since shivering stops below roughly 32 C",
+        "She has a normal core temperature",
+        "She is having a stroke rather than hypothermia"
+      ],
+      "answer": 1,
+      "why": "Shivering is a compensating mechanism that fails as the core drops below about 32 C. Its disappearance in a cold, confused patient means deterioration, not recovery.",
+      "lesson": "emt-cardio-l16",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-cardio-q054",
+      "q": "Which arrest best satisfies the BLS termination of resuscitation rule?",
+      "choices": [
+        "An arrest that occurred as you walked in the door, with one shock delivered",
+        "A drowning victim with no ROSC after three cycles",
+        "An unwitnessed arrest found in asystole, no shock advised at any analysis, and no ROSC after the defined period",
+        "A hypothermic arrest after a single failed shock"
+      ],
+      "answer": 2,
+      "why": "All three conditions must be present: unwitnessed by EMS, no shock delivered, no ROSC. A delivered shock disqualifies, and drowning and hypothermia are standard exclusions.",
+      "lesson": "emt-cardio-l17",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-cardio-q055",
+      "q": "After a physician authorizes termination, the patient's wife asks what happened. The best opening is:",
+      "choices": [
+        "\"We were unable to obtain a pulse despite our efforts.\"",
+        "\"I have difficult news. We did everything we could, and his heart did not restart. He died. I am sorry.\"",
+        "\"He has passed on to a better place.\"",
+        "\"The doctor made the decision, not us.\""
+      ],
+      "answer": 1,
+      "why": "A warning sentence, the plain word died, then silence prevents the confusion softened language creates. Clinical phrasing and euphemisms both leave families unsure whether treatment is continuing, and deflecting to the physician abandons them.",
+      "lesson": "emt-cardio-l17",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-cardio-q056",
+      "q": "Your crew applies a mechanical CPR device during a resuscitation. The most important quality measure while doing so is:",
+      "choices": [
+        "Keeping the pause to apply it under 10 seconds",
+        "Setting the device to 80 compressions per minute",
+        "Stopping ventilations while the device runs",
+        "Applying it before starting manual compressions"
+      ],
+      "answer": 0,
+      "why": "The device does not improve survival over good manual CPR, so any long pause to place it is pure loss. Compressions continue while the board goes under, and ventilation continues normally.",
+      "lesson": "emt-cardio-l17",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-cardio-q057",
+      "q": "Four minutes after ROSC, your patient is being ventilated at 24 breaths per minute with an SpO2 of 100% on a reservoir bag. The two corrections needed are:",
+      "choices": [
+        "Increase the rate further and add PEEP",
+        "Slow to 10 breaths per minute and titrate oxygen to an SpO2 of 92-98%",
+        "Slow to 6 breaths per minute and maintain 100% oxygen",
+        "Maintain the rate and begin active cooling with ice packs"
+      ],
+      "answer": 1,
+      "why": "Hyperventilation lowers carbon dioxide and constricts cerebral vessels while raising chest pressure, and sustained hyperoxia worsens reperfusion injury. Field icing is done only where protocol directs it.",
+      "lesson": "emt-cardio-l18",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-cardio-q058",
+      "q": "Which post-ROSC blood pressure finding requires the most urgent communication and action?",
+      "choices": [
+        "Systolic 128, MAP 88",
+        "Systolic 112, MAP 74",
+        "Systolic 76, MAP 55",
+        "Systolic 96, MAP 68"
+      ],
+      "answer": 2,
+      "why": "Post-arrest hypotension independently predicts death and poor neurologic outcome, and the target is a systolic of at least 90 or a MAP of at least 65. A falling pressure is often the first sign of re-arrest.",
+      "lesson": "emt-cardio-l18",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-cardio-q059",
+      "q": "Which destination decision is most appropriate for an adult with ROSC after a witnessed ventricular fibrillation arrest, where protocol permits choice?",
+      "choices": [
+        "The closest emergency department regardless of capability",
+        "A hospital capable of emergency cardiac catheterization and post-arrest care",
+        "A freestanding urgent care center",
+        "The hospital the family prefers, regardless of capability"
+      ],
+      "answer": 1,
+      "why": "A large share of adult arrests are caused by coronary occlusion, so catheterization capability and organized post-arrest care change outcomes. Family preference and proximity yield to capability when protocol allows.",
+      "lesson": "emt-cardio-l18",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-cardio-q060",
+      "q": "A 44-year-old has a blood pressure of 208/124, a severe headache and new blurred vision. This is best classified and managed as:",
+      "choices": [
+        "Hypertensive urgency; no treatment or transport is needed",
+        "Hypertensive emergency; calm the patient, elevate the head, oxygen only if SpO2 is below 94%, and transport without lowering the pressure",
+        "Hypertensive emergency; assist the patient in taking an extra dose of his home blood pressure medication",
+        "Hypertensive urgency; transport with lights and siren to lower the pressure quickly"
+      ],
+      "answer": 1,
+      "why": "Severe hypertension plus evidence of organ injury, here headache and vision change, is an emergency, but an EMT does not lower the pressure; dropping it too fast causes stroke. Minimizing stimulation and a calm transport are the treatment.",
+      "lesson": "emt-cardio-l10",
+      "difficulty": 2
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "emt-cardio-s03",
+      "title": "Dispatched: 71-year-old woman, weakness and nausea",
+      "setting": "field",
+      "intro": "You are dispatched at 0840 to a single-family home for a 71-year-old woman with weakness. The caller is her daughter, who says her mother has been tired for a few days and threw up this morning. Dispatch codes it as a sick person call. You carry aspirin, a 12-lead-capable monitor with transmission, and oxygen. The nearest hospital is 6 minutes away and has no cardiac catheterization lab; a catheterization-capable center is 19 minutes away.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "She is sitting at the kitchen table, pale, with a thin film of sweat on her forehead. She says she has type 2 diabetes, feels \"wiped out,\" and that her back between the shoulder blades has been aching since yesterday. She denies chest pain entirely and apologizes for bothering you.",
+          "vitals": { "hr": 92, "bp": "138/82", "rr": 20, "spo2": 96, "temp": 36.8 },
+          "choices": [
+            { "text": "Treat this as a possible acute coronary syndrome and obtain a 12-lead within 10 minutes of contact", "next": "s2", "feedback": "Correct. Female, diabetic, elderly: the three groups most likely to infarct without chest pain. Unexplained diaphoresis with fatigue and interscapular ache is an anginal equivalent until a hospital says otherwise.", "score": 1 },
+            { "text": "Check a blood glucose, and if normal, treat as a viral illness and offer transport", "next": "s2", "feedback": "A glucose check is reasonable, but stopping there misses the pattern. Diabetic neuropathy is exactly why her infarct would not hurt.", "score": -1 },
+            { "text": "Give oxygen by nonrebreather at 15 L/min because she looks unwell", "next": "s2", "feedback": "Not indicated. Her SpO2 is 96%, and routine high-flow oxygen in a possible cardiac patient causes coronary vasoconstriction without benefit.", "score": -1 },
+            { "text": "Obtain a full set of vitals in both arms and a SAMPLE history before deciding on a 12-lead", "next": "s2", "feedback": "Thorough, and bilateral pressures are useful, but do not let assessment push the 12-lead past 10 minutes. Do them in parallel.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "You acquire the 12-lead. The first attempt is full of baseline wander and muscle noise, and the machine prints an uninterpretable message. She is talking to her daughter and her arms are unsupported.",
+          "choices": [
+            { "text": "Dry and prep the skin, reseat the electrodes, rest her arms on the stretcher, ask her to hold still and stop talking, and reacquire with the vehicle stopped", "next": "s3", "feedback": "Correct. Almost all artifact is mechanical. Fixing the contact and holding the patient still is faster than repeated bad tracings.", "score": 1 },
+            { "text": "Accept the tracing and transmit it as is", "next": "s3", "feedback": "Harmful. An uninterpretable tracing transmitted as evidence can delay activation or produce a false reassurance. Get a clean one.", "score": -1 },
+            { "text": "Skip the 12-lead and transport on the three-lead monitor", "next": "s3", "feedback": "Loses the entire point. A three-lead cannot localize injury and cannot trigger cath lab activation.", "score": -1 },
+            { "text": "Move the chest electrodes onto the torso closer together to reduce noise", "next": "s3", "feedback": "Wrong fix. Moving chest electrodes off their landmarks changes the tracing and can create or erase apparent elevation. Limb leads on limbs, chest leads on landmarks.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "The clean tracing shows 2 mm of ST elevation in II, III and aVF, with ST depression in I and aVL. The machine prints acute MI suspected. Her lungs are clear and she remains alert.",
+          "vitals": { "hr": 88, "bp": "104/64", "rr": 20, "spo2": 96 },
+          "choices": [
+            { "text": "Transmit the tracing, notify the catheterization-capable center, and give 324 mg of chewable aspirin if there is no contraindication", "next": "s4", "feedback": "Correct on both counts. Transmission activates the team, and aspirin is the field intervention with the clearest survival benefit. This is an inferior pattern with reciprocal changes.", "score": 1 },
+            { "text": "Assist her with her husband's nitroglycerin since she is in pain", "next": "s4", "feedback": "Two errors at once. The medication must be prescribed to this patient, and an inferior pattern with a systolic of 104 raises the possibility of right ventricular involvement, where nitroglycerin can crash the pressure.", "score": -1 },
+            { "text": "Transport to the closest hospital 6 minutes away without notification", "next": "s4", "feedback": "Loses the artery. A hospital without a catheterization lab has to transfer her, and an unannounced arrival starts nothing early.", "score": -1 },
+            { "text": "Repeat the 12-lead twice more to be certain before calling", "next": "s4", "feedback": "Serial tracings have a role, but not before the first call. Every repeat is muscle dying while the team sits unalerted.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "You are loaded and moving to the catheterization-capable center. She becomes quieter, and her repeat pressure has fallen. She says she feels lightheaded. Her lungs remain clear.",
+          "vitals": { "hr": 58, "bp": "84/52", "rr": 20, "spo2": 95 },
+          "choices": [
+            { "text": "Lay her flat, reassess the pressure every 5 minutes, notify the hospital of the change, and request an ALS intercept per protocol", "next": "s5", "feedback": "Correct. Hypotension with clear lungs and an inferior infarct points to a right ventricular infarct, which is preload dependent. Flat positioning and early notification are the right moves at your level.", "score": 1 },
+            { "text": "Give nitroglycerin to relieve the ischemia", "next": "s5", "feedback": "Dangerous. This is exactly the patient in whom nitroglycerin causes profound refractory hypotension by removing the preload the right ventricle depends on.", "score": -1 },
+            { "text": "Sit her fully upright to help her breathing", "next": "s5", "feedback": "Wrong direction. Her lungs are clear; the problem is filling pressure, and sitting up reduces it further.", "score": -1 },
+            { "text": "Apply a nonrebreather at 15 L/min and continue", "next": "s5", "feedback": "Her saturation is 95%, so high-flow oxygen adds nothing and constricts coronary vessels. The pressure is the problem, not the oxygen.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "You arrive at the catheterization-capable center. The team is standing in the bay because your transmission reached them 14 minutes ago. The charge nurse asks for your report.",
+          "choices": [
+            { "text": "Give age, presentation, symptom onset time, the 12-lead finding, aspirin given with the time, the blood pressure change during transport, and that nitroglycerin was withheld and why", "next": "end", "feedback": "Correct. Onset time drives their decisions, and the reason nitroglycerin was withheld is clinically important information, not a defense of your actions.", "score": 1 },
+            { "text": "Report it as a weakness and nausea call and let them review the tracing", "next": "end", "feedback": "Undersells a STEMI. The handoff must name the finding and the timeline, or the urgency resets at the door.", "score": -1 },
+            { "text": "Report the vitals only and hand over the printed tracing", "next": "end", "feedback": "Incomplete. Numbers without onset time, treatments given and the clinical course leave the team to rebuild the case from scratch.", "score": 0 },
+            { "text": "Apologize for not giving nitroglycerin and ask whether you should have", "next": "end", "feedback": "You made the correct decision. Report what you did and why; framing correct care as an error muddies the handoff.", "score": -1 }
+          ]
+        }
+      ],
+      "debrief": "Two lessons sit on top of each other here. The first is that the highest-risk cardiac patients are often the ones whose complaint does not sound cardiac: women, diabetics and older adults present with fatigue, nausea, back discomfort and unexplained sweating, and the only reliable defense is a low threshold for the 12-lead. The second is that acquiring a tracing is a mechanical skill with consequences. Landmarks matter, artifact is almost always loose contact or a moving patient, and the tracing only helps if it is transmitted early enough for a team to assemble. Finally, note how one pattern changed a drug decision: inferior elevation with hypotension and clear lungs is the right ventricular infarct picture, where nitroglycerin removes the preload that ventricle survives on. Flat positioning, frequent pressures, early notification, and a handoff that names the finding and the onset time are all EMT-level actions that move the 90-minute clock."
+    },
+    {
+      "id": "emt-cardio-s04",
+      "title": "Cold water: 8-year-old pulled from a pond in March",
+      "setting": "field",
+      "intro": "At 1610 in early March you are dispatched to a retention pond for a child who fell through thin ice. Air temperature is 38 F. On arrival, a firefighter in a rescue suit is carrying an 8-year-old boy to shore. Bystanders say he went through the ice and was under the water for somewhere between 10 and 15 minutes before rescuers reached him. The nearest hospital is 12 minutes away; a pediatric center with extracorporeal rewarming is 24 minutes away.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "The child is limp, gray and soaking wet. You see no chest movement. His skin is cold and rigid, and his jaw is clenched. A first responder says \"he's been down way too long, he's gone.\"",
+          "choices": [
+            { "text": "Check breathing and a pulse for a full 30-60 seconds while your partner prepares the bag-valve mask", "next": "s2", "feedback": "Correct. Severe hypothermia can slow the heart to a rate that a 10-second check misses entirely. This is the one situation where the pulse check is deliberately longer.", "score": 1 },
+            { "text": "Accept the responder's assessment and begin working with the family", "next": "s2", "feedback": "Harmful and wrong. Cold-water submersion in children has produced intact survival after downtimes far longer than this. A hypothermic patient is not dead until warm and dead.", "score": -1 },
+            { "text": "Check a pulse for 10 seconds, then start compressions if you feel nothing", "next": "s2", "feedback": "Faster than ideal here. In severe hypothermia a 10-second check can miss a slow, faint pulse, and compressing a beating cold heart can push it into fibrillation.", "score": 0 },
+            { "text": "Perform abdominal thrusts to clear the water from his lungs first", "next": "s2", "feedback": "Harmful and outdated. There is no meaningful water to expel, and thrusts cause vomiting and aspiration while delaying ventilation.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "After a 45-second check you find no breathing and no pulse. He is still in wet clothing on the frozen ground, and it has started to rain.",
+          "vitals": { "hr": 0, "rr": 0 },
+          "choices": [
+            { "text": "Move him gently into the warm ambulance, cut away wet clothing, dry the chest, and begin CPR with ventilations and compressions", "next": "s3", "feedback": "Correct on all four counts. Stopping heat loss is treatment, gentle handling avoids triggering fibrillation, and a dry chest is required for pads.", "score": 1 },
+            { "text": "Start compressions on the ground and leave the wet clothing in place to save time", "next": "s3", "feedback": "Half right. Compressions are needed, but leaving him wet in the rain continues the heat loss that is killing him and makes defibrillation impossible.", "score": 0 },
+            { "text": "Have two providers lift him quickly by the arms and legs to the stretcher", "next": "s3", "feedback": "Harmful. A cold ventricle is irritable; rough handling has been associated with triggering ventricular fibrillation. Move him horizontally and gently.", "score": -1 },
+            { "text": "Apply heat packs directly to his arms and legs to warm him fast", "next": "s3", "feedback": "Harmful twice over. Warming the limbs drives cold acidic blood back to the core, which is afterdrop, and unwrapped packs on cold skin cause burns.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "CPR is in progress in the ambulance. You apply pediatric AED pads and analyze. The device advises a shock, which you deliver. The next analysis two minutes later again advises a shock, which you deliver, with no change.",
+          "choices": [
+            { "text": "Continue CPR, continue passive and truncal rewarming, follow the AED prompts, and begin transport to the pediatric center capable of extracorporeal rewarming", "next": "s4", "feedback": "Correct. A cold heart frequently will not convert until it is warmer, so CPR and rewarming continue, and definitive rewarming is only available at a center that can do it.", "score": 1 },
+            { "text": "Stop defibrillating permanently, since two shocks have failed", "next": "s4", "feedback": "Wrong. Failed shocks in a cold heart are expected and are not a reason to abandon the AED sequence while rewarming continues.", "score": -1 },
+            { "text": "Terminate resuscitation, since he is pulseless after prolonged downtime", "next": "s4", "feedback": "Harmful. Hypothermia, drowning and pediatric arrest are each standard exclusions from termination rules. This patient is transported with CPR in progress.", "score": -1 },
+            { "text": "Transport to the closest hospital 12 minutes away to shorten scene time", "next": "s4", "feedback": "Defensible if he were unstable for another reason, but rewarming is the definitive treatment here, and only the pediatric center can provide it. Follow protocol and consider medical control.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "En route, compressions continue. Your partner asks about ventilation rate. He has no advanced airway, and there are three of you working.",
+          "choices": [
+            { "text": "Use a 15:2 ratio with two rescuers, ventilating to visible chest rise with oxygen at 15 L/min", "next": "s5", "feedback": "Correct. Two-rescuer pediatric CPR is 15:2 precisely because pediatric arrest is usually hypoxic and needs more ventilation.", "score": 1 },
+            { "text": "Use 30:2 because that ratio applies to all ages", "next": "s5", "feedback": "That is the single-rescuer ratio. With two or more rescuers, a child or infant gets 15:2.", "score": -1 },
+            { "text": "Ventilate once every 6 seconds with continuous compressions", "next": "s5", "feedback": "That pattern requires an advanced airway, and even then the pediatric rate is one breath every 2-3 seconds.", "score": -1 },
+            { "text": "Ventilate as fast as possible since the cause was hypoxia", "next": "s5", "feedback": "Harmful. Hyperventilation raises chest pressure and blocks blood returning to the heart, which reduces what compressions can deliver.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "Nine minutes into transport, the compressor reports a change and the monitor shows an organized rhythm. You find a weak central pulse at about 50. He takes an occasional gasping breath. His skin is still cold.",
+          "vitals": { "hr": 50, "bp": "72/40", "rr": 4, "spo2": 89 },
+          "choices": [
+            { "text": "Ventilate at 1 breath every 2-3 seconds, keep the pads on, continue truncal rewarming, take a pressure every 5 minutes, and notify the receiving center", "next": "end", "feedback": "Correct. He has a perfusing rhythm with inadequate breathing, so you ventilate rather than compress, and everything about re-arrest risk still applies.", "score": 1 },
+            { "text": "Continue compressions despite the pulse, because the rate is only 50", "next": "end", "feedback": "Incorrect here. He has a palpable central pulse and a measurable blood pressure. Support the ventilation and reassess; compressions on a perfusing cold heart risk fibrillation.", "score": -1 },
+            { "text": "Remove the pads and stop monitoring since he has a pulse", "next": "end", "feedback": "Harmful. Re-arrest is common, and a cold heart is unstable. Pads stay on and connected.", "score": -1 },
+            { "text": "Apply active external heat to the limbs now that he has a pulse", "next": "end", "feedback": "Still wrong. Afterdrop does not stop being a risk once a pulse returns. Warm the trunk, neck, axillae and groin.", "score": -1 }
+          ]
+        }
+      ],
+      "debrief": "This case stacks three special-circumstance rules on one patient, and each one overrides the reflex you would use on a warm adult. First, cold buys time: check breathing and pulse for 30-60 seconds, handle the patient like glass because a cold ventricle fibrillates from jostling, warm the trunk and not the limbs to avoid afterdrop, and never apply termination rules to hypothermia, drowning or pediatric arrest. Second, drowning is a hypoxic death: ventilation is the treatment, abdominal thrusts to expel water are never correct, spinal precautions are driven by mechanism rather than reflex, and everyone who required rescue gets transported. Third, pediatric ratios exist because children arrest from breathing failure: 15:2 with two rescuers, and one breath every 2-3 seconds when a pulse returns but breathing is inadequate. The destination decision was also a real decision. Definitive rewarming is a hospital capability, not a field one, and choosing the center that has it is part of the resuscitation."
+    }
+  ]
+}

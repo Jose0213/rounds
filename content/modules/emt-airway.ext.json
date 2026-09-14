@@ -1,0 +1,956 @@
+{
+  "schema": 1,
+  "extends": "emt-airway",
+  "lessons": [
+    {
+      "id": "emt-airway-l11",
+      "title": "Coaching CPAP: leaks, panic and calling it a failure",
+      "minutes": 7,
+      "body": "## The machine almost never breaks\n\nA CPAP unit is a flow generator and a valve. What fails on a call is the seal, the coaching, or the decision to keep going when the patient is losing.\n\nThe first sixty seconds decide it. Hold the mask against the face with your own hand before you strap anything. Let the patient feel the flow while you narrate exactly what is coming: it feels like a strong wind, breathing out feels like work for about a minute, and then it gets easier. Only then tighten the straps, and only until the leak stops.\n\n> **On shift:** Coach in short commands, one at a time. \"In through your nose. Slow. Now let it out against the air.\" A patient fighting the mask is exhaling against the machine and getting almost nothing out of it.\n\n## Fix the leak before you touch the pressure\n\nThe usual leak is at the bridge of the nose, and it blows straight into the eyes, which is what makes people rip the mask off. Reseat the mask higher, pull the bottom strap first, and let the cushion inflate against the face.\n\n- Leave well-fitting dentures **in**. A face without teeth collapses and cannot hold a seal.\n- Overtightening deforms the cushion and makes the leak worse, not better. Loose enough to slide two fingers under the strap is right.\n- A heavy beard leaks no matter what you do. Expect it, accept a partial benefit, and watch the patient instead of the number.\n- If your device has a separate `PEEP` valve, confirm it is set where you think it is. A valve knocked to `2.5 cmH2O` in the bag looks identical to one at `10`.\n\n## The oxygen math nobody warns you about\n\nMost CPAP circuits burn `25-40 L/min`, several times what a nonrebreather uses. Run the duration formula at the flow the circuit actually uses, not at `15`.\n\nA full `E` cylinder at `2,000 psi` driving a circuit at `30 L/min`: `(2000 - 200) x 0.28 = 504`, then `504 / 30 = 17 minutes`. A full `D` cylinder gives you under `10 minutes`.\n\n> **Key:** Get the patient onto the onboard `M` cylinder as soon as you are in the truck, and check the portable gauge again before any stairs or long carry. Running dry mid-transport turns a working CPAP mask into an airtight mask over a sick patient's face.\n\n## Reassess on a clock, not on a feeling\n\nTake a blood pressure before you start and every `5 minutes` after. Improvement inside `5-10 minutes` looks like a respiratory rate falling from `34` toward the mid `20s`, accessory muscles quieting, the patient getting a short sentence out, `SpO2` climbing and heart rate coming down.\n\nFailure looks like drowsiness, a flat `SpO2`, a systolic sliding under `90 mmHg`, vomiting, or a rising `ETCO2` if you have it.\n\n> **Trap:** Growing drowsiness on CPAP is not the patient finally relaxing. It is carbon dioxide climbing or oxygen still failing. Take the mask off, open the airway, and ventilate with a bag-valve mask.",
+      "keyPoints": [
+        "Hold the mask by hand and coach before strapping; the seal and the coaching are the skill, not the machine.",
+        "Fix leaks by reseating the mask and leaving dentures in, never by cranking the pressure up.",
+        "A CPAP circuit consumes 25-40 L/min: a full E cylinder lasts about 17 minutes at 30 L/min.",
+        "Blood pressure before CPAP and every 5 minutes after; improvement should show within 5-10 minutes.",
+        "Drowsiness, systolic under 90, or vomiting means remove CPAP and ventilate with a bag-valve mask."
+      ],
+      "checks": [
+        {
+          "q": "Ten minutes into CPAP the patient's respiratory rate is unchanged at 32, she is now hard to rouse, and her systolic has fallen from 150 to 86. What do you do?",
+          "choices": [
+            "Increase the pressure from 5 to 10 cmH2O",
+            "Remove the mask, open the airway and ventilate with a bag-valve mask",
+            "Tighten the straps to eliminate any leak",
+            "Continue CPAP and recheck in another 10 minutes"
+          ],
+          "answer": 1,
+          "why": "Falling mental status plus hypotension is CPAP failure. More pressure reduces venous return further and a sleepy patient cannot protect the airway. Positive pressure by bag is the next step."
+        },
+        {
+          "q": "A full E cylinder is driving a CPAP circuit that consumes 30 L/min. About how long until safe residual?",
+          "choices": [
+            "About 5 minutes",
+            "About 17 minutes",
+            "About 34 minutes",
+            "About 60 minutes"
+          ],
+          "answer": 1,
+          "why": "(2000 - 200) x 0.28 = 504 liters usable; 504 / 30 = about 17 minutes. Using 15 L/min in the formula doubles the answer and is the classic error."
+        },
+        {
+          "q": "Air is blowing into the patient's eyes and he keeps pulling the mask away. The best first move is to:",
+          "choices": [
+            "Reseat the mask on the bridge of the nose and retighten from the bottom strap",
+            "Turn the pressure up so the cushion inflates harder",
+            "Remove his dentures to improve the seal",
+            "Switch to a nonrebreather at 15 L/min"
+          ],
+          "answer": 0,
+          "why": "A bridge-of-nose leak is a seating problem. Raising pressure worsens the jet into the eyes, and pulling dentures collapses the face and destroys the seal."
+        }
+      ]
+    },
+    {
+      "id": "emt-airway-l12",
+      "title": "BiPAP, transport ventilators and patients already on support",
+      "minutes": 6,
+      "body": "## One pressure or two\n\nCPAP holds a single pressure through the whole cycle. It recruits collapsed alveoli and takes over part of the work, which fixes **oxygenation** problems.\n\nBiPAP holds two. A higher inspiratory pressure (`IPAP`, often `10-15 cmH2O`) gives the patient a push on the way in, and a lower expiratory pressure (`EPAP`, often `5 cmH2O`) keeps the alveoli splinted on the way out. The difference between them is pressure support, and pressure support is what moves volume, which is what clears carbon dioxide.\n\n> **Key:** CPAP fixes oxygen. BiPAP also fixes ventilation. That is why a hypercapnic COPD patient who is sleepy from CO2 is a BiPAP patient, while flash pulmonary edema does beautifully on CPAP alone.\n\nBiPAP is a paramedic, hospital or specialty-transport device in most systems. An EMT's job is to recognize it, monitor it, and know what to do when it stops working.\n\n## The ventilator words you need, and no more\n\nOn an interfacility transport you will stand next to a machine with a screen. You do not set it. You need to read it.\n\n| Setting | Typical adult value | What it means |\n|---|---|---|\n| Tidal volume | 6-8 mL/kg ideal body weight | Size of each delivered breath |\n| Rate | 10-16 breaths per minute | Breaths the machine guarantees |\n| PEEP | 5 cmH2O | Pressure kept at end of exhalation |\n| FiO2 | 0.30-1.00 | Fraction of oxygen delivered |\n\nTwo alarms matter more than the rest.\n\n**High pressure** means something is resisting: a kinked circuit, secretions plugging the tube, the patient biting, bronchospasm, or a pneumothorax.\n\n**Low pressure or low volume** means air is escaping: a disconnected circuit, a loose connection, or a leaking tube cuff.\n\n## The one rule that always works\n\nIf the patient on any machine deteriorates and you cannot fix it in seconds, disconnect from the machine, attach a bag-valve mask with oxygen at `15 L/min` directly to the tube or the trach, and ventilate by hand.\n\nBagging tells you instantly what kind of problem you have. If it is hard to squeeze, the problem is obstruction or the chest. If it is easy and the chest does not rise, the problem is a leak or a displaced tube. Then work the `DOPE` list.\n\n> **On shift:** Home ventilator and home BiPAP families are experts in their own machine. Ask them what the alarm means and what they usually do. Bring the machine, the spare tubing and the spare trach tube with the patient.\n\n## Home CPAP and sleep apnea\n\nA patient whose only device is a home sleep-apnea CPAP is not a respiratory emergency by itself. If they are in distress, do not fumble with their home settings. Use your own oxygen, your own CPAP if protocol allows, or a bag. Bring their machine and mask in, since the hospital will want the settings.",
+      "keyPoints": [
+        "CPAP is one pressure and treats oxygenation; BiPAP adds a higher inspiratory pressure and also treats ventilation and CO2.",
+        "Typical adult vent settings: tidal volume 6-8 mL/kg ideal body weight, rate 10-16, PEEP 5, FiO2 titrated.",
+        "High-pressure alarm means obstruction or pneumothorax; low-pressure alarm means a leak or disconnection.",
+        "When a machine-supported patient deteriorates, disconnect and bag at 15 L/min, then run the DOPE check.",
+        "Caregivers of home vent and home BiPAP patients know the device better than you do; use them and bring the equipment."
+      ],
+      "checks": [
+        {
+          "q": "Which patient is the best match for BiPAP rather than CPAP?",
+          "choices": [
+            "A hypotensive patient with a systolic of 84",
+            "A COPD patient who is sleepy with a rising carbon dioxide level",
+            "An apneic overdose patient",
+            "A patient with flash pulmonary edema and a systolic of 190"
+          ],
+          "answer": 1,
+          "why": "Pressure support moves volume and clears CO2, which is the COPD retainer's problem. Flash pulmonary edema does well on CPAP alone, and apnea or hypotension are contraindications to both."
+        },
+        {
+          "q": "A transport ventilator alarms for high pressure and the patient's chest is barely moving. Your first action is to:",
+          "choices": [
+            "Silence the alarm and continue to the hospital",
+            "Increase the set tidal volume",
+            "Disconnect from the ventilator and ventilate by hand with a bag-valve mask at 15 L/min",
+            "Reduce the PEEP to zero"
+          ],
+          "answer": 2,
+          "why": "Hand ventilation immediately separates machine problems from patient problems and tells you by feel whether there is obstruction. An EMT does not adjust settings, and silencing the alarm treats nothing."
+        }
+      ]
+    },
+    {
+      "id": "emt-airway-l13",
+      "title": "Supraglottic airways: the i-gel and the King LT",
+      "minutes": 7,
+      "body": "## What the device actually does\n\nA supraglottic airway is a tube you place blind, by feel, through the mouth. It does not go through the vocal cords. It seats in the hypopharynx so that its bowl or cuff sits over the laryngeal opening and its bulk blocks the esophagus behind it. Air you push goes down the trachea because that is the only place left to go.\n\nTwo families dominate EMS.\n\n**i-gel.** No cuff to inflate. A soft thermoplastic gel cradle warms to body temperature and molds to the anatomy. It has a gastric channel to pass a tube and drain the stomach.\n\n**King LT.** A single tube with two balloons inflated from one port: the larger one fills the pharynx, the smaller one blocks the esophagus.\n\n> **On the exam:** A supraglottic airway is an *advanced* airway, not a definitive one. It does not seal the trachea the way a cuffed endotracheal tube does. Whether an EMT may place one varies by state and protocol; in New Jersey it depends on your region's standing orders.\n\n## Sizing, which is by body size and not by guess\n\n| i-gel size | Patient weight |\n|---|---|\n| 3 | 30-60 kg |\n| 4 | 50-90 kg |\n| 5 | Over 90 kg |\n\n| King LT size | Patient height | Cuff volume |\n|---|---|---|\n| 3 | 4-5 ft | 45-60 mL |\n| 4 | 5-6 ft | 60-80 mL |\n| 5 | Over 6 ft | 70-90 mL |\n\nToo small leaks and you cannot generate volume. Too large will not seat and traumatizes the airway.\n\n## Putting it in\n\n1. Confirm no gag reflex. An intact gag is the absolute contraindication.\n2. Lubricate the back and sides, never the opening.\n3. Head in the sniffing position, or neutral with in-line stabilization in trauma. Chin lift or jaw thrust to open the space.\n4. Advance midline along the hard palate until you meet firm resistance, or until the teeth line on the device reaches the teeth.\n5. Inflate the cuff on a King with the labeled volume. An i-gel has nothing to inflate.\n6. Attach the bag, ventilate, and secure with the tube holder or tape.\n\n## Confirming it, every single time\n\nChest rise, bilateral breath sounds at both mid-axillary lines, no gurgling over the stomach, and a continuous `ETCO2` waveform. The waveform is the one that settles the argument.\n\nIf you cannot ventilate, do not push harder. On a King, deflate slightly and pull back `1-2 cm`, then reinflate; the tube is usually too deep. If a second attempt fails, take it out, go back to a two-person bag-valve mask with an oral airway, and ventilate the patient well before trying anything else.\n\n> **Trap:** These devices displace during every log-roll, lift and stair-chair move. Recheck the waveform after each move. A tube that was perfect on the floor is often a tube in the esophagus at the ambulance door.\n\nOther contraindications: caustic ingestion, known esophageal disease such as varices, and a foreign-body obstruction, which the device will simply push deeper.",
+      "keyPoints": [
+        "A supraglottic airway sits above the cords, seals the hypopharynx and blocks the esophagus; it is advanced, not definitive.",
+        "i-gel sizing is by weight: 3 for 30-60 kg, 4 for 50-90 kg, 5 for over 90 kg. King LT is by height: 3 for 4-5 ft, 4 for 5-6 ft, 5 for over 6 ft.",
+        "An intact gag reflex is the absolute contraindication; caustic ingestion, esophageal varices and foreign-body obstruction also rule it out.",
+        "Confirm with chest rise, bilateral breath sounds, a silent epigastrium and a continuous ETCO2 waveform.",
+        "If ventilation is difficult on a King, withdraw it 1-2 cm and reinflate; if it still fails, remove it and bag."
+      ],
+      "checks": [
+        {
+          "q": "Which patient may receive a supraglottic airway?",
+          "choices": [
+            "A postictal patient who gags on an oral airway",
+            "An apneic cardiac arrest patient with no gag reflex",
+            "A choking patient with a complete foreign-body obstruction",
+            "An alert patient with an SpO2 of 85%"
+          ],
+          "answer": 1,
+          "why": "These devices require an absent gag reflex. A gagging postictal patient or an alert patient will vomit. Over a foreign body the device only drives the object deeper."
+        },
+        {
+          "q": "You are sizing a King LT for a patient who is about 5 feet 8 inches tall. Which size and cuff volume?",
+          "choices": [
+            "Size 3, 45-60 mL",
+            "Size 4, 60-80 mL",
+            "Size 5, 70-90 mL",
+            "Size 5, 45-60 mL"
+          ],
+          "answer": 1,
+          "why": "King sizing is by height: 4-5 ft is size 3, 5-6 ft is size 4 with 60-80 mL, over 6 ft is size 5. An undersized tube leaks and an oversized one will not seat."
+        },
+        {
+          "q": "After moving the patient to the stretcher, the ETCO2 waveform disappears and the chest no longer rises. You should:",
+          "choices": [
+            "Increase the ventilation rate",
+            "Add more air to the cuff and continue",
+            "Assume the device has displaced, remove it and ventilate with a bag-valve mask",
+            "Replace the capnography sensor and keep ventilating"
+          ],
+          "answer": 2,
+          "why": "Loss of waveform plus loss of chest rise is displacement until proven otherwise. Ventilating faster through a misplaced device inflates the stomach, and blaming the sensor wastes the minutes the brain has."
+        }
+      ]
+    },
+    {
+      "id": "emt-airway-l14",
+      "title": "Waveform capnography at the BLS level",
+      "minutes": 7,
+      "body": "## The one number that says the patient is still ventilating\n\nPulse oximetry tells you how loaded the hemoglobin is. It says nothing about whether air is moving, and on high-flow oxygen it stays at `100%` for a minute or more after a patient stops breathing.\n\nCapnography measures carbon dioxide in exhaled air. Carbon dioxide only appears at the sensor if the body is making it, the blood is carrying it, and the lungs are moving it. That is metabolism, circulation and ventilation in one continuous number.\n\nNormal end-tidal carbon dioxide (`ETCO2`) is `35-45 mmHg`. A nasal cannula sampling line gives you a waveform on a patient who is breathing on their own; an inline adapter gives you one on a bagged patient.\n\n> **Key:** The waveform matters more than the number. A normal-looking `38` with no waveform is a sensor reading room air. A waveform that is present, square and repeating is air actually leaving lungs.\n\n## Four shapes and what they mean\n\n**Square and boxy**, rising sharply, flat top, dropping sharply. Normal.\n\n**Shark fin**, a slurred upstroke with no flat plateau. Air is coming out of different parts of the lung at different speeds, which is bronchospasm: asthma, COPD, anaphylaxis. Watch it square off as a bronchodilator works, often before the patient says they feel better.\n\n**Low and small, under `25 mmHg`, with clear lungs.** Either the patient is blowing off CO2 (anxiety, hyperventilation, the deep Kussmaul breathing of diabetic ketoacidosis) or the blood is not delivering it. Shock, massive pulmonary embolism and cardiac arrest all drop `ETCO2` because circulation has failed.\n\n**Rising above `50 mmHg` with a drowsy patient.** Hypoventilation. Opioids, a failing COPD patient, a tiring asthmatic, a head injury. This is the earliest warning you get, long before the saturation falls.\n\n## During CPR it grades your compressions\n\nDuring cardiac arrest the only thing moving blood to the lungs is your hands. So `ETCO2` during CPR is a readout of blood flow.\n\n- Under `10 mmHg` after `20 minutes` of good resuscitation is associated with almost no chance of survival and is used in termination decisions.\n- Under `10 mmHg` early means push harder, push faster, and fully recoil. Change compressors.\n- A sudden jump to `35-40 mmHg` or higher during compressions is return of spontaneous circulation. Do not stop mid-cycle; finish the two-minute block, then check the rhythm and a pulse.\n\n> **On the exam:** Sudden loss of waveform in a tubed patient means the tube moved or the patient arrested. It does not mean the machine is broken. Look, listen and bag.\n\n## Where you will use it as a tech\n\nIn the emergency department, capnography is standard during procedural sedation for exactly one reason: it catches apnea `30-60 seconds` before the pulse oximeter does. If the waveform flattens, say so out loud immediately.",
+      "keyPoints": [
+        "Normal ETCO2 is 35-45 mmHg, and it reflects ventilation, circulation and metabolism at once.",
+        "A shark-fin waveform means bronchospasm; it squares off as the bronchodilator works.",
+        "ETCO2 under 25 mmHg with clear lungs points to poor perfusion: shock, pulmonary embolism or hyperventilation.",
+        "During CPR, ETCO2 under 10 mmHg means improve compressions; a sudden jump to 35-40 means ROSC.",
+        "Loss of waveform is a displaced airway or an arrest until proven otherwise, not a broken sensor."
+      ],
+      "checks": [
+        {
+          "q": "An asthmatic on a bronchodilator shows an ETCO2 waveform with a slurred, upsloping rise and no flat plateau. This indicates:",
+          "choices": [
+            "A leak around the mask",
+            "Bronchospasm with uneven emptying of the lungs",
+            "Hyperventilation",
+            "Cardiac arrest"
+          ],
+          "answer": 1,
+          "why": "The shark-fin shape comes from obstructed airways emptying at different rates. Leaks lower the number without that shape, and arrest removes the waveform entirely."
+        },
+        {
+          "q": "During CPR on an adult the ETCO2 reads 8 mmHg. The best immediate action is:",
+          "choices": [
+            "Increase the ventilation rate to 20 per minute",
+            "Improve compression depth and rate and switch compressors",
+            "Stop CPR and check a pulse",
+            "Remove the capnography adapter and recheck"
+          ],
+          "answer": 1,
+          "why": "A low value during CPR means blood flow is poor, and compressions are the only pump. Faster ventilation raises chest pressure and lowers flow further, and stopping to check a pulse wastes perfusion time."
+        },
+        {
+          "q": "A sedated patient in the emergency department has an SpO2 of 100% on oxygen, but the capnography waveform has just gone flat. This most likely means:",
+          "choices": [
+            "The patient is well oxygenated and stable",
+            "The sensor has failed",
+            "The patient has stopped breathing and the saturation has not fallen yet",
+            "The oxygen flow rate is too high"
+          ],
+          "answer": 2,
+          "why": "Oxygen stored in the lungs keeps SpO2 high for 30-60 seconds after apnea begins. The flat waveform is the early warning; treating it as a sensor problem costs exactly that window."
+        }
+      ]
+    },
+    {
+      "id": "emt-airway-l15",
+      "title": "Tracheostomy emergencies and the DOPE check",
+      "minutes": 6,
+      "body": "## What is in the neck\n\nA tracheostomy is a surgical opening into the trachea with a tube held in it. Learn four parts.\n\n- **Outer cannula**, the part sewn or taped in place, with a `15 mm` hub your bag connects to directly.\n- **Inner cannula**, a removable liner that slides out. This is the part that plugs with mucus, and removing it is the single most useful thing you can do.\n- **Cuff**, present on some tubes, inflated through a pilot balloon.\n- **Obturator**, a smooth plug used only to guide a new tube in. It lives taped to the bed or in the go-bag.\n\nA **tracheostomy** patient usually still has a connected upper airway, so air can move through the mouth as well. A **laryngectomy** patient does not: the neck opening is the only airway there is. Ask, and look for a note, a bracelet or a chart.\n\n> **Key:** If a trach patient can be ventilated from above, you have two routes. If the patient has had a laryngectomy, the stoma is the only route and bagging the face does nothing at all.\n\n## Working the problem in order\n\nThe overwhelming majority of these calls are a plugged tube.\n\n1. Oxygen to the stoma, by mask or trach collar, and to the face too if the upper airway is intact.\n2. **Remove the inner cannula.** Look at it. If it is plugged, that was the emergency.\n3. Suction with a soft catheter, measured to the depth the family uses or roughly the length of the tube plus `1-2 cm`, suction on the way out only, `10 seconds` maximum, and oxygenate between attempts.\n4. If you still cannot ventilate and the tube is cuffed, deflate the cuff. A herniated cuff can block the tube's own opening.\n5. If the tube is out, cover the stoma with a gloved hand or a dressing and bag from the face when the upper airway is intact. If it is a laryngectomy, seal an infant or child mask over the stoma and bag there.\n\nFamilies carry a spare tube in the same size and one size smaller. They change it routinely. Let them help.\n\n> **On shift:** Never force a new tube into a fresh stoma, meaning one less than about a week old. The tract is not mature and the tube can end up in the tissue of the neck instead of the trachea. Ventilate from above and go.\n\n## DOPE, for any patient on a tube who crashes\n\nWhen a patient with a trach, a supraglottic airway or an endotracheal tube suddenly deteriorates, run four letters in order.\n\n| Letter | Problem | What you do |\n|---|---|---|\n| D | Displacement | Confirm depth, listen, check the waveform, reposition |\n| O | Obstruction | Remove inner cannula, suction, check for biting or kinks |\n| P | Pneumothorax | Unequal chest rise, absent sounds one side, rising resistance |\n| E | Equipment | Disconnect from the machine and bag by hand; check the oxygen source |\n\nThe fastest version of the whole list: take them off the machine, squeeze a bag, and let your hand tell you whether the problem is blockage, leak or chest.",
+      "keyPoints": [
+        "Remove and inspect the inner cannula first; a mucus plug is the most common trach emergency.",
+        "Suction a trach with a soft catheter, suction only on withdrawal, 10 seconds maximum, oxygenating between attempts.",
+        "A tracheostomy patient can often be bagged from the face; a laryngectomy patient can only be ventilated at the stoma.",
+        "Deflate the cuff if you still cannot ventilate, and never force a new tube into a stoma less than about a week old.",
+        "DOPE for any deteriorating tube patient: Displacement, Obstruction, Pneumothorax, Equipment."
+      ],
+      "checks": [
+        {
+          "q": "A home trach patient is increasingly short of breath and you meet resistance passing a suction catheter. Your first action is to:",
+          "choices": [
+            "Force the catheter past the resistance",
+            "Remove and inspect the inner cannula",
+            "Remove the entire tracheostomy tube",
+            "Apply a nonrebreather to the face and transport"
+          ],
+          "answer": 1,
+          "why": "Resistance usually means the inner cannula is plugged, and pulling it out is fast and safe. Forcing a catheter causes trauma, and removing the whole tube risks losing the airway you already have."
+        },
+        {
+          "q": "A patient with a laryngectomy is apneic. How do you ventilate?",
+          "choices": [
+            "Bag-valve mask over the mouth and nose while sealing the stoma",
+            "Seal an infant or child mask over the stoma and bag there",
+            "Insert a nasopharyngeal airway and bag from the face",
+            "Perform a head-tilt chin-lift and bag from the face"
+          ],
+          "answer": 1,
+          "why": "A laryngectomy leaves no connection between mouth and trachea, so every breath must go through the stoma. Face ventilation moves air nowhere regardless of how good the seal is."
+        }
+      ]
+    },
+    {
+      "id": "emt-airway-l16",
+      "title": "Airways that close: burns, anaphylaxis, facial trauma and the obese patient",
+      "minutes": 7,
+      "body": "## Inhalation injury: the airway you lose an hour from now\n\nHeat and soot inflame the airway lining, and the swelling builds over minutes to hours. The patient who looks fine at the curb can be unable to breathe by the time you are halfway to the hospital.\n\nFindings that predict it: a fire in an enclosed space, soot around the nose or mouth, singed nasal hairs or facial hair, burns to the face or neck, a hoarse or changed voice, a brassy cough, carbonaceous sputum, and any stridor at all.\n\nOxygen is not optional here even when the number looks good. Carbon monoxide binds hemoglobin `200-250` times more tightly than oxygen, and the pulse oximeter counts it as if it were oxygen, so `SpO2` reads falsely high. The half-life of carboxyhemoglobin is roughly `4-5 hours` on room air, `60-90 minutes` on high-flow oxygen, and about `20-30 minutes` in a hyperbaric chamber.\n\n> **Key:** Burning plastics and foam also release cyanide, which poisons the cell's ability to use oxygen. A fire victim who is unconscious with a normal saturation and a severe acidosis is a cyanide patient until proven otherwise. The antidote, hydroxocobalamin, is an ALS drug; your job is oxygen and speed.\n\n## Anaphylaxis: the drug is the airway treatment\n\nSwelling of the tongue, lips and larynx does not respond to albuterol, oxygen or positioning. It responds to epinephrine, because alpha effects shrink the swollen tissue.\n\nAdult dose is `0.3 mg` of `1 mg/mL` epinephrine intramuscularly in the lateral thigh; pediatric is `0.15 mg`. Repeat in `5-15 minutes` if there is no improvement. Give it early, when you hear a changed voice or stridor, not after the airway has closed.\n\n> **Trap:** Hives with wheezing plus any airway or blood pressure involvement is anaphylaxis. Waiting to see if antihistamines work is how patients lose their airway in the back of an ambulance.\n\n## Facial trauma\n\nExpect three problems at once: blood you cannot see through, anatomy that no longer fits a mask, and a patient who wants to sit forward because that is the only way they can breathe.\n\nSuction with the rigid tip and keep suctioning. If there is no spinal concern and the patient is alert, let them sit up and lean forward so blood drains out instead of down. Midface instability or a suspected basilar skull fracture rules out a nasal airway. Plan on a two-person bag-valve mask, because one person cannot hold a seal on a face that is broken.\n\n## Body habitus changes the physics\n\nAn obese patient has a smaller reserve of oxygen sitting in the lungs and a chest wall that resists you, so they desaturate faster and need higher pressures.\n\nRamp them: build blankets under the shoulders, upper back and head until the ear canal is level with the notch at the top of the sternum, and raise the head of the stretcher `20-30` degrees. That single change improves both their own breathing and every attempt anyone makes at their airway later.\n\nPregnancy past about `20 weeks` does the same thing for the same reason, plus the uterus compresses the vena cava when supine. Tilt the board or the patient to the left `15-30` degrees.",
+      "keyPoints": [
+        "Soot, singed hairs, hoarseness, stridor or an enclosed-space fire predict an airway that will swell shut; act early.",
+        "Carbon monoxide makes SpO2 read falsely high; carboxyhemoglobin half-life is 4-5 hours on room air and 60-90 minutes on high-flow oxygen.",
+        "Anaphylactic airway swelling is treated with epinephrine 0.3 mg IM adult, 0.15 mg pediatric, repeated in 5-15 minutes.",
+        "Facial trauma means aggressive suction, forward positioning when safe, no nasal airway, and two-person bag-valve mask.",
+        "Ramp the obese patient so the ear canal is level with the sternal notch; tilt the pregnant patient 15-30 degrees to the left."
+      ],
+      "checks": [
+        {
+          "q": "A man pulled from a house fire has soot in his nostrils, a hoarse voice and an SpO2 of 99% on room air. The correct interpretation is:",
+          "choices": [
+            "He is well oxygenated and needs no oxygen",
+            "The saturation is unreliable and he has signs of impending airway swelling; give high-flow oxygen and expedite transport",
+            "Oxygen should be withheld until carbon monoxide is measured",
+            "Hoarseness is expected after smoke exposure and needs no action"
+          ],
+          "answer": 1,
+          "why": "Pulse oximetry counts carboxyhemoglobin as oxygen, so 99% proves nothing. Hoarseness and soot predict swelling that worsens over the next hour, so high-flow oxygen and early transport are the answer."
+        },
+        {
+          "q": "A 30-year-old stung by a bee has hives, a swollen tongue and a hoarse voice. The single most important intervention is:",
+          "choices": [
+            "Albuterol by nebulizer",
+            "Epinephrine 0.3 mg intramuscularly in the lateral thigh",
+            "Diphenhydramine and transport",
+            "CPAP at 5 cmH2O"
+          ],
+          "answer": 1,
+          "why": "Only epinephrine reverses airway swelling. Albuterol opens lower airways and does nothing to the larynx, antihistamines are far too slow, and CPAP cannot push past a closing glottis."
+        },
+        {
+          "q": "How do you position a 350-pound patient in respiratory distress?",
+          "choices": [
+            "Flat and supine to protect the spine",
+            "Ramped with blankets until the ear canal is level with the sternal notch, head of stretcher up 20-30 degrees",
+            "Trendelenburg to improve venous return",
+            "Left lateral recumbent"
+          ],
+          "answer": 1,
+          "why": "Ramping moves abdominal weight off the diaphragm and lines up the airway. Lying flat or head-down loads the diaphragm and speeds desaturation in a patient who already has less reserve."
+        }
+      ]
+    },
+    {
+      "id": "emt-airway-l17",
+      "title": "Oxygen myths and the cost of too much",
+      "minutes": 6,
+      "body": "## Myth one: COPD patients cannot have oxygen\n\nThis one kills people. A hypoxic COPD patient gets oxygen. The target is simply different: `88-92%` instead of `94-99%`. If they are hypoxic, treat the hypoxia and keep a bag-valve mask within reach in case carbon dioxide climbs and they get sleepy.\n\n## Myth two: everybody gets fifteen liters\n\nOxygen is a drug with a dose and a set of harms. Too much for too long causes absorption atelectasis, where alveoli collapse once the nitrogen that propped them open has been washed out. It generates free radicals during reperfusion. It constricts coronary and cerebral vessels, so giving a well-saturated heart-attack patient oxygen slightly reduces blood flow to the very muscle you are trying to save.\n\nWhat current guidance actually says:\n\n| Situation | Target |\n|---|---|\n| Most patients | 94-99% |\n| Known COPD | 88-92% |\n| Chest pain or suspected heart attack | Withhold oxygen if SpO2 is 90% or above |\n| Stroke | Give oxygen if SpO2 is below 94% |\n| After return of spontaneous circulation | Titrate to 92-98%, avoid sustained 100% |\n| Newborn resuscitation at term | Begin with room air |\n\n> **Key:** Hypoxia is an emergency and hyperoxia is a slow harm. When in doubt on a crashing patient, give oxygen. When the number is normal and the patient is comfortable, do not.\n\n## The exceptions where the number does not matter\n\nGive high-concentration oxygen regardless of the saturation reading in:\n\n- **Carbon monoxide poisoning.** The reading is false and the oxygen is the treatment. It cuts the half-life from `4-5 hours` to `60-90 minutes`.\n- **Smoke inhalation with suspected cyanide.** The cells cannot use oxygen; flood the system while ALS brings the antidote.\n- **Diving injuries and decompression sickness**, where oxygen helps wash out nitrogen bubbles.\n\n## Myth three: the pulse oximeter tells you the patient is breathing\n\nIt tells you hemoglobin saturation, nothing else. A preoxygenated patient can be completely apneic and read `100%` for `30-60 seconds`. Watch the chest and, if you have it, the capnography waveform.\n\n> **Trap:** \"His sat is 100%, he is fine\" said about a sedated or overdosed patient on a nonrebreather is the most dangerous sentence in the department. A high number on high-flow oxygen is exactly what a failing patient looks like right up until they do not.\n\n## Myth four: a nasal cannula is not real oxygen\n\nAt `6 L/min` a cannula delivers roughly `44%`, double room air. It is comfortable, patients keep it on, and for mild hypoxia it is often the correct device. Cranking it to `10 L/min` is the mistake: above `6 L/min` it dries and burns the nose without delivering meaningfully more. Change the device instead.",
+      "keyPoints": [
+        "Never withhold oxygen from a hypoxic COPD patient; target 88-92% instead of 94-99%.",
+        "Withhold oxygen in chest pain when SpO2 is 90% or above, and titrate post-ROSC patients to 92-98%.",
+        "Hyperoxia causes absorption atelectasis, free-radical injury and coronary and cerebral vasoconstriction.",
+        "Give high-concentration oxygen regardless of the reading in carbon monoxide, smoke or cyanide exposure and diving injuries.",
+        "A saturation of 100% on high-flow oxygen can hide a full minute of apnea; watch the chest and the waveform."
+      ],
+      "checks": [
+        {
+          "q": "A 58-year-old with crushing chest pain has an SpO2 of 96% on room air and no distress. What oxygen do you give?",
+          "choices": [
+            "A nonrebreather at 15 L/min",
+            "A nasal cannula at 4 L/min",
+            "None, because the saturation is 90% or above",
+            "A simple mask at 6 L/min"
+          ],
+          "answer": 2,
+          "why": "Guidance is to withhold oxygen in suspected heart attack when SpO2 is 90% or above, because hyperoxia constricts coronary vessels. Routine high-flow oxygen for all chest pain is outdated."
+        },
+        {
+          "q": "Which patient should receive high-concentration oxygen even though the pulse oximeter reads 100%?",
+          "choices": [
+            "A patient with a panic attack",
+            "A patient rescued from a running car in a closed garage",
+            "A patient with well-controlled COPD",
+            "A patient with a simple wrist fracture"
+          ],
+          "answer": 1,
+          "why": "Carbon monoxide is read as oxygen by the meter, so the number is false and oxygen is the treatment, cutting the half-life from 4-5 hours to 60-90 minutes. The others gain nothing."
+        }
+      ]
+    },
+    {
+      "id": "emt-airway-l18",
+      "title": "Airway during CPR and the first minutes after ROSC",
+      "minutes": 7,
+      "body": "## During the arrest, the airway is not the priority\n\nIn adult cardiac arrest, compressions come first and interruptions cost lives. The airway plan is whatever delivers acceptable breaths with the least time off the chest.\n\nStart with a two-person bag-valve mask, an oral airway in place, oxygen at `15 L/min` and a reservoir. Without an advanced airway the ratio is `30:2`, and the pause for those two breaths should be under `10 seconds` total.\n\nOnce an advanced airway is in, compressions no longer stop for breathing. Deliver `1 breath every 6 seconds`, which is `10 per minute`, while compressions run continuously at `100-120 per minute`.\n\n> **Trap:** Overventilation during arrest is common and harmful. Every breath raises pressure inside the chest, which blocks blood returning to the heart, so the next compression has less to pump. Count out loud. Slower is better.\n\n## Vomit is not an unusual complication, it is the expected one\n\nHave suction turned on and in reach before the first breath, not in the bag. When a patient regurgitates during CPR, turn the head or log-roll the patient toward you, clear with the rigid tip, and get back on the chest. Paramedics manage this during intubation by suctioning continuously as they look, a technique known as suction-assisted laryngoscopy; your version is a rigid tip already running.\n\n## After ROSC, the mistakes change\n\nWhen the pulse comes back, the patient still cannot protect an airway, is usually still apneic or breathing poorly, and has a brain that was just starved. The classic error is to ventilate the patient at `20-30` breaths a minute out of adrenaline. That drops carbon dioxide, and low carbon dioxide constricts cerebral vessels, reducing blood flow to the brain you just saved.\n\nThe airway half of the post-arrest bundle:\n\n1. Ventilate at `10 breaths per minute`, targeting an `ETCO2` of `35-45 mmHg`.\n2. Titrate oxygen down to an `SpO2` of `92-98%`. Sustained `100%` is a harm, not a goal.\n3. Raise the head of the stretcher about `30 degrees` if the blood pressure allows it.\n4. Reconfirm the airway after every move: chest rise, breath sounds, waveform.\n5. Get a `12-lead` and keep pads on. Roughly a third of resuscitated patients re-arrest.\n6. Do not warm the patient aggressively; avoid fever.\n\n> **Key:** After ROSC, `10` breaths a minute, oxygen titrated down, and a waveform you keep looking at. Fast bagging and `100%` forever are the two things most likely to undo what you just accomplished.\n\n## Pediatric arrest is a breathing problem wearing a cardiac costume\n\nMost children arrest because they ran out of oxygen, not because the heart failed on its own. That is why ventilation matters far more in a pediatric arrest, why the ratio is `15:2` with two rescuers, and why good bag-valve mask technique outperforms rushing an advanced airway in.",
+      "keyPoints": [
+        "Without an advanced airway it is 30:2 with the pause under 10 seconds; with one, 1 breath every 6 seconds and continuous compressions.",
+        "Hyperventilation during arrest raises chest pressure, blocks venous return and lowers cardiac output.",
+        "Have rigid suction running and in reach before the first breath; regurgitation during CPR is expected.",
+        "After ROSC, ventilate at 10 per minute to an ETCO2 of 35-45 and titrate oxygen down to 92-98%.",
+        "Pediatric arrest is usually respiratory, so ventilation quality matters more and the two-rescuer ratio is 15:2."
+      ],
+      "checks": [
+        {
+          "q": "An adult in cardiac arrest now has a supraglottic airway in place. How should ventilations be delivered?",
+          "choices": [
+            "30 compressions to 2 breaths, pausing for the breaths",
+            "1 breath every 6 seconds with continuous compressions",
+            "1 breath every 3 seconds with continuous compressions",
+            "2 breaths every minute during the rhythm check"
+          ],
+          "answer": 1,
+          "why": "With an advanced airway compressions no longer pause: 10 breaths per minute, one every 6 seconds. Faster rates raise intrathoracic pressure and cut the blood flow compressions generate."
+        },
+        {
+          "q": "Immediately after ROSC, your partner is bagging at about 28 breaths per minute. Why is this harmful?",
+          "choices": [
+            "It causes gastric distention only",
+            "It lowers carbon dioxide, which constricts cerebral vessels and reduces blood flow to the brain",
+            "It raises the SpO2 too quickly",
+            "It has no effect as long as the chest rises"
+          ],
+          "answer": 1,
+          "why": "Hyperventilation drives CO2 down and cerebral vessels constrict in response, reducing perfusion to a brain that just survived an arrest. It also raises chest pressure and lowers cardiac output."
+        },
+        {
+          "q": "Which oxygen target is correct for a patient with a pulse restored after cardiac arrest?",
+          "choices": [
+            "100% at all times",
+            "88-92%",
+            "92-98%",
+            "Oxygen is not indicated after ROSC"
+          ],
+          "answer": 2,
+          "why": "Sustained hyperoxia after arrest worsens reperfusion injury, so oxygen is titrated to 92-98%. The 88-92% window belongs to known COPD, and withholding oxygen entirely leaves the brain hypoxic."
+        }
+      ]
+    }
+  ],
+  "cards": [
+    { "id": "emt-airway-c079", "front": "Before strapping a CPAP mask on, what should you do first?", "back": "Hold the mask against the face by hand and coach the patient while they feel the flow. Explain that exhaling feels like work for about a minute, then strap it, tightening only until the leak stops.", "lesson": "emt-airway-l11" },
+    { "id": "emt-airway-c080", "front": "Where do most CPAP leaks come from, and how do you fix one?", "back": "The bridge of the nose, blowing into the eyes. Reseat the mask higher and retighten from the bottom strap. Overtightening deforms the cushion and worsens the leak.", "lesson": "emt-airway-l11" },
+    { "id": "emt-airway-c081", "front": "Do you remove a CPAP patient's dentures?", "back": "No. Well-fitting dentures give the face structure and hold the seal. Removing them collapses the cheeks and the mask stops sealing.", "lesson": "emt-airway-l11" },
+    { "id": "emt-airway-c082", "front": "How much oxygen does a CPAP circuit consume, and what does that mean for your cylinder?", "back": "About 25-40 L/min. A full E cylinder lasts roughly 17 minutes at 30 L/min and a full D under 10 minutes. Switch to the onboard M cylinder as soon as you can.", "lesson": "emt-airway-l11" },
+    { "id": "emt-airway-c083", "front": "What does improvement on CPAP look like in the first 5-10 minutes?", "back": "Respiratory rate falling toward the mid 20s, accessory muscle use easing, the patient managing a short sentence, SpO2 climbing and heart rate coming down.", "lesson": "emt-airway-l11" },
+    { "id": "emt-airway-c084", "front": "A CPAP patient is becoming drowsy. What does that mean and what do you do?", "back": "It is failure, not relaxation: carbon dioxide is climbing or oxygen is still failing. Remove the mask, open the airway and ventilate with a bag-valve mask.", "lesson": "emt-airway-l11" },
+    { "id": "emt-airway-c085", "front": "What is the difference between CPAP and BiPAP?", "back": "CPAP holds one pressure through the whole cycle and treats oxygenation. BiPAP adds a higher inspiratory pressure, typically IPAP 10-15 over EPAP 5; that pressure support moves volume and clears carbon dioxide.", "lesson": "emt-airway-l12" },
+    { "id": "emt-airway-c086", "front": "Which respiratory patient benefits from BiPAP over CPAP?", "back": "The hypercapnic patient: a COPD exacerbation with a rising carbon dioxide and growing sleepiness. Pressure support does the ventilating work that a single pressure cannot.", "lesson": "emt-airway-l12" },
+    { "id": "emt-airway-c087", "front": "What are typical adult ventilator settings you may see on a transport?", "back": "Tidal volume 6-8 mL/kg ideal body weight, rate 10-16 per minute, PEEP 5 cmH2O, FiO2 titrated from 0.30 to 1.00.", "lesson": "emt-airway-l12" },
+    { "id": "emt-airway-c088", "front": "What does a high-pressure ventilator alarm mean versus a low-pressure alarm?", "back": "High pressure means resistance: kinked circuit, secretions, biting, bronchospasm or pneumothorax. Low pressure means escape: disconnection, loose connection or a leaking cuff.", "lesson": "emt-airway-l12" },
+    { "id": "emt-airway-c089", "front": "A patient on any breathing machine suddenly deteriorates. What is the universal first move?", "back": "Disconnect from the machine, attach a bag-valve mask with oxygen at 15 L/min directly to the tube or trach, and ventilate by hand. Then run the DOPE check.", "lesson": "emt-airway-l12" },
+    { "id": "emt-airway-c090", "front": "Where does a supraglottic airway sit, and how does it work?", "back": "It is placed blind through the mouth and seats in the hypopharynx above the vocal cords. Its bowl or cuff seals over the laryngeal opening and its bulk blocks the esophagus, so delivered air goes down the trachea.", "lesson": "emt-airway-l13" },
+    { "id": "emt-airway-c091", "front": "How does the i-gel differ from the King LT?", "back": "The i-gel has no cuff; a gel cradle warms and molds to the anatomy, and it has a gastric channel. The King LT has two balloons inflated from one port, one in the pharynx and one in the esophagus.", "lesson": "emt-airway-l13" },
+    { "id": "emt-airway-c092", "front": "What are the i-gel adult sizes and their weight ranges?", "back": "Size 3 for 30-60 kg, size 4 for 50-90 kg, size 5 for over 90 kg.", "lesson": "emt-airway-l13" },
+    { "id": "emt-airway-c093", "front": "How is a King LT sized, and what cuff volumes go with each size?", "back": "By height. Size 3 for 4-5 ft with 45-60 mL, size 4 for 5-6 ft with 60-80 mL, size 5 for over 6 ft with 70-90 mL.", "lesson": "emt-airway-l13" },
+    { "id": "emt-airway-c094", "front": "What is the absolute contraindication to a supraglottic airway, and what else rules it out?", "back": "An intact gag reflex. Also caustic ingestion, known esophageal disease such as varices, and a complete foreign-body obstruction, which the device would only push deeper.", "lesson": "emt-airway-l13" },
+    { "id": "emt-airway-c095", "front": "How do you confirm a supraglottic airway is working?", "back": "Chest rise, bilateral breath sounds at the mid-axillary lines, no gurgling over the epigastrium, and a continuous ETCO2 waveform. The waveform is the deciding evidence.", "lesson": "emt-airway-l13" },
+    { "id": "emt-airway-c096", "front": "A King LT is in but ventilation meets high resistance. What do you do?", "back": "It is usually too deep. Deflate slightly, withdraw 1-2 cm, reinflate and try again. If a second attempt fails, remove it and go back to a two-person bag-valve mask.", "lesson": "emt-airway-l13" },
+    { "id": "emt-airway-c097", "front": "When should you recheck a supraglottic airway's position?", "back": "After every log-roll, lift, stair-chair move and stretcher transfer. Displacement during movement is the most common way these devices fail.", "lesson": "emt-airway-l13" },
+    { "id": "emt-airway-c098", "front": "Why does capnography tell you more than pulse oximetry about a breathing patient?", "back": "Carbon dioxide only reaches the sensor if the body makes it, the blood carries it and the lungs move it. SpO2 measures only hemoglobin saturation and can read 100% for 30-60 seconds after apnea begins.", "lesson": "emt-airway-l14" },
+    { "id": "emt-airway-c099", "front": "What is a normal ETCO2 value?", "back": "35-45 mmHg, with a square waveform: sharp upstroke, flat plateau, sharp drop.", "lesson": "emt-airway-l14" },
+    { "id": "emt-airway-c100", "front": "What does a shark-fin capnography waveform mean?", "back": "Bronchospasm. The slurred upstroke with no plateau comes from lung regions emptying at different rates in asthma, COPD or anaphylaxis. It squares off as the bronchodilator works.", "lesson": "emt-airway-l14" },
+    { "id": "emt-airway-c101", "front": "What does an ETCO2 under 25 mmHg with clear lungs suggest?", "back": "Either the patient is blowing off carbon dioxide, as in anxiety or the Kussmaul breathing of diabetic ketoacidosis, or perfusion has failed: shock, massive pulmonary embolism or arrest.", "lesson": "emt-airway-l14" },
+    { "id": "emt-airway-c102", "front": "What does a rising ETCO2 above 50 mmHg with a drowsy patient mean?", "back": "Hypoventilation from opioids, a failing COPD patient, a tiring asthmatic or a head injury. It is the earliest warning you get, well before the saturation falls.", "lesson": "emt-airway-l14" },
+    { "id": "emt-airway-c103", "front": "How is ETCO2 used to judge CPR quality?", "back": "It reflects blood flow generated by compressions. Under 10 mmHg means push harder and faster with full recoil and switch compressors; persistently under 10 after 20 minutes predicts an extremely poor outcome.", "lesson": "emt-airway-l14" },
+    { "id": "emt-airway-c104", "front": "ETCO2 jumps abruptly from 12 to 40 mmHg during compressions. What happened and what do you do?", "back": "Return of spontaneous circulation. Do not stop mid-cycle; finish the two-minute block, then check the rhythm and a pulse.", "lesson": "emt-airway-l14" },
+    { "id": "emt-airway-c105", "front": "The capnography waveform disappears in a patient with an advanced airway. What is your assumption?", "back": "The device has displaced or the patient has arrested. Look at the chest, listen, and ventilate by hand. Never assume the sensor is broken.", "lesson": "emt-airway-l14" },
+    { "id": "emt-airway-c106", "front": "Name the four parts of a tracheostomy tube and what each is for.", "back": "Outer cannula, held in place with a 15 mm hub for the bag; inner cannula, a removable liner that plugs with mucus; cuff, inflated through a pilot balloon on some tubes; obturator, used only to guide a new tube in.", "lesson": "emt-airway-l15" },
+    { "id": "emt-airway-c107", "front": "What is the most common tracheostomy emergency and its fastest fix?", "back": "A mucus plug. Remove and inspect the inner cannula; if it is plugged, that was the emergency. Then suction with a soft catheter if needed.", "lesson": "emt-airway-l15" },
+    { "id": "emt-airway-c108", "front": "How do you suction a tracheostomy tube?", "back": "Soft catheter, measured to roughly the tube length plus 1-2 cm or the depth the family uses, suction applied only on withdrawal, 10 seconds maximum, oxygenating between attempts.", "lesson": "emt-airway-l15" },
+    { "id": "emt-airway-c109", "front": "How does ventilation differ between a tracheostomy patient and a laryngectomy patient?", "back": "A tracheostomy patient usually still has a connected upper airway, so you can bag the face or the stoma. A laryngectomy patient has no connection; the stoma is the only route.", "lesson": "emt-airway-l15" },
+    { "id": "emt-airway-c110", "front": "The tracheostomy tube has fallen out. What do you do?", "back": "Cover the stoma and ventilate from the face if the upper airway is intact. Never force a new tube into a stoma less than about a week old; the tract is immature and the tube can enter neck tissue.", "lesson": "emt-airway-l15" },
+    { "id": "emt-airway-c111", "front": "What does DOPE stand for and when do you use it?", "back": "Displacement, Obstruction, Pneumothorax, Equipment failure. Run it whenever a patient with a trach, supraglottic airway, endotracheal tube or ventilator suddenly deteriorates.", "lesson": "emt-airway-l15" },
+    { "id": "emt-airway-c112", "front": "Which findings predict an airway that will swell shut after a fire?", "back": "Enclosed-space fire, soot around the nose or mouth, singed nasal or facial hair, facial or neck burns, hoarseness, a brassy cough, carbonaceous sputum and any stridor.", "lesson": "emt-airway-l16" },
+    { "id": "emt-airway-c113", "front": "Why is SpO2 unreliable in carbon monoxide poisoning, and what are the half-lives?", "back": "The meter counts carboxyhemoglobin as oxygen, so it reads falsely high. Half-life is 4-5 hours on room air, 60-90 minutes on high-flow oxygen, about 20-30 minutes with hyperbaric therapy.", "lesson": "emt-airway-l16" },
+    { "id": "emt-airway-c114", "front": "Why do burning plastics make a fire victim sicker than smoke alone?", "back": "They release cyanide, which blocks the cell from using oxygen. Suspect it in an unconscious fire victim with a normal saturation and severe acidosis. Hydroxocobalamin is the antidote and it is an ALS drug.", "lesson": "emt-airway-l16" },
+    { "id": "emt-airway-c115", "front": "What dose of epinephrine treats an anaphylactic airway, and where does it go?", "back": "0.3 mg of 1 mg/mL intramuscularly in the lateral thigh for an adult, 0.15 mg for a child, repeated in 5-15 minutes if there is no improvement.", "lesson": "emt-airway-l16" },
+    { "id": "emt-airway-c116", "front": "Why will albuterol not fix anaphylactic airway swelling?", "back": "Albuterol relaxes lower airway smooth muscle. The problem in anaphylaxis is swollen tongue, pharynx and larynx above the cords, which only epinephrine's alpha effect shrinks.", "lesson": "emt-airway-l16" },
+    { "id": "emt-airway-c117", "front": "How do you manage the airway in severe facial trauma?", "back": "Aggressive rigid suction, forward-leaning position if there is no spinal concern and the patient is alert, no nasal airway with midface or basilar skull injury, and a planned two-person bag-valve mask.", "lesson": "emt-airway-l16" },
+    { "id": "emt-airway-c118", "front": "What is ramped positioning and who needs it?", "back": "Blankets under the shoulders, upper back and head until the ear canal is level with the sternal notch, head of stretcher up 20-30 degrees. Used for obese patients, who desaturate faster and need higher pressures.", "lesson": "emt-airway-l16" },
+    { "id": "emt-airway-c119", "front": "How does pregnancy past 20 weeks change airway management?", "back": "Reduced oxygen reserve means faster desaturation, and the uterus compresses the vena cava when supine. Tilt the patient or board 15-30 degrees to the left and expect to need earlier oxygen.", "lesson": "emt-airway-l16" },
+    { "id": "emt-airway-c120", "front": "What are the SpO2 targets for chest pain, stroke and post-ROSC patients?", "back": "Chest pain: withhold oxygen if SpO2 is 90% or above. Stroke: give oxygen if below 94%. After ROSC: titrate to 92-98% and avoid sustained 100%.", "lesson": "emt-airway-l17" },
+    { "id": "emt-airway-c121", "front": "Name three harms of too much oxygen.", "back": "Absorption atelectasis once nitrogen is washed out of the alveoli, free-radical injury during reperfusion, and vasoconstriction of coronary and cerebral vessels.", "lesson": "emt-airway-l17" },
+    { "id": "emt-airway-c122", "front": "In which situations do you give high-concentration oxygen no matter what the SpO2 reads?", "back": "Carbon monoxide poisoning, smoke inhalation with suspected cyanide, and diving injuries or decompression sickness.", "lesson": "emt-airway-l17" },
+    { "id": "emt-airway-c123", "front": "Why is a nasal cannula above 6 L/min the wrong move?", "back": "Above 6 L/min it dries and burns the nasal lining without delivering meaningfully more than about 44%. If 6 L/min is not enough, change the device rather than the flow.", "lesson": "emt-airway-l17" },
+    { "id": "emt-airway-c124", "front": "What is the ventilation plan during adult CPR before and after an advanced airway?", "back": "Before: two-person bag-valve mask with an oral airway and 15 L/min, 30:2, pauses under 10 seconds. After: 1 breath every 6 seconds with continuous compressions at 100-120 per minute.", "lesson": "emt-airway-l18" },
+    { "id": "emt-airway-c125", "front": "Why is overventilation during cardiac arrest harmful?", "back": "Each breath raises pressure inside the chest, which blocks blood returning to the heart, so the next compression has less volume to pump and cardiac output falls.", "lesson": "emt-airway-l18" },
+    { "id": "emt-airway-c126", "front": "State the airway half of the post-ROSC bundle.", "back": "Ventilate at 10 per minute to an ETCO2 of 35-45, titrate oxygen to an SpO2 of 92-98%, head up about 30 degrees if pressure allows, reconfirm the airway after every move, keep pads on and avoid fever.", "lesson": "emt-airway-l18" },
+    { "id": "emt-airway-c127", "front": "Why does ventilation matter more in pediatric arrest than adult arrest?", "back": "Most children arrest from running out of oxygen rather than a primary cardiac cause, so restoring ventilation treats the actual problem. Two-rescuer CPR uses a 15:2 ratio.", "lesson": "emt-airway-l18" },
+    { "id": "emt-airway-c128", "front": "What are the critical failures at the bag-valve mask skill station?", "back": "Failing to take body substance isolation precautions, failing to open the airway or insert an adjunct, failing to attach oxygen at 15 L/min, ventilating at an incorrect rate or volume, and failing to produce visible chest rise.", "lesson": "emt-airway-l08" }
+  ],
+  "quiz": [
+    {
+      "id": "emt-airway-q031",
+      "q": "A 74-year-old on CPAP for pulmonary edema has been on it for 10 minutes. Her rate is still 32, her SpO2 is 88%, she is now difficult to rouse, and her blood pressure has fallen from 168/92 to 86/50. The best action is to:",
+      "choices": [
+        "Increase the pressure from 5 to 10 cmH2O",
+        "Tighten the straps to eliminate the leak",
+        "Remove the mask and begin bag-valve mask ventilation",
+        "Continue CPAP and reassess in 10 minutes"
+      ],
+      "answer": 2,
+      "why": "Falling mental status plus hypotension is CPAP failure. More pressure reduces venous return and worsens the blood pressure, and a patient who cannot be roused cannot protect the airway. Positive pressure by bag is the next step.",
+      "lesson": "emt-airway-l11",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-airway-q032",
+      "q": "Your CPAP patient keeps pulling the mask off because air is blowing into his eyes. Your first correction is to:",
+      "choices": [
+        "Reseat the mask on the bridge of the nose and retighten from the bottom strap",
+        "Raise the pressure so the cushion seats harder",
+        "Remove his dentures to improve the seal",
+        "Abandon CPAP and apply a nonrebreather"
+      ],
+      "answer": 0,
+      "why": "A bridge-of-nose leak is a seating problem. Raising pressure makes the jet into the eyes worse, removing dentures collapses the face and destroys the seal, and giving up on CPAP loses the intervention most likely to keep this patient off a ventilator.",
+      "lesson": "emt-airway-l11",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-airway-q033",
+      "q": "You start CPAP from a full E cylinder at 2,000 psi. The circuit consumes 30 L/min. About how long before you reach safe residual pressure?",
+      "choices": [
+        "About 34 minutes",
+        "About 17 minutes",
+        "About 9 minutes",
+        "About 50 minutes"
+      ],
+      "answer": 1,
+      "why": "(2000 - 200) x 0.28 = 504 usable liters; 504 / 30 = about 17 minutes. Using 15 L/min gives 34 minutes and is the common error, and 9 minutes would be a D cylinder at the same flow.",
+      "lesson": "emt-airway-l11",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-airway-q034",
+      "q": "During an interfacility transport the ventilator alarms for high pressure and the patient's chest barely moves. Your first action is to:",
+      "choices": [
+        "Increase the set tidal volume",
+        "Silence the alarm and continue",
+        "Reduce PEEP to zero",
+        "Disconnect from the ventilator and ventilate by hand with a bag-valve mask at 15 L/min"
+      ],
+      "answer": 3,
+      "why": "Hand ventilation immediately separates a machine problem from a patient problem and tells you by feel whether there is obstruction. An EMT does not change settings, and silencing an alarm treats nothing.",
+      "lesson": "emt-airway-l12",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-airway-q035",
+      "q": "Which statement about BiPAP is correct?",
+      "choices": [
+        "It delivers a single pressure throughout the breathing cycle",
+        "It delivers a higher inspiratory and a lower expiratory pressure, so it supports ventilation as well as oxygenation",
+        "It is indicated in apnea and respiratory arrest",
+        "It is preferred over CPAP in flash pulmonary edema with a systolic of 190"
+      ],
+      "answer": 1,
+      "why": "The gap between IPAP and EPAP is pressure support, which moves volume and clears CO2. A single pressure describes CPAP, apnea is a contraindication to both, and flash pulmonary edema responds well to CPAP alone.",
+      "lesson": "emt-airway-l12",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-airway-q036",
+      "q": "A child on a home ventilator becomes cyanotic and the machine is alarming. The mother is at the bedside. You should:",
+      "choices": [
+        "Ask the mother to adjust the ventilator while you get vitals",
+        "Disconnect the ventilator, ventilate with a bag-valve mask at 15 L/min, and ask the mother what the alarm usually means",
+        "Change the ventilator settings to increase the rate",
+        "Transport immediately without touching the circuit"
+      ],
+      "answer": 1,
+      "why": "Hand ventilation is the universal fix and tells you whether the problem is obstruction or leak, while the caregiver is the expert on the device. Adjusting settings is out of scope, and transporting a cyanotic child without ventilating treats nothing.",
+      "lesson": "emt-airway-l12",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-airway-q037",
+      "q": "You are selecting an i-gel for a 70 kg adult in cardiac arrest. Which size is correct?",
+      "choices": [
+        "Size 3",
+        "Size 4",
+        "Size 5",
+        "Size 2.5"
+      ],
+      "answer": 1,
+      "why": "i-gel sizing is by weight: 3 covers 30-60 kg, 4 covers 50-90 kg, 5 is for over 90 kg. Too small leaks and will not generate volume; too large will not seat and traumatizes the airway.",
+      "lesson": "emt-airway-l13",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-airway-q038",
+      "q": "A patient is about 5 feet 10 inches tall. Which King LT size and cuff volume do you prepare?",
+      "choices": [
+        "Size 3 with 45-60 mL",
+        "Size 5 with 70-90 mL",
+        "Size 4 with 60-80 mL",
+        "Size 4 with 45-60 mL"
+      ],
+      "answer": 2,
+      "why": "King sizing is by height, not weight: 4-5 ft is size 3, 5-6 ft is size 4 at 60-80 mL, and over 6 ft is size 5. Matching the right tube to the wrong volume leaves a leak.",
+      "lesson": "emt-airway-l13",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-airway-q039",
+      "q": "After you insert a supraglottic airway there is no capnography waveform, no chest rise, and gurgling over the epigastrium with each squeeze. You should:",
+      "choices": [
+        "Squeeze harder to overcome the resistance",
+        "Add more air to the cuff",
+        "Remove the device, ventilate with a bag-valve mask, and reassess before any second attempt",
+        "Attach oxygen tubing directly to the device and continue"
+      ],
+      "answer": 2,
+      "why": "Those three findings together mean the device is not ventilating the lungs. Squeezing harder or adding cuff volume only inflates the stomach and invites vomiting; the patient needs oxygen by bag now.",
+      "lesson": "emt-airway-l13",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-airway-q040",
+      "q": "A King LT is seated and the cuff inflated, but ventilation meets high resistance and the chest rise is minimal. The most appropriate next step is:",
+      "choices": [
+        "Deflate slightly, withdraw the tube 1-2 cm, reinflate and reassess",
+        "Advance the tube 2 cm deeper",
+        "Add 20 mL more air to the cuff",
+        "Begin chest compressions"
+      ],
+      "answer": 0,
+      "why": "Resistance with a seated King usually means it sits too deep, past the laryngeal opening. Withdrawing slightly brings the ventilation port back over the larynx; advancing or overinflating makes the obstruction worse.",
+      "lesson": "emt-airway-l13",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-airway-q041",
+      "q": "A 24-year-old asthmatic has a capnography waveform with a slurred upstroke and no flat plateau. This pattern indicates:",
+      "choices": [
+        "A leak in the sampling line",
+        "Bronchospasm with uneven lung emptying",
+        "Hyperventilation from anxiety",
+        "Esophageal placement of an airway"
+      ],
+      "answer": 1,
+      "why": "The shark-fin shape comes from obstructed airways emptying at different rates and squares off as the bronchodilator works. A leak lowers the number without that shape, and esophageal placement produces no sustained waveform at all.",
+      "lesson": "emt-airway-l14",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-airway-q042",
+      "q": "What is the normal range for end-tidal carbon dioxide?",
+      "choices": [
+        "10-20 mmHg",
+        "25-30 mmHg",
+        "35-45 mmHg",
+        "50-60 mmHg"
+      ],
+      "answer": 2,
+      "why": "35-45 mmHg with a square waveform is normal. Values under 25 suggest poor perfusion or hyperventilation, and values over 50 suggest hypoventilation.",
+      "lesson": "emt-airway-l14",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-airway-q043",
+      "q": "Five minutes into an adult resuscitation the ETCO2 reads 7 mmHg. The best immediate action is to:",
+      "choices": [
+        "Increase ventilations to 20 per minute",
+        "Stop and check for a pulse",
+        "Improve compression depth and rate and rotate compressors",
+        "Remove the inline adapter and recalibrate"
+      ],
+      "answer": 2,
+      "why": "During arrest the value reflects the blood flow your compressions generate, so a low number means fix the compressions. Faster ventilation raises chest pressure and lowers flow further, and pulse checks waste perfusion time.",
+      "lesson": "emt-airway-l14",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-airway-q044",
+      "q": "Midway through a two-minute cycle of compressions, the ETCO2 rises abruptly from 11 to 42 mmHg. You should:",
+      "choices": [
+        "Stop compressions immediately and check a pulse",
+        "Continue compressions to the end of the cycle, then check the rhythm and a pulse",
+        "Increase the ventilation rate to 20 per minute",
+        "Assume the sensor is contaminated and replace it"
+      ],
+      "answer": 1,
+      "why": "A sudden jump of that size means return of spontaneous circulation, but interrupting compressions mid-cycle is not required and costs perfusion. Confirm at the scheduled rhythm check. Hyperventilating a patient who just regained a pulse harms the brain.",
+      "lesson": "emt-airway-l14",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-airway-q045",
+      "q": "While moving an intubated patient down a stairwell the capnography waveform disappears. The most likely cause is:",
+      "choices": [
+        "The monitor cable has come loose",
+        "The tube has become displaced",
+        "The patient's carbon dioxide production has fallen",
+        "The oxygen cylinder has run out"
+      ],
+      "answer": 1,
+      "why": "Movement is when tubes displace, and a sudden loss of waveform means displacement or arrest until proven otherwise. Treating it as a cable problem costs the minutes the brain has; confirm by looking, listening and bagging.",
+      "lesson": "emt-airway-l14",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-airway-q046",
+      "q": "A 60-year-old with a tracheostomy is agitated and increasingly short of breath. You meet resistance passing a suction catheter. Your next action is to:",
+      "choices": [
+        "Remove and inspect the inner cannula",
+        "Force the catheter past the resistance",
+        "Remove the entire tracheostomy tube",
+        "Place a nonrebreather on the face and transport"
+      ],
+      "answer": 0,
+      "why": "Resistance almost always means a plugged inner cannula, and removing it is fast, safe and often curative. Forcing a catheter causes bleeding, pulling the whole tube risks losing the airway, and a face mask does nothing for a patient who breathes through the neck.",
+      "lesson": "emt-airway-l15",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-airway-q047",
+      "q": "The DOPE mnemonic for a deteriorating patient with an advanced airway stands for:",
+      "choices": [
+        "Deliver, Oxygenate, Position, Evaluate",
+        "Displacement, Obstruction, Pneumothorax, Equipment failure",
+        "Depth, Oxygen, Pressure, Exhalation",
+        "Distention, Occlusion, Perfusion, Effort"
+      ],
+      "answer": 1,
+      "why": "Displacement, Obstruction, Pneumothorax, Equipment failure is the standard check for any tube or ventilator patient who suddenly worsens, and hand ventilation quickly sorts among them.",
+      "lesson": "emt-airway-l15",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-airway-q048",
+      "q": "An apneic patient has a neck stoma and a history of total laryngectomy. You should ventilate by:",
+      "choices": [
+        "Bag-valve mask on the face while an assistant seals the stoma",
+        "Inserting a nasopharyngeal airway and bagging from the face",
+        "Sealing an infant or child mask over the stoma and bagging there",
+        "Performing a jaw thrust and bagging from the face"
+      ],
+      "answer": 2,
+      "why": "A laryngectomy leaves no connection between the mouth and trachea, so only the stoma route moves air. Sealing the stoma and bagging the face, which works for some tracheostomy patients, moves nothing here.",
+      "lesson": "emt-airway-l15",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-airway-q049",
+      "q": "A 40-year-old rescued from an apartment fire has soot in his nostrils, a hoarse voice, and an SpO2 of 99% on room air. He says he feels fine. The correct management is:",
+      "choices": [
+        "Room air and transport for evaluation since the saturation is normal",
+        "High-flow oxygen by nonrebreather and expedited transport",
+        "Withhold oxygen until carbon monoxide is measured",
+        "Nasal cannula at 2 L/min and reassess in 15 minutes"
+      ],
+      "answer": 1,
+      "why": "Pulse oximetry counts carboxyhemoglobin as oxygen, so 99% is meaningless here, and soot plus hoarseness predicts swelling over the next hour. High-flow oxygen both treats the carbon monoxide and buys time.",
+      "lesson": "emt-airway-l16",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-airway-q050",
+      "q": "Roughly how long is the half-life of carboxyhemoglobin on high-flow oxygen compared with room air?",
+      "choices": [
+        "60-90 minutes on high-flow oxygen versus 4-5 hours on room air",
+        "20 minutes on high-flow oxygen versus 60 minutes on room air",
+        "4-5 hours on high-flow oxygen versus 8 hours on room air",
+        "It does not change with oxygen"
+      ],
+      "answer": 0,
+      "why": "High-flow oxygen shortens the half-life from about 4-5 hours to 60-90 minutes, and hyperbaric therapy shortens it further to roughly 20-30 minutes. This is why oxygen is the treatment, not just supportive care.",
+      "lesson": "emt-airway-l16",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-airway-q051",
+      "q": "A 28-year-old stung by a wasp has hives, a swollen tongue, and a hoarse, strained voice. Blood pressure is 104/66. The most important intervention is:",
+      "choices": [
+        "Albuterol by nebulizer",
+        "CPAP at 5 cmH2O",
+        "Epinephrine 0.3 mg intramuscularly in the lateral thigh",
+        "Oral diphenhydramine and transport"
+      ],
+      "answer": 2,
+      "why": "Only epinephrine shrinks swollen upper airway tissue, and airway involvement makes this anaphylaxis regardless of a nearly normal blood pressure. Albuterol acts below the cords, antihistamines are far too slow, and CPAP cannot push past a closing glottis.",
+      "lesson": "emt-airway-l16",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-airway-q052",
+      "q": "You are preparing to ventilate a 340-pound patient. Which positioning is most likely to improve your success?",
+      "choices": [
+        "Supine and flat on a long board",
+        "Trendelenburg with the head down 15 degrees",
+        "Left lateral recumbent",
+        "Ramped with blankets until the ear canal is level with the sternal notch and the head of the stretcher up 20-30 degrees"
+      ],
+      "answer": 3,
+      "why": "Ramping lifts abdominal weight off the diaphragm and aligns the airway axes. Lying flat or head-down loads the diaphragm in a patient who already has reduced reserve and desaturates quickly.",
+      "lesson": "emt-airway-l16",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-airway-q053",
+      "q": "A 61-year-old with crushing substernal chest pain is alert, comfortable on the stretcher, and has an SpO2 of 96% on room air. Oxygen therapy should be:",
+      "choices": [
+        "Withheld, because the saturation is 90% or above",
+        "Given by nonrebreather at 15 L/min",
+        "Given by nasal cannula at 4 L/min",
+        "Given by simple mask at 8 L/min"
+      ],
+      "answer": 0,
+      "why": "Current guidance withholds oxygen in suspected heart attack when SpO2 is 90% or above, because hyperoxia causes coronary vasoconstriction. Routine oxygen for all chest pain is outdated practice.",
+      "lesson": "emt-airway-l17",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-airway-q054",
+      "q": "Ten minutes after ROSC, your patient is being bagged on a nonrebreather reservoir at 15 L/min with an SpO2 of 100%. You should:",
+      "choices": [
+        "Leave it as is; 100% is the goal after arrest",
+        "Titrate the oxygen down to keep the SpO2 between 92 and 98 percent",
+        "Reduce oxygen until the SpO2 falls to 88-92 percent",
+        "Discontinue oxygen entirely"
+      ],
+      "answer": 1,
+      "why": "Sustained hyperoxia worsens reperfusion injury to the brain, so oxygen is titrated to 92-98% after ROSC. The 88-92% window belongs to known COPD, and stopping oxygen altogether risks renewed hypoxia.",
+      "lesson": "emt-airway-l17",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-airway-q055",
+      "q": "Which patient should receive high-concentration oxygen regardless of what the pulse oximeter shows?",
+      "choices": [
+        "A patient with a panic attack and a rate of 30",
+        "A patient with stable COPD and an SpO2 of 91%",
+        "A patient found in a closed garage with a running car",
+        "A patient with an isolated ankle fracture"
+      ],
+      "answer": 2,
+      "why": "Carbon monoxide is read as oxygen by the meter, so the number is falsely reassuring and high-flow oxygen is the treatment itself. The COPD patient at 91% is already within the 88-92% target, and the others gain nothing.",
+      "lesson": "emt-airway-l17",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-airway-q056",
+      "q": "During adult CPR a supraglottic airway is placed and confirmed. Ventilations should now be given:",
+      "choices": [
+        "30 compressions to 2 breaths, pausing for the breaths",
+        "1 breath every 6 seconds with continuous compressions",
+        "1 breath every 3 seconds with continuous compressions",
+        "2 breaths at each rhythm check only"
+      ],
+      "answer": 1,
+      "why": "With an advanced airway compressions no longer pause and the rate is 10 breaths a minute. One every 3 seconds is double that and raises chest pressure enough to cut the output compressions generate.",
+      "lesson": "emt-airway-l18",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-airway-q057",
+      "q": "Your partner is bagging a post-ROSC patient about 28 times a minute. The most important reason to slow him down is that hyperventilation:",
+      "choices": [
+        "Causes gastric distention and vomiting only",
+        "Raises the SpO2 too quickly for the monitor to track",
+        "Lowers carbon dioxide, constricting cerebral vessels and reducing blood flow to the brain",
+        "Has no meaningful effect if the chest is rising"
+      ],
+      "answer": 2,
+      "why": "Low carbon dioxide causes cerebral vasoconstriction, cutting perfusion to a brain that just survived an arrest, and the raised chest pressure also lowers cardiac output. Gastric distention is real but not the main harm here.",
+      "lesson": "emt-airway-l18",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-airway-q058",
+      "q": "You are the only provider available to ventilate an apneic adult with a bag-valve mask, and your chest rise is poor despite a good head position and an oral airway in place. The best correction is to:",
+      "choices": [
+        "Squeeze the bag faster to make up the volume",
+        "Have a second rescuer hold the mask with two hands using two C-E grips while you squeeze the bag",
+        "Switch to a nonrebreather at 15 L/min",
+        "Remove the oral airway and try again"
+      ],
+      "answer": 1,
+      "why": "Poor chest rise with one rescuer is almost always a seal problem, and two-hand mask holds deliver measurably better volumes. Faster squeezing inflates the stomach, a nonrebreather does not ventilate at all, and the adjunct is helping.",
+      "lesson": "emt-airway-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-airway-q059",
+      "q": "You are ventilating a 10-month-old with a bag-valve mask. She is supine on a flat backboard and the chest rise is poor despite a good seal. The most likely correction is to:",
+      "choices": [
+        "Place padding under the shoulders to bring the airway into a neutral position",
+        "Hyperextend the neck fully",
+        "Switch to an adult-sized bag for more volume",
+        "Place padding under the head to flex the neck forward"
+      ],
+      "answer": 0,
+      "why": "An infant's large occiput flexes the neck when supine and kinks the airway; shoulder padding restores neutral alignment. Hyperextension kinks a soft trachea shut, more padding under the head worsens the flexion, and an oversized bag risks barotrauma.",
+      "lesson": "emt-airway-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-airway-q060",
+      "q": "Two minutes into CPR the patient vomits copiously around the bag-valve mask. You should:",
+      "choices": [
+        "Continue ventilating and suction at the hospital",
+        "Stop CPR entirely until the airway is clear",
+        "Turn or log-roll the patient, clear the mouth with rigid suction, then resume compressions promptly",
+        "Insert an oral airway to hold the vomit down"
+      ],
+      "answer": 2,
+      "why": "You cannot ventilate through vomit and bagging it drives it into the lungs, so clear it fast and get back on the chest. Stopping CPR longer than needed costs perfusion, and an oral airway does nothing about fluid.",
+      "lesson": "emt-airway-l18",
+      "difficulty": 2
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "emt-airway-s03",
+      "title": "Dispatched: 2-year-old choking at a birthday party",
+      "setting": "field",
+      "intro": "It is 1540 on a Saturday. You are called to a backyard birthday party for a 2-year-old who was eating and began coughing. The mother is holding him. A dozen adults are watching you walk in and several are shouting instructions at once. Your partner has the pediatric bag.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "The child is sitting upright in his mother's arms. He is coughing forcefully every few seconds, crying between coughs, and his lips are pink. Between coughs you can hear him say \"Mama.\" A grandmother is telling you to turn him upside down.",
+          "vitals": { "hr": 148, "rr": 34, "spo2": 96 },
+          "choices": [
+            { "text": "Encourage the coughing, give blow-by oxygen, keep him calm on his mother's lap and prepare for transport", "next": "s2", "feedback": "Correct. He is moving air: forceful cough, crying, speaking, pink. A cough generates more pressure than anything you can do by hand, and intervening on a partial obstruction can convert it to a complete one.", "score": 1 },
+            { "text": "Take him from his mother, lay him across your forearm and deliver 5 back slaps", "next": "s2", "feedback": "Harmful. Back slaps in a child who is moving air can dislodge the object into a worse position. Separating him from his mother also makes him fight and cry harder.", "score": -1 },
+            { "text": "Perform abdominal thrusts since he is over 1 year old", "next": "s2", "feedback": "Harmful. Abdominal thrusts are for severe obstruction only. This child is speaking and coughing, which by definition is mild.", "score": -1 },
+            { "text": "Open his mouth and sweep with your finger to find the food", "next": "s2", "feedback": "Harmful. Blind finger sweeps push objects deeper and are never correct at any age. Remove only what you can actually see.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "You are two minutes into reassurance when the cough stops. He is still upright, his mouth is open, no sound is coming out, and his color is changing. He is still awake and looking at you.",
+          "vitals": { "hr": 168, "rr": 0, "spo2": 82 },
+          "choices": [
+            { "text": "Deliver abdominal thrusts, repeating until the object comes out or he becomes unresponsive", "next": "s3", "feedback": "Correct. Silence with no air movement in a child over 1 year is severe obstruction, and abdominal thrusts are the maneuver for that age.", "score": 1 },
+            { "text": "Apply a pediatric nonrebreather at 12 L/min and transport", "next": "s3", "feedback": "Harmful. Oxygen cannot pass an obstruction. Nothing you give at the face reaches the lungs while the airway is blocked.", "score": -1 },
+            { "text": "Alternate 5 back slaps and 5 chest thrusts as you would for an infant", "next": "s3", "feedback": "Acceptable but not the standard for this age. Back slaps and chest thrusts are the infant sequence, used under 1 year because the liver sits unprotected. Over 1 year, abdominal thrusts are the answer.", "score": 0 },
+            { "text": "Begin chest compressions immediately", "next": "s3", "feedback": "Harmful right now. He is still responsive. Compressions start when a choking patient goes unresponsive.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "After four thrusts he goes limp in your hands. Nothing has come out. He is now unresponsive and not breathing.",
+          "vitals": { "hr": 54, "rr": 0, "spo2": 74 },
+          "choices": [
+            { "text": "Lower him to a firm flat surface and begin CPR with chest compressions, looking in the mouth each time you open the airway", "next": "s4", "feedback": "Correct. An unresponsive choking patient of any age gets CPR starting with compressions, which themselves generate airway pressure. Look before each breath and remove only what you can see.", "score": 1 },
+            { "text": "Continue abdominal thrusts with him on the ground", "next": "s4", "feedback": "Wrong sequence. Once the patient is unresponsive, thrusts are replaced by CPR. Compressions are more effective at generating pressure than abdominal thrusts.", "score": -1 },
+            { "text": "Check for a pulse for 30 seconds before deciding", "next": "s4", "feedback": "Too slow. A pulse check should take no more than 10 seconds, and a heart rate of 54 in a hypoxic child is already an indication to act.", "score": -1 },
+            { "text": "Suction the mouth with a rigid tip, then start CPR with compressions", "next": "s4", "feedback": "Reasonable if there is visible fluid, but do not delay compressions to go hunting. Suction what you can see, then get on the chest.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "On your second cycle you open the airway and see a piece of hot dog at the back of the throat. You remove it with your fingers. He is still not breathing but now has a palpable brachial pulse at about 70.",
+          "vitals": { "hr": 70, "rr": 0, "spo2": 79 },
+          "choices": [
+            { "text": "Ventilate with a pediatric bag-valve mask at 15 L/min, 1 breath every 2-3 seconds, to visible chest rise", "next": "s5", "feedback": "Correct. Apnea with a pulse means rescue breathing at 20-30 per minute for a child. A heart rate of 70 in a 2-year-old is still a hypoxia alarm, and oxygen is the fix.", "score": 1 },
+            { "text": "Ventilate at 1 breath every 6 seconds as you would for an adult", "next": "s5", "feedback": "Too slow for a child. That rate belongs to adults with a pulse. Children and infants get a breath every 2-3 seconds.", "score": -1 },
+            { "text": "Apply a nonrebreather at 15 L/min since the obstruction is cleared", "next": "s5", "feedback": "Wrong tool. A nonrebreather requires a patient who is moving air. He is apneic and needs positive pressure.", "score": -1 },
+            { "text": "Begin compressions because the heart rate is 70", "next": "s5", "feedback": "Premature. Ventilate first and reassess. Compressions in a child with a pulse are indicated when the heart rate stays below 60 with poor perfusion despite oxygenation and ventilation.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "After about 30 seconds of good ventilation his color improves, the heart rate climbs to 128, and he begins to gag and push your hand away. The saturation reads 94%.",
+          "vitals": { "hr": 128, "rr": 22, "spo2": 94 },
+          "choices": [
+            { "text": "Stop bagging, place blow-by oxygen at about 6 L/min, keep him with his mother, and transport with continuous reassessment", "next": "end", "feedback": "Correct. He is ventilating on his own and gagging, which means he is protecting his airway. Blow-by is the device a fighting toddler will tolerate, and a child who nearly obstructed still needs evaluation.", "score": 1 },
+            { "text": "Insert an oral airway to keep the airway open during transport", "next": "end", "feedback": "Contraindicated. He is gagging, which means an intact gag reflex. An oral airway will make him vomit.", "score": -1 },
+            { "text": "Continue bag-valve mask ventilation at 20 per minute to the hospital", "next": "end", "feedback": "Unnecessary and harmful. Forcing breaths on a patient who is breathing adequately fights his own effort and inflates the stomach.", "score": -1 },
+            { "text": "Release him to his parents since the object is out and he looks better", "next": "end", "feedback": "Not acceptable. Post-obstruction swelling, aspirated fragments and hypoxic injury all need evaluation. He is transported.", "score": -1 }
+          ]
+        }
+      ],
+      "debrief": "The pattern to hold onto is the single question that drives every choking call: is air moving? Coughing, crying and speaking mean mild, and mild is treated with encouragement and nothing else. Silence means severe, and severe means thrusts, chosen by age: abdominal over 1 year, back slaps and chest thrusts under 1 year. Unresponsive at any age means CPR starting with compressions, with a look in the mouth each time you open the airway and no blind sweeps ever. When the obstruction clears but the patient does not breathe, the tool changes: a child or infant with a pulse gets one breath every 2-3 seconds, not the adult's one every 6. Finally, the heart rate is your pediatric oxygen gauge. Bradycardia in a sick child is hypoxia until proven otherwise, and it comes back up when you fix the breathing."
+    },
+    {
+      "id": "emt-airway-s04",
+      "title": "Skill station: ventilating an apneic adult",
+      "setting": "classroom",
+      "intro": "You are at the bag-valve mask skill station. The examiner reads the scenario: a 40-year-old adult is unresponsive on the floor. There is no trauma. A second rescuer is available when you ask for one. The examiner will tell you what you find at each step. This station has a written list of critical failures, and each choice below either avoids one or commits one.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "The examiner finishes reading and says \"begin.\" Your equipment is laid out: gloves, eye protection, a bag-valve mask with reservoir, oral and nasal airways, a suction unit, and an oxygen cylinder.",
+          "choices": [
+            { "text": "State body substance isolation precautions out loud and put on gloves and eye protection", "next": "s2", "feedback": "Correct. Failing to take or verbalize precautions is a listed critical failure at nearly every station. Say it, do it, and do it first.", "score": 1 },
+            { "text": "Kneel at the head and immediately open the airway", "next": "s2", "feedback": "Fast, but you skipped precautions. Examiners score what you say and what you do, and the omission is a critical failure regardless of how well the rest goes.", "score": -1 },
+            { "text": "Ask the examiner whether gloves are necessary for this station", "next": "s2", "feedback": "Do not ask permission to be safe. State your precautions and take them. The examiner will not stop you.", "score": 0 },
+            { "text": "Check the oxygen cylinder pressure first", "next": "s2", "feedback": "Useful later, but precautions come first, and the patient is not breathing while you read a gauge.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "You confirm the patient is unresponsive and apneic with a carotid pulse present. The examiner tells you there is no gag reflex and the mouth is clear.",
+          "choices": [
+            { "text": "Open the airway with a head-tilt chin-lift, size and insert an oral airway, then attach oxygen at 15 L/min to the bag with the reservoir", "next": "s3", "feedback": "Correct and in the right order. Failing to open the airway, failing to insert an adjunct, and failing to connect high-flow oxygen with a reservoir are three separate critical failures.", "score": 1 },
+            { "text": "Begin ventilating with the bag on room air while your partner sets up the oxygen", "next": "s3", "feedback": "Critical failure. A bag without oxygen delivers 21%. Connect oxygen at 15 L/min before or immediately as you begin; do not accept room air ventilation as adequate.", "score": -1 },
+            { "text": "Perform a jaw thrust and insert a nasopharyngeal airway", "next": "s3", "feedback": "Acceptable technically, but there is no trauma here, so head-tilt chin-lift is the standard maneuver and an oral airway is the better adjunct in a patient with no gag reflex.", "score": 0 },
+            { "text": "Insert the oral airway by sliding it in right side up along the tongue", "next": "s3", "feedback": "Wrong for an adult. Insert it inverted and rotate 180 degrees, or sideways with a 90 degree rotation. Right side up without a tongue blade pushes the tongue backward.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "You begin ventilating alone with a one-handed C-E grip. The examiner says the chest rise is minimal and you can hear air escaping at the cheek.",
+          "choices": [
+            { "text": "Request the second rescuer, hand off the bag, and hold the mask with two hands using a C-E grip on each side", "next": "s4", "feedback": "Correct. Two-rescuer technique produces measurably larger volumes, and the station allows you to use the assistant. Failing to produce chest rise is itself a critical failure.", "score": 1 },
+            { "text": "Squeeze the bag harder and faster to overcome the leak", "next": "s4", "feedback": "Critical failure in the making. Force does not fix a seal; it drives air into the stomach and causes vomiting. Volume and rate errors are scored here.", "score": -1 },
+            { "text": "Press the mask down harder onto the face with your thumb and index finger", "next": "s4", "feedback": "Partially right idea, wrong direction. The lift comes from pulling the jaw up into the mask with the E fingers, not from mashing the mask down onto the face.", "score": 0 },
+            { "text": "Remove the mask and ventilate mouth-to-mask without oxygen", "next": "s4", "feedback": "Backwards. A pocket mask is a legitimate device, but abandoning oxygen when it is connected and available is a failure.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "With two rescuers the chest now rises well. The examiner asks you to state your ventilation rate and then demonstrate it.",
+          "choices": [
+            { "text": "One breath every 6 seconds, about 10 per minute, each squeeze over 1 second to visible chest rise, counting out loud", "next": "s5", "feedback": "Correct. Adult with a pulse is 10 per minute. Counting aloud keeps you honest and shows the examiner the rate you are actually delivering.", "score": 1 },
+            { "text": "One breath every 3 seconds, about 20 per minute", "next": "s5", "feedback": "Critical failure. That is the pediatric rate. In an adult it is hyperventilation, which raises chest pressure and reduces blood return to the heart.", "score": -1 },
+            { "text": "One breath every 5 seconds, squeezing the bag fully empty each time", "next": "s5", "feedback": "The rate is close but the volume is wrong. Squeeze only until the chest visibly rises, not until the bag is empty; excess volume goes into the stomach.", "score": -1 },
+            { "text": "One breath every 6 seconds, watching the chest and stopping the squeeze when it rises", "next": "s5", "feedback": "Correct, and stopping at visible rise is exactly the volume control the station is looking for.", "score": 1 }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "One minute in, the patient regurgitates into the mask. The examiner watches to see what you do next.",
+          "choices": [
+            { "text": "Remove the mask, turn or log-roll the patient, suction the mouth with the rigid tip, then resume ventilation and reassess chest rise", "next": "end", "feedback": "Correct. You cannot ventilate through fluid, and bagging it drives it into the lungs. Failing to manage vomiting is a critical failure at this station.", "score": 1 },
+            { "text": "Continue ventilating and let suction wait until the airway clears itself", "next": "end", "feedback": "Critical failure. Every squeeze pushes stomach contents deeper into the lungs. Stop, clear, then resume.", "score": -1 },
+            { "text": "Suction for 30 seconds to be thorough before resuming", "next": "end", "feedback": "Too long. Adult suction is limited to 15 seconds per attempt because you are removing oxygen along with the fluid; oxygenate between attempts.", "score": -1 },
+            { "text": "Insert a second oral airway to hold the vomit down", "next": "end", "feedback": "Does nothing. An adjunct holds the tongue forward; it does not control fluid and it does not protect against aspiration.", "score": -1 }
+          ]
+        }
+      ],
+      "debrief": "Skill stations are not graded on elegance, they are graded on a list. For bag-valve mask ventilation the listed critical failures are consistent: failing to take or verbalize body substance isolation precautions, failing to open the airway, failing to insert an appropriate adjunct, failing to connect the bag to oxygen at 15 L/min with a reservoir, ventilating at an incorrect rate or volume, failing to produce visible chest rise, and failing to manage vomiting or an obstruction when it happens. Notice that four of the seven are things you say or set up in the first thirty seconds. Notice too that the one thing examiners watch hardest is chest rise, because it is the only proof that any of the rest worked. Ask for the second rescuer the moment your seal is imperfect; the station allows it and two hands on the mask beat one every time. Count your rate out loud, squeeze only to rise, and treat vomit the second it appears."
+    }
+  ]
+}
