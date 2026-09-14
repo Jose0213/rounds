@@ -67,7 +67,6 @@ for (const f of fs.readdirSync(path.join(DIST, 'icons'))) shipped.push('./icons/
 const precache = ['./', ...shipped.filter((s) => s !== './sw.js')];
 const sw = fs.readFileSync(path.join(DIST, 'sw.js'), 'utf8').replace('__PRECACHE__', JSON.stringify(precache));
 fs.writeFileSync(path.join(DIST, 'sw.js'), sw);
-fs.writeFileSync(path.join(DIST, '.nojekyll'), '');
 
 const lessons = modules.reduce((a, m) => a + m.lessons.length, 0), cards = modules.reduce((a, m) => a + m.cards.length, 0), qs = modules.reduce((a, m) => a + m.quiz.length, 0), sc = modules.reduce((a, m) => a + (m.scenarios || []).length, 0);
 log(`\nbuild ${BUILD} · ${modules.length} modules · ${lessons} lessons · ${cards} cards · ${qs} questions · ${sc} scenarios · ${reference.length} sheets · content.js ${(finalContentJS.length / 1024).toFixed(0)} KB${problems ? ` · ${problems} file(s) skipped` : ''}`);

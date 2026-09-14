@@ -32,7 +32,7 @@ tools/
   build.mjs            bundles content + app into dist/ (node tools/build.mjs [--strict])
   icons.mjs            generates the PNG/SVG icons with no dependencies
   serve.mjs            local static server for dist/ (node tools/serve.mjs 9230)
-  deploy.mjs           builds and force-pushes dist/ to the gh-pages branch
+  deploy.mjs           builds and ships dist/ to the serving host over SSH
 ```
 
 ## Working on it
@@ -47,10 +47,10 @@ Content is plain JSON in a documented markdown subset. To add a module: write `c
 
 ## Deploy
 
-GitHub Pages serves the `gh-pages` branch. Deploying is one command with a token that can push to the repo:
+The app is served from the homelab over the tailnet, so the iPad reaches it anywhere Tailscale is on:
 
 ```
-GH_TOKEN=... node tools/deploy.mjs
+node tools/deploy.mjs            # build, ship dist/ to the host, swap it live
 ```
 
-It builds, commits `dist/` as a single snapshot, and force-pushes it to `gh-pages`. Source stays on `main`; the built branch is disposable. The site is live at https://jose0213.github.io/rounds/ within about a minute.
+On the host, `tools/serve.mjs` runs as a user service on port 9230 and `tailscale serve` fronts it with HTTPS at `https://nova.taild8324f.ts.net/`. The service worker needs that HTTPS origin; plain LAN access over HTTP works for reading but not for the home-screen install or offline mode.

@@ -601,5 +601,213 @@
     { "id": "emt-medical-q035", "q": "A 68-year-old with a productive cough has a temperature of 38.6 C, heart rate 112, respiratory rate 24, and blood pressure 96/58, and is more confused than her baseline. What should you do?", "choices": ["Transport routinely as a respiratory infection", "Withhold notification until a blood pressure under 90 is documented", "Treat only the confusion and request a psychiatric evaluation", "Call a sepsis alert, support oxygenation, keep her warm, and notify the hospital early"], "answer": 3, "why": "She has a suspected infection plus fever, heart rate over 90, respiratory rate over 20, and altered mental status, which is well past the two-criteria threshold. Early notification is the intervention, because it moves antibiotics and fluids forward by critical minutes.", "lesson": "emt-medical-l10", "difficulty": 2 },
     { "id": "emt-medical-q036", "q": "A dialysis patient missed two sessions and now has shortness of breath, crackles in both lungs, swollen legs, and generalized weakness. Beyond fluid overload, what should also concern you?", "choices": ["Hyperkalemia, which can cause lethal cardiac rhythms", "Hypoglycemia from missed meals", "Dehydration from fluid restriction", "Hypothermia from the dialysis circuit"], "answer": 0, "why": "Without dialysis, potassium accumulates and causes weakness and dangerous dysrhythmias, which is why missed sessions are a cardiac emergency and not just a breathing problem. Fluid overload is why he is wet, and dehydration is the opposite of his problem.", "lesson": "emt-medical-l10", "difficulty": 2 }
   ],
-  "scenarios": []
+  "scenarios": [
+    {
+      "id": "emt-medical-s01",
+      "title": "Dispatched: allergic reaction at a restaurant",
+      "setting": "field",
+      "intro": "It is 1920 on a Friday. Dispatch sends you to a busy Thai restaurant for a woman having an allergic reaction. A manager waves you toward a back table where a group of six is standing around one seated woman.\n\nHer friend meets you at the door and says she ordered something she thought was safe and took two bites about ten minutes ago. She has a peanut allergy. Her purse is on the table and the friend says \"I think she has one of those pens in there.\"\n\nThe closest ED is `9 minutes` away. ALS is available and about `6 minutes` out.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "She is `29`, sitting forward, flushed, with raised red welts across her chest and neck. She is scratching her arms, coughing between sentences, and says her throat feels \"thick.\" She just vomited into a napkin. She can still speak in short sentences.",
+          "vitals": { "hr": 124, "bp": "104/62", "rr": 26, "spo2": 94 },
+          "choices": [
+            { "text": "Call it anaphylaxis now: skin, respiratory, and gastrointestinal involvement after a known allergen", "next": "s2", "feedback": "Correct. Two or more systems after a likely exposure is the definition, and she has three. Her blood pressure being 104 systolic does not change that, and waiting for it to fall is waiting too long.", "score": 1 },
+            { "text": "Call it a moderate allergic reaction and give oxygen while you watch her", "next": "s2", "feedback": "Hives alone would be an allergic reaction. Hives plus throat tightness plus vomiting is systemic, and the drug that treats it is not oxygen.", "score": -1 },
+            { "text": "Ask her to describe her symptoms in more detail before deciding", "next": "s2", "feedback": "You already have what you need, and every sentence she speaks is costing her air. History gathering continues while treatment starts, not instead of it.", "score": -1 },
+            { "text": "Get a full set of vitals and lung sounds first, then decide", "next": "s2", "feedback": "Reasonable instinct, and lung sounds will be useful. But the decision to give epinephrine is made on the pattern, not on the numbers, and you already have the pattern.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "Her friend finds an unexpired epinephrine auto-injector labeled `0.3 mg` in the purse. Her throat tightness is worsening and you can now hear a high-pitched sound when she breathes in. What do you do?",
+          "choices": [
+            { "text": "Give the 0.3 mg auto-injector intramuscularly into the outer middle third of her thigh", "next": "s3", "feedback": "Correct. Stridor means the airway is swelling, and epinephrine is the only drug that reverses swelling, bronchospasm, and vasodilation at once. The thigh gives the fastest peak level, about 8 minutes, and it works through clothing.", "score": 1 },
+            { "text": "Give the auto-injector into the deltoid because her sleeve is already rolled up", "next": "s3", "feedback": "The drug is right and the route is right, but the deltoid absorbs more slowly than the vastus lateralis. The auto-injector goes through jeans without trouble, so convenience is not a reason to pick the arm.", "score": 0 },
+            { "text": "Give an antihistamine first and hold the epinephrine in case she worsens", "next": "s3", "feedback": "Diphenhydramine handles itching. It does nothing for laryngeal swelling or a falling blood pressure, and giving it instead of epinephrine appears in nearly every review of anaphylaxis deaths.", "score": -1 },
+            { "text": "Give albuterol by nebulizer for the airway sound and reassess in 5 minutes", "next": "s3", "feedback": "That sound is stridor from swelling in the upper airway, not a wheeze from the lower airway, and albuterol does not shrink swollen tissue. Albuterol has a role here, but only after the epinephrine.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "You give the epinephrine at `1927` into the left lateral thigh. She is now in the ambulance on oxygen. At `1932` the hives are slightly less angry but she is still stridorous, still coughing, and her pressure has dropped. She is becoming quieter.",
+          "vitals": { "hr": 138, "bp": "84/48", "rr": 30, "spo2": 91 },
+          "choices": [
+            { "text": "Lay her supine with the legs elevated and prepare a second dose of epinephrine per protocol", "next": "s4", "feedback": "Correct. This is distributive shock, and unlike trauma, leg elevation genuinely helps here. Epinephrine can be repeated at 5 to 15 minutes when symptoms persist, and a falling pressure with continued stridor is exactly that situation.", "score": 1 },
+            { "text": "Hold further epinephrine because her heart rate is already 138", "next": "s4", "feedback": "Tachycardia is the expected effect of the drug and of the shock itself. Withholding epinephrine from a hypotensive stridorous patient because of a fast pulse is how this call goes wrong.", "score": -1 },
+            { "text": "Sit her fully upright since she says it is easier to breathe that way", "next": "s4", "feedback": "Upright helps breathing but worsens brain perfusion at a systolic of 84. A compromise of semi-recumbent with the legs up is better, and the real answer is the second dose.", "score": 0 },
+            { "text": "Give albuterol and continue to the hospital without further epinephrine", "next": "s4", "feedback": "Albuterol is a reasonable adjunct for persistent bronchospasm but it does nothing for her blood pressure or for upper airway swelling. She needs the second epinephrine dose.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "You give a second dose of epinephrine at `1934`. Within four minutes her stridor resolves, the hives are fading, and she is talking normally. She says she feels much better and asks whether she really needs to go to the hospital, since she is supposed to fly out in the morning.",
+          "vitals": { "hr": 116, "bp": "112/70", "rr": 20, "spo2": 98 },
+          "choices": [
+            { "text": "Explain the biphasic risk and strongly encourage transport, documenting carefully if she still refuses", "next": "s5", "feedback": "Correct. Up to 20 percent of patients get a second wave, usually within 8 hours, while epinephrine lasts only 10 to 20 minutes. Naming that specific risk is what usually changes the answer.", "score": 1 },
+            { "text": "Accept the refusal since two doses of epinephrine have clearly worked", "next": "s5", "feedback": "The drug working is not the same as the reaction being over. Mast cells can release a second wave hours later, by which time she will be alone at home.", "score": -1 },
+            { "text": "Tell her she is legally required to be transported", "next": "s5", "feedback": "She is alert, oriented, and has the right to refuse. Threatening her destroys the only thing that will actually get her in the truck, which is trust.", "score": -1 },
+            { "text": "Have her take an antihistamine and follow up with her allergist tomorrow", "next": "s5", "feedback": "An antihistamine does not prevent a biphasic reaction, and tomorrow is well past the window in which the second wave usually happens.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "She agrees to go. On the `9`-minute ride she stays stable. What belongs in your radio report and your handoff?",
+          "choices": [
+            { "text": "Allergen, time of exposure, systems involved, both epinephrine doses with times and site, and the response to each", "next": "end", "feedback": "Correct. The two epinephrine times are what the ED uses to decide her observation period, and the systems involved justify the anaphylaxis diagnosis rather than an allergic reaction.", "score": 1 },
+            { "text": "Just say allergic reaction, treated with epinephrine, now stable", "next": "end", "feedback": "Too thin. Without the times and the doses, the ED cannot judge how long she needs to be watched or whether she is already in a rebound.", "score": 0 },
+            { "text": "Report her current vital signs only, since she is now improved", "next": "end", "feedback": "Her current numbers are the least informative part of this call. What matters clinically is how sick she was and what it took to reverse it.", "score": -1 },
+            { "text": "Report that she initially refused transport and changed her mind", "next": "end", "feedback": "Worth documenting, but it is not the clinical information the receiving team needs to plan her observation and her discharge prescription.", "score": -1 }
+          ]
+        }
+      ],
+      "debrief": "The pattern: **two systems, or hypotension after exposure, equals anaphylaxis**, and the answer is epinephrine intramuscularly in the lateral thigh. She had skin, respiratory, and gastrointestinal involvement before her pressure ever dropped, which was the moment to treat.\n\nWatch what her vitals did after the first dose. The hives faded slightly but the systolic fell from `104` to `84` and the stridor persisted. Partial improvement is not improvement, and a second dose at `5–15 minutes` is expected, not exceptional. Tachycardia is never the reason to withhold it.\n\nStridor and wheeze are different problems. Stridor is upper airway swelling and needs epinephrine. Wheeze is lower airway constriction, where albuterol helps — after the epinephrine, never instead.\n\nFinally, the refusal. Epinephrine lasts `10–20 minutes`; a biphasic reaction can arrive up to `8 hours` later. Naming that number is what moves patients."
+    },
+    {
+      "id": "emt-medical-s02",
+      "title": "Dispatched: 74F, possible stroke",
+      "setting": "field",
+      "intro": "You are dispatched at 0712 to a private residence for a woman who \"can't talk right.\" Her daughter called from the kitchen and is waiting at the door.\n\nYour system has three destination options: a community hospital `7 minutes` away with no stroke designation, a primary stroke center `15 minutes` away that gives thrombolytics, and a comprehensive stroke center `29 minutes` away that also performs thrombectomy.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "She is `74`, seated at the kitchen table, awake and looking frightened. Her words come out slurred and partly garbled. The right side of her mouth droops. Her daughter says she came downstairs like this about `15 minutes` ago. What is the first thing you do?",
+          "vitals": { "hr": 88, "bp": "178/94", "rr": 16, "spo2": 97 },
+          "choices": [
+            { "text": "Give aspirin, since most strokes are caused by clots", "next": "s2", "feedback": "No. You cannot tell an ischemic stroke from a hemorrhagic one in the field, and aspirin given into a brain bleed makes it worse. Aspirin is for chest pain, not stroke.", "score": -1 },
+            { "text": "Run a stroke scale and check a blood glucose", "next": "s2", "feedback": "Correct. The stroke scale confirms the pattern and the glucose rules out the one mimic that reverses in minutes. Both take under a minute and both change what happens next.", "score": 1 },
+            { "text": "Apply oxygen by non-rebreather at 15 lpm to protect the brain", "next": "s2", "feedback": "Her saturation is 97 percent. Oxygen above a normal saturation does not help stroke patients and may harm them. Oxygen is indicated only under 94 percent.", "score": -1 },
+            { "text": "Lower her blood pressure by having her lie flat and relax", "next": "s2", "feedback": "Do not chase a high blood pressure in a stroke. That pressure is often the body pushing blood past an obstruction, and dropping it can extend the injury.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "Glucose reads `112 mg/dL`. Run the scale. Her smile is asymmetric with the right side lagging. Asked to hold both arms out with eyes closed, her right arm drifts down within `6 seconds`. She cannot repeat \"you can't teach an old dog new tricks\" clearly. She also says the room is spinning and she sees double.",
+          "choices": [
+            { "text": "Three abnormal Cincinnati findings plus balance and vision changes; this is a stroke and a BE-FAST positive", "next": "s3", "feedback": "Correct. Any one abnormal Cincinnati item is about a 72 percent probability; she has all three. The vertigo and double vision are the BE and the E, which point toward the posterior circulation.", "score": 1 },
+            { "text": "The dizziness and double vision suggest an inner ear problem rather than a stroke", "next": "s3", "feedback": "That is exactly the trap BE-FAST was created to close. Posterior circulation strokes present with balance and vision complaints and get written off as vertigo.", "score": -1 },
+            { "text": "Only the speech finding counts, since arm drift can be from arthritis", "next": "s3", "feedback": "Drift within 10 seconds in a patient with a matching facial droop is a neurologic finding, not a joint problem. Discounting items one at a time is how strokes get downgraded.", "score": -1 },
+            { "text": "It is a stroke, but the glucose of 112 means you should still consider a metabolic cause", "next": "s3", "feedback": "Keeping an open mind is fine, but 112 is a normal glucose and it has already done its job by excluding hypoglycemia. Move on to the clock and the destination.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "The daughter says she found her this way at `0655`. You need the last known well time. What do you ask?",
+          "choices": [
+            { "text": "Record 0655 as the last known well, since that is when the symptoms were discovered", "next": "s4", "feedback": "That is the discovery time, not the last known well. Using it could wrongly place her inside a treatment window she is not eligible for, and thrombolytics carry real bleeding risk.", "score": -1 },
+            { "text": "Ask who last saw or spoke with her when she was completely normal, and at what time", "next": "s4", "feedback": "Correct. Last known well is the last moment anyone observed her at baseline. Also get a phone number for that witness, because the neurologist will need to call them.", "score": 1 },
+            { "text": "Ask the patient herself when the symptoms started", "next": "s4", "feedback": "Worth trying, and sometimes it works. But she is aphasic and may have anosognosia, so a stroke patient is rarely a reliable historian about her own onset.", "score": 0 },
+            { "text": "Record the last known well as unknown and let the hospital sort it out", "next": "s4", "feedback": "An unknown last known well can disqualify her from treatment. Two minutes of questions in the kitchen is far more valuable than anything else you will do on this call.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "The daughter says they spoke on the phone at `2230` last night and her mother was completely normal, laughing about a TV show. Nobody saw her after that. It is now `0720`.",
+          "vitals": { "hr": 90, "bp": "182/96", "rr": 16, "spo2": 97, "gcs": 14 },
+          "choices": [
+            { "text": "Last known well 2230, which is about 8 hours 50 minutes ago; outside the thrombolytic window but possibly inside the thrombectomy window", "next": "s5", "feedback": "Correct. Past 4.5 hours she cannot receive clot-busting drugs based on a plain last known well, but thrombectomy for a large-vessel occlusion can be considered out to 24 hours. That distinction drives the destination.", "score": 1 },
+            { "text": "Last known well 0655, so she is well inside the 4.5-hour window", "next": "s5", "feedback": "That is the discovery time again. The correct clock started at 2230 when she was last seen normal.", "score": -1 },
+            { "text": "Last known well 2230, so nothing can be done and she can go to the closest hospital", "next": "s5", "feedback": "Being outside the drug window is not the end of the options. Thrombectomy extends to 24 hours for selected large-vessel strokes, which is exactly why the destination still matters.", "score": -1 },
+            { "text": "Split the difference and call it about 0300", "next": "s5", "feedback": "Never invent a time. A neurologist will make a treatment decision with real bleeding risk based on the number you hand over.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "Choose a destination and get her packaged. She is asking for water because her mouth is dry.",
+          "choices": [
+            { "text": "Comprehensive stroke center 29 minutes away, head elevated 30 degrees, nothing by mouth, early stroke alert with the 2230 last known well and the daughter's phone number", "next": "s6", "feedback": "Correct. She is outside the drug window but potentially a thrombectomy candidate, and only the comprehensive center can do that. Nothing by mouth because stroke impairs swallowing, and the early alert assembles the team before you arrive.", "score": 1 },
+            { "text": "Community hospital 7 minutes away, because speed matters most in stroke", "next": "s6", "feedback": "Speed to a hospital that cannot treat her is not speed. They would have to arrange a transfer, and that costs far more than the 22 extra minutes.", "score": -1 },
+            { "text": "Primary stroke center 15 minutes away, since it is the middle option", "next": "s6", "feedback": "A defensible choice and far better than the community hospital, but a primary center gives thrombolytics she is no longer eligible for. The intervention she may qualify for lives at the comprehensive center.", "score": 0 },
+            { "text": "Comprehensive stroke center, and give her small sips of water on the way", "next": "s6", "feedback": "Right destination, wrong detail. Stroke frequently impairs swallowing, and aspiration pneumonia is a leading cause of death afterward. Nothing by mouth, sips included.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s6",
+          "prompt": "You are 5 minutes out. What goes in the stroke alert?",
+          "choices": [
+            { "text": "Age, BE-FAST findings, last known well of 2230, glucose 112, current vitals, anticoagulant history, and a callback number for the daughter", "next": "end", "feedback": "Correct. That packet lets the hospital page neurology, clear the scanner, and start the eligibility conversation before the doors open. The callback number is the part crews forget and neurologists need.", "score": 1 },
+            { "text": "Possible stroke, 74-year-old female, ETA 5 minutes", "next": "end", "feedback": "Better than nothing, but it triggers no decision. Without the last known well and the deficits, the team cannot pre-plan anything.", "score": 0 },
+            { "text": "Full head-to-toe assessment findings in narrative order", "next": "end", "feedback": "A radio report is a decision tool, not a chart. Bury the last known well inside a long narrative and it will be missed.", "score": -1 },
+            { "text": "Her blood pressure and the fact that you did not treat it", "next": "end", "feedback": "The blood pressure belongs in the report, but leading with it suggests it is the problem. The clock and the deficits are what drive the stroke pathway.", "score": -1 }
+          ]
+        }
+      ],
+      "debrief": "The pattern: **the stroke call is a clock, a glucose, and a destination**. Everything else you do on scene is secondary.\n\nThe glucose came first because hypoglycemia is the one mimic that reverses in minutes, and at `112` it was excluded in under a minute. Aspirin stayed in the bag because you cannot separate a clot from a bleed in a kitchen, and oxygen stayed off because her saturation was `97%`.\n\nLast known well was the whole case. `0655` was when she was found; `2230` was when she was last seen normal. That difference moved her from inside the `4.5-hour` thrombolytic window to outside it, and made the `24-hour` thrombectomy window the relevant one — which changed the destination from a primary to a comprehensive stroke center.\n\nTwo small details carry weight. She got nothing by mouth, because swallowing fails early in stroke and aspiration pneumonia kills survivors. And you brought the daughter's phone number, because the person who can confirm the timeline is almost never the person riding with you."
+    },
+    {
+      "id": "emt-medical-s03",
+      "title": "Dispatched: unresponsive male in a bathroom",
+      "setting": "field",
+      "intro": "At 0245 you are sent to a second-floor apartment for an unresponsive man. The caller is a roommate who says he found him on the bathroom floor and that \"he's been using again.\"\n\nPolice arrive with you. The bathroom is small, the patient is wedged between the toilet and the tub, and there is a used syringe on the edge of the sink. Your ALS unit is `8 minutes` out; the ED is `12 minutes` away.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "He is roughly `30`, cyanotic around the lips, and does not respond to his name or a trapezius pinch. His pupils are `1 mm` and do not react. His chest rises about `4` times a minute, shallow. There is a syringe on the sink and you have not yet moved him.",
+          "vitals": { "hr": 52, "rr": 4, "spo2": 74 },
+          "choices": [
+            { "text": "Give 4 mg intranasal naloxone right where he lies", "next": "s2", "feedback": "Naloxone is coming, but not first. It takes 2 to 5 minutes to work and he is hypoxic right now. Bagging fixes the thing that is actually killing him, and you cannot manage an airway in a space this tight.", "score": -1 },
+            { "text": "Ask police to secure the syringe, move him to open floor, open the airway, and begin bag-valve-mask ventilation with high-flow oxygen", "next": "s2", "feedback": "Correct. Sharps safety, then space, then oxygen. Hypoxia is what stops the heart in opioid overdose, and a bag-valve-mask works in seconds while naloxone takes minutes.", "score": 1 },
+            { "text": "Apply a non-rebreather at 15 lpm and monitor his saturation", "next": "s2", "feedback": "A mask only delivers oxygen to someone moving air. At 4 breaths a minute he is not, so the oxygen sits in the mask while his carbon dioxide climbs.", "score": -1 },
+            { "text": "Begin chest compressions because his heart rate is 52", "next": "s2", "feedback": "He has a pulse. The bradycardia is his heart responding to hypoxia, and it will correct once he is oxygenated. Compressions on a perfusing patient delay the ventilation he needs.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "He is out in the hallway on the floor. You have an oral airway in and are bagging at `10` breaths per minute with an oxygen reservoir. After `90` seconds his color is improving and the saturation is climbing. He is still not breathing on his own.",
+          "vitals": { "hr": 68, "rr": 4, "spo2": 92 },
+          "choices": [
+            { "text": "Continue bagging and give naloxone 4 mg intranasally now", "next": "s3", "feedback": "Correct. Oxygenate first, then reverse. Now that the hypoxia is corrected, naloxone restores his own respiratory drive, and you keep bagging while it takes effect over the next 2 to 5 minutes.", "score": 1 },
+            { "text": "Stop bagging now that the saturation is 92 percent and watch him", "next": "s3", "feedback": "The saturation is 92 because you are breathing for him. Stop and it falls right back. Ventilation continues until he is breathing adequately on his own.", "score": -1 },
+            { "text": "Continue bagging and wait for ALS to give naloxone intravenously", "next": "s3", "feedback": "Bagging is keeping him alive, so this is not harmful. But intranasal naloxone is within your scope and works in 2 to 5 minutes, and ALS is still 6 minutes out.", "score": 0 },
+            { "text": "Give naloxone and stop ventilating so you can see whether it worked", "next": "s3", "feedback": "Never stop ventilating to test the drug. Naloxone needs minutes, and his oxygen will fall the entire time you are waiting to see something.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "Three minutes after the naloxone he starts breathing on his own at about `14` a minute, opens his eyes, and begins to gag. He is confused, sweating, and starting to swing his arms. A moment later he vomits.",
+          "vitals": { "hr": 104, "bp": "138/82", "rr": 14, "spo2": 97 },
+          "choices": [
+            { "text": "Remove the oral airway, turn him on his side, suction, and give him verbal space while keeping hands clear", "next": "s4", "feedback": "Correct. Vomiting and agitation are expected precipitated withdrawal, and the only real danger in it is aspiration. Side position plus suction handles that, and standing clear of swinging arms handles you.", "score": 1 },
+            { "text": "Give a second dose of naloxone to fully wake him up", "next": "s4", "feedback": "You titrate naloxone to breathing, not to wakefulness. He is breathing at 14 with a saturation of 97, so more naloxone only deepens the withdrawal and the vomiting.", "score": -1 },
+            { "text": "Hold him down until he calms so he does not hurt himself", "next": "s4", "feedback": "Physical restraint of a withdrawing patient escalates the fight and puts a vomiting patient on his back. Space and calm talk work better and faster here.", "score": -1 },
+            { "text": "Leave the oral airway in place in case he becomes unresponsive again", "next": "s4", "feedback": "Understandable caution, but an awake gagging patient will not tolerate it and it will provoke more vomiting. Pull it, keep it at hand, and reassess.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "Ten minutes later he is oriented, embarrassed, and angry about being \"narcanned.\" He says he feels fine, wants to go back upstairs, and refuses transport. Police say they have no reason to hold him.",
+          "vitals": { "hr": 96, "bp": "130/78", "rr": 16, "spo2": 98 },
+          "choices": [
+            { "text": "Accept the refusal since he is oriented and his vitals are normal", "next": "s5", "feedback": "His vitals are normal because of a drug that will wear off before the opioid does. Post-naloxone refusals are a recognized way people die an hour after the ambulance leaves.", "score": -1 },
+            { "text": "Explain that naloxone lasts 30 to 90 minutes and may wear off before the opioid does, and strongly encourage transport", "next": "s5", "feedback": "Correct. Naming the specific number is what changes minds. Fentanyl in particular outlasts naloxone, and re-sedation alone in an apartment is the exact scenario to prevent.", "score": 1 },
+            { "text": "Tell him he has no choice because he was unconscious ten minutes ago", "next": "s5", "feedback": "He is alert and oriented now, so he has decision-making capacity. Arguing about authority rather than risk ends the conversation you need to have.", "score": -1 },
+            { "text": "Have the roommate agree to watch him for two hours instead of transport", "next": "s5", "feedback": "Better than leaving him alone, and worth arranging if he absolutely will not go. But a roommate cannot ventilate him, and the plan still depends on someone noticing in time.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "He agrees to be transported. Twenty minutes into a slow ride through road construction, he becomes quiet and then hard to rouse. His breathing slows and his pupils constrict again.",
+          "vitals": { "hr": 60, "rr": 6, "spo2": 88 },
+          "choices": [
+            { "text": "Resume bag-valve-mask ventilation and repeat naloxone per protocol", "next": "s6", "feedback": "Correct. This is re-sedation, exactly what you warned him about. The sequence does not change: ventilate first, then reverse, and notify the receiving hospital that he required a repeat dose.", "score": 1 },
+            { "text": "Give naloxone again and continue to the hospital without ventilating", "next": "s6", "feedback": "Same error as the first call, just later. Naloxone takes minutes and he is hypoxic at 88 percent now. Ventilation comes first every time.", "score": -1 },
+            { "text": "Assume he is simply asleep after a long night and let him rest", "next": "s6", "feedback": "Pinpoint pupils with a respiratory rate of 6 and a falling saturation is not sleep. That combination is the opioid triad returning.", "score": -1 },
+            { "text": "Apply a non-rebreather and increase your driving speed", "next": "s6", "feedback": "Oxygen by mask cannot help a patient breathing 6 times a minute, and driving faster does not treat him. He needs your hands on a bag.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s6",
+          "prompt": "He responds again and is breathing adequately on arrival. What belongs in your handoff?",
+          "choices": [
+            { "text": "Total naloxone dose and route, the times of each dose, the fact that he re-sedated 20 minutes after the first, and how long you ventilated", "next": "end", "feedback": "Correct. Re-sedation en route is the single most important thing the ED needs to know, because it tells them he needs extended observation and possibly an infusion rather than a quick discharge.", "score": 1 },
+            { "text": "Opioid overdose, given naloxone, now awake", "next": "end", "feedback": "Incomplete. Without the re-sedation history, the ED may treat him as a routine reversal and discharge him into the same problem.", "score": 0 },
+            { "text": "The syringe found on the sink and the roommate's statement about drug use", "next": "end", "feedback": "Useful context, but it is not the clinical fact that changes his disposition. The repeat dose and the re-sedation are.", "score": -1 },
+            { "text": "His current vital signs only, since he is now stable", "next": "end", "feedback": "His current numbers describe a patient who looks fine, which is exactly the impression that gets a re-sedating patient discharged too soon.", "score": -1 }
+          ]
+        }
+      ],
+      "debrief": "The pattern: **ventilate first, then reverse**. Opioids kill by switching off the drive to breathe, and the death is a hypoxic one. A bag-valve-mask works in seconds; naloxone needs `2–5 minutes`. Giving the drug first and watching is the most common error on this call, and his bradycardia of `52` was hypoxia, not a rhythm problem — it corrected with oxygen alone.\n\nTitrate to breathing, not to wakefulness. Once he was moving air at `14` a minute with a saturation of `97%`, more naloxone would only have bought more vomiting and more fighting. Expect the withdrawal, plan for the emesis, and keep your body out of the arc of an arm.\n\nRe-sedation is the whole reason this patient gets transported. Naloxone lasts `30–90 minutes`, which is shorter than most opioids and far shorter than fentanyl analogs and methadone. He proved it twenty minutes into the ride.\n\nThat is also what makes the handoff matter. \"Overdose, got naloxone, now awake\" describes a discharge. \"Required a repeat dose and re-sedated en route\" describes an observation bed."
+    }
+  ]
 }

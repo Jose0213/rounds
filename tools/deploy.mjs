@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-// Builds dist/ and force-pushes it to the gh-pages branch, which GitHub Pages serves.
-// Auth: set GH_TOKEN (a token with repo scope) or have a credential helper that can push.
-// Usage: GH_TOKEN=... node tools/deploy.mjs [--strict]
+// Builds dist/ and ships it to the host that serves Rounds on the tailnet.
+// The host runs tools/serve.mjs as a user service; dist/ is swapped atomically.
+// Usage: node tools/deploy.mjs [--strict] [--host nova]
 import { execSync } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -9,24 +9,32 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DIST = path.join(ROOT, 'dist');
-const REPO = process.env.ROUNDS_REPO || 'Jose0213/rounds';
-const strict = process.argv.includes('--strict');
-const sh = (cmd, opts = {}) => execSync(cmd, { stdio: 'pipe', encoding: 'utf8', ...opts });
+const args = process.argv.slice(2);
+const strict = args.includes('--strict');
+const host = args.includes('--host') ? args[args.indexOf('--host') + 1] : (process.env.ROUNDS_HOST || 'nova');
+const remoteDir = process.env.ROUNDS_REMOTE_DIR || 'rounds';
+const sh = (cmd, opts = {}) => execSync(cmd, { stdio: 'inherit', ...opts });
 
-sh(`node "${path.join(ROOT, 'tools', 'build.mjs')}"${strict ? ' --strict' : ''}`, { stdio: 'inherit' });
+sh(`node "${path.join(ROOT, 'tools', 'build.mjs')}"${strict ? ' --strict' : ''}`);
 const build = fs.readFileSync(path.join(DIST, 'index.html'), 'utf8').match(/data-build="([a-f0-9]+)"/)?.[1] || 'unknown';
-const remote = process.env.GH_TOKEN ? `https://x-access-token:${process.env.GH_TOKEN}@github.com/${REPO}.git` : `https://github.com/${REPO}.git`;
-const git = (args) => sh(`git ${args}`, { cwd: DIST, env: { ...process.env, GIT_TERMINAL_PROMPT: '0' } });
 
-fs.rmSync(path.join(DIST, '.git'), { recursive: true, force: true });
-git('init -q -b gh-pages');
-git('config user.name "Jose Franco"');
-git('config user.email "josefranco0213@gmail.com"');
-git('add -A');
-git(`-c commit.gpgsign=false commit -q -m "Deploy build ${build}"`);
+// Ship dist/ and the server script as one tarball; swap the live dist/ in a single mv.
+const remote = [
+  `set -e`,
+  `mkdir -p ~/${remoteDir}/tools`,
+  `rm -rf ~/${remoteDir}/dist.new && mkdir -p ~/${remoteDir}/dist.new`,
+  `tar xzf - -C ~/${remoteDir}/dist.new`,
+  `mv ~/${remoteDir}/dist.new/serve.mjs ~/${remoteDir}/tools/serve.mjs`,
+  `rm -rf ~/${remoteDir}/dist.old`,
+  `[ -d ~/${remoteDir}/dist ] && mv ~/${remoteDir}/dist ~/${remoteDir}/dist.old || true`,
+  `mv ~/${remoteDir}/dist.new ~/${remoteDir}/dist`,
+  `rm -rf ~/${remoteDir}/dist.old`,
+  `ls ~/${remoteDir}/dist/content.js >/dev/null`,
+].join(' && ');
+fs.copyFileSync(path.join(ROOT, 'tools', 'serve.mjs'), path.join(DIST, 'serve.mjs'));
 try {
-  git(`push -q --force "${remote}" gh-pages:gh-pages`);
+  sh(`tar czf - -C "${DIST}" . | ssh -o BatchMode=yes ${host} '${remote}'`, { shell: process.platform === 'win32' ? 'bash.exe' : '/bin/sh' });
 } finally {
-  fs.rmSync(path.join(DIST, '.git'), { recursive: true, force: true });
+  fs.rmSync(path.join(DIST, 'serve.mjs'), { force: true });
 }
-console.log(`\ndeployed build ${build} → https://${REPO.split('/')[0].toLowerCase()}.github.io/${REPO.split('/')[1]}/  (Pages usually serves it within a minute)`);
+console.log(`deployed build ${build} to ${host}`);

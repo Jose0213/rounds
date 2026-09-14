@@ -1,0 +1,1495 @@
+{
+  "schema": 1,
+  "id": "pa-reasoning",
+  "track": "prepa",
+  "title": "Clinical Reasoning",
+  "short": "Reasoning",
+  "summary": "How clinicians turn a complaint into a diagnosis and a disposition: illness scripts and the biases that break them, the history and physical, the differential, what a test actually proves, the decision rules, the note, and the handoff.",
+  "lessons": [
+    {
+      "id": "pa-reasoning-l01",
+      "title": "How clinicians actually think",
+      "minutes": 7,
+      "body": "## The expert does not run a checklist\n\nWatch an experienced provider walk into a room. In four seconds, before a single question, they have already sorted the patient into sick or not sick and pulled up two or three diseases worth thinking about. They are not being sloppy. They are matching what they see against thousands of stored patterns.\n\nPsychologists call that fast, automatic matching **System 1**. The slow, deliberate, one-fact-at-a-time kind of thinking is **System 2** (analytic reasoning). Every clinician runs both. The skill is knowing which one you are in.\n\n## Illness scripts are the patterns\n\nThe stored pattern has a name: an **illness script**. A script has three parts.\n\n1. **Who gets it** (epidemiology and risk factors). \"A 55-year-old smoker with diabetes and high blood pressure.\"\n2. **What it does to the body and how fast** (mechanism and time course). \"A plaque ruptures, a coronary artery clots, pain builds over minutes and then stays.\"\n3. **What it looks like** (key features, including the findings that should be there and the ones that should not). \"Pressure, brought on by exertion, radiates to jaw or left arm, with sweating and nausea. Not sharp, not reproduced by pressing on the chest.\"\n\nA first-year student carries textbook lists. A clinician carries scripts. You build scripts by seeing patients and then reading about the disease the same day, while the face is still in your head.\n\n> **Key:** A differential diagnosis is a competition between illness scripts. The more complete your scripts, the faster and safer the match.\n\n## Where each system fails\n\nSystem 1 fails on the atypical presentation: the diabetic woman whose heart attack shows up only as nausea and fatigue, the 82-year-old whose pneumonia shows up as confusion and a fall. It also fails when you are tired, rushed, interrupted, or emotionally loaded about the patient.\n\nSystem 2 fails differently. It is slow, it burns attention, and nobody can run it on every patient in a department with 40 people waiting. Used on everything, it turns into indecision and a shotgun workup.\n\nThe working rule: **pattern-match first, then deliberately verify.** Let the fast system generate candidates, then spend 30 seconds of slow thinking making sure the dangerous alternatives do not fit.\n\n## Sick or not sick\n\nBefore any diagnosis there is a cruder and more important judgment: is this patient about to get worse? That judgment is the **gestalt**, and it is built from things you can name out loud.\n\n- **The doorway impression.** Color, work of breathing, posture, whether they look at you when you come in, whether they can finish a sentence. A patient sitting bolt upright leaning on their hands (tripoding) is in trouble before anyone speaks.\n- **The vitals trend, not the single set.** A heart rate that goes `96`, then `108`, then `124` over an hour is a story. One reading is a snapshot.\n- **The mismatch.** Pain far out of proportion to the exam. Normal-looking numbers on a terrible-looking patient. A blood pressure of `118/70` that looks fine until you learn this patient lives at `170/95`.\n\n> **On shift:** \"Something is wrong with this guy\" is data, not a mood. Experienced staff are reading skin, respiratory rate, and posture in seconds. When you get that feeling, say it out loud to a nurse or provider, and say what triggered it.\n\n## Building the gestalt on purpose\n\nGestalt is pattern recognition, so it grows the same way: repetitions plus feedback. Two habits do most of the work.\n\nKeep a **case log**. After a shift, write five lines on each interesting patient, with no names, no dates of birth, no identifiers: chief complaint, what was ordered, what it showed, where the patient went, one thing learned. Fifty entries is a real education, and cases you can discuss in specifics are also what turns a PA school interview answer from generic into concrete.\n\nAsk one question per shift: **\"What are you worried about with this patient?\"** You are not asking for the diagnosis. You are asking which dangerous thing the provider is ruling out, and that is where the reasoning actually lives.",
+      "keyPoints": [
+        "Fast pattern recognition (System 1) and slow analytic reasoning (System 2) both run; the skill is knowing which one you are in.",
+        "An illness script is who gets it, what it does and how fast, and what it looks like.",
+        "Pattern-match first, then deliberately verify that the dangerous alternatives do not fit.",
+        "Sick or not sick comes from the doorway impression, the vitals trend, and mismatches, and it is worth saying out loud.",
+        "Build judgment deliberately with a de-identified case log and by asking what the provider is worried about."
+      ],
+      "checks": [
+        {
+          "q": "A provider glances at a patient from the doorway and immediately says, get a 12-lead and a line. What kind of reasoning is that, and what is its main weakness?",
+          "choices": [
+            "System 1 pattern recognition; it fails on atypical presentations",
+            "System 2 analytic reasoning; it fails because it is too slow to use",
+            "System 1 pattern recognition; it fails because it ignores vital signs",
+            "System 2 analytic reasoning; it fails only in elderly patients"
+          ],
+          "answer": 0,
+          "why": "Instant recognition from a glance is System 1 pattern matching. Its weakness is the presentation that does not match the stored script, such as the diabetic or elderly patient with a silent heart attack. System 2 is the slow, deliberate mode, safe but too expensive to run on everyone."
+        },
+        {
+          "q": "Which description best captures an illness script?",
+          "choices": [
+            "A list of every disease that can cause a given symptom",
+            "The fixed order in which a physical exam is performed",
+            "Who gets the disease, what it does to the body and how fast, and what it looks like",
+            "The sensitivity and specificity of the tests used to diagnose it"
+          ],
+          "answer": 2,
+          "why": "A script bundles epidemiology and risk, mechanism and time course, and the key positive and negative features. A bare list of causes is a differential, not a script, and test characteristics only matter after a script has generated a candidate."
+        },
+        {
+          "q": "Serial rechecks show a heart rate of 96, then 108, then 124, while the blood pressure holds at 122/78. What is the most reasonable interpretation?",
+          "choices": [
+            "Normal variation, since only the blood pressure matters",
+            "A rising trend consistent with early compensation, which should be reported",
+            "Monitor artifact, which is common at higher rates",
+            "Nothing to report until the systolic pressure drops below 90"
+          ],
+          "answer": 1,
+          "why": "Trends beat snapshots. A climbing heart rate with a still-normal pressure is what early compensated shock looks like, because the body defends pressure by speeding the heart. By the time the systolic falls, compensation has already failed, which is exactly the delay that trend-watching exists to prevent."
+        }
+      ]
+    },
+    {
+      "id": "pa-reasoning-l02",
+      "title": "The biases that hurt patients, and the habits that stop them",
+      "minutes": 7,
+      "body": "## A bias is a shortcut that misfired\n\nDiagnostic error is usually not caused by not knowing the disease. Reviews of missed diagnoses keep finding the same thing: the clinician knew the disease existed and did not think of it, or thought of it and dropped it too early. The shortcuts that make you fast are the same ones that make you wrong.\n\nFive show up constantly in an emergency department.\n\n### Anchoring\n\nYou fix on the first piece of information, and everything afterward gets read through it.\n\nExample: triage writes \"anxiety attack.\" The patient is 34, panting, tingling in both hands. Everyone treats anxiety. Nobody asks about the flight from Los Angeles last night or the calf that has been sore for three days. It is a pulmonary embolism, a clot in the lung.\n\n### Premature closure\n\nYou stop looking once you have an answer that fits. It is anchoring's finisher.\n\nExample: flank pain with blood in the urine in a patient with known kidney stones, so it is a stone. The scan that nobody ordered would have shown a leaking abdominal aortic aneurysm, which produces flank pain and blood in the urine in a 68-year-old smoker.\n\n### Availability\n\nWhatever you have seen most recently or most vividly feels most likely.\n\nExample: you helped with two septic pneumonias this week, so the next febrile cougher gets the same workup and nobody looks at the leg with the spreading red margin. Availability also runs backward: you have never personally seen an aortic dissection, so it does not occur to you.\n\n### Diagnosis momentum\n\nA label picked up early hardens into fact as it is handed along, from family to EMS to triage to the tech to the provider to the consultant, with nobody re-examining the original evidence.\n\nExample: \"seizure\" from a frightened spouse becomes \"seizure\" on the run sheet, becomes \"post-ictal\" at triage, becomes a neurology consult. The rhythm strip later shows the episode was a run of ventricular tachycardia.\n\n### The frequent flyer bias\n\nAlso called attribution bias: the patient's identity or history explains the complaint away. It gets applied to people with substance use disorder, psychiatric diagnoses, homelessness, chronic pain, or a thick chart of prior visits.\n\nExample: a man who comes in intoxicated twice a month arrives \"drunk again\" and gets a hallway bed to sleep it off. The head strike he took four hours ago has become a subdural hematoma. These patients carry more disease than average, not less, which is part of why they keep coming back.\n\n> **Trap:** The bias is not being rude to the patient. It is quietly lowering your threshold of evidence for the boring explanation because you already decided who this person is.\n\n## Three habits that actually work\n\n**The diagnostic time-out.** Before you commit, before the disposition, before the handoff, stop for 20 seconds and answer three questions: what is my working diagnosis, what does not fit, and what is the worst thing this could be.\n\n**\"What else could this be?\"** Say it out loud and force at least two alternatives. Forcing alternatives is the debiasing technique that most consistently beats simply trying harder or being told to be careful.\n\n**Worst-first.** The emergency mindset is not \"what does this patient probably have.\" It is \"what could kill this patient in the next few hours, and have I excluded it?\" Chest pain gets acute coronary syndrome, pulmonary embolism, aortic dissection, tension pneumothorax, tamponade, and esophageal rupture considered before anyone says reflux. You name the likely diagnosis after the killers are cleared, not instead of clearing them.\n\n> **Key:** Ruling out is a verb with evidence attached. \"Pulmonary embolism considered and excluded by PERC\" is reasoning. \"Probably not a PE\" is a hope.",
+      "keyPoints": [
+        "Most diagnostic error is a thinking failure, not a knowledge failure.",
+        "Anchoring fixes you on the first fact; premature closure stops the search as soon as something fits.",
+        "Availability overweights what you saw recently; diagnosis momentum lets an early label harden as it is handed along.",
+        "Attribution or frequent-flyer bias lowers the evidence threshold for patients with thick charts, who carry more disease, not less.",
+        "Debias with a 20-second diagnostic time-out, forcing two alternatives, and ruling out killers before naming the likely diagnosis."
+      ],
+      "checks": [
+        {
+          "q": "A 61-year-old woman with epigastric burning is labeled likely gastritis at triage, treated with antacids, and nearly discharged before an ECG shows an inferior STEMI. Which pair of biases best describes what happened?",
+          "choices": [
+            "Anchoring and premature closure",
+            "Availability and outcome bias",
+            "Attribution bias and the sunk cost fallacy",
+            "Base-rate neglect and hindsight bias"
+          ],
+          "answer": 0,
+          "why": "The first label set the frame, which is anchoring, and the search stopped once an explanation seemed to fit, which is premature closure. Availability is over-weighting what you have seen recently, attribution bias explains a complaint away by who the patient is, and outcome and hindsight biases only operate after the result is known."
+        },
+        {
+          "q": "Which single question is the strongest bedside debiasing tool?",
+          "choices": [
+            "Have I seen a case like this before?",
+            "What else could this be?",
+            "What is the most common cause of this symptom?",
+            "Does the patient agree with my diagnosis?"
+          ],
+          "answer": 1,
+          "why": "Forcing alternatives is the technique that most reliably reduces diagnostic error. Asking whether you have seen it before recruits availability, and reaching for the most common cause reinforces the very pattern you are trying to test. Patient agreement is not a check on accuracy."
+        },
+        {
+          "q": "What does the worst-first mindset require before a clinician names the likely diagnosis?",
+          "choices": [
+            "A complete review of systems on every patient",
+            "Consultant agreement with the working diagnosis",
+            "That the dangerous causes have been actively considered and excluded with stated evidence",
+            "That every available laboratory test has resulted"
+          ],
+          "answer": 2,
+          "why": "Worst-first means the killers are addressed first with evidence attached, such as a decision rule or a test, and the likely diagnosis is named afterward. A full review of systems, consultant agreement, and a complete lab panel are none of them the same as actively excluding a specific dangerous disease."
+        }
+      ]
+    },
+    {
+      "id": "pa-reasoning-l03",
+      "title": "The history and physical, start to finish",
+      "minutes": 8,
+      "body": "## The history makes the diagnosis\n\nStudies in general medical clinics have found the history alone points to the correct diagnosis in roughly 70 to 80 percent of cases, with the exam and the tests mostly confirming it. The history is the highest-yield test in medicine and it is free.\n\nIt has a fixed order, and the order is the same everywhere so that anyone can find any piece of it in three seconds.\n\n## Chief complaint\n\nOne line, in the patient's own words, with a duration. \"Chest pressure for 2 hours.\" Not \"rule out MI,\" which is your hypothesis, not their complaint. Quoting preserves information, because \"my chest is tight\" and \"my chest is ripping\" point to different diseases.\n\n## History of present illness\n\nTwo mnemonics, same job. **OPQRST** is built for pain:\n\n- **O**nset: what they were doing when it started, sudden or gradual\n- **P**rovocation and palliation: what makes it worse, what makes it better\n- **Q**uality: the patient's own adjective, such as pressure, sharp, burning, tearing\n- **R**adiation: where else it goes\n- **S**everity: `0` to `10`, now and at its worst\n- **T**iming: constant or in waves, how long, ever had it before\n\n**OLDCARTS** covers non-pain complaints: Onset, Location, Duration, Character, Aggravating and Alleviating factors, Radiation, Timing, Severity.\n\nThen the part beginners skip: **pertinent positives and negatives**. These are the symptoms you asked about because of your differential, recorded whether present or absent. For chest pain: \"Positive for sweating and nausea. Denies fever, cough, leg swelling, or tearing pain to the back.\"\n\n> **Key:** A pertinent negative is proof you thought about a disease. A note with no negatives reads like a note with no differential.\n\n## The rest of the history\n\n- **Past medical history.** Diagnoses with dates and severity. \"Diabetes\" is weak. \"Type 2 diabetes since 2014, on insulin, last A1c `9.1`\" is useful.\n- **Past surgical history.** What and when. Prior abdominal surgery makes bowel obstruction from adhesions live. Prior bypass or stents changes chest pain pretest probability immediately.\n- **Medications.** Name, dose, and whether they are actually taking them. Blood thinners, beta blockers (which blunt the tachycardia you rely on), steroids, insulin, and immunosuppressants all change the workup.\n- **Allergies with the reaction.** \"Penicillin, hives\" and \"penicillin, upset stomach\" are different facts. One is an allergy, one is a side effect.\n- **Family history,** only what matters here: first-degree relatives with early heart disease (men under 55, women under 65), sudden death, aneurysm, clotting disorders, certain cancers.\n- **Social history.** Tobacco in pack-years, alcohol in drinks per day or week, drugs including route, occupation and exposures, who they live with and whether they can manage stairs, and sexual history when the complaint makes it relevant. Living situation is not small talk. It decides disposition.\n- **Review of systems.** A quick sweep of the systems you have not already covered, hunting for a symptom the patient never thought to mention. A full review is 10 or more systems; a focused one is the 2 to 4 that touch your differential.\n\n## The physical exam, in the order it is done\n\nHead to toe, so nothing gets dropped.\n\n1. **General appearance and vital signs:** distress, color, work of breathing\n2. **Head, eyes, ears, nose, throat:** pupils, mucous membranes, airway\n3. **Neck:** jugular venous distention, trachea midline, stiffness, lymph nodes\n4. **Lungs:** inspect the chest, then listen in all fields front and back\n5. **Cardiovascular:** rate, rhythm, murmurs, peripheral pulses, swelling\n6. **Abdomen:** inspect, listen before you press, then percuss and palpate, tender area last\n7. **Extremities:** pulses, swelling, calf tenderness, range of motion\n8. **Skin:** rashes, wounds, temperature, capillary refill\n9. **Neurologic:** mental status, cranial nerves, strength, sensation, coordination, gait\n10. **Back:** midline tenderness, flank tenderness\n\n## Focused versus full\n\nAn emergency history and physical is **hypothesis-driven**: chief complaint, focused history of present illness, the past history that changes management now, the few systems that matter, and the exam that confirms or excludes the killers. It can be done well in 6 minutes.\n\nA full admission history and physical is **complete**: full review of systems, full past history, full exam, because the admitting team owns the whole patient for days.\n\n> **On shift:** These are two real documents, not thorough versus lazy. The emergency note answers whether this person needs something in the next hour and where they go. The admission note answers who this person is and what the plan is for the next three days.",
+      "keyPoints": [
+        "The history alone points to the diagnosis in roughly 70 to 80 percent of cases.",
+        "Chief complaint is one line in the patient's words with a duration, never a hypothesis.",
+        "OPQRST for pain, OLDCARTS for everything else, plus pertinent positives and negatives driven by your differential.",
+        "Record allergies with the reaction, and medications with whether they are actually being taken.",
+        "The emergency H and P is hypothesis-driven and focused; the admission H and P is complete because that team owns the patient for days."
+      ],
+      "checks": [
+        {
+          "q": "Which chief complaint is written correctly?",
+          "choices": [
+            "Rule out acute coronary syndrome",
+            "Abdominal pain, possible appendicitis",
+            "My chest feels like something is sitting on it, for 3 hours",
+            "Patient is a poor historian"
+          ],
+          "answer": 2,
+          "why": "The complaint is the patient's own words plus a duration, and the adjective carries diagnostic weight. The first two are hypotheses rather than complaints, and labeling someone a poor historian records a judgment instead of information."
+        },
+        {
+          "q": "Why is the abdomen auscultated before it is palpated?",
+          "choices": [
+            "Because pressing first alters bowel sounds and makes the patient guard against the rest of the exam",
+            "Because bowel sounds are the most reliable finding in abdominal pain",
+            "Because percussion is painful and should always come last",
+            "Because the stethoscope must be warmed before contact"
+          ],
+          "answer": 0,
+          "why": "Listening first preserves unaltered bowel sounds, and saving palpation for last, with the tender area last of all, keeps the rest of the exam usable. Bowel sounds are in fact one of the weaker findings, which is exactly why you should not destroy them for nothing."
+        },
+        {
+          "q": "A patient reports that penicillin gives him an upset stomach. How should this be recorded and interpreted?",
+          "choices": [
+            "As anaphylaxis, since all penicillin reactions are treated the same way",
+            "As a side effect, documented with the reaction, which does not by itself rule out the drug class",
+            "As a true allergy requiring avoidance of every beta-lactam antibiotic",
+            "It does not need to be documented at all"
+          ],
+          "answer": 1,
+          "why": "Gastrointestinal upset is a predictable side effect, not an immune reaction; hives, swelling, or trouble breathing would be an allergy. Recording the reaction rather than only the word is what keeps a whole antibiotic class available, and it still belongs in the chart."
+        }
+      ]
+    },
+    {
+      "id": "pa-reasoning-l04",
+      "title": "Building a differential",
+      "minutes": 7,
+      "body": "## A differential is a ranked list, not a brainstorm\n\nThe **differential diagnosis** is the set of diseases that could explain this presentation, ordered so that the order drives what happens next. Three rankings run at the same time.\n\n- **Must not miss.** Kills or maims if missed, so it gets excluded first even at low probability.\n- **Most likely.** Highest probability given who this patient is.\n- **Most treatable.** Where finding it changes management right now. A pulmonary embolism you can anticoagulate outranks a viral syndrome you cannot touch.\n\nA good plan handles all three: exclude the killers, treat the likely, and do not spend a workup on a diagnosis whose discovery changes nothing.\n\n## Building it from the complaint\n\nStart from the complaint, not from the chart. Two methods, both mechanical on purpose, because mechanical beats memory when you are tired.\n\n**Anatomy from the outside in.** For a body region, walk the layers and then the organs inside the box. Right upper quadrant pain: skin and abdominal wall, ribs and muscle, pleura and the base of the right lung, liver, gallbladder and bile ducts, duodenum, head of the pancreas, right kidney, hepatic flexure of the colon. Nine structures, nine candidate diseases, none of them recalled from a list.\n\n**VINDICATE** for a systemic or confusing presentation. It is a category checklist you run when anatomy gives you nothing.\n\n| Letter | Category | Example in altered mental status |\n|---|---|---|\n| V | Vascular | stroke, intracranial hemorrhage |\n| I | Infectious | meningitis, sepsis, urinary infection in the elderly |\n| N | Neoplastic | brain mass with swelling |\n| D | Degenerative and Drugs | dementia, opioids, benzodiazepines, alcohol withdrawal |\n| I | Iatrogenic and Idiopathic | a new medication, a dosing error |\n| C | Congenital | inherited metabolic disease |\n| A | Autoimmune | lupus affecting the brain, thyroid disease |\n| T | Trauma and Toxins | subdural hematoma, carbon monoxide |\n| E | Endocrine and Metabolic | low blood sugar, sodium derangement, thyroid storm |\n\nAt this stage you are generating, not deciding. Recognition level is enough. You need to know these categories exist, not to be able to work each one up.\n\n## Narrowing it\n\nNow the history and exam earn their keep. Every question and every maneuver should move at least one diagnosis up or down.\n\nA headache that was maximal within seconds pushes subarachnoid hemorrhage up. A normal temperature pushes meningitis down but does not exclude it in an elderly or immunosuppressed patient. Chest pain reproduced by pressing on the chest wall nudges a musculoskeletal cause up, but it does not exclude acute coronary syndrome, because roughly `7%` of patients with reproducible chest wall tenderness turn out to be having a coronary event anyway.\n\n> **Trap:** Nothing you find at the bedside rules out a killer by itself. Individual findings shift probability. Decision rules and tests are what exclude.\n\n## The three-item habit\n\nCarrying twenty possibilities is the same as carrying none. The habit experienced clinicians actually use, and the one that makes you sound like you belong, is to name three.\n\n\"For this chest pain I am thinking acute coronary syndrome, pulmonary embolism, and pneumonia. Coronary because of the risk factors and the exertional pattern, embolism because of the flight last week, pneumonia because of the fever and cough. Dissection is least likely, but I would want pressures in both arms.\"\n\nThree named diagnoses, one reason each, one honest outlier with the thing you would check. It is short enough to say in a hallway and complete enough to act on.\n\n> **Key:** If your differential does not change what you do next, it is not a differential, it is a list.",
+      "keyPoints": [
+        "A differential is ranked three ways at once: must not miss, most likely, most treatable.",
+        "Generate candidates mechanically, by anatomy from the outside in or by the VINDICATE categories.",
+        "Every history question and exam maneuver should move at least one diagnosis up or down.",
+        "Bedside findings shift probability; rules and tests are what exclude a killer.",
+        "Say three diagnoses with one reason each plus one honest outlier and the thing you would check."
+      ],
+      "checks": [
+        {
+          "q": "Why are must-not-miss diagnoses addressed before the most likely diagnosis?",
+          "choices": [
+            "They are more common in an emergency department than benign causes",
+            "The cost of missing them is severe and irreversible, so they are excluded even at low probability",
+            "They are usually easier and faster to exclude than common conditions",
+            "Reimbursement rules require imaging for them first"
+          ],
+          "answer": 1,
+          "why": "The ranking is driven by consequence, not frequency. Killers are generally less common and often harder, not easier, to exclude, and the likely diagnosis gets named after the dangerous ones are addressed."
+        },
+        {
+          "q": "A 70-year-old arrives confused with no obvious source. Using VINDICATE, which grouping correctly matches a category to a cause?",
+          "choices": [
+            "Vascular: benzodiazepine overdose",
+            "Neoplastic: alcohol withdrawal",
+            "Endocrine and Metabolic: low blood sugar or a sodium derangement",
+            "Congenital: subdural hematoma"
+          ],
+          "answer": 2,
+          "why": "Low blood sugar and sodium abnormalities are metabolic causes and are among the first things checked in confusion. Benzodiazepines are drugs, alcohol withdrawal is a drug or toxin effect, and a subdural hematoma is trauma."
+        },
+        {
+          "q": "A 55-year-old smoker with chest pain has the pain reproduced when you press on his sternum. What is the correct conclusion?",
+          "choices": [
+            "Acute coronary syndrome is excluded and the pain is musculoskeletal",
+            "The finding is meaningless and should not be documented",
+            "The finding proves costochondritis",
+            "A musculoskeletal cause becomes more likely, but a coronary event is not excluded"
+          ],
+          "answer": 3,
+          "why": "Roughly 7 percent of patients with reproducible chest wall tenderness are still having a coronary event, so the finding shifts probability without excluding anything. It is worth documenting precisely because it shifts probability, and treating it as a rule-out is a classic lethal error."
+        }
+      ]
+    },
+    {
+      "id": "pa-reasoning-l05",
+      "title": "Red flags by complaint",
+      "minutes": 8,
+      "body": "## What a red flag is\n\nA **red flag** is a feature that, when present, raises the probability of a dangerous cause enough to change what you do, usually from evaluate at the normal pace to escalate now. Red flags are not diagnoses. They are triggers.\n\nThis lesson is a reference. Learn the pattern first, because the same four things are flags in almost every complaint: **sudden onset, extremes of age, abnormal vital signs, and a focal neurologic deficit.**\n\n### Chest pain\n\n| Red flag | Worry |\n|---|---|\n| Exertional pressure with sweating, radiating to jaw or arm | Acute coronary syndrome |\n| Tearing pain into the back, unequal arm pressures, pulse deficit | Aortic dissection |\n| Pleuritic pain with sudden breathlessness, recent surgery, immobility, or cancer | Pulmonary embolism |\n| Sudden pain with absent breath sounds on one side and low blood pressure | Tension pneumothorax |\n| Pain after forceful vomiting, with crackling under the skin of the neck | Esophageal rupture |\n\n### Headache\n\n| Red flag | Worry |\n|---|---|\n| Maximal within seconds, worst of life | Subarachnoid hemorrhage |\n| Fever with a stiff neck, rash, or altered mental status | Meningitis |\n| New headache after age 50 with scalp tenderness, jaw pain on chewing, vision loss | Temporal arteritis |\n| Focal deficit, seizure, or headache worst in the morning with vomiting | Mass or bleed raising pressure inside the skull |\n| Any head strike on blood thinners, or any headache after a fall in an older patient | Intracranial hemorrhage |\n\n### Back pain\n\n| Red flag | Worry |\n|---|---|\n| Numbness over the buttocks and inner thighs, urinary retention or incontinence, weakness in both legs | Cauda equina syndrome |\n| Fever, injection drug use, recent spinal procedure, immunosuppression | Spinal epidural abscess |\n| Age over 50 with tearing pain and a pulsatile abdominal mass | Abdominal aortic aneurysm |\n| Cancer history, unexplained weight loss, pain that wakes them at night | Metastatic disease |\n\n### Abdominal pain\n\n| Red flag | Worry |\n|---|---|\n| Severe pain with a soft, unimpressive belly, often with atrial fibrillation | Mesenteric ischemia |\n| Rigid abdomen, rebound, guarding | Perforation and peritonitis |\n| Any woman of childbearing age with no pregnancy test done | Ectopic pregnancy |\n| Elderly, diabetic, or immunosuppressed patient with vague pain and normal vitals | A catastrophe with a muted presentation |\n\n### Fever\n\nFever is `38.0` C, which is `100.4` F. The flags are what comes with it.\n\n- With a systolic under `100`, a respiratory rate of `22` or more, or new confusion: sepsis.\n- With a new murmur, especially with injection drug use: endocarditis.\n- With a stiff neck or a non-blanching purple rash: meningitis and meningococcemia.\n- In a patient on chemotherapy: neutropenic fever, antibiotics within 60 minutes.\n- With back pain: epidural abscess until proven otherwise.\n\n### Dizziness\n\nFirst make them choose: does the room spin, do you feel like you will pass out, or are you off balance. Then the flags: sudden vertigo with inability to walk unassisted, new headache or neck pain, double vision, slurred speech, trouble swallowing, or any focal deficit point to a stroke in the back of the brain. Near-fainting during exertion, or a family history of sudden death, points at the heart.\n\n### Shortness of breath\n\nOxygen saturation below `90%` on room air, respiratory rate over `30` or under `8`, one-word answers, tripod posture, accessory muscle use, new confusion, sudden onset, or a quiet chest in a known asthmatic, which means too little air is moving to make a wheeze.\n\n### Fever in children\n\n| Age or finding | Action |\n|---|---|\n| Under 28 days with a rectal temperature of `38.0` C or higher | Full sepsis evaluation, no exceptions for looking well |\n| 1 to 3 months and ill appearing | Immediate provider evaluation |\n| Any age with petechiae, a stiff neck, inconsolability, or a bulging soft spot | Meningitis until proven otherwise |\n| Poor feeding, fewer than 3 wet diapers a day, no tears when crying | Dehydration |\n\n### The elderly\n\nOlder patients hide disease. Fever is blunted, the heart rate cannot rise on a beta blocker, and the white count may be normal. A blood pressure of `120/70` may be shock in someone who lives at `165/90`. Heart attack presents as nausea or fatigue, pneumonia as confusion or a fall, infection as delirium, and a surgical abdomen can feel soft.\n\n> **Key:** The same four flags repeat everywhere: sudden onset, extremes of age, abnormal vitals, focal neurologic deficit.\n\n> **On shift:** A red flag belongs in the first sentence you say to someone, not in the middle of a story. \"This is a 68-year-old with back pain who cannot feel the saddle area and has not urinated since last night.\"",
+      "keyPoints": [
+        "Four flags repeat across nearly every complaint: sudden onset, extremes of age, abnormal vitals, focal neurologic deficit.",
+        "Chest pain killers are acute coronary syndrome, pulmonary embolism, dissection, tension pneumothorax, and esophageal rupture.",
+        "Cauda equina is saddle numbness, urinary retention or incontinence, and bilateral leg weakness, and it is time-critical.",
+        "Any fever of 38.0 C or higher in an infant under 28 days triggers a full sepsis evaluation regardless of appearance.",
+        "The elderly present atypically: heart attack as fatigue, pneumonia as a fall, infection as delirium, a surgical belly that feels soft."
+      ],
+      "checks": [
+        {
+          "q": "A 44-year-old says his headache hit maximum intensity within seconds while he was watching television, and is the worst he has ever had. What is the concern?",
+          "choices": [
+            "Subarachnoid hemorrhage",
+            "Tension headache from stress",
+            "Migraine without aura",
+            "Temporal arteritis"
+          ],
+          "answer": 0,
+          "why": "Thunderclap onset, meaning maximal within about a minute, is the classic presentation of bleeding into the space around the brain. Tension headaches and migraines build over minutes to hours, and temporal arteritis is a subacute headache in patients over 50 with scalp tenderness and jaw pain on chewing."
+        },
+        {
+          "q": "Which combination in a patient with back pain requires immediate escalation?",
+          "choices": [
+            "Pain worse with bending and better with rest",
+            "Numbness over the buttocks with new urinary retention and weakness in both legs",
+            "Muscle spasm palpable next to the spine",
+            "Pain that started after lifting a heavy box yesterday"
+          ],
+          "answer": 1,
+          "why": "Saddle numbness, retention, and bilateral leg weakness are cauda equina syndrome, where delay costs permanent bowel, bladder, and sexual function. Mechanical pain, paraspinal spasm, and a lifting history are the ordinary pattern and carry no red flag by themselves."
+        },
+        {
+          "q": "A 21-day-old infant has a rectal temperature of 38.2 C and is feeding well and smiling. What is the correct action?",
+          "choices": [
+            "Advise fluids and recheck in 24 hours since the baby looks well",
+            "Give a weight-based dose of acetaminophen and discharge",
+            "Full sepsis evaluation, because appearance does not exclude serious infection at this age",
+            "Test only for respiratory viruses"
+          ],
+          "answer": 2,
+          "why": "Under 28 days of age, a rectal temperature of 38.0 C or higher gets a full evaluation regardless of how well the infant looks, because newborns can be bacteremic or have meningitis while still feeding and smiling. Reassurance, fever reducers, or viral testing alone all rely on an appearance that is not reliable at this age."
+        }
+      ]
+    },
+    {
+      "id": "pa-reasoning-l06",
+      "title": "Pretest probability and what a test actually tells you",
+      "minutes": 8,
+      "body": "## A test does not tell you the truth, it moves a number\n\nBefore you order anything, you already have an estimate of how likely the disease is. That is the **pretest probability**, and it comes from who the patient is plus what the history and exam showed. A test takes that number and moves it up or down to a **post-test probability**. That is all a test does.\n\n## Sensitivity and specificity\n\n- **Sensitivity:** of the people who have the disease, the fraction the test catches. A sensitive test has few false negatives.\n- **Specificity:** of the people who do not have the disease, the fraction the test correctly calls negative. A specific test has few false positives.\n\nTwo memory hooks that get used at the bedside:\n\n- **SnNout.** A highly sensitive test, when negative, rules out.\n- **SpPin.** A highly specific test, when positive, rules in.\n\n## Predictive values depend on who is in front of you\n\nSensitivity and specificity are properties of the test. **Predictive values** are properties of the test in a particular population.\n\n- **Positive predictive value:** if the test is positive, how likely is the disease to be real?\n- **Negative predictive value:** if the test is negative, how likely is the patient to be truly disease-free?\n\nBoth move with **prevalence**. The identical test that is trustworthy in a chest pain unit full of high-risk patients produces mostly false positives in a walk-in clinic where almost nobody has the disease. Nothing about the test changed. The population did.\n\n## Two worked examples\n\n**D-dimer for pulmonary embolism.** Very sensitive, about `95%`, and poorly specific, roughly `40%` to `50%`. In a patient whose pretest probability is genuinely low, a negative D-dimer drops the post-test probability below the roughly `2%` threshold clinicians treat as done. In a patient with a high pretest probability, pleuritic pain, a fast heart rate, a swollen leg, a hip replacement three weeks ago, a negative D-dimer does not clear them and they go to imaging anyway. Same test, opposite meaning, because the starting number was different.\n\n**Troponin for heart attack.** A raised troponin means heart muscle cells released protein. That happens in myocardial infarction, and also in pulmonary embolism, sepsis, kidney failure, heart failure, myocarditis, and after prolonged fast rhythms. A number is not a diagnosis. It is one input into a story.\n\n> **Key:** Order a test when you already know what you will do for each possible result. If a positive and a negative lead to the same plan, do not order it.\n\n## Likelihood ratios in one paragraph\n\nA **likelihood ratio** compresses sensitivity and specificity into a single number: how much this result multiplies the odds of disease. Rough feel: `10` or higher is a big push toward the disease, `1` changes nothing, `0.1` or lower is a big push away. You do not need the arithmetic at the bedside. You need the idea that a result is a nudge of a certain size, not a verdict.\n\n## Why ordering everything fails\n\nEvery test has a false positive rate. Run 20 independent tests on a healthy person, with the usual `95%` reference range, and on average about one comes back abnormal purely by chance. Each incidental finding buys more imaging, more radiation, more cost, more anxiety, and sometimes a biopsy of something that was never going to hurt anyone. Shotgun workups also stall the department, and the real diagnosis waits in line with everything else.\n\n## Where the numbers come from\n\n- A **guideline** is a body of experts summarizing many studies into a recommendation. It is where you start, not where you stop.\n- A **randomized controlled trial** assigns treatment by chance, which is the only design that reliably separates cause from association.\n- An **observational study** watches what already happened. It is cheaper and more realistic and cannot fully exclude confounding. Coffee drinkers living longer is an association, not a prescription.\n- **Number needed to treat** is how many patients must receive a treatment for one to benefit. **Number needed to harm** is how many before one is harmed. An NNT of `5` is a powerful drug; an NNT of `200` is a population-level effect you will never notice in one patient.\n- **One study does not change practice.** Single trials get contradicted constantly. Practice moves when a result replicates and a guideline body adopts it.\n\n> **On shift:** The lookup habit is normal behavior, not a confession. UpToDate for the deep dive, the specialty guideline for what counts as standard, and a bedside reference such as MDCalc or WikEM for a score or a dose.",
+      "keyPoints": [
+        "A test moves a pretest probability to a post-test probability; it does not deliver truth.",
+        "Sensitivity and specificity belong to the test; predictive values belong to the population and move with prevalence.",
+        "SnNout: a sensitive test when negative rules out. SpPin: a specific test when positive rules in.",
+        "A negative D-dimer excludes pulmonary embolism only when pretest probability was already low; a raised troponin has many non-cardiac causes.",
+        "Order a test only when a positive and a negative would lead to different plans."
+      ],
+      "checks": [
+        {
+          "q": "A patient has pleuritic chest pain, a heart rate of 112, a swollen right calf, and a knee replacement 10 days ago. The D-dimer comes back negative. What does that mean?",
+          "choices": [
+            "Pulmonary embolism is excluded, because D-dimer is highly sensitive",
+            "The pretest probability was high, so a negative D-dimer does not exclude embolism and imaging is still needed",
+            "The test must have been run incorrectly and should be repeated",
+            "A negative D-dimer is meaningless in every patient"
+          ],
+          "answer": 1,
+          "why": "A negative result from a sensitive test lowers probability by a fixed amount, and from a high starting point that is not enough to get under the threshold for stopping. In a genuinely low-risk patient the same result would exclude the disease, which is precisely what makes pretest probability the deciding factor. Repeating the test does not change the starting number."
+        },
+        {
+          "q": "The same test is used in an emergency department where 20 percent of patients have the disease and in a screening clinic where 1 percent do. What changes?",
+          "choices": [
+            "Sensitivity falls in the clinic",
+            "Specificity rises in the clinic",
+            "The positive predictive value falls in the clinic, so more positives are false",
+            "Nothing changes, because test characteristics are fixed"
+          ],
+          "answer": 2,
+          "why": "Sensitivity and specificity are properties of the test and stay put. Predictive values depend on prevalence, so in a low-prevalence setting a positive result is much more likely to be a false positive. That is the whole reason screening low-risk populations generates so much unnecessary follow-up."
+        },
+        {
+          "q": "A drug for a common condition has a number needed to treat of 180 and a number needed to harm of 90. What is the plainest reading?",
+          "choices": [
+            "You would harm one patient for every 90 treated and benefit one for every 180, so harm outweighs benefit at these numbers",
+            "The drug helps twice as many people as it hurts",
+            "The numbers cannot be compared to each other",
+            "An NNT of 180 means 180 percent of patients improve"
+          ],
+          "answer": 0,
+          "why": "Smaller numbers mean the event happens more often, so an NNH of 90 is more frequent than an NNT of 180. The comparison is exactly what these numbers exist for, though the severity of the harm versus the benefit still matters. NNT is a count of patients, never a percentage."
+        }
+      ]
+    },
+    {
+      "id": "pa-reasoning-l07",
+      "title": "Clinical decision rules worth knowing cold",
+      "minutes": 9,
+      "body": "## What a rule is for\n\nA **clinical decision rule** turns findings into a number that has been tested on thousands of patients, so that a decision performs at least as well as an expert's gut and can be defended in writing. Rules do not replace judgment. They document it.\n\nTwo cautions first. A rule only applies in the population it was built in, so the pulmonary embolism rules assume you are already considering embolism. And low risk is a probability, never a promise.\n\n### HEART score, for chest pain\n\nFive parts, each scored `0` to `2`, total `0` to `10`.\n\n| Part | 0 | 1 | 2 |\n|---|---|---|---|\n| History | slightly suspicious | moderately suspicious | highly suspicious |\n| ECG | normal | non-specific changes | significant ST deviation |\n| Age | under 45 | 45 to 64 | 65 or older |\n| Risk factors | none | 1 to 2 | 3 or more, or known vascular disease |\n| Troponin | normal | 1 to 3 times normal | over 3 times normal |\n\n`0` to `3` is low risk, roughly `1%` to `2%` chance of a major cardiac event in the next 6 weeks, generally dischargeable with follow-up. `4` to `6` is moderate, meaning observation with repeat troponins. `7` to `10` is high, meaning admission with cardiology.\n\n### Wells for pulmonary embolism, and PERC\n\nWells points: signs of a deep vein clot `3`, embolism is the most likely diagnosis `3`, heart rate over `100` `1.5`, immobilization or surgery in the past 4 weeks `1.5`, previous clot `1.5`, coughing blood `1`, cancer `1`. A common split is `4` or less means unlikely, so get a D-dimer, and over `4` means likely, so image.\n\n**PERC** is the rule that lets you stop without even a D-dimer, but only when your own pretest probability is already under about `15%`. All eight must be negative:\n\n1. Age under 50\n2. Heart rate under `100`\n3. Oxygen saturation on room air `95%` or higher\n4. No swelling of one leg only\n5. No coughing of blood\n6. No surgery or trauma needing hospitalization in the past 4 weeks\n7. No previous deep vein thrombosis or pulmonary embolism\n8. No hormone use, meaning oral contraceptives or hormone replacement\n\n### Wells for deep vein thrombosis\n\nOne point each for active cancer, paralysis or recent immobilization of the leg, bedridden 3 days or surgery within 12 weeks, tenderness along the deep veins, the whole leg swollen, a calf more than `3 cm` larger than the other side, pitting edema on the symptomatic side, collateral surface veins, and a previous clot. Subtract `2` if an alternative diagnosis is at least as likely. `0` or less is low, `1` to `2` moderate, `3` or more high.\n\n### Ottawa ankle and knee rules\n\nAnkle films only for bone tenderness at the back edge or tip of either malleolus, at the navicular, or at the base of the fifth metatarsal, or inability to take four steps both at the scene and in the department. Knee films for age 55 or older, isolated kneecap tenderness, tenderness at the head of the fibula, inability to bend to 90 degrees, or inability to take four steps. These approach `100%` sensitivity for important fracture and cut x-rays by roughly a third.\n\n### Head and neck\n\n- **Canadian CT head rule.** For minor head injury with a GCS of 13 to 15 plus loss of consciousness, amnesia, or disorientation. High-risk features: GCS under 15 two hours after injury, suspected open or depressed skull fracture, any sign of basilar skull fracture, vomiting twice or more, age 65 or older.\n- **NEXUS.** No cervical spine imaging if all five are true: no midline neck tenderness, no focal neurologic deficit, normal alertness, no intoxication, no painful distracting injury.\n- **Canadian C-spine rule.** A three-step alternative adding dangerous mechanism and the ability to turn the head 45 degrees each way.\n- **PECARN.** The pediatric head injury rule identifying children at very low risk, so they can be observed rather than scanned. Know it exists and that pediatric CT is avoided whenever it safely can be.\n\n### Infection and severity\n\n- **CURB-65** for pneumonia, one point each: Confusion, blood Urea nitrogen over `19 mg/dL`, Respiratory rate `30` or more, Blood pressure with systolic under `90` or diastolic `60` or less, and age `65` or older. `0` to `1` is usually outpatient, `2` means consider admission, `3` or more means admit and consider intensive care.\n- **Centor, modified by McIsaac,** for sore throat: one point each for fever, tonsillar exudate, tender front-of-neck nodes, and absence of cough, plus one for age 3 to 14 and minus one for age 45 or older. Low scores need no testing; higher scores get a rapid strep test.\n- **SIRS.** Two or more of temperature over `38` C or under `36` C, heart rate over `90`, respiratory rate over `20`, white count over `12,000` or under `4,000`.\n- **qSOFA.** Two or more of respiratory rate `22` or more, altered mental status, systolic blood pressure `100` or less. A bedside warning flag for sepsis with poor outcomes, not a diagnosis.\n- **NIH Stroke Scale.** A `0` to `42` severity score guiding and following stroke treatment. Higher is worse, and roughly `5` or more is generally treated as a significant deficit.\n\n> **Trap:** A score supports a decision, it does not make one. A PERC-negative patient who still looks wrong gets worked up anyway, and that override gets written down with the reason.",
+      "keyPoints": [
+        "HEART is History, ECG, Age, Risk factors, Troponin, each 0 to 2; 0 to 3 low, 4 to 6 moderate, 7 to 10 high.",
+        "PERC has eight criteria and may only be applied when your own pretest probability is already under about 15 percent.",
+        "NEXUS clears the cervical spine on five findings; Ottawa rules decide ankle and knee films and are close to 100 percent sensitive for important fractures.",
+        "CURB-65 guides pneumonia disposition; qSOFA and SIRS flag possible sepsis but do not diagnose it.",
+        "A rule only applies in the population it was derived in, and an override is legitimate as long as it is documented with a reason."
+      ],
+      "checks": [
+        {
+          "q": "A 62-year-old with two cardiac risk factors has a moderately suspicious history, non-specific ECG changes, and a normal troponin. What is his HEART score and the usual pathway?",
+          "choices": [
+            "Score 4, moderate risk, observation with repeat troponins",
+            "Score 2, low risk, immediate discharge with no follow-up needed",
+            "Score 8, high risk, admit to cardiology",
+            "Score 6, high risk, cardiac catheterization tonight"
+          ],
+          "answer": 0,
+          "why": "History 1, ECG 1, age 62 gives 1, risk factors 1 to 2 gives 1, troponin normal gives 0, so the total is 4. That lands in the moderate band of 4 to 6, which means observation and serial troponins rather than discharge. High risk starts at 7."
+        },
+        {
+          "q": "A 38-year-old has pleuritic chest pain. Your gut pretest probability for pulmonary embolism is roughly 10 percent, and all eight PERC criteria are negative. What is the next step?",
+          "choices": [
+            "Order a CT pulmonary angiogram regardless",
+            "Order a D-dimer to confirm the PERC result",
+            "No further testing for embolism is required, because PERC applies at this pretest probability",
+            "Admit for serial D-dimers over 24 hours"
+          ],
+          "answer": 2,
+          "why": "PERC was designed for exactly this situation: a low pretest probability, under about 15 percent, with all eight criteria negative, where further testing causes more harm than it prevents. Adding a D-dimer here produces false positives that drag the patient into a contrast CT, and imaging or admission would be even more aggressive."
+        },
+        {
+          "q": "Which patient may have the cervical spine cleared by NEXUS without imaging?",
+          "choices": [
+            "An alert, sober patient with no midline neck tenderness, no deficit, and a badly broken femur",
+            "A patient with normal alertness, no intoxication, no midline tenderness, no deficit, and no distracting injury",
+            "A patient who smells of alcohol but reports no neck pain",
+            "A confused elderly patient with no neck tenderness"
+          ],
+          "answer": 1,
+          "why": "All five NEXUS criteria must be satisfied. A femur fracture is a painful distracting injury, intoxication invalidates the exam, and confusion fails the normal alertness criterion, so each of those patients needs imaging or a different rule."
+        }
+      ]
+    },
+    {
+      "id": "pa-reasoning-l08",
+      "title": "The note: SOAP, decision making, and reading other people's reports",
+      "minutes": 9,
+      "body": "## Why the note exists\n\nThe chart is four things at once: the plan for whoever sees this patient next, the record of what you were thinking, the bill, and the legal document. Years later in a deposition, the note is the only version of the encounter that still exists. The old rule is blunt and accurate: if it was not documented, it did not happen.\n\n## SOAP\n\n**Subjective** is what the patient tells you. **Objective** is what you measured and observed, with no interpretation. **Assessment** is your read, including the differential with a reason for each item. **Plan** is what you did, what you will do, and where the patient goes.\n\n### A worked chest pain note\n\n**S:** 58-year-old man, \"pressure in my chest\" for 3 hours, began while carrying groceries up stairs, `6/10`, under the breastbone, radiating to the left jaw, with sweating and nausea. Eased slightly with rest, unchanged by position or pressing. Denies fever, cough, leg swelling, or tearing pain to the back. High blood pressure, high cholesterol, 30 pack-year smoker. Medications lisinopril and atorvastatin. No allergies. Father had a heart attack at 52.\n\n**O:** `T 36.8 C, HR 92, BP 156/94 right arm and 152/90 left arm, RR 18, SpO2 97% room air`. Alert, uncomfortable, skin cool and damp. Lungs clear. Heart regular, no murmur. Chest wall not tender. Abdomen soft. Legs without swelling or calf tenderness, pulses equal. ECG: sinus rhythm with `1 mm` ST depression in V4 through V6, no prior for comparison. Troponin `0.04 ng/mL`, upper limit `0.03`.\n\n**A:** 58-year-old man with cardiac risk factors and 3 hours of exertional substernal pressure with radiation and sweating, lateral ST depression, and a mildly raised troponin. HEART score `7`. Most consistent with non-ST-elevation acute coronary syndrome. Dissection considered: no tearing pain, arm pressures within `4 mmHg`, no pulse deficit. Pulmonary embolism considered: no low oxygen, no leg findings, no immobilization. Pneumonia and chest wall pain do not fit.\n\n**P:** Aspirin `324 mg` chewed, cardiac monitoring, IV access, repeat troponin and ECG in 3 hours, cardiology consulted, admit to telemetry on the NSTEMI pathway. Discussed with the patient and his wife.\n\n## Medical decision making\n\nThe **medical decision making** section is where a note earns its keep. It has to show three things: the number and complexity of problems considered, the data you reviewed and why, and the risk of both the condition and the treatment. In practice that means writing down the thinking you already did, which killers you considered, what argued against them, and why this disposition. \"Chest pain, admit\" is not decision making. The assessment paragraph above is.\n\n## Discharge instructions and return precautions\n\nWritten for the patient, not for the chart. Aim at a sixth-grade reading level, no abbreviations, four parts:\n\n1. What we think is going on, in plain words.\n2. What to do, including medicine name, dose, how often, and for how long.\n3. Who to follow up with, by when, and how to reach them.\n4. **Return precautions:** the specific things that mean come back now.\n\nA real one sounds like this: \"Come back right away if the pain returns while you are resting, if it lasts more than 15 minutes, if you become short of breath, if you faint, or if you start sweating with it.\"\n\n> **Key:** Return precautions are the safety net for everything the workup could not exclude. They are the most important paragraph in a discharge and the one most often left as boilerplate.\n\n## Reading other people's notes\n\nA **consult note** has the same skeleton: reason for consultation, their focused history and exam, their impression, and their recommendations. Read the last two first, then check whether their history matches yours, because a consultant working from a wrong premise gives a confident wrong answer.\n\nA **radiology report** has a fixed shape: clinical indication, technique, comparison, findings, then **impression**. The impression is the answer; the findings are the raw material. Radiologists hedge in a standard vocabulary, and the hedging carries meaning.\n\n| Phrase | What it means |\n|---|---|\n| No acute intracranial abnormality | Nothing urgent is visible; this is not the same as a normal brain |\n| Cannot exclude | This study is not good enough to answer that question |\n| Clinical correlation recommended | The image is ambiguous and the decision belongs to the treating clinician |\n| Recommend further imaging with | Get the other study; this is a real recommendation, not a formality |\n| Compared with the prior study | The comparison is the finding, and no prior means less certainty |\n\n> **On shift:** If a radiology impression changes anything about a patient's care, it gets told to the provider out loud, not left in the chart to be discovered.",
+      "keyPoints": [
+        "Subjective is what they tell you, Objective is what you measure with no interpretation, Assessment carries the differential with reasons, Plan includes the disposition.",
+        "Medical decision making must show the problems considered, the data reviewed and why, and the risk of the condition and treatment.",
+        "Discharge instructions have four parts, and return precautions must name specific triggers rather than say come back if worse.",
+        "In a radiology report the impression is the answer and the findings are the raw data.",
+        "Hedged radiology language is meaningful: cannot exclude means the study cannot answer it, and clinical correlation recommended puts the decision back on you."
+      ],
+      "checks": [
+        {
+          "q": "Which entry belongs in the Objective section rather than anywhere else?",
+          "choices": [
+            "Patient reports the pain is worse when he lies flat",
+            "Blood pressure 156/94 in the right arm, chest wall non-tender, ECG with 1 mm ST depression in V4 through V6",
+            "Most consistent with non-ST-elevation acute coronary syndrome",
+            "Admit to telemetry and repeat troponin in 3 hours"
+          ],
+          "answer": 1,
+          "why": "Objective holds measurements, exam findings, and results with no interpretation attached. What the patient reports is Subjective, the diagnostic read is Assessment, and the disposition is Plan. Mixing them makes the note impossible to audit later."
+        },
+        {
+          "q": "A note reads in full: Assessment, chest pain. Plan, admit. What is the main deficiency?",
+          "choices": [
+            "It fails to show the problems considered, the data reviewed, and the risk, so no decision making is documented",
+            "It is too short to be billable, which is the primary problem",
+            "It should have used OLDCARTS instead of OPQRST",
+            "It omits the patient's family history"
+          ],
+          "answer": 0,
+          "why": "The medical decision making section exists to show which dangerous diagnoses were considered, what data was reviewed and why, and what risk justified the disposition. Billing follows from that documentation rather than being the point of it, and the mnemonic used or a family history line would not fix an assessment that contains no reasoning."
+        },
+        {
+          "q": "A head CT report ends with: no acute intracranial abnormality, clinical correlation recommended. What does that tell you?",
+          "choices": [
+            "The brain is normal and no further concern is warranted",
+            "The radiologist believes the patient has a stroke",
+            "Nothing urgent is visible on this study, and the clinical decision still rests with the treating clinician",
+            "A repeat CT must be ordered in 6 hours"
+          ],
+          "answer": 2,
+          "why": "No acute abnormality means nothing urgent was seen on this particular study, which is narrower than a normal brain, and early ischemic stroke is frequently invisible on an initial non-contrast CT. Clinical correlation recommended puts the decision back with the person who has the history, and it is not itself an order for repeat imaging."
+        }
+      ]
+    },
+    {
+      "id": "pa-reasoning-l09",
+      "title": "Presenting, disposition, and consent",
+      "minutes": 9,
+      "body": "## The one-liner\n\nEvery presentation opens with one sentence that orients the listener: **age, sex, the history that matters here, the complaint, and the duration.**\n\n\"58-year-old man with high blood pressure and a 30 pack-year smoking history, here with 3 hours of exertional chest pressure.\"\n\nThat sentence tells the listener which illness scripts to load. Leave the irrelevant history out. His 1998 appendectomy does not belong in it.\n\n## Sixty seconds, in order\n\n1. The one-liner\n2. The history of present illness in chronological order, with pertinent positives and negatives\n3. The past history, medications, and allergies that matter for this problem\n4. Vital signs and the pertinent exam\n5. Results you already have\n6. Assessment: your leading diagnosis and two alternatives\n7. Plan, and the question you actually have\n\nDo not read the chart front to back. The listener is assembling a picture and needs the pieces in that order.\n\n## The audience changes the content\n\n- **To a nurse:** what changed and what you need. \"Room 12's heart rate went from 88 to 130 and he looks gray. Do you want him on the monitor?\"\n- **To a provider:** the full structure above, ending in a specific request.\n- **To a consultant:** the reason for the call first, then the story. \"I am calling about a 58-year-old with an NSTEMI, troponin `0.4`, on heparin. I need to know whether you want him in the catheterization lab tonight.\" Consultants want the question up front.\n\n## SBAR\n\nFor escalation, the standard structure is **Situation** (who, where, what is wrong right now), **Background** (the relevant history in one sentence), **Assessment** (what you think is happening), and **Recommendation** (what you want).\n\nThe phrase that makes SBAR work is **\"I'm worried because.\"** It converts a report into an escalation, and it is language hospital safety programs deliberately protect so that anyone at any level can use it. \"I'm worried because his rate keeps climbing and his pressure is starting to drift down.\"\n\n> **Key:** If you cannot say what you want, you have not escalated. End with a request.\n\n## Disposition\n\nEvery emergency patient ends in one of three buckets.\n\n- **Admit.** Needs treatment or monitoring that only the hospital provides.\n- **Observe.** Needs a defined short course, such as serial troponins or a few hours of a medication drip, with a decision at the end of it.\n- **Discharge.** Safe to continue at home.\n\nSafe to go home is a checklist, not a feeling: the killers considered and excluded, pain and vital signs acceptable, able to walk and keep fluids down, has the medicine and can afford it, has a ride and a place to go, has a real follow-up appointment, and understands the return precautions. The medicine can be perfect and the disposition still unsafe if the patient lives alone at the top of three flights of stairs in a new knee immobilizer.\n\n**Shared decision making** is the honest version of a borderline call. You give the risk in numbers, lay out the options, and decide together. \"Your HEART score is 3, which is about a 2 percent chance of a heart problem over the next 6 weeks. You can stay for repeat blood work, or go home and see cardiology this week. Here is what each looks like.\"\n\n## Capacity, consent, and leaving against advice\n\nThe four principles in plain words: **autonomy** (their choice), **beneficence** (do good), **nonmaleficence** (do no harm), and **justice** (fair treatment and fair use of resources).\n\n**Capacity** is decision-specific, clinical, and assessed at the bedside. The patient must be able to:\n\n1. **Understand** the information\n2. **Appreciate** that it applies to them\n3. **Reason** with it, weighing the options against each other\n4. **Express** a consistent choice\n\nCompetence, by contrast, is a legal status decided by a court. Intoxication, delirium, and a drop in mental status can remove capacity temporarily, and capacity is judged for this decision at this moment, not in general.\n\n**Informed consent** requires the diagnosis, the proposed treatment, its risks and benefits, the alternatives with their risks and benefits, and the consequences of refusing, all in language the patient understands, with a voluntary choice at the end.\n\nThe exceptions: the **emergency exception**, sometimes called implied consent, covers a patient who cannot consent and faces a serious threat to life or limb. **Minors** need a parent or guardian, except emancipated minors and, in most states, care for pregnancy, sexually transmitted infection, substance use, and mental health. When a patient lacks capacity, a **surrogate** decides, in a legally defined order that usually runs healthcare proxy, then spouse, then adult children, then parents.\n\nA **DNR** or a **POLST** form limits specific interventions, usually intubation and chest compressions. It does not mean do not treat. Comfort-focused care is an active plan: oxygen, pain control, antinausea medicine, positioning, and family at the bedside.\n\n**Leaving against medical advice,** done right: assess and document capacity, state the specific risk in plain words (\"you could have a heart attack tonight and die\"), offer whatever care they will accept, give the prescriptions and the follow-up anyway, write real return precautions, and tell them they can come back.\n\n> **Trap:** An AMA signature is not a legal shield. The documented capacity assessment and the specific risks you explained are what protect the patient and the chart.",
+      "keyPoints": [
+        "The one-liner is age, sex, relevant history, complaint, duration, and it tells the listener which illness scripts to load.",
+        "Present in order: one-liner, HPI, relevant history, vitals and pertinent exam, results, assessment with alternatives, plan and your question.",
+        "Consultants want the question first; nurses want what changed and what you need; SBAR ends in a recommendation.",
+        "Safe to go home is a checklist covering medicine, mobility, transport, housing, follow-up, and return precautions, not a feeling.",
+        "Capacity has four components and is decision-specific and clinical, while competence is a legal determination made by a court."
+      ],
+      "checks": [
+        {
+          "q": "You call the on-call surgeon about a patient. Which opening is most effective?",
+          "choices": [
+            "A chronological account starting with the patient's childhood surgeries",
+            "I am calling about a 24-year-old with right lower quadrant pain and a CT showing appendicitis; I need to know when you can see her",
+            "I have a patient here who is in a lot of pain and I am not sure what to do",
+            "Reading the full nursing note aloud from the beginning"
+          ],
+          "answer": 1,
+          "why": "Consultants want the reason for the call and the specific question first, then the story. A long chronology or a full nursing note buries the ask, and an open-ended statement of uncertainty gives the consultant nothing to act on."
+        },
+        {
+          "q": "A patient's blood pressure is drifting down and you want the provider at the bedside. Which SBAR element is most often left out, and which phrase fixes it?",
+          "choices": [
+            "Background is left out, fixed by reciting the full past medical history",
+            "Situation is left out, fixed by describing the room number only",
+            "The recommendation is left out, and the phrase I'm worried because turns a report into an escalation",
+            "Assessment is left out, fixed by waiting for the next set of vitals"
+          ],
+          "answer": 2,
+          "why": "Most failed escalations are reports without a request, so the missing piece is the recommendation. Saying you are worried and naming why is the protected language that makes the concern actionable, while waiting for another set of vitals is the delay the escalation exists to prevent."
+        },
+        {
+          "q": "A man with chest pain and an abnormal ECG wants to leave. He is alert, explains his diagnosis back to you, describes the risk of dying tonight, weighs it against needing to get home, and states his choice consistently. What is the correct approach?",
+          "choices": [
+            "He lacks capacity because the choice is unwise, so he may be held",
+            "He has capacity; document the assessment and the specific risks discussed, offer what he will accept, give prescriptions, follow-up, and return precautions",
+            "Have him sign the AMA form, which is sufficient legal protection on its own",
+            "Call security, since any patient who refuses cardiac care is a danger to himself"
+          ],
+          "answer": 1,
+          "why": "He demonstrates all four components of capacity, and an unwise choice made with capacity is still his to make. The signature alone protects nothing; the documented capacity assessment and the specific risks explained are what matter, and holding or restraining a patient with capacity is false imprisonment."
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "pa-reasoning-c001",
+      "front": "What are the three parts of an illness script?",
+      "back": "Who gets it (epidemiology and risk factors), what it does to the body and how fast (mechanism and time course), and what it looks like (key features, including the findings that should not be there).",
+      "lesson": "pa-reasoning-l01"
+    },
+    {
+      "id": "pa-reasoning-c002",
+      "front": "What is the difference between System 1 and System 2 reasoning?",
+      "back": "System 1 is fast automatic pattern matching against stored illness scripts. System 2 is slow, deliberate, one-fact-at-a-time analysis. System 1 generates candidates, System 2 verifies them.",
+      "lesson": "pa-reasoning-l01"
+    },
+    {
+      "id": "pa-reasoning-c003",
+      "front": "When does fast pattern recognition most often fail?",
+      "back": "On atypical presentations, such as a heart attack showing up as nausea in a diabetic or pneumonia showing up as confusion in an 82-year-old, and when the clinician is tired, rushed, interrupted, or emotionally loaded about the patient.",
+      "lesson": "pa-reasoning-l01"
+    },
+    {
+      "id": "pa-reasoning-c004",
+      "front": "Name three concrete inputs to the sick or not sick gestalt.",
+      "back": "The doorway impression (color, work of breathing, posture, ability to finish a sentence), the vital sign trend rather than one set, and mismatches such as pain out of proportion to the exam.",
+      "lesson": "pa-reasoning-l01"
+    },
+    {
+      "id": "pa-reasoning-c005",
+      "front": "Why is a heart rate of 96, then 108, then 124 worth reporting even when the blood pressure is normal?",
+      "back": "It is compensated shock. The body defends pressure by speeding the heart, so by the time the systolic falls, compensation has already failed. Trends beat single snapshots.",
+      "lesson": "pa-reasoning-l01"
+    },
+    {
+      "id": "pa-reasoning-c006",
+      "front": "What five lines belong in a de-identified case log entry?",
+      "back": "Chief complaint, what was ordered, what it showed, the disposition, and one thing learned. No names, no dates of birth, no identifiers.",
+      "lesson": "pa-reasoning-l01"
+    },
+    {
+      "id": "pa-reasoning-c007",
+      "front": "What is anchoring bias, with an emergency department example?",
+      "back": "Fixing on the first piece of information and reading everything through it. Example: treating a triage label of anxiety attack in a panting 34-year-old and missing the pulmonary embolism after a long flight.",
+      "lesson": "pa-reasoning-l02"
+    },
+    {
+      "id": "pa-reasoning-c008",
+      "front": "What is premature closure, with an example?",
+      "back": "Stopping the diagnostic search once an answer fits. Example: flank pain with blood in the urine called a kidney stone in a 68-year-old smoker who actually has a leaking abdominal aortic aneurysm.",
+      "lesson": "pa-reasoning-l02"
+    },
+    {
+      "id": "pa-reasoning-c009",
+      "front": "What is availability bias, and how does it work in reverse?",
+      "back": "Judging likelihood by what comes to mind easily, usually what you saw recently or vividly. In reverse, a disease you have never personally seen simply does not occur to you.",
+      "lesson": "pa-reasoning-l02"
+    },
+    {
+      "id": "pa-reasoning-c010",
+      "front": "What is diagnosis momentum?",
+      "back": "A label applied early by family, EMS, or triage hardening into accepted fact as it is handed along, with nobody re-examining the original evidence. Example: a family calling it a seizure when it was ventricular tachycardia.",
+      "lesson": "pa-reasoning-l02"
+    },
+    {
+      "id": "pa-reasoning-c011",
+      "front": "What is the frequent flyer or attribution bias, and why is it dangerous?",
+      "back": "Explaining a complaint away by the patient's identity or thick chart. Dangerous because these patients carry more disease than average, not less. Example: the familiar intoxicated patient with a new subdural hematoma.",
+      "lesson": "pa-reasoning-l02"
+    },
+    {
+      "id": "pa-reasoning-c012",
+      "front": "Name the three debiasing habits and what each one asks.",
+      "back": "The diagnostic time-out: working diagnosis, what does not fit, worst case. Forcing alternatives: what else could this be, name two. Worst-first: exclude the killers before naming the likely diagnosis.",
+      "lesson": "pa-reasoning-l02"
+    },
+    {
+      "id": "pa-reasoning-c013",
+      "front": "How should a chief complaint be written?",
+      "back": "One line in the patient's own words with a duration, such as chest pressure for 2 hours. Not a hypothesis like rule out MI. The patient's adjective carries diagnostic information.",
+      "lesson": "pa-reasoning-l03"
+    },
+    {
+      "id": "pa-reasoning-c014",
+      "front": "What does OPQRST stand for?",
+      "back": "Onset, Provocation and palliation, Quality, Radiation, Severity from 0 to 10 now and at worst, and Timing. It is built for pain.",
+      "lesson": "pa-reasoning-l03"
+    },
+    {
+      "id": "pa-reasoning-c015",
+      "front": "What does OLDCARTS stand for and when do you use it?",
+      "back": "Onset, Location, Duration, Character, Aggravating and Alleviating factors, Radiation, Timing, Severity. Used for complaints that are not primarily pain.",
+      "lesson": "pa-reasoning-l03"
+    },
+    {
+      "id": "pa-reasoning-c016",
+      "front": "What is a pertinent negative and why does it matter?",
+      "back": "A symptom you asked about because of your differential and recorded as absent. It is evidence, and it proves on paper which dangerous diagnoses you considered.",
+      "lesson": "pa-reasoning-l03"
+    },
+    {
+      "id": "pa-reasoning-c017",
+      "front": "Why must every allergy be recorded with the reaction?",
+      "back": "Penicillin with hives is an allergy; penicillin with an upset stomach is a side effect. The distinction decides whether an entire antibiotic class stays available.",
+      "lesson": "pa-reasoning-l03"
+    },
+    {
+      "id": "pa-reasoning-c018",
+      "front": "In what order is the abdomen examined, and why that order?",
+      "back": "Inspect, auscultate, percuss, palpate, with the tender area last. Pressing first alters bowel sounds and makes the patient guard against the rest of the exam.",
+      "lesson": "pa-reasoning-l03"
+    },
+    {
+      "id": "pa-reasoning-c019",
+      "front": "How does a focused emergency H and P differ from a full admission H and P?",
+      "back": "The emergency version is hypothesis-driven: focused history, the past history that changes management now, and the exam that excludes the killers. The admission version is complete, because that team owns the patient for days.",
+      "lesson": "pa-reasoning-l03"
+    },
+    {
+      "id": "pa-reasoning-c020",
+      "front": "What are the three rankings inside a differential diagnosis?",
+      "back": "Must not miss (kills if missed, so excluded first), most likely (highest probability for this patient), and most treatable (where finding it changes management now). A good plan handles all three.",
+      "lesson": "pa-reasoning-l04"
+    },
+    {
+      "id": "pa-reasoning-c021",
+      "front": "How do you build a differential from anatomy?",
+      "back": "Walk the layers and organs of the region from outside in. Right upper quadrant: skin and wall, ribs and muscle, pleura and lung base, liver, gallbladder and ducts, duodenum, head of pancreas, right kidney, hepatic flexure.",
+      "lesson": "pa-reasoning-l04"
+    },
+    {
+      "id": "pa-reasoning-c022",
+      "front": "What does VINDICATE stand for?",
+      "back": "Vascular, Infectious, Neoplastic, Degenerative and Drugs, Iatrogenic and Idiopathic, Congenital, Autoimmune, Trauma and Toxins, Endocrine and Metabolic. A category checklist for confusing presentations.",
+      "lesson": "pa-reasoning-l04"
+    },
+    {
+      "id": "pa-reasoning-c023",
+      "front": "Does chest pain reproduced by pressing on the chest wall exclude a heart attack?",
+      "back": "No. It shifts probability toward a musculoskeletal cause, but roughly 7 percent of patients with reproducible chest wall tenderness are still having a coronary event.",
+      "lesson": "pa-reasoning-l04"
+    },
+    {
+      "id": "pa-reasoning-c024",
+      "front": "What is the three-item differential habit?",
+      "back": "Name three diagnoses with one reason each, plus one honest outlier and the specific thing you would check for it. Short enough to say in a hallway, complete enough to act on.",
+      "lesson": "pa-reasoning-l04"
+    },
+    {
+      "id": "pa-reasoning-c025",
+      "front": "Which four red flags repeat across nearly every chief complaint?",
+      "back": "Sudden onset, extremes of age, abnormal vital signs, and a focal neurologic deficit.",
+      "lesson": "pa-reasoning-l05"
+    },
+    {
+      "id": "pa-reasoning-c026",
+      "front": "Name the five must-not-miss causes of chest pain.",
+      "back": "Acute coronary syndrome, pulmonary embolism, aortic dissection, tension pneumothorax, and esophageal rupture. Pericardial tamponade is the sixth commonly added.",
+      "lesson": "pa-reasoning-l05"
+    },
+    {
+      "id": "pa-reasoning-c027",
+      "front": "Which headache features are red flags?",
+      "back": "Maximal within seconds (thunderclap), fever with stiff neck or rash, new headache after 50 with scalp tenderness or jaw pain on chewing, focal deficit or seizure, and any headache on blood thinners.",
+      "lesson": "pa-reasoning-l05"
+    },
+    {
+      "id": "pa-reasoning-c028",
+      "front": "What triad signals cauda equina syndrome in a patient with back pain?",
+      "back": "Numbness over the buttocks and inner thighs, urinary retention or incontinence, and weakness in both legs. It is time-critical, since delay costs permanent bowel, bladder, and sexual function.",
+      "lesson": "pa-reasoning-l05"
+    },
+    {
+      "id": "pa-reasoning-c029",
+      "front": "What is the rule for fever in an infant under 28 days old?",
+      "back": "A rectal temperature of 38.0 C, which is 100.4 F, or higher triggers a full sepsis evaluation, with no exception for a well-appearing baby.",
+      "lesson": "pa-reasoning-l05"
+    },
+    {
+      "id": "pa-reasoning-c030",
+      "front": "Why do elderly patients hide serious illness?",
+      "back": "Fever is blunted, beta blockers prevent tachycardia, and the white count may be normal. Heart attack presents as nausea or fatigue, pneumonia as confusion or a fall, infection as delirium, and a surgical abdomen can feel soft.",
+      "lesson": "pa-reasoning-l05"
+    },
+    {
+      "id": "pa-reasoning-c031",
+      "front": "Define sensitivity and specificity in one sentence each.",
+      "back": "Sensitivity: of people who have the disease, the fraction the test catches, so few false negatives. Specificity: of people without the disease, the fraction correctly called negative, so few false positives.",
+      "lesson": "pa-reasoning-l06"
+    },
+    {
+      "id": "pa-reasoning-c032",
+      "front": "What do SnNout and SpPin mean?",
+      "back": "SnNout: a highly sensitive test, when negative, rules the disease out. SpPin: a highly specific test, when positive, rules it in.",
+      "lesson": "pa-reasoning-l06"
+    },
+    {
+      "id": "pa-reasoning-c033",
+      "front": "Why do predictive values change from one setting to another?",
+      "back": "Positive and negative predictive value depend on prevalence. The same test that is trustworthy where disease is common produces mostly false positives where almost nobody has it.",
+      "lesson": "pa-reasoning-l06"
+    },
+    {
+      "id": "pa-reasoning-c034",
+      "front": "Why does a negative D-dimer rule out pulmonary embolism only in a low-risk patient?",
+      "back": "D-dimer is about 95 percent sensitive but only 40 to 50 percent specific. From a low starting probability a negative result falls below the roughly 2 percent stopping threshold; from a high starting point it does not, so the patient is imaged.",
+      "lesson": "pa-reasoning-l06"
+    },
+    {
+      "id": "pa-reasoning-c035",
+      "front": "Name five causes of a raised troponin that are not a heart attack.",
+      "back": "Pulmonary embolism, sepsis, kidney failure, heart failure, and myocarditis. Prolonged fast rhythms and cardiac contusion also do it. Troponin means myocardial injury, not a mechanism.",
+      "lesson": "pa-reasoning-l06"
+    },
+    {
+      "id": "pa-reasoning-c036",
+      "front": "What does a likelihood ratio tell you, and what do 10, 1, and 0.1 mean?",
+      "back": "How much a result multiplies the odds of disease. About 10 or higher is a big push toward the disease, 1 changes nothing, and 0.1 or lower is a big push away.",
+      "lesson": "pa-reasoning-l06"
+    },
+    {
+      "id": "pa-reasoning-c037",
+      "front": "What single question should be answered before ordering any test?",
+      "back": "What will I do differently for each possible result? If a positive and a negative lead to the same plan, the test is not indicated.",
+      "lesson": "pa-reasoning-l06"
+    },
+    {
+      "id": "pa-reasoning-c038",
+      "front": "What do number needed to treat and number needed to harm mean?",
+      "back": "NNT is how many patients must receive a treatment for one to benefit; NNH is how many before one is harmed. An NNT of 5 is a powerful drug, an NNT of 200 is a population-level effect.",
+      "lesson": "pa-reasoning-l06"
+    },
+    {
+      "id": "pa-reasoning-c039",
+      "front": "What are the five components of the HEART score?",
+      "back": "History, ECG, Age, Risk factors, and Troponin, each scored 0 to 2, for a total of 0 to 10.",
+      "lesson": "pa-reasoning-l07"
+    },
+    {
+      "id": "pa-reasoning-c040",
+      "front": "What are the HEART score bands and what does each mean?",
+      "back": "0 to 3 low risk, roughly 1 to 2 percent major cardiac events, generally dischargeable with follow-up. 4 to 6 moderate, observation with repeat troponins. 7 to 10 high, admit with cardiology.",
+      "lesson": "pa-reasoning-l07"
+    },
+    {
+      "id": "pa-reasoning-c041",
+      "front": "What are the highest-weighted items in the Wells score for pulmonary embolism?",
+      "back": "Clinical signs of a deep vein clot and embolism being the most likely diagnosis, at 3 points each. Heart rate over 100, recent immobilization or surgery, and a previous clot are 1.5 each.",
+      "lesson": "pa-reasoning-l07"
+    },
+    {
+      "id": "pa-reasoning-c042",
+      "front": "List the eight PERC criteria.",
+      "back": "Age under 50, heart rate under 100, room-air oxygen saturation 95 percent or higher, no one-sided leg swelling, no coughing of blood, no surgery or trauma in 4 weeks, no prior clot, and no hormone use.",
+      "lesson": "pa-reasoning-l07"
+    },
+    {
+      "id": "pa-reasoning-c043",
+      "front": "When may the PERC rule be applied at all?",
+      "back": "Only when your own pretest probability for pulmonary embolism is already under about 15 percent. In a higher-risk patient, a negative PERC does not exclude embolism.",
+      "lesson": "pa-reasoning-l07"
+    },
+    {
+      "id": "pa-reasoning-c044",
+      "front": "What does the Ottawa ankle rule require before an x-ray?",
+      "back": "Bone tenderness at the back edge or tip of either malleolus, at the navicular, or at the base of the fifth metatarsal, or inability to take four steps both at the scene and in the department.",
+      "lesson": "pa-reasoning-l07"
+    },
+    {
+      "id": "pa-reasoning-c045",
+      "front": "What are the five NEXUS criteria?",
+      "back": "No midline cervical tenderness, no focal neurologic deficit, normal alertness, no intoxication, and no painful distracting injury. All five must be satisfied to skip cervical spine imaging.",
+      "lesson": "pa-reasoning-l07"
+    },
+    {
+      "id": "pa-reasoning-c046",
+      "front": "What does CURB-65 stand for and what do the scores mean?",
+      "back": "Confusion, blood Urea nitrogen over 19 mg/dL, Respiratory rate 30 or more, Blood pressure with systolic under 90 or diastolic 60 or less, and age 65 or older. 0 to 1 outpatient, 2 consider admission, 3 or more admit.",
+      "lesson": "pa-reasoning-l07"
+    },
+    {
+      "id": "pa-reasoning-c047",
+      "front": "What are the qSOFA criteria, and what does a positive score mean?",
+      "back": "Respiratory rate 22 or more, altered mental status, systolic blood pressure 100 mmHg or less. Two or more flags a patient at risk of poor sepsis outcomes. It is a warning, not a diagnosis.",
+      "lesson": "pa-reasoning-l07"
+    },
+    {
+      "id": "pa-reasoning-c048",
+      "front": "What goes in each letter of SOAP?",
+      "back": "Subjective: what the patient tells you. Objective: what you measured and observed, without interpretation. Assessment: the one-liner, working diagnosis, and differential with reasons. Plan: what you did, will do, and the disposition.",
+      "lesson": "pa-reasoning-l08"
+    },
+    {
+      "id": "pa-reasoning-c049",
+      "front": "What three things must a medical decision making section show?",
+      "back": "The number and complexity of problems considered, the data reviewed and why, and the risk of both the condition and the treatment. In practice: which killers you considered and what argued against them.",
+      "lesson": "pa-reasoning-l08"
+    },
+    {
+      "id": "pa-reasoning-c050",
+      "front": "What four parts belong in written discharge instructions?",
+      "back": "What we think is going on in plain words, the medicine with dose and duration, who to follow up with and by when, and specific return precautions.",
+      "lesson": "pa-reasoning-l08"
+    },
+    {
+      "id": "pa-reasoning-c051",
+      "front": "Why are return precautions the most important paragraph in a discharge?",
+      "back": "They are the safety net for everything the workup could not exclude. They must name specific triggers, such as return if the pain comes back at rest or lasts more than 15 minutes.",
+      "lesson": "pa-reasoning-l08"
+    },
+    {
+      "id": "pa-reasoning-c052",
+      "front": "What is the structure of a radiology report, and which part is the answer?",
+      "back": "Clinical indication, technique, comparison, findings, then impression. The impression is the answer; the findings are the raw data.",
+      "lesson": "pa-reasoning-l08"
+    },
+    {
+      "id": "pa-reasoning-c053",
+      "front": "What belongs in a patient one-liner?",
+      "back": "Age, sex, the history that matters for this problem, the chief complaint, and the duration. It tells the listener which illness scripts to load.",
+      "lesson": "pa-reasoning-l09"
+    },
+    {
+      "id": "pa-reasoning-c054",
+      "front": "What is the order of a 60-second patient presentation?",
+      "back": "One-liner, history of present illness in order with pertinent positives and negatives, relevant history and medications, vitals and pertinent exam, results, assessment with two alternatives, plan and your specific question.",
+      "lesson": "pa-reasoning-l09"
+    },
+    {
+      "id": "pa-reasoning-c055",
+      "front": "How does presenting to a consultant differ from presenting to a provider?",
+      "back": "Lead with why you are calling and the question you need answered, then give the story. Consultants want the ask first; other listeners want the story first.",
+      "lesson": "pa-reasoning-l09"
+    },
+    {
+      "id": "pa-reasoning-c056",
+      "front": "What does SBAR stand for, and which phrase makes it work?",
+      "back": "Situation, Background, Assessment, Recommendation. The phrase is I'm worried because, which converts a report into an escalation. Always end with what you want.",
+      "lesson": "pa-reasoning-l09"
+    },
+    {
+      "id": "pa-reasoning-c057",
+      "front": "What are the four components of decision-making capacity?",
+      "back": "Understand the information, appreciate that it applies to them, reason with it by comparing options, and express a consistent choice. Capacity is clinical and decision-specific; competence is legal.",
+      "lesson": "pa-reasoning-l09"
+    },
+    {
+      "id": "pa-reasoning-c058",
+      "front": "What are the five elements of informed consent?",
+      "back": "The diagnosis, the proposed treatment, its risks and benefits, the alternatives with their risks and benefits, and the consequences of refusing, in understandable language with a voluntary choice.",
+      "lesson": "pa-reasoning-l09"
+    },
+    {
+      "id": "pa-reasoning-c059",
+      "front": "What makes an against-medical-advice discharge defensible?",
+      "back": "A documented capacity assessment and the specific risks explained in plain words, plus offering what the patient will accept, giving prescriptions and follow-up, real return precautions, and an invitation to return. The signature alone is not a shield.",
+      "lesson": "pa-reasoning-l09"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "pa-reasoning-q001",
+      "q": "A provider steps into a room, glances at the patient, and immediately asks for a 12-lead ECG and IV access before taking a history. Which statement about this reasoning is most accurate?",
+      "choices": [
+        "It is System 1 pattern recognition, appropriate as a generator but requiring a deliberate check that the killers do not fit",
+        "It is System 2 analytic reasoning and should be applied to every patient in the department",
+        "It is a cognitive error, because no reasoning is valid before a complete history",
+        "It is acceptable for experienced clinicians and does not require later verification"
+      ],
+      "answer": 0,
+      "why": "Instant recognition from a glance is System 1 pattern matching, which is the normal and efficient first step; the safeguard is 30 seconds of deliberate checking afterward. System 2 is the slow mode and cannot be run on everyone. Calling early recognition an error ignores that it is the most reliable early signal available, and no one's pattern match is exempt from verification.",
+      "lesson": "pa-reasoning-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-reasoning-q002",
+      "q": "Which set of observations best supports a sick impression before any vital signs have been taken?",
+      "choices": [
+        "A stated pain score of 10 out of 10 with a calm affect",
+        "Tripod posture, damp skin, and speech in two- or three-word bursts",
+        "A long list of chronic medications on the home list",
+        "A prior visit for the same complaint three weeks ago"
+      ],
+      "answer": 1,
+      "why": "Work of breathing, skin findings, and the inability to complete a sentence are physiologic and observable from the doorway. A pain score is subjective and tracks poorly with severity of illness, a medication list is history rather than a current finding, and a repeat visit is a reason for more suspicion but is not itself a physiologic sign.",
+      "lesson": "pa-reasoning-l01",
+      "difficulty": 1
+    },
+    {
+      "id": "pa-reasoning-q003",
+      "q": "A 74-year-old on metoprolol has serial vitals of HR 78 with BP 148/86, then HR 84 with BP 122/74, then HR 88 with BP 104/66. He says he feels a little off. What is the most accurate reading?",
+      "choices": [
+        "Reassuring, since the heart rate never exceeds 100",
+        "An expected effect of his home blood pressure medication",
+        "A falling pressure with a blunted heart rate response, consistent with early shock in a beta-blocked patient",
+        "Measurement artifact, since each change is small"
+      ],
+      "answer": 2,
+      "why": "Beta blockers prevent the compensatory tachycardia you normally rely on, so a rate under 100 is not reassurance in this patient. A systolic dropping from 148 to 104 is a large relative fall in someone who lives hypertensive, and a home medication does not produce a progressive decline over one visit. Small consistent changes in the same direction paired with a symptom are signal, not artifact.",
+      "lesson": "pa-reasoning-l01",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-reasoning-q004",
+      "q": "A 61-year-old woman with epigastric burning is labeled likely gastritis at triage, improves slightly with antacids, and is nearly discharged before an ECG shows an inferior STEMI. Which pair of biases best explains what happened?",
+      "choices": [
+        "Availability and base-rate neglect",
+        "Confirmation bias and the sunk cost fallacy",
+        "Attribution bias and outcome bias",
+        "Anchoring and premature closure"
+      ],
+      "answer": 3,
+      "why": "The first label set the frame, which is anchoring, and the search stopped once an explanation appeared to fit, which is premature closure. Availability is over-weighting what was seen recently, attribution bias explains a complaint away by who the patient is, and outcome bias only operates after the result is known.",
+      "lesson": "pa-reasoning-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-reasoning-q005",
+      "q": "Which single question is the most effective bedside debiasing tool during a patient encounter?",
+      "choices": [
+        "What else could this be?",
+        "Does the patient agree with my diagnosis?",
+        "Have I seen a case that looked like this before?",
+        "What is the most common cause of this symptom?"
+      ],
+      "answer": 0,
+      "why": "Forcing yourself to name alternatives is the technique that most consistently reduces diagnostic error. Asking whether you have seen it before actively recruits availability bias, reaching for the most common cause reinforces the pattern you are trying to test, and patient agreement is not a check on diagnostic accuracy.",
+      "lesson": "pa-reasoning-l02",
+      "difficulty": 1
+    },
+    {
+      "id": "pa-reasoning-q006",
+      "q": "A man well known to the department for alcohol-related visits arrives smelling of alcohol, sleepy but arousable, with a fresh scalp abrasion. The plan is a hallway bed until he sobers up. What is the strongest argument against that plan?",
+      "choices": [
+        "Department policy requires admission for all patients with alcohol use disorder",
+        "His altered mental status has a second plausible cause, head injury, and his familiar history is lowering the evidence threshold without justification",
+        "Every intoxicated patient requires a head CT before disposition",
+        "He cannot be assessed in any way until he is completely sober"
+      ],
+      "answer": 1,
+      "why": "This is attribution bias: a familiar history is being used to explain away a finding with a dangerous alternative, and a scalp abrasion with depressed mental status raises subdural hematoma. There is no blanket policy requiring admission or imaging for intoxication, and serial reassessment rather than waiting passively for sobriety is how these patients are actually watched.",
+      "lesson": "pa-reasoning-l02",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-reasoning-q007",
+      "q": "Which of the following is written correctly as a chief complaint?",
+      "choices": [
+        "Rule out acute coronary syndrome",
+        "Patient is a poor historian",
+        "It feels like something is sitting on my chest, for 3 hours",
+        "Chest pain, likely musculoskeletal given the age"
+      ],
+      "answer": 2,
+      "why": "A chief complaint is the patient's own words plus a duration, and the exact adjective carries diagnostic information that a paraphrase loses. The first and last choices are hypotheses rather than complaints, and calling someone a poor historian records a judgment instead of any information.",
+      "lesson": "pa-reasoning-l03",
+      "difficulty": 1
+    },
+    {
+      "id": "pa-reasoning-q008",
+      "q": "A note for a 45-year-old with chest pain reads: positive for sweating and nausea; denies fever, cough, coughing blood, leg swelling, recent travel, or tearing pain to the back. What do the denials accomplish?",
+      "choices": [
+        "They definitively exclude pneumonia, pulmonary embolism, and aortic dissection",
+        "They satisfy a billing requirement and nothing more",
+        "They remove the need for a separate review of systems",
+        "They record which dangerous diagnoses were considered and supply evidence against them"
+      ],
+      "answer": 3,
+      "why": "Pertinent negatives are evidence and they display your differential on paper. They argue against pneumonia, embolism, and dissection but do not definitively exclude them, since exclusion requires a rule or a test. Billing is a byproduct, and pertinent negatives do not replace the review of systems.",
+      "lesson": "pa-reasoning-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-reasoning-q009",
+      "q": "Which sequence for the abdominal examination is correct, and for what reason?",
+      "choices": [
+        "Inspect, auscultate, percuss, palpate, because pressing first alters bowel sounds and makes the patient guard",
+        "Palpate, inspect, auscultate, percuss, because the tender area should be identified first",
+        "Auscultate, palpate, inspect, percuss, because bowel sounds are the most reliable finding",
+        "Percuss, palpate, inspect, auscultate, because air-fluid levels must be identified first"
+      ],
+      "answer": 0,
+      "why": "Listening before touching preserves unaltered bowel sounds, and saving palpation for last, with the tender area last of all, keeps the remainder of the exam usable. Bowel sounds are in fact one of the weaker findings in abdominal pain, which is a reason not to destroy them for nothing, and once a patient guards you cannot get the earlier information back.",
+      "lesson": "pa-reasoning-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-reasoning-q010",
+      "q": "Why is a must-not-miss diagnosis addressed before the most likely diagnosis, even when its probability is low?",
+      "choices": [
+        "Because it is statistically more common in an emergency department population",
+        "Because the cost of missing it is severe and irreversible, so it is excluded first regardless of probability",
+        "Because such diagnoses are faster and easier to exclude than common conditions",
+        "Because reimbursement rules require advanced imaging before any other testing"
+      ],
+      "answer": 1,
+      "why": "The ranking is driven by consequence, not frequency. Killers are generally less common and are often harder, not easier, to exclude, and the likely diagnosis is named only after the dangerous ones have been addressed. Billing rules play no part in the ordering.",
+      "lesson": "pa-reasoning-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-reasoning-q011",
+      "q": "A 70-year-old arrives confused with no obvious source. Working the VINDICATE categories, which pairing of category and cause is correct?",
+      "choices": [
+        "Vascular: benzodiazepine overdose",
+        "Neoplastic: alcohol withdrawal",
+        "Endocrine and Metabolic: low blood sugar or a sodium derangement",
+        "Congenital: subdural hematoma"
+      ],
+      "answer": 2,
+      "why": "Low blood sugar and sodium abnormalities are metabolic causes and are among the very first things checked in new confusion, because both are common and both are immediately reversible. Benzodiazepines fall under drugs, alcohol withdrawal under drugs and toxins, and a subdural hematoma under trauma.",
+      "lesson": "pa-reasoning-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-reasoning-q012",
+      "q": "A 55-year-old smoker with 2 hours of substernal chest pressure has the pain partially reproduced when you press on his sternum. What is the correct conclusion to draw?",
+      "choices": [
+        "Acute coronary syndrome is excluded and the pain is musculoskeletal",
+        "The finding is meaningless and should not be documented",
+        "The finding establishes costochondritis as the diagnosis",
+        "A musculoskeletal cause becomes somewhat more likely, but a coronary event is not excluded"
+      ],
+      "answer": 3,
+      "why": "Roughly 7 percent of patients with reproducible chest wall tenderness are having a coronary event anyway, so the finding shifts probability without excluding anything. It is worth documenting precisely because it shifts probability, and treating a single bedside finding as a rule-out for a killer is a classic and lethal error.",
+      "lesson": "pa-reasoning-l04",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-reasoning-q013",
+      "q": "A 44-year-old reports a headache that reached maximum intensity within seconds while he sat watching television, and calls it the worst of his life. What is the leading concern?",
+      "choices": [
+        "Subarachnoid hemorrhage",
+        "Tension headache from stress",
+        "Migraine without aura",
+        "Temporal arteritis"
+      ],
+      "answer": 0,
+      "why": "Thunderclap onset, meaning maximal intensity within about a minute, is the classic presentation of bleeding into the space around the brain and is the reason this headache cannot simply be treated and discharged. Tension headaches and migraines build over minutes to hours, and temporal arteritis is a subacute headache in patients over 50 with scalp tenderness and jaw pain on chewing.",
+      "lesson": "pa-reasoning-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-reasoning-q014",
+      "q": "Which combination in a patient with low back pain requires immediate escalation rather than routine evaluation?",
+      "choices": [
+        "Pain worse with bending forward and relieved by rest",
+        "Numbness over the buttocks and inner thighs with new urinary retention and weakness in both legs",
+        "Palpable muscle spasm alongside the spine",
+        "Pain that began after lifting a heavy box the previous day"
+      ],
+      "answer": 1,
+      "why": "Saddle numbness, urinary retention, and bilateral leg weakness together are cauda equina syndrome, where delay costs permanent bowel, bladder, and sexual function. Mechanical pain, paraspinal spasm, and a lifting history describe the ordinary pattern and carry no red flag on their own.",
+      "lesson": "pa-reasoning-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-reasoning-q015",
+      "q": "A 19-day-old infant has a rectal temperature of 38.2 C, is feeding well, and smiles at his mother. What is the correct action?",
+      "choices": [
+        "Advise fluids and recheck in 24 hours, since the baby looks well",
+        "Give weight-based acetaminophen and discharge with return precautions",
+        "Full sepsis evaluation, because appearance does not exclude serious infection at this age",
+        "Test for respiratory viruses only, and discharge if positive"
+      ],
+      "answer": 2,
+      "why": "Under 28 days, a rectal temperature of 38.0 C or higher triggers a full evaluation regardless of how well the infant appears, because newborns can be bacteremic or have meningitis while still feeding and smiling. Reassurance, a fever reducer, or viral testing alone all rely on an appearance that is simply not reliable at this age.",
+      "lesson": "pa-reasoning-l05",
+      "difficulty": 1
+    },
+    {
+      "id": "pa-reasoning-q016",
+      "q": "An 84-year-old woman on atenolol is brought in after a fall. She is confused, temperature 37.1 C, heart rate 82, blood pressure 118/64, and her family says she normally runs around 165/90. Which interpretation is best?",
+      "choices": [
+        "She is well, since all her vital signs fall within normal ranges",
+        "Confusion after a fall in this age group is almost always dementia progressing",
+        "The absence of fever effectively rules out infection at her age",
+        "Her vitals are falsely reassuring: fever is blunted, her beta blocker prevents tachycardia, and 118/64 may be relative hypotension for her"
+      ],
+      "answer": 3,
+      "why": "Each individual number sits in the normal range, but relative to her own baseline and her medications the picture is consistent with serious illness such as sepsis or an intracranial bleed. Elderly patients mount weaker fevers, beta blockers block the compensatory tachycardia, and attributing new confusion to dementia is the attribution error that misses reversible causes.",
+      "lesson": "pa-reasoning-l05",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-reasoning-q017",
+      "q": "A patient has pleuritic chest pain, a heart rate of 112, a swollen right calf, and a knee replacement 10 days ago. His D-dimer returns negative. What does that result mean?",
+      "choices": [
+        "The pretest probability was high, so a negative D-dimer does not exclude embolism and imaging is still required",
+        "Pulmonary embolism is excluded, because D-dimer is a highly sensitive test",
+        "The specimen was probably mishandled and the test should be repeated",
+        "A negative D-dimer carries no information in any patient"
+      ],
+      "answer": 0,
+      "why": "A negative result from a sensitive test lowers probability by a fixed amount, and starting from a high pretest probability that is not enough to fall under the threshold for stopping. In a genuinely low-risk patient the identical result would exclude the disease, which is exactly what makes pretest probability the deciding factor, and repeating the test does not change the starting number.",
+      "lesson": "pa-reasoning-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-reasoning-q018",
+      "q": "What does the memory aid SnNout describe about a diagnostic test?",
+      "choices": [
+        "A highly specific test, when positive, rules the disease in",
+        "A highly sensitive test, when negative, rules the disease out",
+        "A test with a high positive predictive value in any population",
+        "A test whose result does not depend on disease prevalence"
+      ],
+      "answer": 1,
+      "why": "SnNout pairs high sensitivity with a negative result to rule out, because a sensitive test produces few false negatives. Ruling in with a positive result from a specific test is SpPin, and predictive values always depend on prevalence, which is precisely what sensitivity and specificity do not.",
+      "lesson": "pa-reasoning-l06",
+      "difficulty": 1
+    },
+    {
+      "id": "pa-reasoning-q019",
+      "q": "The same test is used in an emergency department where 20 percent of tested patients have the disease and in a screening clinic where 1 percent do. What changes between the two settings?",
+      "choices": [
+        "Sensitivity falls in the screening clinic",
+        "Specificity rises in the screening clinic",
+        "Positive predictive value falls in the screening clinic, so a larger share of positives are false",
+        "Nothing changes, because test characteristics are fixed properties"
+      ],
+      "answer": 2,
+      "why": "Sensitivity and specificity are properties of the test itself and do not move with the population. Predictive values do depend on prevalence, so in a low-prevalence setting a positive result is far more likely to be false, which is exactly why screening low-risk populations generates so much unnecessary follow-up testing.",
+      "lesson": "pa-reasoning-l06",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-reasoning-q020",
+      "q": "A septic patient with pneumonia has a troponin of 0.09 ng/mL with an upper limit of 0.03, and no chest pain. What is the most accurate statement?",
+      "choices": [
+        "This confirms an acute myocardial infarction and requires immediate catheterization",
+        "The result must be a laboratory error, since he has no chest pain",
+        "Troponin is specific to coronary plaque rupture, so a coronary cause is certain",
+        "Troponin indicates heart muscle injury, which occurs in sepsis, embolism, kidney failure, and heart failure as well as infarction"
+      ],
+      "answer": 3,
+      "why": "An elevated troponin means myocardial cells released protein, not that a coronary artery occluded; sepsis, pulmonary embolism, kidney failure, heart failure, myocarditis, and prolonged tachycardia all raise it. Calling it an error ignores a real finding that carries prognostic weight, and treating it as proof of infarction sends a septic patient to the wrong pathway.",
+      "lesson": "pa-reasoning-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-reasoning-q021",
+      "q": "A 62-year-old with two cardiac risk factors has a moderately suspicious history, non-specific ECG changes, and a normal troponin. What is his HEART score and the expected pathway?",
+      "choices": [
+        "Score 4, moderate risk, observation with repeat troponins",
+        "Score 2, low risk, discharge with no follow-up needed",
+        "Score 8, high risk, admission to cardiology",
+        "Score 6, high risk, catheterization laboratory tonight"
+      ],
+      "answer": 0,
+      "why": "History 1, ECG 1, age 62 for 1, one to two risk factors for 1, and a normal troponin for 0 totals 4, which lands in the moderate band of 4 to 6 and means observation with serial troponins rather than discharge. High risk begins at 7, and even a genuinely low-risk patient still gets follow-up arranged.",
+      "lesson": "pa-reasoning-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-reasoning-q022",
+      "q": "A 38-year-old has pleuritic chest pain. The clinician's pretest probability for pulmonary embolism is roughly 10 percent, and all eight PERC criteria are negative. What is the appropriate next step?",
+      "choices": [
+        "Order a CT pulmonary angiogram regardless of the PERC result",
+        "No further testing for embolism is needed, because PERC applies at this pretest probability",
+        "Order a D-dimer to confirm the PERC result before stopping",
+        "Admit for serial D-dimers over the next 24 hours"
+      ],
+      "answer": 1,
+      "why": "PERC exists for exactly this situation: a pretest probability under about 15 percent with all eight criteria negative, where further testing causes more harm than it prevents. Adding a D-dimer here generates false positives that pull the patient into a contrast CT, and imaging or admission is more aggressive still.",
+      "lesson": "pa-reasoning-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-reasoning-q023",
+      "q": "Which patient can have the cervical spine cleared by NEXUS without any imaging?",
+      "choices": [
+        "An alert, sober patient with no midline neck tenderness, no deficit, and an obviously fractured femur",
+        "A patient who smells strongly of alcohol but reports no neck pain",
+        "An alert, sober patient with no midline tenderness, no focal deficit, and no painful distracting injury",
+        "A confused elderly patient with no neck tenderness on palpation"
+      ],
+      "answer": 2,
+      "why": "All five NEXUS criteria must be satisfied simultaneously. A femur fracture is a painful distracting injury, intoxication invalidates the reliability of the exam, and confusion fails the normal alertness criterion, so each of those patients needs imaging or a different rule.",
+      "lesson": "pa-reasoning-l07",
+      "difficulty": 1
+    },
+    {
+      "id": "pa-reasoning-q024",
+      "q": "A 68-year-old with pneumonia is confused, has a respiratory rate of 32, a blood pressure of 104/58, and a blood urea nitrogen of 24 mg/dL. What is the CURB-65 score and what does it imply?",
+      "choices": [
+        "Score 1, outpatient treatment is appropriate",
+        "Score 2, discharge with a same-day recheck",
+        "Score 5, immediate comfort-focused care only",
+        "Score 4, admit and consider intensive care"
+      ],
+      "answer": 3,
+      "why": "Confusion, urea over 19, respiratory rate 30 or more, and age 65 or older each score one, for a total of 4, while the blood pressure does not qualify because the systolic is above 90 and the diastolic is above 60. Scores of 3 or more mean admission with intensive care considered, and the maximum possible score here would be 5.",
+      "lesson": "pa-reasoning-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-reasoning-q025",
+      "q": "A chart entry reads in full: Assessment, chest pain. Plan, admit. What is its principal deficiency?",
+      "choices": [
+        "It documents no medical decision making, since it shows no problems considered, no data reviewed, and no risk assessment",
+        "It is too brief to be billable, which is the primary problem with it",
+        "It uses OPQRST where OLDCARTS would have been correct",
+        "It omits the patient's family history and immunization status"
+      ],
+      "answer": 0,
+      "why": "The medical decision making section exists to show which dangerous diagnoses were considered, what data was reviewed and why, and what level of risk justified the disposition. Billing follows from that documentation rather than being its purpose, and neither a different mnemonic nor a family history line would repair an assessment containing no reasoning.",
+      "lesson": "pa-reasoning-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-reasoning-q026",
+      "q": "A head CT report concludes: no acute intracranial abnormality, clinical correlation recommended. What does this tell the treating clinician?",
+      "choices": [
+        "The brain is entirely normal and no further concern is warranted",
+        "Nothing urgent is visible on this study, and the clinical decision still rests with the treating clinician",
+        "The radiologist believes the patient is having a stroke",
+        "A repeat CT has been formally ordered for 6 hours from now"
+      ],
+      "answer": 1,
+      "why": "No acute abnormality means nothing urgent was seen on this particular study, which is narrower than a normal brain, and early ischemic stroke is frequently invisible on an initial non-contrast CT. Clinical correlation recommended hands the decision back to the person who holds the history, and it is not itself an order for repeat imaging.",
+      "lesson": "pa-reasoning-l08",
+      "difficulty": 1
+    },
+    {
+      "id": "pa-reasoning-q027",
+      "q": "A patient's blood pressure has drifted down over three checks and you want the provider at the bedside now. Which SBAR element is most often omitted, and what fixes it?",
+      "choices": [
+        "Background is omitted, and reciting the full past medical history fixes it",
+        "Situation is omitted, and stating the room number fixes it",
+        "The recommendation is omitted, and saying I'm worried because, followed by what you want, fixes it",
+        "Assessment is omitted, and waiting for one more set of vitals fixes it"
+      ],
+      "answer": 2,
+      "why": "Most failed escalations are reports delivered without a request, so the missing piece is the recommendation. Naming your concern and what triggered it is the protected language that makes a concern actionable, whereas a full history buries the point and waiting for another set of vitals is precisely the delay escalation exists to prevent.",
+      "lesson": "pa-reasoning-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-reasoning-q028",
+      "q": "A man with chest pain and an abnormal ECG wants to leave. He is alert, explains his diagnosis back to you, states that he could die tonight, weighs that against needing to get home to his children, and gives the same answer each time you ask. What is the correct approach?",
+      "choices": [
+        "He lacks capacity because the choice is unwise, so he may be held until he agrees",
+        "Have him sign the against-medical-advice form, which is sufficient legal protection by itself",
+        "Call security, since refusing cardiac care makes a patient a danger to himself",
+        "He has capacity: document the assessment and the specific risks discussed, offer what he will accept, and give prescriptions, follow-up, and return precautions"
+      ],
+      "answer": 3,
+      "why": "He demonstrates all four components of capacity, and a choice made with capacity remains his even when it is unwise. The signature by itself protects nothing; the documented capacity assessment and the specific risks explained are what matter, and detaining a patient who has capacity is false imprisonment rather than safe practice.",
+      "lesson": "pa-reasoning-l09",
+      "difficulty": 3
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "pa-reasoning-s01",
+      "title": "Chest pain, from the doorway to the disposition",
+      "setting": "classroom",
+      "intro": "This is a reasoning walkthrough, not a procedure. There is no equipment to reach for and no protocol to follow, only the thinking, one decision at a time.\n\nA 58-year-old man has been roomed for chest pain. The triage note reads: **anxiety, history of panic attacks.** Work the case the way a clinician would, and notice at each step which choice is reasoning and which is a shortcut.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "You stop in the doorway before you say anything. He is sitting upright on the edge of the stretcher, shirt off, a sheen of sweat across his forehead, one hand held flat against his breastbone. He answers you in full sentences. The room is not warm.\n\nWhat do you do with the triage label?",
+          "vitals": {
+            "hr": 92,
+            "bp": "156/94",
+            "rr": 18,
+            "spo2": 97,
+            "temp": 36.8
+          },
+          "choices": [
+            {
+              "text": "Accept the triage impression, plan for a quiet room and reassurance.",
+              "next": "s2",
+              "feedback": "This is anchoring and diagnosis momentum in a single move. A triage label is a hypothesis written in 15 seconds by someone with less information than you have right now. Sweating at rest in a cool room with a flat palm on the sternum is a cardiac pattern until something proves otherwise.",
+              "score": -1
+            },
+            {
+              "text": "Register sick from the doorway, the sweating, the posture, the flat hand on the chest, and treat the triage label as unproven.",
+              "next": "s2",
+              "feedback": "Correct. The doorway impression is real data. Sweating at rest is a sympathetic surge, and a flat palm pressed on the sternum describes pressure rather than a point of pain, which is how patients show you a cardiac quality without having the word for it.",
+              "score": 1
+            },
+            {
+              "text": "Form no impression at all until the vital signs and an ECG are available.",
+              "next": "s2",
+              "feedback": "Not harmful, but you are throwing away free information. His vitals here are close to unremarkable, a rate of 92 and a pressure of 156/94 would stop nobody, and if you wait for numbers to tell you a patient is sick you will be late on every patient who compensates well.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "You take the story. Three hours of pressure, like something sitting on me, under the breastbone, which began while he carried groceries up a flight of stairs. `6/10`. It comes with nausea and sweating and eases a little at rest. Pressing on his chest does not reproduce it. He has high blood pressure and high cholesterol, smokes a pack a day and has for 30 years, and his father had a heart attack at 52.\n\nWhich additional questions are doing the most work right now?",
+          "choices": [
+            {
+              "text": "Ask how his mood has been, whether he is under stress, and whether he has had panic attacks before.",
+              "next": "s3",
+              "feedback": "These questions only hunt for evidence supporting the label you were handed. Even if every answer is yes, an anxious man can have a heart attack, and searching for confirmation of the benign answer is exactly how premature closure happens.",
+              "score": -1
+            },
+            {
+              "text": "Ask whether the pain tore or ripped through to his back, whether he has had recent surgery, a long flight, or leg swelling, and whether he has had fever or a cough.",
+              "next": "s3",
+              "feedback": "Right. These are the pertinent negatives for the killers: dissection, pulmonary embolism, and pneumonia. Asked because of a differential and recorded whether present or absent, they are what makes a note show reasoning instead of just findings.",
+              "score": 1
+            },
+            {
+              "text": "Run a complete head-to-toe review of systems before doing anything else.",
+              "next": "s3",
+              "feedback": "Thorough but misaimed for this encounter. A focused review of the two to four systems touching your differential buys the same safety in a fraction of the time. The full review of systems belongs in the admission history and physical, where that team owns the whole patient.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "Someone asks what you think. Say your differential out loud, the way it would be said on rounds.",
+          "choices": [
+            {
+              "text": "Chest pain, probably cardiac.",
+              "next": "s4",
+              "feedback": "Not wrong, just not useful. It names no alternatives and gives no reasons, so nobody can check your thinking or catch what you left out. A differential that cannot be audited is not doing its job.",
+              "score": 0
+            },
+            {
+              "text": "Acute coronary syndrome first, because of the exertional pressure, the sweating, three risk factors and the family history. Pulmonary embolism is possible but there is no low oxygen, no leg findings, no immobilization. Dissection is least likely, but I want pressures in both arms. Pneumonia does not fit, no fever and no cough.",
+              "next": "s4",
+              "feedback": "That is the three-item habit with an honest outlier: named diagnoses, one reason each, and a specific thing you want checked. It is short enough to say in a hallway and complete enough for someone to act on.",
+              "score": 1
+            },
+            {
+              "text": "It could be anything from reflux to a heart attack to a clot to costochondritis to shingles to a panic attack.",
+              "next": "s4",
+              "feedback": "A list of twenty is the same as no list. Nothing is ranked, nothing is excluded, and nobody can act on it. The entire point of ordering a differential is that the order decides what happens next.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "The ECG shows sinus rhythm with `1 mm` of ST depression in V4 through V6. The first troponin is `0.04 ng/mL` against an upper limit of `0.03`. Arm pressures are within `4 mmHg` of each other. Someone suggests adding a D-dimer, just to be safe.",
+          "vitals": {
+            "hr": 88,
+            "bp": "152/90",
+            "rr": 18,
+            "spo2": 97
+          },
+          "choices": [
+            {
+              "text": "Send it. More information is always safer.",
+              "next": "s5",
+              "feedback": "This is the order-everything reflex. His pretest probability for embolism is low, D-dimer is only 40 to 50 percent specific, and a false positive commits him to a contrast CT with radiation for a disease the history already argued against, while the real pathway waits.",
+              "score": -1
+            },
+            {
+              "text": "No. His pretest probability for embolism is low and the result would not change the plan either way, because the ECG and troponin have already set the pathway.",
+              "next": "s5",
+              "feedback": "Correct, and for the correct reason. Order a test when you already know what each possible result would change. Here a positive and a negative both lead to the same next steps, which is the definition of a test that should not be sent.",
+              "score": 1
+            },
+            {
+              "text": "No, because a negative D-dimer can never rule out a pulmonary embolism in anyone.",
+              "next": "s5",
+              "feedback": "Right conclusion, wrong reason, and the wrong reason will hurt you later. A negative D-dimer does exclude embolism in a genuinely low-risk patient, which is precisely what the test is for. The reason to skip it here is that the result changes nothing.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "Score him. History is highly suspicious for `2`, the ECG shows significant ST deviation for `2`, age 58 gives `1`, three or more risk factors gives `2`, and a troponin between one and three times normal gives `1`. Total HEART score `8`.\n\nWhat does that mean, and what happens next?",
+          "choices": [
+            {
+              "text": "High risk. He is admitted with cardiology involved, on continuous monitoring, with a repeat troponin and ECG at 3 hours, to a telemetry bed.",
+              "next": "s6",
+              "feedback": "Correct, and specific. A HEART score of 7 to 10 is the high band, and the disposition names a destination, a service, and a timeline, which is what makes it actually happen in a busy department.",
+              "score": 1
+            },
+            {
+              "text": "High risk, so he needs admission, though the service and the timing can be sorted out later.",
+              "next": "s6",
+              "feedback": "The risk read and the bucket are both right. What is missing is the specific ask. A disposition without a named destination, a named service, and a timeline stalls, and the patient stays in the hallway while everyone assumes someone else is arranging it.",
+              "score": 0
+            },
+            {
+              "text": "Moderate risk, so observe him for six hours and reassess.",
+              "next": "s6",
+              "feedback": "A HEART score of 8 sits in the high band of 7 to 10, which carries a major adverse cardiac event rate in the tens of percent. Observation with serial troponins is the moderate-risk pathway for scores of 4 to 6.",
+              "score": -1
+            },
+            {
+              "text": "Low risk with outpatient follow-up, since his vital signs are normal and he is comfortable at rest.",
+              "next": "s6",
+              "feedback": "Normal vital signs do not lower a HEART score, and comfort at rest is not reassurance in acute coronary syndrome, where the pain often eases between events. Low risk is a score of 0 to 3.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "prompt": "Before the handoff you take a diagnostic time-out. What belongs in those twenty seconds, and in the sentence you hand over?",
+          "choices": [
+            {
+              "text": "Working diagnosis, what does not fit, the worst thing it could still be, then a handoff that opens with the one-liner and closes with what you want.",
+              "next": "end",
+              "feedback": "Correct. The time-out is three questions and it takes less time than finding a pen. The handoff that opens with the one-liner and ends with a request is the one that gets acted on rather than filed.",
+              "score": 1
+            },
+            {
+              "text": "A summary of everything in the chart, in the order it was entered.",
+              "next": "end",
+              "feedback": "Complete but unusable. The receiving clinician is assembling a picture and needs the one-liner first, the pertinent findings next, and the ask last. Chronological chart dumps bury the two sentences that matter.",
+              "score": 0
+            },
+            {
+              "text": "Nothing. The chart has it all and the next clinician can read it.",
+              "next": "end",
+              "feedback": "The chart is a record, not a handoff. A large share of serious errors traced back to communication happen exactly here, in the gap between two people who each assumed the other had read it.",
+              "score": -1
+            }
+          ]
+        }
+      ],
+      "debrief": "The pattern to keep: the doorway impression comes first and it is data; the triage label is a hypothesis someone else wrote, not a finding; pertinent negatives are how you show which killers you considered; a test you would not act on differently should not be sent; and a disposition is only real when it names a destination, a service, and a timeline.\n\nNotice what never happened in this case. Nobody ordered a test to feel safer, and nobody named the likely diagnosis before the dangerous ones had been addressed. That order, killers first and likely second, is the whole method."
+    },
+    {
+      "id": "pa-reasoning-s02",
+      "title": "Writing the note on a case you just saw",
+      "setting": "classroom",
+      "intro": "You saw the patient. Now write it up. At each step you are shown three versions of one section of the note, and you pick the best.\n\n**The case:** a 24-year-old woman with 6 hours of abdominal pain that began around her navel and settled in the right lower quadrant, with nausea, one episode of vomiting, and no appetite. Last menstrual period 5 weeks ago, no vaginal bleeding or discharge, no burning with urination, no diarrhea.\n\n**What you found:** `T 38.1 C, HR 104, BP 118/72, RR 18, SpO2 99% room air`. Tender in the right lower quadrant with guarding, and pressing on the left lower quadrant reproduces pain on the right. Urine pregnancy test negative. Urinalysis with a few white cells, no nitrites, no blood.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "Choose the best **Subjective** section.",
+          "choices": [
+            {
+              "text": "24-year-old woman with abdominal pain. Rule out appendicitis.",
+              "next": "s2",
+              "feedback": "That is a hypothesis, not a subjective section. The chief complaint belongs in the patient's words with a duration, and the history of present illness has to contain a story that somebody else could reason from independently.",
+              "score": -1
+            },
+            {
+              "text": "24-year-old woman with 6 hours of pain that began around the navel and moved to the right lower quadrant, with nausea, one episode of vomiting, and loss of appetite. Last menstrual period 5 weeks ago. Denies vaginal bleeding or discharge, burning with urination, or diarrhea.",
+              "next": "s2",
+              "feedback": "Correct. It is chronological, it preserves the migration of the pain that carries most of the diagnostic weight, and the denials are the pertinent negatives that show you considered ectopic pregnancy, urinary infection, and gastroenteritis.",
+              "score": 1
+            },
+            {
+              "text": "Patient complains of severe abdominal pain, appears uncomfortable, abdomen tender to palpation in the right lower quadrant with guarding.",
+              "next": "s2",
+              "feedback": "Everything after the first clause is objective. What you observed and measured belongs in O, and mixing the two makes the note hard to read and hard to defend, because no reader can separate what she reported from what you found.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "Choose the best **Objective** section.",
+          "choices": [
+            {
+              "text": "Vitals stable. Abdomen tender in the right lower quadrant, consistent with appendicitis.",
+              "next": "s3",
+              "feedback": "Two problems. Vitals stable is not a measurement, and it hides a temperature of 38.1 with a heart rate of 104. And consistent with appendicitis is an interpretation, which belongs in the assessment where a reader can weigh it.",
+              "score": -1
+            },
+            {
+              "text": "T 38.1 C, HR 104, BP 118/72, RR 18, SpO2 99 percent on room air. Alert, uncomfortable. Abdomen soft elsewhere, tender in the right lower quadrant with voluntary guarding, pain in the right lower quadrant on palpation of the left. Urine pregnancy negative. Urinalysis with a few white cells, no nitrites, no blood.",
+              "next": "s3",
+              "feedback": "Correct. Every number is written out, the exam findings are described rather than labeled, and the results are stated without a verdict attached. A later reader can reach their own conclusion from this section, which is the test of a good O.",
+              "score": 1
+            },
+            {
+              "text": "T 38.1 C, HR 104, BP 118/72, RR 18, SpO2 99 percent on room air. Pregnancy test negative.",
+              "next": "s3",
+              "feedback": "Accurate as far as it goes, but the exam is missing entirely, and the exam is where the diagnosis lives in this case. Guarding and referred tenderness are the findings that separate appendicitis from a viral illness.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "Choose the best **Assessment** section.",
+          "choices": [
+            {
+              "text": "Abdominal pain.",
+              "next": "s4",
+              "feedback": "Restating the complaint is not an assessment. It shows no thinking, and in a later chart review it reads exactly as though none happened.",
+              "score": -1
+            },
+            {
+              "text": "Appendicitis.",
+              "next": "s4",
+              "feedback": "A working diagnosis with no reasoning and no alternatives. If she turns out to have ovarian torsion, nothing in this note shows that anyone ever considered one, which is a problem for her care first and for the chart second.",
+              "score": 0
+            },
+            {
+              "text": "24-year-old woman with 6 hours of migratory right lower quadrant pain, fever to 38.1, focal tenderness with guarding and referred tenderness. Most consistent with acute appendicitis. Ovarian torsion and tubo-ovarian abscess remain on the differential and are the reason for pelvic imaging. Ectopic pregnancy excluded by a negative pregnancy test. Urinary infection unlikely without nitrites or urinary symptoms.",
+              "next": "s4",
+              "feedback": "Correct. A one-liner, a working diagnosis, the live alternatives with what is being done about them, and the excluded ones with the evidence that excluded them. This paragraph is the medical decision making.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "Choose the best **Plan** section.",
+          "choices": [
+            {
+              "text": "CT abdomen and pelvis. Surgery consult.",
+              "next": "s5",
+              "feedback": "The right two items with none of the surrounding care. Nothing here addresses pain, fluids, whether she may eat or drink, antibiotics, or reassessment, and a plan that lists only tests leaves the patient waiting untreated.",
+              "score": 0
+            },
+            {
+              "text": "IV access, nothing by mouth, IV fluids, analgesia, antiemetic, CT abdomen and pelvis with pelvic ultrasound to evaluate for torsion, surgery consulted, antibiotics per surgery, reassess after imaging. Disposition anticipated as admission.",
+              "next": "s5",
+              "feedback": "Correct. It covers what happens to the patient as well as what gets ordered, names the second study and the reason for it, and states the anticipated disposition so that everyone downstream is working toward the same endpoint.",
+              "score": 1
+            },
+            {
+              "text": "Pain medicine and discharge with instructions to follow up with her own doctor.",
+              "next": "s5",
+              "feedback": "Unsafe. A febrile patient with focal tenderness and guarding has a possible surgical abdomen, and sending her home without imaging or a surgical opinion risks perforation. Follow up with your doctor is not a plan for someone who may need an operation today.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "Later that shift a different patient, a 30-year-old man whose abdominal pain resolved and whose workup was unremarkable, is going home. Choose his **return precautions**.",
+          "choices": [
+            {
+              "text": "Return if symptoms worsen.",
+              "next": "end",
+              "feedback": "Boilerplate. It names no trigger the patient can recognize, so it neither protects him nor demonstrates anything about your thinking. Worsen means nothing at two in the morning to someone deciding whether to come back.",
+              "score": 0
+            },
+            {
+              "text": "Come back right away if the pain returns and stays in one spot, if it becomes severe, if you develop a fever over 100.4 F, if you vomit repeatedly or cannot keep fluids down, or if the pain moves to the lower right side. See your doctor in 2 days if you are not fully better.",
+              "next": "end",
+              "feedback": "Correct. Specific, recognizable triggers in plain language with a timeframe and a follow-up. These are the safety net for the diagnoses the workup could not exclude, which is exactly what return precautions exist to cover.",
+              "score": 1
+            },
+            {
+              "text": "No return precautions needed, since the workup was negative and he feels better.",
+              "next": "end",
+              "feedback": "A negative workup means nothing dangerous was found in the hours he was here, not that nothing will develop. Early appendicitis frequently looks unremarkable at hour four and obvious at hour twelve, and the return precaution is the only thing bridging that gap.",
+              "score": -1
+            }
+          ]
+        }
+      ],
+      "debrief": "The shape of a good note is the shape of good thinking. Subjective holds the story, Objective holds what you measured with no verdicts attached, Assessment holds the reasoning including the alternatives and what excluded them, and Plan covers the patient and not just the orders.\n\nTwo sections carry disproportionate weight. The assessment paragraph is the medical decision making, and it is what a reader years later uses to judge whether the care was reasonable. The return precautions are the safety net for everything the workup could not exclude, and they have to name triggers a frightened person can actually recognize at home."
+    }
+  ]
+}

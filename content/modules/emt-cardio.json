@@ -1,0 +1,1680 @@
+{
+  "schema": 1,
+  "id": "emt-cardio",
+  "track": "emt",
+  "title": "Cardiology & Resuscitation",
+  "short": "Cardio",
+  "summary": "How the heart moves blood and how it fails: chest pain and heart attack, aspirin and nitroglycerin, heart failure, high-quality CPR with every number, the AED, and what happens after a pulse comes back.",
+  "lessons": [
+    {
+      "id": "emt-cardio-l01",
+      "title": "The pump and the plumbing",
+      "minutes": 6,
+      "body": "## One muscle, two pumps, one loop\n\nThe heart is a single muscle divided into a right side and a left side that beat together but do completely different jobs. The right side sends used blood to the lungs. The left side sends fresh blood to the body. The left side works far harder, which is why its wall is about three times thicker and why it is the side that fails loudest.\n\nBlood travels in one direction because four valves force it to. Memorize the order, because it appears on every exam:\n\n1. Vena cava, the superior and inferior, bring oxygen-poor blood back from the body\n2. Right atrium\n3. Tricuspid valve\n4. Right ventricle\n5. Pulmonic valve\n6. Pulmonary arteries to the lungs, the only arteries carrying oxygen-poor blood\n7. Pulmonary veins back to the heart, the only veins carrying oxygen-rich blood\n8. Left atrium\n9. Mitral valve, also called the bicuspid\n10. Left ventricle\n11. Aortic valve\n12. Aorta and out to the body\n\n> **Key:** The atria are collection chambers with thin walls. The ventricles are the pumps. When someone says the heart failed, almost always they mean a ventricle failed.\n\n## The heart feeds itself first\n\nThe coronary arteries are the first branches off the aorta, just above the aortic valve. The heart takes its own supply before anything else gets any.\n\n| Artery | What it feeds | What blocking it looks like |\n|---|---|---|\n| Left anterior descending | Front wall and most of the left ventricle | The largest infarcts, pump failure, cardiogenic shock |\n| Left circumflex | Side and back of the left ventricle | Lateral wall infarct |\n| Right coronary | Right ventricle, the underside of the heart, and in most people the SA and AV nodes | Inferior infarct, bradycardia, blocks, and preload-dependent low blood pressure |\n\nCoronary arteries fill during **diastole**, the relaxing phase, because during contraction the squeezing muscle pinches them shut. That is one reason a very fast heart rate starves the heart: it steals filling time from the muscle's own supply.\n\n## Cardiac output, the number under everything\n\n`Cardiac output = heart rate x stroke volume`\n\nStroke volume is the blood ejected in one beat, around `70 mL` in an adult. At a rate of `70`, that is about `5 L/min`, which is roughly your whole blood volume every minute.\n\nStroke volume itself depends on three things: **preload**, how full the ventricle is before it squeezes; **contractility**, how hard the muscle squeezes; and **afterload**, the resistance it has to push against.\n\nThat equation explains most of what you will see. Bleeding drops preload, so output falls. A damaged ventricle loses contractility, so output falls. A heart rate of `180` never lets the ventricle fill, so stroke volume collapses and output falls even though the rate is high.\n\n> **Trap:** A fast heart rate is not the same as good perfusion. A patient at `160` with a weak thready pulse and cold skin is compensating, not succeeding.",
+      "keyPoints": [
+        "Blood flow order: vena cava, right atrium, tricuspid, right ventricle, pulmonic, lungs, left atrium, mitral, left ventricle, aortic, aorta.",
+        "Pulmonary arteries carry oxygen-poor blood and pulmonary veins carry oxygen-rich blood; they are the exceptions.",
+        "Coronary arteries branch first off the aorta and fill during diastole, not systole.",
+        "The right coronary artery usually feeds the SA and AV nodes, so inferior infarcts cause bradycardia and blocks.",
+        "Cardiac output = heart rate x stroke volume; stroke volume depends on preload, contractility and afterload."
+      ],
+      "checks": [
+        {
+          "q": "Blood leaving the right ventricle passes next through which valve?",
+          "choices": [
+            "Pulmonic valve",
+            "Mitral valve",
+            "Aortic valve",
+            "Tricuspid valve"
+          ],
+          "answer": 0,
+          "why": "The right ventricle pushes blood through the pulmonic valve into the pulmonary arteries and on to the lungs. The tricuspid sits before the right ventricle, and the mitral and aortic valves are both on the left side."
+        },
+        {
+          "q": "A patient's heart rate climbs to 190 and his blood pressure falls. The best explanation is:",
+          "choices": [
+            "The higher rate always increases cardiac output",
+            "Stroke volume collapses because the ventricles have no time to fill",
+            "Afterload has dropped to zero",
+            "The coronary arteries have dilated too much"
+          ],
+          "answer": 1,
+          "why": "Cardiac output is rate times stroke volume. At extreme rates the filling time in diastole disappears, so stroke volume falls faster than the rate rises and output drops. The same lost diastole also starves the coronary arteries, which fill only during relaxation."
+        },
+        {
+          "q": "An inferior wall infarct is most often caused by blockage of which vessel, and what rhythm problem does it produce?",
+          "choices": [
+            "Left anterior descending; ventricular fibrillation",
+            "Left circumflex; atrial fibrillation",
+            "Right coronary artery; bradycardia and AV blocks",
+            "Pulmonary artery; tachycardia"
+          ],
+          "answer": 2,
+          "why": "The right coronary artery supplies the inferior wall and, in most people, the SA and AV nodes, so an inferior infarct classically causes bradycardia and heart block. The left anterior descending causes large anterior infarcts, and the pulmonary artery carries no coronary supply."
+        }
+      ]
+    },
+    {
+      "id": "emt-cardio-l02",
+      "title": "The electrical system, and why a heart can beat with no pulse",
+      "minutes": 6,
+      "body": "## Wiring, in plain words\n\nHeart muscle has a property no other muscle has: it generates its own electrical impulse. It does not wait for the brain. That is why a transplanted heart, with every nerve cut, still beats.\n\nThe impulse follows one path:\n\n1. **SA node**, high in the right atrium. The normal pacemaker, firing `60-100` times a minute.\n2. **AV node**, at the junction between atria and ventricles. It deliberately delays the signal about a tenth of a second so the atria can finish emptying into the ventricles before the ventricles squeeze.\n3. **Bundle of His**, the only electrical bridge between atria and ventricles.\n4. **Right and left bundle branches**, running down either side of the septum.\n5. **Purkinje fibers**, which spread the signal through the ventricular muscle so the whole ventricle contracts almost at once.\n\nEach site has a backup rate if the one above it quits. The AV junction fires at `40-60` and the ventricles themselves at `20-40`. A patient with a ventricular escape rhythm at `30` is being kept alive by the last backup in the system.\n\n> **On shift:** That is why a heart rate of `38` with a blood pressure of `70/40` is not a curiosity. It means the SA node and the junction have both stopped doing their job.\n\n## Electrical is not mechanical\n\nAn electrical signal tells muscle to contract. It does not guarantee the muscle does anything. A monitor shows the electricity; a pulse shows the plumbing.\n\nThose two can come apart in both directions:\n\n- **Pulseless electrical activity, PEA.** The monitor shows an organized rhythm that ought to produce a pulse, and there is no pulse. The wiring is fine and the pump or the plumbing is not: massive blood loss, a tension pneumothorax squeezing the heart, blood in the sac around the heart, a huge clot in the lungs, or a heart muscle too damaged or too acidic to contract.\n- **Ventricular fibrillation.** The electrical activity is chaotic, every cell firing on its own, and the ventricle quivers instead of squeezing. There is electricity everywhere and no output at all.\n\n> **Key:** You never treat a monitor. You treat a patient. If there is no pulse, the treatment is compressions, no matter how normal the rhythm looks.\n\n## Why this matters at the EMT level\n\nAn EMT does not read rhythms to make treatment decisions, but this wiring explains three things you will see constantly.\n\nFirst, a defibrillator does not restart a stopped heart. It stops everything at once so the SA node can take back control. That is why it works on fibrillation and does nothing for asystole, which is already stopped.\n\nSecond, compressions are what buy time in PEA, because the problem was never electrical.\n\nThird, a rhythm on a screen never proves perfusion. Check the patient.",
+      "keyPoints": [
+        "Conduction path: SA node, AV node, bundle of His, bundle branches, Purkinje fibers.",
+        "Backup rates: SA 60-100, AV junction 40-60, ventricles 20-40.",
+        "The AV node delays the signal so the atria can finish filling the ventricles.",
+        "PEA means an organized rhythm with no pulse; the failure is mechanical, not electrical.",
+        "A defibrillator stops all electrical activity so the SA node can resume; it cannot restart asystole."
+      ],
+      "checks": [
+        {
+          "q": "The monitor shows an organized rhythm at 70, and the patient has no pulse and is not breathing. This is:",
+          "choices": [
+            "Ventricular fibrillation; deliver a shock",
+            "Asystole; confirm in two leads",
+            "Pulseless electrical activity; begin compressions immediately",
+            "A normal finding; recheck the pulse in two minutes"
+          ],
+          "answer": 2,
+          "why": "An organized rhythm with no pulse is PEA, and it is not shockable because the electrical system is working. Compressions and a search for the cause are the treatment. Delaying to recheck wastes perfusion time."
+        },
+        {
+          "q": "Why does the AV node deliberately delay the impulse?",
+          "choices": [
+            "To slow the overall heart rate to 60-100",
+            "To let the atria finish emptying into the ventricles before they contract",
+            "To protect the Purkinje fibers from overload",
+            "To allow the coronary arteries to fill"
+          ],
+          "answer": 1,
+          "why": "The roughly one-tenth-of-a-second AV delay times atrial contraction so the ventricles are as full as possible before they squeeze, which maximizes stroke volume. The SA node sets the overall rate, and coronary filling is a separate mechanical event during diastole."
+        }
+      ]
+    },
+    {
+      "id": "emt-cardio-l03",
+      "title": "Acute coronary syndrome: recognizing it",
+      "minutes": 7,
+      "body": "## One disease, three severities\n\nCoronary arteries narrow over decades as plaque builds in the wall. Acute coronary syndrome is the umbrella term for what happens when that narrowing starts cutting off muscle.\n\n**Stable angina.** The artery is narrowed but open. At rest the muscle gets enough. With exertion, demand rises past supply and the muscle complains. Pain comes on with a predictable amount of work, lasts `3-5` minutes, and goes away with rest or the patient's own nitroglycerin. No muscle dies.\n\n**Unstable angina.** A plaque has cracked and a clot is forming on it. Now the pain comes at rest, or with less activity than before, or lasts longer, or is not relieved by rest or nitroglycerin. This is a warning shot fired minutes to hours before the artery closes.\n\n**Myocardial infarction.** The artery closes. Muscle downstream starves and begins to die within about `20-30` minutes. What is dead does not grow back, which is the entire reason for speed.\n\n> **Key:** You cannot tell unstable angina from an infarct in the field. Treat every one of them as an infarct until a hospital proves otherwise.\n\n## The classic presentation\n\nPressure, squeezing, tightness or heaviness in the center of the chest, often described with a fist against the sternum rather than a pointing finger. It may spread to the left arm, both arms, the jaw, the neck, the upper back or the epigastrium.\n\nIt comes with the autonomic package: sweating that is out of proportion, nausea, shortness of breath, lightheadedness, and a sense that something is badly wrong. The sweating is the sign experienced providers trust most.\n\nIt does not change with position or with a deep breath, and pressing on the chest does not reproduce it. Pain that changes with breathing or palpation is more often muscular, pleuritic or pericardial.\n\n## The presentations that get missed\n\nRoughly a third of infarcts do not follow the script, and the three groups at highest risk of being missed are the ones most likely to die.\n\n- **Women** more often report shortness of breath, unusual fatigue lasting days, nausea, back or jaw discomfort, and indigestion rather than crushing chest pain.\n- **Older adults** may present only with confusion, weakness, a fall or a sudden inability to do their usual activities.\n- **Diabetics** have nerve damage that blunts pain signals, so a silent infarct may show up as nothing but sudden shortness of breath, sweating or vomiting.\n\n> **Trap:** Relief from antacids, or pain that is reproducible with palpation, does not rule out an infarct. Neither does a normal set of vital signs. Plenty of patients having heart attacks have a normal blood pressure, a normal pulse and a normal `SpO2`.\n\nGet a history with `OPQRST` and `SAMPLE`, ask specifically about cocaine or stimulant use, ask about erectile dysfunction medications before you even think about nitroglycerin, and treat a patient who looks sick and sweaty as a cardiac patient until proven otherwise.",
+      "keyPoints": [
+        "Stable angina comes with exertion and resolves in 3-5 minutes with rest; unstable angina comes at rest or is worse than usual.",
+        "Infarcting muscle starts dying in about 20-30 minutes, which is why time matters.",
+        "Classic pain is central pressure radiating to arm, jaw, neck or back with sweating, nausea and shortness of breath.",
+        "Women, older adults and diabetics frequently present atypically and are the most commonly missed.",
+        "Normal vital signs and relief from antacids never rule out a heart attack."
+      ],
+      "checks": [
+        {
+          "q": "A 74-year-old diabetic woman calls for sudden shortness of breath and nausea for two hours. She denies chest pain. Her skin is cool and damp. You should:",
+          "choices": [
+            "Treat this as a possible acute coronary syndrome and obtain a 12-lead",
+            "Treat it as a respiratory infection and transport without priority",
+            "Rule out a cardiac cause because she denies chest pain",
+            "Assume anxiety because her vital signs are normal"
+          ],
+          "answer": 0,
+          "why": "Age, female sex and diabetes are the three biggest risk factors for an atypical, missed infarct, and diaphoresis with sudden dyspnea is a classic anginal equivalent. The absence of chest pain and normal vital signs rule nothing out."
+        },
+        {
+          "q": "Which feature best distinguishes stable angina from unstable angina?",
+          "choices": [
+            "Stable angina radiates to the jaw and unstable angina does not",
+            "Stable angina occurs only in men",
+            "Unstable angina always produces an abnormal blood pressure",
+            "Unstable angina occurs at rest or with less exertion than usual and is not relieved as expected"
+          ],
+          "answer": 3,
+          "why": "The defining change is a pattern that has become unpredictable: pain at rest, with less exertion, lasting longer, or not relieved by rest or the patient's own nitroglycerin. Radiation, sex and vital signs do not separate the two."
+        }
+      ]
+    },
+    {
+      "id": "emt-cardio-l04",
+      "title": "Treating chest pain: aspirin, nitro and the clock",
+      "minutes": 7,
+      "body": "## The clock starts at the door\n\nEverything an EMT does for a suspected infarct serves one goal: get the artery open before the muscle dies. The hospital does that with a balloon and a stent in the cardiac catheterization lab. Your job is to reduce the heart's workload, stop the clot from growing, and deliver the patient to a place that can open the vessel.\n\nA `12-lead ECG` should be obtained within `10 minutes` of patient contact. That single tracing decides whether the receiving hospital activates its cath lab team before you arrive.\n\n## Position and oxygen\n\nSit the patient up in a position of comfort and stop them from walking, carrying anything or helping you move them. Every bit of exertion raises the heart's oxygen demand.\n\nOxygen is given **only if the `SpO2` is below `94%`**, or if the patient is short of breath or in shock. Routine oxygen for every chest pain patient was abandoned because excess oxygen constricts coronary vessels and worsens outcomes.\n\n## Aspirin\n\nAspirin blocks platelets from clumping, so it keeps the clot on the cracked plaque from growing. It is the single intervention in the field with the clearest survival benefit.\n\nDose: `324 mg`, given as four `81 mg` chewable tablets. Chewed, not swallowed whole, because chewing gets it absorbed faster.\n\nHold it for a true aspirin allergy, active gastrointestinal bleeding, or a patient unable to protect their own airway. Being on a blood thinner is not by itself a reason to withhold it, though protocols vary.\n\n## Nitroglycerin\n\nNitroglycerin dilates veins, which drops preload, and dilates coronary arteries. Less blood returning means the ventricle has less to pump, so the muscle needs less oxygen.\n\nBefore you assist with a single dose, all of these must be true:\n\n1. The medication is **prescribed to this patient** and you have the actual bottle\n2. It has not expired\n3. Systolic blood pressure is above `100 mmHg`, or the number your protocol specifies\n4. The patient has taken **no phosphodiesterase inhibitor** in the last `24 hours` for sildenafil or vardenafil, or `48 hours` for tadalafil\n5. Medical direction or standing orders authorize it\n\nDose: `0.4 mg` sublingual, repeated every `5 minutes`, to a maximum of `3 doses`. **Take a blood pressure before every single dose.** Stop if the systolic drops below the protocol threshold or falls more than `30 mmHg` from baseline.\n\n> **Trap:** Nitroglycerin plus an erectile dysfunction drug causes profound, refractory hypotension. Ask every patient, of every age, directly. Patients volunteer this information almost never.\n\nWithhold nitroglycerin in a suspected **right ventricular infarct**, often signaled by an inferior pattern with hypotension and clear lungs. That ventricle depends entirely on preload, and nitroglycerin removes it. Withhold it also with head injury or a suspected stroke.\n\n> **On the exam:** The stem usually hides one disqualifier: an expired bottle, a systolic of `92`, a prescription belonging to a spouse, or tadalafil taken yesterday. Find it before you pick an answer.\n\nTransport to a hospital with percutaneous coronary intervention capability when your protocol and transport times allow, and call early.",
+      "keyPoints": [
+        "Obtain a 12-lead within 10 minutes of patient contact; it drives cath lab activation.",
+        "Oxygen only if SpO2 is below 94%, the patient is dyspneic, or in shock.",
+        "Aspirin 324 mg chewed, given as four 81 mg chewable tablets.",
+        "Nitroglycerin 0.4 mg sublingual every 5 minutes, maximum 3 doses, blood pressure before each dose.",
+        "No nitroglycerin with a systolic at or below 100, PDE-5 drugs in 24-48 hours, right ventricular infarct, or head injury."
+      ],
+      "checks": [
+        {
+          "q": "A 58-year-old with crushing chest pain has a blood pressure of 138/82 and his own nitroglycerin. He mentions he took tadalafil last night. You should:",
+          "choices": [
+            "Assist with one dose and recheck the pressure",
+            "Withhold nitroglycerin; tadalafil lasts up to 48 hours and the combination causes severe hypotension",
+            "Give a half dose to reduce the risk",
+            "Give it only if the pain is severe"
+          ],
+          "answer": 1,
+          "why": "Tadalafil has the longest duration of the PDE-5 drugs, up to 48 hours, and combining it with nitroglycerin causes profound refractory hypotension. There is no safe reduced dose. Aspirin, position, oxygen if indicated and rapid transport remain appropriate."
+        },
+        {
+          "q": "What is the correct field dose of aspirin for a suspected heart attack?",
+          "choices": [
+            "81 mg swallowed whole",
+            "650 mg swallowed with water",
+            "324 mg chewed, as four 81 mg chewable tablets",
+            "1,000 mg chewed"
+          ],
+          "answer": 2,
+          "why": "Four 81 mg chewable tablets equal 324 mg, and chewing speeds absorption so platelet inhibition begins sooner. A single 81 mg tablet is too small an antiplatelet load acutely, and 650 mg or more provides no added benefit with added bleeding risk."
+        },
+        {
+          "q": "A chest pain patient has an SpO2 of 97% on room air and is not short of breath. Oxygen should be:",
+          "choices": [
+            "Applied at 15 L/min by nonrebreather routinely",
+            "Applied at 2 L/min by cannula routinely",
+            "Applied only after nitroglycerin",
+            "Withheld, because supplemental oxygen is indicated only below 94% or with dyspnea or shock"
+          ],
+          "answer": 3,
+          "why": "Routine oxygen in normoxic cardiac patients causes coronary vasoconstriction and worsens outcomes. The threshold is an SpO2 below 94%, dyspnea, or signs of shock. Nitroglycerin timing has nothing to do with the oxygen decision."
+        }
+      ]
+    },
+    {
+      "id": "emt-cardio-l05",
+      "title": "Heart failure and acute pulmonary edema",
+      "minutes": 6,
+      "body": "## A pump that cannot keep up\n\nHeart failure means a ventricle cannot move the volume delivered to it. Blood backs up behind the failing side, and pressure in the backed-up circuit rises until fluid is pushed out of the capillaries into tissue.\n\nWhich side fails determines where the fluid goes.\n\n**Left-sided failure** backs up into the lungs. Fluid crosses into the alveoli, and the patient drowns from the inside. Findings: shortness of breath, crackles from the bases upward, pink frothy sputum in severe cases, inability to lie flat (orthopnea), and waking at night gasping for air (paroxysmal nocturnal dyspnea).\n\n**Right-sided failure** backs up into the body. Findings: swollen ankles and feet (pedal edema), distended neck veins (jugular venous distention), an enlarged tender liver, and weight gain from retained fluid.\n\nThe most common cause of right-sided failure is left-sided failure, so most chronic patients show both. Ask how many pillows they sleep on. Going from two to four in a week is a measurable decline.\n\n> **Key:** Crackles plus distended neck veins plus swollen ankles plus a patient who will not lie down is acute decompensated heart failure until proven otherwise.\n\n## Acute pulmonary edema is an emergency\n\nWhen the left ventricle fails suddenly, often because of an infarct, a rhythm change, a missed dose of medication, or a salty meal, fluid floods the alveoli within minutes to hours.\n\nThe patient is upright, agitated, gray and drenched in sweat, speaking two words at a time, with an `SpO2` in the `80s` and a blood pressure that is often **high**, not low, because the body has clamped down every vessel.\n\nCrackles start at the bases and move upward as it worsens. Sitting halfway up the chest is severe. Wheezing can occur too, from fluid squeezing the small airways, which is why this is sometimes mistaken for asthma.\n\n## What you do\n\n1. **Sit them up**, legs dependent over the side of the stretcher if tolerated. Gravity pools blood in the legs and drops preload immediately. Never lay this patient flat.\n2. **Oxygen** titrated to an `SpO2` of `94-99%`, usually by nonrebreather at `10-15 L/min`.\n3. **CPAP** at `5-10 cmH2O` if the patient is awake, following commands and has a systolic above `90 mmHg`. It pushes fluid back out of the alveoli and unloads the ventricle.\n4. **Do not push fluids.** This patient has too much volume, not too little.\n5. Assist with the patient's own nitroglycerin if protocol allows and the blood pressure supports it. Advanced providers treat pulmonary edema primarily with nitrates.\n6. Transport upright, monitor, and reassess the blood pressure every `5 minutes`.\n\n> **Trap:** Wheezing does not mean asthma. A 78-year-old with swollen ankles, distended neck veins and wheezes is far more likely in cardiac failure than having a first asthma attack at 78. Giving a bronchodilator and nothing else misses the diagnosis.",
+      "keyPoints": [
+        "Left-sided failure backs fluid into the lungs; right-sided failure backs it into the body.",
+        "Look for crackles, orthopnea, paroxysmal nocturnal dyspnea, pink frothy sputum, distended neck veins and pedal edema.",
+        "Blood pressure in acute pulmonary edema is usually high, not low.",
+        "Treatment is upright position, oxygen to 94-99%, and CPAP at 5-10 cmH2O if the systolic is above 90.",
+        "Never lay these patients flat and never give them a fluid bolus."
+      ],
+      "checks": [
+        {
+          "q": "A 79-year-old is found sitting upright, gasping, with crackles halfway up both lungs, distended neck veins and swollen ankles. His blood pressure is 190/104. The correct positioning and first treatment are:",
+          "choices": [
+            "Supine with legs elevated, and a fluid bolus",
+            "Upright with legs dependent, and high-flow oxygen",
+            "Left lateral recovery position, and a bronchodilator",
+            "Flat on a backboard, and aspirin"
+          ],
+          "answer": 1,
+          "why": "Sitting up with the legs down pools blood peripherally and lowers preload instantly, while oxygen addresses the hypoxia. Lying flat or elevating the legs pushes more volume into an already flooded circuit, and fluids make it worse."
+        },
+        {
+          "q": "Paroxysmal nocturnal dyspnea means:",
+          "choices": [
+            "Waking at night suddenly short of breath because fluid redistributes when lying flat",
+            "Shortness of breath only during exercise",
+            "A panic attack occurring at night",
+            "Sleep apnea causing snoring and daytime fatigue"
+          ],
+          "answer": 0,
+          "why": "Lying flat lets fluid pooled in the legs return to the circulation and flood the lungs, waking the patient gasping. It is a classic marker of left-sided heart failure, unrelated to exertional dyspnea, panic or obstructive sleep apnea."
+        }
+      ]
+    },
+    {
+      "id": "emt-cardio-l06",
+      "title": "Cardiac arrest and high-quality CPR",
+      "minutes": 8,
+      "body": "## What compressions actually do\n\nA compression squeezes the heart between the sternum and the spine and raises pressure inside the whole chest, pushing blood forward. Good compressions generate roughly a quarter to a third of normal cardiac output. That is enough to keep the brain and the heart muscle alive while you wait for the thing that actually fixes the problem, which is usually a shock.\n\nEvery time you stop, the pressure in the arteries collapses within seconds and it takes several compressions to build it back. Interruptions are the enemy.\n\n## The numbers, all of them\n\n| Element | Adult | Child | Infant |\n|---|---|---|---|\n| Rate | 100-120 per minute | 100-120 | 100-120 |\n| Depth | 2 to 2.4 in, 5-6 cm | at least one third of the chest depth, about 2 in | about one third, about 1.5 in |\n| Hands | Two hands, heel on the lower half of the sternum | One or two hands, lower half of sternum | Two fingers, or two thumbs encircling, just below the nipple line |\n| Ratio, one rescuer | 30:2 | 30:2 | 30:2 |\n| Ratio, two rescuers | 30:2 | 15:2 | 15:2 |\n\nOther non-negotiables:\n\n- **Full recoil** between compressions. Leaning on the chest prevents the heart from refilling, and a heart that does not fill has nothing to eject.\n- **Interruptions under `10 seconds`**, including for rhythm checks and shocks.\n- **Compression fraction above `60%`**, meaning your hands are on the chest at least sixty percent of the total arrest time. Aim higher.\n- **Switch compressors every `2 minutes`**, during the rhythm analysis so nothing is lost. Quality falls off measurably before the compressor feels tired.\n- **Ventilations**: `30:2` without an advanced airway; once an advanced airway is in place, `1 breath every 6 seconds` with continuous compressions.\n\n> **Key:** Push hard, push fast, let the chest come all the way back up, and do not stop. Everything else in resuscitation is secondary to those four things.\n\n## Hand placement and technique\n\nAdult: heel of one hand on the lower half of the sternum, the second hand on top, fingers interlaced and lifted off the ribs. Elbows locked, shoulders directly over your hands, pushing with your body weight rather than your arms.\n\nInfant, one rescuer: two fingers just below the nipple line. Infant, two rescuers: the **two-thumb encircling** technique, thumbs side by side on the sternum with hands wrapping the chest. It produces better depth and better blood pressure and is the preferred method whenever a second rescuer is available.\n\nSurface matters. A patient on a mattress absorbs your depth. Move them to the floor or get a board underneath.\n\n## The chain of survival\n\nFor an out-of-hospital adult arrest the links are: recognition and activation of the emergency response, immediate high-quality CPR, rapid defibrillation, advanced resuscitation, post-arrest care, and recovery.\n\nThe first three happen before or at your arrival and they are the ones that determine survival. Survival falls roughly `7-10%` for every minute without CPR and defibrillation, and bystander CPR roughly doubles or triples survival.\n\n> **On the exam:** When a question offers you a choice between starting compressions and doing almost anything else, compressions win. The exceptions are calling for help and getting the AED, which happen simultaneously if you have a second person.",
+      "keyPoints": [
+        "Rate 100-120 for every age; adult depth 2 to 2.4 inches, child about 2 inches, infant about 1.5 inches.",
+        "Ratios: 30:2 for one rescuer at any age; 15:2 for two rescuers on a child or infant.",
+        "Allow full recoil, keep interruptions under 10 seconds, and keep compression fraction above 60%.",
+        "Switch compressors every 2 minutes, timed with the rhythm analysis.",
+        "Two-thumb encircling technique is preferred for infants whenever two rescuers are present."
+      ],
+      "checks": [
+        {
+          "q": "You and a partner are resuscitating a 4-year-old in cardiac arrest with no advanced airway. The correct compression-to-ventilation ratio is:",
+          "choices": [
+            "30:2",
+            "15:2",
+            "5:1",
+            "Continuous compressions with 1 breath every 6 seconds"
+          ],
+          "answer": 1,
+          "why": "Two rescuers working on a child or infant use 15:2 because pediatric arrests are usually respiratory in origin and need more ventilations. A single rescuer at any age uses 30:2, and asynchronous breathing applies only once an advanced airway is placed."
+        },
+        {
+          "q": "Which error most directly reduces the amount of blood the heart can eject during CPR?",
+          "choices": [
+            "Compressing at 110 per minute",
+            "Switching compressors every 2 minutes",
+            "Leaning on the chest and preventing full recoil",
+            "Compressing to a depth of 2 inches in an adult"
+          ],
+          "answer": 2,
+          "why": "Incomplete recoil prevents the chest from generating the negative pressure that refills the heart, so each compression ejects less. The other three choices describe correct technique: 100-120 per minute, rotating every two minutes, and 2 to 2.4 inches of depth."
+        },
+        {
+          "q": "Compression fraction should be kept above:",
+          "choices": [
+            "20%",
+            "40%",
+            "80%",
+            "60%"
+          ],
+          "answer": 3,
+          "why": "Guidelines set a minimum compression fraction of 60%, meaning hands are on the chest at least 60% of the total arrest time, with higher being better. Lower fractions correlate directly with worse survival."
+        }
+      ]
+    },
+    {
+      "id": "emt-cardio-l07",
+      "title": "The AED",
+      "minutes": 6,
+      "body": "## What a shock does and does not do\n\nA defibrillator does not start a heart. It stops one. A shock depolarizes the entire myocardium at the same instant, ending the chaotic electrical storm so the SA node, the fastest natural pacemaker, can take control again.\n\nThat design explains exactly which rhythms it helps.\n\n**Shockable:**\n\n- **Ventricular fibrillation**, the ventricles quivering with no coordinated contraction\n- **Pulseless ventricular tachycardia**, an organized but far too fast ventricular rhythm producing no pulse\n\n**Not shockable:**\n\n- **Asystole**, no electrical activity at all. There is nothing to stop.\n- **Pulseless electrical activity**, an organized rhythm with no mechanical output. The electricity is already fine.\n\n> **Key:** Shockable means chaos you can reset. Asystole and PEA need compressions, oxygen and a correctable cause, not electricity.\n\n## Using it\n\nPower on, bare and dry the chest, apply pads, plug in, stand clear, analyze, shock if advised, then **immediately resume compressions**. Do not stop to check a pulse after a shock. Do two full minutes of CPR, then analyze again.\n\nStandard **anterior-lateral** placement is one pad on the upper right chest below the collarbone and one on the left side below and lateral to the nipple, on the mid-axillary line. **Anterior-posterior** placement, one pad on the center of the chest and one between the shoulder blades, is an accepted alternative and is used for small children and some implanted devices.\n\nPediatric pads with an attenuator are used for children under about `8 years` or under about `25 kg`. If pediatric pads are not available, **use adult pads** rather than no defibrillation. Place them front and back so they do not touch each other.\n\n## The situations that trip people up\n\n| Situation | What to do |\n|---|---|\n| Wet chest, snow, pool | Drag the patient clear of standing water and towel the chest dry |\n| Medication patch on the chest | Remove it with a gloved hand and wipe the skin |\n| Implanted pacemaker or defibrillator, a hard lump under the skin | Place the pad at least one inch away from it, or use anterior-posterior |\n| Very hairy chest | Press the pads down firmly; if they will not stick, pull them off to strip the hair and apply a second set |\n| Pregnancy | Defibrillate normally. Saving the mother is what saves the fetus. |\n| Nitroglycerin patch | Remove it before applying pads |\n\n> **Trap:** Never delay defibrillation to shave, to find pediatric pads, or to hunt for a pulse after a shock. Every one of those delays costs survival. The only thing worth pausing for is being certain nobody is touching the patient when it discharges.\n\n## The rhythm of the code\n\nCompressions immediately, pads on as soon as they arrive, analyze, shock or not, compressions for `2 minutes`, switch compressors, analyze again. That two-minute loop continues through the entire arrest, whether or not a paramedic crew arrives.\n\nIf the AED says no shock advised, that does not mean stop. It means the rhythm is not shockable. Go straight back to compressions.",
+      "keyPoints": [
+        "Shockable rhythms are ventricular fibrillation and pulseless ventricular tachycardia; asystole and PEA are not.",
+        "Resume compressions immediately after a shock; do not pause to check a pulse.",
+        "Analyze every 2 minutes and switch compressors at the same moment.",
+        "Use pediatric pads under about 8 years or 25 kg, but use adult pads if that is all you have.",
+        "Dry the chest, remove medication patches, and stay at least an inch from an implanted device."
+      ],
+      "checks": [
+        {
+          "q": "The AED delivers a shock to an adult in ventricular fibrillation. Your immediate next action is:",
+          "choices": [
+            "Check for a carotid pulse for up to 10 seconds",
+            "Immediately resume chest compressions",
+            "Wait for the AED to reanalyze the rhythm",
+            "Give two rescue breaths"
+          ],
+          "answer": 1,
+          "why": "Even a successful shock leaves a heart that is not yet perfusing, and pausing lets arterial pressure collapse. Compressions resume immediately and continue for two minutes before the next analysis. Pulse checks and reanalysis after a shock waste critical seconds."
+        },
+        {
+          "q": "A 6-year-old is in cardiac arrest and your AED carries only adult pads. You should:",
+          "choices": [
+            "Withhold defibrillation because adult pads are unsafe in children",
+            "Wait for another unit to bring pediatric pads",
+            "Cut the adult pads in half to reduce the energy",
+            "Apply the adult pads, placing them front and back so they do not touch"
+          ],
+          "answer": 3,
+          "why": "Defibrillation with adult pads is far better than no defibrillation. Anterior-posterior placement prevents the larger pads from touching on a small chest. Waiting costs survival, and cutting pads destroys the conductive surface and is dangerous."
+        },
+        {
+          "q": "The AED announces no shock advised on a pulseless patient. This means:",
+          "choices": [
+            "The rhythm is not shockable; resume compressions immediately",
+            "The patient has a pulse and CPR should stop",
+            "The pads are not connected correctly",
+            "The machine has malfunctioned and should be replaced"
+          ],
+          "answer": 0,
+          "why": "No shock advised most often means asystole or PEA, neither of which responds to electricity. The treatment is uninterrupted compressions, ventilation and searching for a cause. It is not a statement that the patient has recovered."
+        }
+      ]
+    },
+    {
+      "id": "emt-cardio-l08",
+      "title": "ROSC, post-arrest care, and when to stop",
+      "minutes": 6,
+      "body": "## Getting a pulse back is the middle of the call, not the end\n\nReturn of spontaneous circulation, `ROSC`, is the moment the heart resumes producing a pulse on its own. Signs: a palpable pulse during a rhythm check, a sudden jump in end-tidal carbon dioxide, the patient moving, coughing, or beginning to breathe.\n\nA sudden `ETCO2` rise above roughly `40 mmHg` during compressions is often the first indication, and it appears before you can feel anything.\n\nThe heart that just came back is stunned, the brain has been starved, and re-arrest in the first minutes is common. Everything you do next is aimed at not undoing what you just accomplished.\n\n## Post-ROSC priorities\n\n1. **Airway and ventilation.** If the patient is not breathing adequately, ventilate at `1 breath every 6 seconds`, ten per minute. Do not speed up. Hyperventilation after arrest raises pressure in the chest, drops venous return and constricts cerebral vessels, and it is the single most common post-ROSC error.\n2. **Oxygen to a target of `94-98%`.** Titrate down off `100%`. Excess oxygen after an arrest worsens brain injury through oxidative damage.\n3. **Blood pressure.** Hypotension after arrest is common and predicts a worse outcome. Advanced providers give fluids and pressors; an EMT recognizes it, positions the patient supine, and communicates it.\n4. **A `12-lead ECG` as soon as possible.** A large share of adult arrests are caused by an infarct, and the destination may change because of that tracing.\n5. **Leave the pads on.** Re-arrest is common and you want to shock without setting up again.\n6. **Do not cool in the field** unless your protocol specifically directs it, but do not actively warm the patient either.\n7. **Transport to a hospital capable of cardiac catheterization and post-arrest care** where protocol allows.\n\n> **Trap:** The pulse comes back and the crew relaxes and starts bagging fast out of excitement. Count out loud. One breath every six seconds, not one every two.\n\n## When resuscitation stops\n\nAn EMT starts CPR on every pulseless patient unless one of a short list of conditions applies.\n\n**Do not start** when there are obvious signs of irreversible death: rigor mortis, dependent lividity, decapitation or other injuries incompatible with life, decomposition. Also do not start with a valid do-not-resuscitate order or a POLST or MOLST form that is present and applies, or a valid out-of-hospital DNR. In New Jersey that documentation must be actually available; a family member's verbal statement that one exists does not by itself authorize withholding care.\n\n**Once started, you continue** until one of these happens: the patient revives, care is transferred to a provider of equal or higher level, you are too exhausted to continue, the scene becomes unsafe, or a physician or protocol directs termination.\n\n**Termination of resuscitation** in the field is governed by protocol and usually requires an unwitnessed arrest, no shock delivered, no ROSC after a defined period of adequate advanced life support, and contact with medical control. Practice varies substantially by state and system.\n\n## Mechanical CPR\n\nSome services carry a piston or band device that delivers compressions automatically. It removes fatigue and keeps quality constant during transport, stairs and extrication. It is not more effective than good manual CPR and applying it must not create a long pause. Compressions continue while the device is positioned.",
+      "keyPoints": [
+        "A sudden ETCO2 rise above about 40 mmHg is often the earliest sign of ROSC.",
+        "Ventilate post-ROSC at 1 breath every 6 seconds and do not hyperventilate.",
+        "Titrate oxygen to an SpO2 of 94-98%, not 100%.",
+        "Obtain a 12-lead, leave the pads on, and transport to a facility capable of cardiac catheterization.",
+        "Do not start CPR with obvious signs of death or a valid DNR; continue until revival, transfer, exhaustion, danger or an order to stop."
+      ],
+      "checks": [
+        {
+          "q": "You achieve ROSC on a 60-year-old who is not breathing on his own. You should ventilate at:",
+          "choices": [
+            "1 breath every 2 seconds",
+            "1 breath every 6 seconds",
+            "20 breaths per minute",
+            "Continuous ventilations at whatever rate feels natural"
+          ],
+          "answer": 1,
+          "why": "Ten breaths per minute is correct. Hyperventilation after arrest raises intrathoracic pressure, reduces venous return and constricts cerebral vessels, worsening brain injury. Every 2 seconds and 20 per minute are both far too fast for an adult."
+        },
+        {
+          "q": "Which of the following justifies withholding CPR entirely?",
+          "choices": [
+            "A family member states the patient would not want it",
+            "The patient is over 90 years old",
+            "The arrest was unwitnessed",
+            "Dependent lividity and rigor mortis are present"
+          ],
+          "answer": 3,
+          "why": "Obvious and irreversible signs of death justify not starting. Age and an unwitnessed arrest do not. A verbal report of a patient's wishes is not a valid order; documentation such as a DNR or POLST must actually be present and applicable."
+        }
+      ]
+    },
+    {
+      "id": "emt-cardio-l09",
+      "title": "Shock from the cardiac side",
+      "minutes": 6,
+      "body": "## Shock is a delivery failure\n\nShock is inadequate perfusion: not enough oxygenated blood reaching the tissues to meet demand. Three components can fail. The pump, the volume, or the pipes. This lesson covers the two failures that belong to the heart.\n\n## Cardiogenic shock: the pump is broken\n\nThe ventricle has lost so much muscle, usually to a large infarct, that it cannot generate output no matter how full it is. It is the leading cause of death in patients who reach the hospital alive after an infarct, with mortality still around `40-50%`.\n\nThe picture is a patient who is cold, gray and mottled, with a weak thready pulse, a systolic often below `90 mmHg`, altered mental status, and **crackles in the lungs** because the failing left ventricle is also backing fluid up. Neck veins are usually distended.\n\nWhat you do: high-concentration oxygen titrated to `94-99%`, position of comfort which is usually upright because of the pulmonary congestion, keep them warm, monitor, transport rapidly to a hospital that can catheterize, and call early.\n\n> **Trap:** A fluid bolus is the reflex for low blood pressure and it is the wrong reflex here. The tank is not empty; the pump is broken. Fluid adds to lungs that are already flooding.\n\n## Obstructive shock: something is blocking the flow\n\nHere the pump and the volume are both fine and something physically prevents blood from moving. Three causes matter in the field, and all three need a procedure, not a drug.\n\n**Cardiac tamponade.** Blood or fluid fills the sac around the heart and squeezes it so it cannot fill. Classically: muffled heart sounds, distended neck veins, and a narrowing pulse pressure, meaning the systolic and diastolic numbers converge, such as `86/72`. Think of it after penetrating chest trauma or blunt chest injury. Treatment is drainage at the hospital.\n\n**Tension pneumothorax.** Air is trapped in the chest, collapses the lung and pushes the structures of the mediastinum toward the opposite side, kinking the great veins. Findings: severe respiratory distress, absent breath sounds on the affected side, distended neck veins, hypotension, and late in the course a trachea deviated away from the injury. Treatment is needle decompression by an advanced provider, so recognizing it and calling early is the EMT's job.\n\n**Massive pulmonary embolism.** A large clot, usually from a leg vein, lodges in the pulmonary arteries and blocks blood from reaching the lungs. Presentation: sudden shortness of breath, sharp chest pain worse with a breath, tachycardia, hypoxia that does not improve much with oxygen, and often clear lung sounds. Risk factors: recent surgery, long immobility, a cast, cancer, pregnancy, birth control pills, prior clots.\n\n> **Key:** Distended neck veins with hypotension is the combination that says the problem is the pump or an obstruction, not blood loss. Someone bleeding out has flat neck veins.\n\nFor all of these: oxygen, position of comfort, warmth, nothing by mouth, rapid transport, early advanced life support. The fix is not in your bag.",
+      "keyPoints": [
+        "Cardiogenic shock is a failed pump; expect crackles, distended neck veins, cold skin and a systolic often below 90.",
+        "Do not give a fluid bolus in cardiogenic shock; the volume is not the problem.",
+        "Obstructive shock includes cardiac tamponade, tension pneumothorax and massive pulmonary embolism.",
+        "Tamponade gives muffled heart sounds, distended neck veins and a narrowing pulse pressure.",
+        "Distended neck veins with hypotension points at the pump or an obstruction, not at blood loss."
+      ],
+      "checks": [
+        {
+          "q": "A patient two hours into crushing chest pain has cold mottled skin, a systolic of 78, crackles in both lungs and distended neck veins. The most appropriate management is:",
+          "choices": [
+            "Rapid fluid bolus of 1 liter to raise the blood pressure",
+            "Oxygen, position of comfort, warmth and rapid transport to a cardiac center",
+            "Assist with three doses of the patient's nitroglycerin",
+            "Lay him flat and elevate the legs"
+          ],
+          "answer": 1,
+          "why": "This is cardiogenic shock from a large infarct, and definitive care is opening the artery. Fluids worsen the pulmonary congestion, nitroglycerin is contraindicated at a systolic of 78, and lying a patient with crackles flat worsens the hypoxia."
+        },
+        {
+          "q": "Which combination of findings best suggests a tension pneumothorax rather than hemorrhagic shock?",
+          "choices": [
+            "Flat neck veins, cool skin, tachycardia",
+            "Distended neck veins, absent breath sounds on one side, hypotension",
+            "Bilateral crackles with a high blood pressure",
+            "Muffled heart sounds with clear and equal breath sounds"
+          ],
+          "answer": 1,
+          "why": "Trapped air raises pressure in the chest, so neck veins distend while blood pressure falls and breath sounds disappear on the affected side. Hemorrhage gives flat neck veins. The last option describes tamponade, where breath sounds remain normal."
+        }
+      ]
+    },
+    {
+      "id": "emt-cardio-l10",
+      "title": "Hypertensive emergency, aortic dissection and syncope",
+      "minutes": 6,
+      "body": "## When a high blood pressure is actually an emergency\n\nA high number by itself is not the emergency. **Hypertensive urgency** is a very high pressure, often a systolic above `180` or a diastolic above `120`, with no evidence of organ damage. **Hypertensive emergency** is that same pressure *plus* an organ actively being injured.\n\nWhat tells you an organ is being injured: a severe headache, blurred or lost vision, confusion, seizure, chest pain, shortness of breath with crackles, or one-sided weakness or speech trouble.\n\nField care is unglamorous and correct: calm the patient, position of comfort with the head elevated, oxygen only if the `SpO2` is below `94%`, minimal stimulation, recheck the pressure in both arms, and transport without lights and siren if it is safe to do so. An EMT does not lower blood pressure. Dropping it too fast strokes the patient out.\n\n> **On shift:** A blood pressure cuff that is too small reads falsely high. Before you act on `210/118`, make sure the cuff fits the arm.\n\n## Aortic dissection\n\nThe aorta has three layers. In a dissection the inner layer tears and blood forces its way between the layers, splitting the wall apart down the length of the vessel. It can shear off the branches it passes: coronary arteries, the vessels to the arms, the spinal arteries, the kidneys.\n\nThe red flags:\n\n- **Sudden, maximal, tearing or ripping pain**, often in the chest radiating through to the back between the shoulder blades. Patients describe it starting at full intensity, unlike an infarct that builds.\n- **A difference in blood pressure or pulse strength between the two arms**, classically more than `20 mmHg` systolic. Check both arms on any tearing chest pain.\n- Uneven or absent pulses, a new neurologic deficit, syncope with chest pain\n- A history of poorly controlled hypertension, Marfan syndrome, pregnancy, or stimulant use\n\n> **Trap:** This patient looks like a heart attack and the usual treatment can kill him. Aspirin is a bleeding risk in a tearing vessel, and nitroglycerin in a hypotensive dissection is dangerous. If the presentation is tearing pain to the back with unequal arm pressures, contact medical control before giving anything.\n\n## Syncope\n\nSyncope is a sudden brief loss of consciousness from a drop in brain perfusion, with a spontaneous full recovery. Recovery is the word that separates it from an arrest or a seizure.\n\nThe common and benign cause is **vasovagal**: pain, fear, the sight of blood, straining, standing too long. There is usually a warning of nausea, sweating, tunnel vision and a gray-out, and the patient wakes quickly once horizontal.\n\nThe worrying causes are cardiac: a dangerous rhythm, an outflow obstruction, an infarct, a pulmonary embolism, a dissection, or a bleed.\n\nRed flags that make syncope a cardiac workup instead of a reassurance: it happened **during exertion**, there was **no warning at all**, it happened **while sitting or lying down**, it came with chest pain or palpitations, the patient is older or has known heart disease, or there is a family history of sudden death in someone young.\n\nEvery syncope patient gets a blood glucose check, a full set of vital signs including orthostatic readings if protocol allows, an examination for injuries from the fall, a `12-lead ECG`, and transport. Fainting is a symptom, not a diagnosis.",
+      "keyPoints": [
+        "Hypertensive emergency is severe hypertension plus active organ damage; urgency is the same numbers without it.",
+        "EMTs do not lower blood pressure; calm, elevate the head, minimize stimulation and transport.",
+        "Aortic dissection: sudden tearing pain to the back plus a blood pressure difference over 20 mmHg between arms.",
+        "Suspected dissection makes aspirin and nitroglycerin dangerous; contact medical control first.",
+        "Syncope during exertion, with no warning, or while lying down is cardiac until proven otherwise."
+      ],
+      "checks": [
+        {
+          "q": "A 56-year-old describes chest pain that started at maximum intensity and tears through to his back. His right arm reads 188/104 and his left arm reads 142/88. The most likely diagnosis is:",
+          "choices": [
+            "Anterior myocardial infarction",
+            "Aortic dissection",
+            "Acute pericarditis",
+            "Panic attack"
+          ],
+          "answer": 1,
+          "why": "Sudden maximal tearing pain radiating to the back with a large systolic difference between arms is the classic dissection picture. An infarct builds rather than starting at peak and does not create unequal arm pressures. Pericarditis pain changes with position."
+        },
+        {
+          "q": "Which syncopal episode is the most concerning for a cardiac cause?",
+          "choices": [
+            "A 19-year-old who fainted after standing in the sun with warning nausea and sweating",
+            "A 25-year-old who fainted during a blood draw",
+            "A 22-year-old who fainted while sprinting, with no warning at all",
+            "A 30-year-old who fainted after vomiting repeatedly"
+          ],
+          "answer": 2,
+          "why": "Syncope during exertion with no prodrome suggests a structural or rhythm problem and carries a real risk of sudden death. The other three describe vasovagal or volume-related episodes with clear triggers and typical warning symptoms."
+        },
+        {
+          "q": "Your role in a hypertensive emergency with a systolic of 216 and a severe headache is to:",
+          "choices": [
+            "Administer the patient's own blood pressure medication",
+            "Transport rapidly with lights and siren to stimulate a faster response",
+            "Have the patient lie flat with legs elevated",
+            "Keep the patient calm, elevate the head, minimize stimulation and transport"
+          ],
+          "answer": 3,
+          "why": "EMTs do not lower blood pressure; a rapid drop can cause a stroke. Calm, head elevated, low stimulation and steady transport are correct. Assisting with a home antihypertensive is outside EMT scope, and lights and siren add stimulation without benefit."
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "emt-cardio-c001",
+      "front": "Trace a drop of blood from the vena cava to the aorta, naming every chamber and valve.",
+      "back": "Vena cava, right atrium, tricuspid, right ventricle, pulmonic, lungs, left atrium, mitral, left ventricle, aortic, aorta.",
+      "lesson": "emt-cardio-l01"
+    },
+    {
+      "id": "emt-cardio-c002",
+      "front": "Which vessels are the exceptions to the artery and vein oxygen rule?",
+      "back": "Pulmonary arteries carry oxygen-poor blood to the lungs. Pulmonary veins carry oxygen-rich blood back to the left atrium.",
+      "lesson": "emt-cardio-l01"
+    },
+    {
+      "id": "emt-cardio-c004",
+      "front": "Where do the coronary arteries branch from, and when do they fill?",
+      "back": "They are the first branches off the aorta, just above the aortic valve, and they fill during diastole because contraction pinches them shut.",
+      "lesson": "emt-cardio-l01"
+    },
+    {
+      "id": "emt-cardio-c005",
+      "front": "What does the left anterior descending artery feed, and why does blocking it matter most?",
+      "back": "The front wall and most of the left ventricle. Blocking it causes the largest infarcts, pump failure and cardiogenic shock.",
+      "lesson": "emt-cardio-l01"
+    },
+    {
+      "id": "emt-cardio-c006",
+      "front": "What does the right coronary artery supply, and what rhythm problems follow an inferior infarct?",
+      "back": "The right ventricle, the inferior wall, and in most people the SA and AV nodes. Inferior infarcts classically cause bradycardia, AV blocks and preload-dependent hypotension.",
+      "lesson": "emt-cardio-l01"
+    },
+    {
+      "id": "emt-cardio-c007",
+      "front": "State the cardiac output equation and normal adult values.",
+      "back": "Cardiac output = heart rate x stroke volume. About 70 mL per beat at a rate of 70 gives roughly 5 L per minute.",
+      "lesson": "emt-cardio-l01"
+    },
+    {
+      "id": "emt-cardio-c008",
+      "front": "Define preload, contractility and afterload.",
+      "back": "Preload is how full the ventricle is before it squeezes. Contractility is how hard the muscle squeezes. Afterload is the resistance it pumps against.",
+      "lesson": "emt-cardio-l01"
+    },
+    {
+      "id": "emt-cardio-c009",
+      "front": "Why does a heart rate of 190 lower cardiac output?",
+      "back": "There is no time in diastole for the ventricles to fill, so stroke volume collapses faster than the rate rises. The same lost diastole starves the coronary arteries.",
+      "lesson": "emt-cardio-l01"
+    },
+    {
+      "id": "emt-cardio-c010",
+      "front": "List the conduction pathway of the heart in order.",
+      "back": "SA node, AV node, bundle of His, right and left bundle branches, Purkinje fibers.",
+      "lesson": "emt-cardio-l02"
+    },
+    {
+      "id": "emt-cardio-c011",
+      "front": "What are the intrinsic backup rates of the SA node, AV junction and ventricles?",
+      "back": "SA node 60-100, AV junction 40-60, ventricles 20-40 beats per minute. Each takes over if the site above it fails.",
+      "lesson": "emt-cardio-l02"
+    },
+    {
+      "id": "emt-cardio-c012",
+      "front": "Why does the AV node delay the impulse?",
+      "back": "The roughly tenth-of-a-second delay lets the atria finish emptying into the ventricles before the ventricles contract, which maximizes stroke volume.",
+      "lesson": "emt-cardio-l02"
+    },
+    {
+      "id": "emt-cardio-c013",
+      "front": "What is pulseless electrical activity, and what causes it?",
+      "back": "An organized rhythm on the monitor with no pulse. The electricity works and the mechanics do not: blood loss, tamponade, tension pneumothorax, massive PE, severe acidosis or hypoxia.",
+      "lesson": "emt-cardio-l02"
+    },
+    {
+      "id": "emt-cardio-c014",
+      "front": "Does a defibrillator start a stopped heart?",
+      "back": "No. It stops all electrical activity at once so the SA node can resume control. That is why it works on fibrillation and does nothing for asystole.",
+      "lesson": "emt-cardio-l02"
+    },
+    {
+      "id": "emt-cardio-c015",
+      "front": "Define stable angina, including duration and what relieves it.",
+      "back": "Predictable chest pain brought on by exertion, lasting 3-5 minutes, relieved by rest or the patient's own nitroglycerin. No muscle dies.",
+      "lesson": "emt-cardio-l03"
+    },
+    {
+      "id": "emt-cardio-c016",
+      "front": "What makes angina unstable?",
+      "back": "Pain at rest, with less exertion than usual, lasting longer, or not relieved as it normally is. A plaque has cracked and a clot is forming.",
+      "lesson": "emt-cardio-l03"
+    },
+    {
+      "id": "emt-cardio-c017",
+      "front": "How quickly does heart muscle begin to die once a coronary artery closes?",
+      "back": "Within about 20-30 minutes, and the damage is permanent. That is the entire reason for speed and early cath lab activation.",
+      "lesson": "emt-cardio-l03"
+    },
+    {
+      "id": "emt-cardio-c018",
+      "front": "Describe the classic presentation of a myocardial infarction.",
+      "back": "Central chest pressure or squeezing, radiating to arm, jaw, neck, back or epigastrium, with sweating, nausea, shortness of breath and a sense of doom. Not positional, not reproducible by palpation.",
+      "lesson": "emt-cardio-l03"
+    },
+    {
+      "id": "emt-cardio-c019",
+      "front": "Which three patient groups most commonly present atypically with a heart attack?",
+      "back": "Women, older adults, and diabetics. They may show only fatigue, shortness of breath, nausea, back or jaw discomfort, weakness, confusion or a fall.",
+      "lesson": "emt-cardio-l03"
+    },
+    {
+      "id": "emt-cardio-c020",
+      "front": "Does relief from antacids or reproducible chest wall tenderness rule out an infarct?",
+      "back": "No. Neither does a normal set of vital signs. Many patients with an active infarct have a normal pulse, blood pressure and SpO2.",
+      "lesson": "emt-cardio-l03"
+    },
+    {
+      "id": "emt-cardio-c021",
+      "front": "How soon should a 12-lead ECG be obtained on a suspected cardiac patient?",
+      "back": "Within 10 minutes of patient contact. It determines whether the receiving hospital activates its catheterization lab before you arrive.",
+      "lesson": "emt-cardio-l04"
+    },
+    {
+      "id": "emt-cardio-c022",
+      "front": "When is oxygen indicated for a chest pain patient?",
+      "back": "Only if SpO2 is below 94%, the patient is short of breath, or shows signs of shock. Routine oxygen in normoxic patients constricts coronary vessels.",
+      "lesson": "emt-cardio-l04"
+    },
+    {
+      "id": "emt-cardio-c023",
+      "front": "What is the field aspirin dose, how is it given, and why?",
+      "back": "324 mg as four 81 mg chewable tablets, chewed not swallowed. Chewing speeds absorption. It blocks platelets from clumping so the clot stops growing.",
+      "lesson": "emt-cardio-l04"
+    },
+    {
+      "id": "emt-cardio-c024",
+      "front": "When do you withhold aspirin?",
+      "back": "True aspirin allergy, active gastrointestinal bleeding, or a patient who cannot protect their airway. Being on a blood thinner is generally not a reason, but protocols vary.",
+      "lesson": "emt-cardio-l04"
+    },
+    {
+      "id": "emt-cardio-c025",
+      "front": "How does nitroglycerin help chest pain?",
+      "back": "It dilates veins, dropping preload so the ventricle has less to pump and needs less oxygen, and it dilates coronary arteries.",
+      "lesson": "emt-cardio-l04"
+    },
+    {
+      "id": "emt-cardio-c026",
+      "front": "List the criteria before assisting a patient with nitroglycerin.",
+      "back": "Prescribed to this patient, not expired, systolic above 100 or the protocol number, no PDE-5 drug in 24-48 hours, and authorization by standing order or medical control.",
+      "lesson": "emt-cardio-l04"
+    },
+    {
+      "id": "emt-cardio-c027",
+      "front": "State the nitroglycerin dose, interval, maximum and the check before each dose.",
+      "back": "0.4 mg sublingual every 5 minutes, maximum 3 doses. Take a blood pressure before every single dose.",
+      "lesson": "emt-cardio-l04"
+    },
+    {
+      "id": "emt-cardio-c028",
+      "front": "Which erectile dysfunction drugs block nitroglycerin, and for how long?",
+      "back": "Sildenafil and vardenafil for 24 hours, tadalafil for up to 48 hours. The combination causes profound refractory hypotension. Ask every patient directly.",
+      "lesson": "emt-cardio-l04"
+    },
+    {
+      "id": "emt-cardio-c029",
+      "front": "Why is nitroglycerin dangerous in a right ventricular infarct?",
+      "back": "The right ventricle depends entirely on preload to produce output, and nitroglycerin removes preload. Suspect it with an inferior pattern, hypotension and clear lungs.",
+      "lesson": "emt-cardio-l04"
+    },
+    {
+      "id": "emt-cardio-c030",
+      "front": "Left-sided heart failure: where does fluid back up and what do you see?",
+      "back": "Into the lungs. Shortness of breath, crackles from the bases up, pink frothy sputum, orthopnea, and waking at night gasping.",
+      "lesson": "emt-cardio-l05"
+    },
+    {
+      "id": "emt-cardio-c031",
+      "front": "Right-sided heart failure: where does fluid back up and what do you see?",
+      "back": "Into the body. Swollen ankles and feet, distended neck veins, an enlarged tender liver, and weight gain from retained fluid.",
+      "lesson": "emt-cardio-l05"
+    },
+    {
+      "id": "emt-cardio-c032",
+      "front": "What is paroxysmal nocturnal dyspnea?",
+      "back": "Waking suddenly at night short of breath, because lying flat returns pooled leg fluid to the circulation and floods the lungs. A classic left-sided failure sign.",
+      "lesson": "emt-cardio-l05"
+    },
+    {
+      "id": "emt-cardio-c033",
+      "front": "Is the blood pressure usually high or low in acute pulmonary edema?",
+      "back": "Usually high, because the body has clamped down every vessel. A low pressure with pulmonary edema suggests cardiogenic shock and is far more ominous.",
+      "lesson": "emt-cardio-l05"
+    },
+    {
+      "id": "emt-cardio-c034",
+      "front": "List the EMT treatment for acute pulmonary edema in order.",
+      "back": "Sit upright with legs dependent, oxygen to 94-99%, CPAP at 5-10 cmH2O if awake with a systolic above 90, assist nitroglycerin per protocol, no fluids, transport upright.",
+      "lesson": "emt-cardio-l05"
+    },
+    {
+      "id": "emt-cardio-c035",
+      "front": "Why is wheezing in a 78-year-old with swollen ankles probably not asthma?",
+      "back": "Pulmonary edema squeezes the small airways and produces wheezes. A first asthma attack at 78 is rare; cardiac failure with distended neck veins and pedal edema is far more likely.",
+      "lesson": "emt-cardio-l05"
+    },
+    {
+      "id": "emt-cardio-c036",
+      "front": "What compression rate applies to adults, children and infants?",
+      "back": "100-120 per minute for every age group. Faster than 120 reduces filling time and lowers output.",
+      "lesson": "emt-cardio-l06"
+    },
+    {
+      "id": "emt-cardio-c037",
+      "front": "What compression depth applies to an adult, a child and an infant?",
+      "back": "Adult 2 to 2.4 inches or 5-6 cm. Child at least one third of chest depth, about 2 inches. Infant about one third, roughly 1.5 inches.",
+      "lesson": "emt-cardio-l06"
+    },
+    {
+      "id": "emt-cardio-c038",
+      "front": "What compression-to-ventilation ratios apply by rescuer count and age?",
+      "back": "One rescuer: 30:2 at every age. Two rescuers: 30:2 for adults, 15:2 for children and infants.",
+      "lesson": "emt-cardio-l06"
+    },
+    {
+      "id": "emt-cardio-c039",
+      "front": "Why does full chest recoil matter?",
+      "back": "Recoil creates the negative pressure that refills the heart between compressions. Leaning on the chest means the ventricle never fills, so each compression ejects less.",
+      "lesson": "emt-cardio-l06"
+    },
+    {
+      "id": "emt-cardio-c040",
+      "front": "What is compression fraction and what is the minimum target?",
+      "back": "The proportion of arrest time with hands actively on the chest. Keep it above 60%, and higher is better. Interruptions should each stay under 10 seconds.",
+      "lesson": "emt-cardio-l06"
+    },
+    {
+      "id": "emt-cardio-c041",
+      "front": "How often do compressors switch, and why that interval?",
+      "back": "Every 2 minutes, timed with the rhythm analysis so nothing is lost. Measured compression quality falls off before the provider feels tired.",
+      "lesson": "emt-cardio-l06"
+    },
+    {
+      "id": "emt-cardio-c042",
+      "front": "What is the preferred infant compression technique with two rescuers?",
+      "back": "Two-thumb encircling: thumbs side by side on the lower sternum with the hands wrapping the chest. It produces better depth and better blood pressure than two fingers.",
+      "lesson": "emt-cardio-l06"
+    },
+    {
+      "id": "emt-cardio-c044",
+      "front": "Name the links in the out-of-hospital chain of survival.",
+      "back": "Recognition and activation of emergency response, immediate high-quality CPR, rapid defibrillation, advanced resuscitation, post-arrest care, and recovery.",
+      "lesson": "emt-cardio-l06"
+    },
+    {
+      "id": "emt-cardio-c045",
+      "front": "How much does survival fall for each minute without CPR and defibrillation?",
+      "back": "Roughly 7-10% per minute. Bystander CPR roughly doubles or triples survival.",
+      "lesson": "emt-cardio-l06"
+    },
+    {
+      "id": "emt-cardio-c046",
+      "front": "Which rhythms are shockable and which are not?",
+      "back": "Shockable: ventricular fibrillation and pulseless ventricular tachycardia. Not shockable: asystole and pulseless electrical activity.",
+      "lesson": "emt-cardio-l07"
+    },
+    {
+      "id": "emt-cardio-c047",
+      "front": "What do you do immediately after the AED delivers a shock?",
+      "back": "Resume chest compressions immediately. Do not check a pulse and do not wait for reanalysis. Continue two full minutes before the next analysis.",
+      "lesson": "emt-cardio-l07"
+    },
+    {
+      "id": "emt-cardio-c048",
+      "front": "Describe anterior-lateral and anterior-posterior pad placement.",
+      "back": "Anterior-lateral: upper right chest below the collarbone and left mid-axillary line below the nipple. Anterior-posterior: center of the chest and between the shoulder blades.",
+      "lesson": "emt-cardio-l07"
+    },
+    {
+      "id": "emt-cardio-c049",
+      "front": "When do you use pediatric pads, and what if you do not have them?",
+      "back": "Under about 8 years or 25 kg. If pediatric pads are unavailable, use adult pads placed front and back so they do not touch. Never withhold defibrillation.",
+      "lesson": "emt-cardio-l07"
+    },
+    {
+      "id": "emt-cardio-c050",
+      "front": "How do you handle a medication patch or an implanted pacemaker when applying AED pads?",
+      "back": "Remove the patch with a gloved hand and wipe the skin. Place pads at least one inch from an implanted device, or switch to anterior-posterior placement.",
+      "lesson": "emt-cardio-l07"
+    },
+    {
+      "id": "emt-cardio-c051",
+      "front": "The patient is lying in a puddle and the chest is wet. What do you do before defibrillating?",
+      "back": "Drag the patient clear of standing water and towel the chest dry. Water conducts the shock across the skin and away from the heart.",
+      "lesson": "emt-cardio-l07"
+    },
+    {
+      "id": "emt-cardio-c053",
+      "front": "The AED says no shock advised on a pulseless patient. What now?",
+      "back": "Resume compressions immediately. It means the rhythm is asystole or PEA, not that the patient recovered. Analyze again in 2 minutes.",
+      "lesson": "emt-cardio-l07"
+    },
+    {
+      "id": "emt-cardio-c054",
+      "front": "What are the signs of return of spontaneous circulation?",
+      "back": "A palpable pulse at a rhythm check, a sudden ETCO2 rise above roughly 40 mmHg, purposeful movement, coughing, or spontaneous breathing.",
+      "lesson": "emt-cardio-l08"
+    },
+    {
+      "id": "emt-cardio-c055",
+      "front": "What ventilation rate and oxygen target apply after ROSC?",
+      "back": "One breath every 6 seconds, ten per minute, and titrate oxygen to an SpO2 of 94-98%. Hyperventilation and excess oxygen both worsen brain injury.",
+      "lesson": "emt-cardio-l08"
+    },
+    {
+      "id": "emt-cardio-c056",
+      "front": "List the post-ROSC priorities.",
+      "back": "Ventilate at 10 per minute, oxygen to 94-98%, treat hypotension, obtain a 12-lead, leave the pads on, and transport to a cardiac catheterization center.",
+      "lesson": "emt-cardio-l08"
+    },
+    {
+      "id": "emt-cardio-c057",
+      "front": "When do you not start CPR at all?",
+      "back": "Obvious irreversible death: rigor mortis, dependent lividity, decapitation or injuries incompatible with life, decomposition. Or a valid DNR, POLST or MOLST that is present and applies.",
+      "lesson": "emt-cardio-l08"
+    },
+    {
+      "id": "emt-cardio-c058",
+      "front": "Once CPR has started, what are the only reasons to stop?",
+      "back": "The patient revives, care transfers to an equal or higher level provider, you are physically unable to continue, the scene becomes unsafe, or a physician or protocol directs termination.",
+      "lesson": "emt-cardio-l08"
+    },
+    {
+      "id": "emt-cardio-c060",
+      "front": "What is cardiogenic shock and what does it look like?",
+      "back": "The pump has failed, usually from a large infarct. Cold mottled skin, weak thready pulse, systolic often below 90, altered mental status, crackles, distended neck veins.",
+      "lesson": "emt-cardio-l09"
+    },
+    {
+      "id": "emt-cardio-c061",
+      "front": "Why is a fluid bolus wrong in cardiogenic shock?",
+      "back": "The volume is not the problem; the pump is broken. Extra fluid floods lungs that are already congested and worsens the hypoxia.",
+      "lesson": "emt-cardio-l09"
+    },
+    {
+      "id": "emt-cardio-c062",
+      "front": "Name the three causes of obstructive shock an EMT must recognize.",
+      "back": "Cardiac tamponade, tension pneumothorax, and massive pulmonary embolism. All three need a procedure, not a drug, so call for advanced help early.",
+      "lesson": "emt-cardio-l09"
+    },
+    {
+      "id": "emt-cardio-c063",
+      "front": "What is the classic triad of cardiac tamponade?",
+      "back": "Muffled heart sounds, distended neck veins, and a narrowing pulse pressure as systolic and diastolic converge, for example 86/72. Breath sounds stay clear and equal.",
+      "lesson": "emt-cardio-l09"
+    },
+    {
+      "id": "emt-cardio-c064",
+      "front": "What findings suggest a tension pneumothorax?",
+      "back": "Severe respiratory distress, absent breath sounds on one side, distended neck veins, hypotension, and late tracheal deviation away from the injured side.",
+      "lesson": "emt-cardio-l09"
+    },
+    {
+      "id": "emt-cardio-c065",
+      "front": "What suggests a massive pulmonary embolism, and what are the risk factors?",
+      "back": "Sudden dyspnea, sharp pain worse with breathing, tachycardia, hypoxia resistant to oxygen, often clear lungs. Risks: recent surgery, immobility, cast, cancer, pregnancy, birth control, prior clots.",
+      "lesson": "emt-cardio-l09"
+    },
+    {
+      "id": "emt-cardio-c066",
+      "front": "What does hypotension with distended neck veins tell you?",
+      "back": "The problem is the pump or an obstruction, not blood loss. A patient bleeding out has flat neck veins.",
+      "lesson": "emt-cardio-l09"
+    },
+    {
+      "id": "emt-cardio-c067",
+      "front": "What separates hypertensive urgency from hypertensive emergency?",
+      "back": "Evidence of active organ damage. Severe headache, vision change, confusion, seizure, chest pain, crackles, or one-sided weakness turn urgency into an emergency.",
+      "lesson": "emt-cardio-l10"
+    },
+    {
+      "id": "emt-cardio-c068",
+      "front": "Should an EMT lower a dangerously high blood pressure?",
+      "back": "No. Dropping it too fast can cause a stroke. Keep the patient calm, head elevated, minimize stimulation, check both arms, and transport.",
+      "lesson": "emt-cardio-l10"
+    },
+    {
+      "id": "emt-cardio-c069",
+      "front": "What are the red flags of aortic dissection?",
+      "back": "Sudden maximal tearing pain to the back between the shoulder blades, a systolic difference over 20 mmHg between arms, unequal pulses, new neurologic deficit, syncope with chest pain.",
+      "lesson": "emt-cardio-l10"
+    },
+    {
+      "id": "emt-cardio-c070",
+      "front": "Why are aspirin and nitroglycerin dangerous in a suspected dissection?",
+      "back": "Aspirin adds bleeding risk in a vessel that is already tearing, and nitroglycerin is hazardous if the patient is hypotensive. Contact medical control before giving anything.",
+      "lesson": "emt-cardio-l10"
+    },
+    {
+      "id": "emt-cardio-c071",
+      "front": "Which syncope features make it cardiac until proven otherwise?",
+      "back": "It happened during exertion, with no warning at all, while sitting or lying down, with chest pain or palpitations, in an older patient, or with a family history of young sudden death.",
+      "lesson": "emt-cardio-l10"
+    },
+    {
+      "id": "emt-cardio-c072",
+      "front": "What does every syncope patient get before you consider the call routine?",
+      "back": "A blood glucose check, full vital signs, an exam for injuries from the fall, a 12-lead ECG and transport. Fainting is a symptom, not a diagnosis.",
+      "lesson": "emt-cardio-l10"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "emt-cardio-q001",
+      "q": "Blood returning from the body enters the heart at which chamber, and through which valve does it leave that chamber?",
+      "choices": [
+        "Left atrium, then the mitral valve",
+        "Right ventricle, then the aortic valve",
+        "Right atrium, then the tricuspid valve",
+        "Left ventricle, then the pulmonic valve"
+      ],
+      "answer": 2,
+      "why": "Systemic venous blood enters the right atrium from the vena cava and passes the tricuspid valve into the right ventricle. The mitral and aortic valves are on the left side, and the pulmonic valve sits after the right ventricle, not after the atrium.",
+      "lesson": "emt-cardio-l01",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-cardio-q002",
+      "q": "A patient in rapid atrial fibrillation has a rate of 180 and a blood pressure of 84/50. The physiologic explanation is:",
+      "choices": [
+        "Reduced filling time collapses stroke volume, so cardiac output falls despite the high rate",
+        "Afterload has risen sharply",
+        "The coronary arteries have dilated excessively",
+        "Preload has increased beyond the heart's capacity"
+      ],
+      "answer": 0,
+      "why": "Cardiac output is rate times stroke volume. At 180 there is almost no diastole, so the ventricles never fill and stroke volume collapses faster than the rate rises. Afterload and coronary dilation do not explain the hypotension here.",
+      "lesson": "emt-cardio-l01",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-cardio-q003",
+      "q": "Which statement about the coronary arteries is correct?",
+      "choices": [
+        "They branch off the pulmonary artery",
+        "They fill during systole when pressure is highest",
+        "The left circumflex supplies the SA node in most people",
+        "They are the first branches off the aorta and fill during diastole"
+      ],
+      "answer": 3,
+      "why": "The coronaries arise just above the aortic valve and perfuse during diastole, because contracting muscle compresses them shut. The right coronary artery, not the circumflex, feeds the SA and AV nodes in most people.",
+      "lesson": "emt-cardio-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-cardio-q004",
+      "q": "A monitor shows an organized rhythm at 64 beats per minute in an apneic patient with no palpable pulse. The correct action is:",
+      "choices": [
+        "Deliver a shock with the AED",
+        "Begin chest compressions and continue CPR",
+        "Recheck the pulse for a full minute before acting",
+        "Assist ventilations only, since the rhythm is organized"
+      ],
+      "answer": 1,
+      "why": "This is pulseless electrical activity: the electrical system works and the mechanical pump does not, so it is not shockable. Compressions plus ventilation and a search for a reversible cause are the treatment. Prolonged pulse checks waste perfusion time.",
+      "lesson": "emt-cardio-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-cardio-q005",
+      "q": "If the SA node fails completely, what is the expected intrinsic rate from the AV junction?",
+      "choices": [
+        "40-60 beats per minute",
+        "20-40 beats per minute",
+        "60-100 beats per minute",
+        "100-120 beats per minute"
+      ],
+      "answer": 0,
+      "why": "The AV junction is the first backup pacemaker at 40-60. The ventricles are the last resort at 20-40, and 60-100 is the normal SA node rate, which by definition is unavailable here.",
+      "lesson": "emt-cardio-l02",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-cardio-q006",
+      "q": "A 62-year-old woman reports two days of unusual fatigue, nausea and jaw discomfort. She is pale and diaphoretic. Vitals are within normal ranges. The most appropriate action is:",
+      "choices": [
+        "Reassure her and suggest she follow up with her doctor",
+        "Treat this as a likely gastrointestinal illness",
+        "Treat this as a possible acute coronary syndrome, obtain a 12-lead and transport",
+        "Withhold evaluation for cardiac causes since she denies chest pain"
+      ],
+      "answer": 2,
+      "why": "Women frequently present without chest pain, and fatigue, nausea, jaw discomfort and diaphoresis are recognized anginal equivalents. Normal vital signs never exclude an infarct. This patient needs a 12-lead within 10 minutes and transport.",
+      "lesson": "emt-cardio-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-cardio-q007",
+      "q": "Which description best fits the pain of a myocardial infarction rather than a musculoskeletal cause?",
+      "choices": [
+        "Sharp pain reproduced by pressing on the chest wall",
+        "Central pressure radiating to the jaw, with diaphoresis and nausea",
+        "Pain that worsens sharply with each deep breath",
+        "Pain that improves when the patient leans forward"
+      ],
+      "answer": 1,
+      "why": "Central pressure with radiation, sweating and nausea is the classic ischemic pattern. Pain reproduced by palpation suggests a chest wall cause, pain worse with breathing suggests a pleuritic cause, and relief with leaning forward suggests pericarditis.",
+      "lesson": "emt-cardio-l03",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-cardio-q008",
+      "q": "A 48-year-old has crushing substernal chest pain, a blood pressure of 146/88, and his own prescribed nitroglycerin. He took sildenafil about eight hours ago. You should:",
+      "choices": [
+        "Assist with 0.4 mg and recheck the pressure in 5 minutes",
+        "Assist with a reduced dose of 0.2 mg",
+        "Assist only after three doses of aspirin",
+        "Withhold nitroglycerin and give aspirin 324 mg chewed"
+      ],
+      "answer": 3,
+      "why": "Sildenafil within 24 hours is an absolute contraindication because the combination produces profound refractory hypotension, and there is no safe reduced dose. Aspirin remains indicated and is the intervention with the clearest survival benefit.",
+      "lesson": "emt-cardio-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-cardio-q009",
+      "q": "The correct nitroglycerin dosing an EMT may assist with is:",
+      "choices": [
+        "0.4 mg sublingual every 5 minutes up to 3 doses, with a blood pressure before each",
+        "0.4 mg sublingual every minute until the pain resolves",
+        "0.8 mg sublingual once, then transport",
+        "0.4 mg swallowed with water every 10 minutes"
+      ],
+      "answer": 0,
+      "why": "The standard is 0.4 mg sublingual, repeated at 5-minute intervals to a maximum of three doses, with a blood pressure checked before every dose. Nitroglycerin must dissolve under the tongue; swallowing it destroys the rapid absorption.",
+      "lesson": "emt-cardio-l04",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-cardio-q010",
+      "q": "A chest pain patient has an inferior infarct pattern, clear lung sounds and a blood pressure of 88/56. Nitroglycerin is:",
+      "choices": [
+        "Indicated, because it will improve coronary flow",
+        "Indicated once aspirin has been given",
+        "Contraindicated, because a right ventricular infarct depends on preload and nitroglycerin removes it",
+        "Contraindicated only if the patient is over 65"
+      ],
+      "answer": 2,
+      "why": "An inferior pattern with hypotension and clear lungs suggests right ventricular involvement. That ventricle produces output only when well filled, and nitroglycerin drops preload and can cause profound hypotension. Age is irrelevant to the decision.",
+      "lesson": "emt-cardio-l04",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-cardio-q011",
+      "q": "Why is aspirin given as chewable tablets rather than swallowed whole?",
+      "choices": [
+        "Chewing reduces the risk of stomach bleeding",
+        "Swallowing whole delivers too large a dose",
+        "Chewing allows a lower total milligram dose to be used",
+        "Chewing speeds absorption so platelet inhibition begins sooner"
+      ],
+      "answer": 3,
+      "why": "Chewing breaks the tablet down and speeds absorption, starting platelet inhibition earlier, which is the whole point in an evolving infarct. The dose is the same either way and chewing does not reduce gastrointestinal risk.",
+      "lesson": "emt-cardio-l04",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-cardio-q012",
+      "q": "Distended neck veins, swollen ankles and an enlarged tender liver are findings of:",
+      "choices": [
+        "Left-sided heart failure",
+        "Right-sided heart failure",
+        "Aortic dissection",
+        "Hypovolemic shock"
+      ],
+      "answer": 1,
+      "why": "Right-sided failure backs blood into the systemic circuit, producing peripheral edema, jugular distention and hepatic congestion. Left-sided failure backs up into the lungs and causes crackles. Hypovolemia produces flat neck veins.",
+      "lesson": "emt-cardio-l05",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-cardio-q013",
+      "q": "An 81-year-old in acute pulmonary edema is upright, gasping, with a blood pressure of 188/102 and an SpO2 of 83% on a nonrebreather. He is alert and following commands. The best next step is:",
+      "choices": [
+        "Apply CPAP at 5 cmH2O, titrating as tolerated, and keep him upright",
+        "Lay him supine and elevate his legs",
+        "Begin a 500 mL fluid bolus",
+        "Begin bag-valve mask ventilation at 20 breaths per minute"
+      ],
+      "answer": 0,
+      "why": "He meets every CPAP criterion: awake, breathing on his own, following commands, and a systolic well above 90. Lying flat worsens the flooding, fluids add volume he cannot handle, and bagging an alert patient at 20 per minute hyperventilates him.",
+      "lesson": "emt-cardio-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-cardio-q014",
+      "q": "Which finding in a 78-year-old with wheezing most strongly points to heart failure rather than asthma?",
+      "choices": [
+        "Expiratory wheezes in all fields",
+        "A respiratory rate of 28",
+        "A history of smoking",
+        "Distended neck veins with pitting ankle edema"
+      ],
+      "answer": 3,
+      "why": "Jugular distention with pedal edema indicates volume overload and right-sided congestion, which asthma does not cause. Wheezes, tachypnea and smoking history are all compatible with either. A first asthma attack at 78 would be very unusual.",
+      "lesson": "emt-cardio-l05",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-cardio-q015",
+      "q": "Two rescuers are performing CPR on a 7-month-old with no advanced airway. The correct ratio and compression technique are:",
+      "choices": [
+        "30:2 using two fingers",
+        "30:2 using the heel of one hand",
+        "15:2 using the two-thumb encircling technique",
+        "15:2 using the heel of one hand"
+      ],
+      "answer": 2,
+      "why": "Two rescuers on an infant use 15:2, and the two-thumb encircling method is preferred with a second rescuer because it generates better depth and blood pressure. Two fingers is the single-rescuer method, and one-hand compressions are for children, not infants.",
+      "lesson": "emt-cardio-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-cardio-q016",
+      "q": "Correct compression depth for an adult is:",
+      "choices": [
+        "1 to 1.5 inches",
+        "2 to 2.4 inches",
+        "3 to 4 inches",
+        "One quarter of the chest depth"
+      ],
+      "answer": 1,
+      "why": "Adults are compressed 2 to 2.4 inches, or 5 to 6 cm. Shallower compressions do not generate meaningful output, and depths beyond 2.4 inches increase injury without improving perfusion. One to 1.5 inches is the infant depth.",
+      "lesson": "emt-cardio-l06",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-cardio-q017",
+      "q": "During a resuscitation you notice the compressor is resting his hands on the chest between compressions. The consequence is:",
+      "choices": [
+        "The ventricles cannot refill, so each compression ejects less blood",
+        "The compression rate becomes too fast",
+        "The airway becomes obstructed",
+        "The AED cannot analyze the rhythm"
+      ],
+      "answer": 0,
+      "why": "Incomplete recoil prevents the negative intrathoracic pressure that refills the heart, so stroke volume during CPR drops. Leaning does not change rate, obstruct the airway, or interfere with AED analysis, which happens during a pause anyway.",
+      "lesson": "emt-cardio-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-cardio-q018",
+      "q": "How often should compressors rotate during a prolonged resuscitation, and why?",
+      "choices": [
+        "Every 30 seconds, to prevent any fatigue",
+        "Only when the compressor asks to be relieved",
+        "Every 2 minutes, because measurable quality declines before fatigue is felt",
+        "Every 5 minutes, to limit interruptions"
+      ],
+      "answer": 2,
+      "why": "Compression depth and recoil degrade objectively within about two minutes, usually before the provider notices. Rotating at the rhythm analysis costs no extra pause. Waiting for the compressor to feel tired means quality has already dropped.",
+      "lesson": "emt-cardio-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-cardio-q019",
+      "q": "Which rhythm will an AED advise a shock for?",
+      "choices": [
+        "Asystole",
+        "Pulseless electrical activity",
+        "Sinus bradycardia with a pulse",
+        "Ventricular fibrillation"
+      ],
+      "answer": 3,
+      "why": "A shock resets chaotic electrical activity, so it works for ventricular fibrillation and pulseless ventricular tachycardia. Asystole has nothing to reset, PEA already has organized electricity, and a patient with a pulse is never defibrillated.",
+      "lesson": "emt-cardio-l07",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-cardio-q020",
+      "q": "You shock an adult in ventricular fibrillation. The patient does not move. Your next action is:",
+      "choices": [
+        "Check for a carotid pulse",
+        "Immediately resume compressions for 2 minutes",
+        "Reanalyze the rhythm right away",
+        "Deliver two ventilations, then reassess"
+      ],
+      "answer": 1,
+      "why": "Even a successful shock leaves a heart that is not yet perfusing, and any pause lets arterial pressure collapse. Compressions resume immediately and run two full minutes before the next analysis. Pulse checks and immediate reanalysis both cost perfusion.",
+      "lesson": "emt-cardio-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-cardio-q021",
+      "q": "A cardiac arrest patient has a nitroglycerin patch on the left chest where you need to place a pad. You should:",
+      "choices": [
+        "Remove the patch with a gloved hand, wipe the skin, then apply the pad",
+        "Place the pad directly over the patch",
+        "Place the pad several inches lower to avoid the patch",
+        "Withhold defibrillation until the patch has been off for 10 minutes"
+      ],
+      "answer": 0,
+      "why": "A medication patch can cause arcing, burns and poor energy delivery, so it is removed and the skin wiped. Shocking over it or displacing the pad badly compromises current flow, and waiting ten minutes is an unacceptable delay.",
+      "lesson": "emt-cardio-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-cardio-q022",
+      "q": "A 5-year-old weighing about 20 kg is in cardiac arrest. Your AED has only adult pads available. You should:",
+      "choices": [
+        "Withhold defibrillation and continue CPR only",
+        "Delay until a unit with pediatric pads arrives",
+        "Perform CPR and transport without applying the AED",
+        "Apply the adult pads in anterior-posterior position and defibrillate"
+      ],
+      "answer": 3,
+      "why": "Defibrillation with adult pads is far better than none. Placing them front and back keeps the larger pads from touching on a small chest. Withholding or delaying defibrillation in a shockable pediatric arrest costs survival.",
+      "lesson": "emt-cardio-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-cardio-q023",
+      "q": "After achieving ROSC, the most common and most harmful error crews make is:",
+      "choices": [
+        "Applying oxygen",
+        "Hyperventilating the patient",
+        "Obtaining a 12-lead ECG",
+        "Leaving the defibrillation pads attached"
+      ],
+      "answer": 1,
+      "why": "Excitement drives crews to bag too fast, which raises intrathoracic pressure, cuts venous return and constricts cerebral vessels. The correct rate is 1 breath every 6 seconds. Oxygen titrated to 94-98%, a 12-lead and leaving the pads on are all correct.",
+      "lesson": "emt-cardio-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-cardio-q024",
+      "q": "Which finding during compressions most reliably signals return of spontaneous circulation before you can feel a pulse?",
+      "choices": [
+        "The AED advising no shock",
+        "Pupils becoming reactive",
+        "An abrupt rise in end-tidal carbon dioxide above about 40 mmHg",
+        "The chest becoming easier to compress"
+      ],
+      "answer": 2,
+      "why": "A sudden ETCO2 jump reflects restored pulmonary blood flow and typically precedes a palpable pulse. A no-shock advisory covers asystole and PEA as well, pupils are slow and unreliable, and compression resistance reflects the chest wall rather than circulation.",
+      "lesson": "emt-cardio-l08",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-cardio-q025",
+      "q": "You arrive to find a pulseless patient with rigor mortis and dependent lividity. The correct action is:",
+      "choices": [
+        "Do not begin resuscitation and follow local protocol for a death on scene",
+        "Begin CPR and apply the AED",
+        "Begin CPR only if family requests it",
+        "Transport with CPR in progress"
+      ],
+      "answer": 0,
+      "why": "Rigor mortis and dependent lividity are obvious, irreversible signs of death and resuscitation is not initiated. Starting CPR here offers no benefit and delays appropriate scene management. Family preference does not change an irreversible finding.",
+      "lesson": "emt-cardio-l08",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-cardio-q026",
+      "q": "A patient four hours into chest pain has cold clammy skin, a systolic of 76, crackles to the mid-lung fields and distended neck veins. The correct management includes:",
+      "choices": [
+        "A 1 liter fluid bolus wide open",
+        "Oxygen, keep him warm, position of comfort, and rapid transport to a cardiac center",
+        "Assisting with his nitroglycerin to reduce cardiac workload",
+        "Placing him flat with legs elevated"
+      ],
+      "answer": 1,
+      "why": "This is cardiogenic shock, where the pump has failed and only opening the artery helps. Fluids worsen pulmonary congestion, nitroglycerin is contraindicated at a systolic of 76, and laying a patient with crackles flat deepens the hypoxia.",
+      "lesson": "emt-cardio-l09",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-cardio-q027",
+      "q": "Muffled heart sounds, distended neck veins and a blood pressure of 84/70 after a stab wound to the chest suggest:",
+      "choices": [
+        "Hypovolemic shock from blood loss",
+        "Tension pneumothorax",
+        "Massive pulmonary embolism",
+        "Cardiac tamponade"
+      ],
+      "answer": 3,
+      "why": "Muffled sounds with jugular distention and a narrow pulse pressure of 84/70 is the classic tamponade triad. Hypovolemia gives flat neck veins, a tension pneumothorax removes breath sounds on one side, and a PE follows immobility rather than penetrating trauma.",
+      "lesson": "emt-cardio-l09",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-cardio-q028",
+      "q": "A 66-year-old reports chest pain that began at maximum intensity and tears through to his back. His right arm reads 196/108 and his left reads 148/86. Your management should include:",
+      "choices": [
+        "Aspirin 324 mg chewed and nitroglycerin 0.4 mg",
+        "Rapid fluid bolus and legs elevated",
+        "Withholding aspirin and nitroglycerin, contacting medical control, and rapid transport",
+        "Encouraging him to walk to the stretcher to assess exertional pain"
+      ],
+      "answer": 2,
+      "why": "Tearing pain to the back with a large inter-arm pressure difference suggests aortic dissection, where aspirin adds bleeding risk and nitroglycerin can be dangerous. Contact medical control, keep the patient still, and transport rapidly.",
+      "lesson": "emt-cardio-l10",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-cardio-q029",
+      "q": "A blood pressure of 214/122 with a severe headache and blurred vision is best managed by an EMT with:",
+      "choices": [
+        "Calm reassurance, head elevated, minimal stimulation and transport",
+        "Assisting the patient with his home antihypertensive",
+        "Lying the patient flat to improve cerebral perfusion",
+        "Withholding transport until the pressure falls below 180 systolic"
+      ],
+      "answer": 0,
+      "why": "This is a hypertensive emergency and EMTs do not lower blood pressure, because a rapid drop can cause a stroke. Calm, head elevated, minimal stimulation and steady transport are correct. Assisting with an antihypertensive is outside EMT scope.",
+      "lesson": "emt-cardio-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-cardio-q030",
+      "q": "Which episode of syncope warrants the highest suspicion of a dangerous cardiac cause?",
+      "choices": [
+        "A teenager who fainted after standing in a hot gym, with warning nausea",
+        "A 20-year-old athlete who collapsed suddenly mid-sprint with no warning",
+        "An adult who fainted while having blood drawn",
+        "An adult who fainted after prolonged vomiting and diarrhea"
+      ],
+      "answer": 1,
+      "why": "Exertional syncope with no prodrome suggests a structural or rhythm abnormality and carries a real risk of sudden death. The other three have clear vasovagal or volume-depletion triggers with typical warning symptoms and benign patterns.",
+      "lesson": "emt-cardio-l10",
+      "difficulty": 2
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "emt-cardio-s01",
+      "title": "Dispatched: 58-year-old male, chest pain",
+      "setting": "field",
+      "intro": "You are dispatched at 1420 to a hardware store for a 58-year-old man with chest pain. Dispatch says he sat down behind the register and asked an employee to call. You carry aspirin, a 12-lead monitor, oxygen and a blood pressure cuff. Transport time to the nearest hospital is 12 minutes. The nearest hospital with a cardiac catheterization lab is 21 minutes away.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "He is sitting on a stool, pale, with sweat beading on his forehead in an air-conditioned store. He puts a closed fist against the center of his chest and says the pressure started about forty minutes ago while he was stocking shelves and has not let up. He feels sick to his stomach. He has high blood pressure and high cholesterol and takes nitroglycerin for chest pain, which is in his jacket pocket.\n\nWhat do you do first?",
+          "vitals": {
+            "hr": 96,
+            "bp": "148/88",
+            "rr": 20,
+            "spo2": 97
+          },
+          "choices": [
+            {
+              "text": "Have him stay seated and stop moving, put him on the monitor, and get a 12-lead within 10 minutes of contact",
+              "next": "s2",
+              "feedback": "Correct. Stop the exertion, because every bit of work raises myocardial oxygen demand, and get the tracing that decides where he goes and whether the cath lab is activated before you arrive.",
+              "score": 1
+            },
+            {
+              "text": "Have him walk out to the stretcher so you can save time on scene",
+              "next": "s2",
+              "feedback": "Never walk a chest pain patient. Walking increases the heart's oxygen demand exactly when supply is cut off, and patients have arrested doing it. Bring the stretcher to him.",
+              "score": -1
+            },
+            {
+              "text": "Apply a nonrebreather at 15 L/min right away",
+              "next": "s2",
+              "feedback": "His SpO2 is 97% and he is not short of breath. Routine oxygen in a normoxic cardiac patient constricts coronary vessels and worsens outcomes. The threshold is below 94%, dyspnea, or shock.",
+              "score": -1
+            },
+            {
+              "text": "Give aspirin immediately, before anything else",
+              "next": "s2",
+              "feedback": "Aspirin is right and it is coming. Confirming no allergy and no active bleeding takes ten seconds, and getting the 12-lead started at the same time costs you nothing. Order here is a minor point; skipping the allergy check is not.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "The 12-lead is acquired at six minutes after contact and transmitted. He has no allergies and no history of ulcers or bleeding, and he has not taken any aspirin today.\n\nWhat dose do you give and how?",
+          "vitals": {
+            "hr": 94,
+            "bp": "146/86",
+            "rr": 20,
+            "spo2": 97
+          },
+          "choices": [
+            {
+              "text": "324 mg, as four 81 mg chewable tablets, chewed and then swallowed",
+              "next": "s3",
+              "feedback": "Correct. Four baby aspirin equal 324 mg, and chewing speeds absorption so platelet inhibition starts sooner. This is the single field intervention with the clearest survival benefit.",
+              "score": 1
+            },
+            {
+              "text": "81 mg, one chewable tablet",
+              "next": "s3",
+              "feedback": "Too small an antiplatelet load for an acute event. The field dose is 324 mg. One 81 mg tablet is a daily preventive dose, not an acute one.",
+              "score": -1
+            },
+            {
+              "text": "650 mg of regular aspirin swallowed with water",
+              "next": "s3",
+              "feedback": "Wrong dose and wrong route. More than 324 mg adds bleeding risk without benefit, and swallowing whole tablets delays absorption when minutes matter.",
+              "score": -1
+            },
+            {
+              "text": "No aspirin, because he takes nitroglycerin and might be on other cardiac medications",
+              "next": "s3",
+              "feedback": "Being on cardiac medications is not a contraindication. The reasons to withhold are a true allergy, active gastrointestinal bleeding, or an inability to protect the airway.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "He has chewed the aspirin. His own nitroglycerin bottle is in his hand: filled in his name, three months ago, not expired. He rates the pressure an 8 out of 10.\n\nBefore you assist with a dose, what must you confirm?",
+          "vitals": {
+            "hr": 92,
+            "bp": "144/86",
+            "rr": 18,
+            "spo2": 98
+          },
+          "choices": [
+            {
+              "text": "Systolic above 100, prescribed to him, not expired, no erectile dysfunction drug in the last 24 to 48 hours, and protocol authorization",
+              "next": "s4",
+              "feedback": "All five, every time. The one providers forget is the PDE-5 question, and patients almost never volunteer it. Ask directly, regardless of the patient's age.",
+              "score": 1
+            },
+            {
+              "text": "Only that the bottle is his and the pressure is above 90",
+              "next": "s4",
+              "feedback": "Missing the expiration check and the PDE-5 question. Sildenafil within 24 hours or tadalafil within 48 hours plus nitroglycerin produces profound hypotension that is very hard to reverse.",
+              "score": 0
+            },
+            {
+              "text": "Nothing, since it is his own prescribed medication",
+              "next": "s4",
+              "feedback": "His prescription does not mean it is safe right now. Blood pressure, expiration and PDE-5 use all change moment to moment, and assisting is still a medication administration you are responsible for.",
+              "score": -1
+            },
+            {
+              "text": "Only that his pain is above a 5 out of 10",
+              "next": "s4",
+              "feedback": "Pain severity is not a criterion for nitroglycerin at all. The criteria are prescription, expiration, blood pressure, PDE-5 exposure and authorization.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "He denies any erectile dysfunction medication, and you confirm this twice. You assist with `0.4 mg` sublingual. Five minutes later he says the pressure has eased to about a 6. You take another blood pressure before considering a second dose.",
+          "vitals": {
+            "hr": 88,
+            "bp": "126/78",
+            "rr": 18,
+            "spo2": 98
+          },
+          "choices": [
+            {
+              "text": "Assist with a second 0.4 mg dose and recheck the pressure again in 5 minutes",
+              "next": "s5",
+              "feedback": "Correct. He is improving, the systolic is comfortably above 100, and he has had one of three permitted doses. Keep checking the pressure before each dose, without exception.",
+              "score": 1
+            },
+            {
+              "text": "Give two doses at once to get ahead of the pain",
+              "next": "s5",
+              "feedback": "Never stack doses. The interval is 5 minutes precisely because the blood pressure response has to be measured between them.",
+              "score": -1
+            },
+            {
+              "text": "Stop nitroglycerin since the pain improved",
+              "next": "s5",
+              "feedback": "Defensible but conservative. He still has active ischemic pain at a 6 and a blood pressure that supports treatment. Continuing within protocol reduces the workload on a starving muscle.",
+              "score": 0
+            },
+            {
+              "text": "Skip further nitroglycerin and transport to the closest hospital, 12 minutes away",
+              "next": "s5",
+              "feedback": "The closest hospital is not the right hospital if it cannot open the artery. And withholding an indicated dose with a systolic of 126 leaves a treatment on the table.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "You are loaded and moving. He has had two doses. He suddenly says he feels lightheaded and looks grayer. You recheck the blood pressure.",
+          "vitals": {
+            "hr": 58,
+            "bp": "84/50",
+            "rr": 18,
+            "spo2": 96
+          },
+          "choices": [
+            {
+              "text": "Withhold the third dose, lay him supine, recheck the pressure, and notify the receiving hospital",
+              "next": "s6",
+              "feedback": "Correct. A systolic of 84 with a falling heart rate is below every threshold. The bradycardia with hypotension raises the question of an inferior and right ventricular infarct, which makes further nitroglycerin dangerous.",
+              "score": 1
+            },
+            {
+              "text": "Give the third dose, since he is still within the three-dose maximum",
+              "next": "s6",
+              "feedback": "The maximum is a ceiling, not a target. Blood pressure is checked before every dose precisely so this dose is not given. A third dose here could drop him into profound hypotension.",
+              "score": -1
+            },
+            {
+              "text": "Sit him fully upright to reduce the workload on his heart",
+              "next": "s6",
+              "feedback": "Sitting a hypotensive patient upright drops cerebral perfusion further. Lay him flat and reassess.",
+              "score": -1
+            },
+            {
+              "text": "Hold nitroglycerin and continue transport without changing anything else",
+              "next": "s6",
+              "feedback": "Holding the dose is right, but a systolic of 84 with a heart rate of 58 deserves a position change, a reassessment and a call ahead. Do not just keep driving.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "prompt": "Supine, his pressure comes up to 96/60 and the lightheadedness eases. You are nine minutes from the catheterization center.\n\nWhat is the most important content of your radio report?",
+          "choices": [
+            {
+              "text": "58-year-old with 40 minutes of ischemic chest pain, 12-lead transmitted, aspirin 324 mg given, two doses of nitroglycerin with subsequent hypotension and bradycardia, now supine and improved, ETA nine minutes",
+              "next": "end",
+              "feedback": "Exactly. The hypotensive response after nitroglycerin with bradycardia is the detail that changes the receiving team's thinking, because it points at right ventricular involvement.",
+              "score": 1
+            },
+            {
+              "text": "Chest pain patient, stable, ETA nine minutes",
+              "next": "end",
+              "feedback": "Far too thin for a patient whose tracing may already have activated the cath lab. The team needs the medications given and the hypotensive episode.",
+              "score": 0
+            },
+            {
+              "text": "Give the full past medical history and every medication he takes at home",
+              "next": "end",
+              "feedback": "That detail belongs in the bedside handoff and the written report. The radio report is who, what is wrong, what you did, how he responded, and when you arrive.",
+              "score": -1
+            }
+          ]
+        }
+      ],
+      "debrief": "The pattern: aspirin is nearly always yes, and nitroglycerin is always a decision.\n\nAspirin `324 mg` chewed, given as four `81 mg` tablets, has the clearest survival benefit of anything in your bag, and the only real reasons to withhold it are a true allergy, active bleeding, or a patient who cannot protect their airway.\n\nNitroglycerin has five gates every single time: prescribed to this patient, not expired, systolic above `100`, no PDE-5 drug in the last `24-48` hours, and protocol authorization. A blood pressure goes before every dose, not before the first one. That discipline is what caught the drop from `144` to `84` in this case.\n\nThe deeper lesson is the bradycardia with hypotension after nitroglycerin. That combination points at an inferior infarct with right ventricular involvement, a ventricle that produces output only when it is full. Nitroglycerin empties it. Lay the patient flat, hold the nitro, and tell the receiving hospital, because it changes what they do next.\n\nAnd oxygen: only below `94%`, or with dyspnea or shock. Never routinely."
+    },
+    {
+      "id": "emt-cardio-s02",
+      "title": "Witnessed collapse in a gym",
+      "setting": "field",
+      "intro": "You are dispatched to a fitness center for a man down. Dispatch reports a 54-year-old collapsed on the gym floor about two minutes ago, bystanders are with him, and an AED is mounted on the wall near the front desk. You and your partner arrive in four minutes with the monitor, airway bag and stretcher.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "A staff member is kneeling beside a man lying on the rubber floor. She says he was on a treadmill, grabbed his chest, and went down. She has not touched him. He is motionless and gray, and you see occasional irregular gasps. You kneel, tap his shoulder and shout. Nothing.\n\nWhat do you do in the next ten seconds?",
+          "choices": [
+            {
+              "text": "Check for a carotid pulse and breathing simultaneously for no more than 10 seconds, and send your partner for the AED",
+              "next": "s2",
+              "feedback": "Correct. Agonal gasps are not breathing. One simultaneous check, ten seconds maximum, while the AED is already on its way. Both things happen at once because you have two people.",
+              "score": 1
+            },
+            {
+              "text": "Begin rescue breaths with a bag-valve mask and reassess in one minute",
+              "next": "s2",
+              "feedback": "This is a witnessed adult collapse during exertion, which is a cardiac arrest until proven otherwise. Ventilation alone wastes the minutes when defibrillation has the highest chance of working.",
+              "score": -1
+            },
+            {
+              "text": "Take a full set of vital signs including a blood pressure",
+              "next": "s2",
+              "feedback": "A blood pressure on an unresponsive, gasping patient tells you nothing you need and costs you a minute you cannot get back.",
+              "score": -1
+            },
+            {
+              "text": "Load him onto the stretcher and begin CPR in the ambulance",
+              "next": "s2",
+              "feedback": "Compressions are worse in a moving vehicle and the delay in moving him costs perfusion. Work the arrest where he lies. The definitive treatment, a shock, is on the wall twenty feet away.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "No pulse. The gasps are agonal. Your partner is back with the AED in about thirty seconds.\n\nWhat happens while the pads are being applied?",
+          "vitals": {
+            "hr": 0,
+            "rr": 0,
+            "gcs": 3
+          },
+          "choices": [
+            {
+              "text": "Begin compressions immediately at 100-120 per minute, 2 to 2.4 inches deep, and do not stop while the pads go on",
+              "next": "s3",
+              "feedback": "Correct. Compressions start the instant you confirm no pulse and continue through pad placement. The only pause is the analysis itself.",
+              "score": 1
+            },
+            {
+              "text": "Hold compressions until the pads are attached so the analysis is not disturbed",
+              "next": "s3",
+              "feedback": "Pads are applied during compressions. Every second without compressions drops the pressure in his coronary arteries, and it takes several compressions to build it back.",
+              "score": -1
+            },
+            {
+              "text": "Start compressions but at a slower rate to conserve energy for a long code",
+              "next": "s3",
+              "feedback": "Rate is 100-120 from the first compression. Slower compressions generate less flow, and the fix for fatigue is rotating every two minutes, not compressing badly.",
+              "score": -1
+            },
+            {
+              "text": "Insert an oral airway and ventilate first, then begin compressions",
+              "next": "s3",
+              "feedback": "In a witnessed adult arrest, compressions and defibrillation come first. Airway management follows. Reversed priorities cost survival in a primary cardiac arrest.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "Pads are on in anterior-lateral position. The AED analyzes and announces shock advised. Everyone is clear and it discharges.\n\nWhat is your immediate next action?",
+          "choices": [
+            {
+              "text": "Check for a carotid pulse to see whether it worked",
+              "next": "s4",
+              "feedback": "This is the most common post-shock error. A heart that just converted is not perfusing yet, and the pause lets arterial pressure collapse. Compressions first, pulse check at the next analysis.",
+              "score": -1
+            },
+            {
+              "text": "Resume compressions immediately and continue for 2 minutes before the next analysis",
+              "next": "s4",
+              "feedback": "Correct. No pulse check, no waiting, no discussion. Two full minutes of compressions, with the compressor switching at the next analysis.",
+              "score": 1
+            },
+            {
+              "text": "Wait for the AED to reanalyze before touching the patient",
+              "next": "s4",
+              "feedback": "The AED will not reanalyze for two minutes, and those two minutes are meant to be filled with compressions, not standing still.",
+              "score": -1
+            },
+            {
+              "text": "Give two ventilations, then resume compressions",
+              "next": "s4",
+              "feedback": "Compressions restart immediately after a shock. Ventilations resume in the 30:2 cycle from there, not as a separate step first.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "You complete two minutes at 30 compressions to 2 breaths with an oral airway and bag-valve mask. You switch compressors at the analysis. Shock advised again, delivered, compressions resumed immediately. During the third cycle your partner notes the end-tidal carbon dioxide has jumped from 18 to 44 mmHg.",
+          "vitals": {
+            "rr": 0,
+            "spo2": 88
+          },
+          "choices": [
+            {
+              "text": "Finish the two-minute cycle, then check for a pulse at the next rhythm analysis",
+              "next": "s5",
+              "feedback": "Correct. A sudden ETCO2 rise strongly suggests ROSC, but you do not interrupt compressions to chase it. Complete the cycle and check at the scheduled pause.",
+              "score": 1
+            },
+            {
+              "text": "Stop compressions immediately and check a pulse",
+              "next": "s5",
+              "feedback": "Tempting, and it is the right suspicion, but an unscheduled interruption costs perfusion. The check happens at the next analysis, which is seconds away.",
+              "score": 0
+            },
+            {
+              "text": "Ignore it, since end-tidal carbon dioxide is not useful during CPR",
+              "next": "s5",
+              "feedback": "The opposite is true. ETCO2 reflects pulmonary blood flow, so it measures compression quality and is often the first sign of ROSC, before any pulse is palpable.",
+              "score": -1
+            },
+            {
+              "text": "Increase the ventilation rate to take advantage of the returning circulation",
+              "next": "s5",
+              "feedback": "Hyperventilation raises pressure in the chest and reduces venous return, which is exactly what a barely returning circulation cannot tolerate.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "At the analysis the AED advises no shock. You check the carotid and feel a strong, regular pulse. He is not breathing on his own. Your partner has the bag ready.",
+          "vitals": {
+            "hr": 104,
+            "bp": "92/58",
+            "rr": 0,
+            "spo2": 90
+          },
+          "choices": [
+            {
+              "text": "Ventilate at 1 breath every 6 seconds, titrate oxygen toward 94-98%, leave the pads on, and obtain a 12-lead",
+              "next": "s6",
+              "feedback": "Correct on every count. Ten breaths a minute, not more. Pads stay on because re-arrest is common, and the 12-lead may change the destination.",
+              "score": 1
+            },
+            {
+              "text": "Ventilate at 20 breaths per minute to make up for the arrest",
+              "next": "s6",
+              "feedback": "The classic post-ROSC error. Hyperventilation raises intrathoracic pressure, cuts venous return and constricts cerebral vessels in a brain that just survived an arrest.",
+              "score": -1
+            },
+            {
+              "text": "Remove the pads so they do not interfere with the 12-lead",
+              "next": "s6",
+              "feedback": "Leave them on. Re-arrest in the first minutes is common and you want to shock without setting up again. The pads do not prevent a 12-lead.",
+              "score": -1
+            },
+            {
+              "text": "Stop ventilating and apply a nonrebreather at 15 L/min",
+              "next": "s6",
+              "feedback": "He is not breathing on his own. A mask delivers nothing to a patient with no respiratory effort. Continue positive pressure ventilation at 10 per minute.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "prompt": "He is ventilated, saturating at 96%, with a pulse of 100 and a systolic in the 90s. The 12-lead shows an infarct pattern. The nearest hospital is eight minutes away and has no catheterization lab. A cardiac center is nineteen minutes away.\n\nWhere do you go?",
+          "choices": [
+            {
+              "text": "The cardiac center, notifying them early, because opening the artery is the definitive treatment and he is being effectively supported",
+              "next": "end",
+              "feedback": "Correct where protocol allows it. A post-arrest patient with an infarct pattern needs a catheterization lab, and the extra eleven minutes buys definitive care.",
+              "score": 1
+            },
+            {
+              "text": "The nearest hospital, because any hospital is better than a longer transport",
+              "next": "end",
+              "feedback": "Defensible if he becomes unstable or you cannot ventilate him, and some systems mandate it. But a stable, supported post-arrest infarct patient benefits from the specialty center.",
+              "score": 0
+            },
+            {
+              "text": "Stay on scene to stabilize him further before choosing",
+              "next": "end",
+              "feedback": "There is nothing left to do on scene. Definitive care is a catheterization lab, and delaying transport only increases the chance he re-arrests where you have fewer resources.",
+              "score": -1
+            }
+          ]
+        }
+      ],
+      "debrief": "The pattern: in a witnessed adult collapse, compressions and defibrillation outrank everything else, and interruptions are what kill.\n\nThe numbers this case tested: rate `100-120`, depth `2 to 2.4 inches` in an adult, `30:2` without an advanced airway, compressor switch every `2 minutes` timed to the analysis, interruptions under `10 seconds`, and compression fraction above `60%`.\n\nThe single most-failed step is the one right after a shock. There is no pulse check. Compressions resume immediately and run a full two minutes, because a heart that just converted is not yet perfusing and the pause drops the pressure you spent minutes building.\n\nEnd-tidal carbon dioxide is your quality meter and your earliest ROSC signal. A sudden jump above about `40 mmHg` usually precedes a palpable pulse, but it does not earn an unscheduled interruption.\n\nAnd after ROSC: `1 breath every 6 seconds`, oxygen titrated to `94-98%`, pads left on, a `12-lead`, and a destination that can open the artery. The most common post-ROSC error in real life is bagging too fast because the room is excited. Count out loud."
+    }
+  ]
+}
