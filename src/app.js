@@ -66,8 +66,14 @@
   const moduleMastered = (m) => (S.mastery?.[m.id]?.pct || 0) >= 80;
   // Strict order: a lesson unlocks when the one before it is finished; a module unlocks when the previous module in its track is finished and its mastery test is passed.
   function moduleLock(m) {
-    if (!strict()) return null; const t = trackOf(m); const i = t.modules.indexOf(m.id); if (i <= 0) return null;
-    const prev = MODS.get(t.modules[i - 1]); if (!prev) return null;
+    if (!strict()) return null; const t = trackOf(m); const i = t.modules.indexOf(m.id);
+    let prev = null;
+    if (i > 0) prev = MODS.get(t.modules[i - 1]);
+    else { // first module of a track: the previous track must be finished (foundations → EMT → ED tech → pre-PA; prerequisites run in parallel)
+      const chain = IDX.tracks.filter((x) => x.id !== 'prereq'); const ti = chain.findIndex((x) => x.id === t.id);
+      if (ti > 0) { const pt = chain[ti - 1]; prev = MODS.get(pt.modules[pt.modules.length - 1]); }
+    }
+    if (!prev) return null;
     const up = moduleLock(prev); if (up) return up;
     if (!moduleComplete(prev)) { const nl = prev.lessons.find((l) => !lessonDone(l.id)); return { reason: 'Finish ' + prev.title + ' first', href: '#/lesson/' + nl.id, label: 'Go to ' + nl.title }; }
     if (!moduleMastered(prev)) return { reason: 'Pass the ' + prev.short + ' mastery test (80%) first', href: '#/quiz?scope=' + prev.id + '&n=25&mode=exam', label: 'Take the mastery test' };
@@ -713,7 +719,7 @@
     const counts = orderedLight.reduce((a, m) => ({ lessons: a.lessons + m.lessons.length, cards: a.cards + m.counts.cards, quiz: a.quiz + m.counts.quiz, scen: a.scen + m.counts.scenarios }), { lessons: 0, cards: 0, quiz: 0, scen: 0 });
     const el = h(`<div class="settings"><div class="page-head"><div><div class="eyebrow">Rounds</div><h1>Settings</h1></div></div>
       <div class="card"><div class="eyebrow">Appearance</div><div class="seg" style="margin-top:10px" id="theme">${['system', 'light', 'dark'].map((t) => `<button data-t="${t}" class="${S.settings.theme === t ? 'on' : ''}">${t[0].toUpperCase() + t.slice(1)}</button>`).join('')}</div></div>
-      <div class="card"><div class="eyebrow">Learning</div><div class="stack" style="margin-top:10px"><label class="task ${S.settings.strict !== false ? 'done' : ''}" id="strict"><span class="box">${S.settings.strict !== false ? '\u2713' : ''}</span><span><span class="t" style="text-decoration:none;color:inherit">Strict order</span><div class="sub">Read to the end before the checks unlock. The next lesson opens only when this one is finished. The next module opens only after its mastery test (80%). Tracks stay open in parallel.</div></span></label></div></div>
+      <div class="card"><div class="eyebrow">Learning</div><div class="stack" style="margin-top:10px"><label class="task ${S.settings.strict !== false ? 'done' : ''}" id="strict"><span class="box">${S.settings.strict !== false ? '\u2713' : ''}</span><span><span class="t" style="text-decoration:none;color:inherit">Strict order</span><div class="sub">Read to the end before the checks unlock. The next lesson opens only when this one is finished. The next module opens only after its mastery test (80%). Foundations must be finished before EMT, EMT before ED tech, ED tech before pre-PA. Prerequisites run in parallel.</div></span></label></div></div>
       <div class="card"><div class="eyebrow">Review</div><div class="field" style="margin-top:10px"><label>New cards per day</label><div class="seg" id="dn">${[10, 20, 30, 50, 100].map((n) => `<button data-n="${n}" class="${S.settings.dailyNew === n ? 'on' : ''}">${n}</button>`).join('')}</div></div><p class="faint small" style="margin-top:8px">Twenty a day is sustainable. Fifty or more is for exam week.</p></div>
       <div class="card"><div class="eyebrow">Tutor</div><div class="field" style="margin-top:10px"><label for="tutor-url">Tutor service address</label><input type="text" id="tutor-url" value="${esc(S.settings.tutorUrl || '')}" placeholder="${esc(Tutor.endpoint())}" autocapitalize="off" autocorrect="off" spellcheck="false"></div><p class="faint small" style="margin-top:8px">Leave blank to use the default. Answers come from Claude on your own subscription, through the homelab. Needs Tailscale on.</p><div class="btn-row" style="margin-top:10px"><button class="btn sm" id="tutor-test">Test connection</button><button class="btn sm ask" id="tutor-open">Open tutor</button></div></div>
       <div class="card"><div class="eyebrow">Apple Pencil</div><div class="stack" style="margin-top:10px">
