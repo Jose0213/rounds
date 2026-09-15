@@ -98,7 +98,7 @@
   }
   async function inkClear() {
     const db = await idb(); if (!db) return;
-    return new Promise((resolve) => { const tx = db.transaction('ink', 'readwrite'); tx.objectStore('ink').clear(); tx.oncomplete = () => resolve(); tx.onerror = () => resolve(); });
+    return new Promise((resolve) => { const tx = db.transaction(['ink', 'blobs'], 'readwrite'); tx.objectStore('ink').clear(); tx.objectStore('blobs').clear(); tx.oncomplete = () => resolve(); tx.onerror = () => resolve(); });
   }
   async function blobGet(id) { const db = await idb(); if (!db) return null; return new Promise((resolve) => { const r = db.transaction('blobs', 'readonly').objectStore('blobs').get(id); r.onsuccess = () => resolve(r.result || null); r.onerror = () => resolve(null); }); }
   async function blobSet(id, data) { const db = await idb(); if (!db) return false; return new Promise((resolve) => { const tx = db.transaction('blobs', 'readwrite'); if (data) tx.objectStore('blobs').put(data, id); else tx.objectStore('blobs').delete(id); tx.oncomplete = () => resolve(true); tx.onerror = () => resolve(false); }); }

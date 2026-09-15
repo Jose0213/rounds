@@ -22,7 +22,7 @@ const active = new Map(); // ip -> count
 const windowHits = new Map(); // ip -> [timestamps]
 function limited(ip) {
   const now = Date.now(); const arr = (windowHits.get(ip) || []).filter((t) => now - t < 600000); windowHits.set(ip, arr);
-  if (arr.length >= 40) return true; arr.push(now); return (active.get(ip) || 0) >= 2;
+  if (arr.length >= 120) return true; arr.push(now); return (active.get(ip) || 0) >= 2;
 }
 function sse(res) { res.writeHead(200, { 'Content-Type': 'text/event-stream', 'Cache-Control': 'no-cache', Connection: 'keep-alive', 'Access-Control-Allow-Origin': '*' }); return (obj) => res.write('data: ' + JSON.stringify(obj) + '\n\n'); }
 
