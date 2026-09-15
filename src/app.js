@@ -151,11 +151,13 @@
   // ---------- Daily plan ----------
   function buildPlan() {
     const k = today();
-    if (S.plan && S.plan.date === k && S.plan.items) return S.plan;
+    if (S.plan && S.plan.date === k && S.plan.items && !(S.plan.items.some((i) => i.kind === 'review-empty') && (dueCards().length + learningCards().length + newCardEstimate()) > 0)) return S.plan;
     const items = [];
     const nl = nextLesson();
     if (nl) items.push({ kind: 'lesson', id: nl.l.id, title: nl.l.title, sub: nl.m.title, mins: nl.l.minutes, href: '#/lesson/' + nl.l.id });
-    items.push({ kind: 'review', id: 'review', title: 'Review the cards that are due', sub: 'Spaced repetition', mins: 8, href: '#/review' });
+    const nothingToReview = dueCards().length + learningCards().length === 0 && newCardEstimate() === 0;
+    if (!nothingToReview) items.push({ kind: 'review', id: 'review', title: 'Review the cards that are due', sub: 'Spaced repetition', mins: 8, href: '#/review' });
+    else if (nl) items.push({ kind: 'review-empty', id: 'review', title: 'No cards yet: finishing a lesson unlocks its cards', sub: 'Review starts after your first lesson', mins: 0, href: '#/lesson/' + nl.l.id });
     const dayIdx = Math.floor(Date.now() / 86400000);
     const drills = Drills.list; const d = drills[dayIdx % drills.length];
     items.push({ kind: 'drill', id: d.id, title: d.title, sub: 'Drill · ' + d.kind, mins: 4, href: '#/drill/' + d.id });
@@ -170,6 +172,7 @@
     const d = S.days[today()] || {};
     if (it.kind === 'lesson') return lessonDone(it.id);
     if (it.kind === 'review') return (d.cards || 0) >= 8 || (dueCards().length + learningCards().length === 0 && newCardEstimate() === 0);
+    if (it.kind === 'review-empty') return false;
     if (it.kind === 'drill') return isToday(S.drills[it.id]?.last);
     if (it.kind === 'scenario') return isToday(S.scenarios[it.id]?.last);
     if (it.kind === 'quiz') return S.quiz.some((q) => isToday(q.ts));
