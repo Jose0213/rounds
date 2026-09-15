@@ -234,6 +234,38 @@ function validateReference(r, file) {
   return { errs, warns };
 }
 
+// <id>.videos.json: { schema:1, extends:<id>, videos: { <lessonId>: [ { id: <11-char YouTube id>, title, channel, start? } ] } }
+function validateVideos(x, file) {
+  const errs = [], warns = [];
+  const modId = path.basename(file, '.videos.json');
+  if (x.schema !== 1) errs.push('schema must be 1');
+  if (x.extends !== modId) errs.push(`extends '${x.extends}' must match filename '${modId}.videos.json'`);
+  const dir = path.dirname(file);
+  let base = null, ext = null;
+  try { base = JSON.parse(fs.readFileSync(path.join(dir, modId + '.json'), 'utf8')); } catch (e) { errs.push(`base module ${modId}.json is missing or invalid JSON`); return { errs, warns }; }
+  try { if (fs.existsSync(path.join(dir, modId + '.ext.json'))) ext = JSON.parse(fs.readFileSync(path.join(dir, modId + '.ext.json'), 'utf8')); } catch (e) { /* ignore */ }
+  const lessonIds = new Set([...(base.lessons || []), ...((ext && ext.lessons) || [])].map((l) => l.id));
+  const vids = x.videos && typeof x.videos === 'object' ? x.videos : (errs.push('videos must be an object keyed by lesson id'), {});
+  const seen = new Set(); let n = 0;
+  for (const [lid, arr] of Object.entries(vids)) {
+    if (!lessonIds.has(lid)) errs.push(`videos: lesson '${lid}' not in module`);
+    if (!Array.isArray(arr) || !arr.length) { errs.push(`videos[${lid}] must be a non-empty array`); continue; }
+    if (arr.length > 3) warns.push(`videos[${lid}]: more than 3 videos`);
+    arr.forEach((v, i) => {
+      n++;
+      if (!v || typeof v.id !== 'string' || !/^[A-Za-z0-9_-]{11}$/.test(v.id)) errs.push(`videos[${lid}][${i}]: id must be an 11-character YouTube id`);
+      else if (seen.has(v.id)) warns.push(`videos[${lid}][${i}]: ${v.id} used more than once in this module`); else seen.add(v.id);
+      if (typeof v.title !== 'string' || v.title.length < 4 || v.title.length > 140) errs.push(`videos[${lid}][${i}]: title 4-140 chars`);
+      if (typeof v.channel !== 'string' || !v.channel.length) errs.push(`videos[${lid}][${i}]: channel required`);
+      if (v.start !== undefined && (!Number.isInteger(v.start) || v.start < 0)) errs.push(`videos[${lid}][${i}]: start must be a non-negative integer (seconds)`);
+      if (v.verified !== true) errs.push(`videos[${lid}][${i}]: verified must be true (run node tools/yt-check.mjs <file>)`);
+    });
+  }
+  const covered = Object.keys(vids).filter((k) => lessonIds.has(k)).length;
+  if (covered < lessonIds.size) warns.push(`videos: ${lessonIds.size - covered} lesson(s) have no video`);
+  return { errs, warns };
+}
+
 function validateFile(file) {
   let data;
   try { data = JSON.parse(fs.readFileSync(file, 'utf8')); }
@@ -243,6 +275,7 @@ function validateFile(file) {
   if (norm.includes('/exams/')) return validateExam(data, file);
   if (norm.endsWith('.ext.json')) return validateExtension(data, file);
   if (norm.endsWith('.quiz.json')) return validateBank(data, file);
+  if (norm.endsWith('.videos.json')) return validateVideos(data, file);
   return validateModule(data, file);
 }
 
@@ -269,14 +302,14 @@ function validateManifest() {
   }
   const dir = path.join(ROOT, 'content', 'modules');
   if (fs.existsSync(dir)) for (const f of fs.readdirSync(dir)) {
-    if (!f.endsWith('.json') || f.endsWith('.ext.json') || f.endsWith('.quiz.json')) continue;
+    if (!f.endsWith('.json') || f.endsWith('.ext.json') || f.endsWith('.quiz.json') || f.endsWith('.videos.json')) continue;
     const id = f.replace(/\.json$/, '');
     if (!seen.has(id)) errs.push(`manifest: module file '${id}' is not listed`);
   }
   return { errs, warns };
 }
 
-export { validateFile, validateManifest, validateModule, validateExtension, validateBank, validateExam, validateReference, LIMITS };
+export { validateFile, validateManifest, validateModule, validateExtension, validateBank, validateVideos, validateExam, validateReference, LIMITS };
 
 const isCli = process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
 if (isCli) {

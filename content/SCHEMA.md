@@ -186,3 +186,16 @@ A standalone full-length practice test, not tied to lessons. The app draws a tim
 ```
 
 Rules: question ids `<exam-id>-q<NNNN>`; every section referenced exists; pool per section at least 1.5× what an attempt draws; rationales explain the wrong choices; correct index spread evenly. Validate with `node tools/validate.mjs content/exams/<id>.json`.
+
+
+## Video sidecar: `content/modules/<id>.videos.json`
+
+Optional. Embeds YouTube videos under a lesson ("Watch" section).
+
+```json
+{ "schema": 1, "extends": "<module id>", "videos": { "<lesson id>": [ { "id": "dQw4w9WgXcQ", "title": "...", "channel": "...", "start": 0 } ] } }
+```
+
+- `id` is the 11-character YouTube video id. 1-3 videos per lesson. `start` (seconds) is optional.
+- Every entry must carry `verified: true`, which only `node tools/yt-check.mjs <file>` sets after confirming the video exists via YouTube oEmbed. The validator rejects unverified entries.
+- Pick videos that teach the same content at the same level as the lesson, from reputable channels (AHA, NREMT, EMS educators, university physiology channels). No monetized clickbait, no Shorts, no playlists.

@@ -48,6 +48,16 @@ for (const t of manifest.tracks) for (const id of t.modules) {
       extNote += ` +bank(${nc}chk/${(b.quiz || []).length}q)`;
     }
   }
+  const vf = path.join(CONTENT, 'modules', id + '.videos.json');
+  if (fs.existsSync(vf)) {
+    const vv = validateFile(vf);
+    if (vv.errs.length) { problems++; log(`  x ${id}.videos: ${vv.errs.length} error(s)${strict ? '' : ' — videos skipped'}`); vv.errs.slice(0, 4).forEach((e) => log('      ' + e)); if (strict) continue; }
+    else {
+      const vd = JSON.parse(fs.readFileSync(vf, 'utf8')); let nv = 0;
+      for (const l of m.lessons) if (vd.videos && vd.videos[l.id]) { l.videos = vd.videos[l.id].map((v) => ({ id: v.id, title: v.title, channel: v.channel, start: v.start || 0 })); nv += l.videos.length; }
+      extNote += ` +videos(${nv})`;
+    }
+  }
   modules.push(m);
   log(`  ok ${id}: ${m.lessons.length} lessons, ${m.cards.length} cards, ${m.quiz.length} q, ${m.scenarios.length} scen${extNote}${warns.length ? ' (' + warns.length + ' warn)' : ''}`);
 }
