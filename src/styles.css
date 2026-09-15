@@ -465,3 +465,6 @@ textarea { min-height: 120px; resize: vertical; font-family: var(--mono); font-s
 .tutor-form textarea { min-height: 46px; max-height: 140px; resize: none; font-family: var(--font); font-size: 1rem; }
 .btn.ask { gap: 6px; }
 .btn.ask svg { width: 18px; height: 18px; }
+.track-prereq { --track: #B8600B; --track-soft: #FBEBD6; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .track-prereq { --track: #F2A33A; --track-soft: #3A2A10; } }
+:root[data-theme="dark"] .track-prereq { --track: #F2A33A; --track-soft: #3A2A10; }

@@ -1,0 +1,1765 @@
+{
+  "schema": 1,
+  "id": "sci-bio2",
+  "track": "prereq",
+  "title": "General Biology II",
+  "short": "Biology II",
+  "summary": "Second-semester majors biology in syllabus order: evolution and population genetics, the diversity of life from bacteria to chordates, plant and animal form and function by system, ecology and behavior, and how it all shows up on the PA-CAT.",
+  "lessons": [
+    {
+      "id": "sci-bio2-l01",
+      "title": "Evolution and natural selection",
+      "minutes": 8,
+      "body": "Biology II opens with the idea that organizes everything after it. **Evolution** is change in the heritable characteristics of a population over generations. Populations evolve; individuals do not.\n\nDarwin's argument has four steps, and exams reward stating them cleanly. First, organisms produce more offspring than can survive. Second, individuals vary, and much of that variation is heritable. Third, some variants survive and reproduce better in the current environment. Fourth, over generations those favorable alleles become more common. The outcome is **adaptation** — a heritable trait that improves fitness in a particular environment.\n\n**Fitness** in biology means reproductive success, not strength or speed. A frail organism that leaves more surviving offspring is fitter than a robust one that leaves none.\n\n> **Trap:** Organisms do not evolve traits because they need them. Mutation supplies variation blindly; selection edits it afterward. Saying a giraffe stretched its neck and passed that on is Lamarckian and always wrong on an exam.\n\n## The evidence\n\n- **Fossil record** — transitional forms such as Tiktaalik between fish and tetrapods, and whale ancestors with hind limbs.\n- **Comparative anatomy** — **homologous** structures share ancestry despite different function (the human arm, bat wing, whale flipper have the same bone plan). **Analogous** structures share function but not ancestry (bird and insect wings) and result from **convergent evolution**. **Vestigial** structures are reduced remnants, such as the pelvic bones of whales.\n- **Embryology** — shared developmental stages, including pharyngeal pouches in all vertebrate embryos.\n- **Molecular biology** — the near-universal genetic code and shared gene sequences; the more closely related two species are, the more similar their DNA.\n- **Biogeography** — island species most resemble the nearest mainland species.\n- **Direct observation** — antibiotic resistance, pesticide resistance, Grant's Galapagos finch beak measurements across drought years.\n\n## Modes of selection\n\n**Directional selection** favors one extreme and shifts the mean, as in bacteria under antibiotic pressure. **Stabilizing selection** favors the middle and reduces variation, as in human birth weight, where risk rises at both ends. **Disruptive selection** favors both extremes and can split a population.\n\n**Sexual selection** is selection for mating success, producing **sexual dimorphism**. Intrasexual selection is competition among the same sex, intersexual selection is mate choice. Traits can be favored by sexual selection even when they reduce survival, as with a peacock's train.\n\n## Other mechanisms of change\n\nSelection is not the only force. **Mutation** is the ultimate source of new alleles. **Genetic drift** is random change in allele frequency, powerful in small populations; the **bottleneck effect** follows a population crash and the **founder effect** follows colonization by a few individuals. **Gene flow** is migration of alleles between populations and usually reduces differences.\n\nSelection cannot produce perfection. It works only on existing variation, is constrained by history and physics, and acts on whole organisms as compromises.\n\n> **On shift:** Antibiotic resistance is directional selection running in a hospital. Resistant bacteria existed before the drug; the drug removed the competition. That is also the mechanism behind finishing a full antibiotic course.",
+      "keyPoints": [
+        "Populations evolve, not individuals, and fitness means reproductive success.",
+        "Darwin's logic: overproduction, heritable variation, differential survival, change in allele frequency.",
+        "Homologous structures show common ancestry; analogous structures show convergent evolution.",
+        "Directional shifts the mean, stabilizing narrows it, disruptive favors both extremes.",
+        "Drift, gene flow and mutation change allele frequencies without adaptive direction."
+      ],
+      "checks": [
+        {
+          "q": "Bird wings and insect wings serve the same function but differ in structure and origin. They are:",
+          "choices": [
+            "Homologous, from common ancestry",
+            "Analogous, from convergent evolution",
+            "Vestigial structures",
+            "Evidence of Lamarckian inheritance"
+          ],
+          "answer": 1,
+          "why": "Shared function without shared ancestry is analogy, produced by convergent evolution under similar selective pressures. Homology requires a shared underlying structural plan."
+        },
+        {
+          "q": "Human infants of average birth weight have the lowest mortality, while both very small and very large infants fare worse. This is:",
+          "choices": [
+            "Directional selection",
+            "Disruptive selection",
+            "Stabilizing selection",
+            "Genetic drift"
+          ],
+          "answer": 2,
+          "why": "Favoring the intermediate phenotype and selecting against both extremes is stabilizing selection, which reduces variation. Disruptive selection would do the opposite."
+        },
+        {
+          "q": "A hurricane kills 95 percent of a lizard population at random, and the survivors differ in allele frequency from the original group. This illustrates:",
+          "choices": [
+            "Natural selection",
+            "The bottleneck effect",
+            "Gene flow",
+            "Sexual selection"
+          ],
+          "answer": 1,
+          "why": "Random, non-selective loss of most of a population is a bottleneck, a form of genetic drift. Natural selection requires the survival difference to depend on heritable traits."
+        }
+      ]
+    },
+    {
+      "id": "sci-bio2-l02",
+      "title": "Population genetics: Hardy-Weinberg worked through",
+      "minutes": 9,
+      "body": "**Microevolution** is a change in allele frequencies within a population. To detect change you need a baseline for no change, and that baseline is the **Hardy-Weinberg equilibrium**.\n\nA population is at Hardy-Weinberg equilibrium only if five conditions hold: no mutation, random mating, no natural selection, a very large population (no drift), and no gene flow. Real populations rarely meet all five, which is the point — deviation from the predicted numbers is evidence that evolution is occurring.\n\nTwo equations, for a two-allele locus:\n\n- Allele frequencies: `p + q = 1`, where `p` is the dominant allele frequency and `q` the recessive.\n- Genotype frequencies: `p^2 + 2pq + q^2 = 1`, where `p^2` is homozygous dominant, `2pq` heterozygous, `q^2` homozygous recessive.\n\n> **Key:** You almost always start from `q^2`, because the recessive phenotype is the only one whose genotype you can read directly off the phenotype.\n\n## Worked problem 1\n\nIn a population of `10,000` people, `400` have a recessive condition. Find the allele frequencies and the number of carriers.\n\n1. `q^2 = 400 / 10,000 = 0.04`\n2. `q = sqrt(0.04) = 0.2`\n3. `p = 1 - 0.2 = 0.8`\n4. Carriers `= 2pq = 2(0.8)(0.2) = 0.32`\n5. Number of carriers `= 0.32 x 10,000 = 3,200`\n6. Homozygous dominant `= p^2 = 0.64`, or `6,400` people.\n\nCheck your work: `0.04 + 0.32 + 0.64 = 1.00`.\n\n## Worked problem 2\n\nIf `9%` of a population is homozygous recessive, what fraction of the *dominant-phenotype* individuals are heterozygous?\n\n`q^2 = 0.09`, so `q = 0.3` and `p = 0.7`. Then `p^2 = 0.49` and `2pq = 0.42`. Dominant phenotype total is `0.49 + 0.42 = 0.91`. The heterozygous fraction of those is `0.42 / 0.91 = 0.46`, about `46%`.\n\n> **Trap:** The question asked for a fraction *of the dominant individuals*, not of the whole population. Read what the denominator is supposed to be.\n\n## Worked problem 3, X-linked\n\nFor an X-linked locus, male frequency of the recessive phenotype equals `q` directly, because males are hemizygous. If `8%` of men are red-green color blind, `q = 0.08`, and the frequency of affected women is `q^2 = 0.0064`, about `0.64%`. That single fact explains the sex ratio of X-linked disease without any pedigree.\n\n## Why equilibrium breaks\n\nSelection against a recessive phenotype removes `q` slowly, because most recessive alleles hide in heterozygotes. **Heterozygote advantage** can hold a harmful allele at surprising frequency: sickle cell heterozygotes resist falciparum malaria, which is why `HbS` persists where malaria is endemic. Non-random mating changes genotype frequencies without changing allele frequencies; inbreeding raises homozygosity.\n\n> **On shift:** Carrier screening math for cystic fibrosis or sickle cell trait is this equation used clinically. Population prevalence gives `q^2`, which gives carrier frequency `2pq`, which gives a couple's risk.",
+      "keyPoints": [
+        "Hardy-Weinberg requires no mutation, random mating, no selection, large population and no gene flow.",
+        "p + q = 1 and p squared plus 2pq plus q squared = 1.",
+        "Start from q squared, the observable recessive phenotype frequency.",
+        "For X-linked loci, the male recessive phenotype frequency equals q directly.",
+        "Heterozygote advantage, as in sickle cell and malaria, maintains harmful alleles in a population."
+      ],
+      "checks": [
+        {
+          "q": "In a population, 16 percent of individuals show the recessive phenotype. What is the frequency of the dominant allele?",
+          "choices": [
+            "0.16",
+            "0.4",
+            "0.6",
+            "0.84"
+          ],
+          "answer": 2,
+          "why": "q squared is 0.16, so q is 0.4 and p is 1 minus 0.4, which is 0.6. Answering 0.84 mistakes 1 minus q squared for the allele frequency."
+        },
+        {
+          "q": "If q equals 0.3 in a population of 1,000, how many individuals are expected to be heterozygous?",
+          "choices": [
+            "90",
+            "210",
+            "420",
+            "490"
+          ],
+          "answer": 2,
+          "why": "2pq equals 2 times 0.7 times 0.3, which is 0.42, giving 420 people. The 90 figure is q squared and 490 is p squared."
+        },
+        {
+          "q": "Which finding is the best evidence that a population is NOT at Hardy-Weinberg equilibrium?",
+          "choices": [
+            "The population is very large",
+            "Mating is random with respect to the locus",
+            "Observed genotype frequencies differ significantly from p squared, 2pq and q squared",
+            "The dominant allele is more common than the recessive"
+          ],
+          "answer": 2,
+          "why": "Equilibrium is defined by the predicted genotype proportions, so a significant deviation indicates one of the five conditions is violated. Allele frequency alone says nothing; a dominant allele need not be common."
+        }
+      ]
+    },
+    {
+      "id": "sci-bio2-l03",
+      "title": "Speciation and reading phylogenies",
+      "minutes": 7,
+      "body": "**Macroevolution** is evolutionary change at or above the species level. The unit is the species, and the definition the course uses first is the **biological species concept**: a group of populations whose members can interbreed and produce fertile offspring. It fails for asexual organisms and fossils, so biologists also use the morphological, ecological and phylogenetic species concepts.\n\n## Reproductive isolation\n\n**Prezygotic barriers** prevent mating or fertilization: habitat isolation, temporal isolation (different breeding seasons), behavioral isolation (different courtship signals), mechanical isolation (incompatible anatomy), and gametic isolation (sperm and egg do not fuse).\n\n**Postzygotic barriers** act after fertilization: reduced hybrid viability, reduced hybrid fertility (a mule is sterile because horse and donkey chromosome numbers do not pair), and hybrid breakdown in later generations.\n\n> **Trap:** The mule is postzygotic, not prezygotic. The zygote formed; the problem came afterward.\n\n## Two routes to a new species\n\n**Allopatric speciation** requires geographic separation. A river changes course, a mountain rises, a few birds reach an island; gene flow stops and the populations diverge until they are reproductively isolated. This is the common route.\n\n**Sympatric speciation** happens without physical separation, usually through **polyploidy** (common in plants, where a doubled chromosome set instantly isolates the new form), habitat differentiation, or sexual selection.\n\n**Adaptive radiation** is one lineage rapidly producing many species that fill different niches, as in Galapagos finches or Hawaiian silverswords. **Punctuated equilibrium** describes a fossil pattern of long stasis broken by rapid change, in contrast to gradualism.\n\n## Phylogenetics\n\nA **phylogenetic tree** is a hypothesis about evolutionary relationships. Tips are taxa, **nodes** are common ancestors, and **branch points** show divergence. Relatedness is read by how recently two tips share a node, not by how close together they are printed on the page.\n\n- A **clade** is an ancestor plus all its descendants. A grouping like that is **monophyletic**.\n- **Paraphyletic** groups leave some descendants out, as reptiles do when birds are excluded.\n- **Polyphyletic** groups collect unrelated lineages by shared appearance.\n\nTrees are built from **shared derived characters** (synapomorphies), not from shared ancestral ones, and from molecular data such as ribosomal RNA sequences. An **outgroup** roots the tree. **Maximum parsimony** chooses the tree requiring the fewest evolutionary changes. A **molecular clock** uses roughly constant mutation rates in some sequences to estimate divergence times.\n\nClassification runs domain, kingdom, phylum, class, order, family, genus, species, with three domains — Bacteria, Archaea, Eukarya. Binomial nomenclature italicizes the genus and species, as in Homo sapiens.\n\n> **On shift:** Tracking a hospital outbreak is phylogenetics. Sequencing isolates and building a tree shows whether three infections came from one source or three, which determines the infection-control response.",
+      "keyPoints": [
+        "Biological species concept: interbreeding populations producing fertile offspring.",
+        "Prezygotic barriers block mating or fertilization; postzygotic barriers affect hybrids after fertilization.",
+        "Allopatric speciation needs geographic isolation; sympatric does not, often via polyploidy.",
+        "Relatedness on a tree is judged by the most recent common node, not by tip position.",
+        "A clade is monophyletic: an ancestor plus all its descendants."
+      ],
+      "checks": [
+        {
+          "q": "Two frog species breed in the same pond but call at different times of year and never mate. This is:",
+          "choices": [
+            "Temporal isolation, a prezygotic barrier",
+            "Behavioral isolation, a postzygotic barrier",
+            "Hybrid inviability",
+            "Mechanical isolation"
+          ],
+          "answer": 0,
+          "why": "Different breeding seasons are temporal isolation, and it prevents a zygote from ever forming, making it prezygotic. Postzygotic barriers act only after fertilization."
+        },
+        {
+          "q": "A group that includes an ancestor and all of its descendants is described as:",
+          "choices": [
+            "Paraphyletic",
+            "Polyphyletic",
+            "Monophyletic",
+            "Analogous"
+          ],
+          "answer": 2,
+          "why": "Monophyletic groups, or clades, include the ancestor and every descendant. Paraphyletic groups exclude some descendants and polyphyletic groups combine unrelated lineages."
+        },
+        {
+          "q": "A plant undergoes chromosome doubling and can no longer produce fertile offspring with its parent population, though they grow side by side. This is:",
+          "choices": [
+            "Allopatric speciation",
+            "Sympatric speciation by polyploidy",
+            "Adaptive radiation",
+            "Gene flow"
+          ],
+          "answer": 1,
+          "why": "Speciation without geographic separation is sympatric, and polyploidy is its most common plant mechanism. Allopatric speciation requires physical separation first."
+        }
+      ]
+    },
+    {
+      "id": "sci-bio2-l04",
+      "title": "Bacteria, archaea, protists and viruses",
+      "minutes": 8,
+      "body": "**Bacteria** and **Archaea** are the two prokaryotic domains. They differ more than their shared appearance suggests: bacterial cell walls contain peptidoglycan, archaeal walls do not, and archaeal membrane lipids use ether linkages that survive extremes. Many archaea are extremophiles — thermophiles, halophiles, methanogens — but plenty live in ordinary places including the human gut.\n\nBacterial shapes are **cocci** (spheres), **bacilli** (rods) and **spirilla** (spirals). The **Gram stain** divides them by wall structure: Gram-positive bacteria have thick peptidoglycan and stain purple, Gram-negative have a thin layer plus an outer membrane containing endotoxin and stain pink. Bacteria reproduce by **binary fission**, and exchange genes by **transformation** (uptake of free DNA), **transduction** (viral delivery) and **conjugation** (pilus transfer of plasmids, the major route for resistance genes).\n\nMetabolically prokaryotes are the most versatile organisms alive: photoautotrophs, chemoautotrophs, photoheterotrophs and chemoheterotrophs; obligate aerobes, obligate anaerobes and facultative anaerobes. They drive **nitrogen fixation**, decomposition and much of global nutrient cycling.\n\n> **On shift:** Gram stain is still the fastest branch point in treating an infection, and the outer membrane is why Gram-negative sepsis is so inflammatory: lipopolysaccharide endotoxin triggers the response.\n\n## Protists\n\n**Protists** are the eukaryotes that are not plants, fungi or animals — a paraphyletic grab bag. Course-level groupings: excavates (Giardia, Trypanosoma), SAR clade including stramenopiles (diatoms, brown algae, water molds), alveolates (Plasmodium, Paramecium, dinoflagellates) and rhizarians (foraminiferans); archaeplastids (red and green algae, ancestors of plants); and unikonts including amoebozoans (amoebas, slime molds).\n\nThey may be autotrophic, heterotrophic or mixotrophic, and move by **pseudopodia**, **cilia** or **flagella**. Medically important examples: Plasmodium causes malaria, Entamoeba histolytica amebic dysentery, Giardia lamblia giardiasis, Trypanosoma sleeping sickness and Chagas disease. Secondary endosymbiosis explains the plastids of many algal groups.\n\n## Viruses\n\nA **virus** is not a cell and is not considered alive: it has no metabolism, cannot reproduce independently, and consists only of nucleic acid (DNA or RNA, single or double stranded) inside a protein **capsid**, sometimes with a lipid **envelope** stolen from the host membrane. **Host range** is determined by which surface receptors the virus can bind.\n\n**Lytic cycle**: attachment, entry, replication of viral genome and proteins, assembly, lysis and release. **Lysogenic cycle**: the genome integrates as a **prophage** or provirus, is replicated with the host, and can later switch to lytic.\n\n**Retroviruses** such as HIV carry RNA plus **reverse transcriptase**, which makes DNA from RNA, and **integrase**, which inserts it into the host genome — the reason retroviral infection is lifelong. **Bacteriophages** infect bacteria. **Prions** are misfolded proteins with no nucleic acid at all, causing Creutzfeldt-Jakob disease; **viroids** are naked RNA that infect plants.\n\nAntibiotics do nothing to viruses because viruses have no ribosomes, cell wall or metabolism to poison. Antivirals target viral enzymes instead.",
+      "keyPoints": [
+        "Gram-positive walls are thick peptidoglycan and stain purple; Gram-negative have an outer membrane with endotoxin and stain pink.",
+        "Bacteria share genes by transformation, transduction and conjugation.",
+        "Protists are a paraphyletic group of eukaryotes including Plasmodium, Giardia and Entamoeba.",
+        "Viruses are acellular, lack metabolism, and are unaffected by antibiotics.",
+        "Retroviruses use reverse transcriptase and integrase, which is why HIV infection is permanent."
+      ],
+      "checks": [
+        {
+          "q": "Which statement about archaea is correct?",
+          "choices": [
+            "Their cell walls contain peptidoglycan",
+            "Their membrane lipids use ether linkages",
+            "They are all extremophiles",
+            "They have a true nucleus"
+          ],
+          "answer": 1,
+          "why": "Ether-linked lipids distinguish archaeal membranes and contribute to extreme tolerance. Archaea lack peptidoglycan, lack a nucleus, and many live in moderate habitats such as the gut."
+        },
+        {
+          "q": "A patient with a viral upper respiratory infection is prescribed an antibiotic. Why is this ineffective?",
+          "choices": [
+            "Antibiotics only work on Gram-positive organisms",
+            "Viruses lack the ribosomes, wall and metabolism antibiotics target",
+            "The dose would need to be higher",
+            "Viruses replicate too quickly to be killed"
+          ],
+          "answer": 1,
+          "why": "Antibiotics act on bacterial structures and pathways that viruses simply do not have. The problem is the absence of a target, not dose or replication speed."
+        },
+        {
+          "q": "Reverse transcriptase performs which reaction?",
+          "choices": [
+            "DNA to RNA",
+            "RNA to protein",
+            "RNA to DNA",
+            "Protein to RNA"
+          ],
+          "answer": 2,
+          "why": "Retroviruses copy their RNA genome into DNA, which integrase then inserts into host DNA. DNA to RNA is ordinary transcription and RNA to protein is translation."
+        }
+      ]
+    },
+    {
+      "id": "sci-bio2-l05",
+      "title": "Fungi, plants and how plants work",
+      "minutes": 8,
+      "body": "## Fungi\n\n**Fungi** are heterotrophs that digest externally and absorb the products. The body is a **mycelium** of thread-like **hyphae**, which may be divided by septa or coenocytic. Cell walls are **chitin**, not cellulose — a detail exams ask directly. Most are haploid for most of their life cycle and reproduce by spores, sexually or asexually.\n\nMajor groups: chytrids (flagellated spores), zygomycetes (bread mold), ascomycetes (sac fungi, yeasts, Penicillium), basidiomycetes (club fungi, mushrooms). Ecologically fungi are the principal **decomposers**, and they form two critical mutualisms: **mycorrhizae** with plant roots, which dramatically increase phosphorus and water uptake, and **lichens** with algae or cyanobacteria. Medically they cause candidiasis, tinea and aspergillosis, and they gave us penicillin.\n\n## Plant evolution and groups\n\nThe move to land demanded a **cuticle** to limit water loss, **stomata** for gas exchange, **vascular tissue** for transport and support, and eventually seeds and pollen so reproduction did not require standing water.\n\n- **Bryophytes** (mosses) — nonvascular, gametophyte dominant, need water for sperm to swim.\n- **Seedless vascular plants** (ferns) — vascular tissue appears, sporophyte becomes dominant, still water-dependent sperm.\n- **Gymnosperms** (conifers) — naked seeds in cones, pollen replaces swimming sperm.\n- **Angiosperms** (flowering plants) — flowers, fruit, **double fertilization** producing a `3n` endosperm; monocots have one cotyledon, parallel veins and scattered vascular bundles, eudicots have two cotyledons, net veins and ringed bundles.\n\n**Alternation of generations** runs the whole plant kingdom: a diploid **sporophyte** makes haploid spores by meiosis, spores grow into a haploid **gametophyte**, which makes gametes by mitosis. The trend across land plants is sporophyte dominance.\n\n> **Key:** In mosses the green plant you see is the gametophyte. In ferns and everything after it is the sporophyte.\n\n## Plant form and function\n\nThe plant body is a root system and a shoot system, built from three tissue types: **dermal** (epidermis, cuticle, guard cells), **ground** (parenchyma for photosynthesis and storage, collenchyma and sclerenchyma for support), and **vascular** — **xylem** carrying water and minerals up through dead tracheids and vessel elements, **phloem** carrying sugar in living sieve-tube elements.\n\nWater rises by the **cohesion-tension** mechanism: transpiration at the leaf pulls the continuous water column upward, held together by hydrogen bonding, while adhesion to the xylem walls resists gravity. No ATP is spent lifting it. **Guard cells** open stomata when they take up potassium and swell, balancing gas exchange against water loss. Sugar moves by **pressure flow** from source to sink.\n\nPlant hormones: **auxin** drives phototropism and apical dominance, **gibberellins** stimulate stem elongation and seed germination, **cytokinins** promote cell division, **abscisic acid** enforces dormancy and closes stomata under drought, and **ethylene** ripens fruit and triggers leaf drop. **Tropisms** are growth responses toward or away from stimuli: photo-, gravi-, and thigmotropism. **Photoperiodism** is controlled by phytochrome measuring the length of darkness.",
+      "keyPoints": [
+        "Fungal cell walls are chitin; fungi digest externally and absorb nutrients.",
+        "Mycorrhizae increase plant uptake of phosphorus and water in a mutualism.",
+        "Alternation of generations: diploid sporophyte makes spores by meiosis, haploid gametophyte makes gametes by mitosis.",
+        "Water ascends xylem by cohesion-tension driven by transpiration, with no ATP cost.",
+        "Auxin drives phototropism and apical dominance; abscisic acid closes stomata in drought."
+      ],
+      "checks": [
+        {
+          "q": "Fungal cell walls are made of:",
+          "choices": [
+            "Cellulose",
+            "Peptidoglycan",
+            "Chitin",
+            "Lignin"
+          ],
+          "answer": 2,
+          "why": "Chitin is the defining fungal wall polysaccharide. Cellulose is the plant wall, peptidoglycan is bacterial, and lignin stiffens plant secondary walls."
+        },
+        {
+          "q": "What directly powers the ascent of water in a tall tree?",
+          "choices": [
+            "ATP hydrolysis in root cells",
+            "Transpirational pull transmitted through cohesive water columns",
+            "Active transport in phloem",
+            "Pressure flow from source to sink"
+          ],
+          "answer": 1,
+          "why": "Evaporation at the leaves creates negative pressure that pulls the hydrogen-bonded water column up the xylem without ATP. Pressure flow describes sugar movement in phloem instead."
+        },
+        {
+          "q": "The visible green moss plant on a forest floor is which generation?",
+          "choices": [
+            "The haploid gametophyte",
+            "The diploid sporophyte",
+            "A triploid endosperm",
+            "A diploid gametophyte"
+          ],
+          "answer": 0,
+          "why": "Bryophytes are the one land-plant group in which the gametophyte dominates; the sporophyte is the small stalk growing from it. In ferns and seed plants the dominant body is the sporophyte."
+        }
+      ]
+    },
+    {
+      "id": "sci-bio2-l06",
+      "title": "Animal diversity: the phyla and the chordates",
+      "minutes": 8,
+      "body": "Animals are multicellular heterotrophs without cell walls that develop from a blastula and mostly have nervous and muscle tissue. The survey is organized by body-plan features that appear once in evolution and then persist.\n\n**Symmetry**: sponges are asymmetric; cnidarians and echinoderm adults are radially symmetric; everything else is **bilateral**, which came with **cephalization**, the concentration of sense organs and nerve tissue at the anterior end.\n\n**Germ layers**: sponges have none, cnidarians are diploblastic (ectoderm and endoderm), and bilaterians are **triploblastic**, adding mesoderm, the layer that builds muscle, bone and blood.\n\n**Body cavity**: acoelomates (flatworms) have no cavity, pseudocoelomates (roundworms) have a partly lined one, and coelomates have a true mesoderm-lined **coelom**, which lets the gut move independently of the body wall.\n\n**Development**: **protostomes** (molluscs, annelids, arthropods) show spiral, determinate cleavage and the blastopore becomes the mouth. **Deuterostomes** (echinoderms, chordates) show radial, indeterminate cleavage and the blastopore becomes the anus.\n\n> **Trap:** Protostome means first mouth. The blastopore is the mouth in protostomes and the anus in deuterostomes. Exams reverse this constantly.\n\n## The phyla worth knowing\n\n| Phylum | Key features |\n|---|---|\n| Porifera | Sponges, no true tissues, choanocytes filter feed |\n| Cnidaria | Radial, diploblastic, cnidocytes, gastrovascular cavity |\n| Platyhelminthes | Flatworms, acoelomate, flame cells, planaria and tapeworms |\n| Nematoda | Roundworms, pseudocoelom, molt cuticle, Ascaris and hookworm |\n| Mollusca | Foot, visceral mass, mantle; gastropods, bivalves, cephalopods |\n| Annelida | Segmented worms, closed circulation, metanephridia |\n| Arthropoda | Jointed appendages, chitin exoskeleton, molting, open circulation; the largest phylum |\n| Echinodermata | Water vascular system, tube feet, radial adult from bilateral larva |\n| Chordata | Notochord, dorsal hollow nerve cord, pharyngeal slits, post-anal tail |\n\n## Chordates in detail\n\nAll chordates show four traits at some point in life: a **notochord**, a **dorsal hollow nerve cord**, **pharyngeal slits or pouches**, and a **post-anal tail**. In humans the notochord persists only as the nucleus pulposus of intervertebral discs, and pharyngeal pouches become structures of the ear, tonsils, thymus and parathyroids.\n\nVertebrate progression adds features in order: jaws in gnathostomes, lungs and limbs in tetrapods, the **amniotic egg** in amniotes (which freed reproduction from water), and then endothermy in birds and mammals. Classes: fishes (jawless, cartilaginous, bony), amphibians (moist skin, aquatic larvae), reptiles (amniotic egg, keratin scales, ectothermic), birds (feathers, four-chambered heart, endothermic), mammals (hair, mammary glands, three middle ear bones, four-chambered heart). Mammals split into monotremes (egg-laying), marsupials (pouched) and eutherians (placental).\n\n> **On shift:** Pharyngeal pouch development explains a cluster of clinical findings. In DiGeorge syndrome, failure of the third and fourth pouches produces thymic and parathyroid defects together, which looks like an odd pairing until you know the embryology.",
+      "keyPoints": [
+        "Bilateral symmetry brought cephalization and a triploblastic body plan.",
+        "Protostomes: blastopore becomes the mouth; deuterostomes: it becomes the anus.",
+        "Arthropoda is the largest phylum, defined by jointed appendages and a molted chitin exoskeleton.",
+        "All chordates have a notochord, dorsal hollow nerve cord, pharyngeal slits and a post-anal tail.",
+        "The amniotic egg freed vertebrate reproduction from standing water."
+      ],
+      "checks": [
+        {
+          "q": "In deuterostome development, the blastopore becomes the:",
+          "choices": [
+            "Mouth",
+            "Anus",
+            "Coelom",
+            "Notochord"
+          ],
+          "answer": 1,
+          "why": "Deuterostome means second mouth: the blastopore forms the anus and the mouth develops later. Protostomes show the opposite pattern."
+        },
+        {
+          "q": "Which set of traits defines the phylum Chordata?",
+          "choices": [
+            "Exoskeleton, jointed legs, molting",
+            "Notochord, dorsal hollow nerve cord, pharyngeal slits, post-anal tail",
+            "Water vascular system and tube feet",
+            "Cnidocytes and a gastrovascular cavity"
+          ],
+          "answer": 1,
+          "why": "Those four traits appear in every chordate at some life stage. The other options describe arthropods, echinoderms and cnidarians respectively."
+        },
+        {
+          "q": "Which evolutionary innovation most directly allowed vertebrates to reproduce fully on land?",
+          "choices": [
+            "Jaws",
+            "Lungs",
+            "The amniotic egg",
+            "Endothermy"
+          ],
+          "answer": 2,
+          "why": "The amniotic egg encloses the embryo in its own fluid environment, removing the need for water to reproduce. Lungs allowed air breathing but amphibians still require water for eggs."
+        }
+      ]
+    },
+    {
+      "id": "sci-bio2-l07",
+      "title": "Animal form and function I: tissues, digestion, circulation, gas exchange",
+      "minutes": 9,
+      "body": "Physiology starts with two principles. **Structure fits function** at every level, and **homeostasis** keeps internal conditions within a survivable range through negative feedback loops: a **receptor** detects a change, a **control center** compares it to a set point, and an **effector** corrects it. **Positive feedback** amplifies instead and is rare, used in childbirth, clotting and the action potential.\n\nFour tissue types build every organ: **epithelial** (covers and lines, sits on a basement membrane, avascular but regenerates fast), **connective** (cells in a matrix: blood, bone, cartilage, adipose, tendon), **muscle** (skeletal striated voluntary, cardiac striated involuntary with intercalated discs, smooth involuntary), and **nervous** (neurons plus glia).\n\n## Digestion\n\nThe alimentary canal runs mouth, pharynx, esophagus, stomach, small intestine, large intestine, rectum, anus, with accessory organs — salivary glands, liver, gallbladder, pancreas.\n\nMechanical digestion breaks food apart; chemical digestion hydrolyzes it. Salivary amylase starts starch at `pH 7`. The stomach holds `pH 1.5–3.5`; pepsinogen becomes pepsin in acid and begins protein digestion. Most digestion and nearly all absorption happen in the **small intestine**, whose villi and microvilli give roughly `250 square meters` of surface. Pancreatic enzymes — amylase, lipase, trypsin, chymotrypsin — arrive with bicarbonate to neutralize acid. **Bile** from the liver, stored in the gallbladder, emulsifies fat without enzymes. The large intestine reclaims water and hosts the microbiome.\n\n## Circulation\n\nOpen circulation (arthropods, most molluscs) bathes tissues in hemolymph. Closed circulation keeps blood in vessels. Fish have a two-chambered heart with a single circuit; amphibians three chambers; birds and mammals four chambers with complete separation of oxygenated and deoxygenated blood.\n\nMammalian route: body to vena cava, right atrium, tricuspid valve, right ventricle, pulmonary valve, pulmonary arteries, lungs, pulmonary veins, left atrium, mitral valve, left ventricle, aortic valve, aorta, body. Resting cardiac output is about `5 L/min` (`stroke volume x heart rate`). Pressure falls from arteries to capillaries to veins; capillaries are one cell thick for exchange and have the greatest total cross-sectional area, hence the slowest flow.\n\nThe **SA node** sets the rate at `60–100` per minute in adults, the AV node delays, then the bundle of His and Purkinje fibers spread the impulse.\n\n## Gas exchange\n\nGases always move by diffusion down partial pressure gradients. Respiratory surfaces are thin, moist, and large; fish gills use **countercurrent exchange**, keeping a favorable gradient along the whole lamella and extracting over `80%` of dissolved oxygen.\n\nIn mammals, the diaphragm contracts and flattens, thoracic volume rises, pressure falls, and air moves in — **negative pressure breathing**. `Oxygen` is carried on **hemoglobin**, four subunits, four `O2`. The oxygen-hemoglobin dissociation curve shifts right — unloading more oxygen — with increased `CO2`, acidity, temperature and 2,3-BPG, which is the **Bohr effect**. Most `CO2` travels as bicarbonate formed by carbonic anhydrase in red blood cells.\n\n> **On shift:** A fever, a rising lactate and a falling pH all shift the curve right, which is the body unloading more oxygen to working tissue. That same chemistry is what a blood gas report is describing.",
+      "keyPoints": [
+        "Negative feedback restores a set point; positive feedback amplifies, as in labor and clotting.",
+        "Four tissue types: epithelial, connective, muscle, nervous.",
+        "Most absorption occurs in the small intestine; bile emulsifies fat without enzymes.",
+        "Mammalian cardiac output is about 5 L/min and the SA node fires 60 to 100 times per minute.",
+        "The Bohr effect: higher CO2, acid, temperature and 2,3-BPG shift the curve right and unload oxygen."
+      ],
+      "checks": [
+        {
+          "q": "Which is an example of positive feedback?",
+          "choices": [
+            "Sweating when body temperature rises",
+            "Insulin release lowering blood glucose",
+            "Oxytocin increasing uterine contractions during labor",
+            "Vasoconstriction in cold weather"
+          ],
+          "answer": 2,
+          "why": "Oxytocin intensifies contractions, which release more oxytocin, amplifying until delivery. The other three are classic negative feedback loops returning a variable to its set point."
+        },
+        {
+          "q": "Bile aids fat digestion by:",
+          "choices": [
+            "Hydrolyzing triglycerides into fatty acids",
+            "Emulsifying fat to increase surface area for lipase",
+            "Neutralizing stomach acid",
+            "Transporting fat directly into the blood"
+          ],
+          "answer": 1,
+          "why": "Bile salts are detergents that break fat into smaller droplets; lipase does the actual hydrolysis. Bicarbonate, not bile, neutralizes gastric acid."
+        },
+        {
+          "q": "During exercise, working muscle produces more CO2 and heat. The oxygen-hemoglobin curve shifts:",
+          "choices": [
+            "Left, increasing oxygen affinity",
+            "Right, releasing more oxygen to tissues",
+            "Not at all",
+            "Left, releasing more oxygen to tissues"
+          ],
+          "answer": 1,
+          "why": "Increased CO2, acidity and temperature reduce hemoglobin's affinity so it unloads oxygen where it is needed. A left shift would hold oxygen more tightly."
+        }
+      ]
+    },
+    {
+      "id": "sci-bio2-l08",
+      "title": "Animal form and function II: excretion, endocrine, nervous and sensory",
+      "minutes": 9,
+      "body": "## Osmoregulation and excretion\n\nAnimals must balance water and solutes and dispose of nitrogen from protein breakdown. **Ammonia** is very toxic and needs abundant water, so aquatic animals excrete it. **Urea** is far less toxic and used by mammals. **Uric acid** is nearly insoluble, conserving water, and is used by birds, reptiles and insects.\n\nThe mammalian **nephron** is the functional unit, about `1 million` per kidney. **Filtration** at the glomerulus into Bowman's capsule pushes water and small solutes out while retaining cells and proteins. **Reabsorption** recovers most of it: the proximal tubule reclaims roughly `65%` of filtered sodium and water plus all glucose and amino acids; the descending loop of Henle is permeable to water only, the ascending limb to salt only, creating the medullary concentration gradient; the distal tubule and collecting duct fine-tune under hormones. **Secretion** actively adds `H+`, `K+` and drugs to the filtrate.\n\nHormonal control: **ADH** (vasopressin) from the posterior pituitary inserts aquaporins in the collecting duct, concentrating urine. **Aldosterone**, the end of the **renin-angiotensin-aldosterone system**, increases sodium reabsorption and therefore water and blood pressure. **Atrial natriuretic peptide** does the opposite when the atria stretch.\n\n## Endocrine system\n\nHormones are chemical messengers carried in blood, acting only on cells with the right receptor. Water-soluble peptides and amines bind surface receptors and use second messengers; steroids and thyroid hormone enter and act on transcription. Most are governed by negative feedback through the **hypothalamus-pituitary axis**.\n\n| Gland | Hormone | Effect |\n|---|---|---|\n| Anterior pituitary | TSH, ACTH, FSH, LH, GH, prolactin | Drives other glands and growth |\n| Posterior pituitary | ADH, oxytocin | Water retention; labor and milk letdown |\n| Thyroid | T3, T4; calcitonin | Metabolic rate; lowers blood calcium |\n| Parathyroid | PTH | Raises blood calcium |\n| Adrenal cortex | Cortisol, aldosterone | Stress, glucose, sodium |\n| Adrenal medulla | Epinephrine | Fight or flight |\n| Pancreas | Insulin, glucagon | Lowers, raises blood glucose |\n\n> **Key:** Insulin and glucagon are the textbook antagonistic pair. Insulin moves glucose into cells and stores it; glucagon mobilizes glycogen. Every glucose question in the course runs on that opposition.\n\n## Nervous system and senses\n\nA neuron has dendrites, a cell body, and an axon often wrapped in **myelin** with **nodes of Ranvier** that allow fast **saltatory conduction**. The **resting potential** is about `-70 mV`, maintained by the sodium-potassium pump and potassium leak channels.\n\nAn **action potential** is all-or-none. A stimulus depolarizes the membrane to threshold near `-55 mV`; voltage-gated sodium channels open and the inside shoots to about `+30 mV`; sodium channels inactivate and potassium channels open, repolarizing and briefly hyperpolarizing. During the **refractory period** the neuron cannot re-fire, which forces one-way propagation. Signal strength is coded by **frequency**, never by amplitude.\n\nAt the **synapse**, depolarization opens calcium channels, vesicles fuse, and neurotransmitter crosses a `20–40 nm` cleft to ligand-gated receptors, producing excitatory or inhibitory postsynaptic potentials that the postsynaptic cell sums. Transmitters include acetylcholine, norepinephrine, dopamine, serotonin, GABA (the main inhibitory transmitter) and glutamate.\n\nOrganization: central nervous system (brain and spinal cord) and peripheral, which splits into somatic and autonomic; autonomic splits into **sympathetic** (fight or flight) and **parasympathetic** (rest and digest). Sensory receptors transduce stimuli into action potentials: mechanoreceptors, chemoreceptors, photoreceptors (rods for dim light, cones for color), thermoreceptors and nociceptors for pain.",
+      "keyPoints": [
+        "Ammonia, urea and uric acid trade toxicity against water cost; mammals use urea.",
+        "The nephron works by filtration, reabsorption and secretion; the proximal tubule reclaims about 65% of sodium and water.",
+        "ADH inserts aquaporins in the collecting duct; aldosterone raises sodium reabsorption and blood pressure.",
+        "Resting potential is about -70 mV, threshold about -55 mV, peak about +30 mV.",
+        "Action potentials are all-or-none; stimulus intensity is coded as firing frequency."
+      ],
+      "checks": [
+        {
+          "q": "Which segment of the nephron is permeable to water but not to salt?",
+          "choices": [
+            "Proximal convoluted tubule",
+            "Descending limb of the loop of Henle",
+            "Ascending limb of the loop of Henle",
+            "Collecting duct without ADH"
+          ],
+          "answer": 1,
+          "why": "The descending limb allows water out but not salt, concentrating the filtrate. The ascending limb is the opposite and the collecting duct without ADH is relatively impermeable to water."
+        },
+        {
+          "q": "A stronger stimulus applied to a neuron produces:",
+          "choices": [
+            "A larger action potential",
+            "A faster conduction velocity along the same axon",
+            "More frequent action potentials",
+            "A more negative resting potential"
+          ],
+          "answer": 2,
+          "why": "Action potentials are all-or-none, so amplitude is fixed. Intensity is encoded as firing frequency, and conduction velocity depends on axon diameter and myelination, not stimulus strength."
+        },
+        {
+          "q": "Blood glucose falls between meals. The expected hormonal response is:",
+          "choices": [
+            "Increased insulin secretion",
+            "Increased glucagon secretion mobilizing glycogen",
+            "Increased calcitonin",
+            "Increased ADH secretion"
+          ],
+          "answer": 1,
+          "why": "Glucagon from pancreatic alpha cells triggers glycogenolysis and gluconeogenesis to raise glucose. Insulin does the opposite and is released after meals."
+        }
+      ]
+    },
+    {
+      "id": "sci-bio2-l09",
+      "title": "Immunity, reproduction and development",
+      "minutes": 9,
+      "body": "## Innate immunity\n\nThe first layer is nonspecific and immediate. **Barriers**: skin, mucous membranes, cilia, lysozyme in tears and saliva, stomach acid, normal flora. **Internal innate defenses**: phagocytes (neutrophils first, then macrophages), natural killer cells that destroy virus-infected and tumor cells, the **complement** cascade, interferons that warn neighboring cells of viral infection, **inflammation** (redness, heat, swelling, pain from vasodilation and increased permeability), and fever.\n\n## Adaptive immunity\n\nSlower, specific, and it remembers. An **antigen** is anything recognized by the immune system; an **antibody** is an immunoglobulin made by plasma cells that binds one epitope.\n\n**Humoral immunity** is B-cell work. A B cell recognizes its antigen, is helped by a helper T cell, and proliferates into **plasma cells** that secrete antibody and **memory B cells**. Antibodies neutralize, opsonize for phagocytosis, agglutinate, and activate complement. Classes: **IgG** most abundant and the only one crossing the placenta, **IgM** first produced in an infection, **IgA** in secretions and breast milk, **IgE** in allergy and parasites, **IgD** on naive B cells.\n\n**Cell-mediated immunity** is T-cell work. **Helper T cells** (`CD4`) recognize antigen on MHC class II and release cytokines that coordinate everything, which is why HIV's destruction of `CD4` cells collapses the whole response. **Cytotoxic T cells** (`CD8`) recognize antigen on MHC class I and kill infected cells directly. Regulatory T cells restrain the response.\n\nThe **primary response** takes `5–10 days` and is mostly IgM. The **secondary response** is faster, larger and mostly IgG because memory cells already exist — the entire basis of vaccination. **Active immunity** is your own response, from infection or vaccine. **Passive immunity** is borrowed antibody, from the placenta, breast milk or an immunoglobulin injection, and it fades in weeks to months.\n\n> **Trap:** Passive immunity is immediate but temporary and produces no memory cells. Active immunity is slow to develop but lasting.\n\nImmune failures: allergy (IgE and mast cell histamine release), autoimmunity (self-recognition failure, as in type 1 diabetes and rheumatoid arthritis), and immunodeficiency.\n\n## Reproduction\n\nAsexual reproduction (budding, fission, parthenogenesis) is fast and preserves genotype; sexual reproduction generates variation.\n\nHuman male: testes make sperm continuously in seminiferous tubules under FSH, with testosterone from Leydig cells under LH. Female: **oogenesis** produces one ovum plus polar bodies, and the process begins before birth and pauses. The `28-day` cycle has an ovarian side (follicular phase, ovulation near day `14` triggered by an LH surge, luteal phase) and a uterine side (menstruation, proliferative phase under estrogen, secretory phase under progesterone). If fertilization occurs, the embryo secretes hCG to maintain the corpus luteum, which is what a pregnancy test detects.\n\n## Development\n\n**Fertilization** triggers a cortical reaction blocking polyspermy. Then **cleavage**, rapid mitotic divisions without growth, produces a **morula** and then a fluid-filled **blastula** (blastocyst in mammals, which implants around day `6–7`). **Gastrulation** forms the three germ layers: **ectoderm** becomes skin and nervous system, **mesoderm** becomes muscle, bone, blood, kidney and gonads, **endoderm** becomes gut lining, liver, pancreas and lung lining. **Organogenesis** follows, beginning with neurulation, where the notochord induces the neural tube.\n\n**Induction** is one tissue signaling another to change its fate; **determination** is commitment; **differentiation** is the visible specialization. Apoptosis sculpts structures, separating fingers from a paddle-shaped hand.",
+      "keyPoints": [
+        "Innate immunity is fast and nonspecific; adaptive immunity is slow, specific and remembers.",
+        "IgG is most abundant and crosses the placenta; IgM appears first in an infection.",
+        "CD4 helper T cells coordinate the response; CD8 cytotoxic T cells kill infected cells.",
+        "Active immunity builds memory; passive immunity is immediate, borrowed and temporary.",
+        "Ectoderm makes skin and nerves, mesoderm makes muscle, bone and blood, endoderm makes gut and glands."
+      ],
+      "checks": [
+        {
+          "q": "A newborn is protected against measles for several months by maternal antibodies. This is:",
+          "choices": [
+            "Active natural immunity",
+            "Passive natural immunity",
+            "Active artificial immunity",
+            "Innate immunity"
+          ],
+          "answer": 1,
+          "why": "Antibody transferred across the placenta and in breast milk is passive and natural; it fades because no memory cells were made. Active immunity requires the infant's own response."
+        },
+        {
+          "q": "HIV depletes CD4 helper T cells. The main consequence is:",
+          "choices": [
+            "Loss of skin barrier function",
+            "Failure to coordinate both humoral and cell-mediated responses",
+            "Inability to produce complement",
+            "Overactive cytotoxic T cell killing"
+          ],
+          "answer": 1,
+          "why": "Helper T cells release the cytokines that activate B cells and cytotoxic T cells, so their loss cripples adaptive immunity broadly. Complement and barriers are innate and remain intact."
+        },
+        {
+          "q": "The nervous system develops from which germ layer?",
+          "choices": [
+            "Ectoderm",
+            "Mesoderm",
+            "Endoderm",
+            "Trophoblast"
+          ],
+          "answer": 0,
+          "why": "Ectoderm forms the epidermis and the entire nervous system by neurulation. Mesoderm forms muscle, bone and blood, and endoderm forms the gut lining and associated glands."
+        }
+      ]
+    },
+    {
+      "id": "sci-bio2-l10",
+      "title": "Ecology, behavior, and what the PA-CAT asks",
+      "minutes": 9,
+      "body": "## Population ecology\n\nA **population** is one species in one area. Growth is **exponential** (`dN/dt = rN`) when resources are unlimited, drawing a J curve, and **logistic** (`dN/dt = rN[(K-N)/K]`) when limited, drawing an S curve that levels at **carrying capacity** `K`. **Density-dependent** limits (competition, predation, disease) intensify as crowding rises; **density-independent** limits (fire, flood, cold snap) do not care how many there are.\n\n**Life history** strategies trade quantity against care: `r`-selected species produce many low-investment offspring, `K`-selected species produce few and invest heavily. Survivorship curves are Type I (high early survival, humans), Type II (constant rate), Type III (huge early mortality, oysters).\n\n## Communities\n\nSpecies interactions: **competition** (Gause's competitive exclusion principle says two species cannot occupy the identical niche indefinitely; resource partitioning is the common outcome), **predation**, **herbivory**, and symbiosis — **mutualism** where both benefit, **commensalism** where one benefits and the other is unaffected, **parasitism** where one benefits at the other's cost.\n\nDefenses include **cryptic coloration**, **aposematic** warning coloration, **Batesian mimicry** (harmless mimics harmful) and **Mullerian mimicry** (two harmful species converge). A **keystone species** has an effect out of proportion to its abundance. **Succession** is orderly community change: primary succession begins on bare rock with pioneer species such as lichens, secondary succession follows a disturbance where soil remains.\n\n## Ecosystems\n\nEnergy **flows** one way and matter **cycles**. Producers fix energy; only about `10%` transfers to each higher trophic level, which is why food chains rarely exceed four or five links and why biomass pyramids narrow.\n\nThe **carbon cycle** runs through photosynthesis and respiration, with fossil fuel combustion adding a large new flux. The **nitrogen cycle** depends on bacteria: nitrogen fixation converts `N2` to ammonia, nitrification converts ammonia to nitrite then nitrate, denitrification returns `N2` to the air. The **phosphorus cycle** has no atmospheric phase and moves through rock weathering, which is why phosphorus limits many ecosystems. The **water cycle** is driven by evaporation and precipitation.\n\n## Behavior\n\n**Innate** behaviors are genetically programmed, including fixed action patterns triggered by a sign stimulus. **Learned** behaviors include habituation, **imprinting** during a critical period, associative learning (classical and operant conditioning), and cognition. **Altruism** is explained by **kin selection** and Hamilton's rule, and by reciprocal altruism. **Inclusive fitness** counts offspring plus relatives' offspring, weighted by relatedness.\n\n## Human impact and conservation\n\nHabitat loss is the leading cause of extinction, followed by invasive species, overharvesting, pollution and climate change. Greenhouse gas accumulation is warming the climate and acidifying oceans as `CO2` dissolves. **Biomagnification** concentrates persistent toxins such as mercury and DDT up the food chain. Conservation biology protects biodiversity at the genetic, species and ecosystem levels.\n\n## How this shows up next\n\nThe **PA-CAT** is a `240`-question, roughly `4.5`-hour exam covering biology, anatomy and physiology, chemistry, biochemistry, microbiology, genetics, statistics and behavioral science. Biology II content lands mostly in the general biology, genetics and microbiology sections, plus heavy overlap with the physiology section — every organ system in lessons 7 through 9 reappears there in more depth.\n\nWhat carries the most weight going forward: physiology by system, immunology vocabulary, microbiology and virology basics, Hardy-Weinberg calculations, and the mechanism-level thinking that turns a fact into a prediction. Diversity of life is the lowest-yield section clinically but still tested, so learn the defining traits rather than the full lists.\n\n> **On shift:** Biology II is the vocabulary PA school assumes on day one. Pathophysiology is nothing but homeostasis described from the failure side.",
+      "keyPoints": [
+        "Logistic growth levels off at carrying capacity K; density-dependent factors intensify with crowding.",
+        "Roughly 10 percent of energy transfers between trophic levels, limiting food chain length.",
+        "The nitrogen cycle depends on bacterial fixation, nitrification and denitrification; phosphorus has no atmospheric phase.",
+        "Kin selection explains altruism through inclusive fitness.",
+        "PA-CAT: about 240 questions over roughly 4.5 hours, with physiology, genetics and microbiology carrying the most Biology II weight."
+      ],
+      "checks": [
+        {
+          "q": "A harmless snake evolves the color pattern of a venomous species. This is:",
+          "choices": [
+            "Mullerian mimicry",
+            "Batesian mimicry",
+            "Cryptic coloration",
+            "Aposematic coloration"
+          ],
+          "answer": 1,
+          "why": "A harmless species imitating a harmful model is Batesian mimicry. Mullerian mimicry requires both species to be genuinely harmful and converge on one warning signal."
+        },
+        {
+          "q": "Why do food chains rarely exceed four or five trophic levels?",
+          "choices": [
+            "Predators run out of space",
+            "Only about 10 percent of energy passes to the next level",
+            "Nutrients cannot cycle that far",
+            "Decomposers remove the top level"
+          ],
+          "answer": 1,
+          "why": "Most energy at each level is lost as heat and to metabolism, so available energy shrinks roughly tenfold per step until it cannot support another level. Nutrient cycling is unrelated to chain length."
+        },
+        {
+          "q": "Mercury reaches its highest concentration in large predatory fish. This process is called:",
+          "choices": [
+            "Eutrophication",
+            "Biomagnification",
+            "Primary succession",
+            "Resource partitioning"
+          ],
+          "answer": 1,
+          "why": "Persistent toxins accumulate in tissue and concentrate at each trophic level, which is biomagnification. Eutrophication is nutrient enrichment causing algal blooms and oxygen depletion."
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "sci-bio2-c001",
+      "front": "What does fitness mean in evolutionary biology?",
+      "back": "Relative reproductive success: the number of surviving, reproducing offspring an individual leaves. It is not strength, size or lifespan.",
+      "lesson": "sci-bio2-l01"
+    },
+    {
+      "id": "sci-bio2-c002",
+      "front": "State the four steps of Darwin's argument for natural selection.",
+      "back": "Overproduction of offspring, heritable variation among individuals, differential survival and reproduction, and resulting change in allele frequency over generations.",
+      "lesson": "sci-bio2-l01"
+    },
+    {
+      "id": "sci-bio2-c003",
+      "front": "How do homologous and analogous structures differ?",
+      "back": "Homologous structures share ancestry and an underlying plan despite different uses. Analogous structures share function only, produced by convergent evolution.",
+      "lesson": "sci-bio2-l01"
+    },
+    {
+      "id": "sci-bio2-c004",
+      "front": "Contrast directional, stabilizing and disruptive selection.",
+      "back": "Directional shifts the mean toward one extreme, stabilizing favors the intermediate and narrows variation, disruptive favors both extremes and can split a population.",
+      "lesson": "sci-bio2-l01"
+    },
+    {
+      "id": "sci-bio2-c005",
+      "front": "What is the difference between the bottleneck and founder effects?",
+      "back": "Both are genetic drift. A bottleneck follows a drastic population crash; the founder effect follows colonization of a new area by a few individuals.",
+      "lesson": "sci-bio2-l01"
+    },
+    {
+      "id": "sci-bio2-c007",
+      "front": "Name six independent lines of evidence for evolution.",
+      "back": "Fossil record, comparative anatomy including vestigial structures, embryology, molecular and genetic similarity, biogeography, and directly observed change such as antibiotic resistance.",
+      "lesson": "sci-bio2-l01"
+    },
+    {
+      "id": "sci-bio2-c008",
+      "front": "List the five conditions for Hardy-Weinberg equilibrium.",
+      "back": "No mutation, random mating, no natural selection, very large population size, and no gene flow. Violating any one means allele frequencies can change.",
+      "lesson": "sci-bio2-l02"
+    },
+    {
+      "id": "sci-bio2-c009",
+      "front": "Write both Hardy-Weinberg equations and define each term.",
+      "back": "p + q = 1 for allele frequencies. p squared plus 2pq plus q squared = 1, where p squared is homozygous dominant, 2pq heterozygous, q squared homozygous recessive.",
+      "lesson": "sci-bio2-l02"
+    },
+    {
+      "id": "sci-bio2-c010",
+      "front": "Where do you start in nearly every Hardy-Weinberg problem, and why?",
+      "back": "With q squared, the frequency of the recessive phenotype, because it is the only genotype you can identify directly from the phenotype.",
+      "lesson": "sci-bio2-l02"
+    },
+    {
+      "id": "sci-bio2-c011",
+      "front": "If 4 percent of a population shows a recessive trait, what are p, q and the carrier frequency?",
+      "back": "q squared is 0.04, so q is 0.2, p is 0.8, and carriers are 2pq = 0.32, that is 32 percent of the population.",
+      "lesson": "sci-bio2-l02"
+    },
+    {
+      "id": "sci-bio2-c013",
+      "front": "What is heterozygote advantage, with the classic example?",
+      "back": "Heterozygotes have higher fitness than either homozygote, preserving a harmful allele. Sickle cell carriers resist falciparum malaria, keeping HbS common in endemic regions.",
+      "lesson": "sci-bio2-l02"
+    },
+    {
+      "id": "sci-bio2-c014",
+      "front": "Why does selection remove a harmful recessive allele so slowly?",
+      "back": "Most copies are hidden in heterozygotes, where they are not expressed and therefore not exposed to selection. Only the rare homozygotes are selected against.",
+      "lesson": "sci-bio2-l02"
+    },
+    {
+      "id": "sci-bio2-c015",
+      "front": "What is the biological species concept and where does it fail?",
+      "back": "Populations that interbreed in nature and produce fertile offspring. It cannot be applied to asexual organisms, fossils, or many hybridizing plants.",
+      "lesson": "sci-bio2-l03"
+    },
+    {
+      "id": "sci-bio2-c016",
+      "front": "Name five prezygotic isolating barriers.",
+      "back": "Habitat, temporal, behavioral, mechanical and gametic isolation. All prevent a zygote from forming in the first place.",
+      "lesson": "sci-bio2-l03"
+    },
+    {
+      "id": "sci-bio2-c017",
+      "front": "Why is a sterile mule an example of a postzygotic barrier?",
+      "back": "Fertilization succeeded and a hybrid developed, but horse and donkey chromosome numbers cannot pair in meiosis, so the hybrid is infertile.",
+      "lesson": "sci-bio2-l03"
+    },
+    {
+      "id": "sci-bio2-c018",
+      "front": "Compare allopatric and sympatric speciation.",
+      "back": "Allopatric speciation requires geographic separation that stops gene flow. Sympatric speciation occurs in the same area, most often by polyploidy in plants.",
+      "lesson": "sci-bio2-l03"
+    },
+    {
+      "id": "sci-bio2-c019",
+      "front": "How do you judge relatedness on a phylogenetic tree?",
+      "back": "By how recently two taxa share a common ancestor node, not by how close the tips are printed to each other.",
+      "lesson": "sci-bio2-l03"
+    },
+    {
+      "id": "sci-bio2-c020",
+      "front": "Define monophyletic, paraphyletic and polyphyletic groups.",
+      "back": "Monophyletic includes an ancestor and all descendants. Paraphyletic excludes some descendants. Polyphyletic groups unrelated lineages by shared appearance.",
+      "lesson": "sci-bio2-l03"
+    },
+    {
+      "id": "sci-bio2-c022",
+      "front": "What does the Gram stain distinguish, and what color is each?",
+      "back": "Cell wall structure. Gram-positive bacteria have thick peptidoglycan and stain purple; Gram-negative have thin peptidoglycan plus an outer membrane and stain pink.",
+      "lesson": "sci-bio2-l04"
+    },
+    {
+      "id": "sci-bio2-c023",
+      "front": "Name the three mechanisms of bacterial gene transfer.",
+      "back": "Transformation, uptake of free DNA. Transduction, transfer by a bacteriophage. Conjugation, plasmid transfer through a pilus, the main route for resistance genes.",
+      "lesson": "sci-bio2-l04"
+    },
+    {
+      "id": "sci-bio2-c024",
+      "front": "How do archaea differ structurally from bacteria?",
+      "back": "Archaea lack peptidoglycan and use ether-linked membrane lipids, which tolerate extremes. Both lack a nucleus, but their genetic machinery differs substantially.",
+      "lesson": "sci-bio2-l04"
+    },
+    {
+      "id": "sci-bio2-c025",
+      "front": "Name four medically important protists and their diseases.",
+      "back": "Plasmodium causes malaria, Entamoeba histolytica amebic dysentery, Giardia lamblia giardiasis, and Trypanosoma species sleeping sickness and Chagas disease.",
+      "lesson": "sci-bio2-l04"
+    },
+    {
+      "id": "sci-bio2-c026",
+      "front": "Why are viruses not considered living?",
+      "back": "They are acellular, have no metabolism, cannot maintain homeostasis, and cannot reproduce without hijacking a host cell's machinery.",
+      "lesson": "sci-bio2-l04"
+    },
+    {
+      "id": "sci-bio2-c027",
+      "front": "Contrast the lytic and lysogenic cycles.",
+      "back": "Lytic: the virus replicates immediately and bursts the cell. Lysogenic: the genome integrates as a prophage, replicates with the host, and may later become lytic.",
+      "lesson": "sci-bio2-l04"
+    },
+    {
+      "id": "sci-bio2-c028",
+      "front": "Which two enzymes make a retrovirus infection permanent?",
+      "back": "Reverse transcriptase, which builds DNA from the viral RNA, and integrase, which inserts that DNA into the host genome.",
+      "lesson": "sci-bio2-l04"
+    },
+    {
+      "id": "sci-bio2-c030",
+      "front": "What polysaccharide forms fungal cell walls?",
+      "back": "Chitin, the same polymer in arthropod exoskeletons. Plants use cellulose and bacteria use peptidoglycan.",
+      "lesson": "sci-bio2-l05"
+    },
+    {
+      "id": "sci-bio2-c031",
+      "front": "What are mycorrhizae and why do they matter?",
+      "back": "Mutualisms between fungi and plant roots. The fungus vastly extends absorptive surface for phosphorus and water; the plant supplies sugars.",
+      "lesson": "sci-bio2-l05"
+    },
+    {
+      "id": "sci-bio2-c032",
+      "front": "Describe alternation of generations.",
+      "back": "A diploid sporophyte makes haploid spores by meiosis; spores grow into a haploid gametophyte that makes gametes by mitosis; fertilization restores the sporophyte.",
+      "lesson": "sci-bio2-l05"
+    },
+    {
+      "id": "sci-bio2-c033",
+      "front": "What four adaptations allowed plants to colonize land?",
+      "back": "A waxy cuticle to limit water loss, stomata for regulated gas exchange, vascular tissue for transport and support, and seeds with pollen to reproduce without standing water.",
+      "lesson": "sci-bio2-l05"
+    },
+    {
+      "id": "sci-bio2-c034",
+      "front": "Compare xylem and phloem.",
+      "back": "Xylem carries water and minerals upward through dead tracheids and vessel elements. Phloem carries sugar in both directions through living sieve-tube elements.",
+      "lesson": "sci-bio2-l05"
+    },
+    {
+      "id": "sci-bio2-c035",
+      "front": "Explain the cohesion-tension mechanism.",
+      "back": "Transpiration from leaves creates negative pressure; hydrogen bonding holds the water column together and adhesion to xylem walls resists gravity. No ATP is required.",
+      "lesson": "sci-bio2-l05"
+    },
+    {
+      "id": "sci-bio2-c036",
+      "front": "Match each plant hormone to its main effect.",
+      "back": "Auxin: phototropism and apical dominance. Gibberellins: stem elongation and germination. Cytokinins: cell division. Abscisic acid: dormancy and stomatal closure. Ethylene: fruit ripening.",
+      "lesson": "sci-bio2-l05"
+    },
+    {
+      "id": "sci-bio2-c038",
+      "front": "What is the difference between a protostome and a deuterostome?",
+      "back": "In protostomes the blastopore becomes the mouth, with spiral determinate cleavage. In deuterostomes it becomes the anus, with radial indeterminate cleavage.",
+      "lesson": "sci-bio2-l06"
+    },
+    {
+      "id": "sci-bio2-c039",
+      "front": "What does the mesoderm layer contribute that diploblasts lack?",
+      "back": "Muscle, bone, blood, connective tissue and the gonads and kidneys. Its appearance made larger, more complex bilateral bodies possible.",
+      "lesson": "sci-bio2-l06"
+    },
+    {
+      "id": "sci-bio2-c040",
+      "front": "Name the four defining chordate characteristics.",
+      "back": "A notochord, a dorsal hollow nerve cord, pharyngeal slits or pouches, and a post-anal tail, present at some point in the life cycle.",
+      "lesson": "sci-bio2-l06"
+    },
+    {
+      "id": "sci-bio2-c041",
+      "front": "What defines the phylum Arthropoda?",
+      "back": "Jointed appendages, a segmented body, and a chitinous exoskeleton that must be molted. It is the largest animal phylum with open circulation.",
+      "lesson": "sci-bio2-l06"
+    },
+    {
+      "id": "sci-bio2-c043",
+      "front": "Why was the amniotic egg a turning point for vertebrates?",
+      "back": "Its membranes enclose the embryo in its own fluid and handle gas exchange and waste, so reproduction no longer required standing water.",
+      "lesson": "sci-bio2-l06"
+    },
+    {
+      "id": "sci-bio2-c044",
+      "front": "List the defining traits of mammals.",
+      "back": "Hair, mammary glands, three middle ear bones, a four-chambered heart, a diaphragm, and endothermy. Groups are monotremes, marsupials and eutherians.",
+      "lesson": "sci-bio2-l06"
+    },
+    {
+      "id": "sci-bio2-c045",
+      "front": "What three components make up a homeostatic feedback loop?",
+      "back": "A receptor detecting change, a control center comparing it to a set point, and an effector producing the correction. Most loops are negative feedback.",
+      "lesson": "sci-bio2-l07"
+    },
+    {
+      "id": "sci-bio2-c047",
+      "front": "Name the four primary tissue types and one example of each.",
+      "back": "Epithelial such as intestinal lining, connective such as bone or blood, muscle such as cardiac muscle, and nervous tissue of neurons and glia.",
+      "lesson": "sci-bio2-l07"
+    },
+    {
+      "id": "sci-bio2-c048",
+      "front": "Where does most chemical digestion and absorption occur, and why there?",
+      "back": "The small intestine. Villi and microvilli provide roughly 250 square meters of surface, and pancreatic enzymes with bile arrive at the duodenum.",
+      "lesson": "sci-bio2-l07"
+    },
+    {
+      "id": "sci-bio2-c049",
+      "front": "What is the pH of the stomach and which enzyme works there?",
+      "back": "About 1.5 to 3.5. Acid converts pepsinogen to pepsin, which begins protein digestion and would be inactive at neutral pH.",
+      "lesson": "sci-bio2-l07"
+    },
+    {
+      "id": "sci-bio2-c050",
+      "front": "Trace blood from the vena cava to the aorta.",
+      "back": "Vena cava, right atrium, tricuspid valve, right ventricle, pulmonary valve, pulmonary arteries, lungs, pulmonary veins, left atrium, mitral valve, left ventricle, aortic valve, aorta.",
+      "lesson": "sci-bio2-l07"
+    },
+    {
+      "id": "sci-bio2-c051",
+      "front": "What is cardiac output and its resting value?",
+      "back": "Stroke volume multiplied by heart rate, about 5 liters per minute at rest in an adult.",
+      "lesson": "sci-bio2-l07"
+    },
+    {
+      "id": "sci-bio2-c052",
+      "front": "Why is blood flow slowest in capillaries?",
+      "back": "Total cross-sectional area is greatest there, so velocity falls. Slow flow plus one-cell-thick walls maximizes time and surface for exchange.",
+      "lesson": "sci-bio2-l07"
+    },
+    {
+      "id": "sci-bio2-c054",
+      "front": "What four changes shift the oxygen-hemoglobin curve to the right?",
+      "back": "Increased carbon dioxide, increased acidity or lower pH, increased temperature, and increased 2,3-BPG. A right shift unloads more oxygen to tissues.",
+      "lesson": "sci-bio2-l07"
+    },
+    {
+      "id": "sci-bio2-c055",
+      "front": "In what form is most carbon dioxide carried in blood?",
+      "back": "As bicarbonate ion, formed in red blood cells by carbonic anhydrase. Smaller amounts bind hemoglobin directly or dissolve in plasma.",
+      "lesson": "sci-bio2-l07"
+    },
+    {
+      "id": "sci-bio2-c056",
+      "front": "Compare ammonia, urea and uric acid as nitrogen wastes.",
+      "back": "Ammonia is very toxic and needs abundant water, used by aquatic animals. Urea is less toxic, used by mammals. Uric acid is insoluble and water-saving, used by birds, reptiles and insects.",
+      "lesson": "sci-bio2-l08"
+    },
+    {
+      "id": "sci-bio2-c057",
+      "front": "Name the three basic processes of the nephron.",
+      "back": "Filtration at the glomerulus, reabsorption of water and useful solutes back into blood, and secretion of hydrogen ions, potassium and drugs into the filtrate.",
+      "lesson": "sci-bio2-l08"
+    },
+    {
+      "id": "sci-bio2-c058",
+      "front": "What is different about the descending and ascending limbs of the loop of Henle?",
+      "back": "The descending limb is permeable to water but not salt. The ascending limb is permeable to salt but not water. Together they build the medullary gradient.",
+      "lesson": "sci-bio2-l08"
+    },
+    {
+      "id": "sci-bio2-c059",
+      "front": "What do ADH and aldosterone each do?",
+      "back": "ADH inserts aquaporins into the collecting duct so water is reabsorbed and urine concentrates. Aldosterone increases sodium reabsorption, so water follows and blood pressure rises.",
+      "lesson": "sci-bio2-l08"
+    },
+    {
+      "id": "sci-bio2-c060",
+      "front": "Which hormones raise and lower blood calcium?",
+      "back": "Parathyroid hormone raises calcium by mobilizing bone and increasing renal reabsorption. Calcitonin from the thyroid lowers it.",
+      "lesson": "sci-bio2-l08"
+    },
+    {
+      "id": "sci-bio2-c061",
+      "front": "How do insulin and glucagon oppose each other?",
+      "back": "Insulin lowers blood glucose by driving uptake and glycogen storage after meals. Glucagon raises it between meals by glycogenolysis and gluconeogenesis.",
+      "lesson": "sci-bio2-l08"
+    },
+    {
+      "id": "sci-bio2-c062",
+      "front": "Give the three key voltages of a neuron's action potential.",
+      "back": "Resting potential about -70 mV, threshold about -55 mV, and peak depolarization about +30 mV before repolarization and brief hyperpolarization.",
+      "lesson": "sci-bio2-l08"
+    },
+    {
+      "id": "sci-bio2-c063",
+      "front": "What does all-or-none mean for an action potential?",
+      "back": "Once threshold is reached the spike is the same size every time. Stimulus strength is encoded as firing frequency, not amplitude.",
+      "lesson": "sci-bio2-l08"
+    },
+    {
+      "id": "sci-bio2-c065",
+      "front": "What triggers neurotransmitter release at a synapse?",
+      "back": "Depolarization opens voltage-gated calcium channels; calcium entry causes vesicles to fuse with the membrane and release transmitter into the cleft.",
+      "lesson": "sci-bio2-l08"
+    },
+    {
+      "id": "sci-bio2-c066",
+      "front": "Contrast sympathetic and parasympathetic effects.",
+      "back": "Sympathetic is fight or flight: raises heart rate, dilates pupils and bronchioles, slows digestion. Parasympathetic is rest and digest and does the reverse.",
+      "lesson": "sci-bio2-l08"
+    },
+    {
+      "id": "sci-bio2-c067",
+      "front": "List the main components of innate immunity.",
+      "back": "Barriers such as skin and mucus, phagocytes, natural killer cells, complement, interferons, inflammation and fever. Fast, nonspecific, no memory.",
+      "lesson": "sci-bio2-l09"
+    },
+    {
+      "id": "sci-bio2-c068",
+      "front": "What do CD4 and CD8 T cells do?",
+      "back": "CD4 helper T cells read antigen on MHC class II and release cytokines that coordinate B and T responses. CD8 cytotoxic T cells read MHC class I and kill infected cells.",
+      "lesson": "sci-bio2-l09"
+    },
+    {
+      "id": "sci-bio2-c069",
+      "front": "Match the antibody classes to their roles.",
+      "back": "IgG most abundant and crosses the placenta, IgM first in an infection, IgA in secretions and breast milk, IgE in allergy and parasites, IgD on naive B cells.",
+      "lesson": "sci-bio2-l09"
+    },
+    {
+      "id": "sci-bio2-c070",
+      "front": "How does the secondary immune response differ from the primary?",
+      "back": "It is faster, larger and dominated by IgG because memory cells already exist. The primary response takes 5 to 10 days and is mostly IgM.",
+      "lesson": "sci-bio2-l09"
+    },
+    {
+      "id": "sci-bio2-c071",
+      "front": "Distinguish active from passive immunity.",
+      "back": "Active immunity is your own response to infection or vaccine, slow to develop but lasting with memory. Passive is borrowed antibody, immediate but temporary and memoryless.",
+      "lesson": "sci-bio2-l09"
+    },
+    {
+      "id": "sci-bio2-c072",
+      "front": "What hormone maintains the corpus luteum in early pregnancy?",
+      "back": "Human chorionic gonadotropin, hCG, secreted by the embryo. It is what a pregnancy test detects.",
+      "lesson": "sci-bio2-l09"
+    },
+    {
+      "id": "sci-bio2-c074",
+      "front": "What does each germ layer become?",
+      "back": "Ectoderm becomes epidermis and the nervous system, mesoderm becomes muscle, bone, blood, kidney and gonads, endoderm becomes gut lining, liver, pancreas and lung lining.",
+      "lesson": "sci-bio2-l09"
+    },
+    {
+      "id": "sci-bio2-c075",
+      "front": "Put the early developmental stages in order.",
+      "back": "Fertilization, cleavage, morula, blastula or blastocyst, gastrulation forming three germ layers, then organogenesis beginning with neurulation.",
+      "lesson": "sci-bio2-l09"
+    },
+    {
+      "id": "sci-bio2-c077",
+      "front": "Compare exponential and logistic population growth.",
+      "back": "Exponential growth is unlimited and draws a J curve. Logistic growth slows as density rises and levels off at carrying capacity K, drawing an S curve.",
+      "lesson": "sci-bio2-l10"
+    },
+    {
+      "id": "sci-bio2-c078",
+      "front": "Give examples of density-dependent and density-independent limiting factors.",
+      "back": "Density-dependent: competition, predation, disease, waste accumulation. Density-independent: fire, flood, drought, cold snaps and other abiotic events.",
+      "lesson": "sci-bio2-l10"
+    },
+    {
+      "id": "sci-bio2-c079",
+      "front": "What is the competitive exclusion principle?",
+      "back": "Two species cannot occupy exactly the same niche in the same place indefinitely. One outcompetes the other or they diverge by resource partitioning.",
+      "lesson": "sci-bio2-l10"
+    },
+    {
+      "id": "sci-bio2-c080",
+      "front": "Define mutualism, commensalism and parasitism.",
+      "back": "Mutualism benefits both species, commensalism benefits one while the other is unaffected, and parasitism benefits one at the other's expense.",
+      "lesson": "sci-bio2-l10"
+    },
+    {
+      "id": "sci-bio2-c081",
+      "front": "How much energy passes between trophic levels?",
+      "back": "About 10 percent; the rest is lost as heat or used in metabolism. This is why food chains rarely exceed four or five levels.",
+      "lesson": "sci-bio2-l10"
+    },
+    {
+      "id": "sci-bio2-c082",
+      "front": "Name the bacterial steps of the nitrogen cycle.",
+      "back": "Nitrogen fixation converts N2 to ammonia, nitrification converts ammonia to nitrite then nitrate, and denitrification returns nitrogen gas to the atmosphere.",
+      "lesson": "sci-bio2-l10"
+    },
+    {
+      "id": "sci-bio2-c083",
+      "front": "What makes the phosphorus cycle different from the carbon and nitrogen cycles?",
+      "back": "It has no atmospheric phase. Phosphorus enters ecosystems by rock weathering, moves through organisms, and settles in sediment, so it often limits productivity.",
+      "lesson": "sci-bio2-l10"
+    },
+    {
+      "id": "sci-bio2-c085",
+      "front": "What is kin selection and inclusive fitness?",
+      "back": "Behavior that reduces personal reproduction but aids relatives who share alleles. Inclusive fitness counts an individual's own offspring plus relatives' offspring weighted by relatedness.",
+      "lesson": "sci-bio2-l10"
+    },
+    {
+      "id": "sci-bio2-c086",
+      "front": "What is biomagnification?",
+      "back": "Persistent toxins such as mercury and DDT concentrate in tissue and increase at each trophic level, reaching the highest levels in top predators.",
+      "lesson": "sci-bio2-l10"
+    },
+    {
+      "id": "sci-bio2-c087",
+      "front": "What is the format of the PA-CAT and which Biology II topics weigh most?",
+      "back": "About 240 questions in roughly 4.5 hours across biology, anatomy and physiology, chemistry, biochemistry, microbiology, genetics, statistics and behavioral science. Physiology, genetics and microbiology carry the most weight.",
+      "lesson": "sci-bio2-l10"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "sci-bio2-q001",
+      "q": "Which statement about natural selection is correct?",
+      "choices": [
+        "Populations change in allele frequency across generations",
+        "Individuals evolve over their lifetime to fit the environment",
+        "Mutations arise because an organism needs them",
+        "Selection eliminates all genetic variation"
+      ],
+      "answer": 0,
+      "why": "Evolution is a population-level change in allele frequency. Individuals cannot evolve, mutation is undirected, and selection preserves variation through heterozygotes and changing pressures.",
+      "lesson": "sci-bio2-l01",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-bio2-q002",
+      "q": "The forelimb bones of a human, a bat and a whale follow the same arrangement despite different functions. These limbs are:",
+      "choices": [
+        "Analogous",
+        "Vestigial",
+        "Convergent",
+        "Homologous"
+      ],
+      "answer": 3,
+      "why": "A shared underlying structural plan inherited from a common ancestor is homology. Analogy and convergence describe shared function without shared structure or ancestry.",
+      "lesson": "sci-bio2-l01",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-bio2-q003",
+      "q": "A small group of settlers colonizes an island, and their descendants show an unusually high frequency of a rare allele. This is best explained by:",
+      "choices": [
+        "Natural selection for the allele",
+        "Gene flow from the mainland",
+        "The founder effect",
+        "Stabilizing selection"
+      ],
+      "answer": 2,
+      "why": "A few colonists carry an unrepresentative sample of alleles, which is the founder effect, a form of drift. Gene flow would make the island more similar to the mainland, not less.",
+      "lesson": "sci-bio2-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-bio2-q004",
+      "q": "Which scenario is an example of directional selection?",
+      "choices": [
+        "Average birth weight infants surviving best",
+        "Both very large and very small beaks favored in a drought",
+        "Bacteria in a hospital becoming progressively more resistant to an antibiotic",
+        "A peacock's train attracting mates"
+      ],
+      "answer": 2,
+      "why": "Progressive shift of the population mean toward one extreme, here resistance, is directional selection. Favoring the mean is stabilizing and favoring both extremes is disruptive.",
+      "lesson": "sci-bio2-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-bio2-q005",
+      "q": "In a population of 5,000, 1,250 individuals show a recessive phenotype. What is q?",
+      "choices": [
+        "0.25",
+        "0.5",
+        "0.75",
+        "0.05"
+      ],
+      "answer": 1,
+      "why": "q squared is 1250/5000 = 0.25, so q is the square root, 0.5. Choosing 0.25 mistakes the genotype frequency for the allele frequency.",
+      "lesson": "sci-bio2-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-bio2-q006",
+      "q": "A population has p = 0.9 and q = 0.1. What percentage of individuals is expected to be heterozygous?",
+      "choices": [
+        "1 percent",
+        "9 percent",
+        "18 percent",
+        "81 percent"
+      ],
+      "answer": 2,
+      "why": "2pq = 2(0.9)(0.1) = 0.18, which is 18 percent. The 1 percent and 81 percent figures are q squared and p squared respectively.",
+      "lesson": "sci-bio2-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-bio2-q007",
+      "q": "Cystic fibrosis affects about 1 in 2,500 people in a population at equilibrium. Approximately what fraction are carriers?",
+      "choices": [
+        "1 in 25",
+        "1 in 50",
+        "1 in 625",
+        "1 in 1,250"
+      ],
+      "answer": 0,
+      "why": "q squared = 1/2500, so q = 0.02 and 2pq is about 0.039, roughly 1 in 25. The 1 in 50 answer comes from forgetting the factor of 2 in 2pq.",
+      "lesson": "sci-bio2-l02",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-bio2-q008",
+      "q": "If 4 percent of men in a population are red-green color blind, what percentage of women are expected to be affected?",
+      "choices": [
+        "4 percent",
+        "2 percent",
+        "0.16 percent",
+        "8 percent"
+      ],
+      "answer": 2,
+      "why": "Male frequency equals q directly because males are hemizygous, so q = 0.04 and affected women are q squared = 0.0016, or 0.16 percent. This is why X-linked disease is male predominant.",
+      "lesson": "sci-bio2-l02",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-bio2-q009",
+      "q": "Two populations of squirrels are separated when a canyon forms, and over time they can no longer interbreed. This illustrates:",
+      "choices": [
+        "Allopatric speciation",
+        "Sympatric speciation",
+        "Polyploidy",
+        "Adaptive radiation"
+      ],
+      "answer": 0,
+      "why": "Geographic separation halting gene flow followed by divergence is allopatric speciation. Sympatric speciation happens without physical separation, typically by polyploidy in plants.",
+      "lesson": "sci-bio2-l03",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-bio2-q010",
+      "q": "Two insect species live in the same field but one mates only on tall grasses and the other only on shrubs. This is:",
+      "choices": [
+        "Habitat isolation, prezygotic",
+        "Gametic isolation, prezygotic",
+        "Hybrid breakdown, postzygotic",
+        "Reduced hybrid viability, postzygotic"
+      ],
+      "answer": 0,
+      "why": "Different microhabitats prevent encounters entirely, so it is habitat isolation and prezygotic. Postzygotic barriers only apply once a hybrid zygote has formed.",
+      "lesson": "sci-bio2-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-bio2-q011",
+      "q": "On a phylogenetic tree, species X and Y share a node dated 3 million years ago, while X and Z share a node dated 20 million years ago. Which is true?",
+      "choices": [
+        "X is more closely related to Z",
+        "Y and Z are equally related to X",
+        "Relatedness cannot be determined from nodes",
+        "X is more closely related to Y"
+      ],
+      "answer": 3,
+      "why": "The more recent common ancestor indicates closer relationship, so X and Y are closer. Printed position of tips on the page carries no information.",
+      "lesson": "sci-bio2-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-bio2-q012",
+      "q": "Reptiles as traditionally defined exclude birds, which descend from the same ancestor. Traditional Reptilia is therefore:",
+      "choices": [
+        "Monophyletic",
+        "Paraphyletic",
+        "Polyphyletic",
+        "A clade"
+      ],
+      "answer": 1,
+      "why": "Excluding some descendants of the common ancestor makes a group paraphyletic. A monophyletic clade would have to include birds.",
+      "lesson": "sci-bio2-l03",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-bio2-q013",
+      "q": "A Gram stain shows pink rods. What does this tell you?",
+      "choices": [
+        "Gram-negative, with an outer membrane containing endotoxin",
+        "Gram-positive, thick peptidoglycan",
+        "The organism is an archaeon",
+        "The organism is a fungus"
+      ],
+      "answer": 0,
+      "why": "Pink indicates Gram-negative, meaning thin peptidoglycan plus an outer membrane whose lipopolysaccharide acts as endotoxin. Gram-positive organisms stain purple.",
+      "lesson": "sci-bio2-l04",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-bio2-q014",
+      "q": "Antibiotic resistance genes most often spread between bacteria by:",
+      "choices": [
+        "Binary fission",
+        "Meiosis",
+        "Endospore formation",
+        "Conjugation via plasmid transfer"
+      ],
+      "answer": 3,
+      "why": "Conjugation transfers plasmids, which commonly carry resistance genes, directly between cells. Binary fission only copies genes vertically and bacteria do not undergo meiosis.",
+      "lesson": "sci-bio2-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-bio2-q015",
+      "q": "A virus integrates its genome into the host chromosome and remains dormant for years. This describes:",
+      "choices": [
+        "The lytic cycle",
+        "The lysogenic cycle",
+        "Binary fission",
+        "Transformation"
+      ],
+      "answer": 1,
+      "why": "Integration and dormant replication with the host is lysogeny, and the integrated genome is a prophage or provirus. The lytic cycle destroys the cell immediately.",
+      "lesson": "sci-bio2-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-bio2-q016",
+      "q": "Which organism causes malaria, and what kind of organism is it?",
+      "choices": [
+        "Plasmodium, an apicomplexan protist",
+        "Giardia, a fungus",
+        "Trypanosoma, a bacterium",
+        "Entamoeba, a virus"
+      ],
+      "answer": 0,
+      "why": "Plasmodium is a protist in the alveolate group transmitted by Anopheles mosquitoes. Giardia and Entamoeba are also protists but cause intestinal disease, and Trypanosoma is not bacterial.",
+      "lesson": "sci-bio2-l04",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-bio2-q017",
+      "q": "A gardener notes that plants inoculated with a root fungus grow larger in phosphorus-poor soil. The best explanation is:",
+      "choices": [
+        "Mycorrhizae extend absorptive surface for phosphorus and water",
+        "The fungus fixes nitrogen",
+        "The fungus photosynthesizes for the plant",
+        "The fungus kills competing plants"
+      ],
+      "answer": 0,
+      "why": "Mycorrhizal hyphae reach far more soil volume than roots alone, greatly improving phosphorus and water uptake in exchange for sugars. Fungi are heterotrophs and cannot photosynthesize or fix nitrogen.",
+      "lesson": "sci-bio2-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-bio2-q018",
+      "q": "A drought causes a plant to close its stomata. Which hormone is responsible?",
+      "choices": [
+        "Auxin",
+        "Ethylene",
+        "Abscisic acid",
+        "Cytokinin"
+      ],
+      "answer": 2,
+      "why": "Abscisic acid signals water stress and drives guard cells to lose turgor, closing stomata. Auxin controls tropisms, ethylene ripens fruit, cytokinin drives cell division.",
+      "lesson": "sci-bio2-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-bio2-q019",
+      "q": "Cutting a ring of bark and phloem from a tree trunk kills the tree slowly, but the leaves stay hydrated for a while. Why?",
+      "choices": [
+        "Xylem is intact and still carries water upward",
+        "Phloem carries water upward",
+        "The roots store enough water",
+        "Stomata close permanently"
+      ],
+      "answer": 0,
+      "why": "Xylem lies deeper than the removed phloem and keeps delivering water by transpirational pull. The tree dies because roots are starved of sugar carried by phloem.",
+      "lesson": "sci-bio2-l05",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-bio2-q020",
+      "q": "An animal with jointed appendages, a molted chitin exoskeleton and open circulation belongs to which phylum?",
+      "choices": [
+        "Annelida",
+        "Mollusca",
+        "Arthropoda",
+        "Nematoda"
+      ],
+      "answer": 2,
+      "why": "Those three traits together define Arthropoda, the largest animal phylum. Annelids are segmented with closed circulation and molluscs have a foot, mantle and visceral mass.",
+      "lesson": "sci-bio2-l06",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-bio2-q021",
+      "q": "During human development, the notochord persists in adults as:",
+      "choices": [
+        "The spinal cord",
+        "The vertebral bodies",
+        "The thymus",
+        "The nucleus pulposus of intervertebral discs"
+      ],
+      "answer": 3,
+      "why": "The notochord mostly regresses, leaving the gelatinous nucleus pulposus inside each disc. The spinal cord derives from the neural tube, an ectodermal structure.",
+      "lesson": "sci-bio2-l06",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-bio2-q022",
+      "q": "Which characteristic separates a coelomate from a pseudocoelomate?",
+      "choices": [
+        "Presence of a body cavity",
+        "A body cavity fully lined by mesoderm",
+        "Bilateral symmetry",
+        "The presence of a digestive tract"
+      ],
+      "answer": 1,
+      "why": "Both have a cavity; only the coelomate's cavity is completely lined with mesoderm, allowing independent gut movement. Bilateral symmetry and a gut occur in both.",
+      "lesson": "sci-bio2-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-bio2-q023",
+      "q": "A patient's core temperature rises, and sweating and vasodilation return it toward 37 degrees Celsius. This is:",
+      "choices": [
+        "Positive feedback",
+        "Negative feedback",
+        "Acclimatization",
+        "Disruptive regulation"
+      ],
+      "answer": 1,
+      "why": "Correcting a deviation back toward a set point is negative feedback, the dominant pattern in physiology. Positive feedback would drive temperature further up.",
+      "lesson": "sci-bio2-l07",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-bio2-q024",
+      "q": "Removal of the gallbladder impairs which process most directly?",
+      "choices": [
+        "Protein digestion in the stomach",
+        "Carbohydrate digestion by amylase",
+        "Absorption of water in the colon",
+        "Storage and concentrated release of bile for fat emulsification"
+      ],
+      "answer": 3,
+      "why": "The gallbladder stores and concentrates liver bile for release at meals, so fat handling is affected. The liver still makes bile, which is why patients can adapt with smaller fat loads.",
+      "lesson": "sci-bio2-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-bio2-q025",
+      "q": "Which structure sets the normal resting heart rate?",
+      "choices": [
+        "The AV node",
+        "The bundle of His",
+        "The SA node",
+        "The Purkinje fibers"
+      ],
+      "answer": 2,
+      "why": "The SA node is the fastest pacemaker, firing 60 to 100 times per minute in adults. The AV node delays conduction and the His-Purkinje system distributes the impulse.",
+      "lesson": "sci-bio2-l07",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-bio2-q026",
+      "q": "Fish gills extract far more oxygen than a simple flow-through system would. The mechanism is:",
+      "choices": [
+        "Countercurrent exchange maintaining a gradient along the lamella",
+        "Active transport of oxygen across the gill",
+        "Negative pressure breathing",
+        "Hemoglobin with eight subunits"
+      ],
+      "answer": 0,
+      "why": "Water and blood flowing in opposite directions keep a favorable partial pressure gradient the entire length of the exchange surface. Gases are never actively transported; they diffuse.",
+      "lesson": "sci-bio2-l07",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-bio2-q027",
+      "q": "A patient is dehydrated. Which hormonal response is expected?",
+      "choices": [
+        "Decreased ADH and dilute urine",
+        "Increased ADH, more aquaporins, concentrated urine",
+        "Increased atrial natriuretic peptide",
+        "Decreased aldosterone"
+      ],
+      "answer": 1,
+      "why": "Dehydration raises plasma osmolarity, triggering ADH release, aquaporin insertion in the collecting duct, and water conservation. ANP and reduced aldosterone would promote fluid loss.",
+      "lesson": "sci-bio2-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-bio2-q028",
+      "q": "Which nephron segment reabsorbs all filtered glucose under normal conditions?",
+      "choices": [
+        "Proximal convoluted tubule",
+        "Descending loop of Henle",
+        "Distal convoluted tubule",
+        "Collecting duct"
+      ],
+      "answer": 0,
+      "why": "The proximal tubule reclaims all glucose and amino acids plus about 65 percent of sodium and water. Glucose appears in urine only when the transporters are saturated.",
+      "lesson": "sci-bio2-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-bio2-q029",
+      "q": "A toxin blocks voltage-gated sodium channels in neurons. The immediate effect is:",
+      "choices": [
+        "Continuous action potentials",
+        "Failure to depolarize and generate action potentials",
+        "A more positive resting potential",
+        "Increased neurotransmitter release"
+      ],
+      "answer": 1,
+      "why": "Sodium influx produces the rising phase of the action potential, so blocking those channels prevents firing entirely. Resting potential is maintained by the pump and potassium leak, not by these channels.",
+      "lesson": "sci-bio2-l08",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-bio2-q030",
+      "q": "A patient's parathyroid glands are accidentally removed during thyroid surgery. The expected result is:",
+      "choices": [
+        "Rising blood calcium",
+        "Rising blood glucose",
+        "Falling blood sodium",
+        "Falling blood calcium"
+      ],
+      "answer": 3,
+      "why": "PTH raises blood calcium by mobilizing bone and increasing renal reabsorption, so its loss causes hypocalcemia. Calcitonin, which lowers calcium, comes from thyroid C cells.",
+      "lesson": "sci-bio2-l08",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-bio2-q031",
+      "q": "Which describes the sympathetic response?",
+      "choices": [
+        "Pupil constriction and increased digestion",
+        "Increased heart rate, bronchodilation and decreased digestion",
+        "Decreased heart rate and increased salivation",
+        "Increased insulin and decreased glucose"
+      ],
+      "answer": 1,
+      "why": "Sympathetic activation prepares for exertion: faster heart, open airways, blood shifted from the gut. The other options describe parasympathetic rest and digest activity.",
+      "lesson": "sci-bio2-l08",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-bio2-q032",
+      "q": "Which is a feature of innate but not adaptive immunity?",
+      "choices": [
+        "Immunologic memory",
+        "Antigen-specific receptors",
+        "Immediate, nonspecific response such as inflammation",
+        "Antibody production"
+      ],
+      "answer": 2,
+      "why": "Innate immunity acts within minutes to hours against any invader and forms no memory. Specificity, memory and antibodies are hallmarks of the adaptive response.",
+      "lesson": "sci-bio2-l09",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-bio2-q033",
+      "q": "A vaccinated person re-encounters the pathogen years later and clears it in two days with high IgG levels. This demonstrates:",
+      "choices": [
+        "Passive immunity",
+        "The primary response",
+        "A secondary response driven by memory cells",
+        "Innate immunity only"
+      ],
+      "answer": 2,
+      "why": "Memory B and T cells produce a faster, larger, IgG-dominant secondary response. A primary response takes 5 to 10 days and is mostly IgM.",
+      "lesson": "sci-bio2-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-bio2-q034",
+      "q": "Which antibody class predominates in breast milk and mucosal secretions?",
+      "choices": [
+        "IgG",
+        "IgA",
+        "IgE",
+        "IgM"
+      ],
+      "answer": 1,
+      "why": "IgA guards mucosal surfaces and is passed in milk. IgG is the most abundant in serum and the only class crossing the placenta, while IgE mediates allergy.",
+      "lesson": "sci-bio2-l09",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-bio2-q035",
+      "q": "Gastrulation is significant because it:",
+      "choices": [
+        "Produces the first cell division",
+        "Establishes the three germ layers",
+        "Forms the blastocoel",
+        "Completes organ formation"
+      ],
+      "answer": 1,
+      "why": "Gastrulation rearranges the blastula into ectoderm, mesoderm and endoderm, committing cells to broad fates. Organogenesis follows it, and the blastocoel forms earlier during cleavage.",
+      "lesson": "sci-bio2-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-bio2-q036",
+      "q": "A population grows rapidly, then levels off as food becomes scarce. The growth model and the limiting factor are:",
+      "choices": [
+        "Exponential growth, density-independent factor",
+        "Logistic growth, density-dependent factor",
+        "Logistic growth, density-independent factor",
+        "Exponential growth, density-dependent factor"
+      ],
+      "answer": 1,
+      "why": "Leveling at carrying capacity describes logistic growth, and competition for food intensifies with crowding, making it density-dependent. Density-independent factors such as floods act regardless of population size.",
+      "lesson": "sci-bio2-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-bio2-q037",
+      "q": "A grassland produces 20,000 kcal of plant biomass. Roughly how much is available to secondary consumers?",
+      "choices": [
+        "20,000 kcal",
+        "2,000 kcal",
+        "200 kcal",
+        "20 kcal"
+      ],
+      "answer": 2,
+      "why": "About 10 percent transfers per level: 2,000 kcal to primary consumers and 200 kcal to secondary consumers. Forgetting one step gives 2,000 and forgetting the rule entirely gives 20,000.",
+      "lesson": "sci-bio2-l10",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-bio2-q038",
+      "q": "Which process converts atmospheric nitrogen gas into a form plants can use?",
+      "choices": [
+        "Denitrification",
+        "Nitrogen fixation by bacteria",
+        "Nitrification of nitrate to ammonia",
+        "Photosynthesis"
+      ],
+      "answer": 1,
+      "why": "Only nitrogen-fixing bacteria convert N2 to ammonia, which plants can assimilate. Denitrification returns nitrogen to the air and nitrification runs ammonia to nitrite to nitrate.",
+      "lesson": "sci-bio2-l10",
+      "difficulty": 2
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "sci-bio2-s01",
+      "title": "Problem set: a Hardy-Weinberg calculation done correctly",
+      "setting": "classroom",
+      "intro": "Your evolution unit problem set gives you a single dataset and asks six questions from it. A town of `40,000` people is screened for an autosomal recessive metabolic disorder. `100` people are affected. Assume Hardy-Weinberg equilibrium unless told otherwise. Work in order and keep your notation straight: `p` is the dominant allele, `q` the recessive.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "Question one asks for the frequency of the recessive allele. What is your first move and what do you get?",
+          "choices": [
+            {
+              "text": "Set `q^2 = 100/40,000 = 0.0025`, then `q = 0.05`",
+              "next": "s2",
+              "feedback": "Correct. The affected phenotype is the homozygous recessive genotype, so it gives you q squared directly, and the square root gives q.",
+              "score": 1
+            },
+            {
+              "text": "Set `q = 100/40,000 = 0.0025`",
+              "next": "s2",
+              "feedback": "That is the genotype frequency, not the allele frequency. You must take the square root to convert q squared into q.",
+              "score": -1
+            },
+            {
+              "text": "Set `2pq = 100/40,000` and solve for q",
+              "next": "s2",
+              "feedback": "2pq is the heterozygote frequency, and heterozygotes are unaffected in a recessive disorder, so they are not the 100 people counted.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "Question two asks for the number of carriers in the town. Compute it.",
+          "choices": [
+            {
+              "text": "`p = 0.95`, `2pq = 2(0.95)(0.05) = 0.095`, so about `3,800` carriers",
+              "next": "s3",
+              "feedback": "Right. Roughly 9.5 percent of the town carries one copy, far more than the 100 affected. That gap is exactly why recessive alleles persist.",
+              "score": 1
+            },
+            {
+              "text": "`2pq = 0.0475`, so about `1,900` carriers",
+              "next": "s3",
+              "feedback": "You dropped the factor of 2. The heterozygote term is 2pq, not pq, and forgetting it is the single most common error on these problems.",
+              "score": 0
+            },
+            {
+              "text": "Carriers equal the affected number, `100`",
+              "next": "s3",
+              "feedback": "Carriers are heterozygotes and are unaffected, so they are a separate and much larger group than the homozygous recessive individuals.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "Question three: what fraction of the unaffected population carries the allele? Note carefully what the denominator should be.",
+          "choices": [
+            {
+              "text": "`0.095 / (1 - 0.0025) = 0.0952`, about `9.5%` of unaffected people",
+              "next": "s4",
+              "feedback": "Correct, and you caught the denominator change. The question asked about unaffected people, so affected individuals must be removed from the base.",
+              "score": 1
+            },
+            {
+              "text": "`9.5%`, using the whole population as the denominator",
+              "next": "s4",
+              "feedback": "The number rounds to nearly the same here because affected individuals are rare, but the method is wrong. When the disorder is common, the two answers diverge sharply.",
+              "score": 0
+            },
+            {
+              "text": "`0.05`, since q is the carrier frequency",
+              "next": "s4",
+              "feedback": "q is an allele frequency, not a genotype frequency. Carriers are counted by 2pq.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "Question four: two randomly chosen unaffected people from this town have a child. What is the probability the child is affected?",
+          "choices": [
+            {
+              "text": "`0.095 x 0.095 x 1/4`, about `0.0023`",
+              "next": "s5",
+              "feedback": "Correct chain of reasoning. Both parents must be carriers, and two carriers have a 1 in 4 chance per pregnancy. Multiply independent probabilities.",
+              "score": 1
+            },
+            {
+              "text": "`1/4`, because that is the risk for two carriers",
+              "next": "s5",
+              "feedback": "That is the conditional risk once you know both parents are carriers. Here carrier status itself is uncertain, so you must include both 0.095 terms.",
+              "score": 0
+            },
+            {
+              "text": "`0.0025`, the population prevalence, since nothing is known about the parents",
+              "next": "s5",
+              "feedback": "Something is known: both parents are unaffected, which slightly changes their carrier probability. Reason from parental genotypes rather than quoting prevalence.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "Question five changes the situation. A follow-up study finds the observed number of affected individuals is `300`, not `100`, and mating in the town is strongly non-random. Which Hardy-Weinberg condition has been violated, and what does the discrepancy tell you?",
+          "choices": [
+            {
+              "text": "Random mating is violated, and the deviation from predicted genotype frequencies is evidence the population is not at equilibrium",
+              "next": "s6",
+              "feedback": "Correct. Non-random mating, especially inbreeding, raises homozygosity without changing allele frequencies. Deviation from the predicted proportions is the whole diagnostic value of the equation.",
+              "score": 1
+            },
+            {
+              "text": "Mutation rate is too high, which explains the excess of affected individuals",
+              "next": "s6",
+              "feedback": "Mutation rates are far too low to triple a genotype frequency in a generation. The question explicitly names non-random mating as the changed condition.",
+              "score": 0
+            },
+            {
+              "text": "The equation is wrong and should not be used for human populations",
+              "next": "s6",
+              "feedback": "The equation is a null model, not a claim about reality. It is most useful precisely when observations deviate from it.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "prompt": "Last question: the disorder is lethal in childhood, yet the allele has persisted for centuries at this frequency. Your instructor asks for the two most plausible explanations.",
+          "choices": [
+            {
+              "text": "Most copies are hidden in unaffected heterozygotes, and heterozygote advantage may actively maintain the allele",
+              "next": "end",
+              "feedback": "Both are correct and both are tested. Selection reaches only the rare homozygotes, and a heterozygote fitness benefit, as with sickle cell and malaria, can hold an allele steady indefinitely.",
+              "score": 1
+            },
+            {
+              "text": "Gene flow from other towns constantly reintroduces the allele",
+              "next": "end",
+              "feedback": "Possible as a contributor, but it does not explain long-term global persistence of a lethal allele. The heterozygote reservoir is the primary mechanism.",
+              "score": 0
+            },
+            {
+              "text": "Natural selection cannot act on recessive alleles at all",
+              "next": "end",
+              "feedback": "Selection does act on them, just inefficiently, because only the homozygous recessive phenotype is exposed. Frequency falls, only very slowly.",
+              "score": -1
+            }
+          ]
+        }
+      ],
+      "debrief": "The method here transfers to every population genetics question. Start from the recessive phenotype to get `q^2`, take the square root for `q`, subtract for `p`, and use `2pq` for carriers with the factor of 2 intact. Always check what the denominator of the question is: whole population, unaffected only, or dominant phenotype only. When observed genotype numbers do not match the prediction, that is not a failure of the equation; it is the signal that one of the five conditions is broken and evolution is happening. And remember why a harmful recessive allele lingers: most copies hide in heterozygotes, and heterozygote advantage can actively preserve it."
+    },
+    {
+      "id": "sci-bio2-s02",
+      "title": "Case walkthrough: reading a lab panel by system",
+      "setting": "classroom",
+      "intro": "Your physiology unit ends with a reasoning exercise rather than a quiz. The instructor puts a simplified lab panel on the board for a hypothetical patient and asks the class to explain each abnormal value using only Biology II mechanisms: sodium `128`, potassium `5.8`, glucose `310`, bicarbonate `14`, creatinine elevated, urine output low and urine highly concentrated. No diagnosis is required. The question is always the same: which homeostatic loop explains this number?",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "Start with the glucose of `310`. Which hormonal relationship is being described, and in which direction has it failed?",
+          "vitals": {
+            "hr": 112,
+            "bp": "96/58",
+            "rr": 26
+          },
+          "choices": [
+            {
+              "text": "Insulin is insufficient or ineffective, so glucose is not driven into cells and glucagon's effects go unopposed",
+              "next": "s2",
+              "feedback": "Correct. Insulin and glucagon are the antagonistic pair that holds glucose in range. Losing insulin action leaves hepatic glucose output unchecked.",
+              "score": 1
+            },
+            {
+              "text": "Glucagon is deficient, so glucose accumulated in the blood",
+              "next": "s2",
+              "feedback": "Backwards. Glucagon raises blood glucose, so a deficiency would cause hypoglycemia, not hyperglycemia.",
+              "score": -1
+            },
+            {
+              "text": "The kidney is producing glucose because of low filtration",
+              "next": "s2",
+              "feedback": "The kidney can perform gluconeogenesis but is not the driver here. The endocrine loop controlling glucose is the one being tested.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "The bicarbonate is `14` and the respiratory rate is `26`. Connect those two numbers using gas exchange and buffering.",
+          "choices": [
+            {
+              "text": "A metabolic acid load consumed bicarbonate, and fast deep breathing blows off `CO2` to compensate",
+              "next": "s3",
+              "feedback": "Exactly. The bicarbonate buffer system pairs a weak acid with its conjugate base, and the respiratory system adjusts the carbon dioxide side within minutes.",
+              "score": 1
+            },
+            {
+              "text": "The fast breathing caused the low bicarbonate",
+              "next": "s3",
+              "feedback": "The direction is reversed. Hyperventilation lowers CO2, which raises pH; here the low bicarbonate came first and breathing is the compensation.",
+              "score": 0
+            },
+            {
+              "text": "Low bicarbonate means the patient is alkalotic",
+              "next": "s3",
+              "feedback": "Bicarbonate is the base in the buffer pair, so losing it drives pH down, not up. Keep track of which member of the pair each value represents.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "Urine output is low and urine is highly concentrated, and blood pressure is `96/58`. Which renal and hormonal mechanisms produce that combination?",
+          "choices": [
+            {
+              "text": "Low volume triggers renin-angiotensin-aldosterone and ADH release, so sodium and water are reabsorbed and urine concentrates",
+              "next": "s4",
+              "feedback": "Correct and complete. ADH inserts aquaporins in the collecting duct and aldosterone drives sodium reabsorption, with water following osmotically.",
+              "score": 1
+            },
+            {
+              "text": "Atrial natriuretic peptide is high, concentrating the urine",
+              "next": "s4",
+              "feedback": "ANP does the opposite. It is released when the atria are stretched by volume overload and it promotes sodium and water excretion.",
+              "score": 0
+            },
+            {
+              "text": "The loop of Henle has stopped working, which is why urine is concentrated",
+              "next": "s4",
+              "feedback": "A failing loop would make urine less concentrated, not more, because the medullary gradient would be lost.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "Potassium is `5.8`, which is high, even though total body potassium may actually be low. Which membrane-level concept explains that apparent contradiction?",
+          "choices": [
+            {
+              "text": "Acidosis and lack of insulin shift potassium out of cells into plasma, so the measured serum value does not reflect total stores",
+              "next": "s5",
+              "feedback": "Right. Insulin normally drives potassium into cells alongside glucose, and hydrogen ions exchange with intracellular potassium in acidosis. Compartment shifts are not the same as total body content.",
+              "score": 1
+            },
+            {
+              "text": "The sodium-potassium pump is pumping potassium out of cells",
+              "next": "s5",
+              "feedback": "The pump moves potassium into cells, 2 K+ in for 3 Na+ out. The shift here is driven by acidosis and insulin absence, not a reversed pump.",
+              "score": -1
+            },
+            {
+              "text": "The kidney is retaining potassium because of aldosterone",
+              "next": "s5",
+              "feedback": "Aldosterone increases potassium excretion while retaining sodium, so it would push the value down rather than up.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "Final question from the instructor: what single organizing idea from this semester ties every one of these abnormal values together?",
+          "choices": [
+            {
+              "text": "Each value is a homeostatic negative feedback loop described from the failure side",
+              "next": "end",
+              "feedback": "That is the intended answer. Physiology and pathophysiology are the same content viewed from opposite directions, which is why mastering the normal loops makes the abnormal readable.",
+              "score": 1
+            },
+            {
+              "text": "Each value is an independent problem requiring separate memorization",
+              "next": "end",
+              "feedback": "Treating labs as isolated facts is what makes physiology feel impossible. The loops connect them, and exams reward seeing those connections.",
+              "score": -1
+            },
+            {
+              "text": "They all reflect problems with cell membrane transport",
+              "next": "end",
+              "feedback": "Transport is involved in several of them, but it does not explain the hormonal loops or the buffer chemistry. The broader organizing idea is homeostasis.",
+              "score": 0
+            }
+          ]
+        }
+      ],
+      "debrief": "The transferable habit: read every abnormal number as a broken feedback loop and name the receptor, control center and effector. Glucose is the insulin-glucagon pair. Bicarbonate is the buffer system with respiratory compensation through carbon dioxide. Urine concentration is ADH and the renin-angiotensin-aldosterone system acting on the nephron. Potassium is a compartment shift driven by acid-base status and insulin, which is why a serum value is not a total-body measurement. Every one of these is a Biology II mechanism, and every one reappears in physiology, on the PA-CAT, and in the first semester of PA school with more detail but the same logic."
+    }
+  ]
+}

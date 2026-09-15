@@ -630,7 +630,7 @@
     { id: 'degree', title: 'Bachelor\'s degree and prerequisites', when: 'In parallel, 2–4 years', text: 'Nearly every PA program requires a completed bachelor\'s. Prerequisites can be folded into it. Do this while working, not instead of working.', tasks: [
       ['deg-transcripts', 'Pull transcripts from every prior school', 'Prior credits transfer more often than people expect.'],
       ['deg-plan', 'Pick a degree path that contains the PA prereqs', 'Health sciences or biology at a state school or online. Community college for the early science courses is the cheap route.'],
-      ['deg-prereqs', 'Complete the core prerequisites', 'A&P I and II with lab, microbiology with lab, general chemistry I and II, organic or biochemistry, statistics, psychology, medical terminology.'],
+      ['deg-prereqs', 'Complete the core prerequisites', 'A&P I and II with lab, microbiology with lab, general chemistry I and II, organic or biochemistry, statistics, psychology, medical terminology. The Prerequisites track here teaches each course in syllabus order; run it alongside the class.'],
       ['deg-gpa', 'Keep the science GPA at 3.5 or better', 'Programs compute it separately. An upward trend matters.'],
       ['deg-prepa', 'Finish the Pre-PA track here', 'A&P, pharm, patho, labs, ECG reading, peds and geri, clinical reasoning. Use it as the study layer under the courses.'],
       ['deg-done', 'Graduate', ''] ] },

@@ -1,0 +1,1629 @@
+{
+  "schema": 1,
+  "id": "sci-stats",
+  "track": "prereq",
+  "title": "Statistics",
+  "short": "Statistics",
+  "summary": "The introductory statistics course PA programs require, taught in syllabus order with every formula worked by hand on real numbers, and every topic tied to clinical trials, diagnostic testing and reading a journal article.",
+  "lessons": [
+    {
+      "id": "sci-stats-l01",
+      "title": "Data types and study design",
+      "minutes": 7,
+      "body": "Statistics starts with two questions: what kind of data do you have, and how did you get it. Answer those wrong and every calculation after is meaningless.\n\n## Two kinds of variables\n\n**Categorical** (qualitative) data puts each subject in a bucket: blood type, sex, survived or died, drug or placebo. You count the buckets. **Quantitative** data is a number you can do arithmetic on: systolic pressure, age, white cell count. Quantitative splits into *discrete* (countable whole things, like number of ED visits) and *continuous* (any value in a range, like serum sodium).\n\n## Levels of measurement\n\n- **Nominal** — named categories, no order. Blood type, hospital unit.\n- **Ordinal** — ordered categories, unequal gaps. Pain `0` to `10`, cancer stage I to IV.\n- **Interval** — real numbers, equal gaps, no true zero. Temperature in Celsius.\n- **Ratio** — equal gaps and a true zero, so ratios mean something. Weight, blood pressure, time.\n\nA true zero is what lets you say \"twice as much.\" `40 kg` is twice `20 kg`. `40 C` is not twice as hot as `20 C`.\n\n## Observational versus experimental\n\nIn an **observational study** you watch and record. In an **experiment** you assign the treatment yourself. Only the experiment can establish cause, because only the experiment controls what happens.\n\nThe reason is **confounding**: a third variable tied to both the exposure and the outcome. Coffee drinkers get more lung cancer, but coffee drinkers also smoke more. Smoking is the confounder.\n\n> **Key:** Observational studies show association. Randomized experiments show causation. That one sentence is worth points on every exam.\n\n## Sampling\n\nA **population** is everyone you care about; a **sample** is who you measured. Good sampling methods:\n\n- **Simple random** — every subject equally likely, drawn by chance.\n- **Stratified** — split the population into groups (strata) then randomly sample inside each, guaranteeing representation.\n- **Cluster** — randomly pick whole groups (clinics, blocks) and take everyone inside.\n- **Systematic** — take every k-th subject from a list.\n- **Convenience** — whoever is handy. Cheap and biased.\n\n## Bias\n\n**Selection bias** comes from who ends up in the sample. **Recall bias** comes from patients with disease remembering exposures better than healthy controls. **Nonresponse bias** comes from who declines. Bias is not fixed by a bigger sample; a bigger biased sample is just a more precise wrong answer.\n\n**Randomization** spreads confounders evenly between groups, including the ones nobody thought of. **Blinding** stops expectation from changing the outcome: single-blind hides the assignment from the patient, double-blind hides it from the patient and the investigator too.\n\n## The three study designs you must name\n\n- **Cohort** — start with exposure, follow forward to outcome. Gives incidence and relative risk.\n- **Case-control** — start with the outcome, look backward at exposure. Good for rare diseases, gives an odds ratio, vulnerable to recall bias.\n- **Randomized controlled trial (RCT)** — assign treatment by chance, follow forward. Highest evidence for a treatment effect.\n\n> **Trap:** A large, careful, expensive observational study is still observational. Size never upgrades it to causal evidence.",
+      "keyPoints": [
+        "Categorical data is counted in buckets; quantitative data is measured and can be averaged.",
+        "Nominal, ordinal, interval, ratio — ratio is the only level with a true zero.",
+        "Randomized experiments support causation; observational studies support association only.",
+        "Randomization balances confounders; blinding removes expectation effects.",
+        "Cohort goes exposure to outcome; case-control goes outcome back to exposure."
+      ],
+      "checks": [
+        {
+          "q": "A researcher records each patient's triage acuity level, 1 through 5. What level of measurement is that?",
+          "choices": [
+            "Nominal",
+            "Ordinal",
+            "Interval",
+            "Ratio"
+          ],
+          "answer": 1,
+          "why": "The levels are ordered but the gap from 1 to 2 is not the same clinical distance as 4 to 5, and there is no true zero, so it is ordinal."
+        },
+        {
+          "q": "Patients with a new cancer diagnosis are asked to recall their pesticide exposure over the last 20 years, and compared with healthy controls. Which bias is the biggest threat?",
+          "choices": [
+            "Recall bias",
+            "Nonresponse bias",
+            "Publication bias",
+            "Confounding by age"
+          ],
+          "answer": 0,
+          "why": "This is a case-control design based on memory, and people who are sick search their past harder for causes than healthy controls do. That is recall bias by definition."
+        },
+        {
+          "q": "Why does randomly assigning treatment protect against confounding?",
+          "choices": [
+            "It increases the sample size",
+            "It removes measurement error",
+            "It spreads both known and unknown confounders evenly across groups",
+            "It guarantees the sample matches the population"
+          ],
+          "answer": 2,
+          "why": "Chance assignment tends to balance every background variable between arms, including confounders nobody measured or thought of. It does not change sample size or measurement accuracy."
+        }
+      ]
+    },
+    {
+      "id": "sci-stats-l02",
+      "title": "Descriptive statistics: center, spread and shape",
+      "minutes": 8,
+      "body": "Before any test, you describe the data with three things: where it sits (center), how spread out it is (variability), and what shape it has.\n\n## Measures of center\n\n- **Mean** — add and divide. Uses every value, so a single extreme value drags it.\n- **Median** — the middle value once sorted. Half above, half below. Extreme values cannot move it far.\n- **Mode** — the most frequent value. The only center that works for nominal data.\n\n## A worked data set\n\nSeven ED patients wait these many minutes: `12, 15, 18, 20, 22, 25, 60`.\n\n1. Sum the values: `12 + 15 + 18 + 20 + 22 + 25 + 60 = 172`.\n2. Mean = `172 / 7 = 24.6` minutes.\n3. Sorted already, `n = 7`, so the median is the 4th value: `20` minutes.\n4. Range = `60 - 12 = 48` minutes.\n\nThe mean is bigger than the median because of that one 60-minute wait. That gap is the fingerprint of right skew.\n\n## Variance and standard deviation by hand\n\nUse a smaller set: `4, 8, 6, 5, 7` (a sample, so divide by `n - 1`).\n\n1. Mean: `(4 + 8 + 6 + 5 + 7) / 5 = 30 / 5 = 6`.\n2. Deviations from the mean: `-2, 2, 0, -1, 1`.\n3. Square each: `4, 4, 0, 1, 1`.\n4. Sum of squares: `4 + 4 + 0 + 1 + 1 = 10`.\n5. Sample variance: `s^2 = 10 / (5 - 1) = 10 / 4 = 2.5`.\n6. Sample standard deviation: `s = sqrt(2.5) = 1.58`.\n\nDeviations are squared because they would otherwise sum to exactly zero. The standard deviation is in the original units — `1.58` of whatever you measured — which is why it gets reported instead of variance.\n\n> **Key:** Divide by `n - 1` for a sample, by `N` for a whole population. Journals and calculators default to the sample version.\n\n## Quartiles, IQR and outliers\n\nQuartiles cut the sorted data into four parts. Using the wait times `12, 15, 18, 20, 22, 25, 60`:\n\n1. Median (Q2) = `20`.\n2. Lower half is `12, 15, 18`, so Q1 = `15`.\n3. Upper half is `22, 25, 60`, so Q3 = `25`.\n4. IQR = `Q3 - Q1 = 25 - 15 = 10`.\n5. Fences: `Q1 - 1.5 x IQR = 15 - 15 = 0` and `Q3 + 1.5 x IQR = 25 + 15 = 40`.\n6. `60` sits above `40`, so 60 minutes is an outlier.\n\nThe **five-number summary** is minimum, Q1, median, Q3, maximum: `12, 15, 20, 25, 60`. A **boxplot** draws the box from Q1 to Q3 with a line at the median, whiskers out to the furthest non-outlier point, and dots for outliers.\n\n## Shape\n\n**Right-skewed** (positive skew) data has a long tail of high values, so mean is greater than median — hospital charges, length of stay, wait times. **Left-skewed** pulls the other way. **Symmetric** data has mean about equal to median.\n\n> **Trap:** Report the median and IQR for skewed data, the mean and standard deviation for roughly symmetric data. Reporting mean income or mean hospital bill is how a number gets made useless.",
+      "keyPoints": [
+        "Mean uses every value and follows outliers; median is resistant and belongs to skewed data.",
+        "Sample variance divides the sum of squared deviations by n - 1; sd is its square root.",
+        "IQR = Q3 - Q1, and outliers sit beyond Q1 - 1.5 x IQR or Q3 + 1.5 x IQR.",
+        "Five-number summary: minimum, Q1, median, Q3, maximum — that is what a boxplot draws.",
+        "Mean greater than median means right skew, the usual shape for cost and length-of-stay data."
+      ],
+      "checks": [
+        {
+          "q": "For the sample 4, 8, 6, 5, 7 the sum of squared deviations is 10. What is the sample standard deviation?",
+          "choices": [
+            "1.41",
+            "1.58",
+            "2.00",
+            "2.50"
+          ],
+          "answer": 1,
+          "why": "Sample variance is 10 / (5 - 1) = 2.5, and sqrt(2.5) = 1.58. Dividing by 5 instead of 4 gives the population value 1.41, which is the classic wrong answer."
+        },
+        {
+          "q": "Q1 = 15 and Q3 = 25. Which value would be flagged as an outlier by the 1.5 x IQR rule?",
+          "choices": [
+            "2",
+            "12",
+            "38",
+            "41"
+          ],
+          "answer": 3,
+          "why": "IQR is 10, so the fences are 15 - 15 = 0 and 25 + 15 = 40. Only 41 falls outside; 38 is inside the upper fence and 2 and 12 are above the lower fence of 0."
+        },
+        {
+          "q": "Hospital charges for a procedure have a mean of 24,000 dollars and a median of 14,000 dollars. Which should the paper report as the typical charge?",
+          "choices": [
+            "The median, because the data are right-skewed",
+            "The mean, because it uses all the data",
+            "The mode, because charges repeat",
+            "Either one, they describe the same thing"
+          ],
+          "answer": 0,
+          "why": "Mean far above median signals right skew from a few enormous bills, and the mean is dragged by them. The median is resistant and represents the typical patient; the mode is not meaningful for continuous charges."
+        }
+      ]
+    },
+    {
+      "id": "sci-stats-l03",
+      "title": "Probability rules and Bayes on a diagnostic test",
+      "minutes": 9,
+      "body": "Probability is the language every test result speaks. A probability runs from `0` to `1`, and the **sample space** is the list of everything that could happen.\n\n## The core rules\n\n- **Complement**: `P(not A) = 1 - P(A)`. If a drug works 70 percent of the time, it fails 30 percent.\n- **Addition (or)**: `P(A or B) = P(A) + P(B) - P(A and B)`. Subtract the overlap so it is not counted twice. If the events cannot both happen (mutually exclusive), the overlap is `0`.\n- **Multiplication (and)**: `P(A and B) = P(A) x P(B given A)`. If A and B are **independent**, `P(B given A) = P(B)`, so it collapses to `P(A) x P(B)`.\n- **Conditional**: `P(A given B) = P(A and B) / P(B)`. You have restricted the world to the cases where B happened.\n\nIndependence means knowing one event tells you nothing about the other. Two coin flips are independent. Two blood pressures from the same patient are not.\n\n## The definitions that matter clinically\n\n- **Prevalence** — how common the disease is in the group being tested. This is the prior probability.\n- **Sensitivity** — `P(test positive given disease)`. A sensitive test catches the sick.\n- **Specificity** — `P(test negative given no disease)`. A specific test clears the well.\n- **Positive predictive value (PPV)** — `P(disease given test positive)`. This is what the patient actually wants to know.\n\nSensitivity and PPV are opposite conditionals. Swapping them is the single most common error in clinical probability.\n\n> **Trap:** \"The test is 99 percent accurate, so my positive result means I am 99 percent likely to be sick\" is false whenever the disease is rare.\n\n## Bayes worked with natural frequencies\n\nA screening test has sensitivity `90%` and specificity `95%`. Disease prevalence is `1%`. A patient tests positive. What is the probability he has the disease?\n\nBuild the table out of `10,000` people instead of fighting the formula.\n\n1. Diseased: `1% of 10,000 = 100`. Healthy: `9,900`.\n2. True positives: `90% of 100 = 90`.\n3. False negatives: `100 - 90 = 10`.\n4. False positives: `5% of 9,900 = 495`.\n5. True negatives: `9,900 - 495 = 9,405`.\n6. Total positives: `90 + 495 = 585`.\n7. PPV = `90 / 585 = 0.154`, about `15%`.\n\n| | Disease | No disease | Total |\n|---|---|---|---|\n| Test positive | 90 | 495 | 585 |\n| Test negative | 10 | 9,405 | 9,415 |\n| Total | 100 | 9,900 | 10,000 |\n\nA positive result on a very good test still leaves an `85%` chance this patient is healthy, because the healthy group is so much larger that its small error rate produces more false positives than the disease produces true ones.\n\nThe same answer in formula form is Bayes' theorem:\n\n`P(D given +) = P(+ given D) x P(D) / [ P(+ given D) x P(D) + P(+ given no D) x P(no D) ]`\n\nwhich is `(0.90 x 0.01) / (0.90 x 0.01 + 0.05 x 0.99) = 0.009 / 0.0585 = 0.154`. Identical, just harder to hold in your head.\n\n> **Key:** Build a 2x2 table of natural frequencies out of 1,000 or 10,000 people. Every sensitivity, specificity and predictive value problem becomes arithmetic.",
+      "keyPoints": [
+        "Addition rule subtracts the overlap; multiplication rule multiplies, using a conditional unless events are independent.",
+        "Sensitivity is P(positive given disease); PPV is P(disease given positive) — never interchangeable.",
+        "Bayes updates prevalence (prior) with test performance to give the posterior probability.",
+        "A 2x2 natural-frequency table out of 10,000 people replaces the Bayes formula entirely.",
+        "At 1 percent prevalence, a 90/95 test gives a PPV of only about 15 percent."
+      ],
+      "checks": [
+        {
+          "q": "In a 2x2 table, 90 people test positive and have disease while 495 test positive without it. What is the PPV?",
+          "choices": [
+            "90 percent",
+            "15 percent",
+            "85 percent",
+            "5 percent"
+          ],
+          "answer": 1,
+          "why": "PPV is true positives over all positives: 90 / 585 = 0.154. The 90 percent is sensitivity and the 5 percent is the false-positive rate, both tempting but different conditionals."
+        },
+        {
+          "q": "Two events A and B are independent, with P(A) = 0.2 and P(B) = 0.5. What is P(A and B)?",
+          "choices": [
+            "0.10",
+            "0.30",
+            "0.70",
+            "0.60"
+          ],
+          "answer": 0,
+          "why": "Independence lets you multiply directly: 0.2 x 0.5 = 0.10. Adding gives 0.7, which is the or-rule for mutually exclusive events, not the and-rule."
+        },
+        {
+          "q": "Why does the PPV of a fixed test fall when it is used in a low-prevalence population?",
+          "choices": [
+            "Sensitivity drops in healthy people",
+            "The large healthy group generates more false positives than the small diseased group generates true positives",
+            "Specificity drops as the sample grows",
+            "The test becomes less accurate over time"
+          ],
+          "answer": 1,
+          "why": "Sensitivity and specificity are properties of the test and do not change with prevalence. What changes is the size of the pools they act on, so false positives swamp true positives when disease is rare."
+        }
+      ]
+    },
+    {
+      "id": "sci-stats-l04",
+      "title": "Discrete distributions: binomial and Poisson",
+      "minutes": 8,
+      "body": "A **random variable** is a number produced by a chance process. Discrete random variables take countable values: how many patients of 20 respond to a drug, how many ambulances arrive in an hour.\n\n## Expected value\n\nThe expected value is the long-run average, a weighted mean of the outcomes:\n\n`E(X) = sum of (each value x its probability)`\n\nA procedure costs `500` dollars and succeeds `80%` of the time; a failure costs another `2,000` dollars to redo. Expected extra cost:\n\n1. Outcomes and probabilities: extra cost `0` with probability `0.80`, extra cost `2000` with probability `0.20`.\n2. `E(X) = (0 x 0.80) + (2000 x 0.20) = 400` dollars.\n\nThe expected value need not be a possible outcome. A family cannot have `2.4` children and a patient cannot have `0.4` of a redo.\n\n## The binomial distribution\n\nUse the binomial when four conditions hold, remembered as **BINS**: a fixed number of trials (**n**), each **i**ndependent, each with only two outcomes, and the same probability of success **p** every time.\n\n`P(X = k) = C(n, k) x p^k x (1 - p)^(n - k)`\n\nwhere `C(n, k) = n! / (k! x (n - k)!)` counts the arrangements.\n\nA drug relieves migraine in `p = 0.6` of patients. In `n = 5` patients, what is the probability exactly 3 improve?\n\n1. `C(5, 3) = 5! / (3! x 2!) = 120 / (6 x 2) = 10`.\n2. `p^k = 0.6^3 = 0.216`.\n3. `(1 - p)^(n - k) = 0.4^2 = 0.16`.\n4. Multiply: `10 x 0.216 x 0.16 = 0.3456`.\n\nSo about `34.6%` of the time exactly 3 of 5 improve.\n\nThe shortcuts for center and spread:\n\n- Mean: `mu = n x p = 5 x 0.6 = 3` patients.\n- Standard deviation: `sigma = sqrt(n x p x (1 - p)) = sqrt(5 x 0.6 x 0.4) = sqrt(1.2) = 1.10` patients.\n\n> **Key:** Binomial counts successes out of a fixed number of tries. If there is no fixed n, it is not binomial.\n\n## The Poisson distribution\n\nUse Poisson for counts of events in a fixed window of time or space when there is no fixed n and events happen independently at a steady average rate. Emergency department arrivals, seizures per month, bacterial colonies per plate.\n\n`P(X = k) = (lambda^k x e^(-lambda)) / k!`\n\nThe single parameter `lambda` is both the mean and the variance, so `sigma = sqrt(lambda)`.\n\nAn ED averages `4` chest-pain arrivals per hour. What is the probability of exactly `2` in the next hour?\n\n1. `lambda = 4`, `k = 2`.\n2. `lambda^k = 4^2 = 16`.\n3. `e^(-4) = 0.0183`.\n4. `k! = 2! = 2`.\n5. `P(X = 2) = (16 x 0.0183) / 2 = 0.2928 / 2 = 0.1465`.\n\nAbout `14.7%` of hours bring exactly two. Note the spread: `sigma = sqrt(4) = 2` arrivals, so hours ranging from 2 to 6 arrivals are routine, not a staffing crisis.\n\n> **Trap:** Rescale lambda to the window you are asked about. If the rate is 4 per hour and the question asks about 30 minutes, lambda becomes 2, not 4.",
+      "keyPoints": [
+        "Expected value is the probability-weighted average and need not be an achievable outcome.",
+        "Binomial needs fixed n, independence, two outcomes, constant p — mean np, sd sqrt(np(1-p)).",
+        "The binomial coefficient C(n, k) counts the orders in which k successes can occur.",
+        "Poisson counts events per interval with one parameter lambda that is both mean and variance.",
+        "Rescale lambda whenever the time window in the question changes."
+      ],
+      "checks": [
+        {
+          "q": "In 5 patients with p = 0.6 of response, what are the mean and standard deviation of the number who respond?",
+          "choices": [
+            "Mean 3, sd 1.10",
+            "Mean 3, sd 1.20",
+            "Mean 2.4, sd 1.10",
+            "Mean 3, sd 2.24"
+          ],
+          "answer": 0,
+          "why": "Mean is np = 3 and sd is sqrt(np(1-p)) = sqrt(1.2) = 1.10. The 1.20 answer is the variance, not the sd, and 2.4 comes from multiplying by the wrong probability."
+        },
+        {
+          "q": "A clinic averages 6 needlesticks per year. Which distribution models the number reported next year?",
+          "choices": [
+            "Binomial",
+            "Poisson",
+            "Normal",
+            "Uniform"
+          ],
+          "answer": 1,
+          "why": "Counts of events in a fixed time window with no fixed number of trials and a steady rate is exactly Poisson. Binomial would require a fixed n of trials, which does not exist here."
+        },
+        {
+          "q": "An ED averages 4 arrivals per hour. What lambda should be used for a 15-minute window?",
+          "choices": [
+            "4",
+            "2",
+            "1",
+            "0.25"
+          ],
+          "answer": 2,
+          "why": "Fifteen minutes is one quarter of an hour, so lambda scales to 4 x 0.25 = 1. Leaving lambda at 4 overstates the window and 0.25 inverts the scaling."
+        }
+      ]
+    },
+    {
+      "id": "sci-stats-l05",
+      "title": "The normal distribution and z-scores",
+      "minutes": 8,
+      "body": "Most continuous biological measurements pile up around a center and thin out symmetrically: height, hemoglobin, birth weight, blood pressure. That bell shape is the **normal distribution**.\n\n## Density curves\n\nA density curve is a smooth curve whose total area is exactly `1`. Area under a stretch of the curve equals the proportion of the population in that range. So probability questions become area questions.\n\nA normal curve is defined by two numbers: the mean `mu` (where the peak sits) and the standard deviation `sigma` (how wide it is). It is symmetric, so mean, median and mode are the same value.\n\n## The empirical rule\n\nFor any normal distribution:\n\n- About `68%` of values fall within `1` standard deviation of the mean.\n- About `95%` fall within `2` standard deviations.\n- About `99.7%` fall within `3` standard deviations.\n\nAdult male hemoglobin is roughly `mu = 15.0` g/dL with `sigma = 1.0`. So about `68%` of men sit between `14.0` and `16.0`, and about `95%` sit between `13.0` and `17.0`. A man at `12.0` is `3` standard deviations low, in the bottom `0.15%` — that is why anemia flags.\n\n> **Key:** Reference ranges printed on lab reports are usually the middle 95 percent of healthy people. By construction, 5 percent of perfectly healthy people fall outside them.\n\n## The z-score\n\n`z = (x - mu) / sigma`\n\nA z-score answers one question: how many standard deviations from the mean is this value, and in which direction. It strips off units, so a z of `+1.5` means the same thing for cholesterol and for height.\n\n**Forward direction — value to probability.** Systolic blood pressure in a population is `mu = 120` mmHg, `sigma = 12`. What proportion of people are above `138`?\n\n1. `z = (138 - 120) / 12 = 18 / 12 = 1.50`.\n2. A standard normal table gives area to the left of `z = 1.50` as `0.9332`.\n3. Area above = `1 - 0.9332 = 0.0668`.\n4. About `6.7%` of the population exceeds `138` mmHg.\n\n**Backward direction — percentile to value.** What systolic pressure marks the 90th percentile?\n\n1. Find the z with `0.90` area to its left: `z = 1.28`.\n2. Rearrange the formula: `x = mu + z x sigma`.\n3. `x = 120 + 1.28 x 12 = 120 + 15.4 = 135.4` mmHg.\n\nSo `135` mmHg is roughly the 90th percentile of that population.\n\n**A between-two-values problem.** What proportion of people fall between `110` and `130`?\n\n1. `z1 = (110 - 120) / 12 = -0.83`, area to the left `0.2033`.\n2. `z2 = (130 - 120) / 12 = 0.83`, area to the left `0.7967`.\n3. Subtract: `0.7967 - 0.2033 = 0.5934`, about `59.3%`.\n\n## z-scores as a shared ruler\n\nBecause z has no units, it compares across scales. A pediatric growth chart reports weight-for-age as a z-score for exactly this reason: a z of `-2` means the same degree of unusual whether the child is 2 months or 8 years old. Bone density T-scores work the same way, with osteoporosis defined at `z` of `-2.5` or lower against a young-adult reference.\n\n> **Trap:** Standard normal tables give area to the LEFT of z by default. If the question asks \"above\", subtract from 1. Forgetting to subtract is the most common lost point in this chapter.",
+      "keyPoints": [
+        "A density curve has total area 1, so probability equals area under the curve.",
+        "z = (x - mu) / sigma converts any value to standard deviations from the mean.",
+        "Empirical rule: 68 percent within 1 sd, 95 percent within 2, 99.7 percent within 3.",
+        "Reverse the formula as x = mu + z x sigma to turn a percentile back into a value.",
+        "Standard normal tables give area to the left; subtract from 1 for an upper tail."
+      ],
+      "checks": [
+        {
+          "q": "Systolic pressure is normal with mu = 120 and sigma = 12. What is the z-score for 138 mmHg?",
+          "choices": [
+            "1.50",
+            "1.80",
+            "0.67",
+            "2.25"
+          ],
+          "answer": 0,
+          "why": "z = (138 - 120) / 12 = 1.50. The 0.67 answer comes from dividing by 18 by mistake, and 1.80 from dividing by 10."
+        },
+        {
+          "q": "Hemoglobin is normal with mu = 15.0 and sigma = 1.0 g/dL. Roughly what percent of men fall between 13.0 and 17.0?",
+          "choices": [
+            "68 percent",
+            "95 percent",
+            "99.7 percent",
+            "50 percent"
+          ],
+          "answer": 1,
+          "why": "Those bounds are exactly 2 standard deviations either side of the mean, which the empirical rule puts at about 95 percent. 68 percent would be 14.0 to 16.0."
+        },
+        {
+          "q": "For a normal distribution with mu = 120 and sigma = 12, what value marks the 90th percentile if z = 1.28?",
+          "choices": [
+            "104.6 mmHg",
+            "132.0 mmHg",
+            "135.4 mmHg",
+            "141.0 mmHg"
+          ],
+          "answer": 2,
+          "why": "x = mu + z x sigma = 120 + 1.28 x 12 = 135.4. Subtracting instead of adding gives 104.6, which would be the 10th percentile."
+        }
+      ]
+    },
+    {
+      "id": "sci-stats-l06",
+      "title": "Sampling distributions, the CLT and standard error",
+      "minutes": 8,
+      "body": "You never measure the whole population. You measure a sample, get a sample mean `xbar`, and hope it is close to the true population mean `mu`. This lesson is about how close.\n\n## The sampling distribution\n\nImagine taking a sample of `n = 25` patients, computing the mean sodium, writing it down, then doing it again with a fresh 25, thousands of times. Those sample means form their own distribution: the **sampling distribution of xbar**.\n\nIt has three properties.\n\n1. Its center is the true population mean `mu`. The sample mean is an unbiased estimator — it does not systematically run high or low.\n2. Its spread is `sigma / sqrt(n)`, which is smaller than the spread of individuals.\n3. Its shape becomes normal as `n` grows, no matter what shape the original data had.\n\nThat third property is the **central limit theorem (CLT)**, and it is the reason the rest of the course works. Lengths of stay are wildly right-skewed; the distribution of *mean* lengths of stay from samples of 40 is nearly normal. The usual working rule is that `n` of `30` or more is enough for badly skewed data, and much less is needed if the population is already roughly symmetric.\n\n> **Key:** The CLT is about the distribution of sample means, not about the data. A big sample does not make skewed individual values normal.\n\n## Standard deviation versus standard error\n\nThese answer different questions and get confused constantly.\n\n- **Standard deviation `s`** — how much individual patients differ from each other. It describes the population. It does not shrink as you collect more data; with a bigger sample you just estimate it better.\n- **Standard error `SE = s / sqrt(n)`** — how much a sample mean is likely to differ from the true mean. It describes the precision of your estimate, and it shrinks as `n` grows.\n\n## Worked example\n\nSerum sodium in a clinic population has `s = 4.0` mEq/L. You sample `n = 64` patients and get `xbar = 139.0`.\n\n1. `SE = s / sqrt(n) = 4.0 / sqrt(64)`.\n2. `sqrt(64) = 8`.\n3. `SE = 4.0 / 8 = 0.50` mEq/L.\n4. By the CLT, sample means of 64 are roughly normal around the true mean with a spread of `0.50`.\n5. So about `95%` of such sample means land within `2 x 0.50 = 1.0` mEq/L of the truth.\n\nNow quadruple the sample to `n = 256`:\n\n1. `sqrt(256) = 16`.\n2. `SE = 4.0 / 16 = 0.25` mEq/L.\n\nFour times the patients bought exactly half the error. That square-root relationship is the central economic fact of clinical research: cutting your uncertainty in half costs you four times the enrollment.\n\n## Why n matters\n\nBecause `n` sits under a square root, precision has diminishing returns. Going from 25 to 100 patients halves the SE. Going from 100 to 200 improves it by only about `29%`. This is why trials are powered deliberately rather than made as big as the budget allows, and why a huge trial can detect a real but clinically trivial difference.\n\n> **Trap:** Error bars on a figure may be standard deviation or standard error, and SE bars are always smaller. Always read the caption before judging how impressive the separation looks.",
+      "keyPoints": [
+        "The sampling distribution of xbar is centered at mu with spread SE = s / sqrt(n).",
+        "The central limit theorem makes sample means approximately normal once n is about 30, whatever the data's shape.",
+        "Standard deviation describes patient-to-patient variation; standard error describes estimate precision.",
+        "Because n is under a square root, quadrupling the sample halves the standard error.",
+        "SE error bars are always narrower than SD bars — check the figure caption."
+      ],
+      "checks": [
+        {
+          "q": "A population has s = 4.0 and you sample 64 patients. What is the standard error of the mean?",
+          "choices": [
+            "4.00",
+            "0.50",
+            "0.0625",
+            "2.00"
+          ],
+          "answer": 1,
+          "why": "SE = 4.0 / sqrt(64) = 4.0 / 8 = 0.50. Dividing by 64 instead of its square root gives 0.0625, a common slip."
+        },
+        {
+          "q": "Hospital length of stay is strongly right-skewed. What does the central limit theorem say about a sample of 50 stays?",
+          "choices": [
+            "The individual stays become normally distributed",
+            "The mean stay of the sample comes from a roughly normal sampling distribution",
+            "The skew disappears from the histogram",
+            "No inference is possible with skewed data"
+          ],
+          "answer": 1,
+          "why": "The CLT applies to the distribution of the sample mean, not to the raw values, which stay skewed no matter how many you collect. That is exactly why inference on the mean is still possible."
+        },
+        {
+          "q": "A trial with 100 patients wants to halve its standard error. How many patients does it need?",
+          "choices": [
+            "150",
+            "200",
+            "400",
+            "10,000"
+          ],
+          "answer": 2,
+          "why": "SE falls with the square root of n, so halving it requires 4 times the sample: 400 patients. Doubling to 200 only improves precision by about 29 percent."
+        }
+      ]
+    },
+    {
+      "id": "sci-stats-l07",
+      "title": "Confidence intervals for means and proportions",
+      "minutes": 8,
+      "body": "A single sample mean is a point estimate, and it is almost certainly a little wrong. A **confidence interval (CI)** puts a range around it that reflects how wrong it could plausibly be.\n\nEvery confidence interval has the same skeleton:\n\n`estimate plus or minus (critical value x standard error)`\n\nThe second piece is the **margin of error**.\n\n## CI for a mean — the t interval\n\nWhen `sigma` is unknown, which is always in practice, you estimate it with `s` and use the **t distribution** with `df = n - 1`. The t curve is bell-shaped but has fatter tails than the normal, which widens the interval to pay for the extra uncertainty in `s`. As `n` grows, t converges on z.\n\n`CI = xbar plus or minus t x (s / sqrt(n))`\n\nA trial measures diastolic pressure in `n = 25` patients after a new drug: `xbar = 82.0` mmHg, `s = 10.0`.\n\n1. `df = 25 - 1 = 24`.\n2. For `95%` confidence with `df = 24`, the critical value is `t = 2.064`.\n3. `SE = 10.0 / sqrt(25) = 10.0 / 5 = 2.00` mmHg.\n4. Margin of error = `2.064 x 2.00 = 4.13` mmHg.\n5. `CI = 82.0 plus or minus 4.13`, which is `77.9` to `86.1` mmHg.\n\n## CI for a proportion\n\n`CI = phat plus or minus z x sqrt( phat x (1 - phat) / n )`\n\nIn a trial, `36` of `200` patients on placebo had a recurrence.\n\n1. `phat = 36 / 200 = 0.18`.\n2. `phat x (1 - phat) = 0.18 x 0.82 = 0.1476`.\n3. Divide by n: `0.1476 / 200 = 0.000738`.\n4. `SE = sqrt(0.000738) = 0.0272`.\n5. For `95%` confidence, `z = 1.96`, so margin of error = `1.96 x 0.0272 = 0.0533`.\n6. `CI = 0.18 plus or minus 0.053`, which is `0.127` to `0.233`, or `12.7%` to `23.3%`.\n\n## What a CI actually means\n\nThe correct reading: if this study were repeated many times, `95%` of the intervals built this way would contain the true population value. Confidence describes the *method*, not this one interval.\n\n> **Trap:** \"There is a 95 percent probability the true mean is between 77.9 and 86.1\" is the classic wrong interpretation. The true mean is a fixed number; it is either in there or not. The randomness lives in the interval, not in the parameter.\n\n## What makes an interval wider or narrower\n\n- **Higher confidence widens it.** A `99%` interval must cast a bigger net than a `95%` one. To be more certain you must be less precise.\n- **Bigger n narrows it**, by `sqrt(n)`. Quadruple the sample, halve the margin of error.\n- **More variable data widens it**, because `s` sits in the numerator.\n\n> **Key:** A CI for a difference that includes `0`, or a CI for a ratio (risk ratio, odds ratio) that includes `1`, means the result is not statistically significant at that level.",
+      "keyPoints": [
+        "Every CI is estimate plus or minus critical value times standard error.",
+        "Means use t with df = n - 1; proportions use z with SE = sqrt(phat(1-phat)/n).",
+        "A 95 percent CI means 95 percent of intervals built this way capture the truth, not 95 percent probability for this one.",
+        "Higher confidence widens the interval; larger n narrows it by the square root of n.",
+        "A difference CI containing 0, or a ratio CI containing 1, is non-significant."
+      ],
+      "checks": [
+        {
+          "q": "With n = 25, xbar = 82.0, s = 10.0 and t = 2.064, what is the 95 percent confidence interval?",
+          "choices": [
+            "81.6 to 82.4",
+            "77.9 to 86.1",
+            "62.0 to 102.0",
+            "80.0 to 84.0"
+          ],
+          "answer": 1,
+          "why": "SE = 10/5 = 2.00 and the margin of error is 2.064 x 2.00 = 4.13, giving 77.9 to 86.1. The 62 to 102 answer wrongly uses s instead of SE."
+        },
+        {
+          "q": "A trial reports a risk ratio of 0.85 with a 95 percent CI of 0.68 to 1.06. What should you conclude?",
+          "choices": [
+            "The treatment significantly reduces risk",
+            "The result is not statistically significant at the 0.05 level",
+            "The treatment significantly increases risk",
+            "The sample was too small to compute a CI"
+          ],
+          "answer": 1,
+          "why": "The interval crosses 1, the value meaning no effect, so a true null cannot be ruled out at the 5 percent level. The point estimate looks protective but the interval is compatible with harm as well."
+        },
+        {
+          "q": "Which change would make a confidence interval narrower?",
+          "choices": [
+            "Raising confidence from 95 percent to 99 percent",
+            "Increasing the sample size",
+            "Using data with a larger standard deviation",
+            "Reporting the standard deviation instead of the standard error"
+          ],
+          "answer": 1,
+          "why": "Larger n shrinks the standard error and therefore the margin of error. Raising confidence widens the interval and more variable data widens it too."
+        }
+      ]
+    },
+    {
+      "id": "sci-stats-l08",
+      "title": "Hypothesis testing and the t-tests",
+      "minutes": 9,
+      "body": "A hypothesis test asks one question: is the result I got surprising enough, if nothing were really going on, to stop believing that nothing is going on.\n\n## The two hypotheses\n\n- **Null hypothesis (H0)** — no difference, no effect. `mu = 140`, or `mu1 = mu2`. It is the claim on trial.\n- **Alternative (Ha)** — what you suspect: a difference exists, in one direction (one-tailed) or either (two-tailed).\n\nYou never prove the null. You either reject it or fail to reject it, exactly as a jury acquits rather than declaring innocence.\n\n## Test statistic and p-value\n\nA **test statistic** measures how far your data sit from the null, in standard-error units. The **p-value** is the probability of getting a result at least this extreme *if the null were true*.\n\nSmall p means the data are a poor fit for the null. Compare it to **alpha**, the threshold set before looking, conventionally `0.05`. If p is at or below alpha, reject H0.\n\n> **Trap:** The p-value is not the probability the null is true, not the probability the result was luck, and not the size of the effect. It is P(data this extreme given H0), and nothing else.\n\n## Two ways to be wrong\n\n- **Type I error** — rejecting a true null. A false alarm. Its probability is alpha, which you choose.\n- **Type II error** — failing to reject a false null. A missed effect. Its probability is beta.\n- **Power** = `1 - beta`, the chance of finding a real effect. Power rises with larger n, larger true effect size, smaller variability, and larger alpha. Most trials target `80%` power.\n\nLowering alpha from `0.05` to `0.01` cuts false alarms but reduces power. The two errors trade against each other; only more data improves both.\n\n## The three t-tests\n\n- **One-sample t-test** — one group against a fixed reference value. `df = n - 1`.\n- **Two-sample (independent) t-test** — two separate groups, drug versus placebo. `df` is approximately `n1 + n2 - 2`.\n- **Paired t-test** — the same subjects measured twice (before and after), or matched pairs. You compute the difference for each subject and run a one-sample test on those differences, with `df = number of pairs - 1`. Pairing removes between-patient variability, which makes it far more powerful.\n\n## A fully worked one-sample t-test\n\nA clinic claims its patients average a fasting glucose of `100` mg/dL. You sample `n = 16` and find `xbar = 108`, `s = 12`. Test at `alpha = 0.05`, two-tailed.\n\n1. `H0: mu = 100`. `Ha: mu is not equal to 100`.\n2. `SE = s / sqrt(n) = 12 / sqrt(16) = 12 / 4 = 3.0`.\n3. `t = (xbar - mu0) / SE = (108 - 100) / 3.0 = 8 / 3 = 2.67`.\n4. `df = 16 - 1 = 15`.\n5. Critical value for two-tailed `alpha = 0.05` at `df = 15` is `2.131`.\n6. `2.67` is larger than `2.131`, so reject H0. The p-value is about `0.017`.\n7. Conclusion in words: mean fasting glucose is significantly higher than 100 mg/dL (p is about 0.017).\n\nNotice the effect is `8` mg/dL. Significant, and clinically almost nothing. Significance and importance are separate findings.\n\n> **Key:** Always report the effect size and its confidence interval next to the p-value. A p-value alone tells you a difference exists, not whether it matters.",
+      "keyPoints": [
+        "H0 is no effect; you reject it or fail to reject it, never prove it.",
+        "The p-value is P(data this extreme given H0), not the probability the null is true.",
+        "Type I error is a false alarm at rate alpha; type II is a miss at rate beta; power = 1 - beta.",
+        "t = (xbar - mu0) / (s / sqrt(n)); one-sample df = n - 1.",
+        "Paired t-tests analyze within-subject differences and are more powerful than two-sample tests."
+      ],
+      "checks": [
+        {
+          "q": "With xbar = 108, mu0 = 100, s = 12 and n = 16, what is the one-sample t statistic?",
+          "choices": [
+            "0.67",
+            "2.67",
+            "8.00",
+            "2.13"
+          ],
+          "answer": 1,
+          "why": "SE = 12 / 4 = 3.0, so t = 8 / 3 = 2.67. The 0.67 answer divides by s instead of SE, and 2.13 is the critical value, not the statistic."
+        },
+        {
+          "q": "A study reports p = 0.03. Which statement is correct?",
+          "choices": [
+            "There is a 3 percent chance the null hypothesis is true",
+            "If the null were true, data this extreme would occur about 3 percent of the time",
+            "The effect is large",
+            "There is a 97 percent chance the treatment works"
+          ],
+          "answer": 1,
+          "why": "The p-value is conditional on the null being true, so it describes the data, not the hypothesis. It says nothing about effect size or the probability that the treatment works."
+        },
+        {
+          "q": "Blood pressure is measured in the same 30 patients before and after 8 weeks of a drug. Which test fits?",
+          "choices": [
+            "Two-sample independent t-test",
+            "Paired t-test",
+            "Chi-square test of independence",
+            "One-sample z-test for a proportion"
+          ],
+          "answer": 1,
+          "why": "The same subjects are measured twice, so the two readings are linked and must be analyzed as within-patient differences. Treating them as independent groups wastes the pairing and loses power."
+        }
+      ]
+    },
+    {
+      "id": "sci-stats-l09",
+      "title": "Chi-square, correlation and regression",
+      "minutes": 9,
+      "body": "t-tests compare means. When the data are counts in categories, or when you want to relate two quantitative variables, you need different tools.\n\n## Chi-square: counts, not means\n\n`chi-square = sum((O - E)^2 / E)`\n\nwhere `O` is the observed count in a cell and `E` is the count expected if the null were true. Two versions:\n\n- **Goodness of fit** — one categorical variable against a claimed distribution. `df = categories - 1`.\n- **Test of independence** — two categorical variables in a contingency table. `df = (rows - 1) x (columns - 1)`.\n\nExpected counts in a contingency table come from `E = (row total x column total) / grand total`.\n\n## Worked test of independence\n\nA trial of an antiemetic, 200 patients, outcome is nausea yes or no.\n\n| | Nausea | No nausea | Row total |\n|---|---|---|---|\n| Drug | 30 | 70 | 100 |\n| Placebo | 50 | 50 | 100 |\n| Column total | 80 | 120 | 200 |\n\n1. Expected drug-nausea = `(100 x 80) / 200 = 40`. Expected drug-no = `(100 x 120) / 200 = 60`.\n2. Expected placebo-nausea = `40`, expected placebo-no = `60`.\n3. Cell contributions: `(30 - 40)^2 / 40 = 100 / 40 = 2.50`; `(70 - 60)^2 / 60 = 100 / 60 = 1.67`.\n4. Placebo cells repeat the same values: `2.50` and `1.67`.\n5. `chi-square = 2.50 + 1.67 + 2.50 + 1.67 = 8.34`.\n6. `df = (2 - 1) x (2 - 1) = 1`. Critical value at `alpha = 0.05` is `3.841`.\n7. `8.34` exceeds `3.841`, so reject independence. The drug changed the nausea rate (p is about 0.004).\n\n> **Trap:** Chi-square needs expected counts of at least 5 in nearly every cell. With tiny counts, use Fisher's exact test instead.\n\n## Correlation\n\nThe correlation coefficient `r` measures the strength and direction of a *linear* relationship between two quantitative variables. It runs from `-1` to `+1`; `0` means no linear relationship. It has no units and does not change if you switch which variable you call x.\n\n`r^2`, the coefficient of determination, is the proportion of variation in y explained by the linear relationship with x. If `r = 0.60`, then `r^2 = 0.36`, so `36%` of the variation in y is accounted for and `64%` is not.\n\n## Simple linear regression\n\nThe least-squares line is `yhat = a + b x`, where the slope and intercept are chosen to minimize the sum of squared **residuals**. A residual is `observed y - predicted y`: what the line missed for one patient.\n\n`b = r x (sy / sx)`\n\nBMI and systolic pressure in 100 adults: `r = 0.40`, `sx = 5.0` BMI units, `sy = 15.0` mmHg, mean BMI `28`, mean SBP `126`.\n\n1. Slope: `b = 0.40 x (15.0 / 5.0) = 0.40 x 3 = 1.2` mmHg per BMI unit.\n2. Intercept: `a = ybar - b x xbar = 126 - (1.2 x 28) = 126 - 33.6 = 92.4`.\n3. Line: `yhat = 92.4 + 1.2x`.\n4. Predict for BMI `32`: `92.4 + 1.2 x 32 = 92.4 + 38.4 = 130.8` mmHg.\n5. `r^2 = 0.16`, so BMI explains `16%` of blood-pressure variation.\n\nSlope in words: each one-unit rise in BMI is associated with `1.2` mmHg higher systolic pressure on average. The intercept here is meaningless — nobody has a BMI of zero.\n\n> **Key:** Correlation is not causation, and r only measures straight-line association. A perfect U-shaped relationship can give r near 0.",
+      "keyPoints": [
+        "chi-square = sum((O - E)^2 / E); independence df = (rows - 1) x (columns - 1).",
+        "Expected cell count = row total x column total / grand total; each should be at least 5.",
+        "r runs from -1 to +1 and measures linear association only; r^2 is variation explained.",
+        "Least squares minimizes squared residuals; slope b = r x (sy / sx).",
+        "Slope is the average change in y per one-unit change in x, and association is not cause."
+      ],
+      "checks": [
+        {
+          "q": "In a 2x2 table with a row total of 100, a column total of 80 and a grand total of 200, what is the expected count in that cell?",
+          "choices": [
+            "40",
+            "30",
+            "80",
+            "20"
+          ],
+          "answer": 0,
+          "why": "Expected count is row total times column total divided by grand total: 100 x 80 / 200 = 40. The 30 is an observed count, not an expected one."
+        },
+        {
+          "q": "A study reports r = 0.60 between hours of sleep and reaction time. What percent of variation is explained?",
+          "choices": [
+            "60 percent",
+            "36 percent",
+            "77 percent",
+            "6 percent"
+          ],
+          "answer": 1,
+          "why": "r^2 = 0.60^2 = 0.36, so 36 percent is explained and 64 percent is not. Reporting r itself as the explained fraction is the usual error; 77 percent is sqrt(0.6)."
+        },
+        {
+          "q": "In the regression yhat = 92.4 + 1.2x relating BMI to systolic pressure, what does the slope mean?",
+          "choices": [
+            "A BMI of 0 predicts 1.2 mmHg",
+            "Each 1-unit rise in BMI is associated with a 1.2 mmHg higher predicted pressure",
+            "BMI causes a 1.2 mmHg rise in pressure",
+            "1.2 percent of pressure variation is explained by BMI"
+          ],
+          "answer": 1,
+          "why": "Slope is the average predicted change in y per one-unit change in x, and this is observational so it is association not cause. The intercept 92.4 is the BMI-zero value, and explained variation is r^2."
+        }
+      ]
+    },
+    {
+      "id": "sci-stats-l10",
+      "title": "Medical statistics and reading the literature",
+      "minutes": 9,
+      "body": "This is the chapter that shows up in every PA interview and every journal club.\n\n## Test performance\n\nBuild the 2x2 table with disease across the top and test result down the side.\n\n- **Sensitivity** = `TP / (TP + FN)`. Of the sick, how many the test catches. A highly **Sensitive** test with a **N**egative result rules **out** disease: **SnNout**.\n- **Specificity** = `TN / (TN + FP)`. Of the well, how many the test clears. A highly **Sp**ecific test with a **P**ositive result rules **in** disease: **SpPin**.\n- **PPV** = `TP / (TP + FP)`. Of those who test positive, how many are sick.\n- **NPV** = `TN / (TN + FN)`. Of those who test negative, how many are well.\n\nSensitivity and specificity belong to the test. PPV and NPV move with **prevalence**: as prevalence rises, PPV rises and NPV falls. Same test, different clinic, different meaning.\n\n**Likelihood ratios** fold both into one number and do not move with prevalence.\n\n- `LR+ = sensitivity / (1 - specificity)`. Above `10` is a strong rule-in.\n- `LR- = (1 - sensitivity) / specificity`. Below `0.1` is a strong rule-out.\n\nWith sensitivity `0.90` and specificity `0.95`: `LR+ = 0.90 / 0.05 = 18`, `LR- = 0.10 / 0.95 = 0.105`.\n\n## Measuring treatment effect\n\nA trial: `15%` of placebo patients have a stroke, `10%` of treated patients do.\n\n1. Control event rate = `0.15`. Treatment event rate = `0.10`.\n2. **Relative risk (RR)** = `0.10 / 0.15 = 0.67`. A 33 percent relative reduction.\n3. **Absolute risk reduction (ARR)** = `0.15 - 0.10 = 0.05`, five percentage points.\n4. **Number needed to treat (NNT)** = `1 / ARR = 1 / 0.05 = 20`. Treat 20 patients to prevent one stroke.\n\nThe **odds ratio (OR)** uses odds rather than risks: `OR = (a x d) / (b x c)` from the 2x2 table. It is what case-control studies must report, since they cannot measure incidence. When the outcome is rare, OR approximates RR; when the outcome is common, OR exaggerates the effect.\n\n> **Trap:** Relative risk reduction always sounds bigger than it is. Dropping risk from 0.2 percent to 0.1 percent is a 50 percent relative reduction and an NNT of 1,000.\n\n## ANOVA\n\nUse **analysis of variance** when comparing means across three or more groups. Running three separate t-tests inflates the type I error rate to about `14%`. ANOVA gives one omnibus test.\n\nThe **F statistic** = variance between groups / variance within groups. If the groups truly share one mean, F sits near `1`. A large F means group differences exceed the noise inside groups. A significant F says at least one mean differs but not which, so it is followed by a post-hoc test such as Tukey.\n\n## Nonparametric tests\n\nWhen data are ordinal, badly skewed, or the sample is tiny, use rank-based tests instead of means. Recognize them by design:\n\n- **Mann-Whitney U** — two independent groups. The nonparametric two-sample t-test.\n- **Wilcoxon signed-rank** — paired or before-and-after data. The nonparametric paired t-test.\n- **Kruskal-Wallis** — three or more independent groups. The nonparametric ANOVA.\n\n## Reading a forest plot\n\nEach horizontal line is one study: the box is the point estimate, the box size is that study's weight, the line is the confidence interval. A vertical line of no effect stands at `1` for ratios and `0` for differences. The diamond at the bottom is the pooled result, with its width as the pooled CI. Any study whose line crosses the null line was not individually significant; a diamond that clears the line means the pooled effect is.\n\n> **Key:** NNT = 1 / ARR, and ARR is always in absolute terms. If a paper gives you only relative risk reduction, go find the absolute numbers.",
+      "keyPoints": [
+        "SnNout and SpPin: sensitive tests rule out, specific tests rule in.",
+        "Sensitivity and specificity are fixed properties; PPV rises and NPV falls as prevalence rises.",
+        "LR+ = sens / (1 - spec) and LR- = (1 - sens) / spec, both independent of prevalence.",
+        "ARR = control rate minus treated rate, and NNT = 1 / ARR.",
+        "ANOVA compares three or more means with F = between-group variance over within-group variance."
+      ],
+      "checks": [
+        {
+          "q": "Stroke risk is 15 percent on placebo and 10 percent on drug. What is the number needed to treat?",
+          "choices": [
+            "3",
+            "20",
+            "33",
+            "10"
+          ],
+          "answer": 1,
+          "why": "ARR = 0.15 - 0.10 = 0.05, so NNT = 1 / 0.05 = 20. The 33 comes from using the 33 percent relative reduction, which is not what NNT is built from."
+        },
+        {
+          "q": "A test has sensitivity 0.90 and specificity 0.95. What is LR+?",
+          "choices": [
+            "18",
+            "0.95",
+            "0.105",
+            "1.9"
+          ],
+          "answer": 0,
+          "why": "LR+ = sensitivity / (1 - specificity) = 0.90 / 0.05 = 18, a strong rule-in. The 0.105 value is LR-, computed as (1 - sens) / spec."
+        },
+        {
+          "q": "A study compares mean pain scores across four different analgesics. Which test is appropriate first?",
+          "choices": [
+            "Six separate two-sample t-tests",
+            "One-way ANOVA",
+            "Chi-square test of independence",
+            "Paired t-test"
+          ],
+          "answer": 1,
+          "why": "Three or more group means call for ANOVA, which controls the type I error rate that repeated t-tests inflate. Chi-square is for counts and a paired test requires the same subjects measured twice."
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "sci-stats-c001",
+      "front": "What is the difference between categorical and quantitative data?",
+      "back": "Categorical data sorts subjects into buckets you count (blood type, survived or died). Quantitative data is a measured number you can average (systolic pressure, age).",
+      "lesson": "sci-stats-l01"
+    },
+    {
+      "id": "sci-stats-c002",
+      "front": "Name the four levels of measurement in order.",
+      "back": "Nominal (named, unordered), ordinal (ordered, unequal gaps), interval (equal gaps, no true zero), ratio (equal gaps plus a true zero, so ratios are meaningful).",
+      "lesson": "sci-stats-l01"
+    },
+    {
+      "id": "sci-stats-c003",
+      "front": "Which level of measurement allows you to say one value is twice another?",
+      "back": "Ratio only, because it has a true zero. Weight, time and blood pressure qualify; Celsius temperature does not.",
+      "lesson": "sci-stats-l01"
+    },
+    {
+      "id": "sci-stats-c004",
+      "front": "Why can only an experiment establish causation?",
+      "back": "Because the investigator assigns the exposure by chance, which balances confounders across groups. Observational studies let subjects sort themselves, so a third variable can explain the association.",
+      "lesson": "sci-stats-l01"
+    },
+    {
+      "id": "sci-stats-c005",
+      "front": "What is a confounding variable?",
+      "back": "A third variable associated with both the exposure and the outcome, creating a false apparent link. Smoking confounds the coffee and lung cancer association.",
+      "lesson": "sci-stats-l01"
+    },
+    {
+      "id": "sci-stats-c006",
+      "front": "Contrast cohort, case-control and RCT designs.",
+      "back": "Cohort starts with exposure and follows forward to outcome. Case-control starts with the outcome and looks back at exposure. An RCT assigns treatment randomly and follows forward.",
+      "lesson": "sci-stats-l01"
+    },
+    {
+      "id": "sci-stats-c007",
+      "front": "Does increasing sample size fix bias?",
+      "back": "No. Bias is systematic, so a larger biased sample just gives a more precise wrong answer. Only better design and sampling fix bias; larger n only reduces random error.",
+      "lesson": "sci-stats-l01"
+    },
+    {
+      "id": "sci-stats-c008",
+      "front": "What does double-blinding mean and why does it matter?",
+      "back": "Neither the patient nor the investigator knows the assignment, so expectation cannot shift reported symptoms or outcome assessment. Single-blind hides it from the patient only.",
+      "lesson": "sci-stats-l01"
+    },
+    {
+      "id": "sci-stats-c009",
+      "front": "When is the median a better center than the mean?",
+      "back": "When data are skewed or contain outliers. The median is resistant; the mean is dragged toward the tail. Report median and IQR for hospital charges and length of stay.",
+      "lesson": "sci-stats-l02"
+    },
+    {
+      "id": "sci-stats-c010",
+      "front": "Write the steps for computing a sample standard deviation.",
+      "back": "Find the mean, subtract it from each value, square each deviation, sum the squares, divide by n - 1 to get variance, then take the square root.",
+      "lesson": "sci-stats-l02"
+    },
+    {
+      "id": "sci-stats-c011",
+      "front": "Why divide by n - 1 instead of n for a sample?",
+      "back": "Deviations are taken from the sample mean, which sits closer to the data than the true mean does. Dividing by n - 1 corrects that underestimate, giving an unbiased variance.",
+      "lesson": "sci-stats-l02"
+    },
+    {
+      "id": "sci-stats-c012",
+      "front": "For the sample 4, 8, 6, 5, 7, what are the variance and standard deviation?",
+      "back": "Mean 6, deviations -2, 2, 0, -1, 1, squares summing to 10. Variance = 10 / 4 = 2.5 and sd = sqrt(2.5) = 1.58.",
+      "lesson": "sci-stats-l02"
+    },
+    {
+      "id": "sci-stats-c013",
+      "front": "State the 1.5 x IQR outlier rule.",
+      "back": "An outlier is any value below Q1 - 1.5 x IQR or above Q3 + 1.5 x IQR, where IQR = Q3 - Q1. Those cutoffs are the fences a boxplot uses.",
+      "lesson": "sci-stats-l02"
+    },
+    {
+      "id": "sci-stats-c014",
+      "front": "What five numbers make up the five-number summary?",
+      "back": "Minimum, Q1, median, Q3 and maximum. A boxplot draws the box from Q1 to Q3 with the median inside and whiskers to the furthest non-outlier values.",
+      "lesson": "sci-stats-l02"
+    },
+    {
+      "id": "sci-stats-c015",
+      "front": "How do mean and median compare in right-skewed data?",
+      "back": "The mean is larger than the median, pulled by the long high tail. Cost, wait time and length of stay are the classic right-skewed clinical variables.",
+      "lesson": "sci-stats-l02"
+    },
+    {
+      "id": "sci-stats-c016",
+      "front": "Why is standard deviation reported instead of variance?",
+      "back": "Variance is in squared units, which are not interpretable. Taking the square root returns the spread to the original measurement units, so it can be compared to the mean.",
+      "lesson": "sci-stats-l02"
+    },
+    {
+      "id": "sci-stats-c017",
+      "front": "State the general addition rule for probability.",
+      "back": "P(A or B) = P(A) + P(B) - P(A and B). The overlap is subtracted so it is not counted twice. If the events are mutually exclusive, the overlap is 0.",
+      "lesson": "sci-stats-l03"
+    },
+    {
+      "id": "sci-stats-c018",
+      "front": "State the general multiplication rule and what changes under independence.",
+      "back": "P(A and B) = P(A) x P(B given A). If A and B are independent, P(B given A) = P(B), so it simplifies to P(A) x P(B).",
+      "lesson": "sci-stats-l03"
+    },
+    {
+      "id": "sci-stats-c019",
+      "front": "What does it mean for two events to be independent?",
+      "back": "Knowing one occurred does not change the probability of the other. Two coin flips are independent; two blood pressures from the same patient are not.",
+      "lesson": "sci-stats-l03"
+    },
+    {
+      "id": "sci-stats-c020",
+      "front": "Give the formula for conditional probability.",
+      "back": "P(A given B) = P(A and B) / P(B). You have restricted attention to the world where B happened, so you divide by how big that world is.",
+      "lesson": "sci-stats-l03"
+    },
+    {
+      "id": "sci-stats-c021",
+      "front": "How do sensitivity and PPV differ as conditional probabilities?",
+      "back": "Sensitivity is P(test positive given disease), a property of the test. PPV is P(disease given test positive), what the patient wants to know, and it depends on prevalence.",
+      "lesson": "sci-stats-l03"
+    },
+    {
+      "id": "sci-stats-c022",
+      "front": "Write Bayes' theorem for a diagnostic test.",
+      "back": "P(D given +) = P(+ given D) x P(D) divided by the sum of P(+ given D) x P(D) and P(+ given no D) x P(no D). Prior times likelihood over total probability of a positive.",
+      "lesson": "sci-stats-l03"
+    },
+    {
+      "id": "sci-stats-c023",
+      "front": "With sensitivity 90 percent, specificity 95 percent and prevalence 1 percent, what is the PPV?",
+      "back": "Out of 10,000: 90 true positives and 495 false positives, so PPV = 90 / 585 = about 15 percent. Most positives are still false when disease is rare.",
+      "lesson": "sci-stats-l03"
+    },
+    {
+      "id": "sci-stats-c024",
+      "front": "What is the expected value of a discrete random variable?",
+      "back": "The probability-weighted average: sum of each value times its probability. It is the long-run mean and need not be an outcome that can actually occur.",
+      "lesson": "sci-stats-l04"
+    },
+    {
+      "id": "sci-stats-c025",
+      "front": "What four conditions must hold for a binomial distribution?",
+      "back": "A fixed number of trials n, independent trials, exactly two outcomes per trial, and the same success probability p every trial. Remembered as BINS.",
+      "lesson": "sci-stats-l04"
+    },
+    {
+      "id": "sci-stats-c026",
+      "front": "State the binomial probability formula.",
+      "back": "P(X = k) = C(n, k) x p^k x (1 - p)^(n - k), where C(n, k) = n! / (k! x (n - k)!) counts the arrangements of k successes.",
+      "lesson": "sci-stats-l04"
+    },
+    {
+      "id": "sci-stats-c027",
+      "front": "What are the mean and standard deviation of a binomial distribution?",
+      "back": "Mean = n x p. Standard deviation = sqrt(n x p x (1 - p)). With n = 5 and p = 0.6 that is a mean of 3 and sd of sqrt(1.2) = 1.10.",
+      "lesson": "sci-stats-l04"
+    },
+    {
+      "id": "sci-stats-c028",
+      "front": "When do you use a Poisson distribution instead of a binomial?",
+      "back": "When counting events in a fixed window of time or space with no fixed number of trials and a steady average rate: ED arrivals per hour, seizures per month, colonies per plate.",
+      "lesson": "sci-stats-l04"
+    },
+    {
+      "id": "sci-stats-c029",
+      "front": "What is special about lambda in the Poisson distribution?",
+      "back": "Lambda is both the mean and the variance, so the standard deviation is sqrt(lambda). Rescale lambda whenever the time window changes.",
+      "lesson": "sci-stats-l04"
+    },
+    {
+      "id": "sci-stats-c030",
+      "front": "What defines a density curve?",
+      "back": "A smooth curve with total area exactly 1, where the area under any stretch equals the proportion of the population in that range. Probability becomes area.",
+      "lesson": "sci-stats-l05"
+    },
+    {
+      "id": "sci-stats-c031",
+      "front": "State the 68-95-99.7 empirical rule.",
+      "back": "In a normal distribution about 68 percent of values lie within 1 standard deviation of the mean, 95 percent within 2, and 99.7 percent within 3.",
+      "lesson": "sci-stats-l05"
+    },
+    {
+      "id": "sci-stats-c032",
+      "front": "What does a z-score tell you and how is it computed?",
+      "back": "z = (x - mu) / sigma. It reports how many standard deviations a value sits from the mean and in which direction, with the units stripped off.",
+      "lesson": "sci-stats-l05"
+    },
+    {
+      "id": "sci-stats-c033",
+      "front": "How do you convert a percentile back into a raw value?",
+      "back": "Rearrange to x = mu + z x sigma. Look up the z with that much area to its left, then multiply by sigma and add the mean.",
+      "lesson": "sci-stats-l05"
+    },
+    {
+      "id": "sci-stats-c034",
+      "front": "A standard normal table gives area in which direction?",
+      "back": "Area to the LEFT of z. For an upper-tail probability, subtract that value from 1. For a between-values problem, subtract the smaller left area from the larger.",
+      "lesson": "sci-stats-l05"
+    },
+    {
+      "id": "sci-stats-c035",
+      "front": "Why do lab reference ranges flag some healthy people as abnormal?",
+      "back": "Ranges are typically the middle 95 percent of a healthy reference population, so by construction about 5 percent of healthy people fall outside them.",
+      "lesson": "sci-stats-l05"
+    },
+    {
+      "id": "sci-stats-c036",
+      "front": "With mu = 120 and sigma = 12, what proportion of people exceed 138?",
+      "back": "z = (138 - 120) / 12 = 1.50, with area 0.9332 to its left. Above = 1 - 0.9332 = 0.0668, about 6.7 percent.",
+      "lesson": "sci-stats-l05"
+    },
+    {
+      "id": "sci-stats-c037",
+      "front": "What does the central limit theorem actually claim?",
+      "back": "The sampling distribution of the sample mean becomes approximately normal as n grows, whatever the shape of the underlying data. Roughly n of 30 suffices for badly skewed data.",
+      "lesson": "sci-stats-l06"
+    },
+    {
+      "id": "sci-stats-c038",
+      "front": "Give the formula for the standard error of the mean.",
+      "back": "SE = s / sqrt(n). It measures how far a sample mean is likely to sit from the true population mean, and it shrinks as the sample grows.",
+      "lesson": "sci-stats-l06"
+    },
+    {
+      "id": "sci-stats-c039",
+      "front": "How do standard deviation and standard error differ?",
+      "back": "Standard deviation describes how much individual patients differ and does not shrink with n. Standard error describes how precise your estimate of the mean is and does shrink.",
+      "lesson": "sci-stats-l06"
+    },
+    {
+      "id": "sci-stats-c040",
+      "front": "How many patients are needed to halve a standard error?",
+      "back": "Four times as many, because n sits under a square root. Going from 100 to 400 halves SE; going from 100 to 200 improves it only about 29 percent.",
+      "lesson": "sci-stats-l06"
+    },
+    {
+      "id": "sci-stats-c041",
+      "front": "With s = 4.0 and n = 64, what is the standard error?",
+      "back": "SE = 4.0 / sqrt(64) = 4.0 / 8 = 0.50. Dividing by 64 rather than 8 is the usual mistake and would give 0.0625.",
+      "lesson": "sci-stats-l06"
+    },
+    {
+      "id": "sci-stats-c042",
+      "front": "Why must you check whether error bars are SD or SE?",
+      "back": "SE bars are always narrower than SD bars by a factor of sqrt(n), so a figure using SE looks far more separated than the same data plotted with SD.",
+      "lesson": "sci-stats-l06"
+    },
+    {
+      "id": "sci-stats-c043",
+      "front": "What is the general structure of any confidence interval?",
+      "back": "Estimate plus or minus critical value times standard error. The second half is the margin of error.",
+      "lesson": "sci-stats-l07"
+    },
+    {
+      "id": "sci-stats-c044",
+      "front": "Give the confidence interval formula for a mean.",
+      "back": "CI = xbar plus or minus t x (s / sqrt(n)), using the t distribution with df = n - 1 because sigma is unknown and estimated by s.",
+      "lesson": "sci-stats-l07"
+    },
+    {
+      "id": "sci-stats-c045",
+      "front": "Give the confidence interval formula for a proportion.",
+      "back": "CI = phat plus or minus z x sqrt(phat x (1 - phat) / n). For 95 percent confidence z = 1.96.",
+      "lesson": "sci-stats-l07"
+    },
+    {
+      "id": "sci-stats-c046",
+      "front": "What does 95 percent confidence actually mean?",
+      "back": "If the study were repeated many times, about 95 percent of intervals built this way would contain the true parameter. It describes the method, not this one interval.",
+      "lesson": "sci-stats-l07"
+    },
+    {
+      "id": "sci-stats-c047",
+      "front": "What makes a confidence interval wider?",
+      "back": "Higher confidence level, more variable data (larger s), and smaller sample size. Only a larger n narrows it without sacrificing confidence.",
+      "lesson": "sci-stats-l07"
+    },
+    {
+      "id": "sci-stats-c048",
+      "front": "When is a confidence interval result non-significant?",
+      "back": "When a CI for a difference contains 0, or a CI for a ratio such as relative risk or odds ratio contains 1. Those are the no-effect values.",
+      "lesson": "sci-stats-l07"
+    },
+    {
+      "id": "sci-stats-c049",
+      "front": "What exactly is a p-value?",
+      "back": "The probability of getting data at least this extreme if the null hypothesis were true. It is not the probability the null is true and says nothing about effect size.",
+      "lesson": "sci-stats-l08"
+    },
+    {
+      "id": "sci-stats-c050",
+      "front": "Define type I and type II error.",
+      "back": "Type I is rejecting a true null, a false alarm, occurring at rate alpha. Type II is failing to reject a false null, a missed effect, at rate beta.",
+      "lesson": "sci-stats-l08"
+    },
+    {
+      "id": "sci-stats-c051",
+      "front": "What is statistical power and what raises it?",
+      "back": "Power = 1 - beta, the chance of detecting a real effect. It rises with larger n, a larger true effect, less variability, and a larger alpha. Trials usually target 80 percent.",
+      "lesson": "sci-stats-l08"
+    },
+    {
+      "id": "sci-stats-c052",
+      "front": "Write the one-sample t statistic.",
+      "back": "t = (xbar - mu0) / (s / sqrt(n)), with df = n - 1. It measures how many standard errors the sample mean sits from the null value.",
+      "lesson": "sci-stats-l08"
+    },
+    {
+      "id": "sci-stats-c053",
+      "front": "When do you use a paired t-test rather than a two-sample t-test?",
+      "back": "When the same subjects are measured twice or subjects are matched in pairs. You analyze the within-subject differences, which removes between-patient variability and gains power.",
+      "lesson": "sci-stats-l08"
+    },
+    {
+      "id": "sci-stats-c054",
+      "front": "Why can you never prove the null hypothesis?",
+      "back": "Failing to reject only means the data were not extreme enough, which can happen because no effect exists or because power was too low. Absence of evidence is not evidence of absence.",
+      "lesson": "sci-stats-l08"
+    },
+    {
+      "id": "sci-stats-c055",
+      "front": "Why report an effect size and CI alongside a p-value?",
+      "back": "A p-value says only whether a difference is detectable, not whether it matters. A large trial can make an 8 mg/dL glucose difference significant and clinically irrelevant.",
+      "lesson": "sci-stats-l08"
+    },
+    {
+      "id": "sci-stats-c056",
+      "front": "State the chi-square test statistic.",
+      "back": "chi-square = sum((O - E)^2 / E) across every cell, where O is observed and E is the count expected under the null.",
+      "lesson": "sci-stats-l09"
+    },
+    {
+      "id": "sci-stats-c057",
+      "front": "How do you compute an expected cell count in a contingency table?",
+      "back": "E = (row total x column total) / grand total. Each expected count should be at least 5; with smaller counts use Fisher's exact test.",
+      "lesson": "sci-stats-l09"
+    },
+    {
+      "id": "sci-stats-c058",
+      "front": "What are the degrees of freedom for each chi-square test?",
+      "back": "Goodness of fit uses df = categories - 1. Test of independence uses df = (rows - 1) x (columns - 1), so a 2x2 table has df = 1.",
+      "lesson": "sci-stats-l09"
+    },
+    {
+      "id": "sci-stats-c059",
+      "front": "What does the correlation coefficient r measure?",
+      "back": "The strength and direction of a linear relationship between two quantitative variables, from -1 to +1. It has no units and does not depend on which variable is called x.",
+      "lesson": "sci-stats-l09"
+    },
+    {
+      "id": "sci-stats-c060",
+      "front": "What does r-squared tell you?",
+      "back": "The proportion of variation in y explained by the linear relationship with x. If r = 0.60 then r-squared = 0.36, so 36 percent is explained and 64 percent is not.",
+      "lesson": "sci-stats-l09"
+    },
+    {
+      "id": "sci-stats-c061",
+      "front": "What is a residual in regression?",
+      "back": "Observed y minus predicted y for one subject: the vertical distance from the data point to the line. Least squares picks the line minimizing the sum of squared residuals.",
+      "lesson": "sci-stats-l09"
+    },
+    {
+      "id": "sci-stats-c062",
+      "front": "How do you compute the slope of a least-squares line?",
+      "back": "b = r x (sy / sx). The intercept then follows from a = ybar - b x xbar, because the line always passes through the point of means.",
+      "lesson": "sci-stats-l09"
+    },
+    {
+      "id": "sci-stats-c063",
+      "front": "How do you state a regression slope in words?",
+      "back": "Each one-unit increase in x is associated with a b-unit change in predicted y, on average. Say associated, not causes, unless the data came from a randomized experiment.",
+      "lesson": "sci-stats-l09"
+    },
+    {
+      "id": "sci-stats-c064",
+      "front": "Why can r be near zero even with a strong relationship?",
+      "back": "Because r only detects straight-line association. A perfect U-shaped or otherwise curved relationship can give an r close to 0, which is why you plot the data first.",
+      "lesson": "sci-stats-l09"
+    },
+    {
+      "id": "sci-stats-c065",
+      "front": "In yhat = 92.4 + 1.2x for BMI and systolic pressure, what is predicted at BMI 32?",
+      "back": "92.4 + 1.2 x 32 = 92.4 + 38.4 = 130.8 mmHg. The intercept 92.4 is meaningless on its own since no one has a BMI of zero.",
+      "lesson": "sci-stats-l09"
+    },
+    {
+      "id": "sci-stats-c066",
+      "front": "What do SnNout and SpPin mean?",
+      "back": "A highly Sensitive test with a Negative result rules disease out. A highly Specific test with a Positive result rules disease in.",
+      "lesson": "sci-stats-l10"
+    },
+    {
+      "id": "sci-stats-c067",
+      "front": "How does prevalence move PPV and NPV?",
+      "back": "As prevalence rises, PPV rises and NPV falls. Sensitivity and specificity stay fixed because they are properties of the test itself, not of the population.",
+      "lesson": "sci-stats-l10"
+    },
+    {
+      "id": "sci-stats-c068",
+      "front": "Give the formulas for the two likelihood ratios.",
+      "back": "LR+ = sensitivity / (1 - specificity), strong rule-in above 10. LR- = (1 - sensitivity) / specificity, strong rule-out below 0.1. Neither depends on prevalence.",
+      "lesson": "sci-stats-l10"
+    },
+    {
+      "id": "sci-stats-c069",
+      "front": "Define ARR, RR and NNT from a trial's event rates.",
+      "back": "ARR = control rate minus treated rate. RR = treated rate divided by control rate. NNT = 1 / ARR, the number treated to prevent one event.",
+      "lesson": "sci-stats-l10"
+    },
+    {
+      "id": "sci-stats-c070",
+      "front": "When does an odds ratio approximate a relative risk?",
+      "back": "When the outcome is rare. With common outcomes the odds ratio overstates the effect. Case-control studies must use odds ratios because they cannot measure incidence.",
+      "lesson": "sci-stats-l10"
+    },
+    {
+      "id": "sci-stats-c071",
+      "front": "Why use ANOVA instead of several t-tests?",
+      "back": "Repeated t-tests inflate the type I error rate to about 14 percent across three comparisons. ANOVA gives one omnibus test at the intended alpha.",
+      "lesson": "sci-stats-l10"
+    },
+    {
+      "id": "sci-stats-c072",
+      "front": "What does the F statistic compare, and what follows a significant F?",
+      "back": "F = between-group variance divided by within-group variance, near 1 under the null. A significant F says at least one mean differs, so a post-hoc test such as Tukey identifies which.",
+      "lesson": "sci-stats-l10"
+    },
+    {
+      "id": "sci-stats-c073",
+      "front": "Match the three common nonparametric tests to their parametric equivalents.",
+      "back": "Mann-Whitney U replaces the two-sample t-test, Wilcoxon signed-rank replaces the paired t-test, and Kruskal-Wallis replaces one-way ANOVA.",
+      "lesson": "sci-stats-l10"
+    },
+    {
+      "id": "sci-stats-c074",
+      "front": "How do you read a forest plot?",
+      "back": "Each line is a study: box is the estimate, box size is weight, line is the CI. The vertical null line sits at 1 for ratios, 0 for differences. The diamond is the pooled result.",
+      "lesson": "sci-stats-l10"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "sci-stats-q001",
+      "q": "A chart audit records each patient's ABO blood type. What type of variable is this?",
+      "choices": [
+        "Nominal categorical",
+        "Ordinal categorical",
+        "Discrete quantitative",
+        "Continuous quantitative"
+      ],
+      "answer": 0,
+      "why": "Blood types are named groups with no inherent order, which is nominal categorical. They are not ordinal because no type ranks above another, and they are not quantitative because you cannot average them.",
+      "lesson": "sci-stats-l01",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-stats-q002",
+      "q": "Investigators enroll 800 firefighters and follow them for 20 years, recording who develops lung disease. Which design is this?",
+      "choices": [
+        "Case-control",
+        "Prospective cohort",
+        "Randomized controlled trial",
+        "Cross-sectional survey"
+      ],
+      "answer": 1,
+      "why": "Starting from an exposure and following forward to an outcome is a cohort study. A case-control would start with diseased cases and look backward, and an RCT would require the investigators to assign the exposure, which they cannot ethically do here.",
+      "lesson": "sci-stats-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-stats-q003",
+      "q": "A study finds coffee drinkers have more lung cancer, but coffee drinkers also smoke more. Smoking here is best described as what?",
+      "choices": [
+        "Selection bias",
+        "Recall bias",
+        "A confounding variable",
+        "A blinding failure"
+      ],
+      "answer": 2,
+      "why": "Smoking is associated with both the exposure and the outcome and explains the apparent link, which is the definition of a confounder. Selection and recall bias concern who enters the study and how they remember, not a third causal variable.",
+      "lesson": "sci-stats-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-stats-q004",
+      "q": "A researcher divides a hospital population by unit, then randomly samples patients within each unit. Which sampling method is this?",
+      "choices": [
+        "Cluster sampling",
+        "Convenience sampling",
+        "Systematic sampling",
+        "Stratified random sampling"
+      ],
+      "answer": 3,
+      "why": "Dividing into groups and sampling within each group is stratified sampling, which guarantees representation from every stratum. Cluster sampling would take everyone inside randomly chosen units rather than a random subset within all of them.",
+      "lesson": "sci-stats-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-stats-q005",
+      "q": "Which statement about randomization in a clinical trial is correct?",
+      "choices": [
+        "It eliminates measurement error in the outcome",
+        "It balances known and unknown confounders across treatment arms",
+        "It guarantees the sample represents the general population",
+        "It removes the need for a control group"
+      ],
+      "answer": 1,
+      "why": "Chance assignment tends to distribute every background variable evenly, including confounders nobody measured. It does nothing about measurement error, does not make a convenience sample representative, and still requires a comparison arm.",
+      "lesson": "sci-stats-l01",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-stats-q006",
+      "q": "Emergency department wait times are 12, 15, 18, 20, 22, 25 and 60 minutes. What is the median?",
+      "choices": [
+        "18",
+        "20",
+        "22",
+        "24.6"
+      ],
+      "answer": 1,
+      "why": "With 7 sorted values the median is the 4th, which is 20 minutes. The value 24.6 is the mean, pulled upward by the 60-minute outlier, which is exactly why the median is preferred here.",
+      "lesson": "sci-stats-l02",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-stats-q007",
+      "q": "For the same wait times, Q1 is 15 and Q3 is 25. Is the 60-minute wait an outlier by the 1.5 x IQR rule?",
+      "choices": [
+        "No, because it is less than twice the median",
+        "No, because outlier rules need at least 10 observations",
+        "Yes, because the upper fence is 40 minutes",
+        "Yes, because it is more than 2 standard deviations above the mean"
+      ],
+      "answer": 2,
+      "why": "IQR = 10, so the upper fence is 25 + 15 = 40 and 60 lies beyond it. The 2-standard-deviation idea belongs to the normal distribution, not to the IQR rule, and there is no minimum sample size for the rule.",
+      "lesson": "sci-stats-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-stats-q008",
+      "q": "A sample of five potassium values has a sum of squared deviations of 10. What is the sample variance?",
+      "choices": [
+        "1.58",
+        "2.00",
+        "2.50",
+        "10.0"
+      ],
+      "answer": 2,
+      "why": "Sample variance divides by n - 1, so 10 / 4 = 2.5. Dividing by n gives 2.0, the population variance, and 1.58 is the standard deviation.",
+      "lesson": "sci-stats-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-stats-q009",
+      "q": "A journal reports mean hospital charge 24,000 dollars and median charge 14,000 dollars. What does this tell you about the distribution?",
+      "choices": [
+        "It is left-skewed",
+        "It is symmetric",
+        "It is bimodal",
+        "It is right-skewed"
+      ],
+      "answer": 3,
+      "why": "A mean well above the median means a long tail of very large values pulling the mean up, which is right skew. Left skew would put the mean below the median, and neither statistic reveals bimodality.",
+      "lesson": "sci-stats-l02",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-stats-q010",
+      "q": "Which measure of center can be used for nominal data such as blood type?",
+      "choices": [
+        "Mode",
+        "Median",
+        "Mean",
+        "Midrange"
+      ],
+      "answer": 0,
+      "why": "Only the mode works on unordered names, since it just reports the most frequent category. Mean and midrange require arithmetic and the median requires an ordering, neither of which nominal data supports.",
+      "lesson": "sci-stats-l02",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-stats-q011",
+      "q": "P(A) = 0.3 and P(B) = 0.4, and the events are mutually exclusive. What is P(A or B)?",
+      "choices": [
+        "0.12",
+        "0.70",
+        "0.58",
+        "0.10"
+      ],
+      "answer": 1,
+      "why": "Mutually exclusive events have zero overlap, so you simply add: 0.3 + 0.4 = 0.70. The 0.12 answer multiplies, which is the and-rule for independent events, a different situation entirely.",
+      "lesson": "sci-stats-l03",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-stats-q012",
+      "q": "A screening test with 95 percent sensitivity and 90 percent specificity is applied where prevalence is 2 percent. What happens to PPV compared with a 20 percent prevalence clinic?",
+      "choices": [
+        "PPV rises because sensitivity rises",
+        "PPV is unchanged because the test is unchanged",
+        "PPV falls because false positives outnumber true positives",
+        "PPV cannot be computed without the sample size"
+      ],
+      "answer": 2,
+      "why": "Sensitivity and specificity are fixed test properties, but at low prevalence the large healthy pool generates many false positives while few true cases exist, so PPV falls. Sample size does not matter because PPV is a ratio of proportions.",
+      "lesson": "sci-stats-l03",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-stats-q013",
+      "q": "Out of 10,000 tested, 90 are true positives and 495 are false positives. What is the positive predictive value?",
+      "choices": [
+        "90 percent",
+        "51 percent",
+        "15 percent",
+        "0.9 percent"
+      ],
+      "answer": 2,
+      "why": "PPV = 90 / (90 + 495) = 90 / 585 = 0.154. The 90 percent figure is the sensitivity, a different conditional, and 0.9 percent wrongly divides true positives by the whole 10,000.",
+      "lesson": "sci-stats-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-stats-q015",
+      "q": "A drug relieves migraine in 60 percent of patients. In 5 patients, what is the probability exactly 3 improve?",
+      "choices": [
+        "0.216",
+        "0.600",
+        "0.346",
+        "0.500"
+      ],
+      "answer": 2,
+      "why": "C(5,3) = 10, times 0.6 cubed = 0.216, times 0.4 squared = 0.16, giving 0.346. The 0.216 answer forgets both the coefficient and the failure term.",
+      "lesson": "sci-stats-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-stats-q016",
+      "q": "An emergency department averages 4 chest-pain arrivals per hour. What is the standard deviation of that Poisson count?",
+      "choices": [
+        "4",
+        "16",
+        "1",
+        "2"
+      ],
+      "answer": 3,
+      "why": "In a Poisson distribution lambda is both mean and variance, so sd = sqrt(4) = 2. The value 4 is the variance itself and 16 would be lambda squared.",
+      "lesson": "sci-stats-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-stats-q018",
+      "q": "A procedure fails 20 percent of the time and each failure costs 2,000 dollars to redo. What is the expected redo cost per patient?",
+      "choices": [
+        "400 dollars",
+        "2,000 dollars",
+        "1,600 dollars",
+        "200 dollars"
+      ],
+      "answer": 0,
+      "why": "Expected value weights outcomes by probability: 0.20 x 2000 plus 0.80 x 0 = 400 dollars. The 2,000 figure is the cost given a failure, not the average across all patients.",
+      "lesson": "sci-stats-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-stats-q019",
+      "q": "Adult male hemoglobin is normal with mean 15.0 and sd 1.0 g/dL. About what percent of men fall between 14.0 and 16.0?",
+      "choices": [
+        "50 percent",
+        "68 percent",
+        "95 percent",
+        "99.7 percent"
+      ],
+      "answer": 1,
+      "why": "Those bounds are exactly one standard deviation either side of the mean, which the empirical rule sets at about 68 percent. Two standard deviations, 13.0 to 17.0, would be the 95 percent range.",
+      "lesson": "sci-stats-l05",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-stats-q020",
+      "q": "A patient's serum sodium gives a z-score of -2.5. What does that mean?",
+      "choices": [
+        "The value is 2.5 mEq/L below the mean",
+        "The value is 2.5 standard deviations below the mean",
+        "The value is in the 2.5th percentile exactly",
+        "The value is 2.5 times smaller than the mean"
+      ],
+      "answer": 1,
+      "why": "A z-score counts standard deviations from the mean, not raw units or a ratio. The 2.5th percentile is roughly z = -1.96, which is close but not the same number.",
+      "lesson": "sci-stats-l05",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-stats-q021",
+      "q": "Systolic pressure is normal with mean 120 and sd 12. What value sits at the 90th percentile, given z = 1.28?",
+      "choices": [
+        "132.0 mmHg",
+        "104.6 mmHg",
+        "135.4 mmHg",
+        "141.6 mmHg"
+      ],
+      "answer": 2,
+      "why": "x = mu + z x sigma = 120 + 1.28 x 12 = 135.4. Subtracting instead of adding produces 104.6, which is the 10th percentile, and 132.0 ignores the z entirely.",
+      "lesson": "sci-stats-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-stats-q023",
+      "q": "A population has sd 4.0 mEq/L and you draw a sample of 64 patients. What is the standard error of the sample mean?",
+      "choices": [
+        "4.00",
+        "2.00",
+        "0.0625",
+        "0.50"
+      ],
+      "answer": 3,
+      "why": "SE = s / sqrt(n) = 4.0 / 8 = 0.50. Dividing by n itself gives 0.0625, and 4.00 is the standard deviation of individual values, which is a different quantity.",
+      "lesson": "sci-stats-l06",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-stats-q024",
+      "q": "Length of stay is strongly right-skewed. A researcher takes repeated samples of 60 patients and plots the sample means. What shape will that plot have?",
+      "choices": [
+        "Approximately normal",
+        "Right-skewed like the raw data",
+        "Uniform",
+        "Bimodal"
+      ],
+      "answer": 0,
+      "why": "The central limit theorem makes the sampling distribution of the mean approximately normal at n of 60 regardless of the underlying skew. The raw values stay skewed, but their means do not.",
+      "lesson": "sci-stats-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-stats-q025",
+      "q": "A pilot study of 50 patients wants to cut its standard error in half for the full trial. How many patients are needed?",
+      "choices": [
+        "75",
+        "100",
+        "200",
+        "2,500"
+      ],
+      "answer": 2,
+      "why": "Standard error falls with the square root of n, so halving it requires four times the sample: 200. Doubling to 100 improves precision only by about 29 percent.",
+      "lesson": "sci-stats-l06",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-stats-q026",
+      "q": "A trial reports xbar = 82.0, s = 10.0, n = 25 and t = 2.064 for 95 percent confidence. What is the interval?",
+      "choices": [
+        "80.0 to 84.0",
+        "77.9 to 86.1",
+        "62.0 to 102.0",
+        "81.6 to 82.4"
+      ],
+      "answer": 1,
+      "why": "SE = 10 / 5 = 2.00 and the margin of error is 2.064 x 2.00 = 4.13, giving 77.9 to 86.1. The 62 to 102 range wrongly multiplies t by s instead of SE.",
+      "lesson": "sci-stats-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-stats-q027",
+      "q": "In a trial, 36 of 200 placebo patients had a recurrence. What is the approximate standard error of that proportion?",
+      "choices": [
+        "0.027",
+        "0.180",
+        "0.053",
+        "0.001"
+      ],
+      "answer": 0,
+      "why": "SE = sqrt(0.18 x 0.82 / 200) = sqrt(0.000738) = 0.0272. The 0.053 figure is the margin of error after multiplying by z = 1.96, and 0.180 is the proportion itself.",
+      "lesson": "sci-stats-l07",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-stats-q028",
+      "q": "Which interpretation of a 95 percent confidence interval of 77.9 to 86.1 mmHg is correct?",
+      "choices": [
+        "There is a 95 percent probability the true mean lies in this interval",
+        "95 percent of patients have values in this interval",
+        "The method producing this interval captures the true mean in 95 percent of repeated studies",
+        "95 percent of future sample means will fall in this interval"
+      ],
+      "answer": 2,
+      "why": "Confidence is a property of the procedure across repeated sampling, since the true mean is a fixed number that is either inside or not. The interval describes the mean, not the spread of individual patients.",
+      "lesson": "sci-stats-l07",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-stats-q029",
+      "q": "A meta-analysis reports a pooled odds ratio of 0.88 with 95 percent CI 0.71 to 1.09. What is the correct conclusion?",
+      "choices": [
+        "A significant protective effect was found",
+        "A significant harmful effect was found",
+        "The study had no control group",
+        "The result is not statistically significant because the interval includes 1"
+      ],
+      "answer": 3,
+      "why": "For a ratio measure, 1 means no effect, and an interval crossing it cannot exclude the null at the 5 percent level. The point estimate looks protective but the data are also compatible with modest harm.",
+      "lesson": "sci-stats-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-stats-q030",
+      "q": "A sample of 16 patients gives xbar = 108 mg/dL against a claimed mean of 100, with s = 12. What is the t statistic?",
+      "choices": [
+        "8.00",
+        "0.67",
+        "2.67",
+        "2.13"
+      ],
+      "answer": 2,
+      "why": "SE = 12 / sqrt(16) = 3.0, so t = (108 - 100) / 3.0 = 2.67. Using s instead of SE gives 0.67, while 2.13 is the critical value at df = 15, not the test statistic.",
+      "lesson": "sci-stats-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-stats-q031",
+      "q": "A trial with low power fails to find a difference between two drugs. What error is most likely?",
+      "choices": [
+        "Type II error",
+        "Type I error",
+        "Selection bias",
+        "An inflated alpha"
+      ],
+      "answer": 0,
+      "why": "Low power means a high beta, the probability of missing a real effect, which is a type II error. A type I error is the opposite mistake, a false positive, and it is governed by alpha rather than by power.",
+      "lesson": "sci-stats-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-stats-q032",
+      "q": "Investigators measure grip strength in the same 40 patients before and after 12 weeks of therapy. Which test is correct?",
+      "choices": [
+        "Two-sample independent t-test",
+        "Chi-square goodness of fit",
+        "One-way ANOVA",
+        "Paired t-test"
+      ],
+      "answer": 3,
+      "why": "The same patients are measured twice, so the readings are linked and must be analyzed as within-patient differences. Treating them as independent groups discards the pairing and loses power, and chi-square applies to counts, not means.",
+      "lesson": "sci-stats-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-stats-q033",
+      "q": "A 2x2 trial table has row total 100, column total 80 and grand total 200 for one cell. What is the expected count under independence?",
+      "choices": [
+        "50",
+        "40",
+        "80",
+        "20"
+      ],
+      "answer": 1,
+      "why": "Expected count is row total times column total over grand total: 100 x 80 / 200 = 40. The value 80 is the column margin and 50 would come from splitting the row evenly, which ignores the column distribution.",
+      "lesson": "sci-stats-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-stats-q034",
+      "q": "A chi-square test of independence on a 2x2 table gives 8.34 with a critical value of 3.841. What do you conclude?",
+      "choices": [
+        "Fail to reject independence, the counts were too small",
+        "The variables are independent",
+        "Reject independence, the two variables are associated",
+        "The test is invalid without a t statistic"
+      ],
+      "answer": 2,
+      "why": "A computed chi-square above the critical value at df = 1 rejects the null of independence, so the variables are associated. Chi-square never proves independence, and no t statistic is involved in a test of counts.",
+      "lesson": "sci-stats-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-stats-q035",
+      "q": "A study reports r = 0.40 between BMI and systolic pressure, with sx = 5 and sy = 15. What is the regression slope?",
+      "choices": [
+        "1.2 mmHg per BMI unit",
+        "0.13 mmHg per BMI unit",
+        "0.40 mmHg per BMI unit",
+        "6.0 mmHg per BMI unit"
+      ],
+      "answer": 0,
+      "why": "b = r x (sy / sx) = 0.40 x 3 = 1.2. The 0.13 answer inverts the standard deviation ratio, and 0.40 mistakes the correlation itself for the slope, which only holds if sy equals sx.",
+      "lesson": "sci-stats-l09",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-stats-q036",
+      "q": "In the same study r = 0.40. What proportion of blood pressure variation does BMI explain?",
+      "choices": [
+        "40 percent",
+        "63 percent",
+        "4 percent",
+        "16 percent"
+      ],
+      "answer": 3,
+      "why": "r-squared = 0.40 squared = 0.16, so 16 percent is explained. Reporting r itself as 40 percent is the standard error, and 63 percent is the square root, which has no interpretation here.",
+      "lesson": "sci-stats-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-stats-q037",
+      "q": "A scatterplot of drug dose against effect forms a clear inverted U, yet r is close to 0. Why?",
+      "choices": [
+        "The sample size must be too small",
+        "r measures only linear association and misses curved relationships",
+        "There must be a data entry error",
+        "r near 0 always means the variables are independent"
+      ],
+      "answer": 1,
+      "why": "Correlation quantifies straight-line association only, so a symmetric curve can cancel out to near zero. A strong non-linear relationship is real, which is why plotting the data comes before computing r.",
+      "lesson": "sci-stats-l09",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-stats-q038",
+      "q": "Stroke occurs in 15 percent of placebo patients and 10 percent on the drug. What is the number needed to treat?",
+      "choices": [
+        "33",
+        "20",
+        "10",
+        "3"
+      ],
+      "answer": 1,
+      "why": "ARR = 0.15 - 0.10 = 0.05 and NNT = 1 / 0.05 = 20. The 33 comes from using the 33 percent relative risk reduction, which is not the absolute difference NNT requires.",
+      "lesson": "sci-stats-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-stats-q039",
+      "q": "A test has sensitivity 0.90 and specificity 0.95. Which likelihood ratio value is correct?",
+      "choices": [
+        "LR+ = 0.95",
+        "LR- = 18",
+        "LR+ = 18 and LR- = 0.105",
+        "LR+ = 0.105 and LR- = 18"
+      ],
+      "answer": 2,
+      "why": "LR+ = sens / (1 - spec) = 0.90 / 0.05 = 18 and LR- = (1 - sens) / spec = 0.10 / 0.95 = 0.105. Swapping them reverses the meaning of a rule-in and a rule-out result.",
+      "lesson": "sci-stats-l10",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-stats-q040",
+      "q": "A trial compares mean HbA1c across four drug regimens. Which analysis is appropriate first?",
+      "choices": [
+        "One-way ANOVA with an F test",
+        "Six separate t-tests at alpha 0.05",
+        "Chi-square test of independence",
+        "Wilcoxon signed-rank test"
+      ],
+      "answer": 0,
+      "why": "Three or more group means call for ANOVA, whose single F test preserves the intended alpha. Repeated t-tests inflate the type I error rate, chi-square handles counts, and Wilcoxon signed-rank requires paired data.",
+      "lesson": "sci-stats-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-stats-q041",
+      "q": "Pain scores from 0 to 10 are compared between two independent groups of 12 patients each, and the data are badly skewed. Which test fits best?",
+      "choices": [
+        "Paired t-test",
+        "Two-sample t-test",
+        "Kruskal-Wallis test",
+        "Mann-Whitney U test"
+      ],
+      "answer": 3,
+      "why": "Two independent groups with ordinal, skewed data and small samples call for Mann-Whitney U, the rank-based alternative to the two-sample t-test. Kruskal-Wallis is for three or more groups and a paired test would require the same subjects twice.",
+      "lesson": "sci-stats-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-stats-q042",
+      "q": "On a forest plot, one study's horizontal line crosses the vertical line at 1. What does that indicate?",
+      "choices": [
+        "That study's confidence interval includes no effect, so it was not individually significant",
+        "That study was excluded from the pooled analysis",
+        "That study had the largest weight",
+        "The pooled diamond must also cross 1"
+      ],
+      "answer": 0,
+      "why": "For ratio measures the null line stands at 1, so an interval crossing it cannot exclude no effect. Weight is shown by box size, and the pooled diamond can still clear the line once studies are combined.",
+      "lesson": "sci-stats-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-stats-q043",
+      "q": "A drug lowers annual event risk from 0.4 percent to 0.2 percent. How should this be reported honestly?",
+      "choices": [
+        "A 50 percent risk reduction, a major benefit",
+        "An ARR of 0.2 percentage points, NNT 500",
+        "An NNT of 2",
+        "A relative risk of 2.0"
+      ],
+      "answer": 1,
+      "why": "ARR = 0.004 - 0.002 = 0.002, so NNT = 1 / 0.002 = 500. The 50 percent figure is the relative reduction, which is technically true but hides how small the absolute benefit is, and RR here is 0.5 not 2.0.",
+      "lesson": "sci-stats-l10",
+      "difficulty": 3
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "sci-stats-s01",
+      "title": "Problem set: a screening test and the 2x2 table",
+      "setting": "classroom",
+      "intro": "Your instructor puts a problem on the board. A new blood test for early pancreatic cancer is validated against biopsy in 1,000 patients from a high-risk referral clinic, where 100 of the 1,000 turn out to have cancer. Of those 100, the test is positive in 80. Of the 900 without cancer, the test is positive in 90. You are asked to characterize the test and then decide what it means in a general screening population.\n\nWork it as a table, not as a formula.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "First move: you have raw counts and four quantities to find. How do you set up?",
+          "choices": [
+            { "text": "Build a 2x2 table with disease status across the columns and test result down the rows, then fill in all four cells and the margins", "next": "s2", "feedback": "Correct. Every sensitivity, specificity and predictive value question is division of one cell by one margin. Building the table first makes each one obvious.", "score": 1 },
+            { "text": "Write out Bayes' theorem and substitute the numbers directly", "next": "s2", "feedback": "It works and gives the same answer, but with raw counts already in hand the formula adds algebra and chances to slip. The table is faster and self-checking.", "score": 0 },
+            { "text": "Compute 80 / 1,000 as the accuracy and move on", "next": "s2", "feedback": "That is not any of the four quantities. Mixing cells with the grand total is the most common way these problems go wrong.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "The table reads: true positives 80, false negatives 20, false positives 90, true negatives 810. What is the sensitivity?",
+          "choices": [
+            { "text": "80 / 100 = 0.80", "next": "s3", "feedback": "Right. Sensitivity is true positives over everyone with disease: 80 of the 100 cancers were caught. In words, P(positive given disease).", "score": 1 },
+            { "text": "80 / 170 = 0.47", "next": "s3", "feedback": "That denominator is all positive tests, which gives PPV, not sensitivity. The two get swapped constantly because both have 80 on top.", "score": -1 },
+            { "text": "810 / 900 = 0.90", "next": "s3", "feedback": "That is specificity, the proportion of healthy people correctly cleared. You will need it next, but it is not sensitivity.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "Specificity is 810 / 900 = 0.90. Now the clinically useful number: in this referral clinic, what is the positive predictive value?",
+          "choices": [
+            { "text": "80 / 170 = 0.47", "next": "s4", "feedback": "Correct. There were 80 + 90 = 170 positive tests and only 80 were real, so a positive result means about a 47 percent chance of cancer. Better than the 10 percent prior, far from certainty.", "score": 1 },
+            { "text": "80 / 100 = 0.80", "next": "s4", "feedback": "That is sensitivity again. PPV restricts you to the people who tested positive, so the denominator must be the positive row total, 170.", "score": -1 },
+            { "text": "810 / 830 = 0.98", "next": "s4", "feedback": "That is the negative predictive value, which is genuinely reassuring here but answers the opposite question.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "Now the twist. The same test is proposed for general population screening, where the prevalence of pancreatic cancer is about 0.1 percent rather than 10 percent. What do you expect to happen to the numbers?",
+          "choices": [
+            { "text": "Sensitivity and specificity stay at 0.80 and 0.90, but PPV collapses", "next": "s5", "feedback": "Exactly. Sensitivity and specificity are properties of the test. PPV and NPV depend on how many diseased people are in the pool being tested.", "score": 1 },
+            { "text": "Sensitivity falls because the test performs worse in healthy people", "next": "s5", "feedback": "Sensitivity is measured only among diseased patients, so the size of the healthy group cannot change it. What changes is the mix of positives.", "score": -1 },
+            { "text": "Nothing changes, the test is the test", "next": "s5", "feedback": "Half right. The test characteristics hold, but predictive values are not test characteristics. That distinction is the whole point of this problem.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "Compute it out of 100,000 screened at 0.1 percent prevalence: 100 have cancer, 99,900 do not. Work through the new PPV.",
+          "choices": [
+            { "text": "True positives 80, false positives 9,990, so PPV = 80 / 10,070 = 0.008", "next": "s6", "feedback": "Correct arithmetic: 0.80 x 100 = 80 true positives, and 10 percent of 99,900 = 9,990 false positives. Under 1 percent of positives are real cancers.", "score": 1 },
+            { "text": "PPV stays near 0.47 because the test has not changed", "next": "s6", "feedback": "The test has not changed but the population has. The 99,900 healthy people generate almost 10,000 false alarms, drowning the 80 true cases.", "score": -1 },
+            { "text": "PPV = 80 / 100 = 0.80 because 80 of the cancers were found", "next": "s6", "feedback": "That is sensitivity once more. The denominator for PPV is always everyone who tested positive, including the false alarms.", "score": -1 },
+            { "text": "Roughly 1 in 125 positives is a true cancer", "next": "s6", "feedback": "Same answer stated as odds: 80 out of 10,070 is about 1 in 126. Correct reasoning, and a useful way to explain it to a patient.", "score": 1 }
+          ]
+        },
+        {
+          "id": "s6",
+          "prompt": "Final question: what recommendation follows from a PPV of 0.8 percent in the general population?",
+          "choices": [
+            { "text": "Do not use it for population screening; reserve it for high-risk groups where prevalence supports the result", "next": "end", "feedback": "Right, and this is why screening guidelines are written around prevalence, not around test accuracy alone. Nearly 10,000 people would face workup for nothing.", "score": 1 },
+            { "text": "Screen everyone, since 80 cancers would be caught early", "next": "end", "feedback": "Those 80 are real, but weigh them against 9,990 false alarms, each meaning imaging, biopsy risk and months of fear. That is the harm side of screening.", "score": -1 },
+            { "text": "Raise the positivity threshold to gain specificity, then re-evaluate", "next": "end", "feedback": "A defensible engineering answer. More specificity cuts false positives, but it costs sensitivity, and at this prevalence even 99 percent specificity leaves about 1,000 false alarms.", "score": 0 }
+          ]
+        }
+      ],
+      "debrief": "The pattern to carry out of this problem: sensitivity and specificity describe the test, predictive values describe the test plus the population. Whenever a question gives you a prevalence, it is telling you the answer will hinge on it. Build the 2x2 table out of a round number of people, fill in all four cells, and read every quantity as one cell divided by one margin. Sensitivity divides by the disease column, PPV divides by the positive row. Those two denominators are the entire difference, and confusing them is the single most common error in clinical probability."
+    },
+    {
+      "id": "sci-stats-s02",
+      "title": "Problem set: choosing and running the right test",
+      "setting": "classroom",
+      "intro": "Second problem on the board. A trial randomizes 60 patients with hypertension to a new drug or placebo, 30 per arm, and measures systolic blood pressure after 8 weeks. Drug arm: mean 132.0 mmHg, sd 12.0. Placebo arm: mean 140.0 mmHg, sd 14.0. You must pick a test, run it, and state what the p-value does and does not say.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "Two independent groups, one quantitative outcome, roughly symmetric data. Which analysis?",
+          "choices": [
+            { "text": "Independent two-sample t-test", "next": "s2", "feedback": "Correct. Two separate groups of different people, a continuous outcome, and no pairing between them. That is the textbook two-sample t-test.", "score": 1 },
+            { "text": "Paired t-test on the two arms", "next": "s2", "feedback": "Pairing requires a link between a specific drug patient and a specific placebo patient. These are separate randomized people, so there is nothing to pair.", "score": -1 },
+            { "text": "Chi-square test of independence", "next": "s2", "feedback": "Chi-square compares counts in categories. Blood pressure is quantitative, so a chi-square would throw away most of the information.", "score": -1 },
+            { "text": "One-way ANOVA with two groups", "next": "s2", "feedback": "Not wrong, actually. With exactly two groups ANOVA gives the same p-value as the t-test, since F equals t squared. The t-test is the conventional report.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "State the hypotheses before touching a calculator.",
+          "choices": [
+            { "text": "H0: mu1 = mu2. Ha: mu1 is not equal to mu2, two-tailed", "next": "s3", "feedback": "Right. The null is always no difference, and a two-tailed alternative is the honest default unless the protocol pre-specified a direction.", "score": 1 },
+            { "text": "H0: the drug lowers pressure. Ha: the drug does nothing", "next": "s3", "feedback": "Reversed. The null must be the no-effect claim, because the whole procedure computes probabilities assuming the null is true.", "score": -1 },
+            { "text": "H0: xbar1 = xbar2", "next": "s3", "feedback": "Hypotheses are about population parameters (mu), never about the sample means you observed. Those are already known and clearly unequal.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "Compute the standard error of the difference. The pooled version is SE = sqrt(s1^2/n1 + s2^2/n2) with s1 = 12, s2 = 14, n1 = n2 = 30.",
+          "choices": [
+            { "text": "SE = sqrt(144/30 + 196/30) = sqrt(4.8 + 6.53) = sqrt(11.33) = 3.37 mmHg", "next": "s4", "feedback": "Correct all the way through: square each sd, divide by its n, add, then take the root. 3.37 mmHg is the noise level of the difference.", "score": 1 },
+            { "text": "SE = (12 + 14) / sqrt(60) = 3.36 mmHg", "next": "s4", "feedback": "Numerically close by accident, but the method is wrong. Standard deviations are never averaged directly; variances add, standard deviations do not.", "score": -1 },
+            { "text": "SE = 12 / sqrt(30) = 2.19 mmHg", "next": "s4", "feedback": "That is the standard error of the drug arm alone. A comparison needs the uncertainty of both arms combined.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "The observed difference is 140.0 - 132.0 = 8.0 mmHg and SE = 3.37. Compute t and compare it to the critical value of about 2.00 at df near 58.",
+          "choices": [
+            { "text": "t = 8.0 / 3.37 = 2.37, which exceeds 2.00, so reject H0", "next": "s5", "feedback": "Correct. The difference is 2.37 standard errors from zero, past the 5 percent threshold. The two-tailed p-value is about 0.021.", "score": 1 },
+            { "text": "t = 8.0, which is obviously large, so reject H0", "next": "s5", "feedback": "That is the raw difference in mmHg, not a test statistic. A difference only becomes evidence once scaled by how noisy it is.", "score": -1 },
+            { "text": "t = 8.0 / 12 = 0.67, so fail to reject H0", "next": "s5", "feedback": "Dividing by a standard deviation rather than the standard error of the difference. That mistake almost always produces a false negative.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "The paper will report p = 0.021. A classmate says that means there is a 2.1 percent chance the drug does not work. Respond.",
+          "choices": [
+            { "text": "Wrong direction: p is the probability of seeing a difference this large or larger IF the drug truly did nothing", "next": "s6", "feedback": "Exactly right. The p-value is conditional on the null being true; it never gives the probability that a hypothesis is true.", "score": 1 },
+            { "text": "Close enough, since 1 - p is the probability the drug works", "next": "s6", "feedback": "That is the same error restated. Assigning probability to a hypothesis requires a prior and Bayesian machinery, which a p-value does not contain.", "score": -1 },
+            { "text": "It also means the effect is large, since p is small", "next": "s6", "feedback": "A small p can come from a tiny effect measured in a huge sample. Significance and magnitude are separate questions.", "score": -1 },
+            { "text": "Better to report the difference of 8.0 mmHg with its 95 percent CI, roughly 1.3 to 14.7 mmHg", "next": "s6", "feedback": "The best answer of all: 8.0 plus or minus 2.00 x 3.37 gives that interval, which conveys both significance and the plausible size of the benefit.", "score": 1 }
+          ]
+        },
+        {
+          "id": "s6",
+          "prompt": "Last call. The lower bound of the CI is about 1.3 mmHg. What does the trial actually support?",
+          "choices": [
+            { "text": "A real average reduction, but the data are compatible with a benefit as small as roughly 1 mmHg", "next": "end", "feedback": "Correct and appropriately cautious. The interval excludes zero, so the effect is real, yet its lower end may be clinically trivial.", "score": 1 },
+            { "text": "The drug reliably lowers systolic pressure by 8 mmHg in every patient", "next": "end", "feedback": "The 8 mmHg is an average of group means, not a promise for an individual, and the interval shows considerable uncertainty even about the average.", "score": -1 },
+            { "text": "Nothing, because 60 patients is too few to conclude anything", "next": "end", "feedback": "Too dismissive. The test accounted for the sample size; small n widens the interval rather than invalidating the result.", "score": 0 }
+          ]
+        }
+      ],
+      "debrief": "Three habits to take from this walkthrough. First, choose the test from the design: count the groups, ask whether they are independent or paired, and check whether the outcome is quantitative or categorical. Two independent groups with a quantitative outcome means a two-sample t-test every time. Second, a test statistic is always an observed difference divided by its standard error, and standard errors of a difference come from adding variances, never from averaging standard deviations. Third, the p-value answers only one question, how surprising the data would be under the null, so pair it with the effect size and its confidence interval. A result can be statistically significant and clinically minor, and the interval is what tells you which."
+    }
+  ]
+}

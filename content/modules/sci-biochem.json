@@ -1,0 +1,1794 @@
+{
+  "schema": 1,
+  "id": "sci-biochem",
+  "track": "prereq",
+  "title": "Biochemistry",
+  "short": "Biochemistry",
+  "summary": "A full college biochemistry course in syllabus order: buffers, amino acids and proteins, enzyme kinetics, the central metabolic pathways with real ATP accounting, lipids, nitrogen, and the metabolic diseases the course uses as examples.",
+  "lessons": [
+    {
+      "id": "sci-biochem-l01",
+      "title": "Water, pH, buffers and Henderson-Hasselbalch",
+      "minutes": 8,
+      "body": "Biochemistry starts with water because every reaction in you happens in it, and because the first exam is almost always a buffer exam.\n\n## Why water behaves the way it does\n\nOxygen pulls electrons harder than hydrogen, so a water molecule is **polar**: partial negative on oxygen, partial positive on the hydrogens. Each water molecule can hydrogen bond to four others. Individually a hydrogen bond is weak, about `4–20 kJ/mol` versus `350 kJ/mol` for a covalent bond, but there are so many of them that they set water's high boiling point, high heat capacity and high surface tension.\n\nPolar and charged (hydrophilic) molecules dissolve because water surrounds them. Nonpolar (hydrophobic) molecules do not, and they cluster together — not because they attract each other, but because water molecules gain entropy by not having to form ordered cages around them. This **hydrophobic effect** is the single strongest force driving protein folding and membrane formation.\n\nThe other noncovalent forces you need: ionic interactions (salt bridges), and van der Waals forces, weak but enormous in number.\n\n## pH\n\nWater self-ionizes slightly. At `25 degrees Celsius`, the ion product `Kw = [H+][OH-] = 1 x 10^-14`. Pure water has `[H+] = 1 x 10^-7 M`, so pH `7`.\n\npH is `-log[H+]`. Each pH unit is a **tenfold** change in hydrogen ion concentration. Blood at pH `7.4` has `[H+]` around `40 nanomolar`; a drop to pH `7.1` roughly doubles that. Physiologic blood pH is `7.35–7.45`, and life becomes very difficult outside `6.8–7.8`.\n\n## Acids, bases, pKa\n\nA Bronsted acid donates a proton; a base accepts one. A weak acid HA dissociates partially: `HA` gives `H+ + A-`, with equilibrium constant `Ka`. The **pKa** is `-log Ka`. A lower pKa means a stronger acid.\n\n> **Key:** When pH equals pKa, the acid is exactly half dissociated — `[HA] = [A-]`. That single sentence answers a surprising number of exam questions.\n\n## Henderson-Hasselbalch\n\n`pH = pKa + log([A-]/[HA])`\n\nThe conjugate base goes on top. Work through it:\n\n**Problem 1.** Acetic acid has pKa `4.76`. A solution is `0.1 M` acetate and `0.1 M` acetic acid. pH = `4.76 + log(0.1/0.1)` = `4.76 + 0` = `4.76`.\n\n**Problem 2.** Same acid, now `0.3 M` acetate and `0.1 M` acetic acid. pH = `4.76 + log(3)` = `4.76 + 0.48` = `5.24`.\n\n**Problem 3.** You need pH `5.76` from acetic acid. `5.76 - 4.76 = 1`, so `log([A-]/[HA]) = 1`, meaning the ratio is `10:1` base to acid.\n\n**Problem 4 (the clinical one).** The bicarbonate system has an apparent pKa of `6.1`. Normal arterial values are bicarbonate `24 mM` and dissolved CO2 `1.2 mM`. pH = `6.1 + log(24/1.2)` = `6.1 + log(20)` = `6.1 + 1.3` = `7.4`. That `20:1` ratio is the number to memorize.\n\n## Buffers\n\nA **buffer** is a weak acid plus its conjugate base, and it resists pH change because whichever form is needed consumes the added acid or base. Buffering capacity is maximal when pH is within **one unit of the pKa** and falls off sharply outside that window.\n\nThe body runs three buffer systems: **bicarbonate** (the main extracellular buffer; unusual and powerful because CO2 is volatile and the lungs can blow it off in minutes while the kidney adjusts bicarbonate over days), **phosphate** with pKa `6.86` (the main intracellular buffer), and **protein**, especially the histidine side chain with pKa near `6.0` and hemoglobin.\n\n> **On the exam:** An acid-base question always reduces to the same logic. Bicarbonate up or down is metabolic; CO2 up or down is respiratory. Raising CO2 lowers the ratio and lowers pH — respiratory acidosis. Hyperventilation blows off CO2, raises the ratio, raises pH — respiratory alkalosis.",
+      "keyPoints": [
+        "The hydrophobic effect is entropy-driven and is the main force folding proteins and forming membranes.",
+        "pH = -log[H+]; each unit is a tenfold change; blood is 7.35–7.45.",
+        "Henderson-Hasselbalch: pH = pKa + log([A-]/[HA]); when pH equals pKa the acid is half dissociated.",
+        "Bicarbonate buffer: pKa 6.1, normal 24 mM bicarbonate over 1.2 mM CO2, a 20:1 ratio giving pH 7.4.",
+        "A buffer works best within one pH unit of its pKa; phosphate (pKa 6.86) buffers inside cells."
+      ],
+      "checks": [
+        {
+          "q": "A buffer contains 0.05 M acetic acid (pKa 4.76) and 0.50 M acetate. What is the pH?",
+          "choices": [
+            "3.76",
+            "4.76",
+            "5.76",
+            "6.76"
+          ],
+          "answer": 2,
+          "why": "The ratio [A-]/[HA] is 10, and log 10 equals 1, so pH = 4.76 + 1 = 5.76. Inverting the ratio gives the incorrect 3.76."
+        },
+        {
+          "q": "A patient hypoventilates and arterial CO2 rises. Using the bicarbonate equation, what happens to pH?",
+          "choices": [
+            "pH rises because the ratio increases",
+            "pH falls because the denominator increases and the ratio falls",
+            "pH is unchanged because bicarbonate is fixed",
+            "pH rises because CO2 is a base"
+          ],
+          "answer": 1,
+          "why": "CO2 sits in the denominator as the acid component, so raising it lowers the 20:1 ratio and lowers pH — respiratory acidosis. Bicarbonate is not fixed but the renal correction takes days."
+        },
+        {
+          "q": "Which weak acid would make the best buffer for a solution that must be held at pH 7.2?",
+          "choices": [
+            "An acid with pKa 3.9",
+            "An acid with pKa 4.8",
+            "An acid with pKa 7.0",
+            "An acid with pKa 9.8"
+          ],
+          "answer": 2,
+          "why": "Buffering capacity is greatest within one pH unit of the pKa, so pKa 7.0 is ideal for pH 7.2. The others are 2 to 3 units away and would be nearly fully dissociated or fully protonated."
+        }
+      ]
+    },
+    {
+      "id": "sci-biochem-l02",
+      "title": "Amino acids, ionization and the peptide bond",
+      "minutes": 8,
+      "body": "Twenty amino acids build every protein you have. Each has the same core: a central alpha carbon bearing an amino group, a carboxyl group, a hydrogen, and a variable **R group (side chain)**. The side chain is the entire personality of the amino acid.\n\nAll amino acids except glycine have four different groups on the alpha carbon, so they are **chiral**. Proteins use only the **L** form. Glycine, whose side chain is a single hydrogen, is achiral and is also the smallest and most flexible residue.\n\n## The classes\n\n**Nonpolar, aliphatic** — glycine, alanine, valine, leucine, isoleucine, methionine, proline. These bury in the protein interior. **Proline** is the ring-locked oddity: its side chain bonds back to the amino nitrogen, which rigidifies the backbone and breaks helices.\n\n**Aromatic** — phenylalanine, tyrosine, tryptophan. Bulky and mostly hydrophobic; tryptophan and tyrosine absorb ultraviolet light at `280 nanometers`, which is how protein concentration is measured.\n\n**Polar, uncharged** — serine, threonine, cysteine, asparagine, glutamine. Serine, threonine and tyrosine hydroxyls are the sites phosphorylated by kinases. **Cysteine** is special: two cysteines can oxidize to form a **disulfide bond**, the only covalent cross-link in ordinary protein structure.\n\n**Acidic (negatively charged at pH 7)** — aspartate (side-chain pKa `3.9`) and glutamate (pKa `4.3`).\n\n**Basic (positively charged at pH 7)** — lysine (pKa `10.5`), arginine (pKa `12.5`, the most basic, always positive at physiologic pH), and **histidine** (pKa `6.0`).\n\n> **Key:** Histidine is the only side chain with a pKa near physiologic pH. That is exactly why it appears in so many enzyme active sites — it can pick up or give away a proton at pH `7.4`, which is what acid-base catalysis requires.\n\nNine amino acids are **essential** (must come from the diet): phenylalanine, valine, threonine, tryptophan, isoleucine, methionine, histidine, leucine, lysine.\n\n## Ionization and titration\n\nAt low pH everything is protonated: the amino group is `-NH3+` and the carboxyl is `-COOH`, net charge `+1`. Raise the pH and the carboxyl loses its proton first (alpha-COOH pKa about `2.0`), giving the **zwitterion** — positive and negative in the same molecule, net charge `0`. Raise it further and the amino group deprotonates (alpha-NH3+ pKa about `9.5`), giving net `-1`.\n\nThe **isoelectric point (pI)** is the pH at which net charge is zero. For an amino acid with no ionizable side chain, pI is the average of the two pKa values: glycine pI = `(2.34 + 9.60) / 2` = `5.97`. For one with an ionizable side chain, average the two pKa values that flank the neutral species. Aspartate has pKa values `2.1`, `3.9` and `9.8`; the neutral form sits between `2.1` and `3.9`, so pI = `3.0`. Lysine has `2.2`, `9.0` and `10.5`, so pI = `(9.0 + 10.5) / 2` = `9.75`.\n\n> **Trap:** Do not average the highest and lowest pKa. Average the two that bracket the zero-charge species. That single mistake costs more points than anything else in this unit.\n\npI predicts behavior in electrophoresis and ion-exchange chromatography: at a pH above its pI a protein is negative and moves toward the anode; below its pI it is positive.\n\n## The peptide bond\n\nJoining the carboxyl of one amino acid to the amino group of the next releases water — a **condensation (dehydration)** reaction — and forms an **amide** linkage called the peptide bond. Proteins are always written and synthesized **N-terminus to C-terminus**.\n\nThe peptide bond has roughly `40%` double-bond character because the carbonyl's electrons delocalize onto the nitrogen. Three consequences: it is **planar**, it cannot rotate, and it is essentially always **trans** (except before proline, where cis occurs). Rotation happens only around the two bonds flanking the alpha carbon — the **phi** and **psi** angles — and the allowed combinations are what a Ramachandran plot displays.\n\nThe peptide bond is also kinetically very stable; spontaneous hydrolysis takes years, which is why digestion requires proteases.",
+      "keyPoints": [
+        "All protein amino acids are L-isomers; glycine alone is achiral and the most flexible residue.",
+        "Histidine's side-chain pKa of about 6.0 makes it the workhorse of acid-base catalysis at physiologic pH.",
+        "pI is the average of the two pKa values flanking the zero-charge species, not the highest and lowest.",
+        "Disulfide bonds between two cysteines are the only common covalent cross-link in proteins.",
+        "The peptide bond is planar, trans, and non-rotating; only phi and psi angles rotate."
+      ],
+      "checks": [
+        {
+          "q": "Lysine has pKa values of 2.2 (alpha-COOH), 9.0 (alpha-NH3+) and 10.5 (side chain). What is its pI?",
+          "choices": [
+            "5.60",
+            "6.35",
+            "9.75",
+            "10.50"
+          ],
+          "answer": 2,
+          "why": "The zero-charge species is bracketed by the 9.0 and 10.5 dissociations, so pI = (9.0 + 10.5)/2 = 9.75. Averaging 2.2 and 9.0 gives the common wrong answer of 5.60."
+        },
+        {
+          "q": "Which amino acid is most likely to serve as a general acid-base catalyst in an enzyme active site at pH 7.4?",
+          "choices": [
+            "Arginine",
+            "Histidine",
+            "Leucine",
+            "Aspartate"
+          ],
+          "answer": 1,
+          "why": "Only histidine has a side-chain pKa (about 6.0) close enough to 7.4 to donate and accept protons readily. Arginine at pKa 12.5 stays protonated, aspartate at 3.9 stays deprotonated, and leucine is not ionizable."
+        },
+        {
+          "q": "Why is the peptide bond planar and unable to rotate?",
+          "choices": [
+            "A disulfide bond locks it",
+            "Resonance gives it partial double-bond character",
+            "Proline rings prevent rotation everywhere",
+            "Hydrogen bonding to water fixes its geometry"
+          ],
+          "answer": 1,
+          "why": "Delocalization of carbonyl electrons onto the nitrogen gives about 40% double-bond character, fixing the six atoms of the peptide unit in a plane. Disulfides are separate cross-links and proline affects only its own residue."
+        }
+      ]
+    },
+    {
+      "id": "sci-biochem-l03",
+      "title": "Protein structure, folding and hemoglobin",
+      "minutes": 8,
+      "body": "A protein's function comes entirely from its shape, and its shape is dictated by its sequence. Four levels describe it.\n\n## The four levels\n\n**Primary structure** is the amino acid sequence, held by covalent peptide bonds. Change one residue and you can destroy or create a disease — sickle cell is a single glutamate to valine substitution at position 6 of the beta-globin chain.\n\n**Secondary structure** is local backbone folding held by **hydrogen bonds between backbone amide and carbonyl groups** — not side chains. The **alpha helix** is right-handed with `3.6 residues per turn` and a rise of `0.54 nanometers` per turn; each carbonyl hydrogen bonds to the amide four residues ahead. Side chains point outward. Proline and glycine break helices. The **beta sheet** lines up extended strands side by side, parallel or antiparallel, with hydrogen bonds between adjacent strands. Turns and loops connect them.\n\n**Tertiary structure** is the overall three-dimensional shape of one polypeptide, driven by **side-chain** interactions: the hydrophobic effect burying nonpolar residues in the core, hydrogen bonds, ionic salt bridges, van der Waals contacts, and covalent disulfide bonds. Note the split — secondary is backbone, tertiary is side chain.\n\n**Quaternary structure** exists only in proteins with more than one polypeptide chain. Hemoglobin is the standard example: `two alpha` and `two beta` subunits.\n\n## Folding and its failures\n\nAnfinsen showed that a denatured ribonuclease refolds spontaneously into its active form, proving that all folding information is in the sequence. In cells, **chaperones** (heat shock proteins) prevent premature aggregation without adding information.\n\n**Denaturation** destroys higher-order structure while leaving the primary sequence intact. Heat, extreme pH, urea and guanidine hydrochloride, organic solvents, detergents and heavy metals all denature; boiling an egg and coagulating tissue with electrocautery are the same phenomenon. Some denaturation is reversible, much is not.\n\nMisfolding causes disease: amyloid beta in Alzheimer disease, alpha-synuclein in Parkinson disease, and misfolded PrP in prion disease all form beta-sheet-rich aggregates.\n\n> **Trap:** Denaturing a protein does not break peptide bonds. That is hydrolysis, a different process requiring acid, base or a protease.\n\n## Myoglobin versus hemoglobin\n\nBoth carry oxygen on a heme group — a porphyrin ring with `Fe2+` in the center. Only ferrous iron binds oxygen; oxidized `Fe3+` (methemoglobin) does not.\n\n**Myoglobin** is a single chain in muscle, a storage protein. Its oxygen binding curve is a **hyperbola** with `P50` around `2.8 mmHg` — extremely high affinity, so it holds oxygen until tissue oxygen gets very low.\n\n**Hemoglobin** is a tetramer, and its four subunits talk to each other. Binding oxygen at one heme shifts the whole molecule from the low-affinity **T (tense)** state to the high-affinity **R (relaxed)** state, making the next oxygen easier to bind. That is **positive cooperativity**, and it makes the curve **sigmoidal** with a `P50` near `26 mmHg`. The result is a transport protein that loads nearly fully in the lung at `100 mmHg` and unloads a large fraction in tissue at `20–40 mmHg`. A hyperbolic carrier could not do that.\n\n**Allosteric regulators shift the curve.** A **right shift** means lower affinity and easier unloading: more CO2, more H+ (lower pH), higher temperature, and more **2,3-bisphosphoglycerate (2,3-BPG)**, which binds in the central cavity of deoxyhemoglobin and stabilizes the T state. The pH effect is the **Bohr effect** — exercising muscle makes acid and heat, and hemoglobin responds by handing over more oxygen exactly where it is needed. A **left shift** is the opposite: alkalosis, hypothermia, low 2,3-BPG, carbon monoxide, and **fetal hemoglobin (HbF)**, whose gamma chains bind 2,3-BPG poorly, giving it higher affinity so it can pull oxygen across the placenta.\n\n> **On the exam:** Carbon monoxide binds hemoglobin about `200–250 times` more tightly than oxygen **and** left-shifts the remaining sites, so it both blocks and traps. That is why CO poisoning is worse than the oxygen saturation number suggests, and why standard pulse oximetry reads falsely normal.",
+      "keyPoints": [
+        "Secondary structure uses backbone hydrogen bonds; tertiary structure uses side-chain interactions including disulfides.",
+        "Alpha helix: right-handed, 3.6 residues per turn; proline and glycine break it.",
+        "Myoglobin is hyperbolic with P50 about 2.8 mmHg; hemoglobin is sigmoidal with P50 about 26 mmHg from cooperativity.",
+        "Right shift (unload more): high CO2, low pH, high temperature, high 2,3-BPG. Left shift: the opposite, plus CO and HbF.",
+        "Denaturation destroys 3D structure but does not break peptide bonds."
+      ],
+      "checks": [
+        {
+          "q": "Which interaction primarily stabilizes the alpha helix?",
+          "choices": [
+            "Disulfide bonds between cysteines",
+            "Hydrogen bonds between backbone carbonyl and amide groups",
+            "Ionic bonds between side chains",
+            "Hydrophobic packing of aromatic side chains"
+          ],
+          "answer": 1,
+          "why": "Secondary structure is a backbone phenomenon: each carbonyl hydrogen bonds to the amide four residues ahead. Side-chain interactions such as disulfides and salt bridges belong to tertiary structure."
+        },
+        {
+          "q": "A marathon runner's working muscle is acidic, warm, and high in CO2. What happens to the hemoglobin dissociation curve?",
+          "choices": [
+            "Left shift, increasing oxygen affinity",
+            "Right shift, decreasing affinity and releasing more oxygen",
+            "No change, because affinity is fixed by the heme",
+            "It becomes hyperbolic like myoglobin"
+          ],
+          "answer": 1,
+          "why": "Low pH, high CO2 and high temperature stabilize the T state, which is the Bohr effect and delivers more oxygen to active tissue. Affinity is not fixed, and cooperativity keeps the curve sigmoidal."
+        },
+        {
+          "q": "Why does fetal hemoglobin have a higher oxygen affinity than adult hemoglobin?",
+          "choices": [
+            "It contains three heme groups instead of four",
+            "Its gamma chains bind 2,3-BPG poorly",
+            "It uses Fe3+ rather than Fe2+",
+            "It is a monomer and therefore non-cooperative"
+          ],
+          "answer": 1,
+          "why": "2,3-BPG stabilizes the low-affinity T state, so weak binding by gamma chains leaves HbF left-shifted and able to extract oxygen from maternal blood. HbF is still a tetramer with four ferrous hemes."
+        }
+      ]
+    },
+    {
+      "id": "sci-biochem-l04",
+      "title": "Enzymes: catalysis, kinetics, inhibition and cofactors",
+      "minutes": 9,
+      "body": "An enzyme is a biological catalyst, almost always a protein (ribozymes are the RNA exception). It speeds a reaction by `10^6` to `10^17` fold without being consumed.\n\n## What catalysis actually does\n\nAn enzyme **lowers the activation energy** by stabilizing the transition state. It does **not** change the equilibrium constant, the free energy difference between substrate and product, or the direction the reaction goes. It changes only how fast equilibrium is reached.\n\nSubstrate binds at the **active site**, a small pocket of specific residues. The old **lock-and-key** model has been replaced by **induced fit**: the enzyme changes shape on binding to close around the substrate. Catalytic strategies include acid-base catalysis (histidine again), covalent catalysis (a transient enzyme-substrate bond, as with the serine of chymotrypsin), metal ion catalysis, and proximity and orientation effects.\n\nEnzymes are classified into six groups: oxidoreductases, transferases, hydrolases, lyases, isomerases, ligases.\n\n## Michaelis-Menten kinetics\n\nPlot initial velocity against substrate concentration and you get a hyperbola that plateaus at **Vmax**, where every active site is occupied and the enzyme is saturated.\n\n`v = (Vmax x [S]) / (Km + [S])`\n\n**Km** is the substrate concentration that gives half of Vmax. Its practical meaning: **Km is an inverse measure of affinity**. A low Km means the enzyme reaches half speed at low substrate, so it binds tightly. A high Km means weak binding.\n\nGlucokinase in the liver has a Km around `10 mM`, well above normal blood glucose of `5 mM`, so it only works hard after a meal. Hexokinase in other tissues has a Km of about `0.1 mM` and is saturated at all times. Same reaction, opposite physiologic jobs, and the difference is entirely Km.\n\n`kcat` is the turnover number, molecules of substrate converted per active site per second. `kcat/Km` is the specificity constant and is the best single measure of catalytic efficiency.\n\n> **Key:** Vmax depends on how much enzyme you have. Km does not.\n\n## Lineweaver-Burk\n\nThe hyperbola makes Vmax hard to read, so take reciprocals:\n\n`1/v = (Km/Vmax)(1/[S]) + 1/Vmax`\n\nThis is a straight line. The y-intercept is `1/Vmax`, the x-intercept is `-1/Km`, and the slope is `Km/Vmax`. The whole point of the double-reciprocal plot on an exam is reading inhibition type off the intercepts.\n\n## Inhibition\n\n**Competitive** — inhibitor resembles the substrate and binds the active site. **Km increases** (apparent affinity falls), **Vmax unchanged** because enough substrate outcompetes the inhibitor. On Lineweaver-Burk the lines share a y-intercept. Methanol poisoning treated with fomepizole or ethanol is this: both compete for alcohol dehydrogenase. Statins compete with HMG-CoA reductase's substrate.\n\n**Noncompetitive** — inhibitor binds an allosteric site on enzyme or enzyme-substrate complex. **Vmax decreases**, **Km unchanged**. Lines share an x-intercept. Adding substrate does not help.\n\n**Uncompetitive** — inhibitor binds only the enzyme-substrate complex. **Both Km and Vmax decrease** proportionally, so lines are parallel. Lithium on inositol monophosphatase is the standard example.\n\n**Irreversible** — covalent, permanent. Aspirin acetylating cyclooxygenase, penicillin on transpeptidase, organophosphates on acetylcholinesterase.\n\n> **Trap:** Competitive raises Km. Noncompetitive lowers Vmax. Uncompetitive does both. If you remember only that, you can answer almost every inhibition question.\n\n## Regulation\n\n**Allosteric regulation** — an effector binds away from the active site and changes shape. Allosteric enzymes are usually multi-subunit and give **sigmoidal** kinetics rather than hyperbolic. **Feedback inhibition** is the end product shutting off the first committed step.\n\n**Covalent modification** — mostly phosphorylation by kinases on serine, threonine or tyrosine, reversed by phosphatases. Glycogen phosphorylase is activated by phosphorylation; glycogen synthase is inactivated by it, which is how one signal coordinates opposite pathways.\n\n**Proteolytic activation** — inactive **zymogens** cut into active enzymes. Pepsinogen to pepsin, trypsinogen to trypsin, and the entire clotting cascade. This protects the cell from digesting itself; premature trypsin activation inside the pancreas is pancreatitis.\n\n## Cofactors and vitamins\n\nA **cofactor** is an inorganic ion (`Zn2+`, `Mg2+`, `Fe2+`). A **coenzyme** is an organic helper, and most come from water-soluble vitamins: thiamine (B1) gives TPP for pyruvate dehydrogenase; riboflavin (B2) gives FAD; niacin (B3) gives NAD+; pantothenate (B5) gives coenzyme A; pyridoxine (B6) gives PLP for every transamination; biotin (B7) carries CO2 for carboxylases; folate (B9) carries one-carbon units; cobalamin (B12) serves methylmalonyl-CoA mutase and methionine synthase. A holoenzyme is the complete active protein; an apoenzyme is the protein without its cofactor.",
+      "keyPoints": [
+        "Enzymes lower activation energy and speed equilibrium; they never change the equilibrium constant or delta G.",
+        "Km is the substrate concentration at half Vmax and is an inverse measure of affinity; hexokinase Km 0.1 mM versus glucokinase 10 mM.",
+        "Competitive inhibition raises Km with Vmax unchanged; noncompetitive lowers Vmax with Km unchanged; uncompetitive lowers both.",
+        "On Lineweaver-Burk, y-intercept is 1/Vmax, x-intercept is -1/Km, slope is Km/Vmax.",
+        "Regulation: allosteric effectors, phosphorylation by kinases, and zymogen cleavage."
+      ],
+      "checks": [
+        {
+          "q": "An inhibitor raises the measured Km from 2 mM to 8 mM but leaves Vmax unchanged. What type is it?",
+          "choices": [
+            "Competitive",
+            "Noncompetitive",
+            "Uncompetitive",
+            "Irreversible"
+          ],
+          "answer": 0,
+          "why": "Only competitive inhibition raises apparent Km while preserving Vmax, because excess substrate outcompetes the inhibitor. Noncompetitive lowers Vmax and uncompetitive lowers both."
+        },
+        {
+          "q": "Liver glucokinase has a Km of about 10 mM while blood glucose is about 5 mM. What does this accomplish?",
+          "choices": [
+            "The liver traps glucose constantly regardless of intake",
+            "The liver takes up glucose mainly after a meal when concentrations rise",
+            "Glucokinase is saturated at all glucose concentrations",
+            "Glucokinase has higher affinity than hexokinase"
+          ],
+          "answer": 1,
+          "why": "A Km above the normal blood level means the enzyme works well below capacity until postprandial glucose rises, so the liver acts as a buffer. High Km means low affinity, the opposite of hexokinase."
+        },
+        {
+          "q": "On a Lineweaver-Burk plot, what does the y-intercept represent?",
+          "choices": [
+            "-1/Km",
+            "Km/Vmax",
+            "1/Vmax",
+            "Vmax/Km"
+          ],
+          "answer": 2,
+          "why": "The double-reciprocal equation puts 1/Vmax at the y-intercept, -1/Km at the x-intercept, and Km/Vmax as the slope. Confusing the intercepts is the most common error in reading these plots."
+        }
+      ]
+    },
+    {
+      "id": "sci-biochem-l05",
+      "title": "Carbohydrates and glycolysis",
+      "minutes": 8,
+      "body": "## Carbohydrate structure\n\nCarbohydrates have the general formula `(CH2O)n`. **Monosaccharides** are single units classified by carbonyl type — **aldoses** (aldehyde, like glucose) and **ketoses** (ketone, like fructose) — and by carbon count: trioses, pentoses (ribose, deoxyribose), hexoses (glucose, galactose, fructose, mannose).\n\nIn water, glucose cyclizes: the C5 hydroxyl attacks the C1 aldehyde to form a six-membered pyranose ring. C1 becomes a new chiral center called the **anomeric carbon**, giving **alpha** (hydroxyl down) and **beta** (hydroxyl up) forms that interconvert through the open chain — **mutarotation**. The distinction is not trivial: we digest alpha-1,4 links in starch and cannot digest the beta-1,4 links in cellulose.\n\n**Epimers** differ at exactly one chiral carbon: galactose is the C4 epimer of glucose, mannose the C2 epimer. **Enantiomers** are complete mirror images; biology uses D-sugars and L-amino acids.\n\n**Disaccharides**: maltose is glucose-glucose alpha-1,4; sucrose is glucose-fructose alpha-1,beta-2; lactose is galactose-glucose beta-1,4. A **glycosidic bond** forms by condensation, releasing water. A sugar with a free anomeric carbon is **reducing**; sucrose is the classic non-reducing sugar because both anomeric carbons are tied up.\n\n**Polysaccharides**: starch is plant storage (amylose is linear alpha-1,4; amylopectin branches alpha-1,6 every `24–30` residues); **glycogen** is the animal version and branches every `8–12` residues, which gives far more non-reducing ends for rapid mobilization; cellulose is beta-1,4 glucose, indigestible to us; chitin is the fungal and arthropod version.\n\n## Glycolysis\n\nGlycolysis splits one glucose into two pyruvate in the **cytoplasm**, works with or without oxygen, and is present in essentially every cell.\n\n**Investment phase (uses 2 ATP).**\n\n1. Glucose to glucose-6-phosphate — **hexokinase** (glucokinase in liver). Uses ATP. Phosphorylation traps glucose in the cell because the charged molecule cannot cross the membrane. Irreversible.\n2. G6P to fructose-6-phosphate — phosphoglucose isomerase.\n3. F6P to **fructose-1,6-bisphosphate** — **phosphofructokinase-1 (PFK-1)**. Uses ATP. This is the **rate-limiting, committed step** and the main control point. Irreversible.\n4. Aldolase cleaves the six-carbon sugar into dihydroxyacetone phosphate and glyceraldehyde-3-phosphate; triose phosphate isomerase converts DHAP to G3P, so everything downstream happens twice per glucose.\n\n**Payoff phase (makes 4 ATP and 2 NADH).**\n\n5. G3P to 1,3-bisphosphoglycerate — glyceraldehyde-3-phosphate dehydrogenase. **Produces NADH.**\n6. 1,3-BPG to 3-phosphoglycerate — phosphoglycerate kinase. **Substrate-level phosphorylation, makes ATP.**\n7. Mutase to 2-phosphoglycerate; enolase removes water to phosphoenolpyruvate.\n8. PEP to pyruvate — **pyruvate kinase**. Makes ATP. Irreversible.\n\n**Net per glucose: 2 ATP, 2 NADH, 2 pyruvate.** Gross ATP is 4, minus the 2 invested.\n\nThe three irreversible steps — hexokinase, PFK-1, pyruvate kinase — are exactly the three that gluconeogenesis must bypass.\n\n## Regulation\n\nPFK-1 is the pivot. It is **inhibited by ATP and citrate** (the cell has plenty of energy) and **activated by AMP and fructose-2,6-bisphosphate**. F2,6-BP is the hormonal signal: insulin raises it and drives glycolysis; glucagon lowers it and drives gluconeogenesis. Both are made and destroyed by the bifunctional enzyme PFK-2/FBPase-2.\n\nHexokinase is inhibited by its own product G6P; glucokinase is not, so the liver keeps taking up glucose after a meal. Pyruvate kinase is activated by fructose-1,6-bisphosphate (feed-forward) and inhibited by ATP, alanine and glucagon signaling.\n\n## The fate of pyruvate and of NADH\n\nGlycolysis consumes NAD+, and the cell has a limited pool, so NAD+ must be regenerated or glycolysis stops within seconds.\n\nWith oxygen, NADH delivers electrons to the mitochondrion and pyruvate is oxidized to acetyl-CoA. Without oxygen, **lactate dehydrogenase** reduces pyruvate to **lactate**, regenerating NAD+. The point of fermentation is not the lactate; it is the NAD+.\n\nRed blood cells have no mitochondria and always use this route. Exercising muscle uses it when demand outruns oxygen delivery, and the liver converts that lactate back to glucose through the **Cori cycle**.\n\n> **On shift:** A rising serum lactate means tissues are producing ATP without enough oxygen. It is one of the fastest indicators that a patient in shock or sepsis is not perfusing.\n\nFructose enters at the liver through fructokinase to fructose-1-phosphate and aldolase B, bypassing PFK-1 — which is why large fructose loads are not rate-limited and feed lipogenesis. Galactose enters through galactokinase and GALT to glucose-1-phosphate.",
+      "keyPoints": [
+        "Glycolysis is cytoplasmic, oxygen-independent, and nets 2 ATP, 2 NADH and 2 pyruvate per glucose.",
+        "PFK-1 is the rate-limiting committed step: inhibited by ATP and citrate, activated by AMP and fructose-2,6-bisphosphate.",
+        "The three irreversible steps are hexokinase, PFK-1 and pyruvate kinase — the ones gluconeogenesis bypasses.",
+        "Lactate fermentation exists to regenerate NAD+, not to make lactate; without NAD+ glycolysis stops.",
+        "Glycogen branches every 8–12 residues versus 24–30 in amylopectin, giving more ends for fast mobilization."
+      ],
+      "checks": [
+        {
+          "q": "What is the net yield of glycolysis per molecule of glucose?",
+          "choices": [
+            "4 ATP, 2 NADH, 2 pyruvate",
+            "2 ATP, 2 NADH, 2 pyruvate",
+            "2 ATP, 4 NADH, 2 lactate",
+            "38 ATP and 6 CO2"
+          ],
+          "answer": 1,
+          "why": "Four ATP are produced but two are invested in the hexokinase and PFK-1 steps, leaving a net of 2. The 38 ATP figure describes complete aerobic oxidation, not glycolysis alone."
+        },
+        {
+          "q": "A cell has abundant ATP and citrate. What happens at PFK-1?",
+          "choices": [
+            "It is activated, accelerating glycolysis",
+            "It is inhibited, slowing glycolysis",
+            "It is unaffected because it responds only to glucose",
+            "It switches to producing fructose-2,6-bisphosphate"
+          ],
+          "answer": 1,
+          "why": "ATP and citrate both signal energy abundance and allosterically inhibit PFK-1, the committed step. AMP and fructose-2,6-bisphosphate are the activators, and PFK-2 is the separate enzyme that makes F2,6-BP."
+        },
+        {
+          "q": "Why must a red blood cell convert pyruvate to lactate?",
+          "choices": [
+            "Lactate is its preferred fuel",
+            "It has no mitochondria, so lactate dehydrogenase is its only way to regenerate NAD+",
+            "Lactate buffers intracellular pH",
+            "It lacks pyruvate kinase"
+          ],
+          "answer": 1,
+          "why": "Without mitochondria the cell cannot reoxidize NADH through the electron transport chain, so LDH must do it or glycolysis halts for lack of NAD+. Red cells have a full glycolytic enzyme set including pyruvate kinase."
+        }
+      ]
+    },
+    {
+      "id": "sci-biochem-l06",
+      "title": "The citric acid cycle, electron transport and ATP accounting",
+      "minutes": 9,
+      "body": "Glycolysis extracts a small fraction of glucose's energy. The rest comes out in the mitochondrion.\n\n## Pyruvate dehydrogenase: the link\n\nPyruvate enters the mitochondrial matrix and the **pyruvate dehydrogenase complex (PDH)** converts it to **acetyl-CoA**, releasing `CO2` and making `NADH`. It is **irreversible** — which is the structural reason fatty acids and acetyl-CoA can never be turned back into glucose in humans.\n\nPDH needs five coenzymes from four vitamins: **thiamine pyrophosphate (B1)**, lipoic acid, **FAD (B2)**, **NAD+ (B3)**, **coenzyme A (B5)**. Thiamine deficiency stalls PDH, pyruvate backs up into lactate, and the result is beriberi and Wernicke encephalopathy — the reason alcohol-dependent patients get thiamine.\n\nPDH is inhibited by its products acetyl-CoA and NADH, and by ATP; it is activated by the opposite signals and by insulin.\n\n## The citric acid cycle\n\nAlso called the Krebs or TCA cycle. It runs in the **mitochondrial matrix**, is **aerobic** (it needs NAD+ and FAD back from the chain), and it is amphibolic: it both burns fuel and supplies biosynthetic precursors.\n\nAcetyl-CoA (`2 carbons`) condenses with oxaloacetate (`4 carbons`) to make citrate (`6 carbons`). Then:\n\n- Citrate to isocitrate (aconitase).\n- Isocitrate to alpha-ketoglutarate — **isocitrate dehydrogenase**, the **rate-limiting step**; releases CO2, makes **NADH**.\n- Alpha-ketoglutarate to succinyl-CoA — alpha-ketoglutarate dehydrogenase, mechanistically a twin of PDH with the same five coenzymes; releases CO2, makes **NADH**.\n- Succinyl-CoA to succinate — makes **GTP** (or ATP), the cycle's only substrate-level phosphorylation.\n- Succinate to fumarate — succinate dehydrogenase, makes **FADH2**. This enzyme is also **Complex II**, embedded in the inner membrane.\n- Fumarate to malate, then malate to oxaloacetate — makes **NADH**.\n\n**Per acetyl-CoA: 3 NADH, 1 FADH2, 1 GTP, 2 CO2.** Per glucose, double it: `6 NADH, 2 FADH2, 2 GTP, 4 CO2`.\n\n> **Trap:** The cycle itself consumes no oxygen. It stops without oxygen because NADH and FADH2 have nowhere to dump electrons, so NAD+ and FAD are never regenerated. That is an indirect dependence, and exams test it.\n\nRegulation is simple and consistent: NADH and ATP inhibit, ADP and calcium activate. Calcium is the elegant part — the same signal that makes muscle contract turns up the machinery that pays for it.\n\n## Electron transport and chemiosmosis\n\nThe chain sits in the **inner mitochondrial membrane**. Electrons flow from carriers of low reduction potential toward oxygen, the highest, and each transfer releases energy used to pump protons into the intermembrane space.\n\n- **Complex I** (NADH dehydrogenase) takes electrons from NADH, pumps `4 H+`.\n- **Complex II** (succinate dehydrogenase) takes electrons from FADH2. It **pumps no protons**, which is exactly why FADH2 yields less ATP.\n- **Coenzyme Q (ubiquinone)** ferries electrons from I and II to III; it is lipid-soluble and mobile.\n- **Complex III** pumps `4 H+`; **cytochrome c** carries electrons to Complex IV.\n- **Complex IV** (cytochrome c oxidase) transfers electrons to `O2`, making water, and pumps `2 H+`. Oxygen is the **final electron acceptor** and nothing else in humans can take its place.\n\nThe pumping builds a proton gradient — the **proton-motive force** — and protons flow back through **ATP synthase (Complex V)**, whose rotation drives ATP formation. This is **Mitchell's chemiosmotic theory**, and the key insight is that electron transport and ATP synthesis are separate events **coupled by a gradient**, not by a chemical intermediate.\n\n**Poisons, by site.** Rotenone blocks Complex I. Antimycin A blocks Complex III. **Cyanide and carbon monoxide** block Complex IV — everything backs up, oxygen cannot be used, and the patient dies with normal arterial oxygen content. **Oligomycin** blocks ATP synthase itself. **Uncouplers** are different: 2,4-dinitrophenol and physiologic **thermogenin (UCP1)** in brown fat let protons leak back without making ATP, so electron transport races and the energy leaves as heat.\n\n## ATP accounting\n\nModern measured values: each NADH yields about `2.5 ATP`, each FADH2 about `1.5 ATP`, because proton pumping and ATP synthase stoichiometry are not whole numbers. Older textbooks use `3` and `2`.\n\nPer glucose, using `2.5`/`1.5`:\n\n| Source | Yield |\n|---|---|\n| Glycolysis substrate-level | 2 ATP |\n| Glycolysis 2 NADH (cytosolic) | 3–5 ATP |\n| PDH 2 NADH | 5 ATP |\n| TCA 6 NADH | 15 ATP |\n| TCA 2 FADH2 | 3 ATP |\n| TCA 2 GTP | 2 ATP |\n| **Total** | **30–32 ATP** |\n\nThe range exists because cytosolic NADH cannot cross the inner membrane and must use a shuttle. The **malate-aspartate shuttle** (liver, heart, kidney) delivers NADH and yields `2.5`; the **glycerol-3-phosphate shuttle** (muscle, brain) delivers FADH2 and yields only `1.5`.\n\n> **On the exam:** If a question says `36–38 ATP`, it is using the old whole-number values. If it says `30–32`, it is using current measurements. Read which convention the question assumes.",
+      "keyPoints": [
+        "PDH is irreversible and needs thiamine, lipoate, FAD, NAD+ and CoA — the reason alcoholics get thiamine.",
+        "Per acetyl-CoA the TCA cycle yields 3 NADH, 1 FADH2, 1 GTP and 2 CO2; isocitrate dehydrogenase is rate-limiting.",
+        "Complex II pumps no protons, which is why FADH2 yields about 1.5 ATP versus 2.5 for NADH.",
+        "Cyanide and carbon monoxide block Complex IV; oligomycin blocks ATP synthase; uncouplers dissipate the gradient as heat.",
+        "Total per glucose is 30–32 ATP by modern values (36–38 by older convention), depending on which NADH shuttle is used."
+      ],
+      "checks": [
+        {
+          "q": "Why does the citric acid cycle stop in the absence of oxygen even though it uses no oxygen directly?",
+          "choices": [
+            "Oxygen is a substrate of citrate synthase",
+            "NAD+ and FAD cannot be regenerated without the electron transport chain",
+            "CO2 accumulates and inhibits aconitase",
+            "Acetyl-CoA cannot be made anaerobically"
+          ],
+          "answer": 1,
+          "why": "The cycle needs oxidized cofactors, and only the electron transport chain with oxygen as the final acceptor regenerates them. No cycle enzyme uses O2 as a substrate."
+        },
+        {
+          "q": "A patient exposed to cyanide has normal arterial oxygen saturation but severe lactic acidosis. What is the mechanism?",
+          "choices": [
+            "Complex I inhibition",
+            "Complex IV inhibition, preventing oxygen use",
+            "ATP synthase inhibition by oligomycin",
+            "Uncoupling of oxidative phosphorylation"
+          ],
+          "answer": 1,
+          "why": "Cyanide binds cytochrome c oxidase so oxygen cannot accept electrons; blood carries oxygen fine but cells cannot use it, forcing anaerobic glycolysis. Uncouplers would cause hyperthermia with continued oxygen consumption."
+        },
+        {
+          "q": "2,4-dinitrophenol causes dangerous hyperthermia because it:",
+          "choices": [
+            "Blocks electron flow at Complex III",
+            "Allows protons to re-enter the matrix without passing through ATP synthase",
+            "Inhibits pyruvate dehydrogenase",
+            "Prevents oxygen from binding cytochrome c oxidase"
+          ],
+          "answer": 1,
+          "why": "An uncoupler dissipates the proton gradient as heat, so electron transport accelerates while ATP output falls. Blocking a complex or PDH would slow metabolism rather than generate excess heat."
+        }
+      ]
+    },
+    {
+      "id": "sci-biochem-l07",
+      "title": "Gluconeogenesis, glycogen, the pentose phosphate pathway and the fed-fasted switch",
+      "minutes": 9,
+      "body": "The brain uses about `120 grams` of glucose a day and red blood cells have no alternative fuel, so blood glucose must stay near `70–100 mg/dL` whether you ate or not. Three pathways and two hormones do that work.\n\n## Gluconeogenesis\n\nMostly liver, some kidney cortex. It runs glycolysis backwards except at the three irreversible steps, and it costs `6 ATP equivalents` per glucose.\n\nThe four bypass reactions:\n\n1. **Pyruvate carboxylase** (mitochondria) converts pyruvate to oxaloacetate, using ATP and **biotin**, activated by acetyl-CoA. This is the step fatty acid oxidation turns on during fasting.\n2. **PEP carboxykinase (PEPCK)** converts oxaloacetate to phosphoenolpyruvate, using GTP. Induced by glucagon and cortisol.\n3. **Fructose-1,6-bisphosphatase** replaces PFK-1. This is the **rate-limiting step**, inhibited by AMP and by fructose-2,6-bisphosphate.\n4. **Glucose-6-phosphatase** in the endoplasmic reticulum releases free glucose. **Only liver and kidney have it** — which is why muscle can never contribute glucose to the blood directly.\n\nSubstrates: lactate (Cori cycle), glucogenic amino acids (alanine especially, via the glucose-alanine cycle), and glycerol from triglyceride breakdown.\n\n> **Key:** Fatty acids cannot become glucose. Beta-oxidation makes acetyl-CoA, PDH is irreversible, and the two carbons entering the TCA cycle leave as two CO2. The only exceptions are the glycerol backbone and odd-chain fatty acids, which yield propionyl-CoA.\n\n## Glycogen metabolism\n\nGlycogen is stored in liver (about `100 grams`, for blood glucose) and muscle (about `400 grams`, for its own use only).\n\n**Synthesis**: glucose-6-phosphate to glucose-1-phosphate, then UDP-glucose via UDP-glucose pyrophosphorylase. **Glycogen synthase** adds alpha-1,4 links and is the rate-limiting enzyme; branching enzyme creates alpha-1,6 branches.\n\n**Breakdown**: **glycogen phosphorylase** cleaves alpha-1,4 bonds by phosphorolysis, producing glucose-1-phosphate without spending ATP; debranching enzyme handles alpha-1,6 points. Roughly `90%` of released units are glucose-1-phosphate and `10%` free glucose from branch points.\n\nControl is reciprocal and elegant. **Glucagon and epinephrine** raise cyclic AMP, activate protein kinase A, which phosphorylates and **activates phosphorylase** while phosphorylating and **inactivating synthase**. **Insulin** activates protein phosphatase-1, which removes those phosphates and flips both enzymes the other way. In muscle, calcium and AMP activate phosphorylase directly during exercise — no hormone required.\n\nGlycogen storage diseases follow from single missing enzymes: von Gierke (type I, glucose-6-phosphatase — severe fasting hypoglycemia and hepatomegaly), Pompe (type II, lysosomal acid maltase — cardiomegaly), Cori (type III, debranching enzyme), McArdle (type V, muscle phosphorylase — exercise intolerance and cramps with no rise in lactate).\n\n## The pentose phosphate pathway\n\nCytoplasmic, and it makes no ATP. Its two products are the point.\n\nThe **oxidative phase** is irreversible: glucose-6-phosphate through **glucose-6-phosphate dehydrogenase (G6PD)** — the rate-limiting enzyme, regulated by NADP+ — produces `2 NADPH` and a five-carbon ribulose-5-phosphate. The **non-oxidative phase** is reversible and interconverts sugars via transketolase (needs thiamine) and transaldolase, supplying **ribose-5-phosphate** for nucleotides.\n\nNADPH is not NADH. NADH goes to the electron transport chain to make ATP. **NADPH is reducing power for biosynthesis** — fatty acid and cholesterol synthesis, steroid hormones — and for antioxidant defense, where it regenerates reduced glutathione.\n\nThat last job explains **G6PD deficiency**, the most common human enzyme defect, affecting roughly `400 million` people. Without NADPH, red cells cannot maintain glutathione, oxidative stress denatures hemoglobin into Heinz bodies, and hemolysis follows exposure to fava beans, sulfonamides, nitrofurantoin, primaquine, or infection.\n\n## The fed and fasted states\n\n**Fed (absorptive, 0–4 hours).** Insulin from beta cells rises. Glucose uptake through GLUT4 in muscle and adipose, glycolysis, glycogen synthesis, fatty acid synthesis, protein synthesis. Everything is storage.\n\n**Fasting (4–24 hours).** Glucagon rises and insulin falls. Liver glycogenolysis carries the first `8–12 hours`; gluconeogenesis takes over and dominates by `24 hours`, when liver glycogen is gone. Adipose lipolysis supplies fatty acids so most tissues stop using glucose, sparing it for the brain.\n\n**Starvation (beyond 2–3 days).** Gluconeogenesis continues from amino acids, and the liver makes **ketone bodies** from fatty acids. By `2–3 weeks` the brain covers more than half its energy from ketones, which spares muscle protein — the adaptation that determines survival time.\n\n> **On shift:** Diabetic ketoacidosis is the fasted program running with no brake. Insulin is absent, so lipolysis and ketogenesis run at maximum while glucose is high, producing the classic picture: glucose often above `250 mg/dL`, anion-gap acidosis, ketones, and Kussmaul breathing as the lungs blow off CO2 to compensate. Type 2 diabetes retains enough insulin to suppress ketogenesis, which is why it presents instead as hyperosmolar hyperglycemia with glucose frequently over `600 mg/dL`.",
+      "keyPoints": [
+        "Gluconeogenesis bypasses four steps: pyruvate carboxylase, PEPCK, fructose-1,6-bisphosphatase (rate-limiting), glucose-6-phosphatase.",
+        "Only liver and kidney have glucose-6-phosphatase, so muscle glycogen cannot raise blood glucose.",
+        "Fatty acids cannot be converted to glucose because pyruvate dehydrogenase is irreversible.",
+        "The pentose phosphate pathway makes NADPH for biosynthesis and glutathione, plus ribose-5-phosphate; G6PD is rate-limiting.",
+        "Liver glycogen covers roughly the first 8–12 hours of fasting; gluconeogenesis dominates by 24 hours; ketones spare protein in starvation."
+      ],
+      "checks": [
+        {
+          "q": "Why can muscle glycogen not be used to raise blood glucose?",
+          "choices": [
+            "Muscle lacks glycogen phosphorylase",
+            "Muscle lacks glucose-6-phosphatase",
+            "Muscle glycogen is not branched",
+            "Glucagon receptors saturate in muscle"
+          ],
+          "answer": 1,
+          "why": "Without glucose-6-phosphatase, muscle cannot dephosphorylate glucose-6-phosphate, and the charged molecule cannot leave the cell. Muscle has abundant phosphorylase and normal branched glycogen."
+        },
+        {
+          "q": "A patient with G6PD deficiency develops hemolysis after starting nitrofurantoin. The underlying defect is:",
+          "choices": [
+            "Inability to make ATP anaerobically",
+            "Insufficient NADPH to regenerate reduced glutathione",
+            "Failure of the malate-aspartate shuttle",
+            "Deficient ribose-5-phosphate for DNA repair"
+          ],
+          "answer": 1,
+          "why": "NADPH from the oxidative pentose phosphate pathway keeps glutathione reduced; without it, oxidant drugs denature hemoglobin into Heinz bodies and red cells lyse. ATP production through glycolysis is intact."
+        },
+        {
+          "q": "After 36 hours without food, what is the liver's main source of blood glucose?",
+          "choices": [
+            "Glycogenolysis",
+            "Gluconeogenesis from lactate, glycerol and amino acids",
+            "Conversion of fatty acids to glucose",
+            "Absorption of dietary glucose"
+          ],
+          "answer": 1,
+          "why": "Liver glycogen is depleted by roughly 24 hours, so gluconeogenesis dominates. Fatty acids cannot become glucose because pyruvate dehydrogenase is irreversible."
+        }
+      ]
+    },
+    {
+      "id": "sci-biochem-l08",
+      "title": "Lipids, membranes, beta-oxidation, ketones and lipoproteins",
+      "minutes": 9,
+      "body": "## Structure\n\n**Fatty acids** are hydrocarbon chains with a carboxyl end. **Saturated** means no double bonds and a straight chain that packs tightly, so those fats are solid at room temperature. **Unsaturated** means one or more cis double bonds, each of which kinks the chain, prevents packing, and lowers melting point. Trans fats are unsaturated but straight, which is why they behave like saturated fats.\n\nNaming: `18:1 delta-9` is 18 carbons with one double bond after carbon 9. **Omega** numbering counts from the methyl end — omega-3 and omega-6 are the two **essential** fatty acids (linolenic and linoleic) because humans cannot desaturate past carbon 9.\n\n**Triglycerides** are glycerol plus three fatty acids in ester linkage. They are the body's dense energy store at `9 kcal/gram` versus `4 kcal/gram` for carbohydrate and protein, because they are highly reduced and anhydrous.\n\n**Phospholipids** replace one fatty acid with a phosphate-containing head group, making them **amphipathic** — a polar head and two nonpolar tails. Dropped in water they self-assemble into bilayers, driven by the hydrophobic effect. **Cholesterol** is a four-ring sterol that inserts between phospholipids, making the membrane less fluid at high temperature and preventing tight packing at low temperature. It is a fluidity **buffer**, not simply a stiffener. **Sphingolipids** and **glycolipids** populate the outer leaflet, and the fluid mosaic model describes the whole arrangement: a two-dimensional fluid with proteins floating in it.\n\n## Beta-oxidation\n\nTriglyceride in adipose is broken down by hormone-sensitive lipase, activated by glucagon and epinephrine and inhibited by insulin. Free fatty acids travel on albumin.\n\nActivation happens in the cytoplasm: fatty acyl-CoA synthetase attaches CoA at a cost of `2 ATP equivalents`. Long-chain acyl-CoA cannot cross the inner mitochondrial membrane, so the **carnitine shuttle** carries it in. **CPT-1** is the rate-limiting enzyme and is **inhibited by malonyl-CoA** — the first intermediate of fatty acid synthesis. That single inhibition is what stops the cell from building and burning fat at the same time.\n\nEach round of beta-oxidation removes two carbons and produces `1 FADH2`, `1 NADH`, and `1 acetyl-CoA`. Palmitate (`16:0`) takes `7` rounds and yields `8 acetyl-CoA`, `7 FADH2`, `7 NADH` — about `106 ATP` net after the `2` spent on activation.\n\nOdd-chain fatty acids end with propionyl-CoA, which becomes succinyl-CoA (requiring biotin and **B12**) and can enter gluconeogenesis. **MCAD deficiency** blocks medium-chain acyl-CoA dehydrogenase: during fasting the child cannot oxidize fat, so hypoglycemia occurs **without ketones** — hypoketotic hypoglycemia, a newborn-screening target.\n\n## Ketogenesis\n\nWhen fatty acid oxidation floods the liver with acetyl-CoA and oxaloacetate is being consumed by gluconeogenesis, acetyl-CoA is diverted to **ketone bodies** in the liver mitochondria: **acetoacetate**, **beta-hydroxybutyrate** (the most abundant) and **acetone** (exhaled, the fruity breath).\n\nKetones are water-soluble, cross the blood-brain barrier, and are used by brain, heart and muscle. The **liver cannot use them** because it lacks thiophorase (succinyl-CoA:acetoacetate CoA transferase) — an elegant piece of design: the organ that makes the fuel does not compete for it.\n\nPhysiologic ketosis in fasting is mild. In type 1 diabetes, absent insulin removes all restraint and ketoacid accumulation overwhelms the bicarbonate buffer, producing DKA.\n\n## Fatty acid synthesis\n\nThe mirror image, and the contrasts are commonly tested. Synthesis is **cytoplasmic** (oxidation is mitochondrial), uses **NADPH** (oxidation makes NADH and FADH2), builds on **acyl carrier protein** (oxidation uses CoA), and occurs in the fed state under insulin.\n\nCitrate carries acetyl units out of the mitochondrion. **Acetyl-CoA carboxylase** makes malonyl-CoA using biotin and ATP — the **rate-limiting, committed step**, activated by citrate and insulin, inhibited by palmitoyl-CoA and glucagon. Fatty acid synthase then adds two carbons at a time up to palmitate.\n\n## Cholesterol and lipoproteins\n\nCholesterol is synthesized from acetyl-CoA; **HMG-CoA reductase** is the rate-limiting enzyme and the target of statins. Cholesterol is the precursor of bile acids, vitamin D, and all steroid hormones.\n\nLipids are not water-soluble, so they travel as **lipoproteins** — a core of triglyceride and cholesterol ester wrapped in phospholipid, free cholesterol and apolipoproteins.\n\n| Particle | Carries | Job |\n|---|---|---|\n| Chylomicron | Dietary triglyceride | Gut to tissues |\n| VLDL | Endogenous triglyceride | Liver to tissues |\n| IDL | Remnant | Intermediate |\n| LDL | Cholesterol | Liver to tissues; \"bad\" |\n| HDL | Cholesterol | Tissues back to liver; \"good\" |\n\n**Lipoprotein lipase** on capillary endothelium, activated by apoC-II, strips triglyceride from chylomicrons and VLDL. LDL is taken up by the **LDL receptor** through apoB-100; defects in that receptor cause **familial hypercholesterolemia**, with LDL often above `190 mg/dL`, tendon xanthomas and premature coronary disease. HDL performs reverse cholesterol transport.\n\n> **On the exam:** LDL delivers, HDL retrieves. Oxidized LDL taken up by macrophages in the arterial wall forms foam cells, and that is the first step of atherosclerosis.",
+      "keyPoints": [
+        "Triglycerides store 9 kcal/gram; cis double bonds kink chains and lower melting point.",
+        "CPT-1 is the rate-limiting step of beta-oxidation and is inhibited by malonyl-CoA, preventing simultaneous synthesis and oxidation.",
+        "Each beta-oxidation round gives 1 FADH2, 1 NADH and 1 acetyl-CoA; palmitate nets about 106 ATP.",
+        "The liver makes ketones but cannot use them because it lacks thiophorase.",
+        "Fatty acid synthesis is cytoplasmic and NADPH-driven; acetyl-CoA carboxylase is the committed step."
+      ],
+      "checks": [
+        {
+          "q": "Malonyl-CoA inhibits CPT-1. What does this accomplish?",
+          "choices": [
+            "It prevents ketone body formation in muscle",
+            "It prevents fatty acid synthesis and oxidation from running at the same time",
+            "It activates hormone-sensitive lipase",
+            "It allows the liver to use ketone bodies"
+          ],
+          "answer": 1,
+          "why": "Malonyl-CoA is the first committed intermediate of synthesis, so its presence signals the fed state and blocks fatty acid entry into mitochondria. It is a reciprocal control, not a lipase or ketone effect."
+        },
+        {
+          "q": "An infant with MCAD deficiency becomes hypoglycemic after a prolonged fast, with low ketones. Why are ketones low?",
+          "choices": [
+            "Ketogenesis requires insulin",
+            "Fatty acid oxidation is blocked, so acetyl-CoA for ketogenesis is not generated",
+            "The liver consumes ketones itself",
+            "Gluconeogenesis is also blocked"
+          ],
+          "answer": 1,
+          "why": "Ketone bodies are made from the acetyl-CoA produced by beta-oxidation, so blocking oxidation yields hypoketotic hypoglycemia. The liver lacks thiophorase and cannot consume ketones, and insulin suppresses rather than drives ketogenesis."
+        },
+        {
+          "q": "Which lipoprotein performs reverse cholesterol transport?",
+          "choices": [
+            "Chylomicron",
+            "VLDL",
+            "LDL",
+            "HDL"
+          ],
+          "answer": 3,
+          "why": "HDL collects cholesterol from peripheral tissues and returns it to the liver. Chylomicrons and VLDL carry triglyceride outward and LDL delivers cholesterol to tissues."
+        }
+      ]
+    },
+    {
+      "id": "sci-biochem-l09",
+      "title": "Nitrogen metabolism: amino acid degradation, the urea cycle and nucleotides",
+      "minutes": 8,
+      "body": "Unlike fat and carbohydrate, there is no storage form of protein. Every amino acid is either part of a functioning molecule or is being burned, and burning one releases nitrogen that is toxic.\n\n## Removing the nitrogen\n\n**Transamination** moves an amino group from an amino acid onto alpha-ketoglutarate, making glutamate and a new keto acid. The enzymes are **aminotransferases**, and every one of them requires **pyridoxal phosphate (PLP) from vitamin B6**. **ALT** handles alanine and **AST** handles aspartate — the same two enzymes measured on a liver panel, because damaged hepatocytes leak them.\n\nGlutamate is the funnel. **Oxidative deamination** by **glutamate dehydrogenase** in the mitochondrion then strips the nitrogen off as free **ammonia (NH4+)**, producing NADH and regenerating alpha-ketoglutarate.\n\nMuscle uses the **glucose-alanine cycle**: it transfers nitrogen onto pyruvate to make alanine, ships it to the liver, and the liver recovers both the nitrogen for urea and the carbon for glucose.\n\n## Ammonia toxicity\n\nAmmonia is a neurotoxin. It drives glutamate dehydrogenase backwards, consuming alpha-ketoglutarate and draining the TCA cycle, and it drives glutamine synthesis in astrocytes, which causes osmotic swelling and cerebral edema. Clinically: confusion, asterixis (flapping tremor), and coma. Normal blood ammonia is roughly `15–45 micromol/L`.\n\n## The urea cycle\n\nThe liver converts ammonia to **urea**, which is neutral, water-soluble, and excreted by the kidney. It costs `4 ATP equivalents` per urea and spans mitochondrion and cytoplasm.\n\n1. **Carbamoyl phosphate synthetase I (CPS-I)** — mitochondrial, combines NH4+ with bicarbonate. **Rate-limiting step**, requires **N-acetylglutamate** as an obligate activator. (CPS-II is the cytoplasmic pyrimidine enzyme — do not confuse them.)\n2. **Ornithine transcarbamylase (OTC)** joins carbamoyl phosphate to ornithine, making citrulline, which exits to the cytoplasm.\n3. Argininosuccinate synthetase adds **aspartate**, which is the **second nitrogen** of urea.\n4. Argininosuccinate lyase releases fumarate — linking the urea cycle to the TCA cycle.\n5. **Arginase** cleaves arginine into **urea** and ornithine, and ornithine re-enters.\n\n> **Key:** Urea's two nitrogens come from different places: one from free ammonia and one from aspartate. That is a favorite exam detail.\n\n**OTC deficiency** is the most common urea cycle disorder and is **X-linked**. Blocked at step 2, carbamoyl phosphate spills into the cytoplasm and floods pyrimidine synthesis, so the finding is high ammonia plus elevated **orotic acid** with a normal or low BUN.\n\n## Carbon skeletons\n\nAfter nitrogen removal, what is left enters metabolism. **Glucogenic** amino acids yield pyruvate or TCA intermediates and can make glucose. **Ketogenic** amino acids yield acetyl-CoA or acetoacetate and cannot. Only **leucine and lysine are purely ketogenic**. Isoleucine, phenylalanine, tyrosine, threonine and tryptophan are both.\n\n## Nucleotide metabolism\n\nA **nucleoside** is base plus sugar; a **nucleotide** adds phosphate. **Purines** (adenine, guanine) are double-ringed; **pyrimidines** (cytosine, thymine, uracil) are single-ringed.\n\n**Purines** are built on ribose-5-phosphate from the pentose phosphate pathway. PRPP is formed, then **glutamine-PRPP amidotransferase** commits the pathway — the rate-limiting step, feedback-inhibited by AMP and GMP. The ring is assembled directly on the sugar and requires **folate** for two one-carbon additions, which is the reason methotrexate and sulfa drugs interfere with nucleotide synthesis.\n\n**Pyrimidines** are built the other way: the ring is made first, starting with **CPS-II** in the cytoplasm, and attached to PRPP afterward. Thymidylate synthase converts dUMP to dTMP using a folate cofactor — the target of 5-fluorouracil.\n\n**Salvage pathways** recycle free bases and cost far less energy. **HGPRT** salvages hypoxanthine and guanine, and its complete absence causes **Lesch-Nyhan syndrome**: X-linked, hyperuricemia, dystonia, intellectual disability and compulsive self-mutilation.\n\n**Degradation.** Purines break down to **uric acid** through xanthine oxidase, and humans lack uricase, so uric acid is the end product and it is poorly soluble. Pyrimidines degrade to soluble products and cause no clinical problem.\n\n**Gout** is uric acid crystallizing in joints — needle-shaped, negatively birefringent monosodium urate crystals, classically in the first metatarsophalangeal joint. Causes are overproduction (high cell turnover from chemotherapy or leukemia, HGPRT defects, high purine intake) or underexcretion (renal impairment, thiazide diuretics, alcohol, `80–90%` of cases). **Allopurinol** and **febuxostat** inhibit xanthine oxidase, lowering production; colchicine and NSAIDs treat the acute attack.\n\n> **Trap:** Allopurinol is for prevention, not for an acute flare, and starting it during an attack can prolong it.",
+      "keyPoints": [
+        "Transamination requires pyridoxal phosphate from vitamin B6; ALT and AST are the clinically measured aminotransferases.",
+        "CPS-I is the rate-limiting urea cycle step and requires N-acetylglutamate; the cycle costs 4 ATP per urea.",
+        "Urea's two nitrogens come from free ammonia and from aspartate.",
+        "OTC deficiency is X-linked and causes high ammonia with elevated orotic acid; only leucine and lysine are purely ketogenic.",
+        "Purines degrade to uric acid via xanthine oxidase; gout shows needle-shaped negatively birefringent crystals."
+      ],
+      "checks": [
+        {
+          "q": "A neonate has hyperammonemia, respiratory alkalosis and elevated urinary orotic acid with a low BUN. Which enzyme is deficient?",
+          "choices": [
+            "Carbamoyl phosphate synthetase I",
+            "Ornithine transcarbamylase",
+            "Arginase",
+            "Glutamate dehydrogenase"
+          ],
+          "answer": 1,
+          "why": "A block at OTC causes carbamoyl phosphate to accumulate and overflow into pyrimidine synthesis, raising orotic acid. CPS-I deficiency also raises ammonia but orotic acid is low because the substrate is never made."
+        },
+        {
+          "q": "Which vitamin is required by every transamination reaction?",
+          "choices": [
+            "Thiamine (B1)",
+            "Riboflavin (B2)",
+            "Pyridoxine (B6)",
+            "Cobalamin (B12)"
+          ],
+          "answer": 2,
+          "why": "Pyridoxal phosphate from B6 is the obligate cofactor for aminotransferases. Thiamine serves PDH and transketolase, riboflavin makes FAD, and B12 serves methylmalonyl-CoA mutase and methionine synthase."
+        },
+        {
+          "q": "A patient on chemotherapy for leukemia develops acute gout. What is the mechanism?",
+          "choices": [
+            "Underexcretion of uric acid from thiazide use",
+            "Massive cell lysis increasing purine turnover and uric acid production",
+            "Pyrimidine degradation producing insoluble crystals",
+            "HGPRT overactivity"
+          ],
+          "answer": 1,
+          "why": "Tumor lysis releases large amounts of nucleic acid, and purine catabolism through xanthine oxidase floods the blood with uric acid. Pyrimidine breakdown products are soluble, and HGPRT deficiency rather than overactivity raises urate."
+        }
+      ]
+    },
+    {
+      "id": "sci-biochem-l10",
+      "title": "DNA, RNA, protein synthesis and the metabolic diseases the course uses",
+      "minutes": 9,
+      "body": "## Nucleic acid structure\n\nDNA is a double helix of antiparallel strands running `5'` to `3'` in opposite directions. The backbone is sugar-phosphate, held by phosphodiester bonds; the bases point inward. **A pairs with T by two hydrogen bonds; G pairs with C by three**, which is why GC-rich DNA has a higher melting temperature. **Chargaff's rule** follows from pairing: `A = T` and `G = C`.\n\nRNA differs in three ways: ribose instead of deoxyribose, uracil instead of thymine, and single-stranded. The `2'` hydroxyl makes RNA far less stable, which is convenient for a molecule meant to be temporary.\n\n## Replication\n\nSemiconservative: each daughter duplex has one old and one new strand. Helicase unwinds, single-strand binding proteins hold the fork open, topoisomerase relieves supercoiling ahead of it, and **primase** lays an RNA primer because **DNA polymerase can only extend an existing 3'-OH**.\n\n**DNA polymerase synthesizes only 5' to 3'.** The leading strand runs continuously; the lagging strand is built in **Okazaki fragments**, whose primers are removed and gaps sealed by **DNA ligase**. Proofreading comes from `3'` to `5'` exonuclease activity, giving an error rate near `1 in 10^9`.\n\nRepair systems: mismatch repair (defects cause hereditary nonpolyposis colorectal cancer), nucleotide excision repair for UV thymine dimers (defects cause xeroderma pigmentosum), base excision repair, and double-strand break repair via BRCA1 and BRCA2.\n\n## Transcription and translation\n\n**RNA polymerase** reads the template strand `3'` to `5'` and builds mRNA `5'` to `3'`, and needs no primer. Eukaryotes use Pol I for rRNA, **Pol II for mRNA** (inhibited by alpha-amanitin from death cap mushrooms), Pol III for tRNA.\n\nEukaryotic mRNA is processed: a `5'` **7-methylguanosine cap**, a `3'` **poly-A tail**, and **splicing** that removes introns and joins exons by the spliceosome. Alternative splicing lets one gene make many proteins.\n\nTranslation happens on ribosomes: **80S** in eukaryotic cytoplasm (`40S + 60S`), **70S** in prokaryotes and mitochondria. The genetic code is read in triplet **codons**, is degenerate (`64` codons for `20` amino acids), and is nearly universal. **AUG** starts and codes methionine; `UAA`, `UAG` and `UGA` stop. tRNA carries an anticodon and the matching amino acid, charged by aminoacyl-tRNA synthetase. Elongation runs through the A, P and E sites, and peptide bond formation is catalyzed by the **28S rRNA peptidyl transferase**, a ribozyme.\n\nAfter translation, proteins are folded by chaperones and modified: phosphorylation, glycosylation in the ER and Golgi, hydroxylation of proline and lysine in collagen (**requires vitamin C**, and its absence is scurvy), gamma-carboxylation of clotting factors (**requires vitamin K**, the warfarin target), and ubiquitin tagging for proteasome destruction.\n\n## The diseases the course uses as examples\n\n**Phenylketonuria (PKU).** Phenylalanine hydroxylase is deficient, so phenylalanine cannot become tyrosine. Phenylalanine accumulates and is shunted to phenylketones. Untreated: intellectual disability, seizures, a musty odor, and light pigmentation because tyrosine is the melanin precursor. Newborn screening catches it; treatment is dietary phenylalanine restriction and tyrosine supplementation, and aspartame must be avoided because it is a phenylalanine source. A minority of cases are defects in the cofactor tetrahydrobiopterin rather than the enzyme.\n\n**G6PD deficiency.** X-linked, most common enzymopathy worldwide. No NADPH means no regenerated glutathione, so oxidative stress from fava beans, sulfonamides, nitrofurantoin, primaquine or infection causes hemolysis with Heinz bodies and bite cells.\n\n**Lactose intolerance.** Not an inborn error in most cases but a normal decline in intestinal lactase after weaning, present in roughly `65%` of adults worldwide. Undigested lactose is osmotically active and fermented by colonic bacteria, giving bloating, cramps, gas and osmotic diarrhea. Diagnosed with a hydrogen breath test.\n\n**Galactosemia.** Classic form is GALT deficiency. Galactose-1-phosphate accumulates and damages liver, brain and kidney; galactitol in the lens causes cataracts. Presents in a newborn after milk feeding with jaundice, vomiting, hepatomegaly and *E. coli* sepsis risk. Treatment is removing galactose and lactose from the diet.\n\n**MCAD deficiency.** Cannot oxidize medium-chain fatty acids, so fasting produces **hypoketotic hypoglycemia**, sometimes presenting as a sudden infant death. Management is avoiding fasting.\n\n**Lysosomal storage diseases.** A missing lysosomal hydrolase lets its substrate accumulate. Tay-Sachs (hexosaminidase A, GM2 ganglioside, cherry-red macula, **no** hepatosplenomegaly), Gaucher (glucocerebrosidase, the most common, hepatosplenomegaly and bone pain), Niemann-Pick (sphingomyelinase, cherry-red macula **with** hepatosplenomegaly), Fabry (alpha-galactosidase A, X-linked, neuropathic pain and angiokeratomas), Hurler and Hunter (mucopolysaccharidoses).\n\n**Maple syrup urine disease** blocks branched-chain alpha-ketoacid dehydrogenase; leucine, isoleucine and valine accumulate and the urine smells of maple syrup.\n\n> **On the exam:** Metabolic disease questions follow a single format — name the blocked enzyme, then predict what piles up behind the block and what is missing after it. Answer in that order and most of them solve themselves.",
+      "keyPoints": [
+        "DNA is antiparallel; A-T has two hydrogen bonds and G-C has three, so GC-rich DNA melts at higher temperature.",
+        "DNA polymerase synthesizes only 5' to 3' and requires a primer; RNA polymerase does not need one.",
+        "Eukaryotic ribosomes are 80S; the peptidyl transferase is a ribozyme made of 28S rRNA.",
+        "Collagen hydroxylation needs vitamin C; clotting factor gamma-carboxylation needs vitamin K.",
+        "For any inborn error: name the blocked enzyme, then ask what accumulates before it and what is missing after it."
+      ],
+      "checks": [
+        {
+          "q": "An untreated infant with PKU has light hair and skin. Why?",
+          "choices": [
+            "Phenylalanine directly bleaches melanin",
+            "Tyrosine becomes a conditionally essential amino acid and melanin synthesis falls",
+            "Excess tyrosine inhibits tyrosinase",
+            "The defect also blocks vitamin D synthesis"
+          ],
+          "answer": 1,
+          "why": "Phenylalanine hydroxylase normally makes tyrosine, the melanin precursor, so blocking it leaves tyrosine deficient. Tyrosine is low rather than high, and vitamin D is unrelated."
+        },
+        {
+          "q": "A DNA sequence with a high GC content requires a higher temperature to denature because:",
+          "choices": [
+            "G-C pairs have three hydrogen bonds versus two in A-T",
+            "GC-rich DNA is triple-stranded",
+            "Guanine is larger than adenine",
+            "Cytosine resists hydrolysis"
+          ],
+          "answer": 0,
+          "why": "Three hydrogen bonds per G-C pair make the duplex more stable than two per A-T pair. DNA remains double-stranded regardless of composition, and base size is not the determinant."
+        },
+        {
+          "q": "An infant has a cherry-red macula, progressive neurologic decline and no hepatosplenomegaly. Which enzyme is deficient?",
+          "choices": [
+            "Glucocerebrosidase",
+            "Sphingomyelinase",
+            "Hexosaminidase A",
+            "Alpha-galactosidase A"
+          ],
+          "answer": 2,
+          "why": "Tay-Sachs from hexosaminidase A deficiency gives a cherry-red macula without organomegaly. Niemann-Pick also shows a cherry-red spot but with hepatosplenomegaly, and Gaucher and Fabry lack the macular finding."
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "sci-biochem-c001",
+      "front": "Why do nonpolar molecules cluster together in water?",
+      "back": "The hydrophobic effect. Water gains entropy by not forming ordered cages around them. It is entropy-driven, not attraction between the nonpolar molecules.",
+      "lesson": "sci-biochem-l01"
+    },
+    {
+      "id": "sci-biochem-c002",
+      "front": "Write the Henderson-Hasselbalch equation and name each part.",
+      "back": "pH = pKa + log([A-]/[HA]). Conjugate base over weak acid. When the ratio is 1, log is 0, so pH equals pKa and the acid is half dissociated.",
+      "lesson": "sci-biochem-l01"
+    },
+    {
+      "id": "sci-biochem-c003",
+      "front": "Using the bicarbonate system, show how blood reaches pH 7.4.",
+      "back": "pKa 6.1, bicarbonate 24 mM, dissolved CO2 1.2 mM. pH = 6.1 + log(24/1.2) = 6.1 + log 20 = 6.1 + 1.3 = 7.4. Remember the 20:1 ratio.",
+      "lesson": "sci-biochem-l01"
+    },
+    {
+      "id": "sci-biochem-c004",
+      "front": "Over what pH range does a buffer work best?",
+      "back": "Within one pH unit of its pKa. Outside that window one form dominates so heavily that the buffer has little capacity left.",
+      "lesson": "sci-biochem-l01"
+    },
+    {
+      "id": "sci-biochem-c005",
+      "front": "Name the body's three main buffer systems.",
+      "back": "Bicarbonate (main extracellular, volatile via the lungs), phosphate with pKa 6.86 (main intracellular), and protein including the histidine side chain and hemoglobin.",
+      "lesson": "sci-biochem-l01"
+    },
+    {
+      "id": "sci-biochem-c006",
+      "front": "How much does [H+] change per pH unit?",
+      "back": "Tenfold, because pH is a base-10 logarithm. Blood at pH 7.4 has about 40 nanomolar H+; normal range is 7.35–7.45.",
+      "lesson": "sci-biochem-l01"
+    },
+    {
+      "id": "sci-biochem-c007",
+      "front": "What ratio of conjugate base to acid gives a pH one unit above the pKa?",
+      "back": "10 to 1. Each log unit is a factor of ten, so pH = pKa + 1 requires [A-]/[HA] = 10, and pH = pKa - 1 requires 1:10.",
+      "lesson": "sci-biochem-l01"
+    },
+    {
+      "id": "sci-biochem-c008",
+      "front": "Which amino acid side chain has a pKa near physiologic pH, and why does it matter?",
+      "back": "Histidine, pKa about 6.0. It can donate or accept a proton at pH 7.4, which makes it the standard acid-base catalyst in enzyme active sites.",
+      "lesson": "sci-biochem-l02"
+    },
+    {
+      "id": "sci-biochem-c009",
+      "front": "How do you calculate the pI of an amino acid with an ionizable side chain?",
+      "back": "Average the two pKa values that bracket the zero-charge species, not the highest and lowest. Lysine (2.2, 9.0, 10.5): pI = (9.0 + 10.5)/2 = 9.75.",
+      "lesson": "sci-biochem-l02"
+    },
+    {
+      "id": "sci-biochem-c010",
+      "front": "Which amino acids are acidic and which are basic at pH 7?",
+      "back": "Acidic: aspartate (pKa 3.9) and glutamate (4.3), both negative. Basic: lysine (10.5), arginine (12.5) and histidine (6.0, mostly neutral at pH 7.4).",
+      "lesson": "sci-biochem-l02"
+    },
+    {
+      "id": "sci-biochem-c011",
+      "front": "What makes cysteine structurally unique?",
+      "back": "Two cysteine thiols can oxidize into a disulfide bond, the only common covalent cross-link in protein tertiary and quaternary structure.",
+      "lesson": "sci-biochem-l02"
+    },
+    {
+      "id": "sci-biochem-c012",
+      "front": "Why is proline called a helix breaker?",
+      "back": "Its side chain bonds back to the alpha-amino nitrogen, forming a ring that rigidifies the backbone and removes the amide hydrogen needed for helical hydrogen bonding.",
+      "lesson": "sci-biochem-l02"
+    },
+    {
+      "id": "sci-biochem-c013",
+      "front": "Describe three properties of the peptide bond.",
+      "back": "Planar, essentially always trans, and non-rotating because resonance gives it about 40% double-bond character. Rotation happens only at the phi and psi angles.",
+      "lesson": "sci-biochem-l02"
+    },
+    {
+      "id": "sci-biochem-c014",
+      "front": "What is a zwitterion, and at what pH does it dominate?",
+      "back": "A molecule with both positive and negative charges and net charge zero. For an amino acid it dominates between the two pKa values, around the pI.",
+      "lesson": "sci-biochem-l02"
+    },
+    {
+      "id": "sci-biochem-c015",
+      "front": "Which wavelength is used to measure protein concentration and why?",
+      "back": "280 nanometers, absorbed by the aromatic side chains of tryptophan and tyrosine (and slightly phenylalanine).",
+      "lesson": "sci-biochem-l02"
+    },
+    {
+      "id": "sci-biochem-c016",
+      "front": "What stabilizes secondary versus tertiary structure?",
+      "back": "Secondary structure uses hydrogen bonds between backbone carbonyl and amide groups. Tertiary structure uses side-chain interactions: hydrophobic packing, hydrogen bonds, salt bridges, disulfides.",
+      "lesson": "sci-biochem-l03"
+    },
+    {
+      "id": "sci-biochem-c017",
+      "front": "Give the geometry of the alpha helix.",
+      "back": "Right-handed, 3.6 residues per turn, rise of 0.54 nanometers per turn, each carbonyl hydrogen bonded to the amide four residues ahead, side chains pointing outward.",
+      "lesson": "sci-biochem-l03"
+    },
+    {
+      "id": "sci-biochem-c018",
+      "front": "Compare the oxygen binding curves of myoglobin and hemoglobin.",
+      "back": "Myoglobin is hyperbolic with P50 about 2.8 mmHg (storage). Hemoglobin is sigmoidal with P50 about 26 mmHg from positive cooperativity (transport).",
+      "lesson": "sci-biochem-l03"
+    },
+    {
+      "id": "sci-biochem-c019",
+      "front": "Which four factors shift the hemoglobin curve to the right?",
+      "back": "Increased CO2, decreased pH (Bohr effect), increased temperature, and increased 2,3-BPG. All lower affinity and unload more oxygen in active tissue.",
+      "lesson": "sci-biochem-l03"
+    },
+    {
+      "id": "sci-biochem-c020",
+      "front": "Why does fetal hemoglobin bind oxygen more tightly than adult hemoglobin?",
+      "back": "HbF gamma chains bind 2,3-BPG poorly. Without 2,3-BPG stabilizing the T state, affinity rises and the fetus can extract oxygen from maternal blood.",
+      "lesson": "sci-biochem-l03"
+    },
+    {
+      "id": "sci-biochem-c021",
+      "front": "What did Anfinsen's ribonuclease experiment prove?",
+      "back": "That all the information needed for folding is contained in the primary sequence, since denatured ribonuclease refolded spontaneously into its active shape.",
+      "lesson": "sci-biochem-l03"
+    },
+    {
+      "id": "sci-biochem-c022",
+      "front": "Does denaturation break peptide bonds?",
+      "back": "No. Denaturation destroys secondary, tertiary and quaternary structure while leaving the primary sequence intact. Breaking peptide bonds is hydrolysis.",
+      "lesson": "sci-biochem-l03"
+    },
+    {
+      "id": "sci-biochem-c023",
+      "front": "Why is carbon monoxide poisoning worse than the saturation number suggests?",
+      "back": "CO binds hemoglobin 200–250 times more tightly than oxygen and also left-shifts the remaining sites, so it blocks loading and traps what is bound. Pulse oximetry reads falsely normal.",
+      "lesson": "sci-biochem-l03"
+    },
+    {
+      "id": "sci-biochem-c024",
+      "front": "What does an enzyme change, and what does it never change?",
+      "back": "It lowers activation energy and speeds attainment of equilibrium. It never changes the equilibrium constant, delta G, or the direction of the reaction.",
+      "lesson": "sci-biochem-l04"
+    },
+    {
+      "id": "sci-biochem-c025",
+      "front": "Define Km and say what it tells you.",
+      "back": "The substrate concentration giving half of Vmax. It is an inverse measure of affinity: low Km means tight binding, high Km means weak binding. Km is independent of enzyme amount.",
+      "lesson": "sci-biochem-l04"
+    },
+    {
+      "id": "sci-biochem-c026",
+      "front": "Contrast hexokinase and glucokinase by Km.",
+      "back": "Hexokinase Km about 0.1 mM, saturated always, and inhibited by G6P. Glucokinase Km about 10 mM, above blood glucose of 5 mM, so the liver takes up glucose mainly after meals.",
+      "lesson": "sci-biochem-l04"
+    },
+    {
+      "id": "sci-biochem-c027",
+      "front": "How do you read a Lineweaver-Burk plot?",
+      "back": "y-intercept = 1/Vmax, x-intercept = -1/Km, slope = Km/Vmax. Lines from competitive inhibition share the y-intercept; noncompetitive share the x-intercept.",
+      "lesson": "sci-biochem-l04"
+    },
+    {
+      "id": "sci-biochem-c028",
+      "front": "How do competitive, noncompetitive and uncompetitive inhibition affect Km and Vmax?",
+      "back": "Competitive: Km up, Vmax unchanged. Noncompetitive: Km unchanged, Vmax down. Uncompetitive: both down proportionally, giving parallel double-reciprocal lines.",
+      "lesson": "sci-biochem-l04"
+    },
+    {
+      "id": "sci-biochem-c029",
+      "front": "Name three irreversible enzyme inhibitors used as drugs or poisons.",
+      "back": "Aspirin acetylating cyclooxygenase, penicillin on bacterial transpeptidase, and organophosphates on acetylcholinesterase. All form covalent bonds.",
+      "lesson": "sci-biochem-l04"
+    },
+    {
+      "id": "sci-biochem-c030",
+      "front": "What is a zymogen and why do they exist?",
+      "back": "An inactive enzyme precursor activated by proteolytic cleavage — pepsinogen, trypsinogen, clotting factors. They keep destructive enzymes inactive until they reach the right place.",
+      "lesson": "sci-biochem-l04"
+    },
+    {
+      "id": "sci-biochem-c031",
+      "front": "Match the B vitamins to their coenzymes.",
+      "back": "B1 thiamine to TPP, B2 riboflavin to FAD, B3 niacin to NAD+, B5 pantothenate to coenzyme A, B6 pyridoxine to PLP, B7 biotin for carboxylases, B9 folate for one-carbon units.",
+      "lesson": "sci-biochem-l04"
+    },
+    {
+      "id": "sci-biochem-c032",
+      "front": "What is the net yield of glycolysis per glucose?",
+      "back": "2 ATP, 2 NADH and 2 pyruvate. Gross is 4 ATP, minus 2 invested at hexokinase and PFK-1. It occurs in the cytoplasm with or without oxygen.",
+      "lesson": "sci-biochem-l05"
+    },
+    {
+      "id": "sci-biochem-c033",
+      "front": "Which enzyme is the committed, rate-limiting step of glycolysis and how is it regulated?",
+      "back": "PFK-1. Inhibited by ATP and citrate; activated by AMP and fructose-2,6-bisphosphate. Insulin raises F2,6-BP and glucagon lowers it.",
+      "lesson": "sci-biochem-l05"
+    },
+    {
+      "id": "sci-biochem-c034",
+      "front": "Name the three irreversible steps of glycolysis.",
+      "back": "Hexokinase (or glucokinase), phosphofructokinase-1, and pyruvate kinase. These are precisely the steps gluconeogenesis must bypass with different enzymes.",
+      "lesson": "sci-biochem-l05"
+    },
+    {
+      "id": "sci-biochem-c035",
+      "front": "What is the real purpose of converting pyruvate to lactate?",
+      "back": "Regenerating NAD+ so glycolysis can keep running. Lactate is a byproduct. Without NAD+, glycolysis stops within seconds because the cellular pool is small.",
+      "lesson": "sci-biochem-l05"
+    },
+    {
+      "id": "sci-biochem-c036",
+      "front": "What is the Cori cycle?",
+      "back": "Muscle makes lactate anaerobically, blood carries it to the liver, and the liver converts it back to glucose by gluconeogenesis and returns it to the muscle.",
+      "lesson": "sci-biochem-l05"
+    },
+    {
+      "id": "sci-biochem-c037",
+      "front": "How do starch, glycogen and cellulose differ?",
+      "back": "Starch: plant, alpha-1,4 with alpha-1,6 branches every 24–30 residues. Glycogen: animal, branches every 8–12 for faster mobilization. Cellulose: beta-1,4, indigestible to humans.",
+      "lesson": "sci-biochem-l05"
+    },
+    {
+      "id": "sci-biochem-c038",
+      "front": "Define anomeric carbon and epimer.",
+      "back": "The anomeric carbon is the new chiral center formed on ring closure, giving alpha and beta forms. Epimers differ at exactly one chiral carbon — galactose is the C4 epimer of glucose.",
+      "lesson": "sci-biochem-l05"
+    },
+    {
+      "id": "sci-biochem-c039",
+      "front": "Why does a large fructose load bypass glycolytic regulation?",
+      "back": "Liver fructokinase makes fructose-1-phosphate, which aldolase B splits below the PFK-1 step. Skipping the rate-limiting control means unrestricted entry, feeding lipogenesis.",
+      "lesson": "sci-biochem-l05"
+    },
+    {
+      "id": "sci-biochem-c040",
+      "front": "What does pyruvate dehydrogenase produce and what does it need?",
+      "back": "Acetyl-CoA plus CO2 and NADH. It requires five coenzymes: thiamine pyrophosphate, lipoic acid, FAD, NAD+ and coenzyme A. It is irreversible.",
+      "lesson": "sci-biochem-l06"
+    },
+    {
+      "id": "sci-biochem-c041",
+      "front": "What does one turn of the citric acid cycle yield per acetyl-CoA?",
+      "back": "3 NADH, 1 FADH2, 1 GTP and 2 CO2. Per glucose (two acetyl-CoA): 6 NADH, 2 FADH2, 2 GTP, 4 CO2.",
+      "lesson": "sci-biochem-l06"
+    },
+    {
+      "id": "sci-biochem-c042",
+      "front": "Which step is rate-limiting in the citric acid cycle?",
+      "back": "Isocitrate dehydrogenase. Inhibited by NADH and ATP, activated by ADP and calcium — so contraction signals also turn up energy production.",
+      "lesson": "sci-biochem-l06"
+    },
+    {
+      "id": "sci-biochem-c043",
+      "front": "Why does FADH2 yield less ATP than NADH?",
+      "back": "FADH2 enters at Complex II, which pumps no protons, so fewer protons cross for its electrons: about 1.5 ATP versus 2.5 for NADH entering at Complex I.",
+      "lesson": "sci-biochem-l06"
+    },
+    {
+      "id": "sci-biochem-c044",
+      "front": "Where do cyanide, oligomycin and 2,4-dinitrophenol act?",
+      "back": "Cyanide and carbon monoxide block Complex IV. Oligomycin blocks ATP synthase. 2,4-DNP is an uncoupler that lets protons leak back, releasing energy as heat.",
+      "lesson": "sci-biochem-l06"
+    },
+    {
+      "id": "sci-biochem-c045",
+      "front": "State the chemiosmotic theory in one sentence.",
+      "back": "Electron transport pumps protons out of the matrix, creating a proton-motive force, and their return through ATP synthase drives ATP formation — the two processes are coupled only by the gradient.",
+      "lesson": "sci-biochem-l06"
+    },
+    {
+      "id": "sci-biochem-c046",
+      "front": "Why is total ATP per glucose given as a range of 30–32?",
+      "back": "Cytosolic NADH must use a shuttle. The malate-aspartate shuttle delivers NADH (2.5 ATP each) in liver and heart; the glycerol-3-phosphate shuttle delivers FADH2 (1.5) in muscle and brain.",
+      "lesson": "sci-biochem-l06"
+    },
+    {
+      "id": "sci-biochem-c047",
+      "front": "Why does the TCA cycle need oxygen if no step uses it?",
+      "back": "Because NAD+ and FAD must be regenerated by the electron transport chain, and only oxygen can serve as the final electron acceptor. The dependence is indirect.",
+      "lesson": "sci-biochem-l06"
+    },
+    {
+      "id": "sci-biochem-c048",
+      "front": "Name the four bypass enzymes of gluconeogenesis.",
+      "back": "Pyruvate carboxylase (biotin), PEP carboxykinase (GTP), fructose-1,6-bisphosphatase (rate-limiting), and glucose-6-phosphatase. It costs 6 ATP equivalents per glucose.",
+      "lesson": "sci-biochem-l07"
+    },
+    {
+      "id": "sci-biochem-c049",
+      "front": "Why can fatty acids not be converted to glucose?",
+      "back": "Beta-oxidation yields acetyl-CoA, and pyruvate dehydrogenase is irreversible. The two carbons entering the TCA cycle leave as two CO2. Glycerol and odd-chain fatty acids are the exceptions.",
+      "lesson": "sci-biochem-l07"
+    },
+    {
+      "id": "sci-biochem-c050",
+      "front": "How do glucagon and insulin control glycogen reciprocally?",
+      "back": "Glucagon and epinephrine raise cAMP, activating protein kinase A, which activates phosphorylase and inactivates synthase. Insulin activates protein phosphatase-1, reversing both.",
+      "lesson": "sci-biochem-l07"
+    },
+    {
+      "id": "sci-biochem-c051",
+      "front": "Match the glycogen storage diseases to their enzymes.",
+      "back": "von Gierke type I: glucose-6-phosphatase. Pompe type II: lysosomal acid maltase. Cori type III: debranching enzyme. McArdle type V: muscle phosphorylase, exercise intolerance with no lactate rise.",
+      "lesson": "sci-biochem-l07"
+    },
+    {
+      "id": "sci-biochem-c052",
+      "front": "What are the two products of the pentose phosphate pathway and what are they for?",
+      "back": "NADPH for biosynthesis (fatty acids, cholesterol, steroids) and antioxidant defense via glutathione, plus ribose-5-phosphate for nucleotides. It makes no ATP.",
+      "lesson": "sci-biochem-l07"
+    },
+    {
+      "id": "sci-biochem-c053",
+      "front": "How does G6PD deficiency cause hemolysis?",
+      "back": "No NADPH means glutathione cannot be kept reduced, so oxidant stress from fava beans, sulfonamides, nitrofurantoin, primaquine or infection denatures hemoglobin into Heinz bodies.",
+      "lesson": "sci-biochem-l07"
+    },
+    {
+      "id": "sci-biochem-c054",
+      "front": "How long does liver glycogen sustain blood glucose during a fast?",
+      "back": "About 8–12 hours. Gluconeogenesis takes over and dominates by 24 hours. Liver stores are roughly 100 grams versus 400 grams in muscle, which is unavailable to blood.",
+      "lesson": "sci-biochem-l07"
+    },
+    {
+      "id": "sci-biochem-c055",
+      "front": "Why does type 1 diabetes cause DKA while type 2 causes hyperosmolar states?",
+      "back": "Type 1 has no insulin, so lipolysis and ketogenesis run unopposed. Type 2 retains enough insulin to suppress ketogenesis, so glucose climbs (often above 600 mg/dL) without significant ketosis.",
+      "lesson": "sci-biochem-l07"
+    },
+    {
+      "id": "sci-biochem-c056",
+      "front": "Why do cis double bonds lower a fat's melting point?",
+      "back": "Each cis double bond kinks the hydrocarbon chain so molecules cannot pack tightly. Saturated and trans chains are straight, pack well, and are solid at room temperature.",
+      "lesson": "sci-biochem-l08"
+    },
+    {
+      "id": "sci-biochem-c057",
+      "front": "What is the rate-limiting step of beta-oxidation and what inhibits it?",
+      "back": "CPT-1 of the carnitine shuttle, inhibited by malonyl-CoA. Since malonyl-CoA is the first intermediate of fatty acid synthesis, the cell cannot build and burn fat simultaneously.",
+      "lesson": "sci-biochem-l08"
+    },
+    {
+      "id": "sci-biochem-c058",
+      "front": "What does one round of beta-oxidation produce?",
+      "back": "1 FADH2, 1 NADH and 1 acetyl-CoA, shortening the chain by two carbons. Palmitate takes 7 rounds to give 8 acetyl-CoA and nets about 106 ATP.",
+      "lesson": "sci-biochem-l08"
+    },
+    {
+      "id": "sci-biochem-c059",
+      "front": "Name the three ketone bodies and say why the liver cannot use them.",
+      "back": "Acetoacetate, beta-hydroxybutyrate (most abundant) and acetone (exhaled). The liver lacks thiophorase, so it makes ketones for other organs without competing for them.",
+      "lesson": "sci-biochem-l08"
+    },
+    {
+      "id": "sci-biochem-c060",
+      "front": "Contrast fatty acid synthesis with beta-oxidation.",
+      "back": "Synthesis: cytoplasm, NADPH, acyl carrier protein, fed state, insulin. Oxidation: mitochondria, makes NADH and FADH2, uses CoA, fasted state, glucagon.",
+      "lesson": "sci-biochem-l08"
+    },
+    {
+      "id": "sci-biochem-c061",
+      "front": "Which enzyme commits carbons to fatty acid synthesis?",
+      "back": "Acetyl-CoA carboxylase, making malonyl-CoA using biotin and ATP. Activated by citrate and insulin, inhibited by palmitoyl-CoA and glucagon. It is rate-limiting.",
+      "lesson": "sci-biochem-l08"
+    },
+    {
+      "id": "sci-biochem-c062",
+      "front": "What do LDL and HDL each do?",
+      "back": "LDL delivers cholesterol from liver to tissues and is taken up by the LDL receptor via apoB-100. HDL performs reverse cholesterol transport, carrying cholesterol back to the liver.",
+      "lesson": "sci-biochem-l08"
+    },
+    {
+      "id": "sci-biochem-c063",
+      "front": "What is the rate-limiting enzyme of cholesterol synthesis?",
+      "back": "HMG-CoA reductase, the target of statins, which are competitive inhibitors. Cholesterol is the precursor of bile acids, vitamin D and all steroid hormones.",
+      "lesson": "sci-biochem-l08"
+    },
+    {
+      "id": "sci-biochem-c064",
+      "front": "How does cholesterol affect membrane fluidity?",
+      "back": "It buffers both directions: at high temperature it restrains movement and stiffens the membrane, at low temperature it prevents tight packing and keeps it fluid.",
+      "lesson": "sci-biochem-l08"
+    },
+    {
+      "id": "sci-biochem-c065",
+      "front": "What cofactor does every transamination require, and which enzymes are measured clinically?",
+      "back": "Pyridoxal phosphate from vitamin B6. ALT and AST are the aminotransferases measured on a liver panel because injured hepatocytes release them.",
+      "lesson": "sci-biochem-l09"
+    },
+    {
+      "id": "sci-biochem-c066",
+      "front": "Where do the two nitrogens of urea come from?",
+      "back": "One from free ammonia incorporated by carbamoyl phosphate synthetase I, and one from aspartate added by argininosuccinate synthetase.",
+      "lesson": "sci-biochem-l09"
+    },
+    {
+      "id": "sci-biochem-c067",
+      "front": "Which urea cycle enzyme is rate-limiting and what activates it?",
+      "back": "Carbamoyl phosphate synthetase I, which requires N-acetylglutamate as an obligate allosteric activator. The full cycle costs 4 ATP equivalents per urea.",
+      "lesson": "sci-biochem-l09"
+    },
+    {
+      "id": "sci-biochem-c068",
+      "front": "How does OTC deficiency present and why is orotic acid elevated?",
+      "back": "X-linked hyperammonemia with low BUN. Carbamoyl phosphate accumulates, spills into the cytoplasm, and overdrives pyrimidine synthesis, raising orotic acid.",
+      "lesson": "sci-biochem-l09"
+    },
+    {
+      "id": "sci-biochem-c069",
+      "front": "Why is ammonia neurotoxic?",
+      "back": "It reverses glutamate dehydrogenase, draining alpha-ketoglutarate from the TCA cycle, and drives glutamine formation in astrocytes, causing osmotic swelling and cerebral edema.",
+      "lesson": "sci-biochem-l09"
+    },
+    {
+      "id": "sci-biochem-c070",
+      "front": "Which amino acids are purely ketogenic?",
+      "back": "Only leucine and lysine. Isoleucine, phenylalanine, tyrosine, threonine and tryptophan are both glucogenic and ketogenic; the rest are purely glucogenic.",
+      "lesson": "sci-biochem-l09"
+    },
+    {
+      "id": "sci-biochem-c071",
+      "front": "How do purine and pyrimidine synthesis differ in strategy?",
+      "back": "Purines build the ring directly on PRPP (ribose first). Pyrimidines build the ring first, starting with CPS-II in the cytoplasm, then attach it to PRPP.",
+      "lesson": "sci-biochem-l09"
+    },
+    {
+      "id": "sci-biochem-c072",
+      "front": "What causes gout and how is it treated long-term?",
+      "back": "Monosodium urate crystals (needle-shaped, negatively birefringent) from overproduction or, in 80–90% of cases, underexcretion. Allopurinol and febuxostat inhibit xanthine oxidase; NSAIDs and colchicine treat flares.",
+      "lesson": "sci-biochem-l09"
+    },
+    {
+      "id": "sci-biochem-c073",
+      "front": "In which direction do DNA polymerase and RNA polymerase work, and which needs a primer?",
+      "back": "Both synthesize 5' to 3'. DNA polymerase requires an existing 3'-OH, so primase lays an RNA primer; RNA polymerase needs no primer.",
+      "lesson": "sci-biochem-l10"
+    },
+    {
+      "id": "sci-biochem-c074",
+      "front": "Why does GC-rich DNA have a higher melting temperature?",
+      "back": "G-C pairs form three hydrogen bonds and A-T pairs form two, so more GC content means a more stable duplex requiring more heat to separate.",
+      "lesson": "sci-biochem-l10"
+    },
+    {
+      "id": "sci-biochem-c075",
+      "front": "How does PKU cause both neurologic damage and light pigmentation?",
+      "back": "Phenylalanine hydroxylase deficiency lets phenylalanine and phenylketones accumulate (neurotoxic) while leaving tyrosine, the melanin precursor, deficient. Treat by restricting phenylalanine and supplementing tyrosine.",
+      "lesson": "sci-biochem-l10"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "sci-biochem-q001",
+      "q": "A buffer is prepared with 0.20 M acetate and 0.02 M acetic acid (pKa 4.76). What is the pH?",
+      "choices": [
+        "5.76",
+        "4.76",
+        "3.76",
+        "6.76"
+      ],
+      "answer": 0,
+      "why": "The ratio [A-]/[HA] is 10, so pH = 4.76 + log 10 = 5.76. Inverting the ratio gives 3.76, and 4.76 would require equal concentrations.",
+      "lesson": "sci-biochem-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-biochem-q002",
+      "q": "Which statement about buffering capacity is correct?",
+      "choices": [
+        "A buffer is most effective within one pH unit of its pKa",
+        "A buffer works equally well at any pH",
+        "Buffering capacity is maximal two units above the pKa",
+        "Only strong acids can buffer"
+      ],
+      "answer": 0,
+      "why": "Near the pKa both conjugate forms are abundant, so either an added acid or base can be absorbed. Two units away one form is over 99% dominant, and strong acids dissociate completely and cannot buffer.",
+      "lesson": "sci-biochem-l01",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-biochem-q003",
+      "q": "An anxious patient hyperventilates and arterial CO2 falls from 40 to 25 mmHg. Using the bicarbonate buffer equation, what is the acid-base result?",
+      "choices": [
+        "Metabolic acidosis",
+        "Metabolic alkalosis",
+        "Respiratory acidosis",
+        "Respiratory alkalosis"
+      ],
+      "answer": 3,
+      "why": "CO2 is the acid term in the denominator, so lowering it raises the bicarbonate-to-CO2 ratio and raises pH, by a respiratory mechanism. Metabolic disorders begin with a change in bicarbonate, not CO2.",
+      "lesson": "sci-biochem-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-biochem-q004",
+      "q": "Aspartate has pKa values of 2.1, 3.9 and 9.8. What is its pI?",
+      "choices": [
+        "3.0",
+        "5.95",
+        "6.85",
+        "9.8"
+      ],
+      "answer": 0,
+      "why": "The zero-charge species is bracketed by the 2.1 and 3.9 dissociations, so pI = (2.1 + 3.9)/2 = 3.0. Averaging the lowest and highest values gives the common wrong answer of 5.95.",
+      "lesson": "sci-biochem-l02",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-biochem-q005",
+      "q": "A protein is placed in a buffer at pH 9.0 and its pI is 5.0. In an electric field it will:",
+      "choices": [
+        "Remain stationary because it is neutral",
+        "Migrate toward the cathode because it is positive",
+        "Migrate toward the anode because it is negative",
+        "Precipitate immediately"
+      ],
+      "answer": 2,
+      "why": "Above its pI a protein carries net negative charge and moves toward the positive anode. Proteins are least soluble and stationary at their pI, which here would be pH 5.0.",
+      "lesson": "sci-biochem-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-biochem-q006",
+      "q": "Which amino acid is achiral?",
+      "choices": [
+        "Glycine",
+        "Alanine",
+        "Serine",
+        "Cysteine"
+      ],
+      "answer": 0,
+      "why": "Glycine's side chain is a hydrogen, so the alpha carbon carries two identical groups and cannot be chiral. All other standard amino acids have four different substituents and are used in the L form.",
+      "lesson": "sci-biochem-l02",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-biochem-q007",
+      "q": "A mutation replaces a glycine in a tight turn with a bulky tryptophan, and the protein loses activity though its sequence is otherwise normal. Which level of structure was primarily disrupted?",
+      "choices": [
+        "Tertiary",
+        "Primary",
+        "Quaternary",
+        "None; sequence changes never affect folding"
+      ],
+      "answer": 0,
+      "why": "The sequence change is primary, but the functional loss comes from the altered three-dimensional fold, which is tertiary structure. Quaternary structure would require multiple chains, and sequence absolutely determines folding.",
+      "lesson": "sci-biochem-l03",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-biochem-q008",
+      "q": "A patient at altitude increases 2,3-BPG production over several days. The effect on hemoglobin is:",
+      "choices": [
+        "Decreased oxygen affinity and a right shift, improving tissue unloading",
+        "Increased oxygen affinity and a left shift",
+        "No change, since 2,3-BPG binds only myoglobin",
+        "Conversion of Fe2+ to Fe3+"
+      ],
+      "answer": 0,
+      "why": "2,3-BPG binds the central cavity of deoxyhemoglobin and stabilizes the T state, lowering affinity so more oxygen is released in tissue. Myoglobin is a monomer with no 2,3-BPG site, and iron oxidation is a separate phenomenon.",
+      "lesson": "sci-biochem-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-biochem-q009",
+      "q": "Which feature explains why hemoglobin, not myoglobin, is the body's oxygen transporter?",
+      "choices": [
+        "Sigmoidal cooperative binding allowing loading in lung and unloading in tissue",
+        "Higher affinity at every oxygen tension",
+        "A single polypeptide chain",
+        "The absence of a heme group"
+      ],
+      "answer": 0,
+      "why": "Cooperativity between four subunits produces a steep sigmoid curve, so saturation changes substantially between 100 mmHg and 30 mmHg. Myoglobin's very high affinity (P50 2.8 mmHg) makes it a storage protein that will not release oxygen until tissue is severely hypoxic.",
+      "lesson": "sci-biochem-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-biochem-q010",
+      "q": "An enzyme is added to a reaction with a delta G of +15 kJ/mol. What will happen?",
+      "choices": [
+        "The reaction will now proceed spontaneously forward",
+        "The equilibrium will shift toward product",
+        "Equilibrium will be reached faster, but the position of equilibrium is unchanged",
+        "The enzyme will be consumed driving the reaction"
+      ],
+      "answer": 2,
+      "why": "Catalysts lower activation energy in both directions and do not alter thermodynamics. A positive delta G still requires coupling to an exergonic reaction, and enzymes are not consumed.",
+      "lesson": "sci-biochem-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-biochem-q011",
+      "q": "A drug lowers Vmax from 100 to 50 units while Km remains 4 mM. Which inhibition is this?",
+      "choices": [
+        "Noncompetitive",
+        "Competitive",
+        "Uncompetitive",
+        "Feedback activation"
+      ],
+      "answer": 0,
+      "why": "Noncompetitive inhibitors bind an allosteric site and effectively remove enzyme from the pool, lowering Vmax without affecting substrate binding. Competitive raises Km and uncompetitive lowers both parameters.",
+      "lesson": "sci-biochem-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-biochem-q012",
+      "q": "Ethanol is given to a patient with methanol poisoning. The biochemical rationale is that ethanol acts as a:",
+      "choices": [
+        "Noncompetitive inhibitor of aldehyde dehydrogenase",
+        "Uncompetitive inhibitor of catalase",
+        "Competitive inhibitor at alcohol dehydrogenase",
+        "Irreversible inhibitor of methanol"
+      ],
+      "answer": 2,
+      "why": "Ethanol competes with methanol for the same active site on alcohol dehydrogenase, preventing conversion to toxic formaldehyde and formic acid. Fomepizole does the same thing more cleanly, and neither acts allosterically or irreversibly.",
+      "lesson": "sci-biochem-l04",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-biochem-q013",
+      "q": "A chronic alcohol user develops confusion and ophthalmoplegia with elevated lactate. Which enzyme is impaired?",
+      "choices": [
+        "Glucose-6-phosphatase",
+        "Glycogen phosphorylase",
+        "Pyruvate dehydrogenase, from thiamine deficiency",
+        "HMG-CoA reductase"
+      ],
+      "answer": 2,
+      "why": "Thiamine pyrophosphate is an essential PDH coenzyme, so deficiency backs pyruvate up into lactate and causes Wernicke encephalopathy. The other enzymes do not require thiamine and do not explain the neurologic picture.",
+      "lesson": "sci-biochem-l04",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-biochem-q014",
+      "q": "Where does glycolysis occur and what does it require?",
+      "choices": [
+        "Mitochondrial matrix; requires oxygen",
+        "Inner mitochondrial membrane; requires FAD",
+        "Cytoplasm; does not require oxygen",
+        "Endoplasmic reticulum; requires NADPH"
+      ],
+      "answer": 2,
+      "why": "All ten glycolytic enzymes are cytosolic and the pathway runs anaerobically as long as NAD+ is regenerated. The TCA cycle is in the matrix and the electron transport chain is in the inner membrane.",
+      "lesson": "sci-biochem-l05",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-biochem-q015",
+      "q": "Insulin increases fructose-2,6-bisphosphate in hepatocytes. The consequence is:",
+      "choices": [
+        "PFK-1 activation and increased glycolysis",
+        "PFK-1 inhibition and increased gluconeogenesis",
+        "Activation of fructose-1,6-bisphosphatase",
+        "Increased glycogen breakdown"
+      ],
+      "answer": 0,
+      "why": "F2,6-BP is the most potent allosteric activator of PFK-1 and simultaneously inhibits fructose-1,6-bisphosphatase, pushing flux toward glycolysis. Glucagon produces the opposite pattern.",
+      "lesson": "sci-biochem-l05",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-biochem-q016",
+      "q": "Sucrose is a non-reducing sugar because:",
+      "choices": [
+        "It contains fructose",
+        "It cannot be hydrolyzed",
+        "It is a beta-1,4 linkage",
+        "Both anomeric carbons are engaged in the glycosidic bond"
+      ],
+      "answer": 3,
+      "why": "A reducing sugar needs a free anomeric carbon that can open to an aldehyde; sucrose ties up both. Lactose and maltose have a free anomeric carbon and are reducing, and sucrose is readily hydrolyzed by sucrase.",
+      "lesson": "sci-biochem-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-biochem-q017",
+      "q": "During sprinting, muscle converts pyruvate to lactate. The primary benefit is:",
+      "choices": [
+        "Producing extra ATP directly from lactate dehydrogenase",
+        "Providing acetyl-CoA to the TCA cycle",
+        "Lowering intracellular pH to aid oxygen release",
+        "Regenerating NAD+ so glycolysis can continue"
+      ],
+      "answer": 3,
+      "why": "Lactate dehydrogenase itself makes no ATP; it restores the NAD+ that glyceraldehyde-3-phosphate dehydrogenase consumes. Lactate is a dead end that must be exported, not fed into the TCA cycle.",
+      "lesson": "sci-biochem-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-biochem-q018",
+      "q": "How many NADH, FADH2 and GTP are produced per turn of the citric acid cycle?",
+      "choices": [
+        "2 NADH, 2 FADH2, 1 GTP",
+        "6 NADH, 2 FADH2, 2 GTP",
+        "4 NADH, 1 FADH2, 2 GTP",
+        "3 NADH, 1 FADH2, 1 GTP"
+      ],
+      "answer": 3,
+      "why": "One acetyl-CoA yields 3 NADH, 1 FADH2, 1 GTP and 2 CO2. The 6 NADH figure describes two turns, that is, one glucose.",
+      "lesson": "sci-biochem-l06",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-biochem-q019",
+      "q": "A toxin allows protons to cross the inner mitochondrial membrane freely. What is the expected result?",
+      "choices": [
+        "Increased ATP production and hypothermia",
+        "Accumulation of oxygen in the matrix",
+        "Complete cessation of electron transport",
+        "Continued oxygen consumption with decreased ATP and hyperthermia"
+      ],
+      "answer": 3,
+      "why": "Uncoupling dissipates the gradient as heat, so the chain runs faster while ATP synthase idles. Blocking a complex would stop oxygen consumption instead, which is the opposite pattern.",
+      "lesson": "sci-biochem-l06",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-biochem-q020",
+      "q": "Which statement about oxidative phosphorylation is correct?",
+      "choices": [
+        "Complex II pumps four protons",
+        "Coenzyme Q is a fixed component of Complex I",
+        "ATP synthase transfers electrons to oxygen",
+        "Oxygen is the final electron acceptor at Complex IV"
+      ],
+      "answer": 3,
+      "why": "Cytochrome c oxidase passes electrons to oxygen to form water. Complex II pumps no protons, ATP synthase does not handle electrons, and coenzyme Q is a mobile lipid-soluble carrier.",
+      "lesson": "sci-biochem-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-biochem-q021",
+      "q": "Muscle uses the glycerol-3-phosphate shuttle rather than the malate-aspartate shuttle. The consequence per glucose is:",
+      "choices": [
+        "More ATP, because FADH2 yields more than NADH",
+        "Glycolysis cannot proceed",
+        "No difference in ATP yield",
+        "Less ATP, because cytosolic NADH is delivered as FADH2"
+      ],
+      "answer": 3,
+      "why": "The glycerol-3-phosphate shuttle hands electrons to FAD, entering at Complex II and yielding about 1.5 ATP instead of 2.5, so total falls to roughly 30 rather than 32. FADH2 always yields less, not more.",
+      "lesson": "sci-biochem-l06",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-biochem-q022",
+      "q": "A child with von Gierke disease has severe fasting hypoglycemia, hepatomegaly and lactic acidosis. Which enzyme is missing?",
+      "choices": [
+        "Muscle glycogen phosphorylase",
+        "Debranching enzyme",
+        "Glucose-6-phosphatase",
+        "Lysosomal acid maltase"
+      ],
+      "answer": 2,
+      "why": "Without glucose-6-phosphatase the liver cannot release free glucose from either glycogenolysis or gluconeogenesis, so glucose-6-phosphate backs up and is shunted to lactate. McArdle affects muscle only and Pompe causes cardiomegaly.",
+      "lesson": "sci-biochem-l07",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-biochem-q023",
+      "q": "Which substrate cannot be used for net glucose synthesis in humans?",
+      "choices": [
+        "Lactate",
+        "Alanine",
+        "Glycerol",
+        "Palmitate"
+      ],
+      "answer": 3,
+      "why": "An even-chain fatty acid yields only acetyl-CoA, and pyruvate dehydrogenase is irreversible, so its carbons leave as CO2. Lactate, alanine and glycerol all enter above that block.",
+      "lesson": "sci-biochem-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-biochem-q024",
+      "q": "NADPH differs from NADH primarily in that NADPH is used for:",
+      "choices": [
+        "Oxidative phosphorylation to make ATP",
+        "Reductive biosynthesis and antioxidant defense",
+        "Substrate-level phosphorylation in glycolysis",
+        "Transamination reactions"
+      ],
+      "answer": 1,
+      "why": "NADPH supplies reducing power for fatty acid, cholesterol and steroid synthesis and keeps glutathione reduced. NADH is the one that feeds the electron transport chain, and transamination needs PLP, not either cofactor.",
+      "lesson": "sci-biochem-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-biochem-q025",
+      "q": "A type 1 diabetic in DKA has glucose 420 mg/dL, pH 7.12 and large serum ketones. Which metabolic statement explains the ketones?",
+      "choices": [
+        "High glucose directly converts to ketone bodies",
+        "Absent insulin permits unrestrained lipolysis and hepatic ketogenesis",
+        "Ketones come from muscle glycogen breakdown",
+        "The liver consumes its own ketones and exports the excess"
+      ],
+      "answer": 1,
+      "why": "Without insulin, hormone-sensitive lipase runs unopposed, flooding the liver with fatty acids that become acetoacetate and beta-hydroxybutyrate. Glucose is not a ketone precursor, and the liver lacks thiophorase so it cannot consume ketones.",
+      "lesson": "sci-biochem-l07",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-biochem-q026",
+      "q": "Which enzyme is rate-limiting for gluconeogenesis?",
+      "choices": [
+        "Pyruvate carboxylase",
+        "PEP carboxykinase",
+        "Fructose-1,6-bisphosphatase",
+        "Glucose-6-phosphatase"
+      ],
+      "answer": 2,
+      "why": "Fructose-1,6-bisphosphatase is the controlled step, inhibited by AMP and fructose-2,6-bisphosphate in reciprocal fashion with PFK-1. The others are required bypasses but are not the main regulatory point.",
+      "lesson": "sci-biochem-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-biochem-q027",
+      "q": "A patient is given a drug that inhibits CPT-1. What is the expected metabolic effect?",
+      "choices": [
+        "Increased long-chain fatty acid oxidation",
+        "Decreased long-chain fatty acid oxidation and reduced ketogenesis",
+        "Increased gluconeogenesis from fatty acids",
+        "Increased malonyl-CoA degradation"
+      ],
+      "answer": 1,
+      "why": "CPT-1 moves long-chain acyl groups into the mitochondrion, so blocking it prevents beta-oxidation and therefore the acetyl-CoA needed for ketones. Fatty acids never yield net glucose regardless of the drug.",
+      "lesson": "sci-biochem-l08",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-biochem-q028",
+      "q": "Why does a gram of fat provide more than twice the energy of a gram of carbohydrate?",
+      "choices": [
+        "Fat is hydrated and carbohydrate is not",
+        "Fatty acid chains are highly reduced and stored without water",
+        "Fat is oxidized in the cytoplasm",
+        "Fat bypasses the electron transport chain"
+      ],
+      "answer": 1,
+      "why": "More carbon-hydrogen bonds mean more electrons to donate, and anhydrous storage means no water weight — 9 kcal/gram versus 4. Beta-oxidation is mitochondrial and depends entirely on the electron transport chain.",
+      "lesson": "sci-biochem-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-biochem-q029",
+      "q": "A patient with untreated familial hypercholesterolemia has LDL of 340 mg/dL and tendon xanthomas. The defect is in:",
+      "choices": [
+        "Lipoprotein lipase",
+        "The LDL receptor binding apoB-100",
+        "ApoC-II",
+        "HDL-mediated reverse transport only"
+      ],
+      "answer": 1,
+      "why": "Defective LDL receptors prevent hepatic clearance, so LDL accumulates in plasma and deposits in tendons. Lipoprotein lipase and apoC-II defects instead cause severe hypertriglyceridemia with chylomicronemia.",
+      "lesson": "sci-biochem-l08",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-biochem-q030",
+      "q": "Which pairing of fatty acid synthesis features is correct?",
+      "choices": [
+        "Mitochondrial, uses NADH, occurs during fasting",
+        "Cytoplasmic, uses NADPH, occurs in the fed state",
+        "Lysosomal, uses FADH2, glucagon-driven",
+        "Cytoplasmic, uses NADH, glucagon-driven"
+      ],
+      "answer": 1,
+      "why": "Synthesis is cytosolic, consumes NADPH from the pentose phosphate pathway, and is stimulated by insulin after a meal. Beta-oxidation is the mitochondrial, NADH-producing, glucagon-driven counterpart.",
+      "lesson": "sci-biochem-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-biochem-q031",
+      "q": "A cirrhotic patient becomes confused with asterixis and an ammonia level of 180 micromol/L. Which mechanism contributes to the encephalopathy?",
+      "choices": [
+        "Ammonia depletes alpha-ketoglutarate and causes astrocyte glutamine accumulation",
+        "Ammonia directly denatures neuronal DNA",
+        "Urea crosses the blood-brain barrier and is neurotoxic",
+        "Ammonia inhibits the sodium-potassium pump irreversibly"
+      ],
+      "answer": 0,
+      "why": "Reversal of glutamate dehydrogenase drains TCA intermediates while astrocyte glutamine synthesis causes osmotic swelling. Urea itself is nontoxic, which is the whole purpose of the urea cycle.",
+      "lesson": "sci-biochem-l09",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-biochem-q032",
+      "q": "Which statement about the urea cycle is correct?",
+      "choices": [
+        "Both nitrogens come from free ammonia",
+        "It occurs entirely in the cytoplasm",
+        "It requires N-acetylglutamate to activate CPS-I",
+        "It produces no ATP cost"
+      ],
+      "answer": 2,
+      "why": "N-acetylglutamate is an obligate allosteric activator of the rate-limiting CPS-I. One nitrogen comes from aspartate, the cycle spans mitochondrion and cytoplasm, and it costs 4 ATP equivalents per urea.",
+      "lesson": "sci-biochem-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-biochem-q033",
+      "q": "Allopurinol lowers uric acid by:",
+      "choices": [
+        "Increasing renal excretion of urate",
+        "Inhibiting xanthine oxidase",
+        "Dissolving existing urate crystals directly",
+        "Inhibiting HGPRT"
+      ],
+      "answer": 1,
+      "why": "Blocking xanthine oxidase reduces production of uric acid from hypoxanthine and xanthine. Probenecid is the uricosuric that increases excretion, and inhibiting HGPRT would worsen hyperuricemia.",
+      "lesson": "sci-biochem-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-biochem-q034",
+      "q": "A boy has hyperuricemia, dystonia, intellectual disability and self-mutilating behavior. Which enzyme is absent?",
+      "choices": [
+        "Xanthine oxidase",
+        "Adenosine deaminase",
+        "HGPRT",
+        "Glutamine-PRPP amidotransferase"
+      ],
+      "answer": 2,
+      "why": "Complete HGPRT deficiency is Lesch-Nyhan syndrome, an X-linked failure of purine salvage that forces de novo synthesis and floods the body with urate. Adenosine deaminase deficiency causes severe combined immunodeficiency instead.",
+      "lesson": "sci-biochem-l09",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-biochem-q035",
+      "q": "Why does scurvy cause poor wound healing and fragile vessels?",
+      "choices": [
+        "Vitamin C is needed for gamma-carboxylation of clotting factors",
+        "Vitamin C is required for proline and lysine hydroxylation in collagen",
+        "Vitamin C is a coenzyme for transamination",
+        "Vitamin C is required for purine salvage"
+      ],
+      "answer": 1,
+      "why": "Without hydroxylation, collagen triple helices cannot cross-link properly, so connective tissue is weak. Gamma-carboxylation requires vitamin K, and transamination requires B6.",
+      "lesson": "sci-biochem-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-biochem-q036",
+      "q": "A newborn develops jaundice, vomiting and cataracts after starting milk feeds. Which enzyme deficiency best explains this?",
+      "choices": [
+        "Phenylalanine hydroxylase",
+        "Lactase",
+        "Galactose-1-phosphate uridyltransferase",
+        "Medium-chain acyl-CoA dehydrogenase"
+      ],
+      "answer": 2,
+      "why": "Classic galactosemia from GALT deficiency accumulates galactose-1-phosphate, damaging liver and brain, while galactitol in the lens causes cataracts. PKU produces no cataracts, lactase deficiency causes only GI symptoms, and MCAD presents with fasting hypoketotic hypoglycemia.",
+      "lesson": "sci-biochem-l10",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-biochem-q037",
+      "q": "Why can DNA polymerase not start a new strand on its own?",
+      "choices": [
+        "It reads only 3' to 5'",
+        "It requires a free 3'-hydroxyl to extend",
+        "It cannot bind single-stranded DNA",
+        "It works only on the lagging strand"
+      ],
+      "answer": 1,
+      "why": "Polymerase adds nucleotides to an existing 3'-OH, which is why primase lays an RNA primer first. It synthesizes 5' to 3' on both strands, and the lagging strand simply requires repeated priming.",
+      "lesson": "sci-biochem-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-biochem-q038",
+      "q": "An infant has progressive weakness, a cherry-red macula and marked hepatosplenomegaly. Which deficiency fits best?",
+      "choices": [
+        "Hexosaminidase A",
+        "Sphingomyelinase",
+        "Glucocerebrosidase",
+        "Alpha-galactosidase A"
+      ],
+      "answer": 1,
+      "why": "Niemann-Pick disease combines a cherry-red macula with hepatosplenomegaly, while Tay-Sachs from hexosaminidase A deficiency has the macular finding without organomegaly. Gaucher causes organomegaly and bone pain without a cherry-red spot, and Fabry presents with neuropathic pain and angiokeratomas.",
+      "lesson": "sci-biochem-l10",
+      "difficulty": 3
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "sci-biochem-s01",
+      "title": "Problem set: reasoning through a 36-hour fast",
+      "setting": "classroom",
+      "intro": "Your biochemistry instructor puts a single case on the board and works it with the class. A healthy `70 kg` adult volunteer eats a normal dinner and then fasts for `36 hours` under observation, with blood drawn every `6 hours`. Your job is to predict, at each time point, which pathway is supplying blood glucose and why. This is the integration question that shows up on nearly every final exam.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "**Hour 2 after dinner.** Blood glucose is `130 mg/dL` and insulin is high. Which set of pathways is active?",
+          "choices": [
+            {
+              "text": "Glycolysis, glycogen synthesis and fatty acid synthesis",
+              "next": "s2",
+              "feedback": "Correct. Insulin is the storage signal. It activates protein phosphatase-1, dephosphorylating glycogen synthase to the active form and raising fructose-2,6-bisphosphate to drive glycolysis.",
+              "score": 1
+            },
+            {
+              "text": "Gluconeogenesis and ketogenesis",
+              "next": "s2",
+              "feedback": "These are the fasting programs, driven by glucagon. With insulin high and glucose above baseline, running them would be futile cycling.",
+              "score": -1
+            },
+            {
+              "text": "Glycogenolysis in liver and muscle",
+              "next": "s2",
+              "feedback": "Backwards. Breaking down glycogen while absorbing a meal wastes ATP. Insulin inactivates glycogen phosphorylase at the same time it activates synthase.",
+              "score": -1
+            },
+            {
+              "text": "Beta-oxidation of fatty acids for fuel",
+              "next": "s2",
+              "feedback": "Blocked at this moment. Malonyl-CoA, the first product of fatty acid synthesis, inhibits CPT-1 and keeps fatty acids out of the mitochondrion.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "**Hour 8.** Glucose has fallen to `85 mg/dL`, insulin is low, glucagon is rising. The liver must now supply glucose. What is the dominant source at this point?",
+          "choices": [
+            {
+              "text": "Hepatic glycogenolysis",
+              "next": "s3",
+              "feedback": "Correct. Liver glycogen, about 100 grams, is the fast reserve and carries roughly the first 8–12 hours. Glucagon raises cAMP, protein kinase A phosphorylates and activates glycogen phosphorylase.",
+              "score": 1
+            },
+            {
+              "text": "Muscle glycogenolysis exporting glucose to blood",
+              "next": "s3",
+              "feedback": "This is the most common error in the unit. Muscle has no glucose-6-phosphatase, so it cannot release free glucose. Its 400 grams of glycogen are for its own use only.",
+              "score": -1
+            },
+            {
+              "text": "Gluconeogenesis from amino acids",
+              "next": "s3",
+              "feedback": "It has started but is not yet dominant. Gluconeogenesis is slower and more expensive (6 ATP equivalents per glucose), so the body spends the cheap glycogen first.",
+              "score": 0
+            },
+            {
+              "text": "Conversion of stored triglyceride to glucose",
+              "next": "s3",
+              "feedback": "Only the glycerol backbone can become glucose. The fatty acids cannot, because pyruvate dehydrogenase is irreversible.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "**Hour 24.** Glucose is `72 mg/dL`. Liver glycogen is essentially gone. Free fatty acids are high and hepatic acetyl-CoA is accumulating. Which enzyme does that acetyl-CoA activate, and what does it accomplish?",
+          "vitals": {
+            "hr": 62,
+            "bp": "112/70"
+          },
+          "choices": [
+            {
+              "text": "Pyruvate carboxylase — acetyl-CoA activates it, pushing pyruvate toward oxaloacetate for gluconeogenesis",
+              "next": "s4",
+              "feedback": "Exactly. This is the elegant link between fat oxidation and glucose production. Burning fat signals the liver that it should be making glucose, not burning it.",
+              "score": 1
+            },
+            {
+              "text": "Pyruvate dehydrogenase — acetyl-CoA activates it to make more acetyl-CoA",
+              "next": "s4",
+              "feedback": "Backwards. Acetyl-CoA and NADH inhibit PDH. If PDH stayed active it would burn the pyruvate that gluconeogenesis needs as raw material.",
+              "score": -1
+            },
+            {
+              "text": "Acetyl-CoA carboxylase — driving fatty acid synthesis",
+              "next": "s4",
+              "feedback": "Wrong direction entirely. ACC is activated by citrate and insulin in the fed state; in fasting it is inhibited by glucagon signaling and palmitoyl-CoA.",
+              "score": -1
+            },
+            {
+              "text": "Glycogen synthase — rebuilding the depleted stores",
+              "next": "s4",
+              "feedback": "The liver is not rebuilding anything at hour 24. Glucagon has phosphorylated synthase to its inactive form; rebuilding waits for the next meal.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "**Hour 36.** Serum beta-hydroxybutyrate is measurable and rising. Why is the liver making ketone bodies, and why can it not use them itself?",
+          "choices": [
+            {
+              "text": "Oxaloacetate is being consumed by gluconeogenesis, so excess acetyl-CoA is diverted to ketones; the liver lacks thiophorase and cannot use them",
+              "next": "s5",
+              "feedback": "Both halves correct. Acetyl-CoA needs oxaloacetate to enter the TCA cycle, and gluconeogenesis is draining it. Lacking thiophorase means the liver does not compete for the fuel it exports.",
+              "score": 1
+            },
+            {
+              "text": "Ketones are made because glucose is toxic at this level",
+              "next": "s5",
+              "feedback": "Glucose at 70 mg/dL is normal, not toxic. Ketogenesis is a response to fatty acid supply and oxaloacetate scarcity, not to glucose.",
+              "score": -1
+            },
+            {
+              "text": "The liver makes them and uses them, which is why blood levels stay low",
+              "next": "s5",
+              "feedback": "The liver specifically cannot use them. Blood ketones in a 36-hour fast are rising, not staying low, and that rise is the intended physiologic signal.",
+              "score": -1
+            },
+            {
+              "text": "Ketones are made from glucose when insulin is absent",
+              "next": "s5",
+              "feedback": "Ketones come from fatty acid-derived acetyl-CoA, not from glucose. Glucose cannot be converted into ketone bodies.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "Final question. If this volunteer continued to `3 weeks` of starvation, what changes and why does it matter for survival?",
+          "choices": [
+            {
+              "text": "The brain shifts to covering more than half its energy from ketones, reducing gluconeogenesis and sparing muscle protein",
+              "next": "end",
+              "feedback": "Correct, and this is the whole point of ketone adaptation. Protein is functional tissue, not storage, so every gram spared extends survival.",
+              "score": 1
+            },
+            {
+              "text": "The brain begins oxidizing fatty acids directly",
+              "next": "end",
+              "feedback": "Long-chain fatty acids are albumin-bound and do not cross the blood-brain barrier well. Ketones are the water-soluble workaround that does cross.",
+              "score": -1
+            },
+            {
+              "text": "Gluconeogenesis increases steadily to meet full brain demand",
+              "next": "end",
+              "feedback": "The opposite. Sustaining 120 grams of glucose daily from amino acids would consume lethal amounts of muscle in weeks; the adaptation is to need less glucose, not make more.",
+              "score": -1
+            },
+            {
+              "text": "Glycogen stores are rebuilt from ketone bodies",
+              "next": "end",
+              "feedback": "Ketones cannot become glucose or glycogen. They are acetyl-CoA derivatives and face the same irreversible PDH barrier as fatty acids.",
+              "score": 0
+            }
+          ]
+        }
+      ],
+      "debrief": "The pattern is a timeline, and every exam question about metabolic integration is asking where on it you are. **Hours 0–4** insulin stores everything. **Hours 4–12** liver glycogen covers blood glucose. **Hours 12–24** gluconeogenesis takes over as glycogen runs out. **Beyond 24 hours** fatty acid oxidation supplies most tissues, acetyl-CoA activates pyruvate carboxylase to sustain gluconeogenesis, and ketones accumulate. **Beyond 2–3 weeks** the brain runs largely on ketones and protein is spared.\n\nTwo rules solve most of these questions on their own: muscle glycogen never reaches the blood because muscle has no glucose-6-phosphatase, and fatty acids never become glucose because pyruvate dehydrogenase is irreversible."
+    },
+    {
+      "id": "sci-biochem-s02",
+      "title": "Enzyme kinetics lab: identifying an unknown inhibitor",
+      "setting": "classroom",
+      "intro": "In the biochemistry teaching lab you are given a purified enzyme, a substrate, and an unlabeled compound called **Inhibitor X**. You measure initial velocity at a range of substrate concentrations, with and without the inhibitor, and plot both data sets. The instructor's rule: state what the data show before you name a mechanism.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "Your uninhibited data give a hyperbolic curve. Velocity is half-maximal at `[S] = 2 mM`, and the plateau is `100 micromol/min`. What are Km and Vmax?",
+          "choices": [
+            {
+              "text": "Km = 2 mM, Vmax = 100 micromol/min",
+              "next": "s2",
+              "feedback": "Correct. Km is by definition the substrate concentration at half of Vmax, and Vmax is the plateau where all active sites are saturated.",
+              "score": 1
+            },
+            {
+              "text": "Km = 100 mM, Vmax = 2 micromol/min",
+              "next": "s2",
+              "feedback": "The units give this away. Km is a concentration and Vmax is a rate; swapping them is a unit error worth checking every time.",
+              "score": -1
+            },
+            {
+              "text": "Km = 1 mM, Vmax = 50 micromol/min",
+              "next": "s2",
+              "feedback": "You halved both values. Half-maximal velocity is 50, but Km is the substrate concentration at that point, which the data state is 2 mM.",
+              "score": 0
+            },
+            {
+              "text": "Km cannot be determined from a hyperbolic plot",
+              "next": "s2",
+              "feedback": "It can be read directly when the plateau is clear. The double-reciprocal plot exists because the plateau is often hard to identify, not because Km is unreadable in principle.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "With Inhibitor X present, the apparent Km rises to `8 mM` while Vmax is still `100 micromol/min`. On a Lineweaver-Burk plot, what would you expect to see?",
+          "choices": [
+            {
+              "text": "Lines intersecting on the y-axis at a shared 1/Vmax",
+              "next": "s3",
+              "feedback": "Correct. An unchanged Vmax means an unchanged y-intercept, while the larger Km moves the x-intercept (-1/Km) closer to the origin and steepens the slope.",
+              "score": 1
+            },
+            {
+              "text": "Lines intersecting on the x-axis at a shared -1/Km",
+              "next": "s3",
+              "feedback": "That is the noncompetitive pattern, where Km is unchanged and Vmax falls. Here Km changed, so the x-intercepts must differ.",
+              "score": -1
+            },
+            {
+              "text": "Two parallel lines",
+              "next": "s3",
+              "feedback": "Parallel lines mean both Km and Vmax fell proportionally, which is uncompetitive inhibition. Here Vmax is unchanged, so the slopes must differ.",
+              "score": 0
+            },
+            {
+              "text": "A single line identical to the control",
+              "next": "s3",
+              "feedback": "If the plots were identical the inhibitor would have no effect at all, which contradicts the fourfold rise in apparent Km.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "Name the inhibition type and predict what happens if you raise substrate concentration to `50 mM`.",
+          "choices": [
+            {
+              "text": "Competitive; high substrate outcompetes the inhibitor and velocity approaches the original Vmax",
+              "next": "s4",
+              "feedback": "Exactly. This reversibility with substrate is the defining functional signature of competitive inhibition, and it is why Vmax is preserved.",
+              "score": 1
+            },
+            {
+              "text": "Noncompetitive; raising substrate will not help",
+              "next": "s4",
+              "feedback": "The data rule this out. Noncompetitive inhibitors lower Vmax and leave Km alone; here the reverse happened.",
+              "score": -1
+            },
+            {
+              "text": "Irreversible; the enzyme is permanently inactivated",
+              "next": "s4",
+              "feedback": "An irreversible inhibitor removes enzyme from the pool, which lowers Vmax like a noncompetitive inhibitor. A preserved Vmax means enzyme is still fully available.",
+              "score": -1
+            },
+            {
+              "text": "Competitive; but Vmax will also double at high substrate",
+              "next": "s4",
+              "feedback": "Half right. It is competitive, but Vmax is a property of the enzyme and its turnover number. Substrate can restore Vmax, never exceed it.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "Your instructor reveals Inhibitor X is a structural analog of the substrate, then asks for a clinical example that works by the same mechanism.",
+          "choices": [
+            {
+              "text": "A statin competing with HMG-CoA at HMG-CoA reductase",
+              "next": "s5",
+              "feedback": "Correct. Statins resemble HMG-CoA closely enough to occupy the active site, which is the same mechanism you just characterized.",
+              "score": 1
+            },
+            {
+              "text": "Aspirin acetylating cyclooxygenase",
+              "next": "s5",
+              "feedback": "Aspirin forms a covalent bond, so it is irreversible. That is why the antiplatelet effect lasts the life of the platelet, about 7–10 days.",
+              "score": 0
+            },
+            {
+              "text": "Cyanide binding cytochrome c oxidase",
+              "next": "s5",
+              "feedback": "Cyanide binds the heme iron, not the substrate site, and adding more oxygen does not overcome it — the pattern of a non-substrate-competitive poison.",
+              "score": -1
+            },
+            {
+              "text": "Lithium inhibiting inositol monophosphatase",
+              "next": "s5",
+              "feedback": "Lithium is the standard textbook example of uncompetitive inhibition, binding only the enzyme-substrate complex and lowering both Km and Vmax.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "Last item on the worksheet: you now double the amount of enzyme in every tube. What happens to Km and Vmax?",
+          "choices": [
+            {
+              "text": "Vmax doubles; Km is unchanged",
+              "next": "end",
+              "feedback": "Correct. Vmax depends on how much enzyme is present, while Km reflects the substrate-enzyme interaction and is a property of the enzyme itself.",
+              "score": 1
+            },
+            {
+              "text": "Both Km and Vmax double",
+              "next": "end",
+              "feedback": "Km is independent of enzyme concentration. If it changed with enzyme amount it could not be used to compare isozymes such as hexokinase and glucokinase.",
+              "score": -1
+            },
+            {
+              "text": "Km halves; Vmax is unchanged",
+              "next": "end",
+              "feedback": "Backwards on both counts. Adding catalyst raises the maximum achievable rate and leaves binding affinity untouched.",
+              "score": -1
+            }
+          ]
+        }
+      ],
+      "debrief": "Read the data before you name the mechanism. The three reversible patterns are fully determined by two numbers: **competitive** raises Km with Vmax unchanged (lines meet on the y-axis), **noncompetitive** lowers Vmax with Km unchanged (lines meet on the x-axis), and **uncompetitive** lowers both proportionally (parallel lines). Irreversible inhibitors mimic the noncompetitive pattern because they subtract enzyme from the pool.\n\nOne more anchor worth keeping: **Vmax scales with enzyme quantity, Km does not.** That is what makes Km a meaningful comparison between isozymes — hexokinase at `0.1 mM` versus glucokinase at `10 mM` is a statement about physiology, not about how much enzyme happens to be in the tube."
+    }
+  ]
+}

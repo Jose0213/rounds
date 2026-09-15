@@ -9,7 +9,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const TRACKS = new Set(['foundations', 'emt', 'edtech', 'prepa']);
+const TRACKS = new Set(['foundations', 'emt', 'edtech', 'prepa', 'prereq']);
 const GROUPS = new Set(['assessment', 'airway', 'cardiac', 'trauma', 'meds', 'labs', 'ecg', 'ed', 'terms', 'exam', 'spanish', 'math']);
 const SETTINGS = new Set(['field', 'ed', 'classroom']);
 const LIMITS = {

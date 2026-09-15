@@ -1,0 +1,1124 @@
+{
+  "schema": 1,
+  "id": "sci-orgo",
+  "track": "prereq",
+  "title": "Organic Chemistry",
+  "short": "Organic Chem",
+  "summary": "A full two-semester organic chemistry course in syllabus order, from hybridization and nomenclature through stereochemistry, mechanisms, aromatics, carbonyls, spectroscopy and biomolecules, with every topic tied back to how drugs are built and how they behave in the body.",
+  "lessons": [
+    {
+      "id": "sci-orgo-l01",
+      "title": "Structure and bonding",
+      "minutes": 8,
+      "body": "## Carbon builds everything\n\nCarbon has four outer (valence) electrons and needs four more to be stable, so it forms **four bonds**. That is the whole reason organic chemistry exists: carbon can chain to itself endlessly and still hang other atoms off every position. Nitrogen normally makes three bonds, oxygen two, halogens and hydrogen one.\n\n## Hybridization\n\nWhen carbon bonds, its one `2s` and three `2p` orbitals mix into new identical orbitals. How many mix decides the shape.\n\n| Hybrid | Mixes | Groups on carbon | Geometry | Angle |\n|---|---|---|---|---|\n| `sp3` | s + 3p | 4 | tetrahedral | `109.5` degrees |\n| `sp2` | s + 2p | 3 | trigonal planar | `120` degrees |\n| `sp` | s + 1p | 2 | linear | `180` degrees |\n\nCount **groups**, not bonds: a double bond counts as one group, and a lone pair counts as a group too. Methane `CH4` has four groups, so `sp3`. Ethene `CH2=CH2` has three groups per carbon, so `sp2`. Acetylene `HC-triple-bond-CH` has two groups, so `sp`.\n\n## Sigma versus pi\n\nA **sigma** bond is head-on overlap along the line between the nuclei. It is strong and it rotates freely. A **pi** bond is side-on overlap of leftover unhybridized `p` orbitals above and below that line. Pi bonds are weaker, cannot rotate, and hold loose electrons that reactions grab first.\n\nSo a single bond is one sigma. A double bond is one sigma plus one pi. A triple bond is one sigma plus two pi. The frozen rotation of the pi bond is why alkenes have *cis* and *trans* forms and why the peptide bonds in your proteins are flat.\n\n## Formal charge\n\nFormal charge tells you which atom in a drawn structure is carrying the plus or minus.\n\n1. Count the atom's normal valence electrons: C is `4`, N is `5`, O is `6`.\n2. Count what it actually owns in the drawing: all lone-pair electrons plus one electron from each bond.\n3. Subtract: formal charge = valence minus owned.\n4. Example, the nitrogen in ammonium `NH4+`: valence `5`, owns `0` lone-pair electrons plus `4` bond electrons equals `4`, so `5 - 4 = +1`.\n5. Example, the oxygen in hydroxide `OH-`: valence `6`, owns `6` lone-pair electrons plus `1` bond electron equals `7`, so `6 - 7 = -1`.\n\n## Resonance\n\nSome molecules cannot be drawn with one picture. In the acetate ion `CH3COO-`, one oxygen looks double-bonded and one looks negative, but measurement shows both C-O bonds are identical. The truth is the **resonance hybrid**: the pi electrons and the charge are spread over both oxygens.\n\nRules for pushing resonance arrows: only electrons move, never atoms. Only pi electrons and lone pairs move. The total charge stays the same. Better structures have full octets, more bonds, and negative charge on the more electronegative atom.\n\n> **Key:** Resonance is not two molecules flipping back and forth. It is one molecule whose electrons are smeared across several positions, and spreading charge out always lowers energy.\n\n## Skeletal structures\n\nOrganic chemists stop drawing carbons and hydrogens. In a skeletal drawing every line end and every corner is a carbon, and enough hydrogens are assumed to give that carbon four bonds. Everything that is not carbon or hydrogen gets written out. A plain zigzag of six line segments is hexane. A hexagon with three alternating internal lines is benzene.\n\n> **Trap:** Forgetting the invisible hydrogens. A corner carbon showing two lines silently carries two hydrogens, and those hydrogens matter when you count degrees of unsaturation or read an NMR.",
+      "keyPoints": [
+        "Carbon makes four bonds; N three, O two, H and halogens one.",
+        "Count groups on an atom: 4 is sp3 tetrahedral, 3 is sp2 planar, 2 is sp linear.",
+        "Single = 1 sigma; double = 1 sigma + 1 pi; triple = 1 sigma + 2 pi. Pi bonds block rotation.",
+        "Formal charge = normal valence electrons minus (lone-pair electrons + one per bond).",
+        "Resonance spreads electrons over several atoms; only electrons move, never atoms."
+      ],
+      "checks": [
+        {
+          "q": "What is the hybridization and geometry of each carbon in ethene, CH2=CH2?",
+          "choices": [
+            "sp3, tetrahedral",
+            "sp2, trigonal planar",
+            "sp, linear",
+            "sp3, trigonal planar"
+          ],
+          "answer": 1,
+          "why": "Each carbon has three groups around it (two hydrogens plus the doubly bonded carbon), so it is sp2 and trigonal planar at about 120 degrees."
+        },
+        {
+          "q": "How many sigma and pi bonds are in acetylene, HC-triple-bond-CH?",
+          "choices": [
+            "5 sigma, 0 pi",
+            "3 sigma, 2 pi",
+            "2 sigma, 3 pi",
+            "4 sigma, 1 pi"
+          ],
+          "answer": 1,
+          "why": "Two C-H sigma bonds plus one C-C sigma bond equals three sigma; the triple bond adds two pi bonds on top of its sigma."
+        },
+        {
+          "q": "Which statement about resonance structures is correct?",
+          "choices": [
+            "The molecule rapidly converts between them",
+            "Atoms may shift position between structures",
+            "Only electrons move, and the real molecule is an averaged hybrid",
+            "Every resonance structure contributes equally"
+          ],
+          "answer": 2,
+          "why": "Resonance moves only pi electrons and lone pairs; the real molecule is one averaged hybrid, and structures with full octets and charge on electronegative atoms contribute more."
+        }
+      ]
+    },
+    {
+      "id": "sci-orgo-l02",
+      "title": "Functional groups and IUPAC nomenclature",
+      "minutes": 9,
+      "body": "## Functional groups are the verbs\n\nA long carbon chain is mostly inert. The reactive part is the **functional group** hung off it, and molecules with the same group behave the same way. Learning organic chemistry is mostly learning about twelve groups.\n\n| Group | Looks like | Suffix |\n|---|---|---|\n| Alkane | all single bonds | -ane |\n| Alkene | C=C | -ene |\n| Alkyne | C-triple-C | -yne |\n| Alcohol | C-OH | -ol |\n| Ether | C-O-C | alkoxy- prefix |\n| Amine | C-NH2 | -amine |\n| Aldehyde | C=O at chain end, with H | -al |\n| Ketone | C=O inside the chain | -one |\n| Carboxylic acid | C=O plus OH on same carbon | -oic acid |\n| Ester | C=O plus O-C | -oate |\n| Amide | C=O plus N | -amide |\n| Nitrile | C-triple-N | -nitrile |\n\nIbuprofen is an aromatic ring with a carboxylic acid. Acetaminophen is a ring with a phenol `OH` and an amide. Aspirin is a ring with a carboxylic acid and an ester. Once you can spot the groups you can predict what a drug does chemically.\n\n## Naming, step by step\n\n1. **Find the parent chain**: the longest continuous carbon chain that contains the highest-priority functional group. Its length gives the root: meth `1`, eth `2`, prop `3`, but `4`, pent `5`, hex `6`, hept `7`, oct `8`, non `9`, dec `10`.\n2. **Number the chain** from the end that gives the principal functional group the lowest number. If there is no such group, number so the first substituent gets the lowest number.\n3. **Name the substituents**: methyl, ethyl, propyl, isopropyl, plus halogens as fluoro, chloro, bromo, iodo.\n4. **Alphabetize** substituents in the name, ignoring the multiplying prefixes di, tri, tetra.\n5. **Assemble**: substituent numbers and names, then root, then suffix. Hyphens between numbers and letters, commas between numbers.\n\n## Priority order\n\nWhen two groups compete for the suffix, the higher-priority one wins and the loser becomes a prefix. From highest down: carboxylic acid, ester, amide, nitrile, aldehyde, ketone, alcohol, amine, alkene or alkyne, then alkane. So a molecule with both an `OH` and a `COOH` is named as a hydroxy-substituted acid, not as an alcohol.\n\n## Worked example\n\nName a six-carbon chain with an `OH` on the second carbon from the right, a methyl group on the fourth carbon from the right, and a chlorine on the fifth carbon from the right.\n\n1. Longest chain is six carbons, so the root is **hex**.\n2. Highest-priority group is the alcohol, so the suffix is **-ol** and the chain ends in **hexanol**.\n3. Number from the right so the `OH` is carbon `2`, not carbon `5`.\n4. Substituents land at carbon `4` (methyl) and carbon `5` (chloro).\n5. Alphabetize: chloro before methyl.\n6. Final name: `5-chloro-4-methylhexan-2-ol`.\n\n> **On the exam:** Lowest-locant rules are tested constantly. Number for the principal group first, and only use substituents to break ties.\n\n> **Trap:** An aldehyde carbon is always carbon `1`. You never write a number for it, so `butanal` needs no locant but `butan-2-one` does.",
+      "keyPoints": [
+        "Functional groups, not chain length, determine reactivity.",
+        "Parent chain = longest chain containing the highest-priority group.",
+        "Suffix priority: acid, ester, amide, nitrile, aldehyde, ketone, alcohol, amine, alkene/alkyne.",
+        "Number for the lowest locant on the principal group; alphabetize substituents ignoring di/tri.",
+        "Aldehyde and carboxylic acid carbons are always carbon 1 and need no locant."
+      ],
+      "checks": [
+        {
+          "q": "A five-carbon chain has a ketone on carbon 2 and a methyl on carbon 4. What is its IUPAC name?",
+          "choices": [
+            "2-methylpentan-4-one",
+            "4-methylpentan-2-one",
+            "4-methylpentan-2-ol",
+            "2-methylpentanal"
+          ],
+          "answer": 1,
+          "why": "The ketone is the principal group so it gets the lowest number, making it carbon 2; the methyl then falls on carbon 4."
+        },
+        {
+          "q": "A molecule contains both a carboxylic acid and an alcohol. How is it named?",
+          "choices": [
+            "As an -ol with a carboxy- prefix",
+            "As an -oic acid with a hydroxy- prefix",
+            "Either way is acceptable",
+            "As a diol"
+          ],
+          "answer": 1,
+          "why": "Carboxylic acid outranks alcohol, so acid takes the suffix and the alcohol is demoted to the hydroxy- prefix."
+        },
+        {
+          "q": "Which functional group is present in aspirin but not in ibuprofen?",
+          "choices": [
+            "Carboxylic acid",
+            "Aromatic ring",
+            "Ester",
+            "Alkane chain"
+          ],
+          "answer": 2,
+          "why": "Both drugs carry a carboxylic acid on an aromatic ring, but only aspirin has the acetyl ester, which is the group that acetylates cyclooxygenase."
+        }
+      ]
+    },
+    {
+      "id": "sci-orgo-l03",
+      "title": "Alkanes, conformations and cycloalkanes",
+      "minutes": 8,
+      "body": "## Free rotation has a cost\n\nSingle bonds rotate, but not all rotations are equal in energy. The different arrangements you get by spinning a single bond are **conformations**. They interconvert millions of times a second at room temperature, so you cannot bottle one, but the preferred shape controls how a molecule fits a receptor.\n\n## Newman projections in words\n\nTo analyze rotation about one C-C bond, imagine looking straight down that bond. The front carbon is drawn as a dot with three lines radiating out like a peace sign; the back carbon is drawn as a circle behind it with three more lines coming off the rim. That picture is a **Newman projection**.\n\n- **Staggered**: the back lines sit exactly between the front lines, `60` degrees offset. Lowest energy.\n- **Eclipsed**: the back lines hide directly behind the front lines, `0` degrees offset. Highest energy, because filled bonding orbitals are forced together (torsional strain).\n\nIn butane, the two middle carbons each carry a methyl group, so two staggered forms exist. **Anti** puts the methyls `180` degrees apart and is the global minimum. **Gauche** puts them `60` degrees apart and sits about `0.9` kcal/mol higher because the two methyls crowd each other (steric strain). The worst point on the whole rotation is methyl-eclipsing-methyl, roughly `5` kcal/mol above anti.\n\n## Ring strain\n\nRings cannot rotate freely, so they pay strain instead. Cyclopropane is flat and forced to `60` degree angles, far from the ideal `109.5`, giving it huge angle strain and making it reactive. Cyclobutane and cyclopentane pucker slightly to relieve strain. Cyclohexane escapes strain entirely by folding.\n\n## The chair\n\nCyclohexane's favored shape is the **chair**: four carbons in a plane, one carbon puckered up and one puckered down. Every angle is near `109.5` and every neighboring pair is staggered, so the chair has essentially zero strain.\n\nEach carbon carries two hydrogens in different environments. **Axial** positions point straight up or straight down, alternating around the ring. **Equatorial** positions point outward around the ring's waist. When the ring flips to the other chair, every axial becomes equatorial and every equatorial becomes axial.\n\n> **Key:** Bulky substituents prefer **equatorial**. Axial groups suffer 1,3-diaxial crowding against the two other axial groups on the same face.\n\n## Worked example\n\nWhich chair of methylcyclohexane dominates, and by how much?\n\n1. Draw chair A with the methyl axial. It has two 1,3-diaxial interactions with the axial hydrogens on carbons `3` and `5`.\n2. Each of those interactions costs about `0.9` kcal/mol, the same energy as one gauche butane interaction.\n3. Total penalty for chair A is roughly `1.8` kcal/mol.\n4. Flip the ring to chair B; the methyl is now equatorial and points away from the ring, so the penalty is `0`.\n5. Chair B is `1.8` kcal/mol more stable, which at room temperature corresponds to about `95%` chair B at equilibrium.\n6. For a bulkier group the gap explodes: *tert*-butyl costs roughly `5.4` kcal/mol axial, so it is locked over `99%` equatorial.\n\n> **On the exam:** With two substituents, put the *larger* one equatorial. A cis-1,2-disubstituted cyclohexane can never have both groups equatorial; a trans-1,2 can.\n\nThis matters biologically. Glucose is the most common sugar on earth partly because in its six-membered ring form every large group can sit equatorial at once.",
+      "keyPoints": [
+        "Staggered conformations beat eclipsed; anti butane beats gauche by about 0.9 kcal/mol.",
+        "Cyclopropane is strained by 60 degree angles; cyclohexane is strain-free in a chair.",
+        "Ring flip converts every axial position to equatorial and vice versa.",
+        "Bulky groups sit equatorial to avoid 1,3-diaxial strain; methyl costs about 1.8 kcal/mol axial.",
+        "Beta-D-glucose is stable because all its bulky groups can be equatorial simultaneously."
+      ],
+      "checks": [
+        {
+          "q": "In a Newman projection of butane, which conformation is lowest in energy?",
+          "choices": [
+            "Anti staggered",
+            "Gauche staggered",
+            "Methyl-eclipsing-methyl",
+            "Hydrogen-eclipsing-methyl"
+          ],
+          "answer": 0,
+          "why": "Anti puts the two methyl groups 180 degrees apart in a staggered arrangement, avoiding both torsional and steric strain."
+        },
+        {
+          "q": "What happens to substituent positions during a cyclohexane ring flip?",
+          "choices": [
+            "Nothing changes",
+            "Axial groups become equatorial and equatorial become axial",
+            "Cis groups become trans",
+            "The ring becomes planar"
+          ],
+          "answer": 1,
+          "why": "A ring flip swaps axial and equatorial for every carbon but never breaks bonds, so cis/trans relationships are untouched."
+        },
+        {
+          "q": "Why is cyclopropane far more reactive than cyclohexane?",
+          "choices": [
+            "It has more hydrogens",
+            "Its 60 degree bond angles create severe angle strain",
+            "It cannot form a chair, so it has more gauche interactions",
+            "It is aromatic"
+          ],
+          "answer": 1,
+          "why": "Forcing sp3 carbons from 109.5 down to 60 degrees stores large angle strain that is released when the ring opens; cyclohexane's chair has essentially none."
+        }
+      ]
+    },
+    {
+      "id": "sci-orgo-l04",
+      "title": "Stereochemistry and chirality",
+      "minutes": 9,
+      "body": "## Handedness\n\nYour left and right hands are mirror images that cannot be superimposed. Molecules can do the same. A molecule that is not superimposable on its mirror image is **chiral**, and the two mirror images are **enantiomers**.\n\nThe usual cause is a carbon bonded to four different groups, called a **stereocenter** (or chiral center). Find one, and the molecule is probably chiral.\n\n## Assigning R and S, step by step\n\nUse the Cahn-Ingold-Prelog (CIP) rules.\n\n1. Locate the stereocenter and identify its four attached groups.\n2. Rank the groups by the **atomic number** of the first atom: higher wins. So I beats Br beats Cl beats S beats O beats N beats C beats H.\n3. If two first atoms tie, move outward one bond and compare the sets of atoms attached to each, highest first. `CH2OH` is (O,H,H) and beats `CH2CH3`, which is (C,H,H).\n4. Treat a double bond as duplication: `CHO` counts as (O,O,H), so an aldehyde outranks an alcohol-bearing carbon.\n5. Put the lowest priority group (`4`, usually hydrogen) pointing away from you.\n6. Trace `1` to `2` to `3`. Clockwise is **R** (rectus, right). Counterclockwise is **S** (sinister, left).\n7. If group `4` is pointing toward you instead, assign as above and then flip the answer.\n\nWorked example, the alpha carbon of L-alanine, `CH3-CH(NH2)-COOH`: priorities are `NH2` first (N), `COOH` second (C with O,O,O), `CH3` third (C with H,H,H), `H` last. With the H pointed back, the path N to COOH to CH3 runs counterclockwise, so it is `S`. Nineteen of the twenty amino acids in your proteins are `S`; cysteine is `R` only because sulfur outranks the carboxyl carbon, not because its shape differs.\n\n## Enantiomers, diastereomers, meso\n\n- **Enantiomers**: every stereocenter is inverted. Identical melting point, boiling point and solubility; they differ only in chiral environments.\n- **Diastereomers**: some but not all stereocenters inverted. Different physical properties, separable by ordinary chromatography.\n- **Meso**: has stereocenters but also an internal mirror plane, so it is achiral overall. Tartaric acid with `2R,3S` is meso and optically inactive.\n\nThe maximum number of stereoisomers is `2^n` for `n` stereocenters, minus any meso duplicates. Three stereocenters gives at most `8`.\n\n## Optical activity\n\nEnantiomers rotate plane-polarized light in equal and opposite directions: `(+)` dextrorotatory, `(-)` levorotatory. Specific rotation is the standardized value, `[alpha] = observed rotation / (path length in dm times concentration in g/mL)`. A 50:50 mixture is a **racemate** and rotates light `0` degrees.\n\n> **Trap:** `R`/`S` is about spatial arrangement and `(+)`/`(-)` is a measured optical property. There is no way to predict one from the other. `D`/`L`, used for sugars and amino acids, is a third separate system.\n\n## Why drugs are chiral\n\nReceptors and enzymes are built from `S` amino acids, so they are chiral and grip the two enantiomers of a drug differently.\n\n- Thalidomide: the `R` form is the sedative, the `S` form is teratogenic, and the body interconverts them, so giving pure `R` does not help.\n- Albuterol: `(R)`-albuterol (levalbuterol) is the active bronchodilator; the `S` form contributes little and may promote airway irritation.\n- Ibuprofen is sold as a racemate, but an isomerase converts inactive `(R)` into active `(S)` in the body.\n- Esomeprazole is simply the `(S)` enantiomer of omeprazole, marketed after the racemate's patent expired.\n\n> **Key:** A chiral drug is really two drugs in one bottle unless it is sold as a single enantiomer.",
+      "keyPoints": [
+        "A stereocenter is a carbon with four different groups; its mirror image is a non-superimposable enantiomer.",
+        "CIP: rank by atomic number, lowest priority back, 1-to-2-to-3 clockwise is R, counterclockwise is S.",
+        "Enantiomers invert every center; diastereomers invert some; meso compounds have an internal mirror plane and are achiral.",
+        "Max stereoisomers = 2 to the n; a racemic 50:50 mixture has zero optical rotation.",
+        "R/S, (+)/(-), and D/L are three independent labels and none predicts another."
+      ],
+      "checks": [
+        {
+          "q": "At a stereocenter you rank the groups, but the lowest priority group is pointing toward you. Tracing 1 to 2 to 3 appears clockwise. What is the configuration?",
+          "choices": [
+            "R",
+            "S",
+            "Meso",
+            "Cannot be determined"
+          ],
+          "answer": 1,
+          "why": "With the lowest priority group toward the viewer the apparent direction is backwards, so an apparent clockwise reading is actually S."
+        },
+        {
+          "q": "A compound has two stereocenters and an internal mirror plane. What is true?",
+          "choices": [
+            "It is chiral and optically active",
+            "It is a meso compound and optically inactive",
+            "It is a racemic mixture",
+            "It has four stereoisomers"
+          ],
+          "answer": 1,
+          "why": "An internal mirror plane cancels the two centers, giving an achiral meso compound; a racemate is a mixture of two molecules, which is a different thing."
+        },
+        {
+          "q": "Why did giving only the R enantiomer of thalidomide not solve its safety problem?",
+          "choices": [
+            "The R form is the teratogen",
+            "The body racemizes R into the harmful S form",
+            "R is inactive as a sedative",
+            "The two forms have different melting points"
+          ],
+          "answer": 1,
+          "why": "The stereocenter epimerizes in the body, so a pure R dose generates S in vivo; enantiomers share melting points, so that choice is chemically false."
+        }
+      ]
+    },
+    {
+      "id": "sci-orgo-l05",
+      "title": "Acids and bases in organic chemistry",
+      "minutes": 8,
+      "body": "## Everything is a proton transfer\n\nMost organic reactions start or end with a proton moving. A **Bronsted acid** donates `H+`; a **Bronsted base** accepts it. The broader **Lewis** definition is about electron pairs: a Lewis base donates a pair, a Lewis acid accepts one. Every nucleophile is a Lewis base, and every electrophile is a Lewis acid, so acid-base thinking runs through the entire course.\n\n## Ka and pKa\n\nFor `HA` in water, `Ka = [H+][A-]/[HA]`, and `pKa = -log(Ka)`. Lower pKa means stronger acid. A change of one pKa unit is a factor of `10`.\n\n| Compound | pKa |\n|---|---|\n| Sulfuric acid | about `-9` |\n| Protonated alcohol, `ROH2+` | about `-2` |\n| Carboxylic acid | about `4.8` |\n| Ammonium, `NH4+` | `9.2` |\n| Phenol | `10` |\n| Water | `15.7` |\n| Alcohol | about `16` |\n| Ketone alpha C-H | about `20` |\n| Terminal alkyne | `25` |\n| Ammonia | `38` |\n| Alkane | about `50` |\n\nMemorize a handful of anchors and interpolate. Acetic acid `4.8`, water `15.7`, ethanol `16`, and terminal alkyne `25` will carry you a long way.\n\n## ARIO: why a conjugate base is stable\n\nAcid strength is really about the *stability of the conjugate base left behind*. Four factors, in order of importance.\n\n- **A - Atom.** Where does the negative charge sit? Going across a row, electronegativity wins: `CH3-` is worse than `NH2-` is worse than `HO-` is worse than `F-`. Going down a column, size wins because a bigger atom spreads the charge: `HI` (pKa `-10`) is far stronger than `HF` (pKa `3.2`).\n- **R - Resonance.** Delocalizing the charge stabilizes it. Acetic acid at pKa `4.8` beats ethanol at `16` by eleven orders of magnitude for exactly one reason: the acetate anion spreads its charge over two equivalent oxygens.\n- **I - Induction.** Electron-withdrawing atoms nearby pull charge away through sigma bonds. Acetic acid is `4.8`; chloroacetic acid is `2.9`; trichloroacetic acid is `0.7`. The effect fades fast with distance.\n- **O - Orbital.** More `s` character holds electrons closer to the nucleus. An `sp` carbanion (`50%` s) is stabler than `sp2` (`33%`) than `sp3` (`25%`), which is why terminal alkynes at pKa `25` can be deprotonated by `NaNH2` but alkanes at `50` cannot.\n\n> **Key:** Never compare acids directly. Draw both conjugate bases and ask which one handles the negative charge better.\n\n## Predicting direction\n\nAn acid-base equilibrium always runs toward the **weaker acid**, meaning toward the higher pKa side.\n\n1. Write the reaction and identify which species is losing a proton.\n2. Look up the pKa of the acid on the left.\n3. Look up the pKa of the acid formed on the right.\n4. Example: ethanol (`16`) plus sodium hydride. The product acid is `H2` at pKa `35`.\n5. `35` is much higher than `16`, so products are hugely favored; the reaction goes to completion and is irreversible.\n6. Counterexample: ethanol (`16`) plus hydroxide. The product acid is water at `15.7`, essentially a tie, so you get a roughly 50:50 equilibrium, not full deprotonation.\n\n## Why ionization matters for drugs\n\nOnly the uncharged form of a drug crosses a lipid membrane well. Aspirin is an acid with pKa about `3.5`. In stomach acid at pH `2`, it is mostly neutral and absorbs readily through the gastric lining. In blood at pH `7.4`, it is more than `99.9%` ionized, which traps it in plasma. This same logic explains ion trapping in overdose management: alkalinizing urine keeps salicylate ionized in the tubule so it cannot be reabsorbed.\n\n> **Trap:** pKa is a property of the molecule and never changes with pH. What changes with pH is the *fraction* ionized. At pH = pKa, it is exactly `50%`.",
+      "keyPoints": [
+        "Lower pKa means stronger acid; each unit is a factor of 10.",
+        "Judge acidity by conjugate-base stability using ARIO: Atom, Resonance, Induction, Orbital.",
+        "Anchors: carboxylic acid 4.8, water 15.7, alcohol 16, terminal alkyne 25, alkane 50.",
+        "Equilibrium favors the side with the weaker acid, that is the higher pKa.",
+        "Neutral drug crosses membranes; at pH equal to pKa a drug is exactly 50 percent ionized."
+      ],
+      "checks": [
+        {
+          "q": "Why is acetic acid (pKa 4.8) roughly 10 billion times more acidic than ethanol (pKa 16)?",
+          "choices": [
+            "Acetic acid has more carbons",
+            "Acetate delocalizes its negative charge over two oxygens by resonance",
+            "Ethanol has no oxygen",
+            "Acetic acid is sp hybridized"
+          ],
+          "answer": 1,
+          "why": "Resonance stabilization of acetate is the dominant factor; ethoxide localizes full negative charge on one oxygen. Chain length and hybridization are not the issue here."
+        },
+        {
+          "q": "Sodium amide (conjugate acid NH3, pKa 38) is added to 1-butyne (pKa 25). What happens?",
+          "choices": [
+            "No reaction, 1-butyne is not acidic enough",
+            "The alkyne is deprotonated essentially completely",
+            "An equilibrium near 50:50 forms",
+            "The amide adds across the triple bond"
+          ],
+          "answer": 1,
+          "why": "Equilibrium runs toward the weaker acid, and ammonia at 38 is far weaker than the alkyne at 25, so deprotonation is complete."
+        },
+        {
+          "q": "A drug is a weak acid with pKa 3.5. At blood pH 7.4 it is:",
+          "choices": [
+            "Mostly neutral and lipid soluble",
+            "Exactly 50 percent ionized",
+            "More than 99 percent ionized and trapped in plasma",
+            "Converted to its conjugate acid"
+          ],
+          "answer": 2,
+          "why": "Blood pH sits almost four units above the pKa, so the ionized form outnumbers neutral by about 10000 to 1; 50 percent ionization would require pH equal to pKa."
+        }
+      ]
+    },
+    {
+      "id": "sci-orgo-l06",
+      "title": "Alkenes and alkynes",
+      "minutes": 9,
+      "body": "## Pi electrons are bait\n\nA carbon-carbon double bond holds a loose, exposed pair of pi electrons above and below the molecular plane. Anything electron-poor is attracted to them. That single fact drives every alkene reaction: the alkene acts as the **nucleophile** (electron donor) and attacks an **electrophile** (electron acceptor).\n\n## Degrees of unsaturation\n\nBefore you know a structure, count its rings and pi bonds from the formula.\n\n1. Start with `degrees = (2C + 2 - H) / 2` where C is carbons and H is hydrogens.\n2. Add nitrogens to the hydrogen count as if each N were `-1` H: subtract `N` from the numerator... more simply, treat each N as adding `1` to the `2C+2` term.\n3. Ignore oxygen and sulfur entirely; they do not change the count.\n4. Count each halogen as a hydrogen.\n5. Example, `C6H6` benzene: `(12 + 2 - 6)/2 = 4`. Four degrees means three pi bonds plus one ring. That is benzene, and you deduced it from the formula alone.\n\n## Addition, not substitution\n\nAlkenes **add**. The pi bond breaks and two new sigma bonds form across the old double bond.\n\n- **Hydrohalogenation** (`HBr`): H and Br add across the bond.\n- **Hydration** (`H2O` with `H2SO4`): H and OH add.\n- **Halogenation** (`Br2`): two bromines add *anti*, on opposite faces, through a bridged bromonium ion. The instant fading of orange `Br2` is the classic alkene test.\n- **Hydrogenation** (`H2`, `Pd/C`): two hydrogens add *syn*, same face. This is the reaction that turns liquid vegetable oil into solid shortening, and partial hydrogenation is where trans fats come from.\n\n## Markovnikov and carbocations\n\nWhen `HBr` adds to propene, the proton goes on first. It can land on either alkene carbon, and the resulting positive charge (**carbocation**) ends up on the other one. Carbocation stability decides which path wins:\n\n`tertiary` (three carbons attached) is more stable than `secondary` than `primary` than `methyl`, because neighboring alkyl groups donate electron density and because their C-H sigma bonds overlap with the empty p orbital (hyperconjugation).\n\nSo the proton adds to the carbon that already has **more** hydrogens, leaving the cation on the more substituted carbon, and the halide lands there. That is **Markovnikov's rule**: the rich get richer.\n\nRadical addition of `HBr` with peroxides flips this. A bromine radical adds first, and it adds where it makes the more stable *radical*, putting Br on the less substituted carbon. That is **anti-Markovnikov**. Hydroboration-oxidation (`BH3` then `H2O2`/`NaOH`) also gives anti-Markovnikov alcohol, and it adds syn with no rearrangement.\n\n## Rearrangements\n\nAny time a carbocation forms, it can improve itself. A hydrogen with its bonding pair can slide over from the adjacent carbon (**hydride shift**), or a methyl group can (**methyl shift**), if that moves the charge to a more stable carbon.\n\n## Worked mechanism\n\nAdd `HBr` to 3-methyl-1-butene.\n\n1. The alkene pi electrons attack the hydrogen of `HBr`. Draw that curved arrow from the middle of the double bond to the H.\n2. A second arrow goes from the H-Br bond to bromine, which leaves as `Br-`.\n3. Following Markovnikov, the H adds to carbon `1`, putting a **secondary** cation on carbon `2`.\n4. Carbon `3` is tertiary and next door. A hydride shifts from carbon `3` to carbon `2`.\n5. The cation is now **tertiary** on carbon `3`, which is more stable.\n6. Bromide attacks that carbon: the arrow runs from a bromide lone pair to the positive carbon.\n7. Product is `2-bromo-2-methylbutane`, not the naive `2-bromo-3-methylbutane`.\n\n> **Trap:** Missing a rearrangement is the single most common mechanism error on exams. Any time you draw a secondary cation, check both neighbors for a route to tertiary.\n\n## Alkynes\n\nAlkynes add twice, once to reach an alkene and once more to reach an alkane, and you can stop at the alkene with the right reagent. Lindlar catalyst gives the *cis* alkene; sodium in liquid ammonia gives the *trans* alkene. Terminal alkynes at pKa `25` can be deprotonated to acetylide anions, which are excellent carbon nucleophiles for building longer chains.",
+      "keyPoints": [
+        "Alkenes are nucleophiles; their pi electrons attack electrophiles and the pi bond is replaced by two sigma bonds.",
+        "Degrees of unsaturation = (2C + 2 - H)/2; each degree is one ring or one pi bond.",
+        "Carbocation stability: tertiary beats secondary beats primary beats methyl.",
+        "Markovnikov: H adds to the carbon with more hydrogens. Peroxide/HBr and hydroboration give anti-Markovnikov.",
+        "Br2 adds anti through a bromonium ion; H2 with Pd/C adds syn."
+      ],
+      "checks": [
+        {
+          "q": "What is the degree of unsaturation of C7H8O?",
+          "choices": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "answer": 2,
+          "why": "Oxygen is ignored, so (2 times 7 + 2 - 8)/2 = 4, consistent with a benzene ring plus its three pi bonds."
+        },
+        {
+          "q": "HBr is added to 2-methylpropene with no peroxides present. What is the major product?",
+          "choices": [
+            "1-bromo-2-methylpropane",
+            "2-bromo-2-methylpropane",
+            "2-bromopropane",
+            "A racemic mixture of both bromides"
+          ],
+          "answer": 1,
+          "why": "Markovnikov addition puts the proton on the CH2 end and the resulting tertiary cation captures bromide, giving the tertiary bromide; the primary product would require the less stable cation."
+        },
+        {
+          "q": "Which reagent converts an alkyne to a cis alkene and stops there?",
+          "choices": [
+            "H2 with Pd/C",
+            "Lindlar catalyst",
+            "Na in liquid NH3",
+            "Br2 in CCl4"
+          ],
+          "answer": 1,
+          "why": "Lindlar is a poisoned palladium catalyst that delivers syn hydrogen once; full Pd/C over-reduces to the alkane and Na/NH3 gives the trans alkene."
+        }
+      ]
+    },
+    {
+      "id": "sci-orgo-l07",
+      "title": "Substitution and elimination",
+      "minutes": 9,
+      "body": "## Four reactions, one competition\n\nGive an alkyl halide a species with a lone pair and four things can happen. If that species attacks the carbon, you get **substitution**. If it plucks a proton instead, you get **elimination** and a new alkene. Each comes in a one-step and a two-step flavor.\n\n| Reaction | Steps | Rate depends on | Substrate | Stereochemistry |\n|---|---|---|---|---|\n| SN2 | 1 | substrate and nucleophile | methyl, primary | inversion (backside attack) |\n| SN1 | 2 | substrate only | tertiary | racemization |\n| E2 | 1 | substrate and base | any, favors tertiary | anti-periplanar |\n| E1 | 2 | substrate only | tertiary | Zaitsev alkene |\n\n## SN2\n\nThe nucleophile attacks the carbon from directly opposite the leaving group, `180` degrees away, while the leaving group departs. Everything happens at once through one transition state. Because the attack comes from the back, the stereocenter turns inside out like an umbrella in the wind: **inversion of configuration**. Bulk kills it, so tertiary substrates essentially never do SN2. Polar aprotic solvents (acetone, DMSO, DMF, acetonitrile) speed it up because they dissolve the cation but leave the nucleophile naked and hungry.\n\n## SN1\n\nThe leaving group departs first, all by itself, forming a carbocation. That slow step sets the rate, so the nucleophile's identity does not matter. The flat cation can then be attacked from either face, giving roughly equal amounts of both configurations: **racemization**. Tertiary substrates and polar protic solvents (water, alcohols, acetic acid) favor SN1, because those solvents stabilize the cation.\n\n## E2 and E1\n\nE2 is one concerted step: a strong base removes a proton on the carbon next door while the leaving group leaves and a pi bond forms. The proton and the leaving group must be **anti-periplanar**, `180` degrees apart on the same plane, which in a cyclohexane means the leaving group must be axial. E1 shares SN1's carbocation, then loses a proton from the adjacent carbon.\n\n**Zaitsev's rule**: elimination favors the more substituted, more stable alkene. A bulky base (potassium *tert*-butoxide, LDA) cannot reach the crowded interior proton and takes the accessible one instead, giving the less substituted **Hofmann** alkene.\n\n## Leaving groups\n\nGood leaving groups are weak bases, that is the conjugate bases of strong acids. Order: tosylate is best, then `I-`, `Br-`, `Cl-`, then water when the alcohol is protonated. `OH-`, `NH2-` and `F-` are terrible leaving groups. That is exactly why an alcohol must be protonated or converted to a tosylate before it will do substitution.\n\n## A decision procedure\n\n1. **Classify the substrate.** Methyl or primary strongly favors SN2. Tertiary rules out SN2 completely. Secondary is the battleground.\n2. **Classify the attacking species.** Strong nucleophile and weak base (`I-`, `Br-`, `CN-`, `RS-`, `N3-`) means SN2. Strong base (`RO-`, `OH-`, `NH2-`) means E2. Bulky strong base (`t-BuO-`) means E2 giving the Hofmann product. Weak, neutral species (water, methanol) means SN1 and E1 together.\n3. **Check the solvent.** Polar aprotic pushes toward SN2. Polar protic pushes toward SN1/E1.\n4. **Check heat.** Heat always shifts the balance toward elimination, because elimination increases the number of molecules and so gains entropy.\n5. **Predict stereochemistry.** SN2 inverts. SN1 racemizes. E2 needs anti-periplanar geometry.\n\nWorked example: 2-bromobutane plus sodium ethoxide in ethanol, heated. Secondary substrate, strong base, heat, so **E2**, and Zaitsev gives 2-butene as the major product over 1-butene. Swap ethoxide for sodium iodide in acetone and the same substrate goes **SN2** with inversion.\n\n> **On the exam:** Read the base/nucleophile before anything else. It settles the substitution-versus-elimination question faster than the substrate does.",
+      "keyPoints": [
+        "SN2: one step, backside attack, inversion, needs methyl or primary substrate and polar aprotic solvent.",
+        "SN1: two steps through a carbocation, tertiary substrate, polar protic solvent, racemization.",
+        "E2 needs a strong base and anti-periplanar H and leaving group; E1 shares SN1's carbocation.",
+        "Zaitsev gives the more substituted alkene; a bulky base gives the Hofmann alkene instead.",
+        "Good leaving groups are weak bases: tosylate, I, Br, Cl. OH must be activated first."
+      ],
+      "checks": [
+        {
+          "q": "(S)-2-bromobutane is treated with sodium cyanide in DMSO. What is the product?",
+          "choices": [
+            "A racemic nitrile",
+            "A single nitrile with inverted configuration",
+            "2-butene",
+            "A single nitrile with retained configuration"
+          ],
+          "answer": 1,
+          "why": "Cyanide is a strong nucleophile and weak base, DMSO is polar aprotic, and the substrate is secondary and unhindered, so SN2 proceeds with clean backside inversion."
+        },
+        {
+          "q": "Why does potassium tert-butoxide give the less substituted alkene?",
+          "choices": [
+            "It is a weaker base than ethoxide",
+            "It is too bulky to reach the interior proton, so it removes an accessible terminal one",
+            "It favors SN1",
+            "It reverses Zaitsev by stabilizing the terminal alkene"
+          ],
+          "answer": 1,
+          "why": "Steric bulk, not base strength or product stability, drives the Hofmann outcome; tert-butoxide is actually the stronger base."
+        },
+        {
+          "q": "Which change most increases the fraction of elimination product?",
+          "choices": [
+            "Lowering the temperature",
+            "Switching to a polar aprotic solvent",
+            "Heating the reaction",
+            "Using a smaller nucleophile"
+          ],
+          "answer": 2,
+          "why": "Elimination makes more particles and is entropy-favored, so heat pushes toward it; cooling and polar aprotic solvents both favor substitution."
+        }
+      ]
+    },
+    {
+      "id": "sci-orgo-l08",
+      "title": "Alcohols, ethers and epoxides",
+      "minutes": 8,
+      "body": "## Alcohols are the hub\n\nThe `OH` group hydrogen bonds, which is why ethanol boils at `78` degrees C while propane, of nearly identical mass, boils at `-42`. Hydrogen bonding also makes small alcohols water soluble, and it is why so many drugs carry an `OH` to improve solubility.\n\nAlcohols are also the crossroads of synthesis: you can make them from alkenes, from carbonyls, or from halides, and you can turn them into almost anything else.\n\n## Making alcohols\n\n- **Acid-catalyzed hydration** of an alkene: Markovnikov, and carbocations can rearrange.\n- **Oxymercuration-demercuration**: Markovnikov, no rearrangement.\n- **Hydroboration-oxidation** (`BH3` then `H2O2`, `NaOH`): anti-Markovnikov and syn.\n- **Reduction of a carbonyl**: `NaBH4` is mild and reduces aldehydes and ketones only. `LiAlH4` is violent and reduces esters and carboxylic acids down to alcohols as well.\n- **Grignard reagent** (`RMgBr`) plus a carbonyl: this builds a new carbon-carbon bond, the most valuable move in synthesis. A Grignard is destroyed instantly by water or any `OH`, so the glassware must be dry.\n\n## Oxidation levels\n\nOxidation in organic chemistry means gaining bonds to oxygen or losing bonds to hydrogen.\n\n1. A **primary** alcohol oxidizes to an aldehyde, then onward to a carboxylic acid.\n2. Use PCC (or Swern, or Dess-Martin) to **stop** at the aldehyde, because these reagents are anhydrous.\n3. Use chromic acid, `KMnO4`, or Jones reagent to go all the way to the carboxylic acid.\n4. A **secondary** alcohol oxidizes to a ketone and stops there; there is no further hydrogen to remove.\n5. A **tertiary** alcohol does not oxidize at all, because its carbinol carbon has no hydrogen.\n\nThis is not academic. Ethanol is oxidized in your liver by alcohol dehydrogenase to acetaldehyde, then by aldehyde dehydrogenase to acetic acid. Disulfiram blocks the second enzyme, so acetaldehyde piles up and causes the flushing and vomiting that make the drug work.\n\n## Converting the bad leaving group\n\n`OH-` will not leave. Three fixes:\n\n- **Protonate** with strong acid so water leaves instead, then substitution or elimination follows.\n- **Tosylate** with `TsCl` and pyridine, converting `OH` to `OTs`, an excellent leaving group, with retention at the stereocenter because the C-O bond never breaks.\n- **`SOCl2`** gives the alkyl chloride and **`PBr3`** gives the alkyl bromide, both with inversion and both avoiding carbocations entirely.\n\n## Ethers\n\nEthers are nearly inert, which is why diethyl ether and THF are solvents rather than reactants. They are made by **Williamson ether synthesis**: deprotonate an alcohol to an alkoxide, then run SN2 on an alkyl halide. Since it is SN2, always use the **less hindered** partner as the halide. Making *tert*-butyl methyl ether means alkoxide from *tert*-butanol plus methyl iodide, never methoxide plus *tert*-butyl bromide, which would only eliminate.\n\n## Epoxides\n\nAn epoxide is a three-membered ring with one oxygen, made from an alkene plus a peroxyacid such as mCPBA. That tiny ring is packed with angle strain, so unlike ordinary ethers it opens readily, and it opens differently depending on conditions.\n\n| Condition | Attacks at | Stereochemistry |\n|---|---|---|\n| Basic or neutral nucleophile | **less** substituted carbon | anti opening, SN2-like |\n| Acid plus nucleophile | **more** substituted carbon | anti opening, SN1-like |\n\n> **Key:** Under base, sterics rule and the nucleophile hits the open side. Under acid, the protonated ring stretches toward the carbon better able to hold positive charge, so charge stability rules and the nucleophile hits the crowded side.\n\n> **On the exam:** Both pathways give **anti** products, because in both the nucleophile arrives opposite the C-O bond that is breaking.\n\nEpoxides are why ethylene oxide sterilizes equipment and why some chemotherapy and carcinogen chemistry works: strained rings attack DNA bases readily.",
+      "keyPoints": [
+        "Primary alcohol oxidizes to aldehyde (PCC) or all the way to acid (chromic acid); secondary gives a ketone; tertiary does not oxidize.",
+        "NaBH4 reduces aldehydes and ketones only; LiAlH4 also reduces esters and acids.",
+        "Activate OH before substitution: protonate, tosylate (retention), or use SOCl2/PBr3 (inversion).",
+        "Williamson ether synthesis is SN2, so the halide partner must be the less hindered one.",
+        "Epoxides open anti: base attacks the less substituted carbon, acid attacks the more substituted carbon."
+      ],
+      "checks": [
+        {
+          "q": "Which reagent oxidizes 1-butanol to butanal without going further?",
+          "choices": [
+            "Chromic acid",
+            "PCC",
+            "KMnO4",
+            "LiAlH4"
+          ],
+          "answer": 1,
+          "why": "PCC is anhydrous so no hydrate forms and oxidation stops at the aldehyde; chromic acid and permanganate carry it on to the acid, and LiAlH4 reduces rather than oxidizes."
+        },
+        {
+          "q": "2-methyl-1,2-epoxypropane is opened by methanol with sulfuric acid. Where does methanol attack?",
+          "choices": [
+            "The more substituted carbon",
+            "The less substituted carbon",
+            "The oxygen",
+            "Both carbons equally"
+          ],
+          "answer": 0,
+          "why": "Under acid the protonated epoxide develops partial positive charge on the carbon that can best stabilize it, which is the more substituted one; base conditions would give the opposite regiochemistry."
+        },
+        {
+          "q": "You want tert-butyl methyl ether by Williamson synthesis. Which pair works?",
+          "choices": [
+            "Sodium methoxide plus tert-butyl bromide",
+            "Sodium tert-butoxide plus methyl iodide",
+            "Either pair works equally",
+            "Methanol plus tert-butanol with acid"
+          ],
+          "answer": 1,
+          "why": "Williamson is SN2, so the halide must be unhindered; tert-butyl bromide with methoxide gives E2 elimination instead of the ether."
+        }
+      ]
+    },
+    {
+      "id": "sci-orgo-l09",
+      "title": "Aromatic compounds and EAS",
+      "minutes": 9,
+      "body": "## What makes a ring aromatic\n\nBenzene, `C6H6`, refuses to behave like an alkene. It will not decolorize bromine and it will not add hydrogen easily, because its six pi electrons are delocalized in a ring, worth about `36` kcal/mol of extra stability.\n\nA ring is **aromatic** if it meets four conditions:\n\n1. It is cyclic.\n2. It is fully conjugated: every ring atom has a `p` orbital, meaning every ring atom is `sp2` or carries a usable lone pair.\n3. It is planar.\n4. It contains `4n + 2` pi electrons, where n is a whole number. **Huckel's rule**: `2`, `6`, `10`, `14` electrons work.\n\nA cyclic, planar, conjugated ring with `4n` electrons (`4`, `8`, `12`) is **antiaromatic** and markedly *unstable*; cyclobutadiene is the classic example. Anything not cyclic, not conjugated, or not planar is simply nonaromatic.\n\nLone pairs count only if they are in a `p` orbital. In pyrrole, nitrogen's lone pair joins the ring to make `6` electrons, which is why pyrrole is a very weak base. In pyridine the lone pair sits in an `sp2` orbital in the ring plane, outside the pi system, so pyridine keeps its basicity (conjugate acid pKa `5.2`). That distinction shows up all over drug chemistry, in histamine, in caffeine, and in the purine and pyrimidine bases of DNA.\n\n## Electrophilic aromatic substitution\n\nBenzene is electron rich, so electrophiles want it, but it will not add, because addition would destroy aromaticity. Instead it **substitutes**.\n\n1. A Lewis acid generates a strong electrophile, for example `Br2` plus `FeBr3` makes `Br+`.\n2. Two of benzene's pi electrons attack the electrophile. Aromaticity is temporarily lost.\n3. The result is a positively charged **arenium ion** (sigma complex), stabilized by three resonance structures.\n4. A weak base removes the proton from the carbon bearing the new group.\n5. The pi bond reforms and aromaticity is restored. The net change is one H swapped for one group.\n\nThe standard reactions: halogenation (`X2`/`FeX3`), nitration (`HNO3`/`H2SO4` generating `NO2+`), sulfonation (`SO3`/`H2SO4`), Friedel-Crafts alkylation (`RCl`/`AlCl3`) and Friedel-Crafts acylation (`RCOCl`/`AlCl3`). Friedel-Crafts alkylation suffers from carbocation rearrangement and from over-alkylation; acylation avoids both because the acylium ion is resonance stabilized, so the standard fix is acylate first, then reduce the ketone.\n\n## Directors\n\nWhatever is already on the ring decides where the next group goes.\n\n| Substituent | Effect | Directs |\n|---|---|---|\n| `-NH2`, `-OH`, `-OR` | strongly activating (lone pair donation) | ortho, para |\n| `-NHCOR`, `-OCOR` | moderately activating | ortho, para |\n| alkyl, aryl | weakly activating | ortho, para |\n| `-F`, `-Cl`, `-Br`, `-I` | **deactivating but still** ortho, para | ortho, para |\n| `-CHO`, `-COR`, `-COOH`, `-CN`, `-SO3H` | deactivating | meta |\n| `-NO2`, `-NR3+` | strongly deactivating | meta |\n\n> **Key:** Groups that donate electrons by resonance activate and direct ortho/para. Groups that pull electrons away deactivate and direct meta. Halogens are the exception: they withdraw through sigma bonds but donate a lone pair through pi, so they slow the reaction yet still steer ortho/para.\n\n> **Trap:** Order matters in synthesis. To get meta-bromonitrobenzene you nitrate first (the `NO2` then directs the bromine meta). Brominate first and the bromine directs the nitro group ortho/para instead.\n\n## Amines, a closing note\n\nAmines are the most common basic group in drugs: roughly three of every four small-molecule drugs carry one. Basicity order in water is secondary slightly above primary above tertiary above ammonia above aryl amines, because aniline's lone pair is delocalized into the ring and is therefore barely basic (conjugate acid pKa about `4.6` versus `10.6` for methylamine). A protonated amine is a cation, so drug makers ship amines as hydrochloride salts to get water solubility, and the free base form is what crosses the blood-brain barrier.",
+      "keyPoints": [
+        "Aromatic = cyclic, planar, fully conjugated, with 4n+2 pi electrons; 4n means antiaromatic and unstable.",
+        "Pyrrole's lone pair is in the pi system (weak base); pyridine's is in the ring plane (basic, pKaH 5.2).",
+        "EAS runs through an arenium ion and restores aromaticity by losing a proton, not by addition.",
+        "Activators donate electrons and direct ortho/para; deactivators withdraw and direct meta; halogens deactivate yet direct ortho/para.",
+        "Friedel-Crafts acylation avoids the rearrangement and polyalkylation that plague alkylation."
+      ],
+      "checks": [
+        {
+          "q": "Why is pyridine basic while pyrrole is not?",
+          "choices": [
+            "Pyridine has more nitrogens",
+            "Pyridine's lone pair is in an sp2 orbital outside the pi system",
+            "Pyrrole is not aromatic",
+            "Pyrrole's nitrogen has no lone pair"
+          ],
+          "answer": 1,
+          "why": "Pyridine keeps its lone pair in the ring plane and available for protonation; pyrrole must donate its lone pair into the ring to reach six pi electrons, so protonating it would cost aromaticity."
+        },
+        {
+          "q": "Toluene undergoes nitration. Where does the nitro group go?",
+          "choices": [
+            "Meta only",
+            "Ortho and para",
+            "Only at the methyl carbon",
+            "The ring does not react"
+          ],
+          "answer": 1,
+          "why": "A methyl group is weakly activating by hyperconjugation and directs ortho/para; meta direction requires an electron-withdrawing group such as nitro or carbonyl."
+        },
+        {
+          "q": "You need 1-bromo-3-nitrobenzene (meta). What order of reactions works?",
+          "choices": [
+            "Brominate, then nitrate",
+            "Nitrate, then brominate",
+            "Either order gives the same product",
+            "Nitrate twice, then reduce"
+          ],
+          "answer": 1,
+          "why": "The nitro group is a meta director, so installing it first steers the bromine to the meta position; bromine installed first would direct the nitro group ortho and para instead."
+        }
+      ]
+    },
+    {
+      "id": "sci-orgo-l10",
+      "title": "Carbonyl chemistry and acid derivatives",
+      "minutes": 9,
+      "body": "## The carbonyl is polarized\n\nIn `C=O` the oxygen pulls the shared electrons hard, so the carbon carries a partial positive charge. That carbon is therefore an **electrophile**, and essentially all carbonyl chemistry is a nucleophile attacking it.\n\n## Aldehydes and ketones: nucleophilic addition\n\nAldehydes and ketones have no leaving group on the carbonyl carbon, so a nucleophile adds and stops.\n\n1. The nucleophile attacks the carbonyl carbon.\n2. The pi electrons shift up onto oxygen, giving a tetrahedral alkoxide.\n3. Workup with acid protonates that oxygen to give an alcohol.\n4. Example: `CH3MgBr` plus acetone gives, after workup, `tert`-butanol, with a brand-new carbon-carbon bond.\n\nAldehydes react faster than ketones for two reasons: they are less crowded, and they have only one electron-donating alkyl group instead of two, so their carbonyl carbon stays more positive.\n\nKey additions to know: hydride (`NaBH4`, `LiAlH4`) gives alcohols; Grignard gives alcohols with a new C-C bond; cyanide gives cyanohydrins; alcohols give hemiacetals then **acetals** under acid, which are the standard protecting group for a carbonyl; primary amines give **imines** (Schiff bases) and secondary amines give enamines.\n\n## Carboxylic acid derivatives: addition-elimination\n\nPut a leaving group on the carbonyl carbon and the nucleophile adds, then the leaving group leaves, so you get **substitution** at the carbonyl. Reactivity tracks how good that leaving group is and how much the group donates back into the carbonyl:\n\n**acid chloride, then anhydride, then ester, then carboxylic acid, then amide.**\n\nAmides sit at the bottom because nitrogen donates its lone pair strongly into the carbonyl, giving the C-N bond partial double-bond character. That is why amides are flat, why they do not rotate, and why the **peptide bonds** in your proteins are stable enough to last for years in water. A more reactive derivative can always be converted into a less reactive one, never the reverse in one step.\n\n## Hydrolysis and drugs\n\n- **Ester hydrolysis under base** (saponification) is irreversible, because the carboxylate product is deprotonated and cannot be attacked again. Soap is made this way from triglycerides plus `NaOH`.\n- **Ester hydrolysis under acid** is a reversible equilibrium, the reverse of Fischer esterification.\n- **Amide hydrolysis** needs harsh acid or base and heat, or an enzyme such as a protease.\n\nThis reactivity ladder is drug design. Esters are the standard **prodrug** link: enalapril is an ester hydrolyzed by liver esterases to active enalaprilat, and aspirin's ester is what acetylates cyclooxygenase. Local anesthetics split the same way. Ester-linked ones such as procaine are hydrolyzed in seconds to minutes by plasma pseudocholinesterase, which is why they are short-acting and why their `PABA` breakdown product causes allergy. Amide-linked ones such as lidocaine survive plasma and must be cleared by the liver, which is why they last longer and rarely cause allergy. The letter count trick still works: only the amides have an `i` before the `-caine`.\n\nThe penicillin **beta-lactam** is a four-membered cyclic amide. Ring strain makes that amide abnormally reactive, so it acylates and permanently disables the bacterial transpeptidase. Beta-lactamase enzymes defeat penicillins by simply hydrolyzing that ring first.\n\n## Recognizing a molecule from its spectra\n\n**IR** finds functional groups. Memorize five stretches, in wavenumbers: `O-H` broad `3200-3600`, `N-H` sharper `3300-3500`, `C-H` just under `3000`, `C-triple-N` about `2250`, and the big one, `C=O` at `1700-1750`. Carboxylic acid shows a `C=O` plus a very broad `O-H` from `2500-3300`.\n\n**Proton NMR** counts and places hydrogens. Number of signals equals number of distinct hydrogen environments. **Integration** gives the ratio of hydrogens per signal. **Splitting** follows the `n + 1` rule: a signal is split into `n + 1` peaks by `n` neighboring hydrogens, so an ethyl group always shows a triplet and a quartet. **Shift** reports environment: `0.9-1.5` ppm alkane, `2.1-2.6` next to a carbonyl, `3.3-4.0` next to oxygen, `4.6-6.0` vinyl, `6.5-8.0` aromatic, `9-10` aldehyde, `10-12` carboxylic acid.\n\n**Mass spec** gives molecular weight from the `M+` peak. An `M+2` peak nearly equal in height to `M+` means bromine; an `M+2` peak about one third the height means chlorine.\n\n## Biomolecules are just these groups\n\n**Carbohydrates** are polyhydroxy aldehydes or ketones that cyclize to hemiacetals; the new anomeric center gives alpha and beta forms, and linking two sugars makes a full acetal, the glycosidic bond. **Amino acids** carry an amine and a carboxylic acid on the same carbon, so at physiologic pH they exist as **zwitterions**, positive at nitrogen and negative at oxygen, and the pH where net charge is zero is the isoelectric point. **Lipids** are esters: a triglyceride is glycerol esterified to three fatty acids, and cis double bonds kink the chains so unsaturated fats stay liquid.\n\n> **Key:** Every biomolecule you will meet in biochemistry is an alcohol, amine, carbonyl, ester or amide that you already know how to handle.",
+      "keyPoints": [
+        "Carbonyl carbon is electrophilic; aldehydes and ketones add, acid derivatives add then eliminate.",
+        "Reactivity order: acid chloride, anhydride, ester, acid, amide; you can only go down the ladder in one step.",
+        "Base ester hydrolysis is irreversible (saponification); amides need harsh conditions or enzymes.",
+        "Ester local anesthetics are cleared by plasma esterases; amide ones (with an i before -caine) are cleared hepatically.",
+        "IR C=O sits at 1700-1750; NMR splitting follows n+1; an M+2 equal to M+ means bromine."
+      ],
+      "checks": [
+        {
+          "q": "Why are amides the least reactive carboxylic acid derivative?",
+          "choices": [
+            "Nitrogen is more electronegative than chlorine",
+            "The nitrogen lone pair donates into the carbonyl and amide anion is a terrible leaving group",
+            "Amides are not planar",
+            "Amides lack a carbonyl"
+          ],
+          "answer": 1,
+          "why": "Strong nitrogen donation plus a very basic leaving group makes amides stable; nitrogen is in fact less electronegative than chlorine, and amides are planar because of that donation."
+        },
+        {
+          "q": "An unknown shows a strong IR band at 1715 wavenumbers, no broad band above 3000, and an NMR triplet near 1.0 ppm with a quartet near 2.4 ppm. What is it most likely?",
+          "choices": [
+            "A carboxylic acid",
+            "A ketone with an ethyl group",
+            "An alcohol",
+            "An alkene"
+          ],
+          "answer": 1,
+          "why": "The 1715 band is a ketone C=O and the triplet-quartet pair is a classic ethyl group next to a carbonyl; a carboxylic acid or alcohol would show the broad O-H, and an alkene has no strong 1715 band."
+        },
+        {
+          "q": "Lidocaine outlasts procaine in tissue primarily because:",
+          "choices": [
+            "Lidocaine is more lipid soluble",
+            "Lidocaine is an amide, which resists plasma esterase hydrolysis",
+            "Procaine is destroyed by stomach acid",
+            "Lidocaine binds sodium channels irreversibly"
+          ],
+          "answer": 1,
+          "why": "The amide linkage is the least reactive derivative and survives plasma esterases, requiring hepatic clearance; procaine's ester is hydrolyzed within minutes. Channel binding is reversible for both."
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "sci-orgo-c001",
+      "front": "How many bonds do C, N, O and H each form when neutral?",
+      "back": "Carbon 4, nitrogen 3, oxygen 2, hydrogen and halogens 1. Deviations mean a formal charge is present.",
+      "lesson": "sci-orgo-l01"
+    },
+    {
+      "id": "sci-orgo-c002",
+      "front": "How do you determine hybridization from a structure?",
+      "back": "Count groups on the atom: bonds plus lone pairs, with a multiple bond counting once. Four groups is sp3, three is sp2, two is sp.",
+      "lesson": "sci-orgo-l01"
+    },
+    {
+      "id": "sci-orgo-c004",
+      "front": "How many sigma and pi bonds are in a single, double and triple bond?",
+      "back": "Single: 1 sigma. Double: 1 sigma plus 1 pi. Triple: 1 sigma plus 2 pi. Only sigma bonds rotate freely.",
+      "lesson": "sci-orgo-l01"
+    },
+    {
+      "id": "sci-orgo-c005",
+      "front": "What is the formula for formal charge?",
+      "back": "Formal charge equals normal valence electrons minus the sum of lone-pair electrons and one electron per bond.",
+      "lesson": "sci-orgo-l01"
+    },
+    {
+      "id": "sci-orgo-c006",
+      "front": "What two things may never change between resonance structures?",
+      "back": "Atom positions and total charge. Only pi electrons and lone pairs move. The real molecule is a single averaged hybrid.",
+      "lesson": "sci-orgo-l01"
+    },
+    {
+      "id": "sci-orgo-c008",
+      "front": "What distinguishes an aldehyde from a ketone?",
+      "back": "Both have C=O. The aldehyde carbonyl is at the end of the chain and carries a hydrogen; the ketone carbonyl is interior, flanked by two carbons.",
+      "lesson": "sci-orgo-l02"
+    },
+    {
+      "id": "sci-orgo-c009",
+      "front": "List the suffix priority order of functional groups from highest down.",
+      "back": "Carboxylic acid, ester, amide, nitrile, aldehyde, ketone, alcohol, amine, alkene or alkyne, alkane. The loser becomes a prefix.",
+      "lesson": "sci-orgo-l02"
+    },
+    {
+      "id": "sci-orgo-c010",
+      "front": "How do you pick the parent chain when naming?",
+      "back": "The longest continuous carbon chain that contains the highest-priority functional group. Length alone does not decide it.",
+      "lesson": "sci-orgo-l02"
+    },
+    {
+      "id": "sci-orgo-c012",
+      "front": "Which functional groups are present in acetaminophen?",
+      "back": "A benzene ring bearing a phenol OH and an amide. It has no carboxylic acid, which is part of why it is not an anti-inflammatory.",
+      "lesson": "sci-orgo-l02"
+    },
+    {
+      "id": "sci-orgo-c013",
+      "front": "Which functional groups are present in aspirin?",
+      "back": "An aromatic ring with a carboxylic acid and an acetyl ester. The ester is what acetylates cyclooxygenase.",
+      "lesson": "sci-orgo-l02"
+    },
+    {
+      "id": "sci-orgo-c015",
+      "front": "What is the difference between staggered and eclipsed conformations?",
+      "back": "Staggered puts back bonds 60 degrees between front bonds and is lowest energy. Eclipsed aligns them at 0 degrees and costs torsional strain.",
+      "lesson": "sci-orgo-l03"
+    },
+    {
+      "id": "sci-orgo-c017",
+      "front": "Why is a cyclohexane chair essentially strain free?",
+      "back": "All bond angles are near 109.5 degrees and every adjacent pair of carbons is staggered, so there is no angle strain and no torsional strain.",
+      "lesson": "sci-orgo-l03"
+    },
+    {
+      "id": "sci-orgo-c018",
+      "front": "What does a cyclohexane ring flip do to axial and equatorial positions?",
+      "back": "It swaps them: every axial becomes equatorial and every equatorial becomes axial. Cis and trans relationships are unchanged.",
+      "lesson": "sci-orgo-l03"
+    },
+    {
+      "id": "sci-orgo-c019",
+      "front": "How much does an axial methyl on cyclohexane cost, and why?",
+      "back": "About 1.8 kcal/mol, from two 1,3-diaxial interactions worth 0.9 each. That corresponds to roughly 95 percent equatorial at equilibrium.",
+      "lesson": "sci-orgo-l03"
+    },
+    {
+      "id": "sci-orgo-c021",
+      "front": "What defines a stereocenter?",
+      "back": "A carbon bonded to four different groups. Its mirror image cannot be superimposed on it, making the molecule chiral.",
+      "lesson": "sci-orgo-l04"
+    },
+    {
+      "id": "sci-orgo-c022",
+      "front": "State the CIP procedure for assigning R or S.",
+      "back": "Rank the four groups by atomic number, breaking ties one bond outward. Point the lowest priority away, trace 1 to 2 to 3. Clockwise is R, counterclockwise is S.",
+      "lesson": "sci-orgo-l04"
+    },
+    {
+      "id": "sci-orgo-c023",
+      "front": "How are double bonds treated in CIP priority?",
+      "back": "As duplicated atoms. A CHO carbon counts as attached to O, O and H, so it outranks a CH2OH carbon, which is O, H, H.",
+      "lesson": "sci-orgo-l04"
+    },
+    {
+      "id": "sci-orgo-c025",
+      "front": "Enantiomers versus diastereomers: what is inverted?",
+      "back": "Enantiomers invert every stereocenter and share all physical properties. Diastereomers invert some but not all and have different melting points and solubilities.",
+      "lesson": "sci-orgo-l04"
+    },
+    {
+      "id": "sci-orgo-c026",
+      "front": "What makes a compound meso?",
+      "back": "It contains stereocenters but also an internal mirror plane, so the halves cancel. It is achiral and optically inactive despite having stereocenters.",
+      "lesson": "sci-orgo-l04"
+    },
+    {
+      "id": "sci-orgo-c028",
+      "front": "What is a racemic mixture and what is its optical rotation?",
+      "back": "An exact 50:50 mixture of two enantiomers. The rotations cancel, so it measures zero degrees.",
+      "lesson": "sci-orgo-l04"
+    },
+    {
+      "id": "sci-orgo-c029",
+      "front": "Why is thalidomide dangerous even as the pure R enantiomer?",
+      "back": "The stereocenter racemizes in the body, so a pure R dose generates the teratogenic S form in vivo. Single-enantiomer dosing cannot fix it.",
+      "lesson": "sci-orgo-l04"
+    },
+    {
+      "id": "sci-orgo-c030",
+      "front": "What is the relationship between levalbuterol and albuterol?",
+      "back": "Levalbuterol is the pure R enantiomer, the active bronchodilator. Racemic albuterol also contains the S form, which contributes little bronchodilation.",
+      "lesson": "sci-orgo-l04"
+    },
+    {
+      "id": "sci-orgo-c031",
+      "front": "What does the mnemonic ARIO stand for in acidity?",
+      "back": "Atom, Resonance, Induction, Orbital, in decreasing importance. All four describe how well the conjugate base stabilizes negative charge.",
+      "lesson": "sci-orgo-l05"
+    },
+    {
+      "id": "sci-orgo-c032",
+      "front": "Give the approximate pKa of a carboxylic acid, water, an alcohol and a terminal alkyne.",
+      "back": "Carboxylic acid about 4.8, water 15.7, alcohol about 16, terminal alkyne 25. These four anchors cover most problems.",
+      "lesson": "sci-orgo-l05"
+    },
+    {
+      "id": "sci-orgo-c034",
+      "front": "How does induction change acid strength? Give numbers.",
+      "back": "Electron-withdrawing groups pull charge off the conjugate base. Acetic acid is 4.8, chloroacetic 2.9, trichloroacetic 0.7. The effect fades with distance.",
+      "lesson": "sci-orgo-l05"
+    },
+    {
+      "id": "sci-orgo-c035",
+      "front": "Why is a terminal alkyne C-H far more acidic than an alkane C-H?",
+      "back": "The sp carbanion holds its lone pair in an orbital with 50 percent s character, close to the nucleus. pKa 25 versus about 50.",
+      "lesson": "sci-orgo-l05"
+    },
+    {
+      "id": "sci-orgo-c036",
+      "front": "At what pH is a drug exactly 50 percent ionized?",
+      "back": "When pH equals its pKa. pKa itself never changes with pH; only the ionized fraction does.",
+      "lesson": "sci-orgo-l05"
+    },
+    {
+      "id": "sci-orgo-c037",
+      "front": "Why does aspirin absorb well from the stomach?",
+      "back": "Its pKa is about 3.5, so at gastric pH 2 it is largely neutral and lipid soluble. At blood pH 7.4 it is over 99 percent ionized and trapped.",
+      "lesson": "sci-orgo-l05"
+    },
+    {
+      "id": "sci-orgo-c038",
+      "front": "How do you calculate degrees of unsaturation?",
+      "back": "Take (2C + 2 - H)/2, adding 1 to the numerator per nitrogen, counting halogens as hydrogens, and ignoring oxygen. Each degree is a ring or a pi bond.",
+      "lesson": "sci-orgo-l06"
+    },
+    {
+      "id": "sci-orgo-c039",
+      "front": "Rank carbocation stability and explain why.",
+      "back": "Tertiary beats secondary beats primary beats methyl. Adjacent alkyl groups donate electron density and their C-H bonds hyperconjugate into the empty p orbital.",
+      "lesson": "sci-orgo-l06"
+    },
+    {
+      "id": "sci-orgo-c040",
+      "front": "State Markovnikov's rule in mechanistic terms.",
+      "back": "The proton adds to the alkene carbon with more hydrogens, because that places the carbocation on the more substituted, more stable carbon. The nucleophile follows there.",
+      "lesson": "sci-orgo-l06"
+    },
+    {
+      "id": "sci-orgo-c041",
+      "front": "Which two conditions give anti-Markovnikov addition to an alkene?",
+      "back": "HBr with peroxides (radical mechanism) and hydroboration-oxidation with BH3 then H2O2/NaOH. Hydroboration is also syn and never rearranges.",
+      "lesson": "sci-orgo-l06"
+    },
+    {
+      "id": "sci-orgo-c042",
+      "front": "Compare the stereochemistry of Br2 addition and H2/Pd-C addition to an alkene.",
+      "back": "Br2 adds anti through a bridged bromonium ion. H2 with Pd/C adds syn, both hydrogens delivered to the same face from the metal surface.",
+      "lesson": "sci-orgo-l06"
+    },
+    {
+      "id": "sci-orgo-c044",
+      "front": "Which reagents stop alkyne reduction at the cis versus the trans alkene?",
+      "back": "Lindlar catalyst gives the cis alkene by syn addition. Sodium in liquid ammonia gives the trans alkene through a radical anion.",
+      "lesson": "sci-orgo-l06"
+    },
+    {
+      "id": "sci-orgo-c045",
+      "front": "Describe the SN2 mechanism and its stereochemical outcome.",
+      "back": "One concerted step, nucleophile attacks 180 degrees opposite the leaving group. The stereocenter inverts, like an umbrella flipping. Rate depends on both substrate and nucleophile.",
+      "lesson": "sci-orgo-l07"
+    },
+    {
+      "id": "sci-orgo-c046",
+      "front": "Describe the SN1 mechanism and its stereochemical outcome.",
+      "back": "Leaving group departs first in the slow step, giving a flat carbocation attacked from either face. Result is racemization, and the rate ignores the nucleophile.",
+      "lesson": "sci-orgo-l07"
+    },
+    {
+      "id": "sci-orgo-c047",
+      "front": "What geometry does E2 require?",
+      "back": "The proton and the leaving group must be anti-periplanar, 180 degrees apart in the same plane. On a cyclohexane the leaving group must therefore be axial.",
+      "lesson": "sci-orgo-l07"
+    },
+    {
+      "id": "sci-orgo-c048",
+      "front": "Zaitsev versus Hofmann: what decides which alkene forms?",
+      "back": "Base size. A small base gives the more substituted Zaitsev alkene. A bulky base such as potassium tert-butoxide cannot reach the interior proton and gives the Hofmann alkene.",
+      "lesson": "sci-orgo-l07"
+    },
+    {
+      "id": "sci-orgo-c049",
+      "front": "Rank common leaving groups from best to worst.",
+      "back": "Tosylate, then iodide, bromide, chloride, then water from a protonated alcohol. Hydroxide, amide and fluoride are poor because they are strong bases.",
+      "lesson": "sci-orgo-l07"
+    },
+    {
+      "id": "sci-orgo-c050",
+      "front": "Which solvent type favors SN2 and which favors SN1?",
+      "back": "Polar aprotic solvents like DMSO, DMF and acetone favor SN2 by leaving the nucleophile unsolvated. Polar protic solvents like water and alcohols favor SN1 by stabilizing the carbocation.",
+      "lesson": "sci-orgo-l07"
+    },
+    {
+      "id": "sci-orgo-c052",
+      "front": "What oxidation products come from primary, secondary and tertiary alcohols?",
+      "back": "Primary gives an aldehyde then a carboxylic acid. Secondary gives a ketone and stops. Tertiary does not oxidize, having no hydrogen on the carbinol carbon.",
+      "lesson": "sci-orgo-l08"
+    },
+    {
+      "id": "sci-orgo-c053",
+      "front": "Which reagent stops oxidation of a primary alcohol at the aldehyde?",
+      "back": "PCC, or Swern or Dess-Martin. They are anhydrous, so no hydrate forms and oxidation cannot continue to the acid.",
+      "lesson": "sci-orgo-l08"
+    },
+    {
+      "id": "sci-orgo-c054",
+      "front": "Compare NaBH4 and LiAlH4 as reducing agents.",
+      "back": "NaBH4 is mild and reduces only aldehydes and ketones. LiAlH4 is far stronger and also reduces esters, carboxylic acids and amides.",
+      "lesson": "sci-orgo-l08"
+    },
+    {
+      "id": "sci-orgo-c055",
+      "front": "How do SOCl2 and PBr3 differ from tosylation at a stereocenter?",
+      "back": "SOCl2 and PBr3 replace OH with halide and invert the center. Tosylation converts OH to OTs without breaking the C-O bond, so configuration is retained.",
+      "lesson": "sci-orgo-l08"
+    },
+    {
+      "id": "sci-orgo-c056",
+      "front": "What is the key planning rule for Williamson ether synthesis?",
+      "back": "It is an SN2 reaction, so the alkyl halide must be methyl or primary. Put the bulky group on the alkoxide side, never on the halide side.",
+      "lesson": "sci-orgo-l08"
+    },
+    {
+      "id": "sci-orgo-c057",
+      "front": "Where does a nucleophile attack an epoxide under basic versus acidic conditions?",
+      "back": "Under base, the less substituted carbon, because sterics control. Under acid, the more substituted carbon, because it holds partial positive charge better. Both give anti products.",
+      "lesson": "sci-orgo-l08"
+    },
+    {
+      "id": "sci-orgo-c059",
+      "front": "State the four requirements for aromaticity.",
+      "back": "Cyclic, planar, fully conjugated with a p orbital on every ring atom, and 4n+2 pi electrons by Huckel's rule. A 4n count means antiaromatic and unstable.",
+      "lesson": "sci-orgo-l09"
+    },
+    {
+      "id": "sci-orgo-c060",
+      "front": "Why is pyridine basic but pyrrole is not?",
+      "back": "Pyridine's lone pair sits in an sp2 orbital in the ring plane, outside the pi system, so it is free to accept a proton. Pyrrole's lone pair is committed to the aromatic sextet.",
+      "lesson": "sci-orgo-l09"
+    },
+    {
+      "id": "sci-orgo-c061",
+      "front": "Walk through the steps of electrophilic aromatic substitution.",
+      "back": "A Lewis acid makes a strong electrophile, the ring pi electrons attack it, an arenium ion forms with three resonance structures, and loss of a proton restores aromaticity.",
+      "lesson": "sci-orgo-l09"
+    },
+    {
+      "id": "sci-orgo-c062",
+      "front": "Which substituents direct meta on a benzene ring?",
+      "back": "Electron-withdrawing deactivators: nitro, carbonyl groups, carboxylic acid, nitrile, sulfonic acid and trialkylammonium. They destabilize ortho and para arenium ions.",
+      "lesson": "sci-orgo-l09"
+    },
+    {
+      "id": "sci-orgo-c063",
+      "front": "Why are halogens an exception among ring substituents?",
+      "back": "They withdraw electron density inductively through sigma bonds, so they deactivate, yet they donate a lone pair by resonance, so they still direct ortho and para.",
+      "lesson": "sci-orgo-l09"
+    },
+    {
+      "id": "sci-orgo-c064",
+      "front": "Why is Friedel-Crafts acylation preferred over alkylation?",
+      "back": "The acylium ion is resonance stabilized so it cannot rearrange, and the deactivating ketone product prevents over-substitution. Reduce the ketone afterward to get the alkyl group.",
+      "lesson": "sci-orgo-l09"
+    },
+    {
+      "id": "sci-orgo-c065",
+      "front": "Rank amine basicity in water and explain aniline's position.",
+      "back": "Secondary is slightly above primary, then tertiary, then ammonia, then aryl amines. Aniline's lone pair is delocalized into the ring, so its conjugate acid pKa is about 4.6 versus 10.6 for methylamine.",
+      "lesson": "sci-orgo-l09"
+    },
+    {
+      "id": "sci-orgo-c066",
+      "front": "Why are so many drugs sold as hydrochloride salts?",
+      "back": "Protonating the amine gives a cation, which is far more water soluble and easier to formulate. The neutral free base is the form that crosses lipid membranes.",
+      "lesson": "sci-orgo-l09"
+    },
+    {
+      "id": "sci-orgo-c068",
+      "front": "Why is the carbonyl carbon electrophilic?",
+      "back": "Oxygen is far more electronegative and pulls the shared electrons toward itself, leaving the carbon partially positive and open to attack by any nucleophile.",
+      "lesson": "sci-orgo-l10"
+    },
+    {
+      "id": "sci-orgo-c069",
+      "front": "Why do aldehydes react faster than ketones?",
+      "back": "Two reasons: less steric crowding at the carbonyl carbon, and only one electron-donating alkyl group instead of two, so the carbon stays more positive.",
+      "lesson": "sci-orgo-l10"
+    },
+    {
+      "id": "sci-orgo-c070",
+      "front": "Rank carboxylic acid derivatives by reactivity.",
+      "back": "Acid chloride, anhydride, ester, carboxylic acid, amide. You can convert a more reactive derivative into a less reactive one, but not the reverse in one step.",
+      "lesson": "sci-orgo-l10"
+    },
+    {
+      "id": "sci-orgo-c071",
+      "front": "Why are peptide bonds so stable in water?",
+      "back": "They are amides, the least reactive derivative. Nitrogen donates its lone pair into the carbonyl, giving partial double-bond character, a flat geometry and a terrible leaving group.",
+      "lesson": "sci-orgo-l10"
+    },
+    {
+      "id": "sci-orgo-c072",
+      "front": "Why is base ester hydrolysis irreversible while acid hydrolysis is not?",
+      "back": "Base deprotonates the carboxylic acid product to a carboxylate, which is negatively charged and no longer attacked by nucleophiles. Acid hydrolysis sits at equilibrium with esterification.",
+      "lesson": "sci-orgo-l10"
+    },
+    {
+      "id": "sci-orgo-c073",
+      "front": "Why do esters make good prodrug linkages?",
+      "back": "They are stable enough to swallow yet readily cleaved by plasma and liver esterases, releasing the active drug. Enalapril to enalaprilat is a standard example.",
+      "lesson": "sci-orgo-l10"
+    },
+    {
+      "id": "sci-orgo-c074",
+      "front": "Chemically, how do ester and amide local anesthetics differ?",
+      "back": "Esters like procaine are hydrolyzed in minutes by plasma pseudocholinesterase and can cause PABA allergy. Amides like lidocaine resist hydrolysis and are cleared by the liver.",
+      "lesson": "sci-orgo-l10"
+    },
+    {
+      "id": "sci-orgo-c075",
+      "front": "Why is the penicillin beta-lactam so reactive for an amide?",
+      "back": "It is a four-membered cyclic amide packed with ring strain, so it acylates bacterial transpeptidase instead of sitting inert. Beta-lactamases defeat it by hydrolyzing that ring.",
+      "lesson": "sci-orgo-l10"
+    },
+    {
+      "id": "sci-orgo-c076",
+      "front": "List the five IR stretches worth memorizing, with wavenumbers.",
+      "back": "Broad O-H at 3200 to 3600, N-H at 3300 to 3500, C-H just under 3000, nitrile near 2250, and C=O at 1700 to 1750.",
+      "lesson": "sci-orgo-l10"
+    },
+    {
+      "id": "sci-orgo-c077",
+      "front": "How does a carboxylic acid look in the IR spectrum?",
+      "back": "A strong C=O near 1710 plus an extremely broad O-H sprawling from about 2500 to 3300 wavenumbers, wider than an alcohol O-H.",
+      "lesson": "sci-orgo-l10"
+    },
+    {
+      "id": "sci-orgo-c078",
+      "front": "What do number of signals, integration and splitting tell you in proton NMR?",
+      "back": "Signals count distinct hydrogen environments, integration gives the ratio of hydrogens per signal, and splitting follows the n+1 rule from neighboring hydrogens.",
+      "lesson": "sci-orgo-l10"
+    },
+    {
+      "id": "sci-orgo-c079",
+      "front": "What NMR pattern always signals an ethyl group?",
+      "back": "A three-hydrogen triplet paired with a two-hydrogen quartet. The CH3 sees two neighbors and the CH2 sees three, by the n+1 rule.",
+      "lesson": "sci-orgo-l10"
+    },
+    {
+      "id": "sci-orgo-c080",
+      "front": "Give approximate proton NMR shifts for alkane, next to carbonyl, next to oxygen, aromatic and aldehyde hydrogens.",
+      "back": "Alkane 0.9 to 1.5 ppm, alpha to carbonyl 2.1 to 2.6, on carbon bearing oxygen 3.3 to 4.0, aromatic 6.5 to 8.0, aldehyde 9 to 10 ppm.",
+      "lesson": "sci-orgo-l10"
+    },
+    {
+      "id": "sci-orgo-c081",
+      "front": "How do bromine and chlorine appear in a mass spectrum?",
+      "back": "Bromine gives an M+2 peak about equal in height to M+. Chlorine gives an M+2 peak roughly one third the height of M+.",
+      "lesson": "sci-orgo-l10"
+    },
+    {
+      "id": "sci-orgo-c082",
+      "front": "In organic terms, what is a carbohydrate?",
+      "back": "A polyhydroxy aldehyde or ketone that cyclizes to a hemiacetal. The new carbonyl carbon becomes the anomeric center, giving alpha and beta forms.",
+      "lesson": "sci-orgo-l10"
+    },
+    {
+      "id": "sci-orgo-c083",
+      "front": "What functional group is a glycosidic bond?",
+      "back": "A full acetal, formed when a sugar hemiacetal reacts with a second alcohol. That is why it resists water until an enzyme hydrolyzes it.",
+      "lesson": "sci-orgo-l10"
+    },
+    {
+      "id": "sci-orgo-c084",
+      "front": "Why do amino acids exist as zwitterions at physiologic pH?",
+      "back": "The carboxylic acid (pKa about 2) is deprotonated and the amine (pKa about 9.5) is protonated at pH 7.4, giving one plus and one minus on the same molecule.",
+      "lesson": "sci-orgo-l10"
+    },
+    {
+      "id": "sci-orgo-c085",
+      "front": "What is the isoelectric point of an amino acid?",
+      "back": "The pH at which the molecule carries no net charge. It is where solubility is lowest, which is how proteins are precipitated for separation.",
+      "lesson": "sci-orgo-l10"
+    },
+    {
+      "id": "sci-orgo-c086",
+      "front": "What functional group holds a triglyceride together, and why are unsaturated fats liquid?",
+      "back": "Three ester linkages between glycerol and three fatty acids. Cis double bonds kink the chains so they cannot pack tightly, lowering the melting point.",
+      "lesson": "sci-orgo-l10"
+    },
+    {
+      "id": "sci-orgo-c087",
+      "front": "Why do most amino acids in human protein have the S configuration?",
+      "back": "The side chain, amine and carboxyl priorities trace counterclockwise with hydrogen pointed back. Cysteine reads R only because sulfur outranks the carboxyl carbon.",
+      "lesson": "sci-orgo-l04"
+    },
+    {
+      "id": "sci-orgo-c088",
+      "front": "What does a Grignard reagent do, and what destroys it?",
+      "back": "RMgBr acts as a carbon nucleophile, adding to a carbonyl to build a new carbon-carbon bond. Any water, alcohol or acidic hydrogen kills it instantly.",
+      "lesson": "sci-orgo-l08"
+    }
+  ],
+  "quiz": [
+    { "id": "sci-orgo-q001", "q": "What is the hybridization of the carbonyl carbon in acetone, CH3COCH3?", "choices": ["sp3", "sp", "sp2", "It is unhybridized"], "answer": 2, "why": "The carbonyl carbon has three groups: two methyls and one doubly bonded oxygen, so it is sp2 and trigonal planar. sp3 would require four separate groups and sp only two.", "lesson": "sci-orgo-l01", "difficulty": 1 },
+    { "id": "sci-orgo-q002", "q": "A nitrogen atom is drawn with four single bonds and no lone pairs. What is its formal charge?", "choices": ["+1", "0", "-1", "+2"], "answer": 0, "why": "Nitrogen's valence is 5 and it owns only 4 electrons (one per bond), so 5 minus 4 is +1. Neutral nitrogen has three bonds and one lone pair; a negative nitrogen has two bonds and two lone pairs.", "lesson": "sci-orgo-l01", "difficulty": 2 },
+    { "id": "sci-orgo-q003", "q": "Both carbon-oxygen bonds in the acetate ion are measured to be identical in length. Why?", "choices": ["The ion rapidly flips between two forms", "One oxygen is sp3 and one is sp2", "The molecule is chiral", "Resonance delocalizes the pi electrons and the charge over both oxygens"], "answer": 3, "why": "Acetate is one resonance hybrid with the charge shared equally, so the bonds are identical and intermediate in length. Nothing flips or rotates, and hybridization differences would make the bonds unequal, not equal.", "lesson": "sci-orgo-l01", "difficulty": 2 },
+    { "id": "sci-orgo-q004", "q": "Which functional group contains a carbonyl carbon bonded to a nitrogen?", "choices": ["Ester", "Amide", "Ketone", "Nitrile"], "answer": 1, "why": "An amide is C=O attached to N. An ester has C=O attached to O, a ketone has it flanked by two carbons, and a nitrile has a carbon-nitrogen triple bond with no oxygen at all.", "lesson": "sci-orgo-l02", "difficulty": 1 },
+    { "id": "sci-orgo-q005", "q": "A six-carbon chain carries a ketone on carbon 3 and a hydroxyl on carbon 5. What suffix does the IUPAC name use?", "choices": ["-one, with the alcohol as a hydroxy- prefix", "-ol, with the ketone as an oxo- prefix", "Both suffixes, as -olone", "-al, because the chain has six carbons"], "answer": 0, "why": "Ketone outranks alcohol in suffix priority, so the ketone takes -one and the OH is demoted to hydroxy-. Aldehyde is not present, and a name may carry only one principal suffix.", "lesson": "sci-orgo-l02", "difficulty": 2 },
+    { "id": "sci-orgo-q006", "q": "You must name a five-carbon chain with a bromine on one end carbon and a methyl on the carbon next to the other end. Which numbering rule applies?", "choices": ["Number toward the methyl, because carbon beats bromine", "Number so the sum of all locants is highest", "Number alphabetically, so bromo is always carbon 1", "Number so the first substituent encountered gets the lowest possible number"], "answer": 3, "why": "With no principal functional group, the first point of difference rule applies: number to give the lowest locant to the first substituent met. Alphabetical order affects only the order of names in the final name, not numbering, and locant sums are minimized, not maximized.", "lesson": "sci-orgo-l02", "difficulty": 2 },
+    { "id": "sci-orgo-q007", "q": "Which pair of functional groups does ibuprofen contain?", "choices": ["Ester and amide", "Aromatic ring and carboxylic acid", "Phenol and amide", "Ketone and amine"], "answer": 1, "why": "Ibuprofen is an isobutyl-substituted benzene with a propanoic acid side chain. Acetaminophen is the one with the phenol and amide, and aspirin is the one with the added ester.", "lesson": "sci-orgo-l02", "difficulty": 1 },
+    { "id": "sci-orgo-q008", "q": "In the most stable chair of trans-1,4-dimethylcyclohexane, where do the two methyl groups sit?", "choices": ["Both axial", "One axial and one equatorial", "Both equatorial", "The molecule cannot adopt a chair"], "answer": 2, "why": "On a 1,4-trans relationship the two groups can be diequatorial in one chair, which is far more stable. The cis-1,4 isomer is the one locked into one axial and one equatorial.", "lesson": "sci-orgo-l03", "difficulty": 2 },
+    { "id": "sci-orgo-q009", "q": "A tert-butyl group on cyclohexane costs about 5.4 kcal/mol in the axial position. What does this imply for a cis-1,3-di-tert-butylcyclohexane?", "choices": ["Both groups will be axial", "The ring will be planar", "The groups will alternate axial and equatorial", "The ring strongly favors the chair placing both groups equatorial"], "answer": 3, "why": "Cis-1,3 substituents can both be equatorial in one chair, so that conformer dominates overwhelmingly given how costly axial tert-butyl is. Planar cyclohexane is never favorable, and the alternative chair would put both groups axial at enormous cost.", "lesson": "sci-orgo-l03", "difficulty": 3 },
+    { "id": "sci-orgo-q010", "q": "Which cycloalkane carries the greatest angle strain?", "choices": ["Cyclohexane", "Cyclopropane", "Cyclopentane", "Cycloheptane"], "answer": 1, "why": "Cyclopropane's rigid 60 degree angles deviate most from the ideal 109.5. Cyclohexane relieves strain completely in a chair, and cyclopentane and cycloheptane pucker to relieve most of theirs.", "lesson": "sci-orgo-l03", "difficulty": 1 },
+    { "id": "sci-orgo-q011", "q": "How many stereoisomers are possible for a molecule with three distinct stereocenters and no meso forms?", "choices": ["3", "6", "8", "9"], "answer": 2, "why": "Two configurations at each of three centers gives 2 to the third power, which is 8. The value 6 and 9 come from incorrectly multiplying or squaring the number of centers.", "lesson": "sci-orgo-l04", "difficulty": 1 },
+    { "id": "sci-orgo-q012", "q": "Two compounds have identical melting points, identical solubility, and rotate polarized light by equal but opposite amounts. What is their relationship?", "choices": ["Enantiomers", "Diastereomers", "Constitutional isomers", "Conformers"], "answer": 0, "why": "Only enantiomers share every scalar physical property yet rotate light oppositely. Diastereomers and constitutional isomers have different melting points, and conformers are the same compound.", "lesson": "sci-orgo-l04", "difficulty": 2 },
+    { "id": "sci-orgo-q013", "q": "Tartaric acid with the 2R,3S configuration shows zero optical rotation even though it is a pure single compound. Why?", "choices": ["It is a racemic mixture", "It has an internal mirror plane, making it meso and achiral", "It has no stereocenters", "Its rotation is too small to measure"], "answer": 1, "why": "The two stereocenters are mirror images of one another within the same molecule, so the rotations cancel internally. A racemate is a mixture of two different molecules, and the compound clearly does have stereocenters.", "lesson": "sci-orgo-l04", "difficulty": 3 },
+    { "id": "sci-orgo-q014", "q": "At a stereocenter the four groups are NH2, COOH, CH3 and H. What is the CIP priority order from highest to lowest?", "choices": ["COOH, NH2, CH3, H", "CH3, COOH, NH2, H", "NH2, COOH, CH3, H", "NH2, CH3, COOH, H"], "answer": 2, "why": "Nitrogen has the highest atomic number of the first atoms, so NH2 leads. Both COOH and CH3 start with carbon, and the tie breaks outward where COOH is (O,O,O) against CH3's (H,H,H).", "lesson": "sci-orgo-l04", "difficulty": 2 },
+    { "id": "sci-orgo-q015", "q": "Racemic ibuprofen is given to a patient, yet plasma levels of the active form exceed 50 percent of the dose. What explains this?", "choices": ["An isomerase converts the inactive R form into the active S form", "The R form is also active at the same potency", "The S form is more slowly cleared, so it accumulates", "The tablet contains extra S enantiomer"], "answer": 0, "why": "A specific 2-arylpropionyl-CoA epimerase inverts R-ibuprofen to S in vivo, raising the active fraction. The R form itself has little cyclooxygenase activity, and differential clearance alone would not convert one isomer into the other.", "lesson": "sci-orgo-l04", "difficulty": 2 },
+    { "id": "sci-orgo-q016", "q": "Which of these has the lowest pKa, meaning it is the strongest acid?", "choices": ["Ethanol", "Water", "A terminal alkyne", "Acetic acid"], "answer": 3, "why": "Acetic acid at about 4.8 is far below water at 15.7, ethanol at 16, and a terminal alkyne at 25, because acetate delocalizes its charge over two oxygens.", "lesson": "sci-orgo-l05", "difficulty": 1 },
+    { "id": "sci-orgo-q017", "q": "Why is trichloroacetic acid (pKa 0.7) so much stronger than acetic acid (pKa 4.8)?", "choices": ["Three chlorines withdraw electron density inductively and stabilize the carboxylate", "Chlorine adds an extra resonance structure to the carbonyl", "Trichloroacetic acid has a lower molecular weight", "Chlorine increases the s character of the carboxyl carbon"], "answer": 0, "why": "Inductive withdrawal through the sigma framework spreads the anion's charge. Chlorine on the alpha carbon cannot conjugate with the carboxylate, and molecular weight and hybridization are unchanged.", "lesson": "sci-orgo-l05", "difficulty": 2 },
+    { "id": "sci-orgo-q018", "q": "Sodium hydroxide is added to ethanol (pKa 16). Water has pKa 15.7. What is the outcome?", "choices": ["Complete and irreversible deprotonation of ethanol", "No reaction whatsoever", "A near 50:50 equilibrium, so hydroxide is a poor choice for making ethoxide", "Ethanol is oxidized to acetaldehyde"], "answer": 2, "why": "The two pKa values are nearly identical, so neither side is favored and only about half the ethanol is deprotonated. Sodium hydride, whose conjugate acid H2 has pKa 35, is what drives the deprotonation to completion.", "lesson": "sci-orgo-l05", "difficulty": 3 },
+    { "id": "sci-orgo-q019", "q": "A weak base drug has a conjugate acid pKa of 9.5. At blood pH of 7.4 the drug is mostly:", "choices": ["Neutral and highly lipid soluble", "Protonated and positively charged", "Deprotonated and negatively charged", "Exactly 50 percent ionized"], "answer": 1, "why": "Blood pH sits about two units below the pKa, so the protonated cationic form predominates roughly 100 to 1. Fifty percent ionization would require pH to equal 9.5, and a base cannot carry a negative charge here.", "lesson": "sci-orgo-l05", "difficulty": 2 },
+    { "id": "sci-orgo-q020", "q": "What are the degrees of unsaturation in a compound with formula C5H8?", "choices": ["1", "2", "3", "0"], "answer": 1, "why": "Using (2 times 5 + 2 - 8)/2 gives 2, meaning some combination of two rings or pi bonds, such as an alkyne or a cyclic alkene. A single degree would need C5H10.", "lesson": "sci-orgo-l06", "difficulty": 1 },
+    { "id": "sci-orgo-q021", "q": "HBr is added to 1-methylcyclohexene with no peroxides. Where does the bromine end up?", "choices": ["On the CH2 of the ring, giving a primary bromide", "On an allylic position", "Distributed evenly between both alkene carbons", "On the carbon bearing the methyl group, giving a tertiary bromide"], "answer": 3, "why": "Markovnikov addition puts the proton on the less substituted alkene carbon, generating the tertiary cation at the methyl-bearing carbon, which then captures bromide. No allylic radical is involved without peroxides.", "lesson": "sci-orgo-l06", "difficulty": 2 },
+    { "id": "sci-orgo-q022", "q": "3,3-dimethyl-1-butene is treated with HCl and yields mostly 2-chloro-2,3-dimethylbutane. What happened?", "choices": ["A methyl shift converted a secondary cation into a tertiary one", "The alkene isomerized before addition", "The reaction followed anti-Markovnikov addition", "Chloride attacked the alkene directly"], "answer": 0, "why": "Protonation gives a secondary cation adjacent to a quaternary carbon, and a methyl migrates to produce the more stable tertiary cation before chloride adds. Anti-Markovnikov requires peroxides and applies only to HBr, and chloride never attacks an alkene directly.", "lesson": "sci-orgo-l06", "difficulty": 3 },
+    { "id": "sci-orgo-q023", "q": "Which reagent sequence converts 1-methylcyclohexene into the anti-Markovnikov alcohol with syn stereochemistry?", "choices": ["Water with sulfuric acid", "Mercuric acetate then sodium borohydride", "BH3 in THF, then H2O2 with NaOH", "Br2 in water"], "answer": 2, "why": "Hydroboration-oxidation delivers boron to the less hindered carbon and adds H and OH to the same face with no rearrangement. Acid hydration and oxymercuration both give Markovnikov products, and Br2 in water gives a halohydrin.", "lesson": "sci-orgo-l06", "difficulty": 2 },
+    { "id": "sci-orgo-q024", "q": "(R)-2-bromooctane is treated with sodium azide in DMF. What is the product?", "choices": ["A racemic azide", "The R azide with retained configuration", "The S azide with inverted configuration", "1-octene from elimination"], "answer": 2, "why": "Azide is a strong nucleophile and weak base, the substrate is secondary and unhindered, and DMF is polar aprotic, so a clean SN2 with backside inversion occurs. Racemization would require an SN1 carbocation and elimination would require a strong base.", "lesson": "sci-orgo-l07", "difficulty": 2 },
+    { "id": "sci-orgo-q025", "q": "2-chloro-2-methylpropane is stirred in warm water with no added nucleophile. Which mechanism dominates?", "choices": ["SN2", "SN1 with some E1", "E2", "No reaction occurs"], "answer": 1, "why": "A tertiary substrate in a polar protic solvent with only weak neutral nucleophiles ionizes to a carbocation, giving SN1 and E1 products together. SN2 is impossible at a tertiary center and E2 needs a strong base that is absent here.", "lesson": "sci-orgo-l07", "difficulty": 2 },
+    { "id": "sci-orgo-q026", "q": "Why does trans-1-bromo-2-methylcyclohexane undergo E2 to give the less substituted alkene?", "choices": ["Because bromide is a poor leaving group", "Because the reaction is actually E1", "Because the substrate is primary", "Because only the hydrogen on the unsubstituted side can be anti-periplanar to the axial bromide"], "answer": 3, "why": "E2 demands anti-periplanar geometry, which on this ring is only satisfied by one specific hydrogen, overriding Zaitsev preference. Bromide is a good leaving group, the substrate is secondary, and an E1 pathway would follow Zaitsev instead.", "lesson": "sci-orgo-l07", "difficulty": 3 },
+    { "id": "sci-orgo-q027", "q": "Which of these is the best leaving group in a substitution reaction?", "choices": ["Tosylate", "Hydroxide", "Amide anion", "Fluoride"], "answer": 0, "why": "Good leaving groups are weak bases, and tosylate is the resonance-stabilized conjugate base of a very strong acid. Hydroxide, amide and fluoride are all strong or hard bases and leave poorly.", "lesson": "sci-orgo-l07", "difficulty": 1 },
+    { "id": "sci-orgo-q028", "q": "Which reagent converts 2-propanol to acetone?", "choices": ["Chromic acid", "LiAlH4", "NaBH4", "PBr3"], "answer": 0, "why": "A secondary alcohol oxidizes to a ketone and stops there, and chromic acid accomplishes this. LiAlH4 and NaBH4 are reducing agents, and PBr3 simply replaces the OH with bromide.", "lesson": "sci-orgo-l08", "difficulty": 1 },
+    { "id": "sci-orgo-q029", "q": "An ethyl ester is treated with excess LiAlH4 and then water. What is the major product?", "choices": ["An aldehyde", "A primary alcohol", "A carboxylic acid", "No reaction, esters resist LiAlH4"], "answer": 1, "why": "LiAlH4 reduces esters all the way down to the primary alcohol, passing through an aldehyde that is reduced immediately. NaBH4 is the reagent that would leave the ester alone, and reduction never produces an acid.", "lesson": "sci-orgo-l08", "difficulty": 2 },
+    { "id": "sci-orgo-q030", "q": "2-methyl-1,2-epoxypropane reacts with sodium methoxide in methanol. At which carbon does methoxide attack?", "choices": ["The quaternary carbon", "The oxygen atom", "The less substituted CH2 carbon", "Neither carbon; the epoxide is inert"], "answer": 2, "why": "Under basic conditions the reaction is SN2-like and sterics dominate, so attack occurs at the least hindered carbon. Attack at the more substituted carbon would require acid to protonate the epoxide first, and epoxides are far from inert because of ring strain.", "lesson": "sci-orgo-l08", "difficulty": 3 },
+    { "id": "sci-orgo-q031", "q": "You need to make cyclohexyl methyl ether by Williamson synthesis. Which combination works best?", "choices": ["Cyclohexyl bromide plus sodium methoxide", "Cyclohexanol plus methanol with acid", "Cyclohexyl bromide plus methanol", "Sodium cyclohexoxide plus methyl iodide"], "answer": 3, "why": "Williamson is SN2, so the halide must be unhindered; methyl iodide is ideal and the secondary cyclohexyl group belongs on the alkoxide. Using cyclohexyl bromide with a strong alkoxide base favors E2 elimination instead.", "lesson": "sci-orgo-l08", "difficulty": 2 },
+    { "id": "sci-orgo-q032", "q": "Which ring is antiaromatic rather than aromatic?", "choices": ["Cyclobutadiene, a planar cyclic ring with 4 pi electrons", "Benzene, with 6 pi electrons", "Pyridine, with 6 pi electrons", "The cyclopentadienyl anion, with 6 pi electrons"], "answer": 0, "why": "Four pi electrons fits 4n, the antiaromatic count, and makes cyclobutadiene markedly unstable. The other three all have the 4n+2 count of 6 and are aromatic.", "lesson": "sci-orgo-l09", "difficulty": 1 },
+    { "id": "sci-orgo-q033", "q": "Why is aniline a far weaker base than cyclohexylamine?", "choices": ["Aniline has no lone pair on nitrogen", "Aniline's lone pair is delocalized into the aromatic ring and is less available", "Aniline is sterically hindered by the ring", "Aniline is already protonated at neutral pH"], "answer": 1, "why": "Resonance donation into the ring ties up the nitrogen lone pair, dropping the conjugate acid pKa to about 4.6 versus 10.6 for an alkylamine. The lone pair exists but is delocalized, and sterics are a minor effect here.", "lesson": "sci-orgo-l09", "difficulty": 2 },
+    { "id": "sci-orgo-q034", "q": "Nitrobenzene reacts far more slowly than benzene in bromination, and bromine enters the meta position. Why?", "choices": ["The nitro group blocks ortho and para sterically", "The nitro group is an ortho-para director that is overwhelmed by sterics", "The nitro group withdraws electron density and destabilizes the ortho and para arenium ions most", "Nitrobenzene is not aromatic"], "answer": 2, "why": "Attack ortho or para places positive charge directly on the carbon bearing the electron-poor nitro group, which is prohibitive, so meta is the least bad option and the whole ring is deactivated. Sterics are not the driver, and nitrobenzene remains fully aromatic.", "lesson": "sci-orgo-l09", "difficulty": 3 },
+    { "id": "sci-orgo-q035", "q": "Which carboxylic acid derivative is the most reactive toward nucleophilic acyl substitution?", "choices": ["Amide", "Ester", "Carboxylic acid", "Acid chloride"], "answer": 3, "why": "Chloride is the weakest base and therefore the best leaving group, and it donates almost nothing back into the carbonyl. Amides sit at the opposite end because nitrogen donates strongly and the amide anion is a terrible leaving group.", "lesson": "sci-orgo-l10", "difficulty": 1 },
+    { "id": "sci-orgo-q036", "q": "A patient is given enalapril, which has no ACE-inhibiting activity in the test tube yet lowers blood pressure. What chemistry explains this?", "choices": ["Liver esterases hydrolyze the ester to release active enalaprilat", "Gastric acid oxidizes it to the active form", "The amide bond is reduced in plasma", "It is a racemate that resolves in vivo"], "answer": 0, "why": "Enalapril is an ester prodrug cleaved by hepatic esterases to the active diacid. Amides resist plasma hydrolysis and are not reduced in the body, and no oxidation or resolution step is involved.", "lesson": "sci-orgo-l10", "difficulty": 2 },
+    { "id": "sci-orgo-q037", "q": "An IR spectrum shows a strong sharp band at 1735 wavenumbers and no absorption above 3100. Which compound fits?", "choices": ["1-butanol", "Ethyl acetate", "Butanoic acid", "1-butene"], "answer": 1, "why": "An ester C=O lands near 1735 and an ester has no O-H or N-H to absorb above 3100. An alcohol and an acid would both show broad O-H bands, and an alkene has no strong carbonyl band.", "lesson": "sci-orgo-l10", "difficulty": 2 },
+    { "id": "sci-orgo-q038", "q": "A proton NMR shows a 6-hydrogen doublet near 1.2 ppm and a 1-hydrogen septet near 3.9 ppm. Which fragment is present?", "choices": ["An ethyl group", "A tert-butyl group", "An isopropyl group attached to oxygen", "A benzene ring"], "answer": 2, "why": "Two equivalent methyls split by one neighbor give a 6H doublet, and that single CH split by six neighbors gives a septet, shifted downfield to 3.9 by an attached oxygen. An ethyl group gives a triplet and quartet, tert-butyl gives a 9H singlet, and aromatic hydrogens appear near 7 ppm.", "lesson": "sci-orgo-l10", "difficulty": 2 },
+    { "id": "sci-orgo-q039", "q": "A mass spectrum shows peaks at m/z 108 and 110 of nearly equal intensity. What does this indicate?", "choices": ["Two different compounds are present", "The compound contains chlorine", "The compound contains nitrogen", "The compound contains bromine"], "answer": 3, "why": "Bromine's two isotopes are almost equally abundant, so M+ and M+2 are nearly equal in height. Chlorine gives an M+2 about one third the height of M+, and nitrogen shifts the molecular ion to an odd mass rather than creating an M+2 doublet.", "lesson": "sci-orgo-l10", "difficulty": 3 },
+    { "id": "sci-orgo-q040", "q": "At physiologic pH of 7.4, glycine exists predominantly as which species?", "choices": ["A zwitterion with a protonated amine and a deprotonated carboxylate", "Fully neutral with both groups uncharged", "A dication", "A dianion"], "answer": 0, "why": "The carboxyl pKa near 2 is well below 7.4 so it is deprotonated, while the amine pKa near 9.5 is above 7.4 so it stays protonated. The fully neutral form is never significantly populated in water.", "lesson": "sci-orgo-l10", "difficulty": 1 }
+  ],
+  "scenarios": [
+    {
+      "id": "sci-orgo-s01",
+      "title": "Exam problem: assign configuration, then choose a mechanism",
+      "setting": "classroom",
+      "intro": "A midterm hands you 2-bromobutane drawn with a wedge-dash structure at carbon 2. Part A asks you to assign R or S. Part B puts the same compound in two different flasks with two different reagents and asks what comes out of each. Work it the way a grader wants to see it.\n\n> **Key:** Assign configuration before you touch the mechanism. The stereochemical answer depends on which mechanism runs.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "Carbon 2 of 2-bromobutane bears four groups: `Br`, `CH3`, `CH2CH3`, and `H`. What is your first move in assigning R or S?",
+          "choices": [
+            { "text": "Rank the four groups by the atomic number of the atom directly attached", "next": "s2", "feedback": "Correct. CIP always starts at the first atom out. Bromine at atomic number 35 wins immediately; hydrogen at 1 is last.", "score": 1 },
+            { "text": "Rank by the size of the whole group, so the ethyl beats the bromine", "next": "s2", "feedback": "No. CIP uses atomic number at the first point of difference, not molecular size or mass of the group. Bromine outranks any carbon chain.", "score": -1 },
+            { "text": "Look up whether the compound rotates light clockwise", "next": "s2", "feedback": "Optical rotation is measured, never predicted. R/S and plus/minus are independent labels, so this tells you nothing about configuration.", "score": -1 },
+            { "text": "Count the stereocenters first to see how many assignments are needed", "next": "s2", "feedback": "Reasonable bookkeeping, and there is exactly one stereocenter here, but you still have to rank the groups before you can assign anything.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "You have `Br` as priority 1 and `H` as priority 4. Now you must break the tie between `CH2CH3` and `CH3`, both of which start with carbon. How?",
+          "choices": [
+            { "text": "The methyl wins because it is simpler", "next": "s3", "feedback": "No. Simplicity has no role in CIP. You must compare the sets of atoms one bond farther out.", "score": -1 },
+            { "text": "Move one bond outward and compare the attached atom sets: ethyl is (C,H,H) and methyl is (H,H,H), so ethyl wins", "next": "s3", "feedback": "Exactly right. At the first point of difference, carbon beats hydrogen, so ethyl is priority 2 and methyl is priority 3.", "score": 1 },
+            { "text": "Add up the total atomic mass of each group and take the heavier one", "next": "s3", "feedback": "This happens to give the right answer here but it is the wrong rule and will fail you elsewhere. CIP compares atom sets outward in order, never summed mass.", "score": 0 },
+            { "text": "Declare it a tie, so the center is not a stereocenter", "next": "s3", "feedback": "Ethyl and methyl are genuinely different groups, so this is a real stereocenter. A true tie, such as two methyls, is what would kill the stereocenter.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "The hydrogen is drawn on a **wedge**, pointing toward you. Tracing `Br` to ethyl to methyl reads clockwise as drawn. What is the configuration?",
+          "choices": [
+            { "text": "R, because clockwise is R", "next": "s4", "feedback": "This is the classic trap. Clockwise means R only when the lowest priority group points away from you. Here it points toward you, so the reading must be reversed.", "score": -1 },
+            { "text": "S, because the lowest priority group faces you so the apparent direction is reversed", "next": "s4", "feedback": "Correct. With priority 4 on a wedge, read the direction as drawn and then flip it: apparent clockwise means the true assignment is S.", "score": 1 },
+            { "text": "Cannot be determined without a model kit", "next": "s4", "feedback": "You can always determine it on paper. The reversal rule for a wedge-drawn lowest priority group exists precisely so you do not need a model.", "score": 0 },
+            { "text": "Meso, because there is a mirror plane", "next": "s4", "feedback": "Meso requires at least two stereocenters that cancel. There is only one here, so the molecule is simply chiral.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "Part B, flask one: (S)-2-bromobutane is dissolved in **acetone** with **sodium iodide**. Predict the outcome before predicting the stereochemistry.",
+          "choices": [
+            { "text": "SN1, because the carbocation is stabilized by acetone", "next": "s5", "feedback": "Acetone is polar aprotic and does a poor job stabilizing cations, and a secondary halide with a strong nucleophile present does not need to ionize. SN1 is not the pathway here.", "score": -1 },
+            { "text": "E2, because iodide is a strong base", "next": "s5", "feedback": "Iodide is a strong nucleophile but a very weak base, since HI has a pKa near minus 10. Weak bases do not drive E2.", "score": -1 },
+            { "text": "SN2, because iodide is a strong nucleophile and weak base in a polar aprotic solvent on a secondary substrate", "next": "s5", "feedback": "Correct. Every factor points the same direction, and the product is 2-iodobutane with inverted configuration at the stereocenter.", "score": 1 },
+            { "text": "No reaction, because iodide is a worse leaving group than bromide", "next": "s5", "feedback": "Leaving group ability governs the group departing, not the one attacking. Iodide is both a great nucleophile and a great leaving group, which is what makes this substitution reversible in principle but driven by NaBr precipitating from acetone.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "Flask two: the same (S)-2-bromobutane is heated with **sodium ethoxide in ethanol**. What is the major product?",
+          "choices": [
+            { "text": "2-ethoxybutane by SN2", "next": "s6", "feedback": "Ethoxide can do SN2, but on a secondary substrate with heat, its strong basicity wins and elimination dominates. Substitution here is a minor product.", "score": 0 },
+            { "text": "1-butene, the Hofmann product", "next": "s6", "feedback": "Ethoxide is a small base, not a bulky one, so it has no trouble reaching the interior proton. Hofmann product requires something like potassium tert-butoxide.", "score": -1 },
+            { "text": "2-butene, the Zaitsev product, by E2", "next": "s6", "feedback": "Correct. Strong small base plus secondary substrate plus heat equals E2, and Zaitsev favors the more substituted internal alkene.", "score": 1 },
+            { "text": "Racemic 2-butanol by SN1", "next": "s6", "feedback": "SN1 needs a weak nucleophile and a tertiary substrate; a strong alkoxide base on a secondary center does not go that route, and no water is present to give an alcohol.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s6",
+          "prompt": "The grader asks one last thing: if you had started with **racemic** 2-bromobutane in flask one instead of pure (S), what would the product mixture look like?",
+          "choices": [
+            { "text": "A racemic mixture of 2-iodobutane, because each enantiomer inverts to the opposite one", "next": "end", "feedback": "Correct. SN2 inverts every molecule faithfully, but inverting a 50:50 input still gives a 50:50 output. Stereospecific is not the same as enantioenriched.", "score": 1 },
+            { "text": "A single enantiomer of 2-iodobutane, because SN2 always inverts", "next": "end", "feedback": "Inversion is faithful per molecule, but you cannot create optical purity from a racemic starting material without a chiral reagent or a separation step.", "score": -1 },
+            { "text": "A racemic mixture, because the carbocation is attacked from both faces", "next": "end", "feedback": "Right answer, wrong reason. There is no carbocation in an SN2 reaction; the racemic product simply mirrors the racemic input.", "score": 0 },
+            { "text": "Mostly 2-butene, because racemic mixtures favor elimination", "next": "end", "feedback": "Stereochemistry of the starting material has no bearing on the substitution versus elimination balance. That is decided by substrate, base strength, solvent and temperature.", "score": -1 }
+          ]
+        }
+      ],
+      "debrief": "Two separate skills got tested here and they are graded separately. First, CIP assignment: rank by atomic number, break ties one bond outward, and reverse your reading whenever the lowest priority group points toward you. That reversal is the single most common lost point on stereochemistry questions.\n\nSecond, mechanism selection. Read the attacking species before anything else. A strong nucleophile that is a weak base, such as iodide, azide or cyanide, means substitution. A strong base, such as ethoxide or hydroxide, means elimination, and heat makes that more certain. Then let substrate class, solvent and sterics fine-tune the answer.\n\n> **Trap:** A stereospecific reaction preserves the information in the starting material. It does not create new optical purity. Racemic in means racemic out."
+    },
+    {
+      "id": "sci-orgo-s02",
+      "title": "Exam problem: deduce a structure from spectra, then design its synthesis",
+      "setting": "classroom",
+      "intro": "The final exam gives you an unknown with molecular formula `C8H8O2`. You get a mass spectrum, an IR trace, and a proton NMR with integrations. The second half of the problem asks you to propose a two-step synthesis of the compound from benzene. Work the data before you guess.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "Start with the formula `C8H8O2`. What should you calculate first, and what does it tell you?",
+          "choices": [
+            { "text": "Degrees of unsaturation: (16 + 2 - 8)/2 equals 5, so there is a benzene ring plus one more pi bond", "next": "s2", "feedback": "Correct. Four degrees accounts for a benzene ring and its three pi bonds, and the fifth is almost certainly a carbonyl given the two oxygens.", "score": 1 },
+            { "text": "Degrees of unsaturation, counting the oxygens, giving 7", "next": "s2", "feedback": "Oxygen never enters the degrees of unsaturation formula, because adding an oxygen into a chain does not change the hydrogen count. The correct value is 5.", "score": -1 },
+            { "text": "Molecular weight, so you can match the M+ peak", "next": "s2", "feedback": "Useful confirmation, and 136 will match the M+ peak, but the degrees of unsaturation is what actually narrows the structure.", "score": 0 },
+            { "text": "The number of NMR signals, since that is the most informative number", "next": "s2", "feedback": "You cannot count signals until you see the spectrum, and the formula-based calculation costs nothing and comes first.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "The IR shows a strong sharp band at **1720 wavenumbers**, a weak band just below 3000, and **nothing broad above 3000**. What does that rule in and out?",
+          "choices": [
+            { "text": "A carboxylic acid, because 1720 is the acid carbonyl", "next": "s3", "feedback": "The carbonyl position fits, but a carboxylic acid always brings an enormous broad O-H from about 2500 to 3300. Its absence rules the acid out.", "score": -1 },
+            { "text": "An alcohol, because the band below 3000 is the O-H", "next": "s3", "feedback": "That band below 3000 is ordinary C-H stretching. An alcohol O-H is broad and sits at 3200 to 3600, and it is absent.", "score": -1 },
+            { "text": "A carbonyl is present, and the absence of any broad band above 3000 rules out both alcohol and carboxylic acid", "next": "s3", "feedback": "Exactly. With two oxygens, a carbonyl, and no O-H, the remaining candidate is an ester. That is the key deduction of the whole problem.", "score": 1 },
+            { "text": "An alkene, because 1720 could be a C=C stretch", "next": "s3", "feedback": "C=C absorbs weakly near 1650, not strongly at 1720. A strong sharp band in the 1700 to 1750 window is a carbonyl.", "score": 0 }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "The proton NMR shows exactly two signals: a **3-hydrogen singlet at 2.3 ppm** and a **5-hydrogen multiplet at 7.2 to 7.4 ppm**. Interpret both.",
+          "choices": [
+            { "text": "A methyl with no neighbors next to a carbonyl, and a monosubstituted benzene ring", "next": "s4", "feedback": "Correct on both counts. A singlet means zero adjacent hydrogens, 2.3 ppm places the methyl alpha to a carbonyl, and a 5H aromatic multiplet means one ring substituent.", "score": 1 },
+            { "text": "An ethyl group and a disubstituted ring", "next": "s4", "feedback": "An ethyl group would show a triplet and a quartet totaling five hydrogens, and a disubstituted ring shows four aromatic hydrogens, not five.", "score": -1 },
+            { "text": "A methyl on the ring itself, since 2.3 ppm is the tolyl methyl range", "next": "s4", "feedback": "A tolyl methyl does appear near 2.3, so this is a genuinely tempting read, but it would leave the ring disubstituted and only four aromatic hydrogens. The 5H integration says the ring carries exactly one group.", "score": 0 },
+            { "text": "An aldehyde hydrogen and a benzene ring", "next": "s4", "feedback": "An aldehyde hydrogen appears as a 1-hydrogen signal at 9 to 10 ppm. Nothing in that region was reported.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "Put it together. `C8H8O2`, an ester, a `CH3` with no neighbors sitting next to a carbonyl, and a monosubstituted benzene. Which structure fits?",
+          "choices": [
+            { "text": "Methyl benzoate, `C6H5-CO-O-CH3`", "next": "s5", "feedback": "The formula fits, but a methyl on the ester oxygen appears near 3.9 ppm, not 2.3. The observed shift says the methyl is attached to the carbonyl carbon, not to oxygen.", "score": 0 },
+            { "text": "Phenyl acetate, `CH3-CO-O-C6H5`, an acetate ester of phenol", "next": "s5", "feedback": "Correct. The acetyl methyl lands at 2.3 ppm as a singlet, and the phenyl group on the ester oxygen gives five aromatic hydrogens. This is the same acetyl-on-phenol motif found in aspirin.", "score": 1 },
+            { "text": "Phenylacetic acid, `C6H5-CH2-COOH`", "next": "s5", "feedback": "This would show a broad acid O-H in the IR and a 2-hydrogen benzylic singlet, not a 3-hydrogen one. The IR already ruled out the acid.", "score": -1 },
+            { "text": "Acetophenone, `C6H5-CO-CH3`", "next": "s5", "feedback": "Acetophenone matches the NMR nicely but its formula is C8H8O, with only one oxygen. You need to account for both oxygens in C8H8O2.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "Second half of the problem: propose a synthesis of phenyl acetate **from benzene**. What is your first step?",
+          "choices": [
+            { "text": "Friedel-Crafts acylation with acetyl chloride and AlCl3", "next": "s6", "feedback": "That builds acetophenone, a ketone with the acetyl group bonded to a ring carbon. You need the acetyl bonded through an oxygen instead.", "score": -1 },
+            { "text": "Install an oxygen on the ring to make phenol, for example by sulfonation then alkali fusion, or by nitration, reduction and diazotization followed by hydrolysis", "next": "s6", "feedback": "Correct approach. Benzene has no oxygen, so you must install the phenol OH first; either classical route gets you there.", "score": 1 },
+            { "text": "Brominate the ring with Br2 and FeBr3", "next": "s6", "feedback": "This installs a halogen, which is a reasonable handle in some routes, but it is not a path to a phenol under ordinary conditions and adds steps.", "score": 0 },
+            { "text": "Oxidize benzene directly with KMnO4 to get phenol", "next": "s6", "feedback": "Benzene resists direct oxidation because aromatic stability protects the ring. Permanganate oxidizes alkyl side chains, not the ring itself.", "score": -1 }
+          ]
+        },
+        {
+          "id": "s6",
+          "prompt": "You now have phenol in hand. How do you finish the synthesis of phenyl acetate, and why choose that reagent?",
+          "choices": [
+            { "text": "Treat phenol with acetic anhydride or acetyl chloride, because a reactive derivative converts readily into the less reactive ester", "next": "end", "feedback": "Correct. You may always move down the reactivity ladder: acid chloride or anhydride to ester. This is exactly how aspirin is made industrially, from salicylic acid plus acetic anhydride.", "score": 1 },
+            { "text": "Treat phenol with acetamide, since amides transfer acyl groups easily", "next": "end", "feedback": "Backwards. Amides are the least reactive derivative, so an amide will not acylate an alcohol. You can go from amide-precursors down to amides, never up.", "score": -1 },
+            { "text": "Treat phenol with acetic acid and a trace of sulfuric acid under Fischer conditions", "next": "end", "feedback": "This is a real reaction but a poor choice. Fischer esterification is an equilibrium and phenols are weak nucleophiles, so yields are low. An anhydride drives it to completion.", "score": 0 },
+            { "text": "Oxidize phenol with chromic acid to install the ester", "next": "end", "feedback": "Oxidation changes oxidation level, it does not form an ester linkage. Ester formation is a nucleophilic acyl substitution, not a redox step.", "score": -1 }
+          ]
+        }
+      ],
+      "debrief": "Structure elucidation has a fixed order and following it keeps you out of trouble. Calculate degrees of unsaturation from the formula, use IR to name the functional group, use NMR shift, integration and splitting to locate the pieces, then assemble a structure that accounts for every atom in the formula. If your proposed structure has the wrong molecular formula, it is wrong no matter how well it fits the spectra.\n\nThe shift difference that decided this problem is worth memorizing: a methyl bonded to a carbonyl carbon sits near 2.1 to 2.3 ppm, while a methyl bonded to an ester oxygen sits near 3.7 to 4.0 ppm. That single number distinguishes phenyl acetate from methyl benzoate.\n\n> **Key:** In synthesis you may always convert a more reactive acid derivative into a less reactive one. Acid chloride and anhydride acylate alcohols and amines readily; esters and amides do not acylate anything without harsh conditions or enzymes.\n\n> **On the exam:** The acetyl-transfer step you just used is the same chemistry as aspirin manufacture and the same chemistry by which aspirin acetylates cyclooxygenase in the body."
+    }
+  ]
+}

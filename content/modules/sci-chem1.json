@@ -1,0 +1,1738 @@
+{
+  "schema": 1,
+  "id": "sci-chem1",
+  "track": "prereq",
+  "title": "General Chemistry I",
+  "short": "Chemistry I",
+  "summary": "The first semester of college chemistry in course order: measurement and sig figs, atoms and the mole, stoichiometry, aqueous reactions, gases, thermochemistry, electron structure, periodic trends, and bonding. Every concept gets a fully worked numeric example and a clinical or lab tie-in.",
+  "lessons": [
+    {
+      "id": "sci-chem1-l01",
+      "title": "Measurement, significant figures, dimensional analysis",
+      "minutes": 8,
+      "body": "Chemistry is a measuring science, so the first week of the course is about how to carry a number honestly. Every measured value has a last digit that is estimated. The digits you are sure of plus that one estimated digit are the **significant figures** (sig figs). A 10 mL graduated cylinder read as `7.62 mL` claims certainty to the tenths and an estimate in the hundredths.\n\n### Counting sig figs\n\nThe rules are short. All nonzero digits count. Zeros between nonzeros count (`405` has 3). Leading zeros never count (`0.0042` has 2). Trailing zeros count only if there is a decimal point (`4.500` has 4; `4500` is ambiguous and usually read as 2). Exact numbers -- counted objects, defined conversions like `1 L = 1000 mL` -- have infinite sig figs and never limit an answer.\n\n### Carrying them through math\n\nMultiply or divide: the answer gets the *fewest sig figs* of any factor. Add or subtract: the answer gets the *fewest decimal places*. Round only at the end of a calculation, never in the middle.\n\n### Dimensional analysis\n\nThis is the single most useful skill in the course, and you will use it in every dosing calculation for the rest of your life. Write the quantity you have, multiply by conversion factors written as fractions, and cancel units until only the unit you want survives. If the units come out right, the arithmetic is almost always right.\n\n### Worked example: an IV rate\n\nAn order reads `2.0 mg/kg` of a drug for a `176 lb` patient. The vial is `40. mg/mL`. How many mL do you draw?\n\n1. Convert weight: `176 lb x (1 kg / 2.205 lb) = 79.8 kg`.\n2. Find the dose: `79.8 kg x 2.0 mg/kg = 159.6 mg`.\n3. Convert to volume: `159.6 mg x (1 mL / 40. mg) = 3.99 mL`.\n4. Apply sig figs: `2.0` and `40.` each have 2 sig figs, so the answer is `4.0 mL`.\n5. Sanity check: 80 kg times 2 mg/kg is about 160 mg, and 160/40 is 4. The units cancelled mg and kg, leaving mL.\n\n> **Key:** Set every conversion up as a fraction and cancel units on paper. Unit cancellation is a built-in error check that catches inverted conversion factors before they become a tenfold dosing error.\n\n### Accuracy, precision, and density\n\n**Accuracy** is closeness to the true value; **precision** is closeness of repeated measurements to each other. A miscalibrated glucometer reading `180, 181, 180 mg/dL` on a true `95 mg/dL` sample is precise but not accurate. Percent error is `(|measured - true| / true) x 100`.\n\n**Density** (`d = m/V`, usually `g/mL`) is the most common derived unit in lab. Urine specific gravity, which the lab reports as `1.005` to `1.030`, is nothing more than the density of urine divided by the density of water -- a direct read on how concentrated the urine is.\n\n> **On shift:** Temperature conversion is dimensional analysis' cousin: `K = C + 273.15` and `F = (9/5)C + 32`. A fever of `103.0 F` is `(103.0 - 32) x 5/9 = 39.4 C = 312.6 K`.",
+      "keyPoints": [
+        "Sig figs: nonzeros always count, leading zeros never, trailing zeros only with a decimal point; exact numbers do not limit the answer.",
+        "Multiply/divide keeps the fewest sig figs; add/subtract keeps the fewest decimal places; round only at the end.",
+        "Dimensional analysis: write conversions as fractions and cancel units -- correct units are an error check.",
+        "Accuracy is closeness to truth, precision is repeatability; a device can be precise and wrong.",
+        "Density d = m/V; urine specific gravity is density relative to water, normally 1.005-1.030."
+      ],
+      "checks": [
+        {
+          "q": "How many significant figures are in 0.04070 g?",
+          "choices": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answer": 1,
+          "why": "Leading zeros never count, so 0.0 is out. The 4, the captive 0, the 7 and the trailing 0 after a decimal point all count: 4070 means 4 sig figs."
+        },
+        {
+          "q": "A patient weighs 154 lb. Using 1 kg = 2.205 lb, what is the mass in kg to the correct number of sig figs?",
+          "choices": [
+            "69.8 kg",
+            "69.84 kg",
+            "70 kg",
+            "69.841 kg"
+          ],
+          "answer": 0,
+          "why": "154 / 2.205 = 69.84... The measured value 154 has 3 sig figs and the conversion factor is exact, so the answer carries 3 sig figs: 69.8 kg."
+        },
+        {
+          "q": "A glucometer reads 182, 183, 182 mg/dL on a sample known to be 96 mg/dL. The device is best described as:",
+          "choices": [
+            "accurate but not precise",
+            "precise but not accurate",
+            "both accurate and precise",
+            "neither accurate nor precise"
+          ],
+          "answer": 1,
+          "why": "The readings cluster tightly, which is precision. They are far from the true value, so accuracy fails. Systematic calibration error produces exactly this pattern."
+        }
+      ]
+    },
+    {
+      "id": "sci-chem1-l02",
+      "title": "Atoms, isotopes, the mole, and molar mass",
+      "minutes": 8,
+      "body": "An atom is a tiny dense nucleus of **protons** (positive) and **neutrons** (neutral) surrounded by **electrons** (negative). The proton count is the **atomic number** (Z) and it defines the element -- 11 protons is sodium, always. The proton plus neutron count is the **mass number** (A).\n\n**Isotopes** are atoms of the same element with different neutron counts. Carbon-12 and carbon-14 both have 6 protons; C-14 has 8 neutrons instead of 6. Chemically they behave nearly identically, which is exactly why isotopes are useful as tracers in medicine. An **ion** is an atom that has gained or lost electrons: `Ca2+` is calcium that lost 2 electrons, so it has 20 protons and 18 electrons.\n\n### Atomic mass is a weighted average\n\nThe mass on the periodic table is the average of the isotope masses weighted by natural abundance, not the mass of any single atom.\n\n1. Chlorine is `75.77%` Cl-35 (`34.969 amu`) and `24.23%` Cl-37 (`36.966 amu`).\n2. Contribution of Cl-35: `0.7577 x 34.969 = 26.50 amu`.\n3. Contribution of Cl-37: `0.2423 x 36.966 = 8.957 amu`.\n4. Sum: `26.50 + 8.957 = 35.45 amu`, which is the value printed on the table.\n\n### The mole\n\nAtoms are too small to count, so chemists use a counting unit. One **mole** is `6.022 x 10^23` particles (Avogadro's number), chosen so that one mole of a substance weighs its atomic or formula mass in grams. That number in grams per mole is the **molar mass**.\n\n> **Key:** Molar mass is the bridge between the mass you can weigh and the particle count that reactions actually care about. Grams to moles: divide by molar mass. Moles to grams: multiply.\n\n### Worked example: moles of glucose in a D50 amp\n\nA 50 mL amp of D50W contains `25 g` of glucose, `C6H12O6`. How many moles and how many molecules?\n\n1. Molar mass: C `6 x 12.011 = 72.066`; H `12 x 1.008 = 12.096`; O `6 x 15.999 = 95.994`.\n2. Total: `72.066 + 12.096 + 95.994 = 180.156 g/mol`, round to `180.16 g/mol`.\n3. Moles: `25 g / 180.16 g/mol = 0.1388 mol`, which is `0.14 mol` at 2 sig figs.\n4. Molecules: `0.1388 mol x 6.022 x 10^23 = 8.4 x 10^22 molecules`.\n5. Check: a quarter of 180 g would be 45 g for 0.25 mol, so 25 g giving a little under 0.14 mol is reasonable.\n\n### Percent composition and formulas\n\nPercent by mass of an element is `(mass of that element in 1 mol / molar mass) x 100`. For glucose, carbon is `72.066 / 180.16 x 100 = 40.00%`. The **empirical formula** is the smallest whole-number ratio (`CH2O` for glucose); the **molecular formula** is the actual count (`C6H12O6`). Divide molecular molar mass by empirical molar mass to get the multiplier: `180.16 / 30.03 = 6`.\n\n> **On shift:** Electrolytes are ordered in `mEq/L`, which is moles times charge times 1000. For `Na+` (charge 1), `1 mmol = 1 mEq`; for `Ca2+` (charge 2), `1 mmol = 2 mEq`. Getting that factor wrong is a real-world calcium error.",
+      "keyPoints": [
+        "Protons define the element; isotopes differ in neutrons; ions differ in electrons.",
+        "Periodic table mass is an abundance-weighted average of isotope masses.",
+        "1 mole = 6.022 x 10^23 particles, and molar mass in g/mol converts grams to moles.",
+        "Empirical formula is the smallest whole-number ratio; molecular formula is a whole-number multiple of it.",
+        "mEq = mmol x charge, so 1 mmol of Ca2+ is 2 mEq but 1 mmol of Na+ is 1 mEq."
+      ],
+      "checks": [
+        {
+          "q": "How many electrons are in one Ca2+ ion?",
+          "choices": [
+            "18",
+            "20",
+            "22",
+            "40"
+          ],
+          "answer": 0,
+          "why": "Calcium has atomic number 20, so 20 protons. A 2+ charge means it lost 2 electrons: 20 - 2 = 18 electrons. Neutron count does not change with charge."
+        },
+        {
+          "q": "How many moles are in 9.0 g of water (molar mass 18.02 g/mol)?",
+          "choices": [
+            "0.20 mol",
+            "0.50 mol",
+            "2.0 mol",
+            "162 mol"
+          ],
+          "answer": 1,
+          "why": "9.0 / 18.02 = 0.4995, which is 0.50 mol at 2 sig figs. Multiplying instead of dividing gives the absurd 162 mol answer."
+        },
+        {
+          "q": "A compound is 40.0% C, 6.7% H, and 53.3% O by mass. What is its empirical formula?",
+          "choices": [
+            "C2H4O2",
+            "CHO",
+            "CH2O",
+            "C6H12O6"
+          ],
+          "answer": 2,
+          "why": "Per 100 g: 40.0/12.01 = 3.33 mol C, 6.7/1.008 = 6.65 mol H, 53.3/16.00 = 3.33 mol O. Dividing by 3.33 gives 1:2:1, so CH2O. C6H12O6 is the molecular formula, not the empirical one."
+        }
+      ]
+    },
+    {
+      "id": "sci-chem1-l03",
+      "title": "Naming compounds, equations, and stoichiometry",
+      "minutes": 9,
+      "body": "Before you can calculate with a reaction you have to name and balance it.\n\n### Nomenclature in three buckets\n\n**Ionic compounds** (metal plus nonmetal) name the cation, then the anion with an `-ide` ending: `NaCl` sodium chloride, `MgO` magnesium oxide. Transition metals need a Roman numeral for charge: `FeCl3` is iron(III) chloride. Memorize the common polyatomic ions -- `NO3-` nitrate, `SO4 2-` sulfate, `PO4 3-` phosphate, `CO3 2-` carbonate, `HCO3-` bicarbonate, `OH-` hydroxide, `NH4+` ammonium. The `-ate` form has one more oxygen than the `-ite` form (`SO4 2-` sulfate vs `SO3 2-` sulfite).\n\n**Molecular compounds** (two nonmetals) use Greek prefixes: `N2O` dinitrogen monoxide, `CO2` carbon dioxide, `CCl4` carbon tetrachloride. Drop the `mono-` on the first element.\n\n**Acids** depend on the anion. No oxygen: `hydro-` plus `-ic` (`HCl` hydrochloric acid). An `-ate` anion becomes `-ic acid` (`H2SO4` sulfuric acid, `HNO3` nitric acid). An `-ite` anion becomes `-ous acid` (`HNO2` nitrous acid).\n\n### Balancing\n\nA balanced equation has equal atoms of each element on both sides because mass is conserved. Change only coefficients, never subscripts. Balance the most complicated molecule first, save `O` and `H` for late, and double the whole equation if you get a fraction.\n\n> **Trap:** Changing `H2O` to `H2O2` to balance oxygen changes the substance. Coefficients only.\n\n### Worked example: complete combustion of glucose\n\nThis is cellular respiration, written as a chemistry problem.\n\n1. Skeleton: `C6H12O6 + O2 -> CO2 + H2O`.\n2. Carbon: 6 on the left, so `6 CO2`.\n3. Hydrogen: 12 on the left, so `6 H2O`.\n4. Oxygen on the right: `6 x 2 + 6 x 1 = 18`. On the left glucose supplies 6, so `O2` supplies 12, meaning `6 O2`.\n5. Balanced: `C6H12O6 + 6 O2 -> 6 CO2 + 6 H2O`. The 1:1 CO2-to-O2 ratio is why a person burning pure carbohydrate has a respiratory quotient of `1.0`.\n\n### Stoichiometry: the mole-to-mole bridge\n\nEvery stoichiometry problem is the same three steps: grams of A to moles of A (divide by molar mass), moles of A to moles of B (multiply by the coefficient ratio), moles of B to grams of B (multiply by molar mass).\n\n### Worked example: limiting reagent and percent yield\n\nYou react `10.0 g` of `N2` with `3.00 g` of `H2` to make ammonia, `N2 + 3 H2 -> 2 NH3`, and isolate `9.20 g`.\n\n1. Moles `N2`: `10.0 / 28.02 = 0.357 mol`.\n2. Moles `H2`: `3.00 / 2.016 = 1.488 mol`.\n3. Divide each by its coefficient: `N2` gives `0.357 / 1 = 0.357`; `H2` gives `1.488 / 3 = 0.496`. The smaller value is the **limiting reagent**, so `N2` limits.\n4. Theoretical moles `NH3`: `0.357 mol N2 x (2 mol NH3 / 1 mol N2) = 0.714 mol`.\n5. Theoretical mass: `0.714 x 17.03 = 12.2 g`.\n6. Percent yield: `(9.20 / 12.2) x 100 = 75.4%`.\n\n> **On the exam:** Never guess the limiting reagent from mass alone. Convert to moles and divide by the coefficient every time -- the smaller quotient limits.",
+      "keyPoints": [
+        "Ionic: cation then anion-ide, Roman numeral for variable-charge metals; molecular: Greek prefixes; acids: hydro--ic, -ate to -ic, -ite to -ous.",
+        "Balance with coefficients only; subscripts define the substance.",
+        "Stoichiometry is always grams A to mol A to mol B to grams B.",
+        "Limiting reagent = smallest (moles / coefficient) quotient, not smallest mass.",
+        "Percent yield = (actual / theoretical) x 100, and it is almost never 100% in real lab."
+      ],
+      "checks": [
+        {
+          "q": "What is the correct name for FeSO4?",
+          "choices": [
+            "iron(II) sulfate",
+            "iron(III) sulfate",
+            "iron(II) sulfite",
+            "monoiron sulfate"
+          ],
+          "answer": 0,
+          "why": "Sulfate is SO4 2-, so iron must be 2+ for neutrality: iron(II) sulfate. Iron(III) sulfate would be Fe2(SO4)3, and sulfite is SO3 2-. Greek prefixes are not used for ionic compounds."
+        },
+        {
+          "q": "Balance: C3H8 + O2 -> CO2 + H2O. What is the coefficient on O2?",
+          "choices": [
+            "3",
+            "4",
+            "5",
+            "7"
+          ],
+          "answer": 2,
+          "why": "3 CO2 and 4 H2O give 6 + 4 = 10 oxygen atoms on the right, so 5 O2 supplies them. Choosing 3 or 4 leaves oxygen unbalanced."
+        },
+        {
+          "q": "0.40 mol of A reacts with 0.90 mol of B in A + 2 B -> C. Which is limiting?",
+          "choices": [
+            "A, because there is less of it",
+            "B, because 0.90/2 = 0.45 is larger than 0.40/1",
+            "A, because 0.40/1 = 0.40 is smaller than 0.90/2 = 0.45",
+            "Neither; they are stoichiometrically equal"
+          ],
+          "answer": 2,
+          "why": "Divide moles by coefficient: A gives 0.40, B gives 0.45. The smaller quotient limits, so A limits. Choice 0 reaches the right answer by the wrong reasoning, which fails whenever coefficients differ."
+        }
+      ]
+    },
+    {
+      "id": "sci-chem1-l04",
+      "title": "Reactions in aqueous solution, molarity, and titration",
+      "minutes": 9,
+      "body": "Almost all physiology happens in water, so the course spends a chapter on what dissolved substances do.\n\n**Strong electrolytes** dissociate completely (`NaCl`, `HCl`, `NaOH`). **Weak electrolytes** only partly dissociate (acetic acid, ammonia). **Nonelectrolytes** dissolve without ions (glucose, urea). This matters clinically: `1 mol` of `NaCl` gives `2 mol` of particles in plasma, while `1 mol` of glucose gives `1`.\n\n### Three reaction types\n\n**Precipitation:** two soluble salts trade partners and an insoluble product drops out. You need solubility rules: nitrates and Group 1 and ammonium salts are always soluble; most chlorides are soluble except `Ag+`, `Pb2+`, `Hg2 2+`; most sulfates are soluble except `Ba2+`, `Pb2+`, `Ca2+` (slightly); most carbonates, phosphates, and hydroxides are insoluble except with Group 1 and ammonium. Write the **net ionic equation** by cancelling spectator ions: for `AgNO3 + NaCl`, it is `Ag+ + Cl- -> AgCl(s)`.\n\n**Acid-base (neutralization):** acid plus base gives salt plus water; the net ionic form for strong acid and strong base is always `H+ + OH- -> H2O`.\n\n**Oxidation-reduction (redox):** electrons move. Track **oxidation numbers**: free elements are 0, monatomic ions equal their charge, oxygen is usually `-2`, hydrogen is `+1` with nonmetals, and the numbers sum to the species charge. **OIL RIG** -- oxidation is loss of electrons, reduction is gain. The species oxidized is the reducing agent.\n\n### Concentration\n\n**Molarity** is `M = mol solute / L solution`. Dilution uses `M1V1 = M2V2` because moles of solute do not change when you add water.\n\n### Worked example: normal saline\n\n0.9% NaCl means `0.9 g` per `100 mL`. What is its molarity?\n\n1. Scale to a liter: `0.9 g / 100 mL = 9.0 g/L`.\n2. Molar mass `NaCl`: `22.99 + 35.45 = 58.44 g/mol`.\n3. Molarity: `9.0 / 58.44 = 0.154 mol/L = 154 mM`.\n4. Particles: `NaCl` fully dissociates, so `154 mM Na+` plus `154 mM Cl-` = `308 mOsm/L`, essentially isotonic with plasma at about `290 mOsm/L`.\n\n### Worked example: a dilution\n\nHow much `2.0 M` stock do you need to make `250 mL` of `0.15 M`?\n\n1. `M1V1 = M2V2`, so `V1 = (0.15 M x 250 mL) / 2.0 M`.\n2. `V1 = 37.5 / 2.0 = 19 mL` of stock.\n3. Add solvent to a final volume of `250 mL` -- not `250 mL` of added water.\n\n### Titration\n\nA titration adds a known concentration until the reaction is exactly complete at the **equivalence point**, signalled by an indicator's color change at the **endpoint**. The math is mole-ratio stoichiometry.\n\n1. `25.00 mL` of unknown `HCl` needs `32.10 mL` of `0.1050 M NaOH`.\n2. Moles `NaOH`: `0.03210 L x 0.1050 M = 3.371 x 10^-3 mol`.\n3. Ratio is 1:1, so moles `HCl` = `3.371 x 10^-3 mol`.\n4. `M = 3.371 x 10^-3 mol / 0.02500 L = 0.1348 M`.\n\n> **Key:** Titration is how the lab measures things it cannot see. Serum chloride is still measured by a titration-like coulometric method, and the same mole-ratio logic underlies it.",
+      "keyPoints": [
+        "Strong electrolytes dissociate fully; NaCl gives 2 particles per formula unit, glucose gives 1.",
+        "Net ionic equations drop spectator ions and show only what actually reacts.",
+        "Oxidation is electron loss, reduction is gain; assign oxidation numbers to spot which is which.",
+        "M = mol/L; dilution obeys M1V1 = M2V2 because solute moles are conserved.",
+        "0.9% NaCl = 154 mM = about 308 mOsm/L, which is why it is called isotonic."
+      ],
+      "checks": [
+        {
+          "q": "What is the net ionic equation when aqueous BaCl2 meets aqueous Na2SO4?",
+          "choices": [
+            "Ba2+ + SO4 2- -> BaSO4(s)",
+            "Na+ + Cl- -> NaCl(s)",
+            "BaCl2 + Na2SO4 -> BaSO4 + 2 NaCl",
+            "No reaction occurs"
+          ],
+          "answer": 0,
+          "why": "Barium sulfate is one of the insoluble sulfates, so it precipitates; Na+ and Cl- are spectators. NaCl is soluble and never precipitates here, and the molecular equation is not the net ionic form."
+        },
+        {
+          "q": "How many mL of 5.0 M stock make 500. mL of 0.20 M solution?",
+          "choices": [
+            "10. mL",
+            "20. mL",
+            "50. mL",
+            "125 mL"
+          ],
+          "answer": 1,
+          "why": "V1 = (0.20 x 500.)/5.0 = 20. mL. Inverting the ratio gives 12500 mL, and forgetting to convert gives 10 mL."
+        },
+        {
+          "q": "In Zn + Cu2+ -> Zn2+ + Cu, which statement is correct?",
+          "choices": [
+            "Zn is reduced and is the oxidizing agent",
+            "Cu2+ is oxidized and is the reducing agent",
+            "Zn is oxidized and is the reducing agent",
+            "No electrons are transferred"
+          ],
+          "answer": 2,
+          "why": "Zn goes from 0 to +2, losing electrons, so it is oxidized and therefore serves as the reducing agent. Cu2+ goes from +2 to 0, gaining electrons, so it is reduced and is the oxidizing agent."
+        }
+      ]
+    },
+    {
+      "id": "sci-chem1-l05",
+      "title": "Gases: the gas laws, ideal gas equation, and partial pressures",
+      "minutes": 8,
+      "body": "A gas is mostly empty space, so its volume responds to pressure and temperature in ways liquids do not. Pressure is force per area: `1 atm = 760 mmHg = 760 torr = 101.325 kPa`. Clinical gas pressures are almost always in `mmHg`.\n\n### The simple laws\n\n**Boyle:** at fixed temperature, `P1V1 = P2V2` -- pressure and volume are inversely related. This is the mechanics of breathing. The diaphragm drops, thoracic volume rises, intrathoracic pressure falls below atmospheric, and air flows in.\n\n**Charles:** at fixed pressure, `V1/T1 = V2/T2`, with `T` in kelvin, always.\n\n**Gay-Lussac:** at fixed volume, `P1/T1 = P2/T2`. This is why an oxygen cylinder left in a hot ambulance reads a higher pressure.\n\n**Avogadro:** equal volumes of gases at the same temperature and pressure hold equal numbers of molecules. At STP (`0 C`, `1 atm`), one mole occupies `22.4 L`.\n\n### The ideal gas law\n\n`PV = nRT`, with `R = 0.08206 L-atm/(mol-K)` or `62.36 L-mmHg/(mol-K)`. Combine the simple laws as `P1V1/T1 = P2V2/T2` when moles are fixed.\n\n### Worked example: gas in a cylinder\n\nHow many moles of `O2` are in a `2.0 L` cylinder at `2000 psi` (`136 atm`) and `22 C`?\n\n1. Convert temperature: `22 + 273.15 = 295 K`.\n2. Rearrange: `n = PV / RT`.\n3. Substitute: `n = (136 atm x 2.0 L) / (0.08206 x 295)`.\n4. Denominator: `0.08206 x 295 = 24.2`.\n5. `n = 272 / 24.2 = 11.2 mol` of `O2`.\n6. Mass: `11.2 x 32.00 = 360 g`, and at 1 atm that gas would fill about `270 L`.\n\n### Dalton's law of partial pressures\n\nIn a mixture, each gas contributes independently: `P_total = P1 + P2 + ...`, and each partial pressure is the mole fraction times total pressure.\n\n### Worked example: alveolar oxygen\n\nWhy do we say room air `PO2` is about `160 mmHg` but alveolar is lower?\n\n1. Dry air is `20.9%` oxygen, so at sea level `PO2 = 0.209 x 760 = 159 mmHg`.\n2. Inspired air is humidified in the airway; water vapor at `37 C` exerts `47 mmHg`.\n3. Available dry pressure: `760 - 47 = 713 mmHg`.\n4. Inspired `PO2 = 0.209 x 713 = 149 mmHg`.\n5. Subtract for carbon dioxide using the alveolar gas equation, `PAO2 = PIO2 - PaCO2/0.8`: with `PaCO2 = 40`, that is `149 - 50 = 99 mmHg`.\n6. That roughly `100 mmHg` alveolar `PO2` is the driving pressure for diffusion into blood.\n\n> **Key:** Every clinical oxygenation number traces back to Dalton's law. Raising `FiO2` from `0.21` to `1.00` on a nonrebreather raises step 1 from `159` to `760 mmHg`.\n\n### Kinetic molecular theory\n\nThe model behind the laws: gas particles are point masses in constant random motion, collisions are elastic, and average kinetic energy depends only on temperature. Average speed goes as the square root of `T/M`, so lighter molecules move faster -- **Graham's law** of effusion, `rate1/rate2 = sqrt(M2/M1)`. Real gases deviate at high pressure and low temperature, where molecular volume and attractions stop being negligible; the van der Waals equation corrects for both.\n\n> **Trap:** Kelvin, never Celsius, in any gas law. Using `22` instead of `295` is off by more than a factor of ten.",
+      "keyPoints": [
+        "1 atm = 760 mmHg = 101.325 kPa; clinical gases use mmHg.",
+        "PV = nRT with R = 0.08206 L-atm/(mol-K); use kelvin in every gas law.",
+        "Boyle's inverse P-V relationship is the mechanism of ventilation.",
+        "Dalton: partial pressure = mole fraction x total pressure; humidified inspired PO2 = 0.209 x (760 - 47) = 149 mmHg.",
+        "Lighter gases effuse faster: rate1/rate2 = sqrt(M2/M1)."
+      ],
+      "checks": [
+        {
+          "q": "A 4.0 L gas sample at 1.0 atm is compressed to 1.0 L at constant temperature. What is the new pressure?",
+          "choices": [
+            "0.25 atm",
+            "1.0 atm",
+            "4.0 atm",
+            "16 atm"
+          ],
+          "answer": 2,
+          "why": "Boyle's law: P2 = P1V1/V2 = (1.0 x 4.0)/1.0 = 4.0 atm. Volume quartered means pressure quadruples; 0.25 atm inverts the relationship."
+        },
+        {
+          "q": "A patient on 40% oxygen at sea level has an inspired PO2 of approximately:",
+          "choices": [
+            "285 mmHg",
+            "304 mmHg",
+            "160 mmHg",
+            "40 mmHg"
+          ],
+          "answer": 0,
+          "why": "Subtract water vapor first: 0.40 x (760 - 47) = 0.40 x 713 = 285 mmHg. Using 760 without the 47 mmHg correction gives the tempting 304 mmHg."
+        },
+        {
+          "q": "Why must temperature be in kelvin for Charles's law?",
+          "choices": [
+            "Kelvin degrees are larger, so errors shrink",
+            "The law is a direct proportion, which requires a scale with a true zero",
+            "Celsius cannot be negative in a gas",
+            "Only kelvin works with the constant R"
+          ],
+          "answer": 1,
+          "why": "V/T = constant is a proportionality; it only holds on an absolute scale where 0 means zero thermal energy. Celsius zero is arbitrary, so halving Celsius does not halve volume."
+        }
+      ]
+    },
+    {
+      "id": "sci-chem1-l06",
+      "title": "Thermochemistry: enthalpy, calorimetry, Hess's law",
+      "minutes": 8,
+      "body": "Thermochemistry asks where the energy goes. **Energy** is capacity to do work; **heat** (`q`) is energy moving because of a temperature difference. The first law says energy is conserved: `dE = q + w`.\n\nDefine the **system** (the reaction) and the **surroundings** (everything else). **Exothermic** means heat flows out of the system, and `q` is negative -- the beaker feels warm. **Endothermic** means heat flows in, `q` is positive, and the beaker feels cold. A chemical cold pack dissolving ammonium nitrate is endothermic; that is why it works.\n\n### Enthalpy\n\nAt constant pressure -- the condition of every open beaker and every cell in the body -- heat flow equals the change in **enthalpy**, `dH`. Negative `dH` is exothermic. Enthalpy is a **state function**: it depends only on start and end states, not the path taken. That single fact is what makes Hess's law work.\n\n### Calorimetry\n\nHeat absorbed by a substance is `q = m x c x dT`, where `c` is **specific heat**. Water's specific heat is `4.184 J/(g-C)`, unusually high, which is why the human body (about 60% water) resists temperature swings and why a fever of `+2 C` represents a real energy load.\n\n### Worked example: coffee-cup calorimetry\n\n`50.0 mL` of `1.00 M HCl` is mixed with `50.0 mL` of `1.00 M NaOH`, both at `21.0 C`. The temperature rises to `27.8 C`. Find `dH` per mole.\n\n1. Total mass: `100.0 mL x 1.00 g/mL = 100.0 g`.\n2. Temperature change: `27.8 - 21.0 = 6.8 C`.\n3. Heat absorbed by solution: `q = 100.0 x 4.184 x 6.8 = 2845 J = 2.845 kJ`.\n4. The reaction released it, so `q_rxn = -2.845 kJ`.\n5. Moles reacting: `0.0500 L x 1.00 M = 0.0500 mol`.\n6. `dH = -2.845 kJ / 0.0500 mol = -56.9 kJ/mol`, close to the accepted `-55.8 kJ/mol` for strong acid-base neutralization.\n\n> **Trap:** Use the mass of the whole solution, not the mass of solute, and never forget the sign flip between heat gained by the water and heat released by the reaction.\n\n### Hess's law and formation enthalpies\n\nIf a reaction can be written as a sum of steps, its `dH` is the sum of the steps' values. Reverse a step and flip the sign; multiply a step and multiply the value. In practice you use standard enthalpies of formation:\n\n`dH_rxn = sum(dH_f products) - sum(dH_f reactants)`\n\nElements in their standard states have `dH_f = 0`.\n\n### Worked example: burning glucose\n\nUsing `dH_f` values of `C6H12O6(s) = -1273 kJ/mol`, `CO2(g) = -393.5`, `H2O(l) = -285.8`:\n\n1. Reaction: `C6H12O6 + 6 O2 -> 6 CO2 + 6 H2O`.\n2. Products: `6(-393.5) + 6(-285.8) = -2361 + -1714.8 = -4075.8 kJ`.\n3. Reactants: `-1273 + 6(0) = -1273 kJ`.\n4. `dH = -4075.8 - (-1273) = -2803 kJ/mol`.\n5. Per gram: `-2803 / 180.16 = -15.6 kJ/g`, which is `3.7 kcal/g` -- the familiar 4 calories per gram of carbohydrate on a nutrition label.\n\n> **On shift:** Nutritional Calories are kilocalories. `1 kcal = 4.184 kJ`. A 2000 Calorie diet is `8368 kJ` per day, and basal metabolism dissipates nearly all of it as heat.",
+      "keyPoints": [
+        "Exothermic: heat leaves the system, dH is negative. Endothermic: dH is positive, container feels cold.",
+        "q = m x c x dT; water's specific heat is 4.184 J/(g-C).",
+        "In coffee-cup calorimetry, use the whole solution mass and flip the sign to get q_rxn.",
+        "Enthalpy is a state function, so dH_rxn = sum(dH_f products) - sum(dH_f reactants), with elements at 0.",
+        "Glucose combustion is -2803 kJ/mol, about 3.7 kcal/g, matching the 4 kcal/g nutrition figure."
+      ],
+      "checks": [
+        {
+          "q": "How much heat is needed to raise 250. g of water from 20.0 C to 37.0 C?",
+          "choices": [
+            "4.25 kJ",
+            "17.8 kJ",
+            "38.7 kJ",
+            "1.78 kJ"
+          ],
+          "answer": 1,
+          "why": "q = 250. x 4.184 x 17.0 = 17,782 J = 17.8 kJ. Using dT = 37 instead of 17 gives 38.7 kJ, a common setup error."
+        },
+        {
+          "q": "An instant cold pack drops from 22 C to 4 C when squeezed. The dissolution is:",
+          "choices": [
+            "exothermic, dH negative",
+            "endothermic, dH positive",
+            "exothermic, dH positive",
+            "neither; no enthalpy change occurs"
+          ],
+          "answer": 1,
+          "why": "The pack absorbs heat from its surroundings, cooling them, which is endothermic and gives a positive dH. Exothermic processes warm the surroundings, and sign conventions rule out the mismatched pairs."
+        },
+        {
+          "q": "Given A -> B with dH = +40 kJ, what is dH for 2 B -> 2 A?",
+          "choices": [
+            "+40 kJ",
+            "-40 kJ",
+            "+80 kJ",
+            "-80 kJ"
+          ],
+          "answer": 3,
+          "why": "Reversing flips the sign to -40 kJ, and doubling the reaction doubles the magnitude to -80 kJ. Hess's law allows both operations, but you must apply them together."
+        }
+      ]
+    },
+    {
+      "id": "sci-chem1-l07",
+      "title": "Electronic structure: quantum numbers, orbitals, configurations",
+      "minutes": 8,
+      "body": "Electrons are not tiny planets. They are described by probability clouds, and the course arrives there through light.\n\n### Light and energy\n\nElectromagnetic radiation has wavelength (`lambda`) and frequency (`nu`) tied by `c = lambda x nu`, with `c = 3.00 x 10^8 m/s`. Energy comes in packets: `E = h x nu = hc/lambda`, with `h = 6.626 x 10^-34 J-s`. Shorter wavelength means higher energy, which is exactly why X-rays ionize tissue and radio waves do not.\n\nHeated hydrogen emits only specific colors, not a continuous rainbow, because electrons occupy discrete energy levels and emit the exact difference when they fall. Bohr's equation for hydrogen is `E = -2.18 x 10^-18 J x (1/n^2)`.\n\n### Worked example: the red hydrogen line\n\nAn electron drops from `n = 3` to `n = 2`.\n\n1. `E3 = -2.18 x 10^-18 / 9 = -2.42 x 10^-19 J`.\n2. `E2 = -2.18 x 10^-18 / 4 = -5.45 x 10^-19 J`.\n3. `dE = E2 - E3 = -5.45 x 10^-19 - (-2.42 x 10^-19) = -3.03 x 10^-19 J`; the photon carries `3.03 x 10^-19 J`.\n4. `lambda = hc/E = (6.626 x 10^-34 x 3.00 x 10^8) / 3.03 x 10^-19`.\n5. `lambda = 1.988 x 10^-25 / 3.03 x 10^-19 = 6.56 x 10^-7 m = 656 nm`, the red line you see in a gas discharge tube.\n\n### The four quantum numbers\n\nEach electron gets an address.\n\n- `n` (principal): `1, 2, 3...` -- shell and size.\n- `l` (angular momentum): `0` to `n-1`, giving shape. `l=0` is s, `1` is p, `2` is d, `3` is f.\n- `m_l` (magnetic): `-l` to `+l` -- orientation, and it sets how many orbitals per subshell (s has 1, p has 3, d has 5, f has 7).\n- `m_s` (spin): `+1/2` or `-1/2`.\n\nThe **Pauli exclusion principle** says no two electrons share all four, so each orbital holds at most 2 electrons with opposite spins.\n\n### Filling orbitals\n\n**Aufbau:** fill lowest energy first, in the order `1s 2s 2p 3s 3p 4s 3d 4p 5s 4d 5p 6s 4f 5d 6p`. **Hund's rule:** within a subshell, put one electron in each orbital before pairing, because paired electrons repel.\n\nWrite configurations with noble-gas shorthand: chlorine is `1s2 2s2 2p6 3s2 3p5`, or `[Ne] 3s2 3p5`. Iron is `[Ar] 4s2 3d6`. When a transition metal ionizes, it loses `4s` electrons first, so `Fe2+` is `[Ar] 3d6`, not `[Ar] 4s2 3d4`. Chromium and copper break the pattern (`[Ar] 4s1 3d5` and `[Ar] 4s1 3d10`) because half-filled and filled d subshells are extra stable.\n\n> **Key:** Valence electrons are the outermost `s` and `p` electrons, and their count is the group number for main-group elements. Everything about periodic trends and bonding follows from that count.\n\n> **On shift:** Unpaired electrons make an atom paramagnetic. Deoxyhemoglobin has unpaired electrons on its iron and oxyhemoglobin does not, and that difference in magnetic behavior is literally what functional MRI detects.",
+      "keyPoints": [
+        "E = hc/lambda: shorter wavelength carries more energy per photon.",
+        "Line spectra prove energy levels are quantized; the n=3 to n=2 hydrogen drop emits 656 nm red light.",
+        "Quantum numbers n, l, m_l, m_s; Pauli limits each orbital to 2 electrons of opposite spin.",
+        "Aufbau fills lowest first (4s before 3d), Hund's rule spreads before pairing, but transition metals ionize by losing 4s first.",
+        "Cr and Cu are exceptions: 4s1 3d5 and 4s1 3d10, driven by half-filled and filled d stability."
+      ],
+      "checks": [
+        {
+          "q": "How many orbitals are in the 3d subshell, and how many electrons can it hold?",
+          "choices": [
+            "3 orbitals, 6 electrons",
+            "5 orbitals, 10 electrons",
+            "7 orbitals, 14 electrons",
+            "1 orbital, 2 electrons"
+          ],
+          "answer": 1,
+          "why": "For d, l = 2, so m_l runs -2 to +2: five orbitals. Pauli allows 2 electrons each, so 10 total. Three orbitals and six electrons describes a p subshell."
+        },
+        {
+          "q": "What is the ground-state electron configuration of Fe2+ (Z = 26)?",
+          "choices": [
+            "[Ar] 4s2 3d4",
+            "[Ar] 3d6",
+            "[Ar] 4s2 3d6",
+            "[Ar] 3d8"
+          ],
+          "answer": 1,
+          "why": "Neutral Fe is [Ar] 4s2 3d6. Transition metals lose the outermost 4s electrons first when ionizing, leaving [Ar] 3d6. [Ar] 4s2 3d6 is neutral iron, not the 2+ ion."
+        },
+        {
+          "q": "Which photon carries the most energy?",
+          "choices": [
+            "radio, 1.0 m",
+            "infrared, 1000 nm",
+            "green light, 550 nm",
+            "X-ray, 0.10 nm"
+          ],
+          "answer": 3,
+          "why": "E = hc/lambda, so energy rises as wavelength falls. The 0.10 nm X-ray has the shortest wavelength and highest energy, which is why it ionizes tissue while radio waves do not."
+        }
+      ]
+    },
+    {
+      "id": "sci-chem1-l08",
+      "title": "The periodic table and periodic trends",
+      "minutes": 7,
+      "body": "The table is organized by electron configuration, so its patterns are predictions, not trivia. Columns (**groups**) share valence electron count and therefore share chemistry. Rows (**periods**) fill the same principal shell.\n\nKnow the families: Group 1 **alkali metals** (`Na+`, `K+`, violently reactive as metals), Group 2 **alkaline earth metals** (`Ca2+`, `Mg2+`), Group 17 **halogens** (`Cl-`, `F-`), Group 18 **noble gases** (full valence shell, inert). The staircase separates metals from nonmetals, with metalloids straddling it.\n\n### The force behind every trend\n\n**Effective nuclear charge** (`Z_eff`) is the net pull an outer electron feels: roughly `Z_eff = Z - (core electrons shielding it)`. Going left to right across a period, protons are added but the new electrons go into the *same* shell and shield each other poorly, so `Z_eff` rises. Going down a group, a whole new shell is added, so distance and shielding win.\n\n### The four trends\n\n**Atomic radius:** decreases left to right (higher `Z_eff` pulls the same shell inward), increases down a group (new shells). Sodium is much larger than chlorine. Cations shrink dramatically (`Na+` is about half the radius of `Na`) because a whole shell is gone; anions swell (`Cl-` is larger than `Cl`) because added electron-electron repulsion spreads the cloud.\n\n**Ionization energy:** energy to remove the outermost electron. Increases left to right and up a group -- opposite of radius. There is a huge jump when you break into a noble-gas core: `Mg` has `IE1 = 738 kJ/mol`, `IE2 = 1450`, but `IE3 = 7730`, which is why magnesium is `Mg2+` and never `Mg3+`.\n\n**Electron affinity:** energy released when an atom gains an electron; generally more negative to the right, most so for halogens.\n\n**Electronegativity:** pull on shared electrons in a bond. Increases up and to the right. Fluorine is `4.0`, oxygen `3.5`, nitrogen `3.0`, carbon `2.5`, hydrogen `2.1`, sodium `0.9`. This single scale predicts bond polarity, which predicts molecular polarity, which predicts solubility.\n\n### Worked example: ranking\n\nRank `Mg`, `Al`, `Ca`, `S` by atomic radius, largest first.\n\n1. Locate: `Mg` and `Al` are period 3, `S` is period 3 further right, `Ca` is period 4 Group 2.\n2. Down a group beats across a period, so `Ca` (period 4) is largest.\n3. Within period 3, radius falls left to right: `Mg` (Group 2), then `Al` (Group 13), then `S` (Group 16).\n4. Final order: `Ca > Mg > Al > S`.\n5. Predicted ionization energy runs the opposite way: `S > Al > Mg > Ca`.\n\n> **Trap:** Periods and groups pull in opposite directions. When a question mixes both, settle the group difference first -- adding a shell almost always outweighs moving a few columns.\n\n> **On shift:** Group behavior is why `K+` and `Na+` are handled by tightly regulated but distinct transporters, and why lithium -- an alkali metal like sodium -- can be reabsorbed by the same proximal tubule pathway as sodium. Volume depletion drives sodium reabsorption up and carries lithium with it, which is how a dehydrated patient on lithium drifts into toxicity.",
+      "keyPoints": [
+        "Groups share valence electron count and therefore share chemistry.",
+        "Z_eff rises left to right (same shell, more protons) and falls in effect down a group (new shell, more shielding).",
+        "Radius: decreases rightward, increases downward. Ionization energy and electronegativity do the opposite.",
+        "A massive jump in successive ionization energies marks breaking into the noble-gas core, fixing common ion charges.",
+        "Electronegativity: F 4.0, O 3.5, N 3.0, C 2.5, H 2.1, Na 0.9."
+      ],
+      "checks": [
+        {
+          "q": "Which atom has the largest atomic radius?",
+          "choices": [
+            "F",
+            "Cl",
+            "Br",
+            "I"
+          ],
+          "answer": 3,
+          "why": "All four are halogens, so only the group trend applies: radius increases down a group as shells are added. Iodine is lowest and therefore largest; fluorine is the smallest."
+        },
+        {
+          "q": "Magnesium's ionization energies are 738, 1450, and 7730 kJ/mol. What does the jump at IE3 tell you?",
+          "choices": [
+            "Magnesium prefers a 3+ charge",
+            "The third electron comes from the stable neon core",
+            "Magnesium is a nonmetal",
+            "The measurement is an experimental error"
+          ],
+          "answer": 1,
+          "why": "Removing two 3s electrons is comparatively easy; the third electron must come out of the filled [Ne] core, which costs over five times as much. That is exactly why magnesium exists as Mg2+."
+        },
+        {
+          "q": "Which is larger, Cl or Cl-, and why?",
+          "choices": [
+            "Cl, because it has fewer electrons repelling",
+            "Cl-, because added electron-electron repulsion expands the cloud",
+            "They are identical; charge does not affect size",
+            "Cl, because anions always shrink"
+          ],
+          "answer": 1,
+          "why": "Adding an electron does not add protons, so the same nuclear charge now holds more electrons that repel each other, expanding the radius. Cations shrink for the mirror-image reason."
+        }
+      ]
+    },
+    {
+      "id": "sci-chem1-l09",
+      "title": "Bonding: ionic, covalent, Lewis structures, formal charge, resonance",
+      "minutes": 9,
+      "body": "Atoms bond to reach a noble-gas valence count -- eight electrons, the **octet rule** (two for hydrogen and helium).\n\n**Ionic bonds** form when electronegativity difference is large (roughly `2.0` or more): a metal hands electrons to a nonmetal and the resulting ions attract. Ionic solids have high melting points and conduct when molten or dissolved. **Lattice energy** -- the energy holding the crystal together -- rises with charge and falls with size, so `MgO` (2+ and 2-) melts at `2852 C` while `NaCl` melts at `801 C`.\n\n**Covalent bonds** share electrons. A difference under about `0.4` is **nonpolar covalent** (`C-H` at `0.4`); between `0.4` and `2.0` is **polar covalent** (`O-H` at `1.4`), with a partial negative charge on the more electronegative atom.\n\n### Drawing Lewis structures\n\n1. Count all valence electrons; add one per negative charge, subtract one per positive.\n2. Put the least electronegative atom in the center (never hydrogen).\n3. Connect with single bonds.\n4. Complete octets on the outer atoms.\n5. Put leftovers on the central atom.\n6. If the center is short, pull lone pairs from neighbors into double or triple bonds.\n\n### Worked example: the carbonate ion\n\nDraw `CO3 2-`.\n\n1. Valence electrons: `C` has 4, each `O` has 6 for `18`, plus `2` for the charge = `24`.\n2. Carbon is central with three oxygens; three single bonds use `6`, leaving `18`.\n3. Complete octets on the three oxygens: `3 x 6 = 18`, using all of them.\n4. Carbon now has only `6` electrons, so form one `C=O` double bond from an oxygen lone pair.\n5. Check the total is still `24` and every atom has an octet.\n\n### Formal charge\n\n`Formal charge = valence electrons - lone pair electrons - (1/2 bonding electrons)`. The best structure minimizes formal charges and puts any negative formal charge on the most electronegative atom. In carbonate: carbon is `4 - 0 - 4 = 0`; the double-bonded oxygen is `6 - 4 - 2 = 0`; each single-bonded oxygen is `6 - 6 - 1 = -1`. Sum is `-2`, matching the ion charge.\n\n### Resonance\n\nThe double bond in carbonate could sit on any of the three oxygens, so no single drawing is correct. The real ion is an average -- a **resonance hybrid** -- with three identical bonds of order `1.33` and charge spread evenly. Resonance delocalization is stabilizing, and it is why bicarbonate and carbonate are such durable species in blood.\n\n> **Key:** Resonance structures are not the molecule flickering between forms. They are separate drawings of one unchanging averaged structure, which is why all three carbonate bond lengths are measurably equal.\n\n### Octet exceptions\n\nAtoms with fewer than an octet (`BF3`, boron with 6), odd-electron radicals (`NO`, `NO2`), and expanded octets for period 3 and beyond, which have empty d orbitals available (`PCl5`, `SF6`).\n\n> **On shift:** Nitric oxide (`NO`) has an odd electron count, which makes it a radical, which makes it reactive and short-lived -- and that instability is precisely why it works as a local vasodilator signal and why nitroglycerin relieves angina within minutes.",
+      "keyPoints": [
+        "Electronegativity difference sorts bonds: under 0.4 nonpolar covalent, 0.4-2.0 polar covalent, above about 2.0 ionic.",
+        "Lattice energy rises with ion charge and falls with size: MgO melts at 2852 C, NaCl at 801 C.",
+        "Lewis steps: count valence electrons, central least-electronegative atom, octets outward, then multiple bonds.",
+        "Formal charge = valence - lone pairs - half of bonding electrons; the best structure minimizes it.",
+        "Resonance is one averaged hybrid, not flickering structures; carbonate's three bonds are identical at order 1.33."
+      ],
+      "checks": [
+        {
+          "q": "How many valence electrons must you count when drawing NO3-?",
+          "choices": [
+            "22",
+            "23",
+            "24",
+            "25"
+          ],
+          "answer": 2,
+          "why": "N contributes 5, each of three O contributes 6 for 18, and the negative charge adds 1: 5 + 18 + 1 = 24. Forgetting the charge gives 23."
+        },
+        {
+          "q": "In an O-H bond (electronegativity 3.5 and 2.1), which statement is true?",
+          "choices": [
+            "It is nonpolar covalent",
+            "It is ionic",
+            "Oxygen carries a partial negative charge",
+            "Hydrogen carries a partial negative charge"
+          ],
+          "answer": 2,
+          "why": "The difference of 1.4 falls in the polar covalent range, and the more electronegative atom, oxygen, holds the shared electrons more closely and becomes partially negative."
+        },
+        {
+          "q": "All three C-O bonds in carbonate are measured to be the same length. This is evidence of:",
+          "choices": [
+            "an expanded octet on carbon",
+            "resonance delocalization",
+            "ionic bonding within the ion",
+            "a formal charge error"
+          ],
+          "answer": 1,
+          "why": "A single Lewis drawing predicts one short double bond and two longer single bonds. Equal lengths mean the real structure is the averaged resonance hybrid, with bond order 1.33 throughout."
+        }
+      ]
+    },
+    {
+      "id": "sci-chem1-l10",
+      "title": "Molecular geometry, polarity, and intermolecular forces",
+      "minutes": 8,
+      "body": "Shape determines polarity, polarity determines how molecules stick to each other, and that determines boiling point, solubility, and whether a drug crosses a membrane.\n\n### VSEPR\n\n**Valence shell electron pair repulsion** says electron groups around a central atom spread as far apart as possible. An electron group is any single bond, double bond, triple bond, or lone pair. Count groups to get **electron geometry**; then ignore lone pairs to describe **molecular geometry**.\n\n| Groups | Electron geometry | Lone pairs | Molecular shape | Angle |\n|---|---|---|---|---|\n| 2 | linear | 0 | linear | 180 |\n| 3 | trigonal planar | 0 | trigonal planar | 120 |\n| 3 | trigonal planar | 1 | bent | about 118 |\n| 4 | tetrahedral | 0 | tetrahedral | 109.5 |\n| 4 | tetrahedral | 1 | trigonal pyramidal | about 107 |\n| 4 | tetrahedral | 2 | bent | about 104.5 |\n| 5 | trigonal bipyramidal | 0 | trigonal bipyramidal | 120 and 90 |\n| 6 | octahedral | 0 | octahedral | 90 |\n\nLone pairs take more room than bonds, so each one squeezes the remaining angles down a couple of degrees. That is why methane is `109.5`, ammonia `107`, and water `104.5`.\n\n### Worked example: CO2 versus H2O\n\nBoth have two bonded oxygens or hydrogens and both contain polar bonds, yet one is nonpolar and one is famously polar.\n\n1. `CO2`: carbon has 2 electron groups (two double bonds) and no lone pairs, so it is **linear** at `180`.\n2. Each `C=O` dipole points outward with equal magnitude in opposite directions, so the vectors cancel. Net dipole is zero; `CO2` is nonpolar.\n3. `H2O`: oxygen has 4 electron groups (2 bonds, 2 lone pairs), so electron geometry is tetrahedral and molecular geometry is **bent** at `104.5`.\n4. The two `O-H` dipoles do not oppose each other, so they add to a net dipole of `1.85 D`.\n5. Conclusion: polar bonds plus asymmetric shape equals a polar molecule. Symmetry, not bond polarity, is the deciding factor.\n\n> **Trap:** A molecule with polar bonds can be nonpolar. Check the geometry before you answer -- `CO2`, `CCl4`, and `BF3` all cancel.\n\n### Intermolecular forces, weakest to strongest\n\n**London dispersion forces** exist in everything; they come from momentary electron-cloud fluctuations and get stronger with more electrons and more surface area. **Dipole-dipole** acts between permanent dipoles. **Hydrogen bonding** is a strong special case requiring H bonded directly to `N`, `O`, or `F`. **Ion-dipole** is strongest and is what dissolves `NaCl` in water.\n\nStronger intermolecular forces mean higher boiling point, higher viscosity, and higher surface tension. Water boils at `100 C` while `H2S`, a heavier molecule, boils at `-60 C`, entirely because of hydrogen bonding.\n\n**Like dissolves like:** polar solvents dissolve polar and ionic solutes; nonpolar dissolves nonpolar.\n\n> **On shift:** Drug design lives on this rule. A charged, highly polar drug stays in plasma and is excreted by the kidney; a lipophilic, nonpolar one crosses the blood-brain barrier and causes sedation. It is the same reason a first-generation antihistamine makes you sleepy and a second-generation one does not.",
+      "keyPoints": [
+        "Count electron groups (bonds of any order plus lone pairs) for electron geometry; ignore lone pairs for molecular shape.",
+        "Lone pairs compress angles: CH4 109.5, NH3 107, H2O 104.5.",
+        "Polar bonds plus symmetric shape can still be nonpolar -- CO2 is linear and cancels.",
+        "IMF strength: dispersion < dipole-dipole < hydrogen bonding < ion-dipole; stronger IMF means higher boiling point.",
+        "Like dissolves like, which is why polar drugs are renally cleared and lipophilic ones enter the brain."
+      ],
+      "checks": [
+        {
+          "q": "NH3 has three bonds and one lone pair on nitrogen. Its molecular geometry is:",
+          "choices": [
+            "tetrahedral",
+            "trigonal planar",
+            "trigonal pyramidal",
+            "bent"
+          ],
+          "answer": 2,
+          "why": "Four electron groups give tetrahedral electron geometry, but molecular geometry names only the atom positions. With one lone pair, that is trigonal pyramidal at about 107 degrees."
+        },
+        {
+          "q": "Why does water boil at 100 C while H2S boils at -60 C despite H2S being heavier?",
+          "choices": [
+            "Water has stronger dispersion forces",
+            "Water forms hydrogen bonds; sulfur is not electronegative enough for them",
+            "H2S is ionic",
+            "Water is linear and H2S is bent"
+          ],
+          "answer": 1,
+          "why": "Hydrogen bonding requires H attached to N, O, or F. Water has an extensive hydrogen bond network that must be broken to boil; H2S only has dipole-dipole and dispersion. Both molecules are bent."
+        },
+        {
+          "q": "CCl4 contains four polar C-Cl bonds but has no net dipole. Why?",
+          "choices": [
+            "Chlorine is less electronegative than carbon",
+            "The molecule is tetrahedral, so the four dipoles cancel",
+            "The bonds are actually ionic",
+            "Dispersion forces neutralize the dipoles"
+          ],
+          "answer": 1,
+          "why": "Symmetric tetrahedral geometry points four equal bond dipoles so that their vector sum is zero. Chlorine is more electronegative than carbon, so the individual bonds really are polar."
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "sci-chem1-c001",
+      "front": "What are the three rules for counting significant figures in zeros?",
+      "back": "Captive zeros between nonzeros always count. Leading zeros never count. Trailing zeros count only when a decimal point is present.",
+      "lesson": "sci-chem1-l01"
+    },
+    {
+      "id": "sci-chem1-c002",
+      "front": "How do sig figs carry through multiplication versus addition?",
+      "back": "Multiplication and division keep the fewest significant figures of any factor. Addition and subtraction keep the fewest decimal places. Round only at the very end.",
+      "lesson": "sci-chem1-l01"
+    },
+    {
+      "id": "sci-chem1-c003",
+      "front": "Why do exact numbers not limit significant figures?",
+      "back": "Counted objects and defined conversions (1 kg = 1000 g) have no measurement uncertainty, so they carry infinite sig figs and never restrict the answer.",
+      "lesson": "sci-chem1-l01"
+    },
+    {
+      "id": "sci-chem1-c004",
+      "front": "What is the difference between accuracy and precision?",
+      "back": "Accuracy is closeness to the true value; precision is repeatability. A miscalibrated device can be highly precise and consistently wrong.",
+      "lesson": "sci-chem1-l01"
+    },
+    {
+      "id": "sci-chem1-c005",
+      "front": "How do you convert a patient's weight in pounds to kilograms?",
+      "back": "Divide by 2.205 lb/kg. 176 lb / 2.205 = 79.8 kg. Written as a fraction, lb cancels and kg survives.",
+      "lesson": "sci-chem1-l01"
+    },
+    {
+      "id": "sci-chem1-c006",
+      "front": "What is the formula for density, and what is normal urine specific gravity?",
+      "back": "d = m/V, usually g/mL. Urine specific gravity is urine density relative to water, normally 1.005 to 1.030.",
+      "lesson": "sci-chem1-l01"
+    },
+    {
+      "id": "sci-chem1-c007",
+      "front": "How do you convert 103.0 F to Celsius and kelvin?",
+      "back": "C = (F - 32) x 5/9 = (103.0 - 32) x 5/9 = 39.4 C. K = C + 273.15 = 312.6 K.",
+      "lesson": "sci-chem1-l01"
+    },
+    {
+      "id": "sci-chem1-c008",
+      "front": "What distinguishes isotopes from ions?",
+      "back": "Isotopes of an element differ in neutron count, changing mass but not charge. Ions differ in electron count, changing charge but not element identity.",
+      "lesson": "sci-chem1-l02"
+    },
+    {
+      "id": "sci-chem1-c009",
+      "front": "Why is chlorine's atomic mass 35.45 amu when no chlorine atom weighs that?",
+      "back": "It is an abundance-weighted average: 0.7577 x 34.969 + 0.2423 x 36.966 = 35.45 amu. No single atom has that mass.",
+      "lesson": "sci-chem1-l02"
+    },
+    {
+      "id": "sci-chem1-c010",
+      "front": "What is Avogadro's number and what does the mole let you do?",
+      "back": "6.022 x 10^23 particles per mole. It converts a mass you can weigh into the particle count that reactions depend on, using molar mass in g/mol.",
+      "lesson": "sci-chem1-l02"
+    },
+    {
+      "id": "sci-chem1-c011",
+      "front": "Calculate the molar mass of glucose, C6H12O6.",
+      "back": "6(12.011) + 12(1.008) + 6(15.999) = 72.066 + 12.096 + 95.994 = 180.16 g/mol.",
+      "lesson": "sci-chem1-l02"
+    },
+    {
+      "id": "sci-chem1-c012",
+      "front": "How many moles of glucose are in a 25 g dose of D50?",
+      "back": "25 g / 180.16 g/mol = 0.14 mol, which is about 8.4 x 10^22 molecules.",
+      "lesson": "sci-chem1-l02"
+    },
+    {
+      "id": "sci-chem1-c013",
+      "front": "How do you get a molecular formula from an empirical formula?",
+      "back": "Divide the molecular molar mass by the empirical formula mass to get a whole-number multiplier. Glucose: 180.16 / 30.03 = 6, so CH2O becomes C6H12O6.",
+      "lesson": "sci-chem1-l02"
+    },
+    {
+      "id": "sci-chem1-c014",
+      "front": "How do milliequivalents relate to millimoles?",
+      "back": "mEq = mmol x absolute charge. For Na+ (1+), 1 mmol = 1 mEq. For Ca2+ (2+), 1 mmol = 2 mEq.",
+      "lesson": "sci-chem1-l02"
+    },
+    {
+      "id": "sci-chem1-c015",
+      "front": "How are ionic compounds with variable-charge metals named?",
+      "back": "Cation name, Roman numeral for its charge, then the anion with -ide or the polyatomic name: FeCl3 is iron(III) chloride, FeSO4 is iron(II) sulfate.",
+      "lesson": "sci-chem1-l03"
+    },
+    {
+      "id": "sci-chem1-c016",
+      "front": "Name the seven polyatomic ions you cannot function without.",
+      "back": "Nitrate NO3-, sulfate SO4 2-, phosphate PO4 3-, carbonate CO3 2-, bicarbonate HCO3-, hydroxide OH-, ammonium NH4+.",
+      "lesson": "sci-chem1-l03"
+    },
+    {
+      "id": "sci-chem1-c017",
+      "front": "What is the difference between an -ate and an -ite polyatomic ion?",
+      "back": "The -ate form has one more oxygen than the -ite form at the same charge: sulfate SO4 2- versus sulfite SO3 2-, nitrate NO3- versus nitrite NO2-.",
+      "lesson": "sci-chem1-l03"
+    },
+    {
+      "id": "sci-chem1-c018",
+      "front": "How are acids named from their anions?",
+      "back": "No oxygen: hydro- plus -ic (HCl hydrochloric). From an -ate anion: -ic acid (H2SO4 sulfuric). From an -ite anion: -ous acid (HNO2 nitrous).",
+      "lesson": "sci-chem1-l03"
+    },
+    {
+      "id": "sci-chem1-c019",
+      "front": "Why can you only change coefficients when balancing an equation?",
+      "back": "Subscripts define the identity of the substance. Changing H2O to H2O2 balances oxygen but replaces water with hydrogen peroxide, a different compound.",
+      "lesson": "sci-chem1-l03"
+    },
+    {
+      "id": "sci-chem1-c020",
+      "front": "Write the balanced equation for complete glucose combustion.",
+      "back": "C6H12O6 + 6 O2 -> 6 CO2 + 6 H2O. The 1:1 CO2-to-O2 ratio gives carbohydrate a respiratory quotient of 1.0.",
+      "lesson": "sci-chem1-l03"
+    },
+    {
+      "id": "sci-chem1-c021",
+      "front": "What are the three steps of every stoichiometry problem?",
+      "back": "Grams of A to moles of A (divide by molar mass), moles of A to moles of B (multiply by coefficient ratio), moles of B to grams of B (multiply by molar mass).",
+      "lesson": "sci-chem1-l03"
+    },
+    {
+      "id": "sci-chem1-c022",
+      "front": "How do you identify the limiting reagent?",
+      "back": "Convert each reactant to moles, divide each by its balanced coefficient, and take the smallest quotient. Smallest mass is not the test.",
+      "lesson": "sci-chem1-l03"
+    },
+    {
+      "id": "sci-chem1-c023",
+      "front": "How is percent yield calculated?",
+      "back": "(actual yield / theoretical yield) x 100. Recovering 9.20 g when theory predicts 12.2 g is 75.4%.",
+      "lesson": "sci-chem1-l03"
+    },
+    {
+      "id": "sci-chem1-c024",
+      "front": "What distinguishes strong, weak, and nonelectrolytes?",
+      "back": "Strong dissociate completely (NaCl, HCl, NaOH), weak only partly (acetic acid, ammonia), nonelectrolytes dissolve without forming ions (glucose, urea).",
+      "lesson": "sci-chem1-l04"
+    },
+    {
+      "id": "sci-chem1-c025",
+      "front": "Which common anions are usually insoluble?",
+      "back": "Carbonates, phosphates, and hydroxides, except with Group 1 metals and ammonium. Sulfates are soluble except with Ba2+, Pb2+, and partly Ca2+.",
+      "lesson": "sci-chem1-l04"
+    },
+    {
+      "id": "sci-chem1-c026",
+      "front": "What is a net ionic equation?",
+      "back": "The equation after cancelling spectator ions, showing only species that change. AgNO3 plus NaCl reduces to Ag+ + Cl- -> AgCl(s).",
+      "lesson": "sci-chem1-l04"
+    },
+    {
+      "id": "sci-chem1-c027",
+      "front": "What does OIL RIG stand for, and which species is the reducing agent?",
+      "back": "Oxidation Is Loss of electrons, Reduction Is Gain. The species that is oxidized donates electrons, so it is the reducing agent.",
+      "lesson": "sci-chem1-l04"
+    },
+    {
+      "id": "sci-chem1-c028",
+      "front": "Calculate the molarity of 0.9% normal saline.",
+      "back": "0.9 g per 100 mL is 9.0 g/L; divided by 58.44 g/mol gives 0.154 M, or 154 mM, which dissociates into about 308 mOsm/L.",
+      "lesson": "sci-chem1-l04"
+    },
+    {
+      "id": "sci-chem1-c029",
+      "front": "Why does M1V1 = M2V2 work for dilutions?",
+      "back": "Adding solvent does not change the number of solute moles, and moles equal M times V. Solve for the stock volume, then add solvent to the final volume.",
+      "lesson": "sci-chem1-l04"
+    },
+    {
+      "id": "sci-chem1-c030",
+      "front": "What is the difference between the equivalence point and the endpoint?",
+      "back": "The equivalence point is where moles of titrant exactly satisfy the mole ratio. The endpoint is where the indicator changes color, chosen to fall as close to it as possible.",
+      "lesson": "sci-chem1-l04"
+    },
+    {
+      "id": "sci-chem1-c031",
+      "front": "25.00 mL of HCl needs 32.10 mL of 0.1050 M NaOH. Find the HCl molarity.",
+      "back": "Moles NaOH = 0.03210 x 0.1050 = 3.371 x 10^-3. The ratio is 1:1, so M = 3.371 x 10^-3 / 0.02500 L = 0.1348 M.",
+      "lesson": "sci-chem1-l04"
+    },
+    {
+      "id": "sci-chem1-c032",
+      "front": "State Boyle's law and its clinical meaning.",
+      "back": "P1V1 = P2V2 at constant temperature. Diaphragm descent increases thoracic volume, dropping intrathoracic pressure below atmospheric so air flows in.",
+      "lesson": "sci-chem1-l05"
+    },
+    {
+      "id": "sci-chem1-c033",
+      "front": "Why does an oxygen cylinder read higher pressure in a hot vehicle?",
+      "back": "Gay-Lussac's law: at fixed volume, P1/T1 = P2/T2, so pressure rises directly with absolute temperature.",
+      "lesson": "sci-chem1-l05"
+    },
+    {
+      "id": "sci-chem1-c034",
+      "front": "State the ideal gas law and the value of R.",
+      "back": "PV = nRT, with R = 0.08206 L-atm/(mol-K) or 62.36 L-mmHg/(mol-K). Temperature must always be in kelvin.",
+      "lesson": "sci-chem1-l05"
+    },
+    {
+      "id": "sci-chem1-c035",
+      "front": "What volume does one mole of ideal gas occupy at STP?",
+      "back": "22.4 L at 0 C and 1 atm. This follows from Avogadro's law: equal volumes at the same T and P hold equal molecule counts.",
+      "lesson": "sci-chem1-l05"
+    },
+    {
+      "id": "sci-chem1-c036",
+      "front": "Calculate inspired PO2 at sea level on room air, accounting for humidification.",
+      "back": "Water vapor at 37 C exerts 47 mmHg, so 760 - 47 = 713. Then 0.209 x 713 = 149 mmHg.",
+      "lesson": "sci-chem1-l05"
+    },
+    {
+      "id": "sci-chem1-c037",
+      "front": "What is the alveolar gas equation and a typical PAO2?",
+      "back": "PAO2 = PIO2 - PaCO2/0.8. With PIO2 of 149 and PaCO2 of 40, PAO2 is about 99 mmHg, the driving pressure for diffusion into blood.",
+      "lesson": "sci-chem1-l05"
+    },
+    {
+      "id": "sci-chem1-c038",
+      "front": "State Graham's law of effusion.",
+      "back": "rate1/rate2 = sqrt(M2/M1). Lighter molecules move and effuse faster at the same temperature because average kinetic energy is equal.",
+      "lesson": "sci-chem1-l05"
+    },
+    {
+      "id": "sci-chem1-c039",
+      "front": "Under what conditions do real gases deviate most from ideal behavior?",
+      "back": "High pressure and low temperature, where molecular volume and intermolecular attractions stop being negligible. The van der Waals equation corrects for both.",
+      "lesson": "sci-chem1-l05"
+    },
+    {
+      "id": "sci-chem1-c040",
+      "front": "What is the sign convention for exothermic and endothermic processes?",
+      "back": "Exothermic releases heat to the surroundings and dH is negative. Endothermic absorbs heat, dH is positive, and the container feels cold.",
+      "lesson": "sci-chem1-l06"
+    },
+    {
+      "id": "sci-chem1-c041",
+      "front": "What is the calorimetry equation and water's specific heat?",
+      "back": "q = m x c x dT, with c for water equal to 4.184 J/(g-C). That high value is why a body of 60% water resists rapid temperature change.",
+      "lesson": "sci-chem1-l06"
+    },
+    {
+      "id": "sci-chem1-c042",
+      "front": "In coffee-cup calorimetry, whose mass do you use?",
+      "back": "The mass of the entire solution, not just the solute. Then flip the sign, because heat gained by the solution was released by the reaction.",
+      "lesson": "sci-chem1-l06"
+    },
+    {
+      "id": "sci-chem1-c043",
+      "front": "Why does Hess's law work?",
+      "back": "Enthalpy is a state function, depending only on initial and final states. Any path summing to the same overall reaction gives the same dH.",
+      "lesson": "sci-chem1-l06"
+    },
+    {
+      "id": "sci-chem1-c044",
+      "front": "How do you compute dH from formation enthalpies?",
+      "back": "dH_rxn = sum(dH_f products) - sum(dH_f reactants). Elements in their standard states have dH_f = 0.",
+      "lesson": "sci-chem1-l06"
+    },
+    {
+      "id": "sci-chem1-c045",
+      "front": "What is dH for burning one mole of glucose, and what is that per gram?",
+      "back": "About -2803 kJ/mol. Divided by 180.16 g/mol that is -15.6 kJ/g, or roughly 3.7 kcal/g, matching the 4 kcal/g on a nutrition label.",
+      "lesson": "sci-chem1-l06"
+    },
+    {
+      "id": "sci-chem1-c046",
+      "front": "How many joules are in a nutritional Calorie?",
+      "back": "A nutritional Calorie is a kilocalorie: 1 kcal = 4.184 kJ. A 2000 Calorie diet is 8368 kJ per day.",
+      "lesson": "sci-chem1-l06"
+    },
+    {
+      "id": "sci-chem1-c047",
+      "front": "Relate photon energy to wavelength.",
+      "back": "E = hc/lambda with h = 6.626 x 10^-34 J-s and c = 3.00 x 10^8 m/s. Shorter wavelength means higher energy, which is why X-rays ionize tissue.",
+      "lesson": "sci-chem1-l07"
+    },
+    {
+      "id": "sci-chem1-c048",
+      "front": "Why do excited hydrogen atoms emit discrete colors instead of a continuous spectrum?",
+      "back": "Electron energy levels are quantized, so a falling electron emits a photon of exactly the energy difference. The n=3 to n=2 drop gives 656 nm red light.",
+      "lesson": "sci-chem1-l07"
+    },
+    {
+      "id": "sci-chem1-c049",
+      "front": "List the four quantum numbers and what each specifies.",
+      "back": "n sets shell and size; l sets shape (0=s, 1=p, 2=d, 3=f); m_l sets orientation and orbital count; m_s is spin, +1/2 or -1/2.",
+      "lesson": "sci-chem1-l07"
+    },
+    {
+      "id": "sci-chem1-c050",
+      "front": "How many orbitals and electrons does each subshell type hold?",
+      "back": "s: 1 orbital, 2 electrons. p: 3 orbitals, 6. d: 5 orbitals, 10. f: 7 orbitals, 14. Pauli limits every orbital to 2 opposite spins.",
+      "lesson": "sci-chem1-l07"
+    },
+    {
+      "id": "sci-chem1-c051",
+      "front": "What do the Aufbau principle and Hund's rule each say?",
+      "back": "Aufbau fills lowest-energy orbitals first (4s before 3d). Hund's rule places one electron in each orbital of a subshell before any pairing, because paired electrons repel.",
+      "lesson": "sci-chem1-l07"
+    },
+    {
+      "id": "sci-chem1-c052",
+      "front": "Which electrons does a transition metal lose first when it ionizes?",
+      "back": "The outer s electrons, not the d electrons. Fe is [Ar] 4s2 3d6, so Fe2+ is [Ar] 3d6.",
+      "lesson": "sci-chem1-l07"
+    },
+    {
+      "id": "sci-chem1-c053",
+      "front": "Why are chromium and copper exceptions to the filling order?",
+      "back": "Half-filled and completely filled d subshells are extra stable, so Cr is [Ar] 4s1 3d5 and Cu is [Ar] 4s1 3d10.",
+      "lesson": "sci-chem1-l07"
+    },
+    {
+      "id": "sci-chem1-c054",
+      "front": "What is effective nuclear charge and why does it rise across a period?",
+      "back": "Z_eff is the net nuclear pull on an outer electron. Across a period protons are added while new electrons enter the same shell and shield poorly, so Z_eff rises.",
+      "lesson": "sci-chem1-l08"
+    },
+    {
+      "id": "sci-chem1-c055",
+      "front": "Which way do atomic radius and ionization energy trend?",
+      "back": "Radius decreases left to right and increases down a group. Ionization energy and electronegativity do the opposite: up and to the right.",
+      "lesson": "sci-chem1-l08"
+    },
+    {
+      "id": "sci-chem1-c056",
+      "front": "Why is a cation smaller and an anion larger than the neutral atom?",
+      "back": "A cation usually loses an entire outer shell and the remaining electrons feel more pull each. An anion gains electron-electron repulsion without gaining protons, so the cloud expands.",
+      "lesson": "sci-chem1-l08"
+    },
+    {
+      "id": "sci-chem1-c057",
+      "front": "What does a huge jump between successive ionization energies indicate?",
+      "back": "That the next electron must come from a noble-gas core. Mg is 738, 1450, then 7730 kJ/mol, which fixes magnesium as Mg2+.",
+      "lesson": "sci-chem1-l08"
+    },
+    {
+      "id": "sci-chem1-c058",
+      "front": "Give the electronegativity values worth memorizing.",
+      "back": "F 4.0, O 3.5, N 3.0, Cl 3.0, C 2.5, H 2.1, Na 0.9. Differences from these values predict bond type and polarity.",
+      "lesson": "sci-chem1-l08"
+    },
+    {
+      "id": "sci-chem1-c059",
+      "front": "How does electronegativity difference classify a bond?",
+      "back": "Under about 0.4 is nonpolar covalent, 0.4 to 2.0 is polar covalent, and roughly 2.0 or more is ionic.",
+      "lesson": "sci-chem1-l09"
+    },
+    {
+      "id": "sci-chem1-c060",
+      "front": "What determines lattice energy, and how does that show in melting points?",
+      "back": "Higher ion charges and smaller ionic radii mean larger lattice energy. MgO (2+ and 2-) melts at 2852 C while NaCl melts at 801 C.",
+      "lesson": "sci-chem1-l09"
+    },
+    {
+      "id": "sci-chem1-c061",
+      "front": "List the steps for drawing a Lewis structure.",
+      "back": "Count valence electrons adjusting for charge, place the least electronegative atom centrally, add single bonds, complete outer octets, place leftovers on the center, then form multiple bonds if the center is short.",
+      "lesson": "sci-chem1-l09"
+    },
+    {
+      "id": "sci-chem1-c062",
+      "front": "What is the formal charge formula and how is it used?",
+      "back": "Formal charge = valence electrons - lone pair electrons - half of bonding electrons. The best structure minimizes formal charges and places negative ones on the most electronegative atoms.",
+      "lesson": "sci-chem1-l09"
+    },
+    {
+      "id": "sci-chem1-c063",
+      "front": "What does resonance actually describe?",
+      "back": "One averaged hybrid structure, not molecules flickering between drawings. Carbonate's three C-O bonds are identical with bond order 1.33 and evenly spread charge.",
+      "lesson": "sci-chem1-l09"
+    },
+    {
+      "id": "sci-chem1-c064",
+      "front": "Name three categories of octet-rule exceptions.",
+      "back": "Incomplete octets (BF3, boron with 6), odd-electron radicals (NO, NO2), and expanded octets in period 3 and beyond (PCl5, SF6).",
+      "lesson": "sci-chem1-l09"
+    },
+    {
+      "id": "sci-chem1-c065",
+      "front": "How do lone pairs affect bond angles in tetrahedral electron geometry?",
+      "back": "Lone pairs occupy more space and compress bond angles: CH4 is 109.5, NH3 with one lone pair is 107, and H2O with two is 104.5 degrees.",
+      "lesson": "sci-chem1-l10"
+    },
+    {
+      "id": "sci-chem1-c066",
+      "front": "Why is CO2 nonpolar while H2O is polar?",
+      "back": "CO2 is linear, so its two equal bond dipoles point opposite and cancel. Water is bent at 104.5 degrees, so its dipoles add to a net 1.85 D.",
+      "lesson": "sci-chem1-l10"
+    },
+    {
+      "id": "sci-chem1-c067",
+      "front": "Rank the intermolecular forces from weakest to strongest.",
+      "back": "London dispersion, then dipole-dipole, then hydrogen bonding, then ion-dipole. Stronger forces raise boiling point, viscosity, and surface tension.",
+      "lesson": "sci-chem1-l10"
+    },
+    {
+      "id": "sci-chem1-c068",
+      "front": "What is required for a true hydrogen bond?",
+      "back": "Hydrogen bonded directly to nitrogen, oxygen, or fluorine, with a lone pair on a neighboring N, O, or F to accept it.",
+      "lesson": "sci-chem1-l10"
+    },
+    {
+      "id": "sci-chem1-c069",
+      "front": "How does polarity predict where a drug goes in the body?",
+      "back": "Like dissolves like: charged, polar drugs stay in plasma and are renally cleared, while lipophilic nonpolar drugs cross the blood-brain barrier and can cause sedation.",
+      "lesson": "sci-chem1-l10"
+    },
+    {
+      "id": "sci-chem1-c070",
+      "front": "How do you find molecular geometry from electron geometry?",
+      "back": "Count all electron groups for electron geometry, then describe only the positions of bonded atoms. Four groups with two lone pairs is bent, not tetrahedral.",
+      "lesson": "sci-chem1-l10"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "sci-chem1-q001",
+      "q": "A lab balance reads 0.05060 g. How many significant figures does that value carry?",
+      "choices": [
+        "4",
+        "3",
+        "5",
+        "6"
+      ],
+      "answer": 0,
+      "why": "Leading zeros never count, so 0.0 is discarded. The 5, the captive 0, the 6, and the trailing 0 after a decimal all count, giving 4. Counting the leading zeros gives the wrong answers of 5 or 6.",
+      "lesson": "sci-chem1-l01",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-chem1-q002",
+      "q": "An order is for 15 mg/kg of a drug in a 198 lb patient, from a vial labeled 250 mg/mL. What volume is drawn, to 2 significant figures?",
+      "choices": [
+        "5.4 mL",
+        "2.7 mL",
+        "12 mL",
+        "0.36 mL"
+      ],
+      "answer": 0,
+      "why": "198 lb / 2.205 = 89.8 kg; 89.8 x 15 = 1347 mg; 1347 / 250 = 5.39, which rounds to 5.4 mL. Forgetting the pound-to-kilogram conversion gives about 12 mL, a more than twofold overdose.",
+      "lesson": "sci-chem1-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-chem1-q003",
+      "q": "Three technicians measure a control sample of known value 100.0 mg/dL and get 124.8, 125.1, and 124.9. The instrument is best described as:",
+      "choices": [
+        "precise but inaccurate",
+        "accurate but imprecise",
+        "both accurate and precise",
+        "neither accurate nor precise"
+      ],
+      "answer": 0,
+      "why": "The spread is only 0.3 mg/dL, which is excellent precision, but every value is about 25% high, which is poor accuracy. Random error hurts precision; this consistent offset is systematic error.",
+      "lesson": "sci-chem1-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-chem1-q004",
+      "q": "Which quantity would NOT limit the number of significant figures in a calculated result?",
+      "choices": [
+        "a pipetted volume of 5.00 mL",
+        "a mass of 1.2 g",
+        "the defined conversion 1 L = 1000 mL",
+        "a measured temperature of 37.2 C"
+      ],
+      "answer": 2,
+      "why": "Defined conversions are exact and carry infinite significant figures. The other three are measurements with real uncertainty, and the 1.2 g value with only 2 sig figs would dominate.",
+      "lesson": "sci-chem1-l01",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-chem1-q005",
+      "q": "An ion has 16 protons, 18 neutrons, and 18 electrons. What is it?",
+      "choices": [
+        "S2-",
+        "Ar",
+        "S2+",
+        "Cl-"
+      ],
+      "answer": 0,
+      "why": "Sixteen protons is sulfur regardless of anything else. Two more electrons than protons is a 2- charge, so S2-. Argon has 18 protons and chloride has 17, so neither fits the proton count.",
+      "lesson": "sci-chem1-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-chem1-q006",
+      "q": "An element has two isotopes: 60.0% at 68.93 amu and 40.0% at 70.92 amu. What is the atomic mass?",
+      "choices": [
+        "69.72 amu",
+        "69.93 ami",
+        "70.13 amu",
+        "139.85 amu"
+      ],
+      "answer": 0,
+      "why": "0.600 x 68.93 = 41.36 and 0.400 x 70.92 = 28.37, summing to 69.72 amu. Taking a plain average of the two masses gives 69.93, ignoring that the lighter isotope is more abundant.",
+      "lesson": "sci-chem1-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-chem1-q007",
+      "q": "How many sodium ions are in 1.00 L of 0.154 M NaCl?",
+      "choices": [
+        "9.27 x 10^22",
+        "6.02 x 10^23",
+        "1.54 x 10^23",
+        "0.154"
+      ],
+      "answer": 0,
+      "why": "0.154 mol x 6.022 x 10^23 = 9.27 x 10^22 ions. One full mole would be 6.02 x 10^23, and 1.54 x 10^23 comes from misplacing the decimal in 0.154.",
+      "lesson": "sci-chem1-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-chem1-q008",
+      "q": "How many milliequivalents are in 1.5 mmol of calcium, present as Ca2+?",
+      "choices": [
+        "0.75 mEq",
+        "1.5 mEq",
+        "3.0 mEq",
+        "1500 mEq"
+      ],
+      "answer": 2,
+      "why": "mEq equals mmol times charge, and calcium carries 2+: 1.5 x 2 = 3.0 mEq. Treating calcium like sodium and reporting 1.5 mEq halves the true electrical load.",
+      "lesson": "sci-chem1-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-chem1-q009",
+      "q": "What is the correct formula for aluminum sulfate?",
+      "choices": [
+        "AlSO4",
+        "Al2SO4",
+        "Al2(SO4)3",
+        "Al3(SO4)2"
+      ],
+      "answer": 2,
+      "why": "Al is 3+ and sulfate is 2-. The least common multiple of 3 and 2 is 6, so you need 2 Al and 3 sulfate for neutrality: Al2(SO4)3. Al2SO4 leaves a net 4+ charge.",
+      "lesson": "sci-chem1-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-chem1-q010",
+      "q": "H2SO3 is correctly named:",
+      "choices": [
+        "sulfurous acid",
+        "sulfuric acid",
+        "hydrosulfuric acid",
+        "hydrogen sulfate"
+      ],
+      "answer": 0,
+      "why": "SO3 2- is sulfite, and an -ite anion gives an -ous acid: sulfurous acid. Sulfuric acid comes from sulfate (H2SO4), and hydro- prefixes are used only for oxygen-free acids like HCl.",
+      "lesson": "sci-chem1-l03",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-chem1-q011",
+      "q": "Balance C2H6 + O2 -> CO2 + H2O with the smallest whole-number coefficients. What is the coefficient on C2H6?",
+      "choices": [
+        "1",
+        "3",
+        "2",
+        "7"
+      ],
+      "answer": 2,
+      "why": "One C2H6 requires 3.5 O2, so the whole equation is doubled: 2 C2H6 + 7 O2 -> 4 CO2 + 6 H2O. Leaving a fractional coefficient is not a whole-number balance, and 7 belongs to O2.",
+      "lesson": "sci-chem1-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-chem1-q012",
+      "q": "12.0 g of Mg reacts with 12.0 g of O2 in 2 Mg + O2 -> 2 MgO. Which reactant limits, and what mass of MgO forms?",
+      "choices": [
+        "O2 limits; 30.2 g MgO",
+        "Neither limits; 24.0 g MgO",
+        "Mg limits; 24.0 g MgO",
+        "Mg limits; 19.9 g MgO"
+      ],
+      "answer": 3,
+      "why": "Mg: 12.0/24.31 = 0.494 mol, divided by 2 gives 0.247. O2: 12.0/32.00 = 0.375, divided by 1 gives 0.375. Mg has the smaller quotient so it limits, and 0.494 mol MgO x 40.30 g/mol = 19.9 g. Picking O2 because its mole count looks smaller ignores the coefficients.",
+      "lesson": "sci-chem1-l03",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-chem1-q013",
+      "q": "A synthesis with a theoretical yield of 8.40 g returns 6.72 g of purified product. The percent yield is:",
+      "choices": [
+        "125%",
+        "1.25%",
+        "20.0%",
+        "80.0%"
+      ],
+      "answer": 3,
+      "why": "(6.72 / 8.40) x 100 = 80.0%. Inverting the fraction gives 125%, which is impossible for an ordinary preparation and should immediately flag the setup as backwards.",
+      "lesson": "sci-chem1-l03",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-chem1-q014",
+      "q": "Which pair will produce a precipitate when mixed in aqueous solution?",
+      "choices": [
+        "NaNO3 and KCl",
+        "KNO3 and NH4Cl",
+        "NaCl and KBr",
+        "AgNO3 and NaCl"
+      ],
+      "answer": 3,
+      "why": "Silver chloride is one of the three insoluble chlorides, so AgCl drops out. All nitrate, Group 1, and ammonium salts are soluble, so the other combinations stay fully dissolved.",
+      "lesson": "sci-chem1-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-chem1-q015",
+      "q": "How many grams of NaCl are needed to make 2.00 L of 0.150 M solution?",
+      "choices": [
+        "8.77 g",
+        "4.38 g",
+        "35.1 g",
+        "17.5 g"
+      ],
+      "answer": 3,
+      "why": "0.150 M x 2.00 L = 0.300 mol; 0.300 x 58.44 = 17.5 g. Forgetting the 2.00 L volume gives 8.77 g, exactly half of what is required.",
+      "lesson": "sci-chem1-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-chem1-q016",
+      "q": "A 250 mL bag of 0.45% NaCl is described as hypotonic relative to plasma. The best chemical explanation is:",
+      "choices": [
+        "it contains no dissociating solute",
+        "its molarity is higher than that of 0.9% saline",
+        "sodium chloride is a nonelectrolyte",
+        "its particle concentration is about 154 mOsm/L, well below plasma's 290"
+      ],
+      "answer": 3,
+      "why": "0.45% is half of 0.9%, so about 77 mM NaCl giving roughly 154 mOsm/L of particles, well under plasma osmolality near 290. NaCl is a strong electrolyte, and half the mass means half the molarity, not more.",
+      "lesson": "sci-chem1-l04",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-chem1-q017",
+      "q": "20.00 mL of 0.100 M H2SO4 is titrated with 0.200 M NaOH. What volume of NaOH reaches the equivalence point?",
+      "choices": [
+        "10.0 mL",
+        "5.00 mL",
+        "40.0 mL",
+        "20.0 mL"
+      ],
+      "answer": 3,
+      "why": "Moles H2SO4 = 0.0200 x 0.100 = 2.00 x 10^-3. Sulfuric acid is diprotic, so 4.00 x 10^-3 mol NaOH is needed: 4.00 x 10^-3 / 0.200 = 0.0200 L = 20.0 mL. Treating it as monoprotic gives 10.0 mL.",
+      "lesson": "sci-chem1-l04",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-chem1-q018",
+      "q": "In the reaction 2 Na + Cl2 -> 2 NaCl, chlorine's oxidation number changes from:",
+      "choices": [
+        "0 to -1, so chlorine is reduced",
+        "0 to +1, so chlorine is oxidized",
+        "-1 to 0, so chlorine is oxidized",
+        "+1 to -1, so chlorine is reduced"
+      ],
+      "answer": 0,
+      "why": "Cl2 is a free element, so each atom starts at 0; in NaCl chloride is -1. Gaining electrons is reduction, making chlorine the oxidizing agent. Sodium goes 0 to +1 and is oxidized.",
+      "lesson": "sci-chem1-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-chem1-q019",
+      "q": "A 3.0 L balloon at 300 K is warmed to 400 K at constant pressure. What is the new volume?",
+      "choices": [
+        "2.3 L",
+        "3.0 L",
+        "4.0 L",
+        "9.0 L"
+      ],
+      "answer": 2,
+      "why": "Charles's law: V2 = V1 x T2/T1 = 3.0 x 400/300 = 4.0 L. Inverting the temperature ratio gives 2.3 L; the kelvin values are already absolute so no conversion is needed here.",
+      "lesson": "sci-chem1-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-chem1-q020",
+      "q": "How many moles of gas occupy 5.60 L at 1.00 atm and 273 K?",
+      "choices": [
+        "0.250 mol",
+        "0.500 mol",
+        "1.00 mol",
+        "22.4 mol"
+      ],
+      "answer": 0,
+      "why": "These are STP conditions, where one mole occupies 22.4 L: 5.60 / 22.4 = 0.250 mol. Using PV = nRT gives the same value. 22.4 mol confuses the molar volume with the answer.",
+      "lesson": "sci-chem1-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-chem1-q021",
+      "q": "A gas mixture at 760 mmHg contains 21% O2, 78% N2, and 1% Ar. What is the partial pressure of nitrogen?",
+      "choices": [
+        "160 mmHg",
+        "760 mmHg",
+        "713 mmHg",
+        "593 mmHg"
+      ],
+      "answer": 3,
+      "why": "Dalton's law: 0.78 x 760 = 593 mmHg. 160 mmHg is oxygen's partial pressure, and 713 mmHg is total pressure after subtracting water vapor, which does not apply to dry gas.",
+      "lesson": "sci-chem1-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-chem1-q022",
+      "q": "Helium (4 g/mol) effuses how much faster than oxygen (32 g/mol) at the same temperature?",
+      "choices": [
+        "2 times",
+        "64 times",
+        "8 times",
+        "2.83 times"
+      ],
+      "answer": 3,
+      "why": "Graham's law: rate ratio = sqrt(32/4) = sqrt(8) = 2.83. Taking the mass ratio directly gives 8, which forgets the square root built into the kinetic energy relationship.",
+      "lesson": "sci-chem1-l05",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-chem1-q023",
+      "q": "A patient is placed on a nonrebreather delivering approximately 90% oxygen at sea level. Inspired PO2 is closest to:",
+      "choices": [
+        "149 mmHg",
+        "285 mmHg",
+        "642 mmHg",
+        "760 mmHg"
+      ],
+      "answer": 2,
+      "why": "Subtract water vapor first: 0.90 x (760 - 47) = 0.90 x 713 = 642 mmHg. 149 mmHg is room air, and 760 would require 100% oxygen with no humidification, which does not happen in an airway.",
+      "lesson": "sci-chem1-l05",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-chem1-q024",
+      "q": "How much heat is released when 500. g of water cools from 40.0 C to 25.0 C?",
+      "choices": [
+        "7.85 kJ",
+        "83.7 kJ",
+        "52.3 kJ",
+        "31.4 kJ"
+      ],
+      "answer": 3,
+      "why": "q = 500. x 4.184 x 15.0 = 31,380 J = 31.4 kJ, released because the temperature fell. Using dT = 25.0 instead of the 15.0 difference gives 52.3 kJ.",
+      "lesson": "sci-chem1-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-chem1-q025",
+      "q": "Which statement about an endothermic reaction in a coffee-cup calorimeter is correct?",
+      "choices": [
+        "dH is negative and the solution warms",
+        "dH is positive and the solution cools",
+        "dH is positive and the solution warms",
+        "dH is zero because enthalpy is a state function"
+      ],
+      "answer": 1,
+      "why": "Endothermic means the reaction absorbs heat from the solution, so the solution's temperature falls and dH is positive. State-function behavior means dH is path-independent, not zero.",
+      "lesson": "sci-chem1-l06",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-chem1-q026",
+      "q": "Given X -> Y with dH = -120 kJ and Y -> Z with dH = +45 kJ, what is dH for X -> Z?",
+      "choices": [
+        "-165 kJ",
+        "-75 kJ",
+        "+75 kJ",
+        "+165 kJ"
+      ],
+      "answer": 1,
+      "why": "Hess's law sums sequential steps: -120 + 45 = -75 kJ. Subtracting instead of adding gives -165 kJ, and sign errors produce the positive options.",
+      "lesson": "sci-chem1-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-chem1-q027",
+      "q": "Why is dH_f defined as zero for O2(g) but not for O3(g)?",
+      "choices": [
+        "Ozone is not an element",
+        "O2 is the standard state of elemental oxygen; ozone is not",
+        "Ozone has more atoms, so its enthalpy must be higher",
+        "The definition is arbitrary and both could be zero"
+      ],
+      "answer": 1,
+      "why": "Formation enthalpy is zero only for the most stable form of an element under standard conditions, which for oxygen is O2. Ozone is still elemental oxygen, but it is not the standard state, so it has a real nonzero dH_f.",
+      "lesson": "sci-chem1-l06",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-chem1-q028",
+      "q": "Which set of quantum numbers is impossible?",
+      "choices": [
+        "n=3, l=2, m_l=-2, m_s=+1/2",
+        "n=2, l=1, m_l=0, m_s=-1/2",
+        "n=2, l=2, m_l=1, m_s=+1/2",
+        "n=4, l=0, m_l=0, m_s=-1/2"
+      ],
+      "answer": 2,
+      "why": "l can only run from 0 to n-1, so with n=2 the maximum l is 1. The others obey every restriction on l, m_l, and spin.",
+      "lesson": "sci-chem1-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-chem1-q029",
+      "q": "What is the ground-state electron configuration of sulfur (Z = 16)?",
+      "choices": [
+        "[Ne] 3s2 3p4",
+        "[Ne] 3s2 3p6",
+        "[Ar] 3s2 3p4",
+        "[Ne] 3s1 3p5"
+      ],
+      "answer": 0,
+      "why": "Neon accounts for 10 electrons; the remaining 6 fill 3s2 and 3p4. 3p6 would be argon with 18 electrons, and [Ar] already contains all 16 of sulfur's electrons plus two more.",
+      "lesson": "sci-chem1-l07",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-chem1-q030",
+      "q": "An electron falls from n=4 to n=2 in hydrogen. Compared with an n=3 to n=2 drop, the emitted photon has:",
+      "choices": [
+        "longer wavelength and lower energy",
+        "shorter wavelength and higher energy",
+        "the same wavelength",
+        "longer wavelength and higher energy"
+      ],
+      "answer": 1,
+      "why": "The n=4 level sits higher, so the energy gap to n=2 is larger, producing a higher-energy photon. Since E = hc/lambda, higher energy means shorter wavelength. Higher energy can never accompany longer wavelength.",
+      "lesson": "sci-chem1-l07",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-chem1-q031",
+      "q": "Which sequence correctly ranks first ionization energy from lowest to highest?",
+      "choices": [
+        "Ne, F, O, Li",
+        "Li, O, F, Ne",
+        "F, Ne, Li, O",
+        "O, Li, Ne, F"
+      ],
+      "answer": 1,
+      "why": "Ionization energy rises left to right across period 2, so Li is lowest and Ne, with a full octet, is highest: Li, O, F, Ne. The reversed sequence in choice 0 follows atomic radius instead.",
+      "lesson": "sci-chem1-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-chem1-q032",
+      "q": "Which species is the largest?",
+      "choices": [
+        "Na+",
+        "Mg2+",
+        "F-",
+        "O2-"
+      ],
+      "answer": 3,
+      "why": "All four are isoelectronic with 10 electrons, so size is set purely by nuclear charge: fewer protons means a looser hold. O2- has only 8 protons, the fewest, so it is largest; Mg2+ with 12 is smallest.",
+      "lesson": "sci-chem1-l08",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-chem1-q033",
+      "q": "Potassium and sodium behave similarly in chemical reactions primarily because they:",
+      "choices": [
+        "have the same atomic radius",
+        "have one valence electron each, in the same group",
+        "are both in the same period",
+        "have identical electronegativity values"
+      ],
+      "answer": 1,
+      "why": "Group membership means identical valence electron count, which drives reactivity. Potassium is larger and slightly less electronegative than sodium, and they sit in different periods.",
+      "lesson": "sci-chem1-l08",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-chem1-q034",
+      "q": "How many valence electrons are counted when drawing the Lewis structure of NH4+?",
+      "choices": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "answer": 1,
+      "why": "Nitrogen contributes 5 and four hydrogens contribute 4, totaling 9, but the positive charge removes one: 8 electrons, exactly the four N-H bonds. Forgetting the charge adjustment gives 9.",
+      "lesson": "sci-chem1-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-chem1-q035",
+      "q": "In the Lewis structure of SO4 2- drawn with all single bonds, what is the formal charge on sulfur?",
+      "choices": [
+        "0",
+        "+1",
+        "+2",
+        "-2"
+      ],
+      "answer": 2,
+      "why": "Sulfur has 6 valence electrons, no lone pairs, and 8 bonding electrons: 6 - 0 - 4 = +2. Drawing two S=O double bonds instead reduces sulfur's formal charge to 0, which is why the expanded-octet structure is preferred.",
+      "lesson": "sci-chem1-l09",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-chem1-q036",
+      "q": "Which molecule contains polar bonds yet has no net molecular dipole?",
+      "choices": [
+        "H2O",
+        "NH3",
+        "BF3",
+        "HCl"
+      ],
+      "answer": 2,
+      "why": "BF3 is trigonal planar with three equal B-F dipoles at 120 degrees, whose vectors sum to zero. Water is bent and ammonia is pyramidal, so neither cancels, and HCl has a single unopposed polar bond.",
+      "lesson": "sci-chem1-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-chem1-q037",
+      "q": "Which substance should have the highest boiling point?",
+      "choices": [
+        "CH4",
+        "CH3CH3",
+        "CH3OH",
+        "CH3CH2CH3"
+      ],
+      "answer": 2,
+      "why": "Methanol has an O-H group, so it hydrogen bonds, which is far stronger than the dispersion forces available to the hydrocarbons. Propane is the heaviest of the others but still only has dispersion.",
+      "lesson": "sci-chem1-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-chem1-q038",
+      "q": "A drug is highly charged at physiologic pH. Compared with a neutral lipophilic analog, it will most likely:",
+      "choices": [
+        "cross the blood-brain barrier more readily",
+        "remain in plasma and be cleared renally",
+        "dissolve better in fat than in water",
+        "have stronger dispersion forces with membrane lipids"
+      ],
+      "answer": 1,
+      "why": "Like dissolves like: a charged molecule interacts strongly with water and poorly with the lipid bilayer, so it stays in the aqueous compartment and is filtered by the kidney. That same property is what keeps it out of the central nervous system.",
+      "lesson": "sci-chem1-l10",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-chem1-q039",
+      "q": "SF4 has four bonding pairs and one lone pair on sulfur. Its electron geometry and molecular geometry are:",
+      "choices": [
+        "tetrahedral and tetrahedral",
+        "trigonal bipyramidal and seesaw",
+        "octahedral and square planar",
+        "trigonal bipyramidal and trigonal bipyramidal"
+      ],
+      "answer": 1,
+      "why": "Five electron groups give trigonal bipyramidal electron geometry. With one position occupied by a lone pair, the atom positions describe a seesaw shape. Molecular geometry never counts lone pairs as vertices.",
+      "lesson": "sci-chem1-l10",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-chem1-q040",
+      "q": "Which statement about resonance in the bicarbonate ion is correct?",
+      "choices": [
+        "The ion rapidly interconverts between two distinct structures",
+        "The true structure is a single averaged hybrid with delocalized charge",
+        "Resonance destabilizes the ion, making it short-lived",
+        "Only one resonance structure is physically real"
+      ],
+      "answer": 1,
+      "why": "Resonance describes one unchanging averaged structure, not rapid interconversion or a choice among real alternatives. Delocalization lowers energy, which is part of why bicarbonate is a durable buffer species in blood.",
+      "lesson": "sci-chem1-l09",
+      "difficulty": 2
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "sci-chem1-s01",
+      "title": "Worked problem: making a solution and titrating it",
+      "setting": "classroom",
+      "intro": "Lab practical, week 9. You are handed a bottle of solid sodium carbonate, a volumetric flask, a buret of hydrochloric acid of unknown concentration, and this instruction: prepare 250.0 mL of 0.1000 M Na2CO3 and use it to standardize the acid. Work through it decision by decision. Molar mass of Na2CO3 is 105.99 g/mol.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "First step: how much solid sodium carbonate do you weigh out for 250.0 mL of 0.1000 M solution?",
+          "choices": [
+            {
+              "text": "0.1000 M x 0.2500 L = 0.02500 mol, then x 105.99 = 2.650 g",
+              "next": "s2",
+              "feedback": "Correct. Molarity times volume in liters gives moles, and moles times molar mass gives grams. Four sig figs throughout because every input has four.",
+              "score": 1
+            },
+            {
+              "text": "0.1000 x 250.0 = 25.00 mol, then x 105.99 = 2650 g",
+              "next": "s2",
+              "feedback": "Volume must be in liters. Using milliliters inflates the answer by a factor of 1000 -- and 2650 g of anything will not fit in a 250 mL flask, which is your sanity check.",
+              "score": -1
+            },
+            {
+              "text": "Weigh 105.99 g, since that is one mole",
+              "next": "s2",
+              "feedback": "That would make a 4.0 M solution if it even dissolved. Molar mass is a conversion factor, not a recipe quantity.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "You have 2.650 g on the balance. How do you get to exactly 250.0 mL?",
+          "choices": [
+            {
+              "text": "Dissolve the solid in some water, transfer to the volumetric flask, then add water to the 250.0 mL mark",
+              "next": "s3",
+              "feedback": "Correct. Molarity is moles per liter of final solution, not per liter of added solvent. The volumetric flask's mark defines the final volume.",
+              "score": 1
+            },
+            {
+              "text": "Add the solid to exactly 250.0 mL of water already measured out",
+              "next": "s3",
+              "feedback": "This overshoots the volume, because the dissolved solid itself occupies space. The resulting concentration is slightly below 0.1000 M -- a real error at four sig figs.",
+              "score": 0
+            },
+            {
+              "text": "Dissolve in 250.0 mL of water in a beaker and pour into the flask",
+              "next": "s3",
+              "feedback": "Same error as measuring solvent first, plus beaker graduations are only good to about 5%. Volumetric glassware exists precisely because this matters.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "You pipet 25.00 mL of your carbonate solution into a flask and titrate with the unknown HCl. The reaction is Na2CO3 + 2 HCl -> 2 NaCl + H2O + CO2. The endpoint comes at 21.40 mL. What is the first calculation?",
+          "choices": [
+            {
+              "text": "Moles Na2CO3 = 0.02500 L x 0.1000 M = 2.500 x 10^-3 mol",
+              "next": "s4",
+              "feedback": "Correct. Always start on the side you know completely. You know both the concentration and volume of the carbonate, so start there.",
+              "score": 1
+            },
+            {
+              "text": "Divide 21.40 by 25.00 to get a ratio of 0.8560",
+              "next": "s4",
+              "feedback": "Volume ratios only work when concentrations and stoichiometry are both 1:1. Here the mole ratio is 1:2, so this shortcut gives a wrong answer.",
+              "score": -1
+            },
+            {
+              "text": "Assume moles of HCl equal moles of Na2CO3",
+              "next": "s4",
+              "feedback": "Carbonate accepts two protons, so the ratio is 1 carbonate to 2 HCl. Assuming 1:1 will halve your final acid concentration.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "You have 2.500 x 10^-3 mol of Na2CO3 consumed by 21.40 mL of HCl. Finish the calculation.",
+          "choices": [
+            {
+              "text": "Moles HCl = 2 x 2.500 x 10^-3 = 5.000 x 10^-3; divided by 0.02140 L gives 0.2336 M",
+              "next": "s5",
+              "feedback": "Correct. Apply the 1:2 mole ratio first, then divide by the titrant volume in liters. 5.000 x 10^-3 / 0.02140 = 0.2336 M.",
+              "score": 1
+            },
+            {
+              "text": "2.500 x 10^-3 / 0.02140 = 0.1168 M",
+              "next": "s5",
+              "feedback": "This skips the mole ratio and reports exactly half the true concentration. It is the single most common titration error on an exam.",
+              "score": -1
+            },
+            {
+              "text": "5.000 x 10^-3 / 0.02500 = 0.2000 M",
+              "next": "s5",
+              "feedback": "The ratio is right but you divided by the carbonate volume instead of the titrant volume. Moles of HCl must be divided by the volume of HCl delivered.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "Your partner's trial overshoots the endpoint by several drops, giving 22.90 mL. How does that affect the reported HCl concentration, and what do you do?",
+          "choices": [
+            {
+              "text": "It makes the acid look more dilute than it is; discard the trial and repeat",
+              "next": "end",
+              "feedback": "Correct. More titrant volume in the denominator lowers the calculated molarity: 5.000 x 10^-3 / 0.02290 = 0.2183 M, about 6.5% low. An overshot endpoint is a discarded trial.",
+              "score": 1
+            },
+            {
+              "text": "It makes the acid look more concentrated; keep the trial and average",
+              "next": "end",
+              "feedback": "Backwards. Extra volume in the denominator lowers the result. Averaging a known bad trial pulls the whole data set off.",
+              "score": -1
+            },
+            {
+              "text": "No effect, since the equivalence point was still reached",
+              "next": "end",
+              "feedback": "The equivalence point is a chemical fact, but your measurement of it is what enters the math. Past the endpoint, every extra drop is unreacted excess that corrupts the volume you record.",
+              "score": -1
+            }
+          ]
+        }
+      ],
+      "debrief": "The pattern: solution work is always moles first. Molarity times volume in liters gives moles, the balanced equation supplies the mole ratio, and moles divided by the right volume gives the answer. The two errors that cost the most points are using milliliters where liters belong and skipping the mole ratio in a titration. Both are caught by asking whether the answer is physically plausible before you write it down."
+    },
+    {
+      "id": "sci-chem1-s02",
+      "title": "Worked problem: gas laws at the bedside",
+      "setting": "classroom",
+      "intro": "Your instructor puts a respiratory case on the board as a gas law problem. A patient breathes room air at sea level. Their arterial blood gas shows PaO2 of 62 mmHg and PaCO2 of 55 mmHg. The class is asked to build the answer from Dalton's law up, using only General Chemistry I tools.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "Start at the top. What is the partial pressure of oxygen in dry room air at sea level, where atmospheric pressure is 760 mmHg and oxygen is 20.9% of the mixture?",
+          "choices": [
+            {
+              "text": "0.209 x 760 = 159 mmHg",
+              "next": "s2",
+              "feedback": "Correct. Dalton's law: partial pressure equals mole fraction times total pressure. This is the number everyone rounds to 160.",
+              "score": 1
+            },
+            {
+              "text": "760 / 20.9 = 36.4 mmHg",
+              "next": "s2",
+              "feedback": "Percentages multiply, they do not divide. Dividing here produces a number lower than venous oxygen tension, which should signal the error immediately.",
+              "score": -1
+            },
+            {
+              "text": "760 - 20.9 = 739 mmHg",
+              "next": "s2",
+              "feedback": "Subtracting a percentage from a pressure mixes incompatible quantities. The mole fraction must be applied multiplicatively.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "Inspired air is warmed and fully humidified in the upper airway. Water vapor at 37 C exerts 47 mmHg. How does that change the calculation?",
+          "choices": [
+            {
+              "text": "Subtract water vapor from total pressure first: 0.209 x (760 - 47) = 149 mmHg",
+              "next": "s3",
+              "feedback": "Correct. Water vapor claims its own partial pressure, leaving only 713 mmHg for the dry gases to divide among themselves.",
+              "score": 1
+            },
+            {
+              "text": "Subtract 47 from the result: 159 - 47 = 112 mmHg",
+              "next": "s3",
+              "feedback": "Water vapor does not take 47 mmHg from oxygen alone; it takes 47 from the total, and oxygen loses only its 20.9% share of that. The correct value is 149, not 112.",
+              "score": 0
+            },
+            {
+              "text": "Ignore it, since water is a liquid at body temperature",
+              "next": "s3",
+              "feedback": "Water is in equilibrium with vapor at any temperature, and at 37 C that vapor pressure is a fixed 47 mmHg. It always counts in an airway.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "Now apply the alveolar gas equation, PAO2 = PIO2 - PaCO2/0.8, with this patient's PaCO2 of 55 mmHg.",
+          "vitals": {
+            "rr": 8,
+            "spo2": 90
+          },
+          "choices": [
+            {
+              "text": "149 - 55/0.8 = 149 - 68.8 = 80 mmHg",
+              "next": "s4",
+              "feedback": "Correct. The elevated carbon dioxide displaces oxygen in the alveolus. A normal PaCO2 of 40 would have left PAO2 near 99; at 55 it falls to about 80.",
+              "score": 1
+            },
+            {
+              "text": "149 - 55 = 94 mmHg",
+              "next": "s4",
+              "feedback": "The 0.8 respiratory quotient factor is not optional. Skipping it underestimates how much alveolar oxygen the retained carbon dioxide has displaced.",
+              "score": 0
+            },
+            {
+              "text": "149 + 55/0.8 = 218 mmHg",
+              "next": "s4",
+              "feedback": "Carbon dioxide and oxygen share a fixed total alveolar pressure, so more of one means less of the other. Adding them violates Dalton's law.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "The alveolar-arterial difference is PAO2 minus PaO2. Here that is 80 - 62 = 18 mmHg, which is within normal range for an older adult. What does the chemistry tell you about the cause of this low PaO2?",
+          "choices": [
+            {
+              "text": "The alveolar oxygen is low because carbon dioxide is displacing it; gas exchange across the membrane is working normally",
+              "next": "s5",
+              "feedback": "Correct. A normal A-a gradient with a low PaO2 points to the alveolar gas composition itself, driven by the elevated PaCO2 with its respiratory rate of 8.",
+              "score": 1
+            },
+            {
+              "text": "The membrane must be thickened, blocking diffusion",
+              "next": "s5",
+              "feedback": "A diffusion barrier would widen the A-a difference, because alveolar oxygen would stay high while arterial fell. An 18 mmHg gradient argues against it.",
+              "score": 0
+            },
+            {
+              "text": "The barometric pressure must be abnormally low",
+              "next": "s5",
+              "feedback": "The problem specified sea level at 760 mmHg. Altitude does lower PaO2 by exactly this mechanism, but it is not the variable that changed here.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "The team raises FiO2 to 0.40. Recalculate the predicted alveolar oxygen, assuming PaCO2 stays at 55.",
+          "choices": [
+            {
+              "text": "0.40 x 713 = 285; 285 - 68.8 = 216 mmHg",
+              "next": "end",
+              "feedback": "Correct. Raising the inspired fraction raises PIO2 proportionally, and the carbon dioxide penalty is unchanged. Alveolar oxygen goes from about 80 to about 216 mmHg.",
+              "score": 1
+            },
+            {
+              "text": "0.40 x 760 = 304; 304 - 68.8 = 235 mmHg",
+              "next": "end",
+              "feedback": "The arithmetic is right but the humidification correction was dropped again. Always subtract the 47 mmHg of water vapor before applying the oxygen fraction.",
+              "score": 0
+            },
+            {
+              "text": "149 x 0.40 = 60 mmHg",
+              "next": "end",
+              "feedback": "This multiplies room-air PIO2 by the new fraction instead of recomputing it, which predicts that giving more oxygen lowers alveolar oxygen. Any answer that moves the wrong direction is a setup error.",
+              "score": -1
+            }
+          ]
+        }
+      ],
+      "debrief": "Every oxygenation number in medicine is Dalton's law plus a correction. Take total pressure, remove water vapor at 47 mmHg, multiply by the oxygen fraction, then subtract the carbon dioxide penalty of PaCO2 divided by 0.8. The two habitual mistakes are forgetting water vapor and applying a percentage by subtraction instead of multiplication. Build the number in that order every time and the physiology falls out of the chemistry."
+    }
+  ]
+}

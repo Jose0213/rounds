@@ -1,0 +1,1764 @@
+{
+  "schema": 1,
+  "id": "sci-micro",
+  "track": "prereq",
+  "title": "Microbiology",
+  "short": "Microbiology",
+  "summary": "A full college microbiology course in syllabus order: cells, viruses, growth, control, genetics, drugs, infection, immunity, and the pathogens that show up on the exam and in the hospital.",
+  "lessons": [
+    {
+      "id": "sci-micro-l01",
+      "title": "Scope, microscopy and the logic of staining",
+      "minutes": 7,
+      "body": "Microbiology is the study of organisms too small to see with the naked eye: bacteria, archaea, fungi, protozoa, algae, and the non-living infectious agents (viruses, viroids, prions). The whole field exists because of one instrument. If you cannot see them, you cannot count them, classify them, or prove they cause disease.\n\n## The history the exam asks about\n\nAntonie van Leeuwenhoek ground his own lenses in the 1670s and drew the first bacteria, which he called \"animalcules.\" Louis Pasteur's swan-neck flask experiment (1861) killed spontaneous generation: broth in a flask with a curved neck stayed sterile for months because dust and microbes settled in the bend, but tipping the flask so broth touched the neck produced growth. Pasteur also gave us pasteurization and the germ theory of disease. Joseph Lister applied germ theory to surgery with phenol (carbolic acid) in 1867. Robert Koch gave us pure-culture technique and Koch's postulates. Edward Jenner used cowpox to protect against smallpox in 1796, and Alexander Fleming noticed a *Penicillium* mold clearing a *Staphylococcus* plate in 1928.\n\n## Why things are the size they are\n\nA typical bacterium is `0.2–2 micrometers` wide and `1–10 micrometers` long. A human red blood cell is about `7 micrometers`. A virus is `20–300 nanometers` — a thousand times smaller than the cell it infects. Those numbers set the tools: light microscopes for bacteria and eukaryotic microbes, electron microscopes for viruses.\n\nA compound light microscope's total magnification is objective power times ocular power. The `100x` oil-immersion objective with a `10x` ocular gives `1000x`. Oil is not for magnification; it has the same refractive index as glass, so it keeps light rays from bending away and being lost. The practical resolution limit of light microscopy is about `0.2 micrometers`, which is exactly why viruses are invisible to it.\n\n> **Key:** Magnification makes an image bigger. Resolution makes it clearer. Past `0.2 micrometers` a light microscope only gives you a bigger blur.\n\n## Why we stain\n\nBacterial cytoplasm is mostly water and barely bends light, so unstained cells are nearly transparent. Dyes fix that. Basic dyes (crystal violet, methylene blue, safranin, malachite green) carry a positive charge and are attracted to the negatively charged bacterial surface — that is why almost every routine stain is a basic dye.\n\nA **simple stain** uses one dye and shows shape and arrangement. A **differential stain** uses more than one and separates groups.\n\nThe **Gram stain** (Hans Christian Gram, 1884) is the first test run on almost any clinical specimen. Four steps: crystal violet (primary dye, stains everything purple), Gram's iodine (mordant, forms a large crystal violet–iodine complex), alcohol or acetone (decolorizer, the critical step), safranin (counterstain, pink). Thick peptidoglycan in Gram-positive walls traps the complex and the cells stay purple. Thin peptidoglycan behind an outer membrane that alcohol dissolves lets the complex wash out, so Gram-negative cells take up safranin and appear pink.\n\nThe **acid-fast stain** (Ziehl-Neelsen) exists for one genus problem: *Mycobacterium* and *Nocardia* have mycolic acid, a waxy lipid that repels water-based dyes. Carbolfuchsin is driven in with heat, then acid-alcohol is applied. Acid-fast cells hold the red dye; everything else decolorizes and takes the methylene blue counterstain.\n\n> **Trap:** Over-decolorizing turns a Gram-positive organism pink. A culture older than `24 hours` also loses wall integrity and can read falsely Gram-negative. Always Gram stain a fresh culture.\n\nSpecial stains handle structures the routine stains miss: the capsule stain is a negative stain (India ink) that leaves a clear halo because capsules do not take dye; the endospore stain uses malachite green plus heat with a safranin counterstain; the flagellar stain builds up mordant to thicken flagella enough to be seen.",
+      "keyPoints": [
+        "Bacteria are 0.2–2 by 1–10 micrometers; viruses 20–300 nanometers; light microscopy resolves to about 0.2 micrometers.",
+        "Oil immersion matches the refractive index of glass so light is not lost; it improves resolution, not magnification.",
+        "Gram stain order: crystal violet, iodine mordant, alcohol decolorizer, safranin. Purple equals Gram-positive, pink equals Gram-negative.",
+        "Acid-fast stain detects mycolic acid in Mycobacterium and Nocardia; carbolfuchsin resists acid-alcohol.",
+        "Pasteur disproved spontaneous generation; Koch proved specific microbes cause specific diseases."
+      ],
+      "checks": [
+        {
+          "q": "Which step of the Gram stain actually determines the final result?",
+          "choices": [
+            "Crystal violet application",
+            "Iodine mordant",
+            "Alcohol decolorization",
+            "Safranin counterstain"
+          ],
+          "answer": 2,
+          "why": "Every cell is purple after crystal violet and iodine. Decolorization is what removes the dye complex from thin-walled Gram-negative cells, so timing errors here cause most false results."
+        },
+        {
+          "q": "Why are viruses invisible under a standard light microscope?",
+          "choices": [
+            "They do not take up basic dyes",
+            "They are smaller than the roughly 0.2 micrometer resolution limit",
+            "They are transparent to visible light only when alive",
+            "They require a mordant that destroys them"
+          ],
+          "answer": 1,
+          "why": "Resolution, not magnification, is the limit. Viruses at 20–300 nanometers fall below 0.2 micrometers, so electron microscopy is required regardless of staining."
+        },
+        {
+          "q": "A student reads a Gram-positive Staphylococcus culture as Gram-negative. The culture was incubated 48 hours. What is the most likely explanation?",
+          "choices": [
+            "The organism mutated to Gram-negative",
+            "Old cells lose cell wall integrity and decolorize",
+            "Safranin was omitted",
+            "Iodine was applied twice"
+          ],
+          "answer": 1,
+          "why": "Aging cultures lyse and thin their peptidoglycan, so they over-decolorize. Gram reaction is a wall property, not a mutation; omitting safranin would leave cells colorless, not pink."
+        }
+      ]
+    },
+    {
+      "id": "sci-micro-l02",
+      "title": "Prokaryotic cell structure",
+      "minutes": 8,
+      "body": "Prokaryote means \"before nucleus.\" Bacteria and archaea have no nuclear membrane, no mitochondria, no endoplasmic reticulum, and no Golgi. Their DNA sits in an irregular region called the nucleoid. Everything the exam tests about prokaryotes comes down to structures outside the cytoplasm, because those structures are what our drugs attack and what our immune system sees.\n\n## Shape and arrangement\n\nThree basic shapes: **coccus** (sphere), **bacillus** (rod), **spiral** (vibrio is a comma, spirillum is rigid, spirochete is flexible). Arrangement follows the plane of division. Diplo- means pairs, strepto- means chains, staphylo- means clusters. *Streptococcus pyogenes* is a chain of spheres; *Staphylococcus aureus* is a cluster.\n\n## The cell wall\n\nThe wall is made of **peptidoglycan** (murein): alternating sugars N-acetylglucosamine (NAG) and N-acetylmuramic acid (NAM) cross-linked by short peptide bridges. It exists to resist osmotic pressure. A bacterium in a hypotonic environment would burst without it.\n\n**Gram-positive walls** are `20–80 nanometers` of thick peptidoglycan with **teichoic acids** woven through. Teichoic acids give negative charge, bind cations, and are antigenic.\n\n**Gram-negative walls** are `2–7 nanometers` of thin peptidoglycan plus an **outer membrane** containing **lipopolysaccharide (LPS)**. LPS has three parts: O antigen (used for serotyping, as in *E. coli* O157:H7), core polysaccharide, and **lipid A**. Lipid A is endotoxin. It is released when the cell dies and triggers fever, vasodilation, hypotension and disseminated intravascular coagulation. Between the membranes sits the periplasmic space, where beta-lactamase enzymes concentrate. Porins in the outer membrane control what gets in, which is one reason Gram-negatives are intrinsically harder to kill.\n\n> **Key:** Penicillin blocks cross-linking of peptidoglycan. Lysozyme in tears and saliva cuts the NAG–NAM bond. Both work better on Gram-positives because there is no outer membrane in the way.\n\n*Mycoplasma* has no cell wall at all — it is the exception, and it is why beta-lactams never work for *Mycoplasma pneumoniae*.\n\n## Outside the wall\n\nThe **glycocalyx** is a sugar coat. When it is organized and firmly attached it is a **capsule**; when loose it is a **slime layer**. Capsules block phagocytosis, which is why *Streptococcus pneumoniae* and *Klebsiella pneumoniae* are dangerous and why their vaccines target capsular polysaccharide. Slime layers anchor **biofilms** on catheters, heart valves and prosthetic joints.\n\n**Flagella** provide motility by rotating like a propeller, driven by proton motive force. Monotrichous is one flagellum, lophotrichous is a tuft, amphitrichous is both ends, peritrichous is all over. Movement toward a chemical gradient is **chemotaxis**: runs and tumbles, with fewer tumbles when conditions improve. The H antigen is flagellar protein.\n\n**Fimbriae** are short and numerous and their job is adhesion — *Neisseria gonorrhoeae* cannot cause disease without them. A **pilus** (sex pilus) is longer, usually one or two per cell, and transfers DNA during conjugation. Do not confuse the two.\n\n## Inside\n\nRibosomes are **70S** (30S + 50S subunits), versus 80S in eukaryotes. That difference is the entire basis of selective toxicity for aminoglycosides, tetracyclines, macrolides and clindamycin.\n\nThe chromosome is a single circular double-stranded DNA molecule. **Plasmids** are small circular extras that are not required for survival but often carry resistance genes (R factors), toxin genes or conjugation machinery.\n\n**Endospores** are dormant survival structures made by *Bacillus* and *Clostridium* (both Gram-positive rods). Sporulation is triggered by nutrient depletion. The core is dehydrated and packed with calcium dipicolinate and small acid-soluble proteins, so spores survive boiling, drying, radiation and most disinfectants. Killing them requires an autoclave at `121 degrees Celsius, 15 psi, for 15 minutes`.\n\n> **On the exam:** \"Not killed by boiling\" always means endospore. \"Fever and shock after a Gram-negative bacteremia\" always means lipid A endotoxin.",
+      "keyPoints": [
+        "Peptidoglycan is NAG–NAM with peptide cross-links; thick with teichoic acid in Gram-positives, thin plus an outer membrane in Gram-negatives.",
+        "Lipid A of LPS is endotoxin — fever, hypotension, shock — and is released when Gram-negatives die.",
+        "Capsules block phagocytosis; fimbriae adhere; sex pili transfer DNA; flagella move the cell.",
+        "Bacterial ribosomes are 70S versus 80S in humans, which is why protein-synthesis inhibitors are selectively toxic.",
+        "Endospores from Bacillus and Clostridium survive boiling; autoclave 121 degrees Celsius at 15 psi for 15 minutes."
+      ],
+      "checks": [
+        {
+          "q": "A patient with Gram-negative bacteremia spikes a fever and drops her blood pressure shortly after antibiotics are started. What explains this?",
+          "choices": [
+            "Exotoxin secreted by living cells",
+            "Lipid A released from lysed cell walls",
+            "Capsular polysaccharide",
+            "Teichoic acid release"
+          ],
+          "answer": 1,
+          "why": "Lipid A is endotoxin, part of the Gram-negative outer membrane, released on lysis — which antibiotics cause. Exotoxins are actively secreted proteins; teichoic acid is a Gram-positive structure."
+        },
+        {
+          "q": "Why do beta-lactams fail against Mycoplasma pneumoniae?",
+          "choices": [
+            "It has an unusually thick capsule",
+            "It has no peptidoglycan cell wall",
+            "Its ribosomes are 80S",
+            "It lives only inside host cells"
+          ],
+          "answer": 1,
+          "why": "Mycoplasma lacks a cell wall entirely, so there is no peptidoglycan cross-linking for a beta-lactam to inhibit. Treatment uses macrolides, tetracyclines or fluoroquinolones."
+        },
+        {
+          "q": "Which structure is responsible for the ability of Streptococcus pneumoniae to evade phagocytosis?",
+          "choices": [
+            "Fimbriae",
+            "Polysaccharide capsule",
+            "Flagella",
+            "Endospore"
+          ],
+          "answer": 1,
+          "why": "The capsule is slippery and hides surface antigens from phagocytes. Fimbriae mediate attachment, not evasion, and S. pneumoniae is non-motile and does not form spores."
+        }
+      ]
+    },
+    {
+      "id": "sci-micro-l03",
+      "title": "Eukaryotic microbes: fungi, protozoa and helminths",
+      "minutes": 7,
+      "body": "Eukaryotic microbes have a true nucleus, membrane-bound organelles, 80S ribosomes and sterols in their membranes. That last detail matters clinically: because their cells look a lot like ours, antifungal and antiparasitic drugs are far more toxic to the patient than antibacterials are.\n\n## Fungi\n\nFungi are chemoheterotrophs that absorb nutrients after secreting digestive enzymes. Their cell wall is **chitin**, not peptidoglycan, and their membranes use **ergosterol** where ours use cholesterol. Ergosterol is the target of the azoles (which block its synthesis) and amphotericin B (which binds it and punches pores).\n\nTwo body plans. **Yeasts** are single cells that reproduce by budding; *Candida albicans* and *Cryptococcus neoformans* are yeasts. **Molds** grow as filaments called **hyphae** that form a visible mat called a **mycelium**; septate hyphae have cross-walls, coenocytic hyphae do not. **Dimorphic** fungi switch: mold at `25 degrees Celsius` in the environment, yeast at `37 degrees Celsius` in the body. *Histoplasma*, *Blastomyces*, *Coccidioides* and *Sporothrix* are the classic dimorphs.\n\nReproduction can be asexual (conidiospores, sporangiospores) or sexual (ascospores, basidiospores, zygospores), and that is how mycologists classify them.\n\nClinical categories: **superficial and cutaneous** (dermatophytes causing tinea — ringworm, athlete's foot, jock itch), **subcutaneous** (sporotrichosis, the \"rose gardener's disease\"), **systemic** (histoplasmosis from bird and bat droppings in the Ohio and Mississippi valleys, coccidioidomycosis or Valley fever in the southwestern deserts), and **opportunistic** (*Candida*, *Aspergillus*, *Pneumocystis jirovecii*, *Cryptococcus*) which strike only the immunocompromised.\n\n> **On shift:** Oral thrush in an adult with no obvious cause is a reason to think about HIV, inhaled steroids, or recent broad-spectrum antibiotics that wiped out competing flora.\n\n## Protozoa\n\nProtozoa are single-celled animal-like eukaryotes. Many alternate between a motile feeding **trophozoite** and a hardy **cyst** that survives outside the host and transmits infection. Chlorination does not reliably kill *Giardia* or *Cryptosporidium* cysts — filtration does.\n\nClassify by motility. **Amoebas** move with pseudopods: *Entamoeba histolytica* causes bloody amebic dysentery and liver abscess. **Flagellates** move with flagella: *Giardia lamblia* (greasy, foul diarrhea from streams or daycare), *Trichomonas vaginalis* (frothy green-yellow discharge, sexually transmitted, no cyst stage), *Trypanosoma* (African sleeping sickness, Chagas disease). **Ciliates**: *Balantidium coli*. **Apicomplexans** are non-motile intracellular parasites: *Plasmodium* (malaria, spread by the female *Anopheles* mosquito), *Toxoplasma gondii* (cat feces and undercooked meat; a major threat in pregnancy and in AIDS), *Cryptosporidium* (watery diarrhea, chlorine-resistant, a pool outbreak classic).\n\n## Helminths\n\nHelminths are multicellular worms, not microbes at all, but the micro course teaches them because they are infectious agents. They are diagnosed by finding eggs (ova) or larvae in stool.\n\n**Nematodes** (roundworms) include *Ascaris lumbricoides*, hookworm (*Necator*, larvae penetrate bare feet and cause iron-deficiency anemia), *Enterobius vermicularis* (pinworm, perianal itching at night, diagnosed with the cellophane tape test), and *Trichinella spiralis* from undercooked pork. **Cestodes** (tapeworms) are flat and segmented: *Taenia saginata* from beef, *Taenia solium* from pork (whose eggs can cause neurocysticercosis). **Trematodes** (flukes) are leaf-shaped: *Schistosoma* penetrates skin in fresh water.\n\nHelminth infections classically raise the **eosinophil** count — a peripheral eosinophilia on a CBC in a traveler is a parasite until proven otherwise.\n\n> **Trap:** \"Fungal\" does not mean \"harmless.\" *Cryptococcus neoformans* meningitis and invasive aspergillosis both kill, and the antifungals used against them (amphotericin B, \"ampho-terrible\") cause real nephrotoxicity.",
+      "keyPoints": [
+        "Fungal walls are chitin and membranes use ergosterol — the target of azoles and amphotericin B.",
+        "Dimorphic fungi are mold at 25 degrees Celsius and yeast at 37 degrees Celsius: Histoplasma, Blastomyces, Coccidioides, Sporothrix.",
+        "Protozoan cysts survive outside the host; Giardia and Cryptosporidium resist chlorination and require filtration.",
+        "Apicomplexans include Plasmodium, Toxoplasma and Cryptosporidium; Plasmodium is spread by the female Anopheles mosquito.",
+        "Helminth infection typically causes eosinophilia and is diagnosed by ova and parasites in stool."
+      ],
+      "checks": [
+        {
+          "q": "A culture grown at 25 degrees Celsius shows filamentous mold; the same organism at 37 degrees Celsius grows as budding yeast. This organism is best described as:",
+          "choices": [
+            "Coenocytic",
+            "Dimorphic",
+            "Saprophytic",
+            "Obligate anaerobe"
+          ],
+          "answer": 1,
+          "why": "Temperature-dependent switching between mold and yeast forms defines dimorphism. Coenocytic describes hyphae without septa, and saprophytic describes feeding on dead matter."
+        },
+        {
+          "q": "A municipal pool outbreak causes weeks of watery diarrhea despite normal chlorination. Most likely agent?",
+          "choices": [
+            "Cryptosporidium",
+            "Entamoeba histolytica",
+            "Trichomonas vaginalis",
+            "Taenia solium"
+          ],
+          "answer": 0,
+          "why": "Cryptosporidium oocysts are chlorine-resistant and cause prolonged watery diarrhea; filtration is required. Entamoeba causes bloody dysentery, Trichomonas is sexually transmitted, and Taenia comes from undercooked pork."
+        },
+        {
+          "q": "Why are antifungal drugs generally more toxic to humans than antibacterial drugs?",
+          "choices": [
+            "Fungi grow faster than bacteria",
+            "Fungi are eukaryotes with cell machinery similar to ours",
+            "Fungal walls contain peptidoglycan",
+            "Fungi have 70S ribosomes"
+          ],
+          "answer": 1,
+          "why": "Selective toxicity depends on differences between pathogen and host. Fungi are eukaryotes, so fewer unique targets exist; peptidoglycan and 70S ribosomes are bacterial features."
+        }
+      ]
+    },
+    {
+      "id": "sci-micro-l04",
+      "title": "Viruses, replication cycles and prions",
+      "minutes": 8,
+      "body": "A virus is an obligate intracellular parasite: a nucleic acid genome in a protein coat with no metabolism, no ribosomes, and no ability to make ATP. Outside a cell it is an inert particle. That is why we call it an agent rather than an organism, and why antibiotics do nothing to it.\n\n## Structure\n\nThe genome is **either DNA or RNA, never both**, and can be single- or double-stranded, linear or circular, segmented or not. The protein coat is the **capsid**, built from repeating subunits called **capsomeres**; genome plus capsid is the **nucleocapsid**. Capsid symmetry is helical, icosahedral, or complex (bacteriophages and poxviruses).\n\nSome viruses wrap themselves in host membrane on the way out — these are **enveloped**, and the envelope carries virus-coded **spikes** (influenza hemagglutinin and neuraminidase, SARS-CoV-2 spike, HIV gp120). Envelopes are lipid, so alcohol, soap and detergents destroy them easily. **Naked** (non-enveloped) viruses have only a protein capsid and are far more resistant to drying and disinfectants — norovirus and hepatitis A survive on surfaces and in food, which is why they cause outbreaks.\n\n> **Key:** Enveloped equals fragile and usually needs close contact or body fluids. Naked equals tough and spreads through surfaces, water and food.\n\nHost range is set by the fit between viral attachment protein and host cell receptor. HIV gp120 binds CD4 plus a co-receptor (CCR5 or CXCR4), which is why it destroys helper T cells specifically. Rabies binds acetylcholine receptors at the neuromuscular junction.\n\n## The five steps of animal virus replication\n\n1. **Attachment** to a specific receptor.\n2. **Penetration and uncoating** — enveloped viruses fuse with the membrane or enter by endocytosis; the capsid then comes apart.\n3. **Biosynthesis** — the genome directs synthesis of viral proteins and copies of the genome using host ribosomes.\n4. **Assembly (maturation)** of new virions.\n5. **Release** — naked viruses generally lyse the cell; enveloped viruses **bud**, taking membrane with them, which can let the cell survive and keep producing virus.\n\n## Lytic versus lysogenic\n\nBacteriophages make the distinction cleanest. In the **lytic cycle** the phage attaches, injects its DNA, takes over, assembles new phage and bursts the cell — five steps: attachment, penetration, biosynthesis, maturation, lysis. In the **lysogenic cycle** the phage DNA integrates into the bacterial chromosome as a **prophage** and is copied every time the cell divides. The cell is unharmed until an inducing event (UV light, stress) triggers the switch to lytic.\n\nLysogeny matters because of **lysogenic conversion**: the prophage gives the bacterium new properties. Diphtheria toxin, botulinum toxin, cholera toxin, scarlet fever erythrogenic toxin and Shiga toxin in *E. coli* O157:H7 are all phage-encoded. A harmless organism becomes a killer because a virus moved in. The animal-cell equivalent is **latency**: herpesviruses (HSV-1 in the trigeminal ganglion, varicella-zoster in dorsal root ganglia reactivating as shingles) and HIV provirus.\n\n## Retroviruses and oncogenic viruses\n\n**Retroviruses** carry `+ssRNA` plus **reverse transcriptase**, which makes DNA from RNA — backwards from the central dogma. **Integrase** then inserts that DNA into the host chromosome as a provirus, permanently. HIV and HTLV-1 are the human examples, and reverse transcriptase, integrase and protease are each drug targets.\n\nOncogenic viruses cause cancer by inserting genes that disrupt growth control: HPV types 16 and 18 (cervical cancer), hepatitis B and C (hepatocellular carcinoma), Epstein-Barr virus (Burkitt lymphoma, nasopharyngeal carcinoma), HTLV-1, and HHV-8 (Kaposi sarcoma).\n\nViruses are grown in embryonated eggs, live animals, or **cell culture**, where damage called **cytopathic effect (CPE)** — inclusion bodies, syncytia, rounding — is how you know infection took. Quantification uses the plaque assay, reported in plaque-forming units.\n\n## Subviral agents\n\n**Viroids** are naked short RNA circles that infect plants. **Prions** are the strange ones: infectious **proteins** with no nucleic acid at all. A misfolded PrP-Sc protein converts normal PrP-C into the misfolded form, which accumulates and produces spongy holes in the brain. Creutzfeldt-Jakob disease, variant CJD from bovine spongiform encephalopathy, kuru and scrapie are prion diseases. They resist autoclaving, formalin and radiation, and instrument decontamination requires extended autoclaving with `1 N sodium hydroxide`.\n\n> **Trap:** Prions are not killed by standard sterilization. This is the classic \"which agent survives the autoclave\" exam item, alongside endospores.",
+      "keyPoints": [
+        "A virus has DNA or RNA, never both, plus a capsid; enveloped viruses are fragile, naked viruses resist drying and disinfectants.",
+        "Animal replication: attachment, penetration and uncoating, biosynthesis, assembly, release by lysis or budding.",
+        "Lysogenic conversion via prophage gives bacteria toxin genes — diphtheria, botulinum, cholera, Shiga.",
+        "Retroviruses use reverse transcriptase and integrase to place a permanent DNA provirus in the host genome.",
+        "Prions are infectious misfolded proteins with no nucleic acid and survive standard autoclaving."
+      ],
+      "checks": [
+        {
+          "q": "A nonpathogenic Corynebacterium strain begins producing diphtheria toxin after phage infection. This is an example of:",
+          "choices": [
+            "Transformation",
+            "Lysogenic conversion",
+            "Transduction of a plasmid",
+            "Reverse transcription"
+          ],
+          "answer": 1,
+          "why": "A prophage integrated into the chromosome supplies the toxin gene, changing the phenotype — that is lysogenic conversion. Transformation is uptake of naked DNA, and reverse transcription is a retroviral step."
+        },
+        {
+          "q": "Norovirus spreads easily through contaminated surfaces and survives alcohol hand rubs. Which structural feature explains this?",
+          "choices": [
+            "It is enveloped",
+            "It is a naked virus with only a protein capsid",
+            "It has a helical capsid",
+            "It carries reverse transcriptase"
+          ],
+          "answer": 1,
+          "why": "Lipid envelopes are dissolved by alcohol and detergents; naked capsids are not, so they persist on surfaces. Capsid symmetry and reverse transcriptase do not determine environmental resistance."
+        },
+        {
+          "q": "Which enzyme is unique to retroviruses and makes DNA from an RNA template?",
+          "choices": [
+            "Integrase",
+            "Protease",
+            "Reverse transcriptase",
+            "RNA-dependent RNA polymerase"
+          ],
+          "answer": 2,
+          "why": "Reverse transcriptase makes DNA from RNA. Integrase then inserts that DNA, and protease cleaves polyproteins — both are retroviral but neither reverses the flow of information."
+        }
+      ]
+    },
+    {
+      "id": "sci-micro-l05",
+      "title": "Microbial growth, metabolism and culture",
+      "minutes": 8,
+      "body": "\"Growth\" in microbiology means an increase in the number of cells, not the size of one cell. Bacteria divide by **binary fission**, so growth is exponential: one cell becomes 2, 4, 8, 16. The **generation time** is how long a doubling takes — `20 minutes` for *E. coli* under ideal conditions, `15–20 hours` for *Mycobacterium tuberculosis*, which is why TB cultures take up to `6–8 weeks` and TB treatment lasts `6–9 months`.\n\nThe number of cells after n generations is starting number times `2^n`. Start with 100 cells and let *E. coli* grow `3 hours` at a 20-minute generation time: that is 9 generations, `100 x 2^9 = 51,200` cells.\n\n## The growth curve\n\nFour phases in a closed batch culture:\n\n- **Lag** — no division; cells are making enzymes and ribosomes and adapting.\n- **Log (exponential)** — constant maximum doubling. Cells are most metabolically active and **most susceptible to antibiotics**, because penicillin needs cells actively building wall.\n- **Stationary** — new cells equal dying cells as nutrients run out and waste accumulates. Endospores form here, and so do many exotoxins.\n- **Death (decline)** — exponential dying.\n\n> **Trap:** Antibiotics that target the cell wall do almost nothing to bacteria that are not dividing. That is part of why abscesses and biofilms fail medical therapy and need drainage.\n\n## Physical requirements\n\n**Temperature.** Psychrophiles grow in cold, mesophiles at `25–40 degrees Celsius` (nearly every human pathogen, optimum `37 degrees Celsius`), thermophiles at `50–60 degrees Celsius`, hyperthermophiles above `80 degrees Celsius`. *Listeria monocytogenes* is the exception that matters: it grows at refrigerator temperature, so deli meats and soft cheeses transmit it.\n\n**pH.** Most pathogens are neutrophiles, pH `6.5–7.5`. Molds and yeasts tolerate acid down to pH `5`. *Helicobacter pylori* survives stomach acid by making urease, which splits urea into ammonia and buffers its microenvironment — that is also the basis of the urea breath test.\n\n**Osmotic pressure.** High salt or sugar pulls water out of cells (plasmolysis), which is why salting and candying preserve food. **Halophiles** need salt; *Staphylococcus aureus* is halotolerant up to `7.5%` NaCl, which is what mannitol salt agar exploits.\n\n## Oxygen\n\n- **Obligate aerobe** — needs O2 (*Mycobacterium tuberculosis*, *Pseudomonas aeruginosa*).\n- **Obligate anaerobe** — killed by O2 (*Clostridium*, *Bacteroides*).\n- **Facultative anaerobe** — uses O2 when present, ferments when not (*E. coli*, *Staphylococcus*). Most clinical isolates.\n- **Aerotolerant anaerobe** — ignores O2, never uses it (*Lactobacillus*).\n- **Microaerophile** — needs low O2, `2–10%` (*Campylobacter*, *Helicobacter*).\n\nOxygen is toxic because metabolism generates superoxide and hydrogen peroxide. Aerobes survive by making **superoxide dismutase** and **catalase**; anaerobes lack them. The catalase test (bubbles in hydrogen peroxide) separates *Staphylococcus* (catalase positive) from *Streptococcus* (negative).\n\n## Energy metabolism\n\n**Aerobic respiration** oxidizes glucose completely, using O2 as the final electron acceptor, and nets about `38 ATP` in prokaryotes. **Anaerobic respiration** uses an inorganic acceptor such as nitrate or sulfate and yields less. **Fermentation** uses an organic molecule as the final electron acceptor, regenerates NAD+, and nets only `2 ATP` — but it is fast and it produces the acids and gases that identification tests read: lactic acid, ethanol and CO2, mixed acids, or 2,3-butanediol.\n\n## Culture media\n\n- **Chemically defined** — exact composition known.\n- **Complex** — extracts and digests (nutrient broth, tryptic soy).\n- **Selective** — inhibits unwanted organisms (MacConkey with bile salts and crystal violet grows only Gram-negatives; mannitol salt at `7.5%` NaCl selects staphylococci).\n- **Differential** — makes colonies look different (blood agar shows beta, alpha or gamma hemolysis; MacConkey turns lactose fermenters pink).\n- **Enrichment** — favors a small population so it can be detected.\n\nAnaerobes are grown in reducing media with sodium thioglycolate, in anaerobic jars, or in anaerobic chambers.\n\n## Counting\n\n**Direct plate count (serial dilution)** reports **colony-forming units per milliliter**; a countable plate has `25–250` colonies, and CFU/mL equals colonies divided by (dilution factor times volume plated). **Direct microscopic count** counts everything, alive or dead. **Turbidity** by spectrophotometer is fast and indirect. **Most probable number** is a statistical method for water testing.",
+      "keyPoints": [
+        "Growth is exponential: N = N0 times 2^n. E. coli doubles in about 20 minutes, M. tuberculosis in 15–20 hours.",
+        "Log phase cells are most susceptible to antibiotics; stationary phase makes spores and many toxins.",
+        "Oxygen classes: obligate aerobe, obligate anaerobe, facultative anaerobe, aerotolerant, microaerophile; catalase and superoxide dismutase are the survival enzymes.",
+        "Aerobic respiration nets about 38 ATP; fermentation nets 2 ATP but regenerates NAD+ and produces the acids used for identification.",
+        "Plate counts report CFU/mL from plates with 25–250 colonies; MacConkey is selective and differential."
+      ],
+      "checks": [
+        {
+          "q": "A culture of 500 cells with a 30-minute generation time is incubated for 3 hours. How many cells are present?",
+          "choices": [
+            "3,000",
+            "16,000",
+            "32,000",
+            "64,000"
+          ],
+          "answer": 2,
+          "why": "Three hours at 30 minutes per generation is 6 generations: 500 times 2^6 equals 500 times 64 equals 32,000. Multiplying by 6 instead of 2^6 gives the wrong 3,000."
+        },
+        {
+          "q": "Why is penicillin least effective against bacteria in stationary phase?",
+          "choices": [
+            "Stationary cells pump the drug out",
+            "Penicillin requires active peptidoglycan synthesis to act",
+            "Stationary cells switch to 80S ribosomes",
+            "Penicillin is inactivated at stationary pH"
+          ],
+          "answer": 1,
+          "why": "Beta-lactams block cross-linking during wall construction, so a cell that is not building wall is largely spared. Efflux and ribosome changes are unrelated mechanisms."
+        },
+        {
+          "q": "A plate from a 1:10,000 dilution with 0.1 mL plated yields 60 colonies. What is the original concentration?",
+          "choices": [
+            "6.0 x 10^4 CFU/mL",
+            "6.0 x 10^5 CFU/mL",
+            "6.0 x 10^6 CFU/mL",
+            "6.0 x 10^7 CFU/mL"
+          ],
+          "answer": 2,
+          "why": "CFU/mL equals 60 divided by (10^-4 times 0.1) equals 60 divided by 10^-5 equals 6.0 x 10^6. Forgetting the 0.1 mL volume gives the incorrect 6.0 x 10^5."
+        }
+      ]
+    },
+    {
+      "id": "sci-micro-l06",
+      "title": "Control of microbial growth: sterilization, disinfection, antisepsis",
+      "minutes": 7,
+      "body": "Hospitals use these words precisely, and the exam tests the definitions before it tests anything else.\n\n- **Sterilization** — destruction of *all* microbial life, including endospores. Absolute. No such thing as \"mostly sterile.\"\n- **Disinfection** — killing or removing pathogens from an inanimate object. Does not necessarily kill spores.\n- **Antisepsis** — the same process on living tissue.\n- **Sanitization** — reducing microbial counts to a safe public-health level, as in restaurant dishwashing.\n- **Degerming** — mechanical removal, such as the alcohol swab before an injection.\n- **-cide** kills (bactericide, virucide, sporicide, fungicide). **-static** inhibits growth without killing (bacteriostatic). A static agent depends on the host immune system to finish the job.\n\n> **Key:** Sterilize instruments. Disinfect surfaces. Apply antiseptics to skin. Using the wrong verb on the exam is the fastest way to miss a question.\n\n## How killing actually works\n\nAntimicrobial agents work by damaging the plasma membrane, denaturing proteins, or damaging nucleic acids. Microbial death is **logarithmic** — a constant fraction dies per unit time, not a constant number. That is why the amount of time matters and why heavier organic loads (blood, feces, pus) require longer contact times.\n\nEffectiveness depends on the number of microbes present, their type (spores and mycobacteria are hardest), the environment (organic matter, pH, temperature), the concentration of agent, and **contact time**.\n\nResistance order, easiest to hardest: enveloped viruses, Gram-positive bacteria, Gram-negative bacteria, fungi, naked viruses, mycobacteria, endospores, prions.\n\n## Physical methods\n\n**Moist heat** kills by denaturing protein and is far more efficient than dry heat. Boiling at `100 degrees Celsius` for `10 minutes` kills vegetative cells and most viruses but **not endospores**. The **autoclave** uses steam under pressure: `121 degrees Celsius` at `15 psi` for `15 minutes` at the point of contact. Steam must touch every surface, so overpacked loads and trapped air cause failures. Confirm with a biological indicator — spores of *Geobacillus stearothermophilus*.\n\n**Pasteurization** is not sterilization. Classic batch is `63 degrees Celsius for 30 minutes`; high-temperature short-time is `72 degrees Celsius for 15 seconds`; ultra-high temperature is `140 degrees Celsius for 3 seconds` and does produce a sterile product.\n\n**Dry heat** needs `170 degrees Celsius for 2 hours` in a hot-air oven; incineration is the most complete method of all.\n\n**Filtration** removes microbes from heat-sensitive liquids such as vaccines and antibiotics. A `0.22 micrometer` membrane filter retains bacteria; HEPA filters air in operating rooms and airborne-isolation rooms.\n\n**Cold** is bacteriostatic, not bactericidal — refrigeration slows growth, freezing preserves organisms. **Desiccation**, **osmotic pressure** (salting, sugaring) and **lyophilization** inhibit rather than kill.\n\n**Radiation.** Ionizing radiation (gamma, X-ray, electron beam) penetrates deeply and is used for disposable plastics, sutures and some foods. Nonionizing UV at `260 nanometers` forms thymine dimers in DNA but does not penetrate glass, plastic or dirt — it is surface and air decontamination only.\n\n## Chemical methods\n\n- **Alcohols** — `60–90%` ethanol or isopropanol; denature protein and dissolve lipids. Need water to work, so `70%` beats `100%`. Not sporicidal. The basis of hand rubs.\n- **Chlorine** — household bleach diluted `1:10` for blood spills; forms hypochlorous acid. Inactivated by organic matter.\n- **Iodophors** — povidone-iodine, a skin antiseptic; needs `2 minutes` of dry time.\n- **Chlorhexidine** — binds to skin and keeps killing for hours; standard for surgical scrub and central-line insertion, usually as `2%` chlorhexidine in `70%` alcohol.\n- **Hydrogen peroxide** — poor on skin because human catalase destroys it; excellent for surfaces, and vaporized H2O2 sterilizes rooms.\n- **Glutaraldehyde** at `2%` is a chemical sterilant for endoscopes at `10 hours`. **Ortho-phthalaldehyde** is its faster replacement.\n- **Ethylene oxide gas** sterilizes heat-sensitive equipment but takes hours and is a carcinogen.\n- **Quaternary ammonium compounds (quats)** — safe, common surface disinfectants, but weak against *Pseudomonas* and non-sporicidal.\n- **Phenolics** — stable in organic matter, used in laboratory and hospital surface disinfection.\n\n> **On shift:** Alcohol foam is the default for hand hygiene, but it does **not** kill *Clostridioides difficile* spores or norovirus. Those require soap and water plus physical friction, and the room gets bleach.",
+      "keyPoints": [
+        "Sterilization kills everything including spores; disinfection is for objects; antisepsis is for living tissue.",
+        "Autoclave: 121 degrees Celsius, 15 psi, 15 minutes, verified with Geobacillus stearothermophilus spores.",
+        "70% alcohol beats 100% because water is required for protein denaturation; alcohol is not sporicidal.",
+        "UV at 260 nanometers makes thymine dimers but does not penetrate glass, plastic or soil.",
+        "C. difficile and norovirus require soap-and-water handwashing and bleach, not alcohol foam."
+      ],
+      "checks": [
+        {
+          "q": "An instrument is soaked in 70% alcohol for 20 minutes. Which claim is accurate?",
+          "choices": [
+            "It is now sterile",
+            "It is disinfected but not sterile because spores survive",
+            "It is sanitized only",
+            "It is degermed"
+          ],
+          "answer": 1,
+          "why": "Alcohol is not sporicidal, so sterility cannot be claimed. Sanitization refers to reducing counts to a public-health standard and degerming refers to mechanical removal from skin."
+        },
+        {
+          "q": "Why is 70% alcohol more effective than 95% alcohol?",
+          "choices": [
+            "It penetrates spores better",
+            "Water is needed to denature proteins",
+            "It has a lower flash point",
+            "It evaporates more slowly, increasing contact time only"
+          ],
+          "answer": 1,
+          "why": "Protein denaturation requires water; absolute alcohol dehydrates the surface and coagulates it without penetrating. Alcohol never kills spores at any concentration."
+        },
+        {
+          "q": "A patient has C. difficile colitis. Which hand hygiene is required after contact?",
+          "choices": [
+            "Alcohol-based hand rub",
+            "Soap and water handwashing",
+            "Chlorhexidine rinse without water",
+            "Povidone-iodine scrub"
+          ],
+          "answer": 1,
+          "why": "C. difficile forms endospores that alcohol does not kill; friction with soap and water physically removes them. Chemical antiseptics alone do not solve a spore problem."
+        }
+      ]
+    },
+    {
+      "id": "sci-micro-l07",
+      "title": "Microbial genetics and how resistance spreads",
+      "minutes": 8,
+      "body": "Bacteria evolve fast for two reasons: they divide in minutes, and they trade genes sideways with unrelated organisms. Understanding both is understanding antibiotic resistance.\n\n## The basics\n\nThe **genotype** is the genetic makeup; the **phenotype** is what is expressed. Bacterial DNA replication is bidirectional from a single origin and is semiconservative. Transcription makes mRNA, and because prokaryotes have no nucleus, translation begins while transcription is still going. Genes for one pathway sit together in an **operon** controlled by one promoter — the *lac* operon (inducible, off until lactose appears) and the *trp* operon (repressible, on until tryptophan accumulates) are the two every course covers.\n\n## Mutation\n\nA **mutation** is a permanent change in the base sequence. **Point mutation** (base substitution) can be **silent** (same amino acid), **missense** (different amino acid), or **nonsense** (premature stop). **Frameshift** mutations from insertion or deletion of bases not in multiples of three scramble everything downstream and are usually devastating.\n\nSpontaneous mutation rate is roughly `1 in 10^9` per base per replication — vanishingly small per cell, but a single colony contains `10^9` cells, so mutants are always present. Mutagens raise the rate: chemical mutagens such as nitrous acid and base analogs, and radiation (X-rays cause breaks; UV causes thymine dimers).\n\nThe **Ames test** uses a histidine-requiring *Salmonella* strain to screen chemicals for mutagenicity — reversion to growth without histidine means the chemical is a mutagen, and mutagens correlate with carcinogens.\n\n> **Key:** Antibiotics do not create resistance. They kill the susceptible majority and leave the rare pre-existing mutant to repopulate. That is selection, not induction.\n\n## Horizontal gene transfer\n\nVertical transfer is parent to offspring. **Horizontal** transfer moves genes between existing cells, even across species, and is why resistance spreads faster than mutation alone can explain. Three mechanisms:\n\n**Transformation** — the cell takes up naked DNA released from a dead neighbor. The cell must be **competent**. Griffith showed this in 1928 with *Streptococcus pneumoniae*: heat-killed virulent S strain plus live harmless R strain killed mice, because the R strain absorbed the capsule gene. Avery, MacLeod and McCarty later proved the transforming substance was DNA.\n\n**Transduction** — bacteriophage carries bacterial DNA from one cell to another. **Generalized** transduction packages any random fragment during lytic assembly; **specialized** transduction moves genes adjacent to the prophage site when it excises imprecisely.\n\n**Conjugation** — direct transfer through a **sex pilus** encoded by the F plasmid. F+ donor transfers a copy of the plasmid to an F- recipient, making it F+. An Hfr cell has the F factor integrated into the chromosome and transfers chromosomal genes. Conjugation moves **R plasmids**, which frequently carry several resistance genes at once, so one transfer event can create a multidrug-resistant organism.\n\n**Transposons** (\"jumping genes\") move within and between DNA molecules, carrying resistance genes onto plasmids that then conjugate. **Integrons** collect gene cassettes the same way.\n\n## Resistance mechanisms\n\nFive to memorize:\n\n1. **Enzymatic destruction or modification** — beta-lactamases hydrolyze the beta-lactam ring; extended-spectrum beta-lactamases (ESBL) defeat third-generation cephalosporins; carbapenemases (KPC, NDM) defeat carbapenems; aminoglycoside-modifying enzymes acetylate or phosphorylate the drug.\n2. **Target alteration** — MRSA's *mecA* gene makes PBP2a, a penicillin-binding protein beta-lactams cannot bind, which makes the organism resistant to every beta-lactam at once. VRE alters the peptidoglycan terminus from D-Ala-D-Ala to D-Ala-D-Lac so vancomycin cannot bind. Ribosomal methylation blocks macrolides.\n3. **Decreased permeability** — porin loss in *Pseudomonas* and *Acinetobacter*.\n4. **Efflux pumps** — actively export the drug, often several classes at once.\n5. **Bypass or overproduction of the target** — extra PABA overwhelming sulfonamides.\n\n> **On shift:** Every course of antibiotics selects resistance somewhere in the patient's flora. That is the whole argument behind antibiotic stewardship, narrow-spectrum choices, and not treating viral upper respiratory infections.",
+      "keyPoints": [
+        "Mutation types: silent, missense, nonsense, frameshift; spontaneous rate about 1 in 10^9 per base per replication.",
+        "Transformation takes up naked DNA, transduction uses a phage vector, conjugation uses a sex pilus and an F or R plasmid.",
+        "R plasmids and transposons move multiple resistance genes at once, creating multidrug resistance in a single event.",
+        "MRSA resistance is mecA producing PBP2a; VRE changes D-Ala-D-Ala to D-Ala-D-Lac.",
+        "Antibiotics select for pre-existing resistant mutants rather than causing the mutation."
+      ],
+      "checks": [
+        {
+          "q": "An E. coli isolate acquires resistance to ampicillin, gentamicin and sulfonamide simultaneously after contact with a Klebsiella isolate. Most likely mechanism?",
+          "choices": [
+            "Spontaneous point mutation",
+            "Conjugative transfer of an R plasmid",
+            "Generalized transduction",
+            "Frameshift mutation in a porin gene"
+          ],
+          "answer": 1,
+          "why": "Simultaneous multidrug resistance across species points to a conjugative R plasmid carrying several genes. A point or frameshift mutation would affect one target, and transduction is far less efficient for this pattern."
+        },
+        {
+          "q": "MRSA is resistant to all beta-lactams because mecA encodes:",
+          "choices": [
+            "A broad-spectrum beta-lactamase",
+            "An efflux pump",
+            "PBP2a, an altered penicillin-binding protein",
+            "A modified 50S ribosomal subunit"
+          ],
+          "answer": 2,
+          "why": "PBP2a still builds cell wall but has low affinity for beta-lactams, so the entire class fails. Beta-lactamase alone is defeated by a beta-lactamase inhibitor, which is why the distinction matters."
+        },
+        {
+          "q": "The Ames test detects a chemical's potential to be:",
+          "choices": [
+            "Bactericidal",
+            "Mutagenic and likely carcinogenic",
+            "Sporicidal",
+            "Immunosuppressive"
+          ],
+          "answer": 1,
+          "why": "Reversion of a histidine-auxotroph Salmonella to growth without histidine indicates mutation, and mutagenicity correlates strongly with carcinogenicity. The test measures mutation, not killing."
+        }
+      ]
+    },
+    {
+      "id": "sci-micro-l08",
+      "title": "Antimicrobial drugs: classes, mechanisms and testing",
+      "minutes": 8,
+      "body": "The governing principle is **selective toxicity**: harm the microbe more than the host. It works best when the drug hits a target that exists in the pathogen and not in us — peptidoglycan, 70S ribosomes, bacterial folate synthesis, DNA gyrase.\n\n**Spectrum** describes range. Narrow-spectrum drugs hit a limited group; broad-spectrum drugs hit many, which sounds better but wipes out normal flora and invites **superinfection** — *C. difficile* colitis and *Candida* overgrowth are the classic consequences.\n\nDrugs are **bactericidal** (kill) or **bacteriostatic** (stop growth, leaving the immune system to clear). In a neutropenic patient or in endocarditis and meningitis, you want cidal.\n\n## Cell wall inhibitors (bactericidal)\n\n**Beta-lactams** share a beta-lactam ring and bind penicillin-binding proteins, blocking peptidoglycan cross-linking.\n\n- Penicillins: natural penicillin G and V (narrow, Gram-positive, *Streptococcus*, syphilis); antistaphylococcal nafcillin and oxacillin (beta-lactamase resistant); aminopenicillins amoxicillin and ampicillin (extended to some Gram-negatives); piperacillin (antipseudomonal).\n- Beta-lactamase inhibitor combinations: amoxicillin-clavulanate, piperacillin-tazobactam. The inhibitor has almost no antibacterial activity itself; it protects the partner drug.\n- Cephalosporins by generation, gaining Gram-negative coverage and losing Gram-positive as you go up: first (cefazolin, surgical prophylaxis), second (cefuroxime), third (ceftriaxone, crosses into CSF — the meningitis and gonorrhea drug), fourth (cefepime), fifth (ceftaroline, covers MRSA).\n- Carbapenems (meropenem, ertapenem) are the broadest, reserved for resistant Gram-negatives. Monobactam aztreonam is Gram-negative only and safe in severe penicillin allergy.\n\n**Vancomycin** is a glycopeptide that binds the D-Ala-D-Ala terminus rather than an enzyme. Gram-positive only — it cannot cross the Gram-negative outer membrane. It is the MRSA workhorse, requires level monitoring, and causes \"red man syndrome\" if infused too quickly (a histamine reaction, not an allergy).\n\n## Protein synthesis inhibitors (70S target)\n\n- **30S**: aminoglycosides (gentamicin, tobramycin, amikacin) are bactericidal, aerobic Gram-negative coverage, with nephrotoxicity and ototoxicity that require trough monitoring. Tetracyclines and doxycycline are static, broad, cover atypicals and tick-borne illness, chelate calcium, and are avoided in pregnancy and in children under `8 years`.\n- **50S**: macrolides (azithromycin, erythromycin) cover atypical pneumonia and prolong the QT interval; clindamycin covers anaerobes above the diaphragm and carries the strongest *C. difficile* association; linezolid (oxazolidinone) covers MRSA and VRE; chloramphenicol causes aplastic anemia and is now rare.\n\n## Nucleic acid and metabolic inhibitors\n\n**Fluoroquinolones** (ciprofloxacin, levofloxacin, moxifloxacin) inhibit DNA gyrase and topoisomerase IV; bactericidal and broad, but carry tendon rupture, QT prolongation, and CNS effects. **Rifampin** blocks RNA polymerase, turns secretions orange, and is never used alone because resistance develops quickly. **Metronidazole** is activated inside anaerobes and damages their DNA — the drug for anaerobes below the diaphragm, *C. difficile*, *Trichomonas* and *Giardia*.\n\n**Sulfonamides and trimethoprim** block sequential steps in folate synthesis. Bacteria must make their own folate; we absorb ours from the diet — that is the selective toxicity. Given together as TMP-SMX, the blockade is synergistic and bactericidal.\n\n**Isoniazid, ethambutol and pyrazinamide** target the mycobacterial cell wall; TB regimens use `RIPE` (rifampin, isoniazid, pyrazinamide, ethambutol) for `2 months` then rifampin plus isoniazid for `4 more`, because monotherapy breeds resistance in a slow-growing organism.\n\n**Antifungals** target ergosterol: azoles inhibit its synthesis, amphotericin B binds it and forms pores, echinocandins block beta-glucan wall synthesis instead. **Antivirals** are mostly nucleoside analogs (acyclovir, which requires viral thymidine kinase for activation) or enzyme inhibitors (oseltamivir blocks neuraminidase; HIV therapy combines reverse transcriptase, integrase and protease inhibitors).\n\n## Susceptibility testing\n\n**Kirby-Bauer disk diffusion**: antibiotic disks on a lawn of organism, zone of inhibition measured in millimeters and compared to a standardized table to report S, I or R. Zone size alone does not rank potency across drugs.\n\n**MIC** is the minimum inhibitory concentration — the lowest concentration preventing visible growth, by broth dilution or E-test gradient strip. **MBC** is the minimum bactericidal concentration, the lowest that kills `99.9%`.\n\n> **On the exam:** Report a bigger zone as \"susceptible,\" not as \"stronger.\" And remember the therapeutic index: the higher the ratio of toxic dose to therapeutic dose, the safer the drug.",
+      "keyPoints": [
+        "Selective toxicity targets what bacteria have and we do not: peptidoglycan, 70S ribosomes, folate synthesis, DNA gyrase.",
+        "Beta-lactams and vancomycin are bactericidal wall inhibitors; vancomycin is Gram-positive only.",
+        "30S inhibitors are aminoglycosides and tetracyclines; 50S inhibitors are macrolides, clindamycin and linezolid.",
+        "Broad-spectrum use causes superinfection: C. difficile colitis and Candida overgrowth.",
+        "MIC is the lowest concentration preventing growth; MBC kills 99.9%; Kirby-Bauer zones translate to S, I or R."
+      ],
+      "checks": [
+        {
+          "q": "A patient develops profuse diarrhea after 10 days of clindamycin. What happened?",
+          "choices": [
+            "Direct drug toxicity to enterocytes",
+            "Superinfection with C. difficile after loss of normal flora",
+            "Allergic colitis",
+            "Malabsorption from the drug binding bile"
+          ],
+          "answer": 1,
+          "why": "Broad anaerobic coverage eliminates competing colonic flora and lets C. difficile overgrow and release toxins. It is an ecological effect, not a direct toxicity or allergy."
+        },
+        {
+          "q": "Why is vancomycin ineffective against E. coli?",
+          "choices": [
+            "E. coli lacks D-Ala-D-Ala",
+            "The molecule is too large to cross the Gram-negative outer membrane",
+            "E. coli produces vancomycin-hydrolyzing enzymes",
+            "E. coli has 80S ribosomes"
+          ],
+          "answer": 1,
+          "why": "Gram-negatives have the D-Ala-D-Ala target, but the outer membrane physically excludes the large glycopeptide. Enzymatic hydrolysis of vancomycin is not a described mechanism and all bacteria have 70S ribosomes."
+        },
+        {
+          "q": "Sulfonamides are selectively toxic because:",
+          "choices": [
+            "Human cells lack folate entirely",
+            "Bacteria synthesize folate while humans absorb it from the diet",
+            "Human folate synthase is bactericidal",
+            "Sulfonamides only enter cells with 70S ribosomes"
+          ],
+          "answer": 1,
+          "why": "The pathway, not the molecule, is the difference: bacteria must build folate from PABA and we take ours in preformed, so blocking synthesis spares us. Humans absolutely require folate, just not by synthesis."
+        }
+      ]
+    },
+    {
+      "id": "sci-micro-l09",
+      "title": "Host-microbe interactions, virulence and epidemiology",
+      "minutes": 8,
+      "body": "Most microbes on you are not trying to hurt you. The average adult carries roughly `10^13` human cells and at least as many bacterial cells. Disease is the exception, and it requires a specific set of conditions.\n\n## Normal flora and relationships\n\n**Resident microbiota** live on you permanently; **transient microbiota** pass through. They protect you by **microbial antagonism** — occupying attachment sites, consuming nutrients, and producing acids and bacteriocins. Wipe them out with antibiotics and the niche gets filled by something worse.\n\nRelationships: **commensalism** (one benefits, the other unaffected), **mutualism** (both benefit — *E. coli* makes vitamin K for us), **parasitism** (one benefits, the host is harmed). An **opportunistic pathogen** is harmless in its usual place and dangerous when it moves or when the host weakens: *E. coli* is normal in the colon and causes urinary tract infection in the bladder.\n\n> **Trap:** Skin, mouth, upper airway, GI tract and distal urethra all have normal flora. Blood, CSF, lower airway, bladder urine and deep tissues are normally **sterile** — an organism recovered there is almost always significant.\n\n## Koch's postulates\n\n1. The organism must be present in every case of the disease and absent in healthy hosts.\n2. It must be isolated and grown in pure culture.\n3. Inoculating a healthy susceptible host must reproduce the disease.\n4. The organism must be re-isolated from that host and match.\n\nThe exceptions matter: organisms that cannot be cultured (*Treponema pallidum*, *Mycobacterium leprae*), diseases with no animal model, polymicrobial diseases, asymptomatic carriers, and one organism causing several diseases.\n\n## Virulence factors\n\n**Pathogenicity** is the ability to cause disease; **virulence** is the degree. **ID50** is the infectious dose for `50%` of hosts, and **LD50** is the lethal dose. Low ID50 means highly infectious — *Shigella* needs as few as `10–100` organisms, while *Vibrio cholerae* needs about `10^8`.\n\nEntry is through **portals of entry**: mucous membranes (respiratory is most common), skin (hair follicles and breaks), or the **parenteral route** (punctures, bites, surgery). The right organism in the wrong portal often causes nothing.\n\nAdherence uses adhesins on fimbriae, glycocalyx and spikes. Evasion uses capsules, M protein (*S. pyogenes*), coagulase (clots plasma to wall off the organism), leukocidins, IgA protease, and antigenic variation. Spread uses hyaluronidase and collagenase to digest connective tissue, and kinases to dissolve clots.\n\n**Exotoxins** are secreted proteins from both Gram-positive and Gram-negative bacteria. They are highly potent, specific, heat-labile, and convertible to **toxoids** for vaccines (tetanus, diphtheria). Types: A-B toxins (diphtheria, botulinum, cholera, tetanus), membrane-disrupting toxins (alpha-toxin, streptolysin), and **superantigens**, which nonspecifically activate huge numbers of T cells and dump cytokines — toxic shock syndrome.\n\n**Endotoxin** is lipid A, Gram-negative only, part of the wall, released on lysis, heat-stable, weakly immunogenic, and always produces the same picture: fever, chills, hypotension, shock, DIC. There is no endotoxoid vaccine.\n\n## Course of infection\n\nFive stages: **incubation** (exposure to first symptom), **prodromal** (vague early symptoms), **illness** (peak, most severe), **decline**, **convalescence**. Communicability often peaks during the prodrome, before anyone knows they are sick.\n\nDisease patterns: **acute** versus **chronic**; **latent** (dormant, reactivates); **local**, **focal**, **systemic**; **bacteremia** (bacteria in blood) versus **septicemia** (multiplying and causing illness); **primary** versus **secondary** infection; **subclinical** (no symptoms, still transmitting).\n\n## Epidemiology\n\n**Incidence** is new cases in a period; **prevalence** is total existing cases. **Sporadic** is occasional, **endemic** is constantly present in a region, **epidemic** is more than expected, **pandemic** is worldwide.\n\nThe **chain of infection**: infectious agent, reservoir, portal of exit, mode of transmission, portal of entry, susceptible host. Break any link and transmission stops — hand hygiene breaks contact transmission, masks break droplet and airborne, and immunization removes the susceptible host.\n\n**Reservoirs** are human (including carriers), animal (**zoonoses** — rabies, Lyme, plague, brucellosis), or nonliving (soil for tetanus and botulism, water). **Transmission** is contact (direct, indirect via fomites, droplet at short range), vehicle (airborne on droplet nuclei over `5 micrometers` distance, waterborne, foodborne), or **vector** (mechanical carriage on the body, or biological where the pathogen develops inside the arthropod).\n\n**Healthcare-associated infection (HAI)**, formerly nosocomial, affects roughly `1 in 31` hospitalized patients on any given day in the United States. The big four are catheter-associated UTI (CAUTI), central-line-associated bloodstream infection (CLABSI), ventilator-associated pneumonia (VAP) and surgical site infection. Most are device-related, which is why the most effective intervention is removing the device as soon as it is not needed. **Herd immunity** protects the unvaccinated when enough of the population is immune — the threshold is about `95%` for measles and `80–85%` for polio.",
+      "keyPoints": [
+        "Blood, CSF, lower airway, bladder urine and deep tissue are normally sterile; other surfaces carry protective normal flora.",
+        "Exotoxins are secreted, potent, heat-labile proteins convertible to toxoids; endotoxin is heat-stable lipid A causing fever and shock.",
+        "Koch's postulates fail for unculturable organisms, absent animal models, carriers and polymicrobial disease.",
+        "Chain of infection: agent, reservoir, portal of exit, transmission, portal of entry, susceptible host — break any link.",
+        "HAIs affect about 1 in 31 inpatients daily; CAUTI, CLABSI, VAP and SSI are mostly device-driven."
+      ],
+      "checks": [
+        {
+          "q": "A tampon-using patient presents with high fever, diffuse rash and hypotension. Blood cultures are negative. Which virulence mechanism best explains this?",
+          "choices": [
+            "Endotoxin from a Gram-negative bacteremia",
+            "Superantigen exotoxin causing massive cytokine release",
+            "A-B toxin blocking acetylcholine release",
+            "Capsular evasion of phagocytosis"
+          ],
+          "answer": 1,
+          "why": "TSST-1 is a superantigen: it cross-links T-cell receptors nonspecifically, so disease occurs without bloodstream invasion, explaining negative cultures. Endotoxin requires Gram-negative bacteremia and A-B neurotoxins cause paralysis, not rash."
+        },
+        {
+          "q": "Which pairing of epidemiology terms is correct?",
+          "choices": [
+            "Incidence is total existing cases; prevalence is new cases",
+            "Endemic means more cases than expected; epidemic means constantly present",
+            "Incidence is new cases; prevalence is total existing cases",
+            "Sporadic means worldwide; pandemic means occasional"
+          ],
+          "answer": 2,
+          "why": "Incidence counts new cases in a defined period and prevalence counts all cases present. The other options invert endemic and epidemic or sporadic and pandemic."
+        },
+        {
+          "q": "The single most effective intervention against catheter-associated urinary tract infection is:",
+          "choices": [
+            "Daily prophylactic antibiotics",
+            "Removing the catheter as soon as it is no longer indicated",
+            "Irrigating the catheter with saline",
+            "Changing the drainage bag daily"
+          ],
+          "answer": 1,
+          "why": "Risk accrues per catheter-day, so eliminating device days removes the portal of entry. Prophylactic antibiotics select resistance and routine irrigation breaks the closed system, increasing risk."
+        }
+      ]
+    },
+    {
+      "id": "sci-micro-l10",
+      "title": "Immunity, vaccines and the pathogens by body system",
+      "minutes": 9,
+      "body": "## Innate immunity\n\nInnate defenses are present at birth, act within minutes to hours, and are not specific to any one organism. First line: intact skin, mucous membranes, the mucociliary escalator, lysozyme in tears and saliva, stomach acid at pH `1.2–3.0`, normal flora, and flushing by urine and tears.\n\nSecond line: **phagocytes** (neutrophils first, then macrophages); **inflammation** with its four signs — redness, heat, swelling, pain; **fever**, when pyrogens including lipid A reset the hypothalamus; **complement**, a cascade of about 30 proteins activated by classical, alternative or lectin pathways, giving opsonization, chemotaxis, and the C5b-C9 **membrane attack complex** that lyses Gram-negative cells; and **interferons**, which warn neighboring cells to block viral replication. Toll-like receptors recognize conserved patterns (PAMPs) such as LPS and viral RNA.\n\n## Adaptive immunity\n\nSpecific, slower on first exposure, and it remembers. An **antigen** is what the immune system recognizes; the piece actually bound is the **epitope**.\n\n**Humoral immunity** comes from B cells, which mature in bone marrow; their plasma-cell descendants make antibodies against extracellular pathogens and toxins. **Cell-mediated immunity** comes from T cells, which mature in the thymus. Helper T cells (CD4) coordinate everything; cytotoxic T cells (CD8) kill virus-infected and tumor cells. HIV destroys CD4 cells, which is why it collapses both arms.\n\nAntibody classes: **IgG** is `80%` of serum antibody, the only class crossing the placenta, and the main secondary-response antibody. **IgM** is the large pentamer, first produced in a new infection, best at complement fixation. **IgA** is the dimer in secretions and breast milk. **IgE** binds mast cells and drives allergy and parasite defense. **IgD** sits on B cells as a receptor.\n\nThe **primary response** takes `5–10 days` with mostly IgM and a low titer. The **secondary (anamnestic) response** is faster, larger and IgG-dominant because memory cells exist. That is the entire logic of boosters.\n\nFour kinds of acquired immunity: naturally active (infection), naturally passive (maternal IgG across placenta, IgA in milk), artificially active (vaccination), artificially passive (immune globulin, antivenom — immediate but temporary, `weeks to months`).\n\n**Vaccine types**: live attenuated (MMR, varicella, oral polio) give strong lifelong immunity but are contraindicated in pregnancy and in immunosuppression; inactivated (hepatitis A, injectable polio, most influenza) are safer but need boosters; subunit and conjugate (hepatitis B, HPV, Hib, pneumococcal) use purified pieces, with conjugation to protein making polysaccharides immunogenic in infants under `2 years`; toxoid (tetanus, diphtheria, boosted every `10 years`); mRNA (COVID-19).\n\n**Serology** uses antibody-antigen specificity as a test: agglutination, ELISA, Western blot, immunofluorescence, rapid lateral-flow. A rising titer between acute and convalescent sera, or IgM, means recent infection; IgG alone means past exposure or vaccination.\n\n> **Key:** IgM means now. IgG means before, or a booster response.\n\n## Pathogens by body system\n\n**Skin and wounds.** *Staphylococcus aureus* (folliculitis, abscess, impetigo, scalded skin syndrome; MRSA). *Streptococcus pyogenes* (impetigo, erysipelas, cellulitis, necrotizing fasciitis). *Pseudomonas aeruginosa* (burn wounds, hot-tub folliculitis, blue-green pigment and a grape-like odor). *Clostridium perfringens* (gas gangrene). Dermatophytes (tinea). Varicella-zoster (chickenpox, then shingles).\n\n**Respiratory.** Upper: *Streptococcus pyogenes* pharyngitis (treat to prevent rheumatic fever), rhinoviruses. Lower: *Streptococcus pneumoniae* is the leading cause of community-acquired pneumonia, a Gram-positive lancet-shaped diplococcus. *Mycoplasma pneumoniae* causes walking pneumonia in the young. *Haemophilus influenzae* type b (epiglottitis, now rare because of the Hib conjugate vaccine). *Legionella pneumophila* from water systems and cooling towers. *Bordetella pertussis* (whooping cough). *Mycobacterium tuberculosis*: acid-fast, aerobic, forms granulomas, latent TB is positive on PPD or IGRA without disease. Influenza, RSV in infants, SARS-CoV-2.\n\n**Gastrointestinal.** Infection (organism multiplies, longer incubation) versus intoxication (preformed toxin, onset in `1–6 hours`). *Staphylococcus aureus* and *Bacillus cereus* cause intoxication — vomiting fast, from reheated rice or picnic food. *Salmonella* (poultry and eggs), *Campylobacter jejuni* (the most common bacterial diarrhea in the US, associated with Guillain-Barre), *Shigella* (very low ID50, bloody), *E. coli* O157:H7 (Shiga toxin, hemolytic uremic syndrome — do **not** give antibiotics), *Vibrio cholerae* (rice-water stool), *C. difficile*, *Helicobacter pylori* (ulcers), norovirus, rotavirus, hepatitis A.\n\n**Urogenital.** *E. coli* causes `80–90%` of uncomplicated UTIs. *Staphylococcus saprophyticus* in young women. *Neisseria gonorrhoeae* (Gram-negative diplococci in neutrophils). *Chlamydia trachomatis* is the most reported bacterial STI in the US and is often silent. *Treponema pallidum* (syphilis, three stages plus latency). HSV-2, HPV, *Trichomonas*, *Candida albicans*.\n\n**Nervous system.** *Neisseria meningitidis* (petechial rash, dormitory outbreaks), *Streptococcus pneumoniae* (most common adult bacterial meningitis), *Listeria monocytogenes* (neonates, elderly, pregnancy), group B *Streptococcus* in newborns. *Clostridium tetani* (spastic paralysis, blocks inhibitory neurotransmitters) versus *Clostridium botulinum* (flaccid paralysis, blocks acetylcholine release). Rabies, poliovirus, *Cryptococcus neoformans* in AIDS, prions.\n\n**Bloodborne and systemic.** HIV, hepatitis B and C, *Plasmodium* (malaria), *Borrelia burgdorferi* (Lyme disease, *Ixodes* tick, erythema migrans), *Rickettsia rickettsii* (Rocky Mountain spotted fever, rash moving from wrists and ankles inward), *Yersinia pestis*, *Epstein-Barr virus* (mononucleosis).\n\n> **On the exam:** Tetanus is rigid, botulism is floppy. Both are *Clostridium*, both are A-B neurotoxins, and mixing them up is the most common single error in this unit.",
+      "keyPoints": [
+        "Innate immunity is immediate and nonspecific; adaptive immunity is specific and remembers, with a faster IgG secondary response.",
+        "IgG is 80% of serum antibody and crosses the placenta; IgM appears first and signals current infection.",
+        "Live attenuated vaccines are contraindicated in pregnancy and immunosuppression; toxoid boosters every 10 years.",
+        "S. pneumoniae leads community-acquired pneumonia and adult bacterial meningitis; E. coli causes 80–90% of uncomplicated UTIs.",
+        "Tetanus causes spastic paralysis, botulism causes flaccid paralysis; E. coli O157:H7 should not be treated with antibiotics."
+      ],
+      "checks": [
+        {
+          "q": "A patient's serology shows IgM positive and IgG negative for hepatitis A. This indicates:",
+          "choices": [
+            "Past infection with lasting immunity",
+            "Current or very recent infection",
+            "Successful vaccination",
+            "A false positive because IgG is absent"
+          ],
+          "answer": 1,
+          "why": "IgM is the first antibody produced and marks acute infection before class switching to IgG. IgG alone would indicate past infection or vaccination."
+        },
+        {
+          "q": "Why must a live attenuated MMR vaccine be avoided during pregnancy?",
+          "choices": [
+            "It contains endotoxin",
+            "The attenuated virus can replicate and pose fetal risk",
+            "Maternal IgG blocks the response",
+            "It requires an adjuvant that crosses the placenta"
+          ],
+          "answer": 1,
+          "why": "Live vaccines replicate in the host, which is why they are strong but also why they are contraindicated in pregnancy and immunosuppression. Inactivated and toxoid vaccines carry no such risk."
+        },
+        {
+          "q": "A child with bloody diarrhea after eating undercooked ground beef develops kidney failure. Which statement is correct?",
+          "choices": [
+            "Antibiotics should be given immediately to shorten illness",
+            "Antibiotics may increase Shiga toxin release and worsen hemolytic uremic syndrome",
+            "The organism is Campylobacter jejuni",
+            "The illness is an intoxication with 1–6 hour onset"
+          ],
+          "answer": 1,
+          "why": "E. coli O157:H7 lysis releases more Shiga toxin, so antibiotics are associated with higher HUS risk and care is supportive. The history and HUS point away from Campylobacter, and the incubation is days, not hours."
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "sci-micro-c001",
+      "front": "What is the practical resolution limit of a light microscope?",
+      "back": "About 0.2 micrometers. Bacteria (0.2–2 micrometers wide) are visible; viruses (20–300 nanometers) are not and need electron microscopy.",
+      "lesson": "sci-micro-l01"
+    },
+    {
+      "id": "sci-micro-c002",
+      "front": "Why is immersion oil used with the 100x objective?",
+      "back": "Oil has the same refractive index as glass, so light rays are not bent away and lost. It improves resolution, not magnification.",
+      "lesson": "sci-micro-l01"
+    },
+    {
+      "id": "sci-micro-c003",
+      "front": "List the four Gram stain steps in order and the result of each.",
+      "back": "Crystal violet (all purple), Gram's iodine mordant (traps complex), alcohol decolorizer (critical step), safranin counterstain (Gram-negatives turn pink).",
+      "lesson": "sci-micro-l01"
+    },
+    {
+      "id": "sci-micro-c004",
+      "front": "What does an acid-fast stain detect, and in which organisms?",
+      "back": "Mycolic acid in the wall of Mycobacterium and Nocardia. Carbolfuchsin driven in with heat resists acid-alcohol decolorization; everything else takes methylene blue.",
+      "lesson": "sci-micro-l01"
+    },
+    {
+      "id": "sci-micro-c005",
+      "front": "What did Pasteur's swan-neck flask experiment prove?",
+      "back": "It disproved spontaneous generation. Broth stayed sterile while the neck trapped airborne microbes, but grew when tipped so broth reached the bend.",
+      "lesson": "sci-micro-l01"
+    },
+    {
+      "id": "sci-micro-c006",
+      "front": "Why are most bacterial stains basic (cationic) dyes?",
+      "back": "Bacterial surfaces carry a net negative charge, so positively charged basic dyes such as crystal violet, methylene blue and safranin are attracted to them.",
+      "lesson": "sci-micro-l01"
+    },
+    {
+      "id": "sci-micro-c007",
+      "front": "How does a capsule stain work and why?",
+      "back": "It is a negative stain (India ink). Capsules do not take up dye, so the capsule appears as a clear halo around a stained cell against a dark background.",
+      "lesson": "sci-micro-l01"
+    },
+    {
+      "id": "sci-micro-c008",
+      "front": "What two sugars make up peptidoglycan and what cross-links them?",
+      "back": "N-acetylglucosamine (NAG) and N-acetylmuramic acid (NAM), alternating, cross-linked by short peptide bridges. Penicillin blocks the cross-linking.",
+      "lesson": "sci-micro-l02"
+    },
+    {
+      "id": "sci-micro-c009",
+      "front": "Structurally, how do Gram-positive and Gram-negative walls differ?",
+      "back": "Gram-positive: thick peptidoglycan (20–80 nanometers) with teichoic acids. Gram-negative: thin peptidoglycan (2–7 nanometers) plus an outer membrane with LPS and porins.",
+      "lesson": "sci-micro-l02"
+    },
+    {
+      "id": "sci-micro-c010",
+      "front": "What are the three parts of LPS and which one is endotoxin?",
+      "back": "O antigen (serotyping), core polysaccharide, and lipid A. Lipid A is endotoxin: fever, vasodilation, hypotension, shock, DIC on cell lysis.",
+      "lesson": "sci-micro-l02"
+    },
+    {
+      "id": "sci-micro-c011",
+      "front": "Difference between fimbriae and a sex pilus?",
+      "back": "Fimbriae are short, numerous, and used for adhesion to surfaces. A sex pilus is longer, one or two per cell, and transfers DNA during conjugation.",
+      "lesson": "sci-micro-l02"
+    },
+    {
+      "id": "sci-micro-c012",
+      "front": "Why is the 70S bacterial ribosome clinically important?",
+      "back": "Human ribosomes are 80S. That difference gives selective toxicity to aminoglycosides and tetracyclines (30S) and macrolides, clindamycin and linezolid (50S).",
+      "lesson": "sci-micro-l02"
+    },
+    {
+      "id": "sci-micro-c013",
+      "front": "Which two genera form endospores, and what conditions do spores survive?",
+      "back": "Bacillus and Clostridium, both Gram-positive rods. Spores survive boiling, drying, radiation and most disinfectants; an autoclave is required to kill them.",
+      "lesson": "sci-micro-l02"
+    },
+    {
+      "id": "sci-micro-c014",
+      "front": "What does a bacterial capsule do for the organism?",
+      "back": "It blocks phagocytosis and hides surface antigens. S. pneumoniae, K. pneumoniae, N. meningitidis and H. influenzae rely on it; capsular vaccines target it.",
+      "lesson": "sci-micro-l02"
+    },
+    {
+      "id": "sci-micro-c015",
+      "front": "Which bacterium has no cell wall and what does that mean for treatment?",
+      "back": "Mycoplasma. With no peptidoglycan, beta-lactams are useless; M. pneumoniae is treated with macrolides, tetracyclines or fluoroquinolones.",
+      "lesson": "sci-micro-l02"
+    },
+    {
+      "id": "sci-micro-c016",
+      "front": "What is a plasmid and why does it matter?",
+      "back": "A small circular extrachromosomal DNA molecule, not required for survival, that often carries antibiotic resistance genes (R factors), toxin genes or conjugation machinery.",
+      "lesson": "sci-micro-l02"
+    },
+    {
+      "id": "sci-micro-c017",
+      "front": "What are fungal cell walls and membranes made of?",
+      "back": "Walls are chitin (not peptidoglycan). Membranes use ergosterol instead of cholesterol — the target of azoles and amphotericin B.",
+      "lesson": "sci-micro-l03"
+    },
+    {
+      "id": "sci-micro-c018",
+      "front": "Define a dimorphic fungus and name four.",
+      "back": "Mold at 25 degrees Celsius in the environment, yeast at 37 degrees Celsius in the body. Histoplasma, Blastomyces, Coccidioides, Sporothrix.",
+      "lesson": "sci-micro-l03"
+    },
+    {
+      "id": "sci-micro-c019",
+      "front": "Which protozoa resist chlorination and how are they removed from water?",
+      "back": "Giardia lamblia and Cryptosporidium cysts/oocysts. Filtration removes them; standard chlorination does not reliably kill them.",
+      "lesson": "sci-micro-l03"
+    },
+    {
+      "id": "sci-micro-c020",
+      "front": "Name the apicomplexans and their diseases.",
+      "back": "Plasmodium (malaria, female Anopheles mosquito), Toxoplasma gondii (cat feces, undercooked meat; pregnancy and AIDS risk), Cryptosporidium (watery diarrhea).",
+      "lesson": "sci-micro-l03"
+    },
+    {
+      "id": "sci-micro-c021",
+      "front": "What lab finding suggests a helminth infection?",
+      "back": "Peripheral eosinophilia on a CBC. Diagnosis is confirmed by ova and parasites in stool, or the cellophane tape test for pinworm.",
+      "lesson": "sci-micro-l03"
+    },
+    {
+      "id": "sci-micro-c022",
+      "front": "Which fungi are opportunistic and who gets sick from them?",
+      "back": "Candida, Aspergillus, Pneumocystis jirovecii and Cryptococcus neoformans — disease in the immunocompromised: HIV, chemotherapy, transplant, prolonged steroids.",
+      "lesson": "sci-micro-l03"
+    },
+    {
+      "id": "sci-micro-c023",
+      "front": "Difference between a yeast and a mold?",
+      "back": "Yeasts are single cells reproducing by budding. Molds grow as filamentous hyphae forming a mycelium; hyphae may be septate or coenocytic.",
+      "lesson": "sci-micro-l03"
+    },
+    {
+      "id": "sci-micro-c024",
+      "front": "What are the five steps of animal virus replication?",
+      "back": "Attachment to a receptor, penetration and uncoating, biosynthesis, assembly (maturation), release by lysis (naked) or budding (enveloped).",
+      "lesson": "sci-micro-l04"
+    },
+    {
+      "id": "sci-micro-c025",
+      "front": "Why do naked viruses spread through surfaces and food?",
+      "back": "They have only a protein capsid with no lipid envelope, so alcohol, detergents and drying do not destroy them. Norovirus and hepatitis A are the examples.",
+      "lesson": "sci-micro-l04"
+    },
+    {
+      "id": "sci-micro-c026",
+      "front": "What is lysogenic conversion and which toxins come from it?",
+      "back": "A prophage integrated in the bacterial chromosome gives the cell new traits. Diphtheria, botulinum, cholera, erythrogenic and Shiga toxins are phage-encoded.",
+      "lesson": "sci-micro-l04"
+    },
+    {
+      "id": "sci-micro-c027",
+      "front": "What do reverse transcriptase and integrase do in a retrovirus?",
+      "back": "Reverse transcriptase makes DNA from the +ssRNA genome; integrase inserts that DNA into the host chromosome as a permanent provirus.",
+      "lesson": "sci-micro-l04"
+    },
+    {
+      "id": "sci-micro-c028",
+      "front": "Name four oncogenic viruses and the cancers they cause.",
+      "back": "HPV 16 and 18 (cervical), hepatitis B and C (hepatocellular carcinoma), Epstein-Barr (Burkitt lymphoma, nasopharyngeal carcinoma), HHV-8 (Kaposi sarcoma).",
+      "lesson": "sci-micro-l04"
+    },
+    {
+      "id": "sci-micro-c029",
+      "front": "What is a prion and why is it so hard to destroy?",
+      "back": "An infectious misfolded protein (PrP-Sc) with no nucleic acid that converts normal PrP-C. It resists autoclaving, formalin and radiation; decontamination needs 1 N NaOH plus extended autoclaving.",
+      "lesson": "sci-micro-l04"
+    },
+    {
+      "id": "sci-micro-c030",
+      "front": "What is cytopathic effect and why is it used?",
+      "back": "Visible damage to cultured cells from viral infection — inclusion bodies, syncytia, rounding. It is how a lab confirms a virus grew in cell culture.",
+      "lesson": "sci-micro-l04"
+    },
+    {
+      "id": "sci-micro-c031",
+      "front": "How do you calculate cells after n generations?",
+      "back": "N = N0 times 2^n. Example: 100 cells, E. coli at a 20-minute generation time for 3 hours, is 9 generations = 100 x 512 = 51,200 cells.",
+      "lesson": "sci-micro-l05"
+    },
+    {
+      "id": "sci-micro-c032",
+      "front": "Name the four phases of the bacterial growth curve and what happens in each.",
+      "back": "Lag (adapting, no division), log (constant doubling, most antibiotic-susceptible), stationary (births equal deaths, spores and toxins), death (exponential decline).",
+      "lesson": "sci-micro-l05"
+    },
+    {
+      "id": "sci-micro-c033",
+      "front": "Give the generation time of E. coli and of M. tuberculosis.",
+      "back": "E. coli about 20 minutes; M. tuberculosis 15–20 hours. That is why TB cultures take 6–8 weeks and treatment runs 6–9 months.",
+      "lesson": "sci-micro-l05"
+    },
+    {
+      "id": "sci-micro-c034",
+      "front": "List the five oxygen requirement classes with an example of each.",
+      "back": "Obligate aerobe (M. tuberculosis), obligate anaerobe (Clostridium), facultative anaerobe (E. coli), aerotolerant anaerobe (Lactobacillus), microaerophile (Campylobacter).",
+      "lesson": "sci-micro-l05"
+    },
+    {
+      "id": "sci-micro-c035",
+      "front": "Which enzymes protect cells from toxic oxygen products?",
+      "back": "Superoxide dismutase and catalase. Obligate anaerobes lack them. The catalase test separates Staphylococcus (positive) from Streptococcus (negative).",
+      "lesson": "sci-micro-l05"
+    },
+    {
+      "id": "sci-micro-c036",
+      "front": "Compare ATP yield: aerobic respiration versus fermentation.",
+      "back": "Aerobic respiration nets about 38 ATP per glucose in prokaryotes. Fermentation nets only 2 ATP but regenerates NAD+ and makes identifiable acids and gases.",
+      "lesson": "sci-micro-l05"
+    },
+    {
+      "id": "sci-micro-c037",
+      "front": "What makes MacConkey agar both selective and differential?",
+      "back": "Bile salts and crystal violet inhibit Gram-positives (selective); lactose plus a pH indicator turns lactose fermenters pink (differential).",
+      "lesson": "sci-micro-l05"
+    },
+    {
+      "id": "sci-micro-c038",
+      "front": "How do you compute CFU/mL from a plate count?",
+      "back": "CFU/mL = colonies divided by (dilution factor x volume plated). Use plates with 25–250 colonies. Example: 60 colonies, 10^-4 dilution, 0.1 mL = 6.0 x 10^6 CFU/mL.",
+      "lesson": "sci-micro-l05"
+    },
+    {
+      "id": "sci-micro-c039",
+      "front": "Which pathogen grows at refrigerator temperature, and why does it matter?",
+      "back": "Listeria monocytogenes. It multiplies at 4 degrees Celsius, so deli meats, soft cheeses and refrigerated ready-to-eat foods transmit it, especially in pregnancy.",
+      "lesson": "sci-micro-l05"
+    },
+    {
+      "id": "sci-micro-c040",
+      "front": "Define sterilization, disinfection and antisepsis.",
+      "back": "Sterilization destroys all microbial life including spores. Disinfection kills pathogens on inanimate objects. Antisepsis is the same process applied to living tissue.",
+      "lesson": "sci-micro-l06"
+    },
+    {
+      "id": "sci-micro-c041",
+      "front": "What are the standard autoclave parameters and how is the cycle verified?",
+      "back": "121 degrees Celsius at 15 psi for 15 minutes with steam contacting all surfaces. Verified with a biological indicator of Geobacillus stearothermophilus spores.",
+      "lesson": "sci-micro-l06"
+    },
+    {
+      "id": "sci-micro-c042",
+      "front": "Why is 70% alcohol more effective than 95–100% alcohol?",
+      "back": "Water is required for protein denaturation. Absolute alcohol dehydrates and coagulates the surface without penetrating. No concentration of alcohol kills spores.",
+      "lesson": "sci-micro-l06"
+    },
+    {
+      "id": "sci-micro-c043",
+      "front": "Rank microbial resistance to control agents from easiest to hardest to kill.",
+      "back": "Enveloped viruses, Gram-positive bacteria, Gram-negative bacteria, fungi, naked viruses, mycobacteria, endospores, prions.",
+      "lesson": "sci-micro-l06"
+    },
+    {
+      "id": "sci-micro-c044",
+      "front": "Give the three pasteurization schedules.",
+      "back": "Batch 63 degrees Celsius for 30 minutes; high-temperature short-time 72 degrees Celsius for 15 seconds; ultra-high temperature 140 degrees Celsius for 3 seconds (sterile).",
+      "lesson": "sci-micro-l06"
+    },
+    {
+      "id": "sci-micro-c045",
+      "front": "How does UV radiation kill, and what is its main limitation?",
+      "back": "UV at 260 nanometers forms thymine dimers that block DNA replication. It does not penetrate glass, plastic, dirt or tissue, so it is surface and air only.",
+      "lesson": "sci-micro-l06"
+    },
+    {
+      "id": "sci-micro-c046",
+      "front": "Which pathogens require soap-and-water handwashing rather than alcohol foam?",
+      "back": "Clostridioides difficile (endospores) and norovirus (naked virus). Alcohol does not kill them; friction and rinsing physically remove them, and rooms get bleach.",
+      "lesson": "sci-micro-l06"
+    },
+    {
+      "id": "sci-micro-c047",
+      "front": "What filter pore size sterilizes a heat-sensitive liquid?",
+      "back": "A 0.22 micrometer membrane filter retains bacteria. It is used for vaccines, antibiotics and heat-labile media; HEPA filters do the equivalent job for air.",
+      "lesson": "sci-micro-l06"
+    },
+    {
+      "id": "sci-micro-c048",
+      "front": "Name the four types of point and frameshift mutations.",
+      "back": "Silent (same amino acid), missense (different amino acid), nonsense (premature stop), and frameshift from insertion or deletion not in multiples of three.",
+      "lesson": "sci-micro-l07"
+    },
+    {
+      "id": "sci-micro-c049",
+      "front": "Compare transformation, transduction and conjugation.",
+      "back": "Transformation: uptake of naked DNA by a competent cell. Transduction: bacteriophage carries bacterial DNA. Conjugation: direct transfer of a plasmid through a sex pilus.",
+      "lesson": "sci-micro-l07"
+    },
+    {
+      "id": "sci-micro-c050",
+      "front": "Why do R plasmids cause multidrug resistance so quickly?",
+      "back": "One plasmid can carry several resistance genes and moves by conjugation even between species, so a single transfer event converts a susceptible organism to multidrug-resistant.",
+      "lesson": "sci-micro-l07"
+    },
+    {
+      "id": "sci-micro-c051",
+      "front": "What are the five general mechanisms of antibiotic resistance?",
+      "back": "Enzymatic destruction (beta-lactamase), target alteration (mecA/PBP2a), decreased permeability (porin loss), efflux pumps, and bypass or overproduction of the target.",
+      "lesson": "sci-micro-l07"
+    },
+    {
+      "id": "sci-micro-c052",
+      "front": "What genetic changes make MRSA and VRE resistant?",
+      "back": "MRSA: mecA encodes PBP2a, a penicillin-binding protein beta-lactams cannot bind. VRE: the peptidoglycan terminus changes from D-Ala-D-Ala to D-Ala-D-Lac.",
+      "lesson": "sci-micro-l07"
+    },
+    {
+      "id": "sci-micro-c053",
+      "front": "What does the Ames test measure?",
+      "back": "Mutagenicity. A histidine-requiring Salmonella strain reverting to growth without histidine indicates the chemical causes mutations, which correlates with carcinogenicity.",
+      "lesson": "sci-micro-l07"
+    },
+    {
+      "id": "sci-micro-c054",
+      "front": "Do antibiotics create resistant bacteria?",
+      "back": "No. They select for rare pre-existing mutants by killing the susceptible majority. Mutations at roughly 1 in 10^9 per base already exist in any large population.",
+      "lesson": "sci-micro-l07"
+    },
+    {
+      "id": "sci-micro-c055",
+      "front": "What is selective toxicity and what are the classic bacterial targets?",
+      "back": "Harming the microbe more than the host by attacking structures we lack: peptidoglycan, the 70S ribosome, folate synthesis from PABA, and DNA gyrase.",
+      "lesson": "sci-micro-l08"
+    },
+    {
+      "id": "sci-micro-c056",
+      "front": "How do beta-lactams work, and what does a beta-lactamase inhibitor add?",
+      "back": "Beta-lactams bind penicillin-binding proteins and block peptidoglycan cross-linking. Clavulanate or tazobactam has little activity itself; it protects the partner drug from hydrolysis.",
+      "lesson": "sci-micro-l08"
+    },
+    {
+      "id": "sci-micro-c057",
+      "front": "Which antibiotics hit the 30S subunit and which hit the 50S?",
+      "back": "30S: aminoglycosides (cidal) and tetracyclines (static). 50S: macrolides, clindamycin, linezolid, chloramphenicol.",
+      "lesson": "sci-micro-l08"
+    },
+    {
+      "id": "sci-micro-c058",
+      "front": "Why is vancomycin useless against Gram-negative bacteria?",
+      "back": "The glycopeptide is too large to cross the Gram-negative outer membrane, even though the D-Ala-D-Ala target is present. It is Gram-positive coverage only.",
+      "lesson": "sci-micro-l08"
+    },
+    {
+      "id": "sci-micro-c059",
+      "front": "Define MIC and MBC.",
+      "back": "MIC is the lowest drug concentration preventing visible growth. MBC is the lowest concentration killing 99.9% of the inoculum. Kirby-Bauer zones report S, I or R instead.",
+      "lesson": "sci-micro-l08"
+    },
+    {
+      "id": "sci-micro-c060",
+      "front": "What is superinfection and which drugs cause it most?",
+      "back": "Overgrowth of a resistant organism after broad-spectrum therapy wipes out normal flora. Clindamycin, fluoroquinolones and cephalosporins are classic causes of C. difficile colitis.",
+      "lesson": "sci-micro-l08"
+    },
+    {
+      "id": "sci-micro-c061",
+      "front": "What is the standard TB regimen and why is it four drugs?",
+      "back": "RIPE — rifampin, isoniazid, pyrazinamide, ethambutol — for 2 months, then rifampin plus isoniazid for 4 more. Monotherapy in a slow-growing organism rapidly selects resistance.",
+      "lesson": "sci-micro-l08"
+    },
+    {
+      "id": "sci-micro-c062",
+      "front": "Which drug covers anaerobes below the diaphragm, C. difficile, Trichomonas and Giardia?",
+      "back": "Metronidazole. It is reduced to a toxic radical only inside anaerobic organisms, which damages their DNA — the source of its selectivity.",
+      "lesson": "sci-micro-l08"
+    },
+    {
+      "id": "sci-micro-c063",
+      "front": "Which body sites are normally sterile?",
+      "back": "Blood, cerebrospinal fluid, lower respiratory tract, bladder urine and deep tissues. An organism recovered from these sites is almost always clinically significant.",
+      "lesson": "sci-micro-l09"
+    },
+    {
+      "id": "sci-micro-c064",
+      "front": "State Koch's postulates and two exceptions.",
+      "back": "Present in every case, isolated in pure culture, reproduces disease on inoculation, re-isolated. Fails for unculturable organisms (T. pallidum, M. leprae) and asymptomatic carriers.",
+      "lesson": "sci-micro-l09"
+    },
+    {
+      "id": "sci-micro-c065",
+      "front": "Compare exotoxin and endotoxin.",
+      "back": "Exotoxin: secreted protein, Gram-positive or negative, potent, specific, heat-labile, makes a toxoid vaccine. Endotoxin: lipid A, Gram-negative wall, released on lysis, heat-stable, causes fever and shock.",
+      "lesson": "sci-micro-l09"
+    },
+    {
+      "id": "sci-micro-c066",
+      "front": "What is a superantigen and what does it cause?",
+      "back": "A toxin that nonspecifically cross-links T-cell receptors, activating huge numbers of T cells and releasing a flood of cytokines. TSST-1 causes toxic shock syndrome.",
+      "lesson": "sci-micro-l09"
+    },
+    {
+      "id": "sci-micro-c067",
+      "front": "Name the six links in the chain of infection.",
+      "back": "Infectious agent, reservoir, portal of exit, mode of transmission, portal of entry, susceptible host. Breaking any single link stops transmission.",
+      "lesson": "sci-micro-l09"
+    },
+    {
+      "id": "sci-micro-c068",
+      "front": "List the five stages in the course of an infectious disease.",
+      "back": "Incubation, prodromal, illness (peak), decline, convalescence. Communicability is often highest during the prodrome, before the diagnosis is made.",
+      "lesson": "sci-micro-l09"
+    },
+    {
+      "id": "sci-micro-c069",
+      "front": "What are the four major healthcare-associated infections?",
+      "back": "CAUTI, CLABSI, ventilator-associated pneumonia and surgical site infection. About 1 in 31 US inpatients has an HAI on a given day; most are device-related.",
+      "lesson": "sci-micro-l09"
+    },
+    {
+      "id": "sci-micro-c070",
+      "front": "Difference between incidence and prevalence?",
+      "back": "Incidence is the number of new cases in a defined period. Prevalence is all existing cases at a point in time, including old ones.",
+      "lesson": "sci-micro-l09"
+    },
+    {
+      "id": "sci-micro-c071",
+      "front": "What do the five antibody classes do?",
+      "back": "IgG 80% of serum, crosses placenta, secondary response. IgM pentamer, first and best at complement. IgA dimer in secretions. IgE mast cells, allergy and parasites. IgD B-cell receptor.",
+      "lesson": "sci-micro-l10"
+    },
+    {
+      "id": "sci-micro-c072",
+      "front": "Why is the secondary immune response faster and larger?",
+      "back": "Memory B and T cells already exist, so antibody appears in 1–3 days instead of 5–10, at higher titer, and is mostly IgG rather than IgM. That is why boosters work.",
+      "lesson": "sci-micro-l10"
+    },
+    {
+      "id": "sci-micro-c073",
+      "front": "Which vaccine types exist and who cannot receive live attenuated ones?",
+      "back": "Live attenuated, inactivated, subunit/conjugate, toxoid, mRNA. Live vaccines are contraindicated in pregnancy and immunosuppression because the organism still replicates.",
+      "lesson": "sci-micro-l10"
+    },
+    {
+      "id": "sci-micro-c074",
+      "front": "What does complement do once activated?",
+      "back": "Opsonization, chemotaxis of phagocytes, inflammation, and formation of the C5b-C9 membrane attack complex that lyses Gram-negative cells. Activated by classical, alternative or lectin pathways.",
+      "lesson": "sci-micro-l10"
+    },
+    {
+      "id": "sci-micro-c075",
+      "front": "Tetanus versus botulism: which is rigid and which is floppy?",
+      "back": "Clostridium tetani blocks inhibitory neurotransmitters, causing spastic (rigid) paralysis. Clostridium botulinum blocks acetylcholine release, causing flaccid (floppy) paralysis.",
+      "lesson": "sci-micro-l10"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "sci-micro-q001",
+      "q": "A technologist Gram stains a 48-hour Staphylococcus aureus culture and reports pink cocci in clusters. What is the most likely explanation?",
+      "choices": [
+        "Aging cells lose wall integrity and over-decolorize",
+        "The isolate is actually a Gram-negative coccus",
+        "Crystal violet was omitted",
+        "The slide was under-decolorized"
+      ],
+      "answer": 0,
+      "why": "Old cultures have damaged peptidoglycan and release the crystal violet-iodine complex during decolorization. Under-decolorizing would make cells falsely purple, and omitting crystal violet would leave them pink but the arrangement would still be described.",
+      "lesson": "sci-micro-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-micro-q002",
+      "q": "Which statement about magnification and resolution is correct?",
+      "choices": [
+        "Increasing magnification always increases resolution",
+        "Electron microscopes have lower resolution but higher magnification",
+        "Immersion oil increases total magnification to 1000x",
+        "Resolution is the ability to distinguish two close points as separate"
+      ],
+      "answer": 3,
+      "why": "Resolution is about clarity and separation of adjacent points; magnification only enlarges. Oil improves resolution by preventing refraction loss, and electron microscopes exceed light microscopes in both measures.",
+      "lesson": "sci-micro-l01",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-micro-q003",
+      "q": "A sputum specimen stains red against a blue background after carbolfuchsin, heat and acid-alcohol. Which organism is most consistent?",
+      "choices": [
+        "Mycobacterium tuberculosis",
+        "Streptococcus pneumoniae",
+        "Klebsiella pneumoniae",
+        "Mycoplasma pneumoniae"
+      ],
+      "answer": 0,
+      "why": "Retaining carbolfuchsin through acid-alcohol defines acid-fastness, caused by mycolic acid in Mycobacterium. S. pneumoniae and Klebsiella are seen on Gram stain, and Mycoplasma has no wall and stains poorly with anything.",
+      "lesson": "sci-micro-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-micro-q004",
+      "q": "Which structure is responsible for the septic shock seen when a Gram-negative bloodstream infection is treated?",
+      "choices": [
+        "Teichoic acid",
+        "Lipid A",
+        "O antigen",
+        "Peptidoglycan"
+      ],
+      "answer": 1,
+      "why": "Lipid A is the endotoxic portion of LPS and is released when the outer membrane breaks apart. O antigen is used for serotyping, teichoic acid is Gram-positive, and peptidoglycan is not the shock trigger.",
+      "lesson": "sci-micro-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-micro-q005",
+      "q": "A soil-contaminated wound is irrigated and the patient is told boiling water would not have sterilized the instrument used. Which structure justifies that statement?",
+      "choices": [
+        "Capsule",
+        "Endospore",
+        "Slime layer",
+        "Flagellum"
+      ],
+      "answer": 1,
+      "why": "Endospores from Clostridium and Bacillus survive boiling at 100 degrees Celsius; only an autoclave, dry heat at 170 degrees Celsius for 2 hours, or a chemical sterilant destroys them. Capsules and slime layers offer no heat protection.",
+      "lesson": "sci-micro-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-micro-q006",
+      "q": "Which pairing of bacterial structure and function is correct?",
+      "choices": [
+        "Fimbriae transfer DNA during conjugation",
+        "Sex pilus mediates adhesion to epithelium",
+        "Teichoic acid forms the outer membrane",
+        "Capsule blocks phagocytosis"
+      ],
+      "answer": 3,
+      "why": "Capsules prevent engulfment by phagocytes. Fimbriae adhere and sex pili transfer DNA — the reverse of the first two options — and teichoic acid is embedded in Gram-positive peptidoglycan, not in an outer membrane.",
+      "lesson": "sci-micro-l02",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-micro-q007",
+      "q": "A soil fungus grows as filamentous mold on Sabouraud agar at room temperature but as budding yeast in tissue at body temperature. Which organism fits?",
+      "choices": [
+        "Candida albicans",
+        "Aspergillus fumigatus",
+        "Histoplasma capsulatum",
+        "Trichophyton rubrum"
+      ],
+      "answer": 2,
+      "why": "Histoplasma is dimorphic, mold at 25 degrees Celsius and yeast at 37 degrees Celsius. Candida is a yeast, Aspergillus is always a mold, and Trichophyton is a dermatophyte mold.",
+      "lesson": "sci-micro-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-micro-q008",
+      "q": "A hiker who drank untreated stream water develops two weeks of greasy, foul-smelling diarrhea and bloating without blood or fever. Which organism is most likely?",
+      "choices": [
+        "Giardia lamblia",
+        "Entamoeba histolytica",
+        "Shigella sonnei",
+        "Vibrio cholerae"
+      ],
+      "answer": 0,
+      "why": "Giardia produces malabsorptive, fatty, non-bloody diarrhea from untreated surface water. Entamoeba and Shigella cause bloody dysentery, and cholera produces massive watery rice-water stool over days, not weeks.",
+      "lesson": "sci-micro-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-micro-q009",
+      "q": "Amphotericin B works by:",
+      "choices": [
+        "Binding ergosterol and forming membrane pores",
+        "Inhibiting ergosterol synthesis",
+        "Blocking chitin synthesis",
+        "Inhibiting 80S ribosomes"
+      ],
+      "answer": 0,
+      "why": "Amphotericin B binds existing ergosterol and creates pores, so it is fungicidal. Azoles inhibit ergosterol synthesis, echinocandins block beta-glucan wall synthesis, and no clinical antifungal targets 80S ribosomes.",
+      "lesson": "sci-micro-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-micro-q010",
+      "q": "Which is true of all viruses?",
+      "choices": [
+        "They contain both DNA and RNA",
+        "They have a lipid envelope",
+        "They contain either DNA or RNA, never both",
+        "They reproduce by binary fission"
+      ],
+      "answer": 2,
+      "why": "A virus carries a single nucleic acid type. Envelopes are present in only some viruses, and binary fission is a cellular process viruses cannot perform since they lack ribosomes and metabolism.",
+      "lesson": "sci-micro-l04",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-micro-q011",
+      "q": "A patient with a history of chickenpox at age 6 develops a painful unilateral dermatomal rash at age 68. This is best explained by:",
+      "choices": [
+        "Reinfection from a new exposure",
+        "An autoimmune reaction to prior vaccination",
+        "Lysogenic conversion of a bacterium",
+        "Reactivation of latent virus in a dorsal root ganglion"
+      ],
+      "answer": 3,
+      "why": "Varicella-zoster persists latently in sensory ganglia and reactivates as shingles when cell-mediated immunity wanes, producing a dermatomal pattern. Reinfection would not follow a single dermatome, and lysogenic conversion applies to bacteriophages.",
+      "lesson": "sci-micro-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-micro-q012",
+      "q": "Why are prions the most difficult infectious agents to destroy?",
+      "choices": [
+        "They have a double lipid envelope",
+        "They form endospores under stress",
+        "They are proteins with no nucleic acid to damage",
+        "They replicate faster than any bacterium"
+      ],
+      "answer": 2,
+      "why": "Standard sterilization targets nucleic acid and denatures ordinary proteins, but the PrP-Sc conformation resists both, so extended autoclaving with 1 N NaOH is required. Prions have no envelope, no spores, and no replication machinery of their own.",
+      "lesson": "sci-micro-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-micro-q013",
+      "q": "HIV specifically destroys helper T cells because:",
+      "choices": [
+        "gp120 binds the CD4 receptor plus a chemokine co-receptor",
+        "Reverse transcriptase only works in lymphocytes",
+        "CD4 cells lack interferon",
+        "The virus is a naked icosahedral particle"
+      ],
+      "answer": 0,
+      "why": "Tropism is determined by receptor fit, and gp120 binds CD4 with CCR5 or CXCR4. Reverse transcriptase functions in any infected cell, and HIV is enveloped, not naked.",
+      "lesson": "sci-micro-l04",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-micro-q014",
+      "q": "A culture of 200 cells with a 20-minute generation time grows for 2 hours. Final count?",
+      "choices": [
+        "1,200",
+        "6,400",
+        "25,600",
+        "12,800"
+      ],
+      "answer": 3,
+      "why": "Two hours at 20 minutes per doubling is 6 generations: 200 x 2^6 = 200 x 64 = 12,800. Multiplying 200 by 6 gives the wrong 1,200, and using 5 or 7 generations gives 6,400 or 25,600.",
+      "lesson": "sci-micro-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-micro-q015",
+      "q": "An organism grows only in the narrow band just below the surface of a thioglycolate tube. It is best classified as:",
+      "choices": [
+        "Obligate aerobe",
+        "Obligate anaerobe",
+        "Microaerophile",
+        "Aerotolerant anaerobe"
+      ],
+      "answer": 2,
+      "why": "A band below the surface indicates a requirement for reduced oxygen, roughly 2–10%. Obligate aerobes grow at the very top, obligate anaerobes only at the bottom, and aerotolerant organisms grow evenly throughout.",
+      "lesson": "sci-micro-l05",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-micro-q016",
+      "q": "Which phase of the growth curve is associated with endospore formation and exotoxin production?",
+      "choices": [
+        "Lag",
+        "Log",
+        "Stationary",
+        "Death"
+      ],
+      "answer": 2,
+      "why": "Nutrient depletion and waste accumulation in stationary phase trigger sporulation and secondary metabolite production. Log phase cells are dividing maximally, and death phase cells are dying exponentially.",
+      "lesson": "sci-micro-l05",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-micro-q017",
+      "q": "A urine culture plated at a 1:1000 dilution with 0.1 mL yields 150 colonies. The original count is:",
+      "choices": [
+        "1.5 x 10^4 CFU/mL",
+        "1.5 x 10^5 CFU/mL",
+        "1.5 x 10^6 CFU/mL",
+        "1.5 x 10^7 CFU/mL"
+      ],
+      "answer": 2,
+      "why": "150 divided by (10^-3 x 0.1) = 150 / 10^-4 = 1.5 x 10^6 CFU/mL. Ignoring the 0.1 mL plated volume yields the incorrect 1.5 x 10^5.",
+      "lesson": "sci-micro-l05",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-micro-q018",
+      "q": "An instrument is autoclaved but the biological indicator still shows growth. Which is the most likely cause?",
+      "choices": [
+        "Temperature was set too high",
+        "The load was packed so steam could not contact all surfaces",
+        "Geobacillus spores are not killed by any autoclave cycle",
+        "Wet heat is less effective than dry heat"
+      ],
+      "answer": 1,
+      "why": "Steam must directly contact every surface; overpacking and trapped air are the usual failure modes. G. stearothermophilus spores are precisely the standard a working cycle must kill, and moist heat is more efficient than dry heat.",
+      "lesson": "sci-micro-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-micro-q019",
+      "q": "Which term describes reducing microbial numbers on a living surface such as skin before an injection?",
+      "choices": [
+        "Sterilization",
+        "Disinfection",
+        "Sanitization",
+        "Antisepsis"
+      ],
+      "answer": 3,
+      "why": "Antisepsis applies to living tissue. Disinfection is for inanimate objects, sanitization lowers counts to a public-health standard on utensils and surfaces, and sterilization is absolute destruction of all life.",
+      "lesson": "sci-micro-l06",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-micro-q020",
+      "q": "Which control method is bacteriostatic rather than bactericidal?",
+      "choices": [
+        "Refrigeration at 4 degrees Celsius",
+        "Autoclaving",
+        "Incineration",
+        "Ethylene oxide gas"
+      ],
+      "answer": 0,
+      "why": "Cold slows metabolism without killing, and organisms resume growth on warming. Autoclaving, incineration and ethylene oxide are sterilizing methods that destroy organisms including spores.",
+      "lesson": "sci-micro-l06",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-micro-q021",
+      "q": "A hospital changes from alcohol foam to soap and water for a specific isolation type. Which pathogen prompted the change?",
+      "choices": [
+        "Influenza A",
+        "Respiratory syncytial virus",
+        "MRSA",
+        "Clostridioides difficile"
+      ],
+      "answer": 3,
+      "why": "C. difficile spores resist alcohol, so mechanical removal by handwashing plus bleach cleaning is required. Influenza and RSV are enveloped and MRSA is a vegetative bacterium, all of which alcohol handles well.",
+      "lesson": "sci-micro-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-micro-q022",
+      "q": "A previously susceptible Klebsiella isolate becomes resistant to three unrelated antibiotic classes within one hospitalization. Which mechanism best explains the speed?",
+      "choices": [
+        "Sequential spontaneous point mutations",
+        "Acquisition of an R plasmid by conjugation",
+        "Lysogenic conversion by a phage",
+        "Frameshift mutation in DNA gyrase"
+      ],
+      "answer": 1,
+      "why": "R plasmids carry multiple resistance genes and transfer in a single conjugation event, even between species. Sequential independent mutations are far too improbable over days, and lysogenic conversion typically supplies toxin genes.",
+      "lesson": "sci-micro-l07",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-micro-q023",
+      "q": "Griffith's experiment in which heat-killed virulent pneumococci made live avirulent pneumococci lethal demonstrated:",
+      "choices": [
+        "Transduction",
+        "Conjugation",
+        "Transformation",
+        "Transposition"
+      ],
+      "answer": 2,
+      "why": "The live R strain took up naked DNA released by the dead S strain, which is transformation. Transduction requires a phage vector and conjugation requires cell-to-cell contact through a pilus, neither of which was present.",
+      "lesson": "sci-micro-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-micro-q024",
+      "q": "A Staphylococcus aureus isolate is resistant to oxacillin, cefazolin and amoxicillin-clavulanate. Which mechanism is present?",
+      "choices": [
+        "A beta-lactamase defeated by clavulanate",
+        "Altered penicillin-binding protein PBP2a",
+        "Efflux of macrolides",
+        "Ribosomal methylation"
+      ],
+      "answer": 1,
+      "why": "Resistance to a beta-lactamase inhibitor combination and to cephalosporins indicates target alteration rather than enzyme production, which is mecA encoding PBP2a. Clavulanate would restore activity if a simple beta-lactamase were the mechanism.",
+      "lesson": "sci-micro-l07",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-micro-q025",
+      "q": "Which type of mutation is most likely to abolish protein function entirely?",
+      "choices": [
+        "Silent mutation",
+        "Missense mutation",
+        "Synonymous substitution",
+        "Frameshift mutation"
+      ],
+      "answer": 3,
+      "why": "A frameshift shifts every downstream codon, scrambling the whole remaining sequence. Silent and synonymous changes do not alter the amino acid, and a missense change alters only one residue, which may be tolerated.",
+      "lesson": "sci-micro-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-micro-q026",
+      "q": "A patient with severe penicillin anaphylaxis needs coverage for a Gram-negative bacteremia. Which agent is safest with respect to cross-reactivity?",
+      "choices": [
+        "Ceftriaxone",
+        "Meropenem",
+        "Aztreonam",
+        "Amoxicillin-clavulanate"
+      ],
+      "answer": 2,
+      "why": "Aztreonam is a monobactam with negligible cross-reactivity with penicillins and covers aerobic Gram-negatives. Cephalosporins and carbapenems share the bicyclic beta-lactam structure, and amoxicillin is a penicillin.",
+      "lesson": "sci-micro-l08",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-micro-q027",
+      "q": "Which antibiotic class carries a documented risk of nephrotoxicity and ototoxicity requiring drug level monitoring?",
+      "choices": [
+        "Aminoglycosides",
+        "Macrolides",
+        "Tetracyclines",
+        "Sulfonamides"
+      ],
+      "answer": 0,
+      "why": "Gentamicin, tobramycin and amikacin damage the kidney and eighth cranial nerve, so peaks and troughs are followed. Macrolides prolong QT, tetracyclines stain teeth, and sulfonamides cause rash and hypersensitivity.",
+      "lesson": "sci-micro-l08",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-micro-q028",
+      "q": "Kirby-Bauer testing shows a 22 mm zone for drug A and a 14 mm zone for drug B. What can you correctly conclude?",
+      "choices": [
+        "Drug A is more potent than drug B",
+        "Zone diameters must be compared to drug-specific breakpoint tables",
+        "Drug B is inactive against the organism",
+        "Drug A has a lower MIC than drug B"
+      ],
+      "answer": 1,
+      "why": "Zone size depends on diffusion characteristics unique to each drug, so raw millimeters are only meaningful against that drug's standardized interpretive table. Comparing zones between different drugs says nothing about relative potency or MIC.",
+      "lesson": "sci-micro-l08",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-micro-q029",
+      "q": "Which statement about bacteriostatic drugs is accurate?",
+      "choices": [
+        "They are always preferred over bactericidal drugs",
+        "They are contraindicated in all infections",
+        "They lyse bacterial cell walls",
+        "They rely on host immune function to clear the infection"
+      ],
+      "answer": 3,
+      "why": "Static drugs halt replication but the immune system must eliminate the organisms, which is why cidal agents are chosen for neutropenia, endocarditis and meningitis. They do not lyse walls and are perfectly appropriate in immunocompetent patients.",
+      "lesson": "sci-micro-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-micro-q030",
+      "q": "Trimethoprim-sulfamethoxazole is selectively toxic because bacteria:",
+      "choices": [
+        "Have 80S ribosomes",
+        "Must synthesize folate rather than absorb it",
+        "Lack DNA gyrase",
+        "Store folate in the periplasm"
+      ],
+      "answer": 1,
+      "why": "Human cells take up preformed dietary folate, while bacteria build it from PABA, so blocking two sequential synthesis steps spares us. Bacteria have 70S ribosomes and do possess DNA gyrase, which is a different drug target.",
+      "lesson": "sci-micro-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-micro-q031",
+      "q": "An organism cultured from cerebrospinal fluid is reported. Why is this automatically significant?",
+      "choices": [
+        "CSF is normally sterile",
+        "CSF has abundant normal flora that is usually harmless",
+        "CSF cultures are frequently contaminated by skin flora",
+        "All CSF organisms are commensals"
+      ],
+      "answer": 0,
+      "why": "CSF, blood, lower airway, bladder urine and deep tissue have no normal flora, so any recovered organism demands explanation. Skin contamination can occur but is the exception, not the default assumption.",
+      "lesson": "sci-micro-l09",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-micro-q032",
+      "q": "Four hours after a church picnic, several attendees develop sudden vomiting and cramping without fever. Which mechanism and organism fit best?",
+      "choices": [
+        "Infection with Salmonella after 24 hours of replication",
+        "Intoxication by preformed Staphylococcus aureus enterotoxin",
+        "Shiga toxin production by E. coli O157:H7",
+        "Invasive Shigella dysentery"
+      ],
+      "answer": 1,
+      "why": "Onset within 1–6 hours with vomiting and no fever indicates preformed toxin ingested with the food, not organism replication. Salmonella, Shigella and O157:H7 all require an incubation period measured in days and typically produce fever or bloody stool.",
+      "lesson": "sci-micro-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-micro-q033",
+      "q": "Koch's postulates cannot be fulfilled for syphilis primarily because Treponema pallidum:",
+      "choices": [
+        "Has no known portal of entry",
+        "Cannot be grown in pure culture on artificial media",
+        "Produces no virulence factors",
+        "Is found in healthy hosts as normal flora"
+      ],
+      "answer": 1,
+      "why": "The second postulate requires pure culture, and T. pallidum cannot be cultivated on standard media. It has a clear sexual and transplacental portal of entry, real virulence factors, and is never normal flora.",
+      "lesson": "sci-micro-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-micro-q034",
+      "q": "Which intervention breaks the chain of infection at the 'susceptible host' link?",
+      "choices": [
+        "Hand hygiene",
+        "Isolating an infectious patient",
+        "Disinfecting a bed rail",
+        "Immunization"
+      ],
+      "answer": 3,
+      "why": "Vaccination removes susceptibility in the host. Hand hygiene and surface disinfection interrupt the mode of transmission, and isolation controls the portal of exit and transmission.",
+      "lesson": "sci-micro-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-micro-q035",
+      "q": "A newborn is protected from measles for several months without ever being vaccinated. This is an example of:",
+      "choices": [
+        "Naturally acquired passive immunity",
+        "Artificially acquired active immunity",
+        "Naturally acquired active immunity",
+        "Artificially acquired passive immunity"
+      ],
+      "answer": 0,
+      "why": "Maternal IgG crossing the placenta is passive and natural, and it wanes over months. Active immunity requires the infant's own response, and artificial passive immunity would mean injected immune globulin.",
+      "lesson": "sci-micro-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-micro-q036",
+      "q": "A college freshman in a dormitory develops fever, neck stiffness and a rapidly spreading petechial rash. Which organism is most likely?",
+      "choices": [
+        "Streptococcus pneumoniae",
+        "Neisseria meningitidis",
+        "Listeria monocytogenes",
+        "Cryptococcus neoformans"
+      ],
+      "answer": 1,
+      "why": "The petechial or purpuric rash with meningitis in a dormitory setting is characteristic of meningococcus. S. pneumoniae causes meningitis without that rash, Listeria targets neonates and the elderly, and Cryptococcus causes indolent meningitis in AIDS.",
+      "lesson": "sci-micro-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-micro-q037",
+      "q": "Which antibody class appears first in a new infection and is the best complement activator?",
+      "choices": [
+        "IgA",
+        "IgG",
+        "IgM",
+        "IgE"
+      ],
+      "answer": 2,
+      "why": "IgM is a pentamer with ten binding sites, produced first and highly efficient at fixing complement. IgG dominates the secondary response, IgA protects secretions, and IgE mediates allergy.",
+      "lesson": "sci-micro-l10",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-micro-q038",
+      "q": "A 4-year-old has been exposed to a household case of pertussis. Which statement about the acellular pertussis vaccine is accurate?",
+      "choices": [
+        "It is a live attenuated vaccine contraindicated in children",
+        "It cannot be given with other vaccines",
+        "It provides lifelong immunity after one dose",
+        "It is a subunit vaccine and requires a series plus later boosters"
+      ],
+      "answer": 3,
+      "why": "Acellular pertussis uses purified antigens, so immunity is safer but wanes and requires a primary series plus Tdap boosters. It is not live, one dose is insufficient, and it is routinely co-administered in combination vaccines.",
+      "lesson": "sci-micro-l10",
+      "difficulty": 2
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "sci-micro-s01",
+      "title": "Lab practical: identifying an unknown from a wound culture",
+      "setting": "classroom",
+      "intro": "You are at the bench in microbiology lab. Your instructor hands you a broth tube labeled **Unknown 14**, drawn from a simulated wound culture, and a worksheet. You have blood agar, MacConkey agar, mannitol salt agar, Gram stain reagents, hydrogen peroxide, and a coagulase kit. The rule is the same as in a clinical lab: cheap tests first, and every step should narrow the field.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "The broth is turbid after overnight incubation at `37 degrees Celsius`. Nothing else is known. What is your first move?",
+          "choices": [
+            {
+              "text": "Perform a Gram stain from the broth",
+              "next": "s2",
+              "feedback": "Correct. The Gram stain is the first test on virtually any clinical specimen because it splits the universe of possibilities in two minutes for pennies.",
+              "score": 1
+            },
+            {
+              "text": "Run a coagulase test immediately",
+              "next": "s2",
+              "feedback": "Premature. Coagulase only distinguishes S. aureus from other staphylococci. Running it before you know the organism is even a Gram-positive coccus wastes reagent and tells you nothing interpretable.",
+              "score": 0
+            },
+            {
+              "text": "Streak to MacConkey agar and wait 24 hours",
+              "next": "s2",
+              "feedback": "Not wrong, but slow and narrow. MacConkey only grows Gram-negatives, so if the organism is Gram-positive you have burned a full day learning nothing.",
+              "score": 0
+            },
+            {
+              "text": "Send the broth for acid-fast staining",
+              "next": "s2",
+              "feedback": "Harmful use of resources. Acid-fast staining is reserved for suspected Mycobacterium or Nocardia, and neither grows to turbidity overnight in routine broth.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "The Gram stain shows **purple cocci in grape-like clusters**. Name the two facts you now have and choose the next test.",
+          "choices": [
+            {
+              "text": "Gram-positive cocci in clusters; run a catalase test with hydrogen peroxide",
+              "next": "s3",
+              "feedback": "Exactly right. Clusters point to Staphylococcus or Micrococcus; catalase separates staphylococci (positive, bubbles) from streptococci (negative).",
+              "score": 1
+            },
+            {
+              "text": "Gram-negative cocci; streak to MacConkey",
+              "next": "s3",
+              "feedback": "Misread. Purple means the crystal violet-iodine complex was retained, which is Gram-positive. MacConkey would show no growth and cost you a day.",
+              "score": -1
+            },
+            {
+              "text": "Gram-positive cocci in chains; test for bile solubility",
+              "next": "s3",
+              "feedback": "Arrangement matters. Chains suggest Streptococcus; clusters suggest Staphylococcus. Bile solubility is a pneumococcal test and does not apply here.",
+              "score": 0
+            },
+            {
+              "text": "Gram-positive rods; check for endospores with malachite green",
+              "next": "s3",
+              "feedback": "Shape misread. Cocci are spheres, not rods, and staphylococci do not form endospores — only Bacillus and Clostridium do.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "Hydrogen peroxide produces vigorous bubbling. The isolate is **catalase positive**. You streak mannitol salt agar, which contains `7.5%` NaCl and mannitol with phenol red. What are you testing for, and what result would point to S. aureus?",
+          "choices": [
+            {
+              "text": "Salt tolerance and mannitol fermentation; S. aureus grows and turns the agar yellow",
+              "next": "s4",
+              "feedback": "Correct on both counts. The 7.5% salt is the selective element and the acid from mannitol fermentation drops the pH, turning phenol red yellow.",
+              "score": 1
+            },
+            {
+              "text": "Hemolysis pattern; S. aureus produces a clear zone",
+              "next": "s4",
+              "feedback": "Wrong medium. Hemolysis is read on blood agar. Mannitol salt has no red blood cells in it.",
+              "score": 0
+            },
+            {
+              "text": "Lactose fermentation; S. aureus turns colonies pink",
+              "next": "s4",
+              "feedback": "That is MacConkey logic applied to the wrong plate. Mannitol salt tests mannitol, and its indicator turns yellow, not pink.",
+              "score": 0
+            },
+            {
+              "text": "Oxygen requirement; S. aureus grows only at the bottom of the plate",
+              "next": "s4",
+              "feedback": "Plates do not measure oxygen gradients; thioglycolate tubes do. S. aureus is a facultative anaerobe and grows across the whole plate.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "The mannitol salt plate is bright yellow with growth, and the coagulase test clots the plasma. Your unknown is **Staphylococcus aureus**. Your instructor adds one line to the worksheet: the simulated patient's isolate is also resistant to oxacillin. What does that tell you about the mechanism and the treatment?",
+          "vitals": {
+            "temp": 38.4,
+            "hr": 96
+          },
+          "choices": [
+            {
+              "text": "mecA encodes PBP2a, so all beta-lactams fail; vancomycin or linezolid is appropriate",
+              "next": "end",
+              "feedback": "Correct. Oxacillin resistance is the marker for MRSA, and because the target itself is altered, adding a beta-lactamase inhibitor does not help. Vancomycin, linezolid, daptomycin or ceftaroline are the options.",
+              "score": 1
+            },
+            {
+              "text": "The organism makes beta-lactamase, so amoxicillin-clavulanate will work",
+              "next": "end",
+              "feedback": "This is the classic error. Oxacillin and nafcillin are already beta-lactamase resistant, so failing them proves the mechanism is target alteration, not enzyme production. Clavulanate adds nothing.",
+              "score": -1
+            },
+            {
+              "text": "Resistance was caused by exposure to oxacillin creating a new mutation",
+              "next": "end",
+              "feedback": "Antibiotics select, they do not create. The mecA gene arrived by horizontal transfer on a mobile element; exposure simply removed the susceptible competition.",
+              "score": 0
+            },
+            {
+              "text": "Report the isolate as susceptible since it grew on mannitol salt agar",
+              "next": "end",
+              "feedback": "Growth on a selective medium is an identification result, not a susceptibility result. Susceptibility requires Kirby-Bauer or MIC testing interpreted against breakpoints.",
+              "score": -1
+            }
+          ]
+        }
+      ],
+      "debrief": "The pattern to remember is the identification ladder: **Gram stain first**, then shape and arrangement, then a quick enzyme test (catalase), then selective and differential media, then a confirmatory test (coagulase). Each step should cut the possibilities roughly in half, and no step should be run before the one that makes it interpretable. Separately, oxacillin resistance in S. aureus always means altered target (PBP2a from mecA), never simple beta-lactamase — which is exactly why beta-lactamase inhibitor combinations fail against MRSA."
+    },
+    {
+      "id": "sci-micro-s02",
+      "title": "Case conference: an outbreak on the orthopedic floor",
+      "setting": "classroom",
+      "intro": "Your microbiology class is given a real-format outbreak worksheet. Over `3 weeks`, six patients on one orthopedic unit developed watery diarrhea. Four had received cefazolin or ciprofloxacin in the prior `10 days`. Stool testing is positive for toxigenic *Clostridioides difficile* in five of them. You are asked to reason through the epidemiology the way an infection preventionist would.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "First, classify what you are looking at. Baseline on this unit is about one case every `3 months`. Six cases in `3 weeks` is best described as:",
+          "choices": [
+            {
+              "text": "An epidemic (outbreak) — more cases than expected for this place and time",
+              "next": "s2",
+              "feedback": "Correct. Epidemic simply means an excess over the expected baseline in a defined population; scale can be one hospital unit.",
+              "score": 1
+            },
+            {
+              "text": "Endemic disease, since C. difficile is always present in hospitals",
+              "next": "s2",
+              "feedback": "Endemic describes a constant background rate. The point of an outbreak investigation is that the rate has exceeded that background, which is what six cases in three weeks does.",
+              "score": 0
+            },
+            {
+              "text": "A pandemic, because C. difficile occurs worldwide",
+              "next": "s2",
+              "feedback": "Pandemic means an epidemic crossing countries or continents. A single hospital unit does not meet that definition no matter how widely the organism is distributed.",
+              "score": -1
+            },
+            {
+              "text": "Sporadic cases, since each patient was admitted separately",
+              "next": "s2",
+              "feedback": "Sporadic means occasional and unconnected. Clustering in time, place and antibiotic exposure argues strongly against chance.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "Four of six patients had recent cefazolin or ciprofloxacin. Explain the mechanism linking antibiotics to *C. difficile* disease.",
+          "choices": [
+            {
+              "text": "Broad-spectrum antibiotics eliminate competing colonic flora, allowing resistant C. difficile to overgrow and release toxins A and B",
+              "next": "s3",
+              "feedback": "Exactly. This is superinfection and it is an ecological effect, not direct drug toxicity. Losing microbial antagonism is what opens the niche.",
+              "score": 1
+            },
+            {
+              "text": "The antibiotics directly injure the colonic mucosa, producing diarrhea",
+              "next": "s3",
+              "feedback": "Direct mucosal toxicity can cause mild diarrhea, but it does not produce toxin-positive stool or pseudomembranes. The disease here is caused by an organism, not the drug.",
+              "score": 0
+            },
+            {
+              "text": "The antibiotics caused a mutation converting normal E. coli into C. difficile",
+              "next": "s3",
+              "feedback": "Species do not convert into one another. Antibiotics select among organisms already present; they cannot rewrite one genus into another.",
+              "score": -1
+            },
+            {
+              "text": "The antibiotics triggered an IgE-mediated allergic colitis",
+              "next": "s3",
+              "feedback": "Allergy presents with rash, urticaria or anaphylaxis, not toxin-positive watery stool. Serology and stool toxin testing separate these easily.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "Staff report using alcohol hand rub between every patient, and rooms are wiped with a quaternary ammonium disinfectant. What is the flaw?",
+          "choices": [
+            {
+              "text": "Neither alcohol nor quats are sporicidal; handwashing with soap and water plus a bleach-based agent is required",
+              "next": "s4",
+              "feedback": "Correct, and this is the most common real-world failure. Alcohol leaves spores viable on hands and quats leave them viable on surfaces, so transmission continues despite good compliance.",
+              "score": 1
+            },
+            {
+              "text": "Nothing is wrong; alcohol is the gold standard for all organisms",
+              "next": "s4",
+              "feedback": "Alcohol is excellent for vegetative bacteria and enveloped viruses, but endospores and naked viruses such as norovirus survive it entirely. The exception is the whole point here.",
+              "score": -1
+            },
+            {
+              "text": "The problem is that staff wash hands too frequently, damaging skin barrier",
+              "next": "s4",
+              "feedback": "Skin breakdown is a real occupational issue but it is not what drives an outbreak. The failure here is that the agents used do not kill the organism's spore form.",
+              "score": 0
+            },
+            {
+              "text": "Quats should be replaced with 70% alcohol on surfaces",
+              "next": "s4",
+              "feedback": "That swaps one non-sporicidal agent for another. A sporicidal agent such as a sodium hypochlorite solution is what the situation requires.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "You are asked to name the single most important upstream intervention to prevent the next cluster.",
+          "choices": [
+            {
+              "text": "Antibiotic stewardship — narrower, shorter, indication-driven antibiotic use",
+              "next": "s5",
+              "feedback": "Correct. Contact precautions and bleach interrupt transmission, but stewardship removes the condition that makes patients susceptible in the first place.",
+              "score": 1
+            },
+            {
+              "text": "Prophylactic oral vancomycin for every orthopedic admission",
+              "next": "s5",
+              "feedback": "This adds antibiotic pressure to a problem caused by antibiotic pressure, and it drives vancomycin resistance. Prophylaxis is not an outbreak control measure here.",
+              "score": -1
+            },
+            {
+              "text": "Testing every patient on admission and treating all colonized patients",
+              "next": "s5",
+              "feedback": "Asymptomatic colonization is common and treating it does not reduce disease; it selects resistance and can itself disturb flora further. Testing is for symptomatic patients.",
+              "score": -1
+            },
+            {
+              "text": "Installing UV lamps in hallways",
+              "next": "s5",
+              "feedback": "UV does not penetrate surfaces, shadows or soil, and hallway air is not the transmission route. Whole-room UV as an adjunct to terminal cleaning is a different, more targeted use.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "Final question on the worksheet: using the chain of infection, name which link each control measure breaks.",
+          "choices": [
+            {
+              "text": "Bleach cleaning breaks transmission; private room and gowns break portal of exit and transmission; stewardship protects the susceptible host",
+              "next": "end",
+              "feedback": "Well reasoned. Mapping each control to a link is how infection preventionists check that a bundle actually covers the chain rather than piling on redundant measures.",
+              "score": 1
+            },
+            {
+              "text": "All measures break the 'infectious agent' link because they reduce organisms",
+              "next": "end",
+              "feedback": "Too coarse. The agent link is broken only by eliminating the organism at its source; environmental and behavioral controls act on transmission, exit and host susceptibility.",
+              "score": 0
+            },
+            {
+              "text": "None of these apply because C. difficile is endogenous flora",
+              "next": "end",
+              "feedback": "C. difficile is carried by a minority of adults but hospital outbreaks are overwhelmingly transmitted from the environment and staff hands, so every link is actionable.",
+              "score": -1
+            }
+          ]
+        }
+      ],
+      "debrief": "Two patterns worth keeping. First, an outbreak is defined relative to a baseline, not by an absolute number — six cases is an epidemic on a unit that normally sees four a year. Second, control measures should be mapped to specific links in the chain of infection so you can see what is actually covered: sporicidal cleaning and handwashing attack transmission, isolation attacks the portal of exit, and antibiotic stewardship is the only measure that reduces host susceptibility. When alcohol-based products are failing, ask whether the organism has a spore form or a naked capsid — those two properties explain nearly every disinfection failure you will meet."
+    }
+  ]
+}

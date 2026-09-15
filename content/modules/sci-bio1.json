@@ -1,0 +1,1741 @@
+{
+  "schema": 1,
+  "id": "sci-bio1",
+  "track": "prereq",
+  "title": "General Biology I",
+  "short": "Biology I",
+  "summary": "The first semester of majors biology in syllabus order: scientific method, the chemistry of life, cells and membranes, energy and enzymes, respiration and photosynthesis, the cell cycle, and genetics from Mendel to the genetic code.",
+  "lessons": [
+    {
+      "id": "sci-bio1-l01",
+      "title": "What biology studies and how it tests ideas",
+      "minutes": 6,
+      "body": "Biology is the study of living systems, and the first exam of the semester almost always asks you to define life by its properties rather than by a single sentence. Living things are made of cells, use energy (metabolism), maintain a stable internal state (homeostasis), respond to stimuli, grow and develop from genetic instructions, reproduce, and evolve as populations.\n\nBiology is organized as a **hierarchy of organization**: atom, molecule, organelle, cell, tissue, organ, organ system, organism, population, community, ecosystem, biosphere. At each level, new properties appear that the parts alone do not have. Those are **emergent properties** — a single heart muscle cell twitches, but only the organ pumps `5 L/min`.\n\n## The method, the way exams score it\n\nA scientific investigation moves from observation to a testable **hypothesis** — a proposed explanation that makes a prediction and can be falsified. \"Plants grow better in light\" is vague; \"bean seedlings grown at `16 h` light per day will be taller at day 14 than seedlings at `0 h`\" is testable.\n\nAn experiment has an **independent variable** (what you change), a **dependent variable** (what you measure), and **controlled variables** (everything you hold constant). A **control group** receives no treatment or a sham treatment so you have something to compare against. Large sample sizes and repeated trials reduce the effect of random variation.\n\n> **Trap:** Students confuse the control *group* with controlled *variables*. The group is a set of subjects; the variables are the conditions kept constant in every group.\n\n## Theory does not mean guess\n\nIn everyday speech a theory is a hunch. In science a **theory** is a broad, repeatedly tested explanation supported by many independent lines of evidence — cell theory, evolution by natural selection, the germ theory of disease. A **law** describes a consistent relationship (the Hardy-Weinberg equation, the gas laws) without explaining the mechanism.\n\nScience is also limited on purpose. It can only address questions that generate testable, falsifiable predictions about the natural world. Questions of value, meaning, or the supernatural are outside its tools, not beneath them.\n\n## Deductive and inductive reasoning\n\n**Inductive** reasoning builds a generalization from many observations: every cell anyone has examined came from a pre-existing cell, therefore all cells arise from cells. **Deductive** reasoning runs the other way — from a general premise to a specific prediction: if all cells have membranes, then this new isolate should have one.\n\n> **On shift:** Clinical trials are this same skeleton with human stakes. The placebo arm is the control group, randomization protects the controlled variables, and \"double-blind\" exists because the observer is one more variable.\n\nCell theory anchors the whole course: all living things are made of one or more cells, the cell is the basic unit of structure and function, and all cells come from pre-existing cells. Every later topic — respiration, mitosis, inheritance — is something happening inside or between cells.",
+      "keyPoints": [
+        "Life is defined by a property list: cells, metabolism, homeostasis, response, growth, reproduction, evolution.",
+        "Emergent properties appear at each new level of biological organization.",
+        "Independent variable is what you change; dependent is what you measure; controlled variables are held constant.",
+        "A scientific theory is a well-supported explanation, not a guess; a law describes a pattern without explaining it.",
+        "Cell theory: all organisms are cells, cells are the basic unit, cells arise only from pre-existing cells."
+      ],
+      "checks": [
+        {
+          "q": "A researcher grows identical bacterial cultures at 25, 30, 35 and 40 degrees Celsius and counts colonies at 24 hours. What is the dependent variable?",
+          "choices": [
+            "Temperature",
+            "Colony count at 24 hours",
+            "The growth medium",
+            "Incubation time"
+          ],
+          "answer": 1,
+          "why": "Temperature is manipulated (independent). Colony count is the measured outcome (dependent). Medium and incubation time are held constant, so they are controlled variables."
+        },
+        {
+          "q": "Which statement uses the word 'theory' the way a biologist does?",
+          "choices": [
+            "I have a theory that the bus is late because of traffic.",
+            "Evolution is only a theory, so it is unproven.",
+            "Cell theory summarizes centuries of evidence that cells arise from cells.",
+            "A theory becomes a law once enough people accept it."
+          ],
+          "answer": 2,
+          "why": "A scientific theory is a broad explanation supported by many independent lines of evidence. Theories do not mature into laws; laws describe patterns while theories explain them."
+        },
+        {
+          "q": "A heart pumps blood, but no single cardiac muscle cell does. This is an example of:",
+          "choices": [
+            "An emergent property",
+            "Homeostasis",
+            "Inductive reasoning",
+            "A controlled variable"
+          ],
+          "answer": 0,
+          "why": "Emergent properties arise at a higher level of organization from interactions among parts. Homeostasis is maintaining internal stability, a different concept."
+        }
+      ]
+    },
+    {
+      "id": "sci-bio1-l02",
+      "title": "The chemistry of life: water and the four macromolecules",
+      "minutes": 8,
+      "body": "Living matter is mostly four elements — carbon, hydrogen, oxygen, nitrogen — about `96%` of body mass. Atoms bond because of their valence electrons. A **covalent bond** shares electrons; an **ionic bond** transfers them; a **hydrogen bond** is a weak attraction between a partially positive hydrogen and a partially negative atom nearby.\n\n## Why water behaves the way it does\n\nWater is **polar**: oxygen pulls the shared electrons harder, so oxygen is partially negative and each hydrogen partially positive. That single fact generates water's whole property list.\n\n- **Cohesion and surface tension** — water molecules stick to each other, pulling columns of sap up a plant.\n- **High specific heat** (`1 cal/g` per degree C) — hydrogen bonds absorb heat before temperature rises, which buffers body temperature.\n- **High heat of vaporization** (`~540 cal/g`) — evaporative cooling, i.e. sweating, is powerful.\n- **Ice floats** because hydrogen bonds lock into an open lattice that is less dense than liquid water.\n- **Universal solvent** — polar and ionic solutes dissolve (hydrophilic); nonpolar molecules do not (hydrophobic).\n\n**pH** is the negative log of hydrogen ion concentration. Pure water is `pH 7` (`10^-7 M` H+). Each pH unit is a tenfold change, so `pH 5` has 100 times the H+ of `pH 7`. Human blood is held at `7.35–7.45` by the bicarbonate buffer system.\n\n> **Key:** A **buffer** is a weak acid and its conjugate base together. It absorbs added H+ or OH- so pH barely moves.\n\n## Four macromolecules\n\nThree of the four are polymers built by **dehydration synthesis** (remove a water, form a bond) and broken by **hydrolysis** (add a water, break a bond).\n\n| Class | Monomer | Bond | Jobs |\n|---|---|---|---|\n| Carbohydrate | Monosaccharide | Glycosidic | Fuel, structure |\n| Lipid | Not a true polymer | Ester | Storage, membranes, signaling |\n| Protein | Amino acid | Peptide | Everything else |\n| Nucleic acid | Nucleotide | Phosphodiester | Information |\n\n**Carbohydrates**: glucose `C6H12O6` is the reference sugar. Disaccharides include sucrose and lactose. Polysaccharides: starch and glycogen store energy (alpha linkages, digestible), cellulose and chitin are structural (beta linkages, humans lack the enzyme).\n\n**Lipids** are defined by being hydrophobic, not by a shared monomer. Triglycerides are glycerol plus three fatty acids — saturated (no double bonds, solid) or unsaturated (double bonds, kinked, liquid). Phospholipids have a polar head and two nonpolar tails, so they self-assemble into bilayers. Steroids share a four-ring backbone: cholesterol, testosterone, estrogen, cortisol.\n\n**Proteins** are chains of 20 amino acids, each with an amino group, a carboxyl group, and an R group that sets its chemistry. Four levels of structure: **primary** (sequence), **secondary** (alpha helix and beta pleated sheet, held by hydrogen bonds in the backbone), **tertiary** (3D fold driven by R-group interactions, especially the hydrophobic core and disulfide bridges), **quaternary** (multiple subunits, as in hemoglobin's four chains). Heat, extreme pH, or salt cause **denaturation** — shape is lost, function goes with it.\n\n**Nucleic acids**: DNA and RNA, nucleotides of sugar, phosphate, and nitrogenous base.\n\n> **On shift:** Sickle cell disease is a single amino acid swap in the beta-globin primary structure. One R-group change ruins the quaternary behavior of hemoglobin and deforms the whole cell.",
+      "keyPoints": [
+        "Water's polarity explains cohesion, high specific heat, evaporative cooling, ice floating, and solvent power.",
+        "pH is a log scale; one unit equals a tenfold H+ change; blood is buffered to 7.35 to 7.45.",
+        "Dehydration synthesis builds polymers, hydrolysis breaks them.",
+        "Protein function follows shape: primary sequence dictates the fold, and denaturation destroys function.",
+        "Lipids are grouped by hydrophobicity, not by a shared monomer."
+      ],
+      "checks": [
+        {
+          "q": "Sweating cools the body efficiently mainly because water has a high:",
+          "choices": [
+            "Specific heat",
+            "Heat of vaporization",
+            "Surface tension",
+            "Density in solid form"
+          ],
+          "answer": 1,
+          "why": "Breaking the hydrogen bonds needed to convert liquid to vapor takes roughly 540 cal/g, carrying away large amounts of heat. High specific heat buffers temperature but does not remove heat from the body."
+        },
+        {
+          "q": "A solution at pH 4 compared with a solution at pH 6 has:",
+          "choices": [
+            "2 times more H+",
+            "10 times more H+",
+            "100 times more H+",
+            "100 times less H+"
+          ],
+          "answer": 2,
+          "why": "pH is a negative log scale, so each unit is a tenfold change. Two units lower means 10 x 10 = 100 times more hydrogen ions, i.e. more acidic."
+        },
+        {
+          "q": "Boiling an egg turns the clear white solid. The best explanation is:",
+          "choices": [
+            "Peptide bonds are hydrolyzed",
+            "Primary structure is rewritten",
+            "Proteins denature as secondary and tertiary bonds break",
+            "Amino acids polymerize by dehydration synthesis"
+          ],
+          "answer": 2,
+          "why": "Heat disrupts the weak interactions holding secondary and tertiary structure, so proteins unfold and aggregate. Covalent peptide bonds and therefore the primary sequence survive boiling."
+        }
+      ]
+    },
+    {
+      "id": "sci-bio1-l03",
+      "title": "Cell structure: prokaryotes, eukaryotes and the organelles",
+      "minutes": 8,
+      "body": "Cells are small for a geometric reason. As a cell enlarges, volume grows with the cube of the radius but surface area only with the square, so the **surface-area-to-volume ratio** falls. Past a certain size the membrane cannot import nutrients and dump waste fast enough. That is why cells stay microscopic and why absorptive surfaces evolve folds — microvilli, cristae, thylakoids.\n\n## Two cell plans\n\n**Prokaryotic** cells (Bacteria and Archaea) have no nucleus and no membrane-bound organelles. DNA sits in a **nucleoid** region as a single circular chromosome, often with small **plasmids**. Ribosomes are `70S`. Most have a cell wall — in bacteria, peptidoglycan — plus possible capsule, flagella, and pili. Typical size `1–5 micrometers`.\n\n**Eukaryotic** cells (protists, fungi, plants, animals) have a true nucleus and a set of membrane-bound compartments. Ribosomes are `80S`. Typical size `10–100 micrometers`. Compartmentalization is the point: incompatible reactions run at the same time in different rooms.\n\n> **On shift:** The `70S` versus `80S` difference is why tetracyclines and aminoglycosides kill bacteria without wrecking your ribosomes. Selective toxicity is built on structural differences like this one.\n\n## The organelle tour\n\n- **Nucleus** — double membrane with nuclear pores; holds chromatin; the **nucleolus** builds ribosomal subunits.\n- **Ribosomes** — protein synthesis; free in cytosol or bound to rough ER. Not membrane-bound.\n- **Rough ER** — ribosome-studded; makes and folds proteins destined for membranes, lysosomes, or secretion.\n- **Smooth ER** — lipid and steroid synthesis, detoxification, calcium storage (the sarcoplasmic reticulum of muscle).\n- **Golgi apparatus** — modifies, sorts, tags and ships. Cis face receives, trans face ships.\n- **Lysosome** — acidic `pH ~5` sac of hydrolytic enzymes; digests debris and worn organelles (autophagy).\n- **Peroxisome** — breaks down fatty acids and detoxifies, generating and then destroying hydrogen peroxide with catalase.\n- **Mitochondrion** — double membrane, folded **cristae**, its own circular DNA and `70S` ribosomes; makes ATP.\n- **Chloroplast** — plants and algae only; thylakoid stacks (grana) in stroma; also has its own DNA.\n- **Vacuole** — large and central in plants, providing turgor pressure.\n- **Cytoskeleton** — microfilaments (actin, `7 nm`) for shape and movement, intermediate filaments (`10 nm`) for tension, microtubules (tubulin, `25 nm`) for tracks, spindle, cilia and flagella in the `9+2` arrangement.\n\n**Centrosomes and centrioles** organize microtubules in animal cells. Plant cells add a cellulose **cell wall**, chloroplasts, and a central vacuole; animal cells have centrioles, lysosomes in abundance, and no wall.\n\n> **Key:** The **endosymbiotic theory** explains mitochondria and chloroplasts: an ancestral cell engulfed free-living prokaryotes. The evidence is their double membrane, circular DNA, `70S` ribosomes, and binary-fission-style division.\n\nFollow a secreted protein and you connect the whole endomembrane system: ribosome on rough ER, vesicle to Golgi, modification, vesicle to plasma membrane, exocytosis.",
+      "keyPoints": [
+        "Surface-area-to-volume ratio limits cell size and drives folded membranes.",
+        "Prokaryotes: no nucleus, 70S ribosomes, circular DNA, peptidoglycan wall in bacteria.",
+        "Rough ER to Golgi to vesicle to membrane is the secretory pathway.",
+        "Mitochondria and chloroplasts have double membranes, circular DNA and 70S ribosomes, the core evidence for endosymbiosis.",
+        "Microtubules (25 nm) build spindle, cilia and flagella; microfilaments (7 nm) are actin."
+      ],
+      "checks": [
+        {
+          "q": "A cell that secretes large amounts of digestive enzyme would be expected to have abundant:",
+          "choices": [
+            "Smooth ER",
+            "Rough ER and Golgi",
+            "Peroxisomes",
+            "Central vacuole"
+          ],
+          "answer": 1,
+          "why": "Secreted proteins are synthesized on rough ER ribosomes and processed through the Golgi. Smooth ER handles lipids and detoxification, not protein export."
+        },
+        {
+          "q": "Which observation best supports the endosymbiotic theory?",
+          "choices": [
+            "Mitochondria have cristae that increase surface area",
+            "Mitochondria contain circular DNA and 70S ribosomes",
+            "Mitochondria produce ATP",
+            "Mitochondria are found in nearly all eukaryotes"
+          ],
+          "answer": 1,
+          "why": "Circular DNA and prokaryote-sized 70S ribosomes are prokaryotic traits retained inside a eukaryotic cell. Cristae and ATP production describe function, not ancestry."
+        },
+        {
+          "q": "An inherited defect in lysosomal enzymes would most directly cause:",
+          "choices": [
+            "Failure to make ATP",
+            "Accumulation of undigested macromolecules inside cells",
+            "Loss of the cell wall",
+            "Inability to transcribe DNA"
+          ],
+          "answer": 1,
+          "why": "Lysosomes hydrolyze macromolecules at acidic pH. Without functional enzymes, substrate piles up inside the cell, which is the mechanism of Tay-Sachs and other storage diseases."
+        }
+      ]
+    },
+    {
+      "id": "sci-bio1-l04",
+      "title": "Membranes and transport",
+      "minutes": 7,
+      "body": "The plasma membrane is a **fluid mosaic**: a phospholipid bilayer with proteins drifting in it like boats. Hydrophilic phosphate heads face the water on both sides; hydrophobic fatty acid tails face inward. That sandwich is why the membrane is **selectively permeable**.\n\nWhat crosses freely? Small nonpolar molecules — `O2`, `CO2`, steroid hormones — and, slowly, small uncharged polar molecules like water and urea. What cannot? Ions and large polar molecules such as glucose and amino acids. They need protein help.\n\n**Cholesterol** is the fluidity buffer in animal membranes: at high temperature it restrains phospholipid movement, at low temperature it keeps tails from packing solid. Unsaturated fatty acid tails, with their kinks, also keep membranes fluid.\n\nMembrane proteins do six jobs worth memorizing: transport, enzymatic activity, signal reception, cell-cell recognition (usually via attached carbohydrate, the **glycocalyx**), intercellular joining, and cytoskeleton attachment.\n\n## Passive transport: no ATP\n\n**Simple diffusion** is net movement down a concentration gradient until equilibrium. **Facilitated diffusion** is the same downhill movement but through a channel or carrier protein — glucose transporters, aquaporins, ion channels. It is still passive, and it **saturates** when all carriers are busy.\n\n**Osmosis** is diffusion of water across a selectively permeable membrane toward the higher solute concentration. Tonicity describes the solution relative to the cell:\n\n- **Hypotonic** solution — less solute outside, water enters, animal cell swells and may lyse. A plant cell becomes turgid, which is healthy.\n- **Isotonic** — no net movement. `0.9%` sodium chloride is isotonic to human blood.\n- **Hypertonic** — more solute outside, water leaves, animal cell crenates; a plant cell plasmolyzes.\n\n> **Trap:** Water moves toward the *higher solute* concentration, which is the *lower water* concentration. Exam questions deliberately phrase it both ways.\n\n## Active transport: ATP required\n\n**Primary active transport** pumps solute against its gradient using ATP directly. The **sodium-potassium pump** exports `3 Na+` and imports `2 K+` per ATP, building the electrochemical gradient that neurons and muscle spend on action potentials.\n\n**Secondary active transport** (cotransport) rides the gradient a pump already built — the sodium-glucose cotransporter in the intestine and kidney drags glucose uphill using sodium's downhill flow.\n\n**Bulk transport** moves material too big for proteins, always with ATP: **endocytosis** (phagocytosis of particles, pinocytosis of fluid, receptor-mediated endocytosis of specific ligands such as LDL) and **exocytosis** for secretion.\n\n> **On shift:** Oral rehydration solution is secondary active transport as therapy. Sugar plus salt in the same fluid drives the cotransporter, and water follows the sodium by osmosis. Plain water does not do this.",
+      "keyPoints": [
+        "Fluid mosaic: phospholipid bilayer plus drifting proteins; cholesterol buffers fluidity.",
+        "Small nonpolar molecules cross freely; ions and large polar molecules require proteins.",
+        "Water moves toward higher solute concentration; 0.9% NaCl is isotonic to blood.",
+        "The Na+/K+ pump moves 3 Na+ out and 2 K+ in per ATP.",
+        "Facilitated diffusion is passive and saturable; active transport spends ATP against the gradient."
+      ],
+      "checks": [
+        {
+          "q": "Red blood cells placed in distilled water will:",
+          "choices": [
+            "Shrink as water leaves",
+            "Swell and potentially lyse",
+            "Remain unchanged",
+            "Become turgid but survive"
+          ],
+          "answer": 1,
+          "why": "Distilled water is hypotonic to the cell, so water enters. Animal cells lack a wall, so they burst rather than becoming turgid like plant cells."
+        },
+        {
+          "q": "Glucose uptake into a cell plateaus at high extracellular glucose even though the gradient still favors entry. This indicates:",
+          "choices": [
+            "Simple diffusion",
+            "Carrier-mediated transport that is saturable",
+            "Osmosis",
+            "Exocytosis"
+          ],
+          "answer": 1,
+          "why": "Saturation means a finite number of transport proteins are all occupied. Simple diffusion rises linearly with the gradient and never saturates."
+        },
+        {
+          "q": "Which transport process directly consumes ATP?",
+          "choices": [
+            "Oxygen entering a capillary cell",
+            "Water crossing an aquaporin",
+            "Sodium-potassium pump activity",
+            "Sodium-glucose cotransport"
+          ],
+          "answer": 2,
+          "why": "The pump hydrolyzes ATP itself. Cotransport is secondary active transport, using a gradient built earlier; oxygen and aquaporin water movement are passive."
+        }
+      ]
+    },
+    {
+      "id": "sci-bio1-l05",
+      "title": "Energy, thermodynamics and how enzymes work",
+      "minutes": 7,
+      "body": "Metabolism is every chemical reaction in a cell, split into **catabolism** (breaking things down, releasing energy) and **anabolism** (building things up, consuming energy).\n\nTwo laws govern it. The **first law of thermodynamics**: energy is conserved, only converted. The **second law**: every conversion increases the entropy (disorder) of the universe, so some energy is always lost as heat. Life is not an exception — an organism builds local order only by exporting more disorder to its surroundings.\n\n## Free energy\n\n**Gibbs free energy** (`delta G`) is the usable energy change of a reaction. A reaction with negative `delta G` is **exergonic** — it releases energy and is spontaneous. Positive `delta G` is **endergonic** — it needs an input. Spontaneous means energetically downhill, not fast; glucose in air is thermodynamically doomed but sits on the shelf for years.\n\nCells connect the two by **energy coupling**: hydrolysis of ATP to ADP plus inorganic phosphate releases about `7.3 kcal/mol` under standard conditions, and that release is used to drive endergonic work. ATP's energy lives in the repulsion between its three negative phosphate groups. Cells turn over roughly their own body weight in ATP per day because the pool is tiny and recycled constantly.\n\n## Enzymes\n\nEven downhill reactions need a push over the **activation energy** barrier. An **enzyme** is a biological catalyst, nearly always a protein (some are RNA, called ribozymes), that lowers activation energy without being consumed and without changing `delta G` or the equilibrium point. It changes the *rate*, not the destination.\n\nThe **substrate** binds the **active site** by **induced fit** — the enzyme molds slightly around the substrate. Catalysis works by orienting substrates, straining bonds, providing a favorable microenvironment, or briefly participating in the reaction.\n\nEnzyme rate depends on:\n\n- **Substrate concentration** — rises then plateaus at saturation (`Vmax`).\n- **Temperature** — rate roughly doubles per `10 degrees C` up to an optimum near `37 degrees C` in humans, then falls off a cliff as the enzyme denatures.\n- **pH** — each enzyme has an optimum. Pepsin works at `pH 2` in the stomach; trypsin at `pH 8` in the small intestine.\n- **Cofactors and coenzymes** — metal ions such as `Mg2+` and `Zn2+`, or organic helpers, most of them vitamin-derived (NAD+ from niacin, FAD from riboflavin).\n\n## Inhibition and regulation\n\nA **competitive inhibitor** resembles the substrate and occupies the active site; adding more substrate overcomes it, so `Vmax` is unchanged. A **noncompetitive** (allosteric) inhibitor binds elsewhere and changes the active site's shape; more substrate does not rescue it, so `Vmax` falls.\n\n**Feedback inhibition** is the cell's thermostat: the end product of a pathway binds allosterically to an early enzyme and shuts the pathway down. **Cooperativity** in multi-subunit enzymes means binding one substrate makes the next bind more easily.\n\n> **On shift:** Methanol poisoning is treated with fomepizole or ethanol because both compete with methanol for alcohol dehydrogenase. That is competitive inhibition used as an antidote.",
+      "keyPoints": [
+        "Exergonic reactions have negative delta G and are spontaneous; endergonic have positive delta G.",
+        "ATP hydrolysis releases about 7.3 kcal/mol and is coupled to endergonic work.",
+        "Enzymes lower activation energy; they do not change delta G or the equilibrium.",
+        "Competitive inhibition is overcome by more substrate and leaves Vmax unchanged; noncompetitive lowers Vmax.",
+        "Feedback inhibition uses the end product to switch off an early enzyme in the pathway."
+      ],
+      "checks": [
+        {
+          "q": "Adding an enzyme to a reaction changes which of the following?",
+          "choices": [
+            "The delta G of the reaction",
+            "The equilibrium concentrations",
+            "The activation energy",
+            "The energy content of the products"
+          ],
+          "answer": 2,
+          "why": "Catalysts lower the activation energy and speed the approach to equilibrium. They do not alter delta G, the equilibrium position, or product energy content."
+        },
+        {
+          "q": "An inhibitor lowers Vmax and cannot be overcome by adding more substrate. It is most likely:",
+          "choices": [
+            "A competitive inhibitor",
+            "A noncompetitive allosteric inhibitor",
+            "A cofactor",
+            "A coenzyme"
+          ],
+          "answer": 1,
+          "why": "Noncompetitive inhibitors bind outside the active site and deform it, so excess substrate cannot outcompete them and Vmax falls. Competitive inhibition leaves Vmax intact."
+        },
+        {
+          "q": "Pepsin has an optimum near pH 2. Moving pepsin into the small intestine at pH 8 will:",
+          "choices": [
+            "Increase its rate because pH is higher",
+            "Sharply decrease its activity",
+            "Have no effect since pH does not affect enzymes",
+            "Convert it to trypsin"
+          ],
+          "answer": 1,
+          "why": "Away from its pH optimum, ionization of R groups changes and the active site shape is lost, so activity falls. Enzymes are not interconverted by their environment."
+        }
+      ]
+    },
+    {
+      "id": "sci-bio1-l06",
+      "title": "Cellular respiration and fermentation",
+      "minutes": 9,
+      "body": "Aerobic respiration is the controlled oxidation of glucose: `C6H12O6 + 6 O2 -> 6 CO2 + 6 H2O + ATP + heat`. Glucose is oxidized (loses electrons and hydrogens); oxygen is reduced. The electron carriers `NAD+` and `FAD` ferry those electrons to the end of the line. Remember **OIL RIG** — oxidation is loss, reduction is gain.\n\n## Stage 1: Glycolysis (cytosol, no oxygen required)\n\nOne glucose (`6 C`) becomes two pyruvate (`3 C` each). An **investment phase** spends `2 ATP`; a **payoff phase** produces `4 ATP` by substrate-level phosphorylation and `2 NADH`. Net: `2 ATP`, `2 NADH`, `2 pyruvate`. The key regulated enzyme is **phosphofructokinase**, inhibited by ATP and citrate, stimulated by AMP — classic feedback inhibition.\n\n## Stage 2: Pyruvate oxidation (mitochondrial matrix)\n\nEach pyruvate loses a carbon as `CO2`, is oxidized to an acetyl group, and is attached to coenzyme A by the pyruvate dehydrogenase complex. Per glucose: `2 acetyl-CoA`, `2 CO2`, `2 NADH`.\n\n## Stage 3: Citric acid cycle (matrix)\n\nAcetyl-CoA (`2 C`) joins oxaloacetate (`4 C`) to make citrate (`6 C`). One turn releases `2 CO2` and yields `3 NADH`, `1 FADH2`, and `1 ATP` (or GTP) by substrate-level phosphorylation. Two turns per glucose: `6 NADH`, `2 FADH2`, `2 ATP`, `4 CO2`. All six carbons of glucose have now left as carbon dioxide.\n\n## Stage 4: Oxidative phosphorylation (inner mitochondrial membrane)\n\nNADH and FADH2 drop electrons into the **electron transport chain** (complexes I–IV). As electrons fall from carrier to carrier toward oxygen, complexes I, III and IV pump protons from matrix into the intermembrane space, building a **proton-motive force**. NADH enters at complex I; FADH2 enters at complex II, skipping one pump, which is why it yields less.\n\nProtons flow back through **ATP synthase**, and the rotation drives ADP phosphorylation. This is **chemiosmosis** (Peter Mitchell). Oxygen is the **final electron acceptor**, picking up electrons and protons to form water. Without it the chain backs up, NAD+ is never regenerated, and the whole system stalls.\n\nCurrent textbook yield: `30–32 ATP` per glucose (older texts say 36–38). Roughly `2.5 ATP` per NADH and `1.5 ATP` per FADH2.\n\n> **Trap:** Only `4 ATP` total come from substrate-level phosphorylation. The rest comes from chemiosmosis, which is why anything that blocks the chain is catastrophic.\n\n## Fermentation\n\nWithout oxygen, cells still need NAD+ back or glycolysis stops. **Lactic acid fermentation** reduces pyruvate to lactate (muscle, red blood cells, many bacteria). **Alcoholic fermentation** makes ethanol and `CO2` (yeast). Both regenerate NAD+ and yield only the `2 ATP` from glycolysis.\n\nOther fuels feed in: fats are beta-oxidized to acetyl-CoA and yield far more ATP per gram (`9 kcal/g` versus `4 kcal/g` for carbohydrate); amino acids enter after deamination at several points.\n\n> **On shift:** Cyanide blocks complex IV; carbon monoxide blocks complex IV and hemoglobin both. Electron transport halts, cells switch to fermentation, and lactate rises — an elevated lactate on a blood gas is this lesson showing up on a printout.",
+      "keyPoints": [
+        "Glycolysis nets 2 ATP, 2 NADH and 2 pyruvate in the cytosol without oxygen.",
+        "Citric acid cycle per glucose: 6 NADH, 2 FADH2, 2 ATP, 4 CO2.",
+        "Chemiosmosis makes most ATP; total yield is 30 to 32 ATP per glucose.",
+        "Oxygen is the final electron acceptor; blocking the chain stops ATP production and raises lactate.",
+        "Fermentation exists to regenerate NAD+, not to make extra ATP."
+      ],
+      "checks": [
+        {
+          "q": "In what part of the cell does glycolysis occur?",
+          "choices": [
+            "Cytosol",
+            "Mitochondrial matrix",
+            "Inner mitochondrial membrane",
+            "Nucleus"
+          ],
+          "answer": 0,
+          "why": "Glycolysis is cytosolic and needs no organelle, which is why even red blood cells without mitochondria can perform it. The matrix hosts pyruvate oxidation and the citric acid cycle."
+        },
+        {
+          "q": "A drug destroys the proton gradient across the inner mitochondrial membrane without blocking electron flow. The immediate result is:",
+          "choices": [
+            "Increased ATP synthesis",
+            "ATP synthase stops making ATP and energy is released as heat",
+            "Glycolysis stops immediately",
+            "Oxygen consumption falls to zero"
+          ],
+          "answer": 1,
+          "why": "ATP synthase is powered by the proton gradient, so an uncoupler lets electron transport and oxygen use continue while the energy dissipates as heat instead of ATP."
+        },
+        {
+          "q": "The main purpose of lactic acid fermentation in a sprinting muscle is to:",
+          "choices": [
+            "Produce large amounts of ATP",
+            "Regenerate NAD+ so glycolysis can continue",
+            "Consume oxygen faster",
+            "Make pyruvate for the citric acid cycle"
+          ],
+          "answer": 1,
+          "why": "Fermentation adds no ATP beyond glycolysis's 2. Its function is oxidizing NADH back to NAD+ so glycolysis keeps running without oxygen."
+        }
+      ]
+    },
+    {
+      "id": "sci-bio1-l07",
+      "title": "Photosynthesis and cell communication",
+      "minutes": 8,
+      "body": "Photosynthesis is respiration run backwards in accounting terms: `6 CO2 + 6 H2O + light -> C6H12O6 + 6 O2`. It is an **endergonic, anabolic** process that reduces carbon dioxide using electrons stripped from water. Autotrophs do it; everything else eats them.\n\n## Light reactions (thylakoid membrane)\n\nChlorophyll `a` is the reaction-center pigment; chlorophyll `b` and carotenoids are accessory pigments that broaden the absorbed spectrum. Chlorophyll absorbs red and blue and reflects green, which is why leaves look green.\n\nLight excites electrons in **photosystem II** (P680). **Photolysis** splits water to replace them, releasing `O2` as a by-product and dumping protons into the thylakoid space. Electrons travel an electron transport chain to **photosystem I** (P700), pumping protons along the way. Re-excited at PSI, they reduce `NADP+` to `NADPH`. Protons flow back through ATP synthase — **photophosphorylation**, the same chemiosmosis you just learned, in a different membrane.\n\n> **Key:** The oxygen you breathe comes from splitting *water*, not from carbon dioxide.\n\n## Calvin cycle (stroma, light-independent)\n\nThree phases: **carbon fixation** — rubisco attaches `CO2` to the `5 C` sugar RuBP; **reduction** — ATP and NADPH convert the product to G3P; **regeneration** — most G3P is recycled to rebuild RuBP. Three turns fix `3 CO2` and net one G3P; six turns yield one glucose, costing `18 ATP` and `12 NADPH`.\n\nRubisco also binds oxygen, wasting energy in **photorespiration**, which worsens on hot dry days when stomata close. `C4` plants (corn, sugarcane) pre-fix carbon in mesophyll cells and hand it to bundle-sheath cells; **CAM** plants (cacti, pineapple) open stomata only at night. Both are workarounds for the same flaw.\n\n## Cell communication\n\nCells talk in four ranges: **direct contact** through gap junctions or plasmodesmata, **paracrine** signaling to neighbors, **synaptic** signaling across a `20–40 nm` cleft, and **endocrine** signaling by hormones through the bloodstream.\n\nEvery pathway has three stages: **reception, transduction, response**.\n\n**Reception** — hydrophilic signals (peptide hormones, epinephrine) bind receptors on the cell surface: G-protein-coupled receptors, receptor tyrosine kinases, or ligand-gated ion channels. Hydrophobic signals (steroids, thyroid hormone) cross the membrane and bind intracellular receptors that act directly as transcription factors.\n\n**Transduction** — a relay, usually a **phosphorylation cascade** of kinases, amplifying the signal at each step. **Second messengers** such as cyclic AMP (made by adenylyl cyclase) and `Ca2+` spread the message fast through the cytosol.\n\n**Response** — an enzyme is switched on, a gene is transcribed, or a channel opens. **Apoptosis**, programmed cell death, is a tightly controlled response that dismantles the cell neatly without inflammation.\n\n> **On shift:** Cholera toxin locks a G protein in the on position, cAMP stays high, chloride and water pour into the gut. One broken transduction step explains liters of diarrhea.",
+      "keyPoints": [
+        "Light reactions make ATP and NADPH and release O2 from splitting water.",
+        "The Calvin cycle fixes CO2 with rubisco and spends 18 ATP and 12 NADPH per glucose.",
+        "C4 and CAM plants are adaptations that reduce photorespiration.",
+        "Signaling is always reception, transduction, response.",
+        "Hydrophilic signals use surface receptors and second messengers; steroids use intracellular receptors."
+      ],
+      "checks": [
+        {
+          "q": "The oxygen released during photosynthesis comes from:",
+          "choices": [
+            "Carbon dioxide",
+            "Water",
+            "Glucose",
+            "RuBP"
+          ],
+          "answer": 1,
+          "why": "Photolysis splits water at photosystem II to replace excited electrons, releasing O2. Carbon dioxide's oxygen atoms end up in sugar and water, not in released O2."
+        },
+        {
+          "q": "A cell is exposed to a steroid hormone. Where is the receptor most likely located?",
+          "choices": [
+            "Embedded in the plasma membrane",
+            "Inside the cell, in cytoplasm or nucleus",
+            "On the mitochondrial outer membrane",
+            "In the extracellular matrix"
+          ],
+          "answer": 1,
+          "why": "Steroids are hydrophobic and cross the lipid bilayer, so their receptors are intracellular and usually act as transcription factors. Peptide hormones use surface receptors instead."
+        },
+        {
+          "q": "Why does a phosphorylation cascade matter in signal transduction?",
+          "choices": [
+            "It destroys the signal molecule",
+            "It amplifies the signal at each step",
+            "It moves the receptor into the nucleus",
+            "It converts ATP into a second messenger directly"
+          ],
+          "answer": 1,
+          "why": "Each activated kinase phosphorylates many downstream targets, so a few bound ligands produce a large cellular response. The receptor itself stays in the membrane."
+        }
+      ]
+    },
+    {
+      "id": "sci-bio1-l08",
+      "title": "The cell cycle, mitosis, meiosis and their errors",
+      "minutes": 8,
+      "body": "Cells divide to grow, repair tissue, and reproduce. The **cell cycle** is **interphase** (`G1`, `S`, `G2`) plus the **mitotic phase** (mitosis plus cytokinesis). Interphase is roughly `90%` of the cycle. `G1` is growth and normal function; `S` phase replicates DNA so each chromosome becomes two identical **sister chromatids** joined at a centromere; `G2` is growth and checkpoint preparation. Non-dividing cells such as mature neurons rest in `G0`.\n\n## Mitosis, in order\n\n**Prophase** — chromatin condenses into visible chromosomes, the spindle forms from centrosomes, nucleolus disappears. **Prometaphase** — the nuclear envelope breaks down and microtubules attach to kinetochores. **Metaphase** — chromosomes line up single file on the metaphase plate. **Anaphase** — sister chromatids separate and are pulled to opposite poles. **Telophase** — nuclear envelopes reform, chromosomes decondense. **Cytokinesis** — a contractile ring of actin pinches animal cells; a cell plate builds a new wall in plants.\n\nResult: two genetically identical diploid daughter cells.\n\n**Checkpoints** guard the cycle at `G1` (is the cell big enough, is the DNA undamaged), `G2` (is replication complete and correct), and `M` (are all chromosomes attached to the spindle). Cyclins and cyclin-dependent kinases drive the transitions; `p53` is the best-known checkpoint protein, halting `G1` for repair or triggering apoptosis.\n\n> **On shift:** Cancer is checkpoint failure plus loss of density-dependent inhibition and anchorage dependence. Roughly half of human cancers carry a `p53` mutation, which is why the exam calls it the guardian of the genome.\n\n## Meiosis\n\nMeiosis makes gametes: one diploid cell (`2n = 46` in humans) becomes four haploid cells (`n = 23`), each genetically unique. One round of DNA replication, two rounds of division.\n\n**Meiosis I is the reduction division.** In prophase I, homologous chromosomes pair (**synapsis**) forming tetrads, and **crossing over** exchanges segments at chiasmata. In metaphase I, tetrads line up and **independent assortment** randomly orients each pair — `2^23`, over `8 million` combinations in humans before crossing over is counted. In anaphase I, *homologs* separate while sister chromatids stay together.\n\n**Meiosis II** resembles mitosis: sister chromatids separate. No DNA replication between the divisions.\n\nSources of variation: crossing over, independent assortment, and random fertilization.\n\n| Feature | Mitosis | Meiosis |\n|---|---|---|\n| Divisions | 1 | 2 |\n| Daughter cells | 2 | 4 |\n| Ploidy | Same as parent | Halved |\n| Genetic identity | Identical | Unique |\n| Synapsis, crossing over | No | Yes, prophase I |\n\n## When it fails\n\n**Nondisjunction** is failure of chromosomes to separate — homologs in anaphase I or sister chromatids in anaphase II. Gametes end up with an extra or missing chromosome, producing **aneuploidy**: trisomy 21 (Down syndrome), trisomy 18, trisomy 13, `XXY` (Klinefelter), `X0` (Turner). Structural errors include deletion, duplication, inversion and translocation.\n\n> **Trap:** In anaphase I homologs separate; in anaphase II sister chromatids separate. Exams test that distinction constantly.",
+      "keyPoints": [
+        "Interphase is G1, S, G2 and takes about 90% of the cycle; DNA replicates only in S.",
+        "Mitosis yields two identical diploid cells; meiosis yields four unique haploid cells.",
+        "Crossing over occurs in prophase I; independent assortment in metaphase I.",
+        "Anaphase I separates homologs; anaphase II separates sister chromatids.",
+        "Nondisjunction causes aneuploidy such as trisomy 21, XXY and X0."
+      ],
+      "checks": [
+        {
+          "q": "A human cell in G2 contains how many chromosomes and chromatids?",
+          "choices": [
+            "23 chromosomes, 46 chromatids",
+            "46 chromosomes, 92 chromatids",
+            "46 chromosomes, 46 chromatids",
+            "92 chromosomes, 92 chromatids"
+          ],
+          "answer": 1,
+          "why": "S phase duplicates the DNA, so each of the 46 chromosomes has two sister chromatids: 46 chromosomes and 92 chromatids. Chromosome number does not change until anaphase."
+        },
+        {
+          "q": "Which event happens in meiosis but never in mitosis?",
+          "choices": [
+            "Chromosomes align at the cell equator",
+            "Sister chromatids separate",
+            "Homologous chromosomes synapse and cross over",
+            "The spindle attaches to kinetochores"
+          ],
+          "answer": 2,
+          "why": "Synapsis and crossing over occur only in prophase I of meiosis. Alignment, chromatid separation and spindle attachment happen in both processes."
+        },
+        {
+          "q": "A gamete carrying two copies of chromosome 21 most likely resulted from:",
+          "choices": [
+            "Crossing over",
+            "Independent assortment",
+            "Nondisjunction",
+            "A frameshift mutation"
+          ],
+          "answer": 2,
+          "why": "Nondisjunction is the failure of chromosomes or chromatids to separate, giving one gamete an extra copy. Crossing over and independent assortment shuffle alleles without changing chromosome number."
+        }
+      ]
+    },
+    {
+      "id": "sci-bio1-l09",
+      "title": "Mendelian genetics, pedigrees and sex linkage",
+      "minutes": 9,
+      "body": "Gregor Mendel crossed pea plants and reached two laws that still run the genetics unit. The **law of segregation**: the two alleles of a gene separate during gamete formation, so each gamete gets one. The **law of independent assortment**: alleles of different genes assort independently, which holds for genes on different chromosomes or far apart on the same one.\n\nVocabulary the exam uses precisely. A **gene** is a unit of heredity at a **locus**; an **allele** is one version of it. **Homozygous** means two identical alleles, **heterozygous** two different. **Genotype** is the allele pair; **phenotype** is the expressed trait. A **dominant** allele masks a **recessive** one in a heterozygote.\n\n## Monohybrid crosses\n\nCross two heterozygotes (`Aa x Aa`) and the Punnett square gives a `1:2:1` genotypic and `3:1` phenotypic ratio. A **test cross** — unknown dominant phenotype crossed to a homozygous recessive — reveals the unknown genotype: all dominant offspring means homozygous, roughly `1:1` means heterozygous.\n\n## Dihybrid crosses and probability\n\n`AaBb x AaBb` gives the classic `9:3:3:1` phenotypic ratio. Do not draw a 16-box square if you can avoid it. Use the **multiplication rule** for independent events happening together and the **addition rule** for either-or outcomes. The chance of an `aabb` offspring is `1/4 x 1/4 = 1/16`. The chance of showing at least one dominant trait is easier as `1` minus the chance of neither.\n\n> **Key:** Every dihybrid problem is two monohybrid problems multiplied together. That converts a 16-cell grid into two `3:1` fractions.\n\n## Beyond simple dominance\n\n- **Incomplete dominance** — heterozygote is intermediate; red x white snapdragons give pink; ratio `1:2:1` phenotypically.\n- **Codominance** — both alleles fully expressed; `AB` blood type.\n- **Multiple alleles** — the `ABO` locus has `I-A`, `I-B`, and `i`.\n- **Pleiotropy** — one gene, many effects (sickle cell).\n- **Epistasis** — one gene masks another (coat color in Labradors).\n- **Polygenic inheritance** — many genes, continuous variation (height, skin color).\n- **Environmental influence** — Himalayan rabbit fur color, human height with nutrition.\n\n## Chromosomal basis and sex linkage\n\nSutton and Boveri tied genes to chromosomes. Humans have `22` autosome pairs plus sex chromosomes: `XX` female, `XY` male. The `Y` is small; the `X` carries over `1000` genes with no partner in males, so **X-linked recessive** traits — red-green color blindness, hemophilia A, Duchenne muscular dystrophy — appear far more often in males. A carrier mother passes the allele to half her sons, who are affected, and half her daughters, who are carriers. Fathers never pass an X-linked allele to sons.\n\nGenes on the same chromosome are **linked** and do not assort independently. Recombination frequency measures distance: `1%` recombination equals `1` map unit (centimorgan).\n\n## Pedigrees\n\nSquares are males, circles females, filled symbols affected. Reading strategy: if affected children have unaffected parents, the trait is recessive; if every affected child has an affected parent, suspect dominant. If a trait is recessive and hits mostly males with no father-to-son transmission, suspect X-linked.\n\n> **On shift:** Genetic counseling is these fractions spoken out loud. Two carriers of cystic fibrosis have a `1 in 4` risk per pregnancy, and that risk resets with every pregnancy.",
+      "keyPoints": [
+        "Aa x Aa gives 3:1 phenotypic and 1:2:1 genotypic ratios; AaBb x AaBb gives 9:3:3:1.",
+        "Solve dihybrid problems as two monohybrid probabilities multiplied.",
+        "Incomplete dominance blends, codominance shows both alleles fully.",
+        "X-linked recessive traits are commoner in males and never pass father to son.",
+        "In a pedigree, unaffected parents with an affected child indicate a recessive trait."
+      ],
+      "checks": [
+        {
+          "q": "Two heterozygous parents (Bb x Bb) have four children. What is the probability that any one child is homozygous recessive?",
+          "choices": [
+            "1/2",
+            "1/3",
+            "1/4",
+            "3/4"
+          ],
+          "answer": 2,
+          "why": "The Punnett square gives BB, Bb, Bb, bb, so bb is 1 of 4. Each pregnancy is independent, so having three unaffected children does not change the fourth child's 1/4 risk."
+        },
+        {
+          "q": "A color-blind father and a homozygous unaffected mother have children. What is expected?",
+          "choices": [
+            "All sons color blind",
+            "All daughters color blind",
+            "All daughters carriers, all sons unaffected",
+            "Half of all children affected"
+          ],
+          "answer": 2,
+          "why": "The father gives his only X to daughters, making them carriers, and gives Y to sons, so no son receives his allele. X-linked traits never pass father to son."
+        },
+        {
+          "q": "A cross of red and white flowers yields all pink offspring, and pink x pink gives 1 red : 2 pink : 1 white. This is:",
+          "choices": [
+            "Codominance",
+            "Incomplete dominance",
+            "Epistasis",
+            "Polygenic inheritance"
+          ],
+          "answer": 1,
+          "why": "A blended intermediate phenotype is incomplete dominance. Codominance would show both parental colors together, as with roan coats or AB blood, rather than a blend."
+        }
+      ]
+    },
+    {
+      "id": "sci-bio1-l10",
+      "title": "DNA replication, gene expression and biotechnology",
+      "minutes": 9,
+      "body": "**DNA** is a double helix of two antiparallel strands. Each nucleotide is a deoxyribose sugar, a phosphate, and a base. **Chargaff's rules** and Watson, Crick, Franklin and Wilkins's structure give the pairing: adenine with thymine (2 hydrogen bonds), guanine with cytosine (3). More `G-C` means a more heat-stable helix. Strands run `5' to 3'` against `3' to 5'`. Griffith, Avery, and Hershey and Chase proved DNA, not protein, is the hereditary molecule.\n\n## Replication is semiconservative\n\nMeselson and Stahl showed each new double helix keeps one parent strand. **Helicase** unwinds; single-strand binding proteins hold the fork open; **topoisomerase** relieves supercoiling ahead. **Primase** lays an RNA primer because **DNA polymerase III** can only add to an existing `3'` end and only builds `5' to 3'`.\n\nThat directional rule creates two behaviors at each fork: the **leading strand** is synthesized continuously toward the fork; the **lagging strand** is made in **Okazaki fragments** away from it. **DNA polymerase I** swaps primers for DNA and **ligase** seals the nicks. Proofreading drops the error rate to roughly `1 in 10^9` bases. **Telomeres** are repetitive end caps that shorten each division; telomerase rebuilds them in germ and stem cells and in most cancers.\n\n## Transcription\n\n**RNA polymerase** binds a promoter (the TATA box in eukaryotes, with transcription factors) and reads the template strand `3' to 5'`, building RNA `5' to 3'`. RNA uses uracil instead of thymine and ribose instead of deoxyribose.\n\nEukaryotic pre-mRNA is processed: a `5'` **cap**, a `3'` **poly-A tail**, and **splicing** by the spliceosome that removes **introns** and joins **exons**. **Alternative splicing** lets one gene make several proteins.\n\n## Translation\n\nThe **genetic code** reads mRNA in three-base **codons**: `64` codons, `20` amino acids, so the code is **redundant** but not ambiguous. `AUG` is start and codes methionine; `UAA`, `UAG`, `UGA` are stop. The code is nearly universal, which is what makes genetic engineering possible.\n\n**tRNA** carries an anticodon and its amino acid. The ribosome has `A` (arriving), `P` (peptide chain) and `E` (exit) sites. **Initiation** assembles subunits at the start codon, **elongation** adds residues, **termination** occurs when a release factor reads a stop codon.\n\n## Mutations\n\n**Point mutations**: **silent** (same amino acid, thanks to redundancy), **missense** (different amino acid), **nonsense** (premature stop). **Frameshift** mutations — insertions or deletions not a multiple of three — shift the reading frame and usually wreck everything downstream. Mutations can be spontaneous or induced by mutagens; only germ-line mutations are heritable.\n\n> **Trap:** A three-base deletion is not a frameshift. Frameshift requires a shift, so the number of bases must not be divisible by 3.\n\n## Regulation and tools\n\nProkaryotes regulate with **operons**. The `lac` operon is inducible: lactose (via allolactose) removes the repressor, so the genes turn on only when lactose is present. The `trp` operon is repressible: tryptophan activates the repressor and shuts synthesis off. Eukaryotes regulate with chromatin remodeling, DNA methylation (silencing), histone acetylation (activating), transcription factors and enhancers, microRNAs, and protein degradation.\n\n**Biotechnology** vocabulary: **PCR** amplifies DNA through `20–40` cycles of denaturation at `94–95 degrees C`, annealing at `50–60 degrees C`, and extension at `72 degrees C` with Taq polymerase. **Gel electrophoresis** separates fragments by size, small fragments moving farthest toward the positive electrode because DNA is negatively charged. **Restriction enzymes** cut specific palindromic sites; ligase pastes fragments into plasmid vectors. **Sanger sequencing** uses chain-terminating dideoxynucleotides; next-generation sequencing reads millions of fragments in parallel. **CRISPR-Cas9** uses a guide RNA to target a sequence and cut it, allowing edits.\n\n> **On shift:** A rapid PCR respiratory panel in the emergency department is this lesson, automated. Primers, cycles, Taq, and a detected amplicon.",
+      "keyPoints": [
+        "Replication is semiconservative; polymerase builds only 5' to 3', creating leading and lagging strands.",
+        "A-T pairs share 2 hydrogen bonds, G-C share 3.",
+        "The genetic code is 64 codons, redundant, with AUG start and UAA, UAG, UGA stop.",
+        "Frameshift mutations come from indels not divisible by three and are usually severe.",
+        "PCR cycles are denature 94-95 C, anneal 50-60 C, extend 72 C with Taq polymerase."
+      ],
+      "checks": [
+        {
+          "q": "The lagging strand is synthesized discontinuously because:",
+          "choices": [
+            "It has more G-C pairs",
+            "DNA polymerase can only add nucleotides to a 3' end",
+            "Helicase unwinds it more slowly",
+            "Ligase works only in one direction"
+          ],
+          "answer": 1,
+          "why": "Synthesis runs strictly 5' to 3', so on the strand oriented away from the fork the polymerase must restart repeatedly, producing Okazaki fragments that ligase later seals."
+        },
+        {
+          "q": "A single base substitution changes a codon from UCU to UCC; both encode serine. This mutation is:",
+          "choices": [
+            "Silent",
+            "Missense",
+            "Nonsense",
+            "Frameshift"
+          ],
+          "answer": 0,
+          "why": "The amino acid is unchanged because the code is redundant, so the mutation is silent. Missense changes the amino acid and nonsense creates a premature stop codon."
+        },
+        {
+          "q": "In the lac operon, adding lactose to the medium causes:",
+          "choices": [
+            "The repressor to bind the operator more tightly",
+            "The repressor to release the operator so transcription proceeds",
+            "Permanent deletion of the repressor gene",
+            "RNA polymerase to stop at the promoter"
+          ],
+          "answer": 1,
+          "why": "Allolactose is an inducer that changes the repressor's shape so it cannot bind the operator. The lac operon is inducible, unlike the repressible trp operon."
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "sci-bio1-c001",
+      "front": "What are the defining properties of life used in an intro biology course?",
+      "back": "Cellular organization, metabolism, homeostasis, response to stimuli, growth and development, reproduction, and evolutionary adaptation of populations.",
+      "lesson": "sci-bio1-l01"
+    },
+    {
+      "id": "sci-bio1-c003",
+      "front": "What is the difference between the independent and dependent variable?",
+      "back": "The independent variable is what the researcher changes. The dependent variable is the outcome measured and is expected to depend on that change.",
+      "lesson": "sci-bio1-l01"
+    },
+    {
+      "id": "sci-bio1-c004",
+      "front": "How does a scientific theory differ from a law?",
+      "back": "A theory is a broad, heavily tested explanation of why something happens. A law describes a consistent pattern mathematically or verbally without explaining the mechanism.",
+      "lesson": "sci-bio1-l01"
+    },
+    {
+      "id": "sci-bio1-c005",
+      "front": "State the three parts of cell theory.",
+      "back": "All living things are made of one or more cells, the cell is the basic unit of structure and function, and all cells arise from pre-existing cells.",
+      "lesson": "sci-bio1-l01"
+    },
+    {
+      "id": "sci-bio1-c007",
+      "front": "Which four elements make up roughly 96% of living matter?",
+      "back": "Carbon, hydrogen, oxygen and nitrogen.",
+      "lesson": "sci-bio1-l02"
+    },
+    {
+      "id": "sci-bio1-c008",
+      "front": "Why is water called a polar molecule, and what follows from it?",
+      "back": "Oxygen pulls shared electrons harder, giving partial charges. This creates hydrogen bonding, cohesion, high specific heat, high heat of vaporization, ice floating, and solvent power.",
+      "lesson": "sci-bio1-l02"
+    },
+    {
+      "id": "sci-bio1-c009",
+      "front": "What is the normal pH range of human arterial blood, and what maintains it?",
+      "back": "7.35 to 7.45, maintained largely by the bicarbonate buffer system, a weak acid plus its conjugate base.",
+      "lesson": "sci-bio1-l02"
+    },
+    {
+      "id": "sci-bio1-c010",
+      "front": "How much does H+ concentration change per pH unit?",
+      "back": "Tenfold. pH 5 has 100 times the H+ of pH 7 because the scale is a negative logarithm.",
+      "lesson": "sci-bio1-l02"
+    },
+    {
+      "id": "sci-bio1-c011",
+      "front": "What reaction builds polymers, and what reaction breaks them?",
+      "back": "Dehydration synthesis removes a water molecule to form a bond. Hydrolysis adds a water molecule to break one.",
+      "lesson": "sci-bio1-l02"
+    },
+    {
+      "id": "sci-bio1-c012",
+      "front": "Name the monomer and bond type for each of the four macromolecule classes.",
+      "back": "Carbohydrate: monosaccharide, glycosidic. Protein: amino acid, peptide. Nucleic acid: nucleotide, phosphodiester. Lipid: no true monomer, fatty acids joined by ester bonds.",
+      "lesson": "sci-bio1-l02"
+    },
+    {
+      "id": "sci-bio1-c013",
+      "front": "What are the four levels of protein structure?",
+      "back": "Primary sequence, secondary alpha helix and beta sheet held by backbone hydrogen bonds, tertiary 3D fold from R-group interactions, quaternary assembly of multiple subunits.",
+      "lesson": "sci-bio1-l02"
+    },
+    {
+      "id": "sci-bio1-c014",
+      "front": "What happens during denaturation, and is primary structure lost?",
+      "back": "Heat, pH extremes or salt break weak bonds so the protein unfolds and loses function. Covalent peptide bonds survive, so primary structure is retained.",
+      "lesson": "sci-bio1-l02"
+    },
+    {
+      "id": "sci-bio1-c015",
+      "front": "Why can humans digest starch but not cellulose?",
+      "back": "Starch uses alpha glycosidic linkages that human amylase can cleave. Cellulose uses beta linkages, and humans lack cellulase.",
+      "lesson": "sci-bio1-l02"
+    },
+    {
+      "id": "sci-bio1-c017",
+      "front": "Why does surface-area-to-volume ratio limit cell size?",
+      "back": "Volume rises with the cube of radius while surface area rises only with the square, so a large cell cannot exchange materials fast enough across its membrane.",
+      "lesson": "sci-bio1-l03"
+    },
+    {
+      "id": "sci-bio1-c018",
+      "front": "List four differences between prokaryotic and eukaryotic cells.",
+      "back": "Prokaryotes lack a nucleus and membrane-bound organelles, have 70S ribosomes, a single circular chromosome, and are typically 1 to 5 micrometers. Eukaryotes are the opposite on each point.",
+      "lesson": "sci-bio1-l03"
+    },
+    {
+      "id": "sci-bio1-c019",
+      "front": "Trace a secreted protein through the endomembrane system.",
+      "back": "Ribosome on rough ER, vesicle to cis Golgi, modification and sorting, vesicle from trans Golgi to plasma membrane, exocytosis.",
+      "lesson": "sci-bio1-l03"
+    },
+    {
+      "id": "sci-bio1-c021",
+      "front": "What is the internal pH of a lysosome and why does it matter?",
+      "back": "About 5. Its hydrolytic enzymes work best in acid, so leaked enzymes are largely inactive in the neutral cytosol.",
+      "lesson": "sci-bio1-l03"
+    },
+    {
+      "id": "sci-bio1-c022",
+      "front": "What evidence supports endosymbiotic theory?",
+      "back": "Mitochondria and chloroplasts have double membranes, their own circular DNA, 70S ribosomes, and divide by a process resembling binary fission.",
+      "lesson": "sci-bio1-l03"
+    },
+    {
+      "id": "sci-bio1-c023",
+      "front": "Name the three cytoskeletal filament types and their diameters.",
+      "back": "Microfilaments of actin at 7 nm, intermediate filaments at 10 nm, microtubules of tubulin at 25 nm.",
+      "lesson": "sci-bio1-l03"
+    },
+    {
+      "id": "sci-bio1-c025",
+      "front": "Why do some antibiotics harm bacteria but not human cells?",
+      "back": "Bacterial ribosomes are 70S and human cytosolic ribosomes are 80S, so drugs such as tetracyclines and aminoglycosides bind only the bacterial target.",
+      "lesson": "sci-bio1-l03"
+    },
+    {
+      "id": "sci-bio1-c026",
+      "front": "What does the fluid mosaic model describe?",
+      "back": "A phospholipid bilayer in which proteins, cholesterol and glycolipids move laterally, giving a selectively permeable, dynamic membrane.",
+      "lesson": "sci-bio1-l04"
+    },
+    {
+      "id": "sci-bio1-c027",
+      "front": "Which molecules cross a membrane without help?",
+      "back": "Small nonpolar molecules such as oxygen, carbon dioxide and steroid hormones. Small uncharged polar molecules like water cross slowly; ions and large polar molecules cannot.",
+      "lesson": "sci-bio1-l04"
+    },
+    {
+      "id": "sci-bio1-c028",
+      "front": "What role does cholesterol play in an animal cell membrane?",
+      "back": "It buffers fluidity: it restrains movement at high temperature and prevents tight packing at low temperature.",
+      "lesson": "sci-bio1-l04"
+    },
+    {
+      "id": "sci-bio1-c029",
+      "front": "Define hypotonic, isotonic and hypertonic in terms of water movement.",
+      "back": "Hypotonic: solution has less solute, water enters the cell. Isotonic: no net movement. Hypertonic: solution has more solute, water leaves the cell.",
+      "lesson": "sci-bio1-l04"
+    },
+    {
+      "id": "sci-bio1-c030",
+      "front": "What concentration of sodium chloride is isotonic to human blood?",
+      "back": "0.9 percent NaCl, which is normal saline.",
+      "lesson": "sci-bio1-l04"
+    },
+    {
+      "id": "sci-bio1-c031",
+      "front": "What is the stoichiometry of the sodium-potassium pump?",
+      "back": "Three sodium ions out and two potassium ions in per ATP hydrolyzed, making it electrogenic.",
+      "lesson": "sci-bio1-l04"
+    },
+    {
+      "id": "sci-bio1-c032",
+      "front": "How does secondary active transport differ from primary?",
+      "back": "Primary transport hydrolyzes ATP directly. Secondary transport uses the electrochemical gradient a primary pump created, as in sodium-glucose cotransport.",
+      "lesson": "sci-bio1-l04"
+    },
+    {
+      "id": "sci-bio1-c034",
+      "front": "Why does facilitated diffusion plateau at high substrate concentration?",
+      "back": "The number of carrier proteins is finite, so once all are occupied the rate cannot rise. Simple diffusion has no such ceiling.",
+      "lesson": "sci-bio1-l04"
+    },
+    {
+      "id": "sci-bio1-c035",
+      "front": "State the first and second laws of thermodynamics in biological terms.",
+      "back": "Energy is conserved and only converted between forms. Every conversion increases the entropy of the universe, releasing some energy as unusable heat.",
+      "lesson": "sci-bio1-l05"
+    },
+    {
+      "id": "sci-bio1-c036",
+      "front": "What does a negative delta G tell you about a reaction?",
+      "back": "It is exergonic: it releases free energy and is spontaneous. Spontaneous means energetically favorable, not necessarily fast.",
+      "lesson": "sci-bio1-l05"
+    },
+    {
+      "id": "sci-bio1-c037",
+      "front": "How much energy does ATP hydrolysis release under standard conditions?",
+      "back": "About 7.3 kcal/mol as ATP becomes ADP plus inorganic phosphate, and that release is coupled to endergonic cellular work.",
+      "lesson": "sci-bio1-l05"
+    },
+    {
+      "id": "sci-bio1-c038",
+      "front": "What does an enzyme change, and what does it leave alone?",
+      "back": "It lowers activation energy and speeds the reaction. It does not change delta G, the equilibrium position, or the energy of the products.",
+      "lesson": "sci-bio1-l05"
+    },
+    {
+      "id": "sci-bio1-c039",
+      "front": "Contrast competitive and noncompetitive inhibition.",
+      "back": "Competitive inhibitors occupy the active site and are overcome by more substrate, leaving Vmax unchanged. Noncompetitive inhibitors bind elsewhere, distort the active site, and lower Vmax.",
+      "lesson": "sci-bio1-l05"
+    },
+    {
+      "id": "sci-bio1-c040",
+      "front": "What is feedback inhibition?",
+      "back": "The end product of a metabolic pathway binds allosterically to an early enzyme and switches the pathway off, preventing overproduction.",
+      "lesson": "sci-bio1-l05"
+    },
+    {
+      "id": "sci-bio1-c041",
+      "front": "Give the pH optima of pepsin and trypsin.",
+      "back": "Pepsin works near pH 2 in the stomach, trypsin near pH 8 in the small intestine. Each denatures or idles outside its range.",
+      "lesson": "sci-bio1-l05"
+    },
+    {
+      "id": "sci-bio1-c043",
+      "front": "What is the net yield of glycolysis per glucose?",
+      "back": "Two ATP, two NADH and two pyruvate. Four ATP are made but two were invested.",
+      "lesson": "sci-bio1-l06"
+    },
+    {
+      "id": "sci-bio1-c044",
+      "front": "Which enzyme is the main control point of glycolysis?",
+      "back": "Phosphofructokinase. ATP and citrate inhibit it, AMP stimulates it, which is feedback regulation of fuel use.",
+      "lesson": "sci-bio1-l06"
+    },
+    {
+      "id": "sci-bio1-c045",
+      "front": "What does pyruvate oxidation produce per glucose?",
+      "back": "Two acetyl-CoA, two carbon dioxide and two NADH, in the mitochondrial matrix.",
+      "lesson": "sci-bio1-l06"
+    },
+    {
+      "id": "sci-bio1-c046",
+      "front": "What does the citric acid cycle yield per glucose?",
+      "back": "Six NADH, two FADH2, two ATP or GTP, and four carbon dioxide, across two turns.",
+      "lesson": "sci-bio1-l06"
+    },
+    {
+      "id": "sci-bio1-c047",
+      "front": "How many ATP does each NADH and FADH2 generate?",
+      "back": "About 2.5 ATP per NADH and 1.5 per FADH2, because FADH2 enters at complex II and skips one proton pump.",
+      "lesson": "sci-bio1-l06"
+    },
+    {
+      "id": "sci-bio1-c048",
+      "front": "What is the current total ATP yield per glucose in aerobic respiration?",
+      "back": "About 30 to 32 ATP. Older textbooks cite 36 to 38 using higher carrier estimates.",
+      "lesson": "sci-bio1-l06"
+    },
+    {
+      "id": "sci-bio1-c049",
+      "front": "Define chemiosmosis.",
+      "back": "Protons pumped across the inner mitochondrial membrane flow back through ATP synthase, and that flow drives phosphorylation of ADP to ATP.",
+      "lesson": "sci-bio1-l06"
+    },
+    {
+      "id": "sci-bio1-c050",
+      "front": "What is the final electron acceptor in aerobic respiration, and what happens without it?",
+      "back": "Oxygen, forming water. Without it the chain backs up, NAD+ is not regenerated, and cells fall back to fermentation with lactate accumulation.",
+      "lesson": "sci-bio1-l06"
+    },
+    {
+      "id": "sci-bio1-c051",
+      "front": "What is the purpose of fermentation?",
+      "back": "To regenerate NAD+ so glycolysis can keep running anaerobically. It produces no ATP beyond the two from glycolysis.",
+      "lesson": "sci-bio1-l06"
+    },
+    {
+      "id": "sci-bio1-c053",
+      "front": "Write the balanced equation for photosynthesis.",
+      "back": "6 CO2 plus 6 H2O plus light energy yields C6H12O6 plus 6 O2. It is endergonic and anabolic.",
+      "lesson": "sci-bio1-l07"
+    },
+    {
+      "id": "sci-bio1-c054",
+      "front": "Where does photosynthetic oxygen come from?",
+      "back": "From photolysis of water at photosystem II, which replaces electrons lost by chlorophyll. It does not come from carbon dioxide.",
+      "lesson": "sci-bio1-l07"
+    },
+    {
+      "id": "sci-bio1-c055",
+      "front": "What do the light reactions produce for the Calvin cycle?",
+      "back": "ATP and NADPH, made in the thylakoid membrane by photophosphorylation and reduction of NADP+.",
+      "lesson": "sci-bio1-l07"
+    },
+    {
+      "id": "sci-bio1-c056",
+      "front": "Name the three phases of the Calvin cycle and its cost per glucose.",
+      "back": "Carbon fixation by rubisco, reduction to G3P, and regeneration of RuBP. One glucose costs 18 ATP and 12 NADPH.",
+      "lesson": "sci-bio1-l07"
+    },
+    {
+      "id": "sci-bio1-c057",
+      "front": "What is photorespiration and how do C4 and CAM plants avoid it?",
+      "back": "Rubisco binds oxygen instead of carbon dioxide, wasting energy. C4 plants fix carbon in separate cells; CAM plants open stomata only at night.",
+      "lesson": "sci-bio1-l07"
+    },
+    {
+      "id": "sci-bio1-c058",
+      "front": "What are the three stages of cell signaling?",
+      "back": "Reception of the ligand by a receptor, transduction through a relay such as a kinase cascade or second messenger, and cellular response.",
+      "lesson": "sci-bio1-l07"
+    },
+    {
+      "id": "sci-bio1-c059",
+      "front": "Why do steroid and peptide hormones use different receptor locations?",
+      "back": "Steroids are hydrophobic and diffuse through the membrane to intracellular receptors that act as transcription factors. Peptides are hydrophilic and must bind surface receptors.",
+      "lesson": "sci-bio1-l07"
+    },
+    {
+      "id": "sci-bio1-c061",
+      "front": "What happens in each phase of interphase?",
+      "back": "G1 is growth and normal function, S phase replicates DNA into sister chromatids, G2 is growth and preparation for division. G0 is a non-dividing resting state.",
+      "lesson": "sci-bio1-l08"
+    },
+    {
+      "id": "sci-bio1-c062",
+      "front": "Put the stages of mitosis in order and say what defines each.",
+      "back": "Prophase condensation and spindle formation, prometaphase envelope breakdown and kinetochore attachment, metaphase alignment, anaphase chromatid separation, telophase envelope reformation, then cytokinesis.",
+      "lesson": "sci-bio1-l08"
+    },
+    {
+      "id": "sci-bio1-c063",
+      "front": "Where are the cell cycle checkpoints and what does p53 do?",
+      "back": "G1, G2 and M checkpoints. p53 halts G1 for DNA repair or triggers apoptosis; it is mutated in roughly half of human cancers.",
+      "lesson": "sci-bio1-l08"
+    },
+    {
+      "id": "sci-bio1-c064",
+      "front": "What separates in anaphase I versus anaphase II?",
+      "back": "Anaphase I separates homologous chromosomes, reducing ploidy. Anaphase II separates sister chromatids, like mitosis.",
+      "lesson": "sci-bio1-l08"
+    },
+    {
+      "id": "sci-bio1-c065",
+      "front": "Name the three sources of genetic variation from sexual reproduction.",
+      "back": "Crossing over in prophase I, independent assortment in metaphase I, and random fertilization. Independent assortment alone gives over 8 million combinations in humans.",
+      "lesson": "sci-bio1-l08"
+    },
+    {
+      "id": "sci-bio1-c066",
+      "front": "What is nondisjunction and what does it cause?",
+      "back": "Failure of homologs or sister chromatids to separate, producing aneuploid gametes. Examples include trisomy 21, trisomy 18, XXY Klinefelter and X0 Turner.",
+      "lesson": "sci-bio1-l08"
+    },
+    {
+      "id": "sci-bio1-c067",
+      "front": "State Mendel's two laws.",
+      "back": "Segregation: the two alleles of a gene separate into different gametes. Independent assortment: alleles of genes on different chromosomes sort independently of each other.",
+      "lesson": "sci-bio1-l09"
+    },
+    {
+      "id": "sci-bio1-c068",
+      "front": "What ratios come from Aa x Aa and AaBb x AaBb?",
+      "back": "Aa x Aa gives 3:1 phenotypic and 1:2:1 genotypic. AaBb x AaBb gives a 9:3:3:1 phenotypic ratio.",
+      "lesson": "sci-bio1-l09"
+    },
+    {
+      "id": "sci-bio1-c069",
+      "front": "How does a test cross reveal an unknown genotype?",
+      "back": "Cross the dominant-phenotype individual to a homozygous recessive. All dominant offspring suggests homozygous dominant; about half recessive offspring means heterozygous.",
+      "lesson": "sci-bio1-l09"
+    },
+    {
+      "id": "sci-bio1-c071",
+      "front": "Distinguish incomplete dominance from codominance.",
+      "back": "Incomplete dominance blends, as in pink snapdragons. Codominance expresses both alleles fully and separately, as in AB blood type.",
+      "lesson": "sci-bio1-l09"
+    },
+    {
+      "id": "sci-bio1-c072",
+      "front": "Why are X-linked recessive disorders more common in males?",
+      "back": "Males have one X, so a single recessive allele is expressed with no second copy to mask it. Females need two copies to be affected.",
+      "lesson": "sci-bio1-l09"
+    },
+    {
+      "id": "sci-bio1-c073",
+      "front": "How do you spot a recessive trait on a pedigree?",
+      "back": "Two unaffected parents produce an affected child. If affected individuals are mostly male with no father-to-son transmission, suspect X-linked recessive.",
+      "lesson": "sci-bio1-l09"
+    },
+    {
+      "id": "sci-bio1-c075",
+      "front": "What base pairs form in DNA and how many hydrogen bonds each?",
+      "back": "Adenine with thymine by two hydrogen bonds, guanine with cytosine by three. Higher G-C content raises melting temperature.",
+      "lesson": "sci-bio1-l10"
+    },
+    {
+      "id": "sci-bio1-c076",
+      "front": "What does semiconservative replication mean?",
+      "back": "Each daughter double helix contains one original parental strand and one newly synthesized strand, as Meselson and Stahl demonstrated.",
+      "lesson": "sci-bio1-l10"
+    },
+    {
+      "id": "sci-bio1-c077",
+      "front": "Name the enzymes of DNA replication and their jobs.",
+      "back": "Helicase unwinds, topoisomerase relieves supercoiling, primase lays RNA primers, DNA polymerase III extends, DNA polymerase I replaces primers, ligase seals nicks.",
+      "lesson": "sci-bio1-l10"
+    },
+    {
+      "id": "sci-bio1-c078",
+      "front": "Why are Okazaki fragments necessary?",
+      "back": "DNA polymerase synthesizes only 5' to 3', so the lagging strand, oriented away from the fork, must be built in short pieces that ligase later joins.",
+      "lesson": "sci-bio1-l10"
+    },
+    {
+      "id": "sci-bio1-c079",
+      "front": "What processing does eukaryotic pre-mRNA undergo?",
+      "back": "A 5' cap is added, a 3' poly-A tail is added, and the spliceosome removes introns and joins exons. Alternative splicing yields multiple proteins per gene.",
+      "lesson": "sci-bio1-l10"
+    },
+    {
+      "id": "sci-bio1-c080",
+      "front": "Describe the genetic code in numbers.",
+      "back": "64 codons for 20 amino acids, so it is redundant but unambiguous. AUG starts and codes methionine; UAA, UAG and UGA stop.",
+      "lesson": "sci-bio1-l10"
+    },
+    {
+      "id": "sci-bio1-c082",
+      "front": "Classify the point mutations.",
+      "back": "Silent changes a codon but not the amino acid, missense substitutes a different amino acid, nonsense creates a premature stop codon.",
+      "lesson": "sci-bio1-l10"
+    },
+    {
+      "id": "sci-bio1-c083",
+      "front": "What makes a mutation a frameshift?",
+      "back": "An insertion or deletion of a number of bases not divisible by three, which shifts the reading frame and garbles every codon downstream.",
+      "lesson": "sci-bio1-l10"
+    },
+    {
+      "id": "sci-bio1-c084",
+      "front": "Compare the lac and trp operons.",
+      "back": "lac is inducible: lactose inactivates the repressor and turns genes on. trp is repressible: tryptophan activates the repressor and turns synthesis off.",
+      "lesson": "sci-bio1-l10"
+    },
+    {
+      "id": "sci-bio1-c085",
+      "front": "What are the three temperature steps of a PCR cycle?",
+      "back": "Denaturation at 94 to 95 C, primer annealing at 50 to 60 C, and extension at 72 C by Taq polymerase, repeated 20 to 40 times.",
+      "lesson": "sci-bio1-l10"
+    },
+    {
+      "id": "sci-bio1-c086",
+      "front": "In gel electrophoresis, which fragments travel farthest and why?",
+      "back": "The smallest fragments, because DNA is negatively charged and migrates toward the positive electrode while the gel matrix slows larger pieces.",
+      "lesson": "sci-bio1-l10"
+    },
+    {
+      "id": "sci-bio1-c087",
+      "front": "How does CRISPR-Cas9 target a specific sequence?",
+      "back": "A guide RNA base-pairs with the target DNA and directs the Cas9 nuclease to cut there, allowing disruption or templated editing of the gene.",
+      "lesson": "sci-bio1-l10"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "sci-bio1-q001",
+      "q": "A student claims the results of a single trial prove a hypothesis. The best criticism is that the study lacks:",
+      "choices": [
+        "A dependent variable",
+        "Replication and adequate sample size",
+        "A testable hypothesis",
+        "An independent variable"
+      ],
+      "answer": 1,
+      "why": "Single trials cannot distinguish a real effect from random variation; replication and larger samples do. The other elements were present in the described study.",
+      "lesson": "sci-bio1-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-bio1-q002",
+      "q": "Which sequence correctly orders levels of biological organization from smallest to largest?",
+      "choices": [
+        "Cell, organelle, tissue, organ",
+        "Organelle, cell, tissue, organ",
+        "Tissue, cell, organ, organelle",
+        "Organelle, tissue, cell, organ"
+      ],
+      "answer": 1,
+      "why": "Organelles are subcellular structures, cells combine into tissues, and tissues form organs. Any ordering placing cell before organelle or tissue before cell is reversed.",
+      "lesson": "sci-bio1-l01",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-bio1-q003",
+      "q": "Researchers note that every observed bacterial culture reproduces by binary fission and conclude that bacteria in general divide this way. This reasoning is:",
+      "choices": [
+        "Deductive",
+        "Circular",
+        "Falsification",
+        "Inductive"
+      ],
+      "answer": 3,
+      "why": "Generalizing from many specific observations is induction. Deduction would start with a general rule and predict a specific case.",
+      "lesson": "sci-bio1-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-bio1-q004",
+      "q": "A patient's blood pH falls to 7.20. Compared with a normal pH of 7.40, the hydrogen ion concentration is approximately:",
+      "choices": [
+        "Unchanged",
+        "1.6 times higher",
+        "20 times higher",
+        "100 times higher"
+      ],
+      "answer": 1,
+      "why": "pH is logarithmic, so 0.2 units corresponds to about a 1.6-fold change in H+. A tenfold change would require a full pH unit and 100-fold two units.",
+      "lesson": "sci-bio1-l02",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-bio1-q005",
+      "q": "Which property of water is most directly responsible for aquatic life surviving beneath a frozen lake surface?",
+      "choices": [
+        "Ice being less dense than liquid water",
+        "High specific heat",
+        "Cohesion",
+        "Solvent ability"
+      ],
+      "answer": 0,
+      "why": "Hydrogen bonds lock ice into an open lattice that floats and insulates the water below. High specific heat moderates temperature but does not create the floating ice layer.",
+      "lesson": "sci-bio1-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-bio1-q006",
+      "q": "A dipeptide is formed from two amino acids. What else is produced?",
+      "choices": [
+        "A molecule of water",
+        "A molecule of ATP",
+        "A hydrogen ion only",
+        "Carbon dioxide"
+      ],
+      "answer": 0,
+      "why": "Peptide bonds form by dehydration synthesis, releasing water. ATP may be spent to power the process but is not a product of the bond itself.",
+      "lesson": "sci-bio1-l02",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-bio1-q007",
+      "q": "A mutation replaces a hydrophobic amino acid buried in a protein's core with a charged one. The most likely consequence is:",
+      "choices": [
+        "No change, since primary structure is unchanged",
+        "Disrupted tertiary structure and lost function",
+        "Loss of peptide bonds",
+        "Conversion to a nucleic acid"
+      ],
+      "answer": 1,
+      "why": "The hydrophobic core stabilizes tertiary folding, so introducing charge there destabilizes the fold. Primary structure is in fact changed by the substitution.",
+      "lesson": "sci-bio1-l02",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-bio1-q008",
+      "q": "Which macromolecule class is defined by hydrophobicity rather than by a shared monomer?",
+      "choices": [
+        "Carbohydrates",
+        "Proteins",
+        "Lipids",
+        "Nucleic acids"
+      ],
+      "answer": 2,
+      "why": "Lipids include triglycerides, phospholipids and steroids, which share no common monomer but all resist dissolving in water. The other three classes are true polymers.",
+      "lesson": "sci-bio1-l02",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-bio1-q009",
+      "q": "An electron micrograph shows a cell with no nucleus, a single circular chromosome, and a peptidoglycan wall. This cell is:",
+      "choices": [
+        "A plant cell",
+        "A bacterium",
+        "A fungal cell",
+        "An animal cell"
+      ],
+      "answer": 1,
+      "why": "Peptidoglycan walls occur only in bacteria. Plants and fungi are eukaryotic with nuclei and different wall chemistry, and animal cells have no wall at all.",
+      "lesson": "sci-bio1-l03",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-bio1-q010",
+      "q": "A liver cell chronically exposed to a drug shows a dramatic increase in one organelle. Which is it?",
+      "choices": [
+        "Smooth endoplasmic reticulum",
+        "Rough endoplasmic reticulum",
+        "Nucleolus",
+        "Central vacuole"
+      ],
+      "answer": 0,
+      "why": "Smooth ER carries the detoxification enzymes and proliferates with drug exposure. Rough ER expands for protein secretion, and central vacuoles are plant structures.",
+      "lesson": "sci-bio1-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-bio1-q011",
+      "q": "Cells lining the small intestine have dense microvilli. The functional reason is to:",
+      "choices": [
+        "Increase surface-area-to-volume ratio for absorption",
+        "Increase cell volume",
+        "Store more glycogen",
+        "Reduce the need for mitochondria"
+      ],
+      "answer": 0,
+      "why": "Folding the membrane raises surface area without raising volume, which increases absorption capacity. Absorptive cells are in fact mitochondria-rich because transport costs ATP.",
+      "lesson": "sci-bio1-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-bio1-q012",
+      "q": "Which pair of structures is correctly matched with its function?",
+      "choices": [
+        "Golgi apparatus, ATP synthesis",
+        "Nucleolus, ribosomal subunit assembly",
+        "Peroxisome, protein secretion",
+        "Lysosome, lipid synthesis"
+      ],
+      "answer": 1,
+      "why": "The nucleolus assembles ribosomal subunits. The Golgi sorts and ships, peroxisomes break down fatty acids and peroxide, and lysosomes digest rather than synthesize.",
+      "lesson": "sci-bio1-l03",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-bio1-q013",
+      "q": "A cell is placed in a solution and begins to shrink. The solution is:",
+      "choices": [
+        "Hypotonic to the cell",
+        "Isotonic to the cell",
+        "Hypertonic to the cell",
+        "Impermeable to water"
+      ],
+      "answer": 2,
+      "why": "Shrinking means net water loss, which happens when outside solute concentration is higher. Hypotonic solutions cause swelling and isotonic solutions cause no net change.",
+      "lesson": "sci-bio1-l04",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-bio1-q014",
+      "q": "Ouabain inhibits the sodium-potassium pump. The immediate intracellular effect is:",
+      "choices": [
+        "Sodium falls and potassium rises",
+        "Sodium rises and potassium falls",
+        "Both ions rise",
+        "Both ions fall"
+      ],
+      "answer": 1,
+      "why": "The pump normally exports 3 sodium and imports 2 potassium, so blocking it lets sodium accumulate inside while potassium leaks out down its gradient.",
+      "lesson": "sci-bio1-l04",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-bio1-q015",
+      "q": "Why does oral rehydration solution contain both glucose and sodium?",
+      "choices": [
+        "Glucose makes it taste better",
+        "Glucose is required for the sodium-potassium pump",
+        "Sodium-glucose cotransport drives sodium absorption and water follows",
+        "Sodium prevents glucose from being digested"
+      ],
+      "answer": 2,
+      "why": "The SGLT cotransporter moves both together, and water follows the absorbed sodium osmotically. The sodium-potassium pump uses ATP, not glucose transport, directly.",
+      "lesson": "sci-bio1-l04",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-bio1-q016",
+      "q": "A macrophage engulfs a bacterium. This process is:",
+      "choices": [
+        "Phagocytosis, requiring ATP",
+        "Pinocytosis, a passive process",
+        "Facilitated diffusion",
+        "Osmosis"
+      ],
+      "answer": 0,
+      "why": "Engulfing a solid particle is phagocytosis, a form of bulk transport requiring ATP and cytoskeletal work. Pinocytosis takes in fluid and all bulk transport is active.",
+      "lesson": "sci-bio1-l04",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-bio1-q017",
+      "q": "Which statement about enzymes is true?",
+      "choices": [
+        "They make endergonic reactions exergonic",
+        "They are consumed in the reaction",
+        "They lower activation energy without changing equilibrium",
+        "They raise the free energy of products"
+      ],
+      "answer": 2,
+      "why": "Catalysts change reaction rate only. They are regenerated unchanged and cannot alter thermodynamic quantities such as delta G or the equilibrium position.",
+      "lesson": "sci-bio1-l05",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-bio1-q018",
+      "q": "A patient ingests methanol and is treated with fomepizole, which occupies alcohol dehydrogenase's active site. This is an example of:",
+      "choices": [
+        "Noncompetitive inhibition",
+        "Competitive inhibition",
+        "Feedback inhibition",
+        "Allosteric activation"
+      ],
+      "answer": 1,
+      "why": "Binding the active site itself and competing with the normal substrate is competitive inhibition. Noncompetitive inhibitors bind elsewhere and feedback inhibition uses a pathway's own end product.",
+      "lesson": "sci-bio1-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-bio1-q019",
+      "q": "An enzyme assay run at 60 degrees Celsius shows almost no product. The most likely explanation is that the enzyme:",
+      "choices": [
+        "Ran out of ATP",
+        "Had its delta G reversed",
+        "Became a competitive inhibitor",
+        "Was denatured above its optimal temperature"
+      ],
+      "answer": 3,
+      "why": "Human enzymes peak near 37 C and unfold well above it, destroying the active site. Enzymes do not require ATP themselves and cannot reverse thermodynamics.",
+      "lesson": "sci-bio1-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-bio1-q020",
+      "q": "The end product of a five-enzyme pathway binds the first enzyme at a site away from its active site and slows the pathway. This describes:",
+      "choices": [
+        "Competitive inhibition",
+        "Allosteric feedback inhibition",
+        "Denaturation",
+        "Cooperativity"
+      ],
+      "answer": 1,
+      "why": "Binding away from the active site is allosteric, and using the end product to slow the pathway is feedback inhibition. Cooperativity increases rather than decreases activity.",
+      "lesson": "sci-bio1-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-bio1-q021",
+      "q": "A red blood cell has no mitochondria. Its ATP therefore comes from:",
+      "choices": [
+        "Oxidative phosphorylation",
+        "The citric acid cycle",
+        "Beta-oxidation of fatty acids",
+        "Glycolysis followed by lactic acid fermentation"
+      ],
+      "answer": 3,
+      "why": "Glycolysis is cytosolic and needs no organelle, and fermentation regenerates NAD+ to keep it going. All the other pathways listed occur in mitochondria.",
+      "lesson": "sci-bio1-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-bio1-q022",
+      "q": "Cyanide blocks cytochrome c oxidase at complex IV. Which finding is expected?",
+      "choices": [
+        "Increased ATP production",
+        "Rising blood lactate as cells ferment",
+        "Increased oxygen consumption",
+        "Increased citric acid cycle turnover"
+      ],
+      "answer": 1,
+      "why": "Blocking the terminal complex halts electron flow and oxygen use, so cells shift to anaerobic glycolysis and lactate rises. ATP production and cycle turnover both fall.",
+      "lesson": "sci-bio1-l06",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-bio1-q023",
+      "q": "During which stage is the majority of a glucose molecule's ATP actually produced?",
+      "choices": [
+        "Glycolysis",
+        "Pyruvate oxidation",
+        "Citric acid cycle",
+        "Oxidative phosphorylation"
+      ],
+      "answer": 3,
+      "why": "Substrate-level phosphorylation contributes only about 4 ATP total; chemiosmosis at the inner membrane produces the remaining 26 to 28.",
+      "lesson": "sci-bio1-l06",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-bio1-q024",
+      "q": "All six carbon atoms of glucose have been released as carbon dioxide by the end of which stage?",
+      "choices": [
+        "Glycolysis",
+        "Pyruvate oxidation",
+        "The citric acid cycle",
+        "Oxidative phosphorylation"
+      ],
+      "answer": 2,
+      "why": "Pyruvate oxidation releases two carbons and the two turns of the citric acid cycle release the remaining four. Oxidative phosphorylation produces water, not carbon dioxide.",
+      "lesson": "sci-bio1-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-bio1-q025",
+      "q": "Yeast grown in a sealed flask without oxygen will produce:",
+      "choices": [
+        "Lactate and 32 ATP per glucose",
+        "Ethanol, carbon dioxide and 2 ATP per glucose",
+        "Water and 30 ATP per glucose",
+        "Only carbon dioxide and no ATP"
+      ],
+      "answer": 1,
+      "why": "Yeast performs alcoholic fermentation, yielding ethanol and CO2 while netting only glycolysis's 2 ATP. Lactate fermentation occurs in animal cells and many bacteria instead.",
+      "lesson": "sci-bio1-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-bio1-q026",
+      "q": "A plant is given water labeled with a heavy oxygen isotope. Where will the label first appear?",
+      "choices": [
+        "In released O2 gas",
+        "In glucose",
+        "In carbon dioxide",
+        "In NADPH"
+      ],
+      "answer": 0,
+      "why": "Water is split at photosystem II and its oxygen is released as O2. Glucose oxygen derives from carbon dioxide, and NADPH carries electrons rather than oxygen atoms.",
+      "lesson": "sci-bio1-l07",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-bio1-q027",
+      "q": "Which is required by the Calvin cycle but not produced by it?",
+      "choices": [
+        "G3P",
+        "ATP and NADPH",
+        "Carbon dioxide only",
+        "Oxygen"
+      ],
+      "answer": 1,
+      "why": "The Calvin cycle consumes ATP and NADPH supplied by the light reactions and produces G3P. It also consumes carbon dioxide, so listing CO2 as the only requirement is incomplete.",
+      "lesson": "sci-bio1-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-bio1-q028",
+      "q": "Cholera toxin locks a G protein in its active state, raising cyclic AMP. The stage of signaling disrupted is:",
+      "choices": [
+        "Reception",
+        "Transduction",
+        "Response only",
+        "Ligand synthesis"
+      ],
+      "answer": 1,
+      "why": "The G protein is a relay between the receptor and downstream effectors, so it belongs to transduction. Reception would involve the receptor binding the ligand itself.",
+      "lesson": "sci-bio1-l07",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-bio1-q029",
+      "q": "Epinephrine acts on liver cells without entering them. This is because epinephrine is:",
+      "choices": [
+        "A steroid",
+        "Too small to cross membranes",
+        "Degraded by lysosomes",
+        "Hydrophilic and binds a surface receptor"
+      ],
+      "answer": 3,
+      "why": "Hydrophilic signal molecules cannot cross the lipid bilayer, so they act through membrane receptors and second messengers. Steroids are the hydrophobic class that enters the cell.",
+      "lesson": "sci-bio1-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-bio1-q030",
+      "q": "A cell in metaphase of mitosis in a human has how many chromosomes?",
+      "choices": [
+        "23",
+        "46",
+        "92",
+        "69"
+      ],
+      "answer": 1,
+      "why": "Chromosome number stays 46 through metaphase; each chromosome simply has two chromatids. The count only doubles momentarily in the sense of chromatids, not chromosomes.",
+      "lesson": "sci-bio1-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-bio1-q031",
+      "q": "A drug prevents microtubule polymerization. Cells treated with it will arrest in:",
+      "choices": [
+        "S phase",
+        "G1",
+        "Metaphase, because the spindle cannot form",
+        "Telophase"
+      ],
+      "answer": 2,
+      "why": "The spindle is built from microtubules, and the M checkpoint blocks anaphase until every kinetochore is attached. S phase and G1 do not depend on spindle assembly.",
+      "lesson": "sci-bio1-l08",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-bio1-q032",
+      "q": "Which process directly reduces chromosome number from diploid to haploid?",
+      "choices": [
+        "Mitosis",
+        "Meiosis I",
+        "Meiosis II",
+        "Cytokinesis"
+      ],
+      "answer": 1,
+      "why": "Meiosis I separates homologous pairs, halving ploidy. Meiosis II separates sister chromatids without changing ploidy and mitosis preserves it entirely.",
+      "lesson": "sci-bio1-l08",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-bio1-q033",
+      "q": "A tumor is found to lack functional p53. The most likely consequence is that cells:",
+      "choices": [
+        "Cannot enter S phase",
+        "Undergo excessive apoptosis",
+        "Lose their mitochondria",
+        "Divide despite DNA damage"
+      ],
+      "answer": 3,
+      "why": "p53 arrests the cycle at G1 for repair or triggers apoptosis, so its loss lets damaged cells proliferate. Loss of p53 reduces rather than increases apoptosis.",
+      "lesson": "sci-bio1-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-bio1-q034",
+      "q": "Two parents heterozygous for a recessive disorder already have one affected child. The risk that their next child is affected is:",
+      "choices": [
+        "0",
+        "1/8",
+        "1/4",
+        "1/2"
+      ],
+      "answer": 2,
+      "why": "Each conception is an independent event with a 1/4 chance of two recessive alleles. Previous outcomes do not change the probability, a point exams test deliberately.",
+      "lesson": "sci-bio1-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-bio1-q035",
+      "q": "In a cross of AaBb x AaBb with independent assortment, what fraction of offspring show both dominant phenotypes?",
+      "choices": [
+        "1/16",
+        "3/16",
+        "9/16",
+        "1/4"
+      ],
+      "answer": 2,
+      "why": "Each gene independently yields 3/4 dominant, so 3/4 x 3/4 = 9/16. The 1/16 fraction is the double recessive and 3/16 fractions are the mixed phenotypes.",
+      "lesson": "sci-bio1-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-bio1-q036",
+      "q": "A woman whose father had hemophilia A marries an unaffected man. What is the chance that a given son is affected?",
+      "choices": [
+        "0",
+        "1/4",
+        "1/2",
+        "All sons affected"
+      ],
+      "answer": 2,
+      "why": "She must be a carrier because she inherited her father's only X. Each son has a 1/2 chance of receiving the affected X, and the father contributes only a Y to sons.",
+      "lesson": "sci-bio1-l09",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-bio1-q037",
+      "q": "A man with type AB blood and a woman with type O blood have children. Possible blood types are:",
+      "choices": [
+        "A or B only",
+        "AB or O only",
+        "A, B, AB or O",
+        "O only"
+      ],
+      "answer": 0,
+      "why": "The father contributes either I-A or I-B and the mother only i, so children are genotype I-A i or I-B i, phenotypes A or B. Neither AB nor O is possible.",
+      "lesson": "sci-bio1-l09",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-bio1-q038",
+      "q": "DNA polymerase requires a primer because the enzyme:",
+      "choices": [
+        "Cannot unwind DNA",
+        "Reads RNA better than DNA",
+        "Only works on the leading strand",
+        "Can only add nucleotides to an existing 3' hydroxyl"
+      ],
+      "answer": 3,
+      "why": "Polymerase extends an existing chain and cannot start one, so primase lays an RNA primer first. Unwinding is helicase's job and polymerase works on both strands.",
+      "lesson": "sci-bio1-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-bio1-q039",
+      "q": "An mRNA reads 5'-AUG CCU UGA-3'. The peptide produced is:",
+      "choices": [
+        "Three amino acids",
+        "One amino acid",
+        "None, the message has no start codon",
+        "Two amino acids"
+      ],
+      "answer": 3,
+      "why": "AUG codes methionine and CCU codes proline, then UGA is a stop codon that terminates translation without adding an amino acid.",
+      "lesson": "sci-bio1-l10",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-bio1-q040",
+      "q": "Deleting two nucleotides from the middle of a coding sequence most likely produces:",
+      "choices": [
+        "A silent mutation",
+        "A conservative substitution",
+        "A frameshift with a nonfunctional protein",
+        "No change because introns are removed"
+      ],
+      "answer": 2,
+      "why": "Two is not divisible by three, so the reading frame shifts and every downstream codon changes. A three-base deletion would remove one amino acid without shifting the frame.",
+      "lesson": "sci-bio1-l10",
+      "difficulty": 2
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "sci-bio1-s01",
+      "title": "Lab practical: three tubes of red blood cells",
+      "setting": "classroom",
+      "intro": "It is week four of General Biology I lab. Your bench has three tubes, each containing the same volume of whole blood diluted into a different solution: tube A is distilled water, tube B is `0.9%` sodium chloride, tube C is `5%` sodium chloride. You have a microscope, a spectrophotometer, and twenty minutes. The lab report asks you to predict, observe, and explain.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "Before touching a microscope, your partner asks what you expect in tube A, the distilled water. What is your prediction and the reasoning behind it?",
+          "choices": [
+            {
+              "text": "Cells swell and lyse, because distilled water is hypotonic and water moves into the cell toward higher solute",
+              "next": "s2",
+              "feedback": "Correct and correctly reasoned. Water moves toward the higher solute concentration, which is inside the cell, and animal cells have no wall to resist the swelling.",
+              "score": 1
+            },
+            {
+              "text": "Cells shrink, because water always moves out of cells into pure water",
+              "next": "s2",
+              "feedback": "Backwards. Water moves down its own concentration gradient, which means from the pure water into the saltier cytoplasm.",
+              "score": -1
+            },
+            {
+              "text": "Nothing changes, because the membrane is impermeable to water",
+              "next": "s2",
+              "feedback": "The membrane is selectively permeable and water crosses both directly and through aquaporins. Impermeability to water would make osmosis impossible anywhere in the body.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "Under the scope, tube A is nearly empty of intact cells and the supernatant is transparent red. Tube C's cells look shriveled with spiky edges. Tube B looks normal. What is the correct vocabulary for tube C's appearance, and why did it happen?",
+          "choices": [
+            {
+              "text": "Crenation, because the `5%` saline is hypertonic and water left the cells",
+              "next": "s3",
+              "feedback": "Right. Crenation is the shriveling of an animal cell in hypertonic solution. Plasmolysis is the corresponding plant term, where the membrane pulls away from the wall.",
+              "score": 1
+            },
+            {
+              "text": "Plasmolysis, because the cell wall separated from the membrane",
+              "next": "s3",
+              "feedback": "The mechanism is right but the term is not. Red blood cells have no cell wall, so plasmolysis cannot apply; the animal-cell term is crenation.",
+              "score": 0
+            },
+            {
+              "text": "Hemolysis, because salt destroyed the membrane chemically",
+              "next": "s3",
+              "feedback": "Hemolysis is what happened in tube A, and it was osmotic, not chemical. Salt at this concentration pulls water out rather than dissolving membranes.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "Your instructor pushes further: why did tube B, `0.9%` saline, look unchanged? And what is that concentration called clinically?",
+          "choices": [
+            {
+              "text": "It is isotonic to plasma, so water movement in and out is equal, with no net change; clinically this is normal saline",
+              "next": "s4",
+              "feedback": "Exactly. Isotonic does not mean water stops moving, it means influx equals efflux. `0.9%` NaCl is the standard isotonic crystalloid.",
+              "score": 1
+            },
+            {
+              "text": "It is isotonic, so water stops crossing the membrane entirely",
+              "next": "s4",
+              "feedback": "Close, but the mechanism matters. Water continues to cross constantly in both directions; the two rates simply cancel out.",
+              "score": 0
+            },
+            {
+              "text": "The salt in tube B blocked the aquaporins",
+              "next": "s4",
+              "feedback": "No transporter is being blocked. Tonicity questions are answered by comparing solute concentrations, not by inventing a channel effect.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "Final question on the report: a classmate suggests that if you added an ATP inhibitor to all three tubes, the osmotic results would change. How do you answer?",
+          "vitals": {},
+          "choices": [
+            {
+              "text": "The osmotic results would be unchanged, because osmosis is passive and requires no ATP",
+              "next": "end",
+              "feedback": "Correct. Osmosis is driven by the solute gradient alone. ATP inhibition would cripple the sodium-potassium pump over time, which would eventually change internal solute, but the immediate osmotic result is the same.",
+              "score": 1
+            },
+            {
+              "text": "All three tubes would immediately behave as if isotonic",
+              "next": "end",
+              "feedback": "There is no mechanism for that. Blocking ATP cannot equalize the solute concentrations that drive water movement in each tube.",
+              "score": -1
+            },
+            {
+              "text": "Only tube A would change, because lysis requires energy",
+              "next": "end",
+              "feedback": "Lysis is mechanical rupture from osmotic influx, not an energy-consuming process. No ATP is needed to burst.",
+              "score": 0
+            }
+          ]
+        }
+      ],
+      "debrief": "The pattern to carry out of this lab: tonicity is always a comparison, never a property of one solution alone, and the direction of water movement is toward the higher solute. Animal cells lyse in hypotonic and crenate in hypertonic solutions; plant cells become turgid or plasmolyze because a wall resists. `0.9%` NaCl is isotonic to human plasma, which is exactly why it is the default intravenous fluid. Osmosis and all facilitated diffusion are passive; only pumps and bulk transport cost ATP."
+    },
+    {
+      "id": "sci-bio1-s02",
+      "title": "Problem set: reading a pedigree and running the numbers",
+      "setting": "classroom",
+      "intro": "Your genetics problem set gives a four-generation pedigree for a disorder that causes progressive muscle weakness beginning in early childhood. Squares are males, circles females, filled symbols affected. Every affected individual in the chart is male. Two unaffected couples have affected sons. No affected father has an affected son. You are asked to determine the inheritance pattern and then calculate risks.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "First question: unaffected parents in generation II have an affected son. What does that single fact rule out?",
+          "choices": [
+            {
+              "text": "It rules out a dominant pattern, because a dominant allele would have to be present in a parent to appear in a child",
+              "next": "s2",
+              "feedback": "Correct, and this is the first move in every pedigree problem. Unaffected parents with an affected child means the allele was carried silently, which is the definition of recessive.",
+              "score": 1
+            },
+            {
+              "text": "It rules out a recessive pattern, since recessive traits skip no generations",
+              "next": "s2",
+              "feedback": "Backwards. Recessive traits are precisely the ones that skip generations, because heterozygous carriers show nothing.",
+              "score": -1
+            },
+            {
+              "text": "It rules out sex linkage",
+              "next": "s2",
+              "feedback": "It does not. Sex linkage is about which chromosome carries the gene; dominance is a separate question answered first.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "Second question: every affected individual is male, and no affected father passes the trait to a son. Autosomal recessive or X-linked recessive, and why?",
+          "choices": [
+            {
+              "text": "X-linked recessive, because males are hemizygous for X genes and fathers give sons only a Y",
+              "next": "s3",
+              "feedback": "Exactly right, and both halves of the reasoning matter. Male predominance points at the X; absence of father-to-son transmission confirms it, since sons get the father's Y.",
+              "score": 1
+            },
+            {
+              "text": "Autosomal recessive, because the trait skips generations",
+              "next": "s3",
+              "feedback": "Skipping generations fits any recessive trait, so it does not distinguish the two. The strong male bias and the transmission pattern do.",
+              "score": 0
+            },
+            {
+              "text": "Y-linked, because only males are affected",
+              "next": "s3",
+              "feedback": "Y-linked traits pass from every affected father to every son with no exceptions. The pedigree explicitly shows no father-to-son transmission, which excludes this.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "Third question: a woman in generation III is the daughter of a carrier mother and an unaffected father. She marries an unaffected man. What is the probability that a given son of hers is affected?",
+          "choices": [
+            {
+              "text": "1/4, because she has a 1/2 chance of being a carrier and each son of a carrier has a 1/2 chance",
+              "next": "s4",
+              "feedback": "Correct. This is the multiplication rule for independent events: `1/2 x 1/2 = 1/4`. Ignoring her own carrier probability is the most common error on this item type.",
+              "score": 1
+            },
+            {
+              "text": "1/2, because carrier mothers pass the allele to half their sons",
+              "next": "s4",
+              "feedback": "That is the conditional answer if she is known to be a carrier. Here her carrier status is itself only 1/2 likely, so the unconditional risk is halved again.",
+              "score": 0
+            },
+            {
+              "text": "0, because her father was unaffected",
+              "next": "s4",
+              "feedback": "Her father is irrelevant to an X-linked allele she could inherit from her carrier mother. Fathers contribute a Y to sons and an unaffected X to daughters.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "Fourth question: the problem set switches to an autosomal dihybrid cross. Two parents are both `AaBb`, genes on separate chromosomes. What fraction of offspring are `aabb`, and what is the efficient way to get there?",
+          "choices": [
+            {
+              "text": "1/16, found by multiplying the two independent monohybrid probabilities `1/4 x 1/4`",
+              "next": "s5",
+              "feedback": "Right, and the method matters more than the number. Treat a dihybrid as two monohybrids and multiply; a 16-cell Punnett square gives the same answer far more slowly.",
+              "score": 1
+            },
+            {
+              "text": "1/16, found by drawing out the full 16-box Punnett square and counting",
+              "next": "s5",
+              "feedback": "The answer is right and the method works, but on a timed exam it is slow and error-prone. The probability shortcut scales to three and four genes where a grid does not.",
+              "score": 0
+            },
+            {
+              "text": "1/8, because there are eight possible gamete combinations",
+              "next": "s5",
+              "feedback": "There are four gamete types per parent, not eight, and the combination of interest is a single cell out of sixteen. Count gametes carefully before dividing.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "Last question: in a different family, a couple who both show a dominant phenotype produce a child with the recessive phenotype. The instructor asks what the parents' genotypes must be and whether a test cross would have predicted this.",
+          "choices": [
+            {
+              "text": "Both parents are heterozygous, and a test cross to a homozygous recessive would have revealed it by producing recessive offspring",
+              "next": "end",
+              "feedback": "Correct on both counts. An affected recessive child proves each parent carried one recessive allele, and a test cross is exactly the tool for exposing a hidden recessive allele.",
+              "score": 1
+            },
+            {
+              "text": "One parent is homozygous dominant and the other heterozygous",
+              "next": "end",
+              "feedback": "Impossible. A homozygous dominant parent gives every child at least one dominant allele, so no child could show the recessive phenotype.",
+              "score": -1
+            },
+            {
+              "text": "Both parents are heterozygous, but no cross could have predicted the outcome",
+              "next": "end",
+              "feedback": "The genotypes are right but the second half is wrong. A test cross to a homozygous recessive individual is designed precisely to expose heterozygosity.",
+              "score": 0
+            }
+          ]
+        }
+      ],
+      "debrief": "Two habits carry most genetics points. First, read a pedigree in a fixed order: dominant or recessive, then autosomal or sex-linked. Unaffected parents with an affected child means recessive; heavy male predominance with no father-to-son transmission means X-linked. Second, convert every cross into independent probabilities and multiply, rather than drawing grids. Remember to include upstream uncertainty, such as a parent's own 1/2 chance of being a carrier, before multiplying downstream. And remember that each pregnancy is an independent event: a family with three affected children still faces the same per-pregnancy risk on the fourth."
+    }
+  ]
+}
