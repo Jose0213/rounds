@@ -10,6 +10,7 @@
     drills: {},      // id -> { runs, best }
     days: {},        // YYYY-MM-DD -> { cards, lessons, quiz, scen }
     path: {},        // taskId -> ts
+    flags: {},       // 'lesson:<id>' | 'q:<id>' -> { kind, id, title, mod, note, ts }
     settings: { theme: 'system', penOnly: true, dailyNew: 20, autoInk: true },
     firstRun: Date.now(),
   });
