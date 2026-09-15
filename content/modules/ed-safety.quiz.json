@@ -1,0 +1,1224 @@
+{
+  "schema": 1,
+  "extends": "ed-safety",
+  "checks": {
+    "ed-safety-l01": [
+      {
+        "q": "A colleague wipes her gloved hands with an alcohol swab between removing a dirty dressing and touching a clean IV line on the same patient, instead of changing gloves. What is wrong?",
+        "choices": [
+          "Nothing, alcohol disinfects the gloves adequately",
+          "Alcohol degrades glove material and can create invisible holes, so gloves must be changed and hand hygiene performed instead",
+          "Gloves never need to be changed on the same patient",
+          "She should have used bleach instead of alcohol"
+        ],
+        "answer": 1,
+        "why": "Alcohol is not validated to disinfect gloves and breaks down the material, creating holes you cannot see. The correct move between a dirty and clean site is removing gloves, hand hygiene, and fresh gloves."
+      },
+      {
+        "q": "A new hire wearing a fresh gel manicure asks whether it's fine since she plans to wear gloves for every patient contact. What is the answer?",
+        "choices": [
+          "Yes, gloves make artificial nails safe to wear",
+          "No; artificial nails are prohibited for staff with direct patient contact regardless of glove use, because organisms persist under and around them",
+          "Only synthetic wraps are prohibited, gel is fine",
+          "Allowed if nails are kept under 1/4 inch"
+        ],
+        "answer": 1,
+        "why": "The prohibition on artificial nails applies specifically because organisms collect under and around them and gloves do not eliminate that risk; several newborn and ICU outbreaks have been traced to them. Length rules apply to natural nails, not as an exception for artificial ones."
+      }
+    ],
+    "ed-safety-l02": [
+      {
+        "q": "A meningococcal meningitis patient needs droplet precautions. A staff member steps into the doorway, more than 6 feet away, only to ask the patient a question and does not enter the room. Is a mask required?",
+        "choices": [
+          "Yes, a mask is required for any verbal contact regardless of distance",
+          "No, because droplet precautions are based on close proximity, generally within about 3 to 6 feet, and the doorway is outside that range",
+          "Yes, an N95 is required at the doorway",
+          "No, droplet precautions never require a mask outside of the room"
+        ],
+        "answer": 1,
+        "why": "Droplet precautions target close-range exposure; standing well outside the 3 to 6 foot range at the doorway does not meet the exposure distance, though most facilities still default to masking within the room's threshold as a simple rule. An N95 is reserved for airborne pathogens, not meningococcus."
+      },
+      {
+        "q": "A trained team is donning full-coverage PPE for a suspected Ebola patient, and one member wants to doff without the trained observer present because it will be faster. What is wrong?",
+        "choices": [
+          "Nothing, doffing speed matters more than observation",
+          "Special pathogen doffing requires a trained observer reading each step aloud every time, because the consequence of a contamination error is severe",
+          "Observers are only required for donning, not doffing",
+          "Observation is optional if the staff member is experienced"
+        ],
+        "answer": 1,
+        "why": "Special pathogen protocols like Ebola require a trained observer for every doffing to catch even small sequence errors, since a single contamination event during doffing can be catastrophic. Experience does not substitute for the observer requirement, and speed is never the priority here."
+      }
+    ],
+    "ed-safety-l03": [
+      {
+        "q": "During doffing, a tech removes her N95 respirator by grabbing the front of it and pulling it off her face. What is wrong?",
+        "choices": [
+          "Nothing, as long as hand hygiene follows",
+          "The respirator should be removed by the ties or elastic only, never the front, since the front is the most contaminated surface",
+          "The order was correct but she should have kept the respirator on for the whole shift",
+          "Eye protection should have come off first"
+        ],
+        "answer": 1,
+        "why": "The front of a used respirator is the most contaminated part after time in a contaminated room, so it is handled only by the ties or elastic to avoid transferring that contamination to the hands and face. Removing the respirator last, after eye protection, is correct, but never by the front."
+      },
+      {
+        "q": "A tech is donning PPE and puts gloves on immediately after the gown, before the mask and eye protection, reasoning that gloves protect the hands early. What is the actual problem?",
+        "choices": [
+          "There is no problem; order does not matter as long as all pieces go on",
+          "Gloves belong last because they seal the gown cuff at the wrist, and putting them on before handling the mask risks contaminating the glove exterior while adjusting the mask straps",
+          "The gown should have gone on after the gloves",
+          "Eye protection always goes on first regardless"
+        ],
+        "answer": 1,
+        "why": "Gloves are donned last specifically to close the wrist gap left by the gown sleeve, and adjusting a mask or eye protection with already-gloved hands risks contaminating the gloves before patient contact even starts."
+      }
+    ],
+    "ed-safety-l04": [
+      {
+        "q": "A tech recaps a used needle one-handed using the scoop technique, believing this is safe because both hands aren't involved. What is the problem?",
+        "choices": [
+          "Nothing, one-handed recapping is an accepted safe practice",
+          "Recapping of any kind, including one-handed technique, is a major cause of needlesticks and should be avoided; the safety device should be activated instead",
+          "Two-handed recapping would have been safer",
+          "Recapping is fine as long as it's done quickly"
+        ],
+        "answer": 1,
+        "why": "Recapping causes a large share of needlestick injuries regardless of technique, which is why the rule is to activate the built-in safety device immediately instead of recapping at all."
+      },
+      {
+        "q": "A sharps container in a busy trauma bay is packed with a needle visibly sticking out past the opening. A tech needs to dispose of another needle right now. What should she do?",
+        "choices": [
+          "Push the sticking-out needle down first with a gloved hand",
+          "Force her needle in beside it",
+          "Use a different container and report this one for replacement, since containers are changed at about three-quarters full and nothing should be reached into or pushed down",
+          "Wrap the new needle in gauze and set it on the counter"
+        ],
+        "answer": 2,
+        "why": "A container already overfull and with a protruding sharp should be taken out of service and reported, not manipulated by hand, and a different container is used in the meantime rather than improvising storage on a counter."
+      }
+    ],
+    "ed-safety-l05": [
+      {
+        "q": "A tech asks a sedated, groggy patient, 'You're Mr. Alvarez, right?' and he mumbles something that sounds like agreement. She proceeds with the medication. What is the flaw?",
+        "choices": [
+          "None, he responded",
+          "She should have asked him to state his own full name and date of birth rather than confirming a name she supplied, especially given his sedation",
+          "She should have checked only the room number instead",
+          "No identification is required for a sedated patient"
+        ],
+        "answer": 1,
+        "why": "A sedated or confused patient will often agree to whatever name is offered, which is exactly why identification must be open-ended and verified against the armband rather than confirmed by a yes."
+      },
+      {
+        "q": "A tech is asked to help move a call bell that was placed just out of an elderly patient's reach because staff were in a hurry during a busy stretch. What immediate risk does this create?",
+        "choices": [
+          "No real risk since the patient can just call out",
+          "Increased fall risk, since a patient without a reachable call bell is more likely to attempt getting up unassisted",
+          "A risk of pressure injury only",
+          "A risk of medication error only"
+        ],
+        "answer": 1,
+        "why": "An out-of-reach call bell removes the patient's ability to ask for help, which is a known contributor to falls as patients try to manage on their own rather than wait unheard."
+      }
+    ],
+    "ed-safety-l06": [
+      {
+        "q": "A tech needs to move a patient laterally from bed to stretcher and reaches for a friction-reducing slide sheet instead of pulling the sheet the patient is lying on by hand. Why is this the better choice?",
+        "choices": [
+          "Slide sheets are required by law for every move",
+          "Slide sheets dramatically cut the force required and are designed for exactly this kind of move, reducing injury risk to both patient and staff",
+          "Pulling by hand is equally safe if done slowly",
+          "Slide sheets are only for bariatric patients"
+        ],
+        "answer": 1,
+        "why": "Friction-reducing slide sheets exist specifically to cut the force needed for lateral and up-in-bed moves, which is why they are the default over manual pulling regardless of patient size."
+      },
+      {
+        "q": "A tech is asked to walk an unsteady patient to the bathroom and grips the patient firmly under the armpits instead of using a gait belt. What is wrong with this technique?",
+        "choices": [
+          "Nothing, this is a standard ambulation technique",
+          "Gripping under the armpits risks shoulder injury to the patient and gives the tech far less control than holding a properly applied gait belt",
+          "A gait belt is only needed for bariatric patients",
+          "The patient should be held by the clothing instead"
+        ],
+        "answer": 1,
+        "why": "Holding under the armpits can injure the shoulder and offers poor leverage if the patient starts to buckle, which is exactly why a gait belt held at the waist is the standard tool for safe ambulation."
+      }
+    ],
+    "ed-safety-l07": [
+      {
+        "q": "A physician writes an order allowing behavioral restraint 'as needed for agitation' so staff don't have to call for a new order each time. What is wrong with this order?",
+        "choices": [
+          "Nothing, PRN orders save time in an emergency",
+          "PRN and standing restraint orders are prohibited; each restraint episode requires its own new order and assessment",
+          "This order is fine as long as it's renewed every 4 hours",
+          "This is only a problem for pediatric patients"
+        ],
+        "answer": 1,
+        "why": "Federal rules explicitly bar PRN or standing restraint orders because each application must be independently assessed and ordered, not pre-authorized for convenience."
+      },
+      {
+        "q": "Staff place a violent patient face-down in restraints because he keeps trying to sit up. What is the danger of this position?",
+        "choices": [
+          "No danger as long as limbs are secured",
+          "Positional asphyxia; a patient restrained prone with pressure on the back can suffocate, which is why supine with the head slightly elevated is the standard position",
+          "It only risks skin breakdown",
+          "It is the recommended position for combative patients"
+        ],
+        "answer": 1,
+        "why": "Prone restraint with weight on the back is a documented mechanism of restraint death from positional asphyxia, which is exactly why the standard position is supine with the head of the bed slightly raised."
+      }
+    ],
+    "ed-safety-l08": [
+      {
+        "q": "A patient's aggression is escalating and a tech notices she has moved so the patient is now between her and the door. What is the immediate priority?",
+        "choices": [
+          "Continue the conversation from the current position",
+          "Reposition to regain a clear path to the exit while maintaining distance, without turning her back",
+          "Step behind the patient to get around him",
+          "Reach past the patient for the door handle"
+        ],
+        "answer": 1,
+        "why": "Losing the exit path is the specific positioning error that turns an escalating situation into an assault, so regaining a clear route out while keeping distance and not turning your back takes priority over continuing to talk."
+      },
+      {
+        "q": "A small fire starts in a trash can with no patient nearby and a clear exit behind the tech. She grabs the nearest extinguisher. What must she confirm before using it?",
+        "choices": [
+          "That the fire is contained, small, and she has a clear escape route behind her, consistent with the RACE sequence already having rescued anyone in danger and sounded the alarm",
+          "That the fire has been burning for at least 5 minutes",
+          "That her supervisor has approved extinguisher use",
+          "That the sprinkler system has failed"
+        ],
+        "answer": 0,
+        "why": "RACE places extinguishing after rescue and alarm, and only for a small, contained fire with an unobstructed way out, which is the exact scenario being confirmed here rather than an arbitrary waiting period or approval."
+      }
+    ],
+    "ed-safety-l09": [
+      {
+        "q": "A patient dies of natural causes with family present in the waiting room the whole time, not during resuscitation. A distant relative later asks the tech directly whether the patient would have wanted to donate organs. What should the tech do?",
+        "choices": [
+          "Answer based on what she believes the patient would have wanted",
+          "Say that a specialist from the organ procurement organization will speak with the family, and notify the nurse, since staff do not initiate or handle the donation conversation themselves",
+          "Explain that it's too late since the family wasn't present at death",
+          "Direct the relative to research it online"
+        ],
+        "answer": 1,
+        "why": "Regardless of who died or the resuscitation status, only a trained requestor from the organ procurement organization has the donation conversation with the family, and every death is referred to that organization independent of who raises the question."
+      },
+      {
+        "q": "A deceased patient's cut-off clothing is damp with blood. A tech wants to dispose of it since it's ruined. What is correct?",
+        "choices": [
+          "Discard it as biohazard waste since it can't be worn again",
+          "Save it in a paper bag rather than discarding it, since belongings including cut clothing remain the patient's property",
+          "Save it in a sealed plastic bag to contain the blood",
+          "Return it to the family immediately without documentation"
+        ],
+        "answer": 1,
+        "why": "Cut or damaged clothing is still the patient's property and is saved rather than discarded, in a paper bag if wet, with belongings properly inventoried and documented rather than handed over informally."
+      }
+    ],
+    "ed-safety-l10": [
+      {
+        "q": "A visitor is handed gown and gloves for a contact precautions room but no explanation of how to remove them. Later she's seen in the hallway still wearing contaminated gloves. What was missed?",
+        "choices": [
+          "Nothing; visitors are responsible for figuring out PPE on their own",
+          "Visitors should receive a brief demonstration of how to put on and remove PPE, not just be handed the equipment",
+          "Visitors should never be allowed PPE at all",
+          "The gloves should have been a different color"
+        ],
+        "answer": 1,
+        "why": "Handing someone gear without a short demonstration of the doffing sequence predictably produces exactly this outcome, a visitor unknowingly carrying contamination into the hallway."
+      },
+      {
+        "q": "At 0300, a tech restocking the isolation cart finds no size-large gowns left. Why does this matter?",
+        "choices": [
+          "It doesn't, gowns are one-size-fits-all in practice",
+          "A missing size means the next staff member who needs it may enter ungowned rather than wait, which is exactly the gap the shift-start check is meant to catch",
+          "Only night shift needs size-large gowns",
+          "Gown size doesn't affect protection"
+        ],
+        "answer": 1,
+        "why": "An empty cart at the wrong moment is how precaution failures happen in practice; checking and restocking at shift start exists specifically to prevent someone from skipping PPE because the right size wasn't available."
+      }
+    ],
+    "ed-safety-l11": [
+      {
+        "q": "A non-immune tech exposed to confirmed varicella is offered vaccine on day 2 after exposure. What is the deadline for the vaccine to still be given?",
+        "choices": [
+          "Within 3 to 5 days of exposure",
+          "Within 10 days",
+          "Within 21 days",
+          "Within 72 hours"
+        ],
+        "answer": 0,
+        "why": "Varicella vaccine after exposure is given within 3 to 5 days; the 10-day figure is the outer window for VariZIG when vaccine is contraindicated, and 72 hours and 21 days belong to different parts of the measles protocol."
+      },
+      {
+        "q": "A tech develops a cough five days after an unprotected pertussis exposure. What changes from her earlier prophylaxis-only management?",
+        "choices": [
+          "Nothing changes",
+          "She is now excluded from work until she completes 5 days of appropriate antibiotics",
+          "She is excluded for 21 days regardless of treatment",
+          "She needs a repeat test in 8 to 10 weeks"
+        ],
+        "answer": 1,
+        "why": "Asymptomatic exposed staff on prophylaxis continue working, but developing symptoms changes the picture: exclusion applies until 5 days of appropriate antibiotic treatment are completed, not the longer exclusion window used for measles or varicella."
+      }
+    ],
+    "ed-safety-l12": [
+      {
+        "q": "A restrained patient's 15-minute checks are documented at 2015, 2030, and then not again until 2115. What does this gap suggest to a reviewer?",
+        "choices": [
+          "Nothing of concern, since checks were done before and after",
+          "A roughly 45-minute period where nobody appears to have been actively monitoring circulation, skin, and airway, which is exactly what a gap like this is read as",
+          "That the restraint order automatically expired",
+          "That the patient was asleep and didn't need checks"
+        ],
+        "answer": 1,
+        "why": "Documented checks with a long unexplained gap in between read as a period without active monitoring, which is precisely the kind of finding that surfaces in a review of a restraint-related complication."
+      },
+      {
+        "q": "A patient is restrained at 0900 for violent behavior. By what time must the required face-to-face evaluation be completed?",
+        "choices": [
+          "0910",
+          "1000, within 1 hour of initiation",
+          "1300, within 4 hours",
+          "The next morning"
+        ],
+        "answer": 1,
+        "why": "Behavioral restraint requires a face-to-face evaluation within 1 hour of application, so it is due by 1000; the 4-hour mark is when the order itself expires, not the evaluation deadline."
+      }
+    ],
+    "ed-safety-l13": [
+      {
+        "q": "A tech is assaulted by a patient and a coworker tells her, 'That's just the ED, don't bother reporting it.' Why does this advice work against her and the department?",
+        "choices": [
+          "It doesn't, reporting minor incidents wastes time",
+          "Underreporting keeps violence patterns invisible, and New Jersey's violence prevention framework depends on a written record to drive staffing and safety changes",
+          "Reporting is only required for injuries needing sutures",
+          "She should only report to police, not the hospital"
+        ],
+        "answer": 1,
+        "why": "The whole system of violence prevention committees, risk assessments, and staffing changes depends on incidents actually being logged; skipping the report because it feels routine keeps the underlying pattern hidden from the people who could fix it."
+      },
+      {
+        "q": "After an assault, a tech wants to press charges against the patient. Can her employer stop her?",
+        "choices": [
+          "Yes, if the incident happened at work",
+          "No, an employer cannot forbid pressing charges or retaliate against a staff member for doing so",
+          "Only with the patient's consent",
+          "Only if the patient is not a hospital patient anymore"
+        ],
+        "answer": 1,
+        "why": "Staff retain the right to press charges independent of their employer's wishes, and retaliation for doing so is prohibited; New Jersey additionally treats assault on a health care worker as an elevated offense."
+      }
+    ],
+    "ed-safety-l14": [
+      {
+        "q": "A tech sees an unwitnessed patient sitting on the floor near her stretcher with no one having seen how she got there. How should the tech chart what happened?",
+        "choices": [
+          "'Patient fell from the stretcher'",
+          "'Found on the floor,' documenting only what was observed rather than an assumption about the mechanism",
+          "'Patient attempted to elope and fell'",
+          "No documentation is needed since there was no witness"
+        ],
+        "answer": 1,
+        "why": "Charting must reflect only what was actually witnessed; 'found on the floor' is an observation, while 'fell' asserts a mechanism nobody saw, which is a different and unsupported claim."
+      },
+      {
+        "q": "A tech is labeling blood tubes at the workstation ahead of time so the draw goes faster once she's in the room. What is the risk with this practice?",
+        "choices": [
+          "None, as long as the labels are accurate",
+          "Pre-labeling away from the bedside removes the safeguard of confirming identity at the moment of collection, which is how wrong-patient specimen errors happen even when the label itself is correct",
+          "It only matters for blood bank specimens",
+          "It saves time with no downside"
+        ],
+        "answer": 1,
+        "why": "Labeling must happen at the bedside in the patient's presence specifically because pre-labeling in a batch removes the final identity check at the moment of collection, the exact failure point behind wrong-patient specimen errors."
+      }
+    ],
+    "ed-safety-l15": [
+      {
+        "q": "A vertical evacuation is underway. A tech is trying to decide whether to move a wheelchair-bound but calm patient or a total-care, non-ambulatory patient first, given limited staff. What is correct?",
+        "choices": [
+          "Move the total-care patient first since he needs more help",
+          "Move the wheelchair patient first, since ambulatory and assisted patients are moved before non-ambulatory, total-care patients who require the most staff per patient",
+          "Move whichever is closest to the stairwell",
+          "Move the calmer patient last since urgency isn't an issue"
+        ],
+        "answer": 1,
+        "why": "The evacuation order moves immediate-danger patients first, then ambulatory, then assisted patients like this wheelchair user, before non-ambulatory total-care patients who consume the most staff resources per person."
+      },
+      {
+        "q": "As rooms are cleared during an evacuation, what should be done to each one, and why does it matter?",
+        "choices": [
+          "Nothing extra is needed beyond moving the patient",
+          "Mark the door as cleared and keep a written count, so the room isn't searched twice and every patient is accounted for by name at the assembly point",
+          "Leave the door open for ventilation",
+          "Lock the door to prevent smoke entry"
+        ],
+        "answer": 1,
+        "why": "Marking cleared rooms and maintaining a written count is what allows reconciliation against the tracking board at the assembly point; without it, search efforts can waste time re-checking cleared rooms while a patient elsewhere remains unaccounted for."
+      }
+    ],
+    "ed-safety-l16": [
+      {
+        "q": "During a portable X-ray, a tech who has no role in the exposure remains in the room out of habit rather than stepping out or behind the shield. What should she have done?",
+        "choices": [
+          "Nothing, staying is fine as long as she's not touching the patient",
+          "Stepped out of the room or behind an available shield, since anyone without a needed role in the exposure should not remain unshielded in the room",
+          "Worn a dosimeter badge instead of leaving",
+          "Faced away from the beam"
+        ],
+        "answer": 1,
+        "why": "The default for anyone without a role in a given exposure is to leave the room or get behind a shield; simply not touching the patient or turning away does not reduce scatter exposure meaningfully."
+      },
+      {
+        "q": "A patient's IV pole made of standard steel is about to be pushed into the MRI scanner room by mistake. What is the concern?",
+        "choices": [
+          "It might scratch the scanner's exterior",
+          "Ferromagnetic objects like a steel IV pole become projectiles at high speed in the magnet's field, a documented cause of serious injury and death",
+          "It will trigger a fire alarm",
+          "It has no effect since the magnet is only active during scans"
+        ],
+        "answer": 1,
+        "why": "The MRI magnet is always on, and ferromagnetic metal objects are pulled toward it with enough force to become deadly projectiles, which is exactly why screening for metal happens before anything or anyone enters Zone IV."
+      }
+    ],
+    "ed-safety-l17": [
+      {
+        "q": "A tech has worked a full night shift and driven home safely many times before. Tonight she notices she's drifting slightly out of her lane on the highway. What should she do?",
+        "choices": [
+          "Continue on, since she's driven home safely many times before",
+          "Pull over to nap or call for a ride immediately, since drifting is a warning sign of impairment comparable to a meaningful blood alcohol level after extended wakefulness",
+          "Open the window and turn up music to stay alert",
+          "Speed up to get home faster"
+        ],
+        "answer": 1,
+        "why": "Drifting out of a lane is a direct sign of impaired vigilance similar to alcohol-level impairment after long wakefulness, and the safe response is to stop rather than rely on past safe drives or temporary alertness tricks like music or air."
+      },
+      {
+        "q": "A tech describes feeling emotionally numb and having intrusive images of patients from difficult cases over several months, without any specific incident where she felt forced to act against her own judgment. What does this best describe?",
+        "choices": [
+          "Moral injury",
+          "Compassion fatigue, or secondary traumatic stress, from repeated exposure to other people's trauma",
+          "Ordinary job stress requiring no attention",
+          "Burnout specifically"
+        ],
+        "answer": 1,
+        "why": "Numbing and intrusive images from repeated exposure to others' trauma describe compassion fatigue rather than moral injury, which centers on being required to act against one's own values, or burnout, which centers on exhaustion and depersonalization from workload."
+      }
+    ],
+    "ed-safety-l18": [
+      {
+        "q": "A provider pronounces a patient dead at 1415 and documents the time. A family member asks whether this means the death certificate has been signed. What is the answer?",
+        "choices": [
+          "Yes, pronouncement and certification happen simultaneously",
+          "No, pronouncement is a separate act from certification, which is when the cause of death is signed on the death certificate by the attending physician or the medical examiner",
+          "Yes, but only in medical examiner cases",
+          "No, certification always happens before pronouncement"
+        ],
+        "answer": 1,
+        "why": "Pronouncement documents the time of death, while certification, signing the cause of death, is a separate step that may happen later and by a different party depending on whether the case belongs to the medical examiner."
+      },
+      {
+        "q": "A hospital employee needs to transfer bagged evidence from the ED to a security officer. What is required to maintain chain of custody?",
+        "choices": [
+          "A verbal handoff is sufficient",
+          "Every transfer is documented and signed by both parties with date and time, and the evidence is never left unattended or given to family",
+          "The bag can be left at the security desk if no one is there",
+          "Only the final recipient needs to sign, not each transfer"
+        ],
+        "answer": 1,
+        "why": "Chain of custody requires every single transfer to be documented and signed with date and time, without gaps, and evidence is never left unattended on a counter or handed informally to family members."
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "id": "ed-safety-q077",
+      "q": "A tech reasons that since the patient has no diagnosed infection, gloves alone before starting an IV are enough and skips hand hygiene first. What is wrong with this reasoning?",
+      "choices": [
+        "Hand hygiene is still required because standard precautions apply to every patient regardless of diagnosis and gloves can tear or leak",
+        "Nothing; a diagnosed infection is the only trigger for hand hygiene",
+        "Gloves make hand hygiene unnecessary as long as they stay intact",
+        "Hand hygiene is optional before gloving, but required after"
+      ],
+      "answer": 0,
+      "why": "Standard precautions apply to everyone because infection status is usually unknown, and gloves are not a substitute for hand hygiene since they can fail. Hand hygiene before gloving is one of the five moments, not an optional step reserved for known infections.",
+      "lesson": "ed-safety-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-safety-q078",
+      "q": "A tech is about to answer a ringing desk phone while still gloved from a task and then plans to return straight to the patient. What should happen?",
+      "choices": [
+        "Continue with the same gloves since no new patient is involved",
+        "Remove the gloves before touching the phone, perform hand hygiene, and put on new gloves before returning to the patient",
+        "Wipe the gloves with alcohol before touching the phone",
+        "Touch the phone with a gloved hand, then finish the task with the same gloves"
+      ],
+      "answer": 1,
+      "why": "Gloved hands belong to the patient task; touching a shared surface like a phone creates a contamination trail and the gloves must be changed with hand hygiene between the two different jobs. Wiping gloves with alcohol degrades them rather than cleaning them.",
+      "lesson": "ed-safety-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-safety-q079",
+      "q": "A tech scrubs with soap and water for about 10 seconds after caring for a patient with norovirus because the department is slammed. What is the deficiency?",
+      "choices": [
+        "None; norovirus only requires alcohol rub",
+        "The wrong product was used; alcohol should have been used instead",
+        "The scrub was too short; soap and water requires at least 20 seconds to physically remove norovirus",
+        "Nothing, as long as the hands are then dried with a towel"
+      ],
+      "answer": 2,
+      "why": "Soap and water is required for norovirus because alcohol does not reliably inactivate it, and the mechanical scrub must last at least 20 seconds to work. Drying alone does not compensate for a scrub that was too brief.",
+      "lesson": "ed-safety-l01",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-safety-q080",
+      "q": "Which organism requires airborne precautions rather than droplet?",
+      "choices": [
+        "Influenza",
+        "Pertussis",
+        "Group A streptococcus",
+        "Varicella (chickenpox)"
+      ],
+      "answer": 3,
+      "why": "Varicella spreads by tiny airborne particles requiring an N95 and negative-pressure room. Influenza, pertussis, and group A strep are droplet-spread and are managed with a surgical mask at close range.",
+      "lesson": "ed-safety-l02",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-safety-q081",
+      "q": "A patient with disseminated (widespread) herpes zoster is admitted. What precaution category applies?",
+      "choices": [
+        "Airborne, because disseminated zoster spreads like varicella",
+        "Contact only, since zoster is a skin condition",
+        "Droplet, since it involves respiratory secretions",
+        "Standard precautions only"
+      ],
+      "answer": 0,
+      "why": "Disseminated zoster behaves like chickenpox and requires airborne precautions with an N95 and negative-pressure room, unlike a single localized shingles outbreak which needs only contact precautions. Treating it as a simple skin condition under contact alone misses the airborne route.",
+      "lesson": "ed-safety-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-safety-q082",
+      "q": "A tech stands 8 feet from an unmasked patient coughing with confirmed influenza, with no direct conversation or close contact. Is a surgical mask required for the tech at that distance?",
+      "choices": [
+        "Yes, droplet precautions apply at any distance in the room",
+        "Droplet transmission is expected to fall off past roughly 3 to 6 feet, so a mask is not strictly required at 8 feet, though most ED rooms are small enough that masking on entry is the practical default",
+        "No mask is ever required for influenza",
+        "An N95 is required regardless of distance"
+      ],
+      "answer": 1,
+      "why": "Droplets are large and fall within about 3 to 6 feet, which is why the mask requirement is framed around close range rather than the whole room. Practically, ED rooms are small enough that a mask is worn for essentially any entry, but the physics of the precaution is distance-based, and influenza does not require an N95.",
+      "lesson": "ed-safety-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-safety-q083",
+      "q": "You watch a colleague don PPE for a contact precautions room in this order: gown, gloves, hand hygiene, mask, eye protection. What is the error?",
+      "choices": [
+        "Nothing, this order is acceptable",
+        "Eye protection should go on before the mask",
+        "Hand hygiene must come first, before the gown, not after gloving; and gloves must go on last, over the gown cuff, not before the mask",
+        "The gown should go on last"
+      ],
+      "answer": 2,
+      "why": "Correct donning starts with hand hygiene and ends with gloves pulled over the gown cuff to seal the wrist. Doing hand hygiene after gloving defeats the point, and gloving before the mask and eye protection is out of the required sequence.",
+      "lesson": "ed-safety-l03",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-safety-q084",
+      "q": "What is the purpose of a user seal check performed every time an N95 is put on?",
+      "choices": [
+        "It confirms the respirator is the correct size for annual fit testing",
+        "It replaces the need for annual fit testing",
+        "It disinfects the respirator for reuse",
+        "It checks for leaks around the edges of the respirator on that specific use, since straps and positioning vary day to day"
+      ],
+      "answer": 3,
+      "why": "A seal check is a per-use verification that today's fit is adequate, done by covering the respirator and exhaling to feel for leaks. It does not replace the model-and-size-specific annual fit test, and it has nothing to do with sizing confirmation or disinfection.",
+      "lesson": "ed-safety-l03",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-safety-q085",
+      "q": "A staff member with a full beard is assigned to a suspected TB patient's room. What is required?",
+      "choices": [
+        "A powered air-purifying respirator instead of an N95, since facial hair crossing the seal breaks it",
+        "An N95 with extra tightening of the straps",
+        "Shaving is required before entering, with no alternative",
+        "A surgical mask is an acceptable substitute"
+      ],
+      "answer": 0,
+      "why": "Facial hair that crosses the seal line breaks an N95's fit no matter how tight the straps are pulled, so a PAPR, which does not rely on a facial seal, is the correct alternative. A surgical mask does not filter airborne particles at all.",
+      "lesson": "ed-safety-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-safety-q086",
+      "q": "A tech is about to hand a used, uncapped needle across the room to a colleague who will dispose of it. What is the correct alternative?",
+      "choices": [
+        "Cap the needle first, then hand it over",
+        "The tech who used the sharp disposes of it herself, walking it to the container rather than handing it to anyone",
+        "Set it down on a tray for the colleague to pick up whenever convenient",
+        "Toss it gently across the room to avoid direct contact"
+      ],
+      "answer": 1,
+      "why": "The person who used a sharp disposes of it themselves; handing it off, tossing it, or leaving it on a surface all create an avoidable stick risk for someone else. Recapping is separately prohibited because it causes many needlesticks on its own.",
+      "lesson": "ed-safety-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-safety-q087",
+      "q": "A tech is stuck by a needle used on a patient with unknown hepatitis B status. The tech completed the vaccine series years ago but never had a titer checked. What generally happens next?",
+      "choices": [
+        "Automatic hepatitis B immune globulin regardless of vaccination history",
+        "No action is taken since the series was completed",
+        "Immunity status is checked, since documented immunity from a completed series with a known adequate response generally means no action is needed, while an unconfirmed response may prompt globulin and vaccine",
+        "A 28-day antiviral course is started"
+      ],
+      "answer": 2,
+      "why": "The determining factor is documented immunity, not simply having completed the series; an unconfirmed response is treated more cautiously with immune globulin and vaccine. A 28-day course is the HIV regimen, not the hepatitis B approach, and immune globulin is not automatic for anyone with a known adequate response.",
+      "lesson": "ed-safety-l04",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-safety-q088",
+      "q": "What is the outer time limit for hepatitis B immune globulin after a needlestick in a non-immune worker?",
+      "choices": [
+        "72 hours",
+        "2 hours",
+        "28 days",
+        "7 days"
+      ],
+      "answer": 3,
+      "why": "Seven days is the outer limit for hepatitis B immune globulin, ideally given within 24 hours. The 72-hour and 2-hour figures belong to HIV prophylaxis, and 28 days is the length of the HIV regimen, not a hepatitis B deadline.",
+      "lesson": "ed-safety-l04",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-safety-q089",
+      "q": "A time-out is underway before a procedure. A tech in the room notices the consent form lists a different procedure than what's being discussed. What should she do?",
+      "choices": [
+        "Speak up immediately; anyone in the room can stop a time-out and this is exactly the kind of mismatch it exists to catch",
+        "Wait until the time-out finishes since only the provider can raise concerns",
+        "Say nothing since she is not the one performing the procedure",
+        "Mention it quietly to another tech instead of the team"
+      ],
+      "answer": 0,
+      "why": "A time-out is designed so that anyone present can stop it over exactly this kind of discrepancy, and a mismatched consent form is the type of error it exists to catch before it happens. Waiting or deferring to someone else defeats the purpose of having every participant empowered to speak.",
+      "lesson": "ed-safety-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-safety-q090",
+      "q": "After a near-miss medication mix-up that never reached the patient, a tech wants to note in the patient's chart that an incident report was filed. What is correct?",
+      "choices": [
+        "Document it in the chart exactly that way",
+        "Chart only the clinical facts; the fact that an incident report was filed should never appear in the medical record, since the report is a separate system-improvement document",
+        "Do not file a report since no harm occurred",
+        "Wait until the end of shift to decide whether documentation is needed"
+      ],
+      "answer": 1,
+      "why": "Incident reports exist outside the medical record specifically so people report honestly for system learning; noting that one was filed in the chart blurs that separation. Near misses are reported precisely because they reveal a flaw before it reaches a patient.",
+      "lesson": "ed-safety-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-safety-q091",
+      "q": "A patient's wristband is purple. What does this typically indicate, and what should a tech remember about wristband colors generally?",
+      "choices": [
+        "Latex allergy; colors are standardized nationally",
+        "Fall risk; colors never vary between hospitals",
+        "Do not resuscitate, in many hospitals' convention; but since colors vary by facility, the printed words should always be checked rather than relying on color alone",
+        "Restricted extremity; verified only by asking the patient"
+      ],
+      "answer": 2,
+      "why": "Purple commonly signals a DNR status, but because band colors are not universal across every hospital, the safe habit is reading the printed text rather than trusting color memory from a previous job or training site.",
+      "lesson": "ed-safety-l05",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-safety-q092",
+      "q": "What are the two identifiers used to confirm a patient's identity before any task?",
+      "choices": [
+        "Room number and diagnosis",
+        "Wristband color and bed number",
+        "Physical description and chief complaint",
+        "Full name and date of birth, checked against the armband and the order or label"
+      ],
+      "answer": 3,
+      "why": "Full name and date of birth checked against the armband and label is the standard, because room numbers, appearance, and even a patient's own confirmation of a stated name are all unreliable in a sick, confused, or hard-of-hearing patient.",
+      "lesson": "ed-safety-l05",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-safety-q093",
+      "q": "A tech alone tries to reposition a 180-pound patient up in bed by lifting under the arms because no slide sheet is immediately at hand. What should have happened instead?",
+      "choices": [
+        "Get a slide sheet or additional help before attempting the move, since manual lifting anywhere near this weight far exceeds the roughly 35-pound safe lift limit",
+        "Proceed carefully using proper knee bend",
+        "Ask the patient to help by pulling on the side rail",
+        "Use a gait belt instead"
+      ],
+      "answer": 0,
+      "why": "The 35-pound figure is the ceiling for a safe manual lift under ideal conditions, so a 180-pound reposition calls for equipment or extra staff regardless of technique. A gait belt is for ambulation, not bed repositioning, and pulling on a rail can dislodge it.",
+      "lesson": "ed-safety-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-safety-q094",
+      "q": "A patient six weeks post posterior hip replacement bends forward at the waist to pick up a dropped phone from the floor. What precaution has been violated?",
+      "choices": [
+        "Spine precautions",
+        "Hip precautions, specifically flexing the hip past 90 degrees, which risks dislocating the new joint",
+        "Fall precautions only",
+        "No precaution is violated since the patient is ambulatory"
+      ],
+      "answer": 1,
+      "why": "Posterior hip precautions prohibit flexing the hip past 90 degrees, and bending forward from standing to reach the floor does exactly that, risking dislocation. This is unrelated to spine precautions, which govern a different injury pattern entirely.",
+      "lesson": "ed-safety-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-safety-q095",
+      "q": "An M cylinder reads 1500 psi and a patient needs 8 L/min oxygen for a CT trip estimated at 60 minutes. Using the tank constant of 1.56 for an M cylinder, is the tank adequate?",
+      "choices": [
+        "No, only about 40 minutes",
+        "Yes, about 100 minutes",
+        "Yes, about 253 minutes, more than enough",
+        "Cannot be calculated without the tank's physical size"
+      ],
+      "answer": 2,
+      "why": "(1500 minus 200) equals 1300, times 1.56 equals 2028, divided by 8 equals about 253 minutes, comfortably covering a 60-minute trip. The tank constant already accounts for cylinder volume, so no additional size information is needed.",
+      "lesson": "ed-safety-l06",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-safety-q096",
+      "q": "Which restraint order type is prohibited under federal rules?",
+      "choices": [
+        "A time-limited 4-hour order for an adult in behavioral restraint",
+        "A daily-renewed order for non-violent medical restraint",
+        "An order following a face-to-face evaluation within 1 hour",
+        "A PRN or standing order for restraint, ordered in advance or as needed"
+      ],
+      "answer": 3,
+      "why": "PRN and standing restraint orders are explicitly prohibited because each restraint episode requires its own assessment and order; the other options describe compliant, properly time-limited orders.",
+      "lesson": "ed-safety-l07",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-safety-q097",
+      "q": "A nurse offers a very agitated patient an oral medication for anxiety before restraint is considered, and the patient accepts it. What rung of the de-escalation ladder does this represent?",
+      "choices": [
+        "Voluntary medication, one step below physical restraint on the de-escalation ladder",
+        "Chemical restraint, which is the same as physical restraint",
+        "Environmental modification",
+        "Verbal de-escalation"
+      ],
+      "answer": 0,
+      "why": "Medication offered and accepted by the patient is the voluntary medication rung, distinct from chemical restraint, which is medication given specifically to control behavior rather than offered and accepted. It sits just before physical restraint on the ladder, after environmental and verbal steps have been tried.",
+      "lesson": "ed-safety-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-safety-q098",
+      "q": "A patient in four-point restraints is due for a 15-minute check. The tech is tied up with another patient and the check happens 25 minutes late. What is the concern?",
+      "choices": [
+        "None, as long as the patient looked fine at the last check",
+        "A gap between checks is exactly what a reviewer would flag, since it suggests nobody was actively monitoring circulation, skin, and airway during that window",
+        "The order automatically expires when a check is late",
+        "Only the face-to-face evaluation has a strict timing requirement"
+      ],
+      "answer": 1,
+      "why": "The 15-minute interval exists because restraint complications like impaired circulation or airway compromise can develop quickly, so a documented gap is read as a period nobody was watching, not a minor scheduling slip.",
+      "lesson": "ed-safety-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-safety-q099",
+      "q": "An agitated patient is escalating and a nurse says, 'Calm down or we'll have to restrain you.' What is the problem with this approach?",
+      "choices": [
+        "Nothing, clear limits are appropriate",
+        "Restraint should have been applied immediately instead of warning first",
+        "Threatening restraint as a consequence skips the de-escalation ladder's earlier, less restrictive steps and tends to escalate rather than calm an already agitated person",
+        "The patient should have been given medication first regardless of consent"
+      ],
+      "answer": 2,
+      "why": "Effective limit-setting is stated plainly without functioning as a threat, and jumping to the threat of restraint bypasses the environmental, basic-needs, and verbal steps that usually work first, often provoking further escalation instead.",
+      "lesson": "ed-safety-l07",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-safety-q100",
+      "q": "What is the correct response sequence for a code silver (weapon or active shooter)?",
+      "choices": [
+        "Alert security and wait for instructions",
+        "Evacuate everyone immediately by the nearest exit regardless of the shooter's location",
+        "Lock every door in the department simultaneously",
+        "Run, hide, fight, in that order, without going looking for the situation"
+      ],
+      "answer": 3,
+      "why": "Code silver guidance is run, hide, fight in that priority order, with the explicit instruction not to go investigate. Evacuating blindly toward an unknown location, or waiting passively for instructions, does not match the guidance.",
+      "lesson": "ed-safety-l08",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-safety-q101",
+      "q": "A tech notices a patient repeatedly scanning the exits, going silent after being agitated moments earlier, and clenching his jaw. What does this combination suggest?",
+      "choices": [
+        "Early warning signs of escalating violence that warrant increased distance, a second staff member present, and early notification of security",
+        "Normal anxiety that requires no action",
+        "Signs specific to a medical emergency requiring immediate vitals",
+        "Signs that the patient is about to fall asleep"
+      ],
+      "answer": 0,
+      "why": "Scanning exits, sudden silence after agitation, and jaw clenching are recognized pre-violence warning signs, and the correct response is proactive positioning and calling for backup before, not after, an incident occurs.",
+      "lesson": "ed-safety-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-safety-q102",
+      "q": "During a fire response, who decides whether to close an oxygen zone valve?",
+      "choices": [
+        "Any staff member who smells smoke",
+        "Only the person running the response, because closing the valve cuts oxygen to every patient behind it, including anyone on a ventilator",
+        "The first person to reach the valve",
+        "It is closed automatically by an alarm system"
+      ],
+      "answer": 1,
+      "why": "Closing a zone valve is a decision with consequences for every patient on piped oxygen in that section, so it is restricted to the person coordinating the overall response rather than made independently by whoever is nearby.",
+      "lesson": "ed-safety-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-safety-q103",
+      "q": "A staff member is assigned to stay with family during resuscitation and narrate what is happening. A family member asks a detailed clinical question about the medication being given. What is the appropriate response?",
+      "choices": [
+        "Give a full clinical explanation of the drug's mechanism",
+        "Say nothing and just stand there",
+        "Give a plain, simple description of what is happening in the moment, without detailed clinical explanation, since the role is narration and presence, not clinical detail",
+        "Tell the family to leave the room since questions aren't allowed"
+      ],
+      "answer": 2,
+      "why": "The designated support role provides plain narration and presence, not a clinical briefing; that boundary keeps the family informed without pulling the role beyond what it is meant to do or delaying care to answer technical questions.",
+      "lesson": "ed-safety-l09",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-safety-q104",
+      "q": "Which phrase should be avoided when telling a family that a patient has died?",
+      "choices": [
+        "'I'm so sorry'",
+        "'He died'",
+        "Sitting down before speaking",
+        "'At least she didn't suffer'"
+      ],
+      "answer": 3,
+      "why": "'At least' statements minimize the family's loss and are routinely experienced as dismissive, unlike plain, honest language and simple presence, which are the recommended approach.",
+      "lesson": "ed-safety-l09",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-safety-q105",
+      "q": "A family wants to view the body of a patient who died in a suspected overdose, a medical examiner case. What preparation is appropriate?",
+      "choices": [
+        "Straighten the sheets and dim the lights while leaving all tubes and lines in place, and tell the family beforehand what they will see",
+        "Remove all lines and tubes so the family isn't distressed",
+        "Wash the body before the viewing",
+        "Delay the viewing indefinitely until the medical examiner releases the body from the department"
+      ],
+      "answer": 0,
+      "why": "Room preparation can happen within the limits of a medical examiner case, meaning nothing is removed or washed, but the space can still be made presentable and the family prepared for what they will see. Removing lines or washing the body destroys potential evidence.",
+      "lesson": "ed-safety-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-safety-q106",
+      "q": "A department is short on single rooms and needs to isolate two patients, one with MRSA and one with C. difficile. Can they share a room?",
+      "choices": [
+        "Yes, since both require contact precautions",
+        "No, cohorting requires the same organism; mixing MRSA and C. diff would expose each patient to an organism they don't already have",
+        "Yes, as long as the room is cleaned once daily",
+        "Yes, if a curtain separates them"
+      ],
+      "answer": 1,
+      "why": "Sharing a precaution category is not the same as sharing an organism; cohorting only works between patients carrying the identical pathogen, otherwise each patient risks acquiring the other's infection.",
+      "lesson": "ed-safety-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-safety-q107",
+      "q": "Which cleaning product is appropriate as the sole disinfectant in a room that held a patient with Candida auris?",
+      "choices": [
+        "A standard quaternary ammonium wipe",
+        "70 percent alcohol",
+        "An EPA List P product rated specifically against Candida auris",
+        "Soap and water alone with no registered disinfectant"
+      ],
+      "answer": 2,
+      "why": "Candida auris resists many common disinfectants including standard quaternary products, which is why EPA List P products, specifically rated against it, are required rather than a general-purpose wipe.",
+      "lesson": "ed-safety-l10",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-safety-q108",
+      "q": "Where does the isolation cart for a precaution room belong?",
+      "choices": [
+        "Inside the room, near the door",
+        "In the medication room",
+        "At the nurses station only",
+        "Outside the room, since anything inside a precaution room is considered contaminated"
+      ],
+      "answer": 3,
+      "why": "The cart stocks clean PPE, so it stays outside the room; placing it inside would expose the supplies to the same contamination the precautions are meant to guard against.",
+      "lesson": "ed-safety-l10",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-safety-q109",
+      "q": "A staff member without documented immunity is exposed to a confirmed varicella patient and receives VariZIG because she is pregnant. When does her work exclusion end?",
+      "choices": [
+        "Day 28 after exposure, since VariZIG extends the exclusion period compared to vaccine alone",
+        "Day 21, the same as if she had received vaccine",
+        "Immediately, since VariZIG prevents infection entirely",
+        "Day 14"
+      ],
+      "answer": 0,
+      "why": "VariZIG stretches the incubation window, so the exclusion period extends to day 28 rather than the day 21 endpoint used when vaccine was given instead. It does not guarantee prevention, so exclusion still applies.",
+      "lesson": "ed-safety-l11",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-safety-q110",
+      "q": "A tech was in the room during a rapid intubation of a patient later confirmed to have meningococcal meningitis, and directly handled airway secretions without a mask. What is indicated?",
+      "choices": [
+        "No action needed since only close contacts outside health care settings need prophylaxis",
+        "Prophylaxis, since direct exposure to respiratory secretions during airway handling is exactly the exposure that qualifies, unlike simply being present in the room masked",
+        "A repeat test in 8 to 10 weeks, similar to TB",
+        "Exclusion from work for 21 days"
+      ],
+      "answer": 1,
+      "why": "Meningococcal prophylaxis is reserved for direct, unprotected exposure to respiratory secretions such as during intubation or suctioning, which this scenario describes; merely being present in a masked capacity would not qualify.",
+      "lesson": "ed-safety-l11",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-safety-q111",
+      "q": "An unvaccinated tech is exposed to a confirmed measles case and is given MMR 48 hours later. Is she still excluded from work?",
+      "choices": [
+        "No, since she received the vaccine promptly",
+        "No, exclusion only applies if vaccine is not given at all",
+        "Yes, exclusion still runs from day 5 after exposure through day 21 after the last exposure regardless of whether vaccine was given, because vaccine does not guarantee immunity in time",
+        "Yes, but only for 72 hours"
+      ],
+      "answer": 2,
+      "why": "Post-exposure MMR does not eliminate the exclusion requirement for non-immune staff; the day 5 through day 21 window applies whether or not vaccine was given, since it cannot be assumed to confer immunity before the incubation period ends.",
+      "lesson": "ed-safety-l11",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-safety-q112",
+      "q": "What determines whether a restraint is classified as violent/behavioral versus non-violent/medical?",
+      "choices": [
+        "The type of device used",
+        "The patient's age",
+        "Who applied it",
+        "The reason it was applied, protecting a medical device or treatment versus managing dangerous behavior"
+      ],
+      "answer": 3,
+      "why": "The same physical device is governed by entirely different rulebooks depending on the reason for its use; a soft wrist restraint protecting an IV is non-violent, while the same restraint controlling assaultive behavior is behavioral.",
+      "lesson": "ed-safety-l12",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-safety-q113",
+      "q": "A confused, delirious patient is fitted with a lap belt she cannot release herself, applied to prevent her from climbing out of a wheelchair. How should this be classified?",
+      "choices": [
+        "A restraint, since she cannot remove it herself; generally managed under non-violent rules because its purpose is fall prevention rather than controlling violence, though it still requires an order and monitoring",
+        "Not a restraint since it's for fall prevention",
+        "Automatically a behavioral restraint requiring a 1-hour face-to-face evaluation",
+        "A fall precaution a tech can apply on her own judgment without an order"
+      ],
+      "answer": 0,
+      "why": "The test for a restraint is whether the patient can freely remove it, not the underlying intent; a lap belt she cannot release is a restraint requiring an order regardless of the fall-prevention purpose, though it typically falls under the non-violent rather than behavioral rules.",
+      "lesson": "ed-safety-l12",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-safety-q114",
+      "q": "A restraint chart entry reads: 'Patient combative, restraints applied for safety per protocol.' What is missing that a reviewer would flag?",
+      "choices": [
+        "The time restraints were removed",
+        "Specific, observable behavior and the alternatives tried before restraint, since vague adjectives like 'combative' and citing 'protocol' document nothing concrete",
+        "The name of the ordering provider",
+        "Nothing; this entry is acceptable"
+      ],
+      "answer": 1,
+      "why": "A defensible note describes exactly what the patient did and what less restrictive steps were attempted first, with times; generic language like 'combative' or 'per protocol' fails to establish that restraint was truly the last resort.",
+      "lesson": "ed-safety-l12",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-safety-q115",
+      "q": "A tech scores a patient using STAMP and notes staring, a flat tone, mumbling, and pacing, but no anxiety. What is the appropriate response?",
+      "choices": [
+        "No action needed since not all five items are present",
+        "Wait for physical aggression before acting",
+        "Treat this as a meaningful warning pattern worth flagging to the team, since STAMP is meant to turn a private observation into a shared plan rather than requiring every item to be present",
+        "Only a psychiatric provider can act on STAMP observations"
+      ],
+      "answer": 2,
+      "why": "STAMP works as an early-warning aid rather than a strict scoring threshold; multiple concerning signs, even without every item present, are worth communicating to the team before things escalate further, not held until physical aggression occurs.",
+      "lesson": "ed-safety-l13",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-safety-q116",
+      "q": "Which of these lists the actual components of the STAMP acronym?",
+      "choices": [
+        "Score, Threat, Alarm, Monitor, Protect",
+        "Sedation, Temperature, Agitation, Medication, Pulse",
+        "Search, Triage, Assess, Manage, Prevent",
+        "Staring, Tone of voice, Anxiety, Mumbling, Pacing"
+      ],
+      "answer": 3,
+      "why": "STAMP is a simple memory aid for observable pre-violence behaviors: staring, tone of voice, anxiety, mumbling, and pacing, distinct from the Broset checklist's six items.",
+      "lesson": "ed-safety-l13",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-safety-q117",
+      "q": "A tech is scratched by a patient during a struggle, breaking the skin slightly. She wants to know whether both an incident report and a separate employee injury report are needed.",
+      "choices": [
+        "Yes, both are needed since they are separate forms feeding different systems, even for a minor injury",
+        "Only the incident report is needed",
+        "Only the employee injury report is needed",
+        "Neither is needed since the injury is minor"
+      ],
+      "answer": 0,
+      "why": "The incident report and the employee injury report serve different purposes and different systems, and both apply regardless of how minor the injury seems, since minor injuries still need medical evaluation, workers' compensation eligibility, and OSHA log consideration.",
+      "lesson": "ed-safety-l13",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-safety-q118",
+      "q": "A capable, alert adult patient decides to leave the ED against medical advice after being informed of the risks and signs a form. How does this differ from elopement?",
+      "choices": [
+        "There is no difference; both are treated identically",
+        "Leaving against medical advice is a documented, capable choice by a patient not considered at-risk, while elopement is an at-risk patient leaving without staff knowledge or consent",
+        "Elopement only applies to pediatric patients",
+        "AMA only applies to psychiatric holds"
+      ],
+      "answer": 1,
+      "why": "The key distinction is capacity and awareness: an AMA departure is a documented, informed decision by someone capable of making it, while elopement describes an at-risk patient, such as one with dementia, intoxication, or a psychiatric hold, leaving unnoticed.",
+      "lesson": "ed-safety-l14",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-safety-q119",
+      "q": "A central line is placed and a guidewire is briefly misplaced during the procedure, but the team believes it was removed with the rest of the kit. What category of error does an undocumented, potentially retained guidewire represent?",
+      "choices": [
+        "A medication error",
+        "A wrong-patient error",
+        "A retained item, the same category as a retained surgical sponge, requiring the same counting and documentation discipline to be certain it left with the patient rather than in them",
+        "An elopement"
+      ],
+      "answer": 2,
+      "why": "Anything placed during a procedure that isn't accounted for on the way out, including a central line guidewire, falls into the retained item category, which is why counting and documenting what goes in matters as much in the ED as in an operating room.",
+      "lesson": "ed-safety-l14",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-safety-q120",
+      "q": "What is a 'high-alert medication'?",
+      "choices": [
+        "Any medication requiring a pharmacist's approval",
+        "A medication given only by IV",
+        "A medication with a short shelf life",
+        "A medication, such as insulin, opioids, anticoagulants, or concentrated potassium chloride, that causes disproportionate harm when an error occurs"
+      ],
+      "answer": 3,
+      "why": "High-alert medications are defined by the severity of harm from an error, not by route or approval process, which is why insulin, opioids, anticoagulants, and concentrated electrolytes get extra safeguards like tall-man lettering for look-alike names.",
+      "lesson": "ed-safety-l14",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-safety-q121",
+      "q": "During a working fire two compartments away, a tech considers moving her non-ambulatory patient toward the stairwell on her own initiative. What is the correct approach?",
+      "choices": [
+        "Hold in place behind closed doors unless her patient is in immediate danger, since evacuation decisions come from the incident commander under the defend-in-place strategy",
+        "Move the patient immediately regardless of the fire's location",
+        "Use the elevator since it's faster for a non-ambulatory patient",
+        "Wait for a written order before closing any doors"
+      ],
+      "answer": 0,
+      "why": "Defend in place means the default response to a fire elsewhere in the building is closing doors and holding, with evacuation ordered by the incident commander; moving a non-ambulatory patient alone and prematurely adds risk without authorization, and elevators are never used.",
+      "lesson": "ed-safety-l15",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-safety-q122",
+      "q": "A hospital's incident command structure assigns a role responsible for tracking patients, resources, and writing the operational plan during a disaster. Which HICS section is this?",
+      "choices": [
+        "Operations",
+        "Planning, which owns tracking the situation, patients, and resources and writing the plan",
+        "Logistics",
+        "Finance and administration"
+      ],
+      "answer": 1,
+      "why": "Planning is the section responsible for tracking and documenting the evolving situation and resources, distinct from Operations which does the actual clinical and security work, Logistics which handles supplies and equipment, and Finance which handles cost and claims.",
+      "lesson": "ed-safety-l15",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-safety-q123",
+      "q": "A supervisor during a mass casualty event finds herself directly overseeing fourteen staff members with no sub-team structure. What HICS principle is being violated?",
+      "choices": [
+        "Job action sheets",
+        "Plain language communication",
+        "Span of control, which should be about 3 to 7 people, ideally around 5, meaning the structure needs another layer of supervision",
+        "The labor pool concept"
+      ],
+      "answer": 2,
+      "why": "HICS is built around a manageable span of control, roughly 3 to 7 direct reports; fourteen people under one supervisor signals the organizational structure needs another tier, not that the supervisor needs to work harder.",
+      "lesson": "ed-safety-l15",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-safety-q124",
+      "q": "What is the annual occupational whole-body radiation dose limit for a staff member who has not declared a pregnancy?",
+      "choices": [
+        "5 mSv",
+        "0.5 mSv",
+        "10 mSv",
+        "50 mSv"
+      ],
+      "answer": 3,
+      "why": "The standard occupational limit is 50 mSv per year; the 5 mSv figure applies only after a pregnancy is voluntarily declared in writing, which triggers the lower gestational limit and a fetal badge.",
+      "lesson": "ed-safety-l16",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-safety-q125",
+      "q": "A tech's dosimeter badge is found clipped underneath her lead apron instead of at the collar outside it. What is the problem?",
+      "choices": [
+        "Worn under the apron, the badge measures a falsely low dose since it is shielded, missing what actually reaches her unshielded thyroid and eyes",
+        "Nothing, as long as it's worn somewhere on the body",
+        "The apron should be removed for badge readings",
+        "Badges only need to be worn during fluoroscopy, not portable films"
+      ],
+      "answer": 0,
+      "why": "The badge is meant to represent exposure to unshielded areas like the thyroid and eyes, so it belongs at the collar outside the apron; worn underneath, it reads an artificially low dose that misrepresents her actual exposure.",
+      "lesson": "ed-safety-l16",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-safety-q126",
+      "q": "A laser procedure is being performed and a tech who was fitted with protective eyewear for a different laser wavelength last month wants to reuse those glasses today. What is correct?",
+      "choices": [
+        "Reusing them is fine since laser eyewear is universal",
+        "Eyewear must be rated for the specific wavelength of the laser in use today; glasses rated for a different laser do not provide protection here",
+        "Only the patient needs wavelength-specific eyewear",
+        "Any sunglasses provide adequate protection"
+      ],
+      "answer": 1,
+      "why": "Laser eyewear protects against a specific wavelength range, so glasses rated for one laser offer no guaranteed protection against a different one; everyone in the room, patient included, needs eyewear matched to the laser actually being used.",
+      "lesson": "ed-safety-l16",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-safety-q127",
+      "q": "A tech drinks a cup of coffee at 0300 during a night shift and plans to sleep starting at 0800 after her drive home. Given caffeine's roughly 5-hour half-life, what is the concern?",
+      "choices": [
+        "None, since the coffee was consumed hours before the drive",
+        "Caffeine has no effect on sleep onset",
+        "A meaningful amount of caffeine, roughly a quarter of the original dose, is still active in her system at 0800, which can interfere with falling asleep",
+        "Caffeine's effects disappear completely after exactly one half-life"
+      ],
+      "answer": 2,
+      "why": "With a roughly 5-hour half-life, caffeine from 0300 is only about half gone by 0800 and still meaningfully active by the time she's trying to sleep, which is why the recommendation is to stop caffeine about 6 hours before intended sleep, not simply avoid it right before bed.",
+      "lesson": "ed-safety-l17",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-safety-q128",
+      "q": "Which nap duration is recommended to avoid interrupting sleep at the deepest stage?",
+      "choices": [
+        "60 minutes",
+        "45 minutes",
+        "30 minutes",
+        "20 minutes, short enough to avoid deep sleep, or a full 90 minutes to complete a sleep cycle"
+      ],
+      "answer": 3,
+      "why": "The recommended nap lengths are either short, around 20 minutes, staying above deep sleep, or a full 90-minute cycle; lengths in between, like 45 minutes, tend to wake someone from slow-wave sleep and leave them groggy.",
+      "lesson": "ed-safety-l17",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-safety-q129",
+      "q": "After a difficult code, a manager schedules a single mandatory group session requiring everyone to describe their feelings immediately afterward, and calls it complete once it's done. What is the concern with this approach?",
+      "choices": [
+        "Mandatory single-session psychological debriefing has not been shown to prevent PTSD and may make some people worse, so ongoing peer support and optional follow-up matter more than treating one session as sufficient",
+        "No concern, debriefing is always beneficial regardless of format",
+        "The session should have happened days later instead of immediately",
+        "Group format is the only problem; individual mandatory sessions would be fine"
+      ],
+      "answer": 0,
+      "why": "Evidence specifically does not support mandatory single-session psychological debriefing as protective against PTSD, and forcing everyone through one session and calling it finished misses the value of peer support and follow-up over time.",
+      "lesson": "ed-safety-l17",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-safety-q130",
+      "q": "A family asks when they can take a deceased patient's body to the funeral home. Who controls that decision in a medical examiner case?",
+      "choices": [
+        "The attending physician who pronounced the death",
+        "The medical examiner, since release of the body is a separate act from pronouncement and from certifying the cause of death",
+        "The hospital administrator on call",
+        "The family, once the death certificate is signed"
+      ],
+      "answer": 1,
+      "why": "Pronouncement, certification of the cause of death, and release of the body are three distinct acts; in a medical examiner case, release specifically belongs to the medical examiner's office regardless of who pronounced or who eventually certifies.",
+      "lesson": "ed-safety-l18",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-safety-q131",
+      "q": "A patient's bloodied sheets are being collected after a suspicious death. Should they be saved along with the clothing?",
+      "choices": [
+        "No, only clothing needs to be preserved",
+        "Sheets should be laundered normally since they aren't evidence",
+        "Yes, sheets carry trace evidence too and should be kept, following the same paper-bagging and chain-of-custody principles as clothing",
+        "Sheets should be discarded to reduce biohazard risk"
+      ],
+      "answer": 2,
+      "why": "Trace evidence isn't limited to clothing; sheets the patient was lying on are kept for the same reason, using the same documentation and paper-bagging approach rather than being laundered or thrown away.",
+      "lesson": "ed-safety-l18",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-safety-q132",
+      "q": "In New Jersey, who is required to report a reasonable suspicion of child abuse?",
+      "choices": [
+        "Only physicians and nurses",
+        "Only the charge nurse or supervisor on duty",
+        "Only social workers assigned to the case",
+        "Every person, since New Jersey has universal mandatory reporting with no exception for reporting through a supervisor instead"
+      ],
+      "answer": 3,
+      "why": "New Jersey's mandatory reporting law applies to every person, not a specific licensed role, and the duty is personal, meaning it cannot be satisfied by simply telling a supervisor and assuming they will report it.",
+      "lesson": "ed-safety-l18",
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,1210 @@
+{
+  "schema": 1,
+  "extends": "ed-monitoring",
+  "checks": {
+    "ed-monitoring-l01": [
+      {
+        "q": "Which parameter's number can be used as a mechanical cross-check against an ECG-derived heart rate that might be counting artifact?",
+        "choices": [
+          "Respiratory rate",
+          "The pulse rate from the SpO2 pleth waveform",
+          "NIBP mean pressure",
+          "Temperature"
+        ],
+        "answer": 1,
+        "why": "The SpO2 sensor reads an actual pulsatile flow at the finger, an independent mechanical signal, so it can confirm or contradict the ECG-derived rate. The others don't measure heart rate at all."
+      },
+      {
+        "q": "The chart shows NIBP 118/76 from 12 minutes ago. The patient now looks pale and diaphoretic. What should you do?",
+        "choices": [
+          "Trust the charted number since 12 minutes is recent",
+          "Wait for the next scheduled automatic cycle",
+          "Manually cycle the cuff now and reassess",
+          "Assume the SpO2 will catch the change first"
+        ],
+        "answer": 2,
+        "why": "NIBP is a snapshot, not continuous. A changed clinical picture invalidates an old number; recheck it by hand immediately rather than waiting or trusting a stale value."
+      }
+    ],
+    "ed-monitoring-l02": [
+      {
+        "q": "A patient's heart rate is 132 from pain, above the default high-rate alarm limit. What is the correct response?",
+        "choices": [
+          "Silence the alarm permanently",
+          "Treat the underlying pain and let the alarm reflect the real, abnormal rate",
+          "Raise the high-rate limit so it stops alarming",
+          "Turn the alarm volume down"
+        ],
+        "answer": 1,
+        "why": "The alarm is accurate here — the rate really is elevated. Widening the limit or silencing hides a true abnormal finding instead of addressing its cause."
+      },
+      {
+        "q": "Which of these is a legitimate reason to widen an alarm limit for a specific patient?",
+        "choices": [
+          "The alarm is annoying nearby staff",
+          "A documented baseline, such as chronic rate-controlled atrial fibrillation in the 90s, makes the default limit wrong for this patient",
+          "The same alarm has fired twice in ten minutes",
+          "The patient is currently asleep"
+        ],
+        "answer": 1,
+        "why": "Limits are adjusted only for a patient's real, documented physiology, per protocol — never for staff convenience or alarm frequency alone."
+      }
+    ],
+    "ed-monitoring-l03": [
+      {
+        "q": "A patient scheduled for a pulse ox reading has dark nail polish on the only accessible finger. What should you do?",
+        "choices": [
+          "Place the probe there and treat the reading as reliable",
+          "Recognize the reading may be falsely low or unreadable, and use an unpolished finger or the ear instead",
+          "Increase supplemental oxygen to compensate",
+          "Place two probes on adjacent fingers and average the readings"
+        ],
+        "answer": 1,
+        "why": "Dark polish absorbs light and can block or distort the sensor's signal. The fix is a different site, not compensating with oxygen or trusting a corrupted number."
+      },
+      {
+        "q": "A patient with a crush injury to the arm carrying the pulse ox probe shows SpO2 92% with a weak, irregular pleth. What do you check first?",
+        "choices": [
+          "Move the probe to an uninjured extremity or the ear and confirm the waveform is clean there",
+          "Chart 92% as an accurate value",
+          "Apply a blood pressure cuff on that same arm to boost the signal",
+          "Assume carbon monoxide poisoning"
+        ],
+        "answer": 0,
+        "why": "Local perfusion loss from the injury is corrupting the reading at that site. Moving to a site with normal perfusion and a clean waveform is the fix before trusting or acting on the number."
+      }
+    ],
+    "ed-monitoring-l04": [
+      {
+        "q": "During transport a capnography sampling line kinks. EtCO2 reads 0 with no waveform, but the patient is breathing comfortably and SpO2 is 99%. What is the likely cause?",
+        "choices": [
+          "Esophageal intubation",
+          "Cardiac arrest",
+          "A mechanical obstruction of the sampling line, not a physiologic problem",
+          "Massive pulmonary embolism"
+        ],
+        "answer": 2,
+        "why": "A flat trace with a well-appearing, well-saturating patient points to a mechanical circuit problem — most often a kinked or obstructed line — rather than a true physiologic event."
+      },
+      {
+        "q": "A sedated patient on nasal cannula oxygen has EtCO2 climbing from 40 to 58 mmHg while SpO2 stays 98%. What does this show before SpO2 changes at all?",
+        "choices": [
+          "Nothing concerning, since SpO2 is normal",
+          "Early hypoventilation — EtCO2 rises well before supplemental oxygen lets SpO2 fall",
+          "A capnography sensor malfunction",
+          "Metabolic alkalosis"
+        ],
+        "answer": 1,
+        "why": "Supplemental oxygen masks a falling SpO2 for minutes after breathing slows, but exhaled CO2 rises immediately, which is exactly why capnography catches hypoventilation earlier than pulse ox in this setting."
+      }
+    ],
+    "ed-monitoring-l05": [
+      {
+        "q": "An 80 kg adult needs a blood pressure and only a pediatric-sized (too small) cuff is available. What artifact should you expect?",
+        "choices": [
+          "A falsely low reading",
+          "A falsely high reading",
+          "No meaningful effect",
+          "The cuff will fail to inflate"
+        ],
+        "answer": 1,
+        "why": "A cuff bladder that is too narrow for the arm overestimates pressure, producing a falsely high reading — the opposite error from an oversized cuff."
+      },
+      {
+        "q": "A patient has a dialysis fistula in the left arm and no other access issues. Where should the blood pressure cuff go?",
+        "choices": [
+          "The left arm, since it is closest",
+          "The right arm, or a thigh if needed — never over a fistula or graft",
+          "Either arm briefly is acceptable",
+          "The ankle only, regardless of arm status"
+        ],
+        "answer": 1,
+        "why": "Cuff pressure on a fistula or graft arm can damage it or occlude flow. The unaffected arm, or a properly sized thigh cuff, is used instead, and the choice is documented."
+      }
+    ],
+    "ed-monitoring-l06": [
+      {
+        "q": "A patient's heart rate is 128 and systolic blood pressure is 118. Calculate the shock index and interpret it.",
+        "choices": [
+          "About 1.1 — elevated, suggesting possible compensated shock even though each number looks acceptable alone",
+          "About 0.9 — normal",
+          "About 1.1 — a normal finding in a patient who is simply anxious",
+          "It cannot be calculated without a respiratory rate"
+        ],
+        "answer": 0,
+        "why": "128 divided by 118 is roughly 1.1, above the 0.9 threshold that flags serious illness even when heart rate and blood pressure individually look reassuring."
+      },
+      {
+        "q": "Which combination best signals early organ hypoperfusion even while every number stays inside the alarm limits?",
+        "choices": [
+          "Warm, dry skin with brisk capillary refill",
+          "Capillary refill over 3 seconds, mottled skin, and urine output under 0.5 mL/kg/h",
+          "A single normal blood pressure reading",
+          "A patient who requests a blanket"
+        ],
+        "answer": 1,
+        "why": "Cap refill, skin findings, and urine output are direct, hands-on signs of organ perfusion that change before alarm limits are breached — exactly the kind of finding a monitor alone will miss."
+      }
+    ],
+    "ed-monitoring-l07": [
+      {
+        "q": "A patient has a temperature of 38.6C, heart rate 96, respiratory rate 24, and white blood cell count 14,000. How many SIRS criteria are met?",
+        "choices": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "answer": 3,
+        "why": "Temp over 38, HR over 90, RR over 20, and WBC over 12,000 are all met — all four SIRS criteria, well above the threshold of two used to flag concern."
+      },
+      {
+        "q": "A patient is alert and oriented with a respiratory rate of 20 and a systolic blood pressure of 92. What is the qSOFA score?",
+        "choices": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "answer": 1,
+        "why": "Only the systolic of 100 or less scores a point; respiratory rate must be 22 or more and mentation must be altered to score, neither of which applies here, giving qSOFA 1."
+      }
+    ],
+    "ed-monitoring-l08": [
+      {
+        "q": "Immediately after a shock is delivered during a code, what should happen next?",
+        "choices": [
+          "A pulse check before anything else",
+          "Chest compressions resume immediately without a pulse check",
+          "The defibrillator is charged again right away",
+          "Epinephrine is given immediately"
+        ],
+        "answer": 1,
+        "why": "Compressions resume the instant a shock is delivered — pausing to check a pulse wastes perfusion time on a rhythm that has not yet had a chance to organize."
+      },
+      {
+        "q": "What compression-to-ventilation ratio is used in adult CPR without an advanced airway in place?",
+        "choices": [
+          "15:2",
+          "30:2",
+          "5:1",
+          "Continuous compressions with a breath every 6 seconds"
+        ],
+        "answer": 1,
+        "why": "30 compressions to 2 breaths is standard for adult CPR until an advanced airway (such as an ET tube) is placed, after which compressions and ventilations become asynchronous."
+      }
+    ],
+    "ed-monitoring-l09": [
+      {
+        "q": "A restrained patient's distal circulation check is due. What must be assessed and documented?",
+        "choices": [
+          "Only that the restraint knot is secure",
+          "Skin color, temperature, and pulses distal to the restraint, checked and documented on a regular interval",
+          "Blood pressure alone",
+          "Nothing until the provider rounds"
+        ],
+        "answer": 1,
+        "why": "Restraints require ongoing distal circulation and skin checks on a set interval — the physical findings, not just knot security, are what catch a developing complication."
+      },
+      {
+        "q": "A sedated ED patient is drowsy, opening her eyes only briefly to your voice — a RASS of -1. Is this within the usual ED target range?",
+        "choices": [
+          "No, this requires immediate reversal",
+          "Yes, 0 to -2 is a typical ED target for a sedated patient",
+          "No, only a RASS of exactly 0 is acceptable",
+          "Yes, but only if the patient is intubated"
+        ],
+        "answer": 1,
+        "why": "Most ED sedation targets fall between 0 and -2, so a -1 is within the expected range and does not by itself signal a problem."
+      }
+    ],
+    "ed-monitoring-l10": [
+      {
+        "q": "A low-SpO2 alarm fires while a patient is walking to the bathroom. The pleth is clean and reads 91%, and the patient says he feels fine. What is the first step?",
+        "choices": [
+          "Silence it and move on since he feels fine",
+          "Look at the patient — assess work of breathing and mentation — before deciding what the number means",
+          "Turn off the SpO2 alarm for this patient without discussion",
+          "Assume motion artifact and disregard the number"
+        ],
+        "answer": 1,
+        "why": "The algorithm starts with the patient, not the screen. A clean waveform with a low number and reported symptoms both need direct assessment before any conclusion is reached."
+      },
+      {
+        "q": "Applying the three-question alarm algorithm in order, what comes first, second, and third?",
+        "choices": [
+          "Silence, then look at the patient, then check the waveform",
+          "Does the waveform match the number, is there a fixable mechanical cause, and if not, escalate",
+          "Escalate immediately for every alarm regardless of cause",
+          "Check the waveform, escalate, then look at the patient"
+        ],
+        "answer": 1,
+        "why": "After first looking at the patient, the sequence is: does the trace match the number, is there a mechanical fix available in thirty seconds, and if neither resolves it, escalate."
+      }
+    ],
+    "ed-monitoring-l11": [
+      {
+        "q": "Using the standard limb-lead color mnemonic, where does the white electrode go on a four- or five-lead system?",
+        "choices": [
+          "Right arm or right upper chest",
+          "Left leg or left lower abdomen",
+          "Left upper chest",
+          "Center chest at V1"
+        ],
+        "answer": 0,
+        "why": "\"White on right\" places the white electrode on the right arm or right upper chest, one anchor of the standard mnemonic used to place limb leads correctly."
+      },
+      {
+        "q": "A monitored patient's displayed rate suddenly appears to double, and the extra beats line up exactly with visible pacemaker spikes. What is the likely explanation?",
+        "choices": [
+          "A true doubling of the intrinsic heart rate",
+          "The monitor is counting each pacer spike as a separate beat along with the QRS complex",
+          "New ventricular fibrillation",
+          "Normal, accurate counting"
+        ],
+        "answer": 1,
+        "why": "Pacer spikes, like tall T waves, can be miscounted as extra complexes, artificially doubling the displayed rate — the fix is checking against a palpated pulse and adjusting counting settings per policy."
+      }
+    ],
+    "ed-monitoring-l12": [
+      {
+        "q": "A capnogram's baseline never returns to zero between breaths, sitting elevated throughout. What does this generally indicate?",
+        "choices": [
+          "Bronchospasm",
+          "Rebreathing of exhaled CO2, such as from inadequate fresh gas flow or a faulty valve",
+          "Esophageal intubation",
+          "A normal variant needing no action"
+        ],
+        "answer": 1,
+        "why": "An elevated baseline that fails to reach zero between breaths is the classic sign of rebreathing exhaled gas, usually a circuit or valve problem rather than a patient problem."
+      },
+      {
+        "q": "In a patient with falling cardiac output from shock but unchanged ventilation, what happens to EtCO2?",
+        "choices": [
+          "It rises steadily",
+          "It falls, because less blood is reaching the lungs to carry CO2 for exhalation",
+          "It stays exactly the same",
+          "It becomes erratic with no discernible pattern"
+        ],
+        "answer": 1,
+        "why": "EtCO2 depends on blood delivering CO2 to the lungs as well as on ventilation. When circulation drops while breathing continues unchanged, EtCO2 falls, reflecting the circulatory problem."
+      }
+    ],
+    "ed-monitoring-l13": [
+      {
+        "q": "A 100 kg septic patient needs the 30 mL/kg fluid bolus. How much fluid is needed, and how should it be delivered?",
+        "choices": [
+          "2000 mL through any working peripheral IV over 6 hours",
+          "3000 mL through large-bore access under a pressure bag or rapid infuser, not by gravity alone",
+          "1000 mL is the practical maximum regardless of weight",
+          "4500 mL through any peripheral line at a comfortable rate"
+        ],
+        "answer": 1,
+        "why": "30 mL/kg for a 100 kg patient is 3000 mL, and delivering that volume within the intended timeframe requires large-bore access and pressure-assisted infusion, not gravity alone."
+      },
+      {
+        "q": "At the 1-3 hour sepsis reassessment, which single finding best confirms improving perfusion beyond a repeat blood pressure alone?",
+        "choices": [
+          "A repeat temperature only",
+          "A falling lactate trend along with adequate urine output and improved perfusion signs",
+          "A normal white blood cell count",
+          "The patient's self-report of feeling better, taken alone"
+        ],
+        "answer": 1,
+        "why": "Lactate clearance combined with urine output and hands-on perfusion findings gives an objective picture of whether treatment is working, more reliable than any single number or subjective report."
+      }
+    ],
+    "ed-monitoring-l14": [
+      {
+        "q": "A patient's GCS trends from E3 V4 M5 (12) to E2 V3 M4 (9) over one hour. What does this represent, and what should happen?",
+        "choices": [
+          "Normal fluctuation that needs no action",
+          "A clinically significant decline that requires immediate reassessment and notification",
+          "An artifact of different examiners scoring differently, safe to ignore",
+          "An improvement, since fewer stimuli were needed to test him"
+        ],
+        "answer": 1,
+        "why": "A 3-point drop in GCS, especially with worsening in more than one component, is a real and urgent decline that must be reported immediately, not attributed to scoring variability."
+      },
+      {
+        "q": "Why is recording pupil size in millimeters, rather than describing it as 'normal' or 'large,' important?",
+        "choices": [
+          "It is required for billing purposes",
+          "Precise measurement lets a new asymmetry or trend be objectively detected over time",
+          "Millimeters are simply faster to write",
+          "It has no real clinical value beyond habit"
+        ],
+        "answer": 1,
+        "why": "A number lets subsequent exams be compared directly; a vague word like 'normal' cannot reveal a one- or two-millimeter change that may be the first sign of rising intracranial pressure."
+      }
+    ],
+    "ed-monitoring-l15": [
+      {
+        "q": "A patient's respiratory rate has been charted as 18 on the last three checks, though the tech has noted increasing work of breathing each time. What is the likely explanation and the risk?",
+        "choices": [
+          "The rate genuinely has not changed",
+          "The rate is being estimated or copied forward instead of counted, masking real deterioration",
+          "This confirms the patient is stable",
+          "Monitors count respiratory rate perfectly, so there is no risk here"
+        ],
+        "answer": 1,
+        "why": "An uncounted, copied-forward rate can hide a genuine trend. Respiratory rate must be actually counted, especially when other findings like increased work of breathing suggest it should be changing."
+      },
+      {
+        "q": "Which patient is showing deterioration disguised as improvement?",
+        "choices": [
+          "A febrile patient whose temperature normalizes after antipyretics and antibiotics",
+          "An anxious, wheezing asthmatic who suddenly becomes calm and quiet with a silent chest",
+          "A patient whose heart rate falls from 140 to 90 after adequate pain control",
+          "A dehydrated patient whose heart rate falls after a fluid bolus"
+        ],
+        "answer": 1,
+        "why": "A silent chest in an asthmatic who was previously wheezing loudly means too little air is moving to make a wheeze — impending respiratory failure, not calm improvement. The other options reflect genuine, expected improvement."
+      }
+    ],
+    "ed-monitoring-l16": [
+      {
+        "q": "Using the '70 plus twice the age in years' rule, what is the estimated lower limit of normal systolic blood pressure for an 8-year-old?",
+        "choices": [
+          "70 mmHg",
+          "78 mmHg",
+          "86 mmHg",
+          "90 mmHg"
+        ],
+        "answer": 2,
+        "why": "70 plus (2 times 8) equals 86 mmHg, the estimated lower limit of normal systolic pressure for a child of that age."
+      },
+      {
+        "q": "An infant is tachycardic and tachypneic but has a normal blood pressure. How should this be interpreted?",
+        "choices": [
+          "The infant is stable since the blood pressure is normal",
+          "Children compensate well and can maintain a normal blood pressure until very late, so tachycardia and tachypnea alone are taken seriously",
+          "Blood pressure is the earliest and most reliable indicator of illness in children",
+          "No action is needed until the blood pressure actually drops"
+        ],
+        "answer": 1,
+        "why": "Pediatric patients compensate effectively, so a normal blood pressure can persist even as a child deteriorates. Tachycardia and tachypnea are earlier, more reliable warning signs and should not be dismissed because the blood pressure still looks normal."
+      }
+    ],
+    "ed-monitoring-l17": [
+      {
+        "q": "A patient in recovery after procedural sedation is fully awake, moves all four limbs on command, has a blood pressure within 20 mmHg of baseline, breathes deeply and coughs freely, and maintains 94% on room air. What is her Aldrete score out of 10?",
+        "choices": [
+          "6",
+          "8",
+          "10",
+          "It cannot be scored without a formal RASS assessment"
+        ],
+        "answer": 2,
+        "why": "Each of the five Aldrete categories — activity, respiration, circulation, consciousness, and saturation — scores 2 points when fully met, and every criterion here is fully met, giving a total of 10."
+      },
+      {
+        "q": "Five minutes after a sedation procedure ends, why is this considered the highest-risk window for the patient?",
+        "choices": [
+          "Because monitoring is typically stopped at that point",
+          "Because peak drug effect can arrive once the painful stimulus that was keeping the patient aroused stops",
+          "Because the patient is usually discharged at that exact moment",
+          "Because vitals are not checked during this window"
+        ],
+        "answer": 1,
+        "why": "Procedural pain can mask a drug's full effect while it is happening. Once the stimulus ends, sedation can deepen suddenly, which is why monitoring continues closely through this window rather than easing up."
+      }
+    ],
+    "ed-monitoring-l18": [
+      {
+        "q": "Which of these is a 'softening phrase' that should be avoided in a rapid response call?",
+        "choices": [
+          "\"I need someone at the bedside now\"",
+          "\"Whenever you get a chance...\"",
+          "\"Respiratory rate rose from 18 to 28 in 40 minutes\"",
+          "\"Systolic dropped from 128 to 88\""
+        ],
+        "answer": 1,
+        "why": "Phrases like \"whenever you get a chance\" turn an urgent request into something that can be queued and delayed. Numbers and a direct, specific ask are what actually move a clinician to the bedside."
+      },
+      {
+        "q": "What must accompany a monitored patient during any transport off the unit, such as to radiology?",
+        "choices": [
+          "Nothing extra if the trip is expected to be short",
+          "A named escort, a charged transport monitor, and enough oxygen and airway equipment for the round trip",
+          "Just the wheelchair or stretcher",
+          "A note left for the receiving department to read later"
+        ],
+        "answer": 1,
+        "why": "A monitored patient needs continuous monitoring and airway readiness throughout transport, not just at the destination — an escort, working equipment, and adequate oxygen for the whole trip are required."
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "id": "ed-monitoring-q078",
+      "q": "A monitor's ECG-derived heart rate reads 140, but the patient's radial pulse counted by hand is 70. Which explanation fits best?",
+      "choices": [
+        "The monitor is double-counting a tall T wave or similar artifact as an extra beat per cycle",
+        "The radial pulse is unreliable and should be disregarded",
+        "The patient has a true rate of 140 with a weak pulse",
+        "The ECG cable needs to be replaced regardless of the rate"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "lesson": "ed-monitoring-l01",
+      "why": "A doubled displayed rate with a much lower palpated pulse is the classic pattern of electrical double-counting, not a true tachycardia. Confirming by hand is exactly how this is caught."
+    },
+    {
+      "id": "ed-monitoring-q079",
+      "q": "Which statement about the monitor's derived respiratory rate is accurate?",
+      "choices": [
+        "It directly measures airflow through the nose and mouth",
+        "It is calculated from chest impedance changes between ECG electrodes, so talking and movement can be miscounted as breaths",
+        "It is always more accurate than a manually counted rate",
+        "It cannot be displayed unless capnography is attached"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "lesson": "ed-monitoring-l01",
+      "why": "Impedance pneumography infers breathing from small changes in electrical resistance between chest electrodes, which movement and talking can mimic, producing a falsely high or erratic number."
+    },
+    {
+      "id": "ed-monitoring-q080",
+      "q": "A tech is orienting a new hire and explains why monitor colors cannot be trusted blindly. What is the best reason given?",
+      "choices": [
+        "All monitors use identical colors by federal regulation",
+        "Color only matters for the ECG waveform",
+        "Color conventions vary by manufacturer and can be reconfigured, so the actual unit's screen must be learned directly",
+        "Colors change automatically based on patient acuity"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "lesson": "ed-monitoring-l01",
+      "why": "There is a common convention, but it is not universal or fixed — vendors and departments vary it, so relying on a memorized color rule instead of the actual screen in front of you is a trap."
+    },
+    {
+      "id": "ed-monitoring-q081",
+      "q": "A tech silences a repeatedly firing SpO2 alarm from the central nursing station without walking to the room. What is wrong with this action?",
+      "choices": [
+        "Nothing, silencing from the station saves time",
+        "It is fine as long as it is documented afterward",
+        "It is only a problem if the patient is unstable",
+        "Silencing should only happen at the bedside, after seeing the patient and identifying the cause"
+      ],
+      "answer": 3,
+      "difficulty": 2,
+      "lesson": "ed-monitoring-l02",
+      "why": "Silencing an alarm without seeing the patient is making a clinical judgment about someone you have not assessed. The rule is bedside first, silence second."
+    },
+    {
+      "id": "ed-monitoring-q082",
+      "q": "A pediatric patient's heart rate of 130 is well above the adult default high-rate alarm limit. What is the correct interpretation?",
+      "choices": [
+        "This is likely a normal rate for a young child, and the limit should be adjusted to the correct pediatric range rather than silenced repeatedly",
+        "The child is in a dangerous tachycardia regardless of age",
+        "The alarm should be permanently disabled for pediatric patients",
+        "Default adult limits are always appropriate for children"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "lesson": "ed-monitoring-l02",
+      "why": "Default limits are calibrated for adults and are wrong for children by design. The fix is setting age-appropriate limits for this patient, not ignoring or disabling the alarm."
+    },
+    {
+      "id": "ed-monitoring-q083",
+      "q": "Over a busy shift, a tech notices staff responding more slowly to alarms as the day goes on. What underlying process explains this, and why does it matter?",
+      "choices": [
+        "Staff fatigue from walking; it only affects efficiency",
+        "Alarm fatigue from a high rate of false or insignificant alarms, which trains staff to ignore alarms and delays response to real events",
+        "The monitors are malfunctioning as the day progresses",
+        "It reflects appropriate prioritization and is not a concern"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "lesson": "ed-monitoring-l02",
+      "why": "Alarm fatigue is a well-documented patient safety hazard: constant false alarms desensitize staff, so a genuinely dangerous alarm can be missed or delayed among the noise."
+    },
+    {
+      "id": "ed-monitoring-q084",
+      "q": "A patient in a cold ambulance bay has an SpO2 reading of 88% with a small, ragged pleth waveform, but is speaking full sentences with no distress. What is the most appropriate next step?",
+      "choices": [
+        "Immediately apply high-flow oxygen and prepare for intubation",
+        "Chart the value and continue without further action",
+        "Warm the extremity, try another site, and look for a clean waveform before trusting the number",
+        "Assume the equipment is broken and replace the entire monitor"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "lesson": "ed-monitoring-l03",
+      "why": "Cold, poorly perfused extremities are a classic cause of a falsely low reading with a poor waveform. The clinical picture (comfortable, speaking in full sentences) doesn't match a true SpO2 of 88, so the site is checked before treating the number as real."
+    },
+    {
+      "id": "ed-monitoring-q085",
+      "q": "Which patient's pulse oximetry reading is least trustworthy as written, without further context?",
+      "choices": [
+        "A calm, resting patient with a clean pleth waveform reading 98%",
+        "A patient sleeping quietly with a regular pleth reading 96%",
+        "A resting patient with an appropriately sized probe reading 97%",
+        "A patient found in a house fire, altered and headachy, reading 99% on room air"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "lesson": "ed-monitoring-l03",
+      "why": "Standard pulse oximetry cannot distinguish oxyhemoglobin from carboxyhemoglobin, so a smoke-exposed, altered patient with a normal-looking reading may actually have carbon monoxide poisoning — the number is falsely reassuring."
+    },
+    {
+      "id": "ed-monitoring-q086",
+      "q": "A patient's SpO2 reads 100% with a perfectly clean waveform, but the patient is agitated, confused, and was found near a running generator in a closed garage. What should you consider before trusting the 100%?",
+      "choices": [
+        "Carbon monoxide exposure, since standard oximetry cannot tell carboxyhemoglobin from oxyhemoglobin and will read falsely high or normal",
+        "The reading is definitely accurate since the waveform is clean",
+        "A probe placement error is the only likely explanation",
+        "The patient's confusion is unrelated to the exposure"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "lesson": "ed-monitoring-l03",
+      "why": "A clean waveform confirms the sensor is reading well, but it cannot fix the fundamental limitation that standard pulse oximetry cannot detect carbon monoxide — clinical suspicion from the history has to override a reassuring number."
+    },
+    {
+      "id": "ed-monitoring-q087",
+      "q": "A patient is receiving bag-valve-mask ventilation after a witnessed collapse. The capnography waveform shows no trace at all despite visible chest rise. What is the most urgent concern to rule out first?",
+      "choices": [
+        "A calibration error that can wait until after the code",
+        "A dislodged or misplaced airway, or esophageal placement, since a flat trace with attempted ventilation is a critical finding",
+        "Normal variation that requires no action",
+        "The sensor simply needs to warm up for several minutes"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "lesson": "ed-monitoring-l04",
+      "why": "A completely flat capnogram during active ventilation efforts is treated as airway misplacement or disconnection until proven otherwise, because this is the highest-stakes explanation and the one that kills quickly if missed."
+    },
+    {
+      "id": "ed-monitoring-q088",
+      "q": "During ongoing CPR, EtCO2 rises from 12 to 38 mmHg and stays there for over a minute without any change in compression technique. What should the team suspect?",
+      "choices": [
+        "A capnography malfunction requiring immediate replacement",
+        "Worsening acidosis",
+        "Possible return of spontaneous circulation (ROSC), prompting a pulse check",
+        "Nothing significant; EtCO2 fluctuates randomly during CPR"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "lesson": "ed-monitoring-l04",
+      "why": "A sudden, sustained rise in EtCO2 during CPR, without a change in compression quality, is a recognized sign that spontaneous circulation may have returned, prompting a pulse and rhythm check."
+    },
+    {
+      "id": "ed-monitoring-q089",
+      "q": "A ventilated ICU boarder's EtCO2 has been stable at 40 mmHg for hours, then drops abruptly to 15 mmHg. The ventilator is still cycling, and the tube position looks unchanged on exam. What should be considered first?",
+      "choices": [
+        "A benign lab drawing error",
+        "Normal breath-to-breath variability",
+        "The patient has started breathing spontaneously",
+        "A sudden drop in pulmonary blood flow, such as a massive pulmonary embolism, cardiac arrest, or severe hypotension"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "lesson": "ed-monitoring-l04",
+      "why": "With ventilation unchanged and no circuit problem, an abrupt EtCO2 drop points toward a circulatory catastrophe reducing blood flow to the lungs — this is treated as an emergency, not a lab artifact."
+    },
+    {
+      "id": "ed-monitoring-q090",
+      "q": "A patient's blood pressure is being taken with a cuff that is far too large for a very thin arm. What artifact should be anticipated?",
+      "choices": [
+        "A falsely low reading",
+        "A falsely high reading",
+        "No meaningful change from the true value",
+        "Complete failure of the cuff to cycle"
+      ],
+      "answer": 0,
+      "difficulty": 1,
+      "lesson": "ed-monitoring-l05",
+      "why": "An oversized cuff underestimates blood pressure, producing a falsely low reading — the mirror-image error from an undersized cuff, which reads falsely high."
+    },
+    {
+      "id": "ed-monitoring-q091",
+      "q": "A trauma patient has an IV infusing in the right arm and a suspected fracture of the left arm. Where should the blood pressure cuff be placed?",
+      "choices": [
+        "The right arm, over the running IV, since it is otherwise unused",
+        "Neither arm is ideal — use a properly sized thigh cuff or document the constraint and choose the least harmful option per protocol",
+        "The left arm over the suspected fracture, since it is closer to the heart",
+        "Skip blood pressure entirely until imaging is complete"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "lesson": "ed-monitoring-l05",
+      "why": "A cuff over an infusing IV can cause infiltration and pain, and cuffing an injured limb can worsen injury or falsify the reading. When both arms are compromised, an alternate site like the thigh, chosen and documented, is the safer approach."
+    },
+    {
+      "id": "ed-monitoring-q092",
+      "q": "An ESI level 4 patient with a minor laceration has been stable in the waiting room. What is a typical vitals reassessment interval for this acuity level?",
+      "choices": [
+        "Every 15 minutes",
+        "Every 30 minutes",
+        "Roughly every 1 to 4 hours, or with any change in condition",
+        "Continuous monitoring is required regardless of acuity"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "lesson": "ed-monitoring-l05",
+      "why": "Lower-acuity patients (ESI 4-5) are reassessed on a much longer interval than critical patients, typically every 1 to 4 hours, with any new symptom prompting an earlier check."
+    },
+    {
+      "id": "ed-monitoring-q093",
+      "q": "A patient's heart rate is 140 and systolic blood pressure is 132. What does the shock index suggest?",
+      "choices": [
+        "About 1.1 — concerning for compensated shock",
+        "About 0.9 — right at the normal cutoff",
+        "About 1.9 — this indicates the patient is in profound decompensated shock",
+        "About 1.06 — concerning for compensated shock"
+      ],
+      "answer": 3,
+      "difficulty": 2,
+      "lesson": "ed-monitoring-l06",
+      "why": "140 divided by 132 is about 1.06, above the 0.9 threshold, flagging possible compensated shock even though the blood pressure alone still looks reasonable."
+    },
+    {
+      "id": "ed-monitoring-q094",
+      "q": "Which of the following best demonstrates 'trend plus number plus observation' communication about a patient?",
+      "choices": [
+        "\"His heart rate climbed from 88 to 114 over the last hour, and he is now diaphoretic and less talkative.\"",
+        "\"He looks worse than before.\"",
+        "\"His heart rate is up.\"",
+        "\"Something about him is bothering me.\""
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "lesson": "ed-monitoring-l06",
+      "why": "Naming the specific trend, the actual numbers, and a physical observation gives a listener something concrete and actionable, unlike vague impressions."
+    },
+    {
+      "id": "ed-monitoring-q095",
+      "q": "A patient's urine output over the last two hours totals 60 mL, and he weighs 80 kg. Is this adequate?",
+      "choices": [
+        "Yes, this is well above the minimum threshold",
+        "No, this is below the roughly 0.5 mL/kg/h threshold suggesting inadequate organ perfusion",
+        "It cannot be assessed without a creatinine level",
+        "Urine output is not a useful perfusion marker in adults"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "lesson": "ed-monitoring-l06",
+      "why": "0.5 mL/kg/h for an 80 kg patient over 2 hours would be 80 mL; 60 mL falls short of that threshold, suggesting reduced kidney perfusion and possible early shock."
+    },
+    {
+      "id": "ed-monitoring-q096",
+      "q": "A patient's blood pressure drifts down slightly over four rechecks while heart rate climbs, but every individual value remains inside the alarm limits the whole time. What does this scenario illustrate?",
+      "choices": [
+        "That alarm limits alone are sufficient to catch deterioration",
+        "That this pattern is always benign and requires no comment",
+        "That deterioration can be missed by alarms because it shows as a trend across values, not a single out-of-range number",
+        "That the monitor is malfunctioning"
+      ],
+      "answer": 2,
+      "difficulty": 3,
+      "lesson": "ed-monitoring-l06",
+      "why": "A trend across otherwise 'in range' numbers is exactly the kind of deterioration that alarm thresholds are not designed to catch — comparing values over time is what reveals it."
+    },
+    {
+      "id": "ed-monitoring-q097",
+      "q": "A patient meets two SIRS criteria and has a suspected pneumonia. Does this alone confirm sepsis?",
+      "choices": [
+        "Yes, meeting SIRS criteria is sufficient by itself to diagnose sepsis",
+        "No, SIRS criteria are only used for trauma patients",
+        "Yes, but only if the temperature criterion is one of the two met",
+        "No, SIRS criteria flag a systemic inflammatory response and prompt further evaluation, but sepsis requires evidence of infection with organ dysfunction"
+      ],
+      "answer": 3,
+      "difficulty": 2,
+      "lesson": "ed-monitoring-l07",
+      "why": "SIRS is a screening tool for systemic inflammation, not a sepsis diagnosis on its own. It prompts the workup that determines whether infection with organ dysfunction (sepsis) is actually present."
+    },
+    {
+      "id": "ed-monitoring-q098",
+      "q": "A patient meets a qSOFA score of 2. What does this specifically flag?",
+      "choices": [
+        "An increased risk of mortality from suspected infection, prompting more thorough evaluation and escalation",
+        "A definite diagnosis of severe sepsis requiring immediate intubation",
+        "That the patient does not have an infection",
+        "That antibiotics can be safely delayed for several hours"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "lesson": "ed-monitoring-l07",
+      "why": "A qSOFA of 2 or more identifies patients with suspected infection who are at meaningfully higher risk of poor outcomes, which is meant to trigger prompt further assessment and escalation, not a specific treatment by itself."
+    },
+    {
+      "id": "ed-monitoring-q099",
+      "q": "On the NEWS2 scoring system, a patient scores a 3 on a single parameter (for example, a very low respiratory rate) but a total score of only 4 overall. What does the NEWS2 approach say about this?",
+      "choices": [
+        "The low total score means no escalation is needed",
+        "A single parameter scoring 3 triggers escalation on its own, the same as a higher aggregate total would",
+        "Only the aggregate total ever matters, regardless of any individual score",
+        "This combination is not addressed by NEWS2"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "lesson": "ed-monitoring-l07",
+      "why": "NEWS2 is designed so that one severely abnormal parameter escalates care even if the total score looks moderate, because a single extreme value can represent real danger that averaging would hide."
+    },
+    {
+      "id": "ed-monitoring-q100",
+      "q": "Compressions are in progress on an adult and no advanced airway is placed yet. What is the correct ventilation approach?",
+      "choices": [
+        "Continuous compressions with no interruption for ventilation at all",
+        "Deliver a breath every 2 seconds regardless of compressions",
+        "Pause compressions briefly every 30 compressions to deliver 2 breaths",
+        "Ventilate only if the patient begins to gasp"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "lesson": "ed-monitoring-l08",
+      "why": "Without an advanced airway, CPR uses cycles of 30 compressions followed by a brief pause for 2 breaths, as opposed to the continuous asynchronous approach used once an advanced airway is in place."
+    },
+    {
+      "id": "ed-monitoring-q101",
+      "q": "A patient in cardiac arrest has a shockable rhythm. Where are defibrillator pads typically placed?",
+      "choices": [
+        "Both pads on the anterior chest directly over the sternum",
+        "Both pads on the patient's back",
+        "Pad placement does not matter as long as they touch skin",
+        "Anterolateral: one pad below the right clavicle, one at the left mid-axillary line, on dry bare skin"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "lesson": "ed-monitoring-l08",
+      "why": "Standard anterolateral placement — one pad on the upper right chest, one at the left lower ribs/mid-axillary line — on dry, bare skin gives the current the best path through the heart."
+    },
+    {
+      "id": "ed-monitoring-q102",
+      "q": "During a code, the team leader calls for the first dose of epinephrine. What is the standard adult dose and the interval before the next dose?",
+      "choices": [
+        "1 mg, repeated every 3 to 5 minutes",
+        "0.5 mg, repeated every minute",
+        "1 mg, given only once total",
+        "10 mg, repeated every 10 minutes"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "lesson": "ed-monitoring-l08",
+      "why": "Adult cardiac arrest epinephrine dosing is 1 mg IV/IO every 3 to 5 minutes throughout the resuscitation, a detail every team member should be able to anticipate and call out."
+    },
+    {
+      "id": "ed-monitoring-q103",
+      "q": "A patient with restraints in place for agitation has not had a documented circulation check in over an hour, though policy calls for checks roughly every 15 minutes. What is the concern?",
+      "choices": [
+        "No real concern, since the patient appears comfortable",
+        "A missed safety check that could allow nerve or vascular injury to go undetected",
+        "This interval is actually more frequent than required",
+        "Only skin color needs to be checked, not circulation"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "lesson": "ed-monitoring-l09",
+      "why": "Restraints can compromise circulation or cause nerve injury if left unchecked. Regular, timely checks are a patient safety requirement, not an optional courtesy."
+    },
+    {
+      "id": "ed-monitoring-q104",
+      "q": "A ventilator's low-pressure alarm sounds. What is the correct technician action?",
+      "choices": [
+        "Increase the pressure limit on the ventilator to stop the alarm",
+        "Silence the alarm and continue routine tasks",
+        "Look at the patient for signs of disconnection or leak, and immediately notify respiratory therapy and the nurse",
+        "Adjust the tidal volume setting"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "lesson": "ed-monitoring-l09",
+      "why": "Technicians never adjust ventilator settings. A low-pressure alarm often signals a disconnection or leak — the correct response is to assess the patient and circuit visually and get respiratory therapy involved immediately."
+    },
+    {
+      "id": "ed-monitoring-q105",
+      "q": "A patient one hour after thrombolytic administration for stroke has a stable exam and blood pressure within target. What should still happen during this window?",
+      "choices": [
+        "Checks can be spaced out to once per hour since things look stable",
+        "Monitoring can stop once the infusion is complete",
+        "Only blood pressure needs to be checked, not neuro status",
+        "Neuro checks and blood pressure continue every 15 minutes for the full 2-hour high-risk window regardless of current stability"
+      ],
+      "answer": 3,
+      "difficulty": 2,
+      "lesson": "ed-monitoring-l09",
+      "why": "The post-thrombolytic bleeding risk persists through the defined monitoring window even if the patient looks fine at any given moment, so the frequent check schedule is maintained regardless of apparent stability."
+    },
+    {
+      "id": "ed-monitoring-q106",
+      "q": "A high heart-rate alarm sounds and the bedside trace shows a jagged, unrecognizable waveform while the patient is calmly talking on the phone. Applying the alarm algorithm, what is this most consistent with?",
+      "choices": [
+        "Motion or lead artifact, since the waveform doesn't match a clean rhythm and the patient looks well",
+        "A genuine, dangerous tachyarrhythmia requiring immediate defibrillation",
+        "A normal sinus rhythm",
+        "Equipment that must be replaced before further use"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "lesson": "ed-monitoring-l10",
+      "why": "The first algorithm question — does the waveform match the number — fails here: a jagged, unreadable trace with a comfortable, talking patient points to artifact rather than a true dangerous rhythm."
+    },
+    {
+      "id": "ed-monitoring-q107",
+      "q": "An alarm indicates a very low respiratory rate on a patient who is actually snoring loudly and appears to be in a deep, difficult-to-rouse sleep after opioid administration. What should the technician do?",
+      "choices": [
+        "Assume it is impedance artifact from the snoring and ignore it",
+        "Treat this as a possible real event — assess responsiveness and breathing directly rather than assuming artifact",
+        "Silence it since the patient appears to be resting comfortably",
+        "Wait until the next scheduled round to check"
+      ],
+      "answer": 1,
+      "difficulty": 3,
+      "lesson": "ed-monitoring-l10",
+      "why": "Snoring with a low respiratory rate after opioids is a red flag for hypoventilation, not a reassuring sign to be waved off as artifact — this patient needs to be assessed directly and immediately."
+    },
+    {
+      "id": "ed-monitoring-q108",
+      "q": "A five-lead ECG cable becomes disconnected at the chest lead (brown wire) during ambulation. What is the most likely effect on the monitor?",
+      "choices": [
+        "No change at all to any displayed parameter",
+        "Complete shutdown of the monitor",
+        "Loss of the chest lead view (commonly V1) while limb leads may still display, possibly triggering a lead-off alarm",
+        "The SpO2 will also stop reading"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "lesson": "ed-monitoring-l11",
+      "why": "Each electrode contributes to specific derived leads; losing the chest (V1) lead affects that view and commonly triggers a lead-off alarm, while the limb leads can remain functional."
+    },
+    {
+      "id": "ed-monitoring-q109",
+      "q": "A patient's ECG trace has been noisy since admission. The technician notes the electrodes have not been changed in three days. What is the appropriate action?",
+      "choices": [
+        "Increase the gain setting to compensate for the noise",
+        "Leave them in place since changing electrodes rarely helps",
+        "Switch to a different monitor entirely",
+        "Replace the electrodes and re-prep the skin, since electrodes are typically changed roughly every 24 hours"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "lesson": "ed-monitoring-l11",
+      "why": "Electrode gel dries out and adhesion weakens over time; routine replacement (about every 24 hours, and after defibrillation) along with proper skin prep resolves most persistent noisy-trace problems."
+    },
+    {
+      "id": "ed-monitoring-q110",
+      "q": "A diaphoretic patient's telemetry keeps losing signal intermittently, and the electrodes look intact and properly placed. What is the most likely fix?",
+      "choices": [
+        "Dry the skin thoroughly, remove oils, and consider a skin-prep or adhesive product before reapplying electrodes",
+        "Increase the alarm volume so it is heard sooner",
+        "Move the patient to a different room",
+        "Switch from a 5-lead to a 3-lead system, which never has this problem"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "lesson": "ed-monitoring-l11",
+      "why": "Moisture and skin oils are the most common causes of poor electrode adhesion and signal loss in diaphoretic patients; drying and prepping the skin before reapplying electrodes addresses the root cause."
+    },
+    {
+      "id": "ed-monitoring-q111",
+      "q": "A capnogram shows normal-appearing waveforms but a phase 3 plateau that slopes noticeably upward instead of staying flat. What condition does this pattern suggest?",
+      "choices": [
+        "Normal ventilation with no abnormality",
+        "Obstructive airway disease, such as bronchospasm, causing uneven emptying of the lungs",
+        "Esophageal placement of the airway",
+        "Rebreathing of exhaled gas"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "lesson": "ed-monitoring-l12",
+      "why": "An upsloping (rather than flat) plateau reflects uneven, delayed alveolar emptying typical of obstructive processes like bronchospasm, distinct from the classic shark-fin picture but related to the same mechanism."
+    },
+    {
+      "id": "ed-monitoring-q112",
+      "q": "A sedated patient's capnography shows a normal waveform shape but a slowly rising EtCO2 alongside a falling respiratory rate over several minutes. What should this trend prompt?",
+      "choices": [
+        "No action, since the waveform shape itself is normal",
+        "Immediate discontinuation of capnography monitoring",
+        "Concern for opioid-related hypoventilation, prompting stimulation and provider notification",
+        "Assumption of a sensor drift requiring recalibration only"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "lesson": "ed-monitoring-l12",
+      "why": "A rising EtCO2 with a falling respiratory rate, even with a normal-shaped waveform, is the classic early pattern of opioid-induced hypoventilation and calls for direct intervention, not reassurance from the waveform shape alone."
+    },
+    {
+      "id": "ed-monitoring-q113",
+      "q": "A patient in early septic shock is breathing rapidly to compensate for a developing metabolic acidosis. What would you expect to see on capnography, and why?",
+      "choices": [
+        "A high EtCO2, because rapid breathing increases CO2 production",
+        "No change in EtCO2, since capnography does not reflect metabolic status",
+        "An erratic, unreadable waveform with no clinical meaning",
+        "A low EtCO2, because the patient is hyperventilating to blow off CO2 and partially compensate for the acidosis"
+      ],
+      "answer": 3,
+      "difficulty": 3,
+      "lesson": "ed-monitoring-l12",
+      "why": "Respiratory compensation for metabolic acidosis works by increasing minute ventilation to blow off CO2, which lowers EtCO2 — a low value here reflects appropriate compensation for the underlying metabolic problem, not a ventilation failure."
+    },
+    {
+      "id": "ed-monitoring-q114",
+      "q": "A 90 kg patient in septic shock requires the standard hour-1 crystalloid bolus. What volume should be targeted, and what access is needed?",
+      "choices": [
+        "2700 mL through large-bore access, delivered under pressure rather than by gravity",
+        "900 mL through a small-bore peripheral IV",
+        "5400 mL over the first hour regardless of clinical response",
+        "1800 mL is the fixed dose regardless of weight"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "lesson": "ed-monitoring-l13",
+      "why": "30 mL/kg for a 90 kg patient is 2700 mL; delivering that volume promptly requires large-bore IV access and a pressure bag or rapid infuser rather than gravity flow."
+    },
+    {
+      "id": "ed-monitoring-q115",
+      "q": "Antibiotics were given promptly, but blood cultures were drawn 45 minutes after the antibiotics infused, not before. What is the clinical consequence?",
+      "choices": [
+        "None; timing of cultures relative to antibiotics does not matter",
+        "Culture sensitivity may be reduced, since antibiotics can suppress organism growth, making it harder to identify the causative pathogen",
+        "The antibiotics themselves become less effective",
+        "The lactate result becomes invalid"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "lesson": "ed-monitoring-l13",
+      "why": "Drawing cultures after antibiotics have started reduces the chance of growing the causative organism, which can hamper de-escalation and targeted therapy later — this is why cultures are drawn first whenever feasible."
+    },
+    {
+      "id": "ed-monitoring-q116",
+      "q": "A patient's initial lactate on arrival was 3.2 mmol/L. Two hours later, after fluids and antibiotics, it is 1.8 mmol/L. What does this trend suggest?",
+      "choices": [
+        "Worsening sepsis requiring escalation of care",
+        "A lab error that should be repeated immediately",
+        "Lactate clearance, a favorable sign that treatment is improving tissue perfusion",
+        "No clinical significance since lactate values fluctuate randomly"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "lesson": "ed-monitoring-l13",
+      "why": "A falling lactate after fluids and antibiotics reflects improving tissue perfusion and is one of the key reassessment markers used to judge whether sepsis treatment is working."
+    },
+    {
+      "id": "ed-monitoring-q117",
+      "q": "A patient is E4 V5 M6 on initial assessment. What is the total GCS, and what does each letter represent?",
+      "choices": [
+        "12 total; eye opening, verbal response, and motor response",
+        "15 total; energy, vitals, and mentation",
+        "10 total; eye opening, vocalization, and mobility",
+        "15 total; eye opening, verbal response, and motor response"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "lesson": "ed-monitoring-l14",
+      "why": "GCS sums Eye (1-4), Verbal (1-5), and Motor (1-6) scores; 4+5+6 equals the maximum possible total of 15, representing a fully alert, oriented patient with normal motor response."
+    },
+    {
+      "id": "ed-monitoring-q118",
+      "q": "A patient's left pupil has been consistently 4mm and sluggish for the past day due to a known old eye injury, while the right pupil is 3mm and brisk. A new nurse flags this as an urgent finding. What is the correct interpretation?",
+      "choices": [
+        "If this asymmetry is a documented chronic baseline, it is not a new finding — comparing to the patient's own prior exams matters more than an isolated snapshot",
+        "This is always urgent regardless of history",
+        "Pupil findings are never clinically significant",
+        "Only pupil reactivity matters, never size"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "lesson": "ed-monitoring-l14",
+      "why": "A pupil finding must be compared against the patient's own baseline. A longstanding, documented asymmetry is very different from a new change, which is why trending each patient's exam over time matters more than any single reading."
+    },
+    {
+      "id": "ed-monitoring-q119",
+      "q": "A patient scores 0-42 on the NIHSS at two different times: 6 on arrival and 11 two hours later. What does this change most likely represent?",
+      "choices": [
+        "Improvement in neurological status",
+        "Worsening neurological deficit, which should be reported and may prompt urgent reimaging",
+        "A scoring error, since NIHSS rarely changes over short periods",
+        "No clinical significance since both scores are 'mild'"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "lesson": "ed-monitoring-l14",
+      "why": "A rising NIHSS score reflects an increasing neurological deficit and is treated as a real, reportable change — trending the score matters more than any single value in isolation."
+    },
+    {
+      "id": "ed-monitoring-q120",
+      "q": "A patient with a GI bleed has a heart rate rising from 92 to 118 over 90 minutes while blood pressure stays technically within the alarm limits the entire time. What does the pattern most likely represent?",
+      "choices": [
+        "Reassuring stability since the pressure never alarmed",
+        "A benign anxiety response with no clinical significance",
+        "Compensated shock progressing, evidenced by a worsening trend even though no single value has crossed an alarm threshold",
+        "An equipment malfunction requiring recalibration"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "lesson": "ed-monitoring-l15",
+      "why": "The trend itself — a steadily climbing heart rate — is the warning, independent of whether any single blood pressure value has yet crossed an alarm limit. Watching trends catches this before alarms would."
+    },
+    {
+      "id": "ed-monitoring-q121",
+      "q": "An elderly patient who was pleasant and conversational all morning suddenly becomes withdrawn and cannot answer a simple orientation question in the afternoon. Vital signs are all within normal limits. What should this prompt?",
+      "choices": [
+        "No action, since vitals are normal",
+        "Assuming this is simply fatigue from a long day",
+        "Waiting until the next scheduled round to mention it",
+        "Treating the new confusion itself as a vital sign, prompting reassessment and notification even though the monitor shows nothing abnormal"
+      ],
+      "answer": 3,
+      "difficulty": 2,
+      "lesson": "ed-monitoring-l15",
+      "why": "New confusion can be an early sign of deterioration — infection, hypoperfusion, or another process — well before vital signs change, which is why mental status is treated as its own vital sign requiring the same urgency as an abnormal number."
+    },
+    {
+      "id": "ed-monitoring-q122",
+      "q": "A patient with known COPD has an SpO2 of 89% that has been stable and documented as his baseline. On a different shift, a new tech becomes alarmed at this number and considers escalating urgently. What is the correct framing?",
+      "choices": [
+        "A documented, stable baseline changes the meaning of a number — the same reading in a different patient without that history would be far more concerning",
+        "This is always an emergency regardless of documented baseline",
+        "SpO2 numbers never require any clinical context",
+        "The number should be reported as critical regardless of history"
+      ],
+      "answer": 0,
+      "difficulty": 3,
+      "lesson": "ed-monitoring-l15",
+      "why": "Interpreting any single number requires knowing the individual patient's baseline and trend. The same value can be reassuring in one patient and alarming in another, which is why context and trend matter more than a raw threshold."
+    },
+    {
+      "id": "ed-monitoring-q123",
+      "q": "A 10-year-old presents after a fall. What is the estimated lower limit of normal systolic blood pressure using the standard pediatric formula?",
+      "choices": [
+        "70 mmHg",
+        "90 mmHg",
+        "80 mmHg",
+        "100 mmHg"
+      ],
+      "answer": 1,
+      "difficulty": 1,
+      "lesson": "ed-monitoring-l16",
+      "why": "70 plus (2 times 10) equals 90 mmHg, the estimated lower limit of normal systolic pressure for a 10-year-old under the standard rule."
+    },
+    {
+      "id": "ed-monitoring-q124",
+      "q": "A toddler is crying and thrashing during vital sign measurement, producing a heart rate of 190 and an erratic SpO2 reading. What is the best approach?",
+      "choices": [
+        "Chart the numbers exactly as displayed and treat them as accurate",
+        "Restrain the child firmly to obtain an accurate reading",
+        "Allow the child to calm on a caregiver's lap and reassess once settled, since an upset child produces artifact-prone readings",
+        "Assume the equipment is broken and switch monitors"
+      ],
+      "answer": 2,
+      "difficulty": 1,
+      "lesson": "ed-monitoring-l16",
+      "why": "An agitated child generates unreliable vitals from motion and crying. Allowing the child to settle, often on a parent's lap, produces far more trustworthy numbers than forcing a reading during distress."
+    },
+    {
+      "id": "ed-monitoring-q125",
+      "q": "A 5-year-old with a febrile illness has flaring nostrils, visible head bobbing with each breath, and grunting on exhalation. What do these findings together indicate?",
+      "choices": [
+        "Mild, self-limited illness needing no urgent evaluation",
+        "Normal findings for a febrile, anxious child",
+        "A sign of dehydration only, unrelated to breathing effort",
+        "Signs of severe respiratory distress requiring prompt evaluation"
+      ],
+      "answer": 3,
+      "difficulty": 2,
+      "lesson": "ed-monitoring-l16",
+      "why": "Grunting, head bobbing, and nasal flaring are recognized markers of severe pediatric respiratory distress and should prompt urgent assessment rather than being dismissed as typical fussiness."
+    },
+    {
+      "id": "ed-monitoring-q126",
+      "q": "During procedural sedation, a patient's RASS is scored as +2 (frequent, non-purposeful movement, agitated). What does this suggest about the current sedation level?",
+      "choices": [
+        "The patient is under-sedated relative to the usual 0 to -2 target range and may need dose adjustment",
+        "The patient is appropriately sedated for most ED procedures",
+        "The patient is over-sedated and at risk of apnea",
+        "RASS is not used to guide sedation level, only recovery"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "lesson": "ed-monitoring-l17",
+      "why": "A RASS of +2 is agitated, above the typical ED sedation target of 0 to -2, indicating the patient is not adequately sedated for the procedure and may need reassessment of dosing."
+    },
+    {
+      "id": "ed-monitoring-q127",
+      "q": "A patient's Aldrete score is calculated at 7 because his blood pressure remains more than 20 mmHg below his pre-procedure baseline, though every other category is fully scored. What does this mean for discharge readiness?",
+      "choices": [
+        "He can be discharged since most categories scored well",
+        "He does not yet meet the usual discharge threshold of 9 or more and needs further monitoring of that specific parameter",
+        "Aldrete does not need to reach any specific number before discharge",
+        "The score should simply be rounded up to 9"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "lesson": "ed-monitoring-l17",
+      "why": "Discharge after procedural sedation typically requires an Aldrete score of 9 or higher; a persistently low circulation score, even with everything else normal, means the patient has not yet met criteria."
+    },
+    {
+      "id": "ed-monitoring-q128",
+      "q": "A patient receiving procedural sedation requires a jaw thrust to maintain airway patency partway through the procedure. What is the significance of documenting this?",
+      "choices": [
+        "It is a routine, insignificant part of any sedation and does not need separate documentation",
+        "It only needs to be mentioned if the patient later has complications",
+        "It represents an airway intervention that reflects a level of sedation depth requiring active management, and its timing matters for the record",
+        "Jaw thrusts are never needed during procedural sedation"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "lesson": "ed-monitoring-l17",
+      "why": "Any airway intervention during sedation, including a jaw thrust, signals that the patient reached a depth of sedation requiring active airway support, which is important to document with its exact time for the clinical record."
+    },
+    {
+      "id": "ed-monitoring-q129",
+      "q": "A technician calling a rapid response says, \"Room 12, 58-year-old, I think something might be going on, could someone check when they're free?\" What is wrong with this call?",
+      "choices": [
+        "Nothing; this communicates the urgency clearly",
+        "It is too long and should be shortened further",
+        "The room number should come last, not first",
+        "It lacks specific numbers, a clear trend, and a direct, immediate request for someone at the bedside"
+      ],
+      "answer": 3,
+      "difficulty": 1,
+      "lesson": "ed-monitoring-l18",
+      "why": "An effective rapid response call states specific abnormal numbers and a trend, then makes a direct, immediate ask — vague language and soft phrasing let the request get deprioritized."
+    },
+    {
+      "id": "ed-monitoring-q130",
+      "q": "While waiting for a rapid response team to arrive, what should the calling technician have ready at the bedside?",
+      "choices": [
+        "A full set of vitals, the monitor, oxygen and suction available, and the doorway cleared for access",
+        "Nothing extra; simply wait by the door",
+        "The patient's insurance and billing information",
+        "A printed copy of the chart only"
+      ],
+      "answer": 0,
+      "difficulty": 2,
+      "lesson": "ed-monitoring-l18",
+      "why": "Preparing oxygen, suction, monitoring, and a clear path into the room means the arriving team can act immediately rather than losing time gathering basic equipment on arrival."
+    },
+    {
+      "id": "ed-monitoring-q131",
+      "q": "During shift handoff of a monitored patient, the outgoing tech mentions vitals, alarm limits, and pending labs, but omits that the SpO2 probe reads unreliably on this particular patient's fingers. Why does this omission matter?",
+      "choices": [
+        "It doesn't matter, since the incoming tech will discover it on their own",
+        "The incoming tech may trust a falsely reassuring or falsely alarming number without knowing to double-check it by another method",
+        "SpO2 reliability issues are always obvious from the waveform alone",
+        "This detail belongs in the chart, not in verbal handoff"
+      ],
+      "answer": 1,
+      "difficulty": 2,
+      "lesson": "ed-monitoring-l18",
+      "why": "A known unreliable reading is exactly the kind of practical knowledge that doesn't show up automatically on the screen — omitting it risks the next caregiver either missing a real problem or chasing a false one."
+    },
+    {
+      "id": "ed-monitoring-q132",
+      "q": "A monitored patient must be transported to the OR, and the assigned escort has never operated the transport monitor being used. What is the correct action before leaving the unit?",
+      "choices": [
+        "Proceed anyway since transport time is short",
+        "Leave the monitor behind since it is unfamiliar equipment",
+        "Ensure the escort is familiar with the transport monitor and its alarms before departure, or assign someone who is",
+        "Transport without any monitor and reconnect on arrival"
+      ],
+      "answer": 2,
+      "difficulty": 2,
+      "lesson": "ed-monitoring-l18",
+      "why": "A transport monitor is only useful if the escort can actually interpret and respond to it. Ensuring competence with the equipment before departure is part of the safety requirement, not an afterthought."
+    }
+  ]
+}

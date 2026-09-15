@@ -1,0 +1,1018 @@
+{
+  "schema": 1,
+  "extends": "ed-epic-charting",
+  "checks": {
+    "ed-epic-charting-l01": [
+      {
+        "q": "A clinical workstation locks itself automatically after a short idle period, commonly 1 to 5 minutes. Why does that timeout exist?",
+        "choices": [
+          "To save electricity on hospital computers",
+          "To force frequent password changes",
+          "Because the workstations sit in hallways where patients and families can read an unlocked screen",
+          "To log usage statistics for IT billing"
+        ],
+        "answer": 2,
+        "why": "The short idle lock exists because open charts are visible to anyone walking past a hallway workstation, not for power savings, password policy, or billing telemetry."
+      },
+      {
+        "q": "You step away from a workstation with a chart open to grab supplies from the next room. What is the correct habit?",
+        "choices": [
+          "Leave it, since the automatic timeout will lock it soon enough",
+          "Close the chart or lock the screen yourself before walking away, and turn the monitor away from hallway traffic",
+          "Minimize the window but leave the session open",
+          "Ask a nearby coworker to watch the screen"
+        ],
+        "answer": 1,
+        "why": "Relying on the automatic timeout leaves a window of exposure you control directly by locking or closing the chart yourself. Minimizing does not end the session, and asking a coworker to watch a screen is not a substitute for locking it."
+      }
+    ],
+    "ed-epic-charting-l02": [
+      {
+        "q": "On the tracking board, acuity is usually shown as ESI 1 through 5 and color-coded. What does ESI 1 represent compared to ESI 5?",
+        "choices": [
+          "ESI 1 is the least urgent and ESI 5 is a resuscitation",
+          "ESI 1 is a resuscitation-level patient and ESI 5 is the least urgent",
+          "The numbers indicate bed assignment order, not urgency",
+          "ESI 1 through 5 all require the same response time"
+        ],
+        "answer": 1,
+        "why": "The Emergency Severity Index runs from 1, the most critical, to 5, the least urgent, so a low number is the higher-acuity patient. It is not a bed queue, and the levels exist precisely because response urgency differs."
+      },
+      {
+        "q": "You have the board filtered to your zone. A code is called in a different zone. What is the fastest correct response?",
+        "choices": [
+          "Stay filtered to your zone and finish your current task first",
+          "Un-filter the board immediately so you can see the whole department, then respond as needed",
+          "Call the charge nurse to ask what happened before doing anything",
+          "Walk to the other zone without looking at the board at all"
+        ],
+        "answer": 1,
+        "why": "Un-filtering instantly restores the department-wide view a code requires; finishing an unrelated task first delays response, and calling for a description wastes time you could spend looking directly. Walking over blind skips information the board already has."
+      }
+    ],
+    "ed-epic-charting-l03": [
+      {
+        "q": "Which of these is NOT part of the Epic Storyboard panel that follows you through the chart?",
+        "choices": [
+          "Allergies",
+          "Code status",
+          "Isolation precautions",
+          "Insurance and billing information"
+        ],
+        "answer": 3,
+        "why": "The Storyboard carries clinical safety facts: name, allergies, code status, isolation, care team, and length of stay. Insurance and billing live elsewhere in the chart and are not part of the clinical header you glance at before a task."
+      },
+      {
+        "q": "You are about to give a walking pulse oximetry test to a patient. Before entering, the ten-second header check should confirm which combination?",
+        "choices": [
+          "Insurance status and admitting diagnosis",
+          "Allergies, code status, isolation, and weight",
+          "Provider name and disposition",
+          "Chief complaint and length of stay only"
+        ],
+        "answer": 1,
+        "why": "These four header facts change what you are allowed to do and how you must protect yourself and the patient; the other pairs are useful context but do not change the safety of the task in front of you."
+      }
+    ],
+    "ed-epic-charting-l04": [
+      {
+        "q": "An order for vitals reads 'every 30 minutes.' What should the work list and flowsheet reflect over a two-hour period?",
+        "choices": [
+          "One set at the two-hour mark is sufficient if the patient looks stable",
+          "Roughly four sets, spaced about 30 minutes apart, each documented at its real time",
+          "A single note saying vitals were monitored throughout",
+          "Sets only when the patient requests them"
+        ],
+        "answer": 1,
+        "why": "A stated frequency generates a due time that repeats on that interval, so two hours at every 30 minutes should show about four separate documented sets. A single note or a stability judgment does not substitute for the measurements the order requires."
+      },
+      {
+        "q": "Your brain sheet has a patient's full name, date of birth, and room number written on it in your pocket. What is wrong with this?",
+        "choices": [
+          "Nothing, as long as it stays in your pocket during the shift",
+          "It should carry initials or room numbers only, since a lost or seen sheet with full identifiers is a privacy breach",
+          "It is fine as long as it is shredded within 24 hours",
+          "Full names are required on a brain sheet for accuracy"
+        ],
+        "answer": 1,
+        "why": "A brain sheet is meant to carry the minimum needed to track tasks, not full identifiers; a lost or glimpsed sheet with a name and date of birth is protected health information exposed outside the record. Shredding later does not undo the exposure risk while it is carried."
+      }
+    ],
+    "ed-epic-charting-l05": [
+      {
+        "q": "A patient's Glasgow Coma Scale is charted as 'GCS 11' with no further breakdown. Why is this incomplete?",
+        "choices": [
+          "The total should always be written as a percentage",
+          "The eye, verbal, and motor components should be charted individually, since the total alone hides which component changed",
+          "GCS is not something techs are ever asked to chart",
+          "The total score should be rounded to the nearest 5"
+        ],
+        "answer": 1,
+        "why": "Charting only the total can hide that, for example, the verbal score dropped while eye and motor stayed the same, which is exactly the kind of change a trend needs to catch. GCS is charted by parts precisely so a shift in one domain is visible."
+      },
+      {
+        "q": "A patient on close observation requires a documented safety check every 15 minutes. The flowsheet shows checks at 0800, 0815, 0900, and 0915. What is the correct read of this record?",
+        "choices": [
+          "It is complete because checks resumed on schedule at 0900",
+          "The 0830 and 0845 checks are missing, which is a documented monitoring gap",
+          "It is acceptable since the patient was presumably fine",
+          "Only the provider's evaluation of the patient matters, not the interval checks"
+        ],
+        "answer": 1,
+        "why": "A 45-minute gap between checks is a missed interval regardless of what happened during it, and it is exactly the kind of gap a chart review finds first. Presumed wellness is not documentation, and interval checks are a distinct requirement from any provider evaluation."
+      }
+    ],
+    "ed-epic-charting-l06": [
+      {
+        "q": "Which wound documentation entry is written correctly?",
+        "choices": [
+          "Wound looks infected, will need antibiotics",
+          "Wound to left lower leg, approximately 4 cm, yellow drainage with foul odor, irrigated with 200 mL normal saline, dry dressing applied",
+          "Wound is healing well",
+          "Wound dressed as usual"
+        ],
+        "answer": 1,
+        "why": "This entry is objective and specific: location, size, drainage characteristics, what was done, and the dressing applied. 'Infected' is a diagnosis outside tech scope, and 'healing well' or 'as usual' are conclusions with no verifiable content."
+      },
+      {
+        "q": "You transport a patient to imaging and back. Which detail is required in the transport documentation but easy to forget?",
+        "choices": [
+          "The patient's insurance carrier",
+          "The imaging protocol used by radiology",
+          "Who accompanied the patient and what monitoring, if any, went with them",
+          "The name of the technologist who performed the scan"
+        ],
+        "answer": 2,
+        "why": "The transport record exists to prove who was watching the patient and with what equipment during the time they were off the unit, since deterioration can happen in a hallway or elevator. Insurance, imaging protocol, and the radiology technologist's name belong to other parts of the record, not the transport entry."
+      }
+    ],
+    "ed-epic-charting-l07": [
+      {
+        "q": "Blood cultures are typically drawn as two sets from two different sites. Why two separate sites?",
+        "choices": [
+          "It doubles the chance of contamination so the result is more thorough",
+          "It helps distinguish a true bloodstream infection from a single contaminated draw",
+          "Hospital policy requires it purely for billing purposes",
+          "It is only done when the patient requests it"
+        ],
+        "answer": 1,
+        "why": "An organism appearing in cultures from two separate sites is much more likely to represent a true infection than a contaminant picked up from skin flora at one site. It is a diagnostic safeguard, not a billing rule, and it is not optional based on patient preference."
+      },
+      {
+        "q": "Why do blood bank specimens carry stricter identification requirements than a routine chemistry panel?",
+        "choices": [
+          "Blood bank samples take longer to process, so extra steps fill the time",
+          "A mislabeled blood bank sample can lead to a fatal transfusion reaction, so many hospitals require a separate band and a second verifier",
+          "Blood bank testing is more expensive, so extra verification protects the cost",
+          "There is no meaningful difference in identification requirements"
+        ],
+        "answer": 1,
+        "why": "The consequence of a blood bank mislabel is uniquely severe, a potentially fatal transfusion reaction, which is why many hospitals add a dedicated blood bank band and a second-person verification step. Processing time and cost are not the reasons for the extra rigor."
+      }
+    ],
+    "ed-epic-charting-l08": [
+      {
+        "q": "A urine culture you sent two hours ago still shows as pending well past the lab's usual turnaround. What should you do?",
+        "choices": [
+          "Nothing; pending simply means it has not resulted yet",
+          "Tell the nurse, since a specimen can be lost, clotted, or rejected without anyone being notified",
+          "Resend a new order yourself without telling anyone",
+          "Assume it will result eventually and check again at the end of the shift"
+        ],
+        "answer": 1,
+        "why": "A result stuck well past normal turnaround can mean the specimen never made it to the lab intact, and nobody may know unless you say something. Placing a new order is a provider decision, and waiting until end of shift lets a lost specimen go unnoticed for hours."
+      },
+      {
+        "q": "A glucose meter displays 'LO' instead of a numeric value on a lethargic patient. What does that reading mean and what should you do?",
+        "choices": [
+          "The battery is likely low; replace it and retest before telling anyone",
+          "The value is below the device's readable range; get the nurse immediately for treatment and a lab-confirmed sample",
+          "It means the test strip expired and should simply be repeated",
+          "It is equivalent to a normal reading and needs no action"
+        ],
+        "answer": 1,
+        "why": "'LO' means the glucose is off the low end of what the meter can measure, which is a treatable emergency, not a device malfunction. Repeating the strip or waiting delays care for a patient who may already be minutes from a seizure."
+      }
+    ],
+    "ed-epic-charting-l09": [
+      {
+        "q": "A coworker asks you to take a photo of a wound on your phone to send to a specialist by text. What is the correct response?",
+        "choices": [
+          "Take the photo since it is for clinical purposes",
+          "Decline; patient photographs are not permitted outside an approved clinical photography workflow, which is rare and specific",
+          "Take the photo but delete it right after sending",
+          "Ask the patient for verbal permission and then take the photo"
+        ],
+        "answer": 1,
+        "why": "Photographing patients or their injuries on a personal device falls outside approved documentation channels almost everywhere, regardless of intent, deletion afterward, or verbal permission. Only a hospital's specific, approved clinical photography workflow allows it."
+      },
+      {
+        "q": "Length of stay for discharged ED patients is typically targeted around 2 to 3 hours, and left-without-being-seen is typically targeted under 2 percent. Where do these department metrics come from?",
+        "choices": [
+          "Estimates the charge nurse makes at the end of each shift",
+          "The timestamps staff enter into the record, such as arrival, disposition, and departure times",
+          "A survey patients fill out after discharge",
+          "Numbers reported directly by insurance companies"
+        ],
+        "answer": 1,
+        "why": "Throughput metrics are calculated from the actual timestamps documented in the chart, the same kind of entries a tech makes for an EKG or a specimen, not from estimates, patient surveys, or insurer reporting."
+      }
+    ],
+    "ed-epic-charting-l10": [
+      {
+        "q": "A tech plans to recheck a restraint patient at 1415 and, to save time, enters the check into the flowsheet at 1400 while walking toward the room. What is wrong with this?",
+        "choices": [
+          "Nothing, since the check will happen shortly after",
+          "It is charting in advance of doing the task, which is falsification even if the check is later performed",
+          "It is acceptable as long as the times are close together",
+          "It only matters if the check is later missed entirely"
+        ],
+        "answer": 1,
+        "why": "An entry filed before the event happens misrepresents the record regardless of whether the task is completed moments later, because the chart is supposed to reflect what has actually occurred at that timestamp. Proximity in time does not make an early entry acceptable."
+      },
+      {
+        "q": "Which chart entry improperly references a safety process document?",
+        "choices": [
+          "Patient ambulated in hallway without difficulty, gait steady",
+          "Splint applied to right wrist, neurovascular status intact before and after",
+          "Medication error occurred; incident report completed and submitted to risk management",
+          "Vital signs stable, patient resting comfortably per patient report"
+        ],
+        "answer": 2,
+        "why": "Referencing that an incident report was filed pulls a protected quality-improvement document into the legal medical record. The other entries describe observable clinical facts, which is exactly what belongs in the chart."
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "id": "ed-epic-charting-q031",
+      "q": "A tech's badge works but the shared printer at the nurses' station is jammed, so she prints wristband labels at a workstation two rooms away and carries them to the patient. What is the concern?",
+      "choices": [
+        "Labels should be printed at the bedside; carrying printed labels between rooms recreates the exact risk that causes mislabeled specimens",
+        "The concern only applies to blood bank specimens",
+        "The concern only applies if more than one patient's labels are being carried at once",
+        "None, since the labels are still correct for that patient"
+      ],
+      "answer": 0,
+      "why": "Printing away from the bedside reintroduces the chance of mixing labels between patients even when only one patient is involved, because a distraction or a second stop can happen before the labels are used. This is not limited to blood bank, and carrying a single patient's labels is still a deviation from the bedside-printing rule.",
+      "lesson": "ed-epic-charting-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-epic-charting-q032",
+      "q": "A tech notices that a colleague has been looking up the chart of a patient from a car accident that made the local news, saying he was just curious. What is the accurate assessment?",
+      "choices": [
+        "Acceptable, since news coverage makes the information already public",
+        "Unauthorized access to protected health information, logged in the audit trail and investigated regardless of motive",
+        "Acceptable only if the colleague worked that shift",
+        "A privacy violation only if the colleague shares what he found"
+      ],
+      "answer": 1,
+      "why": "Media coverage of an event does not make the medical record public, and curiosity is exactly the motive hospital audits are built to catch. Working the shift does not create an ongoing right to look, and the violation occurs at the moment of access, not only if the information is shared further.",
+      "lesson": "ed-epic-charting-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-epic-charting-q033",
+      "q": "A new tech is told the department uses badge tap plus PIN for login. He finds it faster to leave his session open at a shared workstation between patients rather than re-authenticating each time. What is the risk?",
+      "choices": [
+        "The only risk is a slower workstation",
+        "There is no risk since the same tech is using it",
+        "Anything entered while the session is open is attributed to him, including actions by anyone who uses the still-open session",
+        "The system will not allow a session to stay open, so this is not possible"
+      ],
+      "answer": 2,
+      "why": "An open session is functionally the same as a shared login: whoever uses it while it is open acts under his credentials and his accountability. The short idle timeout exists precisely because sessions left open invite this, and it is not merely a performance issue.",
+      "lesson": "ed-epic-charting-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-epic-charting-q034",
+      "q": "A tracking board row shows disposition 'Admit,' but the patient is still physically in the ED bed six hours later. What best describes this patient's status?",
+      "choices": [
+        "The disposition is an error and should be ignored",
+        "The patient no longer needs vital signs since the workup is finished",
+        "The patient has left the department and the row is stale",
+        "The patient is boarding: admitted but still occupying an ED bed, and still the tech's responsibility for ongoing care"
+      ],
+      "answer": 3,
+      "why": "An admit disposition with the patient still physically present describes boarding, and boarders remain the ED's responsibility for vitals, hygiene, toileting, and repositioning until a bed opens. The row is accurate, not stale or an error, and ongoing care obligations do not end at the admission decision.",
+      "lesson": "ed-epic-charting-l02",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-epic-charting-q035",
+      "q": "Which icon set on the tracking board most directly determines what personal protective equipment you put on before entering a room?",
+      "choices": [
+        "Isolation status, such as contact, droplet, or airborne",
+        "Provider and RN assignment",
+        "Chief complaint",
+        "Disposition and length of stay"
+      ],
+      "answer": 0,
+      "why": "Isolation icons directly dictate PPE selection before contact with the room, while disposition, staff assignment, and chief complaint describe the visit but not the infection control requirements.",
+      "lesson": "ed-epic-charting-l02",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-epic-charting-q036",
+      "q": "A tracking board row for a trauma patient appears before the patient physically arrives, tagged 'Expected.' What is the correct interpretation and action?",
+      "choices": [
+        "The row is a scheduling error and should be reported to IT",
+        "EMS called ahead; use the lead time to prepare the trauma room before the patient rolls through the door",
+        "The patient has already been triaged elsewhere and this is a duplicate",
+        "No action is needed until the row changes to a room number"
+      ],
+      "answer": 1,
+      "why": "An expected row for an inbound trauma exists specifically to give the team lead time to set up equipment and staff before arrival. It is not an error or a duplicate, and waiting until the room number appears wastes the preparation window the alert was meant to provide.",
+      "lesson": "ed-epic-charting-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-epic-charting-q037",
+      "q": "A tech scans the board and sees a patient with a fall risk icon and a one-to-one observation icon. What does this combination most directly change about the plan of care?",
+      "choices": [
+        "The patient must be roomed in a private room regardless of bed availability",
+        "Nothing different from a patient without either icon",
+        "The patient should not be left unattended, especially in the bathroom, and needs continuous observation coverage",
+        "The patient is automatically a code status full code"
+      ],
+      "answer": 2,
+      "why": "Fall risk and one-to-one observation icons together mean the patient needs continuous supervision and cannot be left alone, particularly during toileting. Neither icon relates to code status, and neither dictates a specific room type by itself.",
+      "lesson": "ed-epic-charting-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-epic-charting-q038",
+      "q": "A tech is filtered to zone C and hears an overhead announcement for a trauma activation in zone A. What is the correct sequence?",
+      "choices": [
+        "Wait for the charge nurse to personally assign a task before doing anything",
+        "Filter more narrowly to avoid distraction from the current task",
+        "Ignore it, since it is outside the assigned zone",
+        "Un-filter the board to see the full department, assess whether extra hands are needed, and respond per department protocol"
+      ],
+      "answer": 3,
+      "why": "A department-wide view is exactly what a filtered board hides, so un-filtering is the fast way to understand what is happening and whether help is needed. Ignoring it or narrowing the filter moves away from the information needed, and many departments expect available staff to respond without waiting for individual assignment.",
+      "lesson": "ed-epic-charting-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-epic-charting-q039",
+      "q": "A tech opens a patient's chart and, before doing anything else, glances at the Storyboard. Which single fact there would most change the plan for drawing blood on this patient?",
+      "choices": [
+        "A latex allergy, which changes glove and tourniquet selection",
+        "The patient's chief complaint",
+        "The bed number",
+        "The name of the assigned physician"
+      ],
+      "answer": 0,
+      "why": "A latex allergy directly changes what equipment the tech selects for the draw, while the physician's name, chief complaint, and bed number are informative but do not change the procedure itself.",
+      "lesson": "ed-epic-charting-l03",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-epic-charting-q040",
+      "q": "A tech needs to compare a current EKG to one from a visit six months ago. Which tab is the right place to look?",
+      "choices": [
+        "Flowsheets",
+        "Chart Review, for prior visit documents",
+        "The MAR",
+        "The Care Timeline for this visit only"
+      ],
+      "answer": 1,
+      "why": "Chart Review is oriented toward prior visits, notes, imaging, and documents, which is where an old EKG from a previous encounter would be found. Flowsheets and the current visit's Care Timeline hold this-visit data, and the MAR holds medication administration, not imaging or tracings.",
+      "lesson": "ed-epic-charting-l03",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-epic-charting-q041",
+      "q": "An infant's chart uses a length-based weight estimate from a measuring tape because an actual weight could not be obtained. What is the tech's role in this situation?",
+      "choices": [
+        "Ignore the weight field since providers calculate doses independently",
+        "Accept the estimate permanently since obtaining an infant's weight is difficult",
+        "Get a real measured weight in kilograms as soon as it is safe to do so, and flag if the chart's number looks wrong for the child",
+        "Convert the estimate to pounds for clarity"
+      ],
+      "answer": 2,
+      "why": "A length-based estimate is a placeholder meant to be replaced by an actual measured weight as soon as possible, and a tech who notices the number looks wrong for the child in front of them should say so. Converting to pounds moves in the wrong direction, since kilograms are the charting standard, and providers rely on the chart's weight for their calculations rather than working around it.",
+      "lesson": "ed-epic-charting-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-epic-charting-q042",
+      "q": "A patient's Storyboard shows a do-not-intubate order. Why does a tech need to know this before, rather than during, an emergency?",
+      "choices": [
+        "It only matters to the physician and never affects tech actions",
+        "It changes only billing, not clinical care",
+        "It has no bearing on tech-level tasks",
+        "Code status determines what interventions are appropriate, and this must be known ahead of time so the right actions happen the moment they are needed"
+      ],
+      "answer": 3,
+      "why": "Code status defines the boundaries of appropriate intervention, and in a fast-moving event there is no time to look it up, which is why it belongs to the pre-task header check. It directly affects the actions of everyone at the bedside, not billing, and not the physician alone.",
+      "lesson": "ed-epic-charting-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-epic-charting-q043",
+      "q": "A tech acknowledges a splint order, applies the splint, and documents it fully, but never marks the order as performed in the system. What is the practical effect?",
+      "choices": [
+        "The order may still appear open or incomplete on the board, creating confusion about whether the task is finished",
+        "The system automatically marks it performed once documentation is entered",
+        "It only matters for orders marked STAT",
+        "None, since the documentation itself proves the work was done"
+      ],
+      "answer": 0,
+      "why": "Moving an order through its states is part of how the board reflects reality; skipping a state can leave the task looking unfinished even with thorough documentation elsewhere. Systems do not universally auto-advance order status from documentation alone, and this applies to any order, not only STAT ones.",
+      "lesson": "ed-epic-charting-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-epic-charting-q044",
+      "q": "A tech is assigned a point-of-care glucose that is marked STAT because it is part of a stroke protocol. What does STAT mean in this context?",
+      "choices": [
+        "It should be done before the end of the shift",
+        "It should be done within minutes, treated with the same urgency as any other STAT order",
+        "It is a lower priority than a routine order because it is a quick test",
+        "It means the result will not need to be reported to anyone"
+      ],
+      "answer": 1,
+      "why": "STAT means minutes in an ED, not 'next' or 'sometime this shift,' and a stroke protocol glucose is time-critical precisely because hypoglycemia can mimic a stroke. It is not lower priority than routine orders, and the result absolutely needs to be reported once obtained.",
+      "lesson": "ed-epic-charting-l04",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-epic-charting-q045",
+      "q": "A tech attempts an IV twice on a difficult patient, cannot get it, and moves to the next task without telling anyone or documenting the attempts. What is the main problem?",
+      "choices": [
+        "Documentation of failed attempts is optional",
+        "There is no problem, since the IV will eventually be placed by someone else",
+        "The next operator has no way to know two attempts already failed, and may repeat blind sticks instead of escalating",
+        "The problem only exists if the patient complains"
+      ],
+      "answer": 2,
+      "why": "Undocumented attempts erase the information that should trigger escalation to a more experienced operator or ultrasound guidance, leading to repeated unnecessary sticks. This is a problem regardless of patient complaint, and attempt documentation is expected, not optional.",
+      "lesson": "ed-epic-charting-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-epic-charting-q046",
+      "q": "A tech keeps a paper brain sheet listing 'Rm 9 - EKG done, Rm 12 - blood 0912, Rm 14 - unable urine, told RN.' What is correct about this brain sheet?",
+      "choices": [
+        "It should include full patient names for clarity",
+        "It replaces the need to chart in the system",
+        "It should not exist at all; only the electronic system is permitted",
+        "It uses room numbers rather than patient names, which is the safer practice, though it still does not replace electronic documentation"
+      ],
+      "answer": 3,
+      "why": "Room-based shorthand avoids carrying identifiable patient information on a paper sheet that could be lost or seen, but the brain sheet is a personal memory aid and never a substitute for entering the actual documentation into the chart. Full names would create unnecessary privacy risk, and brain sheets are common practice, not prohibited.",
+      "lesson": "ed-epic-charting-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-epic-charting-q047",
+      "q": "A tech takes a full set of vitals at 0910 but the workstation is occupied, so charting happens at 0925. What column time should be used?",
+      "choices": [
+        "0910, the time the vitals were actually measured, flagged as a late entry if policy requires",
+        "A time in between, such as 0917",
+        "Whichever time makes the interval look on schedule",
+        "0925, since that is when the data was entered"
+      ],
+      "answer": 0,
+      "why": "The chart must reflect the true measurement time regardless of when data entry happened, because clinical decisions are made assuming the timestamp is accurate. A midpoint or a time chosen to appear on schedule both misrepresent when the measurement actually occurred.",
+      "lesson": "ed-epic-charting-l05",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-epic-charting-q048",
+      "q": "A tech is asked to document intake and output for a patient. Which of these best fits what belongs in that flowsheet row?",
+      "choices": [
+        "A general impression such as 'adequate intake'",
+        "Measured volumes in milliliters for oral intake, IV fluids counted by the nurse, urine, and emesis",
+        "Only the total for the entire shift, entered once",
+        "Whether the patient appeared thirsty"
+      ],
+      "answer": 1,
+      "why": "Intake and output is a measured volume record in milliliters across the relevant categories, not a subjective impression or a once-per-shift summary, both of which lose the granularity the record is meant to provide.",
+      "lesson": "ed-epic-charting-l05",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-epic-charting-q049",
+      "q": "A restraint patient's monitoring record shows circulation and skin checks but no documentation of fluids or toileting offered across a four-hour shift. What is the concern?",
+      "choices": [
+        "This applies only to pediatric restraint patients",
+        "None, since circulation and skin are the only medically important checks",
+        "Restraint monitoring requires documenting fluids and toileting offered along with circulation and skin, and the omission is a gap an audit will find",
+        "Fluids and toileting only need to be documented once per shift"
+      ],
+      "answer": 2,
+      "why": "A complete restraint check includes circulation, skin, position, range of motion, and fluids and toileting offered; leaving out a required element is a documented gap even if the physically checked items look fine. This requirement is not limited to pediatric patients and is not satisfied by a single once-per-shift note.",
+      "lesson": "ed-epic-charting-l05",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-epic-charting-q050",
+      "q": "A patient in violent restraints was placed at 0900. Per common policy intervals, when would the adult restraint order need its first renewal?",
+      "choices": [
+        "Restraint orders never expire once written",
+        "Every hour",
+        "Every 2 hours",
+        "Every 4 hours, commonly, for adults 18 and over"
+      ],
+      "answer": 3,
+      "why": "Adult violent or self-destructive restraint orders commonly renew every 4 hours, compared with every 2 hours for ages 9 to 17 and every 1 hour under age 9. Orders are always time-limited, not indefinite.",
+      "lesson": "ed-epic-charting-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-epic-charting-q051",
+      "q": "A tech performs a point-of-care glucose that interfaces automatically to the chart. What should the tech still confirm?",
+      "choices": [
+        "That the value actually filed to the correct patient's chart",
+        "The patient's insurance eligibility for the test",
+        "That the device has been calibrated within the past year",
+        "Nothing, since the device transmission is always reliable"
+      ],
+      "answer": 0,
+      "why": "Interfaced devices usually transmit correctly, but confirming the value actually filed under the right patient is the safety check that catches the rare failure, since an unfiled or misfiled result behaves as if the test never happened. Insurance eligibility and annual calibration records are not tasks that fall to the tech at the bedside.",
+      "lesson": "ed-epic-charting-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-epic-charting-q052",
+      "q": "A tech applies a splint and writes: 'Splint applied. Patient comfortable.' What is missing that the department's standard requires?",
+      "choices": [
+        "Nothing; comfort is the most important outcome",
+        "The pre- and post-application neurovascular checks: pulse, motor, sensation, and capillary refill distal to the injury",
+        "The name of the splint manufacturer",
+        "The time the physician ordered the splint"
+      ],
+      "answer": 1,
+      "why": "Neurovascular checks before and after are the fixed spine of splint documentation because they are the evidence that circulation and nerve function were intact at each point; comfort is a separate and lesser observation. Manufacturer name and order time do not substitute for that clinical evidence.",
+      "lesson": "ed-epic-charting-l06",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-epic-charting-q053",
+      "q": "A tech draws blood and documents 'venipuncture performed, sample sent.' What key elements are missing compared to the department standard?",
+      "choices": [
+        "The patient's insurance information",
+        "Nothing is missing; this documents the essential fact",
+        "Time of collection, site, tubes collected, and number of attempts",
+        "The ordering provider's full name"
+      ],
+      "answer": 2,
+      "why": "Complete blood draw documentation includes the collection time, site, which tubes were drawn, and the number of attempts, because those details drive both clinical trend timing and escalation decisions for difficult sticks. The ordering provider and insurance are recorded elsewhere and are not part of the collection note.",
+      "lesson": "ed-epic-charting-l06",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-epic-charting-q054",
+      "q": "An EKG is acquired on a patient with a below-elbow amputation, requiring nonstandard lead placement. What should the documentation include beyond the standard elements?",
+      "choices": [
+        "The tech's own interpretation of what the abnormal leads mean",
+        "A separate incident report about the amputation",
+        "Nothing additional; the standard elements are always sufficient",
+        "A note about the nonstandard placement, since it changes how the tracing should be read"
+      ],
+      "answer": 3,
+      "why": "Nonstandard lead placement changes the reliability of certain lead findings, so noting it helps the interpreting clinician read the tracing correctly. Interpretation remains outside tech scope, and an amputation noted in the history is not itself an incident requiring a safety report.",
+      "lesson": "ed-epic-charting-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-epic-charting-q055",
+      "q": "A tech applies restraints and documents the type, location, time applied, and the order authorizing them. What comes next in the documentation process?",
+      "choices": [
+        "The ongoing monitoring record begins, with checks at the ordered and policy frequency, commonly every 15 minutes",
+        "A single follow-up note at the end of the shift",
+        "Only the physician documents anything further",
+        "Nothing further is required until the order expires"
+      ],
+      "answer": 0,
+      "why": "Application documentation is the start, not the end, of restraint charting; the monitoring record with frequent interval checks is the ongoing requirement and is frequently the tech's responsibility at the bedside. A single end-of-shift note does not meet the interval requirement, and physicians document the face-to-face evaluation, not the routine interval checks.",
+      "lesson": "ed-epic-charting-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-epic-charting-q056",
+      "q": "A tech collects a clean catch urine specimen but skips giving the patient instructions on the technique. What is the risk?",
+      "choices": [
+        "None, since the collection method does not affect results",
+        "A contaminated specimen, which can produce a false result and lead to treating an infection the patient does not have",
+        "The specimen will simply be rejected automatically by the lab regardless of technique",
+        "The risk only applies to pediatric patients"
+      ],
+      "answer": 1,
+      "why": "Clean catch technique exists specifically to avoid skin and periurethral contamination that produces a false positive culture, which can lead to unnecessary antibiotic treatment. The lab does not automatically detect all contamination, and the risk applies to any patient, not only pediatric ones.",
+      "lesson": "ed-epic-charting-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-epic-charting-q057",
+      "q": "A tech scans a patient's wristband before collecting a specimen but has not yet printed the labels. What should happen next in the correct sequence?",
+      "choices": [
+        "Print labels for several patients at once to save time, then sort them later",
+        "Collect the specimen first, then print and scan labels afterward at the workstation",
+        "Print the labels at the bedside, collect the specimen, then label and scan in the room before leaving",
+        "Skip printing and handwrite the labels from memory"
+      ],
+      "answer": 2,
+      "why": "The correct order keeps identity verification and labeling anchored to the bedside: print there, collect, then label and scan before leaving the room. Collecting first and labeling later, handwriting from memory, or batching multiple patients' labels all reopen the identity gap the workflow is built to close.",
+      "lesson": "ed-epic-charting-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-epic-charting-q058",
+      "q": "A tech verifies a patient's identity by asking, 'You're Maria Lopez, born in 1990, right?' and the sedated patient nods. What is wrong with this verification?",
+      "choices": [
+        "The date of birth should have been given in full, not just the year",
+        "Verification is unnecessary once the wristband has already been scanned",
+        "Nothing; a nod confirms identity adequately",
+        "It is a yes-or-no confirmation rather than the patient independently stating their name and date of birth, which sedated patients may agree to regardless of accuracy"
+      ],
+      "answer": 3,
+      "why": "Asking a sedated or confused patient to confirm a stated identity invites agreement regardless of accuracy, which is exactly the failure mode two-identifier verification is designed to prevent. The problem is the confirmation format, not the precision of the birth year, and a wristband scan does not replace verbal identity verification.",
+      "lesson": "ed-epic-charting-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-epic-charting-q059",
+      "q": "A tech discovers a mislabeled tube before it has left the department. What is the appropriate action?",
+      "choices": [
+        "Discard it and recollect after re-verifying identity at the bedside, the same as if it had already been sent",
+        "Send it anyway since the error was caught early",
+        "Ask the patient which label is correct",
+        "Relabel it correctly since it has not been sent yet"
+      ],
+      "answer": 0,
+      "why": "A tube's identity chain is broken the moment the wrong label goes on it, regardless of whether it has physically left the department, so relabeling and sending are both unacceptable; the specimen must be discarded and recollected. Asking the patient does not restore a verifiable chain of custody.",
+      "lesson": "ed-epic-charting-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-epic-charting-q060",
+      "q": "The MAR shows a patient received 4 mg of intravenous morphine 15 minutes ago. The nurse asks the tech to ambulate the patient to the bathroom. What should the tech do?",
+      "choices": [
+        "Ambulate as requested without further thought, since the nurse authorized it",
+        "Note the recent opioid dose and ensure the ambulation is done with close assistance or raise the timing with the nurse before proceeding alone",
+        "Refuse to ambulate the patient at all until the medication fully wears off",
+        "Ambulate but skip the walking pulse oximetry reading to save time"
+      ],
+      "answer": 1,
+      "why": "Reading the MAR before ambulating is exactly the safety habit that catches a sedation risk like recent opioid dosing, so raising it or providing closer assistance is the appropriate response rather than blind compliance. Outright refusal is not the tech's call to make alone, and skipping a walking oximetry reading removes a safety check rather than adding one.",
+      "lesson": "ed-epic-charting-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-epic-charting-q061",
+      "q": "A tech sees a hemoglobin of 6.4 g/dL flagged on the results screen. What best characterizes this value?",
+      "choices": [
+        "A result that should be reported to the patient directly by the tech for transparency",
+        "A mildly abnormal result that can be addressed at the next provider check-in",
+        "A critical value representing an immediate threat to life, requiring direct in-person notification",
+        "A value only relevant to inpatient units, not the ED"
+      ],
+      "answer": 2,
+      "why": "A hemoglobin under roughly 7 g/dL is commonly treated as a critical value requiring urgent attention, which calls for the same in-person, immediate notification as any other critical result. It is not something to defer to a later check-in, it applies fully in the ED, and it is never disclosed to the patient by a tech.",
+      "lesson": "ed-epic-charting-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-epic-charting-q062",
+      "q": "A result on the screen shows an 'H' next to a potassium value of 5.4 mEq/L. How should the tech interpret this flag compared to a critical value marker?",
+      "choices": [
+        "It means the sample was rejected by the lab",
+        "It means the result has not yet resulted",
+        "It is identical to a critical value and requires the same urgent in-person notification",
+        "It indicates the value is above the reference range but is a lower-tier flag than a critical marker like HH, which represents an immediate threat to life"
+      ],
+      "answer": 3,
+      "why": "A single-letter H or L flag marks a value outside normal range, which is a different tier than a distinct critical marker such as HH or LL reserved for immediate life threats. It does not indicate rejection or a pending status, both of which display differently.",
+      "lesson": "ed-epic-charting-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-epic-charting-q063",
+      "q": "A tech is asked by a patient's family member what the lab results show. What is the correct response?",
+      "choices": [
+        "Decline to interpret or share results, and direct the question to the nurse or provider",
+        "Explain only the normal values and skip the abnormal ones",
+        "Say the results look fine to avoid alarming the family",
+        "Read the flagged values from the screen since the family is asking directly"
+      ],
+      "answer": 0,
+      "why": "Techs do not interpret or report results to patients or families; that is a licensed clinician's role, so the correct move is to route the question to the nurse or provider. Selectively sharing normal values or offering false reassurance are both a form of reporting results outside scope.",
+      "lesson": "ed-epic-charting-l08",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-epic-charting-q064",
+      "q": "A tech wants to send a message about a patient's vital signs trend to the assigned nurse, who is currently in another room with a stable patient. What is the appropriate channel?",
+      "choices": [
+        "Wait until the end of shift to mention it",
+        "Secure chat, since this is routine information rather than an emergent change",
+        "An overhead page to the entire department",
+        "A personal text message for speed"
+      ],
+      "answer": 1,
+      "why": "Routine information fits secure chat, which is the correct rung of the escalation ladder for non-urgent updates; overhead paging and personal texting are reserved for urgent or emergent situations and are not appropriate, respectively, sanctioned and safe for this. Waiting until end of shift delays information that may still matter sooner.",
+      "lesson": "ed-epic-charting-l09",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-epic-charting-q065",
+      "q": "A chest pain protocol order set fires at triage before a provider has evaluated the patient. What best describes this order set?",
+      "choices": [
+        "A billing code bundle with no clinical bearing",
+        "An informal suggestion that the tech may choose to follow",
+        "A pre-approved bundle of orders, written and authorized in advance by the department's physicians, meant to start time-critical care early",
+        "An order that only becomes valid once a provider co-signs it later"
+      ],
+      "answer": 2,
+      "why": "Protocol orders are pre-approved by the department's physicians specifically so care can start before an individual provider evaluation, which is the entire point of triage protocols. They are active orders, not suggestions, and not conditioned on a later co-signature to be actionable now, and they carry direct clinical weight.",
+      "lesson": "ed-epic-charting-l09",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-epic-charting-q066",
+      "q": "A stroke protocol includes a point-of-care glucose, a non-contrast head CT, and labs. A tech is asked which to prioritize first. What is correct?",
+      "choices": [
+        "The labs, since a full chemistry panel guides every other decision",
+        "All three should be attempted simultaneously by the same tech regardless of order",
+        "The head CT, since imaging is always first",
+        "The glucose, since hypoglycemia can mimic a stroke and is quickly correctable"
+      ],
+      "answer": 3,
+      "why": "A rapid glucose check comes first because it rules out a fully reversible stroke mimic within minutes, which changes the entire pathway if positive. Imaging and labs both follow immediately but do not precede this quick, high-value check, and a single tech doing everything simultaneously is not a realistic or correct workflow.",
+      "lesson": "ed-epic-charting-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-epic-charting-q067",
+      "q": "A department's boarding hours metric is climbing. Which documentation practice most directly affects the accuracy of that number?",
+      "choices": [
+        "The accuracy and timeliness of the admission decision timestamp and subsequent bed-assignment updates",
+        "How many EKGs are performed per shift",
+        "The number of secure chat messages sent",
+        "How quickly techs draw blood cultures"
+      ],
+      "answer": 0,
+      "why": "Boarding hours are calculated from the timestamp of the admission decision to the time an inpatient bed is actually assigned, so accuracy in those specific entries drives the metric directly. Blood culture speed, EKG volume, and chat message counts are unrelated to this particular measurement.",
+      "lesson": "ed-epic-charting-l09",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-epic-charting-q068",
+      "q": "A chart review finds a blank pain reassessment field after a patient received an opioid. What does this typically indicate to an auditor?",
+      "choices": [
+        "The patient reported no pain at all, so nothing needed to be written",
+        "A missed reassessment, since pain reassessment after an intervention is a specifically audited compliance measure",
+        "The pain score was recorded elsewhere and does not need to appear here",
+        "Reassessment is only required for non-opioid pain medications"
+      ],
+      "answer": 1,
+      "why": "Post-intervention pain reassessment is tracked as its own compliance percentage, so a blank field reads as a missed step rather than an assumption of zero pain. It is required specifically after interventions including opioids, and a blank field is not interpreted as documentation existing somewhere else by default.",
+      "lesson": "ed-epic-charting-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-epic-charting-q069",
+      "q": "A tech writes, 'Patient refused to answer questions and seemed hostile.' What is the issue with this entry?",
+      "choices": [
+        "It should include the tech's opinion of why the patient behaved this way",
+        "Nothing; it accurately conveys the interaction",
+        "It states a characterization ('hostile') rather than an observable fact; a better entry would quote or describe specific behavior",
+        "It is too short to be useful"
+      ],
+      "answer": 2,
+      "why": "'Hostile' is a subjective label, whereas a description like a direct quote or a specific observed action would let a stranger verify what happened. Length is not the issue, and adding an opinion about motive moves further from objective documentation, not toward it.",
+      "lesson": "ed-epic-charting-l10",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-epic-charting-q070",
+      "q": "A tech is asked to chart a medication order using the abbreviation 'QOD' for every other day. What is the correct handling?",
+      "choices": [
+        "Use Q.O.D. with periods to make it clearer",
+        "QOD is fine as long as it is handwritten rather than typed",
+        "Use QOD, since it is a widely recognized shorthand",
+        "Avoid QOD; it is on the do-not-use list because it can be misread as QD or QID, so 'every other day' should be spelled out"
+      ],
+      "answer": 3,
+      "why": "QOD and its punctuated form are both on the Joint Commission do-not-use list because of a documented risk of misreading as daily or four-times-daily dosing, so the phrase should be spelled out. Adding periods does not resolve the ambiguity, and the prohibition applies to both handwritten and typed entries.",
+      "lesson": "ed-epic-charting-l10",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-epic-charting-q071",
+      "q": "A tech built a SmartPhrase for splint documentation months ago. Today he uses it on a new patient without reading the expanded text before filing it. What is the risk?",
+      "choices": [
+        "The template could file details from a prior patient, such as the wrong limb or side, if not read and edited for the current patient",
+        "SmartPhrases automatically update themselves for each patient",
+        "The risk only applies to free-text notes, not templates",
+        "None, since the template was already reviewed once when it was built"
+      ],
+      "answer": 0,
+      "why": "A template is only as accurate as the review before filing; expanding it without reading risks carrying over details like the wrong limb from whenever it was last used or built. Templates do not auto-update patient-specific facts, and the same risk applies to any structured shortcut, not only free text.",
+      "lesson": "ed-epic-charting-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-epic-charting-q072",
+      "q": "During a two-hour downtime, a tech records vitals on paper. What should the paper record include to support accurate back-entry later?",
+      "choices": [
+        "Approximate times, since exact times can be reconstructed later from memory",
+        "The real time each measurement was taken, written at the time it happened",
+        "Only the final set of vitals before the system returns",
+        "No times are needed since paper records are temporary"
+      ],
+      "answer": 1,
+      "why": "Real times recorded as they happen are exactly what back-entry depends on to preserve the true clinical timeline once the system returns. Reconstructing times from memory later is unreliable, and recording only the final set or omitting times entirely loses the individual data points the record requires.",
+      "lesson": "ed-epic-charting-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-epic-charting-q073",
+      "q": "A tech wants to look up how to mark an order as 'unable to obtain' but does not want to interrupt the busy charge nurse. What is the better resource?",
+      "choices": [
+        "Ask the patient how the last tech handled it",
+        "Guess at the workflow and hope it is correct",
+        "A tip sheet from the educator or a designated super-user",
+        "Skip documenting the attempt entirely until someone happens to explain it"
+      ],
+      "answer": 2,
+      "why": "Tip sheets and super-users exist specifically so common workflow questions do not have to interrupt the busiest person in the department. Guessing risks an incorrect entry, skipping documentation leaves an order looking unaddressed, and a patient cannot answer a system workflow question.",
+      "lesson": "ed-epic-charting-l10",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-epic-charting-q074",
+      "q": "A tech corrects a wrong vital sign entry in the system. What happens to the original entry?",
+      "choices": [
+        "It is hidden from everyone except the original tech",
+        "It is automatically forwarded to compliance as a violation",
+        "It is permanently deleted and replaced by the new value",
+        "It is retained, marked as modified, with a record of who changed it and when"
+      ],
+      "answer": 3,
+      "why": "Corrections in a modern EHR never erase the original value; the system keeps it, flags it as modified, and records who made the change and when, which is what makes the audit trail trustworthy. It is not hidden from other authorized viewers, and a routine correction is not automatically treated as a compliance violation.",
+      "lesson": "ed-epic-charting-l10",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-epic-charting-q075",
+      "q": "A tech is orienting to a new department and wants to practice charting workflows without risking a real patient's record. What is the appropriate resource?",
+      "choices": [
+        "Use the training environment, which Epic calls Playground, built for practicing on fake patients",
+        "Ask a nurse to let the tech chart under the nurse's login as practice",
+        "Skip practice and learn entirely by trial and error on live patients",
+        "Practice directly in a real patient's chart during a slow moment"
+      ],
+      "answer": 0,
+      "why": "A dedicated training environment exists precisely so mistakes during learning carry no real consequence. Practicing in a live chart or under someone else's login both create real, attributable errors, and skipping structured practice entirely increases the odds of a live mistake.",
+      "lesson": "ed-epic-charting-l10",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-epic-charting-q076",
+      "q": "A tech is drawing labs on a patient with a documented shellfish allergy. Which piece of equipment choice is most directly affected by an allergy entry, separate from the shellfish allergy itself?",
+      "choices": [
+        "The size of the adhesive bandage applied afterward",
+        "Latex-containing gloves or tourniquets, if a latex allergy is also documented",
+        "The color of the specimen tube caps",
+        "The brand of alcohol swab used"
+      ],
+      "answer": 1,
+      "why": "A documented latex allergy changes glove and tourniquet selection directly, which is the kind of allergy entry most relevant to a tech's equipment choices during a draw. Tube cap colors are standardized by test type rather than allergy status, and swab brand and bandage size are not driven by allergy documentation.",
+      "lesson": "ed-epic-charting-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-epic-charting-q077",
+      "q": "A tech is told a patient is 'full code.' What does this mean for the tech's actions if the patient suddenly loses a pulse?",
+      "choices": [
+        "It only applies to inpatient units, not the ED",
+        "No resuscitative measures should be started until a provider arrives",
+        "All standard resuscitative measures are appropriate and expected, without a limitation on intervention",
+        "It means the patient wants no IV access"
+      ],
+      "answer": 2,
+      "why": "Full code means the patient wants and is to receive all standard resuscitative measures, so appropriate action begins immediately rather than waiting. It does not restrict IV access, and code status applies in the ED exactly as it does elsewhere.",
+      "lesson": "ed-epic-charting-l03",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-epic-charting-q078",
+      "q": "A provider places an order for hourly neurologic checks on a head injury patient. Two hours pass with only one documented check. What should the tech recognize?",
+      "choices": [
+        "Neurologic checks are optional once a CT scan is complete",
+        "Only the nurse, not the tech, is responsible for neuro checks",
+        "This is acceptable since the patient's condition presumably has not changed",
+        "This is a documented gap against an ordered frequency, the kind flagged immediately in any chart review"
+      ],
+      "answer": 3,
+      "why": "An ordered frequency defines how often a check must appear in the flowsheet, and one check across two hours against an hourly order is a clear gap regardless of assumed stability. A completed CT does not cancel an active order for ongoing checks, and in many departments timed neuro checks fall to the tech, similar to timed vitals.",
+      "lesson": "ed-epic-charting-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-epic-charting-q079",
+      "q": "A tech is unsure whether an order for 'ambulate with pulse ox' has been acknowledged by anyone yet. What is the risk of proceeding without checking?",
+      "choices": [
+        "Two techs might duplicate the task, or it could go undone if everyone assumes someone else has it",
+        "The order will automatically expire if not acknowledged within an hour",
+        "Acknowledgment only matters for medication-related orders",
+        "None; ambulation orders do not need acknowledgment"
+      ],
+      "answer": 0,
+      "why": "Acknowledgment exists to prevent exactly this: duplicated effort or an orphaned task nobody claims, which applies to any tech-routed order including ambulation. Orders generally do not auto-expire from lack of acknowledgment, and the acknowledgment concept is not limited to medication orders, which techs do not handle in the MAR anyway.",
+      "lesson": "ed-epic-charting-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-epic-charting-q080",
+      "q": "A flowsheet shows a temperature of 38.9 with no route specified. Why does the missing route matter?",
+      "choices": [
+        "It does not matter, since a number is a number",
+        "Oral, temporal, rectal, and core temperatures can differ meaningfully, so the route affects how the value should be interpreted",
+        "Only pediatric temperatures need a route documented",
+        "Route only matters if the temperature is below normal"
+      ],
+      "answer": 1,
+      "why": "Different measurement routes read differently for the same physiological temperature, so route is part of the measurement's meaning, not an optional detail. This applies across ages, not only pediatrics, and matters for both elevated and low readings.",
+      "lesson": "ed-epic-charting-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-epic-charting-q081",
+      "q": "A tech notices a blood pressure of 68/40 was just filed by a monitor interface with no accompanying tech or nurse note. What is the correct next step?",
+      "choices": [
+        "Chart a note explaining the monitor's history without telling anyone",
+        "Assume the monitor is malfunctioning and ignore it",
+        "Verify the reading and immediately tell the nurse, since an unusually low pressure needs a human response regardless of how it got charted",
+        "Wait for the next automatic reading to see if it repeats"
+      ],
+      "answer": 2,
+      "why": "A critically low pressure needs a verified check and immediate communication to the nurse regardless of the source of the number, because the clinical risk does not wait for a second automated reading. Assuming malfunction or waiting silently both risk missing a real deterioration.",
+      "lesson": "ed-epic-charting-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-epic-charting-q082",
+      "q": "A tech collects a wound culture and needs to describe drainage in the chart. Which description fits the objective standard?",
+      "choices": [
+        "Gross drainage, probably infected",
+        "Drainage present, will need antibiotics",
+        "Infected-looking drainage, moderate amount",
+        "Moderate amount of yellow, foul-smelling drainage"
+      ],
+      "answer": 3,
+      "why": "Describing amount, color, and odor gives a verifiable, objective picture without diagnosing. The other options either diagnose infection or predict treatment, both outside the scope of tech documentation.",
+      "lesson": "ed-epic-charting-l06",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-epic-charting-q083",
+      "q": "A tech places a peripheral IV that took two attempts and two people to complete. What must the documentation reflect about the second person's involvement?",
+      "choices": [
+        "That a second person was involved and their role in completing the line, along with the attempt count",
+        "The second person's involvement should be omitted to keep the note simple",
+        "Only the gauge of the catheter needs to be recorded",
+        "Nothing; only the final successful attempt needs to be noted"
+      ],
+      "answer": 0,
+      "why": "Complete IV documentation records who was involved when it took two people, along with the attempt count, gauge, site, and outcome, because that information matters for both the clinical record and any later review. Omitting the second person or reducing the note to just the gauge leaves out details the standard requires.",
+      "lesson": "ed-epic-charting-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-epic-charting-q084",
+      "q": "A patient is transported off the unit for an MRI while on a cardiac monitor. Midway through, the transporting tech is asked to also help lift another patient in the hallway, leaving the monitored patient briefly. What is the concern?",
+      "choices": [
+        "None, since the monitor continues recording automatically either way",
+        "A monitored patient left unattended, even briefly, breaks the chain of observation the transport record is meant to document, and coverage should be arranged before stepping away",
+        "The concern only applies if the patient is a fall risk",
+        "This is standard practice and needs no special handling"
+      ],
+      "answer": 1,
+      "why": "The transport record exists to prove continuous observation, so stepping away without arranging coverage creates a real gap regardless of whether the monitor itself keeps recording data. This is not limited to fall-risk patients, and leaving a monitored patient unattended is not standard, acceptable practice.",
+      "lesson": "ed-epic-charting-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-epic-charting-q085",
+      "q": "A patient is due for a scheduled type and screen. The tech notices the patient's wristband number does not match the blood bank band number on file. What should happen?",
+      "choices": [
+        "Ask the patient which number is correct and proceed with their answer",
+        "Draw the sample anyway since the ED wristband is the primary identifier",
+        "Stop and resolve the mismatch before collecting, since blood bank identity discrepancies are rejected rather than worked around",
+        "Draw the sample and note the discrepancy in a comment"
+      ],
+      "answer": 2,
+      "why": "Blood bank identity requirements are stricter than routine labs precisely because a mismatch risks a fatal transfusion reaction, so any discrepancy must be resolved before collection rather than documented around. A patient's own guess about which number is correct does not restore a verifiable identity link.",
+      "lesson": "ed-epic-charting-l07",
+      "difficulty": 3
+    }
+  ]
+}

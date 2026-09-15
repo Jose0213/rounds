@@ -1,0 +1,2842 @@
+{
+ "schema": 1,
+ "id": "ed-tech-competency",
+ "title": "ED Technician Competency Exam",
+ "blurb": "The written competency exam hospitals give new ED technicians at orientation and repeat annually, covering vitals, EKG, phlebotomy, procedures, safety, and triage flow. Each attempt here draws 80 questions from this pool by section weight.",
+ "minutes": 90,
+ "count": 80,
+ "sections": [
+  {
+   "id": "vitals",
+   "title": "Vitals & Monitoring",
+   "weight": 0.2
+  },
+  {
+   "id": "ekg",
+   "title": "12-Lead & Rhythms",
+   "weight": 0.15
+  },
+  {
+   "id": "lab",
+   "title": "Phlebotomy & Specimens",
+   "weight": 0.2
+  },
+  {
+   "id": "proc",
+   "title": "Splints, Wounds & Procedures",
+   "weight": 0.15
+  },
+  {
+   "id": "safety",
+   "title": "Safety, Infection Control & Restraints",
+   "weight": 0.15
+  },
+  {
+   "id": "flow",
+   "title": "Triage, Flow & Communication",
+   "weight": 0.15
+  }
+ ],
+ "questions": [
+  {
+   "id": "ed-tech-competency-q0001",
+   "section": "vitals",
+   "q": "An adult patient's manual blood pressure is auscultated at 118/76 mmHg with a pulse of 72. Which finding requires the tech to alert the nurse immediately rather than just chart it?",
+   "choices": [
+    "None of these values require immediate reporting",
+    "A diastolic of 76 mmHg",
+    "A systolic of 118 mmHg",
+    "A heart rate of 72 beats per minute"
+   ],
+   "answer": 0,
+   "why": "All three values are within normal adult ranges (systolic 90-120, diastolic 60-80, pulse 60-100), so nothing here needs escalation. A tech who reports every normal vital as urgent trains staff to tune out real alerts.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0002",
+   "section": "vitals",
+   "q": "A pulse oximeter reads 100% on a patient found unresponsive with cherry-red skin after a house fire. What should the tech suspect?",
+   "choices": [
+    "The probe is malfunctioning and needs replacing",
+    "Carbon monoxide poisoning, because pulse ox cannot distinguish carboxyhemoglobin from oxyhemoglobin",
+    "The patient is fully oxygenated and stable",
+    "Nail polish is causing a false low reading"
+   ],
+   "answer": 1,
+   "why": "Standard pulse oximetry measures light absorption and cannot tell carboxyhemoglobin from normal oxyhemoglobin, so CO poisoning gives a falsely reassuring high SpO2. A malfunctioning probe usually reads erratic or no signal, not a smooth 100%, and this patient is clearly unstable, not stable.",
+   "difficulty": 3
+  },
+  {
+   "id": "ed-tech-competency-q0003",
+   "section": "vitals",
+   "q": "Which patient position and cuff size error most commonly causes a falsely elevated blood pressure reading?",
+   "choices": [
+    "Cuff too large for the arm, arm at heart level",
+    "Cuff placed over a thin shirt sleeve",
+    "Cuff too small for the arm, arm hanging unsupported below heart level",
+    "Patient legs crossed with cuff sized correctly"
+   ],
+   "answer": 2,
+   "why": "An undersized cuff needs more pressure to occlude the brachial artery, and an unsupported arm below heart level adds hydrostatic pressure, both falsely raising the reading. An oversized cuff falsely lowers pressure, and legs crossed is a smaller, secondary source of error.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0004",
+   "section": "vitals",
+   "q": "An ED tech obtains orthostatic vital signs. After 2 minutes standing, the patient's heart rate rises from 78 to 115 and systolic BP drops from 122 to 98. How should this be interpreted?",
+   "choices": [
+    "Normal orthostatic response, no action needed",
+    "This only matters in patients over 65",
+    "The cuff was applied incorrectly",
+    "A positive orthostatic test suggesting volume depletion; report it"
+   ],
+   "answer": 3,
+   "why": "A positive orthostatic result is generally a heart rate increase of 30 or more, or a systolic drop of 20 mmHg or more (or diastolic drop of 10), on standing; both criteria are met here and suggest volume depletion that needs prompt reporting, not a repeat measurement first.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0005",
+   "section": "vitals",
+   "q": "Where should the pulse oximeter probe NOT be relied upon for an accurate reading?",
+   "choices": [
+    "A cold, vasoconstricted finger with poor perfusion or nail polish on the digit",
+    "An earlobe with good capillary refill",
+    "The index finger of a warm, well-perfused hand",
+    "The toe of a pediatric patient with no polish"
+   ],
+   "answer": 0,
+   "why": "Poor peripheral perfusion (cold extremities, shock, hypotension) and dark nail polish or acrylics can block or distort the light absorption the sensor depends on, producing unreliable readings. Warm fingers, clean earlobes, and pediatric toes without polish are all acceptable sites.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0006",
+   "section": "vitals",
+   "q": "A febrile 4-year-old has a temporal artery temperature of 39.4°C (102.9°F). What is the most appropriate next step for the tech?",
+   "choices": [
+    "Chart it and move on, this is normal for a toddler",
+    "Report the fever per protocol and prepare for possible antipyretic order or further workup",
+    "Recheck rectally only if the child looks well",
+    "Assume the thermometer is broken since it's higher than an axillary would read"
+   ],
+   "answer": 1,
+   "why": "A significant fever in a young child should be reported so the team can assess for source and consider antipyretics or further workup; it is not something to simply chart without notifying anyone. Temporal readings run close to core temperature, not falsely high, so equipment failure isn't the first assumption.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0007",
+   "section": "vitals",
+   "q": "Which vital sign route is generally considered the most accurate reflection of core body temperature in a hemodynamically unstable patient?",
+   "choices": [
+    "Oral",
+    "Axillary",
+    "Rectal or an internal (bladder/esophageal) probe when available",
+    "Tympanic"
+   ],
+   "answer": 2,
+   "why": "Rectal and internal core probes correlate most closely with true core temperature, especially important when perfusion is poor and peripheral routes become unreliable. Oral, axillary, and tympanic readings are more affected by ambient temperature, mouth breathing, or ear canal debris.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0008",
+   "section": "vitals",
+   "q": "A telemetry patient's monitor shows a heart rate of 42 with new-onset dizziness and diaphoresis. What is the tech's correct first action?",
+   "choices": [
+    "Silence the alarm since bradycardia isn't dangerous",
+    "Ask the patient to walk to the bathroom to see if it resolves",
+    "Document the rhythm and reassess in one hour",
+    "Immediately notify the nurse or provider and stay with the patient"
+   ],
+   "answer": 3,
+   "why": "Symptomatic bradycardia (dizziness, diaphoresis) paired with a rate this low is an unstable finding that needs immediate escalation and continuous observation, not a delayed reassessment. Silencing the alarm or having the patient ambulate could let a dangerous rhythm go unaddressed.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0009",
+   "section": "vitals",
+   "q": "Using the 0-10 numeric pain scale, a patient rates abdominal pain a 9 but is calmly texting on their phone and shows no distress behaviors. What should the tech do?",
+   "choices": [
+    "Document the patient's stated number as reported; self-report is the standard, and note behavioral observations separately",
+    "Assume the patient is exaggerating and chart a lower number",
+    "Refuse to document until the patient 'acts like' a 9",
+    "Round the score down to match observed behavior"
+   ],
+   "answer": 0,
+   "why": "Pain is subjective, and self-report using a validated scale is the gold standard regardless of how calm the patient appears; behavior alone does not override the patient's stated number. The tech should document both the number given and objective observations, not substitute a personal judgment for the reported score.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0010",
+   "section": "vitals",
+   "q": "For adult telemetry monitoring, correct placement of the right arm (white) lead is:",
+   "choices": [
+    "Left upper chest, below the clavicle",
+    "Right upper chest, below the clavicle",
+    "Right lower abdomen",
+    "Left lower rib margin"
+   ],
+   "answer": 1,
+   "why": "Standard 4- or 5-lead limb placement puts white (RA) on the right upper chest below the clavicle, black (LA) on the left upper chest, and the leg leads lower on each side (red/RL, green or LL depending on system). Reversing arm leads is a classic cause of monitor artifact that mimics rhythm changes.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0011",
+   "section": "vitals",
+   "q": "A normal resting heart rate range for a healthy adult at rest is generally accepted as:",
+   "choices": [
+    "40-60 beats per minute",
+    "100-120 beats per minute",
+    "60-100 beats per minute",
+    "50-90 beats per minute"
+   ],
+   "answer": 2,
+   "why": "60-100 bpm is the standard adult normal range used in most US clinical settings; rates below 60 (bradycardia) or above 100 (tachycardia) outside of a trained athlete's baseline warrant closer attention and documentation.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0012",
+   "section": "vitals",
+   "q": "A neonate's respiratory rate is measured at 58 breaths per minute at rest. This is:",
+   "choices": [
+    "Abnormally high and must be reported immediately",
+    "Indicative of respiratory distress requiring oxygen",
+    "Only normal if the infant is crying",
+    "Within the normal newborn range of roughly 30-60 breaths per minute"
+   ],
+   "answer": 3,
+   "why": "Newborn respiratory rates normally run 30-60 breaths per minute, faster than older children and adults, so 58 alone is not alarming. It becomes concerning when paired with grunting, retractions, nasal flaring, or sustained rates outside that range, not from the number in isolation.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0013",
+   "section": "vitals",
+   "q": "Which statement about manual blood pressure technique is correct?",
+   "choices": [
+    "The stethoscope diaphragm should be placed over the antecubital brachial artery, cuff inflated 20-30 mmHg above the point the palpated pulse disappears",
+    "The cuff should always be inflated to 250 mmHg regardless of patient",
+    "Korotkoff sounds are irrelevant to obtaining an accurate reading",
+    "The bladder of the cuff should cover less than 40% of the arm circumference"
+   ],
+   "answer": 0,
+   "why": "Correct technique inflates the cuff 20-30 mmHg past the palpated occlusion point to avoid missing an auscultatory gap, with the cuff bladder covering about 80% of the arm circumference, not less than 40%. A fixed 250 mmHg for every patient risks unnecessary discomfort and is not standard.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0014",
+   "section": "vitals",
+   "q": "A patient's SpO2 reads 88% on room air but the patient is talking in full sentences with no distress. What is the appropriate action?",
+   "choices": [
+    "Ignore the reading since the patient looks fine",
+    "Report the low reading; hypoxemia at this level requires evaluation even without obvious symptoms",
+    "Wait until the patient becomes symptomatic before reporting",
+    "Recheck in 4 hours as part of routine vitals"
+   ],
+   "answer": 1,
+   "why": "An SpO2 of 88% is significantly below the normal 94-100% range and needs prompt reporting regardless of how the patient appears, since compensation can mask early hypoxemia. Waiting for visible distress risks missing a deteriorating patient.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0015",
+   "section": "vitals",
+   "q": "The correct technique for an oral temperature measurement requires waiting how long after the patient has had hot or cold liquids or smoked, to avoid a false reading?",
+   "choices": [
+    "No waiting period is needed",
+    "About 5 minutes is always sufficient",
+    "About 15-30 minutes",
+    "2 hours minimum"
+   ],
+   "answer": 2,
+   "why": "Hot or cold intake, and smoking, can transiently change oral mucosal temperature, so guidance is to wait roughly 15-30 minutes before taking an accurate oral temperature. Skipping the wait or only waiting 5 minutes risks a skewed reading.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0016",
+   "section": "vitals",
+   "q": "A pediatric patient's blood pressure cuff is chosen based on:",
+   "choices": [
+    "The child's age only",
+    "Weight only, regardless of arm size",
+    "Whatever cuff is closest on the cart",
+    "Arm circumference, with the bladder width about 40% of the arm circumference and length covering 80-100%"
+   ],
+   "answer": 3,
+   "why": "Cuff sizing is based on the limb's actual circumference, not age or weight alone, because body proportions vary widely between children. An incorrectly sized cuff (too small or too large) skews the reading the same way it does in adults.",
+   "difficulty": 3
+  },
+  {
+   "id": "ed-tech-competency-q0017",
+   "section": "vitals",
+   "q": "Which of the following best describes 'orthostatic vital signs' testing?",
+   "choices": [
+    "Comparing BP and HR supine or sitting, then again after standing (or sitting) for 1-3 minutes, watching for a significant rise in HR or drop in BP",
+    "Taking BP and HR once while the patient is supine only",
+    "Taking a temperature before and after ambulation",
+    "Checking pulse ox with the patient lying on each side"
+   ],
+   "answer": 0,
+   "why": "Orthostatics compare vitals between a resting position and after a position change (typically standing 1-3 minutes), specifically looking for a heart rate rise of 30+ or systolic drop of 20+ mmHg that suggests volume depletion or autonomic dysfunction.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0018",
+   "section": "vitals",
+   "q": "A patient on a 5-lead telemetry system has a lead fall off, and the monitor shows a flatline with no alarm pattern consistent with the patient's appearance (awake, talking). The tech's first move should be:",
+   "choices": [
+    "Call a code immediately without checking the patient",
+    "Look at the patient and check the lead/electrode connections before assuming a true asystole",
+    "Silence the alarm permanently",
+    "Assume the monitor is broken and ignore it for the shift"
+   ],
+   "answer": 1,
+   "why": "Always assess the actual patient first; a disconnected lead or dislodged electrode is a far more common cause of a flatline artifact than true asystole in an alert, talking patient. Calling a code on artifact alone, or permanently silencing alarms, both create patient safety risks.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0019",
+   "section": "vitals",
+   "q": "Normal adult respiratory rate at rest is generally:",
+   "choices": [
+    "8-10 breaths per minute",
+    "24-30 breaths per minute",
+    "12-20 breaths per minute",
+    "30-40 breaths per minute"
+   ],
+   "answer": 2,
+   "why": "12-20 breaths per minute is the accepted adult resting range; rates below 12 (bradypnea) or above 20 (tachypnea) should prompt closer assessment, especially paired with abnormal SpO2 or mental status changes.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0020",
+   "section": "vitals",
+   "q": "A patient's temperature is documented as 38.9°C. Converted to Fahrenheit, roughly, this is:",
+   "choices": [
+    "97.8°F",
+    "100.2°F",
+    "104.5°F",
+    "102.0°F"
+   ],
+   "answer": 3,
+   "why": "Using F = (C x 9/5) + 32, 38.9°C converts to about 102.0°F, a significant fever that should be reported per protocol, not a normal or mildly elevated value.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0021",
+   "section": "vitals",
+   "q": "When taking a blood pressure on a patient with a fistula for dialysis in the left arm, the tech should:",
+   "choices": [
+    "Take the BP in the right arm (or per facility policy, thigh) and avoid the fistula arm entirely",
+    "Use the left arm since it's more accessible",
+    "Use the left arm but apply the cuff below the fistula",
+    "Ask the patient to make a fist during a left-arm reading to compensate"
+   ],
+   "answer": 0,
+   "why": "Cuff pressure on a fistula or graft arm can damage the vascular access needed for dialysis, so BP should be taken on the unaffected arm; this is a hard rule, not something modified by cuff placement location on the same arm.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0022",
+   "section": "vitals",
+   "q": "A patient's pulse is described as 'thready.' This term means:",
+   "choices": [
+    "Strong, bounding, and easy to palpate",
+    "Weak and rapid, difficult to palpate, often signaling poor perfusion",
+    "Perfectly normal in tone and rate",
+    "An irregular but strong pulse"
+   ],
+   "answer": 1,
+   "why": "A thready pulse is weak, often rapid, and hard to feel, classically associated with hypovolemia or shock states where stroke volume and perfusion are reduced; it is a concerning finding that should be reported, not a normal variant.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0023",
+   "section": "vitals",
+   "q": "The 'fifth vital sign' commonly referred to in ED workflow is:",
+   "choices": [
+    "Skin color",
+    "Capillary refill",
+    "Pain level",
+    "Level of consciousness"
+   ],
+   "answer": 2,
+   "why": "Pain is widely referred to as the fifth vital sign, assessed and documented alongside temperature, pulse, respirations, and blood pressure using a standardized scale appropriate to the patient's age and ability to communicate.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0024",
+   "section": "vitals",
+   "q": "Capillary refill time greater than how many seconds is generally considered delayed/abnormal in an adult?",
+   "choices": [
+    "1 second",
+    "6 seconds",
+    "4 seconds",
+    "2 seconds"
+   ],
+   "answer": 3,
+   "why": "A capillary refill time of more than about 2 seconds is generally considered delayed and can indicate poor peripheral perfusion; it should prompt a broader assessment of perfusion status, including vitals and skin findings.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0025",
+   "section": "vitals",
+   "q": "A tech notices a patient's blood pressure cuff was applied over a rolled-up sleeve. What error does this most likely cause?",
+   "choices": [
+    "A falsely elevated reading due to a tourniquet-like constriction effect from the bunched fabric",
+    "No effect on accuracy",
+    "A falsely low reading only",
+    "Only affects heart rate, not blood pressure"
+   ],
+   "answer": 0,
+   "why": "A rolled or bunched sleeve under the cuff can act like a tourniquet and also prevents proper cuff-to-limb contact, both of which tend to falsely elevate the reading; the cuff should be applied to bare skin or a single thin layer of clothing per protocol.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0026",
+   "section": "vitals",
+   "q": "Which combination of vital sign changes is most consistent with early compensated shock?",
+   "choices": [
+    "Bradycardia, hypertension, warm skin",
+    "Tachycardia, narrowing pulse pressure, cool/clammy skin, normal or slightly low blood pressure",
+    "Normal heart rate, wide pulse pressure, flushed skin",
+    "Bradypnea, bradycardia, warm dry skin"
+   ],
+   "answer": 1,
+   "why": "Early compensated shock shows tachycardia and vasoconstriction (cool, clammy skin) as the body maintains blood pressure by increasing heart rate and systemic vascular resistance; blood pressure itself may still look normal, making heart rate and skin signs the earlier clues.",
+   "difficulty": 3
+  },
+  {
+   "id": "ed-tech-competency-q0027",
+   "section": "vitals",
+   "q": "An ED tech is asked to obtain a set of vitals on a patient in 4-point restraints. In addition to standard vitals, what specific monitoring is required?",
+   "choices": [
+    "Nothing additional; standard vitals are sufficient",
+    "Only a pain score is needed",
+    "Circulation, sensation, and movement (neurovascular checks) of the restrained extremities at facility-specified intervals",
+    "Restrained patients do not need vitals since they are being closely watched anyway"
+   ],
+   "answer": 2,
+   "why": "Restrained patients require regular neurovascular checks (circulation, sensation, movement) of each restrained limb in addition to vital signs, documented at the intervals set by policy, because restraints themselves carry a risk of impaired circulation or nerve injury.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0028",
+   "section": "vitals",
+   "q": "The Glasgow Coma Scale (GCS) score is composed of which three components?",
+   "choices": [
+    "Pulse, respirations, blood pressure",
+    "Temperature, pain score, oxygen saturation",
+    "Pupil size, skin color, capillary refill",
+    "Eye opening, verbal response, motor response"
+   ],
+   "answer": 3,
+   "why": "GCS totals eye opening (max 4), verbal response (max 5), and motor response (max 6) for a maximum score of 15; it is a standardized way to communicate level of consciousness and track neurological changes over time.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0029",
+   "section": "vitals",
+   "q": "A patient's oxygen saturation is 91% and they are on 2L nasal cannula. The tech should:",
+   "choices": [
+    "Report the finding to the nurse/provider; oxygen device and flow changes require an order in most EDs",
+    "Increase the flow rate on their own without an order",
+    "Remove the cannula since it isn't working",
+    "Assume the pulse ox is defective"
+   ],
+   "answer": 0,
+   "why": "Even though hypoxemia needs prompt reporting, changing supplemental oxygen delivery or flow is typically outside tech scope and requires a nurse or provider order, except in specific protocol-driven or emergent situations defined by the facility.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0030",
+   "section": "vitals",
+   "q": "Which of these is a common cause of a falsely low pulse oximetry reading?",
+   "choices": [
+    "Well-perfused warm extremity",
+    "Nail polish, especially dark blue, black, or green shades",
+    "Bright ambient lighting in a well-lit room",
+    "Patient breathing room air normally"
+   ],
+   "answer": 1,
+   "why": "Dark nail polish (especially blue, black, or green) can absorb light in a way that interferes with the sensor and falsely lowers the reading; clear or light polish generally has minimal effect. A warm, well-perfused extremity and normal room air breathing do not cause false lows.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0031",
+   "section": "vitals",
+   "q": "A tech is asked to obtain a 'set of vitals' on a triage patient. This standard set typically includes:",
+   "choices": [
+    "Only pulse and blood pressure",
+    "Only pulse oximetry and pain score",
+    "Temperature, pulse, respirations, blood pressure, and pulse oximetry (with pain score as the fifth vital sign)",
+    "Blood pressure and temperature only"
+   ],
+   "answer": 2,
+   "why": "A complete standard vital sign set in most EDs includes temperature, pulse, respiratory rate, blood pressure, and SpO2, with a pain score commonly added; omitting any of these can miss an important clinical clue at triage.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0032",
+   "section": "vitals",
+   "q": "A patient's blood pressure is 152/94 on the first reading. What is the appropriate next step before reporting it as abnormal?",
+   "choices": [
+    "Report immediately without rechecking",
+    "Take the BP standing only, ignore sitting or supine values",
+    "Assume it's 'white coat' anxiety and disregard it",
+    "Recheck after the patient has rested a few minutes, using proper technique and correct cuff size, before treating a single reading as definitive"
+   ],
+   "answer": 3,
+   "why": "A single elevated reading can be affected by anxiety, recent activity, improper cuff size, or unsupported arm position, so best practice is to recheck with correct technique before treating it as the patient's true value; this doesn't mean ignoring or delaying appropriate reporting once confirmed.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0033",
+   "section": "vitals",
+   "q": "Which pediatric vital sign finding should be reported immediately as a red flag?",
+   "choices": [
+    "Respiratory rate of 60 with grunting and nasal flaring in an infant",
+    "Heart rate of 110 in a 2-year-old at rest",
+    "Temperature of 37.2°C in a toddler",
+    "Heart rate of 90 in a sleeping 8-year-old"
+   ],
+   "answer": 0,
+   "why": "Grunting, nasal flaring, and a markedly elevated respiratory rate in an infant are signs of significant respiratory distress requiring immediate reporting; the other values listed fall within normal pediatric ranges for the stated ages.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0034",
+   "section": "vitals",
+   "q": "The correct site for taking an infant's pulse when assessing during a code is:",
+   "choices": [
+    "Radial artery",
+    "Brachial or femoral artery",
+    "Carotid artery",
+    "Dorsalis pedis artery"
+   ],
+   "answer": 1,
+   "why": "In infants, the brachial or femoral artery is preferred for pulse checks because the short, chubby neck makes carotid palpation unreliable, unlike in older children and adults where carotid is standard during a code.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0035",
+   "section": "vitals",
+   "q": "A patient reports their pain as '10 out of 10' but is asleep when the tech checks on them. How should this be documented?",
+   "choices": [
+    "Chart the 10/10 as the current status since that's what was reported earlier",
+    "Wake the patient immediately to confirm the pain score",
+    "Reassess pain when the patient wakes and document current status, noting the patient was resting/asleep at the time of the check, not in acute distress",
+    "Automatically downgrade the score to a 5 based on observed rest"
+   ],
+   "answer": 2,
+   "why": "Pain should be reassessed and documented reflecting the patient's actual current status; noting that the patient is resting comfortably is clinically relevant information distinct from carrying forward an old self-reported number as if it were current.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0036",
+   "section": "vitals",
+   "q": "Tachypnea in an adult is generally defined as a respiratory rate above:",
+   "choices": [
+    "12 breaths per minute",
+    "16 breaths per minute",
+    "30 breaths per minute",
+    "20 breaths per minute"
+   ],
+   "answer": 3,
+   "why": "Tachypnea is defined as a resting respiratory rate above 20 breaths per minute in adults; it can be an early and sensitive sign of physiologic stress, including sepsis, pain, anxiety, or respiratory compromise.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0037",
+   "section": "vitals",
+   "q": "A patient's blood pressure differs by 20 mmHg systolic between the left and right arm. What should the tech do?",
+   "choices": [
+    "Report the discrepancy; a significant interarm difference can be clinically significant and should be brought to the nurse/provider's attention",
+    "Average the two numbers and chart that as the reading",
+    "Always trust the higher reading and ignore the lower",
+    "This is a normal, expected variation that needs no follow-up"
+   ],
+   "answer": 0,
+   "why": "A systolic difference of 15-20 mmHg or more between arms can be associated with vascular conditions such as aortic dissection or peripheral arterial disease and should be reported rather than averaged away or dismissed as routine variation.",
+   "difficulty": 3
+  },
+  {
+   "id": "ed-tech-competency-q0038",
+   "section": "vitals",
+   "q": "Bradycardia in an adult at rest is generally defined as a heart rate below:",
+   "choices": [
+    "50 beats per minute",
+    "60 beats per minute",
+    "70 beats per minute",
+    "80 beats per minute"
+   ],
+   "answer": 1,
+   "why": "A resting adult heart rate below 60 beats per minute is defined as bradycardia; it may be a normal finding in a fit athlete but should be correlated with symptoms and other vitals before being dismissed as benign.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0039",
+   "section": "vitals",
+   "q": "When measuring an axillary temperature, the correct technique includes:",
+   "choices": [
+    "Placing the probe over clothing to save time",
+    "Taking the reading immediately after the patient removes a heavy coat",
+    "Ensuring the axilla is dry and the probe tip is in direct contact with skin, arm held snug against the body for the required dwell time",
+    "Using the same technique and expecting oral-equivalent accuracy"
+   ],
+   "answer": 2,
+   "why": "Axillary readings require dry skin, direct probe-to-skin contact, and the arm held against the body for the device's specified time to get a usable (though generally lower and less precise than oral or core) reading; measuring over clothing or right after heavy outerwear removal introduces error.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0040",
+   "section": "vitals",
+   "q": "A patient's oral temperature reads 36.1°C. This value is:",
+   "choices": [
+    "A dangerously low hypothermic reading requiring immediate rewarming",
+    "Only acceptable if taken rectally instead",
+    "Impossible and indicates a broken thermometer",
+    "Within the low-normal range for an oral temperature (roughly 36.1-37.2°C is commonly cited as normal)"
+   ],
+   "answer": 3,
+   "why": "Normal oral temperature ranges are commonly cited around 36.1-37.2°C (97-99°F), so 36.1°C sits at the low end of normal rather than representing hypothermia, which is generally defined as a core temperature below 35°C.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0041",
+   "section": "ekg",
+   "q": "For a standard 12-lead EKG, where is electrode V1 placed?",
+   "choices": [
+    "4th intercostal space, right sternal border",
+    "4th intercostal space, left sternal border",
+    "5th intercostal space, left midclavicular line",
+    "2nd intercostal space, right sternal border"
+   ],
+   "answer": 0,
+   "why": "V1 goes in the 4th intercostal space at the right sternal border; V2 mirrors it at the left sternal border. Getting V1 and V2 one space too high is one of the most common precordial placement errors and can mimic anterior pathology.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0042",
+   "section": "ekg",
+   "q": "Lead V6 is correctly placed at:",
+   "choices": [
+    "2nd intercostal space, midclavicular line",
+    "5th intercostal space, midaxillary line, level with V4",
+    "4th intercostal space, anterior axillary line",
+    "7th intercostal space, posterior axillary line"
+   ],
+   "answer": 1,
+   "why": "V6 sits at the midaxillary line, level horizontally with V4 and V5, all in the 5th intercostal space; keeping V4-V6 on the same horizontal line is key to accurate precordial placement.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0043",
+   "section": "ekg",
+   "q": "A 12-lead EKG shows limb lead artifact with an unusual rightward axis and a rhythm that looks like it could be from a different heart. The most likely cause is:",
+   "choices": [
+    "Correct lead placement, this is a true finding",
+    "A normal variant with no significance",
+    "Right arm and left arm (RA/LA) lead reversal",
+    "Insufficient gel on the electrodes only"
+   ],
+   "answer": 2,
+   "why": "RA/LA reversal classically produces a negative lead I and can mimic dextrocardia or an unusual axis; comparing to prior EKGs and rechecking lead placement usually resolves the confusion before assuming a true cardiac abnormality.",
+   "difficulty": 3
+  },
+  {
+   "id": "ed-tech-competency-q0044",
+   "section": "ekg",
+   "q": "For a suspected inferior STEMI, the tech should also obtain which additional leads to evaluate for right ventricular and posterior involvement?",
+   "choices": [
+    "Standard 12-lead only, no additional leads needed",
+    "Additional limb leads on the legs only",
+    "Only a rhythm strip in lead II",
+    "Right-sided leads (V4R) and posterior leads (V7-V9)"
+   ],
+   "answer": 3,
+   "why": "Inferior STEMI (leads II, III, aVF) has a meaningful association with right ventricular infarction and posterior involvement, so right-sided V4R and posterior V7-V9 leads are obtained to detect ST changes standard leads can miss, which changes management (e.g., avoiding nitrates in RV involvement).",
+   "difficulty": 3
+  },
+  {
+   "id": "ed-tech-competency-q0045",
+   "section": "ekg",
+   "q": "The national benchmark goal for 'door-to-EKG' time in a patient with chest pain concerning for ACS is generally:",
+   "choices": [
+    "10 minutes or less",
+    "30 minutes",
+    "60 minutes",
+    "2 hours"
+   ],
+   "answer": 0,
+   "why": "Guidelines call for an EKG within 10 minutes of arrival for patients with symptoms concerning for acute coronary syndrome, since rapid identification of STEMI drives the door-to-balloon treatment timeline.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0046",
+   "section": "ekg",
+   "q": "On a rhythm strip, a regular rhythm at 150 bpm with narrow QRS complexes and no discernible P waves most likely represents:",
+   "choices": [
+    "Sinus tachycardia",
+    "Supraventricular tachycardia (SVT)",
+    "Ventricular tachycardia",
+    "Atrial fibrillation"
+   ],
+   "answer": 1,
+   "why": "SVT classically shows a regular, narrow-complex tachycardia, often around 150-250 bpm, with P waves buried or absent because the abnormal circuit is above the ventricles; sinus tachycardia usually shows visible P waves and a more gradual rate.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0047",
+   "section": "ekg",
+   "q": "Coarse, chaotic waveform with no identifiable P waves, QRS complexes, or organized rhythm on the monitor most likely represents:",
+   "choices": [
+    "Asystole",
+    "Atrial flutter",
+    "Ventricular fibrillation (VF)",
+    "First-degree AV block"
+   ],
+   "answer": 2,
+   "why": "Ventricular fibrillation shows a chaotic, disorganized waveform of varying amplitude with no coordinated electrical or mechanical activity; it is a shockable rhythm and a cardiac arrest emergency requiring immediate activation of the code team.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0048",
+   "section": "ekg",
+   "q": "A 'sawtooth' pattern of atrial activity on the rhythm strip, often best seen in lead II, III, or aVF, is classic for:",
+   "choices": [
+    "Atrial fibrillation",
+    "Third-degree heart block",
+    "Sinus arrhythmia",
+    "Atrial flutter"
+   ],
+   "answer": 3,
+   "why": "Atrial flutter produces the classic sawtooth flutter waves from a reentrant atrial circuit, typically at an atrial rate around 300 bpm with a variable ventricular response depending on the AV conduction ratio (commonly 2:1 or 4:1).",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0049",
+   "section": "ekg",
+   "q": "Atrial fibrillation is best described on a rhythm strip as:",
+   "choices": [
+    "Irregularly irregular rhythm with no discernible, consistent P waves",
+    "Regular rhythm with normal P waves before every QRS",
+    "Regular wide-complex rhythm at 150 bpm",
+    "A flatline with occasional QRS complexes"
+   ],
+   "answer": 0,
+   "why": "Afib is defined by chaotic atrial electrical activity producing an irregularly irregular ventricular response and absence of organized P waves, distinguishing it from the regular irregularity seen in some other rhythms like sinus arrhythmia or Wenckebach.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0050",
+   "section": "ekg",
+   "q": "A rhythm strip shows progressively lengthening PR intervals until a QRS is dropped, then the pattern repeats. This describes:",
+   "choices": [
+    "First-degree AV block",
+    "Second-degree AV block, Mobitz Type I (Wenckebach)",
+    "Second-degree AV block, Mobitz Type II",
+    "Third-degree (complete) AV block"
+   ],
+   "answer": 1,
+   "why": "Mobitz Type I (Wenckebach) is defined by progressively lengthening PR intervals culminating in a dropped QRS, then the cycle restarts; it is usually a more benign, often reversible block compared to Mobitz II, which drops beats without PR lengthening.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0051",
+   "section": "ekg",
+   "q": "Complete disassociation between P waves and QRS complexes, with P waves marching out at their own regular rate independent of a separate, usually slower, regular QRS rate, describes:",
+   "choices": [
+    "First-degree AV block",
+    "Mobitz Type II block",
+    "Third-degree (complete) heart block",
+    "Sinus arrhythmia"
+   ],
+   "answer": 2,
+   "why": "Third-degree block means atrial and ventricular activity are completely dissociated, each beating at its own independent rate, because no atrial impulses conduct through the AV node; it is a high-risk rhythm often requiring pacing.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0052",
+   "section": "ekg",
+   "q": "A patient's monitor shows no electrical activity at all, a flat line, confirmed in more than one lead. This is:",
+   "choices": [
+    "Ventricular fibrillation",
+    "Pulseless electrical activity",
+    "Sinus arrest",
+    "Asystole"
+   ],
+   "answer": 3,
+   "why": "Asystole is the complete absence of detectable electrical (and mechanical) cardiac activity; it should be confirmed by checking in at least two leads and verifying lead/cable connections before treating it as a true code rhythm rather than equipment failure.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0053",
+   "section": "ekg",
+   "q": "Standard limb lead placement for a 4-lead or 5-lead monitor puts the black (LA) electrode:",
+   "choices": [
+    "Left upper chest below the clavicle",
+    "Right upper chest below the clavicle",
+    "Right lower abdomen",
+    "Left lower abdomen or lateral chest"
+   ],
+   "answer": 0,
+   "why": "Black (left arm/LA) goes on the left upper chest below the clavicle, mirroring white (RA) on the right; correct limb lead placement matters for accurate rhythm interpretation and to avoid artifact that can mimic ectopy or axis shifts.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0054",
+   "section": "ekg",
+   "q": "Which is a common cause of 60-cycle (AC) interference/artifact on an EKG tracing?",
+   "choices": [
+    "Patient movement",
+    "Nearby electrical equipment or poor electrode grounding",
+    "Excessive gel on electrodes",
+    "Correct skin prep"
+   ],
+   "answer": 1,
+   "why": "60-cycle artifact appears as a fine, regular fuzzy baseline caused by nearby AC-powered equipment or poor grounding/electrode contact; it's distinct from the coarse, irregular artifact typically caused by patient movement or muscle tremor.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0055",
+   "section": "ekg",
+   "q": "Before applying EKG electrodes, proper skin prep for a diaphoretic or hairy patient includes:",
+   "choices": [
+    "Applying electrodes directly over hair and sweat to save time",
+    "Using twice the usual amount of gel instead of prepping the skin",
+    "Clipping excess hair, wiping with alcohol or a dry gauze to remove oils/sweat, and lightly abrading the skin per protocol to improve conduction",
+    "Applying lotion to the skin first for better adhesion"
+   ],
+   "answer": 2,
+   "why": "Good skin contact requires removing hair, oil, and moisture, and mild abrasion reduces skin impedance for a cleaner signal; skipping prep on a sweaty or hairy patient is a common cause of poor tracing quality, wandering baseline, and lead artifact.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0056",
+   "section": "ekg",
+   "q": "A wide, bizarre QRS complex tachycardia at a rate of 180, with no clear P waves, in a hemodynamically unstable patient most concerning for:",
+   "choices": [
+    "Sinus tachycardia with aberrancy",
+    "Normal sinus rhythm",
+    "Atrial fibrillation with rapid ventricular response",
+    "Ventricular tachycardia (VT)"
+   ],
+   "answer": 3,
+   "why": "A wide-complex, rapid, regular rhythm without clear P waves should be treated as ventricular tachycardia until proven otherwise, especially in an unstable patient, because assuming a benign cause and delaying escalation can be fatal.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0057",
+   "section": "ekg",
+   "q": "When acquiring a 12-lead EKG, the patient should be positioned:",
+   "choices": [
+    "Supine, still, and relaxed with limbs not crossed, breathing normally without talking",
+    "Sitting fully upright with legs dangling",
+    "Standing to get an accurate baseline",
+    "In any comfortable position since positioning doesn't affect tracing quality"
+   ],
+   "answer": 0,
+   "why": "Supine positioning with the patient still, limbs uncrossed, and not talking minimizes motion and muscle artifact; sitting upright or standing can shift the heart's position relative to the electrodes and introduce artifact, affecting tracing accuracy.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0058",
+   "section": "ekg",
+   "q": "ST-segment elevation, when significant and in the correct anatomic leads, on a 12-lead is most concerning for:",
+   "choices": [
+    "Old, resolved myocardial infarction",
+    "Acute ST-elevation myocardial infarction (STEMI)",
+    "Normal early repolarization only, never needs review",
+    "Atrial enlargement"
+   ],
+   "answer": 1,
+   "why": "New, significant ST elevation in anatomically contiguous leads is the hallmark finding used to identify STEMI and trigger rapid cath lab activation; while some ST elevation can be a benign variant, any new finding must be shown to a provider immediately, not filtered by the tech.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0059",
+   "section": "ekg",
+   "q": "Leads II, III, and aVF on a 12-lead correspond to which area of the heart?",
+   "choices": [
+    "Anterior wall",
+    "Lateral wall",
+    "Inferior wall",
+    "Septal wall"
+   ],
+   "answer": 2,
+   "why": "II, III, and aVF are the inferior leads, reflecting the inferior wall of the left ventricle typically supplied by the right coronary artery; ST changes localized to these leads point toward an inferior-wall event.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0060",
+   "section": "ekg",
+   "q": "Leads V1-V2 primarily reflect which area of the heart?",
+   "choices": [
+    "Lateral wall",
+    "High lateral wall",
+    "Inferior wall",
+    "Septal wall"
+   ],
+   "answer": 3,
+   "why": "V1 and V2 are septal leads, reflecting the interventricular septum; V3-V4 are anterior, and V5-V6 with I and aVL are lateral, which is why a full set of contiguous changes across specific lead groups helps localize the affected coronary territory.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0061",
+   "section": "ekg",
+   "q": "A patient with a permanent pacemaker has a rhythm strip showing a pacer spike before every QRS complex, each followed by a wide QRS. This is:",
+   "choices": [
+    "Expected paced rhythm; pacer spikes capturing and producing a paced QRS is normal for a properly functioning device",
+    "A malfunctioning pacemaker requiring immediate intervention",
+    "Ventricular fibrillation",
+    "Third-degree block with no pacing"
+   ],
+   "answer": 0,
+   "why": "Consistent pacer spikes immediately followed by a QRS (evidence of capture) is the expected appearance of a normally functioning ventricular-paced rhythm; concerning findings would be spikes without a following QRS (failure to capture) or absent spikes when the intrinsic rate is too slow (failure to pace).",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0062",
+   "section": "ekg",
+   "q": "The tech notices 'muscle tremor artifact' with a fine, irregular baseline during a 12-lead acquisition on an anxious, shivering patient. The best next step is:",
+   "choices": [
+    "Submit the tracing as-is without concern",
+    "Help the patient relax (warm blanket, reassurance), ensure they are not gripping the rails, and repeat the tracing if quality is poor",
+    "Increase electrode gel amount only",
+    "Discontinue the EKG entirely and cancel the order"
+   ],
+   "answer": 1,
+   "why": "Muscle tremor from shivering, anxiety, or gripping the bed rails creates a fuzzy, irregular baseline that can obscure important waveforms; addressing the underlying cause (warmth, reassurance, relaxed positioning) and repeating the tracing is the appropriate fix rather than submitting a poor-quality tracing or canceling the order outright.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0063",
+   "section": "ekg",
+   "q": "A rhythm strip shows a regular rhythm, normal P wave before every QRS, but the PR interval is fixed and prolonged at 0.28 seconds (normal upper limit about 0.20 sec). This is:",
+   "choices": [
+    "Normal sinus rhythm",
+    "Mobitz Type II block",
+    "First-degree AV block",
+    "Third-degree block"
+   ],
+   "answer": 2,
+   "why": "First-degree AV block is a consistently prolonged but fixed PR interval (greater than 0.20 seconds) with every P wave still conducting to a QRS; it is usually benign but should still be documented and reported per protocol, especially if new.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0064",
+   "section": "ekg",
+   "q": "When placing V4, the correct location is:",
+   "choices": [
+    "2nd intercostal space, midclavicular line",
+    "5th intercostal space, anterior axillary line",
+    "4th intercostal space, right sternal border",
+    "5th intercostal space, midclavicular line"
+   ],
+   "answer": 3,
+   "why": "V4 is placed at the 5th intercostal space, left midclavicular line, and is used as the anchor point for placing V5 and V6 along the same horizontal line at the anterior and midaxillary lines respectively.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0065",
+   "section": "ekg",
+   "q": "A tech is prepping a patient for an EKG and the patient has a right mastectomy with lymphedema in the right arm. Which adjustment, if any, is appropriate for lead placement?",
+   "choices": [
+    "Standard precordial (V1-V6) placement on the chest is unaffected by an arm condition; limb leads can be moved to the torso/shoulder area per protocol if the arm cannot be used, without changing interpretation significantly",
+    "Cancel the EKG entirely",
+    "Skip the right-sided precordial leads only",
+    "Double the number of electrodes used on the left side to compensate"
+   ],
+   "answer": 0,
+   "why": "Precordial lead positions are anatomic chest landmarks independent of arm status, so V1-V6 placement proceeds normally; limb leads can be relocated onto the torso (per standard modified limb lead technique) when a true limb site can't be used, without needing to cancel the study.",
+   "difficulty": 3
+  },
+  {
+   "id": "ed-tech-competency-q0066",
+   "section": "ekg",
+   "q": "Which finding on telemetry should prompt the tech to immediately get the nurse rather than just documenting it?",
+   "choices": [
+    "A stable sinus rhythm at 78 bpm",
+    "A new run of ventricular tachycardia",
+    "A normal P wave before each QRS at a rate of 82",
+    "Sinus arrhythmia that varies slightly with respiration in a young patient"
+   ],
+   "answer": 1,
+   "why": "A new run of VT is a potentially life-threatening rhythm change that requires immediate escalation, unlike the other options, which describe normal or benign findings that only need routine documentation.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0067",
+   "section": "ekg",
+   "q": "The purpose of obtaining a 12-lead EKG within 10 minutes of arrival for chest pain is primarily to:",
+   "choices": [
+    "Satisfy a billing requirement",
+    "Determine the patient's baseline heart rate only",
+    "Rapidly identify STEMI so the cath lab or fibrinolytic pathway can be activated as early as possible, since 'time is muscle'",
+    "Replace the need for cardiac biomarkers"
+   ],
+   "answer": 2,
+   "why": "Early EKG acquisition directly drives time-sensitive STEMI recognition and treatment; delays in identifying ST elevation translate to delays in reperfusion therapy and more myocardial damage, which is why the 10-minute benchmark exists.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0068",
+   "section": "ekg",
+   "q": "A monitor shows a regular, narrow-complex rhythm at 100 bpm with a normal, upright P wave before every QRS. This is most consistent with:",
+   "choices": [
+    "Ventricular tachycardia",
+    "Atrial flutter",
+    "Junctional rhythm",
+    "Sinus tachycardia"
+   ],
+   "answer": 3,
+   "why": "A regular narrow rhythm with a normal P wave preceding every QRS, at a rate above 100, is sinus tachycardia — the SA node firing faster than normal, often from fever, pain, anxiety, dehydration, or other physiologic stress rather than a primary cardiac electrical problem.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0069",
+   "section": "ekg",
+   "q": "Right arm and right leg lead reversal on a limb-lead monitor most typically produces:",
+   "choices": [
+    "Significant artifact or a flatline-appearing lead II because RA and RL are adjacent limbs on the same side",
+    "No noticeable change on the tracing",
+    "A clear STEMI pattern",
+    "An obvious atrial fibrillation pattern"
+   ],
+   "answer": 0,
+   "why": "RA/RL reversal often produces a very low-amplitude or flat-appearing signal in lead II specifically, since those two electrodes end up too electrically similar; recognizing this pattern helps the tech troubleshoot lead placement rather than assume a true cardiac event.",
+   "difficulty": 3
+  },
+  {
+   "id": "ed-tech-competency-q0070",
+   "section": "ekg",
+   "q": "Why are posterior leads (V7-V9) sometimes added when a 12-lead shows inferior or lateral changes without obvious anterior ST elevation but strong clinical suspicion for ACS?",
+   "choices": [
+    "They are never useful and are outdated",
+    "A posterior MI can be 'electrically silent' or show only subtle reciprocal ST depression in V1-V3 on the standard 12-lead, so posterior leads directly visualize that territory",
+    "Posterior leads replace the need for troponin testing",
+    "They are only used in pediatric patients"
+   ],
+   "answer": 1,
+   "why": "Because standard precordial leads face the anterior chest wall, a posterior-wall infarct can appear only as ST depression and tall R waves in V1-V3 (a mirror-image reciprocal pattern); posterior leads placed on the back give a direct view of that territory when suspicion remains high.",
+   "difficulty": 3
+  },
+  {
+   "id": "ed-tech-competency-q0071",
+   "section": "lab",
+   "q": "Per standard order of draw for venipuncture with a butterfly and multiple tubes, which tube is generally collected FIRST when blood cultures are not being drawn?",
+   "choices": [
+    "Lavender (EDTA)",
+    "Gold/SST (serum separator)",
+    "Light blue (sodium citrate)",
+    "Blood culture bottles"
+   ],
+   "answer": 2,
+   "why": "When blood cultures are not part of the draw, the light blue (citrate) tube for coagulation studies is drawn first (or after a discard tube with a butterfly) to avoid contamination with additives from other tubes; blood cultures, when ordered, are always collected before any other tube.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0072",
+   "section": "lab",
+   "q": "When blood cultures ARE ordered along with other labs, the correct order of draw is:",
+   "choices": [
+    "Blood cultures are drawn last, after all other tubes",
+    "Blood cultures should be split, drawn half first and half last",
+    "It doesn't matter as long as all tubes are filled",
+    "Blood cultures are drawn first, before any other additive tubes, to minimize contamination risk"
+   ],
+   "answer": 3,
+   "why": "Blood culture bottles are always collected first in the draw sequence, using a dedicated aseptic technique, to reduce the risk of contamination from needle exposure to other tube additives or repeated skin puncture.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0073",
+   "section": "lab",
+   "q": "A lavender-top tube (EDTA) is used for which type of testing?",
+   "choices": [
+    "Complete blood count (CBC) and other hematology testing",
+    "Coagulation studies (PT/INR, PTT)",
+    "Blood cultures",
+    "Glucose testing only"
+   ],
+   "answer": 0,
+   "why": "Lavender-top tubes contain EDTA, an anticoagulant that preserves cell morphology for hematology testing like CBCs; it is not used for coagulation studies, which require the specific citrate ratio in a light blue tube.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0074",
+   "section": "lab",
+   "q": "The light blue top tube used for coagulation studies (PT/INR, PTT) contains which additive, and why is correct fill volume critical?",
+   "choices": [
+    "Heparin; fill volume doesn't matter for coag testing",
+    "Sodium citrate; the tube must be filled to the exact fill line because the citrate-to-blood ratio directly affects PT/PTT results",
+    "EDTA; underfilling has no effect on results",
+    "No additive; it's a plain tube"
+   ],
+   "answer": 1,
+   "why": "Sodium citrate binds calcium to prevent clotting, and coagulation testing depends on a precise blood-to-citrate ratio; an underfilled citrate tube dilutes clotting factors relative to citrate and will falsely prolong PT/PTT results, leading to tube rejection.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0075",
+   "section": "lab",
+   "q": "Which of the following is a common preventable cause of a hemolyzed blood sample?",
+   "choices": [
+    "Using an appropriately sized needle for the vein",
+    "Inverting an EDTA tube gently 8-10 times per protocol",
+    "Drawing through a small-gauge needle with excessive suction force, or vigorously shaking the tube after collection",
+    "Using a straight venipuncture with minimal tourniquet time"
+   ],
+   "answer": 2,
+   "why": "Hemolysis, the rupture of red blood cells, is commonly caused by drawing too forcefully through a needle that's too small, prolonged tourniquet time, or vigorous shaking/mixing of the sample; it can falsely elevate potassium, LDH, and other intracellular analytes, prompting rejection and redraw.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0076",
+   "section": "lab",
+   "q": "Correct skin antisepsis technique before a blood culture draw includes:",
+   "choices": [
+    "A quick alcohol wipe only, no dwell time needed",
+    "Reusing the same swab for both blood culture sites to save time",
+    "Cleaning site immediately before puncturing without any drying time",
+    "Chlorhexidine (or approved alternative) applied with proper technique and allowed to fully air dry before venipuncture"
+   ],
+   "answer": 3,
+   "why": "Proper skin antisepsis (commonly chlorhexidine) requires adequate application and full air-drying time (per product, often 30 seconds or more) before puncture, since puncturing wet antiseptic can both sting and reduce its antimicrobial effect, increasing contamination risk.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0077",
+   "section": "lab",
+   "q": "Standard practice for adult blood cultures ordered to evaluate for bacteremia typically requires:",
+   "choices": [
+    "Two sets (aerobic and anaerobic bottles) from two separate venipuncture sites",
+    "One bottle from one site",
+    "A single bottle drawn from an existing IV line only",
+    "Cultures only if the patient is afebrile"
+   ],
+   "answer": 0,
+   "why": "Two sets, each with an aerobic and anaerobic bottle, drawn from two different sites, improves sensitivity for detecting true bacteremia and helps distinguish a true pathogen from a skin-flora contaminant if only one set is positive.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0078",
+   "section": "lab",
+   "q": "Underfilling a blood culture bottle below the recommended volume primarily risks:",
+   "choices": [
+    "No effect on results",
+    "Reduced sensitivity for detecting true pathogens, potentially causing a false-negative culture",
+    "Automatic contamination flagging regardless of result",
+    "Overestimating bacterial growth"
+   ],
+   "answer": 1,
+   "why": "Adequate blood volume (commonly around 8-10 mL per adult bottle, per manufacturer) is directly tied to the sensitivity of culture growth; underfilling dilutes the sample and lowers the chance of detecting a true pathogen even when bacteremia is present.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0079",
+   "section": "lab",
+   "q": "Which two identifiers are acceptable for patient identification before a blood draw?",
+   "choices": [
+    "Room number and bed number",
+    "Physical appearance and verbal confirmation of 'yes' to their name",
+    "Full name and date of birth, verified against the armband and the order",
+    "Insurance card only"
+   ],
+   "answer": 2,
+   "why": "Two patient-specific identifiers, typically full name and date of birth, must be verified against both the patient's armband and the test order/requisition; room or bed numbers are never acceptable because patients can be moved or share a room.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0080",
+   "section": "lab",
+   "q": "A specimen is rejected by the lab because it was labeled after leaving the patient's bedside. The correct practice is:",
+   "choices": [
+    "Label tubes at a convenient time before end of shift",
+    "Labeling can be done by any staff member later, as long as it's eventually labeled",
+    "Pre-label tubes before entering the room to save time",
+    "Label every tube at the bedside, in the presence of the patient, immediately after collection, before leaving the room"
+   ],
+   "answer": 3,
+   "why": "Chain-of-custody and patient safety require labeling specimens at the bedside immediately after collection and before leaving the patient, confirming the label matches the patient present; pre-labeling or delayed labeling risks a mislabeled or mismatched specimen, a leading cause of transfusion and lab errors.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0081",
+   "section": "lab",
+   "q": "Point-of-care glucose testing quality control (QC) should be performed:",
+   "choices": [
+    "Per manufacturer and facility policy, typically each shift or per defined interval, plus whenever a new reagent lot is opened",
+    "Never, POC devices don't require QC",
+    "Only if a result looks unusual",
+    "Once per month regardless of use"
+   ],
+   "answer": 0,
+   "why": "Regular QC checks (commonly each shift and with new lots/strips) verify the point-of-care device is measuring accurately before patient results are trusted; skipping QC risks reporting inaccurate glucose values that could lead to inappropriate treatment.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0082",
+   "section": "lab",
+   "q": "A point-of-care troponin result comes back markedly elevated on a chest pain patient. The tech's correct action is:",
+   "choices": [
+    "Repeat the test themselves to confirm before telling anyone",
+    "Immediately report the result to the nurse or provider per critical value protocol",
+    "Document it in the chart and mention it at end of shift",
+    "Assume it's a lab error since POC troponin is rarely wrong"
+   ],
+   "answer": 1,
+   "why": "Critical values, including a significantly elevated troponin, require immediate verbal reporting to the responsible nurse or provider per facility protocol, not delayed documentation or independent re-testing by the tech before notifying anyone.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0083",
+   "section": "lab",
+   "q": "Which of these is a valid reason a specimen may be rejected by the lab?",
+   "choices": [
+    "The tube was filled to the correct level",
+    "The patient was properly identified with two identifiers",
+    "The tube type doesn't match what the ordered test requires (e.g., EDTA tube sent for a coagulation study)",
+    "The specimen arrived within the required time window"
+   ],
+   "answer": 2,
+   "why": "Sending the wrong tube type for the ordered test (wrong additive) invalidates the sample chemically for that assay and is a standard rejection criterion, unlike correct fill volume, proper ID, and timely transport, which are all acceptable practices.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0084",
+   "section": "lab",
+   "q": "A clotted lavender-top (EDTA) tube submitted for a CBC will most likely result in:",
+   "choices": [
+    "Acceptance and normal processing",
+    "No impact on the CBC results",
+    "Automatic correction by the lab's analyzer",
+    "Rejection, since clotting disrupts accurate cell counts and requires a redraw"
+   ],
+   "answer": 3,
+   "why": "Once a sample clots, the anticoagulant failed to do its job (often from inadequate or delayed mixing after draw), and cell counts and morphology can no longer be accurately measured, so the specimen is rejected and must be redrawn.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0085",
+   "section": "lab",
+   "q": "The gold or tiger-top tube (serum separator, SST) is commonly used for:",
+   "choices": [
+    "Chemistry panels and other tests requiring serum, such as basic metabolic panel or liver function tests",
+    "Coagulation panels",
+    "Blood cultures",
+    "Hematology/CBC testing"
+   ],
+   "answer": 0,
+   "why": "SST tubes contain a clot activator and gel separator, ideal for serum chemistry testing; they are not appropriate for coagulation studies (which need citrated plasma) or CBCs (which need whole blood with EDTA anticoagulant).",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0086",
+   "section": "lab",
+   "q": "Why is it important to invert an EDTA (lavender) tube gently several times immediately after collection rather than shaking it vigorously?",
+   "choices": [
+    "Inverting is unnecessary; the anticoagulant mixes on its own over time",
+    "Gentle inversion mixes the anticoagulant with the blood to prevent clotting, while vigorous shaking can hemolyze red cells and invalidate the sample",
+    "Vigorous shaking improves sample quality",
+    "Only chemistry tubes need to be inverted"
+   ],
+   "answer": 1,
+   "why": "Adequate but gentle mixing (typically 8-10 inversions) distributes the anticoagulant to prevent clot formation, while overly forceful shaking mechanically damages red cells, causing hemolysis that can falsify results and trigger rejection.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0087",
+   "section": "lab",
+   "q": "A patient has an IV running dextrose in the same arm where blood is being drawn for a glucose level. The best practice is:",
+   "choices": [
+    "Draw from that same arm since it's already accessed",
+    "It has no effect on lab draws",
+    "Draw from the opposite arm, or if unavoidable, draw well below/distal to the IV site and note it, since drawing near a dextrose infusion can falsely elevate glucose",
+    "Turn the IV fluids off for exactly 5 seconds and draw immediately"
+   ],
+   "answer": 2,
+   "why": "Drawing blood from or near an arm receiving IV fluids, especially dextrose, risks contaminating the sample with infusate and falsely skewing results like glucose or electrolytes; the opposite arm is preferred, and any draw near an IV site should be clearly documented.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0088",
+   "section": "lab",
+   "q": "Which best describes 'chain of custody' documentation, relevant for forensic or legal specimens (e.g., blood alcohol for law enforcement)?",
+   "choices": [
+    "Not required for any ED specimens",
+    "Chain of custody only applies to urine specimens",
+    "Only the collecting tech's name needs to be recorded",
+    "A documented, unbroken record of who collected, handled, and transported the specimen at every step, required for legal defensibility"
+   ],
+   "answer": 3,
+   "why": "Chain of custody requires a continuous documented record of everyone who has possession of or access to a specimen from collection through final disposition, which is essential for legal specimens to withstand challenge in court.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0089",
+   "section": "lab",
+   "q": "A hemolyzed potassium result is likely to show:",
+   "choices": [
+    "A falsely elevated value, because potassium is released from ruptured red blood cells",
+    "A falsely low value",
+    "No change from the true value",
+    "An unpredictable, random value"
+   ],
+   "answer": 0,
+   "why": "Red blood cells contain far more intracellular potassium than plasma, so when cells rupture (hemolysis), that potassium is released into the sample and falsely raises the measured level, which is why hemolyzed electrolyte panels are typically rejected and redrawn.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0090",
+   "section": "lab",
+   "q": "When performing a point-of-care glucose test, the first drop of blood from a fingerstick is often:",
+   "choices": [
+    "Used for the test since it's the most accurate",
+    "Wiped away, using the second drop for testing, because the first drop can be diluted with tissue fluid or alcohol residue",
+    "Never wiped away regardless of technique",
+    "Only relevant for venous draws, not fingersticks"
+   ],
+   "answer": 1,
+   "why": "Wiping the first drop away and using the second helps avoid contamination from residual alcohol or interstitial fluid, both of which can skew the glucose reading; proper technique matters for point-of-care accuracy just as it does for venous sampling.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0091",
+   "section": "lab",
+   "q": "A tech draws blood but the tube fill is below the minimum line required for a coagulation study. The correct action is:",
+   "choices": [
+    "Send it anyway and let the lab decide",
+    "Add saline to bring it up to the fill line",
+    "Recognize it will likely be rejected and redraw, since underfilled citrate tubes give inaccurate PT/PTT results",
+    "Submit it labeled 'quantity not sufficient' and move on without a redraw"
+   ],
+   "answer": 2,
+   "why": "An underfilled citrate tube changes the blood-to-anticoagulant ratio and invalidates coagulation results; the correct step is to recognize the error and redraw a properly filled tube rather than sending a sample expected to be rejected or altering it with saline.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0092",
+   "section": "lab",
+   "q": "Which of these situations is an appropriate reason to reject a urine specimen for urinalysis?",
+   "choices": [
+    "The specimen was delivered to the lab within 30 minutes",
+    "The specimen was a clean-catch midstream collection",
+    "The specimen was refrigerated per protocol while awaiting pickup",
+    "The specimen container is unlabeled or the label doesn't match the requisition"
+   ],
+   "answer": 3,
+   "why": "An unlabeled specimen, or one where the label and order don't match, cannot be safely verified as belonging to the correct patient and must be rejected; timely delivery, appropriate refrigeration, and correct collection technique are all acceptable practices.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0093",
+   "section": "lab",
+   "q": "The correct order for donning personal protective equipment before performing a bedside procedure involving body fluids is generally:",
+   "choices": [
+    "Gown, mask/respirator, eye protection/face shield, then gloves last",
+    "Gloves, then gown, then mask/eye protection",
+    "Mask, gloves, gown, eye protection",
+    "Order does not matter as long as everything is worn eventually"
+   ],
+   "answer": 0,
+   "why": "Standard donning sequence is gown first, then mask or respirator, then eye protection or face shield, with gloves donned last so they can cover the gown cuffs; doffing generally reverses key steps, removing gloves first since they're the most contaminated.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0094",
+   "section": "lab",
+   "q": "A tech is asked to collect a 'clean catch' midstream urine specimen instruction for a patient. The key patient instruction is:",
+   "choices": [
+    "Collect the very first stream into the cup",
+    "Clean the area, begin urinating into the toilet, then move the collection cup into the stream mid-void without stopping and restarting",
+    "Hold urine for 24 hours before collecting",
+    "No cleaning is necessary if the patient showered that morning"
+   ],
+   "answer": 1,
+   "why": "Clean-catch technique reduces contamination from skin flora by having the patient cleanse first, initiate voiding, and then catch a midstream sample, avoiding the initial urine stream, which carries the most contamination from the urethral opening.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0095",
+   "section": "lab",
+   "q": "Two patient identifiers are required before specimen collection primarily to prevent:",
+   "choices": [
+    "Delays in lab turnaround time",
+    "Needle-stick injuries",
+    "Wrong-patient errors, including mislabeled specimens and transfusion reactions from misidentified blood type samples",
+    "Hemolysis of the sample"
+   ],
+   "answer": 2,
+   "why": "Positive patient identification with two identifiers is a core safety practice specifically designed to prevent specimen mix-ups, which can lead to serious harm such as a mistyped blood sample causing a fatal transfusion reaction.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0096",
+   "section": "lab",
+   "q": "Which tube color is typically used for a basic metabolic panel drawn as a 'plasma' sample using a rapid-turnaround anticoagulant, common in many EDs for faster chemistry results?",
+   "choices": [
+    "Lavender (EDTA)",
+    "Pink (EDTA, blood bank)",
+    "Light blue (sodium citrate)",
+    "Green (lithium or sodium heparin, often 'PST' with gel separator)"
+   ],
+   "answer": 3,
+   "why": "Green-top heparin tubes (often a PST gel-separator variant) yield plasma faster than serum tubes because they don't require clotting time, which is why many EDs use them for STAT chemistry panels when speed matters.",
+   "difficulty": 3
+  },
+  {
+   "id": "ed-tech-competency-q0097",
+   "section": "lab",
+   "q": "A pink-top (or pink/lavender-equivalent, EDTA) tube used for type and screen/crossmatch testing requires which special labeling practice at most facilities?",
+   "choices": [
+    "A dedicated blood bank armband/wristband number system and handwritten bedside labeling matching that band, per facility blood bank policy",
+    "Standard labeling is sufficient, same as any other tube",
+    "No labeling is needed since the sample is discarded after typing",
+    "Only the ordering provider's name is required on the label"
+   ],
+   "answer": 0,
+   "why": "Blood bank specimens for type and screen or crossmatch typically require a unique blood-bank identification band and specimen labeling system beyond the standard medical record number, because a mislabeled type and screen is one of the most dangerous possible lab errors.",
+   "difficulty": 3
+  },
+  {
+   "id": "ed-tech-competency-q0098",
+   "section": "lab",
+   "q": "A tech notices a requisition lists 'STAT troponin' but the tube received in the lab drop area was never labeled. What is the correct next step?",
+   "choices": [
+    "Guess which patient it belongs to based on the order time",
+    "The specimen cannot be processed; it must be discarded and redrawn with proper bedside labeling, since patient identity can't be verified",
+    "Label it with the name from the requisition since they were probably drawn together",
+    "Ask the next tech on shift to guess and label it"
+   ],
+   "answer": 1,
+   "why": "An unlabeled specimen represents an unacceptable patient safety risk and cannot be matched to a patient reliably after the fact; policy requires discarding it and redrawing with correct bedside identification and labeling, even for a STAT test.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0099",
+   "section": "lab",
+   "q": "Which statement about specimen transport time for a basic chemistry panel is generally accurate?",
+   "choices": [
+    "Specimens can sit at room temperature indefinitely with no effect",
+    "Only hematology specimens have time-sensitive processing",
+    "Most chemistry specimens should be processed within a defined window (often around 1-2 hours) to avoid analyte degradation or cell metabolism affecting results (e.g., falsely low glucose over time)",
+    "Refrigeration always extends the allowable window indefinitely regardless of test"
+   ],
+   "answer": 2,
+   "why": "Cells in a specimen continue metabolic activity after collection (for example, ongoing glycolysis lowers glucose over time), so most chemistry specimens have a defined acceptable window for processing, and delays beyond that can distort results even without visible clotting or hemolysis.",
+   "difficulty": 3
+  },
+  {
+   "id": "ed-tech-competency-q0100",
+   "section": "lab",
+   "q": "Standard precautions during any blood draw include:",
+   "choices": [
+    "Gloves only, gown and eye protection are optional",
+    "Full PPE (gown, mask, eye protection, gloves) for every single draw regardless of risk",
+    "No PPE needed for a routine venipuncture on a cooperative patient",
+    "Gloves at minimum for every draw, with additional PPE (gown, mask, eye protection) added based on anticipated splash/spray risk"
+   ],
+   "answer": 3,
+   "why": "Standard precautions require gloves for any contact with blood or body fluids, with additional PPE layered on based on the anticipated risk of splash or spray (for example, a difficult draw on a combative patient); routine venipuncture on a cooperative patient doesn't automatically require full PPE.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0101",
+   "section": "lab",
+   "q": "A tech draws a blood culture and inadvertently touches the venipuncture site with an ungloved finger after cleaning but before inserting the needle. The correct action is:",
+   "choices": [
+    "Re-clean the site before proceeding, since touching after antisepsis reintroduces contamination risk (this is why 'no-touch' technique is taught)",
+    "Proceed with the draw since the skin was already cleaned",
+    "Use a different needle only, no need to re-clean",
+    "Document a note but proceed without re-cleaning"
+   ],
+   "answer": 0,
+   "why": "Touching the prepped site after antisepsis, even briefly, can reintroduce skin flora and increase the risk of a contaminated culture; standard teaching is a strict 'no-touch' technique after cleaning, and if broken, the site should be re-prepped before proceeding.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0102",
+   "section": "lab",
+   "q": "What is the primary reason for using two separate venipuncture sites when drawing paired blood cultures?",
+   "choices": [
+    "It's faster than drawing from one site twice",
+    "It helps distinguish a true bloodstream infection (positive at both sites) from a contaminant (positive at only one site, often a skin organism)",
+    "One site is for aerobic, the other for anaerobic testing exclusively",
+    "Regulatory requirement with no clinical rationale"
+   ],
+   "answer": 1,
+   "why": "If the same organism, especially a common skin flora like coagulase-negative staph, grows in only one of two separately drawn sites, it's more likely a contaminant; growth in both sites raises much stronger suspicion for true bacteremia, which is why two sites are standard.",
+   "difficulty": 3
+  },
+  {
+   "id": "ed-tech-competency-q0103",
+   "section": "lab",
+   "q": "Which of the following would most likely cause a falsely low point-of-care glucose reading?",
+   "choices": [
+    "Using a properly warmed, well-perfused fingertip",
+    "Wiping away the first drop of blood before testing",
+    "Testing from a cold, poorly perfused finger, or a fingertip still wet with alcohol that wasn't allowed to dry",
+    "Using a fresh test strip within its expiration date"
+   ],
+   "answer": 2,
+   "why": "Residual alcohol dilutes the blood sample and can falsely lower a glucose reading, and poor peripheral perfusion from a cold extremity can also affect accuracy; letting the alcohol dry fully and choosing a warm, well-perfused site avoids both issues.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0104",
+   "section": "lab",
+   "q": "A specimen for a stool occult blood test is contaminated with toilet bowl cleaner residue. This specimen should be:",
+   "choices": [
+    "Processed as normal, cleaners don't interfere",
+    "Only a problem if the result is negative",
+    "Diluted with water before sending to correct for contamination",
+    "Rejected and recollected, since certain cleaning chemicals can cause false-positive or false-negative occult blood results"
+   ],
+   "answer": 3,
+   "why": "Toilet bowl cleaners and certain chemicals can interfere with the chemical reaction used in occult blood testing, producing unreliable false-positive or false-negative results, so a clean, uncontaminated collection method (or a specific collection card) is required.",
+   "difficulty": 3
+  },
+  {
+   "id": "ed-tech-competency-q0105",
+   "section": "lab",
+   "q": "When labeling a specimen container, which practice is correct?",
+   "choices": [
+    "Fill out the label completely at the patient's bedside immediately after the specimen is obtained, confirming identifiers directly with the patient/armband at that moment",
+    "Label the container before entering the room based on the chart, then verify at bedside",
+    "It is acceptable to label using printed labels prepared the night before for a scheduled draw",
+    "Verbal confirmation from a family member alone is sufficient identification"
+   ],
+   "answer": 0,
+   "why": "Correct practice labels the specimen at the bedside at the time of collection, with identifiers actively verified against the patient present (not just the chart or a label prepared in advance), which closes the gap where a wrong-patient error could occur.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0106",
+   "section": "lab",
+   "q": "A tech notices a lab result flagged as a 'critical value' for potassium of 6.8 mEq/L. What is the required action?",
+   "choices": [
+    "Chart it normally; it will be seen on the next routine review",
+    "Immediately notify the nurse or provider per critical value/panic value protocol, since this level can cause life-threatening cardiac arrhythmias",
+    "Wait for the ordering provider's next rounding time",
+    "Repeat the test personally before telling anyone"
+   ],
+   "answer": 1,
+   "why": "A potassium this high is a recognized critical/panic value with real risk of dangerous arrhythmias including cardiac arrest, and facility policy requires immediate verbal notification to the responsible clinician, not routine or delayed communication.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0107",
+   "section": "lab",
+   "q": "Which best describes appropriate handling of a specimen that must be kept on ice (such as an arterial blood gas)?",
+   "choices": [
+    "Room temperature transport is equivalent and ice isn't necessary",
+    "Freeze the specimen solid for best accuracy",
+    "Place promptly on ice per protocol and transport quickly, since delayed or improperly stored ABG specimens can give inaccurate gas values as cellular metabolism continues",
+    "Warm the specimen to body temperature before transport"
+   ],
+   "answer": 2,
+   "why": "Arterial blood gas samples are especially time- and temperature-sensitive because ongoing cellular metabolism in the syringe continues to consume oxygen and produce CO2; prompt icing (per current protocol/device) and rapid transport help preserve an accurate result.",
+   "difficulty": 3
+  },
+  {
+   "id": "ed-tech-competency-q0108",
+   "section": "lab",
+   "q": "A tech is asked to collect a specimen for legal blood alcohol testing on a patient involved in a motor vehicle crash. Which additive tube must be avoided, and why?",
+   "choices": [
+    "Gray-top (sodium fluoride/potassium oxalate) should be avoided; it's actually the preferred tube for this test",
+    "No special precautions are needed for legal blood alcohol draws",
+    "EDTA tubes must always be used regardless of policy",
+    "Alcohol-based skin antiseptics must be avoided at the collection site, since alcohol prep can contaminate the sample and affect legal defensibility"
+   ],
+   "answer": 3,
+   "why": "For legal or forensic blood alcohol testing, a non-alcohol antiseptic (such as povidone-iodine or chlorhexidine) is used to clean the site instead of alcohol, since alcohol contamination could compromise the sample's evidentiary value and be challenged in court; the gray-top sodium fluoride tube is actually correct for this test because it inhibits ongoing glycolysis/fermentation.",
+   "difficulty": 3
+  },
+  {
+   "id": "ed-tech-competency-q0109",
+   "section": "lab",
+   "q": "A gray-top tube (sodium fluoride/potassium oxalate) is most commonly used for which test?",
+   "choices": [
+    "Blood glucose/lactate testing, since the additive inhibits glycolysis and preserves the sample for accurate levels",
+    "Coagulation studies",
+    "Blood cultures",
+    "CBC/hematology testing"
+   ],
+   "answer": 0,
+   "why": "Sodium fluoride inhibits ongoing glycolysis by red and white blood cells in the tube, preventing a falsely low glucose (or lactate) result that would otherwise occur as cells continue consuming glucose after the draw sits waiting for processing.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0110",
+   "section": "lab",
+   "q": "A tech is asked to collect a specimen for a rapid strep test. Correct technique includes:",
+   "choices": [
+    "Swabbing only the front of the tongue",
+    "Swabbing both tonsillar pillars and the posterior pharynx firmly, avoiding the tongue and cheeks which can dilute the sample or cause false negatives",
+    "Having the patient swallow before swabbing to clear secretions first",
+    "Using a wet swab dipped in saline before collection"
+   ],
+   "answer": 1,
+   "why": "An adequate rapid strep swab requires firm contact with both tonsillar areas and the posterior pharyngeal wall, since inadequate sampling (touching mostly the tongue or cheeks) is a common cause of false-negative results, not a technique variation without consequence.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0111",
+   "section": "proc",
+   "q": "A basic splinting principle for an extremity fracture is to immobilize:",
+   "choices": [
+    "Only the fracture site itself",
+    "Only the nearest joint, whichever is closer",
+    "The joint above and the joint below the injury site",
+    "The entire limb from fingertip to shoulder regardless of injury location"
+   ],
+   "answer": 2,
+   "why": "Effective splinting immobilizes the joint above and the joint below the fracture to prevent movement at the fracture site from either direction; splinting only the injury site itself allows continued motion and pain at the adjacent joints.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0112",
+   "section": "proc",
+   "q": "Before and after applying a splint, the tech must assess and document:",
+   "choices": [
+    "Only the patient's pain level",
+    "Range of motion of the injured joint through full extension",
+    "Only the color of the skin",
+    "Neurovascular status distal to the injury: pulse, movement, and sensation (PMS/CSM)"
+   ],
+   "answer": 3,
+   "why": "Checking pulse, movement, and sensation (or circulation, sensation, movement) distal to the injury both before and after splinting is essential to confirm the splint hasn't compromised circulation or nerve function; a splint that impairs these findings needs to be loosened or removed immediately.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0113",
+   "section": "proc",
+   "q": "After splint application, a patient reports increasing numbness and the fingers distal to the splint are pale and cool. The correct action is:",
+   "choices": [
+    "Loosen or remove the splint and reassess immediately, then notify the nurse/provider, since this suggests vascular compromise",
+    "Reassure the patient this is expected and recheck in one hour",
+    "Tighten the splint further to provide more stability",
+    "Elevate the limb and wait until end of shift to reassess"
+   ],
+   "answer": 0,
+   "why": "New pallor, coolness, and numbness distal to a splint are signs of vascular or nerve compromise and require prompt loosening/removal of the splint and reassessment, with immediate notification of the team, rather than waiting or tightening further.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0114",
+   "section": "proc",
+   "q": "Standard wound irrigation for a simple laceration prior to closure typically uses:",
+   "choices": [
+    "Full-strength hydrogen peroxide to sterilize the wound",
+    "Normal saline (or potable tap water per some protocols) delivered with adequate pressure to flush debris and reduce bacterial load",
+    "Betadine solution flushed directly into the wound bed",
+    "Alcohol-based antiseptic flushed into the wound"
+   ],
+   "answer": 1,
+   "why": "Normal saline (and, per some evidence-based protocols, clean tap water) is the standard irrigation fluid, delivered with enough pressure (often via a syringe with a splash guard) to mechanically remove debris and reduce contamination; hydrogen peroxide and alcohol can damage healthy tissue and are not used for wound bed irrigation.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0115",
+   "section": "proc",
+   "q": "Which dressing type is generally appropriate for a dry, minimally draining superficial wound?",
+   "choices": [
+    "A heavily absorptive alginate dressing",
+    "A wet-to-dry packing gauze",
+    "A simple non-adherent or dry gauze dressing",
+    "An occlusive hydrocolloid for a heavily draining wound"
+   ],
+   "answer": 2,
+   "why": "Dry, low-drainage wounds generally do well with a simple non-adherent or dry dressing; heavily absorptive dressings like alginates and wet-to-dry packing are reserved for wounds with significant exudate or specific debridement needs, not routine dry, minor wounds.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0116",
+   "section": "proc",
+   "q": "General guidance for suture removal timing on the face is typically around:",
+   "choices": [
+    "4-6 weeks",
+    "7-10 days",
+    "14-21 days",
+    "3-5 days"
+   ],
+   "answer": 3,
+   "why": "Facial sutures are typically removed earlier, around 3-5 days, because facial skin heals quickly and has a strong cosmetic concern for minimizing suture-mark scarring; areas under more tension, like the back or over joints, are left in longer (often 10-14 days or more), varying by protocol.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0117",
+   "section": "proc",
+   "q": "General guidance for suture removal timing over a high-tension area like the back or an extensor surface of a joint is typically around:",
+   "choices": [
+    "10-14 days or longer, per provider/protocol",
+    "7-10 days",
+    "3-5 days",
+    "Sutures over joints are never removed, only dissolvable sutures are used"
+   ],
+   "answer": 0,
+   "why": "High-tension areas such as the back, over joints, or extensor surfaces need longer support before removal, generally 10-14 days or more depending on the wound and protocol, since premature removal risks wound dehiscence in areas under greater mechanical stress.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0118",
+   "section": "proc",
+   "q": "When assisting with a Foley catheter insertion, the tech's role typically includes:",
+   "choices": [
+    "Independently inserting the catheter without supervision in all cases",
+    "Gathering supplies, maintaining a sterile field, positioning/assisting the patient, and providing supplies during the procedure per facility scope",
+    "Determining catheter size based on personal preference",
+    "Deciding independently whether a catheter is medically necessary"
+   ],
+   "answer": 1,
+   "why": "ED techs generally assist with Foley insertion by preparing supplies, helping maintain sterility, and positioning or supporting the patient, while insertion itself and clinical decision-making about necessity and sizing remain within nursing/provider scope unless facility policy and additional certification specifically expand tech scope.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0119",
+   "section": "proc",
+   "q": "Before assisting with nasogastric (NG) tube placement, an important pre-procedure step is:",
+   "choices": [
+    "Confirming the patient has eaten recently for lubrication purposes",
+    "Skipping measurement since all NG tubes are inserted to the same depth",
+    "Measuring the appropriate insertion length (commonly nose-to-earlobe-to-xiphoid, NEX) and having suction and confirmation methods ready",
+    "Ensuring the patient is standing during insertion"
+   ],
+   "answer": 2,
+   "why": "Estimating insertion depth using a landmark method like nose-to-earlobe-to-xiphoid process (NEX) helps ensure the tube reaches the stomach appropriately; a recent meal is not a relevant prerequisite, and NG insertion is done with the patient positioned upright/sitting when possible, not standing.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0120",
+   "section": "proc",
+   "q": "Prior to a 12-lead EKG or cardiac procedure requiring electrode placement, appropriate skin prep for a diaphoretic patient includes:",
+   "choices": [
+    "Applying electrodes directly to damp skin",
+    "Skipping prep since modern electrodes work regardless of skin condition",
+    "Using extra adhesive tape over wet electrodes instead of drying the skin",
+    "Drying the skin, removing excess hair/oil as needed, and lightly abrading per protocol before electrode placement"
+   ],
+   "answer": 3,
+   "why": "Proper skin prep (drying, hair removal if needed, light abrasion) reduces skin impedance and improves electrode adhesion and signal quality; applying electrodes to damp or oily skin is a common cause of poor tracing and lead artifact.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0121",
+   "section": "proc",
+   "q": "A wound irrigation using a large syringe should deliver enough pressure to be effective while avoiding tissue damage; a commonly cited target pressure range is approximately:",
+   "choices": [
+    "5-8 psi, achievable with a 35 mL syringe and 19-gauge needle/splash-guard tip",
+    "1-2 psi, using gravity only, no syringe needed",
+    "50-60 psi using a high-pressure power washer setup",
+    "There is no meaningful target; any pressure works the same"
+   ],
+   "answer": 0,
+   "why": "A widely cited effective range for wound irrigation is roughly 5-8 psi, commonly achieved using a 30-35 mL syringe with an 18-19 gauge needle or a commercial splash-guard tip; pressure that's too low won't adequately clean the wound, and pressure that's too high can damage tissue and drive debris deeper.",
+   "difficulty": 3
+  },
+  {
+   "id": "ed-tech-competency-q0122",
+   "section": "proc",
+   "q": "When assisting with a procedure requiring a sterile field, if the tech notices a portion of the sterile drape becomes wet from an unsterile surface underneath, the correct action is:",
+   "choices": [
+    "Continue since only visible contamination matters",
+    "Treat that area (and anything on it) as contaminated per strike-through principle, and notify the person performing the procedure",
+    "Dry the wet area with a sterile gauze and continue",
+    "Cover the wet spot with another sterile towel and continue as normal"
+   ],
+   "answer": 1,
+   "why": "Moisture that soaks through a barrier ('strike-through') is considered to carry contamination from the unsterile surface below, so that portion of the field (and any items on it) is treated as contaminated and the team must be notified to correct it, not simply covered or dried over.",
+   "difficulty": 3
+  },
+  {
+   "id": "ed-tech-competency-q0123",
+   "section": "proc",
+   "q": "The primary purpose of checking neurovascular status distal to a splint AFTER application (not just before) is to:",
+   "choices": [
+    "Confirm the splint is aesthetically pleasing",
+    "Satisfy a purely administrative documentation requirement with no clinical value",
+    "Detect any new circulatory or nerve compromise caused by the splint itself, since swelling or an overly tight splint can develop after application",
+    "Determine if the patient needs pain medication"
+   ],
+   "answer": 2,
+   "why": "Post-splinting neurovascular checks specifically catch complications the splint itself may cause, such as increasing swelling under a snug splint compromising circulation over time, which is why both pre- and post-application checks are required, not just one or the other.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0124",
+   "section": "proc",
+   "q": "Which wound type generally requires wet-to-dry or specialized packing dressings rather than a simple dry dressing?",
+   "choices": [
+    "A clean, dry superficial abrasion",
+    "A simple abrasion covered by a non-adherent dressing",
+    "A well-approximated sutured laceration with minimal drainage",
+    "A deep wound with significant necrotic tissue or heavy drainage requiring debridement/absorption"
+   ],
+   "answer": 3,
+   "why": "Deep wounds with necrotic tissue or heavy exudate often need packing and more absorptive or debriding dressing strategies (such as wet-to-dry gauze per order, alginates, or other specialized products), unlike simple, dry, low-drainage wounds that do well with a basic dressing.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0125",
+   "section": "proc",
+   "q": "When helping position a patient for a lumbar puncture, the typical positioning is:",
+   "choices": [
+    "Lateral recumbent with knees drawn toward the chest and chin tucked (or sitting, leaning forward, depending on provider preference)",
+    "Standing upright, leaning forward over a table",
+    "Prone, flat on the stomach",
+    "Supine with legs elevated above the heart"
+   ],
+   "answer": 0,
+   "why": "Lumbar puncture is typically performed with the patient in a lateral recumbent, fetal-like position (knees to chest, chin tucked) to open the intervertebral spaces, though some providers prefer a seated, forward-leaning position; prone and supine-with-legs-elevated are not standard LP positions.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0126",
+   "section": "proc",
+   "q": "A tech is asked to assist with irrigation of a patient's eye after a chemical splash. The priority action is:",
+   "choices": [
+    "Wait for the ophthalmology consult before starting irrigation",
+    "Begin copious irrigation immediately with saline or appropriate solution, continuing per protocol/pH check, since timely irrigation limits ongoing tissue damage",
+    "Only irrigate if the patient reports significant pain",
+    "Use full-strength antiseptic solution for irrigation instead of saline"
+   ],
+   "answer": 1,
+   "why": "Chemical eye exposures are time-critical; immediate, copious irrigation (often continued until pH normalizes per protocol) limits ongoing chemical injury and should not be delayed for a specialist consult or based on the patient's pain level, which is an unreliable indicator of exposure severity.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0127",
+   "section": "proc",
+   "q": "Which statement about assisting with incision and drainage (I&D) of an abscess is correct for an ED tech's typical scope?",
+   "choices": [
+    "The tech independently performs the incision",
+    "The tech determines whether the abscess needs drainage",
+    "The tech typically assists by gathering supplies, maintaining the sterile field, and providing wound care supplies/packing materials, while the incision itself is performed by the provider",
+    "The tech administers local anesthesia independently"
+   ],
+   "answer": 2,
+   "why": "I&D is a provider-performed procedure; the tech's role is generally supportive — supply gathering, maintaining sterility, assisting with positioning, and providing dressing/packing materials — not performing the incision, determining medical necessity, or administering anesthesia.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0128",
+   "section": "proc",
+   "q": "Splinting material (such as a padded rigid splint) should extend:",
+   "choices": [
+    "Exactly to the fracture site and no further",
+    "As far as possible, covering the entire limb regardless of injury location",
+    "Only halfway between the two adjacent joints",
+    "Beyond the joint above and below the injury for adequate immobilization, without impeding distal circulation checks"
+   ],
+   "answer": 3,
+   "why": "Correct splint length spans past both adjacent joints to properly immobilize the fracture while still allowing fingers or toes to remain visible for ongoing neurovascular checks; splinting only to the fracture site or covering fingertips defeats proper stabilization and monitoring.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0129",
+   "section": "proc",
+   "q": "A wound is closed with staples instead of sutures. General removal timing guidance for staples on an extremity is typically similar to sutures in that region, commonly around:",
+   "choices": [
+    "7-14 days depending on location and tension, per provider order",
+    "24-48 hours",
+    "4-6 weeks universally regardless of location",
+    "Staples are never removed; they dissolve naturally"
+   ],
+   "answer": 0,
+   "why": "Staple removal timing generally follows the same location-based logic as sutures (shorter for low-tension areas, longer for high-tension areas), commonly in the 7-14 day range, but always per the specific provider order rather than a fixed universal number, and staples are not typically dissolvable.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0130",
+   "section": "proc",
+   "q": "The main reason to check a splinted limb's capillary refill after immobilization is to detect:",
+   "choices": [
+    "Whether the patient needs a stronger analgesic",
+    "Impaired perfusion, which if present may mean the splint needs to be loosened",
+    "Whether the fracture has healed",
+    "The patient's baseline blood pressure"
+   ],
+   "answer": 1,
+   "why": "Delayed capillary refill after splinting suggests impaired perfusion, often from a splint applied too tightly or worsening swelling, and is a direct indicator that the splint needs to be loosened and the limb reassessed, not something addressed with medication or unrelated vital signs.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0131",
+   "section": "proc",
+   "q": "When preparing a patient for suture removal, which finding would prompt the tech to notify the nurse/provider before removing sutures as scheduled?",
+   "choices": [
+    "The wound edges are well-approximated and healing normally",
+    "The sutures are the scheduled removal day per the chart",
+    "Signs of wound infection such as increasing redness, warmth, purulent drainage, or wound separation",
+    "The patient reports mild itching at the site, which is expected during healing"
+   ],
+   "answer": 2,
+   "why": "Signs of infection (increasing redness, warmth, purulent drainage) or dehiscence (separation) are findings that need provider evaluation before proceeding with routine suture removal, unlike normal healing signs such as mild itching or well-approximated edges, which don't change the plan.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0132",
+   "section": "proc",
+   "q": "A patient needs a peripheral IV start assisted/prepped by the tech in a state/facility where tech scope includes IV insertion under protocol. Standard technique to reduce infection risk includes:",
+   "choices": [
+    "Reusing a tourniquet across multiple patients without cleaning",
+    "Skipping site prep if the patient's skin looks clean",
+    "Palpating the vein again after cleaning to confirm placement, using an ungloved finger",
+    "Cleaning the site with an appropriate antiseptic (such as chlorhexidine or alcohol) in a single-direction or circular motion, allowing it to dry, and not repalpating the site after cleaning"
+   ],
+   "answer": 3,
+   "why": "Proper IV insertion antisepsis includes cleaning correctly, letting it dry, and avoiding re-palpation of the cleaned site (or using a sterile-gloved finger only if repalpation is truly necessary), since touching after prep reintroduces skin flora and raises infection risk; tourniquets are single-patient-use items in standard infection control practice.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0133",
+   "section": "proc",
+   "q": "Assisting with wound closure using cyanoacrylate tissue adhesive ('skin glue') is generally appropriate for:",
+   "choices": [
+    "Clean, low-tension, linear wounds with well-approximated edges and minimal contamination",
+    "Deep wounds under high tension",
+    "Any wound regardless of contamination or depth",
+    "Wounds actively bleeding heavily"
+   ],
+   "answer": 0,
+   "why": "Tissue adhesive works best on clean, low-tension, linear wounds with edges that approximate easily; it is not appropriate for deep, high-tension, heavily contaminated, or actively bleeding wounds, which need sutures, staples, or further exploration instead.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0134",
+   "section": "proc",
+   "q": "When assisting with a procedure that requires a time-out (such as a significant bedside procedure), the tech's role includes:",
+   "choices": [
+    "Skipping the time-out if the team is busy",
+    "Actively participating in verifying patient identity, procedure, and site as part of the team-based time-out process before the procedure begins",
+    "Only watching silently without participating",
+    "Performing the time-out alone before the provider arrives"
+   ],
+   "answer": 1,
+   "why": "A time-out is a team-based safety check, and all participating staff, including the tech, should actively confirm identity, procedure, and site verification before the procedure starts; skipping it or treating it as optional undermines a core safety barrier against wrong-site or wrong-patient errors.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0135",
+   "section": "proc",
+   "q": "A patient has a laceration on a flexor surface with a deep wound and the tech is asked to prepare for possible foreign body concern. Appropriate preparation includes:",
+   "choices": [
+    "Assuming no imaging is needed since it's just a cut",
+    "Applying a tight dressing immediately to avoid delay before any exploration",
+    "Being ready to assist with wound exploration/imaging as ordered (such as an x-ray for radiopaque material) since certain foreign bodies aren't visible on the surface",
+    "Removing any visible debris with bare, ungloved hands to save time"
+   ],
+   "answer": 2,
+   "why": "Deep wounds with foreign body concern often need imaging (x-ray is good for glass or metal; ultrasound can help with radiolucent material like wood) and provider exploration before closure, since embedded material left behind risks infection and other complications; standard precautions (gloves) apply to any wound handling.",
+   "difficulty": 3
+  },
+  {
+   "id": "ed-tech-competency-q0136",
+   "section": "proc",
+   "q": "The correct order for removing (doffing) PPE after a procedure involving significant blood or body fluid exposure is generally:",
+   "choices": [
+    "Eye protection first, mask second, gown third, gloves last",
+    "Mask first, then gloves, then gown, then eye protection",
+    "Gown first, then everything else in any order",
+    "Gloves first, then gown, eye protection, then mask last"
+   ],
+   "answer": 3,
+   "why": "Standard doffing sequence removes gloves first since they are typically the most contaminated, followed by the gown, then eye protection/face shield, with the mask or respirator removed last (and hands sanitized between steps), to minimize the risk of self-contamination during removal.",
+   "difficulty": 3
+  },
+  {
+   "id": "ed-tech-competency-q0137",
+   "section": "proc",
+   "q": "Prior to assisting with a joint reduction procedure, an important pre- and post-procedure assessment the tech should perform is:",
+   "choices": [
+    "Documenting the neurovascular status of the affected limb before and after the reduction attempt",
+    "Only checking the patient's blood pressure",
+    "Confirming the patient's insurance information",
+    "Measuring the patient's temperature only"
+   ],
+   "answer": 0,
+   "why": "As with splinting and fractures, joint reductions carry a risk of neurovascular compromise, so pulse, movement, and sensation distal to the joint should be assessed and documented both before and after the procedure to catch any new deficit promptly.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0138",
+   "section": "proc",
+   "q": "Correct technique for applying a cold pack/ice to a fresh musculoskeletal injury includes:",
+   "choices": [
+    "Applying ice directly to bare skin for as long as tolerated",
+    "Wrapping the cold source in a barrier (towel/cloth) and limiting continuous application to about 15-20 minutes at a time to avoid cold injury",
+    "Leaving ice on continuously for several hours for best effect",
+    "Applying heat instead, since heat is preferred for all fresh injuries"
+   ],
+   "answer": 1,
+   "why": "A barrier between ice and skin plus time-limited application (commonly around 15-20 minutes on, with breaks) reduces the risk of frostbite or cold-induced tissue injury, while direct prolonged contact or excessive duration increases that risk; heat is generally avoided in the acute phase of a fresh injury.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0139",
+   "section": "proc",
+   "q": "A splint applied to a suspected forearm fracture should generally position the wrist in:",
+   "choices": [
+    "Full flexion",
+    "Full hyperextension",
+    "A neutral or slightly functional position (often called 'position of function'), unless the injury or provider directs otherwise",
+    "Whatever position is fastest to apply, position doesn't matter"
+   ],
+   "answer": 2,
+   "why": "Splinting in a neutral or slight 'position of function' (often a gentle wrist extension with fingers slightly flexed) helps maintain joint mobility and comfort during healing, unless the specific injury pattern or provider instructions call for a different position.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0140",
+   "section": "proc",
+   "q": "A patient with a suspected open (compound) fracture has bone visibly protruding through the skin. Before splinting, the tech should ensure the provider/nurse has addressed:",
+   "choices": [
+    "Nothing extra is needed; splint it exactly like a closed fracture with no other steps",
+    "Pushing the bone back under the skin before applying the splint",
+    "Washing the exposed bone with soap and water directly",
+    "Covering the wound with a sterile dressing per protocol before splinting, and documenting the open wound and neurovascular status"
+   ],
+   "answer": 3,
+   "why": "An open fracture needs the exposed wound covered with a sterile dressing per protocol before splinting to reduce contamination risk, along with clear documentation of the open injury and neurovascular status; attempting to reduce or clean exposed bone is outside a tech's scope and role.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0141",
+   "section": "safety",
+   "q": "Standard precautions apply to:",
+   "choices": [
+    "All patients, regardless of diagnosis, assuming all blood and certain body fluids are potentially infectious",
+    "Only patients with a known infectious disease",
+    "Only patients undergoing invasive procedures",
+    "Only patients in isolation rooms"
+   ],
+   "answer": 0,
+   "why": "Standard precautions are applied universally to every patient encounter because infectious status is often unknown; treating all blood and many body fluids as potentially infectious is the foundation of infection control, not something reserved for patients with a known diagnosis.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0142",
+   "section": "safety",
+   "q": "The correct order for donning PPE before entering an isolation room for a patient on contact and droplet precautions is generally:",
+   "choices": [
+    "Gloves, gown, mask, eye protection",
+    "Gown, mask/respirator, eye protection/face shield, gloves",
+    "Mask, eye protection, gloves, gown",
+    "Eye protection, gown, gloves, mask"
+   ],
+   "answer": 1,
+   "why": "Standard donning order is gown first, then mask or respirator, then eye protection or face shield, with gloves donned last so they overlap and cover the gown cuffs; this sequence minimizes gaps in coverage during entry.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0143",
+   "section": "safety",
+   "q": "The correct order for doffing (removing) PPE after leaving an isolation room is generally:",
+   "choices": [
+    "Gown first, then gloves, then mask, then eye protection",
+    "Mask first, then gown, then gloves, then eye protection",
+    "Gloves first, then eye protection, then gown, then mask/respirator last, with hand hygiene between steps",
+    "Order doesn't matter as long as all items are removed before leaving"
+   ],
+   "answer": 2,
+   "why": "Doffing removes the most contaminated items first: gloves, then eye protection/face shield, then gown, with the mask or respirator removed last (often just outside the room, after the door is closed), performing hand hygiene between steps to reduce self-contamination.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0144",
+   "section": "safety",
+   "q": "Which of the World Health Organization's '5 moments for hand hygiene' occurs BEFORE touching a patient?",
+   "choices": [
+    "After body fluid exposure risk",
+    "Before an aseptic task",
+    "After touching a patient's surroundings",
+    "Before touching a patient"
+   ],
+   "answer": 3,
+   "why": "The five moments are: before touching a patient, before a clean/aseptic procedure, after body fluid exposure risk, after touching a patient, and after touching the patient's surroundings; 'before touching a patient' is the first moment, performed on room entry before any contact.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0145",
+   "section": "safety",
+   "q": "A used needle should be disposed of:",
+   "choices": [
+    "Immediately, uncapped, into an approved puncture-resistant sharps container at the point of use, without recapping",
+    "Recapped by hand, then placed in a red sharps container",
+    "Left on the procedure tray until the end of the shift for batch disposal",
+    "Placed in the regular trash if the room doesn't have a sharps container nearby"
+   ],
+   "answer": 0,
+   "why": "Needles should go directly into a sharps container at the point of use, without recapping, since recapping by hand is a leading cause of needlestick injuries; delaying disposal or using regular trash both create unnecessary exposure risk to staff.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0146",
+   "section": "safety",
+   "q": "Per common restraint protocols modeled on Joint Commission standards, a patient in non-violent/non-self-destructive restraints generally requires reassessment and documentation at intervals of approximately:",
+   "choices": [
+    "Every 15 minutes",
+    "Every 2 hours, or per specific facility policy",
+    "Once per 8-hour shift",
+    "Only when the restraint is first applied and again at discharge"
+   ],
+   "answer": 1,
+   "why": "Non-violent/non-self-destructive restraint monitoring commonly requires reassessment around every 2 hours (with more frequent checks, often every 15 minutes, for violent/self-destructive restraints), though the exact interval is set by facility policy and should always be verified there.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0147",
+   "section": "safety",
+   "q": "Per common restraint protocols, a patient in violent or self-destructive restraints typically requires neurovascular and safety checks at intervals of approximately:",
+   "choices": [
+    "Once per shift",
+    "Every 4 hours",
+    "Every 15 minutes",
+    "Only if the patient requests a check"
+   ],
+   "answer": 2,
+   "why": "Violent or self-destructive restraint situations carry higher acuity and risk, so monitoring intervals are typically more frequent, often around every 15 minutes, covering circulation, positioning, and psychological status, compared to the longer interval used for non-violent restraints.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0148",
+   "section": "safety",
+   "q": "A patient identified as a fall risk should have which intervention in place?",
+   "choices": [
+    "No special intervention; fall risk patients are treated the same as others",
+    "Continuous 1:1 sitter for every fall-risk patient regardless of severity",
+    "Full restraints applied automatically",
+    "Fall precautions such as bed in lowest position, call light in reach, non-slip footwear, and possibly a bed alarm, per facility protocol"
+   ],
+   "answer": 3,
+   "why": "Standard fall precautions include measures like lowering the bed, keeping the call light within reach, ensuring non-slip footwear, and using bed/chair alarms as appropriate; restraints and continuous 1:1 sitters are reserved for higher-acuity situations, not applied automatically to every fall-risk patient.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0149",
+   "section": "safety",
+   "q": "Which type of precautions (isolation category) would a patient with suspected tuberculosis require, including a fit-tested respirator for staff?",
+   "choices": [
+    "Airborne precautions, using an N95 or higher-level respirator and a negative pressure room when available",
+    "Droplet precautions only",
+    "Contact precautions only",
+    "Standard precautions only, no additional isolation needed"
+   ],
+   "answer": 0,
+   "why": "TB is spread via small airborne particles that can remain suspended and travel further than droplets, requiring airborne precautions: a fit-tested N95 (or higher) respirator for anyone entering the room and, ideally, a negative-pressure isolation room, which is a higher level of protection than droplet or contact precautions alone.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0150",
+   "section": "safety",
+   "q": "A patient with confirmed influenza is placed on which type of precautions?",
+   "choices": [
+    "Airborne precautions with N95 required for all staff",
+    "Droplet precautions, generally requiring a surgical mask within about 3-6 feet of the patient",
+    "Contact precautions only, no mask needed",
+    "No precautions beyond standard are needed for influenza"
+   ],
+   "answer": 1,
+   "why": "Influenza is spread by larger respiratory droplets that don't typically travel or linger like true airborne pathogens, so droplet precautions (surgical mask within close proximity, per facility distance policy) are used rather than the N95/airborne protocol reserved for diseases like TB, measles, or varicella.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0151",
+   "section": "safety",
+   "q": "A patient with a known MRSA wound infection requires which precaution category, in addition to standard precautions?",
+   "choices": [
+    "Airborne precautions",
+    "Droplet precautions",
+    "Contact precautions, using gown and gloves for room entry",
+    "No additional precautions beyond standard"
+   ],
+   "answer": 2,
+   "why": "MRSA and similar organisms spread through direct or indirect contact (skin-to-skin or contaminated surfaces/equipment), so contact precautions requiring gown and gloves for anyone entering the room are used, distinct from the respiratory-focused droplet and airborne categories.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0152",
+   "section": "safety",
+   "q": "Proper isolation signage on a patient's door serves primarily to:",
+   "choices": [
+    "Identify the patient's diagnosis to any passerby in the hallway for convenience",
+    "Indicate billing status for the room",
+    "Replace the need for staff to review the chart",
+    "Alert staff and visitors to required precautions and PPE before entry, protecting against transmission"
+   ],
+   "answer": 3,
+   "why": "Isolation signage is a visual cue reminding everyone approaching the room what precautions and PPE are required before entry, functioning as a real-time safety barrier; while it does reflect precaution status, its core purpose is prevention of transmission, not diagnosis disclosure for convenience or billing.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0153",
+   "section": "safety",
+   "q": "Recognizing early warning signs of escalating agitation in a patient (clenched fists, pacing, raised voice, invading personal space) should prompt the tech to:",
+   "choices": [
+    "Use de-escalation techniques (calm tone, non-threatening posture, maintaining exit access) and alert the team early, before the situation worsens",
+    "Ignore it unless the patient becomes physically violent",
+    "Immediately call security to physically restrain the patient without attempting verbal de-escalation first",
+    "Match the patient's tone and volume to show they are being heard"
+   ],
+   "answer": 0,
+   "why": "Early recognition allows verbal de-escalation (calm tone, respectful language, maintaining a safe distance and clear exit path) and early team notification, which can often prevent escalation to a physical confrontation; matching an agitated tone or jumping straight to physical restraint without attempting de-escalation increases risk for everyone.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0154",
+   "section": "safety",
+   "q": "When engaging with a potentially violent patient, which positioning principle is correct for staff safety?",
+   "choices": [
+    "Stand directly in front of the patient, blocking the doorway",
+    "Position yourself with a clear path to the exit and avoid being cornered or blocking your own escape route",
+    "Turn your back to the patient to appear non-threatening",
+    "Stand as close as possible to appear confident and in control"
+   ],
+   "answer": 1,
+   "why": "Maintaining an accessible exit and never allowing yourself to become cornered is a core personal safety principle when dealing with a potentially violent patient; blocking your own exit, turning your back, or standing unnecessarily close all increase personal risk.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0155",
+   "section": "safety",
+   "q": "Which of the following is an appropriate use of a chemical restraint versus a physical restraint, in general principle?",
+   "choices": [
+    "Chemical restraints are always preferred over physical restraints in every situation",
+    "Chemical restraints require no monitoring once administered",
+    "The choice between chemical and physical restraint (or neither) should be based on the specific clinical situation and ordered/directed per protocol, using the least restrictive effective option",
+    "Physical restraints never require an order, only chemical restraints do"
+   ],
+   "answer": 2,
+   "why": "Restraint decisions, chemical or physical, should follow the principle of using the least restrictive intervention effective for the situation, guided by clinical judgment and orders/protocol; both restraint types require ongoing monitoring and documentation, and neither is a default 'always preferred' choice.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0156",
+   "section": "safety",
+   "q": "A sharps injury (needlestick) occurs to a tech during a procedure. The immediate correct action is:",
+   "choices": [
+    "Finish the task first, then report it at the end of the shift",
+    "Ignore it if the patient has no known bloodborne disease history",
+    "Apply alcohol only, no need to report if the needle looked clean",
+    "Stop, wash the area with soap and water, and report the exposure immediately per facility protocol for evaluation and possible prophylaxis"
+   ],
+   "answer": 3,
+   "why": "Needlestick injuries require immediate wound care (washing with soap and water) and prompt reporting through the facility's exposure protocol so risk can be assessed and time-sensitive interventions like post-exposure prophylaxis can be considered without delay; delaying reporting can reduce the effectiveness of these interventions.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0157",
+   "section": "safety",
+   "q": "Which hand hygiene method is preferred when hands are visibly soiled or after caring for a patient with suspected C. difficile?",
+   "choices": [
+    "Soap and water, since alcohol-based sanitizer is not reliably effective against C. difficile spores and doesn't remove visible soiling",
+    "Alcohol-based hand sanitizer only",
+    "Hand sanitizer followed immediately by gloving with no washing",
+    "No hand hygiene needed if gloves were worn throughout"
+   ],
+   "answer": 0,
+   "why": "Alcohol-based hand rubs do not reliably kill C. difficile spores, and visibly soiled hands need mechanical removal of debris, so soap and water handwashing is specifically required in these situations rather than relying on alcohol-based sanitizer alone.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0158",
+   "section": "safety",
+   "q": "A tech is assigned to care for a patient under droplet precautions and needs to transport them to radiology. The correct approach is:",
+   "choices": [
+    "Transport without a mask on the patient since the tech is masked",
+    "Place a surgical mask on the patient (if tolerated) during transport and notify the receiving department of the precaution status ahead of time",
+    "Cancel the transport entirely since droplet patients can never leave their room",
+    "Only notify radiology after the patient arrives"
+   ],
+   "answer": 1,
+   "why": "Masking the patient (when tolerated) during transport helps contain droplet spread outside the room, and advance notification lets the receiving department prepare appropriately, which is standard practice rather than refusing transport altogether or notifying only after arrival.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0159",
+   "section": "safety",
+   "q": "The correct disposal method for a blood-soaked gauze dressing removed during wound care is:",
+   "choices": [
+    "Regular trash, since it's just gauze",
+    "Sharps container, since any medical item goes there",
+    "Biohazard/regulated medical waste ('red bag') disposal, following facility policy for items saturated with blood or body fluid",
+    "Recycling bin, since gauze is a fabric material"
+   ],
+   "answer": 2,
+   "why": "Items saturated or dripping with blood or body fluid meet the threshold for regulated medical waste ('red bag') disposal per most facility policies, distinct from sharps containers (reserved for sharp items) and regular trash (reserved for non-contaminated waste).",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0160",
+   "section": "safety",
+   "q": "Which statement about restraint documentation is accurate?",
+   "choices": [
+    "Only the initial order needs to be documented; ongoing checks don't require separate documentation",
+    "Restraint use never requires a time-limited order",
+    "Documentation is only required if the patient is injured while restrained",
+    "Ongoing monitoring, including neurovascular checks, behavior, and continued need for restraint, must be documented at the required interval throughout the duration of use"
+   ],
+   "answer": 3,
+   "why": "Restraint use requires an order that is time-limited and requires renewal, plus ongoing documented monitoring at defined intervals covering safety, neurovascular status, and continued clinical justification for the restraint, not just a one-time note at initiation.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0161",
+   "section": "safety",
+   "q": "A patient in the waiting room becomes verbally aggressive but has not made any physical threats. The tech's most appropriate first response is:",
+   "choices": [
+    "Use calm, respectful verbal de-escalation, involve triage/security as appropriate per protocol, and avoid engaging in an argument",
+    "Immediately call for a physical restraint team",
+    "Argue back to assert authority",
+    "Ignore the behavior and hope it resolves on its own"
+   ],
+   "answer": 0,
+   "why": "Verbal aggression without physical threat generally calls for verbal de-escalation techniques first, with security or additional staff looped in per protocol if needed, rather than skipping straight to physical intervention or, at the other extreme, ignoring a situation that could escalate.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0162",
+   "section": "safety",
+   "q": "Which of these best describes 'transmission-based precautions' as distinct from 'standard precautions'?",
+   "choices": [
+    "They are the same thing with different names",
+    "Transmission-based precautions are additional measures (contact, droplet, airborne) layered on top of standard precautions for specific known or suspected pathogens",
+    "Transmission-based precautions replace the need for standard precautions",
+    "Transmission-based precautions only apply to surgical patients"
+   ],
+   "answer": 1,
+   "why": "Standard precautions apply to every patient encounter; transmission-based precautions (contact, droplet, airborne) are added on top when a specific pathogen with a known transmission route is suspected or confirmed, layering extra protection rather than substituting for standard precautions.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0163",
+   "section": "safety",
+   "q": "Sharps container replacement should occur when the container is filled to approximately what capacity, per standard safety guidance?",
+   "choices": [
+    "100% full, filled completely to the very top",
+    "Only when visibly overflowing with sharps sticking out",
+    "About 3/4 full (commonly marked with a fill line), to avoid overfilling and needlestick risk during disposal",
+    "Sharps containers are reused indefinitely and never replaced"
+   ],
+   "answer": 2,
+   "why": "Sharps containers should be replaced at about the 3/4-full mark (usually indicated by a fill line on the container) to prevent overfilling, which increases the risk of a needlestick injury when someone tries to force one more item in or when the container is being handled for replacement.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0164",
+   "section": "safety",
+   "q": "A tech notices a colleague reusing a single alcohol prep pad across two different patients' IV sites. This is:",
+   "choices": [
+    "Acceptable, since it's just alcohol",
+    "Acceptable if the pad still appears clean",
+    "Only a problem if either patient has a known infection",
+    "Not acceptable; single-use items must not be reused between patients, and this should be corrected/reported per facility policy"
+   ],
+   "answer": 3,
+   "why": "Single-use supplies, including prep pads, must never be reused on a different patient regardless of appearance, since visual cleanliness doesn't reflect microbial contamination; this is a patient safety issue that should be corrected in the moment and reported per policy.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0165",
+   "section": "safety",
+   "q": "Personal protective equipment selection for a patient actively vomiting with a suspected norovirus infection should include, at minimum:",
+   "choices": [
+    "Gloves and gown, given the contact transmission risk and potential for soiling from body fluids",
+    "Gloves only",
+    "No PPE is needed since norovirus is airborne only",
+    "A fit-tested N95 respirator is always required"
+   ],
+   "answer": 0,
+   "why": "Norovirus spreads primarily via the fecal-oral route and contact with contaminated surfaces or body fluids, so gloves and gown for contact precautions are the minimum appropriate PPE; it is not classified as requiring airborne precautions or a fit-tested respirator.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0166",
+   "section": "safety",
+   "q": "Which best describes appropriate use of a gait belt to prevent falls during ambulation?",
+   "choices": [
+    "Gait belts are optional and rarely useful",
+    "A properly applied gait belt gives staff a secure hand-hold to assist and stabilize an at-risk patient during transfers or ambulation, reducing fall risk",
+    "Gait belts should be applied as tightly as possible around the neck for control",
+    "Gait belts replace the need for any other fall precautions"
+   ],
+   "answer": 1,
+   "why": "A gait belt applied snugly around the waist (never the neck) gives staff a secure grip point to assist and catch a patient during ambulation or transfers, functioning as one part of a broader fall-prevention approach rather than a complete replacement for other precautions.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0167",
+   "section": "safety",
+   "q": "The primary purpose of a 'sharps safety' program including safety-engineered devices (such as needles with retractable or shielded tips) is to:",
+   "choices": [
+    "Make procedures take longer for no clinical benefit",
+    "Reduce the cost of sharps disposal only",
+    "Reduce needlestick injuries and associated bloodborne pathogen exposure risk to healthcare workers",
+    "Eliminate the need for a sharps container"
+   ],
+   "answer": 2,
+   "why": "Safety-engineered sharps devices are specifically designed to reduce accidental needlestick injuries, which are a major route of occupational bloodborne pathogen exposure (HIV, hepatitis B, hepatitis C) for healthcare workers; they don't eliminate the need for proper sharps disposal.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0168",
+   "section": "safety",
+   "q": "A patient under contact precautions for a wound infection needs a wheelchair for transport. Correct practice is:",
+   "choices": [
+    "Use a wheelchair from another unit without cleaning it afterward",
+    "Equipment used for a contact-precaution patient should never be reused, only discarded",
+    "No special handling of equipment is needed under contact precautions",
+    "Use a dedicated/dedicated-for-use wheelchair when possible, or thoroughly disinfect shared equipment per protocol after use before it's used for another patient"
+   ],
+   "answer": 3,
+   "why": "Under contact precautions, shared equipment either should be dedicated to that patient when feasible or thoroughly disinfected per facility protocol immediately after use before being used for another patient, preventing indirect contact transmission via contaminated equipment.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0169",
+   "section": "safety",
+   "q": "Workplace violence prevention training generally emphasizes which principle for de-escalating a verbally hostile patient or visitor?",
+   "choices": [
+    "Active listening, maintaining a calm tone and non-confrontational body language, and offering choices where possible",
+    "Raising your voice to match theirs so they know you're serious",
+    "Immediately threatening to call police for any raised voice",
+    "Standing with arms crossed and direct, unbroken eye contact to assert dominance"
+   ],
+   "answer": 0,
+   "why": "Effective de-escalation relies on active listening, calm tone, open non-threatening body language, and offering reasonable choices to help the person regain a sense of control, rather than mirroring hostility, making premature threats, or using confrontational body language that can escalate tension.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0170",
+   "section": "safety",
+   "q": "A tech is asked to help apply a restraint on an agitated but not-yet-violent patient before less restrictive measures have been tried. The appropriate response is:",
+   "choices": [
+    "Apply the restraint immediately since a request was made",
+    "Voice the concern that less restrictive alternatives should be attempted first per the least-restrictive-intervention principle, and confirm there is an appropriate order before proceeding",
+    "Refuse to participate in restraint application under any circumstance",
+    "Apply the restraint but do not document anything about it"
+   ],
+   "answer": 1,
+   "why": "Restraint use is generally expected to follow a least-restrictive-intervention approach and requires an appropriate order; a tech asked to skip that step appropriately raises the concern rather than either blindly complying or refusing to ever assist with a properly ordered restraint.",
+   "difficulty": 3
+  },
+  {
+   "id": "ed-tech-competency-q0171",
+   "section": "flow",
+   "q": "In the Emergency Severity Index (ESI), a patient requiring immediate life-saving intervention is triaged as:",
+   "choices": [
+    "ESI Level 5",
+    "ESI Level 3",
+    "ESI Level 1",
+    "ESI Level 4"
+   ],
+   "answer": 2,
+   "why": "ESI Level 1 is reserved for patients who require immediate life-saving intervention (e.g., not breathing, no pulse, unresponsive requiring immediate intervention); it represents the highest acuity and is seen immediately, not queued behind other patients.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0172",
+   "section": "flow",
+   "q": "A patient is triaged as ESI Level 2. This generally means:",
+   "choices": [
+    "The patient can safely wait several hours to be seen",
+    "The patient needs no resources and can be discharged from triage",
+    "The lowest acuity level in the ESI system",
+    "A high-risk situation, severe pain/distress, or a patient who should not wait, needing to be seen very quickly though not requiring an immediate life-saving intervention"
+   ],
+   "answer": 3,
+   "why": "ESI Level 2 identifies high-risk patients (concerning vital signs, severe pain/distress, or a situation like new confusion or chest pain) who don't yet meet Level 1 criteria but should not wait in the general queue, requiring prompt placement and evaluation.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0173",
+   "section": "flow",
+   "q": "ESI triage levels 3, 4, and 5 are primarily differentiated from each other based on:",
+   "choices": [
+    "The number of hospital resources (tests, procedures) the patient is anticipated to need, combined with vital sign considerations for level 3",
+    "Patient age only",
+    "Insurance status",
+    "Time of arrival only"
+   ],
+   "answer": 0,
+   "why": "For patients not meeting Level 1 or 2 criteria, ESI uses a resource-based algorithm: Level 3 patients are expected to need two or more resources (with a vital sign check), Level 4 patients need one resource, and Level 5 patients need none, guiding relative urgency and expected workup complexity.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0174",
+   "section": "flow",
+   "q": "SBAR, used for handoff communication, stands for:",
+   "choices": [
+    "Symptoms, Behavior, Action, Response",
+    "Situation, Background, Assessment, Recommendation",
+    "Status, Background, Analysis, Result",
+    "Setting,باckground, Assessment, Review"
+   ],
+   "answer": 1,
+   "why": "SBAR (Situation, Background, Assessment, Recommendation) is a structured communication framework used to give a clear, organized handoff so the receiving team quickly understands what's happening, relevant history, current assessment, and what's being asked of them.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0175",
+   "section": "flow",
+   "q": "Closed-loop communication during a critical event means:",
+   "choices": [
+    "The sender repeats the instruction multiple times until someone responds",
+    "Only the team leader speaks during the event",
+    "The receiver repeats back the instruction to confirm understanding, and the sender confirms that repeat-back is correct",
+    "Communication happens only through written orders, never verbally"
+   ],
+   "answer": 2,
+   "why": "Closed-loop communication requires the receiver to verbally repeat back what was heard (e.g., 'giving epinephrine 1mg IV now') and the sender to confirm it's correct, which reduces the risk of a missed or misunderstood instruction during high-stress, time-critical situations.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0176",
+   "section": "flow",
+   "q": "A tech disagrees with a clinical decision made by a more senior team member during a critical situation and believes patient safety is at risk. The appropriate action is:",
+   "choices": [
+    "Say nothing and comply, since the senior person outranks the tech",
+    "Refuse to participate in any part of the patient's care going forward",
+    "Wait until after the shift to bring it up privately",
+    "Voice the concern clearly and respectfully in the moment, and use the chain of command if the concern isn't addressed"
+   ],
+   "answer": 3,
+   "why": "A speak-up culture expects any team member who identifies a safety concern to voice it clearly in real time, and to escalate through the chain of command if it isn't adequately addressed, rather than staying silent, delaying the concern until later, or disengaging from patient care entirely.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0177",
+   "section": "flow",
+   "q": "Two patient identifiers used consistently at every point of care (medication administration, specimen collection, procedures) primarily serve to:",
+   "choices": [
+    "Prevent wrong-patient errors across all aspects of care, a core patient safety practice",
+    "Speed up documentation",
+    "Satisfy a purely administrative, non-clinical requirement",
+    "Reduce the number of required signatures on forms"
+   ],
+   "answer": 0,
+   "why": "Consistent two-identifier verification (commonly name and date of birth) at every care point is a fundamental safety practice specifically aimed at preventing mix-ups between patients, whether during medication administration, specimen collection, or procedures.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0178",
+   "section": "flow",
+   "q": "Timely documentation of vital signs and interventions in the ED is important primarily because:",
+   "choices": [
+    "It looks better on a performance review",
+    "Real-time, accurate documentation supports clinical decision-making, continuity of care, and legal/medical record accuracy",
+    "Documentation timing has no real clinical impact as long as it's eventually entered",
+    "Only physician documentation timing matters for patient care"
+   ],
+   "answer": 1,
+   "why": "Documenting close to the time an event or vital sign occurs (rather than batching or backdating later) ensures the record accurately reflects the patient's condition and the care given, which directly supports clinical decisions made by the rest of the team and the legal integrity of the chart.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0179",
+   "section": "flow",
+   "q": "'Boarding' in the ED context refers to:",
+   "choices": [
+    "Patients waiting in the waiting room before triage",
+    "The process of registering a patient at arrival",
+    "Admitted patients who remain in the ED, often on stretchers/hallway beds, because no inpatient bed is available yet",
+    "A type of triage documentation form"
+   ],
+   "answer": 2,
+   "why": "Boarding describes admitted patients who stay in the ED, sometimes for extended periods, because an inpatient bed isn't yet available; it's a significant driver of ED crowding and throughput problems, distinct from the initial waiting-room or triage/registration process.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0180",
+   "section": "flow",
+   "q": "Which of the following is a typical component of ED patient throughput that a tech directly supports?",
+   "choices": [
+    "Setting hospital-wide bed capacity policy",
+    "Determining hospital-wide staffing ratios",
+    "Negotiating with insurance companies",
+    "Timely and accurate vital sign collection, specimen collection, and communication of results/changes to the care team, which keeps the care process moving"
+   ],
+   "answer": 3,
+   "why": "Techs directly influence throughput by performing timely vitals, specimen collection, and prompt communication of findings, all of which keep the diagnostic and treatment process moving efficiently; broader system-level decisions like bed policy or staffing ratios are outside the tech's role.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0181",
+   "section": "flow",
+   "q": "A patient triaged as ESI Level 2 for 'new onset confusion' should be:",
+   "choices": [
+    "Placed promptly per Level 2 protocol, since new altered mental status is a high-risk presentation that should not wait",
+    "Placed in the general queue behind lower-acuity patients since confusion alone isn't urgent",
+    "Reassessed only if family requests it",
+    "Downgraded automatically if vitals are normal"
+   ],
+   "answer": 0,
+   "why": "New-onset confusion is a recognized high-risk chief complaint under ESI criteria (it can signal stroke, sepsis, metabolic derangement, and more), warranting Level 2 assignment and prompt placement regardless of otherwise normal vital signs.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0182",
+   "section": "flow",
+   "q": "When giving an SBAR handoff about a patient with worsening vital signs, the 'Recommendation' portion should include:",
+   "choices": [
+    "A summary of the patient's entire medical history",
+    "What the tech thinks should happen next, such as a request for the nurse to reassess or notify the provider",
+    "Only the current vital signs with no further comment",
+    "The patient's insurance and demographic information"
+   ],
+   "answer": 1,
+   "why": "The recommendation portion of SBAR states clearly what the communicator is asking for or suggesting (e.g., 'please come reassess, I'm concerned about this trend'), giving the receiving person a clear action item rather than just raw data without direction.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0183",
+   "section": "flow",
+   "q": "A patient's condition changes significantly while boarding in the ED awaiting an inpatient bed. The tech's correct action is:",
+   "choices": [
+    "Wait for the inpatient team to notice at the next scheduled rounding time",
+    "Assume the inpatient unit has already been alerted automatically",
+    "Notify the ED nurse/provider promptly, since the patient remains an ED patient under ED staff responsibility until physically transferred",
+    "Document the change only, without verbal notification"
+   ],
+   "answer": 2,
+   "why": "A boarding patient remains under the responsibility of the ED care team until an actual physical transfer occurs, so any significant change must be reported promptly to ED staff just as it would be for any other ED patient, not assumed to be someone else's responsibility.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0184",
+   "section": "flow",
+   "q": "Chain of command in a hospital setting exists primarily to:",
+   "choices": [
+    "Limit who is allowed to speak during an emergency",
+    "Replace the need for direct communication between team members",
+    "Determine pay grade differences between staff",
+    "Provide a clear escalation pathway when a concern isn't resolved at the initial level, ensuring patient safety issues get appropriate attention"
+   ],
+   "answer": 3,
+   "why": "Chain of command gives staff, including techs, a structured way to escalate an unresolved safety concern to the next appropriate level of authority, ensuring concerns don't get dropped; it exists to support safety, not to silence initial communication or serve as a pay structure.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0185",
+   "section": "flow",
+   "q": "A tech receiving a verbal order for a task should:",
+   "choices": [
+    "Use closed-loop communication: repeat the order back to confirm accuracy before carrying it out",
+    "Carry out the order exactly as heard without repeating it back",
+    "Only accept written orders, never verbal ones under any circumstance",
+    "Ask a different staff member to confirm instead of the person who gave the order"
+   ],
+   "answer": 0,
+   "why": "Repeating a verbal order back to the person who gave it (closed-loop communication) confirms it was heard correctly before it's acted on, catching potential errors immediately rather than relying on a written-order-only policy that isn't realistic in fast-moving ED situations.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0186",
+   "section": "flow",
+   "q": "ESI Level 1 criteria include patients who are, for example:",
+   "choices": [
+    "Ambulatory with a minor ankle sprain",
+    "In cardiac arrest or requiring immediate airway/breathing intervention",
+    "Stable and requesting a work note",
+    "Requesting a refill of a chronic home medication"
+   ],
+   "answer": 1,
+   "why": "ESI Level 1 is defined by the need for immediate life-saving intervention, such as cardiac arrest, apnea, or severe respiratory distress requiring immediate airway management; the other examples listed represent low-acuity presentations far from Level 1 criteria.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0187",
+   "section": "flow",
+   "q": "A tech overhears a nurse and physician disagreeing loudly at the bedside about the next step for an unstable patient, creating confusion about who is directing care. The most appropriate tech action is:",
+   "choices": [
+    "Pick a side and start following whichever instruction came first",
+    "Leave the room to avoid the conflict",
+    "Seek clarification on who is the designated team leader/decision-maker for the moment and confirm the current plan before acting",
+    "Perform tasks from both sets of instructions simultaneously"
+   ],
+   "answer": 2,
+   "why": "In moments of unclear direction, clarifying who has decision-making authority in that moment and confirming the current plan prevents duplicated or conflicting actions; leaving, guessing, or trying to follow contradictory instructions simultaneously all risk patient harm.",
+   "difficulty": 3
+  },
+  {
+   "id": "ed-tech-competency-q0188",
+   "section": "flow",
+   "q": "Timely documentation in the ED is generally expected to occur:",
+   "choices": [
+    "At the very end of the shift, all at once",
+    "Whenever convenient, with no expectation of timeliness",
+    "Only when specifically requested by the charge nurse",
+    "As close to real-time as possible, ideally immediately after the vital sign, intervention, or observation occurs"
+   ],
+   "answer": 3,
+   "why": "Real-time or near-real-time documentation is the standard expectation because it most accurately reflects when events actually occurred, supports timely clinical decisions by the rest of the team, and reduces the risk of errors or omissions that come from trying to recall details later.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0189",
+   "section": "flow",
+   "q": "Which best describes the relationship between ESI level and expected hospital resource use for Levels 3-5?",
+   "choices": [
+    "Level 3 patients are generally expected to need two or more resources, Level 4 patients one resource, and Level 5 patients no additional resources",
+    "Level 3 needs zero resources, Level 5 needs the most",
+    "Resource use has no bearing on ESI level assignment for 3-5",
+    "All three levels are assigned solely based on age"
+   ],
+   "answer": 0,
+   "why": "For non-immediately-life-threatening patients, ESI uses anticipated resource needs (labs, imaging, IV fluids/meds, specialty consult, procedures) as the key differentiator: two-plus resources for Level 3, one for Level 4, and none for Level 5, alongside a danger-zone vital sign check for Level 3.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0190",
+   "section": "flow",
+   "q": "A family member insists their loved one 'needs to be seen right now' in a busy ED waiting room, though the patient's ESI level and vitals are stable. The appropriate tech response is:",
+   "choices": [
+    "Immediately move the patient ahead of higher-acuity patients to avoid conflict",
+    "Calmly explain the triage process, reassess if there's any new change in condition, and involve the triage nurse/charge nurse as appropriate",
+    "Argue with the family member about hospital policy",
+    "Ignore the family member entirely without any acknowledgment"
+   ],
+   "answer": 1,
+   "why": "A calm explanation of how triage prioritization works, combined with a genuine reassessment for any new or worsening findings and looping in the triage or charge nurse as needed, respects both patient safety (accurate re-triage if warranted) and family concerns, without simply bypassing the acuity-based system or dismissing the concern.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0191",
+   "section": "flow",
+   "q": "The primary reason ESI (or similar triage systems) exists is to:",
+   "choices": [
+    "Determine billing codes at registration",
+    "Assign patients to rooms based on insurance type",
+    "Rapidly sort patients by acuity and anticipated resource need so the sickest patients are identified and treated first",
+    "Replace the need for a full nursing assessment"
+   ],
+   "answer": 2,
+   "why": "Triage systems like ESI exist to quickly stratify incoming patients by how sick they are and what they're likely to need, ensuring the most critical patients are identified and prioritized rather than seen strictly in arrival order; it doesn't determine billing or replace a full nursing assessment, which still follows.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0192",
+   "section": "flow",
+   "q": "A tech notices a discrepancy between the chief complaint documented at triage and what the patient is now describing to them at the bedside. The correct action is:",
+   "choices": [
+    "Ignore it since triage already documented a complaint",
+    "Assume the patient is confused and disregard the new information",
+    "Change the triage documentation directly without discussion",
+    "Communicate the new/updated information to the nurse promptly, since it may change the clinical picture or urgency"
+   ],
+   "answer": 3,
+   "why": "New or changed symptom information can meaningfully affect the clinical picture and potentially the patient's acuity, so it should be promptly communicated to the nurse rather than ignored, dismissed, or unilaterally used to alter someone else's documentation.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0193",
+   "section": "flow",
+   "q": "Which is an example of effective closed-loop communication during a trauma resuscitation?",
+   "choices": [
+    "The team leader orders '2 liters of normal saline wide open,' the tech repeats 'giving 2 liters normal saline wide open,' and the team leader confirms 'correct'",
+    "The team leader gives an order and moves on without waiting for a response",
+    "The tech silently begins the task without acknowledging the order",
+    "The order is written on a whiteboard only, with no verbal exchange"
+   ],
+   "answer": 0,
+   "why": "This exchange demonstrates the full closed-loop cycle: order given, order repeated back verbatim by the receiver, and explicit confirmation by the sender, which is the standard taught for high-acuity, time-critical communication to minimize the chance of a misheard or misunderstood instruction.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0194",
+   "section": "flow",
+   "q": "A tech is asked to escalate a concern about a patient's deteriorating condition, but the assigned nurse is busy with another critical patient. The appropriate next step is:",
+   "choices": [
+    "Wait until the nurse is free, however long that takes",
+    "Escalate to another available nurse, charge nurse, or provider immediately, since patient deterioration cannot wait for a single busy staff member",
+    "Handle the deterioration independently without notifying anyone",
+    "Document it and address it only at the next scheduled check"
+   ],
+   "answer": 1,
+   "why": "When the assigned nurse is unavailable, the concern should be escalated to whoever is available and appropriate (another nurse, charge nurse, provider) without delay, since patient deterioration is time-sensitive and shouldn't wait on a single person's availability.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0195",
+   "section": "flow",
+   "q": "The 'situation' component of an SBAR handoff should concisely communicate:",
+   "choices": [
+    "The patient's entire chart history",
+    "Only the patient's vital signs from the last 24 hours",
+    "Who the patient is and the current problem/reason for the communication, in a brief, focused statement",
+    "The names of everyone who has cared for the patient today"
+   ],
+   "answer": 2,
+   "why": "The situation statement opens the handoff with a brief, focused identification of the patient and the immediate reason for the communication (e.g., 'Mr. Smith in bed 4, his heart rate just jumped to 150 and he's diaphoretic'), setting context quickly rather than delivering a full history upfront.",
+   "difficulty": 1
+  },
+  {
+   "id": "ed-tech-competency-q0196",
+   "section": "flow",
+   "q": "Regarding patient identification during a code/critical event with multiple team members present, best practice is:",
+   "choices": [
+    "Assume everyone already knows which patient is which since it's an emergency",
+    "Only the physician needs to confirm patient identity during a code",
+    "Skip identification checks entirely during codes to save time",
+    "Continue verifying patient identity for any patient-specific action (like medication or blood product administration) even during a high-stress critical event"
+   ],
+   "answer": 3,
+   "why": "Even in the chaos of a code, patient-specific actions like medication or blood product administration still require identity verification, because the consequences of a wrong-patient error (e.g., wrong blood type transfusion) can be just as severe, or more so, during a critical event as during routine care.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0197",
+   "section": "flow",
+   "q": "A tech notices the ED is significantly overcrowded with multiple boarding patients holding hallway beds. Which action is within the tech's role to help support throughput?",
+   "choices": [
+    "Continuing to perform timely vitals, promptly reporting changes, and communicating clearly with the team so care processes for all patients keep moving efficiently",
+    "Independently deciding which patients get inpatient beds first",
+    "Refusing to care for boarding patients since they are 'someone else's problem'",
+    "Telling patients directly when they will get a bed upstairs, based on personal guesses"
+   ],
+   "answer": 0,
+   "why": "During crowding, a tech's meaningful contribution to throughput is maintaining timely, accurate task completion and clear communication for every assigned patient, including those boarding; bed assignment decisions and giving patients specific timing promises are outside tech scope and can create false expectations.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0198",
+   "section": "flow",
+   "q": "Which best distinguishes 'closed-loop communication' from simply acknowledging an order with 'okay'?",
+   "choices": [
+    "There is no real difference between the two",
+    "Closed-loop requires the receiver to state back the specific content of the order, not just a general acknowledgment, so the sender can confirm accuracy",
+    "'Okay' is always sufficient in a busy ED",
+    "Closed-loop communication is only used in writing, never verbally"
+   ],
+   "answer": 1,
+   "why": "A vague 'okay' doesn't confirm what was actually heard or understood, while closed-loop communication requires repeating the specific content back, allowing the sender to catch and correct any misunderstanding immediately, which is the entire safety value of the technique.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0199",
+   "section": "flow",
+   "q": "A tech overhears the triage nurse assign an ESI level that seems inconsistent with the patient's reported symptoms (for example, crushing chest pain triaged as Level 4). The appropriate action is:",
+   "choices": [
+    "Say nothing since triage decisions are outside the tech's role entirely",
+    "Re-triage the patient personally to the level the tech believes is correct",
+    "Respectfully bring the observation to the triage nurse or charge nurse's attention so the acuity can be reviewed",
+    "Wait until the patient's condition worsens before saying anything"
+   ],
+   "answer": 2,
+   "why": "Any team member who notices a potential mismatch between presentation and assigned acuity should speak up to the appropriate person for review, consistent with a safety culture that values catching errors early; a tech shouldn't independently change someone else's triage assignment, but also shouldn't stay silent or wait for harm to occur.",
+   "difficulty": 2
+  },
+  {
+   "id": "ed-tech-competency-q0200",
+   "section": "flow",
+   "q": "Which best describes appropriate 'read-back' verification when receiving a critical lab value over the phone from the lab?",
+   "choices": [
+    "Simply saying 'got it, thanks' and hanging up",
+    "Assuming the value is correct since it came from the lab system",
+    "Asking the lab to send it in writing instead and skipping verbal confirmation",
+    "Writing down the value and reading it back to the caller for confirmation before ending the call"
+   ],
+   "answer": 3,
+   "why": "Reading a critical value back to the caller (a form of closed-loop communication) confirms it was transcribed and heard correctly before the call ends, protecting against transcription errors on time-sensitive values that will drive immediate clinical decisions.",
+   "difficulty": 1
+  }
+ ]
+}

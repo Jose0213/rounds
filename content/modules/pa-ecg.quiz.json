@@ -1,0 +1,1560 @@
+{
+  "schema": 1,
+  "extends": "pa-ecg",
+  "checks": {
+    "pa-ecg-l01": [
+      {
+        "q": "A tracing's calibration box measures only 5 mm tall instead of the standard 10 mm. What does this mean for interpreting voltage on that strip?",
+        "choices": [
+          "The machine is set to half standard, so real voltages are twice what the paper shows",
+          "The patient has pathologically low voltage from a pericardial effusion",
+          "The paper speed has been doubled, so intervals will look falsely short",
+          "Nothing changes; calibration only affects horizontal timing, not voltage"
+        ],
+        "answer": 0,
+        "why": "A half-standard calibration box compresses every waveform to half its true height, so a normal QRS can look small and true hypertrophy can look normal. It says nothing about timing, which is set by paper speed, and it is a machine setting, not a patient finding."
+      },
+      {
+        "q": "Which step in the systematic six-step read comes immediately before intervals?",
+        "choices": [
+          "Morphology",
+          "Axis",
+          "ST segments and T waves",
+          "Rhythm"
+        ],
+        "answer": 1,
+        "why": "The fixed order is rate, rhythm, axis, intervals, morphology, then ST and T. Axis is assessed right before measuring the PR, QRS, and QT intervals, not after morphology or ST/T, which come later."
+      }
+    ],
+    "pa-ecg-l02": [
+      {
+        "q": "A P wave in lead II measures 3 mm tall with normal width. What does this suggest?",
+        "choices": [
+          "Right atrial enlargement, P pulmonale",
+          "Left atrial enlargement, P mitrale",
+          "First-degree AV block",
+          "A normal variant requiring no further thought"
+        ],
+        "answer": 0,
+        "why": "A tall, peaked P wave over 2.5 mm in lead II is P pulmonale, reflecting right atrial enlargement, classically from COPD or pulmonary hypertension. P mitrale is wide and notched rather than tall, and neither finding relates to the PR interval."
+      },
+      {
+        "q": "A PR interval measures 0.22 seconds, and every P wave is followed by a QRS complex on every beat. What is this?",
+        "choices": [
+          "Mobitz I, Wenckebach",
+          "First-degree AV block",
+          "Third-degree AV block",
+          "A normal PR interval"
+        ],
+        "answer": 1,
+        "why": "First-degree block is simply a PR interval longer than 0.20 seconds with every P still conducting; nothing is actually blocked. Wenckebach requires progressive lengthening ending in a dropped beat, and third-degree block has no relationship between P waves and QRS at all."
+      }
+    ],
+    "pa-ecg-l03": [
+      {
+        "q": "A patient with a known chronic right bundle branch block has T-wave inversion in V1 through V3 on today's ECG, unchanged from prior tracings. What does this represent?",
+        "choices": [
+          "Anterior ischemia requiring urgent workup",
+          "An expected secondary repolarization change from the bundle block itself",
+          "New pericarditis",
+          "Digoxin toxicity"
+        ],
+        "answer": 1,
+        "why": "RBBB routinely produces T-wave inversion in the right precordial leads as a secondary repolarization effect, and it is not ischemic when it matches the known baseline. Chasing it as new ischemia or pericarditis ignores the comparison to the prior tracing."
+      },
+      {
+        "q": "Both lead I and aVF are net negative on a 12-lead ECG. What does this axis finding suggest?",
+        "choices": [
+          "Normal axis",
+          "Right axis deviation alone",
+          "Extreme (northwest) axis, raising suspicion for a ventricular rhythm, hyperkalemia, or lead misplacement",
+          "Left axis deviation from left ventricular hypertrophy"
+        ],
+        "answer": 2,
+        "why": "Both leads negative places the axis in the extreme northwest quadrant, an uncommon and worrisome finding that should prompt a look for a ventricular origin, severe hyperkalemia, or simple limb lead misplacement, not routine hypertrophy."
+      }
+    ],
+    "pa-ecg-l04": [
+      {
+        "q": "P-P intervals shorten slightly during inspiration and lengthen during expiration, with otherwise normal upright sinus P waves throughout. What is this?",
+        "choices": [
+          "Sinus arrest",
+          "Sinus arrhythmia, a normal finding especially in younger patients",
+          "Wandering atrial pacemaker",
+          "Second-degree AV block"
+        ],
+        "answer": 1,
+        "why": "Sinus arrhythmia is the normal respiratory variation of sinus rate, common and benign in children and young adults. Sinus arrest would show a flat gap with no P waves at all, and wandering pacemaker requires changing P wave morphology, not just rate variation."
+      },
+      {
+        "q": "An early beat shows a P wave with a different shape from the sinus P, followed by a normal, narrow QRS complex. What is it?",
+        "choices": [
+          "A premature ventricular contraction",
+          "A premature atrial contraction",
+          "A junctional escape beat",
+          "A run of ventricular tachycardia"
+        ],
+        "answer": 1,
+        "why": "An early, abnormally shaped P wave followed by a normal narrow QRS is a premature atrial contraction, a benign ectopic beat from the atrium. A PVC has no preceding P wave at all and a wide QRS, and an escape beat is late rather than early."
+      }
+    ],
+    "pa-ecg-l05": [
+      {
+        "q": "Every third beat on a strip is early, wide, and has no preceding P wave, followed by a compensatory pause. What pattern is this?",
+        "choices": [
+          "Bigeminy",
+          "Trigeminy",
+          "A couplet",
+          "Sustained ventricular tachycardia"
+        ],
+        "answer": 1,
+        "why": "A PVC occurring every third beat is trigeminy. Bigeminy is every other beat, a couplet is two PVCs in a row, and three or more consecutive PVCs would be ventricular tachycardia rather than a repeating single-beat pattern."
+      },
+      {
+        "q": "A patient in ventricular fibrillation shows very low-amplitude, fine chaotic waveforms rather than large coarse ones. What does this most likely suggest?",
+        "choices": [
+          "A shorter downtime before the arrest was recognized",
+          "A longer downtime with more myocardial energy depletion",
+          "That defibrillation should be withheld in favor of medications alone",
+          "That the tracing is actually artifact, not a true rhythm"
+        ],
+        "answer": 1,
+        "why": "Fine VF reflects a myocardium that has been fibrillating longer and has exhausted more of its energy stores, which generally carries a worse prognosis than coarse VF. It is still shockable and CPR plus defibrillation remain the treatment."
+      }
+    ],
+    "pa-ecg-l06": [
+      {
+        "q": "ST elevation is present in V3 and V4 only, meeting threshold. Which wall is involved and which artery is usually responsible?",
+        "choices": [
+          "Inferior wall; right coronary artery",
+          "Anterior wall; left anterior descending artery",
+          "Lateral wall; circumflex artery",
+          "Septal wall; right coronary artery"
+        ],
+        "answer": 1,
+        "why": "V3 and V4 are the anterior leads, supplied by the left anterior descending artery, the largest coronary territory. Inferior leads are II, III, aVF, and lateral leads are I, aVL, V5, V6, neither of which is involved here."
+      },
+      {
+        "q": "A patient with STEMI presents to a hospital without PCI capability, and transfer cannot be completed within 120 minutes of first medical contact. What is the target time for the alternative treatment?",
+        "choices": [
+          "Door to balloon within 90 minutes",
+          "Door to needle, meaning fibrinolysis, within 30 minutes",
+          "Door to balloon within 60 minutes",
+          "No specific time target applies once transfer is not feasible"
+        ],
+        "answer": 1,
+        "why": "When timely PCI is not achievable, fibrinolysis becomes the reperfusion strategy, with a door-to-needle target of 30 minutes. The 90-minute and 120-minute targets apply to primary and transferred PCI, not to fibrinolysis."
+      }
+    ],
+    "pa-ecg-l07": [
+      {
+        "q": "A healthy 22-year-old has concave ST elevation with a notch at the J point, most prominent in the mid-precordial leads, unchanged from a tracing two years earlier. What is this?",
+        "choices": [
+          "Acute pericarditis",
+          "Early repolarization, a benign variant",
+          "Anterior STEMI",
+          "Brugada pattern"
+        ],
+        "answer": 1,
+        "why": "Concave, J-point notched elevation in a young healthy person that is unchanged over years is classic early repolarization. Pericarditis is typically diffuse and acute, a STEMI is dynamic and territorial, and Brugada is a coved pattern confined to V1-V2."
+      },
+      {
+        "q": "A patient with chest pain has upsloping ST depression at the J point across V1 through V6, rising into tall, symmetric, peaked T waves, with slight ST elevation in aVR. What is the correct treatment approach?",
+        "choices": [
+          "Outpatient stress test, since formal STEMI criteria are not met",
+          "Treat as an LAD occlusion equivalent, with the same urgency as a STEMI",
+          "Observation with serial troponins over the next 12 hours",
+          "Beta blocker and discharge home"
+        ],
+        "answer": 1,
+        "why": "This is the De Winter pattern, an LAD occlusion equivalent that does not meet standard ST-elevation criteria but carries the same risk and urgency. Delaying to stress test or observe risks a large anterior infarct in the interim."
+      }
+    ],
+    "pa-ecg-l08": [
+      {
+        "q": "A patient with a potassium of 2.8 mEq/L has flattened T waves, a sagging ST segment, and a prominent wave appearing after the T wave, taller than the T itself. What is this wave, and what does its presence risk?",
+        "choices": [
+          "A U wave, risking torsades de pointes",
+          "A delta wave, risking a WPW-related arrhythmia",
+          "An Osborn wave, risking a hypothermic arrest",
+          "A sine wave, risking imminent asystole"
+        ],
+        "answer": 0,
+        "why": "Hypokalemia produces flattened T waves and a prominent U wave, and the resulting long QU interval is the substrate for torsades de pointes. A delta wave belongs to pre-excitation and an Osborn wave to hypothermia, neither related to potassium."
+      },
+      {
+        "q": "A hypothermic patient at a core temperature of 29 degrees Celsius has a positive hump at the QRS-ST junction, bradycardia, and prolonged intervals. What is the hump called, and what should responders avoid?",
+        "choices": [
+          "A delta wave; avoid adenosine",
+          "An Osborn, or J, wave; avoid rough handling, which can trigger ventricular fibrillation",
+          "A U wave; avoid magnesium",
+          "An epsilon wave; avoid defibrillation entirely"
+        ],
+        "answer": 1,
+        "why": "The Osborn wave is the hallmark of hypothermia. Below about 30 degrees the myocardium becomes irritable, so hypothermic patients are handled gently and moved carefully to avoid precipitating ventricular fibrillation."
+      }
+    ],
+    "pa-ecg-l09": [
+      {
+        "q": "A tracing shows QRS amplitude under 5 mm in every limb lead. Which of the following is NOT a typical cause of this finding?",
+        "choices": [
+          "Pericardial effusion",
+          "Obesity",
+          "An acute anterior STEMI",
+          "Severe COPD"
+        ],
+        "answer": 2,
+        "why": "Low voltage comes from anything that insulates or replaces muscle, such as effusion, obesity, or hyperinflated lungs from COPD. An acute STEMI does not itself lower QRS voltage; it produces ST elevation and, later, Q waves in the affected territory."
+      },
+      {
+        "q": "Using the Sokolow-Lyon criteria, which measurement combination diagnoses left ventricular hypertrophy?",
+        "choices": [
+          "The S wave in V1 plus the tallest R wave in V5 or V6 totaling more than 35 mm",
+          "The R wave in V1 alone exceeding 20 mm",
+          "A QRS duration exceeding 0.12 seconds",
+          "A P wave amplitude exceeding 2.5 mm in lead II"
+        ],
+        "answer": 0,
+        "why": "Sokolow-Lyon sums the S wave in V1 and the taller of the R waves in V5 or V6; a total over 35 mm supports LVH. QRS duration and P wave amplitude are unrelated criteria, used for bundle blocks and atrial enlargement respectively."
+      }
+    ],
+    "pa-ecg-l10": [
+      {
+        "q": "A hemodynamically stable patient has a regular, narrow-complex tachycardia at 180 with no visible P waves. What is the first-line treatment sequence?",
+        "choices": [
+          "Immediate synchronized cardioversion",
+          "Vagal maneuvers, then adenosine 6 mg, then 12 mg if needed",
+          "Amiodarone 150 mg IV over 10 minutes",
+          "Magnesium sulfate 2 g IV"
+        ],
+        "answer": 1,
+        "why": "Stable narrow-complex tachycardia is managed with vagal maneuvers first, then rapid-push adenosine, escalating from 6 mg to 12 mg. Cardioversion is reserved for instability, and amiodarone and magnesium target wide-complex or polymorphic rhythms."
+      },
+      {
+        "q": "A stable patient has a monomorphic wide-complex tachycardia at 160, a normal blood pressure, and is conversing normally. What is an appropriate treatment?",
+        "choices": [
+          "Immediate unsynchronized defibrillation",
+          "Amiodarone 150 mg IV over 10 minutes with pads applied",
+          "Diltiazem 0.25 mg/kg IV",
+          "Observation only, since the patient is asymptomatic"
+        ],
+        "answer": 1,
+        "why": "Stable monomorphic VT is treated with an antiarrhythmic infusion such as amiodarone while cardioversion pads stay ready in case the patient deteriorates. Defibrillation is for pulseless or polymorphic rhythms, and calcium channel blockers are avoided in wide-complex tachycardia of uncertain origin."
+      }
+    ],
+    "pa-ecg-l11": [
+      {
+        "q": "A patient's atrial fibrillation terminates and is followed by a long pause before the sinus node resumes firing normally. What does this describe?",
+        "choices": [
+          "Wenckebach conduction",
+          "Tachy-brady syndrome, part of sinus node dysfunction",
+          "Pre-excited atrial fibrillation",
+          "Isorhythmic AV dissociation"
+        ],
+        "answer": 1,
+        "why": "A pause following termination of a tachyarrhythmia, especially atrial fibrillation, is the tachy-brady pattern of sick sinus syndrome. Wenckebach concerns AV conduction, and isorhythmic dissociation and pre-excited fibrillation describe unrelated pictures."
+      },
+      {
+        "q": "A pause on a rhythm strip measures exactly twice the underlying P-to-P interval. What does this suggest?",
+        "choices": [
+          "Sinus arrest, since no beat formed at all",
+          "Sinoatrial exit block, since a beat formed but failed to exit the node",
+          "Mobitz II second-degree block",
+          "Third-degree AV block"
+        ],
+        "answer": 1,
+        "why": "A pause that is an exact arithmetic multiple of the P-to-P interval means a sinus impulse was generated but blocked from exiting the node, which is sinoatrial exit block. Sinus arrest produces a pause with no such arithmetic relationship, since nothing formed."
+      }
+    ],
+    "pa-ecg-l12": [
+      {
+        "q": "ST elevation appears in leads I, aVL, and V2, with reciprocal depression in lead III. What does this pattern indicate?",
+        "choices": [
+          "A proximal right coronary artery occlusion",
+          "A first diagonal branch occlusion, the so-called South African flag pattern",
+          "A posterior infarction",
+          "A left main occlusion"
+        ],
+        "answer": 1,
+        "why": "Elevation in I, aVL, and V2 with reciprocal depression in III is the recognized pattern of a first diagonal branch occlusion. A right coronary occlusion would elevate the inferior leads, and a left main pattern involves widespread depression with aVR elevation."
+      },
+      {
+        "q": "A patient has ST elevation in both the anterior precordial leads and the inferior leads simultaneously. What vessel anatomy explains this seemingly contradictory finding?",
+        "choices": [
+          "A wrap-around LAD that curls around the cardiac apex to also supply the inferior wall",
+          "Simultaneous, unrelated occlusion of both the right coronary and circumflex arteries",
+          "Acute pericarditis mimicking two territories",
+          "Early repolarization affecting both wall segments"
+        ],
+        "answer": 0,
+        "why": "A long LAD that wraps around the apex can supply part of the inferior wall, so its occlusion produces elevation in both anterior and inferior distributions from a single culprit vessel, rather than requiring two separate occlusions."
+      }
+    ],
+    "pa-ecg-l13": [
+      {
+        "q": "What is the normal PR interval upper limit for a newborn?",
+        "choices": [
+          "0.12 seconds",
+          "0.18 seconds",
+          "0.20 seconds",
+          "0.24 seconds"
+        ],
+        "answer": 0,
+        "why": "Pediatric interval limits are shorter than adult norms and lengthen with age; a newborn's PR upper limit is about 0.12 seconds, compared with 0.18 seconds by adolescence and 0.20 seconds in adults."
+      },
+      {
+        "q": "A child has an RSR' pattern in V1 with a wide QRS and right axis deviation. What should be suspected?",
+        "choices": [
+          "A normal childhood variant needing no further workup",
+          "An atrial septal defect",
+          "Digoxin toxicity",
+          "Sinus node dysfunction"
+        ],
+        "answer": 1,
+        "why": "A narrow RSR' in V1 is a normal pediatric variant, but the same pattern with a wide QRS and right axis deviation raises concern for right ventricular volume overload from an atrial septal defect, which warrants echocardiographic evaluation."
+      }
+    ],
+    "pa-ecg-l14": [
+      {
+        "q": "A patient has a diseased sinus node but entirely intact AV conduction. Which pacing mode is most appropriate?",
+        "choices": [
+          "VVI",
+          "AAI",
+          "DOO",
+          "VDD"
+        ],
+        "answer": 1,
+        "why": "AAI paces and senses only the atrium, which is the correct mode when the sinus node is failing but the AV node conducts normally. VVI would be used if the ventricle needed pacing, and DOO is only the asynchronous magnet mode."
+      },
+      {
+        "q": "An implantable defibrillator delivers a shock during rapid atrial fibrillation with a fast ventricular response, even though the patient was never in a ventricular arrhythmia. What is this called?",
+        "choices": [
+          "An appropriate shock",
+          "Pacemaker-mediated tachycardia",
+          "An inappropriate shock",
+          "Electrical storm by definition"
+        ],
+        "answer": 2,
+        "why": "A shock delivered for a rhythm that was not a true ventricular arrhythmia, such as fast atrial fibrillation crossing the rate cutoff, is an inappropriate shock. Electrical storm specifically requires three or more shocks within 24 hours, not a single event."
+      }
+    ],
+    "pa-ecg-l15": [
+      {
+        "q": "A patient in pulseless electrical activity arrest has narrow, fast complexes on the monitor. Which category of cause should be suspected first?",
+        "choices": [
+          "A filling or mechanical problem such as tamponade, tension pneumothorax, hypovolemia, or pulmonary embolism",
+          "A metabolic problem such as hyperkalemia",
+          "A toxic sodium-channel blockade",
+          "A primary electrical conduction disease"
+        ],
+        "answer": 0,
+        "why": "Narrow and fast PEA points toward a mechanical or filling problem that prevents the heart from ejecting despite organized electrical activity. Wide and slow PEA is the pattern more associated with metabolic or toxic causes like hyperkalemia or sodium channel blockade."
+      },
+      {
+        "q": "An unstable patient has a regular narrow-complex tachycardia at 190, a blood pressure of 72/40, and altered mental status. What is delivered?",
+        "choices": [
+          "Adenosine 6 mg alone, with no other intervention",
+          "Synchronized cardioversion at 50-100 J",
+          "Unsynchronized defibrillation",
+          "Magnesium sulfate 2 g IV"
+        ],
+        "answer": 1,
+        "why": "Instability from a tachyarrhythmia is treated with synchronized cardioversion regardless of QRS width, and a narrow regular rhythm starts at 50-100 J. Adenosine may be tried only if it will not delay the shock, and unsynchronized shocks are reserved for pulseless or polymorphic rhythms."
+      }
+    ],
+    "pa-ecg-l16": [
+      {
+        "q": "A patient with renal failure taking magnesium-containing antacids develops a magnesium level of 9 mg/dL with a prolonged PR, QRS, and QT interval and diminished reflexes. What is the treatment?",
+        "choices": [
+          "Magnesium sulfate 2 g IV",
+          "Calcium, which antagonizes the membrane effects of both magnesium extremes",
+          "Sodium bicarbonate boluses",
+          "Glucagon 3-5 mg IV"
+        ],
+        "answer": 1,
+        "why": "Severe hypermagnesemia depresses conduction and reflexes, and calcium stabilizes the membrane against both hypo- and hypermagnesemia, similar to its role in potassium disorders. Giving more magnesium would worsen toxicity, and bicarbonate and glucagon target different problems."
+      },
+      {
+        "q": "A patient who received a massive blood transfusion develops a prolonged QT interval with a normal-appearing but late-arriving T wave. What is the mechanism?",
+        "choices": [
+          "Citrate in transfused blood binds calcium, stretching the ST segment",
+          "Transfusion causes hyperkalemia, which widens the QRS",
+          "Transfusion causes hypomagnesemia, which directly shortens the QT",
+          "A transfusion reaction produces diffuse ST elevation"
+        ],
+        "answer": 0,
+        "why": "Citrate anticoagulant in stored blood chelates ionized calcium, and hypocalcemia stretches the ST segment, producing a long QT with a normal-shaped but delayed T wave. This is a distinct mechanism from potassium or magnesium disturbances."
+      }
+    ],
+    "pa-ecg-l17": [
+      {
+        "q": "On a wide-complex tachycardia strip, one beat in the middle looks narrower than the rest, as if a sinus impulse briefly captured the ventricle. Along with AV dissociation, what does this beat help confirm?",
+        "choices": [
+          "Supraventricular tachycardia with aberrant conduction",
+          "Ventricular tachycardia",
+          "Atrial flutter with variable conduction",
+          "A malfunctioning paced rhythm"
+        ],
+        "answer": 1,
+        "why": "A capture or fusion beat interrupting an otherwise uniform wide tachycardia, together with AV dissociation, is strong confirmatory evidence of ventricular tachycardia, since it shows a native sinus beat briefly getting through to a dissociated ventricle."
+      },
+      {
+        "q": "Following the measurement discipline taught for reading unfamiliar strips, what should be assessed right after rate and regularity, before naming any rhythm?",
+        "choices": [
+          "The QT interval alone",
+          "The P-to-QRS relationship, then the PR and QRS widths",
+          "The presence of ST elevation",
+          "The patient's blood pressure"
+        ],
+        "answer": 1,
+        "why": "The taught sequence is rate, then regularity, then the P-to-QRS relationship, then interval widths, all before committing to a rhythm name. ST changes and vitals matter clinically but are not part of the strip-naming discipline itself."
+      }
+    ],
+    "pa-ecg-l18": [
+      {
+        "q": "In the two-minute structured read, roughly how much time is budgeted for assessing ST segments and T waves across all four lead territory groups?",
+        "choices": [
+          "10 seconds",
+          "30 seconds",
+          "60 seconds",
+          "100 seconds"
+        ],
+        "answer": 1,
+        "why": "The drill allocates seconds 50 through 80, about 30 seconds, to ST and T assessment across the territory groups, the largest single block in the budget because it is where occlusions and mimics are separated."
+      },
+      {
+        "q": "A tracing in this lesson's drill shows 1.5 mm elevation in aVR with 2 mm depression in six other leads, including I, II, aVL, and V4-V6. What does this pattern most strongly suggest?",
+        "choices": [
+          "An isolated first diagonal branch occlusion",
+          "Left main coronary or severe three-vessel disease",
+          "Acute pericarditis",
+          "Digoxin effect"
+        ],
+        "answer": 1,
+        "why": "Diffuse ST depression across six or more leads with reciprocal-appearing elevation in aVR is the recognized pattern of left main or severe multivessel disease, a very sick presentation distinct from a single small-territory occlusion or a benign drug effect."
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "id": "pa-ecg-q086",
+      "q": "R waves fall 20 small boxes apart on a regular rhythm strip. Using the 1500 method, what is the heart rate?",
+      "choices": [
+        "75",
+        "100",
+        "60",
+        "50"
+      ],
+      "answer": 0,
+      "why": "Dividing 1500 by 20 small boxes gives 75. The sequence method (300-150-100-75) would land on the same answer at the fourth heavy line, which is a useful cross-check.",
+      "lesson": "pa-ecg-l01",
+      "difficulty": 1
+    },
+    {
+      "id": "pa-ecg-q087",
+      "q": "A 6-second strip shows 9 QRS complexes in an irregularly irregular rhythm. What is the rate, and why is this method preferred here?",
+      "choices": [
+        "54; because only regular rhythms can be measured this way",
+        "90; because averaging over 6 seconds smooths out an irregular rhythm's varying intervals",
+        "90; because the sequence method also works for irregular rhythms",
+        "54; because the 1500 method is more accurate for irregular rhythms"
+      ],
+      "answer": 1,
+      "why": "Nine complexes times 10 gives a rate of 90. The 6-second method is the only honest choice for an irregular rhythm because it averages the variation rather than relying on one unrepresentative R-to-R interval, which both the sequence and 1500 methods require.",
+      "lesson": "pa-ecg-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q088",
+      "q": "A technician reads an ECG and calls a new-appearing T-wave inversion normal because 'the computer didn't flag it.' What is the biggest error in this reasoning?",
+      "choices": [
+        "Computer algorithms are always accurate for T-wave changes",
+        "T-wave inversions are never clinically significant",
+        "The comparison that actually matters is against the patient's own prior ECG, not a machine's generic read",
+        "The technician should have measured the QT interval instead"
+      ],
+      "answer": 2,
+      "why": "The seventh and most decisive step of any read is comparing to a prior tracing, which separates new, actionable change from old, chronic findings. Machine interpretations are a starting point, not a substitute for that comparison.",
+      "lesson": "pa-ecg-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q089",
+      "q": "A 70-year-old has a PR interval that lengthens from 0.16 to 0.22 to 0.30 seconds over three beats, then a P wave with no following QRS, then the cycle restarts. Which additional finding would be expected on the same strip?",
+      "choices": [
+        "A constant R-to-R interval throughout",
+        "Absent P waves with a wavy baseline",
+        "A QRS width of 0.18 seconds",
+        "R-to-R intervals that progressively shorten before the dropped beat"
+      ],
+      "answer": 3,
+      "why": "In Wenckebach, although the PR interval lengthens, the increments get smaller each beat, so the R-to-R intervals actually shorten leading up to the dropped beat, producing grouped beating. This is a classic bedside pattern-recognition detail.",
+      "lesson": "pa-ecg-l02",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-ecg-q090",
+      "q": "An asymptomatic 45-year-old on a routine physical has a PR interval of 0.23 seconds with every P wave conducting normally. What is the appropriate management?",
+      "choices": [
+        "No treatment; first-degree block is usually benign",
+        "Emergent pacemaker placement",
+        "Atropine 1 mg IV",
+        "Immediate cardiology admission"
+      ],
+      "answer": 0,
+      "why": "First-degree AV block is a delay, not a true block, since every impulse still conducts. In an asymptomatic patient it requires no acute treatment, unlike Mobitz II or third-degree block.",
+      "lesson": "pa-ecg-l02",
+      "difficulty": 1
+    },
+    {
+      "id": "pa-ecg-q091",
+      "q": "A patient has a constant PR interval of 0.18 seconds on every conducted beat, then without warning a P wave occurs with no QRS after it. What is the diagnosis and the appropriate disposition?",
+      "choices": [
+        "Wenckebach; observe and treat only if symptomatic",
+        "Mobitz II; arrange for pacing given the risk of sudden progression to complete block",
+        "First-degree block; discharge with follow-up",
+        "Sinus arrhythmia; no action needed"
+      ],
+      "answer": 1,
+      "why": "A fixed PR interval with an abrupt, unwarned dropped beat is Mobitz II, arising below the AV node in diseased conduction tissue. Because it can progress to complete heart block without warning, pacing is arranged rather than relying on atropine or observation.",
+      "lesson": "pa-ecg-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q092",
+      "q": "A patient in complete heart block has a P wave rate of 90 and a QRS rate of 45, with a narrow QRS complex. Compared to a wide-QRS escape, what does the narrow QRS suggest about prognosis and treatment?",
+      "choices": [
+        "The escape focus is deep in the ventricle and will not respond to any medication",
+        "The narrow QRS means the block is not actually complete",
+        "The escape focus is higher, near the AV junction, which may be more stable and occasionally responsive to atropine",
+        "Narrow QRS escape rhythms are always faster than 60 per minute"
+      ],
+      "answer": 2,
+      "why": "A narrow-complex escape in third-degree block usually arises from the AV junction just below the block, which tends to be somewhat faster and more stable than a deep ventricular escape, and may show partial response to atropine, though pacing readiness is still standard.",
+      "lesson": "pa-ecg-l02",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-ecg-q093",
+      "q": "A patient's ECG shows a QRS duration of 0.15 seconds, an RSR' pattern in V1, and a T-wave inversion in V2 and V3. What is the appropriate interpretation of the T-wave inversion?",
+      "choices": [
+        "Diagnostic of an acute anterior STEMI",
+        "Diagnostic of pericarditis",
+        "Evidence of digoxin toxicity",
+        "An expected secondary change from right bundle branch block, not necessarily ischemic"
+      ],
+      "answer": 3,
+      "why": "RBBB routinely produces T-wave inversion in the right precordial leads as an expected secondary repolarization change, distinct from ischemia, pericarditis, or drug effect, though comparison to a prior tracing remains useful to confirm it is not new.",
+      "lesson": "pa-ecg-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q094",
+      "q": "A patient's QRS is 0.14 seconds with a deep, wide S wave in V6 and a monophasic, notched R wave in lead I. What is this, and what important caveat applies to ST-segment interpretation?",
+      "choices": [
+        "Left bundle branch block; ordinary ST elevation criteria are unreliable and Sgarbossa criteria should be used instead",
+        "Right bundle branch block; ST segments can be read normally",
+        "Ventricular tachycardia; defibrillation is indicated",
+        "Wolff-Parkinson-White; a delta wave should also be present"
+      ],
+      "answer": 0,
+      "why": "A broad monophasic R in I and V6 with a deep S in V6 (actually QS in V1 is the classic finding, and I/V6 show the tall R) describes left bundle branch block, which produces baseline discordant ST changes that make standard elevation criteria unreliable, requiring the Sgarbossa criteria instead.",
+      "lesson": "pa-ecg-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q095",
+      "q": "A patient with known left bundle branch block and chest pain has 2 mm of ST depression in V2, where the QRS is predominantly upright. Applying the Sgarbossa criteria, what does this represent?",
+      "choices": [
+        "Expected discordant change, not diagnostic of infarction",
+        "Concordant ST depression in V1-V3, meeting a Sgarbossa criterion for infarction",
+        "A normal finding requiring no further action",
+        "Evidence of right bundle branch block instead"
+      ],
+      "answer": 1,
+      "why": "One original Sgarbossa criterion is ST depression of 1 mm or more in V1-V3 that is concordant, meaning in the same direction as an upright QRS rather than the expected opposite direction. This finding suggests infarction underneath the LBBB rather than baseline discordance.",
+      "lesson": "pa-ecg-l03",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-ecg-q096",
+      "q": "A tall, thin 19-year-old athlete has a QRS that is net negative in lead I and net positive in aVF, on an otherwise normal ECG. What is the most likely explanation?",
+      "choices": [
+        "Pulmonary embolism",
+        "Left ventricular hypertrophy",
+        "A benign, normal finding for a tall thin young person: right axis deviation",
+        "Complete heart block"
+      ],
+      "answer": 2,
+      "why": "Negative lead I with positive aVF is right axis deviation, which is a normal variant in tall, thin young people and children. In an older patient with symptoms, the same axis would prompt consideration of right heart strain, but here it fits a benign body-habitus pattern.",
+      "lesson": "pa-ecg-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q097",
+      "q": "A febrile 30-year-old has a regular narrow-complex rhythm at 118 with a normal upright P wave before every QRS and a normal PR interval. What is the most appropriate initial action?",
+      "choices": [
+        "Adenosine 6 mg rapid IV push",
+        "Metoprolol 5 mg IV to slow the rate",
+        "Synchronized cardioversion",
+        "Identify and treat the underlying cause of the sinus tachycardia, such as the fever"
+      ],
+      "answer": 3,
+      "why": "This is sinus tachycardia, a compensatory response rather than a primary arrhythmia. Adenosine and cardioversion target reentrant rhythms, and blunting the rate with a beta blocker before addressing the underlying cause, such as fever, can worsen perfusion.",
+      "lesson": "pa-ecg-l04",
+      "difficulty": 1
+    },
+    {
+      "id": "pa-ecg-q098",
+      "q": "A patient with new-onset atrial fibrillation of unknown duration is hemodynamically stable with no symptoms. Which statement about cardioversion is correct?",
+      "choices": [
+        "Cardioversion without prior anticoagulation is safe only if onset is clearly under 48 hours; otherwise anticoagulation or a transesophageal echocardiogram is needed first",
+        "Cardioversion can proceed immediately regardless of duration",
+        "Cardioversion is never appropriate in atrial fibrillation",
+        "Anticoagulation is unnecessary if the patient is asymptomatic"
+      ],
+      "answer": 0,
+      "why": "Unknown or prolonged duration atrial fibrillation carries a real risk of atrial thrombus, so cardioversion should wait for either 3 weeks of anticoagulation or a transesophageal echocardiogram to exclude a clot, unless onset is clearly under 48 hours.",
+      "lesson": "pa-ecg-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q099",
+      "q": "A 72-year-old woman with atrial fibrillation has hypertension and diabetes but no heart failure, stroke history, or vascular disease. What is her CHA2DS2-VASc score, and does she need anticoagulation?",
+      "choices": [
+        "Score of 2; no anticoagulation needed since she is under 75",
+        "Score of 3 (hypertension 1, diabetes 1, female sex 1); anticoagulation is indicated",
+        "Score of 1; anticoagulation is optional",
+        "Score of 4; anticoagulation is indicated"
+      ],
+      "answer": 1,
+      "why": "Hypertension, diabetes, and female sex each contribute 1 point, for a total of 3. In women, anticoagulation is recommended at a score of 3 or more, so this patient meets that threshold even without age, heart failure, or vascular disease points.",
+      "lesson": "pa-ecg-l04",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-ecg-q100",
+      "q": "A patient has a regular narrow-complex tachycardia at exactly 150 beats per minute. What should be assumed until proven otherwise, and what maneuver might reveal it?",
+      "choices": [
+        "Sinus tachycardia; no further evaluation needed",
+        "Ventricular tachycardia; immediate cardioversion is required",
+        "Atrial flutter with 2:1 conduction; a vagal maneuver or adenosine may unmask flutter waves",
+        "AVNRT; procainamide should be given"
+      ],
+      "answer": 2,
+      "why": "A regular narrow tachycardia sitting at almost exactly 150 is classically atrial flutter with 2:1 block, since the atrial rate near 300 divided by 2 lands there. Transiently slowing AV conduction with a vagal maneuver or adenosine can expose the sawtooth flutter waves hiding in the QRS and T waves.",
+      "lesson": "pa-ecg-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q101",
+      "q": "A 74-year-old with severe COPD has an irregular rhythm at 112 with P waves of at least three distinct shapes and varying PR intervals. Beta blockade is being considered for rate control. What is the concern?",
+      "choices": [
+        "Beta blockers are the treatment of choice and should be started immediately",
+        "Beta blockers would cause immediate asystole",
+        "This rhythm never requires any pulmonary treatment",
+        "Beta blockade can worsen bronchospasm in a patient whose underlying problem is pulmonary disease, not a primary cardiac rhythm problem"
+      ],
+      "answer": 3,
+      "why": "This is multifocal atrial tachycardia, driven by the underlying lung disease rather than a primary cardiac problem, so treatment targets hypoxia, hypercapnia, and bronchodilator overuse. Nonselective beta blockade risks worsening bronchospasm in a COPD patient.",
+      "lesson": "pa-ecg-l04",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-ecg-q102",
+      "q": "A 22-year-old with a history of similar prior episodes has a regular narrow-complex tachycardia at 190 with no visible P waves, and vagal maneuvers fail. Adenosine 6 mg is given as a rapid push with an immediate flush, but the rhythm does not change. What should happen next?",
+      "choices": [
+        "Repeat adenosine at 12 mg",
+        "Immediately proceed to synchronized cardioversion regardless of stability",
+        "Conclude the diagnosis is wrong and give a calcium channel blocker instead",
+        "Give a second 6 mg dose of adenosine"
+      ],
+      "answer": 0,
+      "why": "The standard adenosine sequence is 6 mg first, and if that fails, 12 mg next, given the drug's ultra-short half-life sometimes requires a higher dose to interrupt the AV nodal circuit. Cardioversion is reserved for instability, not simply a failed first dose.",
+      "lesson": "pa-ecg-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q103",
+      "q": "Following cardiac surgery, a patient develops a regular narrow rhythm at 110 with P waves that are inverted in lead II and appear just after the QRS. What is this rhythm most likely to reflect?",
+      "choices": [
+        "A normal postoperative sinus rhythm",
+        "Junctional tachycardia, a recognized postoperative and digoxin-related rhythm",
+        "Atrial flutter",
+        "Third-degree AV block"
+      ],
+      "answer": 1,
+      "why": "Junctional tachycardia at 100-140 with retrograde P waves is a recognized finding after cardiac surgery and with digoxin toxicity, distinct from sinus rhythm, which would show upright P waves preceding each QRS.",
+      "lesson": "pa-ecg-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q104",
+      "q": "A patient has frequent early, wide QRS complexes with no preceding P wave, each followed by a full compensatory pause, occurring in a pattern of two consecutive abnormal beats at a time. What is the correct term for two consecutive PVCs?",
+      "choices": [
+        "Bigeminy",
+        "Trigeminy",
+        "A couplet",
+        "Sustained ventricular tachycardia"
+      ],
+      "answer": 2,
+      "why": "Two consecutive PVCs are called a couplet. Bigeminy and trigeminy describe a PVC recurring every other or every third beat respectively, and three or more consecutive PVCs would instead be classified as ventricular tachycardia.",
+      "lesson": "pa-ecg-l05",
+      "difficulty": 1
+    },
+    {
+      "id": "pa-ecg-q105",
+      "q": "A monitored patient has a PVC that lands directly on the peak of the preceding T wave. What is this called, and why is it concerning?",
+      "choices": [
+        "A fusion beat; it confirms a supraventricular origin",
+        "A capture beat; it is reassuring",
+        "Aberrant conduction; it requires no action",
+        "R-on-T phenomenon; it can trigger ventricular fibrillation by landing in the vulnerable repolarization window"
+      ],
+      "answer": 3,
+      "why": "R-on-T describes a premature ventricular beat landing during the vulnerable window of repolarization, when the myocardium is electrically unstable, and it can precipitate ventricular fibrillation.",
+      "lesson": "pa-ecg-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q106",
+      "q": "A 58-year-old with a history of anterior myocardial infarction develops a wide, regular tachycardia at 175 where every complex has an identical shape. What is the most likely mechanism?",
+      "choices": [
+        "A re-entry circuit around the scar from the prior infarction",
+        "An accessory pathway bypassing the AV node",
+        "Digoxin toxicity",
+        "Hyperkalemia"
+      ],
+      "answer": 0,
+      "why": "Monomorphic VT typically arises from a re-entry circuit around scar tissue, making a prior myocardial infarction the classic substrate. An accessory pathway would more likely produce pre-excited atrial fibrillation with a changing QRS width.",
+      "lesson": "pa-ecg-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q107",
+      "q": "A patient taking a QT-prolonging antipsychotic has a polymorphic wide-complex tachycardia that twists in amplitude around the baseline, with a pulse present. What is the first medication given?",
+      "choices": [
+        "Amiodarone 150 mg IV",
+        "Magnesium sulfate 2 g IV",
+        "Digoxin",
+        "Verapamil"
+      ],
+      "answer": 1,
+      "why": "This is torsades de pointes, treated with magnesium sulfate regardless of the measured magnesium level, along with correcting other electrolytes and stopping the offending drug. Amiodarone would further prolong the QT and worsen the problem.",
+      "lesson": "pa-ecg-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q108",
+      "q": "Three days after an inferior STEMI treated successfully with PCI, a patient develops an asymptomatic wide-complex rhythm at 70 beats per minute. What is this rhythm, and what is the correct action?",
+      "choices": [
+        "Ventricular tachycardia requiring amiodarone",
+        "Third-degree AV block requiring pacing",
+        "Accelerated idioventricular rhythm, a benign reperfusion marker that should not be suppressed",
+        "Torsades de pointes requiring magnesium"
+      ],
+      "answer": 2,
+      "why": "Accelerated idioventricular rhythm runs at 50-100, appears classically after successful reperfusion, and is usually benign and self-limited. Treating it as VT or suppressing it is unnecessary and can be counterproductive.",
+      "lesson": "pa-ecg-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q109",
+      "q": "During resuscitation, the monitor shows organized narrow complexes at 90 with no palpable pulse. Compressions and epinephrine are started. What is the priority alongside these interventions?",
+      "choices": [
+        "Immediate defibrillation",
+        "Synchronized cardioversion",
+        "Adenosine 6 mg",
+        "A search for a reversible cause using the H's and T's"
+      ],
+      "answer": 3,
+      "why": "Organized electrical activity without a pulse is PEA, which is not a shockable rhythm. Survival depends on identifying and treating a reversible cause from the H's and T's list, such as hypovolemia, tamponade, or tension pneumothorax.",
+      "lesson": "pa-ecg-l05",
+      "difficulty": 1
+    },
+    {
+      "id": "pa-ecg-q110",
+      "q": "A pacemaker-dependent patient's tracing shows a spike followed by no QRS complex on several consecutive beats, with the patient becoming lightheaded. What is this malfunction called?",
+      "choices": [
+        "Failure to capture",
+        "Oversensing",
+        "Failure to sense",
+        "Pacemaker-mediated tachycardia"
+      ],
+      "answer": 0,
+      "why": "A spike that fires but produces no myocardial response is failure to capture, from causes such as lead dislodgement, a rising capture threshold, or hyperkalemia. Oversensing and undersensing instead involve the device misreading its own sensing, not the output failing to capture.",
+      "lesson": "pa-ecg-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q111",
+      "q": "A patient with an implantable defibrillator is receiving repeated inappropriate shocks from T-wave oversensing while remaining hemodynamically stable. What immediate bedside action can stop the shocks without affecting the pacing function?",
+      "choices": [
+        "Giving amiodarone 300 mg IV",
+        "Placing a magnet over the device to suspend shock therapy",
+        "Performing synchronized cardioversion",
+        "Removing the device battery"
+      ],
+      "answer": 1,
+      "why": "A magnet placed over an implantable defibrillator suspends shock therapy without altering pacing, which is exactly what is needed when a device is inappropriately shocking a stable patient. This differs from a magnet on a pacemaker, which instead forces asynchronous pacing.",
+      "lesson": "pa-ecg-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q112",
+      "q": "A 50-year-old man has 2.5 mm of ST elevation in V2 and V3 on a tracing. Does this meet STEMI criteria?",
+      "choices": [
+        "No, since 2.5 mm is required for all patients in V2-V3",
+        "No, since STEMI cannot be diagnosed in V2-V3 alone",
+        "Yes, since the threshold for a man 40 or older in V2-V3 is 2 mm",
+        "Yes, but only if reciprocal changes are also present"
+      ],
+      "answer": 2,
+      "why": "For men 40 and older, the V2-V3 threshold is 2 mm, which 2.5 mm exceeds. The higher 2.5 mm threshold applies specifically to men under 40, and 1.5 mm applies to women; reciprocal change supports but is not required for the diagnosis.",
+      "lesson": "pa-ecg-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q113",
+      "q": "A patient has 2 mm ST elevation in II, III, and aVF with reciprocal depression in I and aVL, and elevation is roughly equal in II and III. Which artery is more likely responsible?",
+      "choices": [
+        "The right coronary artery",
+        "The left anterior descending artery",
+        "The first diagonal branch",
+        "The left circumflex artery"
+      ],
+      "answer": 3,
+      "why": "When inferior elevation is roughly equal in II and III rather than clearly greater in III, and especially with associated lateral involvement, the left circumflex becomes more likely than the right coronary artery, which typically produces III greater than II.",
+      "lesson": "pa-ecg-l06",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-ecg-q114",
+      "q": "A patient with inferior ST elevation and reciprocal depression is found to have V4R elevation of 1.5 mm. Blood pressure is 88/54. What management step should be avoided?",
+      "choices": [
+        "Sublingual or IV nitroglycerin",
+        "IV crystalloid bolus",
+        "Emergent catheterization",
+        "Right-sided lead monitoring"
+      ],
+      "answer": 0,
+      "why": "A confirmed right ventricular infarct depends on preload to maintain cardiac output, so nitroglycerin, which reduces preload, can cause severe hypotension and should be avoided. Fluid and prompt reperfusion are appropriate.",
+      "lesson": "pa-ecg-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q115",
+      "q": "A patient has 3 mm ST elevation in V2-V4 and 1.5 mm elevation in aVL, with reciprocal depression in the inferior leads. Which territory and vessel are involved, and what complication should be anticipated?",
+      "choices": [
+        "Inferior wall, right coronary artery; expect bradycardia and heart block",
+        "Anterior wall, left anterior descending artery; expect the largest infarct territory with risk of cardiogenic shock",
+        "Lateral wall, circumflex artery; expect a small, low-risk infarct",
+        "Posterior wall; expect isolated ST depression only"
+      ],
+      "answer": 1,
+      "why": "V2-V4 elevation with aVL involvement and inferior reciprocal depression localizes to a proximal LAD occlusion, the largest coronary territory, which carries the highest risk of pump failure and cardiogenic shock among the major STEMI patterns.",
+      "lesson": "pa-ecg-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q116",
+      "q": "A hospital without cardiac catheterization capability receives a STEMI patient and can transfer to a PCI center within 90 minutes of first medical contact. What is the preferred strategy?",
+      "choices": [
+        "Immediate fibrinolysis, skipping transfer",
+        "Observation until symptoms resolve",
+        "Transfer for primary PCI, aiming to complete it within 120 minutes of first medical contact",
+        "Discharge with outpatient stress testing"
+      ],
+      "answer": 2,
+      "why": "When transfer can achieve PCI within 120 minutes of first medical contact, transfer for primary PCI is preferred over fibrinolysis, since mechanical reperfusion generally offers better outcomes when it can be delivered in a timely fashion.",
+      "lesson": "pa-ecg-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q117",
+      "q": "A 26-year-old with sharp, pleuritic chest pain that improves when leaning forward has diffuse concave ST elevation in most leads, PR depression in the limb leads, and PR elevation in aVR. Which additional feature would be expected?",
+      "choices": [
+        "Reciprocal ST depression in a specific coronary territory",
+        "A QRS width of 0.14 seconds",
+        "A shortened QT interval",
+        "Absence of reciprocal depression except in aVR and V1"
+      ],
+      "answer": 3,
+      "why": "Pericarditis affects the whole pericardial sac rather than one coronary territory, so true reciprocal depression is absent except in aVR and sometimes V1, unlike a STEMI, which shows clear territorial reciprocal change.",
+      "lesson": "pa-ecg-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q118",
+      "q": "An asymptomatic patient with severe hypertension and very tall QRS voltage has ST elevation in V1-V2 and downsloping ST depression with asymmetric T inversion in I, aVL, V5, and V6. What is the best explanation?",
+      "choices": [
+        "Left ventricular hypertrophy with a strain pattern",
+        "Acute anterior and lateral STEMI",
+        "Wellens' syndrome",
+        "Acute pericarditis"
+      ],
+      "answer": 0,
+      "why": "Very tall voltage with elevation where the QRS is deeply negative (V1-V2) and depression with asymmetric inversion where the QRS is tall (lateral leads) describes the discordant strain pattern of severe LVH, a mimic rather than a true occlusion.",
+      "lesson": "pa-ecg-l07",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-ecg-q119",
+      "q": "A patient who had chest pain yesterday is now pain-free with deeply symmetric inverted T waves in V2 and V3, preserved R waves, and a troponin at the upper limit of normal. An exercise stress test is ordered. What should happen instead?",
+      "choices": [
+        "Proceed with the stress test as scheduled",
+        "Cancel the stress test and arrange coronary angiography, since this is Wellens' syndrome",
+        "Discharge home with outpatient follow-up",
+        "Give sublingual nitroglycerin and reassess in one hour"
+      ],
+      "answer": 1,
+      "why": "This pattern is Wellens' syndrome, reflecting a critical, temporarily reperfused proximal LAD stenosis. Stress testing can provoke re-occlusion and a large anterior infarct, so angiography is the safe path instead.",
+      "lesson": "pa-ecg-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q120",
+      "q": "A patient with chest pain has upsloping ST depression in the precordial leads rising into tall, peaked, symmetric T waves, with mild elevation in aVR. Compared to standard STEMI criteria, how should this tracing be treated?",
+      "choices": [
+        "As a normal variant requiring no action",
+        "As pericarditis",
+        "As an LAD occlusion equivalent requiring the same urgency as a STEMI, despite not meeting formal elevation criteria",
+        "As hyperkalemia"
+      ],
+      "answer": 2,
+      "why": "De Winter T waves represent an LAD occlusion equivalent. Because the pattern does not meet the millimeter criteria for STEMI, recognizing it by shape rather than by the numeric threshold is essential to avoid a dangerous delay in reperfusion.",
+      "lesson": "pa-ecg-l07",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-ecg-q121",
+      "q": "A patient has 1 mm of ST elevation in aVR with 2 mm of horizontal depression in six other leads, along with chest pain and diaphoresis. What does this pattern most strongly suggest?",
+      "choices": [
+        "A benign early repolarization variant",
+        "An isolated lateral wall STEMI",
+        "Digoxin effect",
+        "Left main coronary artery disease or severe three-vessel disease"
+      ],
+      "answer": 3,
+      "why": "Diffuse ST depression across six or more leads with reciprocal aVR elevation is a pattern of severe, widespread ischemia, classically from left main or three-vessel coronary disease, and it signals a very high-risk patient.",
+      "lesson": "pa-ecg-l07",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-ecg-q122",
+      "q": "A dialysis patient with a potassium of 7.4 has a wide, bizarre QRS with barely identifiable P waves. Which finding would be expected to appear next if the potassium continues to rise untreated?",
+      "choices": [
+        "Progressive merging of the QRS and T wave into a sine wave pattern, followed by arrest",
+        "A return to a normal-appearing sinus rhythm",
+        "Sudden narrowing of the QRS",
+        "Appearance of a delta wave"
+      ],
+      "answer": 0,
+      "why": "The hyperkalemia progression continues from peaked T waves through P wave loss and QRS widening to a sine wave pattern and, without treatment, cardiac arrest. Recognizing the trajectory is as important as recognizing the current stage.",
+      "lesson": "pa-ecg-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q123",
+      "q": "A patient has a QT interval of 400 ms at a heart rate of 100 beats per minute. Using Bazett's correction, is the QTc likely prolonged?",
+      "choices": [
+        "Yes, because 400 ms is always prolonged regardless of rate",
+        "No, because at a faster heart rate the corrected QT lengthens relative to the raw QT, and 400 ms corrected at this rate is within a normal range",
+        "The QTc cannot be estimated without knowing the QRS width",
+        "No, because QTc calculations do not apply above a rate of 90"
+      ],
+      "answer": 1,
+      "why": "Bazett's formula divides the QT by the square root of the R-R interval in seconds; at 100 bpm the R-R is 0.6 seconds, whose square root is about 0.77, giving a QTc near 520 ms... this scenario is designed to test recognizing that faster rates require correction upward, so a raw QT that looks unremarkable can conceal a genuinely prolonged QTc, making careful calculation essential rather than eyeballing the raw number.",
+      "lesson": "pa-ecg-l08",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-ecg-q124",
+      "q": "A patient on digoxin has an ECG with downsloping, scooped ST depression in the lateral leads, a shortened QT, and flattened T waves, but a normal rhythm and normal potassium. What is this finding?",
+      "choices": [
+        "Digoxin toxicity requiring antibody fragments",
+        "Acute ischemia",
+        "Digoxin effect, a benign expected finding at therapeutic levels",
+        "Hyperkalemia"
+      ],
+      "answer": 2,
+      "why": "The scooped, ladle-shaped ST depression with a short QT is digoxin effect, a normal finding at therapeutic drug levels that does not by itself indicate toxicity, which instead involves arrhythmias like atrial tachycardia with block or bidirectional VT.",
+      "lesson": "pa-ecg-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q125",
+      "q": "A patient found down outdoors in winter has a core temperature of 28 degrees Celsius. The ECG shows a positive hump at the junction of the QRS and ST segment, bradycardia, and prolonged intervals. What special precaution applies during handling and resuscitation?",
+      "choices": [
+        "No special precautions beyond standard ACLS",
+        "Give atropine immediately for the bradycardia",
+        "Begin rapid active external rewarming with hot water immersion",
+        "Move the patient gently, since the cold, irritable myocardium is prone to ventricular fibrillation with rough handling"
+      ],
+      "answer": 3,
+      "why": "Below about 30 degrees Celsius the myocardium becomes highly irritable, and rough handling or jostling can precipitate ventricular fibrillation, so hypothermic patients with an Osborn wave are moved gently while active, controlled rewarming proceeds.",
+      "lesson": "pa-ecg-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q126",
+      "q": "A patient overdosed on a tricyclic antidepressant has a QRS duration of 130 ms. Which complication is this width most predictive of?",
+      "choices": [
+        "Seizures and ventricular arrhythmia",
+        "Renal failure",
+        "Hepatic injury",
+        "Hypoglycemia"
+      ],
+      "answer": 0,
+      "why": "In tricyclic overdose, a QRS over 100 ms predicts seizures and arrhythmia, and a QRS over 160 ms predicts ventricular arrhythmia specifically, making QRS width a practical triage and severity marker treated with sodium bicarbonate.",
+      "lesson": "pa-ecg-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q127",
+      "q": "A patient with acute dyspnea and tachycardia has a normal ECG showing only sinus tachycardia, with no S1Q3T3 pattern and no right bundle branch block. Does this exclude pulmonary embolism?",
+      "choices": [
+        "Yes, a normal ECG effectively rules out pulmonary embolism",
+        "No, a normal ECG does not exclude pulmonary embolism; sinus tachycardia is actually the most common ECG finding in PE",
+        "No, but only if the S1Q3T3 pattern is absent, which is required for exclusion",
+        "Yes, because PE always produces T-wave inversions"
+      ],
+      "answer": 1,
+      "why": "The ECG supports but never excludes a diagnosis of pulmonary embolism. Sinus tachycardia is the single most common ECG finding, while the famous S1Q3T3 pattern appears in only about 10 percent of confirmed cases.",
+      "lesson": "pa-ecg-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q128",
+      "q": "A patient with WPW pattern on a baseline ECG (short PR, delta wave) develops palpitations, and the strip now shows an irregular, wide, very fast tachycardia above 220 with beat-to-beat changing QRS width. Which drugs must be avoided?",
+      "choices": [
+        "Procainamide and electrical cardioversion",
+        "Magnesium sulfate only",
+        "Adenosine, diltiazem, verapamil, beta blockers, and digoxin",
+        "Oxygen and IV fluids"
+      ],
+      "answer": 2,
+      "why": "This is atrial fibrillation conducting down an accessory pathway. AV nodal blocking agents remove the node's protective rate limitation, pushing more impulses down the bypass tract and risking degeneration to ventricular fibrillation. Procainamide and cardioversion are the safe options.",
+      "lesson": "pa-ecg-l09",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-ecg-q129",
+      "q": "A tachycardic patient's QRS amplitude alternates tall, short, tall, short with each beat, and the limb lead voltage is under 5 mm throughout. What should be obtained next?",
+      "choices": [
+        "A ventilation-perfusion scan",
+        "A stress test",
+        "Serum digoxin level",
+        "Bedside echocardiography to evaluate for pericardial effusion and tamponade"
+      ],
+      "answer": 3,
+      "why": "Electrical alternans with low voltage and tachycardia is the classic triad of a large pericardial effusion, with the heart swinging within the fluid-filled sac. Echocardiography is the appropriate next step to assess for tamponade physiology.",
+      "lesson": "pa-ecg-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q130",
+      "q": "An ECG shows an S wave in V1 of 18 mm and an R wave in V5 of 20 mm. Does this meet the Sokolow-Lyon voltage criteria for left ventricular hypertrophy?",
+      "choices": [
+        "Yes, because the sum is 38 mm, above the 35 mm threshold",
+        "No, because each measurement individually is below 35 mm",
+        "No, Sokolow-Lyon requires measurements from V2 and V6 only",
+        "Yes, but only if the patient also has hypertension"
+      ],
+      "answer": 0,
+      "why": "Sokolow-Lyon sums the S wave in V1 with the taller R wave in V5 or V6; 18 plus 20 equals 38 mm, which exceeds the 35 mm threshold and supports a voltage diagnosis of LVH.",
+      "lesson": "pa-ecg-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q131",
+      "q": "A monitor shows what looks like atrial flutter waves at a very fast, tremor-like rate while the patient sits up talking comfortably with no distress. The QRS complexes can be marched through the noise at a regular normal rate. What is the correct interpretation?",
+      "choices": [
+        "True atrial flutter requiring urgent rate control",
+        "Baseline artifact, likely from tremor, mimicking flutter or even VT; treat the patient, not the monitor",
+        "Ventricular fibrillation requiring defibrillation",
+        "Atrial fibrillation requiring anticoagulation"
+      ],
+      "answer": 1,
+      "why": "Tremor and similar baseline oscillations can closely mimic flutter or VT. The tell is that normal QRS complexes can still be identified marching through the noise at a regular rate and the patient looks clinically well, which is why a hand on the pulse always precedes reflexive treatment of the monitor.",
+      "lesson": "pa-ecg-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q132",
+      "q": "A patient in cardiac arrest is found in ventricular fibrillation. After the first shock and two minutes of CPR, the rhythm remains VF. What is given next along with continued compressions?",
+      "choices": [
+        "Amiodarone 300 mg",
+        "Atropine 1 mg",
+        "Epinephrine 1 mg IV or IO",
+        "Calcium gluconate 1 g"
+      ],
+      "answer": 2,
+      "why": "Epinephrine 1 mg is given as early as possible in shockable arrest and repeated every 3-5 minutes; amiodarone is added after the third shock if VF or pulseless VT persists, not before epinephrine has been started.",
+      "lesson": "pa-ecg-l10",
+      "difficulty": 1
+    },
+    {
+      "id": "pa-ecg-q133",
+      "q": "A patient with symptomatic bradycardia at a rate of 42 is given atropine 1 mg IV with no improvement after a second dose. The rhythm is sinus bradycardia with a narrow QRS. What is the next step?",
+      "choices": [
+        "A third dose of atropine",
+        "Adenosine 6 mg",
+        "Observation only",
+        "Transcutaneous pacing, dopamine, or epinephrine infusion"
+      ],
+      "answer": 3,
+      "why": "After atropine fails, up to a maximum of 3 mg, the next options are transcutaneous pacing, a dopamine infusion, or an epinephrine infusion, since the AV-node-targeted drug has been exhausted as first-line therapy.",
+      "lesson": "pa-ecg-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q134",
+      "q": "During cardiac arrest with an advanced airway in place, what is the correct approach to ventilation and compressions?",
+      "choices": [
+        "Continuous compressions with one breath approximately every 6 seconds, about 10 breaths per minute",
+        "A 30:2 compression-to-ventilation ratio must always be maintained",
+        "Compressions should pause for every breath delivered",
+        "Ventilation should be withheld entirely once an advanced airway is placed"
+      ],
+      "answer": 0,
+      "why": "Once an advanced airway is in place, compressions become continuous without pausing for breaths, and ventilation is delivered about once every 6 seconds, roughly 10 breaths per minute, replacing the 30:2 ratio used with a basic airway.",
+      "lesson": "pa-ecg-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q135",
+      "q": "Immediately after return of spontaneous circulation, a patient does not follow commands. What target oxygen saturation and additional intervention are appropriate?",
+      "choices": [
+        "Target 100% oxygen saturation and hyperventilate to reduce intracranial pressure",
+        "Target 92-98% oxygen saturation, avoid hyperventilation, and consider targeted temperature management",
+        "Withhold all oxygen to avoid reperfusion injury",
+        "Target saturation below 90% to avoid oxygen toxicity"
+      ],
+      "answer": 1,
+      "why": "Post-arrest care avoids both hypoxia and hyperoxia, targeting 92-98% saturation, avoids hyperventilation, maintains a systolic pressure above 90, and uses targeted temperature management in patients who remain comatose.",
+      "lesson": "pa-ecg-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q136",
+      "q": "A patient with dizziness has a regular, narrow rhythm where P waves march at 92 and QRS complexes at 98, with P waves slowly drifting into and then out of the QRS complex over several beats. What best explains this?",
+      "choices": [
+        "Complete heart block with a junctional escape",
+        "Mobitz II second-degree block",
+        "Isorhythmic AV dissociation, where the junction and sinus node run at nearly matched rates",
+        "Atrial flutter with variable conduction"
+      ],
+      "answer": 2,
+      "why": "When the ventricular rate is essentially equal to or slightly faster than the atrial rate, P waves drift in and out of the QRS without ever being truly blocked, which is isorhythmic AV dissociation rather than complete block, where the atrial rate would clearly exceed the ventricular rate.",
+      "lesson": "pa-ecg-l11",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-ecg-q137",
+      "q": "A patient in atrial flutter has a variable ventricular response that appears irregular at first glance, alternating between rates near 150, 100, and 75. What arithmetic clue distinguishes this from atrial fibrillation?",
+      "choices": [
+        "There is no arithmetic relationship between any of the intervals",
+        "The QRS width changes with every beat",
+        "The rhythm converts spontaneously to sinus rhythm within seconds",
+        "The F-to-F interval stays fixed near 0.20 seconds, and each R-to-R interval is a whole multiple of it"
+      ],
+      "answer": 3,
+      "why": "Even with variable AV conduction, flutter waves march at a fixed interval, so the resulting ventricular rates cluster at whole-number fractions of the flutter rate (150, 100, 75) rather than scattering randomly, which is the tell that separates it from true atrial fibrillation.",
+      "lesson": "pa-ecg-l11",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-ecg-q138",
+      "q": "A patient in known atrial fibrillation has one notably wide beat with an RSR' pattern in V1, occurring immediately after a long R-to-R interval followed by a short one. What should this NOT be mistaken for?",
+      "choices": [
+        "A unifocal premature ventricular contraction",
+        "The Ashman phenomenon",
+        "Rate-dependent aberrancy",
+        "Normal sinus conduction"
+      ],
+      "answer": 0,
+      "why": "The long-short cycle sequence with a right bundle branch pattern is the Ashman phenomenon, a form of rate-dependent aberrant conduction rather than a true PVC, since the right bundle's long refractory period is still recovering when the early beat arrives.",
+      "lesson": "pa-ecg-l11",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-ecg-q139",
+      "q": "A patient has a new, visible P wave of abnormal shape preceding every QRS at a rate of 160, with the tachycardia gradually warming up over the first several beats rather than starting abruptly. Adenosine is given and the rhythm continues while AV block briefly reveals the abnormal P waves. What is the rhythm?",
+      "choices": [
+        "AVNRT",
+        "Ectopic atrial tachycardia",
+        "Atrial flutter",
+        "Sinus tachycardia"
+      ],
+      "answer": 1,
+      "why": "A warming-up onset, a visible but abnormally shaped P wave preceding every QRS, and continuation of the tachycardia despite AV block from adenosine (which exposes rather than terminates it) all describe ectopic atrial tachycardia, distinct from AVNRT, which typically stops with adenosine.",
+      "lesson": "pa-ecg-l11",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q140",
+      "q": "A patient has isolated ST elevation in leads I and aVL with reciprocal depression in III and aVF, and no involvement of the standard anterior or inferior lead groups. What is the likely culprit vessel?",
+      "choices": [
+        "The right coronary artery",
+        "The proximal LAD before the first septal perforator",
+        "A first diagonal branch or the ramus intermedius",
+        "The posterior descending artery"
+      ],
+      "answer": 2,
+      "why": "Isolated high lateral elevation confined to I and aVL with reciprocal depression in the inferior leads is the pattern of a first diagonal or ramus branch occlusion, a smaller territory than a proximal LAD or right coronary event but still a true occlusion requiring reperfusion.",
+      "lesson": "pa-ecg-l12",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-ecg-q141",
+      "q": "A patient has posterior infarction confirmed on V7-V9 with 1 mm of elevation. Which combination of findings would most likely have been seen on the standard 12-lead in V1-V3?",
+      "choices": [
+        "Deep Q waves and ST elevation",
+        "A delta wave and short PR interval",
+        "Low voltage with electrical alternans",
+        "Horizontal ST depression, a tall R wave, and upright T waves"
+      ],
+      "answer": 3,
+      "why": "Posterior infarction appears as a mirror image on the standard anterior leads: ST depression instead of elevation, a tall R wave instead of a deep Q wave, and an upright T wave instead of inversion, which is why posterior leads are needed to see the true elevation directly.",
+      "lesson": "pa-ecg-l12",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q142",
+      "q": "A patient with chest pain has horizontal or downsloping ST depression maximal in aVL, while the inferior leads show only borderline, unconvincing elevation. What should be done?",
+      "choices": [
+        "Recognize that aVL depression is often the earliest sign of an evolving inferior occlusion and repeat the ECG shortly",
+        "Dismiss the aVL finding as nonspecific and discharge",
+        "Treat as an isolated lateral wall ischemia unrelated to the inferior leads",
+        "Assume digoxin effect and stop the workup"
+      ],
+      "answer": 0,
+      "why": "ST depression in aVL is frequently the earliest marker of an inferior occlusion, appearing before the inferior elevation becomes obviously diagnostic, since aVL and lead III form the tightest reciprocal pair on the ECG. A short-interval repeat tracing often clarifies the picture.",
+      "lesson": "pa-ecg-l12",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-ecg-q143",
+      "q": "A newborn's ECG shows a QRS axis of +130 degrees and tall R waves in V1 with an R-to-S ratio greater than 1. What is the correct interpretation?",
+      "choices": [
+        "Right ventricular hypertrophy requiring echocardiography",
+        "A normal finding for a newborn, reflecting normal right ventricular dominance at birth",
+        "Left axis deviation requiring cardiology referral",
+        "Evidence of an atrial septal defect"
+      ],
+      "answer": 1,
+      "why": "A newborn's heart is normally right-dominant because the fetal right ventricle pumps against systemic resistance, so a rightward axis up to about +180 degrees and tall R waves in V1 are expected findings that gradually normalize over the first months to years of life.",
+      "lesson": "pa-ecg-l13",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q144",
+      "q": "A 5-year-old has an upright T wave in V1. What does this suggest, given the normal juvenile T wave pattern?",
+      "choices": [
+        "A completely normal finding for this age",
+        "Left ventricular hypertrophy",
+        "Possible right ventricular hypertrophy, since the T wave in V1 should be inverted between about age 1 week and age 7",
+        "Digoxin effect"
+      ],
+      "answer": 2,
+      "why": "The juvenile T wave pattern is an inverted T in V1 from about day 7 of life until somewhere between age 7 and adolescence. An upright T wave in that window is abnormal and raises concern for right ventricular hypertrophy.",
+      "lesson": "pa-ecg-l13",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q145",
+      "q": "A 2-year-old with poor perfusion has a heart rate of 52 and is being ventilated with a bag-valve mask on 100% oxygen, but the rate remains under 60 with weak pulses after adequate ventilation. What is the next step?",
+      "choices": [
+        "Atropine 0.02 mg/kg IV",
+        "Adenosine 0.1 mg/kg",
+        "Synchronized cardioversion",
+        "Chest compressions, since the rate remains under 60 with poor perfusion despite oxygenation and ventilation"
+      ],
+      "answer": 3,
+      "why": "Pediatric bradycardia protocol calls for compressions when the rate stays under 60 with poor perfusion despite adequate oxygenation and ventilation, since the cause is nearly always hypoxic; epinephrine follows, and atropine is reserved for vagally mediated causes.",
+      "lesson": "pa-ecg-l13",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q146",
+      "q": "An infant is diagnosed with SVT at a rate of 260 and remains well perfused. Vagal maneuvers and adenosine 0.1 mg/kg fail to convert the rhythm. What is the next step?",
+      "choices": [
+        "Adenosine 0.2 mg/kg, maximum 12 mg",
+        "Immediate unsynchronized defibrillation",
+        "Atropine 0.02 mg/kg",
+        "Oral digoxin"
+      ],
+      "answer": 0,
+      "why": "The pediatric adenosine sequence escalates from 0.1 mg/kg (maximum 6 mg) to 0.2 mg/kg (maximum 12 mg) if the first dose fails, mirroring the adult ladder before moving on to synchronized cardioversion at 0.5-1 J/kg for a persistently perfusing but unresponsive patient.",
+      "lesson": "pa-ecg-l13",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q147",
+      "q": "A pacemaker is programmed to pace and sense both the atrium and ventricle, tracking the patient's native P waves to trigger ventricular pacing. What is this mode called using the NBG code?",
+      "choices": [
+        "VVI",
+        "DDD",
+        "AAI",
+        "VOO"
+      ],
+      "answer": 1,
+      "why": "DDD paces and senses both chambers and can respond to sensed events in either chamber, including tracking native atrial activity to trigger appropriately timed ventricular pacing, unlike VVI or AAI, which involve only one chamber.",
+      "lesson": "pa-ecg-l14",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q148",
+      "q": "A biventricular pacemaker patient's paced QRS shows a tall R wave in V1 rather than the usual left-bundle-like pattern. What does the loss of this tall R wave over time most likely indicate?",
+      "choices": [
+        "Normal right ventricular pacing",
+        "Improved cardiac function",
+        "Loss of left ventricular lead capture in a resynchronization device",
+        "A new right bundle branch block"
+      ],
+      "answer": 2,
+      "why": "A tall R wave in V1 during biventricular pacing reflects that the left ventricular lead is contributing to depolarization; losing that R wave over time suggests the left ventricular lead has stopped capturing, undermining the resynchronization benefit.",
+      "lesson": "pa-ecg-l14",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-ecg-q149",
+      "q": "A patient's implantable defibrillator has delivered four shocks within the past 18 hours for recurrent ventricular arrhythmias. What is this called, and what is the general management approach?",
+      "choices": [
+        "Pacemaker-mediated tachycardia; place a magnet",
+        "Appropriate isolated shocks requiring no further action",
+        "Failure to capture; increase pacing output",
+        "Electrical storm; interrogate the device, use beta-blockade and usually amiodarone, sedate, and treat the underlying trigger"
+      ],
+      "answer": 3,
+      "why": "Three or more shocks within 24 hours defines electrical storm, an emergency requiring device interrogation, antiarrhythmic therapy (commonly amiodarone with beta-blockade), sedation, and identification of the trigger, which is often ischemia, heart failure, or hypokalemia.",
+      "lesson": "pa-ecg-l14",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q150",
+      "q": "A patient in cardiac arrest with a monitor showing coarse, chaotic waveforms and no identifiable QRS has just received the first defibrillation shock. What is done immediately afterward?",
+      "choices": [
+        "Resume chest compressions immediately without a pulse check",
+        "Check for a pulse before resuming any further action",
+        "Give amiodarone 300 mg before resuming compressions",
+        "Repeat defibrillation immediately without any CPR"
+      ],
+      "answer": 0,
+      "why": "After a defibrillation attempt in VF or pulseless VT, compressions resume immediately without pausing to check a pulse, since even a successful shock rarely produces an immediately palpable pulse, and delay reduces coronary perfusion pressure.",
+      "lesson": "pa-ecg-l15",
+      "difficulty": 1
+    },
+    {
+      "id": "pa-ecg-q151",
+      "q": "A patient in arrest has a wide, slow PEA rhythm at 32 per minute. Which category of cause is most consistent with this specific complex morphology?",
+      "choices": [
+        "A mechanical filling problem like tamponade",
+        "A metabolic or toxic cause such as severe hyperkalemia or sodium channel blockade",
+        "Pulmonary embolism",
+        "Tension pneumothorax"
+      ],
+      "answer": 1,
+      "why": "Wide and slow PEA points toward a metabolic or toxic process affecting membrane conduction, such as severe hyperkalemia or a sodium-channel-blocking overdose, in contrast to narrow, fast PEA, which suggests a mechanical or filling problem.",
+      "lesson": "pa-ecg-l15",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q152",
+      "q": "A patient has irregularly irregular narrow-complex tachycardia at 165 with a blood pressure of 80/48 and confusion. What is delivered?",
+      "choices": [
+        "Adenosine 12 mg",
+        "Magnesium sulfate 2 g IV",
+        "Synchronized cardioversion at 120-200 J",
+        "Unsynchronized defibrillation"
+      ],
+      "answer": 2,
+      "why": "Unstable atrial fibrillation with a rapid ventricular response is treated with synchronized cardioversion, and the recommended starting energy for irregular narrow rhythms like atrial fibrillation is higher, at 120-200 J, compared with regular narrow tachycardias.",
+      "lesson": "pa-ecg-l15",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q153",
+      "q": "A stable patient has monomorphic wide-complex tachycardia at 165 with a normal blood pressure. Procainamide is chosen for treatment. At what point should it be stopped?",
+      "choices": [
+        "Only after the full weight-based maximum dose has been given",
+        "After exactly 10 minutes regardless of response",
+        "It should never be stopped once started",
+        "When the arrhythmia resolves, hypotension develops, the QRS widens by 50%, or the maximum dose is reached, whichever comes first"
+      ],
+      "answer": 3,
+      "why": "Procainamide infusion for stable VT is titrated and has defined stopping points: arrhythmia termination, hypotension, a 50% widening of the QRS, or reaching the maximum dose of about 17 mg/kg, any of which ends the infusion.",
+      "lesson": "pa-ecg-l15",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-ecg-q154",
+      "q": "A dialysis patient develops a wide, bizarre PEA rhythm during a session with no pulse. Beyond CPR and epinephrine, what empiric treatment is reasonable to give while confirmatory labs are pending?",
+      "choices": [
+        "Calcium for presumed hyperkalemia",
+        "Immediate synchronized cardioversion",
+        "Adenosine 6 mg",
+        "Atropine 1 mg"
+      ],
+      "answer": 0,
+      "why": "In a dialysis patient with wide, slow PEA, empiric calcium for presumed hyperkalemia is reasonable before laboratory confirmation, since the ECG itself is treated as evidence of the underlying metabolic emergency; PEA is not a shockable rhythm.",
+      "lesson": "pa-ecg-l15",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q155",
+      "q": "A patient with a serum potassium of 6.9 and a QRS of 0.15 seconds is treated with calcium gluconate. Fifteen minutes later the QRS is unchanged and the potassium remains elevated. What should happen next?",
+      "choices": [
+        "Repeat calcium indefinitely as the sole therapy",
+        "Add insulin with dextrose and nebulized albuterol to shift potassium intracellularly, and arrange dialysis for definitive removal",
+        "Discontinue all treatment since calcium was given",
+        "Give a second bolus of potassium to test the myocardium"
+      ],
+      "answer": 1,
+      "why": "Calcium stabilizes the membrane but does not lower serum potassium, so shifting agents like insulin/dextrose and albuterol are layered on next, with dialysis as the definitive method of actually removing potassium from the body.",
+      "lesson": "pa-ecg-l16",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q156",
+      "q": "An overdose patient has a QRS of 0.15 seconds with a terminal R wave in aVR measuring 4 mm and an R-to-S ratio in aVR of 0.9. Sodium bicarbonate boluses are given. What is the endpoint used to titrate further doses?",
+      "choices": [
+        "A fixed total dose regardless of response",
+        "Normalization of serum potassium",
+        "Narrowing of the QRS complex",
+        "Resolution of hypotension alone"
+      ],
+      "answer": 2,
+      "why": "Sodium bicarbonate for sodium-channel blockade toxicity is titrated to QRS narrowing, which reflects improved conduction through the overwhelmed sodium channels, rather than to a fixed dose or an unrelated lab value.",
+      "lesson": "pa-ecg-l16",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q157",
+      "q": "A patient with a suspected beta blocker overdose is bradycardic and hypotensive with a glucose of 58 mg/dL. Which treatment is specifically useful for this overdose beyond calcium?",
+      "choices": [
+        "Naloxone 0.4 mg IV",
+        "Flumazenil 0.2 mg IV",
+        "N-acetylcysteine",
+        "Glucagon 3-5 mg IV"
+      ],
+      "answer": 3,
+      "why": "Glucagon bypasses the blocked beta receptor to raise intracellular cyclic AMP directly, making it a specific antidote in beta blocker overdose alongside calcium and high-dose insulin therapy. The hypoglycemia here also fits the beta blocker pattern rather than a calcium channel blocker overdose.",
+      "lesson": "pa-ecg-l16",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q158",
+      "q": "A patient in torsades de pointes is found to have a magnesium level of 1.1 mg/dL and a potassium of 3.1 mEq/L. Why is correcting potassium alone often insufficient here?",
+      "choices": [
+        "Hypomagnesemia makes potassium repletion ineffective at stabilizing the membrane until magnesium is also corrected",
+        "Potassium correction has no relationship to torsades",
+        "Potassium should never be given in torsades",
+        "Magnesium and potassium are chemically identical in their cardiac effects"
+      ],
+      "answer": 0,
+      "why": "Hypomagnesemia impairs the ability to correct potassium and independently prolongs the QT interval, which is why magnesium sulfate is given even before the magnesium level returns, and why hypomagnesemia should be suspected in every case of torsades.",
+      "lesson": "pa-ecg-l16",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-ecg-q159",
+      "q": "A patient with hypothermia at 31 degrees Celsius develops new atrial fibrillation with a controlled ventricular rate and stable blood pressure. What is the most appropriate initial approach to the arrhythmia itself?",
+      "choices": [
+        "Immediate electrical cardioversion",
+        "Supportive management and rewarming, since atrial fibrillation is a common, often self-resolving finding around this temperature",
+        "High-dose beta blockade",
+        "Emergent amiodarone infusion"
+      ],
+      "answer": 1,
+      "why": "Atrial fibrillation is a recognized accompaniment of hypothermia around 32 degrees Celsius and frequently resolves with rewarming; aggressive rhythm-specific therapy is generally deferred unless the patient is unstable, since the irritable hypothermic heart responds poorly to shocks and drugs.",
+      "lesson": "pa-ecg-l16",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-ecg-q160",
+      "q": "Reading an unfamiliar strip, a learner finds a rate of 46, regular rhythm, and a QRS of 0.08 seconds, but has not yet checked the P-to-QRS relationship. What must be assessed next before naming the rhythm?",
+      "choices": [
+        "The ST segment morphology",
+        "The presence of a delta wave",
+        "Whether there is a P wave for every QRS and a QRS for every P",
+        "The QT interval correction formula"
+      ],
+      "answer": 2,
+      "why": "After rate, regularity, and width, the next discriminating question is the P-to-QRS relationship, which separates sinus bradycardia from a junctional rhythm or a high-grade block presenting at a similar rate.",
+      "lesson": "pa-ecg-l17",
+      "difficulty": 1
+    },
+    {
+      "id": "pa-ecg-q161",
+      "q": "A strip shows a rate of 82 with grouped beating, PR intervals of 0.18, 0.26, and 0.34 seconds across three beats, then a P wave with no QRS, and the cycle restarts. What is the rhythm and the general management approach?",
+      "choices": [
+        "Mobitz II; arrange pacing",
+        "Complete heart block; pace immediately",
+        "First-degree block; no further evaluation needed",
+        "Wenckebach; block sits within the AV node and is usually benign, treat only if symptomatic"
+      ],
+      "answer": 3,
+      "why": "Progressive PR lengthening ending in a dropped beat, then restarting, is Wenckebach, arising in the vagally responsive AV node and usually benign, managed expectantly unless the patient is symptomatic.",
+      "lesson": "pa-ecg-l17",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q162",
+      "q": "A strip shows a rate of about 230, irregularly irregular rhythm, and a QRS width that varies from 0.12 to 0.18 seconds beat to beat, with the shortest R-to-R interval measured at 220 ms. Which drug class must be avoided?",
+      "choices": [
+        "AV nodal blocking agents such as adenosine, calcium channel blockers, beta blockers, and digoxin",
+        "Antihistamines",
+        "Sodium bicarbonate",
+        "Oxygen"
+      ],
+      "answer": 0,
+      "why": "This is pre-excited atrial fibrillation, recognized by the fast irregular rate, the beat-to-beat changing QRS width, and a very short R-to-R interval. AV nodal blockers can accelerate conduction down the accessory pathway and precipitate ventricular fibrillation, so procainamide or electricity is used instead.",
+      "lesson": "pa-ecg-l17",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-ecg-q163",
+      "q": "A strip shows P waves regular at 88, every second P conducting with a constant PR of 0.20 seconds, and a ventricular rate of 44. Why can this rhythm not be definitively classified as Mobitz I or Mobitz II from the strip alone?",
+      "choices": [
+        "Because the PR interval is abnormal",
+        "Because two consecutive conducted beats are never seen to compare for PR lengthening",
+        "Because the ventricular rate is too slow to analyze",
+        "Because P waves are absent"
+      ],
+      "answer": 1,
+      "why": "In 2:1 AV block, only one conducted beat is ever seen between drops, so there is no second conducted PR interval available for comparison, making it impossible to say whether the PR would have lengthened. It is treated as potentially the more dangerous infranodal type.",
+      "lesson": "pa-ecg-l17",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q164",
+      "q": "Following the two-minute structured read, after calibration, rate, rhythm, intervals, and axis have all been assessed, what is examined next before morphology?",
+      "choices": [
+        "The patient's chart and prior medications",
+        "The QT interval a second time",
+        "ST segments and T waves lead by lead across the four territory groups, checking for a reciprocal mirror",
+        "The presence of a pacemaker spike only"
+      ],
+      "answer": 2,
+      "why": "The structured drill places ST and T assessment, with its check for reciprocal change across the inferior, septal, anterior, and lateral groups, in the largest time block, right after axis and before the final morphology check.",
+      "lesson": "pa-ecg-l18",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-ecg-q165",
+      "q": "Using the two-minute drill's closing sentence format, a resident says: 'Rate 96, sinus rhythm, normal axis, PR 0.16, QRS 0.09, QTc 420, 2 mm ST elevation in II, III and aVF with reciprocal depression in I and aVL.' What should follow immediately?",
+      "choices": [
+        "Nothing further; the read is complete once the sentence is spoken",
+        "Repeating the entire six-step process from the beginning",
+        "Measuring the calibration box for a second time",
+        "Naming the diagnosis, here an inferior STEMI, and requesting the prior ECG for comparison"
+      ],
+      "answer": 3,
+      "why": "The spoken summary should culminate in a diagnosis, here inferior STEMI, and the discipline still calls for requesting the old tracing whenever possible, since comparison remains the step that separates new, actionable findings from chronic ones.",
+      "lesson": "pa-ecg-l18",
+      "difficulty": 2
+    }
+  ]
+}

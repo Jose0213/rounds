@@ -1,0 +1,1252 @@
+{
+  "schema": 1,
+  "extends": "pa-reasoning",
+  "checks": {
+    "pa-reasoning-l01": [
+      {
+        "q": "A tired resident sees a wheezing patient and reflexively starts a nebulizer without asking about onset or triggers, then a colleague points out the patient's lips are swelling. What does this sequence illustrate?",
+        "choices": [
+          "System 1 pattern-matching without the System 2 verification step that would have caught anaphylaxis",
+          "A correctly executed illness script for asthma",
+          "Availability bias from a recent asthma case",
+          "A pertinent negative that was appropriately documented"
+        ],
+        "answer": 0,
+        "why": "Fast pattern recognition fired on 'wheeze equals asthma' without the deliberate 30-second check for a dangerous alternative, which is exactly the failure mode the lesson names. It is not a correctly run illness script, since a real script would include what should not be there (swelling). It is not availability bias, which is about recent vivid cases, not a snap match. It is not a pertinent negative, since nothing was recorded or ruled out."
+      },
+      {
+        "q": "Which of the following is the best example of an illness script being applied rather than a textbook fact being recited?",
+        "choices": [
+          "\"A 55-year-old smoker with exertional chest pressure radiating to the jaw, with sweating, fits the pattern I've seen before, and I want to check for the findings that shouldn't be there, like reproducible tenderness\"",
+          "\"Acute coronary syndrome is defined as myocardial ischemia due to reduced coronary blood flow\"",
+          "\"Chest pain has a differential that includes cardiac, pulmonary, and gastrointestinal causes\"",
+          "\"I read that troponin rises 3 to 6 hours after myocardial injury\""
+        ],
+        "answer": 0,
+        "why": "An illness script combines who gets it, what it does and how fast, and what it looks like, including findings that should be absent, and applies that pattern to a real patient. The other options are isolated facts or a category list, not a working script matched against a presentation."
+      }
+    ],
+    "pa-reasoning-l02": [
+      {
+        "q": "A patient with a documented substance use disorder is triaged with new right-sided weakness, and the note reads \"intoxicated, sleep it off.\" Three hours later he is found to have had a stroke. Which bias is most specific to this error, beyond simple anchoring?",
+        "choices": [
+          "Attribution (frequent-flyer) bias, which lowered the evidence threshold because of who the patient was believed to be",
+          "Availability bias, from recently seeing several intoxicated patients",
+          "Diagnosis momentum, from a label passed along by family",
+          "Premature closure on a correct diagnosis"
+        ],
+        "answer": 0,
+        "why": "The error hinges on the patient's identity and history lowering the threshold for a real neurologic exam, which is attribution or frequent-flyer bias. Availability requires a recent vivid case driving the guess, which is not described. Diagnosis momentum requires a label handed along from an earlier point of contact, not described here. Premature closure would require the diagnosis to have actually been correct, and stroke was missed entirely."
+      },
+      {
+        "q": "A clinician says out loud, \"my working diagnosis is viral gastroenteritis, what doesn't fit is the patient's age and lack of diarrhea, and the worst thing this could be is a bowel obstruction or mesenteric ischemia.\" What technique is being used?",
+        "choices": [
+          "A diagnostic time-out",
+          "The frequent-flyer bias check",
+          "Diagnosis momentum",
+          "SnNout reasoning"
+        ],
+        "answer": 0,
+        "why": "This is the 20-second time-out: working diagnosis, what doesn't fit, and the worst-case possibility, stated explicitly. It is not a bias check for frequent-flyer status, which concerns patient identity. Diagnosis momentum is a failure mode, not a debiasing habit. SnNout is a test-interpretation rule, unrelated to this scenario."
+      }
+    ],
+    "pa-reasoning-l03": [
+      {
+        "q": "A student documents the history of present illness for a headache patient using OLDCARTS instead of OPQRST. Why is OLDCARTS the more appropriate choice here, and what would be lost by force-fitting OPQRST?",
+        "choices": [
+          "OLDCARTS is built for non-pain complaints as well as pain, so it adds location and duration explicitly, while OPQRST is tuned specifically to pain quality and radiation and can skip a clean duration data point",
+          "OPQRST cannot be used for headache because headache is not a painful complaint",
+          "OLDCARTS is only for pediatric patients",
+          "There is no meaningful difference and either mnemonic captures the same information equally well for any complaint"
+        ],
+        "answer": 0,
+        "why": "OLDCARTS explicitly separates Location and Duration, which is useful for headache and any complaint, while OPQRST is built for pain and could still work here but is more oriented to pain descriptors. Headache is a painful complaint, so that option is wrong. OLDCARTS is not pediatric-specific. The two mnemonics overlap heavily but are not interchangeable in emphasis."
+      },
+      {
+        "q": "A history notes \"prior abdominal surgery, appendectomy 2009\" for a patient with suspected bowel obstruction. Why does this single line matter to the differential?",
+        "choices": [
+          "Adhesions from prior abdominal surgery are a leading cause of bowel obstruction, so this fact raises that diagnosis materially",
+          "It is only relevant for billing purposes and does not change the differential",
+          "It rules out bowel obstruction because the appendix is already removed",
+          "It is a pertinent negative"
+        ],
+        "answer": 0,
+        "why": "Past surgical history is called out in the lesson specifically because prior abdominal surgery makes adhesion-related obstruction a live diagnosis. It is clinically relevant, not just billing detail. Removing the appendix does not protect against obstruction elsewhere in the bowel. It is a positive historical fact, not a pertinent negative."
+      }
+    ],
+    "pa-reasoning-l04": [
+      {
+        "q": "A clinician generating a differential for flank pain lists skin, muscle, pleura, kidney, and colon as possible sources before naming any disease. Which method is being used?",
+        "choices": [
+          "Anatomy from the outside in",
+          "VINDICATE",
+          "The three-item habit",
+          "SnNout"
+        ],
+        "answer": 0,
+        "why": "Walking through the anatomic layers and organs behind a region is the anatomy-from-outside-in method. VINDICATE is a category checklist (vascular, infectious, and so on) used for systemic presentations, not a layer-by-layer regional walk. The three-item habit is the final narrowing step, not the generation step. SnNout concerns test interpretation, unrelated here."
+      },
+      {
+        "q": "A patient's chest wall pain is fully reproduced by palpation, and the clinician concludes the workup is complete and discharges without an ECG. What is the flaw in this reasoning?",
+        "choices": [
+          "Reproducible chest wall tenderness raises the likelihood of a musculoskeletal cause but does not exclude acute coronary syndrome, since a meaningful fraction of patients with reproducible tenderness are still having a coronary event",
+          "There is no flaw; reproducible tenderness definitively excludes cardiac causes",
+          "The flaw is that VINDICATE was not used",
+          "The flaw is failing to check pretest probability with the HEART score, which is unrelated to physical findings"
+        ],
+        "answer": 0,
+        "why": "The lesson explicitly states a bedside finding shifts probability but does not exclude a killer by itself, citing that roughly 7% of patients with reproducible tenderness still have a coronary event. Reproducible tenderness does not definitively exclude cardiac disease. VINDICATE is for systemic or confusing presentations, not required here. The HEART score is a legitimate tool but the answer describing it as 'unrelated to physical findings' misstates it, since the score does use physical/historical findings."
+      }
+    ],
+    "pa-reasoning-l05": [
+      {
+        "q": "A febrile patient with a stiff neck and a non-blanching purple rash on the legs arrives. Which two red-flag categories from the lesson does this combination straddle?",
+        "choices": [
+          "Fever with meningitis/meningococcemia flags",
+          "Sudden onset and extremes of age only",
+          "Dizziness red flags",
+          "Red flags specific to shortness of breath"
+        ],
+        "answer": 0,
+        "why": "Fever with a stiff neck or non-blanching rash is explicitly listed as meningitis and meningococcemia. The other categories (extremes of age, dizziness, shortness of breath) don't match the described findings."
+      },
+      {
+        "q": "A 78-year-old with a normal blood pressure of 118/70 is found to be in shock. Why does the vital sign mislead here, according to the lesson's discussion of elderly presentations?",
+        "choices": [
+          "Because a blood pressure that looks normal by population standards can represent significant hypotension for a patient who normally runs higher, such as living at 165/90",
+          "Because elderly patients cannot develop shock",
+          "Because the blood pressure cuff is inaccurate in elderly patients",
+          "Because shock in the elderly always presents with a very low blood pressure regardless of baseline"
+        ],
+        "answer": 0,
+        "why": "The lesson specifically notes a pressure of 120/70 may be shock in someone whose baseline is 165/90, since relative hypotension matters more than an absolute cutoff. Elderly patients absolutely can develop shock, cuff accuracy is not the issue, and shock does not always present with a dramatically low absolute number in this population."
+      }
+    ],
+    "pa-reasoning-l06": [
+      {
+        "q": "A clinician orders a set of labs on a healthy pre-operative patient with no symptoms and no specific concern, running 20 independent screening tests. Statistically, what should be expected?",
+        "choices": [
+          "About one test will come back abnormal purely by chance, given the usual 95% reference range",
+          "All 20 tests should return normal if the patient is truly healthy",
+          "The tests will not affect false positive rates because more information is always better",
+          "Ordering more tests always increases diagnostic accuracy without downside"
+        ],
+        "answer": 0,
+        "why": "With a 95% reference range, about 1 in 20 independent tests is abnormal by chance alone in a healthy person, which is the exact statistic given in the lesson to explain why shotgun workups generate false leads. It is not true that all tests should be normal in a healthy patient given this statistical property. More tests are not free of downside, since each incidental finding can trigger further workup without benefit."
+      },
+      {
+        "q": "A clinician wants to order a test but cannot articulate what she would do differently if it came back positive versus negative. What does the lesson say she should do?",
+        "choices": [
+          "Not order the test, since a test should only be ordered when a positive and a negative result would lead to different management",
+          "Order it anyway, since more data is always useful",
+          "Order it only if it is inexpensive",
+          "Order it because a normal result would reassure the patient regardless of clinical value"
+        ],
+        "answer": 0,
+        "why": "The lesson states directly: order a test when you already know what you will do for each possible result, and if a positive and a negative lead to the same plan, do not order it. Ordering 'because more data is useful' or for reassurance ignores this principle, and cost is not the deciding factor described."
+      }
+    ],
+    "pa-reasoning-l07": [
+      {
+        "q": "A clinician applies PERC to a patient whose own gut pretest probability for pulmonary embolism is 30%, and all eight criteria happen to be negative, then discharges without further testing. What is wrong with this application?",
+        "choices": [
+          "PERC is only valid when the pretest probability is already low, roughly under 15%, so applying it at 30% is a misuse of the rule regardless of the criteria results",
+          "PERC does not exist as a real rule",
+          "PERC requires a D-dimer before it can be applied",
+          "Nothing is wrong; PERC works at any pretest probability as long as all 8 criteria are negative"
+        ],
+        "answer": 0,
+        "why": "The lesson is explicit that PERC only applies when pretest probability is already under about 15%; using it at 30% pretest probability is a misapplication regardless of how many criteria are negative. PERC is a real, named rule. It is specifically designed to let you skip the D-dimer, not require one first."
+      },
+      {
+        "q": "A patient's CURB-65 score is 3. According to the lesson, what is the generally indicated disposition?",
+        "choices": [
+          "Admit, and consider intensive care",
+          "Outpatient management with follow-up in one week",
+          "Discharge with a course of oral antibiotics and no further evaluation",
+          "Observation only, with reassessment in 4 hours before any decision"
+        ],
+        "answer": 0,
+        "why": "The lesson states a CURB-65 of 3 or more means admit and consider intensive care. Outpatient management applies to scores of 0 to 1. Discharge without further evaluation is inappropriate at this score. The rule does not describe a 4-hour observation-only pathway at this score."
+      }
+    ],
+    "pa-reasoning-l08": [
+      {
+        "q": "A provider writes \"Assessment: rule out MI\" as both the chief complaint and the assessment. What is the specific documentation error being repeated?",
+        "choices": [
+          "Using a hypothesis or rule-out as the complaint rather than the patient's own words with a duration, which the lesson explicitly flags as incorrect for the chief complaint",
+          "This is correct documentation and should be used in both places",
+          "The error is only that no duration was given, not the rule-out phrasing itself",
+          "Rule-out language is required for legal protection in every chart"
+        ],
+        "answer": 0,
+        "why": "The lesson explicitly states the chief complaint should be the patient's own words with a duration, not a hypothesis like 'rule out MI.' It is an error, not correct documentation. The duration issue is a separate matter; the core error is using a diagnostic hypothesis as if it were the complaint. Rule-out phrasing is not a legal requirement for the chief complaint line."
+      },
+      {
+        "q": "A radiology report states \"recommend further imaging with contrast-enhanced CT.\" How should this phrase be treated according to the lesson's table of radiology language?",
+        "choices": [
+          "As a real, actionable recommendation, not a formality to be skipped",
+          "As routine boilerplate that can typically be disregarded",
+          "As equivalent in meaning to \"clinical correlation recommended\"",
+          "As a statement that the study was technically inadequate and must be repeated the same way"
+        ],
+        "answer": 0,
+        "why": "The lesson's table explicitly states that 'recommend further imaging with...' is a real recommendation, not a formality. It is not boilerplate to ignore. It is a distinct phrase from 'clinical correlation recommended,' which instead means the image is ambiguous and the decision belongs to the clinician. It does not necessarily mean the original study was technically inadequate, only that another study would add information."
+      }
+    ],
+    "pa-reasoning-l09": [
+      {
+        "q": "A technician tells a nurse, \"Room 4 is getting worse, her heart rate has been climbing.\" What is missing that keeps this from being a complete report to a nurse, per the lesson's guidance?",
+        "choices": [
+          "A specific request, such as asking whether the patient should be moved to the monitor",
+          "The patient's full past medical history",
+          "A complete head-to-toe physical exam",
+          "The chief complaint restated in the patient's own words"
+        ],
+        "answer": 0,
+        "why": "The lesson's guidance for reporting to a nurse is 'what changed and what you need,' modeled as ending with a specific request like putting the patient on the monitor. The statement given has the 'what changed' half but no request. A full past medical history or complete exam is not what a nurse-facing report requires; nor is restating the chief complaint the missing element here."
+      },
+      {
+        "q": "A patient with HEART score 3 (about 2% risk) is offered the choice between staying for repeat labs or going home with cardiology follow-up this week, after being told the actual percentage risk. What concept does this represent?",
+        "choices": [
+          "Shared decision making",
+          "The emergency exception to consent",
+          "A DNR or POLST discussion",
+          "Diagnosis momentum"
+        ],
+        "answer": 0,
+        "why": "Giving the numeric risk and laying out options together is the lesson's definition of shared decision making, with the exact HEART score 3 example used in the text. The emergency exception applies to patients who cannot consent, not applicable here. A DNR/POLST concerns limiting specific interventions, not this scenario. Diagnosis momentum is a bias, unrelated to consent discussions."
+      }
+    ],
+    "pa-reasoning-l10": [
+      {
+        "q": "A 5-year-old fell 4 feet onto grass, cried immediately, has no scalp hematoma, is alert, and has no vomiting or severe headache. Applying PECARN for age 2 and older, what is the correct interpretation?",
+        "choices": [
+          "None of the six predictors are present, so PECARN supports no CT",
+          "This falls into the high-risk tier because any fall requires imaging",
+          "This is automatically intermediate risk requiring 4 to 6 hours of observation",
+          "PECARN cannot be applied because the child is under age 2"
+        ],
+        "answer": 0,
+        "why": "None of the six age-2-and-up predictors (altered mental status/GCS 14, basilar skull fracture signs, loss of consciousness, vomiting, severe mechanism, severe headache) are present, so PECARN supports no scan. A fall alone does not require imaging under this rule. Without any predictors present, this is not the intermediate tier. The child is 5, so the age-2-and-older algorithm applies, not the under-2 algorithm."
+      },
+      {
+        "q": "A 55-year-old with no history of heart disease has vasovagal-type presyncope with a clear prodrome, normal vitals, a normal troponin, and a normal ECG. Using the Canadian Syncope Risk Score elements described in the lesson, how would this generally trend?",
+        "choices": [
+          "Toward a negative score and low risk, since predisposition to vasovagal symptoms and an emergency diagnosis of vasovagal syncope both subtract points",
+          "Toward a high score because any syncope automatically adds points regardless of cause",
+          "It cannot be scored without an echocardiogram",
+          "Toward a high score because age 55 alone adds the maximum points"
+        ],
+        "answer": 0,
+        "why": "The score subtracts points for predisposition to vasovagal symptoms and for an emergency diagnosis of vasovagal syncope, both of which point toward a low, negative score here given the classic prodrome and clean workup. Syncope does not automatically add points; the components matter. An echocardiogram is not a required input to the listed score elements. Age alone doesn't dominate the score, and this patient's age does not trigger the higher point brackets used in the rule as described (which centers on other variables such as troponin, QTc, and hemodynamics)."
+      }
+    ],
+    "pa-reasoning-l11": [
+      {
+        "q": "A patient has a Glasgow-Blatchford score of 0 after a single episode of coffee-ground emesis, with normal hemoglobin, normal blood urea nitrogen, and stable vitals. What does this specifically support, as distinct from CURB-65 or HEART?",
+        "choices": [
+          "That the patient may be safe for outpatient management without transfusion, endoscopy, or intervention, since Glasgow-Blatchford is designed to identify exactly that",
+          "That the patient needs urgent endoscopy regardless of the score, since Glasgow-Blatchford always mandates a procedure",
+          "That intensive care admission is required",
+          "That the score functions the same way as CURB-65, just for a different organ system"
+        ],
+        "answer": 0,
+        "why": "The lesson states Glasgow-Blatchford's purpose is the opposite of most scores: identifying who can be managed as an outpatient, with a score of 0 (or 1 in many protocols) carrying very low need for transfusion, endoscopy or intervention. It does not mandate endoscopy at a score of 0, nor does it indicate ICU need. It is not functionally identical to CURB-65, which sorts pneumonia disposition using different criteria."
+      },
+      {
+        "q": "A 45-year-old with unstable angina has three of the seven TIMI risk factors, including ST deviation on ECG. Based on the lesson's numbers, roughly what should this predict compared to a TIMI score of 0 to 1?",
+        "choices": [
+          "A meaningfully higher 14-day event rate, since TIMI scores climb from around 5% at 0 to 1 toward roughly 40% at 6 to 7",
+          "No difference in event rate, since TIMI does not correlate with outcomes",
+          "A guaranteed need for emergency catheterization within the hour",
+          "The exact same event rate as GRACE, since the two scores are interchangeable"
+        ],
+        "answer": 0,
+        "why": "TIMI event rates climb substantially with the score, from roughly 5% at 0 to 1 to about 40% at 6 to 7, so an intermediate score like 3 predicts meaningfully higher risk than 0 to 1. TIMI does correlate with outcome by design. It does not by itself mandate emergency catheterization within the hour; that decision involves more clinical context. TIMI and GRACE are related but not interchangeable, since GRACE predicts mortality using continuous variables and identifies who benefits from early invasive strategy above a threshold of 140."
+      }
+    ],
+    "pa-reasoning-l12": [
+      {
+        "q": "A 30-year-old presents with palpitations that started and stopped abruptly, syncope during the episode, and a family history of sudden death in a young relative. Using the discriminating questions from the lesson's table, which diagnosis moves up most?",
+        "choices": [
+          "A dangerous arrhythmia such as ventricular tachycardia or a pre-excitation syndrome, rather than sinus tachycardia from anxiety",
+          "Sinus tachycardia from caffeine, since palpitations are usually benign",
+          "Thyroid disease, since it is the most likely cause listed",
+          "Anemia, since palpitations are commonly caused by low blood counts in young adults"
+        ],
+        "answer": 0,
+        "why": "The table's discriminating questions for palpitations are exactly abrupt start and stop, syncope with the episode, and family history of sudden death, all of which point toward the must-not-miss category (ventricular tachycardia, pre-excited atrial fibrillation, long QT) rather than the likely benign causes. Sinus tachycardia from caffeine, thyroid disease, and anemia are the 'most likely' column entries, but the specific red-flag answers given here push away from those toward the dangerous category."
+      },
+      {
+        "q": "According to the lesson, what pattern connects mesenteric ischemia, necrotizing soft tissue infection, and compartment syndrome?",
+        "choices": [
+          "Pain out of proportion to the examination findings, appearing in all three as a shared warning sign",
+          "All three are diagnosed primarily by a bedside glucose test",
+          "All three present with a non-blanching rash",
+          "All three are excluded once vital signs are normal"
+        ],
+        "answer": 0,
+        "why": "The lesson specifically calls out pain out of proportion to the exam as the shared pattern across these three catastrophic diagnoses, each with unimpressive early findings. None of them is diagnosed by bedside glucose. A non-blanching rash is a separate red flag discussed elsewhere (meningococcemia). Normal vital signs do not exclude any of these three, since their early findings are famously unimpressive."
+      }
+    ],
+    "pa-reasoning-l13": [
+      {
+        "q": "A patient develops a painful rash with skin peeling and mouth ulcers three weeks after starting a new anti-seizure medication. Which historical question from the lesson would have flagged this early, and what is the diagnosis of concern?",
+        "choices": [
+          "Any new medication in the last three weeks; the concern is Stevens-Johnson syndrome, especially with mucosal involvement",
+          "Any recent travel; the concern is viral exanthem",
+          "Any recent antibiotic use; the concern is toxic shock syndrome",
+          "Whether the rash blanches; the concern is contact dermatitis"
+        ],
+        "answer": 0,
+        "why": "The lesson identifies the new-medication-within-three-weeks question as the one that finds Stevens-Johnson syndrome, with mucosal involvement (mouth, eyes, genitals) as the separating finding from a benign drug rash. Travel history is not the flagged question here. It is specifically an anti-seizure medication in this scenario, and toxic shock is a different clinical picture. Blanching distinguishes rash mechanism generally but is not the specific discriminator described for this case."
+      },
+      {
+        "q": "A patient with known gout has a single red, hot, swollen knee and a fever of 38.4 C. The team plans to treat for a gout flare without aspirating the joint. What does the lesson say about this plan?",
+        "choices": [
+          "It is inadequate, because a single hot swollen joint is septic arthritis until aspiration proves otherwise, even with known gout, since gout does not protect against infection",
+          "It is appropriate, since a known history of gout excludes septic arthritis",
+          "It is appropriate, since fever with gout flares is common and expected",
+          "Aspiration is only needed if more than one joint is involved"
+        ],
+        "answer": 0,
+        "why": "The lesson states directly that a hot swollen joint is septic arthritis until aspiration proves otherwise, including in patients with known gout, because gout does not protect against infection and the two coexist. A gout history does not exclude septic arthritis. Fever is not simply expected and dismissed with a flare; it should raise concern. The rule is not limited to polyarticular presentations, it explicitly applies to a single joint."
+      }
+    ],
+    "pa-reasoning-l14": [
+      {
+        "q": "In the diabetic ketoacidosis case presentation, the assessment states the potassium of 5.4 will \"fall fast once insulin starts.\" What is the underlying mechanism that makes this true?",
+        "choices": [
+          "Insulin drives potassium back into cells, unmasking the total-body deficit that acidosis had been hiding by shifting potassium out of cells",
+          "Insulin directly excretes potassium through the kidneys",
+          "The fluids given before insulin cause the potassium to rise, not fall",
+          "Potassium in DKA is unrelated to insulin and changes only with fluid administration"
+        ],
+        "answer": 0,
+        "why": "The case explains that acidosis shifts potassium out of cells, hiding a deficit, and starting insulin shifts potassium back into cells, causing the measured level to fall quickly and dangerously if not anticipated. Insulin does not work by renal excretion of potassium. Fluids alone are not the described mechanism for the drop; insulin's intracellular shift is. Potassium changes in DKA are very much tied to insulin therapy, not unrelated to it."
+      },
+      {
+        "q": "In the case of the 81-year-old on apixaban after a fall, the presenter also investigates why he fell, and finds a 22 mmHg orthostatic drop and a new tamsulosin prescription. What does this second layer of the presentation demonstrate?",
+        "choices": [
+          "That an evaluation does not stop at explaining the injury, but also asks what caused the event that led to it, since a medication effect changes the plan differently than a purely mechanical fall",
+          "That anticoagulation always causes orthostatic hypotension",
+          "That tamsulosin has no relevance to falls and this finding is a coincidence to be ignored",
+          "That the CT head result alone answers why he fell"
+        ],
+        "answer": 0,
+        "why": "The case explicitly reasons that finding a medication-related cause for the fall changes management, distinct from just treating it as a mechanical fall, which is the point of asking 'why did he fall' rather than stopping at the injury itself. Anticoagulation does not cause orthostatic hypotension by itself. Tamsulosin, an alpha-blocker, is a recognized cause of orthostatic drops and is not irrelevant. A head CT addresses intracranial injury, not the cause of the fall."
+      }
+    ],
+    "pa-reasoning-l15": [
+      {
+        "q": "In the heart failure discharge note example, why is \"pulmonary embolism considered: onset was gradual over days, no unilateral leg findings, no immobilization\" included in the assessment?",
+        "choices": [
+          "Because naming the dangerous alternative and the specific reasons it was excluded is what shows the differential was actually run, not just assumed",
+          "Because pulmonary embolism is the leading diagnosis in this case",
+          "Because this sentence belongs in the objective section, not the assessment",
+          "Because it is boilerplate language required in every note regardless of the case"
+        ],
+        "answer": 0,
+        "why": "The lesson's key point is that an assessment paragraph names dangerous alternatives by name and the specific reason each was excluded, which is exactly what this sentence does; it is not boilerplate, it is case-specific reasoning. It is not the leading diagnosis here (heart failure is), and interpretation like 'considered and excluded' belongs in the assessment, not the objective section, which holds raw measurements only."
+      },
+      {
+        "q": "In the appendicitis-suspected note, the objective section lists a negative pregnancy test and a white count of 13,200 with 82% neutrophils, while the assessment says \"ectopic pregnancy excluded by a negative pregnancy test.\" What does this pairing illustrate about the O and A sections?",
+        "choices": [
+          "The objective holds the raw result, while the assessment adds the interpretation of what that result means for the differential",
+          "Both sections should contain identical interpretive language",
+          "The pregnancy test result belongs only in the assessment, not the objective",
+          "White count with differential belongs in the plan section, not the objective"
+        ],
+        "answer": 0,
+        "why": "This is a textbook illustration of Objective (raw measured fact: negative test, white count number) versus Assessment (interpretation: this excludes ectopic pregnancy). The two sections should not duplicate interpretive language identically. The pregnancy test result itself is a measurement and belongs in the objective. The white count and differential are measured lab values, which belong in the objective, not the plan."
+      }
+    ],
+    "pa-reasoning-l16": [
+      {
+        "q": "A journal club reads an abstract stating a drug \"significantly improved\" a laboratory biomarker in a small trial, with no mention of mortality or symptoms. What should this trigger, per the lesson's four warning signs?",
+        "choices": [
+          "Caution about a surrogate outcome, since a lab value improving does not establish that patients lived longer or felt better",
+          "Immediate adoption into practice, since biomarker improvement is equivalent to clinical benefit",
+          "No concern, since any statistically significant result is clinically meaningful",
+          "A search for the number needed to treat, which is the only remaining question"
+        ],
+        "answer": 0,
+        "why": "The lesson lists a surrogate outcome as one of four things that should slow a reader down, specifically asking whether anyone actually lived longer or felt better. It should not be adopted on this basis alone. Statistical significance does not equal clinical meaning, especially for a surrogate. NNT is a useful number but is not 'the only remaining question' when the outcome itself hasn't been shown to matter clinically."
+      },
+      {
+        "q": "Two trials of the same drug report a 50% relative risk reduction, but one starts from a baseline risk of 20% and the other from a baseline risk of 0.4%. What does the lesson say happens to the absolute benefit?",
+        "choices": [
+          "The absolute benefit differs enormously (10 percentage points versus 0.2 percentage points) even though the relative reduction is identical in both trials",
+          "The absolute benefit is identical in both trials since the relative risk reduction is the same",
+          "Relative risk reduction cannot be calculated when baseline risk is very low",
+          "The number needed to treat would be identical in both trials"
+        ],
+        "answer": 0,
+        "why": "The lesson's exact point is that a 50% relative reduction of a 0.2% risk is only a 0.1% absolute benefit, illustrating how identical relative numbers can hide very different absolute benefits; the same logic applied to 20% baseline gives a 10-point absolute drop versus a 0.2-point drop. Relative risk reduction can absolutely be calculated with a low baseline. Since absolute benefit differs, NNT (which is 1 divided by absolute risk reduction) would differ sharply between the two trials, not be identical."
+      }
+    ],
+    "pa-reasoning-l17": [
+      {
+        "q": "A surrogate decision-maker for an unconscious patient insists on a treatment plan that directly contradicts a valid, current advance directive the patient signed while competent. Per the lesson's ethics framework, what governs?",
+        "choices": [
+          "The advance directive, because it reflects the patient's own expressed wishes and outranks a surrogate's preference expressed in the moment",
+          "The surrogate's wishes, because surrogates always have final authority once a patient loses capacity",
+          "Whichever option a court decides is more medically appropriate",
+          "The treating clinician's personal judgment about what is best"
+        ],
+        "answer": 0,
+        "why": "The lesson states directly that a valid advance directive or POLST reflects the patient's own wishes and takes precedence over a surrogate's in-the-moment preference; the surrogate hierarchy applies only when no directive exists. Surrogates do not have unconditional final authority when a valid directive exists. Court involvement is reserved for genuine doubt about validity, not a routine disagreement. The clinician's personal judgment does not override a valid directive."
+      },
+      {
+        "q": "A 15-year-old requests contraceptive counseling and does not want her parents informed. The clinic's policy assumes this is automatically confidential everywhere. What trap does the lesson warn about here?",
+        "choices": [
+          "The specific ages and categories for minor consent vary by state, and billing statements or patient portals can disclose what was meant to stay private, so the promise of confidentiality should not be made without checking both the state rule and the practical disclosure risk",
+          "Minors can never legally consent to this kind of care under any circumstance",
+          "This scenario has no confidentiality concerns because contraceptive care is never sensitive",
+          "The clinician should always inform the parents regardless of state law"
+        ],
+        "answer": 0,
+        "why": "The lesson explicitly warns that the categories and ages for minor consent vary by state, and that billing and portal notices can break a promised confidentiality even when the clinical conversation itself was private. It is not true that minors can never consent to this care category; many states allow it. It is not true there's no confidentiality concern; that is the entire trap being described. Automatically informing parents contradicts the state exceptions the lesson describes."
+      }
+    ],
+    "pa-reasoning-l18": [
+      {
+        "q": "A technician, after placing an IV, tells the provider: \"his rate is 118 and climbing, and he was 96 twenty minutes ago.\" How does this reflect the shift described in the lesson from reporting numbers to reporting meaning?",
+        "choices": [
+          "It adds the trend and context (climbing over time) rather than a single isolated number, turning data into information",
+          "It is identical in value to simply stating \"heart rate is 118\"",
+          "It demonstrates following the plan rather than anticipating it",
+          "It demonstrates being right rather than being calibrated"
+        ],
+        "answer": 0,
+        "why": "The lesson's example contrasts a bare number ('blood pressure 104/62') with the same number in context showing a trend, which is exactly what this technician does by adding the prior value and the direction of change. A bare number alone would not add this context, so the two are not equivalent. This example is about reporting meaning, not about anticipating the next step in a plan, and it isn't about confidence calibration."
+      },
+      {
+        "q": "Following the weekly workbook, a learner writes a three-item differential and a disposition guess before the provider evaluates the patient, then finds she was wrong about the disposition. What is the intended value of being wrong here?",
+        "choices": [
+          "It identifies specifically which illness script or reasoning step was incomplete, which is more useful than simply being told to be more careful",
+          "It proves the exercise was performed incorrectly and should be discarded",
+          "It has no value beyond building general confidence",
+          "It replaces the need for any bias review going forward"
+        ],
+        "answer": 0,
+        "why": "The lesson states being wrong is 'the useful outcome, because it tells you which script is incomplete,' making the miss itself diagnostic of a specific gap in reasoning. It does not mean the exercise was done wrong. Its value is specific and diagnostic, not just general confidence-building. It complements, rather than replaces, the separate bias-review exercise (naming one wrong call a week)."
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "A 58-year-old man with hypertension and a 40 pack-year smoking history has 2 hours of exertional chest pressure with diaphoresis. The provider glances at him from the doorway and immediately calls for an ECG before any history is taken. What best explains this initial action?",
+      "choices": [
+        "System 1 pattern recognition matching a stored illness script for acute coronary syndrome",
+        "A completed differential diagnosis",
+        "A pertinent negative already documented",
+        "A decision made using VINDICATE"
+      ],
+      "answer": 0,
+      "lesson": "pa-reasoning-l01",
+      "difficulty": 1,
+      "why": "The instantaneous doorway response before any questioning is System 1 pattern matching against a stored illness script. No differential has been built yet, since no history has been taken. A pertinent negative requires a specific symptom to have been asked about and denied, which hasn't happened. VINDICATE is a category-generation tool used later in the process, not an instant doorway judgment.",
+      "id": "pa-reasoning-q077"
+    },
+    {
+      "q": "A nurse says \"something feels wrong with this patient\" about a man whose vital signs are all technically within normal range. What is the most appropriate response based on how gestalt is described in the reasoning lesson?",
+      "choices": [
+        "Dismiss it since the numbers are normal",
+        "Treat the statement as clinical data and ask what specifically triggered the feeling",
+        "Wait for the vitals to become abnormal before acting",
+        "Document it as unfounded anxiety"
+      ],
+      "answer": 1,
+      "lesson": "pa-reasoning-l01",
+      "difficulty": 2,
+      "why": "The lesson explicitly frames 'something is wrong with this guy' as data, not a mood, and instructs asking what triggered the feeling. Dismissing it because numbers are normal ignores that gestalt often precedes abnormal vitals, which is the entire point of the mismatch concept. Waiting for numbers to worsen could delay recognition of a deteriorating patient. Documenting it as unfounded anxiety mischaracterizes a trained clinical impression as an emotional overreaction.",
+      "id": "pa-reasoning-q078"
+    },
+    {
+      "q": "A learner keeps a de-identified case log after each shift, five lines per interesting patient. What is the primary purpose of this habit according to the lesson on clinical thinking?",
+      "choices": [
+        "To create material solely for a future malpractice defense",
+        "To satisfy a documentation requirement for the training program",
+        "To build illness scripts deliberately through repetition and feedback, the same way gestalt is built",
+        "To replace the need for reading about diseases"
+      ],
+      "answer": 2,
+      "lesson": "pa-reasoning-l01",
+      "difficulty": 1,
+      "why": "The lesson states gestalt and scripts grow through repetitions plus feedback, and the case log is presented as one of the two habits that does this work deliberately. It is not framed as a documentation requirement, a legal tool, or a replacement for reading; in fact the lesson recommends reading about a disease the same day while the case is still fresh.",
+      "id": "pa-reasoning-q079"
+    },
+    {
+      "q": "A 40-year-old woman presents with sudden severe headache. The triage note says \"probably migraine, patient has a migraine history.\" The provider orders only oral analgesics without further questioning about this episode's onset speed. What pair of biases is most clearly illustrated?",
+      "choices": [
+        "Diagnosis momentum and a correctly applied illness script",
+        "Availability bias from a recent migraine case and diagnosis momentum",
+        "Frequent-flyer bias and SnNout misapplication",
+        "Anchoring on the migraine history and premature closure without exploring how this headache differs"
+      ],
+      "answer": 3,
+      "lesson": "pa-reasoning-l02",
+      "difficulty": 2,
+      "why": "Fixing on the migraine history without asking whether this episode's onset and character actually match a migraine is anchoring, and stopping the workup at that label without further questioning is premature closure. There's no described recent vivid case driving the guess, so availability doesn't fit as cleanly. Frequent-flyer bias and SnNout are unrelated concepts to this scenario. An illness script correctly applied would have included checking whether the key features (this time) actually matched.",
+      "id": "pa-reasoning-q080"
+    },
+    {
+      "q": "A clinician is handed a patient by EMS already labeled \"panic attack,\" which is repeated by triage, then the tech, then the provider, each accepting the prior label without independently re-examining the patient. What is this pattern called?",
+      "choices": [
+        "Diagnosis momentum",
+        "Attribution bias",
+        "Availability bias",
+        "Worst-first reasoning"
+      ],
+      "answer": 0,
+      "lesson": "pa-reasoning-l02",
+      "difficulty": 1,
+      "why": "A label that hardens as it passes from person to person without independent re-examination is precisely diagnosis momentum as defined in the lesson. Attribution bias concerns identity-based assumptions about the patient, not label propagation. Availability bias concerns recent vivid experience, not sequential label-passing. Worst-first reasoning is a protective habit, not a bias, and is the opposite of what's happening here.",
+      "id": "pa-reasoning-q081"
+    },
+    {
+      "q": "During a busy shift, a provider has just managed two cases of pericarditis in young patients. The next young patient with pleuritic chest pain is immediately assumed to have pericarditis without considering pulmonary embolism. What bias is this, and what is the debiasing tool that best counters it?",
+      "choices": [
+        "Anchoring; countered by SnNout",
+        "Availability bias; countered by explicitly asking \"what else could this be?\"",
+        "Premature closure; countered by CURB-65",
+        "Diagnosis momentum; countered by Ottawa rules"
+      ],
+      "answer": 1,
+      "lesson": "pa-reasoning-l02",
+      "difficulty": 2,
+      "why": "Recent vivid cases inflating the perceived likelihood of a similar diagnosis is the definition of availability bias, and the lesson names forcing alternatives ('what else could this be?') as the most consistent debiasing technique. SnNout is a test-interpretation shortcut, not a debiasing habit for this bias. CURB-65 is a pneumonia severity score, unrelated. Ottawa rules concern ankle and knee imaging, unrelated to this scenario.",
+      "id": "pa-reasoning-q082"
+    },
+    {
+      "q": "A 68-year-old woman says her pain is \"like an elephant sitting on my chest\" and started while she was climbing stairs. Which element of the history is this quote capturing?",
+      "choices": [
+        "A pertinent negative",
+        "Chief complaint alone, with no further detail needed",
+        "Quality, one component of OPQRST",
+        "Past medical history"
+      ],
+      "answer": 2,
+      "lesson": "pa-reasoning-l03",
+      "difficulty": 1,
+      "why": "The patient's own descriptive adjective for the pain is the Quality component of OPQRST, and using her own words is emphasized as diagnostically meaningful. It is more than a bare chief complaint, since it captures a quality descriptor within the fuller HPI. It is not a pertinent negative, since nothing is being denied. It is not past medical history, which covers prior diagnoses, not the character of the current symptom.",
+      "id": "pa-reasoning-q083"
+    },
+    {
+      "q": "A history and physical for a patient with suspected pulmonary embolism reads: \"Denies fever, cough, hemoptysis, recent surgery, or prolonged immobilization.\" What is the clinical purpose of listing these specific denials rather than writing \"review of systems negative\"?",
+      "choices": [
+        "It functions as the chief complaint",
+        "It is required boilerplate with no diagnostic value",
+        "It replaces the need for a physical exam",
+        "It documents pertinent negatives that were specifically asked about because they relate to the differential being considered"
+      ],
+      "answer": 3,
+      "lesson": "pa-reasoning-l03",
+      "difficulty": 2,
+      "why": "The lesson defines pertinent negatives as symptoms asked about because of the differential, recorded whether present or absent, and states a note with no negatives reads like a note with no differential; listing them specifically (rather than a vague blanket statement) proves the differential was actually considered. It is not boilerplate without value, does not substitute for a physical exam, and is not the chief complaint, which is a one-line statement in the patient's words.",
+      "id": "pa-reasoning-q084"
+    },
+    {
+      "q": "A patient reports taking metformin \"most days, when I remember.\" How should this information affect the note and the clinical picture?",
+      "choices": [
+        "It should be recorded as inconsistent adherence, since medications should be documented with whether they are actually being taken, not just listed by name",
+        "It should be recorded simply as \"metformin\" with no further detail",
+        "It should be omitted since adherence is not clinically relevant",
+        "It should be recorded only in the social history section"
+      ],
+      "answer": 0,
+      "lesson": "pa-reasoning-l03",
+      "difficulty": 2,
+      "why": "The lesson specifically instructs recording medications by name, dose, and whether they are actually being taken, which changes the clinical picture (for example, poorer glucose control than a full-adherence assumption would suggest). Simply listing the drug name loses this information. Adherence is clinically relevant, not something to omit. It belongs with the medication list, not tucked into social history.",
+      "id": "pa-reasoning-q085"
+    },
+    {
+      "q": "A clinician is asked to generate a differential for a confusing, non-localized presentation of generalized weakness and confusion with no obvious source. Which structured method is most appropriate as a starting point?",
+      "choices": [
+        "Anatomy from the outside in, since weakness clearly localizes to one body region",
+        "VINDICATE, since it is designed for systemic or confusing presentations where anatomy gives no clear starting point",
+        "The three-item habit, since narrowing should happen before generating candidates",
+        "SOAP, since documentation format determines the differential"
+      ],
+      "answer": 1,
+      "lesson": "pa-reasoning-l04",
+      "difficulty": 1,
+      "why": "The lesson specifically recommends VINDICATE for systemic or confusing presentations when anatomy gives nothing to work with, exactly this scenario. Anatomy from the outside in requires a localized region, which generalized weakness does not provide. The three-item habit is the narrowing step that comes after generation, not before. SOAP is a note format, not a differential-generation tool.",
+      "id": "pa-reasoning-q086"
+    },
+    {
+      "q": "A clinician tells a colleague: \"For this belly pain I'm thinking appendicitis, ovarian torsion, and ectopic pregnancy. Appendicitis for the migration and tenderness, torsion because the pain is severe and intermittent, ectopic because her last period was six weeks ago and no pregnancy test has resulted yet. Mesenteric ischemia is less likely given her age, but I'd want to know if she has any vascular risk factors.\" What technique does this represent?",
+      "choices": [
+        "A completed medical decision making section",
+        "VINDICATE applied to an abdominal complaint",
+        "The three-item habit, naming three diagnoses with one reason each plus an honest outlier",
+        "The diagnostic time-out"
+      ],
+      "answer": 2,
+      "lesson": "pa-reasoning-l04",
+      "difficulty": 2,
+      "why": "Three named diagnoses each with a specific reason, plus an honest outlier and the thing to check, is precisely the three-item habit described in the lesson. VINDICATE is a category checklist, not what's shown here since specific diseases (not categories) are named. Medical decision making is a note section, not a verbal exchange. The diagnostic time-out asks about working diagnosis, what doesn't fit, and worst-case, a different structure than this three-name statement.",
+      "id": "pa-reasoning-q087"
+    },
+    {
+      "q": "A patient's history and exam are unremarkable except for one finding: the pain is not reproduced by palpation of the chest wall. How should this single negative finding be weighed in isolation?",
+      "choices": [
+        "It excludes acute coronary syndrome",
+        "It completely excludes musculoskeletal chest pain",
+        "It has no diagnostic value at all",
+        "It shifts probability slightly away from a musculoskeletal cause but does not by itself exclude any diagnosis"
+      ],
+      "answer": 3,
+      "lesson": "pa-reasoning-l04",
+      "difficulty": 2,
+      "why": "The lesson's trap explicitly states that nothing found at the bedside rules out a diagnosis by itself; individual findings only shift probability, while rules and tests are what actually exclude. So this finding nudges away from musculoskeletal cause without fully excluding it, and it does not exclude coronary disease. Saying it has no value at all overstates the trap in the opposite direction; it does shift probability, just not decisively.",
+      "id": "pa-reasoning-q088"
+    },
+    {
+      "q": "A 30-year-old presents with sudden-onset, severe abdominal pain that reached maximal intensity within seconds. Per the pattern connecting onset speed to disease category, what category of process should be considered first?",
+      "choices": [
+        "A rupture, tear, clot, or torsion",
+        "An inflammatory process building slowly",
+        "A chronic mass lesion",
+        "A viral syndrome"
+      ],
+      "answer": 0,
+      "lesson": "pa-reasoning-l05",
+      "difficulty": 1,
+      "why": "Instantaneous maximal onset is specifically associated with rupture, tear, clot, or torsion across the red-flag lessons. Inflammatory processes typically build over hours, not seconds. A mass lesion typically builds over weeks. A viral syndrome would not typically present with an instantaneous maximal pain onset.",
+      "id": "pa-reasoning-q089"
+    },
+    {
+      "q": "A 55-year-old man has sudden pleuritic chest pain, absent breath sounds on the left, and a blood pressure of 78/50. Which red flag combination and diagnosis does this match?",
+      "choices": [
+        "Tearing pain with unequal arm pressures, matching aortic dissection",
+        "Sudden pain, absent unilateral breath sounds, and hypotension, matching tension pneumothorax",
+        "Pain after forceful vomiting with subcutaneous crackling, matching esophageal rupture",
+        "Exertional pressure with radiation to the jaw, matching acute coronary syndrome"
+      ],
+      "answer": 1,
+      "lesson": "pa-reasoning-l05",
+      "difficulty": 2,
+      "why": "This is exactly the tension pneumothorax red-flag combination from the chest pain table: sudden pain with absent breath sounds on one side and low blood pressure. Aortic dissection's flags are tearing pain with unequal arm pressures and pulse deficit, not described here. Esophageal rupture follows forceful vomiting with subcutaneous crackling, not described here. Acute coronary syndrome's flags are exertional pressure with radiation and sweating, not matching this presentation.",
+      "id": "pa-reasoning-q090"
+    },
+    {
+      "q": "A 6-week-old infant has a rectal temperature of 38.3 C but appears well, is smiling, and feeding normally. What is the correct action according to the pediatric fever red-flag guidance?",
+      "choices": [
+        "Discharge with instructions to return only if fever persists beyond 5 days",
+        "No further workup is needed because the infant looks well",
+        "Full sepsis evaluation is required for infants under 28 days regardless of appearance, but this infant is over 28 days, so immediate provider evaluation for the 1 to 3 month, ill or well-appearing subtlety should still be pursued urgently",
+        "Full sepsis evaluation is mandatory only if the temperature exceeds 39 C"
+      ],
+      "answer": 2,
+      "lesson": "pa-reasoning-l05",
+      "difficulty": 3,
+      "why": "This infant is 6 weeks old, which falls in the 1 to 3 month bracket calling for immediate provider evaluation, distinct from the under-28-days bracket that mandates full sepsis evaluation regardless of appearance. Looking well is explicitly insufficient reassurance at this age per the lesson's table. Sending the infant home to watch for days is not appropriate at this age. The 39 C threshold described is not the cutoff used in the lesson's table, which uses 38.0 C as the operative fever definition.",
+      "id": "pa-reasoning-q091"
+    },
+    {
+      "q": "A pretest probability is estimated as high for pulmonary embolism based on history and exam. A D-dimer, which is 95% sensitive and 45% specific, returns negative. What is the correct interpretation?",
+      "choices": [
+        "The specificity of 45% means the test cannot be trusted under any circumstance",
+        "The negative result rules out pulmonary embolism regardless of pretest probability",
+        "A negative D-dimer always requires a repeat test in 6 hours",
+        "The pretest probability was high, so a negative D-dimer does not adequately lower the post-test probability, and imaging is still needed"
+      ],
+      "answer": 3,
+      "lesson": "pa-reasoning-l06",
+      "difficulty": 2,
+      "why": "SnNout applies when pretest probability starts low enough that a sensitive negative test pushes the post-test probability below an acceptable threshold; at high pretest probability, a negative sensitive test does not adequately exclude disease, so imaging remains necessary. It does not universally rule out the disease. Repeating in 6 hours isn't the described workflow. Low specificity affects false positive rate, but does not mean the test is untrustworthy across every use.",
+      "id": "pa-reasoning-q092"
+    },
+    {
+      "q": "A researcher notes that the exact same rapid strep test performs differently (in terms of positive predictive value) in a pediatric clinic during flu season versus during strep season. What explains this difference?",
+      "choices": [
+        "Predictive values move with disease prevalence in the tested population, while sensitivity and specificity are fixed properties of the test itself",
+        "The test's sensitivity changes based on the season",
+        "This should not happen; predictive values are fixed properties of any given test",
+        "The test's specificity changes based on the season"
+      ],
+      "answer": 0,
+      "lesson": "pa-reasoning-l06",
+      "difficulty": 2,
+      "why": "The lesson is explicit that sensitivity and specificity are properties of the test, while predictive values are properties of the test in a particular population and move with prevalence, which explains exactly this seasonal variation. Sensitivity and specificity themselves are described as fixed test properties, not season-dependent. Saying predictive values shouldn't vary directly contradicts the lesson's central point.",
+      "id": "pa-reasoning-q093"
+    },
+    {
+      "q": "A number needed to treat of 10 is reported for a cardiovascular drug with no time frame or population given. What is the correct critique?",
+      "choices": [
+        "An NNT of 10 is always excellent regardless of context",
+        "The NNT is meaningless without a stated time frame and population, since both anchor its interpretation",
+        "NNT does not require any additional context to be interpretable",
+        "The number needed to harm must always equal the NNT"
+      ],
+      "answer": 1,
+      "lesson": "pa-reasoning-l06",
+      "difficulty": 1,
+      "why": "The lesson's trap states directly that an NNT is bound to a time frame and a population, and numbers quoted without both should be treated as marketing. NNT alone, without context, cannot be judged as excellent or poor. Saying no additional context is needed directly contradicts the lesson. NNH and NNT are separate calculations and have no fixed relationship to each other.",
+      "id": "pa-reasoning-q094"
+    },
+    {
+      "q": "A 55-year-old with a HEART score of 2 (score based on a mildly suspicious history, normal ECG, one risk factor, and normal troponin) is being considered for discharge. What is the appropriate pathway according to the score bands described?",
+      "choices": [
+        "High risk, requiring admission with cardiology",
+        "Moderate risk, requiring observation with repeat troponins",
+        "Low risk, generally dischargeable with follow-up, given a score in the 0 to 3 range",
+        "The score cannot be interpreted without a stress test"
+      ],
+      "answer": 2,
+      "lesson": "pa-reasoning-l07",
+      "difficulty": 1,
+      "why": "A score of 2 falls in the 0 to 3 low-risk band, which the lesson states is generally dischargeable with follow-up. Moderate risk (observation) corresponds to 4 to 6. High risk (admission) corresponds to 7 to 10. The lesson does not describe a stress test as required to interpret the HEART score itself.",
+      "id": "pa-reasoning-q095"
+    },
+    {
+      "q": "A trauma patient has a Glasgow Coma Scale of 15 two hours after injury, no vomiting, no signs of basilar skull fracture, and is under 65. Using the Canadian CT head rule's high-risk criteria, what does this suggest, assuming none of the medium-risk criteria are present either?",
+      "choices": [
+        "The rule cannot be applied without a loss of consciousness",
+        "A CT is mandatory regardless of these findings",
+        "This automatically qualifies for the medium-risk tier based on age",
+        "None of the listed high-risk or medium-risk features are present, arguing against the need for CT under this rule"
+      ],
+      "answer": 3,
+      "lesson": "pa-reasoning-l07",
+      "difficulty": 2,
+      "why": "None of the specific high-risk features (GCS under 15 at 2 hours, suspected fracture, basilar signs, vomiting 2+ times, age 65+) or medium-risk features are present in this description, so the rule does not indicate CT is needed based on these criteria. It is not automatically mandatory without those features. Age under 65 does not qualify for the age-based high-risk criterion. The rule requires the injury to include loss of consciousness, amnesia, or disorientation to apply at all, but the question is about interpreting a case where the rule does apply and none of the risk features are present.",
+      "id": "pa-reasoning-q096"
+    },
+    {
+      "q": "A patient with two Wells DVT points (tenderness along the deep veins and a swollen leg) also has an alternative diagnosis (cellulitis) judged at least as likely. How does this alternative diagnosis affect the score?",
+      "choices": [
+        "Two points are subtracted, since an alternative diagnosis at least as likely as DVT reduces the score by 2",
+        "The alternative diagnosis has no effect on the numeric score",
+        "The alternative diagnosis doubles the point total",
+        "The score becomes unusable and must be discarded"
+      ],
+      "answer": 0,
+      "lesson": "pa-reasoning-l07",
+      "difficulty": 2,
+      "why": "The Wells DVT criteria explicitly subtract 2 points when an alternative diagnosis is at least as likely, which is a scoring rule described in the decision rules lesson. It clearly does have an effect (a subtraction), not zero effect. It does not double the total. The score remains usable, it is just lowered by this specific rule.",
+      "id": "pa-reasoning-q097"
+    },
+    {
+      "q": "A discharge note for a patient with resolved chest pain includes an assessment that lists the leading diagnosis and states \"pulmonary embolism and aortic dissection considered and excluded based on normal D-dimer and equal bilateral arm pressures.\" What section of SOAP does this belong in, and why?",
+      "choices": [
+        "Objective, because it references lab and exam findings",
+        "Assessment, because it is interpretation of data rather than the raw data itself",
+        "Subjective, because it reflects the patient's own words",
+        "Plan, because it describes what will be done next"
+      ],
+      "answer": 1,
+      "lesson": "pa-reasoning-l08",
+      "difficulty": 1,
+      "why": "Even though it references data (D-dimer, arm pressures), the sentence is interpreting that data to exclude specific diagnoses, which is the defining role of the Assessment section, not merely reporting the raw values. Objective would be the raw D-dimer value and arm pressure numbers alone, without the interpretive conclusion. It is not the patient's own words, so not Subjective. It does not describe next steps, so not Plan.",
+      "id": "pa-reasoning-q098"
+    },
+    {
+      "q": "A chart's medical decision making section states only \"patient has abdominal pain, will image.\" What three elements does the lesson say a complete medical decision making section must show?",
+      "choices": [
+        "The patient's insurance status, the wait time, and the room number",
+        "The chief complaint, the vital signs, and the discharge time",
+        "The number and complexity of problems considered, the data reviewed and why, and the risk of the condition and the treatment",
+        "The nurse's name, the triage category, and the arrival mode"
+      ],
+      "answer": 2,
+      "lesson": "pa-reasoning-l08",
+      "difficulty": 1,
+      "why": "The lesson states medical decision making must show the number and complexity of problems considered, the data reviewed and why, and the risk of the condition and treatment; the example note given ('abdominal pain, will image') fails all three. The other answer choices list administrative or unrelated details, not the substantive reasoning elements described.",
+      "id": "pa-reasoning-q099"
+    },
+    {
+      "q": "A consult note for a surgical evaluation lists a reason for consultation, a focused history and exam, an impression, and recommendations, but the consultant's history states the pain started 3 days ago when the primary chart says it started 3 hours ago. What should the reading clinician do?",
+      "choices": [
+        "Discard the consult note entirely and repeat the whole workup independently",
+        "Accept the consultant's version automatically, since specialists are always right",
+        "Ignore the discrepancy since consult notes do not need to be cross-checked",
+        "Notice the discrepancy, since a consultant working from a wrong premise can give a confident wrong answer, and the lesson advises checking whether their history matches yours"
+      ],
+      "answer": 3,
+      "lesson": "pa-reasoning-l08",
+      "difficulty": 2,
+      "why": "The lesson specifically warns to check whether a consultant's history matches your own, because a consultant working from a wrong premise gives a confident wrong answer; a 3-day versus 3-hour discrepancy is exactly the kind of mismatch to catch. Automatically accepting it ignores this explicit warning. Ignoring it is unsafe. Discarding the entire note and repeating everything is an overcorrection when the fix is simply reconciling the specific discrepancy.",
+      "id": "pa-reasoning-q100"
+    },
+    {
+      "q": "A technician is about to call a consultant about a patient with a surgical abdomen. Per the guidance on audience-specific presentation, what should come first in this call?",
+      "choices": [
+        "The reason for the call, stated up front, before the narrative story",
+        "The full chronological history of present illness",
+        "The patient's social history and family history",
+        "An apology for calling after hours"
+      ],
+      "answer": 0,
+      "lesson": "pa-reasoning-l09",
+      "difficulty": 1,
+      "why": "The lesson specifically states that with a consultant, the reason for the call comes first, then the story, unlike the fuller ordered structure used with a provider. Leading with the full HPI or with less relevant history (social, family) buries the actionable request. An apology is not part of the described structure and delays the actionable content.",
+      "id": "pa-reasoning-q101"
+    },
+    {
+      "q": "A patient meets all four capacity components (understand, appreciate, reason, express a consistent choice) and wants to leave against medical advice with a documented cardiac risk. What must happen for this to be handled correctly, per the lesson?",
+      "choices": [
+        "Physically prevent him from leaving since he has an abnormal ECG",
+        "Document the capacity assessment, state the specific risk in plain words, offer whatever care he will accept, and still provide prescriptions, follow-up, and return precautions",
+        "Have him sign the AMA form and consider the encounter complete with no further obligations",
+        "Call security to detain him until family arrives"
+      ],
+      "answer": 1,
+      "lesson": "pa-reasoning-l09",
+      "difficulty": 2,
+      "why": "The lesson lays out the correct AMA process explicitly: assess and document capacity, state the specific risk, offer whatever care he will accept, and still give prescriptions, follow-up, and return precautions. Physically preventing a capacitated adult from leaving violates autonomy. An AMA signature alone is explicitly called out as not a legal shield, and the encounter has further obligations (prescriptions, precautions) beyond the signature. Detaining him without medical or legal justification is not supported by the lesson.",
+      "id": "pa-reasoning-q102"
+    },
+    {
+      "q": "A 7-month-old fell approximately 2 feet from a changing table, has no loss of consciousness, no palpable skull fracture, a small frontal scalp hematoma, and is behaving normally per the parent. Applying PECARN for under age 2, how does the fall height factor in?",
+      "choices": [
+        "A frontal scalp hematoma automatically triggers the high-risk tier",
+        "Any fall from a changing table automatically qualifies as a severe mechanism regardless of height",
+        "The fall is under the 3-foot severe mechanism threshold for this age group, and a frontal scalp hematoma is not itself one of the six predictors (only non-frontal hematomas count)",
+        "PECARN does not apply to falls under age 1"
+      ],
+      "answer": 2,
+      "lesson": "pa-reasoning-l10",
+      "difficulty": 3,
+      "why": "For under age 2, severe mechanism requires a fall over 3 feet, and this fall (about 2 feet) is under that threshold; additionally, the six predictors specifically name a non-frontal scalp hematoma, not a frontal one, so this finding does not count as a predictor either. It is not automatically a severe mechanism just because it's from furniture. A frontal hematoma specifically is excluded from the predictor list, so it does not trigger high risk on its own. PECARN's under-2 algorithm applies to this age, contrary to the last option.",
+      "id": "pa-reasoning-q103"
+    },
+    {
+      "q": "A patient's Canadian Syncope Risk Score includes a raised troponin (+2) and a QTc of 495 ms (+2), with no other findings. What does this combination suggest about risk category, based on the score ranges given in the lesson?",
+      "choices": [
+        "A score of 4 automatically requires interpretation as low risk",
+        "The score remains in the lowest risk category regardless of these findings",
+        "Troponin and QTc do not contribute to this score",
+        "A score in this range moves well above the -3 to -2 low-risk band toward the higher-risk categories described"
+      ],
+      "answer": 3,
+      "lesson": "pa-reasoning-l10",
+      "difficulty": 2,
+      "why": "With a raised troponin contributing +2 and a QTc over 480 ms contributing +2 (total at least +4 from just these two items), the score moves toward the higher end described in the lesson, where 4 and above exceeds a 20% risk of a serious event within 30 days. It clearly does not remain in the lowest-risk band given these positive contributors. Troponin and QTc are explicitly listed components of this score. A score of 4 is described as high risk (over 20%), not low risk.",
+      "id": "pa-reasoning-q104"
+    },
+    {
+      "q": "A 68-year-old had a transient episode of slurred speech and facial droop lasting 45 minutes that fully resolved, with a blood pressure of 152/94 and no diabetes. Calculating ABCD2 (age 1, blood pressure 1, speech disturbance without weakness 1, duration 10 to 59 minutes 1), what score results and what does current practice say about using it alone?",
+      "choices": [
+        "A score of 4, which is moderate risk, but the lesson states current practice pushes rapid vascular imaging for essentially all TIA patients rather than relying on ABCD2 alone to decide disposition",
+        "A score of 8, which is high risk, and disposition should be based on this score exclusively",
+        "The score cannot be calculated without knowing the patient's cholesterol level",
+        "A score of 4 that excludes the need for any further workup"
+      ],
+      "answer": 0,
+      "lesson": "pa-reasoning-l10",
+      "difficulty": 3,
+      "why": "Summing age (1) + blood pressure (1) + speech disturbance without weakness (1) + duration 10-59 minutes (1) gives 4, in the moderate band; the lesson explicitly states ABCD2 is no longer used alone to decide disposition, because a low score does not exclude a critical carotid stenosis, and rapid vascular imaging is pushed for essentially all TIA patients. It is not 8, and using the score exclusively contradicts current practice as described. Cholesterol is not a component of ABCD2. A moderate score does not exclude further workup, it argues for it.",
+      "id": "pa-reasoning-q105"
+    },
+    {
+      "q": "A 33-year-old woman has right lower quadrant pain, anorexia, nausea, and right lower quadrant tenderness with rebound, giving an Alvarado score of 7. She is 10 weeks pregnant. What does the lesson's discussion of Alvarado's limitations suggest here?",
+      "choices": [
+        "A score of 7 is definitive for appendicitis in any patient regardless of sex, age, or pregnancy status",
+        "Alvarado performs worst in women of childbearing age, where gynecologic and pregnancy-related causes can imitate appendicitis, so imaging and pregnancy-specific evaluation should not be skipped despite the high score",
+        "Pregnancy makes the Alvarado score more accurate, not less",
+        "This patient's score should be recalculated excluding the tenderness criterion"
+      ],
+      "answer": 1,
+      "lesson": "pa-reasoning-l11",
+      "difficulty": 2,
+      "why": "The lesson explicitly states Alvarado performs worst in women of childbearing age, where gynecologic disease imitates appendicitis, making pregnancy-aware evaluation and imaging important even with a high score. It is not described as definitive in any patient regardless of population; the whole point of this trap is that population matters. Pregnancy is not described as improving accuracy, quite the opposite. There's no rule described about excluding a single criterion from the calculation.",
+      "id": "pa-reasoning-q106"
+    },
+    {
+      "q": "A patient with acute pancreatitis has an admission Ranson score of 2 (age over 55, glucose over 200) and is being triaged at hour one. Why can this score not yet guide the immediate disposition decision, according to the lesson?",
+      "choices": [
+        "Ranson is not validated for pancreatitis at all",
+        "The admission criteria alone are sufficient and no further data is needed",
+        "Ranson requires 48 hours of data (six additional criteria) to be completed, making it a prognostic tool rather than one useful for a first-hour decision",
+        "A score of 2 automatically indicates severe disease requiring ICU transfer"
+      ],
+      "answer": 2,
+      "lesson": "pa-reasoning-l11",
+      "difficulty": 2,
+      "why": "The lesson states plainly that Ranson cannot be completed for 48 hours (needing the six additional criteria), so it never helps the decision being made in the first hour; it is a prognostic score, not a triage tool. Saying the admission criteria alone suffice contradicts this directly. Ranson is specifically a pancreatitis severity score. A score of 2 (out of the three-or-more threshold for severe disease) does not by itself indicate severe disease or mandate ICU transfer.",
+      "id": "pa-reasoning-q107"
+    },
+    {
+      "q": "A patient's Glasgow-Blatchford score is calculated as 0, while a separate Rockall score is discussed after endoscopy identifies a clean-based ulcer. What is the key structural difference between these two scores?",
+      "choices": [
+        "Rockall is calculated before endoscopy and Glasgow-Blatchford after",
+        "Both scores require endoscopy before they can be calculated",
+        "Glasgow-Blatchford and Rockall measure the exact same variables",
+        "Glasgow-Blatchford uses no endoscopic data and works before the scope, while Rockall incorporates endoscopic findings and is therefore a post-procedure tool"
+      ],
+      "answer": 3,
+      "lesson": "pa-reasoning-l11",
+      "difficulty": 2,
+      "why": "The lesson explicitly distinguishes Glasgow-Blatchford (no endoscopic data, usable before the scope) from Rockall (includes endoscopic findings, a post-procedure tool). Glasgow-Blatchford specifically does not require endoscopy first, which is its clinical advantage. The two scores use different variable sets, not identical ones. The timing described in the last option is reversed from what the lesson states.",
+      "id": "pa-reasoning-q108"
+    },
+    {
+      "q": "A 72-year-old woman with atrial fibrillation has a CHA2DS2-VASc score of 3 (hypertension, age 65 to 74, female sex). Using the threshold described in the lesson, what is the anticoagulation recommendation?",
+      "choices": [
+        "Anticoagulate, since a score of 3 or more in a woman meets the stated threshold for treatment",
+        "Do not anticoagulate, since her score is under the threshold for women",
+        "The threshold for women is the same numeric value as for men, so she does not qualify at 3",
+        "CHA2DS2-VASc does not apply to patients over 70"
+      ],
+      "answer": 0,
+      "lesson": "pa-reasoning-l11",
+      "difficulty": 2,
+      "why": "The lesson states anticoagulation is recommended at 2 or more in men and 3 or more in women, so a woman with a score of 3 meets her threshold. Saying she does not qualify contradicts this stated cutoff. The threshold is explicitly sex-specific (2 for men, 3 for women), not identical. There's no age cutoff described that excludes patients over 70 from using this score.",
+      "id": "pa-reasoning-q109"
+    },
+    {
+      "q": "A 50-year-old with sudden, severe interscapular back pain that reached full intensity within seconds also reports his arm blood pressures differ by 30 mmHg. Applying the discriminating framework for chest/back pain, what should be the leading concern?",
+      "choices": [
+        "Mechanical strain from heavy lifting, the most likely cause listed for back pain",
+        "Aortic dissection, given the instantaneous onset and pulse/pressure asymmetry pattern from the must-not-miss category",
+        "Cauda equina syndrome, given the back pain location",
+        "A chronic mass process, given the pain intensity"
+      ],
+      "answer": 1,
+      "lesson": "pa-reasoning-l12",
+      "difficulty": 2,
+      "why": "Instantaneous onset plus unequal arm pressures matches the aortic dissection red flags described across the reasoning lessons, and sudden maximal onset specifically points toward rupture/tear/clot/torsion category diagnoses. Mechanical strain is the 'most likely' column entry for back pain generally but does not explain the pressure asymmetry or the sudden severe onset. Cauda equina involves saddle numbness and bladder findings, not described here. A chronic mass process would build over weeks, not seconds, which contradicts the onset pattern.",
+      "id": "pa-reasoning-q110"
+    },
+    {
+      "q": "A patient with sudden dizziness cannot walk unassisted, has new double vision, and slurred speech. Applying the discriminating question from the complaints lesson, what should be prioritized?",
+      "choices": [
+        "An orthostatic blood pressure check as the definitive next step",
+        "Reassurance and observation, since dizziness is usually benign positional vertigo",
+        "Evaluation for a posterior circulation stroke, since inability to walk unaided plus diplopia and dysarthria are the red flags separating central from peripheral causes",
+        "A test for anemia as the most likely explanation"
+      ],
+      "answer": 2,
+      "lesson": "pa-reasoning-l12",
+      "difficulty": 2,
+      "why": "The discriminating questions for dizziness explicitly include ability to walk unaided and the presence of double vision or slurred speech as pointing toward posterior circulation stroke, all of which are present here. Reassurance and observation would be appropriate for benign positional vertigo, but the described findings argue against that being the working assumption. An orthostatic check targets a different, less likely category (near-fainting) given these focal findings. Anemia is not suggested by this constellation of neurologic findings.",
+      "id": "pa-reasoning-q111"
+    },
+    {
+      "q": "A 45-year-old man reports one swollen leg that developed over 2 days, with mild aching, no fever, and a recent long flight. Compare this to the description of a leg that becomes tense and severely painful within hours, disproportionate to visible swelling. What is the key discriminator being tested across these two presentations?",
+      "choices": [
+        "Whether the leg is red, which distinguishes all causes definitively",
+        "The presence of any leg swelling at all, which by itself indicates DVT",
+        "Whether the patient recently flew, which is the only relevant historical detail",
+        "Speed of onset and pain out of proportion to exam findings, which shift concern toward compartment syndrome or necrotizing infection rather than simple DVT or cellulitis"
+      ],
+      "answer": 3,
+      "lesson": "pa-reasoning-l12",
+      "difficulty": 3,
+      "why": "The pattern emphasized across these lessons is that rapid onset with pain disproportionate to exam findings is the shared warning sign for catastrophic diagnoses like compartment syndrome and necrotizing infection, distinguishing them from more indolent presentations like DVT or cellulitis. Swelling alone does not indicate DVT specifically, since cellulitis and venous insufficiency also cause swelling. The flight history is relevant to DVT risk but is not the discriminator highlighted between these two specific presentations. Redness alone does not reliably distinguish these causes.",
+      "id": "pa-reasoning-q112"
+    },
+    {
+      "q": "A 26-year-old man has sore throat, drooling, cannot fully open his mouth, and speaks with a muffled \"hot potato\" voice. What must be prioritized ahead of a standard pharyngitis workup?",
+      "choices": [
+        "Airway assessment for a deep space neck infection or epiglottitis, since this combination signals an airway emergency rather than routine pharyngitis",
+        "A rapid strep test as the first step",
+        "Reassurance that this is a typical viral pharyngitis presentation",
+        "A CT of the neck before any airway evaluation is considered"
+      ],
+      "answer": 0,
+      "lesson": "pa-reasoning-l13",
+      "difficulty": 1,
+      "why": "Drooling, trismus (limited mouth opening), and a muffled voice are the specific red flags the lesson lists for an airway emergency such as epiglottitis or a deep space infection, which must be prioritized over routine testing. A rapid strep test is appropriate for viral or bacterial pharyngitis screening, not this presentation. Calling this typical viral pharyngitis ignores the described red flags. Imaging should not precede securing or assessing the airway in a patient with these findings.",
+      "id": "pa-reasoning-q113"
+    },
+    {
+      "q": "A woman at 9 weeks of pregnancy has vaginal bleeding with a rigid, tender uterus and no fetal heart tones documented previously. What must-not-miss diagnosis from the pregnancy bleeding differential fits best, and why is it distinguished from the more common threatened miscarriage?",
+      "choices": [
+        "Threatened miscarriage, because bleeding in early pregnancy is almost always benign",
+        "Placental abruption, because uterine rigidity and tenderness point toward a more severe process than the pain-free bleeding typical of threatened miscarriage",
+        "Ectopic pregnancy, because all early pregnancy bleeding is ectopic until proven otherwise regardless of exam findings",
+        "Placenta previa, because it is the most common cause of bleeding at this gestational age"
+      ],
+      "answer": 1,
+      "lesson": "pa-reasoning-l13",
+      "difficulty": 3,
+      "why": "A rigid, tender uterus with bleeding is concerning for placental abruption, distinguished from the typically pain-free or mildly crampy bleeding of a threatened miscarriage. Threatened miscarriage does not typically present with a rigid, tender uterus, so this presentation argues against that being the primary concern. Ectopic pregnancy remains on the differential for early bleeding generally, but it does not typically present with a rigid, tender uterus at 9 weeks with these findings; it is not automatically the diagnosis for all early bleeding regardless of exam. Placenta previa is a later-pregnancy diagnosis, not typically presenting this early.",
+      "id": "pa-reasoning-q114"
+    },
+    {
+      "q": "A patient presents with generalized weakness only, no chest pain, no fever, and a normal-appearing exam. The team is tempted to label this as deconditioning and discharge. What does the lesson on this specific complaint emphasize?",
+      "choices": [
+        "Weakness only needs to be evaluated if accompanied by chest pain",
+        "Generalized weakness with a normal exam can always be safely discharged as deconditioning",
+        "Generalized weakness in an older patient is one of the highest-yield complaints for hiding serious disease, including heart attack, sepsis, and gastrointestinal bleeding, and should not be dismissed as deconditioning without screening",
+        "This complaint has no established must-not-miss diagnoses"
+      ],
+      "answer": 2,
+      "lesson": "pa-reasoning-l13",
+      "difficulty": 2,
+      "why": "The lesson is explicit that generalized weakness in an older person is high-yield for hiding serious disease because typical symptoms (like chest pain or fever) are often absent in this population, which is exactly why an unremarkable exam should not lead to reflexive discharge. Automatically labeling it deconditioning contradicts this warning directly. The complaint is significant precisely because it can present without chest pain. It clearly does have must-not-miss diagnoses listed (stroke, ACS, sepsis, GI bleed, adrenal crisis).",
+      "id": "pa-reasoning-q115"
+    },
+    {
+      "q": "During a presentation, a learner opens with: \"So this patient came in, and I looked at the chart, and there was a past surgery in 2015, and then I saw the vitals...\" before ever stating the chief complaint. What is wrong with this opening compared to the one-liner standard?",
+      "choices": [
+        "The presentation is too short and needs more irrelevant detail added",
+        "Nothing is wrong; presentations can be given in any order the presenter prefers",
+        "The presentation should have started with the plan, not the history",
+        "It fails to open with the one-liner (age, sex, relevant history, complaint, duration), forcing the listener to assemble the picture out of order instead of loading the correct illness scripts immediately"
+      ],
+      "answer": 3,
+      "lesson": "pa-reasoning-l14",
+      "difficulty": 1,
+      "why": "The lesson is explicit that every presentation should open with a one-liner (age, sex, relevant history, complaint, duration) so the listener can load the right illness scripts immediately, and that reading the chart front to back out of order is specifically discouraged. Presentations do have a defined preferred order for this reason, so 'any order' is incorrect. The plan comes last in the standard sequence, not first. Adding more irrelevant detail is the opposite of the lesson's guidance to leave out what doesn't matter (like a prior appendectomy).",
+      "id": "pa-reasoning-q116"
+    },
+    {
+      "q": "In the sick diabetic case, the presenter states glucose 528, bicarbonate 9, anion gap 28, pH 7.16, with ketones present, and gives an assessment of DKA before naming the plan. What does naming the specific abnormal values (rather than just saying \"labs are abnormal, consistent with DKA\") accomplish?",
+      "choices": [
+        "It shows the specific data that led to the diagnosis, which is what distinguishes real medical decision making from a bare conclusion",
+        "It is unnecessary detail that should be omitted from a verbal presentation",
+        "It replaces the need for a plan altogether",
+        "It matters only for billing purposes, not clinical communication"
+      ],
+      "answer": 0,
+      "lesson": "pa-reasoning-l14",
+      "difficulty": 2,
+      "why": "Across the reasoning lessons, showing the specific data behind a conclusion (rather than a bare assertion) is repeatedly identified as what makes reasoning visible and defensible, whether in a note's medical decision making section or a verbal presentation. It is not unnecessary; specificity is the point. It does not replace the plan, which follows separately (fluids, potassium monitoring, delayed insulin). It is not framed as a billing consideration in this lesson, but as a communication and reasoning standard.",
+      "id": "pa-reasoning-q117"
+    },
+    {
+      "q": "A discharge note for low back pain lists: \"denies fever, weight loss, night pain, urinary retention, incontinence, saddle numbness, leg weakness, cancer history, and injection drug use.\" A colleague suggests trimming this to \"red flags negative\" to save time. What is the problem with that suggestion?",
+      "choices": [
+        "There is no problem; the two phrasings are equivalent",
+        "The specific negatives are what demonstrate the differential was actually run; a vague summary phrase does not show which red flags were actually screened",
+        "The specific negatives should instead be moved to the plan section",
+        "Specific negatives are only useful in pediatric charting, not adult back pain notes"
+      ],
+      "answer": 1,
+      "lesson": "pa-reasoning-l15",
+      "difficulty": 1,
+      "why": "The lesson's key point about this exact note is that its value is almost entirely in the documented negatives, since a note listing what was screened for and found absent shows the differential was truly run; a vague phrase like 'red flags negative' loses that evidentiary value. The two phrasings are explicitly not equivalent in the lesson's reasoning. Pertinent negatives belong in the subjective/history area (as denials), not the plan. This principle is general, not limited to pediatric notes.",
+      "id": "pa-reasoning-q118"
+    },
+    {
+      "q": "A plan section for a suspected subarachnoid hemorrhage reads only \"non-contrast head CT now.\" Based on the model note in the lesson, what specific addition would most improve this plan?",
+      "choices": [
+        "The patient's insurance authorization number",
+        "Nothing; the plan is already complete as written",
+        "A stated decision point for what happens if the CT is negative, such as discussing lumbar puncture versus CT angiography given the onset window",
+        "A note about which radiologist will read the study"
+      ],
+      "answer": 2,
+      "lesson": "pa-reasoning-l15",
+      "difficulty": 2,
+      "why": "The model headache note in the lesson explicitly extends the plan to state what happens if the CT is negative (discuss lumbar puncture versus CT angiography given the 6-hour window), which is the kind of decision-point thinking that makes a plan complete rather than a single action item. The bare CT order alone is incomplete by the lesson's own standard. Insurance authorization and the reading radiologist are administrative details not discussed as part of clinical plan quality in this lesson.",
+      "id": "pa-reasoning-q119"
+    },
+    {
+      "q": "A journal club is evaluating a trial. Before reading the conclusion, a member asks: \"Was this measured against placebo or against the current standard treatment?\" Which of the four ordered reading steps does this question address?",
+      "choices": [
+        "The absolute numbers",
+        "The population",
+        "The outcome definition",
+        "The comparator"
+      ],
+      "answer": 3,
+      "lesson": "pa-reasoning-l16",
+      "difficulty": 1,
+      "why": "This question is specifically about what the treatment was compared against, which is the comparator step, the lesson noting that 'better than placebo' and 'better than current standard' are very different claims. It is not asking who was enrolled (population), what was measured (outcome definition), or the actual numeric results (absolute numbers).",
+      "id": "pa-reasoning-q120"
+    },
+    {
+      "q": "A trial's abstract highlights a subgroup finding (\"benefit was seen primarily in patients over 75\") as its headline result. What does the lesson say this should prompt?",
+      "choices": [
+        "Caution, since subgroup findings generate hypotheses but do not establish effects",
+        "Immediate application of the drug preferentially to patients over 75 in practice",
+        "No concern, since subgroup analyses are always more reliable than the overall result",
+        "A request for the number needed to treat as the only remaining consideration"
+      ],
+      "answer": 0,
+      "lesson": "pa-reasoning-l16",
+      "difficulty": 1,
+      "why": "The lesson lists 'a subgroup finding presented as the headline' as one of four things that should slow a reader down, explaining subgroups generate hypotheses, they do not establish effects. Applying it preferentially in practice overstates the strength of subgroup evidence. Subgroup analyses are generally less reliable than the primary overall result, not more. NNT is a separate useful number but doesn't resolve the subgroup reliability concern by itself.",
+      "id": "pa-reasoning-q121"
+    },
+    {
+      "q": "A test with 90% sensitivity and 80% specificity is applied to a population with a disease prevalence of 50%, in a hypothetical cohort of 200 patients (100 with disease, 100 without). Roughly how many true positives and false positives would this produce?",
+      "choices": [
+        "About 90 true positives and about 80 false positives",
+        "About 90 true positives and about 20 false positives",
+        "About 100 true positives and about 100 false positives, since prevalence is 50%",
+        "This cannot be estimated without knowing the positive predictive value first"
+      ],
+      "answer": 1,
+      "lesson": "pa-reasoning-l16",
+      "difficulty": 3,
+      "why": "Of the 100 with disease, 90% sensitivity gives about 90 true positives. Of the 100 without disease, 80% specificity means 80 correctly test negative, leaving about 20 false positives. Saying 90 true positives with 80 false positives confuses specificity with its complement. Saying 100 and 100 ignores the sensitivity and specificity values given, just assuming prevalence alone determines the counts. The counts can be calculated directly from sensitivity, specificity, and the number with/without disease, without needing predictive value first, since predictive value is actually derived from these counts, not the other way around.",
+      "id": "pa-reasoning-q122"
+    },
+    {
+      "q": "A patient in an ethics discussion is a 17-year-old, not legally emancipated, requesting mental health treatment without parental notification. The clinician recalls that some states allow minors to consent independently to specific categories of care. What is the correct approach?",
+      "choices": [
+        "Always allow independent consent for any minor over 16 regardless of the care category or state",
+        "Always require parental consent for any care to any minor under 18",
+        "Check the specific state rule for minor consent to mental health care, since the lesson states these categories and ages vary by state and should not be assumed",
+        "Treat this identically to the sexually transmitted infection consent scenario without checking state-specific mental health rules"
+      ],
+      "answer": 2,
+      "lesson": "pa-reasoning-l17",
+      "difficulty": 2,
+      "why": "The lesson explicitly lists mental health care as one of the categories where many states allow independent minor consent but stresses that the specific ages and categories vary by state and must be checked rather than assumed. Requiring parental consent in all cases ignores the stated exceptions. Assuming independent consent for any minor over 16 in any category ignores that this varies by state and by category. Different care categories (STI care versus mental health care) may have different state rules, so they should not be assumed identical without checking.",
+      "id": "pa-reasoning-q123"
+    },
+    {
+      "q": "A patient with full decision-making capacity refuses a blood transfusion but accepts intravenous iron, tranexamic acid, and endoscopic control of bleeding. How should this be framed according to the lesson's ethics reasoning?",
+      "choices": [
+        "As requiring an automatic capacity re-evaluation every hour regardless of clinical status",
+        "As a refusal of all care, requiring an ethics consultation before anything can be done",
+        "As invalid unless her family agrees with the decision",
+        "As accepting care while refusing one specific treatment, since refusing one treatment is not refusing care, and everything she does accept should be pursued aggressively"
+      ],
+      "answer": 3,
+      "lesson": "pa-reasoning-l17",
+      "difficulty": 2,
+      "why": "The lesson states directly that refusing one treatment is not refusing care, and the correct approach is to treat aggressively with everything the patient does accept. This is not a refusal of all care, so no ethics consult is mandated by this fact pattern alone. Family agreement is not a requirement for honoring a capacitated adult's own decision. There is no described requirement for automatic hourly re-evaluation absent a clinical change; capacity is reassessed when there's reason to suspect a change, not on a fixed clock.",
+      "id": "pa-reasoning-q124"
+    },
+    {
+      "q": "A coworker who is not involved in a patient's care asks a technician for details out of personal curiosity, mentioning she knows the patient socially. What is the correct response, per the confidentiality reasoning in the ethics lesson?",
+      "choices": [
+        "Decline to share information, since access is limited to those involved in the patient's care, and curiosity is never involvement",
+        "Share basic information since coworkers are generally trusted with patient details",
+        "Share information only if the coworker promises not to tell anyone else",
+        "Share information since the coworker already knows the patient personally"
+      ],
+      "answer": 0,
+      "lesson": "pa-reasoning-l17",
+      "difficulty": 1,
+      "why": "The lesson states plainly that access is limited to those involved in the patient's care, and curiosity is never involvement, which directly answers this scenario. General coworker trust is not the standard; involvement in care is. A promise of secrecy does not create authorization to share protected information. Personal acquaintance with the patient does not grant a coworker any right to clinical information.",
+      "id": "pa-reasoning-q125"
+    },
+    {
+      "q": "A learner notices she consistently overestimates how confident she should be in her initial impressions, only to be wrong more often than expected. Which described shift from technician to clinician thinking does addressing this represent?",
+      "choices": [
+        "From following the plan to anticipating it",
+        "From being right to being calibrated, learning to match confidence level to actual accuracy",
+        "From reporting numbers to reporting meaning",
+        "From what do I do to what is going on"
+      ],
+      "answer": 1,
+      "lesson": "pa-reasoning-l18",
+      "difficulty": 2,
+      "why": "The lesson specifically describes the shift 'from being right to being calibrated' as the skill of knowing how confident to be and building the habit of checking, which matches a learner recognizing and correcting overconfidence. The other three shifts described in the lesson involve different specific behaviors (anticipating orders, adding context to reported data, and asking what a task is meant to answer), none of which directly addresses miscalibrated confidence.",
+      "id": "pa-reasoning-q126"
+    },
+    {
+      "q": "A department has just managed three consecutive cases of costochondritis. A fourth patient with similar chest wall tenderness is seen and quickly discharged without an ECG, and later returns with a confirmed myocardial infarction. Which bias combination from the workbook review section best explains this, and what specific habit would catch it?",
+      "choices": [
+        "Attribution bias, corrected only by chart review after discharge",
+        "Diagnosis momentum alone, uncorrectable by any bedside habit",
+        "Availability bias combined with search satisficing; the habit of asking whether the diagnosis explains every finding, including any that don't fit, would catch it",
+        "This scenario reflects appropriate use of pretest probability and requires no correction"
+      ],
+      "answer": 2,
+      "lesson": "pa-reasoning-l18",
+      "difficulty": 3,
+      "why": "This mirrors the lesson's influenza review almost exactly: recent similar cases (availability) plus stopping at the first plausible fit (search satisficing), corrected by explicitly asking whether the working diagnosis explains every finding, especially the one that doesn't fit (such as reproducible tenderness with a red-flag risk factor undisclosed). It is not simply diagnosis momentum, which concerns a label passed along by others, not a pattern from recent cases. It is not attribution bias, which concerns judgments based on patient identity, not recent volume. This is exactly the situation the lesson identifies as a bias-driven miss, not appropriate reasoning.",
+      "id": "pa-reasoning-q127"
+    },
+    {
+      "q": "A 44-year-old smoker presents with exertional chest pressure lasting 20 minutes and radiating to the left arm, accompanied by sweating. He has a family history of early heart disease. Using the three-ranking framework for a differential, why would acute coronary syndrome be worked up first even before confirming it is the single most statistically likely cause in this age group?",
+      "choices": [
+        "Because the most treatable diagnosis is always ranked last",
+        "Because ACS is always the most statistically likely cause in every patient with chest pain",
+        "Because musculoskeletal pain is never worked up in the emergency setting",
+        "Because must-not-miss diagnoses like ACS are excluded first regardless of whether they turn out to be the most statistically probable explanation"
+      ],
+      "answer": 3,
+      "lesson": "pa-reasoning-l04",
+      "difficulty": 2,
+      "why": "The must-not-miss ranking exists specifically because the cost of missing a dangerous diagnosis is severe, so it's excluded first at even modest probability, independent of whether it's the single most statistically common explanation for chest pain broadly. ACS is not universally the most statistically likely cause in all chest pain patients; many chest pain presentations are musculoskeletal or reflux related. Musculoskeletal pain is still considered, just not prioritized ahead of ruling out killers. Most-treatable is one of three simultaneous rankings, not ordered last by definition.",
+      "id": "pa-reasoning-q128"
+    },
+    {
+      "q": "A 70-year-old man has a moderately suspicious history (1), non-specific ECG changes (1), age over 65 (2), one risk factor (1), and a troponin between 1 and 3 times the upper limit (1), for a HEART total of 6. What is the indicated pathway?",
+      "choices": [
+        "Moderate risk, observation with repeat troponins",
+        "Low risk, discharge with outpatient follow-up",
+        "High risk, immediate cardiac catheterization without further workup",
+        "The score cannot be calculated because troponin is not exactly at the upper limit"
+      ],
+      "answer": 0,
+      "lesson": "pa-reasoning-l07",
+      "difficulty": 2,
+      "why": "Summing 1+1+2+1+1 gives 6, which falls in the 4 to 6 moderate-risk band, meaning observation with repeat troponins rather than discharge or immediate catheterization. A score of 6 is not low risk (0 to 3) and does not indicate discharge. It is not high risk (7 to 10), so it does not call for immediate catheterization without further workup. The score is fully calculable from the five graded components; troponin does not need to equal the upper limit exactly, it is scored in bands (normal, 1 to 3 times, over 3 times).",
+      "id": "pa-reasoning-q129"
+    },
+    {
+      "q": "A patient with a Wells PE score of 6 (embolism most likely diagnosis, heart rate over 100, immobilization within 4 weeks) undergoes imaging that confirms a pulmonary embolism. Why was PERC not an appropriate tool to apply to this patient in the first place?",
+      "choices": [
+        "PERC would have been appropriate and should have been used instead of imaging",
+        "PERC only applies when pretest probability is already low, and a Wells score this high reflects a pretest probability well above the roughly 15% threshold PERC requires",
+        "PERC and Wells measure the exact same thing and either could substitute for the other",
+        "PERC does not exist for pulmonary embolism and was confused with Wells"
+      ],
+      "answer": 1,
+      "lesson": "pa-reasoning-l07",
+      "difficulty": 2,
+      "why": "A Wells score of 6 places the patient in the 'likely' category (over 4), which corresponds to a pretest probability well above PERC's roughly 15% ceiling, so PERC would have been an inappropriate substitute for imaging. Using PERC instead of imaging here would have been the misuse, not the correct step. Wells estimates pretest probability using weighted clinical criteria while PERC is a rule-out tool for low pretest probability patients; they serve different roles in the same workup, not interchangeable roles. PERC is a real, well-established rule for pulmonary embolism, not a confusion with Wells.",
+      "id": "pa-reasoning-q130"
+    },
+    {
+      "q": "A clinician orders an ECG on every single patient who checks in in triage, regardless of complaint, reasoning that \"more information is always better.\" How does this practice relate to the lesson's discussion of test ordering?",
+      "choices": [
+        "It has no downside because ECGs, unlike blood tests, cannot produce false positives",
+        "It is good practice since ECGs are risk-free and add only value",
+        "It violates the principle that a test should only be ordered when a positive and a negative would change management, and it increases the risk of incidental false positives requiring further workup",
+        "It matches the lesson's explicit recommendation for universal screening ECGs"
+      ],
+      "answer": 2,
+      "lesson": "pa-reasoning-l06",
+      "difficulty": 2,
+      "why": "Universal testing without a clear management-changing question violates the lesson's core testing principle and increases incidental findings that trigger further workup, cost, and anxiety, the same logic applied to the 20-test example. ECGs are not risk-free in the sense described, since incidental nonspecific findings can trigger a costly cascade of follow-up testing. ECGs, like any test, can produce false or ambiguous positives (such as nonspecific ST changes). The lesson does not recommend universal screening; it recommends ordering only when the result would change the plan.",
+      "id": "pa-reasoning-q131"
+    },
+    {
+      "q": "A 60-year-old woman with three days of worsening shortness of breath has bilateral crackles, jugular venous distention, and a brain natriuretic peptide of 850. A colleague argues this could still be a COPD flare and orders no diuretic. Based on the case-based reasoning modeled in the lesson, what is the strongest counterargument?",
+      "choices": [
+        "Any wheeze on exam definitively rules out heart failure",
+        "COPD flares always produce an elevated BNP as part of the disease process",
+        "BNP is not useful in distinguishing these two conditions and should be disregarded",
+        "The combination of jugular venous distention, crackles, and a markedly raised BNP favors heart failure specifically, since COPD alone does not explain fluid-overload findings like JVD and a high BNP"
+      ],
+      "answer": 3,
+      "lesson": "pa-reasoning-l14",
+      "difficulty": 2,
+      "why": "As in the modeled COPD-versus-heart-failure case, findings like JVD, bilateral crackles, and a markedly elevated BNP point toward heart failure as the primary driver, since a pure COPD flare does not typically produce these systemic fluid-overload findings. COPD does not inherently raise BNP; a raised BNP in this context argues for a cardiac component. BNP is specifically useful for this distinction, not something to disregard. Wheeze can be present in heart failure as reactive bronchospasm and does not rule it out, as the modeled case explicitly notes.",
+      "id": "pa-reasoning-q132"
+    },
+    {
+      "q": "A radiology report for a patient with new neurologic symptoms states \"findings are nonspecific; clinical correlation recommended,\" and the ordering clinician documents nothing further and discharges the patient. What is the deficiency here, based on the lesson's approach to radiology language?",
+      "choices": [
+        "The clinician failed to recognize that this phrase places the diagnostic decision back on them, requiring further clinical evaluation rather than treating the report as reassuring or conclusive",
+        "There is no deficiency, since this phrase means the study was definitively normal",
+        "The phrase means a repeat study is mandatory before any other action",
+        "This phrase only applies to head CTs, not other imaging modalities"
+      ],
+      "answer": 0,
+      "lesson": "pa-reasoning-l08",
+      "difficulty": 2,
+      "why": "The lesson's table defines 'clinical correlation recommended' as meaning the image is ambiguous and the decision belongs to the treating clinician, so discharging without further evaluation misses that this phrase is a handoff of responsibility, not reassurance. It does not mean definitively normal, which is the opposite of what 'nonspecific' and 'correlation recommended' together imply. It does not automatically mandate a repeat study; it calls for clinical judgment, which could include repeat imaging or other evaluation depending on the picture. The phrase is described generally for radiology reports, not restricted to head CT.",
+      "id": "pa-reasoning-q133"
+    },
+    {
+      "q": "A febrile 3-year-old has a temperature of 39.1 C, is consolable, playful between fever spikes, drinking fluids, and has no rash, stiff neck, or bulging fontanelle. How should this be triaged relative to the red flags described for children?",
+      "choices": [
+        "Any fever over 39 C in a child under 5 mandates a full sepsis evaluation regardless of other findings",
+        "None of the listed pediatric red flags (petechiae, stiff neck, inconsolability, bulging fontanelle) are present, so this does not require the same urgency as those specific findings would trigger",
+        "The child's fontanelle status is irrelevant at this age since it has already closed",
+        "Playfulness between fever spikes should be disregarded as clinically meaningless"
+      ],
+      "answer": 1,
+      "lesson": "pa-reasoning-l05",
+      "difficulty": 2,
+      "why": "The pediatric fever table lists specific red flags (petechiae, stiff neck, inconsolability, bulging fontanelle) as triggers for meningitis concern, none of which are present here, and a 3-year-old with reassuring behavior does not match the under-28-days mandatory sepsis workup rule either. A blanket 39 C cutoff for full sepsis evaluation regardless of other findings is not how the lesson frames pediatric fever risk; appearance and specific red flags matter. At age 3 the anterior fontanelle is typically closed, but the point of checking for a bulging fontanelle applies mainly to infants, not making the general principle 'irrelevant' to interpreting red flags as a category. Playfulness between fever spikes is actually a reassuring behavioral sign the lesson would want considered, not disregarded.",
+      "id": "pa-reasoning-q134"
+    }
+  ]
+}
