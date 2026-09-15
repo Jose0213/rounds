@@ -1,0 +1,1766 @@
+{
+  "schema": 1,
+  "id": "sci-nutrition",
+  "track": "prereq",
+  "title": "The Science of Nutrition",
+  "short": "Nutrition",
+  "summary": "BIO-2080 The Science of Nutrition, a required course in the Thomas Edison State University BA in Biology plan, taught in syllabus order from evidence and digestion through the macronutrients, energy balance, vitamins, minerals, and the lifespan. Every topic is worked with real numbers and tied to the clinical picture it explains.",
+  "lessons": [
+    {
+      "id": "sci-nutrition-l01",
+      "title": "Nutrition science and reading the evidence",
+      "minutes": 7,
+      "body": "Nutrition is the study of what food does once it is inside you. The course starts with evidence rather than food, because almost every wrong belief about diet comes from a study that was read badly.\n\n## Nutrients and essentiality\n\nA **nutrient** is a chemical in food the body uses for energy, structure, or regulation. There are six classes: carbohydrate, lipid (fat), protein, vitamins, minerals, and water. The first three supply energy; the last three do not.\n\nA nutrient is **essential** when the body cannot make it fast enough to meet its own needs, so it must come from food. Essential does not mean important, it means non-negotiable in the diet. Cholesterol is important but not essential, because the liver makes all you need. Linoleic acid is essential, because no human enzyme can build it.\n\n## Energy per gram\n\nThe body harvests energy in kilocalories (kcal). The numbers are fixed and you must have them cold:\n\n- Carbohydrate `4 kcal/g`\n- Protein `4 kcal/g`\n- Fat `9 kcal/g`\n- Alcohol `7 kcal/g`\n\nFat carries more than twice the energy per gram because its carbons are more reduced, meaning they carry more hydrogens to hand to the electron transport chain.\n\nWorked example. A snack bar lists `30 g` carbohydrate, `8 g` protein, `12 g` fat.\n\n1. Carbohydrate: 30 x 4 = 120 kcal.\n2. Protein: 8 x 4 = 32 kcal.\n3. Fat: 12 x 9 = 108 kcal.\n4. Total: 120 + 32 + 108 = 260 kcal.\n5. Percent of energy from fat: 108 / 260 = 0.415, about `42%`.\n\n## Study designs in nutrition\n\n- **Case report** - one person. Generates ideas, proves nothing.\n- **Cross-sectional** - a snapshot of a population. Shows association, cannot show direction.\n- **Case-control** - start with the disease, look back at diet. Vulnerable to recall bias, since sick people remember their diets differently.\n- **Cohort** - measure diet first, follow forward for years. Gives incidence and relative risk.\n- **Randomized controlled trial (RCT)** - assign the diet by chance. The only design that supports cause.\n\nNutrition leans hard on cohorts, because you cannot randomize thousands of people to eat bacon for thirty years. That is why diet headlines outrun diet evidence.\n\n## Confounding\n\nA **confounder** is a third variable tied to both the food and the outcome. People who eat more vegetables also smoke less, exercise more, and see a doctor more often. Any of those could produce the benefit credited to the vegetables.\n\n> **Key:** Observational nutrition studies show association. Only randomized trials show causation, and size never upgrades an observational study.\n\n## How a headline goes bad\n\nA cohort reports that high processed-meat intake raises colorectal cancer risk by `18%` relative. If the baseline lifetime risk is about `4.5%`, an 18 percent relative increase moves it to roughly `5.3%`. That is an absolute rise near `0.8` percentage points, not 18. Relative risk sells papers; absolute risk tells you what it means for one person.\n\n## Dietary Reference Intakes\n\nThe **DRIs** are the reference numbers used the rest of the course. **EAR** (Estimated Average Requirement) meets the need of half the population. **RDA** (Recommended Dietary Allowance) is set about two standard deviations above the EAR, so it covers `97-98%` of healthy people. **AI** (Adequate Intake) is used when data are too thin to set an RDA. **UL** (Tolerable Upper Intake Level) is the most you can take daily without rising risk of harm.\n\n> **Trap:** The RDA is a goal for groups and a generous target for individuals. The EAR, not the RDA, is the number used to judge whether a population's intake is adequate.",
+      "keyPoints": [
+        "Six nutrient classes; carbohydrate, fat, and protein are the only energy sources, plus alcohol.",
+        "Energy density: carbohydrate and protein 4 kcal/g, fat 9 kcal/g, alcohol 7 kcal/g.",
+        "Essential means the body cannot synthesize enough, so diet must supply it.",
+        "Nutrition evidence is mostly observational, so confounding limits causal claims.",
+        "DRIs: EAR covers half a population, RDA covers 97-98 percent, UL is the safety ceiling."
+      ],
+      "checks": [
+        {
+          "q": "A food provides 20 g carbohydrate, 10 g protein, and 10 g fat. How many kilocalories does it supply?",
+          "choices": [
+            "160 kcal",
+            "210 kcal",
+            "240 kcal",
+            "360 kcal"
+          ],
+          "answer": 1,
+          "why": "20 x 4 = 80, 10 x 4 = 40, 10 x 9 = 90; total 210 kcal. 160 comes from using 4 kcal/g for fat, and 360 from using 9 kcal/g for everything."
+        },
+        {
+          "q": "Which statement about the RDA is correct?",
+          "choices": [
+            "It is the minimum intake that prevents deficiency in everyone",
+            "It is set to meet the needs of about 97-98 percent of healthy people",
+            "It is the highest safe daily intake",
+            "It is used only when data are too limited to set another value"
+          ],
+          "answer": 1,
+          "why": "The RDA sits roughly two standard deviations above the EAR, covering 97-98 percent of healthy people. The upper safe limit is the UL, and the value used when data are thin is the AI."
+        },
+        {
+          "q": "Vegetable eaters in a cohort study have less heart disease, but they also smoke less and exercise more. What is the name for this problem?",
+          "choices": [
+            "Recall bias",
+            "Selection bias",
+            "Confounding",
+            "Regression to the mean"
+          ],
+          "answer": 2,
+          "why": "A confounder is a third variable linked to both the exposure and the outcome, as smoking and exercise are here. Recall bias is about misremembering, and selection bias is about who enters the study."
+        }
+      ]
+    },
+    {
+      "id": "sci-nutrition-l02",
+      "title": "The digestive system as the nutritionist sees it",
+      "minutes": 8,
+      "body": "Food is not nutrition until it is absorbed. The digestive tract is a long tube that takes bites apart into molecules small enough to cross a cell membrane, then hands them to the blood.\n\n## Two kinds of digestion\n\n**Mechanical digestion** is physical breakdown: chewing, the churning of the stomach, and the segmentation contractions of the small intestine. It does no chemical work, but it multiplies surface area so enzymes can act faster.\n\n**Chemical digestion** is enzymatic hydrolysis, splitting bonds by inserting water. Each macronutrient has its own enzyme family, and each enzyme has a pH it likes.\n\n## The route, station by station\n\n- **Mouth** - salivary amylase starts starch. Lingual lipase starts a little fat.\n- **Stomach** - pH about `1.5-2.0`. Hydrochloric acid unfolds (denatures) protein; pepsin cuts it into shorter chains. Amylase is destroyed here. The stomach absorbs almost nothing except alcohol and some water.\n- **Small intestine** - the workhorse, about `6 m` long. The pancreas delivers bicarbonate to raise pH to roughly `7`, plus pancreatic amylase, lipase, and the protein-cutting enzymes trypsin and chymotrypsin. The liver delivers bile, which does not digest fat but emulsifies it into droplets so lipase can reach it.\n- **Large intestine** - absorbs water and some electrolytes, houses the bacteria, forms stool.\n\n## Absorption sites\n\nWhere a nutrient is absorbed matters clinically, because surgery or disease at one site knocks out one nutrient.\n\n| Segment | Mainly absorbs |\n|---|---|\n| Duodenum | Iron, calcium, most minerals, some sugars |\n| Jejunum | Sugars, amino acids, fat, most vitamins |\n| Ileum | Bile salts, vitamin B12 |\n| Colon | Water, sodium, vitamin K from bacteria |\n\nThe surface is amplified three times: folds, then finger-like **villi**, then the **microvilli** of the brush border. Together they give roughly `250 m^2` of absorbing surface.\n\n> **Key:** Vitamin B12 is absorbed only in the terminal ileum, and only when bound to intrinsic factor made by the stomach. Damage either end and B12 fails.\n\n## Where absorbed nutrients go\n\nSugars and amino acids enter capillaries and travel the **hepatic portal vein** straight to the liver, which screens them before the rest of the body sees them. Long-chain fats are different: they are packaged into **chylomicrons** and enter the lymphatic system, bypassing the liver's first pass and emptying into the bloodstream at the thoracic duct.\n\n## The microbiome\n\nThe colon holds trillions of bacteria. They ferment fiber into **short-chain fatty acids** such as butyrate, which feeds colon cells directly, and they synthesize vitamin K and some B vitamins. **Prebiotics** are the fibers that feed them; **probiotics** are live organisms swallowed on purpose.\n\n## Common malabsorption\n\n**Lactose intolerance** is loss of the brush-border enzyme lactase. Undigested lactose stays in the lumen, pulls water in osmotically, and is fermented by colon bacteria, producing gas, bloating, and watery diarrhea after dairy. It is a deficiency, not an allergy, so small doses are often tolerated.\n\n**Celiac disease** is an immune reaction to gluten from wheat, rye, and barley. The immune attack flattens the villi of the small intestine, so absorbing surface collapses and iron, folate, calcium, and fat are all lost together. Treatment is lifelong gluten avoidance.\n\n> **Trap:** Lactose intolerance and a milk allergy are different diseases. The first is a missing enzyme with gut symptoms; the second is an immune response to milk protein that can be systemic.",
+      "keyPoints": [
+        "Mechanical digestion multiplies surface area; chemical digestion is enzymatic hydrolysis.",
+        "Stomach pH near 1.5-2.0 denatures protein and activates pepsin; the pancreas raises intestinal pH to about 7.",
+        "Duodenum takes minerals, jejunum takes most nutrients, ileum takes bile salts and vitamin B12.",
+        "Sugars and amino acids go to the liver by portal vein; long-chain fats go by lymph in chylomicrons.",
+        "Lactose intolerance is a missing enzyme; celiac disease is immune villous flattening with broad malabsorption."
+      ],
+      "checks": [
+        {
+          "q": "A patient has had the terminal ileum surgically removed. Which deficiency should be anticipated?",
+          "choices": [
+            "Vitamin C",
+            "Vitamin B12",
+            "Iron",
+            "Thiamin"
+          ],
+          "answer": 1,
+          "why": "Vitamin B12 is absorbed only in the terminal ileum with intrinsic factor. Iron is taken up in the duodenum, and vitamin C and thiamin are absorbed proximally."
+        },
+        {
+          "q": "What does bile actually do to dietary fat?",
+          "choices": [
+            "Hydrolyzes triglycerides into fatty acids",
+            "Emulsifies fat into small droplets so lipase can work",
+            "Transports fat through the portal vein",
+            "Neutralizes stomach acid"
+          ],
+          "answer": 1,
+          "why": "Bile is a detergent, not an enzyme; it breaks fat into droplets to expand the surface lipase acts on. Hydrolysis is lipase's job, and acid neutralization is pancreatic bicarbonate."
+        },
+        {
+          "q": "Why does undigested lactose cause watery diarrhea?",
+          "choices": [
+            "It damages the villi directly",
+            "It triggers an immune reaction in the colon",
+            "It is osmotically active and is fermented by colonic bacteria",
+            "It blocks bile salt reabsorption"
+          ],
+          "answer": 2,
+          "why": "Lactose left in the lumen draws water in osmotically and bacteria ferment it to gas and acids. Villous damage describes celiac disease, and an immune reaction describes milk allergy."
+        }
+      ]
+    },
+    {
+      "id": "sci-nutrition-l03",
+      "title": "Carbohydrates",
+      "minutes": 8,
+      "body": "Carbohydrates are sugars and chains of sugars. They are the body's cheapest fuel and the only fuel the brain uses in quantity under ordinary conditions, at roughly `120 g` of glucose per day.\n\n## Simple and complex\n\n**Monosaccharides** are single sugars: glucose, fructose, galactose. **Disaccharides** are two joined: sucrose is glucose plus fructose, lactose is glucose plus galactose, maltose is glucose plus glucose. These are the simple carbohydrates.\n\n**Polysaccharides** are long chains, the complex carbohydrates. **Starch** is the plant storage form, in two shapes: amylose is a straight chain, amylopectin is branched and digests faster because more ends are exposed. **Glycogen** is the animal storage form, more heavily branched than amylopectin; the liver holds about `100 g` and muscle about `400 g`.\n\n## Fiber\n\n**Fiber** is plant carbohydrate that human enzymes cannot break. It still matters because the colon and its bacteria can use it.\n\n- **Soluble fiber** (oats, beans, apples, psyllium) dissolves into a gel. It slows glucose absorption and binds bile acids, forcing the liver to pull cholesterol from blood to make more, which lowers LDL.\n- **Insoluble fiber** (wheat bran, vegetable skins) does not dissolve. It adds bulk, holds water, and speeds transit.\n\nThe recommendation is `25-38 g/day`, about `14 g` per `1,000 kcal`. Typical US intake is near `15 g/day`.\n\n> **Key:** Soluble fiber lowers LDL cholesterol and blunts glucose spikes; insoluble fiber moves stool. Both are counted in the same 25-38 g target.\n\n## Glycemic index and glycemic load\n\n**Glycemic index (GI)** ranks a food by how far it raises blood glucose over two hours compared with pure glucose at `100`. It says nothing about portion. **Glycemic load (GL)** fixes that:\n\nGL = GI x grams of available carbohydrate per serving / 100\n\nWorked example. Watermelon has a GI of `72`, which sounds alarming, but one cup holds only `11 g` of carbohydrate.\n\n1. Multiply: 72 x 11 = 792.\n2. Divide by 100: GL = 7.9.\n3. Compare a bagel, GI `72` with `48 g` carbohydrate: 72 x 48 / 100 = 34.6.\n\nSame index, more than four times the load. Cutoffs: GL of `10` or less is low, `11-19` is medium, `20` or more is high.\n\n## Blood glucose regulation\n\nAfter a meal, rising glucose triggers the pancreatic beta cells to release **insulin**, which drives glucose into muscle and fat and tells the liver to store glycogen. When glucose falls, alpha cells release **glucagon**, which breaks liver glycogen down (glycogenolysis) and then builds new glucose from amino acids and glycerol (gluconeogenesis). Normal fasting glucose is `70-99 mg/dL`.\n\n## Added sugar\n\n**Added sugars** are sugars put in during processing, as opposed to those native to fruit or milk. The Dietary Guidelines cap them at less than `10%` of total kilocalories; the American Heart Association is stricter, about `25 g/day` for women and `36 g/day` for men. On a `2,000 kcal` diet the 10 percent cap is 200 kcal, which is `50 g` of sugar, roughly one 20-ounce soda.\n\n## Diabetes\n\n**Type 1 diabetes** is autoimmune destruction of beta cells, so insulin is absent and must be injected. **Type 2 diabetes** begins as **insulin resistance**: the cells stop responding, the pancreas compensates with more insulin, and eventually fails. Diagnostic cutoffs are fasting glucose `126 mg/dL` or higher, or **A1c** of `6.5%` or higher; prediabetes is fasting `100-125 mg/dL` or A1c `5.7-6.4%`.\n\n> **Trap:** Sugar does not cause type 2 diabetes directly. Excess calories, body fat, and inactivity drive insulin resistance, and sugary drinks contribute mostly by adding calories.",
+      "keyPoints": [
+        "Starch is plant storage, glycogen is animal storage; liver holds about 100 g and muscle about 400 g.",
+        "Fiber target is 25-38 g/day; soluble lowers LDL and slows glucose, insoluble adds bulk.",
+        "Glycemic load = GI x grams carbohydrate per serving / 100; low is 10 or less, high is 20 or more.",
+        "Insulin stores glucose, glucagon releases it; normal fasting glucose is 70-99 mg/dL.",
+        "Added sugar limit is less than 10 percent of kcal, which is about 50 g on a 2,000 kcal diet."
+      ],
+      "checks": [
+        {
+          "q": "A serving of pasta has a GI of 50 and provides 40 g of available carbohydrate. What is its glycemic load?",
+          "choices": [
+            "2.0",
+            "12.5",
+            "20.0",
+            "90.0"
+          ],
+          "answer": 2,
+          "why": "GL = 50 x 40 / 100 = 20, a high load. 12.5 inverts the ratio and 90 adds the numbers instead of multiplying."
+        },
+        {
+          "q": "Which mechanism explains how soluble fiber lowers LDL cholesterol?",
+          "choices": [
+            "It blocks cholesterol absorption in the ileum directly",
+            "It binds bile acids so the liver uses blood cholesterol to make more",
+            "It speeds transit so less fat is absorbed",
+            "It is fermented into cholesterol-blocking vitamins"
+          ],
+          "answer": 1,
+          "why": "Soluble fiber traps bile acids in the gel and carries them out, forcing the liver to draw cholesterol from circulation to replace them. Speeding transit is insoluble fiber's effect and does not meaningfully cut cholesterol."
+        },
+        {
+          "q": "On a 2,000 kcal diet, what is the maximum added sugar allowed by the less than 10 percent of kcal guideline?",
+          "choices": [
+            "About 25 g",
+            "About 50 g",
+            "About 100 g",
+            "About 200 g"
+          ],
+          "answer": 1,
+          "why": "Ten percent of 2,000 kcal is 200 kcal, and at 4 kcal/g that is 50 g. The 200 answer confuses kilocalories with grams."
+        }
+      ]
+    },
+    {
+      "id": "sci-nutrition-l04",
+      "title": "Lipids",
+      "minutes": 8,
+      "body": "Lipids are the molecules that will not dissolve in water. That single property explains their energy density, their need for carrier proteins in blood, and their role in every cell membrane.\n\n## Fatty acid types\n\nA **fatty acid** is a carbon chain with an acid group at one end. What matters is whether the chain has double bonds.\n\n- **Saturated** - no double bonds, straight chains that stack tightly, so solid at room temperature. Butter, beef fat, coconut oil.\n- **Monounsaturated (MUFA)** - one double bond, a kink in the chain. Olive oil, canola, avocado.\n- **Polyunsaturated (PUFA)** - two or more double bonds, more kinks, liquid even when cold. Corn, soybean, fish oils.\n- **Trans fat** - a double bond in the straight (trans) shape, usually from industrial partial hydrogenation. It behaves like a saturated fat but is worse: it raises LDL and lowers HDL at once. US manufacturers can no longer add partially hydrogenated oils.\n\nTwo fatty acids are **essential**. **Linoleic acid** is the omega-6 parent; **alpha-linolenic acid (ALA)** is the omega-3 parent. The number names the carbon where the first double bond sits counting from the methyl end. Omega-3s EPA and DHA, from fatty fish, lower triglycerides and build retinal and brain membranes.\n\nGuidelines: keep saturated fat under `10%` of total kcal (the American Heart Association says `6%` for people lowering LDL), keep trans fat as close to zero as possible, and take total fat at `20-35%` of kcal.\n\n## The three lipid forms in food and body\n\n**Triglycerides** are three fatty acids on a glycerol backbone and make up about `95%` of dietary fat and nearly all stored body fat. **Phospholipids** replace one fatty acid with a phosphate group, giving a water-loving head and water-fearing tails, which is exactly what builds a cell membrane and what makes lecithin an emulsifier. **Sterols** are four fused rings; cholesterol is the one that matters, and it is the raw material for bile acids, vitamin D, cortisol, estrogen, and testosterone.\n\n> **Key:** The liver makes roughly `800-1,000 mg` of cholesterol a day, far more than most diets supply, which is why dietary cholesterol moves blood cholesterol much less than saturated and trans fat do.\n\n## Lipoproteins\n\nFat cannot travel in plasma alone, so it rides in droplets wrapped in protein.\n\n| Particle | Made by | Carries | Job |\n|---|---|---|---|\n| Chylomicron | Intestine | Dietary triglyceride | Delivers meal fat to tissues |\n| VLDL | Liver | Liver-made triglyceride | Delivers stored fat energy |\n| LDL | From VLDL remnants | Cholesterol | Delivers cholesterol to tissues |\n| HDL | Liver and intestine | Cholesterol | Returns cholesterol to the liver |\n\nLDL is the one that infiltrates artery walls, gets oxidized, and is eaten by macrophages that become foam cells, the first visible step of **atherosclerosis**. HDL performs reverse transport, pulling cholesterol back out.\n\n## Reading a lipid panel\n\nStandard targets in mg/dL:\n\n- Total cholesterol: desirable under `200`\n- LDL: optimal under `100`, near-optimal `100-129`, high `160` or more\n- HDL: low if under `40` for men or under `50` for women, protective at `60` or more\n- Triglycerides: normal under `150`, high `200-499`\n\nWorked example using the Friedewald estimate, LDL = total - HDL - (triglycerides / 5). A panel reads total `220`, HDL `45`, triglycerides `150`.\n\n1. Triglycerides / 5 = 150 / 5 = 30.\n2. 220 - 45 = 175.\n3. 175 - 30 = 145 mg/dL LDL, which is borderline high.\n\n> **Trap:** A patient can have a normal total cholesterol with a bad panel. Total `190` with HDL `30` and LDL `140` is worse than total `210` with HDL `70` and LDL `115`.",
+      "keyPoints": [
+        "Saturated fats are straight and solid; unsaturated fats are kinked and liquid; trans fats raise LDL and lower HDL.",
+        "Linoleic acid (omega-6) and alpha-linolenic acid (omega-3) are the two essential fatty acids.",
+        "Triglycerides store energy, phospholipids build membranes, cholesterol builds bile acids and steroid hormones.",
+        "LDL delivers cholesterol to tissues and drives plaque; HDL returns it to the liver.",
+        "Targets: LDL under 100, HDL at least 40 men and 50 women, triglycerides under 150 mg/dL."
+      ],
+      "checks": [
+        {
+          "q": "A lipid panel shows total cholesterol 240, HDL 40, triglycerides 200 mg/dL. Using LDL = total - HDL - (TG/5), what is the LDL?",
+          "choices": [
+            "120 mg/dL",
+            "160 mg/dL",
+            "180 mg/dL",
+            "200 mg/dL"
+          ],
+          "answer": 1,
+          "why": "200/5 = 40; 240 - 40 - 40 = 160 mg/dL, which is high. The 200 answer forgets to subtract triglycerides and 180 uses TG/10."
+        },
+        {
+          "q": "Which lipoprotein carries cholesterol away from tissues back to the liver?",
+          "choices": [
+            "Chylomicron",
+            "VLDL",
+            "LDL",
+            "HDL"
+          ],
+          "answer": 3,
+          "why": "HDL performs reverse cholesterol transport. Chylomicrons carry meal fat outward, VLDL carries liver-made triglyceride outward, and LDL delivers cholesterol to tissue."
+        },
+        {
+          "q": "Why is trans fat considered worse than saturated fat for cardiovascular risk?",
+          "choices": [
+            "It provides more kilocalories per gram",
+            "It raises LDL and also lowers HDL",
+            "It cannot be absorbed and irritates the gut",
+            "It blocks absorption of essential fatty acids"
+          ],
+          "answer": 1,
+          "why": "Trans fat moves both sides of the panel in the wrong direction, while saturated fat mainly raises LDL. All fats supply 9 kcal/g, so energy density is not the difference."
+        }
+      ]
+    },
+    {
+      "id": "sci-nutrition-l05",
+      "title": "Proteins",
+      "minutes": 8,
+      "body": "Protein is the only macronutrient with nitrogen, and that nitrogen is what makes it structural rather than merely caloric. Enzymes, antibodies, transport carriers, hormones, and muscle are all protein.\n\n## Amino acids and essentiality\n\nThere are `20` amino acids. `9` are **essential** and must come from food: histidine, isoleucine, leucine, lysine, methionine, phenylalanine, threonine, tryptophan, valine. The other 11 the body builds from carbon skeletons plus a donated amino group, a reaction called **transamination**.\n\nSome nonessential amino acids become **conditionally essential** under stress. Glutamine in critical illness and tyrosine in phenylketonuria are the standard examples, because the pathway that makes them is overwhelmed or broken.\n\n## Protein quality\n\nA protein is **complete** when it supplies all nine essential amino acids in useful proportions. Animal proteins, soy, and quinoa are complete. Most plant proteins are **incomplete**, missing or short on one, called the **limiting amino acid**. Grains are low in lysine; legumes are low in methionine.\n\n**Complementary proteins** fix this by pairing sources whose gaps differ, such as beans with rice, or peanut butter on wheat bread. They do not need to be eaten in the same meal, only across the same day, because the body holds a free amino acid pool.\n\nThe standard quality score is **PDCAAS**, the Protein Digestibility Corrected Amino Acid Score, which multiplies the amino acid pattern by true digestibility and caps at `1.0`. Egg, milk, whey, and soy score `1.0`; beef about `0.92`; black beans about `0.75`; wheat about `0.45`.\n\n> **Key:** Quality is about the limiting amino acid and digestibility, not about whether the source is animal or plant. A varied plant diet reaches the same place with more planning.\n\n## Nitrogen balance\n\nBecause protein is the only nitrogen source, comparing nitrogen eaten with nitrogen excreted tells you whether body protein is being built or lost.\n\n1. **Positive balance** - intake exceeds losses. Growth, pregnancy, recovery, resistance training.\n2. **Neutral balance** - intake matches losses. The healthy adult.\n3. **Negative balance** - losses exceed intake. Starvation, burns, sepsis, immobility, uncontrolled illness.\n\n## How much protein\n\nThe RDA is `0.8 g/kg` of body weight per day for healthy adults. The AMDR, the acceptable range as a share of energy, is `10-35%` of kcal.\n\nWorked example for a `70 kg` adult:\n\n1. RDA: 70 x 0.8 = `56 g/day`.\n2. Endurance athlete at 1.2 g/kg: 70 x 1.2 = `84 g/day`.\n3. Strength athlete at 1.7 g/kg: 70 x 1.7 = `119 g/day`.\n4. At 4 kcal/g, 119 g is 476 kcal, about `19%` of a 2,500 kcal diet, inside the AMDR.\n\nAthlete ranges are `1.2-2.0 g/kg`. Above roughly `2.0 g/kg` there is no added muscle benefit.\n\n## Protein-energy malnutrition\n\n**Kwashiorkor** is protein deficiency with some energy still coming in. Blood protein (albumin) falls, so fluid leaks from vessels into tissue, producing the swollen belly and limbs (edema) alongside a fatty liver and skin and hair changes.\n\n**Marasmus** is deficiency of energy and protein together. There is no edema, just wasting of fat and muscle to skin and bone. Mixed presentations are common and called marasmic kwashiorkor.\n\n## Risks of very high intake\n\nExcess amino acids cannot be stored. The amino group is stripped (deamination), converted to urea by the liver, and excreted by the kidney, which increases water loss. In healthy kidneys this is tolerated; in existing kidney disease a high protein load accelerates decline. High intake also displaces fiber-rich foods and, when the protein comes largely from red and processed meat, brings saturated fat along.\n\n> **Trap:** Protein supplements do not build muscle by themselves. Without the mechanical stimulus of resistance training, surplus amino acids are burned or stored as fat.",
+      "keyPoints": [
+        "Nine essential amino acids; conditionally essential ones appear under illness or metabolic block.",
+        "Complementary plant proteins cover each other's limiting amino acid across the day, not the meal.",
+        "PDCAAS caps at 1.0; egg, milk, whey and soy reach 1.0, wheat about 0.45.",
+        "Protein RDA is 0.8 g/kg per day; athletes need 1.2-2.0 g/kg; AMDR is 10-35 percent of kcal.",
+        "Kwashiorkor brings edema from low albumin; marasmus is wasting without edema."
+      ],
+      "checks": [
+        {
+          "q": "How much protein does the RDA recommend for an 80 kg adult?",
+          "choices": [
+            "48 g/day",
+            "64 g/day",
+            "80 g/day",
+            "136 g/day"
+          ],
+          "answer": 1,
+          "why": "80 x 0.8 = 64 g/day. The 136 figure uses an athlete's 1.7 g/kg, and 80 g would be 1.0 g/kg."
+        },
+        {
+          "q": "A child has swollen limbs and abdomen, a fatty liver, and low serum albumin but has been eating starchy porridge. Which condition fits best?",
+          "choices": [
+            "Marasmus",
+            "Kwashiorkor",
+            "Celiac disease",
+            "Beriberi"
+          ],
+          "answer": 1,
+          "why": "Protein deficiency with adequate energy lowers albumin and causes edema, the picture of kwashiorkor. Marasmus is combined energy and protein deficiency with wasting and no edema."
+        },
+        {
+          "q": "Rice is low in lysine and beans are low in methionine. Eating both across a day is an example of what?",
+          "choices": [
+            "Nitrogen balance",
+            "Complementary proteins",
+            "Transamination",
+            "Conditional essentiality"
+          ],
+          "answer": 1,
+          "why": "Pairing sources whose limiting amino acids differ is complementation. Transamination is the chemical reaction that builds nonessential amino acids, not a dietary strategy."
+        }
+      ]
+    },
+    {
+      "id": "sci-nutrition-l06",
+      "title": "Energy balance and metabolism",
+      "minutes": 9,
+      "body": "Body weight changes when energy in and energy out stop matching. This lesson is mostly arithmetic, and the arithmetic is examinable.\n\n## Components of energy expenditure\n\n**Total energy expenditure (TEE)** has three parts.\n\n1. **Basal metabolic rate (BMR)** - the energy to stay alive at rest: heartbeat, breathing, ion pumps, body temperature. It is `60-75%` of TEE, and it scales with lean body mass, which is why bigger and more muscular people burn more at rest.\n2. **Thermic effect of food (TEF)** - the energy spent digesting, absorbing, and storing what you ate. About `10%` of intake. Protein is the most expensive at `20-30%` of its own energy, carbohydrate `5-10%`, fat `0-3%`.\n3. **Physical activity** - the only truly variable part, from about `15%` in a sedentary person to `30%` or more in an athlete. It includes deliberate exercise and non-exercise activity thermogenesis (NEAT), the fidgeting and moving of ordinary life.\n\n## BMR by Mifflin-St Jeor\n\nThe current standard equation, in kcal per day, using weight in kg, height in cm, age in years:\n\n- Men: BMR = 10 x weight + 6.25 x height - 5 x age + 5\n- Women: BMR = 10 x weight + 6.25 x height - 5 x age - 161\n\nWorked example, a `32`-year-old woman, `68 kg`, `165 cm`:\n\n1. 10 x 68 = 680.\n2. 6.25 x 165 = 1,031.25.\n3. 5 x 32 = 160.\n4. 680 + 1,031.25 - 160 - 161 = `1,390 kcal/day` BMR.\n\n## Activity factors\n\nMultiply BMR by an activity factor to estimate TEE:\n\n| Level | Factor |\n|---|---|\n| Sedentary, desk work | 1.2 |\n| Light, exercise 1-3 days | 1.375 |\n| Moderate, 3-5 days | 1.55 |\n| Very active, 6-7 days | 1.725 |\n| Athlete or physical job | 1.9 |\n\nContinuing the example at moderate activity: 1,390 x 1.55 = `2,155 kcal/day` to hold weight.\n\n## The 3,500 kcal rule and where it breaks\n\nA pound of stored fat tissue holds roughly `3,500 kcal`, so a deficit of `500 kcal/day` predicts about `1 lb` per week.\n\n1. Target loss 1 lb/week from 2,155 kcal maintenance.\n2. Intake = 2,155 - 500 = `1,655 kcal/day`.\n3. Over 12 weeks the rule predicts 12 lb.\n\nReality falls short, usually closer to `8-9 lb`, for three reasons. Weight loss removes lean tissue too, so BMR drops. A smaller body costs less to move, so the same walk burns fewer kcal. And metabolic adaptation reduces spontaneous movement. The rule is a starting estimate, not a physical law.\n\n> **Key:** A 500 kcal/day deficit predicts 1 lb/week, but the prediction decays as body mass and BMR fall. Expect the curve to flatten.\n\n## BMI\n\n**Body mass index** = weight in kg / (height in m)^2. In pounds and inches: BMI = 703 x weight / height^2.\n\nWorked example for the same woman, 68 kg and 1.65 m:\n\n1. 1.65^2 = 2.7225.\n2. 68 / 2.7225 = `24.98`, normal weight.\n\nCutoffs: underweight under `18.5`, normal `18.5-24.9`, overweight `25-29.9`, obesity `30` and above, with class III at `40` and above.\n\n## Body composition\n\nBMI does not know muscle from fat, so a lean athlete can be labeled overweight and an older sedentary adult with normal BMI can carry excess fat. Better tools: waist circumference, where above `40 in` in men or `35 in` in women signals central adiposity; skinfold calipers; bioelectrical impedance; and DXA as the practical gold standard. Healthy body fat runs roughly `10-22%` in men and `20-32%` in women.\n\n> **Trap:** BMI is a population screening tool. Never treat a single BMI number as a diagnosis of body fatness in one person.",
+      "keyPoints": [
+        "TEE = BMR (60-75 percent) + thermic effect of food (about 10 percent) + activity (15-30 percent).",
+        "Mifflin-St Jeor: 10 x kg + 6.25 x cm - 5 x age, then +5 for men and -161 for women.",
+        "Activity factors run 1.2 sedentary to 1.9 athlete; multiply by BMR for TEE.",
+        "3,500 kcal per pound means a 500 kcal/day deficit predicts 1 lb/week, but real loss lags as BMR falls.",
+        "BMI = kg / m^2, cutoffs 18.5, 25 and 30; it does not distinguish muscle from fat."
+      ],
+      "checks": [
+        {
+          "q": "A 40-year-old man weighs 90 kg and is 180 cm tall. What is his Mifflin-St Jeor BMR?",
+          "choices": [
+            "1,530 kcal/day",
+            "1,830 kcal/day",
+            "1,930 kcal/day",
+            "2,130 kcal/day"
+          ],
+          "answer": 1,
+          "why": "10 x 90 = 900, 6.25 x 180 = 1,125, 5 x 40 = 200; 900 + 1,125 - 200 + 5 = 1,830 kcal/day. The 1,530 answer uses the female constant incorrectly and 2,130 omits the age term."
+        },
+        {
+          "q": "A person maintains weight at 2,400 kcal/day and wants to lose 1 lb per week. What intake does the 3,500 kcal rule predict?",
+          "choices": [
+            "1,400 kcal/day",
+            "1,900 kcal/day",
+            "2,150 kcal/day",
+            "2,900 kcal/day"
+          ],
+          "answer": 1,
+          "why": "3,500 kcal over 7 days is a 500 kcal/day deficit, so 2,400 - 500 = 1,900. The 2,150 answer uses a 250 kcal deficit, which predicts half a pound weekly."
+        },
+        {
+          "q": "Which macronutrient has the highest thermic effect of food?",
+          "choices": [
+            "Carbohydrate",
+            "Fat",
+            "Protein",
+            "Alcohol"
+          ],
+          "answer": 2,
+          "why": "Protein costs 20-30 percent of its own energy to process, against 5-10 percent for carbohydrate and 0-3 percent for fat. That is why high-protein diets slightly raise total expenditure."
+        }
+      ]
+    },
+    {
+      "id": "sci-nutrition-l07",
+      "title": "Vitamins",
+      "minutes": 8,
+      "body": "Vitamins are organic compounds needed in milligram or microgram amounts. They supply no energy. Most act as **coenzymes**, the helper molecules an enzyme needs before it can work, which is why a deficiency shuts down a whole pathway rather than one reaction.\n\nThe master division is solubility, because solubility predicts storage, toxicity, and how often you must eat them.\n\n## Fat-soluble: A, D, E, K\n\nThey are absorbed with dietary fat, packaged into chylomicrons, and stored in liver and adipose tissue. Stores mean you can skip a day, and they also mean supplements can accumulate to toxic levels.\n\n**Vitamin A** (retinol, and beta-carotene from plants) builds the visual pigment rhodopsin, maintains epithelial tissue, and supports immunity. RDA `900 mcg` RAE for men and `700 mcg` for women; UL `3,000 mcg`. Deficiency causes night blindness first, then dry eye and corneal damage (xerophthalmia), the leading preventable childhood blindness worldwide. Excess causes headache, liver damage, and birth defects.\n\n**Vitamin D** (calciferol) is a hormone as much as a vitamin. Skin makes it from sunlight, and it raises calcium absorption in the gut from roughly `10-15%` to `30-40%`. RDA `600 IU` (15 mcg) for adults through age 70 and `800 IU` (20 mcg) after; UL `4,000 IU`. Deficiency softens bone: rickets in children, osteomalacia in adults. Excess raises blood calcium and calcifies soft tissue.\n\n**Vitamin E** (alpha-tocopherol) is the membrane antioxidant, protecting polyunsaturated fatty acids from oxidation. RDA `15 mg`; UL `1,000 mg`. Deficiency is rare and shows as hemolysis and nerve damage. High-dose supplements raise bleeding risk.\n\n**Vitamin K** activates the clotting factors and the bone protein osteocalcin. AI `120 mcg` for men and `90 mcg` for women. Colon bacteria make some. Deficiency causes bleeding, and newborns get an injection at birth because they have neither stores nor gut flora.\n\n> **Key:** Fat-soluble vitamins are stored, so toxicity is a real risk from supplements. Water-soluble vitamins are mostly excreted, so deficiency appears faster but toxicity is rarer.\n\n## Water-soluble: C and the B complex\n\n**Vitamin C** (ascorbic acid) is required to hydroxylate proline in collagen, which is why deficiency destroys connective tissue. It also regenerates vitamin E and converts dietary iron to the absorbable ferrous form. RDA `75 mg` for women and `90 mg` for men, plus `35 mg` more for smokers; UL `2,000 mg`. Deficiency is **scurvy**: bleeding gums, loose teeth, poor wound healing, bruising, appearing after roughly one to three months of near-zero intake.\n\nThe B vitamins run energy metabolism:\n\n| Vitamin | Role | Deficiency |\n|---|---|---|\n| B1 thiamin | Pyruvate to acetyl-CoA | Beriberi; Wernicke-Korsakoff in alcohol use |\n| B2 riboflavin | FAD in electron transport | Cracked lips, sore tongue |\n| B3 niacin | NAD in redox reactions | Pellagra: dermatitis, diarrhea, dementia |\n| B6 pyridoxine | Transamination | Neuropathy, anemia; UL 100 mg |\n| B9 folate | DNA synthesis | Megaloblastic anemia, neural tube defects |\n| B12 cobalamin | Folate recycling, myelin | Megaloblastic anemia plus nerve damage |\n\nFolate RDA is `400 mcg` DFE for adults and `600 mcg` in pregnancy. B12 RDA is `2.4 mcg` and comes only from animal foods or fortification, so strict vegans need a supplement.\n\n## Supplements and upper limits\n\nA supplement corrects a documented deficiency. In people already eating adequately, large trials of antioxidant vitamins have not reduced heart disease or cancer, and high-dose beta-carotene increased lung cancer in smokers. Every fat-soluble vitamin and several B vitamins have a UL that supplements can exceed while food alone essentially cannot.\n\n> **Trap:** High folate can correct the anemia of B12 deficiency while the nerve damage keeps progressing silently. Always confirm B12 before treating megaloblastic anemia with folate.",
+      "keyPoints": [
+        "Fat-soluble A, D, E, K are stored and can reach toxicity; water-soluble C and B are excreted.",
+        "Vitamin D RDA is 600 IU to age 70 and 800 IU after; it raises calcium absorption to 30-40 percent.",
+        "Vitamin C RDA is 75 mg women and 90 mg men; deficiency is scurvy through failed collagen.",
+        "Niacin deficiency is pellagra with dermatitis, diarrhea and dementia; thiamin deficiency is beriberi.",
+        "Folate 400 mcg adults and 600 mcg in pregnancy; folate can mask B12 deficiency's nerve damage."
+      ],
+      "checks": [
+        {
+          "q": "A patient reports bleeding gums, easy bruising, and a wound that will not close. Which vitamin deficiency fits best?",
+          "choices": [
+            "Vitamin A",
+            "Vitamin C",
+            "Vitamin K",
+            "Vitamin E"
+          ],
+          "answer": 1,
+          "why": "Vitamin C is needed to hydroxylate proline for collagen, so deficiency causes scurvy with gum bleeding and poor healing. Vitamin K deficiency bleeds from failed clotting factors rather than failed connective tissue."
+        },
+        {
+          "q": "Which vitamin is most likely to reach toxic levels from daily supplements?",
+          "choices": [
+            "Vitamin C",
+            "Folate",
+            "Vitamin D",
+            "Riboflavin"
+          ],
+          "answer": 2,
+          "why": "Vitamin D is fat-soluble and stored, with a UL of 4,000 IU; excess raises blood calcium. Vitamin C and riboflavin are water-soluble and largely excreted."
+        },
+        {
+          "q": "Why is it dangerous to treat megaloblastic anemia with folate before checking B12?",
+          "choices": [
+            "Folate blocks B12 absorption in the ileum",
+            "Folate corrects the anemia while B12 nerve damage continues",
+            "Folate raises the B12 requirement sharply",
+            "Folate causes a false-high B12 level"
+          ],
+          "answer": 1,
+          "why": "Both deficiencies produce the same large-cell anemia, so folate can normalize the blood count while demyelination progresses. Folate does not block B12 uptake or alter the assay."
+        }
+      ]
+    },
+    {
+      "id": "sci-nutrition-l08",
+      "title": "Minerals and water",
+      "minutes": 8,
+      "body": "Minerals are single elements, so heat and light cannot destroy them, though they can be lost into cooking water or blocked from absorption.\n\n**Major minerals** are needed at more than `100 mg/day`: calcium, phosphorus, magnesium, sodium, potassium, chloride, sulfur. **Trace minerals** are needed at less: iron, zinc, iodine, selenium, copper, fluoride, chromium.\n\n## Calcium and bone\n\nAbout `99%` of body calcium is in bone; the other `1%` runs nerve signaling, muscle contraction, and clotting, and blood calcium is defended so tightly that the skeleton is raided to hold it. RDA is `1,000 mg`, rising to `1,200 mg` for women over 50 and everyone over 70; UL `2,500 mg`.\n\nAbsorption needs vitamin D and reaches only about `30%`. Oxalate in spinach and phytate in grains bind calcium and cut it further, which is why spinach is a poor source despite its content. Peak bone mass is set by about age `30`; everything after slows the loss.\n\n## Iron and anemia\n\nIron sits at the center of heme in hemoglobin, carrying oxygen. RDA is `8 mg/day` for men and postmenopausal women, and `18 mg/day` for premenopausal women because of menstrual losses, rising to `27 mg` in pregnancy.\n\nTwo dietary forms behave very differently. **Heme iron**, from meat, fish, and poultry, absorbs at `15-35%` and is largely unaffected by other foods. **Nonheme iron**, from plants and fortified grains, absorbs at only `2-20%` and is highly sensitive to what is eaten with it.\n\n- **Enhancers**: vitamin C, which reduces iron to the absorbable ferrous form, and the so-called MFP factor in meat.\n- **Inhibitors**: tannins in tea and coffee, phytate in grains, calcium, and high-dose zinc.\n\nWorked example. A meal has `4 mg` nonheme iron.\n\n1. Eaten with tea, absorption near `3%`: 4 x 0.03 = 0.12 mg absorbed.\n2. Eaten with orange juice, absorption near `12%`: 4 x 0.12 = 0.48 mg absorbed.\n3. The same food delivers four times the iron based only on the drink beside it.\n\nDeficiency runs in stages: stores fall (low ferritin), then transport, then hemoglobin, producing **microcytic hypochromic anemia** with fatigue and pallor.\n\n> **Key:** Pair nonheme iron with vitamin C and keep tea, coffee, and calcium supplements away from that meal. The food choice matters less than the combination.\n\n## Sodium, potassium, and blood pressure\n\nSodium is the main extracellular cation and sets the volume of fluid outside cells; potassium is the main intracellular cation. The Dietary Guidelines cap sodium at `2,300 mg/day`, about `1 teaspoon` of salt, while typical US intake runs near `3,400 mg`. Potassium AI is `3,400 mg` for men and `2,600 mg` for women, and most people fall short.\n\nMore sodium holds more water in the vessels, raising volume and pressure; potassium promotes sodium excretion and relaxes vessel walls, pushing the other way. The DASH pattern lowers systolic pressure by roughly `8-14 mmHg` by moving both at once. About `70%` of dietary sodium comes from processed and restaurant food, not the shaker.\n\n## Iodine, zinc, magnesium\n\n**Iodine** is built into thyroid hormone. RDA `150 mcg`, `220 mcg` in pregnancy. Deficiency enlarges the thyroid (goiter) and, in pregnancy, causes irreversible intellectual disability in the child. Iodized salt solved this in most countries.\n\n**Zinc** runs more than 100 enzymes plus immunity and wound healing. RDA `11 mg` men and `8 mg` women; deficiency stunts growth and dulls taste. **Magnesium** is a cofactor for over 300 enzymes and every ATP reaction. RDA `400-420 mg` men and `310-320 mg` women.\n\n## Water and fluid balance\n\nWater is `50-70%` of body weight and is the solvent for every reaction and the body's temperature regulator. AI is about `3.7 L/day` total for men and `2.7 L/day` for women, including water in food, which supplies roughly `20%`.\n\n**Dehydration** at `1-2%` of body weight already impairs concentration and endurance; at `5%` it brings rapid pulse and weakness; near `10-15%` it is life-threatening. **Hyponatremia** is the opposite error, drinking large volumes of plain water during prolonged exercise so that blood sodium falls below `135 mEq/L`, causing confusion, seizure, and brain swelling.\n\n> **Trap:** Confusion and headache in an endurance athlete can be too much water, not too little. Sodium replacement, not more water, is the fix for exercise-associated hyponatremia.",
+      "keyPoints": [
+        "Calcium RDA 1,000 mg, rising to 1,200 mg over age 50 in women; absorption is only about 30 percent and needs vitamin D.",
+        "Iron RDA 8 mg men and 18 mg premenopausal women; heme absorbs 15-35 percent, nonheme only 2-20 percent.",
+        "Vitamin C enhances nonheme iron; tannins, phytate, and calcium inhibit it.",
+        "Sodium limit is 2,300 mg/day and potassium AI is 3,400 mg men and 2,600 mg women; DASH lowers systolic pressure 8-14 mmHg.",
+        "Water AI is 3.7 L men and 2.7 L women; hyponatremia is serum sodium below 135 mEq/L from drinking too much plain water."
+      ],
+      "checks": [
+        {
+          "q": "A premenopausal woman wants more iron from a bean and rice meal. Which change helps most?",
+          "choices": [
+            "Drink black tea with the meal",
+            "Add a calcium supplement with the meal",
+            "Add bell peppers or orange juice to the meal",
+            "Eat the meal on an empty stomach at night"
+          ],
+          "answer": 2,
+          "why": "Vitamin C reduces nonheme iron to the absorbable ferrous form and can multiply uptake several fold. Tannins in tea and calcium supplements both inhibit nonheme iron absorption."
+        },
+        {
+          "q": "A marathon runner finishes confused and headachy after drinking large volumes of plain water. Serum sodium is 128 mEq/L. What happened?",
+          "choices": [
+            "Dehydration",
+            "Hyponatremia",
+            "Hypercalcemia",
+            "Iron deficiency"
+          ],
+          "answer": 1,
+          "why": "Sodium below 135 mEq/L after heavy plain-water intake is exercise-associated hyponatremia, and giving more water worsens it. Dehydration would raise, not lower, serum sodium."
+        },
+        {
+          "q": "What is the Dietary Guidelines upper limit for sodium in healthy adults?",
+          "choices": [
+            "1,500 mg/day",
+            "2,300 mg/day",
+            "3,400 mg/day",
+            "5,000 mg/day"
+          ],
+          "answer": 1,
+          "why": "The limit is 2,300 mg/day, about one teaspoon of salt. The 1,500 figure is a stricter therapeutic target, and 3,400 mg is roughly current average US intake."
+        }
+      ]
+    },
+    {
+      "id": "sci-nutrition-l09",
+      "title": "Nutrition across the lifespan and in athletes",
+      "minutes": 8,
+      "body": "Requirements are not fixed. They shift with growth, reproduction, aging, and training, and the shifts are specific enough to memorize.\n\n## Pregnancy\n\nEnergy needs rise modestly: no extra in the first trimester, about `340 kcal/day` more in the second, and `450 kcal/day` more in the third. Protein rises to roughly `1.1 g/kg`.\n\nThree nutrients dominate.\n\n- **Folate** `600 mcg` DFE daily, and `400 mcg` supplemental before conception. The neural tube closes by day `28`, often before a pregnancy is known, which is why US grain fortification since 1998 cut neural tube defects by about `35%`.\n- **Iron** `27 mg/day`, because blood volume expands by nearly `50%`.\n- **Calcium** stays at `1,000 mg`, since absorption efficiency rises instead.\n\nRecommended total weight gain depends on prepregnancy BMI:\n\n| Prepregnancy BMI | Gain |\n|---|---|\n| Under 18.5 | 28-40 lb |\n| 18.5-24.9 | 25-35 lb |\n| 25-29.9 | 15-25 lb |\n| 30 or more | 11-20 lb |\n\nAvoid alcohol entirely, limit caffeine to about `200 mg/day`, and avoid high-mercury fish, unpasteurized dairy, and deli meats because of listeria.\n\nLactation costs more than pregnancy: about `500 kcal/day` extra and `3.1 L` of total fluid daily.\n\n> **Key:** Folate must be adequate before conception, not after a positive test. By the time pregnancy is confirmed, the neural tube has usually already closed.\n\n## Infancy and childhood\n\nInfants grow faster than at any later time, tripling birth weight by `12 months`. Human milk or formula is the sole food for about `6 months`; solids begin near `6 months`, when the infant can sit and has lost the tongue-thrust reflex. Breastfed infants need `400 IU` of vitamin D daily from the first days, and all infants need iron from about `6 months` when fetal stores run out. No cow's milk before `12 months` and no honey before `12 months` because of infant botulism.\n\nToddlers and children have high needs per kilogram and small stomachs, so nutrient-dense foods and frequent meals matter more than portion size. Adolescence brings the second growth spurt, with calcium demand peaking at `1,300 mg/day` for ages 9-18 during the years that set peak bone mass, and iron rising in girls at menarche.\n\n## Older adults\n\nEnergy needs fall because lean mass falls, but most nutrient needs hold or rise, so the diet must become more nutrient dense. Specific changes: vitamin D rises to `800 IU`, calcium to `1,200 mg`, and B12 absorption drops as stomach acid falls, so fortified foods or supplements are preferred over meat-bound B12. Appetite, taste, dentition, medications, and isolation all reduce intake. **Sarcopenia**, the age-related loss of muscle, responds to protein at roughly `1.0-1.2 g/kg` combined with resistance exercise.\n\n## Sports nutrition\n\nCarbohydrate is the limiting fuel for hard work because glycogen stores are finite. Athletes need `6-10 g/kg` per day depending on training volume.\n\n**Carbohydrate loading** raises muscle glycogen above normal before events lasting more than about `90 minutes`, by tapering training while eating `10-12 g/kg` daily for the last one to three days. During exercise beyond an hour, `30-60 g` of carbohydrate per hour maintains blood glucose.\n\nHydration, worked:\n\n1. Drink `5-7 mL/kg` in the four hours before exercise.\n2. Weigh before and after. Each `1 kg` lost is about `1 L` of sweat.\n3. Replace `1.25-1.5 L` per kg lost, since some fluid is excreted rather than retained.\n4. A 70 kg runner down `1.4 kg` replaces roughly 1.75 to 2.1 L.\n\nProtein for athletes is `1.2-2.0 g/kg` daily, and total daily intake matters far more than timing. A dose of `20-40 g` of high-quality protein after training maximizes the muscle-building response; the old idea of a `30`-minute anabolic window has not held up.\n\n**Ergogenic aids** with real evidence are short: creatine monohydrate at `3-5 g/day` for repeated high-intensity efforts, caffeine at `3-6 mg/kg` for endurance and alertness, and sodium bicarbonate for short intense bouts. Most other supplements show no effect, and the category is not reviewed for safety before sale.\n\n> **Trap:** Sports drinks are useful beyond about 60 minutes of continuous exercise or in the heat. For a 30-minute workout they are just sugar water.",
+      "keyPoints": [
+        "Pregnancy adds 340 kcal in the second trimester and 450 in the third; folate 600 mcg, iron 27 mg.",
+        "Weight gain ranges run 25-35 lb at normal BMI down to 11-20 lb with obesity.",
+        "Infants get 400 IU vitamin D, solids near 6 months, no cow's milk or honey before 12 months.",
+        "Adolescents need 1,300 mg calcium; older adults need 800 IU vitamin D, 1,200 mg calcium, and supplemental B12.",
+        "Athletes need 6-10 g/kg carbohydrate, 1.2-2.0 g/kg protein, and 30-60 g carbohydrate per hour past an hour of work."
+      ],
+      "checks": [
+        {
+          "q": "Why must folate be adequate before conception rather than after pregnancy is confirmed?",
+          "choices": [
+            "Folate is stored for only a few hours",
+            "The neural tube closes by about day 28, often before pregnancy is known",
+            "Folate absorption stops in the second trimester",
+            "Early pregnancy nausea blocks folate uptake"
+          ],
+          "answer": 1,
+          "why": "Neural tube closure is complete by roughly day 28, so supplementation started after a missed period is often too late. Folate absorption and storage are not the limiting issues."
+        },
+        {
+          "q": "A 70 kg cyclist weighs 1.2 kg less after a long ride. About how much fluid should be replaced?",
+          "choices": [
+            "0.6 to 0.8 L",
+            "1.2 L exactly",
+            "1.5 to 1.8 L",
+            "3.0 to 3.6 L"
+          ],
+          "answer": 2,
+          "why": "Replace 1.25 to 1.5 L per kg lost, so 1.2 kg calls for about 1.5 to 1.8 L. Replacing exactly 1.2 L undershoots because some fluid is excreted rather than retained."
+        },
+        {
+          "q": "Which infant feeding recommendation is correct?",
+          "choices": [
+            "Cow's milk may replace formula at 6 months",
+            "Honey is safe once solids begin",
+            "Breastfed infants need 400 IU of supplemental vitamin D daily",
+            "Solids should begin at 3 months to build iron stores"
+          ],
+          "answer": 2,
+          "why": "Human milk is low in vitamin D, so 400 IU daily is recommended from the first days. Cow's milk and honey both wait until 12 months, and solids begin near 6 months."
+        }
+      ]
+    },
+    {
+      "id": "sci-nutrition-l10",
+      "title": "Applying it: diet planning, popular diets, and disease",
+      "minutes": 9,
+      "body": "This lesson turns the science into decisions: how to plan a diet, judge a claim, and adjust nutrition in disease.\n\n## The planning tools\n\nThe **Dietary Guidelines for Americans**, revised every five years, set the pattern: half the plate vegetables and fruit, at least half of grains whole, varied protein, saturated fat under `10%` of kcal, added sugar under `10%`, sodium under `2,300 mg/day`. **MyPlate** is the visual version.\n\nThe **DRIs** supply the numbers per nutrient, and the **Nutrition Facts label** is where they meet a real package.\n\nReading a label, worked. A package lists serving size 1 cup, `2` servings per container, `250 kcal`, total fat `10 g`, sodium `600 mg`, added sugars `12 g`.\n\n1. Eating the whole container is 2 x 250 = `500 kcal`, not 250.\n2. Fat energy per serving: 10 x 9 = 90 kcal, so 90 / 250 = `36%` of calories from fat.\n3. Sodium percent daily value: 600 / 2,300 = 0.26, so `26%` DV per serving and `52%` for the container.\n4. Added sugar on a 2,000 kcal diet: 12 x 4 = 48 kcal, which is `2.4%` of the day against a 10 percent cap.\n\n> **Key:** Percent Daily Value is per serving, and `5%` or less is low while `20%` or more is high. Always multiply by servings actually eaten before judging a package.\n\n## Popular diets, appraised\n\n- **Ketogenic** - carbohydrate under about `50 g/day` shifts fuel to ketones. Effective short term and established in drug-resistant epilepsy, but restrictive and low in fiber.\n- **Intermittent fasting** - eating restricted to a window, often 8 hours. Trials show weight loss roughly equal to plain calorie restriction, because the mechanism is mostly eating less.\n- **Mediterranean** - vegetables, legumes, whole grains, fish, olive oil, little red meat. The strongest evidence of any pattern, including a randomized trial showing about `30%` fewer major cardiovascular events.\n- **Vegan** - no animal foods. Lowers LDL, but requires attention to vitamin B12, iron, zinc, calcium, vitamin D, and omega-3.\n- **Paleo** - excludes grains, legumes, and dairy. Cutting processed food helps, but the prehistoric rationale is unsupported and losing legumes and dairy costs fiber and calcium.\n\nThe pattern in the data is unglamorous: almost any diet that lowers energy intake gives similar loss at 12 months, and adherence beats composition.\n\n## Nutrition in disease\n\n- **Obesity** - a sustained deficit of `500-750 kcal/day` plus activity. A `5-10%` loss improves glucose and blood pressure even without a normal BMI.\n- **Type 2 diabetes** - consistent carbohydrate across meals, fiber, and weight loss. No single macronutrient split is required.\n- **Cardiovascular disease** - replace saturated fat with unsaturated fat rather than refined carbohydrate, raise fiber, lower sodium toward `1,500 mg`.\n- **Chronic kidney disease** - restrict sodium, and as disease advances restrict potassium, phosphorus, and protein, often near `0.6-0.8 g/kg`. This is the common case where less protein is the goal.\n- **GI disorders** - low-fiber during a flare, high-fiber for prevention in diverticular disease; gluten-free for life in celiac disease.\n- **Food allergy** - an immune reaction to a food protein, distinct from intolerance. The major allergens are milk, egg, peanut, tree nuts, soy, wheat, fish, shellfish, and sesame. Treatment is avoidance plus epinephrine for severe reactions.\n\nWhen someone cannot eat by mouth, **enteral nutrition** feeds by tube into a working gut and **parenteral nutrition** feeds into a vein when the gut cannot be used. If the gut works, use it: enteral feeding preserves the intestinal lining and carries fewer infections.\n\n## Food safety and global nutrition\n\nBacteria multiply fastest between `40 F` and `140 F`, the danger zone, and perishable food should not sit there more than `2 hours`. Cook poultry to `165 F`, ground beef to `160 F`, and whole cuts to `145 F` with a 3-minute rest.\n\nGlobally, undernutrition and overnutrition now coexist, sometimes in the same household. **Food insecurity** predicts both deficiency and obesity, because the cheapest calories are the least nutritious.\n\n> **Trap:** Weight loss diets are compared on their rules, but they succeed or fail on adherence. The best diet for a given person is the sustainable one that meets nutrient needs.",
+      "keyPoints": [
+        "Percent Daily Value is per serving; 5 percent or less is low and 20 percent or more is high.",
+        "Dietary Guidelines: saturated fat and added sugar each under 10 percent of kcal, sodium under 2,300 mg.",
+        "At 12 months most diets produce similar weight loss; adherence matters more than macronutrient split.",
+        "A 5-10 percent weight loss improves glucose and blood pressure meaningfully.",
+        "If the gut works, use it: enteral feeding is preferred over parenteral whenever possible."
+      ],
+      "checks": [
+        {
+          "q": "A label lists 300 mg sodium per serving with 3 servings per container. What percent of the 2,300 mg daily limit does the whole container supply?",
+          "choices": [
+            "About 13 percent",
+            "About 26 percent",
+            "About 39 percent",
+            "About 65 percent"
+          ],
+          "answer": 2,
+          "why": "3 x 300 = 900 mg, and 900 / 2,300 = 0.39, about 39 percent. The 13 percent answer uses only one serving."
+        },
+        {
+          "q": "Which dietary pattern has randomized trial evidence for reducing major cardiovascular events?",
+          "choices": [
+            "Paleo",
+            "Ketogenic",
+            "Mediterranean",
+            "Intermittent fasting"
+          ],
+          "answer": 2,
+          "why": "A large randomized trial of a Mediterranean pattern showed roughly 30 percent fewer major cardiovascular events. Keto and fasting have short-term weight data, and paleo has no comparable outcome trial."
+        },
+        {
+          "q": "A patient with advanced chronic kidney disease is planning meals. Which change is appropriate?",
+          "choices": [
+            "Increase protein to 1.5 g/kg to prevent muscle loss",
+            "Restrict protein toward 0.6-0.8 g/kg along with sodium, potassium, and phosphorus",
+            "Increase potassium-rich fruits to control blood pressure",
+            "Remove all fat to reduce kidney workload"
+          ],
+          "answer": 1,
+          "why": "Advanced kidney disease is the common case where protein is restricted, alongside sodium, potassium, and phosphorus. Extra potassium is dangerous when excretion is impaired, and fat is not the problem."
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "sci-nutrition-c001",
+      "front": "How many kilocalories per gram do carbohydrate, protein, fat, and alcohol supply?",
+      "back": "Carbohydrate 4 kcal/g, protein 4 kcal/g, fat 9 kcal/g, alcohol 7 kcal/g.",
+      "lesson": "sci-nutrition-l01"
+    },
+    {
+      "id": "sci-nutrition-c002",
+      "front": "What does it mean for a nutrient to be essential?",
+      "back": "The body cannot synthesize it fast enough to meet its needs, so it must be supplied by the diet. Essential means non-negotiable in food, not simply important.",
+      "lesson": "sci-nutrition-l01"
+    },
+    {
+      "id": "sci-nutrition-c003",
+      "front": "Name the six classes of nutrients and say which supply energy.",
+      "back": "Carbohydrate, lipid, protein, vitamins, minerals, water. Only carbohydrate, lipid, and protein supply energy.",
+      "lesson": "sci-nutrition-l01"
+    },
+    {
+      "id": "sci-nutrition-c004",
+      "front": "What percentage of healthy people does the RDA cover, and what is the EAR?",
+      "back": "The RDA covers 97-98 percent of healthy people. The EAR is the intake meeting the need of half the population and is the value used to judge population adequacy.",
+      "lesson": "sci-nutrition-l01"
+    },
+    {
+      "id": "sci-nutrition-c005",
+      "front": "What is the UL, and when is an AI used instead of an RDA?",
+      "back": "The UL is the highest daily intake unlikely to cause harm. An AI is used when the data are too limited to set an EAR and RDA.",
+      "lesson": "sci-nutrition-l01"
+    },
+    {
+      "id": "sci-nutrition-c006",
+      "front": "Why do randomized trials support causation when cohort studies cannot?",
+      "back": "Randomization distributes confounders, including unknown ones, evenly between groups. Cohorts only observe, so diet differences travel with lifestyle differences.",
+      "lesson": "sci-nutrition-l01"
+    },
+    {
+      "id": "sci-nutrition-c007",
+      "front": "A bar has 30 g carbohydrate, 8 g protein, and 12 g fat. How many kcal, and what percent from fat?",
+      "back": "120 + 32 + 108 = 260 kcal. Fat supplies 108 kcal, about 42 percent of the total.",
+      "lesson": "sci-nutrition-l01"
+    },
+    {
+      "id": "sci-nutrition-c008",
+      "front": "What is the difference between mechanical and chemical digestion?",
+      "back": "Mechanical digestion physically breaks food apart to increase surface area. Chemical digestion uses enzymes to hydrolyze bonds, splitting molecules by adding water.",
+      "lesson": "sci-nutrition-l02"
+    },
+    {
+      "id": "sci-nutrition-c009",
+      "front": "What is stomach pH, and what does the acid accomplish?",
+      "back": "About 1.5 to 2.0. The acid denatures protein so pepsin can cut it, and it destroys salivary amylase.",
+      "lesson": "sci-nutrition-l02"
+    },
+    {
+      "id": "sci-nutrition-c010",
+      "front": "Which segment of the gut absorbs vitamin B12, and what must accompany it?",
+      "back": "The terminal ileum, and only when bound to intrinsic factor produced by the stomach.",
+      "lesson": "sci-nutrition-l02"
+    },
+    {
+      "id": "sci-nutrition-c011",
+      "front": "What does bile do, and where is it made and stored?",
+      "back": "Bile emulsifies fat into small droplets so lipase can reach it; it is not an enzyme. It is made in the liver and stored in the gallbladder.",
+      "lesson": "sci-nutrition-l02"
+    },
+    {
+      "id": "sci-nutrition-c012",
+      "front": "How do absorbed sugars and amino acids reach the body, and how do long-chain fats differ?",
+      "back": "Sugars and amino acids travel the hepatic portal vein to the liver first. Long-chain fats leave as chylomicrons through lymph, entering blood at the thoracic duct.",
+      "lesson": "sci-nutrition-l02"
+    },
+    {
+      "id": "sci-nutrition-c013",
+      "front": "Why does lactose intolerance cause gas and watery diarrhea?",
+      "back": "Without lactase, lactose stays in the lumen, draws in water osmotically, and is fermented by colon bacteria into gas and acids.",
+      "lesson": "sci-nutrition-l02"
+    },
+    {
+      "id": "sci-nutrition-c014",
+      "front": "What does celiac disease do structurally, and what does that cause?",
+      "back": "An immune reaction to gluten flattens the intestinal villi, collapsing absorbing surface and causing combined loss of iron, folate, calcium, and fat.",
+      "lesson": "sci-nutrition-l02"
+    },
+    {
+      "id": "sci-nutrition-c015",
+      "front": "How much glycogen does the liver hold versus muscle?",
+      "back": "The liver holds about 100 g and muscle about 400 g. Liver glycogen maintains blood glucose; muscle glycogen fuels only that muscle.",
+      "lesson": "sci-nutrition-l03"
+    },
+    {
+      "id": "sci-nutrition-c016",
+      "front": "What is the daily fiber recommendation?",
+      "back": "25 to 38 g per day, roughly 14 g per 1,000 kcal. Typical US intake is only about 15 g/day.",
+      "lesson": "sci-nutrition-l03"
+    },
+    {
+      "id": "sci-nutrition-c017",
+      "front": "How do soluble and insoluble fiber differ in effect?",
+      "back": "Soluble fiber gels, slows glucose absorption, and lowers LDL by binding bile acids. Insoluble fiber adds bulk and speeds transit.",
+      "lesson": "sci-nutrition-l03"
+    },
+    {
+      "id": "sci-nutrition-c018",
+      "front": "How do you calculate glycemic load, and what are the cutoffs?",
+      "back": "GL = GI x grams of available carbohydrate per serving / 100. Low is 10 or less, medium 11 to 19, high 20 or more.",
+      "lesson": "sci-nutrition-l03"
+    },
+    {
+      "id": "sci-nutrition-c019",
+      "front": "What is the normal fasting blood glucose range?",
+      "back": "70 to 99 mg/dL. Prediabetes is 100 to 125 mg/dL, and diabetes is 126 mg/dL or higher on repeat testing.",
+      "lesson": "sci-nutrition-l03"
+    },
+    {
+      "id": "sci-nutrition-c020",
+      "front": "What A1c values define prediabetes and diabetes?",
+      "back": "Prediabetes is an A1c of 5.7 to 6.4 percent. Diabetes is 6.5 percent or higher.",
+      "lesson": "sci-nutrition-l03"
+    },
+    {
+      "id": "sci-nutrition-c021",
+      "front": "What is the added sugar limit, and what is it in grams on a 2,000 kcal diet?",
+      "back": "Less than 10 percent of total kilocalories, which is 200 kcal or about 50 g of sugar per day.",
+      "lesson": "sci-nutrition-l03"
+    },
+    {
+      "id": "sci-nutrition-c022",
+      "front": "Which two fatty acids are essential, and what families do they head?",
+      "back": "Linoleic acid heads the omega-6 family; alpha-linolenic acid heads the omega-3 family. EPA and DHA derive from the omega-3 side.",
+      "lesson": "sci-nutrition-l04"
+    },
+    {
+      "id": "sci-nutrition-c023",
+      "front": "Why is trans fat worse for the lipid panel than saturated fat?",
+      "back": "Trans fat raises LDL and lowers HDL at the same time, while saturated fat mainly raises LDL.",
+      "lesson": "sci-nutrition-l04"
+    },
+    {
+      "id": "sci-nutrition-c024",
+      "front": "What are the recommended limits for total fat and saturated fat?",
+      "back": "Total fat 20 to 35 percent of kilocalories; saturated fat under 10 percent, or 6 percent per the American Heart Association when lowering LDL.",
+      "lesson": "sci-nutrition-l04"
+    },
+    {
+      "id": "sci-nutrition-c025",
+      "front": "Roughly how much cholesterol does the liver make daily, and why does that matter?",
+      "back": "About 800 to 1,000 mg per day, more than most diets supply, which is why saturated and trans fat affect blood cholesterol more than dietary cholesterol does.",
+      "lesson": "sci-nutrition-l04"
+    },
+    {
+      "id": "sci-nutrition-c026",
+      "front": "Match each lipoprotein to its job: chylomicron, VLDL, LDL, HDL.",
+      "back": "Chylomicron carries dietary fat from the gut; VLDL carries liver-made triglyceride out; LDL delivers cholesterol to tissues; HDL returns cholesterol to the liver.",
+      "lesson": "sci-nutrition-l04"
+    },
+    {
+      "id": "sci-nutrition-c027",
+      "front": "What are the target values for LDL, HDL, and triglycerides?",
+      "back": "LDL optimal under 100 mg/dL. HDL low under 40 in men and under 50 in women, protective at 60 or more. Triglycerides normal under 150 mg/dL.",
+      "lesson": "sci-nutrition-l04"
+    },
+    {
+      "id": "sci-nutrition-c028",
+      "front": "How is LDL estimated from a lipid panel?",
+      "back": "LDL = total cholesterol - HDL - (triglycerides / 5). With total 220, HDL 45, and triglycerides 150, LDL is 145 mg/dL.",
+      "lesson": "sci-nutrition-l04"
+    },
+    {
+      "id": "sci-nutrition-c029",
+      "front": "How many amino acids are there, and how many are essential?",
+      "back": "Twenty total, nine essential: histidine, isoleucine, leucine, lysine, methionine, phenylalanine, threonine, tryptophan, valine.",
+      "lesson": "sci-nutrition-l05"
+    },
+    {
+      "id": "sci-nutrition-c030",
+      "front": "What is the protein RDA, and what does an 80 kg adult need?",
+      "back": "0.8 g/kg per day, so 80 x 0.8 = 64 g/day. The AMDR is 10 to 35 percent of kilocalories.",
+      "lesson": "sci-nutrition-l05"
+    },
+    {
+      "id": "sci-nutrition-c031",
+      "front": "How much protein do athletes need per kilogram?",
+      "back": "1.2 to 2.0 g/kg per day depending on sport and training load. Intakes above about 2.0 g/kg add no further muscle benefit.",
+      "lesson": "sci-nutrition-l05"
+    },
+    {
+      "id": "sci-nutrition-c032",
+      "front": "What is a limiting amino acid, and which is short in grains versus legumes?",
+      "back": "The essential amino acid present in the smallest relative amount, capping protein synthesis. Grains are low in lysine; legumes are low in methionine.",
+      "lesson": "sci-nutrition-l05"
+    },
+    {
+      "id": "sci-nutrition-c033",
+      "front": "What does PDCAAS measure, and what do egg and wheat score?",
+      "back": "Amino acid pattern corrected for digestibility, capped at 1.0. Egg, milk, whey, and soy score 1.0; beef about 0.92; wheat about 0.45.",
+      "lesson": "sci-nutrition-l05"
+    },
+    {
+      "id": "sci-nutrition-c034",
+      "front": "What does positive versus negative nitrogen balance indicate?",
+      "back": "Positive means intake exceeds losses: growth, pregnancy, recovery. Negative means losses exceed intake: starvation, burns, sepsis, immobility.",
+      "lesson": "sci-nutrition-l05"
+    },
+    {
+      "id": "sci-nutrition-c035",
+      "front": "How do kwashiorkor and marasmus differ?",
+      "back": "Kwashiorkor is protein deficiency with some energy intake, producing low albumin and edema. Marasmus is combined energy and protein deficiency with wasting and no edema.",
+      "lesson": "sci-nutrition-l05"
+    },
+    {
+      "id": "sci-nutrition-c036",
+      "front": "What are the three components of total energy expenditure and their shares?",
+      "back": "Basal metabolic rate 60 to 75 percent, thermic effect of food about 10 percent, physical activity 15 to 30 percent.",
+      "lesson": "sci-nutrition-l06"
+    },
+    {
+      "id": "sci-nutrition-c037",
+      "front": "State the Mifflin-St Jeor equation for men and women.",
+      "back": "BMR = 10 x kg + 6.25 x cm - 5 x age, then add 5 for men or subtract 161 for women.",
+      "lesson": "sci-nutrition-l06"
+    },
+    {
+      "id": "sci-nutrition-c038",
+      "front": "What activity factors correspond to sedentary, moderate, and athlete levels?",
+      "back": "Sedentary 1.2, light 1.375, moderate 1.55, very active 1.725, athlete or physical job 1.9. Multiply BMR by the factor for total expenditure.",
+      "lesson": "sci-nutrition-l06"
+    },
+    {
+      "id": "sci-nutrition-c039",
+      "front": "Which macronutrient has the largest thermic effect of food, and by how much?",
+      "back": "Protein, costing 20 to 30 percent of its own energy. Carbohydrate costs 5 to 10 percent and fat 0 to 3 percent.",
+      "lesson": "sci-nutrition-l06"
+    },
+    {
+      "id": "sci-nutrition-c040",
+      "front": "How many kilocalories are in a pound of body fat, and what daily deficit loses one pound a week?",
+      "back": "About 3,500 kcal, so a deficit of 500 kcal/day predicts roughly 1 lb per week.",
+      "lesson": "sci-nutrition-l06"
+    },
+    {
+      "id": "sci-nutrition-c041",
+      "front": "How is BMI calculated, and what are the cutoffs?",
+      "back": "BMI = kg / m^2, or 703 x lb / in^2. Underweight under 18.5, normal 18.5 to 24.9, overweight 25 to 29.9, obesity 30 or more.",
+      "lesson": "sci-nutrition-l06"
+    },
+    {
+      "id": "sci-nutrition-c042",
+      "front": "What waist circumference indicates central adiposity?",
+      "back": "More than 40 inches in men and more than 35 inches in women. Healthy body fat is roughly 10-22 percent in men and 20-32 percent in women.",
+      "lesson": "sci-nutrition-l06"
+    },
+    {
+      "id": "sci-nutrition-c043",
+      "front": "What is the vitamin D RDA, and what does vitamin D do for calcium?",
+      "back": "600 IU (15 mcg) through age 70 and 800 IU (20 mcg) after, with a UL of 4,000 IU. It raises calcium absorption from 10-15 percent to 30-40 percent.",
+      "lesson": "sci-nutrition-l07"
+    },
+    {
+      "id": "sci-nutrition-c044",
+      "front": "What are the vitamin D deficiency diseases in children and adults?",
+      "back": "Rickets in children and osteomalacia in adults, both softening of bone from impaired calcium deposition.",
+      "lesson": "sci-nutrition-l07"
+    },
+    {
+      "id": "sci-nutrition-c045",
+      "front": "What is the vitamin C RDA, and what deficiency disease results?",
+      "back": "75 mg for women and 90 mg for men, plus 35 mg more for smokers. Deficiency is scurvy: bleeding gums, bruising, and poor wound healing.",
+      "lesson": "sci-nutrition-l07"
+    },
+    {
+      "id": "sci-nutrition-c046",
+      "front": "Why does vitamin C deficiency damage connective tissue specifically?",
+      "back": "Vitamin C is required to hydroxylate proline in collagen synthesis. Without it collagen is weak, so gums, vessels, and wounds fail.",
+      "lesson": "sci-nutrition-l07"
+    },
+    {
+      "id": "sci-nutrition-c047",
+      "front": "Name the three D's of pellagra and the vitamin involved.",
+      "back": "Dermatitis, diarrhea, dementia, from niacin (vitamin B3) deficiency.",
+      "lesson": "sci-nutrition-l07"
+    },
+    {
+      "id": "sci-nutrition-c048",
+      "front": "Why can folate mask vitamin B12 deficiency?",
+      "back": "Both cause the same megaloblastic anemia, so folate can normalize the blood count while B12-related nerve demyelination silently progresses.",
+      "lesson": "sci-nutrition-l07"
+    },
+    {
+      "id": "sci-nutrition-c049",
+      "front": "What is the vitamin B12 RDA and its only natural food source?",
+      "back": "2.4 mcg per day, found naturally only in animal foods or fortified products, so strict vegans require a supplement.",
+      "lesson": "sci-nutrition-l07"
+    },
+    {
+      "id": "sci-nutrition-c050",
+      "front": "What is the calcium RDA for adults, and when does it rise?",
+      "back": "1,000 mg per day, rising to 1,200 mg for women over 50 and everyone over 70. The UL is 2,500 mg.",
+      "lesson": "sci-nutrition-l08"
+    },
+    {
+      "id": "sci-nutrition-c051",
+      "front": "What is the iron RDA for men and for premenopausal women, and why do they differ?",
+      "back": "8 mg/day for men and postmenopausal women, 18 mg/day for premenopausal women because of menstrual blood loss, and 27 mg in pregnancy.",
+      "lesson": "sci-nutrition-l08"
+    },
+    {
+      "id": "sci-nutrition-c052",
+      "front": "How do heme and nonheme iron differ in absorption?",
+      "back": "Heme iron from meat, fish, and poultry absorbs at 15 to 35 percent and resists interference. Nonheme iron from plants absorbs at only 2 to 20 percent and is easily blocked.",
+      "lesson": "sci-nutrition-l08"
+    },
+    {
+      "id": "sci-nutrition-c053",
+      "front": "Name two enhancers and three inhibitors of nonheme iron absorption.",
+      "back": "Enhancers: vitamin C and the MFP factor in meat. Inhibitors: tannins in tea and coffee, phytate in grains, and calcium.",
+      "lesson": "sci-nutrition-l08"
+    },
+    {
+      "id": "sci-nutrition-c054",
+      "front": "What is the sodium limit, and what is the potassium AI?",
+      "back": "Sodium under 2,300 mg/day, about one teaspoon of salt. Potassium AI is 3,400 mg for men and 2,600 mg for women.",
+      "lesson": "sci-nutrition-l08"
+    },
+    {
+      "id": "sci-nutrition-c055",
+      "front": "What is the total water AI for adults, and how much comes from food?",
+      "back": "About 3.7 L/day for men and 2.7 L/day for women, including roughly 20 percent from food.",
+      "lesson": "sci-nutrition-l08"
+    },
+    {
+      "id": "sci-nutrition-c056",
+      "front": "What serum sodium defines hyponatremia, and how does it happen in athletes?",
+      "back": "Below 135 mEq/L. Prolonged exercise with large volumes of plain water dilutes sodium, causing confusion, seizure, and brain swelling.",
+      "lesson": "sci-nutrition-l08"
+    },
+    {
+      "id": "sci-nutrition-c057",
+      "front": "How many extra kilocalories does each trimester of pregnancy require?",
+      "back": "No increase in the first trimester, about 340 kcal/day more in the second, and 450 kcal/day more in the third. Lactation adds about 500 kcal/day.",
+      "lesson": "sci-nutrition-l09"
+    },
+    {
+      "id": "sci-nutrition-c058",
+      "front": "What are the folate and iron recommendations in pregnancy?",
+      "back": "Folate 600 mcg DFE daily, with 400 mcg supplemental before conception. Iron rises to 27 mg/day because blood volume expands by nearly 50 percent.",
+      "lesson": "sci-nutrition-l09"
+    },
+    {
+      "id": "sci-nutrition-c059",
+      "front": "What are the recommended pregnancy weight gain ranges by prepregnancy BMI?",
+      "back": "Underweight 28-40 lb, normal 25-35 lb, overweight 15-25 lb, obesity 11-20 lb.",
+      "lesson": "sci-nutrition-l09"
+    },
+    {
+      "id": "sci-nutrition-c060",
+      "front": "What is the calcium recommendation for ages 9 to 18, and why is it the highest of any age?",
+      "back": "1,300 mg/day, because adolescence is when peak bone mass is being laid down, and peak mass is reached by about age 30.",
+      "lesson": "sci-nutrition-l09"
+    },
+    {
+      "id": "sci-nutrition-c061",
+      "front": "How much carbohydrate do athletes need daily, and how much during long exercise?",
+      "back": "6 to 10 g/kg per day depending on training load, and 30 to 60 g per hour during exercise lasting beyond an hour.",
+      "lesson": "sci-nutrition-l09"
+    },
+    {
+      "id": "sci-nutrition-c062",
+      "front": "How is carbohydrate loading done, and for what events?",
+      "back": "Taper training while eating 10 to 12 g/kg daily for one to three days, for events lasting more than about 90 minutes.",
+      "lesson": "sci-nutrition-l09"
+    },
+    {
+      "id": "sci-nutrition-c063",
+      "front": "How much fluid should be replaced per kilogram of body weight lost in exercise?",
+      "back": "1.25 to 1.5 L per kg lost, since some fluid is excreted rather than retained. Drink 5 to 7 mL/kg in the four hours before exercise.",
+      "lesson": "sci-nutrition-l09"
+    },
+    {
+      "id": "sci-nutrition-c064",
+      "front": "On a Nutrition Facts label, what percent Daily Value counts as low and what counts as high?",
+      "back": "5 percent or less is low and 20 percent or more is high. The value is per serving, so multiply by servings actually eaten.",
+      "lesson": "sci-nutrition-l10"
+    },
+    {
+      "id": "sci-nutrition-c065",
+      "front": "A serving has 600 mg sodium. What percent of the daily limit is that, and what if you eat two servings?",
+      "back": "600 / 2,300 = 26 percent per serving, so two servings supply about 52 percent of the 2,300 mg daily limit.",
+      "lesson": "sci-nutrition-l10"
+    },
+    {
+      "id": "sci-nutrition-c066",
+      "front": "What are the main quantitative targets of the Dietary Guidelines for Americans?",
+      "back": "Saturated fat under 10 percent of kcal, added sugar under 10 percent of kcal, sodium under 2,300 mg/day, half the plate fruits and vegetables, half of grains whole.",
+      "lesson": "sci-nutrition-l10"
+    },
+    {
+      "id": "sci-nutrition-c067",
+      "front": "Which dietary pattern has the strongest outcome evidence, and what did the trial show?",
+      "back": "The Mediterranean pattern, with a randomized trial showing roughly 30 percent fewer major cardiovascular events.",
+      "lesson": "sci-nutrition-l10"
+    },
+    {
+      "id": "sci-nutrition-c068",
+      "front": "What weight loss percentage is clinically meaningful, and what deficit is recommended?",
+      "back": "5 to 10 percent of body weight improves glucose and blood pressure. A deficit of 500 to 750 kcal/day is the usual target.",
+      "lesson": "sci-nutrition-l10"
+    },
+    {
+      "id": "sci-nutrition-c069",
+      "front": "What is the protein recommendation in advanced chronic kidney disease?",
+      "back": "About 0.6 to 0.8 g/kg per day, with sodium, potassium, and phosphorus also restricted. This is the common case where less protein is the goal.",
+      "lesson": "sci-nutrition-l10"
+    },
+    {
+      "id": "sci-nutrition-c070",
+      "front": "How does a food allergy differ from a food intolerance?",
+      "back": "An allergy is an immune reaction to a food protein and can be systemic, treated with avoidance and epinephrine. An intolerance is a digestive failure, such as missing lactase.",
+      "lesson": "sci-nutrition-l10"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "sci-nutrition-q001",
+      "q": "A meal supplies 60 g carbohydrate, 25 g protein, and 20 g fat. What is its total energy content?",
+      "choices": [
+        "520 kcal",
+        "420 kcal",
+        "340 kcal",
+        "945 kcal"
+      ],
+      "answer": 0,
+      "why": "60 x 4 = 240, 25 x 4 = 100, 20 x 9 = 180, total 520 kcal. 420 comes from using 4 kcal/g for fat, 340 from omitting fat entirely, and 945 from using 9 kcal/g throughout.",
+      "lesson": "sci-nutrition-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-nutrition-q002",
+      "q": "Why can a very large observational nutrition study still fail to establish that a food causes a disease?",
+      "choices": [
+        "Observational studies cannot measure incidence",
+        "Confounding variables travel with dietary habits and are not randomized away",
+        "Large samples increase random error",
+        "Food frequency questionnaires measure nutrients too precisely"
+      ],
+      "answer": 1,
+      "why": "Only randomization balances unmeasured confounders, so an observational design shows association regardless of size. Larger samples reduce random error rather than increase it, and cohorts do measure incidence.",
+      "lesson": "sci-nutrition-l01",
+      "difficulty": 2
+    },
+    {
+      "q": "Which term describes an intake level that meets the requirement of half the individuals in a population?",
+      "choices": [
+        "RDA",
+        "AI",
+        "EAR",
+        "UL"
+      ],
+      "answer": 2,
+      "why": "The EAR is the median requirement and is the value used to assess population adequacy. The RDA sits about two standard deviations higher, the AI is used when data are thin, and the UL is the safety ceiling.",
+      "lesson": "sci-nutrition-l01",
+      "difficulty": 1,
+      "id": "sci-nutrition-q003"
+    },
+    {
+      "id": "sci-nutrition-q004",
+      "q": "A patient has had a gastrectomy removing the acid-producing portion of the stomach. Which absorption problem is most likely?",
+      "choices": [
+        "Vitamin C deficiency from lost acid",
+        "Folate deficiency from lost pepsin",
+        "Fat malabsorption from lost bile",
+        "Vitamin B12 deficiency from lost intrinsic factor"
+      ],
+      "answer": 3,
+      "why": "Intrinsic factor is made by stomach parietal cells and is required for B12 uptake in the ileum. Bile comes from the liver, and folate does not depend on pepsin.",
+      "lesson": "sci-nutrition-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-nutrition-q005",
+      "q": "Which route do long-chain dietary fats take out of the intestine?",
+      "choices": [
+        "Lymphatic system as chylomicrons",
+        "Hepatic portal vein directly to the liver",
+        "Gastric veins to the spleen",
+        "Bile duct back to the gallbladder"
+      ],
+      "answer": 0,
+      "why": "Long-chain fats are packaged into chylomicrons and enter lymph, joining blood at the thoracic duct and bypassing the liver's first pass. Sugars and amino acids use the portal vein.",
+      "lesson": "sci-nutrition-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-nutrition-q006",
+      "q": "A woman reports bloating and watery stools 90 minutes after ice cream but tolerates hard cheese and yogurt. What is the most likely explanation?",
+      "choices": [
+        "Milk protein allergy",
+        "Lactase deficiency",
+        "Celiac disease",
+        "Bile acid malabsorption"
+      ],
+      "answer": 1,
+      "why": "Dose-dependent gut symptoms that spare low-lactose dairy point to lactase deficiency. A milk allergy is immune and would not track with lactose content, and celiac disease responds to gluten, not dairy.",
+      "lesson": "sci-nutrition-l02",
+      "difficulty": 2
+    },
+    {
+      "q": "Which structure gives the small intestine its enormous absorbing surface?",
+      "choices": [
+        "Rugae of the stomach wall",
+        "Haustra of the colon",
+        "Circular folds, villi, and microvilli",
+        "Pancreatic acini"
+      ],
+      "answer": 2,
+      "why": "Three levels of folding produce roughly 250 square meters of surface. Rugae are gastric folds, haustra are colonic pouches, and acini are pancreatic secretory units.",
+      "lesson": "sci-nutrition-l02",
+      "difficulty": 1,
+      "id": "sci-nutrition-q007"
+    },
+    {
+      "id": "sci-nutrition-q008",
+      "q": "A cereal has a glycemic index of 80 and supplies 25 g of available carbohydrate per serving. What is the glycemic load?",
+      "choices": [
+        "3.1",
+        "105",
+        "32",
+        "20"
+      ],
+      "answer": 3,
+      "why": "GL = 80 x 25 / 100 = 20, a high load. 3.1 inverts the ratio and 105 adds the two numbers instead of multiplying.",
+      "lesson": "sci-nutrition-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-nutrition-q009",
+      "q": "Which fiber type is most useful for lowering LDL cholesterol?",
+      "choices": [
+        "Soluble fiber such as oat beta-glucan and psyllium",
+        "Insoluble fiber such as wheat bran",
+        "Resistant starch from cooled potatoes only",
+        "Cellulose from vegetable skins"
+      ],
+      "answer": 0,
+      "why": "Soluble fiber gels and binds bile acids, forcing the liver to draw blood cholesterol to replace them. Insoluble fiber and cellulose add bulk and speed transit but do not meaningfully cut LDL.",
+      "lesson": "sci-nutrition-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-nutrition-q010",
+      "q": "A fasting glucose of 112 mg/dL with an A1c of 6.0 percent places a patient in which category?",
+      "choices": [
+        "Normal",
+        "Prediabetes",
+        "Type 2 diabetes",
+        "Type 1 diabetes"
+      ],
+      "answer": 1,
+      "why": "Fasting 100-125 mg/dL and A1c 5.7-6.4 percent both define prediabetes. Diabetes requires fasting 126 or A1c 6.5 percent or higher, and neither value is normal.",
+      "lesson": "sci-nutrition-l03",
+      "difficulty": 2
+    },
+    {
+      "q": "Which hormone raises blood glucose through glycogenolysis and gluconeogenesis?",
+      "choices": [
+        "Insulin",
+        "Amylin",
+        "Glucagon",
+        "Somatostatin"
+      ],
+      "answer": 2,
+      "why": "Glucagon from pancreatic alpha cells breaks down liver glycogen and then builds new glucose. Insulin does the opposite by moving glucose into cells, and amylin and somatostatin slow rather than raise glucose delivery.",
+      "lesson": "sci-nutrition-l03",
+      "difficulty": 1,
+      "id": "sci-nutrition-q011"
+    },
+    {
+      "id": "sci-nutrition-q012",
+      "q": "A lipid panel reads total cholesterol 200, HDL 50, triglycerides 100 mg/dL. What is the estimated LDL?",
+      "choices": [
+        "150 mg/dL",
+        "140 mg/dL",
+        "120 mg/dL",
+        "130 mg/dL"
+      ],
+      "answer": 3,
+      "why": "100/5 = 20; 200 - 50 - 20 = 130 mg/dL. The 150 answer skips the triglyceride term and 120 uses TG/4.",
+      "lesson": "sci-nutrition-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-nutrition-q013",
+      "q": "Why does dietary cholesterol move blood cholesterol less than saturated fat does?",
+      "choices": [
+        "The liver already makes 800-1,000 mg daily and adjusts output",
+        "Dietary cholesterol is not absorbed at all",
+        "Cholesterol is destroyed by stomach acid",
+        "Cholesterol is stored only in bile"
+      ],
+      "answer": 0,
+      "why": "Endogenous synthesis dwarfs typical intake and is downregulated when intake rises. Dietary cholesterol is absorbed, just partially, and it is not destroyed by acid.",
+      "lesson": "sci-nutrition-l04",
+      "difficulty": 3
+    },
+    {
+      "q": "Which fatty acid is the essential omega-3 parent compound?",
+      "choices": [
+        "Linoleic acid",
+        "Alpha-linolenic acid",
+        "Oleic acid",
+        "Palmitic acid"
+      ],
+      "answer": 1,
+      "why": "Alpha-linolenic acid heads the omega-3 family and yields EPA and DHA. Linoleic acid is the essential omega-6, oleic is a nonessential monounsaturate, and palmitic is saturated.",
+      "lesson": "sci-nutrition-l04",
+      "difficulty": 1,
+      "id": "sci-nutrition-q014"
+    },
+    {
+      "q": "Which lipoprotein is formed by the intestine to carry newly absorbed dietary triglyceride?",
+      "choices": [
+        "LDL",
+        "VLDL",
+        "Chylomicron",
+        "HDL"
+      ],
+      "answer": 2,
+      "why": "Chylomicrons are assembled in intestinal cells from meal fat and travel by lymph. VLDL carries liver-made triglyceride, LDL delivers cholesterol outward, and HDL returns it to the liver.",
+      "lesson": "sci-nutrition-l04",
+      "difficulty": 1,
+      "id": "sci-nutrition-q015"
+    },
+    {
+      "id": "sci-nutrition-q016",
+      "q": "A 65 kg endurance athlete trains daily. Using 1.4 g/kg, what is the daily protein target?",
+      "choices": [
+        "52 g",
+        "78 g",
+        "110 g",
+        "91 g"
+      ],
+      "answer": 3,
+      "why": "65 x 1.4 = 91 g/day. 52 g uses the 0.8 g/kg RDA, and 110 g corresponds to about 1.7 g/kg, a strength-training level.",
+      "lesson": "sci-nutrition-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-nutrition-q017",
+      "q": "A burn patient excretes far more nitrogen than she consumes. What state is this, and what does it mean?",
+      "choices": [
+        "Negative nitrogen balance, indicating net body protein loss",
+        "Neutral nitrogen balance, indicating stable protein mass",
+        "Nitrogen saturation, indicating excess intake",
+        "Positive nitrogen balance, indicating tissue growth"
+      ],
+      "answer": 0,
+      "why": "Excretion exceeding intake is negative balance, typical of burns, sepsis, and starvation, and it means body protein is being broken down. Positive balance is growth or recovery.",
+      "lesson": "sci-nutrition-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-nutrition-q018",
+      "q": "Which amino acid classification applies to tyrosine in a patient with phenylketonuria?",
+      "choices": [
+        "Essential in all people",
+        "Conditionally essential because the pathway making it is blocked",
+        "Nonessential under all circumstances",
+        "Not an amino acid used in protein synthesis"
+      ],
+      "answer": 1,
+      "why": "Tyrosine is normally made from phenylalanine, but that conversion fails in phenylketonuria, so it becomes conditionally essential. It is a standard protein amino acid, not a nonprotein one.",
+      "lesson": "sci-nutrition-l05",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-nutrition-q019",
+      "q": "A 45-year-old man weighs 80 kg and is 175 cm tall. What is his Mifflin-St Jeor BMR?",
+      "choices": [
+        "1,514 kcal/day",
+        "1,680 kcal/day",
+        "1,694 kcal/day",
+        "1,880 kcal/day"
+      ],
+      "answer": 2,
+      "why": "10 x 80 = 800, 6.25 x 175 = 1,093.75, 5 x 45 = 225; 800 + 1,093.75 - 225 + 5 = about 1,694 kcal/day. The 1,514 figure applies the female constant and 1,880 omits the age term.",
+      "lesson": "sci-nutrition-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-nutrition-q020",
+      "q": "A woman with a BMR of 1,400 kcal/day exercises moderately 4 days a week. What is her approximate total energy expenditure?",
+      "choices": [
+        "1,680 kcal/day",
+        "1,925 kcal/day",
+        "2,660 kcal/day",
+        "2,170 kcal/day"
+      ],
+      "answer": 3,
+      "why": "Moderate activity uses a factor of 1.55, so 1,400 x 1.55 = 2,170 kcal/day. The 1,680 answer uses the sedentary 1.2 factor and 2,660 uses the athlete 1.9 factor.",
+      "lesson": "sci-nutrition-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-nutrition-q021",
+      "q": "Why does measured weight loss usually fall short of the 3,500 kcal per pound prediction over several months?",
+      "choices": [
+        "Lean tissue loss lowers BMR and a smaller body costs less to move",
+        "The body absorbs more energy from food when in deficit",
+        "Fat contains more than 3,500 kcal per pound",
+        "Water retention permanently offsets fat loss"
+      ],
+      "answer": 0,
+      "why": "Both resting and movement costs fall as mass drops, and spontaneous activity declines, so the deficit shrinks over time. Absorption efficiency does not meaningfully rise, and the energy content of fat does not change.",
+      "lesson": "sci-nutrition-l06",
+      "difficulty": 3
+    },
+    {
+      "q": "Which component of total energy expenditure is the largest in most adults?",
+      "choices": [
+        "Physical activity",
+        "Basal metabolic rate",
+        "Thermic effect of food",
+        "Adaptive thermogenesis"
+      ],
+      "answer": 1,
+      "why": "BMR accounts for 60-75 percent of expenditure. Activity is 15-30 percent, the thermic effect of food about 10 percent, and adaptive thermogenesis is a small modifier rather than a major component.",
+      "lesson": "sci-nutrition-l06",
+      "difficulty": 1,
+      "id": "sci-nutrition-q022"
+    },
+    {
+      "id": "sci-nutrition-q023",
+      "q": "A 75-year-old woman asks how much vitamin D she needs daily and what the upper limit is.",
+      "choices": [
+        "400 IU with a UL of 1,000 IU",
+        "600 IU with a UL of 2,000 IU",
+        "800 IU with a UL of 4,000 IU",
+        "2,000 IU with no established UL"
+      ],
+      "answer": 2,
+      "why": "After age 70 the RDA rises to 800 IU, and the UL is 4,000 IU. The 600 IU figure applies through age 70, and 400 IU is the infant supplement dose.",
+      "lesson": "sci-nutrition-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-nutrition-q024",
+      "q": "A man with poor diet and heavy alcohol use develops confusion, unsteady gait, and eye movement abnormalities. Which deficiency should be suspected?",
+      "choices": [
+        "Vitamin K",
+        "Niacin",
+        "Vitamin E",
+        "Thiamin"
+      ],
+      "answer": 3,
+      "why": "That triad is Wernicke encephalopathy from thiamin deficiency, common with chronic alcohol use. Niacin deficiency produces pellagra's dermatitis, diarrhea, and dementia rather than eye findings.",
+      "lesson": "sci-nutrition-l07",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-nutrition-q025",
+      "q": "Why are high-dose fat-soluble vitamin supplements riskier than high-dose vitamin C?",
+      "choices": [
+        "Fat-soluble vitamins are stored in liver and adipose tissue and accumulate",
+        "Fat-soluble vitamins are destroyed by cooking",
+        "Vitamin C has no upper limit",
+        "Fat-soluble vitamins are absorbed faster"
+      ],
+      "answer": 0,
+      "why": "Storage allows fat-soluble vitamins to build to toxic levels, while water-soluble excess is largely excreted. Vitamin C does have a UL of 2,000 mg, it is simply harder to reach harm.",
+      "lesson": "sci-nutrition-l07",
+      "difficulty": 2
+    },
+    {
+      "q": "Which vitamin acts as a hormone and increases intestinal calcium absorption to 30-40 percent?",
+      "choices": [
+        "Vitamin A",
+        "Vitamin D",
+        "Vitamin C",
+        "Vitamin K"
+      ],
+      "answer": 1,
+      "why": "Vitamin D acts hormonally to raise calcium absorption from a baseline of 10-15 percent. Vitamin K activates clotting factors and osteocalcin, and vitamin C aids iron rather than calcium uptake.",
+      "lesson": "sci-nutrition-l07",
+      "difficulty": 1,
+      "id": "sci-nutrition-q026"
+    },
+    {
+      "id": "sci-nutrition-q027",
+      "q": "A woman takes an iron supplement with her morning coffee and a calcium tablet. What is the problem?",
+      "choices": [
+        "Caffeine destroys iron chemically",
+        "Calcium converts iron to the heme form",
+        "Coffee tannins and calcium both inhibit nonheme iron absorption",
+        "Iron must always be taken with dairy"
+      ],
+      "answer": 2,
+      "why": "Tannins and calcium both bind or compete with nonheme iron, cutting uptake substantially; vitamin C would help instead. Caffeine does not chemically destroy iron, and calcium cannot create heme iron.",
+      "lesson": "sci-nutrition-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-nutrition-q028",
+      "q": "What is the recommended daily iron intake for a premenopausal woman?",
+      "choices": [
+        "8 mg",
+        "11 mg",
+        "27 mg",
+        "18 mg"
+      ],
+      "answer": 3,
+      "why": "18 mg/day covers menstrual losses. 8 mg applies to men and postmenopausal women, and 27 mg is the pregnancy recommendation.",
+      "lesson": "sci-nutrition-l08",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-nutrition-q029",
+      "q": "A hypertensive patient eats mostly packaged and restaurant meals. Which intervention addresses the largest sodium source?",
+      "choices": [
+        "Shift toward home-prepared whole foods and check labels",
+        "Drink more water to dilute sodium",
+        "Switch to sea salt instead of table salt",
+        "Remove the salt shaker from the table"
+      ],
+      "answer": 0,
+      "why": "About 70 percent of dietary sodium is already in processed and restaurant food, so the shaker and the type of salt change little. Drinking water does not remove sodium load.",
+      "lesson": "sci-nutrition-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-nutrition-q030",
+      "q": "A pregnant woman in a region without iodized salt has an enlarged thyroid. What is the risk to the fetus?",
+      "choices": [
+        "Neural tube defect",
+        "Irreversible intellectual disability",
+        "Microcytic anemia",
+        "Rickets at birth"
+      ],
+      "answer": 1,
+      "why": "Iodine deficiency in pregnancy impairs fetal thyroid hormone and brain development, causing irreversible intellectual disability. Neural tube defects come from low folate, and rickets from vitamin D deficiency.",
+      "lesson": "sci-nutrition-l08",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-nutrition-q031",
+      "q": "A woman with a prepregnancy BMI of 32 asks about weight gain during pregnancy. What range applies?",
+      "choices": [
+        "28 to 40 lb",
+        "15 to 25 lb",
+        "11 to 20 lb",
+        "25 to 35 lb"
+      ],
+      "answer": 2,
+      "why": "A BMI of 30 or more calls for 11 to 20 lb. The 25 to 35 lb range is for normal BMI and 15 to 25 lb for the overweight range of 25 to 29.9.",
+      "lesson": "sci-nutrition-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-nutrition-q032",
+      "q": "A 60 kg runner loses 1.6 kg of body weight during a long race. About how much fluid should she replace?",
+      "choices": [
+        "0.8 to 1.0 L",
+        "1.6 L exactly",
+        "4.0 to 4.8 L",
+        "2.0 to 2.4 L"
+      ],
+      "answer": 3,
+      "why": "Replace 1.25 to 1.5 L per kg lost, so 1.6 kg calls for roughly 2.0 to 2.4 L. Replacing exactly the mass lost undershoots because some fluid is excreted.",
+      "lesson": "sci-nutrition-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-nutrition-q033",
+      "q": "An 80-year-old man with sarcopenia asks how to slow muscle loss. What is the best-supported advice?",
+      "choices": [
+        "Protein near 1.0-1.2 g/kg combined with resistance exercise",
+        "A high-dose amino acid supplement without exercise",
+        "Reduce protein to protect the kidneys",
+        "Increase carbohydrate to spare protein"
+      ],
+      "answer": 0,
+      "why": "Muscle protein synthesis in older adults responds to the combination of adequate protein and mechanical loading. Supplements alone do not build muscle, and routine protein restriction is reserved for kidney disease.",
+      "lesson": "sci-nutrition-l09",
+      "difficulty": 3
+    },
+    {
+      "q": "In the second trimester of pregnancy, how many additional kilocalories per day are recommended?",
+      "choices": [
+        "No increase",
+        "About 340 kcal",
+        "About 450 kcal",
+        "About 500 kcal"
+      ],
+      "answer": 1,
+      "why": "The second trimester adds about 340 kcal/day. The third adds 450 and lactation about 500, while the first trimester requires no increase.",
+      "lesson": "sci-nutrition-l09",
+      "difficulty": 1,
+      "id": "sci-nutrition-q034"
+    },
+    {
+      "id": "sci-nutrition-q035",
+      "q": "A label lists 180 kcal per serving with 4 servings per container and 8 g fat per serving. What percent of energy per serving comes from fat, and how many kcal are in the container?",
+      "choices": [
+        "20 percent and 540 kcal",
+        "36 percent and 540 kcal",
+        "40 percent and 720 kcal",
+        "40 percent and 180 kcal"
+      ],
+      "answer": 2,
+      "why": "8 x 9 = 72 kcal from fat, and 72 / 180 = 40 percent; 4 x 180 = 720 kcal total. Answers using 540 assume three servings, and 180 kcal ignores the servings-per-container line.",
+      "lesson": "sci-nutrition-l10",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-nutrition-q036",
+      "q": "Which statement best summarizes the evidence comparing popular weight loss diets at 12 months?",
+      "choices": [
+        "Paleo outperforms all others because it removes grains",
+        "Ketogenic diets produce roughly double the loss of other patterns",
+        "Intermittent fasting works through mechanisms unrelated to energy intake",
+        "Most diets produce similar loss, and adherence predicts the result more than composition"
+      ],
+      "answer": 3,
+      "why": "Head-to-head trials converge at 12 months, with adherence explaining most of the variation. Fasting works chiefly by reducing intake, and no pattern doubles the loss of the others.",
+      "lesson": "sci-nutrition-l10",
+      "difficulty": 3
+    },
+    {
+      "q": "On a Nutrition Facts label, a nutrient listed at 4 percent Daily Value per serving is considered what?",
+      "choices": [
+        "Low",
+        "Moderate",
+        "High",
+        "At the tolerable upper intake level"
+      ],
+      "answer": 0,
+      "why": "Five percent or less is low and 20 percent or more is high. Nothing on the label is expressed as an upper intake level per serving.",
+      "lesson": "sci-nutrition-l10",
+      "difficulty": 1,
+      "id": "sci-nutrition-q037"
+    },
+    {
+      "q": "Cooked chicken is left out at room temperature. After how long is it considered unsafe to eat?",
+      "choices": [
+        "4 hours",
+        "2 hours",
+        "6 hours",
+        "8 hours"
+      ],
+      "answer": 1,
+      "why": "Perishable food should not sit between 40 F and 140 F for more than 2 hours, because bacteria multiply fastest in that danger zone. Longer intervals allow unsafe growth even when the food looks and smells normal.",
+      "lesson": "sci-nutrition-l10",
+      "difficulty": 1,
+      "id": "sci-nutrition-q038"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "sci-nutrition-s01",
+      "title": "Worked case: energy balance and a weight-loss plan",
+      "setting": "classroom",
+      "intro": "A case is put in front of the class. Marisol is a 34-year-old woman, 72 kg, 168 cm tall. She works a desk job and walks or does light exercise about two days a week. She wants to lose roughly 12 lb over the next twelve weeks and asks what intake she should aim for. Work the numbers in order and say what the numbers can and cannot promise.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "First decision: which equation estimates her resting energy needs, and what does it actually predict?",
+          "choices": [
+            {
+              "text": "Mifflin-St Jeor, which estimates basal metabolic rate, the energy used at complete rest",
+              "next": "s2",
+              "feedback": "Correct. Mifflin-St Jeor is the current standard and predicts BMR only, not total daily needs. Activity is applied afterward as a multiplier.",
+              "score": 1
+            },
+            {
+              "text": "Mifflin-St Jeor, which directly estimates her total daily energy expenditure",
+              "next": "s2",
+              "feedback": "The equation is right but the output is not. It gives BMR, which is 60-75 percent of total expenditure. Using it as a total would set her intake far too low.",
+              "score": 0
+            },
+            {
+              "text": "Body mass index, since it already accounts for weight and height",
+              "next": "s2",
+              "feedback": "BMI is a screening ratio, not an energy estimate. It cannot tell you kilocalories, and it does not distinguish muscle from fat.",
+              "score": -1
+            },
+            {
+              "text": "A fixed 1,200 kcal/day allowance, the common default for women",
+              "next": "s2",
+              "feedback": "A one-size number ignores her mass, height, and age, and it is likely well below her resting needs. Calculate, then adjust.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "Run the female equation: BMR = 10 x 72 + 6.25 x 168 - 5 x 34 - 161. Which result is right?",
+          "choices": [
+            {
+              "text": "About 1,439 kcal/day",
+              "next": "s3",
+              "feedback": "Correct. 720 + 1,050 = 1,770; minus 170 = 1,600; minus 161 = 1,439 kcal/day.",
+              "score": 1
+            },
+            {
+              "text": "About 1,600 kcal/day",
+              "next": "s3",
+              "feedback": "That is the value before subtracting the female constant of 161. Forgetting the sex term overestimates her BMR by exactly that much.",
+              "score": 0
+            },
+            {
+              "text": "About 1,761 kcal/day",
+              "next": "s3",
+              "feedback": "That result adds 5 instead of subtracting 161, which is the male version of the equation. The sex constant is the only place the two forms differ.",
+              "score": -1
+            },
+            {
+              "text": "About 1,269 kcal/day",
+              "next": "s3",
+              "feedback": "That subtracts the age term twice. Age enters once, as 5 x 34 = 170.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "Now apply activity. She has a desk job with light exercise one to three days a week. Which factor fits, and what is her maintenance intake?",
+          "choices": [
+            {
+              "text": "1.375, giving about 1,979 kcal/day",
+              "next": "s4",
+              "feedback": "Correct. Light activity is 1.375, and 1,439 x 1.375 is about 1,979 kcal/day to hold her current weight.",
+              "score": 1
+            },
+            {
+              "text": "1.2, giving about 1,727 kcal/day",
+              "next": "s4",
+              "feedback": "1.2 is fully sedentary with no deliberate exercise. Using it understates her needs and builds an unnecessarily steep deficit into the plan.",
+              "score": 0
+            },
+            {
+              "text": "1.725, giving about 2,482 kcal/day",
+              "next": "s4",
+              "feedback": "1.725 describes hard training six or seven days a week. Overstating activity is the most common way these plans stall.",
+              "score": -1
+            },
+            {
+              "text": "No factor is needed since BMR already includes daily movement",
+              "next": "s4",
+              "feedback": "BMR is measured at complete rest. Skipping the multiplier would set her target roughly 500 kcal below true maintenance before any deficit is applied.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "She wants about 1 lb per week. Using 3,500 kcal per pound of fat tissue, what daily deficit and target intake follow?",
+          "choices": [
+            {
+              "text": "500 kcal/day deficit, target about 1,479 kcal/day",
+              "next": "s5",
+              "feedback": "Correct. 3,500 divided by 7 days is 500 kcal/day, so 1,979 - 500 is about 1,479 kcal/day.",
+              "score": 1
+            },
+            {
+              "text": "250 kcal/day deficit, target about 1,729 kcal/day",
+              "next": "s5",
+              "feedback": "That deficit predicts half a pound per week, so twelve weeks would give about 6 lb rather than 12. It is a reasonable slower plan, just not the one she asked for.",
+              "score": 0
+            },
+            {
+              "text": "1,000 kcal/day deficit, target about 979 kcal/day",
+              "next": "s5",
+              "feedback": "That targets 2 lb per week and puts her intake below her BMR of 1,439, which risks inadequate protein and micronutrients and is hard to sustain.",
+              "score": -1
+            },
+            {
+              "text": "3,500 kcal/day deficit, target zero intake",
+              "next": "s5",
+              "feedback": "The 3,500 figure is the energy in a pound of fat, not a daily target. This misreads the unit entirely.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "Twelve weeks later she has lost 8.5 lb, not 12. She asks whether she did something wrong. What is the right explanation?",
+          "choices": [
+            {
+              "text": "The prediction decays: lost lean tissue lowers BMR, a smaller body costs less to move, and spontaneous activity falls",
+              "next": "end",
+              "feedback": "Correct, and this is the point of the case. The 3,500 kcal rule is a linear estimate applied to a body that adapts, so real loss curves below the straight line.",
+              "score": 1
+            },
+            {
+              "text": "She must have underreported intake, since the arithmetic is exact",
+              "next": "end",
+              "feedback": "Underreporting is common, but blaming it alone assumes the model is exact when it is not. Metabolic adaptation explains a shortfall of this size on its own.",
+              "score": 0
+            },
+            {
+              "text": "The equation was wrong and should be discarded",
+              "next": "end",
+              "feedback": "The equation gave a workable starting point, which is all it claims to do. Estimates are meant to be adjusted against measured results, not abandoned.",
+              "score": -1
+            },
+            {
+              "text": "She should cut another 500 kcal immediately to catch up",
+              "next": "end",
+              "feedback": "That would put her near 979 kcal/day, below her resting needs, and would accelerate the same lean-tissue loss that flattened the curve. A modest adjustment plus resistance training is the better move.",
+              "score": -1
+            }
+          ]
+        }
+      ],
+      "debrief": "The sequence is fixed: BMR by Mifflin-St Jeor, multiply by an honest activity factor for total expenditure, then subtract the deficit. A 500 kcal/day deficit predicts about 1 lb per week, but the prediction is linear and the body is not. As mass falls, BMR falls and movement gets cheaper, so measured loss runs roughly 70 to 80 percent of predicted over a few months. Preserving lean mass with adequate protein and resistance training is what keeps the curve from flattening sooner."
+    },
+    {
+      "id": "sci-nutrition-s02",
+      "title": "Appraising a diet claim, a label, and a study abstract",
+      "setting": "classroom",
+      "intro": "A classmate brings in an advertisement for a supplement bar. The package claims the bar is part of a clinically proven plan that cuts heart disease risk by 30 percent, and the ad cites an observational study of 40,000 adults. The class is asked to evaluate the claim, read the label, and decide what the abstract actually supports.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "The ad says the study found that people eating the bar's ingredient pattern had 30 percent less heart disease. It was an observational cohort. What can that design support?",
+          "choices": [
+            {
+              "text": "Association only, because diet habits travel with other health behaviors that were not randomized",
+              "next": "s2",
+              "feedback": "Correct. Cohorts measure incidence and relative risk, but confounders like smoking, exercise, and income ride along with food choices.",
+              "score": 1
+            },
+            {
+              "text": "Causation, because 40,000 subjects is a very large sample",
+              "next": "s2",
+              "feedback": "Size reduces random error, not bias. A large observational study is a precise estimate of an association, which is still not a causal claim.",
+              "score": -1
+            },
+            {
+              "text": "Association, though a randomized trial would be needed before any causal wording",
+              "next": "s2",
+              "feedback": "This is right and adds the correct next step. Only randomization balances unmeasured confounders, so the word proven does not belong on the package.",
+              "score": 1
+            },
+            {
+              "text": "Nothing at all, since observational studies are worthless",
+              "next": "s2",
+              "feedback": "Too far. Cohorts generate the hypotheses trials then test, and for exposures that cannot be randomized they may be the only evidence available.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "The abstract reports a relative risk reduction of 30 percent. Baseline ten-year risk in the comparison group was 6 percent. What is the absolute reduction?",
+          "choices": [
+            {
+              "text": "30 percentage points",
+              "next": "s3",
+              "feedback": "That confuses relative with absolute. A 30 percent reduction applies to the baseline risk, not to the whole scale.",
+              "score": -1
+            },
+            {
+              "text": "About 1.8 percentage points, from 6 percent down to about 4.2 percent",
+              "next": "s3",
+              "feedback": "Correct. 6 x 0.30 = 1.8, so risk moves from 6 percent to 4.2 percent. The number needed to treat is about 56 people over ten years.",
+              "score": 1
+            },
+            {
+              "text": "About 6 percentage points",
+              "next": "s3",
+              "feedback": "That is the baseline risk itself, not the reduction. The reduction is a fraction of that baseline.",
+              "score": 0
+            },
+            {
+              "text": "Cannot be determined without the sample size",
+              "next": "s3",
+              "feedback": "Sample size affects the confidence interval, not the point estimate. Baseline risk and relative reduction are enough for the absolute figure.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "Now the label. Serving size is 1 bar, 2 bars per package. Per bar: 240 kcal, total fat 9 g, saturated fat 5 g, sodium 250 mg, total carbohydrate 32 g including added sugars 18 g, protein 5 g. What stands out first?",
+          "choices": [
+            {
+              "text": "Added sugars of 18 g per bar, which is 72 kcal, and 36 g for the package",
+              "next": "s4",
+              "feedback": "Correct. Two bars supply 36 g of added sugar, most of the 50 g allowed on a 2,000 kcal diet, in a product sold as heart healthy.",
+              "score": 1
+            },
+            {
+              "text": "Sodium of 250 mg, which is nearly the whole daily limit",
+              "next": "s4",
+              "feedback": "The direction is worth checking, but the math is off. 250 / 2,300 is about 11 percent per bar, which is moderate rather than alarming.",
+              "score": 0
+            },
+            {
+              "text": "Protein of 5 g, which makes this a poor protein source",
+              "next": "s4",
+              "feedback": "True but minor. The bar is not sold as a protein source, and 5 g is a small part of a 56 g daily target for a 70 kg adult.",
+              "score": 0
+            },
+            {
+              "text": "Nothing stands out, since 240 kcal is a reasonable snack",
+              "next": "s4",
+              "feedback": "Energy alone looks fine, which is exactly how the added sugar and saturated fat get past a quick read. Check the composition, not just the calorie line.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "Saturated fat is 5 g per bar. On a 2,000 kcal diet with the less than 10 percent limit, what share of the day does one bar use?",
+          "choices": [
+            {
+              "text": "5 x 9 = 45 kcal, which is about 20 percent of the 200 kcal saturated fat allowance",
+              "next": "s5",
+              "feedback": "Correct. The 10 percent cap is 200 kcal, so one bar spends about a fifth of it and the package spends about 40 percent.",
+              "score": 1
+            },
+            {
+              "text": "5 x 4 = 20 kcal, about 10 percent of the allowance",
+              "next": "s5",
+              "feedback": "All fat supplies 9 kcal/g, not 4. Using the carbohydrate factor halves the real contribution.",
+              "score": 0
+            },
+            {
+              "text": "5 g out of 2,300 mg, about 0.2 percent",
+              "next": "s5",
+              "feedback": "That compares grams of fat to the sodium limit. The two are different nutrients with different units and different limits.",
+              "score": -1
+            },
+            {
+              "text": "Saturated fat has no numeric limit, so the share cannot be computed",
+              "next": "s5",
+              "feedback": "The Dietary Guidelines cap saturated fat below 10 percent of kilocalories, and the American Heart Association uses 6 percent for LDL lowering.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "The classmate asks for a verdict on the package claim. What is the defensible conclusion?",
+          "choices": [
+            {
+              "text": "The claim overstates observational evidence as proof, quotes a relative figure, and the label's added sugar and saturated fat undercut the heart-health framing",
+              "next": "end",
+              "feedback": "Correct on all three counts. The design supports association, the 30 percent is relative rather than absolute, and the composition contradicts the positioning.",
+              "score": 1
+            },
+            {
+              "text": "The claim is acceptable because a peer-reviewed study is cited",
+              "next": "end",
+              "feedback": "Citation is not appraisal. What matters is the design, the effect size in absolute terms, and whether the product matches the exposure studied.",
+              "score": -1
+            },
+            {
+              "text": "The claim is false because no food can affect heart disease risk",
+              "next": "end",
+              "feedback": "Overcorrection. Dietary patterns clearly affect cardiovascular outcomes, with the Mediterranean pattern showing roughly 30 percent fewer major events in a randomized trial. The problem is this product and this evidence.",
+              "score": 0
+            },
+            {
+              "text": "The claim should be judged only after the class replicates the study",
+              "next": "end",
+              "feedback": "Not a usable standard. Appraisal is the skill being taught: read the design, convert to absolute risk, and check the label against the claim.",
+              "score": 0
+            }
+          ]
+        }
+      ],
+      "debrief": "Three habits close this case. First, name the design before believing the verb: observational cohorts support association, and only randomization supports cause. Second, convert every relative risk into an absolute one, since a 30 percent reduction on a 6 percent baseline is 1.8 percentage points. Third, read the label against the claim, multiplying by servings per container and converting grams to kilocalories at 4, 4, and 9. A product can cite real research and still be a poor choice, because the claim, the evidence, and the composition are three separate questions."
+    }
+  ]
+}

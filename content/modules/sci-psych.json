@@ -1,0 +1,1768 @@
+{
+  "schema": 1,
+  "id": "sci-psych",
+  "track": "prereq",
+  "title": "Psychology",
+  "short": "Psychology",
+  "summary": "A full introductory psychology course built for prerequisite credit and for the clinic: how behavior is studied, how the nervous system produces it, and how learning, memory, thinking, development, personality, social pressure and mental illness show up in patients.",
+  "lessons": [
+    {
+      "id": "sci-psych-l01",
+      "title": "History, perspectives, and research methods",
+      "minutes": 8,
+      "body": "Psychology is the science of behavior and mental processes. The word *science* is the load-bearing part: a claim counts only if a method could have shown it false.\n\n## Where the field came from\n\nWilhelm Wundt opened the first psychology lab in Leipzig in `1879` and trained people to report their own conscious experience (introspection). It was unreliable, because nobody can check your private report.\n\nThe reaction was **behaviorism** (Watson, Skinner): study only what can be observed and counted. That bought rigor and lost the mind. The **cognitive revolution** of the 1950s and 1960s brought the mind back by treating it as information processing, which can be measured through reaction time and error patterns.\n\n## The perspectives you must name\n\n- **Biological** — behavior comes from neurons, hormones, genes.\n- **Behavioral** — behavior is learned from consequences in the environment.\n- **Cognitive** — behavior follows from how information is encoded and interpreted.\n- **Psychodynamic** — unconscious conflict and early experience drive behavior.\n- **Humanistic** — people move toward growth and self-actualization.\n- **Sociocultural** — culture and social context shape what behavior means.\n- **Evolutionary** — behaviors persisted because they aided survival and reproduction.\n\nThe **biopsychosocial model** is the working synthesis, and it is the model medicine uses: biology, psychology and social context together.\n\n## Measuring anything\n\nAn **operational definition** turns a fuzzy idea into a countable procedure. \"Anxiety\" is not measurable; \"score on the GAD-7, `0` to `21`\" is.\n\n**Reliability** is consistency: the same measurement twice gives the same number (test-retest), or two raters agree (inter-rater). **Validity** is accuracy: the measure captures what it claims. A broken scale reading `5 kg` heavy every time is perfectly reliable and completely invalid. Reliability is necessary but not sufficient for validity.\n\n## Correlational versus experimental\n\nA **correlational study** measures two variables and reports how they move together, as `r` from `-1.00` to `+1.00`. Zero means no linear relationship. Correlation cannot separate cause from reverse cause from a third variable.\n\nAn **experiment** manipulates an **independent variable**, measures a **dependent variable**, and uses **random assignment** to place subjects in conditions. Random assignment is the whole point: it spreads unknown confounders evenly, so a difference at the end is attributable to the manipulation.\n\n**Blinding** removes expectation. Single-blind hides the condition from the participant; double-blind hides it from the participant and the person measuring. The **placebo effect** and **experimenter bias** are exactly what blinding controls.\n\n### Worked example: reading a design\n\n1. Find the manipulation. If nobody assigned anything, it is correlational, full stop.\n2. Name the IV and its levels (drug versus placebo), then the DV and its units (points on a `0` to `10` pain scale).\n3. Check for random assignment. No randomization means groups may have differed before treatment.\n4. Check blinding, then the control group.\n5. Only now decide what causal language is allowed.\n\n## Significance, effect size, replication\n\n`p < .05` says a result this large is unlikely if there were no real effect. It does not say the effect is large or important. **Effect size** (Cohen's `d`: `0.2` small, `0.5` medium, `0.8` large) says how big it is. Huge samples make trivial effects significant.\n\nThe **replication crisis** showed that many classic findings do not reproduce, driven by publication bias and analysis run until something reached `p < .05`.\n\n> **Key:** Random *assignment* supports causal claims. Random *sampling* supports generalizing to a population. Different words, different jobs.\n\n## Ethics\n\nAn **Institutional Review Board (IRB)** must approve human research. Core duties: informed consent, no coercion, right to withdraw, confidentiality, debriefing after any deception, and protection of vulnerable groups. Clinically, this is the same consent logic that governs whether a patient can be enrolled in a trial while in your department.",
+      "keyPoints": [
+        "Operational definitions make a concept countable; reliability is consistency, validity is accuracy.",
+        "Correlation (r from -1.00 to +1.00) never establishes cause; only random assignment does.",
+        "Blinding controls placebo and experimenter expectancy effects.",
+        "p < .05 means unlikely by chance, not large or important — read the effect size.",
+        "IRB review requires informed consent, right to withdraw, confidentiality and debriefing."
+      ],
+      "checks": [
+        {
+          "q": "A bathroom scale reads exactly 5 kg too high every single time. How is it best described?",
+          "choices": [
+            "Reliable but not valid",
+            "Valid but not reliable",
+            "Both reliable and valid",
+            "Neither reliable nor valid"
+          ],
+          "answer": 0,
+          "why": "It is perfectly consistent across measurements, which is reliability, but it does not give the true weight, so it lacks validity. Consistency alone never guarantees accuracy."
+        },
+        {
+          "q": "Researchers flip a coin to place each volunteer in the drug or placebo group. What does this accomplish?",
+          "choices": [
+            "It makes the sample representative of the population",
+            "It spreads unknown confounding variables evenly across groups",
+            "It guarantees a statistically significant result",
+            "It removes the need for a control group"
+          ],
+          "answer": 1,
+          "why": "Random assignment balances both known and unknown third variables between conditions, which is what licenses a causal claim. Representativeness comes from random sampling, a different procedure, and randomization says nothing about whether a result will reach significance."
+        },
+        {
+          "q": "A study of 90,000 people reports a diet effect with p = .001 and Cohen's d = 0.04. What is the best interpretation?",
+          "choices": [
+            "A large, clinically important effect",
+            "An invalid study",
+            "A real but trivially small effect made detectable by sample size",
+            "Evidence that the diet causes nothing at all"
+          ],
+          "answer": 2,
+          "why": "A d of 0.04 is far below the 0.2 threshold for a small effect, so the difference is real but negligible; a very large sample can make almost any nonzero difference significant. The p value speaks to detectability, not to magnitude or importance."
+        }
+      ]
+    },
+    {
+      "id": "sci-psych-l02",
+      "title": "Biological bases of behavior",
+      "minutes": 9,
+      "body": "Every thought, mood and reflex is chemistry and electricity in cells. Start with one cell.\n\n## The neuron and the action potential\n\nA neuron has **dendrites** (receive), a **cell body** (soma, integrates), an **axon** (transmits), and **terminal buttons** (release chemicals). Many axons are wrapped in **myelin**, a fatty sheath with gaps (nodes of Ranvier) that lets the signal jump node to node, raising conduction speed from about `1 m/s` unmyelinated to `120 m/s` myelinated. Multiple sclerosis destroys myelin, which is why its symptoms are slowed, scattered and variable.\n\nAt rest the inside of the axon sits near `-70 mV` relative to outside, held there by the sodium-potassium pump moving `3` sodium out for every `2` potassium in. Enough excitatory input pushes the membrane to threshold near `-55 mV`; sodium channels fly open, the inside shoots to about `+40 mV`, then potassium exits and the cell repolarizes.\n\nThe action potential is **all-or-none**: it either fires at full size or not at all. A stronger stimulus does not make a bigger spike, it makes *more* spikes per second. During the **refractory period** the neuron cannot fire again, which sets the ceiling on firing rate.\n\n> **Key:** Intensity is coded by firing frequency and by how many neurons fire, never by spike size.\n\n## The synapse\n\nThe signal reaches the terminal, vesicles dump **neurotransmitter** into the synaptic gap, and it binds receptors on the next cell, making it more likely to fire (excitatory) or less likely (inhibitory). Leftover transmitter is pulled back in (**reuptake**) or broken down by enzymes. Almost every psychiatric drug works on this ten-nanometer gap.\n\n| Transmitter | Main job | Clinical hook |\n|---|---|---|\n| Dopamine | Reward, movement | Too little in the substantia nigra causes Parkinson's; excess signaling is linked to schizophrenia, so antipsychotics block D2 receptors |\n| Serotonin | Mood, sleep, appetite | SSRIs block reuptake to treat depression and anxiety |\n| Norepinephrine | Arousal, alertness | Low levels linked to depression; SNRIs raise it |\n| GABA | Main inhibitory transmitter | Benzodiazepines and alcohol enhance it, producing sedation |\n| Glutamate | Main excitatory transmitter | Excess drives seizures; central to learning (long-term potentiation) |\n| Acetylcholine | Muscle contraction, memory | Blocked at the junction in myasthenia gravis; depleted in Alzheimer's |\n\n**Endorphins** are the body's own opioids; morphine and heroin bind the same receptors, which is why opioid drugs blunt pain and why the body downregulates its own supply.\n\n## Brain regions\n\n- **Brainstem** — medulla runs heartbeat and breathing; pons bridges and gates sleep; reticular formation controls arousal.\n- **Cerebellum** — balance, coordination, procedural movement memory.\n- **Limbic system** — amygdala (fear, threat detection), hippocampus (forms new memories), hypothalamus (hunger, thirst, temperature, hormone control).\n- **Thalamus** — sensory relay station for everything except smell.\n\nThe cortex divides into four lobes: **frontal** (planning, judgment, motor strip, Broca's area for speech production), **parietal** (touch, the somatosensory strip), **temporal** (hearing, Wernicke's area for comprehension), **occipital** (vision). Phineas Gage's frontal injury in `1848` changed personality while sparing memory and movement, which localized judgment to the frontal lobe.\n\n## Endocrine system and the HPA axis\n\nHormones are slower than neurons but act longer. Under stress the hypothalamus releases CRH, the anterior pituitary releases ACTH, and the adrenal cortex releases **cortisol** — the **HPA axis**. The adrenal medulla separately dumps epinephrine for the immediate fight-or-flight surge.\n\n## Behavioral genetics\n\n**Twin studies** compare identical (monozygotic, `100%` shared genes) with fraternal (dizygotic, about `50%`) twins. **Adoption studies** separate rearing from genes. **Heritability** is the fraction of variation *in a population* explained by genes — roughly `0.50` for personality traits and `0.80` for schizophrenia risk. It never describes an individual.\n\n> **Trap:** Heritability of `0.80` does not mean `80%` of your schizophrenia risk is genetic. It is a population statistic about differences between people.",
+      "keyPoints": [
+        "Resting potential -70 mV, threshold about -55 mV, peak about +40 mV; firing is all-or-none.",
+        "Stimulus intensity is coded by firing rate and number of neurons, not spike amplitude.",
+        "Dopamine, serotonin, norepinephrine, GABA, glutamate and acetylcholine each map to named drugs and diseases.",
+        "Amygdala means fear, hippocampus means new memories, hypothalamus means drives and hormones.",
+        "HPA axis: hypothalamus CRH, pituitary ACTH, adrenal cortex cortisol."
+      ],
+      "checks": [
+        {
+          "q": "A patient with a resting tremor and shuffling gait is started on levodopa. Which transmitter system is being targeted?",
+          "choices": [
+            "GABA",
+            "Dopamine",
+            "Acetylcholine",
+            "Glutamate"
+          ],
+          "answer": 1,
+          "why": "Parkinson's disease is loss of dopamine-producing neurons in the substantia nigra, and levodopa is a dopamine precursor. GABA and glutamate are the general inhibitory and excitatory transmitters, and acetylcholine loss is the Alzheimer's story, not the tremor story."
+        },
+        {
+          "q": "Why does a painfully loud sound not produce larger action potentials than a soft one?",
+          "choices": [
+            "Because myelin caps the signal size",
+            "Because the refractory period erases the extra charge",
+            "Because action potentials are all-or-none, so intensity is coded by firing rate",
+            "Because the thalamus filters intensity before the cortex"
+          ],
+          "answer": 2,
+          "why": "Once threshold is reached the spike is always the same size, so the nervous system signals intensity with more spikes per second and more neurons recruited. Myelin changes speed, not amplitude, and the refractory period limits rate rather than shrinking a spike."
+        },
+        {
+          "q": "Heritability of adult height in a well-fed population is about 0.80. What does that number mean?",
+          "choices": [
+            "80% of any one person's height comes from their genes",
+            "80% of the variation in height across that population is attributable to genetic differences",
+            "80% of people inherit their height from a parent",
+            "Environment accounts for only 20% of growth in any individual"
+          ],
+          "answer": 1,
+          "why": "Heritability is a population-level statement about the sources of variation between people, not a recipe for one individual. The other choices all misapply a group statistic to a single person, which is the classic exam trap."
+        }
+      ]
+    },
+    {
+      "id": "sci-psych-l03",
+      "title": "Sensation, perception, and consciousness",
+      "minutes": 9,
+      "body": "**Sensation** is physical energy arriving at a receptor. **Perception** is the brain organizing and interpreting it. Two different jobs, two different failure modes.\n\n## Thresholds\n\nThe **absolute threshold** is the smallest stimulus you detect `50%` of the time. The **difference threshold**, or just noticeable difference (JND), is the smallest change you can detect `50%` of the time.\n\n**Weber's law** says the JND is a constant *proportion* of the original stimulus, not a constant amount.\n\n### Worked example: Weber fraction\n\n1. A subject lifting `100 g` first notices a change at `105 g`.\n2. The JND is `105 - 100 = 5 g`.\n3. `Weber fraction = 5/100 = 0.05`, so `5%`.\n4. Starting from `400 g`, the predicted JND is `0.05 x 400 = 20 g`.\n5. So the subject notices `420 g`, not `405 g`.\n\n**Signal detection theory** adds the observer: whether you report a faint stimulus depends on sensitivity *and* on your decision criterion, producing hits, misses, false alarms and correct rejections. A tired nurse listening for a monitor alarm at `3 a.m.` has the same ears and a shifted criterion.\n\n**Transduction** is converting physical energy into neural firing — the single step every sense has in common.\n\n## Vision and hearing\n\nLight passes the cornea, pupil and lens, and the lens changes shape (accommodation) to focus on the retina. The retina holds about `120 million` **rods** (dim light, no color, peripheral) and about `6 million` **cones** (color and detail, concentrated in the fovea). Signals run through bipolar and ganglion cells out the optic nerve, creating a blind spot where it exits, to the occipital cortex. **Trichromatic theory** explains the three cone types; **opponent-process theory** explains afterimages.\n\nSound waves vibrate the eardrum, the three middle-ear bones amplify, and the cochlea's hair cells transduce. **Place theory** explains high pitch by which spot on the basilar membrane moves; **frequency theory** explains low pitch by how fast the whole membrane fires. Hair cell death causes permanent sensorineural loss, the reason hearing protection is not optional.\n\n**Gate-control theory** says the spinal cord contains a gate: large-fiber input such as rubbing the skin, plus descending signals from the brain, can close it against pain traffic. That is why rubbing a bumped elbow helps and why anxiety makes pain worse.\n\n## Organizing what arrives\n\nGestalt principles — figure-ground, proximity, similarity, closure, continuity — describe how the brain groups raw input into objects. Depth comes from binocular cues (retinal disparity, convergence) and monocular cues (relative size, interposition, linear perspective).\n\n**Bottom-up** processing builds from the data. **Top-down** processing uses expectation and context. Expecting a diagnosis is top-down processing, and it is where misreads begin.\n\n## Consciousness and sleep\n\nThe **circadian rhythm** runs about `24.2` hours, set by the suprachiasmatic nucleus in the hypothalamus and entrained by light, which suppresses melatonin.\n\n| Stage | Share of adult night | Features |\n|---|---|---|\n| N1 | about `5%` | Drifting off, hypnagogic jerks |\n| N2 | about `45-50%` | Sleep spindles, K-complexes |\n| N3 | about `20-25%` | Slow delta waves, deep restorative sleep |\n| REM | about `20-25%` | Vivid dreams, muscle paralysis, active brain |\n\nA cycle runs about `90` minutes; N3 dominates the first half of the night, REM lengthens toward morning. **Insomnia** affects roughly `10%` of adults chronically. **Obstructive sleep apnea** repeatedly collapses the airway, fragmenting sleep and driving hypertension. **Narcolepsy** brings sudden sleep attacks and cataplexy from loss of orexin neurons.\n\nFreud read dreams as disguised wishes; the **activation-synthesis** model reads them as the cortex making a story out of random brainstem activity. **Hypnosis** is a state of focused attention and heightened suggestibility with real analgesic effect and no memory-recovery power.\n\n## Psychoactive drugs\n\n**Depressants** (alcohol, benzodiazepines, barbiturates) slow the central nervous system through GABA. **Stimulants** (caffeine, nicotine, cocaine, amphetamine) raise dopamine and norepinephrine. **Opioids** bind endorphin receptors and kill pain and respiratory drive. **Hallucinogens** (LSD, psilocybin) distort perception, largely at serotonin receptors.\n\n**Tolerance** means needing more for the same effect. **Withdrawal** is the opposite-direction rebound when the drug leaves, and for alcohol and benzodiazepines it can be fatal. **Addiction** is compulsive use despite harm.\n\n> **On shift:** Alcohol withdrawal, not intoxication, is the one that kills — watch for tremor, tachycardia and seizures `12` to `48` hours after the last drink.",
+      "keyPoints": [
+        "Absolute threshold and JND are both defined at 50% detection; Weber's law makes the JND proportional.",
+        "Signal detection separates sensitivity from decision criterion — fatigue moves the criterion.",
+        "Rods (about 120 million) handle dim and peripheral vision; cones (about 6 million) handle color and detail.",
+        "A sleep cycle is about 90 minutes; REM and N3 each take roughly 20-25% of the adult night.",
+        "Depressants, stimulants, opioids and hallucinogens map onto GABA, dopamine/norepinephrine, endorphin and serotonin systems."
+      ],
+      "checks": [
+        {
+          "q": "A subject lifting a 200 g weight first detects a change at 210 g. Using Weber's law, what weight would they first detect starting from 600 g?",
+          "choices": [
+            "610 g",
+            "620 g",
+            "630 g",
+            "660 g"
+          ],
+          "answer": 2,
+          "why": "The Weber fraction is 10/200 = 0.05, so the JND at 600 g is 0.05 x 600 = 30 g, giving 630 g. Answering 610 g assumes the JND is a fixed 10 g, which is exactly the misunderstanding Weber's law corrects."
+        },
+        {
+          "q": "Which stage of sleep is characterized by vivid dreaming, an active EEG, and skeletal muscle paralysis?",
+          "choices": [
+            "N1",
+            "N2",
+            "N3",
+            "REM"
+          ],
+          "answer": 3,
+          "why": "REM combines a wake-like EEG with atonia that keeps the sleeper from acting out dreams. N3 is the deep slow-wave stage, and N2 is defined by spindles and K-complexes rather than vivid dreaming."
+        },
+        {
+          "q": "A patient says rubbing the skin around an IV site makes the sticking hurt less. Which theory explains this?",
+          "choices": [
+            "Opponent-process theory",
+            "Gate-control theory",
+            "Place theory",
+            "Signal detection theory"
+          ],
+          "answer": 1,
+          "why": "Large-fiber touch input closes a spinal gate and reduces pain transmission, which is gate-control theory. Opponent-process explains color afterimages and place theory explains pitch, neither of which involves pain modulation."
+        }
+      ]
+    },
+    {
+      "id": "sci-psych-l04",
+      "title": "Learning",
+      "minutes": 8,
+      "body": "Learning is a relatively permanent change in behavior from experience. Three mechanisms cover nearly all of it.\n\n## Classical conditioning\n\nIvan Pavlov was measuring dog salivation when the dogs began drooling at the sound of the approaching assistant. He had accidentally found associative learning.\n\n- **Unconditioned stimulus (US)** — food. Triggers the response with no training.\n- **Unconditioned response (UR)** — salivation to food.\n- **Neutral stimulus** — a bell, meaningless at first.\n- **Conditioned stimulus (CS)** — that same bell after pairing.\n- **Conditioned response (CR)** — salivation to the bell alone.\n\n**Acquisition** works best when the CS comes shortly *before* the US, about `0.5` seconds. **Extinction** is the CR fading when the CS stops predicting the US. **Spontaneous recovery** is the CR reappearing after a rest, proving extinction suppressed rather than erased. **Generalization** is responding to similar stimuli; **discrimination** is learning that only the trained stimulus counts.\n\nWatson's \"Little Albert\" study conditioned an infant to fear a white rat, then watched the fear generalize to fur and cotton — unethical, and the foundation of how phobias form.\n\n**Taste aversion** breaks the usual rules: one pairing, hours of delay, and it lasts for years. Garcia showed it, and biological preparedness explains it. Chemotherapy patients develop lasting aversions to whatever they ate before an infusion, which is why hospitals avoid serving a favorite food with treatment.\n\n## Operant conditioning\n\nThorndike's law of effect and B. F. Skinner's chamber shifted the focus to consequences. **Reinforcement** raises the behavior's future rate; **punishment** lowers it. **Positive** means something is added, **negative** means something is removed. The words mean add and subtract, never good and bad.\n\n| | Add something | Remove something |\n|---|---|---|\n| Behavior increases | Positive reinforcement: praise for taking medication | Negative reinforcement: nausea stops after an antiemetic |\n| Behavior decreases | Positive punishment: a fine for smoking indoors | Negative punishment: phone taken away |\n\n### Worked example: classifying a contingency\n\n1. Name the behavior. A patient uses the call bell before standing.\n2. Ask what happened right after. Staff arrived quickly and helped.\n3. Was something added or removed? Added.\n4. Did the behavior get more or less frequent? More.\n5. Added plus increase equals **positive reinforcement**.\n\n**Shaping** reinforces successive approximations toward a target behavior. A **primary reinforcer** satisfies a biological need; a **secondary reinforcer** such as money is learned.\n\n## Schedules of reinforcement\n\n**Continuous** reinforcement teaches fastest and extinguishes fastest. **Partial** schedules teach more slowly and resist extinction far better.\n\n- **Fixed ratio** — reward after a set number of responses. High rate, brief post-reward pause.\n- **Variable ratio** — reward after an unpredictable number. Highest and steadiest rate, most extinction-resistant. Slot machines.\n- **Fixed interval** — first response after a set time. Scalloped bursts just before the deadline.\n- **Variable interval** — first response after an unpredictable time. Slow and steady.\n\n> **Trap:** Negative reinforcement is not punishment. It removes something unpleasant and therefore *increases* the behavior — which is precisely how avoidance keeps anxiety disorders alive.\n\n## Observational learning\n\nAlbert Bandura's Bobo doll studies showed children imitating aggression they had only watched, no reinforcement needed. Learning can happen through **modeling** alone. Mirror neurons are one proposed substrate.\n\n## Applying it clinically\n\nHealth behavior change is applied learning theory: make the desired behavior immediately reinforced, make the reinforcement variable enough to persist, break big changes into shaped steps, and remove the negative reinforcement propping up avoidance. Exposure therapy for phobias is simply extinction performed on purpose.",
+      "keyPoints": [
+        "Classical conditioning pairs stimuli; operant conditioning pairs behavior with consequences.",
+        "Positive and negative mean added and removed, not good and bad.",
+        "Variable ratio schedules produce the highest, most extinction-resistant responding.",
+        "Taste aversion learns in one trial across hours of delay because of biological preparedness.",
+        "Bandura showed learning by observation alone, with no reinforcement to the learner."
+      ],
+      "checks": [
+        {
+          "q": "A patient takes an antacid and the burning stops, so he takes it more often. What is this?",
+          "choices": [
+            "Positive reinforcement",
+            "Negative reinforcement",
+            "Positive punishment",
+            "Negative punishment"
+          ],
+          "answer": 1,
+          "why": "An unpleasant stimulus was removed and the behavior increased, which is negative reinforcement. It is not punishment of any kind because the behavior became more frequent, and it is not positive reinforcement because nothing was added."
+        },
+        {
+          "q": "Which reinforcement schedule produces the highest response rate and the greatest resistance to extinction?",
+          "choices": [
+            "Fixed ratio",
+            "Fixed interval",
+            "Variable ratio",
+            "Continuous"
+          ],
+          "answer": 2,
+          "why": "Unpredictable reward after an unpredictable number of responses keeps responding fast and makes it hard to tell when reinforcement has stopped. Continuous reinforcement actually extinguishes fastest, and fixed interval produces slow scalloped bursts."
+        },
+        {
+          "q": "A child bitten by a collie later fears all dogs. What process is this?",
+          "choices": [
+            "Discrimination",
+            "Spontaneous recovery",
+            "Generalization",
+            "Shaping"
+          ],
+          "answer": 2,
+          "why": "Responding to stimuli similar to the conditioned stimulus is generalization. Discrimination is the opposite, narrowing the response to the trained stimulus, and spontaneous recovery is the return of an extinguished response after a rest period."
+        }
+      ]
+    },
+    {
+      "id": "sci-psych-l05",
+      "title": "Memory",
+      "minutes": 8,
+      "body": "Memory is three jobs, and any one of them can fail: **encoding** (getting information in), **storage** (keeping it), and **retrieval** (getting it back out).\n\n## The stages model\n\n**Sensory memory** holds raw input for a fraction of a second — iconic (visual) for about `0.25` seconds, echoic (auditory) for `3` to `4` seconds. Attention selects what moves on.\n\n**Short-term memory** holds roughly `7 plus or minus 2` items for `15` to `30` seconds without rehearsal. **Working memory** is the modern version: not a shelf but a workbench, with a phonological loop, a visuospatial sketchpad, and a central executive that directs attention. Practical capacity is closer to `4` chunks.\n\n**Chunking** beats the limit by regrouping. `9` `7` `3` `0` `8` `2` `1` is seven items; `973-0821` is two. Everything you memorize in medicine is chunking, which is why `120/80` is easier than four digits.\n\n**Long-term memory** has no known capacity limit and splits in two:\n\n- **Explicit (declarative)** — facts (semantic) and events (episodic). Requires the hippocampus.\n- **Implicit (nondeclarative)** — procedural skills and conditioned responses. Runs through the cerebellum and basal ganglia.\n\n## How encoding quality changes everything\n\nCraik and Lockhart's **levels of processing**: shallow encoding of appearance or sound is fragile; deep **semantic** encoding of meaning sticks. The **self-reference effect** is the deepest version — material tied to your own experience is recalled best.\n\n**Long-term potentiation (LTP)** is the physical trace: repeatedly firing a synapse strengthens it, mediated by glutamate. Cells that fire together wire together.\n\n## Forgetting\n\nHermann Ebbinghaus mapped the **forgetting curve** on himself: most loss happens in the first hours and day, then the curve flattens. Relearning is always faster than first learning, which is the savings effect.\n\n- **Encoding failure** — it never got in. Most \"forgetting\" is this.\n- **Decay** — unused traces fade.\n- **Proactive interference** — old learning blocks new. Your old phone number intrudes.\n- **Retroactive interference** — new learning blocks old. This year's protocol overwrites last year's.\n- **Retrieval failure** — it is in there, the cue is missing. Tip-of-the-tongue.\n\n**Context-dependent** and **state-dependent** memory both say retrieval improves when conditions match encoding.\n\n## When the brain is damaged\n\n**Anterograde amnesia** is the inability to form new long-term memories; **retrograde amnesia** is loss of memories from before the injury. Patient H.M. had both hippocampi removed in `1953` to control seizures and could not form a single new explicit memory afterward — yet he improved at mirror-drawing while insisting he had never done it. That dissociation proved explicit and implicit memory are separate systems.\n\n> **Key:** Hippocampus damage blocks *new* explicit memories. Old consolidated memories and all procedural learning survive.\n\n## Memory is reconstructive\n\nElizabeth Loftus showed that wording changes memory. Subjects who saw cars \"smash into\" each other reported higher speeds and invented broken glass that was never there. This **misinformation effect** is why leading questions corrupt a patient history and why you ask \"what happened?\" before \"did you hit your head?\"\n\n## Study strategies that actually work\n\n1. **Retrieval practice** — testing yourself beats rereading by a wide margin, because retrieval is the operation you will need later.\n2. **Spacing** — the same total study time spread across days beats one block (the spacing effect).\n3. **Interleaving** — mixing problem types beats blocking one type, because it forces you to choose a strategy, not just execute one.\n4. **Elaboration** — explain why it is true and link it to what you know, producing semantic encoding.\n5. **Sleep** — consolidation happens during sleep, so a lost night costs the material.\n\n> **Trap:** Rereading feels effective because familiarity feels like knowing. Fluency is not memory.",
+      "keyPoints": [
+        "Short-term memory holds about 7 plus or minus 2 items for 15 to 30 seconds; chunking beats the limit.",
+        "Explicit memory needs the hippocampus; implicit and procedural memory do not.",
+        "Ebbinghaus showed forgetting is steepest in the first day, then flattens.",
+        "Proactive interference is old blocking new; retroactive is new blocking old.",
+        "Retrieval practice, spacing and interleaving beat rereading; H.M. proved explicit and implicit systems are separate."
+      ],
+      "checks": [
+        {
+          "q": "A patient after viral encephalitis cannot learn the names of new staff but can still ride a stationary bike better each day. What does this show?",
+          "choices": [
+            "Retrograde amnesia sparing recent memory",
+            "Explicit memory is impaired while implicit memory is intact",
+            "Working memory capacity has been enlarged",
+            "Proactive interference from old names"
+          ],
+          "answer": 1,
+          "why": "Hippocampal damage blocks formation of new declarative memories while cerebellar and basal ganglia procedural learning continues, the pattern H.M. made famous. Retrograde amnesia would be loss of pre-injury memories, and interference would not explain intact motor improvement."
+        },
+        {
+          "q": "Students who spread six hours of study across six days outperform students who study six hours in one night. What is this called?",
+          "choices": [
+            "The spacing effect",
+            "The self-reference effect",
+            "State-dependent retrieval",
+            "Chunking"
+          ],
+          "answer": 0,
+          "why": "Distributing the same total time across sessions produces durable learning, which is the spacing effect. Self-reference concerns tying material to yourself, and chunking concerns regrouping items to beat short-term capacity."
+        },
+        {
+          "q": "Witnesses asked how fast cars were going when they 'smashed' rather than 'hit' report higher speeds and false memories of broken glass. This demonstrates what?",
+          "choices": [
+            "Retroactive interference",
+            "Encoding failure",
+            "The misinformation effect",
+            "Source amnesia alone"
+          ],
+          "answer": 2,
+          "why": "Post-event wording altered the reconstructed memory itself, which is Loftus's misinformation effect. Encoding failure would mean the detail never entered memory, and retroactive interference refers to new learning blocking old rather than rewriting its content."
+        }
+      ]
+    },
+    {
+      "id": "sci-psych-l06",
+      "title": "Cognition, language, and intelligence",
+      "minutes": 8,
+      "body": "Thinking is efficient because it takes shortcuts. The same shortcuts cause diagnostic error.\n\n## Concepts and problem solving\n\nA **concept** is a mental category. Most categories are organized around a **prototype**, the best example. A patient whose heart attack looks like the prototype — crushing chest pain in a `60`-year-old man — gets recognized fast. Women, diabetics and the elderly often present with nausea, fatigue or shortness of breath instead, and get missed precisely because they do not match the prototype.\n\nProblem solving uses **algorithms** (exhaustive, guaranteed, slow) or **heuristics** (fast rules of thumb, usually right). Barriers include **fixation**, **mental set** (using the method that worked before), and **functional fixedness** (seeing only an object's usual use). **Insight** is the sudden reorganization that solves it anyway.\n\n## Heuristics and biases\n\n| Bias | What it is | How it hurts a patient |\n|---|---|---|\n| Availability | Judging likelihood by how easily examples come to mind | Diagnosing the rare condition you saw last week |\n| Representativeness | Judging by resemblance to a stereotype, ignoring base rates | Missing MI in a `35`-year-old woman because she does not look the part |\n| Anchoring | Locking onto the first number or impression | Keeping triage's \"anxiety\" label after new findings appear |\n| Confirmation bias | Seeking evidence that fits, ignoring what does not | Ordering only the test that would confirm your first guess |\n| Framing | Being swayed by wording of identical facts | `90%` survival sounds better than `10%` mortality |\n| Overconfidence | Certainty exceeding accuracy | Stopping the workup early |\n\n**Premature closure** — accepting a diagnosis before it is verified — is the single most common cognitive contributor to diagnostic error.\n\n> **On shift:** The countermeasure is a deliberate second pass. Ask \"what else could this be, and what would rule it out?\" before you commit.\n\n## Language\n\nLanguage has **phonemes** (sound units), **morphemes** (smallest meaning units), **syntax** (word order) and **semantics** (meaning). Development runs on a schedule: cooing around `2` months, babbling by `4` to `6` months, first words near `12` months, two-word telegraphic speech near `24` months, then an explosion of vocabulary.\n\n**Overgeneralization** — a child saying \"goed\" or \"foots\" — is evidence the child learned the *rule*, not just the words. Chomsky argued for an innate language acquisition device and a critical period; Skinner argued for reinforcement and imitation. Both mechanisms operate.\n\nAphasia maps the anatomy: **Broca's aphasia** (frontal) is effortful, halting speech with preserved comprehension; **Wernicke's aphasia** (temporal) is fluent, meaningless speech with impaired comprehension.\n\n## Intelligence\n\nSpearman proposed **`g`**, a general factor underlying all mental ability. Gardner proposed multiple intelligences; Sternberg proposed a triarchic model of analytical, creative and practical intelligence. **Fluid intelligence** (reasoning about novel problems) declines with age; **crystallized intelligence** (accumulated knowledge) holds or rises into late life.\n\nModern IQ is a **deviation score** standardized to a mean of `100` and a standard deviation of `15`, and the distribution is a normal curve.\n\n### Worked example: score to percentile\n\n1. The score is `130`.\n2. `z = (score - 100) / 15`, so `z = (130 - 100) / 15 = 2.0`.\n3. The empirical rule gives `68%` within `1 SD`, `95%` within `2 SD`, `99.7%` within `3 SD`.\n4. Outside `2 SD` is `5%` total, so `2.5%` sits above `130`.\n5. A score of `130` is about the `97.5th` percentile.\n\nA good test must be **standardized** (scored against a representative norm group), **reliable**, and **valid**. Intellectual disability is defined by an IQ around `70` or below *plus* deficits in adaptive functioning — never by the number alone.\n\n**Stereotype threat** is measurable performance loss when a person fears confirming a negative stereotype about their group; simply removing the group question from the front of a test can change scores.\n\n> **Trap:** The **Flynn effect** — rising raw scores across the twentieth century — is why tests are renormed. IQ is relative to a cohort, not an absolute quantity.",
+      "keyPoints": [
+        "Prototypes speed recognition and cause atypical presentations to be missed.",
+        "Availability, representativeness, anchoring, confirmation and framing are the named biases behind diagnostic error.",
+        "Overgeneralized speech ('goed') shows a child has learned grammatical rules.",
+        "Broca's is nonfluent with intact comprehension; Wernicke's is fluent with impaired comprehension.",
+        "IQ is standardized to mean 100, SD 15; z = (score - 100) / 15."
+      ],
+      "checks": [
+        {
+          "q": "An IQ score of 85 corresponds to what z score and roughly what percentile?",
+          "choices": [
+            "z = -1.0, about the 16th percentile",
+            "z = -1.0, about the 32nd percentile",
+            "z = -1.5, about the 7th percentile",
+            "z = -2.0, about the 2nd percentile"
+          ],
+          "answer": 0,
+          "why": "z = (85 - 100) / 15 = -1.0. With 68% inside 1 SD, 32% falls outside, split evenly, so about 16% lies below. The 32nd percentile mistakenly uses the whole outside-tail total instead of half of it."
+        },
+        {
+          "q": "A clinician sticks with triage's label of 'panic attack' even after learning the patient has new leg swelling. Which bias is this?",
+          "choices": [
+            "Framing",
+            "Anchoring",
+            "Functional fixedness",
+            "The Flynn effect"
+          ],
+          "answer": 1,
+          "why": "Holding onto an initial impression despite new disconfirming information is anchoring, often paired with premature closure. Framing concerns how identical facts are worded, and functional fixedness is about the uses of objects, not about diagnostic commitment."
+        },
+        {
+          "q": "A 3-year-old says 'I runned fast.' What does this best demonstrate?",
+          "choices": [
+            "A regression in language development",
+            "Telegraphic speech",
+            "Overgeneralization of a grammatical rule",
+            "Evidence of a language disorder"
+          ],
+          "answer": 2,
+          "why": "Applying the regular past-tense rule to an irregular verb shows the rule itself has been learned, which is a developmental advance. Telegraphic speech is the two-word stage, and this pattern is normal rather than disordered."
+        }
+      ]
+    },
+    {
+      "id": "sci-psych-l07",
+      "title": "Motivation, emotion, stress, and health",
+      "minutes": 8,
+      "body": "Motivation explains why behavior starts and persists. Emotion and stress explain what it costs.\n\n## Theories of motivation\n\n**Drive-reduction theory** says a biological need creates a drive, and behavior that reduces the drive is reinforced. The goal state is **homeostasis**. It explains hunger and thirst well and curiosity poorly.\n\n**Arousal theory** fills that gap: organisms seek an optimal level of arousal, not zero. The **Yerkes-Dodson law** makes it precise — performance peaks at moderate arousal, and the optimum is *higher* for simple tasks and *lower* for complex ones. That is why a rehearsed skill survives adrenaline but a complicated calculation does not.\n\n**Maslow's hierarchy** stacks physiological needs, safety, love and belonging, esteem, then self-actualization, arguing lower needs dominate until met. It is intuitive and weakly supported, but it is a useful triage tool: a patient who is cold, in pain and frightened will not absorb discharge teaching.\n\n**Intrinsic motivation** comes from the activity itself; **extrinsic** comes from outside reward. The **overjustification effect** shows that paying someone for something they already enjoy can reduce their intrinsic interest.\n\n## Hunger\n\nThe hypothalamus is the control center: the lateral hypothalamus drives eating, the ventromedial hypothalamus signals stopping. **Ghrelin** from the stomach rises before meals and stimulates appetite; **leptin** from fat cells signals long-term energy stores and suppresses it. Blood glucose and insulin modulate both. **Set point theory** says the body defends a weight range by adjusting metabolic rate, which is one reason dieted weight returns.\n\n## Theories of emotion\n\n- **James-Lange** — the body reacts first, and the emotion *is* the perception of that reaction. You are afraid because your heart is pounding.\n- **Cannon-Bard** — the thalamus sends signals to body and cortex simultaneously, so the physical response and the felt emotion happen at once.\n- **Schachter-Singer two-factor** — emotion equals physiological arousal plus a cognitive label, so the same racing heart becomes fear or excitement depending on context.\n- **Lazarus** — appraisal comes first, even if unconscious.\n\nPaul Ekman's cross-cultural work supports basic facial expressions recognized worldwide, while **display rules** governing when to show them are cultural.\n\n## Stress physiology\n\nHans Selye's **general adaptation syndrome (GAS)** has three phases:\n\n1. **Alarm** — sympathetic surge, epinephrine from the adrenal medulla, heart rate and glucose up.\n2. **Resistance** — the HPA axis sustains cortisol, and the body copes at a higher cost.\n3. **Exhaustion** — reserves fail, and illness risk climbs.\n\nSustained cortisol suppresses immune function, raises blood pressure and blood glucose, and damages hippocampal neurons, which is why chronic stress impairs memory. **Allostatic load** is the cumulative wear from repeated activation, and it is the mechanism linking poverty, discrimination and caregiving to real cardiovascular disease.\n\n> **Key:** The acute stress response is adaptive for minutes and corrosive for months. Duration, not intensity, is what turns stress into pathology.\n\n## Coping and health behavior\n\n**Problem-focused coping** changes the stressor and works when you have control. **Emotion-focused coping** changes your response and works when you do not. Matching the strategy to controllability predicts outcomes better than either strategy alone.\n\nSocial support, aerobic exercise, sleep and relaxation training measurably lower cortisol and blood pressure. The type A pattern's toxic ingredient turned out to be **hostility**, not ambition or time urgency.\n\n**Adherence** is the health psychology problem that matters most: roughly `50%` of patients with chronic disease do not take long-term medication as prescribed. The drivers are cost, side effects, regimen complexity, poor understanding, and asymptomatic disease that gives no feedback. Simplifying to once-daily dosing, teach-back, and reminder systems all raise adherence — applied learning theory, aimed at a real outcome.\n\n> **On shift:** \"Noncompliant\" is a judgment. Ask what gets in the way and you usually find a fixable barrier.",
+      "keyPoints": [
+        "Yerkes-Dodson: moderate arousal is optimal, higher for simple tasks and lower for complex ones.",
+        "Ghrelin raises appetite, leptin suppresses it; the hypothalamus is the control center.",
+        "James-Lange body first, Cannon-Bard simultaneous, Schachter-Singer arousal plus label.",
+        "GAS runs alarm, resistance, exhaustion; sustained cortisol drives allostatic load.",
+        "About 50% of chronic-disease patients do not take long-term medication as prescribed."
+      ],
+      "checks": [
+        {
+          "q": "A student performs worse on a difficult calculus exam when highly anxious but sprints faster when highly aroused. Which principle explains this?",
+          "choices": [
+            "Drive-reduction theory",
+            "The overjustification effect",
+            "Set point theory",
+            "The Yerkes-Dodson law"
+          ],
+          "answer": 3,
+          "why": "Optimal arousal is task-dependent: high for simple, well-learned tasks and lower for complex ones. Drive reduction concerns biological needs and homeostasis, and overjustification concerns the effect of external rewards on intrinsic interest."
+        },
+        {
+          "q": "A person feels their heart pounding at a party, decides it is excitement, and feels happy; the same pounding in a dark alley becomes fear. Which theory does this support?",
+          "choices": [
+            "Schachter-Singer two-factor theory",
+            "James-Lange theory",
+            "Cannon-Bard theory",
+            "Selye's general adaptation syndrome"
+          ],
+          "answer": 0,
+          "why": "Identical arousal producing different emotions depending on the cognitive label is the two-factor theory. James-Lange would require the bodily pattern itself to specify the emotion, and Cannon-Bard holds that arousal and emotion arise independently and simultaneously."
+        },
+        {
+          "q": "Which hormone is released by fat cells and signals long-term energy stores, reducing appetite?",
+          "choices": [
+            "Ghrelin",
+            "Cortisol",
+            "Leptin",
+            "Insulin"
+          ],
+          "answer": 2,
+          "why": "Leptin comes from adipose tissue and suppresses appetite in proportion to fat stores. Ghrelin is the stomach hormone that rises before meals and stimulates hunger, the opposite direction."
+        }
+      ]
+    },
+    {
+      "id": "sci-psych-l08",
+      "title": "Development across the lifespan",
+      "minutes": 9,
+      "body": "Development asks three recurring questions: nature versus nurture, continuity versus stages, and stability versus change.\n\n## Physical beginnings\n\nThe prenatal sequence is germinal (weeks `0-2`), embryonic (weeks `3-8`, when organs form and teratogen risk peaks), and fetal (week `9` to birth). **Teratogens** — alcohol, tobacco, certain medications, infections — cause the most damage during the embryonic period. Fetal alcohol spectrum disorder has no known safe exposure level.\n\nNewborn reflexes (rooting, sucking, grasping, Moro) are the earliest neurological exam. Motor milestones run on a rough schedule: sitting near `6` months, walking near `12` months, running near `2` years.\n\n## Piaget: cognitive stages\n\nChildren build **schemas**, then **assimilate** new information into them or **accommodate** the schema to fit.\n\n| Stage | Age | Achievement | Limitation |\n|---|---|---|---|\n| Sensorimotor | `0-2` | Object permanence | No symbolic thought early on |\n| Preoperational | `2-7` | Symbols, pretend play | Egocentrism, no conservation |\n| Concrete operational | `7-11` | Conservation, logic about real things | Struggles with abstraction |\n| Formal operational | `12+` | Abstract and hypothetical reasoning | Not universally reached |\n\nThis is directly clinical: a `5`-year-old cannot understand that an injection now prevents illness later, so explanation must be concrete and immediate.\n\n**Vygotsky** emphasized the social route instead: learning happens in the **zone of proximal development**, the gap between what a child can do alone and with help, bridged by **scaffolding**.\n\n## Erikson: eight psychosocial stages\n\n1. Trust versus mistrust (infancy)\n2. Autonomy versus shame and doubt (`1-3`)\n3. Initiative versus guilt (`3-6`)\n4. Industry versus inferiority (`6-12`)\n5. Identity versus role confusion (adolescence)\n6. Intimacy versus isolation (young adulthood)\n7. Generativity versus stagnation (middle adulthood)\n8. Integrity versus despair (late adulthood)\n\n## Attachment and parenting\n\nHarlow's monkeys chose a cloth mother over a wire mother that fed them, showing contact comfort matters more than feeding. Mary Ainsworth's **Strange Situation** classified infants as **secure** (about `60-65%`), **insecure-avoidant**, **insecure-anxious/ambivalent**, and later **disorganized**. Secure attachment predicts better emotional regulation later.\n\nBaumrind's parenting styles cross demands with warmth: **authoritative** (high both, best outcomes), **authoritarian** (high demands, low warmth), **permissive** (low demands, high warmth), and **neglectful** (low both, worst outcomes).\n\n## Adolescence and moral reasoning\n\nPuberty brings the growth spurt and sexual maturation; the limbic reward system matures years before the prefrontal cortex, which is not fully developed until about age `25`. That mismatch, not stupidity, explains adolescent risk-taking.\n\n**Kohlberg** described three levels of moral reasoning: **preconventional** (avoid punishment, gain reward), **conventional** (obey rules and social approval), and **postconventional** (abstract ethical principles). Gilligan criticized the framework for undervaluing an ethic of care.\n\n## Adulthood and aging\n\nMuscle mass, vision, hearing and reaction time decline gradually from the twenties. Menopause occurs around age `51`. Crystallized intelligence holds while fluid intelligence slows.\n\nNormal aging slows retrieval but preserves function. **Dementia** is a progressive loss of memory plus another cognitive domain that impairs daily functioning; Alzheimer's is the most common cause, marked by amyloid plaques, tau tangles and acetylcholine loss. **Delirium** is the impostor: acute onset, fluctuating attention, usually from infection, medication or metabolic derangement, and reversible if the cause is found.\n\n> **Trap:** Sudden confusion in an older adult is delirium until proven otherwise. Calling it dementia means missing a treatable cause.\n\nKubler-Ross described denial, anger, bargaining, depression and acceptance in dying patients. The stages are not a sequence and not a checklist; people move in and out of them, and expecting an order is the common misuse.",
+      "keyPoints": [
+        "Teratogen risk peaks in the embryonic period, weeks 3 to 8.",
+        "Piaget: sensorimotor 0-2, preoperational 2-7, concrete operational 7-11, formal operational 12+.",
+        "Vygotsky's zone of proximal development is bridged by scaffolding from a more skilled partner.",
+        "About 60-65% of infants are securely attached; authoritative parenting predicts the best outcomes.",
+        "Delirium is acute and fluctuating; dementia is progressive. Confusing them costs a reversible diagnosis."
+      ],
+      "checks": [
+        {
+          "q": "A child agrees that pouring the same juice into a taller glass now gives 'more juice.' Which Piagetian stage is this?",
+          "choices": [
+            "Sensorimotor",
+            "Preoperational",
+            "Concrete operational",
+            "Formal operational"
+          ],
+          "answer": 1,
+          "why": "Failing conservation is the hallmark of preoperational thought, roughly ages 2 to 7. Concrete operational children pass conservation, and sensorimotor children are still working out object permanence."
+        },
+        {
+          "q": "An 82-year-old with pneumonia becomes confused overnight, with attention that waxes and wanes. What is the most likely explanation?",
+          "choices": [
+            "Alzheimer's dementia",
+            "Delirium from the infection",
+            "Normal age-related memory change",
+            "Erikson's despair stage"
+          ],
+          "answer": 1,
+          "why": "Acute onset with fluctuating attention in the setting of infection defines delirium, which is reversible when the cause is treated. Dementia develops gradually over months to years, and normal aging does not produce fluctuating confusion."
+        },
+        {
+          "q": "A parent sets firm rules, explains the reasons, and responds warmly to the child's viewpoint. Which Baumrind style is this?",
+          "choices": [
+            "Permissive",
+            "Neglectful",
+            "Authoritarian",
+            "Authoritative"
+          ],
+          "answer": 3,
+          "why": "High demands combined with high warmth and explanation is authoritative parenting, associated with the best outcomes. Authoritarian shares the high demands but withholds warmth and explanation, which is the tempting distractor."
+        }
+      ]
+    },
+    {
+      "id": "sci-psych-l09",
+      "title": "Personality and social psychology",
+      "minutes": 8,
+      "body": "Personality is the stable pattern inside the person. Social psychology is the power of the situation around them. Most behavior is both, and people systematically overweight the first.\n\n## Four views of personality\n\n**Psychodynamic.** Freud proposed the **id** (immediate drive), **ego** (reality-based negotiator) and **superego** (internalized morality), with anxiety managed by **defense mechanisms**: repression, denial, projection, displacement, rationalization, regression, reaction formation, sublimation. Most of the theory is untestable, but defense mechanisms and unconscious influence survived as useful descriptions.\n\n**Humanistic.** Carl Rogers argued people grow given **unconditional positive regard**, genuineness and empathy, and that distress comes from a gap between the real self and the ideal self. Maslow's self-actualization belongs here. This is the direct ancestor of patient-centered communication.\n\n**Trait.** The **Big Five** (OCEAN) is the empirically supported model: **Openness**, **Conscientiousness**, **Extraversion**, **Agreeableness**, **Neuroticism**. Conscientiousness predicts medication adherence, job performance and longevity; neuroticism predicts symptom reporting and distress.\n\n**Social-cognitive.** Bandura's **reciprocal determinism** says person, behavior and environment continuously shape each other. **Self-efficacy** — belief you can execute a specific behavior — predicts actual health behavior change better than general confidence. Rotter's **locus of control** separates people who see outcomes as internally controlled from those who see them as external.\n\n## Assessment\n\n**Objective tests** such as the MMPI-2 use hundreds of true-false items, empirically keyed against known groups, with built-in validity scales that flag faking. **Projective tests** such as the Rorschach and TAT present ambiguous stimuli on the assumption that responses reveal unconscious content; their reliability and validity are poor.\n\n> **Trap:** The Barnum effect is why horoscopes and pop personality quizzes feel accurate — vague statements that fit almost anyone feel personal.\n\n## Attribution\n\nWe explain behavior as **dispositional** (something about the person) or **situational** (something about the circumstances). The **fundamental attribution error** is overweighting disposition for *other* people's behavior while explaining our own situationally — the **actor-observer bias**. **Self-serving bias** takes credit for success and blames the situation for failure.\n\n> **On shift:** A patient who is \"difficult\" is usually in pain, frightened, or has waited four hours. Reaching for the situation first is the single highest-yield correction in clinical communication.\n\n## Attitudes and dissonance\n\n**Cognitive dissonance** is the discomfort of holding a behavior and a belief that conflict; Festinger showed people resolve it by changing the belief, because the behavior already happened. Motivational interviewing uses this deliberately, letting patients voice their own reasons for change rather than arguing with them.\n\n**Foot-in-the-door** gets a small agreement first to make a larger one likely. **Role-playing** changes attitudes, which is what the Zimbardo prison study claimed, though its methods are now heavily criticized.\n\n## Social influence\n\n**Asch** showed conformity to a group's obviously wrong answer about `one-third` of the time, with conformity rising in larger unanimous groups and collapsing when even one other person dissented.\n\n**Milgram** found about `65%` of ordinary adults delivered what they believed was the maximum `450`-volt shock when an authority figure calmly insisted. Obedience dropped sharply when the authority was remote, the setting less prestigious, or a peer refused. The finding is not that people are cruel; it is that situational structure predicts obedience better than character.\n\n**Social facilitation** improves simple tasks in front of others and worsens complex ones. **Social loafing** is reduced individual effort inside a group. **Groupthink** is a cohesive group suppressing dissent to preserve agreement, and **group polarization** pushes a like-minded group toward a more extreme position.\n\nThe **bystander effect**: the more witnesses present, the less likely any one intervenes, through **diffusion of responsibility**. The countermeasure is naming an individual — \"you in the blue shirt, call `911`\" — which is exactly why resuscitation teams assign roles out loud.\n\n**Prejudice** is an attitude, **discrimination** is the behavior, and **implicit bias** operates below awareness. Measured implicit bias predicts documented disparities in pain treatment. Contact toward shared goals reduces prejudice better than information alone.",
+      "keyPoints": [
+        "Big Five: Openness, Conscientiousness, Extraversion, Agreeableness, Neuroticism — conscientiousness predicts adherence.",
+        "Self-efficacy is behavior-specific and predicts health change better than general confidence.",
+        "Fundamental attribution error: overweighting disposition for others, situation for yourself.",
+        "Asch found conformity about a third of the time; Milgram found about 65% obedience to 450 volts.",
+        "Bystander effect runs on diffusion of responsibility; assigning a named person breaks it."
+      ],
+      "checks": [
+        {
+          "q": "A tech assumes a patient who refuses a blood draw is 'just difficult' rather than considering needle phobia or a bad prior experience. What is this?",
+          "choices": [
+            "Self-serving bias",
+            "Fundamental attribution error",
+            "Cognitive dissonance",
+            "Group polarization"
+          ],
+          "answer": 1,
+          "why": "Attributing another person's behavior to their character while ignoring situational causes is the fundamental attribution error. Self-serving bias concerns explanations of your own successes and failures, not someone else's behavior."
+        },
+        {
+          "q": "In Milgram's obedience study, roughly what percentage of participants went to the maximum 450-volt level?",
+          "choices": [
+            "About 35%",
+            "About 50%",
+            "About 65%",
+            "About 90%"
+          ],
+          "answer": 2,
+          "why": "About 65% of participants continued to 450 volts under calm authority pressure. About one-third is the figure from Asch's conformity work, which is the most tempting confusion between these two classic studies."
+        },
+        {
+          "q": "A crowd watches someone collapse and nobody calls for help. What is the most effective immediate countermeasure?",
+          "choices": [
+            "Announce loudly that someone should call 911",
+            "Point to a specific person and assign them the task by name or description",
+            "Wait for a trained bystander to self-identify",
+            "Ask the group to vote on who should call"
+          ],
+          "answer": 1,
+          "why": "Diffusion of responsibility dissolves once responsibility is assigned to an identifiable individual. A general announcement to the group leaves the diffusion intact, which is why resuscitation teams assign roles to named people out loud."
+        }
+      ]
+    },
+    {
+      "id": "sci-psych-l10",
+      "title": "Psychological disorders and their treatment",
+      "minutes": 9,
+      "body": "A pattern becomes a disorder when it is **deviant, distressing, dysfunctional** and often dangerous — the four Ds. The **DSM-5-TR** is the diagnostic manual; it lists criteria and durations, not causes.\n\n## Why it happens\n\nThe **diathesis-stress model** is the working frame: an inherited or acquired vulnerability (diathesis) plus a sufficient stressor produces illness. It explains why identical twins are highly but not perfectly concordant for schizophrenia, and why prevention aims at stressors when vulnerability cannot be changed.\n\n## The major categories\n\n| Category | Defining feature | Approximate lifetime prevalence |\n|---|---|---|\n| Anxiety (GAD, panic, phobia, social) | Excessive fear or worry, out of proportion | about `30%` for any anxiety disorder |\n| Obsessive-compulsive | Intrusive obsessions plus compulsions that relieve them | about `2-3%` |\n| Trauma and stressor (PTSD) | Re-experiencing, avoidance, hyperarousal, negative mood, more than `1` month after trauma | about `6-8%` |\n| Depressive (major depressive disorder) | `5` or more symptoms for `2` or more weeks, including low mood or anhedonia | about `20%` |\n| Bipolar I | At least one manic episode lasting `7` days or requiring hospitalization | about `1%` |\n| Schizophrenia | Delusions, hallucinations, disorganized speech, negative symptoms, `6` months total | about `1%` |\n| Personality disorders | Rigid, pervasive patterns since adolescence, clusters A odd, B dramatic, C anxious | about `9%` |\n| Neurodevelopmental (ADHD, autism) | Onset in childhood, affecting development | ADHD about `9%` of children, autism about `2.8%` |\n| Feeding and eating | Anorexia nervosa, bulimia nervosa, binge-eating disorder | about `1-3%`, anorexia carries the highest mortality of any psychiatric illness |\n| Substance use | Compulsive use despite harm, with tolerance and withdrawal | about `15%` |\n\n**Generalized anxiety disorder** requires excessive worry more days than not for `6` months. A **panic attack** peaks within `10` minutes and is the classic mimic of acute coronary syndrome — and chest pain still gets worked up first.\n\n> **On shift:** Never diagnose panic in the department before the medical workup. Hypoglycemia, arrhythmia, pulmonary embolism and thyrotoxicosis all present as anxiety.\n\nSchizophrenia separates **positive symptoms** (added experiences: hallucinations, delusions) from **negative symptoms** (subtracted function: flat affect, avolition, alogia). Antipsychotics treat positive symptoms far better than negative ones.\n\n## Treatment\n\n**Psychodynamic therapy** seeks insight into unconscious conflict through free association and transference. Modest evidence; long course.\n\n**Humanistic therapy** (Rogers's person-centered) provides unconditional positive regard, empathy and genuineness, using active listening and reflection rather than direction.\n\n**Behavior therapy** applies conditioning directly. **Systematic desensitization** pairs a relaxation hierarchy with feared stimuli; **exposure and response prevention** is first-line for OCD; **token economies** shape behavior in structured settings. Exposure-based therapy is extinction done deliberately.\n\n**Cognitive and cognitive behavioral therapy** targets the thoughts that maintain the emotion — Beck's cognitive triad of negative views of self, world and future, and Ellis's rational-emotive approach. **CBT has the strongest evidence base of any psychotherapy** for depression, anxiety disorders, PTSD, OCD, insomnia and bulimia, typically in `12` to `20` sessions.\n\n**Biomedical treatment.** SSRIs are first-line for depression and most anxiety disorders and take `4` to `6` weeks for full effect. Lithium and other mood stabilizers treat bipolar disorder. Antipsychotics block D2 receptors. Benzodiazepines work in minutes but carry tolerance, dependence and fall risk. **Electroconvulsive therapy** remains the fastest effective treatment for severe, treatment-resistant or catatonic depression.\n\nFor moderate to severe depression, medication plus CBT outperforms either alone.\n\n> **Key:** Match the mechanism. Exposure for phobias and OCD, CBT for depression and anxiety, mood stabilizers for bipolar, antipsychotics for psychosis.\n\n**Deinstitutionalization** emptied state hospitals from the 1950s onward without funding community care, which is why emergency departments and jails now absorb much of the untreated load — the reason psychiatric boarding is an everyday department problem rather than a rare one.",
+      "keyPoints": [
+        "The four Ds: deviant, distressing, dysfunctional, dangerous; DSM-5-TR gives criteria, not causes.",
+        "Diathesis-stress: vulnerability plus stressor produces disorder.",
+        "Major depression needs 5 symptoms for 2 weeks; bipolar I needs a 7-day manic episode; schizophrenia needs 6 months.",
+        "CBT has the strongest evidence base among psychotherapies; SSRIs take 4 to 6 weeks.",
+        "Anorexia nervosa has the highest mortality of any psychiatric illness."
+      ],
+      "checks": [
+        {
+          "q": "A patient reports 3 weeks of low mood, anhedonia, insomnia, poor concentration, guilt and weight loss. Which diagnosis fits best?",
+          "choices": [
+            "Generalized anxiety disorder",
+            "Major depressive disorder",
+            "Bipolar I disorder",
+            "Adjustment disorder with depressed mood"
+          ],
+          "answer": 1,
+          "why": "Five or more depressive symptoms including anhedonia for at least 2 weeks meets criteria for major depressive disorder. Bipolar I would require a manic episode, and generalized anxiety requires 6 months of excessive worry rather than pervasive low mood."
+        },
+        {
+          "q": "Which treatment is first-line for obsessive-compulsive disorder?",
+          "choices": [
+            "Exposure and response prevention",
+            "Psychodynamic free association",
+            "Benzodiazepines as needed",
+            "Electroconvulsive therapy"
+          ],
+          "answer": 0,
+          "why": "Exposure with prevention of the compulsion allows the anxiety to extinguish and is the best-supported treatment, often combined with an SSRI. Benzodiazepines relieve acute anxiety but reinforce avoidance, and ECT is reserved for severe treatment-resistant depression."
+        },
+        {
+          "q": "Flat affect, poverty of speech and loss of motivation in schizophrenia are called what, and how do antipsychotics affect them?",
+          "choices": [
+            "Positive symptoms, treated well",
+            "Negative symptoms, treated well",
+            "Positive symptoms, treated poorly",
+            "Negative symptoms, treated poorly"
+          ],
+          "answer": 3,
+          "why": "These are subtractions from normal function, so they are negative symptoms, and antipsychotics address them poorly compared with hallucinations and delusions. Calling them positive confuses 'added experiences' with 'good,' which is the intended trap."
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "sci-psych-c001",
+      "front": "Who opened the first psychology laboratory, where, and in what year?",
+      "back": "Wilhelm Wundt, in Leipzig, in 1879. He used introspection, which failed because private self-reports cannot be independently verified.",
+      "lesson": "sci-psych-l01"
+    },
+    {
+      "id": "sci-psych-c002",
+      "front": "What is an operational definition and why does it matter?",
+      "back": "A definition that turns a concept into a countable procedure, such as measuring anxiety as a GAD-7 score from 0 to 21. Without one, a study cannot be replicated or checked.",
+      "lesson": "sci-psych-l01"
+    },
+    {
+      "id": "sci-psych-c003",
+      "front": "How do reliability and validity differ?",
+      "back": "Reliability is consistency across measurements or raters. Validity is accuracy, measuring what you claim. A scale 5 kg off every time is reliable but invalid; reliability is necessary but not sufficient.",
+      "lesson": "sci-psych-l01"
+    },
+    {
+      "id": "sci-psych-c004",
+      "front": "What range can a correlation coefficient take, and what does it not tell you?",
+      "back": "r runs from -1.00 to +1.00, with 0 meaning no linear relationship. It never establishes causation, because reverse causation and confounding variables remain possible.",
+      "lesson": "sci-psych-l01"
+    },
+    {
+      "id": "sci-psych-c006",
+      "front": "What do Cohen's d values of 0.2, 0.5 and 0.8 mean?",
+      "back": "Small, medium and large effect sizes. Effect size describes magnitude; a p value below .05 only says the result is unlikely by chance, and large samples make trivial effects significant.",
+      "lesson": "sci-psych-l01"
+    },
+    {
+      "id": "sci-psych-c007",
+      "front": "What does an IRB require of human research?",
+      "back": "Informed consent, no coercion, the right to withdraw, confidentiality, debriefing after deception, and extra protection for vulnerable populations.",
+      "lesson": "sci-psych-l01"
+    },
+    {
+      "id": "sci-psych-c008",
+      "front": "What are the resting, threshold and peak voltages of an action potential?",
+      "back": "Resting about -70 mV, threshold about -55 mV, peak about +40 mV. The sodium-potassium pump moves 3 sodium out for every 2 potassium in to maintain rest.",
+      "lesson": "sci-psych-l02"
+    },
+    {
+      "id": "sci-psych-c009",
+      "front": "If action potentials are all-or-none, how is stimulus intensity coded?",
+      "back": "By firing frequency and by how many neurons fire. A stronger stimulus produces more spikes per second, never a larger spike. The refractory period caps the maximum rate.",
+      "lesson": "sci-psych-l02"
+    },
+    {
+      "id": "sci-psych-c011",
+      "front": "Which neurotransmitter is implicated in Parkinson's disease and in schizophrenia?",
+      "back": "Dopamine. Too little in the substantia nigra causes Parkinson's; excess signaling is linked to schizophrenia, which is why antipsychotics block D2 receptors.",
+      "lesson": "sci-psych-l02"
+    },
+    {
+      "id": "sci-psych-c012",
+      "front": "Which transmitter do SSRIs act on, and how?",
+      "back": "Serotonin. Selective serotonin reuptake inhibitors block its reabsorption into the sending neuron, leaving more in the synapse, and are first-line for depression and anxiety.",
+      "lesson": "sci-psych-l02"
+    },
+    {
+      "id": "sci-psych-c013",
+      "front": "Which are the main inhibitory and excitatory neurotransmitters, and which drugs act on them?",
+      "back": "GABA is the main inhibitory transmitter, enhanced by benzodiazepines and alcohol. Glutamate is the main excitatory transmitter; excess drives seizures and it underlies long-term potentiation.",
+      "lesson": "sci-psych-l02"
+    },
+    {
+      "id": "sci-psych-c014",
+      "front": "What does acetylcholine do, and which two diseases involve it?",
+      "back": "It drives muscle contraction and supports memory. Its receptors are blocked at the neuromuscular junction in myasthenia gravis, and acetylcholine neurons are depleted in Alzheimer's disease.",
+      "lesson": "sci-psych-l02"
+    },
+    {
+      "id": "sci-psych-c015",
+      "front": "What do the amygdala, hippocampus and hypothalamus each do?",
+      "back": "Amygdala detects threat and drives fear. Hippocampus forms new explicit memories. Hypothalamus controls hunger, thirst, temperature and hormone release through the pituitary.",
+      "lesson": "sci-psych-l02"
+    },
+    {
+      "id": "sci-psych-c016",
+      "front": "Name the four cortical lobes and one function each.",
+      "back": "Frontal: planning, judgment, movement, Broca's speech production. Parietal: touch and body sense. Temporal: hearing and Wernicke's comprehension. Occipital: vision.",
+      "lesson": "sci-psych-l02"
+    },
+    {
+      "id": "sci-psych-c017",
+      "front": "Trace the HPA axis step by step.",
+      "back": "Hypothalamus releases CRH, the anterior pituitary releases ACTH, and the adrenal cortex releases cortisol. Separately the adrenal medulla releases epinephrine for immediate fight-or-flight.",
+      "lesson": "sci-psych-l02"
+    },
+    {
+      "id": "sci-psych-c019",
+      "front": "What does a heritability of 0.80 for schizophrenia risk actually mean?",
+      "back": "That about 80% of the variation in risk across that population is attributable to genetic differences. It is a population statistic and says nothing about the cause of any one person's illness.",
+      "lesson": "sci-psych-l02"
+    },
+    {
+      "id": "sci-psych-c020",
+      "front": "How are absolute threshold and just noticeable difference defined?",
+      "back": "Absolute threshold is the weakest stimulus detected 50% of the time. The JND, or difference threshold, is the smallest change detected 50% of the time.",
+      "lesson": "sci-psych-l03"
+    },
+    {
+      "id": "sci-psych-c021",
+      "front": "State Weber's law and compute the fraction if a 100 g weight needs 105 g to feel different.",
+      "back": "The JND is a constant proportion of the original stimulus. Weber fraction = 5/100 = 0.05, so from 400 g the JND is 0.05 x 400 = 20 g.",
+      "lesson": "sci-psych-l03"
+    },
+    {
+      "id": "sci-psych-c022",
+      "front": "What does signal detection theory add beyond sensitivity?",
+      "back": "A decision criterion. Detection produces hits, misses, false alarms and correct rejections, and fatigue or expectation shifts the criterion without changing the senses themselves.",
+      "lesson": "sci-psych-l03"
+    },
+    {
+      "id": "sci-psych-c023",
+      "front": "How many rods and cones does the retina hold, and what does each do?",
+      "back": "About 120 million rods for dim light, peripheral vision and no color, and about 6 million cones for color and fine detail, concentrated in the fovea.",
+      "lesson": "sci-psych-l03"
+    },
+    {
+      "id": "sci-psych-c026",
+      "front": "What does gate-control theory say about pain?",
+      "back": "A spinal gate can be closed by large-fiber input such as rubbing the skin and by descending brain signals, reducing pain transmission. Anxiety and attention open it.",
+      "lesson": "sci-psych-l03"
+    },
+    {
+      "id": "sci-psych-c027",
+      "front": "What is the difference between bottom-up and top-down processing?",
+      "back": "Bottom-up builds perception from raw sensory data. Top-down uses expectation, context and prior knowledge, which speeds recognition and also produces diagnostic misreads.",
+      "lesson": "sci-psych-l03"
+    },
+    {
+      "id": "sci-psych-c029",
+      "front": "Give the share of an adult night spent in N1, N2, N3 and REM.",
+      "back": "N1 about 5%, N2 about 45 to 50%, N3 about 20 to 25%, REM about 20 to 25%. One full cycle takes about 90 minutes.",
+      "lesson": "sci-psych-l03"
+    },
+    {
+      "id": "sci-psych-c031",
+      "front": "Name three sleep disorders and their defining features.",
+      "back": "Insomnia, chronic in about 10% of adults. Obstructive sleep apnea, repeated airway collapse driving hypertension. Narcolepsy, sudden sleep attacks and cataplexy from loss of orexin neurons.",
+      "lesson": "sci-psych-l03"
+    },
+    {
+      "id": "sci-psych-c032",
+      "front": "Match the four psychoactive drug classes to their transmitter systems.",
+      "back": "Depressants enhance GABA. Stimulants raise dopamine and norepinephrine. Opioids bind endorphin receptors. Hallucinogens act largely at serotonin receptors.",
+      "lesson": "sci-psych-l03"
+    },
+    {
+      "id": "sci-psych-c033",
+      "front": "Distinguish tolerance, withdrawal and addiction.",
+      "back": "Tolerance is needing more for the same effect. Withdrawal is the opposite-direction rebound when the drug leaves, potentially fatal with alcohol and benzodiazepines. Addiction is compulsive use despite harm.",
+      "lesson": "sci-psych-l03"
+    },
+    {
+      "id": "sci-psych-c034",
+      "front": "Label the terms in Pavlov's experiment: food, bell, salivation to food, salivation to bell.",
+      "back": "Food is the unconditioned stimulus, salivation to food the unconditioned response, the bell after pairing the conditioned stimulus, and salivation to the bell alone the conditioned response.",
+      "lesson": "sci-psych-l04"
+    },
+    {
+      "id": "sci-psych-c036",
+      "front": "Why does taste aversion break the normal rules of conditioning?",
+      "back": "It forms after a single pairing across hours of delay and lasts years, because of biological preparedness. Garcia demonstrated it; chemotherapy patients develop lasting aversions to foods eaten before infusion.",
+      "lesson": "sci-psych-l04"
+    },
+    {
+      "id": "sci-psych-c037",
+      "front": "In operant conditioning, what do positive and negative actually mean?",
+      "back": "Positive means a stimulus was added, negative means one was removed. Reinforcement increases the behavior, punishment decreases it. The words never mean good or bad.",
+      "lesson": "sci-psych-l04"
+    },
+    {
+      "id": "sci-psych-c038",
+      "front": "Give a clinical example of negative reinforcement.",
+      "back": "Nausea stops after taking an antiemetic, so the patient takes it more often. Something unpleasant was removed and the behavior increased. Avoidance in anxiety disorders runs on the same mechanism.",
+      "lesson": "sci-psych-l04"
+    },
+    {
+      "id": "sci-psych-c039",
+      "front": "Which reinforcement schedule produces the highest and most extinction-resistant responding?",
+      "back": "Variable ratio, reward after an unpredictable number of responses. Slot machines run on it. Continuous reinforcement teaches fastest but extinguishes fastest.",
+      "lesson": "sci-psych-l04"
+    },
+    {
+      "id": "sci-psych-c041",
+      "front": "What did Bandura's Bobo doll studies demonstrate?",
+      "back": "Children imitated aggression they had only observed, with no reinforcement to themselves. Learning can occur purely through modeling, which is observational learning.",
+      "lesson": "sci-psych-l04"
+    },
+    {
+      "id": "sci-psych-c043",
+      "front": "What is the capacity and duration of short-term memory?",
+      "back": "About 7 plus or minus 2 items for 15 to 30 seconds without rehearsal. Working memory models put practical capacity closer to 4 chunks.",
+      "lesson": "sci-psych-l05"
+    },
+    {
+      "id": "sci-psych-c045",
+      "front": "How does explicit memory differ from implicit memory anatomically?",
+      "back": "Explicit, or declarative, memory covers facts and events and requires the hippocampus. Implicit memory covers skills and conditioned responses and runs through the cerebellum and basal ganglia.",
+      "lesson": "sci-psych-l05"
+    },
+    {
+      "id": "sci-psych-c046",
+      "front": "What did patient H.M. prove?",
+      "back": "After bilateral hippocampal removal in 1953 he could form no new explicit memories yet improved at mirror-drawing, proving explicit and implicit memory are separate systems.",
+      "lesson": "sci-psych-l05"
+    },
+    {
+      "id": "sci-psych-c047",
+      "front": "Distinguish proactive from retroactive interference.",
+      "back": "Proactive interference is old learning blocking new, like an old phone number intruding. Retroactive interference is new learning blocking old, like this year's protocol overwriting last year's.",
+      "lesson": "sci-psych-l05"
+    },
+    {
+      "id": "sci-psych-c048",
+      "front": "What shape is Ebbinghaus's forgetting curve?",
+      "back": "Steep loss in the first hours and day, then a flattening tail. Relearning is always faster than original learning, which he called the savings effect.",
+      "lesson": "sci-psych-l05"
+    },
+    {
+      "id": "sci-psych-c049",
+      "front": "What is the misinformation effect and who demonstrated it?",
+      "back": "Elizabeth Loftus showed post-event wording alters memory: subjects told cars 'smashed' reported higher speeds and remembered broken glass that never existed. Leading questions corrupt a patient history the same way.",
+      "lesson": "sci-psych-l05"
+    },
+    {
+      "id": "sci-psych-c050",
+      "front": "Which three study strategies have the strongest evidence, and why do they work?",
+      "back": "Retrieval practice, because testing trains the operation you need later. Spacing, because distributed sessions consolidate better. Interleaving, because mixing problem types forces strategy selection, not just execution.",
+      "lesson": "sci-psych-l05"
+    },
+    {
+      "id": "sci-psych-c051",
+      "front": "What is a prototype and how does it cause missed diagnoses?",
+      "back": "The best example of a category. Presentations that match the prototype are recognized fast; atypical ones in women, diabetics and the elderly are missed because they do not resemble it.",
+      "lesson": "sci-psych-l06"
+    },
+    {
+      "id": "sci-psych-c052",
+      "front": "Define the availability and representativeness heuristics.",
+      "back": "Availability judges likelihood by how easily examples come to mind, so recent cases feel common. Representativeness judges by resemblance to a stereotype, which ignores base rates.",
+      "lesson": "sci-psych-l06"
+    },
+    {
+      "id": "sci-psych-c053",
+      "front": "What are anchoring and confirmation bias in a clinical setting?",
+      "back": "Anchoring is locking onto the first impression or number and failing to adjust. Confirmation bias is seeking evidence that supports that first guess while discounting evidence against it.",
+      "lesson": "sci-psych-l06"
+    },
+    {
+      "id": "sci-psych-c055",
+      "front": "How do Broca's and Wernicke's aphasia differ?",
+      "back": "Broca's, from frontal damage, gives effortful halting speech with preserved comprehension. Wernicke's, from temporal damage, gives fluent but meaningless speech with impaired comprehension.",
+      "lesson": "sci-psych-l06"
+    },
+    {
+      "id": "sci-psych-c056",
+      "front": "What are the mean and standard deviation of modern IQ, and how do you convert a score to z?",
+      "back": "Mean 100, standard deviation 15. z = (score - 100) / 15, so a score of 130 gives z = 2.0, about the 97.5th percentile.",
+      "lesson": "sci-psych-l06"
+    },
+    {
+      "id": "sci-psych-c058",
+      "front": "What is stereotype threat?",
+      "back": "Measurable performance loss when a person fears confirming a negative stereotype about their group. Removing the demographic question from the start of a test can change scores.",
+      "lesson": "sci-psych-l06"
+    },
+    {
+      "id": "sci-psych-c059",
+      "front": "State the Yerkes-Dodson law precisely.",
+      "back": "Performance peaks at moderate arousal, and the optimal level is higher for simple, well-learned tasks and lower for complex ones. Too little and too much arousal both hurt.",
+      "lesson": "sci-psych-l07"
+    },
+    {
+      "id": "sci-psych-c060",
+      "front": "Compare ghrelin and leptin.",
+      "back": "Ghrelin comes from the stomach, rises before meals and stimulates appetite. Leptin comes from fat cells, signals long-term energy stores and suppresses appetite. The hypothalamus integrates both.",
+      "lesson": "sci-psych-l07"
+    },
+    {
+      "id": "sci-psych-c061",
+      "front": "Distinguish James-Lange, Cannon-Bard and Schachter-Singer.",
+      "back": "James-Lange: the emotion is the perception of the bodily reaction. Cannon-Bard: body and feeling occur simultaneously. Schachter-Singer: arousal plus a cognitive label determines which emotion is felt.",
+      "lesson": "sci-psych-l07"
+    },
+    {
+      "id": "sci-psych-c062",
+      "front": "Name the three phases of Selye's general adaptation syndrome.",
+      "back": "Alarm, with a sympathetic and epinephrine surge. Resistance, with sustained HPA cortisol. Exhaustion, when reserves fail and illness risk rises.",
+      "lesson": "sci-psych-l07"
+    },
+    {
+      "id": "sci-psych-c063",
+      "front": "What is allostatic load?",
+      "back": "The cumulative physiological wear from repeated stress activation. It is the mechanism connecting chronic poverty, discrimination and caregiving to hypertension and cardiovascular disease.",
+      "lesson": "sci-psych-l07"
+    },
+    {
+      "id": "sci-psych-c065",
+      "front": "What fraction of chronic-disease patients do not take long-term medication as prescribed, and why?",
+      "back": "About 50%. Drivers are cost, side effects, complex regimens, poor understanding, and asymptomatic disease that provides no feedback. Simplified dosing and teach-back raise adherence.",
+      "lesson": "sci-psych-l07"
+    },
+    {
+      "id": "sci-psych-c066",
+      "front": "When is teratogen risk highest in pregnancy, and why?",
+      "back": "The embryonic period, weeks 3 through 8, when organ systems form. Alcohol, tobacco, some medications and infections cause the most damage then; there is no safe alcohol level.",
+      "lesson": "sci-psych-l08"
+    },
+    {
+      "id": "sci-psych-c067",
+      "front": "List Piaget's four stages with ages and the key achievement of each.",
+      "back": "Sensorimotor 0-2, object permanence. Preoperational 2-7, symbols but egocentrism and no conservation. Concrete operational 7-11, conservation and logic. Formal operational 12 and up, abstract reasoning.",
+      "lesson": "sci-psych-l08"
+    },
+    {
+      "id": "sci-psych-c068",
+      "front": "What is the zone of proximal development and who proposed it?",
+      "back": "Vygotsky. It is the gap between what a learner can do alone and what they can do with help, bridged by scaffolding from a more skilled partner that is gradually withdrawn.",
+      "lesson": "sci-psych-l08"
+    },
+    {
+      "id": "sci-psych-c069",
+      "front": "Name Erikson's eight psychosocial conflicts in order.",
+      "back": "Trust versus mistrust, autonomy versus shame, initiative versus guilt, industry versus inferiority, identity versus role confusion, intimacy versus isolation, generativity versus stagnation, integrity versus despair.",
+      "lesson": "sci-psych-l08"
+    },
+    {
+      "id": "sci-psych-c070",
+      "front": "What did Harlow's monkeys and Ainsworth's Strange Situation each show?",
+      "back": "Harlow showed contact comfort outweighs feeding in attachment. Ainsworth classified infants as secure (about 60 to 65%), insecure-avoidant, insecure-anxious, and disorganized.",
+      "lesson": "sci-psych-l08"
+    },
+    {
+      "id": "sci-psych-c071",
+      "front": "Name Baumrind's four parenting styles and the outcome extremes.",
+      "back": "Authoritative (high demands, high warmth, best outcomes), authoritarian (high demands, low warmth), permissive (low demands, high warmth), and neglectful (low both, worst outcomes).",
+      "lesson": "sci-psych-l08"
+    },
+    {
+      "id": "sci-psych-c073",
+      "front": "Name Kohlberg's three levels of moral reasoning.",
+      "back": "Preconventional, based on avoiding punishment and gaining reward. Conventional, based on rules and social approval. Postconventional, based on abstract ethical principles. Gilligan criticized it for undervaluing an ethic of care.",
+      "lesson": "sci-psych-l08"
+    },
+    {
+      "id": "sci-psych-c074",
+      "front": "How do you distinguish delirium from dementia at the bedside?",
+      "back": "Delirium is acute, fluctuates hour to hour, impairs attention, and comes from infection, medication or metabolic causes, so it is reversible. Dementia is gradual, progressive, and attention is spared early.",
+      "lesson": "sci-psych-l08"
+    },
+    {
+      "id": "sci-psych-c075",
+      "front": "Name the Big Five personality traits and the one that predicts adherence.",
+      "back": "Openness, Conscientiousness, Extraversion, Agreeableness, Neuroticism. Conscientiousness predicts medication adherence, job performance and longevity; neuroticism predicts symptom reporting and distress.",
+      "lesson": "sci-psych-l09"
+    },
+    {
+      "id": "sci-psych-c077",
+      "front": "What did Rogers say a person needs to grow?",
+      "back": "Unconditional positive regard, genuineness and empathy. Distress comes from a gap between the real self and the ideal self. This is the root of patient-centered communication.",
+      "lesson": "sci-psych-l09"
+    },
+    {
+      "id": "sci-psych-c078",
+      "front": "How do the MMPI-2 and the Rorschach differ as assessments?",
+      "back": "The MMPI-2 is objective, hundreds of true-false items empirically keyed with validity scales that flag faking. The Rorschach is projective, using ambiguous inkblots, with poor reliability and validity.",
+      "lesson": "sci-psych-l09"
+    },
+    {
+      "id": "sci-psych-c079",
+      "front": "What is the fundamental attribution error, and its self-directed counterpart?",
+      "back": "Overweighting personality and underweighting the situation when explaining other people's behavior. The actor-observer bias is explaining your own behavior situationally instead.",
+      "lesson": "sci-psych-l09"
+    },
+    {
+      "id": "sci-psych-c080",
+      "front": "What is cognitive dissonance and how is it used clinically?",
+      "back": "Discomfort from holding conflicting beliefs and behavior, usually resolved by changing the belief. Motivational interviewing exploits it by having patients voice their own reasons for change.",
+      "lesson": "sci-psych-l09"
+    },
+    {
+      "id": "sci-psych-c081",
+      "front": "Give the headline numbers from Asch and Milgram.",
+      "back": "Asch: conformity to an obviously wrong group answer about one-third of the time, collapsing if one other person dissents. Milgram: about 65% delivered the maximum 450-volt shock under authority.",
+      "lesson": "sci-psych-l09"
+    },
+    {
+      "id": "sci-psych-c082",
+      "front": "What causes the bystander effect and what breaks it?",
+      "back": "Diffusion of responsibility across witnesses. Assigning the task to one identifiable person breaks it, which is why resuscitation teams name roles out loud.",
+      "lesson": "sci-psych-l09"
+    },
+    {
+      "id": "sci-psych-c083",
+      "front": "Distinguish prejudice, discrimination and implicit bias.",
+      "back": "Prejudice is the attitude, discrimination is the behavior, and implicit bias operates below awareness. Measured implicit bias predicts documented disparities in pain treatment.",
+      "lesson": "sci-psych-l09"
+    },
+    {
+      "id": "sci-psych-c084",
+      "front": "What are the four Ds of abnormality?",
+      "back": "Deviant, distressing, dysfunctional and often dangerous. The DSM-5-TR sets criteria and durations for each disorder but does not state causes.",
+      "lesson": "sci-psych-l10"
+    },
+    {
+      "id": "sci-psych-c085",
+      "front": "What is the diathesis-stress model?",
+      "back": "Disorders emerge when an inherited or acquired vulnerability meets a sufficient stressor. It explains why identical twins are highly but not perfectly concordant for schizophrenia.",
+      "lesson": "sci-psych-l10"
+    },
+    {
+      "id": "sci-psych-c086",
+      "front": "Give the duration criteria for major depression, bipolar I mania, PTSD and schizophrenia.",
+      "back": "Major depression: 5 or more symptoms for 2 weeks. Bipolar I: a manic episode lasting 7 days or requiring hospitalization. PTSD: symptoms beyond 1 month. Schizophrenia: 6 months total.",
+      "lesson": "sci-psych-l10"
+    },
+    {
+      "id": "sci-psych-c087",
+      "front": "Give approximate lifetime prevalence for anxiety disorders, major depression, bipolar I and schizophrenia.",
+      "back": "Any anxiety disorder about 30%, major depressive disorder about 20%, bipolar I about 1%, schizophrenia about 1%.",
+      "lesson": "sci-psych-l10"
+    },
+    {
+      "id": "sci-psych-c088",
+      "front": "Distinguish positive from negative symptoms of schizophrenia.",
+      "back": "Positive symptoms are added experiences: hallucinations, delusions, disorganized speech. Negative symptoms are subtracted function: flat affect, avolition, alogia. Antipsychotics treat positive symptoms far better.",
+      "lesson": "sci-psych-l10"
+    },
+    {
+      "id": "sci-psych-c089",
+      "front": "Which psychotherapy has the strongest evidence base, and for what?",
+      "back": "Cognitive behavioral therapy, for depression, anxiety disorders, PTSD, OCD, insomnia and bulimia, typically in 12 to 20 sessions. It targets Beck's negative views of self, world and future.",
+      "lesson": "sci-psych-l10"
+    },
+    {
+      "id": "sci-psych-c090",
+      "front": "What is first-line treatment for OCD and for a specific phobia?",
+      "back": "Exposure and response prevention for OCD, often with an SSRI. Systematic desensitization or graded exposure for phobias. Both are extinction performed deliberately.",
+      "lesson": "sci-psych-l10"
+    },
+    {
+      "id": "sci-psych-c091",
+      "front": "How long do SSRIs take to work, and what are benzodiazepines' trade-offs?",
+      "back": "SSRIs need 4 to 6 weeks for full effect. Benzodiazepines work within minutes but carry tolerance, dependence, fall risk, and they reinforce avoidance in anxiety disorders.",
+      "lesson": "sci-psych-l10"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "sci-psych-q001",
+      "q": "Investigators measure hours of sleep and exam scores in 400 students and report r = -0.42. What may they conclude?",
+      "choices": [
+        "Sleep and exam performance are associated, and causal direction cannot be determined",
+        "Less sleep causes lower exam scores",
+        "The relationship is too weak to be real",
+        "Random assignment occurred, so cause can be inferred"
+      ],
+      "answer": 0,
+      "why": "A correlation describes how two measured variables move together and cannot separate cause, reverse cause, or a confounder such as workload. Nothing was manipulated or assigned, so no causal claim is licensed, and an r of -0.42 is a moderate, real relationship.",
+      "lesson": "sci-psych-l01",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-psych-q002",
+      "q": "In a drug trial, neither the patient nor the nurse recording symptoms knows which pill was given. What does this design feature specifically control?",
+      "choices": [
+        "Confounding between groups",
+        "Placebo response and experimenter expectancy effects",
+        "Sampling bias in recruitment",
+        "Attrition over the follow-up period"
+      ],
+      "answer": 1,
+      "why": "Double blinding removes expectation from both the patient and the person measuring the outcome. Confounding is handled by random assignment rather than blinding, and sampling bias concerns who was recruited, which blinding does not touch.",
+      "lesson": "sci-psych-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-psych-q003",
+      "q": "A researcher defines pain as 'the patient's rating on a 0 to 10 numeric scale.' What has she provided?",
+      "choices": [
+        "A hypothesis",
+        "A confounding variable",
+        "An operational definition",
+        "A dependent-variable control"
+      ],
+      "answer": 2,
+      "why": "She converted an abstract concept into a specific countable measurement procedure, which is an operational definition. A hypothesis is a prediction about a relationship, and a confounder is a third variable, neither of which describes a measurement rule.",
+      "lesson": "sci-psych-l01",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-psych-q004",
+      "q": "A study reports p = .04 and Cohen's d = 0.75 in 40 patients. Which statement is most accurate?",
+      "choices": [
+        "The result is significant but the effect is trivially small",
+        "The result fails to reach conventional significance",
+        "The small sample makes any effect size meaningless",
+        "The result is significant and the effect is medium to large"
+      ],
+      "answer": 3,
+      "why": "p = .04 clears the conventional .05 threshold, and d = 0.75 sits between the 0.5 medium and 0.8 large benchmarks. Calling the effect trivial confuses significance with magnitude, and a small sample makes significance harder to reach, not effect size meaningless.",
+      "lesson": "sci-psych-l01",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-psych-q005",
+      "q": "A neuron receives enough excitatory input to move its membrane from -70 mV to -55 mV. What happens next?",
+      "choices": [
+        "Sodium channels open and an action potential fires at full amplitude",
+        "The neuron fires a proportionally small action potential",
+        "Potassium rushes in and the cell hyperpolarizes",
+        "The sodium-potassium pump reverses direction"
+      ],
+      "answer": 0,
+      "why": "Reaching threshold near -55 mV opens voltage-gated sodium channels and produces an all-or-none spike peaking near +40 mV. There is no such thing as a proportionally small action potential, and potassium exits rather than enters during repolarization.",
+      "lesson": "sci-psych-l02",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-psych-q006",
+      "q": "A patient with myasthenia gravis has fluctuating weakness that worsens with use. Which neurotransmitter system is disrupted?",
+      "choices": [
+        "Dopamine at the substantia nigra",
+        "Acetylcholine at the neuromuscular junction",
+        "Serotonin at the raphe nuclei",
+        "GABA in the cortex"
+      ],
+      "answer": 1,
+      "why": "Myasthenia gravis involves antibodies against acetylcholine receptors at the neuromuscular junction, producing fatigable weakness. Dopamine loss in the substantia nigra gives Parkinson's rigidity and tremor rather than fatigable weakness, and serotonin and GABA are not motor endplate transmitters.",
+      "lesson": "sci-psych-l02",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-psych-q007",
+      "q": "After a frontal lobe injury, a previously reliable worker becomes impulsive and profane but his memory and movement are intact. Which historical case does this mirror?",
+      "choices": [
+        "Patient H.M.",
+        "Little Albert",
+        "Phineas Gage",
+        "Genie"
+      ],
+      "answer": 2,
+      "why": "Gage's 1848 frontal injury changed judgment and personality while sparing memory and motor function, which localized executive control to the frontal lobe. H.M. is the hippocampal amnesia case, and Little Albert concerns conditioned fear.",
+      "lesson": "sci-psych-l02",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-psych-q008",
+      "q": "Chronically elevated cortisol from sustained HPA activation would be expected to produce which combination?",
+      "choices": [
+        "Low blood glucose and enhanced immune response",
+        "Low blood pressure and enlarged hippocampus",
+        "Enhanced memory and reduced blood glucose",
+        "Elevated blood glucose, suppressed immunity, and hippocampal damage"
+      ],
+      "answer": 3,
+      "why": "Cortisol mobilizes glucose, dampens immune function, and injures hippocampal neurons over time, which is why chronic stress impairs memory. The distractors reverse each of these directions, which is the standard way this item is written wrong.",
+      "lesson": "sci-psych-l02",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-psych-q009",
+      "q": "A patient first notices a difference when a 50 g weight increases to 52 g. What is the Weber fraction, and the JND starting from 500 g?",
+      "choices": [
+        "0.04 and 20 g",
+        "0.04 and 2 g",
+        "0.02 and 10 g",
+        "0.4 and 200 g"
+      ],
+      "answer": 0,
+      "why": "The JND is 2 g on 50 g, so 2/50 = 0.04, and 0.04 x 500 = 20 g. Answering 2 g treats the JND as a fixed absolute amount, which is the exact error Weber's law identifies.",
+      "lesson": "sci-psych-l03",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-psych-q010",
+      "q": "A radiologist at the end of a 12-hour shift reports more faint findings than she did that morning, though her vision is unchanged. What has shifted?",
+      "choices": [
+        "Her absolute threshold for light",
+        "Her decision criterion in signal detection",
+        "Her transduction efficiency",
+        "Her binocular depth cues"
+      ],
+      "answer": 1,
+      "why": "Signal detection theory separates sensitivity from the criterion used to decide, and fatigue or caution moves the criterion without changing the sense organ. Transduction and depth cues concern the physical conversion and localization of stimuli, not the decision rule.",
+      "lesson": "sci-psych-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-psych-q011",
+      "q": "A patient wakes gasping repeatedly through the night, is sleepy all day, and has poorly controlled hypertension. Which diagnosis fits best?",
+      "choices": [
+        "Narcolepsy",
+        "Chronic insomnia",
+        "Obstructive sleep apnea",
+        "REM sleep behavior disorder"
+      ],
+      "answer": 2,
+      "why": "Repeated airway collapse fragments sleep and drives daytime sleepiness and hypertension, the signature of obstructive sleep apnea. Narcolepsy features sudden sleep attacks and cataplexy from orexin loss, and insomnia is difficulty initiating or maintaining sleep without the gasping arousals.",
+      "lesson": "sci-psych-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-psych-q012",
+      "q": "Which withdrawal syndrome carries a real risk of death without treatment?",
+      "choices": [
+        "Cocaine withdrawal",
+        "Cannabis withdrawal",
+        "Opioid withdrawal",
+        "Alcohol withdrawal"
+      ],
+      "answer": 3,
+      "why": "Alcohol and benzodiazepine withdrawal can produce seizures and delirium tremens and can be fatal, typically 12 to 48 hours after the last drink. Opioid withdrawal is intensely uncomfortable but rarely lethal on its own, and stimulant withdrawal is mainly dysphoric.",
+      "lesson": "sci-psych-l03",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-psych-q013",
+      "q": "A nurse removes a patient's uncomfortable oxygen mask each time he complains, and he complains more often. For the patient, this is an example of what?",
+      "choices": [
+        "Negative reinforcement",
+        "Positive punishment",
+        "Negative punishment",
+        "Extinction"
+      ],
+      "answer": 0,
+      "why": "Something aversive was removed and the behavior increased, which defines negative reinforcement. Both punishment options are wrong because the behavior became more frequent, and extinction would mean the complaining produced no consequence at all.",
+      "lesson": "sci-psych-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-psych-q014",
+      "q": "A patient who became violently ill after eating shrimp once now cannot tolerate the smell of shrimp two years later. What explains the strength of this single-trial learning?",
+      "choices": [
+        "Variable ratio reinforcement",
+        "Biological preparedness for taste aversion",
+        "Observational learning from others",
+        "Spontaneous recovery of an old response"
+      ],
+      "answer": 1,
+      "why": "Garcia showed taste aversions form after one pairing across hours of delay because organisms are biologically prepared to associate flavors with illness. Reinforcement schedules concern operant behavior, and nothing here was learned by watching someone else.",
+      "lesson": "sci-psych-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-psych-q015",
+      "q": "A therapist reinforces a withdrawn patient first for making eye contact, then for a greeting, then for a full sentence. What technique is this?",
+      "choices": [
+        "Systematic desensitization",
+        "Discrimination training",
+        "Shaping through successive approximations",
+        "Spontaneous recovery"
+      ],
+      "answer": 2,
+      "why": "Reinforcing progressively closer approximations of a target behavior is shaping. Systematic desensitization pairs relaxation with a feared hierarchy, and discrimination training teaches responding only to a specific stimulus.",
+      "lesson": "sci-psych-l04",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-psych-q016",
+      "q": "An anxious patient avoids driving after a crash, and each time she avoids, her anxiety drops. Why does the avoidance persist?",
+      "choices": [
+        "It is positively punished by relief",
+        "It is being extinguished by repeated exposure",
+        "It is a fixed interval schedule effect",
+        "It is negatively reinforced by anxiety relief"
+      ],
+      "answer": 3,
+      "why": "Relief removes an aversive state right after the avoidance, which is negative reinforcement and strengthens it, and this is why avoidance maintains anxiety disorders. It is the opposite of extinction, which requires facing the feared stimulus without escape.",
+      "lesson": "sci-psych-l04",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-psych-q017",
+      "q": "A patient can repeat a 7-digit number back immediately but cannot recall it 2 minutes later after conversation. Which system was used and then lost?",
+      "choices": [
+        "Short-term or working memory, without transfer to long-term storage",
+        "Implicit procedural memory",
+        "Iconic sensory memory",
+        "Retrograde memory prior to the event"
+      ],
+      "answer": 0,
+      "why": "Short-term memory holds about 7 plus or minus 2 items for 15 to 30 seconds and is lost without rehearsal or encoding into long-term storage. Iconic memory lasts a quarter of a second, and procedural memory concerns skills rather than digit spans.",
+      "lesson": "sci-psych-l05",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-psych-q018",
+      "q": "A student who memorized last year's vital sign ranges keeps recalling them instead of this year's updated values. What is this?",
+      "choices": [
+        "Retroactive interference",
+        "Proactive interference",
+        "Encoding failure",
+        "Source amnesia"
+      ],
+      "answer": 1,
+      "why": "Old learning is blocking new learning, which is proactive interference, with 'pro' pointing forward from the past. Retroactive interference is the reverse, where the new material would block recall of the old.",
+      "lesson": "sci-psych-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-psych-q019",
+      "q": "Which study plan produces the best long-term retention for the same total hours?",
+      "choices": [
+        "Rereading the chapter four times the night before",
+        "Highlighting key sentences and reviewing the highlights",
+        "Self-testing across several spaced days with mixed problem types",
+        "Copying notes verbatim into a fresh document"
+      ],
+      "answer": 2,
+      "why": "Retrieval practice, spacing and interleaving each independently improve durable learning and combine well. Rereading and highlighting produce fluency that feels like knowing but does not train retrieval, which is the operation an exam actually demands.",
+      "lesson": "sci-psych-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-psych-q020",
+      "q": "A clinician sees an unusual case of aortic dissection on Monday and orders CT angiography on three chest pain patients that week. Which bias is operating?",
+      "choices": [
+        "Anchoring",
+        "Framing effect",
+        "Functional fixedness",
+        "Availability heuristic"
+      ],
+      "answer": 3,
+      "why": "A vivid recent case is easy to recall and inflates the perceived likelihood of that diagnosis, which is the availability heuristic. Anchoring involves sticking to a first impression in one case, and framing concerns how identical information is worded.",
+      "lesson": "sci-psych-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-psych-q021",
+      "q": "An IQ of 115 corresponds to which z score and approximate percentile?",
+      "choices": [
+        "z = 1.0, about the 84th percentile",
+        "z = 1.0, about the 68th percentile",
+        "z = 1.5, about the 93rd percentile",
+        "z = 2.0, about the 98th percentile"
+      ],
+      "answer": 0,
+      "why": "z = (115 - 100) / 15 = 1.0, and with 68% of scores within 1 SD, 16% lies above, so 84% lies below. Choosing the 68th percentile mistakes the proportion inside the interval for a percentile rank.",
+      "lesson": "sci-psych-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-psych-q022",
+      "q": "A stroke patient speaks fluently in long sentences that make no sense and cannot follow spoken commands. Which area is damaged?",
+      "choices": [
+        "Broca's area in the frontal lobe",
+        "Wernicke's area in the temporal lobe",
+        "The occipital cortex",
+        "The cerebellum"
+      ],
+      "answer": 1,
+      "why": "Fluent but meaningless speech with impaired comprehension is Wernicke's aphasia, a temporal lobe lesion. Broca's aphasia would produce halting, effortful speech with comprehension largely intact, which is the reverse pattern.",
+      "lesson": "sci-psych-l06",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-psych-q023",
+      "q": "An 80-year-old scores lower on timed novel reasoning tasks but higher than ever on vocabulary. What does this illustrate?",
+      "choices": [
+        "Early dementia",
+        "Stereotype threat",
+        "Declining fluid intelligence with preserved crystallized intelligence",
+        "The Flynn effect within one person"
+      ],
+      "answer": 2,
+      "why": "Fluid intelligence, the ability to reason about novel problems quickly, declines with age while crystallized knowledge holds or grows. Dementia would impair daily function, and the Flynn effect describes rising scores across generations, not within one person.",
+      "lesson": "sci-psych-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-psych-q024",
+      "q": "A well-rehearsed EMT performs CPR flawlessly under intense stress but cannot complete an unfamiliar drug calculation. Which principle predicts both results?",
+      "choices": [
+        "Yerkes-Dodson law: high arousal helps simple tasks and hurts complex ones",
+        "Drive-reduction theory",
+        "Overjustification effect",
+        "Set point theory"
+      ],
+      "answer": 0,
+      "why": "Optimal arousal is higher for well-learned, simple tasks and lower for complex, novel ones, exactly the split described. Drive reduction concerns biological needs, and overjustification concerns external rewards undermining intrinsic interest.",
+      "lesson": "sci-psych-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-psych-q025",
+      "q": "Which sequence correctly describes Selye's general adaptation syndrome?",
+      "choices": [
+        "Resistance, alarm, exhaustion",
+        "Alarm, resistance, exhaustion",
+        "Appraisal, coping, recovery",
+        "Exhaustion, alarm, adaptation"
+      ],
+      "answer": 1,
+      "why": "Alarm is the initial sympathetic surge, resistance is sustained cortisol-driven coping, and exhaustion is reserve failure with rising illness risk. The appraisal-coping sequence belongs to Lazarus's model of stress appraisal, not Selye's physiological staging.",
+      "lesson": "sci-psych-l07",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-psych-q026",
+      "q": "A patient with hypertension stops his medication because he 'feels fine.' Which health psychology factor best explains this?",
+      "choices": [
+        "Low conscientiousness alone",
+        "Emotion-focused coping",
+        "An asymptomatic disease providing no feedback to reinforce the behavior",
+        "The Barnum effect"
+      ],
+      "answer": 2,
+      "why": "Asymptomatic conditions give no immediate consequence for taking or skipping a dose, removing the reinforcement that sustains adherence, and roughly half of chronic-disease patients are nonadherent for reasons like this. Personality contributes but does not explain the specific pattern, and the Barnum effect concerns vague personality feedback.",
+      "lesson": "sci-psych-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-psych-q027",
+      "q": "A 4-year-old refuses an injection that will prevent illness next winter. Which developmental fact best explains the refusal?",
+      "choices": [
+        "Preoperational thinking cannot reason about abstract future consequences",
+        "Formal operational reasoning is already complete",
+        "Object permanence has not developed",
+        "The child is in Erikson's industry stage"
+      ],
+      "answer": 0,
+      "why": "Preoperational children, roughly ages 2 to 7, reason concretely about the immediate present and cannot weigh an abstract future benefit against present pain. Object permanence is a sensorimotor achievement completed years earlier, and industry versus inferiority begins around age 6.",
+      "lesson": "sci-psych-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-psych-q028",
+      "q": "A 16-year-old with good grades drives recklessly with friends. Which explanation is best supported?",
+      "choices": [
+        "Failure of formal operational reasoning",
+        "Insecure attachment in infancy",
+        "Preconventional moral reasoning only",
+        "Limbic reward maturation outpacing prefrontal cortex development until about age 25"
+      ],
+      "answer": 3,
+      "why": "The reward system matures years before the prefrontal control system, producing risk-taking despite intact reasoning ability, which good grades already demonstrate. Attachment history and moral stage do not explain the specific gap between capability and behavior under peer arousal.",
+      "lesson": "sci-psych-l08",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-psych-q029",
+      "q": "In Ainsworth's Strange Situation, an infant explores freely, becomes distressed when the caregiver leaves, and is quickly comforted on return. What classification is this?",
+      "choices": [
+        "Securely attached",
+        "Insecure-avoidant",
+        "Insecure-anxious/ambivalent",
+        "Disorganized"
+      ],
+      "answer": 0,
+      "why": "Using the caregiver as a base for exploration and being readily soothed on reunion defines secure attachment, seen in about 60 to 65% of infants. Avoidant infants show little distress or reunion seeking, and ambivalent infants resist comfort while remaining distressed.",
+      "lesson": "sci-psych-l08",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-psych-q030",
+      "q": "A staff member concludes a repeatedly late colleague is lazy, while attributing her own lateness to traffic. What pair of biases is this?",
+      "choices": [
+        "Groupthink and polarization",
+        "Fundamental attribution error and actor-observer bias",
+        "Availability and anchoring",
+        "Cognitive dissonance and dissonance reduction"
+      ],
+      "answer": 1,
+      "why": "Explaining someone else's behavior dispositionally while explaining your own situationally is exactly the fundamental attribution error paired with actor-observer bias. Availability and anchoring are judgment heuristics about likelihood and first impressions, not attributions of cause to person versus situation.",
+      "lesson": "sci-psych-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-psych-q031",
+      "q": "In Asch's conformity studies, which change most sharply reduced conformity?",
+      "choices": [
+        "Increasing the group from 3 to 10 confederates",
+        "Making the line judgment harder",
+        "Having a single other person give the correct answer",
+        "Conducting the study at a prestigious university"
+      ],
+      "answer": 2,
+      "why": "One dissenting ally broke unanimity and dropped conformity dramatically, showing that unanimity, not group size alone, carried the pressure. Larger groups and greater task difficulty both tend to increase conformity rather than reduce it.",
+      "lesson": "sci-psych-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-psych-q032",
+      "q": "A team lead shouts 'someone get the crash cart' into a crowded room and nobody moves. What is the mechanism, and the fix?",
+      "choices": [
+        "Social loafing; increase group size",
+        "Groupthink; take a vote",
+        "Group polarization; separate the group",
+        "Diffusion of responsibility; assign the task to one named person"
+      ],
+      "answer": 3,
+      "why": "With responsibility spread across many witnesses, each person assumes another will act, which is the bystander effect driven by diffusion of responsibility, and naming an individual restores accountability. Social loafing concerns reduced effort on a shared task, and groupthink concerns suppressed dissent in decision-making.",
+      "lesson": "sci-psych-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-psych-q033",
+      "q": "A patient reports 8 months of uncontrollable worry about many topics, restlessness, muscle tension and poor sleep, with no discrete attacks. What is the most likely diagnosis?",
+      "choices": [
+        "Generalized anxiety disorder",
+        "Panic disorder",
+        "Post-traumatic stress disorder",
+        "Obsessive-compulsive disorder"
+      ],
+      "answer": 0,
+      "why": "Excessive worry across multiple domains for more than 6 months with physical tension defines generalized anxiety disorder. Panic disorder requires recurrent discrete attacks peaking within 10 minutes, and PTSD requires an index trauma with re-experiencing and avoidance.",
+      "lesson": "sci-psych-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-psych-q034",
+      "q": "A 22-year-old has had 5 days of little sleep, grandiose plans, pressured speech and impulsive spending, and was hospitalized. What does this establish?",
+      "choices": [
+        "Major depressive disorder with psychotic features",
+        "A manic episode, which establishes bipolar I",
+        "Schizophrenia",
+        "Borderline personality disorder"
+      ],
+      "answer": 1,
+      "why": "A manic episode lasting 7 days, or any duration requiring hospitalization, establishes bipolar I regardless of whether depression has occurred. Schizophrenia requires 6 months of psychotic and negative symptoms, and personality disorders describe stable lifelong patterns rather than a discrete episode.",
+      "lesson": "sci-psych-l10",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-psych-q035",
+      "q": "Which treatment pairing is best supported by evidence?",
+      "choices": [
+        "Benzodiazepines as monotherapy for OCD",
+        "Projective testing to guide phobia treatment",
+        "Exposure and response prevention plus an SSRI for OCD",
+        "Electroconvulsive therapy as first-line for generalized anxiety"
+      ],
+      "answer": 2,
+      "why": "Exposure with response prevention combined with an SSRI is the best-supported regimen for OCD. Benzodiazepines relieve acute anxiety but reinforce avoidance and do not treat the disorder, and ECT is reserved for severe treatment-resistant or catatonic depression.",
+      "lesson": "sci-psych-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-psych-q036",
+      "q": "A 30-year-old arrives with chest tightness, palpitations, tingling hands and a sense of doom that peaked in 8 minutes. What is the correct approach?",
+      "choices": [
+        "Diagnose a panic attack and discharge with reassurance",
+        "Give a benzodiazepine before any testing",
+        "Assume hyperventilation and coach breathing only",
+        "Work up cardiac, metabolic and pulmonary causes before settling on panic"
+      ],
+      "answer": 3,
+      "why": "Panic attack is a diagnosis of exclusion because acute coronary syndrome, arrhythmia, pulmonary embolism, hypoglycemia and thyrotoxicosis all present identically. Treating or discharging before the workup is how a lethal cause gets labeled anxiety and missed.",
+      "lesson": "sci-psych-l10",
+      "difficulty": 3
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "sci-psych-s01",
+      "title": "Journal club: critiquing a research design",
+      "setting": "classroom",
+      "intro": "Your instructor hands out an abstract. A wellness company reports that its `8`-week mindfulness app 'reduces anxiety by `40%`.' The study recruited `250` adults through Instagram ads, let them choose whether to use the app or join a waitlist, and measured anxiety with a self-designed `10`-item questionnaire at week `0` and week `8`. The app group improved from a mean of `18` to `11`; the waitlist group went from `17` to `16`. The paper reports `p < .01` and no effect size. Attrition is not mentioned.\n\nYour job is to take the design apart in order, not to decide whether mindfulness works.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "First pass. Which structural feature of this study most limits what can be concluded?",
+          "choices": [
+            {
+              "text": "Participants chose their own group, so there was no random assignment",
+              "next": "s2",
+              "feedback": "Correct, and it is the first thing to check. People who volunteer for a mindfulness arm likely differ in motivation, baseline symptoms and free time. Without random assignment the two groups may have differed before anything happened.",
+              "score": 1
+            },
+            {
+              "text": "The sample of 250 is too small to detect anything",
+              "next": "s2",
+              "feedback": "Not the issue. 250 is a reasonable size, and the study did detect a difference. Sample size affects precision and power, not whether a causal claim is licensed.",
+              "score": 0
+            },
+            {
+              "text": "The study lasted only 8 weeks",
+              "next": "s2",
+              "feedback": "Duration limits what you can say about durability, which is a real but secondary concern. It does not touch the deeper problem that the groups were never made comparable.",
+              "score": 0
+            },
+            {
+              "text": "Anxiety cannot be measured numerically at all",
+              "next": "s2",
+              "feedback": "This overshoots. Anxiety is routinely operationalized with validated instruments such as the GAD-7. The problem here is which instrument was used, not whether measurement is possible.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "Now the measure itself. The team built its own `10`-item questionnaire rather than using a validated scale. What is the strongest specific objection?",
+          "choices": [
+            {
+              "text": "A self-built scale has no established reliability or validity, so a 7-point change has no known meaning",
+              "next": "s3",
+              "feedback": "Exactly right. Without test-retest reliability and validation against an established measure, nobody knows whether the instrument is consistent or whether it measures anxiety at all. Movement on an unvalidated scale is uninterpretable.",
+              "score": 1
+            },
+            {
+              "text": "Self-report is never acceptable in research",
+              "next": "s3",
+              "feedback": "Too strong. Self-report is the standard for internal states, and the GAD-7 and PHQ-9 are self-report instruments in daily clinical use. The problem is validation, not the self-report format.",
+              "score": 0
+            },
+            {
+              "text": "Ten items is too few to measure anything",
+              "next": "s3",
+              "feedback": "Item count is not the issue; the GAD-7 uses seven items and performs well. What matters is whether the items were shown to be reliable and valid.",
+              "score": 0
+            },
+            {
+              "text": "The scale should have been administered by the investigators to keep it consistent",
+              "next": "s3",
+              "feedback": "That would make things worse. Unblinded investigators administering their own instrument adds experimenter expectancy on top of the validity problem.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "A classmate says the waitlist control handles the placebo problem. Is that right?",
+          "choices": [
+            {
+              "text": "No. A waitlist group knows it is getting nothing, so expectancy differs between arms",
+              "next": "s4",
+              "feedback": "Correct. A waitlist is a no-treatment control, not a placebo control. The app group expects to improve and the waitlist group does not, so expectancy is confounded with the intervention. A sham app with equal contact time would separate them.",
+              "score": 1
+            },
+            {
+              "text": "Yes, a control group is a control group",
+              "next": "s4",
+              "feedback": "Not quite. Having a comparison group prevents you from mistaking natural improvement for treatment effect, but it does not control expectation unless the control is credible to the participant.",
+              "score": 0
+            },
+            {
+              "text": "No, and nothing short of a double-blind design is interpretable here",
+              "next": "s4",
+              "feedback": "Blinding participants to a behavioral intervention is often impossible, which is why sham-control and active-comparator designs exist. Demanding double blinding would rule out most psychotherapy research.",
+              "score": 0
+            },
+            {
+              "text": "Yes, and the placebo effect does not apply to psychological treatments anyway",
+              "next": "s4",
+              "feedback": "Backwards. Expectancy effects are largest where the outcome is a self-reported subjective state, which is exactly this study.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "The abstract reports `p < .01` and no effect size, and does not mention how many people dropped out. What are you most concerned about?",
+          "choices": [
+            {
+              "text": "That p < .01 is being read as proof of a large, important effect",
+              "next": "s5",
+              "feedback": "Right, and the missing effect size is why you cannot check. A p value speaks to how surprising the result would be if there were no effect; it says nothing about magnitude. Cohen's d belongs in the abstract.",
+              "score": 1
+            },
+            {
+              "text": "That attrition may have been differential, with discouraged app users dropping out and leaving improvers behind",
+              "next": "s5",
+              "feedback": "Also a strong catch and arguably the more damaging one. Unreported attrition can manufacture the entire result, which is why intention-to-treat analysis exists.",
+              "score": 1
+            },
+            {
+              "text": "That p < .01 is too strict a threshold",
+              "next": "s5",
+              "feedback": "Thresholds are conventions and a stricter one is not the problem. The issue is what a p value can and cannot tell you.",
+              "score": 0
+            },
+            {
+              "text": "That the p value proves the app caused the change",
+              "next": "s5",
+              "feedback": "No. A p value is computed inside whatever design you have. It cannot repair a design that never randomized anyone.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "Final move. The instructor asks how you would redesign the study to support a causal claim. Choose the strongest proposal.",
+          "choices": [
+            {
+              "text": "Randomly assign participants to the app or an active sham app with matched contact time, measure with the GAD-7, keep outcome assessors blinded, pre-register the analysis, and report effect size with intention-to-treat",
+              "next": "end",
+              "feedback": "This is the answer. Random assignment handles confounding, the active control handles expectancy, a validated scale handles measurement, assessor blinding handles expectancy in scoring, pre-registration handles analysis flexibility, and intention-to-treat handles attrition.",
+              "score": 1
+            },
+            {
+              "text": "Keep the design but enroll 5,000 participants instead of 250",
+              "next": "end",
+              "feedback": "A bigger biased sample is just a more precise wrong answer. Size improves precision and never fixes a structural flaw.",
+              "score": -1
+            },
+            {
+              "text": "Keep self-selection but statistically adjust for baseline differences you happened to measure",
+              "next": "end",
+              "feedback": "Adjustment helps only for confounders you thought to measure. Randomization balances the ones nobody thought of, which is its whole advantage.",
+              "score": 0
+            },
+            {
+              "text": "Run the same study in three more cities and pool the results",
+              "next": "end",
+              "feedback": "Replicating a flawed design reproduces the flaw. Consistency across sites is not evidence of causation when every site shares the same structural weakness.",
+              "score": 0
+            }
+          ]
+        }
+      ],
+      "debrief": "The order you used is the order to keep: assignment, measurement, control, analysis, then redesign. Ask first whether anyone was randomized, because that single fact sets the ceiling on every causal claim that follows. Then ask what the numbers on the outcome scale actually mean, because an unvalidated instrument makes any change uninterpretable. Then ask whether the comparison group expected to improve. Only then argue about statistics, and when you do, insist on an effect size, since `p < .01` tells you a result is unlikely by chance and nothing about whether it matters. Finally, remember that a bigger sample, more sites and fancier adjustment never repair a design that let people choose their own group."
+    },
+    {
+      "id": "sci-psych-s02",
+      "title": "Case formulation: from symptoms to an evidence-based treatment",
+      "setting": "classroom",
+      "intro": "A case is presented for formulation. A `27`-year-old warehouse worker was in a serious forklift accident `5` months ago in which a coworker was badly injured. Since then he has nightmares most nights, feels his heart race whenever he hears a loud metallic bang, avoids the section of the building where it happened, has stopped seeing friends, describes himself as constantly on edge and scanning for danger, and says he feels detached and blames himself for not shouting a warning. He drinks four to six beers most nights to fall asleep. He has no prior psychiatric history.\n\nWork it in the standard order: rule out medical causes, match to DSM-5-TR criteria, then choose treatment.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "First step before naming any psychiatric diagnosis. What do you do?",
+          "choices": [
+            {
+              "text": "Screen for medical and substance causes that mimic these symptoms, including thyroid disease, head injury from the accident, and alcohol withdrawal",
+              "next": "s2",
+              "feedback": "Correct, and it is not a formality. He sustained a physical accident and drinks nightly. Post-concussive syndrome, hyperthyroidism and morning withdrawal tremor all produce hyperarousal and poor sleep.",
+              "score": 1
+            },
+            {
+              "text": "Start with the psychiatric interview, since the trauma history is obvious",
+              "next": "s2",
+              "feedback": "Understandable but premature. An obvious psychosocial explanation is exactly when a medical mimic gets missed, and he has two specific physical risk factors sitting in the history.",
+              "score": 0
+            },
+            {
+              "text": "Administer a projective test to uncover unconscious conflict",
+              "next": "s2",
+              "feedback": "Projective tests have poor reliability and validity and would not contribute to this formulation. Structured history and validated screening instruments do the work here.",
+              "score": -1
+            },
+            {
+              "text": "Collect a full symptom timeline alongside a basic medical review",
+              "next": "s2",
+              "feedback": "Reasonable and efficient. Just make sure the medical review is explicit rather than assumed, because the accident itself may have caused a head injury.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "Medical workup is unremarkable. Now sort his symptoms into the four DSM-5-TR symptom clusters for trauma-related illness. Which grouping is correct?",
+          "choices": [
+            {
+              "text": "Intrusion (nightmares), avoidance (the accident site, friends), negative mood and cognition (detachment, self-blame), and hyperarousal (startle, scanning)",
+              "next": "s3",
+              "feedback": "Exactly right. All four clusters are present, the index event was life-threatening, and duration is more than 1 month, which is the threshold separating PTSD from acute stress disorder.",
+              "score": 1
+            },
+            {
+              "text": "Obsessions (intrusive images) and compulsions (avoidance behaviors)",
+              "next": "s3",
+              "feedback": "Tempting on the surface, but the intrusions here are memories of a real event rather than ego-dystonic obsessions, and the avoidance is trauma-cued rather than a ritual performed to neutralize an obsession.",
+              "score": 0
+            },
+            {
+              "text": "Low mood, anhedonia and social withdrawal, so this is major depressive disorder",
+              "next": "s3",
+              "feedback": "Depressive features are genuinely present and often co-occur, but a formulation that stops at depression leaves the intrusions, the cued physiological reactivity and the avoidance unexplained.",
+              "score": 0
+            },
+            {
+              "text": "Excessive worry about many topics for more than 6 months, so this is generalized anxiety disorder",
+              "next": "s3",
+              "feedback": "The facts do not fit. His anxiety is anchored to one event and its cues, not free-floating across domains, and the duration is 5 months.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "Name the learning mechanisms that keep this going. Which explanation is most complete?",
+          "choices": [
+            {
+              "text": "A loud bang became a conditioned stimulus through classical conditioning, and avoidance is negatively reinforced by the relief it produces, preventing extinction",
+              "next": "s4",
+              "feedback": "That is the full mechanism. Pairing produced the cued fear response, and every successful avoidance removes anxiety and strengthens the avoidance, which is exactly why the fear never extinguishes on its own.",
+              "score": 1
+            },
+            {
+              "text": "Classical conditioning paired the bang with danger, which explains the startle",
+              "next": "s4",
+              "feedback": "Half the picture. It explains how the cue acquired its power but not why 5 months of everyday loud noises have failed to extinguish it. The missing piece is what avoidance does.",
+              "score": 0
+            },
+            {
+              "text": "Avoidance is being positively punished by his distress",
+              "next": "s4",
+              "feedback": "The direction is wrong. Avoidance is increasing in frequency, so whatever is maintaining it is reinforcement, not punishment.",
+              "score": 0
+            },
+            {
+              "text": "He has learned helplessness and nothing can change without medication first",
+              "next": "s4",
+              "feedback": "Neither part holds. The pattern is active avoidance rather than passive helplessness, and trauma-focused psychotherapy is effective without medication being started first.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "Choose the first-line treatment plan.",
+          "choices": [
+            {
+              "text": "Trauma-focused CBT with prolonged exposure, plus addressing the nightly alcohol use, with an SSRI offered as an adjunct",
+              "next": "s5",
+              "feedback": "This is the evidence-based answer. Trauma-focused CBT and exposure have the strongest support for PTSD, the alcohol is both a withdrawal risk and a barrier to extinction learning, and SSRIs are an effective adjunct taking 4 to 6 weeks.",
+              "score": 1
+            },
+            {
+              "text": "A standing benzodiazepine for anxiety and sleep",
+              "next": "s5",
+              "feedback": "Actively harmful here. Benzodiazepines blunt the arousal that exposure needs in order to extinguish, add dependence risk, and combine badly with heavy alcohol use.",
+              "score": -1
+            },
+            {
+              "text": "Long-term psychodynamic therapy to explore unconscious conflict about the coworker",
+              "next": "s5",
+              "feedback": "It may eventually help with guilt, but the evidence base for PTSD favors trauma-focused CBT and exposure, and the avoidance cycle needs to be broken directly.",
+              "score": 0
+            },
+            {
+              "text": "Supportive counseling and a follow-up in 3 months",
+              "next": "s5",
+              "feedback": "Supportive contact is better than nothing, but at 5 months this is established PTSD with escalating alcohol use. Watchful waiting has already been tried by default and failed.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "He asks why the treatment involves deliberately revisiting the accident when avoiding it is the only thing that helps. What do you tell him?",
+          "choices": [
+            {
+              "text": "Avoidance relieves anxiety in the moment, which trains the brain to keep avoiding; staying with the memory or cue long enough lets the fear response fade on its own, which is extinction",
+              "next": "end",
+              "feedback": "Correct, and explaining the mechanism is part of the treatment. Patients tolerate exposure far better when they understand that the relief from avoidance is the trap rather than the cure.",
+              "score": 1
+            },
+            {
+              "text": "Because facing fears builds character",
+              "next": "end",
+              "feedback": "This gives him no mechanism and no reason to tolerate the distress. Exposure works because of extinction, and saying so is what makes it credible.",
+              "score": -1
+            },
+            {
+              "text": "Because the therapy protocol requires it",
+              "next": "end",
+              "feedback": "Accurate but uninformative. Appealing to the protocol instead of the reason predicts dropout, which is the main failure mode of exposure therapy.",
+              "score": 0
+            },
+            {
+              "text": "Because talking about trauma releases repressed emotion",
+              "next": "end",
+              "feedback": "That is a psychodynamic framing, not the mechanism of exposure. The active ingredient is repeated contact with the cue without the feared outcome, which weakens the conditioned response.",
+              "score": 0
+            }
+          ]
+        }
+      ],
+      "debrief": "The formulation sequence is the transferable part: rule out medical and substance causes first, map symptoms onto explicit criteria second, name the maintaining mechanism third, and only then pick a treatment that targets that mechanism. Here the criteria were the four PTSD clusters beyond `1` month, the mechanism was classical conditioning of trauma cues maintained by negatively reinforced avoidance, and the treatment followed directly: exposure is extinction performed on purpose. Notice what the mechanism also rules out. A standing benzodiazepine suppresses the arousal exposure depends on, and nightly alcohol does the same thing while adding a withdrawal risk. When a patient asks why treatment means approaching what they have been escaping, explain the trap: the relief is what teaches the avoidance to persist."
+    }
+  ]
+}

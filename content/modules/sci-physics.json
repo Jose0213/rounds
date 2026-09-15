@@ -1,0 +1,1666 @@
+{
+  "schema": 1,
+  "id": "sci-physics",
+  "track": "prereq",
+  "title": "Physics for the Health Sciences",
+  "short": "Physics",
+  "summary": "The algebra-based physics course health programs require, taught in syllabus order with every formula worked by hand on real numbers. Each topic is tied to the body: lifting mechanics, trauma forces, blood flow, body heat, ultrasound, defibrillators and radiation dose.",
+  "lessons": [
+    {
+      "id": "sci-physics-l01",
+      "title": "Measurement, units, and vectors",
+      "minutes": 7,
+      "body": "Physics is bookkeeping with units. Nearly every wrong answer on a physics exam is a unit that was never converted or a number that was never checked for size.\n\n## SI base units\n\nEverything in mechanics is built from three of them: the **meter** (`m`) for length, the **kilogram** (`kg`) for mass, the **second** (`s`) for time. Force is not a base unit; it is built: `1 N = 1 kg*m/s^2`. Energy is built too: `1 J = 1 N*m`. Power is energy per second: `1 W = 1 J/s`.\n\nPrefixes shift the decimal point by powers of ten. The ones you actually use in medicine:\n\n| Prefix | Symbol | Factor |\n|---|---|---|\n| mega | M | `10^6` |\n| kilo | k | `10^3` |\n| centi | c | `10^-2` |\n| milli | m | `10^-3` |\n| micro | mc | `10^-6` |\n| nano | n | `10^-9` |\n\n## Dimensional analysis\n\nConvert by multiplying by fractions that equal one, arranged so the unwanted unit cancels. This is the same skill as drug math.\n\n1. Write the number with its unit: `70 kg`.\n2. Multiply by a conversion fraction that cancels it: `70 kg * (2.2 lb / 1 kg)`.\n3. Cancel `kg` and multiply the numbers: `154 lb`.\n\nIf the units of your answer are wrong, the arithmetic does not matter.\n\n> **Key:** Carry units through every line of algebra. Units that do not cancel to the expected answer unit are telling you the setup is wrong before you ever check the number.\n\n## Significant figures and scientific notation\n\nSignificant figures record how precisely something was measured. Non-zero digits always count; zeros between digits count; leading zeros never count; trailing zeros count only past a decimal point. So `0.00450` has three sig figs.\n\nWhen you multiply or divide, the answer gets the *fewest* sig figs of any input. When you add or subtract, the answer gets the fewest *decimal places*.\n\nScientific notation writes any number as a digit between 1 and 10 times a power of ten: a red cell is about `8 x 10^-6 m` across, an adult has about `5 x 10^6` red cells per microliter. Multiply by adding exponents, divide by subtracting them.\n\n## Scalars and vectors\n\nA **scalar** is a size only: mass, time, speed, energy, temperature. A **vector** has size and direction: displacement, velocity, acceleration, force, momentum.\n\nAny vector splits into perpendicular parts called **components**. For a vector of size `A` pointed at angle `theta` above the horizontal:\n\n- `Ax = A * cos(theta)`\n- `Ay = A * sin(theta)`\n- back again: `A = sqrt(Ax^2 + Ay^2)`\n\nAdd vectors by adding components separately, never by adding the magnitudes.\n\nWorked example. A traction setup pulls with `100 N` at `30 degrees` above horizontal.\n\n1. Horizontal part: `Ax = 100 * cos(30) = 100 * 0.866 = 86.6 N`.\n2. Vertical part: `Ay = 100 * sin(30) = 100 * 0.500 = 50.0 N`.\n3. Check: `sqrt(86.6^2 + 50.0^2) = sqrt(7500 + 2500) = 100 N`.\n\nOnly `86.6 N` of that pull acts along the limb. The rest lifts it.\n\n> **Trap:** Two `100 N` pulls do not make `200 N` unless they point the same way. At `90 degrees` to each other they make `141 N`.",
+      "keyPoints": [
+        "SI mechanics is built from meter, kilogram and second; `1 N = 1 kg*m/s^2` and `1 J = 1 N*m`.",
+        "Convert by multiplying by fractions equal to one so the unwanted unit cancels.",
+        "Multiplying keeps the fewest significant figures; adding keeps the fewest decimal places.",
+        "Scalars have size only; vectors have size and direction and must be added by components.",
+        "Components: `Ax = A*cos(theta)`, `Ay = A*sin(theta)`, magnitude `A = sqrt(Ax^2 + Ay^2)`."
+      ],
+      "checks": [
+        {
+          "q": "How many significant figures are in `0.00450`?",
+          "choices": [
+            "Two",
+            "Three",
+            "Four",
+            "Five"
+          ],
+          "answer": 1,
+          "why": "Leading zeros never count, so the 4, the 5 and the trailing zero past the decimal point give three significant figures."
+        },
+        {
+          "q": "A cable pulls with `200 N` at `60 degrees` above horizontal. What is the horizontal component?",
+          "choices": [
+            "`100 N`",
+            "`173 N`",
+            "`200 N`",
+            "`346 N`"
+          ],
+          "answer": 0,
+          "why": "`Ax = 200 * cos(60) = 200 * 0.500 = 100 N`. Choosing `173 N` uses sin(60) instead, which gives the vertical component."
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-l02",
+      "title": "Kinematics: motion in one and two dimensions",
+      "minutes": 8,
+      "body": "Kinematics describes motion without asking what caused it. Four quantities do all the work: displacement `d`, initial velocity `v0`, final velocity `v`, and acceleration `a`, tied together by time `t`.\n\n## Speed, velocity, acceleration\n\n**Speed** is distance over time, a scalar. **Velocity** is displacement over time, a vector, so it changes when direction changes even if speed does not. **Acceleration** is change in velocity over time: `a = (v - v0) / t`, in `m/s^2`.\n\nDisplacement is not distance. Walk `50 m` down a hallway and back and you covered `100 m` of distance with `0 m` of displacement.\n\n## The four kinematic equations\n\nThey apply only when acceleration is constant.\n\n1. `v = v0 + a*t`\n2. `d = v0*t + 0.5*a*t^2`\n3. `v^2 = v0^2 + 2*a*d`\n4. `d = 0.5*(v0 + v)*t`\n\nPick the one that contains the three things you know and the one thing you want. Equation 3 is the one to reach for when time is not given and not wanted.\n\n> **Key:** The sign of `a` is not \"speeding up or slowing down.\" It is direction. If velocity and acceleration have opposite signs, the object slows.\n\n## Free fall\n\nNear the ground, gravity gives every object the same downward acceleration, `g = 9.8 m/s^2`, regardless of mass, once air resistance is ignored. An object dropped from rest has `v0 = 0`.\n\nWorked example. A patient falls from a second-floor window, `6.0 m` up.\n\n1. Known: `v0 = 0`, `a = 9.8 m/s^2`, `d = 6.0 m`. Want `v`.\n2. Use `v^2 = v0^2 + 2*a*d = 0 + 2*9.8*6.0 = 117.6`.\n3. `v = sqrt(117.6) = 10.8 m/s`, about `24 mph` at impact.\n4. Time: `v = v0 + a*t`, so `t = 10.8 / 9.8 = 1.1 s`.\n\nA one-second fall produces highway-speed impact. That is why fall height is a trauma triage criterion: greater than `20 ft` for adults, or greater than `10 ft` or two to three times the child's height for pediatrics.\n\n## Two dimensions: projectiles\n\nHorizontal and vertical motion are independent. Gravity acts only on the vertical part, so:\n\n- Horizontal: `a = 0`, velocity constant, `x = vx * t`.\n- Vertical: `a = -9.8 m/s^2`, all four equations apply.\n\nTime is the only quantity the two directions share. Solve the vertical for time, then feed that time to the horizontal.\n\nA bullet fired level and a bullet dropped from the same height hit the ground at the same instant. The horizontal velocity buys no extra hang time.\n\nWorked example. Someone is pushed horizontally off a `5.0 m` ledge at `3.0 m/s`.\n\n1. Vertical: `d = 0.5*a*t^2`, so `5.0 = 0.5*9.8*t^2`, `t^2 = 1.02`, `t = 1.01 s`.\n2. Horizontal: `x = 3.0 * 1.01 = 3.0 m` from the base.\n\nDistance from the wall is how investigators separate a fall from a jump or a push.\n\n> **On the exam:** \"Dropped from rest\" means `v0 = 0`. \"Thrown horizontally\" means the *vertical* `v0 = 0` while the horizontal velocity is unchanged the whole way down.",
+      "keyPoints": [
+        "Velocity is a vector; changing direction is acceleration even at constant speed.",
+        "The four constant-acceleration equations; use `v^2 = v0^2 + 2*a*d` when time is missing.",
+        "Free fall is `g = 9.8 m/s^2` for every mass; a `6 m` fall lands at about `10.8 m/s`.",
+        "Projectile motion splits into independent horizontal and vertical problems sharing only time.",
+        "Fall height drives trauma triage: over `20 ft` adult, over `10 ft` or 2-3 times height pediatric."
+      ],
+      "checks": [
+        {
+          "q": "An object is dropped from rest and falls `20 m`. Using `g = 9.8 m/s^2`, what is its impact speed?",
+          "choices": [
+            "`14 m/s`",
+            "`20 m/s`",
+            "`40 m/s`",
+            "`196 m/s`"
+          ],
+          "answer": 1,
+          "why": "`v^2 = 2*9.8*20 = 392`, so `v = 19.8 m/s`, about `20 m/s`. The value `196` is `v^2` divided incorrectly and never square-rooted."
+        },
+        {
+          "q": "A ball rolls off a table at `2 m/s` while an identical ball is dropped from the same height. Which lands first?",
+          "choices": [
+            "The rolled ball",
+            "The dropped ball",
+            "They land at the same time",
+            "It depends on the masses"
+          ],
+          "answer": 2,
+          "why": "Vertical and horizontal motion are independent; both have the same vertical `v0 = 0` and the same `g`, so both take the same time. Mass never affects free-fall time."
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-l03",
+      "title": "Newton's laws, friction, and safe lifting",
+      "minutes": 8,
+      "body": "Kinematics says what motion happened. Newton says why. Three laws cover every mechanics problem you will be asked.\n\n## The three laws\n\n1. **Inertia.** An object keeps doing what it is doing unless a net force acts. A body in a car at `30 mph` keeps moving at `30 mph` after the car stops, which is the whole of trauma kinematics.\n2. **`F = m*a`.** Net force equals mass times acceleration, and acceleration points along the net force. Double the force for the same mass and you double the acceleration.\n3. **Action and reaction.** Forces come in equal and opposite pairs on *different* objects. The floor pushes up on you exactly as hard as you push down on it.\n\n**Weight** is a force, not a mass: `W = m*g`. A `70 kg` person weighs `70 * 9.8 = 686 N`. Mass is unchanged on the moon; weight is not.\n\n## Free-body diagrams\n\nDraw the object as a dot and every force acting *on it* as an arrow. Typical arrows: weight down, normal force perpendicular to the surface, friction along the surface, tension along a rope, applied push or pull.\n\nThen write the net force in each direction. If the object is not accelerating, every direction sums to zero. That is **equilibrium**, and most clinical mechanics problems are equilibrium problems.\n\n> **Trap:** The normal force is not always equal to weight. On an incline it is `N = m*g*cos(theta)`, and in an accelerating elevator it is larger or smaller than `m*g`.\n\n## Friction\n\nFriction resists sliding and depends on how hard the surfaces press together, not on contact area: `f = mu * N`, where `mu` is the coefficient of friction.\n\n**Static friction** (`mu_s`) holds an object before it slips and adjusts up to a maximum. **Kinetic friction** (`mu_k`) acts once sliding starts and is always smaller. That is why an object lurches at the moment it breaks free, and why a draw sheet reduces the force needed to reposition a patient: it drops `mu` between patient and bed.\n\nWorked example. A `60 kg` patient is pulled along a bed with `mu_s = 0.40`.\n\n1. Normal force: `N = m*g = 60 * 9.8 = 588 N`.\n2. Force to start sliding: `f = mu * N = 0.40 * 588 = 235 N`.\n3. With a slide sheet dropping `mu` to `0.15`: `f = 0.15 * 588 = 88 N`, under `40%` of the original.\n\n## Why lifting technique is physics\n\nThe lumbar spine is a lever with a short effort arm. The erector spinae muscles attach only about `5 cm` behind the disc, while a load held at arm's length sits roughly `50 cm` in front of it. That ten-to-one disadvantage means muscle force, and therefore disc compression, is roughly ten times the load.\n\nSo a `20 kg` box held at arm's length can load the L5-S1 disc with over `2000 N`. Pull the same box against your chest and the lever arm collapses to about `20 cm`, cutting disc force by more than half.\n\n> **On shift:** Load close to the body, back straight, lift with the legs, pivot the feet instead of twisting. Twisting under load adds shear across the disc that straight compression does not.",
+      "keyPoints": [
+        "Newton's laws: inertia, `F = m*a`, and equal-and-opposite pairs on different objects.",
+        "Weight is a force, `W = m*g`; a `70 kg` person weighs `686 N`.",
+        "Friction is `f = mu * N`; static exceeds kinetic, and area does not matter.",
+        "Equilibrium means the forces in every direction sum to zero.",
+        "Holding a load far from the spine multiplies disc force roughly tenfold; keep loads close."
+      ],
+      "checks": [
+        {
+          "q": "A `50 kg` object rests on level ground. What is the normal force on it?",
+          "choices": [
+            "`50 N`",
+            "`245 N`",
+            "`490 N`",
+            "`980 N`"
+          ],
+          "answer": 2,
+          "why": "On a level surface with no vertical acceleration, `N = m*g = 50 * 9.8 = 490 N`. Answering `50 N` confuses mass with force."
+        },
+        {
+          "q": "Why does a slide sheet make repositioning a patient easier?",
+          "choices": [
+            "It reduces the patient's weight",
+            "It lowers the coefficient of friction between patient and bed",
+            "It increases the normal force",
+            "It increases the contact area"
+          ],
+          "answer": 1,
+          "why": "`f = mu * N`. Weight and therefore `N` are unchanged, and friction does not depend on contact area, so the only thing a slide sheet can change is `mu`."
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-l04",
+      "title": "Torque, center of mass, and the body's levers",
+      "minutes": 7,
+      "body": "Forces make things move in a line. **Torque** makes things rotate. Every joint in the body is a rotation problem.\n\n## Torque\n\nTorque is force times the perpendicular distance from the pivot: `torque = F * r * sin(theta)`, in newton-meters (`N*m`). The distance `r` is the **lever arm** (moment arm).\n\nTwo consequences fall straight out. Force applied at the pivot produces no torque, because `r = 0`. Force applied along the lever produces no torque, because `sin(0) = 0`. Maximum torque comes from pushing at `90 degrees`, as far from the pivot as possible, which is why door handles are opposite the hinge.\n\n**Rotational equilibrium** means clockwise torques equal counterclockwise torques. Set them equal and solve for whichever quantity is unknown. That single step answers most lever problems.\n\n> **Key:** In equilibrium, sum of forces equals zero *and* sum of torques equals zero. A problem that seems to have too few equations usually needs the torque equation.\n\n## Center of mass\n\nThe **center of mass** is the point where all the mass behaves as if it were concentrated. In a standing adult it sits roughly at the level of `S2`, just anterior to the sacrum, about `55%` of height off the floor.\n\nAn object is stable while a vertical line from its center of mass falls inside its base of support. Widen the base, lower the center of mass, and stability rises. That is the physics of a wide stance during a transfer, and of why an elderly patient leaning over the bedrail tips: the center of mass crosses outside the feet.\n\n## The three lever classes\n\nEvery lever has a fulcrum (`F`), a load or resistance (`R`), and an effort (`E`).\n\n| Class | Order | Body example |\n|---|---|---|\n| First | `R` - `F` - `E` | Head nodding on the atlanto-occipital joint |\n| Second | `F` - `R` - `E` | Rising on the toes at the ball of the foot |\n| Third | `F` - `E` - `R` | Biceps flexing the elbow |\n\nOnly a second-class lever always multiplies force. Almost every skeletal muscle works as a **third-class** lever, where the effort sits between the fulcrum and the load. That trades force for speed and range: the muscle must pull far harder than the load weighs, but a small shortening sweeps the hand a long way.\n\nWorked example. A `5.0 kg` weight is held in the hand `35 cm` from the elbow. The biceps inserts `5.0 cm` from the elbow.\n\n1. Load force: `F = m*g = 5.0 * 9.8 = 49 N`.\n2. Load torque about the elbow: `49 * 0.35 = 17.2 N*m`.\n3. Set torques equal: `Fmuscle * 0.05 = 17.2`.\n4. `Fmuscle = 17.2 / 0.05 = 344 N`, seven times the weight held.\n\n## Rotation itself\n\nAngular velocity is rotation per second; angular acceleration is its rate of change. Rotational inertia (**moment of inertia**) is the rotational version of mass and grows with the square of how far the mass sits from the axis. A tucked limb rotates faster than an extended one at the same effort, which is why a splinted, tucked arm is easier to move as a unit.\n\n> **On shift:** Never reach across a bed to move a patient. Reaching lengthens your own lever arm, multiplying spine torque exactly the way the biceps example multiplies muscle force.",
+      "keyPoints": [
+        "`torque = F * r * sin(theta)`; maximum at `90 degrees`, zero at the pivot.",
+        "Rotational equilibrium: clockwise torque equals counterclockwise torque.",
+        "Standing center of mass sits near `S2`, about `55%` of height; stability needs it over the base of support.",
+        "Lever classes: first `R-F-E`, second `F-R-E`, third `F-E-R`; most muscles are third class.",
+        "A `5 kg` load at `35 cm` needs about `344 N` of biceps force at a `5 cm` insertion."
+      ],
+      "checks": [
+        {
+          "q": "A force of `20 N` is applied perpendicular to a wrench `0.25 m` from the bolt. What torque is produced?",
+          "choices": [
+            "`0.8 N*m`",
+            "`5 N*m`",
+            "`20 N*m`",
+            "`80 N*m`"
+          ],
+          "answer": 1,
+          "why": "`torque = F * r * sin(90) = 20 * 0.25 * 1 = 5 N*m`. `80` divides instead of multiplying, and `20` ignores the lever arm entirely."
+        },
+        {
+          "q": "The biceps flexing the elbow is which class of lever?",
+          "choices": [
+            "First class",
+            "Second class",
+            "Third class",
+            "Fourth class"
+          ],
+          "answer": 2,
+          "why": "The effort (biceps insertion) lies between the fulcrum (elbow) and the load (hand), which defines a third-class lever. Second class would put the load in the middle, as when rising on the toes."
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-l05",
+      "title": "Work, energy, power, and metabolism",
+      "minutes": 7,
+      "body": "Energy is the currency of physics. Forces move it around; nothing creates or destroys it.\n\n## Work\n\n**Work** is force times the distance moved *along* that force: `W = F * d * cos(theta)`, measured in joules. Push a stretcher `10 m` with `50 N` and you do `500 J`.\n\nThree cases give zero work. No movement means no work, so holding a patient still is zero physics work even though it exhausts you. Force perpendicular to motion means no work, which is why carrying a box across a level floor does no work against gravity. And a force opposing motion, like friction, does negative work.\n\n## Kinetic and potential energy\n\n- Kinetic: `KE = 0.5 * m * v^2`\n- Gravitational potential: `PE = m * g * h`\n- Elastic (spring): `PE = 0.5 * k * x^2`\n\nThe `v^2` is the single most important fact in trauma physics. Double the speed and kinetic energy quadruples. A car at `60 mph` carries four times the energy of the same car at `30 mph`, not twice.\n\n> **Key:** Energy scales with the square of speed. Speed limits, not mass differences, dominate crash severity.\n\n## Conservation of energy\n\nIn a closed system, total energy is constant. With no friction, `PE + KE` at the start equals `PE + KE` at the end. Friction and deformation do not destroy energy; they convert it to heat and to tissue damage.\n\nWorked example. A `70 kg` person falls from `3.0 m`.\n\n1. Energy at the top: `PE = m*g*h = 70 * 9.8 * 3.0 = 2058 J`.\n2. All of it becomes kinetic at the ground: `0.5 * 70 * v^2 = 2058`.\n3. `v^2 = 58.8`, so `v = 7.7 m/s`.\n4. Notice mass cancelled; landing speed does not depend on body weight.\n\n## Power\n\n**Power** is the rate of doing work: `P = W / t`, in watts. Lifting `2058 J` in `4 s` is `515 W`; doing it in `1 s` is `2058 W`. Same work, four times the power.\n\nPower also equals force times velocity: `P = F * v`.\n\n## Metabolic energy\n\nThe body is an engine that is roughly `20-25%` efficient: about a fifth of the chemical energy consumed becomes mechanical work, the rest becomes heat.\n\nFood energy uses the **kilocalorie** (`kcal`, the \"Calorie\" on a label). `1 kcal = 4184 J`. A resting adult burns roughly `1500-1800 kcal` per day, which is about `70-100 W` of continuous output, close to an incandescent bulb.\n\nWorked example. Climbing three flights, `10 m` up, at `70 kg`.\n\n1. Mechanical work: `W = m*g*h = 70 * 9.8 * 10 = 6860 J`.\n2. At `20%` efficiency the body spends `6860 / 0.20 = 34300 J`.\n3. Convert: `34300 / 4184 = 8.2 kcal`.\n\nEight kilocalories for three flights is why exercise is a poor weight-loss lever compared with intake.\n\n> **On shift:** A stair chair carry is heavy work at high power, and `75-80%` of your metabolic output during it becomes heat you cannot easily dump. That is the mechanism behind exertional heat illness in gear.",
+      "keyPoints": [
+        "`W = F*d*cos(theta)`; holding something still does zero physics work.",
+        "`KE = 0.5*m*v^2` — doubling speed quadruples energy.",
+        "Energy is conserved; friction and deformation convert it to heat and injury, not nothing.",
+        "`P = W/t = F*v`; power is how fast work is done.",
+        "The body is about `20-25%` efficient, `1 kcal = 4184 J`, and rest costs roughly `70-100 W`."
+      ],
+      "checks": [
+        {
+          "q": "A car's speed increases from `20 mph` to `40 mph`. Its kinetic energy becomes what?",
+          "choices": [
+            "Twice as large",
+            "Three times as large",
+            "Four times as large",
+            "Unchanged"
+          ],
+          "answer": 2,
+          "why": "`KE = 0.5*m*v^2` depends on the square of speed, so doubling speed multiplies energy by four. Choosing twice treats the relationship as linear, which is the classic error."
+        },
+        {
+          "q": "You hold a `10 kg` bag motionless at chest height for `60 s`. How much physics work do you do on the bag?",
+          "choices": [
+            "`0 J`",
+            "`98 J`",
+            "`588 J`",
+            "`5880 J`"
+          ],
+          "answer": 0,
+          "why": "Work requires displacement along the force. The bag does not move, so `d = 0` and `W = 0`, even though the muscles are burning metabolic energy to hold it."
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-l06",
+      "title": "Momentum, impulse, and trauma kinematics",
+      "minutes": 8,
+      "body": "Momentum explains why crashes injure people and why every piece of safety equipment works the same way.\n\n## Momentum and impulse\n\n**Momentum** is mass times velocity: `p = m*v`, in `kg*m/s`. It is a vector, and in any collision the total momentum of the system is conserved.\n\n**Impulse** is the force applied multiplied by how long it acts, and it equals the change in momentum:\n\n`F * t = m*v - m*v0`\n\nRearrange it and the whole of injury prevention appears:\n\n`F = (change in momentum) / t`\n\nThe change in momentum is fixed by the crash. You cannot argue with it. The only variable you control is `t`, the stopping time. Stretch the stop and the force falls in exact proportion.\n\n> **Key:** Every restraint, airbag, helmet, crumple zone and fall mat does one job: increase stopping time so peak force drops.\n\nWorked example. A `70 kg` occupant travelling at `13.4 m/s` (about `30 mph`) stops in a crash.\n\n1. Momentum change: `70 * 13.4 = 938 kg*m/s`.\n2. Hitting a rigid dashboard, stopping distance about `0.01 s`: `F = 938 / 0.01 = 93800 N`, roughly `21000 lb`.\n3. Restrained with belt and airbag, stopping time about `0.15 s`: `F = 938 / 0.15 = 6250 N`.\n4. The belt cut peak force by a factor of `15`.\n\n## The three collisions\n\nEvery motor vehicle crash is three separate collisions in sequence:\n\n1. **Vehicle** strikes the object and stops.\n2. **Body** strikes the interior, or is caught by the restraint.\n3. **Organs** strike the inside of the body wall, tearing at their points of attachment.\n\nThe third collision is invisible from the outside and is what kills later: aortic shear at the ligamentum arteriosum, liver and spleen lacerations, coup-contrecoup brain injury, mesenteric tears.\n\n## Elastic and inelastic\n\nIn an **elastic** collision both momentum and kinetic energy are conserved; objects bounce apart. In an **inelastic** collision momentum is conserved but kinetic energy is not; the lost energy goes into deformation and heat. A **perfectly inelastic** collision is one where the objects stick together.\n\nReal crashes are inelastic, and that is good news: energy spent crumpling steel is energy not spent on the occupant. A vehicle that bounces off intact transferred more energy to its occupants than one that folded.\n\n> **Trap:** A vehicle with little visible damage is not reassuring. Stiff structures and low-speed bumper impacts transmit force to occupants instead of absorbing it.\n\n## Falls\n\nSame equation, different surface. A `1.5 m` fall onto concrete stops a head in about `0.002 s`; onto a padded mat, about `0.02 s`. Ten times the time, one tenth the force, from the same fall.\n\nLanding surface, body position and whether the fall was broken by an intermediate object all belong in the report because they set `t`.\n\n> **On shift:** The handoff line that matters is mechanism: speed, restraint use, airbag deployment, intrusion in centimeters, ejection, fall height and surface. Those are the variables in the impulse equation.",
+      "keyPoints": [
+        "`p = m*v`; total momentum is conserved in every collision.",
+        "Impulse: `F*t = change in momentum`, so longer stopping time means lower peak force.",
+        "An unrestrained `70 kg` occupant at `30 mph` can see roughly `94000 N`; belted, about `6250 N`.",
+        "Every crash is three collisions: vehicle, body, then organs against the body wall.",
+        "Inelastic collisions lose kinetic energy to deformation, which protects the occupant."
+      ],
+      "checks": [
+        {
+          "q": "An airbag reduces injury primarily by which mechanism?",
+          "choices": [
+            "Reducing the occupant's momentum change",
+            "Increasing the time over which the occupant stops",
+            "Making the collision elastic",
+            "Reducing the occupant's mass"
+          ],
+          "answer": 1,
+          "why": "The momentum change is fixed by the crash speed; only the stopping time can be changed. Since `F = change in momentum / t`, lengthening `t` lowers peak force."
+        },
+        {
+          "q": "Which quantity is conserved in an inelastic collision?",
+          "choices": [
+            "Kinetic energy only",
+            "Momentum only",
+            "Both momentum and kinetic energy",
+            "Neither"
+          ],
+          "answer": 1,
+          "why": "Momentum is conserved in all collisions. Kinetic energy is conserved only in elastic collisions; in inelastic ones it goes into deformation and heat."
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-l07",
+      "title": "Fluids: pressure, flow, and blood",
+      "minutes": 9,
+      "body": "Fluids means liquids and gases together. The body is a pressurized fluid system, so this lesson carries more clinical weight than any other.\n\n## Pressure\n\n**Pressure** is force per unit area: `P = F / A`, in pascals (`1 Pa = 1 N/m^2`). Same force over less area is more pressure, which is the entire physics of pressure ulcers and of why a wide backboard strap hurts less than a narrow one.\n\nUseful equivalences: `1 atm = 101325 Pa = 760 mmHg`, and `1 mmHg = 133 Pa`.\n\nPressure in a standing column of fluid depends only on depth and density: `P = rho * g * h`. Column height, not container shape or width, sets the pressure.\n\n## Pascal's principle and buoyancy\n\n**Pascal's principle**: pressure applied to an enclosed fluid is transmitted undiminished everywhere. A hydraulic lift multiplies force by area ratio, which is how a small pedal raises a stretcher.\n\n**Archimedes' principle**: the buoyant force equals the weight of the displaced fluid. An object floats when its density is below the fluid's. Water therapy works because buoyancy cancels most of the effective body weight, unloading joints.\n\n## Continuity and Bernoulli\n\nFor an incompressible fluid, what goes in must come out: `A1 * v1 = A2 * v2`. Narrow the pipe and the fluid speeds up.\n\n**Bernoulli's principle** then says total energy per volume is constant, so where speed rises, pressure falls. A stenotic valve or an atherosclerotic segment has high velocity and low lateral pressure through the narrowing, which is what produces a murmur or bruit, and what lets a plaque-narrowed vessel partially collapse.\n\n> **Key:** Continuity sets the speed, Bernoulli converts that speed into a pressure drop. Fast flow is low-pressure flow.\n\n## Poiseuille's law\n\nFor steady flow of a viscous fluid through a tube:\n\n`Q = (pi * dP * r^4) / (8 * eta * L)`\n\nwhere `Q` is flow, `dP` the pressure difference, `r` the radius, `eta` the viscosity, `L` the length.\n\nThe `r^4` dominates everything. Halve the radius and flow falls to one sixteenth at the same pressure. Double the radius and flow rises `16` times.\n\n1. A `20 G` IV catheter has about half the internal radius of a `14 G`.\n2. Flow scales as `r^4`, so `(1/2)^4 = 1/16`.\n3. Shorten the catheter and flow rises in proportion to `1/L`.\n4. That is why resuscitation calls for short, large-bore lines, not a long central catheter.\n\nThe same law explains why a small amount of bronchial edema or a modest coronary narrowing causes a disproportionate loss of flow.\n\n**Viscosity** (`eta`) is internal friction. Blood viscosity rises with hematocrit, so polycythemia raises resistance and cardiac work; anemia lowers viscosity.\n\n## Surface tension\n\nSurface tension pulls a liquid surface inward. In an alveolus, Laplace's law gives `P = 2*T / r`, so small alveoli would collapse into large ones. **Surfactant** lowers `T` more as the alveolus shrinks, stabilizing small ones. Its absence is neonatal respiratory distress syndrome.\n\n## Pressures you will measure\n\nIV bag height sets infusion pressure by `P = rho * g * h`. A bag `1.0 m` above the vein gives about `9800 Pa`, roughly `74 mmHg`, which is why the bag must hang well above a pressurized vessel and why raising it speeds a slow gravity drip.\n\nBlood pressure cuffs work by occluding flow and listening for turbulence. Above systolic, flow stops and there is silence. Between systolic and diastolic, flow is intermittent and turbulent, producing Korotkoff sounds. Below diastolic, flow is smooth and laminar again and the sound disappears.\n\n> **Trap:** A cuff that is too narrow reads falsely high, because more of its pressure is lost in tissue before it reaches the artery. Bladder width should be about `40%` of arm circumference.",
+      "keyPoints": [
+        "`P = F/A`; `1 atm = 760 mmHg = 101325 Pa`, and `1 mmHg = 133 Pa`.",
+        "Continuity `A1*v1 = A2*v2`; Bernoulli says faster flow has lower lateral pressure.",
+        "Poiseuille: `Q = (pi * dP * r^4) / (8 * eta * L)` — flow depends on radius to the fourth power.",
+        "Short, wide catheters give the fastest flow; halving radius cuts flow to one sixteenth.",
+        "Surfactant lowers alveolar surface tension; `P = 2*T/r` explains why small alveoli need it."
+      ],
+      "checks": [
+        {
+          "q": "An IV catheter's internal radius is doubled and its length is unchanged. Flow at the same pressure becomes what?",
+          "choices": [
+            "2 times",
+            "4 times",
+            "8 times",
+            "16 times"
+          ],
+          "answer": 3,
+          "why": "Poiseuille's law makes flow proportional to `r^4`, and `2^4 = 16`. Answering 2 or 4 treats flow as proportional to radius or to cross-sectional area."
+        },
+        {
+          "q": "Blood speeds up as it passes through a narrowed artery. What happens to lateral pressure at the narrowing?",
+          "choices": [
+            "It rises",
+            "It falls",
+            "It is unchanged",
+            "It becomes zero"
+          ],
+          "answer": 1,
+          "why": "Bernoulli's principle: total energy is fixed, so a rise in velocity comes at the cost of pressure. Assuming pressure rises confuses velocity with force."
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-l08",
+      "title": "Heat, thermodynamics, and body temperature",
+      "minutes": 8,
+      "body": "Temperature measures average molecular kinetic energy. **Heat** is energy moving because of a temperature difference. They are not the same thing: a spark is hot but carries almost no heat.\n\n## The laws\n\nThe **first law** is conservation of energy for thermal systems: energy added to a system either raises its internal energy or does work. The body obeys it exactly, which is why metabolic intake, work output and heat production must balance.\n\nThe **second law** says heat flows spontaneously only from hot to cold, and that disorder (entropy) increases. You never \"add cold\"; you remove heat.\n\n## Specific heat and latent heat\n\n**Specific heat** `c` is the energy needed to raise `1 kg` by `1 degree C`: `Q = m * c * dT`. Water's `c = 4184 J/kg/degree C` is unusually high, and the body is about `60%` water, so body temperature is thermally buffered. Whole-body specific heat is about `3470 J/kg/degree C`.\n\n**Latent heat** is energy absorbed at a phase change with no temperature change at all. Water's latent heat of vaporization is `2.26 x 10^6 J/kg`, which is why evaporation is such a powerful cooling route.\n\nWorked example. Cooling a `70 kg` patient by `1.0 degree C`.\n\n1. `Q = m * c * dT = 70 * 3470 * 1.0 = 243000 J`.\n2. Evaporating sweat removes `2.26 x 10^6 J` per kilogram.\n3. Required sweat: `243000 / 2260000 = 0.11 kg`, about `110 mL`.\n4. Only sweat that *evaporates* counts; sweat that drips off removes almost nothing.\n\n> **Key:** Evaporation is the body's only cooling route once ambient temperature exceeds skin temperature. High humidity blocks it, which is why humid heat kills at lower temperatures than dry heat.\n\n## The four transfer routes\n\n- **Conduction** — direct contact. Water conducts heat about `25` times better than air, so a wet patient on a cold backboard loses heat fast.\n- **Convection** — moving fluid carries heat away. Wind and fans multiply loss.\n- **Radiation** — infrared emission, no medium required. Accounts for roughly `60%` of resting loss in a cool room, mostly from the head and trunk.\n- **Evaporation** — phase change, including insensible loss from skin and airway, roughly `600-900 mL` per day at rest.\n\nCalorimetry measures heat by putting a known mass of water in contact with a sample and reading `Q = m * c * dT`. It is how food energy values are determined in the first place.\n\n## Regulation and failure\n\nThe hypothalamus holds core temperature near `37.0 degrees C` (`98.6 F`). Too hot: vasodilation and sweating. Too cold: vasoconstriction, then shivering, which can raise heat production `5` times.\n\n**Hypothermia** is core below `35 degrees C`. Shivering typically stops below about `30-32 degrees C`, removing the main heat source. Cold slows metabolism, which is protective; cold-water drowning victims have been resuscitated after prolonged arrest, and the rule is that a patient is not dead until warm and dead.\n\n**Fever** is different from hyperthermia. Fever is the hypothalamic set point moved upward, so the body defends the new temperature. Hyperthermia is the set point intact and overwhelmed, so antipyretics do not help heat stroke; active cooling does.\n\n**Therapeutic hypothermia**, now called targeted temperature management, holds `32-36 degrees C` after cardiac arrest to reduce metabolic demand while perfusion recovers.\n\n> **On shift:** Convert with `F = (C * 9/5) + 32`. `37 C` is `98.6 F`; `39 C` is `102.2 F`; `35 C` is `95 F`.",
+      "keyPoints": [
+        "`Q = m*c*dT`; water's specific heat is `4184 J/kg/degree C`, whole body about `3470`.",
+        "Latent heat of vaporization of water is `2.26 x 10^6 J/kg`, making evaporation the strongest cooling route.",
+        "Four routes: conduction, convection, radiation (about `60%` at rest), evaporation.",
+        "Core normal is `37.0 C`; hypothermia below `35 C`, shivering fails around `30-32 C`.",
+        "Fever raises the set point; hyperthermia overwhelms it, so cooling, not antipyretics, treats heat stroke."
+      ],
+      "checks": [
+        {
+          "q": "Why does a wet patient lose heat so much faster than a dry one?",
+          "choices": [
+            "Water has a lower specific heat than air",
+            "Water conducts heat roughly 25 times better than air and also evaporates",
+            "Water blocks radiant heat loss",
+            "Wet skin stops vasoconstriction"
+          ],
+          "answer": 1,
+          "why": "Conduction into water is far faster than into air, and evaporation adds latent heat loss on top. Water's specific heat is high, not low, which is part of why it carries so much energy away."
+        },
+        {
+          "q": "A patient has heat stroke with a core temperature of `41 degrees C`. Why will acetaminophen not fix it?",
+          "choices": [
+            "The dose would need to be doubled",
+            "The hypothalamic set point is normal and simply overwhelmed",
+            "Antipyretics only work below `40 degrees C`",
+            "It raises the set point further"
+          ],
+          "answer": 1,
+          "why": "Antipyretics lower an elevated set point, which is the mechanism of fever. In hyperthermia the set point is normal, so only active cooling removes the heat."
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-l09",
+      "title": "Waves, sound, light, and the eye",
+      "minutes": 9,
+      "body": "A wave carries energy without carrying matter. Two families matter clinically: **mechanical** waves like sound, which need a medium, and **electromagnetic** waves like light and X-rays, which do not.\n\n## Wave basics\n\nEvery wave obeys `v = f * lambda`: speed equals frequency times wavelength. In a given medium, speed is fixed, so higher frequency means shorter wavelength.\n\nSound in air travels about `343 m/s`; in soft tissue about `1540 m/s`; in bone about `4080 m/s`. Sound is **longitudinal** (compressions along the direction of travel); light is **transverse**.\n\n## Intensity and decibels\n\nIntensity is power per area and falls with the inverse square of distance: double the distance, one quarter the intensity. Because the ear spans a range of about `10^12`, loudness is reported on the logarithmic decibel scale:\n\n`dB = 10 * log(I / I0)`, with `I0 = 10^-12 W/m^2`.\n\nEvery `10 dB` is ten times the intensity. Landmarks: whisper `30 dB`, conversation `60 dB`, ED alarm environment `70-80 dB`, ambulance siren at the bumper `120 dB`. Damage risk starts around `85 dB` for sustained exposure.\n\nThe healthy human ear hears `20 Hz` to `20000 Hz`, and speech sits mostly between `500` and `4000 Hz`, which is the band audiometry screens first.\n\n**Resonance** is the large response a system gives when driven at its natural frequency. It is why a specific pitch rattles a window, and why shattering effects happen only at one frequency.\n\n> **Key:** Decibels are logarithmic. A `90 dB` sound is not slightly louder than `80 dB`; it carries ten times the intensity.\n\n## Ultrasound and Doppler\n\nUltrasound is sound above `20000 Hz`; clinical probes run `2-15 MHz`. The probe sends a pulse and times the echo returning from each tissue boundary. Higher frequency gives better resolution but less penetration, so a `12 MHz` linear probe images a superficial vein while a `3 MHz` curved probe reaches the abdomen.\n\nThe **Doppler effect** is the frequency shift from relative motion: approaching sources are shifted up, receding sources shifted down. It is why a passing siren drops pitch. Aimed at blood, the shift measures red cell velocity, giving flow direction and speed for vascular studies and echocardiography.\n\n## Light and refraction\n\nLight travels at `3.0 x 10^8 m/s` in vacuum and slows in matter. The ratio is the **index of refraction** `n = c / v`; water is `1.33`, the cornea about `1.38`.\n\nWhen light crosses into a denser medium it bends toward the normal. Past a critical angle it cannot leave at all and reflects internally. **Total internal reflection** is what pipes light down a fiber, making flexible endoscopes and bronchoscopes possible.\n\n## Lenses and the eye\n\nLens power is measured in **diopters**: `D = 1 / f`, with focal length `f` in meters. A converging (convex) lens has positive power; a diverging (concave) lens negative.\n\nThe eye totals about `+59 D`, of which the cornea supplies roughly `+43 D` and the lens the rest. Accommodation changes lens shape to focus near objects.\n\n- **Myopia** (nearsighted): the image focuses in front of the retina. Corrected with a *diverging*, negative lens, such as `-2.50 D`.\n- **Hyperopia** (farsighted): the image would focus behind the retina. Corrected with a *converging*, positive lens.\n- **Presbyopia**: the aging lens stiffens, so near focus fails; corrected with reading adds around `+1.50` to `+2.50 D`.\n\nWorked example. A myope's far point is `0.40 m`.\n\n1. Needed focal length: `f = -0.40 m`, since the lens must move infinity to the far point.\n2. `D = 1 / f = 1 / (-0.40) = -2.50 D`.\n\n**Lasers** produce a single wavelength, in phase and nearly parallel, so their energy concentrates on a tiny spot. That precision is what welds a detached retina or cuts with simultaneous hemostasis.\n\n> **Trap:** Higher ultrasound frequency improves resolution but reduces depth. Choosing a high-frequency probe for a deep structure gives a crisp image of nothing.",
+      "keyPoints": [
+        "`v = f * lambda`; sound is `343 m/s` in air, `1540 m/s` in soft tissue.",
+        "`dB = 10*log(I/I0)`; each `10 dB` is ten times the intensity, and damage risk starts near `85 dB`.",
+        "Clinical ultrasound runs `2-15 MHz`; higher frequency means better resolution but less depth.",
+        "Doppler shift measures blood velocity and direction from the frequency change.",
+        "Lens power `D = 1/f`; myopia needs a negative lens, hyperopia a positive one, eye total about `+59 D`."
+      ],
+      "checks": [
+        {
+          "q": "An ultrasound probe is switched from `3 MHz` to `12 MHz`. What is the trade-off?",
+          "choices": [
+            "Better resolution, less penetration",
+            "Better resolution, more penetration",
+            "Worse resolution, less penetration",
+            "No change in either"
+          ],
+          "answer": 0,
+          "why": "Higher frequency means shorter wavelength and finer resolution, but the beam attenuates faster in tissue, so depth is lost. Frequency never improves both at once."
+        },
+        {
+          "q": "A corrective lens is labeled `-4.00 D`. What does that tell you?",
+          "choices": [
+            "It is converging and corrects hyperopia",
+            "It is diverging and corrects myopia",
+            "Its focal length is `4 m`",
+            "It corrects presbyopia only"
+          ],
+          "answer": 1,
+          "why": "Negative power means a diverging lens, used for myopia. Its focal length is `1/(-4.00) = -0.25 m`, not `4 m`, and converging positive lenses correct hyperopia."
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-l10",
+      "title": "Electricity, magnetism, and radiation physics",
+      "minutes": 9,
+      "body": "The last block of the course is the physics behind every machine in a resuscitation room.\n\n## Current, voltage, resistance\n\n**Current** `I` is charge flow per second, in amperes. **Voltage** `V` is the energy per charge pushing it, in volts. **Resistance** `R` opposes it, in ohms.\n\n**Ohm's law**: `V = I*R`. Power dissipated is `P = I*V`, and energy is power times time.\n\nIn **series**, current is the same everywhere and resistances add: `Rtotal = R1 + R2`. In **parallel**, voltage is the same across each branch and total resistance is *less* than the smallest branch: `1/Rtotal = 1/R1 + 1/R2`. The vascular tree is a parallel network, which is why total peripheral resistance is low despite tiny individual capillaries.\n\nA **capacitor** stores charge on separated plates: `Q = C*V`, energy `E = 0.5 * C * V^2`. It charges slowly and discharges in milliseconds, which is exactly what a defibrillator needs.\n\nWorked example. A biphasic defibrillator delivers `200 J` into a `50 ohm` patient over `10 ms`.\n\n1. Power: `P = E / t = 200 / 0.010 = 20000 W`.\n2. From `P = I^2 * R`: `I^2 = 20000 / 50 = 400`, so `I = 20 A`.\n3. Voltage: `V = I*R = 20 * 50 = 1000 V`.\n\nTransthoracic impedance (`25-180 ohms`, typically `70-80`) is why pad contact, pad size and chest hair matter: higher impedance means less current reaches myocardium at the same energy.\n\n## ECG and electrical safety\n\nAn ECG records voltage differences on the skin produced by cardiac depolarization, on the order of `1 mV`. Standard calibration is `10 mm` per `1 mV` at `25 mm/s`, so one small box is `0.04 s` and one large box is `0.20 s`.\n\nCurrent, not voltage, injures. Applied to the skin, roughly `1 mA` is perceptible, `10-20 mA` causes let-go failure, and `100 mA` can induce ventricular fibrillation. That is **macroshock**.\n\n**Microshock** is the hazard with a direct conductive path to the heart, such as a pacing wire or a saline-filled central catheter. With the skin bypassed, as little as `10-100 microamps` can fibrillate. Hence isolated power, equipment grounding and never handling a pacing wire with an ungloved hand.\n\n> **Trap:** \"It's only low voltage\" is not safety. A low voltage across low resistance, like wet skin, produces high current.\n\n## Magnetism and induction\n\nMoving charge makes a magnetic field; a changing magnetic field drives current. That is **electromagnetic induction**, and it runs transformers, motors and the MRI scanner.\n\nMRI places the body in a strong static field, typically `1.5 T` or `3.0 T` (earth's field is about `0.00005 T`). Hydrogen nuclei align, a radiofrequency pulse tips them, and the signal they emit as they relax is spatially encoded by gradient coils. No ionizing radiation is involved.\n\nThe magnet is always on. Ferromagnetic objects become projectiles, which is the origin of strict Zone IV screening, and induced currents can heat wires and implants.\n\n## Modern physics and radiation\n\nAn atom is a nucleus of protons and neutrons with electrons around it. The proton count (atomic number) sets the element; differing neutron counts are **isotopes**. Unstable isotopes decay:\n\n- **Alpha** — a helium nucleus, stopped by paper or skin, dangerous when inhaled or ingested.\n- **Beta** — an electron, stopped by a few millimeters of aluminum or plastic.\n- **Gamma and X-rays** — photons, requiring lead or concrete.\n\n**Half-life** is the time for half of a sample to decay. After `n` half-lives the fraction left is `(1/2)^n`. Technetium-99m has a `6 hour` half-life, so `24 hours` is four half-lives and leaves `1/16` of the dose.\n\nX-rays are produced when fast electrons strike a tungsten target; images form because dense tissue absorbs more. CT rotates that beam and reconstructs slices, which is why CT dose far exceeds plain film.\n\nDose units: the **gray** (`Gy`) is energy absorbed, `1 J/kg`. The **sievert** (`Sv`) weights that by biological damage; for X-rays the two are numerically equal. Reference doses: chest X-ray about `0.1 mSv`, abdominal CT about `8 mSv`, natural background about `3 mSv` per year, occupational limit `50 mSv` per year.\n\nProtection is **time, distance, shielding**, and distance is the strongest lever because intensity falls with the inverse square: stepping from `1 m` to `2 m` cuts exposure to one quarter.\n\n> **On shift:** Nuclear medicine reverses the geometry. The radiopharmaceutical is inside the patient, so the patient is the source, and time and distance are your controls.",
+      "keyPoints": [
+        "`V = I*R` and `P = I*V`; series resistances add, parallel resistance is below the smallest branch.",
+        "A defibrillator is a capacitor: `200 J` into `50 ohms` over `10 ms` is about `20 A` and `1000 V`.",
+        "Macroshock fibrillates near `100 mA`; microshock through a direct cardiac path needs only `10-100 microamps`.",
+        "MRI uses a `1.5-3.0 T` always-on magnet and no ionizing radiation; ferromagnetic objects are projectiles.",
+        "After `n` half-lives, `(1/2)^n` remains; chest X-ray about `0.1 mSv`, abdominal CT about `8 mSv`, background `3 mSv` per year."
+      ],
+      "checks": [
+        {
+          "q": "Technetium-99m has a `6 hour` half-life. What fraction remains after `18 hours`?",
+          "choices": [
+            "`1/2`",
+            "`1/4`",
+            "`1/8`",
+            "`1/16`"
+          ],
+          "answer": 2,
+          "why": "`18 hours` is three half-lives, and `(1/2)^3 = 1/8`. Answering `1/16` would be four half-lives, or `24 hours`."
+        },
+        {
+          "q": "Why is microshock dangerous at currents thousands of times smaller than macroshock?",
+          "choices": [
+            "The current is at a higher frequency",
+            "Skin resistance is bypassed, so current is delivered directly to myocardium",
+            "The voltage involved is higher",
+            "Microshock currents last longer"
+          ],
+          "answer": 1,
+          "why": "A pacing wire or fluid-filled catheter gives a direct conductive path to the heart, removing the skin's large resistance and concentrating current on myocardium. Voltage and frequency are not the distinguishing factor."
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "sci-physics-c001",
+      "front": "What are the three SI base units of mechanics?",
+      "back": "Meter for length, kilogram for mass, second for time. Force, energy and power are built from them: `1 N = 1 kg*m/s^2`, `1 J = 1 N*m`, `1 W = 1 J/s`.",
+      "lesson": "sci-physics-l01"
+    },
+    {
+      "id": "sci-physics-c002",
+      "front": "How do you convert units by dimensional analysis?",
+      "back": "Multiply by fractions equal to one, arranged so the unwanted unit cancels. Example: `70 kg * (2.2 lb / 1 kg) = 154 lb`. If the final units are wrong, the arithmetic is irrelevant.",
+      "lesson": "sci-physics-l01"
+    },
+    {
+      "id": "sci-physics-c003",
+      "front": "How many significant figures does `0.00450` have, and why?",
+      "back": "Three. Leading zeros never count, non-zero digits always count, and a trailing zero counts because it sits past a decimal point.",
+      "lesson": "sci-physics-l01"
+    },
+    {
+      "id": "sci-physics-c004",
+      "front": "What is the sig-fig rule for multiplying versus adding?",
+      "back": "Multiplying or dividing keeps the fewest significant figures of any input. Adding or subtracting keeps the fewest decimal places.",
+      "lesson": "sci-physics-l01"
+    },
+    {
+      "id": "sci-physics-c005",
+      "front": "What is the difference between a scalar and a vector?",
+      "back": "A scalar has size only: mass, time, speed, energy. A vector has size and direction: displacement, velocity, acceleration, force, momentum.",
+      "lesson": "sci-physics-l01"
+    },
+    {
+      "id": "sci-physics-c006",
+      "front": "How do you find the components of a vector at angle theta?",
+      "back": "`Ax = A * cos(theta)` horizontally and `Ay = A * sin(theta)` vertically. Recombine with `A = sqrt(Ax^2 + Ay^2)`.",
+      "lesson": "sci-physics-l01"
+    },
+    {
+      "id": "sci-physics-c007",
+      "front": "A `100 N` pull acts at `30 degrees` above horizontal. How much acts along the horizontal?",
+      "back": "`100 * cos(30) = 86.6 N` horizontally, with `50.0 N` lifting vertically. Only the horizontal part pulls along the limb.",
+      "lesson": "sci-physics-l01"
+    },
+    {
+      "id": "sci-physics-c009",
+      "front": "State the four constant-acceleration kinematic equations.",
+      "back": "`v = v0 + a*t`; `d = v0*t + 0.5*a*t^2`; `v^2 = v0^2 + 2*a*d`; `d = 0.5*(v0 + v)*t`.",
+      "lesson": "sci-physics-l02"
+    },
+    {
+      "id": "sci-physics-c010",
+      "front": "Which kinematic equation do you use when time is neither given nor wanted?",
+      "back": "`v^2 = v0^2 + 2*a*d`. It links the two velocities, acceleration and displacement without any time term.",
+      "lesson": "sci-physics-l02"
+    },
+    {
+      "id": "sci-physics-c011",
+      "front": "What is the acceleration of free fall, and does mass change it?",
+      "back": "`g = 9.8 m/s^2` downward, the same for every mass once air resistance is ignored. Mass cancels out of the fall equations entirely.",
+      "lesson": "sci-physics-l02"
+    },
+    {
+      "id": "sci-physics-c012",
+      "front": "How fast is a body moving after falling `6.0 m` from rest?",
+      "back": "`v^2 = 2*9.8*6.0 = 117.6`, so `v = 10.8 m/s`, roughly `24 mph`, reached in about `1.1 s`.",
+      "lesson": "sci-physics-l02"
+    },
+    {
+      "id": "sci-physics-c013",
+      "front": "Why do a bullet fired horizontally and one dropped land together?",
+      "back": "Horizontal and vertical motion are independent. Both start with zero vertical velocity and fall under the same `g`, so horizontal speed adds no hang time.",
+      "lesson": "sci-physics-l02"
+    },
+    {
+      "id": "sci-physics-c014",
+      "front": "What fall heights trigger trauma triage criteria?",
+      "back": "Greater than `20 ft` for adults, and greater than `10 ft` or two to three times the child's height for pediatric patients.",
+      "lesson": "sci-physics-l02"
+    },
+    {
+      "id": "sci-physics-c015",
+      "front": "How do you solve a projectile problem?",
+      "back": "Split it in two. Solve the vertical motion for time using `g`, then multiply that time by the constant horizontal velocity to get range. Time is the only shared quantity.",
+      "lesson": "sci-physics-l02"
+    },
+    {
+      "id": "sci-physics-c016",
+      "front": "State Newton's three laws in one line each.",
+      "back": "Inertia: motion persists without a net force. `F = m*a`: net force produces acceleration. Action-reaction: forces come in equal, opposite pairs acting on different objects.",
+      "lesson": "sci-physics-l03"
+    },
+    {
+      "id": "sci-physics-c017",
+      "front": "What is the weight of a `70 kg` person in newtons?",
+      "back": "`W = m*g = 70 * 9.8 = 686 N`. Weight is a force and changes with gravity; mass does not.",
+      "lesson": "sci-physics-l03"
+    },
+    {
+      "id": "sci-physics-c019",
+      "front": "When is the normal force not equal to weight?",
+      "back": "On an incline it is `N = m*g*cos(theta)`, and in an accelerating elevator it is greater or less than `m*g`. Only on a level, non-accelerating surface do they match.",
+      "lesson": "sci-physics-l03"
+    },
+    {
+      "id": "sci-physics-c020",
+      "front": "What is the friction equation, and what does friction not depend on?",
+      "back": "`f = mu * N`. It does not depend on contact area or on speed. Static friction has a higher coefficient than kinetic, so starting a slide is harder than continuing it.",
+      "lesson": "sci-physics-l03"
+    },
+    {
+      "id": "sci-physics-c021",
+      "front": "How much force starts a `60 kg` patient sliding if `mu = 0.40`?",
+      "back": "`N = 60 * 9.8 = 588 N`, so `f = 0.40 * 588 = 235 N`. A slide sheet dropping `mu` to `0.15` cuts that to `88 N`.",
+      "lesson": "sci-physics-l03"
+    },
+    {
+      "id": "sci-physics-c022",
+      "front": "Why does holding a load away from the body wreck the lumbar spine?",
+      "back": "The erector spinae attach about `5 cm` behind the disc while an outstretched load sits about `50 cm` in front, a ten-to-one lever disadvantage that multiplies disc compression roughly tenfold.",
+      "lesson": "sci-physics-l03"
+    },
+    {
+      "id": "sci-physics-c023",
+      "front": "What is the torque equation, and when is torque maximal?",
+      "back": "`torque = F * r * sin(theta)`, in `N*m`. It is maximal when force is perpendicular to the lever and applied as far from the pivot as possible, and zero at the pivot.",
+      "lesson": "sci-physics-l04"
+    },
+    {
+      "id": "sci-physics-c024",
+      "front": "What two conditions define full mechanical equilibrium?",
+      "back": "The sum of forces in every direction is zero, and the sum of torques about any point is zero. Missing the torque condition is why lever problems seem unsolvable.",
+      "lesson": "sci-physics-l04"
+    },
+    {
+      "id": "sci-physics-c025",
+      "front": "Where is the center of mass in a standing adult?",
+      "back": "Roughly at the level of `S2`, just anterior to the sacrum, about `55%` of total height off the floor. Stability holds while it stays over the base of support.",
+      "lesson": "sci-physics-l04"
+    },
+    {
+      "id": "sci-physics-c026",
+      "front": "Name the three lever classes by arrangement.",
+      "back": "First class is `R-F-E` (nodding head), second class is `F-R-E` (rising on the toes), third class is `F-E-R` (biceps at the elbow). Most skeletal muscles are third class.",
+      "lesson": "sci-physics-l04"
+    },
+    {
+      "id": "sci-physics-c028",
+      "front": "How much biceps force holds `5.0 kg` at `35 cm` from the elbow?",
+      "back": "Load torque is `49 N * 0.35 m = 17.2 N*m`. With a `5.0 cm` insertion, `Fmuscle = 17.2 / 0.05 = 344 N`, about seven times the weight held.",
+      "lesson": "sci-physics-l04"
+    },
+    {
+      "id": "sci-physics-c029",
+      "front": "What is moment of inertia and how does distance affect it?",
+      "back": "It is the rotational equivalent of mass, and it grows with the square of the distance of mass from the axis. Tucked limbs rotate more easily than extended ones.",
+      "lesson": "sci-physics-l04"
+    },
+    {
+      "id": "sci-physics-c030",
+      "front": "What is the equation for work, and when is work zero?",
+      "back": "`W = F * d * cos(theta)`. Work is zero when nothing moves, when the force is perpendicular to motion, and it is negative when the force opposes motion.",
+      "lesson": "sci-physics-l05"
+    },
+    {
+      "id": "sci-physics-c031",
+      "front": "Give the kinetic, gravitational and elastic energy formulas.",
+      "back": "`KE = 0.5*m*v^2`; `PE = m*g*h`; spring `PE = 0.5*k*x^2`. All are measured in joules.",
+      "lesson": "sci-physics-l05"
+    },
+    {
+      "id": "sci-physics-c032",
+      "front": "Why does doubling speed quadruple crash energy?",
+      "back": "Kinetic energy depends on velocity squared. `KE = 0.5*m*v^2`, so `2v` gives `4KE`. Speed, not mass difference, dominates crash severity.",
+      "lesson": "sci-physics-l05"
+    },
+    {
+      "id": "sci-physics-c033",
+      "front": "A `70 kg` person falls `3.0 m`. What energy and landing speed?",
+      "back": "`PE = 70 * 9.8 * 3.0 = 2058 J`, all converted to kinetic. `v = sqrt(2*9.8*3.0) = 7.7 m/s`. Mass cancels, so landing speed is weight-independent.",
+      "lesson": "sci-physics-l05"
+    },
+    {
+      "id": "sci-physics-c034",
+      "front": "What are the two expressions for power?",
+      "back": "`P = W / t`, work per second in watts, and equivalently `P = F * v`. Same work done in a quarter of the time is four times the power.",
+      "lesson": "sci-physics-l05"
+    },
+    {
+      "id": "sci-physics-c035",
+      "front": "How efficient is the human body, and what is a kilocalorie in joules?",
+      "back": "About `20-25%` efficient; the rest of the energy becomes heat. `1 kcal = 4184 J`, and the label \"Calorie\" means kilocalorie.",
+      "lesson": "sci-physics-l05"
+    },
+    {
+      "id": "sci-physics-c036",
+      "front": "What continuous power output does a resting adult represent?",
+      "back": "Roughly `70-100 W`, from about `1500-1800 kcal` per day. That is comparable to an incandescent bulb, and nearly all of it leaves as heat.",
+      "lesson": "sci-physics-l05"
+    },
+    {
+      "id": "sci-physics-c037",
+      "front": "What is momentum, and what is impulse?",
+      "back": "Momentum is `p = m*v` in `kg*m/s`. Impulse is force times time and equals the change in momentum: `F * t = m*v - m*v0`.",
+      "lesson": "sci-physics-l06"
+    },
+    {
+      "id": "sci-physics-c038",
+      "front": "Why do seat belts, airbags and crumple zones all work?",
+      "back": "They lengthen stopping time `t`. Since `F = change in momentum / t` and the momentum change is fixed by the crash, more time means proportionally less peak force.",
+      "lesson": "sci-physics-l06"
+    },
+    {
+      "id": "sci-physics-c039",
+      "front": "Compare the force on a `70 kg` occupant at `30 mph` restrained versus unrestrained.",
+      "back": "Momentum change is `938 kg*m/s`. Stopping in `0.01 s` on a dashboard gives about `93800 N`; stopping in `0.15 s` with belt and airbag gives `6250 N`, a `15`-fold reduction.",
+      "lesson": "sci-physics-l06"
+    },
+    {
+      "id": "sci-physics-c040",
+      "front": "What are the three collisions in a motor vehicle crash?",
+      "back": "The vehicle strikes the object, the body strikes the interior or restraint, and the organs strike the body wall and tear at their attachments. The third causes the delayed deaths.",
+      "lesson": "sci-physics-l06"
+    },
+    {
+      "id": "sci-physics-c041",
+      "front": "What is conserved in an elastic versus an inelastic collision?",
+      "back": "Momentum is conserved in both. Kinetic energy is conserved only in elastic collisions; in inelastic collisions it goes into deformation and heat.",
+      "lesson": "sci-physics-l06"
+    },
+    {
+      "id": "sci-physics-c043",
+      "front": "How does landing surface change fall injury?",
+      "back": "It sets stopping time. A head stopping in `0.002 s` on concrete sees ten times the force of the same fall stopping in `0.02 s` on a padded mat.",
+      "lesson": "sci-physics-l06"
+    },
+    {
+      "id": "sci-physics-c044",
+      "front": "What is pressure, and what is `1 atm` in mmHg and pascals?",
+      "back": "`P = F / A` in pascals, where `1 Pa = 1 N/m^2`. `1 atm = 760 mmHg = 101325 Pa`, and `1 mmHg = 133 Pa`.",
+      "lesson": "sci-physics-l07"
+    },
+    {
+      "id": "sci-physics-c045",
+      "front": "What sets the pressure at the bottom of a fluid column?",
+      "back": "`P = rho * g * h`. Only density and height matter; the shape or width of the container is irrelevant.",
+      "lesson": "sci-physics-l07"
+    },
+    {
+      "id": "sci-physics-c046",
+      "front": "State Pascal's principle and Archimedes' principle.",
+      "back": "Pascal: pressure applied to an enclosed fluid transmits undiminished throughout, so hydraulics multiply force by area ratio. Archimedes: buoyant force equals the weight of fluid displaced.",
+      "lesson": "sci-physics-l07"
+    },
+    {
+      "id": "sci-physics-c047",
+      "front": "What do continuity and Bernoulli say together?",
+      "back": "Continuity `A1*v1 = A2*v2` means narrowing speeds flow up. Bernoulli then means that faster flow has lower lateral pressure, producing murmurs and bruits at stenoses.",
+      "lesson": "sci-physics-l07"
+    },
+    {
+      "id": "sci-physics-c048",
+      "front": "Write Poiseuille's law and name the dominant term.",
+      "back": "`Q = (pi * dP * r^4) / (8 * eta * L)`. Radius to the fourth power dominates: halving radius drops flow to one sixteenth at the same pressure.",
+      "lesson": "sci-physics-l07"
+    },
+    {
+      "id": "sci-physics-c049",
+      "front": "Why does resuscitation use short, large-bore IV catheters?",
+      "back": "Flow rises with `r^4` and falls with length. A wide short catheter maximizes both terms; a long narrow central line delivers far less volume per minute at the same pressure.",
+      "lesson": "sci-physics-l07"
+    },
+    {
+      "id": "sci-physics-c050",
+      "front": "How does hematocrit affect blood flow?",
+      "back": "Hematocrit sets viscosity `eta`, which sits in Poiseuille's denominator. Polycythemia raises viscosity, resistance and cardiac work; anemia lowers viscosity and resistance.",
+      "lesson": "sci-physics-l07"
+    },
+    {
+      "id": "sci-physics-c051",
+      "front": "What does surfactant do, and what law explains it?",
+      "back": "Laplace's law for a sphere, `P = 2*T / r`, means small alveoli have higher collapsing pressure. Surfactant lowers surface tension more as the alveolus shrinks, stabilizing small ones.",
+      "lesson": "sci-physics-l07"
+    },
+    {
+      "id": "sci-physics-c052",
+      "front": "What pressure does an IV bag `1.0 m` above the vein provide?",
+      "back": "`P = rho*g*h = 1000 * 9.8 * 1.0 = 9800 Pa`, about `74 mmHg`. Raising the bag raises pressure proportionally and speeds a slow gravity drip.",
+      "lesson": "sci-physics-l07"
+    },
+    {
+      "id": "sci-physics-c053",
+      "front": "What produces Korotkoff sounds during a blood pressure reading?",
+      "back": "Turbulent, intermittent flow while cuff pressure lies between systolic and diastolic. Above systolic there is no flow and silence; below diastolic flow is laminar and silent again.",
+      "lesson": "sci-physics-l07"
+    },
+    {
+      "id": "sci-physics-c054",
+      "front": "Why does a too-narrow blood pressure cuff read high?",
+      "back": "More of the cuff pressure is absorbed by tissue before reaching the artery, so a higher reading is needed to occlude it. Bladder width should be about `40%` of arm circumference.",
+      "lesson": "sci-physics-l07"
+    },
+    {
+      "id": "sci-physics-c056",
+      "front": "What is the specific heat equation, and the values for water and body?",
+      "back": "`Q = m * c * dT`. Water is `4184 J/kg/degree C`; whole-body average is about `3470 J/kg/degree C`, which is why body temperature is thermally buffered.",
+      "lesson": "sci-physics-l08"
+    },
+    {
+      "id": "sci-physics-c057",
+      "front": "How much sweat must evaporate to cool a `70 kg` patient `1.0 degree C`?",
+      "back": "`Q = 70 * 3470 * 1 = 243000 J`. At `2.26 x 10^6 J/kg` latent heat, that is `0.11 kg`, about `110 mL`. Sweat that drips instead of evaporating removes nearly nothing.",
+      "lesson": "sci-physics-l08"
+    },
+    {
+      "id": "sci-physics-c058",
+      "front": "Name the four routes of heat transfer with one clinical fact each.",
+      "back": "Conduction (water conducts about `25` times better than air), convection (wind multiplies loss), radiation (about `60%` of resting loss), evaporation (insensible loss `600-900 mL/day`).",
+      "lesson": "sci-physics-l08"
+    },
+    {
+      "id": "sci-physics-c059",
+      "front": "At what core temperatures does hypothermia begin and shivering fail?",
+      "back": "Hypothermia starts below `35 degrees C`. Shivering, which can raise heat production about fivefold, usually stops below `30-32 degrees C`, removing the main endogenous heat source.",
+      "lesson": "sci-physics-l08"
+    },
+    {
+      "id": "sci-physics-c060",
+      "front": "How does fever differ from hyperthermia?",
+      "back": "Fever moves the hypothalamic set point up and the body defends it, so antipyretics work. Hyperthermia leaves the set point normal and overwhelmed, so only active cooling helps.",
+      "lesson": "sci-physics-l08"
+    },
+    {
+      "id": "sci-physics-c061",
+      "front": "What temperature range is targeted temperature management, and why?",
+      "back": "`32-36 degrees C` after cardiac arrest. Cooling lowers metabolic demand while perfusion recovers, limiting reperfusion injury.",
+      "lesson": "sci-physics-l08"
+    },
+    {
+      "id": "sci-physics-c062",
+      "front": "How do you convert Celsius to Fahrenheit, with two landmarks?",
+      "back": "`F = (C * 9/5) + 32`. `37 C` is `98.6 F`, `39 C` is `102.2 F`, and the hypothermia threshold `35 C` is `95 F`.",
+      "lesson": "sci-physics-l08"
+    },
+    {
+      "id": "sci-physics-c063",
+      "front": "What is the wave equation, and the speed of sound in air, tissue and bone?",
+      "back": "`v = f * lambda`. Sound travels about `343 m/s` in air, `1540 m/s` in soft tissue, and `4080 m/s` in bone.",
+      "lesson": "sci-physics-l09"
+    },
+    {
+      "id": "sci-physics-c064",
+      "front": "How does the decibel scale work, and where does hearing damage start?",
+      "back": "`dB = 10*log(I/I0)` with `I0 = 10^-12 W/m^2`. Every `10 dB` is ten times the intensity. Sustained exposure above about `85 dB` risks damage; a siren at the bumper is `120 dB`.",
+      "lesson": "sci-physics-l09"
+    },
+    {
+      "id": "sci-physics-c065",
+      "front": "What frequency range does the human ear cover, and where is speech?",
+      "back": "About `20 Hz` to `20000 Hz`, with speech concentrated between `500` and `4000 Hz`, the band audiometry screens first.",
+      "lesson": "sci-physics-l09"
+    },
+    {
+      "id": "sci-physics-c066",
+      "front": "What frequencies does clinical ultrasound use, and what is the trade-off?",
+      "back": "`2-15 MHz`. Higher frequency gives better resolution but shallower penetration, so a `12 MHz` linear probe images superficial veins and a `3 MHz` curved probe reaches the abdomen.",
+      "lesson": "sci-physics-l09"
+    },
+    {
+      "id": "sci-physics-c067",
+      "front": "What is the Doppler effect and what does it measure in medicine?",
+      "back": "A frequency shift caused by relative motion: up when approaching, down when receding. Aimed at blood, the shift gives red cell velocity and flow direction.",
+      "lesson": "sci-physics-l09"
+    },
+    {
+      "id": "sci-physics-c068",
+      "front": "What is total internal reflection used for clinically?",
+      "back": "Past a critical angle light cannot leave a dense medium and reflects inside it. That pipes light down glass fibers, making flexible endoscopes and bronchoscopes possible.",
+      "lesson": "sci-physics-l09"
+    },
+    {
+      "id": "sci-physics-c069",
+      "front": "How is lens power defined, and which sign corrects myopia?",
+      "back": "`D = 1/f` with focal length in meters. Negative, diverging lenses correct myopia; positive, converging lenses correct hyperopia and presbyopia.",
+      "lesson": "sci-physics-l09"
+    },
+    {
+      "id": "sci-physics-c070",
+      "front": "What is the total refractive power of the eye and its main contributor?",
+      "back": "About `+59 D` total, of which the cornea supplies roughly `+43 D`. The lens provides the remainder and changes shape to accommodate for near vision.",
+      "lesson": "sci-physics-l09"
+    },
+    {
+      "id": "sci-physics-c071",
+      "front": "State Ohm's law and the power equation.",
+      "back": "`V = I*R`, where current is in amperes, voltage in volts, resistance in ohms. Power dissipated is `P = I*V`, equivalently `P = I^2*R`.",
+      "lesson": "sci-physics-l10"
+    },
+    {
+      "id": "sci-physics-c072",
+      "front": "How do series and parallel resistances combine?",
+      "back": "Series: `Rtotal = R1 + R2`, current identical everywhere. Parallel: `1/Rtotal = 1/R1 + 1/R2`, giving a total below the smallest branch, as in the vascular tree.",
+      "lesson": "sci-physics-l10"
+    },
+    {
+      "id": "sci-physics-c073",
+      "front": "What current and voltage does a `200 J` shock over `10 ms` into `50 ohms` produce?",
+      "back": "`P = 200 / 0.010 = 20000 W`; `I = sqrt(20000/50) = 20 A`; `V = 20 * 50 = 1000 V`. Transthoracic impedance runs `25-180 ohms`, typically `70-80`.",
+      "lesson": "sci-physics-l10"
+    },
+    {
+      "id": "sci-physics-c074",
+      "front": "What are the ECG calibration standards?",
+      "back": "`10 mm` per `1 mV` at `25 mm/s` paper speed, so one small box is `0.04 s` and one large box `0.20 s`. Skin signals are on the order of `1 mV`.",
+      "lesson": "sci-physics-l10"
+    },
+    {
+      "id": "sci-physics-c075",
+      "front": "Compare macroshock and microshock current thresholds.",
+      "back": "Through skin, `1 mA` is perceptible, `10-20 mA` prevents let-go, `100 mA` can fibrillate. With a direct cardiac path such as a pacing wire, only `10-100 microamps` is needed.",
+      "lesson": "sci-physics-l10"
+    },
+    {
+      "id": "sci-physics-c076",
+      "front": "What field strengths does MRI use, and what is the main hazard?",
+      "back": "Typically `1.5 T` or `3.0 T`, versus earth's `0.00005 T`. The magnet is always on, so ferromagnetic objects become projectiles. MRI uses no ionizing radiation.",
+      "lesson": "sci-physics-l10"
+    },
+    {
+      "id": "sci-physics-c077",
+      "front": "Compare alpha, beta and gamma radiation by penetration.",
+      "back": "Alpha is a helium nucleus stopped by paper or skin but dangerous internally. Beta is an electron stopped by millimeters of aluminum. Gamma and X-rays are photons needing lead or concrete.",
+      "lesson": "sci-physics-l10"
+    },
+    {
+      "id": "sci-physics-c078",
+      "front": "How do you calculate remaining activity after several half-lives?",
+      "back": "The fraction left is `(1/2)^n` for `n` half-lives. Technetium-99m has a `6 hour` half-life, so `24 hours` is four half-lives and leaves `1/16`.",
+      "lesson": "sci-physics-l10"
+    },
+    {
+      "id": "sci-physics-c079",
+      "front": "What is the difference between the gray and the sievert?",
+      "back": "The gray is absorbed energy, `1 J/kg`. The sievert weights that dose for biological damage. For X-rays and gamma the two are numerically equal.",
+      "lesson": "sci-physics-l10"
+    },
+    {
+      "id": "sci-physics-c080",
+      "front": "Give reference radiation doses for chest X-ray, abdominal CT, background and occupational limit.",
+      "back": "Chest X-ray about `0.1 mSv`, abdominal CT about `8 mSv`, natural background about `3 mSv` per year, occupational limit `50 mSv` per year.",
+      "lesson": "sci-physics-l10"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "sci-physics-q001",
+      "q": "A drug order requires converting a patient's weight of `176 lb` to kilograms using `2.2 lb = 1 kg`. What is the correct setup?",
+      "choices": [
+        "`176 lb * (1 kg / 2.2 lb)`",
+        "`176 lb * (2.2 lb / 1 kg)`",
+        "`176 lb / (1 kg * 2.2 lb)`",
+        "`176 lb + 2.2 kg`"
+      ],
+      "answer": 0,
+      "why": "The conversion fraction must be arranged so pounds cancel, leaving kilograms: `176 / 2.2 = 80 kg`. The second choice multiplies by `2.2` and leaves nonsense units of `lb^2/kg`, which is the tell that the setup is upside down.",
+      "lesson": "sci-physics-l01",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-physics-q002",
+      "q": "A student measures a mass as `2.50 g` and a volume as `1.2 mL`. How many significant figures belong in the reported density?",
+      "choices": [
+        "One",
+        "Four",
+        "Three",
+        "Two"
+      ],
+      "answer": 3,
+      "why": "Division keeps the fewest significant figures of any input, and `1.2` has two. Reporting three would claim precision the volume measurement never had.",
+      "lesson": "sci-physics-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-physics-q003",
+      "q": "Two rescuers pull on a stretcher, each with `100 N`, at `90 degrees` to each other. What is the magnitude of the net force?",
+      "choices": [
+        "`0 N`",
+        "`100 N`",
+        "`141 N`",
+        "`200 N`"
+      ],
+      "answer": 2,
+      "why": "Perpendicular vectors combine as `sqrt(100^2 + 100^2) = 141 N`. Adding magnitudes to get `200 N` is only correct when the vectors point the same direction, which is the most common vector error.",
+      "lesson": "sci-physics-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-physics-q004",
+      "q": "Which of the following is a vector quantity?",
+      "choices": [
+        "Mass",
+        "Speed",
+        "Energy",
+        "Acceleration"
+      ],
+      "answer": 3,
+      "why": "Acceleration has both magnitude and direction. Mass and energy are pure scalars, and speed is the scalar magnitude of the velocity vector with its direction stripped away.",
+      "lesson": "sci-physics-l01",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-physics-q005",
+      "q": "A patient falls from a roof `12 m` above the ground. Ignoring air resistance, what is the approximate impact speed?",
+      "choices": [
+        "`15 m/s`",
+        "`24 m/s`",
+        "`118 m/s`",
+        "`235 m/s`"
+      ],
+      "answer": 0,
+      "why": "`v^2 = 2*9.8*12 = 235`, so `v = 15.3 m/s`. Choosing `235` reports `v^2` without taking the square root, and `24` would come from doubling the correct answer.",
+      "lesson": "sci-physics-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-physics-q006",
+      "q": "A car decelerates from `20 m/s` to rest over `50 m`. What was its acceleration?",
+      "choices": [
+        "`-2.0 m/s^2`",
+        "`-4.0 m/s^2`",
+        "`-8.0 m/s^2`",
+        "`-20 m/s^2`"
+      ],
+      "answer": 1,
+      "why": "`v^2 = v0^2 + 2*a*d` gives `0 = 400 + 2*a*50`, so `a = -4.0 m/s^2`. Choosing `-2.0` divides by `2*100` instead of `2*50`, and the negative sign only means the acceleration opposes motion.",
+      "lesson": "sci-physics-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-physics-q007",
+      "q": "Two objects of different mass are dropped from the same height in a vacuum. What is true of their fall?",
+      "choices": [
+        "The heavier lands first",
+        "The lighter lands first",
+        "Both land at the same time",
+        "It depends on their shapes"
+      ],
+      "answer": 2,
+      "why": "Free-fall acceleration is `9.8 m/s^2` regardless of mass, because mass cancels between the gravitational force and the inertia it must accelerate. Shape matters only through air resistance, which a vacuum removes.",
+      "lesson": "sci-physics-l02",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-physics-q008",
+      "q": "A worker is thrown horizontally from a platform `5.0 m` high at `4.0 m/s`. About how far from the base does he land?",
+      "choices": [
+        "`1.0 m`",
+        "`2.0 m`",
+        "`3.0 m`",
+        "`4.0 m`"
+      ],
+      "answer": 3,
+      "why": "Vertical fall time is `t = sqrt(2*5.0/9.8) = 1.01 s`, and horizontal distance is `4.0 * 1.01 = 4.0 m`. Horizontal velocity never affects fall time, so the two directions must be solved separately.",
+      "lesson": "sci-physics-l02",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-physics-q009",
+      "q": "You push a `40 kg` cart with a net force of `80 N`. What is its acceleration?",
+      "choices": [
+        "`2.0 m/s^2`",
+        "`0.5 m/s^2`",
+        "`40 m/s^2`",
+        "`3200 m/s^2`"
+      ],
+      "answer": 0,
+      "why": "`a = F/m = 80/40 = 2.0 m/s^2`. Choosing `0.5` inverts the ratio and `3200` multiplies force by mass, both of which produce units that cannot be an acceleration.",
+      "lesson": "sci-physics-l03",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-physics-q010",
+      "q": "A patient stands still on the floor. Which pair are Newton's third-law partners?",
+      "choices": [
+        "The patient's weight and the floor's normal force on the patient",
+        "The patient's push down on the floor and the floor's push up on the patient",
+        "The patient's weight and the patient's mass",
+        "Friction and the normal force"
+      ],
+      "answer": 1,
+      "why": "Third-law pairs act on two different objects with equal size and opposite direction. Weight and normal force both act on the patient, so despite being equal here they are an equilibrium pair, not an action-reaction pair.",
+      "lesson": "sci-physics-l03",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-physics-q011",
+      "q": "A tech slides a `70 kg` patient across a bed where `mu_s = 0.30`. About how much horizontal force is needed to start the slide?",
+      "choices": [
+        "`21 N`",
+        "`70 N`",
+        "`206 N`",
+        "`686 N`"
+      ],
+      "answer": 2,
+      "why": "`N = 70 * 9.8 = 686 N` and `f = 0.30 * 686 = 206 N`. Choosing `686 N` reports the normal force instead of friction, and `21 N` multiplies `mu` by mass without gravity.",
+      "lesson": "sci-physics-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-physics-q012",
+      "q": "Why does bending at the waist to lift a box load the lumbar discs so heavily?",
+      "choices": [
+        "The box becomes heavier as it is lifted",
+        "The spinal muscles have a short lever arm against a long load arm",
+        "Friction between vertebrae increases",
+        "The normal force on the feet decreases"
+      ],
+      "answer": 1,
+      "why": "Erector spinae insert about `5 cm` from the disc while the load sits near `50 cm` out, so muscle force and disc compression run roughly ten times the load. The box's weight never changes, and friction between vertebrae is not the mechanism.",
+      "lesson": "sci-physics-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-physics-q013",
+      "q": "A force of `30 N` is applied to a lever `0.40 m` from the pivot, perpendicular to the lever. What torque results?",
+      "choices": [
+        "`12 N*m`",
+        "`30 N*m`",
+        "`75 N*m`",
+        "`120 N*m`"
+      ],
+      "answer": 0,
+      "why": "`torque = F * r * sin(90) = 30 * 0.40 = 12 N*m`. Choosing `75` divides rather than multiplies, and `30` ignores the lever arm, which would only be right if `r` were `1 m`.",
+      "lesson": "sci-physics-l04",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-physics-q014",
+      "q": "Standing on the toes, with the ball of the foot as fulcrum and body weight in the middle, is which lever class?",
+      "choices": [
+        "First class",
+        "Second class",
+        "Third class",
+        "It is not a lever"
+      ],
+      "answer": 1,
+      "why": "The load lies between fulcrum and effort, which defines a second class lever, the only class that always multiplies force. Third class would place the effort in the middle, as the biceps does at the elbow.",
+      "lesson": "sci-physics-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-physics-q015",
+      "q": "An elderly patient leans far over a bedrail and begins to tip. What has physically happened?",
+      "choices": [
+        "Her mass has increased",
+        "Her weight has shifted to the rail",
+        "Her center of mass has moved outside her base of support",
+        "Gravity acts more strongly when leaning"
+      ],
+      "answer": 2,
+      "why": "Stability lasts only while a vertical line from the center of mass falls within the base of support formed by the feet. Mass and gravity are unchanged; only the position of the center of mass moved.",
+      "lesson": "sci-physics-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-physics-q016",
+      "q": "A `4.0 kg` load is held `30 cm` from the elbow while the biceps inserts `5.0 cm` from it. What muscle force is required?",
+      "choices": [
+        "`39 N`",
+        "`118 N`",
+        "`196 N`",
+        "`235 N`"
+      ],
+      "answer": 3,
+      "why": "Load torque is `4.0 * 9.8 * 0.30 = 11.8 N*m`, so `Fmuscle = 11.8 / 0.05 = 235 N`. Choosing `39 N` reports only the load's weight, forgetting that the lever ratio multiplies it six times.",
+      "lesson": "sci-physics-l04",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-physics-q017",
+      "q": "How much work is done lifting a `20 kg` box `1.5 m` straight up at constant speed?",
+      "choices": [
+        "`294 J`",
+        "`30 J`",
+        "`196 J`",
+        "`13 J`"
+      ],
+      "answer": 0,
+      "why": "`W = m*g*h = 20 * 9.8 * 1.5 = 294 J`. Choosing `30 J` multiplies mass by height while omitting `g`, which leaves units that are not joules.",
+      "lesson": "sci-physics-l05",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-physics-q018",
+      "q": "Two identical vehicles crash, one travelling at `30 mph` and one at `60 mph`. How does the faster one's kinetic energy compare?",
+      "choices": [
+        "Twice as great",
+        "Four times as great",
+        "Eight times as great",
+        "The same, since the masses are equal"
+      ],
+      "answer": 1,
+      "why": "`KE = 0.5*m*v^2` depends on the square of speed, so doubling speed multiplies energy by four. Answering twice treats the relationship as linear, which underestimates high-speed crash severity badly.",
+      "lesson": "sci-physics-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-physics-q019",
+      "q": "A `65 kg` tech climbs `8.0 m` of stairs in `20 s`. What is the mechanical power output?",
+      "choices": [
+        "`26 W`",
+        "`127 W`",
+        "`255 W`",
+        "`5096 W`"
+      ],
+      "answer": 2,
+      "why": "`W = 65 * 9.8 * 8.0 = 5096 J`, and `P = 5096 / 20 = 255 W`. Choosing `5096 W` reports the work rather than the power, forgetting to divide by time.",
+      "lesson": "sci-physics-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-physics-q020",
+      "q": "The body converts about `20-25%` of metabolic energy into mechanical work. Where does the rest go?",
+      "choices": [
+        "It is destroyed",
+        "It is stored as fat during the activity",
+        "It is returned to the food supply",
+        "It becomes heat"
+      ],
+      "answer": 3,
+      "why": "Energy is conserved, so the unused fraction leaves as heat, which is why heavy work in protective gear causes heat illness. Energy is never destroyed, and storage as fat is a separate, slow anabolic process.",
+      "lesson": "sci-physics-l05",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-physics-q021",
+      "q": "An unrestrained occupant and a belted occupant experience the same crash. What differs between them?",
+      "choices": [
+        "The change in momentum",
+        "The stopping time and therefore the peak force",
+        "The mass involved",
+        "The kinetic energy before impact"
+      ],
+      "answer": 1,
+      "why": "Both start and end at the same velocities, so the momentum change is identical. The belt only stretches stopping time, and since `F = change in momentum / t`, that alone lowers peak force.",
+      "lesson": "sci-physics-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-physics-q022",
+      "q": "A `60 kg` occupant travelling at `15 m/s` stops in `0.20 s`. What average force acts on her?",
+      "choices": [
+        "`900 N`",
+        "`180 N`",
+        "`9000 N`",
+        "`4500 N`"
+      ],
+      "answer": 3,
+      "why": "Momentum change is `60 * 15 = 900 kg*m/s`, and `F = 900 / 0.20 = 4500 N`. Choosing `900 N` reports the momentum change itself without dividing by the stopping time.",
+      "lesson": "sci-physics-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-physics-q023",
+      "q": "A driver hits a pole at `40 mph` and the vehicle shows deep crumpling. Physically, what did the deformation accomplish?",
+      "choices": [
+        "It increased the momentum transferred to the driver",
+        "It made the collision elastic",
+        "It absorbed energy and lengthened the stopping time",
+        "It had no effect on occupant forces"
+      ],
+      "answer": 2,
+      "why": "Deformation consumes kinetic energy and stretches the deceleration over more time and distance, lowering peak force on the occupant. An elastic collision would return energy and be worse, not better.",
+      "lesson": "sci-physics-l06",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-physics-q024",
+      "q": "Which injury pattern belongs to the third collision in a motor vehicle crash?",
+      "choices": [
+        "The bumper deforming against the pole",
+        "The chest striking the steering column",
+        "Aortic shear at the ligamentum arteriosum",
+        "The vehicle rotating after impact"
+      ],
+      "answer": 2,
+      "why": "The third collision is organs striking the body wall and tearing at their attachments, which is exactly the mechanism of aortic shear. The chest against the column is the second collision, and bumper deformation is the first.",
+      "lesson": "sci-physics-l06",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-physics-q025",
+      "q": "A `14 G` catheter has roughly twice the internal radius of a `20 G`. How does its flow compare at the same pressure and length?",
+      "choices": [
+        "About 16 times greater",
+        "About 4 times greater",
+        "About 2 times greater",
+        "About the same"
+      ],
+      "answer": 0,
+      "why": "Poiseuille's law makes flow proportional to `r^4`, and `2^4 = 16`. Answering 4 times uses cross-sectional area, and answering twice uses radius alone, both of which badly underestimate the difference.",
+      "lesson": "sci-physics-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-physics-q026",
+      "q": "Which change increases IV flow the most?",
+      "choices": [
+        "Raising the bag by `20%`",
+        "Using a catheter `20%` shorter",
+        "Using a catheter `20%` wider in radius",
+        "Warming the fluid slightly"
+      ],
+      "answer": 2,
+      "why": "Flow scales with `r^4`, so a `20%` wider radius gives about `1.2^4 = 2.07` times the flow. Pressure and length enter linearly, and warming changes viscosity only slightly.",
+      "lesson": "sci-physics-l07",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-physics-q027",
+      "q": "A patient with polycythemia has a hematocrit of `62%`. What is the physical consequence for flow?",
+      "choices": [
+        "Viscosity falls, so flow rises",
+        "Viscosity rises, so resistance rises and cardiac work increases",
+        "Vessel radius increases to compensate",
+        "Pressure gradient falls automatically"
+      ],
+      "answer": 1,
+      "why": "Viscosity `eta` sits in the denominator of Poiseuille's law, so a high hematocrit raises resistance and the work the heart must do. Anemia produces the opposite effect by lowering viscosity.",
+      "lesson": "sci-physics-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-physics-q028",
+      "q": "A blood pressure cuff too narrow for the patient's arm will produce what error?",
+      "choices": [
+        "A falsely low systolic reading",
+        "A falsely high systolic reading",
+        "An accurate reading with wider pulse pressure",
+        "No reading at all"
+      ],
+      "answer": 1,
+      "why": "A narrow bladder loses more pressure into tissue before reaching the artery, so a higher cuff pressure is required to occlude it and the reading reads high. The bladder should span about `40%` of arm circumference.",
+      "lesson": "sci-physics-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-physics-q029",
+      "q": "How much heat must be removed to lower a `80 kg` patient's temperature by `2.0 degrees C`, using `c = 3470 J/kg/degree C`?",
+      "choices": [
+        "`6940 J`",
+        "`69400 J`",
+        "`278000 J`",
+        "`555000 J`"
+      ],
+      "answer": 3,
+      "why": "`Q = m*c*dT = 80 * 3470 * 2.0 = 555200 J`. Choosing `278000` forgets to double for the two degrees, and `6940` uses only `c` times the temperature change without mass.",
+      "lesson": "sci-physics-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-physics-q030",
+      "q": "A patient exercising in `95%` humidity at `38 degrees C` ambient overheats rapidly. Which mechanism failed?",
+      "choices": [
+        "Conduction",
+        "Radiation",
+        "Evaporation",
+        "Convection"
+      ],
+      "answer": 2,
+      "why": "When ambient temperature exceeds skin temperature, conduction, convection and radiation all move heat inward, leaving evaporation as the only cooling route, and high humidity blocks it. That is why humid heat kills at lower temperatures than dry heat.",
+      "lesson": "sci-physics-l08",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-physics-q031",
+      "q": "A trauma patient is found wet and shivering at `34 degrees C` core. Which statement is correct?",
+      "choices": [
+        "Shivering has already stopped at this temperature",
+        "This is mild hypothermia and shivering is still an active heat source",
+        "Wet clothing does not affect heat loss",
+        "Antipyretics will raise the core temperature"
+      ],
+      "answer": 1,
+      "why": "Hypothermia begins below `35 degrees C`, and shivering typically persists until about `30-32 degrees C`. Wet clothing greatly increases conductive and evaporative loss, and antipyretics only lower a raised set point.",
+      "lesson": "sci-physics-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-physics-q032",
+      "q": "Which route accounts for roughly `60%` of heat loss from a resting adult in a cool room?",
+      "choices": [
+        "Radiation",
+        "Conduction",
+        "Convection",
+        "Evaporation"
+      ],
+      "answer": 0,
+      "why": "Infrared radiation from skin, mostly head and trunk, dominates at rest. Evaporation contributes a smaller resting share and only becomes dominant during exertion or heat exposure.",
+      "lesson": "sci-physics-l08",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-physics-q033",
+      "q": "A sound rises from `70 dB` to `100 dB`. By what factor did intensity increase?",
+      "choices": [
+        "30 times",
+        "100 times",
+        "10000 times",
+        "1000 times"
+      ],
+      "answer": 3,
+      "why": "Each `10 dB` step is ten times the intensity, and `30 dB` is three steps, so `10^3 = 1000`. Answering 30 treats decibels as linear, which is the whole trap of a logarithmic scale.",
+      "lesson": "sci-physics-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-physics-q034",
+      "q": "Which probe should be selected to image a deep abdominal structure?",
+      "choices": [
+        "`12 MHz` linear",
+        "`10 MHz` linear",
+        "`3 MHz` curved",
+        "Frequency does not affect depth"
+      ],
+      "answer": 2,
+      "why": "Lower frequency attenuates less and penetrates deeper, at the cost of resolution. High-frequency linear probes give crisp images of superficial structures only, so they would show nothing at abdominal depth.",
+      "lesson": "sci-physics-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-physics-q035",
+      "q": "A vascular study uses the frequency shift of reflected ultrasound to measure red cell velocity. What principle is this?",
+      "choices": [
+        "Total internal reflection",
+        "The Doppler effect",
+        "Resonance",
+        "Refraction"
+      ],
+      "answer": 1,
+      "why": "A frequency shift caused by relative motion between source and reflector is the Doppler effect, and its sign gives flow direction. Refraction is bending at a boundary and resonance is amplified response at a natural frequency.",
+      "lesson": "sci-physics-l09",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-physics-q036",
+      "q": "A patient's far point is `0.25 m`. What corrective lens power does he need?",
+      "choices": [
+        "`+2.50 D`",
+        "`+4.00 D`",
+        "`-2.50 D`",
+        "`-4.00 D`"
+      ],
+      "answer": 3,
+      "why": "`D = 1/f = 1/(-0.25) = -4.00 D`, a diverging lens for myopia. A positive lens would correct hyperopia, and `-2.50 D` would match a far point of `0.40 m`.",
+      "lesson": "sci-physics-l09",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-physics-q037",
+      "q": "Two resistors of `100 ohms` each are connected in parallel. What is the total resistance?",
+      "choices": [
+        "`50 ohms`",
+        "`100 ohms`",
+        "`200 ohms`",
+        "`10000 ohms`"
+      ],
+      "answer": 0,
+      "why": "`1/Rtotal = 1/100 + 1/100 = 1/50`, so total resistance is `50 ohms`, always below the smallest branch. Adding them to `200 ohms` is the series rule applied to the wrong arrangement.",
+      "lesson": "sci-physics-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-physics-q038",
+      "q": "A patient has a temporary pacing wire in place. Why is the electrical safety threshold so much lower for him?",
+      "choices": [
+        "His skin resistance is elevated",
+        "The wire bypasses skin resistance, so `10-100 microamps` can fibrillate",
+        "Pacing wires amplify voltage",
+        "Only alternating current reaches the heart"
+      ],
+      "answer": 1,
+      "why": "Microshock means a direct conductive path to myocardium with the skin's large resistance removed, dropping the fibrillation threshold about a thousandfold below the `100 mA` macroshock level. The wire does not amplify anything.",
+      "lesson": "sci-physics-l10",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-physics-q039",
+      "q": "A radiographer steps from `1 m` to `2 m` away from a scatter source. Her exposure becomes what?",
+      "choices": [
+        "Half",
+        "One quarter",
+        "One eighth",
+        "Unchanged"
+      ],
+      "answer": 1,
+      "why": "Intensity falls with the inverse square of distance, so doubling distance cuts exposure to one quarter. Halving would be true only if intensity fell linearly, which it does not.",
+      "lesson": "sci-physics-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-physics-q040",
+      "q": "A patient asks how an abdominal CT compares with a chest X-ray in radiation dose. Which is accurate?",
+      "choices": [
+        "They are about equal",
+        "The CT is about twice the dose",
+        "The CT is roughly 80 times the dose",
+        "The X-ray is the higher dose"
+      ],
+      "answer": 2,
+      "why": "An abdominal CT is about `8 mSv` while a chest X-ray is about `0.1 mSv`, roughly an `80`-fold difference, and background exposure is about `3 mSv` per year. CT rotates the beam through many projections, which is why its dose is so much higher.",
+      "lesson": "sci-physics-l10",
+      "difficulty": 1
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "sci-physics-s01",
+      "title": "Problem set: the physics of a crash",
+      "setting": "classroom",
+      "intro": "Your instructor puts a case on the board. A `1400 kg` sedan travelling at `27 m/s` (about `60 mph`) strikes a concrete barrier and stops. The belted driver has a mass of `75 kg`. An identical unbelted passenger is also aboard.\n\nYou will be asked for energies, momenta and forces, and then for what the numbers mean clinically. Work each part with the equation that contains what you know and what you want.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "First question on the board: how much kinetic energy must be dissipated by the crash? What do you set up?",
+          "choices": [
+            {
+              "text": "`KE = 0.5 * m * v^2 = 0.5 * 1400 * 27^2`, giving about `510000 J`",
+              "next": "s2",
+              "feedback": "Correct. `27^2 = 729`, and `0.5 * 1400 * 729 = 510300 J`. Roughly half a megajoule has to go somewhere, and everywhere it goes is either structure or people.",
+              "score": 1
+            },
+            {
+              "text": "`KE = m * v = 1400 * 27 = 37800`",
+              "next": "s2",
+              "feedback": "That is momentum, not energy. Momentum is `kg*m/s`; energy is `0.5*m*v^2` in joules. You will need momentum in a moment, so keep the number, but it does not answer this question.",
+              "score": 0
+            },
+            {
+              "text": "`KE = 0.5 * 1400 * 27 = 18900 J`",
+              "next": "s2",
+              "feedback": "The velocity has to be squared. Dropping the square makes this the most under-counted quantity in trauma physics; the true figure is about 27 times larger.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "Next: the same car at `13.5 m/s`, half the speed. The instructor asks what happens to the energy. What is your answer?",
+          "choices": [
+            {
+              "text": "It falls to one quarter, about `128000 J`",
+              "next": "s3",
+              "feedback": "Correct, and this is the single most useful fact in the whole topic. Energy scales with `v^2`, so halving speed removes three quarters of the energy.",
+              "score": 1
+            },
+            {
+              "text": "It falls to half, about `255000 J`",
+              "next": "s3",
+              "feedback": "That is the momentum relationship, which is linear in speed. Energy is quadratic, so the drop is far steeper than half.",
+              "score": -1
+            },
+            {
+              "text": "It depends on the barrier, so it cannot be calculated",
+              "next": "s3",
+              "feedback": "The barrier determines how the energy is dissipated, not how much there is. Kinetic energy before impact is fixed by mass and speed alone.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "Now the driver. She is belted with an airbag, and the restraint system stops her over about `0.15 s`. Compute the average force on her.",
+          "choices": [
+            {
+              "text": "Momentum change `75 * 27 = 2025 kg*m/s`, so `F = 2025 / 0.15 = 13500 N`",
+              "next": "s4",
+              "feedback": "Correct. About `13500 N`, roughly `3000 lb`, spread across belt webbing and the airbag over the chest and pelvis. Survivable because the load is both lower and distributed.",
+              "score": 1
+            },
+            {
+              "text": "`F = m*a = 75 * 9.8 = 735 N`",
+              "next": "s4",
+              "feedback": "That is her weight, not the crash force. The relevant acceleration is the crash deceleration, roughly `180 m/s^2` here, not gravity.",
+              "score": -1
+            },
+            {
+              "text": "`F = 2025 * 0.15 = 304 N`",
+              "next": "s4",
+              "feedback": "The impulse equation divides by time, not multiplies. Check the units: force times time gives momentum, so momentum divided by time gives force.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "The unbelted passenger, same mass and speed, strikes the windshield frame and stops in about `0.015 s`. What does your number say?",
+          "choices": [
+            {
+              "text": "`F = 2025 / 0.015 = 135000 N`, ten times the belted driver's force",
+              "next": "s5",
+              "feedback": "Correct. Identical momentum change, one tenth the stopping time, ten times the force, concentrated on the head instead of distributed across the torso. That is the entire argument for restraints in one line.",
+              "score": 1
+            },
+            {
+              "text": "The force is the same because the speed and mass are the same",
+              "next": "s5",
+              "feedback": "Momentum change is the same. Force is not, because force depends on how long the stop takes. That distinction is the whole point of the impulse equation.",
+              "score": -1
+            },
+            {
+              "text": "The force is higher, but I would report it qualitatively rather than compute it",
+              "next": "s5",
+              "feedback": "The direction is right and this is defensible on a call, but the exam wants the number. Computing it also shows the factor of ten, which a qualitative statement hides.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "Final part: the instructor asks which findings you would anticipate in the belted driver, based purely on the physics you just computed.",
+          "choices": [
+            {
+              "text": "Deceleration injuries from the third collision: aortic shear, organ lacerations at attachment points, plus belt-pattern chest and abdominal injury",
+              "next": "end",
+              "feedback": "Correct. The restraint stopped the body, but the organs kept moving and tore at their tethers. Belt marks also tell you the restraint loaded exactly where it should.",
+              "score": 1
+            },
+            {
+              "text": "No significant injury, since the belt reduced force by a factor of ten",
+              "next": "end",
+              "feedback": "A tenfold reduction still leaves `13500 N`. Restraints convert lethal injuries into survivable ones; they do not zero out the physics.",
+              "score": -1
+            },
+            {
+              "text": "Mainly head injury from striking the windshield",
+              "next": "end",
+              "feedback": "That is the unbelted passenger's pattern. The belted driver's head was largely captured by the airbag, which redirects the expected injuries to the torso and to internal shear.",
+              "score": 0
+            },
+            {
+              "text": "Possible internal injury, so transport and imaging regardless of how she looks",
+              "next": "end",
+              "feedback": "Sound reasoning and the right disposition. Naming the specific third-collision mechanisms would make the answer complete.",
+              "score": 0
+            }
+          ]
+        }
+      ],
+      "debrief": "The pattern to carry out of this problem set: the momentum change in any crash is fixed by mass and speed, and nothing you or the vehicle does can reduce it. The only adjustable term is stopping time, which is why `F = change in momentum / t` describes every belt, airbag, helmet, crumple zone and fall mat ever built.\n\nEnergy and momentum answer different questions. Energy, with its `v^2`, tells you how severe the crash is and why speed dominates everything. Momentum, linear in speed, tells you what force a given stopping time will produce.\n\nAnd remember that stopping the body is not stopping the organs. Every calculation here described the second collision; the injuries that kill hours later belong to the third."
+    },
+    {
+      "id": "sci-physics-s02",
+      "title": "Problem set: flow, pressure, and the IV",
+      "setting": "classroom",
+      "intro": "Second problem set. A patient in hemorrhagic shock needs volume fast. Available access: a `20 G` peripheral catheter already in place, a `14 G` catheter that can be placed in an antecubital vein, and a `20 cm` triple-lumen central line whose largest lumen is `16 G`.\n\nYou will work the flow physics, then the pressure physics of the bag and the cuff. Use `Q = (pi * dP * r^4) / (8 * eta * L)` throughout.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "First: which access gives the highest flow rate, and on what reasoning?",
+          "choices": [
+            {
+              "text": "The `14 G` peripheral, because it is both the widest and the shortest, and flow goes as `r^4` and as `1/L`",
+              "next": "s2",
+              "feedback": "Correct. Radius dominates by the fourth power and length penalizes linearly, so a short fat peripheral line beats a long central line for volume every time.",
+              "score": 1
+            },
+            {
+              "text": "The central line, because central access is always better for resuscitation",
+              "next": "s2",
+              "feedback": "Central access is better for pressors and monitoring, not for volume. A `20 cm` `16 G` lumen is both narrower and ten times longer than the antecubital catheter, so flow is far lower.",
+              "score": -1
+            },
+            {
+              "text": "The `20 G` already in place, because it saves the time of placing another line",
+              "next": "s2",
+              "feedback": "Speed of placement is a real consideration, but the question asked about flow rate. The `20 G` delivers roughly one sixteenth of the `14 G` at the same pressure.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "The instructor asks you to quantify it. The `14 G` has roughly twice the internal radius of the `20 G` and similar length. How much more flow?",
+          "choices": [
+            {
+              "text": "About `4` times, from the cross-sectional area ratio",
+              "next": "s3",
+              "feedback": "Area is the intuitive answer and it is wrong. Poiseuille's law has `r^4`, not `r^2`, because viscous drag against the wall penalizes narrow tubes twice over.",
+              "score": -1
+            },
+            {
+              "text": "About `16` times, since `2^4 = 16`",
+              "next": "s3",
+              "feedback": "Correct. Doubling radius multiplies flow sixteenfold. This is why gauge matters far more than bag height or pressure bags in a bleeding patient.",
+              "score": 1
+            },
+            {
+              "text": "About `2` times, proportional to radius",
+              "next": "s3",
+              "feedback": "Flow is not proportional to radius. That would be true if the tube offered no viscous resistance, which is exactly what Poiseuille's law corrects for.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "Next part. The IV bag hangs `1.0 m` above the insertion site. What pressure does gravity supply, and what changes if you raise it to `1.5 m`?",
+          "choices": [
+            {
+              "text": "`P = rho*g*h = 1000 * 9.8 * 1.0 = 9800 Pa`, about `74 mmHg`; at `1.5 m` it rises to about `110 mmHg`",
+              "next": "s4",
+              "feedback": "Correct. Height enters linearly, so a `50%` increase in height gives a `50%` increase in driving pressure, and flow rises in proportion since `dP` is linear in Poiseuille's law.",
+              "score": 1
+            },
+            {
+              "text": "The pressure depends on how much fluid is left in the bag",
+              "next": "s4",
+              "feedback": "Volume does not matter; only the height of the column above the site does. A nearly empty bag at `1.0 m` supplies the same pressure as a full one, which is why `P = rho*g*h` has no volume term.",
+              "score": -1
+            },
+            {
+              "text": "Raising the bag helps, but less than switching to a wider catheter would",
+              "next": "s4",
+              "feedback": "True and clinically important, since pressure is linear while radius is to the fourth power. The question wanted the number, though: `74 mmHg` at `1.0 m`.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "Now the patient's own circulation. Her blood pressure reads `78/44`, and the instructor asks what turbulence has to do with that measurement.",
+          "choices": [
+            {
+              "text": "Korotkoff sounds are turbulent flow, heard only while cuff pressure lies between systolic and diastolic",
+              "next": "s5",
+              "feedback": "Correct. Above systolic there is no flow and silence; between the two, flow is intermittent and turbulent and audible; below diastolic, flow is laminar and silent again.",
+              "score": 1
+            },
+            {
+              "text": "The sounds are the artery wall snapping shut",
+              "next": "s5",
+              "feedback": "The sounds come from the flow, not the wall. That is why a vessel with laminar flow under the cuff is silent even though the wall is still moving.",
+              "score": -1
+            },
+            {
+              "text": "Turbulence is unrelated; the cuff measures wall tension directly",
+              "next": "s5",
+              "feedback": "A cuff cannot read wall tension. It occludes the vessel and uses the sound of flow returning as the endpoint, which is entirely a fluid dynamics measurement.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "The cuff on the arm is clearly narrow for this patient's arm circumference. The instructor asks what that does to the number and why it matters here.",
+          "choices": [
+            {
+              "text": "It reads falsely high, because more cuff pressure is lost in tissue; in a shocked patient that could mask the true degree of hypotension",
+              "next": "end",
+              "feedback": "Correct. Bladder width should be about `40%` of arm circumference. A narrow cuff is the fastest way to under-call shock.",
+              "score": 1
+            },
+            {
+              "text": "It reads falsely low, so the patient is actually less hypotensive than shown",
+              "next": "end",
+              "feedback": "Backwards. A narrow cuff requires more pressure to occlude the artery, so the reading is too high, not too low. A cuff that is too wide reads low.",
+              "score": -1
+            },
+            {
+              "text": "Cuff size affects comfort but not accuracy",
+              "next": "end",
+              "feedback": "Cuff size is one of the largest sources of error in non-invasive blood pressure, and the error can exceed `10-20 mmHg` in either direction.",
+              "score": 0
+            },
+            {
+              "text": "Change to a correctly sized cuff and recheck before acting on the number",
+              "next": "end",
+              "feedback": "The right move. Naming the direction of the error as well would complete the answer, since it tells you which way the current reading is biased.",
+              "score": 0
+            }
+          ]
+        }
+      ],
+      "debrief": "The pattern here: in any flow problem, find the term with the largest exponent and change that one. Poiseuille's law makes radius the fourth power, so gauge beats bag height, pressure bags and everything else in a patient who needs volume. Length works against you linearly, which is why a long central lumen underperforms a short peripheral catheter of similar bore.\n\nPressure problems reduce to `P = rho * g * h`. Only the height of the column counts, never the shape of the container or how full it is.\n\nAnd every non-invasive blood pressure is a fluid dynamics measurement, not a direct reading. The sounds are turbulence, the endpoints are the pressures at which turbulence starts and stops, and a mis-sized cuff biases both. Narrow cuff reads high, wide cuff reads low."
+    }
+  ]
+}

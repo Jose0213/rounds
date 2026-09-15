@@ -1,0 +1,1800 @@
+{
+  "schema": 1,
+  "id": "sci-precalc",
+  "track": "prereq",
+  "title": "Precalculus",
+  "short": "Precalculus",
+  "summary": "The precalculus course (MAT-1290) required in the Thomas Edison State University BA in Biology plan, taught in syllabus order from functions through limits. Every topic is worked by hand on real numbers and tied to health-science uses: dosing, bacterial growth, drug half-life, pH, and body-surface-area formulas.",
+  "lessons": [
+    {
+      "id": "sci-precalc-l01",
+      "title": "Functions, graphs, composition and inverses",
+      "minutes": 8,
+      "body": "Everything in this course is a function. Get the definition and the notation right now and the rest of the term is bookkeeping.\n\n## A function is a rule with exactly one output\n\nA **function** takes an input and returns exactly one output. Feed it the same number twice and you get the same answer twice. On a graph that is the **vertical line test**: if any vertical line crosses the curve more than once, one input has two outputs and it is not a function.\n\nWe write `f(x)` and say \"f of x\". The x is a placeholder, not a multiplication. If `f(x) = 2x + 1`, then `f(3) = 7`, and `f(a + 1) = 2(a + 1) + 1 = 2a + 3`. Substitute the whole thing in parentheses every time.\n\n## Domain and range\n\nThe **domain** is every legal input. The **range** is every output that actually comes out. Only two things kill an input in this course: dividing by zero, and taking an even root of a negative number.\n\nWorked problem 1. Find the domain of `f(x) = sqrt(x - 4)/(x - 9)`.\n\n1. The square root needs its inside to be zero or positive: `x - 4 >= 0`.\n2. Solve: `x >= 4`.\n3. The denominator cannot be zero: `x - 9` is not `0`, so x is not `9`.\n4. Combine both: every x from `4` up, with `9` removed.\n5. Answer in interval notation: `[4, 9)` union `(9, infinity)`.\n\n## Transformations move a graph you already know\n\nStart from a parent graph such as `y = x^2` or `y = sqrt(x)` and push it around.\n\n- `f(x) + k` shifts up `k`; `f(x) - k` shifts down.\n- `f(x + h)` shifts **left** `h`; `f(x - h)` shifts right. The sign feels backward because you must feed in a smaller x to get the same inside value.\n- `-f(x)` flips over the x-axis; `f(-x)` flips over the y-axis.\n- `a*f(x)` stretches vertically by a factor of `a` when `a > 1` and squashes it when `a` is between `0` and `1`.\n\n> **Trap:** `f(x + 3)` moves the graph three units LEFT, not right. Test it: the vertex of `y = (x + 3)^2` sits at `x = -3`.\n\n## Composition stacks one rule on another\n\n`(f o g)(x) = f(g(x))` means run g first, then feed its output into f. Order matters.\n\nWorked problem 2. A lab converts a raw absorbance reading to concentration with `g(a) = 4a - 1` mg/dL, and a dosing rule takes concentration to dose with `f(c) = c/2 + 3` mg. Find the dose as a function of absorbance, then the dose at `a = 2`.\n\n1. Write the composition: `f(g(a)) = g(a)/2 + 3`.\n2. Substitute g: `f(g(a)) = (4a - 1)/2 + 3`.\n3. Simplify: `= 2a - 0.5 + 3 = 2a + 2.5`.\n4. Evaluate at `a = 2`: `2(2) + 2.5 = 6.5` mg.\n\n## Inverses undo\n\nThe **inverse** `f^-1` sends outputs back to inputs. A function has an inverse only if it passes the **horizontal line test** (it is one-to-one). The graph of the inverse is the mirror image of the original across the line `y = x`, and the domain and range swap.\n\nWorked problem 3. Find the inverse of `f(x) = (3x - 5)/2`.\n\n1. Write `y = (3x - 5)/2`.\n2. Swap x and y: `x = (3y - 5)/2`.\n3. Multiply both sides by `2`: `2x = 3y - 5`.\n4. Add `5`: `2x + 5 = 3y`.\n5. Divide by `3`: `y = (2x + 5)/3`, so `f^-1(x) = (2x + 5)/3`.\n6. Check: `f(3) = 2`, and `f^-1(2) = (4 + 5)/3 = 3`. It undoes.\n\n> **Key:** Composition and inverses are the same idea from two directions. If `f(g(x)) = x` and `g(f(x)) = x`, then g is the inverse of f, and no other proof is needed.",
+      "keyPoints": [
+        "A function gives exactly one output per input; the vertical line test checks it on a graph.",
+        "Domain is killed only by division by zero and even roots of negatives.",
+        "`f(x + h)` shifts LEFT by h; `f(x) + k` shifts up by k.",
+        "`(f o g)(x) = f(g(x))` runs g first, and order changes the answer.",
+        "To invert: swap x and y, solve for y; confirm with `f(f^-1(x)) = x`."
+      ],
+      "checks": [
+        {
+          "q": "What is the domain of `f(x) = sqrt(x + 2)/(x - 5)`?",
+          "choices": [
+            "All real numbers except `5`",
+            "`x >= -2` with `5` removed",
+            "`x > -2` and `x < 5` only",
+            "`x >= 2` with `5` removed"
+          ],
+          "answer": 1,
+          "why": "The root needs `x + 2 >= 0`, so `x >= -2`; the denominator forbids `x = 5`. Choice 0 ignores the root, choice 2 wrongly cuts off everything above 5, and choice 3 misreads the sign inside the root."
+        },
+        {
+          "q": "If `f(x) = x^2` and `g(x) = x - 4`, what is `f(g(3))`?",
+          "choices": [
+            "`1`",
+            "`5`",
+            "`-1`",
+            "`49`"
+          ],
+          "answer": 0,
+          "why": "Run g first: `g(3) = -1`. Then `f(-1) = 1`. Choice 3 reverses the order and computes `g(f(3)) = 5`, and choice 2 forgets to square."
+        },
+        {
+          "q": "The graph of `y = sqrt(x)` is shifted so that it now starts at the point `(4, 0)`. What is the new equation?",
+          "choices": [
+            "`y = sqrt(x) + 4`",
+            "`y = sqrt(x + 4)`",
+            "`y = sqrt(x - 4)`",
+            "`y = 4*sqrt(x)`"
+          ],
+          "answer": 2,
+          "why": "A right shift of 4 subtracts inside the function. `sqrt(x + 4)` shifts left to start at `-4`, `sqrt(x) + 4` shifts up, and `4*sqrt(x)` stretches vertically without moving the start."
+        }
+      ]
+    },
+    {
+      "id": "sci-precalc-l02",
+      "title": "Linear and quadratic functions with modeling",
+      "minutes": 8,
+      "body": "Linear functions describe anything changing at a steady rate. Quadratics describe anything with a single peak or floor. Between them they cover most of the modeling you will do before calculus.\n\n## Slope is a rate of change\n\nFor `y = mx + b`, the slope `m` is rise over run: `m = (y2 - y1)/(x2 - x1)`. Read it with units and it becomes a rate. If x is hours and y is milligrams, then m is milligrams per hour.\n\nThe **point-slope form** `y - y1 = m(x - x1)` is the fastest way to build a line from one point and a rate. Parallel lines share a slope. Perpendicular lines have slopes that multiply to `-1`, so the perpendicular to a slope of `2` has slope `-1/2`.\n\nWorked problem 1. An IV bag holds `1000 mL` and drains at a steady `125 mL` per hour. Write volume as a function of time and find when the bag empties.\n\n1. Starting value is the y-intercept: `b = 1000`.\n2. Draining means a negative rate: `m = -125` mL per hour.\n3. Model: `V(t) = 1000 - 125t`.\n4. Empty means `V(t) = 0`, so `1000 - 125t = 0`.\n5. Solve: `125t = 1000`, so `t = 8` hours.\n\n> **Key:** In a linear model, the y-intercept is the starting amount and the slope is the per-unit rate. Name both in words before you write the equation.\n\n## Quadratics and the vertex\n\nA quadratic is `f(x) = ax^2 + bx + c`. Its graph is a parabola that opens up when `a > 0` and down when `a < 0`. The turning point is the **vertex**, and its x-coordinate is always `x = -b/(2a)`.\n\n**Vertex form** `f(x) = a(x - h)^2 + k` puts the vertex at `(h, k)` where you can read it directly. Converting from standard form to vertex form is **completing the square**.\n\nWorked problem 2. Put `f(x) = 2x^2 - 12x + 23` in vertex form and state the minimum.\n\n1. Factor the leading coefficient out of the first two terms: `2(x^2 - 6x) + 23`.\n2. Half of `-6` is `-3`; square it to get `9`. Add and subtract inside: `2(x^2 - 6x + 9 - 9) + 23`.\n3. Pull the spare `-9` out, multiplied by the 2: `2(x - 3)^2 - 18 + 23`.\n4. Combine: `f(x) = 2(x - 3)^2 + 5`.\n5. Vertex is `(3, 5)`, and since `a = 2 > 0` it opens up, so the minimum value is `5` at `x = 3`.\n\n## Maximizing with a quadratic\n\nWorked problem 3. A study measures how a drug's effect `E` depends on dose `d` in milligrams: `E(d) = -0.4d^2 + 8d`. Find the dose giving the largest effect and that effect.\n\n1. Identify `a = -0.4` and `b = 8`.\n2. Vertex x-coordinate: `d = -b/(2a) = -8/(2 * -0.4)`.\n3. Denominator is `-0.8`, so `d = -8/-0.8 = 10` mg.\n4. Effect there: `E(10) = -0.4(100) + 8(10) = -40 + 80 = 40` units.\n5. Because `a` is negative the parabola opens down, so `40` is a maximum, not a minimum.\n\n## Solving quadratics\n\nFactor when it is clean. Otherwise use the **quadratic formula** `x = (-b +/- sqrt(b^2 - 4ac))/(2a)`. The piece under the root, `b^2 - 4ac`, is the **discriminant**: positive gives two real roots, zero gives one repeated root, negative gives no real roots.\n\n> **On the exam:** A question that says \"maximum\", \"minimum\", \"greatest\", or \"optimal\" next to a squared term is a vertex question. Go straight to `x = -b/(2a)` instead of graphing.",
+      "keyPoints": [
+        "Slope is a rate: rise over run, with units attached.",
+        "Perpendicular slopes multiply to `-1`.",
+        "The vertex of `ax^2 + bx + c` sits at `x = -b/(2a)`; vertex form `a(x - h)^2 + k` shows it directly.",
+        "Complete the square by halving b, squaring it, and adding then subtracting that number.",
+        "The discriminant `b^2 - 4ac` counts the real roots: two, one, or none."
+      ],
+      "checks": [
+        {
+          "q": "A drip runs at a steady rate. At `2` hours `750 mL` remain; at `5` hours `375 mL` remain. What is the rate of change?",
+          "choices": [
+            "`-125` mL per hour",
+            "`-187.5` mL per hour",
+            "`125` mL per hour",
+            "`-375` mL per hour"
+          ],
+          "answer": 0,
+          "why": "Slope is `(375 - 750)/(5 - 2) = -375/3 = -125` mL per hour. Choice 3 forgets to divide by the 3-hour span, and choice 2 drops the sign even though volume is falling."
+        },
+        {
+          "q": "Where is the vertex of `f(x) = -3x^2 + 18x - 4`?",
+          "choices": [
+            "`x = -3`",
+            "`x = 6`",
+            "`x = 3`",
+            "`x = -6`"
+          ],
+          "answer": 2,
+          "why": "`x = -b/(2a) = -18/(2 * -3) = -18/-6 = 3`. Choice 1 forgets the factor of 2 in the denominator, and the negative signs trip up choices 0 and 3."
+        },
+        {
+          "q": "How many real roots does `x^2 + 4x + 9` have?",
+          "choices": [
+            "Two",
+            "One",
+            "None",
+            "Cannot be determined"
+          ],
+          "answer": 2,
+          "why": "The discriminant is `16 - 36 = -20`, which is negative, so there are no real roots. A zero discriminant would give one and a positive one would give two."
+        }
+      ]
+    },
+    {
+      "id": "sci-precalc-l03",
+      "title": "Polynomial and rational functions",
+      "minutes": 8,
+      "body": "Polynomials are sums of whole-number powers of x. Rational functions are one polynomial divided by another. The skill being tested is sketching the shape without plotting points: where it crosses, how it behaves at the edges, and where it blows up.\n\n## Zeros and multiplicity\n\nA **zero** (root) is an x-value where the function equals zero. Factor the polynomial and read them off: `f(x) = (x - 2)^2 (x + 3)` has zeros at `x = 2` and `x = -3`.\n\nThe exponent on a factor is its **multiplicity**, and it controls behavior at that crossing:\n\n- Odd multiplicity: the graph passes through the axis.\n- Even multiplicity: the graph touches and turns back (bounces).\n\nSo the graph above bounces at `x = 2` and crosses at `x = -3`.\n\n## End behavior\n\nFar from the origin only the leading term matters. For degree n with leading coefficient a:\n\n| Degree | Leading coefficient | Left end | Right end |\n|---|---|---|---|\n| even | positive | up | up |\n| even | negative | down | down |\n| odd | positive | down | up |\n| odd | negative | up | down |\n\nA degree-n polynomial has at most n zeros and at most `n - 1` turning points.\n\nWorked problem 1. Describe the graph of `f(x) = -2x^3(x - 4)^2`.\n\n1. Zeros: `x = 0` with multiplicity `3`, and `x = 4` with multiplicity `2`.\n2. At `x = 0` the multiplicity is odd, so it crosses, flattening as it goes.\n3. At `x = 4` the multiplicity is even, so it touches and turns back.\n4. Degree is `3 + 2 = 5`, odd; leading coefficient is `-2`, negative.\n5. Odd degree with negative leading coefficient: up on the left, down on the right.\n\n## Vertical, horizontal and slant asymptotes\n\nFor a rational function `R(x) = P(x)/Q(x)` in lowest terms:\n\n- **Vertical asymptote** wherever `Q(x) = 0` and P is not also zero there. The function runs off to plus or minus infinity.\n- If P and Q share a factor that cancels, you get a **hole**, not an asymptote.\n- **Horizontal asymptote** compares degrees. If the top degree is smaller, the asymptote is `y = 0`. If the degrees are equal, it is the ratio of leading coefficients. If the top degree is exactly one larger, there is no horizontal asymptote but there is a **slant (oblique) asymptote**, found by long division.\n\nWorked problem 2. Analyze `R(x) = (3x^2 - 12)/(x^2 - x - 6)`.\n\n1. Factor the top: `3(x^2 - 4) = 3(x - 2)(x + 2)`.\n2. Factor the bottom: `(x - 3)(x + 2)`.\n3. The factor `(x + 2)` cancels, so `x = -2` is a hole, not an asymptote.\n4. What remains is `3(x - 2)/(x - 3)`, so there is a vertical asymptote at `x = 3`.\n5. Degrees of the original top and bottom are both `2`, so the horizontal asymptote is the ratio of leading coefficients: `y = 3/1 = 3`.\n\nWorked problem 3. Find the slant asymptote of `R(x) = (x^2 + 5x + 1)/(x + 2)`.\n\n1. Top degree is `2`, bottom is `1`, a difference of one, so a slant asymptote exists.\n2. Divide: `x^2` divided by `x` gives `x`. Multiply back: `x^2 + 2x`. Subtract: `3x + 1`.\n3. `3x` divided by `x` gives `3`. Multiply back: `3x + 6`. Subtract: remainder `-5`.\n4. So `R(x) = x + 3 - 5/(x + 2)`.\n5. As x grows, the remainder term shrinks toward zero, so the slant asymptote is `y = x + 3`.\n\n> **Trap:** A graph is allowed to cross a horizontal or slant asymptote in the middle of the picture. Only a vertical asymptote can never be crossed, because the function is undefined there.\n\nRational functions show up in pharmacology as saturation curves: a drug effect of the form `E = (Emax * C)/(K + C)` rises toward the horizontal asymptote `E = Emax` and never exceeds it no matter how much concentration C you add.",
+      "keyPoints": [
+        "Odd multiplicity crosses the x-axis; even multiplicity bounces off it.",
+        "End behavior depends only on degree parity and the sign of the leading coefficient.",
+        "A cancelling factor gives a hole; a leftover zero denominator gives a vertical asymptote.",
+        "Equal degrees give a horizontal asymptote at the ratio of leading coefficients.",
+        "Top degree exactly one higher than the bottom gives a slant asymptote, found by long division."
+      ],
+      "checks": [
+        {
+          "q": "At which zero does the graph of `f(x) = (x - 1)^3 (x + 5)^2` bounce off the x-axis without crossing?",
+          "choices": [
+            "`x = 1`",
+            "`x = -5`",
+            "Both",
+            "Neither"
+          ],
+          "answer": 1,
+          "why": "Multiplicity `2` at `x = -5` is even, so it touches and turns. Multiplicity `3` at `x = 1` is odd, so it crosses, flattened."
+        },
+        {
+          "q": "What is the horizontal asymptote of `R(x) = (4x^2 + 1)/(2x^2 - 7)`?",
+          "choices": [
+            "`y = 0`",
+            "None",
+            "`y = 2`",
+            "`y = 4`"
+          ],
+          "answer": 2,
+          "why": "Equal degrees means the asymptote is the ratio of leading coefficients, `4/2 = 2`. `y = 0` applies only when the top degree is smaller, and `y = 4` uses the numerator alone."
+        },
+        {
+          "q": "In `R(x) = ((x - 3)(x + 1))/((x - 3)(x - 5))`, what happens at `x = 3`?",
+          "choices": [
+            "Vertical asymptote",
+            "Horizontal asymptote",
+            "A hole in the graph",
+            "An x-intercept"
+          ],
+          "answer": 2,
+          "why": "The `(x - 3)` factor cancels top and bottom, so the function is undefined at a single point: a hole. A vertical asymptote would need the factor to survive in the denominator only."
+        }
+      ]
+    },
+    {
+      "id": "sci-precalc-l04",
+      "title": "Exponential and logarithmic functions",
+      "minutes": 8,
+      "body": "Exponential functions change by a constant **factor** per step instead of a constant amount. Logarithms are the inverse: they answer the question \"what exponent produced this number?\"\n\n## The exponential function\n\n`f(x) = a * b^x` with base `b > 0` and `b` not equal to `1`. The starting value is `a`, because `b^0 = 1` makes `f(0) = a`. If `b > 1` the function grows; if `b` is between `0` and `1` it decays. The graph never touches zero, so `y = 0` is a horizontal asymptote, and the domain is all real numbers while the range is positive numbers only.\n\nThe special base is `e`, about `2.71828`, the base that makes continuous growth arithmetic clean. Continuous models are written `A(t) = A0 * e^(kt)`, where `k > 0` means growth and `k < 0` means decay.\n\n## Logarithms are exponents\n\n`log_b(y) = x` means exactly `b^x = y`. Two bases get their own names: `log10` (common log, written just \"log\" in most textbooks) and `ln` (natural log, base e).\n\nSo `log10(1000) = 3` because `10^3 = 1000`, and `ln(e^5) = 5`. The domain of any log is positive inputs only: you cannot ask what exponent produces zero or a negative number with a positive base.\n\nWorked problem 1. Evaluate `log10(0.001)` and `log_2(32)`.\n\n1. Ask what power of `10` gives `0.001`. Since `0.001 = 10^-3`, the answer is `-3`.\n2. Ask what power of `2` gives `32`. Count: `2^5 = 32`, so the answer is `5`.\n\n## The three properties that do all the work\n\n- Product: `log(MN) = log(M) + log(N)`\n- Quotient: `log(M/N) = log(M) - log(N)`\n- Power: `log(M^p) = p * log(M)`\n\nThe power rule is the one that solves equations, because it pulls a variable out of an exponent and down where you can divide by it.\n\nThere is also the **change of base** formula, `log_b(x) = ln(x)/ln(b)`, which lets any calculator handle any base.\n\nWorked problem 2. Write `2*log10(x) - log10(y) + log10(3)` as a single logarithm.\n\n1. Power rule on the first term: `log10(x^2)`.\n2. Combine the first and third with the product rule: `log10(3x^2)`.\n3. Apply the quotient rule for the subtraction: `log10((3x^2)/y)`.\n\n> **Trap:** `log(M + N)` does NOT equal `log(M) + log(N)`. The sum rule applies to a product inside the log, never a sum. Test it: `log10(10 + 10) = log10(20)`, about `1.30`, while `log10(10) + log10(10) = 2`.\n\n## Solving exponential equations\n\nTake the log of both sides, then use the power rule.\n\nWorked problem 3. Solve `5 * 3^x = 400`.\n\n1. Isolate the exponential: `3^x = 80`.\n2. Take the natural log of both sides: `ln(3^x) = ln(80)`.\n3. Power rule: `x * ln(3) = ln(80)`.\n4. Divide: `x = ln(80)/ln(3)`.\n5. Numerically: `ln(80)` is about `4.382` and `ln(3)` is about `1.0986`, so `x` is about `3.99`.\n\nThe graphs of `y = b^x` and `y = log_b(x)` are mirror images across the line `y = x`, exactly as inverses should be. The exponential has a horizontal asymptote at `y = 0`; the log has a vertical asymptote at `x = 0`.\n\n> **Key:** Anything trapped in an exponent comes down by taking a log. Anything trapped inside a log comes out by exponentiating both sides. Those two moves solve nearly every equation in the next lesson.",
+      "keyPoints": [
+        "`a * b^x` starts at `a` and multiplies by `b` each step; `y = 0` is its horizontal asymptote.",
+        "`log_b(y) = x` is just another way to write `b^x = y`.",
+        "`e` is about `2.71828`; `ln` is log base e; `log10` is the common log.",
+        "Product, quotient, and power rules: sums of logs come from products, never from sums.",
+        "Change of base: `log_b(x) = ln(x)/ln(b)`."
+      ],
+      "checks": [
+        {
+          "q": "What is `log10(0.01)`?",
+          "choices": [
+            "`-2`",
+            "`2`",
+            "`-0.01`",
+            "`0.02`"
+          ],
+          "answer": 0,
+          "why": "`0.01 = 10^-2`, so the exponent is `-2`. A log of a number below 1 is always negative; choice 1 drops that sign."
+        },
+        {
+          "q": "Which expression equals `ln(a) - 3*ln(b)`?",
+          "choices": [
+            "`ln(a - 3b)`",
+            "`ln(a/b^3)`",
+            "`ln(a)/ln(b^3)`",
+            "`3*ln(a/b)`"
+          ],
+          "answer": 1,
+          "why": "The power rule turns `3*ln(b)` into `ln(b^3)`, and subtraction of logs is division inside. Choice 0 wrongly applies the rule to a difference, and choice 2 confuses subtraction with the change-of-base ratio."
+        },
+        {
+          "q": "Solving `4^x = 50` gives which exact answer?",
+          "choices": [
+            "`x = 50/4`",
+            "`x = ln(50) - ln(4)`",
+            "`x = ln(50)/ln(4)`",
+            "`x = ln(50/4)`"
+          ],
+          "answer": 2,
+          "why": "Taking logs gives `x*ln(4) = ln(50)`, so divide by `ln(4)`. Choices 1 and 3 are the same wrong move: they subtract or divide inside the log instead of dividing the two logs."
+        }
+      ]
+    },
+    {
+      "id": "sci-precalc-l05",
+      "title": "Exponential growth and decay in health science",
+      "minutes": 9,
+      "body": "This is the lesson the biology and pharmacology courses actually use. Same two equations, three different stories: bacteria multiplying, drug leaving the body, and hydrogen ions measured on a log scale.\n\n## The two model forms\n\nContinuous: `A(t) = A0 * e^(kt)`, where `A0` is the starting amount and `k` is the continuous rate per unit time.\n\nDoubling or halving: `A(t) = A0 * 2^(t/Td)` for growth with doubling time `Td`, and `A(t) = A0 * (1/2)^(t/Th)` for decay with half-life `Th`. These are the same models; `k` and the half-life are linked by `k = -ln(2)/Th`, and `ln(2)` is about `0.693`.\n\n## Bacterial growth\n\nWorked problem 1. A culture starts at `5000` cells and doubles every `30` minutes. How many cells after `4` hours, and when does it reach `1,000,000`?\n\n1. Convert time to matching units: `4` hours is `240` minutes.\n2. Number of doublings: `240/30 = 8`.\n3. Amount: `A = 5000 * 2^8 = 5000 * 256 = 1,280,000` cells.\n4. For the second question set `5000 * 2^(t/30) = 1,000,000`.\n5. Divide: `2^(t/30) = 200`.\n6. Take logs: `(t/30) * ln(2) = ln(200)`.\n7. `ln(200)` is about `5.298` and `ln(2)` is about `0.693`, so `t/30` is about `7.645`.\n8. Multiply: `t` is about `229` minutes, a little under `4` hours, which matches step 3.\n\n## Drug half-life\n\nHalf-life is the time for the amount in the body to fall by half. After n half-lives the fraction left is `(1/2)^n`, so after `5` half-lives about `3.1%` remains, which is why five half-lives is the usual rule of thumb for a drug being effectively cleared.\n\nWorked problem 2. A drug has a half-life of `6` hours. A patient receives `400 mg`. How much remains at `15` hours, and when does the amount drop to `25 mg`?\n\n1. Half-lives elapsed: `15/6 = 2.5`.\n2. Remaining: `A = 400 * (1/2)^2.5`.\n3. `(1/2)^2.5 = 1/2^2.5`, and `2^2.5` is about `5.657`, so the factor is about `0.1768`.\n4. `A` is about `400 * 0.1768 = 70.7 mg`.\n5. For the second question: `400 * (1/2)^(t/6) = 25`.\n6. Divide: `(1/2)^(t/6) = 0.0625`, which is exactly `1/16`.\n7. `1/16 = (1/2)^4`, so `t/6 = 4`.\n8. `t = 24` hours, which is four half-lives.\n\n> **Key:** When the ratio is a clean power of one half, count half-lives instead of using logs. `1/2`, `1/4`, `1/8`, `1/16`, `1/32` correspond to `1, 2, 3, 4, 5` half-lives.\n\n## pH is a log scale\n\n`pH = -log10([H+])`, where `[H+]` is the hydrogen ion concentration in moles per liter. Because the scale is logarithmic, a drop of one pH unit is a tenfold rise in acid, and a drop of `0.3` is a doubling.\n\nWorked problem 3. Arterial blood at `pH 7.40` has what `[H+]`, and how much does `[H+]` change if the pH falls to `7.10`?\n\n1. Rearrange: `[H+] = 10^(-pH)`.\n2. At `pH 7.40`: `[H+] = 10^-7.40`, about `4.0 * 10^-8` mol/L, which is `40` nanomoles per liter.\n3. At `pH 7.10`: `[H+] = 10^-7.10`, about `7.9 * 10^-8` mol/L, roughly `80` nmol/L.\n4. Ratio: `10^-7.10 / 10^-7.40 = 10^0.30`, which is about `2`.\n5. So a `0.3` unit fall in pH doubles the hydrogen ion concentration.\n\nThe decibel scale works the same way: `dB = 10*log10(I/I0)`, so every `10 dB` is a tenfold jump in sound intensity. Radioactive tracers decay on the same math, with half-lives from `6` hours for technetium-99m to `8` days for iodine-131.\n\n> **Trap:** \"Half-life\" never means the drug is gone in two half-lives. Each half-life halves what is left, so the amount approaches zero but never reaches it, matching the horizontal asymptote of the exponential graph.",
+      "keyPoints": [
+        "`A(t) = A0 * e^(kt)`; `k` positive grows, `k` negative decays.",
+        "Half-life and continuous rate are linked by `k = -ln(2)/Th`, with `ln(2)` about `0.693`.",
+        "After n half-lives the fraction left is `(1/2)^n`; five half-lives leaves about `3%`.",
+        "`pH = -log10([H+])`, so one pH unit is a tenfold change and `0.3` units is a doubling.",
+        "Solve for a time trapped in an exponent by taking logs and using the power rule."
+      ],
+      "checks": [
+        {
+          "q": "A drug with a `4`-hour half-life is given as `600 mg`. How much remains after `12` hours?",
+          "choices": [
+            "`200 mg`",
+            "`150 mg`",
+            "`75 mg`",
+            "`300 mg`"
+          ],
+          "answer": 2,
+          "why": "`12/4 = 3` half-lives, so `600 * (1/2)^3 = 600/8 = 75 mg`. Choice 0 divides by 3 instead of halving three times, and choice 1 stops after two half-lives."
+        },
+        {
+          "q": "A solution's pH falls from `7.4` to `6.4`. What happened to the hydrogen ion concentration?",
+          "choices": [
+            "It fell to one tenth",
+            "It rose tenfold",
+            "It doubled",
+            "It fell by one unit"
+          ],
+          "answer": 1,
+          "why": "pH is the negative log, so a lower pH means more acid, and one whole unit is a factor of `10`. Choice 0 has the direction backward; a doubling would be only about `0.3` units."
+        },
+        {
+          "q": "A culture doubles every `20` minutes. How many cells come from `800` after `2` hours?",
+          "choices": [
+            "`51,200`",
+            "`4800`",
+            "`6400`",
+            "`25,600`"
+          ],
+          "answer": 0,
+          "why": "`120/20 = 6` doublings, so `800 * 2^6 = 800 * 64 = 51,200`. Choice 1 multiplies by 6 instead of doubling six times, and choice 3 uses only five doublings."
+        }
+      ]
+    },
+    {
+      "id": "sci-precalc-l06",
+      "title": "Systems of equations and matrices",
+      "minutes": 7,
+      "body": "A system is two or more equations that must be true at once. The solution is the point where all of them agree, which graphically is where the lines or planes intersect.\n\n## Three outcomes, always\n\n- **One solution** — lines cross at a single point (independent, consistent).\n- **No solution** — parallel lines, never meet. Algebra collapses to something false like `0 = 7`.\n- **Infinitely many** — the same line written twice. Algebra collapses to something always true like `0 = 0`.\n\n## Substitution and elimination\n\n**Substitution** is best when one variable is already alone. Solve for it, push it into the other equation.\n\n**Elimination** is best when coefficients line up. Scale one or both equations so a variable cancels when you add.\n\nWorked problem 1. A pharmacy mixes a `20%` dextrose solution with a `50%` solution to get `600 mL` of `30%`. How much of each?\n\n1. Let x be mL of the `20%` and y be mL of the `50%`.\n2. Volume equation: `x + y = 600`.\n3. Dextrose equation: `0.20x + 0.50y = 0.30(600) = 180`.\n4. Solve the first for x: `x = 600 - y`.\n5. Substitute: `0.20(600 - y) + 0.50y = 180`.\n6. Expand: `120 - 0.20y + 0.50y = 180`.\n7. Combine: `120 + 0.30y = 180`, so `0.30y = 60` and `y = 200`.\n8. Then `x = 600 - 200 = 400`. So `400 mL` of `20%` and `200 mL` of `50%`.\n\n## Three variables and Gaussian elimination\n\nWith three equations you work down to a triangle, then back-substitute. Writing only the coefficients gives the **augmented matrix**, where each row is an equation and the bar separates the constants.\n\nThe legal moves, called **row operations**, are: swap two rows, multiply a row by a nonzero number, and add a multiple of one row to another. **Gaussian elimination** uses them to create zeros below the diagonal.\n\nWorked problem 2. Solve the system `x + y + z = 6`, `2x - y + z = 3`, `x + 2y - z = 2`.\n\n1. Eliminate x from the second: subtract `2` times row one. `(2x - y + z) - 2(x + y + z) = 3 - 12` gives `-3y - z = -9`.\n2. Eliminate x from the third: subtract row one. `(x + 2y - z) - (x + y + z) = 2 - 6` gives `y - 2z = -4`.\n3. From the new second equation, `z = 9 - 3y`.\n4. Substitute into the new third: `y - 2(9 - 3y) = -4`, so `y - 18 + 6y = -4`.\n5. Combine: `7y = 14`, so `y = 2`.\n6. Then `z = 9 - 6 = 3`, and from the first equation `x = 6 - 2 - 3 = 1`.\n7. Solution: `(1, 2, 3)`. Check in equation two: `2 - 2 + 3 = 3`. Correct.\n\n## Determinants at recognition level\n\nFor a 2 by 2 matrix with rows `a b` and `c d`, the **determinant** is `ad - bc`. It is a single number that tells you whether the system has one unique solution.\n\nWorked problem 3. Does the system `3x + 4y = 10`, `6x + 8y = 5` have a unique solution?\n\n1. Coefficient matrix rows are `3 4` and `6 8`.\n2. Determinant: `(3)(8) - (4)(6) = 24 - 24 = 0`.\n3. A determinant of zero means no unique solution.\n4. Check which case: the second equation is `2` times the left side of the first but `5` is not `2` times `10`, so the lines are parallel and there is no solution.\n\n> **Key:** Determinant zero means the rows are multiples of each other. Either the system has no solution or infinitely many, and you must look at the constants to tell which.\n\n> **On the exam:** Mixture, dilution, and \"two unknown rates\" word problems are nearly always two-equation systems. Write the total equation and the amount-of-substance equation, and the algebra takes three lines.",
+      "keyPoints": [
+        "A system has exactly one solution, none, or infinitely many.",
+        "A false statement like `0 = 7` means no solution; `0 = 0` means infinitely many.",
+        "Substitution suits an isolated variable; elimination suits matching coefficients.",
+        "Gaussian elimination uses row swaps, scaling, and row addition to build a triangle.",
+        "A 2 by 2 determinant is `ad - bc`; zero means no unique solution."
+      ],
+      "checks": [
+        {
+          "q": "While solving a two-equation system you reach `0 = 12`. What does that mean?",
+          "choices": [
+            "`x = 12`",
+            "The system has no solution",
+            "The system has infinitely many solutions",
+            "You must use matrices instead"
+          ],
+          "answer": 1,
+          "why": "A false numeric statement means the two lines are parallel and never meet. `0 = 0` would be the always-true case, which signals infinitely many solutions."
+        },
+        {
+          "q": "What is the determinant of the matrix with rows `5 2` and `3 4`?",
+          "choices": [
+            "`26`",
+            "`14`",
+            "`23`",
+            "`20`"
+          ],
+          "answer": 1,
+          "why": "`ad - bc = (5)(4) - (2)(3) = 20 - 6 = 14`. Choice 0 adds instead of subtracting and choice 3 uses only the `ad` product."
+        },
+        {
+          "q": "Mixing `x` mL of `10%` saline with `y` mL of `40%` to get `900 mL` of `25%`, which pair of equations is correct?",
+          "choices": [
+            "`x + y = 900` and `10x + 40y = 25`",
+            "`x + y = 25` and `0.10x + 0.40y = 900`",
+            "`x + y = 900` and `0.10x + 0.40y = 225`",
+            "`x - y = 900` and `0.10x + 0.40y = 225`"
+          ],
+          "answer": 2,
+          "why": "Volumes add to `900` and the solute adds to `0.25 * 900 = 225`. Choice 0 mixes percents with milliliters, and choice 1 swaps the two totals entirely."
+        }
+      ]
+    },
+    {
+      "id": "sci-precalc-l07",
+      "title": "Trigonometric functions and the unit circle",
+      "minutes": 8,
+      "body": "Trigonometry starts as triangle ratios and becomes the mathematics of anything that repeats: heartbeats, breathing, blood pressure waveforms, circadian rhythms.\n\n## Angles and radians\n\nA **radian** is the angle that wraps one radius length along the circle. A full circle is `2*pi` radians, so `180` degrees equals `pi` radians. To convert, multiply degrees by `pi/180`, or multiply radians by `180/pi`.\n\nCommon values worth memorizing: `30` degrees is `pi/6`, `45` degrees is `pi/4`, `60` degrees is `pi/3`, `90` degrees is `pi/2`.\n\n## The unit circle\n\nDraw a circle of radius `1` centered at the origin. For an angle theta measured counterclockwise from the positive x-axis, the point on the circle is exactly `(cos(theta), sin(theta))`. That single sentence defines sine and cosine for every angle, not just the ones that fit in a right triangle.\n\nBecause the radius is `1`, the Pythagorean theorem on that point gives `cos^2(theta) + sin^2(theta) = 1` automatically.\n\nThe six functions: `sin`, `cos`, `tan = sin/cos`, and their reciprocals `csc = 1/sin`, `sec = 1/cos`, `cot = cos/sin`.\n\nSigns by quadrant follow from the coordinates: in quadrant I all are positive; in II only sine (and its reciprocal) is positive; in III only tangent; in IV only cosine.\n\nWorked problem 1. Find `sin`, `cos`, and `tan` of `210` degrees.\n\n1. Convert if you like: `210` degrees is `7*pi/6` radians.\n2. `210` is in quadrant III, and its reference angle is `210 - 180 = 30` degrees.\n3. At `30` degrees, `sin = 1/2` and `cos = sqrt(3)/2`.\n4. In quadrant III both x and y are negative, so `sin(210) = -1/2` and `cos(210) = -sqrt(3)/2`.\n5. `tan(210) = (-1/2)/(-sqrt(3)/2) = 1/sqrt(3)`, about `0.577`.\n\n## Graphs: amplitude, period, phase shift\n\nWrite a sinusoid as `y = A*sin(B(x - C)) + D`.\n\n- `A` is the **amplitude**, half the distance from peak to trough. The graph reaches `D + A` at the top and `D - A` at the bottom.\n- `B` sets the **period**, which is `2*pi/B` in radians or `360/B` in degrees. Bigger B means faster cycling.\n- `C` is the **phase shift**, a horizontal slide.\n- `D` is the **vertical shift**, the midline.\n\nWorked problem 2. A blood pressure wave is modeled as `P(t) = 20*sin(2*pi*t/0.8) + 100`, with t in seconds and P in mmHg. Find the amplitude, period, heart rate, and the pressure range.\n\n1. Amplitude `A = 20` mmHg.\n2. `B = 2*pi/0.8`, so the period is `2*pi/B = 0.8` seconds per beat.\n3. Heart rate: `60/0.8 = 75` beats per minute.\n4. Midline `D = 100`, so pressure runs from `100 - 20 = 80` to `100 + 20 = 120` mmHg.\n5. That is a `120/80` reading with a mean arterial pressure near the midline.\n\n> **Key:** Period and frequency are reciprocals. A `0.8`-second period is `1.25` cycles per second, which is `75` per minute. Any question about beats, breaths, or cycles per minute is a period question.\n\nWorked problem 3. State the amplitude, period, and phase shift of `y = -3*cos(2x - pi)`.\n\n1. Factor the inside to expose the shift: `2x - pi = 2(x - pi/2)`.\n2. So the function is `y = -3*cos(2(x - pi/2))`.\n3. Amplitude is the absolute value of `-3`, which is `3`. The negative flips the graph vertically.\n4. `B = 2`, so the period is `2*pi/2 = pi`.\n5. Phase shift is `pi/2` to the right.\n\n> **Trap:** You cannot read the phase shift straight off `cos(2x - pi)`. Factor the B out first, or you will report `pi` instead of the correct `pi/2`.\n\nTangent behaves differently: it has period `pi`, no amplitude, and vertical asymptotes wherever cosine is zero, at `pi/2` plus any multiple of `pi`.",
+      "keyPoints": [
+        "`180` degrees equals `pi` radians; convert by multiplying by `pi/180` or `180/pi`.",
+        "On the unit circle the point at angle theta is `(cos(theta), sin(theta))`.",
+        "`cos^2 + sin^2 = 1` follows directly from the radius being `1`.",
+        "For `A*sin(B(x - C)) + D`: amplitude `A`, period `2*pi/B`, phase shift `C`, midline `D`.",
+        "Tangent has period `pi` and asymptotes where cosine is zero."
+      ],
+      "checks": [
+        {
+          "q": "What is the period of `y = 4*sin(3x)`?",
+          "choices": [
+            "`2*pi/3`",
+            "`3`",
+            "`6*pi`",
+            "`4`"
+          ],
+          "answer": 0,
+          "why": "Period is `2*pi/B` with `B = 3`. Choice 2 multiplies instead of divides, and choice 3 reports the amplitude."
+        },
+        {
+          "q": "In which quadrant is sine positive while cosine is negative?",
+          "choices": [
+            "Quadrant I",
+            "Quadrant II",
+            "Quadrant III",
+            "Quadrant IV"
+          ],
+          "answer": 1,
+          "why": "Quadrant II has negative x (cosine) and positive y (sine). Quadrant IV is the reverse, and quadrant III has both negative."
+        },
+        {
+          "q": "A respiratory model is `V(t) = 0.3*sin(2*pi*t/4) + 2.5` liters with t in seconds. What is the respiratory rate?",
+          "choices": [
+            "`4` breaths per minute",
+            "`30` breaths per minute",
+            "`15` breaths per minute",
+            "`12` breaths per minute"
+          ],
+          "answer": 2,
+          "why": "The period is `4` seconds per breath, so `60/4 = 15` breaths per minute. Choice 0 reports the period itself, and choice 1 doubles the rate by halving the period."
+        }
+      ]
+    },
+    {
+      "id": "sci-precalc-l08",
+      "title": "Right-triangle trig, identities, and solving trig equations",
+      "minutes": 8,
+      "body": "Right-triangle trigonometry is the practical half: given some sides and angles, find the rest. Identities are the algebra that lets you rewrite trig expressions so they can be solved.\n\n## The three ratios\n\nIn a right triangle, relative to an acute angle theta:\n\n- `sin(theta) = opposite/hypotenuse`\n- `cos(theta) = adjacent/hypotenuse`\n- `tan(theta) = opposite/adjacent`\n\nThe memory phrase is SOH-CAH-TOA. The hypotenuse is always the side across from the right angle and is always the longest.\n\nWorked problem 1. A wheelchair ramp rises `2.5` feet over a horizontal run of `30` feet. Find the ramp angle and the ramp length.\n\n1. Rise is opposite, run is adjacent, so use tangent: `tan(theta) = 2.5/30`.\n2. `2.5/30 = 0.08333`.\n3. `theta = arctan(0.08333)`, about `4.76` degrees.\n4. Ramp length is the hypotenuse: `sqrt(2.5^2 + 30^2) = sqrt(6.25 + 900) = sqrt(906.25)`.\n5. That is about `30.1` feet.\n\n## The identities that get used\n\n**Pythagorean:** `sin^2(x) + cos^2(x) = 1`. Divide it by `cos^2` to get `tan^2(x) + 1 = sec^2(x)`, and by `sin^2` to get `1 + cot^2(x) = csc^2(x)`.\n\n**Sum and difference:**\n\n- `sin(A + B) = sin(A)cos(B) + cos(A)sin(B)`\n- `cos(A + B) = cos(A)cos(B) - sin(A)sin(B)`\n\nSwap the signs for a difference. Notice cosine's signs are backward from what you expect; that is the usual test trap.\n\n**Double angle:**\n\n- `sin(2x) = 2*sin(x)cos(x)`\n- `cos(2x) = cos^2(x) - sin^2(x) = 1 - 2*sin^2(x) = 2*cos^2(x) - 1`\n\nWorked problem 2. Given `sin(x) = 3/5` with x in quadrant I, find `sin(2x)`.\n\n1. Find cosine from the Pythagorean identity: `cos^2(x) = 1 - (3/5)^2 = 1 - 9/25 = 16/25`.\n2. In quadrant I cosine is positive, so `cos(x) = 4/5`.\n3. Double angle: `sin(2x) = 2*sin(x)*cos(x) = 2*(3/5)*(4/5)`.\n4. Multiply: `= 24/25`, which is `0.96`.\n\n## Inverse trig functions\n\n`arcsin`, `arccos`, and `arctan` return an angle. Because sine repeats, the inverses are restricted so each input has one output: `arcsin` returns angles from `-90` to `90` degrees, `arccos` returns `0` to `180` degrees, and `arctan` returns `-90` to `90` degrees, exclusive.\n\n> **Trap:** A calculator's `arcsin` gives you only one of the two angles in a full turn that have that sine. If the problem's angle is obtuse, take `180` degrees minus the calculator answer.\n\n## Solving trig equations\n\nTreat the trig function as a variable, solve algebraically, then find every angle in the requested interval.\n\nWorked problem 3. Solve `2*sin^2(x) - sin(x) - 1 = 0` for `0 <= x < 360` degrees.\n\n1. Let `u = sin(x)`. The equation is `2u^2 - u - 1 = 0`.\n2. Factor: `(2u + 1)(u - 1) = 0`.\n3. So `u = -1/2` or `u = 1`.\n4. `sin(x) = 1` gives `x = 90` degrees.\n5. `sin(x) = -1/2` means sine is negative, so x is in quadrant III or IV with reference angle `30` degrees.\n6. Quadrant III: `180 + 30 = 210` degrees. Quadrant IV: `360 - 30 = 330` degrees.\n7. Solutions: `90`, `210`, and `330` degrees.\n\n> **On the exam:** When a trig equation is quadratic in shape, substitute a single letter first. Most lost points come from trying to factor while the `sin(x)` notation is still cluttering the page.\n\nRight-triangle trig is also how body-surface-area nomograms and patient-positioning angles get computed: raising a head of bed to `30` degrees means the torso is the hypotenuse and the vertical rise is `hypotenuse * sin(30) = 0.5 * hypotenuse`.",
+      "keyPoints": [
+        "SOH-CAH-TOA: sine is opposite over hypotenuse, cosine adjacent over hypotenuse, tangent opposite over adjacent.",
+        "`sin^2 + cos^2 = 1` generates `tan^2 + 1 = sec^2` and `1 + cot^2 = csc^2`.",
+        "`sin(2x) = 2*sin(x)cos(x)` and `cos(2x) = 1 - 2*sin^2(x)`.",
+        "`arcsin` returns `-90` to `90` degrees, `arccos` returns `0` to `180` degrees.",
+        "Solve quadratic-shaped trig equations by substituting `u` for the trig function first."
+      ],
+      "checks": [
+        {
+          "q": "If `cos(theta) = 5/13` and theta is in quadrant I, what is `sin(theta)`?",
+          "choices": [
+            "`8/13`",
+            "`12/13`",
+            "`13/12`",
+            "`5/12`"
+          ],
+          "answer": 1,
+          "why": "`sin^2 = 1 - 25/169 = 144/169`, so `sin = 12/13`. Choice 0 subtracts the numerators instead of squaring, and choice 3 reports the tangent's reciprocal."
+        },
+        {
+          "q": "A ladder `8 m` long leans at `65` degrees to the ground. How high up the wall does it reach?",
+          "choices": [
+            "`3.38 m`",
+            "`8.83 m`",
+            "`7.25 m`",
+            "`17.2 m`"
+          ],
+          "answer": 2,
+          "why": "Height is opposite the angle with the ladder as hypotenuse, so `8*sin(65) = 8 * 0.906 = 7.25 m`. Choice 0 uses cosine, and choice 1 divides by cosine instead."
+        },
+        {
+          "q": "How many solutions does `2*cos(x) + 1 = 0` have for `0 <= x < 360` degrees?",
+          "choices": [
+            "One",
+            "Two",
+            "Three",
+            "None"
+          ],
+          "answer": 1,
+          "why": "`cos(x) = -1/2` puts x in quadrants II and III, at `120` and `240` degrees. Taking only the calculator value would wrongly give one answer."
+        }
+      ]
+    },
+    {
+      "id": "sci-precalc-l09",
+      "title": "Laws of sines and cosines with applications",
+      "minutes": 8,
+      "body": "Right-triangle trig only works when there is a right angle. The laws of sines and cosines handle every other triangle, which is most of the real ones.\n\n## The two laws\n\n**Law of sines:** `a/sin(A) = b/sin(B) = c/sin(C)`. Each side is paired with the angle across from it.\n\n**Law of cosines:** `c^2 = a^2 + b^2 - 2ab*cos(C)`, where C is the angle between sides a and b. If `C = 90` degrees then `cos(C) = 0` and it collapses into the Pythagorean theorem, which is a good sanity check.\n\n## Which one to use\n\n| What you know | Use |\n|---|---|\n| Angle-Angle-Side or Angle-Side-Angle | law of sines |\n| Side-Side-Angle (ambiguous) | law of sines, check for two answers |\n| Side-Angle-Side | law of cosines |\n| Side-Side-Side | law of cosines, solve for an angle |\n\nThe pattern: the law of sines needs a matched side-and-angle pair. If you do not have one, you must start with the law of cosines.\n\nWorked problem 1. In a triangle, `A = 42` degrees, `B = 76` degrees, and side `a = 15 cm`. Find side b.\n\n1. Both angles and the side opposite A are known, so use the law of sines.\n2. Set up: `b/sin(76) = 15/sin(42)`.\n3. `sin(76)` is about `0.970` and `sin(42)` is about `0.669`.\n4. Solve: `b = 15 * 0.970/0.669`.\n5. Numerator is `14.55`, so `b` is about `21.7 cm`.\n\nWorked problem 2. Two sides of a triangular wound measure `6.0 cm` and `9.0 cm` with an included angle of `110` degrees. Find the third side.\n\n1. This is side-angle-side, so use the law of cosines.\n2. `c^2 = 6^2 + 9^2 - 2(6)(9)*cos(110)`.\n3. `36 + 81 = 117`, and `2(6)(9) = 108`.\n4. `cos(110)` is about `-0.342`, so the last term is `108 * -0.342 = -36.9`.\n5. Subtracting a negative adds: `c^2 = 117 + 36.9 = 153.9`.\n6. `c = sqrt(153.9)`, about `12.4 cm`.\n\n> **Trap:** When the included angle is obtuse its cosine is negative, so the `-2ab*cos(C)` term becomes an addition. The third side ends up longer than either given side, which is exactly what an obtuse triangle should look like.\n\n## The ambiguous case\n\nSide-side-angle can produce zero, one, or two valid triangles, because a calculator's `arcsin` returns only the acute answer while the obtuse supplement may also fit. Always check whether the supplement plus the known angle stays under `180` degrees. If it does, a second triangle exists.\n\n## Area of a triangle\n\nWhen you know two sides and the included angle, `Area = (1/2)ab*sin(C)`. When you know all three sides, use **Heron's formula**: with `s = (a + b + c)/2`, `Area = sqrt(s(s - a)(s - b)(s - c))`.\n\nWorked problem 3. Find the area of a wound measuring `6.0 cm` by `9.0 cm` with a `110`-degree included angle, then check against Heron's formula using the third side from problem 2.\n\n1. Two sides and the included angle: `Area = (1/2)(6)(9)*sin(110)`.\n2. `sin(110)` is about `0.940`.\n3. `Area = 27 * 0.940 = 25.4` square cm.\n4. Heron check with `a = 6`, `b = 9`, `c = 12.4`: `s = (6 + 9 + 12.4)/2 = 13.7`.\n5. `s - a = 7.7`, `s - b = 4.7`, `s - c = 1.3`.\n6. Product: `13.7 * 7.7 * 4.7 * 1.3` is about `644`.\n7. `sqrt(644)` is about `25.4` square cm. The two methods agree.\n\n> **Key:** Two sides and the angle between them give both the third side (law of cosines) and the area (`(1/2)ab*sin(C)`). That single configuration answers most applied triangle problems.\n\nAngle measurement of this kind is what turns a photographed wound, a scoliosis film, or a joint range-of-motion reading into a number that can be tracked over time.",
+      "keyPoints": [
+        "Law of sines: `a/sin(A) = b/sin(B) = c/sin(C)`, and it needs a matched side-angle pair.",
+        "Law of cosines: `c^2 = a^2 + b^2 - 2ab*cos(C)`, used for SAS and SSS.",
+        "An obtuse included angle has a negative cosine, which makes the last term add.",
+        "Side-side-angle is ambiguous and can yield two valid triangles.",
+        "`Area = (1/2)ab*sin(C)`; Heron's formula covers the all-three-sides case."
+      ],
+      "checks": [
+        {
+          "q": "You know all three sides of a triangle and want an angle. Which tool works?",
+          "choices": [
+            "Law of sines",
+            "Law of cosines",
+            "SOH-CAH-TOA",
+            "Heron's formula"
+          ],
+          "answer": 1,
+          "why": "With no angle known there is no matched pair for the law of sines, so rearrange the law of cosines to solve for `cos(C)`. Heron's gives area, not an angle, and SOH-CAH-TOA needs a right angle."
+        },
+        {
+          "q": "Two sides of `10` and `14` meet at `120` degrees. Roughly how long is the third side?",
+          "choices": [
+            "`12.5`",
+            "`17.4`",
+            "`21.0`",
+            "`9.2`"
+          ],
+          "answer": 2,
+          "why": "`c^2 = 100 + 196 - 2(140)(-0.5) = 296 + 140 = 436`, so `c` is about `20.9`. Choice 1 comes from treating the cosine term as a subtraction instead of an addition."
+        },
+        {
+          "q": "What is the area of a triangle with sides `8` and `11` and an included angle of `30` degrees?",
+          "choices": [
+            "`22`",
+            "`44`",
+            "`88`",
+            "`38.1`"
+          ],
+          "answer": 0,
+          "why": "`(1/2)(8)(11)*sin(30) = 44 * 0.5 = 22`. Choice 1 forgets the sine factor, choice 2 forgets the one half as well, and choice 3 uses cosine instead of sine."
+        }
+      ]
+    },
+    {
+      "id": "sci-precalc-l10",
+      "title": "Sequences, series, conics, and a first look at limits",
+      "minutes": 9,
+      "body": "The last unit collects three loose ends and then points at calculus.\n\n## Arithmetic and geometric sequences\n\nAn **arithmetic** sequence adds the same amount each step. With first term `a1` and common difference `d`, the nth term is `an = a1 + (n - 1)d`, and the sum of the first n terms is `Sn = (n/2)(a1 + an)`.\n\nA **geometric** sequence multiplies by the same ratio each step. With ratio r, `an = a1 * r^(n-1)`, and `Sn = a1*(1 - r^n)/(1 - r)`. If the absolute value of r is less than `1`, the infinite sum converges to `a1/(1 - r)`.\n\n**Sigma notation** is shorthand: the capital sigma with `i = 1` below and n above means add up the expression for each i from `1` to n.\n\nWorked problem 1. A tapering steroid course gives `40 mg` on day one and drops `5 mg` per day for `8` days. Find the last dose and the total milligrams given.\n\n1. Arithmetic with `a1 = 40` and `d = -5`.\n2. Last term: `a8 = 40 + (8 - 1)(-5) = 40 - 35 = 5 mg`.\n3. Sum: `S8 = (8/2)(40 + 5) = 4 * 45`.\n4. Total: `180 mg` over the taper.\n\n## Compound interest\n\nCompounded n times per year: `A = P(1 + r/n)^(nt)`. Compounded continuously: `A = P*e^(rt)`. Both are geometric growth wearing different clothes.\n\nWorked problem 2. `$4000` at `6%` annual interest for `5` years, compounded monthly and then continuously.\n\n1. Monthly: `P = 4000`, `r = 0.06`, `n = 12`, `t = 5`.\n2. `A = 4000(1 + 0.06/12)^(12*5) = 4000(1.005)^60`.\n3. `(1.005)^60` is about `1.3489`, so `A` is about `$5395.40`.\n4. Continuously: `A = 4000 * e^(0.06*5) = 4000 * e^0.30`.\n5. `e^0.30` is about `1.3499`, so `A` is about `$5399.40`.\n6. Continuous compounding earns about `$4` more, showing the limit the monthly case is creeping toward.\n\n## Conic sections in one pass\n\nSlice a cone and you get four curves, each with a standard equation centered at `(h, k)`:\n\n- **Circle:** `(x - h)^2 + (y - k)^2 = r^2`.\n- **Ellipse:** `(x - h)^2/a^2 + (y - k)^2/b^2 = 1`. Two squared terms added, with different denominators.\n- **Parabola:** only one variable is squared.\n- **Hyperbola:** two squared terms **subtracted**.\n\nRecognition is usually all that is asked: added means ellipse or circle, subtracted means hyperbola, one square means parabola.\n\n## Limits, the bridge to calculus\n\nA **limit** asks what value a function approaches as x closes in on some number, whether or not the function is defined there. Written `lim as x approaches a of f(x) = L`.\n\nMost limits are found by direct substitution. When substitution gives `0/0`, that is an **indeterminate form**, and it means there is a common factor to cancel first.\n\nWorked problem 3. Evaluate the limit of `(x^2 - 9)/(x - 3)` as x approaches `3`.\n\n1. Substitute `3`: the top is `9 - 9 = 0` and the bottom is `0`. Indeterminate.\n2. Factor the numerator: `x^2 - 9 = (x - 3)(x + 3)`.\n3. Cancel the shared `(x - 3)`, legal because x is near `3` but never equal to it.\n4. What remains is `x + 3`.\n5. Substitute now: `3 + 3 = 6`. The limit is `6`.\n6. The original function has a hole at `x = 3`, yet the limit still exists, which is the whole point.\n\n> **Key:** A limit describes the neighborhood, not the point. A function can be undefined at `x = a` and still have a perfectly good limit there.\n\n> **On the exam:** `0/0` is an instruction, not an answer. It means factor, cancel, or rationalize and then substitute again.\n\nA limit is also what makes a rate instantaneous. Average rate of change over an interval is `(f(b) - f(a))/(b - a)`. Shrink that interval toward zero and the limit of that ratio is the derivative, which is where calculus begins and where pharmacokinetic clearance rates come from.",
+      "keyPoints": [
+        "Arithmetic: `an = a1 + (n - 1)d` and `Sn = (n/2)(a1 + an)`.",
+        "Geometric: `an = a1*r^(n-1)`; an infinite sum converges to `a1/(1 - r)` when `r` is a fraction.",
+        "Compound interest is `P(1 + r/n)^(nt)`, and continuous compounding is `P*e^(rt)`.",
+        "Two squares added is an ellipse or circle; subtracted is a hyperbola; one square is a parabola.",
+        "`0/0` means factor and cancel, then substitute again."
+      ],
+      "checks": [
+        {
+          "q": "What is the 12th term of the arithmetic sequence starting at `7` with a common difference of `4`?",
+          "choices": [
+            "`55`",
+            "`51`",
+            "`48`",
+            "`59`"
+          ],
+          "answer": 1,
+          "why": "`a12 = 7 + (12 - 1)(4) = 7 + 44 = 51`. Choice 0 uses 12 differences instead of 11, the single most common error in this formula."
+        },
+        {
+          "q": "The equation `(x^2)/9 - (y^2)/16 = 1` describes which conic?",
+          "choices": [
+            "Ellipse",
+            "Circle",
+            "Hyperbola",
+            "Parabola"
+          ],
+          "answer": 2,
+          "why": "The squared terms are subtracted, which is the signature of a hyperbola. Added squares with unequal denominators would be an ellipse, and equal denominators a circle."
+        },
+        {
+          "q": "What is the limit of `(x^2 - 25)/(x - 5)` as x approaches `5`?",
+          "choices": [
+            "`0`",
+            "`5`",
+            "Does not exist",
+            "`10`"
+          ],
+          "answer": 3,
+          "why": "Factoring gives `(x - 5)(x + 5)/(x - 5) = x + 5`, and substituting `5` gives `10`. The `0/0` form does not mean the limit is zero or nonexistent; it means cancel first."
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "sci-precalc-c001",
+      "front": "What single condition makes a rule a function?",
+      "back": "Each input produces exactly one output. On a graph, the vertical line test: no vertical line may cross the curve twice.",
+      "lesson": "sci-precalc-l01"
+    },
+    {
+      "id": "sci-precalc-c002",
+      "front": "Which two operations restrict a function's domain in precalculus?",
+      "back": "Division by zero, and taking an even root of a negative number. Everything else is usually allowed.",
+      "lesson": "sci-precalc-l01"
+    },
+    {
+      "id": "sci-precalc-c003",
+      "front": "Does `f(x + 3)` shift the graph left or right, and by how much?",
+      "back": "Left by `3`. Adding inside the function moves the graph opposite to the sign.",
+      "lesson": "sci-precalc-l01"
+    },
+    {
+      "id": "sci-precalc-c004",
+      "front": "What does `(f o g)(x)` mean, and which function runs first?",
+      "back": "It means `f(g(x))`. The inner function g runs first, then its output is fed into f. Order matters.",
+      "lesson": "sci-precalc-l01"
+    },
+    {
+      "id": "sci-precalc-c005",
+      "front": "How do you find the inverse of a function algebraically?",
+      "back": "Write `y = f(x)`, swap x and y, then solve for y. Confirm with `f(f^-1(x)) = x`.",
+      "lesson": "sci-precalc-l01"
+    },
+    {
+      "id": "sci-precalc-c006",
+      "front": "What test tells you whether a function has an inverse?",
+      "back": "The horizontal line test. If no horizontal line crosses the graph twice, the function is one-to-one and invertible.",
+      "lesson": "sci-precalc-l01"
+    },
+    {
+      "id": "sci-precalc-c007",
+      "front": "What is the domain of `f(x) = sqrt(x - 4)/(x - 9)`?",
+      "back": "`[4, 9)` union `(9, infinity)`. The root needs `x >= 4` and the denominator forbids `x = 9`.",
+      "lesson": "sci-precalc-l01"
+    },
+    {
+      "id": "sci-precalc-c008",
+      "front": "What is the formula for the slope between two points?",
+      "back": "`m = (y2 - y1)/(x2 - x1)`, rise over run. With units attached it is a rate of change.",
+      "lesson": "sci-precalc-l02"
+    },
+    {
+      "id": "sci-precalc-c009",
+      "front": "Write the point-slope form of a line.",
+      "back": "`y - y1 = m(x - x1)`. Fastest way to build a line from one known point and a rate.",
+      "lesson": "sci-precalc-l02"
+    },
+    {
+      "id": "sci-precalc-c010",
+      "front": "What is the relationship between the slopes of perpendicular lines?",
+      "back": "They multiply to `-1`. Perpendicular to slope `2` is slope `-1/2`; they are negative reciprocals.",
+      "lesson": "sci-precalc-l02"
+    },
+    {
+      "id": "sci-precalc-c011",
+      "front": "Where is the vertex of `f(x) = ax^2 + bx + c`?",
+      "back": "At `x = -b/(2a)`. Plug that x back into f to get the y-coordinate.",
+      "lesson": "sci-precalc-l02"
+    },
+    {
+      "id": "sci-precalc-c012",
+      "front": "What does vertex form `a(x - h)^2 + k` tell you at a glance?",
+      "back": "The vertex sits at `(h, k)`. The sign of `a` says whether it opens up (minimum) or down (maximum).",
+      "lesson": "sci-precalc-l02"
+    },
+    {
+      "id": "sci-precalc-c013",
+      "front": "How do you complete the square on `x^2 - 6x`?",
+      "back": "Halve the `-6` to get `-3`, square it to get `9`, then add and subtract `9`: `(x - 3)^2 - 9`.",
+      "lesson": "sci-precalc-l02"
+    },
+    {
+      "id": "sci-precalc-c014",
+      "front": "State the quadratic formula.",
+      "back": "`x = (-b +/- sqrt(b^2 - 4ac))/(2a)`, for any equation written as `ax^2 + bx + c = 0`.",
+      "lesson": "sci-precalc-l02"
+    },
+    {
+      "id": "sci-precalc-c015",
+      "front": "What does the discriminant `b^2 - 4ac` tell you?",
+      "back": "Positive means two real roots, zero means one repeated root, negative means no real roots.",
+      "lesson": "sci-precalc-l02"
+    },
+    {
+      "id": "sci-precalc-c016",
+      "front": "An IV holds `1000 mL` and runs at `125 mL/h`. Write the model and the empty time.",
+      "back": "`V(t) = 1000 - 125t`. Setting `V = 0` gives `t = 8` hours.",
+      "lesson": "sci-precalc-l02"
+    },
+    {
+      "id": "sci-precalc-c017",
+      "front": "What does the multiplicity of a zero tell you about the graph?",
+      "back": "Odd multiplicity crosses the x-axis; even multiplicity touches and bounces back without crossing.",
+      "lesson": "sci-precalc-l03"
+    },
+    {
+      "id": "sci-precalc-c018",
+      "front": "How many zeros and turning points can a degree-n polynomial have?",
+      "back": "At most n zeros and at most `n - 1` turning points.",
+      "lesson": "sci-precalc-l03"
+    },
+    {
+      "id": "sci-precalc-c019",
+      "front": "What is the end behavior of an odd-degree polynomial with a negative leading coefficient?",
+      "back": "Up on the left, down on the right. Only degree parity and the leading sign matter far from the origin.",
+      "lesson": "sci-precalc-l03"
+    },
+    {
+      "id": "sci-precalc-c020",
+      "front": "When does a rational function have a hole instead of a vertical asymptote?",
+      "back": "When the zero factor cancels from both numerator and denominator. A surviving denominator zero gives the asymptote.",
+      "lesson": "sci-precalc-l03"
+    },
+    {
+      "id": "sci-precalc-c021",
+      "front": "How do you find the horizontal asymptote of a rational function?",
+      "back": "Compare degrees. Top smaller gives `y = 0`; equal degrees give the ratio of leading coefficients; top larger gives none.",
+      "lesson": "sci-precalc-l03"
+    },
+    {
+      "id": "sci-precalc-c022",
+      "front": "When does a slant asymptote exist, and how do you find it?",
+      "back": "When the numerator degree is exactly one more than the denominator. Do polynomial long division; the quotient is the slant line.",
+      "lesson": "sci-precalc-l03"
+    },
+    {
+      "id": "sci-precalc-c023",
+      "front": "Can a graph cross its own horizontal asymptote?",
+      "back": "Yes, anywhere in the middle of the graph. Only vertical asymptotes can never be crossed, since the function is undefined there.",
+      "lesson": "sci-precalc-l03"
+    },
+    {
+      "id": "sci-precalc-c024",
+      "front": "In the saturation model `E = (Emax * C)/(K + C)`, what limits the effect?",
+      "back": "The horizontal asymptote `E = Emax`. More concentration gets closer to it but never exceeds it.",
+      "lesson": "sci-precalc-l03"
+    },
+    {
+      "id": "sci-precalc-c025",
+      "front": "In `f(x) = a * b^x`, what do `a` and `b` represent?",
+      "back": "`a` is the starting value at `x = 0`; `b` is the growth factor per step. `b > 1` grows, `b` below `1` decays.",
+      "lesson": "sci-precalc-l04"
+    },
+    {
+      "id": "sci-precalc-c026",
+      "front": "What is the value of `e` and why is it used?",
+      "back": "About `2.71828`. It is the base for continuous growth models `A0 * e^(kt)`, which makes the rate arithmetic clean.",
+      "lesson": "sci-precalc-l04"
+    },
+    {
+      "id": "sci-precalc-c027",
+      "front": "Translate `log_b(y) = x` into exponential form.",
+      "back": "`b^x = y`. A logarithm is simply the exponent that produces the given number.",
+      "lesson": "sci-precalc-l04"
+    },
+    {
+      "id": "sci-precalc-c028",
+      "front": "What is `log10(0.001)`?",
+      "back": "`-3`, because `0.001 = 10^-3`. Numbers below `1` always have negative common logs.",
+      "lesson": "sci-precalc-l04"
+    },
+    {
+      "id": "sci-precalc-c029",
+      "front": "State the product, quotient, and power rules for logarithms.",
+      "back": "`log(MN) = log M + log N`; `log(M/N) = log M - log N`; `log(M^p) = p*log M`.",
+      "lesson": "sci-precalc-l04"
+    },
+    {
+      "id": "sci-precalc-c030",
+      "front": "Why does `log(M + N)` not equal `log M + log N`?",
+      "back": "The sum rule applies only to a product inside the log. `log10(20)` is about `1.30`, while `log10(10) + log10(10) = 2`.",
+      "lesson": "sci-precalc-l04"
+    },
+    {
+      "id": "sci-precalc-c031",
+      "front": "State the change-of-base formula.",
+      "back": "`log_b(x) = ln(x)/ln(b)`. It also works with `log10` on top and bottom.",
+      "lesson": "sci-precalc-l04"
+    },
+    {
+      "id": "sci-precalc-c032",
+      "front": "What is the domain of any logarithmic function?",
+      "back": "Positive inputs only. `log_b(0)` and logs of negatives are undefined, so `x = 0` is a vertical asymptote.",
+      "lesson": "sci-precalc-l04"
+    },
+    {
+      "id": "sci-precalc-c033",
+      "front": "Solve `5 * 3^x = 400` exactly.",
+      "back": "Isolate: `3^x = 80`. Take logs: `x = ln(80)/ln(3)`, about `3.99`.",
+      "lesson": "sci-precalc-l04"
+    },
+    {
+      "id": "sci-precalc-c034",
+      "front": "What is the continuous exponential model, term by term?",
+      "back": "`A(t) = A0 * e^(kt)`: `A0` the starting amount, `k` the continuous rate, positive for growth and negative for decay.",
+      "lesson": "sci-precalc-l05"
+    },
+    {
+      "id": "sci-precalc-c035",
+      "front": "How are half-life and the continuous decay rate k related?",
+      "back": "`k = -ln(2)/Th`, where `Th` is the half-life and `ln(2)` is about `0.693`.",
+      "lesson": "sci-precalc-l05"
+    },
+    {
+      "id": "sci-precalc-c036",
+      "front": "What fraction of a drug remains after `5` half-lives?",
+      "back": "`(1/2)^5 = 1/32`, about `3.1%`. That is why five half-lives is the usual rule for effective clearance.",
+      "lesson": "sci-precalc-l05"
+    },
+    {
+      "id": "sci-precalc-c037",
+      "front": "A `400 mg` dose has a `6`-hour half-life. When does it reach `25 mg`?",
+      "back": "`25/400 = 1/16 = (1/2)^4`, so four half-lives: `24` hours.",
+      "lesson": "sci-precalc-l05"
+    },
+    {
+      "id": "sci-precalc-c038",
+      "front": "Write the doubling-time growth model.",
+      "back": "`A(t) = A0 * 2^(t/Td)`, where `Td` is the doubling time in the same units as t.",
+      "lesson": "sci-precalc-l05"
+    },
+    {
+      "id": "sci-precalc-c039",
+      "front": "`5000` cells double every `30` minutes. How many after `4` hours?",
+      "back": "`240/30 = 8` doublings, so `5000 * 2^8 = 5000 * 256 = 1,280,000` cells.",
+      "lesson": "sci-precalc-l05"
+    },
+    {
+      "id": "sci-precalc-c040",
+      "front": "What is the pH formula, and how do you invert it?",
+      "back": "`pH = -log10([H+])`, and inverting gives `[H+] = 10^(-pH)` in moles per liter.",
+      "lesson": "sci-precalc-l05"
+    },
+    {
+      "id": "sci-precalc-c041",
+      "front": "How much does `[H+]` change when pH drops by `0.3` units?",
+      "back": "It doubles, since `10^0.3` is about `2`. A full unit drop is a tenfold rise in acid.",
+      "lesson": "sci-precalc-l05"
+    },
+    {
+      "id": "sci-precalc-c042",
+      "front": "What is `[H+]` at a normal arterial pH of `7.40`?",
+      "back": "`10^-7.40`, about `4.0 * 10^-8` mol/L, or `40` nanomoles per liter.",
+      "lesson": "sci-precalc-l05"
+    },
+    {
+      "id": "sci-precalc-c043",
+      "front": "What does a `10 dB` increase mean, given `dB = 10*log10(I/I0)`?",
+      "back": "A tenfold increase in sound intensity. The scale is logarithmic, so equal steps mean equal multiples.",
+      "lesson": "sci-precalc-l05"
+    },
+    {
+      "id": "sci-precalc-c044",
+      "front": "What are the three possible outcomes for a system of linear equations?",
+      "back": "Exactly one solution (lines cross), no solution (parallel), or infinitely many (same line twice).",
+      "lesson": "sci-precalc-l06"
+    },
+    {
+      "id": "sci-precalc-c045",
+      "front": "While solving a system you get `0 = 7`. What does that mean?",
+      "back": "No solution; the lines are parallel. Getting `0 = 0` instead would mean infinitely many solutions.",
+      "lesson": "sci-precalc-l06"
+    },
+    {
+      "id": "sci-precalc-c046",
+      "front": "What are the three legal row operations in Gaussian elimination?",
+      "back": "Swap two rows, multiply a row by a nonzero number, and add a multiple of one row to another.",
+      "lesson": "sci-precalc-l06"
+    },
+    {
+      "id": "sci-precalc-c047",
+      "front": "How do you compute a 2 by 2 determinant?",
+      "back": "For rows `a b` and `c d`, the determinant is `ad - bc`.",
+      "lesson": "sci-precalc-l06"
+    },
+    {
+      "id": "sci-precalc-c048",
+      "front": "What does a determinant of zero tell you about a system?",
+      "back": "There is no unique solution. Check the constants to decide between no solution and infinitely many.",
+      "lesson": "sci-precalc-l06"
+    },
+    {
+      "id": "sci-precalc-c049",
+      "front": "Set up the equations for mixing `20%` and `50%` dextrose into `600 mL` of `30%`.",
+      "back": "`x + y = 600` for volume and `0.20x + 0.50y = 180` for dextrose. The answer is `400 mL` and `200 mL`.",
+      "lesson": "sci-precalc-l06"
+    },
+    {
+      "id": "sci-precalc-c050",
+      "front": "How do you convert degrees to radians and back?",
+      "back": "Degrees to radians: multiply by `pi/180`. Radians to degrees: multiply by `180/pi`. A full circle is `2*pi`.",
+      "lesson": "sci-precalc-l07"
+    },
+    {
+      "id": "sci-precalc-c051",
+      "front": "What point on the unit circle corresponds to angle theta?",
+      "back": "`(cos(theta), sin(theta))`. That definition extends sine and cosine to every angle, not just acute ones.",
+      "lesson": "sci-precalc-l07"
+    },
+    {
+      "id": "sci-precalc-c052",
+      "front": "Give the radian measures of `30`, `45`, `60`, and `90` degrees.",
+      "back": "`pi/6`, `pi/4`, `pi/3`, and `pi/2`.",
+      "lesson": "sci-precalc-l07"
+    },
+    {
+      "id": "sci-precalc-c053",
+      "front": "Which trig functions are positive in each quadrant?",
+      "back": "Quadrant I all, quadrant II sine only, quadrant III tangent only, quadrant IV cosine only (with their reciprocals).",
+      "lesson": "sci-precalc-l07"
+    },
+    {
+      "id": "sci-precalc-c054",
+      "front": "In `y = A*sin(B(x - C)) + D`, what does each letter control?",
+      "back": "`A` amplitude, period `2*pi/B`, `C` phase shift, `D` vertical midline.",
+      "lesson": "sci-precalc-l07"
+    },
+    {
+      "id": "sci-precalc-c055",
+      "front": "A pressure wave is `20*sin(2*pi*t/0.8) + 100`. What is the heart rate and BP range?",
+      "back": "Period `0.8 s`, so `75` beats per minute. Pressure runs `80` to `120 mmHg`.",
+      "lesson": "sci-precalc-l07"
+    },
+    {
+      "id": "sci-precalc-c056",
+      "front": "Why must you factor `cos(2x - pi)` before reading the phase shift?",
+      "back": "Rewrite it as `cos(2(x - pi/2))`. The shift is `pi/2`, not `pi`; the B factor must come out first.",
+      "lesson": "sci-precalc-l07"
+    },
+    {
+      "id": "sci-precalc-c057",
+      "front": "What is the period of tangent, and where are its asymptotes?",
+      "back": "Period `pi`, with vertical asymptotes wherever cosine is zero: at `pi/2` plus any multiple of `pi`.",
+      "lesson": "sci-precalc-l07"
+    },
+    {
+      "id": "sci-precalc-c058",
+      "front": "State the three right-triangle ratios.",
+      "back": "`sin = opposite/hypotenuse`, `cos = adjacent/hypotenuse`, `tan = opposite/adjacent`. SOH-CAH-TOA.",
+      "lesson": "sci-precalc-l08"
+    },
+    {
+      "id": "sci-precalc-c059",
+      "front": "What two identities come from dividing `sin^2 + cos^2 = 1`?",
+      "back": "Divide by `cos^2` for `tan^2(x) + 1 = sec^2(x)`; divide by `sin^2` for `1 + cot^2(x) = csc^2(x)`.",
+      "lesson": "sci-precalc-l08"
+    },
+    {
+      "id": "sci-precalc-c060",
+      "front": "Write the sum formulas for sine and cosine.",
+      "back": "`sin(A + B) = sin A cos B + cos A sin B`; `cos(A + B) = cos A cos B - sin A sin B`. Cosine's sign flips.",
+      "lesson": "sci-precalc-l08"
+    },
+    {
+      "id": "sci-precalc-c061",
+      "front": "Give the double-angle formulas.",
+      "back": "`sin(2x) = 2 sin(x) cos(x)`; `cos(2x) = cos^2(x) - sin^2(x) = 1 - 2 sin^2(x) = 2 cos^2(x) - 1`.",
+      "lesson": "sci-precalc-l08"
+    },
+    {
+      "id": "sci-precalc-c062",
+      "front": "What output ranges do `arcsin` and `arccos` return?",
+      "back": "`arcsin` returns `-90` to `90` degrees; `arccos` returns `0` to `180` degrees. Restricted so each input has one answer.",
+      "lesson": "sci-precalc-l08"
+    },
+    {
+      "id": "sci-precalc-c063",
+      "front": "How do you solve `2 sin^2(x) - sin(x) - 1 = 0` on `0` to `360` degrees?",
+      "back": "Let `u = sin(x)`, factor `(2u + 1)(u - 1) = 0`. Solutions are `90`, `210`, and `330` degrees.",
+      "lesson": "sci-precalc-l08"
+    },
+    {
+      "id": "sci-precalc-c064",
+      "front": "State the law of sines and when it applies.",
+      "back": "`a/sin A = b/sin B = c/sin C`. Use it when you have a matched side-and-angle pair: AAS, ASA, or the ambiguous SSA.",
+      "lesson": "sci-precalc-l09"
+    },
+    {
+      "id": "sci-precalc-c065",
+      "front": "State the law of cosines and when it applies.",
+      "back": "`c^2 = a^2 + b^2 - 2ab*cos(C)`. Use it for side-angle-side and side-side-side, where no matched pair exists.",
+      "lesson": "sci-precalc-l09"
+    },
+    {
+      "id": "sci-precalc-c066",
+      "front": "What happens to the law of cosines when the included angle is obtuse?",
+      "back": "Its cosine is negative, so `-2ab*cos(C)` becomes an addition and the third side comes out longer than either given side.",
+      "lesson": "sci-precalc-l09"
+    },
+    {
+      "id": "sci-precalc-c067",
+      "front": "Why is side-side-angle called the ambiguous case?",
+      "back": "The calculator's arcsin gives only the acute angle; the obtuse supplement may also fit, so zero, one, or two triangles are possible.",
+      "lesson": "sci-precalc-l09"
+    },
+    {
+      "id": "sci-precalc-c068",
+      "front": "Give two formulas for the area of a non-right triangle.",
+      "back": "`Area = (1/2)ab*sin(C)` for two sides and the included angle; Heron's `sqrt(s(s-a)(s-b)(s-c))` with `s = (a+b+c)/2` for three sides.",
+      "lesson": "sci-precalc-l09"
+    },
+    {
+      "id": "sci-precalc-c069",
+      "front": "Give the nth term and sum formulas for an arithmetic sequence.",
+      "back": "`an = a1 + (n - 1)d` and `Sn = (n/2)(a1 + an)`.",
+      "lesson": "sci-precalc-l10"
+    },
+    {
+      "id": "sci-precalc-c070",
+      "front": "Give the nth term and infinite sum for a geometric sequence.",
+      "back": "`an = a1 * r^(n-1)`. If the absolute value of r is under `1`, the infinite sum is `a1/(1 - r)`.",
+      "lesson": "sci-precalc-l10"
+    },
+    {
+      "id": "sci-precalc-c071",
+      "front": "Write both compound interest formulas.",
+      "back": "Periodic: `A = P(1 + r/n)^(nt)`. Continuous: `A = P*e^(rt)`.",
+      "lesson": "sci-precalc-l10"
+    },
+    {
+      "id": "sci-precalc-c072",
+      "front": "How do you tell an ellipse from a hyperbola by equation alone?",
+      "back": "Two squared terms added is an ellipse (equal denominators means a circle); two squared terms subtracted is a hyperbola.",
+      "lesson": "sci-precalc-l10"
+    },
+    {
+      "id": "sci-precalc-c073",
+      "front": "What does it mean when substitution into a limit gives `0/0`?",
+      "back": "It is indeterminate, an instruction rather than an answer: factor, cancel, or rationalize, then substitute again.",
+      "lesson": "sci-precalc-l10"
+    },
+    {
+      "id": "sci-precalc-c074",
+      "front": "Can a limit exist where the function is undefined?",
+      "back": "Yes. A limit describes what the function approaches near the point, not its value at the point, so a hole still has a limit.",
+      "lesson": "sci-precalc-l10"
+    },
+    {
+      "id": "sci-precalc-c075",
+      "front": "What is the average rate of change of f on the interval from a to b?",
+      "back": "`(f(b) - f(a))/(b - a)`. Shrinking the interval toward zero gives the derivative.",
+      "lesson": "sci-precalc-l10"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "sci-precalc-q001",
+      "q": "Which of the following graphs could NOT represent a function of x?",
+      "choices": [
+        "A circle centered at the origin",
+        "A downward parabola",
+        "A straight horizontal line",
+        "An exponential decay curve"
+      ],
+      "answer": 0,
+      "why": "A circle fails the vertical line test because most x values map to two y values. The parabola, horizontal line, and exponential curve each give exactly one output per input.",
+      "lesson": "sci-precalc-l01",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-precalc-q002",
+      "q": "If `f(x) = 3x - 2` and `g(x) = x^2`, what is `g(f(2))`?",
+      "choices": [
+        "`10`",
+        "`16`",
+        "`4`",
+        "`34`"
+      ],
+      "answer": 1,
+      "why": "`f(2) = 4`, then `g(4) = 16`. Choice 2 stops at `f(2)`, and choice 3 computes `f(g(2)) = 10` in reverse order or squares the wrong value.",
+      "lesson": "sci-precalc-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-precalc-q003",
+      "q": "A researcher graphs `y = f(x - 2) + 5`. Compared with `y = f(x)`, the graph has moved how?",
+      "choices": [
+        "Left 2 and down 5",
+        "Left 2 and up 5",
+        "Right 2 and up 5",
+        "Right 2 and down 5"
+      ],
+      "answer": 2,
+      "why": "Subtracting inside shifts right by 2; adding outside shifts up by 5. The inside sign feels reversed, which is what makes the left-shift choices tempting.",
+      "lesson": "sci-precalc-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-precalc-q004",
+      "q": "A clinic's charge model is `C(p) = 40p + 150` dollars for p patients. What does the inverse function return?",
+      "choices": [
+        "The cost for a given number of patients",
+        "The fixed overhead",
+        "The cost per patient",
+        "The number of patients for a given total cost"
+      ],
+      "answer": 3,
+      "why": "An inverse swaps input and output, so it maps dollars back to patients. Choice 0 describes the original function, and the `40` and `150` are the per-patient rate and overhead, not the inverse.",
+      "lesson": "sci-precalc-l01",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-precalc-q005",
+      "q": "A tank starts with `2400 mL` and drains at a constant `160 mL` per hour. How long until `800 mL` remain?",
+      "choices": [
+        "`5` hours",
+        "`15` hours",
+        "`8` hours",
+        "`10` hours"
+      ],
+      "answer": 3,
+      "why": "`2400 - 160t = 800` gives `160t = 1600` and `t = 10` hours. Choice 0 solves for `1600 mL` remaining, and choice 1 divides `2400` by `160` for the full-empty time.",
+      "lesson": "sci-precalc-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-precalc-q006",
+      "q": "The vertex of `f(x) = x^2 - 8x + 20` is at which point?",
+      "choices": [
+        "`(4, 4)`",
+        "`(-4, 68)`",
+        "`(8, 20)`",
+        "`(4, 20)`"
+      ],
+      "answer": 0,
+      "why": "`x = -b/(2a) = 8/2 = 4`, and `f(4) = 16 - 32 + 20 = 4`. Choice 1 drops the sign in `-b`, and choice 3 forgets to evaluate f at the vertex x.",
+      "lesson": "sci-precalc-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-precalc-q007",
+      "q": "Completing the square on `x^2 + 10x + 3` gives which expression?",
+      "choices": [
+        "`(x + 10)^2 - 97`",
+        "`(x + 5)^2 - 22`",
+        "`(x + 5)^2 + 28`",
+        "`(x - 5)^2 - 22`"
+      ],
+      "answer": 1,
+      "why": "Half of `10` is `5`, squared is `25`, so `(x + 5)^2 - 25 + 3 = (x + 5)^2 - 22`. Choice 2 adds instead of subtracting the `25`, and choice 3 flips the sign inside.",
+      "lesson": "sci-precalc-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-precalc-q008",
+      "q": "A dose-effect model is `E(d) = -0.5d^2 + 12d`. Which dose gives the maximum effect?",
+      "choices": [
+        "`6 mg`",
+        "`24 mg`",
+        "`12 mg`",
+        "`72 mg`"
+      ],
+      "answer": 2,
+      "why": "`d = -b/(2a) = -12/(2 * -0.5) = 12 mg`. Choice 0 forgets the `-0.5` in the denominator, and choice 3 is the effect value `E(12) = 72`, not the dose.",
+      "lesson": "sci-precalc-l02",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-precalc-q009",
+      "q": "How many real roots does `2x^2 - 8x + 8 = 0` have?",
+      "choices": [
+        "Two distinct roots",
+        "None",
+        "Infinitely many",
+        "One repeated root"
+      ],
+      "answer": 3,
+      "why": "The discriminant is `64 - 64 = 0`, so there is exactly one repeated root at `x = 2`. A positive discriminant would give two and a negative one none.",
+      "lesson": "sci-precalc-l02",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-precalc-q010",
+      "q": "For `f(x) = (x + 2)^4 (x - 7)`, what happens at `x = -2`?",
+      "choices": [
+        "The graph touches the axis and turns back",
+        "The graph crosses the axis",
+        "The graph has a vertical asymptote",
+        "The function is undefined"
+      ],
+      "answer": 0,
+      "why": "Multiplicity `4` is even, so the graph bounces. Crossing would require odd multiplicity, and polynomials never have asymptotes or undefined points.",
+      "lesson": "sci-precalc-l03",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-precalc-q011",
+      "q": "What is the end behavior of `f(x) = 5x^4 - 2x^3 + x`?",
+      "choices": [
+        "Down on the left, up on the right",
+        "Up on both ends",
+        "Down on both ends",
+        "Up on the left, down on the right"
+      ],
+      "answer": 1,
+      "why": "Even degree with a positive leading coefficient rises on both ends. The `-2x^3` term matters near the origin but is irrelevant far out.",
+      "lesson": "sci-precalc-l03",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-precalc-q012",
+      "q": "Where does `R(x) = (x + 4)/(x^2 - 16)` have a vertical asymptote?",
+      "choices": [
+        "At `x = 4` and `x = -4`",
+        "At `x = -4` only",
+        "At `x = 4` only",
+        "Nowhere"
+      ],
+      "answer": 2,
+      "why": "The denominator factors to `(x - 4)(x + 4)`, and the `(x + 4)` cancels, leaving a hole at `x = -4` and an asymptote only at `x = 4`. Choice 0 misses the cancellation.",
+      "lesson": "sci-precalc-l03",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-precalc-q013",
+      "q": "A drug saturation curve is `E(C) = (80C)/(5 + C)`. What effect does a very large concentration approach?",
+      "choices": [
+        "`16`",
+        "`400`",
+        "It grows without bound",
+        "`80`"
+      ],
+      "answer": 3,
+      "why": "Equal degrees on top and bottom make the horizontal asymptote the ratio of leading coefficients, `80/1 = 80`. Choice 0 divides `80` by `5`, and the curve cannot grow without bound because it is saturable.",
+      "lesson": "sci-precalc-l03",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-precalc-q014",
+      "q": "What is `log_3(81)`?",
+      "choices": [
+        "`27`",
+        "`9`",
+        "`3`",
+        "`4`"
+      ],
+      "answer": 3,
+      "why": "`3^4 = 81`, so the log is `4`. Choices 0 and 1 are values of `3^3` and `3^2` rather than the exponent itself.",
+      "lesson": "sci-precalc-l04",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-precalc-q015",
+      "q": "Which expression is equivalent to `log10(x) + 2*log10(y)`?",
+      "choices": [
+        "`log10(xy^2)`",
+        "`log10(x + y^2)`",
+        "`2*log10(xy)`",
+        "`log10(x)*log10(y^2)`"
+      ],
+      "answer": 0,
+      "why": "The power rule makes `2*log10(y)` into `log10(y^2)`, and adding logs multiplies inside. Choice 1 wrongly adds inside, and choice 2 applies the exponent to both factors.",
+      "lesson": "sci-precalc-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-precalc-q016",
+      "q": "Solve `ln(x) + ln(x - 3) = ln(10)`.",
+      "choices": [
+        "`x = 13`",
+        "`x = -2`",
+        "`x = 5`",
+        "`x = 2` and `x = 5`"
+      ],
+      "answer": 2,
+      "why": "Combine to `ln(x(x - 3)) = ln(10)`, so `x^2 - 3x - 10 = 0` and `x = 5` or `x = -2`. The negative root is rejected because a log needs a positive input, which is why choices 1 and 3 fail.",
+      "lesson": "sci-precalc-l04",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-precalc-q017",
+      "q": "What is the domain of `f(x) = ln(x - 6)`?",
+      "choices": [
+        "All real numbers",
+        "`x >= 6`",
+        "`x > 6`",
+        "`x > 0`"
+      ],
+      "answer": 2,
+      "why": "A log needs a strictly positive input, so `x - 6 > 0` means `x > 6`. Choice 1 wrongly includes `6`, where the log is undefined.",
+      "lesson": "sci-precalc-l04",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-precalc-q018",
+      "q": "A patient receives `320 mg` of a drug with a `3`-hour half-life. How much remains after `9` hours?",
+      "choices": [
+        "`40 mg`",
+        "`80 mg`",
+        "`106.7 mg`",
+        "`160 mg`"
+      ],
+      "answer": 0,
+      "why": "Three half-lives means `320 * (1/2)^3 = 40 mg`. Choice 1 stops at two half-lives, and choice 2 divides by 3 instead of halving three times.",
+      "lesson": "sci-precalc-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-precalc-q019",
+      "q": "A bacterial culture grows as `N(t) = 200 * e^(0.35t)` with t in hours. How many cells after `6` hours?",
+      "choices": [
+        "`420`",
+        "`1633`",
+        "`2400`",
+        "`700`"
+      ],
+      "answer": 1,
+      "why": "`0.35 * 6 = 2.1`, and `e^2.1` is about `8.166`, so `200 * 8.166` is about `1633`. Choice 0 multiplies `200` by `2.1`, treating exponential growth as linear.",
+      "lesson": "sci-precalc-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-precalc-q020",
+      "q": "Gastric fluid at `pH 2.0` is how many times more acidic than blood at `pH 7.4`?",
+      "choices": [
+        "`5.4` times",
+        "About `54` times",
+        "About `250,000` times",
+        "About `1000` times"
+      ],
+      "answer": 2,
+      "why": "The difference is `5.4` pH units, so the ratio is `10^5.4`, about `250,000`. Choices 0 and 1 treat the log scale as linear, the classic error with pH.",
+      "lesson": "sci-precalc-l05",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-precalc-q021",
+      "q": "A radioactive tracer decays from `60 mCi` to `7.5 mCi`. How many half-lives passed?",
+      "choices": [
+        "`2`",
+        "`3`",
+        "`4`",
+        "`8`"
+      ],
+      "answer": 1,
+      "why": "`7.5/60 = 1/8 = (1/2)^3`, so three half-lives. Choice 0 would leave `15 mCi` and choice 2 would leave `3.75 mCi`.",
+      "lesson": "sci-precalc-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-precalc-q022",
+      "q": "A drug has a half-life of `8` hours. What is its continuous decay constant k?",
+      "choices": [
+        "`-0.0866` per hour",
+        "`-8` per hour",
+        "`-0.693` per hour",
+        "`-0.125` per hour"
+      ],
+      "answer": 0,
+      "why": "`k = -ln(2)/Th = -0.693/8 = -0.0866` per hour. Choice 2 forgets to divide by the half-life, and choice 3 is simply `1/8`.",
+      "lesson": "sci-precalc-l05",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-precalc-q023",
+      "q": "A system of two linear equations reduces to `0 = 0`. What does this indicate?",
+      "choices": [
+        "No solution",
+        "Infinitely many solutions",
+        "Exactly one solution",
+        "An arithmetic error"
+      ],
+      "answer": 1,
+      "why": "An always-true statement means the equations describe the same line, so every point on it works. A false statement like `0 = 5` would instead mean no solution.",
+      "lesson": "sci-precalc-l06",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-precalc-q024",
+      "q": "A lab mixes a `5%` and a `25%` solution to make `400 mL` of `15%`. How much of the `25%` is needed?",
+      "choices": [
+        "`100 mL`",
+        "`300 mL`",
+        "`250 mL`",
+        "`200 mL`"
+      ],
+      "answer": 3,
+      "why": "With `x + y = 400` and `0.05x + 0.25y = 60`, substitution gives `y = 200 mL`. Because `15%` is exactly midway between the two strengths, equal volumes are expected, which choices 0 and 1 violate.",
+      "lesson": "sci-precalc-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-precalc-q025",
+      "q": "What is the determinant of the matrix with rows `7 3` and `2 1`?",
+      "choices": [
+        "`13`",
+        "`6`",
+        "`10`",
+        "`1`"
+      ],
+      "answer": 3,
+      "why": "`ad - bc = (7)(1) - (3)(2) = 7 - 6 = 1`. Choice 0 adds the products, and choice 1 uses only the `bc` term.",
+      "lesson": "sci-precalc-l06",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-precalc-q026",
+      "q": "Solving `x + y + z = 6`, `2x - y + z = 3`, `x + 2y - z = 2` gives which ordered triple?",
+      "choices": [
+        "`(3, 2, 1)`",
+        "`(2, 1, 3)`",
+        "`(1, 2, 3)`",
+        "`(1, 3, 2)`"
+      ],
+      "answer": 2,
+      "why": "Eliminating x and back-substituting gives `y = 2`, `z = 3`, `x = 1`. Only `(1, 2, 3)` satisfies all three; the others fail the second equation when checked.",
+      "lesson": "sci-precalc-l06",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-precalc-q027",
+      "q": "Convert `135` degrees to radians.",
+      "choices": [
+        "`3*pi/4`",
+        "`2*pi/3`",
+        "`5*pi/6`",
+        "`4*pi/3`"
+      ],
+      "answer": 0,
+      "why": "`135 * pi/180 = 135/180 * pi = 3*pi/4`. Choice 1 is `120` degrees, choice 2 is `150` degrees, and choice 3 is `240` degrees.",
+      "lesson": "sci-precalc-l07",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-precalc-q028",
+      "q": "What is the amplitude and midline of `y = -6*cos(4x) + 11`?",
+      "choices": [
+        "Amplitude `-6`, midline `4`",
+        "Amplitude `6`, midline `11`",
+        "Amplitude `4`, midline `11`",
+        "Amplitude `11`, midline `6`"
+      ],
+      "answer": 1,
+      "why": "Amplitude is the absolute value of the coefficient, `6`; the constant added outside, `11`, is the midline. The `4` sets the period, not the amplitude, and amplitude is never negative.",
+      "lesson": "sci-precalc-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-precalc-q029",
+      "q": "An arterial waveform is modeled as `P(t) = 18*sin(2*pi*t/0.75) + 92` mmHg. What is the heart rate?",
+      "choices": [
+        "`92` per minute",
+        "`75` per minute",
+        "`45` per minute",
+        "`80` per minute"
+      ],
+      "answer": 3,
+      "why": "Period is `0.75` seconds per beat, so `60/0.75 = 80` beats per minute. Choice 0 misreads the midline as a rate, and choice 1 comes from assuming a `0.8`-second period.",
+      "lesson": "sci-precalc-l07",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-precalc-q030",
+      "q": "What is `cos(240)` degrees?",
+      "choices": [
+        "`sqrt(3)/2`",
+        "`1/2`",
+        "`-sqrt(3)/2`",
+        "`-1/2`"
+      ],
+      "answer": 3,
+      "why": "`240` degrees is in quadrant III with a reference angle of `60` degrees, where cosine is `1/2`, and cosine is negative there, giving `-1/2`. Choice 2 uses the sine value instead.",
+      "lesson": "sci-precalc-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-precalc-q031",
+      "q": "A ramp rises `3` feet over a run of `36` feet. What angle does it make with the ground?",
+      "choices": [
+        "`4.8` degrees",
+        "`1.4` degrees",
+        "`85.2` degrees",
+        "`12` degrees"
+      ],
+      "answer": 0,
+      "why": "`arctan(3/36) = arctan(0.0833)`, about `4.8` degrees. Choice 2 is the complementary angle, and choice 3 just reports the ratio `36/3`.",
+      "lesson": "sci-precalc-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-precalc-q032",
+      "q": "If `sin(x) = 4/5` and x is in quadrant I, what is `cos(2x)`?",
+      "choices": [
+        "`24/25`",
+        "`7/25`",
+        "`-7/25`",
+        "`3/5`"
+      ],
+      "answer": 2,
+      "why": "`cos(2x) = 1 - 2 sin^2(x) = 1 - 2(16/25) = 1 - 32/25 = -7/25`. Choice 1 drops the sign, and choice 0 is `sin(2x)`.",
+      "lesson": "sci-precalc-l08",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-precalc-q033",
+      "q": "Which expression equals `sec^2(x) - tan^2(x)`?",
+      "choices": [
+        "`0`",
+        "`1`",
+        "`sin^2(x)`",
+        "`2`"
+      ],
+      "answer": 1,
+      "why": "The Pythagorean identity `tan^2 + 1 = sec^2` rearranges to `sec^2 - tan^2 = 1`. Choice 0 assumes the two functions are equal, which they never are.",
+      "lesson": "sci-precalc-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-precalc-q034",
+      "q": "How many solutions does `sin(x) = 0.6` have for `0 <= x < 360` degrees?",
+      "choices": [
+        "One",
+        "Two",
+        "Three",
+        "Four"
+      ],
+      "answer": 1,
+      "why": "Sine is positive in quadrants I and II, giving about `36.9` and `143.1` degrees. Relying on the calculator's single arcsin output is what makes choice 0 tempting.",
+      "lesson": "sci-precalc-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-precalc-q035",
+      "q": "In a triangle, `A = 35` degrees, `a = 12`, and `B = 80` degrees. Which approach finds side b?",
+      "choices": [
+        "Law of cosines, since two angles are given",
+        "Heron's formula",
+        "Law of sines, using the matched pair A and a",
+        "The Pythagorean theorem"
+      ],
+      "answer": 2,
+      "why": "Angle A pairs with side a, so `b/sin(80) = 12/sin(35)` solves directly. The law of cosines needs two sides, Heron's needs three sides, and there is no right angle.",
+      "lesson": "sci-precalc-l09",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-precalc-q036",
+      "q": "Two sides of `9` and `12` meet at `100` degrees. The third side is closest to which value?",
+      "choices": [
+        "`16.3`",
+        "`7.9`",
+        "`21.0`",
+        "`11.5`"
+      ],
+      "answer": 0,
+      "why": "`c^2 = 81 + 144 - 2(108)(-0.174) = 225 + 37.5 = 262.5`, so `c` is about `16.2`. Choice 1 comes from subtracting instead of adding when the cosine is negative.",
+      "lesson": "sci-precalc-l09",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-precalc-q037",
+      "q": "A wound is measured as two sides of `4 cm` and `7 cm` with an included angle of `50` degrees. What is its area?",
+      "choices": [
+        "`14` square cm",
+        "`21.4` square cm",
+        "`9.0` square cm",
+        "`10.7` square cm"
+      ],
+      "answer": 3,
+      "why": "`(1/2)(4)(7)*sin(50) = 14 * 0.766 = 10.7` square cm. Choice 0 omits the sine factor, and choice 1 omits the one half.",
+      "lesson": "sci-precalc-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-precalc-q038",
+      "q": "A taper starts at `60 mg` and decreases by `6 mg` daily for `10` days. What is the total dose given?",
+      "choices": [
+        "`600 mg`",
+        "`330 mg`",
+        "`375 mg`",
+        "`285 mg`"
+      ],
+      "answer": 1,
+      "why": "The last term is `60 + 9(-6) = 6`, so `S10 = (10/2)(60 + 6) = 5 * 66 = 330 mg`. Choice 0 assumes a constant `60 mg` daily, ignoring the taper.",
+      "lesson": "sci-precalc-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-precalc-q039",
+      "q": "`$5000` invested at `4%` compounded continuously for `10` years grows to about how much?",
+      "choices": [
+        "`$7000`",
+        "`$7401`",
+        "`$7459`",
+        "`$5400`"
+      ],
+      "answer": 2,
+      "why": "`5000 * e^(0.4)`, and `e^0.4` is about `1.4918`, so about `$7459`. Choice 0 applies simple interest, and choice 1 is the annually compounded value, which is slightly lower.",
+      "lesson": "sci-precalc-l10",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-precalc-q040",
+      "q": "What is the limit of `(x^2 - 4x)/(x - 4)` as x approaches `4`?",
+      "choices": [
+        "`0`",
+        "Does not exist",
+        "`8`",
+        "`4`"
+      ],
+      "answer": 3,
+      "why": "Factor the top as `x(x - 4)`, cancel the common factor, and substitute to get `4`. The `0/0` form is an instruction to factor, not a verdict of zero or nonexistence.",
+      "lesson": "sci-precalc-l10",
+      "difficulty": 2
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "sci-precalc-s01",
+      "title": "Working a drug half-life problem end to end",
+      "setting": "classroom",
+      "intro": "A homework problem reads: a patient is given `750 mg` of a drug that follows first-order elimination with a half-life of `5` hours. Two questions follow. How much remains after `18` hours, and how long until only `50 mg` is left? You have a calculator with `ln` and `log10` keys. Work it step by step and watch where the algebra can go wrong.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "First decide which model to write down. What does \"half-life of `5` hours\" tell you to set up?",
+          "choices": [
+            {
+              "text": "`A(t) = 750 * (1/2)^(t/5)`",
+              "next": "s2",
+              "feedback": "Correct. The exponent `t/5` counts how many half-lives have elapsed, and each one multiplies by one half.",
+              "score": 1
+            },
+            {
+              "text": "`A(t) = 750 - 5t`",
+              "next": "s2",
+              "feedback": "That is linear decay, a fixed amount lost per hour. First-order elimination removes a fixed fraction, not a fixed amount, so the model must be exponential.",
+              "score": -1
+            },
+            {
+              "text": "`A(t) = 750 * (1/2)^(5t)`",
+              "next": "s2",
+              "feedback": "The exponent is upside down. With `5t` the drug would halve five times per hour instead of once every five hours.",
+              "score": 0
+            },
+            {
+              "text": "`A(t) = 750 * 2^(t/5)`",
+              "next": "s2",
+              "feedback": "Base `2` grows. Decay needs a base below `1`, so use `1/2` or write `2^(-t/5)`.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "Now find the amount at `18` hours. What is the first arithmetic step?",
+          "choices": [
+            {
+              "text": "Divide `18/5` to get `3.6` half-lives",
+              "next": "s3",
+              "feedback": "Yes. Always convert elapsed time into half-lives first; the rest is one power calculation.",
+              "score": 1
+            },
+            {
+              "text": "Multiply `18 * 5` to get `90`",
+              "next": "s3",
+              "feedback": "That has no meaning here. The half-life is a denominator, because you are asking how many `5`-hour blocks fit into `18` hours.",
+              "score": -1
+            },
+            {
+              "text": "Subtract `18 - 5` to get `13`",
+              "next": "s3",
+              "feedback": "Subtraction belongs to linear models. Exponential decay counts ratios of time to half-life, not differences.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "You have `A = 750 * (1/2)^3.6`. Your calculator gives `2^3.6` as about `12.13`. What is the remaining amount?",
+          "choices": [
+            {
+              "text": "About `61.8 mg`",
+              "next": "s4",
+              "feedback": "Correct. `(1/2)^3.6 = 1/12.13`, about `0.0824`, and `750 * 0.0824` is about `61.8 mg`.",
+              "score": 1
+            },
+            {
+              "text": "About `9098 mg`",
+              "next": "s4",
+              "feedback": "You multiplied by `12.13` instead of dividing. A decay problem can never end with more drug than you started with, which is the sanity check to run every time.",
+              "score": -1
+            },
+            {
+              "text": "About `93.8 mg`",
+              "next": "s4",
+              "feedback": "That is `750/8`, which is three whole half-lives. The extra `0.6` of a half-life brings it down further, to about `61.8 mg`.",
+              "score": 0
+            },
+            {
+              "text": "About `208 mg`",
+              "next": "s4",
+              "feedback": "That looks like `750/3.6`, dividing by the number of half-lives instead of raising one half to that power.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "Second question: when does the amount reach `50 mg`? You set `750 * (1/2)^(t/5) = 50`. What is the next move?",
+          "choices": [
+            {
+              "text": "Divide both sides by `750` to isolate the exponential",
+              "next": "s5",
+              "feedback": "Right. Always strip the coefficient before taking a log, or the power rule has nothing clean to act on.",
+              "score": 1
+            },
+            {
+              "text": "Take `ln` of both sides immediately",
+              "next": "s5",
+              "feedback": "You can, but then you are handling `ln(750) + (t/5)*ln(0.5) = ln(50)`, which is more terms to drop signs in. Isolate first.",
+              "score": 0
+            },
+            {
+              "text": "Subtract `750` from both sides",
+              "next": "s5",
+              "feedback": "The `750` is a multiplier, not an added term, so subtracting it does nothing legal. Divide instead.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "You now have `(1/2)^(t/5) = 0.0667`. Finish it: take logs and solve for t.",
+          "choices": [
+            {
+              "text": "`(t/5)*ln(0.5) = ln(0.0667)`, so `t` is about `19.5` hours",
+              "next": "end",
+              "feedback": "Correct. `ln(0.0667)` is about `-2.708` and `ln(0.5)` is about `-0.693`, so `t/5` is about `3.91` and `t` is about `19.5` hours. The two negatives cancel, giving a positive time.",
+              "score": 1
+            },
+            {
+              "text": "`t = ln(0.0667)/ln(0.5) = -3.91`, so about `-3.9` hours",
+              "next": "end",
+              "feedback": "The ratio itself is positive, about `3.91`, because both logs are negative. You also forgot to multiply by the half-life of `5`.",
+              "score": -1
+            },
+            {
+              "text": "`t = 5 * ln(0.0667) = -13.5` hours",
+              "next": "end",
+              "feedback": "You dropped the `ln(0.5)` denominator entirely. A negative elapsed time is always a signal to recheck the algebra.",
+              "score": -1
+            },
+            {
+              "text": "About `19.5` hours, which is a little under four half-lives",
+              "next": "end",
+              "feedback": "Correct, and the cross-check is the right instinct: `50/750` is about `1/15`, which sits between `1/8` (three half-lives) and `1/16` (four), so a shade under four is exactly what to expect.",
+              "score": 1
+            }
+          ]
+        }
+      ],
+      "debrief": "The whole problem is one model and two moves. Write the decay as `A0 * (1/2)^(t/Th)`, convert elapsed time into half-lives by dividing, and when time is stuck in the exponent, isolate the exponential first and then take a log so the power rule can pull the variable down. Every wrong turn above came from one of three habits: treating decay as linear, inverting the `t/Th` ratio, or taking a log before isolating. Sanity-check with whole half-lives at the end: `50/750` lies between `1/8` and `1/16`, so the answer had to land between `15` and `20` hours."
+    },
+    {
+      "id": "sci-precalc-s02",
+      "title": "A triangle you cannot solve with SOH-CAH-TOA",
+      "setting": "classroom",
+      "intro": "A wound care log records a roughly triangular lesion. Two of its borders measure `7.2 cm` and `10.5 cm`, and the angle between them is `115` degrees. The chart asks for the length of the third border and the surface area, so they can be tracked at the next visit. There is no right angle anywhere in this figure.",
+      "steps": [
+        {
+          "id": "t1",
+          "prompt": "Start by classifying what you were given. Which configuration is this, and which law does it call for?",
+          "choices": [
+            {
+              "text": "Side-angle-side, so use the law of cosines",
+              "next": "t2",
+              "feedback": "Correct. Two sides with the angle between them is the classic SAS case, and the law of cosines is built for exactly it.",
+              "score": 1
+            },
+            {
+              "text": "Angle-side-angle, so use the law of sines",
+              "next": "t2",
+              "feedback": "You only have one angle, not two. The law of sines also needs a side paired with a known opposite angle, and here the known angle sits between the two known sides.",
+              "score": -1
+            },
+            {
+              "text": "Right-triangle trig with SOH-CAH-TOA",
+              "next": "t2",
+              "feedback": "SOH-CAH-TOA requires a `90`-degree angle. With a `115`-degree angle in the figure, there cannot be one.",
+              "score": -1
+            },
+            {
+              "text": "Side-side-angle, the ambiguous case",
+              "next": "t2",
+              "feedback": "SSA means the known angle is NOT between the two known sides. Here it is between them, so the configuration is unambiguous.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "t2",
+          "prompt": "Set up `c^2 = a^2 + b^2 - 2ab*cos(C)` with `a = 7.2`, `b = 10.5`, `C = 115` degrees. `cos(115)` is about `-0.4226`. What happens to the last term?",
+          "choices": [
+            {
+              "text": "It becomes an addition, because the cosine is negative",
+              "next": "t3",
+              "feedback": "Exactly. `-2ab*cos(C)` with a negative cosine flips to a positive contribution, so the third side ends up longer than either given side.",
+              "score": 1
+            },
+            {
+              "text": "It stays a subtraction, since the formula has a minus sign",
+              "next": "t3",
+              "feedback": "The minus in the formula multiplies the cosine's own sign. Two negatives make a positive, so the term adds.",
+              "score": -1
+            },
+            {
+              "text": "The cosine should be entered as positive `0.4226`",
+              "next": "t3",
+              "feedback": "No. `115` degrees is obtuse, and cosine is negative for every angle between `90` and `180` degrees. Dropping that sign is the most common error in this problem.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "t3",
+          "prompt": "Compute it. `7.2^2 = 51.84`, `10.5^2 = 110.25`, and `2(7.2)(10.5) = 151.2`. What is c?",
+          "choices": [
+            {
+              "text": "About `15.1 cm`",
+              "next": "t4",
+              "feedback": "Correct. `51.84 + 110.25 = 162.09`, plus `151.2 * 0.4226 = 63.9`, gives `225.99`, and `sqrt(225.99)` is about `15.0` to `15.1 cm`.",
+              "score": 1
+            },
+            {
+              "text": "About `9.9 cm`",
+              "next": "t4",
+              "feedback": "That is what you get subtracting the `63.9` instead of adding it. It also fails the shape check: an obtuse triangle's longest side is opposite the obtuse angle, so c must exceed `10.5`.",
+              "score": -1
+            },
+            {
+              "text": "About `12.8 cm`",
+              "next": "t4",
+              "feedback": "That is `sqrt(162.09)`, the Pythagorean answer, which would only be right if the included angle were `90` degrees.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "t4",
+          "prompt": "Now the area. You have two sides and the angle between them. Which formula applies, and does the obtuse angle cause a problem?",
+          "choices": [
+            {
+              "text": "`Area = (1/2)ab*sin(C)`, and sine is positive at `115` degrees, so no problem",
+              "next": "t5",
+              "feedback": "Correct. Sine stays positive through the whole second quadrant, so an obtuse included angle never produces a negative area.",
+              "score": 1
+            },
+            {
+              "text": "Heron's formula only, since the angle is obtuse",
+              "next": "t5",
+              "feedback": "Heron's works and is a fine cross-check, but it is not required. With SAS in hand, `(1/2)ab*sin(C)` is one line.",
+              "score": 0
+            },
+            {
+              "text": "`Area = (1/2)ab*cos(C)`, which will come out negative",
+              "next": "t5",
+              "feedback": "The area formula uses sine, not cosine. Cosine would indeed go negative here, which is a hint that it is the wrong function.",
+              "score": -1
+            },
+            {
+              "text": "`Area = (1/2)*base*height`, using `10.5` as the height",
+              "next": "t5",
+              "feedback": "`10.5` is a side, not a perpendicular height. That shortcut only works when the two sides meet at `90` degrees.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "t5",
+          "prompt": "`sin(115)` is about `0.9063`. Compute the area, then decide how to verify it.",
+          "choices": [
+            {
+              "text": "About `34.3` square cm, verified with Heron's formula using `c = 15.1`",
+              "next": "end",
+              "feedback": "Correct. `(1/2)(7.2)(10.5) = 37.8`, and `37.8 * 0.9063` is about `34.3` square cm. Heron's with `s = 16.4` returns the same value, which confirms both answers at once.",
+              "score": 1
+            },
+            {
+              "text": "About `37.8` square cm",
+              "next": "end",
+              "feedback": "That is `(1/2)ab` with the sine factor left off. It is an upper bound, the area the triangle would have at a `90`-degree included angle.",
+              "score": 0
+            },
+            {
+              "text": "About `68.5` square cm",
+              "next": "end",
+              "feedback": "You omitted the one half. Doubling the correct answer is the signature of that slip.",
+              "score": -1
+            },
+            {
+              "text": "About `34.3` square cm, and no verification is needed",
+              "next": "end",
+              "feedback": "The number is right, but on a multi-step problem the cross-check costs one line and catches sign errors from the earlier cosine step.",
+              "score": 0
+            }
+          ]
+        }
+      ],
+      "debrief": "Classify before you compute. Two sides with the angle between them is side-angle-side, which means law of cosines for the missing side and `(1/2)ab*sin(C)` for the area, and both come from the same three given numbers. The trap in every obtuse problem is the sign of the cosine: between `90` and `180` degrees the cosine is negative, so the `-2ab*cos(C)` term adds and the third side grows longer than either of the others. Sine, by contrast, stays positive across that range, so area is never negative. Finish by cross-checking the area with Heron's formula, which uses your computed third side and therefore tests both results at once."
+    }
+  ]
+}

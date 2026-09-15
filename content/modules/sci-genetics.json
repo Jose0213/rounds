@@ -1,0 +1,1396 @@
+{
+  "schema": 1,
+  "id": "sci-genetics",
+  "track": "prereq",
+  "title": "Genetics",
+  "short": "Genetics",
+  "summary": "The introductory genetics course PA programs require, taught in syllabus order from DNA structure through Hardy-Weinberg, with every cross, pedigree, map distance and allele frequency worked by hand on real numbers and tied to the diseases you will actually see.",
+  "lessons": [
+    {
+      "id": "sci-genetics-l01",
+      "title": "DNA, chromosomes, replication and repair",
+      "minutes": 7,
+      "body": "Every inherited disease in this course is ultimately a change in a chemical string. Start with the string.\n\n## The molecule\n\nDNA is two strands wound into a double helix. Each strand is a chain of **nucleotides**, and each nucleotide is three parts: a deoxyribose sugar, a phosphate, and one of four bases. The sugar and phosphate form the backbone; the bases point inward and pair across the middle.\n\nPairing is fixed: **A pairs with T** by two hydrogen bonds, **G pairs with C** by three. Three bonds are harder to pull apart than two, so GC-rich stretches melt at a higher temperature. That is why a PCR primer's melting temperature depends on its GC content.\n\nThe two strands run in opposite directions (**antiparallel**). One end of a strand is the `5'` end (free phosphate), the other the `3'` end (free hydroxyl). Every DNA and RNA polymerase adds new nucleotides only to a `3'` end, so synthesis always runs `5'` to `3'`. Nearly every quirk of replication comes from that single restriction.\n\n> **Key:** A-T, G-C, antiparallel strands, synthesis `5'` to `3'` only. Four facts, and most of replication follows from them.\n\n## Packaging\n\nA human cell holds about `2 meters` of DNA in a nucleus roughly `6 micrometers` across. DNA wraps about `147` base pairs at a time around a core of eight histone proteins to make a **nucleosome**, nucleosomes coil into fibers, fibers loop and condense into a visible **chromosome** at cell division.\n\nHumans have `46` chromosomes: `22` pairs of **autosomes** plus one pair of **sex chromosomes**, `XX` in females and `XY` in males. One member of each pair came from each parent; the two members are **homologs**. A duplicated chromosome is two identical **sister chromatids** joined at the centromere.\n\n## Replication\n\nReplication is **semiconservative**: the helix opens, each old strand templates a new one, and each daughter helix ends up one old strand plus one new.\n\n1. **Helicase** unwinds the helix at a replication fork; single-strand binding proteins hold it open and topoisomerase relieves the twist ahead.\n2. **Primase** lays a short RNA primer, because polymerase cannot start a chain from nothing.\n3. **DNA polymerase** extends `5'` to `3'`. On the strand oriented the right way it runs continuously — the **leading strand**. On the other it must work backward in short pieces called **Okazaki fragments** — the **lagging strand**.\n4. Primers are removed, gaps filled, and **ligase** seals the nicks.\n\nPolymerase proofreads as it goes with a `3'` to `5'` exonuclease activity, catching most of its own errors. After proofreading and **mismatch repair**, the final error rate is about `1` mistake per `10^9` bases copied.\n\n## Repair\n\n- **Mismatch repair** fixes wrong bases left behind by replication. Inherited loss of these genes (`MLH1`, `MSH2`) causes Lynch syndrome and hereditary colon cancer.\n- **Nucleotide excision repair** cuts out bulky distortions such as ultraviolet-induced thymine dimers. Loss causes xeroderma pigmentosum: sunlight-driven skin cancer in childhood.\n- **Base excision repair** removes single damaged bases, like the products of oxidation.\n- **Double-strand break repair** uses homologous recombination, which needs `BRCA1` and `BRCA2`. Losing that pathway is why `BRCA` mutations raise breast and ovarian cancer risk.\n\n> **On the exam:** When a repair pathway is knocked out, the disease is almost always cancer. Name the pathway, name the cancer.",
+      "keyPoints": [
+        "A-T is two hydrogen bonds, G-C is three; strands are antiparallel and synthesis runs 5' to 3' only.",
+        "Humans carry 46 chromosomes: 22 autosome pairs plus XX or XY.",
+        "Replication is semiconservative, with a continuous leading strand and Okazaki fragments on the lagging strand.",
+        "Proofreading plus mismatch repair brings the error rate to about 1 in 10^9 bases.",
+        "Repair-gene loss maps to cancer syndromes: MLH1/MSH2 to Lynch, BRCA1/2 to breast and ovarian."
+      ],
+      "checks": [
+        {
+          "q": "Why does the lagging strand require Okazaki fragments?",
+          "choices": [
+            "Because the lagging strand template is shorter",
+            "Because polymerase can only add nucleotides to a 3' end, so it must work backward in pieces as the fork opens",
+            "Because ligase works only in one direction",
+            "Because the lagging strand has more GC pairs"
+          ],
+          "answer": 1,
+          "why": "Synthesis is strictly 5' to 3'. On the strand running the wrong way relative to fork movement, polymerase must repeatedly restart behind the fork, producing short fragments that ligase later joins."
+        },
+        {
+          "q": "A child develops multiple skin cancers before age 10 after minimal sun exposure. Which repair pathway is defective?",
+          "choices": [
+            "Nucleotide excision repair",
+            "Mismatch repair",
+            "Homologous recombination",
+            "Base excision repair"
+          ],
+          "answer": 0,
+          "why": "Ultraviolet light makes bulky thymine dimers, which nucleotide excision repair removes; its loss is xeroderma pigmentosum. Mismatch repair loss gives colon cancer, and homologous recombination loss gives BRCA-type breast and ovarian cancer."
+        },
+        {
+          "q": "Semiconservative replication means each daughter double helix contains what?",
+          "choices": [
+            "Two entirely new strands",
+            "Two entirely old strands",
+            "One parental strand and one newly made strand",
+            "A random mixture of old and new segments in both strands"
+          ],
+          "answer": 2,
+          "why": "Each old strand serves as a template and stays paired with its new partner. Fully new or fully old helices would be conservative or no replication at all; patchwork strands would be dispersive."
+        }
+      ]
+    },
+    {
+      "id": "sci-genetics-l02",
+      "title": "From gene to protein, and how expression is controlled",
+      "minutes": 9,
+      "body": "A gene is information. Turning it into a working protein takes two steps, and controlling when those steps happen is most of what a cell actually does.\n\n## Transcription\n\n**RNA polymerase** binds a **promoter** and copies one strand of DNA into messenger RNA (mRNA). RNA is single-stranded, uses ribose, and substitutes **uracil (U)** for thymine. The template strand is read `3'` to `5'` so the transcript grows `5'` to `3'` and matches the coding strand with U in place of T.\n\nA eukaryotic transcript is then processed before it leaves the nucleus:\n\n- a `5'` **cap** is added, which the ribosome recognizes\n- a **poly-A tail** of roughly `200` adenines is added at the `3'` end for stability\n- **introns** are spliced out and **exons** joined\n\n**Alternative splicing** lets one gene make several proteins by keeping different exon combinations. That is why roughly `20,000` human genes produce well over `100,000` proteins.\n\n## The genetic code\n\nThe ribosome reads mRNA in three-base **codons**. `4^3 = 64` codons cover `20` amino acids, so the code is **redundant** (several codons per amino acid) but never ambiguous (one codon means one thing).\n\n- `AUG` is the start codon and codes methionine.\n- `UAA`, `UAG`, `UGA` are stop codons and code nothing.\n- Redundancy sits mostly in the third base, which is why many third-position changes are silent.\n\nTransfer RNA (tRNA) carries an amino acid at one end and a three-base **anticodon** at the other, pairing with the codon. The ribosome links amino acids into a chain, then the chain folds.\n\n> **Key:** DNA to RNA to protein. Transcription copies, splicing edits, translation decodes in threes.\n\n## Regulation in bacteria: the operon\n\nBacteria group related genes under one promoter as an **operon**.\n\nThe **lac operon** carries three genes for using lactose. A repressor protein sits on the operator and blocks transcription. When lactose is present, its isomer allolactose binds the repressor, the repressor falls off, and the genes turn on. This is an **inducible** system: off by default, switched on by the substrate. Glucose adds a second layer — when glucose is plentiful, cyclic AMP falls, the CAP activator cannot bind, and transcription stays low even with lactose present.\n\nThe **trp operon** is the mirror image. Its genes build tryptophan and run by default. When tryptophan accumulates, it acts as a corepressor, activates the repressor, and shuts the operon off. This is a **repressible** system.\n\n> **Trap:** Inducible means normally off and turned on by the substrate (lac). Repressible means normally on and turned off by the product (trp). Exams swap them constantly.\n\n## Regulation in eukaryotes\n\nEukaryotes have no operons. Control is layered:\n\n- **Promoters** sit just upstream; **enhancers** can sit thousands of bases away, or in an intron, and loop around to contact the promoter. **Silencers** do the reverse.\n- **Transcription factors** bind these sequences and recruit the machinery.\n- **Chromatin** decides physical access. Histone **acetylation** loosens DNA from histones and favors transcription; **deacetylation** (by HDACs) tightens it and silences.\n- **DNA methylation** at CpG islands in a promoter generally silences the gene.\n\nMethylation and histone marks are **epigenetic**: they change expression without changing the sequence, and they can be copied to daughter cells. This is how one genome runs a neuron and a hepatocyte, and how X-inactivation silences one X in every female cell early in development.\n\n> **On the exam:** Epigenetic means heritable change in expression with the DNA sequence intact. If the sequence changed, it is a mutation, not an epigenetic effect.",
+      "keyPoints": [
+        "Transcription makes mRNA using U for T; eukaryotic transcripts get a 5' cap, a poly-A tail, and splicing.",
+        "The code has 64 codons for 20 amino acids: AUG starts, UAA/UAG/UGA stop, redundancy sits in the third base.",
+        "lac is inducible (off until lactose); trp is repressible (on until tryptophan accumulates).",
+        "Eukaryotic control is layered: enhancers, transcription factors, histone acetylation, DNA methylation.",
+        "Epigenetic marks change expression without changing sequence and survive cell division."
+      ],
+      "checks": [
+        {
+          "q": "Why can about 20,000 human genes produce more than 100,000 proteins?",
+          "choices": [
+            "Because most genes are duplicated",
+            "Because ribosomes read the same mRNA in three frames",
+            "Because alternative splicing joins different exon combinations from one transcript",
+            "Because DNA methylation rewrites codons"
+          ],
+          "answer": 2,
+          "why": "Alternative splicing keeps different subsets of exons, giving several proteins per gene. The ribosome uses only one reading frame per transcript, and methylation changes expression level, not sequence."
+        },
+        {
+          "q": "In the trp operon, tryptophan itself does what?",
+          "choices": [
+            "Inactivates the repressor so the genes are transcribed",
+            "Acts as a corepressor that activates the repressor and shuts the operon off",
+            "Binds the promoter directly as an activator",
+            "Raises cyclic AMP so CAP can bind"
+          ],
+          "answer": 1,
+          "why": "trp is repressible: the product feeds back to switch its own synthesis off. Inactivating a repressor to turn genes on describes lactose in the lac operon, and CAP with cyclic AMP is the glucose layer of lac."
+        },
+        {
+          "q": "Histone deacetylation by HDACs generally has what effect?",
+          "choices": [
+            "Tightens chromatin and silences transcription",
+            "Loosens chromatin and activates transcription",
+            "Deletes the promoter sequence",
+            "Adds a poly-A tail to the transcript"
+          ],
+          "answer": 0,
+          "why": "Acetyl groups neutralize histone charge and loosen DNA; removing them restores tight binding and blocks access. No sequence is changed, and poly-A addition is unrelated RNA processing."
+        }
+      ]
+    },
+    {
+      "id": "sci-genetics-l03",
+      "title": "Mutations and what they cost",
+      "minutes": 7,
+      "body": "A mutation is a permanent change in DNA sequence. Whether it matters depends entirely on what it does to the protein and on which cells carry it.\n\n## Germline versus somatic\n\nA **germline** mutation is present in the egg or sperm, so every cell of the resulting person carries it and it can pass to children. A **somatic** mutation arises in one body cell after conception, so only that cell's descendants carry it and it is never inherited. Most cancer mutations are somatic; cystic fibrosis and Huntington mutations are germline.\n\n> **Key:** Germline mutations run in families. Somatic mutations run in tumors.\n\n## Point mutations\n\nA **point mutation** changes one base. Name the consequence, not the chemistry:\n\n- **Silent** — the codon changes but still codes the same amino acid, usually a third-position change. No effect on protein.\n- **Missense** — one amino acid is swapped for another. Effect ranges from nothing to fatal depending on where it lands. Sickle cell disease is a single missense change: `GAG` to `GTG` in beta-globin swaps glutamate for valine at position `6`.\n- **Nonsense** — a codon becomes a stop codon, truncating the protein early. Usually severe.\n\nA **transition** swaps purine for purine or pyrimidine for pyrimidine; a **transversion** swaps a purine for a pyrimidine. Transitions are more common.\n\n## Frameshift\n\nInserting or deleting bases in a number **not divisible by three** shifts the reading frame from that point on, so every downstream codon is wrong and a premature stop usually appears. Frameshifts are typically devastating.\n\nAn in-frame deletion of exactly three bases removes one amino acid and leaves the frame intact. The most common cystic fibrosis mutation, **delta-F508**, is exactly that: three bases gone, phenylalanine missing at position `508`, protein misfolded and degraded rather than truncated.\n\n> **Trap:** A three-base deletion is a deletion but *not* a frameshift. Count whether the number divides by three before you label it.\n\nDuchenne and Becker muscular dystrophy show the rule clinically. Both are deletions in the same `DMD` gene. Out-of-frame deletions destroy dystrophin and give severe Duchenne, with wheelchair use around age `12`. In-frame deletions leave a shortened but partly working protein and give milder Becker.\n\n## Splice-site mutations\n\nThe splicing machinery recognizes short sequences at intron boundaries. A change there can cause an exon to be skipped or an intron retained, scrambling the protein even though the coding sequence itself looks normal. Certain beta-thalassemia alleles work exactly this way.\n\n## Repeat expansion\n\nSome genes contain a short repeated unit that can grow during transmission. **Huntington disease** is a `CAG` repeat in `HTT`. Under `27` repeats is normal, `27` to `35` is an intermediate zone, `36` to `39` shows reduced penetrance, and `40` or more causes disease. Longer repeats mean earlier onset.\n\nBecause the repeat tends to grow when passed on — especially through the father — symptoms appear younger in each generation. That pattern is called **anticipation**. Fragile X syndrome follows the same logic with a `CGG` repeat in `FMR1`: under `45` normal, `55` to `200` premutation, over `200` full mutation with intellectual disability.\n\n## Why the same gene gives different severity\n\nTwo patients with mutations in one gene can look completely different, because the question is always how much functional protein is left. Zero protein, a truncated protein, a misfolded protein and a slightly altered protein are four different diseases.\n\n> **On the exam:** Given a mutation, ask three questions in order. Does it change the amino acid? Does it shift the frame? Does it stop translation early? The answers give you the severity without memorizing the disease.",
+      "keyPoints": [
+        "Germline mutations are inherited and in every cell; somatic mutations are not inherited.",
+        "Silent, missense, nonsense name the protein consequence of a one-base change.",
+        "Insertions or deletions not divisible by three cause frameshifts; delta-F508 deletes three bases and does not.",
+        "Duchenne comes from out-of-frame DMD deletions, Becker from in-frame deletions of the same gene.",
+        "Huntington is a CAG repeat: 40 or more causes disease, and expansion across generations gives anticipation."
+      ],
+      "checks": [
+        {
+          "q": "A single base change converts a codon from CGA to UGA. What is this mutation called?",
+          "choices": [
+            "Silent",
+            "Missense",
+            "Nonsense",
+            "Frameshift"
+          ],
+          "answer": 2,
+          "why": "UGA is a stop codon, so translation halts early and the protein is truncated, which is nonsense. Missense would substitute a different amino acid, and a frameshift requires inserting or deleting bases."
+        },
+        {
+          "q": "Why does the delta-F508 cystic fibrosis mutation not cause a frameshift?",
+          "choices": [
+            "It deletes exactly three bases, which is divisible by three, so the reading frame is preserved",
+            "It occurs in an intron",
+            "It is a silent mutation",
+            "The protein is repaired by mismatch repair"
+          ],
+          "answer": 0,
+          "why": "Three bases equal one codon, so only one amino acid is lost and downstream codons read normally. The mutation is in coding sequence and is not silent, since the protein misfolds and is degraded."
+        },
+        {
+          "q": "A father with 41 CAG repeats in HTT has a child who develops Huntington disease at a younger age than he did. This pattern is called what?",
+          "choices": [
+            "Pleiotropy",
+            "Anticipation",
+            "Incomplete penetrance",
+            "Imprinting"
+          ],
+          "answer": 1,
+          "why": "Repeat expansion during transmission, especially paternal, produces earlier and more severe disease each generation, which is anticipation. Penetrance is whether disease appears at all, and imprinting is parent-of-origin silencing."
+        }
+      ]
+    },
+    {
+      "id": "sci-genetics-l04",
+      "title": "Mendelian crosses and the probability rules",
+      "minutes": 8,
+      "body": "Mendelian genetics is a probability course wearing a biology costume. Learn the two rules and the squares become bookkeeping.\n\n## Vocabulary, quickly\n\nA **gene** sits at a **locus**; its versions are **alleles**. Two identical alleles make a **homozygote** (`AA` or `aa`), two different alleles a **heterozygote** (`Aa`). What you carry is the **genotype**; what shows is the **phenotype**. A **dominant** allele shows in a heterozygote; a **recessive** allele shows only when homozygous.\n\nMendel's **law of segregation**: the two alleles at a locus separate in meiosis, so each gamete carries one. His **law of independent assortment**: alleles at different loci segregate independently — true only if the loci are on different chromosomes or far apart on the same one.\n\n## The two probability rules\n\n- **Product rule** — the chance that two independent things both happen is the product. Use it for \"and.\"\n- **Sum rule** — the chance that either of two mutually exclusive things happens is the sum. Use it for \"or.\"\n\n## Worked example 1: monohybrid cross\n\nTwo carriers of cystic fibrosis, both `Aa`, have a child.\n\n1. Each parent's gametes are half `A`, half `a`.\n2. Offspring: `1/4 AA`, `1/2 Aa`, `1/4 aa` — the genotype ratio `1:2:1`.\n3. Phenotype: `3/4` unaffected, `1/4` affected — the ratio `3:1`.\n4. Risk of an affected child each pregnancy is `1/4 = 25 percent`.\n5. If the child is known to be unaffected, the carrier risk is `2/3`, not `1/2`, because the `aa` box has been ruled out and two of the three remaining boxes are `Aa`.\n\n> **Trap:** That `2/3` is the single most tested number in counseling problems. Removing a possibility rescales the remaining ones.\n\n## Worked example 2: dihybrid cross\n\nCross `AaBb` by `AaBb`, two unlinked loci.\n\n1. Treat each locus separately. For locus A: `3/4` dominant phenotype, `1/4` recessive. Same for B.\n2. Both dominant: `3/4 x 3/4 = 9/16`.\n3. A dominant, B recessive: `3/4 x 1/4 = 3/16`. The reverse is also `3/16`.\n4. Both recessive: `1/4 x 1/4 = 1/16`.\n5. The classic dihybrid ratio is `9:3:3:1`.\n\nMultiplying two monohybrid results is faster and safer than drawing a 16-box square.\n\n## Worked example 3: test cross\n\nAn animal shows the dominant phenotype but you do not know if it is `AA` or `Aa`. Cross it to a homozygous recessive `aa`.\n\n1. If it is `AA`, every offspring is `Aa` and shows the dominant trait.\n2. If it is `Aa`, offspring are `1/2 Aa` and `1/2 aa`, so about half show the recessive trait.\n3. One recessive offspring proves the parent is `Aa`.\n\n## Worked example 4: binomial\n\nTwo carriers plan three children. What is the chance exactly one is affected, where `p` (affected) `= 1/4` and `q` (unaffected) `= 3/4`?\n\n1. Use `P = C(n,k) x p^k x q^(n-k)`.\n2. `C(3,1) = 3` arrangements.\n3. `p^1 = 1/4`, `q^2 = 9/16`.\n4. `P = 3 x 1/4 x 9/16 = 27/64 = 0.42`, about `42 percent`.\n\n> **Key:** Each pregnancy is independent. Three unaffected children do not lower the fourth child's `25 percent` risk. Coins have no memory and neither do gametes.\n\nThe clinical payoff is direct: cystic fibrosis, sickle cell disease and Tay-Sachs are all autosomal recessive, so two carrier parents face a `1/4` risk every pregnancy, a `1/2` chance of a carrier child, and a `1/4` chance of a child who carries nothing.",
+      "keyPoints": [
+        "Product rule for 'and', sum rule for 'or' — every cross problem is one of those two.",
+        "Monohybrid Aa x Aa gives genotypes 1:2:1 and phenotypes 3:1, so recessive risk is 1/4 per pregnancy.",
+        "An unaffected child of two carriers has a 2/3 chance of being a carrier, not 1/2.",
+        "Dihybrid AaBb x AaBb gives 9:3:3:1; multiply two monohybrid results instead of drawing 16 boxes.",
+        "Binomial: P = C(n,k) x p^k x q^(n-k); pregnancies are independent, so prior children do not change the next risk."
+      ],
+      "checks": [
+        {
+          "q": "Two cystic fibrosis carriers already have three unaffected children. What is the risk that the fourth child is affected?",
+          "choices": [
+            "1/16",
+            "1/8",
+            "1/4",
+            "0, since the risk is used up"
+          ],
+          "answer": 2,
+          "why": "Each conception is an independent event with a 1/4 risk regardless of prior outcomes. The smaller fractions come from multiplying across children, which answers a different question."
+        },
+        {
+          "q": "An unaffected sibling of a child with an autosomal recessive disease has what chance of being a carrier?",
+          "choices": [
+            "1/4",
+            "1/2",
+            "2/3",
+            "3/4"
+          ],
+          "answer": 2,
+          "why": "The four boxes are AA, Aa, Aa, aa; being unaffected removes aa, leaving three equally likely boxes of which two are carriers, so 2/3. The 1/2 answer forgets to rescale after removing aa."
+        },
+        {
+          "q": "In a cross of AaBb x AaBb with unlinked genes, what fraction shows both recessive phenotypes?",
+          "choices": [
+            "9/16",
+            "3/16",
+            "1/16",
+            "1/4"
+          ],
+          "answer": 2,
+          "why": "Each locus gives 1/4 recessive, and independent loci multiply: 1/4 x 1/4 = 1/16. The 9/16 is both dominant and 3/16 is one of each."
+        }
+      ]
+    },
+    {
+      "id": "sci-genetics-l05",
+      "title": "Reading pedigrees",
+      "minutes": 8,
+      "body": "A pedigree is a family drawn as a diagram: squares are males, circles are females, filled symbols are affected, a horizontal line is a mating, and a vertical line drops to children. Roman numerals number the generations. Your job is to name the inheritance pattern, then compute a recurrence risk.\n\n## The five patterns and their fingerprints\n\n| Pattern | Fingerprint |\n|---|---|\n| Autosomal dominant | Every affected person has an affected parent; no generation skipped; males and females equal; male-to-male transmission possible |\n| Autosomal recessive | Skips generations; affected children of unaffected parents; males and females equal; consanguinity common |\n| X-linked recessive | Mostly males; never father to son; affected males linked through carrier mothers; affected male's daughters are all carriers |\n| X-linked dominant | No father-to-son transmission; an affected father has all daughters affected and no sons affected; often more females affected |\n| Mitochondrial | Affected mother passes it to every child; affected father passes it to none |\n\n> **Key:** Father-to-son transmission rules out anything X-linked. One male-to-male pair on the page settles half the question.\n\n## Worked pedigree 1: autosomal dominant\n\nA family with Huntington disease. Generation I has one affected male. Generation II has four children, two affected, one male and one female. Each affected person in III also has an affected parent, and one affected father has an affected son.\n\n1. Both sexes affected, no skipped generations — dominant.\n2. Father-to-son transmission present — autosomal, not X-linked.\n3. Affected people are heterozygous `Aa` (homozygous dominant is rare).\n4. `Aa x aa` gives `1/2` affected. **Recurrence risk is 50 percent per child.**\n5. An unaffected `40`-year-old child of an affected parent still has a `1/2` prior risk, because Huntington onset is typically `30` to `50`.\n\n## Worked pedigree 2: autosomal recessive\n\nA child with cystic fibrosis born to two unaffected parents who are first cousins.\n\n1. Affected child, unaffected parents — recessive.\n2. Girl affected, so not X-linked recessive in the usual pattern.\n3. Both parents must be `Aa` carriers, and consanguinity supports a rare recessive allele passed down from a shared ancestor.\n4. **Recurrence risk is 1/4 per pregnancy.**\n5. Each unaffected sibling has a `2/3` chance of being a carrier.\n\n## Worked pedigree 3: X-linked recessive\n\nA family with Duchenne muscular dystrophy. Two affected boys in generation III are sons of two unaffected sisters; the sisters' maternal uncle was also affected.\n\n1. Only males affected, connected through unaffected females — X-linked recessive.\n2. The mother of an affected boy is an obligate carrier `X^A X^a`.\n3. Carrier mother by normal father: sons are `1/2` affected, daughters are `1/2` carriers and never affected.\n4. **Risk to any pregnancy is 1/4 affected; risk to a son is 1/2.**\n5. If an affected male reproduces, all of his daughters are obligate carriers and none of his sons are affected.\n\n## Worked pedigree 4: X-linked dominant and mitochondrial\n\nIn X-linked dominant disease, such as hypophosphatemic rickets, an affected father transmits to `100 percent` of daughters and `0 percent` of sons, because he gives sons his Y. An affected mother transmits to `1/2` of all children regardless of sex.\n\nIn **mitochondrial inheritance** (Leber hereditary optic neuropathy, MELAS) transmission comes only from mothers, because the egg supplies essentially all mitochondria. Every child of an affected mother inherits the variant, though severity varies with **heteroplasmy**, the proportion of mutant mitochondria in a tissue.\n\n> **Trap:** X-linked dominant and mitochondrial both show no father-to-son transmission. Separate them with the father's daughters: all affected in X-linked dominant, none affected in mitochondrial.",
+      "keyPoints": [
+        "Squares are male, circles female, filled means affected; name the pattern before computing risk.",
+        "Autosomal dominant: every generation, both sexes, male-to-male possible, 50 percent recurrence.",
+        "Autosomal recessive: skips generations, unaffected carrier parents, 1/4 recurrence, consanguinity a clue.",
+        "X-linked recessive: mostly males through carrier mothers, never father to son, affected male's daughters all carriers.",
+        "Mitochondrial: mother transmits to every child, father to none; severity varies with heteroplasmy."
+      ],
+      "checks": [
+        {
+          "q": "A pedigree shows an affected father and an affected son. Which pattern is excluded immediately?",
+          "choices": [
+            "Autosomal dominant",
+            "X-linked recessive",
+            "Autosomal recessive",
+            "Multifactorial"
+          ],
+          "answer": 1,
+          "why": "Fathers give sons a Y, not an X, so no X-linked pattern can transmit father to son. Autosomal patterns are unaffected by this observation."
+        },
+        {
+          "q": "A carrier mother for Duchenne has a son. What is the chance he is affected?",
+          "choices": [
+            "1/4",
+            "1/2",
+            "2/3",
+            "1"
+          ],
+          "answer": 1,
+          "why": "She passes either her normal X or her mutant X with equal probability, so half her sons are affected. The 1/4 figure is the risk per pregnancy before the sex is known."
+        },
+        {
+          "q": "A woman with MELAS has four children, all showing some symptoms; her affected brother has three unaffected children. What pattern is this?",
+          "choices": [
+            "X-linked dominant",
+            "Autosomal dominant with reduced penetrance",
+            "Mitochondrial",
+            "Imprinted autosomal dominant"
+          ],
+          "answer": 2,
+          "why": "Transmission from mothers to all children and from fathers to none is the mitochondrial signature. X-linked dominant would give an affected father all-affected daughters, which did not happen here."
+        }
+      ]
+    },
+    {
+      "id": "sci-genetics-l06",
+      "title": "When Mendel is not enough",
+      "minutes": 8,
+      "body": "Simple dominant and recessive covers a minority of real traits. The exceptions each have a named pattern and a disease attached.\n\n## Incomplete dominance and codominance\n\nIn **incomplete dominance** the heterozygote is intermediate — the classic red by white snapdragon giving pink. Familial hypercholesterolemia behaves this way: heterozygotes have LDL around `300 mg/dL` and heart disease in their forties, while homozygotes have LDL above `600 mg/dL` and disease in childhood.\n\nIn **codominance** both alleles are fully expressed at once, not blended. Sickle cell trait `HbAS` makes both normal and sickle hemoglobin; blood type `AB` makes both A and B antigens.\n\n> **Trap:** Pink is incomplete dominance. Type AB is codominance. Blended equals incomplete, both-visible equals codominant.\n\n## Multiple alleles: ABO\n\nA population can carry more than two alleles at a locus even though a person carries only two. ABO has three: `I^A`, `I^B`, `i`.\n\n| Genotype | Blood type |\n|---|---|\n| `I^A I^A` or `I^A i` | A |\n| `I^B I^B` or `I^B i` | B |\n| `I^A I^B` | AB |\n| `ii` | O |\n\n`I^A` and `I^B` are codominant with each other and both dominant over `i`. Worked check: a type AB parent and a type O parent can have type A or type B children, but never AB and never O.\n\n## Epistasis\n\n**Epistasis** is one gene masking another. The Bombay phenotype is the clean example: without a functional `H` gene there is no precursor for the A or B enzyme to modify, so an `hh` person types as O no matter what ABO alleles they carry. In dihybrid crosses epistasis distorts the `9:3:3:1` ratio into `9:7`, `12:3:1` or `9:3:4`.\n\n## Pleiotropy\n\n**Pleiotropy** is one gene causing many unrelated effects. Marfan syndrome comes from a single `FBN1` mutation and produces tall stature, long fingers, lens dislocation and aortic root dilation, which is the lethal part. Sickle cell disease is pleiotropic too: pain crises, stroke, splenic loss, and protection against malaria.\n\n> **Key:** Epistasis is several genes acting on one trait. Pleiotropy is one gene acting on several traits. The words point in opposite directions.\n\n## Penetrance and expressivity\n\n**Penetrance** is all-or-nothing across people: the percentage of genotype carriers who show any disease. `BRCA1` has incomplete penetrance, with roughly `55` to `72 percent` lifetime breast cancer risk rather than `100 percent`. Hereditary hemochromatosis is even lower, especially in women, who lose iron through menstruation.\n\n**Expressivity** is how severe it is in those who do show it. Neurofibromatosis type 1 has near-complete penetrance but wildly variable expressivity: one family member has a few skin spots, another has disfiguring tumors.\n\n## Imprinting\n\nSome genes are silenced depending on which parent they came from. The `15q11-q13` region shows this best:\n\n- A paternal deletion gives **Prader-Willi syndrome** — low tone at birth, hyperphagia and obesity, small hands and feet, intellectual disability.\n- A maternal deletion at the same spot gives **Angelman syndrome** — severe intellectual disability, ataxic gait, seizures, inappropriate laughter.\n\nSame deleted region, two different diseases, decided only by parent of origin.\n\n## Anticipation\n\n**Anticipation** is earlier onset and greater severity in each generation, and it means a repeat expansion until proven otherwise: Huntington `CAG`, myotonic dystrophy `CTG`, Fragile X `CGG`.\n\n> **On the exam:** Match the clue word to the mechanism. Blended equals incomplete dominance, both expressed equals codominance, masked equals epistasis, many symptoms equals pleiotropy, some carriers healthy equals reduced penetrance, variable severity equals expressivity, parent of origin equals imprinting, earlier each generation equals anticipation.",
+      "keyPoints": [
+        "Incomplete dominance blends the phenotype; codominance shows both alleles at once, as in blood type AB.",
+        "ABO has three alleles: I^A and I^B are codominant and both dominant over i.",
+        "Epistasis is one gene masking another (Bombay hh types as O); pleiotropy is one gene with many effects (Marfan, FBN1).",
+        "Penetrance is whether disease appears at all (BRCA1 about 55 to 72 percent); expressivity is how severe it is.",
+        "Imprinting at 15q11-q13 gives Prader-Willi from a paternal deletion and Angelman from a maternal one."
+      ],
+      "checks": [
+        {
+          "q": "A person with genotype hh carries I^A I^B but types as blood group O. What explains this?",
+          "choices": [
+            "Codominance",
+            "Epistasis",
+            "Incomplete penetrance",
+            "Anticipation"
+          ],
+          "answer": 1,
+          "why": "The H gene builds the precursor that A and B enzymes modify, so hh masks the ABO genotype entirely — one gene hiding another is epistasis. Codominance would show both A and B antigens."
+        },
+        {
+          "q": "A deletion of 15q11-q13 on the chromosome inherited from the father causes which syndrome?",
+          "choices": [
+            "Angelman syndrome",
+            "Prader-Willi syndrome",
+            "Cri-du-chat syndrome",
+            "Williams syndrome"
+          ],
+          "answer": 1,
+          "why": "Paternal deletion gives Prader-Willi with hyperphagia and obesity; the same deletion on the maternal chromosome gives Angelman. Cri-du-chat is a 5p deletion and unrelated."
+        },
+        {
+          "q": "Two relatives carry the same NF1 mutation, but one has only skin findings and the other has large disfiguring tumors. This illustrates what?",
+          "choices": [
+            "Variable expressivity",
+            "Reduced penetrance",
+            "Pleiotropy",
+            "Codominance"
+          ],
+          "answer": 0,
+          "why": "Both people show the disease, so penetrance is complete; they differ in severity, which is expressivity. Pleiotropy describes one gene affecting many organ systems, which NF1 also does but is not what distinguishes these two relatives."
+        }
+      ]
+    },
+    {
+      "id": "sci-genetics-l07",
+      "title": "Linkage and gene mapping",
+      "minutes": 8,
+      "body": "Independent assortment holds only when two loci sit on different chromosomes or far apart on the same one. Loci close together travel together, and measuring how often they fail to travel together is how genes were mapped long before sequencing.\n\n## Why linkage happens\n\nIn meiosis I, homologous chromosomes pair and exchange segments at a **crossover**. A crossover between two loci separates their alleles and produces a **recombinant** gamete. Loci far apart have many chances for a crossover between them and recombine near `50 percent` of the time, which is indistinguishable from independent assortment. Loci close together rarely have a crossover between them, so parental combinations dominate.\n\n> **Key:** Recombination frequency is a ruler. More distance means more crossovers means more recombinants, up to a ceiling of `50 percent`.\n\n## Map units\n\n`1 map unit (m.u.) = 1 centimorgan (cM) = 1 percent recombinant offspring`.\n\nThe formula is `RF = (number of recombinant offspring / total offspring) x 100`.\n\nAn `RF` of `50 percent` means unlinked. Any value meaningfully below `50` means linked, and smaller means closer.\n\n## Worked example 1: two-point cross\n\nA test cross of a doubly heterozygous fly `AB/ab` to `ab/ab` produces `1,000` offspring:\n\n- `410` `AB`\n- `410` `ab`\n- `90` `Ab`\n- `90` `aB`\n\n1. Identify the parental classes: the two largest, `AB` and `ab`, totaling `820`.\n2. The recombinants are the two smallest, `Ab` and `aB`, totaling `90 + 90 = 180`.\n3. `RF = 180/1000 = 0.18`.\n4. `0.18 x 100 = 18 m.u.` between A and B.\n\n> **Trap:** The parental classes are whatever the largest two are, not whatever the alleles look like alphabetically. Read the counts, not the letters.\n\n## Worked example 2: three-point cross\n\nThree loci A, B, C. A test cross gives `1,000` offspring in six classes plus two rare ones:\n\n| Class | Count |\n|---|---|\n| `ABC` and `abc` | `440` and `430` |\n| `Abc` and `aBC` | `40` and `38` |\n| `ABc` and `abC` | `24` and `22` |\n| `AbC` and `aBc` | `3` and `3` |\n\n1. The largest pair, `ABC` and `abc`, are parental.\n2. The rarest pair, `AbC` and `aBc`, are the **double crossovers**.\n3. Compare parental to double crossover: the allele that flipped position is `B`, so **B is the middle gene**. The order is A - B - C.\n4. `RF` for A to B: add the classes with a crossover between A and B, which are `Abc` + `aBC` + the double crossovers: `40 + 38 + 3 + 3 = 84`. `84/1000 = 8.4 m.u.`\n5. `RF` for B to C: `ABc` + `abC` + the doubles: `24 + 22 + 3 + 3 = 52`. `52/1000 = 5.2 m.u.`\n6. Map: A --- `8.4` --- B --- `5.2` --- C, with A to C about `13.6 m.u.`\n\nAlways add the double crossovers into both intervals; each double represents one crossover in each region.\n\n## Interference\n\nOne crossover suppresses another nearby. Expected doubles `= 0.084 x 0.052 x 1000 = 4.4`. Observed doubles `= 6`. **Coefficient of coincidence** `= observed/expected = 6/4.4 = 1.36`, and **interference** `= 1 - 1.36 = -0.36`, meaning slightly more doubles than expected here. Usually interference is positive, between `0` and `1`.\n\n## Why it matters clinically\n\nBefore a disease gene is sequenced, linkage analysis finds it: follow a marker through a large affected family and see which marker never separates from disease. That is how the Huntington locus was placed on chromosome `4` in `1983`, a decade before the gene itself was found. The same logic underlies haplotype blocks and linkage disequilibrium in modern association studies.",
+      "keyPoints": [
+        "Crossovers in meiosis I make recombinant gametes; closer loci recombine less often.",
+        "1 map unit = 1 centimorgan = 1 percent recombinants; RF = recombinants / total x 100.",
+        "An RF at or near 50 percent means the loci behave as unlinked.",
+        "In a three-point cross, the largest classes are parental and the rarest are double crossovers; the gene whose allele flips between them is the middle gene.",
+        "Add double crossovers into both intervals when computing each map distance."
+      ],
+      "checks": [
+        {
+          "q": "A test cross yields 1,000 offspring with 180 recombinants. What is the map distance?",
+          "choices": [
+            "1.8 m.u.",
+            "18 m.u.",
+            "50 m.u.",
+            "82 m.u."
+          ],
+          "answer": 1,
+          "why": "RF = 180/1000 = 0.18, and 0.18 x 100 = 18 map units. The 82 figure is the parental percentage, and 50 would mean unlinked."
+        },
+        {
+          "q": "In a three-point cross, how do you identify the middle gene?",
+          "choices": [
+            "It is the gene with the highest recombination frequency",
+            "It is the gene present in the largest offspring class",
+            "It is the gene whose allele arrangement differs between the parental class and the double-crossover class",
+            "It is always the gene listed second in the problem"
+          ],
+          "answer": 2,
+          "why": "A double crossover flips only the middle marker relative to the parental arrangement, so comparing the two rarest classes with the two largest reveals it. Class size alone identifies parentals, not order."
+        },
+        {
+          "q": "Two loci show a recombination frequency of 50 percent. What does that mean?",
+          "choices": [
+            "They are tightly linked",
+            "They assort independently, as if unlinked",
+            "The data must be an error",
+            "They are 50 base pairs apart"
+          ],
+          "answer": 1,
+          "why": "Fifty percent recombinants is exactly what independent assortment produces, so the loci are either on different chromosomes or far apart on the same one. Map units are percent recombinants, not base pairs."
+        }
+      ]
+    },
+    {
+      "id": "sci-genetics-l08",
+      "title": "Chromosomal abnormalities and karyotypes",
+      "minutes": 8,
+      "body": "Some disease comes not from one wrong base but from whole chunks of chromosome in the wrong number or the wrong place. These are visible under a microscope, which is why they were the first human genetic diseases described.\n\n## Karyotype notation\n\nWrite the total chromosome number, then the sex chromosomes, then what is unusual.\n\n| Notation | Meaning |\n|---|---|\n| `46,XY` | Normal male |\n| `47,XX,+21` | Female with an extra chromosome 21, Down syndrome |\n| `45,X` | Turner syndrome |\n| `47,XXY` | Klinefelter syndrome |\n| `46,XX,del(5p)` | Female with a short-arm deletion of chromosome 5 |\n| `46,XY,t(9;22)` | Male with a translocation between 9 and 22 |\n\n`p` is the short arm, `q` the long arm. **Euploid** means a normal multiple of the haploid set; **aneuploid** means an abnormal number, such as trisomy or monosomy.\n\n## Nondisjunction\n\n**Nondisjunction** is failure of chromosomes to separate. In meiosis I the homologs fail to separate; in meiosis II the sister chromatids do. Either way one gamete gets two copies and one gets none, so fertilization gives a trisomy or a monosomy.\n\nMaternal nondisjunction rises sharply with age, because oocytes sit arrested in prophase I from before birth until ovulation. Risk of Down syndrome is roughly `1 in 1,500` at maternal age `20`, `1 in 900` at `30`, `1 in 350` at `35`, and `1 in 100` at `40`.\n\n> **Key:** Autosomal monosomy is essentially always lethal in utero. Only trisomies `21`, `18` and `13` reach live birth with any frequency, and sex chromosome aneuploidies are far better tolerated.\n\n## The trisomies\n\n- **Trisomy 21 (Down syndrome)**, about `1 in 700` births. Flat facial profile, upslanting palpebral fissures, single palmar crease, hypotonia, intellectual disability, `40 to 50 percent` congenital heart disease (endocardial cushion defects), duodenal atresia, early Alzheimer disease.\n- **Trisomy 18 (Edwards syndrome)**, about `1 in 6,000`. Clenched hands with overlapping fingers, rocker-bottom feet, small jaw, severe heart defects. Most die within the first year.\n- **Trisomy 13 (Patau syndrome)**, about `1 in 10,000`. Midline defects: cleft lip and palate, holoprosencephaly, polydactyly, severe heart defects. Median survival is days to weeks.\n\n## Sex chromosome aneuploidy\n\n- **Turner syndrome, `45,X`**, about `1 in 2,500` female births. Short stature, webbed neck, streak ovaries with primary amenorrhea and infertility, coarctation of the aorta or bicuspid valve. Intelligence is usually normal. Most `45,X` conceptions miscarry.\n- **Klinefelter syndrome, `47,XXY`**, about `1 in 600` male births. Tall with long limbs, small firm testes, low testosterone, gynecomastia, infertility. Often diagnosed only during an infertility workup.\n\n## Deletions\n\n- **22q11.2 deletion (DiGeorge)** — cardiac outflow defects, absent or small thymus with T-cell deficiency, hypocalcemia from missing parathyroids, cleft palate, characteristic face.\n- **5p deletion (cri-du-chat)** — high-pitched catlike cry in infancy, microcephaly, intellectual disability.\n\n## Translocations\n\nA **balanced translocation** swaps segments between chromosomes with no net gain or loss. The carrier is healthy but makes unbalanced gametes, so the clue is recurrent miscarriage.\n\nA **Robertsonian translocation** fuses the long arms of two acrocentric chromosomes (`13`, `14`, `15`, `21`, `22`) and discards the short arms. A carrier has `45` chromosomes and is normal. A `rob(14;21)` carrier has a substantially raised risk of a child with translocation Down syndrome — and that child's karyotype reads `46` chromosomes, not `47`.\n\n> **Trap:** Translocation Down syndrome is the one form that recurs in families and does not depend on maternal age. Always karyotype the parents when a baby with Down syndrome has `46` chromosomes.\n\nAcquired translocations matter too: `t(9;22)`, the Philadelphia chromosome, creates the `BCR-ABL` fusion that drives chronic myeloid leukemia and is the target of imatinib.",
+      "keyPoints": [
+        "Karyotype notation: total count, sex chromosomes, then the abnormality — 47,XX,+21 is Down syndrome.",
+        "Nondisjunction produces trisomy or monosomy; maternal risk climbs from about 1 in 1,500 at age 20 to 1 in 100 at age 40.",
+        "Trisomy 21 is about 1 in 700 with heart defects in 40 to 50 percent; trisomy 18 and 13 are rarer and usually lethal in infancy.",
+        "Turner is 45,X with short stature and streak ovaries; Klinefelter is 47,XXY with tall stature and infertility.",
+        "Robertsonian translocation carriers have 45 chromosomes and are healthy, but can have children with translocation Down syndrome carrying 46."
+      ],
+      "checks": [
+        {
+          "q": "A newborn has Down syndrome features and a karyotype of 46,XY,der(14;21). What should happen next?",
+          "choices": [
+            "Nothing; this is standard trisomy 21 from nondisjunction",
+            "Karyotype both parents, since one may carry a balanced Robertsonian translocation",
+            "Repeat the karyotype, since 46 chromosomes excludes Down syndrome",
+            "Measure maternal age-specific risk only"
+          ],
+          "answer": 1,
+          "why": "A count of 46 with Down syndrome features means translocation, which can come from a healthy balanced carrier parent and carries a high recurrence risk. Standard nondisjunction trisomy 21 would read 47,XY,+21."
+        },
+        {
+          "q": "A 16-year-old girl has never menstruated, is 4 feet 8 inches tall, and has a webbed neck and a bicuspid aortic valve. What karyotype is expected?",
+          "choices": [
+            "45,X",
+            "47,XXY",
+            "47,XX,+21",
+            "46,XX,del(5p)"
+          ],
+          "answer": 0,
+          "why": "Short stature, webbed neck, primary amenorrhea and left-sided heart lesions are Turner syndrome, 45,X. 47,XXY affects males, and the other two have distinct recognizable features."
+        },
+        {
+          "q": "Why does maternal age increase the risk of trisomy?",
+          "choices": [
+            "Older eggs carry more point mutations",
+            "Oocytes are arrested in prophase I for decades, and the machinery holding homologs together degrades over time",
+            "Older mothers have more X-inactivation errors",
+            "Sperm quality declines in the partner"
+          ],
+          "answer": 1,
+          "why": "Prolonged meiotic arrest makes nondisjunction more likely with age. Point mutation rate actually rises with paternal age, and X-inactivation is unrelated to chromosome counting."
+        }
+      ]
+    },
+    {
+      "id": "sci-genetics-l09",
+      "title": "Population genetics and complex traits",
+      "minutes": 9,
+      "body": "Mendel predicts a family. Hardy-Weinberg predicts a population: given how common a disease is, how many carriers are walking around?\n\n## The equations\n\nFor one locus with two alleles, let `p` be the frequency of the common allele and `q` the frequency of the rare one.\n\n- `p + q = 1`\n- `p^2 + 2pq + q^2 = 1`\n\nHere `p^2` is homozygous dominant, `2pq` is heterozygous carriers, and `q^2` is homozygous recessive.\n\nThe equation holds when five conditions are met: no selection, no mutation, no migration, random mating, and a large population. Real populations violate these, but the approximation is close enough to counsel with.\n\n## Worked example 1: cystic fibrosis\n\nCystic fibrosis affects about `1 in 2,500` people of Northern European ancestry.\n\n1. Affected are `q^2`, so `q^2 = 1/2500 = 0.0004`.\n2. `q = sqrt(0.0004) = 0.02`.\n3. `p = 1 - 0.02 = 0.98`.\n4. Carrier frequency `= 2pq = 2 x 0.98 x 0.02 = 0.039`, about `4 percent`, or roughly `1 in 25`.\n5. Sanity check: carriers outnumber affected people about `100` to `1`. For any rare recessive, that is the expected shape.\n\n> **Key:** For rare alleles `p` is close to `1`, so carrier frequency is approximately `2q`. Take the square root of the disease frequency and double it.\n\n## Worked example 2: sickle cell\n\nSickle cell disease affects about `1 in 400` African American births.\n\n1. `q^2 = 1/400 = 0.0025`, so `q = sqrt(0.0025) = 0.05`.\n2. `2pq = 2 x 0.95 x 0.05 = 0.095`, about `1 in 10.5` carrying sickle cell trait.\n3. Two carriers have a `1/4` risk per pregnancy, so the population risk that a random couple is both carriers and has an affected child is `0.095 x 0.095 x 0.25 = 0.0023`, near the observed `1/400`.\n\n## Worked example 3: X-linked\n\nFor X-linked traits, males have one X, so **male frequency equals `q` directly**.\n\n1. Red-green color blindness affects about `8 percent` of males, so `q = 0.08`.\n2. Affected females are `q^2 = 0.0064`, about `0.64 percent`.\n3. Female carriers are `2pq = 2 x 0.92 x 0.08 = 0.147`, about `15 percent`.\n\n> **Trap:** Do not square anything for affected males. The single X is the whole genotype.\n\n## What breaks equilibrium\n\n- **Selection** removes or favors genotypes. **Heterozygote advantage** keeps harmful alleles common: sickle trait resists falciparum malaria, and that is why `q` stays near `0.05` in populations from malarial regions.\n- **Genetic drift** is random change in allele frequency, strong in small populations and negligible in large ones.\n- **Founder effect** is a new population started by a few individuals carrying an unrepresentative allele mix — Tay-Sachs among Ashkenazi Jews, Ellis-van Creveld among the Amish.\n- **Bottleneck** is a crash that leaves a small, unrepresentative survivor pool.\n- **Consanguinity** does not change allele frequencies, but it raises homozygosity, so rare recessive disease becomes more likely. First cousins share `1/8` of their genes, and their children face roughly a `2 to 3 percent` added risk of a serious recessive condition on top of the `3 percent` population baseline.\n\n## Quantitative and multifactorial traits\n\nHeight, blood pressure and blood glucose are **polygenic**: many loci each contribute a little, so the distribution is a bell curve rather than categories.\n\n**Heritability** `h^2` is the share of variation in a population explained by genetic variation, from `0` to `1`. Height is about `0.8`. Heritability describes a population, never an individual, and says nothing about whether an intervention would work.\n\n**Threshold traits** are multifactorial but appear all-or-nothing: cleft lip, pyloric stenosis, neural tube defects, club foot. Liability is continuous; disease appears once the threshold is crossed. Recurrence risk in a first-degree relative is typically `3` to `5 percent`, higher when the affected relative is of the less commonly affected sex or has severe disease.",
+      "keyPoints": [
+        "p + q = 1 and p^2 + 2pq + q^2 = 1, with 2pq the carriers and q^2 the affected.",
+        "Cystic fibrosis at 1 in 2,500 gives q = 0.02 and a carrier frequency near 1 in 25.",
+        "For X-linked traits the affected male frequency equals q, so do not square it.",
+        "Heterozygote advantage keeps sickle trait common at about q = 0.05 because it resists malaria.",
+        "Multifactorial threshold traits carry roughly a 3 to 5 percent recurrence risk in first-degree relatives."
+      ],
+      "checks": [
+        {
+          "q": "A recessive disease affects 1 in 10,000 people. What is the approximate carrier frequency?",
+          "choices": [
+            "1 in 50",
+            "1 in 100",
+            "1 in 200",
+            "1 in 5,000"
+          ],
+          "answer": 0,
+          "why": "q^2 = 0.0001 so q = 0.01, and 2pq is about 2 x 0.01 = 0.02, which is 1 in 50. The 1 in 100 answer is q itself, not the carrier frequency."
+        },
+        {
+          "q": "Hemophilia A affects about 1 in 5,000 males. What is the allele frequency q?",
+          "choices": [
+            "sqrt(1/5000) = 0.014",
+            "1/5000 = 0.0002",
+            "2 x 1/5000 = 0.0004",
+            "1 - 1/5000"
+          ],
+          "answer": 1,
+          "why": "Males are hemizygous, so the affected male frequency is q directly with no square root. Taking the square root is the autosomal recessive step and is the classic error here."
+        },
+        {
+          "q": "Why does sickle cell remain common in some populations despite being lethal when homozygous?",
+          "choices": [
+            "Genetic drift in large populations",
+            "A high new mutation rate",
+            "Heterozygote advantage against falciparum malaria",
+            "Nonrandom mating alone"
+          ],
+          "answer": 2,
+          "why": "Carriers survive malaria better, so selection preserves the allele even though homozygotes suffer. Drift is weak in large populations and mutation rates are far too low to maintain q near 0.05."
+        }
+      ]
+    },
+    {
+      "id": "sci-genetics-l10",
+      "title": "Genetic testing, pharmacogenomics and counseling",
+      "minutes": 8,
+      "body": "Everything so far becomes clinical at one moment: someone orders a test and someone has to explain the result.\n\n## Who is being tested, and why\n\n- **Carrier screening** tests healthy adults for recessive alleles before or during pregnancy. Expanded panels now cover more than `100` conditions; cystic fibrosis, spinal muscular atrophy and hemoglobinopathies are standard. A negative result lowers risk but never zeroes it, because no panel covers every variant — that leftover risk is the **residual risk**.\n- **Diagnostic testing** confirms a suspected condition in a symptomatic patient.\n- **Predictive testing** is done on a healthy person at risk, such as `HTT` testing in an adult whose parent has Huntington disease. Guidelines call for pretest counseling and generally defer testing in minors when no childhood intervention exists.\n- **Newborn screening** is a public health program, not a diagnostic test. Every state screens a heel-stick blood spot; New Jersey screens for more than `60` conditions including phenylketonuria, congenital hypothyroidism, sickle cell disease, cystic fibrosis and SCID. A positive screen means confirmatory testing, not a diagnosis.\n\n> **Key:** Screening sorts a population into higher and lower risk. Diagnosis answers yes or no in one patient. Never report a screen as a diagnosis.\n\n## Prenatal testing\n\n| Test | Timing | What it is |\n|---|---|---|\n| NIPT (cell-free DNA) | from `10` weeks | Screening on maternal blood; detects over `99 percent` of trisomy 21 with no procedure risk |\n| Chorionic villus sampling | `10` to `13` weeks | Diagnostic; placental tissue; miscarriage risk about `1 in 200` |\n| Amniocentesis | `15` to `20` weeks | Diagnostic; fetal cells in amniotic fluid; miscarriage risk about `1 in 400` |\n\nNIPT has a high detection rate but its **positive predictive value falls sharply in low-risk young patients**, exactly as prevalence theory predicts. A positive NIPT always needs CVS or amniocentesis for confirmation.\n\n> **Trap:** NIPT is a screen. Calling it a diagnosis is the most common error in prenatal counseling, and it can lead to irreversible decisions on a false positive.\n\n## Pharmacogenomics\n\nInherited variation in drug-handling enzymes changes dose and safety.\n\n- **`CYP2C19` and clopidogrel** — clopidogrel is a prodrug that `CYP2C19` must activate. Poor metabolizers get little antiplatelet effect and have more stent thrombosis, so an alternative such as prasugrel or ticagrelor is used.\n- **`TPMT` and `NUDT15`** — these clear thiopurines like azathioprine and 6-mercaptopurine. Low activity means severe, sometimes fatal myelosuppression at standard doses, so test before starting and reduce the dose.\n- **`HLA-B*5701` and abacavir** — carriers develop a potentially fatal hypersensitivity reaction. Testing before prescribing is mandatory.\n- **`CYP2D6` and codeine** — ultrarapid metabolizers convert codeine to morphine too fast, which has killed breastfeeding infants and children after tonsillectomy.\n\n## Counseling and ethics\n\nGenetic counseling is **nondirective**: lay out risks, options and consequences, and support the patient's own decision rather than recommending one. Informed consent covers what the test can and cannot find, including **variants of uncertain significance** and **incidental findings**.\n\nThe **Genetic Information Nondiscrimination Act (GINA)** of `2008` bars health insurers and employers from using genetic information. It does **not** cover life, disability or long-term care insurance, and it does not apply to employers with fewer than `15` employees. Patients considering predictive testing should hear that gap before they test.\n\n> **On shift:** A family that just got a result is usually not absorbing anything after the first sentence. Give the result plainly, stop talking, and let the questions come.\n\n## The diseases to keep straight\n\nCystic fibrosis and sickle cell are autosomal recessive with carrier screening available. Huntington is autosomal dominant with predictive testing and anticipation. Duchenne is X-linked recessive. `BRCA1` and `BRCA2` are dominant with incomplete penetrance. Hereditary hemochromatosis (`HFE C282Y`) is recessive with low penetrance. Marfan (`FBN1`) is dominant and pleiotropic. Down syndrome is chromosomal, usually from nondisjunction.",
+      "keyPoints": [
+        "Screening sorts risk; diagnosis answers one patient; a positive newborn screen or NIPT always needs confirmation.",
+        "NIPT is screening from 10 weeks; CVS at 10 to 13 weeks and amniocentesis at 15 to 20 weeks are diagnostic with about 1 in 200 and 1 in 400 loss risk.",
+        "CYP2C19 poor metabolizers get little benefit from clopidogrel; TPMT or NUDT15 deficiency causes thiopurine myelosuppression.",
+        "HLA-B*5701 must be tested before abacavir; CYP2D6 ultrarapid metabolizers are endangered by codeine.",
+        "GINA covers health insurance and employment only, not life, disability or long-term care insurance."
+      ],
+      "checks": [
+        {
+          "q": "A 24-year-old with no risk factors has a positive NIPT result for trisomy 21. What is the correct next step?",
+          "choices": [
+            "Report it as a confirmed diagnosis",
+            "Repeat the NIPT in four weeks",
+            "Offer diagnostic testing by CVS or amniocentesis",
+            "No further testing is needed if the fetal fraction was adequate"
+          ],
+          "answer": 2,
+          "why": "NIPT is a screening test whose positive predictive value is low in young low-risk patients, so confirmation with a diagnostic karyotype is required. Repeating a screen does not convert it into a diagnosis."
+        },
+        {
+          "q": "Before starting azathioprine, which enzyme activity should be assessed?",
+          "choices": [
+            "CYP2C19",
+            "TPMT",
+            "CYP2D6",
+            "HLA-B*5701"
+          ],
+          "answer": 1,
+          "why": "TPMT (and NUDT15) clears thiopurines, and low activity causes severe myelosuppression at standard doses. CYP2C19 concerns clopidogrel, CYP2D6 codeine, and HLA-B*5701 abacavir."
+        },
+        {
+          "q": "A patient considering predictive Huntington testing asks whether results can be used against them. What is accurate?",
+          "choices": [
+            "GINA protects them fully in all insurance types",
+            "GINA bars use by health insurers and employers, but not by life, disability or long-term care insurers",
+            "GINA applies only to federal employees",
+            "No federal protection exists"
+          ],
+          "answer": 1,
+          "why": "GINA of 2008 covers health insurance and employment, with an exception for employers under 15 employees, and leaves life, disability and long-term care insurance unprotected. Claiming full protection or none at all both mislead the patient."
+        }
+      ]
+    }
+  ],
+  "cards": [
+    { "id": "sci-genetics-c001", "front": "How many hydrogen bonds hold A-T together versus G-C?", "back": "A-T has two hydrogen bonds, G-C has three. GC-rich DNA therefore needs more heat to separate, which is why primer melting temperature rises with GC content.", "lesson": "sci-genetics-l01" },
+    { "id": "sci-genetics-c002", "front": "In which direction does every DNA and RNA polymerase build a new strand?", "back": "Only 5' to 3', adding each nucleotide to a free 3' hydroxyl. This one restriction explains primers, the leading strand, and Okazaki fragments.", "lesson": "sci-genetics-l01" },
+    { "id": "sci-genetics-c003", "front": "What does semiconservative replication mean?", "back": "Each daughter double helix contains one original parental strand and one newly synthesized strand.", "lesson": "sci-genetics-l01" },
+    { "id": "sci-genetics-c004", "front": "How many chromosomes do humans carry, and how are they divided?", "back": "46 total: 22 pairs of autosomes plus one pair of sex chromosomes, XX in females and XY in males.", "lesson": "sci-genetics-l01" },
+    { "id": "sci-genetics-c005", "front": "What is the error rate of DNA replication after proofreading and mismatch repair?", "back": "About 1 error per 10^9 bases copied. Polymerase proofreads with a 3' to 5' exonuclease, then mismatch repair catches most of what slips through.", "lesson": "sci-genetics-l01" },
+    { "id": "sci-genetics-c006", "front": "Which repair pathway fails in Lynch syndrome, and which in xeroderma pigmentosum?", "back": "Lynch syndrome is mismatch repair (MLH1, MSH2) causing colon cancer. Xeroderma pigmentosum is nucleotide excision repair, causing childhood skin cancer from ultraviolet thymine dimers.", "lesson": "sci-genetics-l01" },
+    { "id": "sci-genetics-c007", "front": "What repair job do BRCA1 and BRCA2 perform?", "back": "Homologous recombination repair of double-strand breaks. Losing that pathway leaves breaks repaired badly, raising breast and ovarian cancer risk.", "lesson": "sci-genetics-l01" },
+    { "id": "sci-genetics-c008", "front": "How does RNA differ chemically from DNA?", "back": "RNA is single-stranded, uses ribose instead of deoxyribose, and substitutes uracil for thymine.", "lesson": "sci-genetics-l02" },
+    { "id": "sci-genetics-c009", "front": "What three modifications does a eukaryotic mRNA get before leaving the nucleus?", "back": "A 5' cap, a poly-A tail of roughly 200 adenines, and splicing that removes introns and joins exons.", "lesson": "sci-genetics-l02" },
+    { "id": "sci-genetics-c010", "front": "How many codons exist, and what do they encode?", "back": "64 codons encode 20 amino acids plus start and stop. The code is redundant but unambiguous, with most redundancy in the third base.", "lesson": "sci-genetics-l02" },
+    { "id": "sci-genetics-c011", "front": "Name the start codon and the three stop codons.", "back": "AUG starts and codes methionine. UAA, UAG and UGA are stops and code no amino acid.", "lesson": "sci-genetics-l02" },
+    { "id": "sci-genetics-c012", "front": "How can roughly 20,000 genes produce over 100,000 proteins?", "back": "Alternative splicing keeps different combinations of exons from the same transcript, so one gene yields several distinct proteins.", "lesson": "sci-genetics-l02" },
+    { "id": "sci-genetics-c013", "front": "Is the lac operon inducible or repressible, and what flips it?", "back": "Inducible: off by default. Allolactose binds and inactivates the repressor, turning the genes on. High glucose lowers cyclic AMP, blocking CAP and keeping output low.", "lesson": "sci-genetics-l02" },
+    { "id": "sci-genetics-c014", "front": "Is the trp operon inducible or repressible, and what flips it?", "back": "Repressible: on by default. Accumulated tryptophan acts as a corepressor, activates the repressor, and shuts transcription off.", "lesson": "sci-genetics-l02" },
+    { "id": "sci-genetics-c015", "front": "What do histone acetylation and DNA methylation do to gene expression?", "back": "Acetylation loosens chromatin and activates transcription; deacetylation by HDACs silences it. Promoter CpG methylation generally silences a gene. Both are epigenetic, leaving sequence unchanged.", "lesson": "sci-genetics-l02" },
+    { "id": "sci-genetics-c016", "front": "What is the difference between a germline and a somatic mutation?", "back": "Germline mutations are in egg or sperm, present in every cell and heritable. Somatic mutations arise after conception in one cell line and are never passed to children.", "lesson": "sci-genetics-l03" },
+    { "id": "sci-genetics-c017", "front": "Define silent, missense and nonsense mutations.", "back": "Silent changes the codon but not the amino acid. Missense swaps one amino acid for another. Nonsense creates a premature stop codon and truncates the protein.", "lesson": "sci-genetics-l03" },
+    { "id": "sci-genetics-c018", "front": "What exact change causes sickle cell disease?", "back": "A single missense point mutation in beta-globin, GAG to GTG, replacing glutamate with valine at position 6.", "lesson": "sci-genetics-l03" },
+    { "id": "sci-genetics-c019", "front": "When does an insertion or deletion cause a frameshift?", "back": "When the number of bases is not divisible by three. Every downstream codon is then misread, usually ending in a premature stop.", "lesson": "sci-genetics-l03" },
+    { "id": "sci-genetics-c020", "front": "Why is delta-F508 not a frameshift?", "back": "It deletes exactly three bases, one codon, so phenylalanine 508 is lost but the reading frame is preserved. The protein misfolds and is degraded rather than truncated.", "lesson": "sci-genetics-l03" },
+    { "id": "sci-genetics-c021", "front": "What distinguishes Duchenne from Becker muscular dystrophy at the DNA level?", "back": "Both are DMD gene deletions. Out-of-frame deletions abolish dystrophin and cause severe Duchenne; in-frame deletions leave a partly functional protein and cause milder Becker.", "lesson": "sci-genetics-l03" },
+    { "id": "sci-genetics-c022", "front": "How many CAG repeats in HTT cause Huntington disease?", "back": "40 or more is fully penetrant; 36 to 39 is reduced penetrance; 27 to 35 is intermediate; under 27 is normal. Longer repeats mean earlier onset.", "lesson": "sci-genetics-l03" },
+    { "id": "sci-genetics-c023", "front": "State Mendel's laws of segregation and independent assortment.", "back": "Segregation: the two alleles at a locus separate in meiosis so each gamete gets one. Independent assortment: alleles at different loci segregate independently, true only for unlinked loci.", "lesson": "sci-genetics-l04" },
+    { "id": "sci-genetics-c024", "front": "When do you use the product rule versus the sum rule?", "back": "Product rule for 'and' — multiply probabilities of independent events. Sum rule for 'or' — add probabilities of mutually exclusive events.", "lesson": "sci-genetics-l04" },
+    { "id": "sci-genetics-c025", "front": "What genotype and phenotype ratios come from Aa x Aa?", "back": "Genotypes 1 AA : 2 Aa : 1 aa. Phenotypes 3 dominant : 1 recessive, so a 1/4 chance of an affected child each pregnancy.", "lesson": "sci-genetics-l04" },
+    { "id": "sci-genetics-c026", "front": "An unaffected child of two carriers has what chance of being a carrier?", "back": "2/3. Being unaffected eliminates the aa box, leaving AA, Aa, Aa, and two of those three are carriers.", "lesson": "sci-genetics-l04" },
+    { "id": "sci-genetics-c027", "front": "What phenotype ratio comes from AaBb x AaBb with unlinked genes?", "back": "9:3:3:1 — 9/16 both dominant, 3/16 each single dominant, 1/16 both recessive. Get it by multiplying two 3:1 monohybrid results.", "lesson": "sci-genetics-l04" },
+    { "id": "sci-genetics-c028", "front": "What is a test cross and what does it reveal?", "back": "Crossing an unknown dominant phenotype to a homozygous recessive. If any offspring shows the recessive trait, the unknown parent was heterozygous.", "lesson": "sci-genetics-l04" },
+    { "id": "sci-genetics-c029", "front": "Two carriers plan three children. Chance exactly one is affected?", "back": "P = C(3,1) x (1/4)^1 x (3/4)^2 = 3 x 1/4 x 9/16 = 27/64, about 42 percent.", "lesson": "sci-genetics-l04" },
+    { "id": "sci-genetics-c030", "front": "What pedigree finding immediately excludes X-linked inheritance?", "back": "Father-to-son transmission. A father gives his son a Y chromosome, so no X-linked allele can travel that route.", "lesson": "sci-genetics-l05" },
+    { "id": "sci-genetics-c031", "front": "List the fingerprints of autosomal dominant inheritance.", "back": "Every affected person has an affected parent, no generations skipped, both sexes equally affected, male-to-male transmission possible, and a 50 percent recurrence risk per child.", "lesson": "sci-genetics-l05" },
+    { "id": "sci-genetics-c032", "front": "List the fingerprints of autosomal recessive inheritance.", "back": "Generations are skipped, affected children come from unaffected carrier parents, both sexes affected equally, consanguinity is a clue, and recurrence risk is 1/4.", "lesson": "sci-genetics-l05" },
+    { "id": "sci-genetics-c033", "front": "In X-linked recessive disease, what are the risks from a carrier mother?", "back": "Half of sons affected, half of daughters carriers, none of the daughters affected. Overall 1/4 of pregnancies produce an affected child.", "lesson": "sci-genetics-l05" },
+    { "id": "sci-genetics-c034", "front": "What happens to the children of a male affected by an X-linked recessive disease?", "back": "All of his daughters are obligate carriers and none of his sons are affected, since sons receive his Y.", "lesson": "sci-genetics-l05" },
+    { "id": "sci-genetics-c035", "front": "How do you tell X-linked dominant from mitochondrial inheritance?", "back": "Look at an affected father. In X-linked dominant all his daughters are affected and no sons. In mitochondrial inheritance none of his children are affected.", "lesson": "sci-genetics-l05" },
+    { "id": "sci-genetics-c036", "front": "What is heteroplasmy?", "back": "The mix of normal and mutant mitochondrial DNA within a cell or tissue. A higher mutant proportion means more severe disease, which is why mitochondrial severity varies within a family.", "lesson": "sci-genetics-l05" },
+    { "id": "sci-genetics-c037", "front": "What is the difference between incomplete dominance and codominance?", "back": "Incomplete dominance blends: the heterozygote is intermediate, like pink flowers. Codominance expresses both alleles fully at once, like blood type AB or sickle cell trait.", "lesson": "sci-genetics-l06" },
+    { "id": "sci-genetics-c038", "front": "Which ABO genotypes give each blood type?", "back": "I^A I^A or I^A i give A; I^B I^B or I^B i give B; I^A I^B gives AB; ii gives O. I^A and I^B are codominant and both dominant over i.", "lesson": "sci-genetics-l06" },
+    { "id": "sci-genetics-c039", "front": "What is the Bombay phenotype and which principle does it show?", "back": "An hh individual cannot build the H precursor, so they type as O regardless of ABO genotype. It is epistasis: one gene masking another.", "lesson": "sci-genetics-l06" },
+    { "id": "sci-genetics-c040", "front": "Epistasis versus pleiotropy: which is which?", "back": "Epistasis is several genes affecting one trait, with one masking another. Pleiotropy is one gene producing many unrelated effects, as FBN1 does in Marfan syndrome.", "lesson": "sci-genetics-l06" },
+    { "id": "sci-genetics-c041", "front": "Penetrance versus expressivity?", "back": "Penetrance is the percentage of carriers who show any disease at all, like BRCA1 at roughly 55 to 72 percent. Expressivity is how severely it shows in those affected, as in NF1.", "lesson": "sci-genetics-l06" },
+    { "id": "sci-genetics-c042", "front": "Which syndrome follows a paternal 15q11-q13 deletion, and which a maternal one?", "back": "Paternal deletion gives Prader-Willi: hypotonia at birth, hyperphagia, obesity. Maternal deletion gives Angelman: severe intellectual disability, ataxia, seizures, inappropriate laughter.", "lesson": "sci-genetics-l06" },
+    { "id": "sci-genetics-c043", "front": "Which mechanism should you suspect when disease appears earlier in each generation?", "back": "Trinucleotide repeat expansion, called anticipation. Examples are Huntington CAG, myotonic dystrophy CTG, and Fragile X CGG.", "lesson": "sci-genetics-l06" },
+    { "id": "sci-genetics-c044", "front": "What produces a recombinant gamete?", "back": "A crossover between the two loci during meiosis I, which swaps segments between homologous chromosomes and breaks up the parental allele combination.", "lesson": "sci-genetics-l07" },
+    { "id": "sci-genetics-c045", "front": "Define one map unit.", "back": "1 map unit = 1 centimorgan = 1 percent recombinant offspring. RF = (recombinants / total offspring) x 100.", "lesson": "sci-genetics-l07" },
+    { "id": "sci-genetics-c046", "front": "What does a recombination frequency of 50 percent tell you?", "back": "The loci assort independently, either on different chromosomes or so far apart that crossovers happen between them essentially every meiosis. 50 percent is the ceiling.", "lesson": "sci-genetics-l07" },
+    { "id": "sci-genetics-c047", "front": "A test cross gives 410 AB, 410 ab, 90 Ab, 90 aB. What is the map distance?", "back": "Recombinants are the two smallest classes: 90 + 90 = 180. RF = 180/1000 = 0.18, so 18 map units.", "lesson": "sci-genetics-l07" },
+    { "id": "sci-genetics-c048", "front": "In a three-point cross, which classes are parental and which are double crossovers?", "back": "The two largest classes are parental; the two rarest are the double crossovers. The marker whose position flips between them is the middle gene.", "lesson": "sci-genetics-l07" },
+    { "id": "sci-genetics-c049", "front": "When computing map distances in a three-point cross, what happens to the double crossovers?", "back": "They are added into both intervals, because each double crossover represents one crossover in each region. Leaving them out underestimates both distances.", "lesson": "sci-genetics-l07" },
+    { "id": "sci-genetics-c050", "front": "How are coefficient of coincidence and interference calculated?", "back": "Coefficient of coincidence = observed double crossovers / expected double crossovers, where expected = RF1 x RF2 x total. Interference = 1 - coefficient of coincidence.", "lesson": "sci-genetics-l07" },
+    { "id": "sci-genetics-c051", "front": "What does the karyotype 47,XX,+21 mean?", "back": "A female with 47 chromosomes carrying an extra chromosome 21 — Down syndrome from nondisjunction.", "lesson": "sci-genetics-l08" },
+    { "id": "sci-genetics-c052", "front": "What is nondisjunction, and how does meiosis I differ from meiosis II?", "back": "Failure of chromosomes to separate. In meiosis I the homologs fail to separate; in meiosis II the sister chromatids do. Either yields gametes with two copies or none.", "lesson": "sci-genetics-l08" },
+    { "id": "sci-genetics-c053", "front": "How does Down syndrome risk change with maternal age?", "back": "Roughly 1 in 1,500 at age 20, 1 in 900 at 30, 1 in 350 at 35, and 1 in 100 at 40, because oocytes sit arrested in prophase I for decades.", "lesson": "sci-genetics-l08" },
+    { "id": "sci-genetics-c054", "front": "Name the features and frequency of trisomy 18 and trisomy 13.", "back": "Trisomy 18 (Edwards, about 1 in 6,000): clenched overlapping fingers, rocker-bottom feet, small jaw. Trisomy 13 (Patau, about 1 in 10,000): cleft lip and palate, holoprosencephaly, polydactyly. Both usually lethal in infancy.", "lesson": "sci-genetics-l08" },
+    { "id": "sci-genetics-c055", "front": "Contrast Turner and Klinefelter syndromes.", "back": "Turner is 45,X: short stature, webbed neck, streak ovaries, coarctation, about 1 in 2,500 girls. Klinefelter is 47,XXY: tall, small firm testes, gynecomastia, infertility, about 1 in 600 boys.", "lesson": "sci-genetics-l08" },
+    { "id": "sci-genetics-c056", "front": "What do the 22q11.2 and 5p deletions cause?", "back": "22q11.2 deletion gives DiGeorge syndrome: conotruncal heart defects, thymic hypoplasia with T-cell deficiency, hypocalcemia, cleft palate. 5p deletion gives cri-du-chat: catlike cry, microcephaly, intellectual disability.", "lesson": "sci-genetics-l08" },
+    { "id": "sci-genetics-c057", "front": "Why does translocation Down syndrome matter differently than trisomy 21?", "back": "The child has 46 chromosomes from a Robertsonian translocation, often inherited from a healthy balanced carrier parent. Recurrence risk is high and independent of maternal age, so karyotype the parents.", "lesson": "sci-genetics-l08" },
+    { "id": "sci-genetics-c058", "front": "Write the two Hardy-Weinberg equations and name each term.", "back": "p + q = 1 and p^2 + 2pq + q^2 = 1. p^2 is homozygous dominant, 2pq is heterozygous carriers, q^2 is homozygous recessive or affected.", "lesson": "sci-genetics-l09" },
+    { "id": "sci-genetics-c059", "front": "What five conditions must hold for Hardy-Weinberg equilibrium?", "back": "No selection, no mutation, no migration, random mating, and a large population. Real populations violate these, but the estimate is close enough for counseling.", "lesson": "sci-genetics-l09" },
+    { "id": "sci-genetics-c060", "front": "Cystic fibrosis affects 1 in 2,500. Work out the carrier frequency.", "back": "q^2 = 1/2500 = 0.0004, so q = sqrt(0.0004) = 0.02 and p = 0.98. Carriers = 2pq = 2 x 0.98 x 0.02 = 0.039, about 1 in 25.", "lesson": "sci-genetics-l09" },
+    { "id": "sci-genetics-c061", "front": "Sickle cell disease affects 1 in 400 births. What is the trait frequency?", "back": "q^2 = 0.0025, so q = 0.05. Carriers = 2pq = 2 x 0.95 x 0.05 = 0.095, roughly 1 in 10.5 with sickle cell trait.", "lesson": "sci-genetics-l09" },
+    { "id": "sci-genetics-c062", "front": "How is Hardy-Weinberg different for X-linked traits?", "back": "Males have one X, so the affected male frequency equals q directly with no square root. Affected females are q^2 and female carriers are 2pq.", "lesson": "sci-genetics-l09" },
+    { "id": "sci-genetics-c063", "front": "Define founder effect, bottleneck and genetic drift.", "back": "Drift is random change in allele frequency, strong only in small populations. Founder effect is a new population started by few individuals with an unrepresentative allele mix. A bottleneck is a population crash leaving a skewed survivor pool.", "lesson": "sci-genetics-l09" },
+    { "id": "sci-genetics-c064", "front": "What extra risk do first-cousin parents carry?", "back": "First cousins share 1/8 of their genes, adding roughly 2 to 3 percent risk of a serious recessive condition on top of the 3 percent population baseline. Allele frequencies do not change; homozygosity rises.", "lesson": "sci-genetics-l09" },
+    { "id": "sci-genetics-c065", "front": "What does heritability h^2 actually measure?", "back": "The share of variation in a trait within a population explained by genetic variation, from 0 to 1. Height is about 0.8. It describes populations, never individuals, and does not predict whether intervention works.", "lesson": "sci-genetics-l09" },
+    { "id": "sci-genetics-c066", "front": "What is a threshold trait, and what is the typical recurrence risk?", "back": "A multifactorial trait with continuous liability that appears all-or-nothing once a threshold is crossed: cleft lip, pyloric stenosis, neural tube defects. Recurrence in first-degree relatives is about 3 to 5 percent.", "lesson": "sci-genetics-l09" },
+    { "id": "sci-genetics-c067", "front": "What is residual risk after a negative carrier screen?", "back": "The chance the person still carries a variant the panel did not test for. A negative screen lowers risk substantially but never reduces it to zero.", "lesson": "sci-genetics-l10" },
+    { "id": "sci-genetics-c068", "front": "Compare NIPT, CVS and amniocentesis on timing and risk.", "back": "NIPT screens from 10 weeks on maternal blood with no procedure risk. CVS is diagnostic at 10 to 13 weeks with about 1 in 200 loss risk. Amniocentesis is diagnostic at 15 to 20 weeks with about 1 in 400.", "lesson": "sci-genetics-l10" },
+    { "id": "sci-genetics-c069", "front": "Why can a positive NIPT be wrong in a young low-risk patient?", "back": "Positive predictive value depends on prevalence. At low prior risk, most positives are false, so confirmation by CVS or amniocentesis is required before any decision.", "lesson": "sci-genetics-l10" },
+    { "id": "sci-genetics-c070", "front": "Why do CYP2C19 poor metabolizers fail on clopidogrel?", "back": "Clopidogrel is a prodrug that CYP2C19 must activate. Poor metabolizers get little antiplatelet effect and more stent thrombosis, so prasugrel or ticagrelor is substituted.", "lesson": "sci-genetics-l10" },
+    { "id": "sci-genetics-c071", "front": "Which pharmacogenomic tests must precede thiopurines and abacavir?", "back": "TPMT and NUDT15 activity before azathioprine or 6-mercaptopurine, since deficiency causes severe myelosuppression. HLA-B*5701 before abacavir, since carriers risk fatal hypersensitivity.", "lesson": "sci-genetics-l10" },
+    { "id": "sci-genetics-c072", "front": "What does GINA protect, and what does it leave out?", "back": "GINA (2008) bars health insurers and employers from using genetic information. It does not cover life, disability or long-term care insurance, and exempts employers with fewer than 15 employees.", "lesson": "sci-genetics-l10" }
+  ],
+  "quiz": [
+    {
+      "id": "sci-genetics-q001",
+      "q": "Which base pair is held together by three hydrogen bonds?",
+      "choices": [
+        "Guanine and cytosine",
+        "Adenine and thymine",
+        "Adenine and uracil",
+        "Thymine and cytosine"
+      ],
+      "answer": 0,
+      "why": "G-C forms three hydrogen bonds while A-T forms two, which is why GC-rich DNA melts at a higher temperature. A-U is the RNA version of a two-bond pair, and T-C is not a valid pairing at all.",
+      "lesson": "sci-genetics-l01",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-genetics-q002",
+      "q": "During replication, why must primase act before DNA polymerase?",
+      "choices": [
+        "To unwind the double helix",
+        "Because DNA polymerase can only extend an existing 3' end and cannot start a chain",
+        "To seal nicks between Okazaki fragments",
+        "To proofread the template strand"
+      ],
+      "answer": 1,
+      "why": "Polymerase adds to a free 3' hydroxyl, so it needs a short RNA primer to begin. Unwinding is helicase, sealing nicks is ligase, and proofreading is polymerase's own exonuclease activity after synthesis has begun.",
+      "lesson": "sci-genetics-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-genetics-q003",
+      "q": "A 44-year-old woman has colon cancer at a young age and a strong family history of colon and endometrial cancer. Tumor testing shows microsatellite instability. Which pathway is defective?",
+      "choices": [
+        "Nucleotide excision repair",
+        "Base excision repair",
+        "Mismatch repair",
+        "Homologous recombination"
+      ],
+      "answer": 2,
+      "why": "Microsatellite instability is the fingerprint of mismatch repair loss (MLH1, MSH2), which causes Lynch syndrome. Nucleotide excision repair loss gives ultraviolet-driven skin cancer, and homologous recombination loss gives the BRCA breast and ovarian pattern.",
+      "lesson": "sci-genetics-l01",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-genetics-q004",
+      "q": "Which statement about the genetic code is correct?",
+      "choices": [
+        "It is ambiguous, since one codon can specify several amino acids",
+        "There are 20 codons, one per amino acid",
+        "Stop codons each specify a terminal amino acid",
+        "It is redundant, since several codons can specify the same amino acid"
+      ],
+      "answer": 3,
+      "why": "Sixty-four codons cover twenty amino acids, so multiple codons share meanings — that is redundancy, not ambiguity, since each codon means only one thing. Stop codons specify no amino acid at all.",
+      "lesson": "sci-genetics-l02",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-genetics-q005",
+      "q": "A bacterium is grown in medium containing lactose and no glucose. What happens at the lac operon?",
+      "choices": [
+        "The repressor binds the operator and transcription stops",
+        "Tryptophan acts as a corepressor",
+        "Allolactose inactivates the repressor and high cyclic AMP lets CAP activate transcription, so the genes are strongly expressed",
+        "The operon is deleted from the chromosome"
+      ],
+      "answer": 2,
+      "why": "Lactose present removes repression, and absent glucose raises cyclic AMP so CAP boosts transcription — maximal expression. Repressor binding describes the no-lactose state, and tryptophan belongs to the trp operon.",
+      "lesson": "sci-genetics-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-genetics-q006",
+      "q": "A researcher finds that a gene's promoter CpG island is heavily methylated in tumor tissue but the coding sequence is completely normal. This is best described as what?",
+      "choices": [
+        "An epigenetic silencing event",
+        "A nonsense mutation",
+        "A frameshift mutation",
+        "A balanced translocation"
+      ],
+      "answer": 0,
+      "why": "Expression changes with the sequence intact is the definition of an epigenetic effect. Nonsense and frameshift mutations both alter sequence, and a translocation would rearrange whole chromosome segments.",
+      "lesson": "sci-genetics-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-genetics-q007",
+      "q": "A two-base deletion occurs in the middle of a coding exon. What is the most likely consequence?",
+      "choices": [
+        "A silent change with normal protein",
+        "Loss of a single amino acid",
+        "Frameshift with a premature stop codon downstream",
+        "Increased transcription of the gene"
+      ],
+      "answer": 2,
+      "why": "Two is not divisible by three, so the reading frame shifts and all downstream codons are misread, usually hitting a stop early. Losing one amino acid requires an in-frame three-base deletion, as in delta-F508.",
+      "lesson": "sci-genetics-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-genetics-q008",
+      "q": "Two boys have deletions in the same region of the DMD gene, yet one is wheelchair-bound at 12 and the other walks at 40. What best explains the difference?",
+      "choices": [
+        "The milder boy has a somatic rather than germline mutation",
+        "One deletion is out of frame and abolishes dystrophin while the other is in frame and leaves a partly working protein",
+        "The milder boy carries a second compensating X chromosome",
+        "The severe boy has a mitochondrial modifier"
+      ],
+      "answer": 1,
+      "why": "The reading-frame rule separates Duchenne from Becker in the same gene. A somatic DMD mutation would not produce systemic muscular dystrophy, and males have only one X.",
+      "lesson": "sci-genetics-l03",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-genetics-q009",
+      "q": "A man has 42 CAG repeats in HTT. What is the chance he passes the expanded allele to any given child?",
+      "choices": [
+        "25 percent",
+        "50 percent",
+        "75 percent",
+        "100 percent"
+      ],
+      "answer": 1,
+      "why": "He is heterozygous for an autosomal dominant expansion, so each child has a 1/2 chance of inheriting it. The 25 percent figure belongs to recessive carrier couples and 100 percent would require homozygosity.",
+      "lesson": "sci-genetics-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-genetics-q010",
+      "q": "Two parents heterozygous for sickle cell trait have a child. What is the chance the child has neither the disease nor the trait?",
+      "choices": [
+        "0",
+        "1/8",
+        "1/2",
+        "1/4"
+      ],
+      "answer": 3,
+      "why": "Aa x Aa gives 1/4 AA, and AA carries neither trait nor disease. The 1/2 answer is the carrier fraction and 1/4 is also the affected fraction, so read which of the three boxes is being asked for.",
+      "lesson": "sci-genetics-l04",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-genetics-q011",
+      "q": "A couple are both carriers of Tay-Sachs disease. What is the probability that exactly two of their four children are affected?",
+      "choices": [
+        "6 x (1/4)^2 x (3/4)^2 = 0.21",
+        "4 x (1/4)^2 = 0.25",
+        "(1/4)^2 = 0.0625",
+        "2 x 1/4 x 3/4 = 0.375"
+      ],
+      "answer": 0,
+      "why": "Use the binomial: C(4,2) = 6 arrangements, times (1/4)^2 for the two affected, times (3/4)^2 for the two unaffected, giving about 0.21. The other options drop either the combinations term or the unaffected term.",
+      "lesson": "sci-genetics-l04",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-genetics-q012",
+      "q": "A breeder has a black animal and wants to know if it is homozygous. Which cross answers the question fastest?",
+      "choices": [
+        "Cross it to another black animal of unknown genotype",
+        "Self-cross it",
+        "Cross it to a homozygous recessive animal",
+        "Cross it to a known homozygous dominant animal"
+      ],
+      "answer": 2,
+      "why": "A test cross to a homozygous recessive makes any hidden recessive allele show up directly in the offspring. Crossing to a dominant animal hides the recessive allele, and two unknown blacks give an ambiguous result.",
+      "lesson": "sci-genetics-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-genetics-q013",
+      "q": "A pedigree shows disease in every generation, affected males and females in equal numbers, and one affected father with an affected son. What is the inheritance pattern?",
+      "choices": [
+        "X-linked recessive",
+        "Mitochondrial",
+        "Autosomal recessive",
+        "Autosomal dominant"
+      ],
+      "answer": 3,
+      "why": "No skipped generations with equal sexes points to dominant, and father-to-son transmission forces autosomal. X-linked patterns cannot go father to son, and mitochondrial disease never passes from a father at all.",
+      "lesson": "sci-genetics-l05",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-genetics-q014",
+      "q": "A healthy couple has a son with hemophilia A. The mother's brother was also affected. What is the risk that their next child, if a daughter, is a carrier?",
+      "choices": [
+        "0",
+        "1/4",
+        "1/2",
+        "1"
+      ],
+      "answer": 2,
+      "why": "The mother is an obligate carrier, so each daughter has a 1/2 chance of receiving the mutant X and none will be affected given a normal father. The 1/4 figure applies before the child's sex is known.",
+      "lesson": "sci-genetics-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-genetics-q015",
+      "q": "A man with Leber hereditary optic neuropathy and his unaffected wife have four children. How many are expected to inherit the variant?",
+      "choices": [
+        "None, because mitochondrial DNA comes from the egg",
+        "All four",
+        "Half of them",
+        "Only the daughters"
+      ],
+      "answer": 0,
+      "why": "The egg supplies essentially all mitochondria, so affected fathers transmit to no children. All-affected offspring would be expected from an affected mother, and the sex-restricted pattern belongs to X-linked dominant disease.",
+      "lesson": "sci-genetics-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-genetics-q016",
+      "q": "A patient with untreated familial hypercholesterolemia has an LDL of 320 mg/dL; his son, homozygous, has an LDL above 600 mg/dL with xanthomas in childhood. What inheritance pattern does this illustrate?",
+      "choices": [
+        "Codominance",
+        "Epistasis",
+        "Incomplete dominance",
+        "Imprinting"
+      ],
+      "answer": 2,
+      "why": "The heterozygote is intermediate between normal and the far more severe homozygote, which is incomplete dominance. Codominance would show two distinct products at once, as in blood type AB.",
+      "lesson": "sci-genetics-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-genetics-q017",
+      "q": "A father is blood type AB and the mother is type O. Which blood type is impossible in their child?",
+      "choices": [
+        "Type O",
+        "Type A",
+        "Type B",
+        "Either A or B"
+      ],
+      "answer": 0,
+      "why": "The father must give either I^A or I^B, so the child receives at least one of those alleles and cannot be ii. Types A and B are both fully possible, which is why the combined option is wrong.",
+      "lesson": "sci-genetics-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-genetics-q018",
+      "q": "A woman carries a pathogenic BRCA1 variant but never develops cancer, while her sister with the same variant develops breast cancer at 38. This is an example of what?",
+      "choices": [
+        "Variable expressivity",
+        "Anticipation",
+        "Codominance",
+        "Incomplete penetrance"
+      ],
+      "answer": 3,
+      "why": "One carrier shows no disease at all, which is a penetrance question rather than a severity question. Expressivity would describe differing severity among people who are all affected, and anticipation requires earlier onset each generation.",
+      "lesson": "sci-genetics-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-genetics-q019",
+      "q": "An infant has profound hypotonia and poor feeding at birth, then develops insatiable appetite and obesity by age three. Testing shows a 15q11-q13 abnormality. What is the most likely mechanism?",
+      "choices": [
+        "Maternal deletion of 15q11-q13",
+        "Paternal deletion of 15q11-q13",
+        "A Robertsonian translocation involving chromosome 15",
+        "Trinucleotide repeat expansion at 15q"
+      ],
+      "answer": 1,
+      "why": "The hypotonia-then-hyperphagia sequence is Prader-Willi, caused by loss of the paternally expressed region. A maternal deletion at the same locus would give Angelman syndrome with ataxia and seizures instead.",
+      "lesson": "sci-genetics-l06",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-genetics-q020",
+      "q": "A test cross of AaBb x aabb gives 460 AB, 440 ab, 52 Ab, 48 aB out of 1,000. What is the distance between A and B?",
+      "choices": [
+        "5 map units",
+        "50 map units",
+        "10 map units",
+        "90 map units"
+      ],
+      "answer": 2,
+      "why": "The recombinants are the two smallest classes, 52 + 48 = 100, so RF = 100/1000 = 0.10 and the distance is 10 map units. The 90 value is the parental percentage and 50 would mean unlinked.",
+      "lesson": "sci-genetics-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-genetics-q021",
+      "q": "In a three-point cross, the parental classes are ABC and abc, and the rarest classes are AbC and aBc. Which gene lies in the middle?",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "Cannot be determined without recombination frequencies"
+      ],
+      "answer": 1,
+      "why": "A double crossover flips only the middle marker relative to the parental arrangement, and B is the allele that changed position. Map distances are needed to place the genes numerically but not to identify the order.",
+      "lesson": "sci-genetics-l07",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-genetics-q022",
+      "q": "Two loci sit 40 map units apart on the same chromosome. What recombination frequency would you observe?",
+      "choices": [
+        "0 percent, because they are on the same chromosome",
+        "100 percent",
+        "50 percent, since anything on one chromosome is linked",
+        "About 40 percent, close to but below the 50 percent unlinked ceiling"
+      ],
+      "answer": 3,
+      "why": "Map units are defined as percent recombinants, so 40 map units means about 40 percent, which is detectably below the 50 percent ceiling. Being on the same chromosome does not force linkage when the distance is large.",
+      "lesson": "sci-genetics-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-genetics-q023",
+      "q": "A newborn has a flat facial profile, upslanting palpebral fissures, a single palmar crease, hypotonia, and an endocardial cushion defect. Which karyotype is most likely?",
+      "choices": [
+        "47,XY,+21",
+        "47,XY,+18",
+        "45,X",
+        "46,XY,del(22q11.2)"
+      ],
+      "answer": 0,
+      "why": "This is the classic Down syndrome picture, and 40 to 50 percent have congenital heart disease, often endocardial cushion defects. Trisomy 18 gives clenched hands and rocker-bottom feet, and 45,X occurs only in females.",
+      "lesson": "sci-genetics-l08",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-genetics-q024",
+      "q": "A couple has had four first-trimester miscarriages. Both partners are healthy. What is the most appropriate genetic evaluation?",
+      "choices": [
+        "Expanded carrier screening only",
+        "Trinucleotide repeat testing in the mother",
+        "Parental karyotypes to look for a balanced translocation",
+        "Newborn screening panel review"
+      ],
+      "answer": 2,
+      "why": "A healthy balanced translocation carrier produces unbalanced gametes, and recurrent pregnancy loss is the classic presentation. Carrier screening looks for recessive alleles, which cause disease in liveborn children rather than repeated early loss.",
+      "lesson": "sci-genetics-l08",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-genetics-q025",
+      "q": "A tall 27-year-old man presents for infertility. He has small firm testes, gynecomastia, and low testosterone. What karyotype is expected?",
+      "choices": [
+        "45,X",
+        "47,XXY",
+        "46,XY,t(9;22)",
+        "47,XY,+13"
+      ],
+      "answer": 1,
+      "why": "This is Klinefelter syndrome, 47,XXY, which affects about 1 in 600 male births and is often found during infertility workup. 45,X is Turner syndrome in females and t(9;22) is the acquired Philadelphia chromosome of chronic myeloid leukemia.",
+      "lesson": "sci-genetics-l08",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-genetics-q026",
+      "q": "An infant has a conotruncal cardiac defect, hypocalcemic seizures, recurrent infections, and a cleft palate. Which abnormality explains this?",
+      "choices": [
+        "5p deletion",
+        "Trisomy 13",
+        "22q11.2 deletion",
+        "Robertsonian translocation 14;21"
+      ],
+      "answer": 2,
+      "why": "Thymic and parathyroid hypoplasia with outflow tract defects is the 22q11.2 deletion, DiGeorge syndrome. Cri-du-chat from 5p deletion gives a catlike cry without immune or calcium problems, and trisomy 13 presents with midline defects and very early death.",
+      "lesson": "sci-genetics-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-genetics-q027",
+      "q": "A recessive disease has an affected frequency of 1 in 1,600. What is the carrier frequency?",
+      "choices": [
+        "1 in 40",
+        "1 in 400",
+        "1 in 20",
+        "1 in 800"
+      ],
+      "answer": 2,
+      "why": "q^2 = 1/1600 gives q = 0.025, and carriers are about 2q = 0.05, which is 1 in 20. The 1 in 40 answer is q itself, the single most common slip in these problems.",
+      "lesson": "sci-genetics-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-genetics-q028",
+      "q": "Red-green color blindness affects 8 percent of males in a population. What percentage of females is expected to be affected?",
+      "choices": [
+        "8 percent",
+        "16 percent",
+        "4 percent",
+        "0.64 percent"
+      ],
+      "answer": 3,
+      "why": "For X-linked traits the male frequency equals q, so q = 0.08 and affected females are q^2 = 0.0064, or 0.64 percent. Using 8 or 16 percent treats females like hemizygous males or doubles the allele frequency incorrectly.",
+      "lesson": "sci-genetics-l09",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-genetics-q029",
+      "q": "Tay-Sachs disease is far more common among Ashkenazi Jews than in the general population. Which force best explains this?",
+      "choices": [
+        "Founder effect",
+        "Heterozygote advantage against malaria",
+        "A higher local mutation rate",
+        "Nonrandom mating at a single locus"
+      ],
+      "answer": 0,
+      "why": "A population descended from a small ancestral group carries whatever allele mix that group happened to have, which is the founder effect. Malaria resistance explains sickle cell, not Tay-Sachs, and mutation rates do not vary that much between populations.",
+      "lesson": "sci-genetics-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-genetics-q030",
+      "q": "A couple whose first child was born with a neural tube defect asks about recurrence risk. What is the best estimate and reasoning?",
+      "choices": [
+        "25 percent, since it is autosomal recessive",
+        "50 percent, since it is autosomal dominant",
+        "Less than 1 percent, since it is sporadic",
+        "About 3 to 5 percent, since it is a multifactorial threshold trait"
+      ],
+      "answer": 3,
+      "why": "Neural tube defects are multifactorial with continuous liability, giving first-degree relatives roughly 3 to 5 percent recurrence. Mendelian fractions like 25 or 50 percent do not apply to threshold traits.",
+      "lesson": "sci-genetics-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-genetics-q031",
+      "q": "Height has a heritability of about 0.8 in a population. What does this mean?",
+      "choices": [
+        "80 percent of any one person's height is genetic",
+        "80 percent of the variation in height in that population is attributable to genetic variation",
+        "80 percent of people inherit height from one parent",
+        "Nutrition changes height by at most 20 percent"
+      ],
+      "answer": 1,
+      "why": "Heritability is a population-level ratio of variances and says nothing about an individual or about the effect of an intervention. The other options all misapply a population statistic to a single person or to causation.",
+      "lesson": "sci-genetics-l09",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-genetics-q032",
+      "q": "A 23-year-old with no risk factors receives a positive NIPT result for trisomy 18. What should she be told?",
+      "choices": [
+        "The diagnosis is confirmed and she should be referred immediately",
+        "The test should simply be repeated in a month",
+        "This is a screening result whose predictive value is low at her risk level, and CVS or amniocentesis is needed to confirm",
+        "NIPT cannot detect trisomy 18 at all"
+      ],
+      "answer": 2,
+      "why": "NIPT detects the common trisomies well but positive predictive value falls with low prior risk, so a diagnostic karyotype must follow. Repeating a screen cannot turn it into a diagnosis, and NIPT does screen for trisomy 18.",
+      "lesson": "sci-genetics-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-genetics-q033",
+      "q": "A patient with a drug-eluting stent has recurrent in-stent thrombosis on clopidogrel. Genotyping shows CYP2C19 poor metabolizer status. What is the best explanation?",
+      "choices": [
+        "Clopidogrel accumulates to toxic levels and causes platelet activation",
+        "CYP2C19 clears clopidogrel faster, lowering its concentration",
+        "The stent material inactivates clopidogrel",
+        "Clopidogrel is a prodrug that CYP2C19 must activate, so poor metabolizers get little antiplatelet effect"
+      ],
+      "answer": 3,
+      "why": "Without activation the drug cannot block P2Y12, so an alternative such as prasugrel or ticagrelor is used. The accumulation and faster-clearance answers reverse the direction of the metabolic problem.",
+      "lesson": "sci-genetics-l10",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-genetics-q034",
+      "q": "Which test is required before a patient starts abacavir?",
+      "choices": [
+        "HLA-B*5701",
+        "TPMT activity",
+        "CYP2D6 genotype",
+        "HFE C282Y"
+      ],
+      "answer": 0,
+      "why": "HLA-B*5701 carriers can develop a fatal abacavir hypersensitivity reaction, so screening is mandatory. TPMT applies to thiopurines, CYP2D6 to codeine, and HFE to hemochromatosis.",
+      "lesson": "sci-genetics-l10",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-genetics-q035",
+      "q": "A patient worries that a Huntington test result could be used against her. Which statement about GINA is accurate?",
+      "choices": [
+        "It protects against all forms of insurance discrimination",
+        "It prohibits health insurers and employers from using genetic information, but does not cover life, disability or long-term care insurance",
+        "It applies only to already symptomatic patients",
+        "It requires disclosure of results to the patient's primary insurer"
+      ],
+      "answer": 1,
+      "why": "GINA of 2008 covers health coverage and employment with a small-employer exemption, leaving life, disability and long-term care policies outside its reach. Claiming complete protection is the most harmful error here because it affects the patient's decision to test.",
+      "lesson": "sci-genetics-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-genetics-q036",
+      "q": "A newborn's heel-stick screen returns positive for cystic fibrosis. What does that result mean?",
+      "choices": [
+        "The infant has cystic fibrosis and treatment should begin",
+        "The infant is a carrier and needs no follow-up",
+        "The screen must be repeated at one year of age",
+        "The infant is in a higher-risk group and needs confirmatory sweat chloride or genetic testing"
+      ],
+      "answer": 3,
+      "why": "Newborn screening sorts a population into risk groups and never diagnoses on its own, so confirmation is required before treatment or reassurance. Calling a positive screen a diagnosis and dismissing it as carrier status are opposite errors with the same root.",
+      "lesson": "sci-genetics-l10",
+      "difficulty": 1
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "sci-genetics-s01",
+      "title": "Problem set: reading a pedigree and computing recurrence risk",
+      "setting": "classroom",
+      "intro": "Your instructor puts a four-generation pedigree on the board and hands you a worksheet.\n\nGeneration I: an unaffected couple. Generation II: four siblings, three unaffected, one affected male. Generation III: the unaffected sisters from II each have children; two of their sons are affected and none of their daughters are. Generation IV: the affected male from generation III has two daughters, both unaffected, and one son, unaffected.\n\nThe disease causes progressive proximal muscle weakness beginning around age `4`, with wheelchair use by the early teens. You are asked to name the pattern, assign genotypes, and quote a recurrence risk.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "Every affected person in the pedigree is male, and they are connected to each other through unaffected women. What is your first move?",
+          "choices": [
+            {
+              "text": "Check whether any affected father has an affected son, since that single observation excludes X-linked inheritance",
+              "next": "s2",
+              "feedback": "Correct, and it is the fastest discriminator on the page. The affected man in generation III has an unaffected son, which is consistent with X-linked recessive rather than against it.",
+              "score": 1
+            },
+            {
+              "text": "Count affected males versus females and call it X-linked recessive immediately",
+              "next": "s2",
+              "feedback": "The male excess is a real clue, but autosomal recessive disease can look male-heavy by chance in a small family. Confirm with transmission pattern before committing.",
+              "score": 0
+            },
+            {
+              "text": "Assume autosomal dominant because affected people appear in three generations",
+              "next": "s2",
+              "feedback": "Look again. The affected people are not the children of affected parents, and the connecting relatives are unaffected women. That is transmission through carriers, not dominance.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "You settle on X-linked recessive, and the clinical picture fits Duchenne muscular dystrophy. Assign genotypes. What can you say with certainty about the mothers of the two affected boys in generation III?",
+          "choices": [
+            {
+              "text": "They each have a 1/2 chance of being carriers",
+              "next": "s3",
+              "feedback": "That is the prior risk for a sister of a carrier before she has children. Once she has an affected son, the uncertainty is gone.",
+              "score": 0
+            },
+            {
+              "text": "They are obligate carriers, X^A X^a, since each has an affected son and is herself unaffected",
+              "next": "s3",
+              "feedback": "Right. An affected son inherited his only X from his mother, so she must carry the allele. 'Obligate carrier' means the pedigree forces the genotype without any testing.",
+              "score": 1
+            },
+            {
+              "text": "They must be affected but with milder disease",
+              "next": "s3",
+              "feedback": "Carriers can occasionally show mild findings from skewed X-inactivation, but the pedigree marks them unaffected and the genotype conclusion does not depend on symptoms.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "One of those obligate carrier mothers is pregnant again with an unknown fetal sex. What is the risk that this pregnancy results in an affected child?",
+          "choices": [
+            {
+              "text": "1/2, since half her children get the mutant X",
+              "next": "s4",
+              "feedback": "Half her children receive the mutant X, but only the males are affected by it. You have skipped the sex step.",
+              "score": -1
+            },
+            {
+              "text": "1/4, because there is a 1/2 chance of a son and a 1/2 chance that son receives the mutant X",
+              "next": "s4",
+              "feedback": "Correct. Multiply the two independent events: 1/2 x 1/2 = 1/4 affected per pregnancy. If you already know it is a boy, the risk becomes 1/2.",
+              "score": 1
+            },
+            {
+              "text": "1/8, since three things must happen",
+              "next": "s4",
+              "feedback": "Only two independent events matter here: the sex of the fetus and which X the mother transmits. There is no third factor to multiply in.",
+              "score": -1
+            },
+            {
+              "text": "1/4 overall, and 1/2 if the fetus is known to be male",
+              "next": "s4",
+              "feedback": "Exactly the right framing. Conditioning on what you already know is the entire skill in recurrence-risk problems.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "The affected man in generation III asks about his own children. He has two daughters and one son, all unaffected. What do you tell him?",
+          "choices": [
+            {
+              "text": "All of his daughters are obligate carriers, and none of his sons can be affected through him",
+              "next": "s5",
+              "feedback": "Correct. He has one X and must give it to every daughter, so all are carriers. His sons get his Y, so he cannot transmit the disease to them at all.",
+              "score": 1
+            },
+            {
+              "text": "Each daughter has a 1/2 chance of carrying the allele",
+              "next": "s5",
+              "feedback": "That is what you would say about a carrier mother. An affected father has only the mutant X to give, so the probability is 1, not 1/2.",
+              "score": -1
+            },
+            {
+              "text": "His son should still be tested, since he could be a silent carrier",
+              "next": "s5",
+              "feedback": "Males are hemizygous — one X, no carrier state. An unaffected son of an affected father did not receive the allele.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "One of the unaffected sisters in generation II has never had children and wants to know her own carrier risk. Her mother in generation I is an obligate carrier, since she had an affected son. How do you work it?",
+          "choices": [
+            {
+              "text": "Her prior risk is 1/2, since her carrier mother transmits the mutant X to half of her daughters",
+              "next": "s6",
+              "feedback": "Correct starting point. With no children and no testing, 1/2 is the honest number, and carrier testing or family-variant testing can resolve it.",
+              "score": 1
+            },
+            {
+              "text": "Her risk is 2/3, the same as an unaffected sibling in autosomal recessive disease",
+              "next": "s6",
+              "feedback": "That 2/3 comes from removing the aa box in an autosomal recessive square. Here she cannot be affected regardless, so there is nothing to rescale.",
+              "score": -1
+            },
+            {
+              "text": "Her risk is 1/4, matching the per-pregnancy risk figure",
+              "next": "s6",
+              "feedback": "The 1/4 is a risk to an offspring, not a genotype probability for an adult woman. Keep the two kinds of numbers separate.",
+              "score": -1
+            },
+            {
+              "text": "Her risk is 1/2, and it would drop substantially after several unaffected sons",
+              "next": "s6",
+              "feedback": "Both halves are right. Bayesian updating on unaffected sons lowers the posterior carrier probability, which is exactly how counselors refine these numbers.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "prompt": "Last question on the worksheet: the family asks what testing would settle things. What do you recommend?",
+          "choices": [
+            {
+              "text": "Identify the specific DMD variant in an affected male first, then test at-risk female relatives for that known variant",
+              "next": "end",
+              "feedback": "Right. Testing an affected person defines the family variant and makes carrier testing in relatives interpretable. Testing a woman blindly risks an uninformative result.",
+              "score": 1
+            },
+            {
+              "text": "Test all the women first, since they are the ones making reproductive decisions",
+              "next": "end",
+              "feedback": "Understandable priority, wrong order. Without a known family variant, a negative result in a woman may only mean the assay missed something.",
+              "score": 0
+            },
+            {
+              "text": "Skip genetic testing and rely on creatine kinase levels in the women",
+              "next": "end",
+              "feedback": "Elevated creatine kinase supports carrier status but a normal level does not exclude it, so it cannot be the basis of counseling.",
+              "score": -1
+            }
+          ]
+        }
+      ],
+      "debrief": "The pattern to carry out of this problem: name the inheritance mode before you compute anything, because every number depends on it. Father-to-son transmission is the single most powerful observation on a pedigree, and its absence plus male-predominant disease through unaffected women means X-linked recessive. From there the arithmetic is small. An affected son makes his mother an obligate carrier. A carrier mother gives 1/2 of sons affected and 1/2 of daughters carriers, which is 1/4 of pregnancies before you know the sex. An affected father gives every daughter the allele and no son anything. And notice the two different kinds of numbers that get confused constantly: the probability that a living adult carries an allele, and the probability that a future pregnancy is affected. Write which one the question asks before you start."
+    },
+    {
+      "id": "sci-genetics-s02",
+      "title": "Problem set: Hardy-Weinberg at the counseling table",
+      "setting": "classroom",
+      "intro": "The case on the worksheet: a healthy `29`-year-old woman of Northern European ancestry is planning a pregnancy. Her brother has cystic fibrosis. Her partner has no family history and has not been screened.\n\nYou are given one population figure: cystic fibrosis affects about `1 in 2,500` people in this ancestry group. Everything else you have to derive.\n\nWork the population math first, then the family math, then combine them.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "Start with the partner, who has no family history. What is his prior probability of being a carrier?",
+          "choices": [
+            {
+              "text": "Use Hardy-Weinberg: q^2 = 1/2500 so q = 0.02, and carrier frequency 2pq = 2 x 0.98 x 0.02 = 0.039, about 1 in 25",
+              "next": "s2",
+              "feedback": "Correct and fully worked. Take the square root of the disease frequency to get q, then double it (since p is near 1) to get the carrier frequency.",
+              "score": 1
+            },
+            {
+              "text": "It is 1 in 2,500, the same as the disease frequency",
+              "next": "s2",
+              "feedback": "That is the frequency of affected people, q^2. Carriers are far more common than affected people for any rare recessive — about 100 times more common here.",
+              "score": -1
+            },
+            {
+              "text": "Roughly 1 in 25, from the rule of thumb that carrier frequency is about 2 times the square root of the disease frequency",
+              "next": "s2",
+              "feedback": "Same answer by the shortcut, and the shortcut is legitimate because p is close to 1 for any rare allele. Just be ready to show the full equation if asked.",
+              "score": 1
+            },
+            {
+              "text": "Zero, since he has no family history",
+              "next": "s2",
+              "feedback": "Most carriers have no family history at all, which is exactly why population carrier screening exists.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "Now the woman. Her brother is affected, and she is not. What is her carrier probability, and why is it not the population figure?",
+          "choices": [
+            {
+              "text": "1/2, since one of her parents is a carrier",
+              "next": "s3",
+              "feedback": "Both parents are obligate carriers, not one, and the correct conditioning removes a box from the square rather than halving anything.",
+              "score": -1
+            },
+            {
+              "text": "2/3, because both parents are obligate carriers and being unaffected removes the aa box from AA, Aa, Aa, aa",
+              "next": "s3",
+              "feedback": "Exactly right. The prior was 1/4 AA, 1/2 Aa, 1/4 aa; deleting aa leaves three equally likely boxes and two of them are carriers.",
+              "score": 1
+            },
+            {
+              "text": "1 in 25, the population carrier frequency",
+              "next": "s3",
+              "feedback": "Family history beats population data every time. Her affected brother tells you far more about her than the population frequency does.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "Combine them. What is the chance their first child has cystic fibrosis, before any testing?",
+          "choices": [
+            {
+              "text": "2/3 x 1/25 x 1/4 = 2/300, about 1 in 150",
+              "next": "s4",
+              "feedback": "Correct chain, and it is pure product rule: she is a carrier, and he is a carrier, and they both transmit. Roughly 0.67 percent.",
+              "score": 1
+            },
+            {
+              "text": "1/4, since that is the risk for a carrier couple",
+              "next": "s4",
+              "feedback": "The 1/4 applies only once both parents are known carriers. Here neither is confirmed, so you must multiply by both carrier probabilities first.",
+              "score": -1
+            },
+            {
+              "text": "2/3 + 1/25 + 1/4",
+              "next": "s4",
+              "feedback": "Adding gives a probability larger than any single term, which should immediately look wrong. Use the sum rule only for mutually exclusive alternatives, never for a chain of conditions.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "The partner has carrier screening on a panel that detects about `90 percent` of variants in this population. His result is negative. What do you tell the couple?",
+          "choices": [
+            {
+              "text": "His risk is now essentially zero and no further discussion is needed",
+              "next": "s5",
+              "feedback": "No screen detects everything. Declaring zero risk overstates the test and is the error the concept of residual risk exists to prevent.",
+              "score": -1
+            },
+            {
+              "text": "His carrier risk drops substantially but not to zero; the leftover chance that he carries an undetected variant is the residual risk",
+              "next": "s5",
+              "feedback": "Correct framing. A negative on a 90 percent panel leaves roughly a tenth of the original risk, so about 1 in 250 rather than 1 in 25, and the couple's risk falls proportionally.",
+              "score": 1
+            },
+            {
+              "text": "The result is meaningless without testing her first",
+              "next": "s5",
+              "feedback": "Testing order can matter for efficiency, but his negative result is genuinely informative on its own. It lowers, without eliminating, his contribution to the risk.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "The couple then asks about their own relatedness: they are second cousins. How does consanguinity change the picture, and what do you say about it?",
+          "choices": [
+            {
+              "text": "It raises the chance they share a rare recessive allele inherited from a common ancestor, increasing homozygosity in offspring without changing population allele frequencies",
+              "next": "s6",
+              "feedback": "Correct mechanism. Consanguinity does not create new alleles; it makes it more likely that both copies a child receives come from the same ancestral source.",
+              "score": 1
+            },
+            {
+              "text": "It increases the frequency of the disease allele in the population",
+              "next": "s6",
+              "feedback": "Allele frequencies are unchanged by mating patterns. What changes is genotype distribution, with more homozygotes and fewer heterozygotes than Hardy-Weinberg predicts.",
+              "score": -1
+            },
+            {
+              "text": "It has no effect at all, since cystic fibrosis is common enough already",
+              "next": "s6",
+              "feedback": "The effect is modest for common recessive alleles and large for rare ones, but it is never zero. First cousins share 1/8 of their genes and second cousins about 1/32.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "prompt": "Final item on the worksheet: the woman asks you directly whether she should have prenatal diagnostic testing. What is the appropriate counseling stance?",
+          "choices": [
+            {
+              "text": "Lay out her options, the risks and the detection rates, and support whichever decision she makes",
+              "next": "end",
+              "feedback": "That is nondirective counseling, the professional standard. Your job is to make the choice informed, not to make it for her.",
+              "score": 1
+            },
+            {
+              "text": "Recommend amniocentesis, since her family history makes it the safest course",
+              "next": "end",
+              "feedback": "Directive advice, and it also misstates safety: amniocentesis carries about a 1 in 400 loss risk, which is a real tradeoff she has to weigh herself.",
+              "score": -1
+            },
+            {
+              "text": "Suggest she first be tested for the specific variant her brother carries, then revisit the question with a sharper number",
+              "next": "end",
+              "feedback": "A good practical sequencing suggestion. Knowing the familial variant makes her own test definitive and can remove the question entirely if she is negative.",
+              "score": 0
+            }
+          ]
+        }
+      ],
+      "debrief": "The pattern to carry out of this problem: population math and family math answer different questions, and you need both. Hardy-Weinberg tells you about a stranger — take the square root of the disease frequency to get q, then double it for the carrier frequency, since p is near 1 for any rare allele. A pedigree tells you about a relative, and it always beats the population number: the unaffected sibling of an affected child is a carrier with probability 2/3, not 1/25. Combining them is the product rule, one link per condition: she carries, and he carries, and both transmit. Then remember what testing does and does not do. A negative screen scales risk down by the detection rate, it never zeroes it, and the leftover is the residual risk you are obligated to name. Consanguinity shifts genotypes toward homozygosity without touching allele frequencies. And the counseling itself stays nondirective — you supply the numbers and the options, the patient supplies the decision."
+    }
+  ]
+}

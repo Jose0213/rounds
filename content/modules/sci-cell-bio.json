@@ -1,0 +1,1741 @@
+{
+  "schema": 1,
+  "id": "sci-cell-bio",
+  "track": "prereq",
+  "title": "Cell Biology",
+  "short": "Cell Biology",
+  "summary": "The upper-division Cell Biology course required in the Thomas Edison State University BA in Biology plan, taught in syllabus order with mechanism-first explanations rather than vocabulary lists. Every organelle, pathway and technique is tied to a clinical or health-science consequence, from cystic fibrosis to targeted cancer therapy.",
+  "lessons": [
+    {
+      "id": "sci-cell-bio-l01",
+      "title": "Cell theory and how we actually see cells",
+      "minutes": 8,
+      "body": "Everything in this course rests on one claim and one limitation. The claim is the **cell theory**: all living things are made of cells, the cell is the smallest unit that is alive, and every cell comes from a pre-existing cell. The limitation is that cells are mostly invisible, so almost every fact you will learn came out of an instrument that had to be invented first.\n\n## Why resolution, not magnification, is the real limit\n\nMagnification just makes an image bigger. **Resolution** is the smallest distance between two points that still look like two points. Light physically cannot resolve detail finer than about half its wavelength, so a light microscope using visible light (roughly `400-700 nm`) tops out near `200 nm` of resolution no matter how much you magnify.\n\nThat single number explains the shape of the field. A typical animal cell is `10-30 micrometers` across and a bacterium is about `1-2 micrometers`, so light is fine for cells. A mitochondrion at `0.5-1 micrometer` is visible but blurry. A ribosome at `25 nm`, a membrane at `5 nm`, a DNA double helix at `2 nm` are all invisible to light.\n\nElectrons have a far shorter wavelength, so an **electron microscope (EM)** resolves to roughly `0.1 nm` in principle and `1-2 nm` on real biological samples. The price is that specimens must be fixed, dehydrated and put in a vacuum, so nothing in an EM image is alive.\n\n> **Key:** Light microscopy resolves to about `200 nm` and can watch living cells. Electron microscopy resolves about a thousand times finer but only on dead, fixed material. Choose the instrument by the size of the thing and whether it must be alive.\n\n## The working toolkit\n\n- **Brightfield** — light through a stained, usually dead specimen. Cheap, low contrast on living cells.\n- **Phase contrast** and **differential interference contrast (DIC)** — convert differences in refractive index into differences in brightness, so unstained living cells become visible. This is how you watch a cell divide.\n- **Fluorescence** — a molecule (fluorophore) absorbs short-wavelength light and emits longer-wavelength light. Attach the fluorophore to an antibody (immunofluorescence) or fuse it genetically as **green fluorescent protein (GFP)** and one specific protein lights up against a black background.\n- **Confocal** — a pinhole rejects light from out-of-focus planes, producing a clean optical slice and letting you stack slices into a three-dimensional image.\n- **Transmission EM (TEM)** — electrons pass through an ultrathin section, giving internal structure. **Scanning EM (SEM)** scans a surface, giving three-dimensional surface topography at lower resolution.\n\n## Cell fractionation: taking the cell apart\n\nMicroscopy shows you where things are; **fractionation** lets you do chemistry on them. Break the cells open gently (homogenize), then spin the slurry in a centrifuge at increasing speed. Bigger and denser particles pellet first.\n\n1. `~1,000 x g` for 10 minutes pellets nuclei and unbroken cells.\n2. `~10,000 x g` for 20 minutes pellets mitochondria and lysosomes.\n3. `~100,000 x g` for 60 minutes pellets microsomes, the vesicle fragments of endoplasmic reticulum and plasma membrane.\n4. What stays in the supernatant is cytosol with its soluble proteins.\n\nThis is called **differential centrifugation**. To purify further you layer the sample on a density gradient (sucrose or cesium chloride) and spin until each particle stops at its own buoyant density, which is **density gradient centrifugation**.\n\n> **Trap:** A pellet is enriched, not pure. The classic exam move is to confirm a fraction with a **marker enzyme** — cytochrome c oxidase for mitochondria, acid phosphatase for lysosomes, glucose-6-phosphatase for endoplasmic reticulum.",
+      "keyPoints": [
+        "Resolution, not magnification, sets what you can see: light about 200 nm, electron microscopy about 0.1 nm.",
+        "Phase contrast and DIC image living unstained cells; fluorescence and GFP image one chosen molecule.",
+        "Confocal removes out-of-focus light to give clean optical sections and 3D stacks.",
+        "Differential centrifugation pellets nuclei, then mitochondria and lysosomes, then microsomes, leaving cytosol.",
+        "Marker enzymes prove which organelle a fraction actually contains."
+      ],
+      "checks": [
+        {
+          "q": "You need to watch an unstained living cell divide over four hours. Which method fits?",
+          "choices": [
+            "Transmission electron microscopy",
+            "Phase contrast microscopy",
+            "Scanning electron microscopy",
+            "Density gradient centrifugation"
+          ],
+          "answer": 1,
+          "why": "Phase contrast creates contrast from refractive index differences, so no stain or fixation is needed and the cell stays alive. Both EM methods require fixed, dehydrated specimens in a vacuum."
+        },
+        {
+          "q": "Approximately what is the resolution limit of a visible-light microscope?",
+          "choices": [
+            "2 nm",
+            "20 nm",
+            "200 nm",
+            "2 micrometers"
+          ],
+          "answer": 2,
+          "why": "Resolution is capped near half the wavelength of the light used, so visible light lands around 200 nm. 2 nm and 20 nm belong to electron microscopy, and 2 micrometers would be worse than any real light microscope."
+        },
+        {
+          "q": "After spinning a homogenate at 1,000 x g for 10 minutes, what is in the pellet?",
+          "choices": [
+            "Nuclei",
+            "Mitochondria",
+            "Microsomes",
+            "Cytosolic enzymes"
+          ],
+          "answer": 0,
+          "why": "Nuclei are the largest and densest organelles, so they pellet at the lowest speed. Mitochondria need about 10,000 x g, microsomes about 100,000 x g, and soluble cytosolic enzymes never pellet."
+        }
+      ]
+    },
+    {
+      "id": "sci-cell-bio-l02",
+      "title": "The chemistry a cell runs on",
+      "minutes": 8,
+      "body": "A cell is a bag of water with rules. Roughly `70%` of cell mass is water, and nearly every structure in the cell exists because of how molecules behave in water.\n\n## Water, pH and buffers\n\nWater is bent and polar, so it hydrogen bonds with itself and with anything charged. Molecules that hydrogen bond with water dissolve (**hydrophilic**); molecules that cannot are pushed together by water reorganizing around them (**hydrophobic effect**). That effect, not any attraction between lipids, is what drives membranes to form and proteins to fold.\n\npH is the negative log of hydrogen ion concentration, so each pH unit is a tenfold change. Blood is held at `7.35-7.45` and cytosol sits near `7.2`; a lysosome runs at `4.5-5.0`. A **buffer** is a weak acid plus its conjugate base that soaks up added acid or base, and the main extracellular buffer is bicarbonate paired with carbon dioxide.\n\n## The four noncovalent bonds\n\nCovalent bonds (roughly `350 kJ/mol` for a C-C bond) build molecules. Noncovalent bonds, each only `1-20 kJ/mol`, build the cell, because they are weak enough to break on demand and strong enough in numbers.\n\n- **Hydrogen bonds** — a shared hydrogen between electronegative atoms. Hold base pairs and secondary structure.\n- **Ionic bonds (salt bridges)** — full opposite charges; weakened in water.\n- **Van der Waals** — transient dipoles, only over very short distances, but they sum over a large complementary surface.\n- **Hydrophobic interactions** — nonpolar groups excluded from water.\n\n> **Key:** Specificity in biology comes from many weak bonds over a matched surface. That is why an antibody binds one antigen, why a drug fits one receptor, and why heat or pH change destroys binding without breaking a single covalent bond.\n\n## Proteins and folding\n\nTwenty amino acids share a backbone and differ in the side chain (R group). Primary structure is the sequence; **secondary** structure is the alpha helix and beta sheet held by backbone hydrogen bonds; **tertiary** is the full three-dimensional fold, driven mostly by burying hydrophobic side chains; **quaternary** is more than one folded chain assembled, as in hemoglobin's four subunits.\n\nSequence determines fold, but large proteins need help, so **chaperones** shield exposed hydrophobic patches until folding finishes. Misfolding is a disease mechanism in its own right: amyloid in Alzheimer disease, the misfolded prion protein in Creutzfeldt-Jakob disease, and the folding defect of the `F508del` CFTR protein in cystic fibrosis.\n\n## Lipids, sugars, nucleotides\n\nPhospholipids are **amphipathic**, a phosphate head with two fatty acid tails, which is the entire reason bilayers exist. Cholesterol is a rigid four-ring sterol that buffers membrane fluidity. Triglycerides store energy at about `9 kcal/g`, roughly twice carbohydrate or protein at `4 kcal/g`.\n\nCarbohydrates are fuel and, attached to proteins and lipids on the cell surface, the identity tags that determine ABO blood type. Nucleotides are a base plus a five-carbon sugar plus phosphate, and they do double duty as the letters of DNA and RNA and as energy and signaling molecules.\n\n## Free energy and ATP\n\nA reaction runs on its own when free energy change is negative (`delta G` less than zero, **exergonic**). Enzymes never change `delta G`; they lower the **activation energy** by stabilizing the transition state, so the same reaction happens far faster.\n\nCells drive unfavorable reactions by coupling them to ATP hydrolysis, which releases about `-30.5 kJ/mol` under standard conditions and closer to `-50 kJ/mol` in the cell. A typical human turns over roughly her own body weight in ATP each day, because ATP is a currency in constant circulation, not a battery in storage.\n\n> **Trap:** \"High-energy phosphate bond\" is a misleading phrase. The energy comes from the products being more stable and better solvated, not from something stored inside the bond itself.",
+      "keyPoints": [
+        "The hydrophobic effect, driven by water, folds proteins and assembles membranes.",
+        "Four noncovalent bonds at 1-20 kJ/mol each give specificity through numbers over a matched surface.",
+        "Protein structure runs primary, secondary, alpha helix and beta sheet, tertiary, quaternary; chaperones assist folding.",
+        "Negative delta G means spontaneous; enzymes lower activation energy and never change delta G.",
+        "ATP hydrolysis yields about -30.5 kJ/mol standard and is coupled to unfavorable reactions."
+      ],
+      "checks": [
+        {
+          "q": "An enzyme speeds a reaction 10,000-fold. What has it changed?",
+          "choices": [
+            "The free energy change of the reaction",
+            "The equilibrium constant",
+            "The activation energy",
+            "The concentration of product at equilibrium"
+          ],
+          "answer": 2,
+          "why": "Enzymes stabilize the transition state, lowering activation energy. Delta G, the equilibrium constant and the final equilibrium concentrations are properties of the reactants and products and are untouched by catalysis."
+        },
+        {
+          "q": "What mainly drives a soluble protein's hydrophobic side chains into its core?",
+          "choices": [
+            "Covalent disulfide bonds",
+            "The hydrophobic effect from water reorganization",
+            "Ionic attraction between side chains",
+            "ATP hydrolysis at each folding step"
+          ],
+          "answer": 1,
+          "why": "Water reorganizes around nonpolar groups at an entropic cost, so burying them is favorable. Disulfides lock a fold in place after the fact, ionic bonds are weak in water, and folding itself does not consume ATP directly."
+        }
+      ]
+    },
+    {
+      "id": "sci-cell-bio-l03",
+      "title": "Membranes: the bilayer, its proteins, and transport",
+      "minutes": 9,
+      "body": "A membrane is about `5 nm` thick, roughly the length of two fatty acid tails end to end. That thin sheet is what makes a cell a cell, because it lets the inside have a different composition than the outside.\n\n## The fluid mosaic model\n\nSinger and Nicolson described the membrane in 1972 as a two-dimensional fluid of lipids with proteins floating in it. Lipids move fast sideways, swapping with a neighbor millions of times per second, but they almost never **flip-flop** between leaflets on their own, because dragging a charged head group through the oily core is expensive. Enzymes called flippases and scramblases do that job when it needs doing.\n\nThe two leaflets are therefore chemically different, which is **membrane asymmetry**. Phosphatidylserine is kept on the inner leaflet; when it appears on the outside it is an \"eat me\" signal to macrophages, which is how early apoptotic cells are recognized and cleared.\n\nFluidity rises with heat and with unsaturated tails, whose kinks prevent tight packing, and falls with long saturated tails. Cholesterol is a two-way buffer: it stiffens fluid membranes and keeps cold membranes from gelling.\n\n## Membrane proteins\n\n**Integral** proteins pass into or through the bilayer, usually as alpha helices about 20 hydrophobic residues long, and only detergent removes them. **Peripheral** proteins sit on a face, held by charge, and come off with high salt. Carbohydrate chains attached to outward-facing proteins and lipids form the **glycocalyx**, the cell's outward identity layer.\n\n## Transport: four ways across\n\n1. **Simple diffusion** — small nonpolar or uncharged molecules (`O2`, `CO2`, urea, ethanol) dissolve straight through. No protein, no energy, down the gradient.\n2. **Channels** — a hydrophilic pore. Fast, up to `10^8` ions per second, always downhill, and usually gated by voltage or a ligand.\n3. **Carriers (transporters)** — bind the solute and change shape. Slower, `10^2-10^4` per second, saturable, so they show a maximum rate the way an enzyme does. GLUT1 carrying glucose downhill is facilitated diffusion.\n4. **Pumps** — use energy to move solute uphill. **Primary active transport** burns ATP directly; **secondary active transport** rides the gradient a pump already built, as `SGLT1` in the intestine drags glucose in against its gradient using the inward sodium gradient.\n\n> **Key:** Channels and carriers are both passive facilitated transport and both are protein-mediated, but only carriers saturate. If a graph of rate against concentration plateaus, you are looking at a carrier or a pump, not a channel.\n\n## The sodium-potassium pump and membrane potential\n\nThe **Na+/K+-ATPase** exports `3 Na+` and imports `2 K+` per ATP hydrolyzed. Because it moves three positive charges out for every two in, it is electrogenic and contributes a small direct share of the voltage. It consumes something like `20-30%` of a resting cell's ATP, and far more in neurons.\n\nTypical concentrations are Na+ about `145 mM` outside and `12 mM` inside, K+ about `4 mM` outside and `140 mM` inside. Leak channels make the resting membrane most permeable to K+, so potassium exits down its gradient and leaves negative charge behind. The result is a resting **membrane potential** near `-70 mV` in a neuron, inside negative.\n\n## Bulk transport and clinical hooks\n\nLarge material moves in vesicles. **Endocytosis** takes material in: phagocytosis for particles, pinocytosis for fluid, and **receptor-mediated endocytosis** for specific cargo through clathrin-coated pits. LDL particles enter that way through the LDL receptor; a broken receptor causes familial hypercholesterolemia, and **statins** work partly by making liver cells display more LDL receptors. **Exocytosis** fuses a vesicle with the plasma membrane to release contents outward.\n\n> **Trap:** In cystic fibrosis the defective **CFTR** protein is a chloride channel, not a pump. Losing chloride secretion pulls water out of airway mucus and leaves it thick, and the same defect explains a sweat chloride above `60 mmol/L`. Digoxin blocks the Na+/K+-ATPase, so intracellular sodium rises, the sodium-calcium exchanger slows, calcium accumulates, and the heart contracts harder.",
+      "keyPoints": [
+        "The bilayer is about 5 nm thick, fluid sideways, and asymmetric between leaflets.",
+        "Simple diffusion, channels, carriers and pumps differ in speed, saturability and energy use.",
+        "Na+/K+-ATPase moves 3 Na+ out and 2 K+ in per ATP and is electrogenic.",
+        "Resting potential near -70 mV comes mostly from K+ leaking out down a 140 mM to 4 mM gradient.",
+        "CFTR is a chloride channel; digoxin poisons the sodium pump; statins raise LDL-receptor endocytosis."
+      ],
+      "checks": [
+        {
+          "q": "Glucose uptake into a red blood cell plateaus as external glucose rises. What does the plateau indicate?",
+          "choices": [
+            "Simple diffusion through the bilayer",
+            "A saturable carrier protein",
+            "An ungated ion channel",
+            "Primary active transport"
+          ],
+          "answer": 1,
+          "why": "Saturation means a finite number of binding sites, the signature of a carrier such as GLUT1. Simple diffusion rises linearly forever, channels do not saturate at physiological concentrations, and glucose entry here is downhill so no ATP is spent."
+        },
+        {
+          "q": "What is the stoichiometry of the Na+/K+-ATPase per ATP hydrolyzed?",
+          "choices": [
+            "2 Na+ out, 3 K+ in",
+            "1 Na+ out, 1 K+ in",
+            "3 Na+ out, 2 K+ in",
+            "3 Na+ in, 2 K+ out"
+          ],
+          "answer": 2,
+          "why": "Three sodium ions leave and two potassium ions enter, which is why the pump is electrogenic and helps hold the inside negative. Reversing the directions would destroy the gradients the cell depends on."
+        },
+        {
+          "q": "Why does mucus become thick in cystic fibrosis?",
+          "choices": [
+            "A defective chloride channel reduces salt and water secretion",
+            "A defective sodium pump floods cells with sodium",
+            "Mucin proteins are overproduced by goblet cells",
+            "Cilia lack dynein arms and cannot beat"
+          ],
+          "answer": 0,
+          "why": "CFTR is a cAMP-regulated chloride channel; without chloride secretion, water does not follow into the airway surface liquid. The sodium pump is normal, mucin output is not the primary defect, and absent dynein arms describe Kartagener syndrome instead."
+        }
+      ]
+    },
+    {
+      "id": "sci-cell-bio-l04",
+      "title": "Nucleus, chromatin, replication and repair",
+      "minutes": 9,
+      "body": "A human diploid cell holds about `6.4 billion` base pairs, roughly `2 meters` of DNA, inside a nucleus about `6 micrometers` across. Packing that without tangling it, and copying it without corrupting it, is the nucleus's whole job.\n\n## Chromatin packing\n\nThe repeating unit is the **nucleosome**: `147 base pairs` of DNA wrapped `1.65` turns around a histone octamer of two copies each of H2A, H2B, H3 and H4. Histone H1 clamps the linker DNA between nucleosomes. Histones are strongly positive because they are rich in lysine and arginine, which grips the negative DNA backbone.\n\nPacking is regulated, not fixed. **Histone acetylation** by histone acetyltransferases neutralizes positive charge, loosens the grip and favors transcription; histone deacetylases reverse it and silence. Adding methyl groups to cytosine in **CpG islands** generally silences a promoter. Loose, transcribed chromatin is **euchromatin**; dense, silent chromatin is **heterochromatin**, and the inactive X chromosome (the Barr body) is the classic example.\n\n## The nuclear envelope and pore\n\nThe envelope is two membranes, the outer one continuous with rough endoplasmic reticulum, lined inside by a mesh of **lamins**. **Nuclear pore complexes** are enormous assemblies, roughly `120 nm` across in vertebrates, that let ions and small proteins under about `40 kDa` pass freely while larger cargo needs a **nuclear localization signal** read by importins, with the direction of transport set by a Ran-GTP gradient.\n\n## Replication\n\nReplication is **semiconservative**: each daughter duplex keeps one old strand. Eukaryotes fire thousands of **origins of replication** so a genome that would take a month from one origin finishes in hours. Origins are licensed in G1 and fired once in S phase, which is how the cell avoids copying any region twice.\n\nAt the fork:\n\n- **Helicase** unwinds the duplex; single-strand binding proteins keep it open; **topoisomerase** relieves the supercoiling ahead.\n- **Primase** lays an RNA primer, because no DNA polymerase can start a chain from nothing.\n- **DNA polymerase** extends only `5' to 3'`, so the **leading strand** runs continuously toward the fork and the **lagging strand** is built backward in `Okazaki fragments` of about `100-200 nucleotides` in eukaryotes.\n- Primers are removed, gaps filled, and **DNA ligase** seals the nicks.\n\nFidelity comes in layers: base pairing alone gives about one error in `10^5`, polymerase `3' to 5'` proofreading takes it to about `10^7`, and mismatch repair finishes near `10^9-10^10`.\n\n## Telomeres\n\nThe lagging strand cannot be completed at the very end of a linear chromosome, so chromosomes shorten each division. Ends carry the repeat `TTAGGG` in humans, thousands of copies long, tucked into a protective loop. **Telomerase**, a reverse transcriptase carrying its own RNA template, rebuilds the repeat but is active mainly in germ cells, stem cells and about `85-90%` of cancers. Somatic cells lose telomere and eventually stop dividing, which is replicative senescence.\n\n> **Key:** Telomerase reactivation is one of the things that makes a tumor cell immortal. Normal somatic cells run out of telomere after roughly 40 to 60 divisions, the Hayflick limit.\n\n## Repair\n\n- **Mismatch repair** fixes bases the polymerase got wrong and slipped repeats. Losing MSH2 or MLH1 causes Lynch syndrome, hereditary nonpolyposis colorectal cancer, and shows as microsatellite instability.\n- **Base excision repair** removes one damaged base, such as a cytosine spontaneously deaminated to uracil, using a glycosylase.\n- **Nucleotide excision repair** cuts out a stretch around a bulky lesion, notably the thymine dimers ultraviolet light creates. Losing it causes xeroderma pigmentosum, with extreme sun sensitivity and early skin cancers.\n- **Double-strand breaks** are the dangerous ones. **Homologous recombination** uses the sister chromatid and is accurate but only available in S and G2; **nonhomologous end joining** glues ends back together any time but can lose bases. BRCA1 and BRCA2 work in homologous recombination, which is why their loss drives breast and ovarian cancer.\n\n> **Trap:** Nucleotide excision repair removes a patch of roughly `24-32 nucleotides` around a bulky lesion; base excision repair removes a single base. Matching the repair pathway to the lesion size is the standard exam question.",
+      "keyPoints": [
+        "A nucleosome is 147 bp around a histone octamer; acetylation opens chromatin, methylation of CpG islands silences it.",
+        "Replication is semiconservative, uses many origins, and needs an RNA primer because polymerase only extends 5' to 3'.",
+        "Proofreading plus mismatch repair push the error rate to roughly one in 10^9 bases.",
+        "Human telomeres repeat TTAGGG and are rebuilt by telomerase, active in germ, stem and most cancer cells.",
+        "Match repair to damage: base excision for one base, nucleotide excision for bulky lesions, HR or NHEJ for double-strand breaks."
+      ],
+      "checks": [
+        {
+          "q": "Why must the lagging strand be made in short fragments?",
+          "choices": [
+            "Helicase unwinds the two strands at different speeds",
+            "DNA polymerase can only extend a strand 5' to 3'",
+            "Primase cannot work on the leading strand",
+            "Ligase can only seal short pieces"
+          ],
+          "answer": 1,
+          "why": "Because synthesis is strictly 5' to 3', the strand running the wrong way relative to the fork must be restarted repeatedly as Okazaki fragments. Helicase speed, primase specificity and ligase capacity are not the constraint."
+        },
+        {
+          "q": "A colon tumor shows microsatellite instability and loss of MLH1. Which repair system failed?",
+          "choices": [
+            "Nucleotide excision repair",
+            "Base excision repair",
+            "Mismatch repair",
+            "Nonhomologous end joining"
+          ],
+          "answer": 2,
+          "why": "MLH1 is a mismatch repair protein, and slipped repeats at microsatellites are its signature substrate. Nucleotide excision repair handles bulky lesions such as thymine dimers, base excision repair handles single damaged bases, and end joining handles double-strand breaks."
+        },
+        {
+          "q": "What is the human telomere repeat sequence?",
+          "choices": [
+            "CCCTAA on the synthesized strand only",
+            "TTAGGG",
+            "GGGATT",
+            "CAGCAG"
+          ],
+          "answer": 1,
+          "why": "TTAGGG repeats thousands of times at human chromosome ends. CCCTAA is simply its complement read the other way, and CAGCAG is the trinucleotide repeat expanded in Huntington disease."
+        }
+      ]
+    },
+    {
+      "id": "sci-cell-bio-l05",
+      "title": "Gene expression and where proteins are sent",
+      "minutes": 9,
+      "body": "Information runs DNA to RNA to protein, but in a eukaryote nearly every step is also a control point and a delivery decision. A protein delivered to the wrong compartment is as useless as one never made.\n\n## Transcription\n\n**RNA polymerase II** transcribes protein-coding genes, with general transcription factors assembled at a promoter, commonly a TATA box about `25-30 bases` upstream of the start, plus distant **enhancers** looped in by activator proteins. Polymerase reads the template strand `3' to 5'` and builds RNA `5' to 3'`, using uracil where DNA would use thymine, and unlike DNA polymerase it can start without a primer.\n\n## RNA processing\n\nThe primary transcript is modified three ways before leaving the nucleus.\n\n1. A `7-methylguanosine` **cap** is added to the `5'` end; it protects the transcript and is what the small ribosomal subunit recognizes.\n2. A **poly-A tail** of roughly `200 adenines` is added to the `3'` end after cleavage at a `AAUAAA` signal; tail length tracks with stability.\n3. **Splicing** removes introns and joins exons. The **spliceosome**, built from small nuclear ribonucleoproteins, recognizes a `GU` at the intron start and an `AG` at its end. **Alternative splicing** lets one gene yield many proteins and applies to roughly `95%` of human multi-exon genes.\n\n> **Key:** Splice-site mutations are a real disease class, not a technicality. Many beta-thalassemia alleles are splice mutations that let an intron stay in the message.\n\n## Translation\n\nThe genetic code is read in triplets: `64 codons`, `61` for amino acids and `3` stop codons, with `AUG` both the start codon and methionine. The code is degenerate (several codons per amino acid) but not ambiguous (one codon never means two things).\n\nThe eukaryotic ribosome is `80S`, made of a `60S` large and `40S` small subunit; a bacterial ribosome is `70S` from `50S` plus `30S`. That difference is exactly why aminoglycosides and macrolides can poison a bacterium and leave the patient's ribosomes alone. tRNA carries an anticodon on one end and its amino acid on the other, ribosomal RNA forms the peptide bond as a ribozyme, and the chain grows from N-terminus to C-terminus.\n\n## Targeting: the fork in the road\n\nEvery ribosome starts free in the cytosol, and what happens next depends on the first stretch of the new chain.\n\nIf the chain begins with a hydrophobic **signal sequence** of about `16-30 residues`, a **signal recognition particle (SRP)** binds it, pauses translation and docks the complex on the rough endoplasmic reticulum. Translation resumes through a translocon into the ER lumen, and signal peptidase clips the sequence off. With no signal sequence the protein finishes in the cytosol, and its own targeting signal may then send it to nucleus, mitochondrion or peroxisome.\n\nIn the ER the protein folds with chaperone help, gains disulfide bonds and receives core N-linked sugars. Misfolded protein is pulled back out and destroyed, which is **ER-associated degradation**.\n\n## The secretory pathway\n\nVesicles carry cargo from ER to Golgi onward, and the coat protein names the route.\n\n- **COPII** coats vesicles going forward, ER to Golgi (think \"COPII, ship out\").\n- **COPI** coats vesicles going back, Golgi to ER, retrieving escaped resident proteins.\n- **Clathrin** coats vesicles leaving the trans-Golgi network for lysosomes and coats endocytic pits at the plasma membrane.\n\nThe Golgi is a stack read cis to trans that finishes sugars and sorts cargo. Delivery specificity comes from **Rab GTPases**, tethers and **SNARE** proteins pairing a v-SNARE on the vesicle with a t-SNARE on the target. Botulinum toxin cleaves SNAREs at the neuromuscular junction, which is why it paralyzes.\n\n## Destruction: lysosome and proteasome\n\nEnzymes bound for the **lysosome** are tagged in the cis-Golgi with **mannose-6-phosphate**. Losing the enzyme that adds the tag causes **I-cell disease**: hydrolases are secreted instead of delivered and inclusions build up. Losing one hydrolase gives one storage disease, as hexosaminidase A deficiency gives **Tay-Sachs** with GM2 ganglioside filling neurons.\n\nShort-lived and damaged cytosolic proteins take the other route: tagged with a chain of **ubiquitin** and fed to the `26S` **proteasome**, which unfolds and shreds them using ATP. Bortezomib, used in multiple myeloma, is that pathway turned into a drug.\n\n> **Trap:** Lysosome for extracellular and membrane material delivered by vesicles, proteasome for cytosolic and nuclear proteins tagged with ubiquitin. Exams love to swap them.",
+      "keyPoints": [
+        "Processing adds a 7-methylguanosine cap and a roughly 200-base poly-A tail and removes introns at GU-AG boundaries.",
+        "Eukaryotic ribosomes are 80S (60S plus 40S); bacterial are 70S (50S plus 30S), the basis of antibiotic selectivity.",
+        "An N-terminal signal sequence plus SRP diverts translation to the rough ER; without it the protein stays cytosolic.",
+        "COPII goes ER to Golgi, COPI goes Golgi back to ER, clathrin goes trans-Golgi to lysosome and drives endocytosis.",
+        "Mannose-6-phosphate targets lysosomal enzymes; losing the tag causes I-cell disease. Ubiquitin targets the 26S proteasome."
+      ],
+      "checks": [
+        {
+          "q": "A protein destined for secretion is being made. What happens first?",
+          "choices": [
+            "A free cytosolic ribosome begins translating and SRP binds the emerging signal sequence",
+            "A ribosome permanently bound to the ER begins translating",
+            "The mRNA is transported into the ER lumen and translated there",
+            "The finished protein is imported into the ER through a nuclear pore"
+          ],
+          "answer": 0,
+          "why": "All translation starts on free ribosomes; SRP recognizing the signal sequence is what docks that ribosome onto the ER. Ribosomes are not permanently ER-resident, mRNA never enters the ER lumen, and nuclear pores serve the nucleus, not the ER."
+        },
+        {
+          "q": "Fibroblasts from a child secrete lysosomal hydrolases instead of delivering them. Which step failed?",
+          "choices": [
+            "Removal of the signal sequence",
+            "Poly-A tail addition",
+            "Addition of mannose-6-phosphate in the cis-Golgi",
+            "Ubiquitin tagging for the proteasome"
+          ],
+          "answer": 2,
+          "why": "Mannose-6-phosphate is the address label for the lysosome; without it, enzymes default to secretion, which is I-cell disease. The other steps would block the protein far earlier or route it to a different destruction pathway entirely."
+        },
+        {
+          "q": "Which coat protein carries vesicles from the Golgi back to the ER?",
+          "choices": [
+            "COPII",
+            "Clathrin",
+            "Caveolin",
+            "COPI"
+          ],
+          "answer": 3,
+          "why": "COPI runs retrograde, retrieving escaped ER-resident proteins. COPII runs the forward ER-to-Golgi leg, clathrin handles trans-Golgi to lysosome and endocytosis, and caveolin forms a separate uptake pathway."
+        }
+      ]
+    },
+    {
+      "id": "sci-cell-bio-l06",
+      "title": "Cytoskeleton, motors and cell movement",
+      "minutes": 8,
+      "body": "The cytoskeleton is not a skeleton. Two of its three systems are constantly being built and torn down, and that turnover is what lets a cell change shape, crawl, divide and haul cargo.\n\n## Three filament systems\n\n| Filament | Diameter | Subunit | Main jobs |\n|---|---|---|---|\n| Microfilaments (actin) | 7 nm | G-actin, ATP-binding | Cell shape, crawling, cytokinesis, muscle |\n| Intermediate filaments | 10 nm | Keratins, lamins, vimentin | Pure mechanical strength |\n| Microtubules | 25 nm | Alpha/beta tubulin dimer, GTP-binding | Tracks, mitotic spindle, cilia, organelle position |\n\n**Actin** filaments are two strands twisted together with a fast-growing plus (barbed) end and a slow minus (pointed) end. At a particular subunit concentration a filament adds at the plus end and loses at the minus end at the same rate, so it stays the same length while subunits travel through it. That is **treadmilling**.\n\n**Intermediate filaments** are the odd one out: no polarity, no nucleotide, no motor proteins, and far more stable. They exist to resist pulling. Keratin mutations cause the blistering skin disease epidermolysis bullosa simplex, and lamin mutations cause several muscular dystrophies and progeria.\n\n**Microtubules** are hollow tubes of `13 protofilaments`, nucleated in animal cells at a centrosome containing a pair of centrioles, with the minus end anchored there and the plus end exploring outward.\n\n## Dynamic instability\n\nA microtubule does not grow steadily; it grows, then abruptly shrinks (catastrophe), then may grow again (rescue). Each beta-tubulin arrives with GTP bound and hydrolyzes it soon after incorporation. While a **GTP cap** remains at the plus end the tube is stable; lose the cap and the GDP-tubulin lattice peels apart fast.\n\nThat instability is why the mitotic spindle can search the cytoplasm and capture kinetochores in minutes, and it is why microtubules are such good chemotherapy targets.\n\n> **Key:** **Taxanes** (paclitaxel) stabilize microtubules so they cannot depolymerize; **vinca alkaloids** (vincristine, vinblastine) block polymerization. Opposite mechanisms, same net result, mitotic arrest. **Colchicine**, used in gout, also blocks polymerization, which is how it stops neutrophils from migrating into the joint.\n\n## Motor proteins\n\nMotors burn ATP to walk along a filament in one direction.\n\n- **Myosins** walk on actin, generally toward the plus end. Myosin II in muscle pulls actin past itself in the sliding-filament cycle and is also what tightens the contractile ring in cytokinesis.\n- **Kinesins** walk on microtubules toward the plus end, so in a neuron they carry cargo outward from the cell body (anterograde).\n- **Dynein** walks toward the minus end, so it carries cargo back to the cell body (retrograde), positions the Golgi near the centrosome, and powers ciliary beating.\n\nMnemonic that survives: kinesin is kicking cargo out, dynein is dragging it down to the center.\n\n## Cilia and flagella\n\nA motile cilium has the **9+2 axoneme**: nine outer doublet microtubules around a central pair, anchored in a basal body that is a centriole with a `9+0` triplet arrangement. Bending happens because **axonemal dynein** arms try to slide adjacent doublets past each other while nexin links hold them together, converting sliding into bending.\n\nMissing or defective dynein arms give **primary ciliary dyskinesia**; the classic triad, Kartagener syndrome, is chronic sinusitis, bronchiectasis and situs inversus, with male infertility from immotile sperm, because the same machinery drives the embryonic node, the airway and the sperm tail.\n\n## Cell crawling\n\nA cell crawls in a repeating cycle:\n\n1. Actin polymerizes at the front, pushing out a broad **lamellipodium** or spiky **filopodia**.\n2. New adhesions form to the substrate through integrins.\n3. Myosin pulls the body forward against those anchors.\n4. Rear adhesions release and rear actin disassembles.\n\nSmall GTPases direct traffic: Rac drives lamellipodia, Cdc42 drives filopodia, Rho drives stress fibers and contraction. The same program serves a neutrophil chasing bacteria and a tumor cell leaving its primary site.\n\n> **Trap:** Intermediate filaments have no motor proteins and no polarity, so no cargo travels on them. Any question about transport is asking about actin or microtubules.",
+      "keyPoints": [
+        "Actin 7 nm, intermediate filaments 10 nm, microtubules 25 nm from alpha/beta tubulin in 13 protofilaments.",
+        "Dynamic instability depends on a GTP cap at the microtubule plus end.",
+        "Kinesin walks to the plus end (anterograde), dynein to the minus end (retrograde), myosin on actin.",
+        "Motile cilia have a 9+2 axoneme; dynein arm defects cause Kartagener syndrome.",
+        "Taxanes stabilize and vinca alkaloids and colchicine block microtubule polymerization."
+      ],
+      "checks": [
+        {
+          "q": "A drug freezes microtubules so they cannot shorten, arresting cells in mitosis. Which drug class is this?",
+          "choices": [
+            "Vinca alkaloids",
+            "Taxanes",
+            "Colchicine",
+            "Cytochalasin"
+          ],
+          "answer": 1,
+          "why": "Taxanes hyperstabilize microtubules, which blocks the disassembly mitosis requires. Vincas and colchicine do the opposite by preventing polymerization, and cytochalasin acts on actin."
+        },
+        {
+          "q": "A neuron must move synaptic vesicle precursors from the cell body to the axon terminal. Which motor?",
+          "choices": [
+            "Dynein along microtubules",
+            "Myosin II along intermediate filaments",
+            "Kinesin along microtubules",
+            "Dynein along actin"
+          ],
+          "answer": 2,
+          "why": "Kinesin moves toward the plus end, which points away from the cell body, so it handles anterograde transport. Dynein runs retrograde, and intermediate filaments carry no motors at all."
+        },
+        {
+          "q": "Chronic sinusitis, bronchiectasis and situs inversus in one patient points to a defect in what?",
+          "choices": [
+            "Keratin intermediate filaments",
+            "Actin treadmilling",
+            "Clathrin-coated pits",
+            "Axonemal dynein arms"
+          ],
+          "answer": 3,
+          "why": "Kartagener syndrome comes from absent or defective dynein arms, disabling cilia in the airway and the embryonic node that sets left-right asymmetry. Keratin defects blister skin, and the other two have no role in ciliary beating."
+        }
+      ]
+    },
+    {
+      "id": "sci-cell-bio-l07",
+      "title": "Cell signaling: receptors, second messengers, cascades",
+      "minutes": 9,
+      "body": "A cell cannot see. Everything it knows arrives as a molecule binding a receptor, and what follows is a chain of protein state changes. Most drugs act somewhere in this lesson.\n\n## Where the receptor sits\n\nHydrophobic messengers cross the membrane and bind **intracellular receptors**: steroid hormones, thyroid hormone, vitamin D, retinoic acid. Those receptor complexes act as transcription factors, so the response takes hours and lasts. Everything else, being water-soluble, binds a **cell-surface receptor** and the response can be milliseconds.\n\nThree surface receptor families cover most of the material:\n\n1. **Ion-channel-coupled (ionotropic)** — ligand binding opens a pore. The nicotinic acetylcholine receptor at the neuromuscular junction is the model.\n2. **G-protein-coupled receptors (GPCRs)** — a seven-pass membrane protein, the largest receptor family in the genome at roughly `800` members and the target of perhaps a third of prescription drugs.\n3. **Enzyme-coupled**, mainly **receptor tyrosine kinases (RTKs)**.\n\n## How a GPCR works\n\nThe resting G protein is a trimer, alpha-beta-gamma, with **GDP** on the alpha subunit. Ligand binds, the receptor changes shape and acts as a guanine nucleotide exchange factor, so alpha swaps GDP for **GTP** and separates. Alpha-GTP goes and changes an effector enzyme. The alpha subunit's own slow GTPase activity then hydrolyzes GTP back to GDP, the trimer reassembles, and the signal ends.\n\nThe alpha subunit's identity sets the outcome:\n\n- **Gs** activates adenylyl cyclase, raising **cAMP**, which activates protein kinase A.\n- **Gi** inhibits adenylyl cyclase, lowering cAMP.\n- **Gq** activates phospholipase C, which cuts membrane `PIP2` into **IP3** and **DAG**. IP3 opens calcium channels on the ER and releases stored `Ca2+`; DAG stays in the membrane and, with calcium, activates protein kinase C.\n\nCalcium is the most dramatic second messenger because the gradient is enormous: cytosolic free calcium sits near `100 nM` at rest against about `1-2 mM` outside, a ten-thousand-fold difference, so opening a channel briefly is enough to signal.\n\n> **Key:** **Cholera toxin** chemically modifies Gs so it can no longer hydrolyze GTP. Adenylyl cyclase never shuts off, cAMP stays high in gut epithelium, CFTR pours chloride into the lumen, water follows, and the patient loses liters a day. **Pertussis toxin** locks Gi off instead, with the same net effect of unopposed cAMP.\n\n## Receptor tyrosine kinases\n\nRTKs bind growth factors such as EGF, insulin and PDGF. Binding brings two receptors together (**dimerization**), each kinase domain phosphorylates tyrosines on its partner (**trans-autophosphorylation**), and those phosphotyrosines become docking sites for adaptor proteins with SH2 domains.\n\nThe canonical downstream route is the **MAP kinase cascade**: adaptor Grb2 recruits SOS, SOS loads **Ras** with GTP, Ras activates Raf, Raf phosphorylates MEK, MEK phosphorylates ERK, and ERK enters the nucleus to turn on genes for proliferation. A parallel branch runs PI3K to Akt to mTOR for growth and survival.\n\nRas is a small monomeric GTPase with the same GTP-on, GDP-off logic as the G-alpha subunit. A mutation that blocks its GTPase activity leaves it permanently on, which is why `RAS` mutations appear in roughly `25-30%` of all human cancers.\n\n## Amplification and termination\n\nEach step can multiply. One activated receptor can switch on tens of G proteins, one adenylyl cyclase makes thousands of cAMP molecules, and one kinase phosphorylates many substrates, so a handful of hormone molecules can restructure a cell's metabolism.\n\nTermination matters just as much. Signals stop when ligand dissociates, when G-alpha hydrolyzes its GTP, when **phosphodiesterase** degrades cAMP, when **phosphatases** strip phosphates off, and when receptors are desensitized by GRK phosphorylation and pulled inside by beta-arrestin. Caffeine works partly by inhibiting phosphodiesterase, so cAMP hangs around longer; sildenafil inhibits the cGMP-specific phosphodiesterase 5.\n\n> **Trap:** \"Amplification\" is not the same as \"strength of binding.\" A receptor with high affinity may produce a small response if the cascade below it is short. Ask how many catalytic steps sit between ligand and output.\n\n## Drugs on this map\n\nAlbuterol is a **beta-2 agonist**: a Gs-coupled GPCR on airway smooth muscle, cAMP up, muscle relaxes, bronchi dilate. Metoprolol is a **beta-1 blocker**: an antagonist at the Gs-coupled cardiac receptor, so cAMP falls and heart rate and contractility drop. Alpha-1 receptors are Gq-coupled, so their agonists raise calcium in vascular smooth muscle and constrict vessels.",
+      "keyPoints": [
+        "Steroid and thyroid hormones use intracellular receptors and change transcription; water-soluble signals use surface receptors.",
+        "Gs raises cAMP, Gi lowers it, Gq makes IP3 and DAG and releases stored calcium.",
+        "Cytosolic calcium is about 100 nM at rest versus 1-2 mM outside, a ten-thousand-fold gradient.",
+        "RTKs dimerize and trans-autophosphorylate, then run Ras to Raf to MEK to ERK.",
+        "Cholera toxin locks Gs on; beta-2 agonists like albuterol and beta-1 blockers like metoprolol act on Gs-coupled GPCRs."
+      ],
+      "checks": [
+        {
+          "q": "A toxin prevents the G-alpha-s subunit from hydrolyzing GTP. What is the immediate cellular consequence?",
+          "choices": [
+            "cAMP falls because adenylyl cyclase is trapped inactive",
+            "IP3 production rises and calcium stores empty",
+            "cAMP stays persistently elevated",
+            "The receptor is internalized by beta-arrestin"
+          ],
+          "answer": 2,
+          "why": "GTP hydrolysis is the off switch, so blocking it leaves adenylyl cyclase permanently stimulated and cAMP high, which is the cholera mechanism. Gq and IP3 are a separate branch, and arrestin-driven internalization is a slower regulatory response, not the immediate effect."
+        },
+        {
+          "q": "How is a receptor tyrosine kinase activated by its ligand?",
+          "choices": [
+            "The ligand enters the cell and binds the kinase domain directly",
+            "Ligand binding causes receptor dimerization and trans-autophosphorylation",
+            "A trimeric G protein exchanges GDP for GTP",
+            "The receptor opens an ion pore"
+          ],
+          "answer": 1,
+          "why": "Bringing two receptors together lets each kinase phosphorylate the other, creating docking sites for SH2 adaptors. Growth factors stay outside, trimeric G proteins belong to GPCRs, and pore opening describes ionotropic receptors."
+        },
+        {
+          "q": "Albuterol relieves bronchospasm by acting at which receptor and messenger?",
+          "choices": [
+            "Gq-coupled alpha-1 receptor, raising IP3",
+            "Gi-coupled receptor, lowering cAMP",
+            "Nicotinic receptor, opening a sodium channel",
+            "Gs-coupled beta-2 receptor, raising cAMP"
+          ],
+          "answer": 3,
+          "why": "Beta-2 receptors are Gs-coupled, so agonism raises cAMP and relaxes airway smooth muscle. Alpha-1 stimulation constricts, Gi lowering cAMP would worsen bronchospasm, and nicotinic receptors are not the airway smooth muscle target here."
+        }
+      ]
+    },
+    {
+      "id": "sci-cell-bio-l08",
+      "title": "The cell cycle, its checkpoints, and apoptosis",
+      "minutes": 9,
+      "body": "A cell that divides when it should not is the seed of a tumor, and a cell that fails to die is the other half of the same problem. The cycle machinery and the death machinery exist to prevent both.\n\n## The phases\n\n**Interphase** is G1, S and G2, and takes most of a roughly `24-hour` cycle in a typical cultured human cell: G1 about `11 hours`, S about `8 hours`, G2 about `4 hours`, **M phase** under `1 hour`. G1 is growth and the decision to commit. S phase copies the DNA, taking content from `2n` to `4n`. G2 checks the copy. Cells that stop dividing exit into **G0**, where neurons and cardiac muscle stay for life.\n\n## Cyclins and CDKs\n\nThe engine is a pair: a **cyclin-dependent kinase (CDK)**, present at constant level but inactive alone, and a **cyclin**, whose concentration rises and falls on schedule. Cyclin binds, the CDK becomes active, and phosphorylating its substrates pushes the cell into the next phase. Destroying the cyclin by ubiquitin-proteasome degradation makes each transition one-way.\n\nCyclin D with CDK4/6 drives early G1, cyclin E with CDK2 the G1-to-S transition, cyclin A with CDK2 runs S phase, and cyclin B with CDK1 drives entry into mitosis. The brakes are **CDK inhibitors** such as `p21` and `p16`.\n\n## The restriction point and Rb\n\nLate in G1 sits the **restriction point**, past which the cell no longer needs growth factors. The gate is the retinoblastoma protein, **Rb**. Unphosphorylated Rb clamps the transcription factor **E2F** and holds it inactive. Growth factor signaling raises cyclin D, CDK4/6 phosphorylates Rb, Rb releases E2F, and E2F turns on the genes for S phase.\n\n> **Key:** Rb is a brake and E2F is the accelerator. Anything that phosphorylates Rb, or deletes it, releases E2F and pushes the cell into S phase. That is why human papillomavirus E7 protein, which binds and inactivates Rb, is carcinogenic.\n\n## Checkpoints\n\n- **G1/S (DNA damage) checkpoint** — is the DNA intact and are conditions right to commit?\n- **G2/M checkpoint** — is replication complete and undamaged?\n- **Spindle assembly checkpoint** at metaphase — is every kinetochore attached to the spindle? Unattached kinetochores hold back the anaphase-promoting complex, and only when the last one attaches does APC/C trigger securin destruction, freeing separase to cut cohesin and start anaphase.\n\n## p53, the damage response\n\nDNA damage activates the kinases ATM and ATR, which stabilize **p53**, normally kept very low by MDM2-driven degradation. Active p53 turns on `p21`, a CDK inhibitor, and the cycle arrests so repair can happen. If damage is beyond repair, p53 instead turns on pro-apoptotic genes such as PUMA and BAX and the cell kills itself.\n\n`TP53` is the most frequently mutated gene in human cancer, altered in roughly `50%` of tumors. Inheriting one defective copy causes **Li-Fraumeni syndrome**, with sarcomas, breast cancer, brain tumors and adrenocortical carcinoma appearing early and in many tissues.\n\n## Mitosis and cytokinesis\n\nProphase condenses chromosomes and builds the spindle; prometaphase breaks the nuclear envelope and attaches kinetochores; metaphase lines chromosomes up; anaphase separates sister chromatids; telophase rebuilds nuclei. **Cytokinesis** then pinches the animal cell in two with an actin-myosin contractile ring.\n\n## Apoptosis\n\n**Apoptosis** is controlled self-destruction: the cell shrinks, chromatin condenses, DNA is cut between nucleosomes into a ladder of roughly `180-base-pair` multiples, and the remains bud off as membrane-bound bodies that phagocytes clear without inflammation. **Necrosis** is the opposite, swelling and rupture with heavy inflammation.\n\nThe executioners are **caspases**, cysteine proteases that cut after aspartate residues. Initiator caspases (8, 9) activate executioner caspases (3, 6, 7).\n\n- **Intrinsic (mitochondrial) pathway** — internal stress tips the BCL-2 family balance toward BAX and BAK, mitochondria release **cytochrome c**, which builds the apoptosome with Apaf-1 and activates caspase-9. `BCL-2` is anti-apoptotic, and its overexpression from the `t(14;18)` translocation drives follicular lymphoma.\n- **Extrinsic (death receptor) pathway** — an outside ligand such as FasL or TNF binds its death receptor, recruits FADD, and activates caspase-8. This is how cytotoxic T cells order an infected cell to die.\n\n> **Trap:** Apoptosis is quiet and ATP-dependent; necrosis is messy and happens when the cell has run out of energy. Both can start from the same insult, and dose usually decides which one you get.",
+      "keyPoints": [
+        "Cyclin levels oscillate and activate constant-level CDKs; destroying cyclin makes each transition one-way.",
+        "Cyclin D-CDK4/6 phosphorylates Rb, releasing E2F and opening the gate to S phase.",
+        "p53 responds to damage by inducing p21 for arrest or BAX and PUMA for apoptosis; TP53 is mutated in about half of cancers.",
+        "The spindle checkpoint holds APC/C until every kinetochore is attached, then cohesin is cut and anaphase begins.",
+        "Intrinsic apoptosis runs cytochrome c to Apaf-1 to caspase-9; extrinsic runs death receptor to FADD to caspase-8."
+      ],
+      "checks": [
+        {
+          "q": "Irradiated cells with functional p53 arrest in G1. Which p53 target directly causes the arrest?",
+          "choices": [
+            "p21, a CDK inhibitor",
+            "BAX, a pro-apoptotic protein",
+            "MDM2, a ubiquitin ligase",
+            "Cyclin B"
+          ],
+          "answer": 0,
+          "why": "p21 blocks cyclin-CDK complexes, which stops Rb phosphorylation and holds the cell in G1. BAX drives apoptosis rather than arrest, MDM2 degrades p53 in a negative feedback loop, and cyclin B belongs to mitotic entry."
+        },
+        {
+          "q": "A viral protein binds and inactivates Rb. What is the predicted effect?",
+          "choices": [
+            "The cell arrests permanently in G0",
+            "E2F is released and the cell enters S phase inappropriately",
+            "Apoptosis is triggered by caspase-8",
+            "The spindle checkpoint fails and chromosomes missegregate"
+          ],
+          "answer": 1,
+          "why": "Rb's job is sequestering E2F, so inactivating Rb frees E2F to transcribe S-phase genes. Arrest would require more Rb activity, caspase-8 belongs to death receptor signaling, and the spindle checkpoint operates at metaphase and is unrelated to Rb."
+        },
+        {
+          "q": "Cytochrome c release from mitochondria activates which caspase?",
+          "choices": [
+            "Caspase-8",
+            "Caspase-3 directly, with no initiator",
+            "Caspase-9, through the apoptosome",
+            "Caspase-1, through the inflammasome"
+          ],
+          "answer": 2,
+          "why": "Cytochrome c plus Apaf-1 forms the apoptosome, which activates initiator caspase-9, which then cleaves executioner caspase-3. Caspase-8 belongs to the extrinsic pathway and caspase-1 to inflammation."
+        }
+      ]
+    },
+    {
+      "id": "sci-cell-bio-l09",
+      "title": "Cancer as a cell biology problem",
+      "minutes": 9,
+      "body": "Cancer is not one disease, and it is not a disease of tissues. It is a disease of single cells that accumulate mutations in the machinery of the last two lessons and then multiply under selection.\n\n## Clonal evolution\n\nOne cell acquires a mutation giving a small growth advantage, so its descendants become overrepresented. A later mutation in one of those descendants adds another advantage, and so on. This is Darwinian selection inside a tissue, which is why most cancers need roughly `4-7` driver mutations and why incidence climbs steeply with age.\n\nMutations that drive the process are **drivers**; the far more numerous ones along for the ride are **passengers**. Because the tumor is heterogeneous by diagnosis, a therapy that kills `99.9%` of cells can still lose to the surviving resistant subclone.\n\n## Oncogenes versus tumor suppressors\n\n| | Oncogene | Tumor suppressor |\n|---|---|---|\n| Normal role | Promotes division | Restrains division or triggers death |\n| Mutation type | Gain of function | Loss of function |\n| Alleles needed | One (dominant at the cell level) | Usually both (recessive at the cell level) |\n| Analogy | Accelerator stuck down | Brakes cut |\n| Examples | RAS, MYC, HER2, BCR-ABL, BCL-2 | TP53, RB1, APC, BRCA1/2, PTEN |\n\nA **proto-oncogene** becomes an oncogene through point mutation (RAS), amplification (HER2, MYC), translocation (BCR-ABL from `t(9;22)`, the Philadelphia chromosome) or overexpression.\n\n## The two-hit hypothesis\n\nKnudson explained retinoblastoma by counting. Sporadic cases are unilateral and late because one cell must independently mutate both `RB1` copies. Inherited cases are bilateral and early because every cell already carries the first hit and only needs one more, often by **loss of heterozygosity** in which the remaining good copy is deleted or recombined away.\n\n> **Key:** The two-hit rule explains why cancer predisposition is inherited as a dominant trait in families but behaves recessively in the cell. You inherit one broken copy in every cell; the cancer starts when some cell loses the other.\n\n## The hallmarks\n\nThe hallmarks organize what a cell must acquire:\n\n1. Sustained proliferative signaling, as from a constitutively active RAS.\n2. Evasion of growth suppressors, as from losing Rb or p53.\n3. Resistance to cell death, as from overexpressing BCL-2.\n4. Replicative immortality, usually by reactivating telomerase.\n5. Induced angiogenesis.\n6. Invasion and metastasis.\n\nLater additions include reprogrammed metabolism (the **Warburg effect**, glycolysis even with oxygen present, which is what an FDG-PET scan detects), immune evasion, genome instability and tumor-promoting inflammation.\n\n## Angiogenesis and metastasis\n\nA tumor cannot grow past roughly `1-2 mm` on diffusion alone, so it must recruit blood supply. Hypoxia stabilizes HIF-1-alpha, which turns on **VEGF** and drives new vessels. Bevacizumab is an antibody against VEGF built on exactly this logic.\n\n**Metastasis** is a sequence, and failure at any step stops it: local invasion through basement membrane using matrix metalloproteinases, loss of E-cadherin adhesion in an epithelial-to-mesenchymal transition, intravasation into a vessel, survival in circulation, arrest and extravasation at a distant site, and finally colonization. Colonization is the least efficient step, which is why far fewer than `1 in 10,000` circulating tumor cells ever forms a metastasis.\n\n## Targeted therapy\n\nEvery molecular lesion is potentially a drug target, and the successes are the proof that this chapter is not theory.\n\n- **Imatinib** inhibits the BCR-ABL fusion tyrosine kinase in chronic myeloid leukemia, turning a fatal disease into a managed one.\n- **Trastuzumab** is a monoclonal antibody against **HER2**, effective only in the roughly `15-20%` of breast cancers that amplify it, which is why HER2 status is tested before it is given.\n- **EGFR inhibitors** such as erlotinib work in lung cancers with activating EGFR mutations, and fail when a downstream `KRAS` mutation makes the receptor irrelevant.\n- **PARP inhibitors** kill BRCA-mutant cells by synthetic lethality: block one repair route in a cell that has already lost the other and it cannot survive.\n- **Checkpoint inhibitors** against PD-1 or CTLA-4 release the brakes on T cells instead of attacking the tumor directly.\n\n> **Trap:** A targeted drug only works if the target is present and upstream of the lesion. Giving an EGFR inhibitor to a KRAS-mutant tumor fails because the pathway is already switched on below the receptor.",
+      "keyPoints": [
+        "Cancer is clonal evolution: driver mutations selected over passengers, typically 4-7 drivers, heterogeneous by diagnosis.",
+        "Oncogenes are gain-of-function and need one allele; tumor suppressors are loss-of-function and usually need both.",
+        "Knudson's two hits explain early bilateral inherited retinoblastoma versus late unilateral sporadic disease.",
+        "Tumors need angiogenesis past about 1-2 mm, driven by HIF-1-alpha and VEGF.",
+        "Imatinib hits BCR-ABL, trastuzumab hits HER2 in the 15-20% that amplify it, PARP inhibitors exploit BRCA loss."
+      ],
+      "checks": [
+        {
+          "q": "A child has bilateral retinoblastoma at 12 months. What does this pattern indicate?",
+          "choices": [
+            "A sporadic tumor requiring two somatic hits in one cell",
+            "An inherited germline RB1 mutation requiring only one further hit",
+            "Amplification of the MYC oncogene",
+            "A defect in nucleotide excision repair"
+          ],
+          "answer": 1,
+          "why": "Bilateral and early disease means every retinal cell already carries one defective RB1 allele, so a single second hit suffices. Sporadic disease needs two independent hits in the same cell and is therefore later and unilateral, and neither MYC amplification nor a repair defect produces this specific pattern."
+        },
+        {
+          "q": "Why is HER2 status tested before prescribing trastuzumab?",
+          "choices": [
+            "Trastuzumab is toxic to HER2-negative tissue",
+            "HER2 testing predicts tumor grade",
+            "Trastuzumab inhibits HER2 signaling and does nothing if HER2 is not amplified",
+            "HER2 amplification is a contraindication to the drug"
+          ],
+          "answer": 2,
+          "why": "A targeted antibody needs its target, so only the 15-20% of breast cancers that overexpress HER2 respond. Amplification is the indication, not a contraindication, and the test is predictive of response rather than a grading tool."
+        },
+        {
+          "q": "Which change is best classified as a gain-of-function oncogenic event?",
+          "choices": [
+            "Deletion of both APC alleles",
+            "A frameshift in BRCA1",
+            "Loss of heterozygosity at TP53",
+            "The t(9;22) translocation creating BCR-ABL"
+          ],
+          "answer": 3,
+          "why": "BCR-ABL is a fusion kinase that is constitutively active, the definition of a gain of function in one allele. APC, BRCA1 and TP53 are tumor suppressors whose lesions are losses of function."
+        }
+      ]
+    },
+    {
+      "id": "sci-cell-bio-l10",
+      "title": "Energy, matrix, tissues, and the modern lab bench",
+      "minutes": 9,
+      "body": "This lesson closes two loops: where the cell's energy comes from at the organelle level, and how a cell lives inside a tissue rather than alone in a dish. It ends with the bench techniques whose results you will be asked to read.\n\n## Mitochondria and chemiosmosis\n\nA mitochondrion has two membranes. The outer is porous through porins; the inner is folded into **cristae**, nearly impermeable, and holds the electron transport chain around the **matrix**, home of the citric acid cycle.\n\nNADH and FADH2 drop electrons into the chain. Complexes I, III and IV pump protons from matrix into the intermembrane space, building the **proton-motive force**, and complex IV hands the electrons to oxygen, making water. Protons flow back through **ATP synthase**, turning a rotor that makes ATP. This is Mitchell's **chemiosmotic** theory, and it is why the inner membrane must stay sealed.\n\nComplete oxidation of one glucose yields about `30-38 ATP`, depending on the shuttle carrying cytosolic NADH in, against `2 ATP` net from glycolysis alone. **Uncouplers** such as 2,4-dinitrophenol let protons leak back without passing through ATP synthase, so the chain runs, no ATP is made, and the energy leaves as heat. Brown fat does this on purpose using thermogenin.\n\nMitochondria carry a circular genome of about `16,569 base pairs` encoding `37` genes, use `70S`-type ribosomes, and are inherited from the mother only. Because a cell holds many mitochondria mixing normal and mutant genomes (**heteroplasmy**), disease appears once the mutant fraction crosses a threshold, hitting energy-hungry tissues first. **MELAS** (mitochondrial encephalopathy, lactic acidosis and stroke-like episodes) and Leber hereditary optic neuropathy follow maternal inheritance for this reason.\n\n> **Key:** Maternal-only inheritance with variable severity in nerve, muscle and eye is the fingerprint of a mitochondrial DNA disease. A pedigree with affected children of affected fathers rules it out.\n\n## Extracellular matrix\n\nOutside the cell is not empty. **Collagen**, the body's most abundant protein at roughly `25-30%` of total protein, is a triple helix giving tensile strength, and it needs vitamin C for proline hydroxylation, which is why scurvy makes vessels and gums fail. **Elastin** gives recoil, **fibronectin** and **laminin** are adhesive, and hydrated **proteoglycans** resist compression.\n\nCells grip the matrix through **integrins**, receptors that link matrix outside to actin inside and signal inward, so a cell knows what it is attached to. Most normal cells will not divide unless anchored, which is **anchorage dependence**; losing it helps a tumor cell survive in the bloodstream.\n\n## Junctions\n\n- **Tight junctions (occluding)** seal neighboring cells so nothing leaks between them, creating the blood-brain barrier and intestinal polarity.\n- **Adherens junctions and desmosomes (anchoring)** are mechanical: cadherins linked to actin and to keratin respectively. Autoantibodies against desmosomal cadherins cause pemphigus vulgaris.\n- **Gap junctions (communicating)** are connexon pores passing ions and molecules under about `1,000 daltons`, electrically coupling cardiac muscle so the heart contracts as a unit.\n\n## Stem cells and differentiation\n\nA **stem cell** both self-renews and produces differentiated daughters. **Totipotent** cells make an entire organism, **pluripotent** cells any of the three germ layers, **multipotent** cells a limited family such as all blood lineages. Every cell keeps the same genome, so differentiation is a question of which genes are switched on, and four transcription factors can reverse a fibroblast into an **induced pluripotent stem cell**.\n\n## Techniques at recognition level\n\n1. **Cell culture** — primary cells have a finite lifespan; immortalized lines like HeLa do not.\n2. **GFP fusions imaged live** — where a protein is, in real time.\n3. **Western blot** — separates proteins by size on a gel and detects one with an antibody. It reports the amount and apparent size of a protein.\n4. **PCR and qPCR** — amplify DNA through cycles of denaturing near `95 C`, annealing near `55 C` and extending near `72 C`, doubling each cycle; qPCR reads product as it accumulates to quantify starting template.\n5. **Flow cytometry** — single cells stream past a laser; a DNA stain gives a cell-cycle profile and antibodies give surface-marker counts such as a CD4 count.\n\n> **Trap:** Match the question to the assay. A western blot answers \"how much protein and what size,\" not \"where in the cell.\" Only microscopy answers location, and only flow cytometry counts cells one at a time.",
+      "keyPoints": [
+        "Chemiosmosis: complexes I, III and IV pump protons; ATP synthase uses the return flow; about 30-38 ATP per glucose.",
+        "Mitochondrial DNA is circular, about 16,569 bp with 37 genes, maternally inherited, and heteroplasmic.",
+        "Collagen gives tensile strength and needs vitamin C; integrins link matrix to actin and enforce anchorage dependence.",
+        "Tight junctions seal, desmosomes and adherens junctions anchor, gap junctions couple cells electrically.",
+        "Western blot sizes and quantifies protein, microscopy localizes it, flow cytometry measures one cell at a time."
+      ],
+      "checks": [
+        {
+          "q": "2,4-dinitrophenol carries protons across the inner mitochondrial membrane. What happens?",
+          "choices": [
+            "Electron transport stops and oxygen consumption falls",
+            "ATP synthesis continues normally but more slowly",
+            "ATP synthesis falls while electron transport runs and heat is produced",
+            "The citric acid cycle is inhibited directly"
+          ],
+          "answer": 2,
+          "why": "An uncoupler dissipates the proton gradient without passing through ATP synthase, so the chain speeds up, oxygen use rises, ATP output collapses, and the energy appears as heat. It does not block the transport chain or the citric acid cycle directly."
+        },
+        {
+          "q": "A family shows optic neuropathy in children of affected mothers only, never of affected fathers. What does this suggest?",
+          "choices": [
+            "Autosomal dominant inheritance",
+            "X-linked recessive inheritance",
+            "Mitochondrial DNA mutation",
+            "A new somatic mutation"
+          ],
+          "answer": 2,
+          "why": "Transmission through mothers only is the signature of mitochondrial DNA, since sperm contribute essentially no mitochondria. Autosomal dominant inheritance would pass from either parent, and X-linked recessive disease can pass an allele through an affected father to his daughters."
+        },
+        {
+          "q": "You need to know whether a protein has moved from the cytoplasm to the nucleus after treatment. Which assay answers it?",
+          "choices": [
+            "Western blot of whole-cell lysate",
+            "Fluorescence microscopy of a GFP fusion",
+            "qPCR for the gene's mRNA",
+            "Flow cytometry with a DNA stain"
+          ],
+          "answer": 1,
+          "why": "Only imaging reports location inside a cell. A whole-cell western blot sees total protein regardless of compartment, qPCR measures transcript not protein, and a DNA-stain flow profile reports cell cycle distribution."
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "sci-cell-bio-c001",
+      "front": "What is the resolution limit of a visible-light microscope, and why?",
+      "back": "About 200 nm, because resolution cannot beat roughly half the wavelength of the light used, and visible light runs 400-700 nm.",
+      "lesson": "sci-cell-bio-l01"
+    },
+    {
+      "id": "sci-cell-bio-c002",
+      "front": "What resolution does electron microscopy reach, and what does it cost?",
+      "back": "About 0.1 nm in principle and 1-2 nm on biological samples. The cost is fixation, dehydration and vacuum, so the specimen is never alive.",
+      "lesson": "sci-cell-bio-l01"
+    },
+    {
+      "id": "sci-cell-bio-c003",
+      "front": "Which microscopy method images living unstained cells, and how?",
+      "back": "Phase contrast and DIC convert refractive index differences into brightness differences, so no stain or fixation is needed.",
+      "lesson": "sci-cell-bio-l01"
+    },
+    {
+      "id": "sci-cell-bio-c004",
+      "front": "What does a confocal microscope do that a wide-field fluorescence microscope does not?",
+      "back": "A pinhole rejects out-of-focus light, giving a clean optical slice that can be stacked into a three-dimensional image.",
+      "lesson": "sci-cell-bio-l01"
+    },
+    {
+      "id": "sci-cell-bio-c005",
+      "front": "List the differential centrifugation steps and what pellets at each.",
+      "back": "About 1,000 x g pellets nuclei; 10,000 x g pellets mitochondria and lysosomes; 100,000 x g pellets microsomes; cytosol stays in the supernatant.",
+      "lesson": "sci-cell-bio-l01"
+    },
+    {
+      "id": "sci-cell-bio-c006",
+      "front": "How do you prove which organelle a centrifuge fraction contains?",
+      "back": "Assay a marker enzyme: cytochrome c oxidase for mitochondria, acid phosphatase for lysosomes, glucose-6-phosphatase for endoplasmic reticulum.",
+      "lesson": "sci-cell-bio-l01"
+    },
+    {
+      "id": "sci-cell-bio-c007",
+      "front": "What drives protein folding and membrane assembly?",
+      "back": "The hydrophobic effect. Water reorganizing around nonpolar groups costs entropy, so burying those groups together is favorable.",
+      "lesson": "sci-cell-bio-l02"
+    },
+    {
+      "id": "sci-cell-bio-c008",
+      "front": "Name the four noncovalent bonds and their rough strength.",
+      "back": "Hydrogen bonds, ionic bonds, van der Waals and hydrophobic interactions, each about 1-20 kJ/mol versus roughly 350 kJ/mol for a C-C covalent bond.",
+      "lesson": "sci-cell-bio-l02"
+    },
+    {
+      "id": "sci-cell-bio-c009",
+      "front": "What are the four levels of protein structure?",
+      "back": "Primary sequence; secondary alpha helix and beta sheet from backbone hydrogen bonds; tertiary three-dimensional fold; quaternary assembly of multiple chains, as in hemoglobin.",
+      "lesson": "sci-cell-bio-l02"
+    },
+    {
+      "id": "sci-cell-bio-c010",
+      "front": "What does an enzyme change, and what does it never change?",
+      "back": "It lowers activation energy by stabilizing the transition state. It never changes delta G, the equilibrium constant, or the final equilibrium concentrations.",
+      "lesson": "sci-cell-bio-l02"
+    },
+    {
+      "id": "sci-cell-bio-c011",
+      "front": "How much free energy does ATP hydrolysis release?",
+      "back": "About -30.5 kJ/mol under standard conditions and closer to -50 kJ/mol inside the cell, which is enough to drive most coupled reactions.",
+      "lesson": "sci-cell-bio-l02"
+    },
+    {
+      "id": "sci-cell-bio-c012",
+      "front": "What do chaperones do, and name a disease of protein folding.",
+      "back": "They shield exposed hydrophobic patches until folding finishes. Folding diseases include cystic fibrosis from F508del CFTR, amyloid in Alzheimer disease, and prion disease.",
+      "lesson": "sci-cell-bio-l02"
+    },
+    {
+      "id": "sci-cell-bio-c013",
+      "front": "How thick is a lipid bilayer, and why that thickness?",
+      "back": "About 5 nm, roughly two fatty acid tails placed end to end with the polar head groups facing the water on each side.",
+      "lesson": "sci-cell-bio-l03"
+    },
+    {
+      "id": "sci-cell-bio-c014",
+      "front": "How do channels and carriers differ?",
+      "back": "Channels are pores moving up to 10^8 ions per second and do not saturate. Carriers bind and change shape, move 10^2-10^4 per second, and saturate like an enzyme.",
+      "lesson": "sci-cell-bio-l03"
+    },
+    {
+      "id": "sci-cell-bio-c015",
+      "front": "What is the Na+/K+-ATPase stoichiometry and energy cost?",
+      "back": "3 Na+ out and 2 K+ in per ATP, making it electrogenic. It uses roughly 20-30% of a resting cell's ATP and much more in neurons.",
+      "lesson": "sci-cell-bio-l03"
+    },
+    {
+      "id": "sci-cell-bio-c016",
+      "front": "Give the typical Na+ and K+ concentrations inside and outside a cell.",
+      "back": "Na+ about 145 mM outside and 12 mM inside. K+ about 4 mM outside and 140 mM inside.",
+      "lesson": "sci-cell-bio-l03"
+    },
+    {
+      "id": "sci-cell-bio-c017",
+      "front": "Why is the resting membrane potential near -70 mV and inside negative?",
+      "back": "Leak channels make the membrane most permeable to K+, so potassium exits down its gradient and leaves unbalanced negative charge behind.",
+      "lesson": "sci-cell-bio-l03"
+    },
+    {
+      "id": "sci-cell-bio-c018",
+      "front": "How does digoxin strengthen cardiac contraction?",
+      "back": "It blocks the Na+/K+-ATPase, so intracellular sodium rises, the sodium-calcium exchanger slows, calcium accumulates, and contraction is stronger.",
+      "lesson": "sci-cell-bio-l03"
+    },
+    {
+      "id": "sci-cell-bio-c019",
+      "front": "How do statins relate to receptor-mediated endocytosis?",
+      "back": "Lowering cholesterol synthesis makes liver cells display more LDL receptors, which pulls more LDL into clathrin-coated pits and lowers blood LDL.",
+      "lesson": "sci-cell-bio-l03"
+    },
+    {
+      "id": "sci-cell-bio-c020",
+      "front": "What kind of protein is CFTR, and what does its failure cause?",
+      "back": "A cAMP-regulated chloride channel. Without chloride secretion, water does not follow, mucus thickens, and sweat chloride rises above 60 mmol/L.",
+      "lesson": "sci-cell-bio-l03"
+    },
+    {
+      "id": "sci-cell-bio-c021",
+      "front": "What are the numbers of a nucleosome?",
+      "back": "147 base pairs wrapped about 1.65 turns around an octamer of two copies each of H2A, H2B, H3 and H4, with H1 clamping the linker DNA.",
+      "lesson": "sci-cell-bio-l04"
+    },
+    {
+      "id": "sci-cell-bio-c022",
+      "front": "How do acetylation and DNA methylation change gene expression?",
+      "back": "Histone acetylation neutralizes positive charge, loosens chromatin and favors transcription. Methylation of cytosine in CpG islands usually silences a promoter.",
+      "lesson": "sci-cell-bio-l04"
+    },
+    {
+      "id": "sci-cell-bio-c023",
+      "front": "Why is an RNA primer needed for DNA replication?",
+      "back": "No DNA polymerase can start a chain from nothing; it can only extend an existing 3' end. Primase lays down a short RNA to provide that end.",
+      "lesson": "sci-cell-bio-l04"
+    },
+    {
+      "id": "sci-cell-bio-c024",
+      "front": "How long are eukaryotic Okazaki fragments, and why do they exist?",
+      "back": "About 100-200 nucleotides. Because synthesis is strictly 5' to 3', the strand running away from the fork must be restarted repeatedly.",
+      "lesson": "sci-cell-bio-l04"
+    },
+    {
+      "id": "sci-cell-bio-c025",
+      "front": "What is the human telomere repeat, and what rebuilds it?",
+      "back": "TTAGGG, repeated thousands of times. Telomerase, a reverse transcriptase carrying its own RNA template, extends it in germ cells, stem cells and 85-90% of cancers.",
+      "lesson": "sci-cell-bio-l04"
+    },
+    {
+      "id": "sci-cell-bio-c026",
+      "front": "Match the repair pathway to the lesion: single damaged base, bulky thymine dimer, double-strand break.",
+      "back": "Base excision repair for a single base, nucleotide excision repair for a bulky lesion, and homologous recombination or nonhomologous end joining for a double-strand break.",
+      "lesson": "sci-cell-bio-l04"
+    },
+    {
+      "id": "sci-cell-bio-c027",
+      "front": "Which repair defect causes Lynch syndrome, and which causes xeroderma pigmentosum?",
+      "back": "Lynch syndrome comes from mismatch repair loss such as MSH2 or MLH1, showing microsatellite instability. Xeroderma pigmentosum comes from failed nucleotide excision repair of UV damage.",
+      "lesson": "sci-cell-bio-l04"
+    },
+    {
+      "id": "sci-cell-bio-c028",
+      "front": "What two repair routes handle double-strand breaks, and when is each available?",
+      "back": "Homologous recombination is accurate but needs a sister chromatid, so only in S and G2. Nonhomologous end joining works any time but can lose bases.",
+      "lesson": "sci-cell-bio-l04"
+    },
+    {
+      "id": "sci-cell-bio-c029",
+      "front": "Name the three modifications made to a eukaryotic primary transcript.",
+      "back": "A 7-methylguanosine cap on the 5' end, a poly-A tail of about 200 adenines on the 3' end, and removal of introns by splicing.",
+      "lesson": "sci-cell-bio-l05"
+    },
+    {
+      "id": "sci-cell-bio-c030",
+      "front": "What sequences mark intron boundaries, and what removes the intron?",
+      "back": "GU at the 5' end and AG at the 3' end of the intron. The spliceosome, built from small nuclear ribonucleoproteins, does the cutting and joining.",
+      "lesson": "sci-cell-bio-l05"
+    },
+    {
+      "id": "sci-cell-bio-c031",
+      "front": "Compare eukaryotic and bacterial ribosome sizes, and why it matters clinically.",
+      "back": "Eukaryotic 80S from 60S plus 40S; bacterial 70S from 50S plus 30S. The difference lets aminoglycosides and macrolides poison bacteria selectively.",
+      "lesson": "sci-cell-bio-l05"
+    },
+    {
+      "id": "sci-cell-bio-c032",
+      "front": "What decides whether a ribosome finishes in the cytosol or on the ER?",
+      "back": "A hydrophobic N-terminal signal sequence of about 16-30 residues. SRP binds it, pauses translation and docks the ribosome on the rough ER.",
+      "lesson": "sci-cell-bio-l05"
+    },
+    {
+      "id": "sci-cell-bio-c033",
+      "front": "Which coat protein serves which vesicle route?",
+      "back": "COPII goes forward from ER to Golgi, COPI goes back from Golgi to ER, and clathrin goes from trans-Golgi to lysosome and forms endocytic pits.",
+      "lesson": "sci-cell-bio-l05"
+    },
+    {
+      "id": "sci-cell-bio-c034",
+      "front": "What tag sends an enzyme to the lysosome, and what happens if it is missing?",
+      "back": "Mannose-6-phosphate added in the cis-Golgi. Without it, hydrolases are secreted instead of delivered, which is I-cell disease.",
+      "lesson": "sci-cell-bio-l05"
+    },
+    {
+      "id": "sci-cell-bio-c035",
+      "front": "What enzyme is missing in Tay-Sachs disease, and what accumulates?",
+      "back": "Hexosaminidase A. GM2 ganglioside builds up in lysosomes of neurons, a single missing hydrolase producing a lysosomal storage disease.",
+      "lesson": "sci-cell-bio-l05"
+    },
+    {
+      "id": "sci-cell-bio-c036",
+      "front": "How are cytosolic proteins destroyed, and how is that different from lysosomal degradation?",
+      "back": "A ubiquitin chain tags them for the 26S proteasome, which unfolds and shreds them using ATP. Lysosomes handle material delivered by vesicles instead.",
+      "lesson": "sci-cell-bio-l05"
+    },
+    {
+      "id": "sci-cell-bio-c037",
+      "front": "Give the diameter and subunit of each cytoskeletal filament.",
+      "back": "Actin microfilaments 7 nm from G-actin; intermediate filaments 10 nm from keratins, lamins or vimentin; microtubules 25 nm from alpha and beta tubulin dimers.",
+      "lesson": "sci-cell-bio-l06"
+    },
+    {
+      "id": "sci-cell-bio-c038",
+      "front": "What is dynamic instability and what controls it?",
+      "back": "Microtubules grow then abruptly shrink and may regrow. A GTP cap on the plus end keeps the tube stable; once it hydrolyzes away, the GDP lattice peels apart.",
+      "lesson": "sci-cell-bio-l06"
+    },
+    {
+      "id": "sci-cell-bio-c039",
+      "front": "Which direction does each motor protein walk?",
+      "back": "Kinesin toward the microtubule plus end, so anterograde in a neuron. Dynein toward the minus end, so retrograde. Myosin walks on actin, generally toward its plus end.",
+      "lesson": "sci-cell-bio-l06"
+    },
+    {
+      "id": "sci-cell-bio-c040",
+      "front": "How do taxanes and vinca alkaloids differ, and what do they share?",
+      "back": "Taxanes stabilize microtubules so they cannot depolymerize; vincas block polymerization. Both arrest cells in mitosis, which is why both are chemotherapy agents.",
+      "lesson": "sci-cell-bio-l06"
+    },
+    {
+      "id": "sci-cell-bio-c041",
+      "front": "Why does colchicine help acute gout?",
+      "back": "It blocks microtubule polymerization, so neutrophils cannot migrate into the joint or phagocytose urate crystals, and the inflammatory cycle is interrupted.",
+      "lesson": "sci-cell-bio-l06"
+    },
+    {
+      "id": "sci-cell-bio-c042",
+      "front": "What is the 9+2 axoneme and what makes it bend?",
+      "back": "Nine outer doublet microtubules around a central pair. Axonemal dynein tries to slide adjacent doublets past each other while nexin links resist, converting sliding into bending.",
+      "lesson": "sci-cell-bio-l06"
+    },
+    {
+      "id": "sci-cell-bio-c043",
+      "front": "What is the Kartagener syndrome triad, and what is the defect?",
+      "back": "Chronic sinusitis, bronchiectasis and situs inversus, plus male infertility. The defect is absent or faulty dynein arms, so cilia and sperm tails cannot beat.",
+      "lesson": "sci-cell-bio-l06"
+    },
+    {
+      "id": "sci-cell-bio-c044",
+      "front": "What does each G-alpha subunit do downstream?",
+      "back": "Gs activates adenylyl cyclase and raises cAMP, Gi inhibits it and lowers cAMP, and Gq activates phospholipase C to make IP3 and DAG.",
+      "lesson": "sci-cell-bio-l07"
+    },
+    {
+      "id": "sci-cell-bio-c045",
+      "front": "What do IP3 and DAG each do after phospholipase C cuts PIP2?",
+      "back": "IP3 diffuses to the ER and opens calcium channels to release stored Ca2+. DAG stays in the membrane and, with calcium, activates protein kinase C.",
+      "lesson": "sci-cell-bio-l07"
+    },
+    {
+      "id": "sci-cell-bio-c046",
+      "front": "How steep is the calcium gradient across the plasma membrane?",
+      "back": "Resting cytosolic free calcium is about 100 nM against roughly 1-2 mM outside, about a ten-thousand-fold difference, so brief channel opening is a strong signal.",
+      "lesson": "sci-cell-bio-l07"
+    },
+    {
+      "id": "sci-cell-bio-c047",
+      "front": "How does cholera toxin cause watery diarrhea?",
+      "back": "It modifies Gs so it cannot hydrolyze GTP. cAMP stays high, CFTR pours chloride into the gut lumen, and water follows, costing liters a day.",
+      "lesson": "sci-cell-bio-l07"
+    },
+    {
+      "id": "sci-cell-bio-c048",
+      "front": "Trace the MAP kinase cascade from a receptor tyrosine kinase.",
+      "back": "Ligand dimerizes the receptor, trans-autophosphorylation creates SH2 docking sites, Grb2 and SOS load Ras with GTP, then Raf to MEK to ERK, which enters the nucleus.",
+      "lesson": "sci-cell-bio-l07"
+    },
+    {
+      "id": "sci-cell-bio-c049",
+      "front": "Why do RAS mutations cause cancer, and how common are they?",
+      "back": "A mutation that blocks Ras GTPase activity leaves it permanently GTP-bound and signaling. RAS mutations appear in roughly 25-30% of all human cancers.",
+      "lesson": "sci-cell-bio-l07"
+    },
+    {
+      "id": "sci-cell-bio-c050",
+      "front": "How do albuterol and metoprolol sit on the GPCR map?",
+      "back": "Albuterol is a beta-2 agonist at a Gs-coupled receptor, so cAMP rises and airway muscle relaxes. Metoprolol blocks the Gs-coupled beta-1 receptor, lowering cardiac cAMP.",
+      "lesson": "sci-cell-bio-l07"
+    },
+    {
+      "id": "sci-cell-bio-c051",
+      "front": "How long is each cell cycle phase in a typical cultured human cell?",
+      "back": "About 24 hours total: G1 about 11 hours, S about 8, G2 about 4, and M under 1 hour. Nondividing cells sit in G0.",
+      "lesson": "sci-cell-bio-l08"
+    },
+    {
+      "id": "sci-cell-bio-c052",
+      "front": "Which cyclin-CDK pair drives each transition?",
+      "back": "Cyclin D with CDK4/6 in early G1, cyclin E with CDK2 at the G1-to-S transition, cyclin A with CDK2 through S, and cyclin B with CDK1 into mitosis.",
+      "lesson": "sci-cell-bio-l08"
+    },
+    {
+      "id": "sci-cell-bio-c053",
+      "front": "How does the Rb and E2F switch open the gate to S phase?",
+      "back": "Unphosphorylated Rb clamps E2F. Cyclin D with CDK4/6 phosphorylates Rb, E2F is released, and it transcribes the genes needed for DNA synthesis.",
+      "lesson": "sci-cell-bio-l08"
+    },
+    {
+      "id": "sci-cell-bio-c054",
+      "front": "What does p53 do after DNA damage, and how often is it mutated?",
+      "back": "ATM and ATR stabilize it; it induces p21 to arrest the cycle or BAX and PUMA to trigger apoptosis. TP53 is mutated in roughly 50% of human cancers.",
+      "lesson": "sci-cell-bio-l08"
+    },
+    {
+      "id": "sci-cell-bio-c055",
+      "front": "What does the spindle assembly checkpoint watch for, and what happens when it is satisfied?",
+      "back": "Every kinetochore attached to the spindle. Then APC/C destroys securin, freeing separase to cut cohesin so sister chromatids separate at anaphase.",
+      "lesson": "sci-cell-bio-l08"
+    },
+    {
+      "id": "sci-cell-bio-c056",
+      "front": "Compare the intrinsic and extrinsic apoptosis pathways.",
+      "back": "Intrinsic: stress tips BCL-2 family toward BAX and BAK, mitochondria release cytochrome c, apoptosome activates caspase-9. Extrinsic: FasL or TNF binds a death receptor, FADD activates caspase-8.",
+      "lesson": "sci-cell-bio-l08"
+    },
+    {
+      "id": "sci-cell-bio-c057",
+      "front": "How do apoptosis and necrosis differ morphologically?",
+      "back": "Apoptosis shrinks the cell, condenses chromatin, cuts DNA into 180-base-pair multiples, and leaves membrane-bound bodies with no inflammation. Necrosis swells and ruptures, causing inflammation.",
+      "lesson": "sci-cell-bio-l08"
+    },
+    {
+      "id": "sci-cell-bio-c058",
+      "front": "Contrast oncogenes and tumor suppressors on mutation type and alleles.",
+      "back": "Oncogenes are gain of function and need only one altered allele. Tumor suppressors are loss of function and usually need both alleles hit, which is the two-hit rule.",
+      "lesson": "sci-cell-bio-l09"
+    },
+    {
+      "id": "sci-cell-bio-c059",
+      "front": "How does Knudson's two-hit hypothesis explain inherited retinoblastoma?",
+      "back": "An inherited germline RB1 mutation puts hit one in every cell, so a single somatic hit suffices and disease is early and bilateral. Sporadic cases need two hits in one cell.",
+      "lesson": "sci-cell-bio-l09"
+    },
+    {
+      "id": "sci-cell-bio-c060",
+      "front": "Name four ways a proto-oncogene becomes an oncogene.",
+      "back": "Point mutation as in RAS, gene amplification as in HER2 and MYC, chromosomal translocation as in BCR-ABL from t(9;22), and promoter-driven overexpression.",
+      "lesson": "sci-cell-bio-l09"
+    },
+    {
+      "id": "sci-cell-bio-c061",
+      "front": "List the original six hallmarks of cancer.",
+      "back": "Sustained proliferative signaling, evasion of growth suppressors, resistance to cell death, replicative immortality, induced angiogenesis, and invasion with metastasis.",
+      "lesson": "sci-cell-bio-l09"
+    },
+    {
+      "id": "sci-cell-bio-c062",
+      "front": "Why must a tumor induce angiogenesis, and through what pathway?",
+      "back": "Diffusion supports growth only to about 1-2 mm. Hypoxia stabilizes HIF-1-alpha, which induces VEGF; bevacizumab is an antibody against VEGF.",
+      "lesson": "sci-cell-bio-l09"
+    },
+    {
+      "id": "sci-cell-bio-c063",
+      "front": "List the steps of metastasis in order.",
+      "back": "Local invasion through basement membrane, loss of E-cadherin in epithelial-to-mesenchymal transition, intravasation, survival in circulation, extravasation, then colonization, the least efficient step.",
+      "lesson": "sci-cell-bio-l09"
+    },
+    {
+      "id": "sci-cell-bio-c064",
+      "front": "Match three targeted drugs to their molecular targets.",
+      "back": "Imatinib inhibits the BCR-ABL fusion kinase in CML; trastuzumab is an antibody against HER2 in the 15-20% of breast cancers that amplify it; PARP inhibitors kill BRCA-mutant cells by synthetic lethality.",
+      "lesson": "sci-cell-bio-l09"
+    },
+    {
+      "id": "sci-cell-bio-c065",
+      "front": "Explain chemiosmosis in one pass.",
+      "back": "Complexes I, III and IV pump protons from matrix into the intermembrane space; oxygen accepts electrons at complex IV; protons return through ATP synthase, and that flow drives ATP formation.",
+      "lesson": "sci-cell-bio-l10"
+    },
+    {
+      "id": "sci-cell-bio-c066",
+      "front": "How much ATP comes from one glucose, and how much from glycolysis alone?",
+      "back": "About 30-38 ATP total depending on the shuttle used for cytosolic NADH, against a net of only 2 ATP from glycolysis.",
+      "lesson": "sci-cell-bio-l10"
+    },
+    {
+      "id": "sci-cell-bio-c067",
+      "front": "What does an uncoupler such as 2,4-dinitrophenol do?",
+      "back": "It lets protons leak back across the inner membrane without passing ATP synthase, so electron transport runs, ATP output collapses, and the energy leaves as heat.",
+      "lesson": "sci-cell-bio-l10"
+    },
+    {
+      "id": "sci-cell-bio-c068",
+      "front": "Describe the mitochondrial genome and its inheritance.",
+      "back": "Circular, about 16,569 base pairs, 37 genes, 70S-type ribosomes, inherited only from the mother, and heteroplasmic so disease appears past a mutant-load threshold.",
+      "lesson": "sci-cell-bio-l10"
+    },
+    {
+      "id": "sci-cell-bio-c069",
+      "front": "What does MELAS stand for, and how is it inherited?",
+      "back": "Mitochondrial encephalopathy, lactic acidosis and stroke-like episodes. It is a mitochondrial DNA disease, so it passes only from mother to child.",
+      "lesson": "sci-cell-bio-l10"
+    },
+    {
+      "id": "sci-cell-bio-c070",
+      "front": "Why does scurvy weaken blood vessels and gums?",
+      "back": "Collagen needs vitamin C for proline hydroxylation to form a stable triple helix. Without it the collagen that gives tensile strength is defective.",
+      "lesson": "sci-cell-bio-l10"
+    },
+    {
+      "id": "sci-cell-bio-c071",
+      "front": "What do integrins do, and what is anchorage dependence?",
+      "back": "Integrins link extracellular matrix to the actin cytoskeleton and signal inward. Most normal cells will not divide unless anchored; losing that requirement helps a tumor cell survive in blood.",
+      "lesson": "sci-cell-bio-l10"
+    },
+    {
+      "id": "sci-cell-bio-c072",
+      "front": "Name the three junction types and what each does.",
+      "back": "Tight junctions seal the space between cells and create the blood-brain barrier; desmosomes and adherens junctions anchor mechanically; gap junctions are connexon pores coupling cells electrically.",
+      "lesson": "sci-cell-bio-l10"
+    },
+    {
+      "id": "sci-cell-bio-c073",
+      "front": "Which assay answers amount, which answers location, and which counts single cells?",
+      "back": "Western blot reports protein amount and apparent size, fluorescence microscopy reports location inside the cell, and flow cytometry measures one cell at a time.",
+      "lesson": "sci-cell-bio-l10"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "sci-cell-bio-q001",
+      "q": "A structure measures 8 nm across. Which instrument can resolve it?",
+      "choices": [
+        "Transmission electron microscope",
+        "Phase contrast light microscope",
+        "Confocal fluorescence microscope",
+        "Standard brightfield microscope"
+      ],
+      "answer": 0,
+      "why": "Only electron microscopy, at roughly 0.1 to 2 nm, resolves an 8 nm object. Every light-based method, phase contrast and confocal included, is capped near 200 nm by the wavelength of visible light.",
+      "lesson": "sci-cell-bio-l01",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-cell-bio-q002",
+      "q": "You must record where one specific protein sits inside a living cell over two hours. Which approach fits best?",
+      "choices": [
+        "Scanning electron microscopy of fixed cells",
+        "Brightfield microscopy after hematoxylin staining",
+        "Confocal microscopy of a GFP fusion protein",
+        "Differential centrifugation with marker enzymes"
+      ],
+      "answer": 2,
+      "why": "A GFP fusion labels one protein and confocal imaging gives clean optical sections of a living cell over time. SEM requires dead fixed specimens and shows only surfaces, brightfield staining kills the cell and is not protein-specific, and fractionation destroys the cell entirely.",
+      "lesson": "sci-cell-bio-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-cell-bio-q003",
+      "q": "A homogenate is spun at 10,000 x g for 20 minutes. To confirm the pellet is mitochondrial, which assay do you run?",
+      "choices": [
+        "Acid phosphatase activity",
+        "Cytochrome c oxidase activity",
+        "Glucose-6-phosphatase activity",
+        "Total protein concentration"
+      ],
+      "answer": 1,
+      "why": "Cytochrome c oxidase is the mitochondrial marker enzyme. Acid phosphatase marks lysosomes, glucose-6-phosphatase marks endoplasmic reticulum, and total protein tells you nothing about which organelle is present.",
+      "lesson": "sci-cell-bio-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-cell-bio-q004",
+      "q": "A lab reports that a new fluorescent dye lets them image a 40 nm vesicle with visible light using a conventional confocal microscope. What is the most reasonable objection?",
+      "choices": [
+        "Fluorescent dyes cannot be used on vesicles",
+        "Confocal microscopes cannot image fluorescence",
+        "A brighter signal does not overcome the diffraction limit near 200 nm",
+        "Vesicles are too large for fluorescence imaging"
+      ],
+      "answer": 2,
+      "why": "Brightness and resolution are different things: no amount of signal makes conventional light microscopy resolve below roughly 200 nm. Dyes work fine on vesicles and confocal microscopes are fluorescence instruments, so those objections are wrong on the facts.",
+      "lesson": "sci-cell-bio-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-cell-bio-q005",
+      "q": "How many different amino acids are specified by the standard genetic code in human proteins?",
+      "choices": [
+        "4",
+        "20",
+        "61",
+        "64"
+      ],
+      "answer": 1,
+      "why": "Twenty amino acids are encoded. There are 64 codons in total, 61 of which specify amino acids and 3 of which are stops, and 4 is the number of nucleotide bases.",
+      "lesson": "sci-cell-bio-l02",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-cell-bio-q006",
+      "q": "A reaction has a delta G of -25 kJ/mol but proceeds immeasurably slowly at body temperature. What does adding the correct enzyme accomplish?",
+      "choices": [
+        "It lowers the activation energy so the same reaction reaches equilibrium much faster",
+        "It makes delta G more negative so the reaction becomes favorable",
+        "It shifts the equilibrium toward more product",
+        "It supplies energy from ATP to push the reaction forward"
+      ],
+      "answer": 0,
+      "why": "A negative delta G already means the reaction is favorable; slowness is an activation energy problem, and that is exactly what an enzyme addresses. Enzymes never change delta G, the equilibrium position, or supply energy themselves.",
+      "lesson": "sci-cell-bio-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-cell-bio-q007",
+      "q": "Arterial blood pH is reported as 7.20. How does this compare with the normal range and what maintains it?",
+      "choices": [
+        "It is normal, maintained by the phosphate buffer system",
+        "It is alkalotic, maintained by hemoglobin alone",
+        "It is normal, maintained by lysosomal proton pumps",
+        "It is acidotic, since normal is 7.35 to 7.45, and bicarbonate is the main extracellular buffer"
+      ],
+      "answer": 3,
+      "why": "Normal arterial pH is 7.35 to 7.45, so 7.20 is acidemic, and the bicarbonate and carbon dioxide pair is the principal extracellular buffer. Phosphate buffering matters mainly inside cells, hemoglobin contributes but is not the main system, and lysosomal pumps acidify an organelle, not the blood.",
+      "lesson": "sci-cell-bio-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-cell-bio-q008",
+      "q": "A mutation replaces a buried valine with a charged glutamate in the core of a globular enzyme. What is the most likely consequence?",
+      "choices": [
+        "No effect, because only active site residues matter",
+        "The primary structure is unchanged",
+        "The tertiary fold is destabilized because a charged group cannot be buried away from water",
+        "The protein gains a new quaternary structure"
+      ],
+      "answer": 2,
+      "why": "The hydrophobic core exists because burying nonpolar groups is favorable; forcing a charge into it destabilizes the fold. Residues far from the active site routinely matter, the primary structure has by definition changed, and there is no reason a buried substitution would create a new subunit interface.",
+      "lesson": "sci-cell-bio-l02",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-cell-bio-q009",
+      "q": "Approximately how thick is a biological lipid bilayer?",
+      "choices": [
+        "0.5 nm",
+        "2 nm",
+        "5 nm",
+        "50 nm"
+      ],
+      "answer": 2,
+      "why": "About 5 nm, roughly two fatty acid tails end to end. 2 nm is the width of a DNA double helix, 0.5 nm is near single-atom scale, and 50 nm would be ten times too thick.",
+      "lesson": "sci-cell-bio-l03",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-cell-bio-q010",
+      "q": "Per molecule of ATP hydrolyzed, what does the Na+/K+-ATPase move?",
+      "choices": [
+        "2 Na+ out and 2 K+ in",
+        "3 Na+ out and 2 K+ in",
+        "2 Na+ out and 3 K+ in",
+        "3 Na+ in and 3 K+ out"
+      ],
+      "answer": 1,
+      "why": "Three sodium out for two potassium in makes the pump electrogenic, contributing directly to the negative interior. Equal exchange would not be electrogenic, and the reversed options would collapse the very gradients the cell needs.",
+      "lesson": "sci-cell-bio-l03",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-cell-bio-q011",
+      "q": "An infant has thick airway secretions, recurrent lung infection and a sweat chloride of 88 mmol/L. What is the molecular defect?",
+      "choices": [
+        "A defective chloride channel in the apical membrane",
+        "A defective sodium-potassium pump",
+        "Absent dynein arms in airway cilia",
+        "Failure of mannose-6-phosphate tagging"
+      ],
+      "answer": 0,
+      "why": "A sweat chloride above 60 mmol/L with thick secretions is cystic fibrosis, caused by the CFTR chloride channel failing so water does not follow salt. A broken sodium pump would be lethal broadly, absent dynein arms give Kartagener syndrome without high sweat chloride, and the mannose-6-phosphate defect is I-cell disease.",
+      "lesson": "sci-cell-bio-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-cell-bio-q012",
+      "q": "Digoxin inhibits the Na+/K+-ATPase in cardiac muscle. Why does contractility increase?",
+      "choices": [
+        "Potassium accumulates inside the cell and depolarizes it",
+        "ATP is spared and directly powers more cross-bridge cycling",
+        "Calcium is pumped into the cell by the ATPase itself",
+        "Intracellular sodium rises, so the sodium-calcium exchanger slows and calcium accumulates"
+      ],
+      "answer": 3,
+      "why": "The exchanger normally uses the inward sodium gradient to expel calcium; weakening that gradient leaves more calcium inside for contraction. Intracellular potassium falls rather than accumulating, the pump moves no calcium, and sparing ATP is not the mechanism.",
+      "lesson": "sci-cell-bio-l03",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-cell-bio-q013",
+      "q": "How much DNA is wrapped around a single histone octamer in a nucleosome?",
+      "choices": [
+        "11 base pairs",
+        "50 base pairs",
+        "300 base pairs",
+        "147 base pairs"
+      ],
+      "answer": 3,
+      "why": "147 base pairs wrap about 1.65 turns around the octamer of H2A, H2B, H3 and H4. The other values do not correspond to the nucleosome core particle; 300 is closer to the width in angstroms of the 30 nm fiber, not a base pair count.",
+      "lesson": "sci-cell-bio-l04",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-cell-bio-q014",
+      "q": "A somatic fibroblast line stops dividing after about 50 passages, while a tumor line divides indefinitely. What is the most likely difference?",
+      "choices": [
+        "The tumor line expresses telomerase and maintains its TTAGGG repeats",
+        "The tumor line replicates its DNA conservatively",
+        "The fibroblasts lack DNA ligase",
+        "The tumor line uses only nonhomologous end joining"
+      ],
+      "answer": 0,
+      "why": "Telomerase reactivation, seen in 85-90% of cancers, rebuilds the TTAGGG repeat and removes the Hayflick limit. Replication is semiconservative in all cells, fibroblasts without ligase could not replicate at all, and the choice of double-strand break pathway does not set replicative lifespan.",
+      "lesson": "sci-cell-bio-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-cell-bio-q015",
+      "q": "During replication, DNA polymerase encounters the strand oriented so that the fork moves toward its 3' end. What happens on that strand?",
+      "choices": [
+        "It is copied continuously as the leading strand",
+        "It is not copied until after mitosis",
+        "It is copied discontinuously in Okazaki fragments of about 100-200 nucleotides",
+        "It is copied in the 3' to 5' direction by a specialized polymerase"
+      ],
+      "answer": 2,
+      "why": "Because synthesis runs only 5' to 3', the strand oriented against the fork must be restarted repeatedly as short fragments later joined by ligase. No polymerase synthesizes 3' to 5', and both strands are copied in the same S phase.",
+      "lesson": "sci-cell-bio-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-cell-bio-q016",
+      "q": "A patient with xeroderma pigmentosum develops many skin cancers in childhood after minimal sun exposure. Which lesion is going unrepaired?",
+      "choices": [
+        "Uracil produced by cytosine deamination",
+        "Thymine dimers created by ultraviolet light",
+        "Double-strand breaks from ionizing radiation",
+        "Slipped repeats at microsatellites"
+      ],
+      "answer": 1,
+      "why": "Xeroderma pigmentosum is a nucleotide excision repair defect, and UV-induced thymine dimers are its classic bulky substrate. Deaminated cytosine is handled by base excision repair, double-strand breaks by HR or NHEJ, and microsatellite slippage by mismatch repair.",
+      "lesson": "sci-cell-bio-l04",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-cell-bio-q017",
+      "q": "Which modification is added to the 5' end of a eukaryotic mRNA?",
+      "choices": [
+        "A poly-A tail of about 200 residues",
+        "A 7-methylguanosine cap",
+        "A mannose-6-phosphate tag",
+        "A ubiquitin chain"
+      ],
+      "answer": 1,
+      "why": "The 7-methylguanosine cap protects the 5' end and is what the small ribosomal subunit recognizes. The poly-A tail goes on the 3' end, while mannose-6-phosphate and ubiquitin are protein tags, not RNA modifications.",
+      "lesson": "sci-cell-bio-l05",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-cell-bio-q018",
+      "q": "A researcher deletes the N-terminal signal sequence from a secreted hormone. Where will the protein end up?",
+      "choices": [
+        "In the Golgi, delivered by COPI vesicles",
+        "In the lysosome, tagged with mannose-6-phosphate",
+        "Inserted in the plasma membrane",
+        "Free in the cytosol"
+      ],
+      "answer": 3,
+      "why": "Without a signal sequence, SRP never binds and the ribosome finishes translation in the cytosol, so the protein never enters the secretory pathway at all. Golgi, lysosomal and plasma membrane destinations all require ER entry first.",
+      "lesson": "sci-cell-bio-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-cell-bio-q019",
+      "q": "Cultured cells from a child secrete lysosomal enzymes into the medium, and the cells fill with inclusions. Which enzyme activity is missing?",
+      "choices": [
+        "The phosphotransferase that adds mannose-6-phosphate",
+        "Hexosaminidase A",
+        "Signal peptidase in the ER",
+        "The E1 ubiquitin-activating enzyme"
+      ],
+      "answer": 0,
+      "why": "Without the mannose-6-phosphate tag, hydrolases miss the lysosome and are secreted by default, which is I-cell disease. Hexosaminidase A loss gives Tay-Sachs with one accumulated substrate, signal peptidase loss would block secretion entirely, and ubiquitin activation concerns the proteasome.",
+      "lesson": "sci-cell-bio-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-cell-bio-q020",
+      "q": "A mutation prevents COPI coat assembly. Which consequence follows most directly?",
+      "choices": [
+        "Proteins can no longer leave the ER",
+        "Endocytosis at the plasma membrane stops",
+        "ER-resident proteins that escaped to the Golgi are not retrieved",
+        "Lysosomal enzymes are secreted"
+      ],
+      "answer": 2,
+      "why": "COPI runs the retrograde Golgi-to-ER leg, so losing it strands escaped ER residents in the Golgi. Forward transport out of the ER is a COPII job, endocytosis is clathrin's, and misrouted lysosomal enzymes reflect a mannose-6-phosphate defect.",
+      "lesson": "sci-cell-bio-l05",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-cell-bio-q021",
+      "q": "What is the diameter of a microtubule and what is its subunit?",
+      "choices": [
+        "7 nm, built from G-actin",
+        "10 nm, built from vimentin",
+        "25 nm, built from alpha and beta tubulin dimers",
+        "50 nm, built from myosin"
+      ],
+      "answer": 2,
+      "why": "Microtubules are 25 nm hollow tubes of 13 protofilaments of alpha-beta tubulin dimers. 7 nm actin and 10 nm intermediate filaments are the other two systems, and myosin is a motor, not a filament subunit here.",
+      "lesson": "sci-cell-bio-l06",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-cell-bio-q022",
+      "q": "Cargo must travel from a neuron's cell body down a long axon to the terminal. Which motor and direction?",
+      "choices": [
+        "Kinesin, toward the microtubule plus end",
+        "Dynein, toward the microtubule plus end",
+        "Dynein, toward the microtubule minus end",
+        "Myosin II, along intermediate filaments"
+      ],
+      "answer": 0,
+      "why": "Microtubule plus ends point away from the centrosome and down the axon, and kinesin walks to plus ends, giving anterograde transport. Dynein walks to minus ends for retrograde traffic, and intermediate filaments carry no motors at all.",
+      "lesson": "sci-cell-bio-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-cell-bio-q023",
+      "q": "A chemotherapy agent causes microtubules to become abnormally stable bundles that will not disassemble. Which agent is it?",
+      "choices": [
+        "Vincristine",
+        "Paclitaxel",
+        "Colchicine",
+        "Cytochalasin D"
+      ],
+      "answer": 1,
+      "why": "Taxanes such as paclitaxel hyperstabilize microtubules, blocking the disassembly mitosis requires. Vincristine and colchicine prevent polymerization instead, and cytochalasin D caps actin filaments.",
+      "lesson": "sci-cell-bio-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-cell-bio-q024",
+      "q": "A man has lifelong sinus infections, bronchiectasis, dextrocardia and immotile sperm. What underlying defect explains all four findings at once?",
+      "choices": [
+        "A keratin intermediate filament mutation",
+        "A CFTR chloride channel mutation",
+        "Loss of the mannose-6-phosphate tag",
+        "Defective axonemal dynein arms in the 9+2 axoneme"
+      ],
+      "answer": 3,
+      "why": "One machine, dynein-driven ciliary and flagellar beating, serves the airway, the embryonic node that sets left-right asymmetry, and the sperm tail, which is Kartagener syndrome. CFTR disease gives sinus and lung findings but not situs inversus, and neither keratin nor lysosomal targeting defects touch ciliary motion.",
+      "lesson": "sci-cell-bio-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-cell-bio-q025",
+      "q": "Which second messenger is produced when a Gs-coupled receptor is activated?",
+      "choices": [
+        "IP3",
+        "Diacylglycerol",
+        "Calcium released from the ER",
+        "Cyclic AMP"
+      ],
+      "answer": 3,
+      "why": "Gs stimulates adenylyl cyclase, which makes cAMP and activates protein kinase A. IP3, DAG and the calcium release they trigger all belong to the Gq and phospholipase C branch instead.",
+      "lesson": "sci-cell-bio-l07",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-cell-bio-q026",
+      "q": "Cholera toxin acts on which target, and with what effect?",
+      "choices": [
+        "It blocks the nicotinic acetylcholine receptor, preventing depolarization",
+        "It locks G-alpha-s in the GTP-bound state, so cAMP stays high",
+        "It cleaves SNARE proteins, preventing vesicle fusion",
+        "It inhibits phospholipase C, reducing IP3"
+      ],
+      "answer": 1,
+      "why": "Blocking Gs GTP hydrolysis leaves adenylyl cyclase permanently on, driving chloride and water into the gut lumen. SNARE cleavage describes botulinum toxin, and neither nicotinic blockade nor phospholipase C inhibition produces secretory diarrhea.",
+      "lesson": "sci-cell-bio-l07",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-cell-bio-q027",
+      "q": "Epidermal growth factor binds its receptor. What is the immediate next molecular event?",
+      "choices": [
+        "A trimeric G protein exchanges GDP for GTP",
+        "Adenylyl cyclase is activated",
+        "Two receptors dimerize and phosphorylate tyrosines on each other",
+        "The receptor opens a calcium channel in the plasma membrane"
+      ],
+      "answer": 2,
+      "why": "Receptor tyrosine kinases work by ligand-driven dimerization and trans-autophosphorylation, creating SH2 docking sites. Trimeric G proteins and adenylyl cyclase belong to GPCR signaling, and RTKs are not ion channels.",
+      "lesson": "sci-cell-bio-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-cell-bio-q028",
+      "q": "A patient in an asthma attack is given inhaled albuterol and improves within minutes. Which sequence explains the response?",
+      "choices": [
+        "Beta-2 receptor, Gs, adenylyl cyclase, cAMP up, airway smooth muscle relaxes",
+        "Alpha-1 receptor, Gq, IP3, calcium up, airway smooth muscle relaxes",
+        "Beta-1 receptor, Gi, cAMP down, heart rate falls",
+        "Muscarinic receptor, Gq, DAG, protein kinase C, bronchoconstriction"
+      ],
+      "answer": 0,
+      "why": "Beta-2 receptors on airway smooth muscle are Gs-coupled, so raising cAMP relaxes the muscle. Raising calcium through Gq contracts rather than relaxes smooth muscle, beta-1 effects are cardiac, and muscarinic Gq signaling is exactly what worsens bronchospasm.",
+      "lesson": "sci-cell-bio-l07",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-cell-bio-q029",
+      "q": "Which statement about cyclins and CDKs is correct?",
+      "choices": [
+        "CDK levels stay roughly constant while cyclin levels rise and fall",
+        "Cyclin levels stay constant while CDK levels oscillate",
+        "Both are degraded only during G0",
+        "Cyclins are kinases and CDKs are their substrates"
+      ],
+      "answer": 0,
+      "why": "The oscillation lives in the cyclin; the kinase is present but inactive until a cyclin binds. CDK is the kinase and cyclin the regulatory partner, not the reverse, and cyclin degradation happens at each transition rather than only in G0.",
+      "lesson": "sci-cell-bio-l08",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-cell-bio-q030",
+      "q": "Cells irradiated in G1 arrest before S phase. Cells from a Li-Fraumeni patient with a TP53 mutation do not. Why?",
+      "choices": [
+        "p53 normally phosphorylates Rb to drive arrest",
+        "p53 normally degrades cyclin B directly",
+        "p53 normally activates caspase-8 at the plasma membrane",
+        "p53 normally induces p21, a CDK inhibitor that blocks Rb phosphorylation"
+      ],
+      "answer": 3,
+      "why": "The arrest depends on p53-driven p21, which inhibits cyclin-CDK complexes and keeps Rb unphosphorylated. p53 is a transcription factor, not a kinase or a protease, and caspase-8 belongs to the extrinsic death receptor route.",
+      "lesson": "sci-cell-bio-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-cell-bio-q031",
+      "q": "A lymphoma overexpresses BCL-2 because of a t(14;18) translocation. What is the functional result?",
+      "choices": [
+        "Cells divide faster because cyclin D is amplified",
+        "Cells resist intrinsic apoptosis because cytochrome c release is blocked",
+        "Cells arrest permanently in G0",
+        "The spindle checkpoint fails and chromosomes missegregate"
+      ],
+      "answer": 1,
+      "why": "BCL-2 is anti-apoptotic and restrains BAX and BAK, so overexpression prevents mitochondrial cytochrome c release and the cells accumulate by not dying. It does not accelerate the cycle, arrest cells, or alter kinetochore attachment.",
+      "lesson": "sci-cell-bio-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-cell-bio-q032",
+      "q": "Human papillomavirus E7 protein binds and inactivates Rb. What is the predicted downstream effect on the cell cycle?",
+      "choices": [
+        "E2F is sequestered and S phase entry is blocked",
+        "The spindle checkpoint is permanently engaged",
+        "E2F is released and S-phase genes are transcribed without growth factor signals",
+        "Cyclin B accumulates and the cell arrests in G2"
+      ],
+      "answer": 2,
+      "why": "Rb's only job in this switch is holding E2F; inactivating Rb frees E2F and lets the cell pass the restriction point without external signals. Sequestering E2F would require more Rb function, and neither the spindle checkpoint nor G2 arrest is downstream of Rb.",
+      "lesson": "sci-cell-bio-l08",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-cell-bio-q033",
+      "q": "Which pairing correctly describes a tumor suppressor gene?",
+      "choices": [
+        "RAS, gain of function, one allele needed",
+        "MYC, amplification, one allele needed",
+        "RB1, loss of function, usually both alleles needed",
+        "BCR-ABL, fusion kinase, one allele needed"
+      ],
+      "answer": 2,
+      "why": "Tumor suppressors are lost rather than activated and generally require both alleles to be hit, and RB1 is the founding example. RAS, MYC and BCR-ABL are all oncogenes that act through gain of function in a single allele.",
+      "lesson": "sci-cell-bio-l09",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-cell-bio-q034",
+      "q": "A patient with chronic myeloid leukemia carries the Philadelphia chromosome. Which drug targets the resulting protein?",
+      "choices": [
+        "Trastuzumab",
+        "Bevacizumab",
+        "Paclitaxel",
+        "Imatinib"
+      ],
+      "answer": 3,
+      "why": "The t(9;22) translocation creates the constitutively active BCR-ABL tyrosine kinase, which imatinib inhibits. Trastuzumab targets HER2, bevacizumab targets VEGF, and paclitaxel is a nonspecific microtubule agent.",
+      "lesson": "sci-cell-bio-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-cell-bio-q035",
+      "q": "A lung tumor carries an activating KRAS mutation. Why is an EGFR inhibitor unlikely to help?",
+      "choices": [
+        "KRAS acts downstream of EGFR, so the pathway stays on regardless of receptor blockade",
+        "KRAS mutations prevent the drug from entering the cell",
+        "EGFR inhibitors only work on tumor suppressor mutations",
+        "KRAS mutation destroys the cell's microtubules"
+      ],
+      "answer": 0,
+      "why": "Blocking a receptor cannot silence a pathway that is already switched on below it. Drug uptake is unaffected, EGFR inhibitors target an oncogenic kinase rather than a suppressor, and KRAS has nothing to do with microtubule integrity.",
+      "lesson": "sci-cell-bio-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-cell-bio-q036",
+      "q": "A solid tumor grows to 2 mm and then stops enlarging until a region becomes hypoxic. Which change most likely allows growth to resume?",
+      "choices": [
+        "Telomerase is reactivated",
+        "HIF-1-alpha is stabilized and induces VEGF-driven angiogenesis",
+        "E-cadherin expression increases",
+        "The spindle checkpoint is strengthened"
+      ],
+      "answer": 1,
+      "why": "Past roughly 1-2 mm diffusion cannot supply the tumor, and hypoxia-stabilized HIF-1-alpha turning on VEGF recruits the vessels that lift the limit. Telomerase addresses replicative lifespan not nutrient supply, rising E-cadherin would reduce invasiveness, and a stronger checkpoint would slow growth.",
+      "lesson": "sci-cell-bio-l09",
+      "difficulty": 3
+    },
+    {
+      "id": "sci-cell-bio-q037",
+      "q": "Approximately how many ATP are produced from the complete oxidation of one glucose molecule?",
+      "choices": [
+        "2",
+        "10",
+        "30 to 38",
+        "100 to 120"
+      ],
+      "answer": 2,
+      "why": "About 30 to 38 ATP, the range reflecting which shuttle carries cytosolic NADH into the mitochondrion. A net of 2 ATP is glycolysis alone, and the other values are far outside any accepted estimate.",
+      "lesson": "sci-cell-bio-l10",
+      "difficulty": 1
+    },
+    {
+      "id": "sci-cell-bio-q038",
+      "q": "A family has muscle weakness, lactic acidosis and stroke-like episodes. Affected mothers pass it to all children; affected fathers pass it to none. What is the mechanism?",
+      "choices": [
+        "Autosomal recessive inheritance with high carrier frequency",
+        "X-linked dominant inheritance",
+        "Genomic imprinting of a nuclear gene",
+        "A mitochondrial DNA mutation, inherited only from the mother"
+      ],
+      "answer": 3,
+      "why": "Transmission exclusively through mothers is the fingerprint of mitochondrial DNA, and MELAS fits the clinical picture and the heteroplasmy-driven variability. Autosomal recessive disease passes from both parents, X-linked dominant disease passes from fathers to all daughters, and imprinted nuclear genes still come from both parents.",
+      "lesson": "sci-cell-bio-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-cell-bio-q039",
+      "q": "You want to know whether a treatment changed the total amount and apparent size of a protein in a cell lysate. Which technique answers that?",
+      "choices": [
+        "Western blot",
+        "qPCR",
+        "Flow cytometry with a DNA stain",
+        "Scanning electron microscopy"
+      ],
+      "answer": 0,
+      "why": "A western blot separates proteins by size and detects one with an antibody, reporting both abundance and apparent molecular weight. qPCR measures transcript rather than protein, a DNA-stain flow profile reports cell cycle distribution, and SEM shows surface topography.",
+      "lesson": "sci-cell-bio-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "sci-cell-bio-q040",
+      "q": "Cardiac muscle cells contract as a coordinated unit because an electrical signal passes directly from one cell to the next. Which junction is responsible?",
+      "choices": [
+        "Tight junction",
+        "Gap junction",
+        "Desmosome",
+        "Hemidesmosome"
+      ],
+      "answer": 1,
+      "why": "Gap junctions are connexon pores that let ions and molecules under about 1,000 daltons pass directly between cells, electrically coupling them. Tight junctions seal the space between cells, and desmosomes and hemidesmosomes provide mechanical anchoring only.",
+      "lesson": "sci-cell-bio-l10",
+      "difficulty": 3
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "sci-cell-bio-s01",
+      "title": "Problem set: a secreted protein that will not leave the cell",
+      "setting": "classroom",
+      "intro": "Your instructor puts a case on the board. A lab studies a secreted hormone. In wild-type cells the protein appears in the culture medium within 30 minutes. In a mutant line the medium is empty, but total protein measured in whole-cell lysate is unchanged, and the mutant protein runs about 2 kilodaltons larger on a gel than the wild-type secreted form.\n\nYou are asked to design experiments that localize the block and name the step that failed. Reason from the secretory pathway, one step at a time.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "Start with what the data already tell you. Total protein is normal, but nothing is secreted and the mutant runs larger. What is the best first inference?",
+          "choices": [
+            {
+              "text": "Synthesis is intact, so the defect lies in targeting or transport, and the extra 2 kilodaltons suggests an uncleaved signal sequence",
+              "next": "s2",
+              "feedback": "Correct. Normal total protein rules out a transcription or translation failure, and a signal sequence of roughly 16-30 residues is about the right mass to explain a 2 kilodalton difference.",
+              "score": 1
+            },
+            {
+              "text": "The gene is not being transcribed, so start with qPCR for the message",
+              "next": "s2",
+              "feedback": "Unchanged total protein already rules this out. qPCR is not wrong to run as a control, but it cannot be the primary hypothesis when the protein is demonstrably present.",
+              "score": -1
+            },
+            {
+              "text": "The protein is being made but degraded immediately by the proteasome",
+              "next": "s2",
+              "feedback": "Plausible-sounding but inconsistent with the data. Rapid degradation would lower total protein, and it would not make the remaining band run larger.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "You want to know where in the cell the mutant protein is sitting. Which experiment gives you location most directly?",
+          "choices": [
+            {
+              "text": "Western blot the whole-cell lysate at several time points",
+              "next": "s3",
+              "feedback": "This tells you amount and size over time, which is useful, but a whole-cell lysate has no spatial information at all. It cannot distinguish cytosol from ER lumen.",
+              "score": 0
+            },
+            {
+              "text": "Express a fluorescent fusion of the protein and image it by confocal microscopy alongside an ER marker",
+              "next": "s3",
+              "feedback": "Right. Only imaging answers where. Co-staining with an ER marker turns a vague signal into an answer, and confocal sectioning keeps out-of-focus haze from faking colocalization.",
+              "score": 1
+            },
+            {
+              "text": "Run flow cytometry on the cells with a DNA stain",
+              "next": "s3",
+              "feedback": "That reports cell cycle distribution one cell at a time. It has nothing to say about subcellular localization of a protein.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "The fusion protein is diffusely cytosolic, with no ER colocalization at all. What does that finding rule in?",
+          "choices": [
+            {
+              "text": "A COPII coat defect trapping cargo inside the ER",
+              "next": "s4",
+              "feedback": "A COPII failure traps cargo in the ER lumen, so you would see bright ER signal. Diffuse cytosol means the protein never got into the ER in the first place.",
+              "score": 0
+            },
+            {
+              "text": "The protein never entered the ER, so the failure is at signal sequence recognition or translocation",
+              "next": "s4",
+              "feedback": "Correct, and it fits the size shift. If SRP cannot bind the signal sequence, translation finishes in the cytosol and signal peptidase never clips the sequence off.",
+              "score": 1
+            },
+            {
+              "text": "Mannose-6-phosphate tagging failed, so the protein went to the cytosol",
+              "next": "s4",
+              "feedback": "Losing that tag misroutes lysosomal enzymes to secretion, not to the cytosol, and it acts in the cis-Golgi, long after ER entry. The location does not fit.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "To prove the signal sequence is the problem, you propose a swap experiment. Which construct makes the cleanest test?",
+          "choices": [
+            {
+              "text": "Delete the mutant's first 30 residues entirely and see whether secretion returns",
+              "next": "s5",
+              "feedback": "Deletion removes the sequence rather than repairing it, so the predicted result is still no secretion. A negative result would not distinguish your hypothesis from several others.",
+              "score": 0
+            },
+            {
+              "text": "Replace the mutant signal sequence with a known functional signal sequence from a different secreted protein",
+              "next": "s5",
+              "feedback": "Correct. If a borrowed working signal sequence restores secretion, the rest of the protein and the rest of the pathway are fine, and the defect is localized to that sequence.",
+              "score": 1
+            },
+            {
+              "text": "Add a nuclear localization signal to the mutant protein",
+              "next": "s5",
+              "feedback": "That tests importin-mediated nuclear entry, a different pathway. It would move the protein into the nucleus and tell you nothing about ER targeting.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "The swap restores secretion. A classmate asks how you would have interpreted a different result: the mutant protein showing bright ER signal and never reaching the Golgi. Which explanation would you have favored, and how would you test it?",
+          "choices": [
+            {
+              "text": "A COPII coat or cargo-receptor defect blocking the forward ER-to-Golgi step, tested by imaging a Golgi marker and checking sugar processing",
+              "next": "end",
+              "feedback": "Right. Cargo stuck in the ER points to the forward vesicle step, and Golgi-specific sugar modifications would be absent, giving a second independent line of evidence.",
+              "score": 1
+            },
+            {
+              "text": "A COPI defect, since COPI vesicles carry cargo from the ER to the Golgi",
+              "next": "end",
+              "feedback": "The directions are reversed. COPII carries cargo forward from ER to Golgi; COPI runs the retrograde leg back.",
+              "score": -1
+            },
+            {
+              "text": "Misfolding causing ER retention and ER-associated degradation, tested by asking whether a proteasome inhibitor restores protein levels",
+              "next": "end",
+              "feedback": "A reasonable alternative worth ruling out, since misfolded protein is held in the ER and retro-translocated for destruction. It is a real competing hypothesis, just not the first one this picture suggests.",
+              "score": 0
+            }
+          ]
+        }
+      ],
+      "debrief": "The pattern to carry away is that localization questions are answered by imaging, abundance and size questions by blotting, and causation only by a swap or rescue experiment. Reading the secretory pathway in order gives you a checklist: does the protein get into the ER at all, does it leave the ER, does it get its Golgi modifications, does it get the right address tag. A 2 kilodalton size shift in a secreted protein should immediately make you think of an uncleaved signal sequence, because that sequence is roughly 16 to 30 residues long and signal peptidase normally removes it on entry."
+    },
+    {
+      "id": "sci-cell-bio-s02",
+      "title": "Problem set: reading a checkpoint experiment in a tumor line",
+      "setting": "classroom",
+      "intro": "A second case goes on the board. Two cell lines are irradiated with the same dose. Line A is a normal fibroblast line. Line B comes from a tumor in a patient with a family history of early sarcoma and breast cancer. Six hours after irradiation you have a western blot for p53 and p21, and flow cytometry DNA-content profiles for both lines.\n\nLine A shows p53 protein rising sharply, p21 rising with it, and a flow profile with cells piling up at 2n DNA content. Line B shows no rise in p53 or p21 and a flow profile essentially unchanged from baseline. Work out what each result means before you name the gene.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "First: in line A, p53 protein rises within hours but the lab confirms TP53 transcription did not change. How is that possible?",
+          "choices": [
+            {
+              "text": "p53 is normally degraded rapidly by MDM2-driven ubiquitination, and damage-activated ATM and ATR stabilize it",
+              "next": "s2",
+              "feedback": "Correct. p53 is regulated mostly by protein stability, not by transcription, which is exactly how a cell gets a fast response to damage without waiting on gene expression.",
+              "score": 1
+            },
+            {
+              "text": "The antibody must be cross-reacting; protein cannot rise without transcription rising",
+              "next": "s2",
+              "feedback": "Protein level is set by synthesis minus degradation, so slowing degradation raises the level with no change in transcription. This is a common reasoning slip worth naming out loud.",
+              "score": -1
+            },
+            {
+              "text": "Translation of existing p53 mRNA increased",
+              "next": "s2",
+              "feedback": "Translational control is a real mechanism and not absurd here, but the established and dominant route for p53 is stabilization of protein that was being destroyed.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "Line A's flow profile piles cells at 2n DNA content. What does that mean, and which p53 target explains it?",
+          "choices": [
+            {
+              "text": "Cells arrested in G2 with 4n DNA, explained by cyclin B degradation",
+              "next": "s3",
+              "feedback": "The DNA content does not match. A G2 arrest piles cells at 4n, not 2n, because the genome has already been copied.",
+              "score": 0
+            },
+            {
+              "text": "Cells arrested in G1 with an unreplicated 2n genome, explained by p21 inhibiting cyclin-CDK and keeping Rb unphosphorylated",
+              "next": "s3",
+              "feedback": "Right. 2n means DNA has not been copied yet, so the block is before S phase, and p21 is the CDK inhibitor that enforces it by preventing Rb phosphorylation.",
+              "score": 1
+            },
+            {
+              "text": "Cells are undergoing apoptosis, shown by the 2n peak",
+              "next": "s3",
+              "feedback": "Apoptotic cells with fragmented DNA appear as a sub-2n peak below the G1 population, not at 2n. Watch which side of the G1 peak the signal sits on.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "Line B shows neither p53 nor p21 induction and no arrest. Before blaming p53 itself, what is the alternative you must exclude?",
+          "choices": [
+            {
+              "text": "Nothing: absent p21 proves TP53 is mutated",
+              "next": "s4",
+              "feedback": "Too fast. p21 sits downstream of p53, so its absence is equally consistent with a p53 problem and with an upstream sensing problem.",
+              "score": -1
+            },
+            {
+              "text": "That the upstream damage sensors ATM and ATR are defective, so p53 is never stabilized even though the gene is intact",
+              "next": "s4",
+              "feedback": "Correct. A downstream failure and an upstream sensing failure look identical on this blot, which is why the experiment cannot stop here.",
+              "score": 1
+            },
+            {
+              "text": "That the radiation dose was too low to cause damage in line B",
+              "next": "s4",
+              "feedback": "Worth controlling and cheap to check with a damage marker, but both lines received the same dose, so this is a control rather than the main competing hypothesis.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "Which single experiment best separates a broken p53 from a broken upstream sensor?",
+          "choices": [
+            {
+              "text": "Introduce wild-type p53 into line B and repeat the irradiation, asking whether p21 induction and G1 arrest return",
+              "next": "s5",
+              "feedback": "Correct. A rescue experiment is the cleanest logic available: if supplying the suspect protein restores the phenotype, the defect was in that protein.",
+              "score": 1
+            },
+            {
+              "text": "Sequence TP53 in line B",
+              "next": "s5",
+              "feedback": "Useful and often done first in practice, but sequence alone shows a variant, not whether that variant causes the failure. Pair it with a functional test.",
+              "score": 0
+            },
+            {
+              "text": "Treat line B with paclitaxel and look for mitotic arrest",
+              "next": "s5",
+              "feedback": "That probes the spindle checkpoint, a different checkpoint entirely, and tells you nothing about the G1 DNA damage response.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "Restoring wild-type p53 restores p21 induction and G1 arrest in line B. Given the family history of early sarcoma and breast cancer, what is the final interpretation?",
+          "choices": [
+            {
+              "text": "A germline TP53 mutation, that is Li-Fraumeni syndrome, with the tumor having lost the remaining wild-type allele",
+              "next": "end",
+              "feedback": "Correct on both levels. The family pattern points to an inherited first hit in every cell, and the tumor's complete loss of function is the classic second hit at a tumor suppressor.",
+              "score": 1
+            },
+            {
+              "text": "An activating RAS mutation driving proliferation past the checkpoint",
+              "next": "end",
+              "feedback": "RAS is an oncogene driving growth signaling, and it does not abolish p53 stabilization or p21 induction. The rescue experiment already pointed at p53.",
+              "score": -1
+            },
+            {
+              "text": "Loss of Rb, releasing E2F and overriding the arrest",
+              "next": "end",
+              "feedback": "Rb loss would indeed push cells into S phase, but it would not silence p53 and p21 induction on the blot, and adding back p53 would not have rescued arrest.",
+              "score": 0
+            }
+          ]
+        }
+      ],
+      "debrief": "Two habits are the point of this case. First, read a flow cytometry profile by DNA content before naming a phase: 2n is G1, 4n is G2 or M, a sub-2n peak is apoptotic debris. Second, a blot showing an absent downstream product never by itself localizes the lesion, because everything upstream of that product is an equally good suspect, and only a rescue experiment settles it. The biology to carry away is the chain itself: damage activates ATM and ATR, which stabilize p53 by blocking its MDM2-driven destruction, and p53 induces p21, which inhibits cyclin-CDK, keeps Rb unphosphorylated, holds E2F, and stops the cell in G1. An inherited defect anywhere in that chain, most famously germline TP53 in Li-Fraumeni syndrome, produces early cancers across many tissues."
+    }
+  ]
+}

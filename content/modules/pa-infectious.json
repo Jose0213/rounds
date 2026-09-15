@@ -1,0 +1,1733 @@
+{
+  "schema": 1,
+  "id": "pa-infectious",
+  "track": "prepa",
+  "title": "Infectious Disease",
+  "short": "Infectious Dz",
+  "summary": "How infections announce themselves, which ones kill fast, and what the first move is for each. Organized by body system, with the numbers, timelines and empiric drug logic a PA student is expected to already have.",
+  "lessons": [
+    {
+      "id": "pa-infectious-l01",
+      "title": "Fever, sepsis and the hunt for the source",
+      "minutes": 7,
+      "body": "## Why a fever happens\n\nFever is not the infection. Fever is the body deliberately raising its own thermostat. White cells meeting bacteria release chemical messengers (cytokines: interleukin-1, interleukin-6, tumor necrosis factor). Those travel to the hypothalamus, the temperature control center in the brain, and push the set point from about `37.0 C` up to `38.5 C` or higher. The body then shivers and clamps down skin blood vessels to reach the new target. That is why a patient with a rising fever feels cold.\n\nThat distinction matters. In **fever**, the thermostat moved and the body is cooperating; acetaminophen `650 mg` works because it resets the thermostat. In **hyperthermia** (heat stroke, serotonin syndrome, malignant hyperthermia), the thermostat never moved and the body is simply overwhelmed by heat it cannot dump. Acetaminophen does nothing there. You cool the patient physically.\n\nFever is `38.0 C` (`100.4 F`) or higher by most definitions.\n\n> **Key:** Fever means the set point moved. Hyperthermia means the set point is normal and the body lost the fight against heat. Only one of them responds to antipyretics.\n\n## Hunting the source\n\nA fever without a source is an unfinished workup. Walk the body top to bottom: head (meningitis, sinusitis, otitis), throat, chest (pneumonia), heart (endocarditis), abdomen (cholecystitis, appendicitis, diverticulitis), kidneys and bladder (pyelonephritis), skin (cellulitis, abscess, pressure ulcer), bones and joints, and every line, tube and catheter in the patient. In a hospitalized patient the classic five sources are lung, urine, wound, line, and drug.\n\n## Sepsis\n\n**Sepsis** is life-threatening organ dysfunction caused by a dysregulated response to infection. The infection is the trigger; the damage is the body's own inflammatory storm plus widespread vasodilation and capillary leak. **Septic shock** is sepsis with persistent low blood pressure requiring vasopressors plus a lactate above `2 mmol/L` despite fluids.\n\nTwo screening tools:\n\n- **SIRS** (2 or more): temp above `38 C` or below `36 C`; heart rate above `90`; respiratory rate above `20`; white count above `12,000` or below `4,000`.\n- **qSOFA** (2 or more, bedside, no labs): respiratory rate `22` or more; altered mental status; systolic blood pressure `100 mmHg` or less.\n\n## The bundle and the clock\n\nThe hour-1 sepsis bundle is a memorized list:\n\n1. Measure **lactate** (repeat in 2-4 hours if above `2`).\n2. Draw **blood cultures before antibiotics** (two sets, different sites).\n3. Give **broad-spectrum antibiotics within 1 hour**.\n4. Give **30 mL/kg crystalloid** for hypotension or lactate `4 mmol/L` or more.\n5. Start **vasopressors** (norepinephrine first) if the pressure stays down, targeting a mean arterial pressure of `65 mmHg`.\n\n> **Trap:** Cultures before antibiotics, but never let culture-drawing delay the drug. Each hour of delayed antibiotics in septic shock raises mortality several percentage points.\n\n## Neutropenic fever\n\nA cancer patient on chemotherapy with an absolute neutrophil count below `500` and a single temperature of `38.3 C`, or `38.0 C` sustained one hour, is a true emergency. With no neutrophils there is no pus, no redness, often no visible source. Culture and give an antipseudomonal beta-lactam such as cefepime or piperacillin-tazobactam immediately.\n\n> **On shift:** The neutropenic patient who \"just feels off\" with a low-grade temp gets moved to the front of the line, not the back.",
+      "keyPoints": [
+        "Fever = raised hypothalamic set point; hyperthermia = normal set point overwhelmed, so antipyretics fail.",
+        "Sepsis is organ dysfunction from a dysregulated infection response; septic shock adds pressors plus lactate above 2.",
+        "qSOFA: RR 22+, altered mentation, SBP 100 or less. Two of three is a red flag.",
+        "Hour-1 bundle: lactate, cultures before antibiotics, antibiotics within 1 hour, 30 mL/kg crystalloid, pressors to MAP 65.",
+        "Neutropenic fever (ANC under 500 plus 38.3 C) gets antipseudomonal antibiotics immediately, source or no source."
+      ],
+      "checks": [
+        {
+          "q": "A patient collapses during a road race. Core temp 41.2 C, skin hot and dry, confused. Why will acetaminophen not help?",
+          "choices": [
+            "The dose required would be toxic",
+            "This is hyperthermia; the hypothalamic set point is normal, so there is nothing to reset",
+            "Acetaminophen only works on viral fevers",
+            "The patient needs ibuprofen instead"
+          ],
+          "answer": 1,
+          "why": "Antipyretics lower a raised set point. In heat stroke the set point never moved, so physical cooling is the treatment."
+        },
+        {
+          "q": "In the hour-1 sepsis bundle, what is the crystalloid volume for hypotension or lactate 4 or more?",
+          "choices": [
+            "10 mL/kg",
+            "20 mL/kg",
+            "30 mL/kg",
+            "50 mL/kg"
+          ],
+          "answer": 2,
+          "why": "30 mL/kg is the standard initial bolus. 20 mL/kg is the pediatric shock increment, not the adult sepsis figure."
+        },
+        {
+          "q": "Which qSOFA element is scored without any laboratory test?",
+          "choices": [
+            "Lactate above 2",
+            "White count above 12,000",
+            "Altered mental status",
+            "Creatinine above 2"
+          ],
+          "answer": 2,
+          "why": "qSOFA is deliberately labless: respiratory rate 22 or more, altered mentation, systolic 100 or less. Lactate and white count belong to SIRS/SOFA."
+        }
+      ]
+    },
+    {
+      "id": "pa-infectious-l02",
+      "title": "Coughs, colds and pneumonia: the respiratory menu",
+      "minutes": 8,
+      "body": "## Above the voice box\n\nA common cold (viral upper respiratory infection) is rhinovirus most of the time. Gradual onset, runny nose, sore throat, low or no fever, and the patient is annoyed but functional. It runs `7-10` days. Antibiotics do nothing.\n\n**Influenza** is different in tempo. It hits in hours, not days: fever `38.9 C` or higher, whole-body aches, headache, dry cough, and the patient is flattened. Oseltamivir `75 mg` twice daily for 5 days helps most if started within `48 hours` of symptom onset.\n\n**COVID-19** overlaps heavily but classically adds loss of smell and a later, second-week deterioration in oxygenation. **RSV** in adults looks like a bad cold with wheezing; in infants under 2 it causes bronchiolitis with wheeze, retractions and feeding failure, and it is the leading cause of infant hospitalization.\n\n**Pertussis** (whooping cough) is *Bordetella pertussis*. Two weeks of ordinary cold symptoms, then paroxysms of coughing so violent the patient vomits or draws a whooping inspiration. Cough lasts `6-10` weeks. Azithromycin shortens contagiousness more than it shortens the cough.\n\n> **Trap:** A prolonged cough in a vaccinated teenager is still pertussis until proven otherwise. Vaccine immunity fades in about `5-10` years.\n\n## The airway emergencies\n\n**Croup** is viral (parainfluenza), age `6 months to 3 years`, barking seal-like cough, inspiratory stridor, gradual onset, and the child looks tired but not toxic. Dexamethasone `0.6 mg/kg` once; nebulized epinephrine if stridor is present at rest.\n\n**Epiglottitis** is bacterial, sudden, and lethal. Hours of onset, high fever, drooling, muffled voice, tripod posture, and no cough. Do not put anything in the mouth. The airway is secured in the operating room.\n\n## Pneumonia\n\nPneumonia is infection of the alveoli. They fill with fluid and white cells, gas exchange fails locally, and blood passing that region stays deoxygenated. That is the mechanism behind the low oxygen saturation, the crackles, and the dense white patch on the chest film.\n\n**Community-acquired pneumonia (CAP)** starts outside a hospital. **Hospital-acquired pneumonia (HAP)** starts `48 hours` or more after admission; **ventilator-associated pneumonia (VAP)** is `48 hours` or more after intubation. That timing matters because hospital organisms are *Pseudomonas*, *Staphylococcus aureus* including MRSA, and resistant gram-negatives.\n\nTypical CAP pathogens: *Streptococcus pneumoniae* (the most common), *Haemophilus influenzae*, *Moraxella*. Sudden fever, rigors, productive rusty sputum, lobar consolidation.\n\nAtypical pathogens: *Mycoplasma pneumoniae* (young, healthy, \"walking pneumonia\", film looks worse than the patient), *Chlamydophila pneumoniae*, *Legionella* (water systems, high fever, diarrhea, confusion, low sodium).\n\n## CURB-65 and disposition\n\nOne point each: **C**onfusion, **U**rea (BUN above `19 mg/dL`), **R**espiratory rate `30` or more, **B**lood pressure below `90` systolic or `60` diastolic, age `65` or older.\n\n| Score | Disposition |\n|---|---|\n| 0-1 | Home, oral therapy |\n| 2 | Admit to a ward |\n| 3-5 | Consider intensive care |\n\n## Aspiration and empiric logic\n\nAspiration pneumonia follows a swallowing failure: stroke, seizure, intoxication, tube feeds. Gravity sends material to dependent segments, so the right lower lobe is classic when upright and the right upper lobe when supine.\n\nEmpiric choice follows the host. Healthy outpatient: amoxicillin `1 g` three times daily, or doxycycline. Comorbid or recent antibiotics: a respiratory fluoroquinolone, or a beta-lactam plus a macrolide. Inpatient hospital-acquired: cover *Pseudomonas* and MRSA until cultures say otherwise.\n\n> **On the exam:** \"Worse film than patient, young adult, dry hacking cough\" is *Mycoplasma*. \"Confusion, diarrhea, sodium `128`\" is *Legionella*.",
+      "keyPoints": [
+        "Influenza is abrupt and systemic; a cold is gradual and local. Oseltamivir only helps inside 48 hours.",
+        "Croup is viral, gradual, barky cough; epiglottitis is bacterial, sudden, drooling, tripod, no cough, and airway first.",
+        "HAP starts 48 hours or more after admission, which is why Pseudomonas and MRSA enter the empiric picture.",
+        "CURB-65: 0-1 home, 2 ward, 3-5 consider ICU.",
+        "Mycoplasma equals walking pneumonia; Legionella equals fever, diarrhea, confusion and hyponatremia."
+      ],
+      "checks": [
+        {
+          "q": "A 72-year-old with pneumonia is confused, BUN 24 mg/dL, RR 32, BP 104/64. What is the CURB-65 score and disposition?",
+          "choices": [
+            "2, discharge home",
+            "3, consider intensive care",
+            "4, ward admission",
+            "1, discharge home"
+          ],
+          "answer": 1,
+          "why": "Confusion, urea above 19, RR 30 or more, and age 65 or older each score. BP 104/64 does not score. That is 4 points, but the graded question asks the mapping: a score of 3 or more means consider ICU. Only the ICU option reflects the correct tier."
+        },
+        {
+          "q": "A 19-year-old college student has 3 weeks of dry cough, feels reasonably well, and the chest film shows diffuse bilateral interstitial markings. Most likely organism?",
+          "choices": [
+            "Streptococcus pneumoniae",
+            "Mycoplasma pneumoniae",
+            "Pseudomonas aeruginosa",
+            "Legionella pneumophila"
+          ],
+          "answer": 1,
+          "why": "Walking pneumonia in a young healthy person with a film worse than the exam is Mycoplasma. Pneumococcus gives lobar consolidation and rigors; Pseudomonas is a hospital or bronchiectasis organism."
+        },
+        {
+          "q": "Which finding argues for epiglottitis rather than croup?",
+          "choices": [
+            "Barking cough",
+            "Gradual onset over two days",
+            "Drooling with a muffled voice and no cough",
+            "Age 18 months"
+          ],
+          "answer": 2,
+          "why": "Epiglottitis is sudden, toxic, drooling, muffled, and coughless. A barking cough with gradual onset in a toddler is croup."
+        }
+      ]
+    },
+    {
+      "id": "pa-infectious-l03",
+      "title": "Urine, burning and flank pain",
+      "minutes": 6,
+      "body": "## Where the infection sits\n\nUrine is normally sterile from the bladder up. Bacteria usually climb in from the perineum through the urethra, which is why women get far more urinary tract infections: the female urethra is about `4 cm` long versus `20 cm` in men.\n\nIf bacteria stay in the bladder you get **cystitis**: burning on urination (dysuria), urgency, frequency, suprapubic pressure, and *no fever*. If they climb the ureters into the kidney you get **pyelonephritis**: fever `38.5 C` or higher, shaking chills, flank pain, tenderness over the costovertebral angle, nausea and vomiting.\n\n> **Key:** Fever plus flank pain moves the infection from a nuisance to a kidney infection with a real bacteremia risk.\n\n## Uncomplicated versus complicated\n\n**Uncomplicated** means a non-pregnant woman with a normal urinary tract. **Complicated** means anything else: male sex, pregnancy, an indwelling catheter, kidney stones, obstruction, recent instrumentation, diabetes, immunosuppression, or a transplanted kidney. Complicated infections get longer courses, cultures, and a lower threshold for imaging to rule out obstruction.\n\n## Asymptomatic bacteriuria\n\nBacteria in the urine with no symptoms is common in the elderly and in anyone with a catheter. Treating it does not help and breeds resistance. Treat only two groups: **pregnant patients** (risk of pyelonephritis and preterm birth) and **patients before a urologic procedure** that will breach the mucosa.\n\n> **Trap:** A confused nursing-home patient with a positive urinalysis and no urinary symptoms probably has delirium from something else. Do not stop the workup at the urine.\n\n## The organisms\n\n*Escherichia coli* causes about `75-85%` of uncomplicated infections. The rest of the list is worth memorizing as KEEPS: *Klebsiella*, *Enterobacter*, *Enterococcus*, *Proteus*, *Staphylococcus saprophyticus*. *Proteus* splits urea, raises urine pH above `7.0`, and forms struvite stones. *S. saprophyticus* is the young sexually active woman's second-most-common organism.\n\n## Reading the urinalysis\n\n| Finding | What it means |\n|---|---|\n| Leukocyte esterase positive | White cells present, inflammation |\n| Nitrites positive | Gram-negative rods converting nitrate; fairly specific for *E. coli* |\n| Pyuria (`10` or more WBC per high-power field) | Inflammation in the tract |\n| Bacteria on microscopy | Supports infection |\n| White cell casts | The kidney itself, so pyelonephritis |\n| Squamous cells | Contamination; the sample is skin, not bladder |\n\nNitrites can be falsely negative with *Enterococcus* and *S. saprophyticus*, which do not reduce nitrate.\n\n## First-line drugs\n\nUncomplicated cystitis:\n\n- Nitrofurantoin `100 mg` twice daily for `5` days (avoid if creatinine clearance is below `30`, and it does not treat kidney tissue)\n- Trimethoprim-sulfamethoxazole one double-strength tablet twice daily for `3` days, only where local resistance is under `20%`\n- Fosfomycin `3 g` as a single dose\n\nPyelonephritis: outpatient ciprofloxacin `500 mg` twice daily for `7` days, or inpatient ceftriaxone `1 g` IV daily. Fluoroquinolones reach kidney tissue; nitrofurantoin does not.\n\n## Prostatitis and catheters\n\nAcute bacterial prostatitis gives fever, perineal pain and a boggy, exquisitely tender prostate. Do not massage it. Treat `2-4` weeks with a fluoroquinolone or trimethoprim-sulfamethoxazole because few drugs penetrate the prostate.\n\nCatheter-associated infection is defined by symptoms plus bacteriuria in a catheterized patient. Every catheter grows bacteria within days; the fix is to remove or replace the catheter, not to treat the culture.\n\n> **On shift:** The single best prevention tool for catheter infections is asking daily whether the catheter is still needed.",
+      "keyPoints": [
+        "Cystitis has no fever; fever plus flank pain plus CVA tenderness is pyelonephritis.",
+        "Complicated means male, pregnant, catheter, stone, obstruction, instrumentation or immunosuppression.",
+        "Treat asymptomatic bacteriuria only in pregnancy and before urologic procedures.",
+        "E. coli causes 75-85%; Proteus raises urine pH above 7 and makes struvite stones.",
+        "Nitrofurantoin treats bladder only; pyelonephritis needs a drug that reaches kidney tissue such as ciprofloxacin or ceftriaxone."
+      ],
+      "checks": [
+        {
+          "q": "A 28-year-old woman has dysuria and frequency, temp 37.0 C, no flank pain. Which regimen fits best?",
+          "choices": [
+            "Nitrofurantoin 100 mg twice daily for 5 days",
+            "Ciprofloxacin 500 mg twice daily for 14 days",
+            "Ceftriaxone 1 g IV daily for 7 days",
+            "No treatment; this is asymptomatic bacteriuria"
+          ],
+          "answer": 0,
+          "why": "Afebrile dysuria in a healthy non-pregnant woman is uncomplicated cystitis. Nitrofurantoin for 5 days is first line. She has symptoms, so it is not asymptomatic bacteriuria, and IV or 14-day therapy is for pyelonephritis or prostatitis."
+        },
+        {
+          "q": "A urinalysis shows urine pH 8.2 and struvite crystals. Which organism is implied?",
+          "choices": [
+            "Escherichia coli",
+            "Staphylococcus saprophyticus",
+            "Enterococcus faecalis",
+            "Proteus mirabilis"
+          ],
+          "answer": 3,
+          "why": "Proteus makes urease, splits urea into ammonia, alkalinizes urine and forms struvite stones. E. coli typically leaves urine acidic."
+        },
+        {
+          "q": "Which urinalysis finding points specifically at the kidney rather than the bladder?",
+          "choices": [
+            "Positive nitrites",
+            "White blood cell casts",
+            "Positive leukocyte esterase",
+            "Bacteria on microscopy"
+          ],
+          "answer": 1,
+          "why": "Casts form in renal tubules, so a white cell cast localizes inflammation to the kidney. Esterase, nitrites and bacteria occur anywhere in the tract."
+        }
+      ]
+    },
+    {
+      "id": "pa-infectious-l04",
+      "title": "Meningitis and the infected brain",
+      "minutes": 8,
+      "body": "## The space that gets infected\n\nThe brain sits inside three membranes (the meninges) bathed in cerebrospinal fluid (CSF). **Meningitis** is inflammation of those membranes. **Encephalitis** is inflammation of the brain tissue itself. The difference shows in the exam: meningitis gives fever, headache, neck stiffness and photophobia with a *clear* mental status; encephalitis gives altered mental status, personality change, or seizures because the brain parenchyma is involved.\n\nClassic meningitis triad: fever, neck stiffness (nuchal rigidity), altered mental status. All three appear together in fewer than half of cases, but `95%` have at least two of fever, headache, stiff neck and altered mentation.\n\n> **Key:** Bacterial meningitis kills in hours. Suspicion alone justifies antibiotics; confirmation can wait.\n\n## The CSF pattern table\n\n| | Opening pressure | WBC/mm3 | Predominant cell | Glucose | Protein |\n|---|---|---|---|---|---|\n| Normal | `10-20 cm H2O` | `0-5` | lymphocytes | `45-80 mg/dL` | `15-45 mg/dL` |\n| Bacterial | high | `1,000-5,000` | neutrophils | low (under `40`, CSF:serum under `0.4`) | high (over `100`) |\n| Viral | normal or mild | `10-500` | lymphocytes | normal | mildly high |\n| Fungal / TB | high | `10-500` | lymphocytes | low | very high (over `100`) |\n\nBacteria eat glucose and pull neutrophils; viruses do neither. That single mechanism explains the whole table.\n\n## Pathogens by age\n\n- Newborn to 1 month: group B *Streptococcus*, *E. coli*, *Listeria monocytogenes*\n- 1 month to 18 years: *Neisseria meningitidis*, *Streptococcus pneumoniae*\n- 18 to 50 years: *S. pneumoniae*, *N. meningitidis*\n- Over 50, pregnant, or immunosuppressed: add *Listeria* back\n\n*N. meningitidis* is the one that spreads in dormitories and barracks and produces a petechial or purpuric rash that does not blanch. Overwhelming meningococcemia with adrenal hemorrhage is Waterhouse-Friderichsen syndrome.\n\n## Empiric treatment\n\nStandard adult empiric therapy is **ceftriaxone `2 g` IV every 12 hours plus vancomycin** (vancomycin covers cephalosporin-resistant pneumococcus). Add **ampicillin `2 g` IV every 4 hours** if the patient is over `50`, pregnant, or immunocompromised, because *Listeria* is not covered by cephalosporins.\n\nGive **dexamethasone `0.15 mg/kg` IV every 6 hours** with or just before the first antibiotic dose in suspected pneumococcal meningitis. Killing bacteria releases cell wall fragments that spike inflammation; blunting that reduces hearing loss and death. Given after antibiotics, it does not work.\n\n## CT before lumbar puncture\n\nA lumbar puncture in a brain with a mass or high pressure can cause herniation. CT first if any of: immunocompromised state, history of CNS disease, new seizure, papilledema, altered consciousness, or a focal neurologic deficit. Otherwise go straight to the tap.\n\n> **Trap:** If CT is needed, the order is blood cultures, then antibiotics and dexamethasone, then CT, then lumbar puncture. Never wait on the scanner while the patient goes untreated.\n\n## Encephalitis and abscess\n\n**Herpes simplex virus type 1** is the treatable encephalitis. It attacks the temporal lobe, so it presents with fever, confusion, bizarre behavior, aphasia, and temporal-lobe seizures. MRI shows temporal lobe changes; CSF PCR confirms. Start **acyclovir `10 mg/kg` IV every 8 hours** on suspicion, not on confirmation. Untreated mortality is about `70%`.\n\n**Brain abscess** presents subacutely: headache, focal deficit, fever in only about half. It arises from contiguous spread (sinus, ear, teeth) or hematogenous seeding (endocarditis, right-to-left shunt). Contrast imaging shows a ring-enhancing lesion. Treatment is drainage plus prolonged antibiotics; a lumbar puncture is contraindicated.",
+      "keyPoints": [
+        "Meningitis keeps mentation relatively clear; encephalitis alters it, because brain tissue is involved.",
+        "Bacterial CSF: thousands of neutrophils, low glucose, high protein. Viral: hundreds of lymphocytes, normal glucose.",
+        "Empiric adults: ceftriaxone plus vancomycin; add ampicillin for Listeria if over 50, pregnant or immunosuppressed.",
+        "Dexamethasone 0.15 mg/kg must go with or before the first antibiotic dose to matter.",
+        "HSV encephalitis is temporal-lobe and gets acyclovir 10 mg/kg IV q8h on suspicion; untreated mortality near 70%."
+      ],
+      "checks": [
+        {
+          "q": "CSF shows 3,200 WBC with 92% neutrophils, glucose 22 mg/dL, protein 180 mg/dL. Interpretation?",
+          "choices": [
+            "Viral meningitis",
+            "Bacterial meningitis",
+            "Normal CSF",
+            "Guillain-Barre syndrome"
+          ],
+          "answer": 1,
+          "why": "Neutrophil predominance with low glucose and high protein is bacterial. Viral gives lymphocytes with normal glucose; Guillain-Barre gives high protein with a normal cell count."
+        },
+        {
+          "q": "A 64-year-old with suspected meningitis needs empiric therapy. Which regimen is complete?",
+          "choices": [
+            "Ceftriaxone alone",
+            "Vancomycin alone",
+            "Ceftriaxone plus vancomycin plus ampicillin plus dexamethasone",
+            "Acyclovir plus ceftriaxone"
+          ],
+          "answer": 2,
+          "why": "Over 50 means Listeria coverage with ampicillin, and cephalosporins do not cover it. Vancomycin covers resistant pneumococcus and dexamethasone reduces neurologic injury."
+        },
+        {
+          "q": "A patient with suspected bacterial meningitis has papilledema and a focal deficit, so CT is ordered. What is the correct sequence?",
+          "choices": [
+            "CT, then lumbar puncture, then antibiotics",
+            "Blood cultures, antibiotics and dexamethasone, then CT, then lumbar puncture",
+            "Lumbar puncture immediately, then CT",
+            "Antibiotics only after CSF Gram stain returns"
+          ],
+          "answer": 1,
+          "why": "Imaging must not delay therapy. Cultures first so they are not sterilized, then drugs, then the scan, then the tap."
+        }
+      ]
+    },
+    {
+      "id": "pa-infectious-l05",
+      "title": "Skin, bone, joint and valve infections",
+      "minutes": 8,
+      "body": "## Cellulitis versus abscess\n\n**Cellulitis** is a spreading bacterial infection of the deeper skin and fat. It is warm, red, tender, swollen, with borders that fade into normal skin. There is no collection to drain, so it is treated with drugs. The usual organisms are beta-hemolytic streptococci and *Staphylococcus aureus*; cephalexin `500 mg` four times daily for `5-7` days is a standard non-purulent choice.\n\nAn **abscess** is a walled-off pocket of pus. Antibiotics diffuse poorly into pus, so the treatment is incision and drainage. Small abscesses in healthy patients may need nothing else. Purulent infections point toward *S. aureus* including MRSA, so added therapy is trimethoprim-sulfamethoxazole, doxycycline or clindamycin.\n\n> **Key:** Non-purulent equals strep equals cephalexin. Purulent equals staph equals drain it and cover MRSA.\n\n## Necrotizing infection\n\nNecrotizing fasciitis travels along the fascial plane, thromboses the small vessels, and kills the tissue above it. The red flags: **pain far out of proportion** to what you see, rapid hourly progression, skin anesthesia over the area, crepitus (gas crackling under the skin), bullae, dusky or gray skin, and systemic toxicity. It is a surgical emergency. Imaging must not delay the operating room. Mortality runs `20-40%` even treated.\n\n## Diabetic foot\n\nDiabetes damages nerves (so the patient does not feel the wound), small vessels (so healing and antibiotic delivery fail), and white cell function. A diabetic foot ulcer that probes to bone has a high likelihood of underlying osteomyelitis. Assess perfusion, offload pressure, debride, and culture deep tissue rather than the surface swab.\n\n## Osteomyelitis\n\nBone gets infected three ways: **hematogenous** seeding through blood (children, long bone metaphysis; adults, vertebrae), **contiguous** spread from adjacent soft tissue, and **direct inoculation** from trauma or surgery. *S. aureus* leads every category. Sickle cell disease adds *Salmonella*.\n\nPlain films lag `10-14` days behind the disease because roughly `30-50%` of bone mineral must be lost before a change is visible. MRI is the imaging of choice early. Bone biopsy with culture guides therapy. Treatment is `4-6` weeks of antibiotics because bone is poorly perfused, plus surgical debridement of dead bone (sequestrum) when present.\n\n## Septic arthritis\n\nA joint that is hot, swollen, exquisitely painful, and resists all motion is septic until proven otherwise. Bacteria in the joint destroy cartilage within days, so this is time-critical. **Arthrocentesis** is the answer: send cell count, Gram stain, culture and crystals.\n\n| Synovial WBC | Interpretation |\n|---|---|\n| Under `2,000` | Non-inflammatory |\n| `2,000-50,000` | Inflammatory (gout, rheumatoid) |\n| Over `50,000` with over `90%` neutrophils | Septic |\n\nNon-gonococcal septic arthritis is usually *S. aureus*, one large joint, most often the knee. Gonococcal arthritis is the young sexually active patient with migratory joint pains, tenosynovitis of the wrists and ankles, and scattered pustular skin lesions.\n\n> **Trap:** Gout and infection look identical from the doorway and can coexist. Tap the joint; crystals do not rule out infection.\n\n## Endocarditis\n\nBacteria in the blood stick to a heart valve, build a vegetation of platelets, fibrin and organisms, and that vegetation both destroys the valve and throws emboli. Native valve disease is *S. aureus* and viridans streptococci; intravenous drug use classically hits the tricuspid valve with *S. aureus* and sends septic emboli to the lungs.\n\nThe **modified Duke criteria** combine major criteria (persistently positive blood cultures with a typical organism; echocardiographic evidence of vegetation or new valve regurgitation) with minor criteria (fever `38 C` or higher, predisposing heart condition or injection drug use, vascular phenomena such as Janeway lesions, immunologic phenomena such as Osler nodes and Roth spots, and suggestive cultures). Two major, or one major plus three minor, or five minor make a clinical diagnosis. Blood cultures are three sets from separate sites before antibiotics.\n\nProsthetic joints and valves, pacemakers and catheters add a biofilm problem: organisms like *Staphylococcus epidermidis* build a slime layer that antibiotics cannot penetrate, so hardware usually has to come out.\n\n> **On shift:** \"Fever plus a new murmur\" gets blood cultures and an echocardiogram, not reassurance.",
+      "keyPoints": [
+        "Cellulitis is treated with drugs; an abscess is treated by draining it, because antibiotics do not enter pus.",
+        "Pain out of proportion, crepitus, skin anesthesia and rapid spread mean necrotizing fasciitis and immediate surgery.",
+        "Plain films lag osteomyelitis by 10-14 days; MRI is early imaging and therapy runs 4-6 weeks.",
+        "Synovial fluid over 50,000 WBC with over 90% neutrophils means septic arthritis; tap every hot joint.",
+        "Modified Duke: two major, or one major plus three minor, or five minor criteria."
+      ],
+      "checks": [
+        {
+          "q": "A 46-year-old has a thigh that became red 6 hours ago, now dusky with crepitus and pain far beyond the appearance. HR 126, BP 92/50. Next step?",
+          "choices": [
+            "Oral cephalexin and recheck in 48 hours",
+            "MRI of the thigh before any intervention",
+            "Immediate surgical consultation for operative exploration and debridement",
+            "Incision and drainage at the bedside"
+          ],
+          "answer": 2,
+          "why": "This is necrotizing fasciitis. Definitive care is operative debridement plus broad antibiotics. Imaging or oral therapy wastes the hours that determine survival."
+        },
+        {
+          "q": "Knee aspirate: 78,000 WBC, 94% neutrophils, no crystals. Interpretation?",
+          "choices": [
+            "Osteoarthritis",
+            "Gout",
+            "Septic arthritis",
+            "Normal joint fluid"
+          ],
+          "answer": 2,
+          "why": "Over 50,000 with neutrophil predominance is septic arthritis. Gout typically runs 2,000-50,000 and shows negatively birefringent needles; osteoarthritis is under 2,000."
+        },
+        {
+          "q": "Why does osteomyelitis require 4-6 weeks of antibiotics rather than 7-10 days?",
+          "choices": [
+            "Bone organisms are always resistant",
+            "Bone is poorly perfused, so drug delivery to infected bone is slow and incomplete",
+            "Oral antibiotics never penetrate bone",
+            "The diagnosis is usually delayed by a month"
+          ],
+          "answer": 1,
+          "why": "The limiting factor is perfusion and dead bone acting as a sanctuary, not universal resistance. Several oral agents do reach bone adequately."
+        }
+      ]
+    },
+    {
+      "id": "pa-infectious-l06",
+      "title": "Gut and liver infections",
+      "minutes": 7,
+      "body": "## Two ways a gut infection makes you sick\n\n**Toxin-mediated** illness means a preformed poison or a secreted toxin drives fluid out of the intestine. The stool is watery and large-volume, there is little or no fever, and there is no blood. **Invasive** illness means the organism burrows into the intestinal wall, so there is fever, cramping, and blood or mucus in the stool (dysentery).\n\nMost acute gastroenteritis is viral: norovirus in adults (cruise ships, schools, explosive vomiting and diarrhea for `24-48 hours`) and rotavirus in unvaccinated young children. Treatment is fluid. Oral rehydration solution works because glucose and sodium are absorbed together, dragging water with them.\n\n> **Key:** Watery and afebrile means supportive care. Bloody and febrile means think invasive bacteria and send stool studies.\n\n## When to send studies and when to treat\n\nSend stool studies for: bloody diarrhea, fever, severe or dehydrating illness, symptoms beyond `7` days, immunocompromise, recent antibiotics, or an outbreak.\n\nAntibiotics are usually withheld for suspected Shiga toxin-producing *E. coli* O157:H7, because killing the organism releases more toxin and raises the risk of hemolytic uremic syndrome (anemia, low platelets, kidney failure), classically in a child `5-10` days after bloody diarrhea. Antimotility agents such as loperamide are also avoided in bloody or febrile diarrhea.\n\n## Timelines that name the bug\n\n| Onset after eating | Organism | Clue |\n|---|---|---|\n| `1-6 hours` | *Staphylococcus aureus*, *Bacillus cereus* | preformed toxin, vomiting dominant, mayonnaise salads or reheated rice |\n| `8-16 hours` | *Clostridium perfringens* | cramps and watery stool, reheated meats |\n| `1-3 days` | *Salmonella*, *Campylobacter*, *Shigella* | fever, invasive, bloody possible |\n| `1-3 days` | *Vibrio*, enterotoxigenic *E. coli* | rice-water or traveler's diarrhea |\n\n*Campylobacter* is the classic antecedent of Guillain-Barre syndrome. *Salmonella* comes from poultry, eggs and reptiles. *Shigella* needs very few organisms and spreads person to person in daycares.\n\n## Clostridioides difficile\n\nAntibiotics wipe out the normal colonic flora, and *C. difficile* fills the vacancy and releases toxins A and B, which inflame the colon and form yellow pseudomembranes. Highest-risk drugs: clindamycin, fluoroquinolones, cephalosporins, and broad penicillins. Other risks are age over `65`, hospitalization, and proton pump inhibitors.\n\nTest only patients with `3` or more unformed stools in `24 hours`; a stool PCR on a formed stool just finds colonization. First-line treatment is oral vancomycin `125 mg` four times daily for `10` days or fidaxomicin. Metronidazole is now reserved for when those are unavailable.\n\nIsolation is **contact precautions** with gown and gloves, and **soap-and-water handwashing** because alcohol gel does not kill spores. Recurrent disease may need fecal microbiota transplant.\n\n> **Trap:** Alcohol hand rub is excellent for almost everything and useless against *C. difficile* spores.\n\n## Viral hepatitis\n\n| Type | Route | Chronic? | Note |\n|---|---|---|---|\n| A | fecal-oral, food, travel | no | vaccine available |\n| B | blood, sex, perinatal | yes, `5%` of adults, `90%` of infants | vaccine available |\n| C | blood, injection drug use | yes, up to `75-85%` | curable with direct-acting antivirals |\n| D | blood, needs B to exist | yes | only with B coinfection or superinfection |\n| E | fecal-oral, water | no | dangerous in pregnancy, mortality up to `20%` |\n\nHepatitis B serology is a pattern, not a single test:\n\n- **HBsAg** positive means the virus is present now (acute or chronic)\n- **Anti-HBs** positive means immunity, from vaccine or resolved infection\n- **Anti-HBc IgM** means acute or recent infection, and it is the marker that stays positive during the window period when HBsAg has cleared but anti-HBs has not appeared\n- **Anti-HBc total** positive with **anti-HBs** positive means natural resolved infection; vaccine immunity gives anti-HBs alone\n\n> **On the exam:** Anti-HBs alone equals vaccinated. Anti-HBs plus anti-HBc equals recovered from real infection.",
+      "keyPoints": [
+        "Toxin diarrhea is watery and afebrile; invasive diarrhea is bloody and febrile.",
+        "Vomiting within 1-6 hours of a meal is preformed toxin (S. aureus, B. cereus).",
+        "Avoid antibiotics and loperamide in suspected E. coli O157:H7 because of hemolytic uremic syndrome risk.",
+        "C. difficile: oral vancomycin 125 mg QID for 10 days, contact precautions, soap and water (alcohol gel fails on spores).",
+        "Anti-HBs alone means vaccinated; anti-HBs with anti-HBc means resolved natural infection."
+      ],
+      "checks": [
+        {
+          "q": "Four people vomit 3 hours after a picnic potato salad. No fever, no diarrhea at first. Most likely cause?",
+          "choices": [
+            "Salmonella invasion of the ileum",
+            "Preformed Staphylococcus aureus enterotoxin",
+            "Shigella dysentery",
+            "Norovirus with a 3-hour incubation"
+          ],
+          "answer": 1,
+          "why": "Onset within 1-6 hours with vomiting dominance means a preformed toxin was already in the food. Salmonella and Shigella incubate 1-3 days; norovirus takes 12-48 hours."
+        },
+        {
+          "q": "A patient on day 8 of clindamycin has 6 watery stools per day and abdominal cramps. Best initial treatment?",
+          "choices": [
+            "Oral vancomycin 125 mg four times daily for 10 days",
+            "IV vancomycin",
+            "Loperamide and observation",
+            "Ciprofloxacin"
+          ],
+          "answer": 0,
+          "why": "Oral vancomycin acts in the colon lumen and is first line for C. difficile. IV vancomycin does not reach the lumen, and fluoroquinolones are a cause rather than a cure."
+        },
+        {
+          "q": "Serology: HBsAg negative, anti-HBs positive, anti-HBc negative. Interpretation?",
+          "choices": [
+            "Acute hepatitis B",
+            "Chronic hepatitis B",
+            "Vaccinated",
+            "Resolved natural infection"
+          ],
+          "answer": 2,
+          "why": "Vaccine contains surface antigen only, so it produces anti-HBs without anti-HBc. Natural resolved infection would also show anti-HBc."
+        }
+      ]
+    },
+    {
+      "id": "pa-infectious-l07",
+      "title": "Tuberculosis and HIV",
+      "minutes": 8,
+      "body": "## How tuberculosis spreads and hides\n\n*Mycobacterium tuberculosis* travels in droplet nuclei small enough to stay airborne for hours. A patient who coughs in a room can infect someone who walks in later, which is why TB requires a negative-pressure **airborne isolation** room and an N95 respirator, not a surgical mask.\n\nOnce inhaled, the bacillus is swallowed by alveolar macrophages but resists being destroyed. The immune system walls it off in a granuloma. In `90%` of immunocompetent people it stays walled off forever: that is **latent TB**. The patient feels well, is not contagious, and has a normal chest film. When immunity drops (HIV, tumor necrosis factor inhibitors, steroids, dialysis, malnutrition, aging) the wall fails and **active TB** emerges: weeks of cough, night sweats, weight loss, fever, and eventually blood-streaked sputum (hemoptysis).\n\n> **Key:** Latent TB is infection without disease. It is not contagious, and it is still worth treating to prevent reactivation.\n\n## Testing and imaging\n\nThe **tuberculin skin test (TST)** is read at `48-72 hours` by measuring induration, not redness. Cutoffs: `5 mm` for HIV, recent contacts, immunosuppressed, or fibrotic chest film changes; `10 mm` for higher-risk groups such as recent immigrants, healthcare workers, injection drug users, and prisoners; `15 mm` for everyone else. The **interferon-gamma release assay (IGRA)** is a blood test, needs one visit, and is not confounded by prior BCG vaccination.\n\nA positive test means infection. Distinguishing latent from active requires a chest radiograph and symptoms. Primary disease favors the middle and lower lung zones with hilar adenopathy; reactivation favors the **upper lobe apices with cavitation**, because oxygen tension is highest there and the organism is an obligate aerobe.\n\nActive TB is confirmed with three sputum specimens for acid-fast smear and culture, or nucleic acid amplification. Treatment at the recognition level is **RIPE**: rifampin, isoniazid, pyrazinamide, ethambutol for `2` months, then rifampin and isoniazid for `4` more, `6` months total, under directly observed therapy. Isoniazid causes hepatitis and peripheral neuropathy, so pyridoxine (vitamin B6) `25-50 mg` daily is given with it. Rifampin turns body fluids orange. Ethambutol causes optic neuritis with red-green color loss.\n\n## HIV: what it destroys\n\nHIV binds CD4, the receptor on helper T cells, and over years grinds their count down. Helper T cells coordinate cell-mediated immunity, so as they fall, infections that healthy immune systems ignore start to matter. Normal CD4 is `500-1,600 cells/mm3`; **AIDS** is a CD4 below `200` or the presence of an AIDS-defining illness.\n\n## The testing algorithm\n\n1. **Fourth-generation antigen/antibody combination immunoassay**, which detects p24 antigen as early as `2-3 weeks` and antibodies by `3-4 weeks`.\n2. If reactive, an **HIV-1/HIV-2 antibody differentiation assay**.\n3. If that is negative or indeterminate, **HIV-1 RNA** (viral load) to catch acute infection before antibodies exist.\n\n**Acute retroviral syndrome** appears `2-4 weeks` after exposure: fever, sore throat, lymph node swelling, rash, and mouth ulcers. It is mistaken for mononucleosis constantly. Viral load is enormous and antibody tests may still be negative, which is exactly when transmission risk peaks.\n\n## Opportunistic infections by CD4\n\n| CD4 | Infection | Prophylaxis |\n|---|---|---|\n| under `200` | *Pneumocystis jirovecii* pneumonia | trimethoprim-sulfamethoxazole daily |\n| under `100` | *Toxoplasma gondii* encephalitis | trimethoprim-sulfamethoxazole daily |\n| under `50` | *Mycobacterium avium* complex | azithromycin weekly |\n\nPCP gives dry cough, progressive shortness of breath, a normal-sounding chest, and desaturation with walking. Toxoplasmosis gives multiple ring-enhancing brain lesions.\n\n## ART, PrEP and PEP\n\nAntiretroviral therapy combines drugs from different classes and is now started in everyone at diagnosis, regardless of CD4. Sustained undetectable viral load means the virus is not sexually transmitted.\n\n**PrEP** is pre-exposure prophylaxis: a daily pill for someone at ongoing risk, reducing sexual transmission by more than `90%` with adherence. **PEP** is post-exposure prophylaxis after a single exposure such as a needlestick or assault: three drugs for `28` days, started as soon as possible and within `72 hours`.\n\n> **Trap:** The 72-hour PEP window is the outside limit, not the target. Efficacy falls sharply after the first few hours.",
+      "keyPoints": [
+        "TB needs airborne isolation and an N95; droplet nuclei stay suspended for hours.",
+        "TST cutoffs are 5 mm (HIV, contacts, immunosuppressed), 10 mm (higher risk), 15 mm (low risk), read at 48-72 hours.",
+        "Reactivation TB cavitates in the upper lobes because the organism is an obligate aerobe.",
+        "HIV algorithm: fourth-generation antigen/antibody test, then differentiation assay, then RNA for acute infection.",
+        "PCP under CD4 200, toxoplasmosis under 100, MAC under 50; PEP is 3 drugs for 28 days within 72 hours."
+      ],
+      "checks": [
+        {
+          "q": "A healthcare worker with no risk factors has a TST induration of 12 mm. Interpretation?",
+          "choices": [
+            "Negative; the cutoff for everyone is 15 mm",
+            "Positive; healthcare workers use a 10 mm cutoff",
+            "Positive; all healthcare workers use a 5 mm cutoff",
+            "Indeterminate; repeat in 6 months"
+          ],
+          "answer": 1,
+          "why": "Healthcare workers fall in the 10 mm group. The 5 mm cutoff is for HIV, close contacts, immunosuppressed patients and fibrotic films; 15 mm is for people with no risk factors at all."
+        },
+        {
+          "q": "A patient 3 weeks after a high-risk exposure has fever, sore throat, rash and adenopathy. The antibody differentiation assay is negative. What confirms the diagnosis?",
+          "choices": [
+            "Repeat antibody test in 6 months",
+            "HIV-1 RNA viral load",
+            "CD4 count",
+            "Monospot"
+          ],
+          "answer": 1,
+          "why": "Acute retroviral syndrome occurs before seroconversion, so RNA is the test that detects it. Waiting six months misses the period of highest transmission risk."
+        },
+        {
+          "q": "At what CD4 count is Pneumocystis prophylaxis with trimethoprim-sulfamethoxazole started?",
+          "choices": [
+            "Below 500",
+            "Below 350",
+            "Below 200",
+            "Below 50"
+          ],
+          "answer": 2,
+          "why": "PCP risk rises sharply below 200. Below 100 adds toxoplasmosis and below 50 adds Mycobacterium avium complex."
+        }
+      ]
+    },
+    {
+      "id": "pa-infectious-l08",
+      "title": "Sexually transmitted infections",
+      "minutes": 7,
+      "body": "## The two that travel together\n\n*Chlamydia trachomatis* is the most commonly reported bacterial infection in the United States. Most infections cause no symptoms at all, which is why it quietly scars fallopian tubes and causes infertility and ectopic pregnancy. When symptomatic it gives urethral or cervical discharge and dysuria.\n\n*Neisseria gonorrhoeae* produces a thicker, more purulent discharge and a faster onset, typically `2-7` days after exposure. Both are diagnosed by **nucleic acid amplification testing (NAAT)** on urine or a swab from the exposed site, including throat and rectum.\n\nCurrent treatment: gonorrhea gets **ceftriaxone `500 mg` IM once** (`1 g` if over `150 kg`), and chlamydia gets **doxycycline `100 mg` twice daily for `7` days**. If chlamydia has not been excluded, treat for both. Azithromycin `1 g` is the alternative in pregnancy, where doxycycline is contraindicated.\n\n> **Trap:** A patient treated for gonorrhea who is not also covered for chlamydia frequently returns with persistent symptoms, because coinfection is common.\n\n## Syphilis by stage\n\n*Treponema pallidum* is a spirochete that cannot be cultured.\n\n- **Primary**: a single painless ulcer with a firm, indurated edge (chancre) `3` weeks after exposure. It heals on its own, which is why patients ignore it.\n- **Secondary**: `6 weeks to 6 months` later, a diffuse rash that includes the palms and soles, fever, adenopathy, and moist gray genital plaques (condyloma lata).\n- **Latent**: no symptoms, positive serology. Early latent is within `1` year.\n- **Tertiary**: years later, gummas, aortitis of the ascending aorta, and neurosyphilis with tabes dorsalis and Argyll Robertson pupils that accommodate but do not react to light.\n\nTesting is two-tiered: a nontreponemal test (RPR or VDRL) that falls with treatment and is used to follow response, plus a treponemal test (FTA-ABS or TP-PA) that stays positive for life. Treatment is **benzathine penicillin G `2.4 million units` IM once** for primary, secondary and early latent; `3` weekly doses for late latent; IV penicillin for neurosyphilis. A penicillin-allergic pregnant patient is desensitized, not switched.\n\nA few hours after treatment, fever, chills and myalgias from dying spirochetes is the **Jarisch-Herxheimer reaction**, not an allergy.\n\n## Ulcers, discharge and warts\n\n**Herpes simplex** gives painful grouped vesicles on a red base that ulcerate, plus tingling before the outbreak (prodrome) and often fever and tender nodes on a first episode. The virus lives permanently in the sacral dorsal root ganglion, so recurrences are the rule. Valacyclovir `1 g` twice daily for `10` days treats a first episode; daily suppression reduces recurrences and transmission.\n\nPainful ulcer equals herpes or chancroid. Painless ulcer equals syphilis.\n\n**Trichomonas vaginalis** is a protozoan: frothy yellow-green discharge, itching, and a cervix with punctate hemorrhages (strawberry cervix). Motile organisms on wet mount. Treat with metronidazole `2 g` once, or `500 mg` twice daily for `7` days, and treat the partner.\n\n**Human papillomavirus** types 6 and 11 cause genital warts; types 16 and 18 cause most cervical cancer. The vaccine is routine at ages `11-12` and can be given through age `26`, with shared decision-making to `45`.\n\n## Pelvic inflammatory disease\n\nPID is infection ascending from the cervix into the uterus, tubes and peritoneum. Minimum diagnostic criteria in a sexually active person with pelvic pain and no other cause: **cervical motion tenderness, uterine tenderness, or adnexal tenderness**. One of those is enough to treat, because the cost of missing it is infertility, chronic pain and ectopic pregnancy. Outpatient treatment is ceftriaxone `500 mg` IM plus doxycycline `100 mg` twice daily for `14` days plus metronidazole `500 mg` twice daily for `14` days. Right upper quadrant pain from perihepatitis is Fitz-Hugh-Curtis syndrome.\n\n## Partners, reporting and pregnancy\n\n**Expedited partner therapy** means giving the patient medication or a prescription for the partner without examining the partner; it is permitted in most states for chlamydia and gonorrhea. Chlamydia, gonorrhea, syphilis, HIV, chancroid and hepatitis are reportable to the health department.\n\nPregnancy changes drug choices: no doxycycline, no fluoroquinolones. Screening in pregnancy includes HIV, syphilis, hepatitis B surface antigen, and chlamydia.\n\n> **On the exam:** Cervical motion tenderness alone in a sexually active patient with pelvic pain is enough to start PID treatment.",
+      "keyPoints": [
+        "Gonorrhea: ceftriaxone 500 mg IM once. Chlamydia: doxycycline 100 mg BID for 7 days. Cover both if unsure.",
+        "Painless indurated ulcer is syphilis; painful vesicles or ulcers are herpes or chancroid.",
+        "Benzathine penicillin G 2.4 million units IM once treats primary, secondary and early latent syphilis.",
+        "PID needs only cervical motion, uterine, or adnexal tenderness to justify treatment.",
+        "No doxycycline or fluoroquinolones in pregnancy; penicillin-allergic pregnant syphilis patients are desensitized."
+      ],
+      "checks": [
+        {
+          "q": "A 24-year-old has a single painless genital ulcer with a firm raised border. Most likely diagnosis?",
+          "choices": [
+            "Herpes simplex",
+            "Primary syphilis",
+            "Chancroid",
+            "Trichomoniasis"
+          ],
+          "answer": 1,
+          "why": "A painless indurated chancre is primary syphilis. Herpes gives painful grouped vesicles, and chancroid gives a painful ragged ulcer with tender nodes."
+        },
+        {
+          "q": "A sexually active 22-year-old has pelvic pain and cervical motion tenderness. Pregnancy test negative. Best action?",
+          "choices": [
+            "Await NAAT results before treating",
+            "Treat empirically for PID with ceftriaxone, doxycycline and metronidazole",
+            "Reassure and follow up in 2 weeks",
+            "Treat only if temperature exceeds 38.3 C"
+          ],
+          "answer": 1,
+          "why": "Minimum criteria are met and the consequences of delay are tubal scarring and infertility, so empiric treatment starts immediately and testing continues in parallel."
+        },
+        {
+          "q": "Which syphilis test stays positive for life and therefore cannot track treatment response?",
+          "choices": [
+            "RPR",
+            "VDRL",
+            "FTA-ABS",
+            "Dark-field microscopy"
+          ],
+          "answer": 2,
+          "why": "Treponemal tests such as FTA-ABS remain positive permanently. Nontreponemal titers (RPR, VDRL) decline with successful treatment and are used for follow-up."
+        }
+      ]
+    },
+    {
+      "id": "pa-infectious-l09",
+      "title": "Ticks, mosquitoes and the returning traveler",
+      "minutes": 7,
+      "body": "## Lyme disease\n\nNew Jersey sits in the heart of Lyme country. *Borrelia burgdorferi*, a spirochete, is carried by the blacklegged deer tick *Ixodes scapularis*, whose nymph stage is active in late spring and summer and is roughly the size of a poppy seed, which is why most patients never recall a bite.\n\nStage by stage:\n\n- **Early localized** (`3-30` days): **erythema migrans**, an expanding red patch often with central clearing, at least `5 cm` across, painless and not itchy, plus flu-like symptoms.\n- **Early disseminated** (weeks to months): multiple secondary lesions, **facial nerve palsy** (sometimes bilateral, a strong clue), lymphocytic meningitis, and **carditis** with atrioventricular block that can swing from first to third degree in hours.\n- **Late** (months to years): **arthritis**, typically a large joint and typically the knee, with a big effusion and less pain than you would expect.\n\nErythema migrans is a clinical diagnosis; treat without waiting for serology, which is often still negative early. Doxycycline `100 mg` twice daily for `10-14` days for adults; amoxicillin or cefuroxime for pregnancy and young children. Cardiac or neurologic disease gets IV ceftriaxone.\n\n> **Key:** In an endemic state, a bullseye rash is enough. Serology this early tests negative and only delays care.\n\n## Other tick-borne illnesses\n\n**Rocky Mountain spotted fever** (*Rickettsia rickettsii*, the dog tick) infects the endothelium of small vessels, producing a vasculitis. Fever, severe headache, and myalgias come first; the rash appears on day `2-5`, starts on the **wrists and ankles**, and moves inward, including palms and soles. It becomes petechial. Untreated mortality reaches `20-25%`. Doxycycline is the treatment **at all ages including young children**, because the risk of death exceeds the theoretical tooth-staining concern. Treat on suspicion; do not wait for serology.\n\n**Anaplasmosis** and ehrlichiosis: fever, headache, low white count, low platelets, high liver enzymes, usually no rash. Doxycycline again.\n\n**Babesiosis** is a malaria-like protozoan in red cells: fever, hemolytic anemia, jaundice, and Maltese-cross forms on a smear. It is severe in asplenic patients. Treatment is atovaquone plus azithromycin.\n\n## Tick removal and prophylaxis\n\nGrasp the tick with fine-tipped forceps as close to the skin as possible and pull straight up with steady pressure. No petroleum jelly, no matches, no twisting. An *Ixodes* tick generally must be attached `36-48 hours` to transmit Lyme. A single dose of **doxycycline `200 mg`** within `72 hours` of removal can be offered when the tick is an identified engorged adult or nymphal *Ixodes*, attachment was `36` hours or more, and the area is highly endemic.\n\n## Rabies\n\nRabies virus travels up peripheral nerves to the brain and is essentially `100%` fatal once symptoms begin, but fully preventable before that. In the United States the reservoirs are bats, raccoons, skunks and foxes. A bat in the room of a sleeping person or a child counts as an exposure even without a visible bite.\n\nPost-exposure prophylaxis in a previously unvaccinated person: wash the wound thoroughly with soap and water for `15` minutes, give **rabies immune globulin `20 IU/kg`** infiltrated around the wound, plus **vaccine on days 0, 3, 7 and 14**. Dogs and cats that can be observed for `10` days may allow prophylaxis to be deferred.\n\n## The returning traveler\n\n**Malaria** is fever in anyone back from an endemic area, full stop. *Plasmodium falciparum* is the lethal species and can present within `7-30` days with cyclic fevers, anemia, and cerebral malaria. Diagnosis is thick and thin blood smears, repeated up to three times `12-24` hours apart before ruling it out.\n\n**Dengue** is mosquito-borne, incubates `4-7` days, and gives high fever, retro-orbital headache, severe bone pain (\"breakbone fever\"), rash, low platelets, and hemoconcentration. Avoid aspirin and NSAIDs because of bleeding risk.\n\n**West Nile virus** is domestic, spread by *Culex* mosquitoes in late summer. Most infections are silent; fewer than `1%` develop neuroinvasive disease with encephalitis, meningitis, or asymmetric flaccid paralysis. Care is supportive.\n\nPre-travel planning includes hepatitis A, typhoid and yellow fever vaccines by destination, malaria chemoprophylaxis, and food and water precautions.\n\n> **Trap:** \"Fever after travel\" with no rash and no localizing signs is malaria until three smears say otherwise.",
+      "keyPoints": [
+        "Erythema migrans in an endemic area is treated clinically; early serology is unreliable.",
+        "Lyme stages: rash, then facial palsy and AV block, then monoarticular knee arthritis.",
+        "RMSF rash starts at wrists and ankles and moves centrally; doxycycline at all ages, on suspicion.",
+        "Ixodes usually needs 36-48 hours attached; single-dose doxycycline 200 mg within 72 hours is the prophylaxis option.",
+        "Fever in a returning traveler is malaria until three thick and thin smears are negative."
+      ],
+      "checks": [
+        {
+          "q": "A 6-year-old in New Jersey has fever, headache, and a petechial rash that began on the wrists and ankles. Best treatment?",
+          "choices": [
+            "Amoxicillin, because doxycycline stains teeth in children",
+            "Doxycycline, because untreated Rocky Mountain spotted fever mortality outweighs the dental concern",
+            "Supportive care while awaiting serology",
+            "IV ceftriaxone"
+          ],
+          "answer": 1,
+          "why": "Doxycycline is the treatment of choice at every age for RMSF. Delay for serology or substituting a beta-lactam raises the risk of a 20-25% mortality disease."
+        },
+        {
+          "q": "An adult removes an engorged nymphal Ixodes tick attached about 40 hours in an endemic county. What prophylaxis applies?",
+          "choices": [
+            "Doxycycline 100 mg twice daily for 14 days",
+            "Amoxicillin for 10 days",
+            "Single dose doxycycline 200 mg within 72 hours",
+            "No prophylaxis is ever indicated"
+          ],
+          "answer": 2,
+          "why": "Single-dose doxycycline 200 mg within 72 hours is the accepted prophylaxis when the tick is Ixodes, engorged, attached 36 hours or more, and the area is endemic. Full courses are for actual disease."
+        },
+        {
+          "q": "Why are NSAIDs and aspirin avoided in suspected dengue?",
+          "choices": [
+            "They blunt the fever curve needed for diagnosis",
+            "Thrombocytopenia and plasma leak raise bleeding risk",
+            "They interact with antimalarials",
+            "They prolong the viremic period"
+          ],
+          "answer": 1,
+          "why": "Dengue drops platelets and leaks plasma, so antiplatelet and anticoagulant effects can precipitate serious hemorrhage. Acetaminophen is used instead."
+        }
+      ]
+    },
+    {
+      "id": "pa-infectious-l10",
+      "title": "Vaccines, precautions and antibiotic stewardship",
+      "minutes": 7,
+      "body": "## How vaccines earn their schedule\n\nA vaccine shows the immune system a harmless piece of a pathogen so memory cells exist before the real exposure. **Live attenuated** vaccines (measles-mumps-rubella, varicella, yellow fever, intranasal influenza) give strong, long-lasting immunity but are avoided in pregnancy and in significant immunosuppression. **Inactivated, subunit, toxoid and mRNA** vaccines are safe in those groups but often require boosters.\n\nChildhood logic in one line: hepatitis B at birth; a `2, 4, 6`-month series of DTaP, polio, *Haemophilus influenzae* type b, pneumococcal conjugate and rotavirus; MMR and varicella at `12-15` months; and the adolescent block of Tdap, meningococcal and HPV at `11-12` years.\n\nAdult logic: **Tdap once**, then **Td or Tdap every `10` years**, and Tdap in **every pregnancy at `27-36` weeks** so maternal antibody protects the newborn from pertussis. Influenza annually for everyone `6` months and older. COVID-19 per current recommendation. Shingles (recombinant zoster, two doses) at `50` and older. Pneumococcal vaccination for adults `50` and older and for younger adults with chronic heart, lung, liver or kidney disease, diabetes, smoking, or immunocompromise.\n\nHealthcare workers additionally need documented immunity to measles, mumps, rubella, varicella, hepatitis B, and annual influenza, plus TB screening at hire.\n\n> **Key:** Live vaccines are the ones you withhold in pregnancy and immunosuppression. Everything else is fair game.\n\n## Precautions\n\n**Standard precautions** apply to every patient every time: hand hygiene, gloves for anything wet, gown, mask and eye protection when splash is possible, and safe sharps handling. They assume every patient's blood and body fluid is infectious.\n\nTransmission-based precautions are layered on top:\n\n| Type | Barrier | Examples |\n|---|---|---|\n| Contact | gown and gloves, dedicated equipment | *C. difficile*, MRSA, VRE, scabies, RSV |\n| Droplet | surgical mask within `6 feet`, private room | influenza, pertussis, *N. meningitidis*, mumps |\n| Airborne | N95 respirator, negative-pressure room | tuberculosis, measles, varicella, disseminated zoster |\n\nDroplets are large, fall within about `6 feet`, and a surgical mask stops them. Airborne particles are droplet nuclei that stay suspended and drift, so they need a fitted respirator and engineering controls.\n\nHand hygiene is the single highest-yield intervention. Alcohol-based rub for at least `20` seconds is preferred for most situations; soap and water is required for visibly soiled hands and for *C. difficile* spores.\n\n## Bloodborne exposure\n\nAfter a needlestick: wash the site with soap and water immediately, report it, and get the source patient tested for HIV, hepatitis B and hepatitis C. Approximate transmission risk per percutaneous exposure:\n\n- Hepatitis B: up to `30%` in an unvaccinated person\n- Hepatitis C: about `1.8%`\n- HIV: about `0.3%`\n\nHIV post-exposure prophylaxis is three drugs for `28` days, started within hours and no later than `72` hours. Hepatitis B is handled by vaccination status and immune globulin. There is no prophylaxis for hepatitis C, but it is followed and treated if it converts, and current direct-acting antivirals cure most cases.\n\n> **On shift:** Never recap a needle. Most sharps injuries happen between the patient and the sharps container.\n\n## Resistance and stewardship\n\nBacteria resist drugs by a small set of mechanisms: **enzymes that destroy the drug** (beta-lactamases, including extended-spectrum beta-lactamases and carbapenemases), **altered targets** (altered penicillin-binding protein 2a makes MRSA methicillin-resistant; altered cell wall precursors make VRE vancomycin-resistant), **efflux pumps** that push the drug out, and **reduced permeability** from lost porin channels. Resistance genes move between organisms on plasmids, which is why an unrelated patient's exposure raises everyone's risk.\n\n**Stewardship** in practice:\n\n1. Do not treat viral illness with antibacterial drugs.\n2. Get cultures before therapy so therapy can be narrowed later.\n3. Start broad only when the patient is sick enough to require it, then **de-escalate when cultures return**.\n4. Use the **shortest effective course**: `5` days for uncomplicated community-acquired pneumonia, `5` days for cystitis with nitrofurantoin, `7` days for many other infections.\n5. **Do not treat colonization**: a positive catheter urine culture, a wound swab, or a tracheal aspirate without symptoms is not a disease.\n6. Move from IV to oral as soon as the gut works and the patient is stable.\n\n> **Trap:** \"Culture positive\" is not \"patient infected.\" The clinical picture decides; the culture only names the organism if one is causing disease.",
+      "keyPoints": [
+        "Live vaccines (MMR, varicella, yellow fever) are withheld in pregnancy and significant immunosuppression.",
+        "Tdap in every pregnancy at 27-36 weeks; Td or Tdap boosters every 10 years.",
+        "Contact = gown and gloves; droplet = surgical mask within 6 feet; airborne = N95 plus negative pressure.",
+        "Needlestick risk: hepatitis B up to 30%, hepatitis C about 1.8%, HIV about 0.3%.",
+        "Stewardship: cultures first, de-escalate when they return, shortest effective course, never treat colonization."
+      ],
+      "checks": [
+        {
+          "q": "A patient is admitted with suspected pulmonary tuberculosis. Which precaution is required?",
+          "choices": [
+            "Contact precautions with gown and gloves",
+            "Droplet precautions with a surgical mask",
+            "Airborne precautions with an N95 and a negative-pressure room",
+            "Standard precautions only"
+          ],
+          "answer": 2,
+          "why": "TB travels in droplet nuclei that remain suspended, so a surgical mask and a standard room are insufficient. Measles and varicella share this requirement."
+        },
+        {
+          "q": "Which patient should not receive the live attenuated MMR vaccine?",
+          "choices": [
+            "A 28-year-old who is 20 weeks pregnant",
+            "A 30-year-old healthcare worker without documented immunity",
+            "A 13-month-old healthy child",
+            "A 22-year-old college student with no prior doses"
+          ],
+          "answer": 0,
+          "why": "Live vaccines are contraindicated in pregnancy. The other three are exactly the groups MMR is recommended for."
+        },
+        {
+          "q": "Blood cultures return E. coli sensitive to ampicillin in a patient on piperacillin-tazobactam who is improving. What does stewardship call for?",
+          "choices": [
+            "Continue the broad agent for the full course",
+            "Add vancomycin for broader coverage",
+            "De-escalate to the narrowest effective agent",
+            "Stop all antibiotics now that the organism is known"
+          ],
+          "answer": 2,
+          "why": "Narrowing once susceptibilities are known limits resistance and side effects. Stopping early leaves the infection untreated, and adding coverage does the opposite of stewardship."
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "pa-infectious-c001",
+      "front": "What physically happens in the body to produce a fever?",
+      "back": "Cytokines (IL-1, IL-6, TNF) raise the hypothalamic set point above 37 C. The body then shivers and vasoconstricts to reach the new target, which is why a rising fever feels cold.",
+      "lesson": "pa-infectious-l01"
+    },
+    {
+      "id": "pa-infectious-c002",
+      "front": "Why does acetaminophen help fever but not heat stroke?",
+      "back": "Fever is a raised set point that antipyretics reset. Hyperthermia leaves the set point normal and simply overwhelms heat loss, so only physical cooling works.",
+      "lesson": "pa-infectious-l01"
+    },
+    {
+      "id": "pa-infectious-c004",
+      "front": "Name the three qSOFA criteria.",
+      "back": "Respiratory rate 22 or more, altered mental status, systolic blood pressure 100 mmHg or less. Two of three is a positive screen and needs no labs.",
+      "lesson": "pa-infectious-l01"
+    },
+    {
+      "id": "pa-infectious-c005",
+      "front": "List the four SIRS criteria with their numbers.",
+      "back": "Temperature above 38 C or below 36 C; heart rate above 90; respiratory rate above 20; white count above 12,000 or below 4,000. Two or more is positive.",
+      "lesson": "pa-infectious-l01"
+    },
+    {
+      "id": "pa-infectious-c006",
+      "front": "What are the five elements of the hour-1 sepsis bundle?",
+      "back": "Measure lactate, draw blood cultures before antibiotics, give broad-spectrum antibiotics within 1 hour, give 30 mL/kg crystalloid for hypotension or lactate 4 or more, start vasopressors to a MAP of 65.",
+      "lesson": "pa-infectious-l01"
+    },
+    {
+      "id": "pa-infectious-c007",
+      "front": "What distinguishes septic shock from sepsis?",
+      "back": "Sepsis is organ dysfunction from a dysregulated infection response. Septic shock adds persistent hypotension requiring vasopressors plus lactate above 2 mmol/L despite adequate fluid.",
+      "lesson": "pa-infectious-l01"
+    },
+    {
+      "id": "pa-infectious-c008",
+      "front": "What defines neutropenic fever and what is the first action?",
+      "back": "Absolute neutrophil count below 500 with a single temperature of 38.3 C or 38.0 C sustained an hour. Culture and give an antipseudomonal beta-lactam such as cefepime immediately.",
+      "lesson": "pa-infectious-l01"
+    },
+    {
+      "id": "pa-infectious-c010",
+      "front": "How does influenza differ from a common cold in onset and feel?",
+      "back": "Influenza starts abruptly over hours with fever 38.9 C or higher, whole-body aches and prostration. A cold builds gradually with local nasal symptoms and little fever.",
+      "lesson": "pa-infectious-l02"
+    },
+    {
+      "id": "pa-infectious-c011",
+      "front": "What is the dose and time window for oseltamivir?",
+      "back": "75 mg twice daily for 5 days, started within 48 hours of symptom onset for maximum benefit.",
+      "lesson": "pa-infectious-l02"
+    },
+    {
+      "id": "pa-infectious-c013",
+      "front": "Which findings separate epiglottitis from croup?",
+      "back": "Epiglottitis: hours of onset, high fever, drooling, muffled voice, tripod posture, no cough. Croup: gradual, barking cough, inspiratory stridor, age 6 months to 3 years.",
+      "lesson": "pa-infectious-l02"
+    },
+    {
+      "id": "pa-infectious-c014",
+      "front": "What is the dexamethasone dose for croup?",
+      "back": "0.6 mg/kg as a single dose, with nebulized epinephrine added if stridor is present at rest.",
+      "lesson": "pa-infectious-l02"
+    },
+    {
+      "id": "pa-infectious-c015",
+      "front": "How many hours after admission must pneumonia begin to be called hospital-acquired?",
+      "back": "48 hours or more after admission; ventilator-associated is 48 hours or more after intubation. That timing brings Pseudomonas and MRSA into the empiric plan.",
+      "lesson": "pa-infectious-l02"
+    },
+    {
+      "id": "pa-infectious-c016",
+      "front": "Spell out CURB-65 and its disposition tiers.",
+      "back": "Confusion, Urea above 19 mg/dL, Respiratory rate 30 or more, Blood pressure under 90/60, age 65 or older. Score 0-1 home, 2 ward, 3-5 consider ICU.",
+      "lesson": "pa-infectious-l02"
+    },
+    {
+      "id": "pa-infectious-c017",
+      "front": "Which pneumonia pathogen causes fever, diarrhea, confusion and hyponatremia?",
+      "back": "Legionella pneumophila, typically from contaminated water systems.",
+      "lesson": "pa-infectious-l02"
+    },
+    {
+      "id": "pa-infectious-c019",
+      "front": "What symptom separates cystitis from pyelonephritis?",
+      "back": "Fever. Cystitis is dysuria, urgency and frequency without fever. Pyelonephritis adds fever 38.5 C or higher, chills, flank pain and CVA tenderness.",
+      "lesson": "pa-infectious-l03"
+    },
+    {
+      "id": "pa-infectious-c021",
+      "front": "Which two groups get treated for asymptomatic bacteriuria?",
+      "back": "Pregnant patients and patients about to undergo a urologic procedure that breaches the mucosa. Everyone else is left alone.",
+      "lesson": "pa-infectious-l03"
+    },
+    {
+      "id": "pa-infectious-c022",
+      "front": "What share of uncomplicated urinary infections does E. coli cause?",
+      "back": "About 75 to 85 percent. The rest are Klebsiella, Enterobacter, Enterococcus, Proteus and Staphylococcus saprophyticus.",
+      "lesson": "pa-infectious-l03"
+    },
+    {
+      "id": "pa-infectious-c023",
+      "front": "Why does Proteus raise urine pH and form stones?",
+      "back": "It produces urease, which splits urea into ammonia. Urine pH climbs above 7.0 and struvite (magnesium ammonium phosphate) stones precipitate.",
+      "lesson": "pa-infectious-l03"
+    },
+    {
+      "id": "pa-infectious-c024",
+      "front": "Which urinalysis finding localizes infection to the kidney?",
+      "back": "White blood cell casts, because casts form in the renal tubules. Esterase, nitrites and bacteria can come from anywhere in the tract.",
+      "lesson": "pa-infectious-l03"
+    },
+    {
+      "id": "pa-infectious-c025",
+      "front": "Give the first-line regimen and duration for uncomplicated cystitis.",
+      "back": "Nitrofurantoin 100 mg twice daily for 5 days. Alternatives are trimethoprim-sulfamethoxazole DS twice daily for 3 days or fosfomycin 3 g once.",
+      "lesson": "pa-infectious-l03"
+    },
+    {
+      "id": "pa-infectious-c026",
+      "front": "Why is nitrofurantoin wrong for pyelonephritis?",
+      "back": "It concentrates in urine but does not reach therapeutic levels in kidney tissue. Pyelonephritis needs ciprofloxacin 500 mg BID for 7 days or ceftriaxone 1 g IV daily.",
+      "lesson": "pa-infectious-l03"
+    },
+    {
+      "id": "pa-infectious-c028",
+      "front": "What separates meningitis from encephalitis on examination?",
+      "back": "Meningitis inflames the membranes: fever, headache, stiff neck, photophobia, relatively clear mentation. Encephalitis inflames brain tissue: altered mental status, behavior change, seizures.",
+      "lesson": "pa-infectious-l04"
+    },
+    {
+      "id": "pa-infectious-c029",
+      "front": "Give the bacterial meningitis CSF pattern.",
+      "back": "1,000-5,000 WBC with neutrophil predominance, glucose under 40 mg/dL, protein over 100 mg/dL, elevated opening pressure.",
+      "lesson": "pa-infectious-l04"
+    },
+    {
+      "id": "pa-infectious-c031",
+      "front": "Which meningitis pathogens are added back for patients over 50, pregnant or immunosuppressed?",
+      "back": "Listeria monocytogenes, which cephalosporins do not cover. Add ampicillin 2 g IV every 4 hours to ceftriaxone plus vancomycin.",
+      "lesson": "pa-infectious-l04"
+    },
+    {
+      "id": "pa-infectious-c032",
+      "front": "What is the dexamethasone dose in suspected bacterial meningitis and when must it be given?",
+      "back": "0.15 mg/kg IV every 6 hours, given with or just before the first antibiotic dose. Given afterward it does not reduce hearing loss or death.",
+      "lesson": "pa-infectious-l04"
+    },
+    {
+      "id": "pa-infectious-c033",
+      "front": "When is a CT scan required before lumbar puncture?",
+      "back": "Immunocompromise, known CNS disease, new seizure, papilledema, altered consciousness, or a focal neurologic deficit.",
+      "lesson": "pa-infectious-l04"
+    },
+    {
+      "id": "pa-infectious-c034",
+      "front": "What is the correct order when CT is needed before a tap in suspected meningitis?",
+      "back": "Blood cultures, then antibiotics and dexamethasone, then CT, then lumbar puncture. Imaging never delays therapy.",
+      "lesson": "pa-infectious-l04"
+    },
+    {
+      "id": "pa-infectious-c035",
+      "front": "Which encephalitis is treatable and what is the regimen?",
+      "back": "HSV-1 encephalitis, which attacks the temporal lobe. Acyclovir 10 mg/kg IV every 8 hours started on suspicion. Untreated mortality is about 70 percent.",
+      "lesson": "pa-infectious-l04"
+    },
+    {
+      "id": "pa-infectious-c037",
+      "front": "Why is an abscess drained rather than treated with antibiotics alone?",
+      "back": "Antibiotics diffuse poorly into a walled-off collection of pus. Incision and drainage removes the reservoir; drugs are adjunctive.",
+      "lesson": "pa-infectious-l05"
+    },
+    {
+      "id": "pa-infectious-c039",
+      "front": "List the red flags for necrotizing fasciitis.",
+      "back": "Pain out of proportion to appearance, hourly progression, skin anesthesia, crepitus, bullae, dusky or gray skin, systemic toxicity. Treatment is immediate operative debridement.",
+      "lesson": "pa-infectious-l05"
+    },
+    {
+      "id": "pa-infectious-c040",
+      "front": "Why do plain films miss early osteomyelitis?",
+      "back": "Roughly 30 to 50 percent of bone mineral must be lost before the film changes, which takes 10 to 14 days. MRI detects it far earlier.",
+      "lesson": "pa-infectious-l05"
+    },
+    {
+      "id": "pa-infectious-c041",
+      "front": "How long is osteomyelitis treated and why that long?",
+      "back": "4 to 6 weeks. Bone is poorly perfused and dead bone acts as a sanctuary, so drug delivery is slow and debridement of sequestrum is often needed.",
+      "lesson": "pa-infectious-l05"
+    },
+    {
+      "id": "pa-infectious-c042",
+      "front": "What synovial white cell count suggests septic arthritis?",
+      "back": "Over 50,000 per mm3 with more than 90 percent neutrophils. 2,000-50,000 is inflammatory such as gout; under 2,000 is non-inflammatory.",
+      "lesson": "pa-infectious-l05"
+    },
+    {
+      "id": "pa-infectious-c043",
+      "front": "How does gonococcal arthritis differ from staphylococcal septic arthritis?",
+      "back": "Gonococcal: young sexually active patient, migratory joint pain, tenosynovitis of wrists and ankles, pustular skin lesions. Non-gonococcal: one large joint, usually the knee, Staphylococcus aureus.",
+      "lesson": "pa-infectious-l05"
+    },
+    {
+      "id": "pa-infectious-c044",
+      "front": "State the modified Duke thresholds for diagnosing endocarditis.",
+      "back": "Two major criteria, or one major plus three minor, or five minor criteria. Major are typical persistently positive blood cultures and echocardiographic vegetation or new regurgitation.",
+      "lesson": "pa-infectious-l05"
+    },
+    {
+      "id": "pa-infectious-c047",
+      "front": "How do toxin-mediated and invasive diarrhea differ clinically?",
+      "back": "Toxin: large-volume watery stool, little or no fever, no blood. Invasive: fever, cramping, blood or mucus in the stool.",
+      "lesson": "pa-infectious-l06"
+    },
+    {
+      "id": "pa-infectious-c048",
+      "front": "Vomiting begins 1 to 6 hours after a meal. What does that timing imply?",
+      "back": "A preformed toxin was already in the food: Staphylococcus aureus from mayonnaise-based salads or Bacillus cereus from reheated rice.",
+      "lesson": "pa-infectious-l06"
+    },
+    {
+      "id": "pa-infectious-c049",
+      "front": "Why are antibiotics avoided in suspected E. coli O157:H7?",
+      "back": "Killing the organism releases more Shiga toxin and raises the risk of hemolytic uremic syndrome: anemia, low platelets and kidney failure, typically 5 to 10 days after bloody diarrhea.",
+      "lesson": "pa-infectious-l06"
+    },
+    {
+      "id": "pa-infectious-c051",
+      "front": "Name the antibiotics most likely to cause C. difficile.",
+      "back": "Clindamycin, fluoroquinolones, cephalosporins and broad-spectrum penicillins. Age over 65, hospitalization and proton pump inhibitors add risk.",
+      "lesson": "pa-infectious-l06"
+    },
+    {
+      "id": "pa-infectious-c052",
+      "front": "What is the first-line treatment and isolation for C. difficile?",
+      "back": "Oral vancomycin 125 mg four times daily for 10 days, or fidaxomicin. Contact precautions with gown and gloves, and soap-and-water handwashing because alcohol gel does not kill spores.",
+      "lesson": "pa-infectious-l06"
+    },
+    {
+      "id": "pa-infectious-c053",
+      "front": "Which hepatitis viruses spread fecal-orally and which spread by blood?",
+      "back": "Fecal-oral: A and E. Blood and body fluid: B, C and D. D requires B to replicate.",
+      "lesson": "pa-infectious-l06"
+    },
+    {
+      "id": "pa-infectious-c054",
+      "front": "What does HBsAg positive mean?",
+      "back": "Hepatitis B virus is present right now, either acute or chronic infection. The patient is infectious.",
+      "lesson": "pa-infectious-l06"
+    },
+    {
+      "id": "pa-infectious-c055",
+      "front": "How do you tell vaccination from resolved hepatitis B infection on serology?",
+      "back": "Vaccine gives anti-HBs alone. Resolved natural infection gives anti-HBs plus anti-HBc, because only real infection exposes the core antigen.",
+      "lesson": "pa-infectious-l06"
+    },
+    {
+      "id": "pa-infectious-c057",
+      "front": "What isolation does active pulmonary tuberculosis require?",
+      "back": "Airborne precautions: a negative-pressure room and a fitted N95 respirator. Droplet nuclei stay suspended for hours, so a surgical mask is insufficient.",
+      "lesson": "pa-infectious-l07"
+    },
+    {
+      "id": "pa-infectious-c058",
+      "front": "Give the three tuberculin skin test induration cutoffs and who they apply to.",
+      "back": "5 mm: HIV, recent contacts, immunosuppressed, fibrotic film. 10 mm: recent immigrants, healthcare workers, injection drug users, prisoners. 15 mm: no risk factors. Read at 48-72 hours.",
+      "lesson": "pa-infectious-l07"
+    },
+    {
+      "id": "pa-infectious-c059",
+      "front": "Why does reactivation tuberculosis cavitate in the upper lobes?",
+      "back": "Mycobacterium tuberculosis is an obligate aerobe and oxygen tension is highest at the lung apices.",
+      "lesson": "pa-infectious-l07"
+    },
+    {
+      "id": "pa-infectious-c060",
+      "front": "What does RIPE stand for and how long is each phase?",
+      "back": "Rifampin, isoniazid, pyrazinamide, ethambutol for 2 months, then rifampin and isoniazid for 4 months, 6 months total, under directly observed therapy.",
+      "lesson": "pa-infectious-l07"
+    },
+    {
+      "id": "pa-infectious-c062",
+      "front": "Describe the current HIV testing algorithm.",
+      "back": "Fourth-generation antigen/antibody immunoassay first, then an HIV-1/HIV-2 antibody differentiation assay if reactive, then HIV-1 RNA if that is negative or indeterminate to catch acute infection.",
+      "lesson": "pa-infectious-l07"
+    },
+    {
+      "id": "pa-infectious-c064",
+      "front": "Match CD4 thresholds to opportunistic infections.",
+      "back": "Below 200: Pneumocystis jirovecii pneumonia. Below 100: Toxoplasma encephalitis. Below 50: Mycobacterium avium complex. AIDS is CD4 under 200 or an AIDS-defining illness.",
+      "lesson": "pa-infectious-l07"
+    },
+    {
+      "id": "pa-infectious-c065",
+      "front": "What is the regimen and window for HIV post-exposure prophylaxis?",
+      "back": "Three antiretroviral drugs for 28 days, started as soon as possible and no later than 72 hours after exposure.",
+      "lesson": "pa-infectious-l07"
+    },
+    {
+      "id": "pa-infectious-c066",
+      "front": "Give the current first-line treatments for gonorrhea and chlamydia.",
+      "back": "Gonorrhea: ceftriaxone 500 mg IM once, or 1 g if over 150 kg. Chlamydia: doxycycline 100 mg twice daily for 7 days. Treat for both when coinfection is not excluded.",
+      "lesson": "pa-infectious-l08"
+    },
+    {
+      "id": "pa-infectious-c067",
+      "front": "How do the syphilis stages present in order?",
+      "back": "Primary: painless indurated chancre at 3 weeks. Secondary: rash including palms and soles, condyloma lata. Latent: serology only. Tertiary: gummas, aortitis, neurosyphilis.",
+      "lesson": "pa-infectious-l08"
+    },
+    {
+      "id": "pa-infectious-c068",
+      "front": "What is the treatment for primary, secondary or early latent syphilis?",
+      "back": "Benzathine penicillin G 2.4 million units IM once. Late latent gets three weekly doses; neurosyphilis gets IV penicillin. Pregnant penicillin-allergic patients are desensitized.",
+      "lesson": "pa-infectious-l08"
+    },
+    {
+      "id": "pa-infectious-c069",
+      "front": "Which syphilis tests track treatment and which stay positive for life?",
+      "back": "Nontreponemal tests RPR and VDRL fall with treatment and are used for follow-up. Treponemal tests FTA-ABS and TP-PA remain positive permanently.",
+      "lesson": "pa-infectious-l08"
+    },
+    {
+      "id": "pa-infectious-c071",
+      "front": "What are the minimum criteria to treat pelvic inflammatory disease?",
+      "back": "Sexually active patient with pelvic pain and no other cause, plus cervical motion tenderness, uterine tenderness, or adnexal tenderness. Any one is enough.",
+      "lesson": "pa-infectious-l08"
+    },
+    {
+      "id": "pa-infectious-c072",
+      "front": "Name the outpatient PID regimen.",
+      "back": "Ceftriaxone 500 mg IM once, plus doxycycline 100 mg twice daily for 14 days, plus metronidazole 500 mg twice daily for 14 days.",
+      "lesson": "pa-infectious-l08"
+    },
+    {
+      "id": "pa-infectious-c073",
+      "front": "What is expedited partner therapy?",
+      "back": "Giving the patient medication or a prescription for a sexual partner without examining the partner. Permitted in most states for chlamydia and gonorrhea.",
+      "lesson": "pa-infectious-l08"
+    },
+    {
+      "id": "pa-infectious-c074",
+      "front": "Describe erythema migrans and how it is diagnosed.",
+      "back": "An expanding red patch at least 5 cm across, often with central clearing, painless and not itchy, 3-30 days after a bite. In an endemic area it is a clinical diagnosis; early serology is unreliable.",
+      "lesson": "pa-infectious-l09"
+    },
+    {
+      "id": "pa-infectious-c075",
+      "front": "What are the three stages of Lyme disease?",
+      "back": "Early localized: erythema migrans and flu-like illness. Early disseminated: multiple lesions, facial nerve palsy, meningitis, AV block. Late: monoarticular arthritis, usually the knee.",
+      "lesson": "pa-infectious-l09"
+    },
+    {
+      "id": "pa-infectious-c076",
+      "front": "Where does the Rocky Mountain spotted fever rash start and when?",
+      "back": "On the wrists and ankles at day 2-5 of illness, spreading centrally and including palms and soles, becoming petechial. Untreated mortality is 20-25 percent.",
+      "lesson": "pa-infectious-l09"
+    },
+    {
+      "id": "pa-infectious-c078",
+      "front": "When is single-dose doxycycline prophylaxis offered after a tick bite?",
+      "back": "200 mg once within 72 hours of removal, when the tick is an identified engorged adult or nymphal Ixodes attached 36 hours or more in a highly endemic area.",
+      "lesson": "pa-infectious-l09"
+    },
+    {
+      "id": "pa-infectious-c079",
+      "front": "What is the rabies post-exposure regimen in an unvaccinated person?",
+      "back": "Wash the wound 15 minutes with soap and water, infiltrate rabies immune globulin 20 IU/kg around the wound, and give vaccine on days 0, 3, 7 and 14.",
+      "lesson": "pa-infectious-l09"
+    },
+    {
+      "id": "pa-infectious-c080",
+      "front": "How is malaria ruled out in a febrile returning traveler?",
+      "back": "Thick and thin blood smears repeated up to three times, 12 to 24 hours apart. Plasmodium falciparum is the lethal species and can present 7 to 30 days after exposure.",
+      "lesson": "pa-infectious-l09"
+    },
+    {
+      "id": "pa-infectious-c081",
+      "front": "Why avoid NSAIDs in dengue?",
+      "back": "Dengue causes thrombocytopenia and plasma leak, so antiplatelet drugs raise hemorrhage risk. Use acetaminophen instead.",
+      "lesson": "pa-infectious-l09"
+    },
+    {
+      "id": "pa-infectious-c082",
+      "front": "Which vaccine types are withheld in pregnancy and immunosuppression?",
+      "back": "Live attenuated ones: MMR, varicella, yellow fever, intranasal influenza. Inactivated, subunit, toxoid and mRNA vaccines are acceptable.",
+      "lesson": "pa-infectious-l10"
+    },
+    {
+      "id": "pa-infectious-c083",
+      "front": "When is Tdap given in pregnancy and why?",
+      "back": "Every pregnancy at 27 to 36 weeks, so maternal antibody crosses the placenta and protects the newborn from pertussis before the infant series begins.",
+      "lesson": "pa-infectious-l10"
+    },
+    {
+      "id": "pa-infectious-c084",
+      "front": "Match each transmission-based precaution to its barrier.",
+      "back": "Contact: gown and gloves. Droplet: surgical mask within 6 feet plus private room. Airborne: fitted N95 plus negative-pressure room.",
+      "lesson": "pa-infectious-l10"
+    },
+    {
+      "id": "pa-infectious-c085",
+      "front": "Which infections require airborne precautions?",
+      "back": "Tuberculosis, measles, varicella and disseminated zoster. Their particles remain suspended rather than falling within 6 feet.",
+      "lesson": "pa-infectious-l10"
+    },
+    {
+      "id": "pa-infectious-c086",
+      "front": "Give the per-needlestick transmission risks for hepatitis B, hepatitis C and HIV.",
+      "back": "Hepatitis B up to 30 percent in an unvaccinated person, hepatitis C about 1.8 percent, HIV about 0.3 percent.",
+      "lesson": "pa-infectious-l10"
+    },
+    {
+      "id": "pa-infectious-c087",
+      "front": "Name four mechanisms of antibiotic resistance.",
+      "back": "Enzymes that destroy the drug such as beta-lactamases, altered targets such as penicillin-binding protein 2a in MRSA, efflux pumps, and reduced permeability from lost porins.",
+      "lesson": "pa-infectious-l10"
+    },
+    {
+      "id": "pa-infectious-c088",
+      "front": "State three core antibiotic stewardship rules.",
+      "back": "Culture before starting, de-escalate to the narrowest agent when results return, and use the shortest effective course. Never treat colonization.",
+      "lesson": "pa-infectious-l10"
+    },
+    {
+      "id": "pa-infectious-c089",
+      "front": "When must soap and water replace alcohol hand rub?",
+      "back": "When hands are visibly soiled, and for C. difficile, because alcohol does not kill spores. Otherwise alcohol rub for at least 20 seconds is preferred.",
+      "lesson": "pa-infectious-l10"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "pa-infectious-q001",
+      "q": "A 68-year-old arrives confused with a respiratory rate of 26 and a systolic pressure of 94 mmHg. Which screening tool is already positive at the bedside without any labs?",
+      "choices": [
+        "qSOFA",
+        "SIRS",
+        "CURB-65",
+        "Modified Duke criteria"
+      ],
+      "answer": 0,
+      "why": "qSOFA needs only RR 22 or more, altered mentation and SBP 100 or less; all three are present. SIRS requires a white count, CURB-65 requires a BUN, and Duke criteria are for endocarditis.",
+      "lesson": "pa-infectious-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-infectious-q002",
+      "q": "Which action must happen before antibiotics are given in the sepsis bundle, provided it causes no delay?",
+      "choices": [
+        "CT of the abdomen",
+        "Blood cultures",
+        "Vasopressor initiation",
+        "Repeat lactate"
+      ],
+      "answer": 1,
+      "why": "Cultures drawn after antibiotics may be sterilized and lose the organism. Imaging and repeat lactate follow, and pressors are only for fluid-refractory hypotension.",
+      "lesson": "pa-infectious-l01",
+      "difficulty": 1
+    },
+    {
+      "id": "pa-infectious-q003",
+      "q": "A patient on chemotherapy has a temperature of 38.4 C and an absolute neutrophil count of 320. Examination shows no source. What is the correct next step?",
+      "choices": [
+        "Observe and repeat the count in 24 hours",
+        "Acetaminophen and discharge with return precautions",
+        "Cultures plus immediate antipseudomonal beta-lactam such as cefepime",
+        "Wait for a localizing sign before treating"
+      ],
+      "answer": 2,
+      "why": "Neutropenic fever is an emergency; with no neutrophils there is no pus or redness, so absence of a source is expected, not reassuring. Delay raises mortality substantially.",
+      "lesson": "pa-infectious-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-infectious-q004",
+      "q": "Which statement about hyperthermia is correct?",
+      "choices": [
+        "It responds to acetaminophen 650 mg",
+        "It is caused by interleukin-1 raising the set point",
+        "Its hypothalamic set point is normal and it requires physical cooling",
+        "It always begins with shivering"
+      ],
+      "answer": 2,
+      "why": "In hyperthermia the thermostat never moved, so antipyretics have no target. Shivering and cytokine-driven set point elevation belong to true fever.",
+      "lesson": "pa-infectious-l01",
+      "difficulty": 1
+    },
+    {
+      "id": "pa-infectious-q005",
+      "q": "A 20-year-old has 3 weeks of a dry cough, feels well enough to attend class, and the chest film shows patchy bilateral infiltrates. Which empiric agent fits best?",
+      "choices": [
+        "Doxycycline",
+        "Vancomycin",
+        "Nitrofurantoin",
+        "Ceftriaxone plus ampicillin"
+      ],
+      "answer": 0,
+      "why": "This is atypical pneumonia, most likely Mycoplasma, which is covered by doxycycline or a macrolide. Beta-lactams alone miss cell-wall-free Mycoplasma, and vancomycin and nitrofurantoin are irrelevant here.",
+      "lesson": "pa-infectious-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-infectious-q006",
+      "q": "A child aged 2 years has a barking cough, inspiratory stridor at rest, and a two-day history of coryza. Which treatment is indicated?",
+      "choices": [
+        "Immediate intubation in the operating room",
+        "Dexamethasone 0.6 mg/kg plus nebulized epinephrine",
+        "Ceftriaxone and airway examination with a tongue depressor",
+        "Oseltamivir 75 mg twice daily"
+      ],
+      "answer": 1,
+      "why": "This is croup. Dexamethasone reduces airway edema and nebulized epinephrine is added for stridor at rest. Operative airway management and avoiding oral examination belong to epiglottitis.",
+      "lesson": "pa-infectious-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-infectious-q007",
+      "q": "Pneumonia beginning 4 days after hospital admission changes empiric coverage mainly because of which pathogens?",
+      "choices": [
+        "Mycoplasma and Chlamydophila",
+        "Streptococcus pneumoniae and Moraxella",
+        "Pseudomonas aeruginosa and MRSA",
+        "Bordetella pertussis and RSV"
+      ],
+      "answer": 2,
+      "why": "At 48 hours or more the flora shift to hospital organisms. Atypicals and pneumococcus dominate community-acquired disease, and pertussis and RSV are not pneumonia-onset concerns here.",
+      "lesson": "pa-infectious-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-infectious-q008",
+      "q": "Which set of findings best fits Legionella pneumonia?",
+      "choices": [
+        "Rusty sputum with lobar consolidation and rigors",
+        "Whooping paroxysms with post-tussive vomiting",
+        "Barking cough with stridor",
+        "High fever, diarrhea, confusion and a sodium of 127 mEq/L"
+      ],
+      "answer": 3,
+      "why": "Legionella is the pneumonia with prominent gastrointestinal and neurologic features plus hyponatremia. Rusty sputum is pneumococcus, whooping is pertussis, barking is croup.",
+      "lesson": "pa-infectious-l02",
+      "difficulty": 1
+    },
+    {
+      "id": "pa-infectious-q009",
+      "q": "A 30-year-old woman has 2 days of dysuria and frequency, no fever, no flank pain, and is not pregnant. Which is the best management?",
+      "choices": [
+        "Ciprofloxacin 500 mg twice daily for 14 days",
+        "Nitrofurantoin 100 mg twice daily for 5 days",
+        "Admission for IV ceftriaxone",
+        "No treatment; observe for fever"
+      ],
+      "answer": 1,
+      "why": "This is uncomplicated cystitis and nitrofurantoin is first line. Fourteen-day fluoroquinolone courses and IV therapy are for pyelonephritis or prostatitis, and symptomatic infection is always treated.",
+      "lesson": "pa-infectious-l03",
+      "difficulty": 1
+    },
+    {
+      "id": "pa-infectious-q010",
+      "q": "An 82-year-old nursing home resident is more confused than usual. She has no dysuria, no fever, and no suprapubic or flank tenderness. Urinalysis shows bacteria and leukocyte esterase. What is the best next step?",
+      "choices": [
+        "Start ciprofloxacin for a urinary tract infection",
+        "Start nitrofurantoin and observe",
+        "Continue evaluating for another cause of delirium rather than treating the urine",
+        "Insert a catheter to obtain a cleaner specimen and treat"
+      ],
+      "answer": 2,
+      "why": "Asymptomatic bacteriuria is common in the elderly and treating it does not improve delirium; it only breeds resistance. Only pregnancy and pre-urologic-procedure states warrant treatment.",
+      "lesson": "pa-infectious-l03",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-infectious-q011",
+      "q": "Which organism is least likely to produce a positive urinary nitrite test?",
+      "choices": [
+        "Escherichia coli",
+        "Klebsiella pneumoniae",
+        "Proteus mirabilis",
+        "Enterococcus faecalis"
+      ],
+      "answer": 3,
+      "why": "Nitrite depends on bacterial nitrate reductase, which Enterococcus and Staphylococcus saprophyticus lack. The gram-negative rods listed convert nitrate readily.",
+      "lesson": "pa-infectious-l03",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-infectious-q012",
+      "q": "A 24-year-old woman has fever 38.9 C, shaking chills, right flank pain and costovertebral angle tenderness. She tolerates oral intake. Which outpatient regimen is appropriate?",
+      "choices": [
+        "Nitrofurantoin 100 mg twice daily for 5 days",
+        "Fosfomycin 3 g once",
+        "Ciprofloxacin 500 mg twice daily for 7 days",
+        "Azithromycin 1 g once"
+      ],
+      "answer": 2,
+      "why": "Pyelonephritis requires an agent that achieves tissue levels in the kidney. Nitrofurantoin and fosfomycin concentrate only in urine, and azithromycin does not cover urinary pathogens.",
+      "lesson": "pa-infectious-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-infectious-q013",
+      "q": "CSF from a 22-year-old shows 240 WBC with 85% lymphocytes, glucose 62 mg/dL with a serum glucose of 98, and protein 58 mg/dL. Which diagnosis fits?",
+      "choices": [
+        "Viral meningitis",
+        "Bacterial meningitis",
+        "Tuberculous meningitis",
+        "Subarachnoid hemorrhage"
+      ],
+      "answer": 0,
+      "why": "Lymphocytic pleocytosis with normal glucose is viral. Bacterial disease shows neutrophils with glucose under 40, and TB shows low glucose with very high protein.",
+      "lesson": "pa-infectious-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-infectious-q014",
+      "q": "Why is dexamethasone given with or before the first antibiotic dose in suspected pneumococcal meningitis?",
+      "choices": [
+        "It improves antibiotic penetration across the blood-brain barrier",
+        "It blunts the inflammatory surge from bacterial cell wall fragments released during killing",
+        "It treats the organism directly",
+        "It prevents the lumbar puncture headache"
+      ],
+      "answer": 1,
+      "why": "Antibiotic-induced lysis releases cell wall components that drive inflammation and hearing loss. Steroid given afterward misses that window and loses the benefit.",
+      "lesson": "pa-infectious-l04",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-infectious-q015",
+      "q": "A 58-year-old has fever, confusion, aphasia, and a focal seizure. MRI shows temporal lobe changes. What should be started immediately?",
+      "choices": [
+        "Ceftriaxone alone",
+        "Vancomycin alone",
+        "Acyclovir 10 mg/kg IV every 8 hours",
+        "Oseltamivir 75 mg twice daily"
+      ],
+      "answer": 2,
+      "why": "Temporal lobe involvement with encephalopathy is HSV-1 encephalitis, and acyclovir must begin on suspicion because untreated mortality approaches 70 percent.",
+      "lesson": "pa-infectious-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-infectious-q016",
+      "q": "Which patient should have a CT scan before lumbar puncture?",
+      "choices": [
+        "A 24-year-old with fever, headache and neck stiffness, alert and non-focal",
+        "A 30-year-old with a headache and a normal neurologic exam",
+        "A 19-year-old with photophobia and a normal fundoscopic exam",
+        "A 55-year-old with a new right-sided hemiparesis and papilledema"
+      ],
+      "answer": 3,
+      "why": "Focal deficits and papilledema raise the risk of herniation with a tap. The other three have no features suggesting a mass or elevated pressure.",
+      "lesson": "pa-infectious-l04",
+      "difficulty": 1
+    },
+    {
+      "id": "pa-infectious-q017",
+      "q": "A diabetic patient has a red, warm, tender lower leg with no fluctuance and no drainage. Temperature 37.8 C. Which is the best initial therapy?",
+      "choices": [
+        "Cephalexin 500 mg four times daily",
+        "Bedside incision and drainage",
+        "Immediate surgical debridement",
+        "Oral vancomycin"
+      ],
+      "answer": 0,
+      "why": "Non-purulent cellulitis is predominantly streptococcal and treated with a first-generation cephalosporin. There is no collection to drain, no necrotizing red flags, and oral vancomycin is not absorbed systemically.",
+      "lesson": "pa-infectious-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-infectious-q018",
+      "q": "Which finding most strongly suggests necrotizing fasciitis rather than cellulitis?",
+      "choices": [
+        "Warmth and erythema with poorly defined borders",
+        "Pain markedly out of proportion with crepitus and skin anesthesia",
+        "A temperature of 38.2 C",
+        "A white count of 14,000"
+      ],
+      "answer": 1,
+      "why": "Disproportionate pain, gas in tissue and loss of sensation reflect fascial necrosis and nerve destruction. Warmth, mild fever and leukocytosis occur in ordinary cellulitis too.",
+      "lesson": "pa-infectious-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-infectious-q019",
+      "q": "A patient with sickle cell disease develops osteomyelitis. Which organism is characteristically added to the usual list?",
+      "choices": [
+        "Pseudomonas aeruginosa",
+        "Salmonella species",
+        "Neisseria gonorrhoeae",
+        "Listeria monocytogenes"
+      ],
+      "answer": 1,
+      "why": "Salmonella osteomyelitis is classically associated with sickle cell disease, though Staphylococcus aureus remains the overall most common cause. Pseudomonas is associated with puncture wounds through sneakers.",
+      "lesson": "pa-infectious-l05",
+      "difficulty": 1
+    },
+    {
+      "id": "pa-infectious-q020",
+      "q": "A 26-year-old has migratory joint pains, tenosynovitis of both wrists and scattered pustular skin lesions. Which diagnosis fits?",
+      "choices": [
+        "Staphylococcal septic arthritis of the knee",
+        "Gout",
+        "Disseminated gonococcal infection",
+        "Lyme arthritis"
+      ],
+      "answer": 2,
+      "why": "The triad of migratory arthralgias, tenosynovitis and pustules is disseminated gonococcal infection. Staphylococcal disease is monoarticular, gout is podagra with crystals, and Lyme arthritis is a late monoarticular knee effusion.",
+      "lesson": "pa-infectious-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-infectious-q021",
+      "q": "A patient who injects drugs has fever, a new murmur, and septic pulmonary emboli on chest CT. Which valve and organism are most likely?",
+      "choices": [
+        "Mitral valve, viridans streptococci",
+        "Aortic valve, Enterococcus",
+        "Tricuspid valve, Staphylococcus aureus",
+        "Pulmonic valve, Candida"
+      ],
+      "answer": 2,
+      "why": "Right-sided tricuspid disease from Staphylococcus aureus sends emboli to the lungs rather than the brain or kidneys. Left-sided viridans disease follows dental procedures and embolizes systemically.",
+      "lesson": "pa-infectious-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-infectious-q022",
+      "q": "Four hours after a catered lunch, several guests develop sudden vomiting without fever. Which mechanism explains the timing?",
+      "choices": [
+        "Invasion of the colonic mucosa by Shigella",
+        "A preformed enterotoxin already present in the food",
+        "Viral replication in enterocytes over 24 hours",
+        "Toxin production requiring 3 days of colonization"
+      ],
+      "answer": 1,
+      "why": "Onset within 1 to 6 hours is too fast for growth or invasion; the toxin was ingested ready-made, typically Staphylococcus aureus or Bacillus cereus.",
+      "lesson": "pa-infectious-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-infectious-q023",
+      "q": "A 6-year-old has bloody diarrhea after eating undercooked ground beef. Which management decision is correct?",
+      "choices": [
+        "Give ciprofloxacin promptly to shorten illness",
+        "Give loperamide to reduce stool frequency",
+        "Withhold antibiotics and antimotility agents and monitor for hemolytic uremic syndrome",
+        "Give azithromycin and discharge without follow-up"
+      ],
+      "answer": 2,
+      "why": "Antibiotics and antimotility drugs in Shiga toxin-producing E. coli increase toxin exposure and hemolytic uremic syndrome risk. Supportive care with monitoring of hemoglobin, platelets and creatinine is correct.",
+      "lesson": "pa-infectious-l06",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-infectious-q024",
+      "q": "Which hand hygiene method is required when caring for a patient with Clostridioides difficile?",
+      "choices": [
+        "Alcohol-based rub for 20 seconds",
+        "Soap and water",
+        "Alcohol rub followed by gloves only",
+        "No hand hygiene if gloves were worn"
+      ],
+      "answer": 1,
+      "why": "Alcohol does not kill C. difficile spores; mechanical removal with soap and water is required. Gloves are worn in addition, never instead.",
+      "lesson": "pa-infectious-l06",
+      "difficulty": 1
+    },
+    {
+      "id": "pa-infectious-q025",
+      "q": "Serology shows HBsAg positive, anti-HBc IgM positive, anti-HBs negative. Which interpretation is correct?",
+      "choices": [
+        "Acute hepatitis B infection",
+        "Successful vaccination",
+        "Resolved past infection",
+        "Chronic infection with immunity"
+      ],
+      "answer": 0,
+      "why": "Surface antigen present with core IgM indicates recent, acute infection. Vaccination gives anti-HBs alone, and resolved infection gives anti-HBs with total anti-HBc.",
+      "lesson": "pa-infectious-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-infectious-q026",
+      "q": "Which hepatitis virus carries the highest risk of chronic infection after adult exposure?",
+      "choices": [
+        "Hepatitis A",
+        "Hepatitis B",
+        "Hepatitis C",
+        "Hepatitis E"
+      ],
+      "answer": 2,
+      "why": "Hepatitis C becomes chronic in roughly 75 to 85 percent of adults, versus about 5 percent for hepatitis B. Hepatitis A and E do not become chronic in immunocompetent hosts.",
+      "lesson": "pa-infectious-l06",
+      "difficulty": 1
+    },
+    {
+      "id": "pa-infectious-q027",
+      "q": "A homeless patient with HIV has a cough, night sweats and weight loss. A chest film shows a right apical cavity. What isolation is required at once?",
+      "choices": [
+        "Contact precautions",
+        "Droplet precautions",
+        "Airborne precautions with an N95 and negative-pressure room",
+        "Standard precautions only"
+      ],
+      "answer": 2,
+      "why": "Apical cavitation with this history is reactivation tuberculosis, and its droplet nuclei remain airborne for hours. A surgical mask and a standard room are insufficient.",
+      "lesson": "pa-infectious-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-infectious-q028",
+      "q": "Which antituberculous drug causes optic neuritis with loss of red-green discrimination?",
+      "choices": [
+        "Isoniazid",
+        "Rifampin",
+        "Pyrazinamide",
+        "Ethambutol"
+      ],
+      "answer": 3,
+      "why": "Ethambutol is the eye drug. Isoniazid causes hepatitis and neuropathy, rifampin turns fluids orange and induces liver enzymes, pyrazinamide raises uric acid.",
+      "lesson": "pa-infectious-l07",
+      "difficulty": 1
+    },
+    {
+      "id": "pa-infectious-q029",
+      "q": "A patient with HIV and a CD4 count of 140 develops a dry cough and desaturates from 96% to 87% while walking. The chest film shows diffuse interstitial infiltrates. Most likely diagnosis?",
+      "choices": [
+        "Mycobacterium avium complex",
+        "Pneumocystis jirovecii pneumonia",
+        "Toxoplasma encephalitis",
+        "Bacterial lobar pneumonia"
+      ],
+      "answer": 1,
+      "why": "Exertional desaturation with a diffuse interstitial pattern below CD4 200 is PCP. Toxoplasmosis is a brain disease below 100, and MAC is a disseminated febrile wasting illness below 50.",
+      "lesson": "pa-infectious-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-infectious-q030",
+      "q": "A nurse sustains a hollow-bore needlestick from a patient with untreated HIV. Which action is correct?",
+      "choices": [
+        "Start three-drug post-exposure prophylaxis as soon as possible, within 72 hours",
+        "Wait for the nurse's baseline HIV test to return before starting anything",
+        "Give a single dose of antiretroviral therapy only",
+        "Start prophylaxis only if the source viral load exceeds 100,000"
+      ],
+      "answer": 0,
+      "why": "PEP is three drugs for 28 days and efficacy falls with every hour of delay. Baseline testing happens in parallel, and viral load thresholds do not gate the decision.",
+      "lesson": "pa-infectious-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-infectious-q031",
+      "q": "A 21-year-old has a purulent urethral discharge that began 4 days after a new partner. NAAT is pending. Which treatment is most appropriate now?",
+      "choices": [
+        "Azithromycin 1 g alone",
+        "Ceftriaxone 500 mg IM plus doxycycline 100 mg twice daily for 7 days",
+        "Benzathine penicillin G 2.4 million units IM",
+        "Metronidazole 2 g once"
+      ],
+      "answer": 1,
+      "why": "Purulent urethritis is gonococcal until proven otherwise, and chlamydial coinfection is common enough that both are covered. Penicillin treats syphilis and metronidazole treats trichomonas.",
+      "lesson": "pa-infectious-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-infectious-q032",
+      "q": "A patient develops fever, chills and myalgias several hours after benzathine penicillin for secondary syphilis. What is this?",
+      "choices": [
+        "Anaphylaxis requiring epinephrine",
+        "Serum sickness",
+        "Jarisch-Herxheimer reaction from dying spirochetes",
+        "Treatment failure requiring a different antibiotic"
+      ],
+      "answer": 2,
+      "why": "The Jarisch-Herxheimer reaction is a self-limited inflammatory response to spirochete lysis, not an allergy. Anaphylaxis presents within minutes with airway and hemodynamic compromise.",
+      "lesson": "pa-infectious-l08",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-infectious-q033",
+      "q": "A pregnant patient with penicillin allergy has primary syphilis. What is the correct management?",
+      "choices": [
+        "Doxycycline 100 mg twice daily for 14 days",
+        "Azithromycin 2 g once",
+        "Ceftriaxone 500 mg IM once",
+        "Penicillin desensitization followed by benzathine penicillin G"
+      ],
+      "answer": 3,
+      "why": "Only penicillin reliably treats fetal infection, so allergic pregnant patients are desensitized. Doxycycline is contraindicated in pregnancy and the alternatives have unacceptable failure rates.",
+      "lesson": "pa-infectious-l08",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-infectious-q034",
+      "q": "A 33-year-old hiker in New Jersey has a 9 cm expanding red patch with central clearing and mild flu-like symptoms for 4 days. Lyme serology is negative. Best action?",
+      "choices": [
+        "Treat with doxycycline 100 mg twice daily for 10 to 14 days now",
+        "Repeat serology in 4 weeks before treating",
+        "Treat only if arthritis develops",
+        "Start IV ceftriaxone"
+      ],
+      "answer": 0,
+      "why": "Erythema migrans in an endemic area is a clinical diagnosis and early serology is frequently negative. IV ceftriaxone is reserved for carditis or neurologic disease.",
+      "lesson": "pa-infectious-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-infectious-q035",
+      "q": "A patient returns from West Africa with fevers for 3 days. There is no rash and no localizing findings. Which test is the priority?",
+      "choices": [
+        "Chest radiograph",
+        "Blood cultures only",
+        "Thick and thin blood smears for malaria",
+        "Lyme serology"
+      ],
+      "answer": 2,
+      "why": "Fever after travel to an endemic region is malaria until three negative smears 12 to 24 hours apart. Falciparum can kill within days, so it is ruled out first.",
+      "lesson": "pa-infectious-l09",
+      "difficulty": 1
+    },
+    {
+      "id": "pa-infectious-q036",
+      "q": "A patient wakes to find a bat in the bedroom. There is no visible bite. What is the correct management?",
+      "choices": [
+        "Reassure; prophylaxis is needed only with a visible bite",
+        "Observe the bat for 10 days",
+        "Give rabies vaccine alone without immune globulin",
+        "Give rabies immune globulin 20 IU/kg plus vaccine on days 0, 3, 7 and 14"
+      ],
+      "answer": 3,
+      "why": "Bat exposures in a sleeping person count without a visible bite because bat bites can be imperceptible. The 10-day observation rule applies to dogs and cats, not wildlife.",
+      "lesson": "pa-infectious-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-infectious-q037",
+      "q": "A 26-year-old who is 24 weeks pregnant has no documented rubella immunity. What is the correct plan?",
+      "choices": [
+        "Give MMR now",
+        "Defer MMR until after delivery because it is a live vaccine",
+        "Give MMR only if she is exposed",
+        "Give rubella immune globulin instead"
+      ],
+      "answer": 1,
+      "why": "Live attenuated vaccines are contraindicated in pregnancy, so MMR is given postpartum. Tdap and inactivated influenza vaccine, by contrast, are recommended during pregnancy.",
+      "lesson": "pa-infectious-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-infectious-q038",
+      "q": "Blood cultures in a stable, improving patient on meropenem grow Escherichia coli susceptible to ampicillin. What does stewardship require?",
+      "choices": [
+        "Continue meropenem to complete the course",
+        "Add an aminoglycoside for synergy",
+        "Narrow therapy to ampicillin or another narrow agent",
+        "Stop antibiotics immediately"
+      ],
+      "answer": 2,
+      "why": "De-escalation once susceptibilities return reduces resistance pressure, cost and adverse effects. Stopping early undertreats the bacteremia, and adding drugs is the opposite of stewardship.",
+      "lesson": "pa-infectious-l10",
+      "difficulty": 2
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "pa-infectious-s01",
+      "title": "Triage: 71M, fever and confusion",
+      "setting": "ed",
+      "intro": "A 71-year-old man is brought in by his daughter for two days of fever, shaking chills and worsening confusion. He had a urinary catheter placed last week after a prostate procedure. He takes lisinopril and metformin. He is warm, mottled at the knees, and answering only some questions.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "You are the first clinician at the bedside. The nurse has him on the monitor.",
+          "vitals": {
+            "hr": 122,
+            "bp": "86/48",
+            "rr": 28,
+            "spo2": 93,
+            "temp": 39.1,
+            "gcs": 13
+          },
+          "choices": [
+            {
+              "text": "Recognize sepsis: establish two large-bore IVs, draw blood cultures and a lactate, and start a 30 mL/kg crystalloid bolus",
+              "next": "s2",
+              "feedback": "Correct. Altered mentation, RR 28 and SBP 86 make qSOFA 3 of 3. Access, cultures, lactate and fluid all start now.",
+              "score": 1
+            },
+            {
+              "text": "Give acetaminophen 650 mg and reassess the temperature in an hour",
+              "next": "s2",
+              "feedback": "Treating the number instead of the process. The fever is not what is going to kill him; the hypoperfusion is.",
+              "score": -1
+            },
+            {
+              "text": "Order a CT of the abdomen and pelvis first to find the source",
+              "next": "s2",
+              "feedback": "Imaging has a role, but a hypotensive septic patient does not leave the resuscitation bay before access, cultures and fluid.",
+              "score": 0
+            },
+            {
+              "text": "Obtain a urine culture only and wait for the result before doing anything else",
+              "next": "s2",
+              "feedback": "Harmful delay. Cultures are drawn alongside resuscitation, never instead of it.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "Two IVs are in. The lactate returns at `4.6 mmol/L`. Blood cultures from two sites are drawn. The catheter bag holds cloudy, foul urine.",
+          "vitals": {
+            "hr": 124,
+            "bp": "88/50",
+            "rr": 26,
+            "spo2": 94,
+            "temp": 39
+          },
+          "choices": [
+            {
+              "text": "Give broad-spectrum antibiotics now, within the first hour, targeting a catheter-associated urinary source",
+              "next": "s3",
+              "feedback": "Right. Each hour of delay in septic shock measurably raises mortality. Cultures were already drawn, so nothing is lost.",
+              "score": 1
+            },
+            {
+              "text": "Hold antibiotics until the urine culture identifies the organism",
+              "next": "s3",
+              "feedback": "Cultures take a day or more. Empiric therapy starts now and is narrowed later.",
+              "score": -1
+            },
+            {
+              "text": "Give antibiotics but only after the full fluid bolus has finished infusing",
+              "next": "s3",
+              "feedback": "Fluids and antibiotics run in parallel, not in sequence. Sequencing them wastes the hour that matters.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "The `30 mL/kg` bolus is complete. He is more awake but still not at baseline. Repeat lactate is `3.8 mmol/L`.",
+          "vitals": {
+            "hr": 112,
+            "bp": "84/46",
+            "rr": 24,
+            "spo2": 95,
+            "temp": 38.6,
+            "gcs": 14
+          },
+          "choices": [
+            {
+              "text": "Start norepinephrine and titrate to a mean arterial pressure of 65 mmHg",
+              "next": "s4",
+              "feedback": "Correct. Hypotension persisting after adequate fluid defines septic shock and calls for a vasopressor. Norepinephrine is first line.",
+              "score": 1
+            },
+            {
+              "text": "Give another 3 liters of crystalloid rapidly and reassess in an hour",
+              "next": "s4",
+              "feedback": "Additional fluid may be reasonable in small aliquots, but unlimited crystalloid causes pulmonary edema. After the initial bolus fails, pressors are the answer.",
+              "score": 0
+            },
+            {
+              "text": "Start dopamine for its renal protective effect",
+              "next": "s4",
+              "feedback": "Renal-dose dopamine is a discredited idea and dopamine causes more arrhythmias than norepinephrine.",
+              "score": -1
+            },
+            {
+              "text": "Accept the pressure as his baseline and move him to the hallway",
+              "next": "s4",
+              "feedback": "A MAP in the 50s with a lactate of 3.8 is ongoing tissue hypoperfusion, not a baseline.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "He is on norepinephrine with a MAP of `68 mmHg` and is admitted to the intensive care unit. The team asks about the catheter that was placed last week.",
+          "vitals": {
+            "hr": 98,
+            "bp": "104/62",
+            "rr": 20,
+            "spo2": 96,
+            "temp": 38.1,
+            "gcs": 15
+          },
+          "choices": [
+            {
+              "text": "Remove or replace the catheter as part of source control",
+              "next": "end",
+              "feedback": "Correct. Antibiotics cannot sterilize a colonized device. Source control is as important as the drug.",
+              "score": 1
+            },
+            {
+              "text": "Leave the catheter in place; antibiotics will clear it",
+              "next": "end",
+              "feedback": "Biofilm on the catheter shelters organisms from antibiotics and reseeds the bladder.",
+              "score": -1
+            },
+            {
+              "text": "Leave the catheter and add a second antipseudomonal agent instead",
+              "next": "end",
+              "feedback": "Adding drugs in place of source control broadens resistance without solving the problem.",
+              "score": 0
+            }
+          ]
+        }
+      ],
+      "debrief": "The pattern: fever plus altered mentation plus hypotension in a patient with an indwelling device is sepsis from a catheter-associated urinary source until proven otherwise. The sequence never changes. Lactate and cultures, antibiotics inside one hour, `30 mL/kg` crystalloid, then norepinephrine to a MAP of `65 mmHg` if the pressure stays down. Source control closes the loop: remove the infected hardware, because no antibiotic penetrates a biofilm reliably. Imaging and definitive diagnosis happen alongside resuscitation, never before it."
+    },
+    {
+      "id": "pa-infectious-s02",
+      "title": "Reasoning through a febrile returning traveler",
+      "setting": "classroom",
+      "intro": "A 29-year-old returns from three weeks in rural Ghana visiting family. Eight days after arriving home she has fevers to `39.4 C`, headache, and body aches. No rash, no cough, no diarrhea. She took a malaria prophylaxis prescription but admits she stopped it after the first week. Work through the reasoning one decision at a time.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "First framing question: what is the single diagnosis you must exclude before anything else?",
+          "choices": [
+            {
+              "text": "Malaria, because falciparum can kill within days and this is an endemic-area exposure",
+              "next": "s2",
+              "feedback": "Correct. Fever plus travel to an endemic area means malaria first. Stopping prophylaxis early removes the main protection she had.",
+              "score": 1
+            },
+            {
+              "text": "Influenza, since fever and body aches are classic",
+              "next": "s2",
+              "feedback": "The symptoms do overlap, but influenza does not kill this patient in 48 hours and malaria might. Rank by lethality, not by frequency alone.",
+              "score": 0
+            },
+            {
+              "text": "Lyme disease, given the headache and myalgias",
+              "next": "s2",
+              "feedback": "Lyme is a North American tick exposure with a rash stage. It does not explain a Ghana travel history.",
+              "score": -1
+            },
+            {
+              "text": "Viral upper respiratory infection; reassure and discharge",
+              "next": "s2",
+              "feedback": "Discharging an undifferentiated post-travel fever without a malaria smear is how falciparum deaths happen.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "You order the right test. The first set of thick and thin blood smears is reported as negative. She still has a temperature of `39.1 C`.",
+          "choices": [
+            {
+              "text": "Repeat smears at 12 to 24 hour intervals, up to three sets, before calling malaria excluded",
+              "next": "s3",
+              "feedback": "Correct. Parasitemia is cyclic and a single negative smear does not rule out malaria. Three negatives over 48 hours are required.",
+              "score": 1
+            },
+            {
+              "text": "Declare malaria excluded and move on to other causes",
+              "next": "s3",
+              "feedback": "One negative smear is not exclusion. This is the most common error in this presentation.",
+              "score": -1
+            },
+            {
+              "text": "Start empiric antimalarial therapy without further testing",
+              "next": "s3",
+              "feedback": "Understandable in a critically ill patient, but this patient is stable and the species and parasite density change the drug choice.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "While the second smear is pending, you build a parallel differential for post-travel fever. Which additional feature would most change your thinking toward dengue?",
+          "choices": [
+            {
+              "text": "Retro-orbital headache, severe bone pain, a falling platelet count and a rash",
+              "next": "s4",
+              "feedback": "Correct. Dengue incubates 4 to 7 days and gives retro-orbital pain, breakbone myalgias, thrombocytopenia and hemoconcentration.",
+              "score": 1
+            },
+            {
+              "text": "Upper lobe cavitation on chest film",
+              "next": "s4",
+              "feedback": "That points at tuberculosis, which is a slower, weeks-long illness with weight loss and night sweats.",
+              "score": 0
+            },
+            {
+              "text": "A migrating red patch with central clearing on the thigh",
+              "next": "s4",
+              "feedback": "That is erythema migrans, which belongs to Lyme disease, not a tropical febrile illness.",
+              "score": 0
+            },
+            {
+              "text": "Painless genital ulcer",
+              "next": "s4",
+              "feedback": "That is primary syphilis and does not explain daily high fevers after travel.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "The second smear shows ring forms with a parasitemia of `2%`, consistent with *Plasmodium falciparum*. She is alert, tolerating oral intake, with normal renal function and no acidosis.",
+          "vitals": {
+            "hr": 104,
+            "bp": "112/70",
+            "rr": 18,
+            "spo2": 98,
+            "temp": 39,
+            "gcs": 15
+          },
+          "choices": [
+            {
+              "text": "Admit, treat as falciparum malaria with a species-appropriate regimen, and monitor for cerebral malaria, hypoglycemia and rising parasitemia",
+              "next": "end",
+              "feedback": "Correct. Falciparum is treated and watched closely because deterioration can be rapid even when the initial presentation looks stable.",
+              "score": 1
+            },
+            {
+              "text": "Discharge on oral therapy with follow-up in one week",
+              "next": "end",
+              "feedback": "Falciparum with 2 percent parasitemia can worsen quickly. Follow-up in a week is too late to catch it.",
+              "score": -1
+            },
+            {
+              "text": "Treat with doxycycline alone and reassess in 48 hours",
+              "next": "end",
+              "feedback": "Doxycycline is a partner drug and a prophylactic agent, not adequate monotherapy for acute falciparum infection.",
+              "score": 0
+            }
+          ]
+        }
+      ],
+      "debrief": "The pattern to keep: fever plus travel equals malaria until three thick and thin smears say otherwise, and one negative smear excludes nothing because parasitemia is cyclic. Rank the differential by what kills fastest, not by what is most common. Dengue is the parallel consideration, distinguished by retro-orbital pain, breakbone myalgias and falling platelets, and it is the one where aspirin and NSAIDs are avoided. Falciparum earns admission even when the patient looks well, because cerebral malaria, hypoglycemia and rising parasitemia appear faster than a follow-up appointment."
+    }
+  ]
+}

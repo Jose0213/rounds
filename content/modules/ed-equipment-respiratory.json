@@ -1,0 +1,1844 @@
+{
+  "schema": 1,
+  "id": "ed-equipment-respiratory",
+  "track": "edtech",
+  "title": "Equipment & Respiratory Support",
+  "short": "Equip & Resp",
+  "summary": "The machines a tech sets up, checks, moves and restocks: oxygen from wall and cylinder, delivery devices, HFNC and BiPAP, nebulizers, suction, the intubation setup, monitors and pumps, wheelchairs and lifts, warming and cooling, the crash cart check and par levels.",
+  "lessons": [
+    {
+      "id": "ed-equipment-respiratory-l01",
+      "title": "Oxygen supply: the wall outlet, the E cylinder, and the math",
+      "minutes": 7,
+      "body": "Oxygen is a drug. It has a dose (`liters per minute` or `percent`), a delivery route (the device), a target (an `SpO2` range), and side effects. It is also stored at enormous pressure in a metal bottle, which makes it a physical hazard on wheels.\n\n### The wall\n\nThe green outlet in the head wall is medical oxygen at about `50 psi`. The flowmeter screws into it; you turn the knob and read the **center of the ball** against the scale. Medical air is a **yellow** outlet and will run a nebulizer but delivers `21%` oxygen — plugging a hypoxic patient's mask into the yellow outlet is a classic and dangerous mix-up. Vacuum (suction) is **white**. Connectors are keyed so they should not cross-fit, but adapters and older walls defeat that, so read the label every time.\n\nA **humidifier bottle** is added for flows above about `4 L/min` through a nasal cannula, and always for high-flow or tracheostomy oxygen, because dry gas cracks mucosa and causes nosebleeds.\n\n### The cylinder\n\nTransport runs on the **E cylinder**, the one that rides under the stretcher. Full is about `2000 psi`. Anything under `500 psi` is functionally empty and gets swapped — never take a patient off the floor on a tank below that.\n\nHow long does it last? Use the E-tank constant, `0.28`:\n\n`Minutes = (gauge psi - 200 safe residual) x 0.28 / flow rate in L/min`\n\nA tank reading `1500 psi` running at `10 L/min`: `(1500 - 200) x 0.28 = 364`, divided by `10` equals about **36 minutes**. Larger tanks have their own constants — the `M` cylinder is `1.56` and the `H`/`K` is `3.14`.\n\nAlways open the valve fully and then back it off a quarter turn, check the regulator seats with a fresh washer, and open the valve **away from your face and away from the patient**. A regulator blown off a full cylinder is a projectile.\n\n### The safety rules that are not optional\n\n- **Secure every cylinder.** Upright in a rack, in the stretcher bracket, or lying flat on the floor — never free-standing. A snapped valve stem turns the bottle into a missile that goes through drywall.\n- **No oil, no grease, no petroleum products** near oxygen fittings — including petroleum jelly on a patient's lips under a mask. Oxygen under pressure plus hydrocarbon equals ignition.\n- Oxygen does not burn; it makes everything else burn hotter and faster. No open flame, no electric razors, no smoking.\n- Crack the valve briefly before attaching a regulator to blow dust out of the port.\n\n> **Key:** Swap any E cylinder below `500 psi`, and calculate time remaining before a long transport rather than guessing.\n\n> **On shift:** Before you take any patient to CT, you check three things — tank pressure, that the regulator is on and flowing, and that the portable monitor battery is charged. People have arrived in radiology on an empty tank.",
+      "keyPoints": [
+        "Wall oxygen is green at about 50 psi; yellow is medical air at 21% oxygen and white is vacuum.",
+        "A full E cylinder is about 2000 psi; below 500 psi it is swapped, not used for transport.",
+        "E cylinder duration = (psi - 200) x 0.28 / flow rate in L/min.",
+        "Humidify nasal cannula flows above about 4 L/min and all high-flow or tracheostomy oxygen.",
+        "Never use oil, grease or petroleum products near oxygen; always secure the cylinder upright or flat."
+      ],
+      "checks": [
+        {
+          "q": "An E cylinder reads 1200 psi and the patient needs 6 L/min for transport. Roughly how long will it last?",
+          "choices": [
+            "About 20 minutes",
+            "About 47 minutes",
+            "About 56 minutes",
+            "About 90 minutes"
+          ],
+          "answer": 1,
+          "why": "(1200 - 200) x 0.28 = 280; 280 divided by 6 is about 47 minutes. Forgetting the 200 psi safe residual gives a falsely long and dangerous estimate."
+        },
+        {
+          "q": "Which wall outlet delivers 21% oxygen and must not be used for a hypoxic patient's mask?",
+          "choices": [
+            "The green outlet",
+            "The white outlet",
+            "The yellow medical air outlet",
+            "The black outlet"
+          ],
+          "answer": 2,
+          "why": "Yellow is medical air — room-air oxygen concentration. Green is oxygen and white is vacuum. Air will drive a nebulizer but provides no supplemental oxygen."
+        },
+        {
+          "q": "Why is petroleum jelly forbidden on the lips of a patient wearing an oxygen mask?",
+          "choices": [
+            "It degrades the plastic of the mask",
+            "Hydrocarbons in an oxygen-enriched environment can ignite",
+            "It interferes with pulse oximetry",
+            "It causes contact dermatitis under the mask"
+          ],
+          "answer": 1,
+          "why": "Oil and grease plus high-concentration oxygen is an ignition risk. Water-based lubricant is the substitute. Mask degradation and oximetry are not the concern."
+        }
+      ]
+    },
+    {
+      "id": "ed-equipment-respiratory-l02",
+      "title": "Choosing and setting up the delivery device",
+      "minutes": 7,
+      "body": "Every device is a compromise between how much oxygen it delivers and how much the patient will tolerate. The number you are aiming at matters more than the device: for most adults the target `SpO2` is `94 to 98%`, and for a patient with known `COPD` it is `88 to 92%`, because a chronic carbon dioxide retainer driven to `100%` can stop breathing adequately.\n\n### The ladder\n\n| Device | Flow | Rough FiO2 | Notes |\n|---|---|---|---|\n| Nasal cannula | `1 to 6 L/min` | `24 to 44%` | About 4% per liter above room air. Humidify above 4 L |\n| Simple face mask | `6 to 10 L/min` | `35 to 60%` | Never below `6 L/min` — the patient rebreathes CO2 |\n| Venturi mask | `4 to 15 L/min` | `24 to 60%` | Color-coded jets give a **precise** FiO2; the COPD device |\n| Partial rebreather | `10 to 12 L/min` | `60 to 75%` | Bag, no one-way valve between bag and mask |\n| Non-rebreather | `10 to 15 L/min` | `80 to 95%` | One-way valves; inflate the bag before applying |\n| Bag-valve-mask | `15 L/min` | Up to `100%` | For the patient who is not breathing adequately |\n| Blow-by / tubing | `6 to 10 L/min` | Variable | The toddler who will not keep a mask on |\n\n**The non-rebreather is the one people set up wrong.** Before it goes on the face, cover the valve with your thumb and let the reservoir bag fill completely. If the bag collapses more than about a third on each breath, the flow is too low — turn it up. A non-rebreather at `6 L/min` is worse than a cannula because the patient is pulling against an empty bag.\n\nThe **Venturi mask** works by entraining a fixed ratio of room air through a colored jet adapter; the box tells you the flow each color requires. It is the device you choose when the exact `FiO2` matters, which is why it shows up on COPD patients.\n\n### Setting it up\n\n1. Confirm the order or the standing protocol, and the target saturation.\n2. Connect tubing to the flowmeter on the **green** outlet. Add a humidifier if indicated.\n3. Set the flow and **verify gas is actually moving** — feel it on your wrist, or watch the reservoir bag. A kinked tube behind the head of the bed is a daily event.\n4. Apply and fit. Cannula prongs curve **downward** into the nares. A mask sits over the bridge of the nose with the metal strip pinched.\n5. Pad behind the ears and at the cheekbones. Oxygen tubing over an ear causes a pressure ulcer within hours.\n6. Recheck the saturation after a few minutes and report it with the device and the flow.\n\n> **Trap:** \"Patient on oxygen\" is not a report. `\"92% on 2 L nasal cannula\"` is. A saturation without a device and a flow is meaningless.\n\n> **On shift:** When a saturation drops, look at the patient and the equipment before you believe the number. Disconnected tubing at the wall, a tank that ran out, and a probe that fell off a finger cause more alarms than actual hypoxia does.",
+      "keyPoints": [
+        "Target SpO2 is 94 to 98% for most adults and 88 to 92% in known COPD.",
+        "Nasal cannula 1 to 6 L/min gives roughly 24 to 44%, about 4% per liter.",
+        "A simple face mask must never run below 6 L/min or the patient rebreathes CO2.",
+        "Inflate a non-rebreather's reservoir bag before applying it and keep flow at 10 to 15 L/min.",
+        "Report saturation with the device and the flow — '92% on 2 L nasal cannula', never 'on oxygen'."
+      ],
+      "checks": [
+        {
+          "q": "A nurse asks you to place a non-rebreather. What must you do before it touches the patient's face?",
+          "choices": [
+            "Set the flow to 6 L/min to avoid drying the airway",
+            "Occlude the valve and inflate the reservoir bag fully at 10 to 15 L/min",
+            "Attach a humidifier bottle to the flowmeter",
+            "Remove the one-way valves so the patient can exhale"
+          ],
+          "answer": 1,
+          "why": "An uninflated reservoir means the patient inhales against an empty bag. Six liters is too low for this device, humidification is not standard on a non-rebreather, and removing the valves converts it into a simple mask."
+        },
+        {
+          "q": "A patient with known COPD has an SpO2 of 90% on 2 L nasal cannula. What is the appropriate target range?",
+          "choices": [
+            "94 to 98%",
+            "88 to 92%",
+            "Greater than 98%",
+            "85 to 88%"
+          ],
+          "answer": 1,
+          "why": "Known COPD targets 88 to 92% because driving a chronic retainer to high saturations can blunt respiratory drive and worsen CO2 retention. 94 to 98% is the general adult target."
+        },
+        {
+          "q": "Which device delivers the most precise, predictable FiO2?",
+          "choices": [
+            "Simple face mask",
+            "Nasal cannula",
+            "Venturi mask",
+            "Partial rebreather"
+          ],
+          "answer": 2,
+          "why": "The Venturi entrains a fixed air-to-oxygen ratio through a color-coded jet, so delivered FiO2 does not swing with the patient's breathing pattern. The other three all vary with inspiratory effort."
+        }
+      ]
+    },
+    {
+      "id": "ed-equipment-respiratory-l03",
+      "title": "High-flow nasal cannula, CPAP and BiPAP: your half of the setup",
+      "minutes": 7,
+      "body": "When a face mask is not enough and a breathing tube is not yet needed, the department reaches for pressure. A tech does not titrate these devices, but a tech sets them up, and a delay in the setup is a delay in the treatment.\n\n### High-flow nasal cannula\n\nOrdinary cannula flow tops out around `6 L/min` because anything faster is unbearably cold and dry. `HFNC` solves that by heating gas to near body temperature and fully humidifying it, which allows `20 to 60 L/min` through large soft prongs at an `FiO2` you can dial from `21 to 100%`. Two effects follow: the high flow washes carbon dioxide out of the nose and throat so less dead space is rebreathed, and it generates a small amount of positive pressure that helps keep alveoli open.\n\nYour setup: the HFNC unit or wall blender, a **heated circuit**, a sterile water bag hung and spiked into the humidification chamber, and the correct prong size — the prongs should fill **no more than half** the nares. Let the machine come up to temperature before applying it. It is loud and it feels like wind; warn the patient.\n\n### CPAP and BiPAP\n\n`CPAP` delivers one continuous pressure, typically `5 to 15 cmH2O`. It is a splint: it holds alveoli open at the end of the breath, which pushes fluid out of the alveoli in `pulmonary edema` and holds a floppy airway open in `obstructive sleep apnea`.\n\n`BiPAP` delivers two pressures — a higher one on inspiration (`IPAP`, often `10 to 20`) and a lower one on exhalation (`EPAP`, often `4 to 8`). The **difference between them is what moves air**, so BiPAP actually assists ventilation. That is why it is the device for the `COPD` exacerbation with a rising carbon dioxide, and why CPAP alone does not fix that problem.\n\nBoth are `NIV` — noninvasive ventilation. Respiratory therapy sets pressures. You get the machine to the room, get the right mask and circuit on it, and help with the fit.\n\n### Fitting a mask that will be tolerated\n\nSize with the manufacturer's gauge: the mask sits from the **bridge of the nose to just below the lower lip** for a full-face mask, and it must not rest on the eyes or press the nostrils closed. Straps go two fingers loose — over-tightening does not fix a leak, it creates one by deforming the cushion, and it causes a pressure ulcer on the nasal bridge within hours. Put a thin foam dressing on the bridge from the start.\n\nHold the mask gently on the face for the first minute or two before strapping it down. Almost every failure of NIV is a patient who panicked in the first sixty seconds.\n\n### What you watch and report\n\nThe mask must come **off** fast if the patient vomits, so keep suction at the head of the bed and never leave an NIV patient unattended. Report a rising respiratory rate, a falling saturation, a patient becoming drowsy, or someone fighting the machine. Absolute contraindications are things the team decides, but you should recognize them: a patient who cannot protect the airway, active vomiting, facial trauma, and apnea.\n\n> **Key:** CPAP is one pressure and splints. BiPAP is two pressures and the gap between them ventilates.\n\n> **On shift:** Sudden drowsiness on BiPAP is not the patient finally relaxing. Rising carbon dioxide makes people sleepy, and that patient may be about to need a tube.",
+      "keyPoints": [
+        "HFNC delivers heated, humidified gas at 20 to 60 L/min with FiO2 from 21 to 100%; prongs fill no more than half the nares.",
+        "CPAP is a single pressure, about 5 to 15 cmH2O, that splints alveoli open — the pulmonary edema and sleep apnea device.",
+        "BiPAP has IPAP and EPAP; the difference between them assists ventilation, which is why it suits a COPD exacerbation.",
+        "Fit the mask nose bridge to below the lower lip, straps two fingers loose, foam dressing on the bridge from the start.",
+        "Keep suction at the bedside, never leave an NIV patient alone, and report new drowsiness immediately."
+      ],
+      "checks": [
+        {
+          "q": "Why does BiPAP help a COPD exacerbation with a rising CO2 more than CPAP does?",
+          "choices": [
+            "It delivers a higher FiO2 than CPAP",
+            "The difference between the inspiratory and expiratory pressures actively moves air and assists ventilation",
+            "It is humidified and CPAP is not",
+            "It requires a smaller mask and leaks less"
+          ],
+          "answer": 1,
+          "why": "Ventilation depends on the pressure swing, which only BiPAP provides. CPAP holds one constant pressure, which recruits alveoli but does not push a breath. FiO2, humidification and mask size are not the distinguishing factor."
+        },
+        {
+          "q": "A BiPAP mask is leaking at the cheeks. What is the correct first response?",
+          "choices": [
+            "Tighten the straps until the leak stops",
+            "Check the mask size and reseat the cushion, keeping the straps about two fingers loose",
+            "Increase the IPAP to compensate",
+            "Switch to a nasal cannula"
+          ],
+          "answer": 1,
+          "why": "Over-tightening deforms the cushion and usually worsens the leak while causing a nasal bridge ulcer. Sizing and seating fix leaks. Pressure changes are a respiratory therapy decision, and abandoning NIV for a cannula undertreats the patient."
+        },
+        {
+          "q": "A patient on BiPAP for 40 minutes becomes noticeably drowsy and stops complaining about the mask. What does this most likely mean?",
+          "choices": [
+            "The treatment is working and he is resting",
+            "He has become accustomed to the pressure",
+            "His carbon dioxide may be rising and he may be heading toward intubation",
+            "The mask is too loose and he is not receiving pressure"
+          ],
+          "answer": 2,
+          "why": "Hypercapnia causes sedation. New drowsiness on NIV is a deterioration sign, not comfort, and it is reported immediately. A loose mask would cause more distress, not less."
+        }
+      ]
+    },
+    {
+      "id": "ed-equipment-respiratory-l04",
+      "title": "Nebulizers, inhalers and the spacer",
+      "minutes": 6,
+      "body": "A bronchodilator has to reach the small airways to work. Everything about these devices is about particle size and where the drug lands.\n\n### The small-volume nebulizer\n\nA jet of gas hits the liquid drug and shatters it into a mist. The setup is a `T-piece` or mask, the nebulizer cup, and tubing to a flowmeter.\n\nThe number that matters is the driving flow: **`6 to 8 L/min`**. Below that, droplets are too large and deposit in the mouth; above it, the treatment blows through in a minute with poor deposition. A correctly run treatment takes about `10 to 15 minutes` and ends when the misting becomes sputtering.\n\nRun it on **oxygen** for a hypoxic patient and on **medical air** for a COPD patient when the order says so — the yellow outlet exists for exactly this. Sit the patient upright; a nebulizer given to someone slumped flat mostly treats their tongue. Tell them to breathe normally through the mouth with an occasional deep breath and hold, not to suck hard and fast.\n\nCommon drugs you will see loaded: `albuterol 2.5 mg in 3 mL` saline, often combined with `ipratropium 0.5 mg` as a `DuoNeb`, `racemic epinephrine` for croup, and `hypertonic saline` for sputum induction. **Techs do not administer medication** — you set up the device, position the patient, and monitor. Who may push the button on a nebulizer varies by facility policy and by state, so know your department's rule and do not improvise.\n\nWhat to watch during a treatment: heart rate, because albuterol commonly drives it up `10 to 20 beats per minute` and can cause tremor and palpitations; work of breathing; and the saturation. Report a heart rate over about `130` or new chest pain.\n\nTap the cup during the treatment to knock droplets back down, and tell the patient to rinse their mouth afterward if a steroid was included, to prevent oral thrush.\n\n### Metered-dose inhalers and spacers\n\nAn `MDI` fires a fixed puff in a fraction of a second. Most people time the breath wrong, so most of the drug hits the back of the throat.\n\nThe `spacer` — a holding chamber between the inhaler and the mouth — fixes this by holding the puff in a cloud the patient can then inhale slowly. It roughly doubles the drug reaching the lungs and removes the coordination problem entirely, which is why it is standard for children and for anyone in distress.\n\nThe technique: shake the inhaler `5 seconds`, attach the spacer, exhale fully away from it, seal the lips, fire **one puff**, breathe in slowly and deeply, and **hold the breath for `10 seconds`**. Wait `30 to 60 seconds` between puffs. One puff at a time — firing two into a chamber makes the particles collide and fall out.\n\nA child under about 4 uses a spacer with a **mask**, held on the face for about `5 to 6 breaths` per puff.\n\n> **Trap:** Running a nebulizer at `2 L/min` because the patient said the mist was too strong. Below 6 L/min the particles are too big to reach the lungs and you have given a 20-minute placebo.\n\n> **On shift:** Chart what you set up, the driving gas, the flow, and the heart rate before and after. `\"Neb run on 8 L oxygen, HR 88 to 112, work of breathing improved\"` is the useful sentence.",
+      "keyPoints": [
+        "Drive a small-volume nebulizer at 6 to 8 L/min; a treatment runs about 10 to 15 minutes until it sputters.",
+        "Oxygen drives the nebulizer for a hypoxic patient; medical air is used for some COPD patients when ordered.",
+        "Albuterol 2.5 mg in 3 mL is the standard dose; expect a heart rate rise of 10 to 20 and report over about 130.",
+        "A spacer roughly doubles lung deposition — one puff, slow deep breath, hold 10 seconds, wait 30 to 60 seconds.",
+        "Techs set up and monitor; whether a tech may administer varies by facility policy and state."
+      ],
+      "checks": [
+        {
+          "q": "At what flow should a small-volume nebulizer be driven?",
+          "choices": [
+            "2 to 4 L/min",
+            "6 to 8 L/min",
+            "10 to 15 L/min",
+            "15 L/min or the maximum available"
+          ],
+          "answer": 1,
+          "why": "Six to eight liters produces droplets small enough to reach the small airways. Lower flow makes droplets too large to get past the mouth; much higher flow ends the treatment before adequate deposition."
+        },
+        {
+          "q": "Why is a spacer used with a metered-dose inhaler?",
+          "choices": [
+            "It increases the dose delivered per puff",
+            "It holds the aerosol so the patient does not have to coordinate the puff with the breath, roughly doubling lung deposition",
+            "It humidifies the medication",
+            "It allows two puffs to be fired at once"
+          ],
+          "answer": 1,
+          "why": "The chamber removes the timing problem and lets large particles drop out before they reach the throat. It does not change the metered dose, does not humidify, and firing two puffs at once causes particles to collide and fall out."
+        },
+        {
+          "q": "During an albuterol treatment the patient's heart rate rises from 84 to 108 and she reports mild tremor. What is this?",
+          "choices": [
+            "An allergic reaction requiring the treatment to stop immediately",
+            "An expected beta-agonist effect that should be monitored and reported",
+            "A sign the flow rate is too high",
+            "Evidence of worsening hypoxia"
+          ],
+          "answer": 1,
+          "why": "Tachycardia of 10 to 20 beats and tremor are common, expected albuterol effects. Allergy would show rash, swelling or wheezing that worsens, and flow rate does not cause tremor. A rate over about 130 or chest pain is what gets escalated."
+        }
+      ]
+    },
+    {
+      "id": "ed-equipment-respiratory-l05",
+      "title": "Suction: setup, the Yankauer, soft catheters and the tracheostomy",
+      "minutes": 7,
+      "body": "A patient with vomit or blood in the airway dies from an equipment problem, not a disease problem. Suction is checked at the start of every shift, in every resuscitation bay, and before every procedure where an airway might be lost. A suction setup that is not assembled is not suction.\n\n### The setup, in order\n\nRegulator into the **white** wall vacuum outlet, canister seated and sealed, tubing from the canister to the patient device, and a rigid `Yankauer` on the end. Turn it on, kink or occlude the tubing, and read the gauge to set the pressure. Then confirm it actually pulls by suctioning a little water.\n\n**Pressure settings for wall suction:**\n\n| Patient | Setting |\n|---|---|\n| Adult | `100 to 150 mmHg` |\n| Child | `80 to 120 mmHg` |\n| Infant/neonate | `60 to 100 mmHg` |\n\nHigher pressure does not clear thick material better; it tears mucosa, causes bleeding, and strips more oxygen out of the lungs.\n\n### The rigid Yankauer\n\nFor the **mouth and pharynx only**, and for vomit, blood and thick secretions. Measure from the corner of the mouth to the earlobe so you do not go past the pharynx. Insert it with the suction **off or unoccluded**, then apply suction while withdrawing in a sweeping motion.\n\n**Suction no longer than `10 to 15 seconds` at a time** in an adult — `5 seconds` in an infant — and let the patient reoxygenate between passes. Suctioning is apnea plus airway stimulation: it drops the saturation and it can trigger a `vagal` response that slows the heart. If the heart rate falls or the saturation drops, stop and oxygenate.\n\nTouching the back of the throat triggers gagging and vomiting in a patient with an intact gag reflex, which is the thing you were trying to prevent.\n\n### Soft catheters, the nose, and the tracheostomy\n\nA flexible `French` catheter is for the nose, the nasopharynx, and down an endotracheal or tracheostomy tube. Nasopharyngeal depth is measured from the nose tip to the earlobe. A `bulb syringe` is for infants — mouth first, then nose, because suctioning the nose first makes a baby gasp and aspirate what is in the mouth.\n\n**Tracheostomy and endotracheal suctioning is a sterile procedure** and in most departments it is a nurse or respiratory therapy function. Whether a tech may perform it varies by facility and state, so know your rule. What is universal: preoxygenate first, use a catheter no more than **half the inner diameter** of the tube, insert without suction applied, apply suction only on withdrawal, keep it under `10 to 15 seconds`, and do not instill saline down the tube — that practice is no longer recommended and pushes bacteria toward the lungs.\n\nA patient with a tracheostomy whose airway is obstructed needs oxygen at the **stoma**, not at the mouth. Every trach patient's bedside should have a **spare tube of the same size and one a size smaller**, an obturator, and suction ready.\n\n### Portable suction and the canister\n\nCheck the battery on portable units every shift and after every use. Change the canister when it is about **two-thirds to three-quarters full** — a full canister lets fluid reach the vacuum port and ruins the regulator. Contents are biohazard and are disposed of per facility policy, and volume is recorded as output.\n\n> **Key:** Adult wall suction is `100 to 150 mmHg`, applied only on withdrawal, for no more than `10 to 15 seconds`.\n\n> **On shift:** \"Suction is set up\" means the canister is sealed, the tubing is connected, the pressure is set, a Yankauer is attached, and you have watched it pull. Anything less is a box on a wall.",
+      "keyPoints": [
+        "Adult wall suction 100 to 150 mmHg; child 80 to 120; infant 60 to 100.",
+        "Insert without suction, apply only on withdrawal, and limit to 10 to 15 seconds in an adult and 5 in an infant.",
+        "Yankauer is for mouth and pharynx only; measure corner of mouth to earlobe.",
+        "Suction a bulb-syringe infant mouth first, then nose, so a gasp does not draw oral contents into the lungs.",
+        "Trach suctioning is sterile, uses a catheter half the tube's inner diameter, and does not use instilled saline."
+      ],
+      "checks": [
+        {
+          "q": "What is the correct wall suction pressure for an adult?",
+          "choices": [
+            "60 to 100 mmHg",
+            "80 to 120 mmHg",
+            "100 to 150 mmHg",
+            "200 to 250 mmHg"
+          ],
+          "answer": 2,
+          "why": "Adults are suctioned at 100 to 150 mmHg. Eighty to 120 is pediatric and 60 to 100 is infant. Pressures above 150 tear mucosa and strip oxygen without clearing thick material any better."
+        },
+        {
+          "q": "While you suction an adult's oropharynx, his heart rate drops from 88 to 52. What do you do?",
+          "choices": [
+            "Continue, since the airway must be cleared",
+            "Stop suctioning, withdraw the catheter, and oxygenate",
+            "Increase the suction pressure to finish faster",
+            "Switch to a soft catheter and continue"
+          ],
+          "answer": 1,
+          "why": "Bradycardia during suctioning is a vagal response and a sign to stop and oxygenate. Continuing or raising pressure deepens both the hypoxia and the vagal stimulation, and changing catheters does not address the cause."
+        },
+        {
+          "q": "When suctioning an infant with a bulb syringe, which order is correct and why?",
+          "choices": [
+            "Nose first, then mouth, because nasal breathing is obligate",
+            "Mouth first, then nose, because nasal suctioning makes the infant gasp and aspirate oral contents",
+            "Either order, as long as pressure stays under 100 mmHg",
+            "Nose only; the mouth clears itself"
+          ],
+          "answer": 1,
+          "why": "Suctioning the nose triggers a gasp. If the mouth is still full, that gasp draws the contents into the airway. Mouth first removes the material that could be aspirated."
+        }
+      ]
+    },
+    {
+      "id": "ed-equipment-respiratory-l06",
+      "title": "Bag-mask, adjuncts, and the intubation setup you build in ninety seconds",
+      "minutes": 7,
+      "body": "When the team decides to secure an airway, the tech's job is to put a complete, tested setup in the provider's hands before they ask for it. Every item has a failure mode, and the point of the check is to find it now rather than with a laryngoscope in someone's mouth.\n\n### Bag-valve-mask\n\nAn adult bag holds about `1000 to 1600 mL`, a pediatric bag about `450 to 500 mL`, and an infant bag about `250 mL`. Attach the reservoir and run oxygen at `15 L/min` so the bag delivers close to `100%`. Without the reservoir attached you are delivering far less.\n\nSeal beats squeeze. The `E-C clamp` is thumb and index finger making a C on the mask while the other three fingers make an E lifting the **bony jaw**, not the soft tissue under the chin, which pushes the tongue back and closes the airway. A two-person technique — one holding the seal with both hands, one squeezing — works far better and is the default whenever staffing allows.\n\nVentilate over about `1 second` per breath, just enough to make the chest rise. Fast or forceful bagging inflates the stomach, which causes vomiting and pushes the diaphragm up. In an adult in arrest with an advanced airway, the rate is `1 breath every 6 seconds`, about `10 per minute`.\n\n### Adjuncts\n\nAn `oropharyngeal airway` (`OPA`) holds the tongue off the back of the throat. Size from the **corner of the mouth to the angle of the jaw** — or mouth corner to earlobe. It goes only in a patient with **no gag reflex**; in anyone else it causes vomiting.\n\nA `nasopharyngeal airway` (`NPA`) is tolerated by a patient with a gag reflex. Size from the **nostril to the earlobe**, lubricate with water-based lubricant, and insert with the bevel toward the septum. Avoid it in suspected basilar skull fracture or significant midface trauma.\n\n### The intubation tray\n\nBuild it in this order and test as you go. The mnemonic is **SOAP-ME**: Suction, Oxygen, Airway equipment, Positioning and Pharmacology, Monitoring, Equipment for rescue.\n\n- **Suction** on, `100 to 150 mmHg`, Yankauer attached, tucked under the pillow on the provider's right.\n- **Oxygen**: bag-valve-mask with reservoir at `15 L/min`, plus preoxygenation in place — usually a non-rebreather, often with a nasal cannula underneath.\n- **Laryngoscope**: click the blade onto the handle and **confirm the light is bright and white**, not yellow and dim. Have the video laryngoscope charged and a spare battery-checked handle.\n- **Tubes**: the requested size plus **one size smaller**. Typical adult female `7.0 to 7.5`, adult male `7.5 to 8.0`. Inflate the cuff with `10 mL` of air to test for a leak, then fully deflate it and leave the syringe attached.\n- **Stylet** lubricated and inserted so the tip stays **inside** the tube, never protruding past the end.\n- **Securing device or tape**, and a `10 mL` syringe.\n- **Monitoring**: continuous `SpO2`, cardiac monitor, blood pressure cycling, and **waveform capnography ready to connect** — end-tidal CO2 is the confirmation of tube placement.\n- **Rescue**: a supraglottic airway such as an `i-gel` or LMA in the right size, a bougie, and a surgical airway kit in the room.\n\nPosition the patient with the **ear canal level with the sternal notch**, which is a ramp built from towels or blankets in an obese patient and a pad under the shoulders in a small child.\n\n### After the tube\n\nYour hands are on compressions, cricoid or external laryngeal manipulation if asked, or the tube once it is in — **hold it where the provider hands it to you and do not let it move** until it is secured. Note the depth marking at the teeth, typically `21 cm` for an adult female and `23 cm` for an adult male. Then get the chest x-ray ordered and the ventilator called.\n\n> **Key:** SOAP-ME, tested — a dim laryngoscope light and an untested cuff are the two failures that are entirely on the person who built the tray.\n\n> **On shift:** Say out loud what you have done: \"Suction on and under the pillow, light is good, 7.5 with cuff tested, 7.0 backup, i-gel size 4 on the tray, end-tidal is connected.\" That sentence is what a good tech sounds like.",
+      "keyPoints": [
+        "Adult bag-valve-mask holds 1000 to 1600 mL and needs a reservoir at 15 L/min to approach 100% oxygen.",
+        "E-C clamp lifts the bony jaw, not the soft tissue; two-person BVM is the default whenever staffing allows.",
+        "Size an OPA corner of mouth to jaw angle and use it only with no gag reflex; size an NPA nostril to earlobe.",
+        "SOAP-ME: suction, oxygen, airway, positioning and pharmacology, monitoring, rescue equipment.",
+        "Test the laryngoscope light and the cuff, prepare one tube size smaller, and confirm placement with waveform capnography."
+      ],
+      "checks": [
+        {
+          "q": "You are setting up for intubation. The laryngoscope light comes on dim and yellow. What does that mean?",
+          "choices": [
+            "Normal — the light brightens under load",
+            "The bulb or battery is failing and must be replaced before the attempt",
+            "The blade is the wrong size for the handle",
+            "The video laryngoscope should be used instead without further action"
+          ],
+          "answer": 1,
+          "why": "A bright white light is the pass criterion; dim and yellow means a dying battery or bulb. Discovering it mid-attempt costs seconds a hypoxic patient does not have. Blade fit is a separate mechanical check."
+        },
+        {
+          "q": "Which patient may receive an oropharyngeal airway?",
+          "choices": [
+            "A drowsy patient who gags when you approach his mouth",
+            "An unresponsive patient with no gag reflex",
+            "A patient with a suspected basilar skull fracture and an intact gag",
+            "An awake patient with slurred speech"
+          ],
+          "answer": 1,
+          "why": "An OPA requires an absent gag reflex; otherwise it induces vomiting. A basilar skull fracture is a contraindication for the nasal airway, not the oral one, but an intact gag still rules out an OPA."
+        },
+        {
+          "q": "How should the stylet sit in the endotracheal tube?",
+          "choices": [
+            "Protruding about 1 cm past the tip to guide the tube",
+            "Lubricated, with the tip remaining inside the tube",
+            "Removed and handed separately to the provider",
+            "Bent into a full circle for maximum curve"
+          ],
+          "answer": 1,
+          "why": "A stylet extending past the tube tip lacerates the airway. It is lubricated so it withdraws easily and kept inside the tube. A gentle hockey-stick curve, not a circle, is the usual shape."
+        }
+      ]
+    },
+    {
+      "id": "ed-equipment-respiratory-l07",
+      "title": "Setting up the monitor, the probe, and the pumps you do not program",
+      "minutes": 6,
+      "body": "Every ED room has the same four measuring devices, and a tech sets up all four. Setup errors produce alarms, and alarms produce fatigue, and fatigue is how a real event gets ignored.\n\n### The cardiac monitor\n\nA fresh electrode with moist gel on prepped skin is most of the work. Wipe the site, dry it, clip hair rather than shaving it, and abrade lightly. A dried-out electrode produces a wandering baseline that looks like a rhythm problem.\n\nThree-lead placement is **white on the right** shoulder, **smoke over fire** (black left shoulder, red left lower ribs). A five-lead adds **green** on the right lower ribs and **brown** on the chest at the `V1` position, fourth intercostal space at the right sternal border. Route the cables over the shoulder and clip the lead wires **to the gown, not to the skin**, so a patient turning does not pull an electrode off.\n\nSet the alarm limits for the patient in front of you, and do not silence an alarm without looking at the patient. Every monitored patient gets limits reviewed at the start of your shift.\n\n### The pulse oximeter\n\nThe probe shines red and infrared light through tissue and compares how much each is absorbed. That mechanism explains every failure mode:\n\n- **Nail polish, gel nails and dirt** block the light. Remove it or turn the probe sideways on the finger.\n- **Cold or poorly perfused fingers** give no pulsatile signal. Warm the hand or move to an ear, forehead or toe.\n- **Motion and shivering** produce garbage. Check the waveform, not just the number — no clean pleth waveform means no trustworthy saturation.\n- **Carbon monoxide poisoning reads falsely normal**, often `98 to 100%`, because carboxyhemoglobin absorbs light like oxygenated hemoglobin. A fire victim with a perfect saturation is not reassuring.\n- Do not put the probe on the same arm as an inflating **blood pressure cuff**; the reading drops with every cycle.\n- **Rotate the probe site at least every 4 hours** — probe pressure causes a device-related pressure injury.\n\n### The blood pressure cuff\n\nThe bladder should cover about `80%` of the arm's circumference and `40%` of its width. **A cuff too small reads falsely high; a cuff too large reads falsely low.** Place it over a bare upper arm with the artery marker on the brachial artery, and support the arm at heart level — an arm hanging below the heart adds roughly `10 mmHg`.\n\nAvoid the arm with a dialysis fistula, a mastectomy on that side, an IV running, or an injured limb. Set the cycling interval to what the acuity needs, and recheck an abnormal automated reading **manually** before anyone acts on it.\n\n### Pumps and the line you do not touch\n\nInfusion pumps deliver a set rate; smart pumps carry a drug library with dose limits. **A tech does not program a pump, does not change a rate, and does not clear an alarm that stops an infusion.**\n\nWhat you do is recognize and report. An **air-in-line** alarm, an **occlusion** alarm, a bag that has run dry, a line that is kinked under a patient, a pump that has been unplugged and is running on a dying battery, a site that is swollen, cool, blanched or painful — all of those go to the nurse immediately. Swelling and coolness at an IV site is `infiltration`; redness, pain and streaking along the vein is `phlebitis`. Both need the nurse now.\n\nWhen you move a patient, plug the pump into wall power at the destination, keep the bag above the patient, and never let a line get trapped under a rail or a wheel.\n\n> **Trap:** A cuff that is too small on a large arm is the single most common cause of a falsely high blood pressure and an unnecessary workup.\n\n> **On shift:** The habit that matters is checking the waveform behind every number — a pleth waveform on the oximeter, a clean tracing on the monitor. A number without a waveform is a rumor.",
+      "keyPoints": [
+        "Three-lead: white on the right, smoke over fire; five-lead adds green on the right lower ribs and brown at V1.",
+        "Pulse oximetry reads falsely normal in carbon monoxide poisoning and fails with polish, cold, motion or a cycling cuff on the same arm.",
+        "Rotate the oximeter probe at least every 4 hours to prevent a device-related pressure injury.",
+        "A cuff too small reads falsely high; a cuff too large reads falsely low; the bladder covers about 80% of the arm's circumference.",
+        "Techs never program pumps or clear infusion alarms — they recognize infiltration, phlebitis, occlusion and air-in-line and report."
+      ],
+      "checks": [
+        {
+          "q": "A patient pulled from a house fire has an SpO2 of 99% on room air. Why is this not reassuring?",
+          "choices": [
+            "The probe is probably on the wrong finger",
+            "Carboxyhemoglobin absorbs light like oxyhemoglobin, so the oximeter reads falsely normal",
+            "Saturation always reads high in the first hour after any injury",
+            "Smoke particles on the skin raise the reading"
+          ],
+          "answer": 1,
+          "why": "A standard pulse oximeter cannot distinguish carbon monoxide-bound hemoglobin from oxygen-bound hemoglobin. A co-oximeter or blood gas is needed. Probe placement and soot do not explain a falsely normal value in this setting."
+        },
+        {
+          "q": "A 320-pound patient's automated blood pressure reads 182/104 on a standard adult cuff. What should you suspect first?",
+          "choices": [
+            "True hypertensive emergency requiring immediate escalation",
+            "A cuff that is too small for the arm, producing a falsely high reading",
+            "A cuff that is too large, producing a falsely high reading",
+            "Arm position above heart level"
+          ],
+          "answer": 1,
+          "why": "An undersized cuff requires more pressure to occlude the artery and reads falsely high. An oversized cuff reads falsely low, and an arm above heart level would lower, not raise, the value. Repeat with a large cuff before anyone treats it."
+        },
+        {
+          "q": "An IV site is swollen, cool and blanched and the pump is alarming for occlusion. What is your action?",
+          "choices": [
+            "Silence the alarm and restart the infusion",
+            "Flush the line to clear the occlusion",
+            "Stop, do not clear the alarm, and get the nurse — this looks like infiltration",
+            "Reposition the arm and increase the rate"
+          ],
+          "answer": 2,
+          "why": "Swelling, coolness and blanching describe infiltration, fluid entering tissue instead of the vein. A tech does not clear infusion alarms, flush lines or change rates. The nurse stops the infusion and assesses the site."
+        }
+      ]
+    },
+    {
+      "id": "ed-equipment-respiratory-l08",
+      "title": "Wheelchairs, stretchers, lifts and the bariatric patient",
+      "minutes": 6,
+      "body": "Transport is the part of the job with the most equipment and the fewest witnesses. Most transport injuries come from something that was not locked, not charged, or not weighed.\n\n### The wheelchair\n\nCheck the brakes before the patient sits — squeeze and try to roll it. Footrests go on before the feet do and swing away for every transfer. Never let feet drag, and never let a patient's arm hang outside the wheel.\n\nGoing into an elevator, **back in** so the patient faces the doors and you control the chair at the threshold. Going **down a ramp or a curb, reverse and go backward**, so gravity works against your body rather than tipping the patient forward. On a curb going up, tip back onto the large wheels using the tipping lever.\n\nA patient at risk of sliding gets positioned back in the seat with hips against the backrest, not perched forward. If a wheelchair needs a chest or lap belt to keep someone upright, that is a positioning device when the patient can remove it and a **restraint** when they cannot — and a restrained patient needs an order and monitoring.\n\n### The stretcher\n\n**Brakes on any time the stretcher is not moving.** Two rails up for any moving patient, all lines and tubing gathered on the stretcher, oxygen tank seated in the bracket and reading above `500 psi`, monitor on the shelf or between the legs where it cannot fall on the patient.\n\nPush from the **head end** so you steer with the patient's feet leading and your eyes over their face. Slow at every corner and every doorway, and call out at blind intersections. On an incline, keep the head end **uphill**.\n\nBefore a transport off the unit, run the same list every time: **patient identified and armbanded, chart or handoff ready, oxygen adequate, monitor battery charged, suction available if the airway is at risk, lines untangled and pumps plugged in or charged, rails up, brakes released last.**\n\n### Lifts and slide equipment\n\n- **Slide sheet or transfer board** for a lateral bed-to-stretcher move with a counted team pull.\n- **Air transfer mattress** for heavy patients — inflates and floats the patient across on a cushion of air.\n- **Sit-to-stand lift** for a patient who can bear **some** weight and follow directions.\n- **Full-body mechanical lift** for a patient who can bear no weight. Two staff minimum, always. Check the sling for frayed stitching and confirm the sling's rating, and never leave a patient suspended.\n\n### The bariatric patient\n\nThe number you must know is the **weight capacity of every surface** the patient will touch. A standard stretcher is often rated around `500 pounds`; standard wheelchairs are commonly `250 to 300 pounds`; a bariatric stretcher or chair goes well beyond that, and a CT table, an x-ray table and a toilet each have their own limit. Exceeding a rating is how a stretcher collapses.\n\nGet the bariatric equipment to the room **before** the patient needs to move, not during. Plan the route — door widths, elevator size. Use more staff and more equipment, not more effort. And treat the patient the same way you treat anyone: the extra people and equipment get explained plainly and without commentary.\n\n> **Key:** Brakes locked, rails up, tank above `500 psi`, battery charged, lines gathered. The same five things every time you move anyone.\n\n> **On shift:** The most common transport near-miss is a monitor cable or an IV line left hooked over a bed rail as the stretcher pulls away. Walk the perimeter of the stretcher before you release the brake.",
+      "keyPoints": [
+        "Test wheelchair brakes before the patient sits; back into elevators and go down ramps and curbs backward.",
+        "A belt the patient cannot remove is a restraint, not a positioning device.",
+        "Stretcher brakes on whenever stopped, two rails up, push from the head end with feet leading, head uphill on inclines.",
+        "Sit-to-stand lift for partial weight-bearing; full-body mechanical lift needs two staff minimum and an inspected sling.",
+        "Know the weight rating of every surface — standard stretchers around 500 lb, standard wheelchairs 250 to 300 lb."
+      ],
+      "checks": [
+        {
+          "q": "How do you take a patient in a wheelchair down a ramp?",
+          "choices": [
+            "Forward, with the patient holding the armrests",
+            "Backward, with you descending first and the chair behind you",
+            "Forward, with the brakes partially applied",
+            "Sideways across the slope"
+          ],
+          "answer": 1,
+          "why": "Backing down keeps the patient from pitching forward and lets your body, not the patient's balance, control the descent. Partial braking causes jerking, and crossing a slope sideways invites a tip."
+        },
+        {
+          "q": "A restless patient is belted into a wheelchair with a strap he cannot undo. What is this?",
+          "choices": [
+            "A positioning device requiring no documentation",
+            "A physical restraint requiring an order and monitoring",
+            "A fall precaution exempt from restraint rules",
+            "Standard practice for all transported patients"
+          ],
+          "answer": 1,
+          "why": "The defining question is whether the patient can remove it. If they cannot, it restricts freedom of movement and meets the definition of a restraint regardless of the intent behind it."
+        },
+        {
+          "q": "You are about to transport a monitored patient to CT. Which check is missing from: patient identified, rails up, lines gathered, handoff ready?",
+          "choices": [
+            "Confirm the oxygen tank pressure and the monitor battery charge",
+            "Remove the patient's socks",
+            "Silence all monitor alarms for the trip",
+            "Disconnect the pulse oximeter to reduce cable clutter"
+          ],
+          "answer": 0,
+          "why": "Power and gas are the two things that run out mid-transport. Silencing alarms and removing the oximeter defeat the reason the patient is monitored, and footwear is irrelevant to a stretcher transport."
+        }
+      ]
+    },
+    {
+      "id": "ed-equipment-respiratory-l09",
+      "title": "Warming, cooling, and the bladder scanner",
+      "minutes": 6,
+      "body": "Three device families sit between comfort and treatment. Used casually they burn people; used correctly they are therapy.\n\n### Warming\n\nNormal core temperature is about `37 C` (`98.6 F`); `hypothermia` starts below `35 C` (`95 F`). A cold patient does not just feel bad — cold blood does not clot properly, which is why trauma patients are warmed aggressively. The `trauma triad of death` is hypothermia, acidosis and coagulopathy, and warming is the part of that triad a tech directly controls.\n\n- **Warm blankets.** The cabinet runs at roughly `130 to 200 F` depending on facility setting, and a blanket straight out of it can burn skin on a patient who cannot feel or move. Shake it out — briefly, away from any sterile field — and place a sheet between it and bare skin for the frail, the sedated and the neuropathic.\n- **Forced-air warming blankets** blow warm air through a disposable perforated blanket. The blanket goes **over** the patient and the hose is **always inserted into the blanket**, never allowed to blow loose under the sheets. Free-hosing causes deep burns and is a named never-event.\n- **Fluid warmers** heat IV fluid and blood in line. Blood products go only through a warmer approved for blood.\n- Keep the room warm, remove wet clothing, cover the head, and remember that **a naked trauma patient loses heat fast** — expose, examine, then cover.\n\n### Cooling\n\nFor `heat stroke`, the priority is fast cooling: cold water immersion where available, or ice packs to the **groin, axillae and neck** where large vessels run close to the surface, plus mist and fan. Undress the patient and use a rectal or esophageal temperature probe — oral and tympanic readings are unreliable at extremes.\n\nFor **targeted temperature management** after cardiac arrest, surface pads or an intravascular catheter hold a set temperature. Shivering defeats cooling because it generates heat, so report shivering immediately.\n\nFor simple fever, **do not** use alcohol baths or ice water sponging. Both cause shivering and vasoconstriction, which drives the core temperature up, and alcohol is absorbed through skin.\n\n### The bladder scanner\n\nA portable ultrasound that measures bladder volume without a catheter. It answers one question: is there urine in there? That question decides whether a patient who has not voided needs a catheter, which matters because every avoided catheter is an avoided infection.\n\nThe technique: patient **supine**, expose the lower abdomen, wipe the probe, apply gel about `1 inch` above the pubic bone in the midline, and aim the probe **down toward the coccyx**. Select the correct sex setting — and select **female only if she has a uterus**; a woman who has had a hysterectomy is scanned on the male setting, because the machine's algorithm otherwise subtracts a uterus that is not there. Scan, aim to center the bladder icon on the screen, and repeat two or three times, reporting the **largest** consistent volume.\n\nNumbers to know: normal bladder capacity is about `400 to 600 mL`, the urge to void arrives around `150 to 300 mL`, and a **post-void residual over `150 mL`** is generally considered abnormal. Many protocols trigger consideration of catheterization at a retained volume above `300 to 500 mL`, but the threshold varies by protocol. The scanner is unreliable over an open wound, a dressing, ascites, a very obese abdomen, or in pregnancy.\n\n> **Trap:** Using the female setting on a post-hysterectomy patient, which produces a falsely low volume and delays a needed catheterization.\n\n> **On shift:** Report the scan as a number with context — `\"bladder scan 480 mL, patient has not voided in seven hours and is uncomfortable.\"` That is a sentence a nurse can act on.",
+      "keyPoints": [
+        "Hypothermia below 35 C worsens clotting; the trauma triad is hypothermia, acidosis and coagulopathy.",
+        "A forced-air warmer hose is always inserted into its blanket — free-hosing under a sheet causes deep burns.",
+        "Heat stroke is cooled with immersion or ice to groin, axillae and neck, with a rectal or esophageal probe; shivering defeats cooling.",
+        "Bladder scan supine, gel an inch above the pubic bone, probe aimed toward the coccyx; use the male setting after hysterectomy.",
+        "Bladder capacity is about 400 to 600 mL; a post-void residual over 150 mL is abnormal."
+      ],
+      "checks": [
+        {
+          "q": "A tech places the hose of a forced-air warming unit under the sheets without attaching the disposable blanket. What is the risk?",
+          "choices": [
+            "The unit will alarm and shut off automatically",
+            "Deep thermal burns from concentrated hot air on the skin",
+            "The patient will be inadequately warmed but is otherwise safe",
+            "Sterile field contamination only"
+          ],
+          "answer": 1,
+          "why": "Free-hosing concentrates hot air on one area and causes full-thickness burns. It is a recognized never-event. Units do not reliably detect a detached blanket."
+        },
+        {
+          "q": "You are scanning the bladder of a 62-year-old woman who had a hysterectomy ten years ago. Which setting do you select?",
+          "choices": [
+            "Female, because of her anatomy at birth",
+            "Male, because the female algorithm subtracts a uterus she no longer has",
+            "Either setting; the difference is negligible",
+            "Pediatric, to reduce the correction factor"
+          ],
+          "answer": 1,
+          "why": "The female setting applies a uterine correction. Without a uterus, that correction falsely lowers the reported volume and can delay a needed catheterization. The difference is clinically significant, not negligible."
+        },
+        {
+          "q": "A febrile patient's family asks about sponging her with rubbing alcohol. What is the correct response?",
+          "choices": [
+            "It is effective and can be done with a basin at the bedside",
+            "It should be avoided — it causes shivering and alcohol is absorbed through the skin",
+            "It is fine if diluted with equal parts water",
+            "It should be used only on children"
+          ],
+          "answer": 1,
+          "why": "Alcohol and ice-water sponging trigger shivering and vasoconstriction, which raise core temperature, and alcohol absorbs transdermally. Dilution does not fix the shivering problem, and children are more vulnerable, not less."
+        }
+      ]
+    },
+    {
+      "id": "ed-equipment-respiratory-l10",
+      "title": "The crash cart check, par levels, and the broken machine",
+      "minutes": 6,
+      "body": "Stocking is not busywork. Every item missing from a room is a delay measured in seconds during an event that is decided in seconds, and the tech is usually the person who owns that.\n\n### The crash cart check\n\nDone at a defined interval — commonly **every shift or daily** for the cart and the defibrillator, and after every use — and it is **documented on a log with your initials and the time**. An unsigned log is treated as a check that did not happen.\n\nWhat the check covers:\n\n1. **The lock.** Carts are sealed with a numbered breakaway plastic lock. Confirm the number on the cart matches the number on the log. **An intact lock with a matching number means the drawers are complete and you do not open them.** A broken or mismatched lock means the cart is opened, fully inventoried, restocked and resealed with a new number that is recorded.\n2. **The defibrillator.** Power it on, run the self-test, confirm it passes, check the battery indicator, verify it is **plugged into wall power**, and confirm pads are present, **in date**, and sealed. Check the paper roll and the internal test discharge per the manufacturer.\n3. **The oxygen cylinder** on the cart — above `500 psi`, regulator attached.\n4. **Suction** on the cart — canister, tubing, Yankauer, working.\n5. **The board** (backboard or compression board) present.\n6. **Expiration dates** on everything exposed on the top and side trays, and the cart's earliest internal expiration date, which is tracked on the log.\n7. **Airway and IO equipment** present in the labeled positions.\n\n> **Key:** If the plastic lock is intact and the number matches the log, the cart is complete. If it is broken or mismatched, the entire cart is inventoried.\n\n### Par levels\n\nA `par level` is the target quantity for a supply in a given location. Restocking is not \"fill it up\" — it is \"bring it back to par,\" which keeps expensive and expiring stock from accumulating.\n\n**Rotate stock first in, first out**: new supplies go **behind** the old so the nearest expiration is used first. Pulling a sterile item, checking its date and finding it expired two months ago is a failure of rotation, not a failure of luck.\n\nWhat you restock in a room after a discharge: linen, gowns, gloves in all three sizes, chux, ECG electrodes, alcohol wipes, chlorhexidine, tourniquets, blood tubes and holders, gauze, tape, saline flushes, IV start kits, urinal and bedpan, emesis bags, suction tubing and a Yankauer, and a fresh sharps container if the current one is at the fill line.\n\nCheck the **sharps container at three-quarters full** — it is replaced then, not when it is jammed, because overfilled containers are a major cause of needlesticks.\n\n### When something is broken\n\nTake it out of service. Do not leave a broken pump, monitor or wheelchair in the hallway where someone grabs it in an emergency.\n\nThe steps are the same everywhere: **tag it, remove it, report it, replace it.** Attach the facility's out-of-service tag with the date, your name and what is wrong; move it to the designated biomedical engineering area; enter the work order; and bring a working replacement to the room so nobody is tempted to retrieve the broken one.\n\nIf a device failure was involved in a patient injury, the rules change. **Do not clean it, do not reset it, do not send it for repair.** Sequester the device and all its disposables, tubing, packaging and settings exactly as they are, note the settings, and tell the charge nurse — this is a Safe Medical Devices Act reporting matter and the device is evidence.\n\nElectrical safety: check cords and plugs for fraying, never use a device with a damaged three-prong plug, avoid daisy-chained power strips, and know where the **red emergency outlets** are — they are the ones on generator backup, and life-support equipment goes in those.\n\n> **On shift:** The two habits that mark an experienced tech are signing the cart log at the same time every shift, and never walking past a broken piece of equipment without tagging it.",
+      "keyPoints": [
+        "Crash cart and defibrillator are checked at a defined interval and after every use, with initials and time on the log.",
+        "An intact lock whose number matches the log means the drawers are complete; a broken or mismatched lock means a full inventory.",
+        "Defibrillator check: self-test passes, battery charged, plugged into wall power, pads present, sealed and in date.",
+        "Par level means restock to target, rotating first in first out with new stock placed behind old.",
+        "A device involved in a patient injury is sequestered unchanged with its disposables — not cleaned, reset or sent for repair."
+      ],
+      "checks": [
+        {
+          "q": "You check a crash cart and the plastic lock is intact with the number matching the log. What do you do?",
+          "choices": [
+            "Open every drawer and inventory the contents",
+            "Cut the lock to verify the medications, then reseal it",
+            "Complete the external checks, sign the log, and leave the drawers sealed",
+            "Replace the lock with a new number regardless"
+          ],
+          "answer": 2,
+          "why": "A matching intact lock is the evidence that the sealed contents are complete. Opening it needlessly consumes the lock, costs time, and puts the cart out of service for a restock it does not need."
+        },
+        {
+          "q": "An infusion pump malfunctions and the patient receives too much medication. What happens to the pump?",
+          "choices": [
+            "Clean it, reset it, and return it to service",
+            "Send it directly to biomedical engineering for repair",
+            "Sequester it unchanged with its tubing and packaging, note the settings, and notify the charge nurse",
+            "Discard it so it cannot be used again"
+          ],
+          "answer": 2,
+          "why": "A device involved in a patient injury is evidence under medical device reporting requirements. Cleaning, resetting, repairing or discarding it destroys the settings and data needed to determine what happened."
+        },
+        {
+          "q": "At what point is a sharps container replaced?",
+          "choices": [
+            "When it is completely full",
+            "At about three-quarters full or the marked fill line",
+            "At the end of every shift regardless of level",
+            "Only when a needle will no longer fit"
+          ],
+          "answer": 1,
+          "why": "Overfilled containers force staff to push sharps in and are a leading cause of needlesticks. The fill line, around three-quarters, is the replacement trigger — not fullness and not a fixed schedule."
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "ed-equipment-respiratory-c001",
+      "front": "What do the green, yellow and white wall outlets deliver?",
+      "back": "Green is medical oxygen at about 50 psi, yellow is medical air at 21% oxygen, white is vacuum for suction.",
+      "lesson": "ed-equipment-respiratory-l01"
+    },
+    {
+      "id": "ed-equipment-respiratory-c002",
+      "front": "What pressure is a full E cylinder, and at what pressure is it swapped?",
+      "back": "Full is about 2000 psi. Below 500 psi it is functionally empty and gets replaced before any transport.",
+      "lesson": "ed-equipment-respiratory-l01"
+    },
+    {
+      "id": "ed-equipment-respiratory-c003",
+      "front": "What is the formula for E cylinder duration?",
+      "back": "Minutes = (gauge psi minus 200 safe residual) x 0.28, divided by the flow rate in L/min.",
+      "lesson": "ed-equipment-respiratory-l01"
+    },
+    {
+      "id": "ed-equipment-respiratory-c004",
+      "front": "An E tank reads 1500 psi at 10 L/min. How long does it last?",
+      "back": "About 36 minutes. (1500 - 200) x 0.28 = 364, divided by 10.",
+      "lesson": "ed-equipment-respiratory-l01"
+    },
+    {
+      "id": "ed-equipment-respiratory-c005",
+      "front": "When is a humidifier bottle added to oxygen?",
+      "back": "For nasal cannula flows above about 4 L/min, and always for high-flow or tracheostomy oxygen. Dry gas cracks mucosa and causes nosebleeds.",
+      "lesson": "ed-equipment-respiratory-l01"
+    },
+    {
+      "id": "ed-equipment-respiratory-c006",
+      "front": "Why are oil, grease and petroleum jelly forbidden around oxygen?",
+      "back": "Hydrocarbons in a high-concentration oxygen environment can ignite. Use water-based lubricant on lips and fittings instead.",
+      "lesson": "ed-equipment-respiratory-l01"
+    },
+    {
+      "id": "ed-equipment-respiratory-c007",
+      "front": "How must an oxygen cylinder be stored?",
+      "back": "Secured upright in a rack, in the stretcher bracket, or lying flat on the floor. A free-standing tank whose valve stem snaps becomes a projectile.",
+      "lesson": "ed-equipment-respiratory-l01"
+    },
+    {
+      "id": "ed-equipment-respiratory-c008",
+      "front": "What is the target SpO2 for most adults, and for known COPD?",
+      "back": "94 to 98% for most adults; 88 to 92% in known COPD, because driving a chronic retainer higher can blunt respiratory drive.",
+      "lesson": "ed-equipment-respiratory-l02"
+    },
+    {
+      "id": "ed-equipment-respiratory-c009",
+      "front": "What flow range and FiO2 does a nasal cannula give?",
+      "back": "1 to 6 L/min, roughly 24 to 44% — about 4% added per liter above room air.",
+      "lesson": "ed-equipment-respiratory-l02"
+    },
+    {
+      "id": "ed-equipment-respiratory-c010",
+      "front": "Why must a simple face mask never run below 6 L/min?",
+      "back": "Below that flow the exhaled carbon dioxide is not flushed out of the mask and the patient rebreathes it.",
+      "lesson": "ed-equipment-respiratory-l02"
+    },
+    {
+      "id": "ed-equipment-respiratory-c011",
+      "front": "What flow and FiO2 does a non-rebreather deliver, and what must you do first?",
+      "back": "10 to 15 L/min for roughly 80 to 95%. Occlude the valve and fully inflate the reservoir bag before putting it on the face.",
+      "lesson": "ed-equipment-respiratory-l02"
+    },
+    {
+      "id": "ed-equipment-respiratory-c012",
+      "front": "Which device gives the most precise FiO2 and why?",
+      "back": "The Venturi mask. A color-coded jet entrains a fixed ratio of room air, so delivered FiO2 does not swing with the patient's breathing pattern.",
+      "lesson": "ed-equipment-respiratory-l02"
+    },
+    {
+      "id": "ed-equipment-respiratory-c013",
+      "front": "The reservoir bag on a non-rebreather collapses fully with each breath. What does that mean?",
+      "back": "The flow is too low for the patient's minute ventilation. Turn it up toward 15 L/min so the bag stays at least two-thirds inflated.",
+      "lesson": "ed-equipment-respiratory-l02"
+    },
+    {
+      "id": "ed-equipment-respiratory-c014",
+      "front": "Why is 'the patient is on oxygen' an inadequate report?",
+      "back": "A saturation is meaningless without the device and the flow. Say '92% on 2 L nasal cannula' so the number can be compared later.",
+      "lesson": "ed-equipment-respiratory-l02"
+    },
+    {
+      "id": "ed-equipment-respiratory-c015",
+      "front": "Where does oxygen tubing cause pressure injuries, and how do you prevent it?",
+      "back": "Behind the ears, at the cheekbones and at the nares. Pad those points and check the skin under tubing on every round.",
+      "lesson": "ed-equipment-respiratory-l02"
+    },
+    {
+      "id": "ed-equipment-respiratory-c016",
+      "front": "What flow and FiO2 range does high-flow nasal cannula deliver?",
+      "back": "20 to 60 L/min of heated, fully humidified gas at an FiO2 dialed from 21 to 100%.",
+      "lesson": "ed-equipment-respiratory-l03"
+    },
+    {
+      "id": "ed-equipment-respiratory-c017",
+      "front": "How does HFNC help beyond raising FiO2?",
+      "back": "The high flow washes carbon dioxide out of the nasopharyngeal dead space and generates a small amount of positive pressure that keeps alveoli open.",
+      "lesson": "ed-equipment-respiratory-l03"
+    },
+    {
+      "id": "ed-equipment-respiratory-c018",
+      "front": "How should HFNC prongs fit?",
+      "back": "They should fill no more than half of each nostril, leaving room around them for the flow to escape.",
+      "lesson": "ed-equipment-respiratory-l03"
+    },
+    {
+      "id": "ed-equipment-respiratory-c019",
+      "front": "What is CPAP and what typical pressure range is used?",
+      "back": "A single continuous pressure, usually 5 to 15 cmH2O, that splints alveoli and airways open. It recruits but does not assist a breath.",
+      "lesson": "ed-equipment-respiratory-l03"
+    },
+    {
+      "id": "ed-equipment-respiratory-c020",
+      "front": "What makes BiPAP different from CPAP, and who needs it?",
+      "back": "Two pressures — IPAP roughly 10 to 20 and EPAP 4 to 8. The gap between them actively moves air, which is why it suits a COPD exacerbation with rising CO2.",
+      "lesson": "ed-equipment-respiratory-l03"
+    },
+    {
+      "id": "ed-equipment-respiratory-c021",
+      "front": "How tight do NIV mask straps go, and what protects the nose?",
+      "back": "About two fingers of slack. Over-tightening deforms the cushion and worsens leaks. A thin foam dressing goes on the nasal bridge from the start.",
+      "lesson": "ed-equipment-respiratory-l03"
+    },
+    {
+      "id": "ed-equipment-respiratory-c022",
+      "front": "A patient on BiPAP becomes drowsy and stops fighting the mask. What should you think?",
+      "back": "Rising carbon dioxide causes sedation. New drowsiness on NIV is deterioration, not comfort, and is reported immediately.",
+      "lesson": "ed-equipment-respiratory-l03"
+    },
+    {
+      "id": "ed-equipment-respiratory-c023",
+      "front": "What must always be at the bedside of a patient on noninvasive ventilation?",
+      "back": "Working suction and a person. The mask has to come off fast if they vomit, so an NIV patient is not left unattended.",
+      "lesson": "ed-equipment-respiratory-l03"
+    },
+    {
+      "id": "ed-equipment-respiratory-c024",
+      "front": "What driving flow does a small-volume nebulizer need, and why that number?",
+      "back": "6 to 8 L/min. Lower flow makes droplets too large to reach the small airways; much higher flow ends the treatment before adequate deposition.",
+      "lesson": "ed-equipment-respiratory-l04"
+    },
+    {
+      "id": "ed-equipment-respiratory-c025",
+      "front": "How long should a nebulizer treatment take, and how do you know it is done?",
+      "back": "About 10 to 15 minutes, ending when the steady mist turns to sputtering. Tap the cup during the treatment to knock droplets back down.",
+      "lesson": "ed-equipment-respiratory-l04"
+    },
+    {
+      "id": "ed-equipment-respiratory-c026",
+      "front": "What is the standard nebulized albuterol dose, and what is a DuoNeb?",
+      "back": "Albuterol 2.5 mg in 3 mL of saline. A DuoNeb combines that with ipratropium 0.5 mg.",
+      "lesson": "ed-equipment-respiratory-l04"
+    },
+    {
+      "id": "ed-equipment-respiratory-c027",
+      "front": "What heart rate change is expected during albuterol, and when do you escalate?",
+      "back": "A rise of roughly 10 to 20 beats per minute with possible tremor is expected. Report a rate over about 130 or any new chest pain.",
+      "lesson": "ed-equipment-respiratory-l04"
+    },
+    {
+      "id": "ed-equipment-respiratory-c028",
+      "front": "Why should a patient rinse their mouth after an inhaled steroid?",
+      "back": "Drug deposited in the mouth causes oral candidiasis — thrush. Rinsing and spitting removes it.",
+      "lesson": "ed-equipment-respiratory-l04"
+    },
+    {
+      "id": "ed-equipment-respiratory-c029",
+      "front": "What is the correct spacer technique with a metered-dose inhaler?",
+      "back": "Shake 5 seconds, exhale fully, seal the lips, fire one puff, inhale slowly and deeply, hold 10 seconds, then wait 30 to 60 seconds before the next puff.",
+      "lesson": "ed-equipment-respiratory-l04"
+    },
+    {
+      "id": "ed-equipment-respiratory-c030",
+      "front": "Why is only one puff fired into a spacer at a time?",
+      "back": "Two puffs at once make the particles collide and drop out of suspension, so much less drug reaches the lungs.",
+      "lesson": "ed-equipment-respiratory-l04"
+    },
+    {
+      "id": "ed-equipment-respiratory-c031",
+      "front": "How is a spacer used for a child under about 4?",
+      "back": "With a mask attached, held sealed on the face for about 5 to 6 normal breaths per puff, because a small child cannot perform a breath-hold.",
+      "lesson": "ed-equipment-respiratory-l04"
+    },
+    {
+      "id": "ed-equipment-respiratory-c032",
+      "front": "What are the wall suction pressures for adult, child and infant?",
+      "back": "Adult 100 to 150 mmHg, child 80 to 120 mmHg, infant or neonate 60 to 100 mmHg.",
+      "lesson": "ed-equipment-respiratory-l05"
+    },
+    {
+      "id": "ed-equipment-respiratory-c033",
+      "front": "How long may a single suction pass last?",
+      "back": "10 to 15 seconds in an adult and about 5 seconds in an infant, with reoxygenation between passes. Suctioning is apnea plus airway stimulation.",
+      "lesson": "ed-equipment-respiratory-l05"
+    },
+    {
+      "id": "ed-equipment-respiratory-c034",
+      "front": "When is suction applied during a pass?",
+      "back": "Only on withdrawal. Insert with the suction off or the port unoccluded, then suction while withdrawing in a sweeping motion.",
+      "lesson": "ed-equipment-respiratory-l05"
+    },
+    {
+      "id": "ed-equipment-respiratory-c035",
+      "front": "How is a Yankauer measured and what is it for?",
+      "back": "From the corner of the mouth to the earlobe. It is a rigid tip for the mouth and pharynx only — vomit, blood and thick secretions.",
+      "lesson": "ed-equipment-respiratory-l05"
+    },
+    {
+      "id": "ed-equipment-respiratory-c036",
+      "front": "The heart rate drops during suctioning. What is happening and what do you do?",
+      "back": "A vagal response to airway stimulation, worsened by the hypoxia of the pass. Stop, withdraw, and oxygenate.",
+      "lesson": "ed-equipment-respiratory-l05"
+    },
+    {
+      "id": "ed-equipment-respiratory-c037",
+      "front": "Why is an infant suctioned mouth before nose?",
+      "back": "Nasal suctioning triggers a gasp. If the mouth still holds secretions, that gasp draws them into the airway.",
+      "lesson": "ed-equipment-respiratory-l05"
+    },
+    {
+      "id": "ed-equipment-respiratory-c038",
+      "front": "What size catheter is used for tracheostomy suctioning, and what is no longer done?",
+      "back": "No larger than half the inner diameter of the tube. Instilling saline down the tube is no longer recommended — it pushes bacteria toward the lungs.",
+      "lesson": "ed-equipment-respiratory-l05"
+    },
+    {
+      "id": "ed-equipment-respiratory-c039",
+      "front": "What must be at the bedside of every tracheostomy patient?",
+      "back": "A spare tube of the same size and one a size smaller, an obturator, and working suction. Oxygen for an obstructed trach goes to the stoma, not the mouth.",
+      "lesson": "ed-equipment-respiratory-l05"
+    },
+    {
+      "id": "ed-equipment-respiratory-c040",
+      "front": "When is a suction canister changed?",
+      "back": "At about two-thirds to three-quarters full. Letting fluid reach the vacuum port ruins the regulator, and the volume is recorded as output.",
+      "lesson": "ed-equipment-respiratory-l05"
+    },
+    {
+      "id": "ed-equipment-respiratory-c041",
+      "front": "What volumes do adult, pediatric and infant bag-valve-masks hold?",
+      "back": "Adult about 1000 to 1600 mL, pediatric about 450 to 500 mL, infant about 250 mL. All need a reservoir at 15 L/min to approach 100%.",
+      "lesson": "ed-equipment-respiratory-l06"
+    },
+    {
+      "id": "ed-equipment-respiratory-c042",
+      "front": "What is the E-C clamp, and what is the common error?",
+      "back": "Thumb and index finger form a C sealing the mask; the other three fingers form an E lifting the jaw. The error is pressing on soft tissue under the chin, which pushes the tongue back.",
+      "lesson": "ed-equipment-respiratory-l06"
+    },
+    {
+      "id": "ed-equipment-respiratory-c043",
+      "front": "How fast do you squeeze a bag-valve-mask, and why does it matter?",
+      "back": "About 1 second per breath, just enough for chest rise. Fast or forceful bagging inflates the stomach, causing vomiting and splinting the diaphragm.",
+      "lesson": "ed-equipment-respiratory-l06"
+    },
+    {
+      "id": "ed-equipment-respiratory-c044",
+      "front": "How are an OPA and an NPA sized?",
+      "back": "OPA: corner of the mouth to the angle of the jaw or the earlobe. NPA: nostril to earlobe, lubricated, bevel toward the septum.",
+      "lesson": "ed-equipment-respiratory-l06"
+    },
+    {
+      "id": "ed-equipment-respiratory-c045",
+      "front": "Which airway adjunct requires an absent gag reflex, and which is avoided in basilar skull fracture?",
+      "back": "The oropharyngeal airway requires no gag reflex. The nasopharyngeal airway is avoided in suspected basilar skull fracture and midface trauma.",
+      "lesson": "ed-equipment-respiratory-l06"
+    },
+    {
+      "id": "ed-equipment-respiratory-c046",
+      "front": "What does SOAP-ME stand for?",
+      "back": "Suction, Oxygen, Airway equipment, Positioning and Pharmacology, Monitoring, and Equipment for rescue — the intubation setup checklist.",
+      "lesson": "ed-equipment-respiratory-l06"
+    },
+    {
+      "id": "ed-equipment-respiratory-c047",
+      "front": "What two equipment checks on an intubation tray are entirely on the person who built it?",
+      "back": "A bright white laryngoscope light and a cuff tested with 10 mL of air then fully deflated with the syringe left attached.",
+      "lesson": "ed-equipment-respiratory-l06"
+    },
+    {
+      "id": "ed-equipment-respiratory-c048",
+      "front": "What tube sizes and depths are typical for adults?",
+      "back": "7.0 to 7.5 for an adult female and 7.5 to 8.0 for an adult male, with depth at the teeth around 21 cm female and 23 cm male. Always prepare one size smaller as backup.",
+      "lesson": "ed-equipment-respiratory-l06"
+    },
+    {
+      "id": "ed-equipment-respiratory-c049",
+      "front": "How is a patient positioned for intubation?",
+      "back": "Ear canal level with the sternal notch — a ramp of towels or blankets in an obese patient, a pad under the shoulders in a small child.",
+      "lesson": "ed-equipment-respiratory-l06"
+    },
+    {
+      "id": "ed-equipment-respiratory-c050",
+      "front": "What confirms endotracheal tube placement?",
+      "back": "Waveform capnography — a sustained end-tidal CO2 waveform. It is connected as part of the setup, not found afterward.",
+      "lesson": "ed-equipment-respiratory-l06"
+    },
+    {
+      "id": "ed-equipment-respiratory-c051",
+      "front": "What is the three-lead and five-lead electrode placement?",
+      "back": "White on the right shoulder, smoke over fire (black left shoulder, red left lower ribs). Five-lead adds green on the right lower ribs and brown at V1, fourth intercostal space right sternal border.",
+      "lesson": "ed-equipment-respiratory-l07"
+    },
+    {
+      "id": "ed-equipment-respiratory-c052",
+      "front": "Why do lead wires clip to the gown rather than hang free?",
+      "back": "So a patient turning pulls the gown, not the electrode. Loose wires are the most common cause of a false lead-off alarm.",
+      "lesson": "ed-equipment-respiratory-l07"
+    },
+    {
+      "id": "ed-equipment-respiratory-c053",
+      "front": "Name four things that make a pulse oximeter unreliable.",
+      "back": "Nail polish or gel nails, cold or poorly perfused fingers, motion or shivering, and a blood pressure cuff cycling on the same arm.",
+      "lesson": "ed-equipment-respiratory-l07"
+    },
+    {
+      "id": "ed-equipment-respiratory-c054",
+      "front": "Why does carbon monoxide poisoning give a falsely normal SpO2?",
+      "back": "Carboxyhemoglobin absorbs light almost identically to oxyhemoglobin, so the oximeter counts it as saturated. A fire victim reading 99% may be severely poisoned.",
+      "lesson": "ed-equipment-respiratory-l07"
+    },
+    {
+      "id": "ed-equipment-respiratory-c055",
+      "front": "How often is a pulse oximeter probe site rotated, and why?",
+      "back": "At least every 4 hours. Continuous probe pressure on one digit causes a device-related pressure injury.",
+      "lesson": "ed-equipment-respiratory-l07"
+    },
+    {
+      "id": "ed-equipment-respiratory-c056",
+      "front": "How does cuff size distort a blood pressure reading?",
+      "back": "Too small reads falsely high; too large reads falsely low. The bladder should cover about 80% of the arm's circumference and 40% of its width.",
+      "lesson": "ed-equipment-respiratory-l07"
+    },
+    {
+      "id": "ed-equipment-respiratory-c057",
+      "front": "Which arms are avoided for a blood pressure cuff?",
+      "back": "An arm with a dialysis fistula, a mastectomy on that side, an IV running, or an injury. Support the arm at heart level — hanging low adds roughly 10 mmHg.",
+      "lesson": "ed-equipment-respiratory-l07"
+    },
+    {
+      "id": "ed-equipment-respiratory-c058",
+      "front": "What does a tech do and not do with an infusion pump?",
+      "back": "Never program it, change a rate, or clear an alarm that stops an infusion. Do recognize and report occlusion, air-in-line, empty bags, kinked lines and bad sites.",
+      "lesson": "ed-equipment-respiratory-l07"
+    },
+    {
+      "id": "ed-equipment-respiratory-c059",
+      "front": "How do infiltration and phlebitis look different at an IV site?",
+      "back": "Infiltration is swollen, cool, blanched and tight. Phlebitis is red, warm and painful with a cord or streak along the vein. Both go to the nurse immediately.",
+      "lesson": "ed-equipment-respiratory-l07"
+    },
+    {
+      "id": "ed-equipment-respiratory-c060",
+      "front": "Which direction do you take a wheelchair into an elevator and down a ramp?",
+      "back": "Back into an elevator so the patient faces the doors. Go down ramps and curbs backward so gravity works against you, not the patient.",
+      "lesson": "ed-equipment-respiratory-l08"
+    },
+    {
+      "id": "ed-equipment-respiratory-c061",
+      "front": "When does a wheelchair belt become a restraint?",
+      "back": "When the patient cannot remove it themselves. Then it restricts freedom of movement and requires an order and monitoring, whatever the intent.",
+      "lesson": "ed-equipment-respiratory-l08"
+    },
+    {
+      "id": "ed-equipment-respiratory-c062",
+      "front": "What is the pre-transport checklist for a monitored patient?",
+      "back": "Patient identified, handoff ready, oxygen above 500 psi, monitor battery charged, suction if the airway is at risk, lines untangled and pumps powered, rails up, brakes released last.",
+      "lesson": "ed-equipment-respiratory-l08"
+    },
+    {
+      "id": "ed-equipment-respiratory-c063",
+      "front": "From which end do you push a stretcher, and why?",
+      "back": "The head end, so the patient's feet lead and your eyes stay on their face. Head end uphill on inclines; slow at every corner and doorway.",
+      "lesson": "ed-equipment-respiratory-l08"
+    },
+    {
+      "id": "ed-equipment-respiratory-c064",
+      "front": "When do you use a sit-to-stand lift versus a full-body lift?",
+      "back": "Sit-to-stand for a patient who can bear some weight and follow directions. Full-body mechanical lift for no weight-bearing — two staff minimum, sling inspected, never left suspended.",
+      "lesson": "ed-equipment-respiratory-l08"
+    },
+    {
+      "id": "ed-equipment-respiratory-c065",
+      "front": "What weight ratings should you know before moving a bariatric patient?",
+      "back": "Every surface the patient touches. Standard stretchers are often about 500 lb and standard wheelchairs 250 to 300 lb; CT tables, x-ray tables and toilets each have their own limit.",
+      "lesson": "ed-equipment-respiratory-l08"
+    },
+    {
+      "id": "ed-equipment-respiratory-c066",
+      "front": "What is the trauma triad of death, and which part does a tech control?",
+      "back": "Hypothermia, acidosis and coagulopathy. Warming is the part a tech directly controls — cold blood does not clot.",
+      "lesson": "ed-equipment-respiratory-l09"
+    },
+    {
+      "id": "ed-equipment-respiratory-c067",
+      "front": "What is the never-event associated with forced-air warming?",
+      "back": "Free-hosing — putting the hose under the sheets without the disposable blanket attached. Concentrated hot air causes deep burns.",
+      "lesson": "ed-equipment-respiratory-l09"
+    },
+    {
+      "id": "ed-equipment-respiratory-c068",
+      "front": "How is heat stroke cooled, and which temperature is trusted?",
+      "back": "Cold water immersion where available, or ice to the groin, axillae and neck plus mist and fan. Use a rectal or esophageal probe; oral and tympanic are unreliable at extremes.",
+      "lesson": "ed-equipment-respiratory-l09"
+    },
+    {
+      "id": "ed-equipment-respiratory-c069",
+      "front": "Why are alcohol baths and ice-water sponging wrong for a fever?",
+      "back": "Both cause shivering and vasoconstriction, which drive the core temperature up, and alcohol is absorbed through the skin.",
+      "lesson": "ed-equipment-respiratory-l09"
+    },
+    {
+      "id": "ed-equipment-respiratory-c070",
+      "front": "What is the bladder scanner technique?",
+      "back": "Patient supine, gel about 1 inch above the pubic bone in the midline, probe aimed down toward the coccyx, scan two or three times and report the largest consistent volume.",
+      "lesson": "ed-equipment-respiratory-l09"
+    },
+    {
+      "id": "ed-equipment-respiratory-c071",
+      "front": "Which bladder scanner setting is used after a hysterectomy?",
+      "back": "The male setting. The female algorithm subtracts a uterus she no longer has, producing a falsely low volume.",
+      "lesson": "ed-equipment-respiratory-l09"
+    },
+    {
+      "id": "ed-equipment-respiratory-c072",
+      "front": "What bladder volumes matter?",
+      "back": "Normal capacity about 400 to 600 mL, urge to void at roughly 150 to 300 mL, and a post-void residual over 150 mL is abnormal. Catheterization thresholds vary by protocol.",
+      "lesson": "ed-equipment-respiratory-l09"
+    },
+    {
+      "id": "ed-equipment-respiratory-c073",
+      "front": "What does an intact crash cart lock with a matching number tell you?",
+      "back": "The sealed drawers are complete and are not opened. A broken or mismatched lock means the whole cart is inventoried, restocked and resealed with a recorded new number.",
+      "lesson": "ed-equipment-respiratory-l10"
+    },
+    {
+      "id": "ed-equipment-respiratory-c074",
+      "front": "What is checked on the defibrillator during a cart check?",
+      "back": "Self-test passes, battery charged, unit plugged into wall power, pads present, sealed and in date, paper roll loaded, and the manufacturer's test discharge performed.",
+      "lesson": "ed-equipment-respiratory-l10"
+    },
+    {
+      "id": "ed-equipment-respiratory-c075",
+      "front": "What does 'par level' mean and how is stock rotated?",
+      "back": "Par is the target quantity for a supply in a location — you restock to par, not to full. New stock goes behind old so the nearest expiration is used first.",
+      "lesson": "ed-equipment-respiratory-l10"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "ed-equipment-respiratory-q001",
+      "q": "An E cylinder reads 900 psi. The patient needs 4 L/min for a trip to MRI and back, estimated at 45 minutes. What do you do?",
+      "choices": [
+        "Proceed; the tank will last about 49 minutes",
+        "Proceed; the tank will last about 63 minutes",
+        "Swap for a full tank — about 49 minutes leaves no margin for delay",
+        "Reduce the flow to 2 L/min to extend the tank"
+      ],
+      "answer": 2,
+      "why": "(900 - 200) x 0.28 = 196; divided by 4 is about 49 minutes for a 45-minute trip. That is not a margin, it is a coin flip in a department where imaging runs late. Reducing a prescribed flow is not a tech decision.",
+      "lesson": "ed-equipment-respiratory-l01",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-equipment-respiratory-q002",
+      "q": "A tech connects a hypoxic patient's non-rebreather tubing to the yellow wall outlet. What has been delivered?",
+      "choices": [
+        "21% oxygen, because yellow is medical air",
+        "100% oxygen at high flow",
+        "Nothing, because yellow is a vacuum port",
+        "60% oxygen, because yellow is a blended outlet"
+      ],
+      "answer": 0,
+      "why": "Yellow is medical air at room-air oxygen concentration. Green is oxygen and white is vacuum. The mask will inflate and look correct while providing no supplemental oxygen at all.",
+      "lesson": "ed-equipment-respiratory-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-equipment-respiratory-q003",
+      "q": "Below what pressure is an E cylinder considered unusable for transport?",
+      "choices": [
+        "1000 psi",
+        "750 psi",
+        "500 psi",
+        "200 psi"
+      ],
+      "answer": 2,
+      "why": "Five hundred psi is the standard swap threshold; 200 psi is the safe residual subtracted in the duration formula, not a usable working pressure. Higher thresholds waste gas unnecessarily.",
+      "lesson": "ed-equipment-respiratory-l01",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-equipment-respiratory-q004",
+      "q": "A COPD patient's SpO2 is 96% on 4 L nasal cannula and he is becoming drowsy. What is the concern?",
+      "choices": [
+        "The saturation is too low and oxygen should be increased",
+        "Drowsiness is unrelated to oxygen therapy",
+        "The cannula should be changed to a non-rebreather",
+        "The saturation is above the 88 to 92% target and rising CO2 may be causing sedation"
+      ],
+      "answer": 3,
+      "why": "Known COPD targets 88 to 92%. A higher saturation in a chronic retainer can blunt drive and raise CO2, which causes sedation. Increasing oxygen or escalating to a non-rebreather would worsen it, and the timing makes coincidence unlikely.",
+      "lesson": "ed-equipment-respiratory-l02",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-equipment-respiratory-q005",
+      "q": "A simple face mask is set at 4 L/min. What is the problem?",
+      "choices": [
+        "The flow is too high and will dry the airway",
+        "The flow is below 6 L/min so exhaled CO2 is not flushed and is rebreathed",
+        "A humidifier is required at that flow",
+        "The mask should have a reservoir bag at that flow"
+      ],
+      "answer": 1,
+      "why": "A simple mask is a reservoir of dead space. Below 6 L/min the flow cannot wash exhaled gas out between breaths. Humidification and reservoir bags are different device features entirely.",
+      "lesson": "ed-equipment-respiratory-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-equipment-respiratory-q006",
+      "q": "Which report about oxygen is complete?",
+      "choices": [
+        "\"He's satting fine.\"",
+        "\"He's on oxygen and looks comfortable.\"",
+        "\"SpO2 92% on 2 L nasal cannula, unchanged from an hour ago.\"",
+        "\"Saturation is 92%.\""
+      ],
+      "answer": 2,
+      "why": "A saturation is only interpretable alongside the device, the flow and a trend. The other three omit the delivery data, which makes comparison and escalation impossible.",
+      "lesson": "ed-equipment-respiratory-l02",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-equipment-respiratory-q007",
+      "q": "A patient in acute pulmonary edema is placed on CPAP at 10 cmH2O. What is the mechanism of benefit?",
+      "choices": [
+        "Continuous pressure splints alveoli open and drives fluid out of them",
+        "It delivers 100% oxygen directly to the alveoli",
+        "The pressure difference between inspiration and expiration ventilates the patient",
+        "It sedates the patient so work of breathing falls"
+      ],
+      "answer": 0,
+      "why": "CPAP holds a single pressure that recruits flooded alveoli and reduces preload. A pressure difference describes BiPAP, CPAP does not determine FiO2 by itself, and it is not a sedative.",
+      "lesson": "ed-equipment-respiratory-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-equipment-respiratory-q008",
+      "q": "Forty minutes into BiPAP for a COPD exacerbation, a patient who was agitated becomes quiet and hard to rouse. What is the correct interpretation?",
+      "choices": [
+        "The therapy is working and he is resting",
+        "He is tolerating the mask better now",
+        "This may be rising CO2 and possible impending respiratory failure — report immediately",
+        "The pressures are too low and he is getting insufficient support"
+      ],
+      "answer": 2,
+      "why": "Hypercapnia causes progressive somnolence. New unresponsiveness on NIV is a deterioration signal that often precedes intubation. Comfort would look like normal wakeful ease, not a falling level of consciousness.",
+      "lesson": "ed-equipment-respiratory-l03",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-equipment-respiratory-q009",
+      "q": "An NIV mask is leaking around the cheeks and the patient is distressed. What do you do first?",
+      "choices": [
+        "Tighten the straps until the leak stops",
+        "Remove the mask and place a non-rebreather",
+        "Increase the flow rate on the machine",
+        "Reassess the mask size and reseat the cushion, keeping straps about two fingers loose"
+      ],
+      "answer": 3,
+      "why": "Over-tightening deforms the cushion, usually worsening the leak and causing a nasal bridge ulcer. Sizing and seating solve leaks. Abandoning NIV undertreats, and machine settings are respiratory therapy's call.",
+      "lesson": "ed-equipment-respiratory-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-equipment-respiratory-q010",
+      "q": "A nebulizer has been running for 20 minutes and is still producing heavy mist at 3 L/min. What is wrong?",
+      "choices": [
+        "Nothing; long treatments improve deposition",
+        "The flow is too low, producing droplets too large to reach the small airways",
+        "The cup is overfilled with saline",
+        "The patient is not inhaling deeply enough"
+      ],
+      "answer": 1,
+      "why": "Below 6 L/min the jet cannot shear the liquid into respirable particles, so the mist deposits in the mouth. The treatment also runs long because nebulization is inefficient. Technique and fill volume do not cause this pattern.",
+      "lesson": "ed-equipment-respiratory-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-equipment-respiratory-q011",
+      "q": "During an albuterol nebulizer a patient's heart rate rises from 92 to 142 and she reports chest tightness. What is your action?",
+      "choices": [
+        "Stop and notify the nurse now",
+        "Continue and document the heart rate at the end",
+        "Increase the flow to finish the treatment faster",
+        "Reassure her that this is a normal side effect and continue"
+      ],
+      "answer": 0,
+      "why": "A rate over about 130 with new chest symptoms exceeds the expected beta-agonist effect and gets escalated. Finishing faster increases exposure, and calling it normal ignores the threshold that defines when it is not.",
+      "lesson": "ed-equipment-respiratory-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-equipment-respiratory-q012",
+      "q": "A 3-year-old needs albuterol by metered-dose inhaler. What setup is appropriate?",
+      "choices": [
+        "Inhaler alone, with instructions to hold his breath for 10 seconds",
+        "Spacer with a mouthpiece and a 10-second breath hold",
+        "Spacer with a mask held on the face for about 5 to 6 breaths per puff",
+        "Two puffs fired into the spacer at once to save time"
+      ],
+      "answer": 2,
+      "why": "A 3-year-old cannot reliably coordinate or breath-hold, so a mask spacer with tidal breathing is used. Firing two puffs at once makes particles collide and fall out of suspension.",
+      "lesson": "ed-equipment-respiratory-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-equipment-respiratory-q013",
+      "q": "Which statement about who runs a nebulizer is accurate?",
+      "choices": [
+        "Any tech may administer nebulized medication anywhere in the United States",
+        "No tech may ever set up nebulizer equipment",
+        "Techs set up the equipment and monitor; whether they may administer varies by facility policy and state",
+        "Only respiratory therapists may touch nebulizer tubing"
+      ],
+      "answer": 2,
+      "why": "Setup and monitoring are universal tech functions. Medication administration authority is defined by state scope and facility policy, so the correct answer is to know your department's rule rather than assume a national standard.",
+      "lesson": "ed-equipment-respiratory-l04",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-equipment-respiratory-q014",
+      "q": "You are suctioning an adult's oropharynx and 25 seconds have passed. The saturation has fallen from 96% to 88%. What went wrong?",
+      "choices": [
+        "The suction pressure was set too low",
+        "A Yankauer should never be used in an adult",
+        "The patient should have been supine",
+        "The pass exceeded the 10 to 15 second limit, producing apnea and hypoxia"
+      ],
+      "answer": 3,
+      "why": "Suctioning removes gas as well as secretions and prevents breathing during the pass. The 10 to 15 second limit exists for exactly this. Yankauers are the correct adult oropharyngeal device and positioning does not cause this drop.",
+      "lesson": "ed-equipment-respiratory-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-equipment-respiratory-q015",
+      "q": "A tracheostomy patient becomes obstructed and desaturates. Where is oxygen applied?",
+      "choices": [
+        "Over the mouth and nose with a non-rebreather",
+        "At the tracheostomy stoma",
+        "By nasal cannula at 6 L/min",
+        "Nowhere until the tube is replaced"
+      ],
+      "answer": 1,
+      "why": "A tracheostomy bypasses the upper airway, so a mask over the face delivers oxygen to a route that is not connected to the lungs. Oxygen goes to the stoma, and delaying oxygen entirely is never correct.",
+      "lesson": "ed-equipment-respiratory-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-equipment-respiratory-q016",
+      "q": "What is the correct wall suction setting for a 4-year-old?",
+      "choices": [
+        "80 to 120 mmHg",
+        "60 to 100 mmHg",
+        "100 to 150 mmHg",
+        "150 to 200 mmHg"
+      ],
+      "answer": 0,
+      "why": "Children are suctioned at 80 to 120 mmHg. Sixty to 100 is the infant and neonate range, 100 to 150 is adult, and anything above 150 tears pediatric mucosa without clearing secretions better.",
+      "lesson": "ed-equipment-respiratory-l05",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-equipment-respiratory-q017",
+      "q": "During trach suctioning a colleague instills 5 mL of saline down the tube to loosen secretions. What is the current guidance?",
+      "choices": [
+        "Correct technique for thick secretions",
+        "Acceptable if the patient is preoxygenated",
+        "Not recommended — it pushes bacteria toward the lungs without reliably thinning secretions",
+        "Required before every suction pass"
+      ],
+      "answer": 2,
+      "why": "Routine saline instillation has been abandoned because it dislodges biofilm into the lower airway and worsens desaturation without improving secretion clearance. Preoxygenation does not change that.",
+      "lesson": "ed-equipment-respiratory-l05",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-equipment-respiratory-q018",
+      "q": "You are bagging a patient and the chest rises but the abdomen is visibly distending. What is happening?",
+      "choices": [
+        "Normal with a bag-valve-mask",
+        "The reservoir bag is not attached",
+        "The oxygen flow is set too low",
+        "Ventilations are too fast or too forceful and gas is entering the stomach"
+      ],
+      "answer": 3,
+      "why": "Gastric insufflation results from pressure exceeding esophageal opening pressure, caused by rapid or forceful squeezing. Slow to about 1 second per breath with only enough volume for chest rise. Reservoir and flow affect FiO2, not insufflation.",
+      "lesson": "ed-equipment-respiratory-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-equipment-respiratory-q019",
+      "q": "A drowsy patient gags when you attempt to place an oral airway. What is the correct device?",
+      "choices": [
+        "Insert the OPA anyway to protect the airway",
+        "A nasopharyngeal airway, sized nostril to earlobe and lubricated",
+        "A larger OPA, which will pass more easily",
+        "No adjunct; reposition the head only"
+      ],
+      "answer": 1,
+      "why": "An intact gag reflex contraindicates an OPA because it induces vomiting. An NPA is tolerated with an intact gag. A larger OPA worsens the problem, and repositioning alone may not maintain patency.",
+      "lesson": "ed-equipment-respiratory-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-equipment-respiratory-q020",
+      "q": "Which item is NOT part of building an intubation setup?",
+      "choices": [
+        "A tube one size smaller than requested",
+        "A supraglottic rescue airway",
+        "Programming the sedation infusion pump",
+        "Waveform capnography connected and ready"
+      ],
+      "answer": 2,
+      "why": "Techs do not program pumps; that is a nursing function. The backup tube, a rescue airway and ready capnography are all standard components of the tray a tech builds.",
+      "lesson": "ed-equipment-respiratory-l06",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-equipment-respiratory-q021",
+      "q": "You are handed the endotracheal tube to hold immediately after placement. What is your responsibility?",
+      "choices": [
+        "Hold it exactly at the depth given and do not let it move until it is secured",
+        "Secure it with tape yourself as fast as possible",
+        "Release it once capnography confirms placement",
+        "Advance it 2 cm for a safety margin"
+      ],
+      "answer": 0,
+      "why": "Any movement can displace the tube into the right mainstem bronchus or out of the trachea entirely. You hold the depth and report the centimeter marking. Advancing it is never your decision.",
+      "lesson": "ed-equipment-respiratory-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-equipment-respiratory-q022",
+      "q": "A firefighter rescued from a structure fire has an SpO2 of 100% on room air and a headache. What should you understand about the reading?",
+      "choices": [
+        "It rules out significant hypoxia and carbon monoxide exposure",
+        "It confirms the probe is on the wrong finger",
+        "It means the patient is hyperventilating",
+        "It may be falsely normal because carboxyhemoglobin absorbs light like oxyhemoglobin"
+      ],
+      "answer": 3,
+      "why": "A standard pulse oximeter cannot distinguish carbon monoxide-bound from oxygen-bound hemoglobin. A high reading in a fire victim with a headache is a red flag requiring co-oximetry, not reassurance.",
+      "lesson": "ed-equipment-respiratory-l07",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-equipment-respiratory-q023",
+      "q": "A large-armed patient's automated blood pressure reads 190/110 on a regular adult cuff. What is the appropriate next step?",
+      "choices": [
+        "Report a hypertensive emergency immediately",
+        "Repeat with a correctly sized large cuff before anyone acts on the number",
+        "Repeat on the same arm three times and average",
+        "Move the cuff to the forearm and use that reading"
+      ],
+      "answer": 1,
+      "why": "An undersized cuff reads falsely high. Averaging three wrong readings does not fix the error, a forearm reading is not equivalent to an upper arm reading, and treating an artifact as an emergency leads to unnecessary intervention.",
+      "lesson": "ed-equipment-respiratory-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-equipment-respiratory-q024",
+      "q": "A monitor shows a wandering, noisy baseline on lead II. What is the most likely cause?",
+      "choices": [
+        "A dried-out or poorly adhered electrode",
+        "The patient is in ventricular fibrillation",
+        "The monitor needs to be replaced",
+        "The alarm limits are set incorrectly"
+      ],
+      "answer": 0,
+      "why": "Dry gel, poor skin prep, hair and loose wires produce baseline wander. VF has a coarse chaotic pattern with a clinically arrested patient. Alarm limits do not affect the tracing quality and replacing the monitor skips the obvious fix.",
+      "lesson": "ed-equipment-respiratory-l07",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-equipment-respiratory-q025",
+      "q": "An IV site is red, warm, painful, and a firm cord is palpable along the vein. What is this?",
+      "choices": [
+        "Infiltration",
+        "Extravasation of a vesicant",
+        "Normal after 12 hours of infusion",
+        "Phlebitis"
+      ],
+      "answer": 3,
+      "why": "Redness, warmth, pain and a palpable cord describe vein inflammation. Infiltration is cool, swollen and blanched. Extravasation involves a tissue-damaging drug leaking out and causes blistering or necrosis. None of this is normal.",
+      "lesson": "ed-equipment-respiratory-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-equipment-respiratory-q026",
+      "q": "An infusion pump alarms 'air in line' during transport. What does a tech do?",
+      "choices": [
+        "Clear the alarm and continue",
+        "Prime the line to remove the air",
+        "Stop and notify the nurse without clearing the alarm",
+        "Disconnect the line from the IV catheter"
+      ],
+      "answer": 2,
+      "why": "Techs do not clear infusion alarms, prime lines or disconnect infusions. All three are medication administration functions. Reporting preserves the alarm state the nurse needs to assess.",
+      "lesson": "ed-equipment-respiratory-l07",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-equipment-respiratory-q027",
+      "q": "How should a pulse oximeter probe and a blood pressure cuff be positioned relative to each other?",
+      "choices": [
+        "On the same arm, so the other arm is free for IV access",
+        "On opposite limbs, because a cycling cuff cuts off the pulsatile signal",
+        "Either way; the cuff does not affect the probe",
+        "Both on the same arm but with the probe on the thumb"
+      ],
+      "answer": 1,
+      "why": "Cuff inflation occludes arterial flow distal to it, so the oximeter loses its signal or reads falsely low with every cycle. Digit choice does not fix this. Opposite limbs is the rule.",
+      "lesson": "ed-equipment-respiratory-l07",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-equipment-respiratory-q028",
+      "q": "You are taking a patient down a ramp in a wheelchair. Which approach is correct?",
+      "choices": [
+        "Backward, with you descending ahead of the chair",
+        "Forward, moving slowly",
+        "Forward with the footrests removed",
+        "Sideways, angled across the slope"
+      ],
+      "answer": 0,
+      "why": "Descending backward keeps the patient from pitching forward and puts your body between the chair and the downhill. Forward travel relies on the patient's balance, and crossing a slope invites a lateral tip.",
+      "lesson": "ed-equipment-respiratory-l08",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-equipment-respiratory-q029",
+      "q": "A 480-pound patient needs to go to CT. What is the first thing to establish?",
+      "choices": [
+        "Whether enough staff are available to lift manually",
+        "Whether the patient can walk there",
+        "Which technologist is on duty",
+        "The weight rating of the stretcher, the CT table and the route"
+      ],
+      "answer": 3,
+      "why": "Equipment ratings determine whether the move is possible at all, and exceeding one causes catastrophic failure. Manual lifting at this weight is unsafe regardless of staffing, and ambulation does not solve the table limit.",
+      "lesson": "ed-equipment-respiratory-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-equipment-respiratory-q030",
+      "q": "Which practice with a full-body mechanical lift is correct?",
+      "choices": [
+        "One trained staff member may operate it alone",
+        "The patient may be left suspended briefly while the chair is positioned",
+        "Two staff minimum, sling inspected for frayed stitching, patient never left suspended",
+        "The sling rating does not matter if the lift is rated appropriately"
+      ],
+      "answer": 2,
+      "why": "Two staff, an inspected sling of the correct rating, and continuous attendance are the standard. A sling is a separate rated component and is the part that actually fails. Suspending a patient unattended is how they are dropped.",
+      "lesson": "ed-equipment-respiratory-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-equipment-respiratory-q031",
+      "q": "A trauma patient arrives cold and wet after an extrication. Why does warming matter beyond comfort?",
+      "choices": [
+        "Warm patients report less pain",
+        "Hypothermia impairs clotting and is part of the trauma triad of death",
+        "Warming raises blood pressure directly",
+        "Cold skin makes IV access impossible"
+      ],
+      "answer": 1,
+      "why": "Clotting factor function falls sharply with temperature, so a cold bleeding patient keeps bleeding. Hypothermia, acidosis and coagulopathy reinforce each other. Comfort and access are real but secondary considerations.",
+      "lesson": "ed-equipment-respiratory-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-equipment-respiratory-q032",
+      "q": "A tech tucks a forced-air warmer hose under a blanket without attaching the disposable warming blanket. What is the outcome risk?",
+      "choices": [
+        "Deep thermal burns to the skin",
+        "Inadequate warming with no direct harm",
+        "Contamination of the warming unit",
+        "Excessive humidification of the bedding"
+      ],
+      "answer": 0,
+      "why": "Free-hosing concentrates high-temperature air on a small skin area and causes full-thickness burns. It is a recognized never-event, not merely an ineffective technique.",
+      "lesson": "ed-equipment-respiratory-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-equipment-respiratory-q033",
+      "q": "During targeted temperature management after cardiac arrest, the patient begins shivering. Why does this matter?",
+      "choices": [
+        "Shivering indicates the patient is waking up and cooling should stop",
+        "Shivering is expected and requires no action",
+        "Shivering means the surface pads are too tight",
+        "Shivering generates heat and defeats cooling, so it is reported immediately"
+      ],
+      "answer": 3,
+      "why": "Muscle activity produces heat and raises oxygen consumption, working directly against the target temperature. It requires treatment, which is why it is escalated. It is not a reliable sign of neurologic recovery.",
+      "lesson": "ed-equipment-respiratory-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-equipment-respiratory-q034",
+      "q": "You scan a post-hysterectomy woman's bladder on the female setting and get 180 mL. What is the concern?",
+      "choices": [
+        "The volume is accurate and no action is needed",
+        "The female algorithm subtracts a uterus she does not have, so the true volume is higher",
+        "The probe was aimed too high",
+        "Bladder scanners cannot be used after abdominal surgery"
+      ],
+      "answer": 1,
+      "why": "The female setting applies a uterine correction that falsely lowers the reading in a patient without a uterus. The correct choice is the male setting. Aiming and surgical history are separate issues, and scanners are usable after remote surgery.",
+      "lesson": "ed-equipment-respiratory-l09",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-equipment-respiratory-q035",
+      "q": "A patient has not voided in eight hours. A bladder scan reads 520 mL. How should you report it?",
+      "choices": [
+        "\"Bladder scan 520 mL, no void in eight hours, patient reports suprapubic discomfort.\"",
+        "\"Bladder scan is high.\"",
+        "\"Patient probably needs a catheter.\"",
+        "\"Scan was inconclusive.\""
+      ],
+      "answer": 0,
+      "why": "A number plus the relevant context is what a nurse can act on. Vague adjectives, a recommendation for a procedure you do not order, and a false claim of inconclusiveness all obscure the finding.",
+      "lesson": "ed-equipment-respiratory-l09",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-equipment-respiratory-q036",
+      "q": "You find a crash cart whose plastic lock number does not match the number on the log. What is required?",
+      "choices": [
+        "Correct the number on the log and sign it",
+        "Replace the lock with one matching the log",
+        "Fully inventory and restock the cart, then reseal with a new number and record it",
+        "Take the cart out of service permanently"
+      ],
+      "answer": 2,
+      "why": "A mismatch means the seal was broken and the contents cannot be assumed complete. Editing the log or reapplying a lock to unverified contents falsifies the check. Permanent removal is unnecessary once the cart is restocked.",
+      "lesson": "ed-equipment-respiratory-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-equipment-respiratory-q037",
+      "q": "During a defibrillator check you find the unit passes its self-test but is not plugged into wall power. What does this mean?",
+      "choices": [
+        "It is fine as long as the battery shows charge",
+        "The self-test result is invalid",
+        "The pads must be replaced",
+        "The unit is running down its battery and must be plugged in — battery-only readiness is not acceptable"
+      ],
+      "answer": 3,
+      "why": "A defibrillator left unplugged drains toward a dead battery at the worst possible moment. Wall power is a required element of the check. The self-test result stands, and pads are a separate check item.",
+      "lesson": "ed-equipment-respiratory-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-equipment-respiratory-q038",
+      "q": "A tech restocks a supply cabinet by placing the newly delivered boxes in front of the existing ones. What is the error?",
+      "choices": [
+        "Nothing; newer stock is preferable",
+        "Stock rotation is reversed — new stock goes behind old so the nearest expiration is used first",
+        "Par levels have been exceeded",
+        "The cabinet should be restocked only by materials management"
+      ],
+      "answer": 1,
+      "why": "First in, first out is what prevents expired supplies accumulating at the back. The par level is about quantity, not arrangement, and restocking rooms is a core tech function.",
+      "lesson": "ed-equipment-respiratory-l10",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-equipment-respiratory-q039",
+      "q": "A wheelchair has a cracked footrest bracket. What is the correct sequence?",
+      "choices": [
+        "Leave it in the hallway and warn coworkers",
+        "Use it carefully without the footrest until a replacement arrives",
+        "Tag it out of service with the date and defect, remove it to biomedical engineering, enter a work order, and bring a working replacement",
+        "Repair it yourself with tape"
+      ],
+      "answer": 2,
+      "why": "Tag, remove, report, replace. Leaving a defective device accessible guarantees someone grabs it in a hurry, continued use risks injury, and improvised repairs on patient equipment are never acceptable.",
+      "lesson": "ed-equipment-respiratory-l10",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-equipment-respiratory-q040",
+      "q": "A patient is injured when a warming device malfunctions. What must happen to the device?",
+      "choices": [
+        "Clean and return it to service after confirming it now works",
+        "Send it immediately to biomedical engineering for repair",
+        "Sequester it unchanged with its disposables and packaging, record the settings, and notify the charge nurse",
+        "Discard it and document the model number"
+      ],
+      "answer": 2,
+      "why": "The device and its settings are evidence under medical device reporting requirements. Cleaning, resetting, repairing or discarding it destroys the data needed to determine the cause and to report it to the manufacturer and the FDA.",
+      "lesson": "ed-equipment-respiratory-l10",
+      "difficulty": 2
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "ed-equipment-respiratory-s01",
+      "title": "Room 6: 68-year-old COPD, working hard",
+      "setting": "ed",
+      "intro": "Mr. Whelan, 68, arrived by car with three days of worsening shortness of breath. He has severe COPD, smokes, and uses home oxygen at 2 L. He is sitting forward on the edge of the stretcher, speaking in three-word sentences, with pursed lips and visible accessory muscle use.\n\nThe nurse is starting an IV and calls to you: \"Get him on oxygen and set up a neb — DuoNeb is ordered. And call respiratory.\"",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "Room air saturation on the portable probe is 84%. He has known COPD. What do you set up?",
+          "vitals": {
+            "hr": 118,
+            "bp": "162/94",
+            "rr": 32,
+            "spo2": 84
+          },
+          "choices": [
+            {
+              "text": "Start controlled oxygen aiming for the 88 to 92% COPD target, tell the nurse the room air saturation, and set up the nebulizer",
+              "next": "s2",
+              "feedback": "Right. Eighty-four percent needs treatment, and the target is 88 to 92% rather than 100%. You report the room air number because it is the baseline everything else is compared to.",
+              "score": 1
+            },
+            {
+              "text": "Place a non-rebreather at 15 L/min immediately to get him to 100%",
+              "next": "s2",
+              "feedback": "Overshooting. He is hypoxic and does need oxygen, but driving a chronic retainer to 100% can worsen CO2 retention. Titrate to 88 to 92% and tell the nurse.",
+              "score": -1
+            },
+            {
+              "text": "Leave him on room air since 84% is his baseline with COPD and set up the neb only",
+              "next": "s2",
+              "feedback": "Harmful. Eighty-four percent is below the COPD target of 88 to 92%. Assuming a number is someone's baseline without data is how hypoxia gets missed.",
+              "score": -1
+            },
+            {
+              "text": "Set up the nebulizer first and add oxygen once respiratory therapy arrives",
+              "next": "s2",
+              "feedback": "Too slow, and unnecessary — the nebulizer itself can be driven with oxygen. He needs supplemental oxygen now, not after someone else arrives.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "You are setting up the DuoNeb. The order says to drive it with oxygen. What flow do you set, and how do you position him?",
+          "choices": [
+            {
+              "text": "6 to 8 L/min on the green outlet, patient sitting fully upright, and tell him to breathe normally with an occasional deep breath",
+              "next": "s3",
+              "feedback": "Exactly right. Six to eight liters produces respirable particle size, upright maximizes deposition, and normal tidal breathing works better than forced fast inhalation.",
+              "score": 1
+            },
+            {
+              "text": "3 L/min so the mist is gentler and he tolerates it",
+              "next": "s3",
+              "feedback": "Harmful. Below 6 L/min the droplets are too large to reach the small airways. You would run a 20-minute treatment that delivers almost nothing to the lungs.",
+              "score": -1
+            },
+            {
+              "text": "8 L/min on the yellow outlet, since air drives a nebulizer fine",
+              "next": "s3",
+              "feedback": "The flow is right but the gas is wrong for this patient. He is at 84% — the order says oxygen. Medical air would drive the neb and leave him hypoxic throughout.",
+              "score": -1
+            },
+            {
+              "text": "8 L/min with the patient reclined at 30 degrees so he can rest during the treatment",
+              "next": "s3",
+              "feedback": "The flow is correct. The position is not — a patient slumped back deposits most of the drug in the mouth, and a COPD patient in distress needs to sit forward anyway.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "Ten minutes later the treatment is done. He is still working hard. Respiratory therapy arrives and says BiPAP. The RT asks you to get the machine and a mask.",
+          "vitals": {
+            "hr": 124,
+            "bp": "158/90",
+            "rr": 30,
+            "spo2": 90
+          },
+          "choices": [
+            {
+              "text": "Bring the machine and circuit, size a full-face mask from the nose bridge to just below the lower lip, and get suction set up at the head of the bed",
+              "next": "s4",
+              "feedback": "Complete. Correct sizing plus suction ready is exactly what the RT needs from you — the mask has to come off fast if he vomits.",
+              "score": 1
+            },
+            {
+              "text": "Bring the machine and grab the largest mask so there is no chance of a leak",
+              "next": "s4",
+              "feedback": "Backwards. An oversized mask leaks more, not less, because it cannot seal on the face contours. Size it with the gauge.",
+              "score": -1
+            },
+            {
+              "text": "Bring the machine and mask and set the IPAP and EPAP to the usual starting numbers to save time",
+              "next": "s4",
+              "feedback": "Out of scope. Pressures are set by respiratory therapy or the physician. Setting them yourself is medication-level decision-making with a machine.",
+              "score": -1
+            },
+            {
+              "text": "Bring the machine and a correctly sized mask, and go find suction after the RT has him started",
+              "next": "s4",
+              "feedback": "The mask is right. Suction after the fact is too late — if he vomits into a strapped-on mask in the first two minutes, you need it already there.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "The RT is ready to apply the mask. Mr. Whelan is anxious and pulling at it. The RT asks you to help with the fit.",
+          "choices": [
+            {
+              "text": "Hold the mask gently on his face for the first minute while talking him through it, then strap it two fingers loose with a foam dressing on the nasal bridge",
+              "next": "s5",
+              "feedback": "This is the technique that makes NIV succeed. Most failures happen in the first sixty seconds when a panicked patient has a mask strapped down. Holding it first lets him acclimate.",
+              "score": 1
+            },
+            {
+              "text": "Strap it down firmly right away so he cannot pull it off and gets the pressure immediately",
+              "next": "s5",
+              "feedback": "This is how NIV fails. A strapped-on mask on a panicking patient produces fighting, worse work of breathing, and a nasal bridge ulcer. He also removes it the moment you step away.",
+              "score": -1
+            },
+            {
+              "text": "Hold the mask on his face but tighten the straps hard once he settles, to eliminate any leak",
+              "next": "s5",
+              "feedback": "The first half is right. Over-tightening deforms the cushion and usually creates more leak, plus it causes pressure injury on the bridge within hours. Two fingers of slack.",
+              "score": 0
+            },
+            {
+              "text": "Tell him to calm down and hold still, and apply the mask",
+              "next": "s5",
+              "feedback": "Telling an air-hungry person to calm down does nothing and costs you trust. Coach him through what the pressure will feel like while you hold the mask.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "Thirty-five minutes on BiPAP. He was fighting the mask; now he is quiet and slow to respond when you say his name. His saturation is 93%.",
+          "vitals": {
+            "hr": 108,
+            "bp": "140/82",
+            "rr": 18,
+            "spo2": 93
+          },
+          "choices": [
+            {
+              "text": "Get the nurse and the RT now — new drowsiness on BiPAP suggests rising CO2, and report the level of consciousness change specifically",
+              "next": "end",
+              "feedback": "Correct and urgent. The saturation improved, which is exactly what makes this dangerous — the number looks better while the patient is failing. Somnolence on NIV is the deterioration sign.",
+              "score": 1
+            },
+            {
+              "text": "Note that his respiratory rate came down and his saturation improved, and chart that he is tolerating BiPAP well",
+              "next": "end",
+              "feedback": "This is the trap. A falling respiratory rate with rising sedation is not improvement — it is a patient tiring out or retaining CO2. The numbers look good right up until he stops breathing.",
+              "score": -1
+            },
+            {
+              "text": "Lower the FiO2 since the saturation is above the COPD target",
+              "next": "end",
+              "feedback": "Adjusting settings is not yours to do, and the urgent issue is the mental status change, not the saturation. Report it.",
+              "score": -1
+            },
+            {
+              "text": "Try to wake him and recheck in ten minutes",
+              "next": "end",
+              "feedback": "Checking is better than nothing, but ten minutes is a long time in impending respiratory failure. This is a now conversation with the nurse and the RT.",
+              "score": 0
+            }
+          ]
+        }
+      ],
+      "debrief": "Two patterns worth carrying.\n\nFirst, **the COPD oxygen target is 88 to 92%, and both errors are real.** Leaving him at 84% because \"he's a COPD patient\" is hypoxia. Slamming him to 100% is CO2 retention. The device you set up and the flow you choose are how you land in between, and every report carries the device and the flow, not just the number.\n\nSecond, **nebulizer flow is a therapeutic dose.** Turning it down to 3 L/min because the patient dislikes the mist converts a bronchodilator treatment into twenty minutes of nothing. Six to eight liters, upright, tidal breathing.\n\nAnd the one that kills people: **improving numbers with a deteriorating patient.** His respiratory rate fell from 32 to 18 and his saturation rose to 93%, and he was getting worse. Somnolence on noninvasive ventilation is rising carbon dioxide until proven otherwise. Report the mental status, not the monitor.",
+      "vitalsNote": ""
+    },
+    {
+      "id": "ed-equipment-respiratory-s02",
+      "title": "0700: the cart check nobody wants to do",
+      "setting": "ed",
+      "intro": "You are the day tech in the resuscitation area. The department was busy overnight — two codes and a trauma. Your first tasks are the crash cart check, the resus bay restock, and getting bay 1 ready in case anything rolls in.\n\nThe cart log on the clipboard has a signature for yesterday day shift and nothing since. The night tech is already gone.",
+      "steps": [
+        {
+          "id": "s1",
+          "prompt": "You look at the cart. The plastic breakaway lock is intact but the number reads 4471. The log's last entry lists lock number 4468. What does that tell you, and what do you do?",
+          "choices": [
+            {
+              "text": "The cart was opened and resealed without being logged — inventory the entire cart, restock it, reseal with a new lock, and record both the number and the discrepancy",
+              "next": "s2",
+              "feedback": "Right. An intact lock only means something if the number matches a documented check. A changed number with no log entry means you cannot assume the contents are complete.",
+              "score": 1
+            },
+            {
+              "text": "The lock is intact, so the cart is complete — sign the log with the new number",
+              "next": "s2",
+              "feedback": "Harmful. You would be certifying contents nobody verified. Someone opened it during a code and resealed it; whether it was restocked is unknown.",
+              "score": -1
+            },
+            {
+              "text": "Write 4471 over 4468 on the log to correct the record and move on",
+              "next": "s2",
+              "feedback": "That is falsifying a safety record. The discrepancy is the finding — it gets documented, not erased.",
+              "score": -1
+            },
+            {
+              "text": "Leave it and ask the charge nurse whether the night shift restocked it",
+              "next": "s2",
+              "feedback": "Asking is reasonable, but the answer does not change what you have to do. A number mismatch with no log entry means the cart gets inventoried regardless of what anyone remembers.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "prompt": "You inventory the cart. Everything is present except the amiodarone, which is short by one box, and a bag of pediatric IO needles that were used. You move on to the defibrillator. It powers on, passes its self-test, shows a full battery icon, and the pads are sealed. The power cord is coiled on the shelf, unplugged.",
+          "choices": [
+            {
+              "text": "Replace the missing items, plug the defibrillator into wall power, verify the pad expiration dates, and check the paper roll",
+              "next": "s3",
+              "feedback": "All four. An unplugged defibrillator is running down its battery toward the worst possible moment, and 'pads present and sealed' is not the same as 'pads in date'.",
+              "score": 1
+            },
+            {
+              "text": "Note the self-test passed and the battery is full, and move on — it will hold charge for the shift",
+              "next": "s3",
+              "feedback": "Harmful. Wall power is a required element of the check, not an optional one. A battery that reads full at 0700 is not a plan for a code at 1800.",
+              "score": -1
+            },
+            {
+              "text": "Plug it in and restock the cart, but skip the pad dates since the packages are sealed",
+              "next": "s3",
+              "feedback": "Half right. Sealed packaging says nothing about the expiration date, and expired pads have degraded gel that will not conduct. Dates are checked on every cart check.",
+              "score": 0
+            },
+            {
+              "text": "Take the defibrillator out of service because the cart had missing items",
+              "next": "s3",
+              "feedback": "Disproportionate. The missing supplies are a restock issue, not a defibrillator fault. Removing the only defibrillator in the resus bay creates a far bigger hazard.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "prompt": "Bay 1 next. The suction canister is a third full from last night, the oxygen E cylinder on the stretcher reads 400 psi, and the wall suction regulator is set but has no Yankauer attached.",
+          "choices": [
+            {
+              "text": "Swap the cylinder for a full one, attach a Yankauer, set the regulator to 100 to 150 mmHg, occlude the tubing to confirm it pulls, and change the canister",
+              "next": "s4",
+              "feedback": "This is what 'suction is set up' actually means. Four hundred psi is below the 500 threshold, and a regulator without a tip on it is a box on a wall.",
+              "score": 1
+            },
+            {
+              "text": "Leave the 400 psi cylinder since the bay has wall oxygen anyway, and attach a Yankauer",
+              "next": "s4",
+              "feedback": "The Yankauer is right. The tank is not — the moment that patient goes to CT, 400 psi is what they travel on. Swap anything under 500.",
+              "score": -1
+            },
+            {
+              "text": "Attach the Yankauer and set the regulator to 200 mmHg so it clears thick vomit faster",
+              "next": "s4",
+              "feedback": "Higher pressure does not clear thick material better; it tears mucosa and strips more oxygen. Adult wall suction is 100 to 150 mmHg.",
+              "score": -1
+            },
+            {
+              "text": "Swap the cylinder and attach a Yankauer, but leave the canister since it is only a third full",
+              "next": "s4",
+              "feedback": "Reasonable on the canister — two-thirds to three-quarters is the change threshold. But last night's contents in a fresh bay is sloppy, and it costs thirty seconds to start clean.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "prompt": "Restocking the bay, you find the sharps container is at the fill line and the top drawer's IV start kits are two deep with a delivery box of new ones sitting on the counter. You also notice one of the two infusion pumps in the bay has a cracked housing and a frayed power cord.",
+          "choices": [
+            {
+              "text": "Replace the sharps container, put the new IV kits behind the existing ones, and tag the pump out of service, remove it to biomed, enter a work order and bring a replacement",
+              "next": "s5",
+              "feedback": "Every piece correct. Sharps go at the fill line, not when jammed; stock rotates first in first out; and a frayed cord is an electrical hazard that leaves the department.",
+              "score": 1
+            },
+            {
+              "text": "Replace the sharps container, stack the new kits in front for easy reach, and set the cracked pump aside in the hallway with a note",
+              "next": "s5",
+              "feedback": "Two errors. New stock in front means the old ones expire at the back, and a broken pump in a hallway gets grabbed during the next emergency no matter what the note says.",
+              "score": -1
+            },
+            {
+              "text": "Leave the sharps container since a few more will fit, rotate the kits correctly, and tag the pump",
+              "next": "s5",
+              "feedback": "The rotation and the tag are right. Pushing more into a container at the fill line is exactly how needlesticks happen — that is the trigger to change it.",
+              "score": 0
+            },
+            {
+              "text": "Wrap the frayed cord in tape, rotate the stock, and change the sharps container",
+              "next": "s5",
+              "feedback": "Taping a damaged power cord on patient equipment is not a repair. A frayed three-prong cord is a shock and fire hazard and the device leaves the floor.",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "prompt": "It is 0740. Everything is done. What goes on paper, and what goes to the charge nurse?",
+          "choices": [
+            {
+              "text": "Sign and time the cart log noting the lock discrepancy, the full inventory and the new lock number; enter the pump work order; and tell the charge nurse the cart was opened overnight without a log entry",
+              "next": "end",
+              "feedback": "Complete. The signature with a time is what makes the check real, the discrepancy is a safety finding that belongs in front of a leader, and the work order is what actually gets the pump fixed.",
+              "score": 1
+            },
+            {
+              "text": "Sign the cart log and mention the pump verbally at huddle",
+              "next": "end",
+              "feedback": "Partial. A verbal mention without a work order means the pump sits in biomed unlogged, and an unnoted lock discrepancy means the pattern never gets addressed.",
+              "score": 0
+            },
+            {
+              "text": "Sign the log with the new lock number and say nothing about the discrepancy, since you restocked it",
+              "next": "end",
+              "feedback": "Fixing it is not the same as reporting it. A cart opened during a code and left unlogged is a process failure that will repeat, and the next tech may not catch it.",
+              "score": -1
+            },
+            {
+              "text": "Leave the log for the charge nurse to sign since she is responsible for the cart",
+              "next": "end",
+              "feedback": "You did the check; you sign it. An unsigned log is treated as a check that did not happen, and handing it off breaks the accountability the log exists to create.",
+              "score": -1
+            }
+          ]
+        }
+      ],
+      "debrief": "The pattern is that **equipment readiness is a documentation task as much as a physical one.** An intact lock proves nothing unless its number matches a signed log. A defibrillator that passes its self-test is still a failure waiting to happen if it is unplugged. A regulator with the pressure set is not suction until a Yankauer is on it and you have watched it pull.\n\nThe numbers to carry out of this: adult wall suction `100 to 150 mmHg`; swap any E cylinder under `500 psi`; change a sharps container at the fill line, roughly three-quarters; change a suction canister at two-thirds to three-quarters; rotate stock first in, first out with new behind old.\n\nAnd the professional habit underneath all of it: **tag, remove, report, replace** for anything broken, and report the process failure, not just the item. Fixing a problem quietly means the next person meets it again.",
+      "vitalsNote": ""
+    }
+  ]
+}
