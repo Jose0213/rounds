@@ -643,10 +643,10 @@
       ['app-submit', 'Submit CASPA in May or June', 'Verification takes weeks. Do not wait for the deadline.'],
       ['app-interview', 'Interviews', 'MMI or traditional. Run the interview scenarios in the Interviews & Essays module until the answers are yours.'],
       ['app-accept', 'Accept an offer', 'Then start reading everything about the didactic year.'] ] },
-    { id: 'career', title: 'Cooper first, then Virtua ICU', when: 'After PANCE', text: 'Two years at Cooper for volume, structure and a name on the resume, then an overnight ICU APP job at Virtua where the autonomy is. The academic center follows the residents' track; the community ICU runs on its APPs.', tasks: [
+    { id: 'career', title: 'Cooper first, then Virtua ICU', when: 'After PANCE', text: 'Two years at Cooper for volume, structure and a name on the resume, then an overnight ICU APP job at Virtua where the autonomy is. The academic center follows the residents’ track; the community ICU runs on its APPs.', tasks: [
       ['car-pance', 'Pass the PANCE and get the NJ license', 'NCCPA certification, then NJ Board of Medical Examiners PA license and CDS/DEA.'],
       ['car-rotation', 'Land a critical care or EM rotation at Cooper during clinical year', 'Rotations are auditions. Ask for Cooper by name when the program assigns sites.'],
-      ['car-fellowship', 'Apply to Cooper's APP fellowship (critical care or emergency medicine) as the fast track', 'A 12-month structured fellowship beats two unstructured years for an ICU hire. Verify which tracks Cooper is running that cycle.'],
+      ['car-fellowship', 'Apply to Cooper’s APP fellowship (critical care or emergency medicine) as the fast track', 'A 12-month structured fellowship beats two unstructured years for an ICU hire. Verify which tracks Cooper is running that cycle.'],
       ['car-cooper', 'Work at Cooper 1–2 years', 'Trauma, sepsis, vents, lines, codes. Keep the case log going: it becomes the interview for the next job.'],
       ['car-certs', 'Stack the ICU certifications while there', 'ACLS and PALS, FCCS (Fundamental Critical Care Support), ultrasound and line credentials, ventilator management course.'],
       ['car-network', 'Meet the Virtua intensivists and night APPs before you need them', 'Shadow a night, ask what their APPs actually own overnight, learn which campus (Voorhees, Marlton, Mount Holly, Camden) staffs the way you want.'],
