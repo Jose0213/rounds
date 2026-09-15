@@ -14,7 +14,7 @@ Lesson ids and titles: read `content/modules/<id>.json` (`lessons[].id`, `.title
 
 ## Verification is mandatory
 
-1. Find candidates with WebSearch (queries like `youtube <lesson topic> EMT`, `youtube <topic> Ninja Nerd`, `site:youtube.com <topic>`). Extract the 11-character id from `watch?v=ID` or `youtu.be/ID`. Do not invent ids from memory; only ids you saw in a search result or fetched page.
+1. Find candidates with `node tools/yt-search.mjs "<query>" 8` (real YouTube search, prints id, duration, channel, title, views). Do NOT use WebSearch (its budget is exhausted) and do NOT spawn subagents (the slot cap is full; do all modules yourself, one at a time). Do not invent ids from memory; only ids printed by yt-search. Two or three queries per lesson is usually enough; pick the best match by title, channel and duration.
 2. Write the file, then run `node tools/yt-check.mjs content/modules/<id>.videos.json`. It calls YouTube oEmbed, stamps `verified: true` and fills `ytTitle` with the real title. Any `x` line means the video does not exist or cannot be embedded: replace it.
 3. Re-open the file and compare each `ytTitle` with the lesson title. If the real title does not match the lesson's topic, replace the video. This is the step that catches wrong ids.
 4. Run `node tools/validate.mjs content/modules/<id>.videos.json` until it prints `ok`.
