@@ -2,40 +2,40 @@
   "schema": 1,
   "id": "nremt-emt",
   "title": "NREMT EMT Cognitive Exam",
-  "blurb": "The real NREMT EMT cognitive exam is computer-adaptive: it delivers between 70 and 120 items in a 2-hour window and stops as soon as it is 95% confident you are above or below the passing standard. Items are drawn from five content areas - Airway, Respiration and Ventilation; Cardiology and Resuscitation; Trauma; Medical, Obstetrics and Gynecology; and EMS Operations - with about 85% of patients adults and about 15% pediatric. This practice exam is not adaptive, but every attempt draws 100 fresh items from the pool using the real content weights, so the mix you see matches the mix the real test pulls from.",
+  "blurb": "The real NREMT EMT cognitive exam is computer-adaptive: it delivers 70 to 120 scored and pilot items in a 2-hour window and stops once it can determine whether you are above or below the passing standard. Its blueprint, effective April 7, 2025, is built on five assessment domains - Scene Size-Up and Safety 15-19%, Primary Assessment 39-43%, Secondary Assessment 5-9%, Patient Treatment and Transport 20-24%, and Operations 10-14% - with items on pediatric patient care integrated throughout rather than held to a fixed share. This practice exam is not adaptive, but its sections are those five domains and every attempt draws 100 items across them at the midpoint of each published range.",
   "minutes": 120,
   "count": 100,
   "sections": [
     {
-      "id": "airway",
-      "title": "Airway, Respiration & Ventilation",
-      "weight": 0.2
+      "id": "scene",
+      "title": "Scene Size-Up and Safety",
+      "weight": 0.17
     },
     {
-      "id": "cardio",
-      "title": "Cardiology & Resuscitation",
+      "id": "primary",
+      "title": "Primary Assessment",
+      "weight": 0.41
+    },
+    {
+      "id": "secondary",
+      "title": "Secondary Assessment",
+      "weight": 0.07
+    },
+    {
+      "id": "treatment",
+      "title": "Patient Treatment and Transport",
       "weight": 0.22
     },
     {
-      "id": "trauma",
-      "title": "Trauma",
-      "weight": 0.16
-    },
-    {
-      "id": "medical",
-      "title": "Medical, Obstetrics & Gynecology",
-      "weight": 0.29
-    },
-    {
       "id": "ops",
-      "title": "EMS Operations",
-      "weight": 0.13
+      "title": "Operations",
+      "weight": 0.12
     }
   ],
   "questions": [
     {
       "id": "nremt-emt-q0001",
-      "section": "airway",
+      "section": "primary",
       "q": "Which of the following BEST describes the difference between ventilation and respiration?",
       "choices": [
         "Ventilation is gas exchange at the cell; respiration is air movement",
@@ -49,7 +49,7 @@
     },
     {
       "id": "nremt-emt-q0002",
-      "section": "airway",
+      "section": "primary",
       "q": "A patient has a tidal volume of 500 mL and a respiratory rate of 12 breaths per minute. What is the minute volume?",
       "choices": [
         "600 mL",
@@ -63,7 +63,7 @@
     },
     {
       "id": "nremt-emt-q0003",
-      "section": "airway",
+      "section": "primary",
       "q": "Air that fills the trachea and bronchi but never reaches the alveoli for gas exchange is known as:",
       "choices": [
         "Residual volume",
@@ -77,7 +77,7 @@
     },
     {
       "id": "nremt-emt-q0004",
-      "section": "airway",
+      "section": "primary",
       "q": "You are assessing a 44-year-old woman who is alert. Which finding MOST clearly indicates inadequate breathing?",
       "choices": [
         "A rate of 8 per minute with shallow, irregular chest movement",
@@ -91,7 +91,7 @@
     },
     {
       "id": "nremt-emt-q0005",
-      "section": "airway",
+      "section": "primary",
       "q": "A 60-year-old man is sitting upright, is anxious, and can speak only three or four words between breaths. His SpO2 is 90 percent. This presentation BEST describes:",
       "choices": [
         "Respiratory arrest",
@@ -105,7 +105,7 @@
     },
     {
       "id": "nremt-emt-q0006",
-      "section": "airway",
+      "section": "primary",
       "q": "A child with a long history of asthma was working hard to breathe. He is now sleepy, quiet, and his chest barely moves. Which is the MOST appropriate next action?",
       "choices": [
         "Apply a non-rebreather at 15 L/min and monitor",
@@ -119,7 +119,7 @@
     },
     {
       "id": "nremt-emt-q0007",
-      "section": "airway",
+      "section": "primary",
       "q": "You find an unresponsive adult with no suspected trauma and snoring respirations. Which of the following is the FIRST action?",
       "choices": [
         "Insert a nasopharyngeal airway",
@@ -133,7 +133,7 @@
     },
     {
       "id": "nremt-emt-q0008",
-      "section": "airway",
+      "section": "primary",
       "q": "An unresponsive patient was ejected from a vehicle and has gurgling respirations. Which airway maneuver is MOST appropriate?",
       "choices": [
         "Jaw-thrust maneuver with manual in-line stabilization",
@@ -147,7 +147,7 @@
     },
     {
       "id": "nremt-emt-q0009",
-      "section": "airway",
+      "section": "primary",
       "q": "You are suctioning an adult patient with copious vomit in the airway. Suctioning should be limited to no longer than:",
       "choices": [
         "30 seconds",
@@ -161,7 +161,7 @@
     },
     {
       "id": "nremt-emt-q0010",
-      "section": "airway",
+      "section": "primary",
       "q": "Which catheter and technique are MOST appropriate for suctioning thick vomit from the mouth of an adult?",
       "choices": [
         "Soft French catheter inserted through the nose",
@@ -175,7 +175,7 @@
     },
     {
       "id": "nremt-emt-q0011",
-      "section": "airway",
+      "section": "primary",
       "q": "You must suction a 6-month-old infant with thick nasal secretions. The MAXIMUM recommended suction time for this patient is about:",
       "choices": [
         "5 seconds",
@@ -189,7 +189,7 @@
     },
     {
       "id": "nremt-emt-q0012",
-      "section": "airway",
+      "section": "primary",
       "q": "When suctioning a child with a mechanical suction unit, the vacuum pressure should generally be limited to:",
       "choices": [
         "-200 to -250 mmHg",
@@ -203,7 +203,7 @@
     },
     {
       "id": "nremt-emt-q0013",
-      "section": "airway",
+      "section": "primary",
       "q": "An oropharyngeal airway is sized by measuring from:",
       "choices": [
         "The tip of the nose to the earlobe",
@@ -217,7 +217,7 @@
     },
     {
       "id": "nremt-emt-q0014",
-      "section": "airway",
+      "section": "primary",
       "q": "You insert an oropharyngeal airway and the patient begins to gag and retch. Which of the following is the BEST action?",
       "choices": [
         "Immediately remove the airway and be prepared to suction",
@@ -231,7 +231,7 @@
     },
     {
       "id": "nremt-emt-q0015",
-      "section": "airway",
+      "section": "primary",
       "q": "A semiconscious 30-year-old fell from a roof and has clear fluid draining from his nose and bruising behind his ears. Which airway adjunct is CONTRAINDICATED?",
       "choices": [
         "Oropharyngeal airway",
@@ -245,7 +245,7 @@
     },
     {
       "id": "nremt-emt-q0016",
-      "section": "airway",
+      "section": "primary",
       "q": "A nasopharyngeal airway is properly sized by measuring from the:",
       "choices": [
         "Tip of the nose to the corner of the mouth",
@@ -259,7 +259,7 @@
     },
     {
       "id": "nremt-emt-q0017",
-      "section": "airway",
+      "section": "treatment",
       "q": "A 70-year-old with COPD has an SpO2 of 88 percent and mild dyspnea while speaking in full sentences. Which oxygen delivery device is MOST appropriate to start?",
       "choices": [
         "Nasal cannula at 2 to 4 L/min, titrated to effect",
@@ -273,7 +273,7 @@
     },
     {
       "id": "nremt-emt-q0018",
-      "section": "airway",
+      "section": "treatment",
       "q": "A nasal cannula delivers an approximate oxygen concentration of:",
       "choices": [
         "35 to 60 percent at 1 to 6 L/min",
@@ -287,7 +287,7 @@
     },
     {
       "id": "nremt-emt-q0019",
-      "section": "airway",
+      "section": "treatment",
       "q": "A non-rebreather mask should be run at which flow rate, and what must be verified before placing it on the patient?",
       "choices": [
         "6 to 10 L/min, with the mask warmed",
@@ -301,7 +301,7 @@
     },
     {
       "id": "nremt-emt-q0020",
-      "section": "airway",
+      "section": "treatment",
       "q": "Which device delivers a precise, specific oxygen concentration through interchangeable color-coded adapters?",
       "choices": [
         "Simple face mask",
@@ -315,7 +315,7 @@
     },
     {
       "id": "nremt-emt-q0021",
-      "section": "airway",
+      "section": "treatment",
       "q": "A bag-valve mask attached to an oxygen reservoir and run at 15 L/min delivers approximately what oxygen concentration?",
       "choices": [
         "Near 100 percent",
@@ -329,7 +329,7 @@
     },
     {
       "id": "nremt-emt-q0022",
-      "section": "airway",
+      "section": "treatment",
       "q": "For most patients, oxygen should be titrated to maintain an oxygen saturation in which range?",
       "choices": [
         "88 to 92 percent",
@@ -343,7 +343,7 @@
     },
     {
       "id": "nremt-emt-q0023",
-      "section": "airway",
+      "section": "ops",
       "q": "A full oxygen cylinder typically reads about 2,000 psi. At what pressure is the cylinder generally considered to be at the safe residual level and taken out of service for refill?",
       "choices": [
         "1,000 psi",
@@ -357,7 +357,7 @@
     },
     {
       "id": "nremt-emt-q0024",
-      "section": "airway",
+      "section": "ops",
       "q": "Which of the following is the MOST important safety practice when handling oxygen cylinders?",
       "choices": [
         "Store cylinders lying loose on the bench seat for quick access",
@@ -371,7 +371,7 @@
     },
     {
       "id": "nremt-emt-q0025",
-      "section": "airway",
+      "section": "primary",
       "q": "You are ventilating an apneic adult with a pulse using a bag-valve mask. What is the correct rate and volume?",
       "choices": [
         "One breath every 6 seconds, just enough for visible chest rise",
@@ -385,7 +385,7 @@
     },
     {
       "id": "nremt-emt-q0026",
-      "section": "airway",
+      "section": "primary",
       "q": "You are ventilating an apneic 4-year-old who has a strong pulse of 110. The correct ventilation rate is:",
       "choices": [
         "1 breath every 6 to 8 seconds",
@@ -399,7 +399,7 @@
     },
     {
       "id": "nremt-emt-q0027",
-      "section": "airway",
+      "section": "primary",
       "q": "Which bag-valve-mask technique generally results in the BEST tidal volume delivery?",
       "choices": [
         "One rescuer using a one-handed C-E grip while squeezing the bag",
@@ -413,7 +413,7 @@
     },
     {
       "id": "nremt-emt-q0028",
-      "section": "airway",
+      "section": "primary",
       "q": "During CPR on an adult with a supraglottic advanced airway in place, ventilations should be delivered:",
       "choices": [
         "At 30 compressions to 2 breaths with pauses",
@@ -427,7 +427,7 @@
     },
     {
       "id": "nremt-emt-q0029",
-      "section": "airway",
+      "section": "primary",
       "q": "While bagging an apneic patient, you notice progressive abdominal distension and rising resistance. What is the MOST likely cause?",
       "choices": [
         "Developing tension pneumothorax from correct volumes",
@@ -441,7 +441,7 @@
     },
     {
       "id": "nremt-emt-q0030",
-      "section": "airway",
+      "section": "primary",
       "q": "Hyperventilating a patient in cardiac arrest is harmful PRIMARILY because it:",
       "choices": [
         "Increases intrathoracic pressure and decreases venous return to the heart",
@@ -455,7 +455,7 @@
     },
     {
       "id": "nremt-emt-q0031",
-      "section": "airway",
+      "section": "treatment",
       "q": "A 68-year-old woman with a history of heart failure has crackles, pink frothy sputum, severe dyspnea, a blood pressure of 158/94, and is alert. Which intervention is MOST appropriate?",
       "choices": [
         "Oral fluids and a position of comfort",
@@ -469,7 +469,7 @@
     },
     {
       "id": "nremt-emt-q0032",
-      "section": "airway",
+      "section": "treatment",
       "q": "Which of the following is a CONTRAINDICATION to applying CPAP?",
       "choices": [
         "An alert patient with pulmonary edema and crackles",
@@ -483,7 +483,7 @@
     },
     {
       "id": "nremt-emt-q0033",
-      "section": "airway",
+      "section": "treatment",
       "q": "CPAP for prehospital use is typically delivered at what range of pressure?",
       "choices": [
         "5 to 10 cm H2O",
@@ -497,7 +497,7 @@
     },
     {
       "id": "nremt-emt-q0034",
-      "section": "airway",
+      "section": "primary",
       "q": "A 50-year-old man at dinner suddenly grabs his throat. He is coughing forcefully and can speak in a hoarse voice. What is the BEST action?",
       "choices": [
         "Perform abdominal thrusts immediately",
@@ -511,7 +511,7 @@
     },
     {
       "id": "nremt-emt-q0035",
-      "section": "airway",
+      "section": "primary",
       "q": "A conscious adult with a severe airway obstruction suddenly becomes unresponsive. What is the NEXT action?",
       "choices": [
         "Continue abdominal thrusts on the floor",
@@ -525,7 +525,7 @@
     },
     {
       "id": "nremt-emt-q0036",
-      "section": "airway",
+      "section": "primary",
       "q": "A 32-year-old woman who is 34 weeks pregnant is choking, cannot speak, and is turning cyanotic. Which maneuver is MOST appropriate?",
       "choices": [
         "Abdominal thrusts just above the umbilicus",
@@ -539,7 +539,7 @@
     },
     {
       "id": "nremt-emt-q0037",
-      "section": "airway",
+      "section": "primary",
       "q": "A 7-month-old infant is choking on a grape, cannot cry, and is cyanotic. What is the correct sequence?",
       "choices": [
         "Five abdominal thrusts, then five back slaps",
@@ -553,7 +553,7 @@
     },
     {
       "id": "nremt-emt-q0038",
-      "section": "airway",
+      "section": "secondary",
       "q": "A pulse oximeter reads 99 percent on an unresponsive man found in a running car in a closed garage. Which statement is MOST accurate?",
       "choices": [
         "The reading may be falsely high because the device cannot distinguish carboxyhemoglobin from oxyhemoglobin",
@@ -567,7 +567,7 @@
     },
     {
       "id": "nremt-emt-q0039",
-      "section": "airway",
+      "section": "secondary",
       "q": "Which of the following would MOST likely cause an inaccurate or absent pulse oximetry reading?",
       "choices": [
         "A warm, well-perfused hand in a calm patient",
@@ -581,7 +581,7 @@
     },
     {
       "id": "nremt-emt-q0040",
-      "section": "airway",
+      "section": "secondary",
       "q": "A normal end-tidal carbon dioxide reading in a healthy adult is approximately:",
       "choices": [
         "15 to 25 mmHg",
@@ -595,7 +595,7 @@
     },
     {
       "id": "nremt-emt-q0041",
-      "section": "airway",
+      "section": "treatment",
       "q": "A 25-year-old with asthma has audible expiratory wheezing, is alert, and carries a prescribed albuterol metered-dose inhaler. After obtaining medical direction, what is the MOST appropriate action?",
       "choices": [
         "Withhold the inhaler until arrival at the hospital",
@@ -609,7 +609,7 @@
     },
     {
       "id": "nremt-emt-q0042",
-      "section": "airway",
+      "section": "treatment",
       "q": "A small-volume nebulizer treatment for bronchospasm commonly uses which dose of albuterol?",
       "choices": [
         "2.5 mg in 3 mL of normal saline",
@@ -623,7 +623,7 @@
     },
     {
       "id": "nremt-emt-q0043",
-      "section": "airway",
+      "section": "treatment",
       "q": "A 19-year-old develops hives, facial swelling, and stridor minutes after eating shrimp. The MOST important intervention is:",
       "choices": [
         "Albuterol by nebulizer alone",
@@ -637,7 +637,7 @@
     },
     {
       "id": "nremt-emt-q0044",
-      "section": "airway",
+      "section": "treatment",
       "q": "A 2-year-old has a barking, seal-like cough and inspiratory stridor that worsened overnight. He is alert with mild retractions. The MOST appropriate management includes:",
       "choices": [
         "Inspecting the pharynx with a tongue blade",
@@ -651,7 +651,7 @@
     },
     {
       "id": "nremt-emt-q0045",
-      "section": "airway",
+      "section": "treatment",
       "q": "A 5-year-old sits leaning forward with her chin thrust out, drooling, febrile, and with muffled voice and stridor. Which action is MOST appropriate?",
       "choices": [
         "Examine the throat with a tongue depressor",
@@ -665,7 +665,7 @@
     },
     {
       "id": "nremt-emt-q0046",
-      "section": "airway",
+      "section": "secondary",
       "q": "A 5-month-old has a two-day history of cough and congestion, now with wheezing, nasal flaring, and a rate of 62. Which statement about this patient is MOST accurate?",
       "choices": [
         "Bronchiolitis is likely, and clearing the nares is important because infants this age are obligate nose breathers",
@@ -679,7 +679,7 @@
     },
     {
       "id": "nremt-emt-q0047",
-      "section": "airway",
+      "section": "secondary",
       "q": "Which set of normal resting respiratory rates is correct?",
       "choices": [
         "Adult 8 to 12, child 12 to 20, infant 15 to 30",
@@ -693,7 +693,7 @@
     },
     {
       "id": "nremt-emt-q0048",
-      "section": "airway",
+      "section": "primary",
       "q": "Which of the following is a key anatomical difference in the pediatric airway compared to the adult airway?",
       "choices": [
         "The tongue is proportionally smaller relative to the oropharynx",
@@ -707,7 +707,7 @@
     },
     {
       "id": "nremt-emt-q0049",
-      "section": "airway",
+      "section": "primary",
       "q": "When positioning the airway of an unresponsive 8-month-old with no suspected trauma, the BEST technique is to:",
       "choices": [
         "Place the head in a neutral sniffing position, padding under the shoulders if needed",
@@ -721,7 +721,7 @@
     },
     {
       "id": "nremt-emt-q0050",
-      "section": "airway",
+      "section": "primary",
       "q": "Which combination of findings in a toddler indicates SEVERE respiratory distress requiring immediate intervention?",
       "choices": [
         "Occasional cough with a clear cry and pink skin",
@@ -735,7 +735,7 @@
     },
     {
       "id": "nremt-emt-q0051",
-      "section": "airway",
+      "section": "primary",
       "q": "Seesaw breathing in an infant, where the chest retracts as the abdomen rises, indicates:",
       "choices": [
         "Normal diaphragmatic breathing for this age",
@@ -749,7 +749,7 @@
     },
     {
       "id": "nremt-emt-q0052",
-      "section": "airway",
+      "section": "primary",
       "q": "A 55-year-old woman is breathing 30 times per minute with very shallow chest movement and is becoming confused. What is the BEST action?",
       "choices": [
         "Apply a non-rebreather at 15 L/min and monitor",
@@ -763,7 +763,7 @@
     },
     {
       "id": "nremt-emt-q0053",
-      "section": "airway",
+      "section": "primary",
       "q": "When assisting ventilations in a conscious patient who is breathing inadequately, ventilations should be:",
       "choices": [
         "Delivered whenever you are ready, regardless of the patient's effort",
@@ -777,7 +777,7 @@
     },
     {
       "id": "nremt-emt-q0054",
-      "section": "airway",
+      "section": "primary",
       "q": "A patient with a permanent tracheostomy stoma requires ventilation. Which approach is MOST appropriate?",
       "choices": [
         "Attach the bag-valve mask directly to the tracheostomy tube or use an infant mask sealed over the stoma",
@@ -791,7 +791,7 @@
     },
     {
       "id": "nremt-emt-q0055",
-      "section": "airway",
+      "section": "primary",
       "q": "A tracheostomy patient becomes dyspneic with noisy, gurgling airflow through the tube. What is the FIRST action?",
       "choices": [
         "Remove the tracheostomy tube entirely",
@@ -805,7 +805,7 @@
     },
     {
       "id": "nremt-emt-q0056",
-      "section": "airway",
+      "section": "secondary",
       "q": "A 62-year-old smoker with COPD has a barrel chest, pursed-lip breathing, and prolonged expiration. The pursed-lip breathing serves to:",
       "choices": [
         "Increase carbon dioxide retention deliberately",
@@ -819,7 +819,7 @@
     },
     {
       "id": "nremt-emt-q0057",
-      "section": "airway",
+      "section": "treatment",
       "q": "A 20-year-old college student is anxious after an argument, breathing 34 times per minute, and reports numb, tingling fingers and lips with carpal spasm. The MOST appropriate management is:",
       "choices": [
         "Coach slow breathing, provide reassurance, apply oxygen as needed, and transport",
@@ -833,7 +833,7 @@
     },
     {
       "id": "nremt-emt-q0058",
-      "section": "airway",
+      "section": "secondary",
       "q": "A 45-year-old woman has sudden pleuritic chest pain and severe dyspnea three days after knee surgery. Her lungs are clear and SpO2 is 89 percent. The MOST likely cause is:",
       "choices": [
         "Acute asthma exacerbation",
@@ -847,7 +847,7 @@
     },
     {
       "id": "nremt-emt-q0059",
-      "section": "airway",
+      "section": "secondary",
       "q": "A tall, thin 22-year-old man develops sudden sharp chest pain and shortness of breath while lifting. Breath sounds are absent on the right. The MOST likely condition is:",
       "choices": [
         "Bronchiolitis",
@@ -861,7 +861,7 @@
     },
     {
       "id": "nremt-emt-q0060",
-      "section": "airway",
+      "section": "secondary",
       "q": "An 80-year-old nursing home resident has a productive cough, fever of 102.4 F, and crackles isolated to the right lower lobe. The MOST likely condition is:",
       "choices": [
         "Pulmonary embolism",
@@ -875,7 +875,7 @@
     },
     {
       "id": "nremt-emt-q0061",
-      "section": "airway",
+      "section": "primary",
       "q": "Gas exchange between the alveoli and pulmonary capillaries occurs by which process?",
       "choices": [
         "Diffusion from an area of higher concentration to lower concentration",
@@ -889,7 +889,7 @@
     },
     {
       "id": "nremt-emt-q0062",
-      "section": "airway",
+      "section": "primary",
       "q": "Which of the following BEST indicates that your bag-valve-mask ventilations are effective?",
       "choices": [
         "The bag empties completely with each squeeze",
@@ -903,7 +903,7 @@
     },
     {
       "id": "nremt-emt-q0063",
-      "section": "airway",
+      "section": "primary",
       "q": "You are alone with an unresponsive adult who requires ventilation, and your mask seal keeps leaking at the bridge of the nose. What is the BEST corrective action?",
       "choices": [
         "Increase the oxygen flow rate to 25 L/min",
@@ -917,7 +917,7 @@
     },
     {
       "id": "nremt-emt-q0064",
-      "section": "airway",
+      "section": "primary",
       "q": "Which finding is the MOST reliable early indicator that a patient's breathing has become inadequate?",
       "choices": [
         "A pulse oximetry reading of 95 percent",
@@ -931,7 +931,7 @@
     },
     {
       "id": "nremt-emt-q0065",
-      "section": "airway",
+      "section": "primary",
       "q": "You have an unresponsive adult in cardiac arrest and only a one-way valve pocket mask available. Which statement is MOST accurate?",
       "choices": [
         "A pocket mask cannot be used with supplemental oxygen",
@@ -945,7 +945,7 @@
     },
     {
       "id": "nremt-emt-q0066",
-      "section": "airway",
+      "section": "primary",
       "q": "You have ventilated an apneic adult for several minutes and now feel increasing resistance with poor chest rise. What should you check FIRST?",
       "choices": [
         "Head position, mask seal, and the airway for obstruction or secretions",
@@ -959,7 +959,7 @@
     },
     {
       "id": "nremt-emt-q0067",
-      "section": "cardio",
+      "section": "primary",
       "q": "Blood returning from the body enters the right atrium, then passes through which structure on its way to the right ventricle?",
       "choices": [
         "The mitral valve",
@@ -973,7 +973,7 @@
     },
     {
       "id": "nremt-emt-q0068",
-      "section": "cardio",
+      "section": "primary",
       "q": "Which structure normally initiates the electrical impulse that sets the heart rate in a healthy adult?",
       "choices": [
         "The sinoatrial node in the right atrium",
@@ -987,7 +987,7 @@
     },
     {
       "id": "nremt-emt-q0069",
-      "section": "cardio",
+      "section": "primary",
       "q": "A patient has a heart rate of 80 beats per minute and a stroke volume of 70 mL. What is the cardiac output?",
       "choices": [
         "150 mL per minute",
@@ -1001,7 +1001,7 @@
     },
     {
       "id": "nremt-emt-q0070",
-      "section": "cardio",
+      "section": "primary",
       "q": "The coronary arteries that supply the heart muscle itself originate from which location?",
       "choices": [
         "The pulmonary trunk just past the pulmonic valve",
@@ -1015,7 +1015,7 @@
     },
     {
       "id": "nremt-emt-q0071",
-      "section": "cardio",
+      "section": "secondary",
       "q": "A 58-year-old man reports crushing substernal chest pressure for 20 minutes that is not relieved by rest. What is your FIRST action after scene size-up and confirming he is alert with a patent airway?",
       "choices": [
         "Administer 324 mg of chewable aspirin immediately",
@@ -1029,7 +1029,7 @@
     },
     {
       "id": "nremt-emt-q0072",
-      "section": "cardio",
+      "section": "secondary",
       "q": "Which patient population is MOST likely to present with an acute myocardial infarction without classic crushing chest pain?",
       "choices": [
         "Young male athletes",
@@ -1043,7 +1043,7 @@
     },
     {
       "id": "nremt-emt-q0073",
-      "section": "cardio",
+      "section": "secondary",
       "q": "In the OPQRST mnemonic used for a chest pain history, the letter P MOST commonly stands for what?",
       "choices": [
         "Provocation and palliation, or what makes it better or worse",
@@ -1057,7 +1057,7 @@
     },
     {
       "id": "nremt-emt-q0074",
-      "section": "cardio",
+      "section": "secondary",
       "q": "What is the key difference between stable angina and an acute myocardial infarction?",
       "choices": [
         "Angina always radiates to the left arm while infarction never does",
@@ -1071,7 +1071,7 @@
     },
     {
       "id": "nremt-emt-q0075",
-      "section": "cardio",
+      "section": "treatment",
       "q": "Your protocol directs 324 mg of aspirin for suspected acute coronary syndrome. How is this dose usually given?",
       "choices": [
         "One 324 mg enteric-coated tablet swallowed with water",
@@ -1085,7 +1085,7 @@
     },
     {
       "id": "nremt-emt-q0076",
-      "section": "cardio",
+      "section": "treatment",
       "q": "A 66-year-old woman with chest pressure tells you she gets hives and throat swelling from aspirin. What is the MOST appropriate action?",
       "choices": [
         "Give half the usual aspirin dose to reduce the reaction risk",
@@ -1099,7 +1099,7 @@
     },
     {
       "id": "nremt-emt-q0077",
-      "section": "cardio",
+      "section": "treatment",
       "q": "What is the usual dose and route of nitroglycerin an EMT may assist a patient in taking for chest pain?",
       "choices": [
         "0.4 mg sublingual, up to three doses five minutes apart",
@@ -1113,7 +1113,7 @@
     },
     {
       "id": "nremt-emt-q0078",
-      "section": "cardio",
+      "section": "treatment",
       "q": "A 54-year-old man with chest pain has a blood pressure of 88/54 mmHg and his own nitroglycerin in hand. What should you do?",
       "choices": [
         "Assist with one dose and recheck the pressure in five minutes",
@@ -1127,7 +1127,7 @@
     },
     {
       "id": "nremt-emt-q0079",
-      "section": "cardio",
+      "section": "treatment",
       "q": "A 49-year-old man with substernal chest pain admits he took sildenafil about six hours ago. What is the MOST important implication?",
       "choices": [
         "Aspirin must also be withheld because of a drug interaction",
@@ -1141,7 +1141,7 @@
     },
     {
       "id": "nremt-emt-q0080",
-      "section": "cardio",
+      "section": "treatment",
       "q": "Five minutes after a first nitroglycerin dose, a chest pain patient reports a throbbing headache and feels lightheaded. What is your BEST next step?",
       "choices": [
         "Recheck the blood pressure before considering another dose",
@@ -1155,7 +1155,7 @@
     },
     {
       "id": "nremt-emt-q0081",
-      "section": "cardio",
+      "section": "treatment",
       "q": "A chest pain patient is alert, breathing comfortably, and has an SpO2 of 97 percent on room air. What is the MOST appropriate oxygen therapy?",
       "choices": [
         "A nonrebreather at 15 liters per minute for all chest pain",
@@ -1169,7 +1169,7 @@
     },
     {
       "id": "nremt-emt-q0082",
-      "section": "cardio",
+      "section": "treatment",
       "q": "Why is early acquisition and transmission of a 12-lead ECG valuable in a suspected acute coronary syndrome?",
       "choices": [
         "It allows the EMT to independently diagnose and treat the blockage",
@@ -1183,7 +1183,7 @@
     },
     {
       "id": "nremt-emt-q0083",
-      "section": "cardio",
+      "section": "treatment",
       "q": "Your STEMI patient is 15 minutes from a community hospital without a cath lab and 40 minutes from a PCI center. What transport decision is MOST appropriate?",
       "choices": [
         "Transport to the closest hospital because time matters most",
@@ -1197,7 +1197,7 @@
     },
     {
       "id": "nremt-emt-q0084",
-      "section": "cardio",
+      "section": "secondary",
       "q": "A 77-year-old man wakes at night gasping, must sit upright to breathe, and has swollen ankles and crackles at both lung bases. What condition do these findings BEST support?",
       "choices": [
         "Spontaneous pneumothorax",
@@ -1211,7 +1211,7 @@
     },
     {
       "id": "nremt-emt-q0085",
-      "section": "cardio",
+      "section": "treatment",
       "q": "A patient in severe pulmonary edema is coughing pink frothy sputum, has an SpO2 of 84 percent, and is speaking in one-word sentences. Which intervention is MOST appropriate if it is within your scope and protocol?",
       "choices": [
         "Place the patient supine and suction the airway continuously",
@@ -1225,7 +1225,7 @@
     },
     {
       "id": "nremt-emt-q0086",
-      "section": "cardio",
+      "section": "secondary",
       "q": "Jugular venous distention seen while a patient sits at a 45-degree angle MOST directly suggests which problem?",
       "choices": [
         "Dehydration from prolonged vomiting",
@@ -1239,7 +1239,7 @@
     },
     {
       "id": "nremt-emt-q0087",
-      "section": "cardio",
+      "section": "primary",
       "q": "A patient with a recent large myocardial infarction is cool, mottled, and confused with a blood pressure of 76/50 mmHg and crackles in both lungs. Which type of shock is MOST likely?",
       "choices": [
         "Hypovolemic shock",
@@ -1253,7 +1253,7 @@
     },
     {
       "id": "nremt-emt-q0088",
-      "section": "cardio",
+      "section": "primary",
       "q": "Which term describes the volume of blood returning to and filling the ventricle just before contraction?",
       "choices": [
         "Afterload",
@@ -1267,7 +1267,7 @@
     },
     {
       "id": "nremt-emt-q0089",
-      "section": "cardio",
+      "section": "treatment",
       "q": "A 62-year-old woman has a blood pressure of 224/128 mmHg with a severe headache, blurred vision, and new confusion. How should this be classified and managed?",
       "choices": [
         "Hypertensive emergency requiring calm handling and prompt transport",
@@ -1281,7 +1281,7 @@
     },
     {
       "id": "nremt-emt-q0090",
-      "section": "cardio",
+      "section": "secondary",
       "q": "A 68-year-old man describes a sudden tearing pain between his shoulder blades, and you find a markedly weaker radial pulse on the left than the right. What should you suspect?",
       "choices": [
         "Simple musculoskeletal back strain",
@@ -1295,7 +1295,7 @@
     },
     {
       "id": "nremt-emt-q0091",
-      "section": "cardio",
+      "section": "primary",
       "q": "You find an unresponsive adult who is making occasional slow gasping sounds. What is the MOST appropriate interpretation?",
       "choices": [
         "He is breathing adequately, so monitor and give oxygen",
@@ -1309,7 +1309,7 @@
     },
     {
       "id": "nremt-emt-q0092",
-      "section": "cardio",
+      "section": "primary",
       "q": "How long should you spend checking for a carotid pulse in an unresponsive adult who is not breathing normally?",
       "choices": [
         "No more than 10 seconds",
@@ -1323,7 +1323,7 @@
     },
     {
       "id": "nremt-emt-q0093",
-      "section": "cardio",
+      "section": "primary",
       "q": "What are the correct rate and depth for chest compressions on an adult in cardiac arrest?",
       "choices": [
         "60 to 80 per minute at a depth of 1 inch",
@@ -1337,7 +1337,7 @@
     },
     {
       "id": "nremt-emt-q0094",
-      "section": "cardio",
+      "section": "primary",
       "q": "Why is complete chest recoil between compressions important during CPR?",
       "choices": [
         "It prevents rib fractures from occurring",
@@ -1351,7 +1351,7 @@
     },
     {
       "id": "nremt-emt-q0095",
-      "section": "cardio",
+      "section": "primary",
       "q": "During two-rescuer adult CPR without an advanced airway, what compression-to-ventilation ratio should be used?",
       "choices": [
         "15 compressions to 2 breaths",
@@ -1365,7 +1365,7 @@
     },
     {
       "id": "nremt-emt-q0096",
-      "section": "cardio",
+      "section": "primary",
       "q": "Once an advanced airway such as a supraglottic device is in place during adult CPR, how should ventilations be delivered?",
       "choices": [
         "Pause compressions every 30 compressions for 2 breaths",
@@ -1379,7 +1379,7 @@
     },
     {
       "id": "nremt-emt-q0097",
-      "section": "cardio",
+      "section": "primary",
       "q": "What is the MAIN reason rescuers should switch compressor roles about every 2 minutes?",
       "choices": [
         "Rescuer fatigue degrades compression depth and rate before the rescuer notices",
@@ -1393,7 +1393,7 @@
     },
     {
       "id": "nremt-emt-q0098",
-      "section": "cardio",
+      "section": "primary",
       "q": "Chest compression fraction is a quality measure of resuscitation. What target should a team aim for?",
       "choices": [
         "Above 30 percent",
@@ -1407,7 +1407,7 @@
     },
     {
       "id": "nremt-emt-q0099",
-      "section": "cardio",
+      "section": "primary",
       "q": "Interruptions in chest compressions during a resuscitation should be limited to what maximum duration?",
       "choices": [
         "Less than 30 seconds",
@@ -1421,7 +1421,7 @@
     },
     {
       "id": "nremt-emt-q0100",
-      "section": "cardio",
+      "section": "primary",
       "q": "An AED advises a shock on an adult in cardiac arrest and you deliver it. What should happen IMMEDIATELY next?",
       "choices": [
         "Resume chest compressions without checking a pulse",
@@ -1435,7 +1435,7 @@
     },
     {
       "id": "nremt-emt-q0101",
-      "section": "cardio",
+      "section": "primary",
       "q": "Which pair of rhythms is shockable with an AED?",
       "choices": [
         "Asystole and pulseless electrical activity",
@@ -1449,7 +1449,7 @@
     },
     {
       "id": "nremt-emt-q0102",
-      "section": "cardio",
+      "section": "primary",
       "q": "A partner insists on shocking a flat-line asystolic patient because he believes it will restart the heart. What is the BEST response?",
       "choices": [
         "Agree, since a single shock is harmless and might help",
@@ -1463,7 +1463,7 @@
     },
     {
       "id": "nremt-emt-q0103",
-      "section": "cardio",
+      "section": "primary",
       "q": "Pulseless electrical activity is BEST described as which of the following?",
       "choices": [
         "An organized rhythm on the monitor with no palpable pulse",
@@ -1477,7 +1477,7 @@
     },
     {
       "id": "nremt-emt-q0104",
-      "section": "cardio",
+      "section": "primary",
       "q": "You are preparing to apply AED pads to a man with a hairy chest that is wet from sweat. What is the BEST preparation?",
       "choices": [
         "Dry the chest and shave the pad sites if the pads will not adhere",
@@ -1491,7 +1491,7 @@
     },
     {
       "id": "nremt-emt-q0105",
-      "section": "cardio",
+      "section": "primary",
       "q": "You notice a hard implanted pacemaker bulge under the skin where you planned to place an AED pad. What should you do?",
       "choices": [
         "Withhold defibrillation entirely because of the device",
@@ -1505,7 +1505,7 @@
     },
     {
       "id": "nremt-emt-q0106",
-      "section": "cardio",
+      "section": "primary",
       "q": "An adult arrest patient has a nitroglycerin transdermal patch on the left upper chest where a pad belongs. What is the correct action?",
       "choices": [
         "Leave the patch in place and shift the pad slightly lower",
@@ -1519,7 +1519,7 @@
     },
     {
       "id": "nremt-emt-q0107",
-      "section": "cardio",
+      "section": "primary",
       "q": "You are treating a 5-year-old, about 20 kg, in cardiac arrest and the AED has both adult and pediatric pads. Which should you use?",
       "choices": [
         "Adult pads, because they cover more surface area",
@@ -1533,7 +1533,7 @@
     },
     {
       "id": "nremt-emt-q0108",
-      "section": "cardio",
+      "section": "primary",
       "q": "Only pediatric AED pads are available for an adult in ventricular fibrillation. What is the MOST appropriate action?",
       "choices": [
         "Apply the pediatric pads and deliver the reduced-energy shock",
@@ -1547,7 +1547,7 @@
     },
     {
       "id": "nremt-emt-q0109",
-      "section": "cardio",
+      "section": "primary",
       "q": "During an ongoing resuscitation with an AED attached, how often should the rhythm be analyzed?",
       "choices": [
         "Every 30 seconds",
@@ -1561,7 +1561,7 @@
     },
     {
       "id": "nremt-emt-q0110",
-      "section": "cardio",
+      "section": "primary",
       "q": "An unwitnessed adult collapse is found by your crew with an AED already on scene. What is the recommended sequence?",
       "choices": [
         "Give 2 minutes of CPR first, then attach the AED",
@@ -1575,7 +1575,7 @@
     },
     {
       "id": "nremt-emt-q0111",
-      "section": "cardio",
+      "section": "primary",
       "q": "You pull an unresponsive, pulseless teenager from a lake. How does the initial approach differ from a standard adult sudden collapse?",
       "choices": [
         "Start with about 2 minutes of rescue breaths and CPR because the arrest is hypoxic in origin",
@@ -1589,7 +1589,7 @@
     },
     {
       "id": "nremt-emt-q0112",
-      "section": "cardio",
+      "section": "primary",
       "q": "A hiker is found cold, stiff, and pulseless after prolonged exposure with a core temperature well below normal. Which principle applies?",
       "choices": [
         "Resuscitation is futile once the skin is cold to the touch",
@@ -1603,7 +1603,7 @@
     },
     {
       "id": "nremt-emt-q0113",
-      "section": "cardio",
+      "section": "primary",
       "q": "A 26-year-old is unresponsive and pulseless next to a syringe, with pinpoint pupils. What is the priority?",
       "choices": [
         "Administer naloxone first and reassess before starting CPR",
@@ -1617,7 +1617,7 @@
     },
     {
       "id": "nremt-emt-q0114",
-      "section": "cardio",
+      "section": "primary",
       "q": "A woman who appears about 34 weeks pregnant is in cardiac arrest. Which modification should be used during CPR?",
       "choices": [
         "Compress the lower sternum to avoid the uterus",
@@ -1631,7 +1631,7 @@
     },
     {
       "id": "nremt-emt-q0115",
-      "section": "cardio",
+      "section": "primary",
       "q": "A trauma patient in cardiac arrest after a high-speed collision presents with no pulse. What is the MOST appropriate approach?",
       "choices": [
         "Provide CPR while treating reversible causes such as hemorrhage and airway obstruction, and transport rapidly",
@@ -1645,7 +1645,7 @@
     },
     {
       "id": "nremt-emt-q0116",
-      "section": "cardio",
+      "section": "ops",
       "q": "Which finding makes it appropriate to withhold resuscitation on an apparently deceased patient?",
       "choices": [
         "The patient appears elderly and frail",
@@ -1659,7 +1659,7 @@
     },
     {
       "id": "nremt-emt-q0117",
-      "section": "cardio",
+      "section": "ops",
       "q": "You are handed a valid, signed POLST form specifying do not attempt resuscitation for a pulseless patient. What should you do?",
       "choices": [
         "Begin CPR anyway because the form might be outdated",
@@ -1673,7 +1673,7 @@
     },
     {
       "id": "nremt-emt-q0118",
-      "section": "cardio",
+      "section": "ops",
       "q": "Your crew has run a prolonged resuscitation with no return of circulation and persistent asystole. Who ordinarily authorizes termination of resuscitation in the field?",
       "choices": [
         "The senior EMT on scene using personal judgment",
@@ -1687,7 +1687,7 @@
     },
     {
       "id": "nremt-emt-q0119",
-      "section": "cardio",
+      "section": "treatment",
       "q": "You achieve return of spontaneous circulation on an adult. Which set of actions is MOST appropriate immediately afterward?",
       "choices": [
         "Reassess airway and breathing, ventilate at 1 breath every 6 seconds if needed, obtain a blood pressure, and transport rapidly",
@@ -1701,7 +1701,7 @@
     },
     {
       "id": "nremt-emt-q0120",
-      "section": "cardio",
+      "section": "ops",
       "q": "Why is closed-loop communication emphasized during a resuscitation?",
       "choices": [
         "It shortens the written documentation required afterward",
@@ -1715,7 +1715,7 @@
     },
     {
       "id": "nremt-emt-q0121",
-      "section": "cardio",
+      "section": "primary",
       "q": "What is the correct compression depth for a 6-year-old child in cardiac arrest?",
       "choices": [
         "About 1 inch",
@@ -1729,7 +1729,7 @@
     },
     {
       "id": "nremt-emt-q0122",
-      "section": "cardio",
+      "section": "primary",
       "q": "You and your partner are performing CPR on a 4-month-old infant. What compression-to-ventilation ratio should you use?",
       "choices": [
         "30 compressions to 2 breaths",
@@ -1743,7 +1743,7 @@
     },
     {
       "id": "nremt-emt-q0123",
-      "section": "cardio",
+      "section": "primary",
       "q": "Which compression technique is preferred for a two-rescuer infant resuscitation?",
       "choices": [
         "Heel of one hand on the lower sternum",
@@ -1757,7 +1757,7 @@
     },
     {
       "id": "nremt-emt-q0124",
-      "section": "cardio",
+      "section": "primary",
       "q": "Most pediatric cardiac arrests differ from adult arrests in which important way?",
       "choices": [
         "They are usually caused by respiratory failure or shock rather than a primary cardiac rhythm",
@@ -1771,7 +1771,7 @@
     },
     {
       "id": "nremt-emt-q0125",
-      "section": "cardio",
+      "section": "primary",
       "q": "A newborn has been dried, warmed, positioned, and stimulated, and 30 seconds later the heart rate is 84 beats per minute with weak respiratory effort. What is the NEXT action?",
       "choices": [
         "Begin chest compressions at a 3 to 1 ratio",
@@ -1785,7 +1785,7 @@
     },
     {
       "id": "nremt-emt-q0126",
-      "section": "cardio",
+      "section": "primary",
       "q": "After 30 seconds of effective positive pressure ventilation, a newborn's heart rate is 48 beats per minute. What should you do?",
       "choices": [
         "Continue ventilation alone and recheck in two minutes",
@@ -1799,7 +1799,7 @@
     },
     {
       "id": "nremt-emt-q0127",
-      "section": "cardio",
+      "section": "primary",
       "q": "Which of the following is the FIRST step in caring for a newly delivered newborn who is crying vigorously?",
       "choices": [
         "Suction the stomach with a bulb syringe",
@@ -1813,7 +1813,7 @@
     },
     {
       "id": "nremt-emt-q0128",
-      "section": "cardio",
+      "section": "secondary",
       "q": "Which vital sign finding is MOST concerning in a 2-year-old with severe dehydration and tachycardia?",
       "choices": [
         "A respiratory rate of 30 breaths per minute",
@@ -1827,7 +1827,7 @@
     },
     {
       "id": "nremt-emt-q0129",
-      "section": "cardio",
+      "section": "primary",
       "q": "An 8-month-old has a heart rate of 170, mottled skin, and delayed capillary refill, but a palpable pulse and a normal blood pressure for age. How is this BEST classified?",
       "choices": [
         "Compensated shock",
@@ -1841,7 +1841,7 @@
     },
     {
       "id": "nremt-emt-q0130",
-      "section": "cardio",
+      "section": "primary",
       "q": "Which type of shock results from a mechanical barrier to cardiac filling or outflow, such as a tension pneumothorax or cardiac tamponade?",
       "choices": [
         "Distributive shock",
@@ -1855,7 +1855,7 @@
     },
     {
       "id": "nremt-emt-q0131",
-      "section": "cardio",
+      "section": "treatment",
       "q": "Which set of interventions is MOST appropriate for an adult in compensated hypovolemic shock from internal bleeding?",
       "choices": [
         "Give small sips of water to replace lost volume",
@@ -1869,7 +1869,7 @@
     },
     {
       "id": "nremt-emt-q0132",
-      "section": "cardio",
+      "section": "secondary",
       "q": "What capillary refill time is considered normal in a warm adult or child?",
       "choices": [
         "Less than 2 seconds",
@@ -1883,7 +1883,7 @@
     },
     {
       "id": "nremt-emt-q0133",
-      "section": "cardio",
+      "section": "primary",
       "q": "A 30-year-old stung by a bee is warm, flushed, and hypotensive with hives and wheezing. Which type of shock is present?",
       "choices": [
         "Cardiogenic shock",
@@ -1897,7 +1897,7 @@
     },
     {
       "id": "nremt-emt-q0134",
-      "section": "cardio",
+      "section": "secondary",
       "q": "A 19-year-old faints briefly at a concert after standing for hours, then wakes fully oriented with normal vital signs. What is the MOST likely mechanism?",
       "choices": [
         "Vasovagal syncope with transient cerebral hypoperfusion",
@@ -1911,7 +1911,7 @@
     },
     {
       "id": "nremt-emt-q0135",
-      "section": "cardio",
+      "section": "treatment",
       "q": "A 45-year-old reports a sudden racing heartbeat with a regular pulse too fast to count, mild lightheadedness, but a blood pressure of 118/72 mmHg and clear lungs. What is the MOST appropriate EMT care?",
       "choices": [
         "Instruct him to hold his breath and press firmly on both carotid arteries",
@@ -1925,7 +1925,7 @@
     },
     {
       "id": "nremt-emt-q0136",
-      "section": "cardio",
+      "section": "primary",
       "q": "A stabbing victim has absent breath sounds on the left, hypotension, and a rapid weak pulse without tracheal deviation. What is the MOST likely cause of his shock?",
       "choices": [
         "Neurogenic shock from spinal injury",
@@ -1939,7 +1939,7 @@
     },
     {
       "id": "nremt-emt-q0137",
-      "section": "cardio",
+      "section": "primary",
       "q": "Which statement about the electrical conduction pathway is MOST accurate?",
       "choices": [
         "The AV node briefly delays the impulse so the atria can finish emptying into the ventricles",
@@ -1953,7 +1953,7 @@
     },
     {
       "id": "nremt-emt-q0138",
-      "section": "cardio",
+      "section": "primary",
       "q": "During a resuscitation you have a lone patient in a narrow hallway with a soft carpeted floor. What is the BEST action before beginning compressions?",
       "choices": [
         "Compress in place and press harder to make up for the surface",
@@ -1967,7 +1967,7 @@
     },
     {
       "id": "nremt-emt-q0139",
-      "section": "cardio",
+      "section": "primary",
       "q": "A 3-year-old is unresponsive with agonal gasps and no pulse, and you are the only rescuer with no AED yet on scene. What is the FIRST action?",
       "choices": [
         "Run to the ambulance to retrieve the AED before starting anything",
@@ -1981,7 +1981,7 @@
     },
     {
       "id": "nremt-emt-q0140",
-      "section": "trauma",
+      "section": "scene",
       "q": "A car strikes a bridge abutment at 55 mph and stops instantly. Which principle BEST explains why the unrestrained driver continues forward into the steering column?",
       "choices": [
         "A body in motion stays in motion until acted on by an outside force",
@@ -1995,7 +1995,7 @@
     },
     {
       "id": "nremt-emt-q0141",
-      "section": "trauma",
+      "section": "scene",
       "q": "An unrestrained driver in a frontal collision followed the up-and-over pathway. Which injury pattern should you suspect FIRST?",
       "choices": [
         "Head, facial, cervical spine, and chest injury",
@@ -2009,7 +2009,7 @@
     },
     {
       "id": "nremt-emt-q0142",
-      "section": "trauma",
+      "section": "scene",
       "q": "A restrained driver slid forward and downward under the dash on impact. Which assessment finding is MOST consistent with this mechanism?",
       "choices": [
         "Flail segment of the left chest wall",
@@ -2023,7 +2023,7 @@
     },
     {
       "id": "nremt-emt-q0143",
-      "section": "trauma",
+      "section": "scene",
       "q": "A vehicle is struck broadside on the driver's door. Compared with a frontal collision, which injury is MOST likely in this lateral impact?",
       "choices": [
         "Bilateral wrist fractures from bracing",
@@ -2037,7 +2037,7 @@
     },
     {
       "id": "nremt-emt-q0144",
-      "section": "trauma",
+      "section": "scene",
       "q": "An occupant was ejected from a rolling vehicle. Why does ejection raise your index of suspicion so sharply?",
       "choices": [
         "Ejected patients rarely sustain spinal injury",
@@ -2051,7 +2051,7 @@
     },
     {
       "id": "nremt-emt-q0145",
-      "section": "trauma",
+      "section": "scene",
       "q": "A 40-year-old man fell from a roof. At what fall height does a fall alone meet significant mechanism criteria for an adult?",
       "choices": [
         "More than 6 feet",
@@ -2065,7 +2065,7 @@
     },
     {
       "id": "nremt-emt-q0146",
-      "section": "trauma",
+      "section": "scene",
       "q": "A 4-year-old fell from a second-story window. Which fall height meets significant mechanism criteria for a child?",
       "choices": [
         "More than 10 feet or two to three times the child's height",
@@ -2079,7 +2079,7 @@
     },
     {
       "id": "nremt-emt-q0147",
-      "section": "trauma",
+      "section": "scene",
       "q": "After an explosion, a patient has no external wounds but complains of ear pain and increasing shortness of breath. Which blast phase MOST likely caused his injury?",
       "choices": [
         "Tertiary, from being thrown against a wall",
@@ -2093,7 +2093,7 @@
     },
     {
       "id": "nremt-emt-q0148",
-      "section": "trauma",
+      "section": "scene",
       "q": "Which statement BEST describes why a high-velocity rifle wound causes more tissue damage than a low-velocity handgun wound?",
       "choices": [
         "Rifle bullets are always larger in diameter",
@@ -2107,7 +2107,7 @@
     },
     {
       "id": "nremt-emt-q0149",
-      "section": "trauma",
+      "section": "scene",
       "q": "A restrained passenger wearing only a lap belt was in a frontal crash. Which injury is MOST closely associated with this restraint pattern?",
       "choices": [
         "Bilateral clavicle fractures",
@@ -2121,7 +2121,7 @@
     },
     {
       "id": "nremt-emt-q0150",
-      "section": "trauma",
+      "section": "treatment",
       "q": "A critically injured trauma patient has an unstable airway and signs of shock. What is the target on-scene time?",
       "choices": [
         "10 minutes or less",
@@ -2135,7 +2135,7 @@
     },
     {
       "id": "nremt-emt-q0151",
-      "section": "trauma",
+      "section": "treatment",
       "q": "Which facility designation provides the HIGHEST level of definitive trauma care with 24-hour in-house surgical capability and research and teaching commitments?",
       "choices": [
         "Level IV",
@@ -2149,7 +2149,7 @@
     },
     {
       "id": "nremt-emt-q0152",
-      "section": "trauma",
+      "section": "scene",
       "q": "Which situation MOST clearly justifies requesting a helicopter for a trauma patient?",
       "choices": [
         "A stable patient with an isolated closed forearm fracture 5 minutes from the hospital",
@@ -2163,7 +2163,7 @@
     },
     {
       "id": "nremt-emt-q0153",
-      "section": "trauma",
+      "section": "primary",
       "q": "You approach a patient with a spurting thigh wound who is awake and talking. What is your FIRST action?",
       "choices": [
         "Apply a cervical collar",
@@ -2177,7 +2177,7 @@
     },
     {
       "id": "nremt-emt-q0154",
-      "section": "trauma",
+      "section": "secondary",
       "q": "During a rapid trauma assessment, the B and T in DCAP-BTLS stand for which findings?",
       "choices": [
         "Burns and tenderness",
@@ -2191,7 +2191,7 @@
     },
     {
       "id": "nremt-emt-q0155",
-      "section": "trauma",
+      "section": "treatment",
       "q": "A patient has steady bleeding from a forearm laceration. What is the MOST appropriate initial action?",
       "choices": [
         "Apply a tourniquet immediately",
@@ -2205,7 +2205,7 @@
     },
     {
       "id": "nremt-emt-q0156",
-      "section": "trauma",
+      "section": "treatment",
       "q": "Direct pressure fails to control arterial bleeding from a mid-forearm wound. Where should the tourniquet be placed?",
       "choices": [
         "Directly over the wound",
@@ -2219,7 +2219,7 @@
     },
     {
       "id": "nremt-emt-q0157",
-      "section": "trauma",
+      "section": "treatment",
       "q": "You are tightening a commercial tourniquet on an injured leg. What endpoint tells you it is tight enough?",
       "choices": [
         "The patient reports significant pain",
@@ -2233,7 +2233,7 @@
     },
     {
       "id": "nremt-emt-q0158",
-      "section": "trauma",
+      "section": "treatment",
       "q": "Fifteen minutes after you applied a tourniquet, bleeding is controlled and your partner asks whether to loosen it briefly. What is the MOST appropriate response?",
       "choices": [
         "Leave it in place, note and communicate the application time, and do not loosen it",
@@ -2247,7 +2247,7 @@
     },
     {
       "id": "nremt-emt-q0159",
-      "section": "trauma",
+      "section": "treatment",
       "q": "A patient has heavy bleeding from a deep wound in the groin where a tourniquet cannot be placed. What is the BEST hemorrhage control technique?",
       "choices": [
         "Apply a pressure dressing and elevate the legs",
@@ -2261,7 +2261,7 @@
     },
     {
       "id": "nremt-emt-q0160",
-      "section": "trauma",
+      "section": "treatment",
       "q": "A conscious adult has a spontaneous anterior nosebleed. Which instruction is MOST appropriate?",
       "choices": [
         "Tilt the head back and pinch the bridge of the nose",
@@ -2275,7 +2275,7 @@
     },
     {
       "id": "nremt-emt-q0161",
-      "section": "trauma",
+      "section": "primary",
       "q": "A 30-year-old was struck in the left flank during a fight. He is pale and anxious with a heart rate of 124 and no external bleeding. These findings MOST likely indicate what?",
       "choices": [
         "A simple muscle contusion",
@@ -2289,7 +2289,7 @@
     },
     {
       "id": "nremt-emt-q0162",
-      "section": "trauma",
+      "section": "primary",
       "q": "A 7-year-old struck by a car has a heart rate of 150, delayed capillary refill, and a blood pressure of 96/70. Which interpretation is MOST accurate?",
       "choices": [
         "The child is in compensated shock and a normal blood pressure does not rule it out",
@@ -2303,7 +2303,7 @@
     },
     {
       "id": "nremt-emt-q0163",
-      "section": "trauma",
+      "section": "treatment",
       "q": "Which intervention is MOST important in preventing worsening of trauma-induced coagulopathy during transport?",
       "choices": [
         "Administering oral fluids for thirst",
@@ -2317,7 +2317,7 @@
     },
     {
       "id": "nremt-emt-q0164",
-      "section": "trauma",
+      "section": "treatment",
       "q": "A worker's fingers were completely amputated by a saw. How should the amputated parts be cared for during transport?",
       "choices": [
         "Place them directly on ice to preserve tissue",
@@ -2331,7 +2331,7 @@
     },
     {
       "id": "nremt-emt-q0165",
-      "section": "trauma",
+      "section": "treatment",
       "q": "A stabbing victim has a segment of bowel protruding through an abdominal wound. What is the MOST appropriate management?",
       "choices": [
         "Gently replace the bowel into the abdomen and bandage",
@@ -2345,7 +2345,7 @@
     },
     {
       "id": "nremt-emt-q0166",
-      "section": "trauma",
+      "section": "treatment",
       "q": "A patient has a nail impaled through the cheek with the point protruding into the mouth and blood accumulating in the airway. What is the MOST appropriate action?",
       "choices": [
         "Remove the object, control bleeding from both sides, and manage the airway",
@@ -2359,7 +2359,7 @@
     },
     {
       "id": "nremt-emt-q0167",
-      "section": "trauma",
+      "section": "secondary",
       "q": "A patient has a flap of skin torn loose from the forearm that remains attached along one edge. This injury is BEST described as which type?",
       "choices": [
         "Abrasion",
@@ -2373,7 +2373,7 @@
     },
     {
       "id": "nremt-emt-q0168",
-      "section": "trauma",
+      "section": "treatment",
       "q": "A patient has a sucking chest wound from a gunshot to the right anterior chest. Which dressing is MOST appropriate?",
       "choices": [
         "A dry sterile gauze dressing taped on all four sides",
@@ -2387,7 +2387,7 @@
     },
     {
       "id": "nremt-emt-q0169",
-      "section": "trauma",
+      "section": "treatment",
       "q": "After you apply an occlusive dressing to an open chest wound, the patient becomes more dyspneic and hypotensive with decreasing breath sounds on that side. What should you do NEXT?",
       "choices": [
         "Apply a second occlusive dressing over the first",
@@ -2401,7 +2401,7 @@
     },
     {
       "id": "nremt-emt-q0170",
-      "section": "trauma",
+      "section": "primary",
       "q": "Which set of findings is MOST consistent with a developing tension pneumothorax?",
       "choices": [
         "Absent breath sounds on one side, distended neck veins, and hypotension",
@@ -2415,7 +2415,7 @@
     },
     {
       "id": "nremt-emt-q0171",
-      "section": "trauma",
+      "section": "primary",
       "q": "A 9-year-old was struck in the chest by a falling beam. A section of the anterior chest moves inward during inhalation. What does this finding indicate and why is it concerning in a child?",
       "choices": [
         "A simple rib contusion that needs only pain control",
@@ -2429,7 +2429,7 @@
     },
     {
       "id": "nremt-emt-q0172",
-      "section": "trauma",
+      "section": "primary",
       "q": "A stab wound to the left chest produces hypotension, jugular venous distention, and muffled heart sounds. What condition do these findings describe?",
       "choices": [
         "Tension pneumothorax",
@@ -2443,7 +2443,7 @@
     },
     {
       "id": "nremt-emt-q0173",
-      "section": "trauma",
+      "section": "primary",
       "q": "A 12-year-old is struck in the chest by a baseball and immediately collapses pulseless. What is the MOST appropriate action?",
       "choices": [
         "Apply an occlusive dressing to the chest and transport",
@@ -2457,7 +2457,7 @@
     },
     {
       "id": "nremt-emt-q0174",
-      "section": "trauma",
+      "section": "treatment",
       "q": "A patient thrown from a motorcycle has pelvic pain, and gentle palpation reveals instability with signs of shock. What is the MOST appropriate action?",
       "choices": [
         "Repeatedly rock the pelvis to confirm instability",
@@ -2471,7 +2471,7 @@
     },
     {
       "id": "nremt-emt-q0175",
-      "section": "trauma",
+      "section": "secondary",
       "q": "A patient kicked in the abdomen holds his knees drawn up and has rigid, tender abdominal muscles with pain in the left shoulder. What do these findings MOST likely indicate?",
       "choices": [
         "A simple abdominal wall bruise",
@@ -2485,7 +2485,7 @@
     },
     {
       "id": "nremt-emt-q0176",
-      "section": "trauma",
+      "section": "secondary",
       "q": "Two hours after a crush injury to the lower leg, a patient has severe pain out of proportion to the injury, pain on passive stretch, and numbness in the foot. What should you suspect?",
       "choices": [
         "Simple muscle cramping from immobility",
@@ -2499,7 +2499,7 @@
     },
     {
       "id": "nremt-emt-q0177",
-      "section": "trauma",
+      "section": "treatment",
       "q": "Before and after splinting any extremity injury, which assessment must be performed and documented?",
       "choices": [
         "Blood glucose in the affected limb",
@@ -2513,7 +2513,7 @@
     },
     {
       "id": "nremt-emt-q0178",
-      "section": "trauma",
+      "section": "treatment",
       "q": "Which patient is the BEST candidate for a traction splint?",
       "choices": [
         "An isolated closed mid-shaft femur fracture with an intact distal pulse",
@@ -2527,7 +2527,7 @@
     },
     {
       "id": "nremt-emt-q0179",
-      "section": "trauma",
+      "section": "treatment",
       "q": "A patient fell on an outstretched arm and has pain and deformity over the right clavicle with good distal circulation. Which immobilization is MOST appropriate?",
       "choices": [
         "Traction splint to the arm",
@@ -2541,7 +2541,7 @@
     },
     {
       "id": "nremt-emt-q0180",
-      "section": "trauma",
+      "section": "treatment",
       "q": "A severely angulated mid-shaft tibia fracture has no palpable distal pulse and a cool, pale foot. Transport time is 35 minutes. What is the MOST appropriate action?",
       "choices": [
         "Splint the limb exactly as found and transport",
@@ -2555,7 +2555,7 @@
     },
     {
       "id": "nremt-emt-q0181",
-      "section": "trauma",
+      "section": "secondary",
       "q": "A head-injured patient's vitals change from 130/80 with a pulse of 88 to 186/70 with a pulse of 48 and irregular breathing. What does this indicate?",
       "choices": [
         "Compensated hypovolemic shock",
@@ -2569,7 +2569,7 @@
     },
     {
       "id": "nremt-emt-q0182",
-      "section": "trauma",
+      "section": "secondary",
       "q": "A trauma patient opens his eyes to painful stimulus, makes incomprehensible sounds, and withdraws from pain. What is his Glasgow Coma Scale score?",
       "choices": [
         "8",
@@ -2583,7 +2583,7 @@
     },
     {
       "id": "nremt-emt-q0183",
-      "section": "trauma",
+      "section": "treatment",
       "q": "A patient struck in the head has bruising behind the ear and clear fluid draining from the nose. What is the MOST appropriate action?",
       "choices": [
         "Pack the nostril firmly to stop the drainage",
@@ -2597,7 +2597,7 @@
     },
     {
       "id": "nremt-emt-q0184",
-      "section": "trauma",
+      "section": "treatment",
       "q": "Using modern selective spinal motion restriction criteria, which patient MOST clearly requires immobilization?",
       "choices": [
         "An alert, sober patient in a minor collision with no pain and full painless range of motion",
@@ -2611,7 +2611,7 @@
     },
     {
       "id": "nremt-emt-q0185",
-      "section": "trauma",
+      "section": "primary",
       "q": "An intubated-scope aside, you are bag-mask ventilating an adult head-injury patient with a GCS of 6 and no signs of herniation. What ventilation rate is MOST appropriate?",
       "choices": [
         "20 breaths per minute to lower intracranial pressure",
@@ -2625,7 +2625,7 @@
     },
     {
       "id": "nremt-emt-q0186",
-      "section": "trauma",
+      "section": "secondary",
       "q": "Using the adult rule of nines, what total body surface area is burned when the entire anterior trunk and one entire arm are involved?",
       "choices": [
         "27 percent",
@@ -2639,7 +2639,7 @@
     },
     {
       "id": "nremt-emt-q0187",
-      "section": "trauma",
+      "section": "secondary",
       "q": "How does the pediatric rule of nines differ from the adult version for an infant?",
       "choices": [
         "The head is 9 percent and each leg is 18 percent, as in adults",
@@ -2653,7 +2653,7 @@
     },
     {
       "id": "nremt-emt-q0188",
-      "section": "trauma",
+      "section": "treatment",
       "q": "A patient has partial and full thickness burns to about 30 percent of the body. After stopping the burning process, what is the MOST appropriate dressing?",
       "choices": [
         "Wet sheets soaked in cool sterile water",
@@ -2667,7 +2667,7 @@
     },
     {
       "id": "nremt-emt-q0189",
-      "section": "trauma",
+      "section": "primary",
       "q": "A patient rescued from a house fire has singed nasal hairs, soot around the mouth, and a hoarse voice. What is your greatest concern?",
       "choices": [
         "Depth of the skin burns on the arms",
@@ -2681,7 +2681,7 @@
     },
     {
       "id": "nremt-emt-q0190",
-      "section": "trauma",
+      "section": "treatment",
       "q": "A worker has dry chemical powder on the forearm and reports burning pain. What is the FIRST action?",
       "choices": [
         "Brush the dry powder off the skin, then flush with copious water for at least 20 minutes",
@@ -2695,7 +2695,7 @@
     },
     {
       "id": "nremt-emt-q0191",
-      "section": "trauma",
+      "section": "treatment",
       "q": "A patient has a laceration to the side of the neck with bleeding and a sucking sound during inhalation. Which action is MOST appropriate?",
       "choices": [
         "Apply a circumferential pressure dressing around the neck",
@@ -2709,7 +2709,7 @@
     },
     {
       "id": "nremt-emt-q0192",
-      "section": "trauma",
+      "section": "treatment",
       "q": "A woman at 34 weeks gestation was in a collision and is immobilized supine. She becomes pale and hypotensive. What should you do NEXT?",
       "choices": [
         "Sit her fully upright to relieve pressure",
@@ -2723,7 +2723,7 @@
     },
     {
       "id": "nremt-emt-q0193",
-      "section": "medical",
+      "section": "secondary",
       "q": "You are assessing a 58-year-old man with generalized weakness. Which mnemonic BEST organizes the history of the present illness for his complaint of chest discomfort?",
       "choices": [
         "SAMPLE",
@@ -2737,7 +2737,7 @@
     },
     {
       "id": "nremt-emt-q0194",
-      "section": "medical",
+      "section": "secondary",
       "q": "A medical patient is hypotensive, tachycardic, and confused. How often should you repeat the reassessment during transport?",
       "choices": [
         "Every 5 minutes",
@@ -2751,7 +2751,7 @@
     },
     {
       "id": "nremt-emt-q0195",
-      "section": "medical",
+      "section": "secondary",
       "q": "A 70-year-old woman is found confused at home. Using AEIOU-TIPS, which of the following is NOT a cause of altered mental status represented in that mnemonic?",
       "choices": [
         "Infection",
@@ -2765,7 +2765,7 @@
     },
     {
       "id": "nremt-emt-q0196",
-      "section": "medical",
+      "section": "secondary",
       "q": "A 44-year-old man smells strongly of alcohol and is confused. What is the MOST appropriate action?",
       "choices": [
         "Assume intoxication and transport without further assessment",
@@ -2779,7 +2779,7 @@
     },
     {
       "id": "nremt-emt-q0197",
-      "section": "medical",
+      "section": "secondary",
       "q": "A 67-year-old woman has sudden right-sided facial droop and slurred speech. Which piece of history is MOST critical for the receiving stroke center?",
       "choices": [
         "Her current blood pressure",
@@ -2793,7 +2793,7 @@
     },
     {
       "id": "nremt-emt-q0198",
-      "section": "medical",
+      "section": "secondary",
       "q": "Which three elements make up the Cincinnati Prehospital Stroke Scale?",
       "choices": [
         "Pupils, grip strength, gait",
@@ -2807,7 +2807,7 @@
     },
     {
       "id": "nremt-emt-q0199",
-      "section": "medical",
+      "section": "secondary",
       "q": "A 61-year-old man has left-sided weakness and confusion. His glucose reads 38 mg/dL. What does this MOST likely indicate?",
       "choices": [
         "Hypoglycemia mimicking a stroke",
@@ -2821,7 +2821,7 @@
     },
     {
       "id": "nremt-emt-q0200",
-      "section": "medical",
+      "section": "treatment",
       "q": "Your suspected stroke patient is alert but has a noticeable facial droop and asks for a drink of water. What is the BEST response?",
       "choices": [
         "Give small sips of water only",
@@ -2835,7 +2835,7 @@
     },
     {
       "id": "nremt-emt-q0201",
-      "section": "medical",
+      "section": "treatment",
       "q": "A patient's stroke-like symptoms completely resolved after about 20 minutes. What is the MOST appropriate action?",
       "choices": [
         "Cancel transport since symptoms resolved",
@@ -2849,7 +2849,7 @@
     },
     {
       "id": "nremt-emt-q0202",
-      "section": "medical",
+      "section": "treatment",
       "q": "Which statement about stroke treatment windows is MOST accurate for EMT reporting purposes?",
       "choices": [
         "Thrombolytics may be given up to 12 hours after onset",
@@ -2863,7 +2863,7 @@
     },
     {
       "id": "nremt-emt-q0203",
-      "section": "medical",
+      "section": "treatment",
       "q": "A 26-year-old is having a generalized tonic-clonic seizure on a tile floor. What is your FIRST action?",
       "choices": [
         "Insert an oral airway to protect the tongue",
@@ -2877,7 +2877,7 @@
     },
     {
       "id": "nremt-emt-q0204",
-      "section": "medical",
+      "section": "secondary",
       "q": "A patient has been seizing continuously for 8 minutes. This condition is BEST described as:",
       "choices": [
         "A febrile seizure",
@@ -2891,7 +2891,7 @@
     },
     {
       "id": "nremt-emt-q0205",
-      "section": "medical",
+      "section": "treatment",
       "q": "A patient's seizure has ended and she is snoring and unresponsive. What is the BEST position and action?",
       "choices": [
         "Sit her upright and offer oral glucose",
@@ -2905,7 +2905,7 @@
     },
     {
       "id": "nremt-emt-q0206",
-      "section": "medical",
+      "section": "treatment",
       "q": "A 14-month-old had a brief generalized seizure with a temperature of 103.2 F. The child is now alert and clinging to the mother. What is the MOST appropriate care?",
       "choices": [
         "Place the child in an ice water bath",
@@ -2919,7 +2919,7 @@
     },
     {
       "id": "nremt-emt-q0207",
-      "section": "medical",
+      "section": "secondary",
       "q": "A college student briefly lost consciousness after standing quickly in a hot lecture hall and awoke within seconds. This event is MOST consistent with:",
       "choices": [
         "A focal seizure",
@@ -2933,7 +2933,7 @@
     },
     {
       "id": "nremt-emt-q0208",
-      "section": "medical",
+      "section": "treatment",
       "q": "A 20-year-old with type 1 diabetes is pale, cool, and diaphoretic, with a glucose of 52 mg/dL. He is alert and can follow commands. What is the MOST appropriate treatment?",
       "choices": [
         "Assist with his insulin injection",
@@ -2947,7 +2947,7 @@
     },
     {
       "id": "nremt-emt-q0209",
-      "section": "medical",
+      "section": "treatment",
       "q": "A diabetic patient is unresponsive with a glucose of 40 mg/dL. What is the MOST appropriate EMT action?",
       "choices": [
         "Place oral glucose gel between the cheek and gum",
@@ -2961,7 +2961,7 @@
     },
     {
       "id": "nremt-emt-q0210",
-      "section": "medical",
+      "section": "secondary",
       "q": "A 32-year-old has deep rapid respirations, fruity breath odor, and reports several days of frequent urination and thirst. Which condition is MOST likely?",
       "choices": [
         "Hypoglycemic reaction",
@@ -2975,7 +2975,7 @@
     },
     {
       "id": "nremt-emt-q0211",
-      "section": "medical",
+      "section": "secondary",
       "q": "Which glucose range is generally considered normal for an adult?",
       "choices": [
         "80 to 120 mg/dL",
@@ -2989,7 +2989,7 @@
     },
     {
       "id": "nremt-emt-q0212",
-      "section": "medical",
+      "section": "secondary",
       "q": "Which statement BEST distinguishes type 1 from type 2 diabetes?",
       "choices": [
         "Type 1 occurs only in adults",
@@ -3003,7 +3003,7 @@
     },
     {
       "id": "nremt-emt-q0213",
-      "section": "medical",
+      "section": "treatment",
       "q": "A 30-year-old stung by a bee has hives, wheezing, and a blood pressure of 78/44. What is the FIRST priority?",
       "choices": [
         "Apply ice to the sting site",
@@ -3017,7 +3017,7 @@
     },
     {
       "id": "nremt-emt-q0214",
-      "section": "medical",
+      "section": "treatment",
       "q": "A 6-year-old weighing 20 kg is in anaphylaxis. Which auto-injector dose is MOST appropriate?",
       "choices": [
         "0.03 mg",
@@ -3031,7 +3031,7 @@
     },
     {
       "id": "nremt-emt-q0215",
-      "section": "medical",
+      "section": "treatment",
       "q": "Five minutes after epinephrine, your anaphylaxis patient still has stridor and a pressure of 80/50. What is the MOST appropriate action?",
       "choices": [
         "Withhold further epinephrine since one dose was given",
@@ -3045,7 +3045,7 @@
     },
     {
       "id": "nremt-emt-q0216",
-      "section": "medical",
+      "section": "treatment",
       "q": "A patient's anaphylaxis symptoms resolved completely after her own auto-injector. She refuses transport. What is the BEST explanation to give her?",
       "choices": [
         "She is fine now and can stay home",
@@ -3059,7 +3059,7 @@
     },
     {
       "id": "nremt-emt-q0217",
-      "section": "medical",
+      "section": "secondary",
       "q": "Which of the following is NOT one of the four routes of poisoning?",
       "choices": [
         "Ingestion",
@@ -3073,7 +3073,7 @@
     },
     {
       "id": "nremt-emt-q0218",
-      "section": "medical",
+      "section": "primary",
       "q": "You arrive to find a 22-year-old unresponsive with pinpoint pupils and a respiratory rate of 4. What is the MOST likely cause?",
       "choices": [
         "Stimulant overdose",
@@ -3087,7 +3087,7 @@
     },
     {
       "id": "nremt-emt-q0219",
-      "section": "medical",
+      "section": "treatment",
       "q": "After ventilating an opioid overdose patient, you give naloxone. What is the correct endpoint of treatment?",
       "choices": [
         "Full alertness and ability to walk",
@@ -3101,7 +3101,7 @@
     },
     {
       "id": "nremt-emt-q0220",
-      "section": "medical",
+      "section": "treatment",
       "q": "Activated charcoal is being considered for an ingestion. Which finding is an absolute contraindication?",
       "choices": [
         "Ingestion occurred 20 minutes ago",
@@ -3115,7 +3115,7 @@
     },
     {
       "id": "nremt-emt-q0221",
-      "section": "medical",
+      "section": "secondary",
       "q": "A farm worker is found drooling, incontinent, vomiting, and tearing after spraying pesticide. Which exposure is MOST likely?",
       "choices": [
         "Carbon monoxide",
@@ -3129,7 +3129,7 @@
     },
     {
       "id": "nremt-emt-q0222",
-      "section": "medical",
+      "section": "secondary",
       "q": "A family is found with headache, nausea, and confusion in a home with a running generator. Pulse oximetry reads 99 percent. What is the BEST interpretation?",
       "choices": [
         "Oxygenation is normal, so consider another cause",
@@ -3143,7 +3143,7 @@
     },
     {
       "id": "nremt-emt-q0223",
-      "section": "medical",
+      "section": "secondary",
       "q": "A 48-year-old who stopped drinking 3 days ago is tremulous, hallucinating, febrile, and tachycardic. This presentation is MOST consistent with:",
       "choices": [
         "Acute alcohol intoxication",
@@ -3157,7 +3157,7 @@
     },
     {
       "id": "nremt-emt-q0224",
-      "section": "medical",
+      "section": "treatment",
       "q": "A teenager intentionally took an unknown number of acetaminophen tablets 2 hours ago and looks completely well. What is the MOST appropriate action?",
       "choices": [
         "Release the patient since there are no symptoms",
@@ -3171,7 +3171,7 @@
     },
     {
       "id": "nremt-emt-q0225",
-      "section": "medical",
+      "section": "secondary",
       "q": "Which overdose is MOST associated with widened QRS complexes, seizures, and dysrhythmias?",
       "choices": [
         "Benzodiazepines",
@@ -3185,7 +3185,7 @@
     },
     {
       "id": "nremt-emt-q0226",
-      "section": "medical",
+      "section": "ops",
       "q": "When managing a poisoning where the substance is unclear, which resource is MOST appropriate to contact early?",
       "choices": [
         "The pharmacy that filled the prescription",
@@ -3199,7 +3199,7 @@
     },
     {
       "id": "nremt-emt-q0227",
-      "section": "medical",
+      "section": "secondary",
       "q": "A 19-year-old has periumbilical pain that migrated to the right lower quadrant with nausea and low-grade fever. Which condition is MOST likely?",
       "choices": [
         "Cholecystitis",
@@ -3213,7 +3213,7 @@
     },
     {
       "id": "nremt-emt-q0228",
-      "section": "medical",
+      "section": "secondary",
       "q": "A 55-year-old woman has right upper quadrant pain radiating to the right shoulder after a fatty meal. This referred pain pattern MOST suggests:",
       "choices": [
         "Cholecystitis",
@@ -3227,7 +3227,7 @@
     },
     {
       "id": "nremt-emt-q0229",
-      "section": "medical",
+      "section": "secondary",
       "q": "A 60-year-old reports vomiting material that looks like coffee grounds and black tarry stools. This BEST indicates:",
       "choices": [
         "Lower GI bleeding from hemorrhoids",
@@ -3241,7 +3241,7 @@
     },
     {
       "id": "nremt-emt-q0230",
-      "section": "medical",
+      "section": "treatment",
       "q": "A 72-year-old man has sudden tearing back pain, a pulsatile abdominal mass, and unequal femoral pulses. What is the MOST appropriate action?",
       "choices": [
         "Palpate the mass firmly to confirm it",
@@ -3255,7 +3255,7 @@
     },
     {
       "id": "nremt-emt-q0231",
-      "section": "medical",
+      "section": "secondary",
       "q": "Your abdominal pain patient lies very still with knees drawn up and has a rigid, board-like abdomen with guarding. This MOST suggests:",
       "choices": [
         "Peritonitis",
@@ -3269,7 +3269,7 @@
     },
     {
       "id": "nremt-emt-q0232",
-      "section": "medical",
+      "section": "treatment",
       "q": "A patient with severe abdominal pain asks for a sip of water. What is the MOST appropriate response?",
       "choices": [
         "Give small sips of cold water",
@@ -3283,7 +3283,7 @@
     },
     {
       "id": "nremt-emt-q0233",
-      "section": "medical",
+      "section": "secondary",
       "q": "A dialysis patient missed his last two sessions and now has weakness, nausea, and shortness of breath. Which complication is MOST concerning?",
       "choices": [
         "Hypoglycemia",
@@ -3297,7 +3297,7 @@
     },
     {
       "id": "nremt-emt-q0234",
-      "section": "medical",
+      "section": "treatment",
       "q": "Bright red blood is spurting from a dialysis patient's arteriovenous fistula site. What is the FIRST action?",
       "choices": [
         "Apply a tourniquet above the fistula immediately",
@@ -3311,7 +3311,7 @@
     },
     {
       "id": "nremt-emt-q0235",
-      "section": "medical",
+      "section": "secondary",
       "q": "An 83-year-old woman is newly confused with mild fever and foul-smelling urine. What is the MOST likely cause of her altered mental status?",
       "choices": [
         "Urinary tract infection",
@@ -3325,7 +3325,7 @@
     },
     {
       "id": "nremt-emt-q0236",
-      "section": "medical",
+      "section": "treatment",
       "q": "A 16-year-old male has sudden severe unilateral scrotal pain with nausea that began an hour ago. What is the MOST appropriate action?",
       "choices": [
         "Apply heat and have him rest at home",
@@ -3339,7 +3339,7 @@
     },
     {
       "id": "nremt-emt-q0237",
-      "section": "medical",
+      "section": "secondary",
       "q": "A patient with a history of Graves disease has a temperature of 104 F, heart rate of 160, agitation, and tremor. This BEST describes:",
       "choices": [
         "Adrenal crisis",
@@ -3353,7 +3353,7 @@
     },
     {
       "id": "nremt-emt-q0238",
-      "section": "medical",
+      "section": "secondary",
       "q": "A patient on long-term steroids ran out of medication and is now weak, nauseated, and hypotensive despite fluids. Which condition should you suspect?",
       "choices": [
         "Thyroid storm",
@@ -3367,7 +3367,7 @@
     },
     {
       "id": "nremt-emt-q0239",
-      "section": "medical",
+      "section": "treatment",
       "q": "A 12-year-old with sickle cell disease has severe bone pain in both legs. Which supportive care is MOST appropriate for an EMT?",
       "choices": [
         "Apply cold packs to the painful limbs",
@@ -3381,7 +3381,7 @@
     },
     {
       "id": "nremt-emt-q0240",
-      "section": "medical",
+      "section": "secondary",
       "q": "A patient with hemophilia struck his forearm and has a rapidly growing hematoma with only a small abrasion. What is the BEST understanding of this patient?",
       "choices": [
         "He is exaggerating a minor injury",
@@ -3395,7 +3395,7 @@
     },
     {
       "id": "nremt-emt-q0241",
-      "section": "medical",
+      "section": "treatment",
       "q": "An elderly patient on warfarin fell and struck her head. She is alert with no complaints. What is the MOST appropriate action?",
       "choices": [
         "Transport and inform the hospital of the anticoagulation and head strike",
@@ -3409,7 +3409,7 @@
     },
     {
       "id": "nremt-emt-q0242",
-      "section": "medical",
+      "section": "secondary",
       "q": "A nursing home patient has a temperature of 102.6 F, heart rate of 124, respirations of 26, and blood pressure of 86/50. This combination MOST suggests:",
       "choices": [
         "Simple influenza",
@@ -3423,7 +3423,7 @@
     },
     {
       "id": "nremt-emt-q0243",
-      "section": "medical",
+      "section": "scene",
       "q": "You are transporting a patient with suspected meningitis who has fever, severe headache, and neck stiffness. Which precaution is MOST appropriate?",
       "choices": [
         "Standard precautions only",
@@ -3437,7 +3437,7 @@
     },
     {
       "id": "nremt-emt-q0244",
-      "section": "medical",
+      "section": "scene",
       "q": "Which action BEST describes standard precautions?",
       "choices": [
         "Treating the blood and body fluids of every patient as potentially infectious",
@@ -3451,7 +3451,7 @@
     },
     {
       "id": "nremt-emt-q0245",
-      "section": "medical",
+      "section": "scene",
       "q": "A 24-year-old states she wants to end her life and has a specific plan. What is the MOST appropriate EMT approach?",
       "choices": [
         "Leave her alone to calm down",
@@ -3465,7 +3465,7 @@
     },
     {
       "id": "nremt-emt-q0246",
-      "section": "medical",
+      "section": "ops",
       "q": "You must restrain a combative patient with law enforcement. Which practice is correct?",
       "choices": [
         "Restrain the patient prone with hands behind the back",
@@ -3479,7 +3479,7 @@
     },
     {
       "id": "nremt-emt-q0247",
-      "section": "medical",
+      "section": "treatment",
       "q": "A young man is agitated, sweating profusely, undressing, and shouting with a temperature of 104 F and enormous strength. This presentation MOST suggests:",
       "choices": [
         "A simple panic attack",
@@ -3493,7 +3493,7 @@
     },
     {
       "id": "nremt-emt-q0248",
-      "section": "medical",
+      "section": "secondary",
       "q": "A patient is behaving bizarrely at a bus stop. What should you consider FIRST?",
       "choices": [
         "That the behavior is purely psychiatric",
@@ -3507,7 +3507,7 @@
     },
     {
       "id": "nremt-emt-q0249",
-      "section": "medical",
+      "section": "treatment",
       "q": "Which technique BEST reflects verbal de-escalation of an agitated patient?",
       "choices": [
         "Standing very close and maintaining constant intense eye contact",
@@ -3521,7 +3521,7 @@
     },
     {
       "id": "nremt-emt-q0250",
-      "section": "medical",
+      "section": "treatment",
       "q": "A roofer is found confused with hot, dry skin, a temperature of 105 F, and a heart rate of 140. What is the MOST appropriate immediate action?",
       "choices": [
         "Give oral electrolyte fluids and rest in the shade",
@@ -3535,7 +3535,7 @@
     },
     {
       "id": "nremt-emt-q0251",
-      "section": "medical",
+      "section": "secondary",
       "q": "How does heat exhaustion MOST clearly differ from heat stroke?",
       "choices": [
         "Heat exhaustion always causes a higher temperature",
@@ -3549,7 +3549,7 @@
     },
     {
       "id": "nremt-emt-q0252",
-      "section": "medical",
+      "section": "primary",
       "q": "A hiker is pulled from cold water, is unresponsive, and appears lifeless. How long should you assess for a pulse?",
       "choices": [
         "5 seconds",
@@ -3563,7 +3563,7 @@
     },
     {
       "id": "nremt-emt-q0253",
-      "section": "medical",
+      "section": "treatment",
       "q": "Which handling principle is MOST important in a severely hypothermic patient?",
       "choices": [
         "Massage the extremities vigorously to restore circulation",
@@ -3577,7 +3577,7 @@
     },
     {
       "id": "nremt-emt-q0254",
-      "section": "medical",
+      "section": "treatment",
       "q": "A patient has white, waxy, hard fingertips after hours outdoors and you have a 45 minute transport in a warm ambulance. What is the BEST care?",
       "choices": [
         "Rub the fingers briskly to restore feeling",
@@ -3591,7 +3591,7 @@
     },
     {
       "id": "nremt-emt-q0255",
-      "section": "medical",
+      "section": "primary",
       "q": "A child is pulled from a pool and is apneic with a pulse. What is the MOST appropriate immediate action?",
       "choices": [
         "Begin ventilations with a bag-valve mask",
@@ -3605,7 +3605,7 @@
     },
     {
       "id": "nremt-emt-q0256",
-      "section": "medical",
+      "section": "treatment",
       "q": "A patient has a honeybee stinger still embedded in the forearm. What is the correct removal technique?",
       "choices": [
         "Pull it out with tweezers by the venom sac",
@@ -3619,7 +3619,7 @@
     },
     {
       "id": "nremt-emt-q0257",
-      "section": "medical",
+      "section": "treatment",
       "q": "A hiker was bitten on the hand by a rattlesnake. Which care is MOST appropriate?",
       "choices": [
         "Apply a tight arterial tourniquet above the bite",
@@ -3633,7 +3633,7 @@
     },
     {
       "id": "nremt-emt-q0258",
-      "section": "medical",
+      "section": "treatment",
       "q": "A swimmer is stung by a jellyfish at the beach. Which initial care is BEST?",
       "choices": [
         "Rinse the area with fresh cold water",
@@ -3647,7 +3647,7 @@
     },
     {
       "id": "nremt-emt-q0259",
-      "section": "medical",
+      "section": "secondary",
       "q": "An 80-year-old man reports only fatigue and mild nausea. His ECG-capable partner suspects a cardiac cause. What geriatric principle BEST explains this?",
       "choices": [
         "Elderly patients always have classic crushing chest pain",
@@ -3661,7 +3661,7 @@
     },
     {
       "id": "nremt-emt-q0260",
-      "section": "medical",
+      "section": "secondary",
       "q": "An elderly patient brings a bag with 14 different prescriptions. What is the MOST appropriate action?",
       "choices": [
         "Leave the medications at home to save time",
@@ -3675,7 +3675,7 @@
     },
     {
       "id": "nremt-emt-q0261",
-      "section": "medical",
+      "section": "ops",
       "q": "You notice an elderly woman with poor hygiene, untreated pressure sores, and a caregiver who answers all questions for her and will not leave the room. What is the MOST appropriate response?",
       "choices": [
         "Confront the caregiver about suspected abuse",
@@ -3689,7 +3689,7 @@
     },
     {
       "id": "nremt-emt-q0262",
-      "section": "medical",
+      "section": "primary",
       "q": "Which three components make up the pediatric assessment triangle?",
       "choices": [
         "Pulse, respirations, blood pressure",
@@ -3703,7 +3703,7 @@
     },
     {
       "id": "nremt-emt-q0263",
-      "section": "medical",
+      "section": "secondary",
       "q": "A 2-year-old has a barking cough, low-grade fever, and inspiratory stridor that began at night and improves in cool air. Which condition is MOST likely?",
       "choices": [
         "Epiglottitis",
@@ -3717,7 +3717,7 @@
     },
     {
       "id": "nremt-emt-q0264",
-      "section": "medical",
+      "section": "treatment",
       "q": "A 5-year-old sits leaning forward, drooling, with muffled voice and a temperature of 104 F. What is the MOST appropriate action?",
       "choices": [
         "Lay the child flat and inspect the throat with a tongue blade",
@@ -3731,7 +3731,7 @@
     },
     {
       "id": "nremt-emt-q0265",
-      "section": "medical",
+      "section": "secondary",
       "q": "A 5-month-old has wheezing, nasal congestion, tachypnea, and poor feeding during the winter. Which condition is MOST likely?",
       "choices": [
         "Bronchiolitis",
@@ -3745,7 +3745,7 @@
     },
     {
       "id": "nremt-emt-q0266",
-      "section": "medical",
+      "section": "secondary",
       "q": "Which finding is the MOST reliable early sign of significant dehydration in a 1-year-old?",
       "choices": [
         "Bright red cheeks",
@@ -3759,7 +3759,7 @@
     },
     {
       "id": "nremt-emt-q0267",
-      "section": "medical",
+      "section": "treatment",
       "q": "A 3-week-old is lethargic, feeding poorly, and has a temperature of 100.6 F. What is the MOST appropriate action?",
       "choices": [
         "Advise the parents to give infant acetaminophen and observe at home",
@@ -3773,7 +3773,7 @@
     },
     {
       "id": "nremt-emt-q0268",
-      "section": "medical",
+      "section": "treatment",
       "q": "Parents report their 6-week-old briefly turned blue, went limp, and then recovered fully. She now looks normal. This event is BEST described as:",
       "choices": [
         "A febrile seizure",
@@ -3787,7 +3787,7 @@
     },
     {
       "id": "nremt-emt-q0269",
-      "section": "medical",
+      "section": "ops",
       "q": "You respond to a 4-month-old found unresponsive and pulseless in a crib with obvious dependent lividity and rigor. What is the MOST appropriate action?",
       "choices": [
         "Begin CPR regardless and transport emergently",
@@ -3801,7 +3801,7 @@
     },
     {
       "id": "nremt-emt-q0270",
-      "section": "medical",
+      "section": "ops",
       "q": "A toddler has circular burns on the buttocks with sharply defined edges and a history that keeps changing. What is the MOST appropriate action?",
       "choices": [
         "Treat the burns, transport, document objectively, and report your suspicion per law",
@@ -3815,7 +3815,7 @@
     },
     {
       "id": "nremt-emt-q0271",
-      "section": "medical",
+      "section": "secondary",
       "q": "Which structure exchanges oxygen and nutrients between the mother and fetus?",
       "choices": [
         "Amniotic sac",
@@ -3829,7 +3829,7 @@
     },
     {
       "id": "nremt-emt-q0272",
-      "section": "medical",
+      "section": "treatment",
       "q": "A 34-week pregnant woman becomes dizzy and hypotensive when lying flat on the stretcher. What is the BEST action?",
       "choices": [
         "Elevate her legs and keep her supine",
@@ -3843,7 +3843,7 @@
     },
     {
       "id": "nremt-emt-q0273",
-      "section": "medical",
+      "section": "secondary",
       "q": "A pregnant patient tells you she is gravida 3, para 1. What does this mean?",
       "choices": [
         "She has been pregnant three times and has had one delivery reaching viability",
@@ -3857,7 +3857,7 @@
     },
     {
       "id": "nremt-emt-q0274",
-      "section": "medical",
+      "section": "secondary",
       "q": "Which change is a normal physiologic finding in late pregnancy?",
       "choices": [
         "A resting heart rate of 40",
@@ -3871,7 +3871,7 @@
     },
     {
       "id": "nremt-emt-q0275",
-      "section": "medical",
+      "section": "secondary",
       "q": "An 8-week pregnant woman has severe left lower quadrant pain, vaginal spotting, and a pressure of 88/52 with a heart rate of 126. Which condition is MOST likely?",
       "choices": [
         "Normal early pregnancy discomfort",
@@ -3885,7 +3885,7 @@
     },
     {
       "id": "nremt-emt-q0276",
-      "section": "medical",
+      "section": "secondary",
       "q": "A woman at 30 weeks has painless, bright red vaginal bleeding without contractions. Which condition is MOST likely?",
       "choices": [
         "Abruptio placentae",
@@ -3899,7 +3899,7 @@
     },
     {
       "id": "nremt-emt-q0277",
-      "section": "medical",
+      "section": "secondary",
       "q": "A 36-week pregnant woman in a minor collision now has constant severe abdominal pain, a rigid uterus, and dark vaginal bleeding. Which condition is MOST likely?",
       "choices": [
         "Placenta previa",
@@ -3913,7 +3913,7 @@
     },
     {
       "id": "nremt-emt-q0278",
-      "section": "medical",
+      "section": "treatment",
       "q": "A woman at 33 weeks has a blood pressure of 162/104, facial and hand edema, a severe headache, and visual changes. What is the BEST management?",
       "choices": [
         "Encourage her to walk to improve circulation",
@@ -3927,7 +3927,7 @@
     },
     {
       "id": "nremt-emt-q0279",
-      "section": "medical",
+      "section": "secondary",
       "q": "A pregnant woman with known preeclampsia begins seizing during transport. Her condition is now called:",
       "choices": [
         "Gestational diabetes",
@@ -3941,7 +3941,7 @@
     },
     {
       "id": "nremt-emt-q0280",
-      "section": "medical",
+      "section": "secondary",
       "q": "A woman at 9 weeks has had intractable vomiting for days and is now weak with dry mucous membranes. This is MOST consistent with:",
       "choices": [
         "Hyperemesis gravidarum",
@@ -3955,7 +3955,7 @@
     },
     {
       "id": "nremt-emt-q0281",
-      "section": "medical",
+      "section": "treatment",
       "q": "Which set of findings BEST indicates that delivery is imminent and you should prepare to deliver on scene?",
       "choices": [
         "Contractions 10 minutes apart with intact membranes",
@@ -3969,7 +3969,7 @@
     },
     {
       "id": "nremt-emt-q0282",
-      "section": "medical",
+      "section": "treatment",
       "q": "As the newborn's head delivers, you feel the umbilical cord looped around the neck. What is the BEST action?",
       "choices": [
         "Push the head back in until the cord frees",
@@ -3983,7 +3983,7 @@
     },
     {
       "id": "nremt-emt-q0283",
-      "section": "medical",
+      "section": "treatment",
       "q": "Immediately after delivery, which action is MOST important for the newborn?",
       "choices": [
         "Dry, warm, and stimulate the newborn, positioning the airway",
@@ -3997,7 +3997,7 @@
     },
     {
       "id": "nremt-emt-q0284",
-      "section": "medical",
+      "section": "secondary",
       "q": "Which newborn vital signs are within normal limits at 5 minutes of life?",
       "choices": [
         "Heart rate 140, respirations 48",
@@ -4011,7 +4011,7 @@
     },
     {
       "id": "nremt-emt-q0285",
-      "section": "medical",
+      "section": "secondary",
       "q": "The APGAR score is assessed at which intervals?",
       "choices": [
         "Immediately and at 10 minutes",
@@ -4025,7 +4025,7 @@
     },
     {
       "id": "nremt-emt-q0286",
-      "section": "medical",
+      "section": "treatment",
       "q": "You see the umbilical cord protruding from the vagina before the baby delivers. What is the MOST appropriate action?",
       "choices": [
         "Push the cord gently back into the vagina",
@@ -4039,7 +4039,7 @@
     },
     {
       "id": "nremt-emt-q0287",
-      "section": "medical",
+      "section": "treatment",
       "q": "After delivery the mother continues to bleed heavily and has soaked several pads. What is the BEST initial action?",
       "choices": [
         "Pack the vagina with trauma dressings",
@@ -4109,7 +4109,7 @@
     },
     {
       "id": "nremt-emt-q0292",
-      "section": "ops",
+      "section": "scene",
       "q": "You arrive at a reported assault and see two people actively fighting in the driveway near your patient. What is your FIRST action?",
       "choices": [
         "Approach and attempt to separate the combatants",
@@ -4123,7 +4123,7 @@
     },
     {
       "id": "nremt-emt-q0293",
-      "section": "ops",
+      "section": "scene",
       "q": "During size-up of a two-car crash you find four patients, one trapped by a deformed door. Which action is MOST appropriate at this point?",
       "choices": [
         "Begin extricating the trapped patient with hand tools",
@@ -4137,7 +4137,7 @@
     },
     {
       "id": "nremt-emt-q0294",
-      "section": "ops",
+      "section": "scene",
       "q": "You are transporting a patient with a productive cough, night sweats, and weight loss who is suspected of having tuberculosis. Which protection is MOST appropriate for the crew?",
       "choices": [
         "A fit-tested N95 respirator for each provider and a surgical mask on the patient",
@@ -4151,7 +4151,7 @@
     },
     {
       "id": "nremt-emt-q0295",
-      "section": "ops",
+      "section": "scene",
       "q": "You are about to suction a patient with copious bloody vomit in the airway. Which combination of standard precautions is BEST?",
       "choices": [
         "Gloves only",
@@ -4235,7 +4235,7 @@
     },
     {
       "id": "nremt-emt-q0301",
-      "section": "ops",
+      "section": "scene",
       "q": "You arrive at an overturned tanker leaking an unknown liquid with a light wind blowing from the north. Where should you position the ambulance?",
       "choices": [
         "Downwind and downhill to shield the scene",
@@ -4291,7 +4291,7 @@
     },
     {
       "id": "nremt-emt-q0305",
-      "section": "ops",
+      "section": "scene",
       "q": "Fire is spreading toward a car with an unresponsive driver who must be moved immediately. Which technique is MOST appropriate?",
       "choices": [
         "Direct ground lift after full spinal immobilization",
@@ -4333,7 +4333,7 @@
     },
     {
       "id": "nremt-emt-q0308",
-      "section": "ops",
+      "section": "treatment",
       "q": "A woman in the third trimester of pregnancy becomes lightheaded and hypotensive after being placed supine on the cot. Which position is MOST appropriate?",
       "choices": [
         "Trendelenburg with the head lowered",
@@ -4389,7 +4389,7 @@
     },
     {
       "id": "nremt-emt-q0312",
-      "section": "ops",
+      "section": "scene",
       "q": "A car has come to rest on its side against a tree with a conscious patient inside. What must occur BEFORE crews enter the vehicle?",
       "choices": [
         "Removal of the windshield with a saw",
@@ -4403,7 +4403,7 @@
     },
     {
       "id": "nremt-emt-q0313",
-      "section": "ops",
+      "section": "scene",
       "q": "You are working next to an undeployed driver side airbag during an extrication. Which clearance guideline is correct?",
       "choices": [
         "Stay at least 2 inches from any airbag module",
@@ -4417,7 +4417,7 @@
     },
     {
       "id": "nremt-emt-q0314",
-      "section": "ops",
+      "section": "scene",
       "q": "A downed power line lies across the hood of a crashed car with an alert, uninjured occupant inside. What is the BEST action?",
       "choices": [
         "Use a dry wooden pole to push the line off the car",
@@ -4431,7 +4431,7 @@
     },
     {
       "id": "nremt-emt-q0315",
-      "section": "ops",
+      "section": "scene",
       "q": "You stop several hundred feet from an overturned truck showing a placard with a four-digit number. What should you do FIRST?",
       "choices": [
         "Use binoculars to read the placard and UN number, then consult the Emergency Response Guidebook",
@@ -4445,7 +4445,7 @@
     },
     {
       "id": "nremt-emt-q0316",
-      "section": "ops",
+      "section": "scene",
       "q": "Contaminated patients from a chemical release are being moved toward your ambulance in the cold zone. Which action is MOST appropriate for the EMT?",
       "choices": [
         "Begin immediate assessment and treatment before decontamination",
@@ -4529,7 +4529,7 @@
     },
     {
       "id": "nremt-emt-q0322",
-      "section": "ops",
+      "section": "scene",
       "q": "Dispatch reports an active shooter in a shopping center with multiple people down. What is the MOST appropriate action for your crew?",
       "choices": [
         "Stage in a safe location outside the area and await law enforcement clearance or integration into a rescue task force",

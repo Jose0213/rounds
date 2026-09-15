@@ -262,13 +262,13 @@
         {
           "q": "A 40-year-old man weighs 90 kg and is 180 cm tall. What is his Mifflin-St Jeor BMR?",
           "choices": [
-            "1,530 kcal/day",
+            "1,664 kcal/day",
             "1,830 kcal/day",
             "1,930 kcal/day",
-            "2,130 kcal/day"
+            "2,030 kcal/day"
           ],
           "answer": 1,
-          "why": "10 x 90 = 900, 6.25 x 180 = 1,125, 5 x 40 = 200; 900 + 1,125 - 200 + 5 = 1,830 kcal/day. The 1,530 answer uses the female constant incorrectly and 2,130 omits the age term."
+          "why": "10 x 90 = 900, 6.25 x 180 = 1,125, 5 x 40 = 200; 900 + 1,125 - 200 + 5 = 1,830 kcal/day. The 1,664 answer applies the female constant of -161 instead of +5, and 2,030 omits the age term."
         },
         {
           "q": "A person maintains weight at 2,400 kcal/day and wants to lose 1 lb per week. What intake does the 3,500 kcal rule predict?",
@@ -1166,13 +1166,13 @@
       "id": "sci-nutrition-q019",
       "q": "A 45-year-old man weighs 80 kg and is 175 cm tall. What is his Mifflin-St Jeor BMR?",
       "choices": [
-        "1,514 kcal/day",
-        "1,680 kcal/day",
-        "1,694 kcal/day",
-        "1,880 kcal/day"
+        "1,508 kcal/day",
+        "1,449 kcal/day",
+        "1,674 kcal/day",
+        "1,899 kcal/day"
       ],
       "answer": 2,
-      "why": "10 x 80 = 800, 6.25 x 175 = 1,093.75, 5 x 45 = 225; 800 + 1,093.75 - 225 + 5 = about 1,694 kcal/day. The 1,514 figure applies the female constant and 1,880 omits the age term.",
+      "why": "10 x 80 = 800, 6.25 x 175 = 1,093.75, 5 x 45 = 225; 800 + 1,093.75 - 225 + 5 = about 1,674 kcal/day. The 1,508 figure applies the female constant of -161, 1,449 subtracts the age term twice, and 1,899 omits the age term.",
       "lesson": "sci-nutrition-l06",
       "difficulty": 2
     },
@@ -1499,7 +1499,7 @@
             {
               "text": "About 1,761 kcal/day",
               "next": "s3",
-              "feedback": "That result adds 5 instead of subtracting 161, which is the male version of the equation. The sex constant is the only place the two forms differ.",
+              "feedback": "That result adds the 161 constant instead of subtracting it. Women subtract 161 and men add 5, and that constant is the only place the two forms differ.",
               "score": -1
             },
             {

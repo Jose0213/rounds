@@ -28,7 +28,7 @@
     ],
     "ed-medical-spanish-l02": [
       {
-        "q": "How should you pronounce the r in `respire`?",
+        "q": "How should you pronounce the single r in a word like `orina` or `herida`?",
         "choices": [
           "A hard English r, unchanged from spelling",
           "A single light tap of the tongue is enough; a perfect trill is not required",
@@ -36,7 +36,7 @@
           "It must be a full rolled trill or the word is not understood"
         ],
         "answer": 1,
-        "why": "A single r gets a light tongue tap, not a full trill (that is reserved for `rr` or a word-initial r in some contexts). A hard English r is the usual mispronunciation, and the sound is never silent."
+        "why": "A single r between vowels is a light tap of the tongue, not a trill. The full trill belongs to `rr` and to a word-initial r, as in `respire`. A hard English r is the usual mispronunciation, and the sound is never silent."
       },
       {
         "q": "Which word is stressed on its last syllable, and why?",
@@ -77,7 +77,12 @@
     "ed-medical-spanish-l04": [
       {
         "q": "A patient says her age is `treinta y dos`. What number is that?",
-        "choices": ["23", "42", "32", "33"],
+        "choices": [
+          "23",
+          "42",
+          "32",
+          "33"
+        ],
         "answer": 2,
         "why": "`treinta y dos` joins treinta (30) and dos (2) with y, giving 32. This is the standard tens-plus-ones pattern used from 30 to 99."
       },
@@ -96,7 +101,12 @@
     "ed-medical-spanish-l05": [
       {
         "q": "A patient says her pain is in `la barriga`. What are you being told?",
-        "choices": ["Her back hurts", "Her belly hurts", "Her chest hurts", "Her throat hurts"],
+        "choices": [
+          "Her back hurts",
+          "Her belly hurts",
+          "Her chest hurts",
+          "Her throat hurts"
+        ],
         "answer": 1,
         "why": "`la barriga`, along with `la panza`, is the everyday word for belly. `el vientre` is the more formal written version. Back, chest, and throat are `la espalda`, `el pecho`, and `la garganta`."
       },
@@ -139,7 +149,12 @@
     "ed-medical-spanish-l07": [
       {
         "q": "Which command asks a patient to turn onto their side?",
-        "choices": ["`Siéntese.`", "`Acuéstese.`", "`De lado.`", "`Levante el brazo.`"],
+        "choices": [
+          "`Siéntese.`",
+          "`Acuéstese.`",
+          "`De lado.`",
+          "`Levante el brazo.`"
+        ],
         "answer": 2,
         "why": "`De lado` means on your side, the positioning command for a side-lying exam or repositioning. The others are sit, lie down, and raise your arm."
       },
@@ -229,60 +244,775 @@
     ]
   },
   "quiz": [
-    { "id": "ed-medical-spanish-q033", "q": "Which phrase correctly asks whether a patient prefers to speak Spanish for their medical care?", "choices": ["`¿Habla usted?`", "`¿Prefiere hablar en español?`", "`¿Es usted hispano?`", "`¿Necesita ayuda?`"], "answer": 1, "why": "`¿Prefiere hablar en español?` specifically confirms the preferred language for care, which is what should be documented. Asking only whether someone speaks a language, or asking about ethnicity, does not establish the preferred language for medical communication.", "lesson": "ed-medical-spanish-l01", "difficulty": 1 },
-    { "id": "ed-medical-spanish-q034", "q": "A patient's neighbor, who happens to be in the waiting room, offers to interpret the discharge instructions. What should you do?", "choices": ["Accept, since any bilingual adult can interpret discharge instructions", "Decline and get a qualified interpreter, since discharge instructions are clinical content with consequences", "Accept only if the neighbor is a nurse elsewhere", "Have the neighbor interpret just the medication names"], "answer": 1, "why": "Discharge instructions carry real consequences if misunderstood and belong on the qualified-interpreter side of the line, regardless of who is offering to help. An untrained ad hoc interpreter, even a well-meaning one, is not an acceptable substitute.", "lesson": "ed-medical-spanish-l01", "difficulty": 2 },
-    { "id": "ed-medical-spanish-q035", "q": "Which of the following is an appropriate task for you to do in Spanish without an interpreter?", "choices": ["Explaining the risks of refusing a CT scan", "Reading a consent form aloud", "Asking `¿Quiere agua?` after confirming with the nurse she is cleared to drink", "Explaining a new cancer diagnosis"], "answer": 2, "why": "Offering water, once cleared, is a simple comfort task with no risk decision attached. Explaining refusal risks, reading consent, and delivering a diagnosis are all clinical conversations that require a qualified interpreter.", "lesson": "ed-medical-spanish-l01", "difficulty": 1 },
-    { "id": "ed-medical-spanish-q036", "q": "During an interpreted conversation, the interpreter starts summarizing the patient's answers instead of relaying them fully. What should you do?", "choices": ["Let it continue since interpreters are trained professionals", "Ask the interpreter to relay everything the patient says, not a summary", "Switch to your own limited Spanish instead", "End the call and try again later"], "answer": 1, "why": "Summarizing drops details and is exactly the kind of error the interpreter workflow is designed to prevent. Politely redirecting the interpreter to relay fully is appropriate; abandoning the interpreter for your own limited Spanish removes the safeguard entirely.", "lesson": "ed-medical-spanish-l01", "difficulty": 2 },
-    { "id": "ed-medical-spanish-q037", "q": "Which situation is the recognized exception that allows use of an untrained interpreter?", "choices": ["The interpreter line is busy for more than five minutes", "It is late at night and staffing is short", "A true emergency where seconds matter and no interpreter can be reached", "The patient's family insists they can interpret faster"], "answer": 2, "why": "Only a genuine seconds-count emergency with no interpreter available justifies using an untrained person, and even then qualified help should follow immediately with documentation. A busy line, short staffing, or family preference do not meet that bar.", "lesson": "ed-medical-spanish-l01", "difficulty": 2 },
-    { "id": "ed-medical-spanish-q038", "q": "How do you pronounce `hija`?", "choices": ["HEE-hah", "HIJ-ah with an English j", "HEE-zhah", "hee-YAH"], "answer": 0, "why": "The h is silent and the j is the throaty English-h sound, giving HEE-hah. An English j sound, a zh sound, or turning the j into a y are all common mispronunciations of this pattern.", "lesson": "ed-medical-spanish-l02", "difficulty": 1 },
-    { "id": "ed-medical-spanish-q039", "q": "Which word contains the ny sound?", "choices": ["`pastillas`", "`año`", "`hospital`", "`gota`"], "answer": 1, "why": "`año` contains ñ, pronounced ny, giving AH-nyoh. `pastillas` has the y sound of ll, `hospital` has a silent h, and `gota` has a hard g before o.", "lesson": "ed-medical-spanish-l02", "difficulty": 1 },
-    { "id": "ed-medical-spanish-q040", "q": "A patient says `¿qué?` to ask you to repeat something. How is `qué` pronounced?", "choices": ["kweh", "keh", "kyoo-eh", "chey"], "answer": 1, "why": "`qu` before e or i is a plain k sound, so `qué` is keh, not kweh or a sound involving ch. This is a common spelling trap for English speakers who expect qu to sound like kw.", "lesson": "ed-medical-spanish-l02", "difficulty": 1 },
-    { "id": "ed-medical-spanish-q041", "q": "Which pair of words is distinguished only by where the stress falls?", "choices": ["`dolor` and `dolores`", "`tomo` and `tomó`", "`pecho` and `espalda`", "`sí` and `no`"], "answer": 1, "why": "`tomo` (I take) and `tomó` (he or she took) are spelled almost identically and differ only in stress, marked by the accent. The other pairs are simply different words, not a stress-only contrast.", "lesson": "ed-medical-spanish-l02", "difficulty": 2 },
-    { "id": "ed-medical-spanish-q042", "q": "A patient's chart note reads that she said `mi hijo tomo la medicina`, with no accent mark on `tomo`. Based on that spelling alone, what is implied?", "choices": ["Her son takes the medicine as an ongoing routine", "Her son took the medicine once, in the past", "The sentence is a question", "The sentence is incomplete and means nothing"], "answer": 0, "why": "Without the accent, `tomo` follows the default stress rule (second-to-last syllable) and means I take or, when applied to a third person casually written without the mark, is often a data-entry slip for the ongoing present-tense idea; the accented `tomó` is what signals past tense. This is exactly why an interpreter, not a written note, should confirm which was meant.", "lesson": "ed-medical-spanish-l02", "difficulty": 3 },
-    { "id": "ed-medical-spanish-q043", "q": "Which greeting is appropriate to use after dark, including on an overnight shift?", "choices": ["`Buenos días.`", "`Buenas tardes.`", "`Buenas noches.`", "`Hola, buenas.`"], "answer": 2, "why": "`Buenas noches` covers both evening and night, including overnight shifts. `Buenos días` is for morning and `Buenas tardes` for afternoon into early evening.", "lesson": "ed-medical-spanish-l03", "difficulty": 1 },
-    { "id": "ed-medical-spanish-q044", "q": "How would a male ED tech introduce his role in Spanish?", "choices": ["`Soy técnica de emergencias.`", "`Estoy técnico de emergencias.`", "`Soy técnico de emergencias.`", "`Soy el emergencia.`"], "answer": 2, "why": "A man uses the masculine ending, `técnico`, with `soy` (a permanent state, appropriate for a profession). `técnica` is the feminine form, and `estoy` is used for temporary states, not professions.", "lesson": "ed-medical-spanish-l03", "difficulty": 1 },
-    { "id": "ed-medical-spanish-q045", "q": "An older woman patient introduces herself and you want to address her warmly and respectfully using her first name, Carmen. Which form fits best?", "choices": ["`Doña Carmen`", "`Tú, Carmen`", "`Señorita Carmen`", "Just `Carmen`, no title"], "answer": 0, "why": "`Doña` plus a first name is a warm, high-respect form common with older female patients. `tú` reads as too familiar, `señorita` is for a young woman, and dropping the title entirely skips an expected courtesy.", "lesson": "ed-medical-spanish-l03", "difficulty": 2 },
-    { "id": "ed-medical-spanish-q046", "q": "Which sentence correctly asks permission to examine a patient's arm?", "choices": ["`Voy a examinarle el brazo.`", "`¿Puedo examinarle el brazo?`", "`Examíneme el brazo.`", "`El brazo, por favor.`"], "answer": 1, "why": "`¿Puedo...?` is the may-I form used to ask permission. `Voy a...` announces an action rather than asking, and the other two options are not proper requests for permission.", "lesson": "ed-medical-spanish-l03", "difficulty": 1 },
-    { "id": "ed-medical-spanish-q047", "q": "You accidentally bump a patient's IV pole while moving equipment. What is the appropriate thing to say?", "choices": ["`Con permiso.`", "`Perdón.`", "`¿Está bien?`", "`Gracias.`"], "answer": 1, "why": "`Perdón` (sorry) fits an accidental mistake. `Con permiso` is used before an action like entering or reaching, `¿Está bien?` checks in after a planned task, and `Gracias` is thank you, unrelated to an apology.", "lesson": "ed-medical-spanish-l03", "difficulty": 1 },
-    { "id": "ed-medical-spanish-q048", "q": "Which is the best way to confirm a patient's date of birth?", "choices": ["`¿Es usted del año 1960?`", "`¿Su fecha de nacimiento?`", "`¿Nació en enero?`", "Skip it if the name matches the wristband"], "answer": 1, "why": "`¿Su fecha de nacimiento?` is an open question that makes the patient produce the date themselves. The other options are leading yes-or-no guesses, and skipping the second identifier entirely defeats the purpose of a two-identifier check.", "lesson": "ed-medical-spanish-l03", "difficulty": 1 },
-    { "id": "ed-medical-spanish-q049", "q": "How do you say sixty-eight in Spanish?", "choices": ["`sesenta y ocho`", "`seis y ochenta`", "`ochenta y seis`", "`sesenta ocho`"], "answer": 0, "why": "Sixty-eight joins `sesenta` (60) and `ocho` (8) with `y`: `sesenta y ocho`. `ochenta y seis` would be eighty-six, and the other two options are not valid constructions.", "lesson": "ed-medical-spanish-l04", "difficulty": 1 },
-    { "id": "ed-medical-spanish-q050", "q": "A mother tells you her infant is `cuatro meses`. What is she telling you?", "choices": ["The baby is four years old", "The baby is four months old", "The baby weighs four kilograms", "The baby was born four days ago"], "answer": 1, "why": "`meses` means months, so `cuatro meses` is four months old, a critical distinction for pediatric dosing. Confusing months with years or weight would produce a serious dosing error.", "lesson": "ed-medical-spanish-l04", "difficulty": 1 },
-    { "id": "ed-medical-spanish-q051", "q": "Which question specifically asks whether a patient's pain is better or worse after medication?", "choices": ["`¿Le duele aquí?`", "`¿Está mejor o peor?`", "`¿Cuántos años tiene?`", "`¿En libras o en kilos?`"], "answer": 1, "why": "`¿Está mejor o peor?` directly asks about change over time, the right question after an intervention. The others ask about location, age, and weight units, none of which reassess pain.", "lesson": "ed-medical-spanish-l04", "difficulty": 1 },
-    { "id": "ed-medical-spanish-q052", "q": "A patient says his pain is `un ocho` on the zero-to-ten scale. What should you do with that number?", "choices": ["Ignore it since it is self-reported", "Report it as an eight out of ten and reassess after any intervention", "Assume he means eight out of five", "Convert it since Spanish pain scales differ from English ones"], "answer": 1, "why": "The zero-to-ten scale is universal once anchored with `cero es nada, diez es lo peor`, so `un ocho` is simply eight out of ten. There is no separate Spanish-language scale to convert from.", "lesson": "ed-medical-spanish-l04", "difficulty": 1 },
-    { "id": "ed-medical-spanish-q053", "q": "How would you read a blood pressure of 130 over 85 aloud in Spanish?", "choices": ["`ciento treinta sobre ochenta y cinco`", "`ciento treinta y ochenta y cinco`", "`trece y ochenta y cinco`", "`ciento treinta con ochenta y cinco`"], "answer": 0, "why": "`sobre` means over, used to separate systolic and diastolic numbers. The other options either drop the connector or use the wrong one, and `trece` (13) is not the same number as `ciento treinta` (130).", "lesson": "ed-medical-spanish-l04", "difficulty": 2 },
-    { "id": "ed-medical-spanish-q054", "q": "Which phrase would you use to ask about pain in the knee specifically?", "choices": ["`¿Le duele la rodilla?`", "`¿Le duele el tobillo?`", "`¿Le duele la cadera?`", "`¿Le duele el codo?`"], "answer": 0, "why": "`la rodilla` is the knee. `el tobillo` is the ankle, `la cadera` is the hip, and `el codo` is the elbow, all different joints from the knee.", "lesson": "ed-medical-spanish-l05", "difficulty": 1 },
-    { "id": "ed-medical-spanish-q055", "q": "A patient says `me duelen las piernas`. What is he reporting?", "choices": ["His leg hurts, singular", "His legs hurt, plural", "His back hurts", "His feet are numb"], "answer": 1, "why": "`duelen` is the plural form of `duele`, matching `las piernas` (the legs), so this reports pain in both legs. A single leg or a different body part would use different wording.", "lesson": "ed-medical-spanish-l05", "difficulty": 2 },
-    { "id": "ed-medical-spanish-q056", "q": "Which word describes a stabbing quality of pain?", "choices": ["`punzante`", "`cólico`", "`ardor`", "`débil`"], "answer": 0, "why": "`punzante` is stabbing. `cólico` is cramping, `ardor` is burning, and `débil` means weak, describing the patient's overall state rather than a pain quality.", "lesson": "ed-medical-spanish-l05", "difficulty": 1 },
-    { "id": "ed-medical-spanish-q057", "q": "A patient reports `hinchazón` in her ankle after a fall. What is she describing?", "choices": ["Numbness", "Swelling", "A burning sensation", "Weakness"], "answer": 1, "why": "`hinchazón` means swelling. Numbness is `entumecido`, burning is `ardor`, and weakness is `débil`, all different findings that would change how the injury is assessed.", "lesson": "ed-medical-spanish-l05", "difficulty": 1 },
-    { "id": "ed-medical-spanish-q058", "q": "Which phrase asks whether the pain travels or radiates?", "choices": ["`¿Se corre el dolor?`", "`¿Le duele aquí?`", "`¿Cuánto le duele?`", "`¿Está mejor?`"], "answer": 0, "why": "`¿Se corre el dolor?` asks whether the pain travels, relevant information for a chest pain or abdominal workup. The others ask about a fixed location, severity, and improvement, not radiation.", "lesson": "ed-medical-spanish-l06", "difficulty": 2 },
-    { "id": "ed-medical-spanish-q059", "q": "Which question is used to ask about past surgeries?", "choices": ["`¿Ha tenido cirugías?`", "`¿Fuma?`", "`¿Toma medicamentos?`", "`¿Qué le pasa?`"], "answer": 0, "why": "`¿Ha tenido cirugías?` asks about past surgeries. `¿Fuma?` asks about smoking, `¿Toma medicamentos?` about medications, and `¿Qué le pasa?` about the current complaint.", "lesson": "ed-medical-spanish-l06", "difficulty": 1 },
-    { "id": "ed-medical-spanish-q060", "q": "A patient answers `hace un mes` when asked when her symptoms started. What does that tell you?", "choices": ["Symptoms started a month ago", "Symptoms started a week ago", "Symptoms started this morning", "Symptoms have never resolved"], "answer": 0, "why": "`hace un mes` means a month ago, using the `hace` plus time-span pattern. A week ago would be `hace una semana`, and this morning would be `esta mañana`.", "lesson": "ed-medical-spanish-l06", "difficulty": 1 },
-    { "id": "ed-medical-spanish-q061", "q": "A patient answering triage questions says `sano` when asked about his medical history. What is he telling you?", "choices": ["That he is mentally stable", "That he is healthy, with no significant medical history", "That he had surgery recently", "That he does not understand the question"], "answer": 1, "why": "`sano` means healthy, not sane. A patient saying `estoy sano` is denying any significant medical history, which is worth double-checking rather than taking as a comment on mental status.", "lesson": "ed-medical-spanish-l06", "difficulty": 2 },
-    { "id": "ed-medical-spanish-q062", "q": "Which question specifically screens for three common chronic conditions at once?", "choices": ["`¿Tiene diabetes, presión alta o asma?`", "`¿Tiene alergias?`", "`¿Ha tenido cirugías?`", "`¿Está embarazada?`"], "answer": 0, "why": "This question bundles diabetes, hypertension, and asthma into one screening question. The others ask about allergies, surgical history, and pregnancy, each a separate topic.", "lesson": "ed-medical-spanish-l06", "difficulty": 1 },
-    { "id": "ed-medical-spanish-q063", "q": "Which phrase means it is only to measure oxygen, used when placing a pulse ox clip?", "choices": ["`Es solo para medir el oxígeno.`", "`Voy a conectarle el monitor.`", "`No hable, relájese.`", "`Respire normal.`"], "answer": 0, "why": "This phrase reassures the patient about the purpose of the clip specifically. The other options are for connecting a monitor, staying quiet for an ECG, and breathing normally, different tasks.", "lesson": "ed-medical-spanish-l07", "difficulty": 1 },
-    { "id": "ed-medical-spanish-q064", "q": "Which command tells a patient to raise their arm, useful before applying a blood pressure cuff or checking a limb?", "choices": ["`Levante el brazo.`", "`Relaje el brazo.`", "`Abra la mano.`", "`No se mueva.`"], "answer": 0, "why": "`Levante el brazo` is raise your arm. `Relaje el brazo` is relax your arm, `Abra la mano` is open your hand, and `No se mueva` is do not move, all different instructions.", "lesson": "ed-medical-spanish-l07", "difficulty": 1 },
-    { "id": "ed-medical-spanish-q065", "q": "A patient jumps when the pulse ox clip touches his finger. What should you have said beforehand?", "choices": ["`No duele.` and `Es solo para medir el oxígeno.`", "`Un pinchazo.`", "`Apriete el puño.`", "`Haga presión aquí.`"], "answer": 0, "why": "A pulse ox clip does not hurt, so reassuring the patient with `No duele` and explaining its purpose prevents the startle. `Un pinchazo` warns of a needle stick, and the fist and pressure commands are for a blood draw, unrelated to a pulse ox clip.", "lesson": "ed-medical-spanish-l07", "difficulty": 2 },
-    { "id": "ed-medical-spanish-q066", "q": "After connecting a patient to a cardiac monitor, which phrase reassures them about the alarm sounds?", "choices": ["`Si suena, es normal.`", "`Son diez segundos.`", "`No se mueva.`", "`Respire profundo.`"], "answer": 0, "why": "`Si suena, es normal` tells the patient that beeping is expected, preventing alarm. The other phrases relate to timing of a 12-lead, staying still, and breathing instructions, not monitor sounds.", "lesson": "ed-medical-spanish-l07", "difficulty": 1 },
-    { "id": "ed-medical-spanish-q067", "q": "Which phrase directs a patient to hold their breath, as for part of an exam?", "choices": ["`Aguante.`", "`Otra vez.`", "`Respire normal.`", "`No se mueva.`"], "answer": 0, "why": "`Aguante` means hold it, used after asking for a deep breath. `Otra vez` is again, `Respire normal` is breathe normally, and `No se mueva` is do not move, none of which asks for a held breath.", "lesson": "ed-medical-spanish-l07", "difficulty": 1 },
-    { "id": "ed-medical-spanish-q068", "q": "Which phrase asks a patient whether they are currently using a menstrual pad, relevant before requesting a urine sample?", "choices": ["`¿Está usando toalla?`", "`¿Puede orinar ahora?`", "`¿En libras o en kilos?`", "`¿Le duele aquí?`"], "answer": 0, "why": "`¿Está usando toalla?` asks about a pad, which affects how a urine specimen should be collected and interpreted. The others ask about ability to urinate now, weight units, and pain location.", "lesson": "ed-medical-spanish-l08", "difficulty": 1 },
-    { "id": "ed-medical-spanish-q069", "q": "Which phrase tells a patient specifically where to place the filled urine cup?", "choices": ["`Póngalo en la ventanilla.`", "`Aquí está el vaso.`", "`Necesito una muestra de orina.`", "`No toque adentro del vaso.`"], "answer": 0, "why": "`Póngalo en la ventanilla` gives the specific instruction to put it in the little window (a specimen pass-through), completing the process. The others introduce the need for a sample, hand over the cup, and warn about contamination, not placement.", "lesson": "ed-medical-spanish-l08", "difficulty": 2 },
-    { "id": "ed-medical-spanish-q070", "q": "Which phrase specifically checks whether a splint has been applied too tightly?", "choices": ["`Dígame si está muy apretado.`", "`Manténgalo en alto.`", "`Voy a ponerle hielo.`", "`No apoye el pie.`"], "answer": 0, "why": "`Dígame si está muy apretado` directly asks the patient to report tightness, catching a problem before it becomes a circulation issue. The other phrases cover elevation, ice, and weight-bearing, not tightness.", "lesson": "ed-medical-spanish-l08", "difficulty": 1 },
-    { "id": "ed-medical-spanish-q071", "q": "Which phrase specifically asks when a patient last had a tetanus shot?", "choices": ["`¿Cuándo fue su última vacuna del tétano?`", "`¿Ha tenido cirugías?`", "`¿Tiene alergias?`", "`Necesita puntos.`"], "answer": 0, "why": "This phrase asks specifically about tetanus vaccination history, relevant for wound care. The others ask about surgeries, allergies, and state a stitches decision, not tetanus status.", "lesson": "ed-medical-spanish-l08", "difficulty": 1 },
-    { "id": "ed-medical-spanish-q072", "q": "Which phrase instructs a patient not to get their wound dressing wet?", "choices": ["`No moje el vendaje.`", "`Haga presión, fuerte.`", "`Voy a limpiar la herida.`", "`Le va a arder un poco.`"], "answer": 0, "why": "`No moje el vendaje` is do not get the bandage wet, a discharge-type instruction for wound care. The other options describe pressing hard, cleaning the wound, and warning of stinging, different steps in the same process.", "lesson": "ed-medical-spanish-l08", "difficulty": 1 },
-    { "id": "ed-medical-spanish-q073", "q": "Which phrase asks a patient whether they want to call someone, appropriate for a patient who seems alone and frightened?", "choices": ["`¿Quiere llamar a alguien?`", "`¿Necesita ir al baño?`", "`¿Quiere una manta?`", "`¿Necesita algo?`"], "answer": 0, "why": "`¿Quiere llamar a alguien?` specifically offers to help the patient reach someone. The others offer the bathroom, a blanket, and a general check-in, all useful but not the specific offer to contact someone.", "lesson": "ed-medical-spanish-l09", "difficulty": 1 },
-    { "id": "ed-medical-spanish-q074", "q": "Which phrase is both true and appropriate to say to a stable patient waiting for test results, without overpromising?", "choices": ["`Todo va a estar bien.`", "`Estoy aquí con usted.`", "`No se preocupe, no es nada.`", "`Seguro que va a estar bien.`"], "answer": 1, "why": "`Estoy aquí con usted` (I am here with you) is always true regardless of the outcome. The others promise a specific good outcome or minimize the situation, both of which risk being proven false.", "lesson": "ed-medical-spanish-l09", "difficulty": 2 },
-    { "id": "ed-medical-spanish-q075", "q": "A patient mentions she treated a stomach complaint with `manzanilla` at home. What is she describing?", "choices": ["A prescription medication", "Chamomile tea, an herbal home remedy", "A type of physical therapy", "A folk healer visit"], "answer": 1, "why": "`manzanilla` is chamomile, a common herbal remedy. Herbal remedies should still be captured in the medication history through the interpreter, since some interact with prescribed drugs.", "lesson": "ed-medical-spanish-l09", "difficulty": 1 },
-    { "id": "ed-medical-spanish-q076", "q": "Which phrase asks who is the family member responsible for making decisions?", "choices": ["`¿Quién es el que decide?`", "`¿Es usted familiar?`", "`¿Necesita algo?`", "`¿Cómo se llama?`"], "answer": 0, "why": "`¿Quién es el que decide?` specifically asks who makes decisions, useful for identifying the right person for updates or consent conversations. The others ask about family relation, needs, and name.", "lesson": "ed-medical-spanish-l09", "difficulty": 2 },
-    { "id": "ed-medical-spanish-q077", "q": "A visitor says a patient in the lobby `se está ahogando`. What is being reported, and how urgent is it?", "choices": ["The patient fainted; routine triage priority", "The patient is choking; immediate response, do not wait for the nurse", "The patient is bleeding; apply pressure and wait for the next open room", "The patient is dizzy; offer a chair"], "answer": 1, "why": "`se está ahogando` means is choking, one of the few phrases in this vocabulary that calls for an immediate response rather than waiting to alert the nurse first, since an obstructed airway cannot wait.", "lesson": "ed-medical-spanish-l10", "difficulty": 2 },
-    { "id": "ed-medical-spanish-q078", "q": "A family member says `está sangrando mucho` about a patient with a laceration. What is your first action?", "choices": ["Ask them to wait in the lobby until called", "Apply direct pressure and get the nurse", "Get the patient's insurance card first", "Offer a warm blanket and monitor from a distance"], "answer": 1, "why": "`está sangrando mucho` means is bleeding a lot, calling for immediate direct pressure and nurse notification. Administrative tasks and passive monitoring both delay an action with a clear, immediate fix.", "lesson": "ed-medical-spanish-l10", "difficulty": 2 },
-    { "id": "ed-medical-spanish-q079", "q": "What is the most useful thing to say while you wait for the nurse to arrive after hearing an alarming phrase, without committing to a diagnosis or promise?", "choices": ["`Todo va a estar bien.`", "`Ya viene la enfermera.`", "`No es grave.`", "`No se preocupe.`"], "answer": 1, "why": "`Ya viene la enfermera` (the nurse is coming) is accurate and does not overpromise an outcome. The other options either predict a good outcome or minimize the situation, both risky when you do not yet know the severity.", "lesson": "ed-medical-spanish-l10", "difficulty": 2 },
-    { "id": "ed-medical-spanish-q080", "q": "A patient's son says `se está muriendo` about his father in a treatment room. What should you do?", "choices": ["Ask him to calm down and wait outside", "Go look at the patient yourself immediately", "Note it in the chart for the next round", "Tell him the doctor will explain later"], "answer": 1, "why": "`se está muriendo` (he is dying) is the most urgent phrase in this vocabulary and calls for going to look immediately, not documentation or deferral. Waiting to verify through another channel could cost critical time.", "lesson": "ed-medical-spanish-l10", "difficulty": 2 },
-    { "id": "ed-medical-spanish-q081", "q": "A 55-year-old man grips his chest and says `me duele el pecho` while you are walking by. What should happen within the next few minutes?", "choices": ["A routine triage assessment at the next available slot", "A 12-lead ECG within about 10 minutes of the complaint reaching staff", "A referral to a follow-up clinic", "Nothing until the interpreter arrives"], "answer": 1, "why": "Chest pain, once relayed, starts the 10-minute 12-lead standard. Deferring to routine triage, a clinic referral, or waiting on the interpreter all needlessly delay a time-sensitive test that a tech's own recognition of the phrase can set in motion.", "lesson": "ed-medical-spanish-l10", "difficulty": 3 },
-    { "id": "ed-medical-spanish-q082", "q": "A patient tells you `no siento el brazo` and also seems to be struggling to find words. What is the single most important next question?", "choices": ["`¿Le duele el brazo?`", "`¿Cuándo fue la última vez que estaba bien?`", "`¿Tiene alergias?`", "`¿Quiere agua?`"], "answer": 1, "why": "Combined numbness and word-finding trouble suggest a stroke, and the highest-value question is last known well time, which determines treatment eligibility. Pain, allergies, and water are all lower priority and water may be unsafe before a swallow screen.", "lesson": "ed-medical-spanish-l10", "difficulty": 3 },
-    { "id": "ed-medical-spanish-q083", "q": "Which phrase would you use to ask a patient if they smoke, part of a fuller triage history?", "choices": ["`¿Fuma?`", "`¿Toma?`", "`¿Está mareado?`", "`¿Le arde?`"], "answer": 0, "why": "`¿Fuma?` asks about smoking. `¿Toma?` alone is ambiguous (drink or take), `¿Está mareado?` asks about dizziness, and `¿Le arde?` asks about burning pain, none of which addresses smoking.", "lesson": "ed-medical-spanish-l06", "difficulty": 1 },
-    { "id": "ed-medical-spanish-q084", "q": "A patient answers `esta mañana` when asked when her symptoms began. Roughly how long ago is that, relative to `hace tres horas`?", "choices": ["It is a vaguer version of the same general timeframe as a few hours ago", "It always means exactly 24 hours ago", "It means the symptoms are chronic, lasting months", "It cannot be compared to `hace tres horas`"], "answer": 0, "why": "`esta mañana` (this morning) is a same-day reference that, depending on the time of day, often overlaps with a few-hours-ago timeframe like `hace tres horas`, though it is less precise. It is a recent, not chronic, timeframe, and comparisons like this are exactly why exact language matters in a handoff.", "lesson": "ed-medical-spanish-l06", "difficulty": 3 },
-    { "id": "ed-medical-spanish-q085", "q": "Which phrase would a patient use to say they do not remember something you asked?", "choices": ["`no sé`", "`a veces`", "`ayer`", "`igual`"], "answer": 0, "why": "`no sé` means I do not know, the answer to an unanswerable question. `a veces` is sometimes, `ayer` is yesterday, and `igual` is the same, all different kinds of answers.", "lesson": "ed-medical-spanish-l06", "difficulty": 1 },
-    { "id": "ed-medical-spanish-q086", "q": "Which phrase would you say to a patient right before drawing blood, to prepare them for the moment of the stick?", "choices": ["`Un pinchazo.`", "`Ya terminé.`", "`Abra la mano.`", "`Ya casi.`"], "answer": 0, "why": "`Un pinchazo` (a little stick) is said in the half-second before the needle enters, preventing a startled flinch. `Ya terminé` and `Ya casi` come during or after the draw, and `Abra la mano` comes once you are already in the vein.", "lesson": "ed-medical-spanish-l07", "difficulty": 1 },
-    { "id": "ed-medical-spanish-q087", "q": "A patient's family says he `no puede mover` his leg after a fall. Combined with a reported fall, what should this prompt beyond the standard fall workup?", "choices": ["Nothing additional; falls are routine", "Consideration of a possible spinal or neurologic injury, communicated to the nurse immediately using the family's exact words", "A request for the patient to try walking to confirm the problem", "Reassurance that it is likely just soreness"], "answer": 1, "why": "Inability to move a limb after a fall raises concern for spinal or neurologic injury and should be relayed immediately and precisely. Asking the patient to walk risks worsening an unstable injury, and reassuring away a new motor deficit skips the escalation this phrase calls for.", "lesson": "ed-medical-spanish-l08", "difficulty": 3 }
+    {
+      "id": "ed-medical-spanish-q033",
+      "q": "Which phrase correctly asks whether a patient prefers to speak Spanish for their medical care?",
+      "choices": [
+        "`¿Habla usted?`",
+        "`¿Prefiere hablar en español?`",
+        "`¿Es usted hispano?`",
+        "`¿Necesita ayuda?`"
+      ],
+      "answer": 1,
+      "why": "`¿Prefiere hablar en español?` specifically confirms the preferred language for care, which is what should be documented. Asking only whether someone speaks a language, or asking about ethnicity, does not establish the preferred language for medical communication.",
+      "lesson": "ed-medical-spanish-l01",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-medical-spanish-q034",
+      "q": "A patient's neighbor, who happens to be in the waiting room, offers to interpret the discharge instructions. What should you do?",
+      "choices": [
+        "Accept, since any bilingual adult can interpret discharge instructions",
+        "Decline and get a qualified interpreter, since discharge instructions are clinical content with consequences",
+        "Accept only if the neighbor is a nurse elsewhere",
+        "Have the neighbor interpret just the medication names"
+      ],
+      "answer": 1,
+      "why": "Discharge instructions carry real consequences if misunderstood and belong on the qualified-interpreter side of the line, regardless of who is offering to help. An untrained ad hoc interpreter, even a well-meaning one, is not an acceptable substitute.",
+      "lesson": "ed-medical-spanish-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-medical-spanish-q035",
+      "q": "Which of the following is an appropriate task for you to do in Spanish without an interpreter?",
+      "choices": [
+        "Explaining the risks of refusing a CT scan",
+        "Reading a consent form aloud",
+        "Asking `¿Quiere agua?` after confirming with the nurse she is cleared to drink",
+        "Explaining a new cancer diagnosis"
+      ],
+      "answer": 2,
+      "why": "Offering water, once cleared, is a simple comfort task with no risk decision attached. Explaining refusal risks, reading consent, and delivering a diagnosis are all clinical conversations that require a qualified interpreter.",
+      "lesson": "ed-medical-spanish-l01",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-medical-spanish-q036",
+      "q": "During an interpreted conversation, the interpreter starts summarizing the patient's answers instead of relaying them fully. What should you do?",
+      "choices": [
+        "Let it continue since interpreters are trained professionals",
+        "Ask the interpreter to relay everything the patient says, not a summary",
+        "Switch to your own limited Spanish instead",
+        "End the call and try again later"
+      ],
+      "answer": 1,
+      "why": "Summarizing drops details and is exactly the kind of error the interpreter workflow is designed to prevent. Politely redirecting the interpreter to relay fully is appropriate; abandoning the interpreter for your own limited Spanish removes the safeguard entirely.",
+      "lesson": "ed-medical-spanish-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-medical-spanish-q037",
+      "q": "Which situation is the recognized exception that allows use of an untrained interpreter?",
+      "choices": [
+        "The interpreter line is busy for more than five minutes",
+        "It is late at night and staffing is short",
+        "A true emergency where seconds matter and no interpreter can be reached",
+        "The patient's family insists they can interpret faster"
+      ],
+      "answer": 2,
+      "why": "Only a genuine seconds-count emergency with no interpreter available justifies using an untrained person, and even then qualified help should follow immediately with documentation. A busy line, short staffing, or family preference do not meet that bar.",
+      "lesson": "ed-medical-spanish-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-medical-spanish-q038",
+      "q": "How do you pronounce `hija`?",
+      "choices": [
+        "HEE-hah",
+        "HIJ-ah with an English j",
+        "HEE-zhah",
+        "hee-YAH"
+      ],
+      "answer": 0,
+      "why": "The h is silent and the j is the throaty English-h sound, giving HEE-hah. An English j sound, a zh sound, or turning the j into a y are all common mispronunciations of this pattern.",
+      "lesson": "ed-medical-spanish-l02",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-medical-spanish-q039",
+      "q": "Which word contains the ny sound?",
+      "choices": [
+        "`pastillas`",
+        "`año`",
+        "`hospital`",
+        "`gota`"
+      ],
+      "answer": 1,
+      "why": "`año` contains ñ, pronounced ny, giving AH-nyoh. `pastillas` has the y sound of ll, `hospital` has a silent h, and `gota` has a hard g before o.",
+      "lesson": "ed-medical-spanish-l02",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-medical-spanish-q040",
+      "q": "A patient says `¿qué?` to ask you to repeat something. How is `qué` pronounced?",
+      "choices": [
+        "kweh",
+        "keh",
+        "kyoo-eh",
+        "chey"
+      ],
+      "answer": 1,
+      "why": "`qu` before e or i is a plain k sound, so `qué` is keh, not kweh or a sound involving ch. This is a common spelling trap for English speakers who expect qu to sound like kw.",
+      "lesson": "ed-medical-spanish-l02",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-medical-spanish-q041",
+      "q": "Which pair of words is distinguished only by where the stress falls?",
+      "choices": [
+        "`dolor` and `dolores`",
+        "`tomo` and `tomó`",
+        "`pecho` and `espalda`",
+        "`sí` and `no`"
+      ],
+      "answer": 1,
+      "why": "`tomo` (I take) and `tomó` (he or she took) are spelled almost identically and differ only in stress, marked by the accent. The other pairs are simply different words, not a stress-only contrast.",
+      "lesson": "ed-medical-spanish-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-medical-spanish-q042",
+      "q": "A patient tells you `mi hijo toma la medicina`, and the note is written with no accent marks. Based on that spelling alone, what is implied?",
+      "choices": [
+        "Her son takes the medicine as an ongoing routine",
+        "Her son took the medicine once, in the past",
+        "The sentence is a question",
+        "The sentence is incomplete and means nothing"
+      ],
+      "answer": 0,
+      "why": "`toma`, with the default second-to-last-syllable stress, is the present tense: he takes it, an ongoing home medication. `tomó` with the written accent is the past tense, he took it, which in an ingestion history means something entirely different. Because notes and chart fields frequently drop accent marks, this is exactly the distinction an interpreter, not a written note, should confirm.",
+      "lesson": "ed-medical-spanish-l02",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-medical-spanish-q043",
+      "q": "Which greeting is appropriate to use after dark, including on an overnight shift?",
+      "choices": [
+        "`Buenos días.`",
+        "`Buenas tardes.`",
+        "`Buenas noches.`",
+        "`Hola, buenas.`"
+      ],
+      "answer": 2,
+      "why": "`Buenas noches` covers both evening and night, including overnight shifts. `Buenos días` is for morning and `Buenas tardes` for afternoon into early evening.",
+      "lesson": "ed-medical-spanish-l03",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-medical-spanish-q044",
+      "q": "How would a male ED tech introduce his role in Spanish?",
+      "choices": [
+        "`Soy técnica de emergencias.`",
+        "`Estoy técnico de emergencias.`",
+        "`Soy técnico de emergencias.`",
+        "`Soy el emergencia.`"
+      ],
+      "answer": 2,
+      "why": "A man uses the masculine ending, `técnico`, with `soy` (a permanent state, appropriate for a profession). `técnica` is the feminine form, and `estoy` is used for temporary states, not professions.",
+      "lesson": "ed-medical-spanish-l03",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-medical-spanish-q045",
+      "q": "An older woman patient introduces herself and you want to address her warmly and respectfully using her first name, Carmen. Which form fits best?",
+      "choices": [
+        "`Doña Carmen`",
+        "`Tú, Carmen`",
+        "`Señorita Carmen`",
+        "Just `Carmen`, no title"
+      ],
+      "answer": 0,
+      "why": "`Doña` plus a first name is a warm, high-respect form common with older female patients. `tú` reads as too familiar, `señorita` is for a young woman, and dropping the title entirely skips an expected courtesy.",
+      "lesson": "ed-medical-spanish-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-medical-spanish-q046",
+      "q": "Which sentence correctly asks permission to examine a patient's arm?",
+      "choices": [
+        "`Voy a examinarle el brazo.`",
+        "`¿Puedo examinarle el brazo?`",
+        "`Examíneme el brazo.`",
+        "`El brazo, por favor.`"
+      ],
+      "answer": 1,
+      "why": "`¿Puedo...?` is the may-I form used to ask permission. `Voy a...` announces an action rather than asking, and the other two options are not proper requests for permission.",
+      "lesson": "ed-medical-spanish-l03",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-medical-spanish-q047",
+      "q": "You accidentally bump a patient's IV pole while moving equipment. What is the appropriate thing to say?",
+      "choices": [
+        "`Con permiso.`",
+        "`Perdón.`",
+        "`¿Está bien?`",
+        "`Gracias.`"
+      ],
+      "answer": 1,
+      "why": "`Perdón` (sorry) fits an accidental mistake. `Con permiso` is used before an action like entering or reaching, `¿Está bien?` checks in after a planned task, and `Gracias` is thank you, unrelated to an apology.",
+      "lesson": "ed-medical-spanish-l03",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-medical-spanish-q048",
+      "q": "Which is the best way to confirm a patient's date of birth?",
+      "choices": [
+        "`¿Es usted del año 1960?`",
+        "`¿Su fecha de nacimiento?`",
+        "`¿Nació en enero?`",
+        "Skip it if the name matches the wristband"
+      ],
+      "answer": 1,
+      "why": "`¿Su fecha de nacimiento?` is an open question that makes the patient produce the date themselves. The other options are leading yes-or-no guesses, and skipping the second identifier entirely defeats the purpose of a two-identifier check.",
+      "lesson": "ed-medical-spanish-l03",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-medical-spanish-q049",
+      "q": "How do you say sixty-eight in Spanish?",
+      "choices": [
+        "`sesenta y ocho`",
+        "`seis y ochenta`",
+        "`ochenta y seis`",
+        "`sesenta ocho`"
+      ],
+      "answer": 0,
+      "why": "Sixty-eight joins `sesenta` (60) and `ocho` (8) with `y`: `sesenta y ocho`. `ochenta y seis` would be eighty-six, and the other two options are not valid constructions.",
+      "lesson": "ed-medical-spanish-l04",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-medical-spanish-q050",
+      "q": "A mother tells you her infant is `cuatro meses`. What is she telling you?",
+      "choices": [
+        "The baby is four years old",
+        "The baby is four months old",
+        "The baby weighs four kilograms",
+        "The baby was born four days ago"
+      ],
+      "answer": 1,
+      "why": "`meses` means months, so `cuatro meses` is four months old, a critical distinction for pediatric dosing. Confusing months with years or weight would produce a serious dosing error.",
+      "lesson": "ed-medical-spanish-l04",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-medical-spanish-q051",
+      "q": "Which question specifically asks whether a patient's pain is better or worse after medication?",
+      "choices": [
+        "`¿Le duele aquí?`",
+        "`¿Está mejor o peor?`",
+        "`¿Cuántos años tiene?`",
+        "`¿En libras o en kilos?`"
+      ],
+      "answer": 1,
+      "why": "`¿Está mejor o peor?` directly asks about change over time, the right question after an intervention. The others ask about location, age, and weight units, none of which reassess pain.",
+      "lesson": "ed-medical-spanish-l04",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-medical-spanish-q052",
+      "q": "A patient says his pain is `un ocho` on the zero-to-ten scale. What should you do with that number?",
+      "choices": [
+        "Ignore it since it is self-reported",
+        "Report it as an eight out of ten and reassess after any intervention",
+        "Assume he means eight out of five",
+        "Convert it since Spanish pain scales differ from English ones"
+      ],
+      "answer": 1,
+      "why": "The zero-to-ten scale is universal once anchored with `cero es nada, diez es lo peor`, so `un ocho` is simply eight out of ten. There is no separate Spanish-language scale to convert from.",
+      "lesson": "ed-medical-spanish-l04",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-medical-spanish-q053",
+      "q": "How would you read a blood pressure of 130 over 85 aloud in Spanish?",
+      "choices": [
+        "`ciento treinta sobre ochenta y cinco`",
+        "`ciento treinta y ochenta y cinco`",
+        "`trece y ochenta y cinco`",
+        "`ciento treinta con ochenta y cinco`"
+      ],
+      "answer": 0,
+      "why": "`sobre` means over, used to separate systolic and diastolic numbers. The other options either drop the connector or use the wrong one, and `trece` (13) is not the same number as `ciento treinta` (130).",
+      "lesson": "ed-medical-spanish-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-medical-spanish-q054",
+      "q": "Which phrase would you use to ask about pain in the knee specifically?",
+      "choices": [
+        "`¿Le duele la rodilla?`",
+        "`¿Le duele el tobillo?`",
+        "`¿Le duele la cadera?`",
+        "`¿Le duele el codo?`"
+      ],
+      "answer": 0,
+      "why": "`la rodilla` is the knee. `el tobillo` is the ankle, `la cadera` is the hip, and `el codo` is the elbow, all different joints from the knee.",
+      "lesson": "ed-medical-spanish-l05",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-medical-spanish-q055",
+      "q": "A patient says `me duelen las piernas`. What is he reporting?",
+      "choices": [
+        "His leg hurts, singular",
+        "His legs hurt, plural",
+        "His back hurts",
+        "His feet are numb"
+      ],
+      "answer": 1,
+      "why": "`duelen` is the plural form of `duele`, matching `las piernas` (the legs), so this reports pain in both legs. A single leg or a different body part would use different wording.",
+      "lesson": "ed-medical-spanish-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-medical-spanish-q056",
+      "q": "Which word describes a stabbing quality of pain?",
+      "choices": [
+        "`punzante`",
+        "`cólico`",
+        "`ardor`",
+        "`débil`"
+      ],
+      "answer": 0,
+      "why": "`punzante` is stabbing. `cólico` is cramping, `ardor` is burning, and `débil` means weak, describing the patient's overall state rather than a pain quality.",
+      "lesson": "ed-medical-spanish-l05",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-medical-spanish-q057",
+      "q": "A patient reports `hinchazón` in her ankle after a fall. What is she describing?",
+      "choices": [
+        "Numbness",
+        "Swelling",
+        "A burning sensation",
+        "Weakness"
+      ],
+      "answer": 1,
+      "why": "`hinchazón` means swelling. Numbness is `entumecido`, burning is `ardor`, and weakness is `débil`, all different findings that would change how the injury is assessed.",
+      "lesson": "ed-medical-spanish-l05",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-medical-spanish-q058",
+      "q": "Which phrase asks whether the pain travels or radiates?",
+      "choices": [
+        "`¿Se corre el dolor?`",
+        "`¿Le duele aquí?`",
+        "`¿Cuánto le duele?`",
+        "`¿Está mejor?`"
+      ],
+      "answer": 0,
+      "why": "`¿Se corre el dolor?` asks whether the pain travels, relevant information for a chest pain or abdominal workup. The others ask about a fixed location, severity, and improvement, not radiation.",
+      "lesson": "ed-medical-spanish-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-medical-spanish-q059",
+      "q": "Which question is used to ask about past surgeries?",
+      "choices": [
+        "`¿Ha tenido cirugías?`",
+        "`¿Fuma?`",
+        "`¿Toma medicamentos?`",
+        "`¿Qué le pasa?`"
+      ],
+      "answer": 0,
+      "why": "`¿Ha tenido cirugías?` asks about past surgeries. `¿Fuma?` asks about smoking, `¿Toma medicamentos?` about medications, and `¿Qué le pasa?` about the current complaint.",
+      "lesson": "ed-medical-spanish-l06",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-medical-spanish-q060",
+      "q": "A patient answers `hace un mes` when asked when her symptoms started. What does that tell you?",
+      "choices": [
+        "Symptoms started a month ago",
+        "Symptoms started a week ago",
+        "Symptoms started this morning",
+        "Symptoms have never resolved"
+      ],
+      "answer": 0,
+      "why": "`hace un mes` means a month ago, using the `hace` plus time-span pattern. A week ago would be `hace una semana`, and this morning would be `esta mañana`.",
+      "lesson": "ed-medical-spanish-l06",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-medical-spanish-q061",
+      "q": "A patient answering triage questions says `sano` when asked about his medical history. What is he telling you?",
+      "choices": [
+        "That he is mentally stable",
+        "That he is healthy, with no significant medical history",
+        "That he had surgery recently",
+        "That he does not understand the question"
+      ],
+      "answer": 1,
+      "why": "`sano` means healthy, not sane. A patient saying `estoy sano` is denying any significant medical history, which is worth double-checking rather than taking as a comment on mental status.",
+      "lesson": "ed-medical-spanish-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-medical-spanish-q062",
+      "q": "Which question specifically screens for three common chronic conditions at once?",
+      "choices": [
+        "`¿Tiene diabetes, presión alta o asma?`",
+        "`¿Tiene alergias?`",
+        "`¿Ha tenido cirugías?`",
+        "`¿Está embarazada?`"
+      ],
+      "answer": 0,
+      "why": "This question bundles diabetes, hypertension, and asthma into one screening question. The others ask about allergies, surgical history, and pregnancy, each a separate topic.",
+      "lesson": "ed-medical-spanish-l06",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-medical-spanish-q063",
+      "q": "Which phrase means it is only to measure oxygen, used when placing a pulse ox clip?",
+      "choices": [
+        "`Es solo para medir el oxígeno.`",
+        "`Voy a conectarle el monitor.`",
+        "`No hable, relájese.`",
+        "`Respire normal.`"
+      ],
+      "answer": 0,
+      "why": "This phrase reassures the patient about the purpose of the clip specifically. The other options are for connecting a monitor, staying quiet for an ECG, and breathing normally, different tasks.",
+      "lesson": "ed-medical-spanish-l07",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-medical-spanish-q064",
+      "q": "Which command tells a patient to raise their arm, useful before applying a blood pressure cuff or checking a limb?",
+      "choices": [
+        "`Levante el brazo.`",
+        "`Relaje el brazo.`",
+        "`Abra la mano.`",
+        "`No se mueva.`"
+      ],
+      "answer": 0,
+      "why": "`Levante el brazo` is raise your arm. `Relaje el brazo` is relax your arm, `Abra la mano` is open your hand, and `No se mueva` is do not move, all different instructions.",
+      "lesson": "ed-medical-spanish-l07",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-medical-spanish-q065",
+      "q": "A patient jumps when the pulse ox clip touches his finger. What should you have said beforehand?",
+      "choices": [
+        "`No duele.` and `Es solo para medir el oxígeno.`",
+        "`Un pinchazo.`",
+        "`Apriete el puño.`",
+        "`Haga presión aquí.`"
+      ],
+      "answer": 0,
+      "why": "A pulse ox clip does not hurt, so reassuring the patient with `No duele` and explaining its purpose prevents the startle. `Un pinchazo` warns of a needle stick, and the fist and pressure commands are for a blood draw, unrelated to a pulse ox clip.",
+      "lesson": "ed-medical-spanish-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-medical-spanish-q066",
+      "q": "After connecting a patient to a cardiac monitor, which phrase reassures them about the alarm sounds?",
+      "choices": [
+        "`Si suena, es normal.`",
+        "`Son diez segundos.`",
+        "`No se mueva.`",
+        "`Respire profundo.`"
+      ],
+      "answer": 0,
+      "why": "`Si suena, es normal` tells the patient that beeping is expected, preventing alarm. The other phrases relate to timing of a 12-lead, staying still, and breathing instructions, not monitor sounds.",
+      "lesson": "ed-medical-spanish-l07",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-medical-spanish-q067",
+      "q": "Which phrase directs a patient to hold their breath, as for part of an exam?",
+      "choices": [
+        "`Aguante.`",
+        "`Otra vez.`",
+        "`Respire normal.`",
+        "`No se mueva.`"
+      ],
+      "answer": 0,
+      "why": "`Aguante` means hold it, used after asking for a deep breath. `Otra vez` is again, `Respire normal` is breathe normally, and `No se mueva` is do not move, none of which asks for a held breath.",
+      "lesson": "ed-medical-spanish-l07",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-medical-spanish-q068",
+      "q": "Which phrase asks a patient whether they are currently using a menstrual pad, relevant before requesting a urine sample?",
+      "choices": [
+        "`¿Está usando toalla sanitaria?`",
+        "`¿Puede orinar ahora?`",
+        "`¿En libras o en kilos?`",
+        "`¿Le duele aquí?`"
+      ],
+      "answer": 0,
+      "why": "`¿Está usando toalla sanitaria?` asks about a sanitary pad, which affects how a urine specimen should be collected and interpreted. Say `toalla` alone and you have asked about a towel. The others ask about ability to urinate now, weight units, and pain location.",
+      "lesson": "ed-medical-spanish-l08",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-medical-spanish-q069",
+      "q": "Which phrase tells a patient specifically where to place the filled urine cup?",
+      "choices": [
+        "`Póngalo en la ventanilla.`",
+        "`Aquí está el vaso.`",
+        "`Necesito una muestra de orina.`",
+        "`No toque adentro del vaso.`"
+      ],
+      "answer": 0,
+      "why": "`Póngalo en la ventanilla` gives the specific instruction to put it in the little window (a specimen pass-through), completing the process. The others introduce the need for a sample, hand over the cup, and warn about contamination, not placement.",
+      "lesson": "ed-medical-spanish-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-medical-spanish-q070",
+      "q": "Which phrase specifically checks whether a splint has been applied too tightly?",
+      "choices": [
+        "`Dígame si está muy apretado.`",
+        "`Manténgalo en alto.`",
+        "`Voy a ponerle hielo.`",
+        "`No apoye el pie.`"
+      ],
+      "answer": 0,
+      "why": "`Dígame si está muy apretado` directly asks the patient to report tightness, catching a problem before it becomes a circulation issue. The other phrases cover elevation, ice, and weight-bearing, not tightness.",
+      "lesson": "ed-medical-spanish-l08",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-medical-spanish-q071",
+      "q": "Which phrase specifically asks when a patient last had a tetanus shot?",
+      "choices": [
+        "`¿Cuándo fue su última vacuna del tétano?`",
+        "`¿Ha tenido cirugías?`",
+        "`¿Tiene alergias?`",
+        "`Necesita puntos.`"
+      ],
+      "answer": 0,
+      "why": "This phrase asks specifically about tetanus vaccination history, relevant for wound care. The others ask about surgeries, allergies, and state a stitches decision, not tetanus status.",
+      "lesson": "ed-medical-spanish-l08",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-medical-spanish-q072",
+      "q": "Which phrase instructs a patient not to get their wound dressing wet?",
+      "choices": [
+        "`No moje el vendaje.`",
+        "`Haga presión, fuerte.`",
+        "`Voy a limpiar la herida.`",
+        "`Le va a arder un poco.`"
+      ],
+      "answer": 0,
+      "why": "`No moje el vendaje` is do not get the bandage wet, a discharge-type instruction for wound care. The other options describe pressing hard, cleaning the wound, and warning of stinging, different steps in the same process.",
+      "lesson": "ed-medical-spanish-l08",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-medical-spanish-q073",
+      "q": "Which phrase asks a patient whether they want to call someone, appropriate for a patient who seems alone and frightened?",
+      "choices": [
+        "`¿Quiere llamar a alguien?`",
+        "`¿Necesita ir al baño?`",
+        "`¿Quiere una manta?`",
+        "`¿Necesita algo?`"
+      ],
+      "answer": 0,
+      "why": "`¿Quiere llamar a alguien?` specifically offers to help the patient reach someone. The others offer the bathroom, a blanket, and a general check-in, all useful but not the specific offer to contact someone.",
+      "lesson": "ed-medical-spanish-l09",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-medical-spanish-q074",
+      "q": "Which phrase is both true and appropriate to say to a stable patient waiting for test results, without overpromising?",
+      "choices": [
+        "`Todo va a estar bien.`",
+        "`Estoy aquí con usted.`",
+        "`No se preocupe, no es nada.`",
+        "`Seguro que va a estar bien.`"
+      ],
+      "answer": 1,
+      "why": "`Estoy aquí con usted` (I am here with you) is always true regardless of the outcome. The others promise a specific good outcome or minimize the situation, both of which risk being proven false.",
+      "lesson": "ed-medical-spanish-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-medical-spanish-q075",
+      "q": "A patient mentions she treated a stomach complaint with `manzanilla` at home. What is she describing?",
+      "choices": [
+        "A prescription medication",
+        "Chamomile tea, an herbal home remedy",
+        "A type of physical therapy",
+        "A folk healer visit"
+      ],
+      "answer": 1,
+      "why": "`manzanilla` is chamomile, a common herbal remedy. Herbal remedies should still be captured in the medication history through the interpreter, since some interact with prescribed drugs.",
+      "lesson": "ed-medical-spanish-l09",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-medical-spanish-q076",
+      "q": "Which phrase asks who is the family member responsible for making decisions?",
+      "choices": [
+        "`¿Quién es el que decide?`",
+        "`¿Es usted familiar?`",
+        "`¿Necesita algo?`",
+        "`¿Cómo se llama?`"
+      ],
+      "answer": 0,
+      "why": "`¿Quién es el que decide?` specifically asks who makes decisions, useful for identifying the right person for updates or consent conversations. The others ask about family relation, needs, and name.",
+      "lesson": "ed-medical-spanish-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-medical-spanish-q077",
+      "q": "A visitor says a patient in the lobby `se está ahogando`. What is being reported, and how urgent is it?",
+      "choices": [
+        "The patient fainted; routine triage priority",
+        "The patient is choking; immediate response, do not wait for the nurse",
+        "The patient is bleeding; apply pressure and wait for the next open room",
+        "The patient is dizzy; offer a chair"
+      ],
+      "answer": 1,
+      "why": "`se está ahogando` means is choking, one of the few phrases in this vocabulary that calls for an immediate response rather than waiting to alert the nurse first, since an obstructed airway cannot wait.",
+      "lesson": "ed-medical-spanish-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-medical-spanish-q078",
+      "q": "A family member says `está sangrando mucho` about a patient with a laceration. What is your first action?",
+      "choices": [
+        "Ask them to wait in the lobby until called",
+        "Apply direct pressure and get the nurse",
+        "Get the patient's insurance card first",
+        "Offer a warm blanket and monitor from a distance"
+      ],
+      "answer": 1,
+      "why": "`está sangrando mucho` means is bleeding a lot, calling for immediate direct pressure and nurse notification. Administrative tasks and passive monitoring both delay an action with a clear, immediate fix.",
+      "lesson": "ed-medical-spanish-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-medical-spanish-q079",
+      "q": "What is the most useful thing to say while you wait for the nurse to arrive after hearing an alarming phrase, without committing to a diagnosis or promise?",
+      "choices": [
+        "`Todo va a estar bien.`",
+        "`Ya viene la enfermera.`",
+        "`No es grave.`",
+        "`No se preocupe.`"
+      ],
+      "answer": 1,
+      "why": "`Ya viene la enfermera` (the nurse is coming) is accurate and does not overpromise an outcome. The other options either predict a good outcome or minimize the situation, both risky when you do not yet know the severity.",
+      "lesson": "ed-medical-spanish-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-medical-spanish-q080",
+      "q": "A patient's son says `se está muriendo` about his father in a treatment room. What should you do?",
+      "choices": [
+        "Ask him to calm down and wait outside",
+        "Go look at the patient yourself immediately",
+        "Note it in the chart for the next round",
+        "Tell him the doctor will explain later"
+      ],
+      "answer": 1,
+      "why": "`se está muriendo` (he is dying) is the most urgent phrase in this vocabulary and calls for going to look immediately, not documentation or deferral. Waiting to verify through another channel could cost critical time.",
+      "lesson": "ed-medical-spanish-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-medical-spanish-q081",
+      "q": "A 55-year-old man grips his chest and says `me duele el pecho` while you are walking by. What should happen within the next few minutes?",
+      "choices": [
+        "A routine triage assessment at the next available slot",
+        "A 12-lead ECG within about 10 minutes of the complaint reaching staff",
+        "A referral to a follow-up clinic",
+        "Nothing until the interpreter arrives"
+      ],
+      "answer": 1,
+      "why": "Chest pain, once relayed, starts the 10-minute 12-lead standard. Deferring to routine triage, a clinic referral, or waiting on the interpreter all needlessly delay a time-sensitive test that a tech's own recognition of the phrase can set in motion.",
+      "lesson": "ed-medical-spanish-l10",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-medical-spanish-q082",
+      "q": "A patient tells you `no siento el brazo` and also seems to be struggling to find words. What is the single most important next question?",
+      "choices": [
+        "`¿Le duele el brazo?`",
+        "`¿Cuándo fue la última vez que estaba bien?`",
+        "`¿Tiene alergias?`",
+        "`¿Quiere agua?`"
+      ],
+      "answer": 1,
+      "why": "Combined numbness and word-finding trouble suggest a stroke, and the highest-value question is last known well time, which determines treatment eligibility. Pain, allergies, and water are all lower priority and water may be unsafe before a swallow screen.",
+      "lesson": "ed-medical-spanish-l10",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-medical-spanish-q083",
+      "q": "Which phrase would you use to ask a patient if they smoke, part of a fuller triage history?",
+      "choices": [
+        "`¿Fuma?`",
+        "`¿Toma?`",
+        "`¿Está mareado?`",
+        "`¿Le arde?`"
+      ],
+      "answer": 0,
+      "why": "`¿Fuma?` asks about smoking. `¿Toma?` alone is ambiguous (drink or take), `¿Está mareado?` asks about dizziness, and `¿Le arde?` asks about burning pain, none of which addresses smoking.",
+      "lesson": "ed-medical-spanish-l06",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-medical-spanish-q084",
+      "q": "A patient answers `esta mañana` when asked when her symptoms began. Roughly how long ago is that, relative to `hace tres horas`?",
+      "choices": [
+        "It is a vaguer version of the same general timeframe as a few hours ago",
+        "It always means exactly 24 hours ago",
+        "It means the symptoms are chronic, lasting months",
+        "It cannot be compared to `hace tres horas`"
+      ],
+      "answer": 0,
+      "why": "`esta mañana` (this morning) is a same-day reference that, depending on the time of day, often overlaps with a few-hours-ago timeframe like `hace tres horas`, though it is less precise. It is a recent, not chronic, timeframe, and comparisons like this are exactly why exact language matters in a handoff.",
+      "lesson": "ed-medical-spanish-l06",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-medical-spanish-q085",
+      "q": "Which phrase would a patient use to say they do not remember something you asked?",
+      "choices": [
+        "`no sé`",
+        "`a veces`",
+        "`ayer`",
+        "`igual`"
+      ],
+      "answer": 0,
+      "why": "`no sé` means I do not know, the answer to an unanswerable question. `a veces` is sometimes, `ayer` is yesterday, and `igual` is the same, all different kinds of answers.",
+      "lesson": "ed-medical-spanish-l06",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-medical-spanish-q086",
+      "q": "Which phrase would you say to a patient right before drawing blood, to prepare them for the moment of the stick?",
+      "choices": [
+        "`Un pinchazo.`",
+        "`Ya terminé.`",
+        "`Abra la mano.`",
+        "`Ya casi.`"
+      ],
+      "answer": 0,
+      "why": "`Un pinchazo` (a little stick) is said in the half-second before the needle enters, preventing a startled flinch. `Ya terminé` and `Ya casi` come during or after the draw, and `Abra la mano` comes once you are already in the vein.",
+      "lesson": "ed-medical-spanish-l07",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-medical-spanish-q087",
+      "q": "A patient's family says he `no puede mover` his leg after a fall. Combined with a reported fall, what should this prompt beyond the standard fall workup?",
+      "choices": [
+        "Nothing additional; falls are routine",
+        "Consideration of a possible spinal or neurologic injury, communicated to the nurse immediately using the family's exact words",
+        "A request for the patient to try walking to confirm the problem",
+        "Reassurance that it is likely just soreness"
+      ],
+      "answer": 1,
+      "why": "Inability to move a limb after a fall raises concern for spinal or neurologic injury and should be relayed immediately and precisely. Asking the patient to walk risks worsening an unstable injury, and reassuring away a new motor deficit skips the escalation this phrase calls for.",
+      "lesson": "ed-medical-spanish-l08",
+      "difficulty": 3
+    }
   ]
 }

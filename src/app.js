@@ -61,6 +61,24 @@
     clearTimeout(toast._t); toast._t = setTimeout(() => { t.hidden = true; }, action ? 8000 : 2600);
   }
   const lessonDone = (id) => !!S.lessons[id]?.done;
+  const strict = () => S.settings.strict !== false;
+  const moduleComplete = (m) => m.lessons.every((l) => lessonDone(l.id));
+  const moduleMastered = (m) => (S.mastery?.[m.id]?.pct || 0) >= 80;
+  // Strict order: a lesson unlocks when the one before it is finished; a module unlocks when the previous module in its track is finished and its mastery test is passed.
+  function moduleLock(m) {
+    if (!strict()) return null; const t = trackOf(m); const i = t.modules.indexOf(m.id); if (i <= 0) return null;
+    const prev = MODS.get(t.modules[i - 1]); if (!prev) return null;
+    const up = moduleLock(prev); if (up) return up;
+    if (!moduleComplete(prev)) { const nl = prev.lessons.find((l) => !lessonDone(l.id)); return { reason: 'Finish ' + prev.title + ' first', href: '#/lesson/' + nl.id, label: 'Go to ' + nl.title }; }
+    if (!moduleMastered(prev)) return { reason: 'Pass the ' + prev.short + ' mastery test (80%) first', href: '#/quiz?scope=' + prev.id + '&n=25&mode=exam', label: 'Take the mastery test' };
+    return null;
+  }
+  function lessonLock(l) {
+    if (!strict() || lessonDone(l.id)) return null; const m = MODS.get(l._mod);
+    if (l._idx === 0) return moduleLock(m);
+    const prev = m.lessons[l._idx - 1]; if (!lessonDone(prev.id)) return { reason: 'Finish the lesson before it first', href: '#/lesson/' + prev.id, label: prev.title };
+    return null;
+  }
   const lessonStarted = (id) => !!S.lessons[id]?.started;
   const modProgress = (m) => { const n = m.lessons.filter((l) => lessonDone(l.id)).length; return { n, total: m.lessons.length, pct: m.lessons.length ? Math.round((n / m.lessons.length) * 100) : 0 }; };
   const trackProgress = (t) => { let n = 0, total = 0; for (const id of t.modules) { const m = MODS.get(id); if (!m) continue; n += m.lessons.filter((l) => lessonDone(l.id)).length; total += m.lessons.length; } return { n, total, pct: total ? Math.round((n / total) * 100) : 0 }; };
@@ -107,7 +125,7 @@
       if (m) {
         const args = m.slice(1).map(decodeURIComponent);
         const nav = path.split('/')[1] || 'today';
-        document.querySelectorAll('.rail-item').forEach((a) => a.classList.toggle('active', a.dataset.nav === (({ lesson: 'learn', module: 'learn', quiz: 'practice', scenario: 'practice', drill: 'practice', tools: 'practice', exam: 'practice', search: 'learn' })[nav] || nav)));
+        document.querySelectorAll('.rail-item').forEach((a) => a.classList.toggle('active', a.dataset.nav === (({ lesson: 'learn', module: 'learn', quiz: 'practice', scenario: 'practice', drill: 'practice', tools: 'practice', exam: 'practice', search: 'learn', sim: 'practice', station: 'practice', hours: 'career', mistakes: 'career', gpa: 'career', degree: 'career', decompress: 'career' })[nav] || nav)));
         view.innerHTML = loadingHTML; window.scrollTo(0, 0);
         try {
           const ret = await r.fn(...args, params, token);
@@ -135,6 +153,7 @@
     const dayIdx = Math.floor(Date.now() / 86400000);
     const drills = Drills.list; const d = drills[dayIdx % drills.length];
     items.push({ kind: 'drill', id: d.id, title: d.title, sub: 'Drill · ' + d.kind, mins: 4, href: '#/drill/' + d.id });
+    items.push({ kind: 'sim', id: 'history', title: 'Take a history from the AI patient', sub: 'Simulation · SAMPLE and OPQRST', mins: 5, href: '#/sim/history' });
     const sc = pickScenario();
     if (sc && dayIdx % 2 === 0) items.push({ kind: 'scenario', id: sc.id, title: sc.title, sub: 'Scenario · ' + MODS.get(sc._mod).title, mins: 6, href: '#/scenario/' + sc.id });
     else items.push({ kind: 'quiz', id: 'quiz', title: 'Ten mixed questions', sub: 'Quiz · everything unlocked', mins: 6, href: '#/quiz?scope=all&n=10' });
@@ -148,6 +167,7 @@
     if (it.kind === 'drill') return isToday(S.drills[it.id]?.last);
     if (it.kind === 'scenario') return isToday(S.scenarios[it.id]?.last);
     if (it.kind === 'quiz') return S.quiz.some((q) => isToday(q.ts));
+    if (it.kind === 'sim') return (S.sims || []).some((x) => x.kind === 'history' && isToday(x.ts));
     return false;
   }
   function pickScenario() {
@@ -212,7 +232,7 @@
         const m = MODS.get(id);
         if (!m) { g.appendChild(h(`<div class="card module-card" style="opacity:.55"><div class="title">${esc(id)}</div><div class="summary">Not loaded yet.</div></div>`)); continue; }
         const mp = modProgress(m);
-        g.appendChild(h(`<a class="card link module-card" href="#/module/${m.id}"><div class="title">${esc(m.title)}</div>${chev}<div class="summary">${esc(m.summary)}</div><div class="meta"><span class="chip">${m.lessons.length} lessons · ${fmtMin(m.counts.minutes)}</span><span class="chip">${m.counts.cards} cards</span>${m.counts.scenarios ? '<span class="chip">' + m.counts.scenarios + ' scenario' + (m.counts.scenarios > 1 ? 's' : '') + '</span>' : ''}${S.mastery?.[m.id]?.pct >= 80 ? '<span class="chip good">Mastered</span>' : ''}</div><div class="progress"><i style="width:${mp.pct}%"></i></div></a>`));
+        const mlk = moduleLock(m); g.appendChild(h(`<a class="card link module-card ${mlk ? 'locked' : ''}" href="#/module/${m.id}"><div class="title">${esc(m.title)}${mlk ? ' <span class="chip warn" style="vertical-align:middle">locked</span>' : ''}</div>${chev}<div class="summary">${esc(m.summary)}</div><div class="meta"><span class="chip">${m.lessons.length} lessons · ${fmtMin(m.counts.minutes)}</span><span class="chip">${m.counts.cards} cards</span>${m.counts.scenarios ? '<span class="chip">' + m.counts.scenarios + ' scenario' + (m.counts.scenarios > 1 ? 's' : '') + '</span>' : ''}${S.mastery?.[m.id]?.pct >= 80 ? '<span class="chip good">Mastered</span>' : ''}</div><div class="progress"><i style="width:${mp.pct}%"></i></div></a>`));
       }
     }
     show(el, token);
@@ -228,8 +248,9 @@
       <div class="split"><div><div class="eyebrow" style="margin-bottom:6px">Lessons</div><div class="card list" id="lessons"></div></div>
         <div class="stack"><div class="card"><div class="eyebrow">Practice this module</div><div class="btn-row" style="margin-top:12px"><a class="btn" href="#/quiz?scope=${m.id}&n=${Math.min(20, m.counts.quiz)}">Practice quiz · <span class="num">${m.counts.quiz}</span> questions</a><a class="btn ${S.mastery?.[m.id]?.pct >= 80 ? 'subtle' : 'primary'}" href="#/quiz?scope=${m.id}&n=${Math.min(25, m.counts.quiz)}&mode=exam">${S.mastery?.[m.id] ? 'Mastery test · best ' + S.mastery[m.id].pct + '%' : 'Mastery test · 25 timed'}</a><button class="btn" id="add-cards">${added ? 'Cards added to review' : 'Add all ' + m.counts.cards + ' cards to review'}</button></div><p class="faint small" style="margin-top:10px">Cards normally unlock as you finish lessons. Adding them all is for cramming before an exam.</p></div>
           ${m.scenarios.length ? `<div class="card"><div class="eyebrow">Scenarios</div><div class="list">${m.scenarios.map((s) => { const r = S.scenarios[s.id]; return `<a class="list-item" href="#/scenario/${s.id}"><span class="lead">${s.setting === 'field' ? 'EMS' : s.setting === 'ed' ? 'ED' : 'CR'}</span><span class="grow"><span class="title">${esc(s.title)}</span><span class="sub">${s.steps} decisions${r ? ' · best ' + r.best + '%' : ''}</span></span>${chev}</a>`; }).join('')}</div></div>` : ''}</div></div></div>`);
-    const list = $('#lessons', el);
-    m.lessons.forEach((l, i) => { const done = lessonDone(l.id); list.appendChild(h(`<a class="list-item ${done ? 'done' : ''}" href="#/lesson/${l.id}"><span class="lead">${done ? '✓' : String(i + 1).padStart(2, '0')}</span><span class="grow"><span class="title">${esc(l.title)}</span><span class="sub">${fmtMin(l.minutes)} · ${l.checks} checks · ${l.cards} cards</span></span>${chev}</a>`)); });
+    const list = $('#lessons', el); const ml = moduleLock(m);
+    if (ml) list.parentNode.insertBefore(h(`<div class="why no" style="margin-bottom:10px"><strong>Locked.</strong> ${esc(ml.reason)}. <a href="${ml.href}">${esc(ml.label)}</a></div>`), list);
+    m.lessons.forEach((l, i) => { const done = lessonDone(l.id); const lk = lessonLock(LESSON_IDX.get(l.id)); list.appendChild(h(`<a class="list-item ${done ? 'done' : ''} ${lk ? 'locked' : ''}" href="${lk ? lk.href : '#/lesson/' + l.id}" ${lk ? 'title="' + esc(lk.reason) + '"' : ''}><span class="lead">${done ? '✓' : String(i + 1).padStart(2, '0')}</span><span class="grow"><span class="title">${esc(l.title)}</span><span class="sub">${fmtMin(l.minutes)} · ${l.checks} checks · ${l.cards} cards</span></span>${chev}</a>`)); });
     $('#add-cards', el).onclick = (e) => { S.lessons['*' + m.id] = { added: Date.now() }; Store.save(); e.target.textContent = 'Cards added to review'; toast('All ' + m.counts.cards + ' cards will show up as new in Review.'); updateBadge(); };
     show(el, token);
   });
@@ -239,6 +260,7 @@
     const li = LESSON_IDX.get(id); if (!li) { show(h('<div class="empty">Lesson not found.</div>'), token); return; }
     const m = await loadModule(li._mod); if (stale(token)) return;
     const l = LESSON.get(id); const t = trackOf(m);
+    const lock = lessonLock(LESSON_IDX.get(id)); if (lock) { toast(lock.reason + '.'); location.hash = lock.href; return; }
     S.lessons[id] = Object.assign({}, S.lessons[id], { started: S.lessons[id]?.started || Date.now() }); Store.save();
     const done = lessonDone(id); const next = nextInModule(m, l);
     const el = h(`<div class="lesson track-${m.track}" id="lesson">${backLink('#/module/' + m.id, m.title)}<div class="ink-bar" id="ink-bar" hidden></div>
@@ -246,12 +268,13 @@
         <div class="meta"><span class="chip">${fmtMin(l.minutes)}</span>${done ? '<span class="chip good">Completed</span>' : ''}<div class="lesson-tools">${askBtn()}<button class="btn sm subtle" id="ink-toggle" title="Pencil notes"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M4 20l4-1 10.5-10.5a2.1 2.1 0 0 0-3-3L5 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l3 3" stroke="currentColor" stroke-width="2"/></svg>Notes</button></div></div></header>
       <article class="prose" id="body">${MD.render(l.body)}</article>
       <section class="keypoints"><div class="eyebrow accent">Walk away with</div><ol>${l.keyPoints.map((k) => '<li>' + MD.inline(k) + '</li>').join('')}</ol></section>
-      <section class="checks"><div class="eyebrow accent">Check yourself</div><p class="muted small" style="margin-top:4px">Get all ${l.checks.length} right to finish the lesson and unlock its cards.</p><div id="checks"></div></section>
+      <section class="checks ${done || !strict() ? '' : 'gated'}" id="checks-sec"><div class="eyebrow accent">Check yourself</div><p class="muted small" style="margin-top:4px">Get all ${l.checks.length} right to finish the lesson and unlock its cards.${done || !strict() ? '' : ' <b>Read to the end first.</b>'}</p><div id="checks"></div></section>
       <footer class="lesson-foot"><button class="btn primary lg" id="finish" ${done ? '' : 'disabled'}>${done ? 'Completed' : 'Finish lesson'}</button>${next ? `<a class="btn" href="#/lesson/${next.id}">Next: ${esc(next.title)}</a>` : `<a class="btn" href="#/module/${m.id}">Back to module</a>`}</footer>
       <aside class="source-note"><div class="eyebrow">Source check</div><p class="small muted">This lesson was written by an AI model and has not been reviewed by a clinician. Your textbook wins every conflict: for EMT, the AAOS <em>Emergency Care and Transportation of the Sick and Injured</em> or Brady <em>Emergency Care</em> is what the NREMT tests from. If something here disagrees with class, flag it.</p><button class="btn sm ${(S.flags || {})['lesson:' + id] ? 'danger' : ''}" id="flag">${(S.flags || {})['lesson:' + id] ? 'Flagged · edit' : 'Flag an error'}</button></aside>
       <div class="ink-layer" id="ink-layer"></div></div>`);
     $('#flag', el).onclick = () => { flagItem('lesson:' + id, { kind: 'lesson', id, title: l.title, mod: m.id }); const f = (S.flags || {})['lesson:' + id]; $('#flag', el).textContent = f ? 'Flagged · edit' : 'Flag an error'; $('#flag', el).classList.toggle('danger', !!f); };
     const checks = $('#checks', el); const passed = new Array(l.checks.length).fill(done);
+    if (!done && strict() && 'IntersectionObserver' in window) { const kp = $('.keypoints', el); const io = new IntersectionObserver((es) => { if (es.some((e) => e.isIntersecting)) { $('#checks-sec', el).classList.remove('gated'); io.disconnect(); } }, { threshold: 0.6 }); setTimeout(() => io.observe(kp), 300); } else $('#checks-sec', el).classList.remove('gated');
     l.checks.forEach((c, ci) => {
       const box = h(`<div class="check"><div class="eyebrow">Check ${ci + 1}</div><div class="q">${MD.inline(c.q)}</div>${choicesHTML(c.choices)}<div class="why" hidden></div></div>`);
       box.querySelectorAll('.choice').forEach((b) => b.onclick = () => {
@@ -349,6 +372,12 @@
         <a class="card link" href="#/quiz?scope=emt&n=70&mode=exam"><div class="eyebrow accent">Exam mode</div><h2 style="margin-top:6px">NREMT mock · 70</h2><p class="muted small" style="margin-top:6px">Timed, no feedback until the end. Domain-weighted like the real thing.</p></a>
         <a class="card link" href="#/quiz?scope=weak&n=20"><div class="eyebrow accent">Weak spots</div><h2 style="margin-top:6px">${weak.length ? weak.length + ' lessons to shore up' : 'No weak spots yet'}</h2><p class="muted small" style="margin-top:6px">${weak.length ? 'Questions from the lessons you miss most.' : 'Take a few quizzes and this fills in.'}</p></a>
         <a class="card link" href="#/quiz"><div class="eyebrow accent">Custom</div><h2 style="margin-top:6px">Build a quiz</h2><p class="muted small" style="margin-top:6px">Pick a track or module, length, and mode.</p></a>
+      </div>
+      <div class="grid" style="margin-bottom:22px">
+        <a class="card link" href="#/sim/history"><div class="eyebrow accent">Simulation · daily</div><h2 style="margin-top:6px">AI patient: take the history</h2><p class="muted small" style="margin-top:6px">SAMPLE and OPQRST on a patient who only answers what you ask. Audited at the end.</p></a>
+        <a class="card link" href="#/sim/report"><div class="eyebrow accent">Simulation · 30 s</div><h2 style="margin-top:6px">Radio report</h2><p class="muted small" style="margin-top:6px">MIST or SBAR against the clock, graded on what had to be in it.</p></a>
+        <a class="card link" href="#/sim/pcr"><div class="eyebrow accent">Simulation</div><h2 style="margin-top:6px">PCR narrative</h2><p class="muted small" style="margin-top:6px">Chart a call. Checked for times, vitals trend, treatments, objective language, refusals.</p></a>
+        <a class="card link" href="#/station"><div class="eyebrow accent">Skill stations</div><h2 style="margin-top:6px">Record and score yourself</h2><p class="muted small" style="margin-top:6px">NREMT sheets on camera, critical criteria highlighted.</p></a>
       </div>
       <div class="card" style="margin-bottom:22px"><div class="eyebrow">Full-length practice exams</div><div class="list">${(IDX.exams || []).map((x) => { const hist = (S.exams || {})[x.id] || []; const best = hist.length ? Math.max(...hist.map((a) => a.pct)) : null; return `<a class="list-item" href="#/exam/${x.id}"><span class="lead">${x.count}</span><span class="grow"><span class="title">${esc(x.title)}</span><span class="sub">${x.count} questions · ${Math.floor(x.minutes / 60) ? Math.floor(x.minutes / 60) + ' h ' : ''}${x.minutes % 60 ? x.minutes % 60 + ' min' : ''} · pool of ${x.pool}${best !== null ? ' · best ' + best + '%' : ''}</span></span>${chev}</a>`; }).join('') || '<div class="empty">Exam banks are still being written.</div>'}</div></div>
       <div class="card" style="margin-bottom:22px"><div class="eyebrow">Track finals · 50 timed questions, 80% to pass</div><div class="list">${IDX.tracks.map((t) => { const f = (S.finals || {})[t.id]; return `<a class="list-item track-${t.id}" href="#/quiz?scope=${t.id}&n=50&mode=exam"><span class="lead" style="background:var(--track-soft);color:var(--track)">${esc(t.title.slice(0, 3).toUpperCase())}</span><span class="grow"><span class="title">${esc(t.title)} final</span><span class="sub">${f ? 'best ' + f.pct + '%' + (f.pct >= 80 ? ' · passed' : '') : 'not taken yet'}</span></span>${chev}</a>`; }).join('')}</div></div>
@@ -450,7 +479,7 @@
       const byMod = {}; qs.forEach((q, k) => { const b = byMod[q._mod] = byMod[q._mod] || { n: 0, r: 0 }; b.n++; if (answers[k] === q.answer) b.r++; });
       $('#qp', el).style.width = '100%';
       stage.innerHTML = `<div class="card"><div class="result-head"><div class="eyebrow">${esc(scopeName)} · ${qs.length} questions · ${Math.floor(secs / 60)}m ${secs % 60}s</div><b class="num" style="color:${pct >= 70 ? 'var(--good)' : 'var(--bad)'}">${pct}%</b><div class="sub">${correct} of ${qs.length} correct${mode === 'exam' && MODS.has(scope) && qs.length >= 20 ? (pct >= 80 ? ' · module mastered' : ' · 80% earns mastery') : mode === 'exam' && TRACK.has(scope) ? (pct >= 80 ? ' · track final passed' : ' · 80% passes the track final') : mode === 'exam' ? ' · the NREMT wants consistent 70%+ across domains' : ''}</div></div><div class="row" style="justify-content:center;gap:8px;margin-bottom:8px">${Object.entries(byMod).map(([mid, b]) => `<span class="chip ${b.r / b.n >= .7 ? 'good' : 'bad'}">${esc(MODS.get(mid).short)} ${b.r}/${b.n}</span>`).join('')}</div><div class="btn-row" style="justify-content:center"><a class="btn primary" href="#/quiz?scope=${scope}&n=${qs.length}&mode=${mode}">Again</a><a class="btn" href="#/practice">Practice</a></div></div>
-        <div class="card" style="margin-top:14px"><div class="eyebrow">Review answers</div>${qs.map((q, k) => `<div class="result-q"><div class="stem">${k + 1}. ${MD.inline(q.q)}</div><div class="ans ${answers[k] === q.answer ? 'ok' : 'no'}">${answers[k] === null ? 'Skipped' : 'You: ' + KEYS[answers[k]] + '. ' + MD.inline(q.choices[answers[k]])}</div>${answers[k] !== q.answer ? `<div class="ans ok">Answer: ${KEYS[q.answer]}. ${MD.inline(q.choices[q.answer])}</div>` : ''}<div class="why" style="margin-top:8px">${MD.inline(q.why)}</div><div class="row" style="margin-top:6px;justify-content:space-between"><a class="faint tiny" href="#/lesson/${q.lesson}">${esc(LESSON.get(q.lesson)?.title || q.lesson)}</a><button class="btn sm ghost ask" data-k="${k}">Ask</button></div></div>`).join('')}</div>`;
+        <div class="card" style="margin-top:14px"><div class="eyebrow">Review answers</div>${qs.map((q, k) => `<div class="result-q"><div class="stem">${k + 1}. ${MD.inline(q.q)}</div><div class="ans ${answers[k] === q.answer ? 'ok' : 'no'}">${answers[k] === null ? 'Skipped' : 'You: ' + KEYS[answers[k]] + '. ' + MD.inline(q.choices[answers[k]])}</div>${answers[k] !== q.answer ? `<div class="ans ok">Answer: ${KEYS[q.answer]}. ${MD.inline(q.choices[q.answer])}</div>` : ''}<div class="why" style="margin-top:8px">${MD.inline(q.why)}</div><div class="row" style="margin-top:6px;justify-content:space-between"><a class="faint tiny" href="#/lesson/${q.lesson}">${esc(LESSON.get(q.lesson)?.title || q.lesson)}</a>${answers[k] !== q.answer ? `<a class="btn sm ghost" href="#/mistakes?source=quiz&tags=${encodeURIComponent(MODS.get(q._mod).short.toLowerCase())}&miss=${encodeURIComponent(('Picked ' + (answers[k] === null ? 'nothing' : q.choices[answers[k]]) + ' for: ' + q.q).slice(0, 180))}">Log miss</a>` : ''}<button class="btn sm ghost ask" data-k="${k}">Ask</button></div></div>`).join('')}</div>`;
       stage.querySelectorAll('[data-k]').forEach((b) => b.onclick = () => askQ(qs[+b.dataset.k]));
       window.scrollTo(0, 0);
     }
@@ -562,7 +591,7 @@
         const c = cur.choices[+b.dataset.i];
         stage.querySelectorAll('.choice').forEach((x) => { x.disabled = true; x.classList.remove('picked'); });
         b.classList.add(c.score === 1 ? 'right' : c.score === 0 ? 'picked' : 'wrong');
-        path.push({ step: cur.id, choice: +b.dataset.i, score: c.score }); score += c.score; dots();
+        path.push({ step: cur.id, choice: +b.dataset.i, score: c.score, label: (c.text || c.label || '').slice(0, 140) }); score += c.score; dots();
         $('#fb', stage).innerHTML = `<div class="sc-feedback s${c.score}"><span class="label">${c.score === 1 ? 'Best move' : c.score === 0 ? 'Acceptable, not ideal' : 'Harmful'}</span>${MD.inline(c.feedback)}</div><div class="btn-row" style="margin-top:14px"><button class="btn primary" id="cont">${c.next === 'end' ? 'Debrief' : 'Continue'}</button></div>`;
         $('#cont', stage).onclick = () => { go(c.next); window.scrollTo(0, 0); };
       });
@@ -570,7 +599,7 @@
     function debrief() {
       cur = null; dots(); const max = path.length; const pct = Math.max(0, Math.round(((score + max) / (2 * max)) * 100));
       const rec = S.scenarios[id] = S.scenarios[id] || { runs: 0, best: 0 }; rec.runs++; rec.best = Math.max(rec.best, pct); rec.last = Date.now(); Store.bump('scen'); Store.save(true);
-      stage.innerHTML = `<div class="sc-step"><div class="result-head"><div class="eyebrow">Debrief</div><b class="num" style="color:${pct >= 75 ? 'var(--good)' : pct >= 50 ? 'var(--warn)' : 'var(--bad)'}">${pct}%</b><div class="sub">${path.filter((p) => p.score === 1).length} best moves, ${path.filter((p) => p.score === 0).length} acceptable, ${path.filter((p) => p.score === -1).length} harmful</div></div><div class="prose">${MD.render(s.debrief)}</div><div class="btn-row" style="margin-top:18px"><a class="btn primary" href="#/scenario/${id}">Run again</a><a class="btn" href="#/module/${m.id}">Module</a><a class="btn" href="#/practice">Practice</a></div></div>`;
+      stage.innerHTML = `<div class="sc-step"><div class="result-head"><div class="eyebrow">Debrief</div><b class="num" style="color:${pct >= 75 ? 'var(--good)' : pct >= 50 ? 'var(--warn)' : 'var(--bad)'}">${pct}%</b><div class="sub">${path.filter((p) => p.score === 1).length} best moves, ${path.filter((p) => p.score === 0).length} acceptable, ${path.filter((p) => p.score === -1).length} harmful</div></div><div class="prose">${MD.render(s.debrief)}</div><div class="btn-row" style="margin-top:18px"><a class="btn primary" href="#/scenario/${id}">Run again</a><a class="btn" href="#/mistakes?source=${encodeURIComponent('app scenario')}&tags=${encodeURIComponent(m.short.toLowerCase())}&miss=${encodeURIComponent(path.filter((p) => p.score === -1).map((p) => p.label || '').filter(Boolean)[0] || '')}">Log a miss</a><a class="btn" href="#/module/${m.id}">Module</a><a class="btn" href="#/practice">Practice</a></div></div>`;
     }
     intro();
   });
@@ -684,6 +713,7 @@
     const counts = orderedLight.reduce((a, m) => ({ lessons: a.lessons + m.lessons.length, cards: a.cards + m.counts.cards, quiz: a.quiz + m.counts.quiz, scen: a.scen + m.counts.scenarios }), { lessons: 0, cards: 0, quiz: 0, scen: 0 });
     const el = h(`<div class="settings"><div class="page-head"><div><div class="eyebrow">Rounds</div><h1>Settings</h1></div></div>
       <div class="card"><div class="eyebrow">Appearance</div><div class="seg" style="margin-top:10px" id="theme">${['system', 'light', 'dark'].map((t) => `<button data-t="${t}" class="${S.settings.theme === t ? 'on' : ''}">${t[0].toUpperCase() + t.slice(1)}</button>`).join('')}</div></div>
+      <div class="card"><div class="eyebrow">Learning</div><div class="stack" style="margin-top:10px"><label class="task ${S.settings.strict !== false ? 'done' : ''}" id="strict"><span class="box">${S.settings.strict !== false ? '\u2713' : ''}</span><span><span class="t" style="text-decoration:none;color:inherit">Strict order</span><div class="sub">Read to the end before the checks unlock. The next lesson opens only when this one is finished. The next module opens only after its mastery test (80%). Tracks stay open in parallel.</div></span></label></div></div>
       <div class="card"><div class="eyebrow">Review</div><div class="field" style="margin-top:10px"><label>New cards per day</label><div class="seg" id="dn">${[10, 20, 30, 50, 100].map((n) => `<button data-n="${n}" class="${S.settings.dailyNew === n ? 'on' : ''}">${n}</button>`).join('')}</div></div><p class="faint small" style="margin-top:8px">Twenty a day is sustainable. Fifty or more is for exam week.</p></div>
       <div class="card"><div class="eyebrow">Tutor</div><div class="field" style="margin-top:10px"><label for="tutor-url">Tutor service address</label><input type="text" id="tutor-url" value="${esc(S.settings.tutorUrl || '')}" placeholder="${esc(Tutor.endpoint())}" autocapitalize="off" autocorrect="off" spellcheck="false"></div><p class="faint small" style="margin-top:8px">Leave blank to use the default. Answers come from Claude on your own subscription, through the homelab. Needs Tailscale on.</p><div class="btn-row" style="margin-top:10px"><button class="btn sm" id="tutor-test">Test connection</button><button class="btn sm ask" id="tutor-open">Open tutor</button></div></div>
       <div class="card"><div class="eyebrow">Apple Pencil</div><div class="stack" style="margin-top:10px">
@@ -697,6 +727,7 @@
     $('#dn', el).querySelectorAll('button').forEach((b) => b.onclick = () => { S.settings.dailyNew = +b.dataset.n; Store.save(); $('#dn', el).querySelectorAll('button').forEach((x) => x.classList.toggle('on', x === b)); updateBadge(); });
     const tog = (id, key) => { $('#' + id, el).onclick = () => { S.settings[key] = !S.settings[key]; Store.save(); const t = $('#' + id, el); t.classList.toggle('done', S.settings[key]); $('.box', t).textContent = S.settings[key] ? '✓' : ''; }; };
     tog('penonly', 'penOnly'); tog('autoink', 'autoInk');
+    $('#strict', el).onclick = () => { S.settings.strict = S.settings.strict === false; Store.save(); const t = $('#strict', el); t.classList.toggle('done', S.settings.strict !== false); $('.box', t).textContent = S.settings.strict !== false ? '\u2713' : ''; };
     $('#tutor-url', el).addEventListener('change', (e) => { S.settings.tutorUrl = e.target.value.trim(); Store.save(); });
     $('#tutor-test', el).onclick = async () => { const u = Tutor.endpoint().replace(/\/tutor\/?$/, '/tutor/health').replace(/\/api\/tutor\/health$/, '/api/tutor/health'); try { const r = await fetch(u, { cache: 'no-store' }); toast(r.ok ? 'Tutor is reachable.' : 'Tutor answered with an error (' + r.status + ').'); } catch (e) { toast('Tutor not reachable. Check Tailscale and the service.'); } };
     $('#tutor-open', el).onclick = () => Tutor.open({ id: 'settings', kind: 'general', title: 'Anything', label: 'Ask the tutor', text: '' });
@@ -712,6 +743,10 @@
     $('#reset', el).onclick = () => { if (confirm('Erase all progress and Pencil notes on this device?')) { Store.reset(); Store.inkClear().then(() => location.reload()); } };
     $('#update', el).onclick = async () => { if (!('serviceWorker' in navigator)) return toast('Offline mode is not available in this browser.'); const r = await navigator.serviceWorker.getRegistration(); if (!r) return toast('Not installed for offline yet.'); await r.update(); toast('Checked. If a new version exists it will load on the next open.'); };
   });
+
+  // ---------- Extensions (career.js, sim.js) ----------
+  const API = { route, h, esc, show, stale, S, save: (now) => Store.save(now), toast, backLink, MD, Store, REF, MODS, LESSON, SCEN_IDX, loadModule, today, isToday, Tutor };
+  (window.ROUNDS_EXT || []).forEach((fn) => { try { fn(API); } catch (e) { console.error('extension failed', e); } });
 
   // ---------- Boot ----------
   applyTheme();

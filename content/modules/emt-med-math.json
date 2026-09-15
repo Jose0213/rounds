@@ -525,7 +525,7 @@
       "A 10 mL syringe, graduated every 0.2 mL",
       "A 1 mL tuberculin syringe, graduated every 0.01 mL",
       "An insulin syringe on a U-100 scale",
-      "A 5 mL syringe, graduated every 0.5 mL"
+      "A 5 mL syringe, graduated every 0.2 mL"
     ], "answer": 1, "why": "The graduation must be finer than the precision you need, so 0.01 mL marks make 0.35 mL measurable. A 10 mL or 5 mL barrel forces a guess between marks, and insulin syringes are reserved for insulin and read in units, not millilitres.", "lesson": "emt-med-math-l05", "difficulty": 2 },
     { "id": "emt-med-math-q038", "q": "A patient's medication list shows a drug ordered at 1 mcg/kg and she weighs 132 lb. The vial reads 50 mcg/mL. What volume is correct?", "choices": ["2.64 mL", "1.2 mL", "0.6 mL", "3 mL"], "answer": 1, "why": "132 / 2.2 = 60 kg; 1 mcg/kg x 60 = 60 mcg; 60 / 50 = 1.2 mL. Answering 2.64 mL divides the pound weight by the concentration without converting, and 3 mL assumes a 20 mcg/mL vial.", "lesson": "emt-med-math-l04", "difficulty": 3 }
   ],
@@ -582,7 +582,7 @@
           "id": "s5",
           "prompt": "Post-arrest care. The team wants a dopamine infusion at `5 mcg/kg/min`. Pharmacy sends a premixed bag: `400 mg in 250 mL`.\n\n**What rate do you dial into the pump?**",
           "choices": [
-            { "text": "17 mL/h", "next": "s6", "feedback": "Close but this used 100 kg rather than the actual 90 kg. The weight you converted in step one is the number that drives this; the correct rate is 17 mL/h only if he weighed 90.6 kg. Recalculate with 90 kg.", "score": 0 },
+            { "text": "19 mL/h", "next": "s6", "feedback": "Close, but this used 100 kg rather than the actual 90 kg: 5 x 100 x 60 = 30,000 mcg/h, divided by 1,600 mcg/mL is 18.75, or 19 mL/h. The weight you converted in step one is the number that drives this. Recalculate with 90 kg.", "score": 0 },
             { "text": "About 17 mL/h, from 27,000 mcg/h divided by 1,600 mcg/mL", "next": "s6", "feedback": "Correct. Bag concentration: 400,000 mcg / 250 mL = 1,600 mcg/mL. Dose: 5 x 90 = 450 mcg/min, times 60 = 27,000 mcg/h. Rate: 27,000 / 1,600 = 16.9, so 17 mL/h.", "score": 1 },
             { "text": "450 mL/h", "next": "s6", "feedback": "That is the dose in mcg per minute mistaken for a pump rate. 450 mL/h of any pressor would empty the bag in half an hour and deliver a catastrophic dose. Always finish by dividing by the bag concentration.", "score": -1 },
             { "text": "27 mL/h", "next": "s6", "feedback": "This dropped a zero in the bag concentration, using 1,000 instead of 1,600 mcg/mL. Convert milligrams to micrograms carefully: 400 mg is 400,000 mcg, over 250 mL is 1,600 mcg/mL.", "score": 0 }

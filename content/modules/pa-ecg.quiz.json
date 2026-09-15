@@ -550,7 +550,7 @@
     },
     {
       "id": "pa-ecg-q094",
-      "q": "A patient's QRS is 0.14 seconds with a deep, wide S wave in V6 and a monophasic, notched R wave in lead I. What is this, and what important caveat applies to ST-segment interpretation?",
+      "q": "A patient's QRS is 0.14 seconds with a deep, wide S wave in V1 and a monophasic, notched R wave in leads I and V6. What is this, and what important caveat applies to ST-segment interpretation?",
       "choices": [
         "Left bundle branch block; ordinary ST elevation criteria are unreliable and Sgarbossa criteria should be used instead",
         "Right bundle branch block; ST segments can be read normally",
@@ -558,7 +558,7 @@
         "Wolff-Parkinson-White; a delta wave should also be present"
       ],
       "answer": 0,
-      "why": "A broad monophasic R in I and V6 with a deep S in V6 (actually QS in V1 is the classic finding, and I/V6 show the tall R) describes left bundle branch block, which produces baseline discordant ST changes that make standard elevation criteria unreliable, requiring the Sgarbossa criteria instead.",
+      "why": "A broad monophasic R in I and V6 with a deep S or QS complex in V1 describes left bundle branch block, which produces baseline discordant ST changes that make standard elevation criteria unreliable, requiring the Sgarbossa criteria instead.",
       "lesson": "pa-ecg-l03",
       "difficulty": 2
     },
@@ -959,12 +959,12 @@
       "q": "A patient has a QT interval of 400 ms at a heart rate of 100 beats per minute. Using Bazett's correction, is the QTc likely prolonged?",
       "choices": [
         "Yes, because 400 ms is always prolonged regardless of rate",
-        "No, because at a faster heart rate the corrected QT lengthens relative to the raw QT, and 400 ms corrected at this rate is within a normal range",
+        "Yes, because at a faster heart rate the corrected QT is longer than the raw QT: 400 divided by the square root of 0.6 is about 516 ms",
         "The QTc cannot be estimated without knowing the QRS width",
         "No, because QTc calculations do not apply above a rate of 90"
       ],
       "answer": 1,
-      "why": "Bazett's formula divides the QT by the square root of the R-R interval in seconds; at 100 bpm the R-R is 0.6 seconds, whose square root is about 0.77, giving a QTc near 520 ms... this scenario is designed to test recognizing that faster rates require correction upward, so a raw QT that looks unremarkable can conceal a genuinely prolonged QTc, making careful calculation essential rather than eyeballing the raw number.",
+      "why": "Bazett's formula divides the QT by the square root of the R-R interval in seconds; at 100 bpm the R-R is 0.6 seconds, whose square root is about 0.77, so a raw QT of 400 ms corrects to about 516 ms, which is above the 500 ms high-risk threshold. A raw QT that looks unremarkable can conceal a prolonged QTc at fast rates, which is why the correction is calculated rather than eyeballed.",
       "lesson": "pa-ecg-l08",
       "difficulty": 3
     },

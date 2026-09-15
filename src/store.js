@@ -10,7 +10,15 @@
     drills: {},      // id -> { runs, best }
     days: {},        // YYYY-MM-DD -> { cards, lessons, quiz, scen }
     path: {},        // taskId -> ts
-    flags: {},       // 'lesson:<id>' | 'q:<id>' -> { kind, id, title, mod, note, ts }
+    flags: {},
+    hours: [],       // CASPA hours log [{ id, kind: 'pce'|'shadow', date, employer, role, hours, supervisor, contact, notes }]
+    mistakes: [],    // [{ id, ts, miss, fix, source, tags, srs }]
+    courses: [],     // GPA [{ id, name, term, credits, grade, sci }]
+    degree: {},      // degree planner { perTerm, done: {courseId: true}, term: {courseId: n}, dropped: {courseId: true} }
+    journal: [],     // not-on-shift entries [{ id, ts, title, text }]
+    contacts: [],    // peer support contacts [{ id, name, role, phone }]
+    stations: {},    // skill station runs { sheetId: [{ ts, score, total, fails, video }] }
+    sims: [],        // sim history [{ ts, kind, tid, score, total }]       // 'lesson:<id>' | 'q:<id>' -> { kind, id, title, mod, note, ts }
     settings: { theme: 'system', penOnly: true, dailyNew: 20, autoInk: true },
     firstRun: Date.now(),
   });
@@ -43,7 +51,7 @@
     s.days[k][field] = (s.days[k][field] || 0) + n;
     save();
   }
-  function exportJSON() { save(true); return JSON.stringify(load(), null, 2); }
+  function exportJSON() { save(true); const o = Object.assign({}, load()); delete o.journal; return JSON.stringify(o, null, 2); }
   function importJSON(text) {
     const obj = JSON.parse(text);
     if (!obj || typeof obj !== 'object' || !obj.cards || !obj.lessons) throw new Error('Not a Rounds progress file');
@@ -59,8 +67,8 @@
     if (dbp) return dbp;
     dbp = new Promise((resolve, reject) => {
       if (!('indexedDB' in window)) return resolve(null);
-      const req = indexedDB.open('rounds-ink', 1);
-      req.onupgradeneeded = () => { req.result.createObjectStore('ink'); };
+      const req = indexedDB.open('rounds-ink', 2);
+      req.onupgradeneeded = () => { const db = req.result; if (!db.objectStoreNames.contains('ink')) db.createObjectStore('ink'); if (!db.objectStoreNames.contains('blobs')) db.createObjectStore('blobs'); };
       req.onsuccess = () => resolve(req.result);
       req.onerror = () => resolve(null);
     });
@@ -92,5 +100,7 @@
     const db = await idb(); if (!db) return;
     return new Promise((resolve) => { const tx = db.transaction('ink', 'readwrite'); tx.objectStore('ink').clear(); tx.oncomplete = () => resolve(); tx.onerror = () => resolve(); });
   }
-  window.Store = { load, save, today, bump, exportJSON, importJSON, reset, inkGet, inkSet, inkKeys, inkClear };
+  async function blobGet(id) { const db = await idb(); if (!db) return null; return new Promise((resolve) => { const r = db.transaction('blobs', 'readonly').objectStore('blobs').get(id); r.onsuccess = () => resolve(r.result || null); r.onerror = () => resolve(null); }); }
+  async function blobSet(id, data) { const db = await idb(); if (!db) return false; return new Promise((resolve) => { const tx = db.transaction('blobs', 'readwrite'); if (data) tx.objectStore('blobs').put(data, id); else tx.objectStore('blobs').delete(id); tx.oncomplete = () => resolve(true); tx.onerror = () => resolve(false); }); }
+  window.Store = { load, save, today, bump, exportJSON, importJSON, reset, inkGet, inkSet, inkKeys, inkClear, blobGet, blobSet };
 })();
