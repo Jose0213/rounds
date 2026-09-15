@@ -1,0 +1,3611 @@
+{
+ "schema": 1,
+ "id": "nha-cet",
+ "title": "NHA EKG Technician (CET)",
+ "blurb": "The National Healthcareer Association CET exam: 100 scored items plus 20 unscored pretest items in two hours, across safety and coordinated care, EKG acquisition, and EKG analysis and interpretation. Each attempt here draws 100 by the real domain weights.",
+ "minutes": 120,
+ "count": 100,
+ "sections": [
+  {
+   "id": "care",
+   "title": "Safety, Compliance & Coordinated Care",
+   "weight": 0.32
+  },
+  {
+   "id": "acq",
+   "title": "EKG Acquisition",
+   "weight": 0.4
+  },
+  {
+   "id": "interp",
+   "title": "EKG Analysis & Interpretation",
+   "weight": 0.28
+  }
+ ],
+ "questions": [
+  {
+   "id": "nha-cet-q0001",
+   "section": "care",
+   "q": "Before beginning a 12-lead EKG on an inpatient, the technician must verify the patient's identity. Which action meets the standard?",
+   "choices": [
+    "Ask the patient to confirm the room number posted on the door",
+    "Call the patient's name and proceed if someone answers",
+    "Ask the patient to state name and date of birth, then compare both to the armband and the order",
+    "Match the face to the photo the nurse described at the desk"
+   ],
+   "answer": 2,
+   "why": "Two patient identifiers must be patient-specific, such as full name and date of birth, verified against the armband and requisition. Room number is never an acceptable identifier because patients are moved between rooms.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0002",
+   "section": "care",
+   "q": "A technician enters the room and immediately begins attaching limb electrodes without speaking. What essential step was omitted?",
+   "choices": [
+    "Introducing himself by name and title and explaining what the EKG involves",
+    "Charting the skin condition",
+    "Calibrating the machine to 20 mm/mV",
+    "Measuring the patient's height"
+   ],
+   "answer": 0,
+   "why": "Introduction and a plain-language explanation are required before any contact; they establish rapport and support consent. Calibration is a machine step and is normally 10 mm/mV, not a substitute for patient communication.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0003",
+   "section": "care",
+   "q": "A fully alert adult says he does not want the EKG done. The technician should:",
+   "choices": [
+    "Perform it anyway because a physician ordered it",
+    "Tell him the hospital will bill him for refusing",
+    "Apply the electrodes but not record a tracing",
+    "Stop, respect the refusal, and notify the nurse or ordering provider and document it"
+   ],
+   "answer": 3,
+   "why": "A competent adult may refuse any procedure; the technician stops, reports the refusal up the chain, and documents it. Performing it over an objection would constitute battery, no matter who ordered it.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0004",
+   "section": "care",
+   "q": "While placing precordial electrodes on a female patient, the best way to protect dignity is to:",
+   "choices": [
+    "Leave the door open so a witness can see the procedure",
+    "Expose only the area needed at the moment and keep the chest draped otherwise",
+    "Ask the patient to remove the gown entirely for accuracy",
+    "Have another patient's family member stay in the room"
+   ],
+   "answer": 1,
+   "why": "Expose only what is necessary for correct placement and re-drape immediately; a sheet or towel over the chest preserves privacy without shifting electrodes. Complete exposure is unnecessary because V1 through V6 can be placed one at a time.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0005",
+   "section": "care",
+   "q": "A 4-year-old is crying and pulling at the electrodes. The most effective approach is:",
+   "choices": [
+    "Use simple words, allow the child to touch an electrode first, and let a caregiver stay nearby",
+    "Explain lead vectors so the child understands the science",
+    "Tell the child the test will hurt only a little",
+    "Restrain the arms and work quickly"
+   ],
+   "answer": 0,
+   "why": "Short, concrete explanation plus caregiver presence and a chance to handle the equipment reduces pediatric fear. Saying it will hurt is both inaccurate, since an EKG is painless, and damages trust.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0006",
+   "section": "care",
+   "q": "An elderly patient with mild hearing loss keeps saying What? The technician should:",
+   "choices": [
+    "Shout each instruction from the doorway",
+    "Write out every word of the procedure",
+    "Face the patient, speak slowly in a lower pitch, and reduce background noise",
+    "Use only gestures and skip verbal explanation"
+   ],
+   "answer": 2,
+   "why": "Facing the patient allows lip reading, and age-related loss affects high frequencies first, so lowering pitch helps more than volume. Shouting raises pitch and distorts speech, making comprehension worse.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0007",
+   "section": "care",
+   "q": "A patient speaks only Vietnamese. Which action is correct?",
+   "choices": [
+    "Ask the patient's teenage daughter to translate",
+    "Use a hospital-approved medical interpreter in person or by phone",
+    "Speak English loudly and slowly",
+    "Proceed without explanation since an EKG is noninvasive"
+   ],
+   "answer": 1,
+   "why": "A qualified medical interpreter ensures accurate understanding and is required for meaningful consent. Family members, especially minors, are not acceptable interpreters because of accuracy and confidentiality problems.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0008",
+   "section": "care",
+   "q": "A patient with moderate dementia becomes agitated when the technician reaches for the chest. The best response is:",
+   "choices": [
+    "Complete the tracing as fast as possible despite the agitation",
+    "Tell the patient the test is required by law",
+    "Ask the family to hold the patient's arms",
+    "Speak calmly, use one short instruction at a time, and re-approach after the patient settles"
+   ],
+   "answer": 3,
+   "why": "Simple one-step directions, a calm tone, and a pause reduce agitation in cognitive impairment. Physical restraint by family is not within the technician's authority and can escalate distress and cause injury.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0009",
+   "section": "care",
+   "q": "Which is an example of an open-ended question?",
+   "choices": [
+    "Do you have chest pain?",
+    "Is the pain sharp?",
+    "Can you tell me what you were feeling when the pain started?",
+    "Did it last more than five minutes?"
+   ],
+   "answer": 2,
+   "why": "Open-ended questions invite description and cannot be answered yes or no, yielding richer symptom detail. Asking whether pain is sharp is a closed question that limits the patient to confirming the examiner's wording.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0010",
+   "section": "care",
+   "q": "A patient is visibly anxious before a 12-lead. The most therapeutic statement is:",
+   "choices": [
+    "There is nothing to be nervous about",
+    "This test does not use any electricity, and it records your heartbeat painlessly. What worries you most?",
+    "Everyone gets nervous, just relax",
+    "I will be done in one minute if you hold still"
+   ],
+   "answer": 1,
+   "why": "Correcting the common fear of being shocked plus an invitation to voice concerns is factual reassurance combined with active listening. Telling a patient there is nothing to be nervous about dismisses the feeling and shuts down communication.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0011",
+   "section": "care",
+   "q": "Which action is an unauthorized disclosure of PHI under HIPAA?",
+   "choices": [
+    "Posting a de-identified looking rhythm strip on a personal social media account with the patient's room number in the caption",
+    "Handing the tracing to the ordering physician",
+    "Placing the tracing in the patient's chart",
+    "Discussing the tracing with the covering nurse at the bedside"
+   ],
+   "answer": 0,
+   "why": "Room number plus date and facility can re-identify a patient, and social media posting of any patient material is prohibited regardless of intent. Sharing with the treating physician or nurse is a permitted treatment disclosure.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0012",
+   "section": "care",
+   "q": "The minimum necessary standard means:",
+   "choices": [
+    "Only the physician may view a chart",
+    "Records must be kept for the minimum legal period",
+    "Access PHI only to the extent needed to perform your specific job duty",
+    "Only the minimum number of leads may be recorded"
+   ],
+   "answer": 2,
+   "why": "Minimum necessary limits use, access and disclosure of PHI to what the task requires; a technician looks up the order and demographics, not unrelated history. It is not a records retention rule, which is governed separately.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0013",
+   "section": "care",
+   "q": "A visitor in the hallway overhears the technician asking a patient about chest pain through a partly open door. This is best described as:",
+   "choices": [
+    "A reportable HIPAA breach requiring notification",
+    "An incidental disclosure, permissible if reasonable safeguards were used",
+    "Negligence requiring an incident report",
+    "A violation of the minimum necessary rule"
+   ],
+   "answer": 1,
+   "why": "Incidental disclosures that occur despite reasonable safeguards, such as lowering the voice and closing the door, are permitted by HIPAA. A reportable breach involves unsecured PHI disclosed in a way not permitted by the rule.",
+   "difficulty": 3
+  },
+  {
+   "id": "nha-cet-q0014",
+   "section": "care",
+   "q": "A completed EKG tracing left face up on an unattended counter in a hallway is a problem because:",
+   "choices": [
+    "The paper may curl and distort the waveform",
+    "It will lose thermal contrast",
+    "It cannot be scanned later",
+    "It contains PHI, including name and date of birth, visible to passersby"
+   ],
+   "answer": 3,
+   "why": "The demographic header makes the tracing protected health information that must be secured. Paper curling affects readability but is not the privacy issue the question targets.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0015",
+   "section": "care",
+   "q": "A patient's chart contains a valid advance directive naming a health care proxy. This document primarily:",
+   "choices": [
+    "Prevents any testing from being performed",
+    "Authorizes billing decisions",
+    "States the patient's treatment wishes and who may decide if the patient cannot",
+    "Replaces the need for identification checks"
+   ],
+   "answer": 2,
+   "why": "An advance directive documents the patient's wishes and may appoint a surrogate decision maker for when the patient loses capacity. It does not prohibit routine diagnostic testing that the patient or proxy accepts.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0016",
+   "section": "care",
+   "q": "After running the tracing, the patient asks, Is my heart okay? The technician should say:",
+   "choices": [
+    "I am not permitted to interpret this. Your provider will review it and discuss the results with you, usually shortly.",
+    "It looks normal to me",
+    "There is something abnormal here but I cannot say what",
+    "You should ask for a cardiology consult"
+   ],
+   "answer": 0,
+   "why": "Interpreting or hinting at findings is outside the EKG technician's scope of practice; deferring to the provider is correct. Saying it looks normal is an interpretation and can cause harm if the tracing is later read as abnormal.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0017",
+   "section": "care",
+   "q": "Which task is clearly OUTSIDE the EKG technician's scope of practice?",
+   "choices": [
+    "Placing precordial electrodes",
+    "Measuring the heart rate on the tracing",
+    "Adjusting the patient's beta blocker dose because the rate is 48",
+    "Reporting an abnormal rhythm to the nurse"
+   ],
+   "answer": 2,
+   "why": "Medication adjustment is a prescriber function and never delegated to a technician. Measuring rate is a technical skill and reporting findings up the chain is expected.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0018",
+   "section": "care",
+   "q": "A tracing shows a wide-complex regular rhythm at 180 beats per minute in a patient complaining of dizziness. The technician should:",
+   "choices": [
+    "Repeat the tracing twice before telling anyone",
+    "Notify the nurse or physician immediately and stay with the patient",
+    "Finish the rest of the department's scheduled EKGs first",
+    "Place the tracing in the chart for morning rounds"
+   ],
+   "answer": 1,
+   "why": "Ventricular tachycardia in a symptomatic patient is life threatening and requires immediate notification while monitoring the patient. Repeating the tracing first wastes time during a potentially unstable rhythm.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0019",
+   "section": "care",
+   "q": "Which set of findings all require immediate escalation rather than routine charting?",
+   "choices": [
+    "Ventricular fibrillation, asystole, third-degree AV block, and ST-segment elevation",
+    "Sinus arrhythmia, wandering baseline, PACs, and sinus bradycardia at 58",
+    "First-degree AV block, sinus tachycardia at 104, and an isolated PVC",
+    "Left axis deviation, low voltage, and early transition"
+   ],
+   "answer": 0,
+   "why": "These four represent arrest rhythms, complete heart block, and acute infarction, each demanding immediate provider notification. Sinus arrhythmia and isolated PACs are common and are handled in routine reporting.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0020",
+   "section": "care",
+   "q": "The technician reports a critical tracing to the nurse, who does not act. The correct next step is:",
+   "choices": [
+    "Tell the patient to call the doctor",
+    "Document that the nurse was told and take no further action",
+    "Post the concern in the unit group chat",
+    "Escalate up the chain of command to the charge nurse or supervisor"
+   ],
+   "answer": 3,
+   "why": "Chain of command means advancing the concern to the next level of authority when patient safety is unresolved. Documenting alone leaves a critical finding unaddressed, which is patient abandonment of responsibility.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0021",
+   "section": "care",
+   "q": "Which information is required on every EKG tracing?",
+   "choices": [
+    "The patient's insurance carrier",
+    "Patient name, identification number, date, time, and the technician's initials",
+    "The referring clinic's fax number",
+    "The patient's home address"
+   ],
+   "answer": 1,
+   "why": "Identification, timing, and the person who performed the test are mandatory for legal and clinical traceability. Insurance data belongs in the billing record, not on the tracing.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0022",
+   "section": "care",
+   "q": "A patient must be tested sitting upright because of severe shortness of breath. The technician should:",
+   "choices": [
+    "Note on the tracing that it was obtained in an upright sitting position",
+    "Record it without comment since the leads were placed correctly",
+    "Cancel the test until the patient can lie flat",
+    "Change the standardization to 5 mm/mV"
+   ],
+   "answer": 0,
+   "why": "Any deviation from the standard supine position must be documented because position alters axis and amplitude and affects comparison to prior tracings. Omitting the note risks a false interpretation of change.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0023",
+   "section": "care",
+   "q": "The technician typed the wrong date into an electronic health record entry. The correct correction method is:",
+   "choices": [
+    "Delete the entry and re-enter it silently",
+    "Ask IT to purge the record",
+    "Use the system's amendment function so the original entry, the correction, the author, and the time all remain visible",
+    "Overwrite the field and tell the nurse"
+   ],
+   "answer": 2,
+   "why": "Legal health records require an audit trail; corrections are made as tracked amendments that never erase the original. Deleting an entry destroys evidence and can be construed as falsification.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0024",
+   "section": "care",
+   "q": "A patient slips off the step of the treadmill but is uninjured. The technician must:",
+   "choices": [
+    "Say nothing since no injury occurred",
+    "Write it on the tracing only",
+    "Tell the next shift verbally",
+    "Complete an incident or occurrence report per facility policy"
+   ],
+   "answer": 3,
+   "why": "Incident reports are required for any unexpected event involving a patient, injury or not, and support risk management review. A verbal handoff leaves no formal record and does not satisfy policy.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0025",
+   "section": "care",
+   "q": "The single most effective action to prevent transmission of infection between EKG patients is:",
+   "choices": [
+    "Performing hand hygiene before and after every patient contact",
+    "Wearing a gown for all patients",
+    "Using a new EKG cable for each patient",
+    "Wearing gloves continuously through the shift"
+   ],
+   "answer": 0,
+   "why": "Hand hygiene remains the most effective single measure against health care associated infection. Wearing the same gloves all shift actually spreads organisms because the gloves become contaminated surfaces.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0026",
+   "section": "care",
+   "q": "Standard precautions are applied to:",
+   "choices": [
+    "Only patients with a known infection",
+    "Only patients on isolation",
+    "Only patients with visible wounds",
+    "Every patient, regardless of diagnosis or presumed infection status"
+   ],
+   "answer": 3,
+   "why": "Standard precautions assume all blood and body fluids may be infectious and apply universally. Limiting them to known infections fails because many carriers are undiagnosed.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0027",
+   "section": "care",
+   "q": "Reusable limb electrodes and lead wires between patients should be:",
+   "choices": [
+    "Rinsed with tap water",
+    "Cleaned of gel and disinfected with an approved hospital-grade disinfectant per manufacturer instructions",
+    "Wiped with alcohol only when visibly soiled",
+    "Sprayed with air freshener"
+   ],
+   "answer": 1,
+   "why": "Residual gel and skin cells harbor organisms, so mechanical cleaning followed by an EPA-registered hospital-grade disinfectant is required. Cleaning only when visibly soiled misses invisible contamination.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0028",
+   "section": "care",
+   "q": "A patient is on contact precautions for Clostridioides difficile. The technician should:",
+   "choices": [
+    "Use alcohol-based hand rub after removing gloves",
+    "Skip the EKG until precautions are lifted",
+    "Wear gown and gloves, and wash hands with soap and water after glove removal",
+    "Wear an N95 respirator"
+   ],
+   "answer": 2,
+   "why": "C. difficile spores resist alcohol, so soap-and-water handwashing plus gown and gloves is required. An N95 is for airborne pathogens and offers no benefit against a spore spread by contact.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0029",
+   "section": "care",
+   "q": "A patient is on airborne precautions for suspected tuberculosis. Before entering with the EKG machine, the technician should:",
+   "choices": [
+    "Wear a surgical mask",
+    "Leave the door open for ventilation",
+    "Bring extra staff to speed the test",
+    "Don a fit-tested N95 respirator and keep the door closed"
+   ],
+   "answer": 3,
+   "why": "Airborne precautions require a fit-tested N95 or higher and a closed negative-pressure room. A surgical mask does not filter droplet nuclei small enough to remain suspended.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0030",
+   "section": "care",
+   "q": "When a portable EKG machine must be taken into an isolation room, best practice is:",
+   "choices": [
+    "Take the machine in and return it to the hallway without cleaning if it did not touch the patient",
+    "Never allow the machine in the room at all",
+    "Take in only what is needed and disinfect all surfaces and cables before removing it from the room",
+    "Cover the machine with a sheet and skip disinfection"
+   ],
+   "answer": 2,
+   "why": "Equipment leaving an isolation room must be disinfected because ambient contamination reaches surfaces even without direct patient contact. A sheet cover is not a substitute for disinfection of the device.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0031",
+   "section": "care",
+   "q": "Which sequence correctly lists links in the chain of infection?",
+   "choices": [
+    "Infectious agent, reservoir, portal of exit, mode of transmission, portal of entry, susceptible host",
+    "Susceptible host, agent, disinfectant, reservoir, exit",
+    "Portal of entry, agent, gloves, reservoir, host",
+    "Reservoir, vaccine, host, exit, transmission"
+   ],
+   "answer": 0,
+   "why": "The six links are agent, reservoir, portal of exit, mode of transmission, portal of entry, and susceptible host. Gloves and vaccines are interventions that break links, not links themselves.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0032",
+   "section": "care",
+   "q": "Hand hygiene breaks which link in the chain of infection most directly?",
+   "choices": [
+    "Infectious agent",
+    "Mode of transmission",
+    "Susceptible host",
+    "Reservoir"
+   ],
+   "answer": 1,
+   "why": "Hands are the principal vehicle for indirect contact transmission, so hygiene interrupts the mode of transmission. Immunization, not hand hygiene, is what protects the susceptible host link.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0033",
+   "section": "care",
+   "q": "Medical asepsis differs from surgical asepsis in that medical asepsis:",
+   "choices": [
+    "Requires sterile gloves for all contact",
+    "Eliminates all spores from the skin",
+    "Reduces the number of pathogens rather than eliminating all microorganisms",
+    "Is used only in operating rooms"
+   ],
+   "answer": 2,
+   "why": "Medical asepsis, or clean technique, lowers pathogen counts and is appropriate for EKG work. Surgical asepsis eliminates all microorganisms including spores and is used for invasive procedures.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0034",
+   "section": "care",
+   "q": "The OSHA Bloodborne Pathogen Standard requires employers to:",
+   "choices": [
+    "Charge employees for protective equipment",
+    "Provide hepatitis B vaccination at no cost to employees with occupational exposure risk",
+    "Require all employees to donate blood annually",
+    "Test all patients for HIV before an EKG"
+   ],
+   "answer": 1,
+   "why": "The standard mandates employer-provided, no-cost hepatitis B vaccine plus an exposure control plan, PPE, and training. Mandatory patient HIV testing is not part of the standard and would violate patient rights.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0035",
+   "section": "care",
+   "q": "A patient with a draining chest wound needs a 12-lead. The minimum appropriate PPE for the technician is:",
+   "choices": [
+    "No PPE, hand hygiene only",
+    "N95 and face shield",
+    "Sterile gown and sterile gloves",
+    "Gloves, with a gown if splashing or soiling of clothing is anticipated"
+   ],
+   "answer": 3,
+   "why": "PPE selection is based on the anticipated exposure; gloves protect the hands and a gown is added when contamination of clothing is likely. Sterile attire is unnecessary because an EKG is not a sterile procedure.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0036",
+   "section": "care",
+   "q": "A technician's ungloved hand is splashed with blood while assisting in a code. The first action is:",
+   "choices": [
+    "Wash the area immediately with soap and running water",
+    "Apply bleach to the skin",
+    "Finish the code, then go home and shower",
+    "Report to the supervisor before washing"
+   ],
+   "answer": 0,
+   "why": "Immediate washing of exposed skin with soap and water is the first step, followed by prompt reporting and post-exposure evaluation. Bleach or other caustic agents damage skin and are not recommended.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0037",
+   "section": "care",
+   "q": "After a needlestick from a contaminated device, reporting to employee health promptly matters most because:",
+   "choices": [
+    "The device must be returned to the manufacturer",
+    "Post-exposure prophylaxis is time sensitive and most effective when started quickly",
+    "The incident report has a 30-day window",
+    "The employee must be reassigned"
+   ],
+   "answer": 1,
+   "why": "Timely evaluation allows source testing and prophylaxis, which loses effectiveness as hours pass. A long filing window does not change the clinical urgency of prophylaxis.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0038",
+   "section": "care",
+   "q": "Before using an EKG machine, the technician notices a lead cable with cracked insulation and exposed wire. The correct action is:",
+   "choices": [
+    "Wrap the spot in cloth tape and use it",
+    "Use it only for limb leads",
+    "Remove the machine from service, tag it, and report it for repair",
+    "Use it and note poor quality on the tracing"
+   ],
+   "answer": 2,
+   "why": "Damaged cords and cables pose shock and fire risk and must be taken out of service and tagged for biomedical repair. Taping is not an approved repair and leaves the hazard in place.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0039",
+   "section": "care",
+   "q": "Proper electrical grounding of an EKG machine primarily protects against:",
+   "choices": [
+    "Stray current reaching the patient and causing microshock",
+    "Wandering baseline artifact",
+    "Muscle tremor artifact",
+    "Paper jams"
+   ],
+   "answer": 0,
+   "why": "A three-prong grounded plug diverts stray current safely, preventing microshock in a patient connected to conductive electrodes. Wandering baseline is caused by respiration or loose electrodes, not grounding.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0040",
+   "section": "care",
+   "q": "A patient on 4 liters of oxygen by nasal cannula is having an EKG when a small fire starts in a wastebasket. The technician should first:",
+   "choices": [
+    "Open the window",
+    "Look for the fire extinguisher",
+    "Pull the alarm and then find the patient's chart",
+    "Rescue the patient by moving them away from immediate danger"
+   ],
+   "answer": 3,
+   "why": "RACE puts Rescue first, especially with oxygen present, which accelerates combustion. Searching for an extinguisher before moving the patient delays removal from a rapidly worsening hazard.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0041",
+   "section": "care",
+   "q": "The P in the PASS acronym for fire extinguisher use stands for:",
+   "choices": [
+    "Push the handle",
+    "Point at the flames",
+    "Prepare the area",
+    "Pull the pin"
+   ],
+   "answer": 3,
+   "why": "PASS is Pull the pin, Aim at the base of the fire, Squeeze the handle, and Sweep side to side. Aiming at the flames rather than the base fails to reach the fuel source.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0042",
+   "section": "care",
+   "q": "When lifting a portable EKG machine from a low shelf, correct body mechanics require:",
+   "choices": [
+    "Bending at the waist and lifting with a straight back",
+    "Bending the knees, keeping the load close to the body, and lifting with the legs",
+    "Twisting while lifting to save a step",
+    "Holding the load at arm's length for balance"
+   ],
+   "answer": 1,
+   "why": "Using the large leg muscles with the load close to the center of gravity minimizes lumbar strain. Twisting during a lift is a classic mechanism of back injury.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0043",
+   "section": "care",
+   "q": "After completing a bedside EKG on an elderly patient, the technician should:",
+   "choices": [
+    "Lower the bed to its lowest position and ensure the call light is within reach",
+    "Raise the bed for easier nursing access",
+    "Leave all four side rails down",
+    "Leave the bedside table pushed against the far wall"
+   ],
+   "answer": 0,
+   "why": "A low bed plus an accessible call light are core fall-prevention measures at the end of any bedside procedure. Raising the bed increases fall height and injury severity.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0044",
+   "section": "care",
+   "q": "Which use of side rails is appropriate?",
+   "choices": [
+    "Raising all four rails on a confused patient to keep them in bed",
+    "Removing all rails from every bed",
+    "Raising two upper rails as a mobility aid per facility policy and the care plan",
+    "Using rails instead of a bed alarm for any fall-risk patient"
+   ],
+   "answer": 2,
+   "why": "Partial rails used as an aid to repositioning are acceptable when the care plan supports it. Four raised rails on a confused patient function as a restraint and increase entrapment and climbing-over injury risk.",
+   "difficulty": 3
+  },
+  {
+   "id": "nha-cet-q0045",
+   "section": "care",
+   "q": "A patient collapses in the hallway, is unresponsive, and has no normal breathing and no pulse after a 10-second check. The technician should:",
+   "choices": [
+    "Give two rescue breaths and wait for the code team",
+    "Check a blood pressure first",
+    "Activate the emergency response system, call for an AED, and begin chest compressions",
+    "Run a 12-lead before starting anything else"
+   ],
+   "answer": 2,
+   "why": "Unresponsive plus no breathing and no pulse is cardiac arrest, so activate the code, get the AED, and start compressions immediately. Obtaining a blood pressure or a 12-lead delays compressions and worsens survival.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0046",
+   "section": "care",
+   "q": "Correct adult chest compressions are performed at:",
+   "choices": [
+    "100 to 120 per minute at a depth of 2 to 2.4 inches",
+    "60 to 80 per minute at a depth of 1 inch",
+    "140 to 160 per minute at a depth of 3 inches",
+    "80 to 100 per minute at a depth of 0.5 inch"
+   ],
+   "answer": 0,
+   "why": "Current guidelines specify a rate of 100 to 120 compressions per minute and a depth of 2 to 2.4 inches in adults. Slower or shallower compressions generate inadequate coronary perfusion pressure.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0047",
+   "section": "care",
+   "q": "For adult AED use, the pads are placed:",
+   "choices": [
+    "Both pads over the sternum",
+    "One over each nipple",
+    "Both pads on the back",
+    "Upper right chest below the clavicle and lower left chest at the midaxillary line"
+   ],
+   "answer": 3,
+   "why": "Anterolateral placement puts the heart in the current path between the pads. Placing both pads on the sternum leaves the myocardium outside the shock vector.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0048",
+   "section": "care",
+   "q": "A patient in the waiting room grabs his throat and cannot speak, cough, or breathe. The technician should:",
+   "choices": [
+    "Give a drink of water",
+    "Deliver abdominal thrusts and call for help",
+    "Perform a blind finger sweep first",
+    "Place the patient supine and start compressions"
+   ],
+   "answer": 1,
+   "why": "A conscious adult with complete airway obstruction needs abdominal thrusts while help is summoned. A blind finger sweep can push the object deeper and is not recommended.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0049",
+   "section": "care",
+   "q": "During a treadmill stress test the patient becomes pale, diaphoretic, and says the room is spinning. The technician should first:",
+   "choices": [
+    "Stop the test, assist the patient to a safe sitting or lying position, and alert the supervising provider",
+    "Increase the grade to finish the stage",
+    "Tell the patient to keep walking and look forward",
+    "Leave to find the physician"
+   ],
+   "answer": 0,
+   "why": "Presyncope is a termination indicator; stopping and protecting the patient from a fall comes before anything else, with immediate provider notification. Leaving the patient alone risks an unwitnessed collapse.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0050",
+   "section": "care",
+   "q": "Blood returning from the body enters the heart first at the:",
+   "choices": [
+    "Left atrium",
+    "Right ventricle",
+    "Right atrium",
+    "Left ventricle"
+   ],
+   "answer": 2,
+   "why": "Systemic venous blood enters the right atrium via the superior and inferior vena cavae. The left atrium receives oxygenated blood from the pulmonary veins, which is later in the circuit.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0051",
+   "section": "care",
+   "q": "The valve between the left atrium and the left ventricle is the:",
+   "choices": [
+    "Tricuspid valve",
+    "Mitral valve",
+    "Pulmonic valve",
+    "Aortic valve"
+   ],
+   "answer": 1,
+   "why": "The mitral, or bicuspid, valve is the left atrioventricular valve. The tricuspid is the right-sided atrioventricular valve and is easily confused with it.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0052",
+   "section": "care",
+   "q": "The left anterior descending artery chiefly supplies the:",
+   "choices": [
+    "SA node in most people",
+    "Posterior right atrium",
+    "Lateral wall only",
+    "Anterior wall of the left ventricle and most of the interventricular septum"
+   ],
+   "answer": 3,
+   "why": "The LAD perfuses the anterior LV wall and the anterior two thirds of the septum, so its occlusion produces anterior ST elevation in V1 through V4. The SA node is supplied by the right coronary artery in most people.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0053",
+   "section": "care",
+   "q": "The intrinsic rate of the SA node in a healthy adult is:",
+   "choices": [
+    "20 to 40 beats per minute",
+    "40 to 60 beats per minute",
+    "60 to 100 beats per minute",
+    "100 to 150 beats per minute"
+   ],
+   "answer": 2,
+   "why": "The SA node fires at 60 to 100 per minute and is the normal pacemaker. The 40 to 60 range belongs to the AV junction, which takes over only if the SA node fails.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0054",
+   "section": "care",
+   "q": "If the SA node fails entirely and the AV junction takes over, the expected rate is:",
+   "choices": [
+    "100 to 120 per minute",
+    "80 to 100 per minute",
+    "20 to 40 per minute",
+    "40 to 60 per minute"
+   ],
+   "answer": 3,
+   "why": "The AV junctional escape rate is 40 to 60 per minute. A rate of 20 to 40 indicates a ventricular or Purkinje escape focus, the next backup down.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0055",
+   "section": "care",
+   "q": "A ventricular escape rhythm originating in the Purkinje fibers typically occurs at:",
+   "choices": [
+    "20 to 40 beats per minute",
+    "40 to 60 beats per minute",
+    "60 to 100 beats per minute",
+    "110 to 130 beats per minute"
+   ],
+   "answer": 0,
+   "why": "Purkinje and ventricular pacemakers fire at 20 to 40 per minute, the slowest escape level. The 40 to 60 range is junctional, not ventricular.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0056",
+   "section": "care",
+   "q": "Ventricular diastole is the phase in which the ventricles:",
+   "choices": [
+    "Contract and eject blood",
+    "Relax and fill with blood",
+    "Depolarize producing the QRS",
+    "Close the atrioventricular valves"
+   ],
+   "answer": 1,
+   "why": "Diastole is relaxation and filling; systole is contraction and ejection. The QRS marks ventricular depolarization, which initiates systole rather than diastole.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0057",
+   "section": "care",
+   "q": "Cardiac output is calculated as:",
+   "choices": [
+    "Heart rate divided by stroke volume",
+    "Blood pressure times heart rate",
+    "Stroke volume divided by ejection fraction",
+    "Stroke volume multiplied by heart rate"
+   ],
+   "answer": 3,
+   "why": "Cardiac output equals stroke volume times heart rate, normally about 4 to 8 liters per minute in adults. Multiplying blood pressure by heart rate gives the rate pressure product, a workload index, not output.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0058",
+   "section": "care",
+   "q": "A patient takes metoprolol, a beta blocker. The expected EKG-related effect is:",
+   "choices": [
+    "A slower heart rate and possible prolonged PR interval",
+    "A faster heart rate",
+    "Widened QRS complexes",
+    "Tall peaked T waves"
+   ],
+   "answer": 0,
+   "why": "Beta blockers slow SA node firing and AV conduction, producing bradycardia and sometimes first-degree block. Tachycardia is the opposite of their pharmacologic action.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0059",
+   "section": "care",
+   "q": "Which medication is classically associated with a scooped or sagging ST segment sometimes called the dig effect?",
+   "choices": [
+    "Furosemide",
+    "Digoxin",
+    "Nitroglycerin",
+    "Aspirin"
+   ],
+   "answer": 1,
+   "why": "Digoxin produces the characteristic scooped ST depression at therapeutic levels, which is an effect rather than ischemia. Furosemide affects the tracing indirectly through potassium loss, not by a signature ST shape.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0060",
+   "section": "care",
+   "q": "Amiodarone is best classified as a:",
+   "choices": [
+    "Diuretic",
+    "Beta agonist",
+    "Antiarrhythmic that can prolong the QT interval",
+    "Vasodilator used for angina"
+   ],
+   "answer": 2,
+   "why": "Amiodarone is an antiarrhythmic that prolongs repolarization and therefore the QT interval. Nitroglycerin, not amiodarone, is the vasodilator used for angina.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0061",
+   "section": "care",
+   "q": "A patient reports taking sublingual nitroglycerin for chest pain. Its principal action is to:",
+   "choices": [
+    "Increase heart rate directly",
+    "Thin the blood",
+    "Dilate vessels, reducing cardiac workload and relieving anginal pain",
+    "Block potassium channels"
+   ],
+   "answer": 2,
+   "why": "Nitroglycerin is a vasodilator that lowers preload and myocardial oxygen demand, relieving angina. Blood thinning describes anticoagulants and antiplatelets, a different drug class.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0062",
+   "section": "care",
+   "q": "A patient on long-term furosemide has a tracing with flattened T waves and prominent U waves. The most likely explanation is:",
+   "choices": [
+    "Hyperkalemia",
+    "Hypokalemia from diuretic-induced potassium loss",
+    "Hypercalcemia",
+    "Digoxin toxicity alone"
+   ],
+   "answer": 1,
+   "why": "Loop diuretics waste potassium, and hypokalemia classically flattens T waves and produces U waves. Hyperkalemia instead causes tall peaked T waves, the opposite pattern.",
+   "difficulty": 3
+  },
+  {
+   "id": "nha-cet-q0063",
+   "section": "care",
+   "q": "Which is a NON-modifiable risk factor for coronary artery disease?",
+   "choices": [
+    "Cigarette smoking",
+    "Sedentary lifestyle",
+    "Family history of premature coronary disease",
+    "Untreated hypertension"
+   ],
+   "answer": 2,
+   "why": "Age, sex, ethnicity, and family history cannot be changed. Smoking, inactivity, and treated blood pressure are all modifiable through behavior or therapy.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0064",
+   "section": "care",
+   "q": "Which group of risk factors is entirely modifiable?",
+   "choices": [
+    "Age, sex, and heredity",
+    "Race, age, and family history",
+    "Sex, heredity, and diabetes type 1",
+    "Smoking, obesity, physical inactivity, and elevated LDL cholesterol"
+   ],
+   "answer": 3,
+   "why": "All four in the correct choice respond to behavior change or treatment. Age, sex, and heredity are fixed characteristics and cannot be altered.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0065",
+   "section": "care",
+   "q": "A 62-year-old woman with diabetes reports two days of unusual fatigue, nausea, and jaw discomfort but denies chest pain. The technician should recognize this as:",
+   "choices": [
+    "Clearly noncardiac since there is no chest pain",
+    "A possible atypical presentation of myocardial infarction warranting prompt reporting",
+    "Simple indigestion",
+    "Anxiety only"
+   ],
+   "answer": 1,
+   "why": "Women and patients with diabetes frequently present with fatigue, nausea, dyspnea, or jaw and back pain instead of classic chest pressure, partly due to neuropathy. Dismissing it because chest pain is absent is a well-documented cause of missed infarction.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0066",
+   "section": "care",
+   "q": "Which is the classic description of ischemic chest pain in a typical presentation?",
+   "choices": [
+    "Sharp pain that worsens with a single fingertip press",
+    "Substernal pressure or heaviness that may radiate to the left arm, jaw, or back",
+    "Pain only when swallowing",
+    "Burning pain relieved instantly by position change"
+   ],
+   "answer": 1,
+   "why": "Ischemic pain is usually a diffuse substernal pressure with radiation and associated diaphoresis or dyspnea. Pain reproduced by fingertip pressure is more suggestive of a chest wall cause.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0067",
+   "section": "care",
+   "q": "Normal adult resting respiratory rate is:",
+   "choices": [
+    "12 to 20 breaths per minute",
+    "6 to 10 breaths per minute",
+    "24 to 32 breaths per minute",
+    "30 to 40 breaths per minute"
+   ],
+   "answer": 0,
+   "why": "Adult resting respirations are 12 to 20 per minute. The 30 to 40 range is normal for a newborn, not an adult.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0068",
+   "section": "care",
+   "q": "A blood pressure of 148/94 mmHg in an adult is best described as:",
+   "choices": [
+    "Normal",
+    "Hypotensive",
+    "Normal for an athlete",
+    "Elevated above the normal adult range and should be reported"
+   ],
+   "answer": 3,
+   "why": "Normal adult blood pressure is below about 120/80 mmHg, so 148/94 is elevated and should be reported per policy. Athletic conditioning tends to lower, not raise, resting pressure.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0069",
+   "section": "care",
+   "q": "The abbreviation NPO on a cardiac order means:",
+   "choices": [
+    "No pulse obtained",
+    "Nothing by mouth",
+    "Normal pacemaker output",
+    "New patient orders"
+   ],
+   "answer": 1,
+   "why": "NPO is from the Latin nil per os, meaning nothing by mouth, often ordered before stress testing or sedation. It has no relationship to pacemaker settings.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0070",
+   "section": "care",
+   "q": "In the term bradycardia, the prefix brady- means:",
+   "choices": [
+    "Fast",
+    "Irregular",
+    "Slow",
+    "Absent"
+   ],
+   "answer": 2,
+   "why": "Brady- means slow, so bradycardia is a slow heart rate below 60 per minute. Tachy- is the prefix meaning fast.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0071",
+   "section": "care",
+   "q": "The medical root cardi- combined with the suffix -megaly means:",
+   "choices": [
+    "Inflammation of the heart lining",
+    "Enlargement of the heart",
+    "Surgical repair of a valve",
+    "Study of the heart"
+   ],
+   "answer": 1,
+   "why": "The suffix -megaly means enlargement, so cardiomegaly is an enlarged heart. Inflammation would use -itis, as in carditis.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0072",
+   "section": "care",
+   "q": "An equipment maintenance log for an EKG machine is kept primarily to:",
+   "choices": [
+    "Track billing per test",
+    "Record patient complaints",
+    "Document calibration, service, and safety checks for quality improvement and regulatory review",
+    "Schedule technician shifts"
+   ],
+   "answer": 2,
+   "why": "Maintenance logs document that the device was verified accurate and safe, which surveyors and quality programs require. Billing and staffing are tracked in separate administrative systems.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0073",
+   "section": "care",
+   "q": "The technician opens a pack of disposable electrodes and finds the expiration date passed two months ago. The correct action is:",
+   "choices": [
+    "Use them if the gel still feels moist",
+    "Use them only for limb leads",
+    "Add extra gel and use them",
+    "Discard the pack, document it, and obtain unexpired electrodes"
+   ],
+   "answer": 3,
+   "why": "Expired electrodes have dried or degraded conductive gel, which produces artifact and poor signal quality, so they are removed from stock. Adding gel does not restore the validated adhesive and conductive properties.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0074",
+   "section": "care",
+   "q": "A good practice for departmental supply inventory is to:",
+   "choices": [
+    "Rotate stock so the oldest unexpired items are used first and restock before running out",
+    "Order only when the last box is opened",
+    "Store electrodes near a heat vent to keep gel soft",
+    "Keep all supplies in one locked office"
+   ],
+   "answer": 0,
+   "why": "First in, first out rotation with par-level restocking prevents both expiration waste and stock-outs. Heat accelerates gel drying and shortens electrode usable life.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0075",
+   "section": "care",
+   "q": "Used disposable electrodes with dried gel and no visible blood should be:",
+   "choices": [
+    "Placed in the sharps container",
+    "Discarded in the regular waste per facility policy",
+    "Rinsed and reused on the same patient",
+    "Placed in red biohazard bags in all cases"
+   ],
+   "answer": 1,
+   "why": "Items not saturated with blood or other potentially infectious material go in regular waste, and overuse of red bag waste is costly and unnecessary. Sharps containers are reserved for needles and other sharp items.",
+   "difficulty": 3
+  },
+  {
+   "id": "nha-cet-q0076",
+   "section": "care",
+   "q": "Six inpatient EKGs are ordered at once, including a STAT order on a patient with new chest pain. Best time management is to:",
+   "choices": [
+    "Work in room number order",
+    "Do the fastest patients first",
+    "Perform the STAT chest pain study first, then complete the routine studies",
+    "Wait until the nurse calls again"
+   ],
+   "answer": 2,
+   "why": "STAT orders on symptomatic patients take priority because the result changes immediate treatment. Room-number sequencing ignores clinical urgency.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0077",
+   "section": "care",
+   "q": "The technician cannot obtain a clean V4 because of an obese habitus and repeated artifact. The most professional action is:",
+   "choices": [
+    "Ask a senior technician or supervisor for assistance and reposition carefully",
+    "Submit the tracing with artifact and no comment",
+    "Tell the patient to lose weight",
+    "Omit V4 and label the tracing as a 12-lead"
+   ],
+   "answer": 0,
+   "why": "Asking for help protects the quality of the study and is expected teamwork, not a weakness. Omitting a lead while labeling the study a 12-lead falsifies the record.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0078",
+   "section": "care",
+   "q": "A coworker asks the technician to look up a neighbor's EKG results out of curiosity. The correct response is:",
+   "choices": [
+    "Look it up but do not print it",
+    "Look it up if the neighbor is a friend",
+    "Ask the charge nurse to look it up instead",
+    "Refuse, because accessing records without a treatment or job-related need violates HIPAA"
+   ],
+   "answer": 3,
+   "why": "Access must be tied to a legitimate work purpose; curiosity-based lookups are auditable violations that lead to termination. Having someone else pull the record is the same violation by proxy.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0079",
+   "section": "care",
+   "q": "During a bedside EKG the patient says, I am scared I am going to die. The most therapeutic response is:",
+   "choices": [
+    "Do not talk like that",
+    "You sound frightened. Can you tell me more about what you are feeling?",
+    "Everyone here says that",
+    "Let me finish this tracing and then we can talk"
+   ],
+   "answer": 1,
+   "why": "Reflecting the emotion and inviting elaboration is therapeutic communication that keeps the conversation open. False reassurance or deferral shuts the patient down and misses information the care team needs.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0080",
+   "section": "care",
+   "q": "Which finding on a tracing would MOST urgently require the technician to summon help before leaving the bedside?",
+   "choices": [
+    "A wandering baseline",
+    "Sinus arrhythmia",
+    "A chaotic waveform with no identifiable QRS in an unresponsive patient",
+    "Occasional PACs"
+   ],
+   "answer": 2,
+   "why": "A chaotic undulating tracing without QRS complexes in an unresponsive patient indicates ventricular fibrillation, an arrest rhythm requiring immediate code activation and CPR. A wandering baseline is artifact and is corrected by improving electrode contact.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0081",
+   "section": "care",
+   "q": "The technician notices a tracing showing P waves marching independently of the QRS complexes at a ventricular rate of 34. This pattern should be handled by:",
+   "choices": [
+    "Filing it with the routine batch",
+    "Reporting it to the provider immediately as possible third-degree AV block",
+    "Re-running it three times before notifying anyone",
+    "Telling the patient he has heart block"
+   ],
+   "answer": 1,
+   "why": "AV dissociation with a slow ventricular escape suggests complete heart block, which is unstable and demands immediate notification. Telling the patient the diagnosis is outside the technician's scope.",
+   "difficulty": 3
+  },
+  {
+   "id": "nha-cet-q0082",
+   "section": "care",
+   "q": "A patient scheduled for a stress test asks whether he can skip the consent form since the doctor already explained it. The technician should:",
+   "choices": [
+    "Have him sign later after the test",
+    "Sign it on his behalf to save time",
+    "Proceed without it since the explanation was given",
+    "Ensure the signed consent is completed and on the chart before the test begins"
+   ],
+   "answer": 3,
+   "why": "Informed consent must be documented and present before an invasive or higher-risk procedure such as exercise testing begins. Signing for a patient is forgery and is never acceptable regardless of intent.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0083",
+   "section": "care",
+   "q": "A technician assisting a weak patient from wheelchair to exam table should:",
+   "choices": [
+    "Lift the patient alone using the arms",
+    "Lock the wheelchair wheels, use a gait belt, and get assistance as needed",
+    "Pull the patient forward by the gown",
+    "Have the patient stand unaided while the technician gets the machine"
+   ],
+   "answer": 1,
+   "why": "Locking the wheels and using a gait belt with adequate help prevents both patient falls and technician injury. Leaving a weak patient to stand unassisted is a common cause of witnessed falls.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0084",
+   "section": "acq",
+   "q": "Where is the V1 electrode placed?",
+   "choices": [
+    "Fifth intercostal space, left midclavicular line",
+    "Fourth intercostal space, left sternal border",
+    "Fourth intercostal space, right sternal border",
+    "Fifth intercostal space, right midaxillary line"
+   ],
+   "answer": 2,
+   "why": "V1 sits in the fourth intercostal space at the right sternal border. The fourth intercostal space at the LEFT sternal border is V2, not V1.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0085",
+   "section": "acq",
+   "q": "A technician is locating V2. Which position is correct?",
+   "choices": [
+    "Fourth intercostal space, left sternal border",
+    "Fourth intercostal space, right sternal border",
+    "Third intercostal space, left sternal border",
+    "Fifth intercostal space, left sternal border"
+   ],
+   "answer": 0,
+   "why": "V2 is the fourth intercostal space at the left sternal border, directly across from V1. The right sternal border position is V1.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0086",
+   "section": "acq",
+   "q": "V4 is correctly positioned at the:",
+   "choices": [
+    "Fifth intercostal space, anterior axillary line",
+    "Fourth intercostal space, midclavicular line",
+    "Fifth intercostal space, midaxillary line",
+    "Fifth intercostal space, midclavicular line"
+   ],
+   "answer": 3,
+   "why": "V4 goes in the fifth intercostal space at the midclavicular line. The fifth space at the anterior axillary line is V5.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0087",
+   "section": "acq",
+   "q": "Why is V4 usually applied before V3?",
+   "choices": [
+    "V3 requires a larger electrode",
+    "V3 is placed midway between V2 and V4, so V4 must exist first",
+    "V4 anchors the limb lead calculation",
+    "V3 is optional on a routine 12-lead"
+   ],
+   "answer": 1,
+   "why": "V3 has no independent landmark; it is defined as the midpoint between V2 and V4, so V4 must be placed first. V3 is never optional on a standard 12-lead.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0088",
+   "section": "acq",
+   "q": "V6 is placed in the fifth intercostal space at which line?",
+   "choices": [
+    "Anterior axillary line",
+    "Midaxillary line",
+    "Posterior axillary line",
+    "Midclavicular line"
+   ],
+   "answer": 1,
+   "why": "V6 is at the midaxillary line, level with V4 and V5. The anterior axillary line is V5's landmark.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0089",
+   "section": "acq",
+   "q": "A technician palpates downward from the angle of Louis to find a landmark. This maneuver locates the:",
+   "choices": [
+    "Xiphoid process",
+    "Midaxillary line",
+    "Second rib and therefore the second intercostal space, counted down to the fourth",
+    "Left ventricular apex"
+   ],
+   "answer": 2,
+   "why": "The angle of Louis marks the second rib; the space just below it is the second intercostal space and the technician counts down to the fourth for V1 and V2. The xiphoid is not a reliable rib-counting landmark.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0090",
+   "section": "acq",
+   "q": "Limb electrodes should be placed on:",
+   "choices": [
+    "Fleshy, non-bony areas of the upper arms and lower legs",
+    "The wrists and ankles over bone for stability",
+    "The upper chest for all patients",
+    "The shoulders and hips"
+   ],
+   "answer": 0,
+   "why": "Fleshy muscular areas give better contact and less artifact than bony prominences. Placing electrodes over bone increases noise and poor adhesion.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0091",
+   "section": "acq",
+   "q": "A woman has large pendulous breasts. Where should V4 and V5 be applied?",
+   "choices": [
+    "On top of the breast tissue",
+    "On the upper chest above the breast",
+    "Omitted and documented",
+    "Under the breast, on the chest wall at the correct intercostal space"
+   ],
+   "answer": 3,
+   "why": "Precordial electrodes go under the breast directly on the chest wall so the anatomic position is preserved; placing them on top of breast tissue attenuates and distorts voltages. Leads are never simply omitted.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0092",
+   "section": "acq",
+   "q": "A patient has a right arm amputation above the elbow. The technician should:",
+   "choices": [
+    "Place the right arm electrode on the right shoulder or upper right torso and document it",
+    "Omit lead I and aVR",
+    "Place the electrode on the left arm with the left arm electrode",
+    "Cancel the EKG"
+   ],
+   "answer": 0,
+   "why": "The electrode moves proximally to the nearest available site on the same side and the deviation is documented. Placing two limb electrodes on one limb would invalidate the Einthoven triangle.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0093",
+   "section": "acq",
+   "q": "Which statement about lead II is correct?",
+   "choices": [
+    "It is an augmented unipolar lead",
+    "It is a bipolar limb lead viewing the inferior wall",
+    "It is a precordial lead",
+    "It views the high lateral wall"
+   ],
+   "answer": 1,
+   "why": "Lead II is bipolar (right arm to left leg) and, with III and aVF, views the inferior wall. Augmented leads are aVR, aVL, and aVF.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0094",
+   "section": "acq",
+   "q": "Einthoven law states that:",
+   "choices": [
+    "aVR + aVL = aVF",
+    "V1 + V6 = V3",
+    "I + II = III",
+    "I + III = II"
+   ],
+   "answer": 3,
+   "why": "The sum of the voltages in leads I and III equals lead II. I + II = III is a common distractor but reverses the relationship.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0095",
+   "section": "acq",
+   "q": "Which leads view the septal wall of the left ventricle?",
+   "choices": [
+    "II, III, and aVF",
+    "I and aVL",
+    "V1 and V2",
+    "V5 and V6"
+   ],
+   "answer": 2,
+   "why": "V1 and V2 sit over the interventricular septum. II, III, and aVF view the inferior wall.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0096",
+   "section": "acq",
+   "q": "Which group of leads views the lateral wall?",
+   "choices": [
+    "V1, V2, V3",
+    "I, aVL, V5, V6",
+    "II, III, aVF",
+    "aVR and V1"
+   ],
+   "answer": 1,
+   "why": "I, aVL, V5, and V6 are the lateral leads. V1 through V3 are septal and anterior.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0097",
+   "section": "acq",
+   "q": "ST elevation in II, III, and aVF suggests injury to which wall?",
+   "choices": [
+    "Inferior",
+    "Anterior",
+    "Lateral",
+    "Septal"
+   ],
+   "answer": 0,
+   "why": "II, III, and aVF are the inferior leads, supplied usually by the right coronary artery. Anterior changes would appear in V3 and V4.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0098",
+   "section": "acq",
+   "q": "A patient with an inferior wall MI becomes hypotensive. The physician asks for right-sided leads. Which lead is most important?",
+   "choices": [
+    "V7",
+    "V9",
+    "V4R",
+    "aVR"
+   ],
+   "answer": 2,
+   "why": "V4R is the single most useful right-sided lead for detecting right ventricular infarction. V7 and V9 are posterior leads, not right-sided.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0099",
+   "section": "acq",
+   "q": "Posterior leads V7, V8, and V9 are placed:",
+   "choices": [
+    "Along the right sternal border",
+    "In the second intercostal space bilaterally",
+    "Over the scapular spines",
+    "On the left posterior chest at the level of V6, at posterior axillary line, midscapular line, and left border of the spine"
+   ],
+   "answer": 3,
+   "why": "V7 through V9 continue the horizontal V6 plane around the left posterior chest. They are not placed over the scapular spines.",
+   "difficulty": 3
+  },
+  {
+   "id": "nha-cet-q0100",
+   "section": "acq",
+   "q": "For right-sided chest leads, the electrodes are placed:",
+   "choices": [
+    "In the same positions but one space higher",
+    "Only on the limbs",
+    "On the back",
+    "In mirror-image positions on the right side of the chest"
+   ],
+   "answer": 3,
+   "why": "Right-sided leads mirror the standard precordial positions across the sternum. Raising the leads one interspace is not the technique.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0101",
+   "section": "acq",
+   "q": "In a 3-lead monitoring setup, the white electrode is placed:",
+   "choices": [
+    "Below the left clavicle",
+    "Below the right clavicle",
+    "At the left lower ribs",
+    "Over the sternum"
+   ],
+   "answer": 1,
+   "why": "White on right, under the right clavicle. Black (smoke) goes on the left below the clavicle, over the red (fire) lower left.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0102",
+   "section": "acq",
+   "q": "The mnemonic smoke over fire means:",
+   "choices": [
+    "Black electrode above the red electrode on the left side",
+    "Red above black on the right side",
+    "Brown above green",
+    "White above green on the left"
+   ],
+   "answer": 0,
+   "why": "Smoke (black) sits above fire (red) on the patient's left. Brown is the chest electrode placed in the middle in a 5-lead setup.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0103",
+   "section": "acq",
+   "q": "In a 5-lead system, the brown electrode is placed:",
+   "choices": [
+    "Under the right clavicle",
+    "On the left lower abdomen",
+    "In the V1 position, fourth intercostal space right sternal border",
+    "On the right lower abdomen"
+   ],
+   "answer": 2,
+   "why": "Brown is the chest lead and is typically placed at V1. The right and left lower positions belong to green and red.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0104",
+   "section": "acq",
+   "q": "Before applying electrodes to a diaphoretic patient with hairy skin, the technician should first:",
+   "choices": [
+    "Clip the hair, wipe the skin with alcohol, let it dry, and gently abrade",
+    "Apply extra gel over the hair",
+    "Apply lotion to improve contact",
+    "Apply electrodes over the hair and tape them down"
+   ],
+   "answer": 0,
+   "why": "Hair removal, oil removal with alcohol, drying, and gentle abrasion all lower skin impedance. Lotion increases impedance and prevents adhesion.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0105",
+   "section": "acq",
+   "q": "An electrode package is opened and the gel appears dry and cracked. The technician should:",
+   "choices": [
+    "Add water to the gel",
+    "Use it anyway and increase the gain",
+    "Use it with extra tape",
+    "Discard it and open fresh, unexpired electrodes"
+   ],
+   "answer": 3,
+   "why": "Dried or expired gel raises impedance and produces artifact or lead-off; fresh electrodes are required. Raising gain amplifies the noise along with the signal.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0106",
+   "section": "acq",
+   "q": "A tracing shows a slow, drifting up-and-down movement of the isoelectric line. This is:",
+   "choices": [
+    "AC interference",
+    "Somatic tremor",
+    "Wandering baseline",
+    "Interrupted baseline"
+   ],
+   "answer": 2,
+   "why": "Slow drift of the baseline is wandering baseline, commonly from patient movement, breathing, or loose electrodes. AC interference is fast, uniform, small spikes.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0107",
+   "section": "acq",
+   "q": "Which action best corrects wandering baseline caused by respiration?",
+   "choices": [
+    "Increase the paper speed to 50 mm/sec",
+    "Ask the patient to breathe normally and hold still, and check electrode adhesion",
+    "Turn on the AC filter",
+    "Reduce the standardization to 5 mm/mV"
+   ],
+   "answer": 1,
+   "why": "Wandering baseline from breathing and loose contact is fixed by securing electrodes and limiting motion. The AC filter addresses 60-cycle interference, a different artifact.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0108",
+   "section": "acq",
+   "q": "A tracing shows fuzzy, irregular, rapid spikes of varying height throughout. The most likely cause is:",
+   "choices": [
+    "60-cycle interference",
+    "Broken lead wire",
+    "Somatic muscle tremor",
+    "Improper standardization"
+   ],
+   "answer": 2,
+   "why": "Irregular, jagged, variable deflections indicate muscle tremor from tension, shivering, or movement. AC interference is regular and uniform, not irregular.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0109",
+   "section": "acq",
+   "q": "AC 60-cycle interference appears on the tracing as:",
+   "choices": [
+    "A slow drifting baseline",
+    "Uniform, small, rapid spikes at a constant rate across the baseline",
+    "A completely flat line",
+    "Irregular coarse waves of varying amplitude"
+   ],
+   "answer": 1,
+   "why": "Alternating current interference produces perfectly regular fine spikes. A flat line suggests a lead-off or disconnected wire instead.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0110",
+   "section": "acq",
+   "q": "Which action is the best first step to eliminate AC interference?",
+   "choices": [
+    "Replace all electrodes",
+    "Change paper speed",
+    "Increase the gain",
+    "Unplug or move nearby electrical equipment and ensure lead wires are not crossing power cords"
+   ],
+   "answer": 3,
+   "why": "AC interference originates from nearby powered equipment and cords, so removing the source is the first fix. Changing paper speed does not affect electrical interference.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0111",
+   "section": "acq",
+   "q": "A patient with Parkinson disease produces continuous tremor artifact. The best option is:",
+   "choices": [
+    "Position the limbs comfortably on supports, move limb electrodes more proximally, and apply the muscle filter",
+    "Refuse to perform the EKG",
+    "Ask the patient to hold their breath for 60 seconds",
+    "Remove the limb leads"
+   ],
+   "answer": 0,
+   "why": "Supported limbs, more proximal electrode placement, and the muscle artifact filter reduce involuntary tremor artifact. Removing limb leads would make the 12-lead impossible.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0112",
+   "section": "acq",
+   "q": "A flat line appears only in lead III while other leads are normal. The most likely cause is:",
+   "choices": [
+    "Cardiac arrest",
+    "A loose or disconnected electrode or broken lead wire on that limb",
+    "AC interference",
+    "The patient is talking"
+   ],
+   "answer": 1,
+   "why": "A single interrupted or flat lead points to a mechanical problem with that electrode or wire, not the patient. True asystole would flatten all leads simultaneously.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0113",
+   "section": "acq",
+   "q": "Lead I shows a negative P wave and negative QRS while aVR shows upright complexes. The technician should suspect:",
+   "choices": [
+    "Right arm and left arm electrode reversal",
+    "Dextrocardia confirmed",
+    "V1 and V2 reversal",
+    "Normal variant"
+   ],
+   "answer": 0,
+   "why": "RA and LA reversal inverts lead I and makes aVR look like a normal lead. It is corrected by re-placing electrodes and repeating, not reported as a normal variant.",
+   "difficulty": 3
+  },
+  {
+   "id": "nha-cet-q0114",
+   "section": "acq",
+   "q": "A monitored tracing shows almost no amplitude in leads II, III, and aVF while lead I looks normal. The most likely technical cause is:",
+   "choices": [
+    "Wrong paper speed",
+    "Dry electrode gel on the chest leads",
+    "Reversal of the left leg and right leg electrodes",
+    "AC filter turned on"
+   ],
+   "answer": 2,
+   "why": "LL and RL reversal produces a nearly flat lead II because the two electrodes are electrically similar. Paper speed changes width, not amplitude.",
+   "difficulty": 3
+  },
+  {
+   "id": "nha-cet-q0115",
+   "section": "acq",
+   "q": "The standard paper speed for a routine 12-lead EKG is:",
+   "choices": [
+    "10 mm/sec",
+    "20 mm/sec",
+    "50 mm/sec",
+    "25 mm/sec"
+   ],
+   "answer": 3,
+   "why": "25 mm/sec is the universal standard. 50 mm/sec is reserved for very fast rates or crowded complexes and doubles the apparent width.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0116",
+   "section": "acq",
+   "q": "On standard paper, one small box horizontally represents:",
+   "choices": [
+    "0.04 second",
+    "0.20 second",
+    "0.10 second",
+    "0.01 second"
+   ],
+   "answer": 0,
+   "why": "At 25 mm/sec, each 1 mm small box equals 0.04 second. 0.20 second is one large box of five small boxes.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0117",
+   "section": "acq",
+   "q": "One large box on standard EKG paper represents:",
+   "choices": [
+    "0.04 second",
+    "0.12 second",
+    "0.20 second",
+    "0.50 second"
+   ],
+   "answer": 2,
+   "why": "Five small boxes at 0.04 second each equal 0.20 second. 0.04 second is one small box.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0118",
+   "section": "acq",
+   "q": "With normal standardization, a 10 mm deflection equals:",
+   "choices": [
+    "0.5 mV",
+    "1 mV",
+    "2 mV",
+    "10 mV"
+   ],
+   "answer": 1,
+   "why": "Standardization is 10 mm per 1 millivolt. Half standardization would make 5 mm equal 1 mV.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0119",
+   "section": "acq",
+   "q": "QRS complexes are so tall they overlap adjacent leads. The technician should:",
+   "choices": [
+    "Increase paper speed to 50 mm/sec",
+    "Turn on the AC filter",
+    "Reposition the chest electrodes higher",
+    "Switch to half standardization, 5 mm/mV, and mark the tracing"
+   ],
+   "answer": 3,
+   "why": "Half standardization halves amplitude so complexes fit, and it must be documented on the tracing. Changing paper speed alters duration, not height.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0120",
+   "section": "acq",
+   "q": "Double standardization is set at:",
+   "choices": [
+    "5 mm/mV",
+    "10 mm/mV",
+    "20 mm/mV",
+    "25 mm/mV"
+   ],
+   "answer": 2,
+   "why": "Double standardization doubles the deflection to 20 mm per mV, used when complexes are very small. 5 mm/mV is half standardization.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0121",
+   "section": "acq",
+   "q": "The standardization mark on a correctly calibrated tracing should be:",
+   "choices": [
+    "10 mm tall and 0.20 second wide",
+    "5 mm tall",
+    "20 mm tall",
+    "1 mm tall"
+   ],
+   "answer": 0,
+   "why": "The calibration pulse is a 10 mm by 0.20 second rectangle confirming 1 mV equals 10 mm. A 5 mm mark indicates half standardization.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0122",
+   "section": "acq",
+   "q": "If the machine is accidentally left at half standardization, the resulting tracing will:",
+   "choices": [
+    "Show a faster heart rate",
+    "Widen all intervals",
+    "Show 60-cycle interference",
+    "Show artificially small amplitudes that could mask hypertrophy"
+   ],
+   "answer": 3,
+   "why": "Half standardization halves all voltages, which can hide true voltage criteria; timing is unaffected. Rate and intervals depend on paper speed, not gain.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0123",
+   "section": "acq",
+   "q": "How many large boxes span 6 seconds at 25 mm/sec?",
+   "choices": [
+    "15",
+    "30",
+    "25",
+    "50"
+   ],
+   "answer": 1,
+   "why": "Each large box is 0.20 second, so 30 large boxes equal 6 seconds; 15 large boxes equal 3 seconds. Rate is estimated by counting complexes in the 6-second strip and multiplying by 10.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0124",
+   "section": "acq",
+   "q": "A patient's complexes are crowded together at a rate of 190/min. The technician may:",
+   "choices": [
+    "Reduce the gain to 5 mm/mV",
+    "Increase paper speed to 50 mm/sec and document the change",
+    "Turn on the muscle filter",
+    "Use double standardization"
+   ],
+   "answer": 1,
+   "why": "Doubling paper speed spreads the complexes so waveforms can be measured, and the change must be noted. Gain changes affect height, not spacing.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0125",
+   "section": "acq",
+   "q": "The muscle or artifact filter is most appropriately used when:",
+   "choices": [
+    "The patient is perfectly still",
+    "Amplitude is too large",
+    "Paper speed is incorrect",
+    "Tremor artifact persists after repositioning and reassurance"
+   ],
+   "answer": 3,
+   "why": "The filter is a last step after mechanical and patient-related fixes, because filtering can also alter true waveform detail. It does nothing for amplitude problems.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0126",
+   "section": "acq",
+   "q": "Before handing a completed tracing to the provider, the technician should:",
+   "choices": [
+    "Review it for artifact, correct lead placement, proper standardization, and complete patient identification",
+    "Interpret the rhythm and write a diagnosis",
+    "Erase any abnormal complexes",
+    "Send it without review to save time"
+   ],
+   "answer": 0,
+   "why": "Quality review and correct labeling are technician responsibilities. Interpreting and diagnosing are outside the CET scope of practice.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0127",
+   "section": "acq",
+   "q": "A tracing must be repeated when:",
+   "choices": [
+    "The patient has an abnormal rhythm",
+    "The QRS is tall",
+    "Artifact obscures the baseline or leads were misplaced",
+    "The patient is anxious"
+   ],
+   "answer": 2,
+   "why": "An uninterpretable or incorrectly acquired tracing must be repeated. An abnormal but clean rhythm is real data and should be reported, not repeated.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0128",
+   "section": "acq",
+   "q": "A patient with severe dyspnea cannot lie flat for the EKG. The technician should:",
+   "choices": [
+    "Place the patient in semi-Fowler position and document the position on the tracing",
+    "Force the patient supine",
+    "Have the patient stand",
+    "Postpone the test indefinitely"
+   ],
+   "answer": 0,
+   "why": "Semi-Fowler is acceptable when supine is not tolerated, but the deviation must be documented because position changes axis and amplitude. Forcing a supine position risks harm.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0129",
+   "section": "acq",
+   "q": "The standard position for a routine 12-lead EKG is:",
+   "choices": [
+    "Prone with arms overhead",
+    "Sitting upright with legs crossed",
+    "Supine with arms relaxed at the sides and legs uncrossed",
+    "Left lateral decubitus"
+   ],
+   "answer": 2,
+   "why": "Supine with relaxed limbs minimizes muscle artifact. Crossed legs and tensed arms introduce somatic tremor.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0130",
+   "section": "acq",
+   "q": "Which instruction should be given to the patient immediately before recording?",
+   "choices": [
+    "Take slow deep breaths continuously",
+    "Relax, remain still, and do not talk during the recording",
+    "Cough at the start of each lead",
+    "Lift the head to check the electrodes"
+   ],
+   "answer": 1,
+   "why": "Stillness and silence prevent somatic and baseline artifact. Deep breathing causes baseline sway.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0131",
+   "section": "acq",
+   "q": "A patient has a chest tube dressing covering the V3 position. The technician should:",
+   "choices": [
+    "Remove the dressing",
+    "Place V3 as close as safely possible to the correct site, avoiding the dressing, and document the deviation",
+    "Skip V3 and report a 11-lead EKG",
+    "Place V3 on the back"
+   ],
+   "answer": 1,
+   "why": "The electrode is shifted minimally and the deviation documented; sterile dressings are never removed by the technician. Omitting the lead yields an incomplete study.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0132",
+   "section": "acq",
+   "q": "When a patient has an implanted pacemaker generator under the left clavicle, the technician should:",
+   "choices": [
+    "Place limb electrodes on the abdomen",
+    "Skip aVL",
+    "Avoid placing electrodes directly over the generator site",
+    "Turn off the pacemaker"
+   ],
+   "answer": 2,
+   "why": "Electrodes are kept off the generator pocket to avoid discomfort and distortion; the pacemaker is never manipulated. Skipping leads is not acceptable.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0133",
+   "section": "acq",
+   "q": "Pediatric 12-lead EKGs commonly add which lead?",
+   "choices": [
+    "V7",
+    "V9",
+    "V4R",
+    "V8"
+   ],
+   "answer": 2,
+   "why": "V4R is routinely added in pediatric tracings because of right ventricular dominance in children. V7 through V9 are posterior leads used for suspected posterior infarction.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0134",
+   "section": "acq",
+   "q": "A Holter monitor is typically worn for:",
+   "choices": [
+    "24 to 48 hours",
+    "1 to 2 hours",
+    "7 to 10 days",
+    "30 days"
+   ],
+   "answer": 0,
+   "why": "Standard continuous Holter recording is 24 to 48 hours. Event or mobile telemetry monitors cover 30 days for infrequent symptoms.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0135",
+   "section": "acq",
+   "q": "A patient being fitted for a Holter monitor should be instructed to:",
+   "choices": [
+    "Remove electrodes at night",
+    "Shower daily with the monitor on",
+    "Avoid all physical activity",
+    "Keep a diary of activities and symptoms with times"
+   ],
+   "answer": 3,
+   "why": "The diary lets the physician correlate symptoms and activity with recorded rhythm. Showering is not permitted because water loosens electrodes and can damage the recorder.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0136",
+   "section": "acq",
+   "q": "Which patient statement indicates a need for further Holter teaching?",
+   "choices": [
+    "I will write down when I feel dizzy",
+    "I will take the monitor off before my shower tomorrow",
+    "I will avoid electric blankets",
+    "I will keep the lead wires tucked under my shirt"
+   ],
+   "answer": 1,
+   "why": "Removing the monitor interrupts continuous recording and invalidates the study; the patient should sponge bathe instead. The other statements are correct practice.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0137",
+   "section": "acq",
+   "q": "An event monitor differs from a Holter monitor because it:",
+   "choices": [
+    "Uses 12 leads",
+    "Cannot be worn at home",
+    "Requires hospitalization",
+    "Records intermittently over weeks, often activated by the patient during symptoms"
+   ],
+   "answer": 3,
+   "why": "Event and loop recorders capture infrequent symptoms over up to 30 days rather than recording continuously for a day or two. They are outpatient devices.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0138",
+   "section": "acq",
+   "q": "Mobile cardiac telemetry is distinguished by:",
+   "choices": [
+    "Recording only when the patient presses a button",
+    "Producing a printed strip at home",
+    "Automatic detection and wireless transmission of arrhythmias to a monitoring center in near real time",
+    "Being implanted under the skin"
+   ],
+   "answer": 2,
+   "why": "Mobile cardiac telemetry auto-detects and transmits events continuously. An implanted device is an insertable loop recorder, a different technology.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0139",
+   "section": "acq",
+   "q": "Which is an absolute contraindication to exercise stress testing?",
+   "choices": [
+    "Controlled hypertension",
+    "Stable angina",
+    "Acute myocardial infarction within the last two days",
+    "Age over 70"
+   ],
+   "answer": 2,
+   "why": "Acute MI, unstable angina, severe aortic stenosis, and uncontrolled arrhythmias are absolute contraindications. Stable angina is a common indication for testing, not a contraindication.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0140",
+   "section": "acq",
+   "q": "Which patient should not proceed with a treadmill stress test?",
+   "choices": [
+    "A patient with a remote MI five years ago",
+    "A patient with severe symptomatic aortic stenosis",
+    "A patient taking a beta blocker",
+    "A patient with a history of asthma"
+   ],
+   "answer": 1,
+   "why": "Severe symptomatic aortic stenosis is an absolute contraindication because exertion can cause syncope or sudden death. A remote MI is not a contraindication.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0141",
+   "section": "acq",
+   "q": "Pre-test instructions for a stress test should include:",
+   "choices": [
+    "No food, caffeine, or tobacco for several hours before, and wear comfortable walking shoes",
+    "Eat a large meal for energy",
+    "Drink strong coffee to raise heart rate",
+    "Wear dress shoes for traction"
+   ],
+   "answer": 0,
+   "why": "Fasting and avoiding caffeine and nicotine prevent nausea and heart rate distortion; walking shoes are needed for treadmill safety. Caffeine interferes with the test and with pharmacologic agents.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0142",
+   "section": "acq",
+   "q": "Informed consent for a stress test must be:",
+   "choices": [
+    "Obtained verbally by the technician only",
+    "Waived because the test is noninvasive",
+    "Signed by the patient after the physician explains risks and benefits",
+    "Obtained after the test begins"
+   ],
+   "answer": 2,
+   "why": "The physician explains risks and benefits and the patient signs before the test starts. The test carries real risk, so consent is never waived.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0143",
+   "section": "acq",
+   "q": "In the Bruce protocol, each stage lasts:",
+   "choices": [
+    "1 minute",
+    "3 minutes",
+    "5 minutes",
+    "10 minutes"
+   ],
+   "answer": 1,
+   "why": "Bruce protocol stages are 3 minutes each, with speed and grade increasing at every stage. Shorter stages would not allow a steady-state response.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0144",
+   "section": "acq",
+   "q": "A 60-year-old is having a stress test. The predicted maximum heart rate is:",
+   "choices": [
+    "140/min",
+    "160/min",
+    "180/min",
+    "200/min"
+   ],
+   "answer": 1,
+   "why": "Maximum predicted heart rate is 220 minus age, so 220 minus 60 equals 160/min. 136/min would be the 85 percent target, not the maximum.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0145",
+   "section": "acq",
+   "q": "A 40-year-old patient's 85 percent target heart rate for a stress test is approximately:",
+   "choices": [
+    "144/min",
+    "160/min",
+    "153/min",
+    "180/min"
+   ],
+   "answer": 2,
+   "why": "220 minus 40 equals 180, and 85 percent of 180 is 153/min. 180/min is the maximum predicted rate, not the target.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0146",
+   "section": "acq",
+   "q": "During stress testing, limb electrodes are moved to the torso because:",
+   "choices": [
+    "Arm and leg motion during walking would create unacceptable artifact",
+    "Torso placement increases voltage",
+    "The limbs cannot conduct during exercise",
+    "It shortens the cable"
+   ],
+   "answer": 0,
+   "why": "Torso placement eliminates limb motion artifact while walking. It actually alters amplitude and axis slightly, which is why torso tracings are labeled as such.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0147",
+   "section": "acq",
+   "q": "During each stage of a stress test the technician should record:",
+   "choices": [
+    "Only the heart rate",
+    "Blood pressure, heart rate, rhythm, and patient symptoms",
+    "Only blood pressure",
+    "Weight and temperature"
+   ],
+   "answer": 1,
+   "why": "Serial blood pressure, rate, rhythm, and symptoms are monitored each stage to detect a dangerous response. Heart rate alone would miss a falling systolic pressure.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0148",
+   "section": "acq",
+   "q": "During stage 3 the patient's systolic blood pressure falls from 150 to 132 mmHg. The technician should:",
+   "choices": [
+    "Increase the treadmill speed",
+    "Continue and recheck in 3 minutes",
+    "Do nothing since diastolic is unchanged",
+    "Notify the physician immediately, as a drop of 10 mmHg or more is an indication to stop"
+   ],
+   "answer": 3,
+   "why": "A sustained fall in systolic pressure of 10 mmHg or more with increasing workload signals ischemia or a failing cardiac output and is an absolute indication to terminate. Continuing raises the risk of a serious event.",
+   "difficulty": 3
+  },
+  {
+   "id": "nha-cet-q0149",
+   "section": "acq",
+   "q": "Which finding is an absolute indication to stop a stress test?",
+   "choices": [
+    "Heart rate reaching 70 percent of predicted maximum",
+    "Mild leg fatigue",
+    "Sustained ventricular tachycardia",
+    "A rise in systolic pressure to 170 mmHg"
+   ],
+   "answer": 2,
+   "why": "Sustained VT, ST elevation, severe chest pain, dizziness, a falling systolic pressure, or patient request all require immediate termination. A normal rise in systolic pressure with exercise is expected.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0150",
+   "section": "acq",
+   "q": "A patient says I want to stop during stage 2 but has no other findings. The technician should:",
+   "choices": [
+    "Encourage the patient to reach target rate first",
+    "Increase the grade slowly",
+    "Continue for one more minute",
+    "Stop the test, because patient request is a valid reason to terminate"
+   ],
+   "answer": 3,
+   "why": "Patient request alone terminates the test; no patient is compelled to continue. Pushing on despite a request is both unsafe and unethical.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0151",
+   "section": "acq",
+   "q": "After a stress test ends, monitoring should continue:",
+   "choices": [
+    "Only until the patient leaves the room",
+    "Only if symptoms occurred",
+    "Through a recovery period until heart rate, blood pressure, and EKG return toward baseline",
+    "Only for 30 seconds"
+   ],
+   "answer": 2,
+   "why": "Many ischemic changes and arrhythmias appear in recovery, so monitoring continues until values approach baseline. Ending monitoring at the treadmill stop can miss these events.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0152",
+   "section": "acq",
+   "q": "Pharmacologic stress testing is chosen primarily when the patient:",
+   "choices": [
+    "Refuses any medication",
+    "Cannot exercise adequately due to arthritis, deconditioning, or neurologic limits",
+    "Has a normal resting EKG",
+    "Is younger than 40"
+   ],
+   "answer": 1,
+   "why": "Pharmacologic agents simulate exercise stress for patients who cannot walk sufficiently. A normal resting EKG is not itself a reason to avoid the treadmill.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0153",
+   "section": "acq",
+   "q": "Adenosine and regadenoson produce stress by:",
+   "choices": [
+    "Directly increasing myocardial contractility",
+    "Slowing the heart rate",
+    "Blocking beta receptors",
+    "Causing coronary vasodilation that reveals relative perfusion differences"
+   ],
+   "answer": 3,
+   "why": "These agents are vasodilators that unmask perfusion mismatch between normal and stenotic vessels. Dobutamine, not adenosine, works by increasing contractility and rate.",
+   "difficulty": 3
+  },
+  {
+   "id": "nha-cet-q0154",
+   "section": "acq",
+   "q": "Dobutamine is used in pharmacologic stress testing because it:",
+   "choices": [
+    "Increases heart rate and myocardial contractility, mimicking exercise",
+    "Dilates coronary arteries only",
+    "Lowers blood pressure",
+    "Sedates the patient"
+   ],
+   "answer": 0,
+   "why": "Dobutamine raises rate, contractility, and oxygen demand much as exercise does. Coronary vasodilation alone describes adenosine and regadenoson.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0155",
+   "section": "acq",
+   "q": "A patient scheduled for adenosine stress testing reports drinking two cups of coffee this morning. The technician should:",
+   "choices": [
+    "Proceed as scheduled",
+    "Report it, because caffeine blocks adenosine receptors and can invalidate the test",
+    "Give extra adenosine",
+    "Have the patient walk instead"
+   ],
+   "answer": 1,
+   "why": "Caffeine and other methylxanthines antagonize adenosine receptors and blunt the response, so the test is usually rescheduled. Increasing the dose is not the technician's decision and is unsafe.",
+   "difficulty": 3
+  },
+  {
+   "id": "nha-cet-q0156",
+   "section": "acq",
+   "q": "Echocardiography differs from electrocardiography in that it:",
+   "choices": [
+    "Records only electrical activity",
+    "Uses ultrasound to image cardiac structure, wall motion, and valve function",
+    "Requires 12 electrodes",
+    "Measures only heart rate"
+   ],
+   "answer": 1,
+   "why": "Echo is an ultrasound image of anatomy and mechanical function; the EKG records electrical activity only. A normal EKG does not rule out structural disease.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0157",
+   "section": "acq",
+   "q": "A telemetry monitor alarms with a flat line, but the patient is sitting up talking. The technician should first:",
+   "choices": [
+    "Call a code",
+    "Begin CPR",
+    "Turn off the alarm",
+    "Check the electrodes and lead wires for a lead-off or disconnection"
+   ],
+   "answer": 3,
+   "why": "An alert, conversant patient rules out asystole, so the cause is a lead-off or detached wire. Silencing the alarm without correcting the cause is unsafe practice.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0158",
+   "section": "acq",
+   "q": "Alarm limits on a cardiac monitor should be:",
+   "choices": [
+    "Turned off to reduce noise",
+    "Set appropriately for the individual patient's condition and prescribed parameters",
+    "Always set at 40 and 200/min for everyone",
+    "Adjusted only by the patient"
+   ],
+   "answer": 1,
+   "why": "Limits are individualized so real events are caught without constant false alarms. Disabling alarms is a serious safety violation.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0159",
+   "section": "acq",
+   "q": "The monitor shows frequent false high-rate alarms with normal-appearing rhythm. A likely cause is:",
+   "choices": [
+    "The rate is truly elevated",
+    "Tall T waves being double counted by the monitor",
+    "Paper speed error",
+    "Half standardization"
+   ],
+   "answer": 1,
+   "why": "Large T waves can be counted as additional QRS complexes, doubling the displayed rate; selecting a lead with a taller QRS relative to T corrects it. Paper speed does not affect monitor rate counting.",
+   "difficulty": 3
+  },
+  {
+   "id": "nha-cet-q0160",
+   "section": "acq",
+   "q": "When mounting or labeling a 12-lead tracing, the technician must include:",
+   "choices": [
+    "A rhythm interpretation",
+    "Patient name, identification number, date, time, and technician initials",
+    "The physician's diagnosis",
+    "The patient's insurance number"
+   ],
+   "answer": 1,
+   "why": "Complete identifying data makes the tracing a valid legal record. Interpretation is the provider's responsibility, not the technician's.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0161",
+   "section": "acq",
+   "q": "A technician notices that V5 and V6 were transposed after the tracing printed. The correct action is:",
+   "choices": [
+    "Relabel the leads by hand",
+    "Report it as a lateral infarct",
+    "Correct the electrode positions and repeat the tracing, documenting the correction",
+    "Ignore it since the leads are adjacent"
+   ],
+   "answer": 2,
+   "why": "Misplaced precordial leads distort R wave progression and must be corrected and re-recorded. Hand relabeling falsifies the record.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0162",
+   "section": "acq",
+   "q": "Poor R wave progression appears across the precordial leads on an otherwise clean tracing. A common technical cause is:",
+   "choices": [
+    "Incorrect vertical placement of the chest electrodes, such as placing them an interspace too high",
+    "Paper speed set at 25 mm/sec",
+    "Normal standardization",
+    "Supine positioning"
+   ],
+   "answer": 0,
+   "why": "Chest electrodes placed too high shift R wave transition and can mimic anterior infarction. 25 mm/sec and 10 mm/mV are the correct standard settings.",
+   "difficulty": 3
+  },
+  {
+   "id": "nha-cet-q0163",
+   "section": "acq",
+   "q": "Which action reduces the chance of skin irritation from electrodes on a fragile elderly patient?",
+   "choices": [
+    "Scrub the skin vigorously with abrasive pads",
+    "Leave the electrodes on for several days",
+    "Use fresh hypoallergenic electrodes and remove them gently after the tracing",
+    "Apply alcohol after the electrode is placed"
+   ],
+   "answer": 2,
+   "why": "Hypoallergenic electrodes and gentle removal protect fragile skin. Vigorous abrasion can tear thin skin.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0164",
+   "section": "acq",
+   "q": "A limb electrode is accidentally placed on the right thigh rather than the left leg while the other is on the left arm. The result is:",
+   "choices": [
+    "No effect on the tracing",
+    "Improved signal",
+    "Distorted lead relationships because the Einthoven triangle is altered",
+    "A faster heart rate"
+   ],
+   "answer": 2,
+   "why": "The limb electrodes define the triangle used to derive leads I, II, III and the augmented leads, so misplacement distorts axis and morphology. Electrode location does not change the true heart rate.",
+   "difficulty": 3
+  },
+  {
+   "id": "nha-cet-q0165",
+   "section": "acq",
+   "q": "A 5-year-old is scheduled for an EKG and is frightened. The best approach is:",
+   "choices": [
+    "Restrain the child quickly",
+    "Explain the procedure in simple terms, allow a caregiver present, and use pediatric-sized electrodes",
+    "Perform it while the child cries",
+    "Skip the chest leads"
+   ],
+   "answer": 1,
+   "why": "Simple explanation, caregiver presence, and correctly sized electrodes reduce motion artifact and fear. A crying, struggling child produces an uninterpretable tracing.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0166",
+   "section": "acq",
+   "q": "Aside from V4R, pediatric tracings often require:",
+   "choices": [
+    "Smaller electrodes placed in anatomically proportional positions",
+    "Doubling paper speed to 50 mm/sec routinely",
+    "Omitting limb leads",
+    "Placing electrodes on clothing"
+   ],
+   "answer": 0,
+   "why": "Smaller electrodes keep the precordial positions from overlapping on a small chest. Paper speed remains 25 mm/sec unless rates are extremely fast.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0167",
+   "section": "acq",
+   "q": "An EKG machine has not been checked for calibration in a year. The technician should:",
+   "choices": [
+    "Continue using it if tracings look normal",
+    "Follow facility policy for scheduled calibration and preventive maintenance and remove it from use if out of specification",
+    "Recalibrate it personally with household tools",
+    "Increase gain to compensate"
+   ],
+   "answer": 1,
+   "why": "Scheduled calibration and biomedical maintenance ensure accurate amplitude and timing. Adjusting gain does not correct a miscalibrated machine and would falsify voltages.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0168",
+   "section": "acq",
+   "q": "A lead wire has a visibly cracked insulation and its lead produces intermittent interrupted baseline. The technician should:",
+   "choices": [
+    "Remove the damaged cable from service and replace it",
+    "Tape the crack and continue",
+    "Increase the filter setting",
+    "Use it only for limb leads"
+   ],
+   "answer": 0,
+   "why": "A broken conductor causes intermittent signal loss and cannot be reliably repaired with tape. Filtering hides the artifact without fixing the defect.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0169",
+   "section": "acq",
+   "q": "Lead aVR normally shows:",
+   "choices": [
+    "An upright QRS and upright P wave",
+    "A predominantly negative deflection because it views the heart from the right shoulder",
+    "Deep Q waves indicating infarction",
+    "The tallest R wave of any lead"
+   ],
+   "answer": 1,
+   "why": "aVR points away from the main electrical vector, so complexes are normally negative. Upright complexes in aVR suggest arm lead reversal or dextrocardia.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0170",
+   "section": "acq",
+   "q": "Which leads are the augmented unipolar limb leads?",
+   "choices": [
+    "I, II, III",
+    "aVR, aVL, aVF",
+    "V1 through V6",
+    "II, V5, aVF"
+   ],
+   "answer": 1,
+   "why": "aVR, aVL, and aVF are augmented unipolar leads. I, II, and III are the bipolar standard limb leads.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0171",
+   "section": "acq",
+   "q": "How many electrodes are applied to record a standard 12-lead EKG?",
+   "choices": [
+    "10",
+    "12",
+    "6",
+    "4"
+   ],
+   "answer": 0,
+   "why": "Ten electrodes, four limb and six chest, generate the twelve views. The number twelve refers to the leads or views, not the electrodes.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0172",
+   "section": "acq",
+   "q": "The hexaxial reference system is derived from:",
+   "choices": [
+    "The six precordial leads",
+    "The six limb leads arranged around the frontal plane",
+    "The three bipolar leads only",
+    "The posterior leads"
+   ],
+   "answer": 1,
+   "why": "The six frontal plane limb leads form the hexaxial diagram used for axis determination. The precordial leads define the horizontal plane instead.",
+   "difficulty": 3
+  },
+  {
+   "id": "nha-cet-q0173",
+   "section": "acq",
+   "q": "A patient has a full arm cast on the left arm. The best action is:",
+   "choices": [
+    "Place the left arm electrode on the left shoulder or upper torso above the cast and document it",
+    "Place it on the cast",
+    "Omit lead I",
+    "Place both arm electrodes on the right arm"
+   ],
+   "answer": 0,
+   "why": "Move the electrode proximally to exposed skin on the same limb and document the deviation. Electrodes cannot conduct through casting material.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0174",
+   "section": "acq",
+   "q": "A patient has extensive burns over the left chest. The technician should:",
+   "choices": [
+    "Place electrodes over the burn with extra gel",
+    "Place electrodes as near to correct position as intact skin allows, avoid the wound, and document the deviation",
+    "Cancel the test",
+    "Use limb leads only and call it a 12-lead"
+   ],
+   "answer": 1,
+   "why": "Intact skin is used, the wound is protected, and the deviation is documented so the reader can interpret accordingly. Placing electrodes on burned tissue risks infection and pain.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0175",
+   "section": "acq",
+   "q": "A telemetry patient is ambulating and the rhythm becomes unreadable with wide erratic deflections. The technician should first:",
+   "choices": [
+    "Document asystole",
+    "Change the alarm limits",
+    "Assess the patient and check electrode adhesion and lead wire slack",
+    "Print the strip as a new arrhythmia"
+   ],
+   "answer": 2,
+   "why": "Motion artifact from ambulation is corrected by checking the patient and the electrode connections. Documenting artifact as an arrhythmia creates a false record.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0176",
+   "section": "acq",
+   "q": "To minimize artifact, telemetry electrodes should be placed:",
+   "choices": [
+    "Over the sternum for all leads",
+    "Over large muscle groups",
+    "Directly over bony prominences",
+    "Over flat bony areas away from large muscle masses and away from breast tissue"
+   ],
+   "answer": 3,
+   "why": "Flatter, less muscular sites reduce somatic artifact and keep electrodes stable. Placing electrodes on large moving muscles maximizes artifact.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0177",
+   "section": "acq",
+   "q": "How often should telemetry electrodes generally be changed?",
+   "choices": [
+    "Every 12 hours regardless of condition",
+    "Every 24 to 48 hours or when signal quality declines or the gel dries",
+    "Only when the patient is discharged",
+    "Every 8 hours"
+   ],
+   "answer": 1,
+   "why": "Daily replacement or replacement when the signal degrades keeps gel moist and impedance low. Leaving electrodes until discharge leads to dried gel and artifact.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0178",
+   "section": "acq",
+   "q": "A tracing is acquired at 25 mm/sec and the technician counts 4 QRS complexes in 30 large boxes. The heart rate is approximately:",
+   "choices": [
+    "20/min",
+    "40/min",
+    "60/min",
+    "80/min"
+   ],
+   "answer": 1,
+   "why": "Thirty large boxes equal 6 seconds, so 4 complexes times 10 equals 40/min. Multiplying by 5 would apply to a 3-second, 15-large-box strip.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0179",
+   "section": "acq",
+   "q": "On an EKG, one small box vertically represents:",
+   "choices": [
+    "0.1 mV",
+    "1 mV",
+    "0.04 mV",
+    "10 mV"
+   ],
+   "answer": 0,
+   "why": "At standard gain, 10 mm equals 1 mV, so each 1 mm small box equals 0.1 mV. 0.04 is the time value of a small box in seconds, not a voltage.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0180",
+   "section": "acq",
+   "q": "A technician is told to obtain a rhythm strip. This usually means:",
+   "choices": [
+    "A 12-lead at 50 mm/sec",
+    "A continuous recording of a single monitoring lead, most often lead II",
+    "Right-sided leads",
+    "Posterior leads only"
+   ],
+   "answer": 1,
+   "why": "A rhythm strip is one continuous lead, typically lead II because P waves are well seen. A 12-lead is a different, multi-view study.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0181",
+   "section": "acq",
+   "q": "When the technician notices ST elevation on a resting 12-lead of a patient with chest pain, the appropriate action is:",
+   "choices": [
+    "Reassure the patient it is artifact",
+    "Repeat the EKG three times before telling anyone",
+    "Notify the provider immediately and stay with the patient",
+    "File the tracing in the chart for the next rounds"
+   ],
+   "answer": 2,
+   "why": "Suspected acute injury is reported to the licensed provider without delay while the patient is monitored. Delaying for repeat tracings or routine filing risks a fatal delay in treatment.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0182",
+   "section": "acq",
+   "q": "The primary purpose of the standardization mark printed at the beginning of a tracing is to:",
+   "choices": [
+    "Identify the patient",
+    "Verify that the machine is recording 1 mV as 10 mm so amplitudes can be measured accurately",
+    "Mark the paper speed only",
+    "Indicate the lead sequence"
+   ],
+   "answer": 1,
+   "why": "The calibration pulse documents the gain used so voltages on the tracing are interpretable. Patient identity is established by the labeling, not the calibration mark.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0183",
+   "section": "acq",
+   "q": "Lead placement documentation for a nonstandard tracing should be recorded:",
+   "choices": [
+    "Verbally to the next technician only",
+    "Not at all if the tracing looks good",
+    "In the patient record and directly on the tracing",
+    "Only if the provider requests it"
+   ],
+   "answer": 2,
+   "why": "Written notation on the tracing and in the record tells the interpreter that positions deviated, preventing misdiagnosis. Verbal handoff is not a durable legal record.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0184",
+   "section": "acq",
+   "q": "A patient asks the technician what the EKG shows. The best response is:",
+   "choices": [
+    "Give a rough interpretation to ease anxiety",
+    "Say the rhythm looks fine",
+    "State that the provider will review and discuss the results, and offer to answer questions about the procedure",
+    "Show the patient the tracing and point out abnormalities"
+   ],
+   "answer": 2,
+   "why": "Interpreting or reassuring about findings exceeds the CET scope of practice; explaining the procedure does not. Offering an informal reading can cause harm if wrong.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0185",
+   "section": "acq",
+   "q": "A technician must perform an EKG on a patient wearing a transdermal medication patch at the V2 position. The appropriate action is:",
+   "choices": [
+    "Place the electrode on top of the patch",
+    "Remove the patch permanently",
+    "Ask the patient to hold the patch aside",
+    "Follow policy to have the patch relocated or removed per the nurse, then place V2 correctly and document"
+   ],
+   "answer": 3,
+   "why": "The electrode must contact skin at the anatomically correct spot, and patch removal or relocation is coordinated with nursing so the medication dose is tracked. Placing an electrode on the patch prevents proper conduction.",
+   "difficulty": 3
+  },
+  {
+   "id": "nha-cet-q0186",
+   "section": "interp",
+   "q": "On a standard 12-lead tracing, the first small upward deflection before each QRS complex represents which electrical event?",
+   "choices": [
+    "Ventricular repolarization",
+    "Ventricular depolarization",
+    "Atrial depolarization",
+    "Atrial repolarization"
+   ],
+   "answer": 2,
+   "why": "The P wave is produced by atrial depolarization spreading from the SA node across both atria. Ventricular depolarization is the QRS, not the P wave, so that choice describes the wrong structure entirely.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0187",
+   "section": "interp",
+   "q": "A technician is asked what the T wave on a rhythm strip represents. Which answer is correct?",
+   "choices": [
+    "Repolarization of the ventricles",
+    "Depolarization of the ventricles",
+    "Repolarization of the atria",
+    "Conduction delay at the AV node"
+   ],
+   "answer": 0,
+   "why": "The T wave is ventricular repolarization, the recovery phase after the QRS. Atrial repolarization is not seen as its own wave because it is buried inside the QRS complex.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0188",
+   "section": "interp",
+   "q": "Atrial repolarization normally is not visible on the ECG because it is:",
+   "choices": [
+    "Too slow to produce any voltage",
+    "Represented by the U wave",
+    "Blocked by the AV node",
+    "Hidden within the QRS complex"
+   ],
+   "answer": 3,
+   "why": "Atrial repolarization occurs at the same time as ventricular depolarization, so its small deflection is obscured by the much larger QRS. The U wave is a separate late deflection thought to reflect Purkinje or mid-myocardial repolarization, not atrial recovery.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0189",
+   "section": "interp",
+   "q": "A small rounded deflection appears just after the T wave on several beats in a patient with a low potassium level. This deflection is called the:",
+   "choices": [
+    "J point",
+    "U wave",
+    "Delta wave",
+    "Osborn wave"
+   ],
+   "answer": 1,
+   "why": "A U wave follows the T wave and becomes prominent in hypokalemia. The J point is the junction of the QRS and ST segment, not a deflection after the T wave.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0190",
+   "section": "interp",
+   "q": "The exact point where the QRS complex ends and the ST segment begins is known as the:",
+   "choices": [
+    "J point",
+    "PR segment",
+    "TP segment",
+    "Isoelectric notch"
+   ],
+   "answer": 0,
+   "why": "The J point marks the QRS to ST junction and is the reference used to measure ST elevation or depression. The PR segment lies before the QRS and is unrelated to that junction.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0191",
+   "section": "interp",
+   "q": "When evaluating ST segment deviation, which portion of the tracing is used as the true isoelectric baseline?",
+   "choices": [
+    "The PR interval",
+    "The QT interval",
+    "The TP segment",
+    "The peak of the T wave"
+   ],
+   "answer": 2,
+   "why": "The TP segment, from the end of the T wave to the start of the next P wave, is electrically silent and serves as the baseline. The QT interval contains active depolarization and repolarization and can never serve as a baseline.",
+   "difficulty": 3
+  },
+  {
+   "id": "nha-cet-q0192",
+   "section": "interp",
+   "q": "The PR segment, the flat line from the end of the P wave to the start of the QRS, primarily represents:",
+   "choices": [
+    "Atrial contraction",
+    "Conduction delay through the AV node",
+    "Ventricular filling pressure",
+    "Purkinje fiber repolarization"
+   ],
+   "answer": 1,
+   "why": "The PR segment reflects the physiologic delay of the impulse at the AV node before it reaches the ventricles. Atrial contraction corresponds mechanically to the P wave itself, not the flat segment after it.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0193",
+   "section": "interp",
+   "q": "A PR interval is measured from which two points?",
+   "choices": [
+    "End of the P wave to the start of the QRS",
+    "Start of the P wave to the peak of the R wave",
+    "Start of the QRS to the end of the T wave",
+    "Start of the P wave to the start of the QRS complex"
+   ],
+   "answer": 3,
+   "why": "The PR interval runs from the beginning of the P wave to the beginning of the QRS complex, normally 0.12 to 0.20 second. Measuring only to the peak of the R wave overstates the interval and is not the accepted method.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0194",
+   "section": "interp",
+   "q": "A rhythm strip shows a PR interval spanning four small boxes. This interval measures:",
+   "choices": [
+    "0.10 second",
+    "0.16 second",
+    "0.20 second",
+    "0.40 second"
+   ],
+   "answer": 1,
+   "why": "Each small box equals 0.04 second, so four small boxes equal 0.16 second, a normal PR interval. Choosing 0.40 second would require ten small boxes and confuses small boxes with large boxes.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0195",
+   "section": "interp",
+   "q": "Which QRS duration falls within the accepted normal range for an adult?",
+   "choices": [
+    "0.08 second",
+    "0.14 second",
+    "0.18 second",
+    "0.22 second"
+   ],
+   "answer": 0,
+   "why": "A normal QRS is 0.06 to 0.10 second, with 0.12 second considered borderline. A QRS of 0.14 second is already wide and suggests a ventricular origin or bundle branch block.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0196",
+   "section": "interp",
+   "q": "A general rule for screening the QT interval on a rhythm strip is that the QT should be:",
+   "choices": [
+    "Equal to the PR interval",
+    "At least twice the R-R interval",
+    "Exactly 0.44 second in all adults",
+    "Less than half the preceding R-R interval"
+   ],
+   "answer": 3,
+   "why": "A quick bedside screen is that a normal QT is less than half the R-R interval at normal rates. A fixed value of 0.44 second is not valid for everyone because the QT shortens as heart rate rises.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0197",
+   "section": "interp",
+   "q": "Why must the measured QT interval be corrected for heart rate?",
+   "choices": [
+    "Because paper speed varies between machines",
+    "Because the QT shortens as heart rate increases and lengthens as rate slows",
+    "Because the QT is unmeasurable above 80 beats per minute",
+    "Because lead placement alters the QT more than any other interval"
+   ],
+   "answer": 1,
+   "why": "QT duration is rate dependent, so a corrected QT allows comparison across different heart rates. Standard paper speed is fixed at 25 mm per second, so machine speed is not the reason for correction.",
+   "difficulty": 3
+  },
+  {
+   "id": "nha-cet-q0198",
+   "section": "interp",
+   "q": "At the standard paper speed of 25 mm per second, one large box represents how much time?",
+   "choices": [
+    "0.04 second",
+    "0.12 second",
+    "0.20 second",
+    "0.60 second"
+   ],
+   "answer": 2,
+   "why": "One large box contains five small boxes of 0.04 second each, totaling 0.20 second. The 0.04 second value is one small box, not a large box.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0199",
+   "section": "interp",
+   "q": "Using the large-box method on a regular rhythm, R waves fall exactly four large boxes apart. The heart rate is approximately:",
+   "choices": [
+    "60 beats per minute",
+    "75 beats per minute",
+    "100 beats per minute",
+    "150 beats per minute"
+   ],
+   "answer": 1,
+   "why": "The sequence 300, 150, 100, 75, 60, 50 assigns 75 beats per minute to four large boxes. One hundred would correspond to three large boxes.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0200",
+   "section": "interp",
+   "q": "On a regular rhythm, 25 small boxes separate consecutive R waves. Using the 1500 method, the rate is:",
+   "choices": [
+    "50 beats per minute",
+    "55 beats per minute",
+    "60 beats per minute",
+    "75 beats per minute"
+   ],
+   "answer": 2,
+   "why": "Dividing 1500 by 25 small boxes yields 60 beats per minute. Fifty would require 30 small boxes between R waves.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0201",
+   "section": "interp",
+   "q": "Which rate calculation method is most appropriate for an irregularly irregular rhythm?",
+   "choices": [
+    "The 1500 small-box method",
+    "The 300-150-100 large-box sequence",
+    "Dividing 60 by the R-R interval in seconds",
+    "Counting QRS complexes in a 6-second strip and multiplying by 10"
+   ],
+   "answer": 3,
+   "why": "Only the 6-second method averages across a varying R-R and is valid when the rhythm is irregular. The 1500 method assumes a constant R-R and will give a misleading rate in atrial fibrillation.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0202",
+   "section": "interp",
+   "q": "A technician places caliper points on successive R waves and finds each interval identical. This finding establishes that the:",
+   "choices": [
+    "Ventricular rhythm is regular",
+    "P waves are uniform",
+    "PR interval is normal",
+    "QRS complexes are narrow"
+   ],
+   "answer": 0,
+   "why": "R-R caliper measurement assesses ventricular regularity only. It says nothing about P wave morphology or PR duration, which must be examined separately.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0203",
+   "section": "interp",
+   "q": "A strip shows groups of three conducted beats followed by a pause, and the pattern repeats identically. This rhythm is best described as:",
+   "choices": [
+    "Irregularly irregular",
+    "Regularly irregular",
+    "Completely regular",
+    "Chaotic and unmeasurable"
+   ],
+   "answer": 1,
+   "why": "A repeating, predictable pattern of irregularity is regularly irregular, typical of Wenckebach or grouped beating. Irregularly irregular describes a rhythm with no predictable pattern at all, such as atrial fibrillation.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0204",
+   "section": "interp",
+   "q": "In the five-step approach to rhythm interpretation, which element is evaluated first?",
+   "choices": [
+    "QRS width",
+    "PR interval",
+    "Rate",
+    "P wave morphology"
+   ],
+   "answer": 2,
+   "why": "The standard sequence is rate, rhythm, P waves, PR interval, then QRS duration. Starting with QRS width skips the framing information that guides the rest of the analysis.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0205",
+   "section": "interp",
+   "q": "A tracing shows an upright P wave before every QRS, a constant PR interval of 0.16 second, a QRS of 0.08 second, regular R-R intervals, and a rate of 78 beats per minute. This is:",
+   "choices": [
+    "Sinus bradycardia",
+    "Sinus tachycardia",
+    "Normal sinus rhythm",
+    "Accelerated junctional rhythm"
+   ],
+   "answer": 2,
+   "why": "All criteria for normal sinus rhythm are met, including a rate between 60 and 100. Accelerated junctional rhythm would show inverted or absent P waves with a short or absent PR interval.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0206",
+   "section": "interp",
+   "q": "A tracing shows upright P waves before each narrow QRS, a PR interval of 0.18 second, regular rhythm, and a rate of 46 beats per minute. This rhythm is:",
+   "choices": [
+    "Junctional escape rhythm",
+    "Sinus bradycardia",
+    "Third-degree AV block",
+    "Idioventricular rhythm"
+   ],
+   "answer": 1,
+   "why": "Normal sinus features at a rate under 60 define sinus bradycardia. A junctional escape rhythm at 40 to 60 would lack normal upright preceding P waves.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0207",
+   "section": "interp",
+   "q": "Which finding is a common physiologic cause of sinus bradycardia rather than a pathologic one?",
+   "choices": [
+    "Endurance athletic conditioning",
+    "Acute blood loss",
+    "Fever above 102 degrees Fahrenheit",
+    "Hyperthyroidism"
+   ],
+   "answer": 0,
+   "why": "Well conditioned athletes commonly have resting rates below 60 because of increased stroke volume and vagal tone. Fever and hyperthyroidism both drive the rate up and would produce sinus tachycardia.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0208",
+   "section": "interp",
+   "q": "A patient with a fever of 103 degrees Fahrenheit has a regular rhythm at 122 beats per minute with an upright P wave preceding every narrow QRS. The rhythm is:",
+   "choices": [
+    "Supraventricular tachycardia",
+    "Atrial tachycardia",
+    "Sinus tachycardia",
+    "Multifocal atrial tachycardia"
+   ],
+   "answer": 2,
+   "why": "Identifiable sinus P waves before each QRS at 100 to 160 beats per minute define sinus tachycardia, and fever is a classic cause. Supraventricular tachycardia typically runs 150 to 250 with P waves hidden in the preceding T wave.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0209",
+   "section": "interp",
+   "q": "A tracing shows upright P waves before every narrow QRS with a constant PR interval, but the R-R intervals shorten with inspiration and lengthen with expiration. This describes:",
+   "choices": [
+    "Sinus arrest",
+    "Wandering atrial pacemaker",
+    "Atrial fibrillation",
+    "Sinus arrhythmia"
+   ],
+   "answer": 3,
+   "why": "Cyclic variation in R-R tied to the respiratory cycle with otherwise normal sinus features is sinus arrhythmia, a benign finding common in the young. Wandering atrial pacemaker would show at least three different P wave shapes, which are absent here.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0210",
+   "section": "interp",
+   "q": "A strip shows regular sinus beats interrupted by a flat pause during which no P wave or QRS appears; the underlying rhythm then resumes. The pause is not a multiple of the prior R-R. This represents:",
+   "choices": [
+    "Sinus arrest",
+    "Nonconducted premature atrial complex",
+    "Second-degree AV block Mobitz II",
+    "Ventricular standstill"
+   ],
+   "answer": 0,
+   "why": "Absence of both the P wave and the QRS indicates the sinus node failed to fire, which is sinus arrest. In Mobitz II the P wave still appears on time and only the QRS is dropped.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0211",
+   "section": "interp",
+   "q": "Sick sinus syndrome most characteristically produces which pattern?",
+   "choices": [
+    "A fixed rate of exactly 60 with no variation",
+    "Alternating episodes of bradycardia and tachycardia",
+    "Progressive PR lengthening with dropped beats",
+    "Wide QRS complexes at 20 to 40 beats per minute"
+   ],
+   "answer": 1,
+   "why": "Sick sinus syndrome, also called the tachy-brady syndrome, alternates inappropriately slow and fast supraventricular rates. Progressive PR lengthening with a dropped beat is Wenckebach, an AV node problem rather than sinus node dysfunction.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0212",
+   "section": "interp",
+   "q": "An early beat appears with a P wave of abnormal shape, a narrow QRS, and a pause afterward that is less than fully compensatory. This beat is a:",
+   "choices": [
+    "Premature ventricular complex",
+    "Premature junctional complex",
+    "Escape beat",
+    "Premature atrial complex"
+   ],
+   "answer": 3,
+   "why": "An early abnormal P wave with a narrow QRS and a noncompensatory pause is a premature atrial complex, because the ectopic atrial impulse resets the sinus node. A premature ventricular complex would be wide and bizarre with no preceding P wave.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0213",
+   "section": "interp",
+   "q": "A strip shows an irregular rhythm at 82 beats per minute in which the P waves display three clearly different shapes and the PR intervals vary. This rhythm is:",
+   "choices": [
+    "Multifocal atrial tachycardia",
+    "Atrial flutter with variable block",
+    "Wandering atrial pacemaker",
+    "Sinus arrhythmia"
+   ],
+   "answer": 2,
+   "why": "At least three P wave morphologies with varying PR intervals at a rate under 100 defines wandering atrial pacemaker. The identical picture at a rate over 100 would instead be called multifocal atrial tachycardia.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0214",
+   "section": "interp",
+   "q": "Multifocal atrial tachycardia is distinguished from wandering atrial pacemaker chiefly by:",
+   "choices": [
+    "The presence of wide QRS complexes",
+    "A ventricular rate exceeding 100 beats per minute",
+    "A completely regular ventricular response",
+    "Absence of any identifiable P waves"
+   ],
+   "answer": 1,
+   "why": "Both show at least three P wave morphologies and irregular rhythm; the rate over 100 defines multifocal atrial tachycardia. P waves are present in both, so absence of P waves fits atrial fibrillation instead.",
+   "difficulty": 3
+  },
+  {
+   "id": "nha-cet-q0215",
+   "section": "interp",
+   "q": "A narrow-complex tachycardia at 190 beats per minute is perfectly regular and no P waves can be identified, though the T waves appear unusually peaked. The most likely rhythm is:",
+   "choices": [
+    "Supraventricular tachycardia",
+    "Sinus tachycardia",
+    "Ventricular tachycardia",
+    "Atrial fibrillation with rapid ventricular response"
+   ],
+   "answer": 0,
+   "why": "A regular narrow-complex rhythm at 150 to 250 with P waves buried in the preceding T wave is supraventricular tachycardia. Atrial fibrillation is ruled out because the rhythm is regular rather than irregularly irregular.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0216",
+   "section": "interp",
+   "q": "A tracing shows a sawtooth baseline with identical flutter waves at an atrial rate of about 300 per minute and a regular ventricular response of 150. The conduction ratio is:",
+   "choices": [
+    "1 to 1",
+    "4 to 1",
+    "2 to 1",
+    "3 to 1"
+   ],
+   "answer": 2,
+   "why": "An atrial rate of 300 with a ventricular rate of 150 means every other flutter wave conducts, a 2 to 1 ratio. A 4 to 1 ratio at the same atrial rate would produce a ventricular rate near 75.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0217",
+   "section": "interp",
+   "q": "The atrial rate in typical atrial flutter usually falls in which range?",
+   "choices": [
+    "100 to 150 per minute",
+    "150 to 250 per minute",
+    "over 400 per minute",
+    "250 to 350 per minute"
+   ],
+   "answer": 3,
+   "why": "Classic atrial flutter has an atrial rate of 250 to 350 per minute, most often near 300. Rates over 400 with a chaotic baseline indicate atrial fibrillation instead.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0218",
+   "section": "interp",
+   "q": "A tracing shows an irregularly irregular ventricular rhythm at 118 beats per minute, no discernible P waves, and a chaotic wavering baseline. This rhythm is:",
+   "choices": [
+    "Atrial flutter with variable conduction",
+    "Atrial fibrillation with rapid ventricular response",
+    "Multifocal atrial tachycardia",
+    "Sinus arrhythmia"
+   ],
+   "answer": 1,
+   "why": "Absent P waves with a chaotic fibrillatory baseline and an irregularly irregular ventricular response is atrial fibrillation. Atrial flutter would show uniform sawtooth waves rather than a chaotic baseline.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0219",
+   "section": "interp",
+   "q": "The major complication that makes atrial fibrillation clinically dangerous even when the rate is controlled is:",
+   "choices": [
+    "Thromboembolic stroke from atrial blood stasis",
+    "Immediate progression to ventricular fibrillation",
+    "Permanent loss of the AV node",
+    "Irreversible bundle branch block"
+   ],
+   "answer": 0,
+   "why": "Ineffective atrial contraction allows blood to pool and form clots that can embolize to the brain, which is why anticoagulation is standard. Atrial fibrillation does not directly convert to ventricular fibrillation.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0220",
+   "section": "interp",
+   "q": "Which P wave finding is characteristic of a junctional rhythm?",
+   "choices": [
+    "Notched and widened P waves",
+    "Peaked P waves taller than 2.5 mm",
+    "Two P waves for every QRS",
+    "Inverted before the QRS, absent, or following the QRS"
+   ],
+   "answer": 3,
+   "why": "Because the junctional impulse depolarizes the atria retrograde, the P wave is inverted, hidden, or appears after the QRS. Two P waves per QRS suggests a 2 to 1 AV block, not a junctional focus.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0221",
+   "section": "interp",
+   "q": "When a P wave is visible ahead of the QRS in a junctional rhythm, the PR interval is typically:",
+   "choices": [
+    "Greater than 0.20 second",
+    "Exactly 0.16 second",
+    "Less than 0.12 second",
+    "Variable from beat to beat"
+   ],
+   "answer": 2,
+   "why": "Retrograde atrial activation from the AV junction reaches the atria quickly, producing a short PR of less than 0.12 second. A PR greater than 0.20 second defines first-degree AV block and is not a junctional feature.",
+   "difficulty": 3
+  },
+  {
+   "id": "nha-cet-q0222",
+   "section": "interp",
+   "q": "A regular rhythm at 48 beats per minute shows narrow QRS complexes with inverted P waves immediately preceding each QRS and a PR interval of 0.08 second. This is:",
+   "choices": [
+    "Junctional escape rhythm",
+    "Accelerated junctional rhythm",
+    "Junctional tachycardia",
+    "Idioventricular rhythm"
+   ],
+   "answer": 0,
+   "why": "The intrinsic rate of the AV junction is 40 to 60, so 48 with inverted P waves and a short PR is a junctional escape rhythm. Idioventricular rhythm would have wide QRS complexes at 20 to 40.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0223",
+   "section": "interp",
+   "q": "A regular narrow-complex rhythm at 88 beats per minute shows no visible P waves before the QRS complexes but small retrograde P waves after them. This is best identified as:",
+   "choices": [
+    "Normal sinus rhythm",
+    "Accelerated junctional rhythm",
+    "Junctional tachycardia",
+    "Atrial tachycardia"
+   ],
+   "answer": 1,
+   "why": "A junctional focus firing at 60 to 100 is termed accelerated junctional rhythm. Normal sinus rhythm requires upright P waves before each QRS, which are absent here.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0224",
+   "section": "interp",
+   "q": "A premature junctional complex is identified by an early beat with:",
+   "choices": [
+    "A wide bizarre QRS and full compensatory pause",
+    "An early upright P wave with a PR of 0.18 second",
+    "A narrow QRS with an inverted or absent P wave",
+    "A pause exactly twice the underlying R-R"
+   ],
+   "answer": 2,
+   "why": "A premature junctional complex arises above the ventricles, so the QRS stays narrow while the P wave is inverted, absent, or retrograde. A wide bizarre QRS with a compensatory pause describes a premature ventricular complex.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0225",
+   "section": "interp",
+   "q": "A beat occurs early, has no preceding P wave, measures 0.16 second in width, appears bizarre, and is followed by a full compensatory pause. This beat is a:",
+   "choices": [
+    "Premature atrial complex",
+    "Premature junctional complex",
+    "Aberrantly conducted sinus beat",
+    "Premature ventricular complex"
+   ],
+   "answer": 3,
+   "why": "Width over 0.12 second with no preceding P wave and a full compensatory pause is the classic premature ventricular complex. A premature atrial complex would be narrow with an early abnormal P wave.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0226",
+   "section": "interp",
+   "q": "On a strip, all premature ventricular complexes look identical to one another. These are described as:",
+   "choices": [
+    "Unifocal",
+    "Multifocal",
+    "Interpolated",
+    "Fusion beats"
+   ],
+   "answer": 0,
+   "why": "Identical morphology indicates all ectopic beats arise from a single ventricular focus, which is unifocal. Multifocal complexes vary in shape because they originate from different sites and carry greater concern.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0227",
+   "section": "interp",
+   "q": "A rhythm strip shows one sinus beat followed by one premature ventricular complex, repeating throughout the strip. This pattern is called:",
+   "choices": [
+    "Ventricular trigeminy",
+    "Ventricular bigeminy",
+    "A couplet",
+    "A salvo"
+   ],
+   "answer": 1,
+   "why": "Bigeminy means every other beat is a premature ventricular complex. Trigeminy would show one ectopic beat after every two normal beats.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0228",
+   "section": "interp",
+   "q": "Two premature ventricular complexes occurring back to back with no intervening sinus beat are termed a:",
+   "choices": [
+    "Quadrigeminy",
+    "Salvo of three",
+    "Bigeminal pair",
+    "Couplet"
+   ],
+   "answer": 3,
+   "why": "Two consecutive premature ventricular complexes form a couplet; three or more in a row is a run of ventricular tachycardia. Quadrigeminy describes an ectopic beat after every three normal beats, not paired beats.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0229",
+   "section": "interp",
+   "q": "The R-on-T phenomenon is dangerous because a premature ventricular complex landing on the T wave may:",
+   "choices": [
+    "Reset the sinus node permanently",
+    "Cause a first-degree AV block",
+    "Trigger ventricular tachycardia or ventricular fibrillation",
+    "Produce a prolonged PR interval"
+   ],
+   "answer": 2,
+   "why": "The T wave marks the vulnerable relative refractory period, and a stimulus there can provoke lethal ventricular arrhythmias. Resetting the sinus node is a property of atrial ectopy and is not the danger being described.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0230",
+   "section": "interp",
+   "q": "A tracing shows wide bizarre QRS complexes at a regular rate of 32 beats per minute with no P waves. This rhythm is:",
+   "choices": [
+    "Accelerated idioventricular rhythm",
+    "Idioventricular rhythm",
+    "Junctional escape rhythm",
+    "Ventricular tachycardia"
+   ],
+   "answer": 1,
+   "why": "A ventricular escape pacemaker at 20 to 40 with wide complexes and absent P waves is an idioventricular rhythm. Accelerated idioventricular rhythm looks identical but runs at 40 to 100.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0231",
+   "section": "interp",
+   "q": "Wide QRS complexes with no P waves at a regular rate of 65 beats per minute, often seen after reperfusion therapy, best fits:",
+   "choices": [
+    "Accelerated idioventricular rhythm",
+    "Monomorphic ventricular tachycardia",
+    "Accelerated junctional rhythm",
+    "Third-degree AV block"
+   ],
+   "answer": 0,
+   "why": "A ventricular focus firing between 40 and 100 defines accelerated idioventricular rhythm, a common reperfusion rhythm. Ventricular tachycardia by definition exceeds 100 beats per minute.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0232",
+   "section": "interp",
+   "q": "A regular wide-complex rhythm at 170 beats per minute shows QRS complexes all of the same shape with no identifiable P waves. This is:",
+   "choices": [
+    "Supraventricular tachycardia",
+    "Atrial flutter with 2 to 1 conduction",
+    "Monomorphic ventricular tachycardia",
+    "Torsades de pointes"
+   ],
+   "answer": 2,
+   "why": "Uniform wide complexes over 100 beats per minute without P waves is monomorphic ventricular tachycardia. Supraventricular tachycardia would show narrow QRS complexes unless aberrancy is present.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0233",
+   "section": "interp",
+   "q": "A wide-complex tachycardia shows QRS complexes whose amplitude and polarity progressively twist around the baseline in a spindle pattern. This rhythm is:",
+   "choices": [
+    "Coarse ventricular fibrillation",
+    "Monomorphic ventricular tachycardia",
+    "Atrial flutter",
+    "Torsades de pointes"
+   ],
+   "answer": 3,
+   "why": "The twisting axis around the isoelectric line is the hallmark of torsades de pointes, a polymorphic ventricular tachycardia. Ventricular fibrillation has no organized QRS complexes at all, whereas torsades still shows recognizable complexes.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0234",
+   "section": "interp",
+   "q": "Torsades de pointes is most strongly associated with which underlying abnormality?",
+   "choices": [
+    "A prolonged QT interval, often with low magnesium",
+    "A shortened QT interval from hypercalcemia",
+    "A prolonged PR interval",
+    "Peaked T waves from hyperkalemia"
+   ],
+   "answer": 0,
+   "why": "Torsades arises in the setting of QT prolongation, frequently with hypomagnesemia or hypokalemia, and magnesium is the usual treatment. A short QT from hypercalcemia is the opposite electrophysiologic setting.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0235",
+   "section": "interp",
+   "q": "A monitor shows chaotic, completely disorganized undulations with no identifiable P waves, QRS complexes, or T waves, and the patient is unresponsive without a pulse. This rhythm is:",
+   "choices": [
+    "Asystole",
+    "Ventricular fibrillation",
+    "Pulseless electrical activity",
+    "Agonal rhythm"
+   ],
+   "answer": 1,
+   "why": "Totally disorganized waveforms with no recognizable complexes in a pulseless patient is ventricular fibrillation, which requires immediate defibrillation. Pulseless electrical activity would show organized complexes on the monitor despite the absent pulse.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0236",
+   "section": "interp",
+   "q": "Fine ventricular fibrillation differs from coarse ventricular fibrillation mainly in that fine ventricular fibrillation:",
+   "choices": [
+    "Shows identifiable QRS complexes",
+    "Is a perfusing rhythm",
+    "Occurs only in children",
+    "Has lower amplitude waveforms and usually indicates a longer downtime"
+   ],
+   "answer": 3,
+   "why": "Fine ventricular fibrillation has smaller amplitude undulations and generally reflects a longer arrest interval with a poorer prognosis. Neither form produces identifiable QRS complexes or a pulse.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0237",
+   "section": "interp",
+   "q": "Before calling asystole, the technician should:",
+   "choices": [
+    "Increase the paper speed to 50 mm per second",
+    "Switch the machine to diagnostic filter mode",
+    "Confirm the flat line in at least two different leads and check lead connections",
+    "Print a full 12-lead before touching the patient"
+   ],
+   "answer": 2,
+   "why": "A flat line can result from a disconnected lead or fine ventricular fibrillation viewed in one vector, so asystole must be confirmed in two leads with connections checked. Changing paper speed does nothing to distinguish true asystole from artifact.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0238",
+   "section": "interp",
+   "q": "A patient has no palpable pulse, yet the monitor shows an organized rhythm with narrow QRS complexes at 70 beats per minute. This situation is called:",
+   "choices": [
+    "Asystole",
+    "Pulseless electrical activity",
+    "Ventricular fibrillation",
+    "Sinus arrest"
+   ],
+   "answer": 1,
+   "why": "Organized electrical activity without a mechanical pulse defines pulseless electrical activity. Asystole would show a flat line rather than organized complexes.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0239",
+   "section": "interp",
+   "q": "An agonal rhythm is best described as:",
+   "choices": [
+    "Very slow, wide, irregular complexes that gradually diminish, seen in dying patients",
+    "A regular narrow rhythm at 55 beats per minute",
+    "A sawtooth pattern at 300 atrial beats per minute",
+    "Alternating tall and short QRS complexes at a normal rate"
+   ],
+   "answer": 0,
+   "why": "Agonal rhythm shows sparse, wide, dying ventricular complexes progressing toward asystole. A sawtooth pattern describes atrial flutter, a perfusing supraventricular rhythm with an entirely different meaning.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0240",
+   "section": "interp",
+   "q": "A tracing shows an upright P wave before every QRS, a regular rate of 68, narrow QRS complexes, and a constant PR interval of 0.26 second. This is:",
+   "choices": [
+    "Second-degree AV block Mobitz I",
+    "Normal sinus rhythm with a wandering baseline",
+    "First-degree AV block",
+    "Third-degree AV block"
+   ],
+   "answer": 2,
+   "why": "A constant PR interval greater than 0.20 second with every P wave conducted is first-degree AV block. Mobitz I would show the PR lengthening progressively until a QRS is dropped.",
+   "difficulty": 1
+  },
+  {
+   "id": "nha-cet-q0241",
+   "section": "interp",
+   "q": "A strip shows the PR interval lengthening on each successive beat until a P wave appears with no QRS following it, then the cycle repeats. This is:",
+   "choices": [
+    "First-degree AV block",
+    "Second-degree AV block Mobitz II",
+    "Third-degree AV block",
+    "Second-degree AV block Mobitz I"
+   ],
+   "answer": 3,
+   "why": "Progressive PR prolongation ending in a dropped QRS is Mobitz I, also called Wenckebach. In Mobitz II the PR interval stays constant before the beat is dropped.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0242",
+   "section": "interp",
+   "q": "A strip shows a constant PR interval of 0.18 second with narrow QRS complexes, but every third P wave is suddenly not followed by a QRS. This is:",
+   "choices": [
+    "Second-degree AV block Mobitz I",
+    "Second-degree AV block Mobitz II",
+    "First-degree AV block",
+    "Complete heart block"
+   ],
+   "answer": 1,
+   "why": "A constant PR with sudden unexpected dropped QRS complexes is Mobitz II, which reflects block below the AV node and often progresses to complete block. Mobitz I is excluded because the PR does not lengthen before the drop.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0243",
+   "section": "interp",
+   "q": "A tracing shows two P waves for every QRS complex with a constant PR interval on the conducted beats. This pattern is described as:",
+   "choices": [
+    "2 to 1 AV block",
+    "Atrial bigeminy",
+    "Complete heart block",
+    "Blocked premature atrial complexes"
+   ],
+   "answer": 0,
+   "why": "A fixed 2 to 1 ratio of P waves to QRS complexes with consistent PR intervals is 2 to 1 AV block, which cannot be classified as Mobitz I or II from the ratio alone. Complete heart block is excluded because there is a consistent relationship between the P waves and the QRS complexes.",
+   "difficulty": 3
+  },
+  {
+   "id": "nha-cet-q0244",
+   "section": "interp",
+   "q": "A strip shows P waves marching out regularly at 88 per minute and wide QRS complexes marching out regularly at 34 per minute, with no consistent relationship between them. This is:",
+   "choices": [
+    "Second-degree AV block Mobitz II",
+    "Sinus bradycardia with premature ventricular complexes",
+    "Atrial flutter with high-grade block",
+    "Third-degree complete AV block"
+   ],
+   "answer": 3,
+   "why": "Independent atrial and ventricular rates with complete AV dissociation define third-degree block, here with a ventricular escape pacemaker. Mobitz II retains a fixed PR on conducted beats, which is absent when dissociation is complete.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0245",
+   "section": "interp",
+   "q": "Which pair of AV blocks is considered the most dangerous and most likely to require pacing?",
+   "choices": [
+    "First-degree and Mobitz I",
+    "First-degree and sinus arrhythmia",
+    "Mobitz II and third-degree",
+    "Mobitz I and 1 to 1 conduction"
+   ],
+   "answer": 2,
+   "why": "Mobitz II and complete heart block involve infranodal disease, carry unreliable escape rhythms, and often require a pacemaker. First-degree block and Wenckebach are usually benign and are frequently observed without intervention.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0246",
+   "section": "interp",
+   "q": "A bundle branch block is first suspected on the ECG when the QRS duration is:",
+   "choices": [
+    "0.12 second or greater",
+    "0.08 to 0.10 second",
+    "Less than 0.06 second",
+    "Exactly equal to the PR interval"
+   ],
+   "answer": 0,
+   "why": "Delayed activation of one ventricle widens the QRS to 0.12 second or more, the threshold for bundle branch block. A QRS of 0.08 to 0.10 second is normal and excludes the diagnosis.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0247",
+   "section": "interp",
+   "q": "An RSR prime pattern producing rabbit ears in lead V1 with a QRS of 0.14 second suggests:",
+   "choices": [
+    "Left bundle branch block",
+    "Right bundle branch block",
+    "Left anterior fascicular block",
+    "Wolff-Parkinson-White pattern"
+   ],
+   "answer": 1,
+   "why": "The RSR prime in V1 with a wide QRS is the signature of right bundle branch block. Left bundle branch block instead produces a broad notched R wave in V5 and V6 with a deep S in V1.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0248",
+   "section": "interp",
+   "q": "A broad, notched, monophasic R wave in leads V5 and V6 with a QRS of 0.13 second indicates:",
+   "choices": [
+    "Right bundle branch block",
+    "Right ventricular hypertrophy",
+    "Left bundle branch block",
+    "Pericarditis"
+   ],
+   "answer": 2,
+   "why": "Left bundle branch block delays left ventricular activation, producing broad notched R waves in the lateral leads V5 and V6. Right bundle branch block would instead show the RSR prime pattern in V1.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0249",
+   "section": "interp",
+   "q": "A hemiblock refers to a conduction block in:",
+   "choices": [
+    "Half of the AV node",
+    "The SA node exit pathway",
+    "The right bundle only",
+    "One fascicle of the left bundle branch"
+   ],
+   "answer": 3,
+   "why": "The left bundle divides into anterior and posterior fascicles, and block of one of them is a hemiblock, recognized largely by an axis shift. The AV node does not divide into halves, so that choice is anatomically incorrect.",
+   "difficulty": 3
+  },
+  {
+   "id": "nha-cet-q0250",
+   "section": "interp",
+   "q": "A tracing shows a sharp narrow vertical spike immediately preceding each wide QRS complex, with no spike before the P waves. This indicates:",
+   "choices": [
+    "An atrial pacemaker",
+    "A dual-chamber pacemaker",
+    "Failure to sense",
+    "A ventricular pacemaker"
+   ],
+   "answer": 3,
+   "why": "A single spike before a wide QRS with no atrial spike indicates ventricular pacing. A dual-chamber device would produce two spikes, one before the P wave and one before the QRS.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0251",
+   "section": "interp",
+   "q": "A paced tracing shows pacemaker spikes that are not followed by any P wave or QRS complex. This malfunction is:",
+   "choices": [
+    "Oversensing",
+    "Failure to capture",
+    "Failure to sense",
+    "Normal demand pacing"
+   ],
+   "answer": 1,
+   "why": "Failure to capture means the delivered stimulus does not depolarize the myocardium, so a spike appears with no resulting complex. Failure to sense would instead show spikes appearing inappropriately after the patient's own intrinsic beats.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0252",
+   "section": "interp",
+   "q": "A pacemaker delivers spikes at inappropriate times, including shortly after the patient's own intrinsic QRS complexes. This malfunction is:",
+   "choices": [
+    "Failure to capture",
+    "Oversensing",
+    "Failure to sense",
+    "Exit block"
+   ],
+   "answer": 2,
+   "why": "Failure to sense, or undersensing, means the device does not recognize intrinsic beats and paces on top of them, risking R-on-T. Oversensing is the opposite problem, where the device sees noise as a beat and withholds needed pacing.",
+   "difficulty": 3
+  },
+  {
+   "id": "nha-cet-q0253",
+   "section": "interp",
+   "q": "A pacemaker interprets muscle activity as cardiac beats and therefore withholds pacing, producing pauses. This malfunction is called:",
+   "choices": [
+    "Failure to capture",
+    "Undersensing",
+    "Runaway pacemaker",
+    "Oversensing"
+   ],
+   "answer": 3,
+   "why": "Oversensing causes the generator to inhibit output because it misreads noncardiac signals as intrinsic activity. Undersensing produces the opposite finding, with extra spikes rather than missing ones.",
+   "difficulty": 3
+  },
+  {
+   "id": "nha-cet-q0254",
+   "section": "interp",
+   "q": "Horizontal or downsloping ST segment depression of 1 mm or more measured at the J point most suggests:",
+   "choices": [
+    "Myocardial ischemia",
+    "Acute transmural injury",
+    "Old completed infarction",
+    "Normal early repolarization"
+   ],
+   "answer": 0,
+   "why": "ST depression of at least 1 mm reflects inadequate perfusion, that is, ischemia. Acute injury is indicated by ST elevation, not depression.",
+   "difficulty": 2
+  },
+  {
+   "id": "nha-cet-q0255",
+   "section": "interp",
+   "q": "Which finding meets the criterion for acute myocardial injury in the precordial leads?",
+   "choices": [
+    "ST elevation of 0.5 mm in V2 alone",
+    "ST elevation of 2 mm or more in two contiguous precordial leads",
+    "T wave inversion in V1 only",
+    "ST depression of 3 mm in V4"
+   ],
+   "answer": 1,
+   "why": "Precordial criteria require at least 2 mm of ST elevation in two contiguous leads, while limb leads require 1 mm in two contiguous leads. An isolated 0.5 mm elevation in one lead does not meet any injury threshold.",
+   "difficulty": 3
+  },
+  {
+   "id": "nha-cet-q0256",
+   "section": "interp",
+   "q": "A patient shows ST elevation in leads II, III, and aVF with reciprocal ST depression in I and aVL. The infarct location and usual culprit artery are:",
+   "choices": [
+    "Anterior wall, left anterior descending artery",
+    "Inferior wall, right coronary artery",
+    "Lateral wall, circumflex artery",
+    "Septal wall, left main artery"
+   ],
+   "answer": 1,
+   "why": "Leads II, III, and aVF view the inferior wall, which is supplied by the right coronary artery in most people, and reciprocal depression appears in the opposite lateral leads. The left anterior descending artery supplies the anterior and septal walls seen in V1 through V4, not the inferior leads.",
+   "difficulty": 2
+  }
+ ]
+}

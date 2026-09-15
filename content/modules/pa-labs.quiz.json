@@ -1,0 +1,1276 @@
+{
+  "schema": 1,
+  "extends": "pa-labs",
+  "checks": {
+    "pa-labs-l01": [
+      {
+        "q": "A comprehensive panel of 20 independent tests is run as a screen on a completely healthy person. Using only the definition of a reference range, what is the approximate chance that at least one result falls outside its range?",
+        "choices": [
+          "About 5%",
+          "About 25%",
+          "About 64%",
+          "About 100%"
+        ],
+        "answer": 2,
+        "why": "Each test has a 1 in 20 (5%) chance of falling outside by definition, so the chance all 20 are normal is 0.95^20, about 36%. That leaves roughly 64% chance of at least one abnormal result. This is why shotgun panels on low-probability patients generate chases, not answers."
+      },
+      {
+        "q": "A chemistry specimen is drawn immediately after a lavender-top EDTA tube, with carryover into the chemistry tube. Which result pattern does that produce?",
+        "choices": [
+          "High potassium with low calcium",
+          "Low potassium with high calcium",
+          "High sodium with low chloride",
+          "No change, because EDTA is inert"
+        ],
+        "answer": 0,
+        "why": "EDTA is a potassium salt that also chelates calcium, so carryover falsely raises potassium and falsely lowers calcium. That is exactly why order of draw puts lavender after the chemistry tubes. EDTA is not inert; chelation is its whole purpose."
+      }
+    ],
+    "pa-labs-l02": [
+      {
+        "q": "A patient is transfused 2 units of packed red cells for a hemoglobin of 6.4 g/dL. If nothing else changes, what hemoglobin and hematocrit do you expect afterward?",
+        "choices": [
+          "About 7.4 g/dL and Hct 22%",
+          "About 8.4 g/dL and Hct 25%",
+          "About 10.4 g/dL and Hct 31%",
+          "About 12.4 g/dL and Hct 37%"
+        ],
+        "answer": 1,
+        "why": "One unit raises hemoglobin about 1 g/dL and hematocrit about 3%, so 2 units move 6.4 to roughly 8.4 g/dL with a hematocrit near 25% (the rule of 3: Hct is about 3x Hgb). The higher options overestimate the yield of a unit."
+      },
+      {
+        "q": "A previously well 30-year-old has a total WBC of 9,800 per microliter but 18% bands and looks unwell with a fever. What does this combination mean?",
+        "choices": [
+          "Normal white count excludes serious bacterial infection",
+          "Bandemia indicates significant bacterial infection despite a normal total WBC",
+          "The differential is unreliable when the total is normal",
+          "Bands above 10% is a benign finding in young adults"
+        ],
+        "answer": 1,
+        "why": "Bands above 10% is bandemia and points at serious bacterial infection; it can occur with a totally normal total count because the marrow is shipping immature cells as fast as they are consumed. A normal WBC and a normal temperature never exclude sepsis."
+      }
+    ],
+    "pa-labs-l03": [
+      {
+        "q": "A patient with chronic alcohol use has Na 138, Cl 96, HCO3 20, and is vomiting. What is the anion gap, and does it fit a simple vomiting picture?",
+        "choices": [
+          "Gap 22, consistent with vomiting alone",
+          "Gap 22, so an added acid such as ketones or lactate is present",
+          "Gap 10, so vomiting alone explains everything",
+          "Gap 10, which is wide and indicates MUDPILES"
+        ],
+        "answer": 1,
+        "why": "Gap = 138 - (96 + 20) = 22 mEq/L, well above the normal 8-12. Vomiting alone causes a hypochloremic metabolic alkalosis with a normal gap, so a gap of 22 means unmeasured acid (alcoholic ketoacidosis or lactate) has been added on top."
+      },
+      {
+        "q": "A seizing patient has a sodium of 116 mEq/L. Hypertonic 3% saline is started. What is the ceiling on correction over the first 24 hours and why?",
+        "choices": [
+          "No ceiling, correct to 135 as fast as possible",
+          "About 8 mEq/L per 24 hours, to avoid osmotic demyelination",
+          "About 20 mEq/L per 24 hours, to avoid cerebral edema",
+          "About 2 mEq/L per 24 hours, to avoid seizures"
+        ],
+        "answer": 1,
+        "why": "The initial bolus stops the seizure, but total correction must stay near 8 mEq/L per 24 hours because pulling water out of brain cells too fast causes osmotic demyelination. Correcting to normal rapidly is the classic harm; 2 mEq/L per day is needlessly slow in a seizing patient."
+      }
+    ],
+    "pa-labs-l04": [
+      {
+        "q": "A 22-year-old is brought in 6 hours after an intentional overdose. AST 5,600, ALT 6,100, total bilirubin 1.1 mg/dL, INR 2.3. Which ingestion does this pattern fit best?",
+        "choices": [
+          "Acetaminophen",
+          "Chronic alcohol use",
+          "Gallstone obstruction",
+          "Bone metastases"
+        ],
+        "answer": 0,
+        "why": "Transaminases in the thousands with a nearly normal early bilirubin and a rising INR is the acetaminophen signature. Alcohol gives an AST:ALT above 2:1 with both usually under 300. Gallstones give a cholestatic pattern led by alkaline phosphatase, and bone disease raises alkaline phosphatase with a normal GGT."
+      },
+      {
+        "q": "A patient with epigastric pain radiating to the back has a lipase of 190 U/L when the lab's upper limit of normal is 60 U/L. Does this meet the diagnostic threshold for acute pancreatitis?",
+        "choices": [
+          "No, it must exceed 1,000 U/L",
+          "No, amylase must also be elevated",
+          "Yes, it is above 3x the upper limit with typical pain",
+          "Yes, but only if imaging confirms it"
+        ],
+        "answer": 2,
+        "why": "3 x 60 = 180, so 190 clears the threshold, and lipase at or above 3x normal with typical pain establishes acute pancreatitis without imaging. There is no 1,000 U/L rule, and amylase adds nothing because it is far less specific."
+      }
+    ],
+    "pa-labs-l05": [
+      {
+        "q": "A 46-year-old woman with 5 hours of chest pain has an hs-troponin of 22 ng/L. The lab reports 99th percentile cutoffs of 34 ng/L for men and 16 ng/L for women. How should this be read?",
+        "choices": [
+          "Normal, because it is under 34 ng/L",
+          "Elevated for this patient, because the female cutoff is 16 ng/L",
+          "Uninterpretable without a CK-MB",
+          "Diagnostic of a type 1 myocardial infarction"
+        ],
+        "answer": 1,
+        "why": "The 99th percentile is sex-specific, so 22 ng/L is above the female cutoff of 16 and counts as myocardial injury. Using the male cutoff is the classic trap. It still is not a diagnosis of infarction by itself; the story, the ECG, and the delta decide that, and CK-MB adds nothing."
+      },
+      {
+        "q": "A patient found down for many hours has a CK of 62,000 U/L. Which single intervention most reduces the risk of acute kidney injury?",
+        "choices": [
+          "Loop diuretic to force urine output",
+          "Hemodialysis on arrival",
+          "Isotonic crystalloid targeting 200-300 mL/h of urine",
+          "Bicarbonate infusion to alkalinize the serum"
+        ],
+        "answer": 2,
+        "why": "Myoglobin is toxic to tubules, and aggressive isotonic fluid with a urine output target of 200-300 mL/h is the treatment that prevents AKI. Diuretics without volume repletion worsen tubular injury, dialysis is a rescue not a preventive, and alkalinization is adjunctive at best."
+      }
+    ],
+    "pa-labs-l06": [
+      {
+        "q": "A 62-year-old with pleuritic chest pain has a Wells PE score of 6. The D-dimer is 320 ng/mL FEU. What should happen next?",
+        "choices": [
+          "Discharge, because the D-dimer is negative",
+          "Repeat the D-dimer in 6 hours",
+          "Proceed to CT pulmonary angiography regardless of the D-dimer",
+          "Apply PERC to clear the patient"
+        ],
+        "answer": 2,
+        "why": "A Wells score above 4 means PE is likely, and in high pretest probability a negative D-dimer does not lower the post-test probability enough to be safe, so imaging proceeds. PERC only applies to patients already judged low risk, and repeating the D-dimer answers nothing."
+      },
+      {
+        "q": "A patient on warfarin for atrial fibrillation arrives with a large intracerebral hemorrhage and an INR of 3.2. What is the correct reversal?",
+        "choices": [
+          "Fresh frozen plasma alone over several hours",
+          "Vitamin K 10 mg IV plus four-factor prothrombin complex concentrate",
+          "Protamine sulfate",
+          "Platelet transfusion"
+        ],
+        "answer": 1,
+        "why": "Life-threatening bleeding on warfarin is reversed with vitamin K 10 mg IV (durable but slow) plus 4-factor PCC (immediate factor replacement). Protamine reverses heparin, not warfarin, and platelets do not correct a factor deficiency. Plasma alone is slower and volume-heavy."
+      }
+    ],
+    "pa-labs-l07": [
+      {
+        "q": "A patient in diabetic ketoacidosis has HCO3 8 mEq/L and a measured PaCO2 of 32 mmHg. Using Winter's formula, what does this mean?",
+        "choices": [
+          "Compensation is appropriate",
+          "There is an added respiratory acidosis, suggesting fatigue or an airway problem",
+          "There is an added respiratory alkalosis",
+          "Winter's formula does not apply to DKA"
+        ],
+        "answer": 1,
+        "why": "Expected PaCO2 = 1.5 x 8 + 8 = 20, plus or minus 2. A measured 32 is far higher than expected, meaning the patient is not blowing off as much CO2 as they should, that is, a superimposed respiratory acidosis from tiring out. A lower than expected value would be an added alkalosis."
+      },
+      {
+        "q": "A patient with an opioid overdose on room air has PaO2 58 mmHg and PaCO2 72 mmHg. Calculate the A-a gradient and say what it tells you.",
+        "choices": [
+          "Gradient about 2, so the lung is fine and this is pure hypoventilation",
+          "Gradient about 32, so there is a lung problem such as pneumonia",
+          "Gradient about 60, indicating ARDS",
+          "The gradient cannot be estimated without an FiO2 measurement"
+        ],
+        "answer": 0,
+        "why": "150 - (72 / 0.8) - 58 = 150 - 90 - 58 = 2. A normal gradient with hypoxemia means the alveoli simply are not being ventilated, which is hypoventilation from the opioid. A widened gradient would point at pneumonia, PE, edema, or ARDS. On room air the FiO2 is known, so the shortcut applies."
+      }
+    ],
+    "pa-labs-l08": [
+      {
+        "q": "A woman has a serum hCG of 1,150 mIU/mL, mild pelvic pain, and a transvaginal ultrasound that shows no intrauterine pregnancy. How should this be handled?",
+        "choices": [
+          "Ectopic pregnancy is excluded by the low hCG",
+          "This is diagnostic of ectopic pregnancy",
+          "Below the discriminatory zone, so it is indeterminate and needs a repeat hCG in 48 hours",
+          "A urine hCG should be sent to confirm"
+        ],
+        "answer": 2,
+        "why": "The discriminatory zone is near 3,500 mIU/mL, so at 1,150 an empty uterus is expected and proves nothing. A normal intrauterine pregnancy roughly doubles in 48 hours, so serial values sort it out. A value below the zone neither excludes nor diagnoses ectopic, and a urine test adds nothing once a quantitative serum value exists."
+      },
+      {
+        "q": "A patient ingested acetaminophen 2 hours ago. A level drawn now is 90 mcg/mL. What is the correct interpretation?",
+        "choices": [
+          "Below the treatment line, so no treatment is needed",
+          "Too early to plot; redraw at 4 hours post-ingestion",
+          "Start N-acetylcysteine immediately and stop after the second level",
+          "The Rumack-Matthew nomogram uses urine levels"
+        ],
+        "answer": 1,
+        "why": "The Rumack-Matthew nomogram is only valid from 4 hours post-ingestion, when absorption is complete; the treatment line starts at 150 mcg/mL at 4 hours. A 2-hour level is uninterpretable and a falsely reassuring reading is the trap. The nomogram uses serum levels."
+      }
+    ],
+    "pa-labs-l09": [
+      {
+        "q": "A septic patient has an initial lactate of 5.2 mmol/L. A repeat 3 hours later is 4.9 mmol/L. How is that change interpreted?",
+        "choices": [
+          "Adequate clearance, because the number fell",
+          "Inadequate clearance; the goal is more than a 10% fall on a repeat at 2-4 hours",
+          "Meaningless, because lactate is only rechecked at 24 hours",
+          "It proves the first lactate was a laboratory artifact"
+        ],
+        "answer": 1,
+        "why": "The bundle repeats lactate at 2-4 hours with a goal of more than 10% clearance. A fall from 5.2 to 4.9 is about 6%, which does not meet it, and persistent hyperlactatemia predicts worse outcomes. Any fall is not automatically enough, a 24-hour recheck is far too late, and nothing here suggests an artifact."
+      },
+      {
+        "q": "Blood cultures are ordered on a septic patient who is already hypotensive. How should the draw and antibiotics be sequenced?",
+        "choices": [
+          "Give antibiotics first, then culture once stable",
+          "Draw two sets from two sites with 10 mL per bottle, then give antibiotics within one hour",
+          "Draw one set of 5 mL and start antibiotics immediately",
+          "Delay antibiotics until the gram stain returns"
+        ],
+        "answer": 1,
+        "why": "Cultures go before antibiotics because a single dose can sterilize them, but they must not delay antibiotics past the one-hour target. Two sets from two sites with 10 mL per bottle maximizes yield, since volume is the biggest determinant. Waiting for the gram stain wastes the hour that matters most."
+      }
+    ],
+    "pa-labs-l10": [
+      {
+        "q": "A 68-year-old with flank pain and hematuria is suspected of having a ureteral stone. Which CT protocol is correct?",
+        "choices": [
+          "CT abdomen and pelvis with IV contrast",
+          "CT renal colic protocol without contrast",
+          "CTA abdomen with timed arterial contrast",
+          "MRI abdomen with gadolinium"
+        ],
+        "answer": 1,
+        "why": "Stones are dense enough to see without contrast, and contrast in the collecting system can actually obscure them, so renal colic protocol is non-contrast. IV contrast is for appendicitis, obstruction, and abscess; CTA is for vascular questions; MRI is slow and not first line for stones."
+      },
+      {
+        "q": "A 58-year-old struck her knee, cannot flex past 70 degrees, and has no patellar or fibular head tenderness. What do the Ottawa knee rules advise?",
+        "choices": [
+          "No imaging, since tenderness is absent",
+          "Image, because she is 55 or older and cannot flex to 90 degrees",
+          "No imaging unless she cannot bear weight for 6 steps",
+          "The rules do not apply over age 55"
+        ],
+        "answer": 1,
+        "why": "Ottawa knee is satisfied by any one criterion: age 55 or older, isolated patellar tenderness, fibular head tenderness, inability to flex to 90 degrees, or inability to take 4 steps. She meets two, so she gets imaged. Absent tenderness does not override the other criteria, and the step criterion is 4, not 6."
+      }
+    ],
+    "pa-labs-l11": [
+      {
+        "q": "A hypertensive 48-year-old on no diuretic has a potassium of 2.9 mEq/L. Which screening test best addresses the likely cause?",
+        "choices": [
+          "Plasma free metanephrines",
+          "Aldosterone-to-renin ratio",
+          "1 mg overnight dexamethasone suppression test",
+          "Cosyntropin stimulation test"
+        ],
+        "answer": 1,
+        "why": "Hypertension with unexplained hypokalemia is the classic presentation of primary aldosteronism, screened by an aldosterone-to-renin ratio showing high aldosterone with suppressed renin. Metanephrines screen pheochromocytoma, dexamethasone suppression screens Cushing syndrome, and cosyntropin tests adrenal insufficiency."
+      },
+      {
+        "q": "A patient started on amiodarone six months ago now has an abnormal thyroid panel. Which statement is correct?",
+        "choices": [
+          "Amiodarone only causes hypothyroidism",
+          "Amiodarone only causes hyperthyroidism",
+          "Amiodarone can cause either, and it carries a very large iodine load",
+          "Amiodarone does not affect thyroid testing"
+        ],
+        "answer": 2,
+        "why": "Amiodarone contains enormous amounts of iodine and can cause both hypothyroidism and hyperthyroidism, which is why thyroid function is monitored on the drug. Assuming one direction only is how the other gets missed."
+      }
+    ],
+    "pa-labs-l12": [
+      {
+        "q": "A patient has ALT 320 U/L (upper limit 40) and alkaline phosphatase 180 U/L (upper limit 120). Calculate the R ratio and name the pattern.",
+        "choices": [
+          "R about 5.3, hepatocellular",
+          "R about 1.8, cholestatic",
+          "R about 0.2, cholestatic",
+          "R about 2.5, mixed"
+        ],
+        "answer": 0,
+        "why": "R = (320/40) / (180/120) = 8 / 1.5 = 5.3. Above 5 is hepatocellular, below 2 cholestatic, and 2-5 mixed. The point of the ratio is to compare each enzyme to its own ceiling rather than comparing raw numbers on different scales."
+      },
+      {
+        "q": "A patient's hepatitis B panel shows surface antigen negative, surface antibody positive, and core antibody negative. What does this mean?",
+        "choices": [
+          "Acute infection",
+          "Resolved past infection",
+          "Immunity from vaccination",
+          "Chronic carrier state"
+        ],
+        "answer": 2,
+        "why": "Surface antibody alone, with no core antibody, means the immune system saw only the vaccine antigen, so this is vaccine immunity. Resolved past infection shows core IgG plus surface antibody, acute infection shows core IgM, and a chronic carrier is surface antigen positive."
+      }
+    ],
+    "pa-labs-l13": [
+      {
+        "q": "A patient has a PT of 19 seconds with a normal aPTT and is not on any anticoagulant. Which explanation fits the pattern best?",
+        "choices": [
+          "Hemophilia A",
+          "Factor VII deficiency or early vitamin K deficiency",
+          "Lupus anticoagulant",
+          "Factor XIII deficiency"
+        ],
+        "answer": 1,
+        "why": "A long PT with a normal aPTT isolates the extrinsic pathway, which means factor VII: early warfarin effect, early liver disease, or vitamin K deficiency. Hemophilia and lupus anticoagulant prolong the aPTT, and factor XIII deficiency leaves both tests normal."
+      },
+      {
+        "q": "A sample drawn through a central line returns an aPTT of 180 seconds with a normal PT and a very long thrombin time in a patient who is bleeding from nowhere. What is the most likely explanation?",
+        "choices": [
+          "Disseminated intravascular coagulation",
+          "Heparin contamination from the line",
+          "Dabigatran overdose",
+          "Severe fibrinogen deficiency"
+        ],
+        "answer": 1,
+        "why": "Heparin from a flushed line produces a strikingly long aPTT with a normal PT and a very long thrombin time, and it resolves on a clean peripheral redraw. DIC would also prolong the PT and consume fibrinogen, and a patient not on dabigatran has none to overdose on."
+      }
+    ],
+    "pa-labs-l14": [
+      {
+        "q": "A patient with hematuria has urine microscopy showing dysmorphic red cells with ring-shaped acanthocytes. Where is the bleeding coming from?",
+        "choices": [
+          "Bladder tumor",
+          "Kidney stone",
+          "The glomerulus",
+          "Catheter trauma"
+        ],
+        "answer": 2,
+        "why": "Red cells deformed squeezing through a damaged glomerulus become dysmorphic, and acanthocytes are the most specific form. Uniform round red cells point below the glomerulus: a stone, a tumor, or a catheter."
+      },
+      {
+        "q": "A patient has 30 white cells per high power field with a negative urine culture and persistent dysuria. What does this pattern describe and what belongs on the differential?",
+        "choices": [
+          "Contamination; recollect only",
+          "Sterile pyuria; consider chlamydia or gonorrhea urethritis, tuberculosis, interstitial nephritis, or stones",
+          "A normal finding requiring no action",
+          "Proven bacterial cystitis needing antibiotics"
+        ],
+        "answer": 1,
+        "why": "White cells with a negative culture is sterile pyuria, a real finding with a real differential: partially treated infection, urethritis, tuberculosis, interstitial nephritis, stones, and inflammation of an adjacent organ. Dismissing it as contamination or normal misses all of those."
+      }
+    ],
+    "pa-labs-l15": [
+      {
+        "q": "A healthy 8-year-old has an alkaline phosphatase of 380 U/L with normal transaminases, normal bilirubin, and no symptoms. What is the interpretation?",
+        "choices": [
+          "Cholestatic liver disease",
+          "Normal bone turnover from growth",
+          "Paget disease",
+          "A hemolyzed specimen"
+        ],
+        "answer": 1,
+        "why": "Alkaline phosphatase runs up to 3-5 times the adult limit in a growing child because it comes from bone at the growth plates. Reading it against adult ranges triggers a liver workup on a normal child. Cholestasis would raise the direct bilirubin and GGT."
+      },
+      {
+        "q": "A 40-day-old with a fever of 38.5 C looks well. Which results best stratify risk at this age?",
+        "choices": [
+          "The total white blood cell count alone",
+          "Procalcitonin, C-reactive protein, and the absolute neutrophil count, with a urine specimen",
+          "Clinical appearance alone",
+          "A chest radiograph"
+        ],
+        "answer": 1,
+        "why": "From 29 to 60 days, risk is stratified with inflammatory markers rather than the white count alone: procalcitonin above 0.5 ng/mL, CRP above 20 mg/L, or an ANC above roughly 4,000-5,200. A normal white count and a reassuring appearance do not exclude serious bacterial infection in an infant."
+      }
+    ],
+    "pa-labs-l16": [
+      {
+        "q": "An ammonia level and a blood gas are drawn at the same time on a busy unit. What handling do they require?",
+        "choices": [
+          "Both are stable at room temperature for 2 hours",
+          "Ammonia goes on ice immediately; the gas is analyzed within about 15 minutes or kept on ice",
+          "Both must be refrigerated for 24 hours before analysis",
+          "Neither has a stability window"
+        ],
+        "answer": 1,
+        "why": "Ammonia rises in a warm tube and goes on ice to the lab immediately; a blood gas is analyzed within roughly 15 minutes or iced. Ignoring stability windows produces confident wrong answers that someone will act on."
+      },
+      {
+        "q": "A urine culture is ordered on an asymptomatic nursing home resident whose urine looks cloudy. What is the problem with this order?",
+        "choices": [
+          "Nothing; cloudy urine warrants a culture",
+          "Asymptomatic bacteriuria is treated only in pregnancy and before urologic procedures, so the culture invites unnecessary antibiotics",
+          "A urine culture cannot be done without symptoms",
+          "A dipstick should be sent instead"
+        ],
+        "answer": 1,
+        "why": "Choosing Wisely advises against urine cultures in patients without urinary symptoms, because asymptomatic bacteriuria is common and is treated only in pregnancy and before urologic procedures. Appearance and odor are not symptoms, and a positive result then drives antibiotics that cause harm without benefit."
+      }
+    ],
+    "pa-labs-l17": [
+      {
+        "q": "A head CT report notes effacement of the basal and quadrigeminal cisterns. What does that finding mean?",
+        "choices": [
+          "Normal variant in older patients",
+          "Intracranial pressure is high and herniation is near",
+          "Early ischemic stroke",
+          "Artifact from motion"
+        ],
+        "answer": 1,
+        "why": "The basal, suprasellar, and quadrigeminal cisterns should be visible black cerebrospinal fluid spaces; when squeezed shut, pressure is high and herniation is close. Early infarct shows as loss of the gray-white border, not cistern effacement."
+      },
+      {
+        "q": "An overnight preliminary read says no acute intracranial abnormality, and the attending final report the next morning describes a small subdural. How should this be handled?",
+        "choices": [
+          "The preliminary read governs because it was first",
+          "The final report is the document that counts, and discrepancy callbacks are a formal process",
+          "The two reports are legally identical",
+          "The patient should be rescanned to break the tie"
+        ],
+        "answer": 1,
+        "why": "You act on the preliminary read in real time, but the final attending report is the document that counts, and departments have a formal discrepancy callback process precisely because the two disagree often enough. Addenda can also appear hours later."
+      }
+    ],
+    "pa-labs-l18": [
+      {
+        "q": "A bedside ultrasound of the abdominal aorta measures 3.6 cm outer wall to outer wall. What does this represent?",
+        "choices": [
+          "A normal aorta",
+          "An aneurysm",
+          "A dissection",
+          "An artifact from bowel gas"
+        ],
+        "answer": 1,
+        "why": "An outer-wall-to-outer-wall diameter above 3 cm defines an abdominal aortic aneurysm. Measuring inner wall to inner wall underestimates the size because it excludes mural thrombus. Dissection requires a visualized flap, and bowel gas obscures rather than enlarges."
+      },
+      {
+        "q": "An ultrasound of the right upper quadrant shows a bright curved structure with a clean black stripe extending behind it. What is that stripe, and what does it indicate?",
+        "choices": [
+          "Posterior acoustic enhancement, indicating fluid",
+          "Acoustic shadowing, indicating a stone or bone blocking the beam",
+          "A B-line, indicating interstitial fluid",
+          "An A-line, indicating normal lung"
+        ],
+        "answer": 1,
+        "why": "Shadowing is the dark region behind something that blocked the beam, such as a gallstone. Posterior acoustic enhancement is the opposite, a bright area behind a fluid-filled structure. A-lines and B-lines are lung artifacts, not abdominal ones."
+      }
+    ],
+    "pa-labs-l19": [
+      {
+        "q": "A patient on lisinopril, spironolactone, and trimethoprim-sulfamethoxazole has a potassium of 6.8 mEq/L, a creatinine of 2.1 from a baseline of 1.0, and peaked T waves. What is the correct order of action?",
+        "choices": [
+          "Stop the drugs and recheck in 6 hours",
+          "Calcium gluconate, then insulin with dextrose and albuterol, then stop all three drugs",
+          "Insulin with dextrose first, then calcium if the ECG worsens",
+          "Dialysis before any medication"
+        ],
+        "answer": 1,
+        "why": "With ECG changes, calcium stabilizes the membrane first, then insulin with dextrose and albuterol shift potassium into cells, then the removal step and stopping every contributing drug. All three of these agents raise potassium, which is why they stacked. Waiting 6 hours with peaked T waves is how a patient arrests."
+      },
+      {
+        "q": "A febrile jaundiced patient has ALT 95 U/L, alkaline phosphatase 640 U/L, direct bilirubin 7.4 mg/dL, and ultrasound showing dilated ducts with a stone. What does the combination demand beyond antibiotics?",
+        "choices": [
+          "Observation and repeat labs in 24 hours",
+          "Biliary drainage",
+          "Liver biopsy",
+          "N-acetylcysteine"
+        ],
+        "answer": 1,
+        "why": "A cholestatic pattern with fever and an obstructing stone is cholangitis, and an obstructed infected system does not clear with antibiotics alone; it needs drainage. Biopsy answers a parenchymal question and N-acetylcysteine treats acetaminophen, neither of which is the problem here."
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "id": "pa-labs-q083",
+      "q": "A postoperative patient's potassium returns at 6.8 mEq/L. The ECG is normal, the patient is asymptomatic, and the specimen is noted as grossly hemolyzed. The previous potassium 6 hours ago was 4.1 mEq/L. What is the best next action?",
+      "choices": [
+        "Redraw the specimen without a tourniquet and repeat the potassium",
+        "Give calcium gluconate 1 g IV immediately",
+        "Start insulin 10 units with 25 g dextrose",
+        "Order dialysis"
+      ],
+      "answer": 0,
+      "why": "Hemolysis is the number one cause of fake hyperkalemia, and this result also trips a delta check against a normal value 6 hours earlier with no ECG changes. Suspect the specimen before the physiology and recollect. Treating an artifact with calcium, insulin, or dialysis exposes a patient with normal potassium to real harm.",
+      "lesson": "pa-labs-l01",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-labs-q084",
+      "q": "A technologist telephones a licensed provider with a potassium of 6.5 mEq/L. Which action completes the critical value process correctly?",
+      "choices": [
+        "The provider documents the value in the chart at the end of the shift",
+        "The provider repeats the value back and the read-back is documented with the time and both names",
+        "The lab faxes a written confirmation within 24 hours",
+        "The result is posted to the chart and flagged in red"
+      ],
+      "answer": 1,
+      "why": "A critical value requires a live call to a licensed provider with a read-back documented along with the time and both names. Flagging in the chart, faxing, or delayed charting are exactly the passive steps critical value policy exists to prevent.",
+      "lesson": "pa-labs-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-labs-q085",
+      "q": "A point-of-care glucose meter reads 42 mg/dL in a hypotensive, cold, poorly perfused patient who is awake and conversant. What is the best interpretation?",
+      "choices": [
+        "Ignore the value entirely because POC testing is unreliable",
+        "Repeat the POC test on the same finger to confirm",
+        "Treat for hypoglycemia and confirm with a laboratory glucose",
+        "Accept the value as definitive and start a dextrose infusion without further testing"
+      ],
+      "answer": 2,
+      "why": "POC glucose meters are least accurate at the extremes and in shocked, poorly perfused patients, so a critical POC value gets confirmed by a lab draw. But you do not withhold treatment while waiting; ignoring it is unsafe, repeating on the same poorly perfused finger repeats the error, and treating without confirmation misses an artifact.",
+      "lesson": "pa-labs-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-labs-q086",
+      "q": "A clinician orders a D-dimer on a 30-year-old with atypical chest pain whose pretest probability of pulmonary embolism is near zero. Which consequence best explains why this is a mistake?",
+      "choices": [
+        "The test is insensitive, so a clot will be missed",
+        "The D-dimer will always be negative in young patients",
+        "The test cannot be interpreted below age 50",
+        "Most positives will be false positives, driving a CT scan and its downstream harms"
+      ],
+      "answer": 3,
+      "why": "D-dimer is about 95-98% sensitive but only about 40% specific, so at near-zero pretest probability nearly every positive is false, and each one buys a scan, a consult, and sometimes a needle. It is highly sensitive, not insensitive, and age affects the cutoff above 50, not interpretability.",
+      "lesson": "pa-labs-l01",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-labs-q087",
+      "q": "A 54-year-old on day 12 of chemotherapy has a temperature of 38.7 C. WBC is 1,000 per microliter with 40% segs and 10% bands. Which statement is correct?",
+      "choices": [
+        "ANC is 500, which is severe neutropenia, and antibiotics are needed within 60 minutes",
+        "ANC is 400, which is moderate neutropenia, and antibiotics can wait for cultures to grow",
+        "ANC is 1,000, which is normal, so observation is fine",
+        "A rectal temperature should be obtained to confirm the fever"
+      ],
+      "answer": 0,
+      "why": "ANC = 1,000 x (40 + 10) / 100 = 500, which is the severe neutropenia threshold. Fever with an ANC at or below 500 is febrile neutropenia: cultures then broad-spectrum antibiotics within 60 minutes. Rectal temperatures and exams are avoided because the mucosa is a doorway for gut organisms.",
+      "lesson": "pa-labs-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-labs-q088",
+      "q": "A 44-year-old woman with heavy menses has Hgb 9.8 g/dL, MCV 72 fL, and a normal white count. Which workup follows most logically from the CBC?",
+      "choices": [
+        "B12 and folate levels",
+        "Iron studies, with evaluation for a source of blood loss",
+        "Bone marrow biopsy",
+        "Thyroid function testing"
+      ],
+      "answer": 1,
+      "why": "An MCV under 80 fL is microcytic, and the common causes are iron deficiency, thalassemia, chronic disease, and lead. With a clear blood loss history, iron studies plus a source search is the next move. B12, folate, hypothyroidism, and alcohol cause a macrocytic picture with MCV over 100, and marrow biopsy is not a first step.",
+      "lesson": "pa-labs-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-labs-q089",
+      "q": "A patient bleeding from a stab wound arrives 15 minutes after injury with a hemoglobin of 13.8 g/dL and a heart rate of 128. What does the hemoglobin tell you?",
+      "choices": [
+        "Significant hemorrhage is excluded",
+        "The result is falsely elevated by hemolysis",
+        "It is uninformative early, because whole blood loss does not change concentration until fluid shifts in",
+        "The specimen was likely drawn above a running line"
+      ],
+      "answer": 2,
+      "why": "In acute hemorrhage you lose whole blood, so the concentration is unchanged until interstitial fluid shifts in or crystalloid is given. A normal hemoglobin never rules out active bleeding. Hemolysis raises potassium, LDH, and AST rather than hemoglobin, and a line draw dilutes rather than concentrates.",
+      "lesson": "pa-labs-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-labs-q090",
+      "q": "A patient scheduled for an elective lumbar puncture has a platelet count of 38,000 per microliter with no bleeding and no fever. What is the appropriate handling?",
+      "choices": [
+        "Proceed, because the count is above 20,000",
+        "Transfuse prophylactically because the count is below 50,000",
+        "Proceed only if the INR is normal",
+        "Cancel the elective procedure; the count is below the 50,000 procedural threshold"
+      ],
+      "answer": 3,
+      "why": "Below 50,000 elective procedures are cancelled and bleeding with trauma is expected. Prophylactic transfusion is reserved for counts under 10,000, or under 20,000 with fever or bleeding, so transfusing at 38,000 for an elective case exposes the patient to transfusion risk for nothing. A normal INR does not offset thrombocytopenia.",
+      "lesson": "pa-labs-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-labs-q091",
+      "q": "A 24-year-old with nausea and Kussmaul respirations has Na 134, Cl 96, HCO3 8, glucose 520 mg/dL. What is the anion gap and what does the low bicarbonate indicate?",
+      "choices": [
+        "Gap 30, wide, consistent with diabetic ketoacidosis",
+        "Gap 30, normal, consistent with diarrhea",
+        "Gap 12, normal, consistent with renal tubular acidosis",
+        "Gap 42, wide, consistent with respiratory acidosis"
+      ],
+      "answer": 0,
+      "why": "Gap = 134 - (96 + 8) = 30, far above the normal 8-12. Ketoacids consume bicarbonate and take its place, widening the gap. Diarrhea and renal tubular acidosis cause normal gap acidosis with a high chloride, and respiratory acidosis raises rather than consumes bicarbonate.",
+      "lesson": "pa-labs-l03",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-labs-q092",
+      "q": "A dialysis patient has a potassium of 7.4 mEq/L with a widening QRS. Which statement about calcium gluconate 1 g IV is correct?",
+      "choices": [
+        "It rapidly lowers the serum potassium",
+        "It stabilizes the myocardial membrane but does not lower potassium",
+        "It shifts potassium into cells over 30 minutes",
+        "It removes potassium from the body through the gut"
+      ],
+      "answer": 1,
+      "why": "Calcium raises the threshold potential and protects the heart within minutes, buying time, but the serum potassium is unchanged. Insulin with dextrose and albuterol shift potassium into cells, and binders or dialysis remove it. Believing calcium fixed the problem is how patients arrest after the calcium wears off.",
+      "lesson": "pa-labs-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-labs-q093",
+      "q": "A 74-year-old with black stools has BUN 78 mg/dL and creatinine 1.1 mg/dL. What does the BUN:creatinine ratio indicate?",
+      "choices": [
+        "Intrinsic renal failure from acute tubular necrosis",
+        "Post-renal obstruction",
+        "A pre-renal or gastrointestinal blood picture, with a ratio above 20:1",
+        "A laboratory error, since BUN cannot exceed 70"
+      ],
+      "answer": 2,
+      "why": "The ratio here is about 71:1, far above 20:1, which means the kidney is holding onto water and, in this case, digesting a protein load of blood in the gut. Intrinsic renal failure raises creatinine proportionally, keeping the ratio near 10-15:1, and there is no upper limit that makes 78 an error.",
+      "lesson": "pa-labs-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-labs-q094",
+      "q": "A cirrhotic patient has a total calcium of 6.9 mg/dL with an albumin of 1.5 g/dL and no tetany or ECG changes. What is the corrected calcium and what does it mean?",
+      "choices": [
+        "6.9 mg/dL; true severe hypocalcemia requiring IV calcium",
+        "7.5 mg/dL; mild hypocalcemia needing oral replacement",
+        "10.1 mg/dL; hypercalcemia requiring fluids",
+        "8.9 mg/dL; the active ionized fraction is likely normal"
+      ],
+      "answer": 3,
+      "why": "Corrected calcium = 6.9 + 0.8 x (4.0 - 1.5) = 6.9 + 2.0 = 8.9 mg/dL, which is within the normal 8.5-10.5 range and matches the absence of symptoms. Half of calcium rides on albumin, so a low albumin drags the total down while the ionized fraction is fine. Treating the uncorrected number is the trap.",
+      "lesson": "pa-labs-l03",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-labs-q095",
+      "q": "A 40-year-old has AST 90 U/L with a normal ALT, normal alkaline phosphatase, and normal bilirubin after an intense workout and a syncopal event with a witnessed seizure. What should be checked before blaming the liver?",
+      "choices": [
+        "Creatine kinase",
+        "Ammonia",
+        "GGT",
+        "Direct bilirubin"
+      ],
+      "answer": 0,
+      "why": "AST is also found in skeletal muscle and heart, so an isolated AST rise after a workout, a seizure, or rhabdomyolysis is muscle until a CK says otherwise. GGT is for sorting a high alkaline phosphatase, ammonia is for encephalopathy, and the bilirubin here is already normal.",
+      "lesson": "pa-labs-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-labs-q096",
+      "q": "A patient has alkaline phosphatase 520 U/L, GGT 310 U/L, direct bilirubin 5.1 mg/dL, AST 65, ALT 70. Which pattern is this and where is the lesion?",
+      "choices": [
+        "Hepatocellular; hepatocytes are dying",
+        "Cholestatic; bile cannot get out",
+        "Muscle; AST is leaking from myocytes",
+        "Bone; alkaline phosphatase is from osteoblasts"
+      ],
+      "answer": 1,
+      "why": "Alkaline phosphatase and direct bilirubin lead with only modest transaminase rise, which is the cholestatic pattern of stones, tumors, strictures, or drug-induced cholestasis. The high GGT confirms a hepatobiliary rather than bone source; a bone source would show a high alkaline phosphatase with a normal GGT.",
+      "lesson": "pa-labs-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-labs-q097",
+      "q": "A patient with acute hepatitis has a normal albumin of 4.1 g/dL but an INR of 2.8. How do you reconcile these?",
+      "choices": [
+        "The INR is spurious because the albumin is normal",
+        "The patient must be on warfarin",
+        "Albumin has a half-life near 20 days, so it has not fallen yet; clotting factors have half-lives of hours, so the INR moves first",
+        "Albumin is not a synthetic marker"
+      ],
+      "answer": 2,
+      "why": "Albumin's roughly 20-day half-life makes it a slow, chronic marker that stays normal in acute hepatitis, while clotting factors turn over in hours, which is why INR is the synthetic function test inside the acute liver failure criteria. Warfarin is possible but not required to explain this, and albumin is indeed a synthetic marker, just a slow one.",
+      "lesson": "pa-labs-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-labs-q098",
+      "q": "Two patients have acute pancreatitis. Patient A has a lipase of 3,800 U/L with normal vitals. Patient B has a lipase of 410 U/L with a heart rate of 128, BUN 42 mg/dL, and a calcium of 6.8 mg/dL. Who is sicker and why?",
+      "choices": [
+        "Patient A, because the lipase is nearly ten times higher",
+        "Both are equal, since both meet the 3x threshold",
+        "Cannot be determined without amylase levels",
+        "Patient B, because severity comes from vitals, calcium, BUN, and organ failure, not lipase height"
+      ],
+      "answer": 3,
+      "why": "The height of the lipase does not predict severity. Patient B's tachycardia, high BUN, and hypocalcemia are the markers that actually track organ failure and mortality. Amylase adds nothing, and meeting the diagnostic threshold says nothing about severity.",
+      "lesson": "pa-labs-l04",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-labs-q099",
+      "q": "A 68-year-old with chronic kidney disease on dialysis has a baseline hs-troponin around 60 ng/L. Today, with 2 hours of crushing chest pain, the value is 240 ng/L and rises to 420 ng/L at 2 hours. How should this be read?",
+      "choices": [
+        "A large delta on top of a chronically elevated baseline indicates acute myocardial injury",
+        "Uninterpretable, because CKD patients always have elevated troponin",
+        "Normal for a dialysis patient",
+        "Diagnostic of a pulmonary embolism"
+      ],
+      "answer": 0,
+      "why": "CKD raises the baseline through reduced clearance, but that baseline is stable; a rising and falling pattern on top of it is acute injury and, with this story, an acute coronary syndrome. Calling it uninterpretable is the error that delays catheterization, and PE would need its own supporting features.",
+      "lesson": "pa-labs-l05",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-labs-q100",
+      "q": "A 22-year-old with a viral prodrome has chest pain and an hs-troponin of 2,400 ng/L with no coronary risk factors. Which cause is most likely?",
+      "choices": [
+        "Type 1 myocardial infarction from plaque rupture",
+        "Myocarditis",
+        "Chronic kidney disease",
+        "Analytical interference"
+      ],
+      "answer": 1,
+      "why": "Myocarditis often produces the highest troponins seen in young patients and follows a viral prodrome. Plaque rupture is uncommon at 22 with no risk factors, CKD gives a stable mild elevation rather than a value in the thousands, and assay interference would not fit the clinical picture.",
+      "lesson": "pa-labs-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-labs-q101",
+      "q": "A 61-year-old with dyspnea has an NT-proBNP of 700 pg/mL. Which additional piece of information most changes the interpretation?",
+      "choices": [
+        "The patient's sodium",
+        "The troponin value",
+        "The patient's age, because rule-in cutoffs are age-adjusted",
+        "The white blood cell count"
+      ],
+      "answer": 2,
+      "why": "NT-proBNP rule-in thresholds are age-adjusted: 450 under age 50, 900 from 50 to 75, and 1,800 above 75. At age 61 the relevant cutoff is 900, so 700 does not rule in acute heart failure, though under 300 would have ruled it out. Sodium, troponin, and WBC inform other questions.",
+      "lesson": "pa-labs-l05",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-labs-q102",
+      "q": "A patient with known heart failure on sacubitril-valsartan has a BNP of 620 pg/mL and looks euvolemic. What is the best interpretation?",
+      "choices": [
+        "Acute decompensation is confirmed",
+        "The BNP is falsely low because of obesity",
+        "BNP is unaffected by medications",
+        "Sacubitril raises BNP but not NT-proBNP, so BNP is unreliable for this patient"
+      ],
+      "answer": 3,
+      "why": "Sacubitril blocks neprilysin, which degrades BNP, so BNP rises on the drug while NT-proBNP does not; NT-proBNP is the right assay in these patients. Obesity lowers natriuretic peptides rather than raising them, and a number alone in a euvolemic patient does not confirm decompensation.",
+      "lesson": "pa-labs-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-labs-q103",
+      "q": "A 34-year-old woman with pleuritic chest pain is judged low risk. She is 34 years old, heart rate 88, room-air SpO2 97%, no leg swelling, no hemoptysis, no surgery or trauma in 4 weeks, no prior VTE, but she takes a combined oral contraceptive. What does PERC allow?",
+      "choices": [
+        "PERC fails on estrogen use, so a D-dimer is the next step",
+        "PERC is satisfied, so no further testing is needed",
+        "PERC fails, so proceed directly to CT pulmonary angiography",
+        "PERC does not apply to women"
+      ],
+      "answer": 0,
+      "why": "All eight PERC criteria must be negative to stop the workup, and estrogen use breaks the rule. With low or intermediate pretest probability, the next step is a D-dimer, not immediate imaging. PERC applies to any low-risk patient regardless of sex.",
+      "lesson": "pa-labs-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-labs-q104",
+      "q": "A patient on unfractionated heparin has an aPTT of 110 seconds when the target is 60-80 seconds. Which statement is correct?",
+      "choices": [
+        "The aPTT does not monitor unfractionated heparin",
+        "The infusion is supratherapeutic and the rate should be reduced",
+        "An INR should be used instead",
+        "An anti-Xa level is required before any adjustment"
+      ],
+      "answer": 1,
+      "why": "Unfractionated heparin is monitored by aPTT targeting roughly 1.5-2.5x control, commonly 60-80 seconds, so 110 is supratherapeutic and the rate comes down. INR follows warfarin. Anti-Xa is the test used for low molecular weight heparin when a level is genuinely needed.",
+      "lesson": "pa-labs-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-labs-q105",
+      "q": "A 44-year-old with a swollen right calf 4 cm larger than the left, recent hip surgery 6 weeks ago, and no alternative diagnosis has a Wells DVT score of 3. What is the correct next test?",
+      "choices": [
+        "D-dimer to rule out DVT",
+        "CT pulmonary angiography",
+        "Compression ultrasound of the leg",
+        "Repeat examination in 48 hours"
+      ],
+      "answer": 2,
+      "why": "A Wells DVT score of 2 or more means DVT is likely, and the next step is compression ultrasound. D-dimer is reserved for the unlikely group, CTPA answers a pulmonary rather than a leg question here, and watchful waiting risks propagation and embolization.",
+      "lesson": "pa-labs-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-labs-q106",
+      "q": "A patient with widespread bleeding and thrombosis has platelets 28,000, INR 2.4, aPTT 62 s, fibrinogen 85 mg/dL, D-dimer over 20,000, and schistocytes on the smear. Which single finding best separates DIC from chronic liver disease alone?",
+      "choices": [
+        "The prolonged INR",
+        "The prolonged aPTT",
+        "The thrombocytopenia",
+        "The low fibrinogen with schistocytes and a very high D-dimer"
+      ],
+      "answer": 3,
+      "why": "Liver disease also prolongs the INR and aPTT and can lower platelets through splenic sequestration, so those overlap. Consumption of fibrinogen with red cell fragmentation and a massively elevated D-dimer is the fingerprint of simultaneous clotting and lysis that defines DIC.",
+      "lesson": "pa-labs-l06",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-labs-q107",
+      "q": "A COPD patient has pH 7.36, PaCO2 62 mmHg, HCO3 34 mEq/L. What is the interpretation?",
+      "choices": [
+        "Chronic respiratory acidosis with renal compensation",
+        "Acute respiratory acidosis",
+        "Primary metabolic alkalosis",
+        "Normal gas, no disorder"
+      ],
+      "answer": 0,
+      "why": "Acutely, bicarbonate rises only about 1 mEq/L per 10 mmHg of PaCO2 above 40, which would predict about 28. Chronic compensation rises 3-4 per 10, predicting roughly 33-34, which matches, and the near-normal pH confirms it is chronic. A primary metabolic alkalosis would not be accompanied by this degree of hypercapnia with a normal pH in a COPD patient.",
+      "lesson": "pa-labs-l07",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-labs-q108",
+      "q": "A patient is rescued from a house fire, is confused, and has an SpO2 of 100% on room air. Which test is required and why?",
+      "choices": [
+        "An arterial blood gas PaO2, because it detects carbon monoxide",
+        "Co-oximetry, because the pulse oximeter reads carboxyhemoglobin as oxygenated hemoglobin",
+        "A standard pulse oximeter on a different finger",
+        "A venous blood gas, because it gives a true PaO2"
+      ],
+      "answer": 1,
+      "why": "The pulse oximeter cannot distinguish carboxyhemoglobin from oxyhemoglobin and reports a falsely normal number, so co-oximetry is required. A standard PaO2 measures dissolved oxygen and can also be normal in carbon monoxide poisoning, another finger changes nothing, and a VBG never gives a true PaO2.",
+      "lesson": "pa-labs-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-labs-q109",
+      "q": "A patient has pH 7.52, PaCO2 30 mmHg, HCO3 24 mEq/L, and is tachypneic with tinnitus and vomiting. Which additional value most changes management?",
+      "choices": [
+        "The magnesium",
+        "The BNP",
+        "The anion gap and a salicylate level",
+        "The urine specific gravity"
+      ],
+      "answer": 2,
+      "why": "Early salicylate toxicity causes a primary respiratory alkalosis that later becomes a mixed picture with a wide anion gap metabolic acidosis, and tinnitus is the clue. Salicylate is therapeutic at 15-30 mg/dL and toxic above 40-50. Magnesium, BNP, and urine concentration do not address this pattern.",
+      "lesson": "pa-labs-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-labs-q110",
+      "q": "A patient with pneumonia on room air has PaO2 54 mmHg and PaCO2 32 mmHg. What is the A-a gradient and what does it show?",
+      "choices": [
+        "About 6, normal, indicating hypoventilation",
+        "About 96, wide, indicating hypoventilation",
+        "It cannot be calculated on room air",
+        "About 56, wide, indicating a gas exchange problem"
+      ],
+      "answer": 3,
+      "why": "150 - (32 / 0.8) - 54 = 150 - 40 - 54 = 56, which is far above the normal (age / 4) + 4. A wide gradient means gas is not crossing the membrane, fitting pneumonia. Hypoventilation produces a normal gradient with a high PaCO2, and the room-air shortcut is exactly where this formula applies.",
+      "lesson": "pa-labs-l07",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-labs-q111",
+      "q": "A urinalysis in a febrile patient with flank pain shows 40 WBC/hpf, 2 squamous cells/lpf, and white cell casts. What does the cast finding add?",
+      "choices": [
+        "It localizes the infection to the kidney, supporting pyelonephritis",
+        "It proves contamination",
+        "It indicates glomerulonephritis",
+        "It indicates acute tubular necrosis"
+      ],
+      "answer": 0,
+      "why": "Casts are molds of the tubule, so their presence places the process inside the kidney. White cell casts mean pyelonephritis. Red cell casts mean glomerulonephritis and muddy brown granular casts mean acute tubular necrosis. Contamination would show more than 5 squamous cells per low power field.",
+      "lesson": "pa-labs-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-labs-q112",
+      "q": "A patient who drank an unknown fluid has a wide anion gap acidosis and envelope-shaped crystals in the urine. Which ingestion does this suggest?",
+      "choices": [
+        "Methanol",
+        "Ethylene glycol",
+        "Isoniazid",
+        "Salicylate"
+      ],
+      "answer": 1,
+      "why": "Envelope-shaped calcium oxalate crystals are the urinary clue to ethylene glycol, which is metabolized to oxalate. All of the options are MUDPILES acids, but methanol causes visual loss, isoniazid causes seizures, and salicylate causes tinnitus with a mixed respiratory alkalosis, none of which produce oxalate crystals.",
+      "lesson": "pa-labs-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-labs-q113",
+      "q": "A urine dipstick in a patient with a UTI-like presentation shows nitrite negative and leukocyte esterase positive, with symptoms of dysuria. Which organism could explain a negative nitrite despite a real infection?",
+      "choices": [
+        "Escherichia coli",
+        "Klebsiella",
+        "Enterococcus",
+        "Proteus"
+      ],
+      "answer": 2,
+      "why": "Nitrite depends on gram-negative bacteria converting dietary nitrate, and it needs about 4 hours of bladder dwell. Enterococcus and Staphylococcus lack the enzyme, so nitrite is negative even with true infection. E. coli, Klebsiella, and Proteus are gram-negative converters, and Proteus additionally alkalinizes urine.",
+      "lesson": "pa-labs-l08",
+      "difficulty": 1
+    },
+    {
+      "id": "pa-labs-q114",
+      "q": "A patient on phenytoin with a serum albumin of 2.1 g/dL has a total phenytoin level of 8 mcg/mL and continues to seize. What is the best next step?",
+      "choices": [
+        "Assume the level is subtherapeutic and double the dose",
+        "Switch to a different antiepileptic because the level proves failure",
+        "Repeat the total level in 24 hours",
+        "Check a free phenytoin level, since the drug is protein bound"
+      ],
+      "answer": 3,
+      "why": "Phenytoin's therapeutic total range of 10-20 mcg/mL assumes normal albumin. With hypoalbuminemia the total underestimates the free, active drug, so a free level is the correct test. Doubling the dose on a misleading total risks toxicity, and waiting 24 hours leaves the patient seizing.",
+      "lesson": "pa-labs-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-labs-q115",
+      "q": "A patient with pain out of proportion to a soft abdomen and atrial fibrillation has a lactate of 1.8 mmol/L. What is the correct reasoning?",
+      "choices": [
+        "Lactate rises late in mesenteric ischemia, so a normal value is not reassuring",
+        "A normal lactate rules out mesenteric ischemia",
+        "Lactate is not produced by intestinal tissue",
+        "The lactate must be falsely low from a tourniquet"
+      ],
+      "answer": 0,
+      "why": "Mesenteric ischemia raises lactate late, which is why the clinical picture of pain out of proportion in an embolic-risk patient should drive imaging before the lactate does. Waiting for the number is how the diagnosis is missed. Intestinal tissue does produce lactate; it just shows up after the bowel is already in trouble.",
+      "lesson": "pa-labs-l09",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-labs-q116",
+      "q": "A patient on empiric vancomycin for pneumonia has a negative MRSA nasal PCR. What does this most support?",
+      "choices": [
+        "Continuing vancomycin, since the nose does not predict the lung",
+        "Stopping vancomycin, since the negative predictive value for MRSA pneumonia is about 95-99%",
+        "Adding a second anti-MRSA agent",
+        "Repeating the swab in 48 hours"
+      ],
+      "answer": 1,
+      "why": "A negative MRSA nasal PCR has a negative predictive value near 95-99% for MRSA pneumonia, which is precisely why it is used as a de-escalation tool. The swab's value is in stopping unnecessary vancomycin, not in adding agents or waiting.",
+      "lesson": "pa-labs-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-labs-q117",
+      "q": "CSF from a lumbar puncture shows 240 white cells with 85% lymphocytes, protein 62 mg/dL, glucose 58 mg/dL with a serum glucose of 92. What does this most support?",
+      "choices": [
+        "Bacterial meningitis",
+        "Subarachnoid hemorrhage",
+        "Viral meningitis",
+        "A traumatic tap"
+      ],
+      "answer": 2,
+      "why": "Viral meningitis shows 10-500 white cells that are lymphocytes, mildly raised protein, and a normal glucose ratio, which fits exactly. Bacterial meningitis shows thousands of neutrophils, protein over 200, and glucose under 40. Subarachnoid hemorrhage shows xanthochromia, and a traumatic tap shows blood clearing from tube one to tube four.",
+      "lesson": "pa-labs-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-labs-q118",
+      "q": "A 22-year-old woman in hemorrhagic shock needs uncrossmatched blood immediately. Which product is released and why?",
+      "choices": [
+        "O-positive, because it is more available",
+        "AB-positive, the universal recipient type",
+        "Type-specific blood after a 45-minute type and screen",
+        "O-negative, to avoid Rh sensitization in a woman of childbearing potential"
+      ],
+      "answer": 3,
+      "why": "Emergency release is O-negative for girls and women of childbearing potential precisely to avoid Rh sensitization that would endanger future pregnancies; O-positive is acceptable for males and older women. AB-positive is the universal recipient, not donor, and a 45-minute type and screen is time this patient does not have.",
+      "lesson": "pa-labs-l09",
+      "difficulty": 1
+    },
+    {
+      "id": "pa-labs-q119",
+      "q": "An upright chest film shows blunting of the left costophrenic angle. Approximately how much pleural fluid is needed for that sign, and what does a supine film do?",
+      "choices": [
+        "About 200-300 mL; a supine film lets fluid layer out as a vague haze instead of a meniscus",
+        "About 50 mL; a supine film shows it better",
+        "About 1,000 mL; a supine film is equivalent",
+        "Any amount; position does not matter"
+      ],
+      "answer": 0,
+      "why": "Blunting requires roughly 200-300 mL on an upright film. Supine, the fluid spreads along the posterior chest and produces a diffuse haze that is easy to miss, which is why an upright or decubitus view matters when effusion is the question.",
+      "lesson": "pa-labs-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-labs-q120",
+      "q": "A patient with a documented prior anaphylactoid reaction to iodinated contrast needs a contrast-enhanced CT that cannot be substituted. What is the correct handling?",
+      "choices": [
+        "Cancel the study; contrast is absolutely contraindicated",
+        "Premedicate with prednisone 50 mg at 13, 7, and 1 hours plus diphenhydramine 50 mg",
+        "Ask about a shellfish allergy first, which would be the true contraindication",
+        "Give gadolinium instead regardless of the eGFR"
+      ],
+      "answer": 1,
+      "why": "A prior anaphylactoid reaction earns a premedication regimen of prednisone 50 mg at 13, 7, and 1 hours before the study with diphenhydramine 50 mg, not automatic cancellation. Shellfish allergy is a myth and not a contraindication, and gadolinium is a different agent avoided when eGFR is under 30.",
+      "lesson": "pa-labs-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-labs-q121",
+      "q": "A hypotensive patient after a motorcycle crash has a bedside cardiac ultrasound showing a pericardial effusion with the right ventricle collapsing during diastole. What does this represent?",
+      "choices": [
+        "A benign pericardial effusion",
+        "Right ventricular infarction",
+        "Cardiac tamponade",
+        "Pneumothorax"
+      ],
+      "answer": 2,
+      "why": "Diastolic right ventricular collapse is when the effusion's pressure exceeds filling pressure, which is tamponade physiology, and with hypotension it is the diagnosis. A benign effusion does not collapse the RV, RV infarct is an ECG and clinical diagnosis, and pneumothorax is excluded at a spot by lung sliding.",
+      "lesson": "pa-labs-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-labs-q122",
+      "q": "A 70-year-old on anticoagulation fell and struck his head, GCS 15, no vomiting, no skull fracture signs. What do the Canadian CT head rules support?",
+      "choices": [
+        "No imaging, since GCS is 15",
+        "Imaging only if he vomits twice",
+        "MRI brain as the first study",
+        "Imaging, because age 65 or older is itself a high-risk criterion"
+      ],
+      "answer": 3,
+      "why": "The Canadian CT head high-risk criteria include GCS under 15 at two hours, suspected open or depressed skull fracture, any sign of basilar skull fracture, two or more vomits, or age 65 or older; meeting any one sends the patient to CT. Non-contrast CT, not MRI, is the study for fresh blood.",
+      "lesson": "pa-labs-l10",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-labs-q123",
+      "q": "A 34-year-old with hypertension and a potassium of 2.8 mEq/L on no diuretic is screened for secondary hypertension. Which result pair supports primary aldosteronism?",
+      "choices": [
+        "High aldosterone with suppressed renin",
+        "Low aldosterone with high renin",
+        "High cortisol with high ACTH",
+        "High metanephrines with normal catecholamines"
+      ],
+      "answer": 0,
+      "why": "Primary aldosteronism is autonomous aldosterone production, so aldosterone is high and renin is suppressed by the resulting volume expansion. Low aldosterone with high renin is the opposite physiology, high ACTH with high cortisol points at Cushing disease, and metanephrines screen pheochromocytoma.",
+      "lesson": "pa-labs-l11",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-labs-q124",
+      "q": "A shocked patient has a random cortisol of 4 mcg/dL. What does this support, and what should be given if steroid cannot wait for confirmatory testing?",
+      "choices": [
+        "Adequate adrenal reserve; no steroid needed",
+        "Inappropriately low cortisol for shock; give dexamethasone, which does not cross-react with the cortisol assay",
+        "Inappropriately low cortisol; give hydrocortisone, which does not affect the assay",
+        "Uninterpretable without an 8 a.m. draw"
+      ],
+      "answer": 1,
+      "why": "In a shocked patient a random cortisol below 5 mcg/dL is inappropriately low and diagnostic enough to treat. Hydrocortisone cross-reacts with the cortisol assay and ruins later testing, so dexamethasone is the steroid to use when the diagnosis is not yet confirmed. The morning rhythm rule applies to stable outpatients, not to shock.",
+      "lesson": "pa-labs-l11",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-labs-q125",
+      "q": "A patient with acetaminophen poisoning has an ALT of 8,100 U/L, INR 1.3, creatinine 0.9 mg/dL, arterial pH 7.40, and is alert. A second patient has an ALT of 1,900 U/L, INR 4.4, creatinine 3.1 mg/dL, pH 7.22, and grade 3 encephalopathy. Who is more likely to need transplant evaluation?",
+      "choices": [
+        "The first, because the transaminases are far higher",
+        "Both equally",
+        "The second, because INR, creatinine, pH, and encephalopathy drive prognosis",
+        "Neither, since transaminases under 10,000 are survivable"
+      ],
+      "answer": 2,
+      "why": "Transaminase height measures how much liver has already been injured, but survival is predicted by INR, creatinine, pH, and encephalopathy grade, which are what transplant criteria are built on. The second patient meets far more of those.",
+      "lesson": "pa-labs-l12",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-labs-q126",
+      "q": "Ascitic fluid shows a serum-to-ascites albumin gradient of 1.8 g/dL with 90 neutrophils per microliter. What do these two numbers establish?",
+      "choices": [
+        "Peritoneal carcinomatosis with infection",
+        "Portal hypertension with spontaneous bacterial peritonitis",
+        "Neither can be determined without a culture",
+        "Portal hypertension is the cause, and there is no spontaneous bacterial peritonitis"
+      ],
+      "answer": 3,
+      "why": "A gradient of 1.1 g/dL or more means portal hypertension is the cause of the ascites, and a neutrophil count under 250 per microliter argues against spontaneous bacterial peritonitis. A low gradient would suggest carcinomatosis, and the neutrophil count is actionable before any culture returns.",
+      "lesson": "pa-labs-l12",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-labs-q127",
+      "q": "A patient with easy bruising and heavy menstrual bleeding has a normal platelet count, normal PT, and normal aPTT. Which test is most likely to reveal the cause?",
+      "choices": [
+        "Von Willebrand factor studies and platelet function testing",
+        "Repeat PT and aPTT",
+        "Thrombin time",
+        "Fibrinogen level"
+      ],
+      "answer": 0,
+      "why": "PT and aPTT test only the enzyme cascade, so a bleeding patient with a normal panel points to platelet dysfunction, von Willebrand disease, or factor XIII deficiency. Repeating normal tests adds nothing, and thrombin time and fibrinogen would already have flagged an abnormality on the panel.",
+      "lesson": "pa-labs-l13",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-labs-q128",
+      "q": "A bleeding trauma patient has a normal R time, a normal maximum amplitude, and an LY30 of 22% on viscoelastic testing. Which product or drug is indicated?",
+      "choices": [
+        "Plasma",
+        "Tranexamic acid",
+        "Platelets",
+        "Cryoprecipitate"
+      ],
+      "answer": 1,
+      "why": "LY30 measures how much clot dissolves at 30 minutes, so a high value is hyperfibrinolysis and the answer is tranexamic acid. A long R time would call for plasma, a low maximum amplitude for platelets, and a narrow alpha angle for cryoprecipitate.",
+      "lesson": "pa-labs-l13",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-labs-q129",
+      "q": "A diabetic patient's urine albumin-to-creatinine ratio is 120 mg/g. What does this indicate?",
+      "choices": [
+        "Normal albumin excretion",
+        "Nephrotic-range proteinuria",
+        "Moderately increased albuminuria, marking early diabetic kidney disease",
+        "Myeloma light chains"
+      ],
+      "answer": 2,
+      "why": "An albumin-to-creatinine ratio of 30 to 300 mg/g is moderately increased albuminuria, the early marker of diabetic kidney disease, and a spot ratio has replaced the 24-hour collection. Nephrotic range is far higher, and the dipstick and albumin assays miss myeloma light chains entirely.",
+      "lesson": "pa-labs-l14",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-labs-q130",
+      "q": "A urine specimen sat at room temperature for 4 hours before microscopy, which shows no cells and no casts, in a patient with a creatinine of 3.0 mg/dL. What is the correct conclusion?",
+      "choices": [
+        "The sediment is truly bland, excluding intrinsic kidney disease",
+        "The result proves pre-renal azotemia",
+        "Casts never form in acute tubular necrosis",
+        "The delay degraded the sample; cells lyse and casts dissolve within about 2 hours, so recollect"
+      ],
+      "answer": 3,
+      "why": "Urine begins degrading immediately and within roughly 2 hours at room temperature cells lyse and casts dissolve, so a bland sediment on an old sample proves nothing. Muddy brown casts are exactly what acute tubular necrosis produces when the sample is fresh.",
+      "lesson": "pa-labs-l14",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-labs-q131",
+      "q": "A 14-month-old with fever has a urine bag specimen showing 25 WBC/hpf and mixed organisms. What is the correct next step?",
+      "choices": [
+        "Obtain a catheter or suprapubic specimen before diagnosing infection",
+        "Treat for urinary tract infection based on this specimen",
+        "Repeat the bag specimen",
+        "No further testing; bag urine is definitive under 24 months"
+      ],
+      "answer": 0,
+      "why": "A urine bag specimen is contaminated often enough that it cannot diagnose infection, and under 24 months the diagnosis requires a catheter or suprapubic sample. Repeating a bag reproduces the same contamination, and treating from it commits a child to antibiotics and imaging on a false result.",
+      "lesson": "pa-labs-l15",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-labs-q132",
+      "q": "A 7-week-old has a hemoglobin of 9.5 g/dL, feeds well, and is growing normally. What is the explanation?",
+      "choices": [
+        "Iron deficiency anemia requiring supplementation",
+        "The physiologic nadir of 9-11 g/dL at 6-9 weeks of age",
+        "Occult blood loss",
+        "A hemolyzed specimen"
+      ],
+      "answer": 1,
+      "why": "Hemoglobin falls from a newborn 14-24 g/dL to a physiologic nadir of 9-11 g/dL at 6-9 weeks as fetal red cells turn over and erythropoiesis restarts. It is normal in a thriving infant. Iron deficiency typically appears later, and hemolysis of the specimen raises potassium rather than lowering hemoglobin.",
+      "lesson": "pa-labs-l15",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-labs-q133",
+      "q": "A lactate is drawn with a prolonged tourniquet while the patient repeatedly clenches the fist. The value returns at 3.4 mmol/L in a well-appearing patient. What should be done?",
+      "choices": [
+        "Activate the sepsis bundle immediately",
+        "Report it as a critical value",
+        "Redraw without a prolonged tourniquet or fist clenching before acting on the value",
+        "Ignore lactate values entirely"
+      ],
+      "answer": 2,
+      "why": "A prolonged tourniquet with fist clenching produces local anaerobic metabolism and a falsely high lactate. In a well-appearing patient the specimen is the suspect, so redraw properly. Acting on an artifact commits a patient to fluids and antibiotics they do not need, and ignoring lactate wholesale is the opposite error.",
+      "lesson": "pa-labs-l16",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-labs-q134",
+      "q": "A stable inpatient on hospital day 5 has standing daily CBC and chemistry orders. Which argument best supports stopping them?",
+      "choices": [
+        "The results are always normal in stable patients",
+        "Laboratory tests expire after 5 days",
+        "Nurses cannot draw blood daily",
+        "Daily phlebotomy can remove 40-70 mL per day and is a genuine cause of hospital-acquired anemia, and repeated testing manufactures abnormal results"
+      ],
+      "answer": 3,
+      "why": "Daily draws on a stable patient cost blood volume and generate false positives that compound across a panel, which is why Choosing Wisely names this specific practice. The claim that results are always normal is not true and is not the argument; the harm is real and physiologic.",
+      "lesson": "pa-labs-l16",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-labs-q135",
+      "q": "A head CT is described as showing a hyperdense right middle cerebral artery with loss of the insular ribbon. What do these two findings together indicate?",
+      "choices": [
+        "Large vessel ischemic stroke with clot in the vessel and early infarct change",
+        "Acute hemorrhage",
+        "Subdural hematoma",
+        "Normal study"
+      ],
+      "answer": 0,
+      "why": "A hyperdense artery is thrombus sitting inside the vessel, and loss of the gray-white border at the insular ribbon is early infarction. Together they mark a large vessel occlusion. Hemorrhage would fill a space or the sulci, and a subdural is a crescent along the convexity.",
+      "lesson": "pa-labs-l17",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-labs-q136",
+      "q": "A radiology report on a trauma head CT concludes: 'No acute intracranial abnormality. Limited study due to motion.' How should this be read?",
+      "choices": [
+        "The brain is normal and no further imaging is ever needed",
+        "Nothing new and urgent was seen, but sensitivity is reduced, so a negative means less than usual",
+        "The study cannot be used at all",
+        "Motion artifact causes false positives only"
+      ],
+      "answer": 1,
+      "why": "No acute intracranial abnormality means nothing new and urgent, which is not the same as a normal brain, and a limited study means reduced sensitivity, so the negative carries less weight. The study is still usable, and motion degrades detection rather than only creating false positives.",
+      "lesson": "pa-labs-l17",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-labs-q137",
+      "q": "A patient with a head injury has a bedside optic nerve sheath diameter of 6.2 mm bilaterally. What does this suggest?",
+      "choices": [
+        "Retinal detachment",
+        "Normal finding",
+        "Raised intracranial pressure",
+        "Globe rupture"
+      ],
+      "answer": 2,
+      "why": "An optic nerve sheath diameter above roughly 5 mm suggests raised intracranial pressure, because the sheath is continuous with the subarachnoid space. Retinal detachment appears as a mobile membrane in the vitreous, and globe rupture distorts the globe itself.",
+      "lesson": "pa-labs-l18",
+      "difficulty": 2
+    },
+    {
+      "id": "pa-labs-q138",
+      "q": "A CT abdomen report describes pneumatosis intestinalis with portal venous gas in a patient with abdominal pain, a pH of 7.21, and a lactate of 6.8 mmol/L. What does this combination mean?",
+      "choices": [
+        "A benign incidental finding",
+        "Simple ileus",
+        "Contrast artifact",
+        "Bowel ischemia, and the urgency comes from the clinical context"
+      ],
+      "answer": 3,
+      "why": "Pneumatosis and portal venous gas can occur in benign conditions, but with pain, acidosis, and a rising lactate they mean dying bowel and a surgical emergency. The context, not the finding alone, sets the urgency, which is exactly why the labs and the image are read together.",
+      "lesson": "pa-labs-l18",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-labs-q139",
+      "q": "A patient injecting drugs has a fever, three of four blood culture bottles growing gram-positive cocci in clusters within 14 hours, and multiple peripheral nodules on the chest film. What does this represent?",
+      "choices": [
+        "Right-sided staphylococcal endocarditis with septic pulmonary emboli",
+        "Blood culture contamination with skin flora",
+        "Community-acquired pneumonia",
+        "Pulmonary embolism from deep vein thrombosis"
+      ],
+      "answer": 0,
+      "why": "Growth in multiple bottles within hours is true bacteremia, not contamination, which characteristically appears as one bottle of one set after 3 or more days. Staphylococci plus peripheral lung nodules in an injection drug user is right-sided endocarditis showering septic emboli, not lobar pneumonia or a bland clot.",
+      "lesson": "pa-labs-l19",
+      "difficulty": 3
+    },
+    {
+      "id": "pa-labs-q140",
+      "q": "A dyspneic patient has a BNP of 85 pg/mL, a D-dimer of 3,100 ng/mL, a CT filling defect, a troponin of 58 ng/L, and a dilated right ventricle. What did the BNP contribute to the reasoning?",
+      "choices": [
+        "It confirmed heart failure",
+        "It argued against acute heart failure as the cause of the dyspnea",
+        "It confirmed pulmonary embolism",
+        "It has no interpretive value in dyspnea"
+      ],
+      "answer": 1,
+      "why": "A BNP under 100 pg/mL makes acute heart failure unlikely, which redirected the workup toward pulmonary embolism, and the troponin here reflects right ventricular strain rather than plaque rupture. BNP does not confirm PE; the CT does.",
+      "lesson": "pa-labs-l19",
+      "difficulty": 3
+    }
+  ]
+}

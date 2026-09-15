@@ -505,7 +505,7 @@
       const btns = stage.querySelectorAll('.choice');
       const mark = () => btns.forEach((b) => b.classList.toggle('picked', run.answers[q.id] === +b.dataset.i));
       mark();
-      btns.forEach((b) => b.onclick = () => { run.answers[q.id] = +b.dataset.i; Store.save(); mark(); $('#qp', el).style.width = Math.round((answered() / qs.length) * 100) + '%'; });
+      btns.forEach((b) => b.onclick = () => { run.answers[q.id] = +b.dataset.i; Store.save(); mark(); $('#qp', el).style.width = Math.round((answered() / qs.length) * 100) + '%'; const ch = stage.querySelector('.qcard .chip'); if (ch) ch.textContent = answered() + ' answered'; });
       $('#prev', stage).onclick = () => { if (i > 0) { i--; render(); } };
       $('#next', stage).onclick = () => { if (i < qs.length - 1) { i++; render(); window.scrollTo(0, 0); } else { if (answered() < qs.length && !confirm((qs.length - answered()) + ' unanswered. Finish anyway?')) return; finish(); } };
       $('#jump', stage).onclick = () => { const v = prompt('Question number (1 to ' + qs.length + ')'); const n = parseInt(v, 10); if (n >= 1 && n <= qs.length) { i = n - 1; render(); } };

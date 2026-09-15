@@ -1,0 +1,1186 @@
+{
+  "schema": 1,
+  "extends": "emt-ops",
+  "checks": {
+    "emt-ops-l01": [
+      {
+        "q": "Your state scope allows a skill, but your medical director's protocol does not include it. May you perform it?",
+        "choices": [
+          "Yes, state scope overrides local protocol",
+          "No; you must stay inside both the state scope and your protocols",
+          "Yes, if you document the reason afterward",
+          "Only if a paramedic is present on scene"
+        ],
+        "answer": 1,
+        "why": "State scope is the outer wall and the medical director's protocol draws a line inside it. The narrower of the two always governs, so a skill your protocol omits is off limits regardless of what the state permits."
+      },
+      {
+        "q": "Which level adds intravenous access and a limited drug list but is not used in every state?",
+        "choices": [
+          "Emergency Medical Responder",
+          "Emergency Medical Technician",
+          "Advanced EMT",
+          "Paramedic"
+        ],
+        "answer": 2,
+        "why": "The AEMT level adds IV and IO access, fluids, supraglottic airways and a short drug list, and many states including New Jersey do not use it. The paramedic level adds intubation, cardiac monitoring and a broad formulary."
+      }
+    ],
+    "emt-ops-l02": [
+      {
+        "q": "How far before a highway scene should the ambulance be positioned to shield the work area?",
+        "choices": [
+          "About 10 feet",
+          "About 100 feet",
+          "About 500 feet",
+          "Directly beside the patient"
+        ],
+        "answer": 1,
+        "why": "Roughly 100 feet before the scene with the wheels turned away puts the vehicle mass between traffic and the crew. Parking beside the patient gives no shielding, and 500 feet leaves the work area unprotected."
+      },
+      {
+        "q": "Dispatch tells you police are on scene at a domestic assault. What is the correct interpretation?",
+        "choices": [
+          "Police on scene means the scene is secure; enter immediately",
+          "Police presence is not the same as scene secure; ask for those specific words before entering",
+          "You may enter once you see a patrol car",
+          "Police presence removes the need for a staging location"
+        ],
+        "answer": 1,
+        "why": "Officers can be on scene while the situation is still active. Waiting for an explicit declaration that the scene is secure is the habit that keeps crews out of an assault in progress, and scenes can become unsafe again afterward."
+      }
+    ],
+    "emt-ops-l03": [
+      {
+        "q": "Which grip is correct for lifting a stretcher handle?",
+        "choices": [
+          "Fingertips only, for a lighter feel",
+          "Palms down with hands touching",
+          "Palms up, hands about 10 inches apart, full palm and all fingers on the handle",
+          "One hand on the handle and one on the rail"
+        ],
+        "answer": 2,
+        "why": "The power grip puts the whole palm and every finger in contact, palms up and about 10 inches apart, which spreads the load and is far harder to lose. A fingertip grip is the first thing to fail under weight."
+      },
+      {
+        "q": "A conscious, stable patient must come down two flights of stairs. Which device is correct?",
+        "choices": [
+          "Wheeled stretcher carried by four providers",
+          "Stair chair with a spotter below",
+          "Long backboard carried vertically",
+          "Basket stretcher"
+        ],
+        "answer": 1,
+        "why": "A stair chair with straps and a spotter below is the standard for a conscious patient on stairs. Carrying a wheeled stretcher down stairs is the classic mechanism for both dropped patients and crew back injuries."
+      }
+    ],
+    "emt-ops-l04": [
+      {
+        "q": "During the daily check, at what pressure should a portable oxygen cylinder be replaced?",
+        "choices": [
+          "At or below 500 psi",
+          "At or below 200 psi",
+          "At or below 1,500 psi",
+          "Only when completely empty"
+        ],
+        "answer": 0,
+        "why": "Portables are swapped at or below 500 psi so you never start a call with a tank that will run out mid-transport. A full D cylinder starts near 2,000 psi, and 200 psi is the safe residual you stop using at, not a swap point."
+      },
+      {
+        "q": "You are approaching a helicopter that has landed on a slope. From which side do you approach?",
+        "choices": [
+          "From the uphill side, where footing is better",
+          "From the tail, to stay out of the pilot's way",
+          "From the downhill side, where the main rotor is highest",
+          "From directly beneath the rotor mast"
+        ],
+        "answer": 2,
+        "why": "On a slope the main rotor dips toward the uphill side, so the downhill approach keeps the blades farthest from your head. Approaching from the tail puts you near the tail rotor, which is the single most lethal part of the aircraft."
+      }
+    ],
+    "emt-ops-l05": [
+      {
+        "q": "In what order does a vehicle extrication proceed after hazards are controlled?",
+        "choices": [
+          "Gain access, stabilize the vehicle, disentangle, package",
+          "Stabilize the vehicle, gain access, provide care, disentangle, package, transport",
+          "Disentangle, stabilize, gain access, transport",
+          "Package, stabilize, gain access, disentangle"
+        ],
+        "answer": 1,
+        "why": "The vehicle is stabilized with cribbing and chocks before anyone climbs in, then access, then care inside, then disentanglement and packaging. Entering an unstabilized vehicle puts the crew and the patient in the path of a shift."
+      },
+      {
+        "q": "Which vehicle component should never be cut during extrication?",
+        "choices": [
+          "The windshield",
+          "A door hinge",
+          "An orange high-voltage cable on a hybrid or electric vehicle",
+          "The roof posts"
+        ],
+        "answer": 2,
+        "why": "Orange cabling carries high voltage on hybrid and electric vehicles and cutting it can kill the rescuer. Windshields, hinges and roof posts are all routine cut points for a trained fire crew."
+      }
+    ],
+    "emt-ops-l06": [
+      {
+        "q": "What is the target span of control for one supervisor, and what is the workable range?",
+        "choices": [
+          "Target 5, range 3 to 7",
+          "Target 10, range 8 to 12",
+          "Target 2, range 1 to 3",
+          "There is no limit if the supervisor is experienced"
+        ],
+        "answer": 0,
+        "why": "ICS sets a workable span of 3 to 7 people with 5 as the target, because beyond that people stop actually being supervised. When a section grows past it you divide and add a supervisor."
+      },
+      {
+        "q": "Which ICS section gets the equipment, supplies and support an incident needs?",
+        "choices": [
+          "Operations",
+          "Planning",
+          "Logistics",
+          "Finance and Administration"
+        ],
+        "answer": 2,
+        "why": "Logistics obtains the resources. Operations does the tactical work, Planning tracks status and builds the plan, and Finance tracks the cost."
+      }
+    ],
+    "emt-ops-l07": [
+      {
+        "q": "Under adult START, what is the only path to a yellow tag?",
+        "choices": [
+          "Any patient who can walk to the collection point",
+          "Breathing 30 or less, radial pulse present, follows commands",
+          "Breathing over 30 with a radial pulse",
+          "Any patient with a capillary refill over 2 seconds"
+        ],
+        "answer": 1,
+        "why": "Yellow requires all three: a rate of 30 or less, a present radial pulse, and the ability to follow a simple command. Walking patients are green, and a rate over 30 or a refill over 2 seconds is red."
+      },
+      {
+        "q": "What are the JumpSTART respiratory rate thresholds that make a child red?",
+        "choices": [
+          "Under 15 or over 45 per minute",
+          "Over 30 per minute only",
+          "Under 10 or over 60 per minute",
+          "Under 20 or over 40 per minute"
+        ],
+        "answer": 0,
+        "why": "JumpSTART uses under 15 or over 45 because children breathe faster at baseline and a slow rate is an ominous sign in a child. The over-30 threshold belongs to adult START."
+      }
+    ],
+    "emt-ops-l08": [
+      {
+        "q": "For an unknown release with no placard information, what is the general initial isolation distance?",
+        "choices": [
+          "About 30 feet in all directions",
+          "About 330 feet, roughly 100 meters, in all directions",
+          "About 1 mile in all directions",
+          "No isolation is needed until the material is identified"
+        ],
+        "answer": 1,
+        "why": "The Emergency Response Guidebook's general guidance for an unknown release is at least 330 feet, about 100 meters, increased as information arrives. Waiting for identification before isolating leaves people standing in the release."
+      },
+      {
+        "q": "Where are shipping papers found on a truck involved in a hazmat incident?",
+        "choices": [
+          "In the trailer with the cargo",
+          "In the cab with the driver",
+          "Attached to the outside of the placard",
+          "Only at the shipping company office"
+        ],
+        "answer": 1,
+        "why": "On a truck the shipping papers ride in the cab with the driver; on a train the consist is with the conductor. They name the material precisely, which the placard alone may not."
+      }
+    ],
+    "emt-ops-l09": [
+      {
+        "q": "After caring for a patient with Clostridioides difficile, which hand hygiene is required?",
+        "choices": [
+          "Alcohol-based rub is sufficient",
+          "Soap and water for at least 20 seconds, because alcohol does not kill those spores",
+          "A quick rinse with water alone",
+          "Gloves alone; no hand hygiene needed"
+        ],
+        "answer": 1,
+        "why": "Alcohol rubs do not kill C. difficile or norovirus spores, so soap and water for at least 20 seconds is required. Alcohol rub is the default everywhere else and for visibly clean hands."
+      },
+      {
+        "q": "Approximately what is the transmission risk from a single needlestick with an HIV-positive source?",
+        "choices": [
+          "About 0.3%",
+          "About 1.8%",
+          "About 10%",
+          "About 30%"
+        ],
+        "answer": 0,
+        "why": "HIV is roughly 0.3% per needlestick, hepatitis C about 1.8%, and hepatitis B up to about 30% in an unvaccinated person. Hepatitis B is both the most transmissible and the one a vaccine prevents outright."
+      }
+    ],
+    "emt-ops-l10": [
+      {
+        "q": "Which entry best supports medical necessity for ambulance transport?",
+        "choices": [
+          "Patient requested an ambulance",
+          "Patient unable to ambulate due to open right femur deformity",
+          "Patient transported per protocol",
+          "Patient seemed unwell and preferred not to drive"
+        ],
+        "answer": 1,
+        "why": "Medical necessity is established by a clinical fact that explains why another means of transport was unsafe. A patient request, a bare protocol citation, or a preference does not document a medical reason."
+      },
+      {
+        "q": "In SOAP format, where does the patient's own description of the pain belong?",
+        "choices": [
+          "Objective",
+          "Subjective",
+          "Assessment",
+          "Plan"
+        ],
+        "answer": 1,
+        "why": "Subjective holds what the patient tells you, including their words about the complaint. Objective holds what you measured or observed, such as vital signs and exam findings."
+      }
+    ],
+    "emt-ops-l11": [
+      {
+        "q": "A competent adult is threatened with an intervention he refused, but nobody touches him. What is that?",
+        "choices": [
+          "Battery",
+          "Assault",
+          "False imprisonment",
+          "Abandonment"
+        ],
+        "answer": 1,
+        "why": "Assault is placing someone in fear of unlawful touching; battery is the touching itself. Transporting him against his will on top of that would add false imprisonment."
+      },
+      {
+        "q": "Which element of negligence is missing when an EMT skips a required step and the patient is completely unharmed?",
+        "choices": [
+          "Duty",
+          "Breach",
+          "Damages",
+          "Consent"
+        ],
+        "answer": 2,
+        "why": "Duty existed on a dispatched call and the skipped step is the breach, but with no harm there are no damages, so negligence is not established. It remains a quality improvement matter, not a tort."
+      }
+    ],
+    "emt-ops-l12": [
+      {
+        "q": "In SALT, which group is assessed second?",
+        "choices": [
+          "Those who walked to the designated area",
+          "Those who waved an arm or moved a leg purposefully",
+          "Those who are still and silent",
+          "Those with obvious life threats"
+        ],
+        "answer": 1,
+        "why": "SALT assesses the still and silent first, the purposeful movers second, and the walkers third. That ordering targets the people most likely to be dying right now rather than the ones easiest to move."
+      },
+      {
+        "q": "Under SALT, a breathing patient obeys commands, has a peripheral pulse, no severe respiratory distress, controlled bleeding, and a fractured forearm. What category?",
+        "choices": [
+          "Minimal (green)",
+          "Delayed (yellow)",
+          "Immediate (red)",
+          "Expectant (gray)"
+        ],
+        "answer": 1,
+        "why": "All four questions are yes, so the patient is not immediate, but a fractured forearm is not a minor injury, which makes it delayed. Minimal is reserved for injuries that truly are minor."
+      }
+    ],
+    "emt-ops-l13": [
+      {
+        "q": "Why is warm rather than cold water used during mass decontamination?",
+        "choices": [
+          "Warm water dissolves chemicals faster than cold",
+          "Cold water on a naked patient causes hypothermia, one of the most common complications of mass decon",
+          "Cold water reacts with most chemicals",
+          "Warm water reduces the volume of water needed"
+        ],
+        "answer": 1,
+        "why": "Stripped, wet patients lose heat fast, and hypothermia is a leading complication of mass decontamination. Water temperature is a patient-safety issue, not a chemistry one."
+      },
+      {
+        "q": "Chlorine has leaked in a building. Where should you expect the highest concentration?",
+        "choices": [
+          "At ceiling level, because gases rise",
+          "Evenly distributed throughout the structure",
+          "In low areas such as basements and stairwells, because chlorine is heavier than air",
+          "Outdoors, upwind of the building"
+        ],
+        "answer": 2,
+        "why": "Chlorine is denser than air and settles into low ground, basements and stairwells. Assuming gases rise is exactly the error that sends rescuers down into the worst concentration."
+      }
+    ],
+    "emt-ops-l14": [
+      {
+        "q": "Which ambulance crash type is the most frequent overall?",
+        "choices": [
+          "Intersection collisions during emergency response",
+          "Backing collisions",
+          "Rollovers at high speed",
+          "Rear-end collisions while stopped"
+        ],
+        "answer": 1,
+        "why": "Backing collisions are the most common crash type and are almost entirely preventable with a spotter. Intersection crashes during emergency use are less frequent but account for a disproportionate share of the serious ones."
+      },
+      {
+        "q": "An ambulance had the legal right of way under emergency exemptions and still crashed. How is it evaluated?",
+        "choices": [
+          "Right of way is a complete defense",
+          "Against the due regard standard: what a reasonable operator would have done",
+          "Only the other driver can be found at fault",
+          "Emergency exemptions grant immunity from liability"
+        ],
+        "answer": 1,
+        "why": "Exemptions are conditional on driving with due regard for everyone else's safety, and the crash is measured against a reasonable operator's conduct. Lights and siren never grant immunity."
+      }
+    ],
+    "emt-ops-l15": [
+      {
+        "q": "About how long awake produces impairment comparable to a blood alcohol concentration of roughly 0.05%?",
+        "choices": [
+          "8 to 10 hours",
+          "12 to 14 hours",
+          "17 to 19 hours",
+          "30 to 36 hours"
+        ],
+        "answer": 2,
+        "why": "Roughly 17 to 19 hours awake matches about 0.05%, and around 24 hours the comparison is closer to 0.10%, above the legal driving limit everywhere. Ordinary day-length wakefulness does not produce that decrement."
+      },
+      {
+        "q": "Two weeks of sleeping only 6 hours a night produces what, and how do people rate themselves?",
+        "choices": [
+          "No measurable impairment; they rate themselves as fine and are",
+          "Impairment similar to a full night without sleep, while rating themselves only slightly tired",
+          "Impairment only on the first two days, then full adaptation",
+          "Impairment that people accurately detect and compensate for"
+        ],
+        "answer": 1,
+        "why": "Chronic partial sleep loss accumulates to impairment comparable to a full night missed, and self-ratings barely move. That gap is why fatigue rules are set in advance rather than judged in the moment."
+      }
+    ],
+    "emt-ops-l16": [
+      {
+        "q": "A treatment drops an outcome from 5% to 4%. What is the number needed to treat?",
+        "choices": [
+          "5",
+          "20",
+          "100",
+          "500"
+        ],
+        "answer": 2,
+        "why": "The absolute risk reduction is 1%, or 0.01, and the number needed to treat is 1 divided by that, which is 100. The same result would be advertised as a 20% relative reduction, which sounds far larger."
+      },
+      {
+        "q": "A test with very high sensitivity is best used for what?",
+        "choices": [
+          "Ruling a disease out when the result is negative",
+          "Ruling a disease in when the result is positive",
+          "Measuring how large a treatment effect is",
+          "Determining whether a study was randomized"
+        ],
+        "answer": 0,
+        "why": "High sensitivity means the test catches nearly everyone who has the disease, so a negative result is good evidence against it. High specificity is what lets a positive result rule a disease in."
+      }
+    ],
+    "emt-ops-l17": [
+      {
+        "q": "Which New Jersey regulatory chapter governs ambulance and invalid coach services?",
+        "choices": [
+          "N.J.A.C. 8:40",
+          "N.J.A.C. 8:41",
+          "N.J.A.C. 8:43",
+          "N.J.A.C. 10:52"
+        ],
+        "answer": 0,
+        "why": "N.J.A.C. 8:40 covers ambulance and invalid coach services, while 8:41 covers mobile intensive care, meaning the ALS programs. Knowing which chapter is which keeps a protocol question from becoming a guess."
+      },
+      {
+        "q": "You suspect child abuse on a New Jersey call. Who do you report to, and when?",
+        "choices": [
+          "Your supervisor only, at the end of shift",
+          "The receiving hospital, which will handle the report",
+          "The State Central Registry immediately, because New Jersey is a universal mandated reporting state",
+          "County Adult Protective Services immediately"
+        ],
+        "answer": 2,
+        "why": "New Jersey requires any person with reasonable cause to report suspected child abuse or neglect immediately to the State Central Registry. Adult Protective Services handles vulnerable adults, and passing the duty to the hospital does not satisfy it."
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "id": "emt-ops-q061",
+      "q": "An EMT wants to place a supraglottic airway. What determines whether this is permitted?",
+      "choices": [
+        "State scope of practice and the medical director's protocol together, whichever is narrower",
+        "The patient's condition alone",
+        "The national EMT scope alone",
+        "Whether a paramedic is on the way"
+      ],
+      "answer": 0,
+      "why": "Supraglottic airways are one of the skills that genuinely varies by state and protocol, so both layers must permit it. The patient's condition creates the indication but never the authorization.",
+      "lesson": "emt-ops-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-ops-q062",
+      "q": "Which is the best example of a standing order?",
+      "choices": [
+        "Calling the emergency physician for permission to give a medication outside protocol",
+        "Applying oxygen to a hypoxic patient without contacting anyone",
+        "Asking a bystander physician what to do",
+        "Requesting an ALS intercept by radio"
+      ],
+      "answer": 1,
+      "why": "A standing order is the part of a written protocol you may perform without calling, and oxygen for hypoxia is the classic one. Calling a physician for an order outside protocol is online medical direction, and requesting ALS is a resource decision, not an order.",
+      "lesson": "emt-ops-l01",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-ops-q063",
+      "q": "A service reviews charts against protocol, benchmarks response times, and feeds results back to crews without punishing honest mistakes. What is this?",
+      "choices": [
+        "Mandatory disciplinary review",
+        "Online medical direction",
+        "Continuous quality improvement within a just culture",
+        "Scope of practice enforcement"
+      ],
+      "answer": 2,
+      "why": "Chart review, case review, benchmarks and feedback loops are continuous quality improvement, and separating honest error from reckless behavior is just culture. A system that disciplines every error stops hearing about them.",
+      "lesson": "emt-ops-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-ops-q064",
+      "q": "You are taking a blood pressure inside a home when a family member begins shouting and moves to block the doorway. What is the correct action?",
+      "choices": [
+        "Finish the blood pressure quickly, then leave",
+        "Continue care and ask your partner to watch the door",
+        "Attempt to de-escalate by raising your voice to be heard",
+        "Leave immediately, and call for police from a safe location"
+      ],
+      "answer": 3,
+      "why": "Someone positioned between you and your exit while escalating is a violence indicator, and a scene that turns while you are inside ends your involvement immediately. Finishing a vital sign or posting a partner at the door both keep you in the room.",
+      "lesson": "emt-ops-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-ops-q065",
+      "q": "A downed power line lies across the hood of a car with an alert, uninjured driver inside. What do you tell him?",
+      "choices": [
+        "Stay inside the vehicle until the utility company de-energizes the line",
+        "Jump clear with both feet together and run",
+        "Step out quickly and walk toward you",
+        "Push the wire off the hood with a dry wooden broom"
+      ],
+      "answer": 0,
+      "why": "The vehicle body carries the current around the occupant, so staying inside is safest until the utility declares the line dead. Stepping out creates a path to ground, and no object should ever be used to move a wire.",
+      "lesson": "emt-ops-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-ops-q066",
+      "q": "Which is the single most dangerous moment for a crew on a roadway call?",
+      "choices": [
+        "Loading the stretcher into the ambulance",
+        "The walk between the ambulance and the patient",
+        "Taking a blood pressure inside the vehicle",
+        "Closing the rear doors before departure"
+      ],
+      "answer": 1,
+      "why": "The walk is when attention shifts to the patient and away from traffic, which is why roadway struck-by events cluster there. Every step into a lane deserves a deliberate look.",
+      "lesson": "emt-ops-l02",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-ops-q067",
+      "q": "Why does holding a 40-pound bag at arm's length strain the back more than carrying a 100-pound patient close to the body?",
+      "choices": [
+        "Bags are shaped awkwardly",
+        "Patients distribute weight across two providers",
+        "Every inch of distance from the body multiplies the force on the lumbar discs",
+        "The spine tolerates heavy loads better than light ones"
+      ],
+      "answer": 2,
+      "why": "Lever arm is the whole mechanism: distance from the spine multiplies the compressive force. Every body mechanics rule, from keeping the load close to not twisting, follows from that single fact.",
+      "lesson": "emt-ops-l03",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-ops-q068",
+      "q": "A patient with altered mental status and inadequate breathing is seated in a wrecked car with no scene hazards. Which move category applies?",
+      "choices": [
+        "Emergency move",
+        "No move is indicated",
+        "Non-urgent move",
+        "Urgent move"
+      ],
+      "answer": 3,
+      "why": "An urgent move is driven by the patient's condition rather than a scene hazard, and altered mental status with inadequate breathing is the textbook trigger. An emergency move requires a hazard such as fire, and a non-urgent move assumes a stable patient.",
+      "lesson": "emt-ops-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-ops-q069",
+      "q": "Which statement about the long backboard is correct?",
+      "choices": [
+        "It is a movement and extrication device, and patients are removed from it promptly",
+        "It is a treatment that should remain in place through the emergency department stay",
+        "It improves breathing in trauma patients",
+        "It is the preferred device for a comfortable, stable patient"
+      ],
+      "answer": 0,
+      "why": "The board moves and extricates; it does not treat anything. Left in place it causes pressure injuries and restricts chest wall movement, which is why patients come off it as soon as practical.",
+      "lesson": "emt-ops-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-ops-q070",
+      "q": "During the daily check the suction unit pulls 180 mmHg. What does this mean?",
+      "choices": [
+        "It exceeds the required minimum and is fine",
+        "It is below the minimum of at least 300 mmHg and the unit must be repaired or replaced",
+        "Suction pressure is not part of the daily check",
+        "It is acceptable for adults but not children"
+      ],
+      "answer": 1,
+      "why": "A portable suction unit must generate at least 300 mmHg to clear vomit and blood from an airway. A unit at 180 mmHg will fail on the one call where suction is the whole intervention.",
+      "lesson": "emt-ops-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-ops-q071",
+      "q": "Which phases of a call are most often skipped, and what is the consequence?",
+      "choices": [
+        "Dispatch and en route; delayed response times",
+        "Transport and delivery; poor handoff",
+        "Preparation and the post-run phase; equipment fails during a later call",
+        "Arrival and size-up; missed patients"
+      ],
+      "answer": 2,
+      "why": "Preparation at shift start and post-run cleaning and restocking are the invisible phases, and skipping them is why a bag is missing an item at three in the morning. The other phases are hard to skip because the call cannot proceed without them.",
+      "lesson": "emt-ops-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-ops-q072",
+      "q": "Why should the siren tone be changed as you approach an intersection?",
+      "choices": [
+        "It is required by federal law",
+        "It signals other emergency vehicles to yield",
+        "Changing tones is louder than a constant tone",
+        "A steady tone becomes background noise that drivers stop registering"
+      ],
+      "answer": 3,
+      "why": "Drivers habituate to a constant sound, so a tone change restores the alerting value. It is not a legal requirement or a volume increase, and other units respond to radio traffic, not siren tone.",
+      "lesson": "emt-ops-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-ops-q073",
+      "q": "You must set up a landing zone next to a soccer field ringed with power lines on one side. What is the most important action?",
+      "choices": [
+        "Choose a 100 by 100 foot area away from the wires and report their location to the pilot by radio",
+        "Place cones directly under the wires so the pilot can see them",
+        "Use a 50 by 50 foot area since it is a small helicopter",
+        "Leave the wires unmentioned; the pilot will see them"
+      ],
+      "answer": 0,
+      "why": "Wires are the single biggest landing zone hazard and the hardest to see from the air, so they must be avoided and explicitly reported. Undersizing the zone and marking a hazard rather than avoiding it both put the aircraft at risk.",
+      "lesson": "emt-ops-l04",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-ops-q074",
+      "q": "During extrication, what does 'remove the vehicle from the patient' mean in practice?",
+      "choices": [
+        "Tow the vehicle away with the patient inside",
+        "Wait while the opening is made large enough to move the patient in a straight line with the spine supported",
+        "Pull the patient through the smallest available opening to save time",
+        "Lift the vehicle off the ground before removing the patient"
+      ],
+      "answer": 1,
+      "why": "The phrase describes patience: the metal is cut away until the patient can be moved in line, rather than pulled and twisted through a small hole. Speed at the cost of spinal alignment is only justified in the three rapid extrication situations.",
+      "lesson": "emt-ops-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-ops-q075",
+      "q": "While fire cuts the roof off a car, what is the assigned EMT's job with the patient inside?",
+      "choices": [
+        "Exit the vehicle and wait for the roof removal to finish",
+        "Operate the hydraulic tool alongside the fire crew",
+        "Hold manual stabilization, provide eye and hearing protection, cover the patient before glass breaks, narrate each noise, and keep taking vitals",
+        "Remove the cervical collar so the patient can be lifted faster"
+      ],
+      "answer": 2,
+      "why": "A provider stays with the patient throughout, protecting them from glass and noise and explaining what is happening, which is genuine patient care. Operating rescue tools is outside the awareness-level EMT role and removing a collar reverses the protection.",
+      "lesson": "emt-ops-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-ops-q076",
+      "q": "A stable, alert patient with an ankle injury is seated in an intact car with a jammed door, and the rear door opens normally. Fire suggests cutting the driver's door. What is the best response?",
+      "choices": [
+        "Agree; cutting is faster than moving the patient",
+        "Wait for a second engine company",
+        "Perform a rapid extrication through the windshield",
+        "Use the functional rear door; simple access always comes before complex access"
+      ],
+      "answer": 3,
+      "why": "Simple access requires no tools and is always attempted first, and a working rear door solves the problem. Cutting and rapid extrication both add risk this stable patient does not need.",
+      "lesson": "emt-ops-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-ops-q077",
+      "q": "Why is an MCI defined relative to resources rather than by a fixed patient count?",
+      "choices": [
+        "Because four critical patients overwhelm one ambulance but are routine for a large urban system",
+        "Because patient counts are hard to obtain",
+        "Because federal law prohibits fixed thresholds",
+        "Because triage tags are limited in number"
+      ],
+      "answer": 0,
+      "why": "The definition is need exceeding available resources, which is why the same number of patients is a disaster in one system and a busy afternoon in another. A fixed number would either declare MCIs constantly or never.",
+      "lesson": "emt-ops-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-ops-q078",
+      "q": "Which ICS command staff position speaks to the media?",
+      "choices": [
+        "Incident Commander",
+        "Public Information Officer",
+        "Safety Officer",
+        "Liaison Officer"
+      ],
+      "answer": 1,
+      "why": "The Public Information Officer is the single voice to media. The Liaison Officer is the contact point for outside agencies, and the Safety Officer's distinctive authority is stopping unsafe operations.",
+      "lesson": "emt-ops-l06",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-ops-q079",
+      "q": "At an MCI, which ICS function tracks which patient went on which unit to which hospital?",
+      "choices": [
+        "Triage",
+        "Treatment",
+        "Transport",
+        "Staging"
+      ],
+      "answer": 2,
+      "why": "The transport function decides who leaves, on what, to where, and records the destination for each patient. Triage sorts and tags, treatment runs the color-coded areas, and staging holds incoming units.",
+      "lesson": "emt-ops-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-ops-q080",
+      "q": "During START you find an adult breathing 12 per minute with a strong radial pulse who cannot squeeze your hand on command. What tag?",
+      "choices": [
+        "Green",
+        "Yellow",
+        "Black",
+        "Red"
+      ],
+      "answer": 3,
+      "why": "Failure to follow a simple command is a red criterion regardless of a normal rate and pulse. Yellow requires all three of rate 30 or less, radial pulse present, and commands followed.",
+      "lesson": "emt-ops-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-ops-q081",
+      "q": "A 4-year-old at an MCI is apneic. You open the airway, she does not breathe, and she has a palpable peripheral pulse. What is the next step?",
+      "choices": [
+        "Give 5 rescue breaths, then tag red if breathing starts and black if it does not",
+        "Tag black and move on",
+        "Begin chest compressions",
+        "Give 2 rescue breaths and tag yellow"
+      ],
+      "answer": 0,
+      "why": "JumpSTART gives 5 rescue breaths to an apneic child with a pulse because children arrest from respiratory causes and often restart. Compressions are not performed during triage, and 2 breaths is the SALT figure, not JumpSTART's.",
+      "lesson": "emt-ops-l07",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-ops-q082",
+      "q": "Which two interventions are permitted during START triage?",
+      "choices": [
+        "Oxygen and splinting",
+        "Opening the airway by positioning and controlling major bleeding",
+        "CPR and rescue breathing",
+        "Spinal immobilization and bandaging"
+      ],
+      "answer": 1,
+      "why": "START allows exactly two: position the airway and stop major bleeding, both of which take seconds. Everything else, including oxygen, CPR and splinting, steals time from patients you have not reached yet.",
+      "lesson": "emt-ops-l07",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-ops-q083",
+      "q": "Why is a green-tagged patient still assigned a watcher at an MCI?",
+      "choices": [
+        "To collect their insurance information",
+        "Because green patients are transported first",
+        "Because greens deteriorate and greens wander off",
+        "To keep them from being re-triaged"
+      ],
+      "answer": 2,
+      "why": "The walking wounded can decline over the next hour, and they also leave on their own and show up at the nearest hospital uncounted. A watcher catches both problems.",
+      "lesson": "emt-ops-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-ops-q084",
+      "q": "On an NFPA 704 diamond you see a white section marked with a W crossed by a slash. What does it mean?",
+      "choices": [
+        "The material is an oxidizer",
+        "The material is a simple asphyxiant",
+        "The material is water soluble and safe to flush",
+        "The material reacts with water"
+      ],
+      "answer": 3,
+      "why": "A slashed W in the white section warns that the material reacts with water, which matters enormously before anyone starts flushing. OX marks an oxidizer and SA a simple asphyxiant.",
+      "lesson": "emt-ops-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-ops-q085",
+      "q": "Which Emergency Response Guidebook section gives initial isolation and protective action distances?",
+      "choices": [
+        "Green pages",
+        "Blue pages",
+        "Orange pages",
+        "Yellow pages"
+      ],
+      "answer": 0,
+      "why": "The green pages carry isolation and protective action distances for materials toxic by inhalation. Yellow looks up by UN number, blue by name, and orange gives the action guide.",
+      "lesson": "emt-ops-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-ops-q086",
+      "q": "Two patients from a chemical release walk toward your ambulance, still wearing contaminated clothing. What do you do?",
+      "choices": [
+        "Load them and begin transport, decontaminating at the hospital",
+        "Direct them to the decontamination corridor and keep them out of the ambulance until decon is complete",
+        "Remove your gloves and assist them into the patient compartment",
+        "Begin treatment in the hot zone"
+      ],
+      "answer": 1,
+      "why": "An undeconned patient in the ambulance contaminates the vehicle and, at the other end, the emergency department. Patients reach you after decon, and awareness-level providers never enter the hot zone.",
+      "lesson": "emt-ops-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-ops-q087",
+      "q": "What is the correct order for putting on personal protective equipment?",
+      "choices": [
+        "Mask, gloves, gown, eye protection",
+        "Gloves, gown, eye protection, mask",
+        "Gown, mask or respirator, eye protection, gloves",
+        "Eye protection, gloves, mask, gown"
+      ],
+      "answer": 2,
+      "why": "Donning runs gown, then mask or respirator, then eye protection, then gloves, so the gloves seal over the gown cuffs last. Doffing reverses the logic, taking the dirtiest item off first and leaving respiratory protection on longest.",
+      "lesson": "emt-ops-l09",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-ops-q088",
+      "q": "An EMT wipes a stretcher rail with disinfectant and immediately dries it with a towel. What is wrong?",
+      "choices": [
+        "Nothing; the surface is clean",
+        "Disinfectant should never touch a stretcher rail",
+        "The towel should have been sterile",
+        "The disinfectant needs its labeled contact time with the surface visibly wet"
+      ],
+      "answer": 3,
+      "why": "EPA-registered disinfectants require a labeled contact time, usually minutes of visibly wet surface, to kill organisms. Wiping and immediately drying accomplishes essentially nothing.",
+      "lesson": "emt-ops-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-ops-q089",
+      "q": "An EMT with a full beard is assigned to transport a patient with suspected tuberculosis. What is the concern?",
+      "choices": [
+        "Facial hair breaks the N95 seal, so the respirator will not protect him",
+        "A surgical mask provides equivalent protection",
+        "Tuberculosis is not airborne",
+        "Fit testing is only needed once in a career"
+      ],
+      "answer": 0,
+      "why": "An N95 depends on a face seal, which facial hair defeats, and a user seal check is required every time. A surgical mask is not a respirator and does not protect against tuberculosis or measles.",
+      "lesson": "emt-ops-l09",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-ops-q090",
+      "q": "Which narrative entry is unacceptable regardless of what the protocol says?",
+      "choices": [
+        "Oxygen withheld; saturation 98% on room air, patient declined",
+        "Oxygen applied at 15 L/min, though it was not, because protocol requires it",
+        "Oxygen not applied due to short transport time; saturation 97% throughout",
+        "Oxygen applied at 1427, 15 L/min nonrebreather, saturation 99% at 1432"
+      ],
+      "answer": 1,
+      "why": "Documenting an intervention that did not happen is falsification, which is the one answer that is always wrong. Explaining honestly why something was withheld is exactly what a chart is for.",
+      "lesson": "emt-ops-l10",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-ops-q091",
+      "q": "Which times form the spine of a patient care report that may be reviewed years later?",
+      "choices": [
+        "Only the dispatch and hospital arrival times",
+        "Only the times medications were given",
+        "Dispatch, en route, on scene, patient contact, departure, arrival and transfer of care",
+        "Only the transport time in minutes"
+      ],
+      "answer": 2,
+      "why": "The full time set lets a reviewer reconstruct the sequence of the call, and every vital sign and intervention hangs off it. A partial time set leaves gaps that cannot be recovered later.",
+      "lesson": "emt-ops-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-ops-q092",
+      "q": "The patient care report serves four purposes at once. Which list is correct?",
+      "choices": [
+        "Data submission, media release, billing document, and dispatch log",
+        "Clinical handoff, dispatch log, crew evaluation, and insurance appeal",
+        "Legal record, vehicle maintenance log, billing document, and training file",
+        "Clinical handoff, legal record, billing document, and data submission"
+      ],
+      "answer": 3,
+      "why": "A single complete narrative serves the receiving clinician, the legal record, the billing determination, and the state and national EMS databases. It is not a crew evaluation or a dispatch log.",
+      "lesson": "emt-ops-l10",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-ops-q093",
+      "q": "A competent adult refuses transport after a head strike. Which documentation best protects the patient and the crew?",
+      "choices": [
+        "A documented capacity determination, the specific risks described, alternatives offered, and medical direction contact",
+        "A signature on the refusal form with the note 'pt refused, AAOx4'",
+        "A note that the patient was warned to be careful",
+        "A witness signature from a family member"
+      ],
+      "answer": 0,
+      "why": "The signature proves a form was signed, not that the patient was informed. The chart must show that capacity was assessed, that specific risks were named, and that a high-risk refusal reached medical direction.",
+      "lesson": "emt-ops-l11",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-ops-q094",
+      "q": "An unconscious crash victim has no identification and no family present. Under what principle do you treat?",
+      "choices": [
+        "Expressed consent",
+        "Implied consent",
+        "Informed consent",
+        "Involuntary consent"
+      ],
+      "answer": 1,
+      "why": "Implied consent presumes a reasonable person would want lifesaving care in an emergency, and it covers only what the emergency requires. Expressed and informed consent both require a patient able to agree.",
+      "lesson": "emt-ops-l11",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-ops-q095",
+      "q": "An off-duty EMT stops at a crash, performs a procedure far outside her training, and worsens the injury. How does Good Samaritan protection apply?",
+      "choices": [
+        "It fully protects any off-duty provider acting voluntarily",
+        "It applies only if she accepts payment",
+        "It generally does not cover gross negligence or acts far outside the provider's training",
+        "It applies only if the patient consents in writing"
+      ],
+      "answer": 2,
+      "why": "Good Samaritan statutes cover voluntary, good-faith care within the scope of training, without expectation of payment. Acting far outside training in a way that worsens the injury can be gross negligence, which the statutes generally exclude.",
+      "lesson": "emt-ops-l11",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-ops-q096",
+      "q": "A bystander physician insists you perform a procedure outside your protocol and refuses to accompany the patient. What do you do?",
+      "choices": [
+        "Perform it, since a physician outranks a protocol",
+        "Refuse all assistance and ask the physician to leave the scene",
+        "Ask the physician to sign your chart and then perform it",
+        "Contact online medical direction and let the physicians resolve it; never exceed your scope"
+      ],
+      "answer": 3,
+      "why": "You practice under your own medical director, so an outside physician's order does not expand your scope. Routing it to online medical direction resolves the conflict without either exceeding scope or wasting an offer of help.",
+      "lesson": "emt-ops-l11",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-ops-q097",
+      "q": "What is the philosophical difference between SALT's sort step and START's first step?",
+      "choices": [
+        "SALT sorts by who is most likely to be dying right now; START sorts by who can walk",
+        "SALT eliminates the walking wounded entirely",
+        "START allows more interventions during sorting",
+        "SALT requires tags and START does not"
+      ],
+      "answer": 0,
+      "why": "SALT assesses the still and silent first and the walkers last, aiming attention at the people dying now. START begins by clearing walkers, which is fast but sorts on ability to ambulate rather than on immediacy of threat.",
+      "lesson": "emt-ops-l12",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-ops-q098",
+      "q": "During SALT individual assessment, a child is apneic after you position the airway. What are you permitted to do?",
+      "choices": [
+        "Begin full CPR",
+        "Give 2 rescue breaths",
+        "Give 5 rescue breaths",
+        "Nothing; tag dead immediately"
+      ],
+      "answer": 1,
+      "why": "SALT permits 2 rescue breaths for a child during individual assessment as one of its short list of lifesaving interventions. The 5-breath figure belongs to JumpSTART, and full CPR is never performed during triage.",
+      "lesson": "emt-ops-l12",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-ops-q099",
+      "q": "An expectant patient at a small incident would likely be categorized how once a dozen additional ambulances arrive?",
+      "choices": [
+        "Still expectant, since the category is fixed at first contact",
+        "Dead, because expectant patients are not reassessed",
+        "Immediate, because the category reflects available resources rather than worth",
+        "Minimal, because more providers means less severity"
+      ],
+      "answer": 2,
+      "why": "Expectant is a statement about resources, not about the patient's value, and the category is reassessed as resources arrive. Expectant patients receive comfort care in the meantime, not abandonment.",
+      "lesson": "emt-ops-l12",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-ops-q100",
+      "q": "A patient is covered in a dry powdered chemical. What is the correct first decontamination step?",
+      "choices": [
+        "Flush immediately with high-pressure water",
+        "Cover the patient with a blanket and transport",
+        "Apply soap directly to the powder",
+        "Brush the dry material off before any water is applied"
+      ],
+      "answer": 3,
+      "why": "Some dry chemicals react violently with water, so the powder is brushed off first and then the patient is flushed with low-pressure warm water. High pressure drives contaminant into the skin.",
+      "lesson": "emt-ops-l13",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-ops-q101",
+      "q": "Several patients collapsed suddenly and gasp for air, but their skin stays pink. A few responders report a faint bitter almond odor. Which agent class fits best?",
+      "choices": [
+        "Blood agent such as cyanide",
+        "Vesicant",
+        "Nerve agent",
+        "Pulmonary agent such as phosgene"
+      ],
+      "answer": 0,
+      "why": "Cyanide causes rapid collapse with gasping respirations and skin that stays pink, and only some people can detect the bitter almond odor. Nerve agents produce pinpoint pupils and copious secretions, and vesicants blister hours later.",
+      "lesson": "emt-ops-l13",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-ops-q102",
+      "q": "Which protections apply to a radiological incident?",
+      "choices": [
+        "Isolation, ventilation and dilution",
+        "Time, distance and shielding",
+        "Decontamination, antidote and observation",
+        "Quarantine, vaccination and reporting"
+      ],
+      "answer": 1,
+      "why": "Minimize time near the source, maximize distance, and put mass between you and it. Radiation is not contagious, and a decontaminated irradiated patient poses little risk to the crew.",
+      "lesson": "emt-ops-l13",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-ops-q103",
+      "q": "Why is the patient compartment described as the most dangerous seat in an ambulance?",
+      "choices": [
+        "It is closest to the fuel tank",
+        "It has no airbags in any ambulance",
+        "Serious injuries and deaths concentrate among unrestrained rear occupants who become projectiles",
+        "It is always the point of impact"
+      ],
+      "answer": 2,
+      "why": "The pattern in crash data is unrestrained rear occupants and unsecured equipment moving at vehicle speed. Newer compartments use forward-facing crash-tested seating with restraints precisely because side-facing benches performed badly.",
+      "lesson": "emt-ops-l14",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-ops-q104",
+      "q": "What is the wake effect, and why does it matter?",
+      "choices": [
+        "The noise that wakes sleeping residents during a response",
+        "The turbulence that destabilizes motorcycles near a large vehicle",
+        "The delay before drivers hear an approaching siren",
+        "Crashes occurring behind the ambulance among drivers reacting to its passage, possibly more numerous than ambulance crashes themselves"
+      ],
+      "answer": 3,
+      "why": "The wake effect is the collisions your passage causes behind you, and some studies suggest these outnumber ambulance crashes. It is a major part of the argument for running fewer calls with lights and siren.",
+      "lesson": "emt-ops-l14",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-ops-q105",
+      "q": "Driving 10 mph faster over a 5-mile emergency response buys roughly what, and costs what?",
+      "choices": [
+        "Well under a minute saved, with substantially longer stopping distance",
+        "Ten minutes saved, with no added risk",
+        "Three to four minutes saved, with no change in stopping distance",
+        "No time saved and no change in risk"
+      ],
+      "answer": 0,
+      "why": "The arithmetic over a short response is well under a minute, while stopping distance rises substantially with speed. That trade is why many agencies cap emergency response speed at or near the posted limit.",
+      "lesson": "emt-ops-l14",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-ops-q106",
+      "q": "About how much time does a typical lights-and-siren response actually save?",
+      "choices": [
+        "About 8 to 10 minutes",
+        "About 1.7 to 3.6 minutes",
+        "About 30 seconds or less",
+        "About 15 minutes on a suburban call"
+      ],
+      "answer": 1,
+      "why": "Studies consistently find roughly 1.7 to 3.6 minutes saved while crash risk rises considerably. A handful of patients, such as those in arrest or with time-critical stroke, may benefit; most do not.",
+      "lesson": "emt-ops-l14",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-ops-q107",
+      "q": "Between which hours do alertness and reaction time bottom out regardless of how much sleep you had?",
+      "choices": [
+        "Between 1000 and 1400",
+        "Between 1800 and 2200",
+        "Between 0200 and 0600",
+        "Between 0600 and 1000"
+      ],
+      "answer": 2,
+      "why": "The circadian nadir falls roughly between 0200 and 0600, which is why errors and crashes cluster there even in well-rested providers. It is a biological trough, not a sleep debt you can offset by napping earlier.",
+      "lesson": "emt-ops-l15",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-ops-q108",
+      "q": "You have 25 minutes available for a nap on duty. Why is that length preferable to 90 minutes?",
+      "choices": [
+        "A 90 minute nap has no effect on alertness",
+        "Shorter naps produce more total recovery",
+        "Longer naps are prohibited by federal rule",
+        "It avoids deep sleep and the grogginess of waking from it"
+      ],
+      "answer": 3,
+      "why": "A 20 to 30 minute nap stays out of deep sleep, so you wake without sleep inertia. Waking from a longer nap requires 15 to 30 minutes before you should drive or make decisions.",
+      "lesson": "emt-ops-l15",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-ops-q109",
+      "q": "Which is on the list of evidence-based EMS fatigue risk management recommendations?",
+      "choices": [
+        "Allowing napping on duty and using validated fatigue surveys",
+        "Requiring 24-hour shifts to reduce handoffs",
+        "Prohibiting all caffeine on duty",
+        "Relying on crews to self-assess impairment in the moment"
+      ],
+      "answer": 0,
+      "why": "The guidance recommends validated fatigue surveys, shifts under 24 hours where staffing allows, access to caffeine, permitted napping, and sleep health education. Self-assessment is precisely what fails when impairment is highest.",
+      "lesson": "emt-ops-l15",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-ops-q110",
+      "q": "Which activity is characteristic of a mobile integrated healthcare program rather than traditional 911 response?",
+      "choices": [
+        "Responding emergently to a reported cardiac arrest",
+        "A post-discharge home visit within 24 to 72 hours with medication reconciliation and a home safety check",
+        "Transporting a trauma patient to a trauma center",
+        "Staging for police at a violent scene"
+      ],
+      "answer": 1,
+      "why": "Post-discharge visits, medication reconciliation and home safety assessment are the core of community paramedicine, aimed at preventing the next call. The other three are ordinary emergency response activities.",
+      "lesson": "emt-ops-l16",
+      "difficulty": 1
+    },
+    {
+      "id": "emt-ops-q111",
+      "q": "A study's 95 percent confidence interval for a treatment effect crosses zero. What does that mean?",
+      "choices": [
+        "The treatment definitely causes harm",
+        "The result is statistically significant",
+        "The study did not establish an effect",
+        "The sample size was necessarily too large"
+      ],
+      "answer": 2,
+      "why": "An interval that includes no effect means no effect remains a plausible value, so the study did not establish one. It does not prove harm, and it is the opposite of a statistically significant result.",
+      "lesson": "emt-ops-l16",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-ops-q112",
+      "q": "Why do long-standing EMS practices supported by observational data keep collapsing when randomized?",
+      "choices": [
+        "Randomized trials use sicker patients on purpose",
+        "Randomization measures a different outcome",
+        "Observational studies always have fewer patients",
+        "Observational data cannot exclude confounding, because sicker or healthier patients may have selected into one group"
+      ],
+      "answer": 3,
+      "why": "Without randomization, the groups may differ in ways nobody measured, so an apparent benefit may be selection rather than treatment. Routine long backboard use and pneumatic anti-shock garments are the standard examples.",
+      "lesson": "emt-ops-l16",
+      "difficulty": 3
+    },
+    {
+      "id": "emt-ops-q113",
+      "q": "A New Jersey BLS crew has a patient in respiratory distress not resolving with BLS measures. The MICU is 7 minutes away and the hospital is 10 minutes away. What is the best action?",
+      "choices": [
+        "Begin transport toward the hospital and arrange an intercept en route",
+        "Cancel the MICU and transport, since the hospital is close",
+        "Stay on scene and wait for the MICU to arrive",
+        "Have the patient driven by family to the hospital"
+      ],
+      "answer": 0,
+      "why": "New Jersey's non-transporting fly-car model expects you to move toward the hospital and meet the MICU on the way, so neither minutes nor ALS capability is wasted. Sitting still and canceling ALS both give up one of the two.",
+      "lesson": "emt-ops-l17",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-ops-q114",
+      "q": "After the MICU crew assesses your patient in New Jersey, what does the BLS crew do?",
+      "choices": [
+        "Becomes a bystander while the paramedics take over completely",
+        "Continues to drive, document and assist regardless of whether the medic rides in",
+        "Transfers the patient to the fly car for transport",
+        "Terminates care and returns to service"
+      ],
+      "answer": 1,
+      "why": "The MICU either accompanies the patient in your ambulance or releases and clears, and in both cases the BLS crew drives, documents and assists. The fly car does not transport patients.",
+      "lesson": "emt-ops-l17",
+      "difficulty": 2
+    },
+    {
+      "id": "emt-ops-q115",
+      "q": "A New Jersey EMT sustains a needlestick during a call. Who must be notified, and how quickly?",
+      "choices": [
+        "The patient's primary care physician, within a week",
+        "The state Office of Emergency Medical Services, within 30 days",
+        "The designated infection control officer, immediately, which also triggers notification from the receiving facility",
+        "Nobody, unless symptoms develop"
+      ],
+      "answer": 2,
+      "why": "Immediate reporting to the designated infection control officer starts source testing and the time-sensitive prophylaxis clock, and it triggers the receiving facility's notification duty. Waiting for symptoms forecloses treatment that works only in the first hours to days.",
+      "lesson": "emt-ops-l17",
+      "difficulty": 2
+    }
+  ]
+}

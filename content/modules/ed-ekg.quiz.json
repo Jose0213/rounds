@@ -1,0 +1,1196 @@
+{
+  "schema": 1,
+  "extends": "ed-ekg",
+  "checks": {
+    "ed-ekg-l01": [
+      {
+        "q": "A patient is talking to you while the monitor displays a chaotic wide rhythm in one lead. What does this tell you about the relationship between the screen and the patient?",
+        "choices": [
+          "The monitor is measuring blood flow, so the patient must be about to arrest",
+          "The monitor measures electricity only, so it must always be checked against the actual patient",
+          "The monitor measures contraction, so the patient is in early cardiogenic shock",
+          "The monitor measures blood pressure, so a cuff reading is unnecessary"
+        ],
+        "answer": 1,
+        "why": "The ECG is a voltmeter. It records electrical activity, never contraction, pressure or flow. A talking patient with a chaotic tracing in one lead is almost always artifact, which is why every monitor finding gets matched against the human being."
+      },
+      {
+        "q": "A 12-lead runs for about 10 seconds. What does that duration cost you compared with continuous monitoring?",
+        "choices": [
+          "Nothing, since a 12-lead sees every rhythm event",
+          "It cannot localize damage to a specific wall",
+          "It can miss intermittent rhythm events that happen outside those 10 seconds",
+          "It cannot record ST segments accurately"
+        ],
+        "answer": 2,
+        "why": "The 12-lead is a snapshot: 12 angles, about 10 seconds. It is excellent at localizing injury and poor at catching intermittent events, which is the monitor's job. It does localize damage and it does record ST segments well, so those two options are wrong."
+      }
+    ],
+    "ed-ekg-l02": [
+      {
+        "q": "A patient arrives with a full sleeve of lotion applied over the chest. What is the electrical problem and the fix?",
+        "choices": [
+          "Lotion increases conductivity, so wipe nothing and place electrodes as usual",
+          "Lotion adds impedance between gel and skin, so clean the skin and let it dry before placing",
+          "Lotion only matters for limb leads, so place chest leads normally",
+          "Lotion is harmless if you press the center of the electrode firmly"
+        ],
+        "answer": 1,
+        "why": "Oil and lotion add resistance in the path of a roughly 1 mV signal. Clean the area and let it dry, then place. Lotion does not increase conductivity, it matters anywhere an electrode goes, and pressing the center squeezes gel away from the sensor."
+      },
+      {
+        "q": "You open a pack of electrodes that has sat open in a drawer and the gel feels hard and dry. What should you do?",
+        "choices": [
+          "Discard them and open a sealed pack",
+          "Add saline to the gel and use them",
+          "Use them but press harder on the center",
+          "Use them on the limbs only, where signal is stronger"
+        ],
+        "answer": 0,
+        "why": "Dry gel is a dead conductor and produces noisy, drifting tracings. A sealed fresh pack is the fix. Adding saline is not a stocked practice, pressing the center displaces what gel is left, and limb leads need good contact just as much."
+      }
+    ],
+    "ed-ekg-l03": [
+      {
+        "q": "A patient has a left below-elbow amputation. Where do the arm electrodes go?",
+        "choices": [
+          "Left on the shoulder, right on the wrist",
+          "Both on the upper chest, legs left distal",
+          "Left on the remaining stump and right mirrored at the same level on the opposite arm",
+          "Omit the left arm electrode and record a 9-lead tracing"
+        ],
+        "answer": 2,
+        "why": "Symmetry preserves Einthoven's triangle, so the intact side is matched to the amputated side's most distal usable point. Mismatched left and right placements distort every calculated lead, mixed limb and torso schemes match nothing, and omitting an electrode makes the calculated leads impossible."
+      },
+      {
+        "q": "Why does lead II produce the tallest, clearest P waves of the three standard limb leads?",
+        "choices": [
+          "It uses the ground electrode, which amplifies atrial signal",
+          "Its axis runs almost along the normal path of depolarization, from upper right to lower left",
+          "It is recorded at double gain by default",
+          "It is closest to the atria anatomically"
+        ],
+        "answer": 1,
+        "why": "Signal traveling toward a positive electrode deflects upward and is largest when it travels along the lead's axis. Lead II (RA to LL) parallels the sinus node's normal path. Lead II does not use the ground electrode as a view, gain is standard, and limb leads are not anatomically close to anything."
+      }
+    ],
+    "ed-ekg-l04": [
+      {
+        "q": "You count down ribs and place V1 and V2 in the 3rd intercostal space by mistake. What is the most likely result on paper?",
+        "choices": [
+          "Poor R wave progression with an rSr' shape and possible pseudo-anterior ST changes",
+          "A flat lead II with normal V leads",
+          "60-cycle interference across all leads",
+          "Upright aVR with an inverted lead I"
+        ],
+        "answer": 0,
+        "why": "High V1 and V2 fake an rSr' pattern, invert P waves in those leads, and can mimic anterior ST changes. A flat lead II comes from a right arm and right leg swap, 60-cycle fuzz is an AC power problem, and upright aVR with inverted lead I is an arm reversal."
+      },
+      {
+        "q": "A provider wants posterior leads. At what vertical level do V7, V8 and V9 sit?",
+        "choices": [
+          "One intercostal space below V6",
+          "At the level of the scapular spine",
+          "At the 4th intercostal space, counted again on the back",
+          "At the same horizontal level as V6"
+        ],
+        "answer": 3,
+        "why": "V7 to V9 wrap around at V6's horizontal level: posterior axillary line, scapular tip, and just left of the spine. Ribs slope around the chest, so recounting on the back or dropping a space puts them wrong."
+      }
+    ],
+    "ed-ekg-l05": [
+      {
+        "q": "A tracing shows fine, fast, irregular spikes across the limb leads on a shivering patient. Which fix comes first?",
+        "choices": [
+          "Switch immediately to the 40 Hz filter",
+          "Warm the patient and rest the arms on the bed so they are not held against gravity",
+          "Replace all six chest electrodes",
+          "Increase the gain to 20 mm/mV"
+        ],
+        "answer": 1,
+        "why": "This is muscle tremor artifact, and the physical fix is warmth and supported limbs. The 40 Hz filter is a labeled last resort that can hide ST findings, chest electrodes are not the source of limb lead tremor, and raising gain amplifies the noise too."
+      },
+      {
+        "q": "Why is a 50 mm/s tracing dangerous to compare against an old one?",
+        "choices": [
+          "It halves every ST amplitude on the page",
+          "It removes the calibration pulse",
+          "Every complex is twice as wide, so a normal rate looks slow and a normal QRS looks wide",
+          "It inverts aVR"
+        ],
+        "answer": 2,
+        "why": "Doubling the paper speed doubles horizontal distance, so intervals and rates read wrong. Halved amplitudes come from half-standard gain, not speed. Speed does not remove the calibration pulse or change lead polarity."
+      }
+    ],
+    "ed-ekg-l06": [
+      {
+        "q": "A 5-lead monitor is on a patient with chest pain. Which two displayed leads are the most useful pair?",
+        "choices": [
+          "Lead II for rhythm and the brown V lead for ST changes and wide-complex sorting",
+          "Lead I and lead III, for a wider view of the atria",
+          "aVR and aVL, since they are augmented",
+          "Lead III and the brown V lead, because both use the left leg"
+        ],
+        "answer": 0,
+        "why": "Five-lead monitoring conventionally displays II for the clearest P waves plus the brown chest lead, usually at V1, for ST and morphology. The other pairs give no better rhythm clarity and no chest view at all."
+      },
+      {
+        "q": "Monitor electrodes were placed on the fleshy part of the pectoral muscle and over breast tissue. What is the consequence?",
+        "choices": [
+          "Improved signal because tissue conducts well",
+          "No effect; only 12-leads are affected by tissue",
+          "More motion artifact and false alarms",
+          "The monitor will read only lead I"
+        ],
+        "answer": 2,
+        "why": "Muscle bellies move and soft tissue attenuates, so both generate artifact and nuisance alarms. Flat chest wall and bone stay still. Tissue does not improve signal, monitoring is affected as much as a 12-lead, and placement does not lock the display to lead I."
+      }
+    ],
+    "ed-ekg-l07": [
+      {
+        "q": "R waves on a regular strip fall five big boxes apart. What is the rate, and by which method?",
+        "choices": [
+          "50, by the 300 method",
+          "60, by the 300 method",
+          "75, by the 6-second method",
+          "100, by the 300 method"
+        ],
+        "answer": 1,
+        "why": "The sequence is 300, 150, 100, 75, 60, 50 for one through six big boxes, so five boxes is 60. Six boxes would be 50, four would be 75, and the 6-second method counts complexes across 30 big boxes rather than measuring one interval."
+      },
+      {
+        "q": "A QRS measures 4 small boxes wide. What does that mean?",
+        "choices": [
+          "It is normal, at 0.16 s",
+          "It is normal, at 0.08 s",
+          "It is wide, at 0.16 s, so the beat is ventricular or abnormally conducted",
+          "It cannot be judged without the gain setting"
+        ],
+        "answer": 2,
+        "why": "Each small box is 0.04 s, so 4 boxes is 0.16 s, above the 0.12 s cutoff. Wide means ventricular origin or abnormal conduction. Gain affects height, not width, so it does not block the measurement."
+      }
+    ],
+    "ed-ekg-l08": [
+      {
+        "q": "A monitored patient has a regular narrow rhythm at 44 with an upright P before every QRS. He is alert, blood pressure 132/78, no complaints. What is the correct action?",
+        "choices": [
+          "Report sinus bradycardia with normal vitals and no symptoms",
+          "Call a code and begin compressions",
+          "Assume the monitor speed is wrong and reprint",
+          "Treat it as complete heart block"
+        ],
+        "answer": 0,
+        "why": "One upright P per narrow QRS at under 60 is sinus bradycardia, which is dangerous only with hypotension, chest pain or altered mental status. He has none, so it is reported and watched. Complete block would show P waves and QRS complexes marching independently."
+      },
+      {
+        "q": "Which finding on a strip is the single clearest sign of a heart block?",
+        "choices": [
+          "An irregularly irregular baseline with no P waves",
+          "A sawtooth baseline at about 300",
+          "A P wave with no QRS after it",
+          "A narrow regular rhythm at 180"
+        ],
+        "answer": 2,
+        "why": "A P that fires with no ventricular response is the definition of a dropped beat, and it belongs in front of a provider. Absent P waves with irregular spacing is atrial fibrillation, sawtooth is flutter, and narrow regular at 180 is a supraventricular tachycardia."
+      }
+    ],
+    "ed-ekg-l09": [
+      {
+        "q": "A tracing shows 1.5 mm of ST elevation in V2 and 1.5 mm in aVF. Does this meet contiguous-lead criteria?",
+        "choices": [
+          "Yes, because two leads are involved",
+          "No, because V2 is septal and aVF is inferior, so they are not neighbors",
+          "Yes, because both exceed 1 mm",
+          "No, because elevation must be at least 3 mm anywhere"
+        ],
+        "answer": 1,
+        "why": "Contiguous means leads that view the same wall: II with III, or V3 with V4. V2 and aVF look at different walls. Meeting a millimeter number in two unrelated leads does not satisfy the criterion, and 3 mm is not a threshold anywhere."
+      },
+      {
+        "q": "A 55-year-old diabetic woman has epigastric pain and nausea but denies chest pain. What should you do about an ECG?",
+        "choices": [
+          "Wait for the provider to examine her first",
+          "Skip it; no chest pain means no cardiac workup",
+          "Get one only if the pain persists past an hour",
+          "Get one now, since upper abdominal pain in an older or diabetic patient is a standard ECG trigger"
+        ],
+        "answer": 3,
+        "why": "Standing orders in most departments include epigastric or upper abdominal pain, weakness and dizziness in older or diabetic patients, exactly because their infarcts often present without chest pain. The tracing costs three minutes; waiting costs muscle."
+      }
+    ],
+    "ed-ekg-l10": [
+      {
+        "q": "A 71-year-old with COPD has an irregular rhythm at 116. You see P waves before each QRS, but they change shape from beat to beat and the PR intervals vary. What should you say at handoff?",
+        "choices": [
+          "It is irregular but there are P waves and they keep changing shape",
+          "It is atrial fibrillation with rapid ventricular response",
+          "It is sinus arrhythmia from his breathing",
+          "It is atrial flutter with variable conduction"
+        ],
+        "answer": 0,
+        "why": "At least three P wave morphologies with varying PR intervals is multifocal atrial tachycardia, and describing it in plain words prevents the room from managing it as atrial fibrillation. Fibrillation has no P waves at all, sinus arrhythmia has one consistent P shape, and flutter shows sawtooth waves."
+      },
+      {
+        "q": "A patient's strip is narrow and regular at 52 with an inverted P wave immediately before each QRS. What should you ask about first?",
+        "choices": [
+          "Recent caffeine intake",
+          "Whether he has eaten today",
+          "Medications such as digoxin, beta blockers or calcium channel blockers",
+          "A family history of sudden death"
+        ],
+        "answer": 2,
+        "why": "This is a junctional rhythm, and rate-slowing drugs are the common cause alongside sinus node failure. Blood pressure, symptoms and the medication list drive the urgency. Caffeine speeds rates, fasting is irrelevant here, and family history matters for long QT screening, not junctional escape."
+      }
+    ],
+    "ed-ekg-l11": [
+      {
+        "q": "A monitored patient has a wide bizarre beat every other beat. What is this pattern called and what do you do?",
+        "choices": [
+          "Trigeminy; no action needed",
+          "Bigeminy; check a pulse and blood pressure, then report the frequency and pattern",
+          "A couplet; call a code",
+          "Accelerated idioventricular rhythm; obtain a right-sided tracing"
+        ],
+        "answer": 1,
+        "why": "Every other beat being a premature ventricular contraction is bigeminy. The action is always pulse and pressure first, then a described count. Trigeminy is every third beat, a couplet is two in a row, and an idioventricular rhythm is every beat wide and slow."
+      },
+      {
+        "q": "On a strip, P waves march at 88 and QRS complexes march at 34 with no fixed relationship between them. What does this represent and what do you prepare?",
+        "choices": [
+          "Second-degree type I block; chart and continue monitoring",
+          "Sinus bradycardia with premature atrial contractions; no preparation",
+          "Third-degree block; pulse, blood pressure, nurse now, and pads on",
+          "Atrial flutter with 2:1 conduction; look for sawtooth waves"
+        ],
+        "answer": 2,
+        "why": "Independent atrial and ventricular rates is complete heart block, and these patients frequently need pacing, so pads go on. Type I block still conducts most P waves with a progressively stretching PR, and flutter conducts in a fixed ratio with sawtooth waves."
+      }
+    ],
+    "ed-ekg-l12": [
+      {
+        "q": "A tracing shows upsloping ST depression at the J point across the precordial leads with tall symmetric T waves in a 49-year-old with crushing chest pain. What is the correct framing?",
+        "choices": [
+          "Depression means it cannot be an occlusion, so routine chest pain workup applies",
+          "This is a de Winter pattern, considered equivalent to an anterior STEMI, so it goes to a provider immediately",
+          "This is benign early repolarization and needs no urgency",
+          "This is left ventricular hypertrophy and needs an echocardiogram"
+        ],
+        "answer": 1,
+        "why": "The de Winter pattern is an occlusion presentation that never produces classic elevation, which is exactly why it gets missed. Early repolarization is concave elevation in a well young patient, and hypertrophy shows very tall voltages with lateral depression, not upsloping J point depression with tall T waves."
+      },
+      {
+        "q": "A hypertensive 70-year-old has very tall QRS voltages, lateral ST depression with T inversion, and ST elevation in V1 to V3 that points opposite the main QRS direction. What is the most likely explanation?",
+        "choices": [
+          "Acute pericarditis",
+          "Hypothermia with Osborn waves",
+          "Left ventricular hypertrophy with discordant ST changes",
+          "Wellens pattern"
+        ],
+        "answer": 2,
+        "why": "Tall voltages with lateral strain and discordant right precordial elevation is the hypertrophy pattern. Pericarditis is diffuse concave elevation with PR depression, Osborn waves are humps at the end of the QRS in a cold patient, and Wellens is deep symmetric T inversion in V2 and V3 in a pain-free patient."
+      }
+    ],
+    "ed-ekg-l13": [
+      {
+        "q": "Applying the general artifact method, what is the first question you ask when a tracing looks wrong?",
+        "choices": [
+          "Which leads are affected: one electrode, one limb, one region, or everything?",
+          "Which filter should I turn on?",
+          "Should I repeat the tracing with a different machine?",
+          "Should I call the provider before troubleshooting?"
+        ],
+        "answer": 0,
+        "why": "The distribution of the noise names the cause: one lead points at one electrode, everything points at the environment. Filters come after physical fixes because they hide evidence, swapping machines skips the diagnosis, and a chest pain tracing still goes to the provider but troubleshooting takes seconds."
+      },
+      {
+        "q": "The monitor alarms a lethal rhythm on a patient you can see sitting up combing her hair. What is the correct sequence?",
+        "choices": [
+          "Silence the alarm and move on",
+          "Call a code because the monitor is the objective record",
+          "Confirm a pulse, ask her to hold still for ten seconds, watch the baseline clear, then reset and tell the nurse you checked",
+          "Switch to a 40 Hz filter and re-evaluate"
+        ],
+        "answer": 2,
+        "why": "Artifact has a pulse. Confirming, pausing the motion and documenting the check is what keeps the alarm meaningful. Silencing without checking is unsafe, calling a code on a combing patient is not, and monitor filters do not fix gross motion."
+      }
+    ],
+    "ed-ekg-l14": [
+      {
+        "q": "A one-month-old's tracing shows an upright T wave in V1. How should this be treated?",
+        "choices": [
+          "As the expected normal finding at that age",
+          "As an abnormal finding that belongs in front of a provider",
+          "As proof of right axis deviation only",
+          "As artifact from a pediatric electrode"
+        ],
+        "answer": 1,
+        "why": "The T wave in V1 flips down shortly after birth and stays inverted through childhood, so inversion is normal and an upright T in V1 from about one week to seven years is the abnormal one. Right axis deviation is a separate newborn finding and electrode size does not invert T waves."
+      },
+      {
+        "q": "A 3-year-old is crying and fighting the electrodes. What produces a readable tracing fastest?",
+        "choices": [
+          "Hold the child firmly and record immediately",
+          "Record now and repeat until one strip is clean",
+          "Sedate before attempting",
+          "Explain to the parent first, let them hold the child, place everything, then record during a quiet ten seconds"
+        ],
+        "answer": 3,
+        "why": "The recording only needs ten quiet seconds, so buying calm is faster than fighting. Restraint worsens the tracing and costs the child's trust, repeated attempts waste more time than the setup, and sedation is not a tech decision or a placement problem."
+      }
+    ],
+    "ed-ekg-l15": [
+      {
+        "q": "Why is 0.5 mm of elevation considered diagnostic in V4R and in the posterior leads, when the standard leads require 1 mm?",
+        "choices": [
+          "Those machines use double gain by default",
+          "The signal crosses more tissue to reach those electrodes, so real deflections are smaller",
+          "The paper speed is halved for those recordings",
+          "Right and posterior leads are recorded with a 40 Hz filter"
+        ],
+        "answer": 1,
+        "why": "More intervening tissue attenuates the signal, so the threshold drops. Gain, paper speed and filter settings stay standard for these tracings, and changing any of them would have to be written on the paper."
+      },
+      {
+        "q": "You are about to roll a chest pain patient to place V7 to V9. What must stay in place during the roll?",
+        "choices": [
+          "Only the limb electrodes",
+          "Nothing; disconnect everything for safety",
+          "The monitor, so any rhythm change during the roll is captured",
+          "The blood pressure cuff only"
+        ],
+        "answer": 2,
+        "why": "Rolling an acutely ischemic patient is a moment when rhythm can change, so monitoring continues throughout. Disconnecting everything creates a blind window, and limb electrodes or a cuff alone do not show the rhythm."
+      }
+    ],
+    "ed-ekg-l16": [
+      {
+        "q": "A tracing footer reads 0.5 to 40 Hz. What kind of tracing is this?",
+        "choices": [
+          "A monitor-mode tracing, which is not diagnostic and must be labeled if used",
+          "A standard diagnostic adult tracing",
+          "A pediatric diagnostic tracing",
+          "A tracing recorded at double gain"
+        ],
+        "answer": 0,
+        "why": "Diagnostic adult filtering is 0.05 to 150 Hz; children go to 250 Hz on the upper cutoff. A 0.5 Hz high-pass distorts ST segments and a 40 Hz low-pass shaves QRS detail, which is monitor mode. Gain is a separate setting entirely."
+      },
+      {
+        "q": "The date on the ECG machine is set one day behind. Why does that matter beyond paperwork?",
+        "choices": [
+          "It changes the interpretive thresholds",
+          "It alters the calibration pulse height",
+          "It corrupts door-to-ECG measurement and the ordering of serial comparisons",
+          "It has no clinical effect"
+        ],
+        "answer": 2,
+        "why": "Time stamps are what make serial tracings comparable and what door-to-ECG is measured against. Interpretive thresholds come from the entered age and sex, and calibration is a voltage setting, neither of which the clock touches."
+      }
+    ],
+    "ed-ekg-l17": [
+      {
+        "q": "A patient's chest pain suddenly worsens 8 minutes after his last tracing. What do you do?",
+        "choices": [
+          "Wait until the 15-minute mark to stay on the serial schedule",
+          "Repeat the ECG immediately, because any change in pain triggers a tracing",
+          "Wait for the next troponin result first",
+          "Repeat only if vital signs also change"
+        ],
+        "answer": 1,
+        "why": "The 15 to 30 minute interval is a floor, not a ceiling. A change in pain, vitals, rhythm or the patient's own report triggers an immediate tracing. Waiting for a clock or a lab throws away the change the ECG exists to capture."
+      },
+      {
+        "q": "Two troponins come back at 48 and 52 one hour apart in a patient with kidney disease. What is the useful concept here?",
+        "choices": [
+          "Any elevated troponin means an acute infarct",
+          "The absolute number is what matters, so both are reassuring",
+          "The delta is small, which points away from acute injury and toward a chronically elevated baseline",
+          "A repeat is never useful in kidney disease"
+        ],
+        "answer": 2,
+        "why": "Kidney disease and heart failure raise the baseline, so the rise or fall between draws separates acute injury from chronic elevation. A single elevated value does not prove infarction, and the repeat draw is exactly what makes the interpretation possible."
+      }
+    ],
+    "ed-ekg-l18": [
+      {
+        "q": "Your hospital has no catheterization laboratory and transfer is required. Which target applies to your department's piece of it?",
+        "choices": [
+          "A 90-minute door-to-balloon at your own hospital",
+          "A 30-minute door-in-door-out time",
+          "A 10-minute transfer decision window",
+          "A 120-minute door-to-balloon at your own hospital"
+        ],
+        "answer": 1,
+        "why": "When transfer is needed, the system target is 120 minutes from first medical contact to device, and the sending hospital's measured piece is door-in-door-out under 30 minutes. Door-to-balloon of 90 minutes applies at a hospital with its own catheterization laboratory."
+      },
+      {
+        "q": "A STEMI is activated and the patient is wearing a necklace and a watch, and has a full dinner in his stomach. What belongs on your task list?",
+        "choices": [
+          "Remove metal and jewelry, keep him nothing by mouth, and cut clothing rather than wrestling it off",
+          "Leave jewelry on to avoid property disputes and allow clear liquids",
+          "Remove jewelry but allow sips of water with medications",
+          "Nothing; these are nursing tasks only"
+        ],
+        "answer": 0,
+        "why": "Metal interferes with imaging and with defibrillation pads, and a patient heading for a procedure stays nothing by mouth. Property is documented, not left on, and even sips violate the nothing by mouth order before catheterization."
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "id": "ed-ekg-q064",
+      "q": "A 60-year-old is on the monitor showing a regular narrow rhythm at 72. A student says the tracing proves the heart is pumping. What is the correct correction?",
+      "choices": [
+        "The tracing proves contraction but not perfusion",
+        "The tracing proves the electrical signal only; contraction is a separate event confirmed by a pulse",
+        "The tracing proves perfusion if the rate is between 60 and 100",
+        "The tracing proves nothing unless a 12-lead is printed"
+      ],
+      "answer": 1,
+      "why": "Depolarization is the signal to squeeze, and pulseless electrical activity is the proof that the squeeze can fail to follow. A rate in the normal range says nothing about flow, and a monitor strip is valid evidence of electrical activity even without a printed 12-lead.",
+      "lesson": "ed-ekg-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-ekg-q065",
+      "q": "A provider asks why serial ECGs are ordered when the first one on a chest pain patient was unremarkable. What is the best answer?",
+      "choices": [
+        "Because the machine interpretation is often mislabeled",
+        "Because monitors cannot show ST segments",
+        "Because roughly a third of infarcts look normal on the first tracing",
+        "Because the first tracing is usually taken at the wrong paper speed"
+      ],
+      "answer": 2,
+      "why": "A normal first tracing does not exclude infarction in about a third of cases, which is the entire reason for serial tracings and serial troponin. Machine misreads, monitor limits and speed errors are real problems but none of them is the reason serial tracings exist.",
+      "lesson": "ed-ekg-l01",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-ekg-q066",
+      "q": "A hairy-chested 44-year-old needs a 12-lead. Electrodes will not stay on V2 and V3. What is the correct action?",
+      "choices": [
+        "Shave the entire chest with a razor for maximum adhesion",
+        "Tape the electrodes down over the hair",
+        "Use extra electrodes stacked on each position",
+        "Clip a patch just large enough at each position, then prep and place"
+      ],
+      "answer": 3,
+      "why": "Clipping removes the standoff between gel and skin without creating micro-cuts in a patient who may receive blood thinners within the hour. Razors create that infection and bleeding risk, taping over hair leaves the gel off the skin, and stacked electrodes do not fix contact.",
+      "lesson": "ed-ekg-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-ekg-q067",
+      "q": "A tracing's baseline drifts slowly up and down in time with the patient's breathing. Which explanation best fits?",
+      "choices": [
+        "A loose electrode or damp skin under an electrode",
+        "Building AC power interference",
+        "The machine running at 50 mm/s",
+        "The 150 Hz diagnostic filter"
+      ],
+      "answer": 0,
+      "why": "Respiratory-timed wander is a contact problem: loose adhesive, sweat, or cable tension. AC interference is a perfectly regular high-frequency fuzz, doubled paper speed widens complexes instead of drifting the baseline, and 150 Hz is the correct diagnostic setting.",
+      "lesson": "ed-ekg-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-ekg-q068",
+      "q": "A tech places the arm electrodes on the wrists and the leg electrodes on the abdomen for a diagnostic 12-lead. What is wrong?",
+      "choices": [
+        "Nothing, as long as the tracing is labeled",
+        "Only the leg placement is wrong; arms may go anywhere",
+        "Mixing distal limb and torso placements produces a tracing that matches no standard",
+        "The ground electrode is now unnecessary"
+      ],
+      "answer": 2,
+      "why": "Either scheme is usable on its own, but mixing them distorts the triangle so the tracing compares to nothing, including the patient's own prior tracings. Labeling does not rescue a hybrid, and the ground electrode is required in every scheme.",
+      "lesson": "ed-ekg-l03",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-ekg-q069",
+      "q": "In the AHA color scheme, which sequence correctly runs clockwise from the right arm?",
+      "choices": [
+        "White, red, black, green",
+        "White, black, red, green",
+        "Black, white, green, red",
+        "Green, white, black, red"
+      ],
+      "answer": 1,
+      "why": "Right arm white, left arm black, left leg red, right leg green runs clockwise. The other sequences swap an arm or a leg, and any swap produces the classic reversal signatures such as an upright aVR or a collapsed lead II.",
+      "lesson": "ed-ekg-l03",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-ekg-q070",
+      "q": "You have found the sternal angle on a large-chested patient. What is the next step in locating V1?",
+      "choices": [
+        "Slide just off the sternum onto the second rib and drop into the space below it, then walk down to the 4th intercostal space",
+        "Measure two finger widths below the clavicle",
+        "Use the nipple line as the 4th intercostal space",
+        "Place V4 first and count upward"
+      ],
+      "answer": 0,
+      "why": "The second rib attaches at the sternal angle, which is the only reliable landmark; from the second intercostal space you walk down to the fourth. Nipple lines and finger widths vary enormously between patients, and V4 depends on an accurate rib count itself.",
+      "lesson": "ed-ekg-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-ekg-q071",
+      "q": "Which placement pair is correct?",
+      "choices": [
+        "V5 at the midaxillary line, V6 at the anterior axillary line",
+        "V5 and V6 both one space below V4",
+        "V5 at the anterior axillary line and V6 at the midaxillary line, both level with V4",
+        "V5 and V6 at the 6th intercostal space, counted separately"
+      ],
+      "answer": 2,
+      "why": "V5 is anterior axillary and V6 midaxillary, both at V4's horizontal level. Swapping the lines reverses two views, and counting ribs again or dropping a space places them too low because ribs slope downward as they wrap.",
+      "lesson": "ed-ekg-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-ekg-q072",
+      "q": "A 12-lead on a comfortable, talking patient shows nearly flat complexes in lead II while leads I and III look normal. What should you suspect?",
+      "choices": [
+        "Asystole",
+        "Right arm and right leg electrode reversal",
+        "60-cycle interference",
+        "Left ventricular hypertrophy"
+      ],
+      "answer": 1,
+      "why": "Lead II compares the right arm to the left leg, so swapping in the ground reference collapses it while other leads stay readable. Asystole is flat in every lead in a pulseless patient, AC interference thickens rather than flattens, and hypertrophy makes complexes taller.",
+      "lesson": "ed-ekg-l05",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-ekg-q073",
+      "q": "A patient cannot lie flat because of shortness of breath, so you record the tracing in semi-Fowler's. What is required?",
+      "choices": [
+        "Nothing; position does not affect the tracing",
+        "Switch to 40 Hz filtering to compensate",
+        "Record at 50 mm/s to compensate",
+        "Write the position on the tracing, because posture changes the heart's position in the chest"
+      ],
+      "answer": 3,
+      "why": "Posture shifts the heart relative to the electrodes and therefore shifts the tracing, so the position is documented for the next comparison. Filters and paper speed do not compensate for anatomy and would add their own distortion.",
+      "lesson": "ed-ekg-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-ekg-q074",
+      "q": "Which mnemonic pair correctly describes 5-lead placement?",
+      "choices": [
+        "Snow over grass on the right, smoke over fire on the left, brown on the chest",
+        "Smoke over fire on the right, snow over grass on the left, brown on the chest",
+        "Snow over fire on the right, smoke over grass on the left, brown on the left shoulder",
+        "Grass over snow on the right, fire over smoke on the left, brown on the abdomen"
+      ],
+      "answer": 0,
+      "why": "White over green on the right, black over red on the left, and the brown chest electrode usually at the V1 position. The other options move white off the right side or put brown somewhere it gives no chest view.",
+      "lesson": "ed-ekg-l06",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-ekg-q075",
+      "q": "A nurse asks you to measure the QT interval for a medication decision using the 3-lead monitor strip. What is the correct response?",
+      "choices": [
+        "Measure it from lead II on the monitor and report the number",
+        "Measure it from the monitor but round up for safety",
+        "A QT for a drug decision needs a 12-lead from standard placement",
+        "The QT cannot be measured on any tracing without machine software"
+      ],
+      "answer": 2,
+      "why": "Monitor filtering and torso placement are built for stability, not measurement, so QT decisions come from a standard 12-lead. Rounding a bad measurement does not make it usable, and the QT is measurable by hand on a proper tracing.",
+      "lesson": "ed-ekg-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-ekg-q076",
+      "q": "You count 14 QRS complexes across a 6-second strip of an irregular rhythm. What is the rate?",
+      "choices": [
+        "70",
+        "84",
+        "140",
+        "112"
+      ],
+      "answer": 2,
+      "why": "Multiply the count in 6 seconds by 10, giving 140. Halving or using the 300 method on an irregular rhythm gives a different answer depending on which two beats you pick, which is exactly why the 6-second method is required here.",
+      "lesson": "ed-ekg-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-ekg-q077",
+      "q": "A PR interval measures 6 small boxes. How should this be reported?",
+      "choices": [
+        "0.24 s, which is prolonged and suggests a conduction block",
+        "0.24 s, which is within the normal range",
+        "0.12 s, which is normal",
+        "0.30 s, which is prolonged"
+      ],
+      "answer": 0,
+      "why": "Six small boxes at 0.04 s each is 0.24 s, above the 0.12 to 0.20 s normal range, which is first-degree block if every P conducts. Calling 0.24 s normal applies the wrong cutoff, and 0.12 s and 0.30 s are simply the wrong arithmetic.",
+      "lesson": "ed-ekg-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-ekg-q078",
+      "q": "A 34-year-old with a fever of 39.4 C and vomiting for two days has a regular narrow rhythm at 132 with upright P waves. What is the correct framing?",
+      "choices": [
+        "Supraventricular tachycardia requiring immediate intervention",
+        "Sinus tachycardia, which is a symptom whose cause gets treated",
+        "Atrial flutter with 2:1 conduction",
+        "Multifocal atrial tachycardia"
+      ],
+      "answer": 1,
+      "why": "Visible upright P waves with a rate of 132 and an obvious cause is sinus tachycardia; fever and volume loss get treated, not the number. Supraventricular tachycardia usually runs 150 to 250 with hidden P waves, flutter sits stubbornly near 150, and multifocal tachycardia is irregular with changing P shapes.",
+      "lesson": "ed-ekg-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-ekg-q079",
+      "q": "A monitored patient is unresponsive and the screen shows a chaotic tracing with no organized complexes. What is true about the pulse?",
+      "choices": [
+        "It may be present if the fibrillation is coarse",
+        "It is usually weak but present",
+        "There is never a pulse in ventricular fibrillation",
+        "It can only be assessed with a blood pressure cuff"
+      ],
+      "answer": 2,
+      "why": "Ventricular fibrillation is quivering muscle with no coordinated output, so it never perfuses regardless of whether it is coarse or fine. A manual pulse check is the assessment, not a cuff, which cannot read a non-perfusing rhythm at all.",
+      "lesson": "ed-ekg-l08",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-ekg-q080",
+      "q": "A 41-year-old man has 2 mm of ST elevation in V2 and V3. Does this meet the threshold?",
+      "choices": [
+        "Yes, 2 mm meets the threshold for a man aged 40 or over in V2 and V3",
+        "No, he needs 2.5 mm because he is male",
+        "No, V2 and V3 are not contiguous",
+        "Yes, because any elevation over 1 mm in any two leads qualifies"
+      ],
+      "answer": 0,
+      "why": "V2 and V3 carry a higher bar than the general 1 mm rule: 2 mm in men 40 and over, 2.5 mm in men under 40, 1.5 mm in women. He is 41, so 2 mm qualifies. V2 and V3 are neighbors, and the general 1 mm rule does not apply in those two leads.",
+      "lesson": "ed-ekg-l09",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-ekg-q081",
+      "q": "Which lead grouping is correct?",
+      "choices": [
+        "V1 and V2 lateral, V3 and V4 inferior",
+        "I, aVL, V5 and V6 lateral; V3 and V4 anterior",
+        "II, III and aVF anterior; V1 and V2 inferior",
+        "aVR, aVL and aVF lateral"
+      ],
+      "answer": 1,
+      "why": "The groups are II, III, aVF inferior; V1 and V2 septal; V3 and V4 anterior; I, aVL, V5 and V6 lateral. The other options relabel septal as lateral, inferior as anterior, or group the three augmented leads as one wall, which they do not represent.",
+      "lesson": "ed-ekg-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-ekg-q082",
+      "q": "A patient has frequent premature atrial contractions on telemetry. Why is the frequency the useful number at handoff?",
+      "choices": [
+        "Because frequent PACs cause immediate hemodynamic collapse",
+        "Because frequent PACs are a known warning sign for atrial fibrillation",
+        "Because the count determines the paper speed to use",
+        "Because occasional PACs require a right-sided tracing"
+      ],
+      "answer": 1,
+      "why": "Occasional premature atrial contractions are common and benign, but a rising frequency predicts atrial fibrillation, so the count is what changes clinical thinking. They do not cause collapse on their own, they have nothing to do with machine settings, and right-sided tracings are for inferior infarcts.",
+      "lesson": "ed-ekg-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-ekg-q083",
+      "q": "The monitor reads 150 and unvarying, narrow and regular, in a 64-year-old with palpitations and no fever, pain or blood loss. What should you do first?",
+      "choices": [
+        "Report sinus tachycardia and continue monitoring",
+        "Assume artifact and replace the electrodes",
+        "Look hard for sawtooth waves in the inferior leads and V1, and get a 12-lead",
+        "Prepare for defibrillation"
+      ],
+      "answer": 2,
+      "why": "A stubbornly fixed narrow rate at almost exactly 150 with no reason to be tachycardic is atrial flutter with 2:1 conduction until flutter waves are excluded. Sinus tachycardia wobbles and has a cause, the tracing is not artifact, and a narrow perfusing rhythm is not a defibrillation rhythm.",
+      "lesson": "ed-ekg-l10",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-ekg-q084",
+      "q": "A strip shows a wide bizarre beat with no preceding P wave and a T wave pointing opposite the QRS, followed by a complete pause. What is this beat?",
+      "choices": [
+        "A premature ventricular contraction",
+        "A premature atrial contraction",
+        "A junctional escape beat",
+        "A paced beat"
+      ],
+      "answer": 0,
+      "why": "Wide, early, no P, opposite T, and a complete compensatory pause is the ventricular ectopic signature. A premature atrial contraction is narrow with an odd P and an incomplete pause, a junctional escape is narrow and late rather than early, and a paced beat is preceded by a vertical spike.",
+      "lesson": "ed-ekg-l11",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-ekg-q085",
+      "q": "A rhythm strip shows PR intervals that stretch a little more each beat until a QRS is dropped, then the pattern restarts. What is this and what does it usually mean?",
+      "choices": [
+        "Second-degree type II block; prepare for pacing immediately",
+        "Second-degree type I block; often benign, chart it and tell the nurse",
+        "Third-degree block; pads on now",
+        "First-degree block; no dropped beats occur"
+      ],
+      "answer": 1,
+      "why": "Progressive PR lengthening before a dropped beat is Wenckebach, which usually behaves. Type II drops without warning and is the dangerous one, third-degree shows fully independent rates, and first-degree never drops a beat at all.",
+      "lesson": "ed-ekg-l11",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-ekg-q086",
+      "q": "A 58-year-old with a wide QRS and a known left bundle branch block has chest pain. His ST elevation points in the same direction as the main QRS deflection by 2 mm. Why does this matter?",
+      "choices": [
+        "It confirms the bundle branch block is old",
+        "It is expected discordance and reassuring",
+        "Concordant ST elevation is a Sgarbossa criterion supporting a true infarct",
+        "It means the electrodes were reversed"
+      ],
+      "answer": 2,
+      "why": "In a bundle branch block the ST normally points opposite the QRS, so elevation pointing the same way is concordant and raises real suspicion of infarction under the Sgarbossa criteria. Discordance is the expected pattern, not concordance, and lead reversal produces polarity signatures in specific leads rather than this.",
+      "lesson": "ed-ekg-l12",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-ekg-q087",
+      "q": "A hypothermic patient pulled from cold water has a hump at the end of the QRS in several leads. What is this called?",
+      "choices": [
+        "A delta wave",
+        "An Osborn J wave",
+        "A U wave",
+        "A hyperacute T wave"
+      ],
+      "answer": 1,
+      "why": "The Osborn J wave is the hypothermia signature, sitting at the junction of QRS and ST. A delta wave is a slurred upstroke at the start of the QRS in Wolff-Parkinson-White, a U wave follows the T wave, and a hyperacute T wave is a broad tall T in early infarction.",
+      "lesson": "ed-ekg-l12",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-ekg-q088",
+      "q": "A repeat tracing taken five minutes after a clean one shows regular fuzz across every lead. Nothing about the patient changed, but an IV pump was plugged in at the bedside. What is the correct first response?",
+      "choices": [
+        "Turn on the notch filter and reprint",
+        "Replace all ten electrodes",
+        "Chart the tracing as uninterpretable",
+        "Separate the ECG cable from power cords, untangle the wires, move or unplug the non-essential device, then reprint"
+      ],
+      "answer": 3,
+      "why": "AC interference has a physical cause and a physical fix; filters hide evidence and can shave real findings. Electrodes are not the problem when every lead is equally affected, and abandoning the tracing wastes the ten minutes you have.",
+      "lesson": "ed-ekg-l13",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-ekg-q089",
+      "q": "Which question from the artifact method most reliably separates artifact from a real lethal rhythm?",
+      "choices": [
+        "Does the artifact have a pulse? Match the screen against the patient",
+        "Which filter is currently active?",
+        "What is the machine's printed interpretation?",
+        "How old is the electrode pack?"
+      ],
+      "answer": 0,
+      "why": "Chaos in a patient with a pulse is artifact; the same chaos in an unresponsive pulseless patient is real. Filters, machine interpretations and electrode age all affect quality but none of them answers the question of whether the patient is perfusing.",
+      "lesson": "ed-ekg-l13",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-ekg-q090",
+      "q": "A 2-month-old's tracing is read using adult interval cutoffs. What error is most likely?",
+      "choices": [
+        "The QT will be called short",
+        "The tracing will be called technically inadequate",
+        "Normal short intervals will be reported as abnormal",
+        "The axis will be called left-deviated"
+      ],
+      "answer": 2,
+      "why": "Infant PR intervals run about 0.08 to 0.12 s and QRS under about 0.08 s, so adult ranges make normal children look abnormal. Adult cutoffs do not cause a technical failure, and a newborn's axis points right, not left.",
+      "lesson": "ed-ekg-l14",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-ekg-q091",
+      "q": "A 7-year-old has a narrow regular rate of 168 that varies between 160 and 176 as she cries and settles, with visible normal P waves. What does this favor?",
+      "choices": [
+        "Sinus tachycardia, because the rate varies and P waves are normal",
+        "Supraventricular tachycardia, because the rate is over 150",
+        "Atrial flutter, because the rate is fixed",
+        "Ventricular tachycardia, because of the rate"
+      ],
+      "answer": 0,
+      "why": "In a child, sinus tachycardia usually stays under 180, varies with activity, and keeps normal P waves; supraventricular tachycardia is fixed and metronomic, often over 180. Flutter requires a fixed rate with sawtooth waves, and the QRS here is narrow, not ventricular.",
+      "lesson": "ed-ekg-l14",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-ekg-q092",
+      "q": "Your machine has only six chest cables and a posterior tracing is ordered. What is the usual method?",
+      "choices": [
+        "Record only V7 and leave V8 and V9 out",
+        "Move V4, V5 and V6 to the V7, V8 and V9 positions, reprint, and relabel by hand",
+        "Move V1, V2 and V3 to the back",
+        "Record the posterior leads on a separate machine at double gain"
+      ],
+      "answer": 1,
+      "why": "Moving the three lateral chest electrodes around to the posterior positions and writing V4 equals V7, V5 equals V8, V6 equals V9 is the standard workaround. Omitting leads loses coverage, moving the septal leads leaves the front unread, and changing gain is a labeled deviation that helps nothing here.",
+      "lesson": "ed-ekg-l15",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-ekg-q093",
+      "q": "An inferior STEMI patient with right ventricular involvement becomes hypotensive. Which treatment concept fits?",
+      "choices": [
+        "Nitroglycerin, to relieve the ischemia and raise pressure",
+        "Sitting the patient fully upright to reduce preload",
+        "Fluid, because the damaged right ventricle depends on being filled",
+        "Nothing until a posterior tracing is obtained"
+      ],
+      "answer": 2,
+      "why": "A right ventricle that cannot generate its own pressure is preload dependent, so volume supports it and nitroglycerin can drop the pressure profoundly. Sitting upright further reduces preload, and posterior leads answer a different question entirely.",
+      "lesson": "ed-ekg-l15",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-ekg-q094",
+      "q": "The gain on a tracing was set to 20 mm/mV. How does this affect apparent ST elevation?",
+      "choices": [
+        "It doubles it",
+        "It halves it",
+        "It has no effect on ST segments",
+        "It removes the calibration pulse"
+      ],
+      "answer": 0,
+      "why": "Double standard gain doubles every vertical deflection on the page, including ST deviation, which is why the setting must be labeled. Half standard is what halves it, gain always affects amplitude, and the calibration pulse is exactly what proves which gain was used.",
+      "lesson": "ed-ekg-l16",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-ekg-q095",
+      "q": "A single premature beat appears only in the fourth printed column, containing V4, V5 and V6. A colleague says it is a lateral ectopic focus. What is the correct explanation?",
+      "choices": [
+        "It confirms a lateral origin because only lateral leads show it",
+        "All twelve leads are acquired simultaneously and printed in 2.5-second columns, so the beat appears only in the column where it occurred in time",
+        "It means the V4 to V6 electrodes were placed late",
+        "It indicates a filter change partway through the recording"
+      ],
+      "answer": 1,
+      "why": "The columns are time slices, not separate recordings, so an ectopic beat lands in the column matching when it happened; the bottom rhythm strip is the continuous record. Ectopic origin is not localized by which print column it lands in, and neither late placement nor a filter change produces this.",
+      "lesson": "ed-ekg-l16",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-ekg-q096",
+      "q": "A conventional troponin protocol is in use. When are the draws typically scheduled?",
+      "choices": [
+        "0 and 1 hour",
+        "0 and 30 minutes",
+        "0, 3 and 6 hours",
+        "0 and 12 hours only"
+      ],
+      "answer": 2,
+      "why": "Conventional assays are commonly drawn at 0, 3 and 6 hours; high-sensitivity assays use 0 and 1 hour, or 0 and 2 or 3 hours. A 30-minute repeat is too early for either, and a single 12-hour repeat delays the decision far past what current protocols use.",
+      "lesson": "ed-ekg-l17",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-ekg-q097",
+      "q": "A chest pain patient with a ventricular paced rhythm has a difficult-to-read tracing. What follows from that?",
+      "choices": [
+        "Stop repeating tracings, since they cannot be interpreted",
+        "Keep repeating tracings, draw serial troponins exactly on time, and state out loud that the patient is paced",
+        "Switch to 40 Hz filtering to clean up the pacing artifact",
+        "Obtain a posterior tracing instead"
+      ],
+      "answer": 1,
+      "why": "Pacing distorts ST segments, so the serial troponin carries more weight, but tracings continue so any new change is captured, and the provider must know the rhythm is paced to read it correctly. Filtering does not remove pacing effects, and posterior leads answer a different question.",
+      "lesson": "ed-ekg-l17",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-ekg-q098",
+      "q": "Which tracing label set is complete for a non-standard acquisition?",
+      "choices": [
+        "Patient name and time only",
+        "Name, second identifier, date, exact time, initials, plus the specific deviation such as right-sided or limb leads on torso and why",
+        "Name, date, and the machine's interpretation",
+        "Initials and the bed number"
+      ],
+      "answer": 1,
+      "why": "Identification plus exact time plus the named deviation is what lets the next reader compare tracings safely. Partial labels leave the deviation invisible, and an unlabeled variation will be read as a change in the patient rather than a change in technique.",
+      "lesson": "ed-ekg-l18",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-ekg-q099",
+      "q": "A cath lab activation is cancelled after a provider decides the elevation was early repolarization. What is the correct takeaway for the tech?",
+      "choices": [
+        "Bring chest pain tracings to a provider more selectively next time",
+        "Ask the provider to review the criteria before the next activation",
+        "Continue bringing every chest pain tracing to a provider within minutes",
+        "Screen tracings against the machine interpretation before delivering them"
+      ],
+      "answer": 2,
+      "why": "A cancelled activation is a normal outcome of a fast system, and slowing down is how real infarcts get missed. Selective delivery and machine-based screening both insert a non-provider decision into a provider's job.",
+      "lesson": "ed-ekg-l18",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-ekg-q100",
+      "q": "An unresponsive patient in the resuscitation bay has a monitor showing a narrow regular rhythm at 64 while compressions are paused. No pulse is felt for ten seconds. What is the correct classification and action?",
+      "choices": [
+        "Normal sinus rhythm; recheck in five minutes",
+        "Pulseless electrical activity; resume compressions while the team hunts the cause",
+        "Ventricular fibrillation; defibrillate",
+        "Asystole; confirm in a second lead"
+      ],
+      "answer": 1,
+      "why": "An organized rhythm with no pulse is pulseless electrical activity, a cardiac arrest treated with CPR and a search for the cause, not a shock. The rhythm is organized so it is neither fibrillation nor asystole, and a rechecking delay in a pulseless patient is fatal.",
+      "lesson": "ed-ekg-l01",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-ekg-q101",
+      "q": "Why does pressing the center of an electrode rather than the edges degrade the tracing?",
+      "choices": [
+        "It cracks the adhesive ring",
+        "It pushes gel out from under the sensor and leaves a dry spot where the signal is read",
+        "It heats the gel and dries it",
+        "It creates a static charge on the sensor"
+      ],
+      "answer": 1,
+      "why": "The gel under the sensor is the conductive path, and center pressure displaces it outward. Adhesive cracking, heating and static are not what happens, and none of them explains why the affected lead alone looks fuzzy.",
+      "lesson": "ed-ekg-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-ekg-q102",
+      "q": "A cardiologist compares today's tracing to one from last year and sees new small Q waves and mild ST changes. The only difference is that today's limb electrodes were on the shoulders and hips. What most likely happened?",
+      "choices": [
+        "The patient had a silent infarct between the two tracings",
+        "The machine gain was doubled",
+        "Mason-Likar torso placement shifted the axis and altered Q waves and ST segments",
+        "The paper speed was halved"
+      ],
+      "answer": 2,
+      "why": "Torso placement changes the geometry of the calculated leads, which can create or erase small Q waves and produce ST changes that are pure technique. Doubling gain would enlarge everything uniformly, and halving speed narrows complexes rather than creating Q waves.",
+      "lesson": "ed-ekg-l03",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-ekg-q103",
+      "q": "A pediatric protocol calls for V4R in place of V3. What must be done to the tracing?",
+      "choices": [
+        "Label the tracing so the reader knows which lead is which",
+        "Nothing, because the machine prints lead names automatically",
+        "Record it at 50 mm/s",
+        "Add a second V3 in the standard position"
+      ],
+      "answer": 0,
+      "why": "The machine prints the channel name it was told to print, not the electrode's actual location, so substituted positions are written by hand. Paper speed is unrelated, and duplicating V3 is not how the substitution works.",
+      "lesson": "ed-ekg-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-ekg-q104",
+      "q": "In which situation is a 40 Hz low-pass filter acceptable on a diagnostic tracing?",
+      "choices": [
+        "Routinely, to produce cleaner tracings",
+        "On every pediatric tracing",
+        "Whenever the machine interpretation is uncertain",
+        "Only when noise makes the tracing unreadable, and then it is written on the paper"
+      ],
+      "answer": 3,
+      "why": "The 40 Hz setting shaves real QRS detail and can attenuate or distort ST findings, so it is a labeled last resort after physical fixes fail. Children need a higher upper cutoff, not a lower one, and no filter resolves a machine interpretation.",
+      "lesson": "ed-ekg-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-ekg-q105",
+      "q": "A telemetry electrode has a curling edge and dry gel at 0300 and is generating repeated false alarms. What is the correct framing of replacing it?",
+      "choices": [
+        "It is housekeeping and can wait for day shift",
+        "It is patient safety work, because every false alarm erodes trust in the monitor",
+        "It requires an order from the provider",
+        "It should be taped down rather than replaced"
+      ],
+      "answer": 1,
+      "why": "Nuisance alarms train staff to ignore the monitor, so replacing failing electrodes protects the response to real ones. No order is needed for routine electrode care, and taping over dry gel does not restore conduction.",
+      "lesson": "ed-ekg-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-ekg-q106",
+      "q": "A tracing's calibration pulse is exactly ten small boxes tall and the footer reads 25 mm/s. What does this confirm?",
+      "choices": [
+        "That the machine's clock is correct",
+        "That the diagnostic filter was applied",
+        "That standard gain and standard paper speed were used, so amplitudes and intervals can be read directly",
+        "That the limb electrodes were on the limbs"
+      ],
+      "answer": 2,
+      "why": "The calibration pulse proves 10 mm/mV and the footer proves 25 mm/s, which together make millimeters mean millivolts and boxes mean time. None of it says anything about the clock, the filter setting or where the electrodes were placed.",
+      "lesson": "ed-ekg-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-ekg-q107",
+      "q": "The monitor shows a flat line in lead II. The patient is across the room with her eyes open, watching television. What is the first action?",
+      "choices": [
+        "Announce an arrest and start compressions",
+        "Look at the patient and check the lead connections and gain, then confirm in a second lead",
+        "Increase the paper speed and reprint",
+        "Document asystole and notify the family"
+      ],
+      "answer": 1,
+      "why": "A disconnected wire and a monitor turned down both look like death, and this patient is clearly perfusing. Confirming in a second lead after checking leads and gain is the required step before believing asystole. Paper speed changes nothing about a missing signal.",
+      "lesson": "ed-ekg-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-ekg-q108",
+      "q": "A patient with inferior ST elevation is being prepared for the cath lab. Why does the inferior location specifically deserve extra attention?",
+      "choices": [
+        "Inferior infarcts are usually benign",
+        "Inferior leads are the hardest to place correctly",
+        "Inferior elevation always means a posterior infarct",
+        "Roughly 40 percent involve the right ventricle, which changes how the patient tolerates nitroglycerin"
+      ],
+      "answer": 3,
+      "why": "Right ventricular involvement is common with inferior infarcts, and those patients are preload dependent, so nitroglycerin can drop the pressure hard. Inferior infarcts are not benign, limb placement is straightforward, and posterior involvement is a separate finding confirmed with posterior leads.",
+      "lesson": "ed-ekg-l09",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-ekg-q109",
+      "q": "A patient in atrial fibrillation has a monitor rate of 164 and a palpated radial rate of 104. What does the difference tell the team?",
+      "choices": [
+        "The monitor is miscounting artifact",
+        "Some beats are too weak to open the aortic valve, so the patient is not perfusing every beat",
+        "The patient has converted to sinus rhythm",
+        "The radial artery is occluded"
+      ],
+      "answer": 1,
+      "why": "The pulse deficit means ventricular contractions are occurring without producing a palpable pulse, which signals poor perfusion; report both numbers with a blood pressure and get a 12-lead. Artifact would not produce a consistent organized fast rate, and conversion would make the two rates match.",
+      "lesson": "ed-ekg-l10",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-ekg-q110",
+      "q": "A patient has just had a blocked coronary artery reopened. The monitor shows a wide rhythm at 76 with no P waves. He is alert with a blood pressure of 118/70. What is this most likely?",
+      "choices": [
+        "Ventricular tachycardia requiring immediate defibrillation",
+        "Agonal rhythm preceding arrest",
+        "Accelerated idioventricular rhythm, a common and usually benign finding after reperfusion",
+        "Complete heart block"
+      ],
+      "answer": 2,
+      "why": "Wide, 40 to 100, no P waves, right after reperfusion, in a stable patient, is accelerated idioventricular rhythm. Ventricular tachycardia runs 120 to 250, agonal rhythm runs 20 to 40 in a dying patient, and complete block shows P waves marching independently.",
+      "lesson": "ed-ekg-l11",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-ekg-q111",
+      "q": "A 57-year-old with crushing chest pain for 20 minutes has broad, tall, symmetric T waves in V2 through V4 and no ST elevation yet. What should you do?",
+      "choices": [
+        "File it as normal and wait for the repeat at 30 minutes",
+        "Bring it to a provider now, because hyperacute T waves are often the earliest STEMI change",
+        "Repeat the tracing at half standard gain",
+        "Assume early repolarization because there is no elevation"
+      ],
+      "answer": 1,
+      "why": "Hyperacute T waves can precede any elevation, so the absence of elevation is not reassurance in a patient with ongoing pain. Waiting loses muscle, half standard gain would shrink real findings further, and early repolarization is a stable pattern in a well young patient.",
+      "lesson": "ed-ekg-l12",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-ekg-q112",
+      "q": "A 12-lead has clean limb leads and one V lead that is thick and fuzzy while the other five V leads are clean. Where is the problem?",
+      "choices": [
+        "The ground electrode",
+        "The machine's notch filter",
+        "The single chest electrode that lead uses",
+        "All ten electrodes, from a dry pack"
+      ],
+      "answer": 2,
+      "why": "Noise confined to one lead points at the one electrode that lead depends on. A ground problem or a dry pack would degrade many leads at once, and a notch filter affects the whole tracing uniformly rather than one channel.",
+      "lesson": "ed-ekg-l13",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-ekg-q113",
+      "q": "A 9-year-old with exertional syncope and a family history of drowning deaths needs an ECG. Which finding is the team specifically screening for?",
+      "choices": [
+        "A prolonged corrected QT interval",
+        "T wave inversion in V1 through V3",
+        "Sinus arrhythmia",
+        "Right axis deviation"
+      ],
+      "answer": 0,
+      "why": "Exertional syncope, seizures, or a family history of sudden death or drowning triggers long QT screening, with thresholds around 460 to 480 ms interpreted by the provider. Right precordial T inversion, sinus arrhythmia and newborn right axis deviation are all normal pediatric findings.",
+      "lesson": "ed-ekg-l14",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-ekg-q114",
+      "q": "A right-sided tracing is obtained. What is the correct relationship between it and the standard 12-lead?",
+      "choices": [
+        "It replaces the standard tracing in the chart",
+        "It supplements the standard tracing; both are kept, timed and initialed",
+        "It replaces the standard tracing only for inferior infarcts",
+        "It is kept only if it shows elevation"
+      ],
+      "answer": 1,
+      "why": "The extra tracing adds a view the standard twelve cover poorly, and the standard one remains the comparison baseline for the next tracing. Discarding either breaks serial comparison, and keeping a tracing conditional on its result hides negative information.",
+      "lesson": "ed-ekg-l15",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-ekg-q115",
+      "q": "Why is 5 mm/mV gain sometimes used deliberately?",
+      "choices": [
+        "To make ST elevation easier to see",
+        "To speed up acquisition",
+        "To keep very tall complexes from overlapping, as in left ventricular hypertrophy",
+        "To reduce 60-cycle interference"
+      ],
+      "answer": 2,
+      "why": "Half standard gain keeps large voltages from writing over each other, at the cost of halving every ST deviation on the page, which is why it must be labeled. It makes elevation harder to see, not easier, and it has nothing to do with acquisition time or AC noise.",
+      "lesson": "ed-ekg-l16",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-ekg-q116",
+      "q": "A 63-year-old woman's chest pain resolves after nitroglycerin and the team relaxes. Her tracing now shows biphasic T waves in V2 and V3. What is the correct response?",
+      "choices": [
+        "Hand the tracing over with the words she is pain free now and this is new",
+        "Wait for the next scheduled tracing since she feels better",
+        "Document resolution and downgrade her acuity",
+        "Repeat the tracing after she eats"
+      ],
+      "answer": 0,
+      "why": "Biphasic or deep symmetric T waves in V2 and V3 in a pain-free patient is the Wellens pattern, signaling a critically narrowed left anterior descending artery, and the pain-free window is exactly when it appears. Relief is not reassurance here, and a patient heading toward catheterization stays nothing by mouth.",
+      "lesson": "ed-ekg-l17",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-ekg-q117",
+      "q": "Which handoff sentence contains all four required elements?",
+      "choices": [
+        "This looks like pericarditis to me, take a look when you can",
+        "Here is the ECG from bed 4",
+        "Bed 4, the 58-year-old with chest pressure, this tracing is from two minutes ago, there is elevation in II, III and aVF, can you look now",
+        "The machine says acute MI suspected, it is in the rack"
+      ],
+      "answer": 2,
+      "why": "Who, what you saw, when, and what you want, delivered to a person. Naming a diagnosis exceeds the role, a bare handoff carries no findings or timing, and leaving a tracing in a rack is the single most common preventable delay.",
+      "lesson": "ed-ekg-l18",
+      "difficulty": 2
+    }
+  ]
+}

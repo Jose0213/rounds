@@ -1,0 +1,1232 @@
+{
+  "schema": 1,
+  "extends": "ed-phlebotomy",
+  "checks": {
+    "ed-phlebotomy-l01": [
+      {
+        "q": "A trauma patient arrives unresponsive with no name and is banded as Trauma Alpha with a temporary number. The nurse asks you to draw a type and screen. What do you do?",
+        "choices": [
+          "Use the temporary identification number as the identifier and draw, labeling at the bedside",
+          "Wait until the registration clerk finds a name before drawing anything",
+          "Label the tube with the bed number and the word trauma",
+          "Draw and label at the lab window once the real name is entered"
+        ],
+        "answer": 0,
+        "why": "A temporary identification number is a valid identifier and it stays on until a licensed process replaces it. Waiting for a name delays a blood bank specimen on a patient who may need uncrossmatched blood in minutes. A bed number is never an identifier. Labeling anywhere but the bedside is how tubes get swapped.",
+        "difficulty": 2
+      },
+      {
+        "q": "A troponin drawn at 0410 is labeled with the time the tube reached the lab, 0455. Why is that a problem?",
+        "choices": [
+          "The lab will run the wrong assay on it",
+          "Troponin is interpreted against the collection time, so a serial comparison is now built on a 45-minute error",
+          "The tube additive expires 30 minutes after collection",
+          "The specimen must be redrawn because the volume is no longer valid"
+        ],
+        "answer": 1,
+        "why": "Troponin, drug levels, lactate clearance and blood alcohol are all interpreted against collection time. A 45-minute shift changes a delta-troponin interpretation. The assay does not depend on the label time, no additive expires on that clock, and the volume is unaffected.",
+        "difficulty": 2
+      }
+    ],
+    "ed-phlebotomy-l02": [
+      {
+        "q": "You must draw blood cultures, a light blue tube, a gold tube and a lavender tube. Which sequence is correct?",
+        "choices": [
+          "Light blue, cultures, gold, lavender",
+          "Cultures, gold, light blue, lavender",
+          "Cultures, light blue, gold, lavender",
+          "Lavender, cultures, light blue, gold"
+        ],
+        "answer": 2,
+        "why": "Cultures go first to protect a sterile broth, then citrate, then serum, then EDTA. Putting gold before light blue carries clot activator into the citrate tube and falsely shortens the PT and aPTT. Lavender anywhere but last before gray carries EDTA potassium into the chemistry tube.",
+        "difficulty": 2
+      },
+      {
+        "q": "A gray tube was accidentally drawn before the green heparin tube. Why does the order place gray last?",
+        "choices": [
+          "Gray tubes lose vacuum faster than other tubes",
+          "Sodium fluoride and potassium oxalate interfere with many other assays, so nothing should follow gray",
+          "Gray tubes must be filled before the tourniquet is released",
+          "Fluoride carryover causes clotting in heparin tubes"
+        ],
+        "answer": 1,
+        "why": "Gray is last because its fluoride and oxalate poison other assays if carried forward. Vacuum life is the same across tubes, tourniquet timing is unrelated to tube order, and fluoride does not clot a heparin tube — it corrupts its chemistry results.",
+        "difficulty": 2
+      }
+    ],
+    "ed-phlebotomy-l03": [
+      {
+        "q": "A CBC comes back with a hematocrit lower than expected and an elevated MCHC on a patient with no anemia symptoms. The lavender tube in the rack is filled only about halfway. What happened?",
+        "choices": [
+          "The tube was overfilled and clotted",
+          "The tube was drawn after a gray tube",
+          "Excess EDTA relative to blood shrank the red cells, lowering hematocrit and raising measured MCHC",
+          "The specimen was kept on ice"
+        ],
+        "answer": 2,
+        "why": "An underfilled EDTA tube concentrates the anticoagulant, which shrinks red cells, dropping hematocrit and raising MCHC. Overfilling causes clotting, not cell shrinkage. Gray carryover corrupts chemistries, not red cell indices, and ice is not the issue here.",
+        "difficulty": 3
+      },
+      {
+        "q": "Police request a legal blood alcohol on a patient in the ED. Which preparation is correct?",
+        "choices": [
+          "Clean with 70 percent isopropyl alcohol and draw into a gold SST",
+          "Clean with chlorhexidine gluconate alone and draw into a lavender tube",
+          "Clean with povidone-iodine or chlorhexidine, draw into a gray tube, and document chain of custody",
+          "No skin prep is needed because alcohol evaporates before the needle enters"
+        ],
+        "answer": 2,
+        "why": "Legal alcohol needs a non-alcohol prep, a gray fluoride-oxalate tube, and an unbroken documented chain of custody. An isopropyl wipe gives the defense an argument. Lavender is not the alcohol tube, and skipping prep entirely is an infection risk and still a documentation failure.",
+        "difficulty": 2
+      }
+    ],
+    "ed-phlebotomy-l04": [
+      {
+        "q": "You are drawing from the left arm. A peripheral IV with normal saline is infusing in the left forearm, and the right arm has a dialysis fistula. What is the best option?",
+        "choices": [
+          "Draw above the infusing IV on the left arm",
+          "Draw from the left antecubital fossa, which is above the IV but on a different vein path",
+          "Have the IV stopped for at least 2 minutes and draw below it on the left arm, documenting the circumstance",
+          "Draw distal to the fistula on the right arm, which is technically past it"
+        ],
+        "answer": 2,
+        "why": "The fistula arm is off limits entirely, distal or not. Drawing above an infusing IV dilutes the sample with the fluid running toward the heart. The workable answer is to stop the infusion at least 2 minutes and draw below it, noting the circumstance so the lab and clinician know.",
+        "difficulty": 3
+      },
+      {
+        "q": "You clean the site and stick immediately while the alcohol is still visibly wet. What are the two consequences?",
+        "choices": [
+          "Faster flow and a diluted sample",
+          "Stinging for the patient and hemolysis of the specimen",
+          "Clotting in the tube and a shortened PT",
+          "Loss of tube vacuum and a QNS specimen"
+        ],
+        "answer": 1,
+        "why": "Wet alcohol carried in by the needle stings and lyses red cells directly, hemolyzing the sample. It does not dilute the specimen, does not affect clotting times, and does not touch the tube vacuum.",
+        "difficulty": 1
+      }
+    ],
+    "ed-phlebotomy-l05": [
+      {
+        "q": "A chemistry panel on a visibly pink specimen shows potassium 6.4, LDH high, AST high, and glucose lower than the fingerstick taken minutes earlier. What single process explains all four?",
+        "choices": [
+          "Hemolysis, which releases intracellular potassium, LDH and AST while glucose is consumed and diluted",
+          "EDTA carryover from a lavender tube drawn first",
+          "A tourniquet left on for four minutes",
+          "The specimen being drawn above an infusing IV"
+        ],
+        "answer": 0,
+        "why": "Only hemolysis produces that exact combination: potassium, LDH, AST, magnesium and phosphate up, glucose and sodium down, with visible pink plasma. EDTA carryover raises potassium but also drops calcium and does not raise LDH. A long tourniquet hemoconcentrates without a pink specimen. IV dilution lowers, not raises, potassium.",
+        "difficulty": 3
+      },
+      {
+        "q": "A rack of tubes has been sitting since last month. One tube's printed expiration date has passed. What is the practical risk of using it?",
+        "choices": [
+          "The plastic leaches into the sample and raises the lactate",
+          "Degraded vacuum causes a short draw and weakened additive allows clotting",
+          "The tube will be rejected only if the lab notices the lot number",
+          "Nothing, because expiration applies only to culture bottles"
+        ],
+        "answer": 1,
+        "why": "Expired tubes lose vacuum, so they underfill, and the additive loses potency, so anticoagulated tubes clot. Both are rejection reasons. Expiration is not a paperwork technicality, applies to all evacuated tubes, and has nothing to do with lactate.",
+        "difficulty": 2
+      }
+    ],
+    "ed-phlebotomy-l06": [
+      {
+        "q": "You have a syringe draw for blood cultures and obtained a full 20 mL. Which bottle do you inoculate first, and why?",
+        "choices": [
+          "Aerobic first, because most pathogens are aerobes",
+          "Either order, because a syringe has no air in it",
+          "Anaerobic first, because there is no line air to worry about and anaerobes are the more fragile recovery",
+          "Aerobic first, because the syringe pushes air ahead of the blood"
+        ],
+        "answer": 2,
+        "why": "With a syringe there is no tubing air, so the priority flips to protecting fragile anaerobes from air entering as the syringe empties. Aerobic-first is the butterfly rule, driven by the roughly 0.5 mL of air in the tubing. Order is not arbitrary in either case.",
+        "difficulty": 2
+      },
+      {
+        "q": "A 6-week-old with a fever needs blood cultures. Which volume approach is correct?",
+        "choices": [
+          "8 to 10 mL per bottle as in an adult, since volume drives sensitivity",
+          "Weight-based pediatric volume, commonly 1 to 3 mL, per the department chart",
+          "Fill the aerobic bottle completely and skip the anaerobic",
+          "Any volume, since pediatric bottles autocorrect for fill"
+        ],
+        "answer": 1,
+        "why": "Pediatric volumes are weight-based, commonly 1 to 3 mL for infants. Drawing an adult volume from an infant is a real harm given a total blood volume near 80 to 100 mL/kg. Bottles do not autocorrect, and the aerobic-only shortcut is a lab-specific rule for a failed draw, not the plan.",
+        "difficulty": 2
+      }
+    ],
+    "ed-phlebotomy-l07": [
+      {
+        "q": "A hypothermic patient brought in from outside has no palpable veins. Which single physiologic fix matches the cause?",
+        "choices": [
+          "Warm the site for 3 to 5 minutes, because cold constricts veins",
+          "Tighten the tourniquet further to force filling",
+          "Slap the antecubital fossa firmly to raise the vein",
+          "Use a smaller 25 G needle so a small vein can be hit"
+        ],
+        "answer": 0,
+        "why": "Cold causes vasoconstriction, so warmth reverses the actual cause. A tighter tourniquet that obliterates arterial inflow makes veins flatter, not fuller. Slapping bruises and hemolyzes. A 25 G needle hemolyzes and does not make a constricted vein appear.",
+        "difficulty": 2
+      },
+      {
+        "q": "A blood pressure cuff is being used as a tourniquet. To what pressure should it be inflated?",
+        "choices": [
+          "Above systolic, so nothing escapes the arm",
+          "Exactly at the mean arterial pressure",
+          "As high as the patient tolerates",
+          "About 40 mmHg, which is below diastolic, so arterial inflow continues while venous return is blocked"
+        ],
+        "answer": 3,
+        "why": "About 40 mmHg sits below diastolic, letting arteries fill the arm while veins cannot drain. Above systolic stops inflow and empties the veins. Mean arterial pressure and patient tolerance are not the target — the physiology sets the number.",
+        "difficulty": 2
+      }
+    ],
+    "ed-phlebotomy-l08": [
+      {
+        "q": "A 20-gauge catheter is in the left forearm and a CT angiogram with a power injector is ordered. What is the issue?",
+        "choices": [
+          "The gauge is fine but the color coding is wrong for contrast",
+          "Power injection usually needs an 18 to 20 G in the antecubital fossa; a distal forearm line may not tolerate the flow rate",
+          "20 G is too large and will cause extravasation",
+          "Any working line is acceptable for a power injector"
+        ],
+        "answer": 1,
+        "why": "Power injectors push contrast at high flow rates, and a smaller or more distal catheter can rupture the vein, which is why an 18 to 20 G antecubital line is the usual radiology requirement. Larger bore is protective, not risky, and color coding carries no independent meaning.",
+        "difficulty": 3
+      },
+      {
+        "q": "During an IV start the catheter threads only partway, so you begin to pull it back and consider re-advancing the needle to straighten it. Why is that dangerous?",
+        "choices": [
+          "It causes immediate phlebitis",
+          "It falsely triggers the safety mechanism",
+          "The needle can shear the plastic catheter and send a fragment into the bloodstream as a catheter embolism",
+          "It reverses flashback and hides a missed vein"
+        ],
+        "answer": 2,
+        "why": "Re-advancing a needle into a partly withdrawn catheter is the classic mechanism for catheter embolism, which requires a high tourniquet, immobility and urgent imaging. Phlebitis is an inflammatory complication over time, and neither the safety device nor flashback explains the harm.",
+        "difficulty": 2
+      }
+    ],
+    "ed-phlebotomy-l09": [
+      {
+        "q": "A nasopharyngeal swab for influenza comes back negative on a patient with classic symptoms. The swab went about one centimeter into the nostril, angled upward. What is the technique error?",
+        "choices": [
+          "The swab should go straight back along the floor of the nose to roughly the nostril-to-ear distance, not upward and shallow",
+          "The swab should be rotated in the nostril opening for 10 seconds",
+          "Both nostrils must always be swabbed with separate swabs",
+          "The swab needed to be moistened with saline first"
+        ],
+        "answer": 0,
+        "why": "A shallow, upward swab samples the anterior nostril and produces false negatives. The correct path is straight back parallel to the palate along the nasal floor, about nostril-to-ear depth, rotated in place. Rotating at the opening is the same error, and neither two nostrils nor pre-moistening fixes depth.",
+        "difficulty": 2
+      },
+      {
+        "q": "A urine dipstick is read four minutes after dipping instead of at the printed times. Which errors result?",
+        "choices": [
+          "Falsely negative blood and protein",
+          "Falsely positive glucose, ketones and leukocytes",
+          "No change, because the pads are stable once wet",
+          "The specific gravity reads high and nothing else changes"
+        ],
+        "answer": 1,
+        "why": "A strip read late develops color it should not have, giving falsely positive glucose, ketones and leukocytes. The pads are timed chemical reactions, not stable endpoints, and the error runs toward false positives rather than false negatives.",
+        "difficulty": 2
+      }
+    ],
+    "ed-phlebotomy-l10": [
+      {
+        "q": "A 3 kg neonate has already had 6 mL of blood drawn in the last 24 hours. The team wants another 5 mL panel. What is the concern, in numbers?",
+        "choices": [
+          "None, since 5 mL is a small tube",
+          "At roughly 80 to 100 mL/kg, this baby has about 250 mL total, so 11 mL approaches a meaningful share of a 24-hour limit",
+          "The tubes will be QNS below 5 mL, so it must be drawn",
+          "Neonatal limits apply only after 8 weeks of life"
+        ],
+        "answer": 1,
+        "why": "About 80 to 100 mL/kg gives roughly 250 mL total in a 3 kg infant, so cumulative draws matter against limits commonly set at 1 to 5 percent in 24 hours. Microtainers run on 250 to 500 microliters, so QNS is not forcing a 5 mL draw, and the 10 percent figure is the 8-week limit, not a delay on the 24-hour one.",
+        "difficulty": 3
+      },
+      {
+        "q": "A newborn screening card is filled by layering a second drop onto a circle that looked thin, and it is dried upright against a warm vent. What happens?",
+        "choices": [
+          "The card is rejected and the family is called back, because circles must be filled completely from one side only and dried flat away from heat",
+          "Nothing, as long as the circles are visibly full",
+          "Only the second circle is invalid and the rest are run",
+          "The card is acceptable if the layering is documented"
+        ],
+        "answer": 0,
+        "why": "Layered drops and heat-dried or upright-dried cards are rejected outright, and the family is recalled for a repeat heel stick. Visible fullness is not the standard, layering invalidates the card rather than one circle, and documentation does not rescue a physically defective specimen.",
+        "difficulty": 2
+      }
+    ],
+    "ed-phlebotomy-l11": [
+      {
+        "q": "You are about to stick a forearm and want to mark the vein you found. Where does the pen mark go?",
+        "choices": [
+          "Directly over the entry point so you cannot lose it",
+          "Beside the site, never on it, so ink is not carried in by the needle",
+          "On the tourniquet, aligned with the vein",
+          "No mark is ever acceptable"
+        ],
+        "answer": 1,
+        "why": "Marking beside the site keeps the landmark without pushing ink through the skin. Marking on the entry point puts ink in the puncture track. A mark on the tourniquet moves when the tourniquet does, and marking itself is a standard, useful step.",
+        "difficulty": 1
+      },
+      {
+        "q": "A patient asks you to use a foot vein because the arms never work. What is the correct response?",
+        "choices": [
+          "Use it, since the patient has consented to the site",
+          "Refuse all alternate sites and hand off immediately",
+          "Use the ankle rather than the foot, which is exempt from the rule",
+          "Explain that foot and ankle veins generally require a provider order and are avoided in diabetes and peripheral vascular disease"
+        ],
+        "answer": 3,
+        "why": "Foot and ankle draws usually need a provider order and are avoided in diabetics and patients with peripheral vascular disease because of thrombophlebitis and infection risk. Patient consent does not create the order, the ankle is under the same rule, and there are other alternate sites to try before handing off.",
+        "difficulty": 2
+      }
+    ],
+    "ed-phlebotomy-l12": [
+      {
+        "q": "A peripheral IV has been in a patient's forearm for 80 hours. It flushes easily, the site is clean, and there is no pain. What should happen?",
+        "choices": [
+          "Leave it, since current guidance replaces adult peripheral lines when clinically indicated rather than at a fixed 72 to 96 hour interval, unless local policy says otherwise",
+          "Remove it immediately because it has passed 72 hours",
+          "Remove it and restart in the same vein distally",
+          "Leave it but stop using it for blood products"
+        ],
+        "answer": 0,
+        "why": "Routine fixed-interval replacement of a working adult peripheral line is no longer required; removal is clinically indicated by pain, redness, swelling, leaking, occlusion or a failed dressing. Local policy can still differ. There is no rule restricting a working line to non-blood use.",
+        "difficulty": 2
+      },
+      {
+        "q": "A saline flush meets firm resistance on a line that ran fine an hour ago. What do you do?",
+        "choices": [
+          "Push harder with a 3 mL syringe, which generates more pressure",
+          "Attach a 10 mL syringe and push steadily until it clears",
+          "Stop, do not force it, and notify the nurse — forcing can dislodge a clot or rupture the vein",
+          "Aspirate with maximum pull to break the clot backward"
+        ],
+        "answer": 2,
+        "why": "Never force a flush against resistance: you can push a clot into circulation or rupture the vein. A small syringe generates higher pressure and is exactly the wrong tool, steady force is still force, and hard aspiration collapses the vein and hemolyzes any sample.",
+        "difficulty": 2
+      }
+    ],
+    "ed-phlebotomy-l13": [
+      {
+        "q": "A culture set drawn with flawless skin technique grows Micrococcus. Review shows the bottle caps were popped and the bottles filled straight away. What is the root cause?",
+        "choices": [
+          "The rubber septum under the cap is not sterile and was never scrubbed with alcohol",
+          "The bottles were expired",
+          "The blood was drawn too quickly",
+          "The tourniquet was left on too long"
+        ],
+        "answer": 0,
+        "why": "Skin prep is only half the job: the septum under the plastic cap is not sterile and must be scrubbed with 70 percent alcohol and dried. Expired bottles fail differently, and neither draw speed nor tourniquet time introduces skin flora into a sterile broth.",
+        "difficulty": 2
+      },
+      {
+        "q": "Both sets of a two-set culture grow Staphylococcus aureus at 18 hours. How should this be read?",
+        "choices": [
+          "Contamination, because staphylococci are skin organisms",
+          "Almost certainly a true bloodstream infection: S. aureus is rarely a contaminant, both sets are positive, and it grew early",
+          "Uninterpretable without a third set",
+          "Contamination, because growth before 24 hours indicates surface flora"
+        ],
+        "answer": 1,
+        "why": "Three signals point the same way: S. aureus is almost never dismissed as a contaminant, concordant growth in both sets argues against a skin pickup, and true pathogens typically grow within 24 to 48 hours while contaminants appear later. Coagulase-negative staphylococci are the skin group, not S. aureus.",
+        "difficulty": 3
+      }
+    ],
+    "ed-phlebotomy-l14": [
+      {
+        "q": "The lab calls: a light blue tube is rejected as QNS. The draw was a slow trickle from a hand vein with a butterfly and no discard tube. Which two fixes apply?",
+        "choices": [
+          "Use a smaller needle and pull with a larger syringe",
+          "Split the sample with the chemistry tube and resubmit",
+          "Refrigerate the next specimen and send it faster",
+          "Draw a discard tube first to clear the butterfly tubing air, and fill the citrate tube fully to the line"
+        ],
+        "answer": 3,
+        "why": "Butterfly tubing holds roughly 0.5 mL of air that steals vacuum from the first tube, so a discard tube protects the fill, and citrate must reach the line for the 9:1 ratio. A smaller needle and hard syringe pull cause hemolysis, splitting a tube is never the answer, and refrigeration does not fix volume.",
+        "difficulty": 3
+      },
+      {
+        "q": "A specimen arrives with plasma that is milky and fatty-looking, and several chemistry results are flagged as unreliable. What is this and what does it do?",
+        "choices": [
+          "Icterus, which discolors the sample from bilirubin",
+          "Lipemia, which interferes optically with many assays",
+          "Hemolysis, which releases intracellular potassium",
+          "Clotting, which prevents the analyzer from aspirating"
+        ],
+        "answer": 1,
+        "why": "Milky, fatty plasma is lipemia, and it interferes optically with many assays. Icterus is the deep yellow of high bilirubin, hemolysis turns plasma pink or red, and a clot is a physical obstruction rather than an optical one.",
+        "difficulty": 2
+      }
+    ],
+    "ed-phlebotomy-l15": [
+      {
+        "q": "Which is the correct arterial site order for a blood gas, and why does the first choice come first?",
+        "choices": [
+          "Brachial first, because it is the largest vessel",
+          "Femoral first, because it is easiest to palpate in shock",
+          "Radial first, because the hand has ulnar collateral supply and the vessel is superficial and compressible against bone",
+          "Any site, since collateral supply is equivalent throughout the arm"
+        ],
+        "answer": 2,
+        "why": "Radial is first because of ulnar collateral flow, superficial position and easy compression. Brachial is second with poorer collaterals and the median nerve nearby, and femoral is last and provider-performed. Collateral supply is not equivalent across sites — that is the entire reason for the ranking.",
+        "difficulty": 2
+      },
+      {
+        "q": "A bilirubin on a jaundiced newborn is drawn correctly but the tube sits under the bright overhead light for 40 minutes. What happens?",
+        "choices": [
+          "Nothing, since bilirubin is stable in a gel tube",
+          "The result rises falsely because light concentrates the sample",
+          "The tube clots from the warmth",
+          "Light degrades bilirubin, so the reported result is falsely low"
+        ],
+        "answer": 3,
+        "why": "Bilirubin is light-sensitive and degrades on exposure, falsely lowering the result — which in a newborn can mean undertreated jaundice. Light does not concentrate a sample or clot a tube, and a gel tube offers no light protection.",
+        "difficulty": 2
+      }
+    ],
+    "ed-phlebotomy-l16": [
+      {
+        "q": "An i-STAT cartridge is taken straight from the refrigerator and run immediately. What is the likely outcome?",
+        "choices": [
+          "A slightly delayed but valid result",
+          "An error or unreliable result, because cartridges need room-temperature equilibration, commonly about 5 minutes for a single cartridge",
+          "A falsely normal potassium",
+          "The device locks out the operator identification"
+        ],
+        "answer": 1,
+        "why": "Cartridges are temperature-sensitive and require equilibration, commonly about 5 minutes individually and up to an hour for a box. A cold cartridge errors rather than producing a valid or predictably biased result, and operator lockout is a competency mechanism, not a temperature one.",
+        "difficulty": 2
+      },
+      {
+        "q": "Your device fails its control at 0700, and you realize two patient glucoses were run at 0630. What must happen?",
+        "choices": [
+          "Nothing, since those results preceded the failure",
+          "Repeat only the controls and continue",
+          "Notify the point-of-care coordinator so results run since the last passing control can be reviewed",
+          "Delete the two results from the chart"
+        ],
+        "answer": 2,
+        "why": "The device was unproven between the last passing control and the failure, so results in that window have to be reviewed. Timing alone does not clear them, repeating controls does not address the patient results already reported, and results are never deleted from a chart.",
+        "difficulty": 3
+      }
+    ],
+    "ed-phlebotomy-l17": [
+      {
+        "q": "A patient was transfused six weeks ago and has a type and screen drawn today at 0800. Until when is it generally valid?",
+        "choices": [
+          "72 hours, because transfusion or pregnancy within the preceding 3 months can generate new antibodies quickly",
+          "30 days, since the ABO type does not change",
+          "24 hours, because red cells degrade in the tube",
+          "Indefinitely, once an electronic crossmatch is on file"
+        ],
+        "answer": 0,
+        "why": "Recent exposure to foreign red cells can produce new antibodies, so the specimen is generally valid 72 hours when the patient was transfused or pregnant within 3 months or the history is unknown. The ABO type is stable but the antibody screen is not, and electronic crossmatch requires a current screen plus two independent ABO determinations.",
+        "difficulty": 2
+      },
+      {
+        "q": "A 28-year-old woman in hemorrhagic shock needs blood before any type is known. What is issued, and what still gets drawn?",
+        "choices": [
+          "Group AB red cells, and no specimen until she is stable",
+          "Uncrossmatched group O red cells, with O negative generally reserved for females of childbearing potential, while the type and screen specimen is still drawn as early as possible",
+          "Type-specific red cells after a rapid bedside typing card only",
+          "Plasma only, until a full crossmatch is complete"
+        ],
+        "answer": 1,
+        "why": "Emergency release means uncrossmatched group O red cells with O negative prioritized for females of childbearing potential, and the specimen is still drawn early so type-specific blood can follow. AB is the universal plasma type, not the universal red cell type, and delaying the specimen prolongs the period of uncrossmatched transfusion.",
+        "difficulty": 3
+      }
+    ],
+    "ed-phlebotomy-l18": [
+      {
+        "q": "A colleague splashes a patient's blood into her eye. What is the correct immediate action?",
+        "choices": [
+          "Rub the eye with gauze, then report at the end of the shift",
+          "Instill an antiseptic eye drop and continue working",
+          "Flush the eye at the eyewash or with saline for 15 minutes, then report immediately",
+          "Wait for source patient results before leaving the department"
+        ],
+        "answer": 2,
+        "why": "Mucous membrane exposures get a 15-minute flush with water or saline, then immediate reporting, because the prophylaxis clock starts at exposure. Rubbing worsens the injury, antiseptics are not used on mucous membranes for this, and waiting on source results burns the window.",
+        "difficulty": 2
+      },
+      {
+        "q": "The sharps container in your area is full to the brim and the needle you are holding will not drop in. What do you do?",
+        "choices": [
+          "Push it in with the needle cap",
+          "Take the sharp to a different container that is not more than three-quarters full, and have the full one replaced",
+          "Recap the needle two-handed and set it aside until a container is swapped",
+          "Reach in and press the contents down"
+        ],
+        "answer": 1,
+        "why": "Containers are exchanged at about three-quarters full precisely to prevent this. Use another container and get the full one replaced. Pushing, reaching in, and two-handed recapping are each documented mechanisms of sharps injury.",
+        "difficulty": 1
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "id": "ed-phlebotomy-q064",
+      "q": "You enter a room and the patient has no wristband. The nurse is down the hall and the order is a routine CBC. What do you do?",
+      "choices": [
+        "Do not draw; have the patient banded first, then identify with two identifiers",
+        "Draw and ask the nurse to band the patient afterward",
+        "Draw and label using the name on the door plaque",
+        "Ask the patient to confirm the name on your label and draw"
+      ],
+      "answer": 0,
+      "why": "No band means no draw. The band is the anchor the whole identification system rests on, and getting it placed costs seconds. Drawing first and banding later leaves an unverifiable specimen, a door plaque is a location identifier, and asking the patient to confirm your label is passive identification a confused or polite patient will agree to.",
+      "lesson": "ed-phlebotomy-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q065",
+      "q": "Two technicians are labeling tubes at the same counter outside two rooms. What is the specific hazard this creates?",
+      "choices": [
+        "Delayed transport to the lab",
+        "A specimen swap that produces a confident wrong result on the wrong patient",
+        "Hemolysis from handling the tubes twice",
+        "Loss of tube vacuum before the additive mixes"
+      ],
+      "answer": 1,
+      "why": "Unlabeled tubes at a shared counter is the classic path to a fatal swap, and a mislabeled blood bank tube can end in an incompatible transfusion. Transport delay, hemolysis and vacuum loss are real problems in other contexts but none of them is the reason this practice is prohibited.",
+      "lesson": "ed-phlebotomy-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q066",
+      "q": "An intubated, sedated patient needs a draw. He cannot answer. Which approach meets the two-identifier requirement?",
+      "choices": [
+        "Room number plus the chart on the door",
+        "The nurse pointing to the correct bed",
+        "The wristband plus a second source such as identity confirmed by the nurse or a family member at the bedside, per policy",
+        "The medical record number alone, since it is unique"
+      ],
+      "answer": 2,
+      "why": "When the patient cannot speak, the band plus a second source substitutes for the active question. Room number and bed location are never identifiers, a nurse pointing at a bed is a location cue rather than a confirmed identity, and one identifier is one short regardless of how unique it is.",
+      "lesson": "ed-phlebotomy-l01",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q067",
+      "q": "A patient on warfarin has an INR of 5.8 that does not match the clinical picture. The draw was a gold SST, then a light blue, then a lavender. What is the order-of-draw problem?",
+      "choices": [
+        "Lavender was drawn last instead of before gray",
+        "Gold should follow lavender in this sequence",
+        "There is no order problem; clot activator does not transfer",
+        "Light blue was drawn after a serum tube, which can carry clot activator into the citrate tube"
+      ],
+      "answer": 3,
+      "why": "Light blue must precede serum tubes. Clot activator carried into citrate shortens rather than prolongs clotting times, which is the direction to reason about here, and either way the sequence is wrong and the specimen unreliable. Lavender after light blue is correct in a draw without gray, gold never precedes light blue, and additive carryover across the needle is exactly why the order exists.",
+      "lesson": "ed-phlebotomy-l02",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-phlebotomy-q068",
+      "q": "You are transferring blood from a 10 mL syringe into tubes. What order do you fill them in?",
+      "choices": [
+        "The same order as a tube draw: cultures, light blue, serum, green, lavender, gray",
+        "Reverse order, since the flow direction is reversed",
+        "Largest tube first, then smallest",
+        "Order does not matter from a syringe"
+      ],
+      "answer": 0,
+      "why": "The risk is the transfer needle carrying additive between tubes, not the direction of flow, so the same order applies. Reversing it puts EDTA carryover into the chemistry tube. Tube size is irrelevant, and treating syringe transfers as order-free is a common and consequential error.",
+      "lesson": "ed-phlebotomy-l02",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q069",
+      "q": "A patient's chemistry shows potassium 7.5 and calcium 6.0, and they are sitting up eating crackers with a normal ECG. Which single mechanism explains both numbers?",
+      "choices": [
+        "A tourniquet left on for five minutes",
+        "EDTA carryover, since the anticoagulant is a potassium salt that also binds calcium",
+        "Drawing below an infusing IV",
+        "The specimen sitting at room temperature for three hours"
+      ],
+      "answer": 1,
+      "why": "K2 or K3 EDTA adds potassium and chelates calcium, producing high potassium with low calcium in a well patient. A long tourniquet hemoconcentrates and raises both potassium and calcium. IV dilution lowers values. A sitting specimen raises potassium modestly but does not drop calcium.",
+      "lesson": "ed-phlebotomy-l02",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-phlebotomy-q070",
+      "q": "An ammonia level is ordered on a confused cirrhotic patient. Which handling is correct?",
+      "choices": [
+        "Gold SST, room temperature, routine transport",
+        "Gray tube, protected from light, sent by pneumatic tube",
+        "Green or lavender per your lab, on ice, hand-walked to the lab immediately",
+        "Light blue, room temperature, run within 4 hours"
+      ],
+      "answer": 2,
+      "why": "Ammonia rises in a sitting sample, so it goes on ice and moves fast, in a green or lavender tube depending on the lab. A gold tube at room temperature guarantees a falsely elevated result. Light protection is the bilirubin rule, and light blue citrate is for coagulation.",
+      "lesson": "ed-phlebotomy-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q071",
+      "q": "How many inversions does each of these need: light blue citrate, gold SST, lavender EDTA?",
+      "choices": [
+        "8 to 10, 8 to 10, 3 to 4",
+        "5, 3 to 4, 5",
+        "3 to 4, 3 to 4, 3 to 4",
+        "3 to 4, 5, 8 to 10"
+      ],
+      "answer": 3,
+      "why": "Citrate needs 3 to 4, SST needs 5, and EDTA needs 8 to 10, as do heparin, fluoride and trace-element tubes. Under-mixing an EDTA tube produces a clotted, unrunnable CBC, and every other combination here reverses at least one of those numbers.",
+      "lesson": "ed-phlebotomy-l03",
+      "difficulty": 1
+    },
+    {
+      "id": "ed-phlebotomy-q072",
+      "q": "A provider orders lead and zinc levels on a child with pica. Which tube is required, and why?",
+      "choices": [
+        "Dark blue, because it is manufactured trace-element free so the tube itself does not contaminate the result",
+        "Lavender, because EDTA binds metals for measurement",
+        "Gray, because fluoride preserves metals",
+        "Gold, because the gel separates metals from cells"
+      ],
+      "answer": 0,
+      "why": "Trace metal testing measures parts-per-billion quantities, so the tube must be certified free of the metals being measured; that is the dark blue tube. EDTA does not exist to make metals measurable, fluoride preserves glucose, and a gel separator does nothing for trace metal contamination.",
+      "lesson": "ed-phlebotomy-l03",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q073",
+      "q": "You have entered the vein and the first tube is filling. The tourniquet has been on for about 50 seconds. When do you release it?",
+      "choices": [
+        "After the last tube is removed and the needle is out",
+        "Before the last tube finishes, and always before withdrawing the needle",
+        "Only if the patient complains of numbness",
+        "At the two-minute mark, since that is the limit"
+      ],
+      "answer": 1,
+      "why": "Releasing before the final tube finishes lowers venous pressure and cuts hematoma risk, and the tourniquet must always be off before the needle comes out. Leaving it until after withdrawal is the classic cause of a large bruise, waiting for symptoms is too late, and the working limit is 1 minute, not 2.",
+      "lesson": "ed-phlebotomy-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q074",
+      "q": "Which needle choice is appropriate for a routine adult antecubital draw, and what is the lower limit before hemolysis risk climbs?",
+      "choices": [
+        "18 G standard, nothing smaller than 20 G",
+        "25 G standard, nothing smaller than 27 G",
+        "21 G standard, with 22 to 23 G butterflies for small or fragile veins and hemolysis risk below 23 G",
+        "23 G standard, nothing smaller than 25 G"
+      ],
+      "answer": 2,
+      "why": "21 G is the adult venipuncture standard, 22 to 23 G butterflies handle small, fragile or hand veins, and anything narrower than 23 G shears red cells. An 18 G is an IV catheter size and unnecessarily traumatic for a draw, and 25 G routinely hemolyzes.",
+      "lesson": "ed-phlebotomy-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q075",
+      "q": "The vein keeps rolling away as you advance. Which step was most likely skipped?",
+      "choices": [
+        "Letting the alcohol dry",
+        "Choosing a 21 G needle",
+        "Releasing the tourniquet at one minute",
+        "Anchoring by pulling the skin taut with the thumb 1 to 2 inches below the site"
+      ],
+      "answer": 3,
+      "why": "Anchoring is what immobilizes a vein in loose tissue and it is the step most often skipped. Wet alcohol causes stinging and hemolysis rather than rolling, needle gauge does not stabilize a vein, and tourniquet timing affects chemistry results, not vein movement.",
+      "lesson": "ed-phlebotomy-l04",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q076",
+      "q": "Which technique change most directly reduces hemolysis when a draw must come off a syringe?",
+      "choices": [
+        "Use a transfer device and let tube vacuum draw the blood, rather than pushing through a needle into the tube",
+        "Push the plunger briskly so the blood does not begin to clot",
+        "Use the largest available syringe so fewer transfers are needed",
+        "Shake each tube vigorously after filling to mix the additive fast"
+      ],
+      "answer": 0,
+      "why": "Forcing blood through a small orifice under plunger pressure shreds cells; a transfer device with tube vacuum removes that force. Brisk pushing is the harm itself, a large syringe on a small needle raises shear during collection, and shaking hemolyzes on top of everything else.",
+      "lesson": "ed-phlebotomy-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q077",
+      "q": "An ED reports a hemolysis rate near 9 percent while the inpatient phlebotomy team runs near 2 percent. What is the most likely structural reason?",
+      "choices": [
+        "ED tubes are stored at higher temperatures",
+        "ED samples are frequently drawn through IV catheters at the time of insertion rather than by clean venipuncture",
+        "ED patients have more fragile red cells",
+        "ED specimens travel farther to the lab"
+      ],
+      "answer": 1,
+      "why": "Line draws are the single biggest driver of ED hemolysis, and they are common because the IV is already being started. Tube storage and transport distance are minor by comparison, and there is no population-level red cell fragility explaining a fourfold difference.",
+      "lesson": "ed-phlebotomy-l05",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-phlebotomy-q078",
+      "q": "A specimen is rejected as QNS and you have one more chance at a fragile vein. What is the correct next move?",
+      "choices": [
+        "Split whatever you obtain across two tubes so each test gets something",
+        "Send the underfilled tube anyway with a note",
+        "Call the lab and ask which test to prioritize with the volume you can get",
+        "Draw into a larger tube so the vacuum pulls harder"
+      ],
+      "answer": 2,
+      "why": "When volume is limited, the lab decides which assay gets the blood. Splitting a tube corrupts the additive ratio and produces two unusable specimens, a note does not make an underfilled tube runnable, and a larger tube pulls a fragile vein flat and worsens the problem.",
+      "lesson": "ed-phlebotomy-l05",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q079",
+      "q": "A patient with suspected sepsis has cultures drawn from one site into an aerobic and an anaerobic bottle. The second set is skipped because the patient is a hard stick. The result grows Cutibacterium acnes. Why is this a problem?",
+      "choices": [
+        "C. acnes never grows from a true infection",
+        "The single set should have been sent to a different lab",
+        "Anaerobic bottles cannot be interpreted alone",
+        "With only one set there is no comparison, so contamination and true infection cannot be distinguished and the patient may be treated for the possibility"
+      ],
+      "answer": 3,
+      "why": "Two sets from two sites exist to allow comparison: one positive and one sterile reads as contamination, both positive with the same organism reads as real. One set removes that logic. C. acnes can cause real infection in the right host, the lab is not the variable, and anaerobic bottles are interpretable within a paired set.",
+      "lesson": "ed-phlebotomy-l06",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-phlebotomy-q080",
+      "q": "Chlorhexidine-alcohol is applied with 30 seconds of friction. How long must it dry, and what is the alternative agent's drying time?",
+      "choices": [
+        "At least 30 seconds for chlorhexidine-alcohol; about 2 minutes for povidone-iodine",
+        "5 seconds for chlorhexidine-alcohol; 15 seconds for povidone-iodine",
+        "No drying needed for either if friction was adequate",
+        "2 minutes for chlorhexidine-alcohol; 30 seconds for povidone-iodine"
+      ],
+      "answer": 0,
+      "why": "Antiseptics kill during the drying phase, so chlorhexidine-alcohol needs at least 30 seconds to dry and povidone-iodine roughly 2 minutes. Sticking through wet antiseptic is the single most common cause of a contaminated culture, and the two agents' times are not interchangeable.",
+      "lesson": "ed-phlebotomy-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q081",
+      "q": "A septic patient is a very hard stick and you get only enough blood for one bottle. Which do you fill, in most laboratories?",
+      "choices": [
+        "Anaerobic, because those organisms are harder to recover",
+        "Aerobic, because most bloodstream pathogens are aerobes or facultative — confirming your lab's rule",
+        "Split the volume evenly between both bottles",
+        "Neither; discard and wait for a better draw"
+      ],
+      "answer": 1,
+      "why": "Most labs want the aerobic bottle when only one can be filled, since most bloodstream pathogens are aerobes or facultative anaerobes. Splitting halves the volume in both bottles and volume is the strongest predictor of growth. Discarding blood from a septic patient wastes the draw and delays therapy.",
+      "lesson": "ed-phlebotomy-l06",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q082",
+      "q": "A hypotensive patient in shock has cool, clamped-down extremities and no visible veins. Why does warming help less here than in a merely cold patient?",
+      "choices": [
+        "Warming raises the core temperature too slowly",
+        "Warming causes hemolysis in hypoperfused tissue",
+        "The vasoconstriction is centrally driven by shock, so the limitation is perfusion, and escalation toward ultrasound-guided or intraosseous access is appropriate",
+        "Warming works equally well and should be the only step taken"
+      ],
+      "answer": 2,
+      "why": "Peripheral shutdown in shock is a compensatory response to low perfusion, so local warmth cannot reopen what the body is deliberately closing. That is why the escalation ladder moves quickly toward ultrasound-guided access or intraosseous placement rather than repeated attempts. Warming does not hemolyze tissue, and core temperature is not the barrier.",
+      "lesson": "ed-phlebotomy-l07",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-phlebotomy-q083",
+      "q": "An intraosseous needle is being considered on a crashing patient. What is your role as a technician?",
+      "choices": [
+        "Place it in the proximal tibia, since it is a peripheral access skill",
+        "Confirm the Allen test before placement",
+        "Refuse to participate, since IO access is outside all technician scope",
+        "Know where the drill and correct needle sizes are, set up, and recognize that the room has reached that point"
+      ],
+      "answer": 3,
+      "why": "IO placement is done by a credentialed nurse or provider; your job is setup, equipment knowledge and situational recognition. Placing it yourself is outside scope, the Allen test belongs to radial arterial puncture, and refusing to assist is not the same as not placing it.",
+      "lesson": "ed-phlebotomy-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q084",
+      "q": "A patient with sickle cell disease tells you nobody ever gets the left arm and the right forearm always works. You cannot see anything on the right forearm. What is the best first move?",
+      "choices": [
+        "Palpate the right forearm carefully, because a vein you feel but cannot see is usually the better target and the patient's map is reliable",
+        "Try the left antecubital fossa anyway, since it is the standard site",
+        "Go straight to a hand vein with a 25 G needle",
+        "Request ultrasound-guided access before attempting anything"
+      ],
+      "answer": 0,
+      "why": "Frequent-draw patients know their own map, and palpation beats vision — a felt vein fills a tube, a seen surface line often collapses under vacuum. Overriding the patient wastes an attempt, a 25 G needle hemolyzes, and ultrasound is the right escalation after two failures, not before the first look.",
+      "lesson": "ed-phlebotomy-l07",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q085",
+      "q": "A trauma patient arrives hypotensive after a motorcycle crash. What vascular access is the goal?",
+      "choices": [
+        "A single 22 G in the hand, to avoid a large bruise",
+        "Two large-bore 14 to 16 G lines in the antecubital fossae, because flow rises steeply with catheter radius and falls with length",
+        "One 20 G forearm line, since it is the adult workhorse",
+        "A 24 G in each arm, to establish access quickly"
+      ],
+      "answer": 1,
+      "why": "Resuscitation flow depends on a short, wide catheter, so two 14 to 16 G antecubital lines are the target. A 20 G is fine for routine care but will not deliver resuscitation volume. A 22 or 24 G in a hypotensive trauma patient gives access without the flow that is actually needed.",
+      "lesson": "ed-phlebotomy-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q086",
+      "q": "For a routine medical admission expected to need a few days of intravenous antibiotics, which site is preferred and why?",
+      "choices": [
+        "The antecubital fossa, because it is the largest and fastest to cannulate",
+        "The wrist over the radial nerve, because the vein is superficial there",
+        "The forearm, because the catheter sits in a straight segment, the elbow can bend, pumps do not occlude, and dwell time is longer",
+        "The dorsal foot, because it keeps the arms free"
+      ],
+      "answer": 2,
+      "why": "A forearm line lives in a straight, non-flexing segment and lasts longer. The antecubital is fast and large-bore but kinks and alarms the pump every time the arm bends. The wrist risks the radial nerve, and lower extremity sites are avoided in adults.",
+      "lesson": "ed-phlebotomy-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q087",
+      "q": "You have flashback in the chamber during an IV start. What is the correct next action?",
+      "choices": [
+        "Advance the catheter off the needle immediately",
+        "Withdraw the needle first, then thread the catheter",
+        "Release the tourniquet and flush before threading",
+        "Lower the angle nearly flat and advance the whole unit another 1 to 2 mm so the catheter tip is in the lumen, then thread the catheter"
+      ],
+      "answer": 3,
+      "why": "Flashback means the needle tip is in the vein, but the catheter tip sits a couple of millimeters behind it. Advancing the unit 1 to 2 mm at a flatter angle is the step that decides success. Threading immediately pushes the catheter into the vein wall, withdrawing the needle first loses the guide, and flushing before threading does nothing.",
+      "lesson": "ed-phlebotomy-l08",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q088",
+      "q": "A patient is brought in for a possible driving-under-the-influence evaluation and a breath alcohol device is used. Why does the operator wait 15 to 20 minutes first?",
+      "choices": [
+        "So residual mouth alcohol does not contaminate the reading",
+        "To let the device warm up to body temperature",
+        "Because blood alcohol peaks at 20 minutes after the last drink",
+        "To satisfy chain-of-custody documentation timing"
+      ],
+      "answer": 0,
+      "why": "The observation period exists so alcohol in the mouth, from a recent drink, a belch or reflux, clears before the deep-lung sample is taken. Device warm-up is not the reason, peak absorption timing is not what the rule targets, and chain of custody is about documentation rather than a waiting period.",
+      "lesson": "ed-phlebotomy-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q089",
+      "q": "A clean-catch urine on a woman keeps coming back with mixed flora and epithelial cells. Which instruction was most likely missed?",
+      "choices": [
+        "Void the entire volume into the cup rather than midstream",
+        "Separate the labia and keep them separated throughout, wiping front to back with each wipe",
+        "Collect the first portion of the stream, which is most concentrated",
+        "Refrigerate the cup before collection"
+      ],
+      "answer": 1,
+      "why": "Mixed flora and epithelial cells mean periurethral contamination, which separation plus front-to-back wiping prevents. Catching the whole void or the first portion both capture the contaminated leading stream, and pre-chilling the container does nothing about contamination at the source.",
+      "lesson": "ed-phlebotomy-l09",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q090",
+      "q": "A fingerstick glucose on an alert, talking patient reads 34. What is the correct action?",
+      "choices": [
+        "Document it and move on, since the device is calibrated",
+        "Repeat on the same finger after milking it for more blood",
+        "Tell the nurse immediately and send a venous or point-of-care blood gas glucose, since the result does not fit the patient",
+        "Assume it is correct and give oral glucose without telling anyone"
+      ],
+      "answer": 2,
+      "why": "A result that does not fit the patient is both a device question and a clinical question: report it and confirm with a venous or blood gas glucose. Documenting and moving on risks a real hypoglycemia going untreated. Milking the finger dilutes the sample with tissue fluid and lowers the reading further, and treating without notifying removes the clinician from a decision that is theirs.",
+      "lesson": "ed-phlebotomy-l09",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-phlebotomy-q091",
+      "q": "Which heel stick practice creates a risk of osteomyelitis?",
+      "choices": [
+        "Warming the heel to about 42 C for 5 minutes",
+        "Wiping away the first drop of blood",
+        "Using an automated incision device set to 1.0 mm on a term infant",
+        "Puncturing the posterior curve of the heel, where the calcaneus lies close beneath the skin"
+      ],
+      "answer": 3,
+      "why": "The back curve of the heel sits directly over the calcaneus, so a puncture there can reach bone and seed infection. The medial and lateral plantar surfaces are the safe zones. Warming, wiping the first drop and a 1.0 mm term-infant device setting are all correct practice.",
+      "lesson": "ed-phlebotomy-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q092",
+      "q": "A newborn heel stick yields a slow drip, so the collector squeezes the heel firmly to fill the microtainer. What are the two consequences?",
+      "choices": [
+        "Hemolysis of the sample and tissue fluid contamination that skews the chemistry",
+        "Faster collection with no change in accuracy",
+        "Clotting of the microtainer only",
+        "A falsely high hematocrit with no other effect"
+      ],
+      "answer": 0,
+      "why": "Squeezing shears cells and pushes interstitial fluid into the specimen, so the sample is both hemolyzed and diluted with non-blood fluid. The fix is warming and gravity, not force. Clotting can happen too, but it is not the specific harm of milking, and the error does not raise hematocrit.",
+      "lesson": "ed-phlebotomy-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q093",
+      "q": "A 9-month-old needs a capillary blood gas and a CBC. Which capillary order is correct?",
+      "choices": [
+        "Serum tube, then EDTA, then blood gas",
+        "Blood gas first, then the EDTA tube, then other additive tubes, then serum",
+        "The venous order applies unchanged: light blue, serum, EDTA",
+        "EDTA first, then blood gas, then serum"
+      ],
+      "answer": 1,
+      "why": "Capillary blood begins clotting within seconds and platelets clump fast, so the gas goes first and the EDTA CBC goes early, with serum last. The venous order does not transfer to capillary collection, and putting serum or EDTA ahead of the gas corrupts the gas sample.",
+      "lesson": "ed-phlebotomy-l10",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q094",
+      "q": "Under your fingertip you feel a structure that is hard, does not compress, and does not rebound. What is it most likely to be, and what do you do?",
+      "choices": [
+        "An artery; avoid it and choose another site",
+        "A superficial vein under a tourniquet; proceed",
+        "A tendon or a thrombosed vein; move to a different site and keep palpating",
+        "A valve; enter directly on it"
+      ],
+      "answer": 2,
+      "why": "Veins are springy and rebound; hard non-compressible cords are tendons or thrombosed veins and will not yield blood. An artery would pulse, which this one does not. A valve is a small firm knot along an otherwise soft vein, and it is never entered directly.",
+      "lesson": "ed-phlebotomy-l11",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q095",
+      "q": "You miss on the first pass. Which adjustment is within acceptable practice?",
+      "choices": [
+        "Probe laterally until you feel the vein give",
+        "Withdraw fully and re-enter three more times at the same site",
+        "Advance deeper without repositioning, since veins are deeper than they look",
+        "Pull back slightly and redirect once along the vein's line"
+      ],
+      "answer": 3,
+      "why": "One small pull-back and redirect along the vein's axis is acceptable. Lateral probing tears tissue, causes hematoma and hemolysis, and is how nerves get injured. Repeated re-entry at one site and blind deeper advancement both multiply that harm.",
+      "lesson": "ed-phlebotomy-l11",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q096",
+      "q": "Mid-draw the patient says her hand is going numb and tingling and her arm feels like it is burning. What do you do?",
+      "choices": [
+        "Remove the needle immediately, notify the nurse, document her words and what you did, and check sensation",
+        "Finish the current tube quickly and then withdraw",
+        "Loosen the tourniquet and continue, since the tourniquet is the likely cause",
+        "Reposition the needle slightly and ask if it feels better"
+      ],
+      "answer": 0,
+      "why": "Electric, shooting or burning pain with tingling or numbness means possible nerve contact, and the needle comes out immediately. Finishing the tube or repositioning prolongs contact with a nerve. A tourniquet can cause a dull ache, not a shooting electric pain, so blaming it delays the right action.",
+      "lesson": "ed-phlebotomy-l11",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q097",
+      "q": "Which IV dressing and taping practice is correct?",
+      "choices": [
+        "Gauze over the site so it stays clean, taped fully around the forearm",
+        "A transparent semipermeable dressing so the site remains visible, with a stabilization device and an anchored loop of tubing, never circumferential tape",
+        "Opaque tape over the hub with a note of the insertion time on the chart only",
+        "A stabilization device alone, with no dressing"
+      ],
+      "answer": 1,
+      "why": "The site must stay visible to catch infiltration early, the securement must be engineered rather than improvised tape, and a tubing loop transfers pulls to the tape. Circumferential tape hides swelling and can act as a tourniquet, gauze and opaque coverings blind you to the site, and no dressing leaves the puncture open.",
+      "lesson": "ed-phlebotomy-l12",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q098",
+      "q": "An ultrasound-guided line placed in a deep basilic vein works well, then infiltrates four hours later. What is the most likely reason?",
+      "choices": [
+        "The vein was too large for the catheter",
+        "The dressing was transparent rather than gauze",
+        "A standard short catheter was used in a deep vein, so too little of it sat inside the lumen and it backed out",
+        "The line was flushed with 10 mL instead of 5 mL of saline"
+      ],
+      "answer": 2,
+      "why": "Deep veins need a longer catheter, commonly at least 1.75 inches or about 4.5 cm, so enough length stays in the lumen as the arm moves. A short catheter in a deep vein is the standard reason an ultrasound line fails within hours. Vein size, dressing type and a 10 mL flush do not cause this pattern.",
+      "lesson": "ed-phlebotomy-l12",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-phlebotomy-q099",
+      "q": "A nurse asks you to draw a chemistry panel from an existing IV that currently has normal saline running at 100 mL per hour. What is the correct response?",
+      "choices": [
+        "Draw it, but discard the first 5 mL",
+        "Draw it and note the infusion on the requisition",
+        "Draw it from the port closest to the patient",
+        "Do not draw from an infusing line; the sample would be diluted, and a diluted potassium or glucose can be acted on before anyone notices"
+      ],
+      "answer": 3,
+      "why": "Never draw from a line that is infusing. Dilution is the hazard, and a discard volume, a note or a proximal port does not reliably remove it while fluid is still running toward the sample. A fresh venipuncture, or a draw at the moment of a new insertion before fluid runs, is the correct route.",
+      "lesson": "ed-phlebotomy-l12",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q100",
+      "q": "A culture set is drawn after a perfect chlorhexidine scrub and a full dry, but the collector re-palpated the vein with a gloved finger directly on the prepped skin. It grows Corynebacterium. What is the root cause and the fix?",
+      "choices": [
+        "Recontamination after prep; find the vein before prepping, and if you must re-palpate, do it above the prepped zone or re-prep",
+        "Inadequate friction; scrub for 60 seconds instead of 30",
+        "Wrong antiseptic; povidone-iodine should have been used",
+        "Insufficient volume; fill each bottle to 10 mL"
+      ],
+      "answer": 0,
+      "why": "A gloved finger is not a sterile finger, and touching prepped skin undoes the prep. The sequence fix is to locate the vein first. Friction time was already adequate, chlorhexidine-alcohol is the preferred agent in adults, and volume affects yield rather than contamination.",
+      "lesson": "ed-phlebotomy-l13",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q101",
+      "q": "A culture bottle turns positive at 68 hours with coagulase-negative staphylococci while the paired set stays sterile. How does time to positivity support the interpretation?",
+      "choices": [
+        "Late growth means a higher bacterial load and therefore true infection",
+        "True pathogens usually grow within 24 to 48 hours, so late growth plus a discordant set plus a skin organism all point to contamination",
+        "Time to positivity is random and adds nothing",
+        "Any growth after 48 hours is automatically reported as a pathogen"
+      ],
+      "answer": 1,
+      "why": "Three signals align here: a classic skin organism, only one of two sets positive, and delayed growth. Late positivity suggests a small inoculum, which fits contamination rather than a high bacterial load, and time to positivity is a genuine interpretive clue rather than noise or an automatic pathogen flag.",
+      "lesson": "ed-phlebotomy-l13",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-phlebotomy-q102",
+      "q": "Your department's blood culture contamination rate is 6 percent, tracked by collector. What does that number mean in practice?",
+      "choices": [
+        "It is within the accepted range and needs no action",
+        "It reflects laboratory processing error rather than collection technique",
+        "It is roughly double the under-3-percent target, and each contaminated culture can mean unnecessary antibiotics, a possible central line and extra hospital days",
+        "It only matters for inpatient units, not the emergency department"
+      ],
+      "answer": 2,
+      "why": "The accepted target is under 3 percent, so 6 percent is roughly double it, and the consequences land on patients as vancomycin, central lines and added days. Contamination is introduced at collection, not in processing, and the emergency department is where most of these cultures are drawn.",
+      "lesson": "ed-phlebotomy-l13",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q103",
+      "q": "A glucose drawn in a gold SST at 1400 reaches the lab at 1700 having sat at room temperature. How is the result affected, and what would have prevented it?",
+      "choices": [
+        "Falsely raised; ice would have prevented it",
+        "Unchanged; the gel barrier stops glycolysis",
+        "Falsely raised; a lavender tube would have prevented it",
+        "Falsely lowered by roughly 5 to 7 mg/dL per hour, which a fluoride gray tube prevents"
+      ],
+      "answer": 3,
+      "why": "Living cells keep consuming glucose in the tube, dropping it about 5 to 7 mg/dL per hour at room temperature. Sodium fluoride in the gray tube inhibits glycolysis and prevents it. A gel barrier does not stop metabolism before centrifugation, EDTA is not a glycolysis inhibitor, and the error runs down, not up.",
+      "lesson": "ed-phlebotomy-l14",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-phlebotomy-q104",
+      "q": "A CBC is rejected as clotted after a slow trickling draw from a small hand vein. Which combination is the likeliest root cause?",
+      "choices": [
+        "Slow fill plus delayed inversions, so blood began clotting before it mixed with the EDTA",
+        "A needle that was too large for the vein",
+        "The tube being inverted 10 times instead of 8",
+        "Transport by pneumatic tube"
+      ],
+      "answer": 0,
+      "why": "Slow fills and delayed mixing are the two classic clotting causes; blood must meet the anticoagulant promptly and be inverted immediately. An oversized needle causes hemolysis or a collapsed vein rather than clotting, 10 inversions is within the 8 to 10 range, and the tube system hemolyzes rather than clots.",
+      "lesson": "ed-phlebotomy-l14",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q105",
+      "q": "A blood bank tube arrives with the patient's middle initial missing. The technologist calls. What is the correct action?",
+      "choices": [
+        "Correct the label at the lab window and re-send it",
+        "Discard the specimen and redraw, because blood bank has zero tolerance and relabeling a tube is never permitted",
+        "Have the nurse who witnessed the draw sign an attestation and release it",
+        "Run it, since the band number is correct and unique"
+      ],
+      "answer": 1,
+      "why": "Blood bank labeling is absolute: any discrepancy means redraw, and relabeling after the fact is never allowed because it cannot prove whose blood is in the tube. Correcting at the window, attesting after the fact, and relying on the band number alone all leave the wrong-blood-in-tube possibility open.",
+      "lesson": "ed-phlebotomy-l14",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q106",
+      "q": "During a radial arterial puncture the blood pulses into the syringe on its own without any pulling. What does this tell you?",
+      "choices": [
+        "The needle is too deep and has passed through the artery",
+        "The heparin in the syringe is drawing the sample",
+        "You are in the artery — arterial pressure fills the syringe, and needing to aspirate suggests a venous sample instead",
+        "The patient is hypertensive and the sample should be discarded"
+      ],
+      "answer": 2,
+      "why": "Arterial pressure fills a syringe unaided; if you must pull back, you are probably in a vein, and a venous sample analyzed as arterial gives a dangerously misleading oxygen value. Passing through the artery gives no flow, heparin does not create suction, and blood pressure does not invalidate a correctly obtained gas.",
+      "lesson": "ed-phlebotomy-l15",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q107",
+      "q": "Pressure is held after a radial arterial puncture on a patient taking apixaban. How long, and what is checked afterward?",
+      "choices": [
+        "1 minute, then check the label",
+        "3 minutes, then check the oxygen saturation",
+        "5 minutes with no further check needed",
+        "10 to 15 minutes, then check the distal pulse and the hand"
+      ],
+      "answer": 3,
+      "why": "An artery on an anticoagulated patient needs 10 to 15 minutes of firm pressure versus about 5 minutes otherwise, and the pulse and hand are checked afterward for hematoma, spasm or thrombosis. One and 3 minutes are far too short for an artery, and 5 minutes without a distal check misses the complication that matters.",
+      "lesson": "ed-phlebotomy-l15",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q108",
+      "q": "Four specimens are ready to leave the ED: a type and screen, an arterial blood gas syringe, an iced ammonia, and a routine CMP. Which travel by pneumatic tube at most hospitals?",
+      "choices": [
+        "Only the CMP; the blood bank specimen, the blood gas and the iced ammonia are hand-walked",
+        "All four, if padded and bagged",
+        "The CMP and the type and screen",
+        "The CMP and the blood gas"
+      ],
+      "answer": 0,
+      "why": "Blood bank specimens, blood gas syringes and anything on ice are typically excluded because tube acceleration hemolyzes cells and agitates gases, and a blood bank specimen is irreplaceable identification-wise. Only the routine chemistry goes in the carrier.",
+      "lesson": "ed-phlebotomy-l15",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-phlebotomy-q109",
+      "q": "Why do most point-of-care tests use two levels of quality control rather than one?",
+      "choices": [
+        "Regulations require two vials to be purchased",
+        "Because a device can read correctly at one concentration and drift at another, so one normal and one abnormal level are tested",
+        "To average the two results into a correction factor",
+        "Because the second level replaces operator competency testing"
+      ],
+      "answer": 1,
+      "why": "Two levels, typically one normal and one abnormal, catch drift that appears only at certain concentrations. Controls are not averaged into a correction factor, purchasing is not the rationale, and nothing about control materials substitutes for documented operator competency.",
+      "lesson": "ed-phlebotomy-l16",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q110",
+      "q": "A point-of-care control fails. Which action comes first?",
+      "choices": [
+        "Tag the device out of service before anything else",
+        "Call the point-of-care coordinator and wait",
+        "Stop testing patients on that device",
+        "Send all pending specimens to the main lab and continue using the device for screening only"
+      ],
+      "answer": 2,
+      "why": "The first move is to stop producing patient results on an unproven device; tagging it out of service comes after a repeat with a fresh control and a check of lot, storage and equilibration. Calling and waiting delays patient care, and there is no screening-only tier for a device that failed control.",
+      "lesson": "ed-phlebotomy-l16",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q111",
+      "q": "A point-of-care potassium of 6.9 comes from a device with current passing controls. What happens next?",
+      "choices": [
+        "Document it and wait for the morning laboratory draw",
+        "Repeat it once on the same device and report only if it repeats",
+        "Report it only if the patient has symptoms",
+        "Notify the nurse immediately, document who you told and when, and expect a confirmatory specimen to the laboratory"
+      ],
+      "answer": 3,
+      "why": "Point-of-care critical values carry the same notification obligation as laboratory values, and many require laboratory confirmation. Waiting for a morning draw, repeating before reporting, or gating notification on symptoms all delay a result that may be real and immediately dangerous.",
+      "lesson": "ed-phlebotomy-l16",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q112",
+      "q": "Which failure is the dominant root cause of fatal hemolytic transfusion reactions?",
+      "choices": [
+        "Wrong blood in tube: a correct label on blood drawn from the wrong patient",
+        "Laboratory error in ABO typing",
+        "Storage temperature failure in the blood bank refrigerator",
+        "Bacterial contamination of the unit"
+      ],
+      "answer": 0,
+      "why": "The error is at the bedside, not the bench: blood drawn from one patient and labeled with another's identity types correctly and crossmatches correctly against the wrong person. Laboratory typing error, storage failure and bacterial contamination are all real but far less common causes.",
+      "lesson": "ed-phlebotomy-l17",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q113",
+      "q": "A unit of red cells is being started. When are vital signs taken, and who stays?",
+      "choices": [
+        "Before and at completion only, with no one required to stay",
+        "Before, at 15 minutes, and at completion, with someone staying with the patient for the first 15 minutes",
+        "Hourly throughout, with staff checking in as available",
+        "Only if the patient reports symptoms"
+      ],
+      "answer": 1,
+      "why": "Most severe reactions declare themselves in the first 15 minutes, which is why vitals are taken before, at 15 minutes and at completion, and why someone stays for that window. Hourly checks, endpoint-only vitals and symptom-triggered monitoring all miss the period that matters most.",
+      "lesson": "ed-phlebotomy-l17",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q114",
+      "q": "A patient develops fever, rigors and flank pain ten minutes into a transfusion. Which sequence is correct?",
+      "choices": [
+        "Slow the transfusion, give an antipyretic, and reassess in 15 minutes",
+        "Stop the transfusion, flush the same tubing with saline, and continue monitoring",
+        "Stop the transfusion immediately, keep the line open with normal saline through new tubing, notify the nurse and provider, save the bag and tubing, and expect the clerical check to be repeated first",
+        "Disconnect and discard the unit and tubing, then notify the provider"
+      ],
+      "answer": 2,
+      "why": "The unit stops, the line stays open with saline through new tubing so no further product is delivered, and the bag and tubing are saved as evidence. The clerical check is repeated first because identification error is the leading cause. Slowing the rate keeps giving incompatible cells, flushing the old tubing pushes more unit into the patient, and discarding the bag destroys the investigation.",
+      "lesson": "ed-phlebotomy-l17",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-phlebotomy-q115",
+      "q": "Which factors raise the risk of a needlestick exposure and therefore the urgency of prophylaxis?",
+      "choices": [
+        "A solid suture needle grazing intact skin",
+        "A device used only on skin prep",
+        "A superficial scratch from an unused needle",
+        "A hollow-bore needle that was in a vein or artery, visible blood on the device, a deep injury, and a source with a high viral load"
+      ],
+      "answer": 3,
+      "why": "Risk rises with hollow-bore devices that held blood, visible blood, injury depth and source viral load. A solid suture needle, a device that never entered a vessel, and an unused needle carry far lower or no transmission risk, which is exactly what characterizing the exposure is for.",
+      "lesson": "ed-phlebotomy-l18",
+      "difficulty": 2
+    },
+    {
+      "id": "ed-phlebotomy-q116",
+      "q": "A technician is stuck by a hollow-bore needle from a source with unknown HIV status. The rapid test will take 45 minutes. What should happen with prophylaxis?",
+      "choices": [
+        "Start the first dose now for a significant exposure and stop it later if the source tests negative",
+        "Wait for the rapid test so unnecessary medication is avoided",
+        "Wait 24 hours and decide with employee health in the morning",
+        "Skip prophylaxis unless the source is known positive"
+      ],
+      "answer": 0,
+      "why": "HIV prophylaxis works best started as soon as possible, ideally within 2 hours, so a significant exposure gets the first dose immediately and it is discontinued if the source is negative. Waiting 45 minutes, waiting overnight or requiring a known-positive source all spend the window the drug depends on.",
+      "lesson": "ed-phlebotomy-l18",
+      "difficulty": 3
+    },
+    {
+      "id": "ed-phlebotomy-q117",
+      "q": "Which statement about hepatitis after an occupational needlestick is correct?",
+      "choices": [
+        "Hepatitis C has an effective vaccine that should be given within 24 hours",
+        "Hepatitis B immune globulin plus vaccination is given to a non-immune worker ideally within 24 hours and at most within 7 days, while hepatitis C has no prophylaxis and is managed with testing and follow-up",
+        "A documented hepatitis B vaccine responder still requires immune globulin after every exposure",
+        "Hepatitis C requires a 28-day course of antiviral prophylaxis"
+      ],
+      "answer": 1,
+      "why": "Hepatitis B is answered by the worker's vaccination record, with immune globulin plus vaccine for the non-immune ideally within 24 hours and at most 7 days. Hepatitis C has no vaccine and no prophylaxis, only baseline testing and follow-up, and the 28-day course is the HIV regimen. A documented responder generally needs nothing further.",
+      "lesson": "ed-phlebotomy-l18",
+      "difficulty": 2
+    }
+  ]
+}
