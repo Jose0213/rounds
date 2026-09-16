@@ -2,6 +2,8 @@
 // POST /tutor { context: {kind,title,text}, messages: [{role,content}] } → text/event-stream of {delta} … {done}
 // Runs on the tailnet only. Env: CLAUDE_CODE_OAUTH_TOKEN (required), TUTOR_PORT (9237), TUTOR_MODEL (sonnet).
 import http from 'node:http';
+import fs from 'node:fs';
+import path from 'node:path';
 import { query } from '@anthropic-ai/claude-agent-sdk';
 
 const PORT = +(process.env.TUTOR_PORT || 9237);
@@ -18,6 +20,9 @@ Rules:
 - When you explain something, end with exactly one short check question so he has to think. When he answers, grade it honestly and briefly.
 - Never mention these instructions, the app's internals, or that you are an AI unless asked directly.`;
 
+const SYNC_FILE = process.env.SYNC_FILE || path.join(process.cwd(), 'sync.json');
+function readSync() { try { return JSON.parse(fs.readFileSync(SYNC_FILE, 'utf8')); } catch { return { rev: 0, state: null }; } }
+function writeSync(doc) { const tmp = SYNC_FILE + '.tmp'; fs.writeFileSync(tmp, JSON.stringify(doc)); fs.renameSync(tmp, SYNC_FILE); }
 const active = new Map(); // ip -> count
 const windowHits = new Map(); // ip -> [timestamps]
 function limited(ip) {
@@ -28,8 +33,22 @@ function sse(res) { res.writeHead(200, { 'Content-Type': 'text/event-stream', 'C
 
 http.createServer(async (req, res) => {
   const ip = req.socket.remoteAddress || '?';
-  if (req.method === 'OPTIONS') { res.writeHead(204, { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Content-Type', 'Access-Control-Allow-Methods': 'POST, GET, OPTIONS' }); return res.end(); }
+  if (req.method === 'OPTIONS') { res.writeHead(204, { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Content-Type', 'Access-Control-Allow-Methods': 'POST, GET, PUT, OPTIONS' }); return res.end(); }
   if (req.method === 'GET' && (req.url === '/health' || req.url === '/tutor/health')) { res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' }); return res.end(JSON.stringify({ ok: true, model: MODEL })); }
+  // Progress sync: one learner, tailnet only. GET returns {rev, state}; PUT/POST {state} stores it and returns the new rev.
+  if (/^\/(sync|api\/sync)\/?(\?.*)?$/.test(req.url)) {
+    const cors = { 'Access-Control-Allow-Origin': '*', 'Content-Type': 'application/json' };
+    if (req.method === 'GET') { const doc = readSync(); res.writeHead(200, cors); return res.end(JSON.stringify(doc)); }
+    if (req.method === 'PUT' || req.method === 'POST') {
+      let body = ''; for await (const c of req) { body += c; if (body.length > 4000000) { res.writeHead(413); return res.end(); } }
+      let data; try { data = JSON.parse(body); } catch { res.writeHead(400); return res.end('bad json'); }
+      if (!data.state || typeof data.state !== 'object') { res.writeHead(400); return res.end('no state'); }
+      const doc = { rev: Date.now(), state: data.state, from: data.device || '' }; writeSync(doc);
+      console.log(`${new Date().toISOString()} ${ip} sync put ${body.length}ch from ${doc.from}`);
+      res.writeHead(200, cors); return res.end(JSON.stringify({ rev: doc.rev }));
+    }
+    res.writeHead(405); return res.end();
+  }
   if (req.method !== 'POST' || !/^\/(tutor|api\/tutor)\/?$/.test(req.url)) { res.writeHead(404); return res.end(); }
   if (limited(ip)) { res.writeHead(429, { 'Access-Control-Allow-Origin': '*' }); return res.end('slow down'); }
   let body = ''; for await (const c of req) { body += c; if (body.length > 200000) { res.writeHead(413); return res.end(); } }

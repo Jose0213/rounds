@@ -102,5 +102,34 @@
   }
   async function blobGet(id) { const db = await idb(); if (!db) return null; return new Promise((resolve) => { const r = db.transaction('blobs', 'readonly').objectStore('blobs').get(id); r.onsuccess = () => resolve(r.result || null); r.onerror = () => resolve(null); }); }
   async function blobSet(id, data) { const db = await idb(); if (!db) return false; return new Promise((resolve) => { const tx = db.transaction('blobs', 'readwrite'); if (data) tx.objectStore('blobs').put(data, id); else tx.objectStore('blobs').delete(id); tx.oncomplete = () => resolve(true); tx.onerror = () => resolve(false); }); }
-  window.Store = { load, save, today, bump, exportJSON, importJSON, reset, inkGet, inkSet, inkKeys, inkClear, blobGet, blobSet };
+  // Merge another device's state into this one. Union everywhere; per-record, the more-advanced or more-recent wins.
+  function merge(remote) {
+    if (!remote || typeof remote !== 'object') return false;
+    const s = load(); const before = JSON.stringify(s);
+    const byId = (key, idf) => { const map = new Map((s[key] || []).map((x) => [idf(x), x])); for (const x of remote[key] || []) if (x && !map.has(idf(x))) map.set(idf(x), x); s[key] = [...map.values()]; };
+    for (const [id, r] of Object.entries(remote.lessons || {})) {
+      const l = s.lessons[id] || {}; const o = Object.assign({}, r, l);
+      const st = Math.min(l.started || Infinity, r.started || Infinity); if (st !== Infinity) o.started = st; else delete o.started;
+      const dn = l.done && r.done ? Math.min(l.done, r.done) : (l.done || r.done); if (dn) o.done = dn; else delete o.done;
+      const ad = l.added || r.added; if (ad) o.added = ad; else delete o.added;
+      s.lessons[id] = o;
+    }
+    for (const [id, r] of Object.entries(remote.cards || {})) { const l = s.cards[id]; if (!l || (r.last || 0) > (l.last || 0)) s.cards[id] = r; }
+    byId('quiz', (x) => x.ts + ':' + x.scope); byId('sims', (x) => x.ts + ':' + x.kind); byId('hours', (x) => x.id); byId('mistakes', (x) => x.id); byId('courses', (x) => x.id); byId('journal', (x) => x.id); byId('contacts', (x) => x.id);
+    for (const r of remote.mistakes || []) { const l = s.mistakes.find((x) => x.id === r.id); if (l && r.srs && (!l.srs || (r.srs.last || 0) > (l.srs.last || 0))) l.srs = r.srs; }
+    for (const [id, r] of Object.entries(remote.qstats || {})) { const l = s.qstats[id] || { seen: 0, right: 0 }; s.qstats[id] = { seen: Math.max(l.seen || 0, r.seen || 0), right: Math.max(l.right || 0, r.right || 0) }; }
+    for (const key of ['scenarios', 'drills']) for (const [id, r] of Object.entries(remote[key] || {})) { const l = s[key][id] || {}; s[key][id] = { runs: Math.max(l.runs || 0, r.runs || 0), best: Math.max(l.best || 0, r.best || 0), last: Math.max(l.last || 0, r.last || 0) }; }
+    for (const [id, arr] of Object.entries(remote.stations || {})) { const l = s.stations[id] || []; const seen = new Set(l.map((x) => x.ts)); s.stations[id] = [...l, ...(arr || []).filter((x) => !seen.has(x.ts))].sort((a, b) => a.ts - b.ts); }
+    for (const [d, r] of Object.entries(remote.days || {})) { const l = s.days[d] || {}; s.days[d] = { cards: Math.max(l.cards || 0, r.cards || 0), lessons: Math.max(l.lessons || 0, r.lessons || 0), quiz: Math.max(l.quiz || 0, r.quiz || 0), scen: Math.max(l.scen || 0, r.scen || 0) }; }
+    for (const [id, ts] of Object.entries(remote.path || {})) if (!s.path[id]) s.path[id] = ts;
+    for (const key of ['mastery', 'finals']) { s[key] = s[key] || {}; for (const [id, r] of Object.entries(remote[key] || {})) { const l = s[key][id]; if (!l || (r.pct || 0) > (l.pct || 0)) s[key][id] = r; } }
+    s.exams = s.exams || {}; for (const [id, arr] of Object.entries(remote.exams || {})) { const l = s.exams[id] || []; const seen = new Set(l.map((x) => x.ts)); s.exams[id] = [...l, ...(arr || []).filter((x) => !seen.has(x.ts))]; }
+    s.flags = Object.assign({}, remote.flags || {}, s.flags || {});
+    s.miniq = Object.assign({}, remote.miniq || {}, s.miniq || {});
+    if (remote.examRun && !s.examRun) s.examRun = remote.examRun;
+    if (remote.degree && Object.keys(remote.degree).length) { s.degree = s.degree || {}; s.degree.done = Object.assign({}, remote.degree.done || {}, s.degree.done || {}); s.degree.dropped = Object.assign({}, remote.degree.dropped || {}, s.degree.dropped || {}); s.degree.term = Object.assign({}, remote.degree.term || {}, s.degree.term || {}); s.degree.perTerm = s.degree.perTerm || remote.degree.perTerm; s.degree.start = s.degree.start || remote.degree.start; }
+    s.firstRun = Math.min(s.firstRun || Infinity, remote.firstRun || Infinity);
+    const changed = JSON.stringify(s) !== before; if (changed) save(true); return changed;
+  }
+  window.Store = { load, save, today, bump, exportJSON, importJSON, reset, inkGet, inkSet, inkKeys, inkClear, blobGet, blobSet, merge };
 })();
