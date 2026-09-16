@@ -43,6 +43,8 @@ http.createServer(async (req, res) => {
       let body = ''; for await (const c of req) { body += c; if (body.length > 4000000) { res.writeHead(413); return res.end(); } }
       let data; try { data = JSON.parse(body); } catch { res.writeHead(400); return res.end('bad json'); }
       if (!data.state || typeof data.state !== 'object') { res.writeHead(400); return res.end('no state'); }
+      const cur = readSync();
+      if (data.base !== undefined && Number(data.base) !== Number(cur.rev || 0)) { res.writeHead(409, cors); return res.end(JSON.stringify(cur)); }
       const doc = { rev: Date.now(), state: data.state, from: data.device || '' }; writeSync(doc);
       console.log(`${new Date().toISOString()} ${ip} sync put ${body.length}ch from ${doc.from}`);
       res.writeHead(200, cors); return res.end(JSON.stringify({ rev: doc.rev }));

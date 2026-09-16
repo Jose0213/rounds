@@ -13,27 +13,33 @@
   let lastRev = 0, pushTimer = null, pushing = false, dirty = false, status = 'idle';
   const listeners = new Set();
   const setStatus = (s) => { status = s; listeners.forEach((f) => { try { f(s); } catch (e) { /* ignore */ } }); };
-  const payload = () => JSON.stringify({ device: DEVICE, state: JSON.parse(Store.exportJSON()) });
+  let quiet = false; // true while we export state, so the save hook does not schedule another push
+  const payload = () => { quiet = true; try { return JSON.stringify({ device: DEVICE, base: lastRev, state: JSON.parse(Store.exportJSON()) }); } finally { quiet = false; } };
   async function pull() {
     if (Store.load().settings.sync === false || LOCAL) return false;
     try {
       const r = await fetch(endpoint(), { cache: 'no-store' }); if (!r.ok) throw new Error('HTTP ' + r.status);
       const doc = await r.json(); lastRev = doc.rev || 0;
-      const changed = doc.state ? Store.merge(doc.state) : false;
-      setStatus('ok'); schedulePush(300);
+      quiet = true; let changed = false; try { changed = doc.state ? Store.merge(doc.state) : false; } finally { quiet = false; }
+      setStatus('ok'); if (changed || !doc.state) schedulePush(300);
       return changed;
     } catch (e) { setStatus('offline'); return false; }
   }
   async function push() {
     if (pushing || Store.load().settings.sync === false || LOCAL) return; pushing = true;
     try {
-      const r = await fetch(endpoint(), { method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: payload() });
+      let r = await fetch(endpoint(), { method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: payload() });
+      if (r.status === 409) { // someone else wrote first: merge their state, then push the union
+        const doc = await r.json(); lastRev = doc.rev || 0; quiet = true; try { if (doc.state) Store.merge(doc.state); } finally { quiet = false; }
+        r = await fetch(endpoint(), { method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: payload() });
+        if (window.Rounds && Rounds.rerender && document.visibilityState === 'visible') Rounds.rerender();
+      }
       if (!r.ok) throw new Error('HTTP ' + r.status); const j = await r.json(); lastRev = j.rev || lastRev; dirty = false; setStatus('ok');
     } catch (e) { setStatus('offline'); dirty = true; }
     finally { pushing = false; }
   }
   function schedulePush(ms = 2500) { dirty = true; clearTimeout(pushTimer); pushTimer = setTimeout(push, ms); }
-  const origSave = Store.save; Store.save = function (now) { const r = origSave.apply(this, arguments); schedulePush(now ? 800 : 2500); return r; };
+  const origSave = Store.save; Store.save = function (now) { const r = origSave.apply(this, arguments); if (!quiet) schedulePush(now ? 800 : 2500); return r; };
   window.addEventListener('visibilitychange', () => { if (document.hidden) { if (dirty) push(); } else pull().then((changed) => { if (changed && window.Rounds && Rounds.rerender) Rounds.rerender(); }); });
   window.addEventListener('pagehide', () => { if (dirty && navigator.sendBeacon) { try { navigator.sendBeacon(endpoint() + '?beacon=1', new Blob([payload()], { type: 'application/json' })); } catch (e) { /* ignore */ } } });
   window.Sync = { pull, push, endpoint, device: DEVICE, status: () => status, onStatus: (f) => listeners.add(f), lastRev: () => lastRev };
