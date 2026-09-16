@@ -207,8 +207,8 @@ textarea { min-height: 120px; resize: vertical; font-family: var(--mono); font-s
 .list-item { display: flex; align-items: center; gap: 14px; padding: 14px 4px; border-bottom: 1px solid var(--line); color: inherit; min-height: 60px; }
 .list-item:last-child { border-bottom: 0; }
 .list-item .grow { flex: 1; min-width: 0; }
-.list-item .title { font-weight: 600; }
-.list-item .sub { color: var(--ink-3); font-size: .88rem; margin-top: 2px; }
+.list-item .title { display: block; font-weight: 600; }
+.list-item .sub { display: block; color: var(--ink-3); font-size: .88rem; margin-top: 2px; }
 .list-item .lead { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; background: var(--surface-2); color: var(--ink-2); font: 600 13px/1 var(--mono); flex: none; }
 .list-item.done .lead { background: var(--good-soft); color: var(--good); }
 .list-item.locked { opacity: .55; }
