@@ -304,7 +304,9 @@ textarea { min-height: 120px; resize: vertical; font-family: var(--mono); font-s
 .ink-layer canvas { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
 .lesson.inking .ink-layer { pointer-events: auto; }
 .lesson:not(.inking) .ink-layer { pointer-events: none; }
-.ink-bar { position: sticky; top: 8px; z-index: 6; display: flex; gap: 6px; align-items: center; background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow); border-radius: 999px; padding: 6px 8px; width: max-content; margin: 0 0 12px auto; }
+/* Fixed, out of the document flow: showing or hiding it must never move the text under the ink. */
+.ink-bar { position: fixed; top: calc(10px + env(safe-area-inset-top)); right: calc(16px + env(safe-area-inset-right)); z-index: 40; display: flex; gap: 6px; align-items: center; background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow); border-radius: 999px; padding: 6px 8px; width: max-content; margin: 0; }
+@media (max-width: 999px) { .ink-bar { top: auto; bottom: calc(var(--tab-h) + 10px + env(safe-area-inset-bottom)); left: 50%; right: auto; transform: translateX(-50%); } }
 .ink-bar .sw { width: 30px; height: 30px; border-radius: 50%; border: 2px solid transparent; padding: 0; cursor: pointer; }
 .ink-bar .sw.on { border-color: var(--ink); }
 .ink-bar .tool { width: 36px; height: 36px; border-radius: 50%; border: 0; background: transparent; display: grid; place-items: center; cursor: pointer; color: var(--ink-2); }
