@@ -659,59 +659,61 @@
   // ---------- Path ----------
   const PATH = [
     { id: 'emt', title: 'EMT-Basic certification', when: 'Now → ~4 months', text: 'The entry ticket. A state-approved course, then the national exam, then the New Jersey card.', tasks: [
-      ['emt-enroll', 'Enroll in an NJ-approved EMT course', 'Community college, hospital, or squad-run. Evenings and weekends exist.'],
       ['emt-cpr', 'Get a BLS Provider (CPR/AED) card', 'AHA or Red Cross. Required for the course and every job after.'],
+      ['emt-enroll', 'Enroll in an NJ-approved EMT course', 'Community college, hospital, or squad-run. Evenings and weekends exist.'],
       ['emt-found', 'Finish the Foundations track here', 'Body, terminology, vitals, assessment, communication. Do it before class starts.'],
-      ['emt-track', 'Finish the EMT track here', 'Run it alongside the course. The scenarios mirror the skill stations.'],
       ['emt-mock', 'Score 80%+ on three 70-question exam-mode mocks', 'Practice tab, exam mode. Domain-weighted like the real CAT.'],
+      ['emt-track', 'Finish the EMT track here', 'Run it alongside the course. The scenarios mirror the skill stations.'],
       ['emt-nremt', 'Pass the NREMT cognitive exam', 'Schedule through Pearson VUE once your course marks you eligible.'],
       ['emt-nj', 'Apply for NJ EMT certification', 'NJ Office of EMS: application, background check, CPR card, fees.'] ] },
     { id: 'ed', title: 'ED technician job', when: 'Right after the card', text: 'The job that pays, teaches, and counts as patient-care experience for PA applications.', tasks: [
-      ['ed-track', 'Finish the ED Tech track here', 'Getting hired, the department, Epic, triage, ECG, phlebotomy, procedures, codes, presentations, psych, Spanish, safety.'],
       ['ed-drills', 'Score 100% on the 12-lead placement drill twice', 'Practice tab. Placement is the single most-asked tech skill.'],
       ['ed-rhythm', 'Score 90%+ on Name the rhythm three times', 'Practice tab. Recognizing VT and VF on the monitor is a day-one skill.'],
       ['ed-apply', 'Apply to ED tech / patient care tech postings', 'Search "ED technician", "ER tech", "patient care technician emergency". EMT-B plus BLS is the usual ask.'],
       ['ed-hired', 'Start in the department', 'Then give notice and leave retail for good.'],
+      ['ed-hours', 'Track PCE hours from day one', 'A 36-hour week for a year is about 1,700 hours. Most competitive applicants show 1,000 to 3,000.'],
       ['ed-log', 'Start the de-identified case log on shift one', 'Chief complaint, workup, dispo, one thing learned. This becomes PCE evidence and interview material.'],
-      ['ed-hours', 'Track PCE hours from day one', 'A 36-hour week for a year is about 1,700 hours. Most competitive applicants show 1,000 to 3,000.'] ] },
+      ['ed-track', 'Finish the ED Tech track here', 'Getting hired, the department, Epic, triage, ECG, phlebotomy, procedures, codes, presentations, psych, Spanish, safety.'] ] },
     { id: 'degree', title: 'BA in Biology at Thomas Edison State University', when: 'In parallel, 2–4 years', text: 'Online, 120 credits: 45 general education, 60 in the major, 15 electives. The major contains most PA prerequisites. Six major courses are transfer-only at TESU, so they come from a community college or another accredited school. Do this while working, not instead of working.', tasks: [
       ['deg-transcripts', 'Send every prior transcript to TESU for evaluation', 'ERAU credits count toward general education and electives; math and physics may clear required courses.'],
       ['deg-enroll', 'Enroll at TESU in the BA Biology', 'Confirm the current catalog-year plan with an advisor. The TESU course map in Reference lists the current catalog.'],
+      ['deg-gened', 'Clear the general education science courses', 'EAS-1010 General Earth Science and BIO-2080 The Science of Nutrition, plus the writing, math, and humanities blocks.'],
+      ['deg-anp', 'Use the biology electives for A&P I and II', 'BIO-2110 and BIO-2120 with lab at TESU count toward the 12 biology elective credits and are required by nearly every PA program.'],
       ['deg-tesu-core', 'Take the TESU-offered major courses', 'BIO-2510 Microbiology with lab, MAT-1290 Precalculus, CHE-1210 and CHE-1220 General Chemistry I and II with lab, PHY-1150 and PHY-1160 Physics I and II with lab. The Prerequisites track teaches each one.'],
       ['deg-transfer', 'Take the transfer-required courses elsewhere', 'General Biology I and II with lab, Cell Biology, Genetics, Organic Chemistry I and II with lab. Camden County College or Rowan College at Burlington County are the local options; confirm transferability with TESU before registering.'],
-      ['deg-anp', 'Use the biology electives for A&P I and II', 'BIO-2110 and BIO-2120 with lab at TESU count toward the 12 biology elective credits and are required by nearly every PA program.'],
-      ['deg-gened', 'Clear the general education science courses', 'EAS-1010 General Earth Science and BIO-2080 The Science of Nutrition, plus the writing, math, and humanities blocks.'],
       ['deg-upper', 'Get 18 credits at the 3000 level or above in the major', 'A TESU rule. Plan the biology electives and transfer choices so they land upper level.'],
       ['deg-residency', 'Complete at least 30 credits through TESU itself', 'The residency minimum since 2021. Transfer everything you can, but keep 30 with TESU.'],
-      ['deg-gpa', 'Keep the science GPA at 3.5 or better', 'PA programs compute it separately. An upward trend matters.'],
       ['deg-prepa', 'Finish the Prerequisites and Pre-PA tracks here alongside the courses', 'Course-by-course modules under the classes; the medicine layer under those.'],
+      ['deg-gpa', 'Keep the science GPA at 3.5 or better', 'PA programs compute it separately. An upward trend matters.'],
       ['deg-capstone', 'LIB-4970 Liberal Arts Capstone, then graduate', ''] ] },
     { id: 'apply', title: 'PA school application', when: 'The spring before you want to start', text: 'CASPA opens in late April. Early, complete, verified applications win rolling admissions.', tasks: [
-      ['app-shadow', 'Shadow PAs, 40+ hours', 'Ask the PAs in your own ED. Log dates and hours.'],
+      ['app-programs', 'Build a list of 8–12 programs that fit your prereqs and hours', 'PANCE pass rate, attrition, cost, location, mission.'],
       ['app-lor', 'Line up 3–5 recommenders', 'A PA, a supervisor, a science professor. Ask months ahead.'],
+      ['app-shadow', 'Shadow PAs, 40+ hours', 'Ask the PAs in your own ED. Log dates and hours.'],
       ['app-test', 'Take the GRE or PA-CAT if your target programs require it', 'Many programs are test-optional now. Check each one.'],
       ['app-ps', 'Write the personal statement', '5,000 characters. Specific patients, specific moments, why PA and not MD or NP. The Interviews & Essays module has the method.'],
-      ['app-programs', 'Build a list of 8–12 programs that fit your prereqs and hours', 'PANCE pass rate, attrition, cost, location, mission.'],
       ['app-submit', 'Submit CASPA in May or June', 'Verification takes weeks. Do not wait for the deadline.'],
       ['app-interview', 'Interviews', 'MMI or traditional. Run the interview scenarios in the Interviews & Essays module until the answers are yours.'],
       ['app-accept', 'Accept an offer', 'Then start reading everything about the didactic year.'] ] },
     { id: 'career', title: 'Cooper first, then Virtua ICU', when: 'After PANCE', text: 'Two years at Cooper for volume, structure and a name on the resume, then an overnight ICU APP job at Virtua where the autonomy is. The academic center follows the residents’ track; the community ICU runs on its APPs.', tasks: [
-      ['car-pance', 'Pass the PANCE and get the NJ license', 'NCCPA certification, then NJ Board of Medical Examiners PA license and CDS/DEA.'],
+      ['car-network', 'Meet the Virtua intensivists and night APPs before you need them', 'Shadow a night, ask what their APPs actually own overnight, learn which campus (Voorhees, Marlton, Mount Holly, Camden) staffs the way you want.'],
       ['car-rotation', 'Land a critical care or EM rotation at Cooper during clinical year', 'Rotations are auditions. Ask for Cooper by name when the program assigns sites.'],
       ['car-fellowship', 'Apply to Cooper’s APP fellowship (critical care or emergency medicine) as the fast track', 'A 12-month structured fellowship beats two unstructured years for an ICU hire. Verify which tracks Cooper is running that cycle.'],
-      ['car-cooper', 'Work at Cooper 1–2 years', 'Trauma, sepsis, vents, lines, codes. Keep the case log going: it becomes the interview for the next job.'],
+      ['car-pance', 'Pass the PANCE and get the NJ license', 'NCCPA certification, then NJ Board of Medical Examiners PA license and CDS/DEA.'],
       ['car-certs', 'Stack the ICU certifications while there', 'ACLS and PALS, FCCS (Fundamental Critical Care Support), ultrasound and line credentials, ventilator management course.'],
-      ['car-network', 'Meet the Virtua intensivists and night APPs before you need them', 'Shadow a night, ask what their APPs actually own overnight, learn which campus (Voorhees, Marlton, Mount Holly, Camden) staffs the way you want.'],
+      ['car-cooper', 'Work at Cooper 1–2 years', 'Trauma, sepsis, vents, lines, codes. Keep the case log going: it becomes the interview for the next job.'],
       ['car-virtua', 'Move to Virtua as an overnight ICU APP', 'Negotiate on the experience: nights differential, scope, procedures, and a defined supervision model.'] ] },
   ];
   route('/path', (params, token) => {
     const el = h(`<div class="path"><div class="page-head"><div><div class="eyebrow">Roadmap</div><h1>The path</h1><p class="lede">EMT card, ED tech job, degree with prerequisites, then the PA application. Tap a task to check it off. Stages overlap on purpose.</p></div><span class="chip num" id="path-total"></span></div><div id="stages"></div></div>`);
     const wrap = $('#stages', el);
+    // Tasks are authored easiest first; finished ones drop to the bottom of their stage, keeping that order among themselves.
+    const ordered = (st) => [...st.tasks].sort((x, y) => (S.path[x[0]] ? 1 : 0) - (S.path[y[0]] ? 1 : 0));
     function render() {
       wrap.innerHTML = ''; let activeSet = false;
       PATH.forEach((st) => {
         const done = st.tasks.filter((t) => S.path[t[0]]).length; const all = done === st.tasks.length; const active = !all && !activeSet; if (active) activeSet = true;
-        wrap.appendChild(h(`<section class="stage ${all ? 'done' : active ? 'active' : ''}" style="--p:${st.tasks.length ? done / st.tasks.length : 0}"><div class="when">${esc(st.when)} · ${done}/${st.tasks.length}</div><h2>${esc(st.title)}</h2><p>${esc(st.text)}</p><div class="tasks">${st.tasks.map((t) => `<div class="task ${S.path[t[0]] ? 'done' : ''}" data-id="${t[0]}"><span class="box">${S.path[t[0]] ? '<svg width="14" height="14" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>' : ''}</span><span><span class="t">${esc(t[1])}</span>${t[2] ? '<div class="sub">' + esc(t[2]) + '</div>' : ''}</span></div>`).join('')}</div></section>`));
+        wrap.appendChild(h(`<section class="stage ${all ? 'done' : active ? 'active' : ''}" style="--p:${st.tasks.length ? done / st.tasks.length : 0}"><div class="when">${esc(st.when)} · ${done}/${st.tasks.length}</div><h2>${esc(st.title)}</h2><p>${esc(st.text)}</p><div class="tasks">${ordered(st).map((t) => `<div class="task ${S.path[t[0]] ? 'done' : ''}" data-id="${t[0]}"><span class="box">${S.path[t[0]] ? '<svg width="14" height="14" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>' : ''}</span><span><span class="t">${esc(t[1])}</span>${t[2] ? '<div class="sub">' + esc(t[2]) + '</div>' : ''}</span></div>`).join('')}</div></section>`));
       });
       const tot = PATH.reduce((n, s) => n + s.tasks.length, 0); const dn = PATH.reduce((n, s) => n + s.tasks.filter((t) => S.path[t[0]]).length, 0);
       $('#path-total', el).textContent = dn + ' of ' + tot + ' done';
