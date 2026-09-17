@@ -705,14 +705,16 @@
       ['car-virtua', 'Move to Virtua as an overnight ICU APP', 'Negotiate on the experience: nights differential, scope, procedures, and a defined supervision model.'] ] },
   ];
   route('/path', (params, token) => {
-    const el = h(`<div class="path"><div class="page-head"><div><div class="eyebrow">Roadmap</div><h1>The path</h1><p class="lede">EMT card, ED tech job, degree with prerequisites, then the PA application. Tap a task to check it off. Stages overlap on purpose.</p></div></div><div id="stages"></div></div>`);
+    const el = h(`<div class="path"><div class="page-head"><div><div class="eyebrow">Roadmap</div><h1>The path</h1><p class="lede">EMT card, ED tech job, degree with prerequisites, then the PA application. Tap a task to check it off. Stages overlap on purpose.</p></div><span class="chip num" id="path-total"></span></div><div id="stages"></div></div>`);
     const wrap = $('#stages', el);
     function render() {
       wrap.innerHTML = ''; let activeSet = false;
       PATH.forEach((st) => {
         const done = st.tasks.filter((t) => S.path[t[0]]).length; const all = done === st.tasks.length; const active = !all && !activeSet; if (active) activeSet = true;
-        wrap.appendChild(h(`<section class="stage ${all ? 'done' : active ? 'active' : ''}"><div class="when">${esc(st.when)} · ${done}/${st.tasks.length}</div><h2>${esc(st.title)}</h2><p>${esc(st.text)}</p><div class="tasks">${st.tasks.map((t) => `<div class="task ${S.path[t[0]] ? 'done' : ''}" data-id="${t[0]}"><span class="box">${S.path[t[0]] ? '<svg width="14" height="14" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>' : ''}</span><span><span class="t">${esc(t[1])}</span>${t[2] ? '<div class="sub">' + esc(t[2]) + '</div>' : ''}</span></div>`).join('')}</div></section>`));
+        wrap.appendChild(h(`<section class="stage ${all ? 'done' : active ? 'active' : ''}" style="--p:${st.tasks.length ? done / st.tasks.length : 0}"><div class="when">${esc(st.when)} · ${done}/${st.tasks.length}</div><h2>${esc(st.title)}</h2><p>${esc(st.text)}</p><div class="tasks">${st.tasks.map((t) => `<div class="task ${S.path[t[0]] ? 'done' : ''}" data-id="${t[0]}"><span class="box">${S.path[t[0]] ? '<svg width="14" height="14" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>' : ''}</span><span><span class="t">${esc(t[1])}</span>${t[2] ? '<div class="sub">' + esc(t[2]) + '</div>' : ''}</span></div>`).join('')}</div></section>`));
       });
+      const tot = PATH.reduce((n, s) => n + s.tasks.length, 0); const dn = PATH.reduce((n, s) => n + s.tasks.filter((t) => S.path[t[0]]).length, 0);
+      $('#path-total', el).textContent = dn + ' of ' + tot + ' done';
       wrap.querySelectorAll('.task').forEach((t) => t.onclick = () => { const id = t.dataset.id; if (S.path[id]) delete S.path[id]; else S.path[id] = Date.now(); Store.save(); render(); });
     }
     render(); show(el, token);

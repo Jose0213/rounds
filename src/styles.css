@@ -392,10 +392,14 @@ textarea { min-height: 120px; resize: vertical; font-family: var(--mono); font-s
 
 /* ---------- Path ---------- */
 .path { max-width: 760px; margin: 0 auto; }
-.stage { border-left: 3px solid var(--line-strong); padding-left: 20px; margin-left: 10px; position: relative; padding-bottom: 26px; }
-.stage::before { content: ""; position: absolute; left: -9px; top: 4px; width: 15px; height: 15px; border-radius: 50%; background: var(--surface); border: 3px solid var(--line-strong); }
-.stage.active::before { border-color: var(--accent); background: var(--accent); }
+/* The rail is a progress track: --p (0..1, set per stage) fills the line and slides the marker down as tasks are checked. */
+.stage { --p: 0; border-left: 3px solid var(--line-strong); padding-left: 20px; margin-left: 10px; position: relative; padding-bottom: 26px; }
+.stage::after { content: ""; position: absolute; left: -3px; top: 0; width: 3px; height: calc(var(--p) * 100%); background: var(--accent); transition: height .35s ease; }
+.stage.done::after { height: 100%; background: var(--good); }
+.stage::before { content: ""; position: absolute; left: -9px; top: 4px; width: 15px; height: 15px; border-radius: 50%; background: var(--surface); border: 3px solid var(--line-strong); transition: top .35s ease; z-index: 1; }
+.stage.active::before { top: calc(4px + var(--p) * (100% - 34px)); border-color: var(--accent); background: var(--accent); box-shadow: 0 0 0 5px var(--accent-soft); }
 .stage.done::before { border-color: var(--good); background: var(--good); }
+@media (prefers-reduced-motion: reduce) { .stage::before, .stage::after { transition: none; } }
 .stage h2 { font-size: 1.2rem; }
 .stage .when { color: var(--ink-3); font: 500 .8rem/1.2 var(--mono); letter-spacing: .06em; text-transform: uppercase; margin-bottom: 4px; }
 .stage p { color: var(--ink-2); margin: 6px 0 10px; }
