@@ -775,6 +775,16 @@
   window.addEventListener('visibilitychange', () => { if (!document.hidden) { updateBadge(); Store.save(true); } });
   window.addEventListener('pagehide', () => Store.save(true));
   if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+    // A worker that takes over while the app is backgrounded can refresh silently; while it is on screen,
+    // offer the reload instead of yanking the page out from under a quiz.
+    if (navigator.serviceWorker.controller) {
+      let reloading = false;
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (reloading) return;
+        if (document.visibilityState === 'hidden') { reloading = true; location.reload(); }
+        else toast('Update ready.', { label: 'Reload', fn: () => location.reload() });
+      });
+    }
     navigator.serviceWorker.register('sw.js').then((reg) => {
       reg.addEventListener('updatefound', () => { const w = reg.installing; if (!w) return; w.addEventListener('statechange', () => { if (w.state === 'installed' && navigator.serviceWorker.controller) toast('Update ready.', { label: 'Reload', fn: () => location.reload() }); }); });
       document.addEventListener('visibilitychange', () => { if (!document.hidden) reg.update().catch(() => {}); });

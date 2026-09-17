@@ -14,10 +14,23 @@ self.addEventListener('fetch', (e) => {
   if (req.method !== 'GET') return;
   const url = new URL(req.url);
   if (url.origin === location.origin) {
-    e.respondWith(caches.match(req, { ignoreSearch: true }).then((hit) => hit || fetch(req).then((res) => {
+    // The shell (page, styles, scripts) is network-first so one reload always lands on the current build;
+    // cache-first there served the previous build's files forever, because the ?v= hash is ignored on match.
+    // Content bundles and icons stay cache-first: they are large and only ever change with the build.
+    const shell = req.mode === 'navigate' || (!url.pathname.includes('/content/') && /\.(html|css|js|webmanifest)$/.test(url.pathname));
+    const fromCache = () => caches.match(req, { ignoreSearch: true })
+      .then((hit) => hit || (req.mode === 'navigate' ? caches.match('./index.html', { ignoreSearch: true }) : undefined));
+    const fromNet = () => fetch(req).then((res) => {
       if (res.ok) { const copy = res.clone(); caches.open(CACHE).then((c) => c.put(req, copy)); }
       return res;
-    }).catch(() => (req.mode === 'navigate' ? caches.match('./index.html') : undefined))));
+    });
+    if (shell) {
+      // Offline should fail over quickly rather than hang on an unreachable tailnet.
+      const timeout = new Promise((_, rej) => setTimeout(() => rej(new Error('slow')), 2500));
+      e.respondWith(Promise.race([fromNet(), timeout]).catch(fromCache));
+      return;
+    }
+    e.respondWith(fromCache().then((hit) => hit || fromNet().catch(() => undefined)));
     return;
   }
   if (url.hostname === 'fonts.googleapis.com' || url.hostname === 'fonts.gstatic.com') {
